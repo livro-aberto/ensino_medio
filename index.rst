@@ -12,8 +12,7 @@ Contents:
 ********
 Vetores no plano
 ********
-Adição de vetores
-=====
+
 
 
 .. note::
@@ -29,6 +28,54 @@ Adição de vetores
    3. Reconhecer a diferença entre ponto e vetor, embora possam ser representados por mesmas coordenadas.
    4. Conhecer bem o plano cartesiano.
    
+
+
+Não importa a origem (introdução às coordenadas)
+=====
+
+
+Atividade
+---------
+
+Devido à força do vento os barcos `A`, `B`, `C` e `D` do mapa sofrem um deslocamento que é representado na figura. 
+
+.. tikz:: Barcos ao vento
+
+   \draw[step=1cm,gray,very thin] (0,-0) grid (8,8);
+   \fill[blue] (0,1) circle (.08);
+   \node[right] at (0,1) {$A$};
+   \fill[blue] (2,0) circle (.08);
+   \node[right] at (2,0) {$B$};
+   \fill[blue] (3,4) circle (.08);
+   \node[right] at (3,4) {$C$};
+   \fill[blue] (1,3) circle (.08);
+   \node[right] at (1,3) {$D$};
+   \fill[blue] (3,5) circle (.08);
+   \node[right] at (3,5) {$A'$};
+   \fill[blue] (5,4) circle (.08);
+   \node[right] at (5,4) {$B'$};
+   \fill[blue] (6,8) circle (.08);
+   \node[right] at (6,8) {$C'$};
+   \fill[blue] (4,7) circle (.08);
+   \node[right] at (4,7) {$D'$};
+   \draw[->, thick, red] (0,1) -- (3,5);
+   \draw[->, thick, red] (2,0) -- (5,4);
+   \draw[->, thick, red] (3,4) -- (6,8);
+   \draw[->, thick, red] (1,3) -- (4,7);
+   \fill[blue] (5,2) circle (.08);
+   \node[right] at (5,2) {$E$};
+
+a) Supondo que o barco  
+
+b) 
+
+
+Adição de vetores
+=====
+
+
+
+
    
 Roteiro da lição:
 
