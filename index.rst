@@ -12,6 +12,9 @@ Contents:
 ********
 Vetores no plano
 ********
+Adição de vetores
+=====
+
 
 .. note::
 
