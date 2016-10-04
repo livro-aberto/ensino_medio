@@ -19,6 +19,16 @@ Vetores no plano
    
    BNCC(EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
 
+   Objetivos adicionais:
+   
+   1. Despertar para a existência de grandezas vetoriais.
+   2. Usar as operações com vetores em situações concretas (cálculo da força resultante, soma de velocidades, deslocamento final, etc.) e suas representações algébricas.
+   3. Reconhecer a diferença entre ponto e vetor, embora possam ser representados por mesmas coordenadas.
+   4. Conhecer bem o plano cartesiano.
+   
+   
+   
+   
 Introdução: Esta parte está intimamente ligada à parte do livro que trata de grandezas e medidas. Há que se estabelecer tipos de grandezas:
 
 Escalares: massa, volume, área, comprimento, deslocamento escalar, velocidade escalar, etc. 
