@@ -27,7 +27,11 @@ Vetores no plano
    4. Conhecer bem o plano cartesiano.
    
    
-   
+Roteiro da lição:
+
+Atividade motivadora: 
+ 1.  despertar para a existência de grandezas vetoriais através do contato com uma situação-problema.
+ 2. despertar para a necessidade uso de coordenadas para representar vetores.
    
 Introdução: Esta parte está intimamente ligada à parte do livro que trata de grandezas e medidas. Há que se estabelecer tipos de grandezas:
 
