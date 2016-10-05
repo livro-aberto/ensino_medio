@@ -82,6 +82,9 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 Representação algébrica de vetores no plano
 ---------
 
+.. note::
+   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+
 Na atividade anterior cada barco foi transladado de 3 km para oeste e 4 km para o norte, devido à tempestade. De modo que seu deslocamento resultante pode ser expresso pelo *par ordenado* `(3,4)`.
 
 Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se sabe a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `\overrightarrow{v} = (-700,0)` com unidade `Km/h`. Sua representação visual é 
