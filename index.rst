@@ -1,4 +1,6 @@
-Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
+
+
+    legendaVolume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 =======
 
 Contents:
@@ -12,9 +14,6 @@ Contents:
 ********
 Vetores no plano
 ********
-Adição de vetores
-=====
-
 
 .. note::
 
@@ -80,6 +79,25 @@ Trata-se, obviamente do mesmo exercício, mas sem o auxílio da figura. Para res
 	 
 
 Logo a primeira parte da equivalência mostrada acima já seria um critério bom para decidir se os segmentos orientados estão ou não na mesma classe, mas o desenvolvimento nos leva a  , que será bastante usado ao longo do estudo de vetores.
+
+
+*********
+sub-seção
+*********
+
+atividades para despertar o interesse do aluno para a necessidade
+de uma grandeza vetorial
+
+1) João quer ir de carro para sua casa que fica no ponto A e quer se deslocar para a escola que fica no  ponto B. Porém ele não conhece muito bem a região. Com as informações: ande 4 quadras,  dobre a esquina e ande mais 3 quadras", ele conseguiria chegar ao seu destino? Caso a resposta seja não, o que acha que faltou?Após chegar em B, João pensou que poderia ter feito um outro caminho diferente andando a mesma distância, você saberia dizer qual?
+(para o problema seria dado uma malha quadriculada com os pontos
+A e B).
+
+2)
+
+
+
+
+
 
 ********
 Teorema de Tales, semelhança e aplicações
