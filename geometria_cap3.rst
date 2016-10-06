@@ -1,3 +1,3 @@
-**************
-geometria_cap3
-**************
+********
+Teorema de Tales, semelhança e aplicações
+********
