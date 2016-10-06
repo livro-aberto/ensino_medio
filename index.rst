@@ -1,19 +1,25 @@
 Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 =======
 
-Contents:
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   *
+   
 
 ********
 Vetores no plano
 ********
-Adição de vetores
-=====
+   Neste capítulo vamos estudar os vetores, compreendendo o que tem de especial nessa grandeza tão importante na física e qual sua relação com a matemática.
+
+.. note::
+
+   **PRÉ-REQUISITOS**
+   
+   * Representação de um ponto no sistema cartesiano;
+   * Paralelismo entre retas;
+   * Conjuntos númericos.
 
 
 .. note::
