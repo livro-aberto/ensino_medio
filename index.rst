@@ -69,14 +69,14 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[->] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
 
 
-1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava na posição `E` inicialmente. Explique cuidadosamente como foi obtida esta posição.
+1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 2. Nesta situação o deslocamento de cada um dos barcos é sempre o mesmo e pode ser representado pelas componentes
 
    x: de oeste para leste e;
 
    y: do sul para o norte.
 
-   Escreva o par `(x,y)` que representa o deslocamento de cada um dos barcos da situação descrita.
+Escreva o par `(x,y)` que representa o deslocamento de cada um dos barcos da situação descrita.
 
 
 Representação algébrica de vetores no plano
@@ -85,9 +85,9 @@ Representação algébrica de vetores no plano
 .. note::
    Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
 
-Na atividade anterior cada barco foi transladado de 3 km para oeste e 4 km para o norte, devido à tempestade. De modo que seu deslocamento resultante pode ser expresso pelo *par ordenado* `(3,4)`.
+Na atividade anterior cada barco foi transladado de 3 km para leste e 4 km para o norte, devido à tempestade. De modo que seu deslocamento resultante pode ser expresso pelo *par ordenado* `(3,4)` uma vez que se estabelece a primeira coordenada como sendo a direção leste-oeste com sentido (para onde cresce) para o leste e segunda coordenada como sendo a direção norte-sul com orientação para o norte.
 
-Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se sabe a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `\overrightarrow{v} = (-700,0)` com unidade `Km/h`. Sua representação visual é 
+Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se conhece a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `\overrightarrow{v} = (-700,0)` com unidade `Km/h`. Sua representação visual é 
 
 .. tikz:: 
 
