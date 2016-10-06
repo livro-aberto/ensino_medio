@@ -99,7 +99,8 @@ e poderá ser usada para representar a velocidade do avião posicionando a orige
 Um vetor fica caracterizado por comprimento, direção e sentido
 =====
 
-
+.. note::
+   Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
 Adição de vetores
 =====
