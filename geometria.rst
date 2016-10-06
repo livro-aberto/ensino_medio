@@ -114,11 +114,3 @@ d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir
 
   Definir AC por AB + BC
 
-
-********
-Transformações isométricas no plano
-********
-
-********
-Teorema de Tales, semelhança e aplicações
-********
