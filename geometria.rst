@@ -93,7 +93,7 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Adição de vetores
 =====
 
-
+a
 
 Atividade
 ---------
