@@ -8,12 +8,8 @@ Funções
 
 Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
-
-.. note:: A funcionalidade para subir uma figura ainda não está disponível.
-          
-          Simas: parece que funciona. Veja a sintaxe da plataforma no link https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index.html
         
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/c/c0/3D_Globe.png
+.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?t=1476217784&w=500&h=273&tok=0d7134&media=maps.png
 
 Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
     
@@ -47,7 +43,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 
 (a)	Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
-	.. note:: Figura com a escala de cores
+	.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?t=1476218022&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 
 (b)	Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
