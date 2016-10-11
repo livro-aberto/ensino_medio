@@ -10,8 +10,10 @@ Vivemos na era da informação! A todo momento empresas capturam grandes quantid
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
 
 .. note:: A funcionalidade para subir uma figura ainda não está disponível.
+          
+          Simas: parece que funciona. Veja a sintaxe da plataforma no link https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index.html
         
-.. figure:: ../images/<nome-da-figura>
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/c/c0/3D_Globe.png
 
     legenda: Captura de tela do Google Maps®
     
