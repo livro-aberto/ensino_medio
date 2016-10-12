@@ -5,7 +5,8 @@ algebra_e_funcoes
 .. note::
 
    Seria interessante se ao salvarmos a tela do lado esquerdo mostrasse a página do documento que foi por último alterada.
-   Por favor, clique em https://github.com/gutosurrex/BookCloud/issues/46 e explique melhor a alteração que deseja que seja implementada.
+   
+   Simas: Por favor, clique em https://github.com/gutosurrex/BookCloud/issues/46 e explique melhor a alteração que deseja que seja implementada. Pode rejeitar esta alteração. Para isso, você precisa efetuar alterações na caixa do lado direito ou clicar na seta entre as duas janelas no primeiro link de revisão.
 
 ********
 Funções
