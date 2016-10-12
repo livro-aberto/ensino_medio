@@ -2,6 +2,10 @@
 algebra_e_funcoes
 *****************
 
+.. note::
+
+   Seria interessante se ao salvarmos a tela do lado esquerdo mostrasse a página do documento que foi por último alterada.
+
 ********
 Funções
 ********
@@ -40,24 +44,31 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 |   19:00 - 21:00  |     0,20    |       |                          |
 +------------------+-------------+-------+--------------------------+
 |   21:00 - 23:00  |     0,11    |       |                          |
-+------------------+-------------+-------+--------------------------+
-    
++------------------+-------------+-------+--------------------------+  
 
 .. note:: Não conseguimos centralizar os elementos da tabela
 
-(a)	Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
+
+a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
 	.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?t=1476218022&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
+		:width: 250px
+		:align: center
+         
+b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
-(b)	Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
+c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
 
-(c)	Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
-
-(d)	É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
+d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias. 
 De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
 
+
+.. note::
+
+   Como podemos criar uma caixa de destaque. Gostaríamos que a definição abaixo aparecesse destacada em uma caixa colorida.
+   
 .. note:: Dizemos que `f:A\to B` é uma *função* de `A` em `B` se a cada elemento `a\in A` está associado um único elemento `b\in B`. O elemento `b` é dito a imagem do elemento `a` e é denotado por `f(a)` (lê-se `f` de `a`). O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*.
 
 Perceba que na definição está implícito que todo elemento de `a\in A` precisa ter uma imagem `f(a)\in B`, sem haver ambiguidade na determinação da imagem. Por outro lado, nem todo elemento `b\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento b∈B ser imagem de elementos distintos em `A`, ou seja, `b=f(a_1 )=f(a_2)` com `a_1\neq a_2`.
