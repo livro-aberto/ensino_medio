@@ -133,7 +133,7 @@ e poderá ser usada para representar a velocidade do avião posicionando a orige
 Atividade
 -----
 
-Represente o deslocamento de `A` para `D` usando coordenadas.
+Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
 
 
 a)
