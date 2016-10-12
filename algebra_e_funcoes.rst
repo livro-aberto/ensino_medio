@@ -9,7 +9,9 @@ Funções
 Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?t=1476217784&w=500&h=273&tok=0d7134&media=maps.png
+.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=maps.png
+     :width: 700px
+     :align: center
 
 Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
     
@@ -39,6 +41,8 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 +------------------+-------------+-------+--------------------------+
 |   21:00 - 23:00  |     0,11    |       |                          |
 +------------------+-------------+-------+--------------------------+
+    
+
 .. note:: Não conseguimos centralizar os elementos da tabela
 
 (a)	Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
