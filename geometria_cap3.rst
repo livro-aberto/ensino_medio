@@ -29,15 +29,17 @@ Teorema de Tales, semelhança e aplicações
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
-
+=======
+Semelhança
+=======
 
 Atividade 1 - Pantógrafo
 -----------
-Nesta atividade você vai construir um equipamento, chamado *pantógrafo*, com o qual pode-se ampliar figuras desenhadas numa folha de papel e entenderá por que ele funciona.
+Nesta atividade você vai construir e usar um equipamento, chamado *pantógrafo*, com o qual pode-se ampliar ou reduzir figuras desenhadas numa folha de papel e entenderá como ele funciona.
 
-Assista ao vídeo do Manual do Mundo (https://www.youtube.com/watch?v=Ji7YorM_t_0) parando quantas vezes precisar e construa o seu pantógrafo.
+Assista ao vídeo do `Manual do Mundo <https://www.youtube.com/watch?v=Ji7YorM_t_0>`_ e construa o seu pantógrafo. Embora não seja tão divertido quanto construir o seu próprio pantógrafo físico, você também pode utilizar o `pantógrafo virtual <https://www.geogebra.org/m/mrZRVrpf>`_ para ver como ele funciona.
 
-a) Numa folha separada amplie a figura a seguir.
+a) Numa folha separada use o pantógrafo para ampliar a seguir.
 
    .. figure:: https://upload.wikimedia.org/wikipedia/commons/0/0c/Contorno_do_mapa_do_Brasil.svg
      :width: 200px
@@ -45,13 +47,63 @@ a) Numa folha separada amplie a figura a seguir.
      
      autor: Giro720 (Wikimedia Commons)
 
-b) Por que o lápis do pantógrafo desenha a mesma figura que a agulha? Responda cuidadosamente usando o Teorema de Tales para justificar.
-c) Explique o que deve ser feito para obter um pantógrafo que multiplique as dimensões lineares da figura por 3.
+b) Que adaptações devem ser feitas para transformar o seu pantógrafo num pantógrafo de redução?
+
+c) Tente entender por que ele funciona. Tudo bem se você não conseguir justificar tudo com cuidado, este é o tema desta seção.
+
+Em matemática quando uma figura é uma ampliação ou uma redução de outra dizemos que são figuras *semelhantes*. Embora a palavra *semelhante* seja um sinônimo de *parecido* na linguagem corrente, em matemática isso não é verdade. As figuras a seguir não são semelhantes.
+
+.. tikz:: Parecidas na linguagem corrente, mas não semelhantes do ponto de vista da matemática (adaptação da figura de Alain Matthes)
+
+        \draw[ball color=red,shading=ball, scale=.25] (4,1) ..controls +(120:2cm)
+        and +(90:2cm) .. (0,0) .. controls  +(-90:2cm) and +(90:3cm) ..
+        (4,-8) .. controls +(90:3cm) and +(-90:2cm) ..(8,0)  .. controls
+        +(90:2cm) and  +(60:2cm) .. (4,1);
+        
+        \begin{scope}[xshift=3cm]
+        \draw[ball color=red,shading=ball, scale=.25] (4,1) ..controls +(120:2.5cm)
+        and +(90:1.5cm) .. (0,0) .. controls  +(-90:1cm) and +(90:2cm) ..
+        (4,-8) .. controls +(90:3cm) and +(-90:1cm) ..(8,0)  .. controls
+        +(90:2cm) and  +(60:2cm) .. (4,1);
+        \end{scope}
+
+Os conceitos matemáticos precisam ser definidos por meio de outros conceitos matemáticos para que seja possível justificar fatos matemáticos precisamente. Para fazer uma definição de figuras semelhantes nos restringiremos, por ora, aos polígonos planos.
+
+.. note:: Dois polígonos planos são *semelhantes* quando existir uma correspondência entre os vértices de um e de outro de modo que os lados correspondentes são proporcionais e os ângulos em vértices correspondentes são iguais. 
+
+Exemplo 1
+-------
 
 
-.. note:: Definição de homotetia de razão `k`.
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=semelhanca1.png
 
-Atividade 2 - Cinema na caixa
+    autor: Arquivo próprio
+
+Os triângulos `ABC` e `XYZ` da figura são semelhantes com a correspondência `A \to X`, `B \to Y` e `C \to Z` se valem as seguintes igualdades:
+
+.. math::
+
+   \dfrac{AB}{XY} = \dfrac{BC}{YZ} = \dfrac{CA}{ZX} \quad \quad
+   \widehat{A} = \widehat{X},\quad \widehat{B} = \widehat{Y} \quad \text{e} \quad \widehat{C} = \widehat{Z}.
+
+
+Atividade 2
+-----------
+Exemplo numérico para ambientação do estudante com o conceito.
+
+
+Atividade 3
+-----------
+Decida se cada uma das afirmações a seguir são verdadeiras ou falsas e em seguida justifique as verdadeiras e apresente um exemplo que sirva de explicação para a falsidade de cada uma das demais afirmações.
+
+a) Quaisquer dois triângulos equiláteros são semelhantes.
+b) Quaisquer dois triângulos retângulos são semelhantes.
+c) Se dois triângulos são congruentes, então eles são semelhantes.
+d) Quaisquer dois quadrados são semelhantes.
+e) Quaisquer dois retângulos são semelhantes.
+f) Quaisquer dois losangos são semelhantes.
+
+Projeto Aplicado - Cinema na caixa
 ---------------
 
 Cinema na caixa - Este é um projeto aplicado sobre homotetias de razão negativa
