@@ -39,9 +39,11 @@ Assista ao vídeo do Manual do Mundo (https://www.youtube.com/watch?v=Ji7YorM_t_
 
 a) Numa folha separada amplie a figura a seguir.
 
-   .. figure:: https://upload.wikimedia.org/wikipedia/commons/b/b9/Logotipo_Recursos_Educacionais_Abertos_Fundo_branco_%28Vers%C3%A3o_em_Portugu%C3%AAs_do_Logotipo_Global%29.svg
-     :width: 400px
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/0/0c/Contorno_do_mapa_do_Brasil.svg
+     :width: 200px
      :align: center
+     
+     autor: Giro720 (Wikimedia Commons)
 
 b) Por que o lápis do pantógrafo desenha a mesma figura que a agulha? Responda cuidadosamente usando o Teorema de Tales para justificar.
 c) Explique o que deve ser feito para obter um pantógrafo que multiplique as dimensões lineares da figura por 3.
