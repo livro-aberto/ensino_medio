@@ -1,23 +1,15 @@
-*****************
-algebra_e_funcoes
-*****************
-
-.. note::
-
-   Seria interessante se ao salvarmos a tela do lado esquerdo mostrasse a página do documento que foi por último alterada.
-   
-   Simas: Por favor, clique em https://github.com/gutosurrex/BookCloud/issues/46 e explique melhor a alteração que deseja que seja implementada. Pode rejeitar esta alteração. Para isso, você precisa efetuar alterações na caixa do lado direito ou clicar na seta entre as duas janelas no primeiro link de revisão.
-
-********
+=======
 Funções
-********
+=======
 
 Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=maps.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
      :width: 700px
      :align: center
+
+.. note:: As figuras só estavam visíveis quando estivéssemos logados na wiki. Mudei o link para as figuras porque as coloquei na wiki do livro de frações que é aberta a todo mundo para visualização. Agora as figuras devem ser colocadas lá. Por favor, veja a documentação sobre figuras na `sintaxe <https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index#my-figuras>`_
 
 Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
     
@@ -53,7 +45,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 
 a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
-	.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?t=1476218022&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
+	.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1476340957&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 		:width: 250px
 		:align: center
          
@@ -70,6 +62,8 @@ De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabel
 .. note::
 
    Como podemos criar uma caixa de destaque. Gostaríamos que a definição abaixo aparecesse destacada em uma caixa colorida.
+   
+   Simas: deixe como está por enquanto. Precisamos decidir todas as caixas que queremos para ter uniformidade no livro inteiro e então solicitar a implementação. Poderia, por favor, abrir um  `Issue <https://github.com/livro-aberto/ensino_medio/issues>`_ sobre os ambientes que serão necessários serem criados? Em princípio temos: Definição, Teorema, Atividade, Para o professor, Resposta, mais algum?
    
 .. note:: Dizemos que `f:A\to B` é uma *função* de `A` em `B` se a cada elemento `a\in A` está associado um único elemento `b\in B`. O elemento `b` é dito a imagem do elemento `a` e é denotado por `f(a)` (lê-se `f` de `a`). O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*.
 
