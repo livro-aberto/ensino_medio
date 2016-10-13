@@ -76,6 +76,7 @@ Exemplo 1
 
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=semelhanca1.png
+   :width: 600px
 
     autor: Arquivo próprio
 
@@ -102,6 +103,25 @@ c) Se dois triângulos são congruentes, então eles são semelhantes.
 d) Quaisquer dois quadrados são semelhantes.
 e) Quaisquer dois retângulos são semelhantes.
 f) Quaisquer dois losangos são semelhantes.
+
+O teorema a seguir ensina uma maneira de se construir triângulos semelhantes a um triângulo dado. 
+
+Teorema Fundamental das Semelhanças de Triângulos
+----------------
+Se uma reta `r` é paralela a um dos lados de um triângulo `ABC` forma um triângulo com as retas suportes dos outros dois lados de `ABC`, então este novo triângulo é semelhante a `ABC`.
+
+.. tikz::
+   
+   \draw (0,0) -- (3,0);
+   \draw (0,0) -- (1,5);
+   \draw (1,5) -- (3,0);
+   \node[left] at (0,0) {`B`};
+   \node[above] at (1,5) {`A`};
+   \node[right] at (3,0) {`C`};
+   \draw (-2,2)--(5,2)
+   \node[above] at (4,2) {`r`};
+
+
 
 Projeto Aplicado - Cinema na caixa
 ---------------
