@@ -178,6 +178,44 @@ c)
       \node[below] at (2,0) {$B$};
       \fill[blue] (1,1.5) circle (.08);
       \node[right] at (1,1.5) {$C$};
+      
+Atividade
+------
+Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
+
+1. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?
+
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+            :align: center
+            :width: 200px
+   
+.. tikz::
+
+      \node at (0,-.5) {$a)$};
+      \fill[blue] (0,0) circle (.08);
+      \node[above] at (0,0) {\small Grampo 1};
+      \fill[blue] (2,0) circle (.08);
+      \node[above] at (2,0) {\small Grampo 2};
+      \fill[blue] (1,-1) circle (.08);
+      \draw[very thick, red] (0,0) -- (1,-1);
+      \draw[very thick, red] (2,0) -- (1,-1);
+      \draw[very thick, red] (1,-1) -- (1,-2);
+      \fill[blue] (1,-2) circle (.08);
+      \node[below] at (1,-2) {\small Escalador};
+      
+      \begin{scope}[xshift=4cm]
+      \node at (0,-.5) {$b)$};
+      \fill[blue] (0,0) circle (.08);
+      \node[above] at (0,0) {\small Grampo 1};
+      \fill[blue] (2,0) circle (.08);
+      \node[above] at (2,0) {\small Grampo 2};
+      \fill[blue] (1,-1) circle (.08);
+      \draw[very thick, red] (0,0) -- (1,-1);
+      \draw[very thick, red] (2,0) -- (1,-1);
+      \draw[very thick, red] (1,-1) -- (1,-2);
+      \fill[blue] (1,-2) circle (.08);
+      \node[below] at (1,-2) {\small Escalador};
+      \end{scope}
 
 Um vetor fica caracterizado por comprimento, direção e sentido
 =====
