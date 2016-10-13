@@ -21,8 +21,8 @@ Não importa a origem (introdução às coordenadas)
 =====
 
 
-Atividade
----------
+Atividade 1
+--------- 
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
@@ -68,14 +68,13 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 
 O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
 
-Atividade
+Atividade 2
 -------
 Nas situações a seguir reproduz as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
 
-a)
-
 .. tikz::
-
+       
+       \node at (-.5,1.3) {a)};
       \fill[blue] (0,0) circle (.08);
       \node[right] at (0,0) {$A$};
       \fill[blue] (.5,1.5) circle (.08);
@@ -87,11 +86,9 @@ a)
       \draw[->, thick, red] (0,0) -- (.5,1.5);
       \draw[->, thick, red] (.5,1.5) -- (1.5,-1);
       \draw[->, thick, red] (1.5,-1) -- (2,1);
-
-b) 
-
-.. tikz::
-
+      
+      \begin{scope}[shift={(4.5cm,.25)}]
+      \node at (-.5,1.05) {b)};
       \fill[blue] (0,0) circle (.08);
       \node[above] at (0,0) {$B$};
       \fill[blue] (1,0) circle (.08);
@@ -100,17 +97,17 @@ b)
       \node[above] at (2,0) {$C$};
       \fill[blue] (1,-1) circle (.08);
       \node[right] at (1,-1) {$D$};
-
-c)
-
-.. tikz::
-
+      
+      \begin{scope}[shift={(4.5cm,-.5)}]
+      \node at (-.5,1.55) {c)};
       \fill[blue] (0,0) circle (.08);
       \node[below] at (0,0) {$A=D$};
       \fill[blue] (2,0) circle (.08);
       \node[below] at (2,0) {$B$};
-      \fill[blue] (1,1.2) circle (.08);
-      \node[right] at (1,1.2) {$C$};
+      \fill[blue] (1,1.5) circle (.08);
+      \node[right] at (1,1.5) {$C$};
+      \end{scope}
+      \end{scope}
     
 
 Representação algébrica de vetores no plano
@@ -130,16 +127,17 @@ Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poen
 
 e poderá ser usada para representar a velocidade do avião posicionando a origem do vetor na localização atual do avião.
 
-Atividade
+Atividade 3
 -----
 
 Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
 
 
-a)
+
 
 .. tikz::
-
+       
+       \node at (-.5,1.3) {a)};
        \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1.51);
       \fill[blue] (0,0) circle (.08);
       \node[right] at (0,0) {$A$};
@@ -152,11 +150,9 @@ a)
       \draw[->, thick, red] (0,0) -- (.5,1.5);
       \draw[->, thick, red] (.5,1.5) -- (1.5,-1);
       \draw[->, thick, red] (1.5,-1) -- (2,1);
-
-b) 
-
-.. tikz::
       
+      \begin{scope}[shift={(4.5cm,.25)}]
+      \node at (-.5,1.05) {b)};
       \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1);
       \fill[blue] (0,0) circle (.08);
       \node[above] at (0,0) {$B$};
@@ -166,11 +162,9 @@ b)
       \node[above] at (2,0) {$C$};
       \fill[blue] (1,-1) circle (.08);
       \node[right] at (1,-1) {$D$};
-
-c)
-
-.. tikz::
-
+      
+      \begin{scope}[shift={(4.5cm,-.5)}]
+      \node at (-.5,1.55) {c)};
       \draw[step=.5cm, color=gray, very thin] (0,-0.51) grid (2.01,1.51);
       \fill[blue] (0,0) circle (.08);
       \node[below] at (0,0) {$A=D$};
@@ -178,44 +172,68 @@ c)
       \node[below] at (2,0) {$B$};
       \fill[blue] (1,1.5) circle (.08);
       \node[right] at (1,1.5) {$C$};
+      \end{scope}
+      \end{scope}
+    
       
-Atividade
+Atividade 4
 ------
 Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
 
-1. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?
+a) A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?
 
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
             :align: center
             :width: 200px
    
-.. tikz::
+   .. tikz::
 
-      \node at (0,-.5) {$a)$};
+      \node at (-1.5,-.3) {(I)};
       \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {\small Grampo 1};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {\small Grampo 2};
-      \fill[blue] (1,-1) circle (.08);
-      \draw[very thick, red] (0,0) -- (1,-1);
-      \draw[very thick, red] (2,0) -- (1,-1);
-      \draw[very thick, red] (1,-1) -- (1,-2);
-      \fill[blue] (1,-2) circle (.08);
-      \node[below] at (1,-2) {\small Escalador};
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
       
-      \begin{scope}[xshift=4cm]
-      \node at (0,-.5) {$b)$};
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
       \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {\small Grampo 1};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {\small Grampo 2};
-      \fill[blue] (1,-1) circle (.08);
-      \draw[very thick, red] (0,0) -- (1,-1);
-      \draw[very thick, red] (2,0) -- (1,-1);
-      \draw[very thick, red] (1,-1) -- (1,-2);
-      \fill[blue] (1,-2) circle (.08);
-      \node[below] at (1,-2) {\small Escalador};
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
       \end{scope}
+      \end{scope}
+
+b) Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+
+c) Justifique a sua escolha do item a) utilizando vetores.
+
 
 Um vetor fica caracterizado por comprimento, direção e sentido
 =====
@@ -226,7 +244,6 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Adição de vetores
 =====
 
-a
 
 Atividade
 ---------
