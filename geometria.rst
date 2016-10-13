@@ -185,6 +185,8 @@ a) A escaladora da figura usa um grampo simples para sua segurança. Para maior 
    .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
             :align: center
             :width: 200px
+            
+            foto: Elke Wetzig
    
    .. tikz::
 
