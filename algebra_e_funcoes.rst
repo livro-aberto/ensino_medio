@@ -9,7 +9,7 @@ A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito
      :width: 700px
      :align: center
 
-.. note:: As figuras só estavam visíveis quando estivéssemos logados na wiki. Mudei o link para as figuras porque as coloquei na wiki do livro de frações que é aberta a todo mundo para visualização. Agora as figuras devem ser colocadas lá. Por favor, veja a documentação sobre figuras na `sintaxe <https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index#my-figuras>`_
+.. note:: As figuras só ficavam visíveis se estivéssemos logados na wiki. Mudei o link para as figuras porque as coloquei na wiki do livro de frações que é aberta a todo mundo para visualização. Agora as figuras devem ser colocadas lá. Por favor, veja a documentação sobre figuras na `sintaxe <https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index#my-figuras>`_
 
 Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
     
