@@ -170,7 +170,7 @@ Você deve ter percebido que dois retângulos `R_1` e `R_2` são semelhantes se 
 
 Pergunta 1: Existe um retângulo de lados `a` e `a+b` com `b \neq 0` que quando dele se retira um quadrado de lado `a` como na figura, o retângulo restante seja um retângulo semelhante ao inicial?
 
-Pergunta 2: Qual é a razão entre o maior e o menor lado deste retângulo? 
+Pergunta 2: Qual é a razão entre o maior e o menor lado deste retângulo? Este número é chamado de *número de ouro* e é representado pela letra `\phi`.
 
 Pergunta 3: Quantos retângulos existem com essa propriedade?
 
@@ -180,7 +180,16 @@ Pergunta 3: Quantos retângulos existem com essa propriedade?
 
    Refazer esta figura (autor: Kaneiderdaniel - Wikimedia)
 
-Problema: 
+Problema: Use uma calculadora para obter todas as casas decimais de `\phi` que você puder e faça o mesmo com o número `\phi^{-1}`. Conclua que `\phi^{-1} = \phi - 1`.
+
+.. note:: Construção para o estudante obter os retângulos de ouro encaixados como na figura.
+
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/2/23/Golden_spiral_in_rectangles.png
+      :align: center
+      :width: 300px
+
+   retângulos dourados encaixados (substituir figura por outra própria e mais bonita, esta é da wikimedia).
+
 
 Projeto Aplicado - Cinema na caixa
 ---------------
