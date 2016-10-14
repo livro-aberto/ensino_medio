@@ -38,7 +38,7 @@ Motivação do Teorema de Tales
 
 No dia 5 de novembro de 2015, a barragem de Fundão, na cidade mineira de Mariana, se rompeu deixando centenas de pessoas desabrigadas e enchendo o Rio Doce e de rejeitos de mineração causando o maior desastre sócioambiental da história brasileira. A figura a seguir apresenta um esquema de uma barragem (melhorar e citar fonte desta história). 
 
-https://commons.wikimedia.org/wiki/File:Barragem_de_Fund%C3%A3o_(Mariana_-_MG).jpg
+.. figure:: https://commons.wikimedia.org/wiki/File:Barragem_de_Fund%C3%A3o_(Mariana_-_MG).jpg
 
 A seguir apresentamos um esquema simplificado de uma barragem. A força que o material represado faz sobre a barragem depende da área de contato deste material com a barragem, representado pelo segmento `PB`. Como se trata de uma região submersa, esta medição pode ser de difícil obtenção. 
 
