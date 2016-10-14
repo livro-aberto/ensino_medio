@@ -29,6 +29,34 @@ Teorema de Tales, semelhança e aplicações
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
+============
+Teorema de Tales
+============
+
+
+Motivação do Teorema de Tales
+
+No dia 5 de novembro de 2015, a barragem de Fundão, na cidade mineira de Mariana, se rompeu deixando centenas de pessoas desabrigadas e enchendo o Rio Doce e de rejeitos de mineração causando o maior desastre sócioambiental da história brasileira. A figura a seguir apresenta um esquema de uma barragem (melhorar e citar fonte desta história). 
+
+https://commons.wikimedia.org/wiki/File:Barragem_de_Fund%C3%A3o_(Mariana_-_MG).jpg
+
+A seguir apresentamos um esquema simplificado de uma barragem. A força que o material represado faz sobre a barragem depende da área de contato deste material com a barragem, representado pelo segmento `PB`. Como se trata de uma região submersa, esta medição pode ser de difícil obtenção. 
+
+Mostraremos que se `BC \parallel PQ`, então 
+
+.. math::
+
+   \dfrac{AP}{PB} = \dfrac{AQ}{QC}.
+
+Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`, `AQ` e `QC`, que podem ser medidas mais facilmente.
+
+Teorema de Tales
+------------
+Enunciado e prova da versão acima do Teorema de Tales.
+
+
+
+
 =======
 Semelhança
 =======
@@ -70,12 +98,15 @@ Em matemática quando uma figura é uma ampliação ou uma redução de outra di
 Os conceitos matemáticos precisam ser definidos por meio de outros conceitos matemáticos para que seja possível justificar fatos matemáticos precisamente. Para fazer uma definição de figuras semelhantes nos restringiremos, por ora, aos polígonos planos.
 
 .. note:: Dois polígonos planos são *semelhantes* quando existir uma correspondência entre os vértices de um e de outro de modo que os lados correspondentes são proporcionais e os ângulos em vértices correspondentes são iguais. 
+         
+         Usa-se o símbolo `\sim` para representar a semelhança. Assim, a notação `ABC \sim XYZ` significa *"os triângulos* `ABC` *e* `XYZ` *são semelhantes"*.
 
 Exemplo 1
 -------
 
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=semelhanca1.png
+   :width: 600px
 
     autor: Arquivo próprio
 
@@ -102,6 +133,34 @@ c) Se dois triângulos são congruentes, então eles são semelhantes.
 d) Quaisquer dois quadrados são semelhantes.
 e) Quaisquer dois retângulos são semelhantes.
 f) Quaisquer dois losangos são semelhantes.
+
+O teorema a seguir ensina uma maneira de se construir triângulos semelhantes a um triângulo dado. 
+
+Teorema Fundamental das Semelhanças de Triângulos
+----------------
+Se uma reta `r` é paralela a um dos lados de um triângulo `ABC` forma um triângulo com as retas suportes dos outros dois lados de `ABC`, então este novo triângulo é semelhante a `ABC`.
+
+.. tikz::
+   
+   \draw (0,0) -- (4,0);
+   \draw (0,0) -- (1,5);
+   \draw (1,5) -- (4,0);
+   \node[left] at (0,0) {$B$};
+   \node[above] at (1,5) {$A$};
+   \node[right] at (4,0) {$C$};
+   \draw (-.8,2)--(4,2);
+   \node[above] at (4,2) {$r$};
+   \node[left] at (0.4,2.2) {$P$};
+   \node[right] at (2.8,2.2) {$Q$};
+   \fill[black] (0,0) circle (.08);
+   \fill[black] (1,5) circle (.08);
+   \fill[black] (4,0) circle (.08);
+   \fill[black] (.4,2) circle (.08);
+   \fill[black] (2.8,2) circle (.08);
+   
+
+
+
 
 Projeto Aplicado - Cinema na caixa
 ---------------
