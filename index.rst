@@ -8,7 +8,7 @@ Geometria:
    :maxdepth: 1
    :glob:
 
-   geometria*
+   Geometria*
    
 
 Álgebra e funções:
@@ -17,7 +17,7 @@ Geometria:
    :maxdepth: 1
    :glob:
 
-   algebra_e_funcoes*
+   Algebra_e_Funcoes*
 
 Probabilidade e estatística:
 
@@ -25,5 +25,5 @@ Probabilidade e estatística:
    :maxdepth: 1
    :glob:
 
-   prob_e_estatistica*
+   Prob_e_Estatistica*
 
