@@ -1,5 +1,5 @@
 ********
-Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática - Geometria
+Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 ********
 
 Geometria:
