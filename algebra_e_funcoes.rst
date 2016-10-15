@@ -1,5 +1,5 @@
 *****************
-algebra_e_funcoes
+Álgebra e Funções
 *****************
 
 
