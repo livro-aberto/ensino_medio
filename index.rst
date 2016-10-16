@@ -1,4 +1,4 @@
-********
+###########################
 Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 ********
 
@@ -22,8 +22,8 @@ Geometria:
 Probabilidade e estatística:
 
 .. toctree::
-   :maxdepth: 1
-   :glob:
+   :maxdepth: 3
+   :numbered:
 
    Prob_e_Estatistica*
 
