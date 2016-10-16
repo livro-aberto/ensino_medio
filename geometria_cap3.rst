@@ -33,12 +33,12 @@ Teorema de Tales, semelhança e aplicações
 Teorema de Tales
 ============
 
-
 Motivação do Teorema de Tales
+
+.. note:: Inserir imagem característica do desastre abaixo relatado.
 
 No dia 5 de novembro de 2015, a barragem de Fundão, na cidade mineira de Mariana, se rompeu deixando centenas de pessoas desabrigadas e enchendo o Rio Doce e de rejeitos de mineração causando o maior desastre sócioambiental da história brasileira. A figura a seguir apresenta um esquema de uma barragem (melhorar e citar fonte desta história). 
 
-.. figure:: https://commons.wikimedia.org/wiki/File:Barragem_de_Fund%C3%A3o_(Mariana_-_MG).jpg
 
 A seguir apresentamos um esquema simplificado de uma barragem. A força que o material represado faz sobre a barragem depende da área de contato deste material com a barragem, representado pelo segmento `PB`. Como se trata de uma região submersa, esta medição pode ser de difícil obtenção. 
 
@@ -52,7 +52,8 @@ Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`,
 
 Teorema de Tales
 ------------
-Enunciado e prova da versão acima do Teorema de Tales.
+
+.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por área? Incluir também exemplos característicos.
 
 
 
@@ -69,11 +70,11 @@ Assista ao vídeo do `Manual do Mundo <https://www.youtube.com/watch?v=Ji7YorM_t
 
 a) Numa folha separada use o pantógrafo para ampliar a seguir.
 
-   .. figure:: https://upload.wikimedia.org/wikipedia/commons/0/0c/Contorno_do_mapa_do_Brasil.svg
-     :width: 200px
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/e/ec/Necker_cube_and_impossible_cube.PNG
+     :width: 300px
      :align: center
      
-     autor: Giro720 (Wikimedia Commons)
+     autor: Maksim (`Wikimedia Commons <https://commons.wikimedia.org/wiki/Category:Impossible_cubes?uselang=pt-br>`_)
 
 b) Que adaptações devem ser feitas para transformar o seu pantógrafo num pantógrafo de redução?
 
@@ -158,8 +159,35 @@ Se uma reta `r` é paralela a um dos lados de um triângulo `ABC` forma um triâ
    \fill[black] (.4,2) circle (.08);
    \fill[black] (2.8,2) circle (.08);
    
+.. note:: Exemplo, provar ao menos 1 casos de semelhança, enunciar todos três e incluir exercícios, nos exercícios provar os casos que faltaram.
 
+O retângulo dourado (para os estudantes que gostam de matemática)
+-------------------
+Você deve ter percebido que dois retângulos `R_1` e `R_2` são semelhantes se a razão 
 
+.. math:: \dfrac{\text{lado maior de } R_1}{\text{lado menor de } R_1} = \dfrac{\text{lado maior de } R_2}{\text{lado menor de } R_2}.
+
+Pergunta 1: Existe um retângulo de lados `a` e `a+b` com `b \neq 0` que quando dele se retira um quadrado de lado `a` como na figura, o retângulo restante seja um retângulo semelhante ao inicial?
+
+Pergunta 2: Qual é a razão entre o maior e o menor lado deste retângulo? Este número é chamado de *número de ouro* e é representado pela letra `\phi`.
+
+Pergunta 3: Quantos retângulos existem com essa propriedade?
+
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/f/f8/Rectangle_GoldenRatio.svg
+   :width: 200px
+   :align: center
+
+   Refazer esta figura (autor: Kaneiderdaniel - Wikimedia)
+
+Problema: Use uma calculadora para obter todas as casas decimais de `\phi` que você puder e faça o mesmo com o número `\phi^{-1}`. Conclua que `\phi^{-1} = \phi - 1`.
+
+.. note:: Construção para o estudante obter os retângulos de ouro encaixados como na figura.
+
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/2/23/Golden_spiral_in_rectangles.png
+      :align: center
+      :width: 300px
+
+   retângulos dourados encaixados (substituir figura por outra própria e mais bonita, esta é da wikimedia).
 
 
 Projeto Aplicado - Cinema na caixa
