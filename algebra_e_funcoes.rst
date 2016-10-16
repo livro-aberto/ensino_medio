@@ -79,7 +79,7 @@ Dentre as relações que podem ser feitas entre os conjuntos de dados da ativida
 
 	A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}.
     
-	B=\{Verde,Amarelo,Vermelho, Vinho\}.
+	B=\{\mathrm{ Verde, Amarelo, Vermelho, Vinho}\}.
     
 	C \mathrm{\ é\ o\ conjunto\ das\ velocidades\ médias}.
 
