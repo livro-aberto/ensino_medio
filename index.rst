@@ -1,4 +1,4 @@
-###########################
+********
 Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 ********
 
@@ -8,7 +8,7 @@ Geometria:
    :maxdepth: 1
    :glob:
 
-   Geometria*
+   geometria*
    
 
 Álgebra e funções:
@@ -17,7 +17,7 @@ Geometria:
    :maxdepth: 1
    :glob:
 
-   Algebra_e_Funcoes*
+   algebra_e_funcoes*
 
 Probabilidade e estatística:
 
@@ -25,5 +25,5 @@ Probabilidade e estatística:
    :maxdepth: 3
    :numbered:
 
-   Prob_e_Estatistica*
+   Prob_e_estatistica*
 
