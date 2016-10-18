@@ -2,8 +2,6 @@
 Funções
 =======
 
-
-
 Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
