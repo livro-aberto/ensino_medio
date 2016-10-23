@@ -39,6 +39,7 @@ Vetores no plano
 
 
    O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número. 
+   
    É necessário conhecer também outras informações para um entendimento mais completo. 
    Em seguida procura-se observar através do conceito de *deslocamento* que, uma vez fixada uma malha (que equivale a fixar um par de vetores não paralelos, ou seja, uma base para o plano), pode-se representar um vetor do plano através de dois números (as componentes ou coordenadas do vetor nesta base) e que estes números não dependem da escolha da origem do sistema de coordenadas. 
    Assim, dois vetores com mesmo módulo, direção e sentido serão iguais.
@@ -61,7 +62,23 @@ Vetores no plano
    
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
-   
+------------
+Apresentação
+------------
+
+As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
+
+Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares a temperatura, massa e as variações. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada.
+
+.. admonition:: Exemplos 
+
+   1) A temperatura máxima atingida em uma cidade foi de `23^\circ C`
+   2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
+   3) A temperatura variou em `3^\circ C` *para menos* 
+
+Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a tempoeratura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é poss[ivel saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a teperatura atual, sabendo a anterior.
+
+Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número 
    
    
 Não importa a origem (apresentação das componentes de um vetor)
