@@ -28,6 +28,37 @@ Vetores no plano
    8. Soma de vetores com representação visual e algébrica. [Wanderley]
    9. Exercícios e exercícios suplementares. [Todos]
    
+   
+.. admonition:: Para o professor
+
+   Nesta lição supõe-se que o estudante já teve contato com vetores como representação visual das grandezas físicas força e velocidade. Espera-se também que ele consiga marcar pontos no plano cartesiano.
+
+   .. admonition:: Definição
+   
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de vetoressegmentos equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+
+   Este livro não apresenta para o estudante uma definição de vetor. 
+   Ela é abstrata e mesmo sem esta definição,  quando bem ensinado, o estudante adquiri uma ideia bastante clara do que é um vetor. 
+   Para ele fica que um vetor é um segmento orientado que é determinado por seu módulo, direção e sentido, mas que pode ter sua origem em qualquer ponto do plano. 
+   Embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais completa do ponto de vista matemático, sugere-se que esta definição venha após a construção do conceito pelo aluno.
+   Pode-se pedir que eles escrevam uma definição e leiam em voz alta, assim o professor pode encontrar fragilidades e encaminhar para a definição precisa.
+   
+   O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número. 
+   É necessário conhecer também outras informações para um entendimento mais completo. 
+   Em seguida procura-se observar através do conceito de *deslocamento* que, uma vez fixada uma malha (que equivale a fixar um par de vetores não paralelos, ou seja, uma base para o plano), pode-se representar um vetor do plano através de dois números (as componentes ou coordenadas do vetor nesta base) e que estes números não dependem da escolha da origem do sistema de coordenadas. 
+   Assim, dois vetores com mesmo módulo, direção e sentido serão iguais.
+   
+   São brevemente apresentadas coordenadas oblíquas e polares para que o estudante sinta-se livre para buscar outro sistema de coordenadas caso o cartesiano ortogonal não lhe pareça o mais adequado em alguma situação, embora esta não seja a ênfase .
+   Além disso, o conhecimento de outros sistemas de coordenadas deve despertar para a relação entre o número de coordenadas de um vetor e a dimensão do espaço em que ele está inserido.
+   
+   Neste aspecto, cabe ressaltar que embora um vetor fique determinado por módulo, direção e sentido, não são necessárias três informações para se conhecer um vetor do plano, bastam duas pois o plano é bidimensional. 
+   Provavelmente, por isso, alguns livros estrangeiros (e.g., ref e ref), usam apenas comprimento e sentido, endendendo a direção como derivada do sentido.
+   
+   Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
+   
+   
+   
+   
 Não importa a origem (apresentação das componentes de um vetor)
 =====
 
