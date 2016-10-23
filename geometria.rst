@@ -35,15 +35,20 @@ Vetores no plano
 
    .. admonition:: Definição
    
-      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de vetoressegmentos equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
 
-   Este livro não apresenta para o estudante uma definição de vetor. 
-   Ela é abstrata e mesmo sem esta definição,  quando bem ensinado, o estudante adquiri uma ideia bastante clara do que é um vetor. 
+   Este livro não apresenta para o estudante uma definição de vetor.
+   
+   Ela é abstrata e mesmo sem esta definição,  com uma abordagem mais natural, o estudante pode adquirir uma ideia bastante clara do que é um vetor. 
+   
    Para ele fica que um vetor é um segmento orientado que é determinado por seu módulo, direção e sentido, mas que pode ter sua origem em qualquer ponto do plano. 
+   
    Embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais completa do ponto de vista matemático, sugere-se que esta definição venha após a construção do conceito pelo aluno.
+   
    Pode-se pedir que eles escrevam uma definição e leiam em voz alta, assim o professor pode encontrar fragilidades e encaminhar para a definição precisa.
    
    O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número. 
+   
    É necessário conhecer também outras informações para um entendimento mais completo. 
    Em seguida procura-se observar através do conceito de *deslocamento* que, uma vez fixada uma malha (que equivale a fixar um par de vetores não paralelos, ou seja, uma base para o plano), pode-se representar um vetor do plano através de dois números (as componentes ou coordenadas do vetor nesta base) e que estes números não dependem da escolha da origem do sistema de coordenadas. 
    Assim, dois vetores com mesmo módulo, direção e sentido serão iguais.
@@ -56,7 +61,23 @@ Vetores no plano
    
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
-   
+------------
+Apresentação
+------------
+
+As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
+
+Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares a temperatura, massa e as variações. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada.
+
+.. admonition:: Exemplos 
+
+   1) A temperatura máxima atingida em uma cidade foi de `23^\circ C`
+   2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
+   3) A temperatura variou em `3^\circ C` *para menos* 
+
+Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a tempoeratura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é poss[ivel saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a teperatura atual, sabendo a anterior.
+
+Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número 
    
    
 Não importa a origem (apresentação das componentes de um vetor)
