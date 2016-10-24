@@ -72,13 +72,13 @@ Chama-se *grandeza escalar*, aquela que se pode representar por um número real.
 
 .. admonition:: Exemplos 
 
-   1) A temperatura máxima atingida em uma cidade foi de `23^\circ C`
+   1) O recorde mundial de maratonas (corrida de 42.195 metros) é do Queniano Dennis Kimetto que a terminou em 2h02m57s. 
    2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
-   3) A temperatura variou em `3^\circ C` *para menos* 
+   3) A variação de temperatura do corpo do paciente foi de `3^\circ C`. 
 
-Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a tempoeratura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é poss[ivel saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a teperatura atual, sabendo a anterior.
+Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a temperatura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é possível saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a temperatura atual, sabendo a anterior.
 
-Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número 
+Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número para registrar a informação destas grandezas. 
    
    
 Não importa a origem (apresentação das componentes de um vetor)
