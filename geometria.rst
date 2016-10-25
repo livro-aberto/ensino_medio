@@ -437,5 +437,6 @@ f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles s�
    De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
   
+asdasddd d
 
 
