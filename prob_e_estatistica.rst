@@ -62,8 +62,17 @@ Probabilidade e Estatística
    9) Exercícios e exercícios suplementares. [Todos]
    
   
-.. admonition:: Para o professor
 
+.. admonition:: Referências
+
+    Wheelan,Charles (2013) *Estatística: o que é, para que serve, como funciona?* Zahar. Rio de Janeiro, Brasil.
+
+    IBGE:  http://vamoscontar.ibge.gov.br/atividades/ensino-medio.html
+ 
+    UNICAMP: http://m3.ime.unicamp.br/recursos/1043
+  
+  
+  
 
    
 ------------
