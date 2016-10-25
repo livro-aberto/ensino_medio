@@ -84,8 +84,9 @@ Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por
 Não importa a origem (apresentação das componentes de um vetor)
 =====
 
+.. _my-ativ-barcos:
 
-Atividade 1
+Atividade
 --------- 
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
@@ -132,7 +133,7 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 
 O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
 
-Atividade 2
+Atividade
 -------
 Nas situações a seguir reproduz as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
 
@@ -180,31 +181,52 @@ Representação algébrica de vetores no plano
 .. note::
    Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
 
+Diremos que dois segmentos orientados, digamos `AB` e `CD` representam o mesmo vetor quando possuem mesmo comprimento, direção e sentido. 
 
+* Os segmentos `AB` e `CD` possuem mesma direção quando as retas `AB` e `CD` são paralelas.
+* Os segmentos orientados `AB` e `CD` possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC`.  
 
+FIGURA
 
-Nas atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor pode ser representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
-Assim, na Atividade 1, o vetor `\overrightarrow{AA'}` tem coordenadas `x=3` e `y=4` significando que este vetor é do tipo 3 para a direita e 4 para cima.
-Note que estas também são as coordenadas dos vetores `\overrightarrow{BB'}`, `\overrightarrow{CC'}` e `\overrightarrow{DD'}`.
+Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
+
+.. math::
+
+   \overrightarrow{AB}=\overrightarrow{XY}
+
+FIGURA
+
+Uma justificativa para este fato está baseada na congruência de triângulos. Os triângulos `ABC` e `XYZ` são congruentes pelo caso LAL, pois são triângulos retângulos de catetos 2 e 3, logo os segmentos `AB` e `XY` têm mesmo comprimento. Eles têm mesma direção pois as retas `AB` e `XY` fazem o mesmo ângulo com as retas horizontais, logo são paralelas. Podemos observar que eles têm o mesmo sentido  diretamente pela figura, traçando a reta `AX` e vendo que os segmentos encontram-se na mesma região.
+
+FIGURA
+
+Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
+Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
+
+.. admonition:: Notação 
    
-Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se conhece a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `x = -700` e `y=0` com unidade `Km/h`. 
-Sua representação visual é 
-
-.. tikz:: 
-
-   \draw[latex-] (0,0) -- (2,0);
-   \node at (1,.5) {700 $Km/h$};
-
-e poderá ser usada para representar a velocidade do avião posicionando a origem do vetor na localização atual do avião. (Melhorar esta parte do avião).
+   Usaremos a notação 
    
+   .. math::
+
+      \overrightarrow{v} = \binom{x}{y} 
    
+   para representar o vetor do tipo `x` para a direita e `y` para cima.
+   
+Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
+
+Atividade
+-----------
+
+Como você representaria em coordenadas o vetor na malha abaixo?
+
+FIGURA DE VETOR EM MALHA COM x NEGATIVO.
+
+
 Atividade 3
 -----
 
 Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
-
-
-
 
 .. tikz::
        
