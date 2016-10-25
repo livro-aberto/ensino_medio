@@ -366,7 +366,8 @@ d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir
 
 
 .. note::
-   Na atividade anterior, dizemos que o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto A até o onto C, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de A até B, e `\overrightarrow{BC}`, de B até C. Neste caso, dizemos que o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+   Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
+   Neste caso, o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 Atividade #2
 ---------
