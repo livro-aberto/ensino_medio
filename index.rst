@@ -1,29 +1,11 @@
 ********
-Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática - Geometria
+Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 ********
 
-Geometria:
-
 .. toctree::
-   :maxdepth: 1
-   :glob:
+   :maxdepth: 3
+   :numbered:
 
-   geometria*
-   
-
-Álgebra e funções:
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   algebra_e_funcoes*
-
-Probabilidade e estatística:
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   prob_e_estatistica*
-
+   index_geometria
+   index_algebra_e_funcoes
+   index_prob_e_estatistica

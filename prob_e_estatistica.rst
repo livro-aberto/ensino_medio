@@ -1,3 +1,3 @@
 ******************
-prob_e_estatistica
+Probabilidade e Estatística
 ******************
