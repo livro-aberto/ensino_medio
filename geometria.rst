@@ -93,24 +93,103 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Adição de vetores
 =====
 
-a
 
-Atividade
+
+Atividade #1
 ---------
-
-Atividade #
 
 Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
 
 
-## desenho da malha ##
+.. tikz:: malha quadriculada
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (1,1) circle (.08);
+   \node[right] at (1,1) {$A$};
+   \fill[blue] (4,3) circle (.08);
+   \node[right] at (4,3) {$B$};
+   \fill[blue] (5,7) circle (.08);
+   \node[right] at (5,7) {$C$};
+ 
 
 a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
 b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
 c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
 d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
 
-.. note::
 
-  Definir AC por AB + BC
+
+.. note::
+   Na atividade anterior, dizemos que o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto A até o onto C, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de A até B, e `\overrightarrow{BC}`, de B até C. Neste caso, dizemos que o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+
+Atividade #2
+---------
+
+Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+
+
+.. tikz:: malha quadriculada
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (2,3) circle (.08);
+   \node[right] at (2,3) {$D$};
+   \fill[blue] (7,2) circle (.08);
+   \node[right] at (7,2) {$E$};
+   \fill[blue] (4,7) circle (.08);
+   \node[right] at (4,7) {$F$};
+ 
+
+a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
+
+Atividade #3
+---------
+Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+* `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+* `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+* `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+
+
+
+https://www.geogebra.org/m/mwBjY5xN
+
+
+
+Atividade #4 (Regra do paralelogramo)
+---------
+Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
+
+# colocar figura #
+
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Considere como unidade de comprimento a medida do lado de cada quadradinho da malha. 
+
+# colocar figura #
+
+.. tikz:: malha quadriculada 
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
+   \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
+   \node[right] at (3,1) {$\overrightarrow{F_{1}}$};
+   \draw[->, thick, red] (1,1) -- (3,4);
+   \draw[->, thick, blue] (1,1) -- (5,2);
+   
+
+a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+b) Construa, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
+.. note::
+   Na atividade anterior, dizemos que o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
+   
+   De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
+   
+  
+
 
