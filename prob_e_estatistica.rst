@@ -1,4 +1,3 @@
-******************
 Probabilidade e Estatística
 ******************
 
