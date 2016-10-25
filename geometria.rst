@@ -2,23 +2,29 @@
 Vetores no plano
 ****************
 
-
-.. note::
+.. admonition:: Objetivos específicos
 
    BNCC(EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
-   
-   BNCC(EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
 
-   Objetivos adicionais:
-   
-   1. Despertar para a existência de grandezas vetoriais.
-   2. Usar as operações com vetores em situações concretas (cálculo da força resultante, soma de velocidades, deslocamento final, etc.) e suas representações algébricas.
-   3. Reconhecer a diferença entre ponto e vetor, embora possam ser representados por mesmas coordenadas.
-   4. Reconhecer vetores e suas principais propriedades (quais?) utilizando tanto as coordenadas quanto sua representação visual.
+.. admonition:: Pré-requisito
+
+   BNCC(EF07MT01) Associar pares ordenados a pontos do plano cartesiano, representar triângulos e quadriláteros, conhecendo-se as coordenadas de seus vértices e realizar transformações nessas figuras a partir de multiplicação das coordenadas por um número inteiro.
+
+.. admonition:: Desdobramentos imediatos
+
+   BNCC (EM11CN01) Observar e descrever posições, deslocamentos e velocidades de objetos em linhas,como carros em estradas; em planos, como bolas numa quadra; ou no espaço, como aviões em torno do globo
+
+   BNCC (EM11CN02) Atribuir a permanência de um objeto numa mesma posição, ou a constância de sua velocidade, ao cancelamento das forças agindo nele, e atribuir qualquer alteração na sua velocidade à força resultante atuando nele
+
+   BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
+
+
+.. note::
+  
    
    Roteiro do capítulo:
    
-   1. Texto com o objetivo de despertar a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
+   1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
    2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
    3. Atividade sobre deslocamento para observar que a representação algébrica não depende da origem do sistema de coordenadas (barcos) [Simas]
    4. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
@@ -31,31 +37,26 @@ Vetores no plano
    
 .. admonition:: Para o professor
 
-   Nesta lição supõe-se que o estudante já teve contato com vetores como representação visual das grandezas físicas força e velocidade. Espera-se também que ele consiga marcar pontos no plano cartesiano.
 
-   .. admonition:: Definição
-   
-      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
-
-   Este livro não apresenta para o estudante uma definição de vetor.
-   
-   Ela é abstrata e mesmo sem esta definição,  com uma abordagem mais natural, o estudante pode adquirir uma ideia bastante clara do que é um vetor. 
-   
-   Para ele fica que um vetor é um segmento orientado que é determinado por seu módulo, direção e sentido, mas que pode ter sua origem em qualquer ponto do plano. 
-   
-   Embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais completa do ponto de vista matemático, sugere-se que esta definição venha após a construção do conceito pelo aluno.
-   
-   Pode-se pedir que eles escrevam uma definição e leiam em voz alta, assim o professor pode encontrar fragilidades e encaminhar para a definição precisa.
-   
    O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número. 
    
    É necessário conhecer também outras informações para um entendimento mais completo. 
    Em seguida procura-se observar através do conceito de *deslocamento* que, uma vez fixada uma malha (que equivale a fixar um par de vetores não paralelos, ou seja, uma base para o plano), pode-se representar um vetor do plano através de dois números (as componentes ou coordenadas do vetor nesta base) e que estes números não dependem da escolha da origem do sistema de coordenadas. 
    Assim, dois vetores com mesmo módulo, direção e sentido serão iguais.
    
-   São brevemente apresentadas coordenadas oblíquas e polares para que o estudante sinta-se livre para buscar outro sistema de coordenadas caso o cartesiano ortogonal não lhe pareça o mais adequado em alguma situação, embora esta não seja a ênfase .
-   Além disso, o conhecimento de outros sistemas de coordenadas deve despertar para a relação entre o número de coordenadas de um vetor e a dimensão do espaço em que ele está inserido.
+   Este livro não apresenta para o estudante uma definição de vetor. 
+   Ela é abstrata e mesmo sem esta definição,  quando bem ensinado, o estudante adquire uma ideia bastante clara do que é um vetor. 
+   Para ele fica que um vetor é um segmento orientado que é determinado por seu módulo, direção e sentido, mas que pode ter sua origem em qualquer ponto do plano.
+   Este conceito basta para os propósitos da Educação Básica, mesmo sendo inadequado do ponto de vista do rigor matemático.
+   Embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais completa do ponto de vista matemático, sugere-se que a definição venha após a construção do conceito pelo aluno.
+   Pode-se pedir que eles escrevam uma definição e leiam em voz alta, assim o professor pode encontrar fragilidades e encaminhar para a seguinte definição precisa.
+      
+   .. admonition:: Definição
    
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de vetoressegmentos equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+      
+   Coordenadas oblíquas e polares são apresentadas brevemente para que o estudante sinta-se livre para buscar outro sistema de coordenadas caso o cartesiano ortogonal não lhe pareça o mais adequado em alguma situação, embora esta não seja a ênfase deste material.
+   Além disso, o conhecimento de outros sistemas de coordenadas deve despertar para a relação entre o número de coordenadas de um vetor e a dimensão do espaço em que ele está inserido.   
    Neste aspecto, cabe ressaltar que embora um vetor fique determinado por módulo, direção e sentido, não são necessárias três informações para se conhecer um vetor do plano, bastam duas pois o plano é bidimensional. 
    Provavelmente, por isso, alguns livros estrangeiros (e.g., ref e ref), usam apenas comprimento e sentido, endendendo a direção como derivada do sentido.
    
@@ -71,13 +72,13 @@ Chama-se *grandeza escalar*, aquela que se pode representar por um número real.
 
 .. admonition:: Exemplos 
 
-   1) A temperatura máxima atingida em uma cidade foi de `23^\circ C`
+   1) O recorde mundial de maratonas (corrida de 42.195 metros) é do Queniano Dennis Kimetto que a terminou em 2h02m57s. 
    2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
-   3) A temperatura variou em `3^\circ C` *para menos* 
+   3) A variação de temperatura do corpo do paciente foi de `3^\circ C`. 
 
-Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a tempoeratura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é poss[ivel saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a teperatura atual, sabendo a anterior.
+Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a temperatura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é possível saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a temperatura atual, sabendo a anterior.
 
-Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número 
+Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número para registrar a informação destas grandezas. 
    
    
 Não importa a origem (apresentação das componentes de um vetor)
@@ -108,16 +109,16 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \node[right] at (6,8) {$C'$};
    \fill[blue] (4,7) circle (.08);
    \node[right] at (4,7) {$D'$};
-   \draw[->, thick, red] (0,1) -- (3,5);
-   \draw[->, thick, red] (2,0) -- (5,4);
-   \draw[->, thick, red] (3,4) -- (6,8);
-   \draw[->, thick, red] (1,3) -- (4,7);
+   \draw[-latex, thick, red] (0,1) -- (3,5);
+   \draw[-latex, thick, red] (2,0) -- (5,4);
+   \draw[-latex, thick, red] (3,4) -- (6,8);
+   \draw[-latex, thick, red] (1,3) -- (4,7);
    \fill[blue] (5,2) circle (.08);
    \node[right] at (5,2) {$E$};
    \draw[|-|] (7,-.5) -- (8,-.5);
    \node at (7.5,-.8) {1 Km};
-   \draw[->] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
-   \draw[->] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
+   \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
+   \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
    .. align:: center
 
 1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
@@ -146,9 +147,9 @@ Nas situações a seguir reproduz as figuras em seu caderno e represente o vetor
       \node[right] at (1.5,-1) {$C$};
       \fill[blue] (2,1) circle (.08);
       \node[right] at (2,1) {$D$};
-      \draw[->, thick, red] (0,0) -- (.5,1.5);
-      \draw[->, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[->, thick, red] (1.5,-1) -- (2,1);
+      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
+      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
+      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
       
       \begin{scope}[shift={(4.5cm,.25)}]
       \node at (-.5,1.05) {b)};
@@ -179,17 +180,24 @@ Representação algébrica de vetores no plano
 .. note::
    Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
 
-Na atividade anterior cada barco foi transladado de 3 km para leste e 4 km para o norte, devido à tempestade. De modo que seu deslocamento resultante pode ser expresso pelo *par ordenado* `\binom{3}{4}` uma vez que se estabelece a primeira coordenada como sendo a direção leste-oeste com sentido (para onde cresce) para o leste e segunda coordenada como sendo a direção norte-sul com orientação para o norte.
 
-Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se conhece a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `\overrightarrow{v} = \binom{-700}{0}` com unidade `Km/h`. Sua representação visual é 
+
+
+Nas atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor pode ser representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
+Assim, na Atividade 1, o vetor `\overrightarrow{AA'}` tem coordenadas `x=3` e `y=4` significando que este vetor é do tipo 3 para a direita e 4 para cima.
+Note que estas também são as coordenadas dos vetores `\overrightarrow{BB'}`, `\overrightarrow{CC'}` e `\overrightarrow{DD'}`.
+   
+Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se conhece a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `x = -700` e `y=0` com unidade `Km/h`. 
+Sua representação visual é 
 
 .. tikz:: 
 
-   \draw[<-] (0,0) -- (2,0);
+   \draw[latex-] (0,0) -- (2,0);
    \node at (1,.5) {700 $Km/h$};
 
-e poderá ser usada para representar a velocidade do avião posicionando a origem do vetor na localização atual do avião.
-
+e poderá ser usada para representar a velocidade do avião posicionando a origem do vetor na localização atual do avião. (Melhorar esta parte do avião).
+   
+   
 Atividade 3
 -----
 
@@ -210,9 +218,9 @@ Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado d
       \node[right] at (1.5,-1) {$C$};
       \fill[blue] (2,1) circle (.08);
       \node[right] at (2,1) {$D$};
-      \draw[->, thick, red] (0,0) -- (.5,1.5);
-      \draw[->, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[->, thick, red] (1.5,-1) -- (2,1);
+      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
+      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
+      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
       
       \begin{scope}[shift={(4.5cm,.25)}]
       \node at (-.5,1.05) {b)};
@@ -310,22 +318,102 @@ Adição de vetores
 =====
 
 
-Atividade
----------
 
-Atividade #
+Atividade #1
+---------
 
 Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
 
 
-## desenho da malha ##
+.. tikz:: malha quadriculada
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (1,1) circle (.08);
+   \node[right] at (1,1) {$A$};
+   \fill[blue] (4,3) circle (.08);
+   \node[right] at (4,3) {$B$};
+   \fill[blue] (5,7) circle (.08);
+   \node[right] at (5,7) {$C$};
+ 
 
 a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
 b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
 c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
 d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
 
-.. note::
 
-  Definir AC por AB + BC
+
+.. note::
+   Na atividade anterior, dizemos que o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto A até o onto C, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de A até B, e `\overrightarrow{BC}`, de B até C. Neste caso, dizemos que o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+
+Atividade #2
+---------
+
+Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+
+
+.. tikz:: malha quadriculada
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (2,3) circle (.08);
+   \node[right] at (2,3) {$D$};
+   \fill[blue] (7,2) circle (.08);
+   \node[right] at (7,2) {$E$};
+   \fill[blue] (4,7) circle (.08);
+   \node[right] at (4,7) {$F$};
+ 
+
+a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
+
+Atividade #3
+---------
+Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+* `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+* `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+* `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+
+
+
+https://www.geogebra.org/m/mwBjY5xN
+
+
+
+Atividade #4 (Regra do paralelogramo)
+---------
+Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
+
+# colocar figura #
+
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Considere como unidade de comprimento a medida do lado de cada quadradinho da malha. 
+
+# colocar figura #
+
+.. tikz:: malha quadriculada 
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
+   \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
+   \node[right] at (3,1) {$\overrightarrow{F_{1}}$};
+   \draw[->, thick, red] (1,1) -- (3,4);
+   \draw[->, thick, blue] (1,1) -- (5,2);
+   
+
+a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+b) Construa, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
+.. note::
+   Na atividade anterior, dizemos que o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
+   
+   De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
+   
+  
+
 
