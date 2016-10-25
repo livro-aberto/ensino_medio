@@ -416,4 +416,5 @@ f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles s√
    
   
 
+teste funciona?
 
