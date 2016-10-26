@@ -54,7 +54,7 @@ Vetores no plano
       
    .. admonition:: Definição
    
-      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de vetoressegmentos equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
       
    Coordenadas oblíquas e polares são apresentadas brevemente para que o estudante sinta-se livre para buscar outro sistema de coordenadas caso o cartesiano ortogonal não lhe pareça o mais adequado em alguma situação, embora esta não seja a ênfase deste material.
    Além disso, o conhecimento de outros sistemas de coordenadas deve despertar para a relação entre o número de coordenadas de um vetor e a dimensão do espaço em que ele está inserido.   
@@ -63,9 +63,6 @@ Vetores no plano
    
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
-------------
-Apresentação
-------------
 
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
@@ -81,15 +78,16 @@ Vale ressaltar que o exemplo da variação de temperatura necessitou da informa�
 
 Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número para registrar a informação destas grandezas. 
    
-   
+----------   
 Não importa a origem (apresentação das componentes de um vetor)
-=====
+-----------
 
+.. _my-ativ-barcos:
 
-Atividade 1
+Atividade
 --------- 
 
-Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
+Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
 .. tikz:: Deslocamento dos barcos devido à tempestade
 
@@ -133,7 +131,7 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 
 O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
 
-Atividade 2
+Atividade
 -------
 Nas situações a seguir reproduz as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
 
@@ -174,38 +172,158 @@ Nas situações a seguir reproduz as figuras em seu caderno e represente o vetor
       \end{scope}
       \end{scope}
     
-
+***********
 Representação algébrica de vetores no plano
----------
+***********
 
 .. note::
-   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. 
+   Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. 
+   A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+
+Diremos que dois segmentos orientados, digamos `AB` e `CD` representam o mesmo vetor quando possuem mesmo comprimento, direção e sentido. 
+
+* Dizemos que os segmentos `AB` e `CD` possuem mesma direção quando as retas `AB` e `CD` são iguais ou paralelas.
+
+Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado. Vamos agora colocar isso em termos precisos.
+
+* Toda reta tem dois sentidos: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem mesmo sentido quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
 
 
+.. tikz::
 
-
-Nas atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor pode ser representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
-Assim, na Atividade 1, o vetor `\overrightarrow{AA'}` tem coordenadas `x=3` e `y=4` significando que este vetor é do tipo 3 para a direita e 4 para cima.
-Note que estas também são as coordenadas dos vetores `\overrightarrow{BB'}`, `\overrightarrow{CC'}` e `\overrightarrow{DD'}`.
+   \draw[-latex] (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \node at (1.5,-.6) {Sentido de $A$ para $B$};
    
-Do mesmo modo, quando se diz que um avião voa a 700 `Km/h` em direção ao poente. Não se conhece a posição do avião, mas sabe-se que sua velocidade pode ser expressa pelo vetor de coordenadas `x = -700` e `y=0` com unidade `Km/h`. 
-Sua representação visual é 
+   \begin{scope}[xshift=5cm]
+   \draw[latex-] (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \node at (1.5,-.6) {Sentido de $B$ para $A$};
+   \end{scope}
+   
 
 .. tikz:: 
 
-   \draw[latex-] (0,0) -- (2,0);
-   \node at (1,.5) {700 $Km/h$};
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick] (0,1)--(4,1);
+   \node at (1.5,-.6) {Mesmo sentido};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$C$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$D$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \end{scope}
+   
+   \begin{scope}[xshift=5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
+   \node at (1.5,-.6) {Sentidos contrários};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$D$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$C$};
+   \draw[very thick, red, latex-] (1,1)--(2,2);
+   \end{scope}
+   \end{scope}
+   
 
-e poderá ser usada para representar a velocidade do avião posicionando a origem do vetor na localização atual do avião. (Melhorar esta parte do avião).
+Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
+
+.. math::
+
+   \overrightarrow{AB}=\overrightarrow{XY}
+
+.. tikz:: 
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (4.01,4);
+   \fill[blue] (0,1) circle (.08);
+   \node[right] at (0,1) {$A$};
+   \fill[blue] (2,4) circle (.08);
+   \node[right] at (2,4) {$B$};
+   \draw[very thick, red, -latex] (0,1)--(2,4);
    
+   \fill[blue] (2,0) circle (.08);
+   \node[right] at (2,0) {$X$};
+   \fill[blue] (4,3) circle (.08);
+   \node[right] at (4,3) {$Y$};
+   \draw[very thick, red, -latex] (2,0)--(4,3);
+ 
+
+Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` são congruentes pelo caso LAL, pois são triângulos retângulos de catetos 2 e 3, logo os segmentos `AB` e `XY` têm mesmo comprimento. Eles têm mesma direção pois as retas `AB` e `XY` fazem o mesmo ângulo com as retas horizontais, logo são paralelas. Podemos observar que eles têm o mesmo sentido  diretamente pela figura, traçando a reta `AX` e vendo que os segmentos encontram-se na mesma região.
+
+.. tikz:: Figura não terminada (faltam estilos no ângulo reto e indicação de congruência nos catetos)
+
+   \draw[step=1cm,gray,very thin] (0,0) grid (4.01,4);
+   \fill[blue] (0,1) circle (.08);
+   \node[left] at (0,1) {$A$};
+   \fill[blue] (2,4) circle (.08);
+   \node[right] at (2,4) {$B$};
+   \draw[very thick, red, -latex] (0,1)--(2,4);
+   \draw[very thick, red] (0,1)--(2,1)--(2,4);
    
+   \fill[blue] (2,0) circle (.08);
+   \node[left] at (2,0) {$X$};
+   \fill[blue] (4,3) circle (.08);
+   \node[right] at (4,3) {$Y$};
+   \draw[very thick, red, -latex] (2,0)--(4,3);
+   \draw[very thick, red] (2,0)--(4,0)--(4,3);
+
+Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
+Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
+
+.. admonition:: Notação 
+   
+   Usaremos a notação 
+   
+   .. math::
+
+      \overrightarrow{v} = \binom{x}{y} 
+   
+   para representar o vetor do tipo `x` para a direita e `y` para cima.
+   
+Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
+
+Atividade
+-----------
+
+Como você representaria em coordenadas o vetor na malha abaixo?
+
+FIGURA DE VETOR EM MALHA COM x NEGATIVO.
+
+
 Atividade 3
 -----
 
 Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
-
-
-
 
 .. tikz::
        
@@ -308,16 +426,17 @@ b) Faça um esquema de forças similar ao apresentado para a corda que auxilie a
 
 c) Justifique a sua escolha do item a) utilizando vetores.
 
-
+***********
 Um vetor fica caracterizado por comprimento, direção e sentido
-=====
+***********
 
 .. note::
+
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
+**********
 Adição de vetores
-=====
-
+**********
 
 
 Atividade #1
@@ -345,7 +464,8 @@ d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir
 
 
 .. note::
-   Na atividade anterior, dizemos que o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto A até o onto C, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de A até B, e `\overrightarrow{BC}`, de B até C. Neste caso, dizemos que o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+   Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
+   Neste caso, o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 Atividade #2
 ---------
@@ -416,5 +536,6 @@ f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles s�
    De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
   
+asdasddd d
 
 
