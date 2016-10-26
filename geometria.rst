@@ -2,6 +2,7 @@
 Vetores no plano
 ****************
 
+
 .. admonition:: Objetivos específicos
 
    BNCC(EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
