@@ -497,10 +497,19 @@ Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça a
 * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
 
 
-
 https://www.geogebra.org/m/mwBjY5xN
 
+.. note::
+   Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
+   
+   
+.. math::
 
+   \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
+
+
+   
+  
 
 Atividade #4 (Regra do paralelogramo)
 ---------
@@ -512,9 +521,8 @@ A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overright
 
 Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Considere como unidade de comprimento a medida do lado de cada quadradinho da malha. 
 
-# colocar figura #
 
-.. tikz:: malha quadriculada 
+.. tikz::  
 
    \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
    \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
@@ -533,7 +541,7 @@ f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles s�
 .. note::
    Na atividade anterior, dizemos que o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
    
-   De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
+   De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`, que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo, cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
   
 asdasddd d
