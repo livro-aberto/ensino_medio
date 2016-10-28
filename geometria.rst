@@ -89,7 +89,7 @@ Atividade
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
-.. tikz:: Deslocamento dos barcos devido à tempestade
+.. tikz:: Deslocamento aproximado dos barcos devido à tempestade
 
    \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
    \fill[blue] (0,1) circle (.08);
@@ -209,7 +209,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \node[below] at (2,2) {$B$};
    \node at (1.5,-.6) {Sentido de $B$ para $A$};
    \end{scope}
-   
 
 .. tikz:: 
 
@@ -278,7 +277,7 @@ Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo com
    \draw[very thick, red, -latex] (2,0)--(4,3);
  
 
-Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` são congruentes pelo caso LAL, pois são triângulos retângulos de catetos 2 e 3, logo os segmentos `AB` e `XY` têm mesmo comprimento. Eles têm mesma direção pois as retas `AB` e `XY` fazem o mesmo ângulo com as retas horizontais, logo são paralelas. Podemos observar que eles têm o mesmo sentido  diretamente pela figura, traçando a reta `AX` e vendo que os segmentos encontram-se na mesma região.
+Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` da figura abaixo são congruentes pelo caso LAL, pois são triângulos retângulos de catetos 2 e 3, logo os segmentos `AB` e `XY` têm mesmo comprimento. Eles têm mesma direção pois as retas `AB` e `XY` fazem o mesmo ângulo com as retas horizontais, logo são paralelas. Podemos observar que eles têm o mesmo sentido  diretamente pela figura, traçando a reta `AX` e vendo que os segmentos encontram-se na mesma região.
 
 .. tikz:: Figura não terminada (faltam estilos no ângulo reto e indicação de congruência nos catetos)
 
@@ -287,6 +286,7 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` são con
    \node[left] at (0,1) {$A$};
    \fill[blue] (2,4) circle (.08);
    \node[right] at (2,4) {$B$};
+   \node[right] at (2,1) {$C$};
    \draw[very thick, red, -latex] (0,1)--(2,4);
    \draw[very thick, red] (0,1)--(2,1)--(2,4);
    
@@ -294,6 +294,7 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` são con
    \node[left] at (2,0) {$X$};
    \fill[blue] (4,3) circle (.08);
    \node[right] at (4,3) {$Y$};
+   \node[right] at (4,0) {$Z$};
    \draw[very thick, red, -latex] (2,0)--(4,3);
    \draw[very thick, red] (2,0)--(4,0)--(4,3);
 
