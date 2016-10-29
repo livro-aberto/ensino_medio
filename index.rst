@@ -3,7 +3,7 @@ Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
 ********
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered:
 
    index_geometria
