@@ -78,7 +78,13 @@ Probabilidade e Estatística
 ------------
 Apresentação
 ------------
-A Estatística está presente em nossa vida cotidiana muito mais do que nos damos conta. Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre dada pesquisa de opinião, assistir um jornalista explicando a margem de erro ao divulgar pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos estão tentando nos informar, a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização, são exemplos de situações diárias em que a Estatística está presente.  Como os avanços tecnológicos um grande volume de dados passou a ser coletados por empresas relacionadas a cartão de crédito, internet, empresas de aviação, entretenimento e etc.. Atualmente, enquanto estamos navegando ingenuamente pela internet, dados sobre os assuntos mais pesquisados, horários mais utilizados entre outros estão sendo coletados e sendo depositado em um grande banco com informação de todos os usuários da web. Não é coincidência que o Netflix vive oferecendo os filmes que você gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. E você pode estar perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+A Estatística está presente no cotidiana muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
+Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos.  
+
+DÚVIDA:
+Não é coincidência que o Netflix frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
+
+Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
 
 
@@ -111,22 +117,25 @@ ATIVIDADE: PESQUISA
    * Muito provavelmente, os alunos precisarão de apoio e de orientação para o desenvolvimento do trabalho. Por exemplo, precisarão decidir sobre qual o melhor instrumento de coleta de dados para a pesquisa pretendida ou qual o melhor tipo de gráfico para apresentar os dados de forma organizada.
    * Os alunos devem ser orientados a apresentar o seu trabalho prevendo a impressão e uma apresentação oral.
    * Sugere-se que os alunos sejam convidados a fazer uma apresentação dos trabalhos. Se não for possível que todos os trabalhos sejam apresentados, pode haver uma seleção. Nesse caso, os critérios de indicação dos trabalhos a serem apresentados devem ser decididos pelos professores de responsáveis.
+   * Recomenda-se que o cumprimento das diferentes etapas do cronograma seja acomompanhado e componha a avaliação do trabalho.
    * Para ajudar os alunos a se organizarem, recomenda-se a proposição de um cronograma. Segue um exemplo:
-     
-.. table:: Legenda
-   :widths: 2 8
-   :column-alignment: left center
-   
-   +---+---+---+
-   | A | B | B |    
-   +===+===+===+
-   | 15 dias após a proposição do trabalho:| Grupos formados e temas decididos | O grupo deve apresentar um relatório simples que informe: (i) A relação nominal dos componentes do grupo; (ii) O tema selecionado – para aprovação dos professores; (iii) Um plano de trabalho com o esboço da divisão de tarefas no grupo; (iv) Cronograma de realização do trabalho.|
-   +---+---+---
-   | 1 mês após a proposição do trabalho|Projeto definido. | O grupo deve apresentar um relatório simples que informe: (i) Que perguntas norteiam e caracterizam a investigação; (ii) A população alvo da pesquisa; (iii) O instrumento de coleta de dados; (iv) Quando e como os dados serão coletados; (v) Uma avaliação e, se necessário,  a revisão do cumprimento do plano de trabalho e do cronograma.|
-   +---+---+---+
-   | 2 meses após a proposição do trabalho | Trabalho pronto! | Entrega do trabalho concluído.|
-   +---+---+---+
-   * Recomenda-se que o cumprimento das diferentes etapas do cronograma seja acomompanhado e componha a avaliação do trabalho. 
+   +----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+   | 15 dias após a proposição do trabalho: | Grupos formados e temas decididos | O grupo deve apresentar um relatório simples que informe:                                          |
+   |                                        |                                   | (i) A relação nominal dos componentes do grupo;                                                    |
+   |                                        |                                   | (ii) O tema selecionado – para aprovação dos professores;                                          |
+   |                                        |                                   | (iii) Um plano de trabalho com o esboço da divisão de tarefas no grupo;                            |
+   |                                        |                                   | (iv) Cronograma de realização do trabalho.                                                         |
+   +----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+   | 1 mês após a proposição do trabalho:   | Projeto definido.                 | O grupo deve apresentar um relatório simples que informe:                                          |
+   |                                        |                                   | (i) Que perguntas norteiam e caracterizam a investigação;                                          |
+   |                                        |                                   | (ii) A população alvo da pesquisa;                                                                 |
+   |                                        |                                   | (iii) O instrumento de coleta de dados;                                                            |
+   |                                        |                                   | (iv) Quando e como os dados serão coletados;                                                       |
+   |                                        |                                   | (v) Uma avaliação e, se necessário,,a revisão do cumprimento do plano de trabalho e do cronograma. |
+   +----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+   | 2 meses após a proposição do trabalho: | Trabalho pronto!                  | Entrega do trabalho concluído.                                                                     |
+   +----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+    
 
 
 
