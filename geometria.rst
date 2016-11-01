@@ -441,8 +441,9 @@ Operação com vetores
 
 Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetro por escalar. 
 
+-----------
 Adição de vetores
----------
+-----------
 
 
 .. admonition:: Atividade 1
@@ -473,7 +474,8 @@ Adição de vetores
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    Neste caso, o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
-.. admonition:: Atividade 2
+Atividade 2
+-----------
 
    Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
@@ -529,6 +531,7 @@ Adição de vetores
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
 
       :align: center
+      :width: 400px
             
       precisa ser refeito
 
@@ -619,7 +622,8 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
 
 
 Multiplicação de um vetor por um escalar
----------
+---------------
+
 
 Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
 
@@ -664,23 +668,23 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
 
       \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
 
+-----------
+Atividade
+-----------
 
-.. admonition:: Atividade 1
+Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
+Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 
-   Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
-   Determine as coordenadas e represente na mesma figura, os seguintes vetores:
+a) `2.\overrightarrow{u}`;
+b) `-1.\overrightarrow{u}`;
+c) `\frac{1}{2}.\overrightarrow{u}`;
+d) `-\frac{1}{2}.\overrightarrow{u}`;
+e) `2.\overrightarrow{u}`.
 
-   a) `2.\overrightarrow{u}`;
-   b) `-1.\overrightarrow{u}`;
-   c) `\frac{1}{2}.\overrightarrow{u}`;
-   d) `-\frac{1}{2}.\overrightarrow{u}`;
-   e) `2.\overrightarrow{u}`.
-
-
-   .. figure:: 
+.. figure:: 
    https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
 
-      :align: center
-      :width: 200px
+   :align: center
+   :width: 400px
 
 
