@@ -529,9 +529,8 @@ Atividade 2
 
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
-
       :align: center
-      :width: 400px
+      :width: 300px
             
       precisa ser refeito
 
@@ -683,7 +682,6 @@ e) `2.\overrightarrow{u}`.
 
 .. figure:: 
    https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
-
    :align: center
    :width: 400px
 
