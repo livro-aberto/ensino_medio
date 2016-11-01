@@ -436,114 +436,251 @@ Um vetor fica caracterizado por comprimento, direção e sentido
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
 **********
-Adição de vetores
+Operação com vetores
 **********
 
+Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetro por escalar. 
 
-Atividade #1
+Adição de vetores
 ---------
 
-Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
 
+.. admonition:: Atividade 1
 
-.. tikz:: malha quadriculada
+   Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
 
-   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
-   \fill[blue] (1,1) circle (.08);
-   \node[right] at (1,1) {$A$};
-   \fill[blue] (4,3) circle (.08);
-   \node[right] at (4,3) {$B$};
-   \fill[blue] (5,7) circle (.08);
-   \node[right] at (5,7) {$C$};
+   .. tikz:: malha quadriculada
+
+      \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+      \fill[blue] (1,1) circle (.08);
+      \node[right] at (1,1) {$A$};
+      \fill[blue] (4,3) circle (.08);
+      \node[right] at (4,3) {$B$};
+      \fill[blue] (5,7) circle (.08);
+      \node[right] at (5,7) {$C$};
  
 
-a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
-d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
+   a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
+   d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
 
+---------
 
-
+   
 .. note::
+
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    Neste caso, o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
-Atividade #2
----------
+.. admonition:: Atividade 2
 
-Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+   Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
 
-.. tikz:: malha quadriculada
+   .. tikz:: malha quadriculada
 
-   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
-   \fill[blue] (2,3) circle (.08);
-   \node[right] at (2,3) {$D$};
-   \fill[blue] (7,2) circle (.08);
-   \node[right] at (7,2) {$E$};
-   \fill[blue] (4,7) circle (.08);
-   \node[right] at (4,7) {$F$};
+      \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+      \fill[blue] (2,3) circle (.08);
+      \node[right] at (2,3) {$D$};
+      \fill[blue] (7,2) circle (.08);
+      \node[right] at (7,2) {$E$};
+      \fill[blue] (4,7) circle (.08);
+      \node[right] at (4,7) {$F$};
  
 
-a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
-b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
-c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
+   a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+   b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+   c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
 
-Atividade #3
----------
-Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+.. admonition:: Atividade 3
 
-* `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
-* `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
-* `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+   Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+   * `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+   * `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+   * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
 
 
-https://www.geogebra.org/m/mwBjY5xN
+   https://www.geogebra.org/m/mwBjY5xN
 
 .. note::
    Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
    
    
-.. math::
+   .. math::
 
-   \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
+      \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
+
+   A definição pode ser estendida de forma natural para vetores no espaço. Neste caso, os vetores possuem três coordenadas e a adição de vetores fica definida pela expressão:
+     
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
+
+.. admonition:: Atividade 4
+
+   Regra do paralelogramo
+
+   Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
 
 
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
+
+      :align: center
+            
+      precisa ser refeito
+
+   A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+
+   Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
+
+
+   .. tikz::  
+
+      \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
+      \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
+      \node[right] at (3,1) {$\overrightarrow{F_{1}}$};
+      \draw[->, thick, red] (1,1) -- (3,4);
+      \draw[->, thick, blue] (1,1) -- (5,2);
    
-  
-
-Atividade #4 (Regra do paralelogramo)
+   Considerando a medida do lado de cada quadradinho da malha como unidade: 
+   
+   a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+   b) Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+   c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+   d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+   e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+   f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
 ---------
-Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
-
-# colocar figura #
-
-A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
-
-Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Considere como unidade de comprimento a medida do lado de cada quadradinho da malha. 
-
-
-.. tikz::  
-
-   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
-   \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
-   \node[right] at (3,1) {$\overrightarrow{F_{1}}$};
-   \draw[->, thick, red] (1,1) -- (3,4);
-   \draw[->, thick, blue] (1,1) -- (5,2);
+.. note::
+   Na atividade anterior, o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
    
-
-a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
-b) Construa, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
-c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
-d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
-e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
-f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
 
 .. note::
-   Na atividade anterior, dizemos que o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
-   
+
    De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`, que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo, cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
-  
+
+Propriedades da operação de adição de vetores
+---------
+
+Enunciaremos a seguir algumas propriedades da operação de vetroes no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
+
+**a) Comutativa**
+
+Dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` no plano, `\overrightarrow{u} + \overrightarrow{v} = \overrightarrow{v}+\overrightarrow{u}`
+
+.. note:: 
+   .. math::
+   
+      \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}=\binom{x_{v}+x_{u}}{y_{v}+y_{u}}=\binom{x_{v}}{y_{v}}+\binom{x_{u}}{y_{u}}=\overrightarrow{v}+\overrightarrow{u}
+
+Em verdade, essa propriedade já havia sido verificada quando a foi apresentado a Regra do Paralelogramo (Atividade 4).
+
+**b) Associativa**
+
+Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}` no plano, `(\overrightarrow{u} + \overrightarrow{v})+ \overrightarrow{w}= \overrightarrow{u}+(\overrightarrow{v}+\overrightarrow{w})`
+
+.. note:: 
+   .. math::
+   
+      (\overrightarrow{u} + \overrightarrow{v}) + \overrightarrow{w} = \binom{x_{u}+x_{v}}{y_{u}+y_{v}}   + \binom{x_{w}}{y_{w}} = \binom{(x_{u}+x_{v})+x_{w}}{(y_{u}+y_{v})+y_{w}} = \binom{x_{u}+(x_{v}+x_{w})}{y_{u}+(y_{v}+y_{w})} = \binom{x_{u}}{y_{u}} + \binom{x_{v}+x_{w}}{y_{v}+y_{w}}= \overrightarrow{u} + (\overrightarrow{v}+\overrightarrow{w})
+
+**c) Elemento neutro (vetor nulo)**
+
+Considere o vetor `\overrightarrow{O}=(0,0)`. Portanto, para qualquer vetor `\overrightarrow{u}` no plano, `\overrightarrow{u} + \overrightarrow{O}= \overrightarrow{O}+ \overrightarrow{u} = \overrightarrow{u}`
+
+.. note:: 
+   .. math::
+   
+      \overrightarrow{u} + \overrightarrow{O} = \binom{x_{u}+0}{y_{u}+0} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+
+   .. math::
+   
+      \overrightarrow{O}+\overrightarrow{u} = \binom{0+x_{u}}{0+y_{u}} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+
+
+**d) Elemento simétrico (vetor simétrico)**
+
+Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\overrightarrow{u})` definido por `\binom{-x_{u}}{-y_{u}}` tal que `\overrightarrow{u} + (-\overrightarrow{u}) = (-\overrightarrow{u})+\overrightarrow{u}=\overrightarrow{O}`. 
+
+
+.. note:: 
+   .. math::
+   
+      \overrightarrow{u} + (-\overrightarrow{u}) = \binom{x_{u}-x_{u}}{y_{u}-y_{u}}   =\overrightarrow{O}
+
+   .. math::
+   
+      (-\overrightarrow{u}) + \overrightarrow{u} = \binom{-x_{u}+x_{u}}{-y_{u}+y_{u}}   =\overrightarrow{O}
+
+
+
+Multiplicação de um vetor por um escalar
+---------
+
+Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
+
+
+.. admonition:: Observação 1
+
+   Ao fazer a adição  de um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por ele próprio, obtem-se 
+
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{u}=\binom{x_{u}+x_{u}}{y_{u}+y_{u}}=\binom{2.x_{u}}{2.y_{u}},
+
+   que pode ser representado, de forma sintética, por
+
+   .. math::
+
+      2.\overrightarrow{u}=\binom{2.x_{u}}{2.y_{u}}.
+
+   De modo geral, para um número inteiro `n` positivo, pode-se definir `n.\overrightarrow{u}` por
+
+   .. math::
+
+      n.\overrightarrow{u}=\binom{n.x_{u}}{n.y_{u}}.
+
+.. admonition:: Observação 2
+
+   Dado um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}`, o vetor simétrico `(-\overrightarrow{u})` foi definido por `(-\overrightarrow{u}) = \binom{-x_{u}}{-y_{u}}`.
+
+   Esta ultima expressão pode ser reescrita do seguinte modo:
+
+   .. math::
+
+      -1.\overrightarrow{u}=\binom{-1.x_{u}}{-1.y_{u}}.
+
+Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um vetor por um escalar como segue:  
+
+.. admonition:: Definição 
+
+   Dado um vetor `\overrightarrow{u}` no plano e um número real `\lambda` define-se a multiplicação do vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por um escalar `\lambda` por
+   
+   .. math::
+
+      \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
+
+
+.. admonition:: Atividade 1
+
+   Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
+   Determine as coordenadas e represente na mesma figura, os seguintes vetores:
+
+   a) `2.\overrightarrow{u}`;
+   b) `-1.\overrightarrow{u}`;
+   c) `\frac{1}{2}.\overrightarrow{u}`;
+   d) `-\frac{1}{2}.\overrightarrow{u}`;
+   e) `2.\overrightarrow{u}`.
+
+
+   .. figure:: 
+   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
+
+      :align: center
+      :width: 200px
 
 
