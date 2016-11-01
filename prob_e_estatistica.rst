@@ -109,17 +109,24 @@ ORIENTAÇÕES PARA O DESENVOLVIMENTO DA ATIVIDADE:
    :widths: 1 3
    :column-alignment: left center
 
+============================================================================   =========
+ 15 dias após  a proposição do trabalho: Grupos formados e temas decididos   O grupo 
+ 
+.. table:: Optional Caption
+    :widths: 3 2 1
+    :column-alignment: left center right
+    :column-wrapping: true true false
+.. table:: Legenda
+   :widths: 1 3
+   :column-alignment: left center
+   :column-wrapping: true true false
+   
    +---+---+
    | 15 dias após a proposição do trabalho: Grupos formados e temas decididos |  O grupo deve apresentar um relatório que informe:
-•	A relação nominal dos componentes do grupo;
-•	O tema selecionado – para aprovação dos professores;
-•	Um plano de trabalho com um esboço da divisão de tarefas no grupo;
-•	Cronograma de realização do trabalho.
- |
-   +===+===+
-   | 0 | 1 |
-   +---+---+
-   | 2 | 3 |
+  *	A relação nominal dos componentes do grupo;
+  * O tema selecionado – para aprovação dos professores;
+  * Um plano de trabalho com um esboço da divisão de tarefas no grupo;
+  * Cronograma de realização do trabalho.|
    +---+---+
 
 
