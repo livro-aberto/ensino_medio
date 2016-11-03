@@ -5,11 +5,11 @@ Vetores no plano
 
 .. admonition:: Objetivos específicos
 
-   BNCC(EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
+   BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
 .. admonition:: Pré-requisito
 
-   BNCC(EF07MT01) Associar pares ordenados a pontos do plano cartesiano, representar triângulos e quadriláteros, conhecendo-se as coordenadas de seus vértices e realizar transformações nessas figuras a partir de multiplicação das coordenadas por um número inteiro.
+   BNCC (EF07MT01) Associar pares ordenados a pontos do plano cartesiano, representar triângulos e quadriláteros, conhecendo-se as coordenadas de seus vértices e realizar transformações nessas figuras a partir de multiplicação das coordenadas por um número inteiro.
 
 .. admonition:: Desdobramentos imediatos
 
