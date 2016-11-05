@@ -5,11 +5,11 @@ Vetores no plano
 
 .. admonition:: Objetivos específicos
 
-   BNCC(EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
+   BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
 .. admonition:: Pré-requisito
 
-   BNCC(EF07MT01) Associar pares ordenados a pontos do plano cartesiano, representar triângulos e quadriláteros, conhecendo-se as coordenadas de seus vértices e realizar transformações nessas figuras a partir de multiplicação das coordenadas por um número inteiro.
+   BNCC (EF07MT01) Associar pares ordenados a pontos do plano cartesiano, representar triângulos e quadriláteros, conhecendo-se as coordenadas de seus vértices e realizar transformações nessas figuras a partir de multiplicação das coordenadas por um número inteiro.
 
 .. admonition:: Desdobramentos imediatos
 
@@ -441,8 +441,9 @@ Operação com vetores
 
 Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetor por um escalar. 
 
+-----------
 Adição de vetores
----------
+-----------
 
 
 .. admonition:: Atividade 1
@@ -473,7 +474,8 @@ Adição de vetores
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
-.. admonition:: Atividade 2
+Atividade 2
+-----------
 
    Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
@@ -527,8 +529,8 @@ Adição de vetores
 
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
-
       :align: center
+      :width: 300px
             
       precisa ser refeito
 
@@ -644,7 +646,8 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
 
 
 Multiplicação de um vetor por um escalar
----------
+---------------
+
 
 Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
 
@@ -694,6 +697,9 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
 
       \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
 
+-----------
+Atividade
+-----------
 
 .. admonition:: Atividade 5
 
@@ -707,9 +713,16 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
    e) `2.\overrightarrow{u}`.
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
+a) `2.\overrightarrow{u}`;
+b) `-1.\overrightarrow{u}`;
+c) `\frac{1}{2}.\overrightarrow{u}`;
+d) `-\frac{1}{2}.\overrightarrow{u}`;
+e) `2.\overrightarrow{u}`.
 
-      :align: center
+.. figure:: 
+   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
+   :align: center
+   :width: 400px
 
 
 .. admonition:: Resposta 
