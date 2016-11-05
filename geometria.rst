@@ -439,7 +439,7 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Operação com vetores
 **********
 
-Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetro por escalar. 
+Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetor por um escalar. 
 
 Adição de vetores
 ---------
@@ -471,7 +471,7 @@ Adição de vetores
 .. note::
 
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
-   Neste caso, o vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+   O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 .. admonition:: Atividade 2
 
@@ -566,7 +566,7 @@ Adição de vetores
 Propriedades da operação de adição de vetores
 ---------
 
-Enunciaremos a seguir algumas propriedades da operação de vetroes no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
+Enunciaremos a seguir algumas propriedades da operação de vetores no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
 
 **a) Comutativa**
 
@@ -577,7 +577,7 @@ Dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` no plano, `\overr
    
       \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}=\binom{x_{v}+x_{u}}{y_{v}+y_{u}}=\binom{x_{v}}{y_{v}}+\binom{x_{u}}{y_{u}}=\overrightarrow{v}+\overrightarrow{u}
 
-Em verdade, essa propriedade já havia sido verificada quando a foi apresentado a Regra do Paralelogramo (Atividade 4).
+Em verdade, essa propriedade já havia sido verificada quando a Regra do Paralelogramo foi apresentada na Atividade (4).
 
 **b) Associativa**
 
@@ -588,33 +588,58 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    
       (\overrightarrow{u} + \overrightarrow{v}) + \overrightarrow{w} = \binom{x_{u}+x_{v}}{y_{u}+y_{v}}   + \binom{x_{w}}{y_{w}} = \binom{(x_{u}+x_{v})+x_{w}}{(y_{u}+y_{v})+y_{w}} = \binom{x_{u}+(x_{v}+x_{w})}{y_{u}+(y_{v}+y_{w})} = \binom{x_{u}}{y_{u}} + \binom{x_{v}+x_{w}}{y_{v}+y_{w}}= \overrightarrow{u} + (\overrightarrow{v}+\overrightarrow{w})
 
+Observe as figuras a seguir:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020742&tok=a1fe39&media=associativa_1.png 
+
+   figura 1
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020765&tok=b33377&media=associativa_2.png
+
+   figura 2
+
+
+A figura 1 ilusta a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
+
+Já a figura 2 ilustra a segunda situação: primeiro realiza-se a adição `(\overrightarrow{v} + \overrightarrow{w})` para depois realizar a adição o vetor  `\overrightarrow{u}` com este vetor soma. 
+
+Em ambas as situações, o resultado é o mesmo vetor.
+
 **c) Elemento neutro (vetor nulo)**
 
-Considere o vetor `\overrightarrow{O}=(0,0)`. Portanto, para qualquer vetor `\overrightarrow{u}` no plano, `\overrightarrow{u} + \overrightarrow{O}= \overrightarrow{O}+ \overrightarrow{u} = \overrightarrow{u}`
+Considere o vetor `\overrightarrow{o}=(0,0)`. Portanto, para qualquer vetor `\overrightarrow{u}` no plano, `\overrightarrow{u} + \overrightarrow{o}= \overrightarrow{o}+ \overrightarrow{u} = \overrightarrow{u}`
 
 .. note:: 
    .. math::
    
-      \overrightarrow{u} + \overrightarrow{O} = \binom{x_{u}+0}{y_{u}+0} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+      \overrightarrow{u} + \overrightarrow{o} = \binom{x_{u}+0}{y_{u}+0} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
 
    .. math::
    
-      \overrightarrow{O}+\overrightarrow{u} = \binom{0+x_{u}}{0+y_{u}} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+      \overrightarrow{o}+\overrightarrow{u} = \binom{0+x_{u}}{0+y_{u}} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
 
 
 **d) Elemento simétrico (vetor simétrico)**
 
-Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\overrightarrow{u})` definido por `\binom{-x_{u}}{-y_{u}}` tal que `\overrightarrow{u} + (-\overrightarrow{u}) = (-\overrightarrow{u})+\overrightarrow{u}=\overrightarrow{O}`. 
+Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\overrightarrow{u})` definido por `\binom{-x_{u}}{-y_{u}}` tal que `\overrightarrow{u} + (-\overrightarrow{u}) = (-\overrightarrow{u})+\overrightarrow{u}=\overrightarrow{o}`. 
 
 
 .. note:: 
    .. math::
    
-      \overrightarrow{u} + (-\overrightarrow{u}) = \binom{x_{u}-x_{u}}{y_{u}-y_{u}}   =\overrightarrow{O}
+      \overrightarrow{u} + (-\overrightarrow{u}) = \binom{x_{u}-x_{u}}{y_{u}-y_{u}}   =\overrightarrow{o}
 
    .. math::
    
-      (-\overrightarrow{u}) + \overrightarrow{u} = \binom{-x_{u}+x_{u}}{-y_{u}+y_{u}}   =\overrightarrow{O}
+      (-\overrightarrow{u}) + \overrightarrow{u} = \binom{-x_{u}+x_{u}}{-y_{u}+y_{u}}   =\overrightarrow{o}
+
+
+.. note:: 
+   
+   Você deve ter percebido que o vetor nulo `\overrightarrow{o}` contraria a definição original de vetor. Qual seria a direção de um vetor nulo? Qual seria  o sentido de um vetor nulo? Entretanto, ele surge, por exemplo, quando realizamos a adição `\overrightarrow{u}+ (-\overrightarrow{u})`. Sua definição, do ponto de vista formal, se faz então necessária. Podemos interpretar o vetor nulo como sendo o deslocamento resultante de dois deslocamentos consecutivos, de mesma direção e mesmo módulo, mas em sentidos contrários: primeiro desloca-se de um ponto A até um ponto B, e depois, do ponto B, retorna-se para o ponto A. 
+
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1478019431&tok=e77635&media=vetornulo3.png
 
 
 
@@ -638,11 +663,16 @@ Antes de definir a **multiplicação de um vetor por um escalar** convém fazer 
 
       2.\overrightarrow{u}=\binom{2.x_{u}}{2.y_{u}}.
 
-   De modo geral, para um número inteiro `n` positivo, pode-se definir `n.\overrightarrow{u}` por
+   De modo geral, para um número inteiro `n` positivo, define-se `n.\overrightarrow{u}` pela seguinte expressão:
 
    .. math::
 
       n.\overrightarrow{u}=\binom{n.x_{u}}{n.y_{u}}.
+
+
+Quer dizer, multiplicar um vetor `\overrightarrow{u}` por um escalar `n` significa multiplicar cada coordenada do vetor `\overrightarrow{u}` pelo número  `n`. 
+
+Observe que esta definição pode ser estendida de forma natural para vetores no espaço. Neste caso, o vetor terá três coordenaas e teremos que multiplicar por `n` cada uma das três coordenadas.
 
 .. admonition:: Observação 2
 
@@ -654,7 +684,7 @@ Antes de definir a **multiplicação de um vetor por um escalar** convém fazer 
 
       -1.\overrightarrow{u}=\binom{-1.x_{u}}{-1.y_{u}}.
 
-Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um vetor por um escalar como segue:  
+Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um vetor por um escalar como segue. 
 
 .. admonition:: Definição 
 
@@ -665,7 +695,7 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
       \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
 
 
-.. admonition:: Atividade 1
+.. admonition:: Atividade 5
 
    Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
    Determine as coordenadas e represente na mesma figura, os seguintes vetores:
@@ -681,4 +711,31 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
 
       :align: center
 
+
+.. admonition:: Resposta 
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=39&t=1477953990&tok=5e4dd5&media=mult_escalar_gab.jpg
+
+      :align: center
+
+
+.. note:: 
+   
+   Com base na resolução da atividade anterior você deve ter observado ao multiplicar um vetor `\overrightarrow{u}` (não nulo) no plano por um número real `\lambda`, `\lambda\neq 0`, o vetor resultante não muda de direção.  
+   Quer dizer:   `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` são vetores paralelos. 
+   Além disso:
+
+   a) Se `\lambda>0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem o mesmo sentido;
+   b) Se `\lambda<0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem sentidos contrários;
+   c) Se `|\lambda|>1`, o módulo de `\lambda.\overrightarrow{u}` é maior do que o módulo de `\overrightarrow{u}`;
+   d) Se `|\lambda|<1`, o módulo de `\lambda.\overrightarrow{u}` é menor do que o módulo de `\overrightarrow{u}`;   
+   e) Se `\lambda=-1`, o vetor `\lambda.\overrightarrow{u}` é o vetor simétrico de `\overrightarrow{u}`.
+
+
+
+.. admonition:: Atividade 6
+
+   Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
+   
+   https://www.geogebra.org/m/QM5UrQsH
 
