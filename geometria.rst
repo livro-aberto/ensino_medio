@@ -673,9 +673,7 @@ Antes de definir a **multiplicação de um vetor por um escalar** convém fazer 
       n.\overrightarrow{u}=\binom{n.x_{u}}{n.y_{u}}.
 
 
-Quer dizer, multiplicar um vetor `\overrightarrow{u}` por um escalar `n` significa multiplicar cada coordenada do vetor `\overrightarrow{u}` pelo número  `n`. 
-
-Observe que esta definição pode ser estendida de forma natural para vetores no espaço. Neste caso, o vetor terá três coordenaas e teremos que multiplicar por `n` cada uma das três coordenadas.
+   Quer dizer, multiplicar um vetor `\overrightarrow{u}` por um escalar `n` significa multiplicar cada coordenada do vetor `\overrightarrow{u}` pelo número  `n`. Observe que esta definição pode ser estendida de forma natural para vetores no espaço. Neste caso, multiplica-se por `n` cada uma das três coordenadas do vetor.
 
 .. admonition:: Observação 2
 
@@ -751,4 +749,73 @@ e) `2.\overrightarrow{u}`.
    Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
    
    https://www.geogebra.org/m/QM5UrQsH
+
+
+Propriedades da operação de multiplicação de um vetor por um escalar
+---------------
+
+
+Enunciaremos as propriedades considerando vetores no plano. Entretanto, cabe destacar que essas propriedades também são válidas para vetores no espaço. 
+
+Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e `\mu` números reais.
+
+**a) Associativa**
+
+`\lambda.(\mu.\overrightarrow{u})=(\lambda.\mu).\overrightarrow{u}` 
+
+
+.. note:: 
+   .. math::
+   
+      \lambda.(\mu.\overrightarrow{u})=\lambda.\binom{\mu.x_{u}}{\mu.y_{u}}=\binom{\lambda.\mu.x_{u}}{\lambda.\mu.y_{u}}=\binom{(\lambda\mu).x_{u}}{(\lambda\mu).y_{u}}=(\lambda\mu).\binom{x_{u}}{y_{u}}=(\lambda.\mu).\overrightarrow{u}
+      
+
+**b) Distributiva em realação à  adição de escalares**
+
+`(\lambda+\mu)\overrightarrow{u}=\lambda\overrightarrow{u}+\mu\overrightarrow{u}` 
+
+
+.. note:: 
+   .. math::
+   
+      (\lambda+\mu).\overrightarrow{u}=\binom{(\lambda+\mu)x_{u}}{(\lambda+\mu)y_{u}}=\binom{\lambda.x_{u}+\mu.x_{u}}{\lambda.y_{u}+\mu.y_{u}}=\binom{\lambda.x_{u}}{\lambda.y_{u}}+\binom{\mu.x_{u}}{\mu.y_{u}}=\lambda.\overrightarrow{u}+\mu.\overrightarrow{u}.
+
+**c) Distributiva em realação à  adição de vetores**
+
+`\lambda.(\overrightarrow{u}+\overrightarrow{v})=\lambda\overrightarrow{u}+\lambda\overrightarrow{v}` 
+
+
+.. note:: 
+   .. math::
+   
+      \lambda.(\overrightarrow{u}+\overrightarrow{v})=\lambda\binom{x_{u}+x_{v}}{y_{u}+y_{v}}=\binom{\lambda.x_{u}+\lambda.x_{v}}{\lambda.y_{u}+\lambda.y_{v}}=\binom{\lambda.x_{u}}{\lambda.y_{u}}+\binom{\lambda.x_{v}}{\lambda.y_{v}}=\lambda.\binom{x_{u}}{y_{u}}+\lambda.\binom{x_{v}}{y_{v}}=\lambda\overrightarrow{u}+\lambda\overrightarrow{v}
+      
+
+**d) Identidade**
+
+`1.(\overrightarrow{u})=\overrightarrow{u}` 
+
+
+.. note:: 
+   .. math::
+   
+      1.(\overrightarrow{u})=\binom{1.x_{u}}{1.y_{u}}=\binom{x_{u}}{x_{u}}=\overrightarrow{u}
+
+
+.. admonition:: Observação 
+
+   `\lambda.\overrightarrow{u}=\overrightarrow{o}\Leftrightarrow\lambda=0` ou `\overrightarrow{u}=\overrightarrow{o}`.
+   
+   De fato.
+
+   Se `\lambda=0` ou `\overrightarrow{u}=\overrightarrow{o}`, tem-se que `\lambda.\overrightarrow{u}=\overrightarrow{o}`.
+
+   Por outro lado se `\lambda.\overrightarrow{u}=\overrightarrow{o}` e `\lambda\neq0`, tem-se que 
+   `\overrightarrow{u}=1.\overrightarrow{u}=(\lambda^{-1}.\lambda).\overrightarrow{u}=(\lambda^{-1}).(\lambda.\overrightarrow{u})=(\lambda^{-1}).\overrightarrow{o}=\overrightarrow{o}.`
+
+
+Exercícios
+---------------
+
+
 
