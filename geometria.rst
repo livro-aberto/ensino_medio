@@ -66,7 +66,7 @@ Vetores no plano
 
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
-A figura a seguir mostra um resumo de 5 dias de previsões climáticas para a cidade de Amapá:
+A figura a seguir mostra um resumo de 5 dias de previsões climáticas para a cidade de Macapá:
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
 
