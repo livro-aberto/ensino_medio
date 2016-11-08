@@ -66,12 +66,14 @@ Vetores no plano
 
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
-A figura a seguir mostra um resumo de 5 dias de previsões climáticas para a cidade de Macapá:
+A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
+   :align: center 
+   
+   Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
 
-   :align: center
-   :caption: Disponível em https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
+Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referente ao DIA e à DESCRIÇÃO trazem informações qualitativas. Outras colunas, trazem um número seguido, ou não, de uma unidade de medida. 
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares a temperatura, massa e as variações. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada.
 
@@ -121,6 +123,8 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex, thick, red] (1,3) -- (4,7);
    \fill[blue] (5,2) circle (.08);
    \node[right] at (5,2) {$E$};
+   \draw[|-|] (8.5, 0) -- (8.5,1);
+   \node at (9.3,.5) {1 Km};
    \draw[|-|] (7,-.5) -- (8,-.5);
    \node at (7.5,-.8) {1 Km};
    \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
@@ -325,9 +329,15 @@ Atividade
 
 Como você representaria em coordenadas o vetor na malha abaixo?
 
-FIGURA DE VETOR EM MALHA COM x NEGATIVO.
-
-
+.. tikz:: legenda
+	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
+	\draw[-latex, thick, red] (0,0) -- (-2,1);
+    \fill[blue] (0,0) circle (.08);
+    \node[right] at (0,0) {$A$};
+    \fill[blue] (-2,1) circle (.08);
+    \node[left] at (-2,1) {$B$};
+    
+ 
 Atividade 3
 -----
 
