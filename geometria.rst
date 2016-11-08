@@ -329,15 +329,9 @@ Atividade
 
 Como você representaria em coordenadas o vetor na malha abaixo?
 
-.. tikz:: legenda
-	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
-	\draw[-latex, thick, red] (0,0) -- (-2,1);
-    \fill[blue] (0,0) circle (.08);
-    \node[right] at (0,0) {$A$};
-    \fill[blue] (-2,1) circle (.08);
-    \node[left] at (-2,1) {$B$};
-    
- 
+FIGURA DE VETOR EM MALHA COM x NEGATIVO.
+
+
 Atividade 3
 -----
 
@@ -396,6 +390,7 @@ a) A escaladora da figura usa um grampo simples para sua segurança. Para maior 
             
             foto: Elke Wetzig
    
+
    .. tikz::
 
       \node at (-1.5,-.3) {(I)};
