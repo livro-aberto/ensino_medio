@@ -66,12 +66,14 @@ Vetores no plano
 
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
-A figura a seguir mostra um resumo de 5 dias de previsões climáticas para a cidade de Macapá:
+A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
+   :align: center 
+   
+   Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
 
-   :align: center
-   :caption: Disponível em https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
+Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referente ao DIA e à DESCRIÇÃO trazem informações qualitativas. Outras colunas, trazem um número seguido, ou não, de uma unidade de medida. 
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares a temperatura, massa e as variações. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada.
 
@@ -121,6 +123,8 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex, thick, red] (1,3) -- (4,7);
    \fill[blue] (5,2) circle (.08);
    \node[right] at (5,2) {$E$};
+   \draw[|-|] (8.5, 0) -- (8.5,1);
+   \node at (9.3,.5) {1 Km};
    \draw[|-|] (7,-.5) -- (8,-.5);
    \node at (7.5,-.8) {1 Km};
    \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
@@ -325,9 +329,15 @@ Atividade
 
 Como você representaria em coordenadas o vetor na malha abaixo?
 
-FIGURA DE VETOR EM MALHA COM x NEGATIVO.
-
-
+.. tikz:: legenda
+	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
+	\draw[-latex, thick, red] (0,0) -- (-2,1);
+    \fill[blue] (0,0) circle (.08);
+    \node[right] at (0,0) {$A$};
+    \fill[blue] (-2,1) circle (.08);
+    \node[left] at (-2,1) {$B$};
+    
+ 
 Atividade 3
 -----
 
@@ -535,11 +545,10 @@ Atividade 2
 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bloco_mesa_1.jpg
       :align: center
       :width: 300px
             
-      precisa ser refeito
 
    A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
 
@@ -597,14 +606,18 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    
       (\overrightarrow{u} + \overrightarrow{v}) + \overrightarrow{w} = \binom{x_{u}+x_{v}}{y_{u}+y_{v}}   + \binom{x_{w}}{y_{w}} = \binom{(x_{u}+x_{v})+x_{w}}{(y_{u}+y_{v})+y_{w}} = \binom{x_{u}+(x_{v}+x_{w})}{y_{u}+(y_{v}+y_{w})} = \binom{x_{u}}{y_{u}} + \binom{x_{v}+x_{w}}{y_{v}+y_{w}}= \overrightarrow{u} + (\overrightarrow{v}+\overrightarrow{w})
 
-Observe as figuras a seguir:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020742&tok=a1fe39&media=associativa_1.png 
+   
+   
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_1.png 
+   :width: 400px
+   :align: center
 
    figura 1
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020765&tok=b33377&media=associativa_2.png
-
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_2.png
+   :width: 400px
+   :align: center
+   
    figura 2
 
 
@@ -648,7 +661,10 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
    Você deve ter percebido que o vetor nulo `\overrightarrow{o}` contraria a definição original de vetor. Qual seria a direção de um vetor nulo? Qual seria  o sentido de um vetor nulo? Entretanto, ele surge, por exemplo, quando realizamos a adição `\overrightarrow{u}+ (-\overrightarrow{u})`. Sua definição, do ponto de vista formal, se faz então necessária. Podemos interpretar o vetor nulo como sendo o deslocamento resultante de dois deslocamentos consecutivos, de mesma direção e mesmo módulo, mas em sentidos contrários: primeiro desloca-se de um ponto A até um ponto B, e depois, do ponto B, retorna-se para o ponto A. 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1478019431&tok=e77635&media=vetornulo3.png
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetornulo3.png
+	:width: 300px
+	:align: center
+   
 
 
 
@@ -717,24 +733,18 @@ Atividade
    d) `-\frac{1}{2}.\overrightarrow{u}`;
    e) `2.\overrightarrow{u}`.
 
-
-a) `2.\overrightarrow{u}`;
-b) `-1.\overrightarrow{u}`;
-c) `\frac{1}{2}.\overrightarrow{u}`;
-d) `-\frac{1}{2}.\overrightarrow{u}`;
-e) `2.\overrightarrow{u}`.
-
-.. figure:: 
-   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
-   :align: center
-   :width: 400px
+	.. figure:: 
+  	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+   	
 
 
 .. admonition:: Resposta 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=39&t=1477953990&tok=5e4dd5&media=mult_escalar_gab.jpg
+	A figura abaixo representa a resposta:
 
-      :align: center
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
+
+     
 
 
 .. note:: 
