@@ -522,6 +522,18 @@ Atividade 2
 
 
    https://www.geogebra.org/m/mwBjY5xN
+   
+   Utilizando a ferramenta acima, faça o que se pede:
+   
+   
+   a) Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{8}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
+
+   b) Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
+
+   c) Sejam `A`, `B` e `C` colineares de forma que `A` esteja entre `B` e `C`. O que você acontece com as coordenadas do vetor `\overrightarrow{AC}`?
+
+   d) Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
+
 
 .. note::
    Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
