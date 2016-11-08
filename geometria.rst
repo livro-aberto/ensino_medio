@@ -73,7 +73,7 @@ A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climátic
    
    Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
 
-Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referentes ao DIA e à DESCRIÇÃO trazem informações qualitativas. As colunas de Temperatura (MÁX./MIN.) Probabilidade de Precipitação (PRECIP), Velociadde do Vento (VENTO), Umidade Relativa do Ar (UMIDADE), etc. trazem informações quantitativas. 
+Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referentes ao DIA e à DESCRIÇÃO trazem informações qualitativas. As colunas de Temperatura (MÁX./MIN.) Probabilidade de Precipitação (PRECIP), Velociadde do Vento (VENTO), Umidade Relativa do Ar (UMIDADE), etc. trazem informações quantitativas e por isso são exemplos de grandezas. 
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
