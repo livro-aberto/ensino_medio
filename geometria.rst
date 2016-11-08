@@ -123,6 +123,8 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex, thick, red] (1,3) -- (4,7);
    \fill[blue] (5,2) circle (.08);
    \node[right] at (5,2) {$E$};
+   \draw[|-|] (8.5, 0) -- (8.5,1);
+   \node at (9.3,.5) {1 Km};
    \draw[|-|] (7,-.5) -- (8,-.5);
    \node at (7.5,-.8) {1 Km};
    \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
