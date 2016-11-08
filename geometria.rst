@@ -537,11 +537,10 @@ Atividade 2
 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bloco_mesa_1.jpg
       :align: center
       :width: 300px
             
-      precisa ser refeito
 
    A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
 
@@ -599,14 +598,18 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    
       (\overrightarrow{u} + \overrightarrow{v}) + \overrightarrow{w} = \binom{x_{u}+x_{v}}{y_{u}+y_{v}}   + \binom{x_{w}}{y_{w}} = \binom{(x_{u}+x_{v})+x_{w}}{(y_{u}+y_{v})+y_{w}} = \binom{x_{u}+(x_{v}+x_{w})}{y_{u}+(y_{v}+y_{w})} = \binom{x_{u}}{y_{u}} + \binom{x_{v}+x_{w}}{y_{v}+y_{w}}= \overrightarrow{u} + (\overrightarrow{v}+\overrightarrow{w})
 
-Observe as figuras a seguir:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020742&tok=a1fe39&media=associativa_1.png 
+   
+   
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_1.png 
+   :width: 400px
+   :align: center
 
    figura 1
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020765&tok=b33377&media=associativa_2.png
-
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_2.png
+   :width: 400px
+   :align: center
+   
    figura 2
 
 
@@ -650,7 +653,10 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
    Você deve ter percebido que o vetor nulo `\overrightarrow{o}` contraria a definição original de vetor. Qual seria a direção de um vetor nulo? Qual seria  o sentido de um vetor nulo? Entretanto, ele surge, por exemplo, quando realizamos a adição `\overrightarrow{u}+ (-\overrightarrow{u})`. Sua definição, do ponto de vista formal, se faz então necessária. Podemos interpretar o vetor nulo como sendo o deslocamento resultante de dois deslocamentos consecutivos, de mesma direção e mesmo módulo, mas em sentidos contrários: primeiro desloca-se de um ponto A até um ponto B, e depois, do ponto B, retorna-se para o ponto A. 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1478019431&tok=e77635&media=vetornulo3.png
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetornulo3.png
+	:width: 300px
+	:align: center
+   
 
 
 
@@ -719,24 +725,18 @@ Atividade
    d) `-\frac{1}{2}.\overrightarrow{u}`;
    e) `2.\overrightarrow{u}`.
 
-
-a) `2.\overrightarrow{u}`;
-b) `-1.\overrightarrow{u}`;
-c) `\frac{1}{2}.\overrightarrow{u}`;
-d) `-\frac{1}{2}.\overrightarrow{u}`;
-e) `2.\overrightarrow{u}`.
-
-.. figure:: 
-   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
-   :align: center
-   :width: 400px
+	.. figure:: 
+  	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+   	
 
 
 .. admonition:: Resposta 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=39&t=1477953990&tok=5e4dd5&media=mult_escalar_gab.jpg
+	A figura abaixo representa a resposta:
 
-      :align: center
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
+
+     
 
 
 .. note:: 
