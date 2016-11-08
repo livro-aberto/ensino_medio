@@ -3,7 +3,7 @@ Probabilidade e Estatística
 
 .. admonition:: Objetivos específicos
 
-   (EM11MT03) Realizar pesquisas, considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráfios apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
+   (EM11MT03) Realizar pesquisas considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráfios apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
 
    (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos nas pesquisas realizadas pelos estudantes, em termos de localização (centro) e dispersão (amplitude).
 
@@ -102,20 +102,40 @@ ATIVIDADE: PESQUISA
    
    Professor, 
    
-   Este trabalho consiste em realizar uma pesquisa a partir dos processos de obtenção, de organização e de análise de dados segundo métodos e técnicas da estatística descritiva.
+   Este trabalho consiste em realizar uma pesquisa a partir dos processos de coleta, de organização e de análise de dados segundo métodos e técnicas da estatística descritiva.
    
    OBJETIVO DA ATIVIDADE
-   
-   (EM11MT03) Realizar um estudo cujo tema seja relevante para a comunidade CApiana ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
+    Fazer com que o aluno complete o ciclo investigativo de uma pesquisa que inicia com o planejamento da pesquisa e termina com a apresentação e discussão dos resultados.(EM11MT03)
+   Realizar um estudo cujo tema seja relevante para a comunidade CApiana ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
    
    ORIENTAÇÕES PARA O DESENVOLVIMENTO DA ATIVIDADE:
    
+   * Está atividade deve ser desenvolvida em 4 etapas: planejamento, coleta, análise e apresentação dos resultados. 
+   
    * Esta é uma atividade para ser realizada em grupos. Organize seus alunos em grupos de até 5 (cinco) componentes ou individualmente. Os componentes não precisam ser de uma mesma turma, mas devem ter conhecimento necessário para participar da realização do trabalho.
-   * O tema da pesquisa deve, necessariamente, ser relevante para a comunidade local da escola ou para a sociedade em geral. Por exemplo, pesquisar o tempo gasto pelos estudantes no deslocamento diáro até a escola pode ser relevante para administração da escola. No entanto, saber se o número da casa, ou do apartamento, em que os alunos moram é par ou é ímpar, dificilmente terá qualquer importância para a dinâmica e a convivência na escola ou em sociedade. 
-   * Cada grupo pode escolher o tema da sua pesquisa, mas deve fundamentar e justificar a escolha, defendendo a sua relevância. Para que o trabalho possa ser desenvolvido, o tema escolhido deve ser aprovado pelos professores responsáveis pela proposição e pela orientação da atividade.
-   * Muito provavelmente, os alunos precisarão de apoio e de orientação para o desenvolvimento do trabalho. Por exemplo, precisarão decidir sobre qual o melhor instrumento de coleta de dados para a pesquisa pretendida ou qual o melhor tipo de gráfico para apresentar os dados de forma organizada.
-   * Os alunos devem ser orientados a apresentar o seu trabalho prevendo a impressão e uma apresentação oral.
-   * Sugere-se que os alunos sejam convidados a fazer uma apresentação dos trabalhos. Se não for possível que todos os trabalhos sejam apresentados, pode haver uma seleção. Nesse caso, os critérios de indicação dos trabalhos a serem apresentados devem ser decididos pelos professores de responsáveis.
+   a) Etapa do planejamento:
+
+     * Professor, a ecolha do tema da pesquisa é muito importante e deve, necessariamente, ser de interesse dos estudantes. É muito importante promover um ambiente de discussão sobre temas relevantes para a comunidade local da escola ou para a sociedade em geral. Dessa maneira, o tema irá emergir das próprias inquietações dos alunos, os deixando mais envolvidos e motivados com a pesquisa. Por exemplo, pesquisar o tempo gasto pelos estudantes no deslocamento diáro até a escola pode ser relevante para administração da escola. No entanto, saber se o número da casa, ou do apartamento, em que os alunos moram é par ou é ímpar, dificilmente terá qualquer importância para a dinâmica e a convivência na escola ou em sociedade. 
+     * Cada grupo pode escolher o tema da sua pesquisa, mas deve fundamentar e justificar a escolha, defendendo a sua relevância. Para que o trabalho possa ser desenvolvido, o tema escolhido deve ser aprovado pelos professores responsáveis pela proposição e pela orientação da atividade.
+     * Após a escolha do tema, cada grupo deve apresentar para toda a turma o objetivo do seu trabalho. Nessa etapa, pode-se iniciar a discussão de que  informações serão necessárias para responder ao objetivo da pesquisa. Por exemplo, ainda em relação ao tempo gasto pelo estudante, podemos perguntar também sobre o meio de transporte (prório ou público), número de transportes que utiliza até chegar à escola, se tem ajuda de custo para a passagem, etc..
+    
+     * Muito provavelmente, os alunos precisarão de apoio e de orientação para o desenvolvimento do trabalho. Por exemplo, precisarão decidir sobre qual o melhor instrumento de coleta de dados para a pesquisa pretendida ou qual o melhor tipo de gráfico para apresentar os dados de forma organizada.
+   
+     * Desenvolvimento do instrumento de coleta de dados. Esse é um momento crucial da pesquisa, pois todas as relações de causa e efeito ou hipóteses sobre o fenômeno que se tem interesse de estudar devem ser transformadas em perguntas no instrumento de coleta de dados. Nesse momento, deve-se priorizar as **perguntas fechadas**, claras e diretas. Nessa etapa é importante também que o professor já chame a atenção para que cada pergunta do instrumento de coleta será uma variável no banco de dados. Assim, é importante guiar os alunos para que seus instrumntos tenham variáveis qualitativas e quantitativas. Dessa maneira, a análise dos resultados permitirá explorar o conteúdo sobre distribuição de freuencia, medidas de tendência central e dispersão, e também uma variedade de gráficos para variáveis qualitativas e quantitativas. É muito importante que o instrumento de coleta seja testado, pois é nesse momento que observamos que algumas perguntas não estão indicando o que se desejava inicialmente.
+     * Este é o momento de decidir o meio físico do instrumento de coleta de dados. Ele poderá ser feito no papel, que deverá ser impresso, preenchido e depois digitado em uma planilha do Excel (erros de digitação é comum nessa etapa, principalmente devido ao número de perguntas e de respondentes ). Ou pode ser feito pelo formulário do google documentos. Esse ultimo tem a facilidade dos sujeitos da pesquisa (entrevidtado) responder preencher com o próprio celular/tablet do entrevistador ou receber um link para acessar e preencher o instrumento. Dessa maneira, a planilha de dados é automáticamente alimentada por todos que responderem o instrumento. Embora essa seja uma meneira mais econômica é necessário que o sujeito da pesquisa tenha acesso a internet, que pode ser um limitador dependendo da situação. 
+  **perguntas fechadas - com respostas pré-definidas **
+
+
+
+    b)Coleta de Dados   
+    
+     * Esse é o momento de ir a campo, ou seja, encontrar os sujeitos que participarão do seu estudo. Nessa fase, é possível fazer uma discussão sobre amostra aleatória (probabilística) ou amostra por conveniência (não aleatória).
+     
+     * Após a coleta, cada formulário deverá ser digitado em uma planilha Excel. Na primeira linha da planilha deve ser digitado o nome que identificará cada variável, ou seja, cada pergunta do instrumento agora irá se trasnformar em uma coluna na  planilha. Cada linha será preencido com as resposta de um sujeito da pesquisa. Assim, ao final, teremos uma planilha onde cada coluna será uma variável e cada linha um respondente. Por exemplo, se o instrumento de coleta tiver 10 perguntas e 50 pessoas responderam a planilha terá 10 colunas e 50 linhas.  
+     
+     c) Análise
+     *
+     * Sugere-se que os alunos sejam convidados a fazer uma apresentação dos trabalhos. Se não for possível que todos os trabalhos sejam apresentados, pode haver uma seleção. Nesse caso, os critérios de indicação dos trabalhos a serem apresentados devem ser decididos pelos professores de responsáveis.
    * Recomenda-se que o cumprimento das diferentes etapas do cronograma seja acomompanhado e componha a avaliação do trabalho.
    * Para ajudar os alunos a se organizarem, recomenda-se a proposição de um cronograma. Segue um exemplo:
    +----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
