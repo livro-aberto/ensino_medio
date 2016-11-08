@@ -325,11 +325,17 @@ Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{X
 Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
 
 Atividade
+---------
+
+Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+
+Atividade
 -----------
 
-Como você representaria em coordenadas o vetor na malha abaixo?
+Determine as coordenadas dos vetores na malha abaixo.
 
-.. tikz:: legenda
+.. tikz:: Aumentar a malha e incluir diversos vetores.
+
 	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
 	\draw[-latex, thick, red] (0,0) -- (-2,1);
     \fill[blue] (0,0) circle (.08);
@@ -337,8 +343,13 @@ Como você representaria em coordenadas o vetor na malha abaixo?
     \fill[blue] (-2,1) circle (.08);
     \node[left] at (-2,1) {$B$};
     
- 
-Atividade 3
+Atividade
+----------
+
+Dadas as coordenadas, determinar uma representação do vetor.
+
+
+Atividade
 -----
 
 Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
@@ -491,10 +502,23 @@ Adição de vetores
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
-Atividade 2
+Atividade
+-----------
+Reproduza em seu caderno as figuras abaixo e faça o que se pede:
+
+a) Dados os vetores `AB` e `BC` na figura abaixo, represente o vetor `AB + BC`.
+
+<Inserir figura sem grade>
+
+b) Em cada uma das situações abaixo, dados os vetores `u` e `v`, faça uma figura que represente o vetor `u + v` indicando como você obteve a sua resposta.
+
+<Inserir 3 figuras com diferentes>
+
+
+Atividade
 -----------
 
-   Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
 
    .. tikz:: malha quadriculada
