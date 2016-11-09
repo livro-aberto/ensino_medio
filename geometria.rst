@@ -179,24 +179,21 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \node[right] at (1,1.5) {$C$};
       \end{scope}
       \end{scope}
-    
-***********
-Representação algébrica de vetores no plano
-***********
 
-.. note::
-   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. 
-   Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. 
-   A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+Atividade
+---------
 
-Diremos que dois segmentos orientados, digamos `AB` e `CD` representam o mesmo vetor quando possuem mesmo comprimento, direção e sentido. 
+O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante num jogo. Determine quais bolas parecem possuir velocidades iguais.
 
-* Dizemos que os segmentos `AB` e `CD` possuem mesma direção quando as retas `AB` e `CD` são iguais ou paralelas.
+<figura de mesa de bilhar com diversas bolas, com vetores velocidades, alguns de módulos iguais e direções ou sentidos diferentes, outros com mesma velocidade>
 
-Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado. Vamos agora colocar isso em termos precisos.
+.. admonition:: Definição
 
-* Toda reta tem dois sentidos: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem mesmo sentido quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+   Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
+<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+
+Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo sentido quando apontam para o mesmo lado (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
 .. tikz::
 
@@ -227,7 +224,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick] (0,1)--(4,1);
    \node at (1.5,-.6) {Mesmo sentido};
       
    \begin{scope}[xshift=1.5cm]
@@ -248,7 +244,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
    \node at (1.5,-.6) {Sentidos contrários};
       
    \begin{scope}[xshift=1.5cm]
@@ -262,6 +257,10 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \end{scope}
    \end{scope}
    
+
+Diremos que dois segmentos orientados, digamos `AB` e `CD`, *representam o mesmo vetor* quando possuem mesmo comprimento, direção e sentido. 
+Deste modo, assim como os conceitos físicos de deslocamento, força e velocidade fazem sentido sem que estejam estabelecidos de onde para onde, no caso do deslocamento, sobre que ponto, no caso da força e a posição no caso da velocidade.
+Um vetor está totalmente determinado por seu módulo (comprimento) direção e sentido.
 
 Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
 
@@ -306,6 +305,16 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` da figur
    \draw[very thick, red, -latex] (2,0)--(4,3);
    \draw[very thick, red] (2,0)--(4,0)--(4,3);
 
+Atividade
+---------
+
+Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+
+
+***********
+Representação algébrica de vetores no plano
+***********
+
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
 
@@ -320,11 +329,6 @@ Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{X
    para representar o vetor do tipo `x` para a direita e `y` para cima.
    
 Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
-
-Atividade
----------
-
-Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
 
 Atividade
 -----------
@@ -349,7 +353,8 @@ Dadas as coordenadas, determinar uma representação do vetor.
 Atividade
 -----
 
-Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
+Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
+Considere o lado de um quadradinho da malha como sendo uma unidade.
 
 .. tikz::
        
@@ -868,9 +873,57 @@ Exercícios
 ************
 Lista de exercícios
 
+
+.. _my-aprofundamentos_vetores:
+
 ***********
 Aprofundamentos
 ***********
 
-asdasd
+O que se quer dizer precisamente com *sentido* de um segmento orientado?
 
+Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem *mesmo sentido* quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick] (0,1)--(4,1);
+   \node at (1.5,-.6) {Mesmo sentido};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$C$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$D$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \end{scope}
+   
+   \begin{scope}[xshift=5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
+   \node at (1.5,-.6) {Sentidos contrários};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$D$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$C$};
+   \draw[very thick, red, latex-] (1,1)--(2,2);
+   \end{scope}
+   \end{scope}
