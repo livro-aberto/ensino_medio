@@ -1,6 +1,7 @@
-****************
+********
 Vetores no plano
-****************
+********
+
 
 
 .. admonition:: Objetivos específicos
@@ -27,13 +28,14 @@ Vetores no plano
    
    1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
    2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
-   3. Atividade sobre deslocamento para observar que a representação algébrica não depende da origem do sistema de coordenadas (barcos) [Simas]
-   4. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
-   5. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
-   6. Atividade ou exemplo com representação polar. [Marcos Paulo]
-   7. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
-   8. Soma de vetores com representação visual e algébrica. [Wanderley]
-   9. Exercícios e exercícios suplementares. [Todos]
+   3. Atividades sobre vetores geométricos (sem o uso de coordenadas) em que se apresente que um vetor fica determinado pelo conhecimento por módulo, direção e sentido, que esteja clara a noção de igualdade de vetores. Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe um, o outro está determinado.
+   4. Atividade para introduzir as coordenadas retangulares para um vetor.
+   5. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
+   6. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
+   7. Atividade ou exemplo com representação polar. [Marcos Paulo]
+   8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
+   9. Soma de vetores com representação visual e algébrica. [Wanderley]
+   10. Exercícios e exercícios suplementares. [Todos]
    
    
 .. admonition:: Para o professor
@@ -131,16 +133,11 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
    .. align:: center
 
-1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
-2. Na situação descrita o deslocamento dos barcos é o mesmo e pode ser representado pelas componentes
+Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 
-   x: de oeste para leste e;
-
-   y: do sul para o norte.
-
-   Escreva o par ordenado `\binom{x}{y}` que representa o deslocamento de cada um dos barcos.
-
-O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
+O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. 
+Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
+Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
 Atividade
 -------
@@ -823,7 +820,7 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
       \lambda.(\mu.\overrightarrow{u})=\lambda.\binom{\mu.x_{u}}{\mu.y_{u}}=\binom{\lambda.\mu.x_{u}}{\lambda.\mu.y_{u}}=\binom{(\lambda\mu).x_{u}}{(\lambda\mu).y_{u}}=(\lambda\mu).\binom{x_{u}}{y_{u}}=(\lambda.\mu).\overrightarrow{u}
       
 
-**b) Distributiva em realação à  adição de escalares**
+**b) Distributiva em relação à adição de escalares**
 
 `(\lambda+\mu)\overrightarrow{u}=\lambda\overrightarrow{u}+\mu\overrightarrow{u}` 
 
@@ -866,9 +863,14 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
    Por outro lado se `\lambda.\overrightarrow{u}=\overrightarrow{o}` e `\lambda\neq0`, tem-se que 
    `\overrightarrow{u}=1.\overrightarrow{u}=(\lambda^{-1}.\lambda).\overrightarrow{u}=(\lambda^{-1}).(\lambda.\overrightarrow{u})=(\lambda^{-1}).\overrightarrow{o}=\overrightarrow{o}.`
 
-
+************
 Exercícios
----------------
+************
+Lista de exercícios
 
+***********
+Aprofundamentos
+***********
 
+asdasd
 
