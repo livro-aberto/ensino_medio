@@ -397,18 +397,16 @@ Considere o lado de um quadradinho da malha como sendo uma unidade.
       \end{scope}
     
       
-Atividade 4
+Atividade
 ------
 Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
-
-a) A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?
-
+   
    .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
             :align: center
             :width: 200px
             
             foto: Elke Wetzig
-   
+            
    .. tikz::
 
       \node at (-1.5,-.3) {(I)};
@@ -452,10 +450,10 @@ a) A escaladora da figura usa um grampo simples para sua segurança. Para maior 
       \draw[very thick, red] (0,0) -- (270:1.5);
       \end{scope}
       \end{scope}
-
-b) Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
-
-c) Justifique a sua escolha do item a) utilizando vetores.
+      
+#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
 
 ***********
 Um vetor fica caracterizado por comprimento, direção e sentido
@@ -471,12 +469,13 @@ Operação com vetores
 
 Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetor por um escalar. 
 
------------
+************
 Adição de vetores
------------
+************
 
 
-.. admonition:: Atividade 1
+Atividade
+---------
 
    Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
 
@@ -491,12 +490,10 @@ Adição de vetores
       \node[right] at (5,7) {$C$};
  
 
-   a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-   b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-   c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
-   d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
-
----------
+   #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
+   #. Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
 
    
 .. note::
@@ -534,11 +531,12 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
       \node[right] at (4,7) {$F$};
  
 
-   a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
-   b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
-   c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
+   #. Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+   #. Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+   #. Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
 
-.. admonition:: Atividade 3
+Atividade
+--------
 
    Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
 
@@ -552,13 +550,10 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
    Utilizando a ferramenta acima, faça o que se pede:
    
    
-   a) Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{8}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
-
-   b) Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
-
-   c) Sejam `A`, `B` e `C` colineares de forma que `A` esteja entre `B` e `C`. O que você acontece com as coordenadas do vetor `\overrightarrow{AC}`?
-
-   d) Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
+   #. Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{8}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
+   #. Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
+   #. Sejam `A`, `B` e `C` colineares de forma que `A` esteja entre `B` e `C`. O que você acontece com as coordenadas do vetor `\overrightarrow{AC}`?
+   #. Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
 
 
 .. note::
@@ -575,11 +570,12 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
 
       \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
 
-.. admonition:: Atividade 4
+Atividade
+--------
 
-   Regra do paralelogramo
+Regra do paralelogramo
 
-   Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
+Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
 
 
 
@@ -588,9 +584,9 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
       :width: 300px
             
 
-   A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
 
-   Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
 
 
    .. tikz::  
@@ -601,15 +597,15 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
       \draw[->, thick, red] (1,1) -- (3,4);
       \draw[->, thick, blue] (1,1) -- (5,2);
    
-   Considerando a medida do lado de cada quadradinho da malha como unidade: 
+Considerando a medida do lado de cada quadradinho da malha como unidade: 
    
-   a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
-   b) Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
-   c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
-   d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
-   e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
-   f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
----------
+#. Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+#. Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+#. Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+#. Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+#. Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+#. O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
 .. note::
    Na atividade anterior, o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
    
@@ -618,9 +614,9 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
 
    De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`, que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo, cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
-
+**********
 Propriedades da operação de adição de vetores
----------
+**********
 
 Enunciaremos a seguir algumas propriedades da operação de vetores no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
 
@@ -705,9 +701,9 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
    
 
 
-
+***********
 Multiplicação de um vetor por um escalar
----------------
+***********
 
 
 Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
@@ -756,23 +752,23 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
 
       \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
 
------------
+
 Atividade
 -----------
 
-.. admonition:: Atividade 5
+Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
+Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 
-   Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
-   Determine as coordenadas e represente na mesma figura, os seguintes vetores:
+#. `2.\overrightarrow{u}`;
+#. `-1.\overrightarrow{u}`;
+#. `\frac{1}{2}.\overrightarrow{u}`;
+#. `-\frac{1}{2}.\overrightarrow{u}`;
+#. `2.\overrightarrow{u}`.
 
-   a) `2.\overrightarrow{u}`;
-   b) `-1.\overrightarrow{u}`;
-   c) `\frac{1}{2}.\overrightarrow{u}`;
-   d) `-\frac{1}{2}.\overrightarrow{u}`;
-   e) `2.\overrightarrow{u}`.
-
-	.. figure:: 
+.. figure:: 
   	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+     width=200px
+     alig=center
    	
 
 
@@ -799,15 +795,17 @@ Atividade
 
 
 
-.. admonition:: Atividade 6
+Atividade
+---------
 
-   Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
+Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
    
    https://www.geogebra.org/m/QM5UrQsH
 
 
+**************
 Propriedades da operação de multiplicação de um vetor por um escalar
----------------
+**************
 
 
 Enunciaremos as propriedades considerando vetores no plano. Entretanto, cabe destacar que essas propriedades também são válidas para vetores no espaço. 
