@@ -1,6 +1,7 @@
-****************
+********
 Vetores no plano
-****************
+********
+
 
 
 .. admonition:: Objetivos específicos
@@ -25,15 +26,16 @@ Vetores no plano
    
    Roteiro do capítulo:
    
-   #. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
-   #. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
-   #. Atividade sobre deslocamento para observar que a representação algébrica não depende da origem do sistema de coordenadas (barcos) [Simas]
-   #. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
-   #. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
-   #. Atividade ou exemplo com representação polar. [Marcos Paulo]
-   #. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
-   #. Soma de vetores com representação visual e algébrica. [Wanderley]
-   #. Exercícios e exercícios suplementares. [Todos]
+   1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
+   2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
+   3. Atividades sobre vetores geométricos (sem o uso de coordenadas) em que se apresente que um vetor fica determinado pelo conhecimento por módulo, direção e sentido, que esteja clara a noção de igualdade de vetores. Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe um, o outro está determinado.
+   4. Atividade para introduzir as coordenadas retangulares para um vetor.
+   5. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
+   6. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
+   7. Atividade ou exemplo com representação polar. [Marcos Paulo]
+   8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
+   9. Soma de vetores com representação visual e algébrica. [Wanderley]
+   10. Exercícios e exercícios suplementares. [Todos]
    
    
 .. admonition:: Para o professor
@@ -131,16 +133,11 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
    .. align:: center
 
-1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
-2. Na situação descrita o deslocamento dos barcos é o mesmo e pode ser representado pelas componentes
+Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 
-   x: de oeste para leste e;
-
-   y: do sul para o norte.
-
-   Escreva o par ordenado `\binom{x}{y}` que representa o deslocamento de cada um dos barcos.
-
-O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
+O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. 
+Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
+Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
 Atividade
 -------
@@ -182,24 +179,21 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \node[right] at (1,1.5) {$C$};
       \end{scope}
       \end{scope}
-    
-***********
-Representação algébrica de vetores no plano
-***********
 
-.. note::
-   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. 
-   Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. 
-   A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+Atividade
+---------
 
-Diremos que dois segmentos orientados, digamos `AB` e `CD` representam o mesmo vetor quando possuem mesmo comprimento, direção e sentido. 
+O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante num jogo. Determine quais bolas parecem possuir velocidades iguais.
 
-* Dizemos que os segmentos `AB` e `CD` possuem mesma direção quando as retas `AB` e `CD` são iguais ou paralelas.
+<figura de mesa de bilhar com diversas bolas, com vetores velocidades, alguns de módulos iguais e direções ou sentidos diferentes, outros com mesma velocidade>
 
-Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado. Vamos agora colocar isso em termos precisos.
+.. admonition:: Definição
 
-* Toda reta tem dois sentidos: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem mesmo sentido quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+   Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
+<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+
+Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo sentido quando apontam para o mesmo lado (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
 .. tikz::
 
@@ -230,7 +224,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick] (0,1)--(4,1);
    \node at (1.5,-.6) {Mesmo sentido};
       
    \begin{scope}[xshift=1.5cm]
@@ -251,7 +244,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
    \node at (1.5,-.6) {Sentidos contrários};
       
    \begin{scope}[xshift=1.5cm]
@@ -265,6 +257,10 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \end{scope}
    \end{scope}
    
+
+Diremos que dois segmentos orientados, digamos `AB` e `CD`, *representam o mesmo vetor* quando possuem mesmo comprimento, direção e sentido. 
+Deste modo, assim como os conceitos físicos de deslocamento, força e velocidade fazem sentido sem que estejam estabelecidos de onde para onde, no caso do deslocamento, sobre que ponto, no caso da força e a posição no caso da velocidade.
+Um vetor está totalmente determinado por seu módulo (comprimento) direção e sentido.
 
 Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
 
@@ -309,6 +305,16 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` da figur
    \draw[very thick, red, -latex] (2,0)--(4,3);
    \draw[very thick, red] (2,0)--(4,0)--(4,3);
 
+Atividade
+---------
+
+Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+
+
+***********
+Representação algébrica de vetores no plano
+***********
+
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
 
@@ -327,9 +333,10 @@ Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`
 Atividade
 -----------
 
-Como você representaria em coordenadas o vetor na malha abaixo?
+Determine as coordenadas dos vetores na malha abaixo.
 
-.. tikz:: legenda
+.. tikz:: Aumentar a malha e incluir diversos vetores.
+
 	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
 	\draw[-latex, thick, red] (0,0) -- (-2,1);
     \fill[blue] (0,0) circle (.08);
@@ -337,11 +344,17 @@ Como você representaria em coordenadas o vetor na malha abaixo?
     \fill[blue] (-2,1) circle (.08);
     \node[left] at (-2,1) {$B$};
     
- 
+Atividade
+----------
+
+Dadas as coordenadas, determinar uma representação do vetor.
+
+
 Atividade
 -----
 
-Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
+Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
+Considere o lado de um quadradinho da malha como sendo uma unidade.
 
 .. tikz::
        
@@ -490,8 +503,21 @@ Atividade
 
 Atividade
 -----------
+Reproduza em seu caderno as figuras abaixo e faça o que se pede:
 
-   Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+a) Dados os vetores `AB` e `BC` na figura abaixo, represente o vetor `AB + BC`.
+
+<Inserir figura sem grade>
+
+b) Em cada uma das situações abaixo, dados os vetores `u` e `v`, faça uma figura que represente o vetor `u + v` indicando como você obteve a sua resposta.
+
+<Inserir 3 figuras com diferentes>
+
+
+Atividade
+-----------
+
+Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
 
    .. tikz:: malha quadriculada
@@ -797,7 +823,7 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
       \lambda.(\mu.\overrightarrow{u})=\lambda.\binom{\mu.x_{u}}{\mu.y_{u}}=\binom{\lambda.\mu.x_{u}}{\lambda.\mu.y_{u}}=\binom{(\lambda\mu).x_{u}}{(\lambda\mu).y_{u}}=(\lambda\mu).\binom{x_{u}}{y_{u}}=(\lambda.\mu).\overrightarrow{u}
       
 
-**b) Distributiva em realação à  adição de escalares**
+**b) Distributiva em relação à adição de escalares**
 
 `(\lambda+\mu)\overrightarrow{u}=\lambda\overrightarrow{u}+\mu\overrightarrow{u}` 
 
@@ -840,9 +866,62 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
    Por outro lado se `\lambda.\overrightarrow{u}=\overrightarrow{o}` e `\lambda\neq0`, tem-se que 
    `\overrightarrow{u}=1.\overrightarrow{u}=(\lambda^{-1}.\lambda).\overrightarrow{u}=(\lambda^{-1}).(\lambda.\overrightarrow{u})=(\lambda^{-1}).\overrightarrow{o}=\overrightarrow{o}.`
 
-***********
+************
 Exercícios
+************
+Lista de exercícios
+
+
+.. _my-aprofundamentos_vetores:
+
+***********
+Aprofundamentos
 ***********
 
+O que se quer dizer precisamente com *sentido* de um segmento orientado?
 
+Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem *mesmo sentido* quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
 
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick] (0,1)--(4,1);
+   \node at (1.5,-.6) {Mesmo sentido};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$C$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$D$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \end{scope}
+   
+   \begin{scope}[xshift=5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
+   \node at (1.5,-.6) {Sentidos contrários};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$D$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$C$};
+   \draw[very thick, red, latex-] (1,1)--(2,2);
+   \end{scope}
+   \end{scope}
