@@ -135,7 +135,11 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 
 Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 
-O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. 
+
+.. admonition:: Definição 
+
+   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
+   
 Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
 Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
