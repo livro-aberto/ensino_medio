@@ -156,11 +156,11 @@ Atividade
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (27.,0.) circle (1.cm);
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (29.,0.) circle (1.cm);
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (28.,-2.) circle (1.cm);
-	\draw (-1.916350032627311,-3.745343115083972) node[anchor=north west] {\Huge{$T_1=1$}};
-	\draw (2.083631232877078,-3.745343115083972) node[anchor=north west] {\Huge{$T_2=3$}};
-	\draw (8.083603131133662,-3.745343115083972) node[anchor=north west] {\Huge{$T_3=6$}};
-	\draw (16.08356566214244,-3.745343115083972) node[anchor=north west] {\Huge{$T_4=10$}};
-	\draw (26.867298938738735,-3.745343115083972) node[anchor=north west] {\Huge{$T_5=15$}};
+	\draw (-1.916350032627311,-3.745343115083972) node[anchor=north west] {\Large{$T_1=1$}};
+	\draw (2.083631232877078,-3.745343115083972) node[anchor=north west] {\Large{$T_2=3$}};
+	\draw (8.083603131133662,-3.745343115083972) node[anchor=north west] {\Large{$T_3=6$}};
+	\draw (16.08356566214244,-3.745343115083972) node[anchor=north west] {\Large{$T_4=10$}};
+	\draw (26.867298938738735,-3.745343115083972) node[anchor=north west] {\Large{$T_5=15$}};
     
 	
 Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular é a quantidade total de pontos, distribuídos como acima, no triângulo equilátero que tem `n` pontos em um de seus lados. Por exemplo, o quarto número triangular é igual a 10. 
