@@ -96,22 +96,22 @@ Atividade
 ---------
 
 	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
-
-	+---------------------+-------------------+--------------------+
-	| Relação             | É função?         | Se não, por quê?   |
-	+=====================+===================+====================+
-	| De A em B           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De B em A           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De A em C           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De C em A           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De B em C           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De C em B           |                   |                    |
-	+---------------------+-------------------+--------------------+
+    
+	+---------------------+-------------------+------------------------+
+	| Relação             | É função?         | Se não, por quê?       |
+	+=====================+===================+========================+
+	| De A em B           |                   |                        |
+	+---------------------+-------------------+------------------------+
+	| De B em A           |                   |                        |
+	+---------------------+-------------------+------------------------+
+	| De A em C           |                   |                        |
+	+---------------------+-------------------+------------------------+
+	| De C em A           |                   |                        |
+	+---------------------+-------------------+------------------------+
+	| De B em C           |                   |                        |
+	+---------------------+-------------------+------------------------+
+	| De C em B           |                   |                        |
+	+---------------------+-------------------+------------------------+
     
 
 Atividade
@@ -156,14 +156,14 @@ Atividade
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (27.,0.) circle (1.cm);
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (29.,0.) circle (1.cm);
 	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (28.,-2.) circle (1.cm);
-	\draw (-1.916350032627311,-3.745343115083972) node[anchor=north west] {\Large{$T_1=1$}};
-	\draw (2.083631232877078,-3.745343115083972) node[anchor=north west] {\Large{$T_2=3$}};
-	\draw (8.083603131133662,-3.745343115083972) node[anchor=north west] {\Large{$T_3=6$}};
-	\draw (16.08356566214244,-3.745343115083972) node[anchor=north west] {\Large{$T_4=10$}};
-	\draw (26.867298938738735,-3.745343115083972) node[anchor=north west] {\Large{$T_5=15$}};
+	\draw (-1.916350032627311,-3.745343115083972) node[anchor=north west] {\Huge{$T_1=1$}};
+	\draw (2.083631232877078,-3.745343115083972) node[anchor=north west] {\Huge{$T_2=3$}};
+	\draw (8.083603131133662,-3.745343115083972) node[anchor=north west] {\Huge{$T_3=6$}};
+	\draw (16.08356566214244,-3.745343115083972) node[anchor=north west] {\Huge{$T_4=10$}};
+	\draw (26.867298938738735,-3.745343115083972) node[anchor=north west] {\Huge{$T_5=15$}};
     
 	
-Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular é a quantidade total de pontos, distribuídos como acima, no triângulo equilátero que tem `n` pontos em um de seus lados. Por exemplo, o quarto número triangular é igual a 10. 
+Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é a quantidade total de bolas necessárias para formar um triângulo equilátero cujo lado tem `n` bolas. Por exemplo, o quarto número triangular é `T_4=10`. 
 
 	a) Decida se a relação que associa a cada número natural `n`, o `n`-ésimo número triangular é ou não uma função.
 
@@ -214,7 +214,7 @@ a) Seja P o conjunto de todas as pessoas e considere a relação de P em P, que 
 b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
 c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
 
-Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Muitas vezes a forma de associação entre os elementos pode ser descrita por palavras, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a lei de associação entre os elementos é dada por uma expressão algébrica. Vejamos alguns exemplos.
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Muitas vezes a forma de associação entre os elementos pode ser descrita por palavras, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a lei de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
 
 `1.` A função de `\mathbb{N}` em `\mathbb{N}` que associa cada número natural `n` à soma de todos os números naturais de `1` até `n`.
 
@@ -230,7 +230,7 @@ Quando nos deparamos com uma função é fundamental identificarmos os conjuntos
 
 	f: \mathbb{Z} \to \mathbb{Z} \quad;\quad f(x)=2x.
 
-`3.` A função de `\mathbb{R}^+` em `\mathbb{R}` que associa cada número real positivo à sua raíz quadrada.
+`3.` A função de `\mathbb{R}^+` em `\mathbb{R}` que associa cada número real positivo à sua raiz quadrada.
  
 .. math::
 
@@ -242,14 +242,25 @@ Quando nos deparamos com uma função é fundamental identificarmos os conjuntos
 
 	f: \mathbb{R}^2 \to \mathbb{R} \quad;\quad f(x,y)=\frac{x+y}{2}.
  
- 
+
+
+.. admonition:: Não esqueça! 
+
+   Para definir uma função precisamos de três coisas fundamentais: o **domínio**, o **contradomínio** e a **lei** de associação que relaciona *todo* elemento do domínio à sua imagem no contradomínio.
+
+Perceba que quando dizemos simplesmente *a função* `f(x)=\frac{1}{x}`, sem que os outros elementos da função esteja claros (o domínio e o contradomínio), podemos estar cometendo um erro conceitual. 
+
+Por exemplo, se estivermos considerando `f:\mathbb{Z}^+\to \mathbb{Z}`, a lei acima não define uma função, pois se `\frac{1}{x}\notin \mathbb{Z}` para `x>1`. Uma maneira de consertar esse problema seria colocar `f:\mathbb{Z}^+\to \mathbb{Q}` 
+
+Da mesma forma, se colocamos `f:\mathbb{R}\to \mathbb{R}`, não temos uma função, uma vez que não poderíamos calcular a imagem de zero, `f(0)`. Podemos consertar esse problema retirando o zero do domínio. Assim, `f:\mathbb{R}\setminus\{0\}\to \mathbb{R}` com a lei `f(x)=\frac{1}{x}` é uma função. Em geral podemos escolher como domínio qualquer subconjunto `A\subset\mathbb{R}` que não contenha o zero.
+
 Atividade
 ---------
 
 Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
 
 a) `f(x)=\sqrt{x}`
-b) `f(x)=\frac{1}{x}`
+b) `f(x)=\frac{1}{3-x}`
 c) `f(x)=\frac{1}{\sqrt{x}}`
 d) `f(x)=\frac{1}{x+8}`
 e) `f(x)=mdc(30,x)` ,  em que `mdc` = maior divisor comum.
@@ -259,36 +270,38 @@ h) `f(x)=\frac{\sqrt{3x-1}}{2x+9}`
 
 Como estava estudando funções ele resolveu determinar para cada expressão um *domínio*, `A`, e um *contradomínio*, `B`, que a tornasse a lei de associação de uma função `f:A \to B`. Para isso, ele produziu a seguinte tabela:
 
-.. table:: 
-   :widths: 3 3 3
-   :column-alignment: center center center
-   
 	+-------------+-----------------------------+---------------------+
-	| Expressão   |              A              |          B          |
+	| Expressão   |         domínio `A`         |  contradomínio `B`  |
 	+=============+=============================+=====================+
-	|     (a)     |        `\mathbb{R}^+`       |     `\mathbb{R}`    |
+	|    `(a)`    |        `\mathbb{R}^+`       |     `\mathbb{R}`    |
 	+-------------+-----------------------------+---------------------+
-	|     (b)     |                             |     `\mathbb{R}`    |
+	|    `(b)`    |                             |     `\mathbb{R}`    |
 	+-------------+-----------------------------+---------------------+
-	|     (c)     |                             |                     |
+	|    `(c)`    |                             |                     |
 	+-------------+-----------------------------+---------------------+
-	|     (d)     | `\mathbb{R}\setminus \{8\}` |                     |
+	|    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
 	+-------------+-----------------------------+---------------------+
-	|     (e)     |                             |     `\mathbb{Z}`    |
+	|    `(e)`    |                             |     `\mathbb{Z}`    |
 	+-------------+-----------------------------+---------------------+
-	|     (f)     |                             |                     |
+	|    `(f)`    |                             |                     |
 	+-------------+-----------------------------+---------------------+
-	|     (g)     |                             |    `\mathbb{R}^+`   |
+	|    `(g)`    |                             |    `\mathbb{R}^+`   |
 	+-------------+-----------------------------+---------------------+
-	|     (h)     |                             |                     |
+	|    `(h)`    |                             |                     |
 	+-------------+-----------------------------+---------------------+
-
-
-.. note:: 
-
-   No código tem uma tabela que não compila de jeito nenhum =[
 
 Ajude o estudante a completar a tabela:
+
+
+Atividade
+---------
+Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
+
+a) Coloque em ordem crescente os números `g(\sqrt{2})`, `g(\sqrt{5})` e  `g(\sqrt{10})`.
+b) Determine todos os possíveis valores de `x` do domínio que têm imagem igual a 8.
+c) Podemos trocar o domínio e o contradomínio da função `g` para `\mathbb{Z}`? Por que?
+d) Existe algum `x\in \mathbb{R}` cuja imagem é igual a 10? Por que?
+e) Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=f(x)` ?
 
 
 Atividade
@@ -333,12 +346,16 @@ Sabe-se que a temperatura em graus Celsius em cada ponto `(x,y)` da placa é dad
 
 a) Determine a temperatura nos pontos `A`, `B`, `C` e `D` indicados na figura.
 
-b) Caminhando ao longo da borda inferior, afastando-se da origem, o que se pode afirmar sobre a temperatura?
+b) Caminhando ao longo da borda inferior, afastando-se da origem, o que se pode afirmar sobre a temperatura na placa?
 
-Atividade
+Desafio
 ---------
 
-Temperatura no fio. itens
+Um fio metálico de 2 m de comprimento é colocado em linha reta e é aquecido por uma fonte pontual de calor em seu ponto médio. Após um certo tempo a temperatura no fio se distribui de maneira que em cada ponto o valor dela em graus Celsius é igual a 150 vezes o inverso da distância do ponto ao ponto médio do fio.
+
+a) Determine a temperatura nas duas extremidades do fio.
+b) Determine a função que representa a temperatura em cada ponto do fio.
+c) Suponha que o mesmo experimento seja repetido com um fio de mesmo comprimento, feito de outro material e que, nesse caso, sabemos apenas que a temperatura é proporcional o inverso da distância do ponto ao ponto médio do fio. Ao medirmos a temperatura das extremidades do fio ao final do experimento, registramos 100ºC. Determine a constante de proporcionalidade desse material.
  
  
  
