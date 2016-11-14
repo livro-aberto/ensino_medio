@@ -135,7 +135,11 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
 
 Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 
-O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. 
+
+.. admonition:: Definição 
+
+   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
+   
 Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
 Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
@@ -463,32 +467,33 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
-**********
-Operação com vetores
-**********
 
-Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetor por um escalar. 
+**********************
+Operações com vetores
+**********************
 
-************
-Adição de vetores
-************
+Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). Quer dizer, o que significa multiplicar uma força (ou melhor, o vetor força) por um número? 
+
+.. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
+   :align: center
+
+   Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B) seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C) tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
 
 
-Atividade
+Atividade - Adição de Vetores
 ---------
 
-   Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
+Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
 
    .. tikz:: malha quadriculada
 
       \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
       \fill[blue] (1,1) circle (.08);
       \node[right] at (1,1) {$A$};
-      \fill[blue] (4,3) circle (.08);
-      \node[right] at (4,3) {$B$};
-      \fill[blue] (5,7) circle (.08);
-      \node[right] at (5,7) {$C$};
- 
+      \fill[blue] (4,2) circle (.08);
+      \node[right] at (4,2) {$B$};
+      \fill[blue] (6,7) circle (.08);
+      \node[right] at (6,7) {$C$};
 
    #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
@@ -501,6 +506,59 @@ Atividade
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
+
+Atividade - Soma de Vetores II
+---------
+Em cada item a seguir, represente e determine as coordenadas do vetor deslocamento final:
+
+a) `\overrightarrow{AC}` =  
+   
+   .. tikz::
+
+      \draw [opacity=.5,xstep=1.0cm,ystep=1.0cm,dashed] (-3.,0.4) grid (14.68,9.94);   
+      \clip(-3.,0.4) rectangle (14.68,9.94);
+      \draw [-latex,line width=1.5pt] (-2.,8.) -- (3.,2.);
+      \draw [-latex,line width=1.5pt] (3.,2.) -- (14.,4.);
+      \draw [fill=blue](-2.,8.) circle (2.5pt);
+      \draw [color=blue](-2.42,8.44) node {$A$};
+      \draw  [fill=blue](3.,2.) circle (2.5pt);
+      \draw [color=blue](2.7,1.6) node {$B$};
+      \draw  [fill=blue](14.,4.) circle (2.5pt);
+      \draw [color=blue](13.6,4.36) node {$C$};
+
+b) `\overrightarrow{AD}` =
+
+   .. tikz:: 
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.24) grid (15.02,9.96);
+      \draw [-latex,line width=1.5pt] (-2.,5.) -- (4.,5.);
+      \draw [-latex,line width=1.5pt] (4.,5.) -- (7.,2.);
+      \draw [-latex,line width=1.5pt] (7.,2.) -- (11.,8.);
+      \draw [fill=blue] (-2.,5.) circle (2.5pt);
+      \draw[color=blue] (-2.42,5.44) node {$A$};
+      \draw [fill=blue] (4.,5.) circle (2.5pt);
+      \draw[color=blue] (3.88,4.32) node {$B$};
+      \draw [fill=blue] (7.,2.) circle (2.5pt);
+      \draw[color=blue] (6.94,1.48) node {$C$};
+      \draw [fill=blue] (11.,8.) circle (2.5pt);
+      \draw[color=blue] (11.14,8.36) node {$D$};
+
+c) `\overrightarrow{AD}` =
+
+   .. tikz:: legenda
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.54) grid (14.68,9.86);
+      \clip(-3.,0.54) rectangle (14.68,9.86);
+      \draw [-latex,line width=2.==1.5pt] (12.,5.) -- (0.,5.);
+      \draw [-latex,line width=1.5pt] (0.,5.) -- (4.,2.);
+      \draw [-latex,line width=1.5pt] (4.,2.) -- (9.,9.);
+      \draw [fill=blue] (12.,5.) circle (2.5pt);
+      \draw[color=blue] (11.58,5.44) node {$A$};
+      \draw [fill=blue] (0.,5.) circle (2.5pt);
+      \draw[color=blue] (-0.76,4.6) node {$B$};
+      \draw [fill=blue] (4.,2.) circle (2.5pt);
+      \draw[color=blue] (3.94,1.48) node {$C$};
+      \draw [fill=blue] (9.,9.) circle (2.5pt);
+      \draw[color=blue] (9.14,9.36) node {$D$};
+      
 Atividade
 -----------
 Reproduza em seu caderno as figuras abaixo e faça o que se pede:
