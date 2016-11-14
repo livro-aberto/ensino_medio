@@ -38,41 +38,46 @@ Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre d
 Atividade
 ---------
 
-	A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
+A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
 
-	+------------------+-------------+-------+--------------------------+
-	|  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
-	+==================+=============+=======+==========================+
-	|    5:00 - 7:00   |     0,11    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|    7:00 - 9:00   |     0,13    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   9:00 - 11:00   |     0,16    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   11:00 - 13:00  |     0,12    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   13:00 - 15:00  |     0,12    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   15:00 - 17:00  |     0,14    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   17:00 - 19:00  |     0,27    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   19:00 - 21:00  |     0,20    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   21:00 - 23:00  |     0,11    |       |                          |
-	+------------------+-------------+-------+--------------------------+  
+.. table:: 
+    :widths: 2 1 1 3
+    :column-alignment: center center center center
+    
+    +------------------+-------------+-------+--------------------------+
+    |  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
+    +==================+=============+=======+==========================+
+    |    5:00 - 7:00   |     0,11    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |    7:00 - 9:00   |     0,13    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   9:00 - 11:00   |     0,16    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   11:00 - 13:00  |     0,12    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   13:00 - 15:00  |     0,12    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   15:00 - 17:00  |     0,14    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   17:00 - 19:00  |     0,27    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   19:00 - 21:00  |     0,20    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   21:00 - 23:00  |     0,11    |       |                          |
+    +------------------+-------------+-------+--------------------------+  
 
-	a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
+
+a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
 		.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1476340957&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 			:width: 250px
 			:align: center
          
-	b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
+b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
-	c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
+c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
 
-	d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
+d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias. 
 De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
@@ -96,72 +101,75 @@ Atividade
 ---------
 
 	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
+
+.. table:: 
+    :widths: 3 3 10
+    :column-alignment: center center center
     
-	+---------------------+-------------------+------------------------+
-	| Relação             | É função?         | Se não, por quê?       |
-	+=====================+===================+========================+
-	| De A em B           |                   |                        |
-	+---------------------+-------------------+------------------------+
-	| De B em A           |                   |                        |
-	+---------------------+-------------------+------------------------+
-	| De A em C           |                   |                        |
-	+---------------------+-------------------+------------------------+
-	| De C em A           |                   |                        |
-	+---------------------+-------------------+------------------------+
-	| De B em C           |                   |                        |
-	+---------------------+-------------------+------------------------+
-	| De C em B           |                   |                        |
-	+---------------------+-------------------+------------------------+
+    +---------------------+-------------------+------------------------+
+    | Relação             | É função?         | Se não, por quê?       |
+    +=====================+===================+========================+
+    | De A em B           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De B em A           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De A em C           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De C em A           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De B em C           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De C em B           |                   |                        |
+    +---------------------+-------------------+------------------------+
     
 
 Atividade
 ---------
 
-.. tikz:: 
+.. tikz::
 
-	\definecolor{qqwwzz}{rgb}{0.,0.4,0.6}
-	\clip(-3.9433675658221032,-5.231822639426822) rectangle (33.786185452043625,7.6600088716920745);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (-1.,-2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (3.,-2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (2.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (4.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (9.,-2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (8.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (10.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (7.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (9.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (11.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (17.,-2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (16.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (18.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (17.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (19.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (15.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (14.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (16.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (18.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (20.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (24.,6.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (26.,6.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (28.,6.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (30.,6.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (32.,6.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (25.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (27.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (29.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (31.,4.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (26.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (28.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (30.,2.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (27.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (29.,0.) circle (1.cm);
-	\draw [color=qqwwzz,fill=qqwwzz,fill opacity=1.0] (28.,-2.) circle (1.cm);
-	\draw (-1.916350032627311,-3.745343115083972) node[anchor=north west] {\Huge{$T_1=1$}};
-	\draw (2.083631232877078,-3.745343115083972) node[anchor=north west] {\Huge{$T_2=3$}};
-	\draw (8.083603131133662,-3.745343115083972) node[anchor=north west] {\Huge{$T_3=6$}};
-	\draw (16.08356566214244,-3.745343115083972) node[anchor=north west] {\Huge{$T_4=10$}};
-	\draw (26.867298938738735,-3.745343115083972) node[anchor=north west] {\Huge{$T_5=15$}};
-    
+  \definecolor{qqzzcc}{rgb}{0.,0.6,0.8}
+  \clip(-0.9279117032827463,-3.420523985545702) rectangle (17.259435909160114,6.069005028685349);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (0.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (2.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (3.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (4.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (6.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (8.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (11.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (12.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (16.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (2.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (6.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (8.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (16.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.5,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,4.5) circle (0.5cm);
+  \draw (-0.15,-0.1) node[anchor=north west] {$T_1=1$};
+  \draw (1.8,-0.1) node[anchor=north west] {$T_2=3$};
+  \draw (4.8,-0.1) node[anchor=north west] {$T_3=6$};
+  \draw (8.7,-0.1) node[anchor=north west] {$T_4=10$};
+  \draw (13.8,-0.1) node[anchor=north west] {$T_5=15$};
 	
 Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é a quantidade total de bolas necessárias para formar um triângulo equilátero cujo lado tem `n` bolas. Por exemplo, o quarto número triangular é `T_4=10`. 
 
@@ -175,19 +183,23 @@ Considere a sequência de números ilustrada acima. Ela é conhecida como a sequ
 Atividade
 ---------
 
-	Um dado cúbico com as faces numeradas de 1 a 6, é lançado 10 vezes e os 5 primeiros resultados são anotados em uma tabela.
+Um dado cúbico com as faces numeradas de 1 a 6, é lançado 10 vezes e os 5 primeiros resultados são anotados em uma tabela.
 
-	+---------------+----+----+----+----+----+
-	|  Lançamento   | 1º | 2º | 3º | 4º | 5º |
-	+---------------+----+----+----+----+----+
-	| Resultado     |  3 |  5 |  2 |  2 |  6 |
-	+---------------+----+----+----+----+----+
+.. table:: 
+    :widths: 5 2 2 2 2 2
+    :column-alignment: center center center center center center
+    
+    +---------------+----+----+----+----+----+
+    |  Lançamento   | 1º | 2º | 3º | 4º | 5º |
+    +---------------+----+----+----+----+----+
+    | Resultado     |  3 |  5 |  2 |  2 |  6 |
+    +---------------+----+----+----+----+----+
 
-	a) Decida se a relação que associa a cada número natural `n`, o resultado obtido no `n`-ésimo lançamento do dado é ou não uma função. 
+a) Decida se a relação que associa a cada número natural `n`, o resultado obtido no `n`-ésimo lançamento do dado é ou não uma função. 
 
-	b) Determine, se possível, o 6º, o 7º e o 8º resultados dos lançamentos. 
+b) Determine, se possível, o 6º, o 7º e o 8º resultados dos lançamentos. 
 
-	c) É possível obter uma expressão geral que permita encontrar o resultado de qualquer lançamento? Explique.
+c) É possível obter uma expressão geral que permita encontrar o resultado de qualquer lançamento? Explique.
  
 
 .. admonition:: Fenômenos Determinísticos 
@@ -198,7 +210,16 @@ Atividade
 
 	(usar a mesma descrição utilizada no eixo de Estatística e Probabilidade)
  
- 
+Desafio
+---------
+
+Considere o processo que associa cada número natural à soma de seus algarismos
+
+a) O que obtemos a partir do número 13717?
+b) Proponha um número cujo resultado do processo seja 22.
+c) Quantos números entre 1 e 10000 nos levam ao resultado 3?
+d) É possível obter qualquer número natural como resultado desse processo?
+
 
 Atividade
 ---------
@@ -270,25 +291,29 @@ h) `f(x)=\frac{\sqrt{3x-1}}{2x+9}`
 
 Como estava estudando funções ele resolveu determinar para cada expressão um *domínio*, `A`, e um *contradomínio*, `B`, que a tornasse a lei de associação de uma função `f:A \to B`. Para isso, ele produziu a seguinte tabela:
 
-	+-------------+-----------------------------+---------------------+
-	| Expressão   |         domínio `A`         |  contradomínio `B`  |
-	+=============+=============================+=====================+
-	|    `(a)`    |        `\mathbb{R}^+`       |     `\mathbb{R}`    |
-	+-------------+-----------------------------+---------------------+
-	|    `(b)`    |                             |     `\mathbb{R}`    |
-	+-------------+-----------------------------+---------------------+
-	|    `(c)`    |                             |                     |
-	+-------------+-----------------------------+---------------------+
-	|    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
-	+-------------+-----------------------------+---------------------+
-	|    `(e)`    |                             |     `\mathbb{Z}`    |
-	+-------------+-----------------------------+---------------------+
-	|    `(f)`    |                             |                     |
-	+-------------+-----------------------------+---------------------+
-	|    `(g)`    |                             |    `\mathbb{R}^+`   |
-	+-------------+-----------------------------+---------------------+
-	|    `(h)`    |                             |                     |
-	+-------------+-----------------------------+---------------------+
+.. table:: 
+    :widths: 3 3 3
+    :column-alignment: center center center
+    
+    +-------------+-----------------------------+---------------------+
+    | Expressão   |         domínio `A`         |  contradomínio `B`  |
+    +=============+=============================+=====================+
+    |    `(a)`    |        `\mathbb{R}^+`       |     `\mathbb{R}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(b)`    |                             |     `\mathbb{R}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(c)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(e)`    |                             |     `\mathbb{Z}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(f)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(g)`    |                             |    `\mathbb{R}^+`   |
+    +-------------+-----------------------------+---------------------+
+    |    `(h)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
 
 Ajude o estudante a completar a tabela:
 
@@ -364,8 +389,6 @@ c) Suponha que o mesmo experimento seja repetido com um fio de mesmo comprimento
  
  
  
- 
- 
 
 
 ===========
@@ -387,3 +410,36 @@ Função Quadrática
 	(EF08MT15) Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
 
 	(EF09MT18) Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+
+
+
+Atividade
+---------
+Conisdere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
+
+.. tikz::
+
+  \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+  \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+  \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-3,-2) grid (6,5);
+  \clip(-2.9174583680872663,-2.0220658086854835) rectangle (6.036227110425744,5.031600421266512);
+  \draw [samples=50,rotate around={-180.:(1.,4.)},xshift=1.cm,yshift=4.cm,line width=2pt,color=ffzzqq,domain=-6.0:6.0)] plot (\x,{(\x)^2/2});
+  \draw [->,line width=1.pt] (-3.,0.) -- (6.,0.);
+  \draw [->,line width=1.pt] (0.,-2.) -- (0.,5.);
+  \draw (-0.4,0.04) node[anchor=north west] {$0$};
+  \draw (0.9,-0.05) node[anchor=north west] {$1$};
+  \draw (-0.5,1.2) node[anchor=north west] {$1$};
+  \draw [line width=1.pt] (-0.1,1.)-- (0.1,1.);
+  \draw [line width=1.pt] (1.,-0.1)-- (1.,0.1);
+  \begin{scriptsize}
+  \draw [fill=black] (1.,4.) circle (3.5pt);
+  \draw [fill=black] (3.,2.) circle (3.5pt);
+  \end{scriptsize}
+
+
+A forma canônica de `g` é:
+
+a) `g(x)=0,5(x-1)^2+4`
+b) `g(x)=0,5(x+1)^2+4`
+c) `g(x)=-0,5(x-1)^2+4`
+d) `g(x)=-0,5(x-1)^2-4`
