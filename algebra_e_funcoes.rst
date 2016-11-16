@@ -35,7 +35,7 @@ Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre d
     
 
 
-Atividade
+Colorindo o mapa
 ---------
 
 A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
@@ -97,7 +97,7 @@ Perceba que na definição está implícito que todo elemento de `a\in A` precis
 
 
 
-Atividade
+É função?
 ---------
 
 	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
@@ -123,7 +123,7 @@ Atividade
     +---------------------+-------------------+------------------------+
     
 
-Atividade
+Números triangulares
 ---------
 
 .. tikz::
@@ -180,7 +180,7 @@ Considere a sequência de números ilustrada acima. Ela é conhecida como a sequ
 	c) É possível obter uma expressão geral que permita encontrar qualquer número triangular? Explique.
 
 
-Atividade
+Rola o dado
 ---------
 
 Um dado cúbico com as faces numeradas de 1 a 6, é lançado 10 vezes e os 5 primeiros resultados são anotados em uma tabela.
@@ -221,7 +221,7 @@ c) Quantos números entre 1 e 10000 nos levam ao resultado 3?
 d) É possível obter qualquer número natural como resultado desse processo?
 
 
-Atividade
+Por que não é?
 ---------
 Vimos que para que uma relação seja uma função não pode haver:
 
@@ -271,11 +271,11 @@ Quando nos deparamos com uma função é fundamental identificarmos os conjuntos
 
 Perceba que quando dizemos simplesmente *a função* `f(x)=\frac{1}{x}`, sem que os outros elementos da função esteja claros (o domínio e o contradomínio), podemos estar cometendo um erro conceitual. 
 
-Por exemplo, se estivermos considerando `f:\mathbb{Z}^+\to \mathbb{Z}`, a lei acima não define uma função, pois se `\frac{1}{x}\notin \mathbb{Z}` para `x>1`. Uma maneira de consertar esse problema seria colocar `f:\mathbb{Z}^+\to \mathbb{Q}` 
+Por exemplo, se estivermos considerando `f:\mathbb{Z}^+\to \mathbb{Z}`, a lei acima não define uma função, pois `\frac{1}{x}\notin \mathbb{Z}` para `x>1`. Uma maneira de consertar esse problema seria colocar `f:\mathbb{Z}^+\to \mathbb{Q}` 
 
 Da mesma forma, se colocamos `f:\mathbb{R}\to \mathbb{R}`, não temos uma função, uma vez que não poderíamos calcular a imagem de zero, `f(0)`. Podemos consertar esse problema retirando o zero do domínio. Assim, `f:\mathbb{R}\setminus\{0\}\to \mathbb{R}` com a lei `f(x)=\frac{1}{x}` é uma função. Em geral podemos escolher como domínio qualquer subconjunto `A\subset\mathbb{R}` que não contenha o zero.
 
-Atividade
+Para ser função
 ---------
 
 Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
@@ -318,7 +318,7 @@ Como estava estudando funções ele resolveu determinar para cada expressão um 
 Ajude o estudante a completar a tabela:
 
 
-Atividade
+Qual é a imagem?
 ---------
 Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
 
@@ -329,10 +329,10 @@ d) Existe algum `x\in \mathbb{R}` cuja imagem é igual a 10? Por que?
 e) Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=f(x)` ?
 
 
-Atividade
+A chapa tá quente!
 ---------
 
-Uma placa metálica quadrada é posicionada num sistema de coordenadas cartesiano de acordo com a figura abaixo.
+Uma chapa metálica quadrada é posicionada num sistema de coordenadas cartesiano de acordo com a figura abaixo.
 
 
 .. tikz::
@@ -362,7 +362,7 @@ Uma placa metálica quadrada é posicionada num sistema de coordenadas cartesian
 	\draw [fill=black] (3.,1.) circle (3.0pt);
 
 
-Sabe-se que a temperatura em graus Celsius em cada ponto `(x,y)` da placa é dada pela seguinte função
+Sabe-se que a temperatura em graus Celsius em cada ponto `(x,y)` da chapa é dada pela seguinte função
 
 
 .. math::
@@ -382,12 +382,32 @@ a) Determine a temperatura nas duas extremidades do fio.
 b) Determine a função que representa a temperatura em cada ponto do fio.
 c) Suponha que o mesmo experimento seja repetido com um fio de mesmo comprimento, feito de outro material e que, nesse caso, sabemos apenas que a temperatura é proporcional o inverso da distância do ponto ao ponto médio do fio. Ao medirmos a temperatura das extremidades do fio ao final do experimento, registramos 100ºC. Determine a constante de proporcionalidade desse material.
  
+
+=======
+Gráfico
+=======
+
+As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, um gráfico pode causar maior impacto àqueles que o leem. 
+
+
+.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=infograficos.png
+   :width: 600px
+   :align: center
+
+   http://www.freepik.com/free-vector/infographic-elements-pack_772624.htm
+
+Saber representar graficamente uma quantidade de dados pode fazer toda a diferença na hora de transmitir informações. Há muitos tipos de gráficos e cada um tem a sua particularidade e serve para transmitir as informações de forma específica.
+
+Vamos imaginar a seguinte situação:
+
+Uma empresa resolve lançar uma ação promocional na internet através de uma hashtag e um mês depois o CEO dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a hashtag foi mencionada por dia durante aquele mês.  **VALE A PENA CONTINUAR AQUI?**
  
  
- 
- 
- 
- 
+Vale mais que mil palavras
+--------- 
+
+Atividade para identificar as coordenadas de pontos no plano cartesiano
+
  
 
 
