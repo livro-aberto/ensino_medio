@@ -1,6 +1,7 @@
-****************
+********
 Vetores no plano
-****************
+********
+
 
 
 .. admonition:: Objetivos específicos
@@ -27,13 +28,14 @@ Vetores no plano
    
    1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
    2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
-   3. Atividade sobre deslocamento para observar que a representação algébrica não depende da origem do sistema de coordenadas (barcos) [Simas]
-   4. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
-   5. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
-   6. Atividade ou exemplo com representação polar. [Marcos Paulo]
-   7. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
-   8. Soma de vetores com representação visual e algébrica. [Wanderley]
-   9. Exercícios e exercícios suplementares. [Todos]
+   3. Atividades sobre vetores geométricos (sem o uso de coordenadas) em que se apresente que um vetor fica determinado pelo conhecimento por módulo, direção e sentido, que esteja clara a noção de igualdade de vetores. Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe um, o outro está determinado.
+   4. Atividade para introduzir as coordenadas retangulares para um vetor.
+   5. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
+   6. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, direção e sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
+   7. Atividade ou exemplo com representação polar. [Marcos Paulo]
+   8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
+   9. Soma de vetores com representação visual e algébrica. [Wanderley]
+   10. Exercícios e exercícios suplementares. [Todos]
    
    
 .. admonition:: Para o professor
@@ -66,7 +68,16 @@ Vetores no plano
 
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
-Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares a temperatura, massa e as variações. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada.
+A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
+
+.. figure:: http://mpfaraujo.com/images/amapa.png
+   :align: center 
+   
+   Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
+
+Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referentes ao DIA e à DESCRIÇÃO trazem informações qualitativas. As colunas de Temperatura (MÁX./MIN.) Probabilidade de Precipitação (PRECIP), Velocidade do Vento (VENTO), Umidade Relativa do Ar (UMIDADE), etc. trazem informações quantitativas e por isso são exemplos de grandezas. 
+
+Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
 .. admonition:: Exemplos 
 
@@ -114,22 +125,23 @@ Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, repres
    \draw[-latex, thick, red] (1,3) -- (4,7);
    \fill[blue] (5,2) circle (.08);
    \node[right] at (5,2) {$E$};
+   \draw[|-|] (8.5, 0) -- (8.5,1);
+   \node at (9.3,.5) {1 Km};
    \draw[|-|] (7,-.5) -- (8,-.5);
    \node at (7.5,-.8) {1 Km};
    \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
    \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
    .. align:: center
 
-1. Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
-2. Na situação descrita o deslocamento dos barcos é o mesmo e pode ser representado pelas componentes
+Reproduza a figura no seu caderno e localize a provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
 
-   x: de oeste para leste e;
 
-   y: do sul para o norte.
+.. admonition:: Definição 
 
-   Escreva o par ordenado `\binom{x}{y}` que representa o deslocamento de cada um dos barcos.
-
-O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto. Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido). Observe que na situação acima os barcos tiveram mesmo deslocamento apesar de possuirem posições iniciais e finais diferentes.
+   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
+   
+Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
+Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
 Atividade
 -------
@@ -171,24 +183,21 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \node[right] at (1,1.5) {$C$};
       \end{scope}
       \end{scope}
-    
-***********
-Representação algébrica de vetores no plano
-***********
 
-.. note::
-   Eu sei que já foi discutido, mas eu andei repensando e acho que seria interessante usar uma notação diferente de vetor e de ponto. O Geogebra, por exemplo, usa a notação `\overrightarrow{v}= \binom{x}{y}`. 
-   Em princípio isso me pareceu desnecessário, mas pensando melhor, essa notação é usada em muitos livros estrangeiros e usada pelo programa que decidimos associar (mesmo que informalmente) ao livro, que é o Geogebra. 
-   A associação `\binom{a}{b}\equiv (a, b)` pode ser feita de forma bastante natural mais tarde. Nem preciso comentar o quanto essa notação ajuda nas transformações que serão vistas posteriormente utilizando matrizes.
+Atividade
+---------
 
-Diremos que dois segmentos orientados, digamos `AB` e `CD` representam o mesmo vetor quando possuem mesmo comprimento, direção e sentido. 
+O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante num jogo. Determine quais bolas parecem possuir velocidades iguais.
 
-* Dizemos que os segmentos `AB` e `CD` possuem mesma direção quando as retas `AB` e `CD` são iguais ou paralelas.
+<figura de mesa de bilhar com diversas bolas, com vetores velocidades, alguns de módulos iguais e direções ou sentidos diferentes, outros com mesma velocidade>
 
-Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado. Vamos agora colocar isso em termos precisos.
+.. admonition:: Definição
 
-* Toda reta tem dois sentidos: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem mesmo sentido quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+   Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
+<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+
+Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo sentido quando apontam para o mesmo lado (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
 .. tikz::
 
@@ -219,7 +228,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick] (0,1)--(4,1);
    \node at (1.5,-.6) {Mesmo sentido};
       
    \begin{scope}[xshift=1.5cm]
@@ -240,7 +248,6 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \fill[blue] (2,2) circle (.08);
    \node[below] at (2,2) {$B$};
    \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
    \node at (1.5,-.6) {Sentidos contrários};
       
    \begin{scope}[xshift=1.5cm]
@@ -254,6 +261,10 @@ Intuitivamente, dois vetores têm mesmo sentido quando apontam para o mesmo lado
    \end{scope}
    \end{scope}
    
+
+Diremos que dois segmentos orientados, digamos `AB` e `CD`, *representam o mesmo vetor* quando possuem mesmo comprimento, direção e sentido. 
+Deste modo, assim como os conceitos físicos de deslocamento, força e velocidade fazem sentido sem que estejam estabelecidos de onde para onde, no caso do deslocamento, sobre que ponto, no caso da força e a posição no caso da velocidade.
+Um vetor está totalmente determinado por seu módulo (comprimento) direção e sentido.
 
 Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
 
@@ -298,6 +309,16 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` da figur
    \draw[very thick, red, -latex] (2,0)--(4,3);
    \draw[very thick, red] (2,0)--(4,0)--(4,3);
 
+Atividade
+---------
+
+Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+
+
+***********
+Representação algébrica de vetores no plano
+***********
+
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
 
@@ -316,15 +337,28 @@ Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`
 Atividade
 -----------
 
-Como você representaria em coordenadas o vetor na malha abaixo?
+Determine as coordenadas dos vetores na malha abaixo.
 
-FIGURA DE VETOR EM MALHA COM x NEGATIVO.
+.. tikz:: Aumentar a malha e incluir diversos vetores.
+
+	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
+	\draw[-latex, thick, red] (0,0) -- (-2,1);
+    \fill[blue] (0,0) circle (.08);
+    \node[right] at (0,0) {$A$};
+    \fill[blue] (-2,1) circle (.08);
+    \node[left] at (-2,1) {$B$};
+    
+Atividade
+----------
+
+Dadas as coordenadas, determinar uma representação do vetor.
 
 
-Atividade 3
+Atividade
 -----
 
-Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado de um quadradinho da malha como sendo uma unidade.
+Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
+Considere o lado de um quadradinho da malha como sendo uma unidade.
 
 .. tikz::
        
@@ -367,18 +401,16 @@ Represente o deslocamento de `A` para `D` usando coordenadas. Considere o lado d
       \end{scope}
     
       
-Atividade 4
+Atividade
 ------
 Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
-
-a) A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?
-
+   
    .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
             :align: center
             :width: 200px
             
             foto: Elke Wetzig
-   
+            
    .. tikz::
 
       \node at (-1.5,-.3) {(I)};
@@ -422,10 +454,10 @@ a) A escaladora da figura usa um grampo simples para sua segurança. Para maior 
       \draw[very thick, red] (0,0) -- (270:1.5);
       \end{scope}
       \end{scope}
-
-b) Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
-
-c) Justifique a sua escolha do item a) utilizando vetores.
+      
+#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
 
 ***********
 Um vetor fica caracterizado por comprimento, direção e sentido
@@ -435,18 +467,21 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
-**********
-Operação com vetores
-**********
 
-Nesta seção estudaremos as operações elementares com vetores: a adição de vetores e a multiplicação de um vetor por um escalar. 
+**********************
+Operações com vetores
+**********************
 
------------
-Adição de vetores
------------
+Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). Quer dizer, o que significa multiplicar uma força (ou melhor, o vetor força) por um número? 
+
+.. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
+   :align: center
+
+   Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B) seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C) tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
 
 
-.. admonition:: Atividade 1
+Atividade - Adição de Vetores
+---------
 
    Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
 
@@ -455,19 +490,15 @@ Adição de vetores
       \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
       \fill[blue] (1,1) circle (.08);
       \node[right] at (1,1) {$A$};
-      \fill[blue] (4,3) circle (.08);
-      \node[right] at (4,3) {$B$};
-      \fill[blue] (5,7) circle (.08);
-      \node[right] at (5,7) {$C$};
- 
+      \fill[blue] (4,2) circle (.08);
+      \node[right] at (4,2) {$B$};
+      \fill[blue] (6,7) circle (.08);
+      \node[right] at (6,7) {$C$};
 
    a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
-   d) Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
-
----------
-
+   d) Como podemos determinar as coordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
    
 .. note::
 
@@ -498,8 +529,21 @@ Adição de vetores
 
 Atividade 2
 -----------
+Reproduza em seu caderno as figuras abaixo e faça o que se pede:
 
-   Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
+a) Dados os vetores `AB` e `BC` na figura abaixo, represente o vetor `AB + BC`.
+
+<Inserir figura sem grade>
+
+b) Em cada uma das situações abaixo, dados os vetores `u` e `v`, faça uma figura que represente o vetor `u + v` indicando como você obteve a sua resposta.
+
+<Inserir 3 figuras com diferentes>
+
+
+Atividade
+-----------
+
+Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
 
    .. tikz:: malha quadriculada
@@ -513,11 +557,12 @@ Atividade 2
       \node[right] at (4,7) {$F$};
  
 
-   a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
-   b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
-   c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
+   #. Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+   #. Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+   #. Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
 
-.. admonition:: Atividade 3
+Atividade
+--------
 
    Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
 
@@ -527,6 +572,15 @@ Atividade 2
 
 
    https://www.geogebra.org/m/mwBjY5xN
+   
+   Utilizando a ferramenta acima, faça o que se pede:
+   
+   
+   #. Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{8}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
+   #. Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
+   #. Sejam `A`, `B` e `C` colineares de forma que `A` esteja entre `B` e `C`. O que você acontece com as coordenadas do vetor `\overrightarrow{AC}`?
+   #. Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
+
 
 .. note::
    Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
@@ -542,23 +596,23 @@ Atividade 2
 
       \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
 
-.. admonition:: Atividade 4
+Atividade
+--------
 
-   Regra do paralelogramo
+Regra do paralelogramo
 
-   Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
+Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=45&t=1477748921&tok=2ab94d&media=bloco_mesa_1.jpg
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bloco_mesa_1.jpg
       :align: center
       :width: 300px
             
-      precisa ser refeito
 
-   A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
 
-   Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
 
 
    .. tikz::  
@@ -569,15 +623,15 @@ Atividade 2
       \draw[->, thick, red] (1,1) -- (3,4);
       \draw[->, thick, blue] (1,1) -- (5,2);
    
-   Considerando a medida do lado de cada quadradinho da malha como unidade: 
+Considerando a medida do lado de cada quadradinho da malha como unidade: 
    
-   a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
-   b) Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
-   c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
-   d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
-   e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
-   f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
----------
+#. Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+#. Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+#. Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+#. Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+#. Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+#. O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
 .. note::
    Na atividade anterior, o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
    
@@ -586,9 +640,9 @@ Atividade 2
 
    De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`, que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo, cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
    
-
+**********
 Propriedades da operação de adição de vetores
----------
+**********
 
 Enunciaremos a seguir algumas propriedades da operação de vetores no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
 
@@ -612,14 +666,18 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    
       (\overrightarrow{u} + \overrightarrow{v}) + \overrightarrow{w} = \binom{x_{u}+x_{v}}{y_{u}+y_{v}}   + \binom{x_{w}}{y_{w}} = \binom{(x_{u}+x_{v})+x_{w}}{(y_{u}+y_{v})+y_{w}} = \binom{x_{u}+(x_{v}+x_{w})}{y_{u}+(y_{v}+y_{w})} = \binom{x_{u}}{y_{u}} + \binom{x_{v}+x_{w}}{y_{v}+y_{w}}= \overrightarrow{u} + (\overrightarrow{v}+\overrightarrow{w})
 
-Observe as figuras a seguir:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020742&tok=a1fe39&media=associativa_1.png 
+   
+   
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_1.png 
+   :width: 400px
+   :align: center
 
    figura 1
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=51&t=1478020765&tok=b33377&media=associativa_2.png
-
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=associativa_2.png
+   :width: 400px
+   :align: center
+   
    figura 2
 
 
@@ -663,12 +721,15 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
    Você deve ter percebido que o vetor nulo `\overrightarrow{o}` contraria a definição original de vetor. Qual seria a direção de um vetor nulo? Qual seria  o sentido de um vetor nulo? Entretanto, ele surge, por exemplo, quando realizamos a adição `\overrightarrow{u}+ (-\overrightarrow{u})`. Sua definição, do ponto de vista formal, se faz então necessária. Podemos interpretar o vetor nulo como sendo o deslocamento resultante de dois deslocamentos consecutivos, de mesma direção e mesmo módulo, mas em sentidos contrários: primeiro desloca-se de um ponto A até um ponto B, e depois, do ponto B, retorna-se para o ponto A. 
 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1478019431&tok=e77635&media=vetornulo3.png
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetornulo3.png
+	:width: 300px
+	:align: center
+   
 
 
-
+***********
 Multiplicação de um vetor por um escalar
----------------
+***********
 
 
 Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
@@ -717,39 +778,33 @@ Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um 
 
       \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
 
------------
+
 Atividade
 -----------
 
-.. admonition:: Atividade 5
+Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
+Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 
-   Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
-   Determine as coordenadas e represente na mesma figura, os seguintes vetores:
-
-   a) `2.\overrightarrow{u}`;
-   b) `-1.\overrightarrow{u}`;
-   c) `\frac{1}{2}.\overrightarrow{u}`;
-   d) `-\frac{1}{2}.\overrightarrow{u}`;
-   e) `2.\overrightarrow{u}`.
-
-
-a) `2.\overrightarrow{u}`;
-b) `-1.\overrightarrow{u}`;
-c) `\frac{1}{2}.\overrightarrow{u}`;
-d) `-\frac{1}{2}.\overrightarrow{u}`;
-e) `2.\overrightarrow{u}`.
+#. `2.\overrightarrow{u}`;
+#. `-1.\overrightarrow{u}`;
+#. `\frac{1}{2}.\overrightarrow{u}`;
+#. `-\frac{1}{2}.\overrightarrow{u}`;
+#. `2.\overrightarrow{u}`.
 
 .. figure:: 
-   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=43&t=1477953990&tok=bcec9b&media=mult_escalar.jpg
-   :align: center
-   :width: 400px
+  	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+     width=200px
+     alig=center
+   	
 
 
 .. admonition:: Resposta 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?w=90&h=39&t=1477953990&tok=5e4dd5&media=mult_escalar_gab.jpg
+	A figura abaixo representa a resposta:
 
-      :align: center
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
+
+     
 
 
 .. note:: 
@@ -766,15 +821,17 @@ e) `2.\overrightarrow{u}`.
 
 
 
-.. admonition:: Atividade 6
+Atividade
+---------
 
-   Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
+Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
    
    https://www.geogebra.org/m/QM5UrQsH
 
 
+**************
 Propriedades da operação de multiplicação de um vetor por um escalar
----------------
+**************
 
 
 Enunciaremos as propriedades considerando vetores no plano. Entretanto, cabe destacar que essas propriedades também são válidas para vetores no espaço. 
@@ -792,7 +849,7 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
       \lambda.(\mu.\overrightarrow{u})=\lambda.\binom{\mu.x_{u}}{\mu.y_{u}}=\binom{\lambda.\mu.x_{u}}{\lambda.\mu.y_{u}}=\binom{(\lambda\mu).x_{u}}{(\lambda\mu).y_{u}}=(\lambda\mu).\binom{x_{u}}{y_{u}}=(\lambda.\mu).\overrightarrow{u}
       
 
-**b) Distributiva em realação à  adição de escalares**
+**b) Distributiva em relação à adição de escalares**
 
 `(\lambda+\mu)\overrightarrow{u}=\lambda\overrightarrow{u}+\mu\overrightarrow{u}` 
 
@@ -835,9 +892,10 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
    Por outro lado se `\lambda.\overrightarrow{u}=\overrightarrow{o}` e `\lambda\neq0`, tem-se que 
    `\overrightarrow{u}=1.\overrightarrow{u}=(\lambda^{-1}.\lambda).\overrightarrow{u}=(\lambda^{-1}).(\lambda.\overrightarrow{u})=(\lambda^{-1}).\overrightarrow{o}=\overrightarrow{o}.`
 
-
+************
 Exercícios
----------------
+************
+Lista de exercícios
 
 
 .. admonition:: Exercício 1 
@@ -854,3 +912,54 @@ Exercícios
    Logo D=(2,7).
 
 
+***********
+Aprofundamentos
+***********
+
+O que se quer dizer precisamente com *sentido* de um segmento orientado?
+
+Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem *mesmo sentido* quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick] (0,1)--(4,1);
+   \node at (1.5,-.6) {Mesmo sentido};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$C$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$D$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \end{scope}
+   
+   \begin{scope}[xshift=5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
+   \node at (1.5,-.6) {Sentidos contrários};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$D$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$C$};
+   \draw[very thick, red, latex-] (1,1)--(2,2);
+   \end{scope}
+   \end{scope}
