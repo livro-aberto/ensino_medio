@@ -71,6 +71,7 @@ As diversas ciências utilizam-se de modelos matemáticos para representar os fe
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
+   :width: 700px
    :align: center 
    
    Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
@@ -495,10 +496,11 @@ Atividade - Adição de Vetores
       \fill[blue] (6,7) circle (.08);
       \node[right] at (6,7) {$C$};
 
-   a) Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-   b) Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
-   c) Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
-   d) Como podemos determinar as coordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
+   #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
+   #. Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
+
    
 .. note::
 
