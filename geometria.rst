@@ -448,7 +448,7 @@ Adição de vetores
 
 .. admonition:: Atividade 1
 
-   Na malha quadriculada a seguir estão representados os pontos A(1,1), B(4,3) e C(5,7) do plano cartesiano.
+   Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
 
    .. tikz:: malha quadriculada
 
@@ -473,6 +473,28 @@ Adição de vetores
 
    Na atividade anterior, o vetor `\overrightarrow{AC}` representa o deslocamento final, do ponto `A` até o ponto `C`, resultante dos deslocamentos parciais e consecutivos `\overrightarrow{AB}`, de `A` até `B`, e `\overrightarrow{BC}`, de `B` até `C`. 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
+
+
+
+.. admonition:: Definição 
+
+   Considere `\overrightarrow{u}` e `\overrightarrow{v}` dois vetores no plano. 
+   
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=def_adicao_1.png
+
+   :width: 200px
+   :align: center
+
+   legenda
+   
+   Para determinar a adição desses vetores devemos, inicialmente, representar o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}`.
+
+   figura
+
+   Em seguida, definimos `\overrightarrow{u}+\overrightarrow{v}` como sendo o vetor que une a origem do vetor `\overrightarrow{u}` com a extremidade do vetor  `\overrightarrow{v}`, como ilustra a figura abaixo.
+   
+   figura 
 
 Atividade 2
 -----------
@@ -817,5 +839,18 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
 Exercícios
 ---------------
 
+
+.. admonition:: Exercício 1 
+
+   Os pontos A(1,1), B(4,3) e C(-1,5) são vértices de um paralelogramo, sendo AB e AC dois de seus lados. Determine o quarto vértice do paralelogramo.
+
+
+.. admonition:: Resposta 
+
+   Observe que `\overrightarrow{AB}=\binom{4-1}{3-1}=\binom{3}{2}`, `\overrightarrow{AC}=\binom{(-1)-1}{5-1}=\binom{-2}{4}` e que `\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{AC}=\binom{3}{2}+\binom{-2}{4}=\binom{1}{6}`.
+   
+   As coordenadas do ponto D são dadas pelas coordenadas do vetor `\overrightarrow{OD}=\overrightarrow{OA}+\overrightarrow{AD} = \binom{1}{1}+\binom{1}{6}=\binom{2}{7}`. 
+   
+   Logo D=(2,7).
 
 
