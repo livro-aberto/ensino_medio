@@ -71,6 +71,7 @@ As diversas ciências utilizam-se de modelos matemáticos para representar os fe
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
+   :width: 700px
    :align: center 
    
    Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
@@ -515,7 +516,7 @@ a) `\overrightarrow{AC}` =
    
    .. tikz::
 
-      \draw [opacity=.5,xstep=1.0cm,ystep=1.0cm,dashed] (-3.,0.4) grid (14.68,9.94);   
+      \draw [opacity=.5,xstep=1cm,ystep=1cm,dashed] (-3.,0.4) grid (14.68,9.94);   
       \clip(-3.,0.4) rectangle (14.68,9.94);
       \draw [-latex,line width=1.5pt] (-2.,8.) -- (3.,2.);
       \draw [-latex,line width=1.5pt] (3.,2.) -- (14.,4.);
