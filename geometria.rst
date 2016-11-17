@@ -528,38 +528,36 @@ a) `\overrightarrow{AC}` =
    
    .. tikz::
 
-      \draw [opacity=.5,xstep=1cm,ystep=1cm,dashed] (-3.,0.4) grid (14.68,9.94);   
-      \clip(-3.,0.4) rectangle (14.68,9.94);
-      \draw [-latex,line width=1.5pt] (-2.,8.) -- (3.,2.);
-      \draw [-latex,line width=1.5pt] (3.,2.) -- (14.,4.);
-      \draw [fill=blue](-2.,8.) circle (2.5pt);
-      \draw [color=blue](-2.42,8.44) node {$A$};
-      \draw  [fill=blue](3.,2.) circle (2.5pt);
-      \draw [color=blue](2.7,1.6) node {$B$};
-      \draw  [fill=blue](14.,4.) circle (2.5pt);
-      \draw [color=blue](13.6,4.36) node {$C$};
+      \draw [opacity=.5,xstep=1cm,ystep=1cm,dashed, scale=.7] (-3.,0.4) grid (14.68,9.94);   
+      \draw [-latex,line width=1.5pt, scale=.7] (-2.,8.) -- (3.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (3.,2.) -- (14.,4.);
+      \draw [fill=blue, scale=.7](-2.,8.) circle (2.5pt);
+      \draw [color=blue, scale=.7](-2.42,8.44) node {$A$};
+      \draw  [fill=blue, scale=.7](3.,2.) circle (2.5pt);
+      \draw [color=blue, scale=.7](2.7,1.6) node {$B$};
+      \draw  [fill=blue, scale=.7](14.,4.) circle (2.5pt);
+      \draw [color=blue, scale=.7](13.6,4.36) node {$C$};
 
 b) `\overrightarrow{AD}` =
 
    .. tikz:: 
-      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.24) grid (15.02,9.96);
-      \draw [-latex,line width=1.5pt] (-2.,5.) -- (4.,5.);
-      \draw [-latex,line width=1.5pt] (4.,5.) -- (7.,2.);
-      \draw [-latex,line width=1.5pt] (7.,2.) -- (11.,8.);
-      \draw [fill=blue] (-2.,5.) circle (2.5pt);
-      \draw[color=blue] (-2.42,5.44) node {$A$};
-      \draw [fill=blue] (4.,5.) circle (2.5pt);
-      \draw[color=blue] (3.88,4.32) node {$B$};
-      \draw [fill=blue] (7.,2.) circle (2.5pt);
-      \draw[color=blue] (6.94,1.48) node {$C$};
-      \draw [fill=blue] (11.,8.) circle (2.5pt);
-      \draw[color=blue] (11.14,8.36) node {$D$};
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.,0.24) grid (15.02,9.96);
+      \draw [-latex,line width=1.5pt, scale=.7] (-2.,5.) -- (4.,5.);
+      \draw [-latex,line width=1.5pt, scale=.7] (4.,5.) -- (7.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (7.,2.) -- (11.,8.);
+      \draw [fill=blue, scale=.7] (-2.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (-2.42,5.44) node {$A$};
+      \draw [fill=blue, scale=.7] (4.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (3.88,4.32) node {$B$};
+      \draw [fill=blue, scale=.7] (7.,2.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (6.94,1.48) node {$C$};
+      \draw [fill=blue, scale=.7] (11.,8.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (11.14,8.36) node {$D$};
 
 c) `\overrightarrow{AD}` =
 
    .. tikz:: legenda
       \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.54) grid (14.68,9.86);
-      \clip(-3.,0.54) rectangle (14.68,9.86);
       \draw [-latex,line width=2.==1.5pt] (12.,5.) -- (0.,5.);
       \draw [-latex,line width=1.5pt] (0.,5.) -- (4.,2.);
       \draw [-latex,line width=1.5pt] (4.,2.) -- (9.,9.);
