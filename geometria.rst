@@ -94,24 +94,20 @@ Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porq
 
 Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
 
+Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
+As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física. São exemplos de grandezas vetoriais:
+   a) Força
+   b) Velocidade
+   c) Deslocamento
+   d) Aceleração
 
-.. admonition:: Exemplos 
-
-   1) O recorde mundial de maratonas (corrida de 42.195 metros) é do Queniano Dennis Kimetto que a terminou em 2h02m57s. 
-   2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
-   3) A variação de temperatura do corpo do paciente foi de `3^\circ C`. 
-
-Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a temperatura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é possível saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a temperatura atual, sabendo a anterior.
-
-Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número para registrar a informação destas grandezas. 
-   
 ----------   
 Não importa a origem (apresentação das componentes de um vetor)
 -----------
 
 .. _my-ativ-barcos:
-
+   
 Atividade
 --------- 
 
