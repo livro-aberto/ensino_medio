@@ -65,7 +65,8 @@ Vetores no plano
    
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
-
+.. Começo da Edição Marcos Paulo
+   
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -101,6 +102,8 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
    b) Velocidade
    c) Deslocamento
    d) Aceleração
+   
+.. Fim da edição Marcos Paulo e começo do Fabio
 
 ----------   
 Não importa a origem (apresentação das componentes de um vetor)
@@ -480,6 +483,7 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
+.. Fim edição Fabio e início de Wanderley
 
 **********************
 Operações com vetores
