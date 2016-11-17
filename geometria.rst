@@ -65,7 +65,8 @@ Vetores no plano
    
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
-
+.. Começo da Edição Marcos Paulo
+   
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -80,22 +81,36 @@ Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspec
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
-.. admonition:: Exemplos 
+As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as memsas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
-   1) O recorde mundial de maratonas (corrida de 42.195 metros) é do Queniano Dennis Kimetto que a terminou em 2h02m57s. 
-   2) A mochila do aluno pesa (no sentido de ter massa igual a) 6,7 Kg.
-   3) A variação de temperatura do corpo do paciente foi de `3^\circ C`. 
+Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
 
-Vale ressaltar que o exemplo da variação de temperatura necessitou da informação do *sentido* dessa variação. Por exemplo, se a temperatura anterior era de `23^\circ C` e houve uma variação de `3^\circ C`, não é possível saber se a temperatura atual é de `20^\circ C` ou de `26^\circ C`. Por outro lado, se informamos que houve uma variação de `-3^\circ C`, não resta dúvidas quanto a temperatura atual, sabendo a anterior.
+.. figure:: http://mpfaraujo.com/images/coluna_vento.png
 
-Neste capítulo, trataremos de grandezas que não podem ser expressas apenas por um número real. Será necessário mais do que um número para registrar a informação destas grandezas. 
+   :align: center
+
+É possível dizer que a velocidade nesses dois instantes é a mesma? Qual a diferença entre essas duas velocidades?
+
+Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
+
+Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+
+Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
+
+As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física. São exemplos de grandezas vetoriais:
+   a) Força
+   b) Velocidade
+   c) Deslocamento
+   d) Aceleração
    
+.. Fim da edição Marcos Paulo e começo do Fabio
+
 ----------   
 Não importa a origem (apresentação das componentes de um vetor)
 -----------
 
 .. _my-ativ-barcos:
-
+   
 Atividade
 --------- 
 
@@ -468,6 +483,7 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 
    Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
+.. Fim edição Fabio e início de Wanderley
 
 **********************
 Operações com vetores
@@ -516,38 +532,36 @@ a) `\overrightarrow{AC}` =
    
    .. tikz::
 
-      \draw [opacity=.5,xstep=1cm,ystep=1cm,dashed] (-3.,0.4) grid (14.68,9.94);   
-      \clip(-3.,0.4) rectangle (14.68,9.94);
-      \draw [-latex,line width=1.5pt] (-2.,8.) -- (3.,2.);
-      \draw [-latex,line width=1.5pt] (3.,2.) -- (14.,4.);
-      \draw [fill=blue](-2.,8.) circle (2.5pt);
-      \draw [color=blue](-2.42,8.44) node {$A$};
-      \draw  [fill=blue](3.,2.) circle (2.5pt);
-      \draw [color=blue](2.7,1.6) node {$B$};
-      \draw  [fill=blue](14.,4.) circle (2.5pt);
-      \draw [color=blue](13.6,4.36) node {$C$};
+      \draw [opacity=.5,xstep=1cm,ystep=1cm,dashed, scale=.7] (-3.,0.4) grid (14.68,9.94);   
+      \draw [-latex,line width=1.5pt, scale=.7] (-2.,8.) -- (3.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (3.,2.) -- (14.,4.);
+      \draw [fill=blue, scale=.7](-2.,8.) circle (2.5pt);
+      \draw [color=blue, scale=.7](-2.42,8.44) node {$A$};
+      \draw  [fill=blue, scale=.7](3.,2.) circle (2.5pt);
+      \draw [color=blue, scale=.7](2.7,1.6) node {$B$};
+      \draw  [fill=blue, scale=.7](14.,4.) circle (2.5pt);
+      \draw [color=blue, scale=.7](13.6,4.36) node {$C$};
 
 b) `\overrightarrow{AD}` =
 
    .. tikz:: 
-      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.24) grid (15.02,9.96);
-      \draw [-latex,line width=1.5pt] (-2.,5.) -- (4.,5.);
-      \draw [-latex,line width=1.5pt] (4.,5.) -- (7.,2.);
-      \draw [-latex,line width=1.5pt] (7.,2.) -- (11.,8.);
-      \draw [fill=blue] (-2.,5.) circle (2.5pt);
-      \draw[color=blue] (-2.42,5.44) node {$A$};
-      \draw [fill=blue] (4.,5.) circle (2.5pt);
-      \draw[color=blue] (3.88,4.32) node {$B$};
-      \draw [fill=blue] (7.,2.) circle (2.5pt);
-      \draw[color=blue] (6.94,1.48) node {$C$};
-      \draw [fill=blue] (11.,8.) circle (2.5pt);
-      \draw[color=blue] (11.14,8.36) node {$D$};
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.,0.24) grid (15.02,9.96);
+      \draw [-latex,line width=1.5pt, scale=.7] (-2.,5.) -- (4.,5.);
+      \draw [-latex,line width=1.5pt, scale=.7] (4.,5.) -- (7.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (7.,2.) -- (11.,8.);
+      \draw [fill=blue, scale=.7] (-2.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (-2.42,5.44) node {$A$};
+      \draw [fill=blue, scale=.7] (4.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (3.88,4.32) node {$B$};
+      \draw [fill=blue, scale=.7] (7.,2.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (6.94,1.48) node {$C$};
+      \draw [fill=blue, scale=.7] (11.,8.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (11.14,8.36) node {$D$};
 
 c) `\overrightarrow{AD}` =
 
    .. tikz:: legenda
       \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.54) grid (14.68,9.86);
-      \clip(-3.,0.54) rectangle (14.68,9.86);
       \draw [-latex,line width=2.==1.5pt] (12.,5.) -- (0.,5.);
       \draw [-latex,line width=1.5pt] (0.,5.) -- (4.,2.);
       \draw [-latex,line width=1.5pt] (4.,2.) -- (9.,9.);
