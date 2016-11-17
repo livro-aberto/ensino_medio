@@ -2,8 +2,6 @@
 Funções
 =======
 
-
-
 .. admonition:: Objetivos Específicos 
 
 	(EM11MT06) Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá- las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
