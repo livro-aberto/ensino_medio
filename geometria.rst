@@ -80,6 +80,22 @@ Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspec
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
+As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as memsas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
+
+Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
+
+.. figure:: http://mpfaraujo.com/images/coluna_vento.png
+
+   :align: center
+
+É possível dizer que a velocidade nesses dois instantes é a mesma? Qual a diferença entre essas duas velocidades?
+
+Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
+
+Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+
+
+
 .. admonition:: Exemplos 
 
    1) O recorde mundial de maratonas (corrida de 42.195 metros) é do Queniano Dennis Kimetto que a terminou em 2h02m57s. 
