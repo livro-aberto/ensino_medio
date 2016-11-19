@@ -618,7 +618,7 @@ Ora, como as coordenadas do vetor `\overrightarrow{v}` (na verdade, o próprio v
 Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}` 
 
 .. tikz:: 
-   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
    \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
    \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
    \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
@@ -627,6 +627,69 @@ Após o deslocamento, encontramos uma configuração que já conhecemos. Agora p
    \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
    \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
    \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+
+Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (fig.10) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}` 
+
+.. tikz:: 
+   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+   \begin{scope}[shift={(9cm,0)}]
+   \draw [opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=2.pt, scale=.7] (3.,-2.) -- (4.,1.);
+   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (4.,1.);
+   \draw[color=gray,, scale=.7] (-0.1,2.4) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7] (1.2,-1.8) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (4,-0.7) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7] (1.4,.6) node {$\overrightarrow{v}+\overrightarrow{u}$};
+   \end{scope}
+   
+Na ilustração acima, em ambos os casos, o vetor soma tem coordenadas `\binom{5}{2}`. Quer dizer:
+`\overrightarrow{v}+\overrightarrow{u} = \overrightarrow{u}+\overrightarrow{v}`.
+
+Esta propriedade se verifica para a adição de quaisquer dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` do plano, sendo denominada propriedade comutativa da adição de vetores.
+
+
+Atividade
+---------
+
+Em algumas situações do cotidiano, duas forças podem ser aplicadas em um mesmo ponto do objeto. Por exemplo, a figura a seguir ilustra uma situação em que um bloco que está sendo puxado ao longo de uma mesa lisa em duas direções distintas.
+
+.. figure:: http://mpfaraujo.com/images/bloco_mesa_2.png
+   :align: center
+
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+
+.. tikz::  
+   \draw[step=1cm,gray, opacity =.5, dashed, scale=.7] (0,0) grid (8.01,6);
+   \node[right, scale=.7] at (1.4,3) {$\overrightarrow{F_{2}}$};
+   \node[right, scale=.7] at (3,1) {$\overrightarrow{F_{1}}$};
+   \draw[-latex,  red, scale=.7,line width=2pt] (1,1) -- (3,4);
+   \draw[-latex, blue, scale=.7,line width=2pt] (1,1) -- (5,2);
+
+Considerando a medida do lado de cada quadradinho da malha como unidade: 
+   
+   a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+   b) Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+   c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+   d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+   e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+   f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
+
+
+
 
 
 Atividade
