@@ -561,19 +561,74 @@ b) `\overrightarrow{AD}` =
 c) `\overrightarrow{AD}` =
 
    .. tikz:: legenda
-      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.54) grid (14.68,9.86);
-      \draw [-latex,line width=2.==1.5pt] (12.,5.) -- (0.,5.);
-      \draw [-latex,line width=1.5pt] (0.,5.) -- (4.,2.);
-      \draw [-latex,line width=1.5pt] (4.,2.) -- (9.,9.);
-      \draw [fill=blue] (12.,5.) circle (2.5pt);
-      \draw[color=blue] (11.58,5.44) node {$A$};
-      \draw [fill=blue] (0.,5.) circle (2.5pt);
-      \draw[color=blue] (-0.76,4.6) node {$B$};
-      \draw [fill=blue] (4.,2.) circle (2.5pt);
-      \draw[color=blue] (3.94,1.48) node {$C$};
-      \draw [fill=blue] (9.,9.) circle (2.5pt);
-      \draw[color=blue] (9.14,9.36) node {$D$};
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.,0.54) grid (14.68,9.86);
+      \draw [-latex,line width=2.==1.5pt, scale=.7] (12.,5.) -- (0.,5.);
+      \draw [-latex,line width=1.5pt, scale=.7] (0.,5.) -- (4.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (4.,2.) -- (9.,9.);
+      \draw [fill=blue, scale=.7] (12.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (11.58,5.44) node {$A$};
+      \draw [fill=blue, scale=.7] (0.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (-0.76,4.6) node {$B$};
+      \draw [fill=blue, scale=.7] (4.,2.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (3.94,1.48) node {$C$};
+      \draw [fill=blue, scale=.7] (9.,9.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (9.14,9.36) node {$D$};
       
+
+
+Ao realizar as atividades anteriores você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor á extremidade do segundo vetor.
+
+.. tikz::
+   \draw [dashed, opacity =.5, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.14,0.1) grid (15.1,9.94);
+   \draw [-latex,line width=2.pt, scale=.7] (-2.,8.) -- (3.,2.);
+   \draw [-latex,line width=2.pt, scale=.7] (3.,2.) -- (14.,4.);
+   \draw [-latex,line width=2.pt,color=blue, scale=.7] (-2.,8.) -- (14.,4.);
+   \draw [fill=blue, scale=.7] (-2.,8.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (-2.42,8.44) node {$A$};
+   \draw [fill=blue, scale=.7] (3.,2.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (2.88,1.32) node {$B$};
+   \draw [color=black, scale=.7] (1.7,5.22) node {$\overrightarrow{u}$};
+   \draw [fill=blue, scale=.7] (14.,4.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (14.14,4.36) node {$C$};
+   \draw [color=black, scale=.7] (8.04,3.2) node {$\overrightarrow{v}$};
+   \draw [color=blue, scale=.7] (8.24,6.26) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+Entretanto, nem sempre ao considerar as representações dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`  no plano teremos a configuração apresentada na figura anterior. Veja, por exemplo, a situação ilustrada na figura a seguir.
+
+.. tikz:: legenda
+
+   \draw [dashed, opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [-latex,line width=2.pt,scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw[color=black,scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=black,scale=.7] (2.5,-1.24) node {$\overrightarrow{v}$};
+
+Assim, como faremos neste caso para determinar a soma dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
+Ora, como as coordenadas do vetor `\overrightarrow{v}` (na verdade, o próprio vetor `\overrightarrow{u}`) não depende do seu ponto origem, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}` 
+
+
+.. tikz:: 
+   \draw [dashed, opacity=.5, scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);  
+   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [-latex,line width=2.pt,scale=.7, opacity=.5] (-1.,-1.) -- (3.,-2.);
+   \draw [-latex,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7, opacity=.5] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}` 
+
+.. tikz:: 
+   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+
 Atividade
 -----------
 Reproduza em seu caderno as figuras abaixo e faça o que se pede:
