@@ -102,7 +102,10 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
    b) Velocidade
    c) Deslocamento
    d) Aceleração
-   
+
+.. admonition:: Para o professor
+
+   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 ----------   
