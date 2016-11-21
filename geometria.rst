@@ -495,14 +495,15 @@ Operações com vetores
 Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). 
 
 .. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
-   :width:200pt
    :align: center
+   :width: 200px
    
-   Figura 1 - Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
+   Figura 1: Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
 
 Começaremos então pela adição de vetores.
 
-**Para o professor Atividade 1**
+
+.. admonition:: Para o professor
 
    Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a soma de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
    
