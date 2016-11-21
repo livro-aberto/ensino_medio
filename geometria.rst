@@ -501,11 +501,8 @@ Em sua experiência com o ensino de física, você certamente se deparou com sit
    Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B) seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C) tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
 
 
-.. admonition:: Para o professor Atividade 1
-
-   Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a soma de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento \overrightarrow{AC}como sendo a adição dos vetores \overrightarrow{AB} e \overrightarrow{BC}. Ainda que na atividade estejam sendo solicitadas as coordenadas dos três vetores, consideramos que ainda é cedo para que os alunos reconheçam a relação entre elas. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a soma de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento \overrightarrow{AC}como sendo a adição dos vetores \overrightarrow{AB} e \overrightarrow{BC}. Ainda que na atividade estejam sendo solicitadas as coordenadas dos três vetores, consideramos que ainda é cedo para que os alunos reconheçam a relação entre elas. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
    
-
 Atividade - Adição de Vetores
 ---------
 
