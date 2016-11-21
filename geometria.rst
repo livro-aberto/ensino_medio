@@ -492,13 +492,18 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Operações com vetores
 **********************
 
-Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). Quer dizer, o que significa multiplicar uma força (ou melhor, o vetor força) por um número? 
+Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). Começaremos pela adição de vetores.
 
 .. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
    :align: center
-
+   
    Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B) seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C) tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
 
+
+.. admonition:: Para o professor Atividade 1
+
+   Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a soma de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento \overrightarrow{AC}como sendo a adição dos vetores \overrightarrow{AB} e \overrightarrow{BC}. Ainda que na atividade estejam sendo solicitadas as coordenadas dos três vetores, consideramos que ainda é cedo para que os alunos reconheçam a relação entre elas. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+   
 
 Atividade - Adição de Vetores
 ---------
@@ -527,7 +532,7 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 
-Atividade - Soma de Vetores II
+Atividade - Adição de Vetores II
 ---------
 Em cada item a seguir, represente e determine as coordenadas do vetor deslocamento final:
 
@@ -579,7 +584,7 @@ c) `\overrightarrow{AD}` =
       
 
 
-Ao realizar as atividades anteriores você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor á extremidade do segundo vetor.
+Ao realizar as atividades anteriores, você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor à extremidade do segundo vetor.
 
 .. tikz::
    \draw [dashed, opacity =.5, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.14,0.1) grid (15.1,9.94);
@@ -606,8 +611,9 @@ Entretanto, nem sempre ao considerar as representações dos vetores `\overright
    \draw[color=black,scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
    \draw[color=black,scale=.7] (2.5,-1.24) node {$\overrightarrow{v}$};
 
-Assim, como faremos neste caso para determinar a soma dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
-Ora, como as coordenadas do vetor `\overrightarrow{v}` (na verdade, o próprio vetor `\overrightarrow{u}`) não depende do seu ponto origem, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}` 
+Como faremos neste caso para determinar a soma dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
+
+Ora, como as coordenadas de um vetor não depende do ponto de origem escolhido, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}`.
 
 
 .. tikz:: 
@@ -618,7 +624,8 @@ Ora, como as coordenadas do vetor `\overrightarrow{v}` (na verdade, o próprio v
    \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
    \draw[color=black, scale=.7, opacity=.5] (2.16,-1.23) node {$\overrightarrow{v}$};
    \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
-Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}` 
+
+   Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}`.
 
 .. tikz:: 
    \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
@@ -632,7 +639,7 @@ Após o deslocamento, encontramos uma configuração que já conhecemos. Agora p
    \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
 
 
-Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (fig.10) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}` 
+   Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (figuras a seguir) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}`. 
 
 .. tikz:: 
    \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
