@@ -84,7 +84,7 @@ Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspec
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
-As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as memsas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
+As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as mesmas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
 Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
 
@@ -96,7 +96,7 @@ Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um nú
 
 Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
 
-Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma convenção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
 
 Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
@@ -519,8 +519,9 @@ Em sua experiência com o ensino de física, você certamente se deparou com sit
 
 Começaremos então pela adição de vetores.
 
-Para o professor
-Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+.. admonition:: Para o professor
+
+	Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
    
 
 Atividade - Adição de Vetores I
@@ -538,7 +539,7 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
       \fill[blue] (6,7) circle (.08);
       \node[right] at (6,7) {$C$};
 
-   #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Reproduza a mesma malha quadriculada em seu caderno e represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
    
@@ -550,9 +551,9 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 
+.. admonition:: Para o professor
 
-Para o professor
-Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do vetor soma é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize o papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
+	Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do vetor soma é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize o papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
 
 Atividade - Adição de Vetores II
 ---------
@@ -878,7 +879,7 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    figura 2
 
 
-A figura 1 ilusta a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
+A figura 1 ilustra a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
 
 Já a figura 2 ilustra a segunda situação: primeiro realiza-se a adição `(\overrightarrow{v} + \overrightarrow{w})` para depois realizar a adição o vetor  `\overrightarrow{u}` com este vetor soma. 
 
@@ -988,11 +989,11 @@ Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 #. `-\frac{1}{2}.\overrightarrow{u}`;
 #. `2.\overrightarrow{u}`.
 
-.. figure:: 
-  	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
-     width=200px
-     alig=center
-   	
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+   :width: 400px
+   :align: center
+    	
 
 
 .. admonition:: Resposta 
