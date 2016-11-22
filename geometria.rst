@@ -1001,8 +1001,10 @@ Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 	A figura abaixo representa a resposta:
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
+      :width: 400px
 
-     
+
+   legenda
 
 
 .. note:: 
