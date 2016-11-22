@@ -67,6 +67,9 @@ Vetores no plano
    
 .. Começo da Edição Marcos Paulo
    
+
+Apresentação
+=====
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -106,6 +109,20 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
 .. admonition:: Para o professor
 
    Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
+
+
+Representação Geométrica de um Vetor
+=====
+
+Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
+Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades em um mesmo instante..
+
+.. figure:: http://mpfaraujo.com/images/alagoas1vel.png
+   :align: center
+
+   legenda
+
+
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 ----------   
