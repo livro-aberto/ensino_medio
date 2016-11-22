@@ -2,6 +2,22 @@
 Teorema de Tales, semelhança e aplicações
 ********
 
+.. admonition:: Objetivos específicos
+
+   BNCC (MTMT1MOA003) Compreender e aplicar o teorema de Tales na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
+   
+   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
+
+.. admonition:: Pré requisito
+
+	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
+
+    
+.. admonition:: Desdobramentos Imediatos
+
+	BNCC (MTMT1MOA005) Compreender e aplicar as razões trigonométricas no triângulo retângulo e as relações trigonométricas em triângulos quaisquer.
+
+
 .. note::
    * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
 
