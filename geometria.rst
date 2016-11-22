@@ -513,7 +513,7 @@ Em sua experiência com o ensino de física, você certamente se deparou com sit
 
 .. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
    :align: center
-   :width: 200px
+   :width: 500px
    
    Figura 1 - Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C).
 
