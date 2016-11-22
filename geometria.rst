@@ -67,6 +67,9 @@ Vetores no plano
    
 .. Começo da Edição Marcos Paulo
    
+
+Apresentação
+=====
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -81,7 +84,7 @@ Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspec
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
-As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as memsas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
+As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as mesmas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
 Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
 
@@ -93,7 +96,7 @@ Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um nú
 
 Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
 
-Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma convenção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
 
 Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
@@ -106,6 +109,20 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
 .. admonition:: Para o professor
 
    Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
+
+
+Representação Geométrica de um Vetor
+=====
+
+Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
+Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades em um mesmo instante..
+
+.. figure:: http://mpfaraujo.com/images/alagoas1vel.png
+   :align: center
+
+   legenda
+
+
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 ----------   
@@ -525,7 +542,7 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
       \fill[blue] (6,7) circle (.08);
       \node[right] at (6,7) {$C$};
 
-   #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Reproduza a mesma malha quadriculada em seu caderno e represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
    
@@ -537,6 +554,7 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 
+.. admonition:: Para o professor
 
 .. admonition:: Para o professor
 
