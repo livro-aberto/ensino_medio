@@ -67,6 +67,9 @@ Vetores no plano
    
 .. Começo da Edição Marcos Paulo
    
+
+Apresentação
+=====
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -81,7 +84,7 @@ Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspec
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
-As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as memsas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
+As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as mesmas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
 Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
 
@@ -93,7 +96,7 @@ Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um nú
 
 Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
 
-Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma conveção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma convenção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
 
 Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
@@ -102,7 +105,24 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
    b) Velocidade
    c) Deslocamento
    d) Aceleração
-   
+
+.. admonition:: Para o professor
+
+   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
+
+
+Representação Geométrica de um Vetor
+=====
+
+Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
+Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades em um mesmo instante..
+
+.. figure:: http://mpfaraujo.com/images/alagoas1vel.png
+   :align: center
+
+   legenda
+
+
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 ----------   
@@ -489,15 +509,22 @@ Um vetor fica caracterizado por comprimento, direção e sentido
 Operações com vetores
 **********************
 
-Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que somar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). Quer dizer, o que significa multiplicar uma força (ou melhor, o vetor força) por um número? 
+Em sua experiência com o ensino de física, você certamente se deparou com situações em que teve que adicionar grandezas vetoriais, seja na hora de determinar a força resultante de um sistema de forças aplicado a um determinado objeto, seja para determinar o deslocamento final de um móvel que realizou dois ou mais deslocamentos parciais. Nesta seção estudaremos como realizar a adição dos objetos matemáticos em si: os vetores. Além da operação de adição, estudaremos também a multiplicação de um vetor por um número real (quer dizer, por um escalar). 
 
 .. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
    :align: center
+   :width: 500px
+   
+   Figura 1 - Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C).
 
-   Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B) seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C) tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C)
+Começaremos então pela adição de vetores.
 
+.. admonition:: Para o professor
 
-Atividade - Adição de Vetores
+	Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+   
+
+Atividade - Adição de Vetores I
 ---------
 
 Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
@@ -512,10 +539,10 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
       \fill[blue] (6,7) circle (.08);
       \node[right] at (6,7) {$C$};
 
-   #. Na mesma malha quadriculada, represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+   #. Reproduza a mesma malha quadriculada em seu caderno e represente os vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Determine as coordenadas dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`.
    #. Represente agora o vetor deslocamento `\overrightarrow{AC}` e determine as suas coordenadas.
-   #. Como podemos determinar as cordenadas do vetor `\overrightarrow{AC}` a partir das coordenadas dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`? Que relação você observa entre as coordenadas desses três vetores?
+   
 
    
 .. note::
@@ -524,7 +551,11 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
    O vetor `\overrightarrow{AC}` é a adição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BC}`, isto é: `\overrightarrow{AC}` = `\overrightarrow{AB} + \overrightarrow{BC}`.
 
 
-Atividade - Soma de Vetores II
+.. admonition:: Para o professor
+
+	Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do vetor soma é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize o papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
+
+Atividade - Adição de Vetores II
 ---------
 Em cada item a seguir, represente e determine as coordenadas do vetor deslocamento final:
 
@@ -561,19 +592,139 @@ b) `\overrightarrow{AD}` =
 c) `\overrightarrow{AD}` =
 
    .. tikz:: legenda
-      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm] (-3.,0.54) grid (14.68,9.86);
-      \draw [-latex,line width=2.==1.5pt] (12.,5.) -- (0.,5.);
-      \draw [-latex,line width=1.5pt] (0.,5.) -- (4.,2.);
-      \draw [-latex,line width=1.5pt] (4.,2.) -- (9.,9.);
-      \draw [fill=blue] (12.,5.) circle (2.5pt);
-      \draw[color=blue] (11.58,5.44) node {$A$};
-      \draw [fill=blue] (0.,5.) circle (2.5pt);
-      \draw[color=blue] (-0.76,4.6) node {$B$};
-      \draw [fill=blue] (4.,2.) circle (2.5pt);
-      \draw[color=blue] (3.94,1.48) node {$C$};
-      \draw [fill=blue] (9.,9.) circle (2.5pt);
-      \draw[color=blue] (9.14,9.36) node {$D$};
+      \draw [opacity=.5,dashed, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.,0.54) grid (14.68,9.86);
+      \draw [-latex,line width=2.==1.5pt, scale=.7] (12.,5.) -- (0.,5.);
+      \draw [-latex,line width=1.5pt, scale=.7] (0.,5.) -- (4.,2.);
+      \draw [-latex,line width=1.5pt, scale=.7] (4.,2.) -- (9.,9.);
+      \draw [fill=blue, scale=.7] (12.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (11.58,5.44) node {$A$};
+      \draw [fill=blue, scale=.7] (0.,5.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (-0.76,4.6) node {$B$};
+      \draw [fill=blue, scale=.7] (4.,2.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (3.94,1.48) node {$C$};
+      \draw [fill=blue, scale=.7] (9.,9.) circle (2.5pt);
+      \draw[color=blue, scale=.7] (9.14,9.36) node {$D$};
       
+**Observação**
+
+Ao realizar as atividades anteriores, você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor à extremidade do segundo vetor.
+
+.. tikz::
+   \draw [dashed, opacity =.5, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.14,0.1) grid (15.1,9.94);
+   \draw [-latex,line width=2.pt, scale=.7] (-2.,8.) -- (3.,2.);
+   \draw [-latex,line width=2.pt, scale=.7] (3.,2.) -- (14.,4.);
+   \draw [-latex,line width=2.pt,color=blue, scale=.7] (-2.,8.) -- (14.,4.);
+   \draw [fill=blue, scale=.7] (-2.,8.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (-2.42,8.44) node {$A$};
+   \draw [fill=blue, scale=.7] (3.,2.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (2.88,1.32) node {$B$};
+   \draw [color=black, scale=.7] (1.7,5.22) node {$\overrightarrow{u}$};
+   \draw [fill=blue, scale=.7] (14.,4.) circle (2.5pt);
+   \draw [color=blue, scale=.7] (14.14,4.36) node {$C$};
+   \draw [color=black, scale=.7] (8.04,3.2) node {$\overrightarrow{v}$};
+   \draw [color=blue, scale=.7] (8.24,6.26) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+Entretanto, nem sempre ao considerar as representações dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`  no plano teremos a configuração apresentada na figura anterior. Veja, por exemplo, a situação ilustrada na figura a seguir.
+
+.. tikz:: legenda
+
+   \draw [dashed, opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [-latex,line width=2.pt,scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw[color=black,scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=black,scale=.7] (2.5,-1.24) node {$\overrightarrow{v}$};
+
+Como faremos neste caso para determinar a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
+
+Ora, como as coordenadas de um vetor não depende do ponto de origem escolhido, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}`.
+
+
+.. tikz:: 
+   \draw [dashed, opacity=.5, scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);  
+   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [-latex,line width=2.pt,scale=.7, opacity=.5] (-1.,-1.) -- (3.,-2.);
+   \draw [-latex,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7, opacity=.5] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+
+Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}`.
+
+.. tikz:: 
+   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+
+Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (figuras a seguir) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}`. 
+
+.. tikz:: 
+   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+   \begin{scope}[shift={(9cm,0)}]
+   \draw [opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,1.) -- (0.,4.);
+   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (3.,-2.);
+   \draw [->,line width=2.pt, scale=.7] (3.,-2.) -- (4.,1.);
+   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (4.,1.);
+   \draw[color=gray,, scale=.7] (-0.1,2.4) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7] (1.2,-1.8) node {$\overrightarrow{v}$};
+   \draw[color=black, scale=.7] (4,-0.7) node {$\overrightarrow{u}$};
+   \draw[color=black, scale=.7] (1.4,.6) node {$\overrightarrow{v}+\overrightarrow{u}$};
+   \end{scope}
+   
+Na ilustração acima, em ambos os casos, o vetor soma tem coordenadas `\binom{5}{2}`. Quer dizer:
+`\overrightarrow{v}+\overrightarrow{u} = \overrightarrow{u}+\overrightarrow{v}`.
+
+Esta propriedade se verifica para a adição de quaisquer dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` do plano, sendo denominada propriedade comutativa da adição de vetores.
+
+
+Atividade
+---------
+
+Em algumas situações do cotidiano, duas forças podem ser aplicadas em um mesmo ponto do objeto. Por exemplo, a figura a seguir ilustra uma situação em que um bloco que está sendo puxado ao longo de uma mesa lisa em duas direções distintas.
+
+.. figure:: http://mpfaraujo.com/images/bloco_mesa_2.png
+   :align: center
+
+A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
+
+Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+
+.. tikz::  
+   \draw[step=1cm,gray, opacity =.5, dashed, scale=.7] (0,0) grid (8.01,6);
+   \node[right, scale=.7] at (1.4,3) {$\overrightarrow{F_{2}}$};
+   \node[right, scale=.7] at (3,1) {$\overrightarrow{F_{1}}$};
+   \draw[-latex,  red, scale=.7,line width=2pt] (1,1) -- (3,4);
+   \draw[-latex, blue, scale=.7,line width=2pt] (1,1) -- (5,2);
+
+Considerando a medida do lado de cada quadradinho da malha como unidade: 
+   
+   a) Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
+   b) Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
+   c) Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
+   d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
+   e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
+   f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
+
+
+
+
+
 Atividade
 -----------
 Reproduza em seu caderno as figuras abaixo e faça o que se pede:
@@ -728,7 +879,7 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    figura 2
 
 
-A figura 1 ilusta a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
+A figura 1 ilustra a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
 
 Já a figura 2 ilustra a segunda situação: primeiro realiza-se a adição `(\overrightarrow{v} + \overrightarrow{w})` para depois realizar a adição o vetor  `\overrightarrow{u}` com este vetor soma. 
 
@@ -838,11 +989,11 @@ Determine as coordenadas e represente na mesma figura, os seguintes vetores:
 #. `-\frac{1}{2}.\overrightarrow{u}`;
 #. `2.\overrightarrow{u}`.
 
-.. figure:: 
-  	 https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
-     width=200px
-     alig=center
-   	
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
+   :width: 400px
+   :align: center
+    	
 
 
 .. admonition:: Resposta 
