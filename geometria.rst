@@ -513,18 +513,21 @@ Em sua experiência com o ensino de física, você certamente se deparou com sit
 
 .. figure:: http://mpfaraujo.com/images/deslocamento_rj.png
    :align: center
-   :width: 500px
+   :width: 800px
    
-   Figura 1 - Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C).
+   **Figura 1** - Deslocamentos parciais do Estácio (ponto A) até a Central (ponto B), seguido de deslocamento da   Central (ponto B) até a Carioca (ponto C), tendo como resultante o deslocamento do Estácio (ponto A) até o Carioca (ponto C).
 
 Começaremos então pela adição de vetores.
 
+
+   
 .. admonition:: Para o professor
 
-	Com a realização desta atividade pretende-se introduzir a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se quer aqui, de modo inicial, é que os alunos reconheçam o vetor soma pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+   Nesta atividade apresenta-se a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se pretende aqui, de modo inicial, é que os alunos reconheçam o *vetor soma* pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do *vetor soma* deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
+   
    
 
-Atividade - Adição de Vetores I
+Atividade 1 - Adição de Vetores I
 ---------
 
 Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
@@ -553,9 +556,12 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
 
 .. admonition:: Para o professor
 
-	Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do vetor soma é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do vetor soma deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize o papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
+.. admonition:: Para o professor
 
-Atividade - Adição de Vetores II
+   Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do *vetor soma* é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do *vetor soma* deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o software Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
+   
+
+Atividade 2 - Adição de Vetores II
 ---------
 Em cada item a seguir, represente e determine as coordenadas do vetor deslocamento final:
 
@@ -605,94 +611,98 @@ c) `\overrightarrow{AD}` =
       \draw [fill=blue, scale=.7] (9.,9.) circle (2.5pt);
       \draw[color=blue, scale=.7] (9.14,9.36) node {$D$};
       
-**Observação**
+.. note::
 
-Ao realizar as atividades anteriores, você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor à extremidade do segundo vetor.
-
-.. tikz::
-   \draw [dashed, opacity =.5, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.14,0.1) grid (15.1,9.94);
-   \draw [-latex,line width=2.pt, scale=.7] (-2.,8.) -- (3.,2.);
-   \draw [-latex,line width=2.pt, scale=.7] (3.,2.) -- (14.,4.);
-   \draw [-latex,line width=2.pt,color=blue, scale=.7] (-2.,8.) -- (14.,4.);
-   \draw [fill=blue, scale=.7] (-2.,8.) circle (2.5pt);
-   \draw [color=blue, scale=.7] (-2.42,8.44) node {$A$};
-   \draw [fill=blue, scale=.7] (3.,2.) circle (2.5pt);
-   \draw [color=blue, scale=.7] (2.88,1.32) node {$B$};
-   \draw [color=black, scale=.7] (1.7,5.22) node {$\overrightarrow{u}$};
-   \draw [fill=blue, scale=.7] (14.,4.) circle (2.5pt);
-   \draw [color=blue, scale=.7] (14.14,4.36) node {$C$};
-   \draw [color=black, scale=.7] (8.04,3.2) node {$\overrightarrow{v}$};
-   \draw [color=blue, scale=.7] (8.24,6.26) node {$\overrightarrow{u}+\overrightarrow{v}$};
-
-Entretanto, nem sempre ao considerar as representações dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`  no plano teremos a configuração apresentada na figura anterior. Veja, por exemplo, a situação ilustrada na figura a seguir.
-
-.. tikz:: legenda
-
-   \draw [dashed, opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
-   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
-   \draw [-latex,line width=2.pt,scale=.7] (-1.,-1.) -- (3.,-2.);
-   \draw[color=black,scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
-   \draw[color=black,scale=.7] (2.5,-1.24) node {$\overrightarrow{v}$};
-
-Como faremos neste caso para determinar a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
-
-Ora, como as coordenadas de um vetor não depende do ponto de origem escolhido, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}`.
-
-
-.. tikz:: 
-   \draw [dashed, opacity=.5, scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);  
-   \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
-   \draw [-latex,line width=2.pt,scale=.7, opacity=.5] (-1.,-1.) -- (3.,-2.);
-   \draw [-latex,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
-   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
-   \draw[color=black, scale=.7, opacity=.5] (2.16,-1.23) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
-
-Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}`.
-
-.. tikz:: 
-   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
-   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
-   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
-   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
-   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
-   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
-   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
-
-
-Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (figuras a seguir) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}`. 
-
-.. tikz:: 
-   \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
-   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
-   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
-   \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
-   \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
-   \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
-   \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
-   \begin{scope}[shift={(9cm,0)}]
-   \draw [opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
-   \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,1.) -- (0.,4.);
-   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (3.,-2.);
-   \draw [->,line width=2.pt, scale=.7] (3.,-2.) -- (4.,1.);
-   \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (4.,1.);
-   \draw[color=gray,, scale=.7] (-0.1,2.4) node {$\overrightarrow{u}$};
-   \draw[color=black, scale=.7] (1.2,-1.8) node {$\overrightarrow{v}$};
-   \draw[color=black, scale=.7] (4,-0.7) node {$\overrightarrow{u}$};
-   \draw[color=black, scale=.7] (1.4,.6) node {$\overrightarrow{v}+\overrightarrow{u}$};
-   \end{scope}
+   Ao realizar as atividades anteriores, você deve ter percebido que para determinar a adição de dois vetores cujas representações formam dois segmentos de retas orientados consecutivos basta considerar o segmento de reta orientado que une a origem do primeiro vetor à extremidade do segundo vetor.
    
-Na ilustração acima, em ambos os casos, o vetor soma tem coordenadas `\binom{5}{2}`. Quer dizer:
-`\overrightarrow{v}+\overrightarrow{u} = \overrightarrow{u}+\overrightarrow{v}`.
+   .. tikz::
+      \draw [dashed, opacity =.5, xstep=1.0cm,ystep=1.0cm, scale=.7] (-3.14,0.1) grid (15.1,9.94);
+      \draw [-latex,line width=2.pt, scale=.7] (-2.,8.) -- (3.,2.);
+      \draw [-latex,line width=2.pt, scale=.7] (3.,2.) -- (14.,4.);
+      \draw [-latex,line width=2.pt,color=blue, scale=.7] (-2.,8.) -- (14.,4.);
+      \draw [fill=blue, scale=.7] (-2.,8.) circle (2.5pt);
+      \draw [color=blue, scale=.7] (-2.42,8.44) node {$A$};
+      \draw [fill=blue, scale=.7] (3.,2.) circle (2.5pt);
+      \draw [color=blue, scale=.7] (2.88,1.32) node {$B$};
+      \draw [color=black, scale=.7] (1.7,5.22) node {$\overrightarrow{u}$};
+      \draw [fill=blue, scale=.7] (14.,4.) circle (2.5pt);
+      \draw [color=blue, scale=.7] (14.14,4.36) node {$C$};
+      \draw [color=black, scale=.7] (8.04,3.2) node {$\overrightarrow{v}$};
+      \draw [color=blue, scale=.7] (8.24,6.26) node {$\overrightarrow{u}+\overrightarrow{v}$};
 
-Esta propriedade se verifica para a adição de quaisquer dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` do plano, sendo denominada propriedade comutativa da adição de vetores.
+   Entretanto, nem sempre ao considerar as representações dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`  no plano teremos a configuração apresentada na figura anterior. Veja, por exemplo, a situação ilustrada na figura a seguir.
+
+   .. tikz:: legenda
+
+      \draw [dashed, opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);
+      \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+      \draw [-latex,line width=2.pt,scale=.7] (-1.,-1.) -- (3.,-2.);
+      \draw[color=black,scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+      \draw[color=black,scale=.7] (2.5,-1.24) node {$\overrightarrow{v}$};
+
+   Como faremos neste caso para determinar a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`?
+
+   Ora, como as coordenadas de um vetor não depende do ponto de origem escolhido, deslocamos o vetor `\overrightarrow{v}` de modo que sua origem coincida com a extremidade do vetor  `\overrightarrow{u}`.
 
 
-Atividade
+   .. tikz:: 
+      \draw [dashed, opacity=.5, scale=.7, xstep=1.0cm,ystep=1.0cm] (-4.36,-2.74) grid (7.38,4.62);  
+      \draw [-latex,line width=1.6pt,scale=.7] (-1.,1.) -- (0.,4.);
+      \draw [-latex,line width=2.pt,scale=.7, opacity=.5] (-1.,-1.) -- (3.,-2.);
+      \draw [-latex,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+      \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+      \draw[color=black, scale=.7, opacity=.5] (2.16,-1.23) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+
+   Após o deslocamento, encontramos uma configuração que já conhecemos. Agora para determinar o vetor soma (que é a adição dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`) basta unir a origem do vetor `\overrightarrow{u}` à extremidade do vetor `\overrightarrow{v}`.
+
+   .. tikz:: 
+      \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+      \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+      \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+      \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+      \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+      \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+      \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+
+
+   Observe que se fizermos `\overrightarrow{v}+\overrightarrow{u}` (figuras a seguir) encontraremos o mesmo vetor soma da adição `\overrightarrow{u}+\overrightarrow{v}`. 
+
+   .. tikz:: 
+      \draw [color=gray,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+      \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (0.,4.);
+      \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,-1.) -- (3.,-2.);
+      \draw [->,line width=1.6pt, scale=.7] (0.,4.) -- (4.,3.);
+      \draw [->,line width=1.6pt, scale=.7] (-1.,1.) -- (4.,3.);
+      \draw[color=black, scale=.7] (-0.1,2.5) node {$\overrightarrow{u}$};
+      \draw[color=gray, scale=.7] (2.16,-1.23) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (3.14,3.75) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (3.2,1.4) node {$\overrightarrow{u}+\overrightarrow{v}$};
+      \begin{scope}[shift={(9cm,0)}]
+      \draw [opacity=.5,scale=.7, xstep=1.0cm,ystep=1.0cm, dashed] (-4.36,-2.74) grid (7.38,4.62);
+      \draw [->,line width=2.pt,color=gray, scale=.7] (-1.,1.) -- (0.,4.);
+      \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (3.,-2.);
+      \draw [->,line width=2.pt, scale=.7] (3.,-2.) -- (4.,1.);
+      \draw [->,line width=2.pt, scale=.7] (-1.,-1.) -- (4.,1.);
+      \draw[color=gray,, scale=.7] (-0.1,2.4) node {$\overrightarrow{u}$};
+      \draw[color=black, scale=.7] (1.2,-1.8) node {$\overrightarrow{v}$};
+      \draw[color=black, scale=.7] (4,-0.7) node {$\overrightarrow{u}$};
+      \draw[color=black, scale=.7] (1.4,.6) node {$\overrightarrow{v}+\overrightarrow{u}$};
+      \end{scope}
+
+   Na ilustração acima, em ambos os casos, o vetor soma tem coordenadas `\binom{5}{2}`. Quer dizer: `\overrightarrow{v}+\overrightarrow{u} = \overrightarrow{u}+\overrightarrow{v}`.
+
+   Esta propriedade se verifica para a adição de quaisquer dois vetores `\overrightarrow{u}` e `\overrightarrow{v}` do plano, sendo denominada *propriedade comutativa da adição de vetores*.
+   
+
+.. admonition:: Para o professor
+
+   Nesta atividade apresenta-se um contexto físico (cálculo da resultante de duas forças aplicadas em um ponto de um mesmo objeto) que potencializa a aplicação da regra do paralelogramo para a adição de dois vetores. A regra do paralelogramo será, no entanto, apresentada ao aluno apenas na observação feita após a realização dessa atividade. Por ora, pretende-se somente que o aluno observe dois procedimentos equivalentes para determinar `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}`, reconhecendo que `\overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}`.  Entretanto, pode acontecer de algum aluno, lembrando-se do que possa ter aprendido em etapas anteriores da sua escolarização, sugira o uso da “regra do paralelogramo”. Neste caso, recomenda-se que o professor discuta com a turma as soluções apresentadas e antecipe o significado da tal regra que é discutido na observação.
+   
+
+Atividade 3 - Adicionando Forças
 ---------
 
 Em algumas situações do cotidiano, duas forças podem ser aplicadas em um mesmo ponto do objeto. Por exemplo, a figura a seguir ilustra uma situação em que um bloco que está sendo puxado ao longo de uma mesa lisa em duas direções distintas.
@@ -719,6 +729,575 @@ Considerando a medida do lado de cada quadradinho da malha como unidade:
    d) Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
    e) Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
    f) O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
+
+
+.. note :: **A Regra do Paralelogramo**
+
+   Retorne à atividade anterior e observe que a força resultante do sistema (`\overrightarrow{F_{1}}+\overrightarrow{F_{2}}`) é determinada pela diagonal de um paralelogramo (fig.14).
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479770384&w=427&h=321&tok=c8d482&media=forcas_paralelogramo.png
+      :width: 400px
+      :align: center
+
+      Figura 14.
+
+   Tal “regra” pode ser estendida para quaisquer dois vetores do plano.
+
+   Com efeito. Considere `\overrightarrow{u}` e `\overrightarrow{v}` dois vetores no plano, já representados como na situação da atividade 3. 
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479771282&w=500&h=334&tok=088bd8&media=regra_paralelogramo_1.png
+      :width: 400px
+      :align: center
+
+      Figura 15.
+
+   Para encontrarmos `\overrightarrow{R} = \overrightarrow{v} +\overrightarrow{u}`, basta deslocarmos o vetor `\overrightarrow{v}`  de modo que sua origem coincida com a extremidade do vetor `\overrightarrow{u}`  e determinar o vetor `\overrightarrow{R}`, como fizemos na Atividade 3   (fig13). Construa, como indicado na figura 16, o segmento BE.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479771181&w=500&h=329&tok=91fe25&media=regra_paralelogramo_2.png
+      :width: 400px
+      :align: center
+
+      Figura 16.
+
+   Ora, por construção da própria figura, podemos concluir que os segmentos AB e CE são congruentes e paralelos, pois AB e CE possuem a mesma direção de  `\overrightarrow{v}` e (AB) ̅=(CE) ̅=|v ⃗ |. Logo os segmentos AC e BE também serão paralelos e congruentes, o que nos permite concluir que ABCE é um paralelogramo, onde  o vetor soma `\overrightarrow{R}`   fica determinado por uma de suas diagonais (no caso, AE).
+
+   Este resultado é conhecido como a *Regra do Paralelogramo* para a adição de vetores e também pode ser aplicada para vetores no espaço.
+
+
+
+.. admonition:: Para o professor
+
+   Esta atividade utiliza um aplicativo construído com o software Geogebra que possibilita a realização da adição de dois vetores quaisquer do plano. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Para cada par de vetores escolhidos, escolha um estudante para manusear o aplicativo. Entretanto, discuta a solução do problema de forma coletiva e dialogada com toda a turma.  
+
+Atividade 4 - Adicionando Vetores usando o Geogebra
+---------
+
+Para fazer esta atividade, acesse o link https://www.geogebra.org/m/eCWUHEaY e faça o que se pede em cada item.
+
+a) Escolha dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`.
+b) Determine as coordenadas dos vetores `\overrightarrow{u}` e `\overrightarrow{v}`.
+c) Faça uma estimativa para as coordenadas do vetor `\overrightarrow{u}+\overrightarrow{v}`.
+d) Movimente os segmentos que representam os vetores `\overrightarrow{u}` e `\overrightarrow{v}` para verificar sua resposta.
+e) E aí, acertou? Não? Repita então os itens anteriores quantas vezes você achar necessário.
+
+
+.. admonition:: Para o professor
+
+   Esta atividade utiliza um aplicativo construído com o software Geogebra que possibilita a verificação da propriedade associativa da adição de vetores. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Escolha um estudante para manusear o aplicativo. Entretanto, discuta a solução do problema de forma coletiva e dialogada com toda a turma. Escolha outro terno de vetores e repita a atividade. A propriedade associativa será apresentada de modo bem informal na Observação 3.
+
+
+Atividade 5 - Adicionando Vetores usando o Geogebra
+---------
+
+Para fazer esta atividade, acesse o link https://www.geogebra.org/m/eKkpgahu, e faça o que se pede em cada item.
+
+a) Escolha três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`.
+b) Em seguida, movimente os vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}` de modo a determinar o vetor `\overrightarrow{u}+\overrightarrow{v}+\overrightarrow{w}` e suas coordenadas.
+c) Repita os procedimentos do item (b) para determinar o vetor `\overrightarrow{u}+\overrightarrow{w}+\overrightarrow{v}` e suas coordenadas.
+d) Faça o mesmo para determinar os seguintes vetores e suas coordenadas:
+
+
+.. math::
+
+   \overrightarrow{v}+\overrightarrow{w}+\overrightarrow{u}; \overrightarrow{v}+\overrightarrow{u}+\overrightarrow{w}; \overrightarrow{w}+\overrightarrow{u}+\overrightarrow{v}; \overrightarrow{w}+\overrightarrow{v}+\overrightarrow{u}.
+   
+
+e) O que você observou?
+
+
+
+.. note :: **A Propriedade Associativa**
+
+   A operação de adição de vetores foi definida para dois vetores apenas. Entretanto, ao fazer a atividade 5,  você deve ter percebido que, dados três vetores`\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, a soma deles não dependem da ordem que escolhemos para fazer a adição. Isto é:
+   
+   `(\overrightarrow{u}+\overrightarrow{v})+\overrightarrow{w}` = `\overrightarrow{u}+(\overrightarrow{v}+\overrightarrow{w})`, quaisquer que sejam os vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`.
+   
+
+   O resultado acima é conhecido como *propriedade associativa da adição de vetores*. E é por conta disso que podemos definir a soma de três ou mais vetores. O vetor soma não depende da ordem em que somamos os vetores.
+
+
+
+.. admonition:: Para o professor
+
+   Esta atividade tem como objetivo a verificação da propriedade associativa da adição de vetores. Para que se atinja o objetivo, torna-se importante que os estudantes comparem suas respostas entre si. Promova a interação também entre as duplas. Outro ponto que deve ser observado é que a soma dos vetores não depende do ponto origem escolhido para o primeiro vetor. No item (d) tem-se a adição de quatro vetores. Para a realização desta atividade pode ser necessário que o aluno precise expandir a malha. Por isso, sugere-se que o professor leve papel quadriculado para a aula.
+
+
+Atividade 6 - Adicionando Vetores em uma Malha Quadriculada
+---------
+
+Faça esta atividade junto com um colega. Em cada um dos itens seguintes, escolha uma ordem arbitrária para somar os vetores representados. O seu colega deve escolher uma ordem diferente da sua. Comparem os resultados e verifiquem a propriedade associativa em cada um dos casos.
+
+
+a) 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773748&w=500&h=254&tok=be9aaf&media=assoc_adicao_5a.png
+   :width: 500px
+   :align: center
+
+   
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773581&w=500&h=254&tok=d76fe4&media=malha_em_branco.png
+   :width: 500px
+   :align: center
+
+   
+
+b) 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773765&w=500&h=254&tok=fc16dd&media=assoc_adicao_5b.png
+   :width: 500px
+   :align: center
+
+   
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773581&w=500&h=254&tok=d76fe4&media=malha_em_branco.png
+   :width: 500px
+   :align: center
+
+   
+
+c) 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773781&w=500&h=254&tok=f1aee2&media=assoc_adicao_5c.png
+   :width: 500px
+   :align: center
+
+   
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479773581&w=500&h=254&tok=d76fe4&media=malha_em_branco.png
+   :width: 500px
+   :align: center
+
+   
+
+.. admonition:: Para o professor
+
+   Com esta atividade pretende-se que o aluno observe para a relação que existe entre as coordenadas do vetor soma e as coordenadas dos vetores originais. Com a sequência de atividades realizadas até aqui, espera-se que os alunos não tenham dificuldades em realizá-la.  Na observação de dificuldade, sugere-se que o professor antecipe a realização da atividade 8, sugerindo que o aluno, que teve dificuldade, refaça em seguida a atividade 7.
+
+
+
+Atividade 7 - Relacionando as coordenadas dos vetores em uma Malha Quadriculada
+---------
+Observe agora a representação dos pontos D, E e F do plano cartesiano.
+
+.. tikz::  
+   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (2,3) circle (.08);
+   \node[right] at (2,3) {$D$};
+   \fill[blue] (7,2) circle (.08);
+   \node[right] at (7,2) {$E$};
+   \fill[blue] (4,7) circle (.08);
+   \node[right] at (4,7) {$F$};
+   
+a) Represente os vetores deslocamentos `\overrightarrow{DE}` e `\overrightarrow{EF}` na mesma malha quadriculada e determine as suas coordenadas.
+b) Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
+c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`?  Qual a relação que você observou entre as coordenadas do *vetor deslocamento final* e as coordenadas dos *vetores deslocamentos parciais*?
+
+
+
+.. admonition:: Para o professor
+
+   Esta atividade é uma versão digital da atividade 7 construída com o software Geogebra. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Escolha um estudante para manusear o aplicativo. Entretanto, promova um debate com a turma sobre o que se pode observar com relação às coordenadas dos vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{u}+\overrightarrow{v}`. Escolha outro par de vetores `\overrightarrow{u}` e `\overrightarrow{v}` e repita a atividade até que o objetivo seja atingido.
+
+
+Atividade 8 - Relacionando as coordenadas dos vetores usando o Geogebra
+---------
+Com o objetivo de ver mais exemplos similares ao da atividade anterior, faça agora a atividade digital no link a seguir https://www.geogebra.org/m/N4ENeKsR.
+   
+Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+   * `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+   * `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+   * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+
+
+
+
+.. admonition:: Definição 
+
+   Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
+     
+   .. math::
+      \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
+
+   A definição pode ser estendida de forma natural para vetores no espaço. Neste caso, os vetores possuem três coordenadas e a adição de vetores fica definida pela expressão:
+     
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
+
+
+
+
+.. note :: **Vetor simétrico e vetor nulo**
+
+   Seja `\overrightarrow{u} = \binom{x_{u}}{y_{u}}` um vetor do plano. Considere `\overrightarrow{v} = \binom{-x_{u}}{-y_{u}}`.
+
+   Observe que 
+     
+      .. math::
+         \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{-x_{u}}{-y_{u}}=\binom{x_{u}-x_{u}}{y_{u}-y_{u}}=\binom{0}{0}
+
+   O vetor com coordenadas `\binom{0}{0}` é denominado por vetor nulo. 
+   Já o vetor `\overrightarrow{v}=\binom{-x_{u}}{-y_{u}}`, que adicionado ao vetor `\overrightarrow{u}` tem como resultado o vetor nulo, é denominado vetor simétrico de `\overrightarrow{u}`.  
+   Representamos o vetor nulo e o simétrico de um vetor `\overrightarrow{u}`, respectivamente, por `\overrightarrow{0}` e `-\overrightarrow{u}`.
+   
+
+.. admonition:: Notação 
+
+   `\overrightarrow{0}=\binom{0}{0}`  e  `-\overrightarrow{u}=\binom{-x_{u}}{-y_{u}}`
+
+
+
+.. note :: **Ainda sobre o vetor nulo**
+
+   Observe que a ideia de vetor nulo contraria a definição original de vetor. Como falar de direção e sentido de um “segmento orientado” cujo módulo é zero? Em verdade, o vetor nulo surge quando somamos um vetor `\overrightarrow{u}` ao seu simétrico `-\overrightarrow{u}`.  Tal fato pode ser interpretado geometricamente como sendo o deslocamento resultante de dois deslocamentos consecutivos, de mesma direção e mesmo módulo, mas em sentidos contrários: primeiro desloca-se de um ponto A até um ponto B, e, em seguida, retorna-se do ponto B para o ponto A.
+   
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479777275&w=500&h=239&tok=aca131&media=vetornulo.png
+      :width: 500px
+      :align: center
+   
+
+.. note :: **O vetor nulo é o elemento neutro da adição**
+
+   Observe que para qualquer vetor  `\overrightarrow{u}` do plano, 
+   
+      .. math::
+   
+         \overrightarrow{u} + \overrightarrow{o} = \overrightarrow{o} + \overrightarrow{u} =\overrightarrow{u}
+   
+   Por conta disso diz-se o vetor nulo é o elemento neutro da adição de vetores.
+
+   .. math::
+   
+      \overrightarrow{u} + \overrightarrow{o} = \binom{x_{u}+0}{y_{u}+0} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+   
+   .. math::
+   
+      \overrightarrow{o}+\overrightarrow{u} = \binom{0+x_{u}}{0+y_{u}} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
+
+
+
+Multiplicação de um vetor por um escalar
+---------------
+Antes de definir a multiplicação de um vetor por um escalar convém fazer duas observações iniciais.
+
+.. note ::
+
+   Ao fazer a adição de um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por ele próprio, obtém-se 
+   
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{u}=\binom{x_{u}+x_{u}}{y_{u}+y_{u}}=\binom{2.x_{u}}{2.y_{u}},
+
+   que pode ser representado, de forma sintética, por
+
+   .. math::
+
+      2.\overrightarrow{u}=\binom{2.x_{u}}{2.y_{u}}.
+
+   De modo geral, para um número inteiro `n` positivo, define-se `n.\overrightarrow{u}` pela seguinte expressão:
+   
+   .. math::
+
+      n.\overrightarrow{u}=\binom{n.x_{u}}{n.y_{u}}.
+
+   Quer dizer, multiplicar um vetor `\overrightarrow{u}` por um escalar `n` significa multiplicar cada coordenada do vetor `\overrightarrow{u}` pelo número  `n`. 
+
+
+.. note ::
+
+   Dado um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}`, o vetor simétrico `(-\overrightarrow{u})` foi definido por `(-\overrightarrow{u}) = \binom{-x_{u}}{-y_{u}}`.
+
+   Repare que esta última expressão pode ser reescrita do seguinte modo:
+
+   .. math::
+
+      -1.\overrightarrow{u}=\binom{-1.x_{u}}{-1.y_{u}}.
+
+   Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um vetor por um escalar como segue. 
+
+
+.. admonition:: Definição 
+
+   Dado um vetor `\overrightarrow{u}` no plano e um número real `\lambda` define-se a multiplicação do vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por um escalar `\lambda` por
+   
+   .. math::
+
+      \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
+
+   Observe que esta definição pode ser estendida de forma natural para vetores no espaço. 
+   
+   Neste caso, multiplica-se por λ cada uma das três coordenadas do vetor.
+
+
+
+.. admonition:: Para o professor
+
+   Com esta atividade pretende-se que o aluno observe inicialmente o que acontece quando multiplica-se um vetor  `\overrightarrow{u}` no plano por um escalar `\lambda`. 
+
+   Por exemplo: quando multiplicamos o vetor `\overrightarrow{u}` por `\lambda = 2`, o vetor `\lambda\overrightarrow{u}`  tem a mesma direção e sentido, mas tem seu módulo igual ao dobro do módulo do vetor `\overrightarrow{u}`; quando multiplica-se o vetor `\overrightarrow{u}` por `\lambda = -\frac{1}{2}`, o vetor `\lambda\overrightarrow{u}`  tem a mesma direção, sentido contrário e módulo igual à metade do módulo do vetor `\overrightarrow{u}`. 
+
+   É importante que o professor corrija a atividade no quadro coma a participação da turma, procurando tirar as conclusões desejadas. Perguntar sobre o que aconteceria se utilizássemos outros valores de `\lambda` (`\lambda = 0,9; \lambda = 1,1` etc.). Esses questionamentos serviriam como uma preparação para a leitura  da observação apresentada após o enunciado desta atividade.  
+
+   Entretanto, cabe destacar este assunto será retomado e estudado com mais propriedade na atividade 10.
+
+
+Atividade 9 - Multiplicando por um escalar
+---------
+Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
+   
+
+.. figure:: 
+   https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1477953990&w=500&h=241&tok=a35331&media=mult_escalar.jpg
+   :align: center
+   :width: 600px
+
+Determine as coordenadas e represente na mesma figura os seguintes vetores:
+
+   a) `2.\overrightarrow{u}`;
+   b) `-1.\overrightarrow{u}`;
+   c) `\frac{1}{2}.\overrightarrow{u}`;
+   d) `-\frac{1}{2}.\overrightarrow{u}`;
+   e) `2.\overrightarrow{u}`.
+
+
+
+.. admonition:: Resposta 
+
+   Como resposta você deve ter encontrado os cinco vetores representados na figura a seguir. 
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
+      :align: center
+      :width: 600px
+     
+
+.. note ::
+
+   Com base na resolução da atividade anterior você deve ter observado que ao multiplicar um vetor `\overrightarrow{u}` (não nulo) do plano por um número real `\lambda`, `\lambda\neq 0`, o vetor resultante não muda de direção.    
+
+   Quer dizer:   `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` são vetores paralelos. 
+
+   Além disso:
+   a) Se `\lambda>0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem o mesmo sentido;
+
+   b) Se `\lambda<0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem sentidos contrários;
+
+   c) Se `|\lambda|>1`, o módulo de `\lambda.\overrightarrow{u}` é maior do que o módulo de `\overrightarrow{u}`;
+
+   d) Se `|\lambda|<1`, o módulo de `\lambda.\overrightarrow{u}` é menor do que o módulo de `\overrightarrow{u}`;
+
+   e) Se `\lambda=-1`, o vetor `\lambda.\overrightarrow{u}` é o vetor simétrico de `\overrightarrow{u}`.
+
+
+
+
+.. admonition:: Para o professor
+
+   Pretende-se com esta atividade que o aluno verifique, por meio de uma atividade interativa construída com o Geogebra, as proposições enunciadas na observação anterior. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Escolha um estudante para manusear o aplicativo. Entretanto, promova um debate com a turma a respeito das questões propostas em cada item do roteiro da atividade. Consolide as propriedades, passo a passo.
+
+
+Atividade 10 - Multiplicando um vetor por um escalar usando o Geogebra
+---------
+Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir https://www.geogebra.org/m/NRuWEyQc. 
+
+Ao abrir o arquivo, faça os experimentos de forma organizada, procurando seguir o roteiro abaixo e respondendo as perguntas enunciadas.
+
+a) Escolha valores positivos para `\lambda`, e verifique o que acontece com as direções e com os sentidos dos vetores `\lambda.\overrightarrow{u}` e `\overrightarrow{u}`: são os mesmos?
+
+b) Agora escolha valores negativos para `\lambda` e verifique o que acontece com as direções e sentidos dos vetores `\lambda.\overrightarrow{u}` e `\overrightarrow{u}`; As direções e sentidos dos vetores são os mesmos?
+
+c) Em seguida, escolha valores de `\lambda` cujo módulo é maior do que 1. Por exemplo: `\lambda = 1,5; \lambda = 1,2; \lambda = 2,5; \lambda = -1,1; \lambda = -1,8` etc.). O que se pode afirmar do módulo do vetor `\lambda.\overrightarrow{u}` em relação ao módulo do vetor `\overrightarrow{u}`?
+
+d) Agora escolha valores de `\lambda` cujo módulo é menor do que 1. O que se pode afirmar do módulo do vetor `\lambda.\overrightarrow{u}` em relação ao módulo do vetor `\overrightarrow{u}`?
+
+e) E se `\lambda` for igual a -1? O que se pode afirmar do vetor `\lambda.\overrightarrow{u}`? Quem é o vetor `\lambda.\overrightarrow{u}`? 
+
+f) E se `\lambda` for igual a 1? Quem é o vetor `\lambda.\overrightarrow{u}`?
+
+
+Propriedades da operação de multiplicação de um vetor por um escalar
+---------------
+Nesta seção apresentaremos as propriedades da multiplicação de um vetor no plano por um escalar. Cabe destacar, entretanto, que as propriedades enunciadas também são válidas para vetores no espaço. Pense nisso!
+
+
+.. note :: 
+
+   **Associativa**
+
+   Seja `\overrightarrow{u}` um vetor do plano e considere `\lambda` e `\mu` números reais. 
+
+   Então oo multiplicarmos o vetor `\mu.\overrightarrow{u}` pelo escalar `\lambda` obtém-se  o vetor `(\lambda.\mu).\overrightarrow{u}`. 
+
+   Isto significa que ao multiplicarmos o vetor `\overrightarrow{u}` duas vezes consecutivas pelos escalares  `\lambda` e `\mu`, o vetor original fica multiplicado por `\lambda.\mu`. 
+
+   Veja as figuras a seguir:
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479781893&w=500&h=254&tok=13541c&media=fig_associativa_mult_escalar-a.png
+      :width: 400px
+      :align: center
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479782056&w=500&h=254&tok=de7d6b&media=fig_associativa_mult_escalar-b.png
+      :width: 400px
+      :align: center
+
+
+
+.. admonition:: Resumindo: 
+   
+   .. math::
+
+      \lambda.(\mu.\overrightarrow{u})=(\lambda.\mu).\overrightarrow{u} 
+   
+
+
+.. admonition:: Para o professor
+
+   Propriedade Associativa
+
+   Caso o professor considere pertinente, pode apresentar uma verificação algébrica do resultado:
+  
+   .. math::
+
+      \lambda.(\mu.\overrightarrow{u})=\lambda.\binom{\mu.x_{u}}{\mu.y_{u}}=\binom{\lambda.\mu.x_{u}}{\lambda.\mu.y_{u}}=\binom{(\lambda\mu).x_{u}}{(\lambda\mu).y_{u}}=(\lambda\mu).\binom{x_{u}}{y_{u}}=(\lambda.\mu).\overrightarrow{u}
+
+
+
+.. note :: 
+   
+   **Distributiva em relação à adição de escalares**
+
+   Seja `\overrightarrow{u}` um vetor do plano e considere `\lambda` e `\mu` números reais. 
+
+   Então, ao fazermos a adição dos vetores `\mu.\overrightarrow{u}` e `\lambda.\overrightarrow{u}`, obtém-se como resultado o vetor `(\lambda+\mu).\overrightarrow{u}`. 
+
+   Veja as figuras a seguir:
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479782176&w=500&h=254&tok=712322&media=distrib_mult_escalar_1.png
+      :width: 400px
+      :align: center
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479782317&w=500&h=254&tok=3cb120&media=distrib_mult_escalar_2.png
+      :width: 400px
+      :align: center
+
+
+
+.. admonition:: Resumindo: 
+   
+   .. math::
+
+      (\lambda+\mu)\overrightarrow{u}=\lambda\overrightarrow{u}+\mu\overrightarrow{u} 
+   
+
+
+.. admonition:: Para o professor
+
+   Propriedade Distributiva em relação à adição de escalares
+
+   Caso o professor considere pertinente, pode apresentar uma verificação algébrica do resultado:
+  
+   .. math::
+
+      (\lambda+\mu).\overrightarrow{u}=\binom{(\lambda+\mu)x_{u}}{(\lambda+\mu)y_{u}}=\binom{\lambda.x_{u}+\mu.x_{u}}{\lambda.y_{u}+\mu.y_{u}}=\binom{\lambda.x_{u}}{\lambda.y_{u}}+\binom{\mu.x_{u}}{\mu.y_{u}}=\lambda.\overrightarrow{u}+\mu.\overrightarrow{u}.
+
+
+
+.. note :: 
+
+   **Distributiva em relação à adição de vetores**
+
+   Sejam `\overrightarrow{u}` e `\overrightarrow{v}` dois vetores do plano e considere `\lambda` um número real. 
+
+   Então, ao fazermos a adição dos vetores `\lambda.\overrightarrow{u}` e `\lambda.\overrightarrow{v}`, obtém-se como resultado o vetor `\lambda.(\overrightarrow{u}+\overrightarrow{v})`. 
+
+  Veja as figuras a seguir:
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479781084&w=500&h=237&tok=bf28b5&media=fig_distributiva_mult_escalar_adicao_vetores_a.png
+      :width: 400px
+      :align: center
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479781099&w=499&h=239&tok=2a17fe&media=fig_distributiva_mult_escalar_adicao_vetores_b.png
+      :width: 400px
+      :align: center
+
+   A propriedade é consequência direta do fato de os vetores `\lambda.\overrightarrow{u}` e `\lambda.\overrightarrow{v}` serem, respectivamente, paralelos aos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. 
+
+
+.. admonition:: Resumindo: 
+   
+   .. math::
+
+      \lambda.(\overrightarrow{u}+\overrightarrow{v})=\lambda\overrightarrow{u}+\lambda\overrightarrow{v} 
+   
+
+
+.. admonition:: Para o professor
+
+   Propriedade Distributiva da multiplicação por um escalar em relação à adição de vetores
+
+   Caso o professor considere pertinente, pode apresentar uma verificação algébrica do resultado:
+  
+   .. math::
+
+      \lambda.(\overrightarrow{u}+\overrightarrow{v})=\lambda\binom{x_{u}+x_{v}}{y_{u}+y_{v}}=\binom{\lambda.x_{u}+\lambda.x_{v}}{\lambda.y_{u}+\lambda.y_{v}}=\binom{\lambda.x_{u}}{\lambda.y_{u}}+\binom{\lambda.x_{v}}{\lambda.y_{v}}=\lambda.\binom{x_{u}}{y_{u}}+\lambda.\binom{x_{v}}{y_{v}}=\lambda\overrightarrow{u}+\lambda\overrightarrow{v}.
+
+
+
+
+.. note :: 
+
+   **Identidade e Vetor Simétrico**
+
+   Para qualquer vetor `\overrightarrow{u}` do plano,  `1.\overrightarrow{u}` é o próprio vetor `\overrightarrow{u}`. Por outro lado, ao multiplicarmos o vetor `\overrightarrow{u}` por (-1), obtém-se o vetor simétrico de `\overrightarrow{u}`. 
+
+   Veja a figura a seguir:
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1479781114&w=500&h=254&tok=e37a88&media=fig_identidade_simetrico.png
+      :width: 400px
+      :align: center
+
+
+.. admonition:: Resumindo: 
+   
+   Para qualquer vetor `\overrightarrow{u}` do plano, tem-se que:
+   
+   .. math::
+
+      1.\overrightarrow{u}=\overrightarrow{u} 
+
+e
+   
+   .. math::
+
+      -1.\overrightarrow{u}=-\overrightarrow{u} 
+ 
+   
+
+
+.. admonition:: Para o professor
+
+   Propriedade Distributiva em relação à adição de vetores
+
+   Caso o professor considere pertinente, pode apresentar uma verificação algébrica dos resultados:
+  
+   .. math::
+
+      1.(\overrightarrow{u})=\binom{1.x_{u}}{1.y_{u}}=\binom{x_{u}}{y_{u}}=\overrightarrow{u}
+      
+      -1.(\overrightarrow{u})=\binom{-1.x_{u}}{-1.y_{u}}=\binom{-x_{u}}{-y_{u}}=-\overrightarrow{u}
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+       SOBRAS             SOBRAS             SOBRAS             SOBRAS             SOBRAS     
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 
@@ -780,64 +1359,69 @@ Atividade
    #. Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
 
 
-.. note::
-   Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
-   
-   
-   .. math::
-
-      \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
-
-   A definição pode ser estendida de forma natural para vetores no espaço. Neste caso, os vetores possuem três coordenadas e a adição de vetores fica definida pela expressão:
-     
-   .. math::
-
-      \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
-
-Atividade
---------
-
-Regra do paralelogramo
-
-Um bloco está sendo puxado ao longo de uma mesa lisa em duas direções distintas, conforme ilustrado na figura a seguir.
-
-
-
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bloco_mesa_1.jpg
-      :align: center
-      :width: 300px
-            
-
-A força resultante, `\overrightarrow{R}`, é a adição dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`, isto é, `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}}`.
-
-Na figura a seguir temos representados os dois vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
-
-
-   .. tikz::  
-
-      \draw[step=1cm,gray,very thin] (0,0) grid (8.01,6);
-      \node[right] at (1,3) {$\overrightarrow{F_{2}}$};
-      \node[right] at (3,1) {$\overrightarrow{F_{1}}$};
-      \draw[->, thick, red] (1,1) -- (3,4);
-      \draw[->, thick, blue] (1,1) -- (5,2);
-   
-Considerando a medida do lado de cada quadradinho da malha como unidade: 
-   
-#. Determine as coordenadas dos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`.
-#. Represente, na mesma malha da figura anterior, o vetor `\overrightarrow{F_{2}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{1}}`.
-#. Represente o vetor `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}` e determine suas coordenadas.
-#. Agora, construa, ainda na mesma malha, o vetor `\overrightarrow{F_{1}}` tendo como origem a extremidade do vetor `\overrightarrow{F_{2}}`.
-#. Represente o vetor `\overrightarrow{F_{2}}+\overrightarrow{F_{1}}` e determine suas coordenadas.
-#. O que pode ser afirmado sobre os vetores obtidos nos itens (c) e (e)? Eles são iguais? Justifique sua resposta.
-
-.. note::
-   Na atividade anterior, o vetor `\overrightarrow{R} = \overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}` é a soma dos dos vetores  `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. Observe que o vetor `\overrightarrow{R}` é dado pela diagonal do paralegramo cujos lados não paralelos são formados pelos vetores `\overrightarrow{F_{1}}` e `\overrightarrow{F_{2}}`. 
    
 
-.. note::
 
-   De modo geral, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`, que não possuem a mesma direção, a soma dos dois vetores é dado pela diagonal do paralegramo, cujos lados não paralelos são formados pelos vetores `\overrightarrow{u}` e `\overrightarrow{v}`. Este resultado é conhecido como a *Regra do Paralelogramo*.
+************
+Exercícios
+************
+Lista de exercícios
+
+
+.. _my-aprofundamentos_vetores:
+
+***********
+Aprofundamentos
+***********
+
+O que se quer dizer precisamente com *sentido* de um segmento orientado?
+
+Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem *mesmo sentido* quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
+
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick] (0,1)--(4,1);
+   \node at (1.5,-.6) {Mesmo sentido};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$C$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$D$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \end{scope}
    
+   \begin{scope}[xshift=5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$A$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$B$};
+   \draw[very thick, red, -latex] (1,1)--(2,2);
+   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
+   \node at (1.5,-.6) {Sentidos contrários};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$D$};
+   \fill[blue] (2,2) circle (.08);
+   \node[below] at (2,2) {$C$};
+   \draw[very thick, red, latex-] (1,1)--(2,2);
+   \end{scope}
+   \end{scope}
+
 **********
 Propriedades da operação de adição de vetores
 **********
@@ -879,7 +1463,7 @@ Dados três vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarro
    figura 2
 
 
-A figura 1 ilustra a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
+A figura 1 ilusta a primeira situação: primeiro realiza-se a adição `(\overrightarrow{u} + \overrightarrow{v})` para depois realizar a adição deste vetor soma com o vetor  `\overrightarrow{w}`. 
 
 Já a figura 2 ilustra a segunda situação: primeiro realiza-se a adição `(\overrightarrow{v} + \overrightarrow{w})` para depois realizar a adição o vetor  `\overrightarrow{u}` com este vetor soma. 
 
@@ -923,109 +1507,6 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
 	:width: 300px
 	:align: center
    
-
-
-***********
-Multiplicação de um vetor por um escalar
-***********
-
-
-Antes de definir a **multiplicação de um vetor por um escalar** convém fazer duas observações iniciais.
-
-
-.. admonition:: Observação 1
-
-   Ao fazer a adição  de um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por ele próprio, obtem-se 
-
-   .. math::
-
-      \overrightarrow{u}+\overrightarrow{u}=\binom{x_{u}+x_{u}}{y_{u}+y_{u}}=\binom{2.x_{u}}{2.y_{u}},
-
-   que pode ser representado, de forma sintética, por
-
-   .. math::
-
-      2.\overrightarrow{u}=\binom{2.x_{u}}{2.y_{u}}.
-
-   De modo geral, para um número inteiro `n` positivo, define-se `n.\overrightarrow{u}` pela seguinte expressão:
-
-   .. math::
-
-      n.\overrightarrow{u}=\binom{n.x_{u}}{n.y_{u}}.
-
-
-   Quer dizer, multiplicar um vetor `\overrightarrow{u}` por um escalar `n` significa multiplicar cada coordenada do vetor `\overrightarrow{u}` pelo número  `n`. Observe que esta definição pode ser estendida de forma natural para vetores no espaço. Neste caso, multiplica-se por `n` cada uma das três coordenadas do vetor.
-
-.. admonition:: Observação 2
-
-   Dado um vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}`, o vetor simétrico `(-\overrightarrow{u})` foi definido por `(-\overrightarrow{u}) = \binom{-x_{u}}{-y_{u}}`.
-
-   Esta ultima expressão pode ser reescrita do seguinte modo:
-
-   .. math::
-
-      -1.\overrightarrow{u}=\binom{-1.x_{u}}{-1.y_{u}}.
-
-Motivado pelas observações (1) e (2) acima, define-se a multiplicação de um vetor por um escalar como segue. 
-
-.. admonition:: Definição 
-
-   Dado um vetor `\overrightarrow{u}` no plano e um número real `\lambda` define-se a multiplicação do vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` por um escalar `\lambda` por
-   
-   .. math::
-
-      \lambda.\overrightarrow{u}=\binom{\lambda.x_{u}}{\lambda.y_{u}}.
-
-
-Atividade
------------
-
-Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
-Determine as coordenadas e represente na mesma figura, os seguintes vetores:
-
-#. `2.\overrightarrow{u}`;
-#. `-1.\overrightarrow{u}`;
-#. `\frac{1}{2}.\overrightarrow{u}`;
-#. `-\frac{1}{2}.\overrightarrow{u}`;
-#. `2.\overrightarrow{u}`.
-
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar.jpg
-   :width: 400px
-   :align: center
-    	
-
-
-.. admonition:: Resposta 
-
-	A figura abaixo representa a resposta:
-
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=mult_escalar_gab.jpg
-
-     
-
-
-.. note:: 
-   
-   Com base na resolução da atividade anterior você deve ter observado ao multiplicar um vetor `\overrightarrow{u}` (não nulo) no plano por um número real `\lambda`, `\lambda\neq 0`, o vetor resultante não muda de direção.  
-   Quer dizer:   `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` são vetores paralelos. 
-   Além disso:
-
-   a) Se `\lambda>0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem o mesmo sentido;
-   b) Se `\lambda<0`, `\lambda.\overrightarrow{u}` e `\overrightarrow{u}` possuem sentidos contrários;
-   c) Se `|\lambda|>1`, o módulo de `\lambda.\overrightarrow{u}` é maior do que o módulo de `\overrightarrow{u}`;
-   d) Se `|\lambda|<1`, o módulo de `\lambda.\overrightarrow{u}` é menor do que o módulo de `\overrightarrow{u}`;   
-   e) Se `\lambda=-1`, o vetor `\lambda.\overrightarrow{u}` é o vetor simétrico de `\overrightarrow{u}`.
-
-
-
-Atividade
----------
-
-Para verificar as propriedades enunciadas na nota acima, faça a atividade digital no link a seguir. 
-   
-   https://www.geogebra.org/m/QM5UrQsH
-
 
 **************
 Propriedades da operação de multiplicação de um vetor por um escalar
@@ -1089,63 +1570,3 @@ Sejam `\overrightarrow{u}` e `\overrightarrow{v}` vetores do plano e `\lambda` e
 
    Por outro lado se `\lambda.\overrightarrow{u}=\overrightarrow{o}` e `\lambda\neq0`, tem-se que 
    `\overrightarrow{u}=1.\overrightarrow{u}=(\lambda^{-1}.\lambda).\overrightarrow{u}=(\lambda^{-1}).(\lambda.\overrightarrow{u})=(\lambda^{-1}).\overrightarrow{o}=\overrightarrow{o}.`
-
-************
-Exercícios
-************
-Lista de exercícios
-
-
-.. _my-aprofundamentos_vetores:
-
-***********
-Aprofundamentos
-***********
-
-O que se quer dizer precisamente com *sentido* de um segmento orientado?
-
-Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sentido `AB` (de `A` para `B`) e sentido `BA` (de `B` para `A`). Considere dois segmentos orientados `AB` e `CD` de mesma direção. Se ambos estão sobre a mesma reta dizemos que possuem *mesmo sentido* quando ambos determinam o mesmo sentido da reta. Se os segmentos orientados `AB` e `CD` estão em retas paralelas, dizemos que possuem mesmo sentido quando os pontos `B` e `D` pertencem à mesma região determinada pela reta `AC` (veja a figura).  
-
-.. tikz:: 
-
-   \draw (0,0)--(3,3);
-   \node at (-.3,0) {$r$};
-   \fill[blue] (1,1) circle (.08);
-   \node[below] at (1,1) {$A$};
-   \fill[blue] (2,2) circle (.08);
-   \node[below] at (2,2) {$B$};
-   \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick] (0,1)--(4,1);
-   \node at (1.5,-.6) {Mesmo sentido};
-      
-   \begin{scope}[xshift=1.5cm]
-   \draw (0,0)--(3,3);
-   \node at (-.3,0) {$s$};
-   \fill[blue] (1,1) circle (.08);
-   \node[below] at (1,1) {$C$};
-   \fill[blue] (2,2) circle (.08);
-   \node[below] at (2,2) {$D$};
-   \draw[very thick, red, -latex] (1,1)--(2,2);
-   \end{scope}
-   
-   \begin{scope}[xshift=5cm]
-   \draw (0,0)--(3,3);
-   \node at (-.3,0) {$r$};
-   \fill[blue] (1,1) circle (.08);
-   \node[below] at (1,1) {$A$};
-   \fill[blue] (2,2) circle (.08);
-   \node[below] at (2,2) {$B$};
-   \draw[very thick, red, -latex] (1,1)--(2,2);
-   \draw[green, very thick, domain=0:4.6] plot (\x, {0.4*\x+.6});
-   \node at (1.5,-.6) {Sentidos contrários};
-      
-   \begin{scope}[xshift=1.5cm]
-   \draw (0,0)--(3,3);
-   \node at (-.3,0) {$s$};
-   \fill[blue] (1,1) circle (.08);
-   \node[below] at (1,1) {$D$};
-   \fill[blue] (2,2) circle (.08);
-   \node[below] at (2,2) {$C$};
-   \draw[very thick, red, latex-] (1,1)--(2,2);
-   \end{scope}
-   \end{scope}
