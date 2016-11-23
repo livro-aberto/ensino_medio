@@ -67,24 +67,15 @@ Probabilidade e Estatística
   
   
   
-
-   
-------------
-Apresentação
-------------
-A Estatística está presente no cotidiana muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
+Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
 Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos.  
 
 DÚVIDA:
-Não é coincidência que o Netflix frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
+Não é coincidência que o Netflix frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
-Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
 
-
-********
-Capítulo
-********
 Neste capítulo será apresentada a etapa inicial de uma pesquisa. Para exemplificação, será usada a Pesquisa Nacional de Saúde do Escolar (PENSE), realizada em 2012, junto aos estudantes que cursavam o 9o ano do ensino fundamental do Brasil (http://www.ibge.gov.br/home/estatistica/populacao/pense/2012/default.shtm). Esta pesquisa tinha como objetivo principal coletar dados sobre diferentes aspectos de saúde da população adolescente brasileira, produzindo assim informações confiáveis para  orientação e  avaliação das políticas de saúde destinadas a esse importante contingente populacional. Nesta etapa, serão abordados os conteúdos sobre a construção de um instrumento de coleta de dados e elaboração de análises descritivas dos mesmos. Para isso, será utilizada a parte da pesquisa que dispõe sobre a percepção da imagem corporal que tem de de si mesmos os adolescentes.   
 
 A seguir apresenta-se a parte do questionário da PENSE que fez perguntas específicas sobre imagem corporal. São perguntas que representam variáveis quantitativas e qualitativas. 
@@ -139,6 +130,9 @@ características precisam ser aferidas a partir da adoção de alguma escala qua
 
 **Variáveis contínuas**: características mensuráveis que assumem valores em uma escala contínua, comumente obtidas pelo uso de um instrumento de medida. Exemplos: peso (balança), altura (fita métrica), tempo (relógio), pressão arterial, idade. 
 
+.. note::
+
+   A figura abaixo só vai aparecer para o usuário que tiver acesso à respectiva pasta do seu Dropbox. Peço que use as instruções presentes em https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index.html#imagens
 
 .. figure:: <C:\Users\Luciane\Dropbox\ENEM_2016\Apresentacao\Figuras>
    :width: 200px
@@ -150,7 +144,7 @@ características precisam ser aferidas a partir da adoção de alguma escala qua
 .. note::
 
   É importante observar que uma variável originalmente quantitativa pode ser coletada tabém de forma qualitativa. 
-  Por exemplo, a variável idade, medida em anos,  é quantitativa (contínua); mas, se pergunta-se apenas a faixa etária (0 a 5 anos, 6 a 10 anos, etc...), passa a ser qualitativa (ordinal). Outro exemplo é o índice de massa corporal (IMC, calculado como `IMC =peso (kg)/(altura(m))^2`. É uma variável quantitativa (contínua), mas caso se deseje trabalhar com  os pontos de corte de lassificação do estado nutricional (como sugeridos pela  Organização Mundial da Saúde) , classificando como baixo peso o IMC<(18,5) , peso normal como IMC entre (18,5) (24,9), excesso de peso como IMC entre(24,9) e (29,9), Obesidade IMC maior ou igual a (30) passa a ser classificada como qualitativa ( do tipo ordinal).
+  Por exemplo, a variável idade, medida em anos,  é quantitativa (contínua); mas, se pergunta-se apenas a faixa etária (0 a 5 anos, 6 a 10 anos, etc...), passa a ser qualitativa (ordinal). Outro exemplo é o índice de massa corporal (`IMC`, calculado como `IMC =\text{peso (kg)}/(\text{altura (m)})^2`. É uma variável quantitativa (contínua), mas caso se deseje trabalhar com  os pontos de corte de lassificação do estado nutricional (como sugeridos pela  Organização Mundial da Saúde) , classificando como baixo peso o `IMC<(18,5)`, peso normal como `IMC` entre (18,5) (24,9), excesso de peso como `IMC` entre `(24,9)` e `(29,9)`, Obesidade `IMC` maior ou igual a (30) passa a ser classificada como qualitativa (do tipo ordinal).
 Outro ponto importante a considerar é que nem sempre uma variável representada por números é quantitativa. O número do telefone de uma pessoa, o número da casa, o número de sua identidade, são variáveis de identificação e não serão incluídas como variáveis quantitativas para análise. Outra situação também que acontece é considerar que, ás vezes, o sexo de uma pessoa é registrado na base de dados como (1), se masculino, e como (2), se feminino, por exemplo. Isto não significa que a variável sexo passa desse modo a ser quantitativa! 
 
  Após entender como as variáveis podem ser classificadas, vamos observar uma parte do banco de dados que foi gerado pela PENSE. As variáveis da base usada como exemplo são  referentes às perguntas apresentadas no exemplo acima: 
@@ -255,41 +249,32 @@ ATIVIDADE: PESQUISA
 
 
 
-.. admonition:: Atividade 
-
    **ESTATÍSTICA EM PRÁTICA**
    
-   Esta atividade consiste em realizar uma   pesquisa a partir dos processos de coleta, de organização e de análise de dados, segundo métodos e técnicas da estatística descritiva. 
+Esta atividade consiste em realizar uma   pesquisa a partir dos processos de coleta, de organização e de análise de dados, segundo métodos e técnicas da estatística descritiva. 
    
-   OBJETIVO
+OBJETIVO
    
-   Realizar um estudo cujo tema seja relevante para a comunidade local da escola ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
+Realizar um estudo cujo tema seja relevante para a comunidade local da escola ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
    
-   ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
+ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
    
    i. O trabalho pode ser realizado em grupos de até 5 (cinco) componentes ou individualmente; Os componentes não precisam ser de uma mesma turma.
-   
    ii. O tema da pesquisa deve, necessariamente, ser relevante para a comunidade local da escola ou para a sociedade em geral. Por exemplo, pesquisar o tempo gasto pelos estudantes no deslocamento diáro até a escola pode ser relevante para administração da escola. No entanto, saber se o número da casa, ou do apartamento, em que os alunos moram é par ou é ímpar, dificilmente terá qualquer importância para a dinâmica e a convivência na escola ou em sociedade.
-   
    iii. O grupo pode escolher o tema da sua pesquisa, mas deve fundamentar e justificar a escolha, defendendo a sua relevância. Para que o trabalho possa ser desenvolvido, o tema escolhido deve ser aprovado pelos professores responsáveis pela proposição e pela orientação da atividade.
-   
    iv. Como o tema aprovado, antes de começar a desenvolver a pesquisa, o grupo deve planejá-la:
-      • O que será pesquisado? O que se quer investigar? Por quê?
-      • Qual a relevância da pesquisa pretendida? Como a pesquisa pode ser importante?
-      • Qual a população a ser consultada?
-      • Como os dados serão coletados? Que instrumentos de coleta de dados  serão usados?
-   
+  * O que será pesquisado? O que se quer investigar? Por quê?
+  * Qual a relevância da pesquisa pretendida? Como a pesquisa pode ser importante?
+  * Qual a população a ser consultada?
+  * Como os dados serão coletados? Que instrumentos de coleta de dados  serão usados?
    v. Após a coleta dos dados, é importante planejar a organização e a análise dos dados. Investigue a melhor forma de cumprir essas etapas.
-      • Um gráfico vale mais do que mil palavras. Qual recurso gráfico usarão para dar visibildade à pesquisa?
-      • Que recursos tecnológicos serão usados para organizar e tabular os dados coletados?
-      • Qual(ou quais) componente(s) do grupo ficará(ão) responsável(is) por manipular as ferramentas tecnológicas de organização e tabulação dos dados?
-      • Que medidas estatísticas serão determinadas?
-   
+  * Um gráfico vale mais do que mil palavras. Qual recurso gráfico usarão para dar visibildade à pesquisa?
+  * Que recursos tecnológicos serão usados para organizar e tabular os dados coletados?
+  * Qual(ou quais) componente(s) do grupo ficará(ão) responsável(is) por manipular as ferramentas tecnológicas de organização e tabulação dos dados?
+  * Que medidas estatísticas serão determinadas?
    vi. Com os dados coletados, organizados e tabulados, que conclusões ou inferências a pesquisa pemite apontar?
-      • Organize uma apresentação do seu trabalho para divulgação;
-      • A conclusão do trabalho deve prever uma versão para impressão e uma apresentação oral.
-   
+  * Organize uma apresentação do seu trabalho para divulgação;
+  * A conclusão do trabalho deve prever uma versão para impressão e uma apresentação oral.
    vii. Por fim, façam uma avaliação do desenvolviemnto do trabalho.  
-   
    viii. Não se esqueçam de organizar a bibliografia de referência. 
    
