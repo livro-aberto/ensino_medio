@@ -19,23 +19,90 @@ Funções
    
    Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis.
     
-    
-Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
+
+Apresentação
+============
+
+
+.. admonition:: Para o professor
+
+   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Talvez seja oportuno recapitular o conceito de grandeza (eixo Grandezas e Medidas).
+   
+   Sobre a abordagem adotada, destacamos os seguintes pontos:
+   
+   * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
+   * É importante reforçar, inicialmente, a relação de dependência entre as grandezas. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
+   * Evitamos nas primeiras atividades exemplos onde haja proporcionalidade com o objetivo de não reforçar o senso comum de que no cotidiano todas as relações são proporcionais. Elas terão a devida ênfase no Capítulo dedicado às funções afins.
+   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existente entre as varáveis envolvidas. 
+   * São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
+   * Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
+     
+Vivemos na era da informação! A todo momento o governo e as empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para a sociedade. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários de aplicativos com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc. Informações sobre o índice pluviométrico e sua relação com o volume de água nos reservatórios dos sistemas de abastecimento de água das grandes cidades são úteis para educar a população sobre o uso consciente dos recursos hídricos e para guiar as políticas públicas de fornecimento ou racionamento de água, bem como aumento ou diminuição das taxas sobre as contas de água e energia elétrica. É nesse cenário com grandes volumes de dados que precisam ser processados e relacionados que a Matemática, a partir do conceito de função, ganha espaço e desempenha um papel fundamental. 
+
+Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
+
+
+Pluviometria no sistema Cantareira
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   *  Interpretar gráfico cartesiano que represente relações entre grandezas.
+   * Analisar informações expressas em gráficos ou tabelas como recurso para a construção de argumentos. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Os valores apresentados pelo gráfico são apenas estimativas. Caso haja interesse, visitando a página indicada na legenda é possível ter acesso aos valores exatos para cada mês passando o mouse sobre o gráfico, contudo, o período apresentado na atividade pode ser diferente do que você vai encontrar na página. Você pode modificar a atividade usando os dados atualizados.
+   * No item (b) estamos interessados no valor absoluto da diferença, não importando qual deles é maior que o outro.
+   * No item (d) auxilie seus estudantes na elaboração do texto, sinalizando que ele deve perceber o aumento ou a diminuição no nível de água armazenado no sistema, relacionando com a variação da pluviometria.
+   
+
+As chuvas são a principal fonte de água para os reservatórios que abastecem as grandes cidades. Existe uma média mensal esperada de chuvas com base no passado. Em anos em que a chuva real é menor que o esperado podemos ter baixos níveis de água nos sistemas.
+
+O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
+
+
+.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=cantareira_chuva.png
+   :width: 600px
+   :align: center
+
+   disponível em: http://www.nivelaguasaopaulo.com/cantareira
+
+De acordo com o gráfico acima, responda:
+
+a) Em que mês e ano houve a maior incidência de chuvas? E a menor?
+b) Em que período(s) a diferença entre a chuva esperada e a real superou os 100 mm, aproximadamente? 
+c) É possível identificar os períodos de estiagem e maior volume de chuva? Explique.
+d) Escreva um parágrafo que descreva, ao longo do período indicado, um possível impacto sobre a variação do nível de água nos reservatórios do sistema Cantareira.
+
+Colorindo o mapa
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+   
+   * Perceber as relações entre as grandezas tempo, cor do mapa e velocidade média.
+   * Distinguir quais relações são univocamente determinadas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nem todos os estudantes vão usar o mesmo critério para distribuição das cores. Incentive-os a usarem as quatro cores e, no momento da discussão do item (b), chame a atenção para o fato de não haver uma única resposta correta para o item (a).
+   * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
      :width: 700px
      :align: center
-
-.. note:: As figuras só ficavam visíveis se estivéssemos logados na wiki. Mudei o link para as figuras porque as coloquei na wiki do livro de frações que é aberta a todo mundo para visualização. Agora as figuras devem ser colocadas lá. Por favor, veja a documentação sobre figuras na `sintaxe <https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index#my-figuras>`_
-
-Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
-    
-
-
-Colorindo o mapa
----------
-
+   
 A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
 
 .. table:: 
@@ -77,8 +144,9 @@ c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calcula
 
 d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
-Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias. 
-De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
+Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+
+De um modo mais geral, dados dois conjuntos quaisquer não vazios `A` e `B`, podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
    
    
 
@@ -91,7 +159,10 @@ De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabel
 
    Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
 
-Perceba que na definição está implícito que todo elemento de `a\in A` precisa ter uma imagem `f(a)\in B`, sem haver ambiguidade na determinação da imagem. Por outro lado, nem todo elemento `b\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento b∈B ser imagem de elementos distintos em `A`, ou seja, `b=f(a_1 )=f(a_2)` com `a_1\neq a_2`.
+Perceba que na definição está implícito que todo elemento `a\in A` precisa ter uma imagem `f(a)\in B`, sem haver ambiguidade na determinação desta imagem. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elemntos, por exemplo, a relação que associa cada pessoa ao seu número de telefone é ambígua, pois nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone, sendo impossível determinar, de maneira única, uma imagem para cada pessoa.
+
+Por outro lado, nem todo elemento `b\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento b∈B ser imagem de elementos distintos em `A`, ou seja, `b=f(a_1 )=f(a_2)` com `a_1\neq a_2`.
+
 
 
 
@@ -175,7 +246,7 @@ Considere a sequência de números ilustrada acima. Ela é conhecida como a sequ
 
 	b) Determine, se possível, o 6º, o 7º e o 8º números triangulares. 
 
-	c) É possível obter uma expressão geral que permita encontrar qualquer número triangular? Explique.
+	c) É possível obter uma regra geral que permita encontrar qualquer número triangular? Explique.
 
 
 Rola o dado
@@ -197,8 +268,9 @@ a) Decida se a relação que associa a cada número natural `n`, o resultado obt
 
 b) Determine, se possível, o 6º, o 7º e o 8º resultados dos lançamentos. 
 
-c) É possível obter uma expressão geral que permita encontrar o resultado de qualquer lançamento? Explique.
+c) É possível obter uma regra geral que permita encontrar o resultado de qualquer lançamento? Explique.
  
+!!!!!!!!!!!!!Parágrafo para amarrar!!!!!!!!!!!
 
 .. admonition:: Fenômenos Determinísticos 
 
@@ -207,7 +279,9 @@ c) É possível obter uma expressão geral que permita encontrar o resultado de 
 .. admonition:: Fenômenos Aleatórios
 
 	(usar a mesma descrição utilizada no eixo de Estatística e Probabilidade)
- 
+
+
+
 Desafio
 ---------
 
@@ -223,7 +297,7 @@ Por que não é?
 ---------
 Vimos que para que uma relação seja uma função não pode haver:
 
-	`(1)` Ambiguidade na definição;
+	`(1)` Ambiguidade na determinação da imagem;
 
 	`(2)` Elementos no domínio sem imagem;
 
@@ -265,7 +339,7 @@ Quando nos deparamos com uma função é fundamental identificarmos os conjuntos
 
 .. admonition:: Não esqueça! 
 
-   Para definir uma função precisamos de três coisas fundamentais: o **domínio**, o **contradomínio** e a **lei** de associação que relaciona *todo* elemento do domínio à sua imagem no contradomínio.
+   Para definir uma função precisamos de três coisas fundamentais: o **domínio**, o **contradomínio** e a **regra** de associação que relaciona *todo* elemento do domínio à sua imagem no contradomínio.
 
 Perceba que quando dizemos simplesmente *a função* `f(x)=\frac{1}{x}`, sem que os outros elementos da função esteja claros (o domínio e o contradomínio), podemos estar cometendo um erro conceitual. 
 
