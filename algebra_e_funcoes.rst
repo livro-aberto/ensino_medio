@@ -26,7 +26,8 @@ Apresentação
 
 .. admonition:: Para o professor
 
-   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Talvez seja oportuno recapitular o conceito de grandeza (eixo Grandezas e Medidas). 
+   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Talvez seja oportuno recapitular o conceito de grandeza (eixo Grandezas e Medidas).
+   
    Sobre a abordagem adotada, destacamos os seguintes pontos:
    
    * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
@@ -143,8 +144,9 @@ c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calcula
 
 d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
-Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias. 
-De um modo mais geral, dados dois conjuntos quaisquer não vazios, `A` e `B` podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
+Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+
+De um modo mais geral, dados dois conjuntos quaisquer não vazios `A` e `B`, podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
    
    
 
