@@ -67,9 +67,6 @@ Vetores no plano
    
 .. Começo da Edição Marcos Paulo
    
-
-Apresentação
-=====
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
 A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
@@ -110,9 +107,6 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
 
    Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
 
-
-Representação Geométrica de um Vetor
-=====
 
 Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
 Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades em um mesmo instante..
@@ -494,14 +488,6 @@ Outro uso importante dos vetores na Física é a representação de forças. Alg
 #. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
 #. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
 #. Justifique a sua escolha do item a) utilizando vetores.
-
-***********
-Um vetor fica caracterizado por comprimento, direção e sentido
-***********
-
-.. note::
-
-   Nessa subseção deve haver algum espaço para discutir com os alunos o que significa um vetor nulo. Qual sua direção e sentido?
 
 .. Fim edição Fabio e início de Wanderley
 
@@ -1422,9 +1408,9 @@ Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sent
    \end{scope}
    \end{scope}
 
-**********
+
 Propriedades da operação de adição de vetores
-**********
+===========
 
 Enunciaremos a seguir algumas propriedades da operação de vetores no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
 
@@ -1508,9 +1494,9 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
 	:align: center
    
 
-**************
+
 Propriedades da operação de multiplicação de um vetor por um escalar
-**************
+==============
 
 
 Enunciaremos as propriedades considerando vetores no plano. Entretanto, cabe destacar que essas propriedades também são válidas para vetores no espaço. 
