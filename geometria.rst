@@ -148,6 +148,7 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 .. _fig-leste alagoano:
 
 .. figure:: http://mpfaraujo.com/images/leste_alagoano.png
+   :width: 400pt
    :align: center
 
    Segmento orientado representando a velocidade do vento na mesoregião do Leste Alagoano.
