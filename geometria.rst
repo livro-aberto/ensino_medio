@@ -111,6 +111,9 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
 Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
 Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades do vento em um mesmo instante.
 
+
+.. _fig-alagoas-vel-do-vento:
+
 .. figure:: http://mpfaraujo.com/images/alagoas1vel.png
    :align: center
 
@@ -145,7 +148,7 @@ Os segmentos orientados resumem de forma bastante eficiente as ideias envolvidas
 Na figura a seguir, utilizamos um segmento oeirntado para representar a velocidade do vento na mesoregião do Leste Alagoano.
 
 
-.. _fig-leste alagoano:
+.. _fig-leste-alagoano:
 
 .. figure:: http://mpfaraujo.com/images/leste_alagoano.png
    :width: 400pt
@@ -154,6 +157,21 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
    Segmento orientado representando a velocidade do vento na mesoregião do Leste Alagoano.
 
 
+.. _ativ-segmento-orientado1:
+
+Atividade: Segmento Orientado
+------------------------------
+
+#. Segundo as informações meteorológicas sobre as mesoregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no moento da consulta.
+
+.. _fig-sertao-alagoano:
+
+.. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
+   :width: 800px
+   :align: center
+
+   
+#. Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa do Agreste Alagoano?
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
