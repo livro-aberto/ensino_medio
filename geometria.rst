@@ -145,6 +145,10 @@ Usaremos um *segmento orientado* para representar a informação da velocidade d
 
 Os segmentos orientados resumem de forma bastante eficiente as ideias envolvidas no conceito de vetor. O comprimento do segmento `AB` é uma grandeza escalar que representa o *módulo* do vetor. A direção da reta `AB` representa a direção do vetor. Por fim, o sentido escolhido, de `A` para `B` ou de `B` para `A`, determina um sentido na reta `AB` que representa o sentido do vetor.
 
+.. admonition:: Definição 
+
+   É comum relacionarmos as notações `\overrightarrow{AB}` e `\overrightarrow{BA}` escrevendo `\overrightarrow{BA}=-\overrightarrow{AB}`. Esses segmentos orientados representam **vetores simétricos**, o que significa dizer que os vetores representados têm mesmo módulo, mesma direção, mas sentidos opostos.
+   
 Na figura a seguir, utilizamos um segmento oeirntado para representar a velocidade do vento na mesoregião do Leste Alagoano.
 
 
