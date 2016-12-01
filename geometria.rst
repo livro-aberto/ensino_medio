@@ -166,7 +166,7 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
-a) Segundo as informações meteorológicas sobre as mesoregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no moento da consulta.
+a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
 
 .. _fig-sertao-alagoano:
 
@@ -175,7 +175,7 @@ a) Segundo as informações meteorológicas sobre as mesoregiões de Alagoas apr
    :align: center
 
    
-b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa do Agreste Alagoano?
+b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano?
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
