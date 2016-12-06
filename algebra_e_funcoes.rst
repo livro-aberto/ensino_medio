@@ -67,8 +67,8 @@ As chuvas são a principal fonte de água para os reservatórios que abastecem a
 O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
 
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=cantareira_chuva.png
-   :width: 600px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1480674814&w=500&h=174&tok=e88a5d&media=cantareira_chuva.png
+   :width: 750px
    :align: center
 
    disponível em: http://www.nivelaguasaopaulo.com/cantareira
@@ -148,7 +148,15 @@ Pode-se perceber, a partir da atividade anterior, que a natureza das relações 
 
 De um modo mais geral, dados dois conjuntos quaisquer não vazios `A` e `B`, podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
    
+
+.. admonition:: Para o professor
+
+   Caro professor, a seguir apresentamos a definição de função. Ela envolve diversos elementos e trás consigo uma notação. É importante que o estudante se acostume com as definições, notações e a linguagem própria da matemática. Pensamos ser de fundamental importância conduzir o estudante  a compreender que:
    
+   * Cada elemento do domínio precisa ter uma imagem;
+   * Não pode haver dúvida na determinação da imagem de cada um dos elementos do domínio;
+   
+   Nesse momento sugerimos que sejam apresentados e discutidos alguns exemplos simples, como o da função que relacionada cada estudante presente na sala com a sua altura, cada veículo da cidade com sua placa, cada pessoa com seu tipo sanguíneo, etc. Para cada exemplo dado procure chamar atenção para os conjuntos domínio e contradomínio associados.
 
 .. admonition:: Definição 
 
@@ -162,9 +170,6 @@ De um modo mais geral, dados dois conjuntos quaisquer não vazios `A` e `B`, pod
 Perceba que na definição está implícito que todo elemento `a\in A` precisa ter uma imagem `f(a)\in B`, sem haver ambiguidade na determinação desta imagem. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elemntos, por exemplo, a relação que associa cada pessoa ao seu número de telefone é ambígua, pois nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone, sendo impossível determinar, de maneira única, uma imagem para cada pessoa.
 
 Por outro lado, nem todo elemento `b\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento b∈B ser imagem de elementos distintos em `A`, ou seja, `b=f(a_1 )=f(a_2)` com `a_1\neq a_2`.
-
-
-
 
 É função?
 ---------
@@ -250,7 +255,8 @@ Considere a sequência de números ilustrada acima. Ela é conhecida como a sequ
 
 
 Rola o dado
----------
+-----------
+.. _dado:
 
 Um dado cúbico com as faces numeradas de 1 a 6, é lançado 10 vezes e os 5 primeiros resultados são anotados em uma tabela.
 
@@ -270,7 +276,7 @@ b) Determine, se possível, o 6º, o 7º e o 8º resultados dos lançamentos.
 
 c) É possível obter uma regra geral que permita encontrar o resultado de qualquer lançamento? Explique.
  
-!!!!!!!!!!!!!Parágrafo para amarrar!!!!!!!!!!!
+O experimento da atividade acima se caracteriza pelo fato de que o resultado de cada lançamento não é previsível. Fenômenos como este são chamados aleatórios e estão em oposição àqueles chamados determinísticos. Outros exemplos de experimentos aleatórios são: lançamento de uma moeada, previsão do tempo, determinação da vida útil de um componente eletrônico, produção agrícola de uma determinada espécie. 
 
 .. admonition:: Fenômenos Determinísticos 
 
@@ -280,7 +286,9 @@ c) É possível obter uma regra geral que permita encontrar o resultado de qualq
 
 	(usar a mesma descrição utilizada no eixo de Estatística e Probabilidade)
 
+.. admonition:: Observação
 
+	Colocar uma atividade para que o estudante possa classificar alguns experimentos entre aleatórios e determinísticos.
 
 Desafio
 ---------
@@ -302,6 +310,10 @@ Vimos que para que uma relação seja uma função não pode haver:
 	`(2)` Elementos no domínio sem imagem;
 
 Identifique em cada uma das relações abaixo qual(ou quais) dos itens acima fazem com que elas deixem de ser função.
+
+.. admonition:: Observação
+
+	Poderíamos resolver o item a) como modelo para o estudante.
 
 a) Seja P o conjunto de todas as pessoas e considere a relação de P em P, que a cada pessoa associa o seu irmão.
 b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
