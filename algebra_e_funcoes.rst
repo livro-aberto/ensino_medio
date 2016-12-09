@@ -19,6 +19,33 @@ Funções
    
    Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis.
     
+.. note::
+   **Roteiro do Capítulo**
+   
+   1) Texto de apresentação motivando o tópico de função com situações do cotidiano;
+   2) Desenvolver a noção de função por meio de atividades que levem o estudante a perceber a generalidade do conceito. (Exploração)
+   3) Definir função chamando atenção para a notação e os diferentes elementos envolvidos na definição. Elaborar orientação para o professor sobre a forma de apresentação dessa definição. (Organização das ideias) **Orientação para o professor:** Na matemática uma abstração é uma idéia que foi generalizada a partir de outro conceito, de modo que é menos dependente de objetos do mundo real e mais próxima de uma construção matemática.
+   4) Atividades explorando a definição. (É ou não é função?)
+   
+   *Orientações geriais para o Capítulo*
+   
+   1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
+   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar o processo que transformou cada entrada na sua respectiva saída. 
+   3) **Orientação para o professor:** Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   
+   **Atenção para as armadilhas**
+   
+   * "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [1], página 14.
+
+   * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
+   
+   **Referências:**
+   
+   [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
+   
+   [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
+   
+
 
 Apresentação
 ============
