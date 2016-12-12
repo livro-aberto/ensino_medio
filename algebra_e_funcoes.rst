@@ -39,12 +39,17 @@ Funções
 
    * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
    
+   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver [3]
+   
    **Referências:**
    
    [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
    
    [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
    
+   [3]  Van Dooren, W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L. (2005). Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, 23, 57 –86. 
+   
+   [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
 
 
 Apresentação
