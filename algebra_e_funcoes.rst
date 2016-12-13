@@ -22,16 +22,36 @@ Funções
 .. note::
    **Roteiro do Capítulo**
    
-   1) Texto de apresentação motivando o tópico de função com situações do cotidiano;
-   2) Desenvolver a noção de função por meio de atividades que levem o estudante a perceber a generalidade do conceito. (Exploração)
-   3) Definir função chamando atenção para a notação e os diferentes elementos envolvidos na definição. Elaborar orientação para o professor sobre a forma de apresentação dessa definição. (Organização das ideias) **Orientação para o professor:** Na matemática uma abstração é uma idéia que foi generalizada a partir de outro conceito, de modo que é menos dependente de objetos do mundo real e mais próxima de uma construção matemática.
-   4) Atividades explorando a definição. (É ou não é função?)
+   1) Texto de apresentação motivando o tópico de função com situações do cotidiano.
    
-   *Orientações geriais para o Capítulo*
+   2) Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
+   
+   3) As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].
+   
+   4) Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
+   
+   5) Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
+   
+   6) Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
+   
+   7) Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task A, figura 1 da referência [5].
+   
+   8) Definição formal de função crescente e decrescente.
+   
+   9) Exercícios.
+   
+   10) Aprofundamento.
+   
+   **Orientações para o professor**
+   
+   1) Na matemática uma abstração é uma ideia que foi generalizada a partir de outro conceito, de modo que é menos dependente de objetos do mundo real e mais próxima de uma construção matemática.
+   
+   2) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   
+   **Orientações gerais para o Capítulo**
    
    1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
-   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar o processo que transformou cada entrada na sua respectiva saída. 
-   3) **Orientação para o professor:** Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar o processo que transformou cada entrada na sua respectiva saída. (Processo) 
    
    **Atenção para as armadilhas**
    
@@ -39,12 +59,20 @@ Funções
 
    * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
    
+   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver [3]
+   
    **Referências:**
    
    [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
    
    [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
    
+   [3]  Van Dooren, W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L. (2005). Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, 23, 57 –86. 
+   
+   [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
+   
+   [5] Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
+
 
 
 Apresentação
@@ -178,7 +206,7 @@ De um modo mais geral, dados dois conjuntos quaisquer não vazios `A` e `B`, pod
 
 .. admonition:: Para o professor
 
-   Caro professor, a seguir apresentamos a definição de função. Ela envolve diversos elementos e trás consigo uma notação. É importante que o estudante se acostume com as definições, notações e a linguagem própria da matemática. Pensamos ser de fundamental importância conduzir o estudante  a compreender que:
+   Caro professor, a seguir apresentamos a definição de função. Ela envolve diversos elementos e traz consigo uma notação. É importante que o estudante se acostume com as definições, notações e a linguagem própria da matemática. Pensamos ser de fundamental importância conduzir o estudante  a compreender que:
    
    * Cada elemento do domínio precisa ter uma imagem;
    * Não pode haver dúvida na determinação da imagem de cada um dos elementos do domínio;
@@ -526,15 +554,54 @@ Atividade para identificar as coordenadas de pontos no plano cartesiano
 Função Afim
 ===========
 
+.. admonition:: Objetivos Específicos 
+
+	(EM11MT07) Reconhecer função afim e suas representações algébrica e gráfica, identificar o modelo de variação e a taxa de variação, incluindo os casos em que a variação é proporcional (linear), e utilizar essas noções para representar e resolver problemas como os de Movimento Uniforme, entre outros
+
+	(EM11MT08) Reconhecer progressões aritméticas como sequências numéricas de variação linear, associá-las a funções afins de domínios discretos e utilizá-las para resolver problemas.
+    
+	(EM11MT09) Resolver e elaborar problemas que possam ser representados por inequações polinomiais de 1º grau, associando o conjunto solução a pontos da reta numérica, contribuindo para desenvolver a noção de intervalo, entre outros.
+
+
 .. admonition:: Pré-requisitos 
 
+	(EF05MT20) Resolver problemas que envolvam variação de proporcionalidade direta entre duas grandezas para associar a quantidade de um produto ao valor a pagar, ampliar ou reduzir ingredientes de receitas, escalas em mapas, entre outros.
+    
+	(EF06MT17) Resolver e elaborar problemas envolvendo porcentagens (1%, 5%, 15%, ... até 100%), a partir da ideia de proporcionalidade, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos da Educação Financeira, entre outros.
+
+	(EF07MT20) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e inversa entre duas grandezas em contextos significativos.
+
 	(EF07MT21) Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax+b=0` , iniciando a compreensão da linguagem algébrica.
-
+    
 	(EF09MT17) Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.
+    
+.. admonition:: Desdobramentos imediatos
 
+	(EM11MT02) Reconhecer grandezas formadas pela relação entre
+duas outras grandezas - velocidade (m/s; km/h), densidade (g/cm`^3`; pessoas/km`^2`) e energia (Kwh), entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
+
+	(EM22CN02) Analisar dados sobre quantidades de reagentes e produtos envolvidos nas transformações químicas, reconhecendo a importância da conservação da massa e da existência de proporcionalidade entre massas nos sistemas produtivos
+     
+.. note:: **Roteiro**
+
+   1) Motivar o conceito de função linear revisitando a noção de proporcionalidade.
+   
+   2) Destaque para a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
+
+
+   **Referências**
+   
+   [1] Stacey, K. (1989). Finding and using patterns in linear generalizing problems. Educational Studies in Mathematics, 20, 147–164.
+
+   [2] Orton, J., Orton, A. & Roper, T. (1999). Pictorial and practical contexts and the perception of pattern. In A. Orton (Ed.), Patterns in the teaching and learning of mathematics. London, England: Cassell.
+   
 =================
 Função Quadrática
 =================
+
+.. admonition:: Objetivos Específicos
+
+	(EM12MT09) Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
 
 .. admonition:: Pré-requisitos 
 
@@ -542,6 +609,7 @@ Função Quadrática
 
 	(EF09MT18) Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
 
+.. note:: **Roteiro**
 
 
 Atividade
