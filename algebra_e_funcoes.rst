@@ -235,7 +235,7 @@ As chuvas são a principal fonte de água para os reservatórios que abastecem a
 O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
 
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=cantareira_chuva.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cantareira_chuva.png
    :width: 900px
    :align: center
 
@@ -306,7 +306,7 @@ Colorindo o mapa
    * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=maps.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
      :width: 800px
      :align: center
    
