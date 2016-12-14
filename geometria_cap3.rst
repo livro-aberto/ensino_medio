@@ -45,6 +45,39 @@ Teorema de Tales, semelhança e aplicações
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
+
+.. admonition:: Roteiro da aula de Teorema de Tales
+   
+   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. 
+   
+   .. _fig-barrage_a_mao:
+
+   .. figure:: https://dl.dropboxusercontent.com/u/2371346/barragem.jpg
+      :width: 400px
+      :align: center
+
+      A ser subsituída
+   
+   
+   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelos para que visualize e experimente de maneira livre [Visualização].   
+   
+   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  
+   
+   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada. Dependendo dos exemplos apresentados nas atividades, pode-se apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas.  
+   
+   #. Atividades (ou observação) que levem o estudante a entender que se dois triângulos possuem mesma altura (respectivamente, mesma base), então a razão entre as áreas é a razão entre as bases (respectivamente, razão entre as alturas). Como este não é um objetivo da lição, o resultado pode ser apresentado aos estudantes, mas é fundamental que para eles esteja claro a validade do resultado ao final da atividade (ou observação).   
+   
+   #. Provar o terorema de tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
+   
+   #. Atividade que leve o estudante a generalizar o teorema de tales acima para a versão usual.
+   
+   #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
+   
+   #. Construções com régua e compasso e a divisão de segmentos em partes iguais.
+   
+   #. Atividades contextualizadas.
+   
+   
 ============
 Teorema de Tales
 ============
@@ -65,6 +98,25 @@ Mostraremos que se `BC \parallel PQ`, então
    \dfrac{AP}{PB} = \dfrac{AQ}{QC}.
 
 Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`, `AQ` e `QC`, que podem ser medidas mais facilmente.
+
+
+.. _ativ-descobrindo_tales:
+
+Atividade: Visualização e análise de padrões
+------------------------------
+
+(tosco, eu sei. Vamos arrumar ainda)
+Material necessário: folha pautada e régua graduada.
+
+Para cada item abaixo trace na folha pautada três retas como descrito nos itens a seguir:
+
+#. Cada uma das retas em três linhas consecutivas.
+
+#. Trace uma reta em uma linha, pule uma linha e trace outra reta, então trace a terceira reta na linha logo abaixo.
+
+#. Trace uma reta em uma linha, salte uma linha e trace uma reta, então salte duas linhas e trace outra reta.
+
+Para cada um dos itens acima trace com lápis 4 retas bem fininhas intersectando as retas 3 retas desenhadas. Usando a régua tente obter uma relação entre as distâncias `AB` e `BC` em cada um dos itens.
 
 Teorema de Tales
 ------------
