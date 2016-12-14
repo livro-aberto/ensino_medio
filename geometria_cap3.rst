@@ -105,18 +105,29 @@ Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`,
 Atividade: Visualização e análise de padrões
 ------------------------------
 
-(tosco, eu sei. Vamos arrumar ainda)
-Material necessário: folha pautada e régua graduada.
+Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
 
-Para cada item abaixo trace na folha pautada três retas como descrito nos itens a seguir:
+#. Trace uma reta $u$ transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
 
-#. Cada uma das retas em três linhas consecutivas.
+#. Calcule as distâncias `\overline{AB}` e `\overline{BC}` na reta traçada por você. Use as retas traçadas por 3 de seus colegas para preencher a tabela a seguir.
 
-#. Trace uma reta em uma linha, pule uma linha e trace outra reta, então trace a terceira reta na linha logo abaixo.
+   .. table:: 
+      :widths: 1 1 1 1
+      :column-alignment: center
 
-#. Trace uma reta em uma linha, salte uma linha e trace uma reta, então salte duas linhas e trace outra reta.
+      +-----------------+-----------+-----------+-----------+
+      |  Figura ____    | medição 1 | medição 2 | medição 3 |
+      +=================+===========+===========+===========+
+      | `\overline{AB}` |           |           |           |
+      +-----------------+-----------+-----------+-----------+
+      | `\overline{BC}` |           |           |           |
+      +-----------------+-----------+-----------+-----------+
 
-Para cada um dos itens acima trace com lápis 4 retas bem fininhas intersectando as retas 3 retas desenhadas. Usando a régua tente obter uma relação entre as distâncias `AB` e `BC` em cada um dos itens.
+#. Analisando cada uma das tabelas preenchidas obtenha uma relação entre `\overline{AB}` e `\overline{BC}` para cada um dos cenários (I), (II) e (III), que sirva para todas as medições. 
+
+#. Complete a sentença a seguir a seguir de modo a resumir uma conclusão dos itens anteriores.
+
+"Quando três retas paralelas são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________ da reta tomada." (melhorar ou repensar)
 
 Teorema de Tales
 ------------
