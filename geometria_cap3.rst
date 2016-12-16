@@ -107,6 +107,14 @@ Atividade: Visualização e análise de padrões
 
 Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
 
+.. _fig-tales_tres_paralelas:
+
+.. figure:: https://dl.dropboxusercontent.com/u/2371346/tres_paralelas.jpg
+   :width: 450px
+   :align: center
+
+   Refazer em tikz
+
 #. Trace uma reta $u$ transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
 
 #. Calcule as distâncias `\overline{AB}` e `\overline{BC}` na reta traçada por você. Use as retas traçadas por 3 de seus colegas para preencher a tabela a seguir.
