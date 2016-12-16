@@ -46,6 +46,10 @@ Teorema de Tales, semelhança e aplicações
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
 
+****************
+Teorema de Tales
+****************
+
 .. admonition:: Roteiro da aula de Teorema de Tales
    
    Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. 
@@ -59,29 +63,35 @@ Teorema de Tales, semelhança e aplicações
       A ser subsituída
    
    
-   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelos para que visualize e experimente de maneira livre [Visualização].   
+   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelas para que visualize e experimente de maneira livre [Visualização].   
    
    #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  
+      
+   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" por enquanto. 
    
-   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada. Dependendo dos exemplos apresentados nas atividades, pode-se apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas.  
+   # Apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas. Talvez o ideal é que o estudante estabeleça a igualdade dada no teorema para cada uma das figuras apresentadas.
+   
+   .. _fig-variedade_tales
+
+   .. figure:: https://dl.dropboxusercontent.com/u/2371346/IMG_20161216_191600865.jpg
+      :width: 400px
+      :align: center
+
+      refazer em tikz
    
    #. Atividades (ou observação) que levem o estudante a entender que se dois triângulos possuem mesma altura (respectivamente, mesma base), então a razão entre as áreas é a razão entre as bases (respectivamente, razão entre as alturas). Como este não é um objetivo da lição, o resultado pode ser apresentado aos estudantes, mas é fundamental que para eles esteja claro a validade do resultado ao final da atividade (ou observação).   
    
-   #. Provar o terorema de tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
+   #. Provar o Teorema de Tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
    
-   #. Atividade que leve o estudante a generalizar o teorema de tales acima para a versão usual.
+   #. Atividade que leve o estudante a generalizar o Teorema de Tales acima para a versão usual.
    
    #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
    
-   #. Construções com régua e compasso e a divisão de segmentos em partes iguais.
+   #. Atividade com régua e compasso ou com o Geogebra para fazer a construção com régua e compasso da divisão de segmentos em partes iguais.
    
-   #. Atividades contextualizadas.
+   #. Atividades contextualizadas (ruas paralelas e ....).
    
    
-============
-Teorema de Tales
-============
-
 Motivação do Teorema de Tales
 
 .. note:: Inserir imagem característica do desastre abaixo relatado.
@@ -145,9 +155,12 @@ Teorema de Tales
 
 
 
-=======
+********
 Semelhança
-=======
+********
+
+.. admonition:: Roteiro da aula de semelhanças
+
 
 Atividade 1 - Pantógrafo
 -----------
