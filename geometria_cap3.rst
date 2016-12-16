@@ -1,17 +1,16 @@
-********
-Teorema de Tales, semelhança e aplicações
-********
+
+****************
+Teorema de Tales
+****************
 
 .. admonition:: Objetivos específicos
 
    BNCC (MTMT1MOA003) Compreender e aplicar o teorema de Tales na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
    
-   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
-
 .. admonition:: Pré requisito
-
-	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
-
+   
+   buscar no Ensino Fundamental
+	
     
 .. admonition:: Desdobramentos Imediatos
 
@@ -21,34 +20,9 @@ Teorema de Tales, semelhança e aplicações
 .. note::
    * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
 
-   * Semelhança. Definimos para polígonos. Fazemos uma prova de caso de semelhança para que haja uma conexão entre o Teorema de Tales e as semelhanças de triângulos. Deixamos um caso como atividade para os interessados e outro para todos os estudantes.
-
-   * Importante lembrar que na base está "uso de semelhança"...
-
-    Neste vídeo o professor realiza o experimento de medir a altura do mastro da bandeira da escola com os estudantes e surgem diversas oportunidades de aprendizado sobre outros temas em que os estudantes tinham dificuldades no uso da matemática. Ele mostra toda a dinâmica da atividade. Esta pode ser uma atividade de aplicação do conteúdo de semelhanças.
-
-    https://www.teachingchannel.org/videos/similar-triangles-geometry-lesson-nea
-
-    * Acho que aqui vale a pena usar exemplos diferentes de polígonos e também tridimensionais.
-
-    * Este site possui diversos exemplos de atividades eletrônicas com semelhanças de triângulos.
-
-    https://education.ti.com/en/timathnspired/us/geometry/similarity-and-proportion
-
-    * Podemos retomar as coordenadas de vetores em atividades em que são dadas as coordenadas de um triângulo no plano e aplica-se uma homotetia (talvez seja melhor não falar esse nome) para obter uma figura semelhante. Podem ser feitos casos simples no papel e casos interessantes no Geogebra com uma barra em que o estudante pode escolher a razão da homotetia (inclusive com sinal negativo) para ver a figura se transformando em outra semelhante. 
-
-    "É preciso ficar claro para o aluno como e em que circunstâncias são produzidas figuras semelhantes. Para tanto, é preciso compreender a ideia de razão de semelhança (a razão k que existe entre dois de seus lados homólogos.), por meio de ampliações e reduções que podem ser feitas numa figura pela transformação conhecida como homotetia". (PCN, 1998, p. 195)
-
-   "O conceito de semelhança está presente no estudo de escalas, plantas, mapas, ampliações de fotos, fotocópias como também quando se verifica, por exemplo, se as medidas das partes do corpo humano se mantêm proporcionais entre um representante jovem e um representante adulto. (PCN 1998 p.125)."
-
-   * Em atividades pode-se explorar o fato de que a razão entre os perímetros de polígonos semelhantes é a razão de semelhança e que a razão entre as áreas de figuras semelhantes é a razão de semelhança ao quadrado.
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
-
-****************
-Teorema de Tales
-****************
 
 .. admonition:: Roteiro da aula de Teorema de Tales
    
@@ -159,7 +133,45 @@ Teorema de Tales
 Semelhança
 ********
 
+.. admonition:: Objetivos específicos
+
+   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
+
+.. admonition:: Pré requisito
+
+	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
+  
+.. admonition:: Desdobramentos Imediatos
+
+	BNCC (MTMT1MOA005) Compreender e aplicar as razões trigonométricas no triângulo retângulo e as relações trigonométricas em triângulos quaisquer.
+
+.. note::
+
+   * Semelhança. Definimos para polígonos. Fazemos uma prova de caso de semelhança para que haja uma conexão entre o Teorema de Tales e as semelhanças de triângulos. Deixamos um caso como atividade para os interessados e outro para todos os estudantes.
+
+   * Importante lembrar que na base está "uso de semelhança"...
+
+    Neste vídeo o professor realiza o experimento de medir a altura do mastro da bandeira da escola com os estudantes e surgem diversas oportunidades de aprendizado sobre outros temas em que os estudantes tinham dificuldades no uso da matemática. Ele mostra toda a dinâmica da atividade. Esta pode ser uma atividade de aplicação do conteúdo de semelhanças.
+
+    https://www.teachingchannel.org/videos/similar-triangles-geometry-lesson-nea
+
+    * Acho que aqui vale a pena usar exemplos diferentes de polígonos e também tridimensionais.
+
+    * Este site possui diversos exemplos de atividades eletrônicas com semelhanças de triângulos.
+
+    https://education.ti.com/en/timathnspired/us/geometry/similarity-and-proportion
+
+    * Podemos retomar as coordenadas de vetores em atividades em que são dadas as coordenadas de um triângulo no plano e aplica-se uma homotetia (talvez seja melhor não falar esse nome) para obter uma figura semelhante. Podem ser feitos casos simples no papel e casos interessantes no Geogebra com uma barra em que o estudante pode escolher a razão da homotetia (inclusive com sinal negativo) para ver a figura se transformando em outra semelhante. 
+
+    "É preciso ficar claro para o aluno como e em que circunstâncias são produzidas figuras semelhantes. Para tanto, é preciso compreender a ideia de razão de semelhança (a razão k que existe entre dois de seus lados homólogos.), por meio de ampliações e reduções que podem ser feitas numa figura pela transformação conhecida como homotetia". (PCN, 1998, p. 195)
+
+   "O conceito de semelhança está presente no estudo de escalas, plantas, mapas, ampliações de fotos, fotocópias como também quando se verifica, por exemplo, se as medidas das partes do corpo humano se mantêm proporcionais entre um representante jovem e um representante adulto. (PCN 1998 p.125)."
+
+   * Em atividades pode-se explorar o fato de que a razão entre os perímetros de polígonos semelhantes é a razão de semelhança e que a razão entre as áreas de figuras semelhantes é a razão de semelhança ao quadrado.
+    
 .. admonition:: Roteiro da aula de semelhanças
+   
+   a ser construído.
 
 
 Atividade 1 - Pantógrafo
