@@ -608,23 +608,39 @@ Função Afim
     
 .. admonition:: Desdobramentos imediatos
 
-	**(EM11MT02)** Reconhecer grandezas formadas pela relação entre
-duas outras grandezas - velocidade (m/s; km/h), densidade (g/cm`^3`; pessoas/km`^2`) e energia (Kwh), entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
+	**(EM11MT02)** Reconhecer grandezas formadas pela relação entre duas outras grandezas - velocidade (m/s; km/h), densidade (g/cm`^3`; pessoas/km`^2`) e energia (Kwh), entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
 
 	**(EM22CN02)** Analisar dados sobre quantidades de reagentes e produtos envolvidos nas transformações químicas, reconhecendo a importância da conservação da massa e da existência de proporcionalidade entre massas nos sistemas produtivos
      
 .. note:: **Roteiro**
 
-   1) Motivar o conceito de função linear revisitando a noção de proporcionalidade.
+   1) Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
    
-   2) Destaque para a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
-
+   2) Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade. Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança.*
+   
+   3) Apresentar função afim.
+   
+      * Mostrar que para obter a expressão algébrica de uma função afim é suficiente conhecer seus valores em dois pontos.
+      * Mostrar que: (i) `f(x)=ax+b` é crescente se, e somente se, a taxa de variação `a` é positiva. (ii) `f(x)` é decrescente se, e somente se, a taxa de variação `a` é negativa.
+   
+   4) Mostrar que o gráfico cartesiano de uma função afim é uma reta.
+   
+   5) Atividade mostrando a passagem de linear para afim.
+   
+   6) Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
+   
+   7) Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
 
    **Referências**
    
    [1] Stacey, K. (1989). Finding and using patterns in linear generalizing problems. Educational Studies in Mathematics, 20, 147–164.
 
    [2] Orton, J., Orton, A. & Roper, T. (1999). Pictorial and practical contexts and the perception of pattern. In A. Orton (Ed.), Patterns in the teaching and learning of mathematics. London, England: Cassell.
+   
+   [3] Azevedo, Ricardo Santos (2104). Resolução de problemas no ensino de função afim, TCC PROFMAT-IMPA.
+   
+   [4] Lima, E. A matemática do ensino médio – Vol. 1,  9a ed. Coleção do Professor de Matemática. Sociedade Brasileira de Matemática, Rio de Janeiro, 2006;
+
    
 =================
 Função Quadrática
