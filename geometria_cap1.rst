@@ -1,5 +1,5 @@
 ***********
-A Representação algébrica de vetores no plano
+Representação algébrica de vetores no plano
 ***********
 
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
