@@ -1,17 +1,15 @@
-********
-Teorema de Tales, semelhança e aplicações
-********
+****************
+Teorema de Tales
+****************
 
 .. admonition:: Objetivos específicos
 
    BNCC (MTMT1MOA003) Compreender e aplicar o teorema de Tales na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
    
-   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
-
 .. admonition:: Pré requisito
-
-	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
-
+   
+   buscar no Ensino Fundamental
+	
     
 .. admonition:: Desdobramentos Imediatos
 
@@ -20,6 +18,133 @@ Teorema de Tales, semelhança e aplicações
 
 .. note::
    * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
+
+    
+    Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
+
+
+.. admonition:: Roteiro da aula de Teorema de Tales
+   
+   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. 
+   
+   .. _fig-barrage_a_mao:
+
+   .. figure:: https://dl.dropboxusercontent.com/u/2371346/barragem.jpg
+      :width: 400px
+      :align: center
+
+      A ser subsituída
+   
+   
+   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelas para que visualize e experimente de maneira livre [Visualização].   
+   
+   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  
+      
+   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" por enquanto. 
+   
+   # Apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas. Talvez o ideal é que o estudante estabeleça a igualdade dada no teorema para cada uma das figuras apresentadas.
+   
+   .. _fig-variedade_tales
+
+   .. figure:: https://dl.dropboxusercontent.com/u/2371346/IMG_20161216_191600865.jpg
+      :width: 400px
+      :align: center
+
+      refazer em tikz
+   
+   #. Atividades (ou observação) que levem o estudante a entender que se dois triângulos possuem mesma altura (respectivamente, mesma base), então a razão entre as áreas é a razão entre as bases (respectivamente, razão entre as alturas). Como este não é um objetivo da lição, o resultado pode ser apresentado aos estudantes, mas é fundamental que para eles esteja claro a validade do resultado ao final da atividade (ou observação).   
+   
+   #. Provar o Teorema de Tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
+   
+   #. Atividade que leve o estudante a generalizar o Teorema de Tales acima para a versão usual.
+   
+   #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
+   
+   #. Atividade com régua e compasso ou com o Geogebra para fazer a construção com régua e compasso da divisão de segmentos em partes iguais.
+   
+   #. Atividades contextualizadas (ruas paralelas e ....).
+   
+   
+Motivação do Teorema de Tales
+
+.. note:: Inserir imagem característica do desastre abaixo relatado.
+
+No dia 5 de novembro de 2015, a barragem de Fundão, na cidade mineira de Mariana, se rompeu deixando centenas de pessoas desabrigadas e enchendo o Rio Doce e de rejeitos de mineração causando o maior desastre sócioambiental da história brasileira. A figura a seguir apresenta um esquema de uma barragem (melhorar e citar fonte desta história). 
+
+
+A seguir apresentamos um esquema simplificado de uma barragem. A força que o material represado faz sobre a barragem depende da área de contato deste material com a barragem, representado pelo segmento `PB`. Como se trata de uma região submersa, esta medição pode ser de difícil obtenção. 
+
+Mostraremos que se `BC \parallel PQ`, então 
+
+.. math::
+
+   \dfrac{AP}{PB} = \dfrac{AQ}{QC}.
+
+Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`, `AQ` e `QC`, que podem ser medidas mais facilmente.
+
+
+.. _ativ-descobrindo_tales:
+
+Atividade: Visualização e análise de padrões
+------------------------------
+
+Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
+
+.. _fig-tales_tres_paralelas:
+
+.. figure:: https://dl.dropboxusercontent.com/u/2371346/tres_paralelas.jpg
+   :width: 450px
+   :align: center
+
+   Refazer em tikz
+
+#. Trace uma reta $u$ transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
+
+#. Calcule as distâncias `\overline{AB}` e `\overline{BC}` na reta traçada por você. Use as retas traçadas por 3 de seus colegas para preencher a tabela a seguir.
+
+   .. table:: 
+      :widths: 1 1 1 1
+      :column-alignment: center
+
+      +-----------------+-----------+-----------+-----------+
+      |  Figura ____    | medição 1 | medição 2 | medição 3 |
+      +=================+===========+===========+===========+
+      | `\overline{AB}` |           |           |           |
+      +-----------------+-----------+-----------+-----------+
+      | `\overline{BC}` |           |           |           |
+      +-----------------+-----------+-----------+-----------+
+
+#. Analisando cada uma das tabelas preenchidas obtenha uma relação entre `\overline{AB}` e `\overline{BC}` para cada um dos cenários (I), (II) e (III), que sirva para todas as medições. 
+
+#. Complete a sentença a seguir a seguir de modo a resumir uma conclusão dos itens anteriores.
+
+"Quando três retas paralelas são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________ da reta tomada." (melhorar ou repensar)
+
+Teorema de Tales
+------------
+
+.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por área? Incluir também exemplos característicos.
+
+
+
+
+********
+Semelhança
+********
+
+.. admonition:: Objetivos específicos
+
+   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
+
+.. admonition:: Pré requisito
+
+	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
+  
+.. admonition:: Desdobramentos Imediatos
+
+	BNCC (MTMT1MOA005) Compreender e aplicar as razões trigonométricas no triângulo retângulo e as relações trigonométricas em triângulos quaisquer.
+
+.. note::
 
    * Semelhança. Definimos para polígonos. Fazemos uma prova de caso de semelhança para que haja uma conexão entre o Teorema de Tales e as semelhanças de triângulos. Deixamos um caso como atividade para os interessados e outro para todos os estudantes.
 
@@ -43,40 +168,10 @@ Teorema de Tales, semelhança e aplicações
 
    * Em atividades pode-se explorar o fato de que a razão entre os perímetros de polígonos semelhantes é a razão de semelhança e que a razão entre as áreas de figuras semelhantes é a razão de semelhança ao quadrado.
     
-    Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
+.. admonition:: Roteiro da aula de semelhanças
+   
+   a ser construído.
 
-============
-Teorema de Tales
-============
-
-Motivação do Teorema de Tales
-
-.. note:: Inserir imagem característica do desastre abaixo relatado.
-
-No dia 5 de novembro de 2015, a barragem de Fundão, na cidade mineira de Mariana, se rompeu deixando centenas de pessoas desabrigadas e enchendo o Rio Doce e de rejeitos de mineração causando o maior desastre sócioambiental da história brasileira. A figura a seguir apresenta um esquema de uma barragem (melhorar e citar fonte desta história). 
-
-
-A seguir apresentamos um esquema simplificado de uma barragem. A força que o material represado faz sobre a barragem depende da área de contato deste material com a barragem, representado pelo segmento `PB`. Como se trata de uma região submersa, esta medição pode ser de difícil obtenção. 
-
-Mostraremos que se `BC \parallel PQ`, então 
-
-.. math::
-
-   \dfrac{AP}{PB} = \dfrac{AQ}{QC}.
-
-Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`, `AQ` e `QC`, que podem ser medidas mais facilmente.
-
-Teorema de Tales
-------------
-
-.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por área? Incluir também exemplos característicos.
-
-
-
-
-=======
-Semelhança
-=======
 
 Atividade 1 - Pantógrafo
 -----------
