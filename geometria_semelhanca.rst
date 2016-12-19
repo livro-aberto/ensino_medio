@@ -3,16 +3,18 @@ Semelhança
 ********
 
 .. admonition:: Objetivos específicos
-
-   BNCC (MTMT1MOA004) Utilizar a semelhança de triângulos e o teorema de Pitágoras (exemplo: diagonais de prismas e da altura de pirâmides) para resolver e elaborar problemas.
+   
+   Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho. BNCC (EM12MT02)
 
 .. admonition:: Pré requisito
 
-	BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
+   BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
+    
+   Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais. BNCC (EM12MT01)
   
 .. admonition:: Desdobramentos Imediatos
 
-	BNCC (MTMT1MOA005) Compreender e aplicar as razões trigonométricas no triângulo retângulo e as relações trigonométricas em triângulos quaisquer.
+	Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras. BNCC (EM12MT03)
 
 .. note::
 
