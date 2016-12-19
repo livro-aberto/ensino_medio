@@ -4,7 +4,7 @@ Teorema de Tales
 
 .. admonition:: Objetivos específicos
 
-   BNCC (MTMT1MOA003) Compreender e aplicar o teorema de Tales na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
+   Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais. BNCC (EM12MT01) 
    
 .. admonition:: Pré requisito
    
@@ -13,8 +13,7 @@ Teorema de Tales
     
 .. admonition:: Desdobramentos Imediatos
 
-	BNCC (MTMT1MOA005) Compreender e aplicar as razões trigonométricas no triângulo retângulo e as relações trigonométricas em triângulos quaisquer.
-
+	Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho. BNCC (EM12MT02) 
 
 .. note::
    * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
