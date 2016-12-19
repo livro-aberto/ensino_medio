@@ -22,25 +22,34 @@ Funções
 .. note::
    **Roteiro do Capítulo**
    
-   1) Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
+   `1.` Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
    
-   2) Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
+   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
    
-   3) As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].
+   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].
    
-   4) Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
+   `4.` Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
    
-   5) Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
+   `5.` Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
    
-   6) Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
+   `6.` Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
    
-   7) Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task A, figura 1 da referência [5].
+   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [5].
    
-   8) Definição formal de função crescente e decrescente.
    
-   9) Exercícios.
+   .. _TaskC:
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=taskc.png
+      :width: 600px
+      :align: center
+
+      Task C, [5].
    
-   10) Aprofundamento.
+   `8.` Definição formal de função crescente e decrescente.
+   
+   `9.` Exercícios.
+   
+   `10.` Aprofundamento.
    
    **Orientações para o professor**
    
@@ -560,7 +569,7 @@ Gráfico
 As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, um gráfico pode causar maior impacto àqueles que o leem. 
 
 
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=infograficos.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=infograficos.png
    :width: 600px
    :align: center
 
@@ -614,22 +623,37 @@ Função Afim
      
 .. note:: **Roteiro**
 
-   1) Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
+   `1.` Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
    
-   2) Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade. Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança.*
+   `2.` Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=teorema_proporcionalidade.png
+      :width: 450px
+      :align: center
+   Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança.*
    
-   3) Apresentar função afim.
+   `3.` Apresentar função afim.
    
       * Mostrar que para obter a expressão algébrica de uma função afim é suficiente conhecer seus valores em dois pontos.
       * Mostrar que: (i) `f(x)=ax+b` é crescente se, e somente se, a taxa de variação `a` é positiva. (ii) `f(x)` é decrescente se, e somente se, a taxa de variação `a` é negativa.
    
-   4) Mostrar que o gráfico cartesiano de uma função afim é uma reta.
+   `4.` Mostrar que o gráfico cartesiano de uma função afim é uma reta.
    
-   5) Atividade mostrando a passagem de linear para afim.
+   `5.` Atividade mostrando a passagem de linear para afim.
    
-   6) Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=linear_afim.png
+      :width: 450px
+      :align: center
+   `6.` Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
    
-   7) Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
+   `7.` Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
+   
+   `8.` [Sugestão para um Aprofundamento]
+   
+   Chez un vigneron, on peut acheter du vin au litre. Dans ce cas, le vin est conditionné dans des cubitainers d’une capacité de 5 litres. Le vin est vendu 2,50 € le litre et un cubitainer est vendu 1,50 €.
+	1. Calculer le prix qu’un client devra payer pour 2 litres achetés, puis pour 5 litres et 7 litres. Expliquez brièvement vos calculs.
+	2. Exprimer le prix p(x) en fonction du volume x (exprimé en litres) de vin acheté, x étant compris entre 0 et 15.
+	3. Tracer la courbe représentative de la fonction p dans un repère orthogonal. On prendra 1 cm pour 1 litre en abscisses et 1 cm pour 2 € en ordonnées.
 
    **Referências**
    
