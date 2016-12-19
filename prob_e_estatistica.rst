@@ -8,54 +8,27 @@ Probabilidade e Estatística
    (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos nas pesquisas realizadas pelos estudantes, em termos de localização (centro) e dispersão (amplitude).
 
 
-.. admonition:: Pré-requisito
-
-   BNCC(EF07MT01) Associar 
-
-.. admonition:: Desdobramentos imediatos
-
-   BNCC (EM11CN01) Observar 
-
-   BNCC (EM11CN02) Atribuir 
-
-   BNCC (EM13MT02) Estabelecer 
-
 .. note::
    1) **Roteiro do capítulo**:
    Texto com o objetivo de despertar para a importância da estatística e da probabilidade no muundo contemporâneo. Exemplos: Netflix, Remédios, problema de Monty Hall, garantia estendida, teste cego etc.
    
      **1º ano**
-     Pesquisa já realizada – vamos contar
-     Criação do vocabulário (variabilidade, amplitude
-     Tipos de variáveis (qualitativa e quantitativa)
-     Repres. Gráfica (histograma, barras, boxplot?? - vídeo)
-     Amplitude
-     Medidas de TC e de dispersão (tenho dúvida se nesse momento ou  no próximo)
-     Introduzir probabilidade a partir dos dados coletados (probabilidade empírica)
-     **observações**
-     (coletar dados)
-     Levantamoento de dados na turma
-     Relacionar os conceitos de aleatoriedade e determinístico.
-     Proposta do Gladson
-     Pensar mais em probabilidade
-
-     **2º ano**
-     Relação das variáveis
-     Bivariada
-     (Dados secundários,pesquisas IBGE, armazem do ????, IPP)
-     Trazer dados de pesquisa já realizada.
-
-     **3º ano**
-     Inferência
-     regressão
-     Margem de erro
-     Tipo de amostragem 
-     AAS, AAE, AAG
+     Pesquisa já realizada – Apresentar a pesquisa PENSE para introduzir os conceitos referentes ao planejamento de uma pesquisa, a partir da construção de um instrumento de coleta de dados.
      
-   2) **Escrever para o professor** 
-   3) Atividade 1 - Envolver uma pesquisa já realizada com o objetivo de .....
-  
-  
+     Definir Tipos de variáveis (qualitativa e quantitativa). Importante conceito que geralmente é pouco explorado em livros didáticos (Cileda,2015) e que é a base para escolha correta dos tipos de gráficos e medidas que serão utilizadas na análise.
+     
+     A partir dos resultados obtidos na PENSE, apresentar as represetações Gráficas (histograma, barras, boxplot?? - vídeo)
+     
+     É importante explorar a visualização dos dados de uma maneira a construir oc conceitos das medidas de tendencia central e de dispersão que virão a seguir. 
+     
+     Medidas de TC e de dispersão - utilizar tecnologia para análise dos dados.
+     
+     Amostra X população: Mostrar como uma amostra é capaz de informar sobre a população. (atividade da bala)
+     Explorar o conceito de aleatório vs não aleatório.
+     
+     Introduzir probabilidade a partir dos dados coletados (probabilidade empírica)
+    
+
 
 .. admonition:: Referências
 
@@ -64,37 +37,42 @@ Probabilidade e Estatística
     IBGE:  http://vamoscontar.ibge.gov.br/atividades/ensino-medio.html
  
     UNICAMP: http://m3.ime.unicamp.br/recursos/1043
+    
+    Guidelines for Assessment and Instruction in Statistics Education (GAISE) 
+ College Report 2016.(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
   
   
   
 Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
-Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos.  
-
-DÚVIDA:
-Não é coincidência que o Netflix frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
+Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Não é coincidência que o Netflix (empresa que oferece filmes e séries pela internet) frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
 
-Neste capítulo será apresentada a etapa inicial de uma pesquisa. Para exemplificação, será usada a Pesquisa Nacional de Saúde do Escolar (PENSE), realizada em 2012, junto aos estudantes que cursavam o 9o ano do ensino fundamental do Brasil (http://www.ibge.gov.br/home/estatistica/populacao/pense/2012/default.shtm). Esta pesquisa tinha como objetivo principal coletar dados sobre diferentes aspectos de saúde da população adolescente brasileira, produzindo assim informações confiáveis para  orientação e  avaliação das políticas de saúde destinadas a esse importante contingente populacional. Nesta etapa, serão abordados os conteúdos sobre a construção de um instrumento de coleta de dados e elaboração de análises descritivas dos mesmos. Para isso, será utilizada a parte da pesquisa que dispõe sobre a percepção da imagem corporal que tem de de si mesmos os adolescentes.   
+Inicialmente será apresentada a etapa de planejamento de uma pesquisa. Para exemplificação, será usada a Pesquisa Nacional de Saúde do Escolar (PENSE), realizada em 2012, junto aos estudantes que cursavam o 9o ano do ensino fundamental do Brasil (http://www.ibge.gov.br/home/estatistica/populacao/pense/2012/default.shtm). Esta pesquisa teve como objetivo principal coletar dados sobre diferentes aspectos de saúde da população adolescente brasileira, produzindo assim informações confiáveis para  orientação e  avaliação das políticas de saúde destinadas a esse importante contingente populacional. Nesta etapa, serão abordados os conteúdos sobre a construção de um instrumento de coleta de dados e elaboração de análises descritivas dos mesmos. Para isso, será utilizada a parte da pesquisa que dispõe sobre a percepção da imagem corporal que tem de de si mesmos os adolescentes.   
 
 A seguir apresenta-se a parte do questionário da PENSE que fez perguntas específicas sobre imagem corporal. São perguntas que representam variáveis quantitativas e qualitativas. 
 
+
 .. admonition:: Exemplo 
 
-   B11. IMAGEM CORPORAL Agora responda o que você acha de sua própria imagem.
+  Bloco sobre Imagem Corporal da PENSE
+
+
+  ** Agora responda o que você acha de sua própria imagem.**
+  
+  
+ 1. Você considera sua imagem corporal como sendo algo: 
+    
+    □ Muito importante
    
- 01. Você considera sua imagem corporal como sendo algo: 
+    □ Importante
    
-   □ Muito importante
+    □ Pouco importante 
    
-   □ Importante
+    □ Sem importância
    
-   □ Pouco importante 
-   
-   □ Sem importância
-   
- 02. Como você se sente em relação ao seu corpo?
+ 2. Como você se sente em relação ao seu corpo?
    
    □ Muito satisfeito(a) 
    
@@ -106,19 +84,19 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
    
    □ Muito insatisfeito(a)
    
- 03. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder peso, sem acompanhamento médico? 
-   
+ 3. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder peso, sem acompanhamento médico? 
+    
    □ Sim □ Não
    
- 04. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para ganhar peso ou massa muscular sem acompanhamento médico?
+ 4. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para ganhar peso ou massa muscular sem acompanhamento médico?
   
   □ Sim □ Não
   
- 05. Qual é o seu peso? __ __ __ quilos □ Não sei
+ 5. Qual é o seu peso? __ __ __ quilos □ Não sei
  
- 06. Qual é a sua altura?  __ __ __  centímetros □ Não sei
+ 6. Qual é a sua altura?  __ __ __  centímetros □ Não sei
   
-  _______________________________________ 
+***** 
    
 Nas perguntas acima, observa-se parte do instrumento de coleta da PENSE contendo tanto perguntas fechadas (onde as respostas possíveis estão definidas no próprio instrumento de coleta, ex: perguntas de 1 à 4 do questionário), como também abertas ( aquelas onde não existe uma reposta pré definida, ex: questões 5 e 6). Cada pergunta do instrumento de coleta é denominada por **variável**. Assim, cada variável é uma característica da população estudada que se deseja conhecer. 
 
@@ -132,20 +110,28 @@ características precisam ser aferidas a partir da adoção de alguma escala qua
 
 .. note::
 
-   A figura abaixo só vai aparecer para o usuário que tiver acesso à respectiva pasta do seu Dropbox. Peço que use as instruções presentes em https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index.html#imagens
-
-.. figure:: <C:\Users\Luciane\Dropbox\ENEM_2016\Apresentacao\Figuras>
-   :width: 200px
-   :align: center
-
-   legenda
-
-
-.. note::
-
   É importante observar que uma variável originalmente quantitativa pode ser coletada tabém de forma qualitativa. 
   Por exemplo, a variável idade, medida em anos,  é quantitativa (contínua); mas, se pergunta-se apenas a faixa etária (0 a 5 anos, 6 a 10 anos, etc...), passa a ser qualitativa (ordinal). Outro exemplo é o índice de massa corporal (`IMC`, calculado como `IMC =\text{peso (kg)}/(\text{altura (m)})^2`. É uma variável quantitativa (contínua), mas caso se deseje trabalhar com  os pontos de corte de lassificação do estado nutricional (como sugeridos pela  Organização Mundial da Saúde) , classificando como baixo peso o `IMC<(18,5)`, peso normal como `IMC` entre (18,5) (24,9), excesso de peso como `IMC` entre `(24,9)` e `(29,9)`, Obesidade `IMC` maior ou igual a (30) passa a ser classificada como qualitativa (do tipo ordinal).
 Outro ponto importante a considerar é que nem sempre uma variável representada por números é quantitativa. O número do telefone de uma pessoa, o número da casa, o número de sua identidade, são variáveis de identificação e não serão incluídas como variáveis quantitativas para análise. Outra situação também que acontece é considerar que, ás vezes, o sexo de uma pessoa é registrado na base de dados como (1), se masculino, e como (2), se feminino, por exemplo. Isto não significa que a variável sexo passa desse modo a ser quantitativa! 
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Construindo instrumento de coleta de dados
+------------------------------
+
+
+Essa atividade consiste na construção de um instrumento de coleta de dados. Para isso a turma deverá ser dividida em grupos, onde cada grupo irá pensar em um objetivo que poderá ser respondido com a própria turma. A atividade seguirá a seguinte etapa:
+	
+
+
+
+* Cada grupo  pensará em 5 perguntas e irá construir o instrumento de coleta de dados, com as mesmas.
+* Os grupos irão trocar os instrumentos de coleta e cada integrante do grupo irá preencher os instrumento com suas informações.
+* Após o preenchimento, os grupos irão apresentar suas dificuldades e discutir sobre as diferentes maneiras de se coletar a informação.
+
+
 
  Após entender como as variáveis podem ser classificadas, vamos observar uma parte do banco de dados que foi gerado pela PENSE. As variáveis da base usada como exemplo são  referentes às perguntas apresentadas no exemplo acima: 
  
@@ -154,31 +140,37 @@ Outro ponto importante a considerar é que nem sempre uma variável representada
    :widths: 1 3
    :column-alignment: left center
 
-   +---+---+
-   | A | B |
-   +===+===+
-   | 0 | 1 |
-   +---+---+
-   | 2 | 3 |
-   +---+---+
-   ID	PESO	Sexo	Raca_cor	idade	ga_peso	per_peso
-101897	85,25	2	1	4	2	2
-13281	53,79	2	4	5	2	2
-24727	91,15	2	2	4	2	2
-47659	12,38	1	2	4	2	2
-87880	16,74	1	4	6	2	2
-25991	66,83	2	2	6	2	2
-19548	104,83	1	1	4	2	2
-43577	81,07	1	1	4	2	2
-64442	45,30	1	5	5	2	2
-70354	53,50	2	4	6	2	2
-77041	81,00	1	2	3	2	2
-17763	66,94	2	1	3	2	2
-10990	70,49	1	5	3	2	2
-14625	76,74	1	1	7	2	1
-91157	92,42	1	2	4	2	2
+   +--------+--------+------+----------+-------+---------+----------+
+| ID     | PESO   | Sexo | Raca_cor | idade | ga_peso | per_peso |
++--------+--------+------+----------+-------+---------+----------+
+| 101897 | 85,25  | 2    | 1        | 4     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 13281  | 53,79  | 2    | 4        | 5     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 24727  | 91,15  | 2    | 2        | 4     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 47659  | 12,38  | 1    | 2        | 4     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 87880  | 16,74  | 1    | 4        | 6     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 25991  | 66,83  | 2    | 2        | 6     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 19548  | 104,83 | 1    | 1        | 4     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 43577  | 81,07  | 1    | 1        | 4     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 64442  | 45,30  | 1    | 5        | 5     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 70354  | 53,50  | 2    | 4        | 6     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 77041  | 81,00  | 1    | 2        | 3     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 17763  | 66,94  | 2    | 1        | 3     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
+| 10990  | 70,49  | 1    | 5        | 3     | 2       | 2        |
++--------+--------+------+----------+-------+---------+----------+
 
- 
+
  
 ATIVIDADES 
 =====
