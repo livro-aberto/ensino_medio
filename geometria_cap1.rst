@@ -17,24 +17,32 @@ Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{X
    
 Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
 
-Atividade
+Atividade: Um par ordenado para um vetor
 -----------
 
 Determine as coordenadas dos vetores na malha abaixo.
 
-.. tikz:: Aumentar a malha e incluir diversos vetores.
+.. tikz:: Dado o vetor, obter a sua representação algébrica
 
-	\draw[step=1cm,gray,very thin] (-3,-1) grid (1,2);
-	\draw[-latex, thick, red] (0,0) -- (-2,1);
-    \fill[blue] (0,0) circle (.08);
-    \node[right] at (0,0) {$A$};
-    \fill[blue] (-2,1) circle (.08);
-    \node[left] at (-2,1) {$B$};
+	\draw[step=1cm,gray,very thin] (0,5) grid (8,8);
+	\draw[-latex, thick, red] (0,5) -- (2,8);
+    \node at (1,6.8) {$\overrightarrow{a}$};
+    \draw[-latex, thick, red] (2,6) -- (3,6);
+    \node at (2.5,6.2) {$\overrightarrow{b}$};
+    \draw[-latex, thick, red] (4,6) -- (4,8);
+    \node at (4.2,7) {$\overrightarrow{c}$};
+    \draw[-latex, thick, red] (5,6) -- (6,8);
+    \node at (5.4,7.2) {$\overrightarrow{d}$};
+    \draw[-latex, thick, red] (8,8) -- (6,5);
+    \node at (6.9,6.7) {$\overrightarrow{e}$};
     
-Atividade
+    
+Atividade: Um vetor para um par ordenado
 ----------
 
-Dadas as coordenadas, determinar uma representação do vetor.
+Para cada par ordenado abaixo determine uma representação geométrica do vetor na malha apresentada.
+
+a)
 
 
 Atividade
