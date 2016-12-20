@@ -10,7 +10,40 @@ Probabilidade e Estatística
 
 .. note::
    1) **Roteiro do capítulo**:
-   Texto com o objetivo de despertar para a importância da estatística e da probabilidade no muundo contemporâneo. Exemplos: Netflix, Remédios, problema de Monty Hall, garantia estendida, teste cego etc.
+   
+   O módulo de Estatística será desenvolvido segundo o referencial teórico apresentado no Guidelines for Assessment and Instruction in Statistics Education (GAISE), College Report(2016)
+   O GAISE aponta que nos cursos de Estatística introdutório devem enfatizar o pensamento estatístico.
+   				*" Qualquer curso introdutório deve ter como sua principal meta ajudar os alunos a aprender os elementos básicos do pensamento estatístico. Muitos cursos avançados seriam melhorados por uma ênfase mais explícita nesses mesmos elementos básicos, a saber: 
+              *  A necessidade de dados.
+              *  A importância da produção de dados. 
+              *  A omnipresença da variabilidade. 
+              *  A quantificação e explicação da variabilidade.
+              
+ 		**Mais Dados e Conceitos, Menos Teoria e Menos Receitas**
+        
+         Quase qualquer curso em estatística pode ser melhorado por mais ênfase em dados e conceitos, e menos ênfase na teoria e receitas. Na medida do possível, automatize cálculos e gráficos.
+		
+         **Fomentar o aprendizado ativo**
+   		
+          Como regra, os professores de estatística devem ser baseado muito menos em palestras e muito mais em alternativas como projetos, exercícios de laboratório e atividades de grupo de resolução de problemas e discussão. Mesmo dentro da configuração de palestra tradicional, é possível envolver os alunos mais ativamente." :ref:`GAISE,2016`  *
+
+   Assim, o capítulo de Estatística deve utilizar como pano de fundo para o desenvolvimento do conteúdo da BNCC as recomendações apresentadas no GAISE (2016), como por exemplo:
+   
+ 
+   #. Elaborar um texto para o aluno apresentando o conteúdo, usando um dado real secundário ((IBGE, DATASUS, ARMAZEM DOS DADOS)ou primário (dados da turma, escola, etc...). Cada conteúdo apresentado deve vir acompanhado de uma ou mais atividades para sedimentar o contéudo. Seria muito interessante poder pensar algumas atividades que possam ser exploradas com outras disciplinas como Biologia, Geografia, etc.
+   
+   #. cada atividade deve estar conectada com uma habilidade a ser desenvolvida do BNCC. Assim, devemos identificar para o professor (será que para o aluno também?) o objetivo da atividade e que habilidade ela está trabalhando.
+   
+   #. Evitar as atividades que faça o aluno usar apenas da memorização ou aplicação de algoritmos para resolução de problemas. Enfatizar as atividades que o(s) aluno(s) precise(m) tomar decisões entre duas ou mais situações.
+   
+   #. as atividades devem permitir uma participação ativa dos estudantes e sempre que possível uma resolução em grupos.
+   
+      
+   #. utilizar um programa computacional que permita a analisar os dados (construção de gráficos).  
+   
+   
+   O texto inicial do capítulo de Estatística deve começar com um convite ao aluno a despertar sua curiosidade para a importância e abrangência da estatística e da probabilidade no muundo contemporâneo. 
+   
    
      **1º ano**
      Pesquisa já realizada – Apresentar a pesquisa PENSE para introduzir os conceitos referentes ao planejamento de uma pesquisa, a partir da construção de um instrumento de coleta de dados.
@@ -39,7 +72,7 @@ Probabilidade e Estatística
     UNICAMP: http://m3.ime.unicamp.br/recursos/1043
     
     Guidelines for Assessment and Instruction in Statistics Education (GAISE) 
- College Report 2016.(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
+ College Report 2016.:ref:`GAISE,2016`(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
   
   
   
@@ -61,8 +94,7 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
 
   ** Agora responda o que você acha de sua própria imagem.**
   
-  
- 1. Você considera sua imagem corporal como sendo algo: 
+  #. Você considera sua imagem corporal como sendo algo: 
     
     □ Muito importante
    
@@ -72,7 +104,7 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
    
     □ Sem importância
    
- 2. Como você se sente em relação ao seu corpo?
+  #. Como você se sente em relação ao seu corpo?
    
    □ Muito satisfeito(a) 
    
@@ -84,17 +116,17 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
    
    □ Muito insatisfeito(a)
    
- 3. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder peso, sem acompanhamento médico? 
+  #. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder peso, sem acompanhamento médico? 
     
    □ Sim □ Não
    
- 4. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para ganhar peso ou massa muscular sem acompanhamento médico?
+  #. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para ganhar peso ou massa muscular sem acompanhamento médico?
   
   □ Sim □ Não
   
- 5. Qual é o seu peso? __ __ __ quilos □ Não sei
+  #. Qual é o seu peso? __ __ __ quilos □ Não sei
  
- 6. Qual é a sua altura?  __ __ __  centímetros □ Não sei
+  #. Qual é a sua altura?  __ __ __  centímetros □ Não sei
   
 ***** 
    
@@ -124,14 +156,15 @@ Atividade: Construindo instrumento de coleta de dados
 
 Essa atividade consiste na construção de um instrumento de coleta de dados. Para isso a turma deverá ser dividida em grupos, onde cada grupo irá pensar em um objetivo que poderá ser respondido com a própria turma. A atividade seguirá a seguinte etapa:
 	
+#. Cada grupo  pensará em 5 perguntas e irá construir o instrumento de coleta de dados, com as mesmas.
+#. Os grupos irão trocar os instrumentos de coleta e cada integrante do grupo irá preencher os instrumento com suas informações.
+#. Após o preenchimento, os grupos irão apresentar suas dificuldades e discutir sobre as diferentes maneiras de se coletar a informação.
 
 
+.. _sec-coloque-aqui-o-nome:
 
-* Cada grupo  pensará em 5 perguntas e irá construir o instrumento de coleta de dados, com as mesmas.
-* Os grupos irão trocar os instrumentos de coleta e cada integrante do grupo irá preencher os instrumento com suas informações.
-* Após o preenchimento, os grupos irão apresentar suas dificuldades e discutir sobre as diferentes maneiras de se coletar a informação.
-
-
+Banco de dados
+=====
 
  Após entender como as variáveis podem ser classificadas, vamos observar uma parte do banco de dados que foi gerado pela PENSE. As variáveis da base usada como exemplo são  referentes às perguntas apresentadas no exemplo acima: 
  
@@ -140,7 +173,7 @@ Essa atividade consiste na construção de um instrumento de coleta de dados. Pa
    :widths: 1 3
    :column-alignment: left center
 
-   +--------+--------+------+----------+-------+---------+----------+
++--------+--------+------+----------+-------+---------+----------+
 | ID     | PESO   | Sexo | Raca_cor | idade | ga_peso | per_peso |
 +--------+--------+------+----------+-------+---------+----------+
 | 101897 | 85,25  | 2    | 1        | 4     | 2       | 2        |
