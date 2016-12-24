@@ -13,5 +13,6 @@ Geometria
    geometria_cap1_exercicios
    geometria_cap2
    geometria_cap3
+   geometria_semelhanca
 
 
