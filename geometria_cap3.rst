@@ -8,8 +8,7 @@ Teorema de Tales
    
 .. admonition:: Pré requisito
    
-   buscar no Ensino Fundamental
-	
+   (EF09MT03) Compreender as relações entre os ângulos formados por retas paralelas cortadas por uma transversal, incluindo o uso de "softwares" de geometria dinâmica e aplicando esse conhecimento em demonstrações simples.
     
 .. admonition:: Desdobramentos Imediatos
 
