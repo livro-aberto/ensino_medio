@@ -8,8 +8,11 @@ Teorema de Tales
    
 .. admonition:: Pré requisito
    
-   buscar no Ensino Fundamental
-	
+   (EF09MT02)
+   Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de  triângulos para estabelecer as relações métricas no triângulo retângulo, incluindo o teorema de Pitágoras, recorrendo ao uso de "softwares" de geometria dinâmica e de demonstrações simples.
+
+   (EF09MT03)
+   Compreender as relações entre os ângulos formados por retas paralelas cortadas por uma transversal, incluindo o uso de "softwares" de geometria dinâmica e aplicando esse conhecimento em demonstrações simples.
     
 .. admonition:: Desdobramentos Imediatos
 
