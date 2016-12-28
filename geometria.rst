@@ -171,7 +171,7 @@ a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas ap
 .. _fig-sertao-alagoano:
 
 .. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
-   :width: 800px
+   :width: 1200px
    :align: center
 
    
