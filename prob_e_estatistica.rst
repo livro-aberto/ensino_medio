@@ -81,13 +81,19 @@ Como os avanços tecnológicos, um grande volume de dados passou a ser coletado 
 
 Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
+Formular a pergunta antes de introduzir o exemplo.
+Serã que n"ao mudamos o exemplo, poderia ser o perfil dos alunos que fazem o enem.
 
 Inicialmente será apresentada a etapa de planejamento de uma pesquisa. Para exemplificação, será usada a Pesquisa Nacional de Saúde do Escolar (PENSE), realizada em 2012, junto aos estudantes que cursavam o 9o ano do ensino fundamental do Brasil (http://www.ibge.gov.br/home/estatistica/populacao/pense/2012/default.shtm). Esta pesquisa teve como objetivo principal coletar dados sobre diferentes aspectos de saúde da população adolescente brasileira, produzindo assim informações confiáveis para  orientação e  avaliação das políticas de saúde destinadas a esse importante contingente populacional. Nesta etapa, serão abordados os conteúdos sobre a construção de um instrumento de coleta de dados e elaboração de análises descritivas dos mesmos. Para isso, será utilizada a parte da pesquisa que dispõe sobre a percepção da imagem corporal que tem de si mesmos os adolescentes.   
+- - - - - - - - - - - - -- - - - -
 
 A seguir apresenta-se a parte do questionário da PENSE que fez perguntas específicas sobre imagem corporal. São perguntas que representam variáveis quantitativas e qualitativas. 
 
 
 .. admonition:: Exemplo 
+
+
+
 
   Bloco sobre Imagem Corporal da PENSE
 
