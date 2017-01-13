@@ -135,7 +135,12 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
   #. Qual é a sua altura?  __ __ __  centímetros □ Não sei
   
 ***** 
-   
+  
+  
+  .. note::
+    criar atividades para passar os conceitos do tipo de variáveis
+  
+  
 Nas perguntas acima, observa-se parte do instrumento de coleta da PENSE contendo tanto perguntas fechadas (onde as respostas possíveis estão definidas no próprio instrumento de coleta, ex: perguntas de 1 à 4 do questionário), como também abertas ( aquelas onde não existe uma reposta pré definida, ex: questões 5 e 6). Cada pergunta do instrumento de coleta é denominada **variável**. Assim, cada variável é uma característica da população estudada que se deseja conhecer. 
 
 As variáveis denominadas qualitativas são aquelas cujo o conteúdo é expresso por categorias (*atributo*), podendo ser  classificadas como variáveis qualitativas ordinais (onde existe uma ordenação nas respostas), como exemplo as perguntas 1 e 2, do instrumento de coleta da PENSE. E também nominais ( quando não há uma ordem definida), como exemplificam as perguntas 3 e 4 desta parte do questionário apresentado como exemplo.
