@@ -42,27 +42,6 @@ Teorema de Tales
    
    #. Apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas. Talvez o ideal é que o estudante estabeleça a igualdade dada no teorema para cada uma das figuras apresentadas.
    
-   Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)
-
-   #. Problema motivador utilizando barragem de Mariana. 
-   #. Enunciado utilizando o triângulo e uma paralela a um dos lados.
-   #. Reforçar a necessidade da hipótese,
-   #. Diferentes exibições das figuras, especialmente com a interseção das transversais entre as paralelas (onde aparece a maior quantidade de erros). Lembrar o professor dos riscos de se criar figuras prototípicas na cabeça do aluno.
-   #. Possibilitar no PDF que se gire a figura.
-   #. Faremos uma observação para o professor sobre o nome do Teorema de Tales? Sim.
-   #. Vamos provar o teorema de Tales! Sim, provavelmente a prova será por áreas.
-   #. Incluir a recíproca do teorema de Tales e atividades.
-   #. Observar para o professor que o teorema de Tales vale mesmo que os dois segmentos sobre a mesma transversal não sejam consecutivos (como faz o Gelson Iezzi de 2013).
-   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também?
-   #. Usaremos vetores quando necessário nos capítulos seguintes? Homotetia, por exemplo.
-   #. Cuidado para que os números irracionais apareçam de maneira natural nos exemplos. 
-   #. Ordem de abordagem. Motivação com homotetia, Teorema de Tales, Semelhança, Homotetia simples (sem ser vista como transformação), Transformações no plano incluindo homotetia e talvez projeção sobre uma reta paralelamente à outra.
-   #. Incluir também problemas com enunciado sem figuras para que os estudantes. 
-   #. Informar ao professor que o teorema de tales não diz sobre os comprimentos dos segmentos nas paralelas. Incluir o exemplo da atividade mostrada pelo Marcos em que se pede o comprimento de um segmento sobre uma paralela na representação prototípica do teorema de tales e que não tem solução simples por tales.
-   #. Aplicações do teorema de tales: divisão de um segmento em partes iguais e semelhança.
-   #. Incluir relação entre a razão de semelhança e a razão entre as áreas de figuras.
-   #. Incluir exercícios em que o estudante é indagado sobre a semelhança ou não de dois triângulos apresentados com um deles sendo o refletido do outro.
-   #. Tempo gasto com Tales e introdução de semelhança, de 6 a 8 aulas (duas semanas).   
     
    
       .. _fig-variedade_tales
@@ -87,6 +66,27 @@ Teorema de Tales
    
    #. Atividades contextualizadas (ruas paralelas cortadas por uma transversal, etc.).
    
+   Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)
+
+   #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. 
+   #. Enunciado utilizando o triângulo e uma paralela a um dos lados.
+   #. Reforçar a necessidade da hipótese,
+   #. Diferentes exibições das figuras, especialmente com a interseção das transversais entre as paralelas (onde aparece a maior quantidade de erros). Lembrar o professor dos riscos de se criar figuras prototípicas na cabeça do aluno.
+   #. Possibilitar no PDF que se gire a figura.
+   #. Faremos uma observação para o professor sobre o nome do Teorema de Tales? Sim.
+   #. Vamos provar o teorema de Tales! Sim, provavelmente a prova será por áreas.
+   #. Incluir a recíproca do teorema de Tales e atividades.
+   #. Observar para o professor que o teorema de Tales vale mesmo que os dois segmentos sobre a mesma transversal não sejam consecutivos (como faz o Gelson Iezzi de 2013).
+   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também?
+   #. Usaremos vetores quando necessário nos capítulos seguintes? Homotetia, por exemplo.
+   #. Cuidado para que os números irracionais apareçam de maneira natural nos exemplos. 
+   #. Ordem de abordagem. Motivação com homotetia, Teorema de Tales, Semelhança, Homotetia simples (sem ser vista como transformação), Transformações no plano incluindo homotetia e talvez projeção sobre uma reta paralelamente à outra.
+   #. Incluir também problemas com enunciado sem figuras para que os estudantes. 
+   #. Informar ao professor que o teorema de tales não diz sobre os comprimentos dos segmentos nas paralelas. Incluir o exemplo da atividade mostrada pelo Marcos em que se pede o comprimento de um segmento sobre uma paralela na representação prototípica do teorema de tales e que não tem solução simples por tales.
+   #. Aplicações do teorema de tales: divisão de um segmento em partes iguais e semelhança.
+   #. Incluir relação entre a razão de semelhança e a razão entre as áreas de figuras.
+   #. Incluir exercícios em que o estudante é indagado sobre a semelhança ou não de dois triângulos apresentados com um deles sendo o refletido do outro.
+   #. Tempo gasto com Tales e introdução de semelhança, de 6 a 8 aulas (duas semanas). 
    
 Motivação do Teorema de Tales
 
