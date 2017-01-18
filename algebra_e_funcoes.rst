@@ -17,41 +17,50 @@ Funções
 
    **(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
    
-   Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis.
+   Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis. Reconhecer funções em situações de não casualidade.
     
 .. note::
    **Roteiro do Capítulo**
    
-   1) Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
+   `1.` Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
    
-   2) Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
+   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
    
-   3) As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].
+   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].
    
-   4) Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
+   `4.` Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
    
-   5) Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
+   `5.` Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
    
-   6) Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
+   `6.` Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
    
-   7) Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task A, figura 1 da referência [5].
+   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [5].
    
-   8) Definição formal de função crescente e decrescente.
    
-   9) Exercícios.
+   .. _TaskC:
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=taskc.png
+      :width: 600px
+      :align: center
+
+      Task C, [5].
    
-   10) Aprofundamento.
+   `8.` Definição formal de função crescente e decrescente.
    
-   **Orientações para o professor**
+   `9.` Interseção com os eixos: zero da função e `(0,f(0))`.
    
-   1) Na matemática uma abstração é uma ideia que foi generalizada a partir de outro conceito, de modo que é menos dependente de objetos do mundo real e mais próxima de uma construção matemática.
+   `10.` Exercícios.
    
-   2) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   `11.` Aprofundamento [**Discutir em 20/12**]
+   
+   **Orientação para o professor**
+   
+   1) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
    
    **Orientações gerais para o Capítulo**
    
    1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
-   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar o processo que transformou cada entrada na sua respectiva saída. (Processo) 
+   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar algum processo que transformou cada entrada na sua respectiva saída. (Processo) 
    
    **Atenção para as armadilhas**
    
@@ -72,6 +81,8 @@ Funções
    [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
    
    [5] Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
+   
+   [6] Rodrigo Lume. (2013). A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS.
 
 
 
@@ -81,20 +92,21 @@ Apresentação
 
 .. admonition:: Para o professor
 
-   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções.
+   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações unívocas de dependência entre duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções.
    
    Sobre a abordagem adotada, destacamos os seguintes pontos:
    
    * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
-   * É importante reforçar, inicialmente, a relação de dependência entre as grandezas. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
-   * Evitamos nas primeiras atividades exemplos onde haja proporcionalidade com o objetivo de não reforçar o senso comum de que no cotidiano todas as relações são proporcionais. Elas terão a devida ênfase no Capítulo dedicado às funções afins.
-   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existente entre as varáveis envolvidas. 
+   * É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
+   * Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
+   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
    * São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
    * Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
+   * Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
      
 Neste capítulo vamos dar continuidade ao estudo das funções que você iniciou no Ensino Fundamental. A noção de função é um dos conceitos centrais para a Matemática, e sua importância transcende os limites dessa ciência, sendo muito útil para descrever os fenômenos em diversas áreas do conhecimento, não só nas mais próximas como a Física, a Química, ou as Engenharias, como também em Biologia, Geografia, Sociologia, entre outras. 
 
-As funções, de uma maneira geral, servem para conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas, sendo possível, a partir dessas conexões, entender as relações entre as diferentes variáveis envolvidas nos fenômenos.
+As funções, de uma maneira geral, servem para conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas, sendo possível, a partir dessas conexões, entender as relações entre as diferentes variáveis envolvidas nos fenômenos. **(Colocar um exemplo aqui! Talvez já descrever, brevemente, a atividade do Google Maps)**
 
 
 
@@ -106,10 +118,15 @@ No elevador
    **OBJETIVOS ESPECÍFICOS**
    Levar o estudante a:
    
-   * foo.
-   * bar.
+   * Interpretar os dados da tabela fazendo a conexão com a situação apresentada.
+   * Perceber a relação entre as variáveis e resgatar a ideia de variação a partir da noção de proporcionalidade.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * A escolha dessa atividade como sendo a primeira se apoia no fato de que os estudantes têm familiaridade com a noção de proporcionalidade, que é explorada tanto em álgebra quanto em geometria, desde os anos iniciais do ensino fundamental.
+   * Deseja-se, entretanto, que os estudantes sempre levem em conta o contexto do problema. Por esse motivo, apresentamos na tabela uma sequência não-linear na variável independente: {14,10,6,2, **0** }.
+   
+   
 
 Você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
 
@@ -134,7 +151,7 @@ Você está hospedado em um hotel no décimo quarto andar e vai usar o elevador 
 
 
 #. Em quanto tempo você chegará à recepeção? Explique sua resposta.
-#. A que taxa o elevador desce? Explique sua resposta.
+#. Quantos andares o elevador desce a cada segundo? Explique sua resposta.
 
 Números triangulares
 ---------
@@ -144,13 +161,13 @@ Números triangulares
    **OBJETIVOS ESPECÍFICOS**
    Levar o estudante a:
    
-   * Reconhecer o padrão geométrico e ser capaz de inferir os próximos termos da sequência.
-   * Generalizar, ainda que de maneira informal, o procedimento observado.
+   * Reconhecer um padrão geométrico e ser capaz de, a partir dele, inferir os próximos termos da sequência.
+   * Generalizar, ainda que em palavras, o procedimento observado.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * No item c) o esperado é que o estudante apresente o procedimento de maneira recursiva, isto é,  descreva como obter o `n`-ésimo número triangular a partir do anterior.
-   * Não é esperado, neste momento, que o estudante se expresse de maneira formal por meio da relação `T_n = T_{n-1}+n`, contudo, este pode ser um bom momento para apresentar esse tipo de notação. **(será mesmo?)**
+   * Não é esperado, neste momento, que o estudante expresse a relação por meio da linguagem simbólica, escrevendo `T_n = T_{n-1}+n`, mas que seja matematicamente preciso em suas palavras, dizendo, por exemplo, "o `n`-ésimo arranjo é o arranjo anterior acrescido de mais uma fileira com `n`bolas".
    * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Neste caso, você pode mostrá-los que essa maneira de descrever o procedimento é equivalente à recursiva.
    * Você pode comentar com os seus estudantes sobre a existência de uma expressão algébrica que permite encontrar qualquer número triangular, que não depende de conhecer nenhum outro número anterior, a saber, `T_n=\frac{n(n+1)}{2}`. Pense na possibilidade de propor como desafio para eles encontrarem tal expressão. Esse tipo de ideia será retomado no estudo de progressões.
 
@@ -220,8 +237,8 @@ Pluviometria no sistema Cantareira
    
    Levar o estudante a:
    
-   *  Interpretar gráfico cartesiano que represente relações entre grandezas.
-   * Analisar informações expressas em gráficos ou tabelas como recurso para a construção de argumentos. 
+   *  Interpretar gráfico cartesiano que represente relações unívocas entre grandezas.
+   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
@@ -245,47 +262,43 @@ De acordo com o gráfico acima, responda:
 
 a) Em que mês e ano houve a maior incidência de chuvas? E a menor?
 b) Em que período(s) a diferença entre a chuva esperada e a real superou os 100 mm, aproximadamente? 
-c) É possível identificar os períodos de estiagem e maior volume de chuva? Explique.
+c) É possível identificar os períodos de estiagem e de maior volume de chuva? Explique.
 d) Escreva um parágrafo que descreva, ao longo do período indicado, um possível impacto sobre a variação do nível de água nos reservatórios do sistema Cantareira.
 
 
 
-Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de associar cada elemento do conjunto `A` a um único elemento do conjunto `B`.
+Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
-Na atividade "No elevador" temos o conjunto `A` dos andares e o conjunto `B` dos tempos. A cada andar existe um único tempo associado, que é o tempo que o elevador gasta para chegar nele.
+Na atividade "No elevador" temos o conjunto `A` dos andares e o conjunto `B` dos tempos. A cada andar está associado um único tempo, que é o tempo que o elevador gasta para chegar nele.
 
 Na atividade "Números triangulares" temos o conjunto `A` dos números naturais representando a quantidade `n` de bolas no lado do triângulo e o conjunto `B`, também dos naturais, representando o número total `T_n` de bolas no triângulo. A cada `n` está associado o número triangular `T_n`.
 
-Na atividade "Pluviometria no sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números racionais que representa os possíveis valores para o índice pluviométrico do sistema Cantareira em milímetros. A linha azul representa a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha representa a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+Na atividade "Pluviometria no sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números **racionais ou reais?** que representam os possíveis valores para o índice pluviométrico do sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
-Todas essas relações dos exemplos anteriores são funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição formal de função: 
+Todas essas relações mencionadas anteriormentedos são exemplos de funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição de função:
 
 
 .. admonition:: Definição 
 
-   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` é uma *função* de `A` em `B` se a cada elemento `x\in A` está associado um único elemento `y\in B`. 
-   
-   O elemento `y` é dito a imagem do elemento `x` e é denotado por `f(x)` (lê-se `f` de `x`). O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*.
+   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma *função* de `A` em `B`, se cada elemento do conjunto `A` está relacionado a um único elemento do conjunto `B`.
+   Assim, para cada `x\in A` existe um único `y\in B` relacionado a `x`, e por isso escrevemos `y=f(x)` e dizemos que `y` é a imagem de `x` pela função `f`.
+
+O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
    
   
 .. admonition:: Notação 
 
     Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
 
-Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elementos, por exemplo, a relação que associa cada pessoa ao seu número de telefone é ambígua, pois nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone, sendo impossível determinar, de maneira única, uma imagem para cada pessoa.
+Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
 
 
 .. note:: **Fique atento!**
+   *Vamos deslocar essa observação mais para a frente. Ela deverá aparecer após uma atividade que explore esse fato*
 
    Nem todo elemento `y\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento `y\in B` ser imagem de elementos distintos em `A`, ou seja, `f(x_1 )=y=f(x_2)` com `x_1\neq x_2`.
    
    Por exemplo a função `f:\mathbb{Z}\to\mathbb{Z}` que a cada número inteiro associa seu quadrado, tem essa propriedade. De fato, `f(-x)=x^2=f(x)` qualquer que seja o número inteiro `x`.
-
-
-
-
-
-
 
 Colorindo o mapa
 ---------
@@ -297,7 +310,7 @@ Colorindo o mapa
    
    Levar o estudante a:
    
-   * Perceber as relações entre as grandezas tempo, cor do mapa e velocidade média.
+   * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade.
    * Distinguir quais relações são univocamente determinadas.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -339,7 +352,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
     +------------------+-------------+-------+--------------------------+  
 
 
-a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
+a) Utilizando a escala de cores abaixo, explicite um critério para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
 		.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1476340957&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 			:width: 250px
@@ -352,9 +365,7 @@ c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calcula
 d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 
-
-
-Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
 
 É função?
 ---------
@@ -509,7 +520,7 @@ Aprofundamento
 
 Identifique em cada uma das relações abaixo qual(ou quais) dos itens acima fazem com que elas deixem de ser função.
 
-a) Seja P o conjunto de todas as pessoas e considere a relação de P em P, que a cada pessoa associa o seu irmão.
+a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa o seu irmão.
 b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
 c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
 
@@ -560,7 +571,7 @@ Gráfico
 As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, um gráfico pode causar maior impacto àqueles que o leem. 
 
 
-.. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=infograficos.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=infograficos.png
    :width: 600px
    :align: center
 
@@ -614,22 +625,48 @@ Função Afim
      
 .. note:: **Roteiro**
 
-   1) Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
+   `1.` Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
    
-   2) Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade. Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança.*
+   `2.` **Definição:**  Diz-se que duas grandezas são proporcionais quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número, a quantidade correspondente da outra fica multiplicada ou dividida pelo mesmo número. No primeiro caso, a proporcionalidade se chama direta e, no segundo, inversa; as grandezas se dizem diretamente proporcionais ou inversamente proporcionais. (TRAJANO, 1883)
+
    
-   3) Apresentar função afim.
+   `3.` Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=teorema_proporcionalidade.png
+      :width: 450px
+      :align: center
+   Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança (Juros como função do tempo).*
+   
+   `4.` Apresentar função afim.
    
       * Mostrar que para obter a expressão algébrica de uma função afim é suficiente conhecer seus valores em dois pontos.
       * Mostrar que: (i) `f(x)=ax+b` é crescente se, e somente se, a taxa de variação `a` é positiva. (ii) `f(x)` é decrescente se, e somente se, a taxa de variação `a` é negativa.
    
-   4) Mostrar que o gráfico cartesiano de uma função afim é uma reta.
+   `5.` Mostrar que o gráfico cartesiano de uma função afim é uma reta.
    
-   5) Atividade mostrando a passagem de linear para afim.
+   `6.` Atividade mostrando a passagem de linear para afim.
    
-   6) Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=linear_afim.png
+      :width: 450px
+      :align: center
+      
+      Retomar a ideia dos juros simples (montante como função do tempo).
+   `7.` Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
    
-   7) Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
+   `8.` Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
+   
+   `9.` [Sugestão para um Aprofundamento]
+   
+   Em uma vinícola podemos comprar vinho por litro. Neste caso, o vinho é colocado em garrafões com capacidade de 5 litros. O vinho é vendido por 2,50 euros por litro e cada garrafão é vendido a 1,50 euros.
+   
+   1. Calcule o preço que um cliente deverá pagar por 2 litros, por 5 litros e por 7 litros. Explique seus cálculos.
+   2. Exprima o preço `p(x)` em função do volume `x` (expresso em litros) de vinho comprado, para `x` compreendido entre 0 e 15.
+   3. Trace a curva que representa a função p no plano cartesiano. Usando a escala 1cm para 1 litro no eixo das abscissas e 1 cm para 2 euros nas ordenadas.
+   
+   Chez un vigneron, on peut acheter du vin au litre. Dans ce cas, le vin est conditionné dans des cubitainers d’une capacité de 5 litres. Le vin est vendu 2,50 € le litre et un cubitainer est vendu 1,50 €.
+	1. Calculer le prix qu’un client devra payer pour 2 litres achetés, puis pour 5 litres et 7 litres. Expliquez brièvement vos calculs.
+	2. Exprimer le prix p(x) en fonction du volume x (exprimé en litres) de vin acheté, x étant compris entre 0 et 15.
+	3. Tracer la courbe représentative de la fonction p dans un repère orthogonal. On prendra 1 cm pour 1 litre en abscisses et 1 cm pour 2 € en ordonnées.
 
    **Referências**
    
@@ -658,6 +695,40 @@ Função Quadrática
 
 .. note:: **Roteiro**
 
+   `1.` Motivar o conceito de função quadrática com problemas de geometria.
+   
+   **Ideia 1.** Explorar (utilizando Geogebra) área e perímetro de retângulos inscritos no triângulo.
+   
+   **Ideia 2.** Problema dos retângulos de perímetro constante: altura `=f` (base): função afim, área `=f` (base): função quadrática.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulos.png
+      :width: 600px
+      :align: center
+
+   
+   `2.` Explorar, de maneira informal, as noções de zero, crescimento e decrescimento, máximo da função.
+   
+   `3.` Parábola (lugar geométrico).
+   
+   `4.` Gráfico de Função Quadrática.
+   
+   `5.` Forma Algébrica: polinômios de grau 2 (revisitar os exemplos explorando suas versões algébricas e apresentar novos problemas, tipo lucro máximo, etc).
+   
+   `6.` Revisão sobre fatoração (Algeplan?)
+   
+   `7.` Forma canônica do Trinômio.
+   
+   `8.` Interseções com os Eixos, Vértice da Parábola.
+   
+   `9.` Movimento Uniformemente Variado.
+   
+   `10.` Taxa de variação linear (no gráfico) [Aprofundamento]
+   
+   `11.` Sinal da Imagem e Inequações [Aprofundamento] 
+   
+   **Referências**
+   
+   [1] Expose_bourdeaux_2010.pptx
 
 Atividade
 ---------
