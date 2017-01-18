@@ -125,21 +125,21 @@ Usaremos um *segmento orientado* para representar a informação da velocidade d
    \draw (0.76,1.41) node {$A$};
    \draw [fill=blue] (4.,2.) circle (2.5pt);
    \draw(3.74,2.45) node {$B$};
-   \draw(2.5,.5) node {Semgento de reta $AB$};
+   \draw(2.5,.5) node {Segmento de reta $AB$};
    \begin{scope}[shift={(5cm,.15cm)}]
    \draw [-latex,line width=2.pt,red](1.,1.)-- (4.,2);
    \draw [fill=blue] (1.,1.) circle (2.5pt);
    \draw (0.76,1.41) node {$A$};
    \draw [fill=blue] (4.,2.) circle (2.5pt);
    \draw(3.74,2.45) node {$B$};
-   \draw(2.5,.5) node {Semgento orientado $\overrightarrow{AB}$};
+   \draw(2.5,.5) node {Segmento orientado $\overrightarrow{AB}$};
    \begin{scope}[shift={(6cm,0cm)}]
    \draw [latex-,line width=2.pt,red](1.,1.)-- (4.,2);
    \draw [fill=blue] (1.,1.) circle (2.5pt);
    \draw (0.76,1.41) node {$A$};
    \draw [fill=blue] (4.,2.) circle (2.5pt);
    \draw(3.74,2.45) node {$B$};
-   \draw(2.5,.5) node {Semgento orientado $\overrightarrow{BA}$};   
+   \draw(2.5,.5) node {Segmento orientado $\overrightarrow{BA}$};   
    \end{scope}
    \end{scope}
 
@@ -171,7 +171,7 @@ a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas ap
 .. _fig-sertao-alagoano:
 
 .. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
-   :width: 800px
+   :width: 1200px
    :align: center
 
    
@@ -185,7 +185,7 @@ Não importa a origem (apresentação das componentes de um vetor)
 
 .. _my-ativ-barcos:
    
-Atividade
+Atividade: Deslocamento após a tempestade
 --------- 
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
@@ -354,9 +354,9 @@ Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo senti
 
 Diremos que dois segmentos orientados, digamos `AB` e `CD`, *representam o mesmo vetor* quando possuem mesmo comprimento, direção e sentido. 
 Deste modo, assim como os conceitos físicos de deslocamento, força e velocidade fazem sentido sem que estejam estabelecidos de onde para onde, no caso do deslocamento, sobre que ponto, no caso da força e a posição no caso da velocidade.
-Um vetor está totalmente determinado por seu módulo (comprimento) direção e sentido.
+Um vetor está totalmente determinado por seu módulo (comprimento), direção e sentido.
 
-Por exemplo, na figura abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
+Por exemplo, na malha quadriculada abaixo os segmentos orientados `AB` e `XY` têm mesmo comprimento, direção e sentido e, portanto, 
 
 .. math::
 
@@ -399,7 +399,10 @@ Para justificar esta igualdade observe que os triângulos `ABC` e `XYZ` da figur
    \draw[very thick, red, -latex] (2,0)--(4,3);
    \draw[very thick, red] (2,0)--(4,0)--(4,3);
 
-Atividade
+Você deve ter observado que utilizamos o fato da malha da figura ser formada por quadrados porque utilizamos que os lados dos quadriláteros são iguais e também que os ângulos são retos.
+Malhas não quadradas ou até não retangulares são úteis para situações específicas que serão trabalhadas mais adiante.
+
+Atividade: Vetores iguais
 ---------
 
 Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
