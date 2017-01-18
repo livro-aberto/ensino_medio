@@ -577,20 +577,198 @@ As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial pa
 
    http://www.freepik.com/free-vector/infographic-elements-pack_772624.htm
 
-Saber representar graficamente uma quantidade de dados pode fazer toda a diferença na hora de transmitir informações. Há muitos tipos de gráficos e cada um tem a sua particularidade e serve para transmitir as informações de forma específica.
+Saber representar graficamente conjuntos de dados e suas relações pode fazer toda a diferença na hora de transmitir informações. Há muitos tipos de gráficos e cada um tem a sua particularidade e serve para transmitir as informações de forma específica, como no caso da Estatística, em que a escolha do tipo de gráfico adequado é fundamental. Nesta seção iremos estudar especificamente a representação gráfica das funções.
 
 Vamos imaginar a seguinte situação:
 
-Uma empresa resolve lançar uma ação promocional na internet através de uma hashtag e um mês depois o CEO dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a hashtag foi mencionada por dia durante aquele mês.  **VALE A PENA CONTINUAR AQUI?**
+Ação promocional
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Perceber as vantagens da representação gráfica em detrimento da tabela. 
+   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Observe para seus alunos que, mesmo apresentando um panorama mais geral do comportamento, o gráfico não substitui a tabela.
+   * Para os itens de análise do crescimento e decrescimento pode ser útil conectar os pontos com uma linha poligonal, contudo é importante estar atento de que os segmentos que conectam os pontos consecutivos não são dados do problema, uma vez que o domínio dessa função é um conjunto finito.
+   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum meme, evento negativo associado à empresa, dentre outros.
+
+Uma empresa resolve lançar uma ação promocional na internet através de uma *hashtag* e um mês depois o CEO dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais por dia durante aquele mês. O funcionário resolveu apresentar o dados das seguintes duas formas:
+
+.. table::
+   :widths: 1 3
+   :column-alignment: center center
+
+   +-----+------------+
+   | Dia | Quantidade |
+   +=====+============+
+   |  1  |     137    |
+   +-----+------------+
+   |  2  |     152    |
+   +-----+------------+
+   |  3  |     194    |
+   +-----+------------+
+   |  4  |     231    |
+   +-----+------------+
+   |  5  |     278    |
+   +-----+------------+
+   |  6  |     282    |
+   +-----+------------+
+   |  7  |     276    |
+   +-----+------------+
+   |  8  |     767    |
+   +-----+------------+
+   |  9  |     917    |
+   +-----+------------+
+   |  10 |     1048   |
+   +-----+------------+
+   |  11 |     1337   |
+   +-----+------------+
+   |  12 |     1881   |
+   +-----+------------+
+   |  13 |     1779   |
+   +-----+------------+
+   |  14 |     1692   |
+   +-----+------------+
+   |  15 |     1703   |
+   +-----+------------+
+   |  16 |     1721   |
+   +-----+------------+
+   |  17 |     1456   |
+   +-----+------------+
+   |  18 |     684    |
+   +-----+------------+
+   |  19 |     512    |
+   +-----+------------+
+   |  20 |     483    |
+   +-----+------------+
+   |  21 |     521    |
+   +-----+------------+
+   |  22 |     479    |
+   +-----+------------+
+   |  23 |     356    |
+   +-----+------------+
+   |  24 |     327    |
+   +-----+------------+
+   |  25 |     398    |
+   +-----+------------+
+   |  26 |     1120   |
+   +-----+------------+
+   |  27 |     1591   |
+   +-----+------------+
+   |  28 |     1476   |
+   +-----+------------+
+   |  29 |     1475   |
+   +-----+------------+
+   |  30 |     1419   |
+   +-----+------------+
+ 
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=hashtags.png
+   :width: 700px
+   :align: center
  
  
-Vale mais que mil palavras
---------- 
+#. Quantas vezes a *hashtag* foi mencionada mais de 1500 vezes em um dia?
+#. Em que dia a *hashtag* foi mais citada?
+#. Identifique todos os períodos em que houve crescimento no número de citações.
+#. Faça o mesmo com o decrescimento.
+#. Escreva um parágrafo explicando o comportamento global do gráfico, apontando possíveis causas para as variações observadas.
 
-Atividade para identificar as coordenadas de pontos no plano cartesiano
+.. note:: Elaborar texto sobre plano cartesiano e o conjunto `R`. Chamar atenção para discreto x contínuo.
 
- 
+Atirando flechas (OBMEP)
+------------------------------
 
+Manoel testa sua pontaria lançando cinco flechas que atingiram o alvo nos pontos `A, B, C, D` e `E`, de coordenadas `A = (1,-1), B = (2,5; 1), C = (-1, 4), D = (-4, -4)` e `E=(6, 5)`.
+
+A tabela mostra quantos pontos se ganha quando a flecha acerta um ponto dentro de cada uma das três regiões, conforme mostra a figura.
+
+.. tikz::
+    
+    \definecolor{qqccqq}{rgb}{0,0.8,0}
+    \definecolor{ffffqq}{rgb}{1,1,0}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \definecolor{wqwqwq}{rgb}{0.37,0.37,0.37}
+	\clip(-11,-11) rectangle (15,18);
+	\draw [color=qqccqq,fill=qqccqq,fill opacity=1.0] (0,0) circle (6.cm);
+	\draw [color=ffffqq,fill=ffffqq,fill opacity=1.0] (0,0) circle (4.cm);
+	\draw [color=ffqqqq,fill=ffqqqq,fill opacity=1.0] (0,0) circle (2.cm);
+	\draw [color=wqwqwq] (7,-6)-- (-7,-6);
+	\draw [color=wqwqwq] (7,-5)-- (-7,-5);
+	\draw [color=wqwqwq] (7,-4)-- (-7,-4);
+	\draw [color=wqwqwq] (7,-3)-- (-7,-3);
+	\draw [color=wqwqwq] (7,-2)-- (-7,-2);
+	\draw [color=wqwqwq] (7,-1)-- (-7,-1);
+	\draw [color=wqwqwq] (7,0)-- (-7,0);
+	\draw [color=wqwqwq] (7,1)-- (-7,1);
+	\draw [color=wqwqwq] (7,2)-- (-7,2);
+	\draw [color=wqwqwq] (7,3)-- (-7,3);
+	\draw [color=wqwqwq] (7,4)-- (-7,4);
+	\draw [color=wqwqwq] (7,5)-- (-7,5);
+	\draw [color=wqwqwq] (7,6)-- (-7,6);
+	\draw [color=wqwqwq] (-6,7)-- (-6,-7);
+	\draw [color=wqwqwq] (-5,7)-- (-5,-7);
+	\draw [color=wqwqwq] (-4,7)-- (-4,-7);
+	\draw [color=wqwqwq] (-3,7)-- (-3,-7);
+	\draw [color=wqwqwq] (-2,7)-- (-2,-7);
+	\draw [color=wqwqwq] (-1,7)-- (-1,-7);
+	\draw [color=wqwqwq] (0,7)-- (0,-7);
+	\draw [color=wqwqwq] (1,7)-- (1,-7);
+	\draw [color=wqwqwq] (2,7)-- (2,-7);
+	\draw [color=wqwqwq] (3,7)-- (3,-7);
+	\draw [color=wqwqwq] (4,7)-- (4,-7);
+	\draw [color=wqwqwq] (5,7)-- (5,-7);
+	\draw [color=wqwqwq] (6,7)-- (6,-7);
+	\draw (0,0) node[anchor=north west] {\Large{$0$}};
+	\draw (2,0) node[anchor=north west] {\Large{$2$}};
+	\draw (4,0) node[anchor=north west] {\Large{$4$}};
+	\draw (6,0) node[anchor=north west] {\Large{$6$}};
+	\draw (8,0.5) node[anchor=north west] {\Large{abscissa}};
+	\draw (0.5,8) node[anchor=north west] {\Large{ordenada}};
+	\draw [->,line width=1.2pt] (-8,0) -- (8,0);
+	\draw [->,line width=1.2pt] (0,-8) -- (0,8);
+	\draw [color=qqccqq] (-10,8)-- (-9,8);
+	\draw [color=qqccqq] (-9,8)-- (-9,7);
+	\draw [color=qqccqq] (-9,7)-- (-10,7);
+	\draw [color=qqccqq] (-10,7)-- (-10,8);
+	\draw [color=ffffqq] (-10,8)-- (-10,9);
+	\draw [color=ffffqq] (-10,9)-- (-9,9);
+	\draw [color=ffffqq] (-9,9)-- (-9,8);
+	\draw [color=ffffqq] (-9,8)-- (-10,8);
+	\draw [color=ffqqqq] (-10,10)-- (-10,9);
+	\draw [color=ffqqqq] (-10,9)-- (-9,9);
+	\draw [color=ffqqqq] (-9,9)-- (-9,10);
+	\draw [color=ffqqqq] (-9,10)-- (-10,10);
+	\fill[color=qqccqq,fill=qqccqq,fill opacity=1.0] (-10,8.) -- (-9,8.) -- (-9,7.) -- (-10,7.) -- cycle;
+	\fill[color=ffffqq,fill=ffffqq,fill opacity=1.0] (-10,8.) -- (-10,9.) -- (-9,9.) -- (-9,8.) -- cycle;
+	\fill[color=ffqqqq,fill=ffqqqq,fill opacity=1.0] (-10,10.) -- (-10,9.) -- (-9,9.) -- (-9,10.) -- cycle;
+	\draw (-8.2,7.8) node[anchor=north west] {\Large{$50$ \ pontos}};
+	\draw (-8.5,8.8) node[anchor=north west] {\Large{$100$ \ pontos}};
+	\draw (-8.5,9.8) node[anchor=north west] {\Large{$300$ \ pontos}};
+	\draw (-9.5,11) node[anchor=north west] {\Large{$\times \ 1000$ \ pontos}};
+	
+
+#. Marque os pontos `A, B, C, D` e `E`.
+#. Quantas flechas ele acertou no interior do menor círculo?
+#. Ao todo, quantos pontos Manoel fez?
+
+.. note:: Revisitar as atividades: números triangulares, no elevador e colorindo o mapa explorando seus gráficos.
+	Observações:
+
+	1) Sobre a atividade "No elevador", vamos dar um dos gráficos (andar x tempo) e pedir o outro (tempo x andar).
+	2) Números triangulares: Observar que os pontos do gráfico não podem ser ligados, observar que os pontos não estão alinhados;
+	3) Colorindo o mapa: estimular a criatividade na hora de fazer o grafico  something x cor. Estipular com precisão os limites das cores. Fazer perguntas do tipo: que cor seria 0.25h? Fazer a extensão velocidade x tempo para os valores reais.
+    4) Definição de gráfico
+    5) Definir função crescente e decrescente.
+    6) Atividade dos gráficos e das situações concretas
+    7) Exercicios de produto cartesiano, marcar pontos, traçar retas.
 
 ===========
 Função Afim
