@@ -269,11 +269,11 @@ d) Escreva um parágrafo que descreva, ao longo do período indicado, um possív
 
 Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
-Na atividade "No elevador" temos o conjunto `A` dos andares e o conjunto `B` dos tempos. A cada andar está associado um único tempo, que é o tempo que o elevador gasta para chegar nele.
+Na atividade "No elevador" temos o conjunto `A` dos tempos e o conjunto `B` dos andares. A cada tempo está associado um único andar.
 
 Na atividade "Números triangulares" temos o conjunto `A` dos números naturais representando a quantidade `n` de bolas no lado do triângulo e o conjunto `B`, também dos naturais, representando o número total `T_n` de bolas no triângulo. A cada `n` está associado o número triangular `T_n`.
 
-Na atividade "Pluviometria no sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números **racionais ou reais?** que representam os possíveis valores para o índice pluviométrico do sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+Na atividade "Pluviometria no sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
 Todas essas relações mencionadas anteriormentedos são exemplos de funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição de função:
 
@@ -352,7 +352,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
     +------------------+-------------+-------+--------------------------+  
 
 
-a) Utilizando a escala de cores abaixo, explicite um critério para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
+a) Utilizando a escala de cores abaixo, complete a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
 		.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1476340957&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 			:width: 250px
@@ -686,6 +686,19 @@ Uma empresa resolve lançar uma ação promocional na internet através de uma *
 Atirando flechas (OBMEP)
 ------------------------------
 
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Revisar a localização de pontos no plano cartesiano.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta atividade tem apenas o caráter de revisão. Caso perceba a necessidade, explore mais atividades desse tipo.
+
+
 Manoel testa sua pontaria lançando cinco flechas que atingiram o alvo nos pontos `A, B, C, D` e `E`, de coordenadas `A = (1,-1), B = (2,5; 1), C = (-1, 4), D = (-4, -4)` e `E=(6, 5)`.
 
 A tabela mostra quantos pontos se ganha quando a flecha acerta um ponto dentro de cada uma das três regiões, conforme mostra a figura.
@@ -759,16 +772,192 @@ A tabela mostra quantos pontos se ganha quando a flecha acerta um ponto dentro d
 #. Quantas flechas ele acertou no interior do menor círculo?
 #. Ao todo, quantos pontos Manoel fez?
 
-.. note:: Revisitar as atividades: números triangulares, no elevador e colorindo o mapa explorando seus gráficos.
-	Observações:
+Já vimos alguns exemplos de funções em atividades anteriores, vamos explorá-los um pouco mais.
 
-	1) Sobre a atividade "No elevador", vamos dar um dos gráficos (andar x tempo) e pedir o outro (tempo x andar).
-	2) Números triangulares: Observar que os pontos do gráfico não podem ser ligados, observar que os pontos não estão alinhados;
-	3) Colorindo o mapa: estimular a criatividade na hora de fazer o grafico  something x cor. Estipular com precisão os limites das cores. Fazer perguntas do tipo: que cor seria 0.25h? Fazer a extensão velocidade x tempo para os valores reais.
-    4) Definição de gráfico
-    5) Definir função crescente e decrescente.
-    6) Atividade dos gráficos e das situações concretas
-    7) Exercicios de produto cartesiano, marcar pontos, traçar retas.
+
+Números triangulares no plano
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Perceber o gráfico como subconjunto do produto cartesiano do domínio pelo contradomínio.
+   * Trabalhar gráficos de funções com domínios discretos.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chamar a atenção para o fato de que os pontos não devem ser ligados, uma vez que o domínio é o conjunto dos número naturais.
+   * Perceber que os pontos desse gráfico não são colineares, de fato, trata-se de uma função do tipo quadrática.
+   
+#. Represente geometricamente o produto cartesiano `\mathbb{N}\times \mathbb{N}`. 
+#. Usando a representação anterior como um sistema de coordenadas cartesianas marque o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
+
+
+Do mapa para o gráfico
+-----------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Trabalhar com conjuntos não numéricos.
+   * Estender a definição para o conjuntos dos números reais positivos, a partir de uma tabela.
+   * Estimular a criatividade na hora de representar graficamente um conjunto de dados.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (a) a ideia é que o estudante escreva por extenso o conjunto dos pares ordenados: `\{(0,11;` Verde `),(0,12 ;` Amarelo `), ...\}`.
+   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores no eixo vertical. No último item, uma representação possível é um retângulo colorido como a escala apresentada no item (a) da Atividade "Colorindo o Mapa", em que se indique os tempos onde ocorre a mudança de cor. Nesse caso chame a atenção para que decidam as cores do extremos (bola aberta ou fechada).
+   * Estimule a criatividade nas representações.
+   * Caso, alguma estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal, chame a atenção para o fato de que essa relação deixa de ser função.
+   
+#. A partir das colunas *Tempo* e *Cor* da atividade "Colorindo o Mapa", escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
+#. Represente graficamente este conjunto de pares ordenados.
+#. Especifique os valores de tempo mínimo e máximo para cada cor, isto é, os intervalos de números reais a que estão associadas cada uma das cores.
+#. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
+
+
+Voltando ao elevador
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Acompanhar passo a passo a construção do gráfico da função.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chame a atenção para a importância do contexto na representação correta do gráfico. É importante que seus estudantes tenham a ideia equivocada de que sempre devemos "ligar os pontos".
+  
+
+Na atividade "No elevador" apresentamos uma situação em que você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+
+.. table::
+   :widths: 3 3
+   :column-alignment: center center
+
+
+   +-------+--------------------+
+   | Andar | Tempo (s)          |
+   +=======+====================+
+   |   14  |          0         |
+   +-------+--------------------+
+   |   10  |          2         |
+   +-------+--------------------+
+   | 6     |          4         |
+   +-------+--------------------+
+   | 2     |          6         |
+   +-------+--------------------+
+   |0      |          ?         |
+   +-------+--------------------+
+
+Anteriormente observamos que podemos considerar o andar como função do tempo. A cada tempo está associado um único andar e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_1.png
+   :width: 400px
+   :align: center
+   
+Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão os andares. Suponha que desejamos determinar o tempo associado a cada um dos andares, qual seria uma boa estratégia para resolvermos essa questão utilizando a figura?
+
+Primeiramente observamos que os pontos estão alinhados (você sabe justificar essa afirmação?) e portanto é uma tarefa simples encontrar os pontos procurados. Para isso estamos supondo que o movimento do elevador seja uniforme, isto é, ele desce a uma velocidade constante.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_2.png
+   :width: 400px
+   :align: center
+   
+   
+#. A partir da figura, determine em quanto tempo o elevador chegará à recepeção.
+#. Na figura anterior estão representados os pontos que correspondem aos andares `11, 12` e `13`. Determine os tempos associados a eles.
+#. Represente graficamente e determine as coordenadas dos pares ordenados que estão sobre a reta associados aos demais andares.
+
+Agora que já temos os pontos marcados, vamos traçar o gráfico que representa a situação descrita na atividade.
+
+Talvez a sua primeira ideia tenha sido ligar os pontos, preenchendo a reta pontilhada. Mas vamos analisar a situação com mais atenção.
+
+No instante `0` o elevador está no décimo quarto andar, ponto `(0,14)` da figura e após `0,5s` ele chega no andar de número `13`, ponto `(0,5;13)`. Como não existem andares fracionários, vamos convencionar que o elevador só chega em um determinado andar quando ele para naquele andar. Sendo assim, no intervalo `[0;0,5)` o elevador ainda está no décimo quarto andar, isto é, todo `0\leqslant x<0,5` terá ordenada `14`.
+
+O mesmo comportamento se repete para os valores de `x` no intervalo `[0,5;1)` que terão ordenada `13` e assim sucessivamente. A parte do gráfico correpondente ao intervalo `[0,1)` está representada na figura abaixo.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_3.png
+   :width: 400px
+   :align: center
+
+#. Faça o gráfico para o intervalo `[0,7]`.
+ 
+
+
+.. admonition:: Definição 
+
+   Dada uma função `f: A \to B` definimos o seu gráfico como sendo o conjunto dos pares ordenados `(x,y)` em que `x \in A` e `y=f(x)`.
+   Simbolicamente,
+   
+   .. math::
+
+   	\{ (x,y) \in A \times B \ ;\  y=f(x) \}
+
+Imaginando gráficos
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Intuir sobre crescimento e decrescimento de funções através de seus gráficos.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Não existe resposta única para cada item. Certifique-se de que seus estudantes tenham argumentos consistentes sobre as suas escolhas. Você pode sugerir que eles compartilhem entre si os seus argumentos.
+   * É fundamental definir o que representa cada eixo, por exemplo, no item (I), se consideramos o tempo no eixo horizontal e a intensidade sonora no vertical, somente os gráficos (e) e (h) consideram o silêncio inicial, no entanto o gráfico (h) não leva em conta que "*rapidamente* todos estavam aplaudindo e se manifestando" e ainda há diminuição na intensidade sonora. Portanto, o gráfico (e) é o mais adequado. Agora, caso coloquemos no eixo horizontal a quantidade pessoas aplaudindo, os mais adequados são os gráficos (a) ou (d), eles passam pela origem e são crescentes.
+
+Associe cada uma das situações apresentadas a seguir a um dos gráficos dados abaixo. Explique sua escolha e escreva, em cada um dos eixos, o que eles representam. 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graficos.png
+   :width: 600px
+   :align: center
+
+
+`(I)` Após um concerto houve um grande silêncio. Então uma pessoa na platéia começou a aplaudir. Gradualmente, as pessoas a sua volta também começaram a apludir de forma que rapidamente todos estavam aplaudindo e se manifestando.
+
+`(II)` Se o preço cobrado pelo ingresso de um cinema for muito baixo, seu prorietário irá perder dinheiro. Por outro lado, se o valor cobrado for muito alto, poucas pessoas irão pagar e novamente o proprietário vai perder dinheiro. Um cinema deve portanto cobrar um preço moderado por seu ingresso de forma que seja lucrativo.
+
+`(III)` Preços estão agora subindo mais lentamente do que em qualquer época nos últimos cinco anos.
+
+`(IV)` Em uma corrida, aquele que corre mais lentamente irá demorar mais tempo para completar a prova.
+
+* Adaptado do artigo *Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.*
+
+.. note:: Colocar figura e diminuir a descontinuidade
+
+.. admonition:: Definição 
+
+   Uma função `f: \mathbb{R} \to \mathbb{R}` é dita *crescente* quando
+   
+   .. math::
+
+   		x_1<x_2 \Longrightarrow f(x_1)<f(x_2)
+	
+   E é dita decrescente quando
+    
+   .. math::
+
+   		x_1<x_2 \Longrightarrow f(x_1)>f(x_2)
+
+.. note:: 
+	Falta falar de Zero de Função e Interseção com eixo y
+
+Exercícios
+---------
+
+.. note:: 
+	Exercicios de produto cartesiano, marcar pontos, traçar retas.
+
 
 ===========
 Função Afim
