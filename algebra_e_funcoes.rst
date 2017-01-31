@@ -1097,9 +1097,68 @@ Função Quadrática
    
    [1] Expose_bourdeaux_2010.pptx
 
-Atividade
----------
-Conisdere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
+titulo
+=======
+
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, em que queremos saber em que condições uma determinada quantidade assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Vamos ver em um exemplo.
+
+O retângulo que se move
+-----------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * 
+   * Os estudantes podem ter dificuldade com a expressão "em função de"...
+
+
+Considere o triângulo `ABC`, retângulo em `\hat{B}`, cujos lados medem `AB=10` e `BC=8`. Marcamos um ponto `M` em qualquer lugar do lado `AB` e a partir dele, inscrevemos um retângulo `MNPB` no triângulo `ABC`, conforme ilustra a figura abaixo.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulo_01.png
+   :width: 300px
+   :align: center
+
+Vamos imaginar que o ponto `M` é móvel, e portanto o retângulo se move junto com ele.
+
+#. Faça um desenho onde o ponto `M` está posicionado em um lugar diferente da figura anterior.
+#. Enquanto o ponto `M` se move, o que muda e o que não muda na construção?
+#. Descreva precisamente o que acontece com o retângulo.
+
+Observe a seguinte figura
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=quadratica_02.png
+   :width: 300px
+   :align: center
+
+#. Qual dos dois retângulos tem o maior perímetro, `BMNP` ou `BM'N'P'`? Por que?
+#. Descreva o comportamento geral do perímetro do retângulo à medida que o ponto `M` se move. Quando ele tem o maior perímetro? E o menor?
+#. O que aconteceria com os perímetros caso o triângulo retângulo `ABC` fosse isósceles?
+#. Qual dos dois retângulos tem a maior área? Por que?
+#. Descreva o comportamento geral da área do retângulo à medida que o ponto `M` se move. Quando ele tem a maior área?
+
+Vamos chamar de `x` o segmento `AM`. Escreva em função de `x` as seguintes grandezas:
+
+#. O comprimento `MB`.
+#. O comprimento `MN`.
+#. O perímetro `MBNP`.
+#. A área de `BMNP`.
+
+Acesse o aplicativo Geogebra <link> e observe... (completar)
+
+
+
+
+Exercícios
+-----------
+
+Considere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
 
 .. tikz::
 
