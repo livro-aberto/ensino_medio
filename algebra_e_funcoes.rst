@@ -2,121 +2,1284 @@
 Funções
 =======
 
-Vivemos na era da informação! A todo momento empresas capturam grandes quantidades de dados e buscam formas de processar tais informações e transformá-las em conteúdos relevantes para seus usuários. Por exemplo, os dados sobre tempo de deslocamento de cada veículo, que são obtidos via satélite, aliados ao mapeamento das vias urbanas podem ser processados e devolvidos aos usuários com informações sobre congestionamentos, tempo estimado de viagem, melhores rotas, etc.
+.. admonition:: Objetivos Específicos 
+
+	**(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá- las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
+
+
+.. admonition:: Pré-requisitos
+
+	**(EF06MT01)** Associar pares ordenados a pontos do plano cartesiano, considerando apenas o primeiro quadrante, preferencialmente vinculados a situações com algum significado para o/a estudante, como, por exemplo, para representar pontos de um desenho construído sobre o plano.
+    
+	**(EF09MT16)** Reconhecer função como uma relação de dependência entre duas variáveis que pode ser representada nas formas algébrica e gráfica, utilizando essa noção para analisar e compreender situações que envolvem relações funcionais entre duas variáveis.
+
+.. admonition:: Desdobramentos imediatos 
+
+   **(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
+   
+   Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis. Reconhecer funções em situações de não casualidade.
+    
+.. note::
+   **Roteiro do Capítulo**
+   
+   `1.` Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.[DONE]
+   
+   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)[DONE]
+   
+   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].[DONE] -- Pensamos que o nível "objeto" não deva ser exigido de todos os estudantes, por isso, ele terá maior ênfase nos aprofundamentos.
+   
+   `4.` Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)[DONE]
+   
+   `5.` Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)* [DONE]
+   
+   `6.` Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.[DONE]
+   
+   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [5]. [DONE]
+   
+   `8.` Definição formal de função crescente e decrescente. 
+   
+   `9.` Interseção com os eixos: zero da função e `(0,f(0))`.
+   
+   `10.` Exercícios.
+   
+   `11.` Aprofundamento 
+   
+   **Orientação para o professor**
+   
+   1) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   
+   **Orientações gerais para o Capítulo**
+   
+   1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
+   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar algum processo que transformou cada entrada na sua respectiva saída. (Processo) 
+   
+   **Atenção para as armadilhas**
+   
+   * "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [1], página 14.
+
+   * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
+   
+   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver [3]
+   
+   **Referências:**
+   
+   [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
+   
+   [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
+   
+   [3]  Van Dooren, W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L. (2005). Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, 23, 57 –86. 
+   
+   [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
+   
+   [5] Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
+   
+   [6] Rodrigo Lume. (2013). A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS.
+
+
+
+Apresentação
+============
+
+
+.. admonition:: Para o professor
+
+   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações unívocas de dependência entre duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções.
+   
+   Sobre a abordagem adotada, destacamos os seguintes pontos:
+   
+   * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
+   * É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
+   * Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
+   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
+   * São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
+   * Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
+   * Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
+     
+Neste capítulo vamos dar continuidade ao estudo das funções que você iniciou no Ensino Fundamental. A noção de função é um dos conceitos centrais para a Matemática, e sua importância transcende os limites dessa ciência, sendo muito útil para descrever os fenômenos em diversas áreas do conhecimento, não só nas mais próximas como a Física, a Química, ou as Engenharias, como também em Biologia, Geografia, Sociologia, entre outras. 
+
+As funções, de uma maneira geral, servem para conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas, sendo possível, a partir dessas conexões, entender as relações entre as diferentes variáveis envolvidas nos fenômenos. **(Colocar um exemplo aqui! Talvez já descrever, brevemente, a atividade do Google Maps)**
+
+
+
+No elevador
+---------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   Levar o estudante a:
+   
+   * Interpretar os dados da tabela fazendo a conexão com a situação apresentada.
+   * Perceber a relação entre as variáveis e resgatar a ideia de variação a partir da noção de proporcionalidade.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * A escolha dessa atividade como sendo a primeira se apoia no fato de que os estudantes têm familiaridade com a noção de proporcionalidade, que é explorada tanto em álgebra quanto em geometria, desde os anos iniciais do ensino fundamental.
+   * Deseja-se, entretanto, que os estudantes sempre levem em conta o contexto do problema. Por esse motivo, apresentamos na tabela uma sequência não-linear na variável independente: {14,10,6,2, **0** }.
+   
+   
+
+Você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+
+.. table::
+   :widths: 3 3
+   :column-alignment: center center
+
+
+   +-------+--------------------+
+   | Andar | Tempo (s)          |
+   +=======+====================+
+   |   14  |          0         |
+   +-------+--------------------+
+   |   10  |          2         |
+   +-------+--------------------+
+   | 6     |          4         |
+   +-------+--------------------+
+   | 2     |          6         |
+   +-------+--------------------+
+   |0      |          ?         |
+   +-------+--------------------+
+
+
+#. Em quanto tempo você chegará à recepeção? Explique sua resposta.
+#. Quantos andares o elevador desce a cada segundo? Explique sua resposta.
+
+Números triangulares
+---------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   Levar o estudante a:
+   
+   * Reconhecer um padrão geométrico e ser capaz de, a partir dele, inferir os próximos termos da sequência.
+   * Generalizar, ainda que em palavras, o procedimento observado.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item c) o esperado é que o estudante apresente o procedimento de maneira recursiva, isto é,  descreva como obter o `n`-ésimo número triangular a partir do anterior.
+   * Não é esperado, neste momento, que o estudante expresse a relação por meio da linguagem simbólica, escrevendo `T_n = T_{n-1}+n`, mas que seja matematicamente preciso em suas palavras, dizendo, por exemplo, "o `n`-ésimo arranjo é o arranjo anterior acrescido de mais uma fileira com `n`bolas".
+   * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Neste caso, você pode mostrá-los que essa maneira de descrever o procedimento é equivalente à recursiva.
+   * Você pode comentar com os seus estudantes sobre a existência de uma expressão algébrica que permite encontrar qualquer número triangular, que não depende de conhecer nenhum outro número anterior, a saber, `T_n=\frac{n(n+1)}{2}`. Pense na possibilidade de propor como desafio para eles encontrarem tal expressão. Esse tipo de ideia será retomado no estudo de progressões.
+
+
+
+.. tikz::
+
+  \definecolor{qqzzcc}{rgb}{0.,0.6,0.8}
+  \clip(-0.9279117032827463,-3.420523985545702) rectangle (17.259435909160114,6.069005028685349);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (0.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (2.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (3.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (4.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (6.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (8.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (11.,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (12.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (16.5,0.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (2.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (6.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (8.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.5,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (16.,1.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (5.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (10.,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (13.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.5,2.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (9.5,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (15.,3.5) circle (0.5cm);
+  \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (14.5,4.5) circle (0.5cm);
+  \draw (-0.15,-0.1) node[anchor=north west] {$T_1=1$};
+  \draw (1.8,-0.1) node[anchor=north west] {$T_2=3$};
+  \draw (4.8,-0.1) node[anchor=north west] {$T_3=6$};
+  \draw (8.7,-0.1) node[anchor=north west] {$T_4=10$};
+  \draw (13.8,-0.1) node[anchor=north west] {$T_5=15$};
+	
+Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é a quantidade total de bolas necessárias para formar um triângulo equilátero cujo lado tem `n` bolas. Por exemplo, o quarto número triangular é `T_4=10`. 
+
+a) Determine, se possível, o 6º, o 7º e o 8º números triangulares.
+
+b) Descreva o procedimento usado para encontrar `T_6, T_7` e `T_8` no item anterior.
+
+c) Como você descreveria o procedimento que permite encontrar qualquer número triangular? Explique.
+
+
+Pluviometria no Sistema Cantareira
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   *  Interpretar gráfico cartesiano que represente relações unívocas entre grandezas.
+   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Os valores apresentados pelo gráfico são apenas estimativas. Caso haja interesse, visitando a página indicada na legenda é possível ter acesso aos valores exatos para cada mês passando o mouse sobre o gráfico, contudo, o período apresentado na atividade pode ser diferente do que você vai encontrar na página. Você pode modificar a atividade usando os dados atualizados.
+   * No item (b) estamos interessados no valor absoluto da diferença, não importando qual deles é maior que o outro.
+   * No item (d) auxilie seus estudantes na elaboração do texto, sinalizando que ele deve perceber o aumento ou a diminuição no nível de água armazenado no Sistema, relacionando com a variação da pluviometria.
+   
+
+As chuvas são a principal fonte de água para os reservatórios que abastecem as grandes cidades. Existe uma média mensal esperada de chuvas com base no passado. Em anos em que a chuva real é menor que o esperado podemos ter baixos níveis de água nos Sistemas.
+
+O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cantareira_chuva.png
+   :width: 900px
+   :align: center
+
+   disponível em: http://www.nivelaguasaopaulo.com/cantareira
+
+De acordo com o gráfico acima, responda:
+
+a) Em que mês e ano houve a maior incidência de chuvas? E a menor?
+b) Em que período(s) a diferença entre a chuva esperada e a real superou os 100 mm, aproximadamente? 
+c) É possível identificar os períodos de estiagem e de maior volume de chuva? Explique.
+d) Escreva um parágrafo que descreva, ao longo do período indicado, um possível impacto sobre a variação do nível de água nos reservatórios do Sistema Cantareira.
+
+
+
+Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
+
+Na atividade "No elevador" temos o conjunto `A` dos tempos e o conjunto `B` dos andares. A cada tempo está associado um único andar.
+
+Na atividade "Números triangulares" temos o conjunto `A` dos números naturais representando a quantidade `n` de bolas no lado do triângulo e o conjunto `B`, também dos naturais, representando o número total `T_n` de bolas no triângulo. A cada `n` está associado o número triangular `T_n`.
+
+Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+
+Todas essas relações mencionadas anteriormentedos são exemplos de funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição de função:
+
+
+.. admonition:: Definição 
+
+   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma *função* de `A` em `B`, se cada elemento do conjunto `A` está relacionado a um único elemento do conjunto `B`.
+   Assim, para cada `x\in A` existe um único `y\in B` relacionado a `x`, e por isso escrevemos `y=f(x)` e dizemos que `y` é a imagem de `x` pela função `f`.
+
+O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
+   
+  
+.. admonition:: Notação 
+
+    Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
+
+Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
+
+
+Colorindo o mapa
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+   
+   * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade.
+   * Distinguir quais relações são univocamente determinadas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nem todos os estudantes vão usar o mesmo critério para distribuição das cores. Incentive-os a usarem as quatro cores e, no momento da discussão do item (b), chame a atenção para o fato de não haver uma única resposta correta para o item (a).
+   * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
-     :width: 700px
+     :width: 800px
      :align: center
+   
+A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
 
-.. note:: As figuras só ficavam visíveis se estivéssemos logados na wiki. Mudei o link para as figuras porque as coloquei na wiki do livro de frações que é aberta a todo mundo para visualização. Agora as figuras devem ser colocadas lá. Por favor, veja a documentação sobre figuras na `sintaxe <https://www.umlivroaberto.com/BookCloud/sintaxe/master/view/index#my-figuras>`_
-
-Neste Capítulo vamos explorar as relações que podem ser estabelecidas entre diferentes tipos de informação. Veremos como conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas. Uma vez definidas as situações que buscamos relacionar, o precisamos definir quais são as causas e quais são os efeitos, e como se dá a dependência entre eles, estabelecendo como a variação das causas provocam as variações nos efeitos.
+.. table:: 
+    :widths: 2 1 1 3
+    :column-alignment: center center center center
     
+    +------------------+-------------+-------+--------------------------+
+    |  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
+    +==================+=============+=======+==========================+
+    |    5:00 - 7:00   |     0,11    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |    7:00 - 9:00   |     0,13    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   9:00 - 11:00   |     0,16    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   11:00 - 13:00  |     0,12    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   13:00 - 15:00  |     0,12    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   15:00 - 17:00  |     0,14    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   17:00 - 19:00  |     0,27    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   19:00 - 21:00  |     0,20    |       |                          |
+    +------------------+-------------+-------+--------------------------+
+    |   21:00 - 23:00  |     0,11    |       |                          |
+    +------------------+-------------+-------+--------------------------+  
 
-.. admonition:: Atividade 1 
 
-	A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar uma ponte, ao longo de um dia.
-
-	+------------------+-------------+-------+--------------------------+
-	|  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
-	+==================+=============+=======+==========================+
-	|    5:00 - 7:00   |     0,11    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|    7:00 - 9:00   |     0,13    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   9:00 - 11:00   |     0,16    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   11:00 - 13:00  |     0,12    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   13:00 - 15:00  |     0,12    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   15:00 - 17:00  |     0,14    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   17:00 - 19:00  |     0,27    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   19:00 - 21:00  |     0,20    |       |                          |
-	+------------------+-------------+-------+--------------------------+
-	|   21:00 - 23:00  |     0,11    |       |                          |
-	+------------------+-------------+-------+--------------------------+  
-
-	a) Utilize a escala de cores abaixo para completar a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
+a) Utilizando a escala de cores abaixo, complete a terceira coluna da tabela acima com a cor que a ponte deveria estar colorida em cada período do dia em um aplicativo que mostra o trânsito como o Google Maps®.
 
 		.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1476340957&w=500&h=37&tok=f2c26e&media=escala_cores.jpg
 			:width: 250px
 			:align: center
          
-	b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
+b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
-	c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
+c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
 
-	d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
-
-Pode-se perceber, a partir da atividade anterior, que a natureza das relações entre os dados não é sempre a mesma. Para cada tempo de travessia, podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias. 
-De um modo mais geral, dados dois conjuntos quaisquer, `A` e `B` podemos estabelecer diversos tipos de relações entre seus elementos. Dentre elas, uma se destaca e é o tema central deste capítulo, as funções, que definimos a seguir.
-   
-   
-
-.. admonition:: Definição 
-
-   Dizemos que `f:A\to B` é uma *função* de `A` em `B` se a cada elemento `a\in A` está associado um único elemento `b\in B`. O elemento `b` é dito a imagem do elemento `a` e é denotado por `f(a)` (lê-se `f` de `a`). O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*.
-
-Perceba que na definição está implícito que todo elemento de `a\in A` precisa ter uma imagem `f(a)\in B`, sem haver ambiguidade na determinação da imagem. Por outro lado, nem todo elemento `b\in B`, precisa ser a imagem de algum elemento do domínio. Mas pode ocorrer de um elemento b∈B ser imagem de elementos distintos em `A`, ou seja, `b=f(a_1 )=f(a_2)` com `a_1\neq a_2`.
+d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 
-.. admonition:: Atividade 2
+Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+
+É função?
+---------
 
 	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
 
-	+---------------------+-------------------+--------------------+
-	| Relação             | É função?         | Se não, por quê?   |
-	+=====================+===================+====================+
-	| De A em B           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De B em A           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De A em C           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De C em A           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De B em C           |                   |                    |
-	+---------------------+-------------------+--------------------+
-	| De C em B           |                   |                    |
-	+---------------------+-------------------+--------------------+
+.. table:: 
+    :widths: 3 3 10
+    :column-alignment: center center center
     
-.. admonition:: Atividade 3
+    +---------------------+-------------------+------------------------+
+    | Relação             | É função?         | Se não, por quê?       |
+    +=====================+===================+========================+
+    | De A em B           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De B em A           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De A em C           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De C em A           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De B em C           |                   |                        |
+    +---------------------+-------------------+------------------------+
+    | De C em B           |                   |                        |
+    +---------------------+-------------------+------------------------+
 
-	A sequência `\{1,3,6,10,15,\dots\}` é conhecida como a sequência dos números triangulares. A razão para o nome está ilustrada na figura abaixo.
+Não é função!
+---------------
 
-		.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=wiki:triangulos.png
-			:width: 550px
-			:align: center
-        
-	O n-ésimo número triangular é a quantidade total de pontos, distribuídos como acima, no triângulo equilátero que tem n pontos em um de seus lados. Por exemplo, o quarto número triangular é igual a 10. 
+Considere a relação no conjunto dos números inteiros que associa dois elementos `a` e `b`, nesta ordem, se `b` for múltiplo de `a`. Sendo assim, `(2,4)` é um par ordenado desta relação, pois `4` é múltiplo de `2`, mas `(4,2)` não é.
 
-	a) Decida se a relação que associa a cada número natural n, o n-ésimo número triangular é ou não uma função.
-
-	b) Determine, se possível, o 6º, o 7º e o 8º números triangulares. 
-
-	c) É possível obter uma expressão geral que permita encontrar qualquer número triangular? Explique.
+#. Exiba alguns pares ordenados dessa relação.
+#. Explique porque essa relação não é uma função.
+#. Dê um outro exemplo, não necessariamente numérico, de uma ou mais relações que não sejam funções. 
 
 
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a forma de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
 
-.. admonition:: Atividade 4
+Enchendo o cone
+------------------------------
 
-	Um dado cúbico com as faces numeradas de 1 a 6, é lançado 10 vezes e os 5 primeiros resultados são anotados em uma tabela.
+`1.` O reservatório representado abaixo tem a forma de um cone de raio 5m e altura 5m. O volume `V` em metros cúbicos de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
 
-	+---------------+---+---+---+---+---+
-	|  Lançamento   | 1 | 2 | 3 | 4 | 5 |
-	+---------------+---+---+---+---+---+
-	| Resultado     | 3 | 5 | 2 | 2 | 6 |
-	+---------------+---+---+---+---+---+
+.. math::
 
-	a) Decida se a relação que associa a cada número natural `n`, o resultado obtido no `n`-ésimo lançamento do dado é ou não uma função. 
+   V(h)=25h
 
-	b) Determine, se possível, o 6º, o 7º e o 8º resultados dos lançamentos. 
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cone.png
+   :width: 400px
+   :align: center
 
-	c) É possível obter uma expressão geral que permita encontrar o resultado de qualquer lançamento? Explique.
+#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `V`.
+#. Determine `V(2), V(2,05)` e `V(3,1)` e explique os seus significados.
+#. Quais os volumes mínimo e máximo que podem ser observados?
+#. A que altura corresponde um volume de `10^5` litros?
+#. São feitas duas observações do volume, uma correspondendo a altura `h` e outra a altura `h+1`, isto é, `1` m acima da medição anterior. Determine a diferença de volume entre as duas medições. Ela depende de `h`?
+
+Uniformemente variado
+------------------------------
+
+A posição `S` em quilometros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
+
+.. math::
+
+   S(t)=2t^2-4t+2
+
+#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `S`.
+#. Determine a posição inicial do veículo. Explique o significado do resultado obtido.
+#. Após quanto tempo o veículo estará a 18km da origem?
+
+
+Obtendo expressões
+------------------------------
+
+Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f` que associe `x` a `y`, isto é, `y=f(x)`.
+
+#.
+
+  .. table:: 
+      :widths: 10 10
+      :column-alignment: center center
+
+      +---------------------+-------------------+
+      | `x`                 | `y`               |
+      +=====================+===================+
+      |-3                   |    -5             |
+      +---------------------+-------------------+
+      |-2                   |    -3             |
+      +---------------------+-------------------+
+      |-1                   |    -1             |
+      +---------------------+-------------------+
+      |0                    |    1              |
+      +---------------------+-------------------+
+      |1                    |    3              |
+      +---------------------+-------------------+
+      |2                    |    5              |
+      +---------------------+-------------------+
+      |3                    |    7              |
+      +---------------------+-------------------+
+
+#.
+
+  .. table:: 
+      :widths: 10 10
+      :column-alignment: center center
+
+      +---------------------+-------------------+
+      | `x`                 | `y`               |
+      +=====================+===================+
+      |-3                   |    4,5            |
+      +---------------------+-------------------+
+      |-2                   |    2              |
+      +---------------------+-------------------+
+      |-1                   |    0,5            |
+      +---------------------+-------------------+
+      |0                    |    0              |
+      +---------------------+-------------------+
+      |1                    |    0,5            |
+      +---------------------+-------------------+
+      |2                    |    2              |
+      +---------------------+-------------------+
+      |3                    |    4,5            |
+      +---------------------+-------------------+
+
     
+Uma pergunta natural é se as expressões obtidas por você na atividade acima são únicas. Ou seja, será possível existirem duas expressões algébricas diferentes que gerem a mesma tabela?
+Verifique com os seus colegas se vocês obtiveram as mesmas expressões na atividade anterior.
+
+#. Verifique que as expressões `g(x)=\dfrac{2x^2-7x-4}{x-4}` e `h(x)=\dfrac{x^4+x^2}{2x^2+2}` geram as tabelas dos itens a) e b) da atividade anterior, respectivamente.
+
+#. Complete a tabela abaixo, sabendo que `f(x)=8x` e `g(x)=2x^3`. Conclua que apesar de se tratar de expressões diferentes, elas produzem a mesma imagem nos valores de `x` dados na tabela. 
 
 
+  .. table:: 
+      :widths: 10 10 10
+      :column-alignment: center center center
+
+      +---------------------+-------------------+-------------------+
+      | `x`                 | `f(x)`            |`g(x)`             |
+      +=====================+===================+===================+
+      |-2                   |                   |                   |
+      +---------------------+-------------------+-------------------+
+      | 0                   |                   |                   |
+      +---------------------+-------------------+-------------------+
+      | 2                   |                   |                   |
+      +---------------------+-------------------+-------------------+
+   
+
+As atividades anteriores nos levam à seguinte questão:
+
+*Quando podemos afirmar que duas expressões geram a mesma função?*
+
+Primeiro vamos lembrar que para definir uma função precisamos estabelecer claramente qual é o seu domínio. E a partir daí, podemos comparar as imagens de todos os seus elementos pelas duas expressões. Caso coincidam em todos os elementos, diremos que as duas funções são **iguais**. Em lingaugem matemática, 
+
+
+.. admonition:: Definição 
+
+   Duas funções `f` e `g` são iguais quando têm o mesmo domínio, digamos `A`, e para todo `x\in A`, tem-se `f(x)=g(x)`.
+
+Por exemplo, nas tabelas da atividade anterior, caso o domínio considerado seja formado apenas pelos pontos da primeira coluna, então as duas expressões apresentadas para cada tabela, definem a mesma função. Que tal verificar para outros domínios?
+
+
+
+
+Exercícios
+---------
+
+`1.` Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
+
+a) Coloque em ordem crescente os números `g(\sqrt{2})`, `g(\sqrt{5})` e  `g(\sqrt{10})`.
+b) Determine todos os possíveis valores de `x` do domínio que têm imagem igual a 8.
+c) Podemos trocar o domínio e o contradomínio da função `g` para `\mathbb{Z}`? Por que?
+d) Existe algum `x\in \mathbb{R}` cuja imagem é igual a 10? Por que?
+e) Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=f(x)` ?
+
+`2^*.` Considere o processo que associa cada número natural à soma de seus algarismos
+
+a) O que obtemos a partir do número 13717?
+b) Proponha um número cujo resultado do processo seja 22.
+c) Quantos números entre 1 e 10000 nos levam ao resultado 3?
+d) É possível obter qualquer número natural como resultado desse processo?
+
+`3.` As expressões `f(n)=n^2` e `a_{n+1}=a_n+n+1` geram a mesma função com domínio igual ao conjunto dos números naturais.
+
+
+Aprofundamento
+------------
+
+`1.` Vimos que para que uma relação seja uma função não pode haver:
+
+	`(I)` Ambiguidade na determinação da imagem;
+
+	`(II)` Elementos no domínio sem imagem;
+
+Identifique em cada uma das relações abaixo qual(ou quais) dos itens acima fazem com que elas deixem de ser função.
+
+a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa o seu irmão.
+b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
+c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
+
+
+`2.` Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
+
+a) `f(x)=\sqrt{x}`
+b) `f(x)=\frac{1}{3-x}`
+c) `f(x)=\frac{1}{\sqrt{x}}`
+d) `f(x)=\frac{1}{x+8}`
+e) `f(x)=mdc(30,x)` ,  em que `mdc` = maior divisor comum.
+f) `f(x)=x^2+5x+1`
+g) `f(x)=\sqrt{x-5}`
+h) `f(x)=\frac{\sqrt{3x-1}}{2x+9}`
+
+Como estava estudando funções ele resolveu determinar para cada expressão um *domínio*, `A`, e um *contradomínio*, `B`, que a tornasse a lei de associação de uma função `f:A \to B`. Para isso, ele produziu a seguinte tabela:
+
+.. table:: 
+    :widths: 3 3 3
+    :column-alignment: center center center
+    
+    +-------------+-----------------------------+---------------------+
+    | Expressão   |         domínio `A`         |  contradomínio `B`  |
+    +=============+=============================+=====================+
+    |    `(a)`    |        `\mathbb{R}^+`       |     `\mathbb{R}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(b)`    |                             |     `\mathbb{R}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(c)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(e)`    |                             |     `\mathbb{Z}`    |
+    +-------------+-----------------------------+---------------------+
+    |    `(f)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(g)`    |                             |    `\mathbb{R}^+`   |
+    +-------------+-----------------------------+---------------------+
+    |    `(h)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+
+Ajude o estudante a completar a tabela.
+
+
+Gráfico
+=======
+
+As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, um gráfico pode causar maior impacto àqueles que o leem. 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=infograficos.png
+   :width: 600px
+   :align: center
+
+   http://www.freepik.com/free-vector/infographic-elements-pack_772624.htm
+
+Saber representar graficamente conjuntos de dados e suas relações pode fazer toda a diferença na hora de transmitir informações. Há muitos tipos de gráficos e cada um tem a sua particularidade e serve para transmitir as informações de forma específica, como no caso da Estatística, em que a escolha do tipo de gráfico adequado é fundamental. Nesta seção iremos estudar especificamente a representação gráfica das funções.
+
+Vamos imaginar a seguinte situação:
+
+Ação promocional
+---------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Perceber as vantagens da representação gráfica em detrimento da tabela. 
+   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Observe para seus alunos que, mesmo apresentando um panorama mais geral do comportamento, o gráfico não substitui a tabela.
+   * Para os itens de análise do crescimento e decrescimento pode ser útil conectar os pontos com uma linha poligonal, contudo é importante estar atento de que os segmentos que conectam os pontos consecutivos não são dados do problema, uma vez que o domínio dessa função é um conjunto finito.
+   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum meme, evento negativo associado à empresa, dentre outros.
+
+Uma empresa resolve lançar uma ação promocional na internet através de uma *hashtag* e um mês depois o CEO dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais por dia durante aquele mês. O funcionário resolveu apresentar o dados das seguintes duas formas:
+
+.. table::
+   :widths: 1 3
+   :column-alignment: center center
+
+   +-----+------------+
+   | Dia | Quantidade |
+   +=====+============+
+   |  1  |     137    |
+   +-----+------------+
+   |  2  |     152    |
+   +-----+------------+
+   |  3  |     194    |
+   +-----+------------+
+   |  4  |     231    |
+   +-----+------------+
+   |  5  |     278    |
+   +-----+------------+
+   |  6  |     282    |
+   +-----+------------+
+   |  7  |     276    |
+   +-----+------------+
+   |  8  |     767    |
+   +-----+------------+
+   |  9  |     917    |
+   +-----+------------+
+   |  10 |     1048   |
+   +-----+------------+
+   |  11 |     1337   |
+   +-----+------------+
+   |  12 |     1881   |
+   +-----+------------+
+   |  13 |     1779   |
+   +-----+------------+
+   |  14 |     1692   |
+   +-----+------------+
+   |  15 |     1703   |
+   +-----+------------+
+   |  16 |     1721   |
+   +-----+------------+
+   |  17 |     1456   |
+   +-----+------------+
+   |  18 |     684    |
+   +-----+------------+
+   |  19 |     512    |
+   +-----+------------+
+   |  20 |     483    |
+   +-----+------------+
+   |  21 |     521    |
+   +-----+------------+
+   |  22 |     479    |
+   +-----+------------+
+   |  23 |     356    |
+   +-----+------------+
+   |  24 |     327    |
+   +-----+------------+
+   |  25 |     398    |
+   +-----+------------+
+   |  26 |     1120   |
+   +-----+------------+
+   |  27 |     1591   |
+   +-----+------------+
+   |  28 |     1476   |
+   +-----+------------+
+   |  29 |     1475   |
+   +-----+------------+
+   |  30 |     1419   |
+   +-----+------------+
+ 
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=hashtags.png
+   :width: 700px
+   :align: center
+ 
+ 
+#. Quantas vezes a *hashtag* foi mencionada mais de 1500 vezes em um dia?
+#. Em que dia a *hashtag* foi mais citada?
+#. Identifique todos os períodos em que houve crescimento no número de citações.
+#. Faça o mesmo com o decrescimento.
+#. Escreva um parágrafo explicando o comportamento global do gráfico, apontando possíveis causas para as variações observadas.
+
+Uma função, essencialmente, relaciona duas grandezas ou variáveis, de forma que, uma vez estabelecida a maneira de associá-las, obtemos pares `(x,y)` em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que o par é apresentado é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são os elementos do produto cartesiano entre dois conjuntos, como definimos a seguir.
+ 
+.. admonition:: Definição 
+
+   Dados dois conjuntos `A` e `B`, o **produto cartesiano** de `A` por `B` é o seguinte conjunto de pares ordenados
+   
+.. math::
+
+   A\times B=\{(a,b) \; ; \; a\in A, b\in B\}.
+
+Por exemplo, considere os seguintes conjuntos `A=\{p,q\}` e `B=\{1,2,3,4\}`. O produto cartesiano de `A` por `B` é o conjunto formado pelos pares ordenados onde o primeiro elemento é uma das letras `p` ou `q` e o segundo elemento é um número natural entre 1 e 4, inclusive. Podemos enumerar todos os elementos desse produto cartesiano, a saber:
+
+.. math::
+
+   A\times B=\{(p,1),(p,2),(p,3),(p,4),(q,1),(q,2),(q,3),(q,4)\}. 
+
+Caso desejássemos formar o produto de `B` por `A`, obteríamos outro conjunto, diferente do anterior:
+
+.. math::
+
+   B\times A=\{(1,p),(1,q),(2,p),(2,q),(3,p),(3,q),(4,p),(4,q)\}. 
+
+Nesse exemplo foi possível enumerar todas as possibilidades para o produto cartesiano por causa da particularidade de termos os dois conjuntos finitos. No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou algum subconjunto dele) não conseguiremos enumerar da mesma maneira. Contudo, utilizando a representação dos números reais por meio de uma reta podemos representar o produto cartesiano `\mathbb{R}\times \mathbb{R}=\{(a,b) \; ; \; a,b\in \mathbb{R}\}` de uma maneira especial, que você já conhece, chamada **plano cartesiano**: para isto desenhamos duas retas ortogonais que se cruzam em suas origens conforme a figura abaixo.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=plano_cartesiano.png
+   :width: 400px
+   :align: center
+   
+Cada uma das retas é conhecida como um **eixo** do plano cartesiano. No eixo horizontal, conhecido como **eixo das abscissas**, estão localizadas as primeiras coordenadas de cada par ordenado, sendo os números positivos marcados à direita da origem e os negativos à esquerda. No eixo vertical, chamado de **eixo das ordenadas**, estão marcados as segundas coordenadas de cada par, sendo os números positivos colocados acima da origem e os negativos abaixo.
+
+Atirando flechas (OBMEP)
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Revisar a localização de pontos no plano cartesiano.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta atividade tem apenas o caráter de revisão. Caso perceba a necessidade, explore mais atividades desse tipo.
+
+
+Manoel testa sua pontaria lançando cinco flechas que atingiram o alvo nos pontos `A, B, C, D` e `E`, de coordenadas `A = (1,-1), B = (2,5; 1), C = (-1, 4), D = (-4, -4)` e `E=(6, 5)`.
+
+A tabela mostra quantos pontos se ganha quando a flecha acerta um ponto dentro de cada uma das três regiões, conforme mostra a figura.
+
+.. tikz::
+    
+    \definecolor{qqccqq}{rgb}{0,0.8,0}
+    \definecolor{ffffqq}{rgb}{1,1,0}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \definecolor{wqwqwq}{rgb}{0.37,0.37,0.37}
+	\clip(-11,-11) rectangle (15,18);
+	\draw [color=qqccqq,fill=qqccqq,fill opacity=1.0] (0,0) circle (6.cm);
+	\draw [color=ffffqq,fill=ffffqq,fill opacity=1.0] (0,0) circle (4.cm);
+	\draw [color=ffqqqq,fill=ffqqqq,fill opacity=1.0] (0,0) circle (2.cm);
+	\draw [color=wqwqwq] (7,-6)-- (-7,-6);
+	\draw [color=wqwqwq] (7,-5)-- (-7,-5);
+	\draw [color=wqwqwq] (7,-4)-- (-7,-4);
+	\draw [color=wqwqwq] (7,-3)-- (-7,-3);
+	\draw [color=wqwqwq] (7,-2)-- (-7,-2);
+	\draw [color=wqwqwq] (7,-1)-- (-7,-1);
+	\draw [color=wqwqwq] (7,0)-- (-7,0);
+	\draw [color=wqwqwq] (7,1)-- (-7,1);
+	\draw [color=wqwqwq] (7,2)-- (-7,2);
+	\draw [color=wqwqwq] (7,3)-- (-7,3);
+	\draw [color=wqwqwq] (7,4)-- (-7,4);
+	\draw [color=wqwqwq] (7,5)-- (-7,5);
+	\draw [color=wqwqwq] (7,6)-- (-7,6);
+	\draw [color=wqwqwq] (-6,7)-- (-6,-7);
+	\draw [color=wqwqwq] (-5,7)-- (-5,-7);
+	\draw [color=wqwqwq] (-4,7)-- (-4,-7);
+	\draw [color=wqwqwq] (-3,7)-- (-3,-7);
+	\draw [color=wqwqwq] (-2,7)-- (-2,-7);
+	\draw [color=wqwqwq] (-1,7)-- (-1,-7);
+	\draw [color=wqwqwq] (0,7)-- (0,-7);
+	\draw [color=wqwqwq] (1,7)-- (1,-7);
+	\draw [color=wqwqwq] (2,7)-- (2,-7);
+	\draw [color=wqwqwq] (3,7)-- (3,-7);
+	\draw [color=wqwqwq] (4,7)-- (4,-7);
+	\draw [color=wqwqwq] (5,7)-- (5,-7);
+	\draw [color=wqwqwq] (6,7)-- (6,-7);
+	\draw (0,0) node[anchor=north west] {\Large{$0$}};
+	\draw (2,0) node[anchor=north west] {\Large{$2$}};
+	\draw (4,0) node[anchor=north west] {\Large{$4$}};
+	\draw (6,0) node[anchor=north west] {\Large{$6$}};
+	\draw (8,0.5) node[anchor=north west] {\Large{abscissa}};
+	\draw (0.5,8) node[anchor=north west] {\Large{ordenada}};
+	\draw [->,line width=1.2pt] (-8,0) -- (8,0);
+	\draw [->,line width=1.2pt] (0,-8) -- (0,8);
+	\draw [color=qqccqq] (-10,8)-- (-9,8);
+	\draw [color=qqccqq] (-9,8)-- (-9,7);
+	\draw [color=qqccqq] (-9,7)-- (-10,7);
+	\draw [color=qqccqq] (-10,7)-- (-10,8);
+	\draw [color=ffffqq] (-10,8)-- (-10,9);
+	\draw [color=ffffqq] (-10,9)-- (-9,9);
+	\draw [color=ffffqq] (-9,9)-- (-9,8);
+	\draw [color=ffffqq] (-9,8)-- (-10,8);
+	\draw [color=ffqqqq] (-10,10)-- (-10,9);
+	\draw [color=ffqqqq] (-10,9)-- (-9,9);
+	\draw [color=ffqqqq] (-9,9)-- (-9,10);
+	\draw [color=ffqqqq] (-9,10)-- (-10,10);
+	\fill[color=qqccqq,fill=qqccqq,fill opacity=1.0] (-10,8.) -- (-9,8.) -- (-9,7.) -- (-10,7.) -- cycle;
+	\fill[color=ffffqq,fill=ffffqq,fill opacity=1.0] (-10,8.) -- (-10,9.) -- (-9,9.) -- (-9,8.) -- cycle;
+	\fill[color=ffqqqq,fill=ffqqqq,fill opacity=1.0] (-10,10.) -- (-10,9.) -- (-9,9.) -- (-9,10.) -- cycle;
+	\draw (-8.2,7.8) node[anchor=north west] {\Large{$50$ \ pontos}};
+	\draw (-8.5,8.8) node[anchor=north west] {\Large{$100$ \ pontos}};
+	\draw (-8.5,9.8) node[anchor=north west] {\Large{$300$ \ pontos}};
+	\draw (-9.5,11) node[anchor=north west] {\Large{$\times \ 1000$ \ pontos}};
+	
+
+#. Marque os pontos `A, B, C, D` e `E`.
+#. Quantas flechas ele acertou no interior do menor círculo?
+#. Ao todo, quantos pontos Manoel fez?
+
+Já vimos alguns exemplos de funções em atividades anteriores, vamos explorá-los um pouco mais.
+
+
+Números triangulares no plano
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Perceber o gráfico como subconjunto do produto cartesiano do domínio pelo contradomínio.
+   * Trabalhar gráficos de funções com domínios discretos.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chamar a atenção para o fato de que os pontos não devem ser ligados, uma vez que o domínio é o conjunto dos número naturais.
+   * Perceber que os pontos desse gráfico não são colineares, de fato, trata-se de uma função do tipo quadrática.
+   
+#. Represente geometricamente o produto cartesiano `\mathbb{N}\times \mathbb{N}`. 
+#. Usando a representação anterior como um sistema de coordenadas cartesianas marque o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
+
+
+Do mapa para o gráfico
+-----------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Trabalhar com conjuntos não numéricos.
+   * Estender a definição para o conjuntos dos números reais positivos, a partir de uma tabela.
+   * Estimular a criatividade na hora de representar graficamente um conjunto de dados.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (a) a ideia é que o estudante escreva por extenso o conjunto dos pares ordenados: `\{(0,11;` Verde `),(0,12 ;` Amarelo `), ...\}`.
+   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores no eixo vertical. No último item, uma representação possível é um retângulo colorido como a escala apresentada no item (a) da Atividade "Colorindo o Mapa", em que se indique os tempos onde ocorre a mudança de cor. Nesse caso chame a atenção para que decidam as cores do extremos (bola aberta ou fechada).
+   * Estimule a criatividade nas representações.
+   * Caso, alguma estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal, chame a atenção para o fato de que essa relação deixa de ser função.
+   
+#. A partir das colunas *Tempo* e *Cor* da atividade "Colorindo o Mapa", escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
+#. Represente graficamente este conjunto de pares ordenados.
+#. Especifique os valores de tempo mínimo e máximo para cada cor, isto é, os intervalos de números reais a que estão associadas cada uma das cores.
+#. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
+
+
+Voltando ao elevador
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Acompanhar passo a passo a construção do gráfico da função.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chame a atenção para a importância do contexto na representação correta do gráfico. É importante que seus estudantes tenham a ideia equivocada de que sempre devemos "ligar os pontos".
+  
+
+Na atividade "No elevador" apresentamos uma situação em que você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+
+.. table::
+   :widths: 3 3
+   :column-alignment: center center
+
+
+   +-------+--------------------+
+   | Andar | Tempo (s)          |
+   +=======+====================+
+   |   14  |          0         |
+   +-------+--------------------+
+   |   10  |          2         |
+   +-------+--------------------+
+   | 6     |          4         |
+   +-------+--------------------+
+   | 2     |          6         |
+   +-------+--------------------+
+   |0      |          ?         |
+   +-------+--------------------+
+
+Anteriormente observamos que podemos considerar o andar como função do tempo. A cada tempo está associado um único andar e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_1.png
+   :width: 400px
+   :align: center
+   
+Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão os andares. Suponha que desejamos determinar o tempo associado a cada um dos andares, qual seria uma boa estratégia para resolvermos essa questão utilizando a figura?
+
+Primeiramente observamos que os pontos estão alinhados (você sabe justificar essa afirmação?) e portanto é uma tarefa simples encontrar os pontos procurados. Para isso estamos supondo que o movimento do elevador seja uniforme, isto é, ele desce a uma velocidade constante.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_2.png
+   :width: 400px
+   :align: center
+   
+   
+#. A partir da figura, determine em quanto tempo o elevador chegará à recepeção.
+#. Na figura anterior estão representados os pontos que correspondem aos andares `11, 12` e `13`. Determine os tempos associados a eles.
+#. Represente graficamente e determine as coordenadas dos pares ordenados que estão sobre a reta associados aos demais andares.
+
+Agora que já temos os pontos marcados, vamos traçar o gráfico que representa a situação descrita na atividade.
+
+Talvez a sua primeira ideia tenha sido ligar os pontos, preenchendo a reta pontilhada. Mas vamos analisar a situação com mais atenção.
+
+No instante `0` o elevador está no décimo quarto andar, ponto `(0,14)` da figura e após `0,5s` ele chega no andar de número `13`, ponto `(0,5;13)`. Como não existem andares fracionários, vamos convencionar que o elevador só chega em um determinado andar quando ele para naquele andar. Sendo assim, no intervalo `[0;0,5)` o elevador ainda está no décimo quarto andar, isto é, todo `0\leqslant x<0,5` terá ordenada `14`.
+
+O mesmo comportamento se repete para os valores de `x` no intervalo `[0,5;1)` que terão ordenada `13` e assim sucessivamente. A parte do gráfico correpondente ao intervalo `[0,1)` está representada na figura abaixo.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_3.png
+   :width: 400px
+   :align: center
+
+#. Faça o gráfico para o intervalo `[0,7]`.
+ 
+
+
+.. admonition:: Definição 
+
+   Dada uma função `f: A \to B` definimos o seu gráfico como sendo o conjunto dos pares ordenados `(x,y)` em que `x \in A` e `y=f(x)`.
+   Simbolicamente,
+   
+   .. math::
+
+   	\{ (x,y) \in A \times B \ ;\  y=f(x) \}
+
+Imaginando gráficos
+------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Intuir sobre crescimento e decrescimento de funções através de seus gráficos.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Não existe resposta única para cada item. Certifique-se de que seus estudantes tenham argumentos consistentes sobre as suas escolhas. Você pode sugerir que eles compartilhem entre si os seus argumentos.
+   * É fundamental definir o que representa cada eixo, por exemplo, no item (I), se consideramos o tempo no eixo horizontal e a intensidade sonora no vertical, somente os gráficos (e) e (h) consideram o silêncio inicial, no entanto o gráfico (h) não leva em conta que "*rapidamente* todos estavam aplaudindo e se manifestando" e ainda há diminuição na intensidade sonora. Portanto, o gráfico (e) é o mais adequado. Agora, caso coloquemos no eixo horizontal a quantidade pessoas aplaudindo, os mais adequados são os gráficos (a) ou (d), eles passam pela origem e são crescentes.
+
+Associe cada uma das situações apresentadas a seguir a um dos gráficos dados abaixo. Explique sua escolha e escreva, em cada um dos eixos, o que eles representam. 
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graficos.png
+   :width: 600px
+   :align: center
+
+
+`(I)` Após um concerto houve um grande silêncio. Então uma pessoa na platéia começou a aplaudir. Gradualmente, as pessoas a sua volta também começaram a apludir de forma que rapidamente todos estavam aplaudindo e se manifestando.
+
+`(II)` Se o preço cobrado pelo ingresso de um cinema for muito baixo, seu prorietário irá perder dinheiro. Por outro lado, se o valor cobrado for muito alto, poucas pessoas irão pagar e novamente o proprietário vai perder dinheiro. Um cinema deve portanto cobrar um preço moderado por seu ingresso de forma que seja lucrativo.
+
+`(III)` Preços estão agora subindo mais lentamente do que em qualquer época nos últimos cinco anos.
+
+`(IV)` Em uma corrida, aquele que corre mais lentamente irá demorar mais tempo para completar a prova.
+
+* Adaptado do artigo *Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.*
+
+.. note:: Colocar figura e diminuir a descontinuidade
+
+.. admonition:: Definição 
+
+   Uma função `f: \mathbb{R} \to \mathbb{R}` é dita *crescente* quando
+   
+   .. math::
+
+   		x_1<x_2 \Longrightarrow f(x_1)<f(x_2)
+	
+   E é dita decrescente quando
+    
+   .. math::
+
+   		x_1<x_2 \Longrightarrow f(x_1)>f(x_2)
+
+.. note:: 
+	Falta falar de Zero de Função e Interseção com eixo y
+
+Exercícios
+---------
+
+.. note:: 
+	Exercicios de produto cartesiano, marcar pontos, traçar retas.
+
+Aprofundamento
+---------------
+
+`1.`  Uma chapa metálica quadrada é posicionada num sistema de coordenadas cartesiano de forma que ocupe a região dada pelo produto cartesiano `[2,10]\times [0,8]`, isto é, a região formada pelos pares ordenados `(x,y)` em que `2\leqslant x\leqslant 10` e `0\leqslant y\leqslant 8`, como mostra a figura abaixo.
+
+
+.. tikz::
+
+   \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (0,0) grid (11.979044374511444,9.496648594153639);
+	\draw[->,color=black] (-0.5881726245274497,0.) -- (11.979044374511444,0.);
+	\foreach \x in {,1,2,3,4,5,6,7,8,9,10,11}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-0.42159619430354267) -- (0.,9.496648594153639);
+	\foreach \y in {,1,2,3,4,5,6,7,8,9}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-0.5881726245274497,-0.42159619430354267) rectangle (11.979044374511444,9.496648594153639);
+	\fill[color=cqcqcq,fill=cqcqcq,fill opacity=0.8] (2.,0.) -- (10.,0.) -- (10.,8.) -- (2.,8.) -- cycle;
+	\draw [color=cqcqcq] (2.,0.)-- (10.,0.);
+	\draw [color=cqcqcq] (10.,0.)-- (10.,8.);
+	\draw [color=cqcqcq] (10.,8.)-- (2.,8.);
+	\draw [color=cqcqcq] (2.,8.)-- (2.,0.);
+	\draw (4.438714175088108,7.784057258010101) node[anchor=north west] {$D$};
+	\draw (10.04467862073781,8.757400535386644) node[anchor=north west] {$C$};
+	\draw (10.056999421717261,0.8474463065797986) node[anchor=north west] {$B$};
+	\draw (3.108067669307519,1.8700727878741414) node[anchor=north west] {$A$};
+	\draw [fill=black] (10.,8.) circle (3.0pt);
+	\draw [fill=black] (5.,7.) circle (3.0pt);
+	\draw [fill=black] (10.,0.) circle (3.0pt);
+	\draw [fill=black] (3.,1.) circle (3.0pt);
+
+
+Sabe-se que a temperatura em graus Celsius em cada ponto `(x,y)` da chapa é dada pela seguinte expressão:
+
+.. math::
+
+	T(x,y)=\frac{100}{\sqrt{x^2+y^2}}
+
+a) Determine as coordenadas dos pontos `A`, `B`, `C` e `D` indicados na figura.
+b) Determine as temperaturas nos pontos `A`, `B`, `C` e `D`.
+c) Caminhando ao longo da borda inferior, afastando-se da origem, o que se pode afirmar sobre a temperatura na placa?
+
+
+===========
+Função Afim
+===========
+
+.. admonition:: Objetivos Específicos 
+
+	**(EM11MT07)** Reconhecer função afim e suas representações algébrica e gráfica, identificar o modelo de variação e a taxa de variação, incluindo os casos em que a variação é proporcional (linear), e utilizar essas noções para representar e resolver problemas como os de Movimento Uniforme, entre outros
+
+	**(EM11MT08)** Reconhecer progressões aritméticas como sequências numéricas de variação linear, associá-las a funções afins de domínios discretos e utilizá-las para resolver problemas.
+    
+	**(EM11MT09)** Resolver e elaborar problemas que possam ser representados por inequações polinomiais de 1º grau, associando o conjunto solução a pontos da reta numérica, contribuindo para desenvolver a noção de intervalo, entre outros.
+
+
+.. admonition:: Pré-requisitos 
+
+	**(EF05MT20)** Resolver problemas que envolvam variação de proporcionalidade direta entre duas grandezas para associar a quantidade de um produto ao valor a pagar, ampliar ou reduzir ingredientes de receitas, escalas em mapas, entre outros.
+    
+	**(EF06MT17)** Resolver e elaborar problemas envolvendo porcentagens (1%, 5%, 15%, ... até 100%), a partir da ideia de proporcionalidade, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos da Educação Financeira, entre outros.
+
+	**(EF07MT20)** Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e inversa entre duas grandezas em contextos significativos.
+
+	**(EF07MT21)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax+b=0` , iniciando a compreensão da linguagem algébrica.
+    
+	**(EF09MT17)** Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.
+    
+.. admonition:: Desdobramentos imediatos
+
+	**(EM11MT02)** Reconhecer grandezas formadas pela relação entre duas outras grandezas - velocidade (m/s; km/h), densidade (g/cm`^3`; pessoas/km`^2`) e energia (Kwh), entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
+
+	**(EM22CN02)** Analisar dados sobre quantidades de reagentes e produtos envolvidos nas transformações químicas, reconhecendo a importância da conservação da massa e da existência de proporcionalidade entre massas nos sistemas produtivos
+     
+.. note:: **Roteiro**
+
+   `1.` Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: biologia, química, física, sociologia.
+   
+   `2.` **Definição:**  Diz-se que duas grandezas são proporcionais quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número, a quantidade correspondente da outra fica multiplicada ou dividida pelo mesmo número. No primeiro caso, a proporcionalidade se chama direta e, no segundo, inversa; as grandezas se dizem diretamente proporcionais ou inversamente proporcionais. (TRAJANO, 1883)
+
+   
+   `3.` Para o professor: Apresentar o Teorema Fundamental da Proporcionalidade.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=teorema_proporcionalidade.png
+      :width: 450px
+      :align: center
+   Exemplo de aplicação: *A área do setor circular é diretamente proporcional ao seu ângulo. Caderneta de poupança (Juros como função do tempo).*
+   
+   `4.` Apresentar função afim.
+   
+      * Mostrar que para obter a expressão algébrica de uma função afim é suficiente conhecer seus valores em dois pontos.
+      * Mostrar que: (i) `f(x)=ax+b` é crescente se, e somente se, a taxa de variação `a` é positiva. (ii) `f(x)` é decrescente se, e somente se, a taxa de variação `a` é negativa.
+   
+   `5.` Mostrar que o gráfico cartesiano de uma função afim é uma reta.
+   
+   `6.` Atividade mostrando a passagem de linear para afim.
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=linear_afim.png
+      :width: 450px
+      :align: center
+      
+      Retomar a ideia dos juros simples (montante como função do tempo).
+   `7.` Para o professor: Comentar sobre o Teorema de Caracterização da função afim.
+   
+   `8.` Atividades relacionando Progressão Aritmética e função afim de domínio discreto.
+   
+   `9.` [Sugestão para um Aprofundamento]
+   
+   Em uma vinícola podemos comprar vinho por litro. Neste caso, o vinho é colocado em garrafões com capacidade de 5 litros. O vinho é vendido por 2,50 euros por litro e cada garrafão é vendido a 1,50 euros.
+   
+   1. Calcule o preço que um cliente deverá pagar por 2 litros, por 5 litros e por 7 litros. Explique seus cálculos.
+   2. Exprima o preço `p(x)` em função do volume `x` (expresso em litros) de vinho comprado, para `x` compreendido entre 0 e 15.
+   3. Trace a curva que representa a função p no plano cartesiano. Usando a escala 1cm para 1 litro no eixo das abscissas e 1 cm para 2 euros nas ordenadas.
+   
+   Chez un vigneron, on peut acheter du vin au litre. Dans ce cas, le vin est conditionné dans des cubitainers d’une capacité de 5 litres. Le vin est vendu 2,50 € le litre et un cubitainer est vendu 1,50 €.
+	1. Calculer le prix qu’un client devra payer pour 2 litres achetés, puis pour 5 litres et 7 litres. Expliquez brièvement vos calculs.
+	2. Exprimer le prix p(x) en fonction du volume x (exprimé en litres) de vin acheté, x étant compris entre 0 et 15.
+	3. Tracer la courbe représentative de la fonction p dans un repère orthogonal. On prendra 1 cm pour 1 litre en abscisses et 1 cm pour 2 € en ordonnées.
+
+   **Referências**
+   
+   [1] Stacey, K. (1989). Finding and using patterns in linear generalizing problems. Educational Studies in Mathematics, 20, 147–164.
+
+   [2] Orton, J., Orton, A. & Roper, T. (1999). Pictorial and practical contexts and the perception of pattern. In A. Orton (Ed.), Patterns in the teaching and learning of mathematics. London, England: Cassell.
+   
+   [3] Azevedo, Ricardo Santos (2104). Resolução de problemas no ensino de função afim, TCC PROFMAT-IMPA.
+   
+   [4] Lima, E. A matemática do ensino médio – Vol. 1,  9a ed. Coleção do Professor de Matemática. Sociedade Brasileira de Matemática, Rio de Janeiro, 2006;
+
+   
+=================
+Função Quadrática
+=================
+
+.. admonition:: Objetivos Específicos
+
+	**(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+
+.. admonition:: Pré-requisitos 
+
+	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
+
+	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+
+.. note:: **Roteiro**
+
+   `1.` Motivar o conceito de função quadrática com problemas de geometria.
+   
+   **Ideia 1.** Explorar (utilizando Geogebra) área e perímetro de retângulos inscritos no triângulo.
+   
+   **Ideia 2.** Problema dos retângulos de perímetro constante: altura `=f` (base): função afim, área `=f` (base): função quadrática.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulos.png
+      :width: 600px
+      :align: center
+
+   
+   `2.` Explorar, de maneira informal, as noções de zero, crescimento e decrescimento, máximo da função.
+   
+   `3.` Parábola (lugar geométrico).
+   
+   `4.` Gráfico de Função Quadrática.
+   
+   `5.` Forma Algébrica: polinômios de grau 2 (revisitar os exemplos explorando suas versões algébricas e apresentar novos problemas, tipo lucro máximo, etc).
+   
+   `6.` Revisão sobre fatoração (Algeplan?)
+   
+   `7.` Forma canônica do Trinômio.
+   
+   `8.` Interseções com os Eixos, Vértice da Parábola.
+   
+   `9.` Movimento Uniformemente Variado.
+   
+   `10.` Taxa de variação linear (no gráfico) [Aprofundamento]
+   
+   `11.` Sinal da Imagem e Inequações [Aprofundamento] 
+   
+   **Referências**
+   
+   [1] Expose_bourdeaux_2010.pptx
+
+titulo
+=======
+
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, em que queremos saber em que condições uma determinada quantidade assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Vamos ver em um exemplo.
+
+O retângulo que se move
+-----------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * 
+   * Os estudantes podem ter dificuldade com a expressão "em função de"...
+
+
+Considere o triângulo `ABC`, retângulo em `\hat{B}`, cujos lados medem `AB=10` e `BC=8`. Marcamos um ponto `M` em qualquer lugar do lado `AB` e a partir dele, inscrevemos um retângulo `MNPB` no triângulo `ABC`, conforme ilustra a figura abaixo.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulo_01.png
+   :width: 300px
+   :align: center
+
+Vamos imaginar que o ponto `M` é móvel, e portanto o retângulo se move junto com ele.
+
+#. Faça um desenho onde o ponto `M` está posicionado em um lugar diferente da figura anterior.
+#. Enquanto o ponto `M` se move, o que muda e o que não muda na construção?
+#. Descreva precisamente o que acontece com o retângulo.
+
+Observe a seguinte figura
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=quadratica_02.png
+   :width: 300px
+   :align: center
+
+#. Qual dos dois retângulos tem o maior perímetro, `BMNP` ou `BM'N'P'`? Por que?
+#. Descreva o comportamento geral do perímetro do retângulo à medida que o ponto `M` se move. Quando ele tem o maior perímetro? E o menor?
+#. O que aconteceria com os perímetros caso o triângulo retângulo `ABC` fosse isósceles?
+#. Qual dos dois retângulos tem a maior área? Por que?
+#. Descreva o comportamento geral da área do retângulo à medida que o ponto `M` se move. Quando ele tem a maior área?
+
+Vamos chamar de `x` o segmento `AM`. Escreva em função de `x` as seguintes grandezas:
+
+#. O comprimento `MB`.
+#. O comprimento `MN`.
+#. O perímetro `MBNP`.
+#. A área de `BMNP`.
+
+Acesse o aplicativo Geogebra <link> e observe... (completar)
+
+
+
+
+Exercícios
+-----------
+
+Considere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
+
+.. tikz::
+
+  \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+  \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+  \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-3,-2) grid (6,5);
+  \clip(-2.9174583680872663,-2.0220658086854835) rectangle (6.036227110425744,5.031600421266512);
+  \draw [samples=50,rotate around={-180.:(1.,4.)},xshift=1.cm,yshift=4.cm,line width=2pt,color=ffzzqq,domain=-6.0:6.0)] plot (\x,{(\x)^2/2});
+  \draw [->,line width=1.pt] (-3.,0.) -- (6.,0.);
+  \draw [->,line width=1.pt] (0.,-2.) -- (0.,5.);
+  \draw (-0.4,0.04) node[anchor=north west] {$0$};
+  \draw (0.9,-0.05) node[anchor=north west] {$1$};
+  \draw (-0.5,1.2) node[anchor=north west] {$1$};
+  \draw [line width=1.pt] (-0.1,1.)-- (0.1,1.);
+  \draw [line width=1.pt] (1.,-0.1)-- (1.,0.1);
+  \begin{scriptsize}
+  \draw [fill=black] (1.,4.) circle (3.5pt);
+  \draw [fill=black] (3.,2.) circle (3.5pt);
+  \end{scriptsize}
+
+
+A forma canônica de `g` é:
+
+a) `g(x)=0,5(x-1)^2+4`
+b) `g(x)=0,5(x+1)^2+4`
+c) `g(x)=-0,5(x-1)^2+4`
+d) `g(x)=-0,5(x-1)^2-4`
