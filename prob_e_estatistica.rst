@@ -79,3 +79,34 @@ Probabilidade e Estatística
 Apresentação
 ------------
 A Estatística está presente em nossa vida cotidiana muito mais do que nos damos conta. Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre dada pesquisa de opinião, assistir um jornalista explicando a margem de erro ao divulgar pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos estão tentando nos informar, a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização, são exemplos de situações diárias em que a Estatística está presente.  Como os avanços tecnológicos um grande volume de dados passou a ser coletados por empresas relacionadas a cartão de crédito, internet, empresas de aviação, entretenimento e etc.. Atualmente, enquanto estamos navegando ingenuamente pela internet, dados sobre os assuntos mais pesquisados, horários mais utilizados entre outros estão sendo coletados e sendo depositado em um grande banco com informação de todos os usuários da web. Não é coincidência que o Netflix vive oferecendo os filmes que você gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. E você pode estar perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+
+
+
+
+Seção
+=====
+Atividade: Corrida de cavalos
+
+Existem 13 cavalos numerados de 1 a 13.
+Cada aluno irá apostar em um único cavalo, segundo à seguinte premiação:
+
+.. table:: Legenda
+   :widths: 1 1
+   :column-alignment: center center
+
+   =========  ============
+   Cavalo      Premiação  
+   =========  ============
+    1 ou 13      10,0 
+    2 ou 12       5,0    
+    3 ou 11      2,0      
+    4 ou 10      0,5 
+    5 ou 9       0,1
+    6 ou 8       Abraço 
+    7           Aperto mão 
+   =========  ============
+
+.. admonition:: Para o professor
+
+
+
