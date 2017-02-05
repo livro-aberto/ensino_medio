@@ -78,11 +78,8 @@ Probabilidade e Estatística
 ------------
 Apresentação
 ------------
-A Estatística está presente no cotidiana muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
-Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos.  
-
-DÚVIDA:
-Não é coincidência que o Netflix frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
+A Estatística está presente no cotidiano muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para a aprovação dos mesmos para comercialização.  
+Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Esses dados podem, por exemplo, ser usados para ações intencionais dessas empresas. Não é coincidência quando um site de rede social apresenta uma propaganda quue interessa ao usuárrio.... frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
@@ -162,7 +159,6 @@ ATIVIDADE: PESQUISA
       • Qual a relevância da pesquisa pretendida? Como a pesquisa pode ser importante?
       • Qual a população a ser consultada?
       • Como os dados serão coletados? Que instrumentos de coleta de dados  serão usados?
-   
    v. Após a coleta dos dados, é importante planejar a organização e a análise dos dados. Investigue a melhor forma de cumprir essas etapas.
       • Um gráfico vale mais do que mil palavras. Qual recurso gráfico usarão para dar visibildade à pesquisa?
       • Que recursos tecnológicos serão usados para organizar e tabular os dados coletados?
