@@ -7,12 +7,23 @@ Geometria
    :numbered:
    :glob:
 
-   geometria
-   geometria_cap1
-   geometria_cap1_op_vet
-   geometria_cap1_exercicios
-   geometria_cap2
-   geometria_cap3
-   geometria_semelhanca
+   GE101-0
+   GE101-1
+   GE101-2
+   GE101-E
+   GEX01-0
+   GEX01-E
+   GEX01-A
+   GE201-0
+   GE202-0
+   GE203-0
+   GE301-0
+   GE302-0
+   GE303-0
+   GE401-0
+   GE501-0
+   GE502-0
+   GE503-0
+   GE504-0
 
 

@@ -1,15 +1,3 @@
-************
-Exercícios
-************
-
-Lista de exercícios
-
-
-
-   
-
-
-
 .. _my-aprofundamentos_vetores:
 
 ***********
