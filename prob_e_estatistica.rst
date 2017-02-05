@@ -7,9 +7,12 @@ Probabilidade e Estatística
 
    (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos em pesquisas realizadas pelos estudantes, considerando localização (centro) e dispersão (amplitude).
 
+Pensando em 3 modulos de +/- 18 aulas, um para cada ano do ensino médio e um modulo de apronfundamento eletivo.
 
 .. note::
    1) **Roteiro do capítulo**:
+   
+  
    
    O módulo de Estatística será desenvolvido segundo o referencial teórico apresentado no Guidelines for Assessment and Instruction in Statistics Education (GAISE), College Report(2016)
    O GAISE aponta que os cursos de Estatística introdutório devem enfatizar o pensamento estatístico.
@@ -44,8 +47,11 @@ Probabilidade e Estatística
    
    O texto inicial do capítulo de Estatística deve começar com um convite ao aluno a despertar sua curiosidade para a importância e abrangência da estatística e da probabilidade no mundo contemporâneo. 
    
+   Partir dos artigos e manchetes para fazer o aluno pensar em que etapa da pesquisa. Exemplo do livro da pfenning 
+   
    
      **1º ano**
+     - começar com um ba
      Pesquisa já realizada – Apresentar a pesquisa PENSE para introduzir os conceitos referentes ao planejamento de uma pesquisa, a partir da construção de um instrumento de coleta de dados.
      
      Definir Tipos de variáveis (qualitativa e quantitativa). Importante conceito que geralmente é pouco explorado em livros didáticos (Cileda,2015) e que é a base para escolha correta dos tipos de gráficos e medidas que serão utilizadas na análise.
@@ -73,13 +79,32 @@ Probabilidade e Estatística
     
     Guidelines for Assessment and Instruction in Statistics Education (GAISE) 
  College Report 2016.:ref:`GAISE,2016`(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
-  
-  
-  
+  https://www.stat.auckland.ac.nz/~iase/publications/assessbk/
+  Part III. Innovative Models for Classroom Assessment
+
+Part IV. Assessing Understanding of Probability
+
+
+.. _sec-coloque-aqui-o-nome:
+
+Entendendo o papel da Estatistica
+=====
+
+ 
+
 Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
 Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Não é coincidência que o Netflix (empresa que oferece filmes e séries pela internet) frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+
+
+.. _sec-coloque-aqui-o-nome:
+
+Transformando os dados em informação/Como surgem os dados?
+=====
+
+Conforme conversamos anteriormente a cada minuto milhoes de dados estao 
+Seria interessante estabelecer a diferença 
 
 Formular a pergunta antes de introduzir o exemplo.
 Serã que n"ao mudamos o exemplo, poderia ser o perfil dos alunos que fazem o enem.
@@ -143,10 +168,26 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
   
 Nas perguntas acima, observa-se parte do instrumento de coleta da PENSE contendo tanto perguntas fechadas (onde as respostas possíveis estão definidas no próprio instrumento de coleta, ex: perguntas de 1 à 4 do questionário), como também abertas ( aquelas onde não existe uma reposta pré definida, ex: questões 5 e 6). Cada pergunta do instrumento de coleta é denominada **variável**. Assim, cada variável é uma característica da população estudada que se deseja conhecer. 
 
+
+
+
 As variáveis denominadas qualitativas são aquelas cujo o conteúdo é expresso por categorias (*atributo*), podendo ser  classificadas como variáveis qualitativas ordinais (onde existe uma ordenação nas respostas), como exemplo as perguntas 1 e 2, do instrumento de coleta da PENSE. E também nominais ( quando não há uma ordem definida), como exemplificam as perguntas 3 e 4 desta parte do questionário apresentado como exemplo.
 Denminam-se variáveis quantitativas aquelas  cujas  [características precisam ser aferidas a partir da adoção de alguma escala quantitativa, ou seja, que possam ser representadas por valores numérico, podendo ser discretas ou contínuas. 
 
 **Variáveis discretas**: características mensuráveis que podem assumir apenas um número inteiro, geralmente sendo resultado de contagens. Exemplos: número de cigarros fumados por dia, número de filhos. 
+
+
+
+
+
+
+
+   
+------------
+Apresentação
+------------
+A Estatística está presente no cotidiano muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para a aprovação dos mesmos para comercialização.  
+Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Esses dados podem, por exemplo, ser usados para ações intencionais dessas empresas. Não é coincidência quando um site de rede social apresenta uma propaganda quue interessa ao usuárrio.... frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 **Variáveis contínuas**: características mensuráveis que assumem valores em uma escala contínua, comumente obtidas pelo uso de um instrumento de medida. Exemplos: peso (balança), altura (fita métrica), tempo (relógio), pressão arterial, idade. 
 
@@ -293,8 +334,15 @@ OBJETIVO
 Realizar um estudo cujo tema seja relevante para a comunidade local da escola ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
    
 ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
-   
-   i. O trabalho pode ser realizado em grupos de até 5 (cinco) componentes ou individualmente; Os componentes não precisam ser de uma mesma turma.
+
+
+
+
+
+
+
+
+  i. O trabalho pode ser realizado em grupos de até 5 (cinco) componentes ou individualmente; Os componentes não precisam ser de uma mesma turma.
    ii. O tema da pesquisa deve, necessariamente, ser relevante para a comunidade local da escola ou para a sociedade em geral. Por exemplo, pesquisar o tempo gasto pelos estudantes no deslocamento diáro até a escola pode ser relevante para administração da escola. No entanto, saber se o número da casa, ou do apartamento, em que os alunos moram é par ou é ímpar, dificilmente terá qualquer importância para a dinâmica e a convivência na escola ou em sociedade.
    iii. O grupo pode escolher o tema da sua pesquisa, mas deve fundamentar e justificar a escolha, defendendo a sua relevância. Para que o trabalho possa ser desenvolvido, o tema escolhido deve ser aprovado pelos professores responsáveis pela proposição e pela orientação da atividade.
    iv. Como o tema aprovado, antes de começar a desenvolver a pesquisa, o grupo deve planejá-la:
@@ -313,3 +361,40 @@ ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
    vii. Por fim, façam uma avaliação do desenvolviemnto do trabalho.  
    viii. Não se esqueçam de organizar a bibliografia de referência. 
    
+   
+   
+------------
+Apresentação
+------------
+A Estatística está presente em nossa vida cotidiana muito mais do que nos damos conta. Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre dada pesquisa de opinião, assistir um jornalista explicando a margem de erro ao divulgar pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos estão tentando nos informar, a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização, são exemplos de situações diárias em que a Estatística está presente.  Como os avanços tecnológicos um grande volume de dados passou a ser coletados por empresas relacionadas a cartão de crédito, internet, empresas de aviação, entretenimento e etc.. Atualmente, enquanto estamos navegando ingenuamente pela internet, dados sobre os assuntos mais pesquisados, horários mais utilizados entre outros estão sendo coletados e sendo depositado em um grande banco com informação de todos os usuários da web. Não é coincidência que o Netflix vive oferecendo os filmes que você gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. E você pode estar perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+
+
+
+
+Seção
+=====
+Atividade: Corrida de cavalos
+
+Existem 13 cavalos numerados de 1 a 13.
+Cada aluno irá apostar em um único cavalo, segundo à seguinte premiação:
+
+.. table:: Legenda
+   :widths: 1 1
+   :column-alignment: center center
+
+   =========  ============
+   Cavalo      Premiação  
+   =========  ============
+    1 ou 13      10,0 
+    2 ou 12       5,0    
+    3 ou 11      2,0      
+    4 ou 10      0,5 
+    5 ou 9       0,1
+    6 ou 8       Abraço 
+    7           Aperto mão 
+   =========  ============
+
+.. admonition:: Para o professor
+
+
+
