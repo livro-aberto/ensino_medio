@@ -1,0 +1,141 @@
+
+=================
+Função Quadrática
+=================
+
+.. admonition:: Objetivos Específicos
+
+	**(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+
+.. admonition:: Pré-requisitos 
+
+	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
+
+	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+
+.. note:: **Roteiro**
+
+   `1.` Motivar o conceito de função quadrática com problemas de geometria.
+   
+   **Ideia 1.** Explorar (utilizando Geogebra) área e perímetro de retângulos inscritos no triângulo.
+   
+   **Ideia 2.** Problema dos retângulos de perímetro constante: altura `=f` (base): função afim, área `=f` (base): função quadrática.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulos.png
+      :width: 600px
+      :align: center
+
+   
+   `2.` Explorar, de maneira informal, as noções de zero, crescimento e decrescimento, máximo da função.
+   
+   `3.` Parábola (lugar geométrico).
+   
+   `4.` Gráfico de Função Quadrática.
+   
+   `5.` Forma Algébrica: polinômios de grau 2 (revisitar os exemplos explorando suas versões algébricas e apresentar novos problemas, tipo lucro máximo, etc).
+   
+   `6.` Revisão sobre fatoração (Algeplan?)
+   
+   `7.` Forma canônica do Trinômio.
+   
+   `8.` Interseções com os Eixos, Vértice da Parábola.
+   
+   `9.` Movimento Uniformemente Variado.
+   
+   `10.` Taxa de variação linear (no gráfico) [Aprofundamento]
+   
+   `11.` Sinal da Imagem e Inequações [Aprofundamento] 
+   
+   **Referências**
+   
+   [1] Expose_bourdeaux_2010.pptx
+
+titulo
+=======
+
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, em que queremos saber em que condições uma determinada quantidade assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Vamos ver em um exemplo.
+
+O retângulo que se move
+-----------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * 
+   * Os estudantes podem ter dificuldade com a expressão "em função de"...
+
+
+Considere o triângulo `ABC`, retângulo em `\hat{B}`, cujos lados medem `AB=10` e `BC=8`. Marcamos um ponto `M` em qualquer lugar do lado `AB` e a partir dele, inscrevemos um retângulo `MNPB` no triângulo `ABC`, conforme ilustra a figura abaixo.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulo_01.png
+   :width: 300px
+   :align: center
+
+Vamos imaginar que o ponto `M` é móvel, e portanto o retângulo se move junto com ele.
+
+#. Faça um desenho onde o ponto `M` está posicionado em um lugar diferente da figura anterior.
+#. Enquanto o ponto `M` se move, o que muda e o que não muda na construção?
+#. Descreva precisamente o que acontece com o retângulo.
+
+Observe a seguinte figura
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=quadratica_02.png
+   :width: 300px
+   :align: center
+
+#. Qual dos dois retângulos tem o maior perímetro, `BMNP` ou `BM'N'P'`? Por que?
+#. Descreva o comportamento geral do perímetro do retângulo à medida que o ponto `M` se move. Quando ele tem o maior perímetro? E o menor?
+#. O que aconteceria com os perímetros caso o triângulo retângulo `ABC` fosse isósceles?
+#. Qual dos dois retângulos tem a maior área? Por que?
+#. Descreva o comportamento geral da área do retângulo à medida que o ponto `M` se move. Quando ele tem a maior área?
+
+Vamos chamar de `x` o segmento `AM`. Escreva em função de `x` as seguintes grandezas:
+
+#. O comprimento `MB`.
+#. O comprimento `MN`.
+#. O perímetro `MBNP`.
+#. A área de `BMNP`.
+
+Acesse o aplicativo Geogebra <link> e observe... (completar)
+
+
+
+
+Exercícios
+-----------
+
+Considere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
+
+.. tikz::
+
+  \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+  \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+  \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-3,-2) grid (6,5);
+  \clip(-2.9174583680872663,-2.0220658086854835) rectangle (6.036227110425744,5.031600421266512);
+  \draw [samples=50,rotate around={-180.:(1.,4.)},xshift=1.cm,yshift=4.cm,line width=2pt,color=ffzzqq,domain=-6.0:6.0)] plot (\x,{(\x)^2/2});
+  \draw [->,line width=1.pt] (-3.,0.) -- (6.,0.);
+  \draw [->,line width=1.pt] (0.,-2.) -- (0.,5.);
+  \draw (-0.4,0.04) node[anchor=north west] {$0$};
+  \draw (0.9,-0.05) node[anchor=north west] {$1$};
+  \draw (-0.5,1.2) node[anchor=north west] {$1$};
+  \draw [line width=1.pt] (-0.1,1.)-- (0.1,1.);
+  \draw [line width=1.pt] (1.,-0.1)-- (1.,0.1);
+  \begin{scriptsize}
+  \draw [fill=black] (1.,4.) circle (3.5pt);
+  \draw [fill=black] (3.,2.) circle (3.5pt);
+  \end{scriptsize}
+
+
+A forma canônica de `g` é:
+
+a) `g(x)=0,5(x-1)^2+4`
+b) `g(x)=0,5(x+1)^2+4`
+c) `g(x)=-0,5(x-1)^2+4`
+d) `g(x)=-0,5(x-1)^2-4`
