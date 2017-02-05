@@ -7,9 +7,12 @@ Probabilidade e Estatística
 
    (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos em pesquisas realizadas pelos estudantes, considerando localização (centro) e dispersão (amplitude).
 
+Pensando em 3 modulos de +/- 18 aulas, um para cada ano do ensino médio e um modulo de apronfundamento eletivo.
 
 .. note::
    1) **Roteiro do capítulo**:
+   
+  
    
    O módulo de Estatística será desenvolvido segundo o referencial teórico apresentado no Guidelines for Assessment and Instruction in Statistics Education (GAISE), College Report(2016)
    O GAISE aponta que os cursos de Estatística introdutório devem enfatizar o pensamento estatístico.
@@ -44,8 +47,11 @@ Probabilidade e Estatística
    
    O texto inicial do capítulo de Estatística deve começar com um convite ao aluno a despertar sua curiosidade para a importância e abrangência da estatística e da probabilidade no mundo contemporâneo. 
    
+   Partir dos artigos e manchetes para fazer o aluno pensar em que etapa da pesquisa. Exemplo do livro da pfenning 
+   
    
      **1º ano**
+     - começar com um ba
      Pesquisa já realizada – Apresentar a pesquisa PENSE para introduzir os conceitos referentes ao planejamento de uma pesquisa, a partir da construção de um instrumento de coleta de dados.
      
      Definir Tipos de variáveis (qualitativa e quantitativa). Importante conceito que geralmente é pouco explorado em livros didáticos (Cileda,2015) e que é a base para escolha correta dos tipos de gráficos e medidas que serão utilizadas na análise.
@@ -73,13 +79,32 @@ Probabilidade e Estatística
     
     Guidelines for Assessment and Instruction in Statistics Education (GAISE) 
  College Report 2016.:ref:`GAISE,2016`(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
-  
-  
-  
+  https://www.stat.auckland.ac.nz/~iase/publications/assessbk/
+  Part III. Innovative Models for Classroom Assessment
+
+Part IV. Assessing Understanding of Probability
+
+
+.. _sec-coloque-aqui-o-nome:
+
+Entendendo o papel da Estatistica
+=====
+
+ 
+
 Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
 Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Não é coincidência que o Netflix (empresa que oferece filmes e séries pela internet) frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+
+
+.. _sec-coloque-aqui-o-nome:
+
+Transformando os dados em informação/Como surgem os dados?
+=====
+
+Conforme conversamos anteriormente a cada minuto milhoes de dados estao 
+Seria interessante estabelecer a diferença 
 
 Formular a pergunta antes de introduzir o exemplo.
 Serã que n"ao mudamos o exemplo, poderia ser o perfil dos alunos que fazem o enem.
