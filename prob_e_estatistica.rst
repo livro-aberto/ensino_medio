@@ -168,10 +168,26 @@ A seguir apresenta-se a parte do questionário da PENSE que fez perguntas espec�
   
 Nas perguntas acima, observa-se parte do instrumento de coleta da PENSE contendo tanto perguntas fechadas (onde as respostas possíveis estão definidas no próprio instrumento de coleta, ex: perguntas de 1 à 4 do questionário), como também abertas ( aquelas onde não existe uma reposta pré definida, ex: questões 5 e 6). Cada pergunta do instrumento de coleta é denominada **variável**. Assim, cada variável é uma característica da população estudada que se deseja conhecer. 
 
+
+
+
 As variáveis denominadas qualitativas são aquelas cujo o conteúdo é expresso por categorias (*atributo*), podendo ser  classificadas como variáveis qualitativas ordinais (onde existe uma ordenação nas respostas), como exemplo as perguntas 1 e 2, do instrumento de coleta da PENSE. E também nominais ( quando não há uma ordem definida), como exemplificam as perguntas 3 e 4 desta parte do questionário apresentado como exemplo.
 Denminam-se variáveis quantitativas aquelas  cujas  [características precisam ser aferidas a partir da adoção de alguma escala quantitativa, ou seja, que possam ser representadas por valores numérico, podendo ser discretas ou contínuas. 
 
 **Variáveis discretas**: características mensuráveis que podem assumir apenas um número inteiro, geralmente sendo resultado de contagens. Exemplos: número de cigarros fumados por dia, número de filhos. 
+
+
+
+
+
+
+
+   
+------------
+Apresentação
+------------
+A Estatística está presente no cotidiano muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para a aprovação dos mesmos para comercialização.  
+Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Esses dados podem, por exemplo, ser usados para ações intencionais dessas empresas. Não é coincidência quando um site de rede social apresenta uma propaganda quue interessa ao usuárrio.... frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
 
 **Variáveis contínuas**: características mensuráveis que assumem valores em uma escala contínua, comumente obtidas pelo uso de um instrumento de medida. Exemplos: peso (balança), altura (fita métrica), tempo (relógio), pressão arterial, idade. 
 
