@@ -195,6 +195,61 @@ c) `\overrightarrow{AD}` =
    Nesta atividade apresenta-se um contexto físico (cálculo da resultante de duas forças aplicadas em um ponto de um mesmo objeto) que potencializa a aplicação da regra do paralelogramo para a adição de dois vetores. A regra do paralelogramo será, no entanto, apresentada ao aluno apenas na observação feita após a realização dessa atividade. Por ora, pretende-se somente que o aluno observe dois procedimentos equivalentes para determinar `\overrightarrow{F_{1}}+\overrightarrow{F_{2}}`, reconhecendo que `\overrightarrow{F_{1}}+\overrightarrow{F_{2}} = \overrightarrow{F_{2}}+\overrightarrow{F_{1}}`.  Entretanto, pode acontecer de algum aluno, lembrando-se do que possa ter aprendido em etapas anteriores da sua escolarização, sugira o uso da “regra do paralelogramo”. Neste caso, recomenda-se que o professor discuta com a turma as soluções apresentadas e antecipe o significado da tal regra que é discutido na observação.
    
 
+.. admonition:: Atividade 3 (Rodrigo e Camila antigo)
+
+   Reproduza a tabela abaixo em seu caderno fazendo o que se pede: 
+   
+	.. tikz:: malha quadriculada
+
+			\draw[step=1cm,gray,very thin] (-7,-6) grid (7,6);
+			\fill[blue] (0,0) circle (0.2);
+			\node[right] at (0,0) {$A$};
+   
+   
+
+   a) Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{6}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
+
+   b) Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
+
+   c) Sejam `A`, `B` e `C` colineares de forma que `A` esteja entre `B` e `C`. O que você acontece com as coordenadas do vetor `\overrightarrow{AC}`?
+
+   d) Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
+
+.. table:: 
+	:widths: 1 3
+	:column-alignment: center center
+
++-----------------------+-----------------------+-----------------------+
+| `\overrightarrow{AB}` | `\overrightarrow{BC}` | `\overrightarrow{AC}` |
++-----------------------+-----------------------+-----------------------+
+| `\binom{-2}{-5}`      | `\binom{6}{3}`        |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+.. note::
+   Cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+   * `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+   * `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+   * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+
+   Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
+      
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
+
+   A definição pode ser estendida de forma natural para vetores no espaço. Neste caso, os vetores possuem três coordenadas e a adição de vetores fica definida pela expressão:
+     
+   .. math::
+
+      \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
+
+
 Atividade 3 - Adicionando Forças
 ---------
 
