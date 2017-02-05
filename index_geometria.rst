@@ -3,17 +3,11 @@ Geometria
 #########
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :glob:
 
-   GE101-0
-   GE101-1
-   GE101-2
-   GE101-E
-   GEX01-0
-   GEX01-E
-   GEX01-A
+   GE101
    GE201-0
    GE202-0
    GE203-0
