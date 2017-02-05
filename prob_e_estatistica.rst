@@ -318,8 +318,15 @@ OBJETIVO
 Realizar um estudo cujo tema seja relevante para a comunidade local da escola ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
    
 ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
-   
-   i. O trabalho pode ser realizado em grupos de até 5 (cinco) componentes ou individualmente; Os componentes não precisam ser de uma mesma turma.
+
+
+
+
+
+
+
+
+  i. O trabalho pode ser realizado em grupos de até 5 (cinco) componentes ou individualmente; Os componentes não precisam ser de uma mesma turma.
    ii. O tema da pesquisa deve, necessariamente, ser relevante para a comunidade local da escola ou para a sociedade em geral. Por exemplo, pesquisar o tempo gasto pelos estudantes no deslocamento diáro até a escola pode ser relevante para administração da escola. No entanto, saber se o número da casa, ou do apartamento, em que os alunos moram é par ou é ímpar, dificilmente terá qualquer importância para a dinâmica e a convivência na escola ou em sociedade.
    iii. O grupo pode escolher o tema da sua pesquisa, mas deve fundamentar e justificar a escolha, defendendo a sua relevância. Para que o trabalho possa ser desenvolvido, o tema escolhido deve ser aprovado pelos professores responsáveis pela proposição e pela orientação da atividade.
    iv. Como o tema aprovado, antes de começar a desenvolver a pesquisa, o grupo deve planejá-la:
@@ -338,3 +345,40 @@ ORIENTAÇÕES PARA O DESENVOLVIMENTO DO TRABALHO
    vii. Por fim, façam uma avaliação do desenvolviemnto do trabalho.  
    viii. Não se esqueçam de organizar a bibliografia de referência. 
    
+   
+   
+------------
+Apresentação
+------------
+A Estatística está presente em nossa vida cotidiana muito mais do que nos damos conta. Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre dada pesquisa de opinião, assistir um jornalista explicando a margem de erro ao divulgar pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos estão tentando nos informar, a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização, são exemplos de situações diárias em que a Estatística está presente.  Como os avanços tecnológicos um grande volume de dados passou a ser coletados por empresas relacionadas a cartão de crédito, internet, empresas de aviação, entretenimento e etc.. Atualmente, enquanto estamos navegando ingenuamente pela internet, dados sobre os assuntos mais pesquisados, horários mais utilizados entre outros estão sendo coletados e sendo depositado em um grande banco com informação de todos os usuários da web. Não é coincidência que o Netflix vive oferecendo os filmes que você gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. E você pode estar perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
+
+
+
+
+Seção
+=====
+Atividade: Corrida de cavalos
+
+Existem 13 cavalos numerados de 1 a 13.
+Cada aluno irá apostar em um único cavalo, segundo à seguinte premiação:
+
+.. table:: Legenda
+   :widths: 1 1
+   :column-alignment: center center
+
+   =========  ============
+   Cavalo      Premiação  
+   =========  ============
+    1 ou 13      10,0 
+    2 ou 12       5,0    
+    3 ou 11      2,0      
+    4 ou 10      0,5 
+    5 ou 9       0,1
+    6 ou 8       Abraço 
+    7           Aperto mão 
+   =========  ============
+
+.. admonition:: Para o professor
+
+
+
