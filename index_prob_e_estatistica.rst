@@ -7,4 +7,4 @@ Probabilidade e estatística
    :numbered:
    :glob:
 
-   prob_e_estatistica*
+   PE103-0
