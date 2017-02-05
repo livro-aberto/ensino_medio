@@ -514,19 +514,17 @@ Atividade 2
 
 .. admonition:: Atividade 3
 
-   Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
-
-   * `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
-   * `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
-   * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
-
-
-   https://www.geogebra.org/m/mwBjY5xN
+   Reproduza a tabela abaixo em seu caderno fazendo o que se pede: 
    
-   Utilizando a ferramenta acima, faça o que se pede:
+	.. tikz:: malha quadriculada
+
+			\draw[step=1cm,gray,very thin] (-7,-6) grid (7,6);
+			\fill[blue] (0,0) circle (0.2);
+			\node[right] at (0,0) {$A$};
    
    
-   a) Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{8}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
+
+   a) Sendo `\overrightarrow{AB} = \binom{-2}{-5}` e 		`\overrightarrow{BC} = \binom{6}{3}`, encontre as coordenadas de `\overrightarrow{AC}`.
 
    b) Mantendo `A` e `C` fixos, mova o ponto `B`. O que você observa nas coordenadas do vetor `\overrightarrow{AC}`?
 
@@ -534,11 +532,30 @@ Atividade 2
 
    d) Faça `C = A` e mova o ponto `B` livremente. Qual o valor de `\overrightarrow{AC}`?
 
+.. table:: 
+	:widths: 1 3
+	:column-alignment: center center
 
++-----------------------+-----------------------+-----------------------+
+| `\overrightarrow{AB}` | `\overrightarrow{BC}` | `\overrightarrow{AC}` |
++-----------------------+-----------------------+-----------------------+
+| `\binom{-2}{-5}`      | `\binom{6}{3}`        |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
 .. note::
+   Cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
+
+   * `x_{u}` e `y_{u}` as coordenadas do vetor `\overrightarrow{u}`;
+   * `x_{v}` e `y_{v}` as coordenadas do vetor `\overrightarrow{v}`;
+   * `x_{w}` e `y_{w}` as coordenadas do vetor `\overrightarrow{w}`.
+
    Com base nas atividades anteriores, observa-se que, dados dois vetores `\overrightarrow{u}` e `\overrightarrow{v}`,  as coordenadas da adição dos dois vetores ficam determinadas pelas somas das respectivas coordenadas dos vetores iniciais, isto é:
-   
-   
+      
    .. math::
 
       \overrightarrow{u}+\overrightarrow{v}=\binom{x_{u}}{y_{u}}+\binom{x_{v}}{y_{v}}=\binom{x_{u}+x_{v}}{y_{u}+y_{v}}
