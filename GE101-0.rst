@@ -163,16 +163,16 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
-a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
+#. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
 
-.. _fig-sertao-alagoano:
+   .. _fig-sertao-alagoano:
 
-.. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
-   :width: 1200px
-   :align: center
+   .. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
+      :width: 1200px
+      :align: center
 
    
-b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano?
+#. Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano?
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
@@ -227,7 +227,8 @@ Reproduza a figura no seu caderno e localize a provável posição `E'` do barco
 
    O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
    
-Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
+Este é um exemplo de grandeza vetorial. 
+Veremos que uma vez fixado um ponto de referência, chamado de origem, as posições inicial e final de um objeto também são grandezas vetoriais e o deslocamento é a *diferença* entre as posições final e inicial (veja a seção de Operações com Vetores para entender a diferença entre dois vetores).
 Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
 Atividade
@@ -282,7 +283,44 @@ O esquema na figura a seguir representa as velocidades das bolas de sinuca em um
 
    Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
-<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (.5,.5) {$A$};
+   \fill[blue] (.5,.5) circle (.08);
+   \node[below] at (1,1) {$B$};
+   \draw[very thick, red] (.5,.5)--(1,1);
+   \fill[blue] (1.5,1.5) circle (.08);
+   \node[below] at (1.5,1.5) {$C$};
+   \fill[blue] (2.7,2.7) circle (.08);
+   \node[below] at (2.7,2.7) {$D$};
+   \draw[very thick, red] (1.5,1.5)--(2.7,2.7);
+   \node at (3,-.6) {Segmentos de mesma direção e direções diferentes};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$E$};
+   \fill[blue] (2.4,2.4) circle (.08);
+   \node[below] at (2.4,2.4) {$F$};
+   \draw[very thick, red] (1,1)--(2.4,2.4);
+   \end{scope}
+   
+   \begin{scope}[xshift=6cm]
+   \draw (0,0)--(-1,3);
+   \node at (-.3,0) {$t$};
+   \fill[blue] (-.3,.9) circle (.08);
+   \node[below] at (-.4,.9) {$G$};
+   \fill[blue] (-.8,2.4) circle (.08);
+   \node[below] at (-.9,2.4) {$H$};
+   \draw[very thick, red] (-.3,.9)--(-.8,2.4);
+   %\node at (1.5,-.6) {Direções contrárias};
+   \end{scope}
+   
+As retas `r` e `s` são paralelas, assim os segmentos `AB`, `CD` e `EF` têm a mesma direção, `GH` tem direção diferente dos demais porque `t` não é paralela a `r` ou a `s`.
 
 Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo sentido quando apontam para o mesmo lado (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
@@ -402,5 +440,5 @@ Malhas não quadradas ou até não retangulares são úteis para situações esp
 Atividade: Vetores iguais
 ---------
 
-Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Usar malhas não retangulares. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
 
