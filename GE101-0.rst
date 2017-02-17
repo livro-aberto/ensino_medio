@@ -440,5 +440,35 @@ Malhas não quadradas ou até não retangulares são úteis para situações esp
 Atividade: Vetores iguais
 ---------
 
-Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Usar malhas não retangulares. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida quais dos vetores são iguais. 
 
+<Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.>
+
+     
+.. tikz:: malha oblíqua
+
+   [>=latex,
+      % font=\footnotesize,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{15}
+      \def\ymin{0}
+      \def\ymax{9}
+      \draw[very thin]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+      \draw[-latex, very thick, red](0, 0) -- (3, 4) node[above]{$a$};
+      \draw[-latex, very thick, red](7, 7) -- (4, 3) node[above]{$b$};
+      \draw[-latex, very thick, red](7, 1) -- (10, 5) node[above]{$c$};
+      \draw[-latex, very thick, red](14, 8) -- (11, 4) node[above]{$d$};
+      \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
+      \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
+      
+      
+        
