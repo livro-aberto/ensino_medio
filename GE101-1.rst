@@ -2,7 +2,7 @@
 Representação algébrica de vetores no plano
 ***********
 
-Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
+Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
 
 .. admonition:: Notação 
@@ -16,6 +16,34 @@ Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{X
    para representar o vetor do tipo `x` para a direita e `y` para cima.
    
 Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
+Observe que as nomenclaturas *esquerda-direita e cima-baixo*, *leste-oeste e norte-sul*, etc. usada para as direções são arbitrárias e dependem do contexto. É possível ser mais preciso do ponto de vista matemático: fixe um par de vetores com direções diferentes, digamos `\overrightarrow{u}` e `\overrightarrow{v}`. Qualquer outro vetor `\overrightarrow{w}` do plano pode ser expresso como `x` na direção do vetor `\overrightarrow{u}` e `y` na direção do vetor `\overrightarrow{v}`, para algum par `x` e `y` de números reais (este fato, embora intuitivo, pode ser justificado. Veja <CITAÇÃO> para entender mais). Estes vetores `\overrightarrow{u}` e `\overrightarrow{v}` determinam uma malha (veja a Figura <REFERÊNCIA>) em que `\overrightarrow{w} = \binom{x}{y}`.
+
+.. tikz:: Dois vetores de direções diferentes determinam uma malha.
+   
+    [>=latex,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{3}
+      \def\ymin{0}
+      \def\ymax{3}
+      \draw[very thin, gray]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+	\draw[-latex, thick, red] (0,0) -- (1,0);
+    \node at (.8,-.3) {$\overrightarrow{u}$};
+    \draw[-latex, thick, red] (0,0) -- (0,1);
+    \node at (-.3,.8) {$\overrightarrow{v}$};
+    \draw[-latex, thick] (0,0) -- (2,3);
+    \node at (1.5,2.9) {$\overrightarrow{w}$};
+    
+    \node at (8,1.5) {$\overrightarrow{w}=\binom{2}{3}$ na malha de $\overrightarrow{u}$ e $\overrightarrow{v}$.};
+
 
 Atividade: Um par ordenado para um vetor
 -----------
@@ -38,15 +66,24 @@ Determine as coordenadas dos vetores na malha abaixo.
     
     
 Atividade: Um vetor para um par ordenado
-----------
+----------------------------------------
 
 Para cada par ordenado abaixo determine uma representação geométrica do vetor na malha apresentada.
 
 a)
 
 
-Atividade
------
+Vetor posição
+-------------
+
+Você provavelmente já viu nos anos anteriores que quando temos um sistema de coordenadas num plano, os pontos ficam representados por coordenadas `(x,y)` de maneira muito similar à representação algébrica dos vetores.
+Um sistema de coordenadas, nada mais é do que uma malha com um ponto `O` fixado. 
+Este ponto é chamado de *origem do sistema de coordenadas* e é especialmente importante quando precisamos determinar a posição absoluta de um objeto.
+Se considerarmos a origem como tendo coordenadas `O = (0,0)`, então as coordenadas de um ponto `A = (x,y)` são as coordenadas do vetor `\overrightarrow{OA}=\binom{x}{y}` na mesma malha do sistema de coordenadas.
+A vantagem em se trabalhar com vetores ao invés de pontos é que com estes há operações bem definidas com as quais você pode fazer contas. Isso é o que mais precisamos em situações reais (ver <CITAÇÃO DA SEÇÃO OPERAÇÕES COM VETORES>).
+
+Atividade: Deslocamento com coordenadas
+---------------------------------------
 
 Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
 Considere o lado de um quadradinho da malha como sendo uma unidade.
@@ -92,7 +129,7 @@ Considere o lado de um quadradinho da malha como sendo uma unidade.
       \end{scope}
     
       
-Atividade
+Atividade: Grampos duplos para segurança em escaladas
 ------
 Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
    
