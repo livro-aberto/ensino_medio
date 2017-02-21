@@ -152,20 +152,23 @@ Teorema de Tales
 
 **Uma reta paralela a (e diferente de) um dos lados de um triângulo, determina nos outros dois lados segmentos proporcionais.**
 
-Afirmação equivalente: Dado um triângulo `ABC` e `r` reta paralela a `BC`, que intersecta `AB` e `AC` em `X` e `Y`, respectivamente, então `\dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}`.
+Afirmação equivalente: Dado um triângulo `ABC` e pontos `X \in AB` e `Y \in AC`. Se `XY` é paralelo a `BC`  então 
+
+.. math::
+
+   \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}.
 
 
 .. tikz:: Teorema de Tales
 
    \draw (0,0)--(1,3)--(5,0)--(0,0);
    \draw (0,1)--(5.3,1);
-   \node at (5.3,1.3) {$r$};
    \node at (0,-.3) {$B$};
    \node at (.9,3.3) {$A$};
    \node at (5,-.3) {$C$};
    \node at (.1,1.3) {$X$};
    \node at (3.8,1.3) {$Y$};
-   \node at (8.5,1.5) {$r\parallel BC \Rightarrow \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}$.};
+   \node at (8.5,1.5) {$XY \parallel BC \Rightarrow \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}$.};
    
    
 Atividade: Justificativa do Teorema de Tales
