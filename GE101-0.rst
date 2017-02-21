@@ -59,6 +59,12 @@ Vetores no plano
    Neste aspecto, cabe ressaltar que embora um vetor fique determinado por módulo, direção e sentido, não são necessárias três informações para se conhecer um vetor do plano, bastam duas pois o plano é bidimensional. 
    Provavelmente, por isso, alguns livros estrangeiros (e.g., ref e ref), usam apenas comprimento e sentido, endendendo a direção como derivada do sentido.
    
+   
+   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, é preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. 
+   Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. 
+   Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). 
+   Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
+
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
 .. Começo da Edição Marcos Paulo
@@ -79,7 +85,7 @@ Chama-se *grandeza escalar*, aquela que se pode representar por um número real.
 
 As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as mesmas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
-Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
+Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22 km/h:
 
 .. figure:: http://mpfaraujo.com/images/coluna_vento.png
 
@@ -98,11 +104,6 @@ As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física.
    #. Velocidade
    #. Aceleração
    #. Força
-
-.. admonition:: Para o professor
-
-   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
-
 
 Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
 Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades do vento em um mesmo instante.
@@ -162,6 +163,12 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
 #. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
 
    .. _fig-sertao-alagoano:
@@ -180,6 +187,17 @@ Atividade: Segmento Orientado
    
 Atividade: Deslocamento após a tempestade
 ----------------------------------------- 
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
+   
+   **Recomendações para o desenvolvimento da atividade:** 
+   
+   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
+   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
+   
+
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
@@ -389,6 +407,12 @@ Malhas não quadradas ou até não retangulares são úteis para situações esp
 Atividade: Vetores iguais
 ---------
 
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Identificar vetores iguais como aqueles que possuem mesmo comprimento, mesma direção e mesmo sentido usando as linhas da malha oblíqua. Distinguir vetores iguais de vetores parecidos. Distinguir vetores iguais de vetores simétricos.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
 Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida quais dos vetores são iguais. 
      
 .. tikz:: Vetores iguais e diferentes
@@ -419,6 +443,13 @@ Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida q
 
 Atividade: Deslocamento
 -----------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
 Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
 
 .. tikz::
@@ -460,6 +491,13 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
 
 Atividade: Velocidade
 ---------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
 O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e um jogador preste a chocar a bola branca no meio das outras duas. Após o choque, a bola branca fica parada e as bolas azul e amarela se movem com velocidades `v_1` e `v_2`, respectivamente.  Suponha que as bolas são iguais, que não existe atrito entre as bolas e a mesa e que o choque é *perfeitamente elástico*, isto é, que não há perda de energia mecânica após o choque.
 
 <FIGURAS>
@@ -470,6 +508,13 @@ O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e 
       
 Atividade: Força
 ----------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
 Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
    
    .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
