@@ -2,7 +2,7 @@
 Vetores no plano
 ********
 
-.. admonition:: Objetivos específicos
+.. admonition:: Objetivos específicos - previsão 4 aulas de 50 minutos
 
    BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
@@ -18,9 +18,7 @@ Vetores no plano
 
    BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
 
-
 .. note::
-  
    
    Roteiro do capítulo:
    
@@ -34,6 +32,7 @@ Vetores no plano
    8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
    9. Soma de vetores com representação visual e algébrica. [Wanderley]
    10. Exercícios e exercícios suplementares. [Todos]
+     
    
    
 .. admonition:: Para o professor
@@ -95,10 +94,10 @@ Indicar uma direção pode  ainda não ser suficientemente para a maioria dos le
 Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
 As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física. São exemplos de grandezas vetoriais:
-   a) Força
-   b) Velocidade
-   c) Deslocamento
-   d) Aceleração
+   #. Deslocamento
+   #. Velocidade
+   #. Aceleração
+   #. Força
 
 .. admonition:: Para o professor
 
@@ -228,53 +227,6 @@ Este é um exemplo de grandeza vetorial.
 Veremos que uma vez fixado um ponto de referência, chamado de origem, as posições inicial e final de um objeto também são grandezas vetoriais e o deslocamento é a *diferença* entre as posições final e inicial (veja a seção de Operações com Vetores para entender a diferença entre dois vetores).
 Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
-Atividade
--------
-Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
-
-.. tikz::
-       
-       \node at (-.5,1.3) {a)};
-      \fill[blue] (0,0) circle (.08);
-      \node[right] at (0,0) {$A$};
-      \fill[blue] (.5,1.5) circle (.08);
-      \node[right] at (0.5,1.5) {$B$};
-      \fill[blue] (1.5,-1) circle (.08);
-      \node[right] at (1.5,-1) {$C$};
-      \fill[blue] (2,1) circle (.08);
-      \node[right] at (2,1) {$D$};
-      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
-      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
-      
-      \begin{scope}[shift={(4.5cm,.25)}]
-      \node at (-.5,1.05) {b)};
-      \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {$B$};
-      \fill[blue] (1,0) circle (.08);
-      \node[above] at (1,0) {$A$};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {$C$};
-      \fill[blue] (1,-1) circle (.08);
-      \node[right] at (1,-1) {$D$};
-      
-      \begin{scope}[shift={(4.5cm,-.5)}]
-      \node at (-.5,1.55) {c)};
-      \fill[blue] (0,0) circle (.08);
-      \node[below] at (0,0) {$A=D$};
-      \fill[blue] (2,0) circle (.08);
-      \node[below] at (2,0) {$B$};
-      \fill[blue] (1,1.5) circle (.08);
-      \node[right] at (1,1.5) {$C$};
-      \end{scope}
-      \end{scope}
-
-Atividade
----------
-
-O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante num jogo. Determine quais bolas parecem possuir velocidades iguais.
-
-<figura de mesa de bilhar com diversas bolas, com vetores velocidades, alguns de módulos iguais e direções ou sentidos diferentes, outros com mesma velocidade>
 
 .. admonition:: Definição
 
@@ -464,5 +416,113 @@ Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida q
       \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
       \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
       
+
+Atividade: Deslocamento
+-----------------------
+Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
+
+.. tikz::
+       
+       \node at (-.5,1.3) {a)};
+      \fill[blue] (0,0) circle (.08);
+      \node[right] at (0,0) {$A$};
+      \fill[blue] (.5,1.5) circle (.08);
+      \node[right] at (0.5,1.5) {$B$};
+      \fill[blue] (1.5,-1) circle (.08);
+      \node[right] at (1.5,-1) {$C$};
+      \fill[blue] (2,1) circle (.08);
+      \node[right] at (2,1) {$D$};
+      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
+      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
+      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
       
-        
+      \begin{scope}[shift={(4.5cm,.25)}]
+      \node at (-.5,1.05) {b)};
+      \fill[blue] (0,0) circle (.08);
+      \node[above] at (0,0) {$B$};
+      \fill[blue] (1,0) circle (.08);
+      \node[above] at (1,0) {$A$};
+      \fill[blue] (2,0) circle (.08);
+      \node[above] at (2,0) {$C$};
+      \fill[blue] (1,-1) circle (.08);
+      \node[right] at (1,-1) {$D$};
+      
+      \begin{scope}[shift={(4.5cm,-.5)}]
+      \node at (-.5,1.55) {c)};
+      \fill[blue] (0,0) circle (.08);
+      \node[below] at (0,0) {$A=D$};
+      \fill[blue] (2,0) circle (.08);
+      \node[below] at (2,0) {$B$};
+      \fill[blue] (1,1.5) circle (.08);
+      \node[right] at (1,1.5) {$C$};
+      \end{scope}
+      \end{scope}
+
+Atividade: Velocidade
+---------------------
+O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e um jogador preste a chocar a bola branca no meio das outras duas. Após o choque, a bola branca fica parada e as bolas azul e amarela se movem com velocidades `v_1` e `v_2`, respectivamente.  Suponha que as bolas são iguais, que não existe atrito entre as bolas e a mesa e que o choque é *perfeitamente elástico*, isto é, que não há perda de energia mecânica após o choque.
+
+<FIGURAS>
+
+#. Represente os vetores velocidades após o choque.
+#. Se a velocidade inicial da bola branca for 1 m/s, é verdade que `v_1 + v_2 = 1` m/s? Explique cuidadosamente a sua resposta.
+
+      
+Atividade: Força
+----------------
+Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
+   
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+            :align: center
+            :width: 200px
+            
+            foto: Elke Wetzig
+            
+   .. tikz::
+
+      \node at (-1.5,-.3) {(I)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      \end{scope}
+      \end{scope}
+      
+#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
+

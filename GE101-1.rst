@@ -73,14 +73,24 @@ Para cada par ordenado abaixo determine uma representação geométrica do vetor
 a)
 
 
-Vetor posição
--------------
+Exemplo: Vetor posição
+-----------------------
 
 Você provavelmente já viu nos anos anteriores que quando temos um sistema de coordenadas num plano, os pontos ficam representados por coordenadas `(x,y)` de maneira muito similar à representação algébrica dos vetores.
 Um sistema de coordenadas, nada mais é do que uma malha com um ponto `O` fixado. 
 Este ponto é chamado de *origem do sistema de coordenadas* e é especialmente importante quando precisamos determinar a posição absoluta de um objeto.
 Se considerarmos a origem como tendo coordenadas `O = (0,0)`, então as coordenadas de um ponto `A = (x,y)` são as coordenadas do vetor `\overrightarrow{OA}=\binom{x}{y}` na mesma malha do sistema de coordenadas.
 A vantagem em se trabalhar com vetores ao invés de pontos é que com estes há operações bem definidas com as quais você pode fazer contas. Isso é o que mais precisamos em situações reais (ver <CITAÇÃO DA SEÇÃO OPERAÇÕES COM VETORES>).
+
+Exemplo: Várias coordenadas de um mesmo vetor
+---------------------------------------------
+Atividade para que se observe a dependência da malha para a representação algébrica de um vetor.  (Representação algébrica de vetores).
+
+
+Atividade: Plano inclinado
+--------------------------
+Decomposição de vetores numa base.
+
 
 Atividade: Deslocamento com coordenadas
 ---------------------------------------
@@ -127,64 +137,9 @@ Considere o lado de um quadradinho da malha como sendo uma unidade.
       \node[right] at (1,1.5) {$C$};
       \end{scope}
       \end{scope}
-    
-      
-Atividade: Grampos duplos para segurança em escaladas
-------
-Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
-   
-   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
-            :align: center
-            :width: 200px
-            
-            foto: Elke Wetzig
-            
-   .. tikz::
 
-      \node at (-1.5,-.3) {(I)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (160:1.5) circle (.08);
-      \node[above] at (160:1.5) {\small Grampo 1};
-      \fill[blue] (20:1.5) circle (.08);
-      \node[above] at (20:1.5) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (160:1.5);
-      \draw[very thick, red] (0,0) -- (20:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
-      
-      
-      \begin{scope}[xshift=5cm]
-      \node at (-1.5,-.3) {(II)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (135:1.5) circle (.08);
-      \node[above] at (135:1.5) {\small Grampo 1};
-      \fill[blue] (45:1.5) circle (.08);
-      \node[above] at (45:1.5) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (135:1.5);
-      \draw[very thick, red] (0,0) -- (45:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
-      
-      
-      \begin{scope}[xshift=5cm]
-      \node at (-1.5,-.3) {(III)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (120:1.5) circle (.08);
-      \node[above] at (130:1.7) {\small Grampo 1};
-      \fill[blue] (60:1.5) circle (.08);
-      \node[above] at (50:1.7) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (120:1.5);
-      \draw[very thick, red] (0,0) -- (60:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
-      \end{scope}
-      \end{scope}
-      
-#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
-#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
-#. Justifique a sua escolha do item a) utilizando vetores.
+Atividade: Translação de figuras (ver SesaMath)
+-----------------------------------------------
+
 
 .. Fim edição Fabio e início de Wanderley
