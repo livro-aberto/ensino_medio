@@ -2,7 +2,7 @@
 Vetores no plano
 ********
 
-.. admonition:: Objetivos específicos
+.. admonition:: Objetivos específicos - previsão 4 aulas de 50 minutos
 
    BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
@@ -18,9 +18,7 @@ Vetores no plano
 
    BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
 
-
 .. note::
-  
    
    Roteiro do capítulo:
    
@@ -186,11 +184,17 @@ Atividade: Segmento Orientado
 
 a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas no mapa da FIGURA XX, qual das representações a seguir corresponde à velocidade do vento no Sertão Alagoano no momento da consulta.
 
-.. _fig-sertao-alagoano:
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
 
-.. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
-   :width: 1200px
-   :align: center
+#. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
+
+   .. _fig-sertao-alagoano:
+
+   .. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
+      :width: 1200px
+      :align: center
 
    
 b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tiver comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano? 
@@ -198,14 +202,22 @@ b) Se o segmento orientado usado para representar a velocidade do vento no mapa 
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
-----------   
-Não importa a origem (apresentação das componentes de um vetor)
------------
 
 .. _my-ativ-barcos:
    
 Atividade: Deslocamento após a tempestade
---------- 
+----------------------------------------- 
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
+   
+   **Recomendações para o desenvolvimento da atividade:** 
+   
+   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
+   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
+   
+
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
@@ -305,7 +317,44 @@ O esquema na figura a seguir representa as velocidades das bolas de sinuca em um
 
    Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
-<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (.5,.5) {$A$};
+   \fill[blue] (.5,.5) circle (.08);
+   \node[below] at (1,1) {$B$};
+   \draw[very thick, red] (.5,.5)--(1,1);
+   \fill[blue] (1.5,1.5) circle (.08);
+   \node[below] at (1.5,1.5) {$C$};
+   \fill[blue] (2.7,2.7) circle (.08);
+   \node[below] at (2.7,2.7) {$D$};
+   \draw[very thick, red] (1.5,1.5)--(2.7,2.7);
+   \node at (3,-.6) {Segmentos de mesma direção e direções diferentes};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$E$};
+   \fill[blue] (2.4,2.4) circle (.08);
+   \node[below] at (2.4,2.4) {$F$};
+   \draw[very thick, red] (1,1)--(2.4,2.4);
+   \end{scope}
+   
+   \begin{scope}[xshift=6cm]
+   \draw (0,0)--(-1,3);
+   \node at (-.3,0) {$t$};
+   \fill[blue] (-.3,.9) circle (.08);
+   \node[below] at (-.4,.9) {$G$};
+   \fill[blue] (-.8,2.4) circle (.08);
+   \node[below] at (-.9,2.4) {$H$};
+   \draw[very thick, red] (-.3,.9)--(-.8,2.4);
+   %\node at (1.5,-.6) {Direções contrárias};
+   \end{scope}
+   
+As retas `r` e `s` são paralelas, assim os segmentos `AB`, `CD` e `EF` têm a mesma direção, `GH` tem direção diferente dos demais porque `t` não é paralela a `r` ou a `s`.
 
 Intuitivamente, dois segmentos orientados de mesma direção têm o mesmo sentido se têm orientações iguais. Na representação geométrica, "apontam no mesmo sentido". (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
@@ -427,5 +476,167 @@ Você deve ter observado que, na discussão anterior consideramos que a malha da
 Atividade: Vetores iguais
 ---------
 
-Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Identificar vetores iguais como aqueles que possuem mesmo comprimento, mesma direção e mesmo sentido usando as linhas da malha oblíqua. Distinguir vetores iguais de vetores parecidos. Distinguir vetores iguais de vetores simétricos.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida quais dos vetores são iguais. 
+     
+.. tikz:: Vetores iguais e diferentes
+
+   [>=latex,
+      % font=\footnotesize,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{15}
+      \def\ymin{0}
+      \def\ymax{9}
+      \draw[very thin]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+      \draw[-latex, very thick, red](0, 0) -- (3, 4) node[above]{$a$};
+      \draw[-latex, very thick, red](7, 7) -- (4, 3) node[above]{$b$};
+      \draw[-latex, very thick, red](7, 1) -- (10, 5) node[above]{$c$};
+      \draw[-latex, very thick, red](14, 8) -- (11, 4) node[above]{$d$};
+      \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
+      \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
+      
+
+Atividade: Deslocamento
+-----------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
+
+.. tikz::
+       
+       \node at (-.5,1.3) {a)};
+      \fill[blue] (0,0) circle (.08);
+      \node[right] at (0,0) {$A$};
+      \fill[blue] (.5,1.5) circle (.08);
+      \node[right] at (0.5,1.5) {$B$};
+      \fill[blue] (1.5,-1) circle (.08);
+      \node[right] at (1.5,-1) {$C$};
+      \fill[blue] (2,1) circle (.08);
+      \node[right] at (2,1) {$D$};
+      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
+      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
+      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
+      
+      \begin{scope}[shift={(4.5cm,.25)}]
+      \node at (-.5,1.05) {b)};
+      \fill[blue] (0,0) circle (.08);
+      \node[above] at (0,0) {$B$};
+      \fill[blue] (1,0) circle (.08);
+      \node[above] at (1,0) {$A$};
+      \fill[blue] (2,0) circle (.08);
+      \node[above] at (2,0) {$C$};
+      \fill[blue] (1,-1) circle (.08);
+      \node[right] at (1,-1) {$D$};
+      
+      \begin{scope}[shift={(4.5cm,-.5)}]
+      \node at (-.5,1.55) {c)};
+      \fill[blue] (0,0) circle (.08);
+      \node[below] at (0,0) {$A=D$};
+      \fill[blue] (2,0) circle (.08);
+      \node[below] at (2,0) {$B$};
+      \fill[blue] (1,1.5) circle (.08);
+      \node[right] at (1,1.5) {$C$};
+      \end{scope}
+      \end{scope}
+
+Atividade: Velocidade
+---------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e um jogador preste a chocar a bola branca no meio das outras duas. Após o choque, a bola branca fica parada e as bolas azul e amarela se movem com velocidades `v_1` e `v_2`, respectivamente.  Suponha que as bolas são iguais, que não existe atrito entre as bolas e a mesa e que o choque é *perfeitamente elástico*, isto é, que não há perda de energia mecânica após o choque.
+
+<FIGURAS>
+
+#. Represente os vetores velocidades após o choque.
+#. Se a velocidade inicial da bola branca for 1 m/s, é verdade que `v_1 + v_2 = 1` m/s? Explique cuidadosamente a sua resposta.
+
+      
+Atividade: Força
+----------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
+   
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+            :align: center
+            :width: 200px
+            
+            foto: Elke Wetzig
+            
+   .. tikz::
+
+      \node at (-1.5,-.3) {(I)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      \end{scope}
+      \end{scope}
+      
+#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
 
