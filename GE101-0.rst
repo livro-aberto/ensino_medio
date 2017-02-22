@@ -2,7 +2,7 @@
 Vetores no plano
 ********
 
-.. admonition:: Objetivos específicos
+.. admonition:: Objetivos específicos - previsão 4 aulas de 50 minutos
 
    BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
@@ -18,9 +18,7 @@ Vetores no plano
 
    BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
 
-
 .. note::
-  
    
    Roteiro do capítulo:
    
@@ -34,14 +32,14 @@ Vetores no plano
    8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
    9. Soma de vetores com representação visual e algébrica. [Wanderley]
    10. Exercícios e exercícios suplementares. [Todos]
+     
    
    
 .. admonition:: Para o professor
 
 
-   O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número. 
+   O texto introdutório para o estudante busca mostrar que existem grandezas que não ficam claramente representadas por apenas um número, também se faz necessário conhecer outras informações para um entendimento completo.
    
-   É necessário conhecer também outras informações para um entendimento mais completo. 
    Em seguida procura-se observar através do conceito de *deslocamento* que, uma vez fixada uma malha (que equivale a fixar um par de vetores não paralelos, ou seja, uma base para o plano), pode-se representar um vetor do plano através de dois números (as componentes ou coordenadas do vetor nesta base) e que estes números não dependem da escolha da origem do sistema de coordenadas. 
    Assim, dois vetores com mesmo módulo, direção e sentido serão iguais.
    
@@ -61,13 +59,19 @@ Vetores no plano
    Neste aspecto, cabe ressaltar que embora um vetor fique determinado por módulo, direção e sentido, não são necessárias três informações para se conhecer um vetor do plano, bastam duas pois o plano é bidimensional. 
    Provavelmente, por isso, alguns livros estrangeiros (e.g., ref e ref), usam apenas comprimento e sentido, endendendo a direção como derivada do sentido.
    
+   
+   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, é preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. 
+   Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. 
+   Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). 
+   Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
+
    Também são apresentadas as operações de soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
 .. Começo da Edição Marcos Paulo
    
 As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outros, são agrupados no conceito de *grandeza*.
 
-A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá.
+A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá/AP.
 
 .. figure:: http://mpfaraujo.com/images/amapa.png
    :width: 700px
@@ -75,13 +79,13 @@ A figura a seguir mostra uma tabela com resumo de 5 dias de previsões climátic
    
    Disponível em: https://weather.com/pt-BR/clima/5dias/l/BRXX0730:1:BR
 
-Cada coluna descreve a variação, ao longo dos 5 dias considerados, de um aspecto climático previsto para a cidade. Vale notar que as colunas referentes ao DIA e à DESCRIÇÃO trazem informações qualitativas. As colunas de Temperatura (MÁX./MIN.) Probabilidade de Precipitação (PRECIP), Velocidade do Vento (VENTO), Umidade Relativa do Ar (UMIDADE), etc. trazem informações quantitativas e por isso são exemplos de grandezas. 
+Cada coluna descreve, ao longo dos 5 dias considerados, um aspecto climático previsto para a cidade. Vale notar que as colunas referentes ao DIA e à DESCRIÇÃO trazem informações qualitativas. As colunas de Temperatura (MÁX./MIN.) Probabilidade de Precipitação (PRECIP), Velocidade do Vento (VENTO), Umidade Relativa do Ar (UMIDADE), etc. trazem informações quantitativas e por isso são exemplos de grandezas. 
 
 Chama-se *grandeza escalar*, aquela que se pode representar por um número real. São exemplos de grandezas escalares: temperatura, umidade relativa do ar, distância, tempo e massa. Note que podemos nos expressar com exatidão sobre esses conceitos apresentando apenas um número seguido da unidade de medida convencionada (graus Celsius, metros, horas e quilogramas, respectivamente no sistema internacional de unidades). Para uma discussão sobre as grandezas adimensionais como umidade relativa do ar, probabilidades ou mesmo o radiano indicamos o `Glossários de Termos Metrológicos <https://glossarioinmetro.wordpress.com/2010/09/02/grandeza-adimensional-grandeza-de-dimensao-um-grandeza-sem-dimensao/>`_.
 
 As grandezas escalares são bastante familiares e sua utilização é, em geral, dominada pela maioria dos alunos. Pode-se operar com elas e as propriedades dessas operações são as mesmas conhecidas para as operações nos conjuntos numéricos estudados até aqui.
 
-Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22km/h:
+Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um número não é suficiente para descrever a característica estudada. É o caso da coluna VENTO da tabela que indica a velocidade do vento na região estudada. Na figura a seguir, destacamos a coluna VENTO e, nela, marcamos 2 momentos em que a velocidade indicada é de 22 km/h:
 
 .. figure:: http://mpfaraujo.com/images/coluna_vento.png
 
@@ -89,22 +93,17 @@ Neste capítulo voltaremos nossos estudos para um tipo de grandeza em que um nú
 
 É possível dizer que a velocidade nesses dois instantes é a mesma? Qual a diferença entre essas duas velocidades?
 
-Obviamente, a resposta esperada é que as velocidades são diferentes. Isso porque, caso não tenha notado, ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
+Ao lado das velocidades estão as indicações **ENE** e **E**, respectivamente. Essas siglas, que são lidas **LÉS-NORDESTE** e **LESTE**, indicam a direção que o vento toma com a intensidade de 22km/h. Em tempo, a direção lés-nordeste, é aquela entre o leste e o nordeste.
 
-Para leigos, como nós, indicar uma direção ainda pode não ser suficientemente claro. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma convenção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
+Indicar uma direção pode  ainda não ser suficientemente para a maioria dos leitores. O vento está soprando na direção leste ou vindo da direção leste? Em outras palavras, qual o sentido do vento nessa direção? O *site* de onde essa informação foi tirada considera que há uma convenção que faz com que todos entendam que o vento ruma para a direção indicada. Isso pode ser bastante razoável para alguns mas deve, necessariamente ser convencionado ou combinado a priori para que todos estejam entendendo a mesma coisa com a indicação da tabela.
 
 Para a descrição da informação considerada, no caso a velocidade do vento, foi necessário fornecer um **número**, que representa a intensidade, uma **direção**, que toma como referência a rosa dos ventos conhecida por todos e um **sentido**, convencionado previamente pelos estudiosos dos elementos climáticos. O ente matemático caracterizado por essas três informações é chamado de **vetor** e, por isso, as grandezas descritas por eles são chamadas *grandezas vetoriais*.
 
 As grandezas vetoriais aparecem frequentemente no contexto do estudo da Física. São exemplos de grandezas vetoriais:
-   a) Força
-   b) Velocidade
-   c) Deslocamento
-   d) Aceleração
-
-.. admonition:: Para o professor
-
-   Vale ressaltar que uma parte considerável desse assunto diz respeito à utilização dos vetores em Física. No entanto, É preciso ter em mente, que o contato do aluno com grandezas vetoriais é bastante limitado. Em geral, o professor de Física do Ensino Fundamental trata de fato como grandeza vetorial apenas a Força. Em quase todos so contextos, a velocidade é tratada como uma grandeza escalar (taxa de variação, em 1 segundo, ou 1 hora, da posição). Os alunos estão acostumados a somar velocidades como se fossem apenas um número seguido de uma unidade de medida (que foi exatamente o que definimos como grandeza escalar).
-
+   #. Deslocamento
+   #. Velocidade
+   #. Aceleração
+   #. Força
 
 Para podermos estudar propriamente os vetores, apresentamos a seguir uma representação geométrica que pode nos ajudar a interpretar de forma mais natural os conceitos que desejamos estudar.
 Considere o Mapa de Alagoas dividido nas 3 Mesorregiões propostas pelo IBGE. Para cada uma das regiões, foi feita uma consulta da velocidade do vendo em um *site* de meteorologia e as velocidades do vento em um mesmo instante.
@@ -164,16 +163,22 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
-a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
+.. admonition:: Para o Professor
 
-.. _fig-sertao-alagoano:
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
 
-.. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
-   :width: 1200px
-   :align: center
+#. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
+
+   .. _fig-sertao-alagoano:
+
+   .. figure:: http://mpfaraujo.com/images/ativ_segmentos_orientados1.png
+      :width: 1200px
+      :align: center
 
    
-b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano?
+#. Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tinha comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano?
 
 
 .. _sec-descrevendo:
@@ -191,14 +196,22 @@ Por outro lado, a descrição da **direção** foi feita a partir da convenção
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
-----------   
-Não importa a origem (apresentação das componentes de um vetor)
------------
 
 .. _my-ativ-barcos:
    
 Atividade: Deslocamento após a tempestade
---------- 
+----------------------------------------- 
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
+   
+   **Recomendações para o desenvolvimento da atividade:** 
+   
+   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
+   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
+   
+
 
 Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
 
@@ -242,62 +255,53 @@ Reproduza a figura no seu caderno e localize a provável posição `E'` do barco
 
    O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
    
-Este é um exemplo de grandeza vetorial (que possui módulo, direção e sentido veja discussão a seguir). 
+Este é um exemplo de grandeza vetorial. 
+Veremos que uma vez fixado um ponto de referência, chamado de origem, as posições inicial e final de um objeto também são grandezas vetoriais e o deslocamento é a *diferença* entre as posições final e inicial (veja a seção de Operações com Vetores para entender a diferença entre dois vetores).
 Observe que na situação acima os barcos tiveram mesmo deslocamento, representados pelos segmentos orientados na figura, apesar de possuirem posições iniciais e finais diferentes.
 
-Atividade
--------
-Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
-
-.. tikz::
-       
-       \node at (-.5,1.3) {a)};
-      \fill[blue] (0,0) circle (.08);
-      \node[right] at (0,0) {$A$};
-      \fill[blue] (.5,1.5) circle (.08);
-      \node[right] at (0.5,1.5) {$B$};
-      \fill[blue] (1.5,-1) circle (.08);
-      \node[right] at (1.5,-1) {$C$};
-      \fill[blue] (2,1) circle (.08);
-      \node[right] at (2,1) {$D$};
-      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
-      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
-      
-      \begin{scope}[shift={(4.5cm,.25)}]
-      \node at (-.5,1.05) {b)};
-      \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {$B$};
-      \fill[blue] (1,0) circle (.08);
-      \node[above] at (1,0) {$A$};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {$C$};
-      \fill[blue] (1,-1) circle (.08);
-      \node[right] at (1,-1) {$D$};
-      
-      \begin{scope}[shift={(4.5cm,-.5)}]
-      \node at (-.5,1.55) {c)};
-      \fill[blue] (0,0) circle (.08);
-      \node[below] at (0,0) {$A=D$};
-      \fill[blue] (2,0) circle (.08);
-      \node[below] at (2,0) {$B$};
-      \fill[blue] (1,1.5) circle (.08);
-      \node[right] at (1,1.5) {$C$};
-      \end{scope}
-      \end{scope}
-
-Atividade
----------
-
-O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante num jogo. Determine quais bolas parecem possuir velocidades iguais.
-
-<figura de mesa de bilhar com diversas bolas, com vetores velocidades, alguns de módulos iguais e direções ou sentidos diferentes, outros com mesma velocidade>
 
 .. admonition:: Definição
 
    Dizemos que dois segmentos têm mesma *direção* quando estão sobre a mesma reta ou sobre retas paralelas.
 
-<figura ilustrativa de segmentos de mesma direção e segmentos de direções diferentes>
+.. tikz:: 
+
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$r$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (.5,.5) {$A$};
+   \fill[blue] (.5,.5) circle (.08);
+   \node[below] at (1,1) {$B$};
+   \draw[very thick, red] (.5,.5)--(1,1);
+   \fill[blue] (1.5,1.5) circle (.08);
+   \node[below] at (1.5,1.5) {$C$};
+   \fill[blue] (2.7,2.7) circle (.08);
+   \node[below] at (2.7,2.7) {$D$};
+   \draw[very thick, red] (1.5,1.5)--(2.7,2.7);
+   \node at (3,-.6) {Segmentos de mesma direção e direções diferentes};
+      
+   \begin{scope}[xshift=1.5cm]
+   \draw (0,0)--(3,3);
+   \node at (-.3,0) {$s$};
+   \fill[blue] (1,1) circle (.08);
+   \node[below] at (1,1) {$E$};
+   \fill[blue] (2.4,2.4) circle (.08);
+   \node[below] at (2.4,2.4) {$F$};
+   \draw[very thick, red] (1,1)--(2.4,2.4);
+   \end{scope}
+   
+   \begin{scope}[xshift=6cm]
+   \draw (0,0)--(-1,3);
+   \node at (-.3,0) {$t$};
+   \fill[blue] (-.3,.9) circle (.08);
+   \node[below] at (-.4,.9) {$G$};
+   \fill[blue] (-.8,2.4) circle (.08);
+   \node[below] at (-.9,2.4) {$H$};
+   \draw[very thick, red] (-.3,.9)--(-.8,2.4);
+   %\node at (1.5,-.6) {Direções contrárias};
+   \end{scope}
+   
+As retas `r` e `s` são paralelas, assim os segmentos `AB`, `CD` e `EF` têm a mesma direção, `GH` tem direção diferente dos demais porque `t` não é paralela a `r` ou a `s`.
 
 Intuitivamente, dois segmentos orientados de mesma direção possuem mesmo sentido quando apontam para o mesmo lado (para mais detalhes veja a seção de :ref:`my-aprofundamentos_vetores`).
 
@@ -417,5 +421,167 @@ Malhas não quadradas ou até não retangulares são úteis para situações esp
 Atividade: Vetores iguais
 ---------
 
-Vetores iguais. Dados dois vetores em uma malha, determinar se são iguais ou não. Fazer uma atividade similar, mas eletrônica, para mover um vetor até fazê-lo coincidir com outro.
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Identificar vetores iguais como aqueles que possuem mesmo comprimento, mesma direção e mesmo sentido usando as linhas da malha oblíqua. Distinguir vetores iguais de vetores parecidos. Distinguir vetores iguais de vetores simétricos.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida quais dos vetores são iguais. 
+     
+.. tikz:: Vetores iguais e diferentes
+
+   [>=latex,
+      % font=\footnotesize,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{15}
+      \def\ymin{0}
+      \def\ymax{9}
+      \draw[very thin]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+      \draw[-latex, very thick, red](0, 0) -- (3, 4) node[above]{$a$};
+      \draw[-latex, very thick, red](7, 7) -- (4, 3) node[above]{$b$};
+      \draw[-latex, very thick, red](7, 1) -- (10, 5) node[above]{$c$};
+      \draw[-latex, very thick, red](14, 8) -- (11, 4) node[above]{$d$};
+      \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
+      \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
+      
+
+Atividade: Deslocamento
+-----------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C` e finalmente chegou em `D`, respectivamente.
+
+.. tikz::
+       
+       \node at (-.5,1.3) {a)};
+      \fill[blue] (0,0) circle (.08);
+      \node[right] at (0,0) {$A$};
+      \fill[blue] (.5,1.5) circle (.08);
+      \node[right] at (0.5,1.5) {$B$};
+      \fill[blue] (1.5,-1) circle (.08);
+      \node[right] at (1.5,-1) {$C$};
+      \fill[blue] (2,1) circle (.08);
+      \node[right] at (2,1) {$D$};
+      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
+      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
+      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
+      
+      \begin{scope}[shift={(4.5cm,.25)}]
+      \node at (-.5,1.05) {b)};
+      \fill[blue] (0,0) circle (.08);
+      \node[above] at (0,0) {$B$};
+      \fill[blue] (1,0) circle (.08);
+      \node[above] at (1,0) {$A$};
+      \fill[blue] (2,0) circle (.08);
+      \node[above] at (2,0) {$C$};
+      \fill[blue] (1,-1) circle (.08);
+      \node[right] at (1,-1) {$D$};
+      
+      \begin{scope}[shift={(4.5cm,-.5)}]
+      \node at (-.5,1.55) {c)};
+      \fill[blue] (0,0) circle (.08);
+      \node[below] at (0,0) {$A=D$};
+      \fill[blue] (2,0) circle (.08);
+      \node[below] at (2,0) {$B$};
+      \fill[blue] (1,1.5) circle (.08);
+      \node[right] at (1,1.5) {$C$};
+      \end{scope}
+      \end{scope}
+
+Atividade: Velocidade
+---------------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e um jogador preste a chocar a bola branca no meio das outras duas. Após o choque, a bola branca fica parada e as bolas azul e amarela se movem com velocidades `v_1` e `v_2`, respectivamente.  Suponha que as bolas são iguais, que não existe atrito entre as bolas e a mesa e que o choque é *perfeitamente elástico*, isto é, que não há perda de energia mecânica após o choque.
+
+<FIGURAS>
+
+#. Represente os vetores velocidades após o choque.
+#. Se a velocidade inicial da bola branca for 1 m/s, é verdade que `v_1 + v_2 = 1` m/s? Explique cuidadosamente a sua resposta.
+
+      
+Atividade: Força
+----------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
+   
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+            :align: center
+            :width: 200px
+            
+            foto: Elke Wetzig
+            
+   .. tikz::
+
+      \node at (-1.5,-.3) {(I)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escalador};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      \end{scope}
+      \end{scope}
+      
+#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
 

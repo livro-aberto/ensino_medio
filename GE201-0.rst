@@ -68,9 +68,9 @@ Teorema de Tales
    
    #. Atividades contextualizadas (ruas paralelas cortadas por uma transversal, etc.).
    
-   Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)
+   **Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)**
 
-   #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. Opções: 1. Fazer Tales e os casos de semelhança de triângulos na Unidade Curricular II ou fazer apenas Tales na Unidade Curricular V. Decidimos pela opção 1.
+   #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. Opções: 1. Fazer Tales e os casos de semelhança de triângulos na Unidade Curricular II ou fazer apenas Tales na Unidade Curricular V. Decidimos pela opção 1. Neste caso, precisaremos explicar logo de início ao estudante que o objetivo deste teorema é explicar os casos de semelhança de triângulos.
    #. Enunciado utilizando o triângulo e uma paralela a um dos lados.
    #. Reforçar a necessidade da hipótese,
    #. Diferentes exibições das figuras, especialmente com a interseção das transversais entre as paralelas (onde aparece a maior quantidade de erros). Lembrar o professor dos riscos de se criar figuras prototípicas na cabeça do aluno.
@@ -111,7 +111,7 @@ Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`,
 .. _ativ-descobrindo_tales:
 
 Atividade: Visualização e análise de padrões
-------------------------------
+--------------------------------------------
 
 Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
 
@@ -146,8 +146,30 @@ Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a)
 "Quando três retas paralelas são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________ da reta tomada." (melhorar ou repensar)
 
 Teorema de Tales
-------------
+----------------
 
-.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por área? Incluir também exemplos característicos.
+.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por áreas em atividade com prova assistida.
+
+**Uma reta paralela a (e diferente de) um dos lados de um triângulo, determina nos outros dois lados segmentos proporcionais.**
+
+Afirmação equivalente: Dado um triângulo `ABC` e pontos `X \in AB` e `Y \in AC`. Se `XY` é paralelo a `BC`  então 
+
+.. math::
+
+   \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}.
 
 
+.. tikz:: Teorema de Tales
+
+   \draw (0,0)--(1,3)--(5,0)--(0,0);
+   \draw (0,1)--(5.3,1);
+   \node at (0,-.3) {$B$};
+   \node at (.9,3.3) {$A$};
+   \node at (5,-.3) {$C$};
+   \node at (.1,1.3) {$X$};
+   \node at (3.8,1.3) {$Y$};
+   \node at (8.5,1.5) {$XY \parallel BC \Rightarrow \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}$.};
+   
+   
+Atividade: Justificativa do Teorema de Tales
+--------------------------------------------
