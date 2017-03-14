@@ -2,9 +2,13 @@
 Teorema de Tales
 ****************
 
-.. admonition:: Objetivos específicos
+.. admonition:: Habilidade do BNCC
 
     BNCC (EM12MT01) Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
+    
+    previsão 8 aulas de 50 minutos
+    
+    `FASE DE ELABORAÇÃO <https://github.com/livro-aberto/ensino_medio/issues/10>`_: 1 
    
 .. admonition:: Pré requisito
    
@@ -19,13 +23,13 @@ Teorema de Tales
    BNCC (EM15MT01) Compreender a estrutura lógica da geometria euclidiana e demonstrar alguns teoremas como soma dos ângulos internos de polígonos, teorema de Pitágoras, casos de semelhança e de congruência de triângulos.
 
 .. note::
-   * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
+   * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas. 
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
 .. admonition:: Roteiro da aula de Teorema de Tales
    
-   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. 
+   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. Importante que não seja apresentado o teorema, mas que ao final seja apresentado um modelo (problema) matemático que representa a situação real. A posição do ponto `B` pode ser calculada, sem GPS, utilizando uma mangueira de água.
    
    .. _fig-barrage_a_mao:
 
@@ -38,36 +42,19 @@ Teorema de Tales
    
    #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelas para que visualize e experimente de maneira livre [Visualização].   
    
-   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  
+   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  Importante que o enunciado seja concluído com as diversas configurações de figuras para o uso do Teo de Tales. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" ou "conjectura" por enquanto.   
+   #. Atividade contendo uma prova guiada do teorema a partir de áreas.
+   #. Solução do problema da barragem utilizando o Teorema. 
+   #. Atividade, contextualizada ou não, sobre a recíproca do teorema de Tales (enunciado e justificativa). Pode abordar a necessidade da hipótese.
+   #. Nos exercícios, ou em outro lugar, justificar para o estudante a inversão dos meios na igualdade do teorema. 
+   #. Incluir a prova do teorema da bissetriz nos exercícios pois a habilidade exige a prova de outros resultados. 
+   #. Atividade(s) em que se conclua o Teorema Fundamental das Semelhanças a partir do uso do Teorema de Tales.
+   #. Construção que leva à divisão de um segmento em partes proporcionais.
+   
+   Sobrou do último roteiro.
+   
+  #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
       
-   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" por enquanto. 
-   
-   #. Apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas. Talvez o ideal é que o estudante estabeleça a igualdade dada no teorema para cada uma das figuras apresentadas.
-   
-    
-   
-      .. _fig-variedade_tales
-
-      .. figure:: https://dl.dropboxusercontent.com/u/2371346/IMG_20161216_191600865.jpg
-         :width: 400px
-         :align: center
-
-         refazer em tikz
-   
-   #. Atividades (ou observação) que levem o estudante a entender que se dois triângulos possuem mesma altura (respectivamente, mesma base), então a razão entre as áreas é a razão entre as bases (respectivamente, razão entre as alturas). Como este não é um objetivo da lição, o resultado pode ser apresentado aos estudantes, mas é fundamental que para eles esteja claro a validade do resultado ao final da atividade (ou observação).   
-   
-   #. Provar o Teorema de Tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
-   
-   #. Atividade que leve o estudante a generalizar o Teorema de Tales acima para a versão usual.
-   
-   #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
-   
-   #. Aplicações. Atividade longa sobre a divisão de segmentos em partes iguais usando régua e compasso (ou o Geogebra). Contendo a construção e a justificativa da construção para 2 partes iguais e lembrar do ponto médio de um segmento e da mediatriz, 3 partes iguais e lembrar do ponto de encontro das medianas de um triângulo, cinco partes iguais.
-   
-   #. Aplicação. Atividade para dado um triângulo, construir outros triângulos com mesma forma, mas com lados medindo, metade, um terço e um quinto. Justificar usando o Teorema de Tales e relacionar com semelhança (tema do próximo capítulo) e com o Teorema da Base Média.
-   
-   #. Atividades contextualizadas (ruas paralelas cortadas por uma transversal, etc.).
-   
    **Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)**
 
    #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. Opções: 1. Fazer Tales e os casos de semelhança de triângulos na Unidade Curricular II ou fazer apenas Tales na Unidade Curricular V. Decidimos pela opção 1. Neste caso, precisaremos explicar logo de início ao estudante que o objetivo deste teorema é explicar os casos de semelhança de triângulos.
@@ -79,7 +66,7 @@ Teorema de Tales
    #. Vamos provar o teorema de Tales! Sim, provavelmente a prova será por áreas. Espera-se que seja uma atividade tipo prova assistida.
    #. Incluir a recíproca do teorema de Tales e atividades a respeito.
    #. Observar para o professor que o teorema de Tales vale mesmo que os dois segmentos sobre a mesma transversal não sejam consecutivos (como faz o Gelson Iezzi de 2013).
-   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também?
+   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também? [Não]
    #. Usaremos vetores quando necessário nos capítulos seguintes? Homotetia, por exemplo.
    #. Cuidado para que os números irracionais apareçam de maneira natural nos exemplos. 
    #. Ordem de abordagem. Teorema de Tales, Semelhança, Homotetia simples (sem ser vista como transformação), Transformações no plano incluindo homotetia e talvez projeção sobre uma reta paralelamente à outra.

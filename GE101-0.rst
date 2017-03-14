@@ -2,9 +2,24 @@
 Vetores no plano
 ********
 
-.. admonition:: Objetivos específicos - previsão 4 aulas de 50 minutos
+.. admonition:: Habilidade
+
 
    BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
+   
+   **tempo previsto:** 4 aulas de 50 minutos
+   
+   `FASE DE ELABORAÇÃO: <https://github.com/livro-aberto/ensino_medio/issues/10>`_ 3
+   
+.. admonition:: Objetivos gerais
+   
+   (EMMT02) Expressar argumentações matemáticas de forma oral, escrita e gráfica, valorizando a precisão da linguagem.
+   
+   (EMMT03) Compreender a Matemática como ciência, com linguagem própria e estrutura lógica.
+   
+   (EMMT04) Estabelecer relações entre conceitos matemáticos de Geometria, Grandezas e Medidas, Estatística e Probabilidade, Números e Operações, Álgebra e Funções, bem como entre a Matemática e outras áreas do conhecimento.
+   
+   (EMMT05) Analisar criticamente os usos da Matemática em diferentes práticas sociais e fenômenos naturais, para atuar e intervir na sociedade.
 
 .. admonition:: Pré-requisito
 
@@ -23,8 +38,8 @@ Vetores no plano
    Roteiro do capítulo:
    
    1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
-   2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição do objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
-   3. Atividades sobre vetores (sem o uso de coordenadas): (i) cuja abordagem contemple que um vetor fica determinado pelo conhecimento do seu módulo, da sua direção e do seu sentido e (ii) em que seja discutida de forma clara a noção de igualdade de vetores. Observações: Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe um, o outro está determinado.
+   2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
+   3. Atividades sobre vetores (sem o uso de coordenadas): (i) cuja abordagem contemple que um vetor fica determinado pelo conhecimento do seu módulo, da sua direção e do seu sentido e (ii) em que seja discutida de forma clara a noção de igualdade de vetores. Observações: Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe a origem o destino está determinado e vice-versa.
    4. Atividade para introduzir as coordenadas retangulares para um vetor.
    5. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
    6. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, da direção e do sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
@@ -42,23 +57,23 @@ Vetores no plano
    Este é um texto introdutório do conceito de vetores no plano para estudantes do ensino médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como força e velocidade. 
    A nocão de vetor é explorada a partir de um sistema estabelecido como uma "malha", o que equivale a fixar uma base vetorial no plano. Assim, um vetor do plano pode ser distinguido a partir de um par ordenado de números, que correspondem às coordenadas do vetor na base estabelecida, que informam sobre suas características elemntares: *módulo*, *direção* e *sentido*. 
    
-  ** (acho que aqui caberia alguma ilustração para o professor)**
+  ** (acho que aqui caberia alguma ilustração para o professor) OK - trabalhar nisso (MP)**
    
    Sob essa perspectiva, observa-se que o par ordenado de números que identifica o vetor não depende da escolha da origem do sistema de coordenadas considerado. Um vetor é um segmento, orientado determinado por seu módulo, sua direção e seu sentido, que pode ter sua origem em qualquer ponto do plano.
+   
    Acreditamos que esse entendimento do conceito de vetor é suficiente para os propósitos da Educação Básica, mesmo não sendo adequado do ponto de vista do rigor matemático. No entanto, embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais formal e completa do ponto de vista matemático, sugere-se que a definição venha após a construção do conceito pelo aluno a partir da proposta apresentada. Nesse caso, sugere-se que os alunos sejam estimulados a propor, em grupos, uma definição para vetor no plano e, a partir da discussão e da reflexão das diferentes propostas apresentadas conduzir à seguinte definição precisa.
       
-   .. admonition:: Definição
-   
+   .. admonition:: Definição 
    Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
   
-   Visando enriquecer a abordagem proposta, coordenadas oblíquas e coordenadas polares são apresentadas brevemente. Acredita-se que o conhecimento de outros sistemas de coordenadas pode contribuir para o entendimento da a relação existente entre o número de coordenadas necessárias para a identificação de um vetor no plano e a dimensão do espaço em que ele está inserido. Neste aspecto, cabe ressaltar que, embora um vetor fique determinado por módulo, direção e sentido, em \mathbb{R^2} não são necessárias três informações para se identificar um vetor, bastam duas, uma vez que o plano é bidimensional. 
+   Visando enriquecer a abordagem proposta, coordenadas oblíquas e coordenadas polares são apresentadas brevemente. Acredita-se que o conhecimento de outros sistemas de coordenadas pode contribuir para o entendimento da a relação existente entre o número de coordenadas necessárias para a identificação de um vetor no plano e a dimensão do espaço em que ele está inserido. Neste aspecto, cabe ressaltar que, embora um vetor fique determinado por módulo, direção e sentido, em `\mathbb{R^2}` não são necessárias três informações para se identificar um vetor, bastam duas, uma vez que o plano é bidimensional. 
   
    [Acho que esta informação deve ser mais precisa: "Provavelmente, por isso, alguns livros estrangeiros (e.g., ref e ref), usam apenas comprimento e sentido, endendendo a direção como derivada do sentido." Além disso, fiquei com dúvida: usam apenas comprimento e sentido? Para mim, teria mais "sentido" usar comprimento e direção.]
    
    O texto proposto apresenta ainda as operações soma de vetores e multiplicação de vetor por escalar (será melhorado assim que tivermos o texto).
    
    Entendemos que contextualizações naturais para a abordagem de vetores na Educação Básica diz respeito à sua utilização em Física, no estudo de grandezas vetoriais. Essa será uma motivação importante para a nossa proposta. Observamos, no entanto, que não é incomum que, no ensino médio, a aplicação de vetores em Física fique restrita à abordagem de Força. A velocidade, por exemplo, é frequentemente tratada em contextos que reduzem seu estudo ao aspecto numérico, ou seja, ao seu módulo. Sendo assim abordada como uma grandeza escalar, o que não é verdade.  Esperamos, com a proposta apresenta aqui, contribuir para a compreensão e a motivação do estudo das grandezas vetoriais em Física, reconhecendo a importância de que os alunos reconheçam a relação estreita entre essas ciências.  
-
+.. Rever o texto para o professor após consolidar tudo que realmente queremos fazer!
 
 .. Começo da Edição Marcos Paulo 
 
