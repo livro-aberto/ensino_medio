@@ -127,6 +127,14 @@ Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relaç
     | De C em B           |                   |                        |
     +---------------------+-------------------+------------------------+
 
+
+Quando consideramos uma relação qualquer é comum a representarmos através de pares ordenados, onde os elementos do primeiro conjunto aparece na primeira posição do par e os elementos do segundo conjunto aparecem na segunda posição. 
+
+Por exemplo, se consideramos a relação do conjunto dos números reais em si mesmo que a cada número real associa o seu quadrado, podemos dizer que os pares ordenados `(1,1), (2,4), (\sqrt{3},3), (-\pi,\pi^2)` são alguns pares desta relação.
+
+Como as funções são um tipo especial de relação, a mesma ideia se estende para as funções. Os pares ordenados de uma função `f:A\to B` serão sempre da forma `(x,y)` em que `x\in A` e `y=f(x) \in B`. 
+
+
 .. _ativ-funcoes-nao-e-funcao:
 
 Não é função!
@@ -140,6 +148,67 @@ Considere a relação no conjunto dos números inteiros que associa dois element
 
 
 Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a forma de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
+
+`(I)` O perímetro `P` e a área `A` de um quadrado podem ser dados em função do seu lado `\ell`.
+ 	
+.. math::
+
+   P: (0,+\infty)\to \mathbb{R} \quad ; \quad P(\ell)=4\ell
+ 
+.. math::
+
+   A: (0,+\infty)\to \mathbb{R} \quad ; \quad A(\ell)=\ell^2
+
+A variável `\ell` pode assumir qualquer valor dentro do intervalo `(0,+\infty)` que é o domínio da função `P` . Se quisermos saber o valor do perímetro do quadrado de lado 5cm, basta substituirmos `\ell` por 5 na expressão de  `P(\ell)`. Ficamos assim com
+ 	
+    
+.. math::
+
+   P(\textbf{5})=4\times \textbf{5} = 20\mathrm{cm}.
+
+
+A área do quadrado de lado 9cm é 
+ 	
+.. math::
+
+   A(\textbf{9})=\textbf{9}^2=81cm^2. 
+
+
+`(II)` Um corpo é solto, a partir do repouso, de uma altura `h_0` e percorre uma trajetória vertical em queda livre. Sua altura `h`, medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
+ 	
+.. math::
+
+   h:[0,+\infty)\to \mathbb{R}\quad ; \quad h(t)=h_0-\dfrac{gt^2}{2},
+ 	
+em que `g` representa a aceleração da gravidade.
+ 	
+Fazer a variável tempo assumir o valor `t=0` na expressão de `h(t)` significa que estamos medindo a altura no início da contagem do tempo, ou seja a altura inicial do corpo. Nesse caso teremos
+ 	
+.. math::
+
+   h(\textbf{0})=h_0-\dfrac{g\ \textbf{0}^2}{2}=h_0.
+
+ 	
+Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que devemos fazer? Como a medição é feita a partir do solo, dizer que o corpo chegou ao solo é o mesmo que dizer que sua altura é igual a 0. Portanto, precisamos descobrir o valor da variável `t`, de maneira que `h(t)=0`.
+ 	
+.. math::
+
+   \begin{eqnarray*}
+ 	h(t)=0 &\iff & h_0-\dfrac{gt^2}{2}=0 \iff \dfrac{gt^2}{2}=h_0 \\
+ 	       &\iff & gt^2=2h_0 \iff  t^2=\dfrac{2h_0}{g} \iff t=\sqrt{\dfrac{2h_0}{g}}.
+ 	\end{eqnarray*}
+ 	
+
+`(III)` A fórmula de Lorentz já foi muito utilizada pelos médicos para o cálculo do "peso ideal" `p`, em kg, em função da altura `h`, em centímetros, do paciente.
+ 	
+.. math::
+
+   p:(0,300)\to \mathbb{R}\quad ; \quad p(h)=h-100-\dfrac{h-150}{k}
+
+em que `k` vale 4 para homens e vale 2 para mulheres.
+ 	
+Que tal usar a fórmula acima para calcular o seu peso ideal?
+
 
 .. _ativ-funcoes-enchendo-o-cone:
 
@@ -156,7 +225,9 @@ O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m
    :width: 400px
    :align: center
 
-#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `V`.
+#. Considerando o contexto apresentado no problema, determine conjuntos `A` e
+`B` de maneira que a expressão `V` seja a regra de uma função cujo domínio seja
+`A` e o contradomínio seja `B`.
 #. Determine `V(2), V(3)` e `V(4)` e explique os seus significados.
 #. Quais os volumes mínimo e máximo que podem ser observados?
 #. A que altura corresponde um volume de `3 456` litros?
@@ -173,7 +244,8 @@ A posição `S` em quilometros de um veículo que se desloca segundo um moviment
 
    S(t)=2t^2-4t+2
 
-#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `S`.
+#. Considerando o contexto apresentado no problema, determine os conjuntos
+domínio e contradomínio da função `S`.
 #. Determine a posição inicial do veículo. Explique o significado do resultado obtido.
 #. Após quanto tempo o veículo estará a 18km da origem?
 
@@ -256,9 +328,9 @@ Verifique com os seus colegas se vocês obtiveram as mesmas expressões na ativi
       +---------------------+-------------------+-------------------+
    
 
-As atividades anteriores nos levam à seguinte questão:
+.. admonition:: Pausa Para Reflexão
 
-*Quando podemos afirmar que duas expressões geram a mesma função?*
+   As atividades anteriores nos levam à seguinte questão: *Quando podemos afirmar que duas expressões geram a mesma função?*
 
 Primeiro vamos lembrar que para definir uma função precisamos estabelecer claramente qual é o seu domínio. E a partir daí, podemos comparar as imagens de todos os seus elementos pelas duas expressões. Caso coincidam em todos os elementos, diremos que as duas funções são **iguais**. Em linguagem matemática, 
 
