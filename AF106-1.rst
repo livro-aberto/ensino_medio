@@ -1,34 +1,38 @@
-O conceito de função
+Organizando as ideias
 ====================
 
-Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
+Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
 Na atividade "100 metros rasos" temos o conjunto `A` dos tempos e o conjunto `B` das distâncias. A cada tempo está associado uma única distância.
 
-Na atividade "Números triangulares" temos o conjunto `A` dos números naturais representando a quantidade `n` de bolas no lado do triângulo e o conjunto `B`, também dos naturais, representando o número total `T_n` de bolas no triângulo. A cada `n` está associado o número triangular `T_n`.
+Na atividade "Números triangulares" temos o conjunto `A` das posições dos termos na sequência e o conjunto `B`, também dos naturais, representando o número total `T_n` de círculos no triângulo. A cada `n` está associado o número triangular `T_n`.
 
 Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
-Todas essas relações mencionadas anteriormentedos são exemplos de funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição de função:
-
+Nas três situações apresentadas, cada elemento do conjunto `A` está associado a um único elemento do conjunto `B`. Relações que têm essa característica são chamadas de funções.
 
 .. admonition:: Definição 
 
-   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma *função* de `A` em `B`, se cada elemento do conjunto `A` está relacionado a um único elemento do conjunto `B`.
+   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma **função** de `A` em `B`, se *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
    Assim, para cada `x\in A` existe um único `y\in B` relacionado a `x`, e por isso escrevemos `y=f(x)` e dizemos que `y` é a imagem de `x` pela função `f`.
 
-O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
+O conjunto `A` é chamado **domínio** da função enquanto o conjunto `B` é o **contradomínio**. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
    
   
 .. admonition:: Notação 
 
     Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
 
-Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
+Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
 
+.. admonition:: Pausa Para Reflexão
+
+    Junto com seus colegas, pensem um pouco sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas como funções? Descrevam algumas delas e compartilhem com o restante da turma, destacanado sempre os conjuntos domínio e contradomínio de cada uma delas.
+
+.. _ativ-funcoes-colorindo-o-mapa:
 
 Colorindo o mapa
----------
+----------------
 
 
 .. admonition:: Para o professor
@@ -43,7 +47,9 @@ Colorindo o mapa
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * Nem todos os estudantes vão usar o mesmo critério para distribuição das cores. Incentive-os a usarem as quatro cores e, no momento da discussão do item (b), chame a atenção para o fato de não haver uma única resposta correta para o item (a).
+   * Deixamos a seu critério a escolha da unidade para a velocidade média. Os valores obtidos em `km/min` podem causar certa estranheza, uma vez que na maioria das situações cotidianas a velocidade é apresentada em `km/h`.
    * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
+
 A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
@@ -57,25 +63,25 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
     :column-alignment: center center center center
     
     +------------------+-------------+-------+--------------------------+
-    |  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
+    |  Período do Dia  |  Tempo (min)|  Cor  |  Velocidade Média (km/h) |
     +==================+=============+=======+==========================+
-    |    5:00 - 7:00   |     0,11    |       |                          |
+    |    5:00 - 7:00   |     6       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |    7:00 - 9:00   |     0,13    |       |                          |
+    |    7:00 - 9:00   |     8       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   9:00 - 11:00   |     0,16    |       |                          |
+    |   9:00 - 11:00   |     9       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   11:00 - 13:00  |     0,12    |       |                          |
+    |   11:00 - 13:00  |     7       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   13:00 - 15:00  |     0,12    |       |                          |
+    |   13:00 - 15:00  |     7       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   15:00 - 17:00  |     0,14    |       |                          |
+    |   15:00 - 17:00  |     8       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   17:00 - 19:00  |     0,27    |       |                          |
+    |   17:00 - 19:00  |     16      |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   19:00 - 21:00  |     0,20    |       |                          |
+    |   19:00 - 21:00  |     12      |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   21:00 - 23:00  |     0,11    |       |                          |
+    |   21:00 - 23:00  |     6       |       |                          |
     +------------------+-------------+-------+--------------------------+  
 
 
@@ -93,6 +99,8 @@ d) É possível que uma mesma velocidade média esteja associada a dois tempos d
 
 
 Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+
+.. _ativ-funcoes-e-funcao:
 
 É função?
 ---------
@@ -119,6 +127,8 @@ Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relaç
     | De C em B           |                   |                        |
     +---------------------+-------------------+------------------------+
 
+.. _ativ-funcoes-nao-e-funcao:
+
 Não é função!
 ---------------
 
@@ -131,28 +141,31 @@ Considere a relação no conjunto dos números inteiros que associa dois element
 
 Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a forma de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
 
-Enchendo o cone
-------------------------------
+.. _ativ-funcoes-enchendo-o-cone:
 
-`1.` O reservatório representado abaixo tem a forma de um cone de raio 5m e altura 5m. O volume `V` em metros cúbicos de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
+Enchendo o cone
+---------------
+
+O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m` e a base é um círculo de raio `3 m`. O volume (aproximado) `V` em metros cúbicos de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
 
 .. math::
 
-   V(h)=25h^2
+   V(h)=\dfrac{h^3}{4}
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cone.png
    :width: 400px
    :align: center
 
-#. Pedir o volume de água.
 #. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `V`.
-#. Determine `V(2), V(2{,}05)` e `V(3{,}1)` e explique os seus significados.
+#. Determine `V(2), V(3)` e `V(4)` e explique os seus significados.
 #. Quais os volumes mínimo e máximo que podem ser observados?
-#. A que altura corresponde um volume de `10^5` litros?
-#. São feitas duas observações do volume, uma correspondendo à altura `h` e outra à altura `h+1`, isto é, `1` m acima da medição anterior. Determine a diferença de volume entre as duas medições. Ela depende de `h`?
+#. A que altura corresponde um volume de `3 456` litros?
+
+
+.. _ativ-funcoes-uniformemente-variado:
 
 Uniformemente variado
-------------------------------
+---------------------
 
 A posição `S` em quilometros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
 
@@ -164,9 +177,10 @@ A posição `S` em quilometros de um veículo que se desloca segundo um moviment
 #. Determine a posição inicial do veículo. Explique o significado do resultado obtido.
 #. Após quanto tempo o veículo estará a 18km da origem?
 
+.. _ativ-funcoes-obtendo-expressoes:
 
 Obtendo expressões
-------------------------------
+------------------
 
 Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f` que associe `x` a `y`, isto é, `y=f(x)`, especificando os conjuntos domínio e contradomínio em cada caso.
 

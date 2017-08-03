@@ -103,17 +103,44 @@ Atividade: Visualização e análise de padrões
 
 .. admonition:: Para o professor
 
-  Observar que ... 
+  Objetivos da atividades: Descobrir a partir de investigações práticas o enunciado do Teorema de Tales. 
+  
+  **Recomendações para o desenvolvimento da atividade:** Esta é a atividade mais importante deste capítulo, é importante garantir que os estudantes farão o melhor aproveitamento da mesma. 
+  Por isso, sugerimos que o professor circule pela sala enquanto os estudantes realizam os itens a) e b) de modo a evitar mal-entendidos.
+  Estes itens devem permanecer no nível da observação.
+  O item c) inicia o nível de análise. 
+  Os estudantes terão dificuldade em registrar que a razão `\overline{AB}/\overline{BC}` é constante. 
+  Acreditamos que eles dirão `\overline{AB}=\overline{BC}` na Figura I,  `\overline{AB}=2\overline{BC}` na Figura II e que `\overline{AB}=3\left(\frac{\overline{BC}}{2}\right)` na Figura III ou algo parecido. 
+  Vale a pena estimular seus estudantes a registrar por escrito aquilo que obtiveram em cada uma das figuras (como ilustrado aqui, por exemplo) e tentar obter uma única afirmação que sirva para as três experiências realizadas. 
+  É fundamental que os estudantes consigam registrar por escrito que o valor da razão é uma propriedade das paralelas e independe da transversal tomada.
    
-Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
+Copie as figuras I, II e III em seu caderno preservando as distâncias entre as retas. Resolva cada um dos itens a), b), c) e d) para cada uma das figuras. 
 
 .. _fig-tales_tres_paralelas:
 
-.. figure:: https://www.dropbox.com/s/te1fuod10ctahb8/tres_paralelas.jpg
-   :width: 450px
-   :align: center
+.. tikz:: 
 
-   Refazer em tikz
+   \node at (.5,0) {Figura I};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-2)  node[above left] {$s$}--(10,-2);
+   \draw (0,-3)  node[above left] {$t$}--(10,-3);
+
+   \begin{scope}[yshift={-133}]
+   \node at (.5,0) {Figura II};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-3)  node[above left] {$s$}--(10,-3);
+   \draw (0,-4)  node[above left] {$t$}--(10,-4);
+
+  
+  \begin{scope}[yshift={-160}]
+   \node at (.5,0) {Figura III};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-4)  node[above left] {$s$}--(10,-4);
+   \draw (0,-6)  node[above left] {$t$}--(10,-6);
+
+  \end{scope}
+  
+  \end{scope}
 
 #. Trace uma reta `u` transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
 
@@ -133,13 +160,27 @@ Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a)
 
 #. Analisando cada uma das tabelas preenchidas, obtenha uma relação entre `\overline{AB}` e `\overline{BC}` que sirva para todas as medições (razão). 
 
-#. Complete a sentença a seguir com as palavras apresentadas de modo a resumir uma conclusão dos itens anteriores.
+#. Complete a sentença a seguir com as palavras apresentadas para registrar uma conclusão dos itens anteriores.
 
 (paralelas, concorrentes, perpendiculares, transversal, constante, razão, diferença, adição)
 
 "Quando três retas ____________ são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________." 
 
+Atividade eletrônica: Experimentação do Teorema de Tales no celular
+----------------------------------------------------------------------------
 
+No link https://www.geogebra.org/m/m76NnYwz, você terá a oportunidade de realizar a investigação da atividade acima de maneira rápida e com mais posições para as posições das paralelas. 
+O importante é que você consiga registrar de maneira clara e genérica o resultado das suas experiências. 
+
+.. _fig-qr-code-tales:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1491321853&w=370&h=370&tok=6e235c&media=qr-code-tales.png
+   :width: 100px
+   :align: center
+
+   Para acessar facilmente do celular ou tablet
+
+Retorne ao problema do início deste capítulo e resolva-o utilizando a figura que aparece no seu celular. Para isso será necessário escolher uma posição adequada para as retas e pontos no aplicativo e utilizar o resultado que você descreveu nesta atividade.
 
 Teorema de Tales
 ----------------
