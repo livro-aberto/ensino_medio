@@ -1,6 +1,8 @@
-********
+.. _cap-vetores-no-plano:
+
+****************
 Vetores no plano
-********
+****************
 
 .. admonition:: Habilidade
 
@@ -187,9 +189,7 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
    
    É comum também o uso das seguintes notações para vetores: `\overrightarrow{AB}` e `\overrightarrow{BA}`. Assim, os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` têm o mesmo módulo e a mesma direção, mas **sentidos siméricos**: o sentido de `\overrightarrow{AB}` é de A para B e o sentido de `\overrightarrow{BA}` é de B para A. Nesse caso, tem-se que `\overrightarrow{AB}` = -`\overrightarrow{BA}`
 
-   
-
-.. _ativ-segmento-orientado1:
+.. _ativ-vetores-no-plano-segmento-orientado1:
 
 Atividade: Segmento Orientado
 ------------------------------
@@ -215,8 +215,8 @@ b) Se o segmento orientado usado para representar a velocidade do vento no mapa 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 
-.. _my-ativ-barcos:
-   
+.. _ativ-vetores-no-plano-deslocamento-barcos:
+
 Atividade: Deslocamento após a tempestade
 ----------------------------------------- 
 
@@ -275,8 +275,10 @@ Reproduza a figura no seu caderno e localize uma provável posição `E'` do bar
    
 Este é um exemplo de grandeza vetorial, que possui módulo, direção e sentido. O deslocamento dos barcos na atividade 1.1.2 é representado por segmentos orientados. Observe que apesar de os barcos terem posições iniciais e finais diferentes, tiveram o mesmo deslocamento, ou seja, se deslocaram a *mesma distância*, na mesma *direção* e no *mesmo sentido*. Essa discussão será aprofundada a seguir. 
 
-Atividade
--------
+.. _ativ-vetores-ligando-pontos:
+
+Atividade - nome da atividade
+-----------------------------
 Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C`, nessa ordem, e finalmente chegou a `D`.
 
 **[Não consegui entender o objetivo dessa atividade. O aluno pode fazer o esquema de todos os deslocamentos ou apenas o de A para D, ou seja, a soma vetorail. O que se quer?   Também não entendi o motivo de estar proposta nessa sequência, ou seja, aqui.]**
@@ -318,8 +320,10 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \end{scope}
       \end{scope}
 
-Atividade
----------
+.. _ativ-vetores-sinuca:
+
+Atividade - movimento na mesa de sinuca
+---------------------------------------
 
 O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante durante um jogo. Determine quais bolas parecem possuir velocidades iguais.
 
@@ -485,8 +489,10 @@ A justifificativa dessa igualdade pode ser dada a partir da observação dos tri
 
 Você deve ter observado que, na discussão anterior consideramos que a malha da figura é formada por quadrados, uma vez porque admitimos que os lados dos quadriláteros são iguais e que os ângulos são retos entre as retas da malha são retos. No entanto, cabe argumentação análoga para malhas não quadradas ou até não retangulares, que são úteis em situações específicas que serão trabalhadas mais adiante.
 
+.. _ativ-vetores-vetores-iguais
+
 Atividade: Vetores iguais
----------
+-------------------------
 
 .. admonition:: Para o Professor
 
@@ -521,9 +527,10 @@ Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida q
       \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
       \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
       
+.. _ativ-vetores-deslocamento
 
-Atividade: Deslocamento
------------------------
+Atividade - Deslocamento
+------------------------
 
 .. admonition:: Para o Professor
 
@@ -570,6 +577,8 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \end{scope}
       \end{scope}
 
+.. _ativ-vetores-velocidade
+
 Atividade: Velocidade
 ---------------------
 
@@ -586,7 +595,8 @@ O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e 
 #. Represente os vetores velocidades após o choque.
 #. Se a velocidade inicial da bola branca for 1 m/s, é verdade que `v_1 + v_2 = 1` m/s? Explique cuidadosamente a sua resposta.
 
-      
+.. _ativ-vetores-forca
+
 Atividade: Força
 ----------------
 
