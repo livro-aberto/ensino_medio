@@ -1,6 +1,8 @@
-***********
+.. _sec-vetores-algebrica:
+
+*******************************************
 Representação algébrica de vetores no plano
-***********
+*******************************************
 
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
@@ -44,9 +46,10 @@ Observe que as nomenclaturas *esquerda-direita e cima-baixo*, *leste-oeste e nor
     
     \node at (8,1.5) {$\overrightarrow{w}=\binom{2}{3}$ na malha de $\overrightarrow{u}$ e $\overrightarrow{v}$.};
 
+.. _ativ-vetores-par-ordenado-vetor:
 
 Atividade: Um par ordenado para um vetor
------------
+----------------------------------------
 
 
 .. admonition:: Para o professor
@@ -71,7 +74,8 @@ Determine as coordenadas dos vetores na malha abaixo.
     \draw[-latex, thick, red] (8,8) -- (6,5);
     \node at (6.9,6.7) {$\overrightarrow{e}$};
     
-    
+.. _ativ-vetores-vetor-par-ordenado:
+
 Atividade: Um vetor para um par ordenado
 ----------------------------------------
 
@@ -90,9 +94,10 @@ Para cada par ordenado abaixo determine uma representação geométrica do vetor
   #. `\overrightarrow{i}=(-1,2)`
   #. `\overrightarrow{j}=(1.5,2.5)`
 
+.. _exemplo-vetores-vetor-posicao:
 
 Exemplo: Vetor posição
------------------------
+----------------------
 
 Você provavelmente já viu nos anos anteriores que quando temos um sistema de coordenadas num plano, os pontos ficam representados por coordenadas `(x,y)` de maneira muito similar à representação algébrica dos vetores.
 Um sistema de coordenadas, nada mais é do que uma malha com um ponto `O` fixado. 
@@ -100,15 +105,19 @@ Este ponto é chamado de *origem do sistema de coordenadas* e é especialmente i
 Se considerarmos a origem como tendo coordenadas `O = (0,0)`, então as coordenadas de um ponto `A = (x,y)` são as coordenadas do vetor `\overrightarrow{OA}=\binom{x}{y}` na mesma malha do sistema de coordenadas.
 A vantagem em se trabalhar com vetores ao invés de pontos é que com estes há operações bem definidas com as quais você pode fazer contas. Isso é o que mais precisamos em situações reais (ver <CITAÇÃO DA SEÇÃO OPERAÇÕES COM VETORES>).
 
+.. _exemplo-vetores-varias-coordenadas:
+
 Exemplo: Várias coordenadas de um mesmo vetor
 ---------------------------------------------
 Atividade para que se observe a dependência da malha para a representação algébrica de um vetor.  (Representação algébrica de vetores).
 
+.. _ativ-vetores-plano-inclinado:
 
 Atividade: Plano inclinado
 --------------------------
 Decomposição de vetores numa base.
 
+.. _ativ-vetores-deslocamento-com-coordenadas:
 
 Atividade: Deslocamento com coordenadas
 ---------------------------------------
@@ -155,6 +164,8 @@ Considere o lado de um quadradinho da malha como sendo uma unidade.
       \node[right] at (1,1.5) {$C$};
       \end{scope}
       \end{scope}
+
+.. _ativ-vetores-translacao:
 
 Atividade: Translação de figuras (ver SesaMath)
 -----------------------------------------------

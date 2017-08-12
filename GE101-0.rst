@@ -1,15 +1,13 @@
+.. centered:: `FASE DE ELABORAÇÃO: 3 <https://github.com/livro-aberto/ensino_medio/issues/10>`_
+
 ********
 Vetores no plano
-********
+****************
 
 .. admonition:: Habilidade
 
 
-   BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
-   
-   **tempo previsto:** 4 aulas de 50 minutos
-   
-   `FASE DE ELABORAÇÃO: <https://github.com/livro-aberto/ensino_medio/issues/10>`_ 3
+   BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.   
    
 .. admonition:: Objetivos gerais
    
@@ -20,6 +18,10 @@ Vetores no plano
    (EMMT04) Estabelecer relações entre conceitos matemáticos de Geometria, Grandezas e Medidas, Estatística e Probabilidade, Números e Operações, Álgebra e Funções, bem como entre a Matemática e outras áreas do conhecimento.
    
    (EMMT05) Analisar criticamente os usos da Matemática em diferentes práticas sociais e fenômenos naturais, para atuar e intervir na sociedade.
+   
+.. admonition:: Tempo previsto
+   
+   4 aulas de 50 minutos
 
 .. admonition:: Pré-requisito
 
@@ -37,7 +39,7 @@ Vetores no plano
    
    Roteiro do capítulo:
    
-   1. Texto com o objetivo de despertar para a existência de grandezas vetorias. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
+   1. Texto com o objetivo de despertar para a existência de grandezas vetoriais. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
    2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
    3. Atividades sobre vetores (sem o uso de coordenadas): (i) cuja abordagem contemple que um vetor fica determinado pelo conhecimento do seu módulo, da sua direção e do seu sentido e (ii) em que seja discutida de forma clara a noção de igualdade de vetores. Observações: Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe a origem o destino está determinado e vice-versa.
    4. Atividade para introduzir as coordenadas retangulares para um vetor.
@@ -187,9 +189,7 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
    
    É comum também o uso das seguintes notações para vetores: `\overrightarrow{AB}` e `\overrightarrow{BA}`. Assim, os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` têm o mesmo módulo e a mesma direção, mas **sentidos siméricos**: o sentido de `\overrightarrow{AB}` é de A para B e o sentido de `\overrightarrow{BA}` é de B para A. Nesse caso, tem-se que `\overrightarrow{AB}` = -`\overrightarrow{BA}`
 
-   
-
-.. _ativ-segmento-orientado1:
+.. _ativ-vetores-no-plano-segmento-orientado1:
 
 Atividade: Segmento Orientado
 ------------------------------
@@ -215,8 +215,8 @@ b) Se o segmento orientado usado para representar a velocidade do vento no mapa 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
 
-.. _my-ativ-barcos:
-   
+.. _ativ-vetores-no-plano-deslocamento-barcos:
+
 Atividade: Deslocamento após a tempestade
 ----------------------------------------- 
 
@@ -275,8 +275,10 @@ Reproduza a figura no seu caderno e localize uma provável posição `E'` do bar
    
 Este é um exemplo de grandeza vetorial, que possui módulo, direção e sentido. O deslocamento dos barcos na atividade 1.1.2 é representado por segmentos orientados. Observe que apesar de os barcos terem posições iniciais e finais diferentes, tiveram o mesmo deslocamento, ou seja, se deslocaram a *mesma distância*, na mesma *direção* e no *mesmo sentido*. Essa discussão será aprofundada a seguir. 
 
-Atividade
--------
+.. _ativ-vetores-ligando-pontos:
+
+Atividade - nome da atividade
+-----------------------------
 Nas situações a seguir, reproduza as figuras em seu caderno e represente o vetor deslocamento do ponto `A` para o ponto `D`, levando em consideração que o objeto passou por `A`, `B`, `C`, nessa ordem, e finalmente chegou a `D`.
 
 **[Não consegui entender o objetivo dessa atividade. O aluno pode fazer o esquema de todos os deslocamentos ou apenas o de A para D, ou seja, a soma vetorail. O que se quer?   Também não entendi o motivo de estar proposta nessa sequência, ou seja, aqui.]**
@@ -318,8 +320,10 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \end{scope}
       \end{scope}
 
-Atividade
----------
+.. _ativ-vetores-sinuca:
+
+Atividade - movimento na mesa de sinuca
+---------------------------------------
 
 O esquema na figura a seguir representa as velocidades das bolas de sinuca em um certo instante durante um jogo. Determine quais bolas parecem possuir velocidades iguais.
 
@@ -485,8 +489,10 @@ A justifificativa dessa igualdade pode ser dada a partir da observação dos tri
 
 Você deve ter observado que, na discussão anterior consideramos que a malha da figura é formada por quadrados, uma vez porque admitimos que os lados dos quadriláteros são iguais e que os ângulos são retos entre as retas da malha são retos. No entanto, cabe argumentação análoga para malhas não quadradas ou até não retangulares, que são úteis em situações específicas que serão trabalhadas mais adiante.
 
+.. _ativ-vetores-vetores-iguais
+
 Atividade: Vetores iguais
----------
+-------------------------
 
 .. admonition:: Para o Professor
 
@@ -521,9 +527,10 @@ Suponha que a malha a seguir é formada por paralelogramos congruentes. Decida q
       \draw[-latex, very thick, red](12, 1) -- (15, 6) node[above]{$e$};
       \draw[-latex, very thick, red](1, 4) -- (4, 9) node[above]{$f$};
       
+.. _ativ-vetores-deslocamento
 
-Atividade: Deslocamento
------------------------
+Atividade - Deslocamento
+------------------------
 
 .. admonition:: Para o Professor
 
@@ -570,6 +577,8 @@ Nas situações a seguir, reproduza as figuras em seu caderno e represente o vet
       \end{scope}
       \end{scope}
 
+.. _ativ-vetores-velocidade
+
 Atividade: Velocidade
 ---------------------
 
@@ -586,7 +595,8 @@ O esquema abaixo mostra duas bolas de bilhar juntas no meio da mesa de sinuca e 
 #. Represente os vetores velocidades após o choque.
 #. Se a velocidade inicial da bola branca for 1 m/s, é verdade que `v_1 + v_2 = 1` m/s? Explique cuidadosamente a sua resposta.
 
-      
+.. _ativ-vetores-forca
+
 Atividade: Força
 ----------------
 
