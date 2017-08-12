@@ -1,6 +1,9 @@
-**********************
+
+.. _cap-op-vetores:
+
+*********************
 Operações com vetores
-**********************
+*********************
 
 .. admonition:: Objetivos específicos
 
@@ -36,9 +39,10 @@ Começaremos então pela adição de vetores.
    Nesta atividade apresenta-se a adição de dois vetores tendo como referência a adição de dois deslocamentos parciais. Define-se, a partir dessa situação, o vetor deslocamento `\overrightarrow{AC}` como sendo a adição dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`. O que se pretende aqui, de modo inicial, é que os alunos reconheçam o *vetor soma* pela construção do segmento orientado que une o ponto A, origem do primeiro vetor, ao ponto C, extremo do segundo vetor. A determinação das coordenadas do *vetor soma* deve ser então obtida com base na representação do próprio vetor na malha quadriculada.
    
    
+.. _ativ-op-vetores-adicao1:
 
-Atividade 1 - Adição de Vetores I
----------
+Atividade - Adição de Vetores I
+---------------------------------
 
 Na malha quadriculada a seguir estão representados os pontos A, B e C do plano cartesiano. Considere o lado de cada quadradinho como unidade.
 
@@ -70,9 +74,10 @@ Na malha quadriculada a seguir estão representados os pontos A, B e C do plano 
 
    Nesta atividade abordam-se situações que consideram a adição de três vetores, em contexto geométrico similar ao da atividade anterior (adição de vetores deslocamentos, formados por segmentos orientados consecutivos). Com a realização desta atividade, pretende-se que os alunos concluam que para a representação do *vetor soma* é suficiente construir o segmento de reta orientado que une o ponto A, origem do primeiro vetor, ao ponto D, extremidade do terceiro vetor. A determinação das coordenadas do *vetor soma* deve ser então obtida com base na representação do próprio vetor na malha quadriculada. Caso o professor veja a necessidade, pode realizar mais exercícios desse tipo com os seus alunos. Neste caso sugere-se que utilize papel quadriculado como recurso didático e que explore outras situações geométricas. Cabe destacar, entretanto, que, mais a frente nesta sequência didática, serão apresentadas atividades elaboradas com o software Geogebra que possibilitarão o exercício da adição de vetores pelos alunos em situações mais gerais. O ambiente virtual e interativo possibilita ainda a realização de uma quantidade indeterminada de atividades.
    
+.. _ativ-op-vetores-adicao2:
 
-Atividade 2 - Adição de Vetores II
----------
+Atividade - Adição de Vetores II
+----------------------------------
 Em cada item a seguir, represente e determine as coordenadas do vetor deslocamento final:
 
 a) `\overrightarrow{AC}` =  
@@ -266,9 +271,10 @@ c) `\overrightarrow{AD}` =
 
       \overrightarrow{u}+\overrightarrow{v}=\begin{pmatrix} x_{u} \\ y_{u} \\ z_{u} \\ \end{pmatrix} +  \begin{pmatrix} x_{v} \\ y_{v} \\ z_{v} \\ \end{pmatrix} =  \begin{pmatrix} x_{u}+x_{v} \\ y_{u}+y_{v} \\ z_{u}+z_{v} \\ \end{pmatrix}
 
+.. _ativ-op-vetores-adicao-forcas:
 
-Atividade 3 - Adicionando Forças
----------
+Atividade - Adicionando Forças
+------------------------------
 
 Em algumas situações do cotidiano, duas forças podem ser aplicadas em um mesmo ponto do objeto. Por exemplo, a figura a seguir ilustra uma situação em que um bloco que está sendo puxado ao longo de uma mesa lisa em duas direções distintas.
 
@@ -334,8 +340,10 @@ Considerando a medida do lado de cada quadradinho da malha como unidade:
 
    Esta atividade utiliza um aplicativo construído com o software Geogebra que possibilita a realização da adição de dois vetores quaisquer do plano. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Para cada par de vetores escolhidos, escolha um estudante para manusear o aplicativo. Entretanto, discuta a solução do problema de forma coletiva e dialogada com toda a turma.  
 
-Atividade 4 - Adicionando Vetores usando o Geogebra
----------
+.. _ativ-op-vetores-adicao-geogebra:
+
+Atividade - Adicionando Vetores usando o Geogebra
+---------------------------------------------------
 
 Para fazer esta atividade, acesse o link https://www.geogebra.org/m/eCWUHEaY e faça o que se pede em cada item.
 
@@ -350,9 +358,10 @@ e) E aí, acertou? Não? Repita então os itens anteriores quantas vezes você a
 
    Esta atividade utiliza um aplicativo construído com o software Geogebra que possibilita a verificação da propriedade associativa da adição de vetores. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Escolha um estudante para manusear o aplicativo. Entretanto, discuta a solução do problema de forma coletiva e dialogada com toda a turma. Escolha outro terno de vetores e repita a atividade. A propriedade associativa será apresentada de modo bem informal na Observação 3.
 
+.. _ativ-op-vetores-adicao-geogebra2:
 
-Atividade 5 - Adicionando Vetores usando o Geogebra
----------
+Atividade - Adicionando Vetores usando o Geogebra
+---------------------------------------------------
 
 Para fazer esta atividade, acesse o link https://www.geogebra.org/m/eKkpgahu, e faça o que se pede em cada item.
 
@@ -386,9 +395,10 @@ e) O que você observou?
 
    Esta atividade tem como objetivo a verificação da propriedade associativa da adição de vetores. Para que se atinja o objetivo, torna-se importante que os estudantes comparem suas respostas entre si. Promova a interação também entre as duplas. Outro ponto que deve ser observado é que a soma dos vetores não depende do ponto origem escolhido para o primeiro vetor. No item (d) tem-se a adição de quatro vetores. Para a realização desta atividade pode ser necessário que o aluno precise expandir a malha. Por isso, sugere-se que o professor leve papel quadriculado para a aula.
 
+.. _ativ-op-vetores-adicao-malha:
 
-Atividade 6 - Adicionando Vetores em uma Malha Quadriculada
----------
+Atividade - Adicionando Vetores em uma Malha Quadriculada
+-----------------------------------------------------------
 
 Faça esta atividade junto com um colega. Em cada um dos itens seguintes, escolha uma ordem arbitrária para somar os vetores representados. O seu colega deve escolher uma ordem diferente da sua. Comparem os resultados e verifiquem a propriedade associativa em cada um dos casos.
 
@@ -443,10 +453,11 @@ c)
    Com esta atividade pretende-se que o aluno observe para a relação que existe entre as coordenadas do vetor soma e as coordenadas dos vetores originais. Com a sequência de atividades realizadas até aqui, espera-se que os alunos não tenham dificuldades em realizá-la.  Na observação de dificuldade, sugere-se que o professor antecipe a realização da atividade 8, sugerindo que o aluno, que teve dificuldade, refaça em seguida a atividade 7.
 
 
+.. _ativ-op-vetores-adicao-malha:
 
-Atividade 7 - Relacionando as coordenadas dos vetores em uma Malha Quadriculada
----------
-Observe agora a representação dos pontos D, E e F do plano cartesiano.
+Atividade - Relacionando as coordenadas dos vetores em uma Malha Quadriculada
+-------------------------------------------------------------------------------
+Observe agora a representação dos pontos `D`, `E` e `F` do plano cartesiano.
 
 .. tikz::  
    \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
@@ -467,9 +478,10 @@ c) Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir
 
    Esta atividade é uma versão digital da atividade 7 construída com o software Geogebra. É fortemente recomendado que se realize esta atividade em sala de aula mesmo que o acesso à internet não esteja disponível. Neste caso, sugere-se que o professor baixe o aplicativo para um notebook e realize a atividade de forma compartilhada com a classe por meio de um projetor multimídia. Escolha um estudante para manusear o aplicativo. Entretanto, promova um debate com a turma sobre o que se pode observar com relação às coordenadas dos vetores `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{u}+\overrightarrow{v}`. Escolha outro par de vetores `\overrightarrow{u}` e `\overrightarrow{v}` e repita a atividade até que o objetivo seja atingido.
 
+.. _ativ-op-vetores-adicao-coordenadas-geogebra:
 
 Atividade 8 - Relacionando as coordenadas dos vetores usando o Geogebra
----------
+---------------------------------------------------------------------------
 Com o objetivo de ver mais exemplos similares ao da atividade anterior, faça agora a atividade digital no link a seguir https://www.geogebra.org/m/N4ENeKsR.
    
 Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
@@ -546,9 +558,10 @@ Antes porém, cabe adotar uma notação mais simplificada para os vetores. Repre
       \overrightarrow{o}+\overrightarrow{u} = \binom{0+x_{u}}{0+y_{u}} = \binom{x_{u}}{y_{u}} = \overrightarrow{u} 
 
 
+.. _sec-op-vetores-multiplicacao:
 
 Multiplicação de um vetor por um escalar
----------------
+----------------------------------------
 Antes de definir a multiplicação de um vetor por um escalar convém fazer duas observações iniciais.
 
 .. note ::
@@ -611,9 +624,10 @@ Antes de definir a multiplicação de um vetor por um escalar convém fazer duas
 
    Entretanto, cabe destacar este assunto será retomado e estudado com mais propriedade na atividade 10.
 
+.. _ativ-op-vetores-multiplicacao-escalar:
 
-Atividade 9 - Multiplicando por um escalar
----------
+Atividade - Multiplicando por um escalar
+----------------------------------------
 Na figura a seguir encontra-se representado o vetor  `\overrightarrow{u}=\binom{3}{1}`.
    
 
@@ -684,9 +698,10 @@ e) E se `\lambda` for igual a -1? O que se pode afirmar do vetor `\lambda.\overr
 
 f) E se `\lambda` for igual a 1? Quem é o vetor `\lambda.\overrightarrow{u}`?
 
+.. _sec-op-vetores-propr-mult-escalar:
 
 Propriedades da operação de multiplicação de um vetor por um escalar
----------------
+--------------------------------------------------------------------------
 Nesta seção apresentaremos as propriedades da multiplicação de um vetor no plano por um escalar. Cabe destacar, entretanto, que as propriedades enunciadas também são válidas para vetores no espaço. Pense nisso!
 
 
@@ -867,10 +882,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 
+.. _ativ-op-vetores-representacao:
 
-
-Atividade
------------
+Atividade - nome da atividade
+-----------------------------
 Reproduza em seu caderno as figuras abaixo e faça o que se pede:
 
 a) Dados os vetores `AB` e `BC` na figura abaixo, represente o vetor `AB + BC`.
@@ -881,9 +896,10 @@ b) Em cada uma das situações abaixo, dados os vetores `u` e `v`, faça uma fig
 
 <Inserir 3 figuras com diferentes>
 
+.. _ativ-op-vetores-representacao2:
 
-Atividade
------------
+Atividade - nome da atividade
+-----------------------------
 
 Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cartesiano.
 
@@ -903,8 +919,10 @@ Observe agora a representação dos pontos D(2,3), E(7,2) e F(4,7) do plano cart
    #. Represente agora o vetor deslocamento `\overrightarrow{DF}` e determine as suas coordenadas.
    #. Como podemos determinar as cordenadas do vetor `\overrightarrow{DF}` a partir das coordenadas dos vetores `\overrightarrow{DE}` e `\overrightarrow{EF}`? A relação que você observou entre as coordenadas do **vetor** **deslocamento final** e as coordenadas dos **vetores deslocamentos parciais** se manteve?
 
-Atividade
---------
+.. _ativ-op-vetores-decomp-coordenadas:
+
+Atividade - nome da atividade
+-----------------------------
 
    Com o objetivo de ver mais exemplos similares aos das atividades  1 e 2, faça agora a atividade digital no link a seguir. Antes porém, cabe adotar uma notação mais simplificada para os vetores. Representaremos os vetores  `\overrightarrow{AB}`, `\overrightarrow{BC}` e `\overrightarrow{AC}`, respectivamente, por `\overrightarrow{u}`, `\overrightarrow{v}` e `\overrightarrow{w}`, sendo:
 
