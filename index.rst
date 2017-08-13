@@ -1,6 +1,6 @@
-********
-Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
-********
+************
+Ensino Médio
+************
 
 .. toctree::
    :maxdepth: 2
