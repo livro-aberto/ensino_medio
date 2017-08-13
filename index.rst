@@ -3,10 +3,12 @@ Ensino Médio
 ************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   index_geometria
-   index_algebra_e_funcoes
-   index_prob_e_estatistica
+   GE101
+   GE201-0
+   GE202-0
+   AF106
+   PE103-0
 
 
