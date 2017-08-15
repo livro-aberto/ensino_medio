@@ -4,10 +4,15 @@
 Funções
 =======
 
-.. admonition:: Objetivos Específicos 
+`FASE DE ELABORAÇÃO: 3 (Refinamentos) <https://www.umlivroaberto.com/BookCloud/Metodologia/master/view/fases-de-elaboracao.html#sec-fase-1>`_
+
+.. admonition:: Habilidade 
 
 	**(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá- las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
 
+.. admonition:: Tempo previsto
+
+   4 aulas de 50 minutos cada
 
 .. admonition:: Pré-requisitos
 
@@ -21,14 +26,13 @@ Funções
    
    Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis. Reconhecer funções em situações de não casualidade.
     
-.. note::
-   **Roteiro do Capítulo**
+.. admonition:: Roteiro do Capítulo
    
    `1.` Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
    
-   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)
+   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [Ayalon-et-al-2015]_.  (Exploração)
    
-   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1]. -- Pensamos que o nível "objeto" não deva ser exigido de todos os estudantes, por isso, ele terá maior ênfase nos aprofundamentos.
+   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [Sierpinska-1992]_. -- Pensamos que o nível "objeto" não deva ser exigido de todos os estudantes, por isso, ele terá maior ênfase nos aprofundamentos.
    
    `4.` Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
    
@@ -36,7 +40,7 @@ Funções
    
    `6.` Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
    
-   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [5].
+   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [Ayalon-et-al-2015]_.
    
    `8.` Definição formal de função crescente e decrescente. 
    
@@ -48,98 +52,97 @@ Funções
    
    **Orientação para o professor**
    
-   1) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
+   1) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [Sierpinska-1992]_, página 16.
    
    **Orientações gerais para o Capítulo**
    
    1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
    2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar algum processo que transformou cada entrada na sua respectiva saída. (Processo) 
    
-   **Atenção para as armadilhas**
+   **Distratores**
    
-   * "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [1], página 14.
+   * "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [Sierpinska-1992]_, página 14.
 
-   * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
+   * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [Eisenberg-1992]_.
    
-   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver [3]
+   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver a referência [Dooren-et-al-2005]_.
+ 
+.. admonition:: Referências Bibliográficas
+  
+  .. [Sierpinska-1992] Sierpinska A.: On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 25-58.
    
-   **Referências:**
+  .. [Eisenberg-1992] Eisenberg T.: On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 153–174.
    
-   [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
+  .. [Dooren-et-al-2005] Dooren W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L.: Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, V. 23, p. 57 –86. 
    
-   [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
+  .. [Greer-1993] Greer B.: The mathematical modelling perspective on world problems. Journal of Mathematical Behavior, V. 12, p. 239–250.
    
-   [3]  Van Dooren, W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L. (2005). Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, 23, 57 –86. 
+  .. [Ayalon-et-al-2015] Ayalon M., Watson A. & Lerman S.: Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
    
-   [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
-   
-   [5] Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
-   
-   [6] Rodrigo Schroer. (2013). A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS.
+  .. [Schroer-2013] Schroer R.: A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS.
 
 .. _sec-funcoes-apresentacao:
 
 Apresentação
 ============
 
-
 .. admonition:: Para o professor
 
-  Caro professor, a noção de função é considerada uma das mais importantes da matemática. Segundo PONTE (1992), assim como o ponto, a reta e o plano foram os elementos básicos da Geometria Euclidiana, o conceito de função foi um dos fundamentos da Análise Matemática. Documentos oficiais como os Parâmetros Curriculares Nacionais do Ensino Médio (PCNEM) e a (segunda versão da) Base Nacional Comum Curricular (BNCC)  evidenciam a preocupação com tal conteúdo no Ensino Médio, trazendo inclusive sugestões no que diz respeito a sua abordagem.
-   
-  *Nessa etapa de escolaridade, merece especial destaque o estudo das funções por seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em componentes de outras áreas de conhecimento[...] (BNCC 2016,p.576)*
-   
-  *O estudo das funções permite ao aluno adquirir a linguagem algébrica como a linguagem das ciências, necessária para expressar a relação entre grandezas e modelar situações-problema, construindo modelos descritivos de fenômenos e permitindo várias conexões dentro e fora da própria matemática. (PCNEM 2006, p.121)*
-   
-  Por outro lado, são muitos os relatos sobre as  diversas dificuldades que os estudantes apresentam no processo de aprendizagem da noção de função. SIERPINSKA (1992) chama atenção para alguns dos problemas mais comuns:  fazer a ligação entre as diferentes representações (fórmulas, gráficos, diagramas, descrição por palavras); interpretar gráficos e manipular algebricamente, entre outros.
+Caro professor, a noção de função é considerada uma das mais importantes da matemática. Segundo PONTE (1992), assim como o ponto, a reta e o plano foram os elementos básicos da Geometria Euclidiana, o conceito de função foi um dos fundamentos da Análise Matemática. Documentos oficiais como os Parâmetros Curriculares Nacionais do Ensino Médio (PCNEM) e a (segunda versão da) Base Nacional Comum Curricular (BNCC)  evidenciam a preocupação com tal conteúdo no Ensino Médio, trazendo inclusive sugestões no que diz respeito a sua abordagem.
+
+*Nessa etapa de escolaridade, merece especial destaque o estudo das funções por seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em componentes de outras áreas de conhecimento[...] (BNCC 2016,p.576)*
   
-  Neste ponto do desenvolvimento do seu aprendizado é muito comum o estudante fazer confusão com os diferentes papéis que as letras representam nas expressões algébricas. Para URSINI e TRIGUEROS (2001), as distintas interpretações possíveis para a simbologia algébrica constituem aspectos que geram dificuldades adicionais a muitos estudantes. MATOS e PONTE (2008) ilustram tal fato propondo a seguinte atividade, proposta aqui apenas como uma reflexão sobre três categorias principais: incógnita, número generalizado e variável em uma relação funcional.
-    
-    Observe as expressões seguintes e explique, em cada caso, o papel que desempenha cada uma das letras utilizadas:
-    
-    #. `A=b\cdot h` [Que tal incluir as respostas aqui ao lado? Eu mesmo fiquei na dúvida em alguns casos entre número generalizado ou função. Não depende do contexto para entender o uso?]
-
-    #. `n+3`
-
-    #. `a+1=24`
-
-    #. `2x`
-
-    #. `a(b+c)=ab+ac`
-
-    #. `2x+3=4x-1`
-
-    #. `n^2` 
+*O estudo das funções permite ao aluno adquirir a linguagem algébrica como a linguagem das ciências, necessária para expressar a relação entre grandezas e modelar situações-problema, construindo modelos descritivos de fenômenos e permitindo várias conexões dentro e fora da própria matemática. (PCNEM 2006, p.121)*
+   
+Por outro lado, são muitos os relatos sobre as  diversas dificuldades que os estudantes apresentam no processo de aprendizagem da noção de função. [Sierpinska-1992]_ chama atenção para alguns dos problemas mais comuns:  fazer a ligação entre as diferentes representações (fórmulas, gráficos, diagramas, descrição por palavras); interpretar gráficos e manipular algebricamente, entre outros.
   
-  Segundo EISENBERG (1992), os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente, mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico.
-   
-  JONES (2006) chama atenção para os três níveis de abstração nos quais podemos situar o entendimento do conceito de função:  como ação, como processo e como objeto. Procuramos, assim, dosar as atividades propostas com o objetivo de não privilegiar o pensamento algébrico em detrimento da visualização e buscando atingir os diferentes níveis de abstração indicados acima.
+Neste ponto do desenvolvimento do seu aprendizado é muito comum o estudante fazer confusão com os diferentes papéis que as letras representam nas expressões algébricas. Para [Ursini-et-al-2001]_, as distintas interpretações possíveis para a simbologia algébrica constituem aspectos que geram dificuldades adicionais a muitos estudantes. [Ponte-et-al-2008]_ ilustram tal fato propondo a seguinte atividade, proposta aqui apenas como uma reflexão sobre três categorias principais: incógnita, número generalizado e variável em uma relação funcional.
+    
+Observe as expressões seguintes e explique, em cada caso, o papel que desempenha cada uma das letras utilizadas:
+    
+#. `A=b\cdot h` [Que tal incluir as respostas aqui ao lado? Eu mesmo fiquei na dúvida em alguns casos entre número generalizado ou função. Não depende do contexto para entender o uso?]
 
-  Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Com efeito, durante a busca por tais relações, é muito mais comum nos depararmos com aquelas que não podem ser consideradas funções. Portanto, faz-se necessário estar atento para que se possa extrair todas as potencialidades das verbalizações expressas pelos próprios estudantes.
+#. `n+3`
+
+#. `a+1=24`
+
+#. `2x`
+
+#. `a(b+c)=ab+ac`
+
+#. `2x+3=4x-1`
+
+#. `n^2` 
+  
+Segundo [Eisenberg-1992]_, os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente, mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico.
    
-  Sobre a abordagem adotada neste capítulo, destacamos os seguintes pontos:
+[Jones-2006]_ chama atenção para os três níveis de abstração nos quais podemos situar o entendimento do conceito de função:  como ação, como processo e como objeto. Procuramos, assim, dosar as atividades propostas com o objetivo de não privilegiar o pensamento algébrico em detrimento da visualização e buscando atingir os diferentes níveis de abstração indicados acima.
+
+Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Com efeito, durante a busca por tais relações, é muito mais comum nos depararmos com aquelas que não podem ser consideradas funções. Portanto, faz-se necessário estar atento para que se possa extrair todas as potencialidades das verbalizações expressas pelos próprios estudantes.
    
-   * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
-   * É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
-   * Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
-   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
-   * São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
-   * Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
-   * Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
+Sobre a abordagem adotada neste capítulo, destacamos os seguintes pontos:
+
+* Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
+* É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
+* Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
+* O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
+* São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
+* Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
+* Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
    
   **Referências**
    
-  EISENBERG, T. On the development of a sense for functions. *Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy* p. 153-174, 1992.
+  .. [Eisenberg-1992] Eisenberg T.: On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 153–174.
    
-  JONES, M. Desmystifying Functions: The Historical and Pedagogical Difficulties of the Concept of Function. *Rose-Hulman Undergraduate Math Journal*, v. 7, p. 1-20, 2006.
+  .. [Jones-2006] Jones M.: Desmystifying Functions: The Historical and Pedagogical Difficulties of the Concept of Function. *Rose-Hulman Undergraduate Math Journal*, V. 7, p. 1-20.
   
-  MATOS, A., & PONTE, J. P. (2008). O estudo de relações funcionais e o desenvolvimento do conceito de variável em alunos do 8.º ano. RELIME, 11(2), 195-231.
+  .. [Ponte-et-al-2008] PONTE J. P. & Matos A.: O estudo de relações funcionais e o desenvolvimento do conceito de variável em alunos do 8.º ano. RELIME, V. 11(2), p. 195-231.
    
-  PONTE, J. P. The History of the concept of function and some educational implications *The Mathematics Educator*, v. 2, n. 3, p. 3-8, 1992.
+  .. [PONTE-1992] Ponte J. P.: The History of the concept of function and some educational implications *The Mathematics Educator*, v. 2, n. 3, p. 3-8.
    
-  SIERPINSKA, A. On understanding the notion of function. *Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy*, p. 25-58, 1992.
+  .. [Sierpinska-1992] Sierpinska A.: On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 25-58.
   
-  URSINI, S. e TRIGUEROS, M. A model for the uses of variable in elementary algebra. In M. van den Heuvel-Panhuizen (Ed.), Proceedings of the 25th Conference of the International Group for the Psychology of Mathematics Education (vol. 4, pp. 327-334). Utrecht: Utrecht University, 2001.
+  .. [Ursini-et-al-2001] Ursini S. & Trigueros M.: A model for the uses of variable in elementary algebra. In M. van den Heuvel-Panhuizen (Ed.), Proceedings of the 25th Conference of the International Group for the Psychology of Mathematics Education, V. 4, p. 327-334. Utrecht: Utrecht University.
      
 Neste capítulo vamos dar continuidade ao estudo das funções que você iniciou no Ensino Fundamental. A noção de função é um dos conceitos centrais para a Matemática, e sua importância transcende os limites dessa ciência, sendo muito útil para descrever os fenômenos em diversas áreas do conhecimento, não só nas mais próximas como a Física, a Química, ou as Engenharias, como também em Biologia, Geografia, Sociologia e no seu cotidiano, como ficará claro nas atividades a seguir.
 
