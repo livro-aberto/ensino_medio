@@ -93,7 +93,8 @@ Vetores no plano
    Acreditamos que esse entendimento do conceito de vetor é suficiente para os propósitos da Educação Básica, mesmo não sendo adequado do ponto de vista do rigor matemático. No entanto, embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais formal e completa do ponto de vista matemático, sugere-se que a definição venha após a construção do conceito pelo aluno a partir da proposta apresentada. Nesse caso, sugere-se que os alunos sejam estimulados a propor, em grupos, uma definição para vetor no plano e, a partir da discussão e da reflexão das diferentes propostas apresentadas conduzir à seguinte definição precisa.
       
    .. admonition:: Definição 
-   Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+   
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
   
    Visando enriquecer a abordagem proposta, coordenadas oblíquas e coordenadas polares são apresentadas brevemente. Acredita-se que o conhecimento de outros sistemas de coordenadas pode contribuir para o entendimento da a relação existente entre o número de coordenadas necessárias para a identificação de um vetor no plano e a dimensão do espaço em que ele está inserido. Neste aspecto, cabe ressaltar que, embora um vetor fique determinado por módulo, direção e sentido, em `\mathbb{R^2}` não são necessárias três informações para se identificar um vetor, bastam duas, uma vez que o plano é bidimensional. 
   
@@ -104,11 +105,74 @@ Vetores no plano
    Entendemos que contextualizações naturais para a abordagem de vetores na Educação Básica diz respeito à sua utilização em Física, no estudo de grandezas vetoriais. Essa será uma motivação importante para a nossa proposta. Observamos, no entanto, que não é incomum que, no ensino médio, a aplicação de vetores em Física fique restrita à abordagem de Força. A velocidade, por exemplo, é frequentemente tratada em contextos que reduzem seu estudo ao aspecto numérico, ou seja, ao seu módulo. Sendo assim abordada como uma grandeza escalar, o que não é verdade.  Esperamos, com a proposta apresenta aqui, contribuir para a compreensão e a motivação do estudo das grandezas vetoriais em Física, reconhecendo a importância de que os alunos reconheçam a relação estreita entre essas ciências.  
 .. Rever o texto para o professor após consolidar tudo que realmente queremos fazer!
 
+
+.. _ativ-vetores-no-plano-deslocamento-barcos:
+
+Atividade: Deslocamento após a tempestade
+----------------------------------------- 
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
+   
+   **Recomendações para o desenvolvimento da atividade:** 
+   
+   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
+   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
+   
+
+Cinco veleiros similares estavam nas posições `A_i`, `B_i`, `C_i`, `D_i` e `E_i`, representadas na figura. Após uma tempestade quatro deles foram localizados e suas novas posições aproximadas são `A_f`, `B_f`, `C_f` e `D_f`, respectivamente.
+
+.. tikz:: Deslocamento aproximado dos barcos devido à tempestade
+
+   %\draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (0,1) circle (.08);
+   \node[right] at (0,1) {$A_i$};
+   \fill[blue] (2,0) circle (.08);
+   \node[right] at (2,0) {$B_i$};
+   \fill[blue] (3,4) circle (.08);
+   \node[right] at (3,4) {$C_i$};
+   \fill[blue] (1,3) circle (.08);
+   \node[right] at (1,3) {$D_i$};
+   \fill[blue] (3,5) circle (.08);
+   \node[right] at (4,4.5) {$F_f$};
+   \fill[red] (4,4.5) circle (.08);
+   \node[right] at (3,5) {$A_f$};
+   \fill[red] (5,4) circle (.08);
+   \node[right] at (5,4) {$B_f$};
+   \fill[red] (6,8) circle (.08);
+   \node[right] at (6,8) {$C_f$};
+   \fill[red] (4,7) circle (.08);
+   \node[right] at (4,7) {$D_f$};
+   %\draw[-latex, thick, red] (0,1) -- (3,5);
+   %\draw[-latex, thick, red] (2,0) -- (5,4);
+   %\draw[-latex, thick, red] (3,4) -- (6,8);
+   %\draw[-latex, thick, red] (1,3) -- (4,7);
+   \fill[blue] (5,2) circle (.08);
+   \node[right] at (5,2) {$E_i$};
+   %\draw[|-|] (8.5, 0) -- (8.5,1);
+   %\node at (9.3,.5) {1 Km};
+   %\draw[|-|] (7,-.5) -- (8,-.5);
+   %\node at (7.5,-.8) {1 Km};
+   %\draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
+   %\draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
+   .. align:: center
+
+#. Localize uma provável posição `E_f` do barco que se encontrava inicialmente na posição `E_i`. Explique cuidadosamente como foi obtida esta posição (tente usar a palavra *deslocamento*). 
+#. Marque a provável posição inicial `F_i` de um barco que esteja na posição `F_f` após a tempestade. Explique cuidadosamente a sua resposta.
+#. Que características você supôs que ficam preservadas nos deslocamentos dos barcos para responder aos itens anteriores?
+
+.. admonition:: Definição 
+
+   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
+   
+Este é um exemplo de grandeza vetorial, conforme ficará claro a seguir. O deslocamento dos barcos na :ref:`ativ-vetores-no-plano-deslocamento-barcos` é representado por segmentos orientados (setas) com origem no ponto de partida e extremidade no ponto de chegada. Apesar de os barcos terem posições iniciais e finais diferentes, seus deslocamentos possuem a *mesma distância*, na mesma *direção* e no *mesmo sentido*. As grandezas vetoriais que preservam estas três características são consideradas iguais, como veremos a seguir.
+
 .. Começo da Edição Marcos Paulo 
 
 **Vetores: módulo, direção e sentido**
    
-As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outras, são associadas ao conceito de *grandeza*.
+As diversas ciências utilizam modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outras, são associadas ao conceito de *grandeza*.
 
 Por exemplo, a figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá, que envolve informações sobre diferentes grandezas. 
 
@@ -244,66 +308,6 @@ Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apres
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
-
-.. _ativ-vetores-no-plano-deslocamento-barcos:
-
-Atividade: Deslocamento após a tempestade
------------------------------------------ 
-
-.. admonition:: Para o Professor
-
-   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
-   
-   **Recomendações para o desenvolvimento da atividade:** 
-   
-   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
-   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
-   
-
-
-Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
-
-.. tikz:: Deslocamento aproximado dos barcos devido à tempestade
-
-   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
-   \fill[blue] (0,1) circle (.08);
-   \node[right] at (0,1) {$A$};
-   \fill[blue] (2,0) circle (.08);
-   \node[right] at (2,0) {$B$};
-   \fill[blue] (3,4) circle (.08);
-   \node[right] at (3,4) {$C$};
-   \fill[blue] (1,3) circle (.08);
-   \node[right] at (1,3) {$D$};
-   \fill[blue] (3,5) circle (.08);
-   \node[right] at (3,5) {$A'$};
-   \fill[blue] (5,4) circle (.08);
-   \node[right] at (5,4) {$B'$};
-   \fill[blue] (6,8) circle (.08);
-   \node[right] at (6,8) {$C'$};
-   \fill[blue] (4,7) circle (.08);
-   \node[right] at (4,7) {$D'$};
-   \draw[-latex, thick, red] (0,1) -- (3,5);
-   \draw[-latex, thick, red] (2,0) -- (5,4);
-   \draw[-latex, thick, red] (3,4) -- (6,8);
-   \draw[-latex, thick, red] (1,3) -- (4,7);
-   \fill[blue] (5,2) circle (.08);
-   \node[right] at (5,2) {$E$};
-   \draw[|-|] (8.5, 0) -- (8.5,1);
-   \node at (9.3,.5) {1 Km};
-   \draw[|-|] (7,-.5) -- (8,-.5);
-   \node at (7.5,-.8) {1 Km};
-   \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
-   \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
-   .. align:: center
-
-Reproduza a figura no seu caderno e localize uma provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
-
-
-.. admonition:: Definição 
-
-   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
-   
-Este é um exemplo de grandeza vetorial, que possui módulo, direção e sentido. O deslocamento dos barcos na atividade 1.1.2 é representado por segmentos orientados. Observe que apesar de os barcos terem posições iniciais e finais diferentes, tiveram o mesmo deslocamento, ou seja, se deslocaram a *mesma distância*, na mesma *direção* e no *mesmo sentido*. Essa discussão será aprofundada a seguir. 
 
 .. _ativ-vetores-ligando-pontos:
 
