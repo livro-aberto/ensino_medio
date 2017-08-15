@@ -1,4 +1,4 @@
-.. centered:: `FASE DE ELABORAÇÃO: 3 <https://github.com/livro-aberto/ensino_medio/issues/10>`_
+.. centered:: `FASE DE ELABORAÇÃO: 1 <https://github.com/livro-aberto/ensino_medio/issues/10>`_
 
 ****************
 Vetores no plano
@@ -33,8 +33,22 @@ Vetores no plano
    BNCC (EM11CN02) Atribuir a permanência de um objeto numa mesma posição, ou a constância de sua velocidade, ao cancelamento das forças agindo nele, e atribuir qualquer alteração na sua velocidade à força resultante atuando nele
 
    BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
+   
+.. admonition:: O que é ensinado?
 
-.. admonition:: Distratores
+   * Conceito de vetores.
+   * Vetores iguais do ponto de vista geométrico.
+   * Vetor nulo e simétrico de um vetor.
+   * Representação de vetores do ponto de vista algébrico e geométrico usando malhas ou sistemas de coordenadas retangulares ou oblíquas.
+   * Representação de deslocamento, velocidade, aceleração, força e translação usando vetores.
+   
+.. admonition:: Por que estudar do assunto?
+
+   * Porque vetores descrevem de modo apropriado diversas grandezas como deslocamento, velocidade, aceleração e força.
+
+.. admonition:: Distratores (Dificuldades típicas dos estudantes)
+   
+   * Confunde-se deslocamento com trajetória.
    
    Adição de vetores
    
@@ -42,9 +56,7 @@ Vetores no plano
    * Dificuldade para representar o vetor soma, quando os vetores estão em posição não canônica. Por exemplo, quando dois vetores apontam para o mesmo ponto, ou os vetores se cruzam."[Poynter-et-al-2005]_ pag. 2.
    * Quando dois vetores iniciam no mesmo ponto, estudantes tendem a ligar os pontos finais para representar a soma. [Poynter-et-al-2005]_ pag. 2.
    
-.. note::
-   
-   Roteiro do capítulo:
+.. admonition:: Estrutura
    
    1. Texto com o objetivo de despertar para a existência de grandezas vetoriais. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
    2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
@@ -57,6 +69,11 @@ Vetores no plano
    9. Soma de vetores com representação visual e algébrica. [Wanderley]
    10. Exercícios e exercícios suplementares. [Todos]
   
+.. admonition:: Aprofundamentos
+
+.. admonition:: Sugestões de leituras e projetos aplicados
+
+   Corrida de vetores - incluir os diversos aplicativos e jogos de tabuleiros. 
 
 .. [Poynter-et-al-2005] Poynter, A., & Tall, D. (2005). Relating theories to practice in the teaching of mathematics. In Fourth Congress of the European Society for Research in Mathematics Education, Sant Feliu de Guíxols, Spain.
 
@@ -142,7 +159,7 @@ A representação geométrica é um recurso importante no estudo de vetores, amp
 
 Considere o Mapa de Alagoas dividido nas três Mesorregiões propostas pelo IBGE. Foi feita uma consulta em um *site* de meteorologia  da velocidade do vendo em cada uma das regiões em um mesmo instante. Essas velocidades estão resgistradas no mapa: ESE 12km/h (Sertão Alagoano), ENE 14km/h (Agreste Alagoano) e E 6km/h (Leste Alagoano). 
 
-[Isso é verdade? É possível essa varaiação tão grande? Fiquei na dúvida...]
+[Isso é verdade? É possível essa variação tão grande? Fiquei na dúvida...]
 
 .. _fig-alagoas-vel-do-vento:
 
@@ -204,11 +221,14 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
-a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas no mapa da FIGURA XX, qual das representações a seguir corresponde à velocidade do vento no Sertão Alagoano no momento da consulta.
-
-   **Objetivos específicos:**
+.. admonition:: Para o professor
+   
+   **Objetivos específicos:** Reconhecer 
    
    **Recomendações para o desenvolvimento da atividade:**
+
+
+Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas no mapa da FIGURA XX, qual das representações a seguir corresponde à velocidade do vento no Sertão Alagoano no momento da consulta.
 
 #. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
 
@@ -218,8 +238,8 @@ a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas ap
       :width: 1200px
       :align: center
 
-   
-b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tiver comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano? 
+#. Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tiver comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano? 
+
 **[Acho que aqui a exigência da noção de escala pode confundir o aluno... :( ]**
 
 .. Fim da edição Marcos Paulo e começo do Fabio
