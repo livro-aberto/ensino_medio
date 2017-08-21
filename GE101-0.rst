@@ -1,4 +1,4 @@
-.. centered:: `FASE DE ELABORAÇÃO: 3 <https://github.com/livro-aberto/ensino_medio/issues/10>`_
+.. centered:: `FASE DE ELABORAÇÃO: 1 <https://github.com/livro-aberto/ensino_medio/issues/10>`_
 
 ********
 Vetores no plano
@@ -34,29 +34,59 @@ Vetores no plano
    BNCC (EM11CN02) Atribuir a permanência de um objeto numa mesma posição, ou a constância de sua velocidade, ao cancelamento das forças agindo nele, e atribuir qualquer alteração na sua velocidade à força resultante atuando nele
 
    BNCC (EM13MT02) Estabelecer relações entre as transformações isométricas (reflexão, translação e rotação) e vetores no contexto do plano cartesiano, incluindo o uso de softwares de geometria dinâmica.
+   
+.. admonition:: O que é estudado?
 
-.. note::
+   * Conceito de vetores.
+   * Vetores iguais do ponto de vista geométrico.
+   * Vetor nulo e simétrico de um vetor.
+   * Adição e produto por escalar de vetores geométricos.
+   * Representação de vetores do ponto de vista algébrico e geométrico usando malhas ou sistemas de coordenadas retangulares ou oblíquas.
+   * Representação de deslocamento, velocidade, aceleração e força usando vetores.
    
-   Roteiro do capítulo:
+.. admonition:: Por que estudar o assunto?
+
+   * Porque vetores descrevem de modo apropriado diversas grandezas como deslocamento, velocidade, aceleração e força.
+
+.. admonition:: Distratores (Dificuldades típicas dos estudantes)
    
-   1. Texto com o objetivo de despertar para a existência de grandezas vetoriais. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]
-   2. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
-   3. Atividades sobre vetores (sem o uso de coordenadas): (i) cuja abordagem contemple que um vetor fica determinado pelo conhecimento do seu módulo, da sua direção e do seu sentido e (ii) em que seja discutida de forma clara a noção de igualdade de vetores. Observações: Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe a origem o destino está determinado e vice-versa.
-   4. Atividade para introduzir as coordenadas retangulares para um vetor.
-   5. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
-   6. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, da direção e do sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
-   7. Atividade ou exemplo com representação polar. [Marcos Paulo]
-   8. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
-   9. Soma de vetores com representação visual e algébrica. [Wanderley]
-   10. Exercícios e exercícios suplementares. [Todos]
+   * Confunde-se deslocamento com trajetória.
+   
+   Adição de vetores
+   
+   * Na adição de vetores "alguns estudantes se esquecem de incluir o lado final do triângulo ao posicionar a origem do segundo no destino do primeiro." [Poynter-et-al-2005]_ pag. 2.
+   * Dificuldade para representar o vetor soma, quando os vetores estão em posição não canônica. Por exemplo, quando dois vetores apontam para o mesmo ponto, ou os vetores se cruzam."[Poynter-et-al-2005]_ pag. 2.
+   * Quando dois vetores iniciam no mesmo ponto, estudantes tendem a ligar os pontos finais para representar a soma. [Poynter-et-al-2005]_ pag. 2.
+   
+.. admonition:: Estrutura
+   
+   #. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
+   #. Atividade dos veleiros, sem a malha, para que o estudante reconheça que deslocamentos com mesmo módulo, direção e sentido são iguais num certo sentido e assim encaminhar para a existência de grandezas vetoriais.
+   #. Texto com o objetivo de despertar para a existência de grandezas vetoriais. Utilizar mapas de sites de previsão do tempo contendo a velocidade do vento apresentada por meio da velocidade escalar e da direção (por exemplo, NNE). [Marcos Paulo]   
+   #. Atividades sobre vetores (sem o uso de coordenadas): (i) cuja abordagem contemple que um vetor fica determinado pelo conhecimento do seu módulo, da sua direção e do seu sentido e (ii) em que seja discutida de forma clara a noção de igualdade de vetores. Observações: Tudo bem se houver malha, mas não acho que deva existir coordenadas. Acho que boa parte do que entraria aqui já está feito, pode ser apenas uma questão de reposicionar e revisar. Aqui pode vir a atividade dos barcos para introduzir a ideia de que o vetor não tem origem e destino fixados, mas que quando se escolhe a origem o destino está determinado e vice-versa.
+   #. Atividade para introduzir as coordenadas retangulares para um vetor.
+   #. Atividades análogas com diferentes malhas (diferentes bases do sistema, independente da origem do sistema de coordenadas) (porque é libertador e dá noção de bidimensionalidade). [Marcos Paulo]
+   #. **Sistematização:** Afirmação de que um vetor fica caracterizado pelo conhecimento do módulo, da direção e do sentido (ou que dois vetores são iguais quando possuem essas três características iguais). Sistematização do sistema de coordenadas, observando que a representação dos vetores não dependem da origem, mas apenas da escolha de dois vetores **linearmente independentes** (definição da malha). [Simas]
+   #. Atividade ou exemplo com representação polar. [Marcos Paulo]
+   #. Observar para o aluno que seja qual for o sistema de coordenadas considerado, serão necessárias duas informações `(x,y)` ou `(r, \theta)`. Isso porque são vetores bidimensionais, são representados no plano. Observar para fins de comparação que existe análogo no espaço, então precisamos de três coordenadas. [Marcos Paulo]
+   #. Exercícios e exercícios suplementares. [Todos]
   
+.. admonition:: Aprofundamentos
+
+.. admonition:: Sugestões de leituras e projetos aplicados
+
+   Corrida de vetores - incluir os diversos aplicativos e jogos de tabuleiros. 
+
+.. admonition:: Referências bibliográficas
+
+   .. [Poynter-et-al-2005] Poynter, A., & Tall, D. (2005). Relating theories to practice in the teaching of mathematics. In Fourth Congress of the European Society for Research in Mathematics Education, Sant Feliu de Guíxols, Spain.
 
 
 
 .. admonition:: Para o professor
 
    Caro Professor, 
-   este é um texto introdutório do conceito de vetores no plano para estudantes do ensino médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como força e velocidade. 
+   este é um texto introdutório do conceito de vetores no plano para estudantes do ensino médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como deslocamento, velocidade, aceleração e força. 
    
    A nocão de vetor é explorada a partir de um sistema estabelecido como uma "malha", o que equivale a fixar uma base vetorial no plano. Assim, um vetor do plano pode ser distinguido a partir de um par ordenado de números, que correspondem às coordenadas do vetor na base estabelecida, que informam sobre suas características elemntares: *módulo*, *direção* e *sentido*. 
    
@@ -67,7 +97,8 @@ Vetores no plano
    Acreditamos que esse entendimento do conceito de vetor é suficiente para os propósitos da Educação Básica, mesmo não sendo adequado do ponto de vista do rigor matemático. No entanto, embora esta não seja a nossa proposta, caso o professor decida por uma abordagem mais formal e completa do ponto de vista matemático, sugere-se que a definição venha após a construção do conceito pelo aluno a partir da proposta apresentada. Nesse caso, sugere-se que os alunos sejam estimulados a propor, em grupos, uma definição para vetor no plano e, a partir da discussão e da reflexão das diferentes propostas apresentadas conduzir à seguinte definição precisa.
       
    .. admonition:: Definição 
-   Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
+   
+      Um vetor é o conjunto de todos os segmentos orientados com mesmo módulo, direção e sentido (ou seja, é uma classe de equivalência de segmentos orientados equipolentes (e.g., \ref{Elon Lima, Coordenadas no Plano}, p. X).
   
    Visando enriquecer a abordagem proposta, coordenadas oblíquas e coordenadas polares são apresentadas brevemente. Acredita-se que o conhecimento de outros sistemas de coordenadas pode contribuir para o entendimento da a relação existente entre o número de coordenadas necessárias para a identificação de um vetor no plano e a dimensão do espaço em que ele está inserido. Neste aspecto, cabe ressaltar que, embora um vetor fique determinado por módulo, direção e sentido, em `\mathbb{R^2}` não são necessárias três informações para se identificar um vetor, bastam duas, uma vez que o plano é bidimensional. 
   
@@ -78,11 +109,74 @@ Vetores no plano
    Entendemos que contextualizações naturais para a abordagem de vetores na Educação Básica diz respeito à sua utilização em Física, no estudo de grandezas vetoriais. Essa será uma motivação importante para a nossa proposta. Observamos, no entanto, que não é incomum que, no ensino médio, a aplicação de vetores em Física fique restrita à abordagem de Força. A velocidade, por exemplo, é frequentemente tratada em contextos que reduzem seu estudo ao aspecto numérico, ou seja, ao seu módulo. Sendo assim abordada como uma grandeza escalar, o que não é verdade.  Esperamos, com a proposta apresenta aqui, contribuir para a compreensão e a motivação do estudo das grandezas vetoriais em Física, reconhecendo a importância de que os alunos reconheçam a relação estreita entre essas ciências.  
 .. Rever o texto para o professor após consolidar tudo que realmente queremos fazer!
 
+
+.. _ativ-vetores-no-plano-deslocamento-barcos:
+
+Atividade: Deslocamento após a tempestade
+----------------------------------------- 
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
+   
+   **Recomendações para o desenvolvimento da atividade:** 
+   
+   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
+   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
+   
+
+Cinco veleiros similares estavam nas posições `A_i`, `B_i`, `C_i`, `D_i` e `E_i`, representadas na figura. Após uma tempestade quatro deles foram localizados e suas novas posições aproximadas são `A_f`, `B_f`, `C_f` e `D_f`, respectivamente.
+
+.. tikz:: Deslocamento aproximado dos barcos devido à tempestade
+
+   %\draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+   \fill[blue] (0,1) circle (.08);
+   \node[right] at (0,1) {$A_i$};
+   \fill[blue] (2,0) circle (.08);
+   \node[right] at (2,0) {$B_i$};
+   \fill[blue] (3,4) circle (.08);
+   \node[right] at (3,4) {$C_i$};
+   \fill[blue] (1,3) circle (.08);
+   \node[right] at (1,3) {$D_i$};
+   \fill[blue] (3,5) circle (.08);
+   \node[right] at (4,4.5) {$F_f$};
+   \fill[red] (4,4.5) circle (.08);
+   \node[right] at (3,5) {$A_f$};
+   \fill[red] (5,4) circle (.08);
+   \node[right] at (5,4) {$B_f$};
+   \fill[red] (6,8) circle (.08);
+   \node[right] at (6,8) {$C_f$};
+   \fill[red] (4,7) circle (.08);
+   \node[right] at (4,7) {$D_f$};
+   %\draw[-latex, thick, red] (0,1) -- (3,5);
+   %\draw[-latex, thick, red] (2,0) -- (5,4);
+   %\draw[-latex, thick, red] (3,4) -- (6,8);
+   %\draw[-latex, thick, red] (1,3) -- (4,7);
+   \fill[blue] (5,2) circle (.08);
+   \node[right] at (5,2) {$E_i$};
+   %\draw[|-|] (8.5, 0) -- (8.5,1);
+   %\node at (9.3,.5) {1 Km};
+   %\draw[|-|] (7,-.5) -- (8,-.5);
+   %\node at (7.5,-.8) {1 Km};
+   %\draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
+   %\draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
+   .. align:: center
+
+#. Localize uma provável posição `E_f` do barco que se encontrava inicialmente na posição `E_i`. Explique cuidadosamente como foi obtida esta posição (tente usar a palavra *deslocamento*). 
+#. Marque a provável posição inicial `F_i` de um barco que esteja na posição `F_f` após a tempestade. Explique cuidadosamente a sua resposta.
+#. Que características você supôs que ficam preservadas nos deslocamentos dos barcos para responder aos itens anteriores?
+
+.. admonition:: Definição 
+
+   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
+   
+Este é um exemplo de grandeza vetorial, conforme ficará claro a seguir. O deslocamento dos barcos na :ref:`ativ-vetores-no-plano-deslocamento-barcos` é representado por segmentos orientados (setas) com origem no ponto de partida e extremidade no ponto de chegada. Apesar de os barcos terem posições iniciais e finais diferentes, seus deslocamentos possuem a *mesma distância*, na mesma *direção* e no *mesmo sentido*. As grandezas vetoriais que preservam estas três características são consideradas iguais, como veremos a seguir.
+
 .. Começo da Edição Marcos Paulo 
 
 **Vetores: módulo, direção e sentido**
    
-As diversas ciências utilizam-se de modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outras, são associadas ao conceito de *grandeza*.
+As diversas ciências utilizam modelos matemáticos para representar os fenômenos que desejam descrever. As ideias de intensidade, medida e quantidade, além de outras, são associadas ao conceito de *grandeza*.
 
 Por exemplo, a figura a seguir mostra uma tabela com resumo de 5 dias de previsões climáticas para a cidade de Macapá, que envolve informações sobre diferentes grandezas. 
 
@@ -133,7 +227,7 @@ A representação geométrica é um recurso importante no estudo de vetores, amp
 
 Considere o Mapa de Alagoas dividido nas três Mesorregiões propostas pelo IBGE. Foi feita uma consulta em um *site* de meteorologia  da velocidade do vendo em cada uma das regiões em um mesmo instante. Essas velocidades estão resgistradas no mapa: ESE 12km/h (Sertão Alagoano), ENE 14km/h (Agreste Alagoano) e E 6km/h (Leste Alagoano). 
 
-[Isso é verdade? É possível essa varaiação tão grande? Fiquei na dúvida...]
+[Isso é verdade? É possível essa variação tão grande? Fiquei na dúvida...]
 
 .. _fig-alagoas-vel-do-vento:
 
@@ -195,11 +289,14 @@ Na figura a seguir, utilizamos um segmento oeirntado para representar a velocida
 Atividade: Segmento Orientado
 ------------------------------
 
-a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas no mapa da FIGURA XX, qual das representações a seguir corresponde à velocidade do vento no Sertão Alagoano no momento da consulta.
-
-   **Objetivos específicos:**
+.. admonition:: Para o professor
+   
+   **Objetivos específicos:** Reconhecer 
    
    **Recomendações para o desenvolvimento da atividade:**
+
+
+Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas no mapa da FIGURA XX, qual das representações a seguir corresponde à velocidade do vento no Sertão Alagoano no momento da consulta.
 
 #. Segundo as informações meteorológicas sobre as mesorregiões de Alagoas apresentadas anteriormente, qual dos mapas a seguir apresenta a informação sobre a velocidade do vento no momento da consulta.
 
@@ -209,72 +306,12 @@ a) Segundo as informações meteorológicas sobre as mesorregiões de Alagoas ap
       :width: 1200px
       :align: center
 
-   
-b) Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tiver comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano? 
+#. Se o segmento orientado usado para representar a velocidade do vento no mapa do Leste Alagoano tiver comprimento 1cm, qual seria o comprimento do segmento orientado utilizado para representar a velocidade do vento no mapa, em mesma escala, do Agreste Alagoano? 
+
 **[Acho que aqui a exigência da noção de escala pode confundir o aluno... :( ]**
 
 .. Fim da edição Marcos Paulo e começo do Fabio
 
-
-.. _ativ-vetores-no-plano-deslocamento-barcos:
-
-Atividade: Deslocamento após a tempestade
------------------------------------------ 
-
-.. admonition:: Para o Professor
-
-   **Objetivos específicos:** Reconhecer através de padrões que um mesmo vetor, representando deslocamento, pode ter sua origem em qualquer ponto do plano.
-   
-   **Recomendações para o desenvolvimento da atividade:** 
-   
-   * Esta é uma atividade preliminar, não se espera que seja gasto muito tempo aqui. O importante é que o estudante observe que todos os barcos sofreram o mesmo *deslocamento*, embora tenha origens e destinos distintos. Vetor é o objeto ideal para lidar com estas posições relativas entre os pontos inicial e final. 
-   * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
-   
-
-
-Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`, representadas na figura. Após uma tempestade quatro deles conseguiram se comunicar com a guarda costeira e informaram suas novas posições aproximadas `A'`, `B'`, `C'` e `D'`, respectivamente. A guarda costeira pretende enviar uma equipe de busca para o quinto barco.
-
-.. tikz:: Deslocamento aproximado dos barcos devido à tempestade
-
-   \draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
-   \fill[blue] (0,1) circle (.08);
-   \node[right] at (0,1) {$A$};
-   \fill[blue] (2,0) circle (.08);
-   \node[right] at (2,0) {$B$};
-   \fill[blue] (3,4) circle (.08);
-   \node[right] at (3,4) {$C$};
-   \fill[blue] (1,3) circle (.08);
-   \node[right] at (1,3) {$D$};
-   \fill[blue] (3,5) circle (.08);
-   \node[right] at (3,5) {$A'$};
-   \fill[blue] (5,4) circle (.08);
-   \node[right] at (5,4) {$B'$};
-   \fill[blue] (6,8) circle (.08);
-   \node[right] at (6,8) {$C'$};
-   \fill[blue] (4,7) circle (.08);
-   \node[right] at (4,7) {$D'$};
-   \draw[-latex, thick, red] (0,1) -- (3,5);
-   \draw[-latex, thick, red] (2,0) -- (5,4);
-   \draw[-latex, thick, red] (3,4) -- (6,8);
-   \draw[-latex, thick, red] (1,3) -- (4,7);
-   \fill[blue] (5,2) circle (.08);
-   \node[right] at (5,2) {$E$};
-   \draw[|-|] (8.5, 0) -- (8.5,1);
-   \node at (9.3,.5) {1 Km};
-   \draw[|-|] (7,-.5) -- (8,-.5);
-   \node at (7.5,-.8) {1 Km};
-   \draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
-   \draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
-   .. align:: center
-
-Reproduza a figura no seu caderno e localize uma provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição.
-
-
-.. admonition:: Definição 
-
-   O conceito de *deslocamento* vem da física e significa a variação da posição de determinado objeto.
-   
-Este é um exemplo de grandeza vetorial, que possui módulo, direção e sentido. O deslocamento dos barcos na atividade 1.1.2 é representado por segmentos orientados. Observe que apesar de os barcos terem posições iniciais e finais diferentes, tiveram o mesmo deslocamento, ou seja, se deslocaram a *mesma distância*, na mesma *direção* e no *mesmo sentido*. Essa discussão será aprofundada a seguir. 
 
 .. _ativ-vetores-ligando-pontos:
 
