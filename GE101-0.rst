@@ -125,45 +125,47 @@ Atividade: Deslocamento após a tempestade
    * Os podem marcar o ponto `E'` baseados apenas no aspecto visual. Por isso vale a pena que o professor estimule que alguns estudantes apresentem verbalmente suas explicações e, se este for o caso, coloque a dúvida: "como você pode garantir que não é este outro ponto?" para que o estudante recorra à malha para encontrar uma explicação mais consistente que "parece que é aqui".
    
 
-Cinco veleiros similares estavam nas posições `A_i`, `B_i`, `C_i`, `D_i` e `E_i`, representadas na figura. Após uma tempestade quatro deles foram localizados e suas novas posições aproximadas são `A_f`, `B_f`, `C_f` e `D_f`, respectivamente.
+Cinco veleiros similares estavam nas posições `A`, `B`, `C`, `D` e `E`,
+representadas na figura. Após uma tempestade quatro deles foram localizados e suas novas posições aproximadas
+são `A'`, `B'`, `C'` e `D'`, respectivamente.
 
 .. tikz:: Deslocamento aproximado dos barcos devido à tempestade
 
-   %\draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
-   \fill[blue] (0,1) circle (.08);
-   \node[right] at (0,1) {$A_i$};
-   \fill[blue] (2,0) circle (.08);
-   \node[right] at (2,0) {$B_i$};
-   \fill[blue] (3,4) circle (.08);
-   \node[right] at (3,4) {$C_i$};
-   \fill[blue] (1,3) circle (.08);
-   \node[right] at (1,3) {$D_i$};
-   \fill[blue] (3,5) circle (.08);
-   \node[right] at (4,4.5) {$F_f$};
-   \fill[red] (4,4.5) circle (.08);
-   \node[right] at (3,5) {$A_f$};
-   \fill[red] (5,4) circle (.08);
-   \node[right] at (5,4) {$B_f$};
-   \fill[red] (6,8) circle (.08);
-   \node[right] at (6,8) {$C_f$};
-   \fill[red] (4,7) circle (.08);
-   \node[right] at (4,7) {$D_f$};
-   %\draw[-latex, thick, red] (0,1) -- (3,5);
-   %\draw[-latex, thick, red] (2,0) -- (5,4);
-   %\draw[-latex, thick, red] (3,4) -- (6,8);
-   %\draw[-latex, thick, red] (1,3) -- (4,7);
-   \fill[blue] (5,2) circle (.08);
-   \node[right] at (5,2) {$E_i$};
-   %\draw[|-|] (8.5, 0) -- (8.5,1);
-   %\node at (9.3,.5) {1 Km};
-   %\draw[|-|] (7,-.5) -- (8,-.5);
-   %\node at (7.5,-.8) {1 Km};
-   %\draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
-   %\draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
-   .. align:: center
+    %\draw[step=1cm,gray,very thin] (0,0) grid (8.01,8);
+    \fill[blue] (0,1) circle (.08);
+    \node[right] at (0,1) {$A$};
+    \fill[blue] (2,0) circle (.08);
+    \node[right] at (2,0) {$B$};
+    \fill[blue] (3,4) circle (.08);
+    \node[right] at (3,4) {$C$};
+    \fill[blue] (1,3) circle (.08);
+    \node[right] at (1,3) {$D$};
+    \fill[blue] (3,5) circle (.08);
+    \node[right] at (4,4.5) {$F'$};
+    \fill[red] (4,4.5) circle (.08);
+    \node[right] at (3,5) {$A'$};
+    \fill[red] (5,4) circle (.08);
+    \node[right] at (5,4) {$B'$};
+    \fill[red] (6,8) circle (.08);
+    \node[right] at (6,8) {$C'$};
+    \fill[red] (4,7) circle (.08);
+    \node[right] at (4,7) {$D'$};
+    %\draw[-latex, thick, red] (0,1) -- (3,5);
+    %\draw[-latex, thick, red] (2,0) -- (5,4);
+    %\draw[-latex, thick, red] (3,4) -- (6,8);
+    %\draw[-latex, thick, red] (1,3) -- (4,7);
+    \fill[blue] (5,2) circle (.08);
+    \node[right] at (5,2) {$E$};
+    %\draw[|-|] (8.5, 0) -- (8.5,1);
+    %\node at (9.3,.5) {1 Km};
+    %\draw[|-|] (7,-.5) -- (8,-.5);
+    %\node at (7.5,-.8) {1 Km};
+    %\draw[-latex] (0,-1.1) -- (1,-1.1) node[right] {\small (E) leste};
+    %\draw[-latex] (0.5,-1.6) -- (0.5,-.6) node[above] {\small (N) norte};
+    .. align:: center
 
-#. Localize uma provável posição `E_f` do barco que se encontrava inicialmente na posição `E_i`. Explique cuidadosamente como foi obtida esta posição (tente usar a palavra *deslocamento*). 
-#. Marque a provável posição inicial `F_i` de um barco que esteja na posição `F_f` após a tempestade. Explique cuidadosamente a sua resposta.
+#. Localize uma provável posição `E'` do barco que se encontrava inicialmente na posição `E`. Explique cuidadosamente como foi obtida esta posição (tente usar a palavra *deslocamento*).
+#. Marque a provável posição inicial `F` de um barco que esteja na posição `F'` após a tempestade. Explique cuidadosamente a sua resposta.
 #. Que características você supôs que ficam preservadas nos deslocamentos dos barcos para responder aos itens anteriores?
 
 .. admonition:: Definição 
