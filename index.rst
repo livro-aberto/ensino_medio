@@ -4,11 +4,8 @@ Ensino Médio
 
 .. toctree::
    :maxdepth: 1
-
-   GE101
-   GE201-0
-   GE202-0
-   AF106
-   PE103-0
+   :glob: 
+   
+   *
 
 
