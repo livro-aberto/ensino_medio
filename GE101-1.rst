@@ -4,6 +4,112 @@
 Representação algébrica de vetores no plano
 *******************************************
 
+.. glossary::
+
+   origem e extremidade de um vetor dado
+      definição
+
+Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de coordenadas do vetor. Esta representação possibilita que os computadores entendam e operem com vetores.
+
+
+.. _ativ-vetores-vetor-malha:
+
+Atividade: Vetores numa malha quadriculada
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** Usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+   No problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
+
+Reproduza em seu caderno a malha quadriculada e os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
+
+.. tikz:: 
+
+   \draw[step=.5cm,gray,very thin] (-0.05,-0.05) grid (2.05,2.05);
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);
+   \fill (1,1) circle (0.05) node[below right]{$A$};
+   \node at (.25,-.25){$\vec{u}$};
+   \node at (-.25,.25){$\vec{v}$};   
+   
+#. Represente o vetor `3\vec{u}` na malha.
+#. Represente o vetor `-\vec{v}` com origem no ponto `A`.
+#. Represente o vetor `\vec{u}+\vec{v}` na malha com origem no ponto `A`.
+#. Represente o vetor `3\vec{u} + 4\vec{v}`.
+
+.. #. Represente o vetor `4\vec{v}` na malha.
+
+.. admonition:: Resposta 
+
+   texto da resposta.
+   
+
+.. _ativ-vetores-combinacao:
+
+Atividade: Expressão algébrica dado vetor
+-----------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** Usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.2]
+   \draw[step=.5cm,gray,very thin] (-0.05,-0.05) grid (2.05,2.55);
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);
+   %\fill (1,1) circle (0.05) node[below right]{$A$};
+   \node at (.25,-.25){$\vec{u}$};
+   \node at (-.25,.25){$\vec{v}$};
+   
+   \draw[-latex, thick, blue] (0,0) -- (0.5,1) node[below left]{$\vec{a}$};
+   \draw[-latex, thick, blue] (0,1.5) -- (1.5,2.5) node[below left]{$\vec{b}$};
+   \draw[-latex, thick, blue] (1.5,1.5) -- (1,1.5) node[below right]{$\vec{c}$};
+   \draw[-latex, thick, blue] (1.5,0) -- (1,.5) node[below]{$\vec{d}$};
+   \draw[-latex, thick, blue] (2,1) -- (1.5,.5) node[right]{$\vec{e}$};
+   \end{scope}
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
+**[Texto abaixo não concluído]**
+
+Escolhendo dois vetores de direções diferentes num plano, digamos `\overrightarrow{u}` e `\overrightarrow{v}`, podemos construir uma malha justapondo os vetores como na figura:
+
+.. tikz:: Uma malha determinada por dois vetores de direções diferentes
+
+	   \foreach \x in {0,.5,...,1.5} {
+       \draw[-latex, thick, red] (\x,0) -- (\x+.5,0);
+       \draw[-latex, thick, red] (\x,.5) -- (\x+.5,.5);
+       \draw[-latex, thick, red] (\x,1) -- (\x+.5,1);
+       \draw[-latex, thick, red] (\x,1.5) -- (\x+.5,1.5);
+       \draw[-latex, thick, red] (\x,2) -- (\x+.5,2);
+    } 
+    \foreach \y in {0,.5,...,1.5} {
+       \draw[-latex, thick, red] (0,\y) -- (0,\y+.5);
+       \draw[-latex, thick, red] (.5,\y) -- (.5,\y+.5);
+       \draw[-latex, thick, red] (1,\y) -- (1,\y+.5);
+       \draw[-latex, thick, red] (1.5,\y) -- (1.5,\y+.5);
+       \draw[-latex, thick, red] (2,\y) -- (2,\y+.5);
+    }
+    \node at (.25,-.25){$\vec{u}$};
+    \node at (-.25,.25){$\vec{v}$};
+
+
+Qualquer vetor que possua sua origem e sua extremidade em vértices da malha pode ser descrito por meio de operações com `\vec{u}` e `\vec{v}`. Por exemplo, na figura abaixo o vetor `\vec{w}=3\vec{u} + 4\vec{v}`.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
 Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
 
