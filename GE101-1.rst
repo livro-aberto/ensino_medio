@@ -7,9 +7,11 @@ Representação algébrica de vetores no plano
 .. glossary::
 
    origem e extremidade de um vetor dado
-      definição
+   multiplicação por escalar
+   soma ou adição de vetores
+   vetores paralelos
 
-Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de coordenadas do vetor. Esta representação possibilita que os computadores entendam e operem com vetores. Também serão fundamentais para o estudo das transformações do plano.
+Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. Esta representação permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática), possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática).
 
 
 .. _ativ-vetores-vetor-malha:
@@ -24,7 +26,7 @@ Atividade: Vetores numa malha quadriculada
    **Recomendações para o desenvolvimento da atividade:**
    No problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
 
-Reproduza em seu caderno a malha quadriculada e os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
+Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
 
 .. tikz:: 
 
@@ -81,33 +83,75 @@ Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}
 
    texto da resposta
 
+Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
+
+.. tikz:: Dois vetores de direções diferentes determinam uma malha.
+   
+    [>=latex,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{3}
+      \def\ymin{0}
+      \def\ymax{3}
+      \draw[very thin, gray]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+	\draw[-latex, thick, red] (0,0) -- (1,0);
+    \node at (.8,-.3) {$\vec{u}$};
+    \draw[-latex, thick, red] (0,0) -- (0,1);
+    \node at (-.3,.8) {$\vec{v}$};
+    \draw[-latex, thick] (0,0) -- (2,3);
+    \node at (1.5,2.9) {$\vec{w}$};
+    
+    \node at (6.5,1.5) {$\vec{w}=2\vec{u} + 3 \vec{v}$.};
+
+Embora uma discussão mais geral seja útil para estudantes da área de exatas, nos restringiremos neste livro ao caso em que os vetores `\vec{u}` e `\vec{v}` têm módulos ambos iguais a 1 e são perpendiculares (isto significa que eles estão sobre retas perpendiculares).
+
+.. _ativ-cap-titulo-da-atividade:
+
+Atividade: coordenadas do vetor posição
+---------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** 
+   
+   #. Construir um sistema de coordenadas cartesianas a partir de um par de vetores de módulo 1 e perpendiculares entre si.
+   #. Reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Texto da atividade
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
 **[Texto abaixo não concluído]**
 
-Escolhendo dois vetores de direções diferentes num plano, digamos `\overrightarrow{u}` e `\overrightarrow{v}`, podemos construir uma malha justapondo os vetores como na figura:
+Escolhendo dois vetores de direções diferentes num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` `\overrightarrow{w}` pode ser escrito como `\vec{w} = x\vec{u} + y\vec{v}`, onde `x` e `y` são números reais. De fato, ...
 
-.. tikz:: Uma malha determinada por dois vetores de direções diferentes
+<FIGURA>
 
-	   \foreach \x in {0,.5,...,1.5} {
-       \draw[-latex, thick, red] (\x,0) -- (\x+.5,0);
-       \draw[-latex, thick, red] (\x,.5) -- (\x+.5,.5);
-       \draw[-latex, thick, red] (\x,1) -- (\x+.5,1);
-       \draw[-latex, thick, red] (\x,1.5) -- (\x+.5,1.5);
-       \draw[-latex, thick, red] (\x,2) -- (\x+.5,2);
-    } 
-    \foreach \y in {0,.5,...,1.5} {
-       \draw[-latex, thick, red] (0,\y) -- (0,\y+.5);
-       \draw[-latex, thick, red] (.5,\y) -- (.5,\y+.5);
-       \draw[-latex, thick, red] (1,\y) -- (1,\y+.5);
-       \draw[-latex, thick, red] (1.5,\y) -- (1.5,\y+.5);
-       \draw[-latex, thick, red] (2,\y) -- (2,\y+.5);
-    }
-    \node at (.25,-.25){$\vec{u}$};
-    \node at (-.25,.25){$\vec{v}$};
+.. admonition:: Definição 
+   
+   Uma vez fixados os vetores `\vec{u}` e `\vec{v}` (nesta ordem) não paralelos, os números reais `x` e `y` tais que `\vec{w} = x\vec{u} + y\vec{v}` são chamados de *coordenadas do vetor* `\vec{w}` *com relação a* `\vec{u}` e `\vec{v}`. Escreveremos
+   
+   .. math::
+
+      \vec{w} = \binom{x}{y} 
+   
+   para abreviar esta expressão.
 
 
-Qualquer vetor que possua sua origem e sua extremidade em vértices da malha pode ser descrito por meio de operações com `\vec{u}` e `\vec{v}`. Por exemplo, na figura abaixo o vetor `\vec{w}=3\vec{u} + 4\vec{v}`.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
