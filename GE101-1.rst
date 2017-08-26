@@ -112,11 +112,18 @@ Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\
     \draw[-latex, thick] (0,0) -- (2,3);
     \node at (1.5,2.9) {$\vec{w}$};
     
-    \node at (6.5,1.5) {$\vec{w}=2\vec{u} + 3 \vec{v}$.};
+    \node[draw,text width=4cm,minimum height=2cm,minimum width=3cm] at 
+     (6.7,1.5) {Temos $\vec{w}=2\vec{u} + 3 \vec{v}$. Dizemos que $x=2$ e $y=3$ são as coordenadas de $\vec{w}$ com relação aos vetores $\vec{u}$ e $\vec{v}$.};
+
+    %\node at (6.5,1.5) {};
 
 Embora uma discussão mais geral seja útil para estudantes da área de exatas, nos restringiremos neste livro ao caso em que os vetores `\vec{u}` e `\vec{v}` têm módulos ambos iguais a 1 e são perpendiculares (isto significa que eles estão sobre retas perpendiculares).
 
-Você deve lembrar dos anos anteriores como marcar pontos num plano com um sistema de coordenadas. Pretendemos relacionar este cconhecimento com o de vetores. Se a atividade a seguir parecer difícil, sugiro que realize antes as atividades de revisão deste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
+.. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
+
+Você deve lembrar dos anos anteriores como marcar pontos num plano com um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
+
+Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
 
 .. _ativ-cap-titulo-da-atividade:
 
@@ -157,7 +164,18 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
 
    texto da resposta
 
-Qualquer vetor `\vec{v}` do plano pode ser representado como possuindo origem no ponto `O=(0,0)`, do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OV}`, para algum ponto `V` do plano.  Na atividade acima você deve ter observado que as coordenadas do vetor posição `\overrightarrow{OV}` de um ponto `V=(x,y)` qualquer são também `x` e `y` (pois `\overrightarrow{OV}=x\overrightarrow{OX} + y\overrightarrow{OY}`). Deste modo, quando temos um sistema de coordenadas fixado escrevemos `\vec{v} = (x,y)`.
+Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OV}`, para algum ponto `V` do plano.  Na atividade acima você deve ter observado que dado um ponto `V=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OV}` são também `x` e `y` (pois `\overrightarrow{OV} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
+
+.. admonition:: Notação
+   
+   Para representar um vetor `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   
+   .. math::
+   
+      \vec{v} = (x,y) 
+   
+   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `V` tal que `\vec{v}=\overrightarrow{OV}`.
+
 
 **[Texto abaixo não concluído]**
 
