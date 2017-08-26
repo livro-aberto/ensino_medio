@@ -5,25 +5,39 @@ Organizando as ideias
 
 Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
-Na atividade "100 metros rasos" temos o conjunto `A` dos tempos e o conjunto `B` das distâncias. A cada tempo está associado uma única distância.
+Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
 Na atividade "Números triangulares" temos o conjunto `A` das posições dos termos na sequência e o conjunto `B`, também dos naturais, representando o número total `T_n` de círculos no triângulo. A cada `n` está associado o número triangular `T_n`.
 
-Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+Por fim, na atividade "Arranha-céu” temos o conjunto `A` dos andares do prédio e o conjunto `B` das alturas. A cada andar está associada uma altura.
 
 Nas três situações apresentadas, cada elemento do conjunto `A` está associado a um único elemento do conjunto `B`. Relações que têm essa característica são chamadas de funções.
 
 .. admonition:: Definição 
 
-   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma **função** de `A` em `B`, se *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
-   Assim, para cada `x\in A` existe um único `y\in B` relacionado a `x`, e por isso escrevemos `y=f(x)` e dizemos que `y` é a imagem de `x` pela função `f`.
-
-O conjunto `A` é chamado **domínio** da função enquanto o conjunto `B` é o **contradomínio**. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
+   Dizemos que uma relação `f` entre os elementos de dois conjuntos, `A` e `B`, é uma **função de `A` em `B`** quando *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
    
-  
-.. admonition:: Notação 
+   .. math::
 
-    Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
+      \begin{eqnarray*}
+      f:A \to B \\
+      x \mapsto f(x)
+      \end{eqnarray*}
+   
+   Assim, para cada `x\in A` deve existir um único elemento em `B` que esteja relacionado a `x`. Esse elemento é denotado por `f(x)` e chamado de imagem do elemento `x` pela função `f`.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao.png
+      :width: 600px
+      :align: center
+
+O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de chegada `B` é o **contradomínio** e o subconjunto de `B` formado por todas as possíveis imagens é o conjunto imagem da função `f`.
+
+
+.. _notacao:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao1.png
+   :width: 600px
+   :align: center
 
 Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
 
