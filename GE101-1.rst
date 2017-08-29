@@ -7,9 +7,13 @@ Representação algébrica de vetores no plano
 .. glossary::
 
    origem e extremidade de um vetor dado
-      definição
+   multiplicação por escalar
+   soma ou adição de vetores
+   vetores paralelos
+   vetores unitários
+   vetores perpendiculares
 
-Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de coordenadas do vetor. Esta representação possibilita que os computadores entendam e operem com vetores. Também serão fundamentais para o estudo das transformações do plano.
+Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. Esta representação permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática), possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática).
 
 
 .. _ativ-vetores-vetor-malha:
@@ -24,7 +28,7 @@ Atividade: Vetores numa malha quadriculada
    **Recomendações para o desenvolvimento da atividade:**
    No problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
 
-Reproduza em seu caderno a malha quadriculada e os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
+Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
 
 .. tikz:: 
 
@@ -54,7 +58,11 @@ Atividade: Expressão algébrica dado vetor
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** Usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha.
+   **Objetivos específicos:** 
+   
+   #. Usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha.
+   #. Perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
+   
    
    **Recomendações para o desenvolvimento da atividade:**
 
@@ -81,33 +89,148 @@ Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}
 
    texto da resposta
 
+Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
+
+.. tikz:: Dois vetores de direções diferentes determinam uma malha.
+   
+    [>=latex,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{3}
+      \def\ymin{0}
+      \def\ymax{3}
+      \draw[very thin, gray]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+	\draw[-latex, thick, red] (0,0) -- (1,0);
+    \node at (.8,-.3) {$\vec{u}$};
+    \draw[-latex, thick, red] (0,0) -- (0,1);
+    \node at (-.3,.8) {$\vec{v}$};
+    \draw[-latex, thick] (0,0) -- (2,3);
+    \node at (1.5,2.9) {$\vec{w}$};
+    
+    \node[draw,text width=4cm,minimum height=2cm,minimum width=3cm] at 
+     (6.7,1.5) {Temos $\vec{w}=2\vec{u} + 3 \vec{v}$. Dizemos que $x=2$ e $y=3$ são as coordenadas de $\vec{w}$ com relação aos vetores $\vec{u}$ e $\vec{v}$.};
+
+    %\node at (6.5,1.5) {};
+
+Embora uma discussão mais geral seja útil para estudantes da área de exatas, nos restringiremos neste livro ao caso em que os vetores `\vec{u}` e `\vec{v}` são ambos unitários (isto é, têm módulos iguais a 1) e são perpendiculares (isto significa que eles estão sobre retas perpendiculares).
+
+.. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
+
+Você deve lembrar dos anos anteriores como marcar pontos num plano com um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
+
+Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
+
+.. _ativ-cap-titulo-da-atividade:
+
+Atividade: coordenadas do vetor posição
+---------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** Reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
+   
+   **Recomendações para o desenvolvimento da atividade:**
+
+Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)`, faça o que se pede: 
+
+.. tikz::
+
+   \begin{scope}[scale=1.3]
+   \foreach \x in {-2,-1.5,...,2} {
+    \draw[very thin, gray] (\x,-2.05)--(\x,2.05);
+    \draw[very thin, gray] (-2.05,\x)--(2.05,\x);};
+   \draw[-latex,very thick, black] (-2.05,0) -- (2.05,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2.05) -- (0,2.05) node[below right]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (.5,0) circle (0.05) node[below]{$X$};
+   \fill (0,.5) circle (0.05) node[right]{$Y$};
+   %\node at (.25,-.25){$\overrightarrow{OX}$};
+   %\node at (-.25,.25){$\overrightarrow{OY}$}; 
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);   
+   \end{scope}
+
+#. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas.
+#. Faça o mesmo para um ponto `V=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
+
+ 
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
+Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OV}`, para algum ponto `V` do plano.  Na atividade acima você deve ter observado que dado um ponto `V=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OV}` são também `x` e `y` (pois `\overrightarrow{OV} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
+
+.. admonition:: Notação
+   
+   Para representar um vetor `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   
+   .. math::
+   
+      \vec{v} = (x,y) 
+   
+   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `V` tal que `\vec{v}=\overrightarrow{OV}`.
+
+Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}`.
+Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
+
+.. tikz::
+
+   \begin{scope}[scale=1.3]
+   \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \draw[-latex, very thick, red]  (-1,2)--(0,0);
+   \draw[-latex, very thick, red] (0,0)-- (1,.5);
+   \draw[-latex, very thick] (-1,2) -- (1,.5);
+   \node at (.3,1.4){$\overrightarrow{AB}$};
+   \node at (-.9,.8){$-\overrightarrow{OA}$};
+   \node at (.4,.5){$\overrightarrow{OB}$};
+   \end{scope}
+
+
+.. Em algum lugar deveríamos dizer ao professor que "alguns autores escrevem `\overrightarrow{AB} = B-A`, preferimos evitar esta abordagem porque seria necessário esclarecer o que significa esta diferença entre pontos do plano."
+
+.. admonition:: Pausa para reflexão
+
+   Observe que se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não depende da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o deslocamento de `A` para `B`, o que nada tem a ver com `O`.
+   
+   FIGURA
+   
+   Por outro lado, o vetor posição, `\overrightarrow{OA}`, de um ponto `A`, tem suas coordenadas alteradas quando escolhemos outro ponto do plano para ser a origem do sistema de coordenadas.
+   
+   FIGURA
+   
+
+
+
 **[Texto abaixo não concluído]**
 
-Escolhendo dois vetores de direções diferentes num plano, digamos `\overrightarrow{u}` e `\overrightarrow{v}`, podemos construir uma malha justapondo os vetores como na figura:
+Escolhendo dois vetores de direções diferentes num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` `\overrightarrow{w}` pode ser escrito como `\vec{w} = x\vec{u} + y\vec{v}`, onde `x` e `y` são números reais. De fato, ...
 
-.. tikz:: Uma malha determinada por dois vetores de direções diferentes
+<FIGURA>
 
-	   \foreach \x in {0,.5,...,1.5} {
-       \draw[-latex, thick, red] (\x,0) -- (\x+.5,0);
-       \draw[-latex, thick, red] (\x,.5) -- (\x+.5,.5);
-       \draw[-latex, thick, red] (\x,1) -- (\x+.5,1);
-       \draw[-latex, thick, red] (\x,1.5) -- (\x+.5,1.5);
-       \draw[-latex, thick, red] (\x,2) -- (\x+.5,2);
-    } 
-    \foreach \y in {0,.5,...,1.5} {
-       \draw[-latex, thick, red] (0,\y) -- (0,\y+.5);
-       \draw[-latex, thick, red] (.5,\y) -- (.5,\y+.5);
-       \draw[-latex, thick, red] (1,\y) -- (1,\y+.5);
-       \draw[-latex, thick, red] (1.5,\y) -- (1.5,\y+.5);
-       \draw[-latex, thick, red] (2,\y) -- (2,\y+.5);
-    }
-    \node at (.25,-.25){$\vec{u}$};
-    \node at (-.25,.25){$\vec{v}$};
+.. admonition:: Definição 
+   
+   Uma vez fixados os vetores `\vec{u}` e `\vec{v}` (nesta ordem) não paralelos, os números reais `x` e `y` tais que `\vec{w} = x\vec{u} + y\vec{v}` são chamados de *coordenadas do vetor* `\vec{w}` *com relação a* `\vec{u}` e `\vec{v}`. Escreveremos
+   
+   .. math::
+
+      \vec{w} = \binom{x}{y} 
+   
+   para abreviar esta expressão.
 
 
-Qualquer vetor que possua sua origem e sua extremidade em vértices da malha pode ser descrito por meio de operações com `\vec{u}` e `\vec{v}`. Por exemplo, na figura abaixo o vetor `\vec{w}=3\vec{u} + 4\vec{v}`.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
