@@ -89,7 +89,7 @@ Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}
 
    texto da resposta
 
-Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
+Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
 
 .. tikz:: Dois vetores de direções diferentes determinam uma malha.
    
@@ -124,7 +124,7 @@ Embora uma discussão mais geral seja útil para estudantes da área de exatas, 
 
 .. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
 
-Você deve lembrar dos anos anteriores como marcar pontos num plano com um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
+Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Os demais podem ser descritos como três de `\vec{u}` e quatro de `\vec{v}`, por exemplo. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
 
 Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
 
@@ -178,6 +178,47 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
       \vec{v} = (x,y) 
    
    para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `V` tal que `\vec{v}=\overrightarrow{OV}`.
+
+Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda. Este vetor é o mesmo representado na figura da direita e algebricamente temos: 
+
+.. math::
+
+  \vec{v} = 3\overrightarrow{OX} + 4\overrightarrow{OY}\quad \text{ ou } \quad \vec{v} = (3,4).
+  
+.. tikz::
+
+   \begin{scope}[scale=.7]
+   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
+   \draw[-latex, very thick, red]  (0,0)--(1,0);
+   \draw[-latex, very thick, red] (0,0)-- (0,1);
+   \draw[-latex, very thick] (0,0) -- (3,4);
+   \node at (.7,-.7){$\overrightarrow{OX}$};
+   \node at (-.7,.7){$\overrightarrow{OY}$};
+   \node[above] at (1.5,2){$\vec{v}$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   
+   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
+   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
+   
+   \begin{scope}[xshift=7.5cm]
+   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
+   \draw[-latex, very thick, red]  (0,0)--(1,0);
+   \draw[-latex, very thick, red] (0,0)-- (0,1);
+   \draw[-latex, very thick] (-2,1) -- (1,5);
+   \node at (.7,-.7){$\overrightarrow{OX}$};
+   \node at (-.7,.7){$\overrightarrow{OY}$};
+   \node[above] at (-.5,3){$\vec{v}$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   
+   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
+   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
+   \end{scope}
+   \end{scope}
+
+Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andaremos 3 na direção do vetor `\overrightarrow{OX}` e 4 na direção do vetor `\overrightarrow{OY}` para atingir a extremidade de `\vec{v}`.
+  
 
 Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}`.
 Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
