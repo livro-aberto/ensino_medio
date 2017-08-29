@@ -179,6 +179,8 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
    
    para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `V` tal que `\vec{v}=\overrightarrow{OV}`.
 
+Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
+
 Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda. Este vetor é o mesmo representado na figura da direita e algebricamente temos: 
 
 .. math::
@@ -193,6 +195,8 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
    \draw[-latex, very thick, red]  (0,0)--(1,0);
    \draw[-latex, very thick, red] (0,0)-- (0,1);
    \draw[-latex, very thick] (0,0) -- (3,4);
+   \draw[dashed, thin] (3,4)--(3,0);
+   \node at (3.3,2) {4};
    \node at (.7,-.7){$\overrightarrow{OX}$};
    \node at (-.7,.7){$\overrightarrow{OY}$};
    \node[above] at (1.5,2){$\vec{v}$};
@@ -206,10 +210,18 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
    \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
    \draw[-latex, very thick, red]  (0,0)--(1,0);
    \draw[-latex, very thick, red] (0,0)-- (0,1);
+   
+   \begin{scope}[xshift=40,yshift=20]
    \draw[-latex, very thick] (-2,1) -- (1,5);
+   \draw[dashed, thin] (1,1)--(1,5);
+   \draw[dashed, thin] (-2,1)--(1,1);
+   \node at (-.5,.7){3};
+   \node at (1.3,3) {4};
+   \node[above] at (-.5,3){$\vec{v}$};
+   \end{scope}
+   
    \node at (.7,-.7){$\overrightarrow{OX}$};
    \node at (-.7,.7){$\overrightarrow{OY}$};
-   \node[above] at (-.5,3){$\vec{v}$};
    \fill (0,0) circle (0.05) node[below left]{$O$};
    
    \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
@@ -220,7 +232,7 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
 Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andaremos 3 na direção do vetor `\overrightarrow{OX}` e 4 na direção do vetor `\overrightarrow{OY}` para atingir a extremidade de `\vec{v}`.
   
 
-Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}`.
+Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`).
 Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
 
 .. tikz::
@@ -246,30 +258,69 @@ Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x
    
    FIGURA
    
-   Por outro lado, o vetor posição, `\overrightarrow{OA}`, de um ponto `A`, tem suas coordenadas alteradas quando escolhemos outro ponto do plano para ser a origem do sistema de coordenadas.
+   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas.
    
    FIGURA
    
+.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
+
+
+.. _ativ-vetores-translacao:
+
+Atividade: Translação num plano
+-------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+   
+   #. Reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão.
+   #. Descrever equações vetoriais em termos de coordenadas.
+   
+   **Sugestões para o desenvolvimento da atividade:**
+
+Uma translação de pontos do plano por `\vec{v}` é a correspondência que associa a cada ponto `P` do plano o ponto `P'=P+\vec{v}` (lembre-se que isto é o mesmo que `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`).
+
+.. figure:: https://drive.google.com/open?id=0B1V1Qzs7JbkKQkJBY2hxb2xkNDQ
+   :width: 200px
+   :align: center
+
+Parte I.
+
+A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec{u}=(4,0)`, resultando no triângulo `A'B'C'`.
+
+.. figure:: https://drive.google.com/open?id=0B1V1Qzs7JbkKblRsNnNaVUZZNWs
+   :width: 200px
+   :align: center
+
+   Translação de um triângulo 
+
+#. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
+#. Considere um ponto genérico `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `X'`, resultado da translação de `X` por `\vec{u}`.
+
+Parte II.
+
+A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-2)`, resultando no triângulo `A''B''C''`.
+
+**FIGURA**
+
+#. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
+#. Considere um ponto `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `X''`, resultado da translação de `X` por `\vec{v}`.
+
+Parte III.
+
+Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` então translada-se este último triângulo por `\vec{v}`.
+
+#. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
+#. Considere um ponto `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Y`, resultado desta composição de translações.
+#. Escreva uma expressão vetorial (isto é, sem coordenadas) para o ponto `Y`.
+#. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
+
+**Sistematiza o fato de que as coordenadas da soma é a soma das coordenadas.**
 
 
 
 **[Texto abaixo não concluído]**
-
-Escolhendo dois vetores de direções diferentes num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` `\overrightarrow{w}` pode ser escrito como `\vec{w} = x\vec{u} + y\vec{v}`, onde `x` e `y` são números reais. De fato, ...
-
-<FIGURA>
-
-.. admonition:: Definição 
-   
-   Uma vez fixados os vetores `\vec{u}` e `\vec{v}` (nesta ordem) não paralelos, os números reais `x` e `y` tais que `\vec{w} = x\vec{u} + y\vec{v}` são chamados de *coordenadas do vetor* `\vec{w}` *com relação a* `\vec{u}` e `\vec{v}`. Escreveremos
-   
-   .. math::
-
-      \vec{w} = \binom{x}{y} 
-   
-   para abreviar esta expressão.
-
-
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
