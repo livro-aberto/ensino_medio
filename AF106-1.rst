@@ -27,7 +27,7 @@ Nas três situações apresentadas, cada elemento do conjunto `A` está associad
    Assim, para cada `x\in A` deve existir um único elemento em `B` que esteja relacionado a `x`. Esse elemento é denotado por `f(x)` e chamado de imagem do elemento `x` pela função `f`.
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao.png
-      :width: 600px
+      :width: 400px
       :align: center
 
 O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de chegada `B` é o **contradomínio** e o subconjunto de `B` formado por todas as possíveis imagens é o conjunto imagem da função `f`.
@@ -36,7 +36,7 @@ O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de 
 .. _notacao:
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao1.png
-   :width: 600px
+   :width: 350px
    :align: center
 
 Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
@@ -44,6 +44,11 @@ Perceba que na definição está implícito que todo elemento `x\in A` precisa t
 .. admonition:: Pausa Para Reflexão
 
     Junto com seus colegas, pensem um pouco sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas como funções? Descrevam algumas delas e compartilhem com o restante da turma, destacanado sempre os conjuntos domínio e contradomínio de cada uma delas.
+
+.. _sec-funcao-organizando-ideias:
+
+Praticando o assunto
+====================
 
 .. _ativ-funcoes-colorindo-o-mapa:
 
@@ -121,7 +126,20 @@ Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relaç
 É função?
 ---------
 
-	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+   
+   * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade Colorindo o Mapa.
+   * Distinguir quais relações são univocamente determinadas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta é a oportunidade para reforçar os principais pontos envolvidos na definição de função que foi apresentada na seção organizando as ideias.
+
+Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{6, 7, 8, 9, 12, 16\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
 
 .. table:: 
     :widths: 3 3 10
@@ -155,6 +173,18 @@ Como as funções são um tipo especial de relação, a mesma ideia se estende p
 
 Não é função!
 ---------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Perceber que a relação dada não está univocamente determinada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta é a oportunidade para reforçar os principais pontos envolvidos na definição de função que foi apresentada na seção organizando as ideias.
 
 Considere a relação no conjunto dos números inteiros que associa dois elementos `a` e `b`, nesta ordem, se `b` for múltiplo de `a`. Sendo assim, `(2,4)` é um par ordenado desta relação, pois `4` é múltiplo de `2`, mas `(4,2)` não é.
 
