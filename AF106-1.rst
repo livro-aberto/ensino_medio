@@ -71,7 +71,7 @@ Colorindo o mapa
    * Deixamos a seu critério a escolha da unidade para a velocidade média. Os valores obtidos em `km/min` podem causar certa estranheza, uma vez que na maioria das situações cotidianas a velocidade é apresentada em `km/h`.
    * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
 
-A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
+A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
      :width: 800px
@@ -112,12 +112,22 @@ a) Utilizando a escala de cores abaixo, complete a terceira coluna da tabela aci
 			:width: 250px
 			:align: center
          
-b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
+b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 6 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
 c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
 
 d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
+
+.. admonition:: Resposta 
+
+   a) Uma resposta possível seria: associar a cor verde aos tempos de `6` e `7` minutos, a cor laranja aos tempos de `8` e `9` minutos, vermelha ao tempo de `12` minutos e a cor vinho ao tempo de `16` minutos.
+   
+   b) A resposta deste item depende das escolhas feitas no item anterior.
+   
+   c) As velocidades médias serão: `1,33` km/min para os períodos de `5:00 - 7:00` e `21:00 - 23:00`, `1,14` km/min para os períodos do dia `11:00 - 13:00` e `13:00 - 15:00`, `1,00` km/min para os períodos de `7:00 - 9:00` e `15:00 - 17:00`, `0,89` km/min entre `9:00 - 11:00`, `0,67` km/min entre `19:00 - 21:00` e `0,5` km/min no período compreendido entre `21:00 - 23:00`.
+   
+   d) Não. Como a velocidade média é calculada efetuando a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão sempre resultar em velocidades médias diferentes.
 
 Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
 
