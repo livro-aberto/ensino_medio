@@ -5,7 +5,7 @@ Organizando as ideias
 
 Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
-Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+Na atividade "Pluviometria no Sistema Cantareira", `A` é um conjunto de meses dos anos e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
 Na atividade "Números triangulares" temos o conjunto `A` das posições dos termos na sequência e o conjunto `B`, também dos naturais, representando o número total `T_n` de círculos no triângulo. A cada `n` está associado o número triangular `T_n`.
 
@@ -39,11 +39,13 @@ O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de 
    :width: 350px
    :align: center
 
+**[Para a equipe de design: colocar um destaque para o parágrafo abaixo]**
+
 Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
 
 .. admonition:: Pausa Para Reflexão
 
-    Junto com seus colegas, pensem um pouco sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas como funções? Descrevam algumas delas e compartilhem com o restante da turma, destacanado sempre os conjuntos domínio e contradomínio de cada uma delas.
+    Junto com seus colegas, pensem um pouco sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas como funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando sempre os conjuntos domínio e contradomínio de cada uma delas.
 
 .. _sec-funcao-organizando-ideias:
 
@@ -71,9 +73,9 @@ Colorindo o mapa
    * Deixamos a seu critério a escolha da unidade para a velocidade média. Os valores obtidos em `km/min` podem causar certa estranheza, uma vez que na maioria das situações cotidianas a velocidade é apresentada em `km/h`.
    * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
 
-A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
+A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de São Paulo em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=sao_paulo.png
      :width: 800px
      :align: center
    
@@ -123,11 +125,11 @@ d) É possível que uma mesma velocidade média esteja associada a dois tempos d
 
    a) Uma resposta possível seria: associar a cor verde aos tempos de `6` e `7` minutos, a cor laranja aos tempos de `8` e `9` minutos, vermelha ao tempo de `12` minutos e a cor vinho ao tempo de `16` minutos.
    
-   b) A resposta deste item depende das escolhas feitas no item anterior.
+   b) A resposta deste item depende das escolhas feitas pelos estudantes no item anterior.
    
-   c) As velocidades médias serão: `1,33` km/min para os períodos de `5:00 - 7:00` e `21:00 - 23:00`, `1,14` km/min para os períodos do dia `11:00 - 13:00` e `13:00 - 15:00`, `1,00` km/min para os períodos de `7:00 - 9:00` e `15:00 - 17:00`, `0,89` km/min entre `9:00 - 11:00`, `0,67` km/min entre `19:00 - 21:00` e `0,5` km/min no período compreendido entre `21:00 - 23:00`.
+   c) Os valores das velocidades médias serão, pela ordem em que aparecem na tabela: `1,33` km/min, `1,00` km/min, `0,89` km/min, `1,14` km/min, `1,14` km/min, `1,00` km/min, `0,5` km/min, `0,67` km/min e `1,33` km/min.
    
-   d) Não. Como a velocidade média é calculada efetuando a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão sempre resultar em velocidades médias diferentes.
+   d) Não. Como a velocidade média é calculada efetuando-se a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão sempre resultar em velocidades médias diferentes.
 
 Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
 
@@ -172,6 +174,10 @@ Dentre as relações que podem ser feitas entre os conjuntos de dados da ativida
     +---------------------+-------------------+------------------------+
 
 
+.. admonition:: Resposta 
+
+   Apenas as relações de `B` em `A` e de `B` em `C` não são funções. A primeira por quê a uma mesma cor estão associados diferentes tempos, e a segunda por quê a uma mesma cor estão associadas velocidades médias diferentes.
+
 Quando consideramos uma relação qualquer é comum a representarmos através de pares ordenados, onde os elementos do primeiro conjunto aparece na primeira posição do par e os elementos do segundo conjunto aparecem na segunda posição. 
 
 Por exemplo, se consideramos a relação do conjunto dos números reais em si mesmo que a cada número real associa o seu quadrado, podemos dizer que os pares ordenados `(1,1), (2,4), (\sqrt{3},3), (-\pi,\pi^2)` são alguns pares desta relação.
@@ -203,19 +209,25 @@ Considere a relação no conjunto dos números inteiros que associa dois element
 #. Dê um outro exemplo, não necessariamente numérico, de uma ou mais relações que não sejam funções. 
 
 
-Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a forma de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
+.. admonition:: Resposta 
+
+   a) `(2,8)`, `(3,9)`, `(1,1)` e `(5,10)` pertencem a relação.
+   b) Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o inteiro `3` está associado à `12` e `15`. Portanto a relação não pode ser função.
+   c) Resposta livre.
+
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Também a forma de associação entre os elementos, em muitos casos, é dada por uma expressão analítica. Vejamos alguns exemplos.
 
 `(I)` O perímetro `P` e a área `A` de um quadrado podem ser dados em função do seu lado `\ell`.
  	
 .. math::
 
-   P: (0,+\infty)\to \mathbb{R} \quad ; \quad P(\ell)=4\ell
+   P: ]0,+\infty[\to \mathbb{R} \quad ; \quad P(\ell)=4\ell
  
 .. math::
 
-   A: (0,+\infty)\to \mathbb{R} \quad ; \quad A(\ell)=\ell^2
+   A: ]0,+\infty[\to \mathbb{R} \quad ; \quad A(\ell)=\ell^2
 
-A variável `\ell` pode assumir qualquer valor dentro do intervalo `(0,+\infty)` que é o domínio da função `P` . Se quisermos saber o valor do perímetro do quadrado de lado 5cm, basta substituirmos `\ell` por 5 na expressão de  `P(\ell)`. Ficamos assim com
+A variável `\ell` pode assumir qualquer valor dentro do intervalo `]0,+\infty[` que é o domínio da função `P` . Se quisermos saber o valor do perímetro do quadrado de lado 5cm, basta substituirmos `\ell` por 5 na expressão de  `P(\ell)`. Ficamos assim com
  	
     
 .. math::
@@ -228,9 +240,18 @@ A área do quadrado de lado 9cm é
 .. math::
 
    A(\textbf{9})=\textbf{9}^2=81cm^2. 
+ 	
+`(II)` A fórmula de Lorentz já foi muito utilizada pelos médicos para o cálculo do "peso ideal" `p`, em kg, em função da altura `h`, em centímetros, do paciente.
+ 	
+.. math::
 
+   p:]0,300[\to \mathbb{R}\quad ; \quad p(h)=h-100-\dfrac{h-150}{k}
 
-`(II)` Um corpo é solto, a partir do repouso, de uma altura `h_0` e percorre uma trajetória vertical em queda livre. Sua altura `h`, medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
+em que `k` vale 4 para homens e vale 2 para mulheres.
+ 	
+Que tal usar a fórmula acima para calcular o seu peso ideal?
+
+`(III)` Imagine que um objeto é solto, a partir do repouso, de uma altura `h_0` e percorre uma trajetória vertical em queda livre. Da Física sabemos que sua altura `h`, medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
  	
 .. math::
 
@@ -253,17 +274,6 @@ Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que 
  	h(t)=0 &\iff & h_0-\dfrac{gt^2}{2}=0 \iff \dfrac{gt^2}{2}=h_0 \\
  	       &\iff & gt^2=2h_0 \iff  t^2=\dfrac{2h_0}{g} \iff t=\sqrt{\dfrac{2h_0}{g}}.
  	\end{eqnarray*}
- 	
-
-`(III)` A fórmula de Lorentz já foi muito utilizada pelos médicos para o cálculo do "peso ideal" `p`, em kg, em função da altura `h`, em centímetros, do paciente.
- 	
-.. math::
-
-   p:(0,300)\to \mathbb{R}\quad ; \quad p(h)=h-100-\dfrac{h-150}{k}
-
-em que `k` vale 4 para homens e vale 2 para mulheres.
- 	
-Que tal usar a fórmula acima para calcular o seu peso ideal?
 
 
 .. _ativ-funcoes-enchendo-o-cone:
@@ -281,7 +291,7 @@ O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m
    :width: 400px
    :align: center
 
-#. Considerando o contexto apresentado no problema, determine conjuntos`A` e `B` de maneira que a expressão `V` seja a regra de uma função cujo domínio seja `A` e o contradomínio seja `B`.
+#. Considerando o contexto apresentado no problema, determine conjuntos `A` e `B` de maneira que a expressão `V` seja a regra de uma função cujo domínio seja `A` e o contradomínio seja `B`.
 #. Determine `V(2), V(3)` e `V(4)` e explique os seus significados.
 #. Quais os volumes mínimo e máximo que podem ser observados?
 #. A que altura corresponde um volume de `3 456` litros?
@@ -292,7 +302,7 @@ O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m
 Uniformemente variado
 ---------------------
 
-A posição `S` em quilometros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
+A posição `S` em quilômetros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
 
 .. math::
 
