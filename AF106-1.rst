@@ -39,6 +39,8 @@ O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de 
    :width: 350px
    :align: center
 
+Por causa da unicidade na escolha da imagem `y`, costuma-se dizer que esta variável depende da variável `x`, uma vez que conhecido o valor de `x` podemos determinar o valor de `y`. Dessa maneira, chamamos `x \in A` de “variável independente” e `y \in B` de “variável dependente”. 
+
 **[Para a equipe de design: colocar um destaque para o parágrafo abaixo]**
 
 Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
@@ -176,7 +178,7 @@ Dentre as relações que podem ser feitas entre os conjuntos de dados da ativida
 
 .. admonition:: Resposta 
 
-   Apenas as relações de `B` em `A` e de `B` em `C` não são funções. A primeira por quê a uma mesma cor estão associados diferentes tempos, e a segunda por quê a uma mesma cor estão associadas velocidades médias diferentes.
+   Apenas as relações de `B` em `A` e de `B` em `C` não são funções. A primeira porque a uma mesma cor estão associados diferentes tempos, e a segunda porque a uma mesma cor estão associadas velocidades médias diferentes.
 
 Quando consideramos uma relação qualquer é comum a representarmos através de pares ordenados, onde os elementos do primeiro conjunto aparece na primeira posição do par e os elementos do segundo conjunto aparecem na segunda posição. 
 
@@ -215,7 +217,9 @@ Considere a relação no conjunto dos números inteiros que associa dois element
    b) Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o inteiro `3` está associado à `12` e `15`. Portanto a relação não pode ser função.
    c) Resposta livre.
 
-Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Também a forma de associação entre os elementos, em muitos casos, é dada por uma expressão analítica. Vejamos alguns exemplos.
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Por isso, daqui por diante, quando estivermos considerando funções numéricas, o contradomínio será igual a `\mathbb{R}`. 
+
+Frequentemente, mas nem sempre, a forma de associação entre os elementos é dada por uma expressão analítica. Vejamos alguns exemplos.
 
 `(I)` O perímetro `P` e a área `A` de um quadrado podem ser dados em função do seu lado `\ell`.
  	
@@ -251,11 +255,11 @@ em que `k` vale 4 para homens e vale 2 para mulheres.
  	
 Que tal usar a fórmula acima para calcular o seu peso ideal?
 
-`(III)` Imagine que um objeto é solto, a partir do repouso, de uma altura `h_0` e percorre uma trajetória vertical em queda livre. Da Física sabemos que sua altura `h`, medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
+`(III)` Imagine que um objeto é solto, a partir do repouso, de uma altura de `10` metros e percorre uma trajetória vertical em queda livre. Da Física, sabemos que sua altura `h` medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
  	
 .. math::
 
-   h:[0,+\infty)\to \mathbb{R}\quad ; \quad h(t)=h_0-\dfrac{gt^2}{2},
+   h:[0,+\infty)\to \mathbb{R}\quad ; \quad h(t)=10-\dfrac{gt^2}{2},
  	
 em que `g` representa a aceleração da gravidade.
  	
@@ -263,17 +267,10 @@ Fazer a variável tempo assumir o valor `t=0` na expressão de `h(t)` significa 
  	
 .. math::
 
-   h(\textbf{0})=h_0-\dfrac{g\ \textbf{0}^2}{2}=h_0.
+   h(\textbf{0})=10-\dfrac{g\ \textbf{0}^2}{2}=10.
 
  	
-Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que devemos fazer? Como a medição é feita a partir do solo, dizer que o corpo chegou ao solo é o mesmo que dizer que sua altura é igual a 0. Portanto, precisamos descobrir o valor da variável `t`, de maneira que `h(t)=0`.
- 	
-.. math::
-
-   \begin{eqnarray*}
- 	h(t)=0 &\iff & h_0-\dfrac{gt^2}{2}=0 \iff \dfrac{gt^2}{2}=h_0 \\
- 	       &\iff & gt^2=2h_0 \iff  t^2=\dfrac{2h_0}{g} \iff t=\sqrt{\dfrac{2h_0}{g}}.
- 	\end{eqnarray*}
+*Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que devemos fazer?* Como a medição é feita a partir do solo, dizer que o objeto chegou ao solo é o mesmo que dizer que sua altura é igual a 0. Portanto, precisamos descobrir o valor da variável `t`, de maneira que `h(t)=0`. A partir da expressão de `h(t)`, considerando `g` aproximadamente igual a `10 m/s^2` obtemos `10-5t^2=0`, donde concluímos que  `t=\sqrt{2}`.
 
 
 .. _ativ-funcoes-enchendo-o-cone:
@@ -281,26 +278,61 @@ Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que 
 Enchendo o cone
 ---------------
 
-O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m` e a base é um círculo de raio `3 m`. O volume (aproximado) `V` em metros cúbicos de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Fazer uso da notação de função.
+   * Relacionar a expressão analítica apresentada com a situação descrita.
+   * Interpretar os resultados obtidos em conformidade com a situação apresentada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É importante que o estudante perceba a relação existente entre a altura do nível da água no reservatório e o volume do mesmo.
+   * Essa pode também ser uma oportunidade para explorar a conversão de unidades. Sabemos que expressão `V=\dfrac{1}{3}(\pi r^2)h` nos fornece o volume do cone como função do raio `r` e da altura `h` do nível de água. A partir das dimensões fornecidas pelo enunciado percebemos que `r=\dfrac{h}{2}` e, portanto, `V(h)=\dfrac{1}{3}\pi\dfrac{h^3}{4}` é o volume de água no reservatório, em metros cúbicos, correspondente a uma altura de `h` metros. Aproximando `\pi` por `3` obtemos que o volume é dado, aproximadamente, por `V(h)=\dfrac{h^3}{4}` em metros cúbicos, cujo equivalente em litros será `V(h)=250h^3`.  
+   
+
+O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m` e a base é um círculo de raio `3 m`. O volume (aproximado) `V` em litros de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
 
 .. math::
 
-   V(h)=\dfrac{h^3}{4}
+   V(h)=250h^3
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cone.png
    :width: 400px
    :align: center
 
-#. Considerando o contexto apresentado no problema, determine conjuntos `A` e `B` de maneira que a expressão `V` seja a regra de uma função cujo domínio seja `A` e o contradomínio seja `B`.
 #. Determine `V(2), V(3)` e `V(4)` e explique os seus significados.
 #. Quais os volumes mínimo e máximo que podem ser observados?
 #. A que altura corresponde um volume de `3 456` litros?
 
 
+.. admonition:: Resposta 
+
+   a) `V(2), V(3)` e `V(4)` são, respectivamente iguais a `2000`, `6750` e `16000` litros e correspondem aos volumes quando a altura da água no reservatório vale `2`, `3` e `4` metros, respectivamente.
+   b) O menor volume observado é `V=0`, que corresponde a `h=0`, e o maior volume é `V(6)=54000` litros.
+   c) Corresponde a uma altura de `2,4` metros.
+
 .. _ativ-funcoes-uniformemente-variado:
 
 Uniformemente variado
 ---------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Fazer uso da notação de função.
+   * Relacionar a expressão analítica apresentada com a situação descrita.
+   * Interpretar os resultados obtidos em conformidade com a situação apresentada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chamar atenção do estudante para o importante papel que as funções desempenham na Física, em especial na Mecânica Clássica, relacionando grandezas como tempo, deslocamento, velocidade e aceleração.
 
 A posição `S` em quilômetros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
 
@@ -308,11 +340,18 @@ A posição `S` em quilômetros de um veículo que se desloca segundo um movimen
 
    S(t)=2t^2-4t+2
 
-#. Considerando o contexto apresentado no problema, determine os conjuntos
-domínio e contradomínio da função `S`.
-#. Determine a posição inicial do veículo. Explique o significado do resultado obtido.
-#. Após quanto tempo o veículo estará a 18km da origem?
+a) Determine a posição inicial do veículo. Explique o significado do resultado obtido.
 
+b) Após quanto tempo o veículo estará a 18km da origem?
+
+
+.. admonition:: Resposta 
+
+   a) Inicialmente o veículo está posicionado a `S(0)=2` quilômetros da origem.
+   b) Após `4` horas.
+   
+   
+   
 .. _ativ-funcoes-obtendo-expressoes:
 
 Obtendo expressões
