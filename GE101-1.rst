@@ -1,8 +1,8 @@
 .. _sec-vetores-algebrica:
 
-*******************
-Abordagem algébrica
-*******************
+***********************************
+Vetores do ponto de vista algébrico
+***********************************
 
 .. glossary::
 
@@ -235,12 +235,14 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
-Deste modo qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}`. Veja os exemplos a seguir:
+Deste modo qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com a coordenadas `(x,y)`. Veja a figura.
 
-**FIGURA1 - coordenada inteira negativa**
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
+   :width: 250px
+   :align: center
 
-     
-**FIGURA3 - coordenada irracional**
+   `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
+
 
 Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`).
 Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
@@ -266,25 +268,25 @@ Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x
 
    Observe que se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o deslocamento de `A` para `B`, o que nada tem a ver com `O`.
    
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
-   :width: 400px
-   :align: center
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
+      :width: 400px
+      :align: center
 
-   As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
+      As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
    
    Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas.
  
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
-   :width: 400px
-   :align: center
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
+      :width: 400px
+      :align: center
 
-   O vetor posição **depende** da posição da origem do sistema de coordenadas
+      O vetor posição **depende** da posição da origem do sistema de coordenadas
    
 .. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
 
 .. index:: ! translação
 
-A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+*A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
    :width: 400px
@@ -363,7 +365,11 @@ Como você deve ter observado através da atividade anterior, se os vetores `\ve
 
    O quadrilátero `OABC` da figura é um paralelogramo. Sabendo que as coordenadas dos vértices são `O=(0,0)`, `A=(2,0)`, `B=(3,1)` e `C = (1,1)`, calcule as coordenadas do ponto `M` de encontro das diagonais do paralelogramo.
    
-   **FIGURA2 - coordenada racional não inteira**
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=soma-paralelogramo.jpg
+      :width: 300px
+      :align: center
+
+      `\overrightarrow{OB} = \overrightarrow{OM} + \overrightarrow{OM} = 2\overrightarrow{OM}`
 
    *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
 
