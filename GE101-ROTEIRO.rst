@@ -1,3 +1,5 @@
+.. _roteiro-vetores:
+
 ****************
 ROTEIRO: VETORES
 ****************
