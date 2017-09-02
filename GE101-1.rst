@@ -1,8 +1,8 @@
 .. _sec-vetores-algebrica:
 
-*******************************************
-Representação algébrica de vetores no plano
-*******************************************
+*******************
+Abordagem algébrica
+*******************
 
 .. glossary::
 
@@ -254,15 +254,31 @@ Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x
 
 .. admonition:: Pausa para reflexão
 
-   Observe que se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não depende da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o deslocamento de `A` para `B`, o que nada tem a ver com `O`.
+   Observe que se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o deslocamento de `A` para `B`, o que nada tem a ver com `O`.
    
-   FIGURA
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
+   :width: 400px
+   :align: center
+
+   As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
    
    Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas.
-   
-   FIGURA
+ 
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
+   :width: 400px
+   :align: center
+
+   O vetor posição **depende** da posição da origem do sistema de coordenadas
    
 .. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
+
+.. index:: ! translação
+
+A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
+   :width: 400px
+   :align: center
 
 
 .. _ativ-vetores-translacao:
@@ -279,18 +295,13 @@ Atividade: Translação num plano
    
    **Sugestões para o desenvolvimento da atividade:**
 
-Uma translação de pontos do plano por `\vec{v}` é a correspondência que associa a cada ponto `P` do plano o ponto `P'=P+\vec{v}` (lembre-se que isto é o mesmo que `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`).
-
-.. figure:: https://drive.google.com/open?id=0B1V1Qzs7JbkKQkJBY2hxb2xkNDQ
-   :width: 200px
-   :align: center
 
 Parte I.
 
 A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec{u}=(4,0)`, resultando no triângulo `A'B'C'`.
 
-.. figure:: https://drive.google.com/open?id=0B1V1Qzs7JbkKblRsNnNaVUZZNWs
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294818&w=500&h=281&tok=fb1c9c&media=translacao2.jpg
+   :width: 400px
    :align: center
 
    Translação de um triângulo 
@@ -302,7 +313,14 @@ Parte II.
 
 A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-2)`, resultando no triângulo `A''B''C''`.
 
-**FIGURA**
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=translacao3.jpg
+   :width: 400px
+   :align: center
+
+   Figura errada, mas similar à correta.
 
 #. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
 #. Considere um ponto `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `X''`, resultado da translação de `X` por `\vec{v}`.
@@ -316,180 +334,73 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 #. Escreva uma expressão vetorial (isto é, sem coordenadas) para o ponto `Y`.
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
-**Sistematiza o fato de que as coordenadas da soma é a soma das coordenadas.**
+.. admonition:: Resposta 
+
+   texto da resposta
+
+Como você deve ter observado através da atividade anterior, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
+   :width: 200px
+   :align: center
+
+   Vetor soma
 
 
 
-**[Texto abaixo não concluído]**
+.. index:: ! homotetia
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
+
+Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos de um triângulo e de um quadrado com razões 2 e 1/3, respectivamente.
 
 
-Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, digamos `x` e `y`, que significam respectivamente o quanto a posição final *anda* na malha na direção *esquerda-direita* e na direção *cima-baixo*. Estes dois números são chamados as *coordenadas do vetor* naquela malha. Atenção: em malhas diferentes, o mesmo vetor pode possuir coordenadas diferentes.
-Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
+.. _fig-coloque-aqui-o-nome:
 
-.. admonition:: Notação 
-   
-   Usaremos a notação 
-   
-   .. math::
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1.jpg
+   :width: 400px
+   :align: center
 
-      \overrightarrow{v} = \binom{x}{y} 
-   
-   para representar o vetor do tipo `x` para a direita e `y` para cima.
-   
-Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
-Observe que as nomenclaturas *esquerda-direita e cima-baixo*, *leste-oeste e norte-sul*, etc. usada para as direções são arbitrárias e dependem do contexto. É possível ser mais preciso do ponto de vista matemático: fixe um par de vetores com direções diferentes, digamos `\overrightarrow{u}` e `\overrightarrow{v}`. Qualquer outro vetor `\overrightarrow{w}` do plano pode ser expresso como `x` na direção do vetor `\overrightarrow{u}` e `y` na direção do vetor `\overrightarrow{v}`, para algum par `x` e `y` de números reais (este fato, embora intuitivo, pode ser justificado. Veja <CITAÇÃO> para entender mais). Estes vetores `\overrightarrow{u}` e `\overrightarrow{v}` determinam uma malha (veja a Figura <REFERÊNCIA>) em que `\overrightarrow{w} = \binom{x}{y}`.
+   Ao lado desta incluir uma análoga, mas de razão 1/3
 
-.. tikz:: Dois vetores de direções diferentes determinam uma malha.
-   
-    [>=latex,
-      x={(1cm, 0cm)},
-      y={(1cm, 1cm)},
-    ]
-      \def\xmin{0}
-      \def\xmax{3}
-      \def\ymin{0}
-      \def\ymax{3}
-      \draw[very thin, gray]
-        \foreach \x in {\xmin, ..., \xmax} {
-          (\x, \ymin) -- (\x, \ymax)
-        }
-        \foreach \y in {\ymin, ..., \ymax} {
-          (\xmin, \y) -- (\xmax, \y)
-        };
-	\draw[-latex, thick, red] (0,0) -- (1,0);
-    \node at (.8,-.3) {$\overrightarrow{u}$};
-    \draw[-latex, thick, red] (0,0) -- (0,1);
-    \node at (-.3,.8) {$\overrightarrow{v}$};
-    \draw[-latex, thick] (0,0) -- (2,3);
-    \node at (1.5,2.9) {$\overrightarrow{w}$};
-    
-    \node at (8,1.5) {$\overrightarrow{w}=\binom{2}{3}$ na malha de $\overrightarrow{u}$ e $\overrightarrow{v}$.};
+.. _ativ-vetores-homotetia:
 
-.. _ativ-vetores-par-ordenado-vetor:
-
-Atividade: Um par ordenado para um vetor
-----------------------------------------
+Atividade: Homotetia
+--------------------
 
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** Identificar as coordenadas de um vetor a partir de sua representação geométrica.
+   **Objetivo específico:** Reconhecer que `r(x,y)=(rx,ry)`. 
    
-   **Recomendações para o desenvolvimento da atividade:** Esta é uma atividade meramente procedimental, mas se o professor optar por tomá-la como exemplo, recomenda-se que faça os estudantes participarem antes de verem a resposta.
-
-Determine as coordenadas dos vetores na malha abaixo.
-
-.. tikz:: Dado o vetor, obter a sua representação algébrica
-
-	\draw[step=1cm,gray,very thin] (0,5) grid (8,8);
-	\draw[-latex, thick, red] (0,5) -- (2,8);
-    \node at (1,6.8) {$\overrightarrow{a}$};
-    \draw[-latex, thick, red] (2,6) -- (3,6);
-    \node at (2.5,6.2) {$\overrightarrow{b}$};
-    \draw[-latex, thick, red] (4,6) -- (4,8);
-    \node at (4.2,7) {$\overrightarrow{c}$};
-    \draw[-latex, thick, red] (5,6) -- (6,8);
-    \node at (5.4,7.2) {$\overrightarrow{d}$};
-    \draw[-latex, thick, red] (8,8) -- (6,5);
-    \node at (6.9,6.7) {$\overrightarrow{e}$};
-    
-.. _ativ-vetores-vetor-par-ordenado:
-
-Atividade: Um vetor para um par ordenado
-----------------------------------------
+   **Recomendações para o desenvolvimento da atividade:**
 
 
-.. admonition:: Para o professor
-
-   **Objetivos específicos:** Identificar as coordenadas de um vetor a partir de sua representação geométrica.
-   
-   **Recomendações para o desenvolvimento da atividade:** Esta é uma atividade meramente procedimental, mas se o professor optar por tomá-la como exemplo, recomenda-se que faça os estudantes participarem antes de verem a resposta.
-
-Para cada par ordenado abaixo determine uma representação geométrica do vetor na malha apresentada.
-
-  #. `\overrightarrow{f}=(1,0)`
-  #. `\overrightarrow{g}=(0,2)`
-  #. `\overrightarrow{h}=(1,2)`
-  #. `\overrightarrow{i}=(-1,2)`
-  #. `\overrightarrow{j}=(1.5,2.5)`
-
-.. _exemplo-vetores-vetor-posicao:
-
-Exemplo: Vetor posição
-----------------------
-
-Você provavelmente já viu nos anos anteriores que quando temos um sistema de coordenadas num plano, os pontos ficam representados por coordenadas `(x,y)` de maneira muito similar à representação algébrica dos vetores.
-Um sistema de coordenadas, nada mais é do que uma malha com um ponto `O` fixado. 
-Este ponto é chamado de *origem do sistema de coordenadas* e é especialmente importante quando precisamos determinar a posição absoluta de um objeto.
-Se considerarmos a origem como tendo coordenadas `O = (0,0)`, então as coordenadas de um ponto `A = (x,y)` são as coordenadas do vetor `\overrightarrow{OA}=\binom{x}{y}` na mesma malha do sistema de coordenadas.
-A vantagem em se trabalhar com vetores ao invés de pontos é que com estes há operações bem definidas com as quais você pode fazer contas. Isso é o que mais precisamos em situações reais (ver <CITAÇÃO DA SEÇÃO OPERAÇÕES COM VETORES>).
-
-.. _exemplo-vetores-varias-coordenadas:
-
-Exemplo: Várias coordenadas de um mesmo vetor
----------------------------------------------
-Atividade para que se observe a dependência da malha para a representação algébrica de um vetor.  (Representação algébrica de vetores).
-
-.. _ativ-vetores-plano-inclinado:
-
-Atividade: Plano inclinado
---------------------------
-Decomposição de vetores numa base.
-
-.. _ativ-vetores-deslocamento-com-coordenadas:
-
-Atividade: Deslocamento com coordenadas
----------------------------------------
-
-Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
-Considere o lado de um quadradinho da malha como sendo uma unidade.
-
-.. tikz::
-       
-       \node at (-.5,1.3) {a)};
-       \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1.51);
-      \fill[blue] (0,0) circle (.08);
-      \node[right] at (0,0) {$A$};
-      \fill[blue] (.5,1.5) circle (.08);
-      \node[right] at (0.5,1.5) {$B$};
-      \fill[blue] (1.5,-1) circle (.08);
-      \node[right] at (1.5,-1) {$C$};
-      \fill[blue] (2,1) circle (.08);
-      \node[right] at (2,1) {$D$};
-      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
-      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
-      
-      \begin{scope}[shift={(4.5cm,.25)}]
-      \node at (-.5,1.05) {b)};
-      \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1);
-      \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {$B$};
-      \fill[blue] (1,0) circle (.08);
-      \node[above] at (1,0) {$A$};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {$C$};
-      \fill[blue] (1,-1) circle (.08);
-      \node[right] at (1,-1) {$D$};
-      
-      \begin{scope}[shift={(4.5cm,-.5)}]
-      \node at (-.5,1.55) {c)};
-      \draw[step=.5cm, color=gray, very thin] (0,-0.51) grid (2.01,1.51);
-      \fill[blue] (0,0) circle (.08);
-      \node[below] at (0,0) {$A=D$};
-      \fill[blue] (2,0) circle (.08);
-      \node[below] at (2,0) {$B$};
-      \fill[blue] (1,1.5) circle (.08);
-      \node[right] at (1,1.5) {$C$};
-      \end{scope}
-      \end{scope}
-
-.. _ativ-vetores-translacao:
-
-Atividade: Translação de figuras (ver SesaMath)
------------------------------------------------
+Na figura temos o retângulo `OXVY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
 
 
-.. Fim edição Fabio e início de Wanderley
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
+   :width: 400px
+   :align: center
+
+   legenda
+
+#. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
+#. Calcule as coordenadas dos pontos `X'` e `Y'`.
+#. Se `V'` é o correspondente de `V` pela homotetia, então `\overrightarrow{OV'}=3\overrightarrow{OV}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
+
+.. admonition:: Resposta 
+
+   texto da resposta.
+
+.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
+
+A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
+
+
+
