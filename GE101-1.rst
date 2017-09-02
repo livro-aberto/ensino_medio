@@ -13,7 +13,9 @@ Abordagem algébrica
    vetores unitários
    vetores perpendiculares
 
-Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. Esta representação permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática), possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática).
+Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. 
+Esta representação possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática). 
+Além disso ela permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática).
 
 
 .. _ativ-vetores-vetor-malha:
@@ -357,7 +359,13 @@ Como você deve ter observado através da atividade anterior, se os vetores `\ve
 
    Vetor soma
 
+.. admonition:: Exemplo 
 
+   O quadrilátero `OABC` da figura é um paralelogramo. Sabendo que as coordenadas dos vértices são `O=(0,0)`, `A=(2,0)`, `B=(3,1)` e `C = (1,1)`, calcule as coordenadas do ponto `M` de encontro das diagonais do paralelogramo.
+   
+   **FIGURA2 - coordenada racional não inteira**
+
+   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
 
 .. index:: ! homotetia
 
