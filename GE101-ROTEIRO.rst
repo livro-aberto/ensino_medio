@@ -64,8 +64,10 @@ ROTEIRO: VETORES
       
       BNCC (EF07MA15) Realizar transformações de polígonos representados no plano cartesiano, decorrentes da multiplicação das coordenadas de seus vértices por um número inteiro.
       
+      BNCC (EF09MA13) Demonstrar relações métricas do triângulo retângulo, entre elas o teorema de Pitágoras, utilizando, inclusive, a semelhança de triângulos.
+    
       BNCC (EF09MA15) Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano.
-      
+             
 
    .. admonition:: Desdobramentos imediatos
 
