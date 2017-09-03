@@ -161,7 +161,7 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
    \end{scope}
 
 #. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas.
-#. Faça o mesmo para um ponto `V=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
+#. Faça o mesmo para um ponto `P=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
 
  
 
@@ -169,7 +169,7 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
 
    texto da resposta
 
-Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OV}`, para algum ponto `V` do plano.  Na atividade acima você deve ter observado que dado um ponto `V=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OV}` são também `x` e `y` (pois `\overrightarrow{OV} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
+Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OP}`, para algum ponto `P` do plano.  Na atividade acima você deve ter observado que dado um ponto `P=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OP}` são também `x` e `y` (pois `\overrightarrow{OP} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
 
 .. admonition:: Notação
    
@@ -179,7 +179,7 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
    
       \vec{v} = (x,y) 
    
-   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `V` tal que `\vec{v}=\overrightarrow{OV}`.
+   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `P` tal que `\vec{v}=\overrightarrow{OP}`.
 
 Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
 
@@ -235,46 +235,46 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
-As coordenadas também favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OV`, onde `V=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
+De posse das coordenadas de um vetor, faremos alguns comentários:
 
-.. math::
+#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
 
-   |\vec{v}|=x^2+y^2`. 
+   .. math::
 
-**FIGURA**
+      |\vec{v}|=x^2+y^2`, 
 
-Qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
+   **FIGURA**
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
-   :width: 250px
-   :align: center
+#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua (nova) extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
 
-   `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
+      :width: 250px
+      :align: center
+      
+      `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
+ 
+#. dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`). Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
 
+   .. tikz::
 
-Observe que dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`).
-Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
-
-.. tikz::
-
-   \begin{scope}[scale=1.3]
-   \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
-   \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
-   \fill (0,0) circle (0.05) node[below left]{$O$};
-   \draw[-latex, very thick, red]  (-1,2)--(0,0);
-   \draw[-latex, very thick, red] (0,0)-- (1,.5);
-   \draw[-latex, very thick] (-1,2) -- (1,.5);
-   \node at (.3,1.4){$\overrightarrow{AB}$};
-   \node at (-.9,.8){$-\overrightarrow{OA}$};
-   \node at (.4,.5){$\overrightarrow{OB}$};
-   \end{scope}
+      \begin{scope}[scale=1.3]
+      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+      \fill (0,0) circle (0.05) node[below left]{$O$};
+      \draw[-latex, very thick, red]  (-1,2)--(0,0);
+      \draw[-latex, very thick, red] (0,0)-- (1,.5);
+      \draw[-latex, very thick] (-1,2) -- (1,.5);
+      \node at (.3,1.4){$\overrightarrow{AB}$};
+      \node at (-.9,.8){$-\overrightarrow{OA}$};
+      \node at (.4,.5){$\overrightarrow{OB}$};
+      \end{scope}
 
 
 .. Em algum lugar deveríamos dizer ao professor que "alguns autores escrevem `\overrightarrow{AB} = B-A`, preferimos evitar esta abordagem porque seria necessário esclarecer o que significa esta diferença entre pontos do plano."
 
 .. admonition:: Pausa para reflexão
 
-   Observe que se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o deslocamento de `A` para `B`, o que nada tem a ver com `O`.
+   Se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
    
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
       :width: 400px
@@ -282,7 +282,7 @@ Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x
 
       As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
    
-   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas.
+   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
  
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
       :width: 400px
@@ -327,7 +327,7 @@ A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec
    Translação de um triângulo 
 
 #. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
-#. Considere um ponto genérico `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `X'`, resultado da translação de `X` por `\vec{u}`.
+#. Considere um ponto genérico `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
 
 Parte II.
 
@@ -343,15 +343,15 @@ A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor
    Figura errada, mas similar à correta.
 
 #. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
-#. Considere um ponto `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `X''`, resultado da translação de `X` por `\vec{v}`.
+#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
 
 Parte III.
 
 Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` então translada-se este último triângulo por `\vec{v}`.
 
 #. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
-#. Considere um ponto `X=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Y`, resultado desta composição de translações.
-#. Escreva uma expressão vetorial (isto é, sem coordenadas) para o ponto `Y`.
+#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. Escreva uma expressão vetorial (isto é, sem coordenadas) para o ponto `Q`.
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
 .. admonition:: Resposta 
@@ -396,7 +396,6 @@ Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de
 Atividade: homotetia
 --------------------
 
-
 .. admonition:: Para o professor
 
    **Objetivo específico:** reconhecer que `r(x,y)=(rx,ry)`. 
@@ -404,17 +403,17 @@ Atividade: homotetia
    **Recomendações e sugestões:**
 
 
-Na figura temos o retângulo `OXVY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
+Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
    :width: 400px
    :align: center
 
-   legenda
+   Coordenadas de `A'`, correspondente de `A` pela homotetia
 
 #. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
 #. Calcule as coordenadas dos pontos `X'` e `Y'`.
-#. Se `V'` é o correspondente de `V` pela homotetia, então `\overrightarrow{OV'}=3\overrightarrow{OV}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
+#. Se `A'` é o correspondente de `A` pela homotetia, então `\overrightarrow{OA'}=3\overrightarrow{OA}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
 
 .. admonition:: Resposta 
 
