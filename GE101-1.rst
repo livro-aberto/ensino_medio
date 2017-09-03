@@ -427,16 +427,15 @@ Conforme prometido no início da seção passaremos agora a discorrer sobre as p
 
 **Propriedades comentadas das operações com vetores**
 
-A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`. 
-Lá posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`. 
+A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`: posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`, 
 
 **FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
 
-O :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
-Mas então surge a pergunta: *se movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
+o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
+Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
 Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
 
-Seguindo o etabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos fazer `(\vec{u} + \vec{v}) + \vec{w}` ou `\vec{u} + (\vec{v} + \vec{w})`. Estas duas somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de estarmos sendo ambíguos. 
+Seguindo o estabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos. 
 
 Estas e outras questões nos forçam a listar as propriedades a seguir.
 Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
@@ -447,10 +446,19 @@ Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os n�
 
 #. `\vec{u} + \vec{v} = \vec{v} + \vec{u}`,
 #. `(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})`,
-#. `0\vec{u}=\vec{0}`,
+#. `r(s\vec{u})=(rs)\vec{u}`,
 #. `r(\vec{u}+\vec{v})= r\vec{u} +r \vec{v}`,
 #. `(r+s)\vec{u} = r\vec{u} + s\vec{u}`.
-#. `r(s\vec{u})=(rs)\vec{u}`,
+
+Justificativa do item a): considere um sistema de coordenadas no plano, então os vetores ficam representados por pares ordenados, digamos `\vec{u}=(x_1,y_1)` e `\vec{v}=(x_2,y_2)`. Então 
+
+.. math::
+
+   \vec{u} + \vec{v} = (x_1,y_1) + (x_2,y_2) = (x_1 + x_2,y_1+y_2) = (x_2 + x_1, y_2 + y_1) = (x_2,y_2) + (x_1,y_1) =  \vec{v} + \vec{u}.
+
+.. admonition:: Pausa para reflexão
+
+   `0\vec{u}=\vec{0}`.
 
 .. Precisamos introduzir aqui forças em situações típicas da física.
 
