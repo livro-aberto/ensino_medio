@@ -423,5 +423,34 @@ Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Conside
 
 A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
 
+Conforme prometido no início da seção passaremos agora a discorrer sobre as principais propriedades das operações de adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem obter todas elas a partir de propriedades análogas para os números reais.
+
+**Propriedades comentadas das operações com vetores**
+
+A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`. 
+Lá posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`. 
+
+**FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
+
+O :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
+Mas então surge a pergunta: *se movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
+Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
+
+Seguindo o etabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos fazer `(\vec{u} + \vec{v}) + \vec{w}` ou `\vec{u} + (\vec{v} + \vec{w})`. Estas duas somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de estarmos sendo ambíguos. 
+
+Estas e outras questões nos forçam a listar as propriedades a seguir.
+Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
+O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade (trabalhar com a igualdade, pressupõe a validade da igualdade e, por isso, não serve para *justificar* a igualdade).
+Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades.
+
+Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `r` e `s`, valem as seguintes afirmações:
+
+#. `\vec{u} + \vec{v} = \vec{v} + \vec{u}`,
+#. `(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})`,
+#. `0\vec{u}=\vec{0}`,
+#. `r(\vec{u}+\vec{v})= r\vec{u} +r \vec{v}`,
+#. `(r+s)\vec{u} = r\vec{u} + s\vec{u}`.
+#. `r(s\vec{u})=(rs)\vec{u}`,
+
 .. Precisamos introduzir aqui forças em situações típicas da física.
 
