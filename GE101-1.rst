@@ -173,7 +173,7 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
 
 .. admonition:: Notação
    
-   Para representar um vetor `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   Para representar as :index:`coordenadas de um vetor <pair: vetor;coordenadas>` `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
    
    .. math::
    
@@ -235,7 +235,15 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
-Deste modo qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com a coordenadas `(x,y)`. Veja a figura.
+As coordenadas também favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OV`, onde `V=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
+
+.. math::
+
+   |\vec{v}|=x^2+y^2`. 
+
+**FIGURA**
+
+Qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
    :width: 250px
@@ -305,7 +313,7 @@ Atividade: translação num plano
    #. reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão, e
    #. descrever equações vetoriais em termos de coordenadas.
    
-   **Sugestões para o desenvolvimento da atividade:**
+   **Recomendações e sugestões:**
 
 
 Parte I.
@@ -416,5 +424,5 @@ Na figura temos o retângulo `OXVY` e é dado um sistema de coordenadas. Conside
 
 A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
 
-
+.. Precisamos introduzir aqui forças em situações típicas da física.
 
