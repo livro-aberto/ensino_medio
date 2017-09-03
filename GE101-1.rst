@@ -20,15 +20,15 @@ Além disso ela permite o uso de propriedades do conjunto dos números reais par
 
 .. _ativ-vetores-vetor-malha:
 
-Atividade: Vetores numa malha quadriculada
+Atividade: vetores numa malha quadriculada
 ------------------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** Usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha.
+   **Objetivo específico:** usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha.
    
-   **Recomendações para o desenvolvimento da atividade:**
-   No problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
+   **Recomendações e sugestões:**
+   no problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
 
 Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
 
@@ -55,18 +55,18 @@ Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` 
 
 .. _ativ-vetores-combinacao:
 
-Atividade: Expressão algébrica dado vetor
+Atividade: expressão algébrica dado vetor
 -----------------------------------------
 
 .. admonition:: Para o professor
 
    **Objetivos específicos:** 
    
-   #. Usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha.
-   #. Perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
+   #. usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha, e 
+   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
    
    
-   **Recomendações para o desenvolvimento da atividade:**
+   **Recomendações e sugestões:**
 
 Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
 
@@ -137,9 +137,9 @@ Atividade: coordenadas do vetor posição
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** Reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
+   **Objetivos específicos:** reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
    
-   **Recomendações para o desenvolvimento da atividade:**
+   **Recomendações e sugestões:**
 
 Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)`, faça o que se pede: 
 
@@ -173,7 +173,7 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
 
 .. admonition:: Notação
    
-   Para representar um vetor `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   Para representar as :index:`coordenadas de um vetor <pair: vetor;coordenadas>` `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
    
    .. math::
    
@@ -235,7 +235,15 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
-Deste modo qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com a coordenadas `(x,y)`. Veja a figura.
+As coordenadas também favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OV`, onde `V=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
+
+.. math::
+
+   |\vec{v}|=x^2+y^2`. 
+
+**FIGURA**
+
+Qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` e também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
    :width: 250px
@@ -295,17 +303,17 @@ Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x
 
 .. _ativ-vetores-translacao:
 
-Atividade: Translação num plano
+Atividade: translação num plano
 -------------------------------
 
 .. admonition:: Para o professor
 
    **Objetivos específicos:**
    
-   #. Reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão.
-   #. Descrever equações vetoriais em termos de coordenadas.
+   #. reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão, e
+   #. descrever equações vetoriais em termos de coordenadas.
    
-   **Sugestões para o desenvolvimento da atividade:**
+   **Recomendações e sugestões:**
 
 
 Parte I.
@@ -353,8 +361,6 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 Como você deve ter observado através da atividade anterior, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
 
 
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
    :width: 200px
    :align: center
@@ -379,9 +385,6 @@ Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de
 
 Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos de um triângulo e de um quadrado com razões 2 e 1/3, respectivamente.
 
-
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1.jpg
    :width: 400px
    :align: center
@@ -390,21 +393,18 @@ Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de
 
 .. _ativ-vetores-homotetia:
 
-Atividade: Homotetia
+Atividade: homotetia
 --------------------
 
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** Reconhecer que `r(x,y)=(rx,ry)`. 
+   **Objetivo específico:** reconhecer que `r(x,y)=(rx,ry)`. 
    
-   **Recomendações para o desenvolvimento da atividade:**
+   **Recomendações e sugestões:**
 
 
 Na figura temos o retângulo `OXVY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
-
-
-.. _fig-coloque-aqui-o-nome:
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
    :width: 400px
@@ -424,5 +424,5 @@ Na figura temos o retângulo `OXVY` e é dado um sistema de coordenadas. Conside
 
 A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
 
-
+.. Precisamos introduzir aqui forças em situações típicas da física.
 
