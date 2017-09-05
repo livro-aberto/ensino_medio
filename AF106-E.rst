@@ -3,28 +3,7 @@
 Exercícios
 ---------
 
-`1.` Observe as sequências que se segue e complete os espaços em branco com
-o(s) termo(s) que estão faltando:
-
-#. 1, 2, 3, __, 5, __, 7
-
-#. 2, 4, 6, __, 10, 12, 14, __
-
-#. 1, 3, 5, __, __, 11, 13, __
-
-#. 3, 6, 9, 12, __
-
-#. 1, 4, 9, __, __, __, 49, __
-
-#. 2, 4, 8, 16, __, __, 128, __
-
-#. 5, 25, 125, 625, __
-
-#. 1, 8, 27, __, 125, __
-
-`2.` Para cada item do exercício anterior determine uma regra geral que permite encontrar qualquer termo de cada uma das sequências. O número 81 é, simultaneamente, um termo de cada uma das sequências dos itens c), d) e e). Usando a respectiva regra geral, determine a ordem a que corresponde este termo, em cada uma delas. 
-
-`3.` Na figura seguinte estão representados diversos números figurados: quadrados, pentagonais e hexagonais.
+`1.` Assim como os números triangulares (ver :ref:`ativ-funcoes-numeros-triangulares`), fala-se nos números quadrados perfeitos, pentagonais, hexagonais, inspirados, respectivamente, pelas sequências abaixo.
 
 
 .. _fig-figurados:
@@ -35,14 +14,14 @@ o(s) termo(s) que estão faltando:
 
 
 
-#. para cada uma destas sequências, represente as próximas duas figuras;
+#. Para cada uma destas sequências, represente as próximas duas figuras;
 
-#. escreva uma sequência de números que possa estar associada a cada sequência de figuras;
+#. Escreva uma sequência de números que possa estar associada a cada sequência de figuras;
 
-#. descreva a regra de formação de cada uma dessas sequências de números. 
+#. Descreva um possível padrão de formação de cada uma dessas sequências de números. 
 
 
-`4.` Observe as duas sequências que se seguem:
+`2.` Observe as duas sequências que se seguem:
 
 .. math::
 
@@ -53,11 +32,11 @@ o(s) termo(s) que estão faltando:
 
    1000, 100, 10, \dots
 
-#. Descreva a regra geral de cada uma das sequências apresentadas.
+#. Descreva, em palavras ou em linguagem simbólica, a regra que você percebe em cada uma das sequências apresentadas.
 
-#. Descubra qual é o 20º termo de cada uma das sequências anteriores. 
+#. Baseado na regra que você identificou no item anterior, descubra qual é o 20º termo de cada uma das sequências anteriores. 
 
-`5.` Cada prisma obtém-se empilhando cubos do mesmo tamanho, brancos e cinzas, segundo a regra sugerida na figura.
+`3.` Cada prisma obtém-se empilhando cubos do mesmo tamanho, brancos e cinzas, segundo uma regra sugerida na figura.
 
 
 .. _fig-prismas:
@@ -66,22 +45,26 @@ o(s) termo(s) que estão faltando:
    :width: 400px
    :align: center
 
-#. Para construir o prisma 4 desta sequência, quantos cubos cinzas são necessários?
+#. Descreva, em palavras ou em linguagem simbólica, a regra sugerida pela figura.
 
-#. Quantos cubos cinzas terá o prisma 200? Descreva todo o seu raciocínio.
+#. Para construir o prisma 4 desta sequência, segundo o padrão por você descrito, quantos cubos cinzas são necessários?
 
-#. Indique uma expressão geral que represente o número de cubos cinzas em qualquer prisma da sequência. 
+#. Justifique a afirmação: “O número total de cubos cinzas necessários para construir qualquer prisma desta sequência é par.”
 
-#. Justifique que a afirmação que se segue é verdadeira. “O número total de cubos (brancos e cinzas) necessários para construir qualquer prisma desta sequência é par.” 
+#. Segundo o padrão por você descrito, quantos cubos cinzas terá o prisma 200?
 
-#.  Se `x` representasse o número total de cubos (brancos e cinzas) de um prisma desta sequência, qual das expressões seguintes poderia representar o número de cubos cinzas desse prisma. Justifique sua escolha. 
+#. Explicite uma expressão numérica que represente o número de cubos cinzas do Prisma `n` em função de `n`, isto é, uma expressão numérica que sirva para qualquer prisma da sequência.
+
+#. Justifique novamente a afirmação do item (c), agora a partir da expressão que você explicitou no ítem anterior.
+
+#. Se `x` representasse o número total de cubos (brancos e cinzas) de um prisma desta sequência, qual das expressões seguintes poderia representar o número de cubos cinzas desse prisma. Justifique sua escolha. 
 
 
 .. math::
 
    \square \ x-8 \quad \quad \square \ 2x-4 \quad \quad \square \ x-4 \quad \quad \square \ 4x
 
-`6.` Ao final de um treino para a prova de 100 metros rasos, uma corredora recebe de seu treinador a seguinte tabela com as marcas intermediárias da sua melhor corrida.
+`4.` Ao final de um treino para a prova de 100 metros rasos, uma corredora recebe de seu treinador a seguinte tabela com as marcas intermediárias da sua melhor corrida.
 
 .. table::
    :widths: 3 3
@@ -107,7 +90,7 @@ Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda
 #. Pensando em uma estratégia para melhorar a preformance da atleta, seu treinador resolve detalhar a tabela com os tempos correspondentes a cada 10 metros. Construa essa tabela.
 
 
-`7.` Em Janeiro, o Vitor, depois de ter vindo do barbeiro, decidiu estudar o comprimento do seu cabelo, registando todos os meses a sua medida. O gráfico seguinte representa o crescimento do cabelo do Vitor, desde o mês de Janeiro (mês 0), até ao mês de Junho (mês 5).
+`5.` Em Janeiro, o Vitor, depois de ter vindo do barbeiro, decidiu estudar o comprimento do seu cabelo, registando todos os meses a sua medida. O gráfico seguinte representa o crescimento do cabelo do Vitor, desde o mês de Janeiro (mês 0), até ao mês de Junho (mês 5).
 
 
 .. _fig-cabelo:
@@ -127,7 +110,7 @@ Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda
    | Comprimento |             |     4,4       |     5,8   |     7,2   |     8,6  |           |
    +-------------+-------------+---------------+-----------+-----------+----------+-----------+ 
 
-#. Complete a tabela acima.
+#. Complete a tabela acima supondo que Vitor não cortou o cabelo até julho.
 
 #. Em cada mês, quantos centímetros cresceu o cabelo do Vitor?
 
@@ -136,9 +119,7 @@ Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda
 #. Se o cabelo do Vitor tivesse crescido 19,8 cm, quantos meses teriam passado desde o corte inicial de cabelo? Justifique. 
 
 
-
-
-`8.` Hoje de manhã a Ana saiu de casa e dirigiu-se para a escola. Fez uma parte do percurso andando e a outra parte correndo. O gráfico que se segue mostra a distância percorrida pela Ana, em função do tempo que decorreu desde o instante em que ela saiu de casa até ao instante em que chegou à escola.
+`6.` Hoje de manhã a Ana saiu de casa e dirigiu-se para a escola. Fez uma parte do percurso andando e a outra parte correndo. O gráfico que se segue mostra a distância percorrida pela Ana, em função do tempo que decorreu desde o instante em que ela saiu de casa até ao instante em que chegou à escola.
 
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=caminhada_corrida.png
@@ -147,29 +128,26 @@ Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda
 
 Apresentam-se, em seguida, quatro afirmações. De acordo com o gráfico apenas uma é verdadeira. Assinale-a com X, explicando por que motivo cada uma das restantes opções é falsa.
 
- (  ) A Ana percorreu metade da distância andando e a outra metade correndo.
+(    ) A Ana percorreu metade da distância andando e a outra metade correndo.
 
- (  ) A Ana percorreu maior distância andando do que correndo.
+(    ) A Ana percorreu maior distância andando do que correndo.
 
- (  ) A Ana esteve mais tempo correndo do que andando.
+(    ) A Ana esteve mais tempo correndo do que andando.
 
- (  ) A Ana iniciou o percurso correndo e terminou-o andando. 
+(    ) A Ana iniciou o percurso correndo e terminou-o andando. 
 
 
-`9.` Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
+`7.` Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
 
 #. Coloque em ordem crescente os números `g(\sqrt{2})`, `g(\sqrt{5})` e  `g(\sqrt{10})`.
 #. Determine todos os possíveis valores de `x` do domínio que têm imagem igual a 8.
-#. Podemos trocar o domínio e o contradomínio da função `g` para `\mathbb{Z}`? Por que?
 #. Existe algum `x\in \mathbb{R}` cuja imagem é igual a 10? Por que?
-#. Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=f(x)` ?
+#. Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=g(x)` ?
 
-`10.*` Considere o processo que associa cada número natural à soma de seus algarismos
+`8.*` Considere o processo que associa *cada número natural à soma de seus algarismos*.
 
-#. O que obtemos a partir do número 13717?
-#. Proponha um número cujo resultado do processo seja 22.
-#. Quantos números entre 1 e 10000 nos levam ao resultado 3?
+#. Por meio do processo descrito acima o número natural `13717` será associado a que número?
+#. Proponha um número cujo resultado do processo seja `22`.
+#. Quantos números entre `1` e `10000` nos levam ao resultado `3`?
 #. É possível obter qualquer número natural como resultado desse processo?
-
-`11.*` As expressões `f(n)=n^2` e `a_{n+1}=a_n+2n+1` geram a mesma função com domínio igual ao conjunto dos números naturais.
 
