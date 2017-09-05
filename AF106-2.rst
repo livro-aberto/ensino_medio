@@ -280,7 +280,7 @@ Do mapa para o gráfico
 #. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
 
 
-Voltando ao elevador
+
 ------------------------------
 .. admonition:: Para o professor
 
@@ -295,62 +295,59 @@ Voltando ao elevador
    * Chame a atenção para a importância do contexto na representação correta do gráfico. É possível que seus estudantes tenham a ideia equivocada de que sempre devemos "ligar os pontos".
    * Ao observar que os pontos estão alinhados construa junto com seus estudantes uma justificativa para este fato.
   
-Na atividade "No elevador" apresentamos uma situação em que você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+Na atividade "100 metros rasos" é apresentada uma tabela com os tempos gastos por um atleta iniciante em um dos seus treinos.
 
 .. table::
    :widths: 3 3
    :column-alignment: center center
 
 
-   +-------+--------------------+
-   | Andar | Tempo (s)          |
-   +=======+====================+
-   |   14  |          0         |
-   +-------+--------------------+
-   |   10  |          2         |
-   +-------+--------------------+
-   | 6     |          4         |
-   +-------+--------------------+
-   | 2     |          6         |
-   +-------+--------------------+
-   |0      |          ?         |
-   +-------+--------------------+
+   +-----------+----------------+
+   | Tempo (s) | Distância (m)  |
+   +===========+================+
+   |   5       |         25     |
+   +-----------+----------------+
+   |   10      |         50     |
+   +-----------+----------------+
+   |   15      |         75     |
+   +-----------+----------------+
+   |   20      |         100    |
+   +-----------+----------------+
 
-Anteriormente observamos que podemos considerar o andar como função do tempo. A cada tempo indicado na tabela está associado um único andar e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_1.png
-   :width: 400px
+Anteriormente observamos que podemos considerar a distância como função do tempo. A cada tempo indicado na tabela está associado uma única distância e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida1.png
+   :width: 800px
    :align: center
    
-Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão os andares. Suponha que desejamos determinar o instante associado à posição em que o elevador encontra-se em cada um dos andares, qual seria uma boa estratégia para resolvermos essa questão utilizando a figura?
+Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão as distâncias. Utilizando a figura, qual seria uma boa estratégia para determinar o tempo decorrido a cada 10 metros?
 
-Supondo que o movimento do elevador seja uniforme, isto é, que ele desce a uma velocidade constante, e observando que os pontos marcados estão alinhados podemos admitir que os pontos que correspondem aos outros andares também estão sobre a mesma linha.
+Como estamos supondo que a velocidade é constante e observando que os pontos marcados estão alinhados, podemos admitir que os pontos que correspondem às distâncias procuradas também estão sobre a mesma linha.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_2.png
-   :width: 400px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida2.png
+   :width: 800px
    :align: center
    
    
-#. A partir da figura, determine em quanto tempo o elevador chegará à recepeção.
-#. Na figura anterior estão representados os pontos que correspondem aos andares `11, 12` e `13`. Determine os tempos associados a eles.
-#. Represente graficamente e determine as coordenadas dos pares ordenados que estão sobre a reta associados aos demais andares.
+#. A partir da figura, determine o tempo gasto para percorrer os primeiros `10` metros.
+#. Na figura anterior estão representados os pontos que correspondem às distâncias `10` e `20` metros. Localize sobre a reta os pontos que correspondem:
 
-Agora que já temos os pontos marcados, vamos traçar o gráfico que representa a situação descrita na atividade.
+  #. Ao tempo de `17` segundos.
+  #. A distância de `95` metros.
+  
+#. Você já deve ter percebido a relação entre a distância percorrida pelo atleta e o tempo. Caso não tenha percebido reuna todos os dados obtidos até agora em uma tabela e obtenha um expressão `s(t)` que nos permita calcular a distância `s` para qualquer tempo `t` entre `0` e `20` segundos.
 
-Talvez a sua primeira ideia tenha sido ligar os pontos, preenchendo a reta pontilhada. Mas vamos analisar a situação com mais atenção.
+A figura abaixo representa a reunião dos pontos da forma `(t,s(t))`, para `t` variando no intervalo `[0,20]` e é denominado gráfico da função `s`.
 
-No instante `0` o elevador está no décimo quarto andar, ponto `(0,14)` da figura e após `0{,}5s` ele chega no andar de número `13`, ponto `(0{,}5,13)`. Como não existem andares fracionários, vamos convencionar que o elevador só chega em um determinado andar quando ele para naquele andar. Sendo assim, no intervalo `[0,0{,}5)` o elevador ainda está no décimo quarto andar, isto é, todo `0\leqslant x<0{,}5` terá ordenada `14`.
 
-O mesmo comportamento se repete para os valores de `x` no intervalo `[0{,}5,1)` que terão ordenada `13` e assim sucessivamente. A parte do gráfico correpondente ao intervalo `[0,1)` está representada na figura abaixo.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_3.png
-   :width: 400px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida3.png
+   :width: 800px
    :align: center
 
-#. Faça o gráfico para o intervalo `[0,7]`.
- 
 
+De um modo geral temos a seguinte definição:
 
 .. admonition:: Definição 
 

@@ -1,167 +1,140 @@
-=======
-Funções
-=======
-
-.. admonition:: Objetivos Específicos 
-
-	**(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá- las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
-
-
-.. admonition:: Pré-requisitos
-
-	**(EF06MT01)** Associar pares ordenados a pontos do plano cartesiano, considerando apenas o primeiro quadrante, preferencialmente vinculados a situações com algum significado para o/a estudante, como, por exemplo, para representar pontos de um desenho construído sobre o plano.
-    
-	**(EF09MT16)** Reconhecer função como uma relação de dependência entre duas variáveis que pode ser representada nas formas algébrica e gráfica, utilizando essa noção para analisar e compreender situações que envolvem relações funcionais entre duas variáveis.
-
-.. admonition:: Desdobramentos imediatos 
-
-   **(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
-   
-   Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis. Reconhecer funções em situações de não casualidade.
-    
-.. note::
-   **Roteiro do Capítulo**
-   
-   `1.` Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.[DONE]
-   
-   `2.` Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [5].  (Exploração)[DONE]
-   
-   `3.` As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [1].[DONE] -- Pensamos que o nível "objeto" não deva ser exigido de todos os estudantes, por isso, ele terá maior ênfase nos aprofundamentos.
-   
-   `4.` Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)[DONE]
-   
-   `5.` Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)* [DONE]
-   
-   `6.` Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.[DONE]
-   
-   `7.` Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [5]. [DONE]
-   
-   `8.` Definição formal de função crescente e decrescente. 
-   
-   `9.` Interseção com os eixos: zero da função e `(0,f(0))`.
-   
-   `10.` Exercícios.
-   
-   `11.` Aprofundamento 
-   
-   **Orientação para o professor**
-   
-   1) Funções podem ser entendidas sobre três níveis de abstração: como ações, como processos e como objetos. (Estudos realizados em estudantes de idade universitária revelam que poucos têm progredido para além da compreensão da ação e ainda menos para além da compreensão do processo. Ver [1], página 16.)
-   
-   **Orientações gerais para o Capítulo**
-   
-   1) Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
-   2) Incluir problemas nos quais os estudantes recebem uma tabela de entradas e saídas e devem determinar algum processo que transformou cada entrada na sua respectiva saída. (Processo) 
-   
-   **Atenção para as armadilhas**
-   
-   * "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [1], página 14.
-
-   * "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [2].
-   
-   * "For example, more than 90% of the students at the end of elementary school gave a solution that assumed a proportional relationship (in this case: “170 seconds”) to items such as “John’s best time to run 100 meters is 17 seconds. How long will it take him to run 1 kilometer?” (Greer, 1993; Verschaffel et al., 1994). The NCTM (1989) standards note that “most students in grades 5–8 incorrectly believe that if the sides of a figure are doubled to produce a similar figure, the area and volume also will be doubled” (pp. 114–115). Also, history has provided many cases of misspecification of proportional reasoning such as Aristotle’s claim that if an object is 10 times as heavy as another object, it will reach the ground 10 times as fast as that other object (Galilei, 1638/1954)." Ver [3]
-   
-   **Referências:**
-   
-   [1] Anna Sierpinska. On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 25–58. Mathematical Association of America, USA, 1992.
-   
-   [2] Theodore Eisenberg. On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy, pages 153–174. Mathematical Association of America, USA, 1992.
-   
-   [3]  Van Dooren, W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L. (2005). Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, 23, 57 –86. 
-   
-   [4] Greer, B. (1993). The mathematical modelling perspective on wor(l)d problems. Journal of Mathematical Behavior, 12, 239–250.
-   
-   [5] Michal Ayalon & Anne Watson & Steve Lerman (2015). Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
-   
-   [6] Rodrigo Schroer. (2013). A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS.
-
-
-
-Apresentação
-============
-
-
 .. admonition:: Para o professor
 
-   Caro professor, vamos começar a trabalhar com as funções dando destaque ao seu papel como modelo matemático para analisar e interpretar relações unívocas de dependência entre duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em outras áreas do conhecimento como física, química e biologia, por exemplo. Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções.
+	**[Colocar em uma caixa destacada com tag a habilidade que deverá ser desenvolvida no capítulo, bem como os prá-requisitos necessários]** 
+
+	Muitas situações e decisões do dia a dia dependem do reconhecimento de uma relação entre duas grandezas e da análise de como a variação de uma delas influencia na variação da outra (distância x tempo; área x comprimento dos lados, absorção de um medicamento pelo organismo humano x tempo, etc.). O tema funções trata de uma especial relação entre grandezas e mostra como a matemática pode ajudar nessas decisões. Além disso, na Matemática como ciência, função é considerado um conceito fundamental e central. Esse conceito deu origem a uma forma mais precisa de se falar em Matemática em muitas situações.
+
+	Este capítulo começa com quatro atividades que exploram os principais aspectos da definição de função e de algumas das suas representações. Elas cumprem também o papel de resgatar alguns conceitos já adquiridos no Ensino Fundamental, tais como proporcionalidade, reconhecimento de padrões, leitura e interpretação de gráficos. Em seguida, na seção *Organizando as Ideias*, formalizamos os conceitos de função e gráfico e os exploramos em uma série de atividades propostas na seção *Praticando*. Para encerrar o capítulo, em *Aprofundando* apresentamos outros problemas e situações onde as ideias do capítulo reaparecem em contextos um pouco mais abstratos.
+
+	**[Caixa destacando as observações abaixo]** 
+
+	* Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
+	* É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
+	* Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
+	* O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
+	* São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
+	* Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
+	* Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
+
+	**[Caixa em destaque com uma tag "O que dizem as pesquisas sobre o tema?"]**
+
+	A noção de função é considerada uma das mais importantes da matemática. Segundo PONTE (1992), assim como o ponto, a reta e o plano foram os elementos básicos da Geometria Euclidiana, o conceito de função foi um dos fundamentos da Análise Matemática. Documentos oficiais como os Parâmetros Curriculares Nacionais do Ensino Médio (PCNEM) e a (segunda versão da) Base Nacional Comum Curricular (BNCC)  evidenciam a preocupação com tal conteúdo no Ensino Médio, trazendo inclusive sugestões no que diz respeito a sua abordagem.
+
+		Nessa etapa de escolaridade, merece especial destaque o estudo das funções por seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em componentes de outras áreas de conhecimento[...] [BNCC-2016,p.576]_
+  
+		O estudo das funções permite ao aluno adquirir a linguagem algébrica como a linguagem das ciências, necessária para expressar a relação entre grandezas e modelar situações-problema, construindo modelos descritivos de fenômenos e permitindo várias conexões dentro e fora da própria matemática. [PCNEM-2006, p.121]_
    
-   Sobre a abordagem adotada, destacamos os seguintes pontos:
+	São muitos os relatos sobre as  diversas dificuldades que os estudantes apresentam no processo de aprendizagem da noção de função. Sierpinska [Sierpinska-1992]_ chama atenção para alguns dos problemas mais comuns:  fazer a ligação entre as diferentes representações (fórmulas, gráficos, diagramas, descrição por palavras); interpretar gráficos e manipular algebricamente, entre outros.
+  
+	Neste ponto do desenvolvimento do seu aprendizado é muito comum o estudante fazer confusão com os diferentes papéis que as letras representam nas expressões algébricas. Para Ursini [Ursini-et-al-2001]_, as distintas interpretações possíveis para a simbologia algébrica constituem aspectos que geram dificuldades adicionais a muitos estudantes.
+
+	Segundo Eisenberg [Eisenberg-1992]_, os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente, mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico.
    
-   * Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
-   * É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
-   * Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
-   * O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
-   * São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
-   * Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
-   * Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
-     
-Neste capítulo vamos dar continuidade ao estudo das funções que você iniciou no Ensino Fundamental. A noção de função é um dos conceitos centrais para a Matemática, e sua importância transcende os limites dessa ciência, sendo muito útil para descrever os fenômenos em diversas áreas do conhecimento, não só nas mais próximas como a Física, a Química, ou as Engenharias, como também em Biologia, Geografia, Sociologia, entre outras. 
+	Jones [Jones-2006]_ chama atenção para os três níveis de abstração nos quais podemos situar o entendimento do conceito de função:  como ação, como processo e como objeto. Procuramos, assim, dosar as atividades propostas com o objetivo de não privilegiar o pensamento algébrico em detrimento da visualização e buscando atingir os diferentes níveis de abstração indicados acima.
 
-As funções, de uma maneira geral, servem para conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que muitas vezes não podem ser tão claramente quantificadas, sendo possível, a partir dessas conexões, entender as relações entre as diferentes variáveis envolvidas nos fenômenos. **(Colocar um exemplo aqui! Talvez já descrever, brevemente, a atividade do Google Maps)**
+	Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Com efeito, durante a busca por tais relações, é muito mais comum nos depararmos com aquelas que não podem ser consideradas funções. Portanto, faz-se necessário estar atento para que se possa extrair todas as potencialidades das verbalizações expressas pelos próprios estudantes.
+
+	**Referências Bibliográficas**
+
+	.. [Eisenberg-1992] Eisenberg T.: On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 153–174.
+    
+	.. [Jones-2006] Jones M.: Desmystifying Functions: The Historical and Pedagogical Difficulties of the Concept of Function. Rose-Hulman Undergraduate Math Journal, V. 7, p. 1-20.
+    
+	.. [Ponte-et-al-2008] PONTE J. P. & Matos A.: O estudo de relações funcionais e o desenvolvimento do conceito de variável em alunos do 8.º ano. RELIME, V. 11(2), p. 195-231.
+
+	.. [Ponte-1992] Ponte J. P.: The History of the concept of function and some educational implications The Mathematics Educator, v. 2, n. 3, p. 3-8.
+    
+	.. [Sierpinska-1992] Sierpinska A.: On understanding the notion of function. In Guershon Harel and Ed Du- binsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 25-58.
+    
+	.. [Ursini-et-al-2001] Ursini S. & Trigueros M.: A model for the uses of variable in elementary algebra. In M. van den Heuvel-Panhuizen (Ed.), Proceedings of the 25th Conference of the International Group for the Psychology of Mathematics Education, V. 4, p. 327-334. Utrecht: Utrecht University.
+
+.. _sec-funcoes:
+
+==========
+Explorando
+==========
 
 
+O que o nosso batimento cardíaco, um terremoto ou a variação de um ativo na bolsa de valores possuem em comum? Os batimentos cardíacos podem ser monitorados através de um sinal bioelétrico cujo gráfico é representado em um eletrocardiograma, as ondas sísmicas produzidas por um terremoto podem ser lidas a partir de um sismógrafo e as variações de valores das ações de uma empresa, percebidas ao longo do tempo, também podem ser facilmente visualizadas em um gráfico.
 
-No elevador
----------
+Assim como nos fenômenos descritos acima, muitas situações e decisões do dia a dia dependem do reconhecimento de uma relação entre duas grandezas e da análise de como a variação de uma delas influencia na variação da outra (distância x tempo; área x comprimento dos lados; absorção de um medicamento pelo organismo humano x tempo; etc.). O tema funções trata de uma especial relação entre grandezas e mostra como a matemática pode ajudar nessas decisões.
+
+As funções, de uma maneira geral, servem para conectar grandezas, medidas, conjuntos numéricos e até questões mais subjetivas que não podem ser quantificadas, como por exemplo as chamadas variáveis qualitativas estudadas pela Estatística (classe social, cor dos olhos, local de nascimento, gênero, etc.).
+
+Por essas características este é um dos conceitos centrais para a Matemática, e sua importância transcende os limites dessa ciência, sendo muito útil para descrever fenômenos em diversas áreas do conhecimento, não só nas mais próximas como a Física, a Química, ou as Engenharias, como também em Biologia, Geografia, Sociologia e no seu cotidiano, como ficará claro nas atividades a seguir.
+
+A noção de função não surgiu ao acaso na Matemática, ela é um instrumento matemático indispensável para o estudo quantitativo dos fenômenos naturais, tendo seu início nos estudos desenvolvidos por Kepler (1571-1630) e Galileu (1564-1642) sobre o movimento dos planetas e a queda dos corpos pela ação da força da gravidade, respectivamente.  Naquelas situações era preciso medir grandezas, identificar regularidades e obter relações que admitissem uma descrição matemática simples. 
+
+A aplicação da Matemática às mais diversas áreas é feita, na maioria das vezes, por meio da noção de modelo matemático. Um modelo matemático é uma representação de uma determinada situação ou fenômeno e usualmente é constituído por variáveis e as relações entre essas variáveis. Funções são fundamentais tanto na concepção quanto no estudo dos modelos matemáticos.
+
+.. _ativ-funcoes-pluviometria:
+
+Pluviometria no Sistema Cantareira
+----------------------------------
+
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
+   
    Levar o estudante a:
    
-   * Interpretar os dados da tabela fazendo a conexão com a situação apresentada.
-   * Perceber a relação entre as variáveis e resgatar a ideia de variação a partir da noção de proporcionalidade.
+   *  Interpretar gráfico cartesiano que represente relações unívocas entre grandezas.
+   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * A escolha dessa atividade como sendo a primeira se apoia no fato de que os estudantes têm familiaridade com a noção de proporcionalidade, que é explorada tanto em álgebra quanto em geometria, desde os anos iniciais do ensino fundamental.
-   * Deseja-se, entretanto, que os estudantes sempre levem em conta o contexto do problema. Por esse motivo, apresentamos na tabela uma sequência não-linear na variável independente: {14,10,6,2, **0** }.
+   * Os valores apresentados pelo gráfico são apenas estimativas. Caso haja interesse, visitando a página indicada na legenda é possível ter acesso aos valores exatos para cada mês passando o mouse sobre o gráfico, contudo, o período apresentado na atividade pode ser diferente do que você vai encontrar na página. Você pode modificar a atividade usando os dados atualizados.
+   * No item (b) estamos interessados no valor absoluto da diferença, não importando qual deles é maior que o outro.
+   * No item (d) auxilie seus estudantes na elaboração do texto, sinalizando que ele deve perceber o aumento ou a diminuição no nível de água armazenado no Sistema, relacionando com a variação da pluviometria.
    
-   
 
-Você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+As chuvas são a principal fonte de água para os reservatórios que abastecem as grandes cidades. Com base em dados passados, constrói-se uma média mensal esperada de chuvas. Em anos em que a chuva real é menor que o esperado considera-se que estão baixos os níveis de água nos Sistemas.
 
-.. table::
-   :widths: 3 3
-   :column-alignment: center center
+O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
 
-   +-------+--------------------+
-   | Andar | Tempo (s)          |
-   +=======+====================+
-   |   14  |          0         |
-   +-------+--------------------+
-   |   10  |          2         |
-   +-------+--------------------+
-   | 6     |          4         |
-   +-------+--------------------+
-   | 2     |          6         |
-   +-------+--------------------+
-   |0      |          ?         |
-   +-------+--------------------+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cantareira_chuva.png
+   :width: 900px
+   :align: center
+
+   disponível em: http://www.nivelaguasaopaulo.com/cantareira
+
+De acordo com o gráfico acima, responda:
+
+a) Em que mês e ano aproximadamente houve a maior incidência de chuvas? E a menor?
+b) Em que período(s) a diferença entre a chuva esperada e a real superou os 100 mm, aproximadamente? 
+c) É possível identificar os períodos de estiagem e de maior volume de chuva? Explique.
+d) Descreva o impacto sobre a variação do nível de água nos reservatórios do Sistema Cantareira em um período de estiagem e em um período de intensas chuvas.
 
 
-#. Em quanto tempo você chegará à recepeção? Explique sua resposta.
-#. Quantos andares o elevador desce a cada segundo? Explique sua resposta.
+.. admonition:: Resposta 
+
+   a) Maior e menor incidência de chuvas ocorreram, aproximadamente, em fevereiro de 2015 e abril de 2016, respectivamente.
+   b) Aproximadamente em dezembro de 2013, janeiro e fevereiro de 2014, janeiro e fevereiro de 2015 e junho de 2016.
+   c) Sim. Os períodos de estiagem são aqueles em que a pluviometria da chuva real (representada pela linha azul) é muito menor do que a da chuva esperada (representada pela linha vermelha), como ocorrido por exemplo no período de dezembro de 2013 à fevereiro de 2014. Os períodos com o maior volume de chuva são aqueles em que a pluviometria da chuva real é muito maior do que a da chuva esperada, como por exemplo os períodos de fevereiro de 2015 e junho de 2016.
+   d) Em um período de estiagem deverá ser observada uma diminução do nível de água nos reservatórios do Sistema Cantareira, em períodos de intensas chuvas deverá ocorrer um aumento do nível de água armazenada no Sistema.
+
+
+.. _ativ-funcoes-numeros-triangulares:
 
 Números triangulares
----------
+--------------------
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
    Levar o estudante a:
    
-   * Reconhecer um padrão geométrico e ser capaz de, a partir dele, inferir os próximos termos da sequência.
-   * Generalizar, ainda que em palavras, o procedimento observado.
+   * Reconhecer um padrão geométrico nos primeiros termos de uma sequência e ser capaz de, a partir dele, inferir os próximos termos da sequência.
+   * Generalizar, ainda que em palavras, o padrão observado.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * No item c) o esperado é que o estudante apresente o procedimento de maneira recursiva, isto é,  descreva como obter o `n`-ésimo número triangular a partir do anterior.
-   * Não é esperado, neste momento, que o estudante expresse a relação por meio da linguagem simbólica, escrevendo `T_n = T_{n-1}+n`, mas que seja matematicamente preciso em suas palavras, dizendo, por exemplo, "o `n`-ésimo arranjo é o arranjo anterior acrescido de mais uma fileira com `n`bolas".
-   * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Neste caso, você pode mostrá-los que essa maneira de descrever o procedimento é equivalente à recursiva.
-   * Você pode comentar com os seus estudantes sobre a existência de uma expressão algébrica que permite encontrar qualquer número triangular, que não depende de conhecer nenhum outro número anterior, a saber, `T_n=\frac{n(n+1)}{2}`. Pense na possibilidade de propor como desafio para eles encontrarem tal expressão. Esse tipo de ideia será retomado no estudo de progressões.
-
+   * Provavelmente os estudantes descreverão padrões diferentes, mesmo obtendo o mesmo “resultado” para o sexto, sétimo e oitavo números triangulares. Por exemplo, um estudante poderá dizer que constrói o triângulo “de cima para baixo”, outro “de baixo para cima” e outro faça uso do padrão recursivo ”basta acrescentar mais uma linha ao último triângulo construído”. Assim, a resposta ao ítem (b) não é única, e cabe aproveitar as diferentes respostas para ressaltar com a turma: os resultados são os mesmos com estes “padrões diferentes”? Por que? Por exemplo, “somar de cima para baixo” produz o mesmo resultado que “somar de baixo para cima”, pois a adição é comutativa. 
+   * Pela mesma razão apontada no ítem (b), a resposta ao ítem (c) não é única.
+   * Não é esperado, neste momento, que o estudante expresse a relação por meio da linguagem simbólica, escrevendo `T_n = T_{n-1}+n`, mas que seja matematicamente preciso em suas palavras, dizendo, por exemplo, "o `n`-ésimo arranjo é o arranjo anterior acrescido de mais uma fileira com `n` círculos".
+   * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Neste caso, você pode mostrá-los que essa maneira de descrever o procedimento é equivalente à recursiva. Não apenas testando exemplos, mas sim fazendo uso da propriedade associativa: seja qual for o `n`, `T_n=1+2+...+(n-1)+n=[1+2+...+(n-1)]+n=T_n-1+n`.
 
 
 .. tikz::
@@ -208,51 +181,76 @@ Números triangulares
   \draw (4.8,-0.1) node[anchor=north west] {$T_3=6$};
   \draw (8.7,-0.1) node[anchor=north west] {$T_4=10$};
   \draw (13.8,-0.1) node[anchor=north west] {$T_5=15$};
-	
-Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é a quantidade total de bolas necessárias para formar um triângulo equilátero cujo lado tem `n` bolas. Por exemplo, o quarto número triangular é `T_4=10`. 
+  
+Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é a quantidade total de círculos necessários para formar um triângulo equilátero cujo lado tem `n` círculos. Por exemplo, o quarto número triangular é `T_4=10`. 
 
-a) Determine, se possível, o 6º, o 7º e o 8º números triangulares.
+a) Determine o 6º, o 7º e o 8º números triangulares.
 
-b) Descreva o procedimento usado para encontrar `T_6, T_7` e `T_8` no item anterior.
+b) Descreva o procedimento que você usou para encontrar `T_6, T_7` e `T_8` no item anterior.
 
-c) Como você descreveria o procedimento que permite encontrar qualquer número triangular? Explique.
+c) Como você descreveria um procedimento que permite encontrar qualquer número triangular? Explique.
 
 
-Pluviometria no Sistema Cantareira
----------
+.. admonition:: Resposta 
 
+   a) `21`, `28` e `36`.
+   b) Uma resposta possível seria: `T_6` foi obtido adicionando `6` círculos a um dos lados do triângulo equilátero que corresponde à `T_5` e efetuando a soma dos círculos presentes nesse novo triângulo equilátero. De forma análoga `T_7` e `T_8` foram obtidos pela adição de `7` e `8` círculos a um dos lados dos triângulos equiláteros que correspondem à `T_6` e `T_7`, respectivamente.
+   c) Uma resposta possível seria: o número triangular `T_n` é obtido somando `n` ao número triangular anterior.
+
+.. _ativ-funcoes-arranha:
+
+Arranha-céu
+----------------
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   
    Levar o estudante a:
    
-   *  Interpretar gráfico cartesiano que represente relações unívocas entre grandezas.
-   * Construir argumentos a partir da análise de gráficos e/ou tabelas.
+   * Interpretar os dados da tabela fazendo a conexão com a situação apresentada.
+   * Perceber a relação entre as variáveis e resgatar a ideia de variação a partir da noção de proporcionalidade (taxa de variação constante).
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Os valores apresentados pelo gráfico são apenas estimativas. Caso haja interesse, visitando a página indicada na legenda é possível ter acesso aos valores exatos para cada mês passando o mouse sobre o gráfico, contudo, o período apresentado na atividade pode ser diferente do que você vai encontrar na página. Você pode modificar a atividade usando os dados atualizados.
-   * No item (b) estamos interessados no valor absoluto da diferença, não importando qual deles é maior que o outro.
-   * No item (d) auxilie seus estudantes na elaboração do texto, sinalizando que ele deve perceber o aumento ou a diminuição no nível de água armazenado no Sistema, relacionando com a variação da pluviometria.
-   
+   * A escolha dessa atividade se apoia no fato de que os estudantes têm familiaridade com a noção de proporcionalidade, que é explorada tanto em álgebra quanto em geometria, desde os anos iniciais do ensino fundamental.
+   * Deseja-se, entretanto, que os estudantes sempre levem em conta o contexto do problema. 
 
-As chuvas são a principal fonte de água para os reservatórios que abastecem as grandes cidades. Existe uma média mensal esperada de chuvas com base no passado. Em anos em que a chuva real é menor que o esperado podemos ter baixos níveis de água nos Sistemas.
-
-O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
-
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cantareira_chuva.png
-   :width: 900px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=burj-khalifa.jpeg
+   :width: 200px
    :align: center
 
-   disponível em: http://www.nivelaguasaopaulo.com/cantareira
 
-De acordo com o gráfico acima, responda:
+O Burj-Khalifa é um arranha-céu em Dubai, Emirados Árabes, com 829,84 m. Sua construção começou em 21 de setembro de 2004, e inaugurado oficialmente em 04 de janeiro de 2010. É tão alto que tem um elevador que chega a 64km/h, o mais rápido do mundo. Nesses 163 andares, tudo é motivo para recorde, a casa noturna mais alta do mundo, mesquita mais alta do mundo, restaurante, observatório, etc.
 
-a) Em que mês e ano houve a maior incidência de chuvas? E a menor?
-b) Em que período(s) a diferença entre a chuva esperada e a real superou os 100 mm, aproximadamente? 
-c) É possível identificar os períodos de estiagem e de maior volume de chuva? Explique.
-d) Escreva um parágrafo que descreva, ao longo do período indicado, um possível impacto sobre a variação do nível de água nos reservatórios do Sistema Cantareira.
+A tabela abaixo mostra diferentes alturas que correspondem a alguns andares de um prédio de 40 andares.
+
+.. table::
+   :widths: 3 3 3 3 3 3 3 3 3 3 3
+   :column-alignment: center center center center center center center center center center center
+
+   +-----------------+-------------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+   | Número do Andar | Garagem (0) |  1  |  2  |  3  |  4  | ... | 10  |...  |     |     |
+   +-----------------+-------------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+   | Altura (metros) | -1          |  3  |  7  |  11 |  15 | ... |     |...  |     | 91  |
+   +-----------------+-------------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+	
+Supondo que todas as alturas entre os andares do prédio sejam iguais e que a altura de um andar é medida a partir do nível da rua até o piso desse andar, responda: 
+
+#. Quantos metros há entre os andares?
+#. A que altura do chão está o 10º andar?
+#. O que significa o sinal negativo no andar da garagem?
+#. A que andar corresponde a altura de 91 m?
+#. Qual a altura total do prédio?
+#. Realize uma pesquisa na internet e descubra o maior arranha-céu brasileiro atualmente. Dividindo a altura total dele pela quantidade de andares, descubra qual a altura média dos andares.
+
+
+.. admonition:: Resposta 
+
+   a) `4` metros.
+   b) `39` metros.
+   c) Significa que a garagem está abaixo do nível da rua.
+   d) `23º` andar.
+   e) O `40º` andar está localizado a `159` metros do solo, e como cada andar possui altura de `4` metros, a altura do prédio é de `163` metros.
+
+
 
