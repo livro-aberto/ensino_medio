@@ -2,9 +2,13 @@
 Teorema de Tales
 ****************
 
-.. admonition:: Objetivos específicos
+.. admonition:: Habilidade do BNCC
 
     BNCC (EM12MT01) Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
+    
+    previsão 8 aulas de 50 minutos
+    
+    `FASE DE ELABORAÇÃO <https://github.com/livro-aberto/ensino_medio/issues/10>`_: 1 
    
 .. admonition:: Pré requisito
    
@@ -19,13 +23,13 @@ Teorema de Tales
    BNCC (EM15MT01) Compreender a estrutura lógica da geometria euclidiana e demonstrar alguns teoremas como soma dos ângulos internos de polígonos, teorema de Pitágoras, casos de semelhança e de congruência de triângulos.
 
 .. note::
-   * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas.
+   * Teorema de Tales: fazer a demonstração da parte comensurável, deixar a outra indicada e a ser resolvida pelo estudante em atividade para os alunos interessados. Outra opção é fazer a prova utilizando áreas. 
     
     Vídeo-aula sobre Teorema de Tales https://www.youtube.com/watch?v=ISt_RsQ2veU
 
 .. admonition:: Roteiro da aula de Teorema de Tales
    
-   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. 
+   Motivação - sugiro se inspirar naquela do livro do Harold Jacobs para o uso do teorema no contexto da barragem de Fundão. Enunciar e usar o teorema para calcular o comprimento da parte da barragem em contato com os dejetos. Importante que não seja apresentado o teorema, mas que ao final seja apresentado um modelo (problema) matemático que representa a situação real. A posição do ponto `B` pode ser calculada, sem GPS, utilizando uma mangueira de água.
    
    .. _fig-barrage_a_mao:
 
@@ -33,44 +37,27 @@ Teorema de Tales
       :width: 400px
       :align: center
 
-      A ser subsituída
+      A pasta pública do Dropbox foi encerrada.
    
    
-   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelas para que visualize e experimente de maneira livre [Visualização].   
+   #. Atividades em que o estudante experimente medições dos segmentos formados por diversas transversais em um feixe de retas paralelas para que visualize e experimente de maneira livre [Visualização].   (Simas)   
+   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  Importante que o enunciado seja concluído com as diversas configurações de figuras para o uso do Teo de Tales. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" ou "conjectura" por enquanto.   (Simas)
+   #. Explicar que o teorema de tales objetiva explicar os casos de semelhança. Então não podemos usar semelhança na justificativa. 
+   #. Atividade contendo uma prova guiada do teorema a partir de áreas. (Marcos Paulo)
+   #. Solução do problema da barragem utilizando o Teorema. (Marcos Paulo)
+   #. Atividade, contextualizada ou não, sobre a recíproca do teorema de Tales (enunciado e justificativa). Pode abordar a necessidade da hipótese.
+   #. Nos exercícios, ou em outro lugar, justificar para o estudante a inversão dos meios na igualdade do teorema. 
+   #. Incluir a prova do teorema da bissetriz nos exercícios pois a habilidade exige a prova de outros resultados. 
+   #. Atividade(s) em que se conclua o Teorema Fundamental das Semelhanças a partir do uso do Teorema de Tales.
+   #. Construção que leva à divisão de um segmento em partes proporcionais.
    
-   #. Na mesma ou em outra atividade levar o estudante a buscar padrões nestes experimentos [Analise]. O ideal é que ao final da atividade ele mesmo consiga enunciar que seja qual for a transversal traçada, as razões entre os segmentos serão as mesmas. Espera-se com isso que ele retenha o fato de que a transversal não importa, aquela razão é uma propriedade das paralelas.  
+   Sobrou do último roteiro.
+   
+  #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
       
-   #. Fechamento das atividades acima com um texto breve e objetivo deixando claro que temos uma hipótese a ser justificada e com o teorema enunciado claramente com todas as letras. Não chamar de teorema, podemos chamar de "afirmação" por enquanto. 
-   
-   #. Apresentar mais atividades que coloquem à prova o resultado enunciado pelos estudantes. Apresentar exemplos em que as paralelas não estão na "horizontal", com os segmentos formados nas transversais não consecutivos, com muitas paralelas e com as transversais intersectando-se entre as paralelas. Talvez o ideal é que o estudante estabeleça a igualdade dada no teorema para cada uma das figuras apresentadas.
-   
-    
-   
-      .. _fig-variedade_tales
+   **Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)**
 
-      .. figure:: https://dl.dropboxusercontent.com/u/2371346/IMG_20161216_191600865.jpg
-         :width: 400px
-         :align: center
-
-         refazer em tikz
-   
-   #. Atividades (ou observação) que levem o estudante a entender que se dois triângulos possuem mesma altura (respectivamente, mesma base), então a razão entre as áreas é a razão entre as bases (respectivamente, razão entre as alturas). Como este não é um objetivo da lição, o resultado pode ser apresentado aos estudantes, mas é fundamental que para eles esteja claro a validade do resultado ao final da atividade (ou observação).   
-   
-   #. Provar o Teorema de Tales no caso usado na motivação (ver figura) usando áreas.[melhorar]   
-   
-   #. Atividade que leve o estudante a generalizar o Teorema de Tales acima para a versão usual.
-   
-   #. Observação aritmética (`\frac{a}{b}=\frac{c}{d} \Rightarrow \frac{a + b}{b}=\frac{c + d}{d}`).
-   
-   #. Aplicações. Atividade longa sobre a divisão de segmentos em partes iguais usando régua e compasso (ou o Geogebra). Contendo a construção e a justificativa da construção para 2 partes iguais e lembrar do ponto médio de um segmento e da mediatriz, 3 partes iguais e lembrar do ponto de encontro das medianas de um triângulo, cinco partes iguais.
-   
-   #. Aplicação. Atividade para dado um triângulo, construir outros triângulos com mesma forma, mas com lados medindo, metade, um terço e um quinto. Justificar usando o Teorema de Tales e relacionar com semelhança (tema do próximo capítulo) e com o Teorema da Base Média.
-   
-   #. Atividades contextualizadas (ruas paralelas cortadas por uma transversal, etc.).
-   
-   Reunião de 13 de janeiro de 2017 na UFF (Humberto, Wanderley, Marcos Paulo, Simas, Edmilson, Rodrigo, Helano)
-
-   #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. Opções: 1. Fazer Tales e os casos de semelhança de triângulos na Unidade Curricular II ou fazer apenas Tales na Unidade Curricular V. Decidimos pela opção 1.
+   #. Problema motivador utilizando barragem de Mariana. Usar a barragem com platô na parte de cima. Motivo: Se ao invés do platô, tivéssemos um triângulo, o problema seria resolvido por semelhança... pois segundo a BNCC, semelhança é assunto do 9º ano. Por outro lado, Tales não pode ser usado para justificar os casos de semelhança aqui pois estas justificativas são apresentadas na Unidade Curricular V. O enunciado do teorema de tales não é uma novidade porque semelhança já é conhecido... Isso favorece a fragmentação do conteúdo, visto que não poderemos relacionar Tales com semelhança. Opções: 1. Fazer Tales e os casos de semelhança de triângulos na Unidade Curricular II ou fazer apenas Tales na Unidade Curricular V. Decidimos pela opção 1. Neste caso, precisaremos explicar logo de início ao estudante que o objetivo deste teorema é explicar os casos de semelhança de triângulos.
    #. Enunciado utilizando o triângulo e uma paralela a um dos lados.
    #. Reforçar a necessidade da hipótese,
    #. Diferentes exibições das figuras, especialmente com a interseção das transversais entre as paralelas (onde aparece a maior quantidade de erros). Lembrar o professor dos riscos de se criar figuras prototípicas na cabeça do aluno.
@@ -79,7 +66,7 @@ Teorema de Tales
    #. Vamos provar o teorema de Tales! Sim, provavelmente a prova será por áreas. Espera-se que seja uma atividade tipo prova assistida.
    #. Incluir a recíproca do teorema de Tales e atividades a respeito.
    #. Observar para o professor que o teorema de Tales vale mesmo que os dois segmentos sobre a mesma transversal não sejam consecutivos (como faz o Gelson Iezzi de 2013).
-   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também?
+   #. Segundo Haruna: Compreender o teorema de Tales significa percebê-lo pelos três constructos: conservação das abscissas, conservação da relação das projeções e dilatação. Pra gente vai ser isso também? [Não]
    #. Usaremos vetores quando necessário nos capítulos seguintes? Homotetia, por exemplo.
    #. Cuidado para que os números irracionais apareçam de maneira natural nos exemplos. 
    #. Ordem de abordagem. Teorema de Tales, Semelhança, Homotetia simples (sem ser vista como transformação), Transformações no plano incluindo homotetia e talvez projeção sobre uma reta paralelamente à outra.
@@ -111,21 +98,53 @@ Desse modo, o comprimento `PB` pode ser calculado a partir das distâncias `AP`,
 .. _ativ-descobrindo_tales:
 
 Atividade: Visualização e análise de padrões
-------------------------------
+--------------------------------------------
 
-Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a), b), c) e d) para cada uma das figuras.
+
+.. admonition:: Para o professor
+
+  Objetivos da atividades: Descobrir a partir de investigações práticas o enunciado do Teorema de Tales. 
+  
+  **Recomendações para o desenvolvimento da atividade:** Esta é a atividade mais importante deste capítulo, é importante garantir que os estudantes farão o melhor aproveitamento da mesma. 
+  Por isso, sugerimos que o professor circule pela sala enquanto os estudantes realizam os itens a) e b) de modo a evitar mal-entendidos.
+  Estes itens devem permanecer no nível da observação.
+  O item c) inicia o nível de análise. 
+  Os estudantes terão dificuldade em registrar que a razão `\overline{AB}/\overline{BC}` é constante. 
+  Acreditamos que eles dirão `\overline{AB}=\overline{BC}` na Figura I,  `\overline{AB}=2\overline{BC}` na Figura II e que `\overline{AB}=3\left(\frac{\overline{BC}}{2}\right)` na Figura III ou algo parecido. 
+  Vale a pena estimular seus estudantes a registrar por escrito aquilo que obtiveram em cada uma das figuras (como ilustrado aqui, por exemplo) e tentar obter uma única afirmação que sirva para as três experiências realizadas. 
+  É fundamental que os estudantes consigam registrar por escrito que o valor da razão é uma propriedade das paralelas e independe da transversal tomada.
+   
+Copie as figuras I, II e III em seu caderno preservando as distâncias entre as retas. Resolva cada um dos itens a), b), c) e d) para cada uma das figuras. 
 
 .. _fig-tales_tres_paralelas:
 
-.. figure:: https://dl.dropboxusercontent.com/u/2371346/tres_paralelas.jpg
-   :width: 450px
-   :align: center
+.. tikz:: 
 
-   Refazer em tikz
+   \node at (.5,0) {Figura I};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-2)  node[above left] {$s$}--(10,-2);
+   \draw (0,-3)  node[above left] {$t$}--(10,-3);
 
-#. Trace uma reta $u$ transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
+   \begin{scope}[yshift={-133}]
+   \node at (.5,0) {Figura II};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-3)  node[above left] {$s$}--(10,-3);
+   \draw (0,-4)  node[above left] {$t$}--(10,-4);
 
-#. Calcule as distâncias `\overline{AB}` e `\overline{BC}` na reta traçada por você. Use as retas traçadas por 3 de seus colegas para preencher uma tabela como a que está a seguir para cada figura.
+  
+  \begin{scope}[yshift={-160}]
+   \node at (.5,0) {Figura III};
+   \draw (0,-1)  node[above left] {$r$} --(10,-1);
+   \draw (0,-4)  node[above left] {$s$}--(10,-4);
+   \draw (0,-6)  node[above left] {$t$}--(10,-6);
+
+  \end{scope}
+  
+  \end{scope}
+
+#. Trace uma reta `u` transversal a `r`, `s` e `t` e marque os pontos `\{A\} = r \cap u`, `\{B\} = s \cap u` e `\{C\} = t \cap u`.
+
+#. Calcule as distâncias `\overline{AB}` e `\overline{BC}` na reta traçada por você com precisão de milímetros. Use as retas traçadas por 3 de seus colegas para preencher uma tabela como a que está a seguir para cada figura.
 
    .. table:: 
       :widths: 1 1 1 1 1
@@ -139,15 +158,55 @@ Copie as figuras (I), (II) e (III) em seu caderno e resolva cada um dos itens a)
       | `\overline{BC}` |           |           |           |           |
       +-----------------+-----------+-----------+-----------+-----------+
 
-#. Analisando cada uma das tabelas preenchidas obtenha uma relação entre `\overline{AB}` e `\overline{BC}` para cada um dos cenários (I), (II) e (III), que sirva para todas as medições. 
+#. Analisando cada uma das tabelas preenchidas, obtenha uma relação entre `\overline{AB}` e `\overline{BC}` que sirva para todas as medições (razão). 
 
-#. Complete a sentença a seguir a seguir de modo a resumir uma conclusão dos itens anteriores.
+#. Complete a sentença a seguir com as palavras apresentadas para registrar uma conclusão dos itens anteriores.
 
-"Quando três retas paralelas são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________ da reta tomada." (melhorar ou repensar)
+(paralelas, concorrentes, perpendiculares, transversal, constante, razão, diferença, adição)
+
+"Quando três retas ____________ são fixadas, a ___________ entre os segmentos formados por uma reta ___________________ às três retas é ______________________." 
+
+Atividade eletrônica: Experimentação do Teorema de Tales no celular
+----------------------------------------------------------------------------
+
+No link https://www.geogebra.org/m/m76NnYwz, você terá a oportunidade de realizar a investigação da atividade acima de maneira rápida e com mais posições para as posições das paralelas. 
+O importante é que você consiga registrar de maneira clara e genérica o resultado das suas experiências. 
+
+.. _fig-qr-code-tales:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1491321853&w=370&h=370&tok=6e235c&media=qr-code-tales.png
+   :width: 100px
+   :align: center
+
+   Para acessar facilmente do celular ou tablet
+
+Retorne ao problema do início deste capítulo e resolva-o utilizando a figura que aparece no seu celular. Para isso será necessário escolher uma posição adequada para as retas e pontos no aplicativo e utilizar o resultado que você descreveu nesta atividade.
 
 Teorema de Tales
-------------
+----------------
 
-.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por área? Incluir também exemplos característicos.
+.. note:: Enunciado e prova da versão acima do Teorema de Tales. A prova será por áreas em atividade com prova assistida.
+
+**Uma reta paralela a (e diferente de) um dos lados de um triângulo, determina nos outros dois lados segmentos proporcionais.**
+
+Afirmação equivalente: Dado um triângulo `ABC` e pontos `X \in AB` e `Y \in AC`. Se `XY` é paralelo a `BC`  então 
+
+.. math::
+
+   \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}.
 
 
+.. tikz:: Teorema de Tales
+
+   \draw (0,0)--(1,3)--(5,0)--(0,0);
+   \draw (0,1)--(5.3,1);
+   \node at (0,-.3) {$B$};
+   \node at (.9,3.3) {$A$};
+   \node at (5,-.3) {$C$};
+   \node at (.1,1.3) {$X$};
+   \node at (3.8,1.3) {$Y$};
+   \node at (8.5,1.5) {$XY \parallel BC \Rightarrow \dfrac{\overline{AX}}{\overline{XB}} = \dfrac{\overline{AY}}{\overline{YC}}$.};
+   
+   
+Atividade: Justificativa do Teorema de Tales
+--------------------------------------------

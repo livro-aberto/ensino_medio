@@ -1,153 +1,464 @@
-***********
-Representação algébrica de vetores no plano
-***********
+.. _sec-vetores-algebrica:
 
-Nos exemplos e atividades anteriores você deve ter observado que quando fixamos uma malha em um plano, um vetor fica representado por dois números, `x` e `y`, que são chamados as *coordenadas do vetor* naquela malha.
-Assim, na situação acima os vetores `\overrightarrow{AB}` e `\overrightarrow{XY}` têm coordenadas `x=2` e `y=3`. Isto significa que este vetor é do tipo 2 para a direita e 3 para cima seguindo as linhas da malha.
+***********************************
+Vetores do ponto de vista algébrico
+***********************************
 
-.. admonition:: Notação 
+.. glossary::
+
+   origem e extremidade de um vetor dado
+   multiplicação por escalar
+   soma ou adição de vetores
+   vetores paralelos
+   vetores unitários
+   vetores perpendiculares
+
+Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. 
+Esta representação possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática). 
+Além disso ela permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática).
+
+
+.. _ativ-vetores-vetor-malha:
+
+Atividade: vetores numa malha quadriculada
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha.
    
-   Usaremos a notação 
+   **Recomendações e sugestões:**
+   no problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
+
+Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
+
+.. tikz:: 
+
+   \draw[step=.5cm,gray,very thin] (-0.05,-0.05) grid (2.05,2.05);
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);
+   \fill (1,1) circle (0.05) node[below right]{$A$};
+   \node at (.25,-.25){$\vec{u}$};
+   \node at (-.25,.25){$\vec{v}$};   
    
-   .. math::
+#. Represente o vetor `3\vec{u}` na malha.
+#. Represente o vetor `-\vec{v}` com origem no ponto `A`.
+#. Represente o vetor `\vec{u}+\vec{v}` na malha com origem no ponto `A`.
+#. Represente o vetor `3\vec{u} + 4\vec{v}`.
 
-      \overrightarrow{v} = \binom{x}{y} 
+.. #. Represente o vetor `4\vec{v}` na malha.
+
+.. admonition:: Resposta 
+
+   texto da resposta.
    
-   para representar o vetor do tipo `x` para a direita e `y` para cima.
+
+.. _ativ-vetores-combinacao:
+
+Atividade: expressão algébrica dado vetor
+-----------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** 
    
-Por exemplo, o vetor `\overrightarrow{AB} = \binom{2}{3}` e os vetores da :ref:`my-ativ-barcos` são todos iguais a `\overrightarrow{AA'} = \binom{3}{4}`.
+   #. usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha, e 
+   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
+   
+   
+   **Recomendações e sugestões:**
 
-Atividade: Um par ordenado para um vetor
------------
+Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
 
-Determine as coordenadas dos vetores na malha abaixo.
+.. tikz:: 
 
-.. tikz:: Dado o vetor, obter a sua representação algébrica
+   \begin{scope}[scale=1.2]
+   \draw[step=.5cm,gray,very thin] (-0.05,-0.05) grid (2.05,2.55);
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);
+   %\fill (1,1) circle (0.05) node[below right]{$A$};
+   \node at (.25,-.25){$\vec{u}$};
+   \node at (-.25,.25){$\vec{v}$};
+   
+   \draw[-latex, thick, blue] (0,0) -- (0.5,1) node[below left]{$\vec{a}$};
+   \draw[-latex, thick, blue] (0,1.5) -- (1.5,2.5) node[below left]{$\vec{b}$};
+   \draw[-latex, thick, blue] (1.5,1.5) -- (1,1.5) node[below right]{$\vec{c}$};
+   \draw[-latex, thick, blue] (1.5,0) -- (1,.5) node[below]{$\vec{d}$};
+   \draw[-latex, thick, blue] (2,1) -- (1.5,.5) node[right]{$\vec{e}$};
+   \end{scope}
 
-	\draw[step=1cm,gray,very thin] (0,5) grid (8,8);
-	\draw[-latex, thick, red] (0,5) -- (2,8);
-    \node at (1,6.8) {$\overrightarrow{a}$};
-    \draw[-latex, thick, red] (2,6) -- (3,6);
-    \node at (2.5,6.2) {$\overrightarrow{b}$};
-    \draw[-latex, thick, red] (4,6) -- (4,8);
-    \node at (4.2,7) {$\overrightarrow{c}$};
-    \draw[-latex, thick, red] (5,6) -- (6,8);
-    \node at (5.4,7.2) {$\overrightarrow{d}$};
-    \draw[-latex, thick, red] (8,8) -- (6,5);
-    \node at (6.9,6.7) {$\overrightarrow{e}$};
+.. admonition:: Resposta 
+
+   texto da resposta
+
+Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
+
+.. tikz:: Dois vetores de direções diferentes determinam uma malha.
+   
+    [>=latex,
+      x={(1cm, 0cm)},
+      y={(1cm, 1cm)},
+    ]
+      \def\xmin{0}
+      \def\xmax{3}
+      \def\ymin{0}
+      \def\ymax{3}
+      \draw[very thin, gray]
+        \foreach \x in {\xmin, ..., \xmax} {
+          (\x, \ymin) -- (\x, \ymax)
+        }
+        \foreach \y in {\ymin, ..., \ymax} {
+          (\xmin, \y) -- (\xmax, \y)
+        };
+	\draw[-latex, thick, red] (0,0) -- (1,0);
+    \node at (.8,-.3) {$\vec{u}$};
+    \draw[-latex, thick, red] (0,0) -- (0,1);
+    \node at (-.3,.8) {$\vec{v}$};
+    \draw[-latex, thick] (0,0) -- (2,3);
+    \node at (1.5,2.9) {$\vec{w}$};
     
-    
-Atividade: Um vetor para um par ordenado
-----------
+    \node[draw,text width=4cm,minimum height=2cm,minimum width=3cm] at 
+     (6.7,1.5) {Temos $\vec{w}=2\vec{u} + 3 \vec{v}$. Dizemos que $x=2$ e $y=3$ são as coordenadas de $\vec{w}$ com relação aos vetores $\vec{u}$ e $\vec{v}$.};
 
-Para cada par ordenado abaixo determine uma representação geométrica do vetor na malha apresentada.
+    %\node at (6.5,1.5) {};
 
-a)
+Embora uma discussão mais geral seja útil para estudantes da área de exatas, nos restringiremos neste livro ao caso em que os vetores `\vec{u}` e `\vec{v}` são ambos unitários (isto é, têm módulos iguais a 1) e são perpendiculares (isto significa que eles estão sobre retas perpendiculares).
 
+.. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
 
-Atividade
------
+Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Os demais podem ser descritos como três de `\vec{u}` e quatro de `\vec{v}`, por exemplo. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
 
-Represente o vetor deslocamento usando coordenadas sabendo que em cada uma das situações o movimento saiu de `A`, passou em `B`, depois em `C` e terminou em `D`.
-Considere o lado de um quadradinho da malha como sendo uma unidade.
+Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
+
+.. _ativ-cap-titulo-da-atividade:
+
+Atividade: coordenadas do vetor posição
+---------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
+   
+   **Recomendações e sugestões:**
+
+Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)`, faça o que se pede: 
 
 .. tikz::
-       
-       \node at (-.5,1.3) {a)};
-       \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1.51);
-      \fill[blue] (0,0) circle (.08);
-      \node[right] at (0,0) {$A$};
-      \fill[blue] (.5,1.5) circle (.08);
-      \node[right] at (0.5,1.5) {$B$};
-      \fill[blue] (1.5,-1) circle (.08);
-      \node[right] at (1.5,-1) {$C$};
-      \fill[blue] (2,1) circle (.08);
-      \node[right] at (2,1) {$D$};
-      \draw[-latex, thick, red] (0,0) -- (.5,1.5);
-      \draw[-latex, thick, red] (.5,1.5) -- (1.5,-1);
-      \draw[-latex, thick, red] (1.5,-1) -- (2,1);
-      
-      \begin{scope}[shift={(4.5cm,.25)}]
-      \node at (-.5,1.05) {b)};
-      \draw[step=.5cm, color=gray, very thin] (0,-1.01) grid (2.01,1);
-      \fill[blue] (0,0) circle (.08);
-      \node[above] at (0,0) {$B$};
-      \fill[blue] (1,0) circle (.08);
-      \node[above] at (1,0) {$A$};
-      \fill[blue] (2,0) circle (.08);
-      \node[above] at (2,0) {$C$};
-      \fill[blue] (1,-1) circle (.08);
-      \node[right] at (1,-1) {$D$};
-      
-      \begin{scope}[shift={(4.5cm,-.5)}]
-      \node at (-.5,1.55) {c)};
-      \draw[step=.5cm, color=gray, very thin] (0,-0.51) grid (2.01,1.51);
-      \fill[blue] (0,0) circle (.08);
-      \node[below] at (0,0) {$A=D$};
-      \fill[blue] (2,0) circle (.08);
-      \node[below] at (2,0) {$B$};
-      \fill[blue] (1,1.5) circle (.08);
-      \node[right] at (1,1.5) {$C$};
-      \end{scope}
-      \end{scope}
-    
-      
-Atividade
-------
-Outro uso importante dos vetores na Física é a representação de forças. Alguns exemplos são ilustrados nos itens a seguir:
+
+   \begin{scope}[scale=1.3]
+   \foreach \x in {-2,-1.5,...,2} {
+    \draw[very thin, gray] (\x,-2.05)--(\x,2.05);
+    \draw[very thin, gray] (-2.05,\x)--(2.05,\x);};
+   \draw[-latex,very thick, black] (-2.05,0) -- (2.05,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2.05) -- (0,2.05) node[below right]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (.5,0) circle (0.05) node[below]{$X$};
+   \fill (0,.5) circle (0.05) node[right]{$Y$};
+   %\node at (.25,-.25){$\overrightarrow{OX}$};
+   %\node at (-.25,.25){$\overrightarrow{OY}$}; 
+   \draw[-latex, thick, red] (0,0) -- (.5,0);
+   \draw[-latex, thick, red] (0,0) -- (0,.5);   
+   \end{scope}
+
+#. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas.
+#. Faça o mesmo para um ponto `P=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
+
+ 
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
+Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OP}`, para algum ponto `P` do plano.  Na atividade acima você deve ter observado que dado um ponto `P=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OP}` são também `x` e `y` (pois `\overrightarrow{OP} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
+
+.. admonition:: Notação
    
-   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
-            :align: center
-            :width: 200px
-            
-            foto: Elke Wetzig
-            
+   Para representar as :index:`coordenadas de um vetor <pair: vetor;coordenadas>` `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   
+   .. math::
+   
+      \vec{v} = (x,y) 
+   
+   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `P` tal que `\vec{v}=\overrightarrow{OP}`.
+
+Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
+
+Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda. Este vetor é o mesmo representado na figura da direita. Em coordenadas temos: 
+
+.. math::
+
+  \vec{v} = 3\overrightarrow{OX} + 4\overrightarrow{OY}\quad \text{ ou } \quad \vec{v} = (3,4).
+  
+.. tikz::
+
+   \begin{scope}[scale=.7]
+   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
+   \draw[-latex, very thick, red]  (0,0)--(1,0);
+   \draw[-latex, very thick, red] (0,0)-- (0,1);
+   \draw[-latex, very thick] (0,0) -- (3,4);
+   \draw[dashed, thin] (3,4)--(3,0);
+   \node at (3.3,2) {4};
+   \node at (.7,-.7){$\overrightarrow{OX}$};
+   \node at (-.7,.7){$\overrightarrow{OY}$};
+   \node[above] at (1.5,2){$\vec{v}$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   
+   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
+   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
+   
+   \begin{scope}[xshift=7.5cm]
+   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
+   \draw[-latex, very thick, red]  (0,0)--(1,0);
+   \draw[-latex, very thick, red] (0,0)-- (0,1);
+   
+   \begin{scope}[xshift=40,yshift=20]
+   \draw[-latex, very thick] (-2,1) -- (1,5);
+   \draw[dashed, thin] (1,1)--(1,5);
+   \draw[dashed, thin] (-2,1)--(1,1);
+   \node at (-.5,.7){3};
+   \node at (1.3,3) {4};
+   \node[above] at (-.5,3){$\vec{v}$};
+   \end{scope}
+   
+   \node at (.7,-.7){$\overrightarrow{OX}$};
+   \node at (-.7,.7){$\overrightarrow{OY}$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   
+   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
+   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
+   \end{scope}
+   \end{scope}
+
+Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andaremos 3 na direção do vetor `\overrightarrow{OX}` e 4 na direção do vetor `\overrightarrow{OY}` para atingir a extremidade de `\vec{v}`.
+
+.. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
+
+De posse das coordenadas de um vetor, faremos alguns comentários:
+
+#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
+
+   .. math::
+
+      |\vec{v}|=x^2+y^2`, 
+
+   **FIGURA**
+
+#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua (nova) extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
+      :width: 250px
+      :align: center
+      
+      `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
+ 
+#. dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`). Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
+
    .. tikz::
 
-      \node at (-1.5,-.3) {(I)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (160:1.5) circle (.08);
-      \node[above] at (160:1.5) {\small Grampo 1};
-      \fill[blue] (20:1.5) circle (.08);
-      \node[above] at (20:1.5) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (160:1.5);
-      \draw[very thick, red] (0,0) -- (20:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
-      
-      
-      \begin{scope}[xshift=5cm]
-      \node at (-1.5,-.3) {(II)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (135:1.5) circle (.08);
-      \node[above] at (135:1.5) {\small Grampo 1};
-      \fill[blue] (45:1.5) circle (.08);
-      \node[above] at (45:1.5) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (135:1.5);
-      \draw[very thick, red] (0,0) -- (45:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
-      
-      
-      \begin{scope}[xshift=5cm]
-      \node at (-1.5,-.3) {(III)};
-      \fill[blue] (0,0) circle (.08);
-      \fill[blue] (120:1.5) circle (.08);
-      \node[above] at (130:1.7) {\small Grampo 1};
-      \fill[blue] (60:1.5) circle (.08);
-      \node[above] at (50:1.7) {\small Grampo 2};
-      \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escalador};
-      \draw[very thick, red] (0,0) -- (120:1.5);
-      \draw[very thick, red] (0,0) -- (60:1.5);
-      \draw[very thick, red] (0,0) -- (270:1.5);
+      \begin{scope}[scale=1.3]
+      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+      \fill (0,0) circle (0.05) node[below left]{$O$};
+      \draw[-latex, very thick, red]  (-1,2)--(0,0);
+      \draw[-latex, very thick, red] (0,0)-- (1,.5);
+      \draw[-latex, very thick] (-1,2) -- (1,.5);
+      \node at (.3,1.4){$\overrightarrow{AB}$};
+      \node at (-.9,.8){$-\overrightarrow{OA}$};
+      \node at (.4,.5){$\overrightarrow{OB}$};
       \end{scope}
-      \end{scope}
-      
-#. A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximo ao topo da rocha. Em qual das situações a seguir a corda fica mais tensionada próximo aos grampos?   
-#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
-#. Justifique a sua escolha do item a) utilizando vetores.
 
-.. Fim edição Fabio e início de Wanderley
+
+.. Em algum lugar deveríamos dizer ao professor que "alguns autores escrevem `\overrightarrow{AB} = B-A`, preferimos evitar esta abordagem porque seria necessário esclarecer o que significa esta diferença entre pontos do plano."
+
+.. admonition:: Pausa para reflexão
+
+   Se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
+      :width: 400px
+      :align: center
+
+      As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
+   
+   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
+ 
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
+      :width: 400px
+      :align: center
+
+      O vetor posição **depende** da posição da origem do sistema de coordenadas
+   
+.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
+
+.. index:: ! translação
+
+*A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
+   :width: 400px
+   :align: center
+
+
+.. _ativ-vetores-translacao:
+
+Atividade: translação num plano
+-------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+   
+   #. reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão, e
+   #. descrever equações vetoriais em termos de coordenadas.
+   
+   **Recomendações e sugestões:**
+
+
+Parte I.
+
+A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec{u}=(4,0)`, resultando no triângulo `A'B'C'`.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294818&w=500&h=281&tok=fb1c9c&media=translacao2.jpg
+   :width: 400px
+   :align: center
+
+   Translação de um triângulo 
+
+#. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
+#. Considere um ponto genérico `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
+
+Parte II.
+
+A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-2)`, resultando no triângulo `A''B''C''`.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=translacao3.jpg
+   :width: 400px
+   :align: center
+
+   Figura errada, mas similar à correta.
+
+#. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
+#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
+
+Parte III.
+
+Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` então translada-se este último triângulo por `\vec{v}`.
+
+#. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
+#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. Escreva uma expressão vetorial (isto é, sem coordenadas) para o ponto `Q`.
+#. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
+Como você deve ter observado através da atividade anterior, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
+   :width: 200px
+   :align: center
+
+   Vetor soma
+
+.. admonition:: Exemplo 
+
+   O quadrilátero `OABC` da figura é um paralelogramo. Sabendo que as coordenadas dos vértices são `O=(0,0)`, `A=(2,0)`, `B=(3,1)` e `C = (1,1)`, calcule as coordenadas do ponto `M` de encontro das diagonais do paralelogramo.
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=soma-paralelogramo.jpg
+      :width: 300px
+      :align: center
+
+      `\overrightarrow{OB} = \overrightarrow{OM} + \overrightarrow{OM} = 2\overrightarrow{OM}`
+
+   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
+
+.. index:: ! homotetia
+
+Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
+
+Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos de um triângulo e de um quadrado com razões 2 e 1/3, respectivamente.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1.jpg
+   :width: 400px
+   :align: center
+
+   Ao lado desta incluir uma análoga, mas de razão 1/3
+
+.. _ativ-vetores-homotetia:
+
+Atividade: homotetia
+--------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** reconhecer que `r(x,y)=(rx,ry)`. 
+   
+   **Recomendações e sugestões:**
+
+
+Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
+   :width: 400px
+   :align: center
+
+   Coordenadas de `A'`, correspondente de `A` pela homotetia
+
+#. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
+#. Calcule as coordenadas dos pontos `X'` e `Y'`.
+#. Se `A'` é o correspondente de `A` pela homotetia, então `\overrightarrow{OA'}=3\overrightarrow{OA}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
+
+.. admonition:: Resposta 
+
+   texto da resposta.
+
+.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
+
+A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
+
+Conforme prometido no início da seção passaremos agora a discorrer sobre as principais propriedades das operações de adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem obter todas elas a partir de propriedades análogas para os números reais.
+
+**Propriedades comentadas das operações com vetores**
+
+A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`: posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`, 
+
+**FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
+
+o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
+Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
+Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
+
+Seguindo o estabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos. 
+
+Estas e outras questões nos forçam a listar as propriedades a seguir.
+Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
+O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade (trabalhar com a igualdade, pressupõe a validade da igualdade e, por isso, não serve para *justificar* a igualdade).
+Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades.
+
+Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `r` e `s`, valem as seguintes afirmações:
+
+#. `\vec{u} + \vec{v} = \vec{v} + \vec{u}`,
+#. `(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})`,
+#. `r(s\vec{u})=(rs)\vec{u}`,
+#. `r(\vec{u}+\vec{v})= r\vec{u} +r \vec{v}`,
+#. `(r+s)\vec{u} = r\vec{u} + s\vec{u}`.
+
+Justificativa do item a): considere um sistema de coordenadas no plano, então os vetores ficam representados por pares ordenados, digamos `\vec{u}=(x_1,y_1)` e `\vec{v}=(x_2,y_2)`. Então 
+
+.. math::
+
+   \vec{u} + \vec{v} = (x_1,y_1) + (x_2,y_2) = (x_1 + x_2,y_1+y_2) = (x_2 + x_1, y_2 + y_1) = (x_2,y_2) + (x_1,y_1) =  \vec{v} + \vec{u}.
+
+.. admonition:: Pausa para reflexão
+
+   `0\vec{u}=\vec{0}`.
+
+.. Precisamos introduzir aqui forças em situações típicas da física.
+

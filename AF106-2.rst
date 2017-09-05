@@ -1,8 +1,7 @@
 Gráfico
 =======
 
-As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, um gráfico pode causar maior impacto àqueles que o leem. 
-
+As palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem, por exemplo, um gráfico, um maior impacto pode ser causado àqueles que o leem.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=infograficos.png
    :width: 600px
@@ -24,16 +23,16 @@ Ação promocional
    
    Levar o estudante a:
    
-   * Perceber as vantagens da representação gráfica em detrimento da tabela. 
+   * Perceber vantagens da representação gráfica em detrimento da tabela. 
    * Construir argumentos a partir da análise de gráficos e/ou tabelas.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * Observe para seus alunos que, mesmo apresentando um panorama mais geral do comportamento, o gráfico não substitui a tabela.
-   * Para os itens de análise do crescimento e decrescimento pode ser útil conectar os pontos com uma linha poligonal, contudo é importante estar atento de que os segmentos que conectam os pontos consecutivos não são dados do problema, uma vez que o domínio dessa função é um conjunto finito.
+   * Para os itens de análise do crescimento e decrescimento pode ser útil conectar os pontos com uma linha poligonal, contudo é importante atentar para o fato de os segmentos que conectam os pontos consecutivos não são dados do problema, uma vez que o domínio dessa função é um conjunto discreto.
    * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum meme, evento negativo associado à empresa, dentre outros.
 
-Uma empresa resolve lançar uma ação promocional na internet através de uma *hashtag* e um mês depois o CEO dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais por dia durante aquele mês. O funcionário resolveu apresentar o dados das seguintes duas formas:
+Uma empresa resolve lançar uma ação promocional na internet através de uma *hashtag* e um mês depois o CEO (*Chief Executive Officer*) dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais por dia durante aquele mês. O funcionário resolveu apresentar os dados das seguintes duas formas:
 
 .. table::
    :widths: 1 3
@@ -114,7 +113,7 @@ Uma empresa resolve lançar uma ação promocional na internet através de uma *
 #. Faça o mesmo com o decrescimento.
 #. Escreva um parágrafo explicando o comportamento global do gráfico, apontando possíveis causas para as variações observadas.
 
-Uma função, essencialmente, relaciona duas grandezas ou variáveis, de forma que, uma vez estabelecida a maneira de associá-las, obtemos pares `(x,y)` em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que o par é apresentado é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são os elementos do produto cartesiano entre dois conjuntos, como definimos a seguir.
+Uma função, essencialmente, relaciona duas ou mais grandezas ou variáveis, de forma que, uma vez estabelecida a maneira de associá-las, obtemos pares `(x,y)` em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que o par é apresentado é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são os elementos do produto cartesiano entre dois conjuntos, como definimos a seguir.
  
 .. admonition:: Definição 
 
@@ -136,13 +135,13 @@ Caso desejássemos formar o produto de `B` por `A`, obteríamos outro conjunto, 
 
    B\times A=\{(1,p),(1,q),(2,p),(2,q),(3,p),(3,q),(4,p),(4,q)\}. 
 
-Nesse exemplo foi possível enumerar todas as possibilidades para o produto cartesiano por causa da particularidade de termos os dois conjuntos finitos. No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou algum subconjunto dele) não conseguiremos enumerar da mesma maneira. Contudo, utilizando a representação dos números reais por meio de uma reta podemos representar o produto cartesiano `\mathbb{R}\times \mathbb{R}=\{(a,b) \; ; \; a,b\in \mathbb{R}\}` de uma maneira especial, que você já conhece, chamada **plano cartesiano**: para isto desenhamos duas retas ortogonais que se cruzam em suas origens conforme a figura abaixo.
+Nesse exemplo foi possível enumerar todas as possibilidades para o produto cartesiano por causa da particularidade de termos os dois conjuntos finitos. No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou subconjuntos dele) pode ocorrer que não seja possível enumerar da mesma maneira. Contudo, utilizando a representação dos números reais por meio de uma reta podemos representar o produto cartesiano `\mathbb{R}\times \mathbb{R}=\{(a,b) \; ; \; a,b\in \mathbb{R}\}` de uma maneira especial, que você já conhece, chamada **plano cartesiano**: para isto desenhamos duas retas ortogonais que se cruzam em suas origens conforme a figura abaixo.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=plano_cartesiano.png
    :width: 400px
    :align: center
-   
-Cada uma das retas é conhecida como um **eixo** do plano cartesiano. No eixo horizontal, conhecido como **eixo das abscissas**, estão localizadas as primeiras coordenadas de cada par ordenado, sendo os números positivos marcados à direita da origem e os negativos à esquerda. No eixo vertical, chamado de **eixo das ordenadas**, estão marcados as segundas coordenadas de cada par, sendo os números positivos colocados acima da origem e os negativos abaixo.
+
+Cada uma das retas é graduada, sendo por isso chamada um **eixo** do plano cartesiano. No eixo horizontal, conhecido como **eixo das abscissas**, estão localizadas as primeiras coordenadas de cada par ordenado, sendo os números positivos marcados à direita da origem e os negativos à esquerda. No eixo vertical, chamado de **eixo das ordenadas**, estão marcadas as segundas coordenadas de cada par, sendo os números positivos colocados acima da origem e os negativos abaixo.
 
 Atirando flechas (OBMEP)
 ------------------------------
@@ -160,7 +159,7 @@ Atirando flechas (OBMEP)
    * Esta atividade tem apenas o caráter de revisão. Caso perceba a necessidade, explore mais atividades desse tipo.
 
 
-Manoel testa sua pontaria lançando cinco flechas que atingiram o alvo nos pontos `A, B, C, D` e `E`, de coordenadas `A = (1,-1), B = (2,5; 1), C = (-1, 4), D = (-4, -4)` e `E=(6, 5)`.
+Manoel testa sua pontaria lançando cinco flechas que atingiram o alvo nos pontos `A, B, C, D` e `E`, de coordenadas `A = (1,-1), B = (2{,}5, 1), C = (-1, 4), D = (-4, -4)` e `E=(6, 5)`.
 
 A tabela mostra quantos pontos se ganha quando a flecha acerta um ponto dentro de cada uma das três regiões, conforme mostra a figura.
 
@@ -265,7 +264,7 @@ Do mapa para o gráfico
    Levar o estudante a:
    
    * Trabalhar com conjuntos não numéricos.
-   * Estender a definição para o conjuntos dos números reais positivos, a partir de uma tabela.
+   * Estender o domínio da função para o conjuntos dos números reais positivos, a partir de uma tabela.
    * Estimular a criatividade na hora de representar graficamente um conjunto de dados.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -273,7 +272,7 @@ Do mapa para o gráfico
    * No item (a) a ideia é que o estudante escreva por extenso o conjunto dos pares ordenados: `\{(0,11;` Verde `),(0,12 ;` Amarelo `), ...\}`.
    * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores no eixo vertical. No último item, uma representação possível é um retângulo colorido como a escala apresentada no item (a) da Atividade "Colorindo o Mapa", em que se indique os tempos onde ocorre a mudança de cor. Nesse caso chame a atenção para que decidam as cores do extremos (bola aberta ou fechada).
    * Estimule a criatividade nas representações.
-   * Caso, alguma estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal, chame a atenção para o fato de que essa relação deixa de ser função.
+   * Caso algum estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal, chame a atenção para o fato de que essa relação deixa de ser função.
    
 #. A partir das colunas *Tempo* e *Cor* da atividade "Colorindo o Mapa", escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
 #. Represente graficamente este conjunto de pares ordenados.
@@ -281,7 +280,7 @@ Do mapa para o gráfico
 #. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
 
 
-Voltando ao elevador
+
 ------------------------------
 .. admonition:: Para o professor
 
@@ -293,64 +292,62 @@ Voltando ao elevador
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Chame a atenção para a importância do contexto na representação correta do gráfico. É importante que seus estudantes tenham a ideia equivocada de que sempre devemos "ligar os pontos".
+   * Chame a atenção para a importância do contexto na representação correta do gráfico. É possível que seus estudantes tenham a ideia equivocada de que sempre devemos "ligar os pontos".
+   * Ao observar que os pontos estão alinhados construa junto com seus estudantes uma justificativa para este fato.
   
-
-Na atividade "No elevador" apresentamos uma situação em que você está hospedado em um hotel no décimo quarto andar e vai usar o elevador para descer até a recepção que fica no andar térreo, numerado com o zero no elevador. A tabela abaixo mostra quanto tempo (em segundos) você gasta para chegar em um determinado andar.
+Na atividade "100 metros rasos" é apresentada uma tabela com os tempos gastos por um atleta iniciante em um dos seus treinos.
 
 .. table::
    :widths: 3 3
    :column-alignment: center center
 
 
-   +-------+--------------------+
-   | Andar | Tempo (s)          |
-   +=======+====================+
-   |   14  |          0         |
-   +-------+--------------------+
-   |   10  |          2         |
-   +-------+--------------------+
-   | 6     |          4         |
-   +-------+--------------------+
-   | 2     |          6         |
-   +-------+--------------------+
-   |0      |          ?         |
-   +-------+--------------------+
+   +-----------+----------------+
+   | Tempo (s) | Distância (m)  |
+   +===========+================+
+   |   5       |         25     |
+   +-----------+----------------+
+   |   10      |         50     |
+   +-----------+----------------+
+   |   15      |         75     |
+   +-----------+----------------+
+   |   20      |         100    |
+   +-----------+----------------+
 
-Anteriormente observamos que podemos considerar o andar como função do tempo. A cada tempo está associado um único andar e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_1.png
-   :width: 400px
+Anteriormente observamos que podemos considerar a distância como função do tempo. A cada tempo indicado na tabela está associado uma única distância e o intervalo de tempo que é o domínio dessa função, é dado pelo contexto do problema. Vamos construir juntos o gráfico dessa função. Começaremos localizando no plano cartesiano abaixo os pontos correspondentes aos pares ordenados dados pela tabela acima.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida1.png
+   :width: 800px
    :align: center
    
-Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão os andares. Suponha que desejamos determinar o tempo associado a cada um dos andares, qual seria uma boa estratégia para resolvermos essa questão utilizando a figura?
+Veja que no eixo das abscissas estão representados os tempos e no eixo das ordenadas estão as distâncias. Utilizando a figura, qual seria uma boa estratégia para determinar o tempo decorrido a cada 10 metros?
 
-Primeiramente observamos que os pontos estão alinhados (você sabe justificar essa afirmação?) e portanto é uma tarefa simples encontrar os pontos procurados. Para isso estamos supondo que o movimento do elevador seja uniforme, isto é, ele desce a uma velocidade constante.
+Como estamos supondo que a velocidade é constante e observando que os pontos marcados estão alinhados, podemos admitir que os pontos que correspondem às distâncias procuradas também estão sobre a mesma linha.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_2.png
-   :width: 400px
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida2.png
+   :width: 800px
    :align: center
    
    
-#. A partir da figura, determine em quanto tempo o elevador chegará à recepeção.
-#. Na figura anterior estão representados os pontos que correspondem aos andares `11, 12` e `13`. Determine os tempos associados a eles.
-#. Represente graficamente e determine as coordenadas dos pares ordenados que estão sobre a reta associados aos demais andares.
+#. A partir da figura, determine o tempo gasto para percorrer os primeiros `10` metros.
+#. Na figura anterior estão representados os pontos que correspondem às distâncias `10` e `20` metros. Localize sobre a reta os pontos que correspondem:
 
-Agora que já temos os pontos marcados, vamos traçar o gráfico que representa a situação descrita na atividade.
+  #. Ao tempo de `17` segundos.
+  #. A distância de `95` metros.
+  
+#. Você já deve ter percebido a relação entre a distância percorrida pelo atleta e o tempo. Caso não tenha percebido reuna todos os dados obtidos até agora em uma tabela e obtenha um expressão `s(t)` que nos permita calcular a distância `s` para qualquer tempo `t` entre `0` e `20` segundos.
 
-Talvez a sua primeira ideia tenha sido ligar os pontos, preenchendo a reta pontilhada. Mas vamos analisar a situação com mais atenção.
+A figura abaixo representa a reunião dos pontos da forma `(t,s(t))`, para `t` variando no intervalo `[0,20]` e é denominado gráfico da função `s`.
 
-No instante `0` o elevador está no décimo quarto andar, ponto `(0,14)` da figura e após `0,5s` ele chega no andar de número `13`, ponto `(0,5;13)`. Como não existem andares fracionários, vamos convencionar que o elevador só chega em um determinado andar quando ele para naquele andar. Sendo assim, no intervalo `[0;0,5)` o elevador ainda está no décimo quarto andar, isto é, todo `0\leqslant x<0,5` terá ordenada `14`.
 
-O mesmo comportamento se repete para os valores de `x` no intervalo `[0,5;1)` que terão ordenada `13` e assim sucessivamente. A parte do gráfico correpondente ao intervalo `[0,1)` está representada na figura abaixo.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=graf_elevador_3.png
-   :width: 400px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corrida3.png
+   :width: 800px
    :align: center
 
-#. Faça o gráfico para o intervalo `[0,7]`.
- 
 
+De um modo geral temos a seguinte definição:
 
 .. admonition:: Definição 
 
@@ -384,7 +381,7 @@ Associe cada uma das situações apresentadas a seguir a um dos gráficos dados 
    :align: center
 
 
-`(I)` Após um concerto houve um grande silêncio. Então uma pessoa na platéia começou a aplaudir. Gradualmente, as pessoas a sua volta também começaram a apludir de forma que rapidamente todos estavam aplaudindo e se manifestando.
+`(I)` Após um concerto houve um grande silêncio. Então uma pessoa na platéia começou a aplaudir. Gradualmente, as pessoas à sua volta também começaram a apludir de forma que rapidamente todos estavam aplaudindo e se manifestando.
 
 `(II)` Se o preço cobrado pelo ingresso de um cinema for muito baixo, seu prorietário irá perder dinheiro. Por outro lado, se o valor cobrado for muito alto, poucas pessoas irão pagar e novamente o proprietário vai perder dinheiro. Um cinema deve portanto cobrar um preço moderado por seu ingresso de forma que seja lucrativo.
 
@@ -422,7 +419,7 @@ Exercícios
 Aprofundamento
 ---------------
 
-`1.`  Uma chapa metálica quadrada é posicionada num sistema de coordenadas cartesiano de forma que ocupe a região dada pelo produto cartesiano `[2,10]\times [0,8]`, isto é, a região formada pelos pares ordenados `(x,y)` em que `2\leqslant x\leqslant 10` e `0\leqslant y\leqslant 8`, como mostra a figura abaixo.
+`1.`  Uma chapa metálica quadrada é posicionada num sistema de coordenadas cartesianas de forma que ocupe a região dada pelo produto cartesiano `[2,10]\times [0,8]`, isto é, a região formada pelos pares ordenados `(x,y)` em que `2\leqslant x\leqslant 10` e `0\leqslant y\leqslant 8`, como mostra a figura abaixo.
 
 
 .. tikz::

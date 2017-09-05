@@ -1,20 +1,153 @@
+.. _sec-funcoes-exercicios:
+
 Exercícios
 ---------
 
-`1.` Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
+`1.` Assim como os números triangulares (ver :ref:`ativ-funcoes-numeros-triangulares`), fala-se nos números quadrados perfeitos, pentagonais, hexagonais, inspirados, respectivamente, pelas sequências abaixo.
+
+
+.. _fig-figurados:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=figurados.png
+   :width: 600px
+   :align: center
+
+
+
+#. Para cada uma destas sequências, represente as próximas duas figuras;
+
+#. Escreva uma sequência de números que possa estar associada a cada sequência de figuras;
+
+#. Descreva um possível padrão de formação de cada uma dessas sequências de números. 
+
+
+`2.` Observe as duas sequências que se seguem:
+
+.. math::
+
+   1, 1, 2, 3, 5, 8, 13, \dots
+
+
+.. math::
+
+   1000, 100, 10, \dots
+
+#. Descreva, em palavras ou em linguagem simbólica, a regra que você percebe em cada uma das sequências apresentadas.
+
+#. Baseado na regra que você identificou no item anterior, descubra qual é o 20º termo de cada uma das sequências anteriores. 
+
+`3.` Cada prisma obtém-se empilhando cubos do mesmo tamanho, brancos e cinzas, segundo uma regra sugerida na figura.
+
+
+.. _fig-prismas:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=prismas.png
+   :width: 400px
+   :align: center
+
+#. Descreva, em palavras ou em linguagem simbólica, a regra sugerida pela figura.
+
+#. Para construir o prisma 4 desta sequência, segundo o padrão por você descrito, quantos cubos cinzas são necessários?
+
+#. Justifique a afirmação: “O número total de cubos cinzas necessários para construir qualquer prisma desta sequência é par.”
+
+#. Segundo o padrão por você descrito, quantos cubos cinzas terá o prisma 200?
+
+#. Explicite uma expressão numérica que represente o número de cubos cinzas do Prisma `n` em função de `n`, isto é, uma expressão numérica que sirva para qualquer prisma da sequência.
+
+#. Justifique novamente a afirmação do item (c), agora a partir da expressão que você explicitou no ítem anterior.
+
+#. Se `x` representasse o número total de cubos (brancos e cinzas) de um prisma desta sequência, qual das expressões seguintes poderia representar o número de cubos cinzas desse prisma. Justifique sua escolha. 
+
+
+.. math::
+
+   \square \ x-8 \quad \quad \square \ 2x-4 \quad \quad \square \ x-4 \quad \quad \square \ 4x
+
+`4.` Ao final de um treino para a prova de 100 metros rasos, uma corredora recebe de seu treinador a seguinte tabela com as marcas intermediárias da sua melhor corrida.
+
+.. table::
+   :widths: 3 3
+   :column-alignment: center center
+
+
+   +-----------+----------------+
+   | Tempo (s) | Distância (m)  |
+   +===========+================+
+   |   5       |         25     |
+   +-----------+----------------+
+   |   10      |         50     |
+   +-----------+----------------+
+   |   15      |         75     |
+   +-----------+----------------+
+   |   20      |         100    |
+   +-----------+----------------+
+ 
+
+Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda as seguintes perguntas.
+
+#. Quanto tempo ela gastou para percorrer os primeiros 10 metros?
+#. Pensando em uma estratégia para melhorar a preformance da atleta, seu treinador resolve detalhar a tabela com os tempos correspondentes a cada 10 metros. Construa essa tabela.
+
+
+`5.` Em Janeiro, o Vitor, depois de ter vindo do barbeiro, decidiu estudar o comprimento do seu cabelo, registando todos os meses a sua medida. O gráfico seguinte representa o crescimento do cabelo do Vitor, desde o mês de Janeiro (mês 0), até ao mês de Junho (mês 5).
+
+
+.. _fig-cabelo:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cabelo.png
+   :width: 600px
+   :align: center
+
+
+.. table::
+   :widths: 3 5 5 3 3 3 3
+   :column-alignment: left center center center center center center  
+
+   +-------------+-------------+---------------+-----------+-----------+----------+-----------+
+   | Mês         | Janeiro (0) | Fevereiro (1) | Março (2) | Abril (3) | Maio (4) | Junho (5) |
+   +-------------+-------------+---------------+-----------+-----------+----------+-----------+
+   | Comprimento |             |     4,4       |     5,8   |     7,2   |     8,6  |           |
+   +-------------+-------------+---------------+-----------+-----------+----------+-----------+ 
+
+#. Complete a tabela acima supondo que Vitor não cortou o cabelo até julho.
+
+#. Em cada mês, quantos centímetros cresceu o cabelo do Vitor?
+
+#. Escreva uma expressão geral que represente o Comprimento (C) do cabelo do Vitor, em função do número de meses (M) passados após o corte de cabelo inicial.
+
+#. Se o cabelo do Vitor tivesse crescido 19,8 cm, quantos meses teriam passado desde o corte inicial de cabelo? Justifique. 
+
+
+`6.` Hoje de manhã a Ana saiu de casa e dirigiu-se para a escola. Fez uma parte do percurso andando e a outra parte correndo. O gráfico que se segue mostra a distância percorrida pela Ana, em função do tempo que decorreu desde o instante em que ela saiu de casa até ao instante em que chegou à escola.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=caminhada_corrida.png
+   :width: 350px
+   :align: center
+
+Apresentam-se, em seguida, quatro afirmações. De acordo com o gráfico apenas uma é verdadeira. Assinale-a com X, explicando por que motivo cada uma das restantes opções é falsa.
+
+(    ) A Ana percorreu metade da distância andando e a outra metade correndo.
+
+(    ) A Ana percorreu maior distância andando do que correndo.
+
+(    ) A Ana esteve mais tempo correndo do que andando.
+
+(    ) A Ana iniciou o percurso correndo e terminou-o andando. 
+
+
+`7.` Considere a função `g:\mathbb{R}\to\mathbb{R}\quad ; \quad g(x)=9-x^2`.
 
 #. Coloque em ordem crescente os números `g(\sqrt{2})`, `g(\sqrt{5})` e  `g(\sqrt{10})`.
 #. Determine todos os possíveis valores de `x` do domínio que têm imagem igual a 8.
-#. Podemos trocar o domínio e o contradomínio da função `g` para `\mathbb{Z}`? Por que?
 #. Existe algum `x\in \mathbb{R}` cuja imagem é igual a 10? Por que?
-#. Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=f(x)` ?
+#. Que condição deve satisfazer um número real `b` para que seja a imagem de algum número real `x`, isto é, `b=g(x)` ?
 
-`2.*` Considere o processo que associa cada número natural à soma de seus algarismos
+`8.*` Considere o processo que associa *cada número natural à soma de seus algarismos*.
 
-#. O que obtemos a partir do número 13717?
-#. Proponha um número cujo resultado do processo seja 22.
-#. Quantos números entre 1 e 10000 nos levam ao resultado 3?
+#. Por meio do processo descrito acima o número natural `13717` será associado a que número?
+#. Proponha um número cujo resultado do processo seja `22`.
+#. Quantos números entre `1` e `10000` nos levam ao resultado `3`?
 #. É possível obter qualquer número natural como resultado desse processo?
-
-`3.` As expressões `f(n)=n^2` e `a_{n+1}=a_n+n+1` geram a mesma função com domínio igual ao conjunto dos números naturais.
 
