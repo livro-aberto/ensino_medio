@@ -1,10 +1,11 @@
-********
-Volume 1 - Coleção do Ensino Médio - Livro Aberto de Matemática
-********
+************
+Ensino Médio
+************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :glob: 
+   
+   *
 
-   index_geometria
-   index_algebra_e_funcoes
-   index_prob_e_estatistica
+

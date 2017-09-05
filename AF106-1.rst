@@ -1,34 +1,63 @@
-O conceito de função
+.. _sec-funcao-organizando-ideias:
+
+Organizando as ideias
 ====================
 
-Vamos tentar identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
+Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados e que estão sendo relacionados dois a dois, que chamaremos aqui de conjuntos `A` e `B`. Além disso, em cada uma, temos uma forma clara de relacionar **cada** elemento do conjunto `A` a um **único** elemento do conjunto `B`.
 
-Na atividade "No elevador" temos o conjunto `A` dos tempos e o conjunto `B` dos andares. A cada tempo está associado um único andar.
+Na atividade "Pluviometria no Sistema Cantareira", `A` é um conjunto de meses dos anos e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
 
-Na atividade "Números triangulares" temos o conjunto `A` dos números naturais representando a quantidade `n` de bolas no lado do triângulo e o conjunto `B`, também dos naturais, representando o número total `T_n` de bolas no triângulo. A cada `n` está associado o número triangular `T_n`.
+Na atividade "Números triangulares" temos o conjunto `A` das posições dos termos na sequência e o conjunto `B`, também dos naturais, representando o número total `T_n` de círculos no triângulo. A cada `n` está associado o número triangular `T_n`.
 
-Na atividade "Pluviometria no Sistema Cantareira", `A` é o conjunto dos meses-ano e `B` é o conjunto dos números reais que representam os possíveis valores para o índice pluviométrico do Sistema Cantareira em milímetros. A linha azul ilustra a relação que a cada mês-ano associa o índice de chuva real naquele período. Já a linha vermelha ilustra a relação que a cada mês-ano associa o índice de chuva esperada naquele período.
+Por fim, na atividade "Arranha-céu” temos o conjunto `A` dos andares do prédio e o conjunto `B` das alturas. A cada andar está associada uma altura.
 
-Todas essas relações mencionadas anteriormentedos são exemplos de funções. O que elas têm em comum é o que caracteriza esse conceito. Dessa maneira, chegamos à definição de função:
-
+Nas três situações apresentadas, cada elemento do conjunto `A` está associado a um único elemento do conjunto `B`. Relações que têm essa característica são chamadas de funções.
 
 .. admonition:: Definição 
 
-   Dados dois conjuntos `A` e `B` não vazios, dizemos que uma relação `f` entre os elementos de `A` e os elementos de `B` é uma *função* de `A` em `B`, se cada elemento do conjunto `A` está relacionado a um único elemento do conjunto `B`.
-   Assim, para cada `x\in A` existe um único `y\in B` relacionado a `x`, e por isso escrevemos `y=f(x)` e dizemos que `y` é a imagem de `x` pela função `f`.
-
-O conjunto `A` é chamado *domínio* da função enquanto o conjunto `B` é o *contradomínio*. É comun denotarmos uma função pelas letras `f`, `g`, `h`, etc.
+   Dizemos que uma relação `f` entre os elementos de dois conjuntos, `A` e `B`, é uma **função** de `A` em `B` quando *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
    
-  
-.. admonition:: Notação 
+   .. math::
 
-    Denotamos por `f:A\to B` (lê-se `f` de `A` em `B`) a função cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
+      \begin{eqnarray*}
+      f:A \to B \\
+      x \mapsto f(x)
+      \end{eqnarray*}
+   
+   Assim, para cada `x\in A` deve existir um único elemento em `B` que esteja relacionado a `x`. Esse elemento é denotado por `f(x)` e chamado de imagem do elemento `x` pela função `f`.
 
-Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto a determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao.png
+      :width: 400px
+      :align: center
 
+O conjunto de partida `A` é chamado de **domínio** da função, o conjunto de chegada `B` é o **contradomínio** e o subconjunto de `B` formado por todas as possíveis imagens é o conjunto imagem da função `f`.
+
+
+.. _notacao:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=funcao1.png
+   :width: 350px
+   :align: center
+
+Por causa da unicidade na escolha da imagem `y`, costuma-se dizer que esta variável depende da variável `x`, uma vez que conhecido o valor de `x` podemos determinar o valor de `y`. Dessa maneira, chamamos `x \in A` de “variável independente” e `y \in B` de “variável dependente”. 
+
+**[Para a equipe de design: colocar um destaque para o parágrafo abaixo]**
+
+Perceba que na definição está implícito que todo elemento `x\in A` precisa ter uma imagem `y=f(x)\in B`, sem haver ambiguidade na determinação desta. Em algumas relações pode haver dúvida quanto à determinação da imagem de alguns elementos, por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois é ambígua: nem todas as pessoas têm telefone e algumas pessoas têm mais de um número de telefone.
+
+.. admonition:: Pausa Para Reflexão
+
+    Junto com seus colegas, pensem um pouco sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas como funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando sempre os conjuntos domínio e contradomínio de cada uma delas.
+
+.. _sec-funcao-organizando-ideias:
+
+Praticando o assunto
+====================
+
+.. _ativ-funcoes-colorindo-o-mapa:
 
 Colorindo o mapa
----------
+----------------
 
 
 .. admonition:: Para o professor
@@ -43,10 +72,12 @@ Colorindo o mapa
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * Nem todos os estudantes vão usar o mesmo critério para distribuição das cores. Incentive-os a usarem as quatro cores e, no momento da discussão do item (b), chame a atenção para o fato de não haver uma única resposta correta para o item (a).
+   * Deixamos a seu critério a escolha da unidade para a velocidade média. Os valores obtidos em `km/min` podem causar certa estranheza, uma vez que na maioria das situações cotidianas a velocidade é apresentada em `km/h`.
    * Caso haja tempo hábil, aproveite para fazer uma breve discussão sobre como a Matemática está "escondida" em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia.
-A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de Paris em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direto, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
+
+A imagem abaixo, que foi retirada do aplicativo Google Maps®, exibe o trânsito de uma região da cidade de São Paulo em um determinado dia e hora. Perceba a quantidade de informações que podem ser extraídas apenas a partir da observação dos elementos presentes nela: as cores nas vias informam a velocidade média dos veículos que trafegam por elas conforme a legenda na parte inferior, a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito, e tantas outras. Gráficos como este são produzidos a partir do reconhecimento das relações entre as diversas informações coletadas.
         
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=maps.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=sao_paulo.png
      :width: 800px
      :align: center
    
@@ -57,25 +88,25 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
     :column-alignment: center center center center
     
     +------------------+-------------+-------+--------------------------+
-    |  Período do Dia  |  Tempo (h)  |  Cor  |  Velocidade Média (km/h) |
+    |  Período do Dia  |  Tempo (min)|  Cor  |  Velocidade Média (km/h) |
     +==================+=============+=======+==========================+
-    |    5:00 - 7:00   |     0,11    |       |                          |
+    |    5:00 - 7:00   |     6       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |    7:00 - 9:00   |     0,13    |       |                          |
+    |    7:00 - 9:00   |     8       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   9:00 - 11:00   |     0,16    |       |                          |
+    |   9:00 - 11:00   |     9       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   11:00 - 13:00  |     0,12    |       |                          |
+    |   11:00 - 13:00  |     7       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   13:00 - 15:00  |     0,12    |       |                          |
+    |   13:00 - 15:00  |     7       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   15:00 - 17:00  |     0,14    |       |                          |
+    |   15:00 - 17:00  |     8       |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   17:00 - 19:00  |     0,27    |       |                          |
+    |   17:00 - 19:00  |     16      |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   19:00 - 21:00  |     0,20    |       |                          |
+    |   19:00 - 21:00  |     12      |       |                          |
     +------------------+-------------+-------+--------------------------+
-    |   21:00 - 23:00  |     0,11    |       |                          |
+    |   21:00 - 23:00  |     6       |       |                          |
     +------------------+-------------+-------+--------------------------+  
 
 
@@ -85,19 +116,44 @@ a) Utilizando a escala de cores abaixo, complete a terceira coluna da tabela aci
 			:width: 250px
 			:align: center
          
-b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 7 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
+b) Você deve ter percebido que precisou associar uma mesma cor para tempos de travessia diferentes. Isso se deu pelo fato de haver somente 4 cores disponíveis e pelo menos 6 tempos diferentes. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas.
 
 c) Sabendo que a ponte tem 8km de extensão e que a velocidade média é calculada dividindo a distância percorrida pelo tempo gasto no percurso, complete a quarta coluna da tabela acima com a velocidade média aproximada registrada em cada um dos períodos do dia.
 
 d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 
+.. admonition:: Resposta 
+
+   a) Uma resposta possível seria: associar a cor verde aos tempos de `6` e `7` minutos, a cor laranja aos tempos de `8` e `9` minutos, vermelha ao tempo de `12` minutos e a cor vinho ao tempo de `16` minutos.
+   
+   b) A resposta deste item depende das escolhas feitas pelos estudantes no item anterior.
+   
+   c) Os valores das velocidades médias serão, pela ordem em que aparecem na tabela: `1,33` km/min, `1,00` km/min, `0,89` km/min, `1,14` km/min, `1,14` km/min, `1,00` km/min, `0,5` km/min, `0,67` km/min e `1,33` km/min.
+   
+   d) Não. Como a velocidade média é calculada efetuando-se a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão sempre resultar em velocidades médias diferentes.
+
 Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relações entre os dados, por exemplo, para cada tempo de travessia podemos associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor estão associados diferentes tempos e diferentes velocidades médias.
+
+.. _ativ-funcoes-e-funcao:
 
 É função?
 ---------
 
-	Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{0,11;0,12;0,13;0,14;0,16;0,20;0,27\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+   
+   * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade Colorindo o Mapa.
+   * Distinguir quais relações são univocamente determinadas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta é a oportunidade para reforçar os principais pontos envolvidos na definição de função que foi apresentada na seção organizando as ideias.
+
+Dentre as relações que podem ser feitas entre os conjuntos de dados da atividade anterior, determine quais são funções. Considere os conjuntos nomeados da seguinte maneira, `A=\{6, 7, 8, 9, 12, 16\}`, `B=\{` Verde, Amarelo, Vermelho, Vinho `\}` e `C` é o conjunto das velocidades médias:
 
 .. table:: 
     :widths: 3 3 10
@@ -119,8 +175,34 @@ Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relaç
     | De C em B           |                   |                        |
     +---------------------+-------------------+------------------------+
 
+
+.. admonition:: Resposta 
+
+   Apenas as relações de `B` em `A` e de `B` em `C` não são funções. A primeira porque a uma mesma cor estão associados diferentes tempos, e a segunda porque a uma mesma cor estão associadas velocidades médias diferentes.
+
+Quando consideramos uma relação qualquer é comum a representarmos através de pares ordenados, onde os elementos do primeiro conjunto aparece na primeira posição do par e os elementos do segundo conjunto aparecem na segunda posição. 
+
+Por exemplo, se consideramos a relação do conjunto dos números reais em si mesmo que a cada número real associa o seu quadrado, podemos dizer que os pares ordenados `(1,1), (2,4), (\sqrt{3},3), (-\pi,\pi^2)` são alguns pares desta relação.
+
+Como as funções são um tipo especial de relação, a mesma ideia se estende para as funções. Os pares ordenados de uma função `f:A\to B` serão sempre da forma `(x,y)` em que `x\in A` e `y=f(x) \in B`. 
+
+
+.. _ativ-funcoes-nao-e-funcao:
+
 Não é função!
 ---------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Perceber que a relação dada não está univocamente determinada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Esta é a oportunidade para reforçar os principais pontos envolvidos na definição de função que foi apresentada na seção organizando as ideias.
 
 Considere a relação no conjunto dos números inteiros que associa dois elementos `a` e `b`, nesta ordem, se `b` for múltiplo de `a`. Sendo assim, `(2,4)` é um par ordenado desta relação, pois `4` é múltiplo de `2`, mas `(4,2)` não é.
 
@@ -129,44 +211,260 @@ Considere a relação no conjunto dos números inteiros que associa dois element
 #. Dê um outro exemplo, não necessariamente numérico, de uma ou mais relações que não sejam funções. 
 
 
-Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, a forma de associação entre os elementos, em muitos casos, é dada por uma expressão algébrica. Vejamos alguns exemplos.
+.. admonition:: Resposta 
 
-Enchendo o cone
-------------------------------
+   a) `(2,8)`, `(3,9)`, `(1,1)` e `(5,10)` pertencem a relação.
+   b) Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o inteiro `3` está associado à `12` e `15`. Portanto a relação não pode ser função.
+   c) Resposta livre.
 
-`1.` O reservatório representado abaixo tem a forma de um cone de raio 5m e altura 5m. O volume `V` em metros cúbicos de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Por isso, daqui por diante, quando estivermos considerando funções numéricas, o contradomínio será igual a `\mathbb{R}`. 
+
+Frequentemente, mas nem sempre, a forma de associação entre os elementos é dada por uma expressão analítica. Vejamos alguns exemplos.
+
+`(I)` O perímetro `P` e a área `A` de um quadrado podem ser dados em função do seu lado `\ell`.
+ 	
+.. math::
+
+   P: ]0,+\infty[\to \mathbb{R} \quad ; \quad P(\ell)=4\ell
+ 
+.. math::
+
+   A: ]0,+\infty[\to \mathbb{R} \quad ; \quad A(\ell)=\ell^2
+
+A variável `\ell` pode assumir qualquer valor dentro do intervalo `]0,+\infty[` que é o domínio da função `P` . Se quisermos saber o valor do perímetro do quadrado de lado 5cm, basta substituirmos `\ell` por 5 na expressão de  `P(\ell)`. Ficamos assim com
+ 	
+    
+.. math::
+
+   P(\textbf{5})=4\times \textbf{5} = 20\mathrm{cm}.
+
+
+A área do quadrado de lado 9cm é 
+ 	
+.. math::
+
+   A(\textbf{9})=\textbf{9}^2=81cm^2. 
+ 	
+`(II)` A fórmula de Lorentz já foi muito utilizada pelos médicos para o cálculo do "peso ideal" `p`, em kg, em função da altura `h`, em centímetros, do paciente.
+ 	
+.. math::
+
+   p:]0,300[\to \mathbb{R}\quad ; \quad p(h)=h-100-\dfrac{h-150}{k}
+
+em que `k` vale 4 para homens e vale 2 para mulheres.
+ 	
+Que tal usar a fórmula acima para calcular o seu peso ideal?
+
+`(III)` Imagine que um objeto é solto, a partir do repouso, de uma altura de `10` metros e percorre uma trajetória vertical em queda livre. Da Física, sabemos que sua altura `h` medida a partir do solo, em função do tempo `t`, quando desprezamos a resistência do ar, é dada por
+ 	
+.. math::
+
+   h:[0,+\infty[\to \mathbb{R}\quad ; \quad h(t)=10-\dfrac{gt^2}{2},
+ 	
+em que `g` representa a aceleração da gravidade.
+ 	
+Fazer a variável tempo assumir o valor `t=0` na expressão de `h(t)` significa que estamos medindo a altura no início da contagem do tempo, ou seja a altura inicial do corpo. Nesse caso teremos
+ 	
+.. math::
+
+   h(\textbf{0})=10-\dfrac{g\ \textbf{0}^2}{2}=10.
+
+ 	
+*Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que devemos fazer?* Como a medição é feita a partir do solo, dizer que o objeto chegou ao solo é o mesmo que dizer que sua altura é igual a 0. Portanto, precisamos descobrir o valor da variável `t`, de maneira que `h(t)=0`. A partir da expressão de `h(t)`, considerando `g` aproximadamente igual a `10 m/s^2` obtemos `10-5t^2=0`, donde concluímos que  `t=\sqrt{2}`.
+
+.. _ativ-praticando-notacao:
+
+Praticando a notação
+-------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Fazer uso da notação de função.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Muitos estudantes cometem erros relacionados com o uso da notação funcional. É comum, por exemplo, se confundirem ao determinar `f(-2)` para `f(x)=x^2`, fazendo `f(-2)=-2^2=-4`.
+
+Utilize as expressões analíticas dadas abaixo para encontrar cada um dos valores na tabela. Em seguida faça as operações indicadas e complete a tabela.
+
 
 .. math::
 
-   V(h)=25h^2
+   f(x)=3x^2+5x\quad ; \quad g(x)=\frac{x-1}{x^3+3}\quad ; \quad k(x)=(x-2)^2+6\quad ; \quad h(x)=2x-7
+
+.. table:: 
+    :widths: 6 6
+    :column-alignment: center center
+    
+    +---------------------+-------------------+
+    | Notação             | Valor             |
+    +=====================+===================+
+    | `f(1)+g(1)`         |                   |
+    +---------------------+-------------------+
+    | `g(2)-k(-1)`        |                   |
+    +---------------------+-------------------+
+    | `k(0).f(-2)`        |                   |
+    +---------------------+-------------------+
+    | `f(0)+h(0)-1`       |                   |
+    +---------------------+-------------------+
+    | `f(-2).g(-2)+k(2)`  |                   |
+    +---------------------+-------------------+
+    |`\dfrac{f(-3)}{k(0)}`|                   |
+    +---------------------+-------------------+
+    |`x` quando `h(x)=0`  |                   |
+    +---------------------+-------------------+
+    |`x` quando `h(x)=3`  |                   |
+    +---------------------+-------------------+
+
+
+.. _ativ-funcoes-enchendo-o-cone:
+
+Enchendo o cone
+---------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Fazer uso da notação de função.
+   * Relacionar a expressão analítica apresentada com a situação descrita.
+   * Interpretar os resultados obtidos em conformidade com a situação apresentada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É importante que o estudante perceba a relação existente entre a altura do nível da água no reservatório e o volume do mesmo.
+   * Essa pode também ser uma oportunidade para explorar a conversão de unidades. Sabemos que a expressão `V=\dfrac{1}{3}(\pi r^2)h` nos fornece o volume do cone como função do raio `r` e da altura `h` do nível de água. A partir das dimensões fornecidas pelo enunciado percebemos que `r=\dfrac{h}{2}` e, portanto, `V(h)=\dfrac{1}{3}\pi\dfrac{h^3}{4}` é o volume de água no reservatório, em metros cúbicos, correspondente a uma altura de `h` metros. Aproximando `\pi` por `3` obtemos que o volume é dado, aproximadamente, por `V(h)=\dfrac{h^3}{4}` em metros cúbicos, cujo equivalente em litros será `V(h)=250h^3`.  
+   
+
+O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m` e a base é um círculo de raio `3 m`. O volume (aproximado) `V` em litros de água no reservatório pode ser estimado a partir da altura `h` em metros de acordo com a seguinte expressão:
+
+.. math::
+
+   V(h)=250h^3
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cone.png
    :width: 400px
    :align: center
 
-#. Pedir o volume de água.
-#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `V`.
-#. Determine `V(2), V(2{,}05)` e `V(3{,}1)` e explique os seus significados.
+#. Determine `V(2), V(3)` e `V(4)` e explique os seus significados.
 #. Quais os volumes mínimo e máximo que podem ser observados?
-#. A que altura corresponde um volume de `10^5` litros?
-#. São feitas duas observações do volume, uma correspondendo à altura `h` e outra à altura `h+1`, isto é, `1` m acima da medição anterior. Determine a diferença de volume entre as duas medições. Ela depende de `h`?
+#. A que altura corresponde um volume de `3 456` litros?
+
+
+.. admonition:: Resposta 
+
+   a) `V(2), V(3)` e `V(4)` são, respectivamente iguais a `2000`, `6750` e `16000` litros e correspondem aos volumes quando a altura da água no reservatório vale `2`, `3` e `4` metros, respectivamente.
+   b) O menor volume observado é `V=0`, que corresponde a `h=0`, e o maior volume é `V(6)=54000` litros.
+   c) Corresponde a uma altura de `2,4` metros.
+
+.. _ativ-funcoes-uniformemente-variado:
 
 Uniformemente variado
-------------------------------
+---------------------
 
-A posição `S` em quilometros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Fazer uso da notação de função.
+   * Relacionar a expressão analítica apresentada com a situação descrita.
+   * Interpretar os resultados obtidos em conformidade com a situação apresentada.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Chamar atenção do estudante para o importante papel que as funções desempenham na Física, em especial na Mecânica Clássica, relacionando grandezas como tempo, deslocamento, velocidade e aceleração.
+
+A posição `S` em quilômetros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
 
 .. math::
 
    S(t)=2t^2-4t+2
 
-#. Dentro do contexto apresentado no problema, determine os conjuntos domínio e contradomínio da função `S`.
-#. Determine a posição inicial do veículo. Explique o significado do resultado obtido.
-#. Após quanto tempo o veículo estará a 18km da origem?
+a) Determine a posição inicial do veículo. Explique o significado do resultado obtido.
 
+b) Após quanto tempo o veículo estará a 18km da origem?
+
+
+.. admonition:: Resposta 
+
+   a) Inicialmente o veículo está posicionado a `S(0)=2` quilômetros da origem.
+   b) Após `4` horas.
+
+
+.. _sec-aprofundando:
+
+Aprofundando o assunto
+====================
+
+
+.. admonition:: Para o professor
+
+   Nessa seção serão apresentadas atividades em que alguns dos conceitos que foram desenvolvidos até esse momento reaparecem em contextos um pouco mais abstratos. 
+
+
+`1.` Vimos que para que uma relação seja uma função não pode haver:
+
+#. Ambiguidade na determinação da imagem;
+#. Elementos no domínio sem imagem;
+
+Identifique em cada uma das relações abaixo qual (ou quais) dos itens acima fazem com que elas deixem de ser função.
+
+a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa o seu irmão.
+b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
+c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
+
+
+`2.` Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
+
+a) `f(x)=\sqrt{x}`
+b) `f(x)=\sqrt{x-5}`
+c) `f(x)=\frac{1}{3-x}`
+d) `f(x)=\frac{1}{x+8}`
+e) `f(x)=\frac{1}{\sqrt{x}}`
+f) `f(x)=(x-2)^2+7`
+g) `f(x)=5x^2+8`
+h) `f(x)=(x+1)^2-3`
+
+Como estava estudando funções ele resolveu escolher para cada expressão um domínio `A` que a tornasse a regra de uma função `f:A \to \mathbb{R}` e, para cada escolha determinou seu conjunto imagem. Assim, ele produziu a seguinte tabela:
+
+.. table:: 
+    :widths: 3 3 3
+    :column-alignment: center center center
+    
+    +-------------+-----------------------------+---------------------+
+    | Expressão   |         domínio `A`         |  Imagem             |
+    +=============+=============================+=====================+
+    |    `(a)`    |        `\mathbb{R}^+`       |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(b)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(c)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(e)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(f)`    |                             |   `[7,+\infty[`     |
+    +-------------+-----------------------------+---------------------+
+    |    `(g)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+    |    `(h)`    |                             |                     |
+    +-------------+-----------------------------+---------------------+
+
+Ajude o estudante a completar a tabela.
+
+.. _ativ-funcoes-obtendo-expressoes:
 
 Obtendo expressões
-------------------------------
+------------------
 
 Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f` que associe `x` a `y`, isto é, `y=f(x)`, especificando os conjuntos domínio e contradomínio em cada caso.
 
@@ -242,9 +540,9 @@ Verifique com os seus colegas se vocês obtiveram as mesmas expressões na ativi
       +---------------------+-------------------+-------------------+
    
 
-As atividades anteriores nos levam à seguinte questão:
+.. admonition:: Pausa Para Reflexão
 
-*Quando podemos afirmar que duas expressões geram a mesma função?*
+   As atividades anteriores nos levam à seguinte questão: *Quando podemos afirmar que duas expressões geram a mesma função?*
 
 Primeiro vamos lembrar que para definir uma função precisamos estabelecer claramente qual é o seu domínio. E a partir daí, podemos comparar as imagens de todos os seus elementos pelas duas expressões. Caso coincidam em todos os elementos, diremos que as duas funções são **iguais**. Em linguagem matemática, 
 

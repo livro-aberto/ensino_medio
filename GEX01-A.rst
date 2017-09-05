@@ -1,8 +1,8 @@
-.. _my-aprofundamentos_vetores:
+.. _sec-vetores-aprofund:
 
-***********
+***************
 Aprofundamentos
-***********
+***************
 
 O que se quer dizer precisamente com *sentido* de um segmento orientado?
 
@@ -52,9 +52,10 @@ Toda reta tem dois *sentidos*: fixando os pontos `A` e `B` na reta, temos o sent
    \end{scope}
    \end{scope}
 
+.. _sec-vetores-aprofund-operacoes:
 
 Propriedades da operação de adição de vetores
-===========
+=============================================
 
 Enunciaremos a seguir algumas propriedades da operação de vetores no plano. Cabe destacar, entretanto, que essas propriedades também são válidas para vetores no espaço.
 
@@ -138,9 +139,10 @@ Para cada vetor `\overrightarrow{u}=\binom{x_{u}}{y_{u}}` existe um vetor `(-\ov
 	:align: center
    
 
+.. _sec-vetores-aprofund-mult-escalar:
 
 Propriedades da operação de multiplicação de um vetor por um escalar
-==============
+==========================================================================
 
 
 Enunciaremos as propriedades considerando vetores no plano. Entretanto, cabe destacar que essas propriedades também são válidas para vetores no espaço. 
