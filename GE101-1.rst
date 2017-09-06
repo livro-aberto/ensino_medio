@@ -292,6 +292,32 @@ De posse das coordenadas de um vetor, faremos alguns comentários:
    
 .. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
 
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: determinando um vetor a partir de suas extremidades
+--------------------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** representar um vetor em coordenadas dados seus extremos.
+   
+   **Recomendações e sugestões:**
+   
+Dados os pontos `A=(1,5)` e `B=(5,3)`, determine as coordenadas do vetor `\overrightarrow{AB}`. 
+
+.. admonition::  Resposta
+
+   Como vimos antes `\overrightarrow{AB} = \overrightarrow{OB} − \overrightarrow{OA}` ou, simplesmente, `\overrightarrow{AB} = B − A`.
+   Assim, `\overrightarrow{AB} = (5,3) - (1,5) = (4,2)`.
+   Observe o significado disso na figura a seguir:
+   
+   .. figure:: _resources/deslocamento1.png
+   
+   
+
+
+
 .. index:: ! translação
 
 *A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
@@ -358,8 +384,13 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
    texto da resposta
 
-Como você deve ter observado através da atividade anterior, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
+Como vimos, se `P=(x,y)` e `\vec{v}=(a,b)`, então a translação de `P` por `v` é ponto `P'=P+\vec{v}`. Em coordenadas temos `P'=(x,y) + (a,b) = (x+a,y+b)`.
 
+.. figure:: _resources/tc.png
+   
+   Trocar as coordenadas de `P` e `\vec{v}` na figura
+
+Conclusão: se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
    :width: 200px
