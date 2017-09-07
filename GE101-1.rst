@@ -296,13 +296,14 @@ De posse das coordenadas de um vetor, faremos alguns comentários:
    
 .. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
 
-.. index:: ! translação
+.. glossary:: 
+   
+   Translação
+      *A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
 
-*A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
-   :width: 400px
-   :align: center
+      .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
+         :width: 400px
+         :align: center
 
 
 .. _ativ-vetores-translacao:
@@ -383,9 +384,10 @@ Como você deve ter observado através da atividade anterior, se os vetores `\ve
 
    *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
 
-.. index:: ! homotetia
+.. glossary::
 
-Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
+   Homotetia
+      Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
 
 Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos de um triângulo e de um quadrado com razões 2 e 1/3, respectivamente.
 
