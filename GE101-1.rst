@@ -4,14 +4,14 @@
 Vetores do ponto de vista algébrico
 ***********************************
 
-.. glossary::
+Termos a serem definidos neste capítulo e devem ir para o glossário:
 
-   origem e extremidade de um vetor dado
-   multiplicação por escalar
-   soma ou adição de vetores
-   vetores paralelos
-   vetores unitários
-   vetores perpendiculares
+#. origem e extremidade de um vetor dado
+#. multiplicação por escalar
+#. soma ou adição de vetores
+#. vetores paralelos
+#. vetores unitários
+#. vetores perpendiculares
 
 Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. 
 Esta representação possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática). 
@@ -72,7 +72,7 @@ Atividade: expressão algébrica dado vetor
    
    **Recomendações e sugestões:**
 
-Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
+Com a mesma linguagem da atividade anterior, faça o que se pede:
 
 .. tikz:: 
 
@@ -91,6 +91,15 @@ Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}
    \draw[-latex, thick, blue] (2,1) -- (1.5,.5) node[right]{$\vec{e}$};
    \end{scope}
 
+#. obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
+#. Para refletir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `x` e `y` tais que o vetor `\vec{w}` se escreve como 
+
+   .. math:: 
+   
+      \vec{w} = x\vec{u} + y\vec{v}.
+   
+   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê?
+   
 .. admonition:: Resposta 
 
    texto da resposta
@@ -466,6 +475,7 @@ Dados os pontos `A = (1, 5)` e `B = (5, 3)`, quais são as coordenadas do vetor 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
       :width: 400px
       :align: center
+
 
 .. _ativ-vetores-alg-vetores-iguais:
 
