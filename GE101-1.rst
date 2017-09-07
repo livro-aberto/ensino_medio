@@ -296,6 +296,37 @@ De posse das coordenadas de um vetor, faremos alguns comentários:
    
 .. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
 
+
+.. _ativ-vetores-alg-vetores-iguais:
+
+Atividade: quando dois vetores são iguais?
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+   
+   #. Expressar um vetor em coordenadas dadas as extremidades.
+   #. Identificar vetores iguais a partir de informações geométricas dadas.
+      
+   **Recomendações e sugestões:** É importante que os alunos percebam que podem manipular algebricamente os pontos `A`, `B`, `C` e `D`, pois, cada uma representa o vetor posição do respectivo ponto. 
+   Observe, informalmente ao estudante, que o vetor vermelho *translada* o segmento `AB` para posição `CD`.
+
+O paralelogramo `ABCD` é tal que `A = (1, 1)` , `B = (4, 5)`  e `C = (6, 8)`. 
+Onde está o vértice D?
+
+.. admonition:: Resposta 
+
+   Os vetores `AD` e `BC` são iguais.
+   
+   .. figure:: _resources/vetores-iguais.png
+   
+   Logo, `D − A = C − B`, ou seja, 
+   
+   .. math:: 
+   
+      D = A + C − B = (1, 1) + (6, 8) − (4, 5) = (3, 4).
+
 .. glossary:: 
    
    Translação
@@ -363,14 +394,27 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
    texto da resposta
 
-Como você deve ter observado através da atividade anterior, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
+Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
+
+.. math::
+
+   P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
+
+.. figure:: _resources/tc_1.png
+   :width: 300px
+   :align: center
+
+   Trocar a notação na figura pela do texto
+
+
+Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_1)` e  `\vec{v} = (a_2, b_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a_1 + b_2, a_1 + b_2)`.
 
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
    :width: 200px
    :align: center
 
-   Vetor soma
+   Vetor soma (trocar a notação na figura)
 
 .. admonition:: Exemplo 
 
