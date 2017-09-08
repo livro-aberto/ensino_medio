@@ -23,6 +23,11 @@ ROTEIRO: VETORES
 
       BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.   
 
+
+   .. admonition:: Objetivos gerais
+
+      Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
+
    .. admonition:: Por que estudar o assunto?
  
       **Vetor em geral**
