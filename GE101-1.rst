@@ -4,14 +4,14 @@
 Vetores do ponto de vista algébrico
 ***********************************
 
-.. glossary::
+Termos a serem definidos neste capítulo e devem ir para o glossário:
 
-   origem e extremidade de um vetor dado
-   multiplicação por escalar
-   soma ou adição de vetores
-   vetores paralelos
-   vetores unitários
-   vetores perpendiculares
+#. origem e extremidade de um vetor dado
+#. multiplicação por escalar
+#. soma ou adição de vetores
+#. vetores paralelos
+#. vetores unitários
+#. vetores perpendiculares
 
 Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. 
 Esta representação possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática). 
@@ -25,12 +25,16 @@ Atividade: vetores numa malha quadriculada
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha.
+   **Objetivo específico:** 
+   
+   #. usar os vértices de uma malha quadriculada para representar vetores dados algebricamente como combinação linear dos dois vetores canônicos da malha,
+   #. preparar o estudante para representar algebricamente, com notação vetorial, vetores dados em uma malha.
    
    **Recomendações e sugestões:**
    no problema não foi dado um ponto de referência (origem de um sistema de coordenadas), eles são desnecessários aqui e podem confundir os estudantes.
 
-Reproduza em seu caderno a malha quadriculada, os vetores `\vec{u}` e `\vec{v}` como na figura e faça o que se pede:
+Nos itens abaixo, vetores são representados algebricamente, em termos de `\vec{u}`, `\vec{v}` e das operações com vetores.
+Reproduza a figura em seu caderno e faça o que se pede:
 
 .. tikz:: 
 
@@ -68,7 +72,7 @@ Atividade: expressão algébrica dado vetor
    
    **Recomendações e sugestões:**
 
-Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
+Com a mesma linguagem da atividade anterior, faça o que se pede:
 
 .. tikz:: 
 
@@ -87,6 +91,15 @@ Obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}
    \draw[-latex, thick, blue] (2,1) -- (1.5,.5) node[right]{$\vec{e}$};
    \end{scope}
 
+#. obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
+#. Para refletir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `x` e `y` tais que o vetor `\vec{w}` se escreve como 
+
+   .. math:: 
+   
+      \vec{w} = x\vec{u} + y\vec{v}.
+   
+   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê?
+   
 .. admonition:: Resposta 
 
    texto da resposta
@@ -235,15 +248,7 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
-De posse das coordenadas de um vetor, faremos alguns comentários:
-
-#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
-
-   .. math::
-
-      |\vec{v}|=x^2+y^2`, 
-
-   **FIGURA**
+Vale a pena registrar algumas observações acerca das coordenadas de um vetor:
 
 #. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua (nova) extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
 
@@ -252,79 +257,79 @@ De posse das coordenadas de um vetor, faremos alguns comentários:
       :align: center
       
       `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
- 
-#. dados pontos `A` e `B` no plano, temos `\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}` (também poderíamos escrever `\overrightarrow{AB} = B - A`). Em coordenadas, se `A=(x_A,y_A)` e `B=(x_B,y_B)`, então `\overrightarrow{AB}=(x_B - x_A, y_B - y_A)`.
 
-   .. tikz::
+#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
 
-      \begin{scope}[scale=1.3]
-      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
-      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
-      \fill (0,0) circle (0.05) node[below left]{$O$};
-      \draw[-latex, very thick, red]  (-1,2)--(0,0);
-      \draw[-latex, very thick, red] (0,0)-- (1,.5);
-      \draw[-latex, very thick] (-1,2) -- (1,.5);
-      \node at (.3,1.4){$\overrightarrow{AB}$};
-      \node at (-.9,.8){$-\overrightarrow{OA}$};
-      \node at (.4,.5){$\overrightarrow{OB}$};
-      \end{scope}
+   .. math::
 
+      |\vec{v}|=x^2+y^2.
 
-.. Em algum lugar deveríamos dizer ao professor que "alguns autores escrevem `\overrightarrow{AB} = B-A`, preferimos evitar esta abordagem porque seria necessário esclarecer o que significa esta diferença entre pontos do plano."
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=modulo.jpg
+      :width: 250px
+      
 
-.. admonition:: Pausa para reflexão
+Na produção de uma animação gráfica (para jogos de vídeo-game ou desenhos animados) é necessário informar ao computador onde estará cada ponto na tela. 
+Então é definido um ponto da tela como a origem do sistema de coordenadas e as direções vertical e horizontal como eixos coordenados.
+Para se produzir o efeito de aproximação e afastamento de um objeto é necessário realizar ampliações e reduções, respectivamente, deste objeto.
+A ferramenta matemática adequada para efetuar ampliações e reduções é a *homotetia*.
 
-   Se os pontos `A` e `B` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
-   
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=deslocamento.jpg
-      :width: 400px
-      :align: center
+.. glossary::
 
-      As coordenadas do vetor deslocamento **não depende** da posição da origem do sistema de coordenadas
-   
-   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
- 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
-      :width: 400px
-      :align: center
+   Homotetia
+      Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
 
-      O vetor posição **depende** da posição da origem do sistema de coordenadas
-   
-.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
+Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia-poligonos.png
+   :width: 400px
+   :align: center
 
-.. _ativ-titulo-da-atividade:
+.. _ativ-vetores-homotetia:
 
-Atividade: determinando um vetor a partir de suas extremidades
---------------------------------------------------------------
+Atividade: homotetia
+--------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** representar um vetor em coordenadas dados seus extremos.
+   **Objetivo específico:** reconhecer que `a(x,y)=(ax,ay)`. 
    
    **Recomendações e sugestões:**
-   
-Dados os pontos `A=(1,5)` e `B=(5,3)`, determine as coordenadas do vetor `\overrightarrow{AB}`. 
-
-.. admonition::  Resposta
-
-   Como vimos antes `\overrightarrow{AB} = \overrightarrow{OB} − \overrightarrow{OA}` ou, simplesmente, `\overrightarrow{AB} = B − A`.
-   Assim, `\overrightarrow{AB} = (5,3) - (1,5) = (4,2)`.
-   Observe o significado disso na figura a seguir:
-   
-   .. figure:: _resources/deslocamento1.png
-   
-   
 
 
+Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
 
-.. index:: ! translação
-
-*A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
    :width: 400px
    :align: center
+
+   Coordenadas de `A'`, correspondente de `A` pela homotetia
+
+#. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
+#. Calcule as coordenadas dos pontos `X'` e `Y'`.
+#. Se `A'` é o correspondente de `A` pela homotetia, então `\overrightarrow{OA'}=3\overrightarrow{OA}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
+
+.. admonition:: Resposta 
+
+   texto da resposta.
+
+.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
+
+A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `a\in \mathbb{R}`, então o vetor `a\vec{v}=(ax,ay)`.
+
+Um caso de particular interesse é o que trata do simétrico de um vetor. 
+Na seção anterior definimos o simétrico do vetor `\vec{v}` como o vetor que tem mesma direção, mesmo módulo, mas tem sentido oposto ao de `\vec{v}`.
+Lá decidiu-se denotá-lo por `-\vec{v}` e ao se definir a mutiplicação de `\vec{v}` por um número real ficou claro que `(-1)\vec{v}=-\vec{v}`. 
+Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
+
+
+.. glossary:: 
+   
+   Translação
+      *A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+
+      .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
+         :width: 400px
+         :align: center
 
 
 .. _ativ-vetores-translacao:
@@ -384,19 +389,130 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
    texto da resposta
 
-Como vimos, se `P=(x,y)` e `\vec{v}=(a,b)`, então a translação de `P` por `v` é ponto `P'=P+\vec{v}`. Em coordenadas temos `P'=(x,y) + (a,b) = (x+a,y+b)`.
+Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
-.. figure:: _resources/tc.png
-   
-   Trocar as coordenadas de `P` e `\vec{v}` na figura
+.. math::
 
-Conclusão: se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,y_1)` e  `\vec{v} = (x_2, y_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2)`.
+   P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=adicao.jpg
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tc.png
+   :width: 300px
    :align: center
 
-   Vetor soma
+   Trocar a notação na figura pela do texto
+
+
+Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_1)` e  `\vec{v} = (a_2, b_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a_1 + b_2, a_1 + b_2)`.
+
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-soma.png
+   :width: 400px
+   :align: center
+
+   Vetor soma (trocar a notação na figura)
+
+.. admonition:: Pausa para reflexão
+
+   Se os pontos `A=(x_A,y_A)` e `B=(x_B,y_B)` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. 
+   De fato, temos 
+   
+   .. tikz::
+
+      \begin{scope}[scale=1.1]
+      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+      \fill (0,0) circle (0.05) node[below left]{$O$};
+      \draw[-latex, very thick, red]  (-1,2)--(0,0);
+      \draw[-latex, very thick, red] (0,0)-- (1,.5);
+      \draw[-latex, very thick] (-1,2) -- (1,.5);
+      \node at (.3,1.4){$\overrightarrow{AB}$};
+      \node at (-.9,.8){$-\overrightarrow{OA}$};
+      \node at (.4,.5){$\overrightarrow{OB}$};
+      \end{scope}
+         
+   .. math::
+   
+      \overrightarrow{AB} =  B - A = (x_B - x_A, y_B - y_A).
+      
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-dados-extremos.jpg
+      :width: 200px
+      :align: center
+      
+      Coordenadas de um vetor a partir de suas extremidades
+
+   Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
+      
+   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
+ 
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
+      :width: 400px
+      :align: center
+
+      O vetor posição **depende** da posição da origem do sistema de coordenadas
+   
+.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
+
+
+.. _ativ-vetores-coord-extremidades:
+
+Atividade: determinando um vetor a partir de suas extremidades
+--------------------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** Determinar um vetor a partir de suas extremidades.
+   
+   **Recomendações e sugestões:**
+
+Dados os pontos `A = (1, 5)` e `B = (5, 3)`, quais são as coordenadas do vetor `\overrightarrow{AB}`?
+
+.. admonition:: Resposta 
+
+   Como vimos antes `\overrightarrow{AB} = \overrightarrow{OB} − \overrightarrow{OA}` ou, simplesmente, `\overrightarrow{AB} = B − A`.
+   Assim, 
+   
+   .. math:: 
+   
+      \overrightarrow{AB} = (5, 3) − (1, 5) = (5-1,3-5)=(4, −2).
+   
+   Observe o significado disso na figura.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
+      :width: 400px
+      :align: center
+
+
+.. _ativ-vetores-alg-vetores-iguais:
+
+Atividade: quando dois vetores são iguais?
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+   
+   #. Expressar um vetor em coordenadas dadas as extremidades.
+   #. Identificar vetores iguais a partir de informações geométricas dadas.
+      
+   **Recomendações e sugestões:** É importante que os alunos percebam que podem manipular algebricamente os pontos `A`, `B`, `C` e `D`, pois, cada uma representa o vetor posição do respectivo ponto. 
+   Observe, informalmente ao estudante, que o vetor vermelho *translada* o segmento `AB` para posição `CD`.
+
+O paralelogramo `ABCD` é tal que `A = (1, 1)` , `B = (4, 5)`  e `C = (6, 8)`. 
+Onde está o vértice D?
+
+.. admonition:: Resposta 
+
+   Os vetores `AD` e `BC` são iguais.
+   
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetores-iguais.png
+      :width: 250px
+      :align: center
+   
+   Logo, `D − A = C − B`, ou seja, 
+   
+   .. math:: 
+   
+      D = A + C − B = (1, 1) + (6, 8) − (4, 5) = (3, 4).
 
 .. admonition:: Exemplo 
 
@@ -409,50 +525,6 @@ Conclusão: se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(x_1,
       `\overrightarrow{OB} = \overrightarrow{OM} + \overrightarrow{OM} = 2\overrightarrow{OM}`
 
    *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
-
-.. index:: ! homotetia
-
-Fixados um ponto `O` no plano e um número real `r>0`. Chamamos de *homotetia de centro O  e razão r* à correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
-
-Por exemplo, nas figuras abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos de um triângulo e de um quadrado com razões 2 e 1/3, respectivamente.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1.jpg
-   :width: 400px
-   :align: center
-
-   Ao lado desta incluir uma análoga, mas de razão 1/3
-
-.. _ativ-vetores-homotetia:
-
-Atividade: homotetia
---------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** reconhecer que `r(x,y)=(rx,ry)`. 
-   
-   **Recomendações e sugestões:**
-
-
-Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
-   :width: 400px
-   :align: center
-
-   Coordenadas de `A'`, correspondente de `A` pela homotetia
-
-#. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
-#. Calcule as coordenadas dos pontos `X'` e `Y'`.
-#. Se `A'` é o correspondente de `A` pela homotetia, então `\overrightarrow{OA'}=3\overrightarrow{OA}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
-
-.. admonition:: Resposta 
-
-   texto da resposta.
-
-.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
-
-A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `r\in \mathbb{R}`, então o vetor `r\vec{v}=(rx,ry)`.
 
 Conforme prometido no início da seção passaremos agora a discorrer sobre as principais propriedades das operações de adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem obter todas elas a partir de propriedades análogas para os números reais.
 
@@ -473,13 +545,13 @@ Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
 O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade (trabalhar com a igualdade, pressupõe a validade da igualdade e, por isso, não serve para *justificar* a igualdade).
 Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades.
 
-Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `r` e `s`, valem as seguintes afirmações:
+Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `a` e `b`, valem as seguintes afirmações:
 
 #. `\vec{u} + \vec{v} = \vec{v} + \vec{u}`,
 #. `(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})`,
-#. `r(s\vec{u})=(rs)\vec{u}`,
-#. `r(\vec{u}+\vec{v})= r\vec{u} +r \vec{v}`,
-#. `(r+s)\vec{u} = r\vec{u} + s\vec{u}`.
+#. `a(b\vec{u})=(ab)\vec{u}`,
+#. `a(\vec{u}+\vec{v})= a\vec{u} +a \vec{v}`,
+#. `(a+b)\vec{u} = a\vec{u} + b\vec{u}`.
 
 Justificativa do item a): considere um sistema de coordenadas no plano, então os vetores ficam representados por pares ordenados, digamos `\vec{u}=(x_1,y_1)` e `\vec{v}=(x_2,y_2)`. Então 
 
