@@ -114,6 +114,8 @@ ROTEIRO: VETORES
       #. Explicar o porque de se usar a palavra vetor nestes contexto a partir de seu significado na Língua Portuguesa. 
       #. Atividade: **vetor deslocamento**. Introduzir o contexto físico (não a definição) de variação de posição. Diferenciar deslocamento de trajetória (um equívoco comum em Física) e reconhecer que o deslocamento independe da escolha da origem. O contexto permite introduzir de forma natural a adição geométrica e multiplicação por escalar. Aqui dá para levar o aluno a perceber vetores iguais (não é relativo ao ponto) e a comutatividade da soma. Ideia: comandar carrinhos por uma lista de vetores pré-definidos para que se desloquem de um ponto `A` a um ponto `B`. Ressaltar que no produto por escalar, quanto maior o número, maior o vetor vezes o número.
       #. Refletindo introduzindo notação de adição e produto por escalar. Observar que pela primeira vez estão sendo somados objetos que não são números.
+      #. Observar que a soma de dois deslocamentos pode ser um deslocamento cujo módulo **não é** a soma
+      dos módulos das parcelas.
             
       **Organizando as ideias.**
       
@@ -123,7 +125,8 @@ ROTEIRO: VETORES
       **Praticando**
       
       #. Exercícios sobre a adição de vetores envolvendo procedimentos com conexão com o conceito e que atacam os distratores. Não há necessidade de contexto, em princípio.
-      #. Atividade: **vetor velocidade média**. Definir como deslocamento vezes o inverso do tempo. Objetivo é introduzir o conceito físico do ponto de vista vetorial e introduzir o produto por escalar.
+      #. Atividade: **vetor velocidade média**. Definir como deslocamento vezes o inverso do tempo. Objetivo é introduzir o conceito físico do ponto de vista vetorial e introduzir o produto por escalar.     Observar que a soma de duas velocidades médias pode ser uma velocidade cujo módulo **não é** a soma
+      dos módulos das parcelas.
       #. Eventualmente pode ser necessário um Refletindo para o fechamento da velocidade média.
       
       **Explorando - coordenadas de vetores.** 
