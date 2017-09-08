@@ -24,7 +24,7 @@ ROTEIRO: VETORES
       BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.   
 
 
-   .. admonition:: Objetivos gerais
+   .. admonition:: Objetivo geral
 
       Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
 
@@ -43,15 +43,15 @@ ROTEIRO: VETORES
 
       * Representação geométrica de posição, deslocamento e velocidade usando vetores.
       * Conceitualização de vetores.
-      * Vetores iguais do ponto de vista geométrico.
-      * Vetor nulo e simétrico de um vetor.
+      * Igualdade de vetores do ponto de vista geométrico.
+      * Vetor nulo e vetor simétrico.
       * Adição e multiplicação por escalar de vetores geométricos.
       * Representação de vetores por meio de coordenadas.
       * Translação e homotetia como transformações geométricas do plano usando soma e multiplicação por escalar de vetores.
-      * Representação geométrica de aceleração e força por meio de vetores.
       * Decomposição de vetores para representação de forças.
+      * Representação geométrica de aceleração e de força por meio de vetores.      
       
-      Observação: Não serão abordados produto escalar, produto vetorial, vetores em três coordenadas.
+      Observação: não serão abordados produto escalar, produto vetorial, vetores em três coordenadas.
       
    .. admonition:: Pré-requisitos
 
@@ -84,7 +84,7 @@ ROTEIRO: VETORES
    
    .. admonition:: Abordagem da introdução
    
-      Atividades introduzindo os vários conceitos físicos e ilustrando a necessidade de vetores para representar as grandezas em questão.
+      Atividades introduzindo conceitos da Física e ilustrando a necessidade de vetores para representar as grandezas em questão.
       
    .. admonition:: Dificuldades típicas dos estudantes (distratores)
    
@@ -102,45 +102,43 @@ ROTEIRO: VETORES
       
    .. admonition:: Estratégia pedagógica
    
-      Iniciar uma abordagem geométrica de vetores usando os conceitos da Física para se introduzir os vários elementos que compõem o conceito de vetor. Para só então incluir as coordenadas. Esta escolha se deve à pouca utilidade da representação dos vetores em coordenadas para o cidadão comum (que possivelmente não tenha interesse com a área de exatas). Decidiu-se aproveitar as coordenadas para apontar na direção das transformações geométricas translação e homotetia que serão objeto de novo capítulo.
-      
-      Decidimos trabalhar vetores e suas operações em conjunto porque a utilidade dos vetores vem, em grande parte, da álgebra a ele associada.
+      Iniciar a partir da abordagem geométrica de vetores, usando os conceitos da Física para  introduzir elementos variados que compõem o conceito de vetor: vetor posição relativa, vetor deslocamento e vetor velocidade média. Em seguida, abordar vetores a partir de coordenadas. Esta escolha para a condução da abordagem se justifica pelo reconhecimento da pouca relevância da representação de vetores em coordenadas para os cidadãos em geral (e, particularmente, para aqueles que não tenham interesse em sprofundar seus estudos na área de exatas). A abordagem de vetores a partir de coordenadas visa às transformações geométricas translação e homotetia, que serão objeto de estudo de outro capítulo.
+            
+      Enquanto a BNCC (segunda versão) não menciona as operações com vetores no quadro das páginas 564 e 565, ficando a indicação registrada apenas nos comentários na página 563, decidimos, no lugar de só apresentar vetores em um capítulo para depois apresentar operações com vetores em um capítulo separado, fazer o desenvolvimento tudo junto porque, assim, o aluno poderá perceber melhor a utilidade dos vetores dado que essa utilidade vem, em grande parte, da álgebra associada.
    
    .. admonition:: Estrutura
    
       **Explorando - vetores geométricos**
       
-      #. Atividade: **vetor posição relativa**. Objetivo: mostrar que a posição relativa é uma grandeza vetorial, pois só com um ponto de referência e uma distância ou um ponto de referência e uma direção não é possível definir uma localização. A atividade também serve para introduzir a ideia e terminologia de direção e sentido e módulo. Mudar o ponto de referência para lembrar que o vetor posição depende do ponto de referência. Historinha do Star Wars.
-      #. Explicar o porque de se usar a palavra vetor nestes contexto a partir de seu significado na Língua Portuguesa. 
-      #. Atividade: **vetor deslocamento**. Introduzir o contexto físico (não a definição) de variação de posição. Diferenciar deslocamento de trajetória (um equívoco comum em Física) e reconhecer que o deslocamento independe da escolha da origem. O contexto permite introduzir de forma natural a adição geométrica e multiplicação por escalar. Aqui dá para levar o aluno a perceber vetores iguais (não é relativo ao ponto) e a comutatividade da soma. Ideia: comandar carrinhos por uma lista de vetores pré-definidos para que se desloquem de um ponto `A` a um ponto `B`. Ressaltar que no produto por escalar, quanto maior o número, maior o vetor vezes o número.
-      #. Refletindo introduzindo notação de adição e produto por escalar. Observar que pela primeira vez estão sendo somados objetos que não são números.
-      #. Observar que a soma de dois deslocamentos pode ser um deslocamento cujo módulo **não é** a soma
-      dos módulos das parcelas.
+      #. Atividade: **vetor posição relativa**. Objetivo: mostrar que a posição relativa é uma grandeza vetorial, pois só com um ponto de referência e uma distância ou um ponto de referência e uma direção não é possível definir uma localização. A atividade também serve para introduzir a ideia e terminologia de direção, sentido e módulo. Mudar o ponto de referência para lembrar que o vetor posição depende do ponto de referência.
+      #. Explicar o porque de se usar a palavra vetor nestes contexto a partir de sua etimologia. 
+      #. Atividade: **vetor deslocamento**. Introduzir o contexto físico (não a definição) de variação de posição. Diferenciar deslocamento de trajetória (um equívoco comum em Física) e reconhecer que o deslocamento independe da escolha da origem. O contexto permite introduzir de forma natural a abordagem da adição geométrica e multiplicação por escalar. Aqui dá para levar o aluno a perceber vetores iguais (não é relativo ao ponto) e a comutatividade da soma. Ideia: comandar carrinhos por uma lista de vetores pré-definidos para que se desloquem de um ponto `A` a um ponto `B` (para detalhes da ideia, ver: https://goo.gl/xnP4nz , https://goo.gl/DgXnUge e https://goo.gl/sLoqNN .  Ressaltar que no produto por escalar, quanto maior o módulo do escalar, maior será o módulo do vetor vezes o escalar.
+      #. Refletindo: notação de adição e produto por escalar. Observar que, talvez, pela primeira vez estão sendo somados objetos que não são números.
+      #. Observar que a soma de dois deslocamentos pode ser um deslocamento cujo módulo **não é** a soma dos módulos das parcelas.
             
-      **Organizando as ideias.**
+      **Organizando as ideias**
       
-      #. Para o vetor geométrico e Matemática apenas. Definir vetores iguais, adição de vetores geométricos (comutatividade, paralelogramo e triângulo) e multiplicação por escalar (usar a estrutura da reta numérica para definir a multiplicação por escalar `\lambda \overrightarrow{v}` é o vetor que tem origem na origem de `\overrightarrow{v}` e extremidade no ponto `\lambda` da reta que tem 0 na origem de `\overrightarrow{v}`. Estabelecer os vetores simétrico e nulo.
-      #. Observar ao final da parte matemática ou talvez entre as atividades deste Explorando o Assunto as nuâncias da definição de vetores físicos em comparação com o conceito matemático. Por exemplo vetor fixo (posição) e vetor deslizante (força). Dizer que o vetor matemático tem vários atributos, mas que dependendo do contexto físico, usa-se um ou mais destes atributos.
+      #. A partir das atividades anteriores, apresentar o conceito genérico de vetor geométrico como normalmente é apresentado em Matemática. Definir vetores iguais, adição de vetores geométricos (via a regra do triângulo, observar a comutatividade da adição, observar [embora não natural no contexto de deslocamento] que a soma também pode ser obtida via regra do paralelogramo) e multiplicação por escalar (usar a estrutura da reta numérica para definir a multiplicação por escalar `a \overrightarrow{v}` é o vetor que tem origem na origem de `\overrightarrow{v}` e extremidade no ponto da reta numérica que corresponde ao número `a`. Estabelecer os conceitos de vetor nulo e vetor simétrico.
+      #. Observar ao final da parte matemática ou talvez entre as atividades deste Explorando o Assunto as nuâncias da definição de vetores físicos em comparação com o conceito matemático. Por exemplo vetor fixo (posição) e vetor deslizante (força). Dizer que o vetor matemático é definido em termos de direção, sentido e mótulo, mas que dependendo do contexto físico, também é preciso considerar onde a origem do vetor está estabelecida.
       
       **Praticando**
       
       #. Exercícios sobre a adição de vetores envolvendo procedimentos com conexão com o conceito e que atacam os distratores. Não há necessidade de contexto, em princípio.
-      #. Atividade: **vetor velocidade média**. Definir como deslocamento vezes o inverso do tempo. Objetivo é introduzir o conceito físico do ponto de vista vetorial e introduzir o produto por escalar.     Observar que a soma de duas velocidades médias pode ser uma velocidade cujo módulo **não é** a soma
-      dos módulos das parcelas.
+      #. Atividade: **vetor velocidade média**. Definir como deslocamento vezes o inverso do tempo. Objetivo é introduzir o conceito físico do ponto de vista vetorial e introduzir o produto por escalar.     Observar que a soma de duas velocidades médias pode ser uma velocidade cujo módulo **não é** a soma dos módulos das parcelas.
       #. Eventualmente pode ser necessário um Refletindo para o fechamento da velocidade média.
       
-      **Explorando - coordenadas de vetores.** 
+      **Explorando - coordenadas de vetores** 
       
-      #. Um dos motivos para se ensinar coordenadas de vetores é para se obter facilmente algumas propriedades algébricas de operações de vetores através das coordenadas (comutatividade, associatividade, distributividade, ganhadas de graça dos números reais).
+      #. Observar para o professor que um dos motivos para se ensinar coordenadas de vetores é para se obter facilmente algumas propriedades algébricas de operações de vetores através das coordenadas (comutatividade, associatividade, distributividade, ganhadas de graça dos números reais). Após as atividades, colocar uma nota para o aluno observar isso também.
       #. Atividades utilizando malhas e não usando um ponto de referência (origem do sistema de coordenadas) para que o estudante, contando quadrados da malha, possa se expressar usando esquerda, direita, cima e baixo para identificar as direções. Usar apenas malhas retangulares, estabelecer coordenadas de vetores.
-      #. Contar que as representações de pontos no plano por pares ordenados também servem para representar o vetor posição de cada ponto do plano e assim estabelecer coordenadas de vetores. Observar que isto traz sentido à afirmações como `\overrightarrow{AB} = B - A` feita por alguns autores, por exemplo, Serge Lang e Paulo Boulos.
-      #. Atividade: **Translação**. Computador entende apenas números. No que segue não poderemos utilizar a notação funcional pois o estudante não terá proeficiência neste aspecto neste momento. Apresentar uma translação através da equação vetorial, move o ponto `P` para o ponto `P'` tal que `\overrightarrow{OP'}=\overrightarrow{OP} + \overrightarrow{v}` e pedir para representar por coordenadas. Estabelecer visualmente que o vetor soma é representado pela soma das coordenadas. Talvez realizar passos intermediários com translação à direita e outra com translação para cima e pedir as coordenadas. Depois compor as translações para obter uma situação mais geral. Pedir inicialmente para calcular a posição final de um ponto. Relacionar com o deslocamento. Observação: A translação de um ponto não depende do referencial escolhido.
+      #. Atividade para mostrar que as representações de pontos no plano por pares ordenados também servem para representar o vetor posição de cada ponto do plano e assim estabelecer coordenadas de vetores. Observar que isto traz sentido às afirmações como `\overrightarrow{AB} = B - A` feita por alguns autores, por exemplo, Serge Lang e Paulo Boulos.
+      #. Atividade: **translação**. Computador entende apenas números. No que segue não poderemos utilizar a notação funcional pois o estudante não terá proficiência neste aspecto neste momento. Apresentar uma translação através da equação vetorial, move o ponto `P` para o ponto `P'` tal que `\overrightarrow{OP'}=\overrightarrow{OP} + \overrightarrow{v}` e pedir para representar por coordenadas. Estabelecer visualmente que o vetor soma é representado pela soma das coordenadas dos vetores parcelas. Observar que a translação de um ponto não depende do referencial escolhido. Talvez realizar passos intermediários com translação à direita e outra com translação para cima e pedir as coordenadas. Depois compor as translações para obter uma situação mais geral. Pedir inicialmente para calcular a posição final de um ponto. Relacionar com o deslocamento. 
       #. Atividade: **Homotetia**. Estabelecer o produto por escalar em coordenadas. Também não usar notação funcional.
       
-      **Organizando as ideias de coordenadas.**
+      **Organizando as ideias de coordenadas**
       
       #. Fazer um fechamento a cerca das coordenadas e operações usando coordenadas (o que era feito com exemplos numéricos ou figuras específicas agora é generalizado com letras). Rever a comutatividade da adição através das coordenadas.
-      #. Apresentar vetores do ponto de vista geométrico no contexto de forças. Incluir a decomposição de forças num sistema de eixos coordenados. Enfatizar que a regra do paralelogramo pode ser mais intuitivo no caso de forças do que com a regra do triângulo para a adição de vetores.
+      #. Apresentar vetores do ponto de vista geométrico no contexto de forças. Incluir a decomposição de forças num sistema de eixos coordenados. Enfatizar que, para a adição de vetores, a regra do paralelogramo pode ser mais intuitivo no caso de forças do que com a regra do triângulo no caso de deslocamentos.
    
          .. #. **Escrever para o professor** que quando fixamos um reticulado estamos estabelecendo um par de vetores linearmente independentes no plano sem fixar a origem do sistema de coordenadas porque, na verdade, a descrição dos vetores independe da posição da origem. A origem se faz necessária quando buscamos a posição de um objeto. Definir vetor para o professor como um conjunto de segmentos orientados que possuem mesmo módulo direção e sentido, explicar que essa definição será omitida do estudante porque a sua apresentação não trará ganho de compreensão e soa excessivamente abstrata para a maioria dos estudantes na opinião dos autores. Observar que os vetores não dependem de coordenadas.  Que módulo, direção e sentido representam, na verdade, duas informações e não três (porque o módulo e sentido juntos representam uma grandeza escalar quando usamos o sinal do número). [Simas]
          .. #. Atividade dos veleiros, sem a malha, para que o estudante reconheça que deslocamentos com mesmo módulo, direção e sentido são iguais num certo sentido e assim encaminhar para a existência de grandezas vetoriais. 
