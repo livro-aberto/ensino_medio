@@ -56,7 +56,7 @@ Praticando o assunto
 
 .. _ativ-funcoes-colorindo-o-mapa:
 
-Colorindo o mapa
+Atividade: Colorindo o mapa
 ----------------
 
 
@@ -139,7 +139,7 @@ Pode-se perceber na atividade anterior diferentes maneiras de estabelecer relaç
 
 .. _ativ-funcoes-e-funcao:
 
-É função?
+Atividade: É função?
 ---------
 
 .. admonition:: Para o professor
@@ -191,7 +191,7 @@ Como as funções são um tipo especial de relação, a mesma ideia se estende p
 
 .. _ativ-funcoes-nao-e-funcao:
 
-Não é função!
+Atividade: Não é função!
 ---------------
 
 .. admonition:: Para o professor
@@ -221,7 +221,7 @@ Considere a relação no conjunto dos números inteiros que associa dois element
 
 .. _ativ-a-fila:
 
-A fila
+Atividade: A fila*
 ---------------
 
 .. admonition:: Para o professor
@@ -256,6 +256,8 @@ Cada ponto do gráfico abaixo representa uma das seguintes pessoas.
 #. Associe cada ponto à pessoa correspondente.
 
 #. A relação que associa a altura com a idade para cada uma das pessoas acima é função? Por que?
+
+*Adaptado de The Language of Functions and Graphs, Shell Centre for Mathematical Education Publications Ltd., 1985.
 
 Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Por isso, daqui por diante, quando estivermos considerando funções numéricas, o contradomínio será igual a `\mathbb{R}`. 
 
@@ -314,7 +316,7 @@ Fazer a variável tempo assumir o valor `t=0` na expressão de `h(t)` significa 
 
 .. _ativ-praticando-notacao:
 
-Praticando a notação
+Atividade: Praticando a notação
 -------------------
 
 .. admonition:: Para o professor
@@ -363,7 +365,7 @@ Utilize as expressões analíticas dadas abaixo para encontrar cada um dos valor
 
 .. _ativ-funcoes-enchendo-o-cone:
 
-Enchendo o cone
+Atividade: Enchendo o cone
 ---------------
 
 .. admonition:: Para o professor
@@ -405,7 +407,7 @@ O reservatório representado abaixo tem a forma de um cone cuja altura mede `6 m
 
 .. _ativ-funcoes-uniformemente-variado:
 
-Uniformemente variado
+Atividade: Uniformemente variado
 ---------------------
 
 .. admonition:: Para o professor
@@ -447,10 +449,27 @@ Aprofundando o assunto
 
 .. admonition:: Para o professor
 
-   Nessa seção serão apresentadas atividades em que alguns dos conceitos que foram desenvolvidos até esse momento reaparecem em contextos um pouco mais abstratos. 
+   Nessa seção são propostas três atividades: a primeira visa explorar a definição de função de um ponto de vista um pouco mais abstrato, a segunda trata da determinação do conjunto imagem de funções reais e a terceira investiga sob que condições podemos afirmar que duas funções são iguais.
+
+.. _ativ-nao-funcao:
+
+Atividade: Por que não é função?
+---------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Identificar em contextos mais abstratos por que uma dada relação não define uma função.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Procure incentivar que os estudantes se manifestem verbalmente, expressando seu entendimento sobre a relação dada. Para a primeira relação, por exemplo, sugerimos que seja considerado em um primeiro momento o conjunto formado por todos os estudantes da sala. Possivelmente heverá estudantes sem irmãos e estudantes com mais de um irmão.
 
 
-`1.` Vimos que para que uma relação seja uma função não pode haver:
+Vimos que para que uma relação seja uma função não pode haver:
 
 #. Ambiguidade na determinação da imagem;
 #. Elementos no domínio sem imagem;
@@ -462,7 +481,32 @@ b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `
 c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
 
 
-`2.` Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
+.. admonition:: Resposta 
+
+   #. Ao escolhermos uma pessoa no conjunto `\mathcal{P}` para tentarmos associá-la ao seu irmão três coisas poderão ocorrer: ela não possui irmão, ela possui um único irmão ou ela possui mais de um irmão. Caso ela não tenha irmão teremos elemento do domínio sem imagem e caso ela tenha mais de um irmão haverá ambiguidade na determinação da imagem. Por isso a relação não define uma função.
+   
+   #. Como não existe em `\mathbb{R}` raiz quadrada de número negativo a relação dada não se aplica aos números reais negativos, isto é, por exemplo o número real `-1` não pode ser associado à `\sqrt{-1}`, uma vez que `\sqrt{-1}` não pertence ao conjunto dos números reais. Portanto, haverá elementos (todos os números reais negativos) sem imagem.
+   
+   #. Considerando, por exemplo, o número real `15` podemos contruir dois triângulos distintos mas com área igual a esse valor. Basta considerar para o primeiro base e altura como sendo `5` e `6` e para o segundo base e altura como sendo `10` e `3`. Dessa forma haverá ambiguidade na determinação da imagem.
+
+.. _ativ-qual-e-imagem:
+
+Atividade: Qual é a imagem?
+---------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Determinar a partir da expressão algébrica os conjuntos domínio e imagem.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É importante que o estudante perceba as restrições para a escolha de `x` impostas por algumas das expressões dadas.
+
+Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
 
 a) `f(x)=\sqrt{x}`
 b) `f(x)=\sqrt{x-5}`
@@ -473,7 +517,7 @@ f) `f(x)=(x-2)^2+7`
 g) `f(x)=5x^2+8`
 h) `f(x)=(x+1)^2-3`
 
-Como estava estudando funções ele resolveu escolher para cada expressão um domínio `A` que a tornasse a regra de uma função `f:A \to \mathbb{R}` e, para cada escolha determinou seu conjunto imagem. Assim, ele produziu a seguinte tabela:
+Como estava estudando funções ele resolveu escolher para cada expressão um domínio `A` que a tornasse a regra de uma função `f:A \to \mathbb{R}` e, para cada escolha determinar seu conjunto imagem. Assim, ele produziu a seguinte tabela:
 
 .. table:: 
     :widths: 3 3 3
@@ -501,12 +545,31 @@ Como estava estudando funções ele resolveu escolher para cada expressão um do
 
 Ajude o estudante a completar a tabela.
 
+
+.. admonition:: Resposta 
+
+   texto
+
 .. _ativ-funcoes-obtendo-expressoes:
 
-Obtendo expressões
-------------------
+Atividade: Obtendo expressões
+---------------------
 
-Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f` que associe `x` a `y`, isto é, `y=f(x)`, especificando os conjuntos domínio e contradomínio em cada caso.
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   Levar o estudante a:
+
+   * Refletir sobre a igualdade de funções.
+   * Obter expressões algébricas a partir de uma tabela.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Completar....
+
+
+Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f: A \to \mathbb{R}` que associe `x` a `y`, isto é, `y=f(x)`, especifique em cada caso o conjunto domínio.
 
 #.
 
@@ -557,7 +620,7 @@ Para cada uma das tabelas abaixo obtenha uma possível expressão para uma funç
       +---------------------+-------------------+
 
     
-Uma pergunta natural é se as expressões obtidas por você na atividade acima são únicas. Ou seja, será possível existirem duas expressões algébricas diferentes que gerem a mesma tabela?
+Será que as expressões obtidas por você na atividade acima são únicas. Ou seja, será possível existirem duas expressões algébricas diferentes que gerem a mesma tabela?
 Verifique com os seus colegas se vocês obtiveram as mesmas expressões na atividade anterior.
 
 #. Verifique que as expressões `g(x)=\dfrac{2x^2-7x-4}{x-4}` e `h(x)=\dfrac{x^4+x^2}{2x^2+2}` geram as tabelas dos itens a) e b) da atividade anterior, respectivamente.
