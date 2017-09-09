@@ -41,7 +41,7 @@ ROTEIRO: VETORES
 
    .. admonition:: Conteúdos abordados
 
-      * Representação geométrica de posição, deslocamento e velocidade usando vetores.
+      * Representação de posição, deslocamento e velocidade usando vetores.
       * Conceitualização de vetores.
       * Igualdade de vetores do ponto de vista geométrico.
       * Vetor nulo e vetor simétrico.
