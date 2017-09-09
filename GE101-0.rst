@@ -113,9 +113,9 @@ A :index:`posição relativa` de um ponto com relação a outro (de referência)
 
 
 
-Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa "economia" de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremida` quando não há perigo de confusão com a origem) do vetor `\overrightarrow{AG}`.
+Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa "economia" de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `\overline{AG}` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`.
 
-Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`.
+Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais compacta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`.
 
 .. HJB: lembrar para o professor que outra notação adotada é de colocar o nome em negrito. Enquanto que esta opção é mais atraente do ponto de vista de tipografia, ela tem o inconveniente de não ser facilmente reproduzida com se escreve à mão.
 
@@ -126,4 +126,20 @@ Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, també
    :width: 700px
    :align: center
 
-Observe que, em particular, *o vetor de posição relativa depende da escolha do ponto de referência* uma vez que os vetores posições são diferentes: eles .
+Antes de prosseguirmos, observe que, em particular, *o vetor de posição relativa depende da escolha do ponto de referência* uma vez que os vetores posições são diferentes.
+
+
+.. admonition:: Para o professor
+
+   Caso haja disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_>. Com ela, é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente como vetor posição relativa depende da escolha do ponto de referência.
+
+		   .. _fig-ggb-vpr-01:
+
+   .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/ggb-vpr-01.jpg
+      :width: 700px
+      :align: center
+
+
+
+Deslocamentos no plano
+------------------------------------------
