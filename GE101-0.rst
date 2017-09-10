@@ -1,5 +1,7 @@
 .. HJB: no capítulo de abertura do livro, colocar sobre a questão do uso das palavras (argumento Humpty-Dumpty) e sobre a questão da notação matemática.
 
+.. HJB: na abertura do livro, colocar o exemplo de modelagem dado pelo Ralph sobre mapa do metrô.
+
 .. admonition:: Para o professor
 
    Esta lição tem por objetivo introduzir o conceito de vetor no plano de forma articulada e integrada com situações estudadas na Física.
@@ -7,6 +9,10 @@
 .. HJB: não esquecer de falar que direção pode ter mais do que um significado (direção nordeste vs. ir na direção da praça central da cidade). Aqui, direção nordeste é um bom exemplo para relacionar com o conceito de direção como usado em vetores.
 
 .. HJB: não esquecer de usar uma cor diferente para a soma de dois vetores ou a multiplicação por escalar.
+
+.. HJB: não esquecer de mencionar para o aluno de que o módulo de um vetor também pode receber outros nomes (intensidade, magnitude, valor).
+
+.. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
 
 ..
    Caro professor,
@@ -123,7 +129,6 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
 
 .. HJB: lembrar para o professor que outra notação adotada é de colocar o nome em negrito. Enquanto que esta opção é mais atraente do ponto de vista de tipografia, ela tem o inconveniente de não ser facilmente reproduzida com se escreve à mão.
 
-
 .. _fig-geometria-vp-03:
 
 .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-vp-03.jpg
@@ -147,3 +152,12 @@ Antes de prosseguirmos, é importante observar que, em particular, *o vetor de p
 
 Deslocamentos no plano
 ------------------------------------------
+Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
+
+Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Por exemplo, o vetor azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`.
+
+.. _fig-geometria-deslocamento-01:
+
+.. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-deslocamento-01.jpg
+   :width: 700px
+   :align: center
