@@ -101,13 +101,13 @@ Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
 Em Física, existem grandezas que ficam perfeitamente descritas por um número e uma unidade. Este é o caso, por exemplo, do tempo, da temperatura, da pressão e da massa.
 Grandezas deste tipo são denominadas :index:`grandezas escalares`. 
 
-Por outro lado, como você deve ter percebido com a atividade anterior, um único número não basta para especificar completamente uma posição com relação a um ponto de referência. Além da distância entre o ponto de referência e a posição em questão (no caso da atividade, "10 km"), também é necessário ter uma orientação (no caso da atividade, "à nordeste"). Grandezas físicas deste tipo – as quais, para serem perfeitamente descritas, necessitam de um valor numérico (e uma unidade) e uma orientação – são denominadas :index:`grandezas vetoriais`. 
+Por outro lado, como você deve ter percebido com a atividade anterior, um único número não basta para especificar completamente uma posição com relação a um ponto de referência. Além da distância entre o ponto de referência e a posição em questão (no caso da atividade, "10 km"), também é necessário ter uma orientação (no caso da atividade, "à nordeste"). Grandezas físicas deste tipo – as quais, para serem perfeitamente descritas, necessitam de um valor numérico, uma unidade e uma orientação – são denominadas :index:`grandezas vetoriais`. 
 
 .. admonition:: Pausa Para Reflexão
 
     Quais outras grandezas físicas você conhece? Elas são grandezas escalares ou vetoriais?    
 
-A :index:`posição relativa` de um ponto com relação a outro (de referência), sendo uma grandeza vetorial, é representada graficamente por uma flecha, isto é, um :index:`segmento de reta orientado` que, a partir de agora, denominaremos :index:`vetor posição relativa`. A figura a seguir exibe os vetores posições do grupo de exploradores (marcado como `G` na figura) com relação às estações de pesquisa `A` e `B` da atividade anterior. 
+A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste capítulo) pode ser representada graficamente por uma flecha, isto é, um :index:`segmento de reta orientado` o qual, a partir de agora, denominaremos :index:`vetor posição relativa`. A figura a seguir exibe os vetores posições relativas do grupo de exploradores (marcado como `G` na figura) com relação às estações de pesquisa `A` e `B` da atividade anterior. 
 
 .. _fig-geometria-vp-02:
 
@@ -124,12 +124,9 @@ A :index:`posição relativa` de um ponto com relação a outro (de referência)
 Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa "economia" de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `\overline{AG}` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\overrightarrow{AG}| = 10~\text{km}`. 
 
-
 Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais compacta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`. Assim,
 para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\vec{v}| = 10 \, \sqrt{2}~\text{km}` (por quê?). 
-
-.. HJB: lembrar para o professor que outra notação adotada é de colocar o nome em negrito. Enquanto que esta opção é mais atraente do ponto de vista de tipografia, ela tem o inconveniente de não ser facilmente reproduzida com se escreve à mão.
 
 .. _fig-geometria-vp-03:
 
@@ -137,7 +134,14 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
    :width: 700px
    :align: center
 
-Antes de prosseguirmos, é importante observar que, em particular, *o vetor de posição relativa depende da escolha do ponto de referência* uma vez que os vetores posições relativas são diferentes. Assim, ao se mudar o ponto de referência, os vetores posições relativas também mudam.
+.. admonition:: Nota sobre notação e terminologia
+
+    Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
+    
+    Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
+
+
+Antes de prosseguirmos, é importante destacar uma característica importante do vetor posição relativa: ele depende da escolha do ponto de referência. Veja, por exemplo, na situação ilustrada na figura anterior, que a posição `G` é representada por vetores diferentes quando pontos de referências diferentes (`A` e `B`) são escolhidos. 
 
 
 .. admonition:: Para o professor
@@ -154,8 +158,8 @@ Antes de prosseguirmos, é importante observar que, em particular, *o vetor de p
 
 Deslocamentos no plano
 ------------------------------------------
-Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
-Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Por exemplo, o vetor azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`. Observe que, em particular, deslocamentos também são grandezas vetoriais.
+Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
+Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`. 
 
 .. _fig-geometria-deslocamento-01:
 
@@ -165,4 +169,5 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
       
 .. admonition:: Pausa Para Reflexão
 
-    Na figura com a pista de Interlagos, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
+    #. O deslocamento é uma grandeza escalar ou vetoria?
+    #. Na figura com a pista de Interlagos, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
