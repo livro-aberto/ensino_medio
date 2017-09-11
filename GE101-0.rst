@@ -14,6 +14,8 @@
 
 .. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
 
+.. HJB: não esquecer de escrever para o professor a estratégia pedagógica adotada, a saber, desenvolver o conceito de vetor em paralelo com os conceitos físicos em cinemática: posição relativa, deslocamento, velocidade média e aceleração média.
+
 ..
    Caro professor,
    este é um texto introdutório do conceito de vetores no plano para estudantes do Ensino Médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como posição relativa, deslocamento, velocidade, aceleração e força. 
@@ -135,7 +137,7 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
    :width: 700px
    :align: center
 
-Antes de prosseguirmos, é importante observar que, em particular, *o vetor de posição relativa depende da escolha do ponto de referência* uma vez que os vetores posições são diferentes. Assim, ao se mudar o ponto de referência, os vetores posições relativas também mudam.
+Antes de prosseguirmos, é importante observar que, em particular, *o vetor de posição relativa depende da escolha do ponto de referência* uma vez que os vetores posições relativas são diferentes. Assim, ao se mudar o ponto de referência, os vetores posições relativas também mudam.
 
 
 .. admonition:: Para o professor
@@ -153,11 +155,14 @@ Antes de prosseguirmos, é importante observar que, em particular, *o vetor de p
 Deslocamentos no plano
 ------------------------------------------
 Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
-
-Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Por exemplo, o vetor azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`.
+Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Por exemplo, o vetor azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`. Observe que, em particular, deslocamentos também são grandezas vetoriais.
 
 .. _fig-geometria-deslocamento-01:
 
 .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-deslocamento-01.jpg
    :width: 700px
    :align: center
+      
+.. admonition:: Pausa Para Reflexão
+
+    Na figura com a pista de Interlagos, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
