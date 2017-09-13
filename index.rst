@@ -6,6 +6,31 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
    
-   *
-
+   AF106-ROTEIRO
+   GE101-ROTEIRO
+   GE201-ROTEIRO
+   NO508-0
+   
+   index_algebra_e_funcoes
+   index_geometria
+   index_prob_e_estatistica
+   
+   AF106
+   AF106-0
+   AF106-1
+   AF106-2
+   AF106-E
+   AF107-0
+   AF209-0
+   
+   GE101
+   GE101-0
+   GE101-1
+   GE101-E
+   
+   GE201-0
+   GE201-1
+   GE201-E
+   
+   PE103-0
 
