@@ -212,19 +212,33 @@ Pode-se perceber que uma trajetória possui um ponto inicial e um ponto final. O
 Operações com vetores
 ---------
 
-Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado.
+Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado.
 
-**SOMA DE VETORES**
+**SOMA DE VETORES**:
 
 Nosso objetivo é entender o que acontece se somarmos dois vetores deslocamento. O primeiro fato que devemos perceber é que, pela definição de vetor deslocamento, a soma de dois ou mais vetores deslocamento será sempre um vetor deslocamento. Isso se deve ao fato de que cada vetor representa uma variação de posição e então, se variarmos a posição de dois ou mais vetores consecutivamente, podemos representar a variação de posição total por um único vetor deslocamento. A esse único vetor daremos o nome de *vetor soma*. 
 
 A figura abaixo exibe o resultado da Corrida de Vetores (lembra das regras desse jogo apresentado na seção X?)[ver se já terá sido apresentado] disputada entre os competidores das cores laranja e verde, cujo objetivo era sair do ponto `A` e chegar ao ponto `B`. Neste caso, a partida terminou empatada, pois os dois competidores precisaram do mesmo número de cartas para atingir o ponto final. Na figura, podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória e percorreram trajetórias diferentes. No entanto, pode-se perceber que os vetores deslocamento dos dois são iguais (flecha roxa na figura). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (de `A` para `B`) e não a trajetória percorrida. 
 
-[FIGURA]
+.. _fig-geometria-operacoesvetores-01:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corridavetores.jpg
+   :width: 200px
+   :align: center
+
+   Jogo Corrida de Vetores.
 
 Vamos analisar as duas primeiras jogadas do competidor verde. Perceba primeiramente que o jogador escolhe uma carta que possui uma movimentação vertical para a primeira jogada e a partir de `A` alcança o ponto `P`. Portanto, associado a primeira jogada está o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele escolhe a mesma carta, mas agora ela deve ser utilizada a partir do ponto em que ele parou na rodada anterior, o ponto `P`. Como o ponto `Q` foi alcançado na segunda rodada, associamos o vetor `\overrightarrow{PQ}`. 
 
-Considerando as duas jogadas consecutivas, o jogador verde saiu de `A` e chegou em `Q`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PQ}` é o vetor que liga `A` e `Q` (ver figura abaixo - direita). Neste caso diremos que
+.. _fig-geometria-operacoesvetores-02:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jogadascorridavetores1.jpg
+   :width: 200px
+   :align: center
+
+   Duas jogadas do competidor verde.
+
+Considerando as duas jogadas consecutivas, o jogador verde saiu de `A` e chegou em `Q`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PQ}` é o vetor que liga `A` e `Q` (ver figura acima). Neste caso diremos que
 
 .. math::
 
@@ -232,19 +246,31 @@ Considerando as duas jogadas consecutivas, o jogador verde saiu de `A` e chegou 
 
 Se analisarmos de maneira análoga as duas primeiras jogadas do jogador laranja, percebemos que a mesma carta foi escolhida pelos dois competidores na primeira jogada. Sendo assim, mais uma vez a primeira rodada será representada pelo vetor `\overrightarrow{AP}`. Já para a segunda jogada foi escolhida uma carta com uma movimentação na diagonal. Com este movimento, e possível sair de `P` e atingir `R`, o que nos permite representar essa jogada pelo vetor `\overrightarrow{PR}`.
 
-Após realizar as duas jogadas consecutivas, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Logo, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver figura abaixo - direita). Neste caso diremos que 
+.. _fig-geometria-operacoesvetores-03:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jogadascorridavetores2.jpg
+   :width: 200px
+   :align: center
+
+   Duas jogadas do competidor verde.
+
+Após realizar as duas jogadas consecutivas, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Logo, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver figura acima). Neste caso diremos que 
 
 .. math::
 
    \overrightarrow{AP}+\overrightarrow{PR}=\overrightarrow{AR}.
-   
-[FIGURA]
 
 O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da corrida de vetores pode ser usado em qualquer situação e é conhecido como *Regra do Triângulo*:
 
 Dados dois vetores deslocamento `\overrightarrow{AB}` e `\overrightarrow{BC}`, sua soma é dada pelo vetor deslocamento `\overrightarrow{AC}`.
 
-[FIGURA]
+.. _fig-geometria-operacoesvetores-04:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=regratriangulo.jpg
+   :width: 200px
+   :align: center
+
+   Regra do triângulo para somar dois vetores.
 
 Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. Para generalizar a operação de soma de dois vetores, utilizaremos apenas seu conceito matemático sem considerar suas propriedades físicas. Neste caso, vetor é apenas um segmento de reta orientado que possui módulo, direção e sentido. 
 
