@@ -66,6 +66,7 @@ Atividade: Colorindo o mapa
    
    Levar o estudante a:
    
+   * Nível de abstração *Processo/Ação*.
    * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade.
    * Distinguir quais relações são univocamente determinadas.
    
@@ -148,6 +149,7 @@ Atividade: É função?
    
    Levar o estudante a:
    
+   * Nível de abstração *Processo*.
    * Perceber as diferentes relações que podem ser estabelecidas entre os conjuntos de dados (tempo, cor do mapa e velocidade média) apresentados na atividade Colorindo o Mapa.
    * Distinguir quais relações são univocamente determinadas.
    
@@ -204,6 +206,7 @@ Atividade: Não é função!
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Processo*.
    * Esta é a oportunidade para reforçar os principais pontos envolvidos na definição de função que foi apresentada na seção organizando as ideias.
 
 Considere a relação no conjunto dos números inteiros que associa dois elementos `a` e `b`, nesta ordem, se `b` for múltiplo de `a`. Sendo assim, `(2,4)` é um par ordenado desta relação, pois `4` é múltiplo de `2`, mas `(4,2)` não é.
@@ -235,6 +238,7 @@ Atividade: A fila*
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Processo*.
    * No item (b) desejamos que os estudantes percebam que como as pessoas representadas pelos pontos `1` e `4` possuem a mesma altura porém idades diferentes, então a relação que associa a altura com a idade, nesta ordem, não é função.
 
 Cada ponto do gráfico abaixo representa uma das seguintes pessoas.
@@ -248,7 +252,7 @@ Cada ponto do gráfico abaixo representa uma das seguintes pessoas.
 
 .. _fig-altura-idade:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=altura_idade.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=altura_idade1.png
    :width: 600px
    :align: center
 
@@ -258,6 +262,11 @@ Cada ponto do gráfico abaixo representa uma das seguintes pessoas.
 #. A relação que associa a altura com a idade para cada uma das pessoas acima é função? Por que?
 
 *Adaptado de The Language of Functions and Graphs, Shell Centre for Mathematical Education Publications Ltd., 1985.
+
+
+.. admonition:: Resposta 
+
+   O ponto `7` representa o bebê Gavin, ponto `6` Cathy, ponto `4` Brenda, `1` Dennis, `3` Freda, `2` Alice e ponto `5` Errol.
 
 Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Por isso, daqui por diante, quando estivermos considerando funções numéricas, o contradomínio será igual a `\mathbb{R}`. 
 
@@ -329,6 +338,7 @@ Atividade: Praticando a notação
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Ação*.
    * Muitos estudantes cometem erros relacionados com o uso da notação funcional. É comum, por exemplo, se confundirem ao determinar `f(-2)` para `f(x)=x^2`, fazendo `f(-2)=-2^2=-4`.
 
 Utilize as expressões analíticas dadas abaixo para encontrar cada um dos valores na tabela. Em seguida faça as operações indicadas e complete a tabela.
@@ -363,6 +373,33 @@ Utilize as expressões analíticas dadas abaixo para encontrar cada um dos valor
     +---------------------+-------------------+
 
 
+.. admonition:: Resposta 
+
+   	.. table:: 
+    	   :widths: 6 6
+    	   :column-alignment: center center
+    
+    +---------------------+-------------------+
+    | Notação             | Valor             |
+    +=====================+===================+
+    | `f(1)+g(1)`         | 8                 |
+    +---------------------+-------------------+
+    | `g(0)-k(-1)`        |  `-\dfrac{46}{3}` |
+    +---------------------+-------------------+
+    | `k(0).f(-2)`        |   `20`            |
+    +---------------------+-------------------+
+    | `f(0)+h(0)-1`       | `-8`              |
+    +---------------------+-------------------+
+    | `f(-2).g(-2)+k(2)`  |  `\dfrac{36}{5}`  |
+    +---------------------+-------------------+
+    |`\dfrac{f(-3)}{k(0)}`|  `\dfrac{6}{5}`   |
+    +---------------------+-------------------+
+    |`x` quando `h(x)=0`  |  `\dfrac{7}{2}`   |
+    +---------------------+-------------------+
+    |`x` quando `h(x)=3`  |   `5`             |
+    +---------------------+-------------------+
+
+
 .. _ativ-funcoes-enchendo-o-cone:
 
 Atividade: Enchendo o cone
@@ -380,6 +417,7 @@ Atividade: Enchendo o cone
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Ação*.
    * É importante que o estudante perceba a relação existente entre a altura do nível da água no reservatório e o volume do mesmo.
    * Essa pode também ser uma oportunidade para explorar a conversão de unidades. Sabemos que a expressão `V=\dfrac{1}{3}(\pi r^2)h` nos fornece o volume do cone como função do raio `r` e da altura `h` do nível de água. A partir das dimensões fornecidas pelo enunciado percebemos que `r=\dfrac{h}{2}` e, portanto, `V(h)=\dfrac{1}{3}\pi\dfrac{h^3}{4}` é o volume de água no reservatório, em metros cúbicos, correspondente a uma altura de `h` metros. Aproximando `\pi` por `3` obtemos que o volume é dado, aproximadamente, por `V(h)=\dfrac{h^3}{4}` em metros cúbicos, cujo equivalente em litros será `V(h)=250h^3`.  
    
@@ -422,6 +460,7 @@ Atividade: Uniformemente variado
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Ação*.
    * Chamar atenção do estudante para o importante papel que as funções desempenham na Física, em especial na Mecânica Clássica, relacionando grandezas como tempo, deslocamento, velocidade e aceleração.
 
 A posição `S` em quilômetros de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` medido em horas pela seguinte expressão:
@@ -446,11 +485,6 @@ b) Após quanto tempo o veículo estará a 18km da origem?
 Aprofundando o assunto
 ====================
 
-
-.. admonition:: Para o professor
-
-   Nessa seção são propostas três atividades: a primeira visa explorar a definição de função de um ponto de vista um pouco mais abstrato, a segunda trata da determinação do conjunto imagem de funções reais e a terceira investiga sob que condições podemos afirmar que duas funções são iguais.
-
 .. _ativ-nao-funcao:
 
 Atividade: Por que não é função?
@@ -466,6 +500,7 @@ Atividade: Por que não é função?
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Processo*.
    * Procure incentivar que os estudantes se manifestem verbalmente, expressando seu entendimento sobre a relação dada. Para a primeira relação, por exemplo, sugerimos que seja considerado em um primeiro momento o conjunto formado por todos os estudantes da sala. Possivelmente heverá estudantes sem irmãos e estudantes com mais de um irmão.
 
 
@@ -476,14 +511,14 @@ Vimos que para que uma relação seja uma função não pode haver:
 
 Identifique em cada uma das relações abaixo qual (ou quais) dos itens acima fazem com que elas deixem de ser função.
 
-a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa o seu irmão.
+a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa seu irmão.
 b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
 c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
 
 
 .. admonition:: Resposta 
 
-   #. Ao escolhermos uma pessoa no conjunto `\mathcal{P}` para tentarmos associá-la ao seu irmão três coisas poderão ocorrer: ela não possui irmão, ela possui um único irmão ou ela possui mais de um irmão. Caso ela não tenha irmão teremos elemento do domínio sem imagem e caso ela tenha mais de um irmão haverá ambiguidade na determinação da imagem. Por isso a relação não define uma função.
+   #. Ao escolhermos uma pessoa no conjunto `\mathcal{P}` para tentarmos associá-la ao seu irmão três coisas poderão ocorrer: ela não possuir irmão, ela possuir um único irmão ou ela possuir mais de um irmão. Caso ela não tenha irmão teremos elemento do domínio sem imagem e caso ela tenha mais de um irmão haverá ambiguidade na determinação da imagem. Por isso a relação não define uma função.
    
    #. Como não existe em `\mathbb{R}` raiz quadrada de número negativo a relação dada não se aplica aos números reais negativos, isto é, por exemplo o número real `-1` não pode ser associado à `\sqrt{-1}`, uma vez que `\sqrt{-1}` não pertence ao conjunto dos números reais. Portanto, haverá elementos (todos os números reais negativos) sem imagem.
    
@@ -504,6 +539,7 @@ Atividade: Qual é a imagem?
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Ação*.
    * É importante que o estudante perceba as restrições para a escolha de `x` impostas por algumas das expressões dadas.
 
 Navegando pela internet, um estudante encontrou a seguinte lista de expressões algébricas. 
@@ -523,32 +559,54 @@ Como estava estudando funções ele resolveu escolher para cada expressão um do
     :widths: 3 3 3
     :column-alignment: center center center
     
-    +-------------+-----------------------------+---------------------+
-    | Expressão   |         domínio `A`         |  Imagem             |
-    +=============+=============================+=====================+
-    |    `(a)`    |        `\mathbb{R}^+`       |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(b)`    |                             |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(c)`    |                             |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(e)`    |                             |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(f)`    |                             |   `[7,+\infty[`     |
-    +-------------+-----------------------------+---------------------+
-    |    `(g)`    |                             |                     |
-    +-------------+-----------------------------+---------------------+
-    |    `(h)`    |                             |                     |
-    +-------------+-----------------------------+---------------------+
+    +-------------+-----------------------------+---------------------------+
+    | Expressão   |         domínio `A`         |  Imagem                   |
+    +=============+=============================+===========================+
+    |    `(a)`    |        `\mathbb{R}^+`       |                           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(b)`    |                             |                           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(c)`    |                             |`\mathbb{R}\setminus \{0\}`|
+    +-------------+-----------------------------+---------------------------+
+    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(e)`    |                             |                           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(f)`    |                             |   `[7,+\infty[`           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(g)`    |                             |                           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(h)`    |                             |                           |
+    +-------------+-----------------------------+---------------------------+
 
 Ajude o estudante a completar a tabela.
 
 
 .. admonition:: Resposta 
 
-   texto
+   	.. table:: 
+    	   :widths: 3 3 3
+    	   :column-alignment: center center center
+    
+    +-------------+-----------------------------+---------------------------+
+    | Expressão   |         domínio `A`         |  Imagem                   |
+    +=============+=============================+===========================+
+    |    `(a)`    |        `\mathbb{R}^+`       |  `\mathbb{R}^+`           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(b)`    |  `[5,+\infty[`              |  `\mathbb{R}^+`           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(c)`    | `\mathbb{R}\setminus \{3\}` |`\mathbb{R}\setminus \{0\}`|
+    +-------------+-----------------------------+---------------------------+
+    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |`\mathbb{R}\setminus \{0\}`|
+    +-------------+-----------------------------+---------------------------+
+    |    `(e)`    | `]0,+\infty[`               | `]0,+\infty[`             |
+    +-------------+-----------------------------+---------------------------+
+    |    `(f)`    |  `\mathbb{R}`               |   `[7,+\infty[`           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(g)`    |  `\mathbb{R}`               |   `[8,+\infty[`           |
+    +-------------+-----------------------------+---------------------------+
+    |    `(h)`    |    `\mathbb{R}`             |   `[-3,+\infty[`          |
+    +-------------+-----------------------------+---------------------------+
 
 .. _ativ-funcoes-obtendo-expressoes:
 
@@ -566,10 +624,11 @@ Atividade: Obtendo expressões
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Completar....
+   * Nível de abstração *Objeto*.
+   * No item a) a resposta é única, no entanto no item b), existem infinitas expressões polinomiais que interpolam os pontos dados. Para saber mais sobre o assunto pesquise sobre polinômio interpolador de Lagrange.
 
 
-Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f: A \to \mathbb{R}` que associe `x` a `y`, isto é, `y=f(x)`, especifique em cada caso o conjunto domínio.
+Para cada uma das tabelas abaixo obtenha uma possível expressão para uma função `f: A \to \mathbb{R}` que associe `x` a `y`, isto é, `y=f(x)`. Especifique em cada caso o conjunto domínio.
 
 #.
 
@@ -619,7 +678,15 @@ Para cada uma das tabelas abaixo obtenha uma possível expressão para uma funç
       |3                    |    4,5            |
       +---------------------+-------------------+
 
-    
+
+
+.. admonition:: Resposta 
+
+   #. `f(x)=2x+1` com domínio `A=\{-3, -2, -1, 0, 1, 2, 3 \}`.
+   
+   #. `f(x)=\dfrac{x^2}{2}` com domínio `A=\{-3, -2, -1, 0, 1, 2, 3 \}`.
+
+
 Será que as expressões obtidas por você na atividade acima são únicas. Ou seja, será possível existirem duas expressões algébricas diferentes que gerem a mesma tabela?
 Verifique com os seus colegas se vocês obtiveram as mesmas expressões na atividade anterior.
 
@@ -627,21 +694,39 @@ Verifique com os seus colegas se vocês obtiveram as mesmas expressões na ativi
 
 #. Complete a tabela abaixo, sabendo que `f(x)=8x` e `g(x)=2x^3`. Conclua que apesar de se tratar de expressões diferentes, elas produzem a mesma imagem nos valores de `x` dados na tabela. 
 
+.. table:: 
+    :widths: 5 5 5
+    :column-alignment: center center center
 
-  .. table:: 
-      :widths: 10 10 10
-      :column-alignment: center center center
+    +---------------------+-------------------+-------------------+
+    | `x`                 | `f(x)`            |`g(x)`             |
+    +=====================+===================+===================+
+    |-2                   |                   |                   |
+    +---------------------+-------------------+-------------------+
+    | 0                   |                   |                   |
+    +---------------------+-------------------+-------------------+
+    | 2                   |                   |                   |
+    +---------------------+-------------------+-------------------+
 
-      +---------------------+-------------------+-------------------+
-      | `x`                 | `f(x)`            |`g(x)`             |
-      +=====================+===================+===================+
-      |-2                   |                   |                   |
-      +---------------------+-------------------+-------------------+
-      | 0                   |                   |                   |
-      +---------------------+-------------------+-------------------+
-      | 2                   |                   |                   |
-      +---------------------+-------------------+-------------------+
-   
+
+.. admonition:: Resposta 
+
+   #. Calculando os valores da função `g` nos pontos `x` dados na tabela a) obtemos:`g(-3)=-5`, `g(-2)=-3`, `g(-1)=-1`, `g(0)=1`, `g(1)=3`, `g(2)=5` e `g(3)=7`. Calculando agora os valores da função `h` nos pontos `x` dados na tabela b) obtemos: `h(-3)=4,5`, `h(-2)=2`, `h(-1)=0,5`, `h(0)=0`, `h(1)=0,5`, `h(2)=2` e `h(3)=4,5`. Comprovamos portanto que as funções `g` e `h` geram as tabelas dos itens a) e b) acima.
+
+   #.
+     .. table:: 
+         :widths: 5 5 5
+         :column-alignment: center center center
+
+         +---------------------+-------------------+-------------------+
+         | `x`                 | `f(x)`            |`g(x)`             |
+         +=====================+===================+===================+
+         |-2                   |  `-16`            | `-16`             |
+         +---------------------+-------------------+-------------------+
+         | 0                   |   `0`             |  `0`              |
+         +---------------------+-------------------+-------------------+
+         | 2                   |   `16`            |  `16`             |
+         +---------------------+-------------------+-------------------+
 
 .. admonition:: Pausa Para Reflexão
 
@@ -652,7 +737,7 @@ Primeiro vamos lembrar que para definir uma função precisamos estabelecer clar
 
 .. admonition:: Definição 
 
-   Duas funções `f` e `g` são iguais quando têm o mesmo domínio, digamos `A`, e para todo `x\in A`, tem-se `f(x)=g(x)`.
+   Duas funções reais `f` e `g` são iguais quando têm o mesmo domínio, digamos `A`, e para todo `x\in A`, tem-se `f(x)=g(x)`.
 
 Por exemplo, nas tabelas da atividade anterior, caso o domínio considerado seja formado apenas pelos pontos da primeira coluna, então as duas expressões apresentadas para cada tabela, definem a mesma função. Que tal verificar para outros domínios?
 
