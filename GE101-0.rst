@@ -286,14 +286,16 @@ Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando 
    A soma de vetores é a operação que a cada par de vetores `\overrightarrow{AB}` e `\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, ou seja, 
    
    .. math::
-	      \overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
+	      \overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BC}.
 
 .. admonition:: Pausa Para Reflexão
 
     #. O elemento matemático vetor, que é um segmento de reta orientado que possui módulo, direção e sentido, depende de seu ponto inicial e final? Por que?
-    #. Quais as características dois vetores devem satisfazer para serem iguais?
+    #. Quais características devem dois vetores satisfazer para serem iguais?
+    
+.. LC: Será que apenas essa pausa para reflexão é suficiente para falar que vetores não dependem do ponto inicial para serem iguais?
 
-O que estudamos até aqui nos permite somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não acontença, como devemos realizar essa operação? Neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
+O que estudamos até aqui nos permite somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não acontença, é possível realizar essa operação? Sim, mas neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
 
 .. _fig-geometria-operacoesvetores-05:
 
@@ -306,7 +308,26 @@ O que estudamos até aqui nos permite somar dois vetores onde o ponto final do p
 Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B que possui o mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BD'}` são iguais, então
 
 .. math::
-  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD}.
+  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD'}.
+  
+Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
+
+* O vetor nulo `\vec{0}` é o elemento neutro da soma de vetores. Como os pontos inicial e final de `\vec{0}` coincidem, pela regra do triângulo, a soma de `\overrightarrow{AB}` e `\vec{0}` é o vetor que começa em `A` e termina em `B`. Assim, `\overrightarrow{AB}+\vec{0}=\overrightarrow{AB}`. Analogamente podemos perceber que `\vec{0}+\overrightarrow{AB}=\overrightarrow{AB}`. Assim,
+
+.. math::
+
+   \overrightarrow{AB}+\vec{0}=\vec{0}+\overrightarrow{AB}=\overrightarrow{AB}.
+* Pela regra do triângulo, repare que `\overrightarrow{AB}+\overrightarrow{BA}=\overrightarrow{AA}=\vec{0}`. Não é difícil perceber que o vetor `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos diferentes. Neste caso, escreveremos `\overrightarrow{AB}=-\overrightarrow{BA}` e diremos que `\overrightarrow{BA}` é o vetor simétrico de `\overrightarrow{AB}`.
+[FIGURA]
+
+* Note que `(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}` e `\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}`. Logo, podemos concluir que a soma de vetores é associativa, ou seja, 
+
+.. math::
+
+   (\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD}).
+   
+[FIGURA]
+
   
 **MULTIPLICAÇÃO DE UM VETOR POR UM ESCALAR**
 
@@ -314,25 +335,26 @@ Apresentaremos agora uma operação que envolverá uma grandeza escalar e uma gr
 
 Mais uma vez começaremos com o exemplo da corrida de vetores apresentado anteriormente e depois usaremos apenas o conceito matemático de vetor para generalizar a operação. Já vimos anteriormente que as duas primeiras jogadas do jogador verde foram feitas com o mesmo tipo de carta. Ao repetir duas vezes a mesma jogada, estamos, então, posicionando dois vetores iguais de maneira adjacente. Diremos que a operação de repetir duas vezes um mesmo vetor de maneira adjacente é a multiplicação desse vetor por `2`. 
 
+[FIGURA]
+
 Com a notação que já usamos anteriormente e observando a geometria da situação na figura acima, vejamos quais condições o vetor `\overrightarrow{AQ}`, que é o resultado da multiplicação de `\overrightarrow{AP}` por `2`, satisfaz:
 
 * O módulo do vetor `\overrightarrow{AQ}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AP}` por `2`;
 * `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo ponto inicial `A`;
-* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma direção;
+* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma direção, definida pela reta que passa por `A` e `P`;
 * `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo sentido.
 
-O que acontece se na operação anterior, trocarmos `2` por um número natural `a`? Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e intuitivamente, podemos perceber que será muito semelhante ao que foi descrito antes (lembrando que o módulo de `\overrightarrow{AP}` seria então multiplicado por `a` para encontrar o módulo de `\overrightarrow{AQ}`). 
+O que acontece se na operação anterior, trocarmos `2` por um número real `a`? Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e intuitivamente, podemos perceber que será muito semelhante ao que foi descrito antes. 
 
 Você pode estar se perguntando por que `a` tem que ser um número natural e não um número real. Sim, `a` pode ser um número real! Precisamos agora dar um passo maior e fazer uma generalização da operação descrita anteriormente. 
-
 
 .. admonition:: Definição 
 
    O produto de um número real `a` por um vetor `\overrightarrow{AB}` é o vetor `a \overrightarrow{AB}` que satisfaz as seguintes propriedades:
    
-   * O módulo do vetor `a \overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `a`;
+   * O módulo do vetor `a \overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `|a|`;
    * `\overrightarrow{AB}` e `a \overrightarrow{AB}` possuem o mesmo ponto inicial `A`;
-   * `\overrightarrow{AB}` e `a \overrightarrow{AB}` possuem direção, determinada pela reta que passa por `A` e `B`;
+   * `\overrightarrow{AB}` e `a\overrightarrow{AB}` possuem direção, determinada pela reta que passa por `A` e `B`;
    * `\overrightarrow{AB}` e `a \overrightarrow{AB}` possuem o mesmo sentido, se `a` for positivo (como foi o caso estudado antes) e possuem sentidos opostos, se `a` for negativo. 
 
 
