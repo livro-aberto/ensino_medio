@@ -1,10 +1,21 @@
 .. HJB: no capítulo de abertura do livro, colocar sobre a questão do uso das palavras (argumento Humpty-Dumpty) e sobre a questão da notação matemática.
 
-.. HJB: na abertura do livro, colocar o exemplo de modelagem dado pelo Ralph sobre mapa do metrô.
+.. HJB: na abertura do livro, colocar o exemplo de modelagem dado pelo Ralph sobre mapa do metrô. No exemplo , neste capítulo, da pista de Interlagos, há o uso deste tipo de simplificação.
+
+.. HJB: a pedido do Fábio, incluir alguma informação sobre velocidades relativas.
+
+.. HJB: por que usar deslocamentos se já existe o conceito de distância percorrida? Uma resposta: porque algumas leis da Física (por exemplo, o cálculo do trabalho) depende apenas do deslocamento! Observar isso para o aluno.
+
+.. HJB: não esquecer de colocar a aplicação de motion vector.
+
 
 .. admonition:: Para o professor
 
    Esta lição tem por objetivo introduzir o conceito de vetor no plano de forma articulada e integrada com situações estudadas na Física.
+   
+   Algumas observações metodológicas: 
+   
+   * As seções sob o título "Pausa Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno para depois fazer um fechamento acerca das questões abordadas.   
 
 .. HJB: não esquecer de falar que direção pode ter mais do que um significado (direção nordeste vs. ir na direção da praça central da cidade). Aqui, direção nordeste é um bom exemplo para relacionar com o conceito de direção como usado em vetores.
 
@@ -52,9 +63,11 @@ representa a localização de uma estação de pesquisa `A` na Antártida.
 
 .. _fig-geometria-vp-01:
 
-.. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-vp-01.jpg
+.. figure:: _resources/geometria-vp-01.jpg
    :width: 700px
    :align: center
+   
+   Um problema de localização.
 
 Parte I.
 
@@ -111,9 +124,11 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
 
 .. _fig-geometria-vp-02:
 
-.. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-vp-02.jpg
+.. figure::  _resources/geometria-vp-02.jpg
    :width: 700px
    :align: center
+   
+   Vetores posições relativas do ponto `G` determinados pelos pontos de referência `A` e `B`. 
 
 .. admonition:: Pausa Para Reflexão
 
@@ -121,7 +136,7 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
 
 
 
-Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa "economia" de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `\overline{AG}` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
+Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `\overline{AG}` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\overrightarrow{AG}| = 10~\text{km}`. 
 
 Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais compacta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`. Assim,
@@ -130,15 +145,20 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
 
 .. _fig-geometria-vp-03:
 
-.. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-vp-03.jpg
+.. figure:: _resources/geometria-vp-03.jpg
    :width: 700px
    :align: center
-
+   
+   Notação para vetores.
+   
 .. admonition:: Nota sobre notação e terminologia
 
-    Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
+       
+   Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
     
-    Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
+   Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
+   
+   
 
 
 Antes de prosseguirmos, é importante destacar uma característica importante do vetor posição relativa: ele depende da escolha do ponto de referência. Veja, por exemplo, na situação ilustrada na figura anterior, que a posição `G` é representada por vetores diferentes quando pontos de referências diferentes (`A` e `B`) são escolhidos. 
@@ -146,16 +166,16 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
 
 .. admonition:: Para o professor
 
-   Caso haja disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_>. Com ela, é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente como vetor posição relativa depende da escolha do ponto de referência.
+   Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_>. Com ela,  à título de ilustração dinâmica, é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente como vetor posição relativa depende da escolha do ponto de referência.
 
 		   .. _fig-ggb-vpr-01:
 
-   .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/ggb-vpr-01.jpg
+   .. figure:: _resources/ggb-vpr-01.jpg
       :width: 700px
       :align: center
-
-
-
+      
+      <https://www.geogebra.org/m/kCMtPW5x/>.
+      
 Deslocamentos no plano
 ------------------------------------------
 Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
@@ -166,8 +186,196 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-deslocamento-01.jpg
    :width: 700px
    :align: center
-      
+   
+   Deslocamentos de um carro na pista de Interlagos.
+
+.. admonition:: Para o professor
+
+   Observe que o vetor deslocamento é definido apenas em termos dos pontos inicial e final e estes não mudam com escolhas diferentes para o ponto de referência. Por este motivo, o vetor deslocamento também não muda. Na :numref:`fig-geometria-deslocamento-01`, o ponto de referência `L` não precisa, obrigatoriamente, ser um ponto da pista.
+   
+
 .. admonition:: Pausa Para Reflexão
 
-    #. O deslocamento é uma grandeza escalar ou vetoria?
-    #. Na figura com a pista de Interlagos, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
+    #. O deslocamento é uma grandeza escalar ou vetorial?
+    #. Na :numref:`fig-geometria-deslocamento-01`, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
+
+
+.. admonition:: Para o professor
+
+   Estudos educacionais mostram que os alunos têm a forte tendência em confundir o vetor deslocamento com a trajetória percorrida pelo objeto que se desloca. No sentido de minimizar o efeito deste distrator, caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, à título de ilustração dinâmica, é possível visualizar diversos tipos de deslocamentos entre dois pontos do modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01`.   
+   
+		   .. _fig-ggb-interlagos-01:
+
+   .. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/ggb-interlagos-01.gif
+      :width: 700px
+      :align: center
+      
+      <https://www.geogebra.org/m/f8GCVdyx>.
+      
+   
+
+   
+
+.. _label-hjb-cuidado-01:
+
+.. admonition:: Cuidado! 
+
+    Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai ponto do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento, nada estabelecendo sobre a trajetória percorrida!
+    
+    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. A resposta reside no fato de que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes.
+
+
+
+
+
+Trajetória e Deslocamento
+------------------------------------------
+Na seção anterior, já estudamos o que é deslocamento. Em Física é muito comum confundir deslocamento com trajetória e por isso, discutiremos estes dois conceitos a seguir.
+
+Quando um corpo se move em um intervalo de tempo, ele ocupa diferentes posições, de acordo com um referencial, até chegar ao seu destino. A linha formada por essas posições é chamada :index:`trajetória`. A trajetória de um corpo pode assumir diferentes formas, podendo ser reta ou curva. 
+
+.. admonition:: Para o professor
+
+[EXEMPLO DE TRAJETÓRIA - ESTRADA DOS CARACOIS?]
+
+Pode-se perceber que uma trajetória possui um ponto inicial e um ponto final. O vetor que liga esses dois pontos indica a variação de posição em um intervalo de tempo, e como já vimos anteriormente, esse vetor é chamado de deslocamento. Podemos notar que esse vetor não depende de sua trajetória, mas apenas dos pontos inicial e final da trajetória. 
+
+
+   Texto da resposta.
+   
+   
+
+
+Operações com vetores
+---------
+
+Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado.
+
+
+**SOMA DE VETORES**
+
+Nosso objetivo é entender o que acontece se somarmos dois vetores deslocamento. O primeiro fato que devemos perceber é que, pela definição de vetor deslocamento, a soma de dois vetores deslocamento será sempre um vetor deslocamento. Isso se deve ao fato de que cada vetor representa uma variação de posição e então, se variarmos a posição de dois vetores adjacentes (ponto final do primeiro coincide com o ponto inicial do segundo), podemos representar a variação de posição total por um único vetor deslocamento. A esse vetor daremos o nome de vetor soma. 
+
+A figura abaixo exibe o resultado da Corrida de Vetores (lembra das regras desse jogo apresentado na seção X?)[ver se já terá sido apresentado] disputada entre os competidores das cores laranja e verde, cujo objetivo era sair do ponto `A` e chegar ao ponto `B`. Neste caso, a partida terminou empatada, pois os dois competidores utilizaram o mesmo número de cartas para atingir o ponto final. Na figura, podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória e percorreram trajetórias diferentes. No entanto, pode-se perceber também que os vetores deslocamento dos dois são iguais (flecha preta da figura). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (de `A` para `B`) e não a trajetória percorrida. 
+
+.. _fig-geometria-operacoesvetores-01:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=corridavetores.jpg
+   :width: 200px
+   :align: center
+
+   Jogo Corrida de Vetores.
+
+Vamos analisar as duas primeiras jogadas do competidor verde. Perceba primeiramente que o jogador escolhe uma carta que possui uma movimentação vertical para a primeira jogada e a partir de `A` alcança o ponto `P`. Portanto, associado a primeira jogada está o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele escolhe a mesma carta, mas esta deve ser utilizada a partir do ponto em que ele parou na rodada anterior, o ponto `P`. Como o ponto `Q` foi alcançado na segunda rodada, associamos à segunda rodada, o vetor deslocamento `\overrightarrow{PQ}`. 
+
+.. _fig-geometria-operacoesvetores-02:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jogadascorridavetores1.jpg
+   :width: 200px
+   :align: center
+
+   Duas jogadas do competidor verde na Corrida de Vetores.
+
+Considerando as duas jogadas consecutivas, o jogador verde saiu de `A` e chegou em `Q`. Sendo assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PQ}` é o vetor que liga os pontos `A` e `Q`. 
+
+Se analisarmos de maneira análoga as duas primeiras jogadas do jogador laranja, percebemos que a mesma carta foi escolhida pelos dois competidores na primeira jogada. Sendo assim, mais uma vez a primeira rodada será representada pelo vetor `\overrightarrow{AP}`. Já para a segunda jogada foi escolhida uma carta com uma movimentação na diagonal. Com este movimento, e possível sair de `P` e atingir `R`, o que nos permite representar essa jogada pelo vetor `\overrightarrow{PR}`.
+
+.. _fig-geometria-operacoesvetores-03:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jogadascorridavetores2.jpg
+   :width: 200px
+   :align: center
+
+   Duas jogadas do competidor verde.
+
+Após realizar as duas jogadas consecutivas, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver figura acima). 
+
+O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da corrida de vetores pode ser utilizado sempre que desejarmos somar dois vetores. Este método é conhecido como *Regra do Triângulo*.
+
+.. _fig-geometria-operacoesvetores-04:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=regratriangulo.jpg
+   :width: 200px
+   :align: center
+
+   Regra do triângulo para somar dois vetores.
+   	 
+Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. Para generalizar a operação de soma de dois vetores, utilizaremos apenas seu conceito matemático sem considerar suas propriedades físicas. Neste caso, vetor é apenas um segmento de reta orientado que possui módulo, direção e sentido. 
+
+.. admonition:: Definição 
+
+   A soma de vetores é a operação que a cada par de vetores `\overrightarrow{AB}` e `\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, ou seja, 
+   
+   .. math::
+	      \overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BC}.
+
+.. admonition:: Pausa Para Reflexão
+
+    #. O elemento matemático vetor, que é um segmento de reta orientado que possui módulo, direção e sentido, depende de seu ponto inicial e final? Por que?
+    #. Quais características devem dois vetores satisfazer para serem iguais?
+    
+.. LC: Será que apenas essa pausa para reflexão é suficiente para falar que vetores não dependem do ponto inicial para serem iguais?
+
+O que estudamos até aqui nos permite somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não acontença, é possível realizar essa operação? Sim, mas neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
+
+.. _fig-geometria-operacoesvetores-05:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=somadevetores.jpg
+   :width: 200px
+   :align: center
+
+   Regra do triângulo para somar dois vetores quaisquer.
+
+Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B que possui o mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BD'}` são iguais, então
+
+.. math::
+  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD'}.
+  
+Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
+
+* O vetor nulo `\vec{0}` é o elemento neutro da soma de vetores. Como os pontos inicial e final de `\vec{0}` coincidem, pela regra do triângulo, a soma de `\overrightarrow{AB}` e `\vec{0}` é o vetor que começa em `A` e termina em `B`. Assim, `\overrightarrow{AB}+\vec{0}=\overrightarrow{AB}`. Analogamente podemos perceber que `\vec{0}+\overrightarrow{AB}=\overrightarrow{AB}`. Assim,
+
+.. math::
+
+   \overrightarrow{AB}+\vec{0}=\vec{0}+\overrightarrow{AB}=\overrightarrow{AB}.
+* Pela regra do triângulo, repare que `\overrightarrow{AB}+\overrightarrow{BA}=\overrightarrow{AA}=\vec{0}`. Não é difícil perceber que o vetor `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos diferentes. Neste caso, escreveremos `\overrightarrow{AB}=-\overrightarrow{BA}` e diremos que `\overrightarrow{BA}` é o vetor simétrico de `\overrightarrow{AB}`.
+[FIGURA]
+
+* Note que `(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}` e `\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}`. Logo, podemos concluir que a soma de vetores é associativa, ou seja, 
+
+.. math::
+
+   (\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD}).
+   
+[FIGURA]
+
+  
+**MULTIPLICAÇÃO DE UM VETOR POR UM ESCALAR**
+
+Apresentaremos agora uma operação que envolverá uma grandeza escalar e uma grandeza vetorial. Essa operação será a multiplicação de um vetor deslocamento por um escalar, que fornecerá como resposta um novo vetor deslocamento. Precisamos entender quais propriedades esse novo vetor deve satisfazer e como encontrá-lo.
+
+Mais uma vez começaremos com o exemplo da corrida de vetores apresentado anteriormente e depois usaremos apenas o conceito matemático de vetor para generalizar a operação. Já vimos anteriormente que as duas primeiras jogadas do jogador verde foram feitas com o mesmo tipo de carta. Ao repetir duas vezes a mesma jogada, estamos, então, posicionando dois vetores iguais de maneira adjacente. Diremos que a operação de repetir duas vezes um mesmo vetor de maneira adjacente é a multiplicação desse vetor por `2`. 
+
+[FIGURA]
+
+Com a notação que já usamos anteriormente e observando a geometria da situação na figura acima, vejamos quais condições o vetor `\overrightarrow{AQ}`, que é o resultado da multiplicação de `\overrightarrow{AP}` por `2`, satisfaz:
+
+* O módulo do vetor `\overrightarrow{AQ}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AP}` por `2`;
+* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo ponto inicial `A`;
+* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma direção, definida pela reta que passa por `A` e `P`;
+* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo sentido.
+
+O que acontece se na operação anterior, trocarmos `2` por um número real `a`? Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e intuitivamente, podemos perceber que será muito semelhante ao que foi descrito antes. 
+
+Você pode estar se perguntando por que `a` tem que ser um número natural e não um número real. Sim, `a` pode ser um número real! Precisamos agora dar um passo maior e fazer uma generalização da operação descrita anteriormente. 
+
+.. admonition:: Definição 
+
+   O produto de um número real `a` por um vetor `\overrightarrow{AB}` é o vetor `a \overrightarrow{AB}` que satisfaz as seguintes propriedades:
+   
+   * O módulo do vetor `a \overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `|a|`;
+   * `\overrightarrow{AB}` e `a \overrightarrow{AB}` possuem o mesmo ponto inicial `A`;
+   * `\overrightarrow{AB}` e `a\overrightarrow{AB}` possuem direção, determinada pela reta que passa por `A` e `B`;
+   * `\overrightarrow{AB}` e `a \overrightarrow{AB}` possuem o mesmo sentido, se `a` for positivo (como foi o caso estudado antes) e possuem sentidos opostos, se `a` for negativo. 
+
+

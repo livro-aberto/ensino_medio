@@ -11,14 +11,14 @@
 	* Optamos por apresentar o conceito de função de maneira contextualizada e geral, isto é, não restrito apenas a conjuntos numéricos .
 	* É importante reforçar, inicialmente, a relação de univocidade entre as grandezas como condição para tal relação ser chamada de função. Destacando como a variação de uma ou mais grandezas afeta a variação de outras. Para em seguida, estabelecer, sempre que possível, uma maneira formal de descrever as funções.
 	* Nas atividades extras que você venha a apresentar para seus estudantes é importante estar atento para não reforçar o senso comum de que no cotidiano todas as relações são proporcionais.
-	* O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas. 
-	* São propostas algumas atividades que fazem uso de aplicativos do Geogebra em que é possível explorar diferentes propriedades das funções e seus gráficos e sobretudo analisar variações quando se modificam parâmetros.
+	* O trabalho das conversões entre representações algébricas e gráficas são de vital importância para análise e interpretação das relações existentes entre as variáveis envolvidas.
 	* Ao criar suas próprias atividades, sugerimos que sejam evitadas as que envolvem cálculos algébricos exaustivos.
 	* Incentive e conduza seus estudantes a expressarem seus raciocínios de maneira precisa, mesmo que seja apenas usando palavras.
 
+	
 	**[Caixa em destaque com uma tag "O que dizem as pesquisas sobre o tema?"]**
 
-	A noção de função é considerada uma das mais importantes da matemática. Segundo PONTE (1992), assim como o ponto, a reta e o plano foram os elementos básicos da Geometria Euclidiana, o conceito de função foi um dos fundamentos da Análise Matemática. Documentos oficiais como os Parâmetros Curriculares Nacionais do Ensino Médio (PCNEM) e a (segunda versão da) Base Nacional Comum Curricular (BNCC)  evidenciam a preocupação com tal conteúdo no Ensino Médio, trazendo inclusive sugestões no que diz respeito a sua abordagem.
+	A noção de função é considerada uma das mais importantes da matemática. Segundo Ponte [Ponte-1992]_, assim como o ponto, a reta e o plano foram os elementos básicos da Geometria Euclidiana, o conceito de função foi um dos fundamentos da Análise Matemática. Documentos oficiais como os Parâmetros Curriculares Nacionais do Ensino Médio (PCNEM) e a (segunda versão da) Base Nacional Comum Curricular (BNCC)  evidenciam a preocupação com tal conteúdo no Ensino Médio, trazendo inclusive sugestões no que diz respeito a sua abordagem.
 
 		Nessa etapa de escolaridade, merece especial destaque o estudo das funções por seu papel como modelo matemático para analisar e interpretar relações de dependência entre variáveis de duas grandezas em fenômenos do mundo natural ou social, incluindo os trabalhados em componentes de outras áreas de conhecimento[...] [BNCC-2016,p.576]_
   
@@ -30,12 +30,12 @@
 
 	Segundo Eisenberg [Eisenberg-1992]_, os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente, mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico.
 
-	Jones [Jones-2006]_ chama atenção para os três níveis de abstração nos quais podemos situar o entendimento do conceito de função:  como ação, como processo e como objeto.
+	Jones [Jones-2006]_ chama atenção para os três níveis de abstração nos quais podemos situar o entendimento do conceito de função:  como ação, como processo e como objeto. O nível de ação é aquele em que são conhecidas todas as ações que devemos tomar para converter a variável independente `x` na sua imagem, por exemplo: tome `x`, primeiro eleve ao quadrado e então subtraia do seu dobro. Nesse nível de abstração, que é mais simples entre os três, os procedimentos e algoritmos estão bem definidos. A ideia de função como processo está diretamente relacionada com o nível de ação, no sentido de que a partir da variável `x` chega-se por um processo à variável `y`. Contudo nesse nível de abstração os procedimentos algorítmicos não são tão importantes como no nível anterior. Aqui as funções que não envolvem conjuntos numéricos fazem mais sentido, apoiadas pela ideia de correspondência entre conjuntos. Por exemplo, uma atividade que envolva uma tabela, sem especificar a expressão algébrica ou algoritmo que a gerou pode se classificar como processo. Finalmente, o nível de objeto é o mais abstrato entre os três. Uma função nesse nível passa a ser considerada como parte de um universo de outras funções. Torna-se um elemento dentro de um conjunto. Nesse nível estão as operações com as funções, soma, produto, composição, derivada, integral etc.
 
-	.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=niveis_abstracao.png
+	.. figure:: _resources/niveis_abstracao_1.png
 	   :width: 300px
 	   :align: center
-    
+      
 	Procuramos, assim, dosar as atividades propostas com o objetivo de não privilegiar o pensamento algébrico em detrimento da visualização e buscando atingir os diferentes níveis de abstração indicados acima.
 
 	Em um primeiro momento vamos investigar a forma como diferentes grandezas se relacionam enfatizando quais dessas relações de fato podem ser chamadas de funções. Com efeito, durante a busca por tais relações, é muito mais comum nos depararmos com aquelas que não podem ser consideradas funções. Portanto, faz-se necessário estar atento para que se possa extrair todas as potencialidades das verbalizações expressas pelos próprios estudantes.
@@ -90,6 +90,7 @@ Atividade: Pluviometria no Sistema Cantareira
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
+   * Nível de abstração *Processo*.
    * Os valores apresentados pelo gráfico são apenas estimativas. Caso haja interesse, visitando a página indicada na legenda é possível ter acesso aos valores exatos para cada mês passando o mouse sobre o gráfico, contudo, o período apresentado na atividade pode ser diferente do que você vai encontrar na página. Você pode modificar a atividade usando os dados atualizados.
    * No item (b) estamos interessados no valor absoluto da diferença, não importando qual deles é maior que o outro.
    * No item (d) auxilie seus estudantes na elaboração do texto, sinalizando que ele deve perceber o aumento ou a diminuição no nível de água armazenado no Sistema, relacionando com a variação da pluviometria.
@@ -100,7 +101,7 @@ As chuvas são a principal fonte de água para os reservatórios que abastecem a
 O gráfico seguinte mostra a pluviometria (em milímetros) da chuva real comparada com a chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=cantareira_chuva.png
+.. figure:: _resources/cantareira_chuva.png
    :width: 900px
    :align: center
 
@@ -125,13 +126,14 @@ d) Descreva o impacto sobre a variação do nível de água nos reservatórios d
 .. _ativ-funcoes-numeros-triangulares:
 
 Atividade: Números triangulares
---------------------
+-------------------------------
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
    Levar o estudante a:
    
+   * Nível de abstração *Ação*.
    * Reconhecer um padrão geométrico nos primeiros termos de uma sequência e ser capaz de, a partir dele, inferir os próximos termos da sequência.
    * Generalizar, ainda que em palavras, o padrão observado.
    
@@ -213,6 +215,7 @@ Atividade: Arranha-céu
    **OBJETIVOS ESPECÍFICOS**
    Levar o estudante a:
    
+   * Nível de abstração *Processo*.
    * Interpretar os dados da tabela fazendo a conexão com a situação apresentada.
    * Perceber a relação entre as variáveis e resgatar a ideia de variação a partir da noção de proporcionalidade (taxa de variação constante).
    
@@ -221,7 +224,7 @@ Atividade: Arranha-céu
    * A escolha dessa atividade se apoia no fato de que os estudantes têm familiaridade com a noção de proporcionalidade, que é explorada tanto em álgebra quanto em geometria, desde os anos iniciais do ensino fundamental.
    * Deseja-se, entretanto, que os estudantes sempre levem em conta o contexto do problema. 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=burj-khalifa.jpeg
+.. figure:: _resources/burj-khalifa.jpeg
    :width: 200px
    :align: center
 
