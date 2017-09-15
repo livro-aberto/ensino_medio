@@ -274,7 +274,8 @@ Operações com vetores
    
    Levar o estudante a:
    
-   *  compreender e realizar operações com vetores.
+   * compreender vetores do ponto vista matemático;
+   * compreender e realizar operações com vetores.
 
 
 Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
@@ -343,4 +344,30 @@ Intuitivamente podemos imaginar o que aconteceria se repetíssemos a mesma carta
 
 .. admonition:: Para o professor
 
-   Observe que a soma de vetores e a multiplicação de um vetor por um escalar foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*.  
+   Observe que a soma de vetores e a multiplicação de um vetor por um escalar foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
+   
+Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo.
+
+A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados agora em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. Vamos começar? 
+
+.. admonition:: Definição 
+
+   Vetor é um segmento de reta orientado que possui módulo, direção e sentido.
+   
+O módulo do vetor é o comprimento do segmento de reta, ou seja, a distância entre seus pontos extremos. Já a direção e sentido estão ligados à orientação que está sendo adicionada ao segmento. 
+
+É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Caso a professora pedisse que Catarina e Ana, que também estão afastadas na sala de aula, se movimentassem na direção nordeste, as duas alunas andariam seguindo direções paralelas. A mesma palavra direção gerou trajetórias que se encontram e trajetórias paralelas. No universo matemático, isso não poderia acontecer.
+
+[FIGURA]
+
+Em Matemática, quando dois objetos possuem a mesma direção significa que eles estão sobre uma mesma reta ou em retas paralelas. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma mesma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+
+Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e também as retas onde esses vetores estão contidos.  Vamos estudar a direção e sentido de todos os pares de vetores da figura:
+
+* `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta, mas possuem sentidos opostos;
+* `\vec{u}` e `\vec{w}` possuem a mesma direção por estarem sobre retas paralelas e possuem o mesmo sentido;
+* `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas paralelas, mas possuem sentidos opostos.
+
+[FIGURA]
+   
+   
