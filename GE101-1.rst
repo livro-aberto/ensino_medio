@@ -4,18 +4,9 @@
 Vetores do ponto de vista algébrico
 ***********************************
 
-Termos a serem definidos neste capítulo e devem ir para o glossário:
-
-#. origem e extremidade de um vetor dado
-#. multiplicação por escalar
-#. soma ou adição de vetores
-#. vetores paralelos
-#. vetores unitários
-#. vetores perpendiculares
-
-Nesta seção você vai aprender a representar vetores através de uma lista de números que serão chamados de *coordenadas do vetor*. 
-Esta representação possibilita que os computadores entendam e operem com vetores (uso em outras áreas) e também serão fundamentais para o estudo das transformações do plano (permite o avanço nos estudos de matemática). 
-Além disso ela permite o uso de propriedades do conjunto dos números reais para justificar as propriedades associativa e distributiva da multiplicação de um vetor por um número (vantagem técnica dentro da matemática).
+Nesta seção você vai aprender a representar vetores através de um par ordenado de números reais, que serão chamados de *coordenadas do vetor*. 
+Esta representação possibilita que os computadores entendam e operem com vetores e também serão fundamentais para o estudo das transformações do plano, que serão estudadas mais adiante. 
+Além disso ela permite usar propriedades do conjunto dos números reais para justificar as propriedades das operações com vetores.
 
 
 .. _ativ-vetores-vetor-malha:
@@ -104,7 +95,8 @@ Com a mesma linguagem da atividade anterior, faça o que se pede:
 
    texto da resposta
 
-Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y`. 
+Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. 
+Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y` e isto deve significar: tomando como origem um ponto `O` qualquer do plano, `\vec{w}` é o vetor `\overrightarrow{OP}` onde `P` é obtido andando-se `x` unidades na direção e sentido de `\vec{u}` a partir de `O` e então andando-se `y` unidades na direção e sentido de `\vec{v}`. Veja o exemplo.
 
 .. tikz:: Dois vetores de direções diferentes determinam uma malha.
    
@@ -139,22 +131,25 @@ Embora uma discussão mais geral seja útil para estudantes da área de exatas, 
 
 .. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
 
-Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. Do ponto de vista matemático, vetores não precisam de um ponto de referência, como a origem de um sistema de coordenadas para serem descritos, bastam dois vetores não paralelos conhecidos para descrever qualquer outro vetor do plano. Os demais podem ser descritos como três de `\vec{u}` e quatro de `\vec{v}`, por exemplo. Por isso vetores podem descrever grandezas relativas como deslocamento, velocidade e força. Mas na prática usa-se vetores também para descrever a posição de um objeto em relação a um ponto de referência, que passa a ser a origem do vetor e representar este vetor com outra origem pode trazer a perda do sentido físico de posição. 
+Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. 
 
 Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
 
-.. _ativ-cap-titulo-da-atividade:
+.. _ativ-vetores-coordenadas-vetor-posicao:
 
 Atividade: coordenadas do vetor posição
 ---------------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** reconhecer que as coordenadas de um vetor relativas a estes dois vetores de referência coincidem com as coordenadas da extremidade do vetor quando posicionamos a origem do vetor na origem do sistema de coordenadas.
+   **Objetivos específicos:** reconhecer que num sistema de coordenadas retangulares `OXY` as coordenadas de um vetor `\vec{w}` qualquer em relação aos vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` coincidem com as da extremidade de `\vec{w}` quando posicionamos a origem deste vetor em `O`.
    
-   **Recomendações e sugestões:**
+   **Recomendações e sugestões:** 
+   
+   #. se necessário lembre aos estudantes que o vetor posição de um ponto `P` com relação a um ponto `O` é simplesmente o vetor `\overrightarrow{OP}`. 
+   #. a linguagem para o item a) foi estabelecida na :ref:`ativ-vetores-vetor-malha`
 
-Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)`, faça o que se pede: 
+Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` e faça o que se pede: 
 
 .. tikz::
 
@@ -162,18 +157,20 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
    \foreach \x in {-2,-1.5,...,2} {
     \draw[very thin, gray] (\x,-2.05)--(\x,2.05);
     \draw[very thin, gray] (-2.05,\x)--(2.05,\x);};
-   \draw[-latex,very thick, black] (-2.05,0) -- (2.05,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (-2.05,0) -- (2.05,0) node[below]{$x$};
    \draw[-latex,very thick, black] (0,-2.05) -- (0,2.05) node[below right]{$y$};
    \fill (0,0) circle (0.05) node[below left]{$O$};
    \fill (.5,0) circle (0.05) node[below]{$X$};
-   \fill (0,.5) circle (0.05) node[right]{$Y$};
+   \fill (0,.5) circle (0.05) node[left]{$Y$};
    %\node at (.25,-.25){$\overrightarrow{OX}$};
    %\node at (-.25,.25){$\overrightarrow{OY}$}; 
    \draw[-latex, thick, red] (0,0) -- (.5,0);
-   \draw[-latex, thick, red] (0,0) -- (0,.5);   
+   \draw[-latex, thick, red] (0,0) -- (0,.5); 
+   \fill (1,1.5) circle (0.05) node[above right]{$A$};
+   \draw[-latex, very thick, black] (0,0)--(1,1.5);
    \end{scope}
 
-#. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas.
+#. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas. Por exemplo, `\overrightarrow{OA}= 2 \overrightarrow{OX} + 3 \overrightarrow{OY}`, assim as coordenadas de `\overrightarrow{OA}` são `x=2` e `y=3`.
 #. Faça o mesmo para um ponto `P=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
 
  
@@ -186,7 +183,7 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
 
 .. admonition:: Notação
    
-   Para representar as :index:`coordenadas de um vetor <pair: vetor;coordenadas>` `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
+   Para representar as :index:`coordenadas de um vetor <pair: Vetor; coordenadas>` `\vec{v}` num sistema de coordenadas com `O=(0,0)`, `X=(1,0)` e `Y=(0,1)` escrevemos 
    
    .. math::
    
@@ -194,7 +191,8 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
    
    para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `P` tal que `\vec{v}=\overrightarrow{OP}`.
 
-Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
+Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. 
+Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
 
 Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda. Este vetor é o mesmo representado na figura da direita. Em coordenadas temos: 
 
@@ -205,22 +203,6 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
 .. tikz::
 
    \begin{scope}[scale=.7]
-   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
-   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
-   \draw[-latex, very thick, red]  (0,0)--(1,0);
-   \draw[-latex, very thick, red] (0,0)-- (0,1);
-   \draw[-latex, very thick] (0,0) -- (3,4);
-   \draw[dashed, thin] (3,4)--(3,0);
-   \node at (3.3,2) {4};
-   \node at (.7,-.7){$\overrightarrow{OX}$};
-   \node at (-.7,.7){$\overrightarrow{OY}$};
-   \node[above] at (1.5,2){$\vec{v}$};
-   \fill (0,0) circle (0.05) node[below left]{$O$};
-   
-   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
-   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
-   
-   \begin{scope}[xshift=7.5cm]
    \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
    \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
    \draw[-latex, very thick, red]  (0,0)--(1,0);
@@ -241,6 +223,23 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
    
    \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
    \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);
+      
+   \begin{scope}[xshift=7.5cm]
+   \draw[-latex,very thick, black] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex,very thick, black] (0,-2) -- (0,5) node[left]{$y$};
+   \draw[-latex, very thick, red]  (0,0)--(1,0);
+   \draw[-latex, very thick, red] (0,0)-- (0,1);
+   \draw[-latex, very thick] (0,0) -- (3,4);
+   \draw[dashed, thin] (3,4)--(3,0);
+   \draw (3,4) circle (0.05) node[above right]{$P=(3,4)$};
+   \node at (3.3,2) {4};
+   \node at (.7,-.7){$\overrightarrow{OX}$};
+   \node at (-.7,.7){$\overrightarrow{OY}$};
+   \node[above] at (1.5,2){$\vec{v}$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   
+   \foreach \n in {-2,...,3}\draw (\n,-3pt)--(\n,3pt);
+   \foreach \n in {-2,...,4}\draw (-3pt,\n)--(3pt,\n);   
    \end{scope}
    \end{scope}
 
@@ -250,7 +249,7 @@ Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andarem
 
 Vale a pena registrar algumas observações acerca das coordenadas de um vetor:
 
-#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua (nova) extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`. Veja a figura.
+#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua nova extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`, basta considerar o vetor `\vec{v}=x\overrightarrow{OX} + y\overrightarrow{OY}`. Veja a figura.
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
       :width: 250px
@@ -267,7 +266,8 @@ Vale a pena registrar algumas observações acerca das coordenadas de um vetor:
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=modulo.jpg
       :width: 250px
       
-
+   observe que esta expressão não depende do sinal das coordenadas `x` e `y` do vetor já que para qualquer `a \in \mathbb{R}` vale `a^2 = (-a)^2`. Deste modo o módulo de um vetor é dado pela fórmula acima mesmo que ele não aponte para o primeiro quadrante.
+   
 Na produção de uma animação gráfica (para jogos de vídeo-game ou desenhos animados) é necessário informar ao computador onde estará cada ponto na tela. 
 Então é definido um ponto da tela como a origem do sistema de coordenadas e as direções vertical e horizontal como eixos coordenados.
 Para se produzir o efeito de aproximação e afastamento de um objeto é necessário realizar ampliações e reduções, respectivamente, deste objeto.
@@ -283,6 +283,8 @@ Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de c
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia-poligonos.png
    :width: 400px
    :align: center
+   
+   `Link texto <http://example.com/>`_
 
 .. _ativ-vetores-homotetia:
 
@@ -291,32 +293,38 @@ Atividade: homotetia
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** reconhecer que `a(x,y)=(ax,ay)`. 
+   **Objetivo específico:** reconhecer que dados `a\in \mathbb{R}` e `(x,y) \in \mathbb{R}^2` temos `a(x,y)=(ax,ay)`. 
    
-   **Recomendações e sugestões:**
+   **Recomendações e sugestões:** 
+   
+   #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você pode trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
+   #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! Na :ref:`multiplicacao-escalar` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas. Aqui é importante observar que `3(3,2)= \overrightarrow{OA'} + \overrightarrow{OC'} = 9\overrightarrow{OX}+ 6\overrightarrow{OY} =(9,6)`.
+   #. Os estudantes podem não perceber que existe uma explicação para o fato da homotetia de um retângulo, ser ainda um retângulo. Observe que isso foi utilizado na solução. Existem duas maneiras de se observar que o ângulo \widehat{OA'B'}=90^{\circ}`: uma é usar a semelhança dos triângulos `AOB` e `A'OB'`, que podem ser obtidas pelos casos LAL (observando que `OB'=3OB` e `OA'=3OA`).
 
 
-Na figura temos o retângulo `OXAY` e é dado um sistema de coordenadas. Considere uma homotetia de centro `O` e razão `r=3`.
+Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,2)` e `C=(0,2)`. 
+Considere uma homotetia de centro `O` e razão `r=3`.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia2.jpg
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1234.jpg
    :width: 400px
    :align: center
+   
+   Incluir um ponto dentro do retângulo com o rótulo `P=(x,y)`
 
-   Coordenadas de `A'`, correspondente de `A` pela homotetia
-
-#. Reproduza a figura em seu caderno e represente os pontos `X'` e `Y'`, correspondentes de `X` e `Y` pela homotetia.
-#. Calcule as coordenadas dos pontos `X'` e `Y'`.
-#. Se `A'` é o correspondente de `A` pela homotetia, então `\overrightarrow{OA'}=3\overrightarrow{OA}=3(x,y)`. Use os itens a) e b) para explicar por que `3(x,y)=(3x,3y)`.
+#. Reproduza a figura em seu caderno e represente os pontos `A'` e `C'`, correspondentes de `A` e `C` pela homotetia.
+#. Calcule as coordenadas dos pontos `A'` e `C'`.
+#. Se `B'` é o correspondente de `B` pela homotetia, então `\overrightarrow{OB'}=3\overrightarrow{OB}=3(3,2)`. Use os itens a) e b) para explicar por que `3(3,2)=(9,6)`.
+#. Considere um ponto `P=(x,y)` do interior do retângulo `OABC`. Use as ideias dos itens anteriores para explicar que `3(x,y)=(3x,3y)`.
 
 .. admonition:: Resposta 
 
-   texto da resposta.
+   texto da resposta
 
 .. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
 
-A mesma explicação dada na atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `a\in \mathbb{R}`, então o vetor `a\vec{v}=(ax,ay)`.
+Uma explicação parecida com aquela apresentada no item d) da atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `a\in \mathbb{R}`, então o vetor `a\vec{v}=(ax,ay)`.
 
-Um caso de particular interesse é o que trata do simétrico de um vetor. 
 Na seção anterior definimos o simétrico do vetor `\vec{v}` como o vetor que tem mesma direção, mesmo módulo, mas tem sentido oposto ao de `\vec{v}`.
 Lá decidiu-se denotá-lo por `-\vec{v}` e ao se definir a mutiplicação de `\vec{v}` por um número real ficou claro que `(-1)\vec{v}=-\vec{v}`. 
 Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
@@ -325,7 +333,7 @@ Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
 .. glossary:: 
    
    Translação
-      *A translação de um ponto* `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+      A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
 
       .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
          :width: 400px
@@ -341,8 +349,10 @@ Atividade: translação num plano
 
    **Objetivos específicos:**
    
-   #. reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão, e
-   #. descrever equações vetoriais em termos de coordenadas.
+   #. reconhecer, através de atividade prática, que as coordenadas do vetor soma são as somas das respectivas coordenadas dos vetores em questão, 
+   #. descrever equações vetoriais em termos de coordenadas,
+   #. reconhecer translação de pontos no plano como uma correspondência entre pontos do plano,
+   #. relacionar translação de pontos no plano e vetores no contexto do plano cartesiano.
    
    **Recomendações e sugestões:**
 
@@ -567,23 +577,35 @@ Justificativa do item a): considere um sistema de coordenadas no plano, então o
 
 A *Primeira Lei de Newton*, também conhecida como o *Princípio da Inércia*, afirma que
 
-   um corpo permanece em repouso ou em movimento retilíneo uniforme até que uma força atue sobre ele.
+.. glossary::
+
+   Primeira lei de Newton
+      Um corpo permanece em repouso ou em movimento retilíneo uniforme até que uma força atue sobre ele.
    
 Finalmente, :index:`repouso <repouso>` significa velocidade constante igual a zero e :index:`movimento retilíneo uniforme <movimento retilíneo uniforme>` significa velocidade constante diferente de zero.
-Então podemos dizer que a :index:`força <força>` é o que causa a *variação na velocidade*. 
+Então podemos dizer que a :index:`força <Força>` é o que causa a *variação na velocidade*, sua unidade mais frequentemente utilizada é o *Newton* (`N`). 
+Como você já deve saber a velocidade é uma grandeza vetorial, logo a variação da velocidade é a diferença entre dois vetores e, portanto, também é uma grandeza vetorial. Assim a força, sendo aquilo que causa variação na velocidade, também é uma grandeza vetorial (isto ficará mais claro na seção de Aprofundamentos).
 
-Quando alguém empurra um caminhão e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existe uma outra força que *anula* a força do empurrão, no caso, o *atrito* do caminhão com o chão.
+Quando alguém empurra um carro e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existem forças de resistência que *anulam* a força do empurrão. Estas forças de resistência podem ser causadas pelo *atrito* do veículo com o chão e entre as peças do próprio automóvel. Por exemplo, se o freio de mão estiver acionado, a força de atrito entre as peças do carro pode ser maior.
 
-**FIGURA** do caminhão sendo empurrado por uma pessoa com a representação vetorial da força da pessoa no caminhã e a força de atrito do chão no caminhão.
+.. figure:: http://s.glbimg.com/jo/g1/f/original/2012/03/28/2012-03-28t051611z_98588621.jpg
+   :width: 300px
+   :align: center
 
-Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões como esta da situação do caminhão é introduzir antes o conceito de *força resultante*. 
+   Imagem do Portal G1 (Foto: Alessandro Bianchi/Reuters) - substituir por análoga com forças representadas
+
+Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões como esta da situação do carro sendo empurrado é introduzir antes o conceito de *força resultante*. 
 
 .. glossary:: 
    
    Força resultante 
       A força resultante sobre uma partícula é a soma vetorial de todas as forças que atuam sobre ela.
 
-**FIGURA** - partícula com 3 forças atuando e a resultante de cor diferente.
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=resultante.jpg
+   :width: 200px
+   :align: center
+
+   `\vec{F_R} = \vec{F_1} + \vec{F_2} + \vec{F_3}`
 
 Lembre-se que a força resultante não é uma nova força que atua sobre o corpo, mas apenas uma força cujo efeito no corpo seria o mesmo que o de todas as outras forças juntas.
 
@@ -591,19 +613,20 @@ A Primeira Lei de Newton com esta linguagem fica:
 
    a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante.
 
-Portanto, se quando empurramos um caminhão ele não se mexe é porque existem forças de resistência no caminhão que anulam a força com que empurramos o caminhão.
-
-.. admonition:: Exemplo: Se não pedalar a bicicleta para
-
-   Em uma ciclovia retilínea e horizontal um ciclista em movimento para de pedalar. A velocidade da bicicleta diminui até parar. Como a força exercida pelas pernas do ciclista pararam de empurrar a bicicleta, ela não devia permanecer em movimento retilíneo uniforme pelo Princípio da Inércia?
-   
-   Resposta:
+Portanto, se quando empurramos um carro ele não se mexe é porque existem forças de resistência que atuam sobre o carro que anulam a força com que o empurramos.
    
 .. admonition:: Exemplo: Força peso
 
-   Força peso - Corpo em queda livre e objeto parado no chão. Objetivos específicos: mesmo que nada esteja em contato com o corpo solto no ar ele está em movimento acelerado (variando a velocidade), introduzir a força da gravidade. Apresentar a força normal que o chão aplica num corpo apoiado nele.
+   Não é necessário contato com o corpo para que exista uma força atuando sobre ele. Imagine uma bola de tênis largada da mão do tenista a partir do repouso (velocidade zero). Ela cai sob efeito do *campo gravitacional* da Terra, sempre vertical para baixo (aponta para o centro da Terra). Se esta força não estivesse atuando sobre a bolinha, ela deveria ficar parada (flutuando) no local onde foi deixada pelo tenista.
+      
+   Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal coincide com a força peso.
 
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bolinha-tenis.jpg
+      :width: 400px
+      :align: center
 
+      Força resultante **diferente de zero** na bola da esquerda e força resultante **igual à zero** na bola da direita.
+   
 Atividade da escaladora: Resultante zero e soma de vetores com mesma origem.
 
 .. _ativ-vetores-plano-inclinado:
@@ -615,17 +638,25 @@ Atividade: Plano inclinado
 
    **Objetivos específicos:**
    
+   #. decompor um vetor como soma dos vetores coordenados,
+   #. representar forças através de vetores,
+   #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
+   
    **Recomendações e sugestões:**
    
-A figura esboça um plano inclinado com um bloco sobre ele, a força peso, nele representada e a direção em que o movimento acontece tracejada. Para o que segue despreze o atrito do bloco com o plano.
+A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoiado sobre ele. Um sistema de coordenadas foi escolhido com origem no centro `O` do bloco. A força peso está representada a partir de `O`. Suponha que este bloco permanece parado.
 
-**Figura**
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=plano-inclinado.jpg
+   :width: 400px
+   :align: center
 
-#. Reproduza a figura em seu caderno e trace um sistema de eixos coordenados com origem em `O`, eixo `x` paralelo à direção do movimento e eixo `y` perpendicular ao eixo `x`.
-#. Represente uma decomposição de `\vec{P}` como `\vec{P}=\vec{P_x} + \vec{P_y}` com `\vec{P_x}` e `\vec{P_y}` com origem em `O` e ambos paralelos aos respectivos eixos coordenados.
-#. Represente a força normal `\vec{N}` que o plano exerce no bloco.
-#. Como o movimento é retilíneo, o vetor resultante tem mesma direção do movimento. Use este fato para calcular `\vec{N} + \vec{P_y}`.
+   Forças sobre um bloco em repouso sobre um plano inclinado
+
 #. Qual é a resultante das forças que atuam sobre o bloco?
+#. Reproduza a figura em seu caderno e represente uma decomposição de `\vec{P}` como `\vec{P } = \vec{P_x} + \vec{P_y}` com `\vec{P_x}` e `\vec{P_y}` com origem em `O` e ambos paralelos aos respectivos eixos coordenados.
+#. Supondo que o peso do bloco tenha módulo `|\vec{P}|=10 N`, calcule `|\vec{P_x}|` e `|\vec{P_y}|`.
+#. Represente a força normal `\vec{N}` que o plano exerce no bloco e calcule `|\vec{N}|`.
+#. Existe alguma outra força atuando sobre o bloco? Se houver, calcule a sua intensidade.
 
 
 .. admonition:: Resposta 
@@ -672,3 +703,11 @@ Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens.
    Por que isso acontece?
 
 
+Termos a serem definidos neste capítulo e devem ir para o glossário:
+
+#. origem e extremidade de um vetor dado
+#. multiplicação por escalar
+#. soma ou adição de vetores
+#. vetores paralelos
+#. vetores unitários
+#. vetores perpendiculares
