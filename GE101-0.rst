@@ -6,8 +6,6 @@
 
 .. HJB: por que usar deslocamentos se já existe o conceito de distância percorrida? Uma resposta: porque algumas leis da Física (por exemplo, o cálculo do trabalho) depende apenas do deslocamento! Observar isso para o aluno.
 
-.. HJB: não esquecer de colocar a aplicação de motion vector.
-
 
 .. admonition:: Para o professor
 
@@ -15,7 +13,7 @@
    
    Algumas observações metodológicas: 
    
-   * As seções sob o título "Pausa Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno para depois fazer um fechamento acerca das questões abordadas.   
+   * As seções sob o título "Pausa Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
 
 .. HJB: não esquecer de falar que direção pode ter mais do que um significado (direção nordeste vs. ir na direção da praça central da cidade). Aqui, direção nordeste é um bom exemplo para relacionar com o conceito de direção como usado em vetores.
 
@@ -151,12 +149,12 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
    
    Notação para vetores.
    
-.. admonition:: Nota sobre notação e terminologia
+.. admonition:: Observações sobre notação e terminologia
 
        
-   Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
+   * Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
     
-   Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
+   * Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
    
    
 
@@ -167,13 +165,18 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
 .. admonition:: Para o professor
 
    Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_>. Com ela,  à título de ilustração dinâmica, é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente como vetor posição relativa depende da escolha do ponto de referência.
+   
 
+   .. figure:: _resources/ggb-vpr-01-qr.png
+      :width: 120px
+      :align: center   
+      
 		   .. _fig-ggb-vpr-01:
 
    .. figure:: _resources/ggb-vpr-01.jpg
       :width: 700px
       :align: center
-      
+                  
       <https://www.geogebra.org/m/kCMtPW5x/>.
       
 Deslocamentos no plano
@@ -202,7 +205,11 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Para o professor
 
-   Estudos educacionais mostram que os alunos têm a forte tendência em confundir o vetor deslocamento com a trajetória percorrida pelo objeto que se desloca. No sentido de minimizar o efeito deste distrator, caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, à título de ilustração dinâmica, é possível visualizar diversos tipos de deslocamentos entre dois pontos do modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01`.   
+   Estudos educacionais mostram que os alunos têm a forte tendência em confundir vetor deslocamento com trajetória. No sentido de minimizar o efeito deste distrator, caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, é possível visualizar um ponto percorrendo o modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01` e, ao mesmo tempo, definir diferentes vetores deslocamentos definidos por duas posições na pista. Ao, dinamicamente, confrontar a trajetória percorrida com os diversos vetores deslocamentos, espera-se criar uma imagem mental que reforce as diferenças entre os dois conceitos.      
+   
+   .. figure:: _resources/ggb-interlagos-01-qr.png
+      :width: 120px
+      :align: center      
    
 		   .. _fig-ggb-interlagos-01:
 
@@ -212,6 +219,9 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
       
       <https://www.geogebra.org/m/f8GCVdyx>.
       
+   Além do trabalho de uma força em Física, como mencionado no texto para o aluno, a própria velocidade média (como uma grandeza vetorial) é um conceito que é definido em termos de vetores deslocamentos apenas e não de :index:`distâncias percorridas` em uma trajetória. Ao se considerar distâncias percorridas, um outro conceito é estabelecido: o de :index:`rapidez média` (*speed* em Inglês), também denominada de :index:`velocidade escalar média`. Assim, é importante diferenciar os dois conceitos: velocidade média (uma grandeza vetorial) e rapidez média (uma grandeza escalar).
+      
+    
    
 
    
@@ -222,11 +232,22 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
     Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai ponto do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento, nada estabelecendo sobre a trajetória percorrida!
     
-    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. A resposta reside no fato de que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes.
+    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. A resposta reside no fato de que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importanto a trajetória específica entre essas posições.
 
+.. _label-hjb-voce-sabia-01:
 
+.. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
 
+    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma personagem que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados *:index:`motion vectors`* ou *:index:`displacement vectors`* em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+    Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
+    
+		   .. _fig-motion-vector-01:
 
+    .. figure:: _resources//geometria-motion-vector-01.png
+       :width: 700px
+       :align: center      
+
+       *motion vectors* (fonte: Wikimedia Commons).
 
 Trajetória e Deslocamento
 ------------------------------------------
