@@ -377,14 +377,14 @@ Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para in
  
 .. admonition:: Definição 
 
-   Vetor é um segmento de reta orientado que possui módulo, direção e sentido.
+   :index:`Vetor` é um segmento de reta orientado que possui módulo, direção e sentido.
    
 Podemos denotar um vetor de duas formas diferentes: 
 
 * utilizando apenas uma letra minúscula e uma flecha. Por exemplo, `\vec{v}`.
 * utilizando os extremos do segmento de reta orientado, respeitando o sentido da orientação, e uma flecha. Por exemplo, o `\vec{AB}`.   
    
-O módulo do vetor é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
+O :index:`módulo de um vetor` é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
 
 Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
 
@@ -404,7 +404,7 @@ Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e ta
    	  
 .. admonition:: Não confunda!
 
-   É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Caso a professora pedisse que Catarina e Ana, que também estão afastadas na sala de aula, se movimentassem na direção nordeste, as duas alunas andariam seguindo direções paralelas. A mesma palavra *direção* gerou trajetórias que se encontram e trajetórias paralelas, mas isto do ponto de vista matemático não seria correto. 
+   É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos com essas palavras), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática. 
 
 	   .. _fig-geometria-operacoesvetores-05:
 
@@ -412,7 +412,7 @@ Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e ta
       :width: 300px
       :align: center
 
-      Diferentes direções.
+      Os vetores que indicam o deslocamento de Pedro e Beatriz até a porta possuem diferentes direções (do ponto de vista matemático).
 
 .. admonition:: Definição 
 
@@ -424,7 +424,7 @@ Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e ta
    :width: 300px
    :align: center
 
-   Vetores iguais.
+   :index:`Vetores iguais`.
    
 Você notou que dois vetores iguais não precisam ter os extremos dos segmentos orientados iguais? Para comparar dois vetores utilizamos apenas os seus módulos, suas direções e seus sentidos.
 
@@ -453,7 +453,7 @@ Algumas observações importantes sobre o vetor nulo:
 
 .. admonition:: Definição 
 
-   A soma de vetores é a operação que a cada par de vetores `\overrightarrow{AB}` e `\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, ou seja, 
+   A :index:`soma de vetores` é a operação que a cada par de vetores `\overrightarrow{AB}` e `\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, ou seja, 
    
    .. math:: \overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
    
@@ -474,12 +474,12 @@ Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjac
 
 Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
 
-* O vetor nulo `\vec{0}` é o elemento neutro da soma de vetores. Utilizando a regra do triângulo, é fácil ver que 
+* O :index:`vetor nulo` `\vec{0}` é o elemento neutro da soma de vetores. Utilizando a regra do triângulo, é fácil ver que 
 
 .. math::   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
 
 para qualquer vetor `\overrightarrow{AB}`.
-* Repare que os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E ainda, pela regra do triângulo, `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA} = \vec{0}`. Neste caso, dizemos que `\overrightarrow{AB}` e `\overrightarrow{BA}` são vetores simétricos, ou ainda que, `\overrightarrow{AB}` é o simétrico de `\overrightarrow{BA}`. 
+* Repare que os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E ainda, pela regra do triângulo, `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA} = \vec{0}`. Neste caso, dizemos que `\overrightarrow{AB}` e `\overrightarrow{BA}` são :index:`vetores simétricos`, ou ainda que, `\overrightarrow{AB}` é o simétrico de `\overrightarrow{BA}`. 
 
 
 .. _fig-geometria-operacoesvetores-10:
@@ -511,7 +511,7 @@ para qualquer vetor `\overrightarrow{AB}`.
    :width: 300px
    :align: center
 
-   Associatividade da Soma de Vetores.
+   :index:`Associatividade da Soma de Vetores`.
    
 * Já sabemos que `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}`. Agora, se a partir de `A` construirmos o um vetor igual a `\overrightarrow{BC}`, digamos  `\overrightarrow{AD}`, e a partir de `D` construirmos um vetor igual ao vetor `\overrightarrow{AB}` (veja :numref:`fig-geometria-operacoesvetores-12`), então 
 
@@ -527,7 +527,9 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
    :width: 200px
    :align: center
 
-   Comutatividade da Soma de Vetores.
+   :index:`Comutatividade da Soma de Vetores`.
+   
+  
    
 **MULTIPLICAÇÃO DE UM VETOR POR UM ESCALAR**
 
@@ -542,7 +544,7 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
 
 A partir desta definição, podemos perceber que:
 
-* o número real `1` é o elemento neutro da operação de multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
+* o número real `1` é o elemento neutro da multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
 * `a\cdot\vec{0}=\vec{0}` para qualquer que seja o valor de `a`;
 * `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
 
