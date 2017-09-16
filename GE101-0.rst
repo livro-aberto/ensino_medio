@@ -386,7 +386,7 @@ Podemos denotar um vetor de duas formas diferentes:
    
 O módulo do vetor é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
 
-Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, quando dois objetos possuem a mesma direção significa que eles estão sobre uma mesma reta ou em retas paralelas. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
 
 Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e também as retas paralelas `r` e `s`, que são as retas suporte dos segmentos orientados que dão origem aos vetores.  Vamos estudar a direção e sentido de todos os pares de vetores da figura:
 
@@ -540,7 +540,11 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
    * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem a mesma direção, determinada pela reta que passa por `A` e `B`;
    * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem o mesmo sentido, se `a` for positivo e possuem sentidos opostos, se `a` for negativo (lembre-se que `\overrightarrow{AB}` e `-\overrightarrow{AB}` são vetores simétricos). 
 
-A partir desta definição, podemos perceber que o número real `1` é o elemento neutro da operação de multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`.
+A partir desta definição, podemos perceber que:
+
+* o número real `1` é o elemento neutro da operação de multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
+* `a\cdot\vec{0}=\vec{0}` para qualquer que seja o valor de `a`;
+* `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
 
 A multiplicação de um vetor por um escalar satisfaz outras propriedades que serão apresentadas na próxima seção.
 
