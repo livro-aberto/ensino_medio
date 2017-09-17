@@ -4,7 +4,8 @@
 
 .. HJB: a pedido do Fábio, incluir alguma informação sobre velocidades relativas.
 
-.. HJB: por que usar deslocamentos se já existe o conceito de distância percorrida? Uma resposta: porque algumas leis da Física (por exemplo, o cálculo do trabalho) depende apenas do deslocamento! Observar isso para o aluno.
+.. HJB: não esquecer de indicar os vídeos do Étienne Ghys no para saber mais (http://www.chaos-math.org/pt-br).
+
 
 
 .. admonition:: Para o professor
@@ -234,7 +235,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
     Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma personagem que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
     Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
     
-		   .. _fig-motion-vector-01:
+		    .. _fig-motion-vector-01:
 
     .. figure:: _resources//geometria-motion-vector-01.png
        :width: 700px
@@ -252,20 +253,68 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    
    Levar o estudante a:
    
-   * perceber que deslocamentos e trajetórias percorridas são dois conceitos diferentes;
-   * perceber que, a partir de uma determinada posição inicial, dado um vetor, existe uma única posição final cujo vetor deslocamento é o vetor dado;   
+   * reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes;
+   * perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada;   
    * compreender operações com vetores deslocamento do ponto de vista geométrico.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * 
+
+   
    
    
    
 .. Palavras-chaves: composição de deslocamentos, deslocamento total, deslocamento resultante.
 
-**(Atividade: versão simplificada da corrida de vetores)**
+(Jogo *Corrida de Vetores*: versão simplificada) Sente-se junto com um colega. Vocês receberão de seu professor duas cópias da :numref:`fig-geometria-cv-02` e uma cópia da :numref:`fig-geometria-cv-03`. A :numref:`fig-geometria-cv-02` é o tabuleiro do jogo que consiste em um "mapa" de uma cidade fictícia cujas ruas são as curvas em laranja claro e as esquinas são os pontos pretos. Existem dois carros representados pelos pontos azul e vermelho. 
+
+.. _fig-geometria-cv-02:
+
+.. figure::  _resources/geometria-cv-02.jpg
+   :width: 700px
+   :align: center
+   
+   Tabuleiro do jogo *Corrida de Vetores*.
+
+.. _fig-geometria-cv-03:
+
+.. figure::  _resources/geometria-cv-03.jpg
+   :width: 700px
+   :align: center
+   
+   "Cartas" do jogo *Corrida de Vetores*.
+
+
+
+As regras do jogo são como se segue.
+
+* Os carros só podem trafegar pelas ruas da cidade. Se, em algum momento, um carro sair da estrada, o jogador responsável pelo carro perde o jogo automaticamente.
+
+* Os carros saem da marca de largada representada pelo segmento azul. **Vence quem primeiro der uma volta completa no sentido horário em torno da "rosa dos ventos" desenhada no mapa.**
+
+* Tire "par ou ímpar" para saber quem vai começar o jogo. Os jogadores, então, se alternam durante o jogo.
+
+* Em cada jogada, o jogador deve escolher uma das "cartas" da :numref:`fig-geometria-cv-03`. Cada carta apresenta uma flecha que especifica a orientação e a distância com as quais, a partir da posição atual do carro do jogador, é possível determinar sua nova posição. Em outras palavras, a nova posição do carro deve ser de tal modo que o vetor determinado pelo deslocamento da posição antiga para a posição nova tenha a mesma orientação e o mesmo módulo da flecha da carta escolhida pelo jogador.
+
+* Ao final de cada jogada, o jogador deve desenhar o vetor deslocamento associado. Para evitar confusão, recomenda-se que cada jogador use caneta com cor diferente.
+
+* Qualquer carta está disponível para uso em qualquer jogada, mesmo que ela já tenha sido selecionada em uma jogada anterior.
+
+**FASE DE AQUECIMENTO**
+
+
+**HORA DA CORRIDA PARA VALER!**
+
 
 
 .. admonition:: Resposta 
 
    Texto da resposta.
+
+
+
+
 
 Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
 
