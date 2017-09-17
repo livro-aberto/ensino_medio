@@ -260,11 +260,8 @@ Operações com vetores deslocamentos
    
    Levar o estudante a:
    
-   *     
+   * compreender operações com vetores deslocamento do ponto de vista geométrico.     
    
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
-   
-   * 
 
 Texto do enunciado.
 
@@ -272,18 +269,6 @@ Texto do enunciado.
 .. admonition:: Resposta 
 
    Texto da resposta.
-
-
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   Levar o estudante a:
-   
-   * compreender vetores do ponto vista matemático;
-   * compreender e realizar operações com vetores.
-
 
 Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
 
@@ -297,15 +282,15 @@ Para estudar as operações citadas anteriormente, vamos utilizar o jogo *Corrid
 
    Jogo Corrida de Vetores.
    
-Na :numref:`fig-geometria-operacoesvetores-01` mostramos o resultado de uma partida disputada pelos competidores verde e laranja que terminou empatada, pois os dois competidores utilizaram o mesmo número de cartas para atingir o ponto final. Podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória ao percorreram trajetórias diferentes em busca do ponto `B`. No entanto, pode-se perceber também que os vetores deslocamento associados às duas trajetórias são iguais (veja a flecha preta). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (que neste caso é de `A` para `B`) e não a trajetória percorrida. 
+Na :numref:`fig-geometria-operacoesvetores-01` mostramos o resultado de uma partida disputada pelos competidores verde e laranja que terminou empatada, já que os dois competidores utilizaram o mesmo número de cartas para atingir o ponto final. Podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória ao percorrerem trajetórias diferentes. No entanto, pode-se perceber que os vetores deslocamento associados às duas trajetórias são iguais (flecha preta que liga `A` até `B`). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (que neste caso é de `A` para `B`) e não da trajetória percorrida. 
 
 Pela definição de vetor deslocamento que aprendemos na última seção, a soma de dois vetores deslocamento será sempre um vetor deslocamento. Isso se deve ao fato de que cada vetor representa uma variação de posição e então, se variarmos a posição de dois vetores adjacentes (ponto final do primeiro coincide com o ponto inicial do segundo), podemos representar a variação de posição total por um único vetor deslocamento. A esse vetor daremos o nome de *vetor soma*. 
 
-Analisando as duas primeiras jogadas do competidor verde na Corrida de Vetores da :numref:`fig-geometria-operacoesvetores-02`, vemos que este jogador escolheu uma carta que possui uma movimentação vertical (de baixo para cima) para a primeira jogada e a assim, sai de `A` e alcança o ponto `P`. Sendo assim, associamos à primeira jogada o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele novamente utilizou a mesma carta, mas agora partindo do ponto `P`, onde ele havia parado na jogada anterior. Assim, ele sai de `P` e chega em `Q`, o que nos faz associar à segunda rodada, o vetor deslocamento `\overrightarrow{PQ}`. Acompanhe essas duas jogadas na figura abaixo. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PQ}` são vetores adjacentes e representam as duas primeiras rodadas consecutivas do jogador verde.
+Analisando as duas primeiras jogadas do competidor verde na Corrida de Vetores (:numref:`fig-geometria-operacoesvetores-02`), vemos que este jogador escolheu uma carta que possui uma movimentação vertical (de baixo para cima) para a primeira jogada e assim, sai de `A` e alcança o ponto `P`. Sendo assim, associamos à primeira jogada o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele novamente utilizou a mesma carta, mas agora partindo do ponto `P`, onde ele havia parado na jogada anterior. Assim, ele sai de `P` e chega em `Q`, o que nos faz associar à segunda rodada, o vetor deslocamento `\overrightarrow{PQ}`. Acompanhe essas duas jogadas na figura abaixo. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PQ}` são vetores adjacentes e representam as duas primeiras rodadas consecutivas do jogador verde.
 
 .. _fig-geometria-operacoesvetores-02:
 
-.. figure:: _resources/JogadasCorridaVetores1.jpg
+.. figure:: _resources/jogadacorridavetores3.jpg
    :width: 200px
    :align: center
 
@@ -325,7 +310,7 @@ Se analisarmos de maneira análoga as duas primeiras jogadas do jogador laranja,
 
 Após realizar as duas primeiras jogadas, diferentemente do competidor verde, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver :numref:`fig-geometria-operacoesvetores-03`). 
 
-O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da corrida de vetores pode ser utilizado sempre que desejarmos somar dois vetores. Este método é conhecido como *Regra do Triângulo* e está representado na figura abaixo.
+O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da Corrida de Vetores pode ser utilizado sempre que desejarmos somar dois vetores. Este método é conhecido como *Regra do Triângulo* e está representado na figura abaixo.
 
 .. _fig-geometria-operacoesvetores-04:
 
@@ -343,43 +328,239 @@ Com a notação que já usamos anteriormente e observando a geometria desta situ
 * `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo ponto inicial `A`;
 * `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma orientação.
 
-Intuitivamente podemos imaginar o que aconteceria se repetíssemos a mesma carta `a` vezes, onde `a` é um número natural. Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e as propriedades acima continuariam válidas apenas com a ressalva de que `2` fosse substituído por `a`.
+Intuitivamente podemos imaginar o que aconteceria se repetíssemos a mesma carta `a` vezes, onde `a` é um número natural. Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e as propriedades acima continuariam válidas, apenas com a ressalva de que `2` fosse substituído por `a`.
 
 .. admonition:: Pausa para reflexão
 
    Você acha que `a` poderia ser um número real? 
-
+  
 
 Organizando as ideias
 ------------------------------------------
 
 .. admonition:: Para o professor
 
-   Observe que a soma de vetores e a multiplicação de um vetor por um escalar foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
+   A soma de vetores e a multiplicação de um vetor por um escalar foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * compreender vetores do ponto vista matemático;
+   * compreender e realizar operações com vetores.   
 
 
-Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo.
+Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo. 
 
-A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados agora em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. Vamos começar? 
+A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados agora em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
+  
+Antes de definir um vetor, é bom lembrar que um segmento de reta é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado da cor laranja, que contém os pontos compreendidos entre `A` e `B`. Este segmento de reta é chamado `AB` ou `BA`, e `r` é sua reta suporte. 
+
+.. _fig-geometria-operacoesvetores-08:
+
+.. figure:: _resources/segmentodereta3.jpg
+   :width: 300px
+   :align: center
+
+   Segmento de reta `AB`.
+
+Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para indicar a orientação que estamos estabelecendo no segmento. Na verdade, existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. 
+
+.. _fig-geometria-operacoesvetores-09:
+
+.. figure:: _resources/segmentoderetaorientado2.jpg
+   :width: 400px
+   :align: center
+
+   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).     
+ 
+ 
+.. admonition:: Definição 
+
+   :index:`Vetor` é um segmento de reta orientado que possui módulo, direção e sentido.
+   
+Podemos denotar um vetor de duas formas diferentes: 
+
+* utilizando apenas uma letra minúscula e uma flecha. Por exemplo, `\vec{v}`.
+* utilizando os extremos do segmento de reta orientado, respeitando o sentido da orientação, e uma flecha. Por exemplo, o `\vec{AB}`.   
+   
+O :index:`módulo de um vetor` é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
+
+Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+
+Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e também as retas paralelas `r` e `s`, que são as retas suporte dos segmentos orientados que dão origem aos vetores.  Vamos estudar a direção e sentido de todos os pares de vetores da figura:
+
+* `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta suporte, mas possuem sentidos opostos;
+* `\vec{u}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas e possuem o mesmo sentido;
+* `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas, mas possuem sentidos opostos.
+
+.. _fig-geometria-operacoesvetores-06:
+
+.. figure:: _resources/direcaosentidovetores.jpg
+   :width: 300px
+   :align: center
+
+   Vetores `\vec{u},\vec{v}` e `\vec{w}` sobre retas paralelas `r` e `s`.
+   	  
+.. admonition:: Não confunda!
+
+   É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos com essas palavras), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática. 
+
+	   .. _fig-geometria-operacoesvetores-05:
+
+   .. figure:: _resources/saladeaula.jpg
+      :width: 300px
+      :align: center
+
+      Os vetores que indicam o deslocamento de Pedro e Beatriz até a porta possuem diferentes direções (do ponto de vista matemático).
 
 .. admonition:: Definição 
 
-   Vetor é um segmento de reta orientado que possui módulo, direção e sentido.
+   Dizemos que dois vetores são iguais se eles possuem o mesmo módulo, direção e sentido. 
+
+.. _fig-geometria-operacoesvetores-07:
+
+.. figure:: _resources/vetoresiguais.jpg
+   :width: 300px
+   :align: center
+
+   :index:`Vetores iguais`.
    
-O módulo do vetor é o comprimento do segmento de reta, ou seja, a distância entre seus pontos extremos. Já a direção e sentido estão ligados à orientação que está sendo adicionada ao segmento. 
+Você notou que dois vetores iguais não precisam ter os extremos dos segmentos orientados iguais? Para comparar dois vetores utilizamos apenas os seus módulos, suas direções e seus sentidos.
 
-É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Caso a professora pedisse que Catarina e Ana, que também estão afastadas na sala de aula, se movimentassem na direção nordeste, as duas alunas andariam seguindo direções paralelas. A mesma palavra direção gerou trajetórias que se encontram e trajetórias paralelas. No universo matemático, isso não poderia acontecer.
+.. admonition:: Pausa para reflexão 
 
-[FIGURA]
+   Considere um ponto `A` e um vetor `\vec{v}`.
+   
+   #. É possível construir um vetor `\vec{u}` igual a `\vec{v}` começando no ponto `A`? Por que?
+   #. Quantos vetores iguais a `\vec{v}` existem? 
+   
+.. admonition:: Para o professor
 
-Em Matemática, quando dois objetos possuem a mesma direção significa que eles estão sobre uma mesma reta ou em retas paralelas. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma mesma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
-
-Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e também as retas onde esses vetores estão contidos.  Vamos estudar a direção e sentido de todos os pares de vetores da figura:
-
-* `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta, mas possuem sentidos opostos;
-* `\vec{u}` e `\vec{w}` possuem a mesma direção por estarem sobre retas paralelas e possuem o mesmo sentido;
-* `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas paralelas, mas possuem sentidos opostos.
-
-[FIGURA]
+   As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível construir um vetor igual à `\vec{v}`. E também, que existem infinitos vetores iguais à `\vec{v}`.
    
    
+.. admonition:: Definição 
+
+   O vetor nulo `\vec{O}` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido. 
+   
+Algumas observações importantes sobre o vetor nulo:   
+
+#. para qualquer ponto `P`, `\overrightarrow{PP}=\vec{0}`;
+#. não confunda 0 com `\vec{O}`. 0 é um número real e `\vec{O}` é o vetor nulo.
+
+**Soma de vetores**
+
+.. admonition:: Definição 
+
+   A :index:`soma de vetores` é a operação que a cada par de vetores `\overrightarrow{AB}` e `\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, ou seja, 
+   
+   .. math:: \overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
+   
+Pela definição anterior, sabemos somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não aconteça, é possível realizar essa operação? Sim, mas neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
+
+.. _fig-geometria-operacoesvetores-05:
+
+.. figure:: _resources/somadevetores.jpg
+   :width: 300px
+   :align: center
+
+   Regra do triângulo para somar dois vetores quaisquer.
+
+Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B que possui o mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BD'}` são iguais, então
+
+.. math::
+  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD'}.
+
+Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
+
+* O :index:`vetor nulo` `\vec{0}` é o elemento neutro da soma de vetores. Utilizando a regra do triângulo, é fácil ver que 
+
+.. math::   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
+
+para qualquer vetor `\overrightarrow{AB}`.
+* Repare que os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E ainda, pela regra do triângulo, `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA} = \vec{0}`. Neste caso, dizemos que `\overrightarrow{AB}` e `\overrightarrow{BA}` são :index:`vetores simétricos`, ou ainda que, `\overrightarrow{AB}` é o simétrico de `\overrightarrow{BA}`. 
+
+
+.. _fig-geometria-operacoesvetores-10:
+
+.. figure:: _resources/vetoressimetricos.jpg
+   :width: 400px
+   :align: center
+
+   Vetores Simétricos.
+   
+   
+.. admonition:: Atenção! 
+
+   Usaremos o sinal negativo `-` para denotar o vetor simétrico, ou seja, `-\vec{v}` é o simétrico do vetor `\vec{v}`. Como dissemos anteriormente, `-\vec{v}` e `\vec{v}` possuem o mesmo módulo e direção, mas sentidos opostos. 
+   
+   Ao somar dois números reais com sinais diferentes usamos uma notação mais simplificada (sem os parênteses e omitindo o sinal `+`; por exemplo, 2+(-5)=2-5). Seguindo esta mesma lógica, por simplicidade, escreveremos `\vec{v}+(-\vec{u})=\vec{v}-\vec{u}`.  
+   
+   O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{u}` para `\vec{v}`.
+  
+* Note que `(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}` e `\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}`. Logo, podemos concluir que a soma de vetores é associativa, ou seja, 
+
+.. math::
+  
+  (\overrightarrow{AB} + \overrightarrow{BC}) + \overrightarrow{CD} = \overrightarrow{AB} + (\overrightarrow{BC} + \overrightarrow{CD}).
+
+.. _fig-geometria-operacoesvetores-11:
+
+.. figure:: _resources/associatividadesoma.jpg
+   :width: 300px
+   :align: center
+
+   :index:`Associatividade da Soma de Vetores`.
+   
+* Já sabemos que `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}`. Agora, se a partir de `A` construirmos o um vetor igual a `\overrightarrow{BC}`, digamos  `\overrightarrow{AD}`, e a partir de `D` construirmos um vetor igual ao vetor `\overrightarrow{AB}` (veja :numref:`fig-geometria-operacoesvetores-12`), então 
+
+.. math::
+
+   \overrightarrow{BC} + \overrightarrow{AB} = \overrightarrow{AD} + \overrightarrow{DC} = \overrightarrow{AC}.
+   
+Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overrightarrow{AB}`, de onde concluímos que a soma de vetores é comutativa.   
+  
+.. _fig-geometria-operacoesvetores-12:
+
+.. figure:: _resources/comutatividadesoma.jpg
+   :width: 200px
+   :align: center
+
+   :index:`Comutatividade da Soma de Vetores`.
+   
+
+.. admonition:: Pausa Para Reflexão
+
+   Você consegue perceber que `|\vec{v}+\vec{u}|` nem sempre é igual a `|\vec{v}|+|\vec{u}|`? Essa igualdade só é satisfeita quando os vetores `\vec{v}` e `\vec{u}` são colineares.
+   
+
+.. admonition:: Para o professor
+
+   O questionamento feito anteriormente pode ser discutido usando a lei de formação de um triângulo, que diz que para que um triângulo exista, cada lado deve ser menor que a soma dos outros dois. Ao realizar a soma de dois vetores, utilizando a regra do triângulo, construímos um triângulo de lados `|\vec{v}+\vec{u}|`, `|\vec{v}|` e 	`|\vec{u}|`. É fácil ver que não é possível construir um triângulo de lados  `|\vec{v}|`, `|\vec{u}|` e `|\vec{v}+\vec{u}|=|\vec{v}|+|\vec{u}|`.
+   
+**MULTIPLICAÇÃO DE UM VETOR POR UM ESCALAR**
+
+.. admonition:: Definição 
+
+   O produto de um número real `a` por um vetor `\overrightarrow{AB}` é o vetor `a\cdot\overrightarrow{AB}` que satisfaz as seguintes propriedades:
+   
+   * o módulo do vetor `a\cdot\overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `|a|`;
+   * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem o mesmo ponto inicial `A`;
+   * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem a mesma direção, determinada pela reta que passa por `A` e `B`;
+   * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem o mesmo sentido, se `a` for positivo e possuem sentidos opostos, se `a` for negativo (lembre-se que `\overrightarrow{AB}` e `-\overrightarrow{AB}` são vetores simétricos). 
+
+A partir desta definição, podemos perceber que:
+
+* o número real `1` é o elemento neutro da multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
+* `a\cdot\vec{0}=\vec{0}` para qualquer que seja o valor de `a`;
+* `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
+
+A multiplicação de um vetor por um escalar satisfaz outras propriedades que serão apresentadas na próxima seção.
+
+
+.. admonition:: Você sabia?
+
+   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo. 
+
+
