@@ -1,185 +1,285 @@
-
 .. _rot-tales:
 
 *************************
 ROTEIRO: TEOREMA DE TALES
 *************************
 
-Abaixo está o roteiro de funções. Vocês podem apagar os conteúdos e substituir.
-
 .. admonition:: Roteiro
 
-	.. admonition:: Previsão de aulas necessárias
+ .. admonition:: Previsão de aulas necessárias
+ 
+    Entre 4 e 6 aulas de 50 minutos cada, a ser avaliado no final do desenvolvimento.
 
-		Entre 4 e 6 aulas de 50 minutos cada, a ser avaliado no final do desenvolvimento.
+ .. admonition:: Previsão de páginas necessárias
+ 
+    A ser visto no final da elaboração do capítulo
 
-	.. admonition:: Previsão de páginas necessárias
-
-		A ser visto no final da elaboração do capítulo.
-
-	.. admonition::Fase de elaboração
+ .. admonition:: Habilidade
     
-		`Fase 3 (Refinamentos)<https://www.umlivroaberto.com/BookCloud/Metodologia/master/view/fases-de-elaboracao.html#sec-fase-1>`_
+    **(EM12MT01)** Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
+
+ .. admonition:: Objetivos gerais
+    
+    Levar o estudante a perceber a proporcionalidade de segmentos. Ele deverá compreender o enunciado do teorema sua demonstração no caso de segmentos comensuráveis.
+    
+    O aluno deverá ainda aprender a aplicar o teorema em problemas práticos do mundo da geometria e do mundo real.
 
 
+ .. admonition:: Conteúdos abordados
+    
+    #. Razão entre segmentos
+    #. Retas paralelas equidistantes
+    #. Enunciado e demonstração (parcial) do teorema de Tales
+    #. Aplicações
+    #. Primeiras técnicas de demonstração
 
-	.. admonition:: Habilidade 
 
-		**(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá- las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
+ .. admonition:: Pré-requisitos
 
-
-	.. admonition:: Objetivos gerais
-
-		Levar o estudante a perceber a importância que o conceito de função tem, não apenas na matemática mas em áreas como a Física, a Biologia, Engenharia, etc. O estudante deverá estar convencido ao final do Capítulo que a noção de função é fundamental para uma melhor compreensão do mundo a nosso volta, auxiliando inclusive em processos que envolvem tomada de decisão e previsões futuras. Ele deverá ainda compreender o papel chave que as funções desempenham nos processos de modelagem matemática.
-
-	.. admonition:: Conteúdos abordados
-		
-		#. Conceito de função e suas representações
-		#. Domínio, contradomínio e imagem
-		#. Gráfico de função
-		#. Crescimento e decrescimento
-		#. Interseções com os eixos coordenados
-
-	.. admonition:: Pré-requisitos
-
-		**(EF06MA15)** Associar pares ordenados de números a pontos do plano cartesiano do 1º quadrante, em situações como a localização dos vértices de um polígono.
-
-		**(EF07MA10)** Compreender a ideia de variável, representada por letra ou símbolo, para expressar relação entre duas grandezas, diferenciando-a da ideia de incógnita.
-
-		**(EF07MA11)** Utilizar a simbologia algébrica para expressar regularidades encontradas em sequências numéricas.
-
-		**(EF07MA12)** Reconhecer se duas expressões algébricas obtidas para descrever a regularidade de uma mesma sequência numérica são ou não equivalentes.
-
-		**(EF07MA13)** Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas.
-
-		**(EF09MA06)** Compreender as funções como relações de dependência unívoca entre duas variáveis e suas representações numérica, algébrica e gráfica e utilizar esse conceito para analisar situações que envolvam relações funcionais entre duas variáveis.
-        
-		**(EF09MA07)** Resolver problemas que envolvam a razão entre duas grandezas de espécies diferentes, como velocidade e densidade demográfica.
-
-		**(EF09MA08)** Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.
-
-	.. admonition:: Desdobramentos imediatos
-
-		**(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
+   **(EF08MA12)** Demonstrar propriedades de quadriláteros por meio da identificação da congruência de triângulos.
    
-   		Diferenciar relações funcionais e relações não funcionais a partir de fenômenos determinísticos e aleatórios, reconhecendo aqueles que apresentam uma estrutura de causalidade, isto é, aqueles em que é possível estimar resultados; e verificar situações de dependência entre variáveis. Reconhecer funções em situações de não casualidade.
+   **(EF09MA10)** Demonstrar relações simples entre os ângulos formados por retas paralelas cortadas por uma transversal.
 
-	.. admonition:: Abordagem da introdução
+ .. admonition:: Desdobramentos imediatos
+   
+   **(EM12MT02)** Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho.
+   
+   **(EM12MT03)** Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras.
 
-		Usaremos três atividades que exploram os principais aspectos da definição de função, duas delas relacionadas ao cotidiano do estudante. Elas cumprem também o papel de resgatar alguns conceitos já adquiridos no Ensino Fundamental, tais como proporcionalidade, reconhecimento de padrões, leitura e interpretação de gráficos, conforme habilidades listadas em pré-requisitos. Em seguida, identificando características comuns às três situações apresentadas, formalizamos o conceito de função. Oferecemos ainda situações onde é possível refletir sobre o conceito analisando relações que não são funcionais.
 
+ .. admonition:: Abordagem 
+ 
+   * Usaremos inicialmente duas atividades que possuem o objetivo de recordar os temas abordados no 9º ano e que são pré-requisitos básicos para a compreensão deste capítulo. Após essas atividades aparecerá um texto com as ideias organizadas que será de grande importância para o aluno que estiver estudando sozinho.
+   
+   * A seguir, o capítulo se inicia com uma atividade motivadora onde, em alguma situação contextualizada, retas paralelas e razões serão os ingredientes para a resposta de alguma pergunta. 
+   
+   * As atividades de desenvolvimento do capítulo serão feitas de forma a encaminhar o aluno para uma demonstração (parcial) do Teorema de Tales.
+   
+   * O aluno então realizará a demonstração do teorema no caso de segentos comensuráveis. Consideramos essa abordagem perfeitamente adequada, pois nas aplicações, todas as medidas dos segmentos serão expressas por números racionais.
+   
+   * Após essas atividades aparecerá um texto com as ideias organizadas e com comentários sobre a demonstração geral, e sobre a recíproca do teorema.
+   
+   * Duas atividades seguintes mostrarão aplicações e os Exercícios mostrarão diversas outras.
 
-	.. admonition:: Dificuldades típicas dos alunos (distratores)
+ .. admonition:: Distratores
+ 
+  As dificuldades típicas dos alunos referem-se principalmente às figuras. Eles compreendem bem o teorema na sua figura básica, mas em outras situações têm dificuldade em reconhecer, nelas, a aplicação do teorema de Tales. 
+   
+  Digamos que a figura básica tenha sido a abaixo.
+   
+   .. tikz:: figuras amigáveis
+     \draw [line width=1.pt] (0.,1.)-- (7.,1.);
+     \draw [line width=1.pt] (3.45,1.12) -- (3.45,0.88);
+     \draw [line width=1.pt] (3.55,1.12) -- (3.55,0.88);
+     \draw [line width=1.pt] (0.,0.)-- (7.,0.);
+     \draw [line width=1.pt] (3.45,0.12) -- (3.45,-0.12);
+     \draw [line width=1.pt] (3.55,0.12) -- (3.55,-0.12);
+     \draw [line width=1.pt] (0.,-2.)-- (7.,-2.);
+     \draw [line width=1.pt] (3.45,-1.88) -- (3.45,-2.12);
+     \draw [line width=1.pt] (3.55,-1.88) -- (3.55,-2.12);
+     \draw [line width=1.pt] (4.,1.52)-- (6.,-3.);
+     \draw [line width=1.pt] (2.98,1.54)-- (0.,-3.);
+     \draw [fill=black] (2.63,1.) circle (2.0pt);
+     \draw [fill=black] (1.97,0.) circle (2.0pt);
+     \draw [fill=black] (0.66,-2.) circle (2.0pt);
+     \draw [fill=black] (4.23,1.) circle (2.0pt);
+     \draw [fill=black] (4.67,0.) circle (2.0pt);
+     \draw [fill=black] (5.56,-2.) circle (2.0pt);
 
-		São muitos os relatos sobre as  diversas dificuldades que os estudantes apresentam no processo de aprendizagem da noção de função. [Sierpinska-1992]_ chama atenção para alguns dos problemas mais comuns:  fazer a ligação entre as diferentes representações (fórmulas, gráficos, diagramas, descrição por palavras); interpretar gráficos e manipular algebricamente, entre outros. Abaixo estão alguns dos principais distratores apontados pela literatura de pesquisa:
+  Os alunos resolverão muito bem situações que se pareçam com essa, mas alguns terão natural dificuldade em identificar que, nas figuras seguintes, o mesmo teorema se aplica.
+   
   
-		#. Neste ponto do desenvolvimento do seu aprendizado é muito comum o estudante fazer confusão com os diferentes papéis que as letras representam nas expressões algébricas. Para [Ursini-et-al-2001]_, as distintas interpretações possíveis para a simbologia algébrica constituem aspectos que geram dificuldades adicionais a muitos estudantes. 
-		#. "Habilidade algébrica acompanhada pela crença no poder da álgebra para resolver quase automaticamente muitos tipos de problemas, pode ser um impedimento para a compreensão do conceito geral de função." Ver [Sierpinska-1992]_, página 14.
-		#. "... os estudantes têm uma forte tendência a pensar em funções algebricamente em vez de visualmente" mesmo que a visualização possa ser extremamente útil. Eles resistem às representações visuais porque o processamento visual requer habilidades de nível mais elevado do que o processamento analítico. Ver [Eisenberg-1992]_.
-		#. Há no senso comum a ideia equivocada de que o "mundo é proporcional". Segundo [Dooren-et-al-2005]_, ao final do ensino fundamental mais de 90% dos estudantes americanos ao resolverem o problema a seguir assumem a relação como sendo proporcional: "O melhor tempo de John na corrida dos 100m é 17 segundos. Quanto tempo levará para correr 1km?"
+  .. tikz:: testando
+    \draw [line width=1.pt] (-2.,-3.)-- (3.,0.);
+    \draw [line width=1.pt] (3.,0.)-- (2.,-3.);
+    \draw [line width=1.pt] (2.6296533840669043,-1.4905131670194958) -- (2.40196939253478,-1.4146185031754537);
+    \draw [line width=1.pt] (2.5980306074652195,-1.585381496824547) -- (2.3703466159330957,-1.5094868329805051);
+    \draw [line width=1.pt] (2.,-3.)-- (-2.,-3.);
+    \draw [line width=1.pt] (1.3323529411764703,-1.0005882352941178)-- (0.6658823529411763,-3.);
+    \draw [line width=1.pt] (1.1287710311257282,-1.990807284666554) -- (0.9010870395936043,-1.914912620822512);
+    \draw [line width=1.pt] (1.0971482545240436,-2.0856756144716053) -- (0.8694642629919197,-2.0097809506275635);
+    \draw [line width=1.pt] (4.,0.)-- (6.,-1.);
+    \draw [line width=1.pt] (5.00894427191,-0.37030805730501226) -- (4.90161300899001,-0.584970583144993);
+    \draw [line width=1.pt] (5.098386991009991,-0.41502941685500877) -- (4.991055728090001,-0.6296919426949895);
+    \draw [line width=1.pt] (6.,-1.)-- (3.,-3.);
+    \draw [line width=1.pt] (4.,0.)-- (7.,-5.);
+    \draw [line width=1.pt] (7.,-5.)-- (3.,-3.);
+    \draw [line width=1.pt] (4.991055728090001,-4.129691942694989) -- (5.098386991009991,-3.9150294168550084);
+    \draw [line width=1.pt] (4.90161300899001,-4.084970583144995) -- (5.00894427191,-3.8703080573050137);
+    \draw [line width=1.pt] (8.,0.)-- (9.,-1.);
+    \draw [line width=1.pt] (8.549497474683061,-0.379791847198288) -- (8.37979184719829,-0.5494974746830584);
+    \draw [line width=1.pt] (8.620208152801714,-0.45050252531694335) -- (8.450502525316942,-0.6202081528017137);
+    \draw [line width=1.pt] (8.,0.)-- (8.,-3.);
+    \draw [line width=1.pt] (9.,-1.)-- (9.528,-4.528);
+    \draw [line width=1.pt] (9.84,-0.16)-- (12.874256872973351,-1.1817431270266496);
+    \draw [line width=1.pt] (8.,-0.7)-- (9.1232,-1.8232);
+    \draw [line width=1.pt] (8.61109747468306,-1.1413918471982862) -- (8.441391847198288,-1.3110974746830566);
+    \draw [line width=1.pt] (8.681808152801713,-1.2121025253169415) -- (8.51210252531694,-1.3818081528017119);
+    \draw [line width=1.pt] (9.,-1.)-- (9.84,-0.16);
+    \draw [line width=1.pt] (9.26443650813896,-0.565857864376271) -- (9.434142135623732,-0.7355634918610413);
+    \draw [line width=1.pt] (9.335147186257615,-0.4951471862576156) -- (9.504852813742389,-0.664852813742386);
+    \draw [line width=1.pt] (9.405857864376271,-0.42443650813896033) -- (9.575563491861043,-0.5941421356237307);
+    \draw [line width=1.pt] (9.1232,-1.8232)-- (10.54799327036045,-0.3984067296395521);
+    \draw [line width=1.pt] (9.680033143319182,-1.0966612291960456) -- (9.849738770803956,-1.266366856680816);
+    \draw [line width=1.pt] (9.750743821437839,-1.0259505510773914) -- (9.92044944892261,-1.195656178562162);
+    \draw [line width=1.pt] (9.821454499556493,-0.9552398729587374) -- (9.991160127041267,-1.1249455004435078);
+    \draw [line width=1.pt] (9.528,-4.528)-- (12.874256872973351,-1.1817431270266496);
+    \draw [line width=1.pt] (11.045564944625635,-2.8407294278895945) -- (11.215270572110407,-3.0104350553743653);
+    \draw [line width=1.pt] (11.11627562274429,-2.7700187497709394) -- (11.285981250229062,-2.93972437725571);
+    \draw [line width=1.pt] (11.186986300862946,-2.699308071652284) -- (11.356691928347718,-2.8690136991370543);
+    \draw [line width=1.pt] (8.,-3.)-- (9.528,-4.528);
+    \draw [line width=1.pt] (8.813497474683063,-3.6437918471982873) -- (8.64379184719829,-3.81349747468306);
+    \draw [line width=1.pt] (8.884208152801715,-3.71450252531694) -- (8.714502525316943,-3.884208152801713);
+    \draw [fill=black] (2.,-3.) circle (2.0pt);
+    \draw [fill=black] (3.,0.) circle (2.0pt);
+    \draw [fill=black] (1.3323529411764703,-1.0005882352941178) circle (2.0pt);
+    \draw [fill=black] (4.,0.) circle (2.0pt);
+    \draw [fill=black] (6.,-1.) circle (2.0pt);
+    \draw [fill=black] (5.,-1.6666666666666667) circle (2.0pt);
+    \draw [fill=black] (3.,-3.) circle (2.0pt);
+    \draw [fill=black] (7.,-5.) circle (2.0pt);
+    \draw [fill=black] (-2.,-3.) circle (2.0pt);
+    \draw [fill=black] (0.6658823529411763,-3.) circle (2.0pt);
+    \draw [fill=black] (9.1232,-1.8232) circle (2.0pt);
+    \draw [fill=black] (10.54799327036045,-0.3984067296395521) circle (2.0pt);
+    \draw [fill=black] (8.,0.) circle (2.0pt);
+    \draw [fill=black] (8.,-0.7) circle (2.0pt);
+    \draw [fill=black] (8.,-3.) circle (2.0pt);
+    \draw [fill=black] (9.528,-4.528) circle (2.0pt);
+    \draw [fill=black] (12.874256872973351,-1.1817431270266499) circle (2.0pt);
+    \draw [fill=black] (9.84,-0.16) circle (2.0pt);
+    \draw [fill=black] (9.,-1.) circle (2.0pt);
 
-	.. admonition:: Estratégia Pedagógica
+ .. admonition:: Exemplos 
 
-		* Resgatar o que foi visto no nono ano do ensino fundamental e apontar para um aprofundamento do assunto. Texto de apresentação motivando o tópico de função com situações do cotidiano.
-        
-		* Trabalhar com variáveis não numéricas, tabelas, séries temporais, regras que não são dadas por fórmulas e fórmulas.
+   Serão apresentados exemplos diversos, uns contextualizados no mundo real, outros no mundo da matemática abordando algum conceito novo.
+
    
-		* Explorar as particularidades e os diferentes aspectos do conceito de função por meio de atividades que levem o estudante a perceber a sua generalidade. Ver Task A, figura 1 da referência [Ayalon-et-al-2015]_.  (Exploração)
+   .. admonition:: Exemplo 1: A projeção paralela conserva as razões
    
-		* As atividades deverão contemplar os três diferentes níveis de abstração: ação, processo e objeto. Ver, [Sierpinska-1992]_.
+    Esta é uma oportunidade para abordar um conceito novo como o de projeção. 
+    A figura a seguir mostra a projeção sobre a reta `r` paralelamente à reta `s`.
+      
+      .. tikz:: projeção
+        \draw [line width=2.pt] (0.,-5.)-- (10.,-5.);
+        \draw (9.78,-4.9) node[anchor=north west] {$r$};
+        \draw [line width=2.pt] (-0.04,-1.74)-- (1.56,1.5);
+        \draw (1.58,1.8) node[anchor=north west] {$s$};
+        \draw [line width=2.pt] (3.28,-0.62)-- (9.,1.);
+        \draw [line width=2.pt] (3.28,-0.62)-- (1.1170370370370366,-5.);
+        \draw [line width=2.pt] (2.132101471650325,-2.944494519908092) -- (2.037125094628808,-2.7302995437581674);
+        \draw [line width=2.pt] (2.132101471650325,-2.944494519908092) -- (2.359911942408229,-2.889700456241832);
+        \draw [line width=2.pt] (5.214741107099608,-0.07204884728997098)-- (2.781184982304532,-5.);
+        \draw [line width=2.pt] (3.9315459978338776,-2.6705189435530774) -- (3.836569620812361,-2.456323967403153);
+        \draw [line width=2.pt] (3.9315459978338776,-2.6705189435530774) -- (4.159356468591782,-2.6157248798868173);
+        \draw [line width=2.pt] (9.,1.)-- (6.037037037037036,-5.);
+        \draw [line width=2.pt] (7.452101471650324,-2.134494519908091) -- (7.357125094628807,-1.9202995437581665);
+        \draw [line width=2.pt] (7.452101471650324,-2.134494519908091) -- (7.679911942408228,-2.079700456241831);
+        \draw (2.82,0.22) node[anchor=north west] {$A$};
+        \draw (4.88,0.7) node[anchor=north west] {$P$};
+        \draw (8.54,1.74) node[anchor=north west] {$B$};
+        \draw (0.76,-4.96) node[anchor=north west] {$A'$};
+        \draw (2.52,-4.96) node[anchor=north west] {$P'$};
+        \draw (5.78,-4.92) node[anchor=north west] {$B'$};
+        \draw [fill=black] (1.1170370370370366,-5.) circle (2.0pt);
+        \draw [fill=black] (2.781184982304532,-5.) circle (2.0pt);
+        \draw [fill=black] (6.037037037037036,-5.) circle (2.0pt);
+        \draw [fill=black] (3.28,-0.62) circle (2.0pt);
+        \draw [fill=black] (5.214741107099608,-0.07204884728997098) circle (2.0pt);
+        \draw [fill=black] (9.,1.) circle (2.0pt);
+     
+    O que é relevante nessa situação é que `\frac{PA}{PB}=\frac{P'A'}{P'B'}`
+     
+    A projeção mantém as razões.
+  
+  
+   .. admonition:: Exemplo 2: Cidades Planejadas
    
-		* Definir função chamando atenção para os diferentes elementos envolvidos na definição e culminando no estabelecimento da definição. Elaborar orientação para o professor sobre a forma de apresentação da definição.  (Organização das ideias)
+    A figura a seguir mostra a maquete de uma cidade que está sendo planejada.
     
-		* Atividades explorando a definição. (É ou não é função?) *(lembrar de colocar atividade onde duas tabelas iguais representam funções diferentes)*
+    .. _fig-maquete:
+    .. figure:: _resources/maquete.jpg
+    
+     :width: 200px
+     :align: center
    
-		* Gráfico de função: Embora já tenhamos apresentado atividades que fizeram uso de gráficos, somente aqui , após consolidar a definição de função é que exploraremos mais a representação gráfica/geométrica das funções.
+    Há diversas possibilidades para explorar o Teorema de Tales nessa maquete.
    
-		* Atividades que explorem crescimento e decrescimento de função de maneira intuitiva.  Ver Task C, figura 3 da referência [Ayalon-et-al-2015]_.
-   
+    Com as medidas do terreno da frente, podemos, por exemplo, calcular as medidas dos fundos
+
+
 .. admonition:: Estrutura
 
-	**Para o professor do Capítulo**
+ .. admonition:: Para o professor do Capítulo
+ 
+  Comunicar claramente a habilidade que será desenvolvida no capítulo.
+ 
+  Apresentar um destaque (janela com uma tag) mencionando os pré-requisitos necessários.
+ 
+  Apresentar um destaque (janela com uma tag) trazendo algumas imagens sobre o tema.
+ 
+ .. admonition:: Textos para o aluno
+ 
+  Iniciar com texto destacando o papel fundamental que o tópico desempenha na matemática.
+ 
+  Elaborar os textos para o aluno permeando as atividades de forma que a reunião dos textos tenha coerência e completude de forma que o leitor solitário possa compreender o assunto de forma autônoma.
 
-	* Comunicar claramente a habilidade que pretendemos desenvolver no capítulo;
-	* Apresentar um destaque (janela com uma tag) mencionando os pré-requisitos necessários;
-	* Apresentar um destaque (janela com uma tag) trazendo algumas informações sobre o que as pesquisas cintíficas apontam sobre o tema;
+ .. admonition:: Explorando o assunto: o que é um teorema? 
+ 
+  Apresentar a implicação lógica e mostrar seu significado.
+ 
+  Mostrar a estrutura de um teorema e em particular, o enunciado do teorema de Tales.
+ 
+  Pesquisar se os alunos conhecem outros teoremas.
+ 
+  Dizer o que segnifica a recíproca de um teorema, dar exemplos e, em particular, enunciar a recíproca do teorema de Tales.
 
-	**Texto para o aluno**
-
-	* Iniciar com texto destacando o papel fundamental que o tópico desempenha na matemática;
-	* Relacionar o assunto com a Modelagem Matemática;
-
-	**Explorando o assunto: conceito de função**
-    
-	Apresentar três ou quatro atividades que explorem as diferentes representações já apresentadas em anos anteriores, tais atividades deverão dar conta de:
-
-	* Interpretar gráfico cartesiano de relações unívocas entre grandezas;
-	* Levar o estudante a construir argumentos baseados na interpretação de gráficos;
-	* Reconhecer e generalizar um padrão apresentado;
-	* Intepretar dados fornecidos em tabelas em conexão com situações reais;
-
-	**Organizando as ideias: definição de função**
-
-	* Fazer uso das atividades exploratórias de forma que a definição de função apareça de forma natural;
-	* Destacar os principais elementos envolvidos na notação (utilizar recursos de design instrucional);
-
-	**Praticando o assunto**
-
-	* Distinguir quando que uma relação é ou não função. [Atividade Google Maps]
-	* Explorar a notação e a conexão com situações reais.
-
-	**Aprofundando**
-
-	Serão apresentados outros problemas e situações em que as ideias do capítulo reaparecem em contextos um pouco mais abstratos.
-
-	**Explorando o assunto: gráfico de função**
-
-	* Dar destaque para a importância de saber representar graficamente um conjunto de dados. Fazer conexão com a estatística;
-	* Revisitar situações já apresentadas em atividades anteriores explorando seus gráficos;
-
-	**Organizando as ideias: gráfico de função**
-
-	* Relembrar par ordenado, definir produto cartesiano e gráfico de função.
-
-	**Praticando o assunto**
-
-	* Crescimento, decrescimento, zero de função e interseção com o eixo y.
-
-	**Aprofundamento**
-
-	Explorar a noção de "crescimento com tendência a deixar de crescer" e "decrescimento com tendência a deixar de decrescer".
-
-	**Exercícios do capítulo**
-
-.. admonition:: Aprofundamentos
-
-	Estamos prevendo dois aprofundamentos para o capítulo. O primeiro seria dedicado a explorar o conceito de função de forma mais abstrata.
-
-	*Exemplo:* Identifique em cada uma das relações abaixo qual (ou quais) não são função. Justifique sua resposta.
-
-	a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada pessoa associa o seu irmão.
-	b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada número real associa sua raiz quadrada.
-	c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada número real positivo `x` associa o triângulo de área `x`.
-
-	O segundo aprofundamento será dedicado à gráfico de função. Pretendemos explorar a noção de "crescimento com tendência a deixar de crescer" e "decrescimento com tendência a deixar de decrescer".
-
-
-.. admonition:: Sugestões de leitura ou projetos aplicados
-
-	Atividade eletrônica exploratória. Pretendemos oferecer ao professor uma atividade desenvolvida no Desmos, e com a qual ele poderá investigar que tipo de representação de uma relação funcional (tabela, input-output, gráfico, flechas), já estudada nos anos anteriores, são mais fortes em seus estudantes. Tal atividade poderá ser útil para o planejamento das atividades a serem desenvolvidas pelo professor nesse capítulo.
-
-
-.. admonition:: Referências Bibliográficas
+ .. admonition:: Organizando as ideias: o que é uma demonstração?
+ 
+  Explicar o que é uma demonstração no sentido de partir da hipótese, reunir argumentos, conectar fatos e concluir a tese.
   
-		.. [Sierpinska-1992] Sierpinska A.: On understanding the notion of function. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 25-58.
+  Elaborar uma atividade com a demonstração de um teorema simples de geometria relacionado a conhecimento anterior. Por exemplo, o fato de que a soma dos ângulos internos de qualquer triângulo é `180^\circ`.
+  
+  Explicar o que significa uma definição.
 
-		.. [Eisenberg-1992] Eisenberg T.: On the development of a sense for functions. In Guershon Harel and Ed Dubinsky, editors, The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America, USA, p. 153–174.
-   
-		.. [Dooren-et-al-2005] Dooren W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L.: Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, V. 23, p. 57 –86. 
-   
-		.. [Greer-1993] Greer B.: The mathematical modelling perspective on world problems. Journal of Mathematical Behavior, V. 12, p. 239–250.
-   
-		.. [Ayalon-et-al-2015] Ayalon M., Watson A. & Lerman S.: Progression Towards Functions: Students’ Performance on Three Tasks About Variables from Grades 7 to 12.
-   
-		.. [Schroer-2013] Schroer R.: A retormada de relação entre grandezas no ensino médio e sua tradução  para a linguagem de funções, Dissertação do Programa de Pós-Graduação em ensino de Matemática da UFRGS, Porto Alegre, RGS. 
+ .. admonition:: Praticando o assunto: aplicações 
+ 
+  Elaborar atividade conduzindo o aluno a compreender e demonstrar o teorema das paralelas equidistantes cortadas por duas transversais.
+  
+  Elaborar atividade conduzindo o aluno a compreender e demonstrar o teorema de Tales no caso dos segmentos comensuráveis.
+  Mostrar aplicações em situações diversas, contextualizadas ou não.
+
+ .. admonition:: Aprofundando
+ 
+  Comentar que dois segmentos nem sempre são comensuráveis e explicar o significado desse conceito.
+  
+  Mostrar a demonstração do teorema de Tales usando áreas. Essa demonstração desloca, naturalmente, a questão da continuidade para mais adiante.
+
+ .. admonition:: Primeiras técnicas de demonstração 
+ 
+  Mostrar o significado da demonstração por absurdo.
+ 
+  Explicar o que significa que “algo é único” e de que forma se pode demonstrar uma proposição desse tipo. Por exemplo, “Por um ponto dado é possível traçar uma única perpendicular a uma reta dada”.
+ 
+  Exemplificar uma demonstração por absurdo com a recíproca do teorema de Tales.
+
+ .. admonition:: Exercícios do capítulo
+ 
+  Serão elaborados 10 exercícios envolvendo situações variadas, algumas contextualizadas, e outras solicitando alguma demonstração. Nesses casos, serão dadas sugestões para que o aluno possa iniciar sua tentativa.
+
+
+           
+    
+
+
+
+
+
+
+ 
+ 
+
+
+
+
 
