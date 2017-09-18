@@ -89,6 +89,7 @@ ROTEIRO: VETORES
    .. admonition:: Dificuldades típicas dos estudantes (distratores)
    
       * Confunde-se deslocamento com trajetória e velocidade com rapidez.
+      * Confunde-se `0` (o número) com `\vec{0}` (o vetor).
    
       Adição de vetores
    
@@ -112,7 +113,7 @@ ROTEIRO: VETORES
       
       #. Atividade: **vetor posição relativa**. Objetivo: mostrar que a posição relativa é uma grandeza vetorial, pois só com um ponto de referência e uma distância ou um ponto de referência e uma direção não é possível definir uma localização. A atividade também serve para introduzir a ideia e terminologia de direção, sentido e módulo. Mudar o ponto de referência para lembrar que o vetor posição depende do ponto de referência.
       #. Explicar o porque de se usar a palavra vetor nestes contexto a partir de sua etimologia. 
-      #. Atividade: **vetor deslocamento**. Introduzir o contexto físico (não a definição) de variação de posição. Diferenciar deslocamento de trajetória (um equívoco comum em Física) e reconhecer que o deslocamento independe da escolha da origem. O contexto permite introduzir de forma natural a abordagem da adição geométrica e multiplicação por escalar. Aqui dá para levar o aluno a perceber vetores iguais (não é relativo ao ponto) e a comutatividade da soma. Ideia: comandar carrinhos por uma lista de vetores pré-definidos para que se desloquem de um ponto `A` a um ponto `B` (para detalhes da ideia, ver: https://goo.gl/xnP4nz , https://goo.gl/DgXnUge e https://goo.gl/sLoqNN .  Ressaltar que no produto por escalar, quanto maior o módulo do escalar, maior será o módulo do vetor vezes o escalar.
+      #. Atividade: **vetor deslocamento**. Introduzir o contexto físico (não a definição) de variação de posição. Diferenciar deslocamento de trajetória (um equívoco comum em Física) e reconhecer que o deslocamento independe da escolha da origem. O contexto permite introduzir de forma natural a abordagem da adição geométrica e multiplicação por escalar. Aqui dá para levar o aluno a perceber vetores iguais (não é relativo ao ponto) e a comutatividade da soma. Ideia: comandar carrinhos por uma lista de vetores pré-definidos para que se desloquem de um ponto `A` a um ponto `B` (para detalhes da ideia, ver: https://goo.gl/xnP4nz , https://goo.gl/DgXnUg e https://goo.gl/sLoqNN .  Ressaltar que no produto por escalar, quanto maior o módulo do escalar, maior será o módulo do vetor vezes o escalar.
       #. Refletindo: notação de adição e produto por escalar. Observar que, talvez, pela primeira vez estão sendo somados objetos que não são números.
       #. Observar que a soma de dois deslocamentos pode ser um deslocamento cujo módulo **não é** a soma dos módulos das parcelas.
             
