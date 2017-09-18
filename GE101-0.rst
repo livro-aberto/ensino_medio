@@ -74,14 +74,14 @@ Parte I.
 
 A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à 10 km de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
+#. É possível marcar no mapa a localização do grupo de exploradores? Justifique sua resposta!
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte II.
 
 Considere agora esta outra situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à nordeste de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
+#. É possível marcar no mapa a localização do grupo de exploradores? Justifique sua resposta!
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte III.
@@ -91,7 +91,8 @@ Parte III.
 Considere agora esta terceira situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores 
 situado à 10 km à nordeste de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
+#. É possível marcar no mapa a localização do grupo de exploradores? 
+Justifique sua resposta!
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte IV.
@@ -100,7 +101,7 @@ Uma segunda estação de pesquisa `B` está situada à 10 km ao noroeste de `A`.
 
 #. Considerando os dados da Parte III, como você informaria a posição do grupo de exploradores com relação à estação `B`?
 
-#. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Por quê?
+#. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Justifique sua resposta!
 
 
 
@@ -263,7 +264,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * As ruas do mapa foram propositalmente desenhadas como curvas: o objetivo é enfatizar para o aluno que os deslocamentos definidos pelas "cartas" do jogo **não são** as trajetórias percorridas.
-   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.  
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.    
 
    .. figure::  _resources/ggb-cv-01-qr.png
       :align: center         
@@ -332,14 +333,34 @@ As regras do jogo são como se segue.
 
 Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
    
-**DESCREVENDO FLECHAS VERBALMENTE**
+**DESCREVENDO FLECHAS POR MEIO DE UMA ROSA DOS VENTOS**
 
-Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Assim, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloce 1 cm para o norte". Como as demais flechas podem ser descritas?
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 1 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas? 
 
 .. admonition:: Resposta 
 
    Texto da resposta.
 
+
+Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\vec{h}` e `\vec{a}` definiram dois vetores deslocamentos: `\overrightarrow{AB}` e `\overrightarrow{BC}`. 
+
+.. HJB: é importante que os vetores desta figura sejam congruentes àqueles apresentados nas cartas do jogo.
+
+.. _fig-geometria-cv-06:
+
+.. figure::  _resources/geometria-cv-06_1.jpg
+   :width: 290px
+   :align: center
+   
+   Justaposição de deslocamentos.
+   
+Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
+
+.. math::   
+   \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
+   :label: label_vector_composition
+   
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números.
 
 
 
