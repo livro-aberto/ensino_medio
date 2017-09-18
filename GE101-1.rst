@@ -297,7 +297,7 @@ Atividade: homotetia
    
    **Recomendações e sugestões:** 
    
-   #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você pode trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
+   #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você deve trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
    #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! Na :ref:`multiplicacao-escalar` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas. Aqui é importante observar que `3(3,2)= \overrightarrow{OA'} + \overrightarrow{OC'} = 9\overrightarrow{OX}+ 6\overrightarrow{OY} =(9,6)`.
    #. Os estudantes podem não perceber que existe uma explicação para o fato da homotetia de um retângulo, ser ainda um retângulo. Observe que isso foi utilizado na solução. Existem duas maneiras de se observar que o ângulo \widehat{OA'B'}=90^{\circ}`: uma é usar a semelhança dos triângulos `AOB` e `A'OB'`, que podem ser obtidas pelos casos LAL (observando que `OB'=3OB` e `OA'=3OA`).
 
@@ -627,7 +627,74 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
 
       Força resultante **diferente de zero** na bola da esquerda e força resultante **igual à zero** na bola da direita.
    
-Atividade da escaladora: Resultante zero e soma de vetores com mesma origem.
+.. _ativ-vetores-forca
+
+Atividade: Força
+----------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações e sugestões:**
+   Oriente os estudantes a fazer uma bolinha para representar as forças sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela.
+
+A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha.
+
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+      :align: center
+      :width: 200px
+            
+      foto de Elke Wetzig
+            
+   .. tikz::
+
+      \node at (-1.5,-.3) {(I)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      \end{scope}
+      \end{scope}
+      
+#. Em qual das situações (I), (II) ou (III) a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
+
 
 .. _ativ-vetores-plano-inclinado:
 
