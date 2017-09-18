@@ -6,6 +6,8 @@
 
 .. HJB: não esquecer de indicar os vídeos do Étienne Ghys no para saber mais (http://www.chaos-math.org/pt-br).
 
+.. HJB: não esquecer de colocar um box sobre radar vectoring.
+
 
 
 .. admonition:: Para o professor
@@ -255,29 +257,28 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    
    * reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes;
    * perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada;   
-   * compreender operações com vetores deslocamento do ponto de vista geométrico.
+   * concatenar deslocamentos sucessivos;
+   * reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio 
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   *    Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`. 
-   
+   * As ruas do mapa foram propositalmente desenhadas como curvas: o objetivo é enfatizar para o aluno que os deslocamentos definidos pelas "cartas" do jogo **não são** as trajetórias percorridas.
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.  
+
+   .. figure::  _resources/ggb-cv-01-qr.png
+      :align: center         
+      :width: 120px
 
    .. _fig-ggb-cv-01:
-   
-   .. figure::  _resources/ggb-cv-01-qr.png
-      :width: 120px
-      :align: center         
 
    .. figure:: _resources/ggb-cv-01.jpg
       :width: 700px
       :align: center
                   
       <https://www.geogebra.org/m/MADzWVcM>.
-
-
-   
-   
-   
+            
+   * Depois que os alunos jogarem, você pode fazer um levantamento de quem conseguiu ganhar a corrida com o menor número de cartas e, então, pedir para que os alunos reproduzam suas jogadas usando, por exemplo, a construção GeoGebra da :numref:`fig-ggb-cv-01`.
+   * Traga algumas cópias extras da :numref:`fig-geometria-cv-02`, pois alguns alunos podem errar no início ao aprenderem as regras.
    
 .. Palavras-chaves: composição de deslocamentos, deslocamento total, deslocamento resultante.
 
@@ -311,16 +312,27 @@ As regras do jogo são como se segue.
 
 * Em cada jogada, o jogador deve escolher uma das "cartas" da :numref:`fig-geometria-cv-03`. Cada carta apresenta uma flecha que especifica a orientação e a distância com as quais, a partir da posição atual do carro do jogador, é possível determinar sua nova posição. Em outras palavras, a nova posição do carro deve ser de tal modo que o vetor determinado pelo deslocamento da posição antiga para a posição nova tenha a mesma orientação e o mesmo módulo da flecha da carta escolhida pelo jogador.
 
-* Ao final de cada jogada, o jogador deve desenhar o vetor deslocamento associado. Para evitar confusão, recomenda-se que cada jogador use caneta com cor diferente.
+* Ao final de cada jogada, o jogador deve desenhar o vetor deslocamento associado. Para evitar confusão, recomenda-se que cada jogador use uma caneta com cor diferente.
 
 * Qualquer carta está disponível para uso em qualquer jogada, mesmo que ela já tenha sido selecionada em uma jogada anterior.
 
 **FASE DE AQUECIMENTO**
 
+#. Marque como `A`, em uma das folhas que o seu grupo recebeu, a posição de largada do carro representado pelo ponto azul. Suponha que o jogador responsável por esse carro escolha a carta `\vec{h}`. Qual será a nova posição do ponto azul? Marque-a como `B` e, então, desenhe o vetor deslocamento `\overrightarrow{AB}`.
 
-**HORA DA CORRIDA PARA VALER!**
+#. Com relação ao item anterior, desenhe uma possível trajetória percorrida pelo carro da posição `A` até a posição `B`. Quantas trajetórias possíveis existem?
 
+#. Suponha que o jogador responsável pelo carro representado pelo ponto azul tenha escolhido, na sua segunda jogada, a carta `\vec{a}`. Qual será a nova posição do ponto azul? Marque-a como `C` e, então, desenhe os vetores deslocamentos `\overrightarrow{BC}` e `\overrightarrow{AC}`.
 
+#. Na posição `C` marcada no item anterior, na sua terceira jogada, quais cartas o jogador responsável pelo ponto azul **não deveria escolher** para não fazer com que seu carro saia da estrada e, assim, perca o jogo automaticamente?
+
+**VAMOS JOGAR!**
+
+Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
+   
+**DESCREVENDO FLECHAS VERBALMENTE**
+
+#. A flecha `\vec{a}`
 
 .. admonition:: Resposta 
 
