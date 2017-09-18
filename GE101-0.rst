@@ -74,24 +74,24 @@ Parte I.
 
 A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à 10 km de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por que sim? Por que não?
+#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte II.
 
-Considere agora esta outra situação diferente. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à nordeste de `A` necessita de socorro urgente.
+Considere agora esta outra situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à nordeste de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por que sim? Por que não?
+#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte III.
 
 .. _label-hjb-prp-p3:
 
-Considere agora esta terceira situação diferente. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores 
+Considere agora esta terceira situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores 
 situado à 10 km à nordeste de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por que sim? Por que não?
+#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
 #. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte IV.
@@ -137,10 +137,10 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
 
 
 
-Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais compacta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `\overline{AG}` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
+Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais curta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `AG` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\overrightarrow{AG}| = 10~\text{km}`. 
 
-Uma notação mais compacta ainda é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais compacta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`. Assim,
+Uma notação ainda mais curta é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais curta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`. Assim,
 para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\vec{v}| = 10 \, \sqrt{2}~\text{km}` (por quê?). 
 
@@ -226,9 +226,9 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Cuidado! 
 
-    Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai ponto do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento, nada estabelecendo sobre a trajetória percorrida!
+    Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento!
     
-    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. A resposta reside no fato de que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importanto a trajetória específica percorrida entre essas posições.
+    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. Uma resposta é que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importando a trajetória específica percorrida entre essas posições.
 
 .. _label-hjb-voce-sabia-01:
 
@@ -253,12 +253,10 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
    **OBJETIVOS ESPECÍFICOS**
    
-   Levar o estudante a:
-   
    * reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes;
    * perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada;   
    * concatenar deslocamentos sucessivos;
-   * reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio 
+   * reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio **falta algo aqui**.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
@@ -504,7 +502,7 @@ Você notou que dois vetores iguais não precisam ter os extremos dos segmentos 
 
    Considere um ponto `A` e um vetor `\vec{v}`.
    
-   #. É possível construir um vetor `\vec{u}` igual a `\vec{v}` começando no ponto `A`? Por que?
+   #. É possível construir um vetor `\vec{u}` igual a `\vec{v}` começando no ponto `A`? Por quê?
    #. Quantos vetores iguais a `\vec{v}` existem? 
    
 .. admonition:: Para o professor
