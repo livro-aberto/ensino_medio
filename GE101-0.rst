@@ -360,7 +360,66 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
    :label: label_vector_composition
    
-**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números.
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
+
+
+.. _ativ-corrida-de-vetores-01:
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * perceber que nem sempre `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`;
+   * perceber que, na justaposição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BA}`, o resultado é um ponto, motivando assim as definições de vetor deslocamento nulo e vetor simétrico de um dado vetor que serão apresentadas logo após a atividade.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/HnHZFwNW <https://www.geogebra.org/m/HnHZFwNW>`_>, com a qual é possível  visualizar dinamicamente como `|\overightarrow{AC}|` varia de acordo com a escolha do ponto `C`.
+
+   .. figure:: _resources/ggb-jv-01-qr.png 
+      :align: center         
+      :width: 120px
+
+   .. _fig-ggb-jv-01:
+
+   .. figure::  _resources/ggb-jv-01.jpg
+      :width: 700px
+      :align: center
+                  
+      <https://www.geogebra.org/m/HnHZFwNW>.
+
+
+Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}|`.
+
+
+.. tikz:: 
+
+   \definecolor{qqqqff}{rgb}{0.,0.,1.}
+   \tikzset{>=latex}
+   \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+   \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+   \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+   \draw[color=qqqqff] (-1.72,0.24) node {$A$};
+   \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+   \draw[color=qqqqff] (0.92,2.27) node {$B$};
+   
+
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta! 
+
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta! 
+
+#. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
+
+#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** e o **menor** valor possível, respectivamente?
+
+.. admonition:: Resposta 
+
+   Texto da resposta.
+
+
+
 
 
 
