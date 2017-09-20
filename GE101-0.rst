@@ -99,7 +99,7 @@ Parte IV.
 
 Uma segunda estação de pesquisa `B` está situada à 10 km ao noroeste de `A`. 
 
-#. Considerando os dados da Parte IV, como você informaria a posição do grupo `P`de exploradores com relação à estação `B`?
+#. Considerando os dados da Parte IV, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
 
 #. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Justifique sua resposta!
 
@@ -402,23 +402,35 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
    \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
    \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
    \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-   \draw[color=qqqqff] (-1.72,0.24) node {$A$};
+   \draw[color=qqqqff] (-1.7,0.24) node {$A$};
    \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
    \draw[color=qqqqff] (0.92,2.27) node {$B$};
    
-
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta! 
-
-#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta! 
-
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!  
 #. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
-
-#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** e o **menor** valor possível, respectivamente?
+#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
+#. Verdadeiro ou falso? Quaisquer que sejam os pontos `A`, `B` e `C`, tem-se `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`. Justifique sua resposta!
 
 .. admonition:: Resposta 
 
    Texto da resposta.
 
+
+.. admonition:: Pausa Para Reflexão
+
+    Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
+    
+    .. math::
+        |a| = \left\{\begin{array}{ll}
+                          \hphantom{+}a, & \text{se } a \geq 0, \\
+                          -a, & \text{se } a < 0.
+                     \end{array}\right.
+    
+
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é 
+
+.. XXX
 
 
 
