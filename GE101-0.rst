@@ -235,16 +235,17 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
 
-    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma personagem que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
     Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
     
-		    .. _fig-motion-vector-01:
+		    .. _fig-motion-vector-01: 
 
-    .. figure:: _resources//geometria-motion-vector-01.png
+    .. figure:: _resources/motion-vector-01.*   
        :width: 700px
-       :align: center      
+       :align: center
+      
+       *motion vectors* (vídeo original: NASA).
 
-       *motion vectors* (fonte: Wikimedia Commons).
 
 
 
