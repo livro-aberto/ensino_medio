@@ -377,7 +377,7 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/HnHZFwNW <https://www.geogebra.org/m/HnHZFwNW>`_>, com a qual é possível  visualizar dinamicamente como `|\overightarrow{AC}|` varia de acordo com a escolha do ponto `C`.
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/HnHZFwNW <https://www.geogebra.org/m/HnHZFwNW>`_>, com a qual é possível  visualizar dinamicamente como `|\overrightarrow{AC}|` varia de acordo com a escolha do ponto `C`.
 
    .. figure:: _resources/ggb-jv-01-qr.png 
       :align: center         
@@ -425,7 +425,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
 
 
-Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
+Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um número real. 
 
 Para estudar as operações citadas anteriormente, vamos utilizar o jogo *Corrida de Vetores*. Neste jogo, cada competidor recebe um número de cartas contendo diferentes vetores deslocamento (flechas que representam o deslocamento) e o objetivo é sair de um ponto `A` e chegar a um ponto `B` respeitando o limite da pista de corrida. A cada rodada uma nova carta é adicionada por cada jogador e quem conseguir atingir o ponto `B` utilizando o menor número de cartas é o vencedor. 
  
@@ -495,7 +495,7 @@ Organizando as ideias
 
 .. admonition:: Para o professor
 
-   A soma de vetores e a multiplicação de um vetor por um escalar foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
+   A soma de vetores e a multiplicação de um vetor por um número real foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
    
    **OBJETIVOS ESPECÍFICOS**
    
@@ -694,7 +694,7 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
 
    O questionamento feito anteriormente pode ser discutido usando a lei de formação de um triângulo, que diz que para que um triângulo exista, cada lado deve ser menor que a soma dos outros dois. Ao realizar a soma de dois vetores, utilizando a regra do triângulo, construímos um triângulo de lados `|\vec{v}+\vec{u}|`, `|\vec{v}|` e 	`|\vec{u}|`. É fácil ver que não é possível construir um triângulo de lados  `|\vec{v}|`, `|\vec{u}|` e `|\vec{v}+\vec{u}|=|\vec{v}|+|\vec{u}|`.
    
-**MULTIPLICAÇÃO DE UM VETOR POR UM ESCALAR**
+**MULTIPLICAÇÃO DE UM VETOR POR UM NÚMERO REAL**
 
 .. admonition:: Definição 
 
@@ -707,11 +707,11 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
 
 A partir desta definição, podemos perceber que:
 
-* o número real `1` é o elemento neutro da multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
+* o número real `1` é o elemento neutro da multiplicação de um vetor por um número real, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
 * `a\cdot\vec{0}=\vec{0}` para qualquer que seja o valor de `a`;
 * `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
 
-A multiplicação de um vetor por um escalar satisfaz outras propriedades que serão apresentadas na próxima seção.
+A multiplicação de um vetor por um número real satisfaz outras propriedades que serão apresentadas na próxima seção.
 
 
 .. admonition:: Você sabia?
