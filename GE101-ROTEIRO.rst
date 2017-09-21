@@ -95,6 +95,7 @@ ROTEIRO: VETORES
    
       * Dificuldade para representar o vetor soma, quando os vetores estão em posição não canônica. Por exemplo, quando dois vetores apontam para o mesmo ponto, ou os vetores se cruzam."[Poynter-et-al-2005]_ p. 2.
       * Quando dois vetores iniciam no mesmo ponto, estudantes tendem a ligar os pontos finais para representar a soma. [Poynter-et-al-2005]_ p. 2.
+      * Achar que sempre `|\vec{u} + \vec{v}| = |\vec{u}| + |\vec{v}|`.
    
    .. admonition:: Exemplos
    
