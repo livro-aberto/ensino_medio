@@ -1,0 +1,243 @@
+
+Conforme prometido no início da seção passaremos agora a discorrer sobre as principais propriedades das operações de adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem obter todas elas a partir de propriedades análogas para os números reais.
+
+**Propriedades comentadas das operações com vetores**
+
+A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`: posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`, 
+
+**FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
+
+o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
+Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
+Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
+
+Seguindo o estabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos. 
+
+Estas e outras questões nos forçam a listar as propriedades a seguir.
+Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
+O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade (trabalhar com a igualdade, pressupõe a validade da igualdade e, por isso, não serve para *justificar* a igualdade).
+Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades.
+
+Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `a` e `b`, valem as seguintes afirmações:
+
+#. `\vec{u} + \vec{v} = \vec{v} + \vec{u}`,
+#. `(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})`,
+#. `a(b\vec{u})=(ab)\vec{u}`,
+#. `a(\vec{u}+\vec{v})= a\vec{u} +a \vec{v}`,
+#. `(a+b)\vec{u} = a\vec{u} + b\vec{u}`.
+
+Justificativa do item a): considere um sistema de coordenadas no plano, então os vetores ficam representados por pares ordenados, digamos `\vec{u}=(x_1,y_1)` e `\vec{v}=(x_2,y_2)`. Então 
+
+.. math::
+
+   \vec{u} + \vec{v} = (x_1,y_1) + (x_2,y_2) = (x_1 + x_2,y_1+y_2) = (x_2 + x_1, y_2 + y_1) = (x_2,y_2) + (x_1,y_1) =  \vec{v} + \vec{u}.
+
+.. admonition:: Pausa para reflexão
+
+   `0\vec{u}=\vec{0}`.
+
+**Vetores e Forças**
+
+A *Primeira Lei de Newton*, também conhecida como o *Princípio da Inércia*, afirma que
+
+.. glossary::
+
+   Primeira lei de Newton
+      Um corpo permanece em repouso ou em movimento retilíneo uniforme até que uma força atue sobre ele.
+   
+Finalmente, :index:`repouso <repouso>` significa velocidade constante igual a zero e :index:`movimento retilíneo uniforme <movimento retilíneo uniforme>` significa velocidade constante diferente de zero.
+Então podemos dizer que a :index:`força <Força>` é o que causa a *variação na velocidade*, sua unidade mais frequentemente utilizada é o *Newton* (`N`). 
+Como você já deve saber a velocidade é uma grandeza vetorial, logo a variação da velocidade é a diferença entre dois vetores e, portanto, também é uma grandeza vetorial. Assim a força, sendo aquilo que causa variação na velocidade, também é uma grandeza vetorial (isto ficará mais claro na seção de Aprofundamentos).
+
+Quando alguém empurra um carro e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existem forças de resistência que *anulam* a força do empurrão. Estas forças de resistência podem ser causadas pelo *atrito* do veículo com o chão e entre as peças do próprio automóvel. Por exemplo, se o freio de mão estiver acionado, a força de atrito entre as peças do carro pode ser maior.
+
+.. figure:: http://s.glbimg.com/jo/g1/f/original/2012/03/28/2012-03-28t051611z_98588621.jpg
+   :width: 300px
+   :align: center
+
+   Imagem do Portal G1 (Foto: Alessandro Bianchi/Reuters) - substituir por análoga com forças representadas
+
+Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões como esta da situação do carro sendo empurrado é introduzir antes o conceito de *força resultante*. 
+
+.. glossary:: 
+   
+   Força resultante 
+      A força resultante sobre uma partícula é a soma vetorial de todas as forças que atuam sobre ela.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=resultante.jpg
+   :width: 200px
+   :align: center
+
+   `\vec{F_R} = \vec{F_1} + \vec{F_2} + \vec{F_3}`
+
+Lembre-se que a força resultante não é uma nova força que atua sobre o corpo, mas apenas uma força cujo efeito no corpo seria o mesmo que o de todas as outras forças juntas.
+
+A Primeira Lei de Newton com esta linguagem fica:
+
+   a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante.
+
+Portanto, se quando empurramos um carro ele não se mexe é porque existem forças de resistência que atuam sobre o carro que anulam a força com que o empurramos.
+   
+.. admonition:: Exemplo: Força peso
+
+   Não é necessário contato com o corpo para que exista uma força atuando sobre ele. Imagine uma bola de tênis largada da mão do tenista a partir do repouso (velocidade zero). Ela cai sob efeito do *campo gravitacional* da Terra, sempre vertical para baixo (aponta para o centro da Terra). Se esta força não estivesse atuando sobre a bolinha, ela deveria ficar parada (flutuando) no local onde foi deixada pelo tenista.
+      
+   Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal coincide com a força peso.
+
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bolinha-tenis.jpg
+      :width: 400px
+      :align: center
+
+      Força resultante **diferente de zero** na bola da esquerda e força resultante **igual à zero** na bola da direita.
+   
+.. _ativ-vetores-forca
+
+Atividade: Força
+----------------
+
+.. admonition:: Para o Professor
+
+   **Objetivos específicos:**
+   
+   **Recomendações e sugestões:**
+   Oriente os estudantes a fazer uma bolinha para representar as forças sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela.
+
+A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha.
+
+   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+      :align: center
+      :width: 200px
+            
+      foto de Elke Wetzig
+            
+   .. tikz::
+
+      \node at (-1.5,-.3) {(I)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (160:1.5) circle (.08);
+      \node[above] at (160:1.5) {\small Grampo 1};
+      \fill[blue] (20:1.5) circle (.08);
+      \node[above] at (20:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (160:1.5);
+      \draw[very thick, red] (0,0) -- (20:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(II)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (135:1.5) circle (.08);
+      \node[above] at (135:1.5) {\small Grampo 1};
+      \fill[blue] (45:1.5) circle (.08);
+      \node[above] at (45:1.5) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (135:1.5);
+      \draw[very thick, red] (0,0) -- (45:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      
+      
+      \begin{scope}[xshift=5cm]
+      \node at (-1.5,-.3) {(III)};
+      \fill[blue] (0,0) circle (.08);
+      \fill[blue] (120:1.5) circle (.08);
+      \node[above] at (130:1.7) {\small Grampo 1};
+      \fill[blue] (60:1.5) circle (.08);
+      \node[above] at (50:1.7) {\small Grampo 2};
+      \fill[blue] (270:1.5) circle (.08);
+      \node[below] at (270:1.5) {\small Escaladora};
+      \draw[very thick, red] (0,0) -- (120:1.5);
+      \draw[very thick, red] (0,0) -- (60:1.5);
+      \draw[very thick, red] (0,0) -- (270:1.5);
+      \end{scope}
+      \end{scope}
+      
+#. Em qual das situações (I), (II) ou (III) a corda fica mais tensionada próximo aos grampos?   
+#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
+#. Justifique a sua escolha do item a) utilizando vetores.
+
+
+.. _ativ-vetores-plano-inclinado:
+
+Atividade: Plano inclinado
+--------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+   
+   #. decompor um vetor como soma dos vetores coordenados,
+   #. representar forças através de vetores,
+   #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
+   
+   **Recomendações e sugestões:**
+   
+A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoiado sobre ele. Um sistema de coordenadas foi escolhido com origem no centro `O` do bloco. A força peso está representada a partir de `O`. Suponha que este bloco permanece parado.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=plano-inclinado.jpg
+   :width: 400px
+   :align: center
+
+   Forças sobre um bloco em repouso sobre um plano inclinado
+
+#. Qual é a resultante das forças que atuam sobre o bloco?
+#. Reproduza a figura em seu caderno e represente uma decomposição de `\vec{P}` como `\vec{P } = \vec{P_x} + \vec{P_y}` com `\vec{P_x}` e `\vec{P_y}` com origem em `O` e ambos paralelos aos respectivos eixos coordenados.
+#. Supondo que o peso do bloco tenha módulo `|\vec{P}|=10 N`, calcule `|\vec{P_x}|` e `|\vec{P_y}|`.
+#. Represente a força normal `\vec{N}` que o plano exerce no bloco e calcule `|\vec{N}|`.
+#. Existe alguma outra força atuando sobre o bloco? Se houver, calcule a sua intensidade.
+
+
+.. admonition:: Resposta 
+
+   texto
+
+
+.. _ativ-vetores-barcos-rio:
+
+Atividade: puxando o barco (modificado de PUC/SP)
+-------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** 
+
+   #. representar esquema de forças a partir de uma situação real.
+   #. expressar a resultante de duas forças geometricamente.
+   #. reconhecer que a força resultante é maior quanto menor for o ângulo entre as forças.
+   
+   **Recomendações e sugestões:** Falar da regra do paralelogramo.
+
+Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens. Em (a), são usadas cordas que transmitem ao barco forças paralelas. Em (b), são usadas cordas inclinadas de `90^{\circ}`. Supondo que os homens fazem forças de intensidades iguais. Faça o que se pede.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barcos.png
+   :width: 300px
+   :align: center
+   
+   Imagem da PUC/SP
+
+#. Represente o barco como uma partícula e as forças atuando nela em cada um dos esquemas.
+#. Represente a força resultante em cada um dos esquemas.
+#. Em qual dos esquemas o mesmo resultado será obtido com menor esforço dos homens. Por quê?
+#. Digamos que nos dois esquemas as forças realizadas pelos homens tenham módulos iguais a `F`. Qual é o valor da força resultante em cada um dos casos? Expresse sua resposta em termos de `F`.
+
+.. admonition:: Resposta 
+
+   texto da resposta
+
+
+.. admonition:: Pausa para reflexão
+
+   Observe que na atividade anterior temos forças com intensidades (módulos) iguais a `F`, mas a soma das forças não tem intensidade `2F`.
+   Por que isso acontece?
+
+
+Termos a serem definidos neste capítulo e devem ir para o glossário:
+
+#. origem e extremidade de um vetor dado
+#. multiplicação por escalar
+#. soma ou adição de vetores
+#. vetores paralelos
+#. vetores unitários
+#. vetores perpendiculares
