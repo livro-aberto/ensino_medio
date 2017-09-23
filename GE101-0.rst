@@ -493,42 +493,49 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
 
    Segmento de reta orientados de `A` para `B` e de `B` para `A`.   
    
-Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o segmento orientado por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
+Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o :index:`segmento orientado` por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
 Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elementos geométrico.
 
 .. admonition:: Definição 
 	   
-   :index:`Vetor` é uma coleção de segmentos orientados de mesmo comprimento, direção e sentido.
-   
-   
-   
-Podemos denotar um vetor de duas formas diferentes: 
+   :index:`Vetor` é uma coleção de segmentos orientados de mesmo módulo, direção e sentido.
+      
+Podemos denotar um vetor de duas formas diferentes, dependendo de cada problema: 
 
 * utilizando apenas uma letra minúscula e uma flecha. Por exemplo, `\vec{v}`.
-* utilizando os extremos do segmento de reta orientado, respeitando o sentido da orientação, e uma flecha. Por exemplo, o `\vec{AB}`.   
+* utilizando as letras que caracterizam os extremos do segmento de reta orientado que dá origem ao vetor, respeitando o sentido da orientação, e uma flecha. Por exemplo, `\vec{AB}`.   
    
 O :index:`módulo de um vetor` é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
 
 Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
 
-Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e também as retas paralelas `r` e `s`, que são as retas suporte dos segmentos orientados que dão origem aos vetores.  Vamos estudar a direção e sentido de todos os pares de vetores da figura:
+Na figura :numref:`fig-geometria-operacoesvetores-03` representamos os vetores `\vec{u},\vec{v},\vec{w}, \vec{m}` e `\vec{n}`, as retas paralelas `r` e `s` e a reta `t` transversal à `r` e `s` (que são as retas suporte dos segmentos orientados que dão origem aos vetores).  Vamos relacionar a direção e sentido de todos os pares de vetores desta figura:
 
-* `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta suporte, mas possuem sentidos opostos;
+* `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta suporte, mas não possuem o mesmo sentido;
 * `\vec{u}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas e possuem o mesmo sentido;
-* `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas, mas possuem sentidos opostos.
+* `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas, mas não possuem o mesmo sentido;
+* `\vec{m}` e `\vec{n}` possuem a mesma direção por estarem sobre a mesma reta suporte,mas não possuem o mesmo sentido;
+* `\vec{u},\vec{v}` e `\vec{w}` não possuem a mesma direção que `\vec{m}` e `\vec{n}`, e portanto não é possível comparar seus sentidos.
 
-.. _fig-geometria-operacoesvetores-06:
 
-.. figure:: _resources/direcaosentidovetores.jpg
+.. _fig-geometria-operacoesvetores-03:
+
+.. figure:: _resources/DirecaoSentidoVetores.png
    :width: 300px
    :align: center
 
-   Vetores `\vec{u},\vec{v}` e `\vec{w}` sobre retas paralelas `r` e `s`.
-   	  
+   Vetores `\vec{u},\vec{v}` e `\vec{w}` sobre retas paralelas `r` e `s`, e `\vec{m}` e `\vec{n}` sobre a reta `t`.
+   
+.. admonition:: Atenção! 
+
+   Para cada direção, já sabemos que existem dois sentidos. Assim, caso dois vetores possuam a mesma direção, podemos comparar seus sentidos. Caso contrário, não é possível fazer tal comparação. 
+
+Quando dois vetores `\vec{u}` e `\vec{v}`, como da :numref:`fig-geometria-operacoesvetores-03`, possuem a mesma direção mas apontam para lados opostos, dizemos que esses vetores possuem *sentidos opostos*. Nesta mesma figura, `\vec{m}` e `\vec{n}` também possuem sentidos opostos, assim como `\vec{v}` e `\vec{w}`.
+   
 .. admonition:: Não confunda!
 
-   É importante ficarmos atentos que algumas palavras que usamos frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos com essas palavras), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática. 
+   Algumas palavras usadas frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos dessa forma), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática. 
 
 	   .. _fig-geometria-operacoesvetores-05:
 
@@ -544,13 +551,13 @@ Na figura abaixo representamos os vetores `\vec{u}`, `\vec{v}` e `\vec{w}`, e ta
 
 .. _fig-geometria-operacoesvetores-07:
 
-.. figure:: _resources/vetoresiguais.jpg
-   :width: 300px
+.. figure:: _resources/VetoresIguais.png
+   :width: 200px
    :align: center
 
    :index:`Vetores iguais`.
    
-Você notou que dois vetores iguais não precisam ter os extremos dos segmentos orientados iguais? Para comparar dois vetores utilizamos apenas os seus módulos, suas direções e seus sentidos.
+Você notou que dois vetores iguais não precisam ter os mesmos extremos dos segmentos orientados? Para comparar dois vetores utilizamos apenas os seus módulos, suas direções e seus sentidos.
 
 .. admonition:: Pausa para reflexão 
 
@@ -566,12 +573,12 @@ Você notou que dois vetores iguais não precisam ter os extremos dos segmentos 
    
 .. admonition:: Definição 
 
-   O vetor nulo `\vec{O}` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido. 
+   O vetor nulo `\vec{0}` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido. 
    
 Algumas observações importantes sobre o vetor nulo:   
 
 #. para qualquer ponto `P`, `\overrightarrow{PP}=\vec{0}`;
-#. não confunda 0 com `\vec{O}`. 0 é um número real e `\vec{O}` é o vetor nulo.
+#. não confunda 0 com `\vec{0}`: 0 é um número real e `\vec{0}` é o vetor nulo.
 
 **Soma de vetores**
 
