@@ -35,10 +35,6 @@ Justificativa do item a): considere um sistema de coordenadas no plano, então o
 
    \vec{u} + \vec{v} = (x_1,y_1) + (x_2,y_2) = (x_1 + x_2,y_1+y_2) = (x_2 + x_1, y_2 + y_1) = (x_2,y_2) + (x_1,y_1) =  \vec{v} + \vec{u}.
 
-.. admonition:: Pausa para reflexão
-
-   `0\vec{u}=\vec{0}`.
-
 **Vetores e Forças**
 
 A *Primeira Lei de Newton*, também conhecida como o *Princípio da Inércia*, afirma que
@@ -48,11 +44,12 @@ A *Primeira Lei de Newton*, também conhecida como o *Princípio da Inércia*, a
    Primeira lei de Newton
       Um corpo permanece em repouso ou em movimento retilíneo uniforme até que uma força atue sobre ele.
    
-Finalmente, :index:`repouso <repouso>` significa velocidade constante igual a zero e :index:`movimento retilíneo uniforme <movimento retilíneo uniforme>` significa velocidade constante diferente de zero.
-Então podemos dizer que a :index:`força <Força>` é o que causa a *variação na velocidade*, sua unidade mais frequentemente utilizada é o *Newton* (`N`). 
-Como você já deve saber a velocidade é uma grandeza vetorial, logo a variação da velocidade é a diferença entre dois vetores e, portanto, também é uma grandeza vetorial. Assim a força, sendo aquilo que causa variação na velocidade, também é uma grandeza vetorial (isto ficará mais claro na seção de Aprofundamentos).
+Precisamos de alguns esclarecimentos acerca dos termos usados na Primeira Lei de Newton: diz-se que um objeto está em :index:`repouso <repouso>` quando sua velocidade é constante igual a zero e que o corpo está em :index:`movimento retilíneo uniforme <movimento retilíneo uniforme>` quando sua velocidade é constante e diferente de zero. 
+Então o Princípio da Inércia diz que uma :index:`força <Força>` é o que causa *variação na velocidade* e, portanto, esta também é uma grandeza vetorial. A unidade de força mais frequentemente utilizada é o *Newton* (`N`). 
 
-Quando alguém empurra um carro e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existem forças de resistência que *anulam* a força do empurrão. Estas forças de resistência podem ser causadas pelo *atrito* do veículo com o chão e entre as peças do próprio automóvel. Por exemplo, se o freio de mão estiver acionado, a força de atrito entre as peças do carro pode ser maior.
+.. Como você já deve saber a velocidade é uma grandeza vetorial, logo a variação da velocidade é a diferença entre dois vetores velocidade e, portanto, também é uma grandeza vetorial. Assim a força, é uma grandeza vetorial (Na seção de Aprofundamentos, quando será definida a aceleração `\vec{a}` e a soma das forças que atuam num corpo será a massa deste corpo multiplicado pela sua aceleração, `\vec{F}=m\vec{a}`).
+
+Quando alguém empurra um carro e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existem forças de resistência que *anulam* a força do empurrão. Estas forças de resistência podem ser causadas pelo *atrito* do veículo com o chão e entre as peças do próprio automóvel. Por exemplo, se o freio de mão estiver acionado, a força de atrito entre as peças do carro será maior.
 
 .. figure:: http://s.glbimg.com/jo/g1/f/original/2012/03/28/2012-03-28t051611z_98588621.jpg
    :width: 300px
@@ -60,7 +57,7 @@ Quando alguém empurra um carro e ele não se move, isto não significa que o Pr
 
    Imagem do Portal G1 (Foto: Alessandro Bianchi/Reuters) - substituir por análoga com forças representadas
 
-Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões como esta da situação do carro sendo empurrado é introduzir antes o conceito de *força resultante*. 
+Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões, como esta da situação do carro sendo empurrado, depende do conceito de *força resultante*. 
 
 .. glossary:: 
    
@@ -83,7 +80,7 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
    
 .. admonition:: Exemplo: Força peso
 
-   Não é necessário contato com o corpo para que exista uma força atuando sobre ele. Imagine uma bola de tênis largada da mão do tenista a partir do repouso (velocidade zero). Ela cai sob efeito do *campo gravitacional* da Terra, sempre vertical para baixo (aponta para o centro da Terra). Se esta força não estivesse atuando sobre a bolinha, ela deveria ficar parada (flutuando) no local onde foi deixada pelo tenista.
+   Não é necessário contato com o corpo para que exista uma força atuando sobre ele. Imagine uma bola de tênis largada da mão do tenista a partir do repouso (velocidade zero). Ela cai sob efeito do *campo gravitacional* da Terra, sempre vertical para baixo (aponta para o centro da Terra). Se esta força não estivesse atuando sobre a bolinha, ela deveria ficar parada flutuando no local onde foi deixada pelo tenista.
       
    Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal coincide com a força peso.
 
@@ -95,8 +92,8 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
    
 .. _ativ-vetores-forca
 
-Atividade: Força
-----------------
+Atividade: grampos de escalada
+------------------------------
 
 .. admonition:: Para o Professor
 
@@ -105,13 +102,20 @@ Atividade: Força
    **Recomendações e sugestões:**
    Oriente os estudantes a fazer uma bolinha para representar as forças sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela.
 
-A escaladora da figura usa um grampo simples para sua segurança. Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha.
+A escaladora da figura usa um grampo simples para sua segurança. 
 
-   .. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
       :align: center
       :width: 200px
             
       foto de Elke Wetzig
+            
+Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha como no esquema a seguir.
+
+.. figure:: https://i.pinimg.com/736x/a2/26/40/a22640aece4cc64f3e18361d9bd15f7d--how-to-build-learn-how.jpg
+   :width: 200px
+   
+   Foto de `Chris <http://www.seekingexposure.com/case-study-simple-bolt-anchor/>`_
             
    .. tikz::
 

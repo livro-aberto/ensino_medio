@@ -30,8 +30,8 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
     
   
 .. Figura 1:
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=figura_1_rot_est.png
-   :width: 475px
+.. figure:: _resources/figura_1_rot_est_1.png
+   :width: 250px
    :align: center
    
  
@@ -60,7 +60,7 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
    
 .. admonition:: Abordagem do Capítulo
   
- Esse capítulo aborda fortemente os conteúdos de organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos destacados na habilidade. Os conteúdos realização de pesquisas considerando o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta serão trabalhados de forma transversal ao  longo dos capítulos que tratam de Estatística, revisitando pré-requisitos previstos pela BNCC para o Ensino Fundamental. 
+ Esse capítulo aborda fortemente os conteúdos de organização e representação dos dados (incluindo agrupamentos de dados em classes), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos destacados na habilidade. Os conteúdos realização de pesquisas considerando o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta serão trabalhados de forma transversal ao  longo dos capítulos que tratam de Estatística, revisitando pré-requisitos previstos pela BNCC para o Ensino Fundamental. 
   
  As atividades propostas nesse capítulo envolvem o uso da Estatística em diferentes situações motivando o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuição e caracterizações da distribuição (posição e dispersão). Essas atividades não têm como objetivo o cálculo das medidas, mas a sua compreensão estrutural. Nesse capítulo serão apresentadas algumas atividades envolvendo a realização de pesquisas e coleta de dados.
  
@@ -135,7 +135,7 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
     
  **Praticando 2** 
  
- Incluir atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos.
+ Atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos. Inclusão de atividades do ENEM e vestibulares.
  
 .. admonition:: Aprofundamentos
 
@@ -144,6 +144,8 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
 .. admonition:: Sugestões de leituras e projetos aplicados
 
  - https://vamoscontar.ibge.gov.br/atividades/ensino-medio.html 
+ - http://m3.ime.unicamp.br/recursos/1043
+ - http://www.estatistica.ccet.ufrn.br/cdee/wp-content/themes/cdee/arquivos/projeto02/oficina_site_educacao.pdf 
 
 .. admonition:: Referências bibliográficas
 
@@ -152,6 +154,8 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
   Batanero, C., Burrill, G., & Reading, C. (Eds.). (2011). Teaching statistics in school mathematics-challenges for teaching and teacher education: A joint ICMI/IASE study: the 18th ICMI study (Vol. 14). Springer Science & Business Media.
       
   Batanero, C., & Borovcnik, M. (2016). Statistics and probability in high school. Springer.
+  
+  Cordani, Lisbeth K. "Estatística para todos." (2002). <http://www.estatistica.ccet.ufrn.br/cdee/wp-content/themes/cdee/arquivos/projeto02/oficina_site_educacao.pdf> Axesso em: 22 set. 2017.
   
   IBGE (2017) <https://vamoscontar.ibge.gov.br/> Acesso em: 29 ago. 2017.
 
