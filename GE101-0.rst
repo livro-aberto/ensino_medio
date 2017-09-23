@@ -17,6 +17,7 @@
    Algumas observações metodológicas: 
    
    * As seções sob o título "Pausa Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto.
 
 .. HJB: não esquecer de falar que direção pode ter mais do que um significado (direção nordeste vs. ir na direção da praça central da cidade). Aqui, direção nordeste é um bom exemplo para relacionar com o conceito de direção como usado em vetores.
 
@@ -72,35 +73,37 @@ representa a localização de uma estação de pesquisa `A` na Antártida.
 
 Parte I.
 
-A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à 10 km de `A` necessita de socorro urgente.
+A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo `P` de exploradores  situado à 10 km de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
-#. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
+#. É possível marcar no mapa a localização do grupo `P` de exploradores? Justifique sua resposta!
+#. Se você marcasse no mapa todos os pontos onde o grupo `P` de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte II.
 
-Considere agora esta outra situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores situado à nordeste de `A` necessita de socorro urgente.
+Considere agora esta outra situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um outro grupo `Q` de exploradores situado à nordeste de `A` necessita de socorro urgente.
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
-#. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
+#. É possível marcar no mapa a localização do grupo `Q` de exploradores? Justifique sua resposta!
+#. Se você marcasse no mapa todos os pontos onde o grupo `Q` de exploradores poderia estar, que figura geométrica seria desenhada?
+#. Se a estação de pesquisa `A` e os dois grupos de pesquisa `P` e `Q` estiverem alinhados (isto é, pertencessem a uma reta), seria possível marcar a localização do grupo `P` de exploradores? Justifique sua resposta!
 
 Parte III.
 
 .. _label-hjb-prp-p3:
 
-Considere agora esta terceira situação. A estação de pesquisa `A` recebe um comunicado de um avião de reconhecimento informando que um grupo de exploradores 
-situado à 10 km à nordeste de `A` necessita de socorro urgente.
+O avião de reconhecimento atualizou as informações sobre o grupo `P` de exploradores: ele está situado à 10 km à nordeste de `A`.
+ 
+#. É agora possível marcar no mapa a localização do grupo `P` de exploradores? Justifique sua resposta!
+#. Nessa nova situação, se você marcasse no mapa todos os pontos onde o grupo `P` de exploradores poderia estar, que figura geométrica seria desenhada?
+#. Caso a respostao ao Item a) seja afirmativa, com você descreveria a posição da base `A` com relação ao grupo `P` de pesquisadores?
 
-#. É possível marcar no mapa a localização do grupo de exploradores? Por quê?
-#. Se você marcasse no mapa todos os pontos onde o grupo de exploradores poderia estar, que figura geométrica seria desenhada?
 
 Parte IV.
 
-Uma segunda estação de pesquisa `B` está situada à 10 km ao noroeste de `A`. 
+Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`. 
 
-#. Considerando os dados da Parte III, como você informaria a posição do grupo de exploradores com relação à estação `B`?
+#. Considerando os dados da Parte IV, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
 
-#. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Por quê?
+#. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Justifique sua resposta!
 
 
 
@@ -165,7 +168,7 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
 
 .. admonition:: Para o professor
 
-   Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_>. Com ela,  à título de ilustração dinâmica, é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente como vetor posição relativa depende da escolha do ponto de referência.
+   Sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/kCMtPW5x <https://www.geogebra.org/m/kCMtPW5x/>`_> com a qual é possível mudar a posição do ponto de referência `B`  e, com isto, ilustrar dinamicamente para o aluno como o vetor posição relativa depende da escolha do ponto de referência.
    
 
    .. figure:: _resources/ggb-vpr-01-qr.png
@@ -182,7 +185,7 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
       
 Deslocamentos no plano
 ------------------------------------------
-Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Quando um carro percorre a pista de Interlagos em São Paulo, por exemplo, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
+Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
 Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`. 
 
 .. _fig-geometria-deslocamento-01:
@@ -206,7 +209,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Para o professor
 
-   Estudos educacionais mostram que os alunos têm a forte tendência em confundir vetor deslocamento com trajetória. No sentido de minimizar o efeito deste distrator, caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, é possível visualizar um ponto percorrendo o modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01` e, ao mesmo tempo, definir diferentes vetores deslocamentos definidos por duas posições na pista. Ao, dinamicamente, confrontar a trajetória percorrida com os diversos vetores deslocamentos, espera-se criar uma imagem mental que reforce as diferenças entre os dois conceitos.      
+   Estudos educacionais mostram que os alunos têm a forte tendência em confundir vetor deslocamento com trajetória. No sentido de minimizar o efeito deste distrator, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, é possível visualizar um ponto percorrendo o modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01` e, ao mesmo tempo, definir diferentes vetores deslocamentos definidos por duas posições na pista. Ao, dinamicamente, confrontar a trajetória percorrida com os diversos vetores deslocamentos, espera-se criar uma imagem mental que reforce as diferenças entre os dois conceitos.      
    
    .. figure:: _resources/ggb-interlagos-01-qr.png
       :width: 120px
@@ -234,16 +237,17 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
 
-    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma personagem que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
     Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
     
-		    .. _fig-motion-vector-01:
+		    .. _fig-motion-vector-01: 
 
-    .. figure:: _resources//geometria-motion-vector-01.png
+    .. figure:: _resources/motion-vector-01.*   
        :width: 700px
-       :align: center      
+       :align: center
+      
+       *motion vectors* para um vídeo da NASA sobre líquidos em baixa gravidade.
 
-       *motion vectors* (fonte: Wikimedia Commons).
 
 
 
@@ -263,7 +267,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * As ruas do mapa foram propositalmente desenhadas como curvas: o objetivo é enfatizar para o aluno que os deslocamentos definidos pelas "cartas" do jogo **não são** as trajetórias percorridas.
-   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.  
+   * Sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.    
 
    .. figure::  _resources/ggb-cv-01-qr.png
       :align: center         
@@ -318,11 +322,11 @@ As regras do jogo são como se segue.
 
 **FASE DE AQUECIMENTO**
 
-#. Marque como `A`, em uma das folhas que o seu grupo recebeu, a posição de largada do carro representado pelo ponto azul. Suponha que o jogador responsável por esse carro escolha a carta `\vec{h}`. Qual será a nova posição do ponto azul? Marque-a como `B` e, então, desenhe o vetor deslocamento `\overrightarrow{AB}`.
+#. Em uma das folhas que o seu grupo recebeu, escreva a letra `A` para marcar a posição de largada do carro representado pelo ponto azul. Suponha que o jogador responsável por esse carro escolha a carta `\vec{h}`. Qual será a nova posição do ponto azul? Marque esta posição com a letra `B` e, então, desenhe o vetor deslocamento `\overrightarrow{AB}`.
 
 #. Com relação ao item anterior, desenhe uma possível trajetória percorrida pelo carro da posição `A` até a posição `B`. Quantas trajetórias possíveis existem? 
 
-#. Suponha que o jogador responsável pelo carro representado pelo ponto azul tenha escolhido, na sua segunda jogada, a carta `\vec{a}`. Qual será a nova posição do ponto azul? Marque-a como `C` e, então, desenhe os vetores deslocamentos `\overrightarrow{BC}` e `\overrightarrow{AC}`.
+#. Suponha que o jogador responsável pelo carro representado pelo ponto azul tenha escolhido, na sua segunda jogada, a carta `\vec{a}`. Qual será a nova posição do ponto azul? Marque-a com a letra `C` e, então, desenhe os vetores deslocamentos `\overrightarrow{BC}` e `\overrightarrow{AC}`.
 
 #. Na posição `C` marcada no item anterior, na sua terceira jogada, quais cartas o jogador responsável pelo ponto azul **não deveria escolher** para não fazer com que seu carro saia da estrada e, assim, perca o jogo automaticamente?
 
@@ -332,81 +336,122 @@ As regras do jogo são como se segue.
 
 Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
    
-**DESCREVENDO FLECHAS VERBALMENTE**
+**DESCREVENDO FLECHAS POR MEIO DE UMA ROSA DOS VENTOS**
 
-Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Assim, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloce 1 cm para o norte". Como as demais flechas podem ser descritas?
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 1 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas? 
 
 .. admonition:: Resposta 
 
    Texto da resposta.
 
 
+Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\vec{h}` e `\vec{a}` definiram dois vetores deslocamentos: `\overrightarrow{AB}` e `\overrightarrow{BC}`. 
 
+.. HJB: é importante que os vetores desta figura sejam congruentes àqueles apresentados nas cartas do jogo.
 
+.. _fig-geometria-cv-06:
 
-Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
-
-Para estudar as operações citadas anteriormente, vamos utilizar o jogo *Corrida de Vetores*. Neste jogo, cada competidor recebe um número de cartas contendo diferentes vetores deslocamento (flechas que representam o deslocamento) e o objetivo é sair de um ponto `A` e chegar a um ponto `B` respeitando o limite da pista de corrida. A cada rodada uma nova carta é adicionada por cada jogador e quem conseguir atingir o ponto `B` utilizando o menor número de cartas é o vencedor. 
- 
-.. _fig-geometria-operacoesvetores-01:
-
-.. figure:: _resources/corridavetores.jpg
-   :width: 400px
+.. figure::  _resources/geometria-cv-06_1.jpg
+   :width: 290px
    :align: center
-
-   Jogo Corrida de Vetores.
    
-Na :numref:`fig-geometria-operacoesvetores-01` mostramos o resultado de uma partida disputada pelos competidores verde e laranja que terminou empatada, já que os dois competidores utilizaram o mesmo número de cartas para atingir o ponto final. Podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória ao percorrerem trajetórias diferentes. No entanto, pode-se perceber que os vetores deslocamento associados às duas trajetórias são iguais (flecha preta que liga `A` até `B`). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (que neste caso é de `A` para `B`) e não da trajetória percorrida. 
+   Justaposição de deslocamentos.
+   
+Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
 
-Pela definição de vetor deslocamento que aprendemos na última seção, a soma de dois vetores deslocamento será sempre um vetor deslocamento. Isso se deve ao fato de que cada vetor representa uma variação de posição e então, se variarmos a posição de dois vetores adjacentes (ponto final do primeiro coincide com o ponto inicial do segundo), podemos representar a variação de posição total por um único vetor deslocamento. A esse vetor daremos o nome de *vetor soma*. 
+.. math::   
+   \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
+   :label: label_vector_composition
+   
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
 
-Analisando as duas primeiras jogadas do competidor verde na Corrida de Vetores (:numref:`fig-geometria-operacoesvetores-02`), vemos que este jogador escolheu uma carta que possui uma movimentação vertical (de baixo para cima) para a primeira jogada e assim, sai de `A` e alcança o ponto `P`. Sendo assim, associamos à primeira jogada o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele novamente utilizou a mesma carta, mas agora partindo do ponto `P`, onde ele havia parado na jogada anterior. Assim, ele sai de `P` e chega em `Q`, o que nos faz associar à segunda rodada, o vetor deslocamento `\overrightarrow{PQ}`. Acompanhe essas duas jogadas na figura abaixo. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PQ}` são vetores adjacentes e representam as duas primeiras rodadas consecutivas do jogador verde.
 
-.. _fig-geometria-operacoesvetores-02:
+.. _ativ-corrida-de-vetores-01:
 
-.. figure:: _resources/jogadacorridavetores3.jpg
-   :width: 200px
-   :align: center
+.. admonition:: Para o professor
 
-   Duas jogadas realizadas pelo competidor verde na Corrida de Vetores.
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * perceber que nem sempre `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`;
+   * perceber que, na justaposição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BA}`, o resultado é um ponto, motivando assim as definições de vetor deslocamento nulo e vetor simétrico de um dado vetor que serão apresentadas logo após a atividade.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/HnHZFwNW <https://www.geogebra.org/m/HnHZFwNW>`_>, com a qual é possível visualizar dinamicamente como `|\overrightarrow{AC}|` varia de acordo com a escolha do ponto `C`.
 
-A Corrida de Vetores começou no ponto `A` e após, as duas primeiras jogadas, o jogador verde atingiu o ponto `Q`. Sendo assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PQ}` é o vetor que liga os pontos `A` e `Q`. 
+   .. figure:: _resources/ggb-jv-01-qr.png 
+      :align: center         
+      :width: 120px
 
-Se analisarmos de maneira análoga as duas primeiras jogadas do jogador laranja, percebemos que a mesma carta foi escolhida por este jogador para sair de `A`. Sendo assim, a primeira jogada do competidor laranja também será representada pelo vetor `\overrightarrow{AP}`. Já para a segunda jogada foi escolhida uma carta com uma movimentação na diagonal. Com este movimento, e possível sair de `P` e atingir `R`, o que nos permite representar essa jogada pelo vetor `\overrightarrow{PR}`. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PR}` são vetores adjacentes que utilizamos para representar as duas primeiras jogadas consecutivas do jogador laranja.
+   .. figure:: _resources/ggb-jv-01_1.jpg
 
-.. _fig-geometria-operacoesvetores-03:
+   .. figure::  
+      :width: 700px
+      :align: center
+                  
+      <https://www.geogebra.org/m/HnHZFwNW>.
 
-.. figure:: _resources/JogadasCorridaVetores2.jpg
-   :width: 200px
-   :align: center
 
-   Duas jogadas realizadas pelo competidor laranja na Corrida de Vetores.
+Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}|`.
 
-Após realizar as duas primeiras jogadas, diferentemente do competidor verde, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver :numref:`fig-geometria-operacoesvetores-03`). 
 
-O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da Corrida de Vetores pode ser utilizado sempre que desejarmos somar dois vetores. Este método é conhecido como *Regra do Triângulo* e está representado na figura abaixo.
+.. tikz:: 
 
-.. _fig-geometria-operacoesvetores-04:
+   \definecolor{qqqqff}{rgb}{0.,0.,1.}
+   \tikzset{>=latex}
+   \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+   \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+   \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+   \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+   \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+   \draw[color=qqqqff] (0.92,2.27) node {$B$};
+   
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta! 
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!  
+#. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
+#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
+#. Verdadeiro ou falso? Quaisquer que sejam os pontos `A`, `B` e `C`, tem-se `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`. Justifique sua resposta!
 
-.. figure:: _resources/regratriangulo.jpg
-   :width: 200px
-   :align: center
+.. admonition:: Resposta 
 
-   Regra do triângulo para somar dois vetores.
-   	 
-Já vimos anteriormente que as duas primeiras jogadas do jogador verde foram feitas com o mesmo tipo de carta, ou seja, com o mesmo vetor deslocamento. Diremos que a operação de repetir duas vezes um mesmo vetor deslocamento (um adjacente ao outro) é a multiplicação desse vetor deslocamento por `2`. 
+   Texto da resposta.
 
-Com a notação que já usamos anteriormente e observando a geometria desta situação na :numref:`fig-geometria-operacoesvetores-02`, vamos listar as propriedades que o vetor `\overrightarrow{AQ}`, que é o resultado da multiplicação de `\overrightarrow{AP}` por `2`, satisfaz:
 
-* o módulo do vetor `\overrightarrow{AQ}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AP}` por `2`;
-* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo ponto inicial `A`;
-* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma orientação.
+.. admonition:: Pausa Para Reflexão
 
-Intuitivamente podemos imaginar o que aconteceria se repetíssemos a mesma carta `a` vezes, onde `a` é um número natural. Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e as propriedades acima continuariam válidas, apenas com a ressalva de que `2` fosse substituído por `a`.
+    Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
+    
+    .. math::
+        |a| = \left\{\begin{array}{ll}
+                          \hphantom{+}a, & \text{se } a \geq 0, \\
+                          -a, & \text{se } a < 0.
+                     \end{array}\right.
+    
 
-.. admonition:: Pausa para reflexão
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (`\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
 
-   Você acha que `a` poderia ser um número real? 
+* a composição de qualquer vetor deslocamento com o vetor deslocamento nulo é igual ao vetor deslocamento inicial. Em símbolos, tem-se `\overrightarrow{AB} + \overrightarrow{BB} = \overrightarrow{AB}` quaisquer que sejam `A` e `B` e, com a notação mais curta, `\vec{v} + \vec{0} = \vec{v}` qualquer que seja `\vec{v}` (compare com o caso de  números reais: `a + 0 = 0` qualquer que seja `a`);
+* o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
+* para todo vetor deslocamento `\vec{v} = \overrightarrow{AB}` no plano, existe o vetor `\vec{w} = \overrightarrow{BA}` tal que `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA}`, isto é, `\vec{v} + \vec{w} = \vec{0}`. O vetor deslocamento `\vec{w}` com essa propriedade é denominado :index:`vetor deslocamento simétrico` de `\vec{v}` e, dada sua importância, receberá uma notação especial: `-\vec{v}`.
+
+
+
+
+
+.. admonition:: Pausa Para Reflexão
+
+    Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem comprimento `0`?
+
+
+.. XXX
+
+
+
+
+
+
   
 
 Organizando as ideias
@@ -420,15 +465,15 @@ Organizando as ideias
    
    Levar o estudante a:
    
-   * compreender vetores do ponto vista matemático;
+   * compreender vetores do ponto vista matemático, ou seja, desprovido de suas propriedades físicas;
    * compreender e realizar operações com vetores.   
 
 
 Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo. 
 
-A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados agora em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
+A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
   
-Antes de definir um vetor, é bom lembrar que um segmento de reta é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado da cor laranja, que contém os pontos compreendidos entre `A` e `B`. Este segmento de reta é chamado `AB` ou `BA`, e `r` é sua reta suporte. 
+Antes de definir vetor, é bom lembrar que um :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, segmento de reta é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
 
 .. _fig-geometria-operacoesvetores-08:
 
@@ -436,9 +481,9 @@ Antes de definir um vetor, é bom lembrar que um segmento de reta é um conjunto
    :width: 300px
    :align: center
 
-   Segmento de reta `AB`.
+   Segmento de reta `AB` [falta fazer no Geogebra].
 
-Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para indicar a orientação que estamos estabelecendo no segmento. Na verdade, existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. 
+Considere agora um segmento de reta `AB` sobre uma reta suporte `r`, como anteriormente, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, vamos utilizar uma flecha sobre o segmento, como na :numref:`fig-geometria-operacoesvetores-09`. 
 
 .. _fig-geometria-operacoesvetores-09:
 
@@ -446,12 +491,17 @@ Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para in
    :width: 400px
    :align: center
 
-   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).     
- 
- 
-.. admonition:: Definição 
+   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).   
+   
+Na figura da esquerda, a orientação escolhida foi de `A` para `B` e por isso representaremos o segmento orientado por `AB`. Já na figura da direita, temos um segmento de reta orientado de `B` para `A`, que será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-   :index:`Vetor` é um segmento de reta orientado que possui módulo, direção e sentido.
+Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este ente geométrico.
+
+.. admonition:: Definição 
+	   
+   :index:`Vetor` é uma coleção de segmentos orientados de mesmo comprimento, direção e sentido.
+   
+   
    
 Podemos denotar um vetor de duas formas diferentes: 
 
@@ -626,11 +676,11 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
 
 A partir desta definição, podemos perceber que:
 
-* o número real `1` é o elemento neutro da multiplicação de um vetor por um escalar, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
+* o número real `1` é o elemento neutro da multiplicação de um vetor por um número real, ou seja, `1\cdot\overrightarrow{AB}=\overrightarrow{AB}`;
 * `a\cdot\vec{0}=\vec{0}` para qualquer que seja o valor de `a`;
 * `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
 
-A multiplicação de um vetor por um escalar satisfaz outras propriedades que serão apresentadas na próxima seção.
+A multiplicação de um vetor por um número real satisfaz outras propriedades que serão apresentadas na próxima seção.
 
 
 .. admonition:: Você sabia?
