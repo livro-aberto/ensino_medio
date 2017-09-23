@@ -459,43 +459,43 @@ Organizando as ideias
 
 .. admonition:: Para o professor
 
-   A soma de vetores e a multiplicação de um vetor por um número real foram introduzidas utilizando as propriedades físicas do vetor deslocamento definido na última seção. A fim de formalizar e generalizar tais operações, é importante que os conceitos físicos não sejam mais utilizados e que apenas as propriedades matemáticas dos vetores sejam consideradas. Por esse motivo, faremos agora uma pausa na exposição das operações com vetores e só as retomaremos após alguns esclarecimentos a respeito do elemento matemático *vetor*. 
+   A soma de vetores foi introduzida utilizando as propriedades físicas do vetor deslocamento na última seção. A fim de formalizar e generalizar operações com vetores, se faz necessário utilizar apenas suas propriedades matemáticas sem o suporte de suas aplicações na Física. Sendo assim, definiremos vetores do ponto de vista matemático e exploraremos algumas operações nesta seção.
    
    **OBJETIVOS ESPECÍFICOS**
    
    Levar o estudante a:
    
    * compreender vetores do ponto vista matemático, ou seja, desprovido de suas propriedades físicas;
-   * compreender e realizar operações com vetores.   
+   * compreender e realizar operações com vetores, sendo elas: soma de vetores e multiplicação de vetor por um número real.   
 
 
-Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo. 
+Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. 
 
 A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
   
-Antes de definir vetor, é bom lembrar que um :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, segmento de reta é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
+Temos que começar definindo o que é um *vetor*, mas antes disso é bom lembrar que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, segmento de reta é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois estamos interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
 
-.. _fig-geometria-operacoesvetores-08:
+.. _fig-geometria-operacoesvetores-01:
 
-.. figure:: _resources/segmentodereta3.jpg
+.. figure:: _resources/SegmentoDeReta.png
    :width: 300px
    :align: center
 
-   Segmento de reta `AB` [falta fazer no Geogebra].
+   Segmento de reta `AB` ou `BA`.
 
-Considere agora um segmento de reta `AB` sobre uma reta suporte `r`, como anteriormente, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, vamos utilizar uma flecha sobre o segmento, como na :numref:`fig-geometria-operacoesvetores-09`. 
+Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, vamos utilizar uma flecha sobre o segmento, como na :numref:`fig-geometria-operacoesvetores-02`. 
 
-.. _fig-geometria-operacoesvetores-09:
+.. _fig-geometria-operacoesvetores-02:
 
-.. figure:: _resources/segmentoderetaorientado2.jpg
-   :width: 400px
+.. figure:: _resources/SegmentosOrientados.png
+   :width: 300px
    :align: center
 
-   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).   
+   Segmento de reta orientados de `A` para `B` e de `B` para `A`.   
    
-Na figura da esquerda, a orientação escolhida foi de `A` para `B` e por isso representaremos o segmento orientado por `AB`. Já na figura da direita, temos um segmento de reta orientado de `B` para `A`, que será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
+Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o segmento orientado por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este ente geométrico.
+Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elementos geométrico.
 
 .. admonition:: Definição 
 	   
