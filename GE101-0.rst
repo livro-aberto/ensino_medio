@@ -96,7 +96,7 @@ situado à 10 km à nordeste de `A` necessita de socorro urgente.
 
 Parte IV.
 
-Uma segunda estação de pesquisa `B` está situada à 10 km ao noroeste de `A`. 
+Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`. 
 
 #. Considerando os dados da Parte III, como você informaria a posição do grupo de exploradores com relação à estação `B`?
 
@@ -182,7 +182,7 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
       
 Deslocamentos no plano
 ------------------------------------------
-Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Quando um carro percorre a pista de Interlagos em São Paulo, por exemplo, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
+Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência). 
 Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`. 
 
 .. _fig-geometria-deslocamento-01:
@@ -344,69 +344,6 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
 
 
 
-Quando estamos operando grandezas escalares, usamos regras aritméticas já conhecidas. No entanto, quando queremos operar grandezas vetoriais, de alguma forma, temos que operar considerando seu módulo e sua orientação. Esse tipo de  operação é mais delicado de ser feito e precisa ser visto com muito cuidado. Nesta seção mostraremos como realizar a soma de dois vetores e a multiplicação de um vetor por um escalar. 
-
-Para estudar as operações citadas anteriormente, vamos utilizar o jogo *Corrida de Vetores*. Neste jogo, cada competidor recebe um número de cartas contendo diferentes vetores deslocamento (flechas que representam o deslocamento) e o objetivo é sair de um ponto `A` e chegar a um ponto `B` respeitando o limite da pista de corrida. A cada rodada uma nova carta é adicionada por cada jogador e quem conseguir atingir o ponto `B` utilizando o menor número de cartas é o vencedor. 
- 
-.. _fig-geometria-operacoesvetores-01:
-
-.. figure:: _resources/corridavetores.jpg
-   :width: 400px
-   :align: center
-
-   Jogo Corrida de Vetores.
-   
-Na :numref:`fig-geometria-operacoesvetores-01` mostramos o resultado de uma partida disputada pelos competidores verde e laranja que terminou empatada, já que os dois competidores utilizaram o mesmo número de cartas para atingir o ponto final. Podemos observar que os competidores utilizaram estratégias diferentes em busca da vitória ao percorrerem trajetórias diferentes. No entanto, pode-se perceber que os vetores deslocamento associados às duas trajetórias são iguais (flecha preta que liga `A` até `B`). Isso realmente deveria acontecer independente das cartas escolhidas por cada jogador em suas respectivas jogadas, já que o vetor deslocamento tem por objetivo medir apenas a variação da posição (que neste caso é de `A` para `B`) e não da trajetória percorrida. 
-
-Pela definição de vetor deslocamento que aprendemos na última seção, a soma de dois vetores deslocamento será sempre um vetor deslocamento. Isso se deve ao fato de que cada vetor representa uma variação de posição e então, se variarmos a posição de dois vetores adjacentes (ponto final do primeiro coincide com o ponto inicial do segundo), podemos representar a variação de posição total por um único vetor deslocamento. A esse vetor daremos o nome de *vetor soma*. 
-
-Analisando as duas primeiras jogadas do competidor verde na Corrida de Vetores (:numref:`fig-geometria-operacoesvetores-02`), vemos que este jogador escolheu uma carta que possui uma movimentação vertical (de baixo para cima) para a primeira jogada e assim, sai de `A` e alcança o ponto `P`. Sendo assim, associamos à primeira jogada o vetor deslocamento `\overrightarrow{AP}`. Na segunda jogada, ele novamente utilizou a mesma carta, mas agora partindo do ponto `P`, onde ele havia parado na jogada anterior. Assim, ele sai de `P` e chega em `Q`, o que nos faz associar à segunda rodada, o vetor deslocamento `\overrightarrow{PQ}`. Acompanhe essas duas jogadas na figura abaixo. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PQ}` são vetores adjacentes e representam as duas primeiras rodadas consecutivas do jogador verde.
-
-.. _fig-geometria-operacoesvetores-02:
-
-.. figure:: _resources/jogadacorridavetores3.jpg
-   :width: 200px
-   :align: center
-
-   Duas jogadas realizadas pelo competidor verde na Corrida de Vetores.
-
-A Corrida de Vetores começou no ponto `A` e após, as duas primeiras jogadas, o jogador verde atingiu o ponto `Q`. Sendo assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PQ}` é o vetor que liga os pontos `A` e `Q`. 
-
-Se analisarmos de maneira análoga as duas primeiras jogadas do jogador laranja, percebemos que a mesma carta foi escolhida por este jogador para sair de `A`. Sendo assim, a primeira jogada do competidor laranja também será representada pelo vetor `\overrightarrow{AP}`. Já para a segunda jogada foi escolhida uma carta com uma movimentação na diagonal. Com este movimento, e possível sair de `P` e atingir `R`, o que nos permite representar essa jogada pelo vetor `\overrightarrow{PR}`. Os vetores `\overrightarrow{AP}` e `\overrightarrow{PR}` são vetores adjacentes que utilizamos para representar as duas primeiras jogadas consecutivas do jogador laranja.
-
-.. _fig-geometria-operacoesvetores-03:
-
-.. figure:: _resources/JogadasCorridaVetores2.jpg
-   :width: 200px
-   :align: center
-
-   Duas jogadas realizadas pelo competidor laranja na Corrida de Vetores.
-
-Após realizar as duas primeiras jogadas, diferentemente do competidor verde, o competidor laranja conseguiu sair de `A` e alcançar o ponto `R`. Assim, a soma dos vetores deslocamento `\overrightarrow{AP}` e `\overrightarrow{PR}` é o vetor que liga `A` até `R` (ver :numref:`fig-geometria-operacoesvetores-03`). 
-
-O método que utilizamos para somar os vetores deslocamento das duas primeiras jogadas da Corrida de Vetores pode ser utilizado sempre que desejarmos somar dois vetores. Este método é conhecido como *Regra do Triângulo* e está representado na figura abaixo.
-
-.. _fig-geometria-operacoesvetores-04:
-
-.. figure:: _resources/regratriangulo.jpg
-   :width: 200px
-   :align: center
-
-   Regra do triângulo para somar dois vetores.
-   	 
-Já vimos anteriormente que as duas primeiras jogadas do jogador verde foram feitas com o mesmo tipo de carta, ou seja, com o mesmo vetor deslocamento. Diremos que a operação de repetir duas vezes um mesmo vetor deslocamento (um adjacente ao outro) é a multiplicação desse vetor deslocamento por `2`. 
-
-Com a notação que já usamos anteriormente e observando a geometria desta situação na :numref:`fig-geometria-operacoesvetores-02`, vamos listar as propriedades que o vetor `\overrightarrow{AQ}`, que é o resultado da multiplicação de `\overrightarrow{AP}` por `2`, satisfaz:
-
-* o módulo do vetor `\overrightarrow{AQ}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AP}` por `2`;
-* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem o mesmo ponto inicial `A`;
-* `\overrightarrow{AP}` e `\overrightarrow{AQ}` possuem a mesma orientação.
-
-Intuitivamente podemos imaginar o que aconteceria se repetíssemos a mesma carta `a` vezes, onde `a` é um número natural. Neste caso, estaríamos multiplicando `\overrightarrow{AP}` por `a` e as propriedades acima continuariam válidas, apenas com a ressalva de que `2` fosse substituído por `a`.
-
-.. admonition:: Pausa para reflexão
-
-   Você acha que `a` poderia ser um número real? 
   
 
 Organizando as ideias
@@ -420,15 +357,15 @@ Organizando as ideias
    
    Levar o estudante a:
    
-   * compreender vetores do ponto vista matemático;
+   * compreender vetores do ponto vista matemático, ou seja, desprovido de suas propriedades físicas;
    * compreender e realizar operações com vetores.   
 
 
 Até aqui associamos vetor ao deslocamento de um corpo e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento sempre foi feita por uma flecha que ligava as posições inicial e final da trajetória. O motivo da escolha de uma flecha para esta representação, na verdade, está ligada às propriedades que esse símbolo contém. Através da flecha temos uma indicação clara do ponto de partida e chegada do deslocamento do corpo (direção e sentido), assim como de seu módulo. 
 
-A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados agora em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
+A partir de agora, a flecha representará apenas um vetor do ponto de vista matemático, ou seja, não consideraremos  mais suas propriedades físicas. É claro que todo o estudo feito até aqui continua válido, mas estaremos interessados em generalizar conceitos e operações com vetores usando apenas argumentos matemáticos. 
   
-Antes de definir um vetor, é bom lembrar que um segmento de reta é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado da cor laranja, que contém os pontos compreendidos entre `A` e `B`. Este segmento de reta é chamado `AB` ou `BA`, e `r` é sua reta suporte. 
+Antes de definir vetor, é bom lembrar que um :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*, ou seja, segmento de reta é apenas uma parte de uma reta. Na :numref:`fig-geometria-operacoesvetores-08` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
 
 .. _fig-geometria-operacoesvetores-08:
 
@@ -436,9 +373,9 @@ Antes de definir um vetor, é bom lembrar que um segmento de reta é um conjunto
    :width: 300px
    :align: center
 
-   Segmento de reta `AB`.
+   Segmento de reta `AB` [falta fazer no Geogebra].
 
-Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para indicar a orientação que estamos estabelecendo no segmento. Na verdade, existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. 
+Considere agora um segmento de reta `AB` sobre uma reta suporte `r`, como anteriormente, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, vamos utilizar uma flecha sobre o segmento, como na :numref:`fig-geometria-operacoesvetores-09`. 
 
 .. _fig-geometria-operacoesvetores-09:
 
@@ -446,12 +383,17 @@ Já na :numref:`fig-geometria-operacoesvetores-09` utilizamos uma flecha para in
    :width: 400px
    :align: center
 
-   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).     
- 
- 
-.. admonition:: Definição 
+   Segmento de reta orientado de `A` para `B` (esquerda) e de `B` para `A` (direita).   
+   
+Na figura da esquerda, a orientação escolhida foi de `A` para `B` e por isso representaremos o segmento orientado por `AB`. Já na figura da direita, temos um segmento de reta orientado de `B` para `A`, que será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-   :index:`Vetor` é um segmento de reta orientado que possui módulo, direção e sentido.
+Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este ente geométrico.
+
+.. admonition:: Definição 
+	   
+   :index:`Vetor` é uma coleção de segmentos orientados de mesmo comprimento, direção e sentido.
+   
+   
    
 Podemos denotar um vetor de duas formas diferentes: 
 
