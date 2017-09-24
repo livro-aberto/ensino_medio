@@ -438,13 +438,32 @@ Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desl
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
 * para todo vetor deslocamento `\vec{v} = \overrightarrow{AB}` no plano, existe o vetor `\vec{w} = \overrightarrow{BA}` tal que `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA}`, isto é, `\vec{v} + \vec{w} = \vec{0}`. O vetor deslocamento `\vec{w}` com essa propriedade é denominado :index:`vetor deslocamento simétrico` de `\vec{v}` e, dada sua importância, receberá uma notação especial: `-\vec{v}`.
 
-
-
-
-
 .. admonition:: Pausa Para Reflexão
 
-    Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem comprimento `0`?
+    Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
+
+A :numref:`fig-geometria-cv-05` exibe o resultado de uma partida da *Corrida de Vetores* com ênfase nos vetores deslocamentos do carro azul. Note que, a partir da posição de largada `A`, o jogador escolheu a carta `\vec{a}` uma única vez, a carta `\vec{b}` duas vezes em seguida e a carta `\vec{g}` cinco vezes em seguida. Com essas cartas, o carro azul ocupou as posições `B`, `C`, …, `I` como indicadas na figura.  
+
+
+
+.. _fig-geometria-cv-05:
+
+.. figure::  _resources/geometria-cv-05_2.jpg
+   :width: 700px
+   :align: center   
+
+   Flechas para vetor deslocamento (à esquerda) e flechas para definir orientação e módulo (à direita).
+
+Observe que as flechas das cartas têm um uso diferente das flechas dos vetores deslocamentos:
+
+#. uma flecha de um vetor deslocamento representa variação de posição e, nesta representação, as posições inicial e final determinadas pela flecha são importantes, de modo que, por exemplo, o vetor deslocamento `\overrightarrow{DE}` é **diferente** do vetor deslocamento `\overrightarrow{IJ}`: se deslocar de `D` para `E` não é o mesmo que se deslocar de `I` para `J`;
+#. por sua vez, as flechas das cartas foram usadas apenas para estabelecer uma orientação e uma distância com as quais é possível determinar a posição final do carro a partir de sua posição inicial, sendo que, neste caso, a posição inicial não é importante (a flecha da carta `\vec{g}`, por exemplo, estabelece a instrução "se desloque duas unidades para leste" e essa instrução foi usada cinco vezes a partir das posições `D`, `E`, `F`, `G` e `H`).
+
+Para as flechas das cartas, as propriedades relevantes são orientação e módulo. A definição mais geral e abstrata de vetor apresentada na próxima seção fará uso justamente dessas propriedades.
+
+
+
+
 
 
 .. XXX
