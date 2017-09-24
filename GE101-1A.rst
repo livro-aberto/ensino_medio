@@ -32,7 +32,7 @@ Atividade: homotetia
    **Recomendações e sugestões:** 
    
    #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você deve trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
-   #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! Na :ref:`multiplicacao-escalar` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas. Aqui é importante observar que `3(3,2)= \overrightarrow{OA'} + \overrightarrow{OC'} = 9\overrightarrow{OX}+ 6\overrightarrow{OY} =(9,6)`.
+   #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! No final da seção :ref:`cap-vetores` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas.
    #. Observe que foi utilizado na solução que a homotetia de um retângulo é um retângulo (a homotetia preserva a forma das figuras). Os estudantes podem não perceber isso.  Para se observar que o ângulo `\widehat{OA'B'}=90^{\circ}`: pode-se usar a semelhança dos triângulos `AOB` e `A'OB'`, obtida pelo caso LAL (observando que `OB'=3OB` e `OA'=3OA` e que `\widehat{B'OA'}=\widehat{BOA}` pois a multiplicação por um número real não altera a direção de um vetor).
 
 
@@ -67,10 +67,10 @@ Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
 .. glossary:: 
    
    Translação
-      A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
-
-      .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
-         :width: 400px
+      A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}`. Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+      
+      .. figure:: _resources/translacao-definicao.jpg
+         :width: 200px
          :align: center
 
 
@@ -126,7 +126,7 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
 #. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
 #. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
-#. Escreva uma expressão vetorial (isto é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas) para o ponto `Q`.
+#. Escreva uma expressão vetorial para o ponto `Q` (uma expressão vetorial é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas, veja a definição de translação acima por exemplo). 
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
 .. admonition:: Resposta 
@@ -155,76 +155,68 @@ Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_
 
    Vetor soma (trocar a notação na figura)
 
-.. admonition:: Pausa para reflexão
-
-   Se os pontos `A=(x_A,y_A)` e `B=(x_B,y_B)` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. 
-   De fato, temos 
-   
-   .. tikz::
-
-      \begin{scope}[scale=1.1]
-      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
-      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
-      \fill (0,0) circle (0.05) node[below left]{$O$};
-      \draw[-latex, very thick, red]  (-1,2)--(0,0);
-      \draw[-latex, very thick, red] (0,0)-- (1,.5);
-      \draw[-latex, very thick] (-1,2) -- (1,.5);
-      \node at (.3,1.4){$\overrightarrow{AB}$};
-      \node at (-.9,.8){$-\overrightarrow{OA}$};
-      \node at (.4,.5){$\overrightarrow{OB}$};
-      \end{scope}
-         
-   .. math::
-   
-      \overrightarrow{AB} =  B - A = (x_B - x_A, y_B - y_A).
-      
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-dados-extremos.jpg
-      :width: 200px
-      :align: center
-      
-      Coordenadas de um vetor a partir de suas extremidades
-
-   Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
-      
-   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
- 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
-      :width: 400px
-      :align: center
-
-      O vetor posição **depende** da posição da origem do sistema de coordenadas
-   
-.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
-
 
 .. _ativ-vetores-coord-extremidades:
 
-Atividade: determinando um vetor a partir de suas extremidades
---------------------------------------------------------------
+Atividade: vetor de uma translação
+----------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** Determinar um vetor a partir de suas extremidades.
+   **Objetivos específicos:** usar translação para concluir que `\overrightarrow{AB} = (x_B-x_A, y_B-y_A)` num caso particular.
    
-   **Recomendações e sugestões:**
+   **Recomendações e sugestões:** A dificuldade dos estudantes deve permanecer na obtenção das coordenadas. Peça que eles escrevam a expressão vetorial que define uma translação. Veja a definição de translação acima.
 
-Dados os pontos `A = (1, 5)` e `B = (5, 3)`, quais são as coordenadas do vetor `\overrightarrow{AB}`?
+Dados os pontos `A = (1, 5)` e `A' = (5, 3)`, existe um vetor  `\vec{v}` que a translação de `A` por `\vec{v}` seja `A'`? Se sim, apresente as coordenadas deste vetor?
 
 .. admonition:: Resposta 
 
-   Como vimos antes `\overrightarrow{AB} = \overrightarrow{OB} − \overrightarrow{OA}` ou, simplesmente, `\overrightarrow{AB} = B − A`.
-   Assim, 
+   O ponto `A'` é uma translação de `A` por `\vec{v}` se `A' = A + \vec{v}`. A resposta é sim, basta tomar `\vec{v} = A' - A`. Teremos `\vec{v}=\overrightarrow{AA'}` e `A'=A + \overrightarrow{AA'}` em coordenadas
    
-   .. math:: 
+   .. math::
    
-      \overrightarrow{AB} = (5, 3) − (1, 5) = (5-1,3-5)=(4, −2).
+      \overrightarrow{v} =A'- A = (5,3) - (1,5) = (5-1,3-5) = (4,-2).
    
-   Observe o significado disso na figura.
+   Observe o resultado disso na figura.
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
-      :width: 400px
+      :width: 300px
       :align: center
+      
+      Trocar B por A' na figura
 
+Em geral, fixados um sistema de coordenadas e dois pontos `A=(x_A,y_A)` e `B=(x_B,y_B)`, quais são as coordenadas do vetor `\overrightarrow{AB}`?
+   
+Observe que `B` é a translação de `A` pelo vetor `\overrightarrow{AB}`, assim `B=A + \overrightarrow{AB}`. Ou seja, `\overrightarrow{AB} = B-A = (x_B - x_A, y_B - y_A)`.
+   
+.. tikz::
+
+   \begin{scope}[scale=1.1]
+   %\draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+   %\draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \draw[-latex]  (-1,2)--(0,0);
+   \draw[-latex] (0,0)-- (1,.5);
+   \draw[-latex, very thick, red] (-1,2) -- (1,.5);
+   \node at (.3,1.4){$\overrightarrow{AB}$};
+   \node at (-.9,.8){$-\overrightarrow{OA}$};
+   \node at (.6,0){$\overrightarrow{OB}$};
+   
+   \begin{scope}[xshift=4cm]
+   \draw[-latex, very thick, red] (-1,2) -- (1,.5);
+   \node at (.3,1.4){$\overrightarrow{AB}$};
+   \draw[dashed] (-1,2)--(-1,.5);
+   \draw[dashed] (-1,.5)--(1,.5);
+   \node at (-1.7,1.25) {$y_B - y_A$};
+   \node at (0,.3) {$x_B - x_A$};
+   \end{scope}
+   \end{scope}
+      
+.. .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-dados-extremos.jpg
+   :width: 200px
+   :align: center
+      
+      Coordenadas de um vetor a partir de suas extremidades
 
 .. _ativ-vetores-alg-vetores-iguais:
 
@@ -266,7 +258,7 @@ Onde está o vértice D?
       :width: 300px
       :align: center
 
-      `\overrightarrow{OB} = \overrightarrow{OM} + \overrightarrow{OM} = 2\overrightarrow{OM}`
+      `\overrightarrow{OB} = 2\overrightarrow{OM}`
 
-   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
+   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `\overrightarrow{OM}=\frac{1}{2}\overrightarrow{OB}=\frac{1}{2}(3,1)=(\frac{3}{2}, \frac{1}{2})`. Assim,  `M=(\frac{3}{2}, \frac{1}{2})`.
 
