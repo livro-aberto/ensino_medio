@@ -29,6 +29,8 @@
 
 .. HJB: não esquecer de escrever para o professor a estratégia pedagógica adotada, a saber, desenvolver o conceito de vetor em paralelo com os conceitos físicos em cinemática: posição relativa, deslocamento, velocidade média e aceleração média.
 
+.. HJB: não esquecer de, no texto para o professor, alertar para o fato de que apesar da definição de adição de vetores no contexto matemático poder ser feita para dois representantes quaisquer, no contexto físico certos representantes não fazem sentido (por exemplo, somar dois vetores deslocamentos sem que a extremidade inicial de um coincida com a extremidade final do outro).
+
 ..
    Caro professor,
    este é um texto introdutório do conceito de vetores no plano para estudantes do Ensino Médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como posição relativa, deslocamento, velocidade, aceleração e força. 
@@ -355,7 +357,7 @@ Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\ve
    :width: 290px
    :align: center
    
-   Justaposição de deslocamentos.
+   Justaposição de dois deslocamentos.
    
 Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
 
@@ -363,7 +365,7 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
    :label: label_vector_composition
    
-**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
 
 
 .. _ativ-corrida-de-vetores-01:
@@ -430,7 +432,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
                      \end{array}\right.
     
 
-Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (`\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
 
 * a composição de qualquer vetor deslocamento com o vetor deslocamento nulo é igual ao vetor deslocamento inicial. Em símbolos, tem-se `\overrightarrow{AB} + \overrightarrow{BB} = \overrightarrow{AB}` quaisquer que sejam `A` e `B` e, com a notação mais curta, `\vec{v} + \vec{0} = \vec{v}` qualquer que seja `\vec{v}` (compare com o caso de  números reais: `a + 0 = 0` qualquer que seja `a`);
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
@@ -495,29 +497,39 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
    
 Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o :index:`segmento orientado` por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elementos geométrico.
+Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elemento geométrico.
 
 .. admonition:: Definição 
 	   
    :index:`Vetor` é uma coleção de segmentos orientados de mesmo módulo, direção e sentido.
-      
-Podemos denotar um vetor de duas formas diferentes, dependendo de cada problema: 
 
-* utilizando apenas uma letra minúscula e uma flecha. Por exemplo, `\vec{v}`.
-* utilizando as letras que caracterizam os extremos do segmento de reta orientado que dá origem ao vetor, respeitando o sentido da orientação, e uma flecha. Por exemplo, `\vec{AB}`.   
-   
-O :index:`módulo de um vetor` é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
+Representamos um vetor por qualquer segmento de reta orientado que pertence à sua coleção, já que todos eles possuem os mesmos atributos. Assim, dois segmentos orientados de mesmo módulo, direção e sentido são representantes do mesmo vetor.
 
-Já a direção e sentido do vetor estão ligados à orientação que está sendo adicionada ao segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+Na :numref:`fig-geometria-operacoesvetores-02.1`, as flechas representam segmentos de reta orientados de mesmo módulo, direção e sentido. Para representar o vetor dado por essa coleção, escolhemos, em particular, o segmento orientado `AB`. Neste caso, denotaremos o vetor por `\overrightarrow{AB}`, ou seja, utilizando as letras que caracterizam os extremos do segmento de reta orientado que é representante do vetor e uma flecha.
 
-Na figura :numref:`fig-geometria-operacoesvetores-03` representamos os vetores `\vec{u},\vec{v},\vec{w}, \vec{m}` e `\vec{n}`, as retas paralelas `r` e `s` e a reta `t` transversal à `r` e `s` (que são as retas suporte dos segmentos orientados que dão origem aos vetores).  Vamos relacionar a direção e sentido de todos os pares de vetores desta figura:
+.. _fig-geometria-operacoesvetores-02.1:
+
+.. figure:: _resources/DefinicaoVetor.png
+   :width: 300px
+   :align: center
+
+   Vetor `\overrightarrow{AB}`. 
+
+Outra forma de representar um vetor é utilizando apenas uma letra minúscula e uma flecha, por exemplo `\vec{v}`. Podemos assim escrever `\vec{v}=\overrightarrow{AB}`. Neste caso, o vetor `\vec{v}` é a coleção de segmentos orientados com mesmo módulo, direção e sentido de `AB`.
+  
+O :index:`módulo de um vetor` é o comprimento do segmento de reta que o representa, ou seja, a distância entre seus pontos extremos. Portanto, módulo de um vetor é sempre um número não negativo. Indicaremos o módulo do vetor `\vec{v}` por `|\vec{v}|`. 
+
+Já a direção e sentido do vetor estão ligados à orientação que está do segmento que o representa. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. Sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+
+O módulo, direção e sentido de um vetor podem ser calculados usando qualquer segmento orientado que o represente, já que por definição, quaisquer dois ou mais representantes do vetor possuem mesmo módulo, direção e sentido.
+
+Na :numref:`fig-geometria-operacoesvetores-03` representamos os vetores `\vec{u},\vec{v},\vec{w}, \vec{m}` e `\vec{n}`, as retas paralelas `r` e `s` e a reta `t` transversal à `r` e `s` (que são as retas suporte dos segmentos orientados que dão origem aos vetores).  Vamos relacionar a direção e sentido de todos os pares de vetores desta figura:
 
 * `\vec{u}` e `\vec{v}` possuem a mesma direção por estarem sobre a mesma reta suporte, mas não possuem o mesmo sentido;
 * `\vec{u}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas e possuem o mesmo sentido;
 * `\vec{v}` e `\vec{w}` possuem a mesma direção por estarem sobre retas suporte paralelas, mas não possuem o mesmo sentido;
 * `\vec{m}` e `\vec{n}` possuem a mesma direção por estarem sobre a mesma reta suporte,mas não possuem o mesmo sentido;
 * `\vec{u},\vec{v}` e `\vec{w}` não possuem a mesma direção que `\vec{m}` e `\vec{n}`, e portanto não é possível comparar seus sentidos.
-
 
 .. _fig-geometria-operacoesvetores-03:
 
@@ -526,7 +538,7 @@ Na figura :numref:`fig-geometria-operacoesvetores-03` representamos os vetores `
    :align: center
 
    Vetores `\vec{u},\vec{v}` e `\vec{w}` sobre retas paralelas `r` e `s`, e `\vec{m}` e `\vec{n}` sobre a reta `t`.
-   
+      
 .. admonition:: Atenção! 
 
    Para cada direção, já sabemos que existem dois sentidos. Assim, caso dois vetores possuam a mesma direção, podemos comparar seus sentidos. Caso contrário, não é possível fazer tal comparação. 
@@ -537,7 +549,7 @@ Quando dois vetores `\vec{u}` e `\vec{v}`, como da :numref:`fig-geometria-operac
 
    Algumas palavras usadas frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação ilustrada na figura abaixo: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos dessa forma), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática. 
 
-	   .. _fig-geometria-operacoesvetores-05:
+	   .. _fig-geometria-operacoesvetores-04:
 
    .. figure:: _resources/saladeaula.jpg
       :width: 300px
@@ -549,7 +561,7 @@ Quando dois vetores `\vec{u}` e `\vec{v}`, como da :numref:`fig-geometria-operac
 
    Dizemos que dois vetores são iguais se eles possuem o mesmo módulo, direção e sentido. 
 
-.. _fig-geometria-operacoesvetores-07:
+.. _fig-geometria-operacoesvetores-05:
 
 .. figure:: _resources/VetoresIguais.png
    :width: 200px
@@ -580,6 +592,10 @@ Algumas observações importantes sobre o vetor nulo:
 #. para qualquer ponto `P`, `\overrightarrow{PP}=\vec{0}`;
 #. não confunda 0 com `\vec{0}`: 0 é um número real e `\vec{0}` é o vetor nulo.
 
+.. admonition:: Você sabia?
+
+   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo. 
+
 **Soma de vetores**
 
 .. admonition:: Definição 
@@ -588,34 +604,50 @@ Algumas observações importantes sobre o vetor nulo:
    
    .. math:: \overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
    
-Pela definição anterior, sabemos somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não aconteça, é possível realizar essa operação? Sim, mas neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
+Pela definição anterior, podemos somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não aconteça, é possível realizar essa operação? Sim, mas neste caso é necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e então aplicar a definição.
 
-.. _fig-geometria-operacoesvetores-05:
+.. _fig-geometria-operacoesvetores-06:
 
-.. figure:: _resources/somadevetores.jpg
+.. figure:: _resources/SomaVetores.png
    :width: 300px
    :align: center
 
-   Regra do triângulo para somar dois vetores quaisquer.
+   Soma de dois vetores quaisquer.
 
-Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B que possui o mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BD'}` são iguais, então
+Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B com mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BP}` são iguais, então o vetor com origem em `A` e extremidade em  
 
 .. math::
-  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD'}.
+ \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BP}=\overrightarrow{AP}.
+  
+Pela definição acima, em geral, os dois vetores a serem somados e o vetor soma formam um triângulo. Por causa disso, esse método é conhecido como *Regra do Triângulo*.
+
+
+.. admonition:: Pausa para reflexão
+
+   Em quais situações, os dois vetores a serem somados e o vetor soma não formam um triângulo?
+   
+
+.. admonition:: Para o professor
+
+   O objetivo da reflexão acima é fazer o aluno identificar que quando os vetores a serem somados estão sobre uma mesma reta, então não é possível formar um triângulo.   
 
 Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
 
 * O :index:`vetor nulo` `\vec{0}` é o elemento neutro da soma de vetores. Utilizando a regra do triângulo, é fácil ver que 
 
-.. math::   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
+
+.. math::
+
+   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
 
 para qualquer vetor `\overrightarrow{AB}`.
+
 * Repare que os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E ainda, pela regra do triângulo, `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA} = \vec{0}`. Neste caso, dizemos que `\overrightarrow{AB}` e `\overrightarrow{BA}` são :index:`vetores simétricos`, ou ainda que, `\overrightarrow{AB}` é o simétrico de `\overrightarrow{BA}`. 
 
 
-.. _fig-geometria-operacoesvetores-10:
+.. _fig-geometria-operacoesvetores-7:
 
-.. figure:: _resources/vetoressimetricos.jpg
+.. figure:: _resources/VetoresSimetricos.png
    :width: 400px
    :align: center
 
@@ -628,7 +660,7 @@ para qualquer vetor `\overrightarrow{AB}`.
    
    Ao somar dois números reais com sinais diferentes usamos uma notação mais simplificada (sem os parênteses e omitindo o sinal `+`; por exemplo, 2+(-5)=2-5). Seguindo esta mesma lógica, por simplicidade, escreveremos `\vec{v}+(-\vec{u})=\vec{v}-\vec{u}`.  
    
-   O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{u}` para `\vec{v}`.
+   O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{v}` para `\vec{u}`.
   
 * Note que `(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}` e `\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}`. Logo, podemos concluir que a soma de vetores é associativa, ou seja, 
 
@@ -642,7 +674,7 @@ para qualquer vetor `\overrightarrow{AB}`.
    :width: 300px
    :align: center
 
-   :index:`Associatividade da Soma de Vetores`.
+   :index:`Associatividade da soma de vetores`.
    
 * Já sabemos que `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}`. Agora, se a partir de `A` construirmos o um vetor igual a `\overrightarrow{BC}`, digamos  `\overrightarrow{AD}`, e a partir de `D` construirmos um vetor igual ao vetor `\overrightarrow{AB}` (veja :numref:`fig-geometria-operacoesvetores-12`), então 
 
@@ -658,7 +690,7 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
    :width: 200px
    :align: center
 
-   :index:`Comutatividade da Soma de Vetores`.
+   :index:`Comutatividade da soma de vetores`.
    
 
 .. admonition:: Pausa Para Reflexão
@@ -672,9 +704,10 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
    
 **MULTIPLICAÇÃO DE UM VETOR POR UM NÚMERO REAL**
 
+
 .. admonition:: Definição 
 
-   A multiplicação de um número real `a` por um vetor `\overrightarrow{AB}` é o vetor `a\cdot\overrightarrow{AB}` que satisfaz as seguintes propriedades:
+   A multiplicação de um vetor `\overrightarrow{AB}` por número real `a` é o vetor `a\cdot\overrightarrow{AB}` que satisfaz as seguintes propriedades:
    
    * o módulo do vetor `a\cdot\overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `|a|`;
    * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem o mesmo ponto inicial `A`;
@@ -690,8 +723,23 @@ A partir desta definição, podemos perceber que:
 A multiplicação de um vetor por um número real satisfaz outras propriedades que serão apresentadas na próxima seção.
 
 
-.. admonition:: Você sabia?
+.. admonition:: Exemplo 
 
-   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo. 
+   Já sabemos que o ponto médio de um segmento de reta é o ponto que divide o segmento de reta em duas partes iguais. Considere um segmento de reta orientado `AB` e seu ponto médio `M` para responder as atividades a seguir:
+
+   #. Escreva o vetor `\overrightarrow{AB}` como soma de dois vetores utilizando o ponto médio `M` de `AB`.
+   #. Escreva o vetor `\overrightarrow{AM}` como a multiplicação de um vetor por um número real.
 
 
+.. admonition:: Resposta 
+
+   texto
+
+
+.. admonition:: Exemplo 
+
+   O segmento de reta cujos extremos são pontos médios de dois lados de um triânguo é paralelo ao terceiro lado. Mostre que a medida deste segmento é metade da medida do terceiro lado do triângulo.
+
+.. admonition:: Resposta 
+
+   texto
