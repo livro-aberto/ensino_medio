@@ -36,7 +36,7 @@ Atividade: homotetia
    #. Observe que foi utilizado na solução que a homotetia de um retângulo é um retângulo (a homotetia preserva a forma das figuras). Os estudantes podem não perceber isso.  Para se observar que o ângulo `\widehat{OA'B'}=90^{\circ}`: pode-se usar a semelhança dos triângulos `AOB` e `A'OB'`, obtida pelo caso LAL (observando que `OB'=3OB` e `OA'=3OA` e que `\widehat{B'OA'}=\widehat{BOA}` pois a multiplicação por um número real não altera a direção de um vetor).
 
 
-Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,2)` e `C=(0,2)`. 
+Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,4)` e `C=(0,4)`. 
 Considere uma homotetia de centro `O` e razão `r=3`.
 
 
@@ -44,25 +44,41 @@ Considere uma homotetia de centro `O` e razão `r=3`.
    :width: 400px
    :align: center
    
-   Incluir um ponto dentro do retângulo com o rótulo `P=(x,y)`
+   Incluir um ponto dentro do retângulo com o rótulo `P=(a,b)`
 
-#. Reproduza a figura em seu caderno e represente os pontos `A'` e `C'`, correspondentes de `A` e `C` pela homotetia.
+#. Reproduza a figura em seu caderno e represente os pontos `A'`, `B'` e `C'`, correspondentes de `A`, `B` e `C` pela homotetia.
 #. Calcule as coordenadas dos pontos `A'` e `C'`.
-#. Se `B'` é o correspondente de `B` pela homotetia, então `\overrightarrow{OB'}=3\overrightarrow{OB}=3(3,2)`. Use os itens a) e b) para explicar por que `3(3,2)=(9,6)`.
-#. Considere um ponto `P=(x,y)` do interior do retângulo `OABC`. Use as ideias dos itens anteriores para explicar que `3(x,y)=(3x,3y)`.
+#. Calcule as coordenadas de `B'`. 
+#. Considere um ponto `P=(a,b)` do interior do retângulo `OABC`. Use os argumentos dos itens anteriores para explicar que `3(a,b)=(3a,3b)`.
 
 .. admonition:: Resposta 
 
-   texto da resposta
+   #. Figura.
+   #. Da definição de homotetia obtemos que `\overrightarrow{OA'}=3\overrightarrow{OA}`. Como `|\overrightarrow{OA}|=3`, temos `|\overrightarrow{OA'}|=3 \times 3 = 9` e, portanto, `A'=(9,0)`. De modo análogo justifica-se que `C'=(0,12)`.
+   #. Digamos que `B'=(x',y')`, o triângulo de lados 3, 4 e `|\overrightarrow{OB}|=5` e o triângulo de lados `x'`, `y'` e `|\overrightarrow{OB'}|=15` são semelhantes porque têm dois ângulos iguais. 
+   
+      **FIGURA**
+      
+      Logo `x'= 3 \times 3 = 9` e `y'=3 \times 4 = 12`. Conclusão: `P'=(9,12)`. 
+   #. Como antes denotemos `P'=(a',b')`. Novamente o triângulo de lados `a`, `b` e `OP` é semelhante ao de lados `a'`, `b'` e `OP'` porque têm dois ângulos iguais. 
+   
+      **FIGURA**
+      
+      Como `OP'=3OP`, a razão de semelhança é 3 e, portanto, `a'=3a` e `b'=3b`. Conclusão: `P'=(3a,3b)`, ou seja, `3(a,b)=(3a,3b)`.
 
-.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
+.. Como `B'` é o correspondente de `B` pela homotetia, `\overrightarrow{OB'}=3\overrightarrow{OB}=3(3,2)`. Use semelhança de triângulos para explicar que `3(3,2)=(9,6)`.
 
-Uma explicação parecida com aquela apresentada no item d) da atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `a\in \mathbb{R}`, então o vetor `a\vec{v}=(ax,ay)`.
+Na atividade anterior, trocando a razão de homotetia por outro número real positivo, digamos `c` e usando os mesmos argumentos podemos garantir que se um vetor `\vec{v}` tem coordenadas `(a,b)`, então o vetor `c\vec{v}=(ca,cb)`.
 
 Na seção anterior definimos o simétrico do vetor `\vec{v}` como o vetor que tem mesma direção, mesmo módulo, mas tem sentido oposto ao de `\vec{v}`.
 Lá decidiu-se denotá-lo por `-\vec{v}` e ao se definir a mutiplicação de `\vec{v}` por um número real ficou claro que `(-1)\vec{v}=-\vec{v}`. 
-Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
+Assim, se `\vec{v}=(a,b)`, então `-\vec{v} = (-a,-b)`.
 
+Deste modo podemos estabelecer que para qualquer número `c \in \mathbb{R}` e qualquer vetor `\vec{v}=(a,b)` temos
+
+.. math::
+
+   c(a,b)=(ca,cb).
 
 .. glossary:: 
    
@@ -90,6 +106,7 @@ Atividade: translação num plano
    
    **Recomendações e sugestões:**
 
+Considere o triângulo `ABC` de vértices `A=(-1,4)`, `B=(3,1)` e `C=(2,-1)`.
 
 Parte I.
 
@@ -102,7 +119,7 @@ A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec
    Translação de um triângulo 
 
 #. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
-#. Considere um ponto genérico `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
+#. Considere um ponto genérico `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
 
 Parte II.
 
@@ -118,21 +135,46 @@ A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor
    Figura errada, mas similar à correta.
 
 #. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
-#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
+#. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
 
 Parte III.
 
 Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` então translada-se este último triângulo por `\vec{v}`.
 
-#. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
-#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. Determine as coordenadas dos vértices do triângulo `DEF` que é resultado desta composição de translações.
+#. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
 #. Escreva uma expressão vetorial para o ponto `Q` (uma expressão vetorial é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas, veja a definição de translação acima por exemplo). 
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
 .. admonition:: Resposta 
 
-   texto da resposta
+   Parte I
 
+   #. Como o ponto `A'` é a translação horizontal do ponto `A` de 4 unidades na direção e sentido do eixo `x`, temos `A'=(-1+4,4)=(3,4)`.
+   
+      **FIGURA** translação do ponto `A` apenas.
+   
+      Com o mesmo argumento obtemos `B'=(3+4,1)=(7,1)` e `C'=(2+4,-1)=(6,-1)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a+4,b)`.
+   
+   Parte II
+   
+   #. Como o ponto `A''` foi obtido movendo-se o ponto `A` duas unidades para baixo, temos `A''=(-1,4-2)=(-1,2)`.
+
+      **FIGURA** translação do ponto `A` apenas.
+   
+      Do mesmo modo obtemos `B''=(3,1-2)=(3,-1)` e `C''=(2,-1-2)=(2,-3)`.
+      
+   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b-2)`.
+   
+   Parte III
+   
+   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =`, `E=` e `F=`.
+   
+      **FIGURA**
+      
+   #. ASD
+      
 Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
 .. math::
