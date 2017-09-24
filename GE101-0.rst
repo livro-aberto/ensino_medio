@@ -29,6 +29,8 @@
 
 .. HJB: não esquecer de escrever para o professor a estratégia pedagógica adotada, a saber, desenvolver o conceito de vetor em paralelo com os conceitos físicos em cinemática: posição relativa, deslocamento, velocidade média e aceleração média.
 
+.. HJB: não esquecer de, no texto para o professor, alertar para o fato de que apesar da definição de adição de vetores no contexto matemático poder ser feita para dois representantes quaisquer, no contexto físico certos representantes não fazem sentido (por exemplo, somar dois vetores deslocamentos sem que a extremidade inicial de um coincida com a extremidade final do outro).
+
 ..
    Caro professor,
    este é um texto introdutório do conceito de vetores no plano para estudantes do Ensino Médio. A proposta apresentada aqui não tem como objetivo introduzir o conceito a partir de sua definição formal. A abordagem oferecida visa explorar o assunto a partir da observação de grandezas cujas características exigem mais do que uma informação numérica para sua completa identificação em um sistema. É o caso, por exemplo de grandezas vetoriais como posição relativa, deslocamento, velocidade, aceleração e força. 
@@ -355,7 +357,7 @@ Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\ve
    :width: 290px
    :align: center
    
-   Justaposição de deslocamentos.
+   Justaposição de dois deslocamentos.
    
 Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
 
@@ -363,7 +365,7 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
    :label: label_vector_composition
    
-**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
 
 
 .. _ativ-corrida-de-vetores-01:
@@ -430,7 +432,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
                      \end{array}\right.
     
 
-Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (`\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
 
 * a composição de qualquer vetor deslocamento com o vetor deslocamento nulo é igual ao vetor deslocamento inicial. Em símbolos, tem-se `\overrightarrow{AB} + \overrightarrow{BB} = \overrightarrow{AB}` quaisquer que sejam `A` e `B` e, com a notação mais curta, `\vec{v} + \vec{0} = \vec{v}` qualquer que seja `\vec{v}` (compare com o caso de  números reais: `a + 0 = 0` qualquer que seja `a`);
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
