@@ -2,7 +2,7 @@
 Vetores do ponto de vista algébrico (parte III)
 ***********************************************
 
-Conforme prometido no início da seção passaremos agora a discorrer sobre as principais propriedades das operações de adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem obter todas elas a partir de propriedades análogas para os números reais.
+Veremos agora as principais propriedades das operações da adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem justificar estas igualdades a partir das propriedades análogas para os números reais.
 
 **Propriedades comentadas das operações com vetores**
 
@@ -10,16 +10,20 @@ A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida p
 
 **FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
 
-o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`.
+o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`, após esta reoganização.
 Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
 Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
 
-Seguindo o estabelecido na definição de adição de vetores, o que significa `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos. 
+**FIGURA** sobre a igualdade acima
+
+Outra pergunta capciosa é: *Seguindo o estabelecido na definição de adição de vetores, o que significa* `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos.
+
+**FIGURA** sobre a igualdade acima
 
 Estas e outras questões nos forçam a listar as propriedades a seguir.
 Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
-O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade (trabalhar com a igualdade, pressupõe a validade da igualdade e, por isso, não serve para *justificar* a igualdade).
-Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades.
+O leitor mais interessado deve supor dado um sistema de coordenadas, escrever os vetores de um dos membros das igualdades em coordenadas e efetuar as manipulações algébricas já justificadas para obter o outro membro da igualdade.
+Sugerimos que você leia todas elas com cuidado tentando realizar perguntas como aquelas do início destas propriedades e retorne a este ponto do texto sempre que se sentir inseguro quanto à validade de alguma delas.
 
 Quaisquer que sejam os vetores do plano `\vec{u}`, `\vec{v}` e `\vec{w}` e os números reais `a` e `b`, valem as seguintes afirmações:
 
@@ -37,7 +41,7 @@ Justificativa do item a): considere um sistema de coordenadas no plano, então o
 
 **Vetores e Forças**
 
-A *Primeira Lei de Newton*, também conhecida como o *Princípio da Inércia*, afirma que
+A *Primeira Lei de Newton*, também conhecida como *Princípio da Inércia*, afirma que
 
 .. glossary::
 
@@ -82,7 +86,7 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
 
    Não é necessário contato com o corpo para que exista uma força atuando sobre ele. Imagine uma bola de tênis largada da mão do tenista a partir do repouso (velocidade zero). Ela cai sob efeito do *campo gravitacional* da Terra, sempre vertical para baixo (aponta para o centro da Terra). Se esta força não estivesse atuando sobre a bolinha, ela deveria ficar parada flutuando no local onde foi deixada pelo tenista.
       
-   Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal coincide com a força peso.
+   Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal anula com a força peso. **Atenção:** a força normal não é igual à força peso nesta última situação. Ela é simétrica à força peso, temos `\vec{N} = -\vec{F}`. Por isso a força resultante é zero.
 
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bolinha-tenis.jpg
       :width: 400px
@@ -99,23 +103,20 @@ Atividade: grampos de escalada
 
    **Objetivos específicos:**
    
+   #. decompor um vetor como soma dos vetores coordenados,
+   #. representar forças através de vetores,
+   #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
+   
    **Recomendações e sugestões:**
-   Oriente os estudantes a fazer uma bolinha para representar as forças sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela.
+   Oriente os estudantes a fazer uma bolinha representando o nó e, então desenhar os vetores indicando força sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela. Na análise, recomenda-se promover uma discussão entre os estudantes. Para a solução do exercício pode-se despresar o peso dos equipamentos.
 
-A escaladora da figura usa um grampo simples para sua segurança. 
 
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/d/d8/Free_climbing_20060701.jpg
-      :align: center
-      :width: 200px
-            
-      foto de Elke Wetzig
-            
-Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha como no esquema a seguir.
+O equipamento da foto abaixo é utilizado para segurança de escaladores. Duas fitas de tecido com *mosquetões* na ponta são presas em dois grampos presos na pedra. Um nó é dado nas fitas e outro mosquetão é colocado na ponta. Este último vai prender o escalador. Usa-se dois grampos para reduzir o risco de acidentes.
 
 .. figure:: https://i.pinimg.com/736x/a2/26/40/a22640aece4cc64f3e18361d9bd15f7d--how-to-build-learn-how.jpg
    :width: 200px
    
-   Foto de `Chris <http://www.seekingexposure.com/case-study-simple-bolt-anchor/>`_
+   Foto de `Chris <http://www.seekingexposure.com/case-study-simple-bolt-anchor/>`_ (substituir)
             
    .. tikz::
 
@@ -126,7 +127,7 @@ Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha
       \fill[blue] (20:1.5) circle (.08);
       \node[above] at (20:1.5) {\small Grampo 2};
       \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escaladora};
+      \node[below] at (270:1.5) {\small Escalador};
       \draw[very thick, red] (0,0) -- (160:1.5);
       \draw[very thick, red] (0,0) -- (20:1.5);
       \draw[very thick, red] (0,0) -- (270:1.5);
@@ -140,7 +141,7 @@ Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha
       \fill[blue] (45:1.5) circle (.08);
       \node[above] at (45:1.5) {\small Grampo 2};
       \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escaladora};
+      \node[below] at (270:1.5) {\small Escalador};
       \draw[very thick, red] (0,0) -- (135:1.5);
       \draw[very thick, red] (0,0) -- (45:1.5);
       \draw[very thick, red] (0,0) -- (270:1.5);
@@ -154,16 +155,26 @@ Para maior segurança costuma-se prender dois grampos próximos ao topo da rocha
       \fill[blue] (60:1.5) circle (.08);
       \node[above] at (50:1.7) {\small Grampo 2};
       \fill[blue] (270:1.5) circle (.08);
-      \node[below] at (270:1.5) {\small Escaladora};
+      \node[below] at (270:1.5) {\small Escalador};
       \draw[very thick, red] (0,0) -- (120:1.5);
       \draw[very thick, red] (0,0) -- (60:1.5);
       \draw[very thick, red] (0,0) -- (270:1.5);
       \end{scope}
       \end{scope}
-      
-#. Em qual das situações (I), (II) ou (III) a corda fica mais tensionada próximo aos grampos?   
-#. Faça um esquema de forças similar ao apresentado para a corda que auxilie a justificativa da sua escolha no item a).
-#. Justifique a sua escolha do item a) utilizando vetores.
+
+Imagine um escalador que descansa pendurado no equipamento da figura sem contato com a pedra.
+
+#. Faça um esquema de forças sobre o nó em cada uma das situações (I), (II) e (III).
+#. Qual é a força resultante sobre o nó?
+#. Discuta a variação na tensão nas três pontas da fita em cada uma das situações utilizando a linguagem e operações com vetores.
+
+.. admonition:: Resposta 
+
+   #. **FIGURA**
+   #. Como o escalador está parado, a força resultante é zero pela Primeira Lei de Newton.
+   #. A tensão na fita abaixo do nó é sempre constante igual ao peso do escalador, digamos `\vec{P}`. Como a força resultante é zero, a soma das componentes verticais acima do nó é constante igual a `-\vec{P}`. Assim quanto mais distantes estiverem os grampos, maior será a componente horizontal da tensão nas fitas, logo maior será a tensão nas fitas acima do nó.
+   
+   **Figuras** incluir decomposição horizontal e vertical das forças.
 
 
 .. _ativ-vetores-plano-inclinado:
