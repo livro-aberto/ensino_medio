@@ -495,7 +495,7 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
    
 Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o :index:`segmento orientado` por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elementos geométrico.
+Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elemento geométrico.
 
 .. admonition:: Definição 
 	   
@@ -590,6 +590,10 @@ Algumas observações importantes sobre o vetor nulo:
 #. para qualquer ponto `P`, `\overrightarrow{PP}=\vec{0}`;
 #. não confunda 0 com `\vec{0}`: 0 é um número real e `\vec{0}` é o vetor nulo.
 
+.. admonition:: Você sabia?
+
+   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo. 
+
 **Soma de vetores**
 
 .. admonition:: Definição 
@@ -598,34 +602,50 @@ Algumas observações importantes sobre o vetor nulo:
    
    .. math:: \overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
    
-Pela definição anterior, sabemos somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não aconteça, é possível realizar essa operação? Sim, mas neste caso será necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e só então a regra do triângulo pode ser aplicada.
+Pela definição anterior, podemos somar dois vetores onde o ponto final do primeiro coincide com o ponto inicial do segundo, ou seja, quando os vetores são adjacentes. E caso isso não aconteça, é possível realizar essa operação? Sim, mas neste caso é necessário construir um vetor igual ao segundo partindo do ponto final do primeiro, e então aplicar a definição.
 
-.. _fig-geometria-operacoesvetores-05:
+.. _fig-geometria-operacoesvetores-06:
 
-.. figure:: _resources/somadevetores.jpg
+.. figure:: _resources/SomaVetores.png
    :width: 300px
    :align: center
 
-   Regra do triângulo para somar dois vetores quaisquer.
+   Soma de dois vetores quaisquer.
 
-Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B que possui o mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BD'}` são iguais, então
+Consideremos os vetores `\overrightarrow{AB}` e `\overrightarrow{CD}` não adjacentes, como da figura acima. Como o ponto final de `\overrightarrow{AB}` é diferente do ponto inicial de `\overrightarrow{CD}`, é necessário construir um vetor partindo do ponto B com mesmo módulo, direção e sentido de `\overrightarrow{CD}` e assim, com dois vetores adjacentes, poderemos somá-los. Se os vetores `\overrightarrow{CD}` e `\overrightarrow{BP}` são iguais, então o vetor com origem em `A` e extremidade em  
 
 .. math::
-  \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BD'}=\overrightarrow{AD'}.
+ \overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{BP}=\overrightarrow{AP}.
+  
+Pela definição acima, em geral, os dois vetores a serem somados e o vetor soma formam um triângulo. Por causa disso, esse método é conhecido como *Regra do Triângulo*.
+
+
+.. admonition:: Pausa para reflexão
+
+   Em quais situações, os dois vetores a serem somados e o vetor soma não formam um triângulo?
+   
+
+.. admonition:: Para o professor
+
+   O objetivo da reflexão acima é fazer o aluno identificar que quando os vetores a serem somados estão sobre uma mesma reta, então não é possível formar um triângulo.   
 
 Vejamos algumas propriedades da soma de vetores. Para isso, utilizaremos os vetores `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}`:
 
 * O :index:`vetor nulo` `\vec{0}` é o elemento neutro da soma de vetores. Utilizando a regra do triângulo, é fácil ver que 
 
-.. math::   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
+
+.. math::
+
+   \overrightarrow{AB} + \vec{0} = \vec{0} + \overrightarrow{AB} = \overrightarrow{AB},
 
 para qualquer vetor `\overrightarrow{AB}`.
+
 * Repare que os vetores `\overrightarrow{AB}` e `\overrightarrow{BA}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E ainda, pela regra do triângulo, `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA} = \vec{0}`. Neste caso, dizemos que `\overrightarrow{AB}` e `\overrightarrow{BA}` são :index:`vetores simétricos`, ou ainda que, `\overrightarrow{AB}` é o simétrico de `\overrightarrow{BA}`. 
 
 
-.. _fig-geometria-operacoesvetores-10:
+.. _fig-geometria-operacoesvetores-7:
 
-.. figure:: _resources/vetoressimetricos.jpg
+.. figure:: _resources/VetoresSimetricos.png
    :width: 400px
    :align: center
 
@@ -638,7 +658,7 @@ para qualquer vetor `\overrightarrow{AB}`.
    
    Ao somar dois números reais com sinais diferentes usamos uma notação mais simplificada (sem os parênteses e omitindo o sinal `+`; por exemplo, 2+(-5)=2-5). Seguindo esta mesma lógica, por simplicidade, escreveremos `\vec{v}+(-\vec{u})=\vec{v}-\vec{u}`.  
    
-   O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{u}` para `\vec{v}`.
+   O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{v}` para `\vec{u}`.
   
 * Note que `(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}` e `\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}`. Logo, podemos concluir que a soma de vetores é associativa, ou seja, 
 
@@ -652,7 +672,7 @@ para qualquer vetor `\overrightarrow{AB}`.
    :width: 300px
    :align: center
 
-   :index:`Associatividade da Soma de Vetores`.
+   :index:`Associatividade da soma de vetores`.
    
 * Já sabemos que `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}`. Agora, se a partir de `A` construirmos o um vetor igual a `\overrightarrow{BC}`, digamos  `\overrightarrow{AD}`, e a partir de `D` construirmos um vetor igual ao vetor `\overrightarrow{AB}` (veja :numref:`fig-geometria-operacoesvetores-12`), então 
 
@@ -668,7 +688,7 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
    :width: 200px
    :align: center
 
-   :index:`Comutatividade da Soma de Vetores`.
+   :index:`Comutatividade da soma de vetores`.
    
 
 .. admonition:: Pausa Para Reflexão
@@ -684,7 +704,7 @@ Assim, `\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overr
 
 .. admonition:: Definição 
 
-   A multiplicação de um número real `a` por um vetor `\overrightarrow{AB}` é o vetor `a\cdot\overrightarrow{AB}` que satisfaz as seguintes propriedades:
+   A multiplicação de um vetor `\overrightarrow{AB}` por número real `a` é o vetor `a\cdot\overrightarrow{AB}` que satisfaz as seguintes propriedades:
    
    * o módulo do vetor `a\cdot\overrightarrow{AB}` pode ser encontrado multiplicando  o módulo do vetor `\overrightarrow{AB}` por `|a|`;
    * `\overrightarrow{AB}` e `a\cdot\overrightarrow{AB}` possuem o mesmo ponto inicial `A`;
@@ -698,10 +718,4 @@ A partir desta definição, podemos perceber que:
 * `0\cdot\vec{v}=\vec{0}` para qualquer que seja o vetor `\vec{v}`.
 
 A multiplicação de um vetor por um número real satisfaz outras propriedades que serão apresentadas na próxima seção.
-
-
-.. admonition:: Você sabia?
-
-   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo. 
-
 
