@@ -21,7 +21,9 @@ ROTEIRO: VETORES
 
    .. admonition:: Habilidade
 
-      BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.   
+      BNCC (EM11MT01) Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
+      
+      Explicação da habilidade (texto da BNCC): o trabalho com vetores deve proporcionar aos/s estudantes, inicialmente, compreender o conceito de vetor tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) como do ponto de vista algébrico (caracterizado por suas coordenadas). Na continuidade, esse trabalho é ampliado para que eles sejam capazes de interpretar a representação geométrica da soma de vetores e da multiplicação de um vetor por um escalar e de compreender as relações entre vetores e as transformações isométricas (reflexão, translação e rotação). É importante que todo esse trabalho seja proposto de modo articulado e integrado com situações estudadas na Física, por exemplo, e com apoio de softwares de geometria dinâmica.
 
 
    .. admonition:: Objetivo geral
