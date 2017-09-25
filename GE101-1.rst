@@ -4,11 +4,8 @@
 Vetores do ponto de vista algébrico
 ***********************************
 
-Nesta seção você vai aprender a representar vetores através de um par ordenado de números reais, que serão chamados de *coordenadas do vetor*. 
-Esta representação possibilita que os computadores entendam e operem com vetores e também serão fundamentais para o estudo das transformações do plano, que serão estudadas mais adiante. 
-Além disso ela permite usar propriedades do conjunto dos números reais para justificar as propriedades das operações com vetores.
-Esta identificação de pontos do plano com vetores através das coordenadas deve trazer um novo olhar sobre os pontos do plano, pois daqui para frente fará sentido somar dois pontos e multiplicar um ponto por um número real.
-
+Nesta seção você vai aprender a representar vetores no plano por meio de um par ordenado de números reais, que serão chamados de *coordenadas do vetor*. 
+Esta representação possibilita que os computadores entendam e operem com vetores e também serão fundamentais para o estudo das transformações do plano, que serão estudadas mais adiante. Além disso ela permite usar propriedades do conjunto dos números reais para justificar as propriedades das operações com vetores.
 
 .. _ativ-vetores-vetor-malha:
 
@@ -39,8 +36,8 @@ Reproduza a figura em seu caderno e faça o que se pede:
    
 #. Represente o vetor `3\vec{u}` na malha.
 #. Represente o vetor `-\vec{v}` com origem no ponto `A`.
-#. Represente o vetor `\vec{u}+\vec{v}` na malha com origem no ponto `A`.
 #. Represente o vetor `3\vec{u} + 4\vec{v}`.
+#. Represente o vetor `\vec{u}+\frac{1}{2}\vec{v}` na malha com origem no ponto `A`.
 
 .. #. Represente o vetor `4\vec{v}` na malha.
 
@@ -54,14 +51,14 @@ Reproduza a figura em seu caderno e faça o que se pede:
       \draw[-latex, thick, red] (0.,0.02) -- (.5,0.02);
       \draw[-latex, thick, red] (0,0) -- (0,.5);
       \draw[-latex, thick, blue] (1,1) -- (1,.5);
-      \draw[-latex, thick, blue] (1,1) -- (1.5,1.5);
+      \draw[-latex, thick, blue] (1,1) -- (1.5,1.25);
       \draw[-latex, thick, blue] (0,0) -- (1.5,2);
       \fill (1,1) circle (0.05) node[below left]{$A$};
       \node at (.25,-.25){$\vec{u}$};
       \node at (-.25,.25){$\vec{v}$};
       \node at (1.25,-.25){$3\vec{u}$};
       \node at (1.2,.65){$-\vec{v}$};
-      \node at (1.9,1.35){$\vec{u}+\vec{v}$};
+      \node at (2,1.15){$\vec{u}+\frac{1}{2}\vec{v}$};
       \node at (.75,1.75){$3\vec{u}+4\vec{v}$};
       \end{scope}
    
@@ -76,10 +73,10 @@ Atividade: expressão algébrica dado vetor
    **Objetivos específicos:** 
    
    #. usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha, e 
-   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
+   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a\vec{u}+b\vec{v}`. 
    
    
-   **Recomendações e sugestões:** Se for necessário, relembre a linguagem usada na questão anterior para que os estudantes entendam o que é esperado no item a). Não é esperado que o estudante consiga justificar precisamente a pergunta do item b). Espera-se que ele reflita a respeito. Isso será justificado quando obtivermos as coordenadas de um vetor.
+   **Recomendações e sugestões:** Se for necessário, relembre a linguagem usada na questão anterior para que os estudantes entendam o que é esperado no item a). Não é esperado que o estudante consiga justificar precisamente a pergunta do item b). Espera-se que ele reflita a respeito. Isso será justificado quando identificarmos as coordenadas de um vetor com as de um ponto do plano. Se você dispuser de projetor ou laboratório de informática, o link disponível no item b) pode contribuir bastante para a discussão.
    
 Com a mesma linguagem da atividade anterior, faça o que se pede:
 
@@ -101,13 +98,13 @@ Com a mesma linguagem da atividade anterior, faça o que se pede:
    \end{scope}
 
 #. obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
-#. Para refletir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `x` e `y` tais que o vetor `\vec{w}` se escreve como 
+#. Para refletir e discutir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `a` e `b` tais que o vetor `\vec{w}` se escreve como 
 
    .. math:: 
    
-      \vec{w} = x\vec{u} + y\vec{v}.
+      \vec{w} = a\vec{u} + b\vec{v}.
    
-   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê?
+   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê? Este `aplicativo do GeoGebra <https://www.geogebra.org/m/ZUgkeWXW>`_ pode ajudar a responder e contribuir para a reflexão.
    
 .. admonition:: Resposta 
 
@@ -164,12 +161,12 @@ Se a atividade a seguir parecer difícil, sugerimos que realize antes as ativida
 
 .. _ativ-vetores-coordenadas-vetor-posicao:
 
-Atividade: coordenadas do vetor posição
----------------------------------------
+Atividade: coordenadas de um vetor
+----------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** reconhecer que num sistema de coordenadas retangulares `OXY` as coordenadas de um vetor `\vec{w}` qualquer em relação aos vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` coincidem com as da extremidade de `\vec{w}` quando posicionamos a origem deste vetor em `O`.
+   **Objetivos específicos:** reconhecer que num sistema de coordenadas retangulares `OXY` as coordenadas de um vetor `\vec{w}` qualquer em relação aos vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` coincidem com as da extremidade final de `\vec{w}` quando posicionamos a extremidade inicial deste vetor em `O`.
    
    **Recomendações e sugestões:** 
    
@@ -199,8 +196,6 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
 
 #. Determine as coordenadas dos vetores posição com relação à origem `O` do sistema de coordenadas para os pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações. Por exemplo, `\overrightarrow{OA}= 2 \overrightarrow{OX} + 3 \overrightarrow{OY}`, assim as coordenadas de `\overrightarrow{OA}` são `x=2` e `y=3`.
 #. Faça o mesmo para um ponto `P=(a,b)`, supondo que `a` e `b` são números reais fixados, mas desconhecidos por você. 
-
- 
 
 .. admonition:: Resposta 
 
@@ -275,7 +270,7 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
    \end{scope}
    \end{scope}
 
-Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andaremos 3 na direção do vetor `\overrightarrow{OX}` e 4 na direção do vetor `\overrightarrow{OY}` para atingir a extremidade de `\vec{v}`.
+Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, deslocaremos 3 pelo vetor `\overrightarrow{OX}` e 4 na pelo vetor `\overrightarrow{OY}` para atingir a extremidade final de `\vec{v}`.
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
