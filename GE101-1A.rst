@@ -215,28 +215,57 @@ Parte I.
 
 A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec{u}=(4,0)`, resultando no triângulo `A'B'C'`.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294818&w=500&h=281&tok=fb1c9c&media=translacao2.jpg
-   :width: 400px
-   :align: center
+.. tikz:: Translação horizontal do triângulo ABC
 
-   Translação de um triângulo 
+   \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+   \draw[fill=lightgray!30,xshift=4cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+      
+   \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+   \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (a) circle (0.05) node[left]{$A$};
+   \fill (b) circle (0.05) node[below left]{$B$};
+   \fill (c) circle (0.05) node[below left]{$C$};
+   \fill (a') circle (0.05) node[below left]{$A'$};
+   \fill (b') circle (0.05) node[below left]{$B'$};
+   \fill (c') circle (0.05) node[below left]{$C'$};
+   \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+   \fill (5,2)coordinate(p') circle (0.05) node[below left]{$P'$};
+   
+   \draw[-latex,thick,red] (a)--(a');
+   \draw[-latex,thick,red] (b)--(b');
+   \draw[-latex,thick,red] (c)--(c');
+   \draw[-latex,thick,red] (p)--(p');
 
 #. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
 #. Considere um ponto genérico `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
 
 Parte II.
 
-A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-2)`, resultando no triângulo `A''B''C''`.
+A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-3)`, resultando no triângulo `A''B''C''`.
 
+.. tikz:: Translação horizontal do triângulo ABC
 
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=translacao3.jpg
-   :width: 400px
-   :align: center
-
-   Figura errada, mas similar à correta.
-
+   \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+   \draw[fill=lightgray!30,yshift=-3cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+      
+   \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex] (0,-4) -- (0,5) node[left]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (a) circle (0.05) node[left]{$A$};
+   \fill (b) circle (0.05) node[below left]{$B$};
+   \fill (c) circle (0.05) node[below left]{$C$};
+   \fill (a') circle (0.05) node[below left]{$A'$};
+   \fill (b') circle (0.05) node[below left]{$B'$};
+   \fill (c') circle (0.05) node[below left]{$C'$};
+   \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+   \fill (1,-1)coordinate(p') circle (0.05) node[below left]{$P'$};
+   
+   \draw[-latex,thick,red] (a)--(a');
+   \draw[-latex,thick,red] (b)--(b');
+   \draw[-latex,thick,red] (c)--(c');
+   \draw[-latex,thick,red] (p)--(p');
+   
 #. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
 #. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
 
@@ -256,31 +285,64 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
    #. Como o ponto `A'` é a translação horizontal do ponto `A` de 4 unidades na direção e sentido do eixo `x`, temos `A'=(-1+4,4)=(3,4)`.
    
-      **FIGURA** translação do ponto `A` apenas.
+      .. tikz:: Translação horizontal do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[xshift=4cm] (-1,4)coordinate(a');
+      
+         \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[above]{$A=(-1,4)$};
+         \fill (a') circle (0.05) node[above]{$A'=(3,4)$};
+         
+         \draw[dashed] (a) -- (-1,0);
+         \draw[dashed] (a') -- (3,0);
+         
+         \node[below] at (1,4) {4};
+            
+         \draw[-latex,thick,red] (a)--(a');
+         
    
       Com o mesmo argumento obtemos `B'=(3+4,1)=(7,1)` e `C'=(2+4,-1)=(6,-1)`.
    #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a,b)+(4,0) = (a+4,b)`.
    
    Parte II
    
-   #. Como o ponto `A''` foi obtido movendo-se o ponto `A` duas unidades para baixo, temos `A''=(-1,4-2)=(-1,2)`.
+   #. Como o ponto `A''` foi obtido movendo-se o ponto `A` duas unidades para baixo, temos `A''=(-1,4-3)=(-1,1)`.
 
-      **FIGURA** translação do ponto `A` apenas.
-   
-      Do mesmo modo obtemos `B''=(3,1-2)=(3,-1)` e `C''=(2,-1-2)=(2,-3)`.
+      .. tikz:: Translação horizontal do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[yshift=-3cm] (-1,4)coordinate(a');
       
-   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b)+(0,-2) = (a,b-2)`.
+         \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[above]{$A=(-1,4)$};
+         \fill (a') circle (0.05) node[below]{$A''=(-1,1)$};
+         
+         \draw[dashed] (a) -- (0,4);
+         \draw[dashed] (a') -- (0,1);
+         
+         \node[left] at (-1,2.5) {3};
+            
+         \draw[-latex,thick,red] (a)--(a');
+   
+      Do mesmo modo obtemos `B''=(3,1-3)=(3,-2)` e `C''=(2,-1-3)=(2,-4)`.
+      
+   #. Qualquer ponto `P=(a,b)`, quando transladado -3 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 3 unidades, portanto, `P''=(a,b)+(0,-3) = (a,b-3)`.
    
    Parte III
    
-   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =(3,4-2)=(3,2)`, `E=(7,1-2)=(7,-1)` e `F=(6,-1-2)=(6,-3)`.
+   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -3 unidades altera a segunda coordenada do ponto em -3, portanto, temos `D =(3,4-3)=(3,1)`, `E=(7,1-3)=(7,0)` e `F=(6,-1-3)=(6,-4)`.
    
       **FIGURA**
      
-   #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-2) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
-   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -2, então `Q = P' + \vec{v} = (a+4,b-2)`.
+   #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-3) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -3, então `Q = P' + \vec{v} = (a+4,b-3)`.
    #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`, assim `Q = P' + \vec{v}`. Como `P'` é o resultado da translação de `P` por `\vec{u}`, temos `P'=P + \vec{u}`. Substituindo na expressão para `Q` obtemos `Q= (P+\vec{u}) + \vec{v}`.
-   #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 2 \overrightarrow{OY} = (4,-2)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
+   #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 3 \overrightarrow{OY} = (4,-3)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
    
       **FIGURA**
       
