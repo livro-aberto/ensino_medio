@@ -14,7 +14,7 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
 
 Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia-poligonos.png
+.. figure:: _resources/homotetia-poligonos.png
    :width: 400px
    :align: center
    
@@ -41,12 +41,20 @@ Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `
 Considere uma homotetia de centro `O` e razão `r=3`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1234.jpg
-   :width: 400px
-   :align: center
-   
-   Incluir um ponto dentro do retângulo com o rótulo `P=(a,b)`
+.. tikz:: 
 
+   \begin{scope}[scale=.3]
+   \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+   \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+   \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+   \fill (0,0) circle (0.13) node[below left]{$O$};
+   \fill (3,0) circle (0.13) node[below]{$A$};
+   \fill (3,4) circle (0.13) node[right]{$B$};
+   \fill (0,4) circle (0.13) node[left]{$C$};
+   \fill (2,1.5) circle (0.13) node[left]{$P$};
+   
+   \end{scope}
+   
 #. Reproduza a figura em seu caderno e represente os pontos `A'`, `B'` e `C'`, correspondentes de `A`, `B` e `C` pela homotetia.
 #. Calcule as coordenadas dos pontos `A'` e `C'`.
 #. Calcule as coordenadas de `B'`. 
@@ -54,16 +62,107 @@ Considere uma homotetia de centro `O` e razão `r=3`.
 
 .. admonition:: Resposta 
 
-   #. Figura.
+   #. 
+   
+      
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]         
+         \draw[fill=lightgray!30] (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         \fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[right]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex,very thick, blue] (0,0)--(9,0);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,0);
+         \draw[-latex,very thick, blue] (0,0)--(0,12);
+         \draw[-latex, thick, red] (0.1,0)--(0.1,4);
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,4);
+         \fill (2,1.5) circle (0.13) node[right]{$P$};
+         \fill (6,4.5) circle (0.13) node[right]{$P'$};
+         \end{scope}
    #. Da definição de homotetia obtemos que `\overrightarrow{OA'}=3\overrightarrow{OA}`. Como `|\overrightarrow{OA}|=3`, temos `|\overrightarrow{OA'}|=3 \times 3 = 9` e, portanto, `A'=(9,0)`. De modo análogo justifica-se que `C'=(0,12)`.
    #. Digamos que `B'=(x',y')`, o triângulo de lados 3, 4 e `|\overrightarrow{OB}|=5` e o triângulo de lados `x'`, `y'` e `|\overrightarrow{OB'}|=15` são semelhantes porque têm dois ângulos iguais. 
    
-      **FIGURA**
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]
+         
+         %\fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[above]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[above]{$P$};
+         %\fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \fill[gray] (0,0)--(3,0)--(3,4)--cycle;
+         \fill[lightgray!30] (0,0)--(9,0)--(9,12)--cycle;                  
+         \draw[dashed] (3,4)--(3,0);
+         \draw[dashed] (9,12)--(9,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0,0)--(3,4);
+         
+         \node[below] at (1.5,0){3};
+         \node at (4.5,-1){$x'$};
+         \node[right] at (3,2){4};
+         \node[right] at (9,6){$y'$};
+         
+         \draw (9,0) rectangle (8.6,.4);
+         \draw (3,0) rectangle (2.6,.4);
+         \end{scope}
       
       Logo `x'= 3 \times 3 = 9` e `y'=3 \times 4 = 12`. Conclusão: `P'=(9,12)`. 
    #. Como antes denotemos `P'=(a',b')`. Novamente o triângulo de lados `a`, `b` e `OP` é semelhante ao de lados `a'`, `b'` e `OP'` porque têm dois ângulos iguais. 
    
-      **FIGURA**
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]
+         
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13);
+         %\fill (3,4) circle (0.13) node[above]{$B$};
+         %\fill (0,4) circle (0.13) node[left]{$C$};
+         \fill (2,1.5) circle (0.13) node[above]{$P$};
+         \fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \draw[fill=lightgray] (0,0)--(2,1.5)--(2,0)--cycle;
+         \fill[lightgray!30] (0,0)--(6,4.5)--(6,0)--cycle;
+         %\draw[thin] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \draw (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \draw[dashed] (6,4.5)--(6,0);
+         \draw[dashed] (2,1.5)--(2,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(6,4.5);
+         \draw[-latex, thick, red] (0,0)--(2,1.5);
+         
+         \node[below] at (1,0){$a$};
+         \node at (3.5,-1){$a'$};
+         \node[right] at (2,.75){$b$};
+         \node[right] at (6,2.25){$b'$};
+         
+         \draw (6,0) rectangle (5.6,.4);
+         \draw (2,0) rectangle (1.6,.4);
+         \end{scope}
       
       Como `OP'=3OP`, a razão de semelhança é 3 e, portanto, `a'=3a` e `b'=3b`. Conclusão: `P'=(3a,3b)`, ou seja, `3(a,b)=(3a,3b)`.
 
@@ -188,7 +287,7 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
 
    P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tc.png
+.. figure:: _resources/tc.png
    :width: 300px
    :align: center
 
@@ -198,7 +297,7 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
 Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_1)` e  `\vec{v} = (a_2, b_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a_1 + b_2, a_1 + b_2)`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-soma.png
+.. figure:: _resources/vetor-soma.png
    :width: 400px
    :align: center
 
@@ -228,7 +327,7 @@ Dados os pontos `A = (1, 5)` e `A' = (5, 3)`, existe um vetor  `\vec{v}` que a t
    
    Observe o resultado disso na figura.
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
+   .. figure:: _resources/coordenadas-vetor.png
       :width: 300px
       :align: center
       
@@ -289,7 +388,7 @@ Onde está o vértice D?
 
    Os vetores `AD` e `BC` são iguais.
    
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetores-iguais.png
+   .. figure:: _resources/vetores-iguais.png
       :width: 250px
       :align: center
    
