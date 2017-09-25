@@ -108,7 +108,7 @@ Atividade: grampos de escalada
    #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
    
    **Recomendações e sugestões:**
-   Oriente os estudantes a fazer uma bolinha representando o nó e, então desenhar os vetores indicando força sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela. Na análise, recomenda-se promover uma discussão entre os estudantes. Para a solução do exercício pode-se despresar o peso dos equipamentos.
+   Oriente os estudantes a fazer uma bolinha representando o nó e, então desenhar os vetores indicando força sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela. Na análise, recomenda-se promover uma discussão entre os estudantes. Para a solução do exercício pode-se desprezar o peso dos equipamentos.
 
 
 O equipamento da foto abaixo é utilizado para segurança de escaladores. Duas fitas de tecido com *mosquetões* na ponta são presas em dois grampos presos na pedra. Um nó é dado nas fitas e outro mosquetão é colocado na ponta. Este último vai prender o escalador. Usa-se dois grampos para reduzir o risco de acidentes.
@@ -190,7 +190,11 @@ Atividade: Plano inclinado
    #. representar forças através de vetores,
    #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
    
-   **Recomendações e sugestões:**
+   **Recomendações e sugestões:** Esteja atento ao esquema utilizado pelos estudantes para representar as forças e sua resultante. Alguns erros comuns são: 
+   
+   #. não representar as forças como se estivessem aplicadas a um mesmo ponto, 
+   #. indicar forças apontando para o ponto que representa o corpo e não com origem neste ponto,
+   #. fechar o triângulo para obter a resultante ao invés de formar um paralelogramo.
    
 A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoiado sobre ele. Um sistema de coordenadas foi escolhido com origem no centro `O` do bloco. A força peso está representada a partir de `O`. Suponha que este bloco permanece parado.
 
@@ -209,7 +213,15 @@ A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoia
 
 .. admonition:: Resposta 
 
-   texto
+   #. Como o bloco não se move a, a resultante das forças que agem sobre ele é zero pela Primeira Lei de Newton.
+   #. **FIGURA**
+   #. Como `\vec{P}` tem direção vertical e `\vec{P_x}` é paralelo à rampa, o ângulo entre `\vec{P}` e `\vec{P_x}` é `45^{\circ}`.
+   
+      **FIGURA**	
+      
+      Assim `|\vec{P}|` é a diagonal de um quadrado de lados `|\vec{P_x}| = |\vec{P_y}|`. Portanto, se `|\vec{P}| = 10N`, então `|\vec{P_x}|^2 + |\vec{P_y}|^2 = |\vec{P}|^2` pelo Teorema de Pitágoras, logo `|\vec{P_x}| = |\vec{P_y}| = 5\sqrt{2}`.
+   #. Conforme informado no texto, a força normal é sempre perpendicular à superfície de contato. Como não há movimento na direção do eixo `y`, a resultante nesta direção deve ser zero, portanto, `|\vec{N}|=|\vec{P_y}|=5\sqrt{2}`.
+   #. Como a força resultante é zero, existe uma força de resistência igual a `-\vec{P_x}`. Sem ela, o bloco estaria se movendo de acordo com o Princípio da Inércia.
 
 
 .. _ativ-vetores-barcos-rio:
@@ -225,7 +237,7 @@ Atividade: puxando o barco (modificado de PUC/SP)
    #. expressar a resultante de duas forças geometricamente.
    #. reconhecer que a força resultante é maior quanto menor for o ângulo entre as forças.
    
-   **Recomendações e sugestões:** Falar da regra do paralelogramo.
+   **Recomendações e sugestões:** Esteja atento ao esquema utilizado pelos estudantes para representar as forças e sua resultante. É um erro comum fechar o triângulo para se obter a resultante ao invés de formar um paralelogramo, como é típico no uso de forças. Espera-se que no item c) os estudantes calculem a força em resultante em cada uma das situações para argumentarem, se eles não fizerem isso você pode incrementar a questão perguntando diretamente: *"Digamos que nos dois esquemas as forças realizadas pelos homens tenham módulos iguais a F. Qual é o valor da força resultante em cada um dos casos? Expresse sua resposta em termos de F.*
 
 Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens. Em (a), são usadas cordas que transmitem ao barco forças paralelas. Em (b), são usadas cordas inclinadas de `90^{\circ}`. Supondo que os homens fazem forças de intensidades iguais. Faça o que se pede.
 
@@ -238,12 +250,12 @@ Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens.
 #. Represente o barco como uma partícula e as forças atuando nela em cada um dos esquemas.
 #. Represente a força resultante em cada um dos esquemas.
 #. Em qual dos esquemas o mesmo resultado será obtido com menor esforço dos homens. Por quê?
-#. Digamos que nos dois esquemas as forças realizadas pelos homens tenham módulos iguais a `F`. Qual é o valor da força resultante em cada um dos casos? Expresse sua resposta em termos de `F`.
 
 .. admonition:: Resposta 
 
-   texto da resposta
-
+   #. **FIGURA**   
+   #. **FIGURA**
+   #. Com a mesma intensidade de força `|\vec{F}|`, na situação (a), obtemos resultante `2\vec{F}` na direção e sentido do movimento enquanto que na situação (b) obtemos `\sqrt{2}\vec{F}`. Como `2 > \sqrt{2}`, o esforço é mais bem aproveitado em (a).
 
 .. admonition:: Pausa para reflexão
 

@@ -14,7 +14,7 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
 
 Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia-poligonos.png
+.. figure:: _resources/homotetia-poligonos.png
    :width: 400px
    :align: center
    
@@ -27,25 +27,34 @@ Atividade: homotetia
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** reconhecer que dados `a\in \mathbb{R}` e `(x,y) \in \mathbb{R}^2` temos `a(x,y)=(ax,ay)`. 
+   **Objetivo específico:** reconhecer que dados `c\in \mathbb{R}` e `(a,b) \in \mathbb{R}^2` temos `c(a,b)=(ca,cb)`. 
    
    **Recomendações e sugestões:** 
    
    #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você deve trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
    #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! No final da seção :ref:`cap-vetores` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas.
-   #. Observe que foi utilizado na solução que a homotetia de um retângulo é um retângulo (a homotetia preserva a forma das figuras). Os estudantes podem não perceber isso.  Para se observar que o ângulo `\widehat{OA'B'}=90^{\circ}`: pode-se usar a semelhança dos triângulos `AOB` e `A'OB'`, obtida pelo caso LAL (observando que `OB'=3OB` e `OA'=3OA` e que `\widehat{B'OA'}=\widehat{BOA}` pois a multiplicação por um número real não altera a direção de um vetor).
+   #. Observe que da solução obtém-se que a homotetia preserva a forma das figuras, isto é, origina uma figura semelhante à original. 
+   #. Vale enfatizar que a multiplicação por um número real não nulo não altera a direção de um vetor.
 
 
 Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,4)` e `C=(0,4)`. 
 Considere uma homotetia de centro `O` e razão `r=3`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1234.jpg
-   :width: 400px
-   :align: center
-   
-   Incluir um ponto dentro do retângulo com o rótulo `P=(a,b)`
+.. tikz:: 
 
+   \begin{scope}[scale=.3]
+   \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+   \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+   \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+   \fill (0,0) circle (0.13) node[below left]{$O$};
+   \fill (3,0) circle (0.13) node[below]{$A$};
+   \fill (3,4) circle (0.13) node[right]{$B$};
+   \fill (0,4) circle (0.13) node[left]{$C$};
+   \fill (2,1.5) circle (0.13) node[left]{$P$};
+   
+   \end{scope}
+   
 #. Reproduza a figura em seu caderno e represente os pontos `A'`, `B'` e `C'`, correspondentes de `A`, `B` e `C` pela homotetia.
 #. Calcule as coordenadas dos pontos `A'` e `C'`.
 #. Calcule as coordenadas de `B'`. 
@@ -53,16 +62,107 @@ Considere uma homotetia de centro `O` e razão `r=3`.
 
 .. admonition:: Resposta 
 
-   #. Figura.
+   #. 
+   
+      
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]         
+         \draw[fill=lightgray!30] (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         \fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[right]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex,very thick, blue] (0,0)--(9,0);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,0);
+         \draw[-latex,very thick, blue] (0,0)--(0,12);
+         \draw[-latex, thick, red] (0.1,0)--(0.1,4);
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,4);
+         \fill (2,1.5) circle (0.13) node[right]{$P$};
+         \fill (6,4.5) circle (0.13) node[right]{$P'$};
+         \end{scope}
    #. Da definição de homotetia obtemos que `\overrightarrow{OA'}=3\overrightarrow{OA}`. Como `|\overrightarrow{OA}|=3`, temos `|\overrightarrow{OA'}|=3 \times 3 = 9` e, portanto, `A'=(9,0)`. De modo análogo justifica-se que `C'=(0,12)`.
    #. Digamos que `B'=(x',y')`, o triângulo de lados 3, 4 e `|\overrightarrow{OB}|=5` e o triângulo de lados `x'`, `y'` e `|\overrightarrow{OB'}|=15` são semelhantes porque têm dois ângulos iguais. 
    
-      **FIGURA**
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]
+         
+         %\fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[above]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[above]{$P$};
+         %\fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \fill[gray] (0,0)--(3,0)--(3,4)--cycle;
+         \fill[lightgray!30] (0,0)--(9,0)--(9,12)--cycle;                  
+         \draw[dashed] (3,4)--(3,0);
+         \draw[dashed] (9,12)--(9,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0,0)--(3,4);
+         
+         \node[below] at (1.5,0){3};
+         \node at (4.5,-1){$x'$};
+         \node[right] at (3,2){4};
+         \node[right] at (9,6){$y'$};
+         
+         \draw (9,0) rectangle (8.6,.4);
+         \draw (3,0) rectangle (2.6,.4);
+         \end{scope}
       
       Logo `x'= 3 \times 3 = 9` e `y'=3 \times 4 = 12`. Conclusão: `P'=(9,12)`. 
    #. Como antes denotemos `P'=(a',b')`. Novamente o triângulo de lados `a`, `b` e `OP` é semelhante ao de lados `a'`, `b'` e `OP'` porque têm dois ângulos iguais. 
    
-      **FIGURA**
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]
+         
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13);
+         %\fill (3,4) circle (0.13) node[above]{$B$};
+         %\fill (0,4) circle (0.13) node[left]{$C$};
+         \fill (2,1.5) circle (0.13) node[above]{$P$};
+         \fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \draw[fill=lightgray] (0,0)--(2,1.5)--(2,0)--cycle;
+         \fill[lightgray!30] (0,0)--(6,4.5)--(6,0)--cycle;
+         %\draw[thin] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \draw (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \draw[dashed] (6,4.5)--(6,0);
+         \draw[dashed] (2,1.5)--(2,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(6,4.5);
+         \draw[-latex, thick, red] (0,0)--(2,1.5);
+         
+         \node[below] at (1,0){$a$};
+         \node at (3.5,-1){$a'$};
+         \node[right] at (2,.75){$b$};
+         \node[right] at (6,2.25){$b'$};
+         
+         \draw (6,0) rectangle (5.6,.4);
+         \draw (2,0) rectangle (1.6,.4);
+         \end{scope}
       
       Como `OP'=3OP`, a razão de semelhança é 3 e, portanto, `a'=3a` e `b'=3b`. Conclusão: `P'=(3a,3b)`, ou seja, `3(a,b)=(3a,3b)`.
 
@@ -85,11 +185,14 @@ Deste modo podemos estabelecer que para qualquer número `c \in \mathbb{R}` e qu
    Translação
       A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}`. Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
       
-      .. figure:: _resources/translacao-definicao.jpg
-         :width: 200px
-         :align: center
+      
+      .. tikz:: Translação do ponto P com relação ao vetor v
 
-
+         \draw[-latex, red, very thick] (3,1)--(5,2.5);
+         \fill (3,1) circle (0.05) node[below]{$P$};
+         \fill (5,2.5) circle (0.05) node[below]{$P'$};
+         \node at (4,2.2) {$\vec{v}$};
+      
 .. _ativ-vetores-translacao:
 
 Atividade: translação num plano
@@ -143,6 +246,7 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
 #. Determine as coordenadas dos vértices do triângulo `DEF` que é resultado desta composição de translações.
 #. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. O resultado da composição do item b) acima seria diferente se fizéssemos primeiro a translação de `P` por `\vec{v}` obtendo `P''` e depois fizéssemos a translação de `P''` por `\vec{u}`? Justifique sua resposta.
 #. Escreva uma expressão vetorial para o ponto `Q` (uma expressão vetorial é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas, veja a definição de translação acima por exemplo). 
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
@@ -155,7 +259,7 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
       **FIGURA** translação do ponto `A` apenas.
    
       Com o mesmo argumento obtemos `B'=(3+4,1)=(7,1)` e `C'=(2+4,-1)=(6,-1)`.
-   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a+4,b)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a,b)+(4,0) = (a+4,b)`.
    
    Parte II
    
@@ -165,15 +269,20 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
    
       Do mesmo modo obtemos `B''=(3,1-2)=(3,-1)` e `C''=(2,-1-2)=(2,-3)`.
       
-   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b-2)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b)+(0,-2) = (a,b-2)`.
    
    Parte III
    
-   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =`, `E=` e `F=`.
+   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =(3,4-2)=(3,2)`, `E=(7,1-2)=(7,-1)` e `F=(6,-1-2)=(6,-3)`.
    
       **FIGURA**
-      
-   #. ASD
+     
+   #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-2) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -2, então `Q = P' + \vec{v} = (a+4,b-2)`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`, assim `Q = P' + \vec{v}`. Como `P'` é o resultado da translação de `P` por `\vec{u}`, temos `P'=P + \vec{u}`. Substituindo na expressão para `Q` obtemos `Q= (P+\vec{u}) + \vec{v}`.
+   #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 2 \overrightarrow{OY} = (4,-2)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
+   
+      **FIGURA**
       
 Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
@@ -181,7 +290,7 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
 
    P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tc.png
+.. figure:: _resources/tc.png
    :width: 300px
    :align: center
 
@@ -191,7 +300,7 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
 Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_1)` e  `\vec{v} = (a_2, b_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a_1 + b_2, a_1 + b_2)`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-soma.png
+.. figure:: _resources/vetor-soma.png
    :width: 400px
    :align: center
 
@@ -221,7 +330,7 @@ Dados os pontos `A = (1, 5)` e `A' = (5, 3)`, existe um vetor  `\vec{v}` que a t
    
    Observe o resultado disso na figura.
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
+   .. figure:: _resources/coordenadas-vetor.png
       :width: 300px
       :align: center
       
@@ -282,7 +391,7 @@ Onde está o vértice D?
 
    Os vetores `AD` e `BC` são iguais.
    
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetores-iguais.png
+   .. figure:: _resources/vetores-iguais.png
       :width: 250px
       :align: center
    
