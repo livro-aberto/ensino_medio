@@ -143,6 +143,7 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
 
 #. Determine as coordenadas dos vértices do triângulo `DEF` que é resultado desta composição de translações.
 #. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. O resultado da composição do item b) acima seria diferente se fizéssemos primeiro a translação de `P` por `\vec{v}` obtendo `P''` e depois fizéssemos a translação de `P''` por `\vec{u}`? Justifique sua resposta.
 #. Escreva uma expressão vetorial para o ponto `Q` (uma expressão vetorial é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas, veja a definição de translação acima por exemplo). 
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
@@ -155,7 +156,7 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
       **FIGURA** translação do ponto `A` apenas.
    
       Com o mesmo argumento obtemos `B'=(3+4,1)=(7,1)` e `C'=(2+4,-1)=(6,-1)`.
-   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a+4,b)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a,b)+(4,0) = (a+4,b)`.
    
    Parte II
    
@@ -165,15 +166,20 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
    
       Do mesmo modo obtemos `B''=(3,1-2)=(3,-1)` e `C''=(2,-1-2)=(2,-3)`.
       
-   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b-2)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado -2 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 2 unidades, portanto, `P''=(a,b)+(0,-2) = (a,b-2)`.
    
    Parte III
    
-   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =`, `E=` e `F=`.
+   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -2 unidades altera a segunda coordenada do ponto em -2, portanto, temos `D =(3,4-2)=(3,2)`, `E=(7,1-2)=(7,-1)` e `F=(6,-1-2)=(6,-3)`.
    
       **FIGURA**
-      
-   #. ASD
+     
+   #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-2) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -2, então `Q = P' + \vec{v} = (a+4,b-2)`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`, assim `Q = P' + \vec{v}`. Como `P'` é o resultado da translação de `P` por `\vec{u}`, temos `P'=P + \vec{u}`. Substituindo na expressão para `Q` obtemos `Q= (P+\vec{u}) + \vec{v}`.
+   #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 2 \overrightarrow{OY} = (4,-2)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
+   
+      **FIGURA**
       
 Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
