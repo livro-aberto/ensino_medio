@@ -61,6 +61,9 @@ Posições relativas no plano
    
    * 
 
+
+**ATIVIDADE**
+
 A figura a seguir exibe um mapa onde o ponto 
 representa a localização de uma estação de pesquisa `A` na Antártida.
 
@@ -117,6 +120,8 @@ Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
 .. HJB: número complexo conta como número na definição de grandeza escalar?
 .. HJB: a posição relativa de um ponto na reta é uma grandeza vetorial? Não! (Halliday & Hesnick, 2009, p. 43)
 
+**GRANDEZAS ESCALARES E VETORIAIS**
+
 Em Física, existem grandezas que ficam perfeitamente descritas por um número e uma unidade. Este é o caso, por exemplo, do tempo, da temperatura, da pressão e da massa.
 Grandezas deste tipo são denominadas :index:`grandezas escalares`. 
 
@@ -125,6 +130,9 @@ Por outro lado, como você deve ter percebido com a atividade anterior, um únic
 .. admonition:: Pausa Para Reflexão
 
     Quais outras grandezas físicas você conhece? Elas são grandezas escalares ou vetoriais?    
+
+
+**VETOR POSIÇÃO RELATIVA**
 
 A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste capítulo) pode ser representada graficamente por uma flecha, isto é, um :index:`segmento de reta orientado` o qual, a partir de agora, denominaremos :index:`vetor posição relativa`. A figura a seguir exibe os vetores posições relativas do grupo de exploradores (marcado como `G` na figura) com relação às estações de pesquisa `A` e `B` da atividade anterior. 
 
@@ -141,6 +149,7 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
     Por que posições relativas não poderiam ser representadas apenas com segmentos de reta? Por que usar flechas é importante neste contexto? 
 
 
+**NOTAÇÕES**
 
 Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais curta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `AG` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\overrightarrow{AG}| = 10~\text{km}`. 
@@ -288,6 +297,10 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    
 .. Palavras-chaves: composição de deslocamentos, deslocamento total, deslocamento resultante.
 
+
+**ATIVIDADE**
+
+
 (Jogo *Corrida de Vetores*: versão simplificada) Sente-se junto com um colega. Vocês receberão de seu professor duas cópias da :numref:`fig-geometria-cv-02` e uma cópia da :numref:`fig-geometria-cv-03`. A :numref:`fig-geometria-cv-02` é o tabuleiro do jogo que consiste em um "mapa" de uma cidade fictícia cujas ruas são as curvas em laranja claro e as esquinas são os pontos pretos. Existem dois carros representados pelos pontos azul e vermelho. 
 
 .. _fig-geometria-cv-02:
@@ -347,6 +360,9 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
    Texto da resposta.
 
 
+**JUSTAPOSIÇÃO DE VETORES DESLOCAMENTOS**
+
+
 Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\vec{h}` e `\vec{a}` definiram dois vetores deslocamentos: `\overrightarrow{AB}` e `\overrightarrow{BC}`. 
 
 .. HJB: é importante que os vetores desta figura sejam congruentes àqueles apresentados nas cartas do jogo.
@@ -365,7 +381,7 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
    :label: label_vector_composition
    
-**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? A resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas à operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos.
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? Uma resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas às da operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos. De fato, a conexão os dois contextos é tão forte que, mesmo que o `+` signifique justaposição quando usado com vetores deslocamentos, é uma prática comum falar e escrever `\overrightarrow{AB} + \overrightarrow{BC}` como a *soma* obtida pela *adição* dos vetores `\overightarrow{AB}` e `\overrightarrow{BC}`.
 
 
 .. _ativ-corrida-de-vetores-01:
@@ -394,6 +410,9 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
       :align: center
                   
       <https://www.geogebra.org/m/HnHZFwNW>.
+
+
+**ATIVIDADE**
 
 
 Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}|`.
@@ -431,6 +450,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
                           -a, & \text{se } a < 0.
                      \end{array}\right.
     
+**VETOR DESLOCAMENTO NULO E VETOR DESLOCAMENTO SIMÉTRICO**    
 
 Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da ativividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
 
@@ -441,6 +461,9 @@ Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desl
 .. admonition:: Pausa Para Reflexão
 
     Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
+
+
+**FLECHAS ESPECIFICANDO APENAS ORIENTAÇÃO E MÓDULO**    
 
 A :numref:`fig-geometria-cv-05` exibe o resultado de uma partida da *Corrida de Vetores* com ênfase nos vetores deslocamentos do carro azul. Note que, a partir da posição de largada `A`, o jogador escolheu a carta `\vec{a}` uma única vez, a carta `\vec{b}` duas vezes em seguida e a carta `\vec{g}` cinco vezes em seguida. Com essas cartas, o carro azul ocupou as posições `B`, `C`, …, `I` como indicadas na figura.  
 
