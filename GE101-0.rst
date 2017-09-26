@@ -360,7 +360,33 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
    Texto da resposta.
 
 
-**JUSTAPOSIÇÃO DE VETORES DESLOCAMENTOS**
+.. admonition:: Para o professor
+   
+   É importante observar que, no contexto de vetores deslocamentos, o vetor resultante `\vec{u} + \vec{v}` só está definido se os vetores `\vec{u}` e `\vec{v}` forem justapostos *nesta ordem*, isto é, se  a extremidade inicial de `\vec{v}` coincidir com a extremidade final de `\vec{u}`. Assim, por exemplo, não está definida a
+   resultante `\overrightarrow{AB} + \overrightarrow{CD}` dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{CD}` da figura. 
+   
+.. tikz:: 
+
+   \tikzset{>=latex}
+   \definecolor{qqqqff}{rgb}{0.,0.,1.}
+   \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+   \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+   \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+   \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+   \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+   \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+   \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+   \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+   \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+   \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
+    
+
+
+   
+
+
+
+**VETOR DESLOCAMENTO RESULTANTE DA JUSTAPOSIÇÃO DE VETORES DESLOCAMENTOS**
 
 
 Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\vec{h}` e `\vec{a}` definiram dois vetores deslocamentos: `\overrightarrow{AB}` e `\overrightarrow{BC}`. 
@@ -381,7 +407,7 @@ Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o
    \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
    :label: label_vector_composition
    
-**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? Uma resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas às da operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos. De fato, a conexão os dois contextos é tão forte que, mesmo que o `+` signifique justaposição quando usado com vetores deslocamentos, é uma prática comum falar e escrever `\overrightarrow{AB} + \overrightarrow{BC}` como a *soma* obtida pela *adição* dos vetores `\overightarrow{AB}` e `\overrightarrow{BC}`.
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? Uma resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas às da operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos. De fato, a conexão os dois contextos é tão forte que, mesmo que o `+` signifique justaposição quando usado com vetores deslocamentos, é uma prática comum falar e escrever `\overrightarrow{AB} + \overrightarrow{BC}` como a *soma* obtida pela *adição* dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`.
 
 
 .. _ativ-corrida-de-vetores-01:
