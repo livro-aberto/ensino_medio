@@ -337,14 +337,59 @@ Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` ent�
    
    #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -3 unidades altera a segunda coordenada do ponto em -3, portanto, temos `D =(3,4-3)=(3,1)`, `E=(7,1-3)=(7,0)` e `F=(6,-1-3)=(6,-4)`.
    
-      **FIGURA**
+      
+      .. tikz:: Composição de translações do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[fill=lightgray!30,xshift=4cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+         \draw[fill=lightgray!30,xshift=4cm,yshift=-3cm] (-1,4)coordinate(d)--(3,1)coordinate(e)--(2,-1)coordinate(f)--cycle;
+      
+         \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[left]{$A$};         
+         \fill (c) circle (0.05) node[below left]{$C$};
+         \fill (a') circle (0.05) node[below left]{$A'$};
+         \fill (b') circle (0.05) node[below left]{$B'$};
+         \fill (c') circle (0.05) node[below left]{$C'$};
+         \fill (d) circle (0.05) node[left]{$D=B$};
+         \fill (e) circle (0.05) node[below left]{$E$};
+         \fill (f) circle (0.05) node[below left]{$F$};
+         \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+         \fill (5,2)coordinate(p') circle (0.05) node[below left]{$P'$};
+         \fill (5,-1)coordinate(q) circle (0.05) node[below left]{$Q$};
+   
+         \draw[-latex,thick,red] (a')--(d);
+         \draw[-latex,thick,red] (b')--(e);
+         \draw[-latex,thick,red] (c')--(f);
+         \draw[-latex,thick,red] (p')--(q);
+
      
    #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-3) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
    #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -3, então `Q = P' + \vec{v} = (a+4,b-3)`.
    #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`, assim `Q = P' + \vec{v}`. Como `P'` é o resultado da translação de `P` por `\vec{u}`, temos `P'=P + \vec{u}`. Substituindo na expressão para `Q` obtemos `Q= (P+\vec{u}) + \vec{v}`.
    #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 3 \overrightarrow{OY} = (4,-3)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
    
-      **FIGURA**
+      .. tikz:: Composição de translações do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[fill=lightgray!30,xshift=4cm,yshift=-3cm] (-1,4)coordinate(d)--(3,1)coordinate(e)--(2,-1)coordinate(f)--cycle;
+      
+         \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[left]{$A$};         
+         \fill (c) circle (0.05) node[below left]{$C$};
+         \fill (d) circle (0.05) node[above right]{$D=B$};
+         \fill (e) circle (0.05) node[below left]{$E$};
+         \fill (f) circle (0.05) node[below left]{$F$};
+         \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+         \fill (5,-1)coordinate(q) circle (0.05) node[below left]{$Q$};
+   
+         \draw[-latex,thick,red] (a)--(d);
+         \draw[-latex,thick,red] (b)--(e);
+         \draw[-latex,thick,red] (c)--(f);
+         \draw[-latex,thick,red] (p)--(q);
       
 Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
@@ -466,6 +511,19 @@ Onde está o vértice D?
 .. admonition:: Exemplo 
 
    O quadrilátero `OABC` da figura é um paralelogramo. Sabendo que as coordenadas dos vértices são `O=(0,0)`, `A=(2,0)`, `B=(3,1)` e `C = (1,1)`, calcule as coordenadas do ponto `M` de encontro das diagonais do paralelogramo.
+   
+   .. tikz:: OB=2OM
+   
+      \draw[fill=lightgray] (0,0)coordinate(o)--(2,0)coordinate(a)--(3,1)coordinate(b)--(1,1)coordinate(c)--cycle;
+      \fill (a) circle (0.05) node[below]{$A$};
+      \fill (b) circle (0.05) node[right]{$B$};
+      \fill (c) circle (0.05) node[above]{$C$};
+      
+      \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+      \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+      \fill (0,0) circle (0.05) node[below left]{$O$};
+      
+      \draw[red,thick,-latex] (o)--(b);
    
    .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=soma-paralelogramo.jpg
       :width: 300px
