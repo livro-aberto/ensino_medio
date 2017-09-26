@@ -6,19 +6,81 @@ Veremos agora as principais propriedades das operações da adição de vetores 
 
 **Propriedades comentadas das operações com vetores**
 
-A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`: posiciona-se a origem de `\vec{v}` na extremidade de `\vec{u}`, 
+A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida para dois vetores e em :ref:`cap-vetores`: posiciona-se a origem de `\vec{v}` na extremidade final de `\vec{u}`, 
 
-**FIGURA:** Vetores separados e **FIGURA:** Vetores concatenados com o vetor soma representado.
+
+.. tikz:: Soma de dois vetores 
+
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (0,0) -- (2,2);
+   \draw[-latex, thick, blue] (1.5,0) -- (2.6,-1.5) node[right, black]{$\vec{v}$};
+   \node[above] at (1,1) {$\vec{u}$};
+   \node[above] at (2.05,-.75) {$\vec{v}$};
+   
+   
+   \begin{scope}[xshift=5cm]
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (0,0) -- (2,2);
+   \draw[-latex, thick, blue] (2,2) -- (3.1,.5);
+   \node[above] at (1,1) {$\vec{u}$};
+   \node[above] at (2.55,1.25) {$\vec{v}$};
+      
+   \begin{scope}[xshift=5cm]
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (0,0) -- (2,2);
+   \draw[-latex, thick, blue] (2,2) -- (3.1,.5);   
+   \draw[-latex,very thick, red] (0,0) -- (3.1,.5);
+   \node[above] at (1,1) {$\vec{u}$};
+   \node[above] at (2.55,1.25) {$\vec{v}$};
+   \node[below] at (1.55,.25) {$\vec{u}+\vec{v}$};
+   \end{scope}   
+   \end{scope}
 
 o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`, após esta reoganização.
 Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
 Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
 
-**FIGURA** sobre a igualdade acima
+.. tikz:: Comutatividade da soma de dois vetores
+   
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (1.1,-1.5) -- (3.1,.5);
+   \draw[-latex, thick, blue] (0,0) -- (1.1,-1.5);   
+   \draw[-latex,very thick, red] (0,0) -- (3.1,.5);
+   \node[below] at (2.1,-.5) {$\vec{u}$};
+   \node[below] at (.55,-.75) {$\vec{v}$};
+   \node[above] at (1.55,.25) {$\vec{v}+\vec{u}$};
 
 Outra pergunta capciosa é: *Seguindo o estabelecido na definição de adição de vetores, o que significa* `\vec{u} + \vec{v} + \vec{w}`? Isso nem faz sentido de início porque não houve instruções sobre a soma de três vetores, apenas de dois. Precisaríamos considerar a soma do vetor `\vec{u} + \vec{v}` com o vetor `\vec{w}`, isto é, `(\vec{u} + \vec{v}) + \vec{w}` ou a soma do vetor `\vec{u}` com o vetor `\vec{v} + \vec{w}`, o que significa `\vec{u} + (\vec{v} + \vec{w})`. Os resultados das somas são iguais? Se forem, então poderemos escrever `\vec{u} + \vec{v} + \vec{w}` sem o risco de sermos mal entendidos.
 
-**FIGURA** sobre a igualdade acima
+.. tikz:: Associatividade da adição de vetores
+
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (0,0) -- (2,2);
+   \draw[-latex, thick, blue] (2,2) -- (3.1,.5);
+   \draw[-latex, thick, blue] (3.1,.5) -- (2,-1.2);
+   \draw[-latex, very thick, orange] (0,0) -- (3.1,.5);
+   \draw[-latex, ultra thick, red] (0,0) -- (2,-1.2);
+   
+   \node[above] at (1,1) {$\vec{u}$};
+   \node[above] at (2.55,1.25) {$\vec{v}$};
+   \node[right] at (2.55,-.35) {$\vec{w}$};
+   \node[above] at (1.55,.25) {$\vec{u}+ \vec{v}$};
+   \node at (1,-.6) {$(\vec{u}+ \vec{v})+\vec{w}$};
+   
+   \begin{scope}[xshift=5cm]
+   \draw (-.5,-2) rectangle (3.5,2.5);
+   \draw[-latex, thick, blue] (0,0) -- (2,2);
+   \draw[-latex, thick, blue] (2,2) -- (3.1,.5);
+   \draw[-latex, thick, blue] (3.1,.5) -- (2,-1.2);
+   \draw[-latex, very thick, orange] (2,2)--(2,-1.2);
+   \draw[-latex, ultra thick, red] (0,0) -- (2,-1.2);
+   
+   \node[above] at (1,1) {$\vec{u}$};
+   \node[above] at (2.55,1.25) {$\vec{v}$};
+   \node[right] at (2.55,-.35) {$\vec{w}$};
+   \node at (2,.4) {$\vec{v}+ \vec{w}$};
+   \node at (1,-.6) {$\vec{u}+ (\vec{v}+\vec{w})$};
+   \end{scope}
 
 Estas e outras questões nos forçam a listar as propriedades a seguir.
 Não justificaremos todas elas porque seria cansativo e não muito enriquecedor.
@@ -68,13 +130,20 @@ Uma maneira de expressar o Princípio da Inércia de modo a evitar confusões, c
    Força resultante 
       A força resultante sobre uma partícula é a soma vetorial de todas as forças que atuam sobre ela.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=resultante.jpg
-   :width: 200px
-   :align: center
+      .. tikz::    `\vec{F_R} = \vec{F_1} + \vec{F_2} + \vec{F_3}`
+      
+         \fill (0,0) circle (.1);
+         \draw[-latex,thick, blue] (0,0)--(1,1);
+         \draw[-latex,thick, blue] (0,0)-- (-2,2);
+         \draw[-latex,thick, blue] (0,0)-- (.3,-2);
+         \draw[-latex,very thick, red] (0,0)-- (-1.3,1);
+         
+         \node[left] at (-2,2) {$\vec{F_1}$};
+         \node[right] at (1,1) {$\vec{F_2}$};
+         \node[right] at (.3,-2) {$\vec{F_3}$};
+         \node[left] at (-1.3,1) {$\vec{F_R}$};
 
-   `\vec{F_R} = \vec{F_1} + \vec{F_2} + \vec{F_3}`
-
-Lembre-se que a força resultante não é uma nova força que atua sobre o corpo, mas apenas uma força cujo efeito no corpo seria o mesmo que o de todas as outras forças juntas.
+Observações: a força resultante **não é uma nova força que atua sobre o corpo**, mas apenas uma força cujo efeito no corpo seria o mesmo que o de todas as outras forças juntas. Além disso, você deve tomar o cuidado de sempre **posicionar as forças a partir da bolinha** usada para representar o corpo e nunca apontando para ela. Esta é uma convenção que ajuda a evitar erros ao se somar vetores.
 
 A Primeira Lei de Newton com esta linguagem fica:
 
@@ -93,7 +162,96 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
       :align: center
 
       Força resultante **diferente de zero** na bola da esquerda e força resultante **igual à zero** na bola da direita.
+
+
+.. _ativ-vetores-barcos-rio:
+
+Atividade: puxando o barco (modificado de PUC/SP)
+-------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:** 
+
+   #. representar esquema de forças a partir de uma situação real.
+   #. expressar a resultante de duas forças geometricamente.
+   #. reconhecer que a força resultante é maior quanto menor for o ângulo entre as forças.
    
+   **Recomendações e sugestões:** Esteja atento ao esquema utilizado pelos estudantes para representar as forças e sua resultante. É um erro comum fechar o triângulo para se obter a resultante ao invés de formar um paralelogramo, como é típico no uso de forças. Espera-se que no item c) os estudantes calculem a força em resultante em cada uma das situações para argumentarem, se eles não fizerem isso você pode incrementar a questão perguntando diretamente: *"Digamos que nos dois esquemas as forças realizadas pelos homens tenham módulos iguais a F. Qual é o valor da força resultante em cada um dos casos? Expresse sua resposta em termos de F.*
+
+Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens. Em (a), são usadas cordas que transmitem ao barco forças paralelas. Em (b), são usadas cordas inclinadas de `90^{\circ}`. Supondo que os homens fazem forças de intensidades iguais. Faça o que se pede.
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barcos.png
+   :width: 300px
+   :align: center
+   
+   Imagem da PUC/SP
+
+#. Represente o barco como uma partícula e as forças atuando nela em cada um dos esquemas.
+#. Represente a força resultante em cada um dos esquemas.
+#. Em qual dos esquemas o mesmo resultado será obtido com menor esforço dos homens. Por quê?
+
+.. admonition:: Resposta 
+
+   #. 
+   
+      .. tikz:: 
+      
+         \fill (0,0) circle (.12);
+         \draw[-latex,thick, blue,xshift=-.05cm,yshift=-.05cm] (0,0)--(-30:1);
+         \draw[-latex,thick, blue,xshift=.05cm,yshift=.05cm] (0,0)-- (-30:1);
+                  
+         \node[above] at (-30:1) {$\vec{F_1}$};
+         \node[below] at (-30:1) {$\vec{F_2}$};
+         \node at (-1.5,0) {(a)};   
+         
+         \begin{scope}[xshift=5cm]
+         \fill (0,0) circle (.12);
+         \draw[-latex,thick, blue] (0,0)--(0:1);
+         \draw[-latex,thick, blue] (0,0)-- (270:1);
+         \draw (0,0) rectangle (.2,-.2);
+                  
+         \node[above] at (0:1) {$\vec{F_1}$};
+         \node[below] at (270:1) {$\vec{F_2}$};
+         \node at (-1.5,0) {(b)};   
+         \end{scope}
+         
+   #. 
+   
+      .. tikz:: 
+      
+         \fill (0,0) circle (.12);
+         \draw[-latex,thick, blue,xshift=-.05cm,yshift=-.05cm] (0,0)--(-30:1);
+         \draw[-latex,thick, blue,xshift=.05cm,yshift=.05cm] (0,0)-- (-30:1);
+         \draw[-latex,very thick, red] (0,0)-- (-30:2);
+                  
+         \node[above] at (-30:1) {$\vec{F_1}$};
+         \node[below] at (-30:1) {$\vec{F_2}$};
+         \node[below right] at (-30:2) {$\vec{F_R} = \vec{F_1} + \vec{F_2}$};
+         \node at (-1.5,0) {(a)};   
+         
+         \begin{scope}[xshift=7cm]
+         \fill (0,0) circle (.12);
+         \draw[-latex,thick, blue] (0,0)--(0:1);
+         \draw[-latex,thick, blue] (0,0)-- (270:1);
+         \draw[-latex,very thick, red] (0,0)-- (-45:1.414);
+         %\draw (0,0) rectangle (.2,-.2);
+                  
+         \node[above] at (0:1) {$\vec{F_1}$};
+         \node[below] at (270:1) {$\vec{F_2}$};
+         \node[below right] at (-45:1.414) {$\vec{F_R} = \vec{F_1} + \vec{F_2}$};
+         \node at (-1.5,0) {(b)};   
+         \end{scope}
+         
+         
+   #. Com a mesma intensidade de força `|\vec{F}|`, na situação (a), obtemos resultante `2\vec{F}` na direção e sentido do movimento enquanto que na situação (b) obtemos `\sqrt{2}\vec{F}`. Como `2 > \sqrt{2}`, o esforço é mais bem aproveitado em (a).
+
+.. admonition:: Pausa para reflexão
+
+   Observe que na atividade anterior temos forças com intensidades (módulos) iguais a `F`, mas a soma das forças não tem intensidade `2F`.
+   Por que isso acontece?
+
+
 .. _ativ-vetores-forca
 
 Atividade: grampos de escalada
@@ -108,7 +266,7 @@ Atividade: grampos de escalada
    #. atribuir a permanência de um objeto numa mesma posição ao cancelamento das forças agindo nele.
    
    **Recomendações e sugestões:**
-   Oriente os estudantes a fazer uma bolinha representando o nó e, então desenhar os vetores indicando força sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela. Na análise, recomenda-se promover uma discussão entre os estudantes. Para a solução do exercício pode-se desprezar o peso dos equipamentos.
+   Oriente os estudantes a fazer uma bolinha representando o nó e, então desenhar os vetores indicando força sobre ela. Fique atento que alguns estudantes devem representar as forças apontando para a bolinha e não a partir dela. Na análise, recomenda-se promover uma discussão entre os estudantes. Para a solução do exercício pode-se desprezar o peso dos equipamentos. No item a), não é esperado que os estudantes levem em consideração as intensidades das forças que estão acima do nó. Mas este é o questionamento interessante da questão que será discutido no item c).
 
 
 O equipamento da foto abaixo é utilizado para segurança de escaladores. Duas fitas de tecido com *mosquetões* na ponta são presas em dois grampos presos na pedra. Um nó é dado nas fitas e outro mosquetão é colocado na ponta. Este último vai prender o escalador. Usa-se dois grampos para reduzir o risco de acidentes.
@@ -170,13 +328,47 @@ Imagine um escalador que descansa pendurado no equipamento da figura sem contato
 
 .. admonition:: Resposta 
 
-   #. **FIGURA**
+   #. 
+   
+      .. tikz::
+
+         \node at (-1.5,-.3) {(I)};
+         \fill (0,0) circle (.08);      
+         \node[above] at (160:1.462) {$\vec{F_1}$};
+         \node[above] at (20:1.462) {$\vec{F_2}$};
+         \node[below] at (270:1) {$\vec{P}$};
+         \draw[-latex,very thick, blue] (0,0) -- (160:1.462);
+         \draw[-latex,very thick, blue] (0,0) -- (20:1.462);
+         \draw[-latex,very thick, blue] (0,0) -- (270:1);
+      
+      
+         \begin{scope}[xshift=5cm]
+         \node at (-1.5,-.3) {(I)};
+         \fill (0,0) circle (.08);      
+         \node[above] at (160:.707) {$\vec{F_1}$};
+         \node[above] at (20:.707) {$\vec{F_2}$};
+         \node[below] at (270:1) {$\vec{P}$};
+         \draw[-latex,very thick, blue] (0,0) -- (135:.707);
+         \draw[-latex,very thick, blue] (0,0) -- (45:.707);
+         \draw[-latex,very thick, blue] (0,0) -- (270:1);
+      
+      
+         \begin{scope}[xshift=5cm]
+         \node at (-1.5,-.3) {(III)};         
+         \fill (0,0) circle (.08);      
+         \node[above] at (160:.577) {$\vec{F_1}$};
+         \node[above] at (20:.577) {$\vec{F_2}$};
+         \node[below] at (270:1) {$\vec{P}$};
+         \draw[-latex,very thick, blue] (0,0) -- (120:.577);
+         \draw[-latex,very thick, blue] (0,0) -- (60:.577);
+         \draw[-latex,very thick, blue] (0,0) -- (270:1);
+         \end{scope}
+         \end{scope}
+      
+         
    #. Como o escalador está parado, a força resultante é zero pela Primeira Lei de Newton.
    #. A tensão na fita abaixo do nó é sempre constante igual ao peso do escalador, digamos `\vec{P}`. Como a força resultante é zero, a soma das componentes verticais acima do nó é constante igual a `-\vec{P}`. Assim quanto mais distantes estiverem os grampos, maior será a componente horizontal da tensão nas fitas, logo maior será a tensão nas fitas acima do nó.
    
-   **Figuras** incluir decomposição horizontal e vertical das forças.
-
-
 .. _ativ-vetores-plano-inclinado:
 
 Atividade: Plano inclinado
@@ -198,11 +390,20 @@ Atividade: Plano inclinado
    
 A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoiado sobre ele. Um sistema de coordenadas foi escolhido com origem no centro `O` do bloco. A força peso está representada a partir de `O`. Suponha que este bloco permanece parado.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=plano-inclinado.jpg
-   :width: 400px
-   :align: center
+.. tikz:: Forças sobre um bloco em repouso sobre um plano inclinado
 
-   Forças sobre um bloco em repouso sobre um plano inclinado
+   \begin{scope}[rotate=-45]
+   \draw[fill=lightgray!30] (-1,-.5)--(1,-.5)--(1,.5)--(-1,.5)--cycle;
+   \draw[ultra thick] (-2,-.5) -- (4.5,-.5)--(0,-5);
+      
+   \node at (3.8,-.9) {$45^{\circ}$};
+   \fill (0,0) circle (.1) node[left]{$O$};
+   
+   \draw[-latex] (-2,0)coordinate(xm)--(4,0) node[above]{$x$};
+   \draw[-latex] (0,-3)--(0,3) node[above]{$y$};
+   \draw[-latex, very thick, red] (0,0) -- (-45:2) node[below, black]{$\vec{P}$};
+   
+   \end{scope}
 
 #. Qual é a resultante das forças que atuam sobre o bloco?
 #. Reproduza a figura em seu caderno e represente uma decomposição de `\vec{P}` como `\vec{P } = \vec{P_x} + \vec{P_y}` com `\vec{P_x}` e `\vec{P_y}` com origem em `O` e ambos paralelos aos respectivos eixos coordenados.
@@ -213,54 +414,44 @@ A figura esboça um plano inclinado com ângulo de `45^{\circ}` e um bloco apoia
 
 .. admonition:: Resposta 
 
-   #. Como o bloco não se move a, a resultante das forças que agem sobre ele é zero pela Primeira Lei de Newton.
-   #. **FIGURA**
+   #. Como o bloco não se move, a resultante das forças que agem sobre ele é zero pela Primeira Lei de Newton.
+   #. .. tikz:: 
+
+         \begin{scope}[rotate=-45]
+         \draw[fill=lightgray!30] (-1,-.5)--(1,-.5)--(1,.5)--(-1,.5)--cycle;
+         \draw[ultra thick] (-2,-.5) -- (4.5,-.5)--(0,-5);
+      
+         \node at (3.8,-.9) {$45^{\circ}$};
+         \fill (0,0) circle (.1) node[left]{$O$};
+   
+         \draw[-latex] (-2,0)coordinate(xm)--(4,0) node[above]{$x$};
+         \draw[-latex] (0,-3)--(0,2) node[above]{$y$};
+         \draw[-latex, very thick, red] (0,0) -- (-45:2) node[below, black]{$\vec{P}$};
+         \draw[-latex, thick, blue] (0,0) -- (0,-{2/1.414}) node[below, black]{$\vec{P_y}$};
+         \draw[-latex, thick, blue] (0,0) -- ({2/1.414},0) node[below, black]{$\vec{P_x}$};
+         
+         \draw[dashed] (0,-{2/1.414})--(-45:2);
+         \draw[dashed] ({2/1.414},0)--(-45:2);
+         \end{scope}      
    #. Como `\vec{P}` tem direção vertical e `\vec{P_x}` é paralelo à rampa, o ângulo entre `\vec{P}` e `\vec{P_x}` é `45^{\circ}`.
    
-      **FIGURA**	
+      .. tikz:: 
+
+         \begin{scope}[rotate=-45]
+         
+         \fill (0,0) circle (.1) node[left]{$O$};   
+         \draw[-latex, very thick, red] (0,0) -- (-45:2) node[below, black]{$\vec{P}$};
+         \draw[-latex, thick, blue] (0,0) -- (0,-{2/1.414}) node[below, black]{$\vec{P_y}$};
+         \draw[-latex, thick, blue] (0,0) -- ({2/1.414},0) node[below, black]{$\vec{P_x}$};
+         
+         \draw[dashed] (0,-{2/1.414})--(-45:2);
+         \draw[dashed] ({2/1.414},0)--(-45:2);
+         \end{scope}
       
       Assim `|\vec{P}|` é a diagonal de um quadrado de lados `|\vec{P_x}| = |\vec{P_y}|`. Portanto, se `|\vec{P}| = 10N`, então `|\vec{P_x}|^2 + |\vec{P_y}|^2 = |\vec{P}|^2` pelo Teorema de Pitágoras, logo `|\vec{P_x}| = |\vec{P_y}| = 5\sqrt{2}`.
    #. Conforme informado no texto, a força normal é sempre perpendicular à superfície de contato. Como não há movimento na direção do eixo `y`, a resultante nesta direção deve ser zero, portanto, `|\vec{N}|=|\vec{P_y}|=5\sqrt{2}`.
    #. Como a força resultante é zero, existe uma força de resistência igual a `-\vec{P_x}`. Sem ela, o bloco estaria se movendo de acordo com o Princípio da Inércia.
 
-
-.. _ativ-vetores-barcos-rio:
-
-Atividade: puxando o barco (modificado de PUC/SP)
--------------------------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos:** 
-
-   #. representar esquema de forças a partir de uma situação real.
-   #. expressar a resultante de duas forças geometricamente.
-   #. reconhecer que a força resultante é maior quanto menor for o ângulo entre as forças.
-   
-   **Recomendações e sugestões:** Esteja atento ao esquema utilizado pelos estudantes para representar as forças e sua resultante. É um erro comum fechar o triângulo para se obter a resultante ao invés de formar um paralelogramo, como é típico no uso de forças. Espera-se que no item c) os estudantes calculem a força em resultante em cada uma das situações para argumentarem, se eles não fizerem isso você pode incrementar a questão perguntando diretamente: *"Digamos que nos dois esquemas as forças realizadas pelos homens tenham módulos iguais a F. Qual é o valor da força resultante em cada um dos casos? Expresse sua resposta em termos de F.*
-
-Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens. Em (a), são usadas cordas que transmitem ao barco forças paralelas. Em (b), são usadas cordas inclinadas de `90^{\circ}`. Supondo que os homens fazem forças de intensidades iguais. Faça o que se pede.
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barcos.png
-   :width: 300px
-   :align: center
-   
-   Imagem da PUC/SP
-
-#. Represente o barco como uma partícula e as forças atuando nela em cada um dos esquemas.
-#. Represente a força resultante em cada um dos esquemas.
-#. Em qual dos esquemas o mesmo resultado será obtido com menor esforço dos homens. Por quê?
-
-.. admonition:: Resposta 
-
-   #. **FIGURA**   
-   #. **FIGURA**
-   #. Com a mesma intensidade de força `|\vec{F}|`, na situação (a), obtemos resultante `2\vec{F}` na direção e sentido do movimento enquanto que na situação (b) obtemos `\sqrt{2}\vec{F}`. Como `2 > \sqrt{2}`, o esforço é mais bem aproveitado em (a).
-
-.. admonition:: Pausa para reflexão
-
-   Observe que na atividade anterior temos forças com intensidades (módulos) iguais a `F`, mas a soma das forças não tem intensidade `2F`.
-   Por que isso acontece?
 
 
 Termos a serem definidos neste capítulo e devem ir para o glossário:

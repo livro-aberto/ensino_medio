@@ -514,22 +514,18 @@ Onde está o vértice D?
    
    .. tikz:: OB=2OM
    
-      \draw[fill=lightgray] (0,0)coordinate(o)--(2,0)coordinate(a)--(3,1)coordinate(b)--(1,1)coordinate(c)--cycle;
+      \draw[fill=lightgray!30] (0,0)coordinate(o)--(2,0)coordinate(a)--(3,1)coordinate(b)--(1,1)coordinate(c)--cycle;
       \fill (a) circle (0.05) node[below]{$A$};
       \fill (b) circle (0.05) node[right]{$B$};
       \fill (c) circle (0.05) node[above]{$C$};
+      \fill (1.5,.5) circle (0.05) node[above]{$M$};
       
-      \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
-      \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+      \draw[-latex] (-1,0) -- (3.5,0) node[below right]{$x$};
+      \draw[-latex] (0,-1) -- (0,2.5) node[left]{$y$};
       \fill (0,0) circle (0.05) node[below left]{$O$};
       
-      \draw[red,thick,-latex] (o)--(b);
-   
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=soma-paralelogramo.jpg
-      :width: 300px
-      :align: center
-
-      `\overrightarrow{OB} = 2\overrightarrow{OM}`
-
+      \draw (o)--(b);
+      \draw (a)--(c);
+     
    *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `\overrightarrow{OM}=\frac{1}{2}\overrightarrow{OB}=\frac{1}{2}(3,1)=(\frac{3}{2}, \frac{1}{2})`. Assim,  `M=(\frac{3}{2}, \frac{1}{2})`.
 
