@@ -28,7 +28,7 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
       
  A relevância do raciocíno estatístico e conhecimento para o efetivo funcionamento na sociedade da informação levou à introdução do termo **Letramento Estatístico**: "A capacidade de compreender e avaliar criticamente resultados estatísticos que permeiam a vida diária,  acompanhada da capacidade de apreciar como o pensamento estatístico pode contribuir em decisões públicas e privadas, profissionais e pessoais." (Batanero, Borovcnik, 2016)
  
- De acordo com (De Veaux et al, 2008), o desafio para o estudante (e o professor) de estatística introdutória é que, como na literatura e na arte, navegar por e dar sentido a exige não somente um conjunto de regras e axiomas, mas experiência de vida e "senso comum". São várias habilidades a serem trabalhadas e a maior parte delas exige capacidade de avaliação crítica em adição à manipulação matemática. A capacidade de avaliação crítica é adquirida com exemplos e experiência e isso demanda mais tempo.
+ De acordo com (De Veaux et al, 2008), o desafio para o estudante (e o professor) de Estatística introdutória é que, como na literatura e na arte, navegar por e dar sentido a exige não somente um conjunto de regras e axiomas, mas experiência de vida e "senso comum". São várias habilidades a serem trabalhadas e a maior parte delas exige capacidade de avaliação crítica em adição à manipulação matemática. A capacidade de avaliação crítica é adquirida com exemplos e experiência e isso demanda mais tempo.
     
   
 .. Figura 1:
@@ -66,7 +66,7 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
   
  As atividades propostas nesse capítulo envolvem o uso da Estatística em diferentes situações motivando o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuição e caracterizações da distribuição (posição e dispersão). Essas atividades não têm como objetivo o cálculo das medidas, mas a sua compreensão estrutural. Nesse capítulo serão apresentadas algumas atividades envolvendo a realização de pesquisas e coleta de dados.
  
- Ao final do capítulo será sugerida a realização de um projeto que deverá ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. Também será recomendado que essa atividade seja preferencialmente trabalhada no primeiro ou segundo ano do Ensino Médio, pois no último ano há maior limitação de tempo em razão dos vários exames a serem realizados pelos estudantes nesse ano.  
+ Ao final do capítulo será sugerida a realização de um projeto que deverá ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. Também será recomendado que essa atividade seja preferencialmente trabalhada no primeiro ou segundo ano do Ensino Médio, pois no último ano há maior limitação de tempo em razão dos vários exames a serem realizados pelos estudantes.  
  
  
 .. admonition:: Diferencial do Capítulo 
@@ -135,7 +135,7 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
  **Explorando -2 .** 
  
  #. Atividade: **Condução de uma coleta de dados sobre a turma** envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
- #. Atividade: **Realização de pesquisa** o foco nessa atividade será pedir aos estudantes que busquem informações já disponíveis sobre o tamanho da população da sua cidade ou estado e outras informações como número de escolas de ensino fundamental ou médio na cidade ou estado  ou informações sobre hospitais, número de leitos, número de  salas de cinema, meios de transporte e, a partir do cruzamento dessas informações gerar informações. (Os links para a obtenção de dados serão informados.)
+ #. Atividade: **Realização de pesquisa** o foco nessa atividade será pedir aos estudantes que busquem dados já disponíveis sobre o tamanho da população da sua cidade ou estado e outros dados como número de escolas de ensino fundamental ou médio na cidade ou estado  ou dados sobre hospitais, número de leitos, número de  salas de cinema, meios de transporte e, a partir do cruzamento desses dados gerar informações. (Os links para a obtenção de dados serão informados.)
  
  #. Atividade: **Análise de variável quantitativa contínua** levando à necessidade da construção de intervalos de classe e à construção do histograma. Nessa atividade também será trabalhada uma variável quantitativa que varia no tempo para a definição e construção do gráfico de linha. 
   
@@ -147,9 +147,9 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
  
  Atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos. Incluir atividade envolvendo cartogramas. Inclusão de atividades do ENEM e vestibulares.
  
- **Explorando -3 .** 
+ **Explorando -3 .** Projeto a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. 
  
- #. Atividade: **Realização de pesquisa** obtendo dados que serão trabalhados na atividade. Sugestão de tema para a pesquisa: Avaliação de  como as pessoas fazem uso da internet no seu dia a dia. Nessa atividade será necessário definir a população alvo, decidir sobre a seleção da amostra e construir um instrumento de coleta.
+ #. Atividade: **Realização de projeto** 
  
 .. admonition:: Aprofundamentos
 
