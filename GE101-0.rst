@@ -492,11 +492,11 @@ Organizando as ideias
    * compreender e realizar operações com vetores, sendo elas: soma de vetores e multiplicação de vetor por um número real.   
 
 
-Até aqui associamos vetor ao deslocamento de um objeto e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento foi feita por uma flecha na última seção, sendo as extremidades inicial e final da flecha as posições inicial e final da trajetória. 
+Até aqui associamos vetor ao deslocamento de um objeto e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento foi feita por uma flecha, sendo as extremidades inicial e final da flecha as posições inicial e final da trajetória. 
 
-A partir de agora, estudaremos a geometria das flechas de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento) como na última seção. Dessa forma, as flechas serão apenas representações gráficas de segmentos orientados com módulo, direção e sentido, que possuem uma entremidade inicial e uma final.
+A partir de agora, estudaremos a geometria das flechas de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira breve quando jogamos o jogo Corrida de Vetores. Neste jogo, as flechas das cartas foram utilizadas para estabelecer a orientação e a distância a ser percorrida, sendo a extremidade inicial das flechas das cartas menos relevante. Pensando dessa forma, flechas são apenas representações gráficas de segmentos de reta orientados com módulo, direção e sentido.
   
-Para começar este novo estudo, vamos relembrar que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois estamos interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
+Para começar esta nova etapa do nosso estudo, vamos relembrar que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta, desenhado na cor laranja, que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da cor laranja é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois estamos interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`. 
 
 .. _fig-geometria-operacoesvetores-01:
 
@@ -515,13 +515,13 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
    :align: center
 
    Segmento de reta orientados de `A` para `B` e de `B` para `A`.   
-Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o :index:`segmento orientado` por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Note pelas notações destes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
+Na figura superior, a orientação escolhida foi de `A` para `B` e por isso representaremos o :index:`segmento orientado` por `AB`. Já na figura inferior, temos um segmento de reta orientado de `B` para `A`, que, então, será denotado por `BA`. Repare pelas notações adotadas para estes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento. 
 
 .. admonition:: Cuidado! 
 
    Usaremos a mesma notação para segmento de reta e segmento de reta orientado, ou seja, as duas letras que caracterizam seus extremos. Para que não haja confusão, é preciso sempre fazer menção se o segmento é orientado ou não ao se trabalhar com este elemento geométrico.
 
-Como dissemos antes, a partir daqui as flechas serão representações de segmentos orientados que possuem os seguintes atributos: módulo, direção e sentido. A extremidade inicial da flecha coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da flecha coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado à uma flecha e uma flecha a um segmento de reta orientado. 
+Como dissemos antes, a partir daqui as flechas serão representações de segmentos orientados que possuem os seguintes atributos: módulo, direção e sentido. A extremidade inicial da flecha coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da flecha coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado à uma flecha e uma flecha a um segmento de reta orientado. Usaremos os dois termos (flechas e segmentos orientados) no restante dessa seção significando a mesma coisa.
 
 O *módulo da flecha* é o comprimento do segmento de reta que a define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e sentido da flecha* estão ligados à orientação do segmento. Em Matemática, dois segmentos possuem a mesma direção se eles forem colineares ou paralelos. O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
 
@@ -533,29 +533,41 @@ O *módulo da flecha* é o comprimento do segmento de reta que a define, ou seja
 
    Flechas com mesmo módulo, direção e sentido. 
    
-Na :numref:`fig-geometria-operacoesvetores-03`, embora as flechas tenham sido desenhadas em lugares diferentes, todas elas possuem os mesmo atributos: módulo, direção e sentido. A uma coleção de flechas com os mesmos atributos, daremos o nome de vetor. Veja a próxima definição. 
+Na :numref:`fig-geometria-operacoesvetores-03`, embora as flechas tenham sido desenhadas em lugares diferentes, todas elas possuem os mesmo atributos: módulo, direção e sentido. A uma coleção de flechas com os mesmos atributos, daremos o nome de *vetor*. Veja a próxima definição. 
 
 .. admonition:: Definição 
 	   
-   :index:`Vetor` é uma coleção de segmentos orientados (flechas) que possuem o mesmo módulo, direção e sentido.
+   :index:`Vetor` é uma coleção de segmentos orientados que possuem o mesmo módulo, direção e sentido.
    
-Pela definição acima, um vetor fica determinado por uma infinidade de segmentos orientados com mesmo módulo, direção e sentido, chamados *representantes do vetor*. Os atributos de um vetor são os mesmos de seus representantes: módulo, direção e sentido. E diremos que as extremidades inicial e final de um representante do vetor também são as extremidades inicial e final do vetor.
+Pela definição acima, um vetor fica determinado por uma infinidade de segmentos orientados com mesmo módulo, direção e sentido, que serão chamados *representantes do vetor*. Os atributos de um vetor são os mesmos de seus representantes: módulo, direção e sentido. E, como seus representantes são segmentos orientados, eles possuem extremidade inicial e final.
 
-Repare que qualquer segmento de reta orientado determina uma coleção que é um vetor e qualquer outro segmento desta coleção representa o mesmo vetor. A qualquer representante de uma mesma coleção também daremos o nome de vetor, ou seja, vetor é toda a coleção ou então um representante da coleção, dependendo do contexto.   
+Repare que qualquer segmento de reta orientado determina uma coleção de segmentos que é um vetor e qualquer outro segmento desta coleção representa o mesmo vetor. A qualquer representante de uma mesma coleção também daremos o nome de vetor, ou seja, vetor é toda a coleção ou então um representante da coleção, dependendo do contexto.   
 
-Podemos representar um vetor de duas formas diferentes. A primeira delas é com uma letra minúscula e uma flecha, por exemplo `\vec{v}`. E, a outra é usando as duas letras que caracterizam as extremidades inicial e final de um dos segmentos de reta orientado que representa o vetor, por exemplo `\overrightarrow{AB}`. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `AB` é um representante do vetor `\vec{v}`. 
+Podemos representar um vetor de duas formas diferentes. A primeira delas é com uma letra minúscula e uma flecha, por exemplo `\vec{v}`. E, a outra é usando as duas letras que caracterizam as extremidades inicial e final de um de seus representantes, por exemplo `\overrightarrow{AB}`. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `AB` é um representante do vetor `\vec{v}`. Neste contexto, também podemos dizer que `A` é a extremidade inicial e `B` a extremidade final do vetor. 
 
 Para indicar o módulo do vetor `\vec{v}` usaremos a notação `|\vec{v}|`. 
 
-Em vista do que estudamos acima, para comparar dois vetores é necessário comparar o módulo, direção e sentido de seus representantes. Portanto:
+Em vista do que estudamos acima, para comparar dois vetores é necessário comparar apenas o módulo, direção e sentido de seus representantes. Portanto:
 
 .. admonition:: Definição 
 
    Dizemos que dois vetores são iguais se os representantes de suas coleções possuem o mesmo módulo, direção e sentido. 
    
+Na :numref:`fig-geometria-operacoesvetores-03.1`, os vetores `\vec{u}` e `\vec{v}` são iguais, pois possuem o mesmo módulo, direção (estão sobre retas paralelas `r` e `s`) e sentido.   
+   
+.. _fig-geometria-operacoesvetores-03.1:
+
+.. figure:: _resources/DoisVetoresIguais.png
+   :width: 300px
+   :align: center
+
+   `\vec{u}` e `\vec{v}` são vetores iguais. 
+    
+Vale a pena ressaltar que se ao comparar dois vetores, pelo menos um dos seus atributos forem diferentes, então diremos que os vetores são diferentes. Não é necessário que todos os atributos dos vetores sejam diferentes para que eles sejam diferentes.   
+   
 .. admonition:: Diferente terminologia em alguns livros
 
-   Alguns autores definem segmentos equipolentes como sendo segmentos orientados que possuem o mesmo módulo, direção e sentido. Usando essa terminologia, é possível definir vetores de maneira análoga a definição dada anteriormente.
+   Alguns autores definem segmentos equipolentes como sendo segmentos orientados que possuem o mesmo módulo, direção e sentido. Usando essa terminologia, é possível definir vetores de maneira análoga a definição dada anteriormente.   
    
 .. admonition:: Pausa para reflexão 
 
