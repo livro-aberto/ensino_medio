@@ -29,7 +29,9 @@ Atividade: corrida de vetores
    #. Usar vetores de modo apropriado para representar situações físicas que envolvem velocidade e aceleração.
    
    **Recomendações e sugestões:**
-   Caso os estudantes tenham smartphones, recomendamos que os encorage a jogar um pouco a corrida de vetores neste aplicativo disponível para `Android <https://play.google.com/store/apps/details?id=zielanski.com.vectorrace&hl=pt>`_. Se dispuser de computador com internet e projetor de multimídia, sugerimos que mostre para seus estudantes o jogo `Corrida de Vetores <http://www.harmmade.com/vectorracer/#interlagos>`_. Neste jogo pode-se introduzir a linguagem de vetores, de inércia, deslocamento, velocidade e aceleração, sempre do ponto de vista vetoria.
+   Caso os estudantes tenham smartphones, recomendamos que os encorage a jogar um pouco a corrida de vetores neste aplicativo disponível para `Android <https://play.google.com/store/apps/details?id=zielanski.com.vectorrace&hl=pt>`_. Se dispuser de computador com internet e projetor de multimídia, sugerimos que mostre para seus estudantes o jogo `Corrida de Vetores <http://www.harmmade.com/vectorracer/#interlagos>`_. Neste jogo pode-se introduzir a linguagem de vetores, de inércia, deslocamento, velocidade e aceleração, sempre do ponto de vista vetoria. No artigo [de-Oliveira-2009]_ de uma única página, você encontra uma apresentação deste jogo de mais de 50 anos. Este é um `link para o artigo <http://www.sbfisica.org.br/fne/Vol10/Num1/a08.pdf>`_.
+   
+   .. [de-Oliveira-2009] de Oliveira, PMC: Corrida de Vetores: vacina contra o raciocínio aristotélico, Física na Escola V. 10, nº 1.
 
 Imagine que as figuras abaixo representam o movimento de um carro numa corrida. A trajetória exata não é conhecida, mas a cada 1 segundo foi marcado um ponto, representando a posição do carro. Nas figuras a seguir, os pontos sucessivos foram ligados por segmentos de reta. Faça o que é pedido nos itens abaixo:
 
@@ -54,24 +56,3 @@ Copie os trechos de 0 a 6 segundos e de 18 a 21 segundos em seu caderno e:
    #. **FIGURA**
    #. **FIGURA**
    
-
-Provavelmente não será mais usado
----------------------------------
-
-As regras aqui são as mesmas que na :ref:`corrida`, exceto as regras para os movimentos.
-
-**Primeiro deslocamento:** em seu primeiro movimento, cada jogador pode se mover para qualquer dos oito vértices adjacentes da malha (veja a :numref:`fig-largada-da-corrida`).
-
-**FIGURA**	
-
-**Demais deslocamentos:** cada deslocamento deve ser igual ao anterior do mesmo jogador ou diferir, no máximo, em uma unidade no eixo `x` ou uma unidade no eixo `y`, podendo ser nos dois eixos (veja a figura). Assim, se um deslocamento é dado por `(2,3)`, então o próximo deve ser 
-
-.. math:: 
-
-   (1,4), & (2,4), & (3,4), \\
-   (1,3), & {\large (2,3)}, & (3,3), \\
-   (1,2), & (2,2), & (3,2).
-   
-Veja o que isso representa na :numref:`n-esimo-movimento-corrida`.
-
-**FIGURA**
