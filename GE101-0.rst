@@ -578,12 +578,19 @@ Vale a pena ressaltar que se ao comparar dois vetores, pelo menos um dos seus at
    
 .. admonition:: Para o professor
 
-   As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível construir um vetor igual à `\vec{v}`. E também, que existem infinitos vetores iguais à `\vec{v}`.
+   As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível construir um vetor igual à `\vec{v}` e que portanto, a extremidade inicial do vetor não é importante. E também, que existem infinitos vetores iguais à `\vec{v}`.
    
-    
 Para cada direção, já sabemos que existem dois sentidos. Assim, caso dois vetores possuam a mesma direção, podemos comparar seus sentidos. Caso contrário, não é possível fazer tal comparação. 
 
-Quando dois vetores `\vec{u}` e `\vec{v}` possuem a mesma direção mas apontam para lados opostos, dizemos que esses vetores possuem *sentidos opostos*.
+.. _fig-geometria-operacoesvetores-03.2:
+
+.. figure:: _resources/VetoresSentidosOpostos.png
+   :width: 300px
+   :align: center
+
+   `\vec{u}` e `\vec{v}` possuem sentidos opostos. 
+
+Na :numref:`fig-geometria-operacoesvetores-03.2`, `\vec{u}` e `\vec{v}` não são iguais, pois não possuem o mesmo sentido. Quando dois vetores possuem a mesma direção (como `\vec{u}` e `\vec{v}`), mas apontam para lados opostos, dizemos que esses vetores possuem *sentidos opostos*.
    
 .. admonition:: Não confunda!
 
@@ -601,9 +608,9 @@ Existe um objeto que não se enquadra na definição de vetor dada anteriormente
 
 .. admonition:: Definição 
 
-   O vetor nulo `\vec{0}` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido.
+   O vetor nulo é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido.
    
-Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem, e portanto, seus representantes são pontos e não segmentos de reta orientados. O vetor nulo é o único com essa particularidade.
+Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem, e portanto, seus representantes são pontos e não segmentos de reta orientados. Chamar de vetor o que é na verdade um ponto pode parecer um pouco estranho, mas vamos tentar abstrair esta ideia e trabalhar com ele como trabalhamos com qualquer outro vetor. O vetor nulo é o único com essa particularidade.
 
 Denotaremos o vetor nulo por `\vec{0}`.
 
