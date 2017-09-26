@@ -27,6 +27,8 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
  A produção de conhecimento - sempre em constante evolução e reavaliação - nas mais variadas áreas exige o conhecimento estatístico. 
       
  A relevância do raciocíno estatístico e conhecimento para o efetivo funcionamento na sociedade da informação levou à introdução do termo **Letramento Estatístico**: "A capacidade de compreender e avaliar criticamente resultados estatísticos que permeiam a vida diária,  acompanhada da capacidade de apreciar como o pensamento estatístico pode contribuir em decisões públicas e privadas, profissionais e pessoais." (Batanero, Borovcnik, 2016)
+ 
+ De acordo com (De Veaux et al, 2008), o desafio para o estudante (e o professor) de estatística introdutória é que, como na literatura e na arte, navegar por e dar sentido a exige não somente um conjunto de regras e axiomas, mas experiência de vida e "senso comum". São várias habilidades a serem trabalhadas e a maior parte delas exige capacidade de avaliação crítica em adição à manipulação matemática. A capacidade de avaliação crítica é adquirida com exemplos e experiência e isso demanda mais tempo.
     
   
 .. Figura 1:
@@ -64,6 +66,9 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
   
  As atividades propostas nesse capítulo envolvem o uso da Estatística em diferentes situações motivando o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuição e caracterizações da distribuição (posição e dispersão). Essas atividades não têm como objetivo o cálculo das medidas, mas a sua compreensão estrutural. Nesse capítulo serão apresentadas algumas atividades envolvendo a realização de pesquisas e coleta de dados.
  
+ Ao final do capítulo será sugerida a realização de um projeto que deverá ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. Também será recomendado que essa atividade seja preferencialmente trabalhada no primeiro ou segundo ano do Ensino Médio, pois no último ano há maior limitação de tempo em razão dos vários exames a serem realizados pelos estudantes nesse ano.  
+ 
+ 
 .. admonition:: Diferencial do Capítulo 
   
  Como propostas inovadoras o capítulo inclui a: 
@@ -76,7 +81,11 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
   
 .. admonition:: Dificuldades típicas dos estudantes (distratores)
 
-  Como a inclusão de Estatística na Educação Básica é relativamente recente,  não foram  observados trabalhos acadêmicos abordando as dificuldades de aprendizagem da Estatística. No entanto, pelo mesmo motivo, os artigos discutem muito mais princípios que norteiem a  forma de abordar a Estatística nesse segmento de ensino e a formação dos professores para essa tarefa (Batanero e Burril, 2011), (Batanero, 2016), (Franklin, C. A., 2007, GAISE) e (Relatório da ABE, 2015). Além disso, é importante observar que cabe à Educação Básica aspectos bastante introdutórios da Estatística. Por essa razão, não existem erros conceituais graves nessa fase de ensino. Os distratores apresentados a seguir refletem a experiência dos envolvidos com o desenvolvimento desse capítulo. 
+  Como a inclusão de Estatística na Educação Básica é relativamente recente,  não foram  observados muitos trabalhos acadêmicos abordando as dificuldades de aprendizagem da Estatística. No entanto, pelo mesmo motivo, os artigos discutem muito mais princípios que norteiam a  forma de abordar a Estatística nesse segmento de ensino e a formação dos professores para essa tarefa (Batanero e Burril, 2011), (Batanero e Borovcnik, 2016), (Franklin, C. A., 2007, GAISE) e (Relatório da ABE, 2015). Além disso, é importante observar que cabe à Educação Básica aspectos bastante introdutórios da Estatística. 
+  
+  De acordo com Batanero e Borovnick (2016), mesmo que os métodos de análise de dados nessa fase do ensino envolvam somente calcular e interpretar porcentagens  ou medidas estatísticas simples, bem como interpretar vários tipos de gráficos, pesquisa sugere que os estudantes apresentam problemas na compreensão dos conceitos e na relação desses conceitos para o contexto de modo a ter algum significado. Uma razão para essas dificuldades é que o ensino, em geral, foca sobre a aplicação de métodos em detrimento à interpretação de resultados em um dado contexto.
+  
+  Os distratores apresentados a seguir refletem a experiência dos envolvidos com o desenvolvimento desse capítulo. 
 
   #. Confundir o valor da variável com o da frequência.  
   #. Em caso de variável quantitativa discreta, considerar apenas os valores da variável apresentados na tabela ignorando as frequências. 
@@ -126,7 +135,8 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
  **Explorando -2 .** 
  
  #. Atividade: **Condução de uma coleta de dados sobre a turma** envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
- #. Atividade: **Realização de pesquisa** obtendo dados que serão trabalhados na atividade. Sugestão de tema para a pesquisa: Avaliação de  como as pessoas fazem uso da internet no seu dia a dia. Nessa atividade será necessário definir a população alvo, decidir sobre a seleção da amostra e construir um instrumento de coleta.
+ #. Atividade: **Realização de pesquisa** o foco nessa atividade será pedir aos estudantes que busquem informações já disponíveis sobre o tamanho da população da sua cidade ou estado e outras informações como número de escolas de ensino fundamental ou médio na cidade ou estado  ou informações sobre hospitais, número de leitos, número de  salas de cinema, meios de transporte e, a partir do cruzamento dessas informações gerar informações. (Os links para a obtenção de dados serão informados.)
+ 
  #. Atividade: **Análise de variável quantitativa contínua** levando à necessidade da construção de intervalos de classe e à construção do histograma. Nessa atividade também será trabalhada uma variável quantitativa que varia no tempo para a definição e construção do gráfico de linha. 
   
  **Organizando as ideias. 2** 
@@ -135,7 +145,11 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
     
  **Praticando 2** 
  
- Atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos. Inclusão de atividades do ENEM e vestibulares.
+ Atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos. Incluir atividade envolvendo cartogramas. Inclusão de atividades do ENEM e vestibulares.
+ 
+ **Explorando -3 .** 
+ 
+ #. Atividade: **Realização de pesquisa** obtendo dados que serão trabalhados na atividade. Sugestão de tema para a pesquisa: Avaliação de  como as pessoas fazem uso da internet no seu dia a dia. Nessa atividade será necessário definir a população alvo, decidir sobre a seleção da amostra e construir um instrumento de coleta.
  
 .. admonition:: Aprofundamentos
 
@@ -155,7 +169,11 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
       
   Batanero, C., & Borovcnik, M. (2016). Statistics and probability in high school. Springer.
   
-  Cordani, Lisbeth K. "Estatística para todos." (2002). <http://www.estatistica.ccet.ufrn.br/cdee/wp-content/themes/cdee/arquivos/projeto02/oficina_site_educacao.pdf> Axesso em: 22 set. 2017.
+  Bussab, W. O. & Morettin, P. A. (2017). Estatística Básica.  Saraiva. Nona edição.
+  
+  Cordani, Lisbeth K. "Estatística para todos." (2002). <http://www.estatistica.ccet.ufrn.br/cdee/wp-content/themes/cdee/arquivos/projeto02/oficina_site_educacao.pdf> Acesso em: 22 set. 2017.
+  
+  De Veaux, R. D., College, W., Velleman, P. F. (2008), Math is Music; statistics is literature (or why are there no six-year-old novelists?). Amstat news. pp 54-57.
   
   IBGE (2017) <https://vamoscontar.ibge.gov.br/> Acesso em: 29 ago. 2017.
 
