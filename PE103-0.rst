@@ -4,11 +4,422 @@
 A Natureza da Estatística
 ***************************
 
-.. admonition:: Objetivos específicos
+*Previsão de aulas necessárias:* 4
+
+*Previsão de páginas necessárias:* por definir
+
+*Fase de elaboração:* 2. Desenvolvimento
+
+.. _intro:
+
+Introdução
+----------------
+
+.. admonition:: Habilidade
 
    (EM11MT03) Realizar pesquisas considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráfios apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
 
-   (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos em pesquisas realizadas pelos estudantes, considerando localização (centro) e dispersão (amplitude).
+**Observação** A habilidade da BNCC que fundamenta este capítulo (EM11MT03, correspondente à unidade curricular I do ensino médio) está contemplada nos pré-requisitos, identificados a partir de habilidades da BNCC referentes aos anos finais do ensino fundamental (listadas a seguir). Entendemos que esta é uma oportunidade necessária e importante para revisitar esses assuntos com o objetivo de aprofundar a discussão a partir de questões adequadas à etapa de amadurecimento dos estudantes e envolvendo maior quantidade de dados além da investigação de possíveis relações entre as variáveis consideradas.
+
+*Próximo capítulo:* (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos em pesquisas realizadas pelos estudantes, considerando localização (centro) e dispersão (amplitude).
+
+.. admonition:: Pré-requisitos
+
+   (EF08MT08)
+      Identificar, em gráficos de barras, colunas ou setores, divulgados pela mídia, as variáveis e seus valores, os resultados e os elementos constitutivos do gráfico (título, eixos, legenda e fonte), interpretando-os para analisar a adequação do gráfico ao tema e aos dados e para propor outras formas de comunicação dos resultados da pesquisa, tais como texto escrito ou outro tipo de gráfico.
+   
+   (EF09MT09)
+      Escolher e construir o gráfico mais adequado (colunas, setores, linhas e histogramas) para apresentar um determinado conjunto de dados de uma pesquisa, destacando aspectos como as medidas de tendência central para compor um relatório descritivo dos resultados.
+   
+   (EF09MT10)
+      Planejar uma pesquisa amostral envolvendo tema da realidade social, definir a técnica de amostragem e a amostra, coletar, organizar e interpretar os dados, para comunicar os resultados por meio de relatório contendo texto escrito, avaliação de medidas de tendência central e da amplitude, tabelas e gráficos adequados construídos com o apoio de planilhas eletrônicas.
+
+.. admonition:: Objetivos gerais
+
+   #. Por qué é importante estudar Estatística?
+   
+   Para se tornar um cidadão competente na apreciação e na postura crítica diante de argumentos baseados em dados empíricos em situações adequadas a sua realidade e ser capaz de tomar decisões com alguma propriedade na presença de incerteza.
+
+   #. O que será estudado:
+   
+       * Caracterização de problemas que envolvem Estatística,
+       * Conceitos básicos da Estatística: população e amostra,
+       * Tipos de variáveis,
+       * Organização dos dados em tabelas de frequências,
+       * Representações gráficas adequadas para os diferentes tipos de variáveis.
+       
+   #. Palavras-chave:
+                               
+       * Natureza da Estatística,
+       * População e Amostra,
+       * Parâmetro e Estimador, 
+       * Variáveis Qualitativas, 
+       * Variáveis Quantitativas, 
+       * Gráfico de Setores, 
+       * Gráfico de Barras, 
+       * Histograma.
+
+
+.. _ativ-1-escolha-do-melhor-fornecedor:
+
+Atividade: Escolha do melhor fornecedor
+------------------------------------------
+
+*Controle de Qualidade na Produção de Parafusos (Inspirada em ROSSMAN and CHANCE, 1998).*
+
+
+.. admonition:: Objetivos específicos
+
+   Comparar distribuições empíricas de dados estimulando a necessidade de medidas de posição e de dispersão tais como moda e amplitude que auxiliam na descrição das distribuições.
+
+Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é de “mais ou menos” 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo azul representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
+
+
+.. admonition:: Para o professor
+
+   No item (a)  a resposta esperada é “diâmetros dos parafusos”. No entanto os alunos podem achar que a frequência com que cada valor de diâmetro ocorre também é necessária. Esse tipo de gráfico, diagrama de pontos, reflete exatamente a tabela de frequências absolutas. No entanto, ele permite perceber por simples visualização como os  valores se distribuem, indicando implicitamente a noção de dispersão.
+   
+   No item (b) é para perceber que não é necessário contar o número de pontos, pois todos estão fora da especificação.
+   
+   Item (c). Fornecedor A: 14,5 cm; fornecedor B: 15,0 cm; fornecedor C: 15,0 cm e fornecedor D: 14,74 cm.
+   
+   Para o item (d) é necessário perceber que os intervalos assinalados no eixo horizontal correspondentes a 0,1 cm estão subdivididos em 5 partes de medida 0,02 cm. Portanto, a resposta a esse item é
+   
+   +------------+--------------+--------------+
+   | Fornecedor | Valor Mínimo | Valor Máximo |
+   +============+==============+==============+
+   | A          | 14,42        | 14,58        |
+   +------------+--------------+--------------+
+   | B          | 14,60        | 15,24        |
+   +------------+--------------+--------------+
+   | C          | 14,58        | 15,60        |
+   +------------+--------------+--------------+
+   | D          | 14,56        | 15,18        |
+   +------------+--------------+--------------+
+   
+
+.. Inserir FIGURAS!!!
+
+.. _fig-parafusos:
+
+.. figure:: <link da figura>
+   :width: 200px
+   :align: center
+
+   Diagramas de pontos com as medidas dos parafusos de cada fornecedor
+
+
+#. Que informações foram usadas para a construção desses gráficos?
+#. Quantos parafusos da caixa do fornecedor A atendem a especificação do comprador?
+#. Para cada fornecedor identifique a medida do diâmetro de maior frequência.
+#. Considerando cada um dos fornecedores, identifique o menor e o maior diâmetros observados. 
+#. Com base na sua resposta anterior, identifique os fornecedores cujos diâmetros observados variaram nos intervalos de menor :ref:`amplitude<def-amplitude>` e de maior :ref:`amplitude<def-amplitude>`.
+
+   .. _def-amplitude:
+
+   .. admonition::  Amplitude 
+
+      Em Estatística, a **amplitude** é definida como a diferença entre o maior e o menor dos valores observados. 
+
+#. De qual fornecedor você classifica o comportamento dos diâmetros dos parafusos como o de maior :ref:`dispersão<def-dispersao>`? E o de menor :ref:`dispersão<def-dispersao>`?
+
+   .. _def-dispersao:
+
+   .. admonition::  Dispersão 
+
+      Segundo o Aurélio, dispersão significa (1) ato ou efeito de dispersar; (2) separação (de pessoas ou coisas) para diferentes partes.  Em Estatística, existem diferentes medidas de dispersão. Iremos estudar algumas delas.
+
+#. Qual(is)  fornecedor(es) produz(em) pelo menos um parafuso dentro das especificações do comprador?
+#. Supondo que os comportamentos dos diâmetros dos parafusos sejam similares para as outras caixas em cada fornecedor, que fornecedor, com base nas especificações do comprador, você escolheria? Por quê?
+#. Todos os parafusos da caixa do fornecedor escolhido no item anterior seriam aproveitados? 
+
+.. Adicionei essa etapa de discussão, que pode ser útil para introduzir outros conceitos mais na frente.
+
+**Discussão**
+
+* Comenta sobre a estratégia para realizar as medições: você acredita que as medidas de uma caixa de parafusos podem ser representativas das medidas do total dos parafusos produzidos pelo fornecedor?
+* Você considera que seria viável medir todos os parafusos fabricados?
+* Pensa outras estratégias nas quais poderia ser obtida essa informação e discute suas vantagens e disvantagens com teus colegas.
+
+.. admonition:: Solução
+
+   *Texto com as respostas*
+
+
+.. admonition:: Observações
+
+   *Texto com as observações*
+
+
+
+.. _ativ-2-comparacao-de-medicamentos:
+
+Atividade: Comparação de medicamentos
+-----------------------------------
+
+.. admonition:: Objetivos específicos
+
+   Analisar distribuições empíricas de dados para a comparação de médias, verificando que nem sempre é possível concluir que médias diferentes nas diferentes distribuições podem ser consideradas estatisticamente diferentes.
+
+.. admonition:: Para o professor
+
+   O objetivo principal dessa atividade é mostrar situações distintas nas quais ao comparar dois números diferentes, não é possível afirmar que de fato eles são diferentes.
+   
+   Outros objetivos dessa atividade são construir diagramas de pontos.
+
+Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça. Para isso 60 pacientes com perfis similares foram separados aleatoriamente em três grupos de 20 cada. Para cada grupo será ministrado um dos medicamentos e observado o tempo de cura da dor de cabeça (em minutos). No quadro a seguir estão dispostos os dados obtidos.
+
+.. _tabela-medicamentos:
+
++-------------+-------------------------------------------------------------+------+
+| medicamento | tempo em minutos                                            | soma |
++=============+=============================================================+======+
+| X           | 7 8 8 9 9 9 10 10 10 10 10 10 11 11 11 11 12 12 13          | 200  |
++-------------+-------------------------------------------------------------+------+
+| Y           | 7 8 9 9 10 10 11 11 11 12 12 12 13 13 14 14 15 15 16 18     | 240  |
++-------------+-------------------------------------------------------------+------+
+| X           | 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 13 13 13 13 13 | 240  |
++-------------+-------------------------------------------------------------+------+
+
+#. Organize as informações apresentadas no quadro acima em diagramas de pontos.
+#. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
+#. Determine os tempos médios de cura da dor de cabeça para cada substância.
+#. A partir dos diagramas construídos, compare os diferentes tratamentos. 
+
+**Discussão**
+
+Ao realizar uma validação do estúdio, um dos pesquisadores percebeu algumas características nos pacientes que obligaram a repetir o tratamento de 3 deles e substitui os resultados para o medicamento Y. Realice um novo diagrama de pontos com os dados apresentados a continuação, compare com o diagrama anterior e comente:
+
+.. Incluir nova tabela de dados para o estudo Y
+
+#. Você mudaria as conclussões formuladas a partir das observações anteriores?
+#. Como é possível que apenas 3 pacientes possam ter um efeito como esse nos resultados?
+#. Você pensa que aconteceria a mesma coisa com o medicamento X? E com Z? Quantos pontos precisaria trocar em cada caso para mudar as suas conclussões?
+#. Discuta quais são as diferenças em cada caso y por quê acredita que isto acontece.
+
+
+.. admonition:: Resposta 
+
+   #. Diagramas de pontos
+   
+      .. _fig-resposta-diagrama-pontos:
+
+      .. figure:: <link da figura>
+         :width: 200px
+         :align: center
+
+         Diagramas de pontos dos dados da :ref:`Tabela de tempo dos medicamentos<tabela-medicamentos>`
+   
+   #. Olhando os diagramas de pontos, percebe-se que o medicamento Y foi o que apresentou maior dispersão dos tempos de cura.
+   #. De acordo com as somas informadas na tabela temos que as médias observadas de tempo de cura foram 10 minutos para o medicamento X, 12 minutos para o medicamento Y e 12 minutos para o medicamento Z.
+   #. Comparando os diagramas de pontos dos medicamentos X e Y percebemos que existe uma interseção razoável, quando olhamos as distribuições empíricas dos tempos de cura. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados não apresentam evidências contra hipótese de que os tempos médios de cura para os dois medicamentos são iguais, apesar das médias empíricas serem diferentes. Portanto aqui não rejeitaríamos a hipótese de que os tempos médios de cura são iguais.
+   
+   Comparando os diagramas de pontos dos medicamentos X e Z percebemos que a grande interseção que existia entre os tempos de cura de X e Y não existe mais, agora ela é pequena. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados apresentam evidências contra a hipótese de que os tempos médios de cura para os dois medicamentos são iguais. Nesse caso, rejeitaríamos a hipótese de que os tempos médios de cura são iguais.
+   
+   **Observação:** Deve ser enfatizado nessa análise que na Estatística, dependendo da situação, pode-se concluir que dois valores distintos empíricos (como a média) podem ser considerados “iguais” dependendo das dispersões dos grupos geradores desses dois valores. A atividade de discussão tem o intuito de trazer isso à tona, além da sensibilidade de certas medidas quando existe uma alta dispersão.
+
+
+.. _ativ-3-pesquisa-ibge-pnad:
+
+Atividade: Pesquisa sobre a Prática de Esportes e Atividade Física
+------------------------------------------------------------------
+
+*Fonte: IBGE, Suplemento da PNAD/2015*
+
+.. admonition:: Objetivos específicos
+
+   1. apresentar os conceitos de população e amostra;
+   2. comparar os diferentes tipos de variáveis analisados nessa pesquisa para definir variáveis qualitativas e quantitativas.
+   3. explorar possíveis associações sobre a prática de atividades físicas com outras variáveis investigadas na pesquisa, tais como, nível de instrução e rendimento.
+
+.. admonition:: Para o professor
+
+   No item (a), espera-se que sejam indicadas pelo menos as seguintes informações:
+   
+   * variável qualitativa binária (Sim ou Não) sobre prática de esporte ou Atividade Física no último ano. 
+   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
+   * variável qualitativa binária (Sim ou Não) sobre a prática de Atividade Física não considerada como Esporte.
+   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
+   * variável qualitativa nominal (motivação para a prática de atividade física)
+   * variável qualitativa nominal (local da prática)
+   * variável qualitativa ordinal (frequência da prática, interpretando como diária, cinco vezes por semana, três vezes por semana, uma vez por semana, etc,)
+   * variável quantitativa (duração a atividade cada vez em que é praticada)
+   * variável qualitativa binária (Sim ou Não) sobre a participação em competições.
+
+
+A Pesquisa Nacional por Amostra de Domicílios (PNAD), realizada pelo IBGE, obtém **informações anuais** sobre características demográficas e socioeconômicas da população, como sexo, idade, educação, trabalho e rendimento, e características dos domicílios. Com **periodicidade variável**, a PNAD obtém informações sobre migração, fecundidade, entre outras, tendo os domicílios como unidade de coleta da informação. Temas específicos abrangendo aspectos demográficos, sociais e econômicos também são investigados.
+
+Um aspecto fundamental da Estatística praticado nessa pesquisa é a forma na qual a amostra, subconjunto da população, é selecionada. Essa seleção é cuidadosamente planejada de modo que seja adequado estender os resultados obtidos na amostra para a população.
+
+   Para que os resultados de uma amostra possam ser estendidos para a população, é necessário planejar com cuidado como a amostra será selecionada, pois o critério de seleção da amostra depende da estrutura da população. Por exemplo, para saber se o feijão cozinhando na panela está bem temperado, basta provar uma pequena colherada. Por que?  Partimos do pressuposto de que todos os ingredientes foram bem misturados e, assim, a mistura é homogênea. 
+
+   Quando dispomos de dados provenientes de um subconjunto da população sempre podemos descrever os dados nos restringindo apenas ao subconjunto. Se quisermos estender nossas conclusões para a população, alguns cuidados especiais, fora do escopo desse livro, devem ser tomados.
+
+Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Suplemento de Práticas de Esporte e Atividade Física” no qual foram investigadas as pessoas moradoras de 15 anos ou mais de idade, em seu tempo livre, no período de referência de 365 dias, com o objetivo de quantificar aquelas que praticaram algum esporte ou atividade física no período considerado bem como a sua percepção quanto a isso. As informações levantadas nessa pesquisa foram obtidas por meio de um questionário no qual se perguntou:
+
+* Se a pessoa moradora havia praticado esporte, e em caso afirmativo, a respectiva modalidade.
+
+      Algumas práticas foram classificadas como esporte por alguns moradores e como atividade física por outros. No que segue falaremos apenas em Atividade Física.
+
+* Independente da resposta anterior, também se perguntou se a pessoa praticava alguma atividade física que não considerava como esporte, informando, em caso positivo, também a modalidade.
+* Outras informações levantadas nessa pesquisa foram: motivação para a prática da atividade física, local onde é praticada a atividade, frequência na qual a atividade é praticada, duração da atividade; e a participação em competições.
+* Também foram levantadas informações sobre as pessoas que responderam que não praticavam atividade física. Perguntou-se o motivo de não o fazerem e se haviam praticado anteriormente, caso em que se perguntou a modalidade praticada, a idade em que parou de praticar e a causa da interrupção.
+* Além dessas informações, a pesquisa investigou também a avaliação da população sobre a opção do poder público investir no desenvolvimento de atividades físicas e esportivas ou em outra área (saúde, educação, etc.) na vizinhança de seu domicílio.
+
+   #. Liste o maior número possível de informações investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
+   #. Das informações citadas no item anterior, quais delas apresentam respostas não numéricas? 
+   #. Das informações citadas no item anterior, quais delas apresentam respostas numéricas?
+
+A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (vamoscontar.ibge.gov.br) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
+
+.. _def-infografico:
+
+.. admonition:: Infográfico 
+
+   Um infográfico é uma apresentação de informações integradas em textos sintéticos com dados numéricos e com preponderância de elementos gráficos e visuais (fotografias, desenhos, diagramas estatísticos, gráficos, etc.). Os infográficos são geralmente utilizados no jornalismo como complemento ou síntese ilustrativa de uma notícia. 
+
+.. Adicionar gráficos
+
+
+.. _fig-infografico-pnad-1:
+
+.. figure:: <link da figura>
+   :width: 200px
+   :align: center
+
+   PNAD - Infográfico 1
+
+1. Segundo a pesquisa, qual a porcentagem de pessoas de 15 anos ou mais que praticaram algum esporte ou atividade física no período de um ano? 
+2. O infográfico refere-se à amostra pesquisada ou à população brasileira de 15 anos ou mais?
+3. Com base nas recomendações médicas sobre a prática de atividades físicas para se ter boa saúde, como você avalia o resultado obtido na pesquisa para a população brasileira de 15 anos ou mais? 
+4. Considerando homens e mulheres separadamente, percebe-se alguma diferença com relação à prática de atividades físicas? Em caso afirmativo, descreva a(s) diferença(s) observada(s).
+5. Considerando as faixas etárias discriminadas no infográfico, percebe-se alguma diferença com relação à prática de atividades físicas? Em caso afirmativo, descreva a(s) diferença(s) observada(s).
+
+
+.. admonition:: Resposta as perguntas sobre o Infográfico 1
+
+   1. 37,9%
+   2. População brasileira de 15 anos ou mais.
+   3. Não parece satisfatório. O ideal seria ter a maioria da população com um percentual  bem maior do que 50%.
+   4. Sim. Entre os homens brasileiros de 15 anos ou mais, pouco mais de 40% praticam atividade física; enquanto esse percentual para mulheres brasileiras de 15 anos ou mais é pouco maior do que 30%.
+   5. Sim. Percebe-se uma diminuição dos percentuais de pessoas que praticam atividade física, conforme a idade aumenta. Na faixa de 15 a 17 anos temos mais de 50%, na faixa de 18 a 24 anos temos um pouco menos do que 50%, na faixa de 25 a 39 anos temos pouco mais de 40%, na faixa de 40 a 59 anos temos mais de 30% e na faixa 60 anos ou mais temos menos de 30%.
+
+
+.. _fig-infografico-pnad-2:
+
+.. figure:: <link da figura>
+   :width: 200px
+   :align: center
+
+   PNAD - Infográfico 2
+
+1. Considerando os diferentes graus de instrução, percebe-se alguma diferença com relação à prática de atividades físicas? Em caso afirmativo, descreva a(s) diferença(s) observada(s).
+2. Considerando as faixas de rendimento mensal per capita do domicílio, percebe-se alguma diferença com relação à prática de atividades físicas? Em caso afirmativo, descreva a(s) diferença(s) observada(s).
+
+.. admonition:: Resposta as perguntas sobre o Infográfico 2
+
+   1. Sim. A porcentagem de pessoas de 15 anos ou mais que prática atividade física cresce conforme o grau de instrução é maior.
+   2. Sim. A porcentagem de pessoas de 15 anos ou mais que prática atividade física cresce conforme o rendimento per capita é maior. 
+
+
+.. _fig-infografico-pnad-3:
+
+.. figure:: <link da figura>
+   :width: 200px
+   :align: center
+
+   PNAD - Infográfico 3
+
+1. Qual foi a variável estudada no gráfico acima?
+2. A variável estudada tem respostas de que tipo: numéricas ou não-numéricas?
+3. Qual foi a resposta que apresentou a maior frequência?
+4. O que você acha que representa a resposta “Outros Esportes”?
+
+.. admonition:: Resposta as perguntas sobre o Infográfico 3
+
+   1. Modalidade de atividade física praticada.
+   2. Não-numéricas: futebol, natação, etc.
+   3. Futebol
+   4. Como as últimas modalidades apresentaram porcentagens muito pequenas, cerca de 2%, a categoria outros esportes reuniu modalidades que ocorreram com porcentagens muito pequenas, não cabendo representa-las separadamente no gráfico. Observe que as últimas modalidades destacadas já estão reunidas em mais de uma como vôlei, basquete e handebol.
+
+
+.. _fig-infografico-pnad-4:
+
+.. figure:: <link da figura>
+   :width: 200px
+   :align: center
+
+   PNAD - Infográfico 4
+
+1. Qual a porcentagem de pessoas de 15 anos ou mais que concorda que o poder público deve investir em atividades físicas ou desportivas?
+2. Qual a opinião dessas pessoas quanto à prioridade de investimentos em atividades físicas pelo poder público?
+3. Qual é a opinião das pessoas de 15 anos ou mais que não concordam que o poder público deve investir em atividades físicas ou esportivas?
+
+.. admonition:: Resposta as perguntas sobre o Infográfico 4
+
+   1. 73,3% 
+   2. Entre as pessoas que acham que se deva priorizar investimentos em atividades físicas, 91,1% acha que o investimento deve ser para atividades físicas para as pessoas em geral, 8% acha que deve ser para a formação de atletas.
+   3. Entre as pessoas que não concordam que o poder público deve investir em atividades físicas, 57,8% acham que a prioridade deve ser a saúde, 21,3% acham que a prioridade deve ser Segurança, 16,5%, acham que a prioridade deve ser Educação e, o restante respondeu outros tipos de prioridade.
+
+
+.. _sub-organizando-as-ideias-1:
+
+-------------------------
+Organizando as ideias
+-------------------------
+
+Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística que serão descritos a seguir:
+
+População
+   é um conjunto de elementos em que todos têm pelo menos uma característica em comum.
+
+Por exemplo, na atividade 3 a população correspondeu aos brasileiros de 15 anos ou mais. Observe que população em Estatística não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria em um ano, o conjunto de animais de certa espécie que vivem em uma região, etc.
+
+Amostra
+   é um subconjunto não-vazio da população.
+
+Muitos problemas em Estatística, conhecidos como problemas de Inferência Estatística envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população. 
+
+Quando se realiza um **censo**, levantamento de dados de toda a população, não existe a necessidade de fazer uma inferência estatística. No entanto, na maioria das vezes, a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
+
+Parâmetro
+   característica numérica da população.
+
+Estimador
+   função que produz estimativas de parâmetros usando os dados da amostra.
+
+.. Interessante incluir um exemplo de parâmetro e estimador
+
+Uma variável é **qualitativa** se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD/2015, representa variáveis qualitativas.
+
+Uma **variável qualitativa** é classificada em **nominal** ou **ordinal**. A variável qualitativa é nominal quando não existe nenhuma ordenação natural das respostas associadas à variável. Exemplos de variáveis nominais: bairro de residência, tipo sanguíneo, modalidade de atividade física que pratica, etc. A variável qualitativa é ordinal quando existe uma ordenação natural das respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: ensino fundamental incompleto, ensino fundamental completo, ensino médio incompleto, ensino médio completo, ensino superior incompleto e ensino superior completo. Podemos perceber que quem tem ensino fundamental completo tem maior nível de instrução de quem tem ensino fundamental incompleto e, assim por diante.
+
+Uma variável é **quantitativa** se as respostas para ela são numéricas. Exemplos de variáveis quantitativas são idade, peso, altura, temperatura, número de irmãos, duração da atividade física.
+
+Uma variável quantitativa é classificada em **discreta** ou **contínua**. As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro.  As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, índice de massa corporal (*imc*), etc.
+
+A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa nominal. Nesse caso, podemos no máximo identificar a moda (valor mais frequente) ou as modas dos tipos de atividade física praticados. Pelo infográfico apresentado verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
+
+Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo em mente que o tipo de variável sob investigação é determinante nos tipos de gráficos e nas informações relevantes da tabela. 
+
+
+
+.. admonition:: Limite 
+
+   até aqui o texto novo ----------------------------------------------
+   
+.. ---------------------------------------------------------------------------------
+.. ---------------------------------------------------------------------------------
+.. ---------------------------------------------------------------------------------
+.. Aqui começa o texto que já se encontrava aqui e que não sei se vai ser mantido...
+
+
+
+.. _sec-coloque-aqui-o-nome:
+
+Coisas que estavam antes... Podemos apagar?
+-------------------------------------------
+
 
 Pensando em 3 modulos de +/- 18 aulas, um para cada ano do ensino médio e um modulo de apronfundamento eletivo.
 
