@@ -2,7 +2,11 @@
 
 .. HJB: na abertura do livro, colocar o exemplo de modelagem dado pelo Ralph sobre mapa do metrô. No exemplo , neste capítulo, da pista de Interlagos, há o uso deste tipo de simplificação.
 
-.. HJB: a pedido do Fábio, incluir alguma informação sobre velocidades relativas.
+.. HJB: a pedido do Fábio, incluir alguma informação sobre velocidades relativas... 
+
+HJB: no capítulo de abertura do livro, colocar sobre a questão do uso das palavras (argumento Humpty-Dumpty) e sobre a questão da notação matemática.
+
+.. HJB: na abertura do livro, colocar o exemplo de modelagem dado pelo Ralph sobre mapa do metrô. No exemplo , neste capítulo, da pista de Interlagos, há o uso deste tipo de simplificação.
 
 .. HJB: não esquecer de indicar os vídeos do Étienne Ghys no para saber mais (http://www.chaos-math.org/pt-br).
 
@@ -663,7 +667,7 @@ Repare que as extremidades inicial e final dos representantes do vetor nulo coin
 
 Denotaremos o vetor nulo por `\vec{0}`.
 
-**Soma de vetores**
+**SOMA DE VETORES**
 
 .. admonition:: Definição 
 
@@ -688,6 +692,8 @@ Com esta definição, é possível somar dois vetores cujo o representante do pr
    Soma de dois vetores quaisquer.
 
 Na :numref:`fig-geometria-operacoesvetores-07`, queremos somar os vetores `\vec{u}=\overrightarrow{AB}` e `\vec{v}=\overrightarrow{CD}` não adjacentes. Como a extremidade final de `\overrightarrow{AB}` não coincide com extremidade inicial de `\overrightarrow{CD}`, é necessário tomar um outro representante do vetor `\vec{v}` partindo do ponto `B` e assim, com dois vetores adjacentes, poderemos somá-los. Se `\overrightarrow{BP}` é um representante de `\vec{v}`, então o vetor com origem em `A` e extremidade em `P` é o vetor soma `\vec{u}+\vec{v}`.
+
+**Importante:** Na :numref:`fig-geometria-operacoesvetores-07` temos dois representantes do vetor `\vec{v}`, sendo eles os segmentos orientados `BP` e `CD`. Esses dois segmentos, por possuirem o mesmo módulo, direção e sentido, pertencem à mesma coleção e por isso dão origem ao mesmo vetor.
   
 Pela definição acima, em geral, os dois vetores a serem somados e o vetor soma formam um triângulo. Por causa disso, esse método é conhecido como *Regra do Triângulo*.
 
@@ -701,19 +707,20 @@ Pela definição acima, em geral, os dois vetores a serem somados e o vetor soma
    O objetivo da reflexão acima é fazer o aluno identificar que quando os vetores a serem somados estão sobre uma mesma reta, então não é possível formar um triângulo.  
    
 
-.. admonition:: Regra do paralelogramo [VER: não vale para vetores paralelos]
+.. admonition:: Regra do paralelogramo
 
-   Há uma outra forma de visualizar o vetor soma `\vec{u}+\vec{v}`. Para isso, devemos tomar representantes dos vetores `\vec{u}` e `\vec{v}` com a mesma extremidade inicial, e construir um paralelogramo da seguinte forma: 
+   Caso os vetores `\vec{u}` e `\vec{v}` não possuam a mesma direção, há uma outra forma de visualizar seu vetor soma `\vec{u}+\vec{v}`. Para isso, devemos, primeiramente, tomar representantes dos vetores `\vec{u}` e `\vec{v}` com a mesma extremidade inicial, e a partir daí, construir um paralelogramo. Veja a construção abaixo.
    
    .. _fig-geometria-operacoesvetores-09:
 
-   .. figure:: _resources/RegraParalelogramo.png
+   .. figure:: _resources/RegraParalelogramo_1.png
       :width: 200px
       :align: center
       
-      Regra do paralelogramo.      
-   
-   [Justificar]
+      Regra do paralelogramo. 
+    
+   Escolhemos o ponto `A` para ser a extremidade inicial dos representantes de `\vec{u}` e `\vec{v}`. Sejam então, `\overrightarrow{AB}` e `\overrightarrow{AC}` os representantes de `\vec{u}` e `\vec{v}`, respectivamente. Agora, a partir de `B` trace um outro representante de `\vec{v}`, digamos `\overrightarrow{BD}`, e a partir de `C` tracemos um outro representante de `\vec{u}`, digamos `\overrightarrow{CD}`. É fácil ver que esta construção produz um paralelogramo (quadrilátero que possui lados opostos paralelos e congruentes). Assim, `\overrightarrow{AD}` é um representante do vetor soma `\vec{u}+\vec{v}`, sendo que `\overrightarrow{AD}` é uma diagonal do paralelogramo `ABDC`.
+ 
    
 Vejamos algumas propriedades da soma de vetores:
 
@@ -725,7 +732,7 @@ Vejamos algumas propriedades da soma de vetores:
 
 para qualquer vetor `\vec{v}`.
 
-* Tome dois vetores `\vec{u}` e `\vec{v}` tais que `\overrightarrow{AB}` é um representante de `\vec{u}` e `\overrightarrow{BA}` `\vec{v}`. Neste caso, `\vec{u}` e `\vec{v}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E assim, pela regra do triângulo, `\vec{u}+\vec{v} = \vec{0}`. Neste caso, dizemos que `\vec{u}` e `\vec{v}` são :index:`vetores simétricos`, ou ainda que, `\vec{u}` é o simétrico de `\vec{v}`. 
+* Tome dois vetores `\vec{u}` e `\vec{v}` tais que `\overrightarrow{AB}` é um representante de `\vec{u}` e `\overrightarrow{BA}` um representante de `\vec{v}`. Neste caso, `\vec{u}` e `\vec{v}` possuem o mesmo módulo e direção, mas possuem sentidos opostos. E assim, pela regra do triângulo, `\vec{u}+\vec{v} = \vec{0}`. Neste caso, dizemos que `\vec{u}` e `\vec{v}` são :index:`vetores simétricos`, ou ainda que, `\vec{u}` é o simétrico de `\vec{v}`. 
    
 .. admonition:: Atenção! 
 
@@ -733,7 +740,7 @@ para qualquer vetor `\vec{v}`.
    
    .. _fig-geometria-operacoesvetores-10:
 
-   .. figure:: _resources/VetoresSimetricos_2.png
+   .. figure:: _resources/VetoresSimetricos_3.png
       :width: 400px
       :align: center
 
@@ -751,13 +758,33 @@ para qualquer vetor `\vec{v}`.
       
       Vetor diferença `\vec{v}-\vec{u}`. 
   
-* [VER] Associatividade da Soma: 
+* Associatividade da soma: considere `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}` representantes dos vetores `\vec{u}, \vec{v}` e `\vec{w}`, respectivamente, como na :numref:`fig-geometria-operacoesvetores-10`. 
+
+.. _fig-geometria-operacoesvetores-10:
+
+   .. figure:: _resources/IMG_3464.jpg
+      :width: 300px
+      :align: center
+      
+      Associatividade da soma de vetores. 
+  
+  
+Logo, `\overrightarrow{AC}` é um representante de `\vec{u} + \vec{v}` . Somando `\vec{u} + \vec{v}` com `\vec{w}` através de seus representantes `\overrightarrow{AC}` e `\overrightarrow{CD}`, respectivamente, obtemos o vetor soma `(\vec{u} + \vec{v})+\vec{w}` que possui `\overrightarrow{AD}` como representante.
+
+Agora, podemos perceber também que `\overrightarrow{BD}` é um representante do vetor soma `\vec{v} + \vec{w}`. Assim, se somarmos `\vec{u}` com `\vec{v} + \vec{w}` através de seus representantes `\overrightarrow{AB}`  e `\overrightarrow{BD}`, encontramos o vetor soma `\vec{u} + (\vec{v}+\vec{w})` que pode ser representado por `\overrightarrow{AD}`. 
+
+Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v})+\vec{w}` e `\vec{u} + (\vec{v}+\vec{w})`. Como vetores que possuem representantes como mesmo módulo, direção e sentido são iguais, podemos concluir que:
+
 
 .. math::
   
   (\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w}).
 
-* [VER] Comutatividade da Soma: 
+* Comutatividade da soma: Observemos novamente a :numref:`fig-geometria-operacoesvetores-09`. Considerando
+`\overrightarrow{AB}` e `\overrightarrow{BD}` representantes dos vetores `\vec{u}` e `\vec{v}`, respectivamente, então, pela regra do triângulo,  temos que `\overrightarrow{AD}` é um representante do vetor soma `\vec{u}+\vec{v}`. 
+
+Por outro lado, se `\overrightarrow{AC}` e `\overrightarrow{CD}` são os representantes dos vetores `\vec{v}` e `\vec{u}`, respectivamente, então, novamente pela regra do triângulo, `\overrightarrow{AD}` é um representante do vetor soma `\vec{v}+\vec{u}`. Portanto, `\vec{u}+\vec{v}` e `\vec{v}+\vec{u}` podem ser representados pelo mesmo segmento orientado `\overrightarrow{AD}`. Assim, podemos concluir que 
+
 
 .. math::
   
