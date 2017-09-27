@@ -4,10 +4,8 @@
 Vetores do ponto de vista algébrico
 ***********************************
 
-Nesta seção você vai aprender a representar vetores através de um par ordenado de números reais, que serão chamados de *coordenadas do vetor*. 
-Esta representação possibilita que os computadores entendam e operem com vetores e também serão fundamentais para o estudo das transformações do plano, que serão estudadas mais adiante. 
-Além disso ela permite usar propriedades do conjunto dos números reais para justificar as propriedades das operações com vetores.
-
+Nesta seção você vai aprender a representar vetores no plano por meio de um par ordenado de números reais, que serão chamados de *coordenadas do vetor*. 
+Esta representação possibilita que os computadores entendam e operem com vetores e também serão fundamentais para o estudo das transformações do plano, que serão estudadas mais adiante. Além disso ela permite usar propriedades do conjunto dos números reais para justificar as propriedades das operações com vetores.
 
 .. _ativ-vetores-vetor-malha:
 
@@ -38,14 +36,31 @@ Reproduza a figura em seu caderno e faça o que se pede:
    
 #. Represente o vetor `3\vec{u}` na malha.
 #. Represente o vetor `-\vec{v}` com origem no ponto `A`.
-#. Represente o vetor `\vec{u}+\vec{v}` na malha com origem no ponto `A`.
 #. Represente o vetor `3\vec{u} + 4\vec{v}`.
+#. Represente o vetor `\vec{u}+\frac{1}{2}\vec{v}` na malha com origem no ponto `A`.
 
 .. #. Represente o vetor `4\vec{v}` na malha.
 
 .. admonition:: Resposta 
 
-   texto da resposta.
+   .. tikz:: 
+
+      \begin{scope}[scale=1.3]
+      \draw[step=.5cm,gray,very thin] (-0.05,-0.05) grid (2.05,2.05);
+      \draw[-latex, thick, blue] (0,-0.01) -- (1.5,-0.01);
+      \draw[-latex, thick, red] (0.,0.02) -- (.5,0.02);
+      \draw[-latex, thick, red] (0,0) -- (0,.5);
+      \draw[-latex, thick, blue] (1,1) -- (1,.5);
+      \draw[-latex, thick, blue] (1,1) -- (1.5,1.25);
+      \draw[-latex, thick, blue] (0,0) -- (1.5,2);
+      \fill (1,1) circle (0.05) node[below left]{$A$};
+      \node at (.25,-.25){$\vec{u}$};
+      \node at (-.25,.25){$\vec{v}$};
+      \node at (1.25,-.25){$3\vec{u}$};
+      \node at (1.2,.65){$-\vec{v}$};
+      \node at (2,1.15){$\vec{u}+\frac{1}{2}\vec{v}$};
+      \node at (.75,1.75){$3\vec{u}+4\vec{v}$};
+      \end{scope}
    
 
 .. _ativ-vetores-combinacao:
@@ -58,11 +73,11 @@ Atividade: expressão algébrica dado vetor
    **Objetivos específicos:** 
    
    #. usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha, e 
-   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `x` e `y` tais que `\vec{w}=x\vec{u}+y\vec{v}`. 
+   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a\vec{u}+b\vec{v}`. 
    
    
-   **Recomendações e sugestões:**
-
+   **Recomendações e sugestões:** Se for necessário, relembre a linguagem usada na questão anterior para que os estudantes entendam o que é esperado no item a). Não é esperado que o estudante consiga justificar precisamente a pergunta do item b). Espera-se que ele reflita a respeito. Isso será justificado quando identificarmos as coordenadas de um vetor com as de um ponto do plano. Se você dispuser de projetor ou laboratório de informática, o link disponível no item b) pode contribuir bastante para a discussão.
+   
 Com a mesma linguagem da atividade anterior, faça o que se pede:
 
 .. tikz:: 
@@ -83,17 +98,26 @@ Com a mesma linguagem da atividade anterior, faça o que se pede:
    \end{scope}
 
 #. obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
-#. Para refletir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `x` e `y` tais que o vetor `\vec{w}` se escreve como 
+#. Para refletir e discutir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `a` e `b` tais que o vetor `\vec{w}` se escreve como 
 
    .. math:: 
    
-      \vec{w} = x\vec{u} + y\vec{v}.
+      \vec{w} = a\vec{u} + b\vec{v}.
    
-   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê?
+   Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê? Este `aplicativo do GeoGebra <https://www.geogebra.org/m/ZUgkeWXW>`_ pode ajudar a responder e contribuir para a reflexão.
    
 .. admonition:: Resposta 
 
-   texto da resposta
+   #. `\vec{a}=\vec{u} + 2\vec{v}`, 
+   
+      `\vec{b}=3\vec{u} + 2\vec{v}`, 
+      
+      `\vec{c}=-\vec{u}`, 
+      
+      `\vec{d}=-\vec{u} + \vec{v}` e 
+      
+      `\vec{e}=-\vec{u}-\vec{v}`.
+   #. Não. Parece que qualquer vetor do plano se escreve como `x\vec{u} +y\vec{v}`, bastando para isso tomar valores apropriados para `x` e `y`. 
 
 Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. 
 Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y` e isto deve significar: tomando como origem um ponto `O` qualquer do plano, `\vec{w}` é o vetor `\overrightarrow{OP}` onde `P` é obtido andando-se `x` unidades na direção e sentido de `\vec{u}` a partir de `O` e então andando-se `y` unidades na direção e sentido de `\vec{v}`. Veja o exemplo.
@@ -131,18 +155,18 @@ Embora uma discussão mais geral seja útil para estudantes da área de exatas, 
 
 .. No primeiro Para o professor do capítulo devemos alertar que esta seção pode se iniciar neste próximo parágrafo, caso o professor julgue melhor assim.
 
-Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas. Pretendemos relacionar este conhecimento com o de vetores. 
+Você deve lembrar dos anos anteriores como marcar pontos num plano em que foi fixado um sistema de coordenadas `OXY`. Pretendemos relacionar este conhecimento com o de vetores. Daqui por diante nesta seção, sempre que for dado um sistema de coordenadas suporemos definidos os pontos `O=(0,0)`, `X=(1,0)` e `Y=(0,1)`.
 
 Se a atividade a seguir parecer difícil, sugerimos que realize antes as atividades de revisão neste link (**INSERIR LINK PARA ALGUMAS DAS ATIVIDADES ONLINE DO SESAMATH - TRADUZIDAS - DE INTRODUÇÃO DO SISTEMA DE COORDENADAS NO PLANO**).
 
 .. _ativ-vetores-coordenadas-vetor-posicao:
 
-Atividade: coordenadas do vetor posição
----------------------------------------
+Atividade: coordenadas de um vetor
+----------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** reconhecer que num sistema de coordenadas retangulares `OXY` as coordenadas de um vetor `\vec{w}` qualquer em relação aos vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` coincidem com as da extremidade de `\vec{w}` quando posicionamos a origem deste vetor em `O`.
+   **Objetivos específicos:** reconhecer que num sistema de coordenadas retangulares `OXY` as coordenadas de um vetor `\vec{w}` qualquer em relação aos vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` coincidem com as da extremidade final de `\vec{w}` quando posicionamos a extremidade inicial deste vetor em `O`.
    
    **Recomendações e sugestões:** 
    
@@ -170,16 +194,19 @@ Na figura temos um sistema de coordenadas no plano. Considerando os pontos `O=(0
    \draw[-latex, very thick, black] (0,0)--(1,1.5);
    \end{scope}
 
-#. Determine os vetores posição dos pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações com relação à origem `O=(0,0)` do sistema de coordenadas. Por exemplo, `\overrightarrow{OA}= 2 \overrightarrow{OX} + 3 \overrightarrow{OY}`, assim as coordenadas de `\overrightarrow{OA}` são `x=2` e `y=3`.
-#. Faça o mesmo para um ponto `P=(x,y)`, supondo que `x` e `y` são números reais fixados, mas desconhecidos por você. 
-
- 
+#. Determine as coordenadas dos vetores posição com relação à origem `O` do sistema de coordenadas para os pontos `A=(2,3)`, `B=(-3,4)` e `C=(-4,-3)` em termos de `\overrightarrow{OX}`, `\overrightarrow{OY}` e suas operações. Por exemplo, `\overrightarrow{OA}= 2 \overrightarrow{OX} + 3 \overrightarrow{OY}`, assim as coordenadas de `\overrightarrow{OA}` são `x=2` e `y=3`.
+#. Faça o mesmo para um ponto `P=(a,b)`, supondo que `a` e `b` são números reais fixados, mas desconhecidos por você. 
 
 .. admonition:: Resposta 
 
-   texto da resposta
+   #. `\overrightarrow{OA} = 2\overrightarrow{OX} + 3\overrightarrow{OY}`, logo as coordenadas são `x=2` e `y=3`.
+   
+      `\overrightarrow{OB} = -3\overrightarrow{OX} + 4\overrightarrow{OY}`, logo as coordenadas são `x=-3` e `y=4`.
+      
+      `\overrightarrow{OC} = -4\overrightarrow{OX} - 3\overrightarrow{OY}`, logo as coordenadas são `x=-4` e `y=-3`.
+   #. `\overrightarrow{OP} = a\overrightarrow{OX} + b\overrightarrow{OY}`, logo as coordenadas são `x=a` e `y=b`.
 
-Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OP}`, para algum ponto `P` do plano.  Na atividade acima você deve ter observado que dado um ponto `P=(x,y)` qualquer, as coordenadas do vetor posição `\overrightarrow{OP}` são também `x` e `y` (pois `\overrightarrow{OP} = x\overrightarrow{OX} + y\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
+Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(0,0)` do sistema de coordenadas de modo que `\vec{v}=\overrightarrow{OP}`, para algum ponto `P` do plano.  Na atividade acima você deve ter observado que dado um ponto `P=(a,b)` qualquer, as coordenadas do vetor posição `\overrightarrow{OP}` são também `a` e `b` (pois `\overrightarrow{OP} = a\overrightarrow{OX} + b\overrightarrow{OY}`). Isto torna natural a seguinte convenção: 
 
 .. admonition:: Notação
    
@@ -187,12 +214,12 @@ Qualquer vetor `\vec{v}` do plano pode ser representado com origem no ponto `O=(
    
    .. math::
    
-      \vec{v} = (x,y) 
+      \vec{v} = (a,b) 
    
-   para indicar que `\vec{v} = x\overrightarrow{OX} + y\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `P` tal que `\vec{v}=\overrightarrow{OP}`.
+   para indicar que `\vec{v} = a\overrightarrow{OX} + b\overrightarrow{OY}`, ou seja, representa-se o vetor `\vec{v}` do mesmo modo que o ponto `P` tal que `\vec{v}=\overrightarrow{OP}`.
 
 Deste modo, os vetores `\overrightarrow{OX}` e `\overrightarrow{OY}` são representados por `\overrightarrow{OX}=(1,0)` e `\overrightarrow{OY}=(0,1)`. 
-Daqui para frente não faremos mais diferença entre o ponto `P=(x,y)` e o vetor posição `\overrightarrow{OP}=(x,y)`.
+Daqui para frente não faremos mais diferença entre o ponto `P=(a,b)` e o vetor posição `\overrightarrow{OP}=(a,b)`.
 
 Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda. Este vetor é o mesmo representado na figura da direita. Em coordenadas temos: 
 
@@ -243,30 +270,45 @@ Para fixar as ideias vejamos o exemplo do vetor `\vec{v}` da figura da esquerda.
    \end{scope}
    \end{scope}
 
-Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, andaremos 3 na direção do vetor `\overrightarrow{OX}` e 4 na direção do vetor `\overrightarrow{OY}` para atingir a extremidade de `\vec{v}`.
+Ou seja, esteja onde estiver a origem do vetor `\vec{v}`, a partir dela, deslocaremos 3 pelo vetor `\overrightarrow{OX}` e 4 na pelo vetor `\overrightarrow{OY}` para atingir a extremidade final de `\vec{v}`.
 
 .. dizer para o professor que o sistema de coordenadas será sempre suposto ortogonal a menos de menção explícita do contrário.
 
 Vale a pena registrar algumas observações acerca das coordenadas de um vetor:
 
-#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua nova extremidade conforme escrito acima. Também dados quaisquer dois números reais `x` e `y`, existe um vetor com coordenadas `(x,y)`, basta considerar o vetor `\vec{v}=x\overrightarrow{OX} + y\overrightarrow{OY}`. Veja a figura.
+#. qualquer vetor do plano pode ser expresso em termos de `\overrightarrow{OX}` e `\overrightarrow{OY}` porque pode ser colocado com origem em `O = (0,0)` e terá coordenadas iguais às de sua nova extremidade conforme escrito acima. Também dados quaisquer dois números reais `a` e `b`, existe um vetor com coordenadas `(a,b)`, basta considerar o vetor `\vec{v}=a\overrightarrow{OX} + b\overrightarrow{OY}`. Veja a figura.
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=nao-inteiras.jpg
-      :width: 250px
-      :align: center
+   .. tikz:: 
+
+      \begin{scope}[scale=.7]
+       \draw[-latex,very thick, black] (-2,0) -- (3,0) node[below]{$x$};
+       \draw[-latex,very thick, black] (0,-2) -- (0,2) node[left]{$y$};
+       \draw[-latex,very thick, blue] (0,0) -- (3/2,-1.4142) node[below right, black]{$\vec{v}=(\frac{3}{2},-\sqrt{2})$};
+       \draw[dashed] (3/2,0)--(3/2,-1.4142);
+       \draw[dashed] (0,-1.4142)--(3/2,-1.4142);
+       \draw (3/2,0) circle (.03) node[above] {$\frac{3}{2}$};
+       \draw (0,-1.4142) circle (.03) node[left] {$-\sqrt{2}$};
+       \node[above left] at (0,0) {$O$};
+       \end{scope}
+   
+#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(a,b)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(a,b)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(a,b)` é 
+
+   .. tikz:: 
+
+      \begin{scope}[scale=.7]
+       \draw[-latex,very thick, black] (-.5,0) -- (3,0) node[below]{$x$};
+       \draw[-latex,very thick, black] (0,-.5) -- (0,3) node[left]{$y$};
+       \draw[-latex,very thick, blue] (0,0) -- (2.5,1.5) node[above right, black]{$P=(a,b)$};
+       \draw[dashed] (2.5,0)--(2.5,1.5);
+       \draw[dashed] (0,1.5)--(2.5,1.5);
+       \draw (2.5,0) rectangle (2.2,.3);
+       \node[below left] at (0,0) {$O$};
+       \node[below] at (1.25,0) {$a$};
+       \node[right] at (2.5,.75) {$b$};
+       \node at (9,1.5) {$|\vec{v}|=\sqrt{a^2+b^2}.$};
+       \end{scope}
       
-      `\overrightarrow{OA}=(\frac{3}{2},-\sqrt{2})`
-
-#. as coordenadas favorecem o cálculo do módulo de um vetor. Se `\vec{v}=(x,y)`, então o comprimento deste vetor coincide com o comprimento do segmento `OP`, onde `P=(x,y)`. Assim, usando o Teorema de Pitágoras, se necessário, obtemos que o :index:`módulo <módulo>` de `\vec{v}=(x,y)` é 
-
-   .. math::
-
-      |\vec{v}|=x^2+y^2.
-
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=modulo.jpg
-      :width: 250px
-      
-   observe que esta expressão não depende do sinal das coordenadas `x` e `y` do vetor já que para qualquer `a \in \mathbb{R}` vale `a^2 = (-a)^2`. Deste modo o módulo de um vetor é dado pela fórmula acima mesmo que ele não aponte para o primeiro quadrante.
+   observe que esta expressão não depende do sinal das coordenadas `a` e `b` do vetor já que para qualquer `x \in \mathbb{R}` vale `x^2 = (-x)^2`. Deste modo o módulo de um vetor é dado pela fórmula acima mesmo que ele não aponte para o primeiro quadrante.
    
 **DAQUI A NAVEGAÇÃO DEVERIA IR PARA**
 https://www.umlivroaberto.com/BookCloud/Volume_1/master/view/GE101-1A

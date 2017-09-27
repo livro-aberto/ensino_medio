@@ -14,11 +14,11 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
 
 Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia-poligonos.png
+.. figure:: _resources/homotetia-poligonos.png
    :width: 400px
    :align: center
    
-   `Link texto <http://example.com/>`_
+   Homotetias de razão 2 e `\frac{1}{3}`
 
 .. _ativ-vetores-homotetia:
 
@@ -27,53 +27,172 @@ Atividade: homotetia
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** reconhecer que dados `a\in \mathbb{R}` e `(x,y) \in \mathbb{R}^2` temos `a(x,y)=(ax,ay)`. 
+   **Objetivo específico:** reconhecer que dados `c\in \mathbb{R}` e `(a,b) \in \mathbb{R}^2` temos `c(a,b)=(ca,cb)`. 
    
    **Recomendações e sugestões:** 
    
    #. Caso julgue necessário, após a atividade, você pode justificar o fato geral `a(x,y)=(ax,ay)` para seus estudantes utilizando a mesma ideia da atividade, mas você deve trocar por uma homotetia de razão `a`. Será necessário considerar `a>1` ou `0<a<1` para desenhar a figura. Mas não há perda de generalidade porque os argumentos são os mesmos nos dois casos. 
-   #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! Na :ref:`multiplicacao-escalar` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas. Aqui é importante observar que `3(3,2)= \overrightarrow{OA'} + \overrightarrow{OC'} = 9\overrightarrow{OX}+ 6\overrightarrow{OY} =(9,6)`.
-   #. Os estudantes podem não perceber que existe uma explicação para o fato da homotetia de um retângulo, ser ainda um retângulo. Observe que isso foi utilizado na solução. Existem duas maneiras de se observar que o ângulo \widehat{OA'B'}=90^{\circ}`: uma é usar a semelhança dos triângulos `AOB` e `A'OB'`, que podem ser obtidas pelos casos LAL (observando que `OB'=3OB` e `OA'=3OA`).
+   #. Os estudantes podem entender `3(3,2)=(9,6)` simplesmente como uma regra. Não é isso o que se pretende! No final da seção :ref:`cap-vetores` definiu-se `a\vec{v}` para `a\in \mathbb{R}` e isso não tinha relação com as coordenadas.
+   #. Observe que da solução obtém-se que a homotetia preserva a forma das figuras, isto é, origina uma figura semelhante à original. 
+   #. Vale enfatizar que a multiplicação por um número real não nulo não altera a direção de um vetor.
 
 
-Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,2)` e `C=(0,2)`. 
+Na figura temos o retângulo `OABC` e é dado um sistema de coordenadas em que `O=(0,0)`, `A=(3,0)`, `B=(3,4)` e `C=(0,4)`. 
 Considere uma homotetia de centro `O` e razão `r=3`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=homotetia1234.jpg
-   :width: 400px
-   :align: center
-   
-   Incluir um ponto dentro do retângulo com o rótulo `P=(x,y)`
+.. tikz:: 
 
-#. Reproduza a figura em seu caderno e represente os pontos `A'` e `C'`, correspondentes de `A` e `C` pela homotetia.
+   \begin{scope}[scale=.3]
+   \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+   \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+   \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+   \fill (0,0) circle (0.13) node[below left]{$O$};
+   \fill (3,0) circle (0.13) node[below]{$A$};
+   \fill (3,4) circle (0.13) node[right]{$B$};
+   \fill (0,4) circle (0.13) node[left]{$C$};
+   \fill (2,1.5) circle (0.13) node[left]{$P$};
+   
+   \end{scope}
+   
+#. Reproduza a figura em seu caderno e represente os pontos `A'`, `B'` e `C'`, correspondentes de `A`, `B` e `C` pela homotetia.
 #. Calcule as coordenadas dos pontos `A'` e `C'`.
-#. Se `B'` é o correspondente de `B` pela homotetia, então `\overrightarrow{OB'}=3\overrightarrow{OB}=3(3,2)`. Use os itens a) e b) para explicar por que `3(3,2)=(9,6)`.
-#. Considere um ponto `P=(x,y)` do interior do retângulo `OABC`. Use as ideias dos itens anteriores para explicar que `3(x,y)=(3x,3y)`.
+#. Calcule as coordenadas de `B'`. 
+#. Considere um ponto `P=(a,b)` do interior do retângulo `OABC`. Use os argumentos dos itens anteriores para explicar que `3(a,b)=(3a,3b)`.
 
 .. admonition:: Resposta 
 
-   texto da resposta
+   #. 
+   
+      
+      .. tikz:: 
 
-.. Observação: Para que a argumentação fique completa na solução da atividade acima, o estudante precisará usar o caso LAL de semelhança porque o triângulo OX'V' precisa ser retângulo em X'. Ele conhece isso do 9º ano?
+         \begin{scope}[scale=.3]         
+         \draw[fill=lightgray!30] (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[fill=lightgray] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         \fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[right]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[left]{$P$};
+         \draw[-latex,very thick, blue] (0,0)--(9,0);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,0);
+         \draw[-latex,very thick, blue] (0,0)--(0,12);
+         \draw[-latex, thick, red] (0.1,0)--(0.1,4);
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0.1,0)--(3.1,4);
+         \fill (2,1.5) circle (0.13) node[right]{$P$};
+         \fill (6,4.5) circle (0.13) node[right]{$P'$};
+         \end{scope}
+   #. Da definição de homotetia obtemos que `\overrightarrow{OA'}=3\overrightarrow{OA}`. Como `|\overrightarrow{OA}|=3`, temos `|\overrightarrow{OA'}|=3 \times 3 = 9` e, portanto, `A'=(9,0)`. De modo análogo justifica-se que `C'=(0,12)`.
+   #. Digamos que `B'=(x',y')`, o triângulo de lados 3, 4 e `|\overrightarrow{OB}|=5` e o triângulo de lados `x'`, `y'` e `|\overrightarrow{OB'}|=15` são semelhantes porque têm dois ângulos iguais. 
+   
+      .. tikz:: 
 
-Uma explicação parecida com aquela apresentada no item d) da atividade anterior serve para garantir que se um vetor `\vec{v}` tem coordenadas `(x,y)` e `a\in \mathbb{R}`, então o vetor `a\vec{v}=(ax,ay)`.
+         \begin{scope}[scale=.3]
+         
+         %\fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13) node[below]{$A$};
+         \fill (3,4) circle (0.13) node[above]{$B$};
+         \fill (0,4) circle (0.13) node[left]{$C$};
+         %\fill (2,1.5) circle (0.13) node[above]{$P$};
+         %\fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \fill[gray] (0,0)--(3,0)--(3,4)--cycle;
+         \fill[lightgray!30] (0,0)--(9,0)--(9,12)--cycle;                  
+         \draw[dashed] (3,4)--(3,0);
+         \draw[dashed] (9,12)--(9,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(9,12);
+         \draw[-latex, thick, red] (0,0)--(3,4);
+         
+         \node[below] at (1.5,0){3};
+         \node at (4.5,-1){$x'$};
+         \node[right] at (3,2){4};
+         \node[right] at (9,6){$y'$};
+         
+         \draw (9,0) rectangle (8.6,.4);
+         \draw (3,0) rectangle (2.6,.4);
+         \end{scope}
+      
+      Logo `x'= 3 \times 3 = 9` e `y'=3 \times 4 = 12`. Conclusão: `P'=(9,12)`. 
+   #. Como antes denotemos `P'=(a',b')`. Novamente o triângulo de lados `a`, `b` e `OP` é semelhante ao de lados `a'`, `b'` e `OP'` porque têm dois ângulos iguais. 
+   
+      .. tikz:: 
+
+         \begin{scope}[scale=.3]
+         
+         \fill (9,0) circle (0.13) node[below]{$A'$};
+         \fill (9,12) circle (0.13) node[right]{$B'$};
+         \fill (0,12) circle (0.13) node[left]{$C'$};
+         \fill (0,0) circle (0.13) node[below left]{$O$};
+         %\fill (3,0) circle (0.13);
+         %\fill (3,4) circle (0.13) node[above]{$B$};
+         %\fill (0,4) circle (0.13) node[left]{$C$};
+         \fill (2,1.5) circle (0.13) node[above]{$P$};
+         \fill (6,4.5) circle (0.13) node[above]{$P'$};
+         
+         \draw[fill=lightgray] (0,0)--(2,1.5)--(2,0)--cycle;
+         \fill[lightgray!30] (0,0)--(6,4.5)--(6,0)--cycle;
+         %\draw[thin] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+         \draw (0,0)--(9,0)--(9,12)--(0,12)--cycle;
+         \draw[dashed] (6,4.5)--(6,0);
+         \draw[dashed] (2,1.5)--(2,0);
+         
+         \draw[-latex] (-2,0) -- (12,0) node[below right]{$x$};
+         \draw[-latex] (0,-2) -- (0,15) node[left]{$y$};
+         \draw[-latex,very thick, blue] (0,0)--(6,4.5);
+         \draw[-latex, thick, red] (0,0)--(2,1.5);
+         
+         \node[below] at (1,0){$a$};
+         \node at (3.5,-1){$a'$};
+         \node[right] at (2,.75){$b$};
+         \node[right] at (6,2.25){$b'$};
+         
+         \draw (6,0) rectangle (5.6,.4);
+         \draw (2,0) rectangle (1.6,.4);
+         \end{scope}
+      
+      Como `OP'=3OP`, a razão de semelhança é 3 e, portanto, `a'=3a` e `b'=3b`. Conclusão: `P'=(3a,3b)`, ou seja, `3(a,b)=(3a,3b)`.
+
+.. Como `B'` é o correspondente de `B` pela homotetia, `\overrightarrow{OB'}=3\overrightarrow{OB}=3(3,2)`. Use semelhança de triângulos para explicar que `3(3,2)=(9,6)`.
+
+Na atividade anterior, trocando a razão de homotetia por outro número real positivo, digamos `c` e usando os mesmos argumentos podemos garantir que se um vetor `\vec{v}` tem coordenadas `(a,b)`, então o vetor `c\vec{v}=(ca,cb)`.
 
 Na seção anterior definimos o simétrico do vetor `\vec{v}` como o vetor que tem mesma direção, mesmo módulo, mas tem sentido oposto ao de `\vec{v}`.
 Lá decidiu-se denotá-lo por `-\vec{v}` e ao se definir a mutiplicação de `\vec{v}` por um número real ficou claro que `(-1)\vec{v}=-\vec{v}`. 
-Assim, se `\vec{v}=(x,y)`, então `-\vec{v} = (-x,-y)`.
+Assim, se `\vec{v}=(a,b)`, então `-\vec{v} = (-a,-b)`.
 
+Deste modo podemos estabelecer que para qualquer número `c \in \mathbb{R}` e qualquer vetor `\vec{v}=(a,b)` temos
+
+.. math::
+
+   c(a,b)=(ca,cb).
 
 .. glossary:: 
    
    Translação
-      A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}` (ou seja, `\overrightarrow{OP'}=\overrightarrow{OP} + \vec{v}`). Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+      A translação de um ponto `P` do plano por um vetor `\vec{v}` é o ponto `P'=P+\vec{v}`. Quando dizemos simplesmente *a translação por* `\vec{v}` nos referimos a uma correspondência que associa cada ponto `P` do plano ao ponto `P'` como acima.
+      
+      
+      .. tikz:: Translação do ponto P com relação ao vetor v
 
-      .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294811&w=500&h=281&tok=1bf65d&media=translacao1.jpg
-         :width: 400px
-         :align: center
-
-
+         \draw[-latex, red, very thick] (3,1)--(5,2.5);
+         \fill (3,1) circle (0.05) node[below]{$P$};
+         \fill (5,2.5) circle (0.05) node[below]{$P'$};
+         \node at (4,2.2) {$\vec{v}$};
+      
 .. _ativ-vetores-translacao:
 
 Atividade: translação num plano
@@ -90,56 +209,195 @@ Atividade: translação num plano
    
    **Recomendações e sugestões:**
 
+Considere o triângulo `ABC` de vértices `A=(-1,4)`, `B=(3,1)` e `C=(2,-1)`.
 
 Parte I.
 
 A figura a seguir representa a translação do triângulo `ABC` pelo vetor `\vec{u}=(4,0)`, resultando no triângulo `A'B'C'`.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?t=1504294818&w=500&h=281&tok=fb1c9c&media=translacao2.jpg
-   :width: 400px
-   :align: center
+.. tikz:: Translação horizontal do triângulo ABC
 
-   Translação de um triângulo 
+   \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+   \draw[fill=lightgray!30,xshift=4cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+      
+   \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+   \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (a) circle (0.05) node[left]{$A$};
+   \fill (b) circle (0.05) node[below left]{$B$};
+   \fill (c) circle (0.05) node[below left]{$C$};
+   \fill (a') circle (0.05) node[below left]{$A'$};
+   \fill (b') circle (0.05) node[below left]{$B'$};
+   \fill (c') circle (0.05) node[below left]{$C'$};
+   \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+   \fill (5,2)coordinate(p') circle (0.05) node[below left]{$P'$};
+   
+   \draw[-latex,thick,red] (a)--(a');
+   \draw[-latex,thick,red] (b)--(b');
+   \draw[-latex,thick,red] (c)--(c');
+   \draw[-latex,thick,red] (p)--(p');
 
 #. Determine as coordenadas dos vértices do triângulo `A'B'C'`.
-#. Considere um ponto genérico `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
+#. Considere um ponto genérico `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P'`, resultado da translação de `P` por `\vec{u}`.
 
 Parte II.
 
-A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-2)`, resultando no triângulo `A''B''C''`.
+A figura a seguir representa a translação do mesmo triângulo `ABC` pelo vetor `\vec{v}=(0,-3)`, resultando no triângulo `A''B''C''`.
 
+.. tikz:: Translação horizontal do triângulo ABC
 
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=translacao3.jpg
-   :width: 400px
-   :align: center
-
-   Figura errada, mas similar à correta.
-
+   \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+   \draw[fill=lightgray!30,yshift=-3cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+      
+   \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+   \draw[-latex] (0,-4) -- (0,5) node[left]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \fill (a) circle (0.05) node[left]{$A$};
+   \fill (b) circle (0.05) node[below left]{$B$};
+   \fill (c) circle (0.05) node[below left]{$C$};
+   \fill (a') circle (0.05) node[below left]{$A'$};
+   \fill (b') circle (0.05) node[below left]{$B'$};
+   \fill (c') circle (0.05) node[below left]{$C'$};
+   \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+   \fill (1,-1)coordinate(p') circle (0.05) node[below left]{$P'$};
+   
+   \draw[-latex,thick,red] (a)--(a');
+   \draw[-latex,thick,red] (b)--(b');
+   \draw[-latex,thick,red] (c)--(c');
+   \draw[-latex,thick,red] (p)--(p');
+   
 #. Determine as coordenadas dos vértices do triângulo `A''B''C''`.
-#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
+#. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `P''`, resultado da translação de `P` por `\vec{v}`.
 
 Parte III.
 
 Translada-se o triângulo `ABC` por `\vec{u}` obtendo o triângulo `A'B'C'` então translada-se este último triângulo por `\vec{v}`.
 
-#. Determine as coordenadas dos vértices do triângulo que é resultado desta composição de translações.
-#. Considere um ponto `P=(x,y)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
-#. Escreva uma expressão vetorial (isto é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas) para o ponto `Q`.
+#. Determine as coordenadas dos vértices do triângulo `DEF` que é resultado desta composição de translações.
+#. Considere um ponto `P=(a,b)` do triângulo `ABC`. Determine as coordenadas do ponto `Q`, resultado desta composição de translações.
+#. O resultado da composição do item b) acima seria diferente se fizéssemos primeiro a translação de `P` por `\vec{v}` obtendo `P''` e depois fizéssemos a translação de `P''` por `\vec{u}`? Justifique sua resposta.
+#. Escreva uma expressão vetorial para o ponto `Q` (uma expressão vetorial é, uma igualdade envolvendo vetores e suas operações, mas sem o uso de coordenadas, veja a definição de translação acima por exemplo). 
 #. Esta composição de translações é uma translação? Se sim, diga qual é o vetor pelo qual os pontos são transladados.
 
 .. admonition:: Resposta 
 
-   texto da resposta
+   Parte I
 
+   #. Como o ponto `A'` é a translação horizontal do ponto `A` de 4 unidades na direção e sentido do eixo `x`, temos `A'=(-1+4,4)=(3,4)`.
+   
+      .. tikz:: Translação horizontal do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[xshift=4cm] (-1,4)coordinate(a');
+      
+         \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[above]{$A=(-1,4)$};
+         \fill (a') circle (0.05) node[above]{$A'=(3,4)$};
+         
+         \draw[dashed] (a) -- (-1,0);
+         \draw[dashed] (a') -- (3,0);
+         
+         \node[below] at (1,4) {4};
+            
+         \draw[-latex,thick,red] (a)--(a');
+         
+   
+      Com o mesmo argumento obtemos `B'=(3+4,1)=(7,1)` e `C'=(2+4,-1)=(6,-1)`.
+   #. Qualquer ponto `P=(a,b)`, quando transladado horizontalmente de 4 unidades na direção e sentido do eixo `x` terá sua primeira coordenada aumentada em 4 unidades, portanto, `P'=(a,b)+(4,0) = (a+4,b)`.
+   
+   Parte II
+   
+   #. Como o ponto `A''` foi obtido movendo-se o ponto `A` duas unidades para baixo, temos `A''=(-1,4-3)=(-1,1)`.
+
+      .. tikz:: Translação horizontal do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[yshift=-3cm] (-1,4)coordinate(a');
+      
+         \draw[-latex] (-2,0) -- (4,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[above]{$A=(-1,4)$};
+         \fill (a') circle (0.05) node[below]{$A''=(-1,1)$};
+         
+         \draw[dashed] (a) -- (0,4);
+         \draw[dashed] (a') -- (0,1);
+         
+         \node[left] at (-1,2.5) {3};
+            
+         \draw[-latex,thick,red] (a)--(a');
+   
+      Do mesmo modo obtemos `B''=(3,1-3)=(3,-2)` e `C''=(2,-1-3)=(2,-4)`.
+      
+   #. Qualquer ponto `P=(a,b)`, quando transladado -3 unidades na mesma direção e sentido oposto ao do eixo `y` terá sua segunda coordenada diminuída de 3 unidades, portanto, `P''=(a,b)+(0,-3) = (a,b-3)`.
+   
+   Parte III
+   
+   #. Do item a) da Parte I conhecemos as coordenadas de `A'`, `B'` e `C'`. Do item b) da Parte II, sabemos que a translação vertical de um ponto  de -3 unidades altera a segunda coordenada do ponto em -3, portanto, temos `D =(3,4-3)=(3,1)`, `E=(7,1-3)=(7,0)` e `F=(6,-1-3)=(6,-4)`.
+   
+      
+      .. tikz:: Composição de translações do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[fill=lightgray!30,xshift=4cm] (-1,4)coordinate(a')--(3,1)coordinate(b')--(2,-1)coordinate(c')--cycle;
+         \draw[fill=lightgray!30,xshift=4cm,yshift=-3cm] (-1,4)coordinate(d)--(3,1)coordinate(e)--(2,-1)coordinate(f)--cycle;
+      
+         \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[left]{$A$};         
+         \fill (c) circle (0.05) node[below left]{$C$};
+         \fill (a') circle (0.05) node[below left]{$A'$};
+         \fill (b') circle (0.05) node[below left]{$B'$};
+         \fill (c') circle (0.05) node[below left]{$C'$};
+         \fill (d) circle (0.05) node[left]{$D=B$};
+         \fill (e) circle (0.05) node[below left]{$E$};
+         \fill (f) circle (0.05) node[below left]{$F$};
+         \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+         \fill (5,2)coordinate(p') circle (0.05) node[below left]{$P'$};
+         \fill (5,-1)coordinate(q) circle (0.05) node[below left]{$Q$};
+   
+         \draw[-latex,thick,red] (a')--(d);
+         \draw[-latex,thick,red] (b')--(e);
+         \draw[-latex,thick,red] (c')--(f);
+         \draw[-latex,thick,red] (p')--(q);
+
+     
+   #. Vejamos: o ponto procurado é `P'' + \vec{u}` que tem as  mesmas coordenadas que `P`, só que com 4 somado à primeira, então `P'' + \vec{u} = (a+4,b-3) = Q`. Ou seja, obtém-se o mesmo ponto se translando `P` por `\vec{u}` e o resultado por `\vec{v}` que transladando `P` por `\vec{v}` e o resultado por `\vec{u}`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`. Do item b) da Parte I sabemos que `P' = (a + 4,b)`. Do item b) da Parte II sabemos que as coordenadas da translação de um ponto por `\vec{v}` são as coordenadas do ponto com a segunda subtraída de -3, então `Q = P' + \vec{v} = (a+4,b-3)`.
+   #. O ponto `Q` é o resultado da translação de `P'` por `\vec{v}`, assim `Q = P' + \vec{v}`. Como `P'` é o resultado da translação de `P` por `\vec{u}`, temos `P'=P + \vec{u}`. Substituindo na expressão para `Q` obtemos `Q= (P+\vec{u}) + \vec{v}`.
+   #. Sim, pois o efeito é o mesmo que transladar `P` pelo vetor `\vec{u} + \vec{v} = 4\overrightarrow{OX} - 3 \overrightarrow{OY} = (4,-3)`. Então `Q=P+(\vec{u}+\vec{v})`. Ou seja, a composição da translação de `P` por `\vec{u}` e depois por `\vec{v}` é a translação de `P` pelo vetor `\vec{u}+\vec{v}`.
+   
+      .. tikz:: Composição de translações do triângulo ABC
+
+         \draw[fill=lightgray!30] (-1,4)coordinate(a)--(3,1)coordinate(b)--(2,-1)coordinate(c)--cycle;
+         \draw[fill=lightgray!30,xshift=4cm,yshift=-3cm] (-1,4)coordinate(d)--(3,1)coordinate(e)--(2,-1)coordinate(f)--cycle;
+      
+         \draw[-latex] (-2,0) -- (8,0) node[below right]{$x$};
+         \draw[-latex] (0,-1) -- (0,5) node[left]{$y$};
+         \fill (0,0) circle (0.05) node[below left]{$O$};
+         \fill (a) circle (0.05) node[left]{$A$};         
+         \fill (c) circle (0.05) node[below left]{$C$};
+         \fill (d) circle (0.05) node[above right]{$D=B$};
+         \fill (e) circle (0.05) node[below left]{$E$};
+         \fill (f) circle (0.05) node[below left]{$F$};
+         \fill (1,2)coordinate(p) circle (0.05) node[below left]{$P$};
+         \fill (5,-1)coordinate(q) circle (0.05) node[below left]{$Q$};
+   
+         \draw[-latex,thick,red] (a)--(d);
+         \draw[-latex,thick,red] (b)--(e);
+         \draw[-latex,thick,red] (c)--(f);
+         \draw[-latex,thick,red] (p)--(q);
+      
 Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`, as coordenadas da translação de `P` por `\vec{v}` são 
 
 .. math::
 
    P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tc.png
+.. figure:: _resources/tc.png
    :width: 300px
    :align: center
 
@@ -149,82 +407,74 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
 Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_1)` e  `\vec{v} = (a_2, b_2)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a_1 + b_2, a_1 + b_2)`.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-soma.png
+.. figure:: _resources/vetor-soma.png
    :width: 400px
    :align: center
 
    Vetor soma (trocar a notação na figura)
 
-.. admonition:: Pausa para reflexão
-
-   Se os pontos `A=(x_A,y_A)` e `B=(x_B,y_B)` são ambos diferentes da origem do sistema de coordenadas, então as coordenadas do vetor `\overrightarrow{AB}` não dependem da posição da origem `O=(0,0)` do sistema de coordenadas. 
-   De fato, temos 
-   
-   .. tikz::
-
-      \begin{scope}[scale=1.1]
-      \draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
-      \draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
-      \fill (0,0) circle (0.05) node[below left]{$O$};
-      \draw[-latex, very thick, red]  (-1,2)--(0,0);
-      \draw[-latex, very thick, red] (0,0)-- (1,.5);
-      \draw[-latex, very thick] (-1,2) -- (1,.5);
-      \node at (.3,1.4){$\overrightarrow{AB}$};
-      \node at (-.9,.8){$-\overrightarrow{OA}$};
-      \node at (.4,.5){$\overrightarrow{OB}$};
-      \end{scope}
-         
-   .. math::
-   
-      \overrightarrow{AB} =  B - A = (x_B - x_A, y_B - y_A).
-      
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-dados-extremos.jpg
-      :width: 200px
-      :align: center
-      
-      Coordenadas de um vetor a partir de suas extremidades
-
-   Lembre-se que o vetor `\overrightarrow{AB}` pode representar o :index:`deslocamento <deslocamento>` de `A` para `B`, o que nada tem a ver com `O`.
-      
-   Por outro lado, os vetores posição relativa, `\overrightarrow{OA}` e `\overrightarrow{OB}`, dos um ponto `A` e `B`, têm suas coordenadas alteradas quando escolhemos outro ponto do plano como origem do sistema de coordenadas. Isto é natural porque o :index:`vetor posição relativa  de um ponto <posição relativa>` `A` expressa a posição do ponto `A` em relação ao ponto `O`.
- 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=posicao.jpg
-      :width: 400px
-      :align: center
-
-      O vetor posição **depende** da posição da origem do sistema de coordenadas
-   
-.. esta 'Pausa para reflexão' acima pode ser substituída por uma atividade eletrônica com objetivo de levar o estudante a reconhecer que as coordenadas de um vetor não dependem da origem, mas que as coordenadas do vetor posição de um ponto dependem da origem do sistema de coordenadas.
-
 
 .. _ativ-vetores-coord-extremidades:
 
-Atividade: determinando um vetor a partir de suas extremidades
---------------------------------------------------------------
+Atividade: vetor de uma translação
+----------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** Determinar um vetor a partir de suas extremidades.
+   **Objetivos específicos:** usar translação para concluir que `\overrightarrow{AB} = (x_B-x_A, y_B-y_A)` num caso particular.
    
-   **Recomendações e sugestões:**
+   **Recomendações e sugestões:** A dificuldade dos estudantes deve permanecer na obtenção das coordenadas. Peça que eles escrevam a expressão vetorial que define uma translação. Veja a definição de translação acima.
 
-Dados os pontos `A = (1, 5)` e `B = (5, 3)`, quais são as coordenadas do vetor `\overrightarrow{AB}`?
+Dados os pontos `A = (1, 5)` e `A' = (5, 3)`, existe um vetor  `\vec{v}` que a translação de `A` por `\vec{v}` seja `A'`? Se sim, apresente as coordenadas deste vetor?
 
 .. admonition:: Resposta 
 
-   Como vimos antes `\overrightarrow{AB} = \overrightarrow{OB} − \overrightarrow{OA}` ou, simplesmente, `\overrightarrow{AB} = B − A`.
-   Assim, 
+   O ponto `A'` é uma translação de `A` por `\vec{v}` se `A' = A + \vec{v}`. A resposta é sim, basta tomar `\vec{v} = A' - A`. Teremos `\vec{v}=\overrightarrow{AA'}` e `A'=A + \overrightarrow{AA'}` em coordenadas
    
-   .. math:: 
+   .. math::
    
-      \overrightarrow{AB} = (5, 3) − (1, 5) = (5-1,3-5)=(4, −2).
+      \overrightarrow{v} =A'- A = (5,3) - (1,5) = (5-1,3-5) = (4,-2).
    
-   Observe o significado disso na figura.
+   Observe o resultado disso na figura.
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=coordenadas-vetor.png
-      :width: 400px
+   .. figure:: _resources/coordenadas-vetor.png
+      :width: 300px
       :align: center
+      
+      Trocar B por A' na figura
 
+Em geral, fixados um sistema de coordenadas e dois pontos `A=(x_A,y_A)` e `B=(x_B,y_B)`, quais são as coordenadas do vetor `\overrightarrow{AB}`?
+   
+Observe que `B` é a translação de `A` pelo vetor `\overrightarrow{AB}`, assim `B=A + \overrightarrow{AB}`. Ou seja, `\overrightarrow{AB} = B-A = (x_B - x_A, y_B - y_A)`.
+   
+.. tikz::
+
+   \begin{scope}[scale=1.1]
+   %\draw[-latex,very thick, black] (-1.55,0) -- (1.7,0) node[below right]{$x$};
+   %\draw[-latex,very thick, black] (0,-.55) -- (0,2.05) node[right]{$y$};
+   \fill (0,0) circle (0.05) node[below left]{$O$};
+   \draw[-latex]  (-1,2)--(0,0);
+   \draw[-latex] (0,0)-- (1,.5);
+   \draw[-latex, very thick, red] (-1,2) -- (1,.5);
+   \node at (.3,1.4){$\overrightarrow{AB}$};
+   \node at (-.9,.8){$-\overrightarrow{OA}$};
+   \node at (.6,0){$\overrightarrow{OB}$};
+   
+   \begin{scope}[xshift=4cm]
+   \draw[-latex, very thick, red] (-1,2) -- (1,.5);
+   \node at (.3,1.4){$\overrightarrow{AB}$};
+   \draw[dashed] (-1,2)--(-1,.5);
+   \draw[dashed] (-1,.5)--(1,.5);
+   \node at (-1.7,1.25) {$y_B - y_A$};
+   \node at (0,.3) {$x_B - x_A$};
+   \end{scope}
+   \end{scope}
+      
+.. .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetor-dados-extremos.jpg
+   :width: 200px
+   :align: center
+      
+      Coordenadas de um vetor a partir de suas extremidades
 
 .. _ativ-vetores-alg-vetores-iguais:
 
@@ -248,7 +498,7 @@ Onde está o vértice D?
 
    Os vetores `AD` e `BC` são iguais.
    
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=vetores-iguais.png
+   .. figure:: _resources/vetores-iguais.png
       :width: 250px
       :align: center
    
@@ -262,14 +512,20 @@ Onde está o vértice D?
 
    O quadrilátero `OABC` da figura é um paralelogramo. Sabendo que as coordenadas dos vértices são `O=(0,0)`, `A=(2,0)`, `B=(3,1)` e `C = (1,1)`, calcule as coordenadas do ponto `M` de encontro das diagonais do paralelogramo.
    
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=soma-paralelogramo.jpg
-      :width: 300px
-      :align: center
+   .. tikz:: OB=2OM
+   
+      \draw[fill=lightgray!30] (0,0)coordinate(o)--(2,0)coordinate(a)--(3,1)coordinate(b)--(1,1)coordinate(c)--cycle;
+      \fill (a) circle (0.05) node[below]{$A$};
+      \fill (b) circle (0.05) node[right]{$B$};
+      \fill (c) circle (0.05) node[above]{$C$};
+      \fill (1.5,.5) circle (0.05) node[above]{$M$};
+      
+      \draw[-latex] (-1,0) -- (3.5,0) node[below right]{$x$};
+      \draw[-latex] (0,-1) -- (0,2.5) node[left]{$y$};
+      \fill (0,0) circle (0.05) node[below left]{$O$};
+      
+      \draw (o)--(b);
+      \draw (a)--(c);
+     
+   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `\overrightarrow{OM}=\frac{1}{2}\overrightarrow{OB}=\frac{1}{2}(3,1)=(\frac{3}{2}, \frac{1}{2})`. Assim,  `M=(\frac{3}{2}, \frac{1}{2})`.
 
-      `\overrightarrow{OB} = \overrightarrow{OM} + \overrightarrow{OM} = 2\overrightarrow{OM}`
-
-   *Solução:* Sabemos que em qualquer paralelogramo, as diagonais se intersectam nos pontos médios. Então `M=(x,y)` é o ponto médio do segmento `OB` e, portanto, o vetor `2\overrightarrow{OM}=\overrightarrow{OB}=(3,1)`. Assim, `2\overrightarrow{OM}=\overrightarrow{OM} + \overrightarrow{OM}= (x+x,y+y)=(2x,2y)`, logo `x=\frac{3}{2}`, `y=\frac{1}{2}` e `M=(\frac{3}{2}, \frac{1}{2})`.
-
-
-**DAQUI A NAVEGAÇÃO DEVERIA IR PARA**
-https://www.umlivroaberto.com/BookCloud/Volume_1/master/view/GE101-1B

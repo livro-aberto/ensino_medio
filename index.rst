@@ -9,7 +9,7 @@ Ensino Médio
    AF106-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
-   NO508-0
+   PE103-ROTEIRO
    
    index_algebra_e_funcoes
    index_geometria
@@ -28,6 +28,8 @@ Ensino Médio
    GE101-1
    GE101-1A
    GE101-1B
+   GE101-A
+   GE101-B
    GE101-E
    
    GE201-0
