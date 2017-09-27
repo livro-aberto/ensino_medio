@@ -42,26 +42,30 @@ Introdução
 
    #. O que será estudado:
    
-       * Caracterização de problemas que envolvem Estatística,
-       * Conceitos básicos da Estatística: população e amostra,
-       * Tipos de variáveis,
-       * Organização dos dados em tabelas de frequências,
-       * Representações gráficas adequadas para os diferentes tipos de variáveis.
+      * Caracterização de problemas que envolvem Estatística,
+      * Conceitos básicos da Estatística: população e amostra,
+      * Tipos de variáveis,
+      * Organização dos dados em tabelas de frequências,
+      * Representações gráficas adequadas para os diferentes tipos de variáveis.
        
    #. Palavras-chave:
                                
-       * Natureza da Estatística,
-       * População e Amostra,
-       * Parâmetro e Estimador, 
-       * Variáveis Qualitativas, 
-       * Variáveis Quantitativas, 
-       * Gráfico de Setores, 
-       * Gráfico de Barras, 
-       * Histograma.
+      * Natureza da Estatística,
+      * População e Amostra,
+      * Parâmetro e Estimador, 
+      * Variáveis Qualitativas, 
+      * Variáveis Quantitativas, 
+      * Gráfico de Setores, 
+      * Gráfico de Barras, 
+      * Histograma.
 
+.. _explorando-1:
+
+Explorando
+---------------------------
 
 .. _ativ-1-escolha-do-melhor-fornecedor:
-
+------------------------------------------
 Atividade: Escolha do melhor fornecedor
 ------------------------------------------
 
@@ -102,8 +106,20 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
 .. _fig-parafusos:
 
-.. figure:: <link da figura>
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedora.png
+   :width: 800px
+   :align: center
+   
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedorb.png
+   :width: 800px
+   :align: center
+   
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedorc.png
+   :width: 800px
+   :align: center
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedord.png
+   :width: 800px
    :align: center
 
    Diagramas de pontos com as medidas dos parafusos de cada fornecedor
@@ -127,7 +143,7 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
    .. admonition::  Dispersão 
 
-      Segundo o Aurélio, dispersão significa (1) ato ou efeito de dispersar; (2) separação (de pessoas ou coisas) para diferentes partes.  Em Estatística, existem diferentes medidas de dispersão. Iremos estudar algumas delas.
+      Segundo o Aurélio, dispersão significa (1) ato ou efeito de dispersar; (2) separação (de pessoas ou coisas) para diferentes partes.  Em Estatística, existem diferentes medidas de dispersão. A amplitude, diferença entre o maior e menor valores observados é uma medida de dispersão.
 
 #. Qual(is)  fornecedor(es) produz(em) pelo menos um parafuso dentro das especificações do comprador?
 #. Supondo que os comportamentos dos diâmetros dos parafusos sejam similares para as outras caixas em cada fornecedor, que fornecedor, com base nas especificações do comprador, você escolheria? Por quê?
@@ -140,6 +156,13 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 * Comenta sobre a estratégia para realizar as medições: você acredita que as medidas de uma caixa de parafusos podem ser representativas das medidas do total dos parafusos produzidos pelo fornecedor?
 * Você considera que seria viável medir todos os parafusos fabricados?
 * Pensa outras estratégias nas quais poderia ser obtida essa informação e discute suas vantagens e disvantagens com teus colegas.
+* Pesquisa sobre alguns métodos de controle de qualidade de produtos aplicados na industria e compara com as ideias propostas por você e teus colegas.
+
+.. Falta complementar esta caixa para o professor
+.. admonition:: Para o professor
+
+   A **discussão** tem o intuito de provocar um debate sobre estratégias de amostragem e representatividade das amostras, mesmo sem formalizar tais conceitos...
+
 
 .. admonition:: Solução
 
@@ -154,6 +177,7 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
 .. _ativ-2-comparacao-de-medicamentos:
 
+-----------------------------------
 Atividade: Comparação de medicamentos
 -----------------------------------
 
@@ -221,6 +245,7 @@ Ao realizar uma validação do estúdio, um dos pesquisadores percebeu algumas c
 
 .. _ativ-3-pesquisa-ibge-pnad:
 
+------------------------------------------------------------------
 Atividade: Pesquisa sobre a Prática de Esportes e Atividade Física
 ------------------------------------------------------------------
 
@@ -251,24 +276,21 @@ A Pesquisa Nacional por Amostra de Domicílios (PNAD), realizada pelo IBGE, obt�
 
 Um aspecto fundamental da Estatística praticado nessa pesquisa é a forma na qual a amostra, subconjunto da população, é selecionada. Essa seleção é cuidadosamente planejada de modo que seja adequado estender os resultados obtidos na amostra para a população.
 
-   Para que os resultados de uma amostra possam ser estendidos para a população, é necessário planejar com cuidado como a amostra será selecionada, pois o critério de seleção da amostra depende da estrutura da população. Por exemplo, para saber se o feijão cozinhando na panela está bem temperado, basta provar uma pequena colherada. Por que?  Partimos do pressuposto de que todos os ingredientes foram bem misturados e, assim, a mistura é homogênea. 
+*Para que os resultados de uma amostra possam ser estendidos para a população, é necessário planejar com cuidado como a amostra será selecionada, pois o critério de seleção da amostra depende da estrutura da população. Por exemplo, para saber se o feijão cozinhando na panela está bem temperado, basta provar uma pequena colherada. Por que?  Partimos do pressuposto de que todos os ingredientes foram bem misturados e, assim, a mistura é homogênea.* 
 
-   Quando dispomos de dados provenientes de um subconjunto da população sempre podemos descrever os dados nos restringindo apenas ao subconjunto. Se quisermos estender nossas conclusões para a população, alguns cuidados especiais, fora do escopo desse livro, devem ser tomados.
+*Quando dispomos de dados provenientes de um subconjunto da população sempre podemos descrever os dados nos restringindo apenas ao subconjunto. Se quisermos estender nossas conclusões para a população, alguns cuidados especiais, fora do escopo desse livro, devem ser tomados.*
 
 Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Suplemento de Práticas de Esporte e Atividade Física” no qual foram investigadas as pessoas moradoras de 15 anos ou mais de idade, em seu tempo livre, no período de referência de 365 dias, com o objetivo de quantificar aquelas que praticaram algum esporte ou atividade física no período considerado bem como a sua percepção quanto a isso. As informações levantadas nessa pesquisa foram obtidas por meio de um questionário no qual se perguntou:
 
 * Se a pessoa moradora havia praticado esporte, e em caso afirmativo, a respectiva modalidade.
-
-      Algumas práticas foram classificadas como esporte por alguns moradores e como atividade física por outros. No que segue falaremos apenas em Atividade Física.
-
 * Independente da resposta anterior, também se perguntou se a pessoa praticava alguma atividade física que não considerava como esporte, informando, em caso positivo, também a modalidade.
 * Outras informações levantadas nessa pesquisa foram: motivação para a prática da atividade física, local onde é praticada a atividade, frequência na qual a atividade é praticada, duração da atividade; e a participação em competições.
 * Também foram levantadas informações sobre as pessoas que responderam que não praticavam atividade física. Perguntou-se o motivo de não o fazerem e se haviam praticado anteriormente, caso em que se perguntou a modalidade praticada, a idade em que parou de praticar e a causa da interrupção.
 * Além dessas informações, a pesquisa investigou também a avaliação da população sobre a opção do poder público investir no desenvolvimento de atividades físicas e esportivas ou em outra área (saúde, educação, etc.) na vizinhança de seu domicílio.
 
-   #. Liste o maior número possível de informações investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
-   #. Das informações citadas no item anterior, quais delas apresentam respostas não numéricas? 
-   #. Das informações citadas no item anterior, quais delas apresentam respostas numéricas?
+  #. Liste o maior número possível de informações investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
+  #. Das informações citadas no item anterior, quais delas apresentam respostas não numéricas? 
+  #. Das informações citadas no item anterior, quais delas apresentam respostas numéricas?
 
 A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (vamoscontar.ibge.gov.br) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
 
@@ -364,7 +386,6 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _sub-organizando-as-ideias-1:
 
--------------------------
 Organizando as ideias
 -------------------------
 
@@ -402,6 +423,15 @@ A classificação das variáveis estudadas é importante, pois as técnicas e pr
 
 Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo em mente que o tipo de variável sob investigação é determinante nos tipos de gráficos e nas informações relevantes da tabela. 
 
+.. _sub-organizando-as-ideias-1:
+
+Praticando
+-------------------------
+
+Exercícios e situções práticas
+
+
+
 
 
 .. admonition:: Limite 
@@ -420,258 +450,6 @@ Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo
 Coisas que estavam antes... Podemos apagar?
 -------------------------------------------
 
-
-Pensando em 3 modulos de +/- 18 aulas, um para cada ano do ensino médio e um modulo de apronfundamento eletivo.
-
-.. note::
-   1) **Roteiro do capítulo**:
-   
-  
-   
-   O módulo de Estatística será desenvolvido segundo o referencial teórico apresentado no Guidelines for Assessment and Instruction in Statistics Education (GAISE), College Report(2016)
-   O GAISE aponta que os cursos de Estatística introdutório devem enfatizar o pensamento estatístico.
-   "Qualquer curso introdutório deve ter como sua principal meta ajudar os alunos a aprender os elementos básicos do pensamento estatístico. Muitos cursos avançados seriam melhorados por uma ênfase mais explícita nesses mesmos elementos básicos, a saber: 
-     * A necessidade de dados.
-     * A importância da produção de dados. 
-     * A omnipresença da variabilidade. 
-     * A quantificação e explicação da variabilidade.
-              
-   **Mais Dados e Conceitos, Menos Teoria e Menos Receitas**
-        
-   Quase qualquer curso em estatística pode ser melhorado por mais ênfase em dados e conceitos, e menos ênfase na teoria e receitas. Na medida do possível, automatize cálculos e gráficos.
-		
-   **Fomentar o aprendizado ativo**
-   		
-   Como regra, os professores de estatística devem se preocupar muito menos em palestras e muito mais em  metodologias alternativas como projetos, exercícios de laboratório e atividades de grupo de resolução de problemas e discussão. Mesmo dentro da configuração de palestra tradicional, é possível envolver os alunos mais ativamente." :ref:`GAISE,2016`
-
-   Assim, o capítulo de Estatística deve utilizar como pano de fundo para o desenvolvimento do conteúdo da BNCC as recomendações apresentadas no GAISE (2016), como por exemplo:
-   
- 
-   #. Elaborar um texto para o aluno, apresentando o conteúdo, usando  dado real secundário ((IBGE, DATASUS, ARMAZEM DOS DADOS)ou primário (dados da turma, escola, etc...). Cada conteúdo apresentado deve vir acompanhado de uma ou mais atividades para sedimenta-lo. Seria muito interessante tambem poder pensar algumas atividades que pudessem ser exploradas com outras disciplinas como Biologia, Geografia, etc.
-   
-   #. cada atividade deve estar conectada com uma habilidade a ser desenvolvida do BNCC. Assim, devemos identificar para o professor (será que para o aluno também?) o objetivo da atividade e que habilidade ela está trabalhando.
-   
-   #. evitar as atividades que façam o aluno usar apenas da memorização ou aplicação de algoritmos para resolução de problemas. Enfatizar as atividades que o aluno precise tomar decisões entre duas ou mais situações.
-   
-   #. as atividades devem permitir uma participação ativa dos estudantes e sempre que possível a resolução em grupos.
-   
-      
-   #. utilizar um programa computacional que permita se analisar os dados (construção de gráficos).  
-   
-   
-   O texto inicial do capítulo de Estatística deve começar com um convite ao aluno a despertar sua curiosidade para a importância e abrangência da estatística e da probabilidade no mundo contemporâneo. 
-   
-   Partir dos artigos e manchetes para fazer o aluno pensar em que etapa da pesquisa. Exemplo do livro da pfenning 
-   
-   
-   **1º ano**
-   - começar com um ba
-   Pesquisa já realizada – Apresentar a pesquisa PENSE para introduzir os conceitos referentes ao planejamento de uma pesquisa, a partir da construção de um instrumento de coleta de dados.
-     
-   Definir Tipos de variáveis (qualitativa e quantitativa). Importante conceito que geralmente é pouco explorado em livros didáticos (Cileda,2015) e que é a base para escolha correta dos tipos de gráficos e medidas que serão utilizadas na análise.
-     
-   A partir dos resultados obtidos na PENSE, apresentar suas represetações Gráficas (histograma, barras, boxplot?? - vídeo)
-     
-   É importante explorar a visualização dos dados de uma maneira a construir os conceitos das medidas de tendencia central e de dispersão que virão a seguir. 
-     
-   Medidas de TC e de dispersão - utilizar tecnologia para análise dos dados.
-     
-   Amostra X população: Mostrar como uma amostra é capaz de informar sobre a população. (atividade da bala)
-   Explorar o conceito de aleatório vs não aleatório.
-     
-   Introduzir probabilidade a partir dos dados coletados (probabilidade empírica)
-    
-
-
-.. admonition:: Referências
-
-   Wheelan,Charles (2013) *Estatística: o que é, para que serve, como funciona?* Zahar. Rio de Janeiro, Brasil.
-
-   IBGE:  http://vamoscontar.ibge.gov.br/atividades/ensino-medio.html
- 
-   UNICAMP: http://m3.ime.unicamp.br/recursos/1043
-    
-   Guidelines for Assessment and Instruction in Statistics Education (GAISE) 
-   College Report 2016.:ref:`GAISE,2016`(http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
-   https://www.stat.auckland.ac.nz/~iase/publications/assessbk/
-   Part III. Innovative Models for Classroom Assessment
-
-   Part IV. Assessing Understanding of Probability
-
-
-.. _sec-entendendo-o-papel-da-estatistica:
-
-Entendendo o papel da Estatistica
-=================================
-
- 
-
-Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização.  
-Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Não é coincidência que o Netflix (empresa que oferece filmes e séries pela internet) frequentemente nos oferece os filmes que gostaríamos de assistir, nem por acaso que surgem no seu navegador informações de viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
-
-Você pode estar se perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coletam os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capítulo iremos discutir sobre instrumentos de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
-
-
-.. _sec-coloque-aqui-o-nome:
-
-Transformando os dados em informação/Como surgem os dados?
-=====
-
-Conforme conversamos anteriormente a cada minuto milhoes de dados estao 
-Seria interessante estabelecer a diferença 
-
-Formular a pergunta antes de introduzir o exemplo.
-Serã que n"ao mudamos o exemplo, poderia ser o perfil dos alunos que fazem o enem.
-
-Inicialmente será apresentada a etapa de planejamento de uma pesquisa. Para exemplificação, será usada a Pesquisa Nacional de Saúde do Escolar (PENSE), realizada em 2012, junto aos estudantes que cursavam o 9o ano do ensino fundamental do Brasil (http://www.ibge.gov.br/home/estatistica/populacao/pense/2012/default.shtm). Esta pesquisa teve como objetivo principal coletar dados sobre diferentes aspectos de saúde da população adolescente brasileira, produzindo assim informações confiáveis para  orientação e  avaliação das políticas de saúde destinadas a esse importante contingente populacional. Nesta etapa, serão abordados os conteúdos sobre a construção de um instrumento de coleta de dados e elaboração de análises descritivas dos mesmos. Para isso, será utilizada a parte da pesquisa que dispõe sobre a percepção da imagem corporal que tem de si mesmos os adolescentes.   
-- - - - - - - - - - - - -- - - - -
-
-A seguir apresenta-se a parte do questionário da PENSE que fez perguntas específicas sobre imagem corporal. São perguntas que representam variáveis quantitativas e qualitativas. 
-
-
-.. admonition:: Exemplo 
-
-
-
-
-  Bloco sobre Imagem Corporal da PENSE
-
-
-  ** Agora responda o que você acha de sua própria imagem.**
-  
-  #. Você considera sua imagem corporal como sendo algo: 
-    
-    □ Muito importante
-   
-    □ Importante
-   
-    □ Pouco importante 
-   
-    □ Sem importância
-   
-  #. Como você se sente em relação ao seu corpo?
-   
-   □ Muito satisfeito(a) 
-   
-   □ Satisfeito(a)
-   
-   □ Indiferente 
-   
-   □ Insatisfeito(a) 
-   
-   □ Muito insatisfeito(a)
-   
-  #. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder peso, sem acompanhamento médico? 
-    
-   □ Sim □ Não
-   
-  #. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para ganhar peso ou massa muscular sem acompanhamento médico?
-  
-  □ Sim □ Não
-  
-  #. Qual é o seu peso? __ __ __ quilos □ Não sei
- 
-  #. Qual é a sua altura?  __ __ __  centímetros □ Não sei
-  
-***** 
-  
-  
-  .. note::
-    criar atividades para passar os conceitos do tipo de variáveis
-  
-  
-Nas perguntas acima, observa-se parte do instrumento de coleta da PENSE contendo tanto perguntas fechadas (onde as respostas possíveis estão definidas no próprio instrumento de coleta, ex: perguntas de 1 à 4 do questionário), como também abertas ( aquelas onde não existe uma reposta pré definida, ex: questões 5 e 6). Cada pergunta do instrumento de coleta é denominada **variável**. Assim, cada variável é uma característica da população estudada que se deseja conhecer. 
-
-
-
-
-As variáveis denominadas qualitativas são aquelas cujo o conteúdo é expresso por categorias (*atributo*), podendo ser  classificadas como variáveis qualitativas ordinais (onde existe uma ordenação nas respostas), como exemplo as perguntas 1 e 2, do instrumento de coleta da PENSE. E também nominais ( quando não há uma ordem definida), como exemplificam as perguntas 3 e 4 desta parte do questionário apresentado como exemplo.
-Denminam-se variáveis quantitativas aquelas  cujas  [características precisam ser aferidas a partir da adoção de alguma escala quantitativa, ou seja, que possam ser representadas por valores numérico, podendo ser discretas ou contínuas. 
-
-**Variáveis discretas**: características mensuráveis que podem assumir apenas um número inteiro, geralmente sendo resultado de contagens. Exemplos: número de cigarros fumados por dia, número de filhos. 
-
-
-
-
-
-
-
-   
-------------
-Apresentação
-------------
-A Estatística está presente no cotidiano muito mais do que nos damos conta. Por exemplo, ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre uma pesquisa de opinião, ao assistir um jornalista explicando a margem de erro de pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos informam a partir dos resultados dos ensaios clínicos realizados para a aprovação dos mesmos para comercialização.  
-Como os avanços tecnológicos, um grande volume de dados passou a ser coletado por empresas relacionadas a cartões de crédito, à internet, à aviação, de entretenimento etc. mesmo sem que percebamos. Esses dados podem, por exemplo, ser usados para ações intencionais dessas empresas. Não é coincidência quando um site de rede social apresenta uma propaganda quue interessa ao usuárrio.... frequetemente nos oferece os filmes que gostaríamos gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. 
-
-**Variáveis contínuas**: características mensuráveis que assumem valores em uma escala contínua, comumente obtidas pelo uso de um instrumento de medida. Exemplos: peso (balança), altura (fita métrica), tempo (relógio), pressão arterial, idade. 
-
-.. note::
-
-  É importante observar que uma variável originalmente quantitativa pode ser coletada tabém de forma qualitativa. 
-  Por exemplo, a variável idade, medida em anos,  é quantitativa (contínua); mas, se pergunta-se apenas a faixa etária (0 a 5 anos, 6 a 10 anos, etc...), passa a ser qualitativa (ordinal). Outro exemplo é o índice de massa corporal (`IMC`, calculado como `IMC =\text{peso (kg)}/(\text{altura (m)})^2`. É uma variável quantitativa (contínua), mas caso se deseje trabalhar com  os pontos de corte de classificação de estado nutricional (como sugeridos pela  Organização Mundial da Saúde) , classificando como baixo peso o `IMC<(18,5)`, peso normal como `IMC` entre (18,5) (24,9), excesso de peso como `IMC` entre `(24,9)` e `(29,9)`, Obesidade `IMC` maior ou igual a (30), passa a ser classificada como qualitativa (do tipo ordinal).
-Outro ponto importante a considerar é que nem sempre uma variável representada por números é quantitativa. O número do telefone de uma pessoa, o número da casa, o número de sua identidade, são variáveis de identificação e não serão incluídas como variáveis quantitativas para análise. Outra situação também que acontece é considerar que, ás vezes, o sexo de uma pessoa é registrado na base de dados como (1), se masculino, e como (2), se feminino, por exemplo. Isto não significa que a variável sexo passe desse modo a ser quantitativa! 
-
-
-
-.. _ativ-titulo-da-atividade:
-
-Atividade: Construindo instrumento de coleta de dados
------------------------------------------------------
-
-
-Essa atividade consiste na construção de um instrumento de coleta de dados. Para isso a turma deverá ser dividida em grupos, onde cada grupo irá pensar em um objetivo que poderá ser atingido com a própria turma. A atividade seguirá a seguinte etapa:
-	
-#. Cada grupo  pensará em 5 perguntas e irá construir o instrumento de coleta de dados, com as mesmas.
-#. Os grupos irão trocar os instrumentos de coleta e irão preencher os instrumento uns dos outros com suas informações.
-#. Após o preenchimento, os grupos irão apresentar eventuais dificuldades encontradas e discutir sobre as diferentes maneiras de se coletar a informação.
-
-
-.. _sec-tc-banco-de-dados:
-
-Banco de dados
-==============
-
- Após entender como as variáveis podem ser classificadas, vamos observar uma parte do banco de dados que foi gerado pela PENSE. As variáveis da base usada como exemplo são  referentes às perguntas apresentadas no exemplo acima: 
- 
- 
- .. table:: Legenda
-   :widths: 1 3
-   :column-alignment: left center
-
-+--------+--------+------+----------+-------+---------+----------+
-| ID     | PESO   | Sexo | Raca_cor | idade | ga_peso | per_peso |
-+--------+--------+------+----------+-------+---------+----------+
-| 101897 | 85,25  | 2    | 1        | 4     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 13281  | 53,79  | 2    | 4        | 5     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 24727  | 91,15  | 2    | 2        | 4     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 47659  | 12,38  | 1    | 2        | 4     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 87880  | 16,74  | 1    | 4        | 6     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 25991  | 66,83  | 2    | 2        | 6     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 19548  | 104,83 | 1    | 1        | 4     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 43577  | 81,07  | 1    | 1        | 4     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 64442  | 45,30  | 1    | 5        | 5     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 70354  | 53,50  | 2    | 4        | 6     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 77041  | 81,00  | 1    | 2        | 3     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 17763  | 66,94  | 2    | 1        | 3     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-| 10990  | 70,49  | 1    | 5        | 3     | 2       | 2        |
-+--------+--------+------+----------+-------+---------+----------+
-
-
- 
-ATIVIDADES 
-=====
 
 
 
@@ -782,33 +560,6 @@ Apresentação
 ------------
 A Estatística está presente em nossa vida cotidiana muito mais do que nos damos conta. Ao ler um jornal ou ao ouvir pelo rádio uma notícia sobre dada pesquisa de opinião, assistir um jornalista explicando a margem de erro ao divulgar pesquisas de intenção de votos em período de eleições, ou mesmo para entender o que as bulas de medicamentos estão tentando nos informar, a partir dos resultados dos ensaios clínicos realizados para aprovação dos mesmos para comercialização, são exemplos de situações diárias em que a Estatística está presente.  Como os avanços tecnológicos um grande volume de dados passou a ser coletados por empresas relacionadas a cartão de crédito, internet, empresas de aviação, entretenimento e etc.. Atualmente, enquanto estamos navegando ingenuamente pela internet, dados sobre os assuntos mais pesquisados, horários mais utilizados entre outros estão sendo coletados e sendo depositado em um grande banco com informação de todos os usuários da web. Não é coincidência que o Netflix vive oferecendo os filmes que você gostaria de assistir, nem por acaso que surge no seu navegador informações sobre viagem para o local que você pesquisou na semana passada e algumas vezes que o seu cartão de crédito liga para confirmar uma compra que está sendo feita em local e horário não compatível com seu perfil. E você pode estar perguntando o que a Estatística tem a ver com isso? A estatística tem tudo a ver com isso, desde o momento que se coleta os dados até a análise que permitirá em uma tomada de decisão. E é por isso, que neste capitulo iremos discutir sobre instrumento de coleta de dados, representatividade da amostra, análise de dados e tomada de decisão.
 
-
-
-
-Seção
-=====
-Atividade: Corrida de cavalos
-
-Existem 13 cavalos numerados de 1 a 13.
-Cada aluno irá apostar em um único cavalo, segundo à seguinte premiação:
-
-.. table:: Legenda
-   :widths: 1 1
-   :column-alignment: center center
-
-   =========  ============
-   Cavalo      Premiação  
-   =========  ============
-    1 ou 13      10,0 
-    2 ou 12       5,0    
-    3 ou 11      2,0      
-    4 ou 10      0,5 
-    5 ou 9       0,1
-    6 ou 8       Abraço 
-    7           Aperto mão 
-   =========  ============
-
-.. admonition:: Para o professor
 
 
 
