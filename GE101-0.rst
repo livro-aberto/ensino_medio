@@ -52,6 +52,8 @@
    
    #. BNCC (EF09MA15) Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano.
    
+   Importante: antes da BNCC, o aluno do Ensino Fundamental II usualmente já tinha um contato inicial com vetores na disciplina de Ciências. Com a BNCC, pressupõe-se que é neste momento que o aluno estudará o assunto pela primeira vez.
+   
    **TÓPICOS QUE SERÃO TRATADOS NO CAPÍTULO**
       
    * Vetor do ponto de vista geométrico.
@@ -75,14 +77,16 @@
    
    **OBJETIVO GERAL DO CAPÍTULO**
    
-   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
+   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista algébrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
    
    **ABORDAGEM ADOTADA NO CAPÍTULO**
    
-   A concepção do capítulo procurou seguir de perto a orientação dada pela BNCC, a saber, desenvolver o tópico de vetores de modo articulado e integrado com situações estudadas na **Física** e com apoio de softwares de geometria dinâmica.
+   Vetores são normalmente estudados na disciplina de Física e, ao propor que o tópico seja estudado em Matemática, a BNCC traz uma inovação e um desafio.
+   
+   A concepção deste capítulo procurou seguir de perto a orientação dada pela BNCC, a saber, desenvolver o tópico de vetores de modo articulado e integrado com situações estudadas na **Física** e com apoio de softwares de geometria dinâmica.
    
    Nessa articulação, uma particularidade pouco evidenciada teve que ser considerada: enquanto que, tradicionalmente, em Matemática, vetores são definidos como coleções de segmentos orientados de mesma direção, sentido e módulo, de modo que se é possível operá-los a partir de qualquer um de seus representantes, dependendo da situação física em questão, nem todos os representantes são válidos e até mesmo certas operações deixam de fazer sentido. Por exemplo, na figura a seguir, se `\overrightarrow{OA}` e `\overrightarrow{OB}` são os vetores posições relativas dos pontos `A` e `B` com relação ao ponto `O`,
-   apesar da soma `\overrightarrow{OA} + \overrightarrow{OB}` estar definida matematicamente, ela não faz sentido no contexto físico (note, contudo, que a diferença `\overrightarrow{OB} - \overrightarrow{OA}` faz sentido: `\overrightarrow{OB} - \overrightarrow{OA}` é o vetor deslocamento `\overrightarrow{AB}`).
+   apesar da soma `\overrightarrow{OA} + \overrightarrow{OB}` estar definida matematicamente, ela não faz sentido no contexto físico em questão (note, contudo, que a diferença `\overrightarrow{OB} - \overrightarrow{OA}` faz sentido: `\overrightarrow{OB} - \overrightarrow{OA}` é o vetor deslocamento `\overrightarrow{AB}`).
    
     .. tikz:: 
 
@@ -117,13 +121,46 @@
       \draw [->,line width=1.pt,color=qqqqff] (1.72,4.32) -- (3.92,4.9);
       \draw[color=qqqqff] (4.2,5.05) node {$E$};
 
-   Ainda nesta linha, observe que a "regra do triângulo" é natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é natural no contexto da soma de vetores que representam forças, mas ela é artificial no contexto de vetores deslocamentos.
+   Ainda nesta linha, observe que enquanto do ponto de vista da Matemática, a "regra do triângulo" e a "regra do paraleogramo" são equivalentes para se obter a soma de dois vetores, dependendo do contexto físico, uma regra pode ser mais natural do que a outra. Por exemplo, a "regra do triângulo" é mais natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é mais natural no contexto da soma de vetores que representam forças (com todos os vetores com suas extremidades iniciais coincidentes), mas ela é artificial no contexto de vetores deslocamentos.
    
-   Para acomodar estas particularidades, alguns livros de Física introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Apesar desta terminologia já estar aparecendo em livros de Matemática (ver, por exemplo, Anton & Busby (2007)), não estamos recomendando que você a use com seus alunos. O importante é que você tenha consciência das peculiaridades de cada caso.
+    .. tikz:: 
+
+      \tikzset{>=latex}
+       \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+       \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (-1.4,2.28);
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (1.58,1.68);
+       \draw [line width=0.8pt,dotted] (-1.4,2.28)-- (2.16,4.26);
+       \draw [line width=0.8pt,dotted] (2.16,4.26)-- (1.58,1.68);
+       \draw [->,line width=0.8pt,color=ffqqqq] (-1.98,-0.3) -- (2.16,4.26);
+       \draw [->,line width=0.8pt,color=qqqqff] (-9.45376,-0.3) -- (-5.89376,1.68);
+       \draw [->,line width=0.8pt,color=qqqqff] (-5.89376,1.68) -- (-5.31376,4.26);
+       \draw [->,line width=0.8pt,color=ffqqqq] (-9.45376,-0.3) -- (-5.31376,4.26);
+       \draw (-9.69334,-0.98342) node[anchor=north west] {Regra do Triângulo};
+       \draw (-2.37284,-0.98342) node[anchor=north west] {Regra do Paralelogramo};
+       \draw [fill=qqqqff] (-1.98,-0.3) circle (1.0pt);
+       \draw [fill=qqqqff] (-1.4,2.28) circle (1.0pt);
+       \draw[color=qqqqff] (-2.0082,1.1423) node {$\vec{v}$};
+       \draw [fill=qqqqff] (1.58,1.68) circle (1.0pt);
+       \draw[color=qqqqff] (0.31578,0.22779) node {$\vec{u}$};
+       \draw [fill=uuuuuu] (2.16,4.26) circle (1.5pt);
+       \draw[color=ffqqqq] (1.1084,2.166) node {$\vec{u} + \vec{v}$};
+       \draw [fill=qqqqff] (-9.45376,-0.3) circle (1.0pt);
+       \draw [fill=qqqqff] (-5.89376,1.68) circle (1.0pt);
+       \draw [fill=uuuuuu] (-5.31376,4.26) circle (1.5pt);
+       \draw[color=qqqqff] (-7.27092,0.20117) node {$\vec{u}$};
+       \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
+       \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
+   
+   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, Anton & Busby (2007)). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
+   
+   Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto (`+` para adição de números) em outro contexto (`+` para representar a adição de vetores).
    
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
    
    O vetor posição relativa, apesar de suas limitações (a soma deste tipo de vetor não faz sentido no contexto), é simples e permite evidenciar para o aluno que existem grandezas que não podem ser descritas apenas com um número ou apenas como uma orientação. Assim, como primeira atividade, usamos um problema que envolve posições relativas para motivar o conceito de grandeza vetorial.
+   Além disso, o vetor posição relativa tem uma vantagem adicional: a escala determinada para as posições automaticamente determinar a escala do vetor, isto é, tem-se uma escola só (compare com o caso de velocidades e forças: as posições podem ter uma escala e os vetores podem ter outra completamente diferente).
    
    Vetores deslocamentos são então introduzidos e, por meio de uma versão simplificada do jogo *Corrida de Vetores*,
    
@@ -133,7 +170,9 @@
    
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
          
+   Já na parte
    
+   XXX
    
    
    **OBSERVAÇÕES METODOLÓGICAS GERAIS**
