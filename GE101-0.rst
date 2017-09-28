@@ -12,6 +12,10 @@
 
 .. HJB: não esquecer de colocar um box sobre radar vectoring.
 
+.. HJB: alertar o aluno de que o `.` na multiplicação por número real não tem o mesmo significado do `.` na multiplicação de números reais.
+
+.. HJB: a interpretação da solução de um sistema linear por vetores poderia ser aproveitada quando o assunto (sistemas lineares) for tratado.
+
 
 
 .. admonition:: Para o professor
@@ -77,7 +81,7 @@
    
    **OBJETIVO GERAL DO CAPÍTULO**
    
-   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista algébrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
+   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
    
    **ABORDAGEM ADOTADA NO CAPÍTULO**
    
@@ -155,7 +159,7 @@
    
    Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_ ). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
    
-   Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto (`+` para adição de números) em outro contexto (`+` para representar a adição de vetores).
+   Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
    
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
    
@@ -170,9 +174,7 @@
    
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
          
-   Já na parte
-   
-   XXX
+   No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura via combinações lineares de certos problemas geométricos (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
    
    
    **OBSERVAÇÕES METODOLÓGICAS GERAIS**
