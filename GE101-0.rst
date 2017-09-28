@@ -12,13 +12,17 @@
 
 .. HJB: não esquecer de colocar um box sobre radar vectoring.
 
+.. HJB: alertar o aluno de que o `.` na multiplicação por número real não tem o mesmo significado do `.` na multiplicação de números reais.
+
+.. HJB: a interpretação da solução de um sistema linear por vetores poderia ser aproveitada quando o assunto (sistemas lineares) for tratado.
+
 
 
 .. admonition:: Para o professor
 
    **HABILIDADES E PRÉ-REQUISITOS**
 
-   Neste capítulo contempla-se a seguinte habilidade da segunda versão da Base Nacional Comum Curricular (BNCC):
+   Neste capítulo contempla-se a seguinte habilidade da segunda versão da `Base Nacional Comum Curricular <http://historiadabncc.mec.gov.br/documentos/bncc-2versao.revista.pdf>`_ (BNCC):
    
    .. admonition:: EM11MT01
    
@@ -77,7 +81,7 @@
    
    **OBJETIVO GERAL DO CAPÍTULO**
    
-   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista algébrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
+   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
    
    **ABORDAGEM ADOTADA NO CAPÍTULO**
    
@@ -153,9 +157,9 @@
        \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
        \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
    
-   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, Anton & Busby (2007)). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
+   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_ ). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
    
-   Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto (`+` para adição de números) em outro contexto (`+` para representar a adição de vetores).
+   Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
    
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
    
@@ -170,19 +174,17 @@
    
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
          
-   Já na parte
-   
-   XXX
+   No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura via combinações lineares de certos problemas geométricos (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
    
    
    **OBSERVAÇÕES METODOLÓGICAS GERAIS**
    
-   * As seções sob o título "Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
+   * As seções sob o título "Para reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
    * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto.
    
    **REFERÊNCIAS BIBLIOGRÁFICAS**
    
-   Anton, Howard; Busby, Robert C. *Álgebra Linear Contemporânea*. Bookman, 2007.
+   .. [Anton-et-al-2007] Anton, H.; Busby, R. C.: *Álgebra Linear Contemporânea*. Bookman, 2007.
 
 
 
@@ -294,7 +296,7 @@ Grandezas deste tipo são denominadas :index:`grandezas escalares`.
 
 Por outro lado, como você deve ter percebido com a atividade anterior, um único número não basta para especificar completamente uma posição com relação a um ponto de referência. Além da distância entre o ponto de referência e a posição em questão (no caso da atividade, "10 km"), também é necessário ter uma orientação (no caso da atividade, "à nordeste"). Grandezas físicas deste tipo – as quais, para serem perfeitamente descritas, necessitam de um valor numérico, uma unidade e uma orientação – são denominadas :index:`grandezas vetoriais`. 
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
     Quais outras grandezas físicas você conhece? Elas são grandezas escalares ou vetoriais?    
 
@@ -311,7 +313,7 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
    
    Vetores posições relativas do ponto `G` determinados pelos pontos de referência `A` e `B`. 
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
     Por que posições relativas não poderiam ser representadas apenas com segmentos de reta? Por que usar flechas é importante neste contexto? 
 
@@ -379,7 +381,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    Observe que o vetor deslocamento é definido apenas em termos dos pontos inicial e final e estes não mudam com escolhas diferentes para o ponto de referência. Por este motivo, o vetor deslocamento também não muda. Na :numref:`fig-geometria-deslocamento-01`, o ponto de referência `L` não precisa, obrigatoriamente, ser um ponto da pista.
    
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
     #. O deslocamento é uma grandeza escalar ou vetorial?
     #. Na :numref:`fig-geometria-deslocamento-01`, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não? 
@@ -633,7 +635,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
    Texto da resposta.
 
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
     Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
     
@@ -651,7 +653,7 @@ Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desl
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
 * para todo vetor deslocamento `\vec{v} = \overrightarrow{AB}` no plano, existe o vetor `\vec{w} = \overrightarrow{BA}` tal que `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA}`, isto é, `\vec{v} + \vec{w} = \vec{0}`. O vetor deslocamento `\vec{w}` com essa propriedade é denominado :index:`vetor deslocamento simétrico` de `\vec{v}` e, dada sua importância, receberá uma notação especial: `-\vec{v}`.
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
     Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
 
