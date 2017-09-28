@@ -79,12 +79,71 @@
    
    **ABORDAGEM ADOTADA NO CAPÍTULO**
    
+   A concepção do capítulo procurou seguir de perto a orientação dada pela BNCC, a saber, desenvolver o tópico de vetores de modo articulado e integrado com situações estudadas na **Física** e com apoio de softwares de geometria dinâmica.
+   
+   Nessa articulação, uma particularidade pouco evidenciada teve que ser considerada: enquanto que, tradicionalmente, em Matemática, vetores são definidos como coleções de segmentos orientados de mesma direção, sentido e módulo, de modo que se é possível operá-los a partir de qualquer um de seus representantes, dependendo da situação física em questão, nem todos os representantes são válidos e até mesmo certas operações deixam de fazer sentido. Por exemplo, na figura a seguir, se `\overrightarrow{OA}` e `\overrightarrow{OB}` são os vetores posições relativas dos pontos `A` e `B` com relação ao ponto `O`,
+   apesar da soma `\overrightarrow{OA} + \overrightarrow{OB}` estar definida matematicamente, ela não faz sentido no contexto físico (note, contudo, que a diferença `\overrightarrow{OB} - \overrightarrow{OA}` faz sentido: `\overrightarrow{OB} - \overrightarrow{OA}` é o vetor deslocamento `\overrightarrow{AB}`).
+   
+    .. tikz:: 
+
+       \tikzset{>=latex}
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (-1.4,2.28);
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (1.58,1.68);
+       \draw [fill=qqqqff] (-1.98,-0.3) circle (1.0pt);
+       \draw[color=qqqqff] (-2.05,-0.60) node {$O$};
+       \draw [fill=qqqqff] (-1.4,2.28) circle (1.0pt);
+       \draw[color=qqqqff] (-1.4,2.57) node {$A$};
+       \draw [fill=qqqqff] (1.58,1.68) circle (1.0pt);
+       \draw[color=qqqqff] (1.8,1.81) node {$B$};
+
+   Outro exemplo: no contexto de vetores deslocamentos, na figura a seguir, a soma `\overrightarrow{AB} + \overrightarrow{CD}` não faz sentido (pois os segmentos orientados `\overrightarrow{AB}` e `\overrightarrow{CD}` não estão justapostos), enquanto que a soma `\overrightarrow{CD} + \overrightarrow{DE}` faz (`\overrightarrow{CD} + \overrightarrow{DE}` é o vetor deslocamento `\overrightarrow{CE}`).
+   
+   .. tikz:: 
+
+      \tikzset{>=latex}
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+      \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+      \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+      \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+      \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+      \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+      \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+      \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+      \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+      \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
+      \draw [fill=qqqqff] (3.92,4.9) circle (1.5pt);
+      \draw [->,line width=1.pt,color=qqqqff] (1.72,4.32) -- (3.92,4.9);
+      \draw[color=qqqqff] (4.2,5.05) node {$E$};
+
+   Ainda nesta linha, observe que a "regra do triângulo" é natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é natural no contexto da soma de vetores que representam forças, mas ela é artificial no contexto de vetores deslocamentos.
+   
+   Para acomodar estas particularidades, alguns livros de Física introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Apesar desta terminologia já estar aparecendo em livros de Matemática (ver, por exemplo, Anton & Busby (2007)), não estamos recomendando que você a use com seus alunos. O importante é que você tenha consciência das peculiaridades de cada caso.
+   
+   No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
+   
+   O vetor posição relativa, apesar de suas limitações (a soma deste tipo de vetor não faz sentido no contexto), é simples e permite evidenciar para o aluno que existem grandezas que não podem ser descritas apenas com um número ou apenas como uma orientação. Assim, como primeira atividade, usamos um problema que envolve posições relativas para motivar o conceito de grandeza vetorial.
+   
+   Vetores deslocamentos são então introduzidos e, por meio de uma versão simplificada do jogo *Corrida de Vetores*,
+   
+   * estabelece-se a diferença entre deslocamento e trajetória percorrida (uma confusão frequente nos alunos);
+   * apresenta-se a justaposição de vetores deslocamentos a partir da qual a soma será introduzida;
+   * apresenta-se o vetor deslocamento nulo e o vetor deslocamento simétrico.
+   
+   Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
+         
+   
    
    
    **OBSERVAÇÕES METODOLÓGICAS GERAIS**
    
    * As seções sob o título "Para Reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
    * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto.
+   
+   **REFERÊNCIAS BIBLIOGRÁFICAS**
+   
+   Anton, Howard; Busby, Robert C. *Álgebra Linear Contemporânea*. Bookman, 2007.
 
 
 
