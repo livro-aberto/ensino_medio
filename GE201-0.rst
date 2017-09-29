@@ -335,12 +335,12 @@ Com os elementos da figura acima, responda:
 #. Que fato é dado na proposição?
 #. O que se deseja demonstrar?
 
-Para conseguir os argumentos necessários você vai ter que interferir na figura. Faça o seguinte:
+   Para conseguir os argumentos necessários você vai ter que interferir na figura. Faça o seguinte:
 
-* Trace por `D` uma paralela a `t_1` que encontra `r_2` no ponto `G`.
-* Trace por `E` uma paralela a `t_1` que encontra `r_3` no ponto `H`.
+   * Trace por `D` uma paralela a `t_1` que encontra `r_2` no ponto `G`.
+   * Trace por `E` uma paralela a `t_1` que encontra `r_3` no ponto `H`.
 
-Responda
+   Responda
 
 #. Os triângulos `DGE` e `EHF` são congruentes? Por quê?
 #. O que se conclui da congruência dos triângulos `DGE` e `EHF`?
@@ -352,9 +352,9 @@ Responda
    #. `DE = EF`
    #. Os triângulos `DGE` e `EHF` são congruentes pelo caso **ALA**.
    
-   De fato, `ABGD` e `BCHE` são paralelogramos. Daí, `DG = AB = BC = EH`.
+      De fato, `ABGD` e `BCHE` são paralelogramos. Daí, `DG = AB = BC = EH`.
    
-   Além disso, os dois triângulos possuem mesmos ângulos pois `DG` e `EH` são paralelos, da mesma forma que `GE` e `HF` são também paralelos.
+      Além disso, os dois triângulos possuem mesmos ângulos pois `DG` e `EH` são paralelos, da mesma forma que `GE` e `HF` são também paralelos.
    
    #. Dessa congruência conclui-se que `DE = EF` que queríamos demonstrar
 
@@ -394,80 +394,80 @@ Responda
 #. Que número o visor da calculadora mostrou quando o segmento dado foi dividido por 3?
 #. Você consegue, com a régua, marcar sobre o segmento a medida que a calculadora mostrou?
 
+   Você percebe aí uma dificuldade. Nossos sentidos são limitados e a régua não marca com precisão frações menores que 1 milímetro. Como fazer então?
 
-Você percebe aí uma dificuldade. Nossos sentidos são limitados e a régua não marca com precisão frações menores que 1 milímetro. Como fazer então?
+   A resposta está na atividade anterior.
 
-A resposta está na atividade anterior.
+   Faça assim:
 
-Faça assim:
+   Nosso segmento chama-se `AB`.
 
-Nosso segmento chama-se `AB`.
-
-* A partir de A trace uma semirreta `AX` (que não contenha o segmento `AB`).
-* Com o compasso em uma abertura qualquer assinale, a partir de `A`, três segmentos iguais. Chamaremos esses pontos sobre a semirreta `AX` de `M`, `N` e `P`. Veja a figura.
-
-
-.. tikz:: 
-
-   \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
-   \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
-   \draw (1.46,-1.04) node[anchor=north west] {M};
-   \draw (3.26,-1.88) node[anchor=north west] {N};
-   \draw (5.08,-2.8) node[anchor=north west] {P};
-   \draw (6.5,-2.96) node[anchor=north west] {X};
-   \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
-   \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697237) -- (0.8010678993991632,-0.4998384089659029);
-   \draw [line width=0.8pt] (0.9440134122930329,-0.369967009714534) -- (0.8637170319393028,-0.5310647791034646);
-   \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
-   \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574088) -- (2.546149211091359,-1.3696438276463392);
-   \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
-   \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
-   \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
-   \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
-   \draw [fill=black] (0.,0.) circle (1.0pt);
-   \draw[color=black] (-0.06,0.31) node {$A$};
-   \draw [fill=black] (4.5,0.) circle (1.0pt);
-   \draw[color=black] (4.46,0.33) node {$B$};
-   \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (2.0pt);
-   \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (2.0pt);
-   \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (2.0pt);
-
-Em seguida trace a reta `PB` e trace paralelas a ela pelos pontos `M` e `N`. Essas retas cortarão o segmento `AB` nos pontos `C` e `D`.
+   * A partir de A trace uma semirreta `AX` (que não contenha o segmento `AB`).
+   * Com o compasso em uma abertura qualquer assinale, a partir de `A`, três segmentos iguais. Chamaremos esses pontos sobre a semirreta `AX` de `M`, `N` e `P`. Veja a figura.
 
 
-.. tikz:: 
+   .. tikz:: 
 
-   \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
-   \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
-   \draw (1.46,-1.04) node[anchor=north west] {M};
-   \draw (3.26,-1.88) node[anchor=north west] {N};
-   \draw (5.08,-2.8) node[anchor=north west] {P};
-   \draw (6.5,-2.96) node[anchor=north west] {X};
-   \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
-   \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697215) -- (0.8010678993991632,-0.49983840896590276);
-   \draw [line width=0.8pt] (0.9440134122930329,-0.3699670097145338) -- (0.8637170319393028,-0.5310647791034644);
-   \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
-   \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574086) -- (2.546149211091359,-1.3696438276463392);
-   \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
-   \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
-   \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
-   \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (4.5,0.)-- (5.235243935076588,-2.6094162560413094);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (1.7450813116921962,-0.8698054186804365)-- (1.5,0.);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (3.4901626233843923,-1.739610837360873)-- (3.,0.);
-   \draw [color=red](1.34,0.6) node[anchor=north west] {C};
-   \draw [color=red](2.88,0.6) node[anchor=north west] {D};
-   \draw [fill=black] (0.,0.) circle (1.0pt);
-   \draw[color=black] (-0.06,0.31) node {$A$};
-   \draw [fill=black] (4.5,0.) circle (1.0pt);
-   \draw[color=black] (4.46,0.33) node {$B$};
-   \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (1.0pt);
-   \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (1.0pt);
-   \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (1.0pt);
+      \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
+      \draw (1.46,-1.04) node[anchor=north west] {M};
+      \draw (3.26,-1.88) node[anchor=north west] {N};
+      \draw (5.08,-2.8) node[anchor=north west] {P};
+      \draw (6.5,-2.96) node[anchor=north west] {X};
+      \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
+      \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697237) -- (0.8010678993991632,-0.4998384089659029);
+      \draw [line width=0.8pt] (0.9440134122930329,-0.369967009714534) -- (0.8637170319393028,-0.5310647791034646);
+      \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
+      \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574088) -- (2.546149211091359,-1.3696438276463392);
+      \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
+      \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
+      \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
+      \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw[color=black] (-0.06,0.31) node {$A$};
+      \draw [fill=black] (4.5,0.) circle (1.0pt);
+      \draw[color=black] (4.46,0.33) node {$B$};
+      \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (2.0pt);
+      \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (2.0pt);
+      \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (2.0pt);
 
-Responda
+   Em seguida trace a reta `PB` e trace paralelas a ela pelos pontos `M` e `N`. Essas retas cortarão o segmento `AB` nos pontos `C` e `D`.
 
-#. Com esse procedimento, explique porque os pontos `C` e `D` dividem o segmento `AB` em três partes iguais.
+
+   .. tikz:: 
+
+     \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
+     \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
+     \draw (1.46,-1.04) node[anchor=north west] {M};
+     \draw (3.26,-1.88) node[anchor=north west] {N};
+     \draw (5.08,-2.8) node[anchor=north west] {P};
+     \draw (6.5,-2.96) node[anchor=north west] {X};
+     \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
+     \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697215) -- (0.8010678993991632,-0.49983840896590276);
+     \draw [line width=0.8pt] (0.9440134122930329,-0.3699670097145338) -- (0.8637170319393028,-0.5310647791034644);
+     \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
+     \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574086) -- (2.546149211091359,- 1.3696438276463392);
+     \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
+     \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
+     \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
+     \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
+     \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (4.5,0.)--  (5.235243935076588,-2.6094162560413094);
+     \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (1.7450813116921962,-0.8698054186804365)-- (1.5,0.);
+     \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (3.4901626233843923,-1.739610837360873)-- (3.,0.);
+     \draw [color=red](1.34,0.6) node[anchor=north west] {C};
+     \draw [color=red](2.88,0.6) node[anchor=north west] {D};
+     \draw [fill=black] (0.,0.) circle (1.0pt);
+     \draw[color=black] (-0.06,0.31) node {$A$};
+     \draw [fill=black] (4.5,0.) circle (1.0pt);
+     \draw[color=black] (4.46,0.33) node {$B$};
+     \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (1.0pt);
+     \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (1.0pt);
+     \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (1.0pt);
+     \draw [fill=red] (1.5,0.) circle (1.5pt);
+     \draw [fill=red] (3.,0.) circle (1.5pt);
+   Responda
+
+#. Com esse procedimento, explique por que os pontos `C` e `D` dividem o segmento `AB` em três partes iguais.
 #. Para dividir um segmento em partes iguais há necessidade de fazer medidas?
 
 
