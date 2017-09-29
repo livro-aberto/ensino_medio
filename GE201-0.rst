@@ -2,4 +2,493 @@
 Teorema de Tales
 ****************
 
+
+.. _sec-explorando:
+
+Explorando
+=========
+
+O teorema de Tales é um resultado básico da geometria plana e vai permitir a exploração e desenvolvimento de outros resultados, também centrais, dessa matéria. O teorema de Tales (das retas paralelas) é conhecido desde a antiguidade. Tales de Mileto viveu no século 6 a.C., mas nenhum dos seus escritos sobreviveu. Tudo o que sabemos dele veio através de matemáticos posteriores. Entretanto, as retas paralelas sempre existiram e é delas que vamos falar neste capítulo.
+
+
+.. _ativ-nas-ruas:
+
+Atividade: Nas ruas de uma cidade
+---------------------------------
+
+.. admonition:: Para o professor
+
+  **Objetivos específicos**
+  
+  Levar o estudante a:
+  
+  * Reconhecer retas paralelas no mundo em que vive. 
+  * Estimar uma distância conhecendo outras.
+  * Praticar sua intuição
+  
+  **Observações e recomendações**
+  
+  * Os valores que aparecem no desenho são bem próximos dos reais.
+  * No item a) esperamos apenas que o aluno perceba o paralelismo entre as ruas, nada mais.
+  * Apenas visualmente, uma estimativa entre 180m e 190m é excelente.
+  * É conveniente verificar se alguns alunos souberam fazer algum cálculo, mostrando que já tinham trazido esse conceito do Ensino Fundamental.
+  
+A figura a seguir mostra uma parte da cidade de Nova York. Observe as ruas numeradas de 67 a 71, as Avenidas Columbus e Broadway.
+
+.. figure:: _resources/Fig-tales-01.png
+
+A distância `A` entre duas esquinas consecutivas da Avenida Columbus é igual a `70m` e a distância `B` entre as esquinas correspondentes na Broadway é de `80m`. A distância `C` entre as esquinas da Columbus com as ruas 69 e 71 é de `161m`, e a distância entre as esquinas correspondentes na Broadway é `D`.
+
+Responda:
+
+#. Que relação você vê entre as ruas de 67 à 71?
+#. Visualmente, estime um valor para a distância `D`.
+#. Você consegue calcular a distância `D`?
+
+
+.. _ativ-recordando-paralelas:
+
+Atividade: recordando paralelas
+-------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a
+   
+   * Reconhecer ângulos em paralelas cortadas por transversal. 
+   * 	Reconhecer os ângulos que são iguais nessa situação.
+   * Lembrar um caso de congruência de triângulos.
+   
+   **Observações e recomendações**
+   
+   * A relação de igualdade entre os ângulos `a`, `b` e `c` deve ser percebida intuitivamente, sem necessidade de buscar alguma demonstração. No último exercício do capítulo o aluno vai usar esses fatos como argumento para demonstrar que certo triiangulo é isósceles.
+   * 	Perceber a congruência dos dois triângulos de forma intuitiva já é bastante bom. Também o aluno poderá reproduzir a figura em uma folha de papel recortar os triângulos, e verificar, que eles se superpoem perfeitamente.
+   * 	Para uma justificativa mais formal necessitamos dos critérios de congruência de triângulos que estarão a seguir.
+   
+Na figura a seguir há dois pares de retas paralelas
+
+.. tikz:: legenda
+  \draw [shift={(-0.7404492822759008,2.0323275076976457)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-158.99677728856574:0.40327274248797285) arc (-158.99677728856574:-103.61977057805956:0.40327274248797285) -- cycle;
+  \draw [shift={(-1.2241649681252438,0.03590094973762964)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (21.003222711434265:0.40327274248797285) arc (21.003222711434265:76.38022942194044:0.40327274248797285) -- cycle;
+  \draw [shift={(2.5915772583373085,1.500873411683074)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (21.003222711434265:0.40327274248797285) arc (21.003222711434265:76.38022942194043:0.40327274248797285) -- cycle;
+  \draw [line width=0.8pt] (-2.62,-0.5)-- (4.1,2.08);
+  \draw [line width=0.8pt] (-2.7,1.28)-- (4.0347849649135,3.8656763704578623);
+  \draw [line width=0.8pt] (-1.48,-1.02)-- (-0.38,3.52);
+  \draw [line width=0.8pt] (2.32,0.38)-- (3.313758477838472,4.481512263078785);
+  \draw [line width=0.8pt] (-0.7404492822759008,2.0323275076976457)-- (2.5915772583373085,1.500873411683074);
+  \draw (-1.2,2.6) node[anchor=north west] {A};
+  \draw (-1.3,0) node[anchor=north west] {B};
+  \draw (2.5,1.4) node[anchor=north west] {C};
+  \draw (2.5,4) node[anchor=north west] {D};
+  \draw (-1.4,1.7) node[anchor=north west] {$ a $};
+  \draw (-1,.9) node[anchor=north west] {$ b $};
+  \draw (2.8,2.3) node[anchor=north west] {$ c $};
+  \draw [line width=2.pt,color=red] (-1.2241649681252438,0.03590094973762964)-- (-0.7404492822759008,2.0323275076976457);
+  \draw [line width=2.pt,color=red] (2.5915772583373085,1.500873411683074)-- (3.075292944186652,3.4972999696430898);
+  \begin{scriptsize}
+  \draw [fill=black] (-0.7404492822759008,2.0323275076976457) circle (1.0pt);
+  \draw [fill=black] (-1.2241649681252438,0.03590094973762964) circle (1.0pt);
+  \draw [fill=black] (2.5915772583373085,1.500873411683074) circle (1.0pt);
+  \draw [fill=black] (3.075292944186652,3.4972999696430898) circle (1.0pt);
+  \end{scriptsize}
+  
+Responda
+
+#. Você conhece o nome que se dá aos ângulos `a` e `b`?
+#. Que relação há entre os ângulos `a` e `b`?
+#. Você conhece o nome que se dá aos ângulos `b` e `c`?
+#. Que relação há entre os ângulos `b` e `c`?
+#. Os triângulos `ABC` e `CDA` são congruentes. Por quê?
+#. O que ocorre com os segmentos `AB` e `CD`? E com os segmentos `AD` e `BC`?
+
+
+.. admonition:: Respostas 
+
+   #. Alternos internos
+   #. São iguais
+   #. Correspondentes
+   #. São iguais.
+   #. Porque possuem os mesmos ângulos internos e têm o lado AC em comum.
+   #. São iguais. São iguais também
+
+
+.. _sec-organizando-as-ideias:
+
+Organizando as ideias 
+=====================
+
+Na atividade anterior percebemos que os triângulos `ABC` e `CDA` são congruentes. Afinal, quando dois triângulos são congruentes? Não podemos nos deixar levar somente pela intuição.
+
+Por exemplo, os dois triângulos da figura a seguir são congruentes?
+
+
+.. tikz:: 
+
+   \draw [shift={(-3.12,2.96)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-13.706961004079805:0.40139099339564077) arc (-13.706961004079805:56.29303899592019:0.40139099339564077) -- cycle;
+   \draw [shift={(3.2665068298598277,4.71632784582858)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (167.21274687833522:0.40139099339564077) arc (167.21274687833522:238.21274687833528:0.40139099339564077) -- cycle;
+   \draw [line width=0.8pt] (-3.12,2.96)-- (0.16,2.16);
+   \draw [line width=0.8pt] (-3.12,2.96)-- (-1.8209561349802097,4.907321536218554);
+   \draw [line width=0.8pt] (-1.8209561349802097,4.907321536218554)-- (0.16,2.16);
+   \draw [line width=0.8pt] (1.4880625549427764,1.8465654931215187)-- (3.2665068298598277,4.71632784582858);
+   \draw [line width=0.8pt] (3.2665068298598277,4.71632784582858)-- (0.9837136824628329,5.234431672164059);
+   \draw [line width=0.8pt] (0.9837136824628329,5.234431672164059)-- (1.4880625549427764,1.8465654931215187);
+   \draw (-3,4.5) node[anchor=north west] {$5$};
+   \draw (2,5.5) node[anchor=north west] {$5$};
+   \draw (-2,2.401245365278648) node[anchor=north west] {$7$};
+   \draw (0.7,3.7) node[anchor=north west] {$7$};
+   \draw (-2.7,3.4) node[anchor=north west] {$70^{\circ}$};
+   \draw (2.1,4.7) node[anchor=north west] {$70^{\circ}$};
+   \draw [fill=black] (-3.12,2.96) circle (1.0pt);
+   \draw [fill=black] (0.16,2.16) circle (1.0pt);
+   \draw [fill=black] (-1.8209561349802097,4.907321536218554) circle (1.0pt);
+   \draw [fill=black] (1.4880625549427764,1.8465654931215187) circle (1.0pt);
+   \draw [fill=black] (3.2665068298598277,4.71632784582858) circle (1.0pt);
+   \draw [fill=black] (0.9837136824628329,5.234431672164059) circle (1.0pt);
+   
+A resposta é não. Os dois triângulos da figura acima parecem, mas não são congruentes.
+
+Os casos básicos que garantem a congruência de dois triângulos são:
+
+#. Caso lado-lado-lado
+#. Caso lado-ângulo-lado
+#. Caso ângulo-lado-ângulo
+
+
+.. tikz:: 
+
+   \draw [shift={(0.7,3.54)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-20.772254682045826:0.4) arc (-20.772254682045826:6.4108400202324525:0.4) -- cycle;
+   \draw [shift={(1.82,1.82)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-20.77225468204584:0.4) arc (-20.77225468204584:6.410840020232449:0.4) -- cycle;
+   \draw [shift={(5.74,2.52)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (52.073537674961365:0.4) arc (52.073537674961365:99.9720576873311:0.4) -- cycle;
+   \draw [shift={(7.16,1.1)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (52.073537674961386:0.4) arc (52.073537674961386:99.9720576873311:0.4) -- cycle;
+   \draw [shift={(6.94,4.06)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (169.56252464888183:0.4) arc (169.56252464888183:232.07353767496136:0.4) -- cycle;
+   \draw [shift={(8.36,2.64)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (169.56252464888183:0.4) arc (169.56252464888183:232.07353767496136:0.4) -- cycle;
+   \draw [line width=0.8pt] (-3.22,2.66)-- (-1.12,2.66);
+   \draw [line width=0.8pt] (-3.22,2.66)-- (-2.62,3.86);
+   \draw [line width=0.8pt] (-2.62,3.86)-- (-1.12,2.66);
+   \draw [line width=0.8pt] (-2.3,0.84)-- (-0.2,0.84);
+   \draw [line width=0.8pt] (-2.3,0.84)-- (-1.7,2.04);
+   \draw [line width=0.8pt] (-1.7,2.04)-- (-0.2,0.84);
+   \draw [line width=0.8pt] (0.7,3.54)-- (3.02,2.66);
+   \draw [line width=0.8pt] (3.02,2.66)-- (2.48,3.74);
+   \draw [line width=0.8pt] (2.48,3.74)-- (0.7,3.54);
+   \draw [line width=0.8pt] (1.82,1.82)-- (4.14,0.94);
+   \draw [line width=0.8pt] (4.14,0.94)-- (3.6,2.02);
+   \draw [line width=0.8pt] (3.6,2.02)-- (1.82,1.82);
+   \draw [line width=0.8pt] (5.74,2.52)-- (6.94,4.06);
+   \draw [line width=0.8pt] (6.94,4.06)-- (5.42,4.34);
+   \draw [line width=0.8pt] (5.42,4.34)-- (5.74,2.52);
+   \draw [line width=0.8pt] (7.16,1.1)-- (8.36,2.64);
+   \draw [line width=0.8pt] (8.36,2.64)-- (6.84,2.92);
+   \draw [line width=0.8pt] (6.84,2.92)-- (7.16,1.1);
+   \draw (-2.4,2.7) node[anchor=north west] {$ a $};
+   \draw (-1.4,0.8) node[anchor=north west] {$ a $};
+   \draw (1.4,4.1) node[anchor=north west] {$ a $};
+   \draw (2.4,2.4) node[anchor=north west] {$ a $};
+   \draw (6.35,3.4) node[anchor=north west] {$ a $};
+   \draw (7.7,2.) node[anchor=north west] {$ a $};
+   \draw (-1.9,3.9) node[anchor=north west] {$b$};
+   \draw (-1,2) node[anchor=north west] {$b$};
+   \draw (1.6,3.1) node[anchor=north west] {$b$};
+   \draw (2.7,1.4) node[anchor=north west] {$b$};
+   \draw (-3.3,3.6) node[anchor=north west] {$ c $};
+   \draw (-2.32,1.8) node[anchor=north west] {$ c $};
+   \draw (1.1,3.7) node[anchor=north west] {$\alpha$};
+   \draw (2.2,2) node[anchor=north west] {$\alpha$};
+   \draw (5.6,3.4) node[anchor=north west] {$\alpha$};
+   \draw (7.,2) node[anchor=north west] {$\alpha$};
+   \draw (6.1,4.1) node[anchor=north west] {$ \beta $};
+   \draw (7.5,2.7) node[anchor=north west] {$ \beta $};
+   \draw (-3,5.08) node[anchor=north west] {Caso LLL};
+   \draw (1.,5.08) node[anchor=north west] {Caso LAL};
+   \draw (5,5.06) node[anchor=north west] {Caso ALA};
+   \draw [fill=black] (-3.22,2.66) circle (1.0pt);
+   \draw [fill=black] (-1.12,2.66) circle (1.0pt);
+   \draw [fill=black] (-2.62,3.86) circle (1.0pt);
+   \draw [fill=black] (-2.3,0.84) circle (1.0pt);
+   \draw [fill=black] (-0.2,0.84) circle (1.0pt);
+   \draw [fill=black] (-1.7,2.04) circle (1.0pt);
+   \draw [fill=black] (0.7,3.54) circle (1.0pt);
+   \draw [fill=black] (3.02,2.66) circle (1.0pt);
+   \draw [fill=black] (2.48,3.74) circle (1.0pt);
+   \draw [fill=black] (1.82,1.82) circle (1.0pt);
+   \draw [fill=black] (4.14,0.94) circle (1.0pt);
+   \draw [fill=black] (3.6,2.02) circle (1.0pt);
+   \draw [fill=black] (5.74,2.52) circle (1.0pt);
+   \draw [fill=black] (6.94,4.06) circle (1.0pt);
+   \draw [fill=black] (5.42,4.34) circle (1.0pt);
+   \draw [fill=black] (7.16,1.1) circle (1.0pt);
+   \draw [fill=black] (8.36,2.64) circle (1.0pt);
+   \draw [fill=black] (6.84,2.92) circle (1.0pt);
+   
+Com essa importante ferramenta em mãos podemos agora justificar por que os triângulos `ABC` e `CDA` da atividade anterior são congruentes e, com isso, concluir as igualdades dos pares de segmentos do item f).
+
+Veja novamente a figura, agora simplificada e com os outros elementos que vamos necessitar
+
+
+.. tikz:: 
+
+   \draw [shift={(-1.58,4.08)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-11.245482805462865:0.5454545454545459) arc (-11.245482805462865:15.708637829015746:0.5454545454545459) -- cycle;
+   \draw [shift={(1.84,3.4)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (168.75451719453713:0.5454545454545459) arc (168.75451719453713:195.70863782901574:0.5454545454545459) -- cycle;
+   \draw [shift={(-1.58,4.08)},line width=0.8pt,color=blue,fill=blue,fill opacity=0.10000000149011612] (0,0) -- (-103.42183506788622:0.3636363636363639) arc (-103.42183506788622:-11.245482805462876:0.3636363636363639) -- cycle;
+   \draw [shift={(1.84,3.4)},line width=0.8pt,color=blue,fill=blue,fill opacity=0.10000000149011612] (0,0) -- (76.57816493211381:0.3636363636363639) arc (76.57816493211381:168.75451719453713:0.3636363636363639) -- cycle;
+   \draw [line width=0.8pt] (-2.,2.32)-- (1.84,3.4);
+   \draw [line width=0.8pt] (-1.58,4.08)-- (-2.,2.32);
+   \draw [line width=0.8pt] (-1.58,4.08)-- (2.26,5.16);
+   \draw [line width=0.8pt] (2.26,5.16)-- (1.84,3.4);
+   \draw [line width=0.8pt] (-1.58,4.08)-- (1.84,3.4);
+   \draw [shift={(-1.58,4.08)},line width=0.8pt,color=blue] (-103.42183506788622:0.3636363636363639) arc (-103.42183506788622:-11.245482805462876:0.3636363636363639);
+   \draw [shift={(-1.58,4.08)},line width=0.8pt,color=blue] (-103.42183506788622:0.27272727272727293) arc (-103.42183506788622:-11.245482805462876:0.27272727272727293);
+   \draw [shift={(1.84,3.4)},line width=0.8pt,color=blue] (76.57816493211381:0.3636363636363639) arc (76.57816493211381:168.75451719453713:0.3636363636363639);
+   \draw [shift={(1.84,3.4)},line width=0.8pt,color=blue] (76.57816493211381:0.27272727272727293) arc (76.57816493211381:168.75451719453713:0.27272727272727293);
+   \draw (-0.9,4.3) node[anchor=north west] {$ x $};
+   \draw (0.7,3.6) node[anchor=north west] {$ x $};
+   \draw (-1.5,3.9) node[anchor=north west] {$ y $};
+   \draw (1.4,4.3) node[anchor=north west] {$ y $};
+   \draw [fill=black] (-2.,2.32) circle (1.0pt);
+   \draw[color=black] (-2.064727272727273,2.0665454545454542) node {$B$};
+   \draw [fill=black] (1.84,3.4) circle (1.0pt);
+   \draw[color=black] (2.1,3.2) node {$C$};
+   \draw [fill=black] (-1.58,4.08) circle (1.0pt);
+   \draw[color=black] (-1.6465454545454545,4.412) node {$A$};
+   \draw [fill=black] (2.26,5.16) circle (1.0pt);
+   \draw[color=black] (2.2807272727272756,5.466545454545455) node {$D$};
+   
+Os ângulos marcados com `x` são alternos internos nas paralelas `AC` e `BC`.
+
+Os ângulos marcados com `y` são alternos internos nas paralelas `AB` e `DC`.
+
+Assim, os triângulos `ABC` e `CDA` são congruentes pelo caso **ALA**.
+
+Dessa forma, temos `AB = CD` e `BC = DA`.
+
+
+.. admonition:: Importante 
+
+   Com os argumentos que acabamos de mostrar, concluímos uma importante propriedade: 
+   
+   *“Em um paralelogramo, os lados opostos são iguais.”*
+   
+
+.. _ativ-demonstrando-um-fato:
+
+Atividade: demonstrando um fato
+-------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Reconhecer em uma proposição o que é dado e o que se quer demonstrar. 
+   * Identificar as ferramentas que podem ser usadas como argumento para a demonstração.
+   * Planejar a sequência de argumentos para concluir o resultado.
+   
+   **Observações e recomendações**
+   
+   * Essa proposição já é um teorema, mas ainda não estamos dando esse título.
+   * Para demonstrar a proposição é necessário interferir na figura, traçando novos segmentos que vão permitir o aparecimento de triângulos congruentes. Nessa primeira atividade de demonstração, daremos as dicas para que o aluno consiga percorrer o caminho até o final.
+   
+
+As paralelas `r_1`, `r_2` e `r_3` estão cortadas pelas transversais `t_1` e `t_2` . Demonstre que:
+
+
+*“Se as paralelas determinam sobre uma transversal segmentos iguais então determinarão, na segunda transversal, segmentos também iguais.”*
+
+
+Veja a figura:
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-2.7,0.)-- (4.6,0.);
+   \draw [line width=0.8pt] (-2.7,2.68)-- (4.56,2.68);
+   \draw [line width=0.8pt] (-2.7,1.34)-- (4.58,1.34);
+   \draw [line width=0.8pt] (-1.54,3.3)-- (-2.2,-0.74);
+   \draw [line width=0.8pt] (-0.16,3.32)-- (4.66,-0.7);
+   \draw (-2.1,3.2) node[anchor=north west] {A};
+   \draw (-2.3,1.9) node[anchor=north west] {B};
+   \draw (-2.6,0.5) node[anchor=north west] {C};
+   \draw (0.558,3.2) node[anchor=north west] {D};
+   \draw (2.2,1.9) node[anchor=north west] {E};
+   \draw (3.9,0.5) node[anchor=north west] {F};
+   \draw (-3.3,2.9) node[anchor=north west] {$r_1$};
+   \draw (-3.3,1.6) node[anchor=north west] {$r_2$};
+   \draw (-3.3,0.3) node[anchor=north west] {$r_3$};
+   \draw (-2.4,-0.8) node[anchor=north west] {$t_1$};
+   \draw (4.76,-0.8) node[anchor=north west] {$t_2$};
+   \draw [fill=black] (-1.6412871287128707,2.68) circle (1.0pt);
+   \draw [fill=black] (-1.86019801980198,1.34) circle (1.0pt);
+   \draw [fill=black] (-2.079108910891089,0.) circle (1.0pt);
+   \draw [fill=black] (0.6073631840796017,2.68) circle (1.0pt);
+   \draw [fill=black] (2.214029850746268,1.34) circle (1.0pt);
+   \draw [fill=black] (3.8206965174129355,0.) circle (1.0pt);
+
+Vamos fazer perguntas e dar algumas dicas para que você possa demonstrar essa proposição.
+
+Com os elementos da figura acima, responda:
+
+#. Que fato é dado na proposição?
+#. O que se deseja demonstrar?
+
+Para conseguir os argumentos necessários você vai ter que interferir na figura. Faça o seguinte:
+
+* Trace por `D` uma paralela a `t_1` que encontra `r_2` no ponto `G`.
+* Trace por `E` uma paralela a `t_1` que encontra `r_3` no ponto `H`.
+
+Responda
+
+#. Os triângulos `DGE` e `EHF` são congruentes? Por quê?
+#. O que se conclui da congruência dos triângulos `DGE` e `EHF`?
+
+
+.. admonition:: Resposta 
+
+   #. `AB = BC`
+   #. `DE = EF`
+   #. Os triângulos `DGE` e `EHF` são congruentes pelo caso **ALA**.
+   
+   De fato, `ABGD` e `BCHE` são paralelogramos. Daí, `DG = AB = BC = EH`.
+   
+   Além disso, os dois triângulos possuem mesmos ângulos pois `DG` e `EH` são paralelos, da mesma forma que `GE` e `HF` são também paralelos.
+   
+   #. Dessa congruência conclui-se que `DE = EF` que queríamos demonstrar
+
+
+.. _ativ-divisao-de-segmentos:
+
+Atividade: dividindo um segmento em partes iguais
+-------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Perceber que nossa visão é limitada e nossos instrumentos de medida são limitados e imperfeitos.
+   * Aprender que construções geométricas não dependem de medidas.
+   * Perceber que construções geométricas mostram resultados exatos, coisa que nossos sentidos não permitem.
+   * Executar concretamente uma aplicação de algo que ele mesmo demonstrou.
+   
+   **Observações e recomendações**
+   
+   * Medir alguma coisa com a régua sempre acarreta erros, para mais ou para menos, pois nossa visão não é muito boa. Uma experiância interessante é desenhar um segmento no papel e pedir para vários alunos usarem a régua para medir o comprimento. Depois, peça que eles multipliquem a medida por um número grande (isso amplia qualquer erro) e verifique os resultados.
+   * As construções geométricas mostram processos exatos para executar diversas coisas. Quando as executamos concretamente com os instumentos de desenho, certamente também cometeremos erros, mas estes serão muito menores do que os outros que foram feitos atrvés de medidas
+   
+Um segmento desenhado no papel precisa ser dividido em três partes iguais. Um aluno fez assim:
+
+Com uma régua mediu seu comprimento encontrando `7,1cm`.
+
+Com a calculadora dividiu essa medida por 3.
+
+Ele pretende usar a régua para aplicar sobre o segmento a medida que aparece na calculadora.
+
+Responda
+
+#. Que número o visor da calculadora mostrou quando o segmento dado foi dividido por 3?
+#. Você consegue, com a régua, marcar sobre o segmento a medida que a calculadora mostrou?
+
+
+Você percebe aí uma dificuldade. Nossos sentidos são limitados e a régua não marca com precisão frações menores que 1 milímetro. Como fazer então?
+
+A resposta está na atividade anterior.
+
+Faça assim:
+
+Nosso segmento chama-se `AB`.
+
+* A partir de A trace uma semirreta `AX` (que não contenha o segmento `AB`).
+* Com o compasso em uma abertura qualquer assinale, a partir de `A`, três segmentos iguais. Chamaremos esses pontos sobre a semirreta `AX` de `M`, `N` e `P`. Veja a figura.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
+   \draw (1.46,-1.04) node[anchor=north west] {M};
+   \draw (3.26,-1.88) node[anchor=north west] {N};
+   \draw (5.08,-2.8) node[anchor=north west] {P};
+   \draw (6.5,-2.96) node[anchor=north west] {X};
+   \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
+   \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697237) -- (0.8010678993991632,-0.4998384089659029);
+   \draw [line width=0.8pt] (0.9440134122930329,-0.369967009714534) -- (0.8637170319393028,-0.5310647791034646);
+   \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
+   \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574088) -- (2.546149211091359,-1.3696438276463392);
+   \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
+   \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
+   \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
+   \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.06,0.31) node {$A$};
+   \draw [fill=black] (4.5,0.) circle (1.0pt);
+   \draw[color=black] (4.46,0.33) node {$B$};
+   \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (2.0pt);
+   \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (2.0pt);
+   \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (2.0pt);
+
+Em seguida trace a reta `PB` e trace paralelas a ela pelos pontos `M` e `N`. Essas retas cortarão o segmento `AB` nos pontos `C` e `D`.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0.,0.)-- (4.5,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (6.38,-3.18);
+   \draw (1.46,-1.04) node[anchor=north west] {M};
+   \draw (3.26,-1.88) node[anchor=north west] {N};
+   \draw (5.08,-2.8) node[anchor=north west] {P};
+   \draw (6.5,-2.96) node[anchor=north west] {X};
+   \draw [line width=0.8pt] (0.,0.)-- (1.7450813116921962,-0.8698054186804365);
+   \draw [line width=0.8pt] (0.8813642797528934,-0.33874063957697215) -- (0.8010678993991632,-0.49983840896590276);
+   \draw [line width=0.8pt] (0.9440134122930329,-0.3699670097145338) -- (0.8637170319393028,-0.5310647791034644);
+   \draw [line width=0.8pt] (1.7450813116921962,-0.8698054186804365)-- (3.4901626233843923,-1.739610837360873);
+   \draw [line width=0.8pt] (2.6264455914450897,-1.2085460582574086) -- (2.546149211091359,-1.3696438276463392);
+   \draw [line width=0.8pt] (2.6890947239852294,-1.2397724283949703) -- (2.608798343631499,-1.4008701977839009);
+   \draw [line width=0.8pt] (3.4901626233843923,-1.739610837360873)-- (5.235243935076588,-2.6094162560413094);
+   \draw [line width=0.8pt] (4.371526903137285,-2.078351476937845) -- (4.291230522783555,-2.239449246326776);
+   \draw [line width=0.8pt] (4.4341760356774245,-2.1095778470754065) -- (4.353879655323694,-2.2706756164643376);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (4.5,0.)-- (5.235243935076588,-2.6094162560413094);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (1.7450813116921962,-0.8698054186804365)-- (1.5,0.);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (3.4901626233843923,-1.739610837360873)-- (3.,0.);
+   \draw [color=red](1.34,0.6) node[anchor=north west] {C};
+   \draw [color=red](2.88,0.6) node[anchor=north west] {D};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.06,0.31) node {$A$};
+   \draw [fill=black] (4.5,0.) circle (1.0pt);
+   \draw[color=black] (4.46,0.33) node {$B$};
+   \draw [fill=black] (1.7450813116921962,-0.8698054186804365) circle (1.0pt);
+   \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (1.0pt);
+   \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (1.0pt);
+
+Responda
+
+#. Com esse procedimento, explique porque os pontos `C` e `D` dividem o segmento `AB` em três partes iguais.
+#. Para dividir um segmento em partes iguais há necessidade de fazer medidas?
+
+
+
+
+   
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
     
