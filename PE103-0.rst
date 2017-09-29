@@ -19,10 +19,6 @@ Introdução
 
    (EM11MT03) Realizar pesquisas considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráfios apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
 
-**Observação** A habilidade da BNCC que fundamenta este capítulo (EM11MT03, correspondente à unidade curricular I do ensino médio) está contemplada nos pré-requisitos, identificados a partir de habilidades da BNCC referentes aos anos finais do ensino fundamental (listadas a seguir). Entendemos que esta é uma oportunidade necessária e importante para revisitar esses assuntos com o objetivo de aprofundar a discussão a partir de questões adequadas à etapa de amadurecimento dos estudantes e envolvendo maior quantidade de dados além da investigação de possíveis relações entre as variáveis consideradas.
-
-*Próximo capítulo:* (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos em pesquisas realizadas pelos estudantes, considerando localização (centro) e dispersão (amplitude).
-
 .. admonition:: Pré-requisitos
 
    (EF08MT08)
@@ -42,10 +38,10 @@ Introdução
 
    #. O que será estudado:
    
-      * Caracterização de problemas que envolvem Estatística,
-      * Conceitos básicos da Estatística: população e amostra,
-      * Tipos de variáveis,
-      * Organização dos dados em tabelas de frequências,
+      * Caracterização de problemas que envolvem Estatística.
+      * Conceitos básicos da Estatística: população e amostra, parâmetro e estimador.
+      * Tipos de variáveis.
+      * Organização dos dados em tabelas de frequências.
       * Representações gráficas adequadas para os diferentes tipos de variáveis.
        
    #. Palavras-chave:
@@ -71,12 +67,11 @@ Atividade: Escolha do melhor fornecedor
 
 *Controle de Qualidade na Produção de Parafusos (Inspirada em ROSSMAN and CHANCE, 1998).*
 
-
 .. admonition:: Objetivos específicos
 
-   Comparar distribuições empíricas de dados estimulando a necessidade de medidas de posição e de dispersão tais como moda e amplitude que auxiliam na descrição das distribuições.
+   Comparar distribuições empíricas de dados estimulando a necessidade de resumir a informação usando medidas de posição e de dispersão tais como moda e amplitude que auxiliam na descrição das distribuições.
 
-Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é de “mais ou menos” 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo azul representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
+Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é 15,0 cm "mais ou menos" 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo azul representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
 
 
 .. admonition:: Para o professor
@@ -135,7 +130,7 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
    .. admonition::  Amplitude 
 
-      Em Estatística, a **amplitude** é definida como a diferença entre o maior e o menor dos valores observados. 
+      Em Estatística, a **amplitude** é definida como a diferença entre o maior e o menor valores observados. 
 
 #. De qual fornecedor você classifica o comportamento dos diâmetros dos parafusos como o de maior :ref:`dispersão<def-dispersao>`? E o de menor :ref:`dispersão<def-dispersao>`?
 
@@ -151,12 +146,15 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
 .. Adicionei essa etapa de discussão, que pode ser útil para introduzir outros conceitos mais na frente.
 
-**Discussão**
+**Para discussão**
 
-* Comenta sobre a estratégia para realizar as medições: você acredita que as medidas de uma caixa de parafusos podem ser representativas das medidas do total dos parafusos produzidos pelo fornecedor?
-* Você considera que seria viável medir todos os parafusos fabricados?
-* Pensa outras estratégias nas quais poderia ser obtida essa informação e discute suas vantagens e disvantagens com teus colegas.
-* Pesquisa sobre alguns métodos de controle de qualidade de produtos aplicados na industria e compara com as ideias propostas por você e teus colegas.
+* Comente sobre a estratégia usada para realizar as medições: o comportamento das medidas de uma caixa de parafusos refletem o comportamento das medidas de todos os parafusos produzidos pelo fornecedor?
+
+* Seria viável medir todos os parafusos fabricados por um fornecedor?
+
+* Que outras estratégias poderiam ser usadas para a escolha do fornecedor? Discuta com seus colegas sobre as vantagens e desvantagens de cada estratégia sugerida.
+
+* Em Controle de Qualidade, área de aplicação da Estatística na Indústria, é muito comum realizar comparações de diferentes produtos para fazer uma escolha ou verificar se os mesmos atendem às especificações apresentadas. Proponha um problema desse tipo com algum produto e indique a estratégia a ser usada e que medidas serão observadas.
 
 .. Falta complementar esta caixa para o professor
 .. admonition:: Para o professor
@@ -195,6 +193,10 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
 
 .. _tabela-medicamentos:
 
+.. table:: Legenda
+   :widths: 1 3
+   :column-alignment: left center
+   
 +-------------+-------------------------------------------------------------+------+
 | medicamento | tempo em minutos                                            | soma |
 +=============+=============================================================+======+
@@ -205,21 +207,23 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
 | X           | 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 13 13 13 13 13 | 240  |
 +-------------+-------------------------------------------------------------+------+
 
-#. Organize as informações apresentadas no quadro acima em diagramas de pontos.
+.. Está faltando um número 9 para o medicamento X que está com um dado a menos. Os números estão muito juntos. Formato da tabela precisa melhorar, talvez dispor os dados em colunas em vez de linhas.
+
+#. Organize as informações apresentadas no quadro acima em diagramas de pontos. 
 #. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
 #. Determine os tempos médios de cura da dor de cabeça para cada substância.
 #. A partir dos diagramas construídos, compare os diferentes tratamentos. 
 
-**Discussão**
+**Para discussão**
 
-Ao realizar uma validação do estúdio, um dos pesquisadores percebeu algumas características nos pacientes que obligaram a repetir o tratamento de 3 deles e substitui os resultados para o medicamento Y. Realice um novo diagrama de pontos com os dados apresentados a continuação, compare com o diagrama anterior e comente:
+Ao realizar uma validação desse estudo, um dos pesquisadores percebeu que três pacientes do grupo que usou o medicamento Y usaram outro medicamento o que fez com que fosse necessário refazer três novas observações  para o medicamento Y descartando as medições inadequadas. Construa um novo diagrama de pontos com os novos valores apresentados e compare com o diagrama obtido anteriromente para o medicamento Y.
 
 .. Incluir nova tabela de dados para o estudo Y
 
-#. Você mudaria as conclussões formuladas a partir das observações anteriores?
+#. Você mudaria suas conclussões anteriores com essa nova distribuição de tempos de cura do medicamento Y?
 #. Como é possível que apenas 3 pacientes possam ter um efeito como esse nos resultados?
 #. Você pensa que aconteceria a mesma coisa com o medicamento X? E com Z? Quantos pontos precisaria trocar em cada caso para mudar as suas conclussões?
-#. Discuta quais são as diferenças em cada caso y por quê acredita que isto acontece.
+#. Discuta quais são as diferenças em cada caso  e por que acredita que isto acontece.
 
 
 .. admonition:: Resposta 
@@ -280,7 +284,7 @@ Um aspecto fundamental da Estatística praticado nessa pesquisa é a forma na qu
 
 *Quando dispomos de dados provenientes de um subconjunto da população sempre podemos descrever os dados nos restringindo apenas ao subconjunto. Se quisermos estender nossas conclusões para a população, alguns cuidados especiais, fora do escopo desse livro, devem ser tomados.*
 
-Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Suplemento de Práticas de Esporte e Atividade Física” no qual foram investigadas as pessoas moradoras de 15 anos ou mais de idade, em seu tempo livre, no período de referência de 365 dias, com o objetivo de quantificar aquelas que praticaram algum esporte ou atividade física no período considerado bem como a sua percepção quanto a isso. As informações levantadas nessa pesquisa foram obtidas por meio de um questionário no qual se perguntou:
+Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Suplemento de Práticas de Esporte e Atividade Física” no qual foram investigadas as pessoas moradoras de 15 anos ou mais de idade, **em seu tempo livre**, no período de referência de 365 dias, com o objetivo de quantificar aquelas que praticaram algum esporte ou atividade física no período considerado bem como a sua percepção quanto a isso. As informações levantadas nessa pesquisa foram obtidas por meio de um questionário no qual se perguntou:
 
 * Se a pessoa moradora havia praticado esporte, e em caso afirmativo, a respectiva modalidade.
 * Independente da resposta anterior, também se perguntou se a pessoa praticava alguma atividade física que não considerava como esporte, informando, em caso positivo, também a modalidade.
@@ -290,7 +294,12 @@ Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Su
 
   #. Liste o maior número possível de informações investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
   #. Das informações citadas no item anterior, quais delas apresentam respostas não numéricas? 
-  #. Das informações citadas no item anterior, quais delas apresentam respostas numéricas?
+  #. Das informações citadas no item a), quais delas apresentam respostas numéricas?
+  
+
+.. admonition:: Definição 
+
+   Chamamos de **variável** estatística cada informação que é obtida numa pesquisa. Por exemplo, no caso do problema da escolha do fornecedor, a informação foi diâmetro do parafuso. Dizemos nesse caso que a variável observada foi o diâmetro dos parafusos. Na comparação dos medicamentos, a variável observada foi o tempo de cura da dor de cabeça. Na PNAD observam-se várias variáveis.
 
 A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (vamoscontar.ibge.gov.br) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
 
@@ -392,14 +401,16 @@ Organizando as ideias
 Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística que serão descritos a seguir:
 
 População
-   é um conjunto de elementos em que todos têm pelo menos uma característica em comum.
+   é um conjunto de elementos com pelo menos uma característica em comum.
 
-Por exemplo, na atividade 3 a população correspondeu aos brasileiros de 15 anos ou mais. Observe que população em Estatística não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria em um ano, o conjunto de animais de certa espécie que vivem em uma região, etc.
+Por exemplo, na atividade 3 a população correspondeu aos brasileiros de 15 anos ou mais. 
+
+Em Estatística, população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria em um ano, o conjunto de animais de certa espécie que vivem em uma região, etc.
 
 Amostra
    é um subconjunto não-vazio da população.
 
-Muitos problemas em Estatística, conhecidos como problemas de Inferência Estatística envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população. 
+Problemas em Estatística, conhecidos como problemas de Inferência Estatística, envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população brasileira. 
 
 Quando se realiza um **censo**, levantamento de dados de toda a população, não existe a necessidade de fazer uma inferência estatística. No entanto, na maioria das vezes, a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
 
@@ -409,17 +420,15 @@ Parâmetro
 Estimador
    função que produz estimativas de parâmetros usando os dados da amostra.
 
-.. Interessante incluir um exemplo de parâmetro e estimador
-
-Uma variável é **qualitativa** se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD/2015, representa variáveis qualitativas.
+Uma variável estatística é **qualitativa** se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD/2015, representa variáveis qualitativas.
 
 Uma **variável qualitativa** é classificada em **nominal** ou **ordinal**. A variável qualitativa é nominal quando não existe nenhuma ordenação natural das respostas associadas à variável. Exemplos de variáveis nominais: bairro de residência, tipo sanguíneo, modalidade de atividade física que pratica, etc. A variável qualitativa é ordinal quando existe uma ordenação natural das respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: ensino fundamental incompleto, ensino fundamental completo, ensino médio incompleto, ensino médio completo, ensino superior incompleto e ensino superior completo. Podemos perceber que quem tem ensino fundamental completo tem maior nível de instrução de quem tem ensino fundamental incompleto e, assim por diante.
 
 Uma variável é **quantitativa** se as respostas para ela são numéricas. Exemplos de variáveis quantitativas são idade, peso, altura, temperatura, número de irmãos, duração da atividade física.
 
-Uma variável quantitativa é classificada em **discreta** ou **contínua**. As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro.  As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, índice de massa corporal (*imc*), etc.
+Uma variável quantitativa é classificada em **discreta** ou **contínua**. As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro.  As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, índice de massa corporal (imc), etc.
 
-A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa nominal. Nesse caso, podemos no máximo identificar a moda (valor mais frequente) ou as modas dos tipos de atividade física praticados. Pelo infográfico apresentado verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
+A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa. Nesse caso, podemos no máximo identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico apresentado verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
 
 Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo em mente que o tipo de variável sob investigação é determinante nos tipos de gráficos e nas informações relevantes da tabela. 
 
@@ -430,25 +439,44 @@ Praticando
 
 Exercícios e situções práticas
 
+Explorando 2
+-------------------------
 
+-----------------------------------
+Atividade: A turma com relação à prática de Atividade Física
+-----------------------------------
 
+.. admonition:: Objetivos específicos
 
+   Objetivos: Conduzir uma coleta de dados sobre a turma envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
 
-.. admonition:: Limite 
+.. admonition:: Para o professor
 
-   até aqui o texto novo ----------------------------------------------
-   
-.. ---------------------------------------------------------------------------------
-.. ---------------------------------------------------------------------------------
-.. ---------------------------------------------------------------------------------
-.. Aqui começa o texto que já se encontrava aqui e que não sei se vai ser mantido...
+  Preparar um formulário a ser preenchido pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. 
 
+Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da turma com os dados obtidos da PNAD/2015. Para isso preencha o mapa de dados fornecido pelo professor. Construa tabelas e gráficos resumindo a informação do mapa. 
 
+.. admonition:: Resposta 
 
-.. _sec-coloque-aqui-o-nome:
+  Com base nas respostas obtidas contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir um gráficos de barras das modalidades praticadas pela turma e também um gráfico de setores.
+  
+-----------------------------------
+Atividade: Produzindo informação a partir de dados disponíveis
+-----------------------------------
 
-Coisas que estavam antes... Podemos apagar?
--------------------------------------------
+.. admonition:: Objetivos específicos
+
+   Objetivos: Conduzir uma coleta de dados disponíveis sobre tamanho da população, ...
+
+.. admonition:: Para o professor
+
+  
+.. admonition:: Resposta 
+
+ 
+  
+  
+
 
 
 
@@ -457,14 +485,14 @@ ATIVIDADE: PESQUISA
 ---------
 .. admonition:: Para o professor
 
-   **ESTATÍSTICA EM PRÁTICA**
+ **ESTATÍSTICA EM PRÁTICA**
    
-   Professor, 
+  Professor, 
    
-   Este trabalho consiste em realizar uma pesquisa a partir dos processos de coleta, de organização e de análise de dados segundo métodos e técnicas da estatística descritiva.
+  Este trabalho consiste em realizar uma pesquisa a partir dos processos de coleta, de organização e de análise de dados segundo métodos e técnicas da estatística descritiva.
    
-   OBJETIVO DA ATIVIDADE
-    Fazer com que o aluno complete o ciclo investigativo de uma pesquisa, que se inicia com o planejamento da pesquisa e termina com a apresentação e discussão dos resultados.(EM11MT03)
+  OBJETIVO DA ATIVIDADE
+  Fazer com que o aluno complete o ciclo investigativo de uma pesquisa, que se inicia com o planejamento da pesquisa e termina com a apresentação e discussão dos resultados.(EM11MT03)
    Realizar um estudo cujo tema seja relevante para a comunidade CApiana ou para a sociedade em geral, fazendo uso dos assuntos estudados ao longo do curso e de métodos e técnicas de estatística descritiva. 
    
    ORIENTAÇÕES PARA O DESENVOLVIMENTO DA ATIVIDADE:
