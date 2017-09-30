@@ -16,6 +16,8 @@
 
 .. HJB: a interpretação da solução de um sistema linear por vetores poderia ser aproveitada quando o assunto (sistemas lineares) for tratado.
 
+.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy"
+
 
 
 .. admonition:: Para o professor
@@ -157,8 +159,7 @@
        \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
        \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
 
-   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_ ). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
-
+   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso, pois elas influenciam a maneira de como os alunos aprendem e fazem uso do conceito de vetor (conforme [Roche-1997]_). 
    Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
 
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
@@ -182,7 +183,13 @@
    
    Na sequência, coordenadas de vetores são usadas para justificar algumas das propriedades das operações da adição de vetores e multiplicação por um número real (comutatividade, associatividade, distributividade) mostrando que estas propriedaes se reduzem às propriedades análogas para os números reais.
    
-   Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". 
+   Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". Nesta parte, seguindo a orientação de [Roche-1997]_, em soma de forças, o vetor que representa a força resultante é sempre desenhado com uma cor diferente dos vetores que representam as forças parcelas pois, segundo o autor, é um erro comum os estudantes confundirem a força resultante como mais uma força parcela e não como uma força equivalente às forças dadas.
+   
+   Registramos aqui uma analogia que pode ser útil para uma reflexão sobre o ensino e a aprendizagem de vetores: este tópico tem muito em comum com tópico dos números racionais. De fato:
+   
+   #. números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados);
+   #. existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
+   #. a "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tormar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte) .
    
    
    
@@ -199,6 +206,7 @@
    **Referências bibliográficas**
 
    .. [Anton-et-al-2007] Anton, H.; Busby, R. C.: *Álgebra Linear Contemporânea*. Bookman, 2007.
+   .. [Roche-1997] Roche, J. Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
 
 
 
