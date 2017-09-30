@@ -16,6 +16,8 @@
 
 .. HJB: a interpretação da solução de um sistema linear por vetores poderia ser aproveitada quando o assunto (sistemas lineares) for tratado.
 
+.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy"
+
 
 
 .. admonition:: Para o professor
@@ -58,7 +60,7 @@
 
    Importante: antes da BNCC, o aluno do Ensino Fundamental II usualmente já tinha um contato inicial com vetores na disciplina de Ciências. Com a BNCC, pressupõe-se que é neste momento que o aluno estudará o assunto pela primeira vez.
 
-   **Tópicos que serão tratatos o capítulo**
+   **Tópicos que serão tratados no capítulo**
 
    * Vetor do ponto de vista geométrico.
 
@@ -157,8 +159,7 @@
        \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
        \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
 
-   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_ ). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso.
-
+   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso, pois elas influenciam a maneira de como os alunos aprendem e fazem uso do conceito de vetor (conforme [Roche-1997]_). 
    Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
 
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
@@ -175,18 +176,37 @@
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
 
    No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura de certos problemas geométricos via combinações lineares (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
+   
+   Uma vez estabelecido o fato de que se `(a, b)` são as coordenadas de um ponto `P` com relação a um sistema de coordenadas com origem `O`, então o vetor posição relativa `\overrightarrow{OP}` também tem coordenadas `(a, b)` com relação a este sistema de coordenadas, optou-se por identificar pontos com vetores desta maneira: `P = \overrightarrow{OP}`. Com isto, a soma `P + \vec{v}` de um ponto com um vetor deve ser interpretada como a soma `\vec{OP} + \vec{v}` de vetores. Esta formulação será especialmente útil na interpretação de translações por meio de soma de vetores. Em particular, mostra-se que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(c,d)`, as coordenadas da translação de `P` por `\vec{v}` são `P'=P+\vec{v} = (x,y) + (c,d) = (x+c,y+d)` e, mais geralmente, mostra-se que se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a,b)` e  `\vec{v} = (c, d)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a + c, b + d)`.
 
-   A operação de multiplicação de um vetor por um número real é interpretada geometricamente no contexto de homotetias
+   A operação de multiplicação de um vetor por um número real é interpretada geometricamente no contexto de homotetias. Aqui, usando-se semelhança de triângulos e como uma consequência da definição geométrica dada para a multiplicação de um vetor por um número real, justifica-se que se `(a, b)` são as coordenadas de um vetor no plano e `c` é um número real, então `c \cdot (a, b) = (c \cdot a, c \cdot b)`, ou seja, que esta igualdade é uma consequência e não uma definição.
+   
+   Na sequência, coordenadas de vetores são usadas para justificar algumas das propriedades das operações da adição de vetores e multiplicação por um número real (comutatividade, associatividade, distributividade) mostrando que estas propriedaes se reduzem às propriedades análogas para os números reais.
+   
+   Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". Nesta parte, seguindo a orientação de [Roche-1997]_, em soma de forças, o vetor que representa a força resultante é sempre desenhado com uma cor diferente dos vetores que representam as forças parcelas pois, segundo o autor, é um erro comum os estudantes confundirem a força resultante como mais uma força parcela e não como uma força equivalente às forças dadas.
+   
+   Registramos aqui uma analogia que pode ser útil para uma reflexão sobre o ensino e a aprendizagem de vetores: este tópico tem muito em comum com tópico dos números racionais. De fato:
+   
+   #. números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados);
+   #. existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
+   #. a "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tormar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte) .
+   
+   
+   
+   
+   
+   
 
 
    **Observações metodológicas gerais**
 
    * As seções sob o título "Para reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
-   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto.
+   * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto. Estas atividades permitem realizar animações e   múltiplos exemplos que ajudam muito na consolidação das ideias em conceitos.
 
    **Referências bibliográficas**
 
    .. [Anton-et-al-2007] Anton, H.; Busby, R. C.: *Álgebra Linear Contemporânea*. Bookman, 2007.
+   .. [Roche-1997] Roche, J. Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
 
 
 
@@ -210,7 +230,7 @@
 .. _cap-vetores:
 
 ************************************
-Posições relativas no plano
+Vetores posições relativas
 ************************************
 
 
@@ -360,7 +380,7 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
       <https://www.geogebra.org/m/kCMtPW5x/>.
 
 ************************************
-Deslocamentos no plano
+Vetores deslocamentos
 ************************************
 
 Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência).
@@ -681,7 +701,7 @@ Para as flechas das cartas, as propriedades relevantes são orientação e módu
 
 
 ************************************
-Organizando as ideias
+Organizando as ideias: vetores do ponto de vista geométrico
 ************************************
 
 .. admonition:: Para o professor
@@ -1024,10 +1044,9 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
    A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo.
 
 
-
-
-
-
+************************************
+Praticando o assunto
+************************************
 
 
 
