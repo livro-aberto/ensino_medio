@@ -16,6 +16,8 @@
 
 .. HJB: a interpretação da solução de um sistema linear por vetores poderia ser aproveitada quando o assunto (sistemas lineares) for tratado.
 
+.. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
+
 .. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy"
 
 
@@ -167,7 +169,7 @@
    O vetor posição relativa, apesar de suas limitações (a soma deste tipo de vetor não faz sentido neste contexto), é simples e permite evidenciar para o aluno que existem grandezas que não podem ser descritas apenas com um número ou apenas como uma orientação. Assim, como primeira atividade, usamos um problema que envolve posições relativas para motivar o conceito de grandeza vetorial.
    Além disso, o vetor posição relativa tem uma vantagem adicional: a escala determinada para as posições automaticamente determinar a escala do vetor, isto é, tem-se uma escola só (compare com o caso de velocidades e forças: as posições podem ter uma escala e os vetores podem ter outra completamente diferente).
 
-   Vetores deslocamentos são então introduzidos e, por meio de uma versão simplificada do jogo *Corrida de Vetores*,
+   Vetores deslocamentos são então introduzidos e, por meio de uma versão simplificada do jogo *Corrida de Vetores* (conforme [Gardner-1973]_ e [Oliveira-2009]_),
 
    * estabelece-se a diferença entre deslocamento e trajetória percorrida (uma confusão frequente nos alunos);
    * apresenta-se a justaposição de vetores deslocamentos a partir da qual a soma será introduzida;
@@ -206,21 +208,12 @@
    **Referências bibliográficas**
 
    .. [Anton-et-al-2007] Anton, H.; Busby, R. C.: *Álgebra Linear Contemporânea*. Bookman, 2007.
-   .. [Roche-1997] Roche, J. Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
+   .. [Gardner-1973] Gardner, M.: Mathematical Games - Sim, Chomp and Race Track: New Games for The Intellect (and not for Lady Luck). *Scientific American*, v. 228, n. 1, p. 108–115, 1973. 
+   .. [Oliveira-2009] Oliveira, P. M. C.: Corrida de Vetores: Vacina Contra O Raciocínio Aristotélico. *Física na Escola*, v. 10, n. 1, p. 40, 2009.
+   .. [Roche-1997] Roche, J.: Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
 
 
 
-.. HJB: não esquecer de falar que direção pode ter mais do que um significado (direção nordeste vs. ir na direção da praça central da cidade). Aqui, direção nordeste é um bom exemplo para relacionar com o conceito de direção como usado em vetores.
-
-.. HJB: não esquecer de usar uma cor diferente para a soma de dois vetores ou a multiplicação por escalar.
-
-.. HJB: não esquecer de mencionar para o aluno de que o módulo de um vetor também pode receber outros nomes (intensidade, magnitude, valor).
-
-.. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
-
-.. HJB: não esquecer de escrever para o professor a estratégia pedagógica adotada, a saber, desenvolver o conceito de vetor em paralelo com os conceitos físicos em cinemática: posição relativa, deslocamento, velocidade média e aceleração média.
-
-.. HJB: não esquecer de, no texto para o professor, alertar para o fato de que apesar da definição de adição de vetores no contexto matemático poder ser feita para dois representantes quaisquer, no contexto físico certos representantes não fazem sentido (por exemplo, somar dois vetores deslocamentos sem que a extremidade inicial de um coincida com a extremidade final do outro).
 
 ..
    Caro professor,
@@ -1050,3 +1043,83 @@ Praticando o assunto
 
 
 
+.. Soma com a soma (resultante)
+
+
+
+.. _ativ-vetores-e-ou-nao-vetor:
+
+Atividade: toda flecha é vetor?
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** 
+   
+   * Identificar, nas situações apresentadas no enunciado do exercício, se as flechas representam ou não um vetor.
+   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de corer para representar o módulo).
+
+Vimos que vetores são representados geometricamente por flechas. Mas será que toda flecha em um desenho representa um vetor? Analise as imagens a seguir e decida se as flechas desenhadas representam um vetor, isto é, se as flechas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
+
+.. _fig-geometria-flechas-01:
+
+.. figure:: _resources/geometria-flechas-01.jpg
+   :width: 200px
+   :align: center
+
+   Uma placa de trânsito.
+
+
+.. _fig-geometria-flechas-02:
+
+.. figure:: _resources/geometria-flechas-02.jpg
+   :width: 400px
+   :align: center
+
+   Um diagrama com os passos para dançar rumba.
+
+.. _fig-geometria-flechas-06:
+
+.. figure:: _resources/geometria-flechas-06.png
+   :width: 450px
+   :align: center
+
+   O mapa de ondas do Oceano Atlântico no dia 30/09/2017 (fonte: INPE <http://ondas.cptec.inpe.br/mapas.php?regiao=atlantico>).
+
+.. _fig-geometria-flechas-07:
+
+.. figure:: _resources/geometria-flechas-07.jpg
+   :width: 450px
+   :align: center
+
+   Campo de vento na superfície do mar, no dia 21/11/2015, gerado pelo escaterômetro ASCAT a bordo do satélite MetOp-A, onde as cores dos vetores indicam as divisões da escala Beaufort de ventos, que vai de 0 a 12 (fonte: INPE <http://www.inpe.br/noticias/noticia.php?Cod_Noticia=4067>).
+
+
+.. _fig-geometria-flechas-03:
+
+.. figure:: _resources/geometria-flechas-03.png
+   :width: 450px
+   :align: center
+
+   Previsão do tempo no Jornal Nacional do dia 14/04/2012 (fonte: Globo Play <http://g1.globo.com/jornal-nacional/videos/t/edicoes/v/ventos-fortes-devem-atingir-o-sudeste-do-brasil-neste-domingo-15/1904441/>).
+   
+   
+.. _fig-geometria-flechas-08:
+
+.. figure::  _resources/geometria-flechas-08.*
+   :width: 300px
+   :align: center
+
+   Notação matemática para uma função `f` cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.   
+   
+.. admonition:: Resposta
+
+   * A flecha da :numref:`fig-geometria-flechas-01` não representa um vetor, pois ela indica apenas direção e sentido, sem nenhuma atribuição com relação ao módulo.
+   * As flechas da :numref:`fig-geometria-flechas-02` são vetores. De fato, elas são vetores deslocamentos.
+   * As flechas da :numref:`fig-geometria-flechas-06`, somente por si, indicam apenas direção e sentido, logo elas não são vetores. O mapa de ondas, como um todo, por outro lado, está codificando uma grandeza vetorial: a direção e o sentido da propagação da onda (por meio das flechas) e sua altura significativa em metros (por meio das cores).
+   * As flechas da :numref:`fig-geometria-flechas-07` representam vetores, pois elas indicam direção, sentido e módulo. Note que, contudo, ao invés de representar o módulo por meio do comprimento da flecha, esta figura optou por usar uma escala de cores.
+   * As flechas da :numref:`fig-geometria-flechas-07`  representam vetores, pois elas indicam direção, sentido e módulo. Note que, aqui, existe uma redundância na representação do módulo: isto está sendo feito pelo comprimento da flecha e por sua cor.
+   * A flecha da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo. 
+   
+   
+   
