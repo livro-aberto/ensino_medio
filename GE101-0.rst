@@ -58,7 +58,7 @@
 
    Importante: antes da BNCC, o aluno do Ensino Fundamental II usualmente já tinha um contato inicial com vetores na disciplina de Ciências. Com a BNCC, pressupõe-se que é neste momento que o aluno estudará o assunto pela primeira vez.
 
-   **Tópicos que serão tratatos o capítulo**
+   **Tópicos que serão tratados no capítulo**
 
    * Vetor do ponto de vista geométrico.
 
@@ -175,8 +175,20 @@
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
 
    No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura de certos problemas geométricos via combinações lineares (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
+   
+   Uma vez estabelecido o fato de que se `(a, b)` são as coordenadas de um ponto `P` com relação a um sistema de coordenadas com origem `O`, então o vetor posição relativa `\overrightarrow{OP}` também tem coordenadas `(a, b)` com relação a este sistema de coordenadas, optou-se por identificar pontos com vetores desta maneira: `P = \overrightarrow{OP}`. Com isto, a soma `P + \vec{v}` de um ponto com um vetor deve ser interpretada como a soma `\vec{OP} + \vec{v}` de vetores. Esta formulação será especialmente útil na interpretação de translações por meio de soma de vetores. Em particular, mostra-se que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(c,d)`, as coordenadas da translação de `P` por `\vec{v}` são `P'=P+\vec{v} = (x,y) + (c,d) = (x+c,y+d)` e, mais geralmente, mostra-se que se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a,b)` e  `\vec{v} = (c, d)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a + c, b + d)`.
 
-   A operação de multiplicação de um vetor por um número real é interpretada geometricamente no contexto de homotetias
+   A operação de multiplicação de um vetor por um número real é interpretada geometricamente no contexto de homotetias. Aqui, usando-se semelhança de triângulos e como uma consequência da definição geométrica dada para a multiplicação de um vetor por um número real, justifica-se que se `(a, b)` são as coordenadas de um vetor no plano e `c` é um número real, então `c \cdot (a, b) = (c \cdot a, c \cdot b)`, ou seja, que esta igualdade é uma consequência e não uma definição.
+   
+   Na sequência, coordenadas de vetores são usadas para justificar algumas das propriedades das operações da adição de vetores e multiplicação por um número real (comutatividade, associatividade, distributividade) mostrando que estas propriedaes se reduzem às propriedades análogas para os números reais.
+   
+   Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". 
+   
+   
+   
+   
+   
+   
 
 
    **Observações metodológicas gerais**
