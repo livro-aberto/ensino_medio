@@ -18,7 +18,9 @@
 
 .. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
 
-.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy"
+.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy".
+
+.. HJB: existe multiplicação de vetor por número real à direita, isto é, `\vec{v} \cdot a`?
 
 
 
@@ -265,9 +267,9 @@ O avião de reconhecimento atualizou as informações sobre o grupo `P` de explo
 
 Parte IV.
 
-Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
+Uma segunda estação de pesquisa `B` está situada à 10 km a noroeste de `A`.
 
-#. Considerando os dados da Parte IV, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
+#. Considerando os dados da Parte III, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
 
 #. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Justifique sua resposta!
 
@@ -276,7 +278,59 @@ Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   Parte I.
+   
+   #. Não, pois existem infinitos pontos no mapa cuja distância até a estação de pesquisa `A` é 10 km.
+   #. A circunferência de centro em `A` e raio 10 km.
+   
+   .. figure:: _resources/geometria-vp-resposta-01.jpg
+      :width: 480px
+      :align: center
+ 
+   
+   Parte II.
+   
+   #. Não, pois exitem infinitos pontos à nordeste da estação de pesquisa `A`.
+   #. A semirreta com origem em `A` na direção nordeste excluindo-se `A`.
+   
+      .. figure:: _resources/geometria-vp-resposta-02.jpg
+         :width: 480px
+         :align: center
+   
+   
+   #. Não, pois existem duas possibilidades para a localização de `P`.
+   
+      .. figure:: _resources/geometria-vp-resposta-03-01.jpg
+         :width: 480px
+         :align: center
+   
+
+      .. figure:: _resources/geometria-vp-resposta-03-02.jpg
+         :width: 480px
+         :align: center
+
+   Parte III.
+   
+   #. Sim, pois existe um único ponto à nordeste de `A` cuja distância a `A` é igual a 10 km.
+   #. Um ponto.
+
+      .. figure:: _resources/geometria-vp-resposta-04.jpg
+         :width: 480px
+         :align: center
+
+   #. A base `A` está situado à 10 km à sudoeste de `P`.
+   
+   Parte IV.
+   
+   #. O grupo `P` está situado à `10 \, \sqrt{2}` km à leste de `B`.
+   
+      .. figure:: _resources/geometria-vp-resposta-05.jpg
+         :width: 480px
+         :align: center
+         
+   #. A estação `A` está mais próxima.         
+   
+
 
 .. HJB: número complexo conta como número na definição de grandeza escalar?
 .. HJB: a posição relativa de um ponto na reta é uma grandeza vetorial? Não! (Halliday & Hesnick, 2009, p. 43)
