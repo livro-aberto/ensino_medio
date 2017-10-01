@@ -34,7 +34,9 @@ Ensino Médio
    
    GE201-0
    GE201-1
-   GE201-E
+   GE201-E1
+   GE201-E2
+   GE201-E3
    
    PE103-0
 
