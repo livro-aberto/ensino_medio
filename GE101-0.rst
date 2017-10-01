@@ -616,20 +616,20 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
    É importante observar que, no contexto de vetores deslocamentos, o vetor resultante `\vec{u} + \vec{v}` só está definido se os vetores `\vec{u}` e `\vec{v}` forem justapostos *nesta ordem*, isto é, se  a extremidade inicial de `\vec{v}` coincidir com a extremidade final de `\vec{u}`. Assim, por exemplo, não está definida como um vetor deslocamento a
    resultante `\overrightarrow{AB} + \overrightarrow{CD}` dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{CD}` da figura. Cabe ainda observe que, fora do contexto aplicado, isto é, considerando-se `\overrightarrow{AB}` e `\overrightarrow{CD}` como coleções de segmentos orientados, a soma `\overrightarrow{AB} + \overrightarrow{CD}` *está definida* e é, a exemplo dos vetores parcelas, uma coleção de segmentos orientados.
 
-.. tikz::
+    .. tikz::
 
-   \tikzset{>=latex}
-   \definecolor{qqqqff}{rgb}{0.,0.,1.}
-   \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
-   \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
-   \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
-   \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
-   \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
-   \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
-   \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
-   \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
-   \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
-   \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
+       \tikzset{>=latex}
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+       \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+       \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+       \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+       \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+       \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+       \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+       \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+       \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+       \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
 
 
 
@@ -689,7 +689,7 @@ Atividade: deslocamentos justapostos
 
       <https://www.geogebra.org/m/HnHZFwNW>.
 
-Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}|`.
+Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}| = 5~\text{cm}`.
 
 
 .. tikz::
@@ -701,18 +701,84 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
    \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
    \draw[color=qqqqff] (-1.7,0.24) node {$A$};
    \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-   \draw[color=qqqqff] (0.92,2.27) node {$B$};
+   \draw[color=qqqqff] (0.8,2.3) node {$B$};
 
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
-#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
+#. Se o ponto `C` pertence agora a circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
 #. Verdadeiro ou falso? Quaisquer que sejam os pontos `A`, `B` e `C`, tem-se `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`. Justifique sua resposta!
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   #. É o ponto que `C` que é o simétrico do ponto `A` com relação ao ponto `B`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 10~\text{cm}`.
 
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (3.34,4.1) circle (1.5pt);
+       \draw[color=qqqqff] (3.54,4.3) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (3.34,4.1);   
+
+   #. É o ponto que `C = A`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 0~\text{cm}`.
+
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw[color=qqqqff] (-1.7,-0.4) node {$C$};    
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-1.66,-0.1);   
+
+   #. É o vetor deslocamento onde a extremidade final coincide com a extremidade inicial.
+   
+   #. O ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o maior é possível apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 7{,}5~\text{cm}`.
+
+      .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
+       \draw[color=qqqqff] (2.1,3.37) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);  
+       
+      Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.      
+    
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
+       \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
+    
+   #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
+   
 
 .. admonition:: Para reflexão
 
