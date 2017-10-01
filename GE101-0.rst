@@ -493,7 +493,7 @@ Atividade: corrida de vetores
 
    * Reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes.
    * Perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada.
-   * Concatenar deslocamentos sucessivos.
+   * Justapor deslocamentos sucessivos.
    * Reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio da orientação dada por uma Rosa dos Ventos.
 
    **Observações e recomendações**
@@ -515,6 +515,7 @@ Atividade: corrida de vetores
 
    * Depois que os alunos jogarem, você pode fazer um levantamento de quem conseguiu ganhar a corrida com o menor número de cartas e, então, pedir para que os alunos reproduzam suas jogadas usando, por exemplo, a construção GeoGebra da :numref:`fig-ggb-cv-01`.
    * Traga algumas cópias extras da :numref:`fig-geometria-cv-02`, pois alguns alunos podem errar no início ao aprenderem as regras.
+   * Observe que as flechas `\vec{\i}` e `\vec{\j}` não possuem uma descrição natural em termos de uma Rosa dos Eventos. Aqui, uma descrição alternativa seria indicar o ângulo que a flecha faz com uma reta horizontal. No caso da flecha `\vec{\i}` este ângulo é igual a `\text{arctg}(1/2) = 26{,}565051…^{\circ}` e, no caso da flecha `\vec{\j}`, este ângulo é igual a `116{,}565051…^{\circ}`.
 
 .. Palavras-chaves: justaposição de deslocamentos, deslocamento total, deslocamento resultante.
 
@@ -568,12 +569,47 @@ Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para j
 
 **Descrevendo flechas por meio de uma Rosa dos Ventos**
 
-Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 1 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas?
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 2 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas?
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   Fase de aquecimento
+   
+   #. Ver figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-01.jpg
+         :width: 200px
+         :align: center
 
+   #. A figura a seguir exibe duas das infinitas trajetórias possiveis. Observe que, em princípio, o carro azul poderia dar várias voltar em torno de um quarteirão antes de se dirigir ao ponto `B`.
+   
+      .. figure:: _resources/geometria-cv-resposta-02_1.jpg
+         :width: 600px
+         :align: center
+
+   #. Ver figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-03.jpg
+         :width: 200px
+         :align: center
+
+   #. O jogador não deveria escolher as cartas `\vec{b}`, `\vec{f}`, `\vec{g}`, `\vec{h}` e `\vec{j}`.
+   
+   #. O número mínimo de "quadras" para se sair de `A` e se chegar a `B` é igual a 4. Existem 6 trajetórias possíveis com esse número mínimo de "quadras". Elas estão apresentadas na figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-04.jpg
+         :width: 800px
+         :align: center
+   
+   Descrevendo flechas por meio de uma Rosa dos Ventos
+   
+   Flecha `\vec{b}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o noroeste.
+   Flecha `\vec{c}`: "se desloque `2~\text{cm}` para o oeste".
+   Flecha `\vec{d}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudoeste.
+   Flecha `\vec{e}`: "se desloque `2~\text{cm}` para o sul.
+   Flecha `\vec{f}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudeste.
+   Flecha `\vec{g}`: "se desloque `2~\text{cm}` para o leste.
+   Flecha `\vec{h}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o nordeste.
 
 .. admonition:: Para o professor
 
