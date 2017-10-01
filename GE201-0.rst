@@ -471,6 +471,802 @@ Responda
 #. Para dividir um segmento em partes iguais há necessidade de fazer medidas?
 
 
+.. admonition:: Resposta 
+
+   #. 2,3666666
+   #. Não
+   #. Porque quando paralelas são cortadas por transversais se, em uma delas os segmentos são iguais `(AM = MN = NP)` então sobre a outra os segmentos correspondentes serão também iguais `(AC = CD = DB)`.
+   #. Não
+
+
+.. _sec-organizando2:
+
+Organizando as ideias: O que é um teorema?
+===========================================
+
+Na atividade anterior você fez uma demonstração. Observe que nela havia uma situação (as retas paralelas cortadas por transversais), um fato que era dado `(AB = BC)` e um fato a ser concluído, ou demonstrado `(DE = EF)`.
+Essa estrutura é o que chamamos de **TEOREMA**.
+
+Em um teorema, a situação e os fatos que são dados constituem a **HIPÓTESE** e aquilo o que se quer demonstrar é a **TESE**.
+
+Para sair da hipótese e concluir a tese há um caminho composto por argumentos sucessivos, como uma corrente, que é a **DEMONSTRAÇÃO**.
+
+Uma forma comum de enunciar um teorema é:
+
+Se  **Hipótese**,  então **Tese**.
+
+
+.. admonition:: Exemplo 
+
+   Como exemplo, o famoso teorema de Pitágoras diz que:
+   
+   "Se **um triângulo é retângulo** então **o quadrado da hipotenusa é igual à soma dos quadrados dos catetos**".
+   
+   Podemos separar:
+   
+   **Hipótese**: um triângulo é retângulo
+   
+   **Tese**: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos
+
+O objetivo deste capítulo é compreender o “teorema de Tales”. Esse é um teorema muito antigo e importante, pois com ele, diversos outras propriedades de geometria foram demonstradas. O enunciado do teorema que vamos apresentar a seguir inclui a palavra “feixe”. Entenda essa palavra como “conjunto”.
+
+Razão entre segmentos
+
+É preciso explicar certos termos que usamos em geometria. Eles são muito antigos, mas são usados hoje e serão sempre.
+
+A razão entre dois segmentos é a razão entre suas medidas.
+Por exemplo, se um triângulo retângulo tem catetos medindo 3 e 4 (em certa unidade), então sua hipotenusa mede 5 (na mesma unidade usada para medir os catetos).
+
+Se `\alpha` é o menor dos ângulos agudos do triângulo então a razão entre o cateto oposto ao ângulo `\alpha` e a hipotenusa do triângulo é  `\frac{3}{5}`, que costumamos chamar de seno do ângulo `\alpha`.
+
+Quando um ponto `P` está no interior do segmento `AB`, para definir sua posição em relação aos extremos do segmento é costume definir um número chamado de “razão em que `P` divide o segmento `AB`”.
+
+Essa razão é a fração `\frac{PA}{PB}`.
+
+Assim, se um segmento `AB` mede `10cm` e um ponto `P` sobre ele está a 4cm de A então a razão em que `P` divide esse segmento é `\frac{PA}{PB}=\frac{4}{6}=\frac{2}{3}`.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0,0)-- (10,0);
+   \draw (1.7,.7) node[anchor=north west] {4};
+   \draw (7.2,.7) node[anchor=north west] {6};
+   \draw [fill=black] (0,0) circle (1.0pt);
+   \draw[color=black] (0,-0.5) node {$A$};
+   \draw [fill=black] (10,0.) circle (1.0pt);
+   \draw[color=black] (10,-0.5) node {$B$};
+   \draw [fill=black] (4,0.) circle (1.0pt);
+   \draw[color=black] (4,-0.5) node {$P$};
+   
+
+.. _ativ-segmentos-comensuraveis:
+
+Atividade: segmentos comensuráveis
+----------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Entender o que significa uma unidade de medida.
+   * Identificar uma unidade comum a dois segmentos cujas medidas são racionais.
+   
+   **Observações e recomendações**
+   
+   * Quando as medidas dos dois segmentos são números decimais, os alunos não terão o menor problema em obter uma unidade comum para esses segmentos. 
+   * Quando as medidas são dadas em forma de fração a dica é obter frações equivalentes com o mesmo denominador. A unidade comum fica óbvia.
+   * É necessário comentar que dois segmentos nem sempre admitem uma unidade comum. Por exemplo, se um segmento mede 1 unidade e outro mede `\sqrt{2}` unidades, não existe uma unidade comum. Neste capítulo só vamos tratar de segmentos comensuráveis. Com eles faremos uma demonstração do teorema de Tales e isso será suficiente para as aplicações pois todas as medidas no mundo real são racionais.
+
+
+Dois segmentos são chamados de comensuráveis quando é possível determinar um terceiro segmento que cabe um número inteiro de vezes em um deles e também um número inteiro de vezes no outro.
+
+Assim, dados dois segmentos `a` e `b`, um segmento que cabe um número inteiro de vezes em um deles e também um número inteiro de vezes no outro é chamado de uma *unidade*, e vamos representá-lo por `u`.
+
+Por exemplo, se `a = 8cm` e `b = 10cm` podemos tomar `u = 2cm` pois essa unidade cabe 4 vezes em `a` e 5 vezes em `b`. Porém, há outras opções para `u`, que dependem da escolha de cada um. Com esses mesmos segmentos, podemos escolher `u = 0,5cm` e assim, essa unidade cabe 16 vezes em `a` e 20 vezes em `b`.
+Esses são os segmentos comensuráveis: os segmentos que permitem encontrar uma unidade de medida comum.
+
+
+
+Responda
+
+Na tabela abaixo, para cada par de segmentos `a` e `b` encontre uma unidade u de medida comum.
+
+.. table:: 
+   :widths: 1 1 1
+   :column-alignment: left left left
+
+   +---+------+---------------+---+
+   |   |   a  |       b       | u |
+   +---+------+---------------+---+
+   | a |   3  |      2,7      |   |
+   +---+------+---------------+---+
+   | b | 1,32 |       9       |   |
+   +---+------+---------------+---+
+   | c | 4,57 |     6,123     |   |
+   +---+------+---------------+---+
+   | d |  2,5 |     1,2618    |   |
+   +---+------+---------------+---+
+   | e |  0,7 | `\frac{2}{3}` |   |
+   +---+------+---------------+---+
+   
+
+.. admonition:: Resposta 
+
+   As respostas são pessoais. Daremos a menor unidade para cada um dos casos.
+   
+   #. 0,1
+   #. 0,01
+   #. 0,001
+   #. 0,0001
+   #. 1/30
+   
+
+.. _ativ-compreendendo-tales:
+
+Atividade: compreendendo o teorema de Tales
+--------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender o enunciado do teorema de Tales identificando   a hipótese e a tese
+   
+   **Observações e recomendações**
+   
+   * Talvez seja necessário explicar o que é uma proporcionalidade e o que significa dizer que certos segmentos são proporcionais a outros.
+   * Exemplos devem ser dados. Se o professor disser que, do lado esquerdo da figura, um segmento é o dobro do outro, os alunos deverão concluir que, do lado direito, os segmentos correspondentes serão um o dobro do outro.
+
+
+Enunciado do teorema de Tales:
+
+“Se um feixe de paralelas está cortado por duas transversais então os segmentos determinados sobre uma transversal são respectivamente proporcionais aos segmentos determinados na outra”.
+
+Vejamos uma figura
+
+
+.. tikz:: legenda
+
+   \draw [line width=0.8pt] (-3.24,0.)-- (4.8,0.);
+   \draw [line width=0.8pt] (-3.3,4.22)-- (4.82,4.22);
+   \draw [line width=0.8pt] (-3.28,3.02)-- (4.8,3.02);
+   \draw [line width=0.8pt] (-3.26,2.32)-- (4.82,2.32);
+   \draw [line width=0.8pt] (-2.68,4.76)-- (-1.26,-0.56);
+   \draw [line width=0.8pt] (-1.42,4.84)-- (4.78,-0.64);
+   \draw [line width=2.pt,color=blue] (-2.535864661654135,4.22)-- (-2.215563909774436,3.02);
+   \draw [line width=2.pt,color=red] (-2.215563909774436,3.02)-- (-2.0287218045112776,2.32);
+   \draw [line width=2.pt,color=green] (-2.0287218045112776,2.32)-- (-1.4094736842105262,0.);
+   \draw [line width=2.pt,color=blue] (-0.7185401459854013,4.22)-- (0.6391240875912405,3.02);
+   \draw [line width=2.pt,color=red] (0.6391240875912405,3.02)-- (1.4310948905109493,2.32);
+   \draw [line width=2.pt,color=green] (1.4310948905109493,2.32)-- (4.0559124087591245,0.);
+   \draw (-2.9,3.9) node[anchor=north west] {$ a $};
+   \draw (0.1,4) node[anchor=north west] {$ a' $};
+   \draw (-2.6,3) node[anchor=north west] {$ b $};
+   \draw (1.2,3.0) node[anchor=north west] {$ b' $};
+   \draw (-2.2,1.4) node[anchor=north west] {$c$};
+   \draw (2.9,1.7) node[anchor=north west] {$ c' $};
+   \draw [fill=black] (-2.535864661654135,4.22) circle (1.0pt);
+   \draw [fill=black] (-2.215563909774436,3.02) circle (1.0pt);
+   \draw [fill=black] (-2.0287218045112776,2.32) circle (1.0pt);
+   \draw [fill=black] (-1.4094736842105262,0.) circle (1.0pt);
+   \draw [fill=black] (-0.7185401459854013,4.22) circle (1.0pt);
+   \draw [fill=black] (0.6391240875912405,3.02) circle (1.0pt);
+   \draw [fill=black] (1.4310948905109493,2.32) circle (1.0pt);
+   \draw [fill=black] (4.0559124087591245,0.) circle (1.0pt);
+   
+Responda considerando a figura acima
+
+#. Qual é a hipótese do teorema?
+#. Qual é a tese do teorema?
+
+
+.. admonition:: Resposta 
+
+   #. As retas paralelas são cortadas por transversais.
+   #. `\dfrac{a}{a´}=\dfrac{b}{b´}=\dfrac{c}{c´}`
+
+
+
+.. _ativ-demonstrando-tales:
+
+Atividade: demonstrando o teorema de Tales
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender o enunciado do teorema de Tales identificando   a hipótese e a tese
+   
+   **Observações e recomendações**
+   
+   * Talvez seja necessário explicar o que é uma proporcionalidade e o que significa dizer que certos segmentos são proporcionais a outros.
+   * Exemplos devem ser dados. Se o professor disser que, do lado esquerdo da figura, um segmento é o dobro do outro, os alunos deverão concluir que, do lado direito os segmentos correspondentes serão um o dobro do outro.
+   * O aluno fará a demonstração do teorema de Tales no caso em que os dois segmentos da primeira transversal são comensuráveis. Essa é exatamente a situação que interessa agora, pois nas aplicações no mundo real as medidas são números racionais.
+   
+A figura abaixo mostra três retas paralelas cortadas por duas transversais. Na reta da esquerda, os segmentos `AB = a` e `BC = b`, são comensuráveis e, na reta da direita, os segmentos correspondentes são `A´B´ = a´` e `B´C´ = b´`. 
+Nossa finalidade é demonstrar que 
+
+.. math::
+   \frac{a}{a´}=\frac{b}{b´}
+   
+Como `a` e `b`, são comensuráveis a figura mostra uma unidade `u` comum a esses segmentos.
+
+Por cada extremidade da unidade `u` assinalada na reta da esquerda traçamos retas paralelas às retas dadas determinando segmentos correspondentes na reta da direita.
+
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-3.56,0.)-- (5.52,0.);
+   \draw [line width=0.8pt] (-3.44,3.8)-- (5.34,3.8);
+   \draw [line width=0.8pt] (-3.36,6.38)-- (5.3,6.38);
+   \draw [line width=0.8pt] (-1.98,6.94)-- (-3.06,-0.72);
+   \draw [line width=0.8pt] (-0.78,6.94)-- (5.36,-0.74);
+   \draw [line width=2.4pt,color=red] (-2.058955613577024,6.38)-- (-2.120786270710496,5.941460339220002);
+   \draw [line width=2.4pt,color=red] (-2.120786270710496,5.941460339220002)-- (-2.1826169278439687,5.502920678440002);
+   \draw [line width=0.8pt] (-2.1826169278439687,5.502920678440002)-- (-2.2444475849774412,5.064381017660003);
+   \draw [line width=2.4pt,color=red] (-2.422715404699739,3.8)-- (-2.484546061833212,3.361460339220001);
+   \draw [line width=2.4pt,color=green] (-0.33229166666666593,6.38)-- (0.018311655884010396,5.941460339220002);
+   \draw [line width=2.4pt,color=green] (0.018311655884010396,5.941460339220002)-- (0.3689149784346872,5.502920678440002);
+   \draw [line width=2.4pt,color=green] (1.7303645833333339,3.8)-- (2.0809679058840103,3.361460339220001);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.120786270710496,5.941460339220002)-- (0.018311655884010396,5.941460339220002);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.1826169278439687,5.502920678440002)-- (0.3689149784346872,5.502920678440002);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.2444475849774412,5.064381017660003)-- (0.7195183009853631,5.064381017660003);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.360884747566267,4.238539660779997)-- (1.3797612607826595,4.238539660779998);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.484546061833212,3.361460339220001)-- (2.0809679058840103,3.361460339220001);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.5463767189666844,2.9229206784400033)-- (2.431571228434686,2.922920678440003);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.608207376100157,2.4843810176600054)-- (2.7821745509853613,2.4843810176600054);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.83482432541974,0.8770793215599975)-- (4.067178771565316,0.8770793215599976);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.896654982553212,0.43853966077999873)-- (4.417782094115991,0.43853966077999873);
+   \draw (-2.5,6.9) node[anchor=north west] {$A$};
+   \draw (-2.9,4.3) node[anchor=north west] {$B$};
+   \draw (-3.6,0.6) node[anchor=north west] {$C$};
+   \draw (-0.2,6.9) node[anchor=north west] {$A'$};
+   \draw (1.8,4.3) node[anchor=north west] {$B'$};
+   \draw (4.8,0.6) node[anchor=north west] {$C'$};
+   \draw (-2.6,6.4) node[anchor=north west] {$  u$};
+   \draw (-3,3.8) node[anchor=north west] {$ u$};
+   \draw (-.1,6.4) node[anchor=north west] {$ v $};
+   \draw (1.9,3.8) node[anchor=north west] {$ v $};
+   \draw (-3.1111119322537544,5.579654794304461) node[anchor=north west] {$ a $};
+   \draw (-3.5150523810387724,2.4603368842423774) node[anchor=north west] {$ b $};
+   \draw (1.4668798206431133,5.736742746609745) node[anchor=north west] {$ a' $};
+   \draw (3.7558756970915472,2.617424836547662) node[anchor=north west] {$  b'$};
+   \draw [fill=black] (-2.058955613577024,6.38) circle (2.0pt);
+   \draw [fill=black] (-0.33229166666666593,6.38) circle (2.0pt);
+   \draw [fill=black] (-2.422715404699739,3.8) circle (2.0pt);
+   \draw [fill=black] (1.7303645833333339,3.8) circle (2.0pt);
+   \draw [fill=black] (-2.958485639686684,0.) circle (2.0pt);
+   \draw [fill=black] (4.768385416666668,0.) circle (2.0pt);
+   \draw [fill=black] (-2.120786270710496,5.941460339220002) circle (2.0pt);
+   \draw [fill=black] (-2.1826169278439687,5.502920678440002) circle (2.0pt);
+   \draw [fill=black] (-2.2444475849774412,5.064381017660003) circle (2.0pt);
+   \draw [fill=black] (-2.360884747566267,4.238539660779997) circle (2.0pt);
+   \draw [fill=black] (-2.484546061833212,3.361460339220001) circle (2.0pt);
+   \draw [fill=black] (-2.896654982553212,0.43853966077999873) circle (2.0pt);
+   \draw [fill=black] (-2.5463767189666844,2.9229206784400033) circle (2.0pt);
+   \draw [fill=black] (-2.608207376100157,2.4843810176600054) circle (2.0pt);
+   \draw [fill=black] (-2.83482432541974,0.8770793215599975) circle (2.0pt);
+   \draw [fill=black] (0.018311655884010396,5.941460339220002) circle (2.0pt);
+   \draw [fill=black] (0.3689149784346872,5.502920678440002) circle (2.0pt);
+   \draw [fill=black] (0.7195183009853631,5.064381017660003) circle (2.0pt);
+   \draw [fill=black] (1.3797612607826595,4.238539660779998) circle (2.0pt);
+   \draw [fill=black] (2.0809679058840103,3.361460339220001) circle (2.0pt);
+   \draw [fill=black] (2.431571228434686,2.922920678440003) circle (2.0pt);
+   \draw [fill=black] (2.7821745509853613,2.4843810176600054) circle (2.0pt);
+   \draw [fill=black] (4.067178771565316,0.8770793215599976) circle (2.0pt);
+   \draw [fill=black] (4.417782094115991,0.43853966077999873) circle (2.0pt);
+   
+Digamos que a unidade `u` cabe `m` vezes em `a`. Então `a = mu`.
+
+Digamos que a unidade `u` cabe `n` vezes em `b`. Então `b = nu`.
+
+Sabemos que, em retas paralelas cortadas por transversais, segmentos iguais de um cado correspondem a segmentos iguais do outro. A cada segmento `u` do lado esquerdo existe um correspondente `v` do lado direito.
+
+Complete a demonstração
+
+#. Quantas vezes o segmento `v` cabe em `a´`?
+#. Quantas vezes o segmento `v` cabe em `b´`?
+#. Escreva as medidas de `a´` e `b´` na unidade `v`, reuna essas medidas com as anteriores e conclua o resultado do teorema
+
+
+.. admonition:: Resposta 
+
+   #. `m`
+   #. `n`
+   #. `a´= mv` e `b´=nv`
+      Dividindo, obtemos `\dfrac{a}{a´}=\dfrac{mu}{nu}=\dfrac{m}{n}` e que `\dfrac{b}{b´}=\dfrac{mv}{nv}=\dfrac{m}{n}`, logo `\dfrac{a}{a´}=\dfrac{b}{b´}`
+      
+
+
+.. _sec-praticando:
+
+Praticando o assunto
+=====
+
+
+.. _ativ-problema-inicial:
+
+Atividade: resolvendo a situação inicial
+----------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender a aplicação do teorema de Tales em uma situação real.
+   
+   **Observações e recomendações**
+   
+   * Os alunos devem perceber que os segmentos que aparecem nas transversais não precisam estar conectados.
+   * Deixe que os alunos concluam o resultado e encontrem a resposta. Não dê nenhuma dica inicialmente.
+    
+Vamos voltar ao mapa que mostramos na primeira atividade, agora desenhado de forma esquemática.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0.,5.)-- (7.2,1.44);
+   \draw [line width=0.8pt] (0.,5.)-- (0.,-2.86);
+   \draw [line width=2.8pt,color=red] (7.2,1.44)-- (5.629240434037691,-1.60334665905197);
+   \draw [line width=0.8pt] (5.629240434037691,-1.60334665905197)-- (4.7328383780696734,-3.3401256424900057);
+   \draw [line width=2.8pt,color=blue] (4.7328383780696734,-3.3401256424900057)-- (3.968018275271273,-4.821964591661907);
+   \draw [line width=0.8pt] (0.,3.22)-- (6.468075385494003,0.02189605939463218);
+   \draw [line width=0.8pt] (0.,1.18)-- (5.629240434037691,-1.60334665905197);
+   \draw [line width=0.8pt] (0.,2.86)-- (6.320045688178182,-0.2649114791547684);
+   \draw [line width=0.8pt] (0.,-1.)-- (4.7328383780696734,-3.3401256424900057);
+   \draw [line width=0.8pt] (0.,-2.86)-- (3.968018275271273,-4.821964591661907);
+   \draw [line width=2.8pt,color=red] (0.,5.)-- (0.,1.18);
+   \draw [line width=2.8pt,color=blue] (0.,-1.)-- (0.,-2.86);
+   \draw [color=blue](4.4,-4.0) node[anchor=north west] {$A$};
+   \draw [color=blue](-0.6170786902907064,-1.7707838711724064) node[anchor=north west] {$B$};
+   \draw [color=red](6.5,-0.3084989813871627) node[anchor=north west] {$C$};
+   \draw [color=red](-0.6767637878329612,3.3322919686903827) node[anchor=north west] {$D$};
+   \draw [fill=red] (0.,5.) circle (2.5pt);
+   \draw [fill=red] (0.,1.18) circle (2.5pt);
+   \draw [fill=blue] (0.,-1.) circle (2.5pt);
+   \draw [fill=blue] (0.,-2.86) circle (2.5pt);
+   \draw [fill=red] (7.2,1.44) circle (2.5pt);
+   \draw [fill=red] (5.629240434037691,-1.60334665905197) circle (2.5pt);
+   \draw [fill=blue] (4.7328383780696734,-3.3401256424900057) circle (2.5pt);
+   \draw [fill=blue] (3.968018275271273,-4.821964591661907) circle (2.5pt);
+   
+#. Por que o teorema de Tales pode ser utilizado nessa situação?
+#. Utilizando os dados da atividade inicial calcule a medida `D`.
+
+
+.. admonition:: Resposta 
+
+   #. Porque as ruas são paralelas
+   #. `184m`
+   
+
+.. _ativ-novas-situacoes:
+
+Atividade: resolvendo novas situações
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender a aplicação do teorema de Tales em diversas outras situações.
+   
+   **Observações e recomendações**
+   
+   * 	Os alunos compreenderam o teorema de Tales com a figura na situação padrão. Nesta atividade, vamos variar a figura para que eles possam raciocinar e decidir qual é a razão correta.
+   * Em caso de dificuldade sugira que eles tracem uma nova paralela pelo ponto de interseção dos segmentos. Eles deverão reconhecer, então, o teorema de Tales.
+
+Quando há retas paralelas, o teorema de Tales estará presente. Nas figuras a seguir, as retas paralelas estão assinaladas com seu símbolo tradicional.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-2.04,0.56)-- (3.44,3.96);
+   \draw [line width=0.8pt] (-2.04,0.56)-- (-1.9,3.68);
+   \draw [line width=0.8pt] (-1.9,3.68)-- (2.1553812418250367,3.1629737631761174);
+   \draw [line width=0.8pt] (-1.9789362312897274,1.9208497026860774)-- (1.9886091282959177,4.382465436735565);
+   \draw [line width=0.8pt] (0.3865465119480187,3.3884849813372337)-- (1.9886091282959177,4.382465436735565);
+   \draw [line width=0.8pt] (1.1103882995267922,3.9434991515970954) -- (1.2052858218334364,3.7905466744675635);
+   \draw [line width=0.8pt] (1.1698698184104994,3.980403743605235) -- (1.2647673407171436,3.8274512664757028);
+   \draw [line width=0.8pt] (2.1553812418250367,3.1629737631761174)-- (3.44,3.96);
+   \draw [line width=0.8pt] (2.7205011003173425,3.6195108241487546) -- (2.8153986226239867,3.4665583470192227);
+   \draw [line width=0.8pt] (2.7799826192010486,3.6564154161568942) -- (2.8748801415076928,3.5034629390273624);
+   \draw (-2.4,2.88) node[anchor=north west] {6};
+   \draw (-2.8,1.34) node[anchor=north west] {4,2};
+   \draw (-0.74,4.1) node[anchor=north west] {7,5};
+   \draw (1.42,3.8) node[anchor=north west] {$ x $};
+   \draw [fill=black] (-2.04,0.56) circle (1.0pt);
+   \draw [fill=black] (-1.9,3.68) circle (1.0pt);
+   \draw [fill=black] (2.1553812418250367,3.1629737631761174) circle (1.0pt);
+   \draw [fill=black] (-1.9789362312897274,1.9208497026860774) circle (1.0pt);
+   \draw [fill=black] (0.3865465119480187,3.3884849813372337) circle (1.0pt);
+   
+#. Qual é o valor da medida que está faltando na figura acima?
+   
+   .. tikz:: 
+
+      \draw [line width=0.8pt] (-2.8,1.)-- (1.0687644969670296,5.635260395386114);
+      \draw [line width=0.8pt] (-2.394800264009806,3.4591432253197976)-- (0.16,0.12);
+      \draw [line width=0.8pt] (-2.394800264009806,3.4591432253197976)-- (-2.22,4.52);
+      \draw [line width=0.8pt] (-2.418451428579632,3.9661819892341916) -- (-2.2097237468538884,3.9317893598589273);
+      \draw [line width=0.8pt] (-2.405076517155918,4.04735386546087) -- (-2.1963488354301743,4.012961236085605);
+      \draw [line width=0.8pt] (1.0687644969670296,5.635260395386114)-- (1.2676091397680478,6.8420416758336735);
+      \draw [line width=0.8pt] (1.0571355217928105,6.215261412184186) -- (1.265863203518554,6.180868782808922);
+      \draw [line width=0.8pt] (1.070510433216524,6.2964332884108645) -- (1.2792381149422676,6.2620406590356);
+      \draw [line width=0.8pt] (-2.8,1.)-- (-2.394800264009806,3.4591432253197976);
+      \draw [line width=0.8pt] (0.16,0.12)-- (1.0687644969670296,5.635260395386114);
+      \draw (-2,3.2) node[anchor=north west] {$ a $};
+      \draw (-0.9,4.5) node[anchor=north west] {$ b $};
+      \draw (-1.1,1.4) node[anchor=north west] {$ c $};
+      \draw (-2.1,2.0) node[anchor=north west] {$ d $};
+      \draw [fill=black] (-2.8,1.) circle (1.0pt);
+      \draw [fill=black] (0.16,0.12) circle (1.0pt);
+      \draw [fill=black] (1.0687644969670296,5.635260395386114) circle (1.0pt);
+      \draw [fill=black] (-2.394800264009806,3.4591432253197976) circle (1.0pt);
+      \draw [fill=black] (-1.6069520360906888,2.4294196457913784) circle (1.0pt);
+      
+#. Que relação há entre os quatro segmentos assinalados na figura acima?
+
+
+.. admonition:: Resposta 
+
+   #. 5,25
+   #. `\dfrac{a}{d}=\dfrac{c}{b}`
+
+
+.. _sec-organizando3:
+
+Organizando as ideias
+=====
+
+
+.. _sub-divisao-de-segmentos:
+
+Como se divide um segmento em uma razão dada?
+---------
+
+Imagine que tenhamos um segmento `AB` e desejamos encontrar, no seu interior o ponto `P` que o divide na razão `\frac{PA}{PB}=\frac{3}{4}`. Um procedimento bastante usado é o descrito a seguir e mostrado na figura abaixo à esquerda.
+
+A partir dos pontos `A` e `B` trace semirretas paralelas quaisquer, mas com sentidos opostos.
+Usando o compasso com uma abertura qualquer, assinale três segmentos iguais e consecutivos na semirreta que sai de `A` e, com a mesma abertura do compasso, quatro segmentos na semirreta que sai de `B`.
+
+Temos então `AX = 3u` e `BY = 3u`.
+
+A interseção da reta `XY` com o segmento `AB` é o ponto `P` procurado.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-3.,0.)-- (-1.62,2.92);
+   \draw [line width=0.8pt] (-3.,0.)-- (1.,0.);
+   \draw [line width=0.8pt] (3.,0.)-- (7.,0.);
+   \draw [line width=0.8pt] (1.,0.)-- (-0.502351497488208,-3.178888675844614);
+   \draw [line width=0.8pt] (-2.1744449131418495,1.746826705525942)-- (-0.10074011581086806,-2.3291022740345904);
+   \draw [line width=0.8pt] (3.8255550868581505,1.7468267055259423)-- (5.899259884189131,-2.3291022740345904);
+   \draw [line width=0.8pt] (3.,0.)-- (4.228558269739617,2.59955807799977);
+   \draw [line width=0.8pt] (7.,0.)-- (4.767191011235955,-4.724494382022471);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (2.7729644593415306,0.4462451650548752)-- (5.372740816526203,-4.663693244820947);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.0256681798973055,1.072708419540557)-- (5.649835588579647,-4.085171333659179);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.2905674262019144,1.6752010023642823)-- (5.959404510836151,-3.570478338777889);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.5514960008445655,2.2854980594391745)-- (6.1918296069376995,-2.904156839673689);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (4.187082831957212,2.159393075614541)-- (6.562234402556889,-2.509038578647954);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (4.762684778290206,2.1511901820602617)-- (6.823021221818061,-1.8984628971188342);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (5.34265446345135,2.1344023668297014)-- (7.096003566828064,-1.3118578872516715);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (5.937130743373617,2.0891014044734284)-- (7.329336201567188,-0.6473201825610867);
+   \draw (-3.44364,0.06722) node[anchor=north west] {A};
+   \draw (2.5991,0.01398) node[anchor=north west] {A};
+   \draw (1.21486,0.20032) node[anchor=north west] {B};
+   \draw (7.2576,0.06722) node[anchor=north west] {B};
+   \draw (-2.48532,2.32992) node[anchor=north west] {X};
+   \draw (3.29122,1.66442) node[anchor=north west] {X};
+   \draw (0.04358,-2.59478) node[anchor=north west] {Y};
+   \draw (6.00646,-2.38182) node[anchor=north west] {Y};
+   \draw (-3.2573,0.62624) node[anchor=north west] {u};
+   \draw (0.97528,-0.33208) node[anchor=north west] {u};
+   \draw [color=red](-1.527,-0.2256) node[anchor=north west] {P};
+   \draw [color=red](4.51574,-0.2256) node[anchor=north west] {P};
+   \draw [fill=black] (-3.,0.) circle (1.0pt);
+   \draw [fill=black] (1.,0.) circle (1.0pt);
+   \draw [fill=black] (3.,0.) circle (1.0pt);
+   \draw [fill=black] (7.,0.) circle (1.0pt);
+   \draw [fill=black] (-2.724814971047283,0.5822755685086475) circle (1.0pt);
+   \draw [fill=black] (-2.449629942094566,1.1645511370172947) circle (1.0pt);
+   \draw [fill=black] (-3.,0.) circle (1.0pt);
+   \draw [fill=black] (-2.1744449131418495,1.746826705525942) circle (1.0pt);
+   \draw [fill=black] (0.724814971047283,-0.5822755685086476) circle (1.0pt);
+   \draw [fill=black] (0.44962994209456597,-1.1645511370172952) circle (1.0pt);
+   \draw [fill=black] (0.17444491314184896,-1.7468267055259428) circle (1.0pt);
+   \draw [fill=black] (-0.10074011581086806,-2.3291022740345904) circle (1.0pt);
+   \draw [fill=black] (3.2751850289527167,0.5822755685086475) circle (1.0pt);
+   \draw [fill=black] (3.550370057905434,1.1645511370172947) circle (1.0pt);
+   \draw [fill=black] (3.8255550868581505,1.7468267055259423) circle (1.0pt);
+   \draw [fill=black] (6.724814971047282,-0.5822755685086476) circle (1.0pt);
+   \draw [fill=black] (6.449629942094566,-1.1645511370172952) circle (1.0pt);
+   \draw [fill=black] (6.174444913141849,-1.7468267055259428) circle (1.0pt);
+   \draw [fill=black] (5.899259884189131,-2.3291022740345904) circle (1.0pt);
+   \draw [fill=black] (5.6240748552364135,-2.9113778425432377) circle (1.0pt);
+   \draw [fill=black] (5.348889826283696,-3.493653411051885) circle (1.0pt);
+   \draw [fill=black] (5.073704797330978,-4.0759289795605325) circle (1.0pt);
+   \draw [fill=black] (3.5714285714285707,0.) circle (1.0pt);
+   \draw [fill=black] (4.142857142857142,0.) circle (1.0pt);
+   \draw [fill=red] (4.7142857142857135,0.) circle (1.5pt);
+   \draw [fill=black] (5.285714285714286,0.) circle (1.0pt);
+   \draw [fill=black] (5.857142857142857,0.) circle (1.0pt);
+   \draw [fill=black] (6.428571428571428,0.) circle (1.0pt);
+   \draw [fill=red] (-1.2857142857142863,0.) circle (1.5pt);
+
+A figura da direita, acima, justifica visualmente a construção. Se um feixe de paralelas determina sobre uma transversal segmentos iguais determinará, sobre qualquer outra, segmentos também iguais.
+
+Assim, o segmento `AB` está dividido em 7 partes iguais e o ponto `P` é o terceiro ponto de divisão. Logo, `\frac{PA}{PB}=\frac{3}{4}`.
+
+Observe ainda que, dado um segmento e um número positivo `k`, **só existe um ponto interior ao segmento que o divide na razão** `k`.
+
+
+.. _sub-reciproca-teorema:
+
+O que é a recíproca de um teorema?
+---------
+
+Sabemos que um teorema é uma afirmação do tipo “Se A então B”. A recíproca de um teorema é uma afirmação onde as expressões A e B trocam de lugar. Assim a recíproca de “Se A então B” é “Se B então A”.
+
+Um teorema é uma afirmação verdadeira (pois conseguimos demonstrá-lo), mas sua recíproca nem sempre é verdadeira. Quando estamos trabalhando com números frequentemente as recíprocas das afirmações não são verdadeira, como no exemplo a seguir.
+
+**Teorema**: Todo número múltiplo de 4 é par. (*verdadeiro*)
+
+**Recíproca**: Todo número par é múltiplo de 4.(*falso*)
+
+Em geometria, a maioria dos teoremas possui sua recíproca também verdadeira, mas isso é preciso verificar em cada caso. Você verá que isso ocorre com o Teorema de Tales em uma atividade mais adiante.
+
+
+.. admonition:: Nota importante
+   
+   O teorema de Tales foi demonstrado no caso dos dois segmentos de uma das retas serem comensuráveis. Entretanto, o teorema vale quando as medidas desses dois segmentos são números reais quaisquer. A demonstração geral do teorema poderá ser vista mais à frente, no capítulo das áreas.
+
+
+.. _sec-aprofundamentos:
+
+Aprofundando o assunto 
+=====
+
+
+.. _ativ-projecao-paralela:
+
+Atividade: a projeção paralela
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Conhecer um assunto novo relacionado com o tema do capítulo
+   
+   **Observações e recomendações**
+   
+   * 	Aplicar o conceito de razão em que um ponto divide um segmento.
+   
+Na figura a seguir você vê um segmento `AB`, um ponto `P` no seu interior e as retas `r` e `d`.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-3.189538526130667,0.)-- (2.8609534583473004,0.);
+   \draw [line width=0.8pt] (-1.9,4.88)-- (-3.1,1.38);
+   \draw [line width=1.6pt,color=blue] (-0.9,3.22)-- (2.18,4.88);
+   \draw [line width=1.6pt,color=green] (-2.004,0.)-- (0.5068571428571428,0.);
+   \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-0.9,3.22)-- (-2.004,0.);
+   \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.027994075551628028,3.7201526511089944)-- (-1.2474868334000275,0.);
+   \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (2.18,4.88)-- (0.5068571428571428,0.);
+   \draw (-1.2025327921153781,3.9) node[anchor=north west] {A};
+   \draw (-0.1503833145561734,4.4) node[anchor=north west] {P};
+   \draw (2.0618284074913853,5.434423837176202) node[anchor=north west] {B};
+   \draw (-2.28166046140687,-0.23099642660413633) node[anchor=north west] {A'};
+   \draw (-1.3374237507768147,-0.23099642660413633) node[anchor=north west] {P'};
+   \draw (0.41615871182185993,-0.204018234871849) node[anchor=north west] {B'};
+   \draw (2.655348625601706,0.4434583667030467) node[anchor=north west] {r};
+   \draw (-2.4974859952651687,4.679034468672157) node[anchor=north west] {d};
+   \draw [fill=black] (-0.9,3.22) circle (1.0pt);
+   \draw [fill=black] (2.18,4.88) circle (1.0pt);
+   \draw [fill=black] (0.027994075551628028,3.7201526511089944) circle (1.0pt);
+   \draw [fill=black] (-2.004,0.) circle (1.0pt);
+   \draw [fill=black] (-1.2474868334000275,0.) circle (1.0pt);
+   \draw [fill=black] (0.5068571428571428,0.) circle (1.0pt);
+
+A “projeção paralela sobre `r` na direção `d`” é uma função que, a cada ponto `X` do plano associa um ponto `X´` da seguinte forma. Trace por `X` uma reta paralela a `d`. Onde essa reta encontrar `r` está o ponto `X´`.
+
+Essa função parece uma chuva com vento da direita para a esquerda, fazendo as gotas caírem no chão.
+
+A razão em que o ponto `P` divide o segmento `AB` é `\dfrac{PA}{PB}`. Entretanto, pelo teorema de Tales, temos que  `\dfrac{PA}{P´A´}=\dfrac{PB}{P´B´}`.
+
+Isso quer dizer que  `\dfrac{PA}{PB}=\dfrac{P´A´}{P´B´}`, ou seja, a razão em que o ponto `P` divide o segmento `AB` é a mesma razão em que o ponto `P´` divide o segmento `A´B´`.
+
+Dizemos então que **A projeção paralela conserva as razões.**
+
+Considere agora que, na figura acima se tenha `\dfrac{PA}{PB}=\dfrac{2}{3}` e que `A´B´` tenha 8 centímetros. 
+
+#. Quanto mede o segmento `A´P´`?
+#. Qual é a razão `\dfrac{A´P´}{A´B´}` ?
+
+
+.. admonition:: Resposta 
+
+   #. 3,2
+   #. `\dfrac{2}{5}`
+   
+
+
+.. _ativ-reciproca-tales:
+
+Atividade: Recíproca do Teorema de Tales
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Usar sua intuição para responder a uma situação nova, mas relacionada com conceitos que já aprendeu
+   * Aprender uma nova técnica de demonstração
+   
+   **Observações e recomendações**
+   
+   * Na primeira parte da atividade o aluno deve usar sua intuição para responder. A justificativa dele para a resposta é importante para que você possa perceber se ele já tem a ideia da recíproca.
+   * Na segunda parte da atividade o aluno deverá acompanhar com atenção a demonstração da recíproca do Teorema de Tales pois ela introduz, de forma leve, a técnica de demonstração por absurdo
+   
+
+**Parte 1** Observe a figura a seguir
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-1.,0.)-- (6.307729090909094,0.);
+   \draw [line width=0.8pt] (0.3818181818181818,2.98)-- (-0.014751470794228672,0.);
+   \draw [line width=0.8pt] (0.3818181818181818,2.98)-- (5.587090166690014,0.);
+   \draw [line width=0.8pt] (-0.8,1.0163636363636355)-- (4.976729090909093,1.006014545454545);
+   \draw (-0.24079090909090867,2.0974345454545427) node[anchor=north west] {5};
+   \draw (-0.4271309090909089,0.6599545454545442) node[anchor=north west] {3};
+   \draw (2.2082490909090944,2.3636345454545427) node[anchor=north west] {13};
+   \draw (5.083209090909098,0.7131945454545442) node[anchor=north west] {8};
+   \draw (4.870249090909097,1.5384145454545435) node[anchor=north west] {r};
+   \draw (6.148009090909099,0.47361454545454446) node[anchor=north west] {s};
+   \draw [fill=black] (-0.014751470794228672,0.) circle (1.0pt);
+   \draw [fill=black] (5.587090166690014,0.) circle (1.0pt);
+   \draw [fill=black] (0.3818181818181818,2.98) circle (1.0pt);
+   \draw [fill=black] (0.12028381420322001,1.014714935047463) circle (1.0pt);
+   \draw [fill=black] (3.8262485808239415,1.0080756473689043) circle (1.0pt);
+   
+#. As retas r e s são paralelas?
+#. Justifique sua resposta.
+
+
+.. admonition:: Resposta 
+
+   #. Não
+   #. A razão `\frac{5}{13}` é diferente da razão `\frac{3}{8}` (são muito próximas)
+   
+
+**Parte 2** Observe a figura a seguir:
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-1.,0.)-- (6.307729090909094,0.);
+   \draw [line width=0.8pt] (0.3818181818181818,2.98)-- (-0.014751470794228672,0.);
+   \draw [line width=0.8pt] (0.3818181818181818,2.98)-- (5.587090166690014,0.);
+   \draw [line width=0.8pt] (-0.8,1.0163636363636355)-- (4.976729090909093,1.006014545454545);
+   \draw (4.870249090909097,1.538414545454544) node[anchor=north west] {r};
+   \draw (6.148009090909099,0.4736145454545451) node[anchor=north west] {s};
+   \draw (-0.29403090909090873,2.3) node[anchor=north west] {$ a $};
+   \draw (-0.40051090909090886,.9) node[anchor=north west] {$ b $};
+   \draw (2.554309090909095,2.5) node[anchor=north west] {$ a' $};
+   \draw (5.0,1.1) node[anchor=north west] {$ b' $};
+   \draw [fill=black] (-0.014751470794228672,0.) circle (1.0pt);
+   \draw [fill=black] (5.587090166690014,0.) circle (1.0pt);
+   \draw [fill=black] (0.3818181818181818,2.98) circle (1.0pt);
+   \draw [fill=black] (0.12028381420322001,1.014714935047463) circle (1.0pt);
+   \draw [fill=black] (3.8262485808239415,1.0080756473689043) circle (1.0pt);
+
+Na figura acima, se `\frac{a}{a´}=\frac{b}{b´}` as retas `r` e `s` são paralelas? A resposta é sim e essa ideia é a recíproca do teorema de Tales. Você vai agora acompanhar a justificativa desse fato.
+ 
+**Demonstração**
+ 
+Consideremos a mesma figura anterior com algumas letras novas
+ 
+ 
+.. tikz:: 
+   
+   \draw [line width=0.8pt] (-1.,0.)-- (6.307729090909094,0.);
+   \draw [line width=0.8pt] (0.5045690909090926,3.0823745454545417)-- (-0.014751470794228672,0.);
+   \draw [line width=0.8pt] (0.5045690909090926,3.0823745454545417)-- (5.587090166690014,0.);
+   \draw (4.116661090909101,1.929244545454541) node[anchor=north west] {r'};
+   \draw (6.149461090909105,0.45304454545454115) node[anchor=north west] {s};
+   \draw (-0.23933890909090766,2.6794445454545412) node[anchor=north west] {$ a $};
+   \draw (-0.43293890909090804,0.9612445454545412) node[anchor=north west] {$ b $};
+   \draw (0.36566109090909354,3.623244545454541) node[anchor=north west] {A};
+   \draw (-0.3,1.7) node[anchor=north west] {P};
+   \draw (-0.23933890909090766,-0.27295545454545883) node[anchor=north west] {B};
+   \draw (5.471861090909104,-0.32135545454545883) node[anchor=north west] {C};
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (-0.48558165509078804,0.9544832953920732)-- (4.2819641805126425,1.4065858531455069);
+   \draw [line width=0.8pt] (-0.5781389090909086,1.015353941507814)-- (4.963661090909102,1.015353941507814);
+   \draw (3.4390610909091,1.929244545454541) node[anchor=north west] {R};
+   \draw (3.7778610909091004,0.8402445454545412) node[anchor=north west] {Q};
+   \draw (4.987861090909103,1.445244545454541) node[anchor=north west] {r};
+   \draw [fill=black] (-0.014751470794228672,0.) circle (1.0pt);
+   \draw [fill=black] (5.587090166690014,0.) circle (1.0pt);
+   \draw [fill=black] (0.5045690909090926,3.0823745454545417) circle (1.0pt);
+   \draw [fill=black] (0.15631605245958863,1.015353941507814) circle (1.0pt);
+   \draw [fill=black] (3.404912635547542,1.3234157567409413) circle (1.0pt);
+   \draw [fill=black] (3.9128751318232196,1.015353941507814) circle (1.0pt);
+   
+
+Por hipótese temos que `\frac{a}{a´}=\frac{b}{b´}`, o que é o mesmo que `\frac{a}{b}=\frac{a´}{b´}`. A primeira fração é a razão em que `P` divide o segmento `AB` e a segunda é a razão em que `Q` divide o segmento `AC`. Elas são iguais, ou seja, `\frac{PA}{PB}=\frac{QA}{QC}`.
+
+Vamos usar agora uma técnica nova de demonstração conhecida como “redução ao absurdo”. Ela consiste em negar a tese e depois mostrar, com argumentos sólidos, que o que afirmamos não é possível.
+
+Queremos mostrar que as retas `r` e `s` são paralelas. Vamos então imaginar o seguinte:
+
+**“Suponha que as retas r e s não são paralelas”**
+
+Bem, dessa forma, vamos traçar agora pelo ponto `P` uma reta `r´` paralela à reta `s`. Essa nova reta vai cortar o segmento `AC` no ponto `R`.
+
+Pelo teorema de Tales, ou melhor, pelo fato de que a projeção paralela conserva as razões, temos que `\frac{PA}{PB}=\frac{RA}{RC}` .
+
+Assim, `\frac{QA}{QC}=\frac{RA}{RC}` e, portanto, os pontos `Q` e `R` devem coincidir.
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+   
+
+   
+   
+
+   
+
+
+
+
+   
+
+   
+
+
+
 
 
    
