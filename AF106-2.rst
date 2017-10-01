@@ -31,9 +31,9 @@ Atividade: Ação promocional
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Observe para os seus alunos que tabela e gráfico têm seus papéis. Ainda que um gráfico seja importante para um determinado objetivo, ele não exclui uso da tabela, que pode ser importante para outros objetivos. 
+   * Observe para os seus alunos que tabela e gráfico têm seus papéis. Ainda que um gráfico seja importante para um determinado objetivo, ele não exclui uso da tabela, que pode ser importante para outros objetivos. Uma tabela não substitui um gráfico se o domínio da função for um conjunto infinito, por exemplo.
    * Para os itens de análise do crescimento e decrescimento do valor dos dados numéricos da imagem em função da variação apresentada, pode ser útil conectar os pontos, formando uma linha poligonal. Contudo é importante destacar que os segmentos que conectam os pontos consecutivos não são pontos correspondentes da função, uma vez que o domínio dessa função é um conjunto discreto.
-   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum meme, evento negativo associado à empresa, dentre outros.
+   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum `meme <https://pt.wikipedia.org/wiki/Meme_(Internet)>`_, evento negativo associado à empresa, dentre outros.
    * Explore o fato de ter-se aqui duas representações: para qual representação o aluno olhou, em cada um dos itens? Conclua apontando para o fato de que, muitas vezes, uma representação é mais “esclarecedora” que outra.
 
 Uma empresa resolve lançar uma ação promocional na internet usando uma `hashtag <https://pt.wikipedia.org/wiki/Hashtag>`_. Um mês após o lançamento, o presidente dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais em cada dia durante aquele mês. O funcionário resolveu apresentar os dados das seguintes duas formas:
@@ -99,11 +99,7 @@ Uma empresa resolve lançar uma ação promocional na internet usando uma `hasht
 
 Uma função, essencialmente, relaciona duas ou mais grandezas ou variáveis, de forma que são obtidos pares `(x,y)`, em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que os termos que compõem o par são apresentados é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são objetos fundamentais para a compreensão do gráfico de uma função.
 
-No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou subconjuntos dele) tanto `x` como `y` serão números reais. Assim é muito importante que saibamos representar o conjunto de todos os pares ordenados de números reais, que chamamos de `\mathbb{R}^2`: 
-
-.. math::
-
-   \mathbb{R}^2=\{(a,b) \; | \; a,b\in \mathbb{R}\}
+No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou subconjuntos dele) tanto `x` como `y` serão números reais.
 
 A representação geométrica mais comum para esses pontos, e que você provavelmente já conhece, é no **plano cartesiano**. Essa representação tem como base duas retas perpendiculares que se interceptam em suas origens conforme a figura abaixo.
 
@@ -130,9 +126,9 @@ Atividade: Do mapa para o gráfico
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * No item (a) espera-se que o estudante indique um conjunto de pares ordenados da forma: `\{(13,` Verde `),(15,` Laranja `), ...\}`.
-   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores indicadas no eixo vertical. Essa é a resposta esperada para o item b). No entanto, no último item, espera-se que sejam exploradas outras formas de representação, usando ou não eixos cartesianos. Uma representação possível é a partir de um retângulo colorido como a escala apresentada no item (a) da Atividade "Colorindo o Mapa", em que se indique os tempos em que ocorre a mudança de cor.
+   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores indicadas no eixo vertical. Essa é a resposta esperada para o item b). No entanto, no último item, espera-se que sejam exploradas outras formas de representação, usando ou não eixos cartesianos. Uma representação possível é a partir de um retângulo colorido como a escala apresentada no item (a) da :ref:`ativ-funcoes-colorindo-o-mapa`, em que se indique os tempos em que ocorre a mudança de cor, veja imagem na resposta da atividade.
    * Estimule a criatividade nas representações.
-   * Caso algum estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal (como domínio), chame a atenção para o fato de que essa relação deixa de ser função.
+   * Caso algum estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal (como domínio), chame a atenção para o fato de que a relação inversa não é função.
    * No item (c) há várias respostas possíveis. Para que a resposta esteja correta, é necessário que todo o intervalo está coberto, ou seja, o domínio considerado é `[0,23]`. Além disso, não deve haver interseção entre os subintervalos.
    
 #. A partir das colunas *Tempo de travessia* e *Cor* da :ref:`ativ-funcoes-colorindo-o-mapa`, escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
@@ -145,7 +141,7 @@ Atividade: Do mapa para o gráfico
    `a)` Uma possibilidade é `\{(13, verde), (14, verde), (15, laranja), (16, laranja), (18, vermelha), (23, vinho) \}`.
    `b)` Três possíveis representações são:
    
-   .. figure:: _resources/grafico_cor.png
+   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=grafico_cores.png
       :width: 500px
       :align: center
    `c)` Uma possibilidade de resposta é: verde para `t \in [0,15[`, laranja para `t \in[15, 18[`, vermelho para `t \in[18,23[` e vinho para `t \in[23,25]`.
@@ -164,10 +160,10 @@ Atividade: Números triangulares no plano
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Destaque para os seus alunos que, nesse caso não cabe ligar os pontos. As abscissas indicam a ordem sequencial dos números triangulares, portanto são números naturais.
+   * Destaque para os seus alunos que, nesse caso não cabe ligar os pontos. As abscissas indicam a ordem sequencial dos números triangulares, portanto resumem-se apenas a números naturais.
    * Observe que os pontos do gráfico não são colineares.
 
-Represente no plano cartesiano o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
+Represente, no plano cartesiano, o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
 
 
 .. admonition:: Resposta 
@@ -185,27 +181,27 @@ Atividade: Jornada até a escola
    
    Levar o estudante a:
    
-   * Localizar pontos no plano a partir de uma situação real.
-   * Perceber que somente pode escolher um único ponto em cada vertical.
+   * Representar pontos no plano cartesiano a partir de uma situação real.
+   * Estabelecer uma função a partir da seleção de pontos em um sistema cartesiano, associando  a univocidade à identificação de apenas um ponto para cada valor da abscissa.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Durante a discussão chame a atenção para a unicidade na escolha do ponto sobre a vertical.
+   * Durante a discussão, chame a atenção para a necessidade de certificar-se da associação de um único valor de ordenada para cada valor de abscissa.
    * Discuta com os estudantes sobre o significado dos segmentos de reta que conectam os pontos.
    
   
-Leonardo mora a `6` km da escola onde estuda e utiliza o transporte escolar que o busca na porta de sua casa. Em um certo dia, a jornada de Leonardo até sua escola foi assim: Ele saiu de casa às `7:00` como de costume, mas nesse dia a van que faz o transporte escolar se atrasou, passando em sua casa somente às `7:05`. Leonardo entrou na van e sentou no penúltimo lugar vago. Ainda faltava Marina. “Ela mora a `3` km da minha casa”, lembrou Leonardo. Às `7:10` em ponto, a van chega à casa de Marina que já estava pronta aguardando para embarcar. Para tentar compensar o atraso, o motorista resolveu tomar um atalho, mas a estratégia não funcionou, quando às `7:15` precisou ficar parado por `5` minutos em frente a uma cancela aguardando um trem de carga passar. Finalmente, às `7:25` chegaram à escola, `5` minutos antes do sinal tocar.  
+Leonardo mora a `6` km da escola onde estuda e utiliza o transporte escolar, que o busca na porta de sua casa. Em um certo dia, o percurso de Leonardo até sua escola foi assim: Ele estava na porta de casa às `7` horas, como de costume, mas o transporte escolar atrasou, passando em sua casa somente às `7h05min`. Leonardo entrou na van e sentou no penúltimo lugar vago. Ainda faltava Marina. “Ela mora a `3` km da minha casa!”, lembrou Leonardo. Às `7h10min` em ponto, o transporte escolar chegou à casa de Marina, que já estava pronta aguardando para embarcar. Para tentar compensar o atraso, o motorista resolveu tomar um atalho, mas a estratégia não funcionou. Às `7h15min` precisou ficar parado por `5` minutos em frente a uma cancela aguardando um trem de carga passar. Finalmente, às `7h25min` chegaram à escola, `5` minutos antes do sinal tocar.  
 
-No plano abaixo o eixo horizontal representa o tempo em minutos e o eixo vertical a distância percorrida em quilômetros. Nele os pontos marcados correspondem as distâncias percorridas por diversos estudantes da escola a cada `5` minutos no período das `7:00` às `7:30` da mesma manhã descrita na situação acima.
+No plano cartesiano a seguir, o eixo horizontal indica o tempo em minutos e o eixo vertical a distância percorrida em quilômetros. Os pontos marcados correspondem às distâncias percorridas por diversos estudantes da escola a cada `5` minutos no período das `7h` às `7h30min` da mesma manhã descrita na situação acima.
 
-#. Conecte os pontos que correspondem à jornada de Leonardo.
-#. Faça uma estimativa da distância que Leonardo estará de sua casa às `7:07`.
-#. Escolha outro conjunto de pontos que possa representar a jornada de um outro estudante e a descreva.
+#. Conecte os pontos que correspondem à jornada de Leonardo, desde a porta da sua casa até a chegada à escola, no dia descrito acima.
+#. Faça uma estimativa da distância a que Leonardo estará de sua casa às `7h07min`.
+#. Escolha um conjunto de pontos que possa representar a jornada de um outro estudante da sua casa à escola e descreva essa jornada.
 
 
 .. _fig-pontos-jornada:
 
-.. figure:: _resources/jornada.png
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jornada.png
    :width: 500px
    :align: center
 
@@ -214,7 +210,7 @@ No plano abaixo o eixo horizontal representa o tempo em minutos e o eixo vertica
 
    #. A jornada de Leonardo é descrita pelo gráfico abaixo.
    
-	.. figure:: _resources/jornada_sol.png
+	.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=jornada_sol.png
 	   :width: 500px
 	   :align: center
 
@@ -227,37 +223,18 @@ No plano abaixo o eixo horizontal representa o tempo em minutos e o eixo vertica
 Organizando as ideias
 =================
 
-É hora de organizar as ideias. Vimos que, para representar graficamente as funções, os pares ordenados são fundamentais, uma vez que estamos, através da função relacionando duas grandezas ou variáveis. Sendo assim, quando queremos fazer o gráfico de uma função precisamos seguir alguns passos:
+É hora de organizar as ideias sobre representação gráfica de uma função. Vimos que, para representar graficamente as funções, os pares ordenados são fundamentais. Cada par identifica as grandezas ou variáveis relacionadas e a ordem no par distingue o papel de cada uma delas: Elemento do domínio, abscissa, e imagem, ordenada. Sendo assim, a representação gráfica de uma função exige: a identificação das variáveis do problema e a identificação da relação estabelecida etre as variáveis.
 
-* identificar as variáveis do problema, decidindo qual é a variável dependente `(y)` e qual é a independente `(x)`.
+Para funções reais de variável real, isto é, funções cujo domínio é um subconjunto de `\mathbb{R}` e o contradomínio é `\mathbb{R}`, sua representação gráfica no plano cartesiano será o conjunto dos pares ordenados `(x,f(x))` em que `x` pertence ao domínio da função.
 
-* correlacionar as variáveis e fazer os pares ordenados `(x,f(x))`; nessa etapa é bastante útil organizar os dados em uma tabela, atribuindo valores estratégicos para a variável independente.
-
-* Escolher no plano cartesiano os significados para cada um dos eixos. Normalmente escolhemos o eixo das abscissas para a variável independente.
-
-* Marcar todos os pontos que correspondem aos pares ordenados `(x,f(x))`, observando que que em cada vertical, apenas um ponto do plano será marcado.
-
-* Analisar o contexto do problema para saber se devemos ou não conectar os pontos marcados, e ainda como eles devem ser conectados, em caso afirmativo.
-
-Temos, assim a seguinte definição:
-
-.. admonition:: Definição 
-
-   Dada uma função `f: A\subset \mathbb{R} \to \mathbb{R}` definimos o seu gráfico como sendo o conjunto dos pares ordenados `(x,y)` em que `x \in A` e `y=f(x)`.
-   Simbolicamente,
-   
-   .. math::
-
-   	\{ (x,y) \in \mathbb{R}^2 \ |\  x\in A ,\ y=f(x) \}
-
-   .. figure:: _resources/graf_ilustra.png
-      :width: 400px
-      :align: center
+.. figure:: _resources/graf_ilustra.png
+   :width: 400px
+   :align: center
 
 
 .. admonition:: Para refletir 
 
-   Como identificamos os conjuntos domínio e imagem a partir do gráfico da função? Observe as figuras abaixo e tente identificar qual dos conjuntos destacados é o domínio e qual é a imagem da função representada por seu gráfico.
+   Os conjuntos domínio e imagem ficam evidenciados na representação gráfica de uma  função a partir dos eixos coordenados. Observe a representação gráfica a seguir, em que estão destacados conjuntos sobre os eixos. Qual deles você identifica como domínio? A que conjunto corresponde o outro?
 
    .. figure:: _resources/graf_dominio_imagem.png
       :width: 900px
@@ -282,8 +259,8 @@ Atividade: Indo para escola*
    
    Levar o estudante a:
    
-   * Combinar informações apresentadas pictórica e verbalmente e traduzir em uma representação matemática.
-   * Fazer inferências a partir da combinação de informações.
+   * Fazer uso de simbologia matemática para representar informações apresentadas pictórica e verbalmente.
+   * Interpretar e relacionar informações a partir da representação gráfica apresentada.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
