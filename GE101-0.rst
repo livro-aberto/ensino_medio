@@ -1711,6 +1711,7 @@ Atividade: igualdade de vetores
    .. tikz:: 
       \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \tikzset{>=latex}
       \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
       \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
       \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
@@ -1740,6 +1741,7 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
 
     \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+    \tikzset{>=latex}
     \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
     \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
     \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
@@ -1764,6 +1766,7 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
 
     \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+    \tikzset{>=latex}
     \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
     \draw [->,line width=0.8pt,color=qqqqff] (-0.7308501710822177,3.5401393293577077) -- (0.7091498289177827,3.9201393293577076);
     \draw [->,line width=0.8pt,color=qqqqff] (-0.8600902461257978,-0.5867739288969923) -- (0.5799097538742026,-0.20677392889699242);
