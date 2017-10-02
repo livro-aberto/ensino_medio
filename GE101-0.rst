@@ -1702,15 +1702,44 @@ Atividade: igualdade de vetores
 
    **Objetivo específico:** construir vetores iguais a um dado vetor.
    
-   **Observação:** não se espera aqui que o aluno faça um desenho com muita precisão, principalmente no que se refere à direção dos vetores dados como resposta (seus módulos, contudo, podem se estabelecidos com mais precisão usando-se uma régua graduada). O importante é que o aluno use uma estratégia coerente.
+   **Observações e recomendações** 
+   
+   * O aluno pode copiar o desenho no seu caderno colocando a folha do caderno por sobre a página do livro.
+   * Não se espera aqui que o aluno faça um desenho com muita precisão, principalmente no que se refere à direção dos vetores dados como resposta (seus módulos, contudo, podem se estabelecidos com mais precisão usando-se uma régua graduada). O importante é que o aluno use uma estratégia coerente.
+   * Uma estratégia que pode ser usada para se resolver o problema é fazer uma segunda cópia do caminho poligonal `{\mathcal P}` transladado por `\vec{u}` e determinar os pontos de interseção dos dois caminhos.
+   
+   .. tikz:: 
+      \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+      \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+      \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+      \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+      \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+      \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+      \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+      \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+      \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+      \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+      \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+      \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+      \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+      \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+      \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+      \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+      \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+      \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (2.0pt);    
+      \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (2.0pt);    
+      \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt);
+      \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (2.0pt);
    
 
 A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` e dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` é igual a `\vec{u}`. Existem outros pares pontos em `{\mathcal P}` que são extremidades de um vetor igual a `\vec{u}`? Em caso afirmativo, marque-os!
 
 .. tikz::
 
+    \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
     \definecolor{qqqqff}{rgb}{0.,0.,1.}
-    \tikzset{>=latex}
     \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
     \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
     \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
@@ -1725,17 +1754,16 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
     \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
     \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
     \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
-    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (2.0pt);
-    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt);
-    
+    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);    
     
        
 .. admonition:: Resposta
 
    .. tikz::
 
+    \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
     \definecolor{qqqqff}{rgb}{0.,0.,1.}
-    \tikzset{>=latex}
     \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
     \draw [->,line width=0.8pt,color=qqqqff] (-0.7308501710822177,3.5401393293577077) -- (0.7091498289177827,3.9201393293577076);
     \draw [->,line width=0.8pt,color=qqqqff] (-0.8600902461257978,-0.5867739288969923) -- (0.5799097538742026,-0.20677392889699242);
@@ -1746,18 +1774,28 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
     \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
     \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
     \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
-    \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+    \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);    
+    % \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+    % \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+    % \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+    % \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+    % \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+    % \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+    % \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+    \draw [->,line width=0.8pt,color=qqqqff] (0.4120318302387269,-0.32222811671087537) -- (1.8520318302387273,0.057771883289124526);
     \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
     \draw [color=qqqqff](-0.1721,-0.1214) node[] {$\vec{u}$};
     \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
     \draw [color=qqqqff](0.1194,3.486) node[] {$\vec{u}$};
+    \draw [color=qqqqff](1.2007,-0.4958) node[] {$\vec{u}$};
     \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
     \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
     \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
-    \draw [fill=qqqqff] (-0.7308501710822177,3.5401393293577077) circle (2.0pt);
-    \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (2.0pt);
-    \draw [fill=qqqqff] (-0.8600902461257978,-0.5867739288969923) circle (2.0pt);
-    \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (2.0pt);
-    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (2.0pt);
-    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt); 
-           
+    \draw [fill=qqqqff] (-0.7308501710822177,3.5401393293577077) circle (1.0pt);
+    \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (1.0pt);
+    \draw [fill=qqqqff] (-0.8600902461257978,-0.5867739288969923) circle (1.0pt);
+    \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (1.0pt);
+    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+    \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
+    \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
