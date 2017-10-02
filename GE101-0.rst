@@ -18,7 +18,9 @@
 
 .. HJB: não esquecer, depois de generalizar e apresentar o vetor matemático (livre) de observar que o vetor deslocamento pode ser escrito como a diferença dos vetores posições relativas.
 
-.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy"
+.. HJB: colocar como sugestão de projeto o "A Hands-on Introduction to Displacement/Velocity Vectors and Frame of Reference through the Use of an Inexpensive Toy".
+
+.. HJB: existe multiplicação de vetor por número real à direita, isto é, `\vec{v} \cdot a`?
 
 
 
@@ -71,6 +73,7 @@
      #. Vetor deslocamento no plano: soma como justaposição, módulo, vetor nulo e vetor simétrico.
      #. Segmentos orientados: direção, sentido e módulo.
      #. Vetores como coleções de segmentos orientados de mesma direção, sentido e módulo: igualdade, soma e subtração, vetor nulo, vetor simétrico, multiplicação por número real, propriedades das operações.
+     #. Forças e vetores.
 
    * Vetor do ponto de vista algébrico.
 
@@ -79,7 +82,6 @@
      #. Interpretação geométrica da operação de adição de vetores: translações no plano.
      #. Caracterização da igualdade de vetores em termos de suas coordenadas.
      #. Demonstração de algumas propriedades das operações com vetores via coordenadas.
-     #. Forças e vetores.
 
    Não serão abordados produto escalar e produto vetorial. Vetores no espaço e, mais geralmente, vetores em `{\mathbb R}^{n}` serão mencionados apenas na seção de aprofundamentos.
 
@@ -187,33 +189,18 @@
    
    Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". Nesta parte, seguindo a orientação de [Roche-1997]_, em soma de forças, o vetor que representa a força resultante é sempre desenhado com uma cor diferente dos vetores que representam as forças parcelas pois, segundo o autor, é um erro comum os estudantes confundirem a força resultante como mais uma força parcela e não como uma força equivalente às forças dadas.
    
-   Registramos aqui uma analogia que pode ser útil para uma reflexão sobre o ensino e a aprendizagem de vetores: este tópico tem muito em comum com tópico dos números racionais. De fato:
+   Registramos aqui uma analogia que pode ser útil para uma reflexão sobre o ensino e a aprendizagem de vetores: este tópico tem muito em comum com tópico dos números racionais. Seguem alguns exemplos que ilustram essa analogia.
    
-   #. números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados);
-   #. existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
-   #. a "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tormar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte) .
+   #. Números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados).
+   #. Existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
+   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tormar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
+   #. Existe uma flexibilidade no rigor (um "abuso de linguagem") ao se referenciar números racionais como, por exemplo, dizer  "o número racional `2/4`" ao invés de dizer "o número racional cujo representante é a fração `2/4`"); esta flexibilidade também ocorre com vetores: dizer "o vetor `\overrightarrow{OP}`" ao invés de dizer "o vetor cujo representante é a flecha (segmento orientado) `\overrightarrow{OP}`".
    
-   
-   
-   
-   
-   
-
 
    **Observações metodológicas gerais**
 
    * As seções sob o título "Para reflexão" podem ser usadas de duas maneiras: (1) você pode, oralmente, na sala de aula, levantar as questões apontadas nestas seções e, então, articular uma discussão oral conjunta com os alunos ou (2) pedir para que eles, numa reflexão mais individual, leiam o texto e registrem primeiro suas respostas no caderno (funcionando, assim, como uma atividade em sala de aula) para depois fazer um fechamento acerca das questões abordadas.
    * Caso haja a disponibilidade de um projetor multimídia acoplado a um computador, *tablet* ou *smartphone*, você pode considerar o uso das várias atividades interativas que estão indicadas ao longo do texto. Estas atividades permitem realizar animações e   múltiplos exemplos que ajudam muito na consolidação das ideias em conceitos.
-
-   **Referências bibliográficas**
-
-   .. [Anton-et-al-2007] Anton, H.; Busby, R. C.: *Álgebra Linear Contemporânea*. Bookman, 2007.
-   .. [Gardner-1973] Gardner, M.: Mathematical Games - Sim, Chomp and Race Track: New Games for The Intellect (and not for Lady Luck). *Scientific American*, v. 228, n. 1, p. 108–115, 1973. 
-   .. [Oliveira-2009] Oliveira, P. M. C.: Corrida de Vetores: Vacina Contra O Raciocínio Aristotélico. *Física na Escola*, v. 10, n. 1, p. 40, 2009.
-   .. [Roche-1997] Roche, J.: Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
-
-
-
 
 ..
    Caro professor,
@@ -280,9 +267,9 @@ O avião de reconhecimento atualizou as informações sobre o grupo `P` de explo
 
 Parte IV.
 
-Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
+Uma segunda estação de pesquisa `B` está situada à 10 km a noroeste de `A`.
 
-#. Considerando os dados da Parte IV, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
+#. Considerando os dados da Parte III, como você informaria a posição do grupo `P` de exploradores com relação à estação `B`?
 
 #. Qual estação de pesquisa está mais próxima do grupo de exploradores? `A` ou `B`? Justifique sua resposta!
 
@@ -291,7 +278,59 @@ Uma segunda estação de pesquisa `B` está situada à 10 km ao norte de `A`.
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   Parte I.
+   
+   #. Não, pois existem infinitos pontos no mapa cuja distância até a estação de pesquisa `A` é 10 km.
+   #. A circunferência de centro em `A` e raio 10 km.
+   
+   .. figure:: _resources/geometria-vp-resposta-01.jpg
+      :width: 480px
+      :align: center
+ 
+   
+   Parte II.
+   
+   #. Não, pois exitem infinitos pontos à nordeste da estação de pesquisa `A`.
+   #. A semirreta com origem em `A` na direção nordeste excluindo-se `A`.
+   
+      .. figure:: _resources/geometria-vp-resposta-02.jpg
+         :width: 480px
+         :align: center
+   
+   
+   #. Não, pois existem duas possibilidades para a localização de `P`.
+   
+      .. figure:: _resources/geometria-vp-resposta-03-01.jpg
+         :width: 480px
+         :align: center
+   
+
+      .. figure:: _resources/geometria-vp-resposta-03-02.jpg
+         :width: 480px
+         :align: center
+
+   Parte III.
+   
+   #. Sim, pois existe um único ponto à nordeste de `A` cuja distância a `A` é igual a 10 km.
+   #. Um ponto.
+
+      .. figure:: _resources/geometria-vp-resposta-04.jpg
+         :width: 480px
+         :align: center
+
+   #. A base `A` está situado à 10 km à sudoeste de `P`.
+   
+   Parte IV.
+   
+   #. O grupo `P` está situado à `10 \, \sqrt{2}` km à leste de `B`.
+   
+      .. figure:: _resources/geometria-vp-resposta-05.jpg
+         :width: 480px
+         :align: center
+         
+   #. A estação `A` está mais próxima.         
+   
+
 
 .. HJB: número complexo conta como número na definição de grandeza escalar?
 .. HJB: a posição relativa de um ponto na reta é uma grandeza vetorial? Não! (Halliday & Hesnick, 2009, p. 43)
@@ -454,7 +493,7 @@ Atividade: corrida de vetores
 
    * Reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes.
    * Perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada.
-   * Concatenar deslocamentos sucessivos.
+   * Justapor deslocamentos sucessivos.
    * Reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio da orientação dada por uma Rosa dos Ventos.
 
    **Observações e recomendações**
@@ -476,6 +515,7 @@ Atividade: corrida de vetores
 
    * Depois que os alunos jogarem, você pode fazer um levantamento de quem conseguiu ganhar a corrida com o menor número de cartas e, então, pedir para que os alunos reproduzam suas jogadas usando, por exemplo, a construção GeoGebra da :numref:`fig-ggb-cv-01`.
    * Traga algumas cópias extras da :numref:`fig-geometria-cv-02`, pois alguns alunos podem errar no início ao aprenderem as regras.
+   * Observe que as flechas `\vec{\i}` e `\vec{\j}` não possuem uma descrição natural em termos de uma Rosa dos Eventos. Aqui, uma descrição alternativa seria indicar o ângulo que a flecha faz com uma reta horizontal. No caso da flecha `\vec{\i}` este ângulo é igual a `\text{arctg}(1/2) = 26{,}565051…^{\circ}` e, no caso da flecha `\vec{\j}`, este ângulo é igual a `116{,}565051…^{\circ}`.
 
 .. Palavras-chaves: justaposição de deslocamentos, deslocamento total, deslocamento resultante.
 
@@ -529,32 +569,67 @@ Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para j
 
 **Descrevendo flechas por meio de uma Rosa dos Ventos**
 
-Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 1 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas?
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 2 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas?
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   Fase de aquecimento
+   
+   #. Ver figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-01.jpg
+         :width: 200px
+         :align: center
 
+   #. A figura a seguir exibe duas das infinitas trajetórias possiveis. Observe que, em princípio, o carro azul poderia dar várias voltar em torno de um quarteirão antes de se dirigir ao ponto `B`.
+   
+      .. figure:: _resources/geometria-cv-resposta-02_1.jpg
+         :width: 600px
+         :align: center
+
+   #. Ver figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-03.jpg
+         :width: 200px
+         :align: center
+
+   #. O jogador não deveria escolher as cartas `\vec{b}`, `\vec{f}`, `\vec{g}`, `\vec{h}` e `\vec{j}`.
+   
+   #. O número mínimo de "quadras" para se sair de `A` e se chegar a `B` é igual a 4. Existem 6 trajetórias possíveis com esse número mínimo de "quadras". Elas estão apresentadas na figura a seguir.
+   
+      .. figure:: _resources/geometria-cv-resposta-04.jpg
+         :width: 800px
+         :align: center
+   
+   Descrevendo flechas por meio de uma Rosa dos Ventos
+   
+   Flecha `\vec{b}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o noroeste.
+   Flecha `\vec{c}`: "se desloque `2~\text{cm}` para o oeste".
+   Flecha `\vec{d}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudoeste.
+   Flecha `\vec{e}`: "se desloque `2~\text{cm}` para o sul.
+   Flecha `\vec{f}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudeste.
+   Flecha `\vec{g}`: "se desloque `2~\text{cm}` para o leste.
+   Flecha `\vec{h}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o nordeste.
 
 .. admonition:: Para o professor
 
    É importante observar que, no contexto de vetores deslocamentos, o vetor resultante `\vec{u} + \vec{v}` só está definido se os vetores `\vec{u}` e `\vec{v}` forem justapostos *nesta ordem*, isto é, se  a extremidade inicial de `\vec{v}` coincidir com a extremidade final de `\vec{u}`. Assim, por exemplo, não está definida como um vetor deslocamento a
    resultante `\overrightarrow{AB} + \overrightarrow{CD}` dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{CD}` da figura. Cabe ainda observe que, fora do contexto aplicado, isto é, considerando-se `\overrightarrow{AB}` e `\overrightarrow{CD}` como coleções de segmentos orientados, a soma `\overrightarrow{AB} + \overrightarrow{CD}` *está definida* e é, a exemplo dos vetores parcelas, uma coleção de segmentos orientados.
 
-.. tikz::
+    .. tikz::
 
-   \tikzset{>=latex}
-   \definecolor{qqqqff}{rgb}{0.,0.,1.}
-   \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
-   \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
-   \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
-   \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
-   \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
-   \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
-   \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
-   \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
-   \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
-   \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
+       \tikzset{>=latex}
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+       \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+       \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+       \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+       \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+       \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+       \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+       \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+       \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+       \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
 
 
 
@@ -614,7 +689,7 @@ Atividade: deslocamentos justapostos
 
       <https://www.geogebra.org/m/HnHZFwNW>.
 
-Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}|`.
+Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}| = 5~\text{cm}`.
 
 
 .. tikz::
@@ -626,18 +701,84 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
    \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
    \draw[color=qqqqff] (-1.7,0.24) node {$A$};
    \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-   \draw[color=qqqqff] (0.92,2.27) node {$B$};
+   \draw[color=qqqqff] (0.8,2.3) node {$B$};
 
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
-#. Se o ponto `C` pertence agora a uma circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
+#. Se o ponto `C` pertence agora a circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
 #. Verdadeiro ou falso? Quaisquer que sejam os pontos `A`, `B` e `C`, tem-se `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`. Justifique sua resposta!
 
 .. admonition:: Resposta
 
-   Texto da resposta.
+   #. É o ponto que `C` que é o simétrico do ponto `A` com relação ao ponto `B`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 10~\text{cm}`.
 
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (3.34,4.1) circle (1.5pt);
+       \draw[color=qqqqff] (3.54,4.3) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (3.34,4.1);   
+
+   #. É o ponto que `C = A`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 0~\text{cm}`.
+
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw[color=qqqqff] (-1.7,-0.4) node {$C$};    
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-1.66,-0.1);   
+
+   #. É o vetor deslocamento onde a extremidade final coincide com a extremidade inicial.
+   
+   #. O ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o maior é possível apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 7{,}5~\text{cm}`.
+
+      .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
+       \draw[color=qqqqff] (2.1,3.37) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);  
+       
+      Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.      
+    
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
+       \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};   
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
+    
+   #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
+   
 
 .. admonition:: Para reflexão
 
@@ -972,7 +1113,7 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
   \vec{u} + \vec{v} = \vec{v} + \vec{u}.
 
 
-.. admonition:: Para Reflexão
+.. admonition:: Para reflexão
 
    Você consegue perceber que `|\vec{u}+\vec{v}|` nem sempre é igual a `|\vec{u}|+|\vec{v}|`? E, quais caractéristicas devem `\vec{u}` e `\vec{v}` ter para que a igualdade seja satisfeita?
 
@@ -986,8 +1127,8 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
 .. admonition:: Definição
 
-   O produto de um vetor por um número real é a operação que a cada vetor `\vec{v}` e um número real `a` associa o vetor `a\vec{v}` tal que:
-
+   A multiplicação de um vetor por um número real é a operação que a cada vetor `\vec{v}` e um número real `a` associa o vetor `a\vec{v}` tal que:
+   
    #. o módulo de `a\vec{v}` é igual a `|a|\cdot|\vec{v}|`, ou seja, o módulo de `a\vec{v}` é o produto de `|a|`  pelo módulo de `\vec{v}`;
    #. `\vec{v}` e `a\vec{v}` possuem a mesma direção;
    #. `\vec{v}` e `a\vec{v}` possuem o mesmo sentido se `a>0` e sentidos opostos se `a<0`.
@@ -1046,8 +1187,8 @@ Praticando o assunto
 .. Soma com a soma (resultante)
 
 
-
 .. _ativ-vetores-e-ou-nao-vetor:
+
 
 Atividade: toda flecha é vetor?
 ------------------------------------------
@@ -1057,7 +1198,13 @@ Atividade: toda flecha é vetor?
    **Objetivos específicos** 
    
    * Identificar, nas situações apresentadas no enunciado do exercício, se as flechas representam ou não um vetor.
-   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de corer para representar o módulo).
+   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de corer para representar o módulo) e que estes meios são usados em outras áreas.
+   * Perceber os diversos usos de flechas como recurso gráfico.
+   
+   **Recomendações e sugestões**
+   
+   * A placa de trânsito pode levantar a questão sobre a espessura da flecha: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentandos e em qualquer um que venha a ser feito, as flechas têm alguma espessura e, neste ponto, é importante esclarecer que estas flechas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
+   * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de flechas como recurso gráfico em diferentes áreas do conhecimento.
 
 Vimos que vetores são representados geometricamente por flechas. Mas será que toda flecha em um desenho representa um vetor? Analise as imagens a seguir e decida se as flechas desenhadas representam um vetor, isto é, se as flechas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
 
@@ -1121,5 +1268,288 @@ Vimos que vetores são representados geometricamente por flechas. Mas será que 
    * As flechas da :numref:`fig-geometria-flechas-07`  representam vetores, pois elas indicam direção, sentido e módulo. Note que, aqui, existe uma redundância na representação do módulo: isto está sendo feito pelo comprimento da flecha e por sua cor.
    * A flecha da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo. 
    
+
+
+Atividade: soma de vetores
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** somar vetores incluindo situações singulares (não prototípicas, conforme [Poynter-et-al-2005]_).
    
+   **Observação:** dependendo das escolhas dos representantes dos vetores e dos procedimentos usados (a "regra do triângulo" ou a "regra do paralelogramo), estratégias diferentes podem ser usadas pelos alunos, todas produzindo o mesmo vetor soma.
    
+
+
+Represente graficamente o vetor soma `\vec{u} + \vec{v}` em cada um dos casos a seguir.
+
+
+.. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (2,2) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+
+.. tikz:: Caso (B)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+
+.. tikz:: Caso (C)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (0.5,4) {};       
+       \node (v3) at (3,1) {};              
+       \node (v7) at (1.5,3) {};        
+       \node (v8) at (0.5,4) {};                    
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (0.692,3.3362) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+.. tikz:: Caso (D)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (3,2) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};        
+       \node (v8) at (-0.5,1.5) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.281,1.496) node {$\vec{v}$};   
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       % \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$}; 
+
+
+.. tikz:: Caso (E)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (2,3.5) {};       
+       \node (v2) at (-1.5,2.5) {};  
+       \node (v3) at (4,2.5) {};       
+       \node (v4) at (0.5,1.5) {};       
+       % \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};        
+       \node (v8) at (1.5,0.5) {};                    
+       \node (v5) at (2,3.5) {};        
+       \node (v6) at (-2,-0.5) {};        
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);       
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);              
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};   
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};  
+       % \draw[] (-0.0785,3.3467) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center); 
+       % \draw [dotted] (v2.center) -- (v6.center);
+       % \draw [dotted] (v8.center) -- (v6.center); 
+       % \draw [dotted] (v2.center) -- (v4.center);
+       % \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center); 
+       % \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$}; 
+       
+
+.. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (1,2) {};       
+       \node (v2) at (3,2) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};        
+       \node (v8) at (-1,2) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw[] (1.9922,2.3) node {$\vec{v}$};   
+       \draw[] (0.0075,2.3) node {$\vec{u}$};       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \fill (v1) circle [radius=2pt];
+       
+ 
+       
+       
+.. admonition:: Resposta
+
+    Os procedimentos indicados a seguir não são únicos, pois diferentes estratégias podem ser usadas, todas produzindo o mesmo vetor soma no final.
+
+    .. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (2,2) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw[->,line width=0.8pt, color=qqqqff]  (v1.center) -- (v3.center);
+       \draw[color=qqqqff] (1.7268,1.0213) node {$\vec{u} + \vec{v}$}; 
+       
+
+
+    .. tikz:: Caso (B)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);  
+       \draw [dotted] (v3.center)  -- (v4.center);        
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center); 
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$};     
+       
+
+
+    .. tikz:: Caso (C)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}       
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \node (v7) at (1.5,3) {};        
+       \node (v8) at (0.5,4) {};                    
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};  
+       \draw[] (0.692,3.3362) node {$\vec{u}$};          
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);  
+       \draw [dotted] (v3.center)  -- (v4.center);  
+       \draw [dotted] (v1.center)  -- (v7.center); 
+       \draw [dotted] (v2.center)  -- (v8.center);                
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center); 
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$}; 
+       
+    .. tikz:: Caso (D)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (3,2) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};        
+       \node (v8) at (-0.5,1.5) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.281,1.496) node {$\vec{v}$};   
+       \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};       
+       \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$};  
+       
+    .. tikz:: Caso (E)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (2,3.5) {};       
+       \node (v2) at (-1.5,2.5) {};  
+       \node (v3) at (4,2.5) {};       
+       \node (v4) at (0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};        
+       \node (v8) at (1.5,0.5) {};                    
+       \node (v5) at (2,3.5) {};        
+       \node (v6) at (-2,-0.5) {};        
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);       
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);              
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};   
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};  
+       \draw[] (-0.0785,3.3467) node {$\vec{u}$};       
+       \draw [dotted] (v7.center) -- (v5.center); 
+       \draw [dotted] (v2.center) -- (v6.center);
+       \draw [dotted] (v8.center) -- (v6.center); 
+       \draw [dotted] (v2.center) -- (v4.center);
+       \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center); 
+       \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$};       
+       
+       
+    .. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (1,2) {};       
+       \node (v2) at (3,2) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};        
+       \node (v8) at (-1,2) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.9922,2.3) node {$\vec{v}$};   
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (0.0075,2.3) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       \node [color=qqqqff,rotate=0] at (0.9859,1.5963) {$\vec{u} + \vec{v} = \vec{0}$};  
+        % \fill (v1) circle [radius=2pt];
+        \fill [color=qqqqff] (v1) circle [radius=2pt];       
