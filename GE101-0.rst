@@ -1275,11 +1275,281 @@ Atividade: soma de vetores
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** somar vetores em situações prototípicas e não prototípicas.
+   **Objetivo específico:** somar vetores incluindo situações singulares (não prototípicas, conforme [Poynter-et-al-2005]_).
    
-   **Recomendações e sugestões**
+   **Observação:** dependendo das escolhas dos representantes dos vetores e dos procedimentos usados (a "regra do triângulo" ou a "regra do paralelogramo), estratégias diferentes podem ser usadas pelos alunos, todas produzindo o mesmo vetor soma.
    
-   * A placa de trânsito pode levantar a questão sobre a espessura da flecha: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentandos e em qualquer um que venha a ser feito, as flechas têm alguma espessura e, neste ponto, é importante esclarecer que estas flechas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
-   * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de flechas como recurso gráfico em diferentes áreas do conhecimento.
 
-Vimos que vetores são representados geometricamente por flechas. Mas será que toda flecha em um desenho representa um vetor? Analise as 
+
+Represente graficamente o vetor soma `\vec{u} + \vec{v}` em cada um dos casos a seguir.
+
+
+.. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (2,2) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+
+.. tikz:: Caso (B)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+
+.. tikz:: Caso (C)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (0.5,4) {};       
+       \node (v3) at (3,1) {};              
+       \node (v7) at (1.5,3) {};        
+       \node (v8) at (0.5,4) {};                    
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (0.692,3.3362) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       
+.. tikz:: Caso (D)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (3,2) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};        
+       \node (v8) at (-0.5,1.5) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.281,1.496) node {$\vec{v}$};   
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       % \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$}; 
+
+
+.. tikz:: Caso (E)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (2,3.5) {};       
+       \node (v2) at (-1.5,2.5) {};  
+       \node (v3) at (4,2.5) {};       
+       \node (v4) at (0.5,1.5) {};       
+       % \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};        
+       \node (v8) at (1.5,0.5) {};                    
+       \node (v5) at (2,3.5) {};        
+       \node (v6) at (-2,-0.5) {};        
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);       
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);              
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};   
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};  
+       % \draw[] (-0.0785,3.3467) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center); 
+       % \draw [dotted] (v2.center) -- (v6.center);
+       % \draw [dotted] (v8.center) -- (v6.center); 
+       % \draw [dotted] (v2.center) -- (v4.center);
+       % \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center); 
+       % \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$}; 
+       
+
+.. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (1,2) {};       
+       \node (v2) at (3,2) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};        
+       \node (v8) at (-1,2) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw[] (1.9922,2.3) node {$\vec{v}$};   
+       \draw[] (0.0075,2.3) node {$\vec{u}$};       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \fill (v1) circle [radius=2pt];
+       
+ 
+       
+       
+.. admonition:: Resposta
+
+    Os procedimentos indicados a seguir não são únicos, pois diferentes estratégias podem ser usadas, todas produzindo o mesmo vetor soma no final.
+
+    .. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (2,2) {};              
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw[->,line width=0.8pt, color=qqqqff]  (v1.center) -- (v3.center);
+       \draw[color=qqqqff] (1.7268,1.0213) node {$\vec{u} + \vec{v}$}; 
+       
+
+
+    .. tikz:: Caso (B)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};   
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);  
+       \draw [dotted] (v3.center)  -- (v4.center);        
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center); 
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$};     
+       
+
+
+    .. tikz:: Caso (C)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}       
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (0.5,0.5) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \node (v7) at (1.5,3) {};        
+       \node (v8) at (0.5,4) {};                    
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw[] (2,0.5) node {$\vec{v}$};   
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};  
+       \draw[] (0.692,3.3362) node {$\vec{u}$};          
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);  
+       \draw [dotted] (v3.center)  -- (v4.center);  
+       \draw [dotted] (v1.center)  -- (v7.center); 
+       \draw [dotted] (v2.center)  -- (v8.center);                
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center); 
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$}; 
+       
+    .. tikz:: Caso (D)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (3,2) {};       
+       \node (v2) at (-0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};        
+       \node (v8) at (-0.5,1.5) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.281,1.496) node {$\vec{v}$};   
+       \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};       
+       \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$};  
+       
+    .. tikz:: Caso (E)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (2,3.5) {};       
+       \node (v2) at (-1.5,2.5) {};  
+       \node (v3) at (4,2.5) {};       
+       \node (v4) at (0.5,1.5) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};        
+       \node (v8) at (1.5,0.5) {};                    
+       \node (v5) at (2,3.5) {};        
+       \node (v6) at (-2,-0.5) {};        
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);       
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);              
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};   
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};  
+       \draw[] (-0.0785,3.3467) node {$\vec{u}$};       
+       \draw [dotted] (v7.center) -- (v5.center); 
+       \draw [dotted] (v2.center) -- (v6.center);
+       \draw [dotted] (v8.center) -- (v6.center); 
+       \draw [dotted] (v2.center) -- (v4.center);
+       \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center); 
+       \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$};       
+       
+       
+    .. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);       
+       \node (v1) at (1,2) {};       
+       \node (v2) at (3,2) {};       
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};        
+       \node (v8) at (-1,2) {};                    
+       \node (v5) at (3.5,3.5) {};        
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);       
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);       
+       \draw[] (1.9922,2.3) node {$\vec{v}$};   
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};  
+       \draw[] (0.0075,2.3) node {$\vec{u}$};       
+       % \draw [dotted] (v7.center) -- (v5.center);       
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center); 
+       \node [color=qqqqff,rotate=0] at (0.9859,1.5963) {$\vec{u} + \vec{v} = \vec{0}$};  
+        % \fill (v1) circle [radius=2pt];
+        \fill [color=qqqqff] (v1) circle [radius=2pt];       
