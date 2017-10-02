@@ -216,7 +216,7 @@ Vetores posições relativas
 
 .. _ativ-vetores-vetor-posicao-relativa:
 
-Atividade: resgate na Antárdida
+Atividade: resgate na Antártida
 ------------------------------------------
 
 .. admonition:: Para o professor
@@ -420,7 +420,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. _fig-geometria-deslocamento-01:
 
-.. figure:: http://www.im-uff.mat.br/ula/figuras/vetores/geometria-deslocamento-01.jpg
+.. figure:: _resources/geometria-deslocamento-01.jpg
    :width: 700px
    :align: center
 
@@ -1275,7 +1275,7 @@ Atividade: soma de vetores
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** somar vetores incluindo situações singulares (não prototípicas, conforme [Poynter-et-al-2005]_).
+   **Objetivo específico:** somar vetores incluindo em situações singulares (não prototípicas, conforme [Poynter-et-al-2005]_).
    
    **Observação:** dependendo das escolhas dos representantes dos vetores e dos procedimentos usados (a "regra do triângulo" ou a "regra do paralelogramo), estratégias diferentes podem ser usadas pelos alunos, todas produzindo o mesmo vetor soma.
    
@@ -1403,9 +1403,7 @@ Represente graficamente o vetor soma `\vec{u} + \vec{v}` em cada um dos casos a 
        \draw[] (0.0075,2.3) node {$\vec{u}$};       
        \draw  (-3.0,4.5) rectangle (5.0,-1.0);
        \fill (v1) circle [radius=2pt];
-       
- 
-       
+             
        
 .. admonition:: Resposta
 
@@ -1553,3 +1551,148 @@ Represente graficamente o vetor soma `\vec{u} + \vec{v}` em cada um dos casos a 
        \node [color=qqqqff,rotate=0] at (0.9859,1.5963) {$\vec{u} + \vec{v} = \vec{0}$};  
         % \fill (v1) circle [radius=2pt];
         \fill [color=qqqqff] (v1) circle [radius=2pt];       
+        
+        
+Atividade: decomposição de vetores em componentes
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** 
+   
+   * Decompor um vetor como a soma de outros dois vetores em situações diversas.  
+   * Perceber que, dado um vetor `\vec{w}`, a decomposição `\vec{w} = \vec{u} + \vec{v}` não é única.
+
+Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}`. Este vetores `\vec{u}` e `\vec{v}` são denominados
+:index:`componentes` do vetor `\vec{w}` com relação às retas `r` e `s`.
+
+.. tikz:: Caso (A)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({-0},{\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-0.2348,2.7408) node {$s$}; 
+        \draw[] (4.2227,-0.6945) node {$r$}; 
+
+           
+.. tikz:: Caso (B)       
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+0.2*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.5*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-4.079,1.2004) node {$s$}; 
+        \draw[] (4.1563,0.5383) node {$r$}; 
+        \node (v3) at  (-1.85714, 0.42857) {};
+        \node (v4) at  (2.85714, 0.07143)  {};
+
+.. tikz:: Caso (C)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+1.5*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.6666666*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-3.998,1.7998) node {$s$}; 
+        \draw[] (2.3993,2.6634) node {$r$}; 
+        \node (v4) at  (1,1)  {};
+
+        
+.. admonition:: Resposta
+
+       
+       
+   .. tikz:: Caso (A)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({-0},{\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-0.2348,2.7408) node {$s$}; 
+        \draw[] (4.2227,-0.6945) node {$r$}; 
+        \node (v3) at (0,1) {};
+        \node (v4) at (1,-0.5) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center); 
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center); 
+        \draw [dotted] (v2.center) -- (v4.center);
+        \draw [dotted] (v2.center) -- (v3.center);
+        \draw[] (0.5751,-0.6927) node {$\vec{u}$}; 
+        \draw[] (-0.3238,0.2913) node {$\vec{v}$};     
+
+       
+   .. tikz:: Caso (B)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+0.2*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.5*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-4.079,1.2004) node {$s$}; 
+        \draw[] (4.1563,0.5383) node {$r$}; 
+        \node (v3) at  (-1.85714, 0.42857) {};
+        \node (v4) at  (2.85714, 0.07143)  {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center); 
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center); 
+        \draw [dotted] (v2.center) -- (v4.center);
+        \draw [dotted] (v2.center) -- (v3.center);
+        \draw[] (1.5912,-0.5104) node {$\vec{u}$}; 
+        \draw[] (-1.3178,-0.1357) node {$\vec{v}$};     
+
+
+       
+   .. tikz:: Caso (C)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};       
+        \node (v2) at (1,1) {};  
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center); 
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+1.5*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.6666666*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$}; 
+        \draw[] (-3.998,1.7998) node {$s$}; 
+        \draw[] (2.3993,2.6634) node {$r$}; 
+        \node (v4) at  (1,1)  {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center); 
+        \draw[] (0.6984,0.1455) node {$\vec{u}$}; 
+        \draw[] (-0.17,-0.828) node {$\vec{v} = \vec{0}$};         
+
+
+.. Achar um vetor deslocamento sobre uma curva que seja igual a um vetor dado.        
