@@ -1153,21 +1153,22 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
 .. admonition:: Resposta
 
    #. `\overrightarrow{AB} = \overrightarrow{AM} + \overrightarrow{MB}`.
-
+  
       .. tikz::
-            \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-            \definecolor{qqqqff}{rgb}{0.,0.,1.}
-            \tikzset{>=latex}
-            \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$A$}] (v1) at (0,0) {};       
-            \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$B$}] (v2) at (5,2) {};  
-            \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$M$}] (v3) at (2.5,1) {};
-            \draw [fill=qqqqff] (v1) circle (0.4ex);
-            \draw [fill=qqqqff] (v2) circle (0.4ex);
-            \draw [fill=qqqqff] (v3) circle (0.4ex);
-            \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);     
-            \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v3.center);     
-            \draw[] (0.8379,0.8781) node {$\overrightarrow{AM}$};     
-            \draw[] (3.2725,1.7919) node {$\overrightarrow{MB}$};        
+      
+         \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+         \tikzset{>=latex}
+         \node[label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$A$}] (v1) at (0,0) {};       
+         \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$B$}] (v2) at (5,2) {};  
+         \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$M$}] (v3) at (2.5,1) {};
+         \draw [fill=qqqqff] (v1) circle (0.4ex);
+         \draw [fill=qqqqff] (v2) circle (0.4ex);
+         \draw [fill=qqqqff] (v3) circle (0.4ex);
+         \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+         \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v3.center);
+         \node at (0.8379,0.8781) {$\overrightarrow{AM}$};     
+         \node at (3.2725,1.7919) {$\overrightarrow{MB}$};        
   
    #. `\overrightarrow{AM} = \frac{1}{2} \, \overrightarrow{AB}`.
 
@@ -1183,27 +1184,27 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
    \frac{1}{2} \, \overrightarrow{BA} + \frac{1}{2} \, \overrightarrow{AC} = \frac{1}{2} \left(\overrightarrow{BA} + \overrightarrow{AC}\right) = \frac{1}{2} \, \overrightarrow{BC}`.
    Isto mostra que o comprimento `MN` é metade do comprimento `BC`.
      
-    .. tikz:: 
+   .. tikz:: 
 
-       \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-        \tikzset{>=latex}
-        \node [label={[xshift=0.7ex,yshift=0.7ex]south west:$B$}] (v1) at (-3.8,1.6) {};       
-        \node [label={north:$A$}] (v2) at (-1.44,6.84) {};  
-        \node [label={[xshift=-0.7ex,yshift=0.7ex]south east:$C$}] (v3) at (3.4,1.72) {};
-        \node [label={west:$M$}] (v4) at (-2.62,4.22) {};        
-        \node [label={east:$N$}] (v5) at (0.98,4.28 {};        
-        \draw [fill=black] (v1) circle (0.3ex);              
-        \draw [fill=black] (v2) circle (0.3ex);
-        \draw [fill=black] (v3) circle (0.3ex);
-        \draw [fill=black] (v4) circle (0.3ex);
-        \draw [fill=black] (v5) circle (0.3ex);
-        \draw [->] (v1.center)--(v2.center);
-        \draw [->] (v1.center)--(v4.center);
-        \draw [->] (v2.center)--(v3.center);
-        \draw [->] (v2.center)--(v5.center);
-        \draw [->, color=qqqqff] (v1.center)--(v3.center);
-        \draw [->, color=qqqqff] (v4.center)--(v5.center);
+      \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \tikzset{>=latex}
+      \node[label={[xshift=0.7ex,yshift=0.7ex]south west:$B$}] (v1) at (-3.8,1.6) {};       
+      \node[label={north:$A$}] (v2) at (-1.44,6.84) {};  
+      \node[label={[xshift=-0.7ex,yshift=0.7ex]south east:$C$}] (v3) at (3.4,1.72) {};
+      \node[label={west:$M$}] (v4) at (-2.62,4.22) {};        
+      \node[label={east:$N$}] (v5) at (0.98,4.28) {};        
+      \draw[fill=black] (v1) circle (0.3ex);              
+      \draw[fill=black] (v2) circle (0.3ex);
+      \draw[fill=black] (v3) circle (0.3ex);
+      \draw[fill=black] (v4) circle (0.3ex);
+      \draw[fill=black] (v5) circle (0.3ex);
+      \draw[->] (v1.center)--(v2.center);
+      \draw[->] (v1.center)--(v4.center);
+      \draw[->] (v2.center)--(v3.center);
+      \draw[->] (v2.center)--(v5.center);
+      \draw[->, color=qqqqff] (v1.center)--(v3.center);
+      \draw[->, color=qqqqff] (v4.center)--(v5.center);
    
 
 .. admonition:: Você sabia?
