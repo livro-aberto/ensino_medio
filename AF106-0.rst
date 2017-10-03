@@ -70,7 +70,7 @@
 Explorando
 ==========
 
-**FALTAM: LISTAGEM PONTUAL DE OBJETIVOS PARA O ALUNO E O PORQUÊ É IMPORTANTE APRENDER O ASSUNTO EM FRASES OBJETIVAS**
+.. **FALTAM: LISTAGEM PONTUAL DE OBJETIVOS PARA O ALUNO E O PORQUÊ É IMPORTANTE APRENDER O ASSUNTO EM FRASES OBJETIVAS**
 
 O que o nosso batimento cardíaco, um terremoto ou a variação das ações de uma empresa na bolsa de valores possuem em comum? Os batimentos cardíacos podem ser monitorados a partir de um sinal bioelétrico cujo gráfico é representado em um eletrocardiograma, as ondas sísmicas produzidas por um terremoto podem ser observadas a partir do registro de um sismógrafo e as variações dos valores das ações de uma empresa percebidas ao longo do tempo podem ser facilmente visualizadas em um gráfico.
 
@@ -116,7 +116,7 @@ As chuvas são a principal fonte de água para os reservatórios que abastecem a
 O gráfico a seguir apresenta a variação pluviométrica (em milímetros) da chuva real e da chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo, no período de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
 .. figure:: _resources/cantareira_chuva_1.png
-   :width: 900px
+   :width: 820pt
    :align: center
 
    Volume de chuvas real e esperado no Sistema Cantareira
@@ -159,10 +159,17 @@ Atividade: Números triangulares
    * Muito provavelmente os estudantes descreverão a sequência de formas diferentes, mas obtendo o mesmo resultado para o sexto, o sétimo e o oitavo números triangulares. Por exemplo, um estudante poderá dizer que, para identificar os números triangulares solicitados, "constrói" os triângulos “de cima para baixo”. Já ouro pode argumentar que o faz “de baixo para cima”. Outro ainda pode agumentar a partir da observação do padrão recursivo: "basta acrescentar uma linha ao último triângulo construído". Assim, como a resposta ao ítem (b) não é única, procure aproveitar e explorar as diferentes respostas na discussão com a turma: os resultados são os mesmos para essas diferentes formas de descrever a sequência? Por que? Por exemplo, “somar de cima para baixo” produz o mesmo resultado que “somar de baixo para cima”, pois a adição é comutativa. 
    * Pela mesma razão apontada no ítem (b), a resposta do item (d) não é única.
    * Não é objetivo, neste momento, que o estudante expresse a relação por meio da linguagem simbólica matemática, escrevendo, por exemplo, `T_n = T_{n-1}+n`, mas que seja matematicamente preciso em suas palavras, dizendo, por exemplo, que "o `n`-ésimo termo da sequência é obtido a partir do termo anterior acrescido de mais uma fileira com `n`" ou que "o `n`-ésimo triângulo da sequência é obtido a partir do triângulo anterior acrescido de mais uma fileira com `n` círculos, portanto, "o `n`-ésimo número triangular é obtido a partir do termo anterior acrescido de `n`".
-   * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Nesse caso, você pode mostrar que essa maneira de descrever o procedimento é equivalente à recursiva. Não apenas testando exemplos, mas sim fazendo uso da propriedade associativa da adição: seja qual for o `n` tem-se que `T_n=1+2+...+(n-1)+n=[1+2+...+(n-1)]+n=T_n-1+n`.
+   * É possível que algum estudante descreva o `n`-ésimo número triangular como a soma dos primeiros `n` números naturais. Nesse caso, você pode mostrar que essa maneira de descrever o procedimento é equivalente à recursiva. Não apenas testando exemplos, mas sim fazendo uso da propriedade associativa da adição: seja qual for o `n` tem-se que 
+   
+   .. math::
+   
+      T_n &= 1+2+...+(n-1)+n\\
+          &= [1+2+...+(n-1)]+n\\
+          &= T_{n-1}+n.
 
 .. tikz::
 
+  \begin{scope}[scale=.85]
   \definecolor{qqzzcc}{rgb}{0.,0.6,0.8}
   \clip(-0.9279117032827463,-3.420523985545702) rectangle (17.259435909160114,6.069005028685349);
   \draw [color=qqzzcc,fill=qqzzcc,fill opacity=1.0] (0.5,0.5) circle (0.5cm);
@@ -205,6 +212,7 @@ Atividade: Números triangulares
   \draw (4.8,-0.1) node[anchor=north west] {$T_3=6$};
   \draw (8.7,-0.1) node[anchor=north west] {$T_4=10$};
   \draw (13.8,-0.1) node[anchor=north west] {$T_5=15$};
+  \end{scope}
   
 Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é igual a quantidade total de círculos congruentes necessários para formar um triângulo equilátero cujo lado tem `n` círculos. Por exemplo, o quarto número triangular é `T_4=10`, porque são necessários `10` círculos congruentes para formar um triângulo cujo lado tem, `4` desses círculos.
 
@@ -267,7 +275,7 @@ Imagine um arranha-céu de `40` andares cujas diferentes alturas que corresponde
 Considere que a altura de um andar é medida a partir do nível da rua até o piso desse andar e que a altura entre os andares seja sempre a mesma, conforme o esquema abaixo.
 
 .. figure:: _resources/arranha.png
-   :width: 500px
+   :width: 300pt
    :align: center
 
 #. Qual a altura entre os andares?
