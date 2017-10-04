@@ -32,28 +32,30 @@ Introdução
 
 .. admonition:: Objetivos gerais
 
-   #. Por qué é importante estudar Estatística?
-   
-   Para se tornar um cidadão competente na apreciação e na postura crítica diante de argumentos baseados em dados empíricos em situações adequadas a sua realidade e ser capaz de tomar decisões com alguma propriedade na presença de incerteza.
+ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber população e amostra, parâmetro e estimador, distribuições empíricas de dados.
 
-   #. O que será estudado:
+ Por que é importante estudar Estatística?
    
-      * Caracterização de problemas que envolvem Estatística.
-      * Conceitos básicos da Estatística: população e amostra, parâmetro e estimador.
-      * Tipos de variáveis.
-      * Organização dos dados em tabelas de frequências.
-      * Representações gráficas adequadas para os diferentes tipos de variáveis.
+ Para se tornar um cidadão competente na apreciação e na postura crítica diante de argumentos baseados em dados empíricos em situações adequadas a sua realidade e ser capaz de tomar decisões com alguma propriedade na presença de incerteza.
+
+ O que será estudado:
+   
+ * Caracterização de problemas que envolvem Estatística.
+ * Conceitos básicos da Estatística: população e amostra, parâmetro e estimador.
+   Tipos de variáveis.
+ * Organização dos dados em tabelas de frequências.
+ * Representações gráficas adequadas para os diferentes tipos de variáveis.
        
-   #. Palavras-chave:
+ Palavras-chave:
                                
-      * Natureza da Estatística,
-      * População e Amostra,
-      * Parâmetro e Estimador, 
-      * Variáveis Qualitativas, 
-      * Variáveis Quantitativas, 
-      * Gráfico de Setores, 
-      * Gráfico de Barras, 
-      * Histograma.
+ * Natureza da Estatística,
+ * População e Amostra,
+ * Parâmetro e Estimador, 
+ * Variáveis Qualitativas, 
+ * Variáveis Quantitativas, 
+ * Gráfico de Setores, 
+ * Gráfico de Barras, 
+ * Histograma.
 
 .. _explorando-1:
 
@@ -62,7 +64,7 @@ Explorando
 
 .. _ativ-1-escolha-do-melhor-fornecedor:
 ------------------------------------------
-Atividade: Escolha do melhor fornecedor
+Atividade: Escolha do melhor fornecedor - Tomada de decisão
 ------------------------------------------
 
 *Controle de Qualidade na Produção de Parafusos (Inspirada em ROSSMAN and CHANCE, 1998).*
@@ -74,28 +76,6 @@ Atividade: Escolha do melhor fornecedor
 Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é 15,0 cm "mais ou menos" 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo azul representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
 
 
-.. admonition:: Para o professor
-
-   No item (a)  a resposta esperada é “diâmetros dos parafusos”. No entanto os alunos podem achar que a frequência com que cada valor de diâmetro ocorre também é necessária. Esse tipo de gráfico, diagrama de pontos, reflete exatamente a tabela de frequências absolutas. No entanto, ele permite perceber por simples visualização como os  valores se distribuem, indicando implicitamente a noção de dispersão.
-   
-   No item (b) é para perceber que não é necessário contar o número de pontos, pois todos estão fora da especificação.
-   
-   Item (c). Fornecedor A: 14,5 cm; fornecedor B: 15,0 cm; fornecedor C: 15,0 cm e fornecedor D: 14,74 cm.
-   
-   Para o item (d) é necessário perceber que os intervalos assinalados no eixo horizontal correspondentes a 0,1 cm estão subdivididos em 5 partes de medida 0,02 cm. Portanto, a resposta a esse item é
-   
-   +------------+--------------+--------------+
-   | Fornecedor | Valor Mínimo | Valor Máximo |
-   +============+==============+==============+
-   | A          | 14,42        | 14,58        |
-   +------------+--------------+--------------+
-   | B          | 14,60        | 15,24        |
-   +------------+--------------+--------------+
-   | C          | 14,58        | 15,60        |
-   +------------+--------------+--------------+
-   | D          | 14,56        | 15,18        |
-   +------------+--------------+--------------+
-   
 
 .. Inserir FIGURAS!!!
 
@@ -144,6 +124,30 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 #. Supondo que os comportamentos dos diâmetros dos parafusos sejam similares para as outras caixas em cada fornecedor, que fornecedor, com base nas especificações do comprador, você escolheria? Por quê?
 #. Todos os parafusos da caixa do fornecedor escolhido no item anterior seriam aproveitados? 
 
+.. admonition:: Para o professor
+
+   No item (a)  a resposta esperada é “diâmetros dos parafusos”. No entanto os alunos podem achar que a frequência com que cada valor de diâmetro ocorre também é necessária. Esse tipo de gráfico, diagrama de pontos, reflete exatamente a tabela de frequências absolutas. No entanto, ele permite perceber por simples visualização como os  valores se distribuem, indicando implicitamente a noção de dispersão.
+   
+   No item (b) deve-se perceber que não é necessário contar o número de pontos, pois todos estão fora da especificação.
+   
+   Item (c): Fornecedor A: 14,5 cm; fornecedor B: 15,0 cm; fornecedor C: 15,0 cm e fornecedor D: 14,74 cm.
+   
+   Para o item (d) é necessário perceber que os intervalos assinalados no eixo horizontal correspondentes a 0,1 cm estão subdivididos em 5 partes de medida 0,02 cm. Portanto, a resposta a esse item é
+   
+   +------------+--------------+--------------+
+   | Fornecedor | Valor Mínimo | Valor Máximo |
+   +============+==============+==============+
+   | A          | 14,42        | 14,58        |
+   +------------+--------------+--------------+
+   | B          | 14,60        | 15,24        |
+   +------------+--------------+--------------+
+   | C          | 14,58        | 15,60        |
+   +------------+--------------+--------------+
+   | D          | 14,56        | 15,18        |
+   +------------+--------------+--------------+
+   
+
+
 .. Adicionei essa etapa de discussão, que pode ser útil para introduzir outros conceitos mais na frente.
 
 **Para discussão**
@@ -159,12 +163,34 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 .. Falta complementar esta caixa para o professor
 .. admonition:: Para o professor
 
-   A **discussão** tem o intuito de provocar um debate sobre estratégias de amostragem e representatividade das amostras, mesmo sem formalizar tais conceitos...
+   A **discussão** tem o intuito de provocar um debate sobre estratégias de amostragem e representatividade das amostras, mesmo sem formalizar tais conceitos. No último item, observe que não é para resolver o problema proposto e sim, pensar em situações semelhantes que levariam a uma análise similar a que foi feita nessa atividade, como por exemplo, estudar a vida de baterias de diferentes marcas, ou de uma mesma marca, porém fabricada em países diferentes, etc.
 
 
 .. admonition:: Solução
 
-   *Texto com as respostas*
+ (a) Medidas dos diâmetros dos parafusos. 
+ (b) Nenhum.
+ (c) Fornecedor A: 14,5 cm; fornecedor B: 15,0 cm; fornecedor C: 15,0 cm e fornecedor D: 14,74 cm.
+    
+ (d)   
+   +------------+--------------+--------------+
+   | Fornecedor | Valor Mínimo | Valor Máximo |
+   +============+==============+==============+
+   | A          | 14,42        | 14,58        |
+   +------------+--------------+--------------+
+   | B          | 14,60        | 15,24        |
+   +------------+--------------+--------------+
+   | C          | 14,58        | 15,60        |
+   +------------+--------------+--------------+
+   | D          | 14,56        | 15,18        |
+   +------------+--------------+--------------+
+ (e) Menor amplitude: forncedor A e maior amplitude: forncedor C
+ (f) Menor dispersão: fornecedor A e maior dispersão: fornecedor C
+ (g) Fornecedores B, C e D.
+ (h) Fornecedor B, pois é o que tem maior número de parafusos dentro das especificações.
+ (i) Não, dois seriam descartados.
+   
+
 
 
 .. admonition:: Observações
@@ -181,13 +207,13 @@ Atividade: Comparação de medicamentos
 
 .. admonition:: Objetivos específicos
 
-   Analisar distribuições empíricas de dados para a comparação de médias, verificando que nem sempre é possível concluir que médias diferentes nas diferentes distribuições podem ser consideradas estatisticamente diferentes.
+   Analisar distribuições empíricas de dados (diagrama de pontos) para  comparar médias populacionais, verificando que nem sempre é possível concluir que as médias populacionais são iguais quando as médias amostrais são diferentes. 
 
 .. admonition:: Para o professor
 
-   O objetivo principal dessa atividade é mostrar situações distintas nas quais ao comparar dois números diferentes, não é possível afirmar que de fato eles são diferentes.
+   O objetivo principal dessa atividade é mostrar situações distintas nas quais ao comparar duas medidas resumo diferentes (resultantes de amostras), não é possível afirmar que na população, os parâmetros correspondentes sejam diferentes. Por exemplo, situações nas quais apesar das médias amostrais serem diferentes, não podemos rejeitar a hipótese de que as médias populacionais são iguais, devido à dispersão resultante da amostra.
    
-   Outros objetivos dessa atividade são construir diagramas de pontos.
+   Outro objetivo dessa atividade é a construção de diagramas de pontos.
 
 Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça. Para isso 60 pacientes com perfis similares foram separados aleatoriamente em três grupos de 20 cada. Para cada grupo será ministrado um dos medicamentos e observado o tempo de cura da dor de cabeça (em minutos). No quadro a seguir estão dispostos os dados obtidos.
 
@@ -197,33 +223,59 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
    :widths: 1 3
    :column-alignment: left center
    
-+-------------+-------------------------------------------------------------+------+
-| medicamento | tempo em minutos                                            | soma |
-+=============+=============================================================+======+
-| X           | 7 8 8 9 9 9 10 10 10 10 10 10 11 11 11 11 12 12 13          | 200  |
-+-------------+-------------------------------------------------------------+------+
-| Y           | 7 8 9 9 10 10 11 11 11 12 12 12 13 13 14 14 15 15 16 18     | 240  |
-+-------------+-------------------------------------------------------------+------+
-| X           | 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 13 13 13 13 13 | 240  |
-+-------------+-------------------------------------------------------------+------+
++-------------+-----------------------------------------------------------+------+
+| medicamento | tempo em minutos                                          | soma |
++=============+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+======+
+| X           | 7| 8| 8| 9| 9| 9| 9|10|10|10|10|10|10|11|11|11|11|12|12|13| 200  |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
+| Y           | 7| 8| 9| 9|10|10|11|11|11|12|12|12|13|13|14|14|15|15|16|18| 240  |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
+| X           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240  |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
 
-.. Está faltando um número 9 para o medicamento X que está com um dado a menos. Os números estão muito juntos. Formato da tabela precisa melhorar, talvez dispor os dados em colunas em vez de linhas.
 
 #. Organize as informações apresentadas no quadro acima em diagramas de pontos. 
 #. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
 #. Determine os tempos médios de cura da dor de cabeça para cada substância.
 #. A partir dos diagramas construídos, compare os diferentes tratamentos. 
 
-**Para discussão**
 
-Ao realizar uma validação desse estudo, um dos pesquisadores percebeu que três pacientes do grupo que usou o medicamento Y usaram outro medicamento o que fez com que fosse necessário refazer três novas observações  para o medicamento Y descartando as medições inadequadas. Construa um novo diagrama de pontos com os novos valores apresentados e compare com o diagrama obtido anteriromente para o medicamento Y.
+.. Incluir na fase 3 como um exercício
+
+.. Ao realizar uma validação desse estudo, um dos pesquisadores percebeu que três pacientes do grupo que usou o medicamento Y usaram outro medicamento o que fez com que fosse necessário refazer três novas observações  para o medicamento Y descartando as medições inadequadas. Construa um novo diagrama de pontos com os novos valores apresentados e compare com o diagrama obtido anteriromente para o medicamento Y.
 
 .. Incluir nova tabela de dados para o estudo Y
 
-#. Você mudaria suas conclussões anteriores com essa nova distribuição de tempos de cura do medicamento Y?
-#. Como é possível que apenas 3 pacientes possam ter um efeito como esse nos resultados?
-#. Você pensa que aconteceria a mesma coisa com o medicamento X? E com Z? Quantos pontos precisaria trocar em cada caso para mudar as suas conclussões?
-#. Discuta quais são as diferenças em cada caso  e por que acredita que isto acontece.
+.. #. Você mudaria suas conclussões anteriores com essa nova distribuição de tempos de cura do medicamento Y?
+.. #. Como é possível que apenas 3 pacientes possam ter um efeito como esse nos resultados?
+.. #. Você pensa que aconteceria a mesma coisa com o medicamento X? E com Z? Quantos pontos precisaria trocar em cada caso para mudar as suas conclussões?
+.. #. Discuta quais são as diferenças em cada caso  e por que acredita que isto acontece.
+
+**Para pesquisar**
+ 
+Em casa, procure algum remédio e leia a sua bula. Em seguida, identifique informações que você considera como resultantes de estudos estatísticos.
+Anotando-as no espaço a seguir.
+
+____
+
+____
+
+____
+
+____
+
+____
+
+____
+
+____
+
+____
+
+____
+
+
+
 
 
 .. admonition:: Resposta 
@@ -233,7 +285,7 @@ Ao realizar uma validação desse estudo, um dos pesquisadores percebeu que trê
       .. _fig-resposta-diagrama-pontos:
 
       .. figure:: <link da figura>
-         :width: 200px
+         :width: 400px
          :align: center
 
          Diagramas de pontos dos dados da :ref:`Tabela de tempo dos medicamentos<tabela-medicamentos>`
@@ -263,18 +315,7 @@ Atividade: Pesquisa sobre a Prática de Esportes e Atividade Física
 
 .. admonition:: Para o professor
 
-   No item (a), espera-se que sejam indicadas pelo menos as seguintes informações:
    
-   * variável qualitativa binária (Sim ou Não) sobre prática de esporte ou Atividade Física no último ano. 
-   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
-   * variável qualitativa binária (Sim ou Não) sobre a prática de Atividade Física não considerada como Esporte.
-   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
-   * variável qualitativa nominal (motivação para a prática de atividade física)
-   * variável qualitativa nominal (local da prática)
-   * variável qualitativa ordinal (frequência da prática, interpretando como diária, cinco vezes por semana, três vezes por semana, uma vez por semana, etc,)
-   * variável quantitativa (duração a atividade cada vez em que é praticada)
-   * variável qualitativa binária (Sim ou Não) sobre a participação em competições.
-
 
 A Pesquisa Nacional por Amostra de Domicílios (PNAD), realizada pelo IBGE, obtém **informações anuais** sobre características demográficas e socioeconômicas da população, como sexo, idade, educação, trabalho e rendimento, e características dos domicílios. Com **periodicidade variável**, a PNAD obtém informações sobre migração, fecundidade, entre outras, tendo os domicílios como unidade de coleta da informação. Temas específicos abrangendo aspectos demográficos, sociais e econômicos também são investigados.
 
@@ -297,11 +338,31 @@ Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Su
   #. Das informações citadas no item a), quais delas apresentam respostas numéricas?
   
 
+.. admonition:: Para o professor
+
+   No item (a), espera-se que sejam indicadas pelo menos as seguintes informações:
+   
+   * variável qualitativa binária (Sim ou Não) sobre prática de esporte ou Atividade Física no último ano. 
+   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
+   * variável qualitativa binária (Sim ou Não) sobre a prática de Atividade Física não considerada como Esporte.
+   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
+   * variável qualitativa nominal (motivação para a prática de atividade física)
+   * variável qualitativa nominal (local da prática)
+   * variável qualitativa ordinal (frequência da prática, interpretando como diária, cinco vezes por semana, três vezes por semana, uma vez por semana, etc,)
+   * variável quantitativa (duração a atividade cada vez em que é praticada)
+   * variável qualitativa binária (Sim ou Não) sobre a participação em competições.
+
+  
+
 .. admonition:: Definição 
 
-   Chamamos de **variável** estatística cada informação que é obtida numa pesquisa. Por exemplo, no caso do problema da escolha do fornecedor, a informação foi diâmetro do parafuso. Dizemos nesse caso que a variável observada foi o diâmetro dos parafusos. Na comparação dos medicamentos, a variável observada foi o tempo de cura da dor de cabeça. Na PNAD observam-se várias variáveis.
+   Chamamos de **variável** estatística cada informação que é obtida numa pesquisa. Por exemplo, uma característica da população, uma medição, uma resposta ou opinião...
+   
+No caso do problema da escolha do fornecedor, a informaçâo de interesse é o diâmetro do parafuso. Dizemos nesse caso que a variável observada foi o diâmetro dos parafusos.
 
-A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (vamoscontar.ibge.gov.br) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
+Na comparação dos medicamentos, a variável observada foi o tempo de cura da dor de cabeça. Já na PNAD 2015 observam-se várias variáveis, como: idade, tipo de atividade física, sexo, local de residência, entre outras.
+
+A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (`vamoscontar.ibge.gov.br <https://vamoscontar.ibge.gov.br/atividades/ensino-medio/9801-pesquisando-a-pratica-de-esportes-e-atividades-fisicas-no-brasil.html>`_) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
 
 .. _def-infografico:
 
@@ -314,8 +375,8 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-1:
 
-.. figure:: <link da figura>
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_01quem2.png
+   :width: 600px
    :align: center
 
    PNAD - Infográfico 1
@@ -338,8 +399,8 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-2:
 
-.. figure:: <link da figura>
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_03instrrend2.png
+   :width: 600px
    :align: center
 
    PNAD - Infográfico 2
@@ -355,8 +416,8 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-3:
 
-.. figure:: <link da figura>
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_04principais.png
+   :width: 600px
    :align: center
 
    PNAD - Infográfico 3
@@ -376,8 +437,8 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-4:
 
-.. figure:: <link da figura>
-   :width: 200px
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_05investimento.png
+   :width: 600px
    :align: center
 
    PNAD - Infográfico 4
@@ -428,9 +489,24 @@ Uma variável é **quantitativa** se as respostas para ela são numéricas. Exem
 
 Uma variável quantitativa é classificada em **discreta** ou **contínua**. As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro.  As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, índice de massa corporal (imc), etc.
 
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tipos_variaveis.png
+   :width: 600px
+   :align: center
+
+   Classificação dos tipos de variáveis
+
 A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa. Nesse caso, podemos no máximo identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico apresentado verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
 
+.. Nesse item acrescentar nota para o professor que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se qualitativa ordinal. A idade também pode ser tratada como quantitativa discreta, se pensarmos en anos completos.
+
+.. Cabe também comentar que uma variável qualitativa pode ser tratada como quantitativa. Por exemplo, numa pesquisa de opinião sobre o uso ou não de determinado produto. Nesse caso as respostas que são sim ou não podem naturalmente ser codificadas como 1 para sim e zero para não. 
+
 Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo em mente que o tipo de variável sob investigação é determinante nos tipos de gráficos e nas informações relevantes da tabela. 
+
+.. Inserir texto falando sobre a construção de gráficos de setores e gráficos de barras. Chamar atenção que o comprimento da barra corresponde à frequência na qual a resposta ocorre. 
 
 .. _sub-organizando-as-ideias-1:
 
