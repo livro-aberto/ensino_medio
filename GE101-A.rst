@@ -29,15 +29,27 @@ Atividade: corrida de vetores
    #. Usar vetores de modo apropriado para representar situações físicas que envolvem velocidade e aceleração.
    
    **Recomendações e sugestões:**
-   Caso os estudantes tenham smartphones, recomendamos que os encorage a jogar um pouco a corrida de vetores neste aplicativo disponível para `Android <https://play.google.com/store/apps/details?id=zielanski.com.vectorrace&hl=pt>`_. Se dispuser de computador com internet e projetor de multimídia, sugerimos que mostre para seus estudantes o jogo `Corrida de Vetores <http://www.harmmade.com/vectorracer/#interlagos>`_. Neste jogo pode-se introduzir a linguagem de vetores, de inércia, deslocamento, velocidade e aceleração, sempre do ponto de vista vetoria. No artigo [Oliveira-2009]_ de uma única página, você encontra uma apresentação deste jogo de mais de 50 anos. Este é um `link para o artigo <http://www.sbfisica.org.br/fne/Vol10/Num1/a08.pdf>`_.
-   Uma observação interessante é que o tempo mínimo gasto para uma volta completa na pista de Interlagos foi de 1 minuto, 10 segundos e 23 milésimos de segundo em 2014 por Nico Rosberg, em sua Mercedes V6 Turbo (informação de outubro de 2017). Na situação fictícia desta atividade, a pista teria sido percorrida em 75 segundos.
+   aproximar velocidade instatânea por velocidades médias é algo bastante razoável na física. 
+   Na verdade esta é a velocidade que conseguimos, de fato, calcular.
+   
+   Caso todos os estudantes tenham *smartphones*, recomendamos que os encorage a jogar um pouco a corrida de vetores neste aplicativo disponível para `Android <https://play.google.com/store/apps/details?id=zielanski.com.vectorrace&hl=pt>`_. 
+   No aplicativo os estudantes podem jogar em dupla via *bluetooth*. 
+   Jogar o jogo deve ajudar a identificar os trechos de aceleração e desaceleração na figura.
+   Se dispuser de computador com internet e projetor de multimídia, sugerimos que mostre para seus estudantes o jogo `Corrida de Vetores <http://www.harmmade.com/vectorracer/#interlagos>`_. 
+   Neste jogo pode-se introduzir a linguagem de vetores, de inércia, deslocamento, velocidade e aceleração, sempre do ponto de vista vetoria. 
+   No artigo [Oliveira-2009]_ de uma única página, você encontra uma apresentação deste jogo de mais de 50 anos. 
+   Este é um `link para o artigo <http://www.sbfisica.org.br/fne/Vol10/Num1/a08.pdf>`_.
+   Uma observação interessante é que o tempo mínimo gasto para uma volta completa na pista de Interlagos foi de 1 minuto, 10 segundos e 23 milésimos de segundo em 2014 por Nico Rosberg, em sua Mercedes V6 Turbo (informação de outubro de 2017). 
+   Na situação fictícia desta atividade, a pista teria sido percorrida em 75 segundos.
+   
+   .. informar ao professor que a aproximação de velocidade instantânea por velocidade média é comum.
    
 A figura abaixo representa o movimento fictício de um carro no autódromo de Interlagos - SP a partir do repouso (no ponto vermelho). A trajetória exata não é conhecida, mas a cada 1 segundo foi marcada a posição do carro. Os pontos sucessivos foram ligados por segmentos de reta. 
 
 .. _fig-interlagos-corrida:
 
 .. figure:: _resources/interlagos.png
-   :width: 450pt
+   :width: 380pt
    
    Substituir por figura melhor, mas análoga
 
@@ -56,11 +68,11 @@ Copie o trecho de 0 a 6 segundos duas vezes em seu caderno, uma para cada item a
 
 .. tikz::
    
-   \begin{scope}[scale=.5]
+   \begin{scope}[scale=.8]
    \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (8.05,8.05);
-   \fill[red] (0,0)coordinate(o) circle (.2);
+   \fill[red] (0,0)coordinate(o) circle (.1);
    \foreach \n in {1,3,5,6,7,8}{
-   \fill[blue] (\n,\n)coordinate(t\n) circle (.13);};
+   \fill[blue] (\n,\n)coordinate(t\n) circle (.08);};
    
    \draw[blue] (o)--(t1)--(t3)--(t5)--(t6)--(t7)--(t8);
    \node[right] at (o) {$t=0$ s};
@@ -69,19 +81,31 @@ Copie o trecho de 0 a 6 segundos duas vezes em seu caderno, uma para cada item a
    \node[right] at (t5) {$t=3$ s};
    \node[right] at (t6) {$t=4$ s};
    \node[right] at (t7) {$t=5$ s};
-   \node[right] at (t8) {$t=6$ s};   
+   \node[right] at (t8) {$t=6$ s};  
    \end{scope}
 
 #. Esboce o vetor velocidade média posicionando a origem deste vetor na posição **inicial** do deslocamento correspondente para cada um dos intervalos listados.
-#. Use as velocidades médias do item anterior como aproximações para as velocidades nos instantes instantes em que estão posicionadas. Esboce o vetor aceleração média posicionando a origem deste vetor na posição **final** do deslocamento correspondente para cada um dos intervalos listados.
+#. Use as velocidades médias do item anterior como aproximações para as velocidades nos instantes em que estão posicionadas. Esboce o vetor aceleração média posicionando a origem deste vetor na posição **final** do deslocamento correspondente para cada um dos intervalos listados.
 
 Parte III
 
-Repita o que foi solicitado nos itens a) e b) da Parte II trocando os intervalos dados por `[0,2]`, `[2,4]` e `[4,6]`.  
+A figura a seguir reproduz os deslocamentos a cada 1 segundo entre os instantes 43 e 48 segundos do movimento do carro.
+Considerando as velocidades médias em cada um destes intervalos de 1 segundo como aproximações das velocidades instantâneas nos pontos iniciais dos deslocamentos, represente o vetor aceleração média do intervalo `[43,47]` com origem na posição do instante `t=45` segundos.
 
-.. Parte IV
+.. tikz:: 
 
-.. Movimento não retilíneo.
+   \begin{scope}[scale=.8]
+   \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (6.05,2.05);
+   \draw[blue,-latex,thick] (5,0)node[below,black]{$t=43$ s}--(6,1);
+   \draw[blue,-latex,thick] (6,1) node[right,black]{$t=44$ s}--(6,2);
+   \draw[blue,-latex,thick] (6,2)node[right,black]{$t=45$ s} --(5,2);
+   \draw[blue,-latex,thick] (5,2)node[above,black]{$t=46$ s}--(3,1);
+   \draw[blue,-latex,thick] (3,1)node[above,black]{$t=47$ s}--(0,0)node[below,black]{$t=48$ s};
+   \foreach \x/\y in {5/0,6/1,6/2,5/2,3/1,0/0}{ \fill[blue] (\x,\y) circle (.08);};
+   
+   \end{scope}
+   
+   
 
 .. admonition:: Resposta 
    
@@ -157,4 +181,24 @@ Repita o que foi solicitado nos itens a) e b) da Parte II trocando os intervalos
          
       Parte III
       
+      Conforme foi definido no início desta seção, o vetor aceleração média é 
       
+      .. math::
+      
+         \vec{a} = \dfrac{\vec{v_{47}} - \vec{v_{43}}}{4},
+         
+      onde `\vec{v_{47}}` e `\vec{v_{43}}` são as velocidades nos instantes 47 e 43 segundos, respectivamente. Novamente os vetores velocidade média coincidem com os vetores deslocamento porque estamos considerando o intervalo de tempo de 1 segundo. 
+      Portanto, `\vec{v_{47}} = (-3,-1)`  e `\vec{v_{43}} = (1,1)`, logo `\vec{a} = \left(-1,-\frac{1}{2}\right)`. Na figura obtemos
+      
+      .. tikz:: 
+
+         \begin{scope}[scale=.8]
+         \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (6.05,2.05);
+         \draw[blue,-latex,thick] (5,0)node[below,black]{$t=43$ s}--(6,1);
+         \draw[blue,-latex,thick] (6,1) node[right,black]{$t=44$ s}--(6,2);
+         \draw[blue,-latex,thick] (6,2)node[right,black]{$t=45$ s} --(5,2);
+         \draw[blue,-latex,thick] (5,2)node[above,black]{$t=46$ s}--(3,1);
+         \draw[red,-latex,very thick] (6,2)--(5,1.5)node[below right, black]{$\vec{a}$};
+         \draw[blue,-latex,thick] (3,1)node[above,black]{$t=47$ s}--(0,0)node[below,black]{$t=48$ s};
+         \foreach \x/\y in {5/0,6/1,6/2,5/2,3/1,0/0}{ \fill[blue] (\x,\y) circle (.08);};   
+         \end{scope}

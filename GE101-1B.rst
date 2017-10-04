@@ -1,6 +1,6 @@
-***********************************************
-Vetores do ponto de vista algébrico (parte III)
-***********************************************
+*************************
+Propriedades de operações
+*************************
 
 Veremos agora as principais propriedades das operações da adição de vetores e multiplicação por um número real sob o prisma das coordenadas, que permitem justificar estas igualdades a partir das propriedades análogas para os números reais.
 
@@ -101,7 +101,9 @@ Justificativa do item a): considere um sistema de coordenadas no plano, então o
 
    \vec{u} + \vec{v} = (x_1,y_1) + (x_2,y_2) = (x_1 + x_2,y_1+y_2) = (x_2 + x_1, y_2 + y_1) = (x_2,y_2) + (x_1,y_1) =  \vec{v} + \vec{u}.
 
-**Vetores e Forças**
+****************
+Vetores e Forças
+****************
 
 A *Primeira Lei de Newton*, também conhecida como *Princípio da Inércia*, afirma que
 
@@ -117,8 +119,8 @@ Então o Princípio da Inércia diz que uma :index:`força <Força>` é o que ca
 
 Quando alguém empurra um carro e ele não se move, isto não significa que o Princípio da Inércia esteja errado. Significa que existem forças de resistência que *anulam* a força do empurrão. Estas forças de resistência podem ser causadas pelo *atrito* do veículo com o chão e entre as peças do próprio automóvel. Por exemplo, se o freio de mão estiver acionado, a força de atrito entre as peças do carro será maior.
 
-.. figure:: http://s.glbimg.com/jo/g1/f/original/2012/03/28/2012-03-28t051611z_98588621.jpg
-   :width: 300px
+.. figure:: _resources/carro.jpg
+   :width: 250pt
    :align: center
 
    Imagem do Portal G1 (Foto: Alessandro Bianchi/Reuters) - substituir por análoga com forças representadas
@@ -157,8 +159,8 @@ Portanto, se quando empurramos um carro ele não se mexe é porque existem forç
       
    Em contraposição, se o tenista larga a mesma bolinha sobre uma mesa horizontal, ela permanece parada, mesmo com a força da gravidade a puxando para baixo. Isso acontece porque a mesa exerce uma força de resistência na bola para que ela não altere a sua velocidade, esta é a :index:`força normal <pair: Força; normal>`, geralmente representada por `\vec{N}`, esta força é sempre perpendicular à superfície em contato com o corpo. Como a velocidade da bolinha é constante (igual a zero), a força resultante sobre ela também é zero. Portanto, nesta situação, a força normal anula com a força peso. **Atenção:** a força normal não é igual à força peso nesta última situação. Ela é simétrica à força peso, temos `\vec{N} = -\vec{F}`. Por isso a força resultante é zero.
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=bolinha-tenis.jpg
-      :width: 400px
+   .. figure:: _resources/bolinha-tenis.jpg
+      :width: 250pt
       :align: center
 
       Força resultante **diferente de zero** na bola da esquerda e força resultante **igual à zero** na bola da direita.
@@ -181,8 +183,8 @@ Atividade: puxando o barco (modificado de PUC/SP)
 
 Os esquemas seguintes mostram um barco sendo retirado de um rio por dois homens. Em (a), são usadas cordas que transmitem ao barco forças paralelas. Em (b), são usadas cordas inclinadas de `90^{\circ}`. Supondo que os homens fazem forças de intensidades iguais. Faça o que se pede.
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barcos.png
-   :width: 300px
+.. figure:: _resources/barcos.png
+   :width: 250pt
    :align: center
    
    Imagem da PUC/SP
@@ -271,8 +273,8 @@ Atividade: grampos de escalada
 
 O equipamento da foto abaixo é utilizado para segurança de escaladores. Duas fitas de tecido com *mosquetões* na ponta são presas em dois grampos presos na pedra. Um nó é dado nas fitas e outro mosquetão é colocado na ponta. Este último vai prender o escalador. Usa-se dois grampos para reduzir o risco de acidentes.
 
-.. figure:: https://i.pinimg.com/736x/a2/26/40/a22640aece4cc64f3e18361d9bd15f7d--how-to-build-learn-how.jpg
-   :width: 200px
+.. figure:: _resources/escalada.jpg
+   :width: 200pt
    
    Foto de `Chris <http://www.seekingexposure.com/case-study-simple-bolt-anchor/>`_ (substituir)
             

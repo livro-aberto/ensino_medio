@@ -22,24 +22,24 @@ Nas três relações apresentadas, **cada** elemento de um conjunto `A` está as
    .. _notacao:
 
    .. figure:: _resources/funcao1.png
-      :width: 300pt
+      :width: 200pt
       :align: center
    
    
    O conjunto `A` é chamado **domínio** da função `f`, o conjunto `B` é chamado **contradomínio** de `f` e o subconjunto de `B` formado pelas imagens de todos os elementos de `A` é chamado **conjunto imagem** da função `f`.
    
       .. figure:: _resources/funcao.png
-         :width: 360pt
+         :width: 200pt
          :align: center
    
    
    De maneira geral, escreve-se:
 
    .. math::
-      \begin{eqnarray*}
+      
       f:A \to B \\
       x \mapsto f(x)
-      \end{eqnarray*}
+      
 
    
 Por exemplo, na atividade "Pluviometria no Sistema Cantareira", se `f` é a função que associa a cada ano-mês o índice de chuva real naquele período, `f(2014-3)=200` nos informa que o índice de chuva real observada na região do sistema Cantareira no mês de março do ano de 2014 foi de `200` milímetros.
@@ -50,7 +50,7 @@ Em uma função `f` de `A` em `B`, a dependência estabelecida entre as variáve
 
 A definição de uma função `f` de `A` em `B` exige que a cada elemento `x\in A` corresponda uma imagem `y=f(x)\in B` e que não haja ambiguidade na determinação dessa imagem, ou seja, que ela seja única. Asssim, nem toda relação de `A` em `B é uma função. Por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois a imagem pode não ser única, ou seja, há ambiguidade: algumas pessoas têm mais de um número de telefone. E além disso, nem todas as pessoas têm telefone.
 
-.. admonition:: Para refletir
+.. admonition:: Para reflexão
 
     Junto com seus colegas, reflita sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando os conjuntos domínio e contradomínio dessas funções.
 
@@ -85,7 +85,7 @@ Atividade: Colorindo o mapa
 A imagem a seguir, que foi retirada do aplicativo Google Maps®, exibe o trânsito na ponte Rio-Niterói e seus acessos em um determinado dia e hora. Várias informações podem ser observadas a partir dos elementos apresentados. Por exemplo, as cores nas vias informam a velocidade média dos veículos que trafegam por elas, conforme a legenda na parte inferior; a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito. Gráficos como esse são produzidos a partir das relações entre diversas informações coletadas.
        
 .. figure:: _resources/rio_niteroi_maps.png
-     :width: 800px
+     :width: 440pt
      :align: center
    
 A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar a ponte, ao longo de um dia.
@@ -119,7 +119,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 a) Tomando como referência a ilustração anterior e utilizando a escala de cores a seguir, complete a terceira coluna da tabela com a cor que a ponte deveria estar colorida em cada período do dia destacado. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas. 
 
 		.. figure:: _resources/escala_cores.jpg
-			:width: 225pt
+			:width: 150pt
 			:align: center
 
    **[Para equipe de design: por questões de acessibilidade colocar o nome das cores dentro de cada retângulo]**
@@ -194,7 +194,7 @@ No contexto da atividade anterior são observados diferentes conjuntos de dados:
 
 Toda relação de um conjunto `A` em um conjunto `B` pode ser identificada por um conjunto de pares ordenados. Nesse caso, cada associação entre elementos do conjunto `A` e elementos do conjunto `B` fica representada por um par ordenado tal que o elemnto do conjunto `A` ocupa a primeira posição do par e o correspondente elemento do conjunto `B` a segunda posição.  
 
-**DAR OUTRO EXEMPLO USANDO UM CONTEXTO DE ALGUMA ATIVIDADE ANTERIOR**
+.. **DAR OUTRO EXEMPLO USANDO UM CONTEXTO DE ALGUMA ATIVIDADE ANTERIOR**
 
 Por exemplo, se consideramos a relação dos números reais em si mesmo que, a cada número real, associa o seu quadrado, os pares ordenados `(1,1), (2,4), (\sqrt{3},3), (-\pi,\pi^2)` indicam elementos que estão relacinados. Já os pares ordenados `(9,5)` e `(4,2)`, `(\sqrt{2},-2)` formados por números reais, não indicam números associados pela mesma relação, uma vez que `5` não é quadrado de `9`, `2` não é quadrado de `4` e `-2` não é o quadrado de `\sqrt{2}`.
 
@@ -245,7 +245,7 @@ Atividade: A família
    
    Levar o estudante a:
 
-   **REVER E ADEQUAR**
+   .. **REVER E ADEQUAR**
    
    * Identificar uma relação a partir de sua representação no plano cartesiano. 
    * Identificar a univocidade (ou não) de uma relação a partir de sua representação no plano cartesiano.
@@ -261,7 +261,7 @@ Cada ponto do gráfico a seguir representa uma das seguintes pessoas.
 .. _fig-pessoas:
 
 .. figure:: _resources/pessoas_1.png
-   :width: 500px
+   :width: 200pt
    :align: center
    
    `People vector created by Iconicbestiary - Freepik.com <http://www.freepik.com/free-photos-vectors/people>`_
@@ -270,7 +270,7 @@ Cada ponto do gráfico a seguir representa uma das seguintes pessoas.
 .. _fig-altura-idade:
 
 .. figure:: _resources/altura_idade1_1.png
-   :width: 600px
+   :width: 480pt
    :align: center
 
 
@@ -460,7 +460,7 @@ O reservatório representado a seguir tem a forma de um cone cuja altura é `6 m
    V(h)=250h^3
 
 .. figure:: _resources/cone.png
-   :width: 340pt
+   :width: 200pt
    :align: center
 
 #. Determine `V(2), V(3)` e `V(4)` e explique os seus significados no contexto.

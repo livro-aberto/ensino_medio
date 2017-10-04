@@ -1,6 +1,6 @@
-**********************************************
-Vetores do ponto de vista algebrico (parte II)
-**********************************************
+*************************
+Operações com coordenadas
+*************************
 
 Na produção de uma animação gráfica (para jogos de vídeo-game ou desenhos animados) é necessário informar ao computador onde estará cada ponto na tela. 
 Então é definido um ponto da tela como a origem do sistema de coordenadas e as direções vertical e horizontal como eixos coordenados.
@@ -15,8 +15,7 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
 Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
 .. figure:: _resources/homotetia-poligonos.png
-   :width: 400px
-   :align: center
+   :width: 350pt
    
    Homotetias de razão 2 e `\frac{1}{3}`
 
@@ -414,7 +413,7 @@ Você deve ter observado que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(a,b)`,
    P'=P+\vec{v} = (x,y) + (a,b) = (x+a,y+b).
 
 .. figure:: _resources/tc.png
-   :width: 300px
+   :width: 200pt
    :align: center
 
    Trocar a notação na figura pela do texto
@@ -424,9 +423,8 @@ Em geral, se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a_1,b_
 
 
 .. figure:: _resources/vetor-soma.png
-   :width: 400px
-   :align: center
-
+   :width: 200pt
+   
    Vetor soma (trocar a notação na figura)
 
 
@@ -454,7 +452,7 @@ Dados os pontos `A = (1, 5)` e `A' = (5, 3)`, existe um vetor  `\vec{v}` que a t
    Observe o resultado disso na figura.
 
    .. figure:: _resources/coordenadas-vetor.png
-      :width: 300px
+      :width: 200pt
       :align: center
       
       Trocar B por A' na figura
@@ -515,7 +513,7 @@ Onde está o vértice D?
    Os vetores `AD` e `BC` são iguais.
    
    .. figure:: _resources/vetores-iguais.png
-      :width: 250px
+      :width: 200pt
       :align: center
    
    Logo, `D − A = C − B`, ou seja, 
