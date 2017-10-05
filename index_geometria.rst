@@ -9,7 +9,10 @@ Geometria
 
    GE101
    GE201-0
-   GE202-0
+   GE201-1
+   GE201-2
+   GE201-E
+   GE202-0   
    GE203-0
    GE301-0
    GE302-0

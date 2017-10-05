@@ -1,0 +1,138 @@
+*******
+Exercícios
+*******
+
+#. O ponto P divide o segmento `AB` na razão `\frac{PA}{PB}=\frac{3}{7}`.
+
+   #. Qual a razão `\frac{AP}{AB}`?
+   #. Se `M` é o ponto médio do segmento `AB` qual é a razão `\frac{MP}{MB}`?
+
+#. Na figura a seguir, `PQ` é paralelo a `BC`. Se `AP = \frac{15}{3}`, `PB = 4` e `QC = 6`, determine o comprimento de `AQ`.
+
+   .. tikz:: 
+
+    \draw [line width=0.8pt] (-2.632,2.054)-- (2.912,2.538);
+    \draw [line width=0.8pt] (2.912,2.538)-- (-2.038,4.738);
+    \draw [line width=0.8pt] (-2.038,4.738)-- (-2.632,2.054);
+    \draw [line width=0.8pt] (0.5048807378578668,2.327854667590766)-- (-2.2959056352295146,3.572648611185158);
+    \draw (-2.9598,2.0628) node[anchor=north west] {A};
+    \draw (-2.1854,5.1846) node[anchor=north west] {B};
+    \draw (2.945,2.4258) node[anchor=north west] {C};
+    \draw (-2.8,3.8536) node[anchor=north west] {P};
+    \draw (0.4766,2.1838) node[anchor=north west] {Q};
+    \draw [fill=black] (-2.632,2.054) circle (1.0pt);
+    \draw [fill=black] (2.912,2.538) circle (1.0pt);
+    \draw [fill=black] (-2.038,4.738) circle (1.0pt);
+    \draw [fill=black] (0.5048807378578668,2.327854667590766) circle (1.0pt);
+    \draw [fill=black] (-2.2959056352295146,3.572648611185158) circle (1.0pt);
+
+#. Na figura a seguir, `MN` é paralelo a `BC` e `NP` é paralelo a `AD`. Sabe-se que `\frac{MA}{MB}=\frac{3}{5}` e que `CD = 12cm`. Quanto mede o segmento `DP`?
+   
+   .. tikz::
+   
+    \draw [line width=0.8pt] (-2.4274,3.2728)-- (2.7756,-0.3572);
+    \draw [line width=0.8pt] (2.7756,-0.3572)-- (-2.7662,0.5382);
+    \draw [line width=0.8pt] (-2.7662,0.5382)-- (-2.4274,3.2728);
+    \draw [line width=0.8pt] (0.5165376766007355,1.2188899930692538)-- (-2.619098267313536,1.725521128112171);
+    \draw (-2.7,3.9) node[anchor=north west] {A};
+    \draw (-3.04934,0.5) node[anchor=north west] {B};
+    \draw (2.78044,-0.3) node[anchor=north west] {C};
+    \draw (1.87536,2.021417999999998) node[anchor=north west] {P};
+    \draw [line width=0.8pt] (2.7756,-0.3572)-- (0.283,4.4344);
+    \draw [line width=0.8pt] (-2.4274,3.2728)-- (0.283,4.4344);
+    \draw [line width=0.8pt] (0.5165376766007355,1.2188899930692538)-- (1.6933515380924455,1.7232387908514153);
+    \draw (-3.3,1.9) node[anchor=north west] {M};
+    \draw (0.27816,1.0364779999999998) node[anchor=north west] {N};
+    \draw (0.1983,4.949617999999992) node[anchor=north west] {D};
+    \draw [fill=black] (-2.4274,3.2728) circle (1.0pt);
+    \draw [fill=black] (2.7756,-0.3572) circle (1.0pt);
+    \draw [fill=black] (-2.7662,0.5382) circle (1.0pt);
+    \draw [fill=black] (0.5165376766007355,1.2188899930692538) circle (1.0pt);
+    \draw [fill=black] (-2.619098267313536,1.725521128112171) circle (1.0pt);
+    \draw [fill=black] (0.283,4.4344) circle (1.0pt);
+    \draw [fill=black] (1.6933515380924455,1.7232387908514153) circle (1.0pt);
+
+
+#. Na figura a seguir as retas `r` e `s` são paralelas e os segmentos `CE` e `EG` são paralelos. Sabe-se que `AE = 2`, `EB = 6` e que o segmento `ED` tem 7 unidades a mais que `CE`. 
+
+   #. Quanto mede o segmento `CD`?
+   #. Sabe-se que `FD = 16`. Trace o segmento `CF` e trace por `E` uma paralela a `CF` que encontra a reta `s` em `G`. Quanto mede `GD`?
+
+   .. tikz::
+   
+      \draw [line width=0.8pt] (-2.64,0.46)-- (4.8,1.94);
+      \draw [line width=0.8pt] (-2.54,3.04)-- (3.6596296600058285,4.273259663549546);
+      \draw [line width=0.8pt] (-1.6499582116298486,3.217051323492987)-- (4.130679271513971,1.806855554010844);
+      \draw [line width=0.8pt] (-0.5106335307872909,3.4436911793595173)-- (1.6378189906853886,1.3109639927707495);
+      \draw (-0.6721669353242998,4.102723170072155) node[anchor=north west] {A};
+      \draw (1.602133160970336,0.9879208642773318) node[anchor=north west] {B};
+      \draw (-1.9081995963539933,3.855516637866216) node[anchor=north west] {C};
+      \draw (4.1730810959120985,1.3834513158068331) node[anchor=north west] {D};
+      \draw (0.24249723383767327,3.286941613792558) node[anchor=north west] {E};
+      \draw (-1.3149039190597405,0.4687871466448614) node[anchor=north west] {F};
+      \draw (3.9505952169267533,4.547694928042843) node[anchor=north west] {r};
+      \draw (5.1124659182946655,2.1497915656452418) node[anchor=north west] {s};
+      \draw [fill=black] (-1.6499582116298486,3.217051323492987) circle (1.0pt);
+      \draw [fill=black] (4.130679271513971,1.806855554010844) circle (1.0pt);
+      \draw [fill=black] (-0.5106335307872909,3.4436911793595173) circle (1.0pt);
+      \draw [fill=black] (1.6378189906853886,1.3109639927707495) circle (1.0pt);
+      \draw [fill=black] (0.16328175964055147,2.774708529294657) circle (1.0pt);
+      \draw [fill=black] (-1.2743622966773251,0.7316591130265537) circle (1.0pt);
+      
+#. No triângulo `ABC` seja `AD` a bissetriz do ângulo `\hat{A}` como na figura a seguir. O teorema da bissetriz afirma que `\frac{DB}{DC}=\frac{AB}{AC}`.
+
+   Prove esse teorema usando a sugestão a seguir.
+   
+   * Trace por `B` e `C` paralelas à bissetriz.
+   * A reta `BA` encontra a paralela traçada por `C` em `E`.
+   * Mostre que o triângulo `ACE` é isósceles.
+   * Use o teorema de Tales para concluir o resultado.
+
+   .. tikz::
+   
+      \draw [shift={(1.24,2.22)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-145.5816355209438:0.5668898395840698) arc (-145.5816355209438:-98.58725411426902:0.5668898395840698) -- cycle;   \draw [shift={(1.24,2.22)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-98.58725411426903:0.5668898395840698) arc (-98.58725411426903:-51.59287270759427:0.5668898395840698) -- cycle;
+      \draw [line width=1.2pt] (1.24,2.22)-- (-2.,0.);
+      \draw [line width=1.2pt] (-2.,0.)-- (3.,0.);
+      \draw [line width=1.2pt] (3.,0.)-- (1.24,2.22);
+      \draw [line width=0.8pt] (1.24,2.22)-- (0.9047617009708229,0.);
+      \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (-1.4100628574084908,3.9066552370233936)-- (-2.130083863624808,-0.861435516417351);
+      \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (1.5063338058635691,3.983703761561156)-- (1.24,2.22);
+      \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.9047617009708229,0.)-- (0.77504260134413,-0.8590199926595905);
+      \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.6123080319008642,4.0547987349786965)-- (2.8770410481896134,-0.814253245555635);
+      \draw (0.7,2.8) node[anchor=north west] {A};
+      \draw (-2.6,-0.11250549465400854) node[anchor=north west] {B};
+      \draw (0.9449278317440784,-0.1691944786124154) node[anchor=north west] {D};
+      \draw (3.0991092221635435,-0.13140182264014416) node[anchor=north west] {C};
+      \draw (0.5,1.8) node[anchor=north west] {$\theta$};
+      \draw (1.2,1.7) node[anchor=north west] {$\theta$};
+      \draw [fill=black] (-2.,0.) circle (1.0pt);
+      \draw [fill=black] (3.,0.) circle (1.0pt);
+      \draw [fill=black] (1.24,2.22) circle (1.0pt);
+      \draw [fill=black] (0.9047617009708229,0.) circle (1.0pt);
+      
+#. Invente um triângulo `ABC` dando medidas para os seus três lados. A bissetriz do ângulo `\hat{A}` encontra o lado `BC` no ponto `D`. Calcule os comprimentos dos segmentos `BD` e `DC`.
+
+#. No triângulo `ABC`, `AB = 9`, `BC = 10` e `AC = 6`. A bissetriz do ângulo `\hat{A}` encontra o lado `BC` no ponto `D` e o ponto `J` é o incentro do triângulo. Calcule a razão `\frac{JA}{JD}`.
+
+#. (CEFE-MG - 2017) A figura a seguir é um esquema representativo de um eclipse lunar em que a Lua, a Terra e o Sol estão representados pelas circunferências de centros `C_1`, `C_2` e `C_3` respectivamente, que se encontram alinhados. Considera-se que a distância entre os centros da Terra e do Sol é 400 vezes a distância entre os centros da Terra e da Lua e que a distância do ponto `T`  na superfície da Terra ao ponto `S` na superfície do Sol, como representados na figura, é de 150 milhões de quilômetros.
+
+   .. tikz::
+           
+      \draw [line width=2.pt] (1.2467707033296944,-1.2335414066593893) circle (0.766);
+      \draw [line width=2.pt] (3.5901699437494745,-0.6803398874989484) circle (1.32);
+      \draw [line width=2.pt] (8.813624739188983,0.5527505216220345) circle (2.56);
+      \draw [line width=1.pt] (-2.,-2.)-- (8.81,0.55);
+      \draw [line width=1.pt] (8.8,0.56)-- (7.672,2.836);
+      \draw [line width=1.pt] (3.5901699437494745,-0.6803398874989484)-- (3.,0.5);
+      \draw [line width=1.pt] (1.2467707033296944,-1.2335414066593893)-- (0.904,-0.548);
+      \draw [line width=1.pt] (-2.,-2.)-- (7.672,2.836);
+      \draw (1.16,-1.14) node[anchor=north west] {$C_1$};
+      \draw (3.72,-0.6) node[anchor=north west] {$C_2$};
+      \draw (8.88,0.7) node[anchor=north west] {$C_3$};
+      \draw (0.54,0.18) node[anchor=north west] {$L$};
+      \draw (2.8,1.28) node[anchor=north west] {$T$};
+      \draw (7.42,3.56) node[anchor=north west] {$S$};
+       
+   Sabendo-se que os segmentos de reta `C_1L`, `C_2T` e `C_3S` são paralelos, quanto mede a distância do ponto `L`  representado na superfície da Lua, ao ponto `T`  na superfície da Terra?
+      
+      
