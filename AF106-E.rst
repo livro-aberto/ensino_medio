@@ -3,40 +3,7 @@
 Exercícios
 ---------
 
-`1.` Assim como os números triangulares (ver :ref:`ativ-funcoes-numeros-triangulares`), fala-se nos números quadrados perfeitos, pentagonais, hexagonais, inspirados, respectivamente, pelas sequências abaixo.
-
-
-.. _fig-figurados:
-
-.. figure:: _resources/figurados.png
-   :width: 600px
-   :align: center
-
-
-
-#. Para cada uma destas sequências, represente as próximas duas figuras;
-
-#. Escreva uma sequência de números que possa estar associada a cada sequência de figuras;
-
-#. Descreva um possível padrão de formação de cada uma dessas sequências de números. 
-
-
-`2.` Observe as duas sequências que se seguem:
-
-.. math::
-
-   1, 1, 2, 3, 5, 8, 13, \dots
-
-
-.. math::
-
-   1000, 100, 10, \dots
-
-#. Descreva, em palavras ou em linguagem simbólica, a regra que você percebe em cada uma das sequências apresentadas.
-
-#. Baseado na regra que você identificou no item anterior, descubra qual é o 20º termo de cada uma das sequências anteriores. 
-
-`3.` Cada prisma obtém-se empilhando cubos do mesmo tamanho, brancos e cinzas, segundo uma regra sugerida na figura.
+`1.` Cada prisma obtém-se empilhando cubos do mesmo tamanho, brancos e cinzas, segundo uma regra sugerida na figura.
 
 
 .. _fig-prismas:
@@ -64,6 +31,39 @@ Exercícios
 
    \square \ x-8 \quad \quad \square \ 2x-4 \quad \quad \square \ x-4 \quad \quad \square \ 4x
 
+`2.` Observe as duas sequências que se seguem:
+
+.. math::
+
+   1, 1, 2, 3, 5, 8, 13, \dots
+
+
+.. math::
+
+   1000, 100, 10, \dots
+
+#. Descreva, em palavras ou em linguagem simbólica, a regra que você percebe em cada uma das sequências apresentadas.
+
+#. Baseado na regra que você identificou no item anterior, descubra qual é o 20º termo de cada uma das sequências anteriores. 
+
+`3.` Assim como os números triangulares (ver :ref:`ativ-funcoes-numeros-triangulares`), fala-se nos números quadrados perfeitos, pentagonais, hexagonais, inspirados, respectivamente, pelas sequências abaixo.
+
+
+.. _fig-figurados:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=figurados.png
+   :width: 600px
+   :align: center
+
+
+
+#. Para cada uma destas sequências, represente a próxima figura;
+
+#. Escreva uma sequência de números que possa estar associada a cada sequência de figuras;
+
+#. Descreva um possível padrão de formação de cada uma dessas sequências de números. 
+
+
 `4.` Ao final de um treino para a prova de 100 metros rasos, uma corredora recebe de seu treinador a seguinte tabela com as marcas intermediárias da sua melhor corrida.
 
 .. table::
@@ -90,7 +90,7 @@ Supondo que a velocidade da atleta é constante ao longo dos 100 metros responda
 #. Pensando em uma estratégia para melhorar a preformance da atleta, seu treinador resolve detalhar a tabela com os tempos correspondentes a cada 10 metros. Construa essa tabela.
 
 
-`5.` Em Janeiro, o Vitor, depois de ter vindo do barbeiro, decidiu estudar o comprimento do seu cabelo, registando todos os meses a sua medida. O gráfico seguinte representa o crescimento do cabelo do Vitor, desde o mês de Janeiro (mês 0), até ao mês de Junho (mês 5).
+`5.` Em Janeiro, o Vitor, depois de ter vindo do barbeiro, decidiu estudar o comprimento do seu cabelo, registrando todos os meses a sua medida. O gráfico seguinte representa o crescimento do cabelo do Vitor, desde o mês de Janeiro (mês 0), até ao mês de Junho (mês 5).
 
 
 .. _fig-cabelo:
@@ -151,3 +151,89 @@ Apresentam-se, em seguida, quatro afirmações. De acordo com o gráfico apenas 
 #. Quantos números entre `1` e `10000` nos levam ao resultado `3`?
 #. É possível obter qualquer número natural como resultado desse processo?
 
+
+.. admonition:: Resposta 
+
+   `1.` 
+	   #. O prisma seguinte é obtido a partir do anterior pela adição de `4` cubos cinzas à pilha de cubos cinzas já existente.
+	   #. São necessários `16` cubos cinzas.
+	   #. O número de cubos cinzas em qualquer um dos prismas da sequência será sempre um múltiplo de `4` e, portanto, um número par.
+	   #. O prisma `200` terá `200 \cdot 4 = 800` cubos cinzas.
+	   #. O prisma `n` terá `n \cdot 4` cubos cinzas.
+	   #. A expressão `4n`, que fornece o número de cubos cinzas no Prisma `n`, é um número par qualquer que seja o valor de `n` considerado.
+	   #. Cada Prisma da sequência possui `8` cubos brancos, sendo assim, se `x` representa o total de cubos (brancos e cinzas), então o número de cubos cinzas será dado por `x-8`.
+   
+   
+   `2.`
+	   #. Na primeira sequênica observa-se que o número seguinte é obtido pela soma dos dois números anteriores a ele. A sequência obtida dessa forma é conhecida como *Sequência de Fibonacci*. Na segunda sequência nota-se que o número seguinte é obtido dividindo-se o anterior por `10`.
+	   #. Na primeira o vigésimo termo é `6765` e na segunda `10^{-16}`.
+
+   `3.`
+	   #.
+
+	      .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=figurados_sol.png
+	         :width: 300px
+	         :align: center
+
+	   #. Para a primeira sequência (números quadrados perfeitos): `1, 4, 9, 16, 25, ...`, para a segunda sequência (números pentagonais): `1, 5, 12, 22, 35, ...` e para a terceira sequência (números hexagonais): `1, 6, 15, 28, 45, ...`
+	   #. Uma resposta possível: o `n`-ésimo número quadrado perfeito é da forma `n^2`.
+   
+   Denotando por `P_n` o enésimo número pentagonal, temos `P_{n+1}=P_n+(3(n-1)+4)` ou ainda `P_n=\dfrac{3n^2-n}{2}`.
+   
+   Denotando por `H_n` o enésimo número pentagonal, temos `H_{n+1}=H_n+(4(n-1)+5)` ou ainda `H_n=2n^2-n`.
+   
+
+   `4.`
+	   #. Ela gastou `2s`.
+   
+
+	      .. table::
+	         :widths: 3 3
+	         :column-alignment: center center
+
+
+	         +-----------+----------------+
+	         | Tempo (s) | Distância (m)  |
+	         +===========+================+
+	         |   2       |         10     |
+	         +-----------+----------------+
+	         |   4       |         20     |
+	         +-----------+----------------+
+	         |   6       |         30     |
+	         +-----------+----------------+
+	         |   8       |         40     |
+	         +-----------+----------------+
+	         |   10      |         50     |
+	         +-----------+----------------+
+	         |   12      |         60     |
+	         +-----------+----------------+
+	         |   14      |         70     |
+	         +-----------+----------------+
+	         |   16      |         80     |
+	         +-----------+----------------+
+	         |   18      |         90     |
+	         +-----------+----------------+
+	         |   20      |         100    |
+	         +-----------+----------------+
+
+   `5.`
+	   #. No mês de janeiro o comprimento do cabelo de Vitor era de `3` \ cm` e no mês de junho `10 \ cm`.
+	   #. `1,4 \ cm`.
+	   #. `C(M)=3+1,4M`.
+	   #. A partir da expressão obtida no item anterior resolvemos `19,8=3+1,4M` obtendo `M=12` meses.
+
+   `6.`
+	   As duas primeiras afirmações são falsas, pois Ana percorreu `\dfrac{4}{5}` (mais da metade) da distância correndo e o `\dfrac{1}{5}` restante andando. A terceira afirmação é falsa, uma vez que Ana correu durante `\dfrac{1}{4}` do tempo apenas. De acordo com o gráfico a quarta afirmação é verdadeira.
+
+   `7.`
+	   #. `g(\sqrt{10}) \ < g(\sqrt{5}) \ < g(\sqrt{2})`.
+	   #. `x=1` e `x=-1`.
+	   #. Não. Pois `g(x)=9-x^2 \leq 9` qualquer que seja o `x \in \mathbb{R}`.
+	   #. `b` deverá ser um número real menor ou igual a `9`.
+
+   `8.`
+	   #. `1+3+7+1+7=19`.
+	   #. Uma resposta possível é `499`.
+	   #. Veja que os números `3, 30, 300, 3000, 12, 120, 1200, 102, 1020, 1002, 111, 1101, 1011, 1110,` `21, 210, 201, 2001, 2100` e `2010` são tais que a soma de seus algarismos é igual a `3` e são todos os números entre `1` e `10000` com essa propriedade. Portanto há `20` números com a propriedade requerida.
+	   #. Sim. Dado um número natural `n` basta considerar o número com `n` dígitos sendo cada dígito igual a `1`.
+ 
