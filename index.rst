@@ -18,8 +18,9 @@ Ensino Médio
    AF106
    AF106-0
    AF106-1
-   AF106-2
    AF106-E
+   AF106-2
+   
    AF107-0
    AF209-0
    
