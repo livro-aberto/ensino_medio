@@ -11,9 +11,9 @@ Ensino Médio
    GE201-ROTEIRO
    PE103-ROTEIRO
    
-   index_algebra_e_funcoes
-   index_geometria
-   index_prob_e_estatistica
+   .. index_algebra_e_funcoes
+   .. index_geometria
+   .. index_prob_e_estatistica
    
    AF106
    AF106-0
@@ -32,11 +32,12 @@ Ensino Médio
    GE101-B
    GE101-E
    
+   GE201
    GE201-0
    GE201-1
    GE201-2
    GE201-E
    
-   
+   PE103
    PE103-0
 
