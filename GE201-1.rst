@@ -1,11 +1,8 @@
-*******
-Teorema de Tales 2
-*******
-
 .. _sec-organizando2:
 
-Organizando as ideias: O que é um teorema?
-===========================================
+******************************************
+Organizando as ideias: o que é um teorema?
+******************************************
 
 Na atividade anterior você fez uma demonstração. Observe que nela havia uma situação (as retas paralelas cortadas por transversais), um fato que era dado `(AB = BC)` e um fato a ser concluído, ou demonstrado `(DE = EF)`.
 Essa estrutura é o que chamamos de **TEOREMA**.
@@ -193,4 +190,121 @@ Responda considerando a figura acima
 
    #. As retas paralelas são cortadas por transversais.
    #. `\dfrac{a}{a´}=\dfrac{b}{b´}=\dfrac{c}{c´}`
+   
+ 
+.. _ativ-demonstrando-tales:
+
+Atividade: demonstrando o teorema de Tales
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender o enunciado do teorema de Tales identificando   a hipótese e a tese
+   
+   **Observações e recomendações**
+   
+   * Talvez seja necessário explicar o que é uma proporcionalidade e o que significa dizer que certos segmentos são proporcionais a outros.
+   * Exemplos devem ser dados. Se o professor disser que, do lado esquerdo da figura, um segmento é o dobro do outro, os alunos deverão concluir que, do lado direito os segmentos correspondentes serão um o dobro do outro.
+   * O aluno fará a demonstração do teorema de Tales no caso em que os dois segmentos da primeira transversal são comensuráveis. Essa é exatamente a situação que interessa agora, pois nas aplicações no mundo real as medidas são números racionais.
+   
+A figura abaixo mostra três retas paralelas cortadas por duas transversais. Na reta da esquerda, os segmentos `AB = a` e `BC = b`, são comensuráveis e, na reta da direita, os segmentos correspondentes são `A´B´ = a´` e `B´C´ = b´`. 
+Nossa finalidade é demonstrar que 
+
+.. math::
+   \frac{a}{a´}=\frac{b}{b´}
+   
+Como `a` e `b`, são comensuráveis a figura mostra uma unidade `u` comum a esses segmentos.
+
+Por cada extremidade da unidade `u` assinalada na reta da esquerda traçamos retas paralelas às retas dadas determinando segmentos correspondentes na reta da direita.
+
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-3.56,0.)-- (5.52,0.);
+   \draw [line width=0.8pt] (-3.44,3.8)-- (5.34,3.8);
+   \draw [line width=0.8pt] (-3.36,6.38)-- (5.3,6.38);
+   \draw [line width=0.8pt] (-1.98,6.94)-- (-3.06,-0.72);
+   \draw [line width=0.8pt] (-0.78,6.94)-- (5.36,-0.74);
+   \draw [line width=2.4pt,color=red] (-2.058955613577024,6.38)-- (-2.120786270710496,5.941460339220002);
+   \draw [line width=2.4pt,color=red] (-2.120786270710496,5.941460339220002)-- (-2.1826169278439687,5.502920678440002);
+   \draw [line width=0.8pt] (-2.1826169278439687,5.502920678440002)-- (-2.2444475849774412,5.064381017660003);
+   \draw [line width=2.4pt,color=red] (-2.422715404699739,3.8)-- (-2.484546061833212,3.361460339220001);
+   \draw [line width=2.4pt,color=green] (-0.33229166666666593,6.38)-- (0.018311655884010396,5.941460339220002);
+   \draw [line width=2.4pt,color=green] (0.018311655884010396,5.941460339220002)-- (0.3689149784346872,5.502920678440002);
+   \draw [line width=2.4pt,color=green] (1.7303645833333339,3.8)-- (2.0809679058840103,3.361460339220001);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.120786270710496,5.941460339220002)-- (0.018311655884010396,5.941460339220002);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.1826169278439687,5.502920678440002)-- (0.3689149784346872,5.502920678440002);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.2444475849774412,5.064381017660003)-- (0.7195183009853631,5.064381017660003);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.360884747566267,4.238539660779997)-- (1.3797612607826595,4.238539660779998);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.484546061833212,3.361460339220001)-- (2.0809679058840103,3.361460339220001);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.5463767189666844,2.9229206784400033)-- (2.431571228434686,2.922920678440003);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.608207376100157,2.4843810176600054)-- (2.7821745509853613,2.4843810176600054);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.83482432541974,0.8770793215599975)-- (4.067178771565316,0.8770793215599976);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt,color=blue] (-2.896654982553212,0.43853966077999873)-- (4.417782094115991,0.43853966077999873);
+   \draw (-2.5,6.9) node[anchor=north west] {$A$};
+   \draw (-2.9,4.3) node[anchor=north west] {$B$};
+   \draw (-3.6,0.6) node[anchor=north west] {$C$};
+   \draw (-0.2,6.9) node[anchor=north west] {$A'$};
+   \draw (1.8,4.3) node[anchor=north west] {$B'$};
+   \draw (4.8,0.6) node[anchor=north west] {$C'$};
+   \draw (-2.6,6.4) node[anchor=north west] {$  u$};
+   \draw (-3,3.8) node[anchor=north west] {$ u$};
+   \draw (-.1,6.4) node[anchor=north west] {$ v $};
+   \draw (1.9,3.8) node[anchor=north west] {$ v $};
+   \draw (-3.1111119322537544,5.579654794304461) node[anchor=north west] {$ a $};
+   \draw (-3.5150523810387724,2.4603368842423774) node[anchor=north west] {$ b $};
+   \draw (1.4668798206431133,5.736742746609745) node[anchor=north west] {$ a' $};
+   \draw (3.7558756970915472,2.617424836547662) node[anchor=north west] {$  b'$};
+   \draw [fill=black] (-2.058955613577024,6.38) circle (2.0pt);
+   \draw [fill=black] (-0.33229166666666593,6.38) circle (2.0pt);
+   \draw [fill=black] (-2.422715404699739,3.8) circle (2.0pt);
+   \draw [fill=black] (1.7303645833333339,3.8) circle (2.0pt);
+   \draw [fill=black] (-2.958485639686684,0.) circle (2.0pt);
+   \draw [fill=black] (4.768385416666668,0.) circle (2.0pt);
+   \draw [fill=black] (-2.120786270710496,5.941460339220002) circle (2.0pt);
+   \draw [fill=black] (-2.1826169278439687,5.502920678440002) circle (2.0pt);
+   \draw [fill=black] (-2.2444475849774412,5.064381017660003) circle (2.0pt);
+   \draw [fill=black] (-2.360884747566267,4.238539660779997) circle (2.0pt);
+   \draw [fill=black] (-2.484546061833212,3.361460339220001) circle (2.0pt);
+   \draw [fill=black] (-2.896654982553212,0.43853966077999873) circle (2.0pt);
+   \draw [fill=black] (-2.5463767189666844,2.9229206784400033) circle (2.0pt);
+   \draw [fill=black] (-2.608207376100157,2.4843810176600054) circle (2.0pt);
+   \draw [fill=black] (-2.83482432541974,0.8770793215599975) circle (2.0pt);
+   \draw [fill=black] (0.018311655884010396,5.941460339220002) circle (2.0pt);
+   \draw [fill=black] (0.3689149784346872,5.502920678440002) circle (2.0pt);
+   \draw [fill=black] (0.7195183009853631,5.064381017660003) circle (2.0pt);
+   \draw [fill=black] (1.3797612607826595,4.238539660779998) circle (2.0pt);
+   \draw [fill=black] (2.0809679058840103,3.361460339220001) circle (2.0pt);
+   \draw [fill=black] (2.431571228434686,2.922920678440003) circle (2.0pt);
+   \draw [fill=black] (2.7821745509853613,2.4843810176600054) circle (2.0pt);
+   \draw [fill=black] (4.067178771565316,0.8770793215599976) circle (2.0pt);
+   \draw [fill=black] (4.417782094115991,0.43853966077999873) circle (2.0pt);
+   
+Digamos que a unidade `u` cabe `m` vezes em `a`. Então `a = mu`.
+
+Digamos que a unidade `u` cabe `n` vezes em `b`. Então `b = nu`.
+
+Sabemos que, em retas paralelas cortadas por transversais, segmentos iguais de um cado correspondem a segmentos iguais do outro. A cada segmento `u` do lado esquerdo existe um correspondente `v` do lado direito.
+
+Complete a demonstração
+
+#. Quantas vezes o segmento `v` cabe em `a´`?
+#. Quantas vezes o segmento `v` cabe em `b´`?
+#. Escreva as medidas de `a´` e `b´` na unidade `v`, reuna essas medidas com as anteriores e conclua o resultado do teorema
+
+
+.. admonition:: Resposta 
+
+   #. `m`
+   #. `n`
+   #. `a´= mv` e `b´=nv`
+      Dividindo, obtemos `\dfrac{a}{a´}=\dfrac{mu}{nu}=\dfrac{m}{n}` e que `\dfrac{b}{b´}=\dfrac{mv}{nv}=\dfrac{m}{n}`, logo `\dfrac{a}{a´}=\dfrac{b}{b´}`
+      
+
+
 
