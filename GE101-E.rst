@@ -89,7 +89,7 @@ As questões que você resolverá neste exercício fazem parte do "Teste de Ente
     
    `\text{(C)}` O módulo do vetor soma é maior do que o módulo do vetor `\vec{A}`, porque a adição de dois vetores sempre dá um vetor resultante com um módulo maior do que os módulos dos vetores que foram somados.
     
-   `\text{(D)}` O módulo do vetor soma é iguao ao módulo do vetor `\vec{A}`, o que pode ser demonstrado por uma aplicação direta do Teorema de Pitágoras.
+   `\text{(D)}` O módulo do vetor soma é igual ao módulo do vetor `\vec{A}`, o que pode ser demonstrado por uma aplicação direta do Teorema de Pitágoras.
    
    `\text{(E)}` O módulo do vetor soma é maior do que o módulo do vetor `\vec{A}`, porque a distância entre as extremidades finais das flechas é maior do que o módulo do vetor `\vec{A}`.
 
@@ -291,7 +291,7 @@ Outros animais também "usam" vetores em suas vidas. Abelhas, por exemplo, fazem
 Vetores para além do plano
 ------------------------------------------
 
-Enquanto que nosso estudo se concentrou nos vetores do plano (`{\mathbb R}^{2}`), o conceito de vetor pode ser estendido para o espaço (`{\mathbb R}^{3}`), para o :index:`hiperespaço` (`{\mathbb R}^{n}`) e muito mais além. A :numref:`fig-vetor-no-espaco`, por exemplo, ilustra o vetor cujas extremidades são dois vértices de um cubo.
+Enquanto que nosso estudo se concentrou nos vetores do plano (`{\mathbb R}^{2}`), o conceito de vetor pode ser estendido para o espaço (`{\mathbb R}^{3}`), para o :index:`hiperespaço` (`{\mathbb R}^{n}`) e além. A :numref:`fig-vetor-no-espaco`, por exemplo, ilustra o vetor cujas extremidades são dois vértices de um cubo.
 
 
 .. _fig-vetor-no-espaco:
@@ -302,9 +302,46 @@ Enquanto que nosso estudo se concentrou nos vetores do plano (`{\mathbb R}^{2}`)
 
    Um vetor no espaço `{\mathbb R}^{3}`.
 
-Como seus irmãos do plano, um vetor no espaço também representa direção, sentido e módulo.
+Como no caso do plano, um vetor no espaço também representa direção, sentido e módulo e ele pode ser descrito algebricamente por suas coordenadas, como ilustra a :numref:`fig-coordenadas-3d` para o caso do vetor `\vec{u} = (1, 2, 3)`.
+
+.. _fig-coordenadas-3d:
+
+.. figure:: _resources/geometria-coordenadas-3d-01.*
+   :width: 350pt
+   :align: center
+
+   O vetor `\vec{u} = (1, 2, 3)` no espaço `{\mathbb R}^{3}`.
+
+Enquanto que não conseguimos enxergar flechas em `{\mathbb R}^{4}`, `{\mathbb R}^{5}`, …, podemos trabalhar com vetores nestes espaços por meio de suas coordenadas. Assim, por exemplo, `\vec{u} = (1, 0, -5, 7)` e `\vec{v} = (2, 3, 5, 9)` são dois vetores de `{\mathbb R}^{4}`. Não podemos visualizá-los, mas podemos somá-los e multiplicá-los por um número real. Vetores em `{\mathbb R}^{n}`, mesmo sem uma contrapartida visual, são extremamente úteis. Existe uma área da Matemática dedicada ao assunto, :index:`Álgebra Linear`, com aplicações em Biologia, Economia, Computação Gráfica, Engenharia, Física, Matemática, Química, entre outras. Aqui está um exemplo em Ecologia. Segundo [Valentim-2005]_, faz parte do trabalho do ecólogo procurar agrupar amostras de mesmas características ou associar espécies em comunidades com o objetivo de descrever, de maneira clara e sintética, a estrutura de um ecossistema. Neste contexto, uma prática é coletar medidas das espécies, como ilustra a :numref:`fig-ecologia` para o caso de um peixe.
 
 
+.. _fig-ecologia:
+
+.. figure:: _resources/geometria-ecologia-01.jpg
+   :width: 270pt
+   :align: center
+
+   Medidas morfométricas de um peixe (fonte: [Pinheiro-et-al-2016]_).
+
+Para estudos de semelhança, agrupamento e ordenação, essas medições são registradas em um vetor em `{\mathbb R}^{12}`,
+
+.. math::
+
+    \text{(AB, AC, APCd, AM, CCa, CNPt, CPCd, CP, LB, LNPt, LC, LPCd)},
+    
+para posterior processamento usando técnicas da Álgebra Linear. 
+
+Um outro exemplo em Ecologia, este em `{\mathbb R}^{3}` que você pode visualizar e brincar se refere à simulação do voo de um bando de pássaros. Para isto, acesse o site <http://black-square.github.io/BirdFlock/> e, na simulação, clique em "Settings" (Configurações) e, depois, em "Algorithm Explanation Vectors" (Vetores para Explicação do Algoritmo) para visualizar os diferentes tipos de vetores usados na simulação (na :numref:`fig-passaros`, as extremidades iniciais de todos os vetores estão nas posições dos pássaros). Dica: clique em um dos pássaros para acompanhá-lo e use a roda do mouse para se aproximar e pressione a tecla T para fazer com que a rotação da câmera acompanhe o movimento do pássaro. Você pode usar as teclas A, S, D, W, Q e E para navegar pelo cenário.
+
+.. _fig-passaros:
+
+.. figure:: _resources/geometria-passaros-01.jpg
+   :width: 300pt
+   :align: center
+
+   Simulação do voo de um bando de pássaros usando vetores (<http://black-square.github.io/BirdFlock/>).
+
+Basicamente, o que a simulação faz é coordenar o movimento de cada pássaro de modo a: (1) evitar um aglomerado local muito intenso (um pássaro não quer se colidir com outro); (2) seguir a direção e sentido do movimento dos pássaros em sua volta (um pássaro não quer ficar sozinho pois, assim, ele seria uma presa fácil para um predador em potencial); (3) mover para a posição média dos pássaros em sua volta (pelo mesmo motivo de (2)).
 
 **********
 Referências bibliográficas
@@ -317,8 +354,11 @@ Referências bibliográficas
 .. [Gomes-2010] Gomes, A. M. D.: `Formigas do Deserto e Integração por Caminhos <http://www.uff.br/sintoniamatematica/matematicaenatureza/matematicaenatureza-html/audio-formigas-br.html>`_. Conteúdo Digitais em Matemática e Estatística, Universidade Federal Fluminense, 2010.
 .. [Horn-1998] Horn, R. E.: *Visual Language: Global Communication for The 21st Century*. MacroVU, Inc., Bainbridge Island, Washington, USA, 1998.
 .. [Oliveira-2009] Oliveira, P. M. C.: Corrida de Vetores: Vacina Contra O Raciocínio Aristotélico. *Física na Escola*, v. 10, n. 1, p. 40, 2009.
+.. [Pinheiro-et-al-2016] Pinheiro, W. M.; Farias, A. C. S.: Composição Específica, Bioecologia e Ecomorfologia da Ictiofauna Marinha Oriunda da Pesca de Pequena Escala. *Boletim do Instituto de Pesca*, São Paulo, v. 42, n. 1, p. 181-194, mar. 2016. 
 .. [Poynter-et-al-2005] Poynter, A.; Tall, D. *Relating Theories To Practice in The teaching of Mathematics*.  European Research in Mathematics Education IV. Working Group 11: Different Theoretical Perspectives and Approaches in Research in Mathematics Education, p. 1264-1273, 2005.
 .. [Roche-1997] Roche, J.: Introducing Vectors. *Physics Education*, v. 32, p. 339-345, 1997.
+.. .. [Valentin-1995] Valentin, J. L.: Agrupamento e Ordenação. Em: Peres-Neto, P. R.; Valentin, J. L.; Fernandez, F. A. S. (Eds.). *Oecologia Brasiliensis. Volume II: Tópicos em Tratamento de Dados Biológicos*. Programa de Pós-Graduação em Ecologia, Instituto de Biologia, UFRJ, p.  27-55, 1995.
+.. [Valentin-2000] Valentin, J. L.: *Ecologia Numérica: Uma Introdução À Análise Multivariada de Dados Ecológicos*. Editora Interciência, 2000.
 .. [Wehner-et-al-1981] Wehner, R.; Srinivasan, M. V.: Searching Behaviour of Desert Ants, Genus Cataglyphis (Formicidae, Hymenoptera). *Journal of Comparative Physiology*, v. 142, p. 315–338, 1981. 
 .. [Wong-2011] Wong, B.: Arrows. *Nature Methods*, v. 8, n. 9, p. 701, 2011.
 
