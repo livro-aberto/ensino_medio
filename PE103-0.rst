@@ -59,7 +59,7 @@ Introdução
 
 .. _explorando-1:
 
-Explorando
+Explorando 1
 ---------------------------
 
 .. _ativ-1-escolha-do-melhor-fornecedor:
@@ -126,7 +126,11 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
 .. admonition:: Para o professor
 
-   No item (a)  a resposta esperada é “diâmetros dos parafusos”. No entanto os alunos podem achar que a frequência com que cada valor de diâmetro ocorre também é necessária. Esse tipo de gráfico, diagrama de pontos, reflete exatamente a tabela de frequências absolutas. No entanto, ele permite perceber por simples visualização como os  valores se distribuem, indicando implicitamente a noção de dispersão.
+   Distribuição é um termo específico à Estatística e Probabilidade; é uma coleção de propriedades de um conjunto de dados como um todo, não de um particular valor do conjunto. Uma distribuição consiste de todos os valores diferentes nos dados incluindo as frequências (ou probabilidades) associadas com cada valor. Variação e distribuição estão relacionadas a outras noções estatísticas fundamentais tais como "centro" ou "posição" (modeladas pela média, mediana, ou moda), dispersão (modeladas pelo desvio-padrão, ou variância, etc) e forma (por exemplo, bi-modal, uniforme, simétrica, assimétrica à direita, etc). Medidas de "centro" ou "posição" resumem a informação sobre uma distribuição, enquando medidas de dispersão resumem a variabilidade no conjunto de dados. Cada valor de uma variável mostra algum desvio do "centro". Tais medidas serão trabalhadas no capítulo que dá sequência ao Capítulo "A Natureza da Estatística" ("Medidas de Posição e Dispersão"), mas elas já ocorrem nas atividades propostas nesse capítulo, pois média, mediana e moda são trabalhadas no Ensino Fundamental. 
+   
+   Pretende-se, nessa atividade, trabalhar com todos esses conceitos importantes na estatística, distribuição, medidas de posição, medidas de dispersão, forma da distribuição, sem se preocupar com  formalizações.
+
+   No item (a)  a resposta esperada é “diâmetros dos parafusos”. No entanto os alunos podem achar que a frequência com que cada valor de diâmetro ocorre também é necessária. Esse tipo de gráfico, diagrama de pontos, reflete exatamente a tabela de frequências absolutas. No entanto, ele permite perceber por simples visualização a forma da distribuição e suas propriedades.  
    
    No item (b) deve-se perceber que não é necessário contar o número de pontos, pois todos estão fora da especificação.
    
@@ -191,14 +195,6 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
  (i) Não, dois seriam descartados.
    
 
-
-
-.. admonition:: Observações
-
-   *Texto com as observações*
-
-
-
 .. _ativ-2-comparacao-de-medicamentos:
 
 -----------------------------------
@@ -207,7 +203,7 @@ Atividade: Comparação de medicamentos
 
 .. admonition:: Objetivos específicos
 
-   Analisar distribuições empíricas de dados (diagrama de pontos) para  comparar médias populacionais, verificando que nem sempre é possível concluir que as médias populacionais são iguais quando as médias amostrais são diferentes. 
+   Analisar distribuições empíricas de dados usando o diagrama de pontos para  comparar médias populacionais, verificando que nem sempre é possível concluir que as médias populacionais são iguais quando as médias amostrais são diferentes. 
 
 .. admonition:: Para o professor
 
@@ -235,6 +231,9 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
 
 
 #. Organize as informações apresentadas no quadro acima em diagramas de pontos. 
+
+.. inserir malha quadriculada para a construção dos diagramas de pontos. 
+
 #. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
 #. Determine os tempos médios de cura da dor de cabeça para cada substância.
 #. A partir dos diagramas construídos, compare os diferentes tratamentos. 
@@ -280,23 +279,42 @@ ____
 
 .. admonition:: Resposta 
 
-   #. Diagramas de pontos
-   
-      .. _fig-resposta-diagrama-pontos:
+    
+  .. _fig-medicamentos:
 
-      .. figure:: <link da figura>
-         :width: 400px
-         :align: center
+  .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_dp.png
+     :width: 600px
+     :align: center
 
-         Diagramas de pontos dos dados da :ref:`Tabela de tempo dos medicamentos<tabela-medicamentos>`
+     Diagramas de pontos: tempos de cura (em minutos) para os medicamentos X, Y e Z
    
-   #. Olhando os diagramas de pontos, percebe-se que o medicamento Y foi o que apresentou maior dispersão dos tempos de cura.
-   #. De acordo com as somas informadas na tabela temos que as médias observadas de tempo de cura foram 10 minutos para o medicamento X, 12 minutos para o medicamento Y e 12 minutos para o medicamento Z.
-   #. Comparando os diagramas de pontos dos medicamentos X e Y percebemos que existe uma interseção razoável, quando olhamos as distribuições empíricas dos tempos de cura. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados não apresentam evidências contra hipótese de que os tempos médios de cura para os dois medicamentos são iguais, apesar das médias empíricas serem diferentes. Portanto aqui não rejeitaríamos a hipótese de que os tempos médios de cura são iguais.
+ #. Diagramas de pontos
+ #. Olhando os diagramas de pontos, percebe-se que o medicamento Y foi o que apresentou maior dispersão dos tempos de cura, observe que é a distribuição que apresentou a maior amplitude.
+ #. De acordo com as somas informadas na tabela temos que as médias observadas de tempo de cura foram 10 minutos para o medicamento X, 12 minutos para o medicamento Y e 12 minutos para o medicamento Z.
+ #. Comparando os diagramas de pontos dos medicamentos X e Y percebemos que existe uma interseção razoável, quando olhamos as distribuições empíricas dos tempos de cura. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados não apresentam evidências contra hipótese de que os tempos médios de cura para os dois medicamentos são iguais, apesar das médias empíricas serem diferentes. Portanto aqui **não rejeitaríamos** a hipótese de que os tempos médios de cura são iguais.  
+ 
+.. _comparandoXeY:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_xy.png
+   :width: 600px
+   :align: center
+
+   Diagramas de pontos dos tempos de cura: medicamento X versus medicamento Y
    
    Comparando os diagramas de pontos dos medicamentos X e Z percebemos que a grande interseção que existia entre os tempos de cura de X e Y não existe mais, agora ela é pequena. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados apresentam evidências contra a hipótese de que os tempos médios de cura para os dois medicamentos são iguais. Nesse caso, rejeitaríamos a hipótese de que os tempos médios de cura são iguais.
    
-   **Observação:** Deve ser enfatizado nessa análise que na Estatística, dependendo da situação, pode-se concluir que dois valores distintos empíricos (como a média) podem ser considerados “iguais” dependendo das dispersões dos grupos geradores desses dois valores. A atividade de discussão tem o intuito de trazer isso à tona, além da sensibilidade de certas medidas quando existe uma alta dispersão.
+.. _comparando-XeZ:
+
+.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_xz.png
+   :width: 600px
+   :align: center
+
+   Diagramas de pontos dos tempos de cura: medicamento X versus medicamento Z
+   
+   
+.. admonition:: Para o professor
+
+   Essa atividade propõe uma reflexão sobre possíveis equivalências, do ponto de vista estatístico, de medidas-resumo com a finalidade de tomada de decisão sob incerteza.
 
 
 .. _ativ-3-pesquisa-ibge-pnad:
@@ -333,34 +351,29 @@ Na PNAD 2015 foi realizada a investigação de um tema específico chamado “Su
 * Também foram levantadas informações sobre as pessoas que responderam que não praticavam atividade física. Perguntou-se o motivo de não o fazerem e se haviam praticado anteriormente, caso em que se perguntou a modalidade praticada, a idade em que parou de praticar e a causa da interrupção.
 * Além dessas informações, a pesquisa investigou também a avaliação da população sobre a opção do poder público investir no desenvolvimento de atividades físicas e esportivas ou em outra área (saúde, educação, etc.) na vizinhança de seu domicílio.
 
-  #. Liste o maior número possível de informações investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
-  #. Das informações citadas no item anterior, quais delas apresentam respostas não numéricas? 
-  #. Das informações citadas no item a), quais delas apresentam respostas numéricas?
-  
-
-.. admonition:: Para o professor
-
-   No item (a), espera-se que sejam indicadas pelo menos as seguintes informações:
-   
-   * variável qualitativa binária (Sim ou Não) sobre prática de esporte ou Atividade Física no último ano. 
-   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
-   * variável qualitativa binária (Sim ou Não) sobre a prática de Atividade Física não considerada como Esporte.
-   * variável qualitativa nominal (modalidade da prática para quem respondeu sim ao item anterior)
-   * variável qualitativa nominal (motivação para a prática de atividade física)
-   * variável qualitativa nominal (local da prática)
-   * variável qualitativa ordinal (frequência da prática, interpretando como diária, cinco vezes por semana, três vezes por semana, uma vez por semana, etc,)
-   * variável quantitativa (duração a atividade cada vez em que é praticada)
-   * variável qualitativa binária (Sim ou Não) sobre a participação em competições.
-
+#. Liste pelo menos oito **variáveis** investigadas na PNAD e no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD 2015, baseando-se no texto apresentado.
+#. Das variáveis citadas no item anterior, quais delas apresentam respostas não numéricas? 
+#. Das variáveis citadas no item a), quais delas apresentam respostas numéricas?
   
 
 .. admonition:: Definição 
 
-   Chamamos de **variável** estatística cada informação que é obtida numa pesquisa. Por exemplo, uma característica da população, uma medição, uma resposta ou opinião...
+   Chamamos de **variável** estatística cada informação que é obtida numa pesquisa. Observe que para cada unidade investigada o "valor" dessa informação pode ser diferente.
    
-No caso do problema da escolha do fornecedor, a informaçâo de interesse é o diâmetro do parafuso. Dizemos nesse caso que a variável observada foi o diâmetro dos parafusos.
+No caso do problema da escolha do fornecedor a unidade investigada é um parafuso de uma caixa e a variável observada é o diâmetro dos parafusos. Na comparação dos medicamentos a unidade investigada é um paciente de um grupo e a variável observada é o tempo de cura da dor de cabeça. Já na PNAD 2015 as unidades investigadas são as pessoas residentes em um domicílio para as quais observaram-se várias variáveis.
+   
 
-Na comparação dos medicamentos, a variável observada foi o tempo de cura da dor de cabeça. Já na PNAD 2015 observam-se várias variáveis, como: idade, tipo de atividade física, sexo, local de residência, entre outras.
+.. admonition:: Para o professor
+
+   No item (a), espera-se que sejam indicadas algumas entre as seguintes variáveis: idade, sexo, educação, trabalho, rendimento, se pratica ou não atividade física, modalidade da atividade para quem pratica, motivação para a prática de atividade física, local da prática, frequência da prática, duração da atividade, participação em competições, etc.
+   
+   No item (b) deve-se informar as variáveis que assumem atributos e não valores tais como por exemplo sexo, se pratica ou não atividade física, modalidade da atividade físiva praticada, etc.
+   
+   No item (c) deve-se informar as variáveis que assumem valores numéricos tais como idade, rendimento, duração da atividade física, etc.
+   
+   
+
+  
 
 A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos pelo IBGE (`vamoscontar.ibge.gov.br <https://vamoscontar.ibge.gov.br/atividades/ensino-medio/9801-pesquisando-a-pratica-de-esportes-e-atividades-fisicas-no-brasil.html>`_) usando os dados do Suplemento Prática de Esporte e Atividade Física da PNAD 2015.
 
@@ -456,15 +469,13 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _sub-organizando-as-ideias-1:
 
-Organizando as ideias
+Organizando as ideias 1
 -------------------------
 
-Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística que serão descritos a seguir:
+Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística descritos a seguir.
 
 População
    é um conjunto de elementos com pelo menos uma característica em comum.
-
-Por exemplo, na atividade 3 a população correspondeu aos brasileiros de 15 anos ou mais. 
 
 Em Estatística, população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria em um ano, o conjunto de animais de certa espécie que vivem em uma região, etc.
 
@@ -510,10 +521,11 @@ Veremos agora como resumir a informação dos dados em tabelas e gráficos tendo
 
 .. _sub-organizando-as-ideias-1:
 
-Praticando
+Praticando 1
 -------------------------
 
 Exercícios e situções práticas
+.. incluir atividades que demandem a classificação de variáveis e a discussão sobre a possibilidade de tornar uma variável quantitativa em qualitativa e vice-versa.
 
 Explorando 2
 -------------------------
@@ -542,22 +554,42 @@ Atividade: Produzindo informação a partir de dados disponíveis
 
 .. admonition:: Objetivos específicos
 
-   Objetivos: Conduzir uma coleta de dados disponíveis sobre tamanho da população, ...
-
-.. admonition:: Para o professor
-
-  
-.. admonition:: Resposta 
+   Objetivos: Produzir informação a partir de dados disponíveis.
 
  
-  
-  
+-----------------------------------
+Atividade: Construção do histograma
+-----------------------------------
+
+.. admonition:: Objetivos específicos
+
+   Objetivos: A partiri de um conjunto de dados contínuos observar a necessidade de agrupá-los em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências desse dado.
+   
+ 
+ 
+.. _ativ-titulo-da-atividade:
+
+Organizando as ideias 2
+------------------------------
+
+Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
+
+
+ 
+.. _ativ-titulo-da-atividade:
+
+Praticando 2
+------------------------------
+
+Exercícios e situações práticas que envolvam a construção de gráficos, a análise de gráficos e a apresentação de outros tipos de gráficos.
 
 
 
 
-
-ATIVIDADE: PESQUISA
+ 
+ 
+----------
+  ATIVIDADE: PESQUISA
 ---------
 .. admonition:: Para o professor
 
