@@ -87,7 +87,7 @@
 
    **Objetivo geral do capítulo**
 
-   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista geométrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
+   Levar o estudante a perceber, seja do ponto de vista geométrico, seja do ponto de vista algébrico, a adequação do conceito de vetor no estudo de grandezas vetoriais em Física.
 
    **Abordagem adotada no capítulo**
 
@@ -131,7 +131,7 @@
       \draw [->,line width=1.pt,color=qqqqff] (1.72,4.32) -- (3.92,4.9);
       \draw[color=qqqqff] (4.2,5.05) node {$E$};
 
-   Ainda nesta linha, observe que enquanto do ponto de vista da Matemática, a "regra do triângulo" e a "regra do paraleogramo" são equivalentes para se obter a soma de dois vetores, dependendo do contexto físico, uma regra pode ser mais natural do que a outra. Por exemplo, a "regra do triângulo" é mais natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é mais natural no contexto da soma de vetores que representam forças (com todos os vetores com suas extremidades iniciais coincidentes), mas ela é artificial no contexto de vetores deslocamentos.
+   Ainda nesta linha, observe que enquanto do ponto de vista da Matemática, a "regra do triângulo" e a "regra do paralelogramo" são equivalentes para se obter a soma de dois vetores, dependendo do contexto físico, uma regra pode ser mais natural do que a outra. Por exemplo, a "regra do triângulo" é mais natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é mais natural no contexto da soma de vetores que representam forças (com todos os vetores com suas extremidades iniciais coincidentes), mas ela é artificial no contexto de vetores deslocamentos.
 
     .. tikz::
 
@@ -163,7 +163,7 @@
        \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
        \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
 
-   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_). Incoporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso, pois elas influenciam a maneira de como os alunos aprendem e fazem uso do conceito de vetor (conforme [Roche-1997]_).
+   Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_). Incorporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso, pois elas influenciam a maneira de como os alunos aprendem e fazem uso do conceito de vetor (conforme [Roche-1997]_).
    Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
 
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
@@ -185,7 +185,7 @@
 
    A operação de multiplicação de um vetor por um número real é interpretada geometricamente no contexto de homotetias. Aqui, usando-se semelhança de triângulos e como uma consequência da definição geométrica dada para a multiplicação de um vetor por um número real, justifica-se que se `(a, b)` são as coordenadas de um vetor no plano e `c` é um número real, então `c \cdot (a, b) = (c \cdot a, c \cdot b)`, ou seja, que esta igualdade é uma consequência e não uma definição.
 
-   Na sequência, coordenadas de vetores são usadas para justificar algumas das propriedades das operações da adição de vetores e multiplicação por um número real (comutatividade, associatividade, distributividade) mostrando que estas propriedaes se reduzem às propriedades análogas para os números reais.
+   Na sequência, coordenadas de vetores são usadas para justificar algumas das propriedades das operações da adição de vetores e multiplicação por um número real (comutatividade, associatividade, distributividade) mostrando que estas propriedades se reduzem às propriedades análogas para os números reais.
 
    Por fim, desenvolve-se o uso de vetores no contexto de forças. As atividades propostas (que incluem decomposições de forças) têm como base a primeira lei de Newton interpretada da seguinte maneira: "a força resultante sobre um corpo é zero se, e somente se, sua velocidade é constante". Nesta parte, seguindo a orientação de [Roche-1997]_, em soma de forças, o vetor que representa a força resultante é sempre desenhado com uma cor diferente dos vetores que representam as forças parcelas pois, segundo o autor, é um erro comum os estudantes confundirem a força resultante como mais uma força parcela e não como uma força equivalente às forças dadas.
 
@@ -193,7 +193,7 @@
 
    #. Números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados).
    #. Existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
-   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tormar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
+   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tomar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
    #. Existe uma flexibilidade no rigor (um "abuso de linguagem") ao se referenciar números racionais como, por exemplo, dizer  "o número racional `2/4`" ao invés de dizer "o número racional cujo representante é a fração `2/4`"); esta flexibilidade também ocorre com vetores: dizer "o vetor `\overrightarrow{OP}`" ao invés de dizer "o vetor cujo representante é a flecha (segmento orientado) `\overrightarrow{OP}`".
 
 
@@ -262,7 +262,7 @@ O avião de reconhecimento atualizou as informações sobre o grupo `P` de explo
 
 #. É agora possível marcar no mapa a localização do grupo `P` de exploradores? Justifique sua resposta!
 #. Nessa nova situação, se você marcasse no mapa todos os pontos onde o grupo `P` de exploradores poderia estar, que figura geométrica seria desenhada?
-#. Caso a respostao ao Item a) seja afirmativa, com você descreveria a posição da base `A` com relação ao grupo `P` de pesquisadores?
+#. Caso a resposta ao Item a) seja afirmativa, com você descreveria a posição da base `A` com relação ao grupo `P` de pesquisadores?
 
 
 Parte IV.
@@ -467,7 +467,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
 
-    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armanezados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armazenados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
     Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
 
             .. _fig-motion-vector-01:
@@ -580,7 +580,7 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
          :width: 200pt
          :align: center
 
-   #. A figura a seguir exibe duas das infinitas trajetórias possiveis. Observe que, em princípio, o carro azul poderia dar várias voltar em torno de um quarteirão antes de se dirigir ao ponto `B`.
+   #. A figura a seguir exibe duas das infinitas trajetórias possíveis. Observe que, em princípio, o carro azul poderia dar várias voltar em torno de um quarteirão antes de se dirigir ao ponto `B`.
 
       .. figure:: _resources/geometria-cv-resposta-02_1.jpg
          :width: 300pt
@@ -822,7 +822,6 @@ Observe que as flechas das cartas têm um uso diferente das flechas dos vetores 
 
 Para as flechas das cartas, as propriedades relevantes são orientação e módulo. A definição mais geral e abstrata de vetor apresentada na próxima seção fará uso justamente dessas propriedades.
 
-.. XXX
 
 ************************************
 Organizando as ideias: vetores do ponto de vista geométrico
@@ -1095,7 +1094,7 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
   (\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w}).
 
-* Comutatividade da soma: observando novamente a :numref:`fig-geometria-operacoesvetores-10`, podemos notar que ao traçar a diagonal do paralelogramo `ABDC`, dividimos o paralelogramo em dois triângulos: `ABD` e `ACD`. Repare que se considerarmos `\overrightarrow{AB}` e `\overrightarrow{BD}` representantes dos vetores `\vec{u}` e `\vec{v}`, respecitvamente, então, pela regra do triângulo, `\overrightarrow{AD}` é um representante do vetor `\vec{u}+\vec{v}`. Agora, se `\overrightarrow{AC}` e `\overrightarrow{CD}` são representantes dos vetores `\vec{v}` e `\vec{u}`, respectivamente, então, `\overrightarrow{AD}` é um representante do vetor `\vec{v}+\vec{u}`. Portanto, `\overrightarrow{AD}` é um representante tanto de `\vec{u}+\vec{v}` quanto de `\vec{v}+\vec{u}`. Assim, podemos concluir que
+* Comutatividade da soma: observando novamente a :numref:`fig-geometria-operacoesvetores-10`, podemos notar que ao traçar a diagonal do paralelogramo `ABDC`, dividimos o paralelogramo em dois triângulos: `ABD` e `ACD`. Repare que se considerarmos `\overrightarrow{AB}` e `\overrightarrow{BD}` representantes dos vetores `\vec{u}` e `\vec{v}`, respectivamente, então, pela regra do triângulo, `\overrightarrow{AD}` é um representante do vetor `\vec{u}+\vec{v}`. Agora, se `\overrightarrow{AC}` e `\overrightarrow{CD}` são representantes dos vetores `\vec{v}` e `\vec{u}`, respectivamente, então, `\overrightarrow{AD}` é um representante do vetor `\vec{v}+\vec{u}`. Portanto, `\overrightarrow{AD}` é um representante tanto de `\vec{u}+\vec{v}` quanto de `\vec{v}+\vec{u}`. Assim, podemos concluir que
 
 .. math::
 
@@ -1104,7 +1103,7 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
 .. admonition:: Para reflexão
 
-   Você consegue perceber que `|\vec{u}+\vec{v}|` nem sempre é igual a `|\vec{u}|+|\vec{v}|`? E, quais caractéristicas devem `\vec{u}` e `\vec{v}` ter para que a igualdade seja satisfeita?
+   Você consegue perceber que `|\vec{u}+\vec{v}|` nem sempre é igual a `|\vec{u}|+|\vec{v}|`? E, quais características devem `\vec{u}` e `\vec{v}` ter para que a igualdade seja satisfeita?
 
 
 .. admonition:: Para o professor
@@ -1231,12 +1230,12 @@ Atividade: toda flecha é vetor?
    **Objetivos específicos**
 
    * Identificar, nas situações apresentadas no enunciado do exercício, se as flechas representam ou não um vetor.
-   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de corer para representar o módulo) e que estes meios são usados em outras áreas.
+   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de cores para representar o módulo) e que estes meios são usados em outras áreas.
    * Perceber os diversos usos de flechas como recurso gráfico.
 
    **Recomendações e sugestões**
 
-   * A placa de trânsito pode levantar a questão sobre a espessura da flecha: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentandos e em qualquer um que venha a ser feito, as flechas têm alguma espessura e, neste ponto, é importante esclarecer que estas flechas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
+   * A placa de trânsito pode levantar a questão sobre a espessura da flecha: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentados e em qualquer um que venha a ser feito, as flechas têm alguma espessura e, neste ponto, é importante esclarecer que estas flechas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
    * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de flechas como recurso gráfico em diferentes áreas do conhecimento.
 
 Vimos que vetores são representados geometricamente por flechas. Mas será que toda flecha em um desenho representa um vetor? Analise as imagens a seguir e decida se as flechas desenhadas representam um vetor, isto é, se as flechas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
