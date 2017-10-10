@@ -7,6 +7,7 @@ Ensino Médio
    :glob: 
    
    AF106-ROTEIRO
+   AF107-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
    PE103-ROTEIRO
@@ -29,7 +30,12 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   AF107
    AF107-0
+   AF107-1
+   AF107-2
+   AF107-A
+   AF107-E
 
 .. toctree::
    :maxdepth: 1
