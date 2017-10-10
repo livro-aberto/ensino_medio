@@ -72,4 +72,8 @@ Ensino Médio
 
    PE103
    PE103-0
+   PE103-1
+   PE103-2
+   PE103-A
+   PE103-E
 
