@@ -79,16 +79,20 @@ ROTEIRO: FUNÇÃO AFIM
       
       #. Escalas em mapas e plantas de arquitetura
       #. Estimativa de público em grandes aglomerações
-      #. Atividade envolvendo a relação entre área do setor circular e o ângulo (Geogebra e versão estática)
 
-      .. figure:: _resources/setor.png
-         :width: 400pt
-         :align: center
       
    .. admonition:: Dificuldades típicas dos alunos (distratores)
       
-      A repetida confirmação da validade da proporcionalidade - juntamente com o status intuitivo que o conceito recebe gradualmente - pode conduzir a uma ideia errada: se houver uma relação entre duas variáveis, essa relação provavelmente é proporcional. Por exemplo, existe uma tendência generalizada entre os estudantes americanos com idade de `12` a `16` anos de que, se uma figura aumentar de `k` vezes, a área e o volume dessa figura serão ampliados também de `k` vezes, [Dooren-et-al-2005]_ 
-
+      #. A repetida confirmação da validade da proporcionalidade - juntamente com o status intuitivo que o conceito recebe gradualmente - pode conduzir a uma ideia errada: se houver uma relação entre duas variáveis, essa relação provavelmente é proporcional. Por exemplo, existe uma tendência generalizada entre os estudantes americanos com idade de `12` a `16` anos de que, se uma figura aumentar de `k` vezes, a área e o volume dessa figura serão ampliados também de `k` vezes. [Dooren-et-al-2005]_
+      
+      #. Pesquisadores tem documentado dificuldades dos estudantes com o conceito de inclinação (slope).  Há confusão ao se associar o cálculo da inclinação com a interpretação das funções lineares e suas representações gráficas.Estudantes também tem dificuldades em relacionar gráficos a equações lineares e a noção de taxa de variação, bom como considerar como uma razão e conectá-la ao modelo físico. [Stump-1999]_
+      
+      #. Toda reta é gráfico de uma função afim.
+      
+      #. "[...] nem toda razão pode ser expressa por números racionais, o que vincula, por meio da proporcionalidade, a apresentação dos números irracionais. Isso sinaliza que nem todas as situações podem ser resolvidas recorrendo-se apenas aos números racionais." [Silva-et-al-2013]_
+      
+      #. Onuchic e Allevato (2008) alertam que não se transponha as propriedades dos números racionais, como a soma de frações, para a soma de razões, quando essas forem realizadas como vetores por exemplo, e citam `\frac{3}{5}+\frac{2,4}{5,6}=\frac{5,4}{10,6}`. Nesse caso, foi efetuada “[...] a adição das razões, consideradas como os vetores `(3;5)` e `(2,4; 5,6)`, cuja resultante, obtida pela regra do paralelogramo, é a razão (ou vetor)  `(5,4; 10,6)` " (p. 95). O vetor `(3;5)` refere-se à quantidade de álcool e água misturados em um recipiente de `8` litros, na razão de `3` para `5`. O vetor seguinte `(2,4; 5,6)` diz respeito à mistura de álcool para água, no segundo recipiente também de 8 litros, na razão de `3` para `7`. A razão entre álcool e água, na mistura resultante, é dada, então, pela razão ou vetor `(5,4;10,6)`. A relação proporcional (entre as partes - álcool e água – vetores) pode ser obtida pela tangente do ângulo do vetor `(5,4;10,6)`. .. [Onuchic-Allevato-2008]_
+      
    .. admonition:: Estratégia Pedagógica
 
       * Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: química, física, biologia e sociologia. Chamar atenção para relações não proporcionais.
@@ -97,7 +101,7 @@ ROTEIRO: FUNÇÃO AFIM
 
       **Para o professor do Capítulo**
 
-      * Não é usual que se peça aos estudantes que verifiquem que determinada relação entre grandezas é uma proporcionalidade. Normalmente ela é assumida e a partir daí se resolve o exercicio. Por exemplo, por que a área de um retângulo é proporcional à sua base e à sua altura?
+      * Não é usual que se peça aos estudantes que verifiquem que determinada relação entre grandezas é uma proporcionalidade. Normalmente ela é assumida pelo "contrato didático". Perguntas como "por que a área de um retângulo é proporcional à sua base e à sua altura?" normalmente não são sequer consideradas. Nesse sentido, perpetua-se a ideia equivocada de que o mundo é proporcional.
    
       * Apresentar o Teorema Fundamental da Proporcionalidade: Seja `f: \mathbb{R} \to \mathbb{R}` uma função crescente. As seguintes afirmações são equivalentes:
       
@@ -220,6 +224,12 @@ ROTEIRO: FUNÇÃO AFIM
       
       .. [Lima-2006] Lima, E. A matemática do ensino médio – Vol. 1,  9a ed. Coleção do Professor de Matemática. Sociedade Brasileira de Matemática, Rio de Janeiro.
       
+      .. [Onuchic-Allevato-2008] Onuchic, L. de la R.; Allevato, N. S. G. As diferentes “personalidades” do número racional trabalhadas através da Resolução de Problemas. Bolema: Boletim de Educação Matemática, Rio Claro, ano 21, n. 31, p. 79-102.
+      
       .. [Orton-et-al-1999] Orton, J., Orton, A. & Roper, T. Pictorial and practical contexts and the perception of pattern. In A. Orton (Ed.), Patterns in the teaching and learning of mathematics. London, England: Cassell.
+      
+      .. [Silva-et-al-2013] Silva, A. da F. G; Pietropaolo, R. C.; Campos, T. M. M. Atual currículo de matemática do estado de São Paulo: indicações para a introdução do ensino da ideia de irracionalidade. Boletim GEPEM, Rio de Janeiro, n. 62, p. 31-44.
 
       .. [Stacey-1989] Stacey, K. Finding and using patterns in linear generalizing problems. Educational Studies in Mathematics, 20, 147–164.
+      
+      .. [Stump-1999] Stump, S. Secondary mathematics teachers' knowledge of slope. Mathematics Education Research Journal, 11(2), 124–144.
