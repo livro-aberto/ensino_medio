@@ -1230,18 +1230,44 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
                 \draw [-{Latex[length=4mm,width=2.5mm]}, color=qqqqff] (v1.center)--(v3.center);
                 \draw [-{Latex[length=4mm,width=2.5mm]}, color=qqqqff] (v4.center)--(v5.center);
 
+
+.. Fonte da figura do ciclo de infecção do vírus da Dengue: http://www.brasil.gov.br/saude/2010/03/ciclo_da_dengue/view       
+
+
+
 .. admonition:: Você sabia?
 
-   A palavra *vetor* vem do latim *vehere* que significa transportado ou levado. Esse significado está de acordo com o significado geométrico de vetores que apresentamos nessa seção e também na seção anterior, ao ligarmos vetor ao deslocamento de um corpo.
+   De acordo com [Bello-2013]_, o verbo em Latim *veho*, *vehere*, *vexi*, *vectus* significa transportar ou carregar. Ao acrescenter o sufixo *or* à raiz da palavra *vectus*, obtém-se *vector*, o agente, aquele que carrega. Observe, então, que o uso da palavra vetor no contexto de deslocamentos faz jus a sua etimologia.
+   
+   A palavra *vetor* não está restrita à Matemática e ela é usada outras disciplinas.
+   
+   #. Em Epidemiologia, a palavra *vetor* é usada para referenciar todo ser vivo capaz de transmitir de forma ativa (estando infectado) ou passiva um agente infeccioso (parasita, bactéria ou vírus). Assim, por exemplo, o mosquito *Aedes aegypit* é, no Brasil, o vetor doença do vírus da Dengue.
+         
+      .. _fig-vetor-epidemiologia:
+
+      .. figure:: _resources/geometria-aedes-aegypti-03.jpg
+         :width: 600pt
+         :align: center
+
+         O mosquito *Aedes aegypit* como vetor do vírus da Dengue (fonte: Governo Federal e Wikimedia Commons).
+       
+
+   #. Em Aviação, quando um piloto de avião em aproximação a um aeroporto pede por *vetores* à torre de controle, o que ele está solicitando é por uma orientação (ângulo de aproximação). Desta maneira, um vetor em Aviação não é um vetor no sentido matemático (por quê?).
+   
+   #. Em Computação Gráfica, uma imagem vetorial é aquela que é representada via objetos geométricos (segmentos, polígonos, curvas, etc.), cada um definido por seus atributos matemáticos de forma e posição, atributos estes frequentemente dados por meio de vetores. Enquanto que uma imagem do tipo *raster* (*bitmap*), formada por *pixels*, perde resolução (qualidade) ao ser ampliada, uma imagem vetorial pode ser ampliada sucessivamente mantendo-se a qualidade da imagem.
+   
+      .. figure::  _resources/geometria-imagem-vetorial-01.jpg
+         :width: 175pt
+         :align: center
+
+         imagem vetorial *versus* imagem bitmap (fonte: Wikimedia Commons).
+         
+   
 
 
 ************************************
 Praticando o assunto
 ************************************
-
-
-
-.. Soma com a soma (resultante)
 
 
 .. _ativ-vetores-e-ou-nao-vetor:
@@ -1728,8 +1754,7 @@ Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor 
         \draw [dotted] (v2.center) -- (v3.center);
         \draw[] (1.5912,-0.5104) node {$\vec{u}$};
         \draw[] (-1.3178,-0.1357) node {$\vec{v}$};
-
-
+        
 
    .. tikz:: Caso (C)
 
