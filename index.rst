@@ -10,6 +10,8 @@ Ensino Médio
    AF107-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
+   GE202-ROTEIRO
+   GE301-ROTEIRO
    PE103-ROTEIRO
    
    .. index_algebra_e_funcoes
@@ -70,6 +72,33 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   GE202
+   GE202-0
+   GE202-1
+   GE202-2
+   GE202-A
+   GE202-E
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   GE301
+   GE301-0
+   GE301-1
+   GE301-2
+   GE301-A
+   GE301-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
    PE103
    PE103-0
+   PE103-1
+   PE103-2
+   PE103-A
+   PE103-E
 

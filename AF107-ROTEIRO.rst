@@ -1,8 +1,9 @@
-****************
-ROTEIRO: FUNÇÃO AFIM
-****************
+.. _rot-funcao-afim:
 
-.. _sec-rot:
+********************
+ROTEIRO: FUNÇÃO AFIM
+********************
+
 .. admonition:: Roteiro
 
    .. admonition:: Previsão de aulas necessárias
