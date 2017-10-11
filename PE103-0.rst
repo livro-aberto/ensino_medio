@@ -57,6 +57,8 @@ Introdução
  * Gráfico de Barras, 
  * Histograma.
 
+.. Texto introdutório
+
 .. _explorando-1:
 
 Explorando 1
@@ -81,19 +83,19 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
 
 .. _fig-parafusos:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedora.png
+.. figure:: _resources/fornecedora.png
    :width: 800px
    :align: center
    
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedorb.png
+.. figure:: _resources/fornecedorb.png
    :width: 800px
    :align: center
    
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedorc.png
+.. figure:: _resources/fornecedorc.png
    :width: 800px
    :align: center
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=fornecedord.png
+.. figure:: _resources/fornecedord.png
    :width: 800px
    :align: center
 
@@ -524,34 +526,27 @@ A classificação das variáveis estudadas é importante, pois as técnicas e pr
 Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa discreta. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variábvel "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com a penas duas respostas é chamado variável binária e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas e a soma resultará no número de pessoas na amostra que pratica atividade física.
    
 
-.. _sub-RepresentacaoGraficaVariavelQualitativa:
+**Gráficos para Variáveis Qualitativas**
 
-Gráficos para Variáveis Qualitativas
----------
-
-Nas análises dos infográficos trabalhamos com vários tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No infográfico 3, temos um **gráfico de barras**. Nesse gráfico, a única escala usada é a da frequência na qual as respostas ocorrem. Cada barra representa uma resposta e seu comprimento corresponde à frequência (ou porcentagem) na qual a resposta ocorre. Observe também que no gráfico de barras, a soma das porcentagens deve ser 100%, correspondendo ao conjunto completo que foi observado. A orientação das barras pode ser tanto vertical, como horizontal. 
+Nas análises dos infográficos trabalhamos com vários tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, temos um **gráfico de barras**. Nesse gráfico, a única escala usada é a da frequência na qual as respostas ocorrem. Cada barra representa uma resposta e seu comprimento corresponde à frequência (ou porcentagem) na qual a resposta ocorre. Observe também que no gráfico de barras, a soma das porcentagens deve ser 100%, correspondendo ao conjunto completo que foi observado. A orientação das barras pode ser tanto vertical, como horizontal. 
 
 A disposição das barras, que devem ter larguras iguais, é arbitrária. Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. Se a variável é nominal, podemos dispor as respostas em ordem decrescente de frequência. 
 
 Os gráficos apresentados nos infográficos 1 e 2 são gráficos de barras?
 
-Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são **gráficos de barras múltiplos** úteis para comparar diferentes distribuições de frequências. Observe que em cada um desses gráficos a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as frequências das respostas sim e não no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de sim em cada grupo, pois as correspondentes porcentagens de "nãos" são dadas pelo complementar em cada universo considerado. 
+Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são **gráficos de barras múltiplas**, úteis para comparar diferentes distribuições de frequências. Observe que em cada um desses gráficos a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as frequências das respostas sim e não no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de *sim* em cada grupo, pois as correspondentes porcentagens de *não* são dadas pelo complementar em cada universo considerado. 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-infografico-1-detalhe:
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barrasmultiplas_sexo.png
    :width: 600px
    :align: center
 
-   legenda
+   Detalhe legendado do :ref:`infográfico 1<fig-infografico-1>`
 
+O mesmo ocorre quando olhamos os gráficos para faixa etária, grau de instrução e rendimento. Todos são gráficos de barras múltiplos que nos apoiaram em nossas análises sobre a associação entre a prática de atividades físicas e a outra variável (sexo, faixa etária, grau de instrução, rendimento).
 
-
-
-
-O mesmo ococorre quando olhamos os gráficos para faixa etária, grau de instrução e rendimento. Todos são gráficos de barras múltiplos que nos apoiaram em nossas análises sobre a associação entre a prática de atividades físicas e a outra variável (sexo, faixa etária, grau de instrução, rendimento).
-
-No infográfico 4, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira harmônica a figura maior em partes cujas áreas correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
+No :ref:`infográfico 4<fig-inforgrafico-4>`, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira harmônica a figura maior em partes cujas áreas correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
 
 No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as opiniões de quem respondeu "Não" à questão "O poder público deve investir em atividades físicas ou desportivas?" e também para representar a resposta de "Qual deve ser a prioridade dos investimentos?" para uem respondeu "Sim" à questão "O poder público deve investir em atividades físicas ou desportivas?"
 
@@ -572,7 +567,17 @@ Praticando 1
 -------------------------
 
 Exercícios e situções práticas
+
 .. incluir atividades que demandem a classificação de variáveis e a discussão sobre a possibilidade de tornar uma variável quantitativa em qualitativa e vice-versa.
+
+.. Classificação de variáveis de uma pesquisa
+
+.. Produzindo informações de taxas a partir de dados reais de saúde...
+
+.. Refazer os gráficos do infográfico, traduzir o de setores pra barra e visceversa
+
+.. Analizar gráfico de barras de inflação da Globo como exemplo do uso de barras inadequadas
+
 
 Explorando 2
 -------------------------
