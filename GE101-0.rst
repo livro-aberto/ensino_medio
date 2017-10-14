@@ -1077,6 +1077,8 @@ para qualquer vetor `\vec{v}`.
       :align: center
 
       Vetor diferença `\vec{v}-\vec{u}`.
+      
+Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`). 
 
 * Associatividade da soma: considere `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}` representantes dos vetores `\vec{u}, \vec{v}` e `\vec{w}`, respectivamente, como na figura abaixo.
 
@@ -1890,71 +1892,353 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
     \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
     \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
 
+.. 
+  Atividade: soma de três vetores
+  ------------------------------------------
 
-Atividade: soma de três vetores
+  .. admonition:: Para o professor
+
+     **Objetivo específico:** somar três vetores com representantes desenhados com uma mesma extremidade.
+
+  Na figura a seguir estão representados três vetores `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+  .. tikz::
+
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          % \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          % \draw [dotted] (v2.center) -- (v4.center);
+          % \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          % \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+  #. Copie a figura para seu caderno e, então, desenhe o vetor soma `\vec{u} + \vec{v}`.
+
+  .. admonition:: Resposta
+
+     #. O vetor soma `\vec{u} + \vec{v}` já está desenhado na figura, pois `\vec{u} + \vec{v} = \vec{w}`.
+
+     #. Observe que `\vec{u} + \vec{v} + \vec{w} = \vec{w} + \vec{w} = 2 \, \vec{w}`.
+
+
+      .. tikz::
+
+          \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          \draw [dotted] (v2.center) -- (v4.center);
+          \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+
+Atividade: a ordem das parcelas não altera a soma
 ------------------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** somar três vetores com representantes desenhados com uma mesma extremidade.
+   **Objetivos específicos** 
+   
+   #. Reconhecer vetores iguais.
+   #. Praticar a soma de dois e três vetores.
+   #. Perceber que, na soma de três vetores, a ordem das parcelas não altera o resultado da operação.
 
-Na figura a seguir estão representados três vetores `\vec{u}`, `\vec{v}` e `\vec{w}`.
+Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{AD}$, $\vec{w} = \overrightarrow{AF}$ e os quadriláteros `ABCD`, `ABGF`, `ADIF`, `FGHI`, `DCHI` e `BCHG` são paralelogramos. 
 
-.. tikz::
+
+.. tikz:: 
 
        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
-        \tikzset{>=latex}
-        \draw  (-2.5,-2) rectangle (3.5,2.5);
-        % \clip (-4.5,-3) rectangle (4.5,3);
-        \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
-        \node (v1) at (0,0) {};
-        \node (v2) at (1,-1) {};
-        \node (v3) at (0,1.5) {};
-        \node (v4) at (1, 0.5) {};
-        \node (v5) at (2, 1) {};
-        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
-        % \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
-        % \draw [dotted] (v2.center) -- (v4.center);
-        % \draw [dotted] (v3.center) -- (v4.center);
-        \draw[] (-0.2948,0.7484) node {$\vec{u}$};
-        \draw[] (0.1492,-0.6437) node {$\vec{v}$};
-        \draw[] (0.609,-0.0321) node {$\vec{w}$};
-        % \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       % \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       % \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       % \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       % \draw[] (3.3431,0.584) node {$\vec{v}$};
+       % \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       % \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       % \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       % \draw[] (4.0729,2.858) node {$\vec{w}$};
+       % \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
-#. Copie a figura para seu caderno e, então, desenhe o vetor soma `\vec{u} + \vec{v}`.
+#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{v}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
+
+#. Desenhe na figura os vetores `\overrightarrow{AC}`, `\overrightarrow{AG}` e `\overrightarrow{AI}` e escreva-os em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+#. Use a figura e os dois itens anteriores para mostrar que `\vec{u} + \vec{v} + \vec{w} = \vec{u} + \vec{w} + \vec{v} = \vec{v} + \vec{u} + \vec{w} = \vec{v} + \vec{w} + \vec{u} = \vec{w} + \vec{u} + \vec{v} = \vec{w} + \vec{v} + \vec{u}`, isto é, que a ordem das parcelas não altera a soma.
 
 .. admonition:: Resposta
 
-   #. O vetor soma `\vec{u} + \vec{v}` já está desenhado na figura, pois `\vec{u} + \vec{v} = \vec{w}`.
+   #. 
+   
+   
+    .. tikz:: 
 
-   #. Observe que `\vec{u} + \vec{v} + \vec{w} = \vec{w} + \vec{w} = 2 \, \vec{w}`.
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
+   #. 
+   
+   
+    .. tikz:: 
 
-    .. tikz::
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+       
+   #. Observe que `\vec{u} + \vec{v} + \vec{w} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{u} + \vec{w} + \vec{v} = \overrightarrow{AB} + \overrightarrow{BG} + \overrightarrow{GH} = \overrightarrow{AH}`, `\vec{v} + \vec{u} + \vec{w} = \overrightarrow{AD} + \overrightarrow{DC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{v} + \vec{w} + \vec{u} = \overrightarrow{AD} + \overrightarrow{DI} + \overrightarrow{IH} = \overrightarrow{AH}`, `\vec{w} + \vec{u} + \vec{v} = \overrightarrow{AF} + \overrightarrow{FG} + \overrightarrow{GH} = \overrightarrow{AH}` e  `\vec{w} + \vec{v} + \vec{u} = \overrightarrow{AF} + \overrightarrow{FI} + \overrightarrow{IH} = \overrightarrow{AH}`.
+   
+   
+    .. tikz:: 
 
-        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
-        \tikzset{>=latex}
-        \draw  (-2.5,-2) rectangle (3.5,2.5);
-        % \clip (-4.5,-3) rectangle (4.5,3);
-        \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
-        \node (v1) at (0,0) {};
-        \node (v2) at (1,-1) {};
-        \node (v3) at (0,1.5) {};
-        \node (v4) at (1, 0.5) {};
-        \node (v5) at (2, 1) {};
-        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
-        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
-        \draw [dotted] (v2.center) -- (v4.center);
-        \draw [dotted] (v3.center) -- (v4.center);
-        \draw[] (-0.2948,0.7484) node {$\vec{u}$};
-        \draw[] (0.1492,-0.6437) node {$\vec{v}$};
-        \draw[] (0.609,-0.0321) node {$\vec{w}$};
-        \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
-
-
+              \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
