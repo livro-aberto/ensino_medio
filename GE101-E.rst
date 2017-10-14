@@ -156,6 +156,29 @@ Exercícios
 
 `8.` Calcule `–\overrightarrow{BA}+\overrightarrow{CD}+\overrightarrow{BC}-\overrightarrow{AD}`. 
 
+`9.` Na figura abaixo, determine as coordendas do vetor `\vec{v}` em cada um dos itens.
+
+    .. figure:: _resources/Figura7.png
+     :width: 700px
+     :align: center
+
+`10.` Considere o vetor `\overrightarrow{AB}=(3,2)` e o ponto `P=(0,-2)`. Encontre as coordenadas do ponto `Q` tal que `\overrightarrow{AB}=\overrightarrow{PQ}`.
+
+`11.` Dados os vetores `\vec{u}=(1,2)` e `\vec{v}=(-2,3)`, determine:
+
+#. `|\vec{u}|`	
+#. `|\vec{v}|`
+#. `|\vec{u}+\vec{v}|`
+#. `|\vec{u}-\vec{v}|`
+#. `|5\vec{u}|`
+#. `|2\vec{u}-3\vec{v}|`
+
+`12.` Dado o vetor `\vec{v}=(x,3)`, calcule os valores de `x` para que se tenha `|\vec{v}|=5`. 
+
+`13.` Sejam `A=(-4,4)` e `B=(2,1)`. Determine as coordenadas dos pontos que dividem o vetor `\overrightarrow{AB}` em 3 vetores de mesmo módulo.
+
+
+
 .. admonition:: Resposta 
 
      `1.` 
@@ -206,6 +229,39 @@ Exercícios
      `7.` `\vec{u}+\vec{v}+\vec{w}=\vec{0}`.
      
      `8.` `–\overrightarrow{BA}+\overrightarrow{CD}+\overrightarrow{BC}-\overrightarrow{AD}=` `\overrightarrow{AB}+\overrightarrow{CD}+\overrightarrow{BC}+\overrightarrow{DA}=` `\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}+\overrightarrow{DA}=\overrightarrow{AA}=` `\vec{0}`.
+     
+     `9.`
+     
+     #. `\vec{v}=(2,3)-(0,0)=(2,3)`. 
+     #. `\vec{v}=(4,1)-(1,2)=(3,-1)`. 
+     #. `\vec{v}=(-3,1)-(1,-2)=(-4,3)`.
+
+     `10.` Se `Q=(a,b)`, então `(3,2)=(a-0, b+2)=(a,b+2)`, pois. Logo, `a=3` e `b =0`, ou seja, `Q=(3,0)`. 
+     
+     `11.`
+     
+     #. `|\vec{u}|=\sqrt{1^2+2^2}=\sqrt{5}`.
+     #. `|\vec{v}|=\sqrt{(-2)^2+3^2}=\sqrt{13}`
+     #. `|\vec{u}+\vec{v}|=|(-1,5)|=\sqrt{(-1)^2+5^2}=\sqrt{26}`
+     #. `|\vec{u}-\vec{v}|=|(3,-1)|=\sqrt{3^2+(-1)^2}=\sqrt{10}`
+     #. `|5\vec{u}|=|(5,10)|=\sqrt{5^2+10^2}=\sqrt{125}=5\sqrt{5}`
+     #. `|2\vec{u}-3\vec{v}|=|(8,-5)|=\sqrt{8^2+(-5)^2}=\sqrt{89}`
+
+     `12.` Se `\vec{v}=(x,3)`, então `|\vec{v}|=\sqrt{x^2+3^2}=\sqrt{x^2+9}`. Como, pelo enunciado, `|\vec{v}|=5`, temos que `5=\sqrt{x^2+9}`. Logo, `x=4` ou `x=-4`.
+     
+     `13.` Para dividirmos o vetor `\overrightarrow{AB}=(6,-3)` em 3 vetores de mesmo módulo, precisamos marcar dois pontos que chamaremos de `P_1` e `P_2`, como na figura abaixo. Neste caso, os vetores `\overrightarrow{AP_1}`, `\overrightarrow{P_1P_2}` e `\overrightarrow{P_2B}` possuem os mesmos módulo, direção e sentido. Ou seja, `\overrightarrow{AP_1}=\frac13\overrightarrow{AB}`,  `\overrightarrow{P_1P_2}=\frac13\overrightarrow{AB}` e `\overrightarrow{P_2B}=\frac13\overrightarrow{AB}`.
+     
+     .. figure:: _resources/Figura8_resposta_2.png
+        :width: 300px
+        :align: center 
+     
+     Se `P_1=(a,b)`, então `\overrightarrow{AP_1}=(a+4,b-4)`. Logo, `(a+4,b-4)=\frac13(6,-3)=(2,-1)`, donde concluímos que `a=-2` e `b=3`. Portanto, `P_1=(-2,3)`.
+
+     Considere agora `P_2=(c,d)`. Neste caso, `\overrightarrow{P_1P_2}=(c+2,d-3)=\frac13(6,-3)=(2,-1)`. Assim, `c=0` e `d=2`. Portanto, `P_2=(0,2)`.
+
+
+
+
 
 		     
 
