@@ -2254,9 +2254,9 @@ Atividade: procurando pontos
 .. admonition:: Para o professor
 
    **Objetivo específico**: compreender a igualdade e soma de vetores por meio da resolução equações vetoriais.
-   
+
    **Recomendações e sugestões**
-   
+
    * Note que algumas equações podem ter mais de uma solução.
    * O polígono desenhado não desempenha papel algum na solução da ativdiade.
    * Enquanto a Equação g) não possui solução entre os pontos indicados na figura (isto é, os pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J`), certamente existe um ponto `X` no plano tal que `\overrightarrow{AB} + \overrightarrow{BX} = \overrightarrow{IJ}`.
@@ -2273,12 +2273,12 @@ Atividade: procurando pontos
 #. `\overrightarrow{AB} + \overrightarrow{B\underline{\hphantom{M}}} = \overrightarrow{IJ}`.
 
 
-.. tikz:: 
+.. tikz::
 
     %\newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
     \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
     \draw[color=gggggg,thin] (-1,-1) grid (7,6);
-    \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle; 
+    \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle;
     % \pointGraphique{3}{5}{A}{above left}
     \draw (3, 5) node[above left] {$A$};
     \fill (3, 5) circle [radius=2pt];
@@ -2310,8 +2310,8 @@ Atividade: procurando pontos
     \draw (0, 2) node[above left] {$J$};
     \fill (0, 2) circle [radius=2pt];
 
-.. admonition:: Resposta     
-      
+.. admonition:: Resposta
+
       #. `\overrightarrow{IB} = \overrightarrow{IA} + \overrightarrow{AB}`.
       #. `\overrightarrow{HG} + \overrightarrow{GF} = \overrightarrow{HF}` ou `\overrightarrow{HG} + \overrightarrow{AB} = \overrightarrow{HF}`.
       #. `\overrightarrow{DD} + \overrightarrow{CC} = \overrightarrow{BB}`, `\overrightarrow{DC} + \overrightarrow{CD} = \overrightarrow{BB}`,       `\overrightarrow{DD} + \overrightarrow{CB} = \overrightarrow{CB}`, `\overrightarrow{DB} + \overrightarrow{CD} = \overrightarrow{CB}`,       `\overrightarrow{DC} + \overrightarrow{CB} = \overrightarrow{DB}` ou       `\overrightarrow{DB} + \overrightarrow{CC} = \overrightarrow{DB}`.
@@ -2319,3 +2319,55 @@ Atividade: procurando pontos
       #. `\overrightarrow{AJ} = \overrightarrow{AC} + \overrightarrow{BB} + \overrightarrow{CJ}` ou `\overrightarrow{AJ} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CJ}`.
       #. `\overrightarrow{FE} + \overrightarrow{EF} = \vec{0}` ou `\overrightarrow{FE} + \overrightarrow{HI} = \vec{0}`.
       #. Nenhum dos pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J` torna a equação verdadeira.
+
+
+
+
+Atividade: usando vetores para demonstrar resultados em Geometria
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: praticar o uso de vetores para demonstrar resultados em Geometria.
+   
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 219) Considere um paralelogramo `OIJK`. Os pontos `A`, `B` e `G` são tais que `\overrightarrow{OA} = \frac{1}{2} \, \overrightarrow{OI}`, `\overrightarrow{OB} = \frac{1}{3} \, \overrightarrow{OK}` e `\overrightarrow{AG} = \frac{3}{5} \, \overrightarrow{AB}`.
+
+#. Faça uma figura para ilustrar o enunciado da atividade.
+
+#. Demonstre que `\overrightarrow{OG} = \frac{1}{5} \, \overrightarrow{OJ}`. Conclua que, em particular, os pontos `O`, `G` e `J` são colineares.
+
+.. admonition:: Resposta    
+
+   #. 
+
+    .. tikz:: 
+
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (0, 0) {};
+       \node (v2) at (6, 0) {};
+       \node (v4) at (1, 4) {};
+       \node (v3) at (7, 4) {};
+       \node (v5) at (3, 0) {};
+       \node (v6) at (0.3333333, 1.3333333) {};
+       \node (v7) at (1.4, 0.8) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];   
+       \fill (v5) circle [radius=2pt];   
+       \fill (v6) circle [radius=2pt];   
+       \fill (v7) circle [radius=2pt];   
+       \node [label={west:$O$}] at (v1) {};
+       \node [label={east:$I$}] at (v2) {};
+       \node [label={east:$J$}] at (v3) {};       
+       \node [label={west:$K$}] at (v4) {};
+       \node [label={south:$A$}] at (v5) {};
+       \node [label={west:$B$}] at (v6) {};
+       \node [label={north:$G$}] at (v7) {};
+       \draw[line width=1.0pt] (v1.center)--(v2.center)--(v3.center)--(v4.center)--cycle;         
+       \draw[line width=1.0pt] (v5.center)--(v6.center);
+       \draw[dotted] (v1)--(v3);
+       
+   #. Demonstração: `\overrightarrow{OG} = \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{AB} = \overrightarrow{OA} + \frac{3}{5} \, \left(\overrightarrow{OB} - \overrightarrow{OA}\right) = \frac{2}{5} \, \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{OB} = \frac{2}{5} \, \frac{1}{2} \, \overrightarrow{OI} + \frac{3}{5} \, \frac{1}{3} \, \overrightarrow{OK} = \frac{1}{5} \, \overrightarrow{OI} + \frac{1}{5} \, \overrightarrow{OK} = \frac{1}{5} \, \left(\overrightarrow{OI} + \overrightarrow{OK}\right) = \frac{1}{5} \, \overrightarrow{OJ}`. Desta maneira, `\overrightarrow{OG}` tem mesma direção e sentido de `\overrightarrow{OJ}` e, portanto, `O`, `G` e `J` são colineares.
