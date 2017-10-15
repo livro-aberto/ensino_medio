@@ -1077,8 +1077,8 @@ para qualquer vetor `\vec{v}`.
       :align: center
 
       Vetor diferença `\vec{v}-\vec{u}`.
-      
-Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`). 
+
+Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`).
 
 * Associatividade da soma: considere `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}` representantes dos vetores `\vec{u}, \vec{v}` e `\vec{w}`, respectivamente, como na figura abaixo.
 
@@ -1359,8 +1359,7 @@ Vimos que vetores são representados geometricamente por setas. Mas será que to
    * A seta da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo.
 
 
-
-Atividade: soma de vetores
+Atividade: soma de dois vetores
 ------------------------------------------
 
 .. admonition:: Para o professor
@@ -1892,7 +1891,7 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
     \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
     \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
 
-.. 
+..
   Atividade: soma de três vetores
   ------------------------------------------
 
@@ -1965,16 +1964,16 @@ Atividade: a ordem das parcelas não altera a soma
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos** 
-   
+   **Objetivos específicos**
+
    #. Reconhecer vetores iguais.
    #. Praticar a soma de dois e três vetores.
    #. Perceber que, na soma de três vetores, a ordem das parcelas não altera o resultado da operação.
 
-Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{AD}$, $\vec{w} = \overrightarrow{AF}$ e os quadriláteros `ABCD`, `ABGF`, `ADIF`, `FGHI`, `DCHI` e `BCHG` são paralelogramos. 
+Na figura a seguir, `\vec{u} = \overrightarrow{AB}`, `\vec{v} = \overrightarrow{AD}`, `\vec{w} = \overrightarrow{AF}` e os quadriláteros `ABCD`, `ABGF`, `ADIF`, `FGHI`, `DCHI` e `BCHG` são paralelogramos.
 
 
-.. tikz:: 
+.. tikz::
 
        \definecolor{qqqqff}{rgb}{0.,0.,1.}
        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
@@ -2045,10 +2044,10 @@ Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{
 
 .. admonition:: Resposta
 
-   #. 
-   
-   
-    .. tikz:: 
+   #.
+
+
+    .. tikz::
 
        \definecolor{qqqqff}{rgb}{0.,0.,1.}
        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
@@ -2111,10 +2110,10 @@ Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{
        % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
-   #. 
-   
-   
-    .. tikz:: 
+   #.
+
+
+    .. tikz::
 
        \definecolor{qqqqff}{rgb}{0.,0.,1.}
        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
@@ -2176,11 +2175,11 @@ Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{
        \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
        \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
-       
+
    #. Observe que `\vec{u} + \vec{v} + \vec{w} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{u} + \vec{w} + \vec{v} = \overrightarrow{AB} + \overrightarrow{BG} + \overrightarrow{GH} = \overrightarrow{AH}`, `\vec{v} + \vec{u} + \vec{w} = \overrightarrow{AD} + \overrightarrow{DC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{v} + \vec{w} + \vec{u} = \overrightarrow{AD} + \overrightarrow{DI} + \overrightarrow{IH} = \overrightarrow{AH}`, `\vec{w} + \vec{u} + \vec{v} = \overrightarrow{AF} + \overrightarrow{FG} + \overrightarrow{GH} = \overrightarrow{AH}` e  `\vec{w} + \vec{v} + \vec{u} = \overrightarrow{AF} + \overrightarrow{FI} + \overrightarrow{IH} = \overrightarrow{AH}`.
-   
-   
-    .. tikz:: 
+
+
+    .. tikz::
 
               \definecolor{qqqqff}{rgb}{0.,0.,1.}
        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
@@ -2242,22 +2241,81 @@ Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{
        \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
        \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
-       
-       
 
-.. tikz:: legenda
 
-    \newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
+
+
+
+
+
+Atividade: procurando pontos
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: compreender a igualdade e soma de vetores por meio da resolução equações vetoriais.
+   
+   **Recomendações e sugestões**
+   
+   * Note que algumas equações podem ter mais de uma solução.
+   * O polígono desenhado não desempenha papel algum na solução da ativdiade.
+   * Enquanto a Equação g) não possui solução entre os pontos indicados na figura (isto é, os pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J`), certamente existe um ponto `X` no plano tal que `\overrightarrow{AB} + \overrightarrow{BX} = \overrightarrow{IJ}`.
+
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 211) Complete os espaços sublinhados com os nomes dos pontos indicados na figura de modo a deixar cada igualdade verdadeira.
+
+#. `\overrightarrow{IB} = \overrightarrow{\underline{\hphantom{M}}A} + \overrightarrow{A\underline{\hphantom{M}}}`.
+#. `\overrightarrow{HG} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \overrightarrow{HF}`.
+#. `\overrightarrow{D\underline{\hphantom{M}}} + \overrightarrow{C\underline{\hphantom{M}}} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{E\underline{\hphantom{M}}} + \overrightarrow{\underline{\hphantom{M}}E} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{A\underline{\hphantom{M}}} = \overrightarrow{A\underline{\hphantom{M}}} + \overrightarrow{B\underline{\hphantom{M}}} +\overrightarrow{CJ}`.
+#. `\overrightarrow{FE} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \vec{0}`.
+#. `\overrightarrow{AB} + \overrightarrow{B\underline{\hphantom{M}}} = \overrightarrow{IJ}`.
+
+
+.. tikz:: 
+
+    %\newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
     \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
     \draw[color=gggggg,thin] (-1,-1) grid (7,6);
     \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle; 
-    \pointGraphique{3}{5}{A}{above left}
-    \pointGraphique{4}{4}{B}{above right}
-    \pointGraphique{6}{4}{C}{above right}
-    \pointGraphique{4}{2}{D}{above left}
-    \pointGraphique{5}{0}{E}{below right}
-    \pointGraphique{4}{0}{F}{below left}
-    \pointGraphique{3}{1}{G}{above left}
-    \pointGraphique{2}{0}{H}{below right}
-    \pointGraphique{1}{0}{I}{below left}
-    \pointGraphique{0}{2}{J}{above left}      
+    % \pointGraphique{3}{5}{A}{above left}
+    \draw (3, 5) node[above left] {$A$};
+    \fill (3, 5) circle [radius=2pt];
+    % \pointGraphique{4}{4}{B}{above right}
+    \draw (4, 4) node[above right] {$B$};
+    \fill (4, 4) circle [radius=2pt];
+    % \pointGraphique{6}{4}{C}{above right}
+    \draw (6, 4) node[above right] {$C$};
+    \fill (6, 4) circle [radius=2pt];
+    % \pointGraphique{4}{2}{D}{above left}
+    \draw (4, 2) node[above left] {$D$};
+    \fill (4, 2) circle [radius=2pt];
+    % \pointGraphique{5}{0}{E}{below right}
+    \draw (5, 0) node[below right] {$E$};
+    \fill (5, 0) circle [radius=2pt];
+    % \pointGraphique{4}{0}{F}{below left}
+    \draw (4, 0) node[below left] {$F$};
+    \fill (4, 0) circle [radius=2pt];
+    % \pointGraphique{3}{1}{G}{above left}
+    \draw (3, 1) node[above left] {$G$};
+    \fill (3, 1) circle [radius=2pt];
+    % \pointGraphique{2}{0}{H}{below right}
+    \draw (2, 0) node[below right] {$H$};
+    \fill (2, 0) circle [radius=2pt];
+    % \pointGraphique{1}{0}{I}{below left}
+    \draw (1, 0) node[below left] {$I$};
+    \fill (1, 0) circle [radius=2pt];
+    % \pointGraphique{0}{2}{J}{above left}
+    \draw (0, 2) node[above left] {$J$};
+    \fill (0, 2) circle [radius=2pt];
+
+.. admonition:: Resposta     
+      
+      #. `\overrightarrow{IB} = \overrightarrow{IA} + \overrightarrow{AB}`.
+      #. `\overrightarrow{HG} + \overrightarrow{GF} = \overrightarrow{HF}` ou `\overrightarrow{HG} + \overrightarrow{AB} = \overrightarrow{HF}`.
+      #. `\overrightarrow{DD} + \overrightarrow{CC} = \overrightarrow{BB}`, `\overrightarrow{DC} + \overrightarrow{CD} = \overrightarrow{BB}`,       `\overrightarrow{DD} + \overrightarrow{CB} = \overrightarrow{CB}`, `\overrightarrow{DB} + \overrightarrow{CD} = \overrightarrow{CB}`,       `\overrightarrow{DC} + \overrightarrow{CB} = \overrightarrow{DB}` ou       `\overrightarrow{DB} + \overrightarrow{CC} = \overrightarrow{DB}`.
+      #. `\overrightarrow{EB} + \overrightarrow{AE} = \overrightarrow{AB}`, `\overrightarrow{EF} + \overrightarrow{GE} = \overrightarrow{AB}`, `\overrightarrow{EA} + \overrightarrow{AE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{BE} = \overrightarrow{BB}`, `\overrightarrow{EC} + \overrightarrow{CE} = \overrightarrow{BB}`, `\overrightarrow{ED} + \overrightarrow{DE} = \overrightarrow{BB}`, `\overrightarrow{EE} + \overrightarrow{EE} = \overrightarrow{BB}`, `\overrightarrow{EF} + \overrightarrow{FE} = \overrightarrow{BB}`, `\overrightarrow{EG} + \overrightarrow{GE} = \overrightarrow{BB}`, `\overrightarrow{EH} + \overrightarrow{HE} = \overrightarrow{BB}`, `\overrightarrow{EI} + \overrightarrow{IE} = \overrightarrow{BB}`, `\overrightarrow{EJ} + \overrightarrow{JE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{CE} = \overrightarrow{CB}`, `\overrightarrow{EH} + \overrightarrow{FE} = \overrightarrow{CB}`, `\overrightarrow{EB} + \overrightarrow{DE} = \overrightarrow{DB}`, `\overrightarrow{ED} + \overrightarrow{FE} = \overrightarrow{DB}`, `\overrightarrow{EB} + \overrightarrow{EE} = \overrightarrow{EB}`, `\overrightarrow{EB} + \overrightarrow{FE} = \overrightarrow{FB}`, `\overrightarrow{EA} + \overrightarrow{GE} = \overrightarrow{FB}`, `\overrightarrow{EB} + \overrightarrow{GE} = \overrightarrow{GB}`, `\overrightarrow{EC} + \overrightarrow{FE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{HE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{IE} = \overrightarrow{IB}` ou `\overrightarrow{EB} + \overrightarrow{JE} = \overrightarrow{JB}`.
+      #. `\overrightarrow{AJ} = \overrightarrow{AC} + \overrightarrow{BB} + \overrightarrow{CJ}` ou `\overrightarrow{AJ} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CJ}`.
+      #. `\overrightarrow{FE} + \overrightarrow{EF} = \vec{0}` ou `\overrightarrow{FE} + \overrightarrow{HI} = \vec{0}`.
+      #. Nenhum dos pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J` torna a equação verdadeira.
