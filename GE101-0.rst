@@ -2242,3 +2242,22 @@ Na figura a seguir, $\vec{u} = \overrightarrow{AB}$, $\vec{v} = \overrightarrow{
        \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
        \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+       
+       
+
+.. tikz:: legenda
+
+    \newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
+    \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+    \draw[color=gggggg,thin] (-1,-1) grid (7,6);
+    \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle; 
+    \pointGraphique{3}{5}{A}{above left}
+    \pointGraphique{4}{4}{B}{above right}
+    \pointGraphique{6}{4}{C}{above right}
+    \pointGraphique{4}{2}{D}{above left}
+    \pointGraphique{5}{0}{E}{below right}
+    \pointGraphique{4}{0}{F}{below left}
+    \pointGraphique{3}{1}{G}{above left}
+    \pointGraphique{2}{0}{H}{below right}
+    \pointGraphique{1}{0}{I}{below left}
+    \pointGraphique{0}{2}{J}{above left}      
