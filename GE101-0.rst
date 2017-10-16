@@ -177,7 +177,7 @@
    * apresenta-se a justaposição de vetores deslocamentos a partir da qual a soma será introduzida;
    * apresenta-se o vetor deslocamento nulo e o vetor deslocamento simétrico.
 
-   Ainda com a *Corrida de Vetores*, apresenta-se o uso de uma flecha apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de flechas (segmentos orientados) de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
+   Ainda com a *Corrida de Vetores*, apresenta-se o uso de um segmento orientado apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de segmentos orientados de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
 
    No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura de certos problemas geométricos via combinações lineares (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
 
@@ -191,10 +191,10 @@
 
    Registramos aqui uma analogia que pode ser útil para uma reflexão sobre o ensino e a aprendizagem de vetores: este tópico tem muito em comum com tópico dos números racionais. Seguem alguns exemplos que ilustram essa analogia.
 
-   #. Números racionais são classes de equivalência de frações;  vetores são classes de equivalência de flechas (segmentos orientados).
+   #. Números racionais são classes de equivalência de frações;  vetores são classes de equivalência de segmentos orientados.
    #. Existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
-   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tomar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de flechas (segmentos orientados) também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
-   #. Existe uma flexibilidade no rigor (um "abuso de linguagem") ao se referenciar números racionais como, por exemplo, dizer  "o número racional `2/4`" ao invés de dizer "o número racional cujo representante é a fração `2/4`"); esta flexibilidade também ocorre com vetores: dizer "o vetor `\overrightarrow{OP}`" ao invés de dizer "o vetor cujo representante é a flecha (segmento orientado) `\overrightarrow{OP}`".
+   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tomar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de segmentos orientados também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
+   #. Existe uma flexibilidade no rigor (um "abuso de linguagem") ao se referenciar números racionais como, por exemplo, dizer  "o número racional `2/4`" ao invés de dizer "o número racional cujo representante é a fração `2/4`"); esta flexibilidade também ocorre com vetores: dizer "o vetor `\overrightarrow{OP}`" ao invés de dizer "o vetor cujo representante é o segmento orientado `\overrightarrow{OP}`".
 
 
    **Observações metodológicas gerais**
@@ -351,7 +351,11 @@ Por outro lado, como você deve ter percebido com a atividade anterior, um únic
 **Vetor posição relativa**
 
 
-A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste capítulo) pode ser representada graficamente por uma flecha, isto é, um :index:`segmento de reta orientado` o qual, a partir de agora, denominaremos :index:`vetor posição relativa`. A figura a seguir exibe os vetores posições relativas do grupo de exploradores (marcado como `G` na figura) com relação às estações de pesquisa `A` e `B` da atividade anterior.
+A posição relativa, a exemplo de outras grandezas vetoriais que veremos neste capítulo, pode ser representada
+geometricamente por um :index:`segmento de reta orientado`, o qual é normalmente desenhado como uma seta.
+Este tipo de representação para a posição relativa será denominada :index:`vetor posição relativa`.
+A figura a seguir exibe os vetores posições relativas do grupo de exploradores (marcado como `G` na figura)
+com relação às estações de pesquisa `A` e `B` da atividade anterior.
 
 .. _fig-geometria-vp-02:
 
@@ -363,16 +367,16 @@ A posição relativa (a exemplo de outras grandezas vetoriais que veremos neste 
 
 .. admonition:: Para reflexão
 
-    Por que posições relativas não poderiam ser representadas apenas com segmentos de reta? Por que usar flechas é importante neste contexto?
+    Por que posições relativas não poderiam ser representadas apenas com segmentos de reta? Por que usar segmentos orientados é importante neste contexto?
 
 
 **Notações**
 
-Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais curta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A flecha sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `AG` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
+Ao fazer referência a um vetor posição relativa, no lugar de uma descrição longa do tipo "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`", é costume introduzir notações que permitem referenciar o vetor posição relativa de forma mais curta (essa *economia* de escrita é uma prática comum na Matemática). Por exemplo, uma das notações adotada para representar o "vetor posição relativa do ponto `G` com relação ao ponto de referência `A`" é `\overrightarrow{AG}`. Nesta notação, ao lê-la da esquerda para direita, a primeira letra representa o ponto de referência (no caso, o ponto `A`) e a segunda letra representa a posição em consideração (no caso, o ponto `G`). A seta sobre as duas letras é um recurso gráfico para lembrar que a notação está representando um vetor. Neste contexto, o ponto `A` é denominado :index:`extremidade inicial` (ou simplesmente :index:`origem`) e o ponto `G` é denominado :index:`extremidade final` (ou simplesmente :index:`extremidade`, quando não há perigo de confusão com a extremidade inicial) do vetor `\overrightarrow{AG}`. O comprimento do segmento de reta `AG` é denominado :index:`módulo` do vetor `\overrightarrow{AG}` e será denotado por `|\overrightarrow{AG}|`. No caso do vetor `\overrightarrow{AG}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\overrightarrow{AG}| = 10~\text{km}`.
 
-Uma notação ainda mais curta é simplesmente dar um "nome" ao vetor, também como uma flecha em cima. Por exemplo, na figura a seguir, o vetor posição `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais curta, o módulo do vetor `\vec{v}` é denotado por `|\vec{v}|`. Assim,
-para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
+Uma notação ainda mais curta é simplesmente dar um "nome" ao vetor posição relativa, também como uma seta em cima. Por exemplo, na figura a seguir, o vetor posição relativa `\overrightarrow{AG}` é denotado por `\vec{u}` e o vetor posição `\overrightarrow{BG}` é representado por `\vec{v}`. Nesta notação mais curta, o módulo do vetor posição relativa `\vec{v}` é denotado por `|\vec{v}|`. Assim,
+para `\vec{v}` da figura seguinte (relacionada com a atividade proposta no início desta seção), tem-se
 `|\vec{v}| = 10 \, \sqrt{2}~\text{km}` (por quê?).
 
 .. _fig-geometria-vp-03:
@@ -381,7 +385,7 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
    :width: 250pt
    :align: center
 
-   Notação para vetores.
+   Notação para vetores posições relativas.
 
 .. admonition:: Observações sobre notação e terminologia
 
@@ -391,7 +395,7 @@ para o vetor `\vec{v}` da figura seguinte (relacionada com a atividade proposta 
    * Dependendo do autor e do contexto, o módulo de um vetor também pode ser chamado de :index:`magnitude`, :index:`intensidade` ou :index:`valor`.
 
 
-Antes de prosseguirmos, é importante destacar uma característica importante do vetor posição relativa: ele depende da escolha do ponto de referência. Veja, por exemplo, na situação ilustrada na figura anterior, que a posição `G` é representada por vetores diferentes quando pontos de referências diferentes (`A` e `B`) são escolhidos.
+Antes de prosseguirmos, é importante destacar uma característica importante do vetor posição relativa: ele depende da escolha do ponto de referência. Veja, por exemplo, na situação ilustrada na figura anterior, que a posição `G` é representada por vetores posições relativas diferentes quando pontos de referências diferentes (`A` e `B`) são escolhidos.
 
 
 .. admonition:: Para o professor
@@ -411,12 +415,13 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
 
       <https://www.geogebra.org/m/kCMtPW5x/>.
 
+
 ************************************
 Vetores deslocamentos
 ************************************
 
 Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência).
-Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por uma flecha que, neste contexto, será denominada :index:`vetor deslocamento`. A flecha é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`.
+Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por um segmento orientado que, neste contexto, será denominada :index:`vetor deslocamento`. A seta que representa o segmento orientado é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`.
 
 .. _fig-geometria-deslocamento-01:
 
@@ -492,7 +497,7 @@ Atividade: corrida de vetores
    **Objetivos específicos**
 
    * Reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes.
-   * Perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por uma flecha, não importando onde esta flecha esteja desenhada.
+   * Perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por um segmento orientado, não importando onde este segmento orientado esteja desenhado.
    * Justapor deslocamentos sucessivos.
    * Reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio da orientação dada por uma Rosa dos Ventos.
 
@@ -514,7 +519,7 @@ Atividade: corrida de vetores
 
    * Depois que os alunos jogarem, você pode fazer um levantamento de quem conseguiu ganhar a corrida com o menor número de cartas e, então, pedir para que os alunos reproduzam suas jogadas usando, por exemplo, a construção GeoGebra da :numref:`fig-ggb-cv-01`.
    * Traga algumas cópias extras da :numref:`fig-geometria-cv-02`, pois alguns alunos podem errar no início ao aprenderem as regras.
-   * Observe que as flechas `\vec{\i}` e `\vec{\j}` não possuem uma descrição natural em termos de uma Rosa dos Eventos. Aqui, uma descrição alternativa seria indicar o ângulo que a flecha faz com uma reta horizontal. No caso da flecha `\vec{\i}` este ângulo é igual a `\text{arctg}(1/2) = 26{,}565051…^{\circ}` e, no caso da flecha `\vec{\j}`, este ângulo é igual a `116{,}565051…^{\circ}`.
+   * Observe que os segmentos orientados `\vec{\i}` e `\vec{\j}` não possuem uma descrição natural em termos de uma Rosa dos Eventos. Aqui, uma descrição alternativa seria indicar o ângulo que o segmento orientado faz com uma reta horizontal. No caso do segmento orientado `\vec{\i}` este ângulo é igual a `\text{arctg}(1/2) = 26{,}565051…^{\circ}` e, no caso do segmento orientado `\vec{\j}`, este ângulo é igual a `116{,}565051…^{\circ}`.
 
 .. Palavras-chaves: justaposição de deslocamentos, deslocamento total, deslocamento resultante.
 
@@ -544,7 +549,7 @@ As regras do jogo são como se segue.
 
 * Tire "par ou ímpar" para saber quem vai começar o jogo. Os jogadores, então, se alternam durante o jogo.
 
-* Em cada jogada, o jogador deve escolher uma das "cartas" da :numref:`fig-geometria-cv-03`. Cada carta apresenta uma flecha que especifica a orientação e a distância com as quais, a partir da posição atual do carro do jogador, é possível determinar sua nova posição. Em outras palavras, a nova posição do carro deve ser de tal modo que o vetor determinado pelo deslocamento da posição antiga para a posição nova tenha a mesma orientação e o mesmo módulo da flecha da carta escolhida pelo jogador.
+* Em cada jogada, o jogador deve escolher uma das "cartas" da :numref:`fig-geometria-cv-03`. Cada carta apresenta um segmento orientado que especifica a orientação e a distância com as quais, a partir da posição atual do carro do jogador, é possível determinar sua nova posição. Em outras palavras, a nova posição do carro deve ser de tal modo que o vetor determinado pelo deslocamento da posição antiga para a posição nova tenha a mesma orientação e o mesmo módulo do segmento orientado da carta escolhida pelo jogador.
 
 * Ao final de cada jogada, o jogador deve desenhar o vetor deslocamento associado. Para evitar confusão, recomenda-se que cada jogador use uma caneta com cor diferente.
 
@@ -566,9 +571,9 @@ As regras do jogo são como se segue.
 
 Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
 
-**Descrevendo flechas por meio de uma Rosa dos Ventos**
+**Descrevendo setas por meio de uma Rosa dos Ventos**
 
-Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, a flecha `\vec{a}` pode ser interpretada da seguinte maneira: "se desloque 2 cm para o norte". Seguindo este modelo, como as flechas `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritas?
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, o segmento orientado `\vec{a}` pode ser interpretado da seguinte maneira: "se desloque 2 cm para o norte". Seguindo este modelo, como os segmentos orientados `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritos?
 
 .. admonition:: Resposta
 
@@ -600,15 +605,15 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
          :width: 450pt
          :align: center
 
-   Descrevendo flechas por meio de uma Rosa dos Ventos
+   Descrevendo segmentos orientados por meio de uma Rosa dos Ventos
 
-   Flecha `\vec{b}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o noroeste.
-   Flecha `\vec{c}`: "se desloque `2~\text{cm}` para o oeste".
-   Flecha `\vec{d}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudoeste.
-   Flecha `\vec{e}`: "se desloque `2~\text{cm}` para o sul.
-   Flecha `\vec{f}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudeste.
-   Flecha `\vec{g}`: "se desloque `2~\text{cm}` para o leste.
-   Flecha `\vec{h}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o nordeste.
+   Segmento orientado `\vec{b}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o noroeste.
+   Segmento orientado `\vec{c}`: "se desloque `2~\text{cm}` para o oeste".
+   Segmento orientado `\vec{d}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudoeste.
+   Segmento orientado `\vec{e}`: "se desloque `2~\text{cm}` para o sul.
+   Segmento orientado `\vec{f}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudeste.
+   Segmento orientado `\vec{g}`: "se desloque `2~\text{cm}` para o leste.
+   Segmento orientado `\vec{h}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o nordeste.
 
 .. admonition:: Para o professor
 
@@ -790,7 +795,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
 **Vetor deslocamento nulo e vetor deslocamento simétrico**
 
-Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da atividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** uma flecha e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da atividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** um segmento orientado e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
 
 * a justaposição de qualquer vetor deslocamento com o vetor deslocamento nulo é igual ao vetor deslocamento inicial. Em símbolos, tem-se `\overrightarrow{AB} + \overrightarrow{BB} = \overrightarrow{AB}` quaisquer que sejam `A` e `B` e, com a notação mais curta, `\vec{v} + \vec{0} = \vec{v}` qualquer que seja `\vec{v}` (compare com o caso de  números reais: `a + 0 = 0` qualquer que seja `a`);
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
@@ -801,7 +806,7 @@ Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desl
     Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
 
 
-**Flechas especificando apenas orientação e módulo**
+**Segmentos orientados especificando apenas orientação e módulo**
 
 A :numref:`fig-geometria-cv-05` exibe o resultado de uma partida da *Corrida de Vetores* com ênfase nos vetores deslocamentos do carro azul. Note que, a partir da posição de largada `A`, o jogador escolheu a carta `\vec{a}` uma única vez, a carta `\vec{b}` duas vezes em seguida e a carta `\vec{g}` cinco vezes em seguida. Com essas cartas, o carro azul ocupou as posições `B`, `C`, …, `I` como indicadas na figura.
 
@@ -813,14 +818,14 @@ A :numref:`fig-geometria-cv-05` exibe o resultado de uma partida da *Corrida de 
    :width: 400pt
    :align: center
 
-   Flechas para vetor deslocamento (à esquerda) e flechas para definir orientação e módulo (à direita).
+   Segmentos orientados para vetor deslocamento (à esquerda) e segmentos orientados para definir orientação e módulo (à direita).
 
-Observe que as flechas das cartas têm um uso diferente das flechas dos vetores deslocamentos:
+Observe que os segmentos orientados das cartas têm um uso diferente dos segmentos orientados dos vetores deslocamentos:
 
-#. uma flecha de um vetor deslocamento representa variação de posição e, nesta representação, as posições inicial e final determinadas pela flecha são importantes, de modo que, por exemplo, o vetor deslocamento `\overrightarrow{DE}` é **diferente** do vetor deslocamento `\overrightarrow{IJ}`: se deslocar de `D` para `E` não é o mesmo que se deslocar de `I` para `J`;
-#. por sua vez, as flechas das cartas foram usadas apenas para estabelecer uma orientação e uma distância com as quais é possível determinar a posição final do carro a partir de sua posição inicial, sendo que, neste caso, a posição inicial não é importante (a flecha da carta `\vec{g}`, por exemplo, estabelece a instrução "se desloque duas unidades para leste" e essa instrução foi usada cinco vezes a partir das posições `D`, `E`, `F`, `G` e `H`).
+#. um segmento orientado associado a um vetor deslocamento representa variação de posição e, nesta representação, as posições inicial e final determinadas pelo segmento orientado são importantes, de modo que, por exemplo, o vetor deslocamento `\overrightarrow{DE}` é **diferente** do vetor deslocamento `\overrightarrow{IJ}`: se deslocar de `D` para `E` não é o mesmo que se deslocar de `I` para `J`;
+#. por sua vez, os segmentos orientados das cartas foram usados apenas para estabelecer uma orientação e uma distância com as quais é possível determinar a posição final do carro a partir de sua posição inicial, sendo que, neste caso, a posição inicial não é importante (o segmento orientado da carta `\vec{g}`, por exemplo, estabelece a instrução "se desloque duas unidades para leste" e essa instrução foi usada cinco vezes a partir das posições `D`, `E`, `F`, `G` e `H`).
 
-Para as flechas das cartas, as propriedades relevantes são orientação e módulo. A definição mais geral e abstrata de vetor apresentada na próxima seção fará uso justamente dessas propriedades.
+Para os segmentos orientados das cartas, as propriedades relevantes são orientação e módulo. A definição mais geral e abstrata de vetor apresentada na próxima seção fará uso justamente dessas propriedades.
 
 
 ************************************
@@ -840,9 +845,9 @@ Organizando as ideias: vetores do ponto de vista geométrico
    * Compreender algumas propriedades da soma de vetores.
 
 
-Até aqui associamos vetor ao deslocamento de um objeto e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento foi feita por uma flecha, sendo as extremidades inicial e final da flecha as posições inicial e final da trajetória.
+Até aqui associamos vetor ao deslocamento de um objeto e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento foi feita por um segmento orientado, sendo as extremidades inicial e final do segmento orientado as posições inicial e final da trajetória.
 
-A partir de agora, estudaremos a geometria das flechas de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira superficial quando jogamos a Corrida de Vetores. Neste jogo, as flechas das cartas foram utilizadas para estabelecer a orientação e a distância a ser percorrida, sendo a extremidade inicial das flechas das cartas menos relevante. Pensando dessa forma, flechas são apenas representações gráficas de segmentos de reta orientados com módulo, direção e sentido. No que se segue, vamos tentar discutir um pouco melhor as características citadas dos segmentos de reta, e assim nos aprofundar nesse nosso estudo.
+A partir de agora, estudaremos a geometria dos segmentos orientados de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira superficial quando jogamos a Corrida de Vetores. Neste jogo, os segmentos orientados das cartas foram utilizados para estabelecer a orientação e a distância a ser percorrida, sendo a extremidade inicial das setas das cartas menos relevante. Pensando dessa forma, segmentos orientados especificam módulo, direção e sentido. No que se segue, vamos tentar discutir um pouco melhor as características citadas dos segmentos de reta, e assim nos aprofundar nesse nosso estudo.
 
 Para começar esta nova etapa, vamos relembrar que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da figura é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois estamos interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`.
 
@@ -854,7 +859,7 @@ Para começar esta nova etapa, vamos relembrar que :index:`segmento de reta` é 
 
    Segmento de reta `AB` ou `BA`.
 
-Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico as flechas.
+Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico os segmentos orientados.
 
 .. _fig-geometria-operacoesvetores-02:
 
@@ -866,9 +871,9 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
 
 Na :numref:`fig-geometria-operacoesvetores-02`, a orientação escolhida para o primeiro segmento foi de `A` para `B`. Neste caso, denotaremos o :index:`segmento orientado` por `\overrightarrow{AB}`. Já na segunda reta, o mesmo segmento de reta foi orientado de `B` para `A`, e, então, escreveremos `\overrightarrow{BA}`. Repare pelas notações adotadas para estes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
 
-Como dissemos antes, a partir daqui as flechas serão representações de segmentos orientados que possuem as seguintes características: módulo, direção e sentido. A extremidade inicial da flecha coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da flecha coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado a uma flecha e uma flecha a um segmento de reta orientado. Usaremos os dois termos (flechas e segmentos orientados) no restante dessa seção significando a mesma coisa.
+Como dissemos antes, a partir daqui segmentos orientados serão representados por felchas que possuem as seguintes características: módulo, direção e sentido. A extremidade inicial da seta coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da seta coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado a uma seta e uma seta a um segmento de reta orientado.
 
-O *módulo da flecha* é o comprimento do segmento de reta que a define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e sentido da flecha* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção do segmento proveniente de sua reta suporte.
+O *módulo do segmento orientado* é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e sentido do segmento orientado* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção do segmento proveniente de sua reta suporte.
 
 .. _fig-geometria-operacoesvetores-03:
 
@@ -884,7 +889,7 @@ Diremos que dois segmentos possuem a mesma direção se eles forem colineares (s
 
 **Vetor**
 
-Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados (flechas) tenham sido desenhadas em lugares diferentes, todas eles possuem as mesmas características: módulo, direção e sentido. A uma coleção de segmentos orientados com as mesmas características daremos o nome de *vetor*. Veja a próxima definição.
+Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados tenham sido desenhados em lugares diferentes, todas eles possuem as mesmas características: módulo, direção e sentido. A uma coleção de segmentos orientados com as mesmas características daremos o nome de *vetor*. Veja a próxima definição.
 
 
 .. _fig-geometria-operacoesvetores-04:
@@ -904,7 +909,7 @@ Pela definição acima, um vetor fica determinado por uma infinidade de segmento
 
 Repare que qualquer segmento de reta orientado determina uma coleção de segmentos que é um vetor e qualquer outro segmento desta coleção representa o mesmo vetor. A qualquer representante de uma mesma coleção também daremos o nome de vetor, ou seja, vetor é toda a coleção ou então um representante da coleção, dependendo do contexto.
 
-Podemos denotar um vetor de duas formas diferentes. A primeira delas é com uma letra minúscula e uma flecha, por exemplo `\vec{v}`. E, a outra é usando as duas letras que caracterizam as extremidades inicial e final de um de seus representantes, por exemplo `\overrightarrow{AB}`. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `\overrightarrow{AB}` é um representante do vetor `\vec{v}`.
+Podemos denotar um vetor de duas formas diferentes. A primeira delas é com uma letra minúscula e uma seta, por exemplo `\vec{v}`. E, a outra é usando as duas letras que caracterizam as extremidades inicial e final de um de seus representantes, por exemplo `\overrightarrow{AB}`. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `\overrightarrow{AB}` é um representante do vetor `\vec{v}`.
 
 Para indicar o módulo do vetor `\vec{v}` usaremos a notação `|\vec{v}|`.
 
@@ -981,7 +986,7 @@ Agora que já sabemos o que é um vetor e como representá-lo por um segmento de
 
 **Soma de vetores**
 
-Na seção anterior, vimos o conceito de flechas justapostas. Podemos estender esse conceito para o caso de vetores da seguinte forma: diremos que dois vetores estão justapostos se dois de seus representantes, que são segmentos orientados, estão justapostos.
+Na seção anterior, vimos o conceito de segmentos orientados justapostos. Podemos estender esse conceito para o caso de vetores da seguinte forma: diremos que dois vetores estão justapostos se dois de seus representantes, que são segmentos orientados, estão justapostos.
 
 .. admonition:: Definição
 
@@ -1072,6 +1077,8 @@ para qualquer vetor `\vec{v}`.
       :align: center
 
       Vetor diferença `\vec{v}-\vec{u}`.
+
+Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`).
 
 * Associatividade da soma: considere `\overrightarrow{AB}, \overrightarrow{BC}` e `\overrightarrow{CD}` representantes dos vetores `\vec{u}, \vec{v}` e `\vec{w}`, respectivamente, como na figura abaixo.
 
@@ -1184,7 +1191,7 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
 
       .. tikz::
 
-              \begin{tikzpicture}[scale=0.9]              
+              \begin{tikzpicture}[scale=0.9]
               \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
               \definecolor{qqqqff}{rgb}{0.,0.,1.}
               \tikzset{>=latex}
@@ -1231,18 +1238,18 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
                 \draw [-{Latex[length=4mm,width=2.5mm]}, color=qqqqff] (v4.center)--(v5.center);
 
 
-.. Fonte da figura do ciclo de infecção do vírus da Dengue: http://www.brasil.gov.br/saude/2010/03/ciclo_da_dengue/view       
+.. Fonte da figura do ciclo de infecção do vírus da Dengue: http://www.brasil.gov.br/saude/2010/03/ciclo_da_dengue/view
 
 
 
 .. admonition:: Você sabia?
 
    De acordo com [Bello-2013]_, o verbo em Latim *veho*, *vehere*, *vexi*, *vectus* significa transportar ou carregar. Ao acrescenter o sufixo *or* à raiz da palavra *vectus*, obtém-se *vector*, o agente, aquele que carrega. Observe, então, que o uso da palavra vetor no contexto de deslocamentos faz jus a sua etimologia.
-   
+
    A palavra *vetor* não está restrita à Matemática e ela é usada outras disciplinas.
-   
+
    #. Em Epidemiologia, a palavra *vetor* é usada para referenciar todo ser vivo capaz de transmitir de forma ativa (estando infectado) ou passiva um agente infeccioso (parasita, bactéria ou vírus). Assim, por exemplo, o mosquito *Aedes aegypit* é, no Brasil, o vetor doença do vírus da Dengue.
-         
+
       .. _fig-vetor-epidemiologia:
 
       .. figure:: _resources/geometria-aedes-aegypti-03.jpg
@@ -1250,19 +1257,19 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
          :align: center
 
          O mosquito *Aedes aegypit* como vetor do vírus da Dengue (fonte: Governo Federal e Wikimedia Commons).
-       
+
 
    #. Em Aviação, quando um piloto de avião em aproximação a um aeroporto pede por *vetores* à torre de controle, o que ele está solicitando é por uma orientação (ângulo de aproximação). Desta maneira, um vetor em Aviação não é um vetor no sentido matemático (por quê?).
-   
+
    #. Em Computação Gráfica, uma imagem vetorial é aquela que é representada via objetos geométricos (segmentos, polígonos, curvas, etc.), cada um definido por seus atributos matemáticos de forma e posição, atributos estes frequentemente dados por meio de vetores. Enquanto que uma imagem do tipo *raster* (*bitmap*), formada por *pixels*, perde resolução (qualidade) ao ser ampliada, uma imagem vetorial pode ser ampliada sucessivamente mantendo-se a qualidade da imagem.
-   
+
       .. figure::  _resources/geometria-imagem-vetorial-01.jpg
          :width: 175pt
          :align: center
 
          imagem vetorial *versus* imagem bitmap (fonte: Wikimedia Commons).
-         
-   
+
+
 
 
 ************************************
@@ -1273,23 +1280,23 @@ Praticando o assunto
 .. _ativ-vetores-e-ou-nao-vetor:
 
 
-Atividade: toda flecha é vetor?
+Atividade: toda seta é vetor?
 ------------------------------------------
 
 .. admonition:: Para o professor
 
    **Objetivos específicos**
 
-   * Identificar, nas situações apresentadas no enunciado do exercício, se as flechas representam ou não um vetor.
-   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, flechas de mesmo tamanho para representar direção e sentido e uma escala de cores para representar o módulo) e que estes meios são usados em outras áreas.
-   * Perceber os diversos usos de flechas como recurso gráfico.
+   * Identificar, nas situações apresentadas no enunciado do exercício, se as setas representam ou não um vetor.
+   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, setas de mesmo tamanho para representar direção e sentido e uma escala de cores para representar o módulo) e que estes meios são usados em outras áreas.
+   * Perceber os diversos usos de setas como recurso gráfico.
 
    **Recomendações e sugestões**
 
-   * A placa de trânsito pode levantar a questão sobre a espessura da flecha: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentados e em qualquer um que venha a ser feito, as flechas têm alguma espessura e, neste ponto, é importante esclarecer que estas flechas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
-   * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de flechas como recurso gráfico em diferentes áreas do conhecimento.
+   * A placa de trânsito pode levantar a questão sobre a espessura da seta: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentados e em qualquer um que venha a ser feito, as setas têm alguma espessura e, neste ponto, é importante esclarecer que estas setas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
+   * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de setas como recurso gráfico em diferentes áreas do conhecimento.
 
-Vimos que vetores são representados geometricamente por flechas. Mas será que toda flecha em um desenho representa um vetor? Analise as imagens a seguir e decida se as flechas desenhadas representam um vetor, isto é, se as flechas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
+Vimos que vetores são representados geometricamente por setas. Mas será que toda seta em um desenho representa um vetor? Analise as imagens a seguir e decida se as setas desenhadas representam um vetor, isto é, se as setas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
 
 .. _fig-geometria-flechas-01:
 
@@ -1344,16 +1351,15 @@ Vimos que vetores são representados geometricamente por flechas. Mas será que 
 
 .. admonition:: Resposta
 
-   * A flecha da :numref:`fig-geometria-flechas-01` não representa um vetor, pois ela indica apenas direção e sentido, sem nenhuma atribuição com relação ao módulo.
-   * As flechas da :numref:`fig-geometria-flechas-02` são vetores. De fato, elas são vetores deslocamentos.
-   * As flechas da :numref:`fig-geometria-flechas-06`, somente por si, indicam apenas direção e sentido, logo elas não são vetores. O mapa de ondas, como um todo, por outro lado, está codificando uma grandeza vetorial: a direção e o sentido da propagação da onda (por meio das flechas) e sua altura significativa em metros (por meio das cores).
-   * As flechas da :numref:`fig-geometria-flechas-07` representam vetores, pois elas indicam direção, sentido e módulo. Note que, contudo, ao invés de representar o módulo por meio do comprimento da flecha, esta figura optou por usar uma escala de cores.
-   * As flechas da :numref:`fig-geometria-flechas-03`  representam vetores, pois elas indicam direção, sentido e módulo. Note que, aqui, existe uma redundância na representação do módulo: isto está sendo feito pelo comprimento da flecha e por sua cor.
-   * A flecha da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo.
+   * A seta da :numref:`fig-geometria-flechas-01` não representa um vetor, pois ela indica apenas direção e sentido, sem nenhuma atribuição com relação ao módulo.
+   * As setas da :numref:`fig-geometria-flechas-02` são vetores. De fato, elas são vetores deslocamentos.
+   * As setas da :numref:`fig-geometria-flechas-06`, somente por si, indicam apenas direção e sentido, logo elas não são vetores. O mapa de ondas, como um todo, por outro lado, está codificando uma grandeza vetorial: a direção e o sentido da propagação da onda (por meio das setas) e sua altura significativa em metros (por meio das cores).
+   * As setas da :numref:`fig-geometria-flechas-07` representam vetores, pois elas indicam direção, sentido e módulo. Note que, contudo, ao invés de representar o módulo por meio do comprimento da seta, esta figura optou por usar uma escala de cores.
+   * As setas da :numref:`fig-geometria-flechas-03`  representam vetores, pois elas indicam direção, sentido e módulo. Note que, aqui, existe uma redundância na representação do módulo: isto está sendo feito pelo comprimento da seta e por sua cor.
+   * A seta da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo.
 
 
-
-Atividade: soma de vetores
+Atividade: soma de dois vetores
 ------------------------------------------
 
 .. admonition:: Para o professor
@@ -1754,7 +1760,7 @@ Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor 
         \draw [dotted] (v2.center) -- (v3.center);
         \draw[] (1.5912,-0.5104) node {$\vec{u}$};
         \draw[] (-1.3178,-0.1357) node {$\vec{v}$};
-        
+
 
    .. tikz:: Caso (C)
 
@@ -1885,71 +1891,483 @@ A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` 
     \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
     \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
 
+..
+  Atividade: soma de três vetores
+  ------------------------------------------
 
-Atividade: soma de três vetores
+  .. admonition:: Para o professor
+
+     **Objetivo específico:** somar três vetores com representantes desenhados com uma mesma extremidade.
+
+  Na figura a seguir estão representados três vetores `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+  .. tikz::
+
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          % \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          % \draw [dotted] (v2.center) -- (v4.center);
+          % \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          % \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+  #. Copie a figura para seu caderno e, então, desenhe o vetor soma `\vec{u} + \vec{v}`.
+
+  .. admonition:: Resposta
+
+     #. O vetor soma `\vec{u} + \vec{v}` já está desenhado na figura, pois `\vec{u} + \vec{v} = \vec{w}`.
+
+     #. Observe que `\vec{u} + \vec{v} + \vec{w} = \vec{w} + \vec{w} = 2 \, \vec{w}`.
+
+
+      .. tikz::
+
+          \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          \draw [dotted] (v2.center) -- (v4.center);
+          \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+
+Atividade: a ordem das parcelas não altera a soma
 ------------------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** somar três vetores com representantes desenhados com uma mesma extremidade.
+   **Objetivos específicos**
 
-Na figura a seguir estão representados três vetores `\vec{u}`, `\vec{v}` e `\vec{w}`. 
+   #. Reconhecer vetores iguais.
+   #. Praticar a soma de dois e três vetores.
+   #. Perceber que, na soma de três vetores, a ordem das parcelas não altera o resultado da operação.
 
-.. tikz:: 
+Na figura a seguir, `\vec{u} = \overrightarrow{AB}`, `\vec{v} = \overrightarrow{AD}`, `\vec{w} = \overrightarrow{AF}` e os quadriláteros `ABCD`, `ABGF`, `ADIF`, `FGHI`, `DCHI` e `BCHG` são paralelogramos.
+
+
+.. tikz::
 
        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
-        \tikzset{>=latex}
-        \draw  (-2.5,-2) rectangle (3.5,2.5);
-        % \clip (-4.5,-3) rectangle (4.5,3);
-        \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
-        \node (v1) at (0,0) {};
-        \node (v2) at (1,-1) {};
-        \node (v3) at (0,1.5) {};
-        \node (v4) at (1, 0.5) {};
-        \node (v5) at (2, 1) {};
-        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
-        % \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
-        % \draw [dotted] (v2.center) -- (v4.center);
-        % \draw [dotted] (v3.center) -- (v4.center);
-        \draw[] (-0.2948,0.7484) node {$\vec{u}$};
-        \draw[] (0.1492,-0.6437) node {$\vec{v}$};
-        \draw[] (0.609,-0.0321) node {$\vec{w}$};
-        % \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       % \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       % \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       % \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       % \draw[] (3.3431,0.584) node {$\vec{v}$};
+       % \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       % \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       % \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       % \draw[] (4.0729,2.858) node {$\vec{w}$};
+       % \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
-#. Copie a figura para seu caderno e, então, desenhe o vetor soma `\vec{u} + \vec{v}`.
+#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{v}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
+
+#. Desenhe na figura os vetores `\overrightarrow{AC}`, `\overrightarrow{AG}` e `\overrightarrow{AI}` e escreva-os em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+#. Use a figura e os dois itens anteriores para mostrar que `\vec{u} + \vec{v} + \vec{w} = \vec{u} + \vec{w} + \vec{v} = \vec{v} + \vec{u} + \vec{w} = \vec{v} + \vec{w} + \vec{u} = \vec{w} + \vec{u} + \vec{v} = \vec{w} + \vec{v} + \vec{u}`, isto é, que a ordem das parcelas não altera a soma.
 
 .. admonition:: Resposta
 
-   #. O vetor soma `\vec{u} + \vec{v}` já está desenhado na figura, pois `\vec{u} + \vec{v} = \vec{w}`.
+   #.
+
+
+    .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+   #.
+
+
+    .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+   #. Observe que `\vec{u} + \vec{v} + \vec{w} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{u} + \vec{w} + \vec{v} = \overrightarrow{AB} + \overrightarrow{BG} + \overrightarrow{GH} = \overrightarrow{AH}`, `\vec{v} + \vec{u} + \vec{w} = \overrightarrow{AD} + \overrightarrow{DC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{v} + \vec{w} + \vec{u} = \overrightarrow{AD} + \overrightarrow{DI} + \overrightarrow{IH} = \overrightarrow{AH}`, `\vec{w} + \vec{u} + \vec{v} = \overrightarrow{AF} + \overrightarrow{FG} + \overrightarrow{GH} = \overrightarrow{AH}` e  `\vec{w} + \vec{v} + \vec{u} = \overrightarrow{AF} + \overrightarrow{FI} + \overrightarrow{IH} = \overrightarrow{AH}`.
+
+
+    .. tikz::
+
+              \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+
+
+
+
+
+
+Atividade: procurando pontos
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: compreender a igualdade e soma de vetores por meio da resolução equações vetoriais.
+
+   **Recomendações e sugestões**
+
+   * Note que algumas equações podem ter mais de uma solução.
+   * O polígono desenhado não desempenha papel algum na solução da ativdiade.
+   * Enquanto a Equação g) não possui solução entre os pontos indicados na figura (isto é, os pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J`), certamente existe um ponto `X` no plano tal que `\overrightarrow{AB} + \overrightarrow{BX} = \overrightarrow{IJ}`.
+
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 211) Complete os espaços sublinhados com os nomes dos pontos indicados na figura de modo a deixar cada igualdade verdadeira.
+
+#. `\overrightarrow{IB} = \overrightarrow{\underline{\hphantom{M}}A} + \overrightarrow{A\underline{\hphantom{M}}}`.
+#. `\overrightarrow{HG} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \overrightarrow{HF}`.
+#. `\overrightarrow{D\underline{\hphantom{M}}} + \overrightarrow{C\underline{\hphantom{M}}} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{E\underline{\hphantom{M}}} + \overrightarrow{\underline{\hphantom{M}}E} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{A\underline{\hphantom{M}}} = \overrightarrow{A\underline{\hphantom{M}}} + \overrightarrow{B\underline{\hphantom{M}}} +\overrightarrow{CJ}`.
+#. `\overrightarrow{FE} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \vec{0}`.
+#. `\overrightarrow{AB} + \overrightarrow{B\underline{\hphantom{M}}} = \overrightarrow{IJ}`.
+
+
+.. tikz::
+
+    %\newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
+    \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+    \draw[color=gggggg,thin] (-1,-1) grid (7,6);
+    \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle;
+    % \pointGraphique{3}{5}{A}{above left}
+    \draw (3, 5) node[above left] {$A$};
+    \fill (3, 5) circle [radius=2pt];
+    % \pointGraphique{4}{4}{B}{above right}
+    \draw (4, 4) node[above right] {$B$};
+    \fill (4, 4) circle [radius=2pt];
+    % \pointGraphique{6}{4}{C}{above right}
+    \draw (6, 4) node[above right] {$C$};
+    \fill (6, 4) circle [radius=2pt];
+    % \pointGraphique{4}{2}{D}{above left}
+    \draw (4, 2) node[above left] {$D$};
+    \fill (4, 2) circle [radius=2pt];
+    % \pointGraphique{5}{0}{E}{below right}
+    \draw (5, 0) node[below right] {$E$};
+    \fill (5, 0) circle [radius=2pt];
+    % \pointGraphique{4}{0}{F}{below left}
+    \draw (4, 0) node[below left] {$F$};
+    \fill (4, 0) circle [radius=2pt];
+    % \pointGraphique{3}{1}{G}{above left}
+    \draw (3, 1) node[above left] {$G$};
+    \fill (3, 1) circle [radius=2pt];
+    % \pointGraphique{2}{0}{H}{below right}
+    \draw (2, 0) node[below right] {$H$};
+    \fill (2, 0) circle [radius=2pt];
+    % \pointGraphique{1}{0}{I}{below left}
+    \draw (1, 0) node[below left] {$I$};
+    \fill (1, 0) circle [radius=2pt];
+    % \pointGraphique{0}{2}{J}{above left}
+    \draw (0, 2) node[above left] {$J$};
+    \fill (0, 2) circle [radius=2pt];
+
+.. admonition:: Resposta
+
+      #. `\overrightarrow{IB} = \overrightarrow{IA} + \overrightarrow{AB}`.
+      #. `\overrightarrow{HG} + \overrightarrow{GF} = \overrightarrow{HF}` ou `\overrightarrow{HG} + \overrightarrow{AB} = \overrightarrow{HF}`.
+      #. `\overrightarrow{DD} + \overrightarrow{CC} = \overrightarrow{BB}`, `\overrightarrow{DC} + \overrightarrow{CD} = \overrightarrow{BB}`,       `\overrightarrow{DD} + \overrightarrow{CB} = \overrightarrow{CB}`, `\overrightarrow{DB} + \overrightarrow{CD} = \overrightarrow{CB}`,       `\overrightarrow{DC} + \overrightarrow{CB} = \overrightarrow{DB}` ou       `\overrightarrow{DB} + \overrightarrow{CC} = \overrightarrow{DB}`.
+      #. `\overrightarrow{EB} + \overrightarrow{AE} = \overrightarrow{AB}`, `\overrightarrow{EF} + \overrightarrow{GE} = \overrightarrow{AB}`, `\overrightarrow{EA} + \overrightarrow{AE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{BE} = \overrightarrow{BB}`, `\overrightarrow{EC} + \overrightarrow{CE} = \overrightarrow{BB}`, `\overrightarrow{ED} + \overrightarrow{DE} = \overrightarrow{BB}`, `\overrightarrow{EE} + \overrightarrow{EE} = \overrightarrow{BB}`, `\overrightarrow{EF} + \overrightarrow{FE} = \overrightarrow{BB}`, `\overrightarrow{EG} + \overrightarrow{GE} = \overrightarrow{BB}`, `\overrightarrow{EH} + \overrightarrow{HE} = \overrightarrow{BB}`, `\overrightarrow{EI} + \overrightarrow{IE} = \overrightarrow{BB}`, `\overrightarrow{EJ} + \overrightarrow{JE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{CE} = \overrightarrow{CB}`, `\overrightarrow{EH} + \overrightarrow{FE} = \overrightarrow{CB}`, `\overrightarrow{EB} + \overrightarrow{DE} = \overrightarrow{DB}`, `\overrightarrow{ED} + \overrightarrow{FE} = \overrightarrow{DB}`, `\overrightarrow{EB} + \overrightarrow{EE} = \overrightarrow{EB}`, `\overrightarrow{EB} + \overrightarrow{FE} = \overrightarrow{FB}`, `\overrightarrow{EA} + \overrightarrow{GE} = \overrightarrow{FB}`, `\overrightarrow{EB} + \overrightarrow{GE} = \overrightarrow{GB}`, `\overrightarrow{EC} + \overrightarrow{FE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{HE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{IE} = \overrightarrow{IB}` ou `\overrightarrow{EB} + \overrightarrow{JE} = \overrightarrow{JB}`.
+      #. `\overrightarrow{AJ} = \overrightarrow{AC} + \overrightarrow{BB} + \overrightarrow{CJ}` ou `\overrightarrow{AJ} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CJ}`.
+      #. `\overrightarrow{FE} + \overrightarrow{EF} = \vec{0}` ou `\overrightarrow{FE} + \overrightarrow{HI} = \vec{0}`.
+      #. Nenhum dos pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J` torna a equação verdadeira.
+
+
+
+
+Atividade: usando vetores para demonstrar resultados em Geometria
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: praticar o uso de vetores para demonstrar resultados em Geometria.
    
-   #. Observe que `\vec{u} + \vec{v} + \vec{w} = \vec{w} + \vec{w} = 2 \, \vec{w}`.
-   
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 219) Considere um paralelogramo `OIJK`. Os pontos `A`, `B` e `G` são tais que `\overrightarrow{OA} = \frac{1}{2} \, \overrightarrow{OI}`, `\overrightarrow{OB} = \frac{1}{3} \, \overrightarrow{OK}` e `\overrightarrow{AG} = \frac{3}{5} \, \overrightarrow{AB}`.
+
+#. Faça uma figura para ilustrar o enunciado da atividade.
+
+#. Demonstre que `\overrightarrow{OG} = \frac{1}{5} \, \overrightarrow{OJ}`. Conclua que, em particular, os pontos `O`, `G` e `J` são colineares.
+
+.. admonition:: Resposta    
+
+   #. 
 
     .. tikz:: 
 
-        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
-        \tikzset{>=latex}
-        \draw  (-2.5,-2) rectangle (3.5,2.5);
-        % \clip (-4.5,-3) rectangle (4.5,3);
-        \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
-        \node (v1) at (0,0) {};
-        \node (v2) at (1,-1) {};
-        \node (v3) at (0,1.5) {};
-        \node (v4) at (1, 0.5) {};
-        \node (v5) at (2, 1) {};
-        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
-        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
-        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
-        \draw [dotted] (v2.center) -- (v4.center);
-        \draw [dotted] (v3.center) -- (v4.center);
-        \draw[] (-0.2948,0.7484) node {$\vec{u}$};
-        \draw[] (0.1492,-0.6437) node {$\vec{v}$};
-        \draw[] (0.609,-0.0321) node {$\vec{w}$};
-        \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};           
-   
-   
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (0, 0) {};
+       \node (v2) at (6, 0) {};
+       \node (v4) at (1, 4) {};
+       \node (v3) at (7, 4) {};
+       \node (v5) at (3, 0) {};
+       \node (v6) at (0.3333333, 1.3333333) {};
+       \node (v7) at (1.4, 0.8) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];   
+       \fill (v5) circle [radius=2pt];   
+       \fill (v6) circle [radius=2pt];   
+       \fill (v7) circle [radius=2pt];   
+       \node [label={west:$O$}] at (v1) {};
+       \node [label={east:$I$}] at (v2) {};
+       \node [label={east:$J$}] at (v3) {};       
+       \node [label={west:$K$}] at (v4) {};
+       \node [label={south:$A$}] at (v5) {};
+       \node [label={west:$B$}] at (v6) {};
+       \node [label={north:$G$}] at (v7) {};
+       \draw[line width=1.0pt] (v1.center)--(v2.center)--(v3.center)--(v4.center)--cycle;         
+       \draw[line width=1.0pt] (v5.center)--(v6.center);
+       \draw[dotted] (v1)--(v3);
+       
+   #. Demonstração: `\overrightarrow{OG} = \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{AB} = \overrightarrow{OA} + \frac{3}{5} \, \left(\overrightarrow{OB} - \overrightarrow{OA}\right) = \frac{2}{5} \, \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{OB} = \frac{2}{5} \, \frac{1}{2} \, \overrightarrow{OI} + \frac{3}{5} \, \frac{1}{3} \, \overrightarrow{OK} = \frac{1}{5} \, \overrightarrow{OI} + \frac{1}{5} \, \overrightarrow{OK} = \frac{1}{5} \, \left(\overrightarrow{OI} + \overrightarrow{OK}\right) = \frac{1}{5} \, \overrightarrow{OJ}`. Desta maneira, `\overrightarrow{OG}` tem mesma direção e sentido de `\overrightarrow{OJ}` e, portanto, `O`, `G` e `J` são colineares.
