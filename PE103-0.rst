@@ -758,11 +758,11 @@ Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiot
 
    * Como você faria para visualizar o comportamento de uma variável com estas características?
 
-A natureza da variável quantitativa contínua induz a resultados que praticamente nâo se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição em frequências.
+A natureza da variável quantitativa contínua induz a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
 
 .. por que classes vazias?
 
-#. Usando  a divisão regular do intervalo de 3 a 8 proposta na tabela a seguir, complete-a. Cada categoria é o que chamamos de intervalo fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior não se inclui e o limite superior está incluso, como se explicita na tabela.
+#. Usando  a divisão regular do intervalo de 3 a 8 proposta na tabela a seguir, complete-a. Cada classe representa um intervalo fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior não se inclui e o limite superior está incluso, como se explicita na tabela.
 
    +---------------------+-----------------------------+
    | Intervalo de classe | Número de observações       |
@@ -787,10 +787,9 @@ A natureza da variável quantitativa contínua induz a resultados que praticamen
    +---------------------+-----------------------------+
    | [ 7,5 ; 8,0 )       |                             |
    +---------------------+-----------------------------+
+Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de observações que caem no  intervalo correspondente. A base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
 
-Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de observações classificados no correspondente ao intervalo de classe no eixo. Observe que a base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
-
-#. Complete a figira a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
+#. Complete a figura a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
 
    .. _fig-histograma:
 
@@ -914,24 +913,27 @@ Histograma
 Praticando 2
 ------------------------------
 
-Exercícios e situações práticas que envolvam a construção de gráficos, a análise de gráficos e a apresentação de outros tipos de gráficos.
+.. _ativ-1-histogrma-variacoes:
+------------------------------------------
+Construção do histograma
+------------------------------------------
 
-#. Refine o histograma utilizando um programa de computador <incluir link geogebra>. Observe o que acontece quando se refina muito a divisão do intervalo.
+#. Refaça o histograma dos dados de registros de tempo usando um programa de computador <incluir link geogebra>. 
+
+#. O que acontece quando aumentamos o número de intervalos?
 
    Às vezes a escala do histograma pode ocultar comportamentos do fenômeno que estamos estudando.
 
-#. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos (disponível de GeoGebra). 
-.. Observe como existe a possibilidade de que os registros sejam de eventos distintos e mesmo assim, isto fica oculto sob os grupos do histograma.
-
-.. Como seria aqui o organizando as ideias???
-
-.. Pode se incluir aqui uma discussão sobre o histograma ou então juntar com a da próxima atividade...
+#. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos (Planilha de dados disponível no GeoGebra). 
 
 
-**Séries temporais**
 
+.. _ativ-1-histogrma-variacoes:
+------------------------------------------
+Séries Temporais de Temperatura
+------------------------------------------
 
-Se colocamos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
+Considere novamente os dados de temperatura da atividade anterior. Se representarmos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
 
 
 .. _fig-linhas-sazonalidade:
@@ -941,7 +943,6 @@ Se colocamos todos os dados da tabela num único gráfico com a escala temporal 
    :align: center
 
    Efeito da sazonalidade no gŕafico de linhas da temperatura máxima média
-
 
 Observe que a sazonalidade dificulta a leitura do gráfico acima. Como você acha que pode ser evitado o efeito da sazonalidade para analisar a evolução da temperatura máxima ao longo dos anos?
 
