@@ -1,4 +1,4 @@
-.. _cap-medidas-de-tendencia-central:
+.. _cap-a-natureza-da-estatistica:
 
 ***************************
 A Natureza da Estatística
@@ -60,6 +60,13 @@ Introdução
 .. Retirado do material do Nei (Aula1)
 
 Vivemos cercados de incertezas. A todo momento somos bombardeados por informações sobre pequisas científicas comprovando (estatisticamente) que tal substância causa uma patologia, ou sobre pesquisas de opinião, índices de pobreza, características sobre o envelhecimento da população, e outros conteúdos de forte caracterização probabilísitca. Num mundo assim é importante ter espírito crítico para informações sujeitas à incerteza a fim de poder interpretá-las e até mesmo poder distinguir informações falsas de verdadeiras. Nessa medida, a Estatística é uma disciplina fundamental para todos os estudantes e, talvez, aquela que mais atua na formação crítica do cidadão, pois ela é usada nas mais variadas áreas do conhecimento tais como: Medicina, Economia, Política, Direito, Psicologia, Engenharia, Educação, entre outras.
+
+Mas afinal o que é Estatística? 
+
+
+.. admonition:: Estatística
+
+   Arte e ciência de coletar, analisar, apresentar e interpretar dados, para que se tomem decisões sob incerteza.
 
 .. inserir figura para a introdução
 
@@ -499,12 +506,17 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
    3. Entre as pessoas que não concordam que o poder público deve investir em atividades físicas, 57,8% acham que a prioridade deve ser Saúde, 21,3% acham que a prioridade deve ser Segurança, 16,5%, acham que a prioridade deve ser Educação e, o restante (4,4%) respondeu outros tipos de prioridade.
 
 
-.. _sub-organizando-as-ideias-1:
+.. _organizando-1:
 
 Organizando as ideias 1
--------------------------
+---------------------------
 
-Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística descritos a seguir.
+Nas atividades anteriores foram trabalhados vários conceitos importantes da Estatística que serão descritos a seguir.
+
+.. _ativ-1-escolha-do-melhor-fornecedor:
+------------------------------------------
+Conceitos Básicos 
+------------------------------------------
 
 População
    é um conjunto de elementos com pelo menos uma característica em comum.
@@ -532,6 +544,12 @@ Parâmetro
 Estimador
    função que produz estimativas de parâmetros usando os dados da amostra.
 
+
+.. _classificacao-variaveis:
+------------------------------------------
+Classificação de variáveis 
+------------------------------------------
+
 Uma variável estatística é **qualitativa** se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD/2015, representa variáveis qualitativas.
 
 Uma **variável qualitativa** é classificada em **nominal** ou **ordinal**. A variável qualitativa é nominal quando não existe nenhuma ordenação natural das respostas associadas à variável. Exemplos de variáveis nominais: bairro de residência, tipo sanguíneo, modalidade de atividade física que pratica, etc. A variável qualitativa é ordinal quando existe uma ordenação natural das respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: ensino fundamental incompleto, ensino fundamental completo, ensino médio incompleto, ensino médio completo, ensino superior incompleto e ensino superior completo. Podemos perceber que quem tem ensino fundamental completo tem maior nível de instrução de quem tem ensino fundamental incompleto e, assim por diante.
@@ -544,7 +562,7 @@ Uma variável quantitativa é classificada em **discreta** ou **contínua**. As 
 .. _fig-coloque-aqui-o-nome:
 
 .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tipos_variaveis.png
-   :width: 600px
+   :width: 400px
    :align: center
 
    Classificação dos tipos de variáveis
@@ -554,10 +572,13 @@ Uma variável quantitativa é classificada em **discreta** ou **contínua**. As 
 
  A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa. Nesse caso, podemos no máximo identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico 3 verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
 
- Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa discreta. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variábvel "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com a penas duas respostas é chamado **variável binária** e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas cuja soma representará o número de pessoas na amostra que praticam atividade física.
+ Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa discreta. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com a penas duas respostas é chamado **variável binária** e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas cuja soma representará o número de pessoas na amostra que praticam atividade física.
    
+.. _graficos-variaveis-qualitativas:
+------------------------------------------
+Gráficos para Variáveis Qualitativas
+------------------------------------------
 
-**Gráficos para Variáveis Qualitativas**
 
 Nas análises dos infográficos trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, temos um **gráfico de barras**. Nesse gráfico, a única escala usada é a da frequência na qual as respostas ocorrem. Cada barra representa uma resposta e seu comprimento corresponde à frequência (ou porcentagem) na qual a resposta ocorre. Observe também que nesse gráfico, a soma das porcentagens deve ser 100%, correspondendo ao conjunto completo observado. A orientação das barras pode ser tanto vertical, como horizontal. 
 
@@ -589,49 +610,88 @@ No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é sub
 .. admonition:: Para o professor
 
    Converse com os alunos que na hora de escolher entre o gráfico de setores ou o gráfico de barras, se o número de respostas é grande, maior que 8 ou 10, e também quando as diferenças nas frequências das respostas são pequenas, por exemplo uma tem porcentagem 22% e a outra tem porcentagem 25%, o gráfico de setores não será muito adequado, pois pequenas diferenças de ângulos que geram os setores nesse gráfico não são perceptíveis, enquanto que no gráfico de barras é possível facilmente perceber barras de comprimentos diferentes. Também é importante comentar que para efeito de comparações múltiplas o gráfico de setores não é adequado. Não é a toa que todos infográficos da atividade para comparar diferentes grupos quanto à prática de atividades físicas são gráficos de barras múltiplas. Finalmente, e não menos importante, sempre lembrar que em comparações múltiplas é fundamental relativizar a frequência absoluta usando frequências relativas ou porcentagens quando os diferentes grupos têm tamanhos diferentes.
-
-.. _sub-organizando-as-ideias-1:
+   
+.. _praticando-1:
 
 Praticando 1
--------------------------
+---------------------------
 
-**1) Prática de Atividade Física na turma**
+.. _ativ-1-pratica-atividade-fisica-na-turma:
+------------------------------------------
+Prática de Atividade Física na turma
+------------------------------------------
 
 .. admonition:: Objetivos específicos
 
-   Objetivos: Conduzir uma coleta de dados sobre a turma envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
+   Conduzir uma coleta de dados sobre a turma envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
 
 .. admonition:: Para o professor
 
-  Preparar um formulário a ser preenchido pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. 
+  Preparar um formulário a ser preenchido pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. O formulário poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas para efeito de comparação com os infográficos sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunso que essa será uma amostra de conveniência, pois o interesse é olhar o perfil da turma quanto a prática de atividades físicas e caso as respostas não sejam parecidas com a da pesquisa que isso não é de fato um problema.
+  
+  Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas quando forem feitas comparações para grupos diferentes, como por exemplo, sexo.
 
 Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da turma com os dados obtidos da PNAD/2015. Para isso preencha o mapa de dados fornecido pelo professor. Construa tabelas e gráficos resumindo a informação do mapa. 
 
-.. admonition:: Resposta 
 
-  Com base nas respostas obtidas contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir um gráficos de barras das modalidades praticadas pela turma e também um gráfico de setores.
-  
+.. _ativ-2-classificacao-de-variaveis:
+------------------------------------------
+Classificação de variáveis
+------------------------------------------
 
+.. admonition:: Objetivos específicos
 
-**2) Classificação de variáveis** Suponha que cada uma das variáveis a seguir foi observada para todos os alunos de sua turma. Indique se cada uma delas é uma variável qualitativa ou quantitativa. Se for uma variável qualitativa, indique se ela é binária (apenas duas respostas possíveis) ou não. 
+  Diferenciar variável qualitativa e variável quantitativa. Identificar variáveis qualitativas binárias.
+
+Suponha que cada uma das variáveis a seguir foi observada para todos os alunos de sua turma. Indique se cada uma delas é uma variável qualitativa ou quantitativa. Se for uma variável qualitativa, indique se ela é binária (apenas duas respostas possíveis) ou não. 
 
 
 #. altura
 #. espessura do braço
 #. razão da altura sobre a espessura do braço
 #. tempo de sono na noite anterior
-#. se o indivíduo foi dormir na noite anterior antes ou depois da meia-noite
+#. se foi dormir na noite anterior **antes** ou **depois** da meia-noite
 #. mês de nascimento
 #. número de irmãos
 #. nota obtida na última avaliação de Matemática
-#. se o indivíduo tirou nota maior ou menor do que 6,0 na última avaliação de Matemática
+#. se tirou nota **maior** ou **menor** do que 6,0 na última avaliação de Matemática
 #. distância da casa à escola
 #. se o indivíduo possui ou não um cartão de crédito
 #. modo de locomoção para a escola
 
-**3) Construção de gráficos** Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o gráfico de setores em gráfico de retângulos e os gráficos de retângulos em gráficos de setores. 
+.. _ativ-3-construcao-de-grafico-variavel-qualitativa:
+------------------------------------------
+Construção de gráficos para variáveis qualitativas
+------------------------------------------
 
-**4) Análise de gráfico** Observe o gráfico a seguir publicado em um jornal. Como você classificaria esse gráfico? Ele é um gráfico de barras do ponto de vista apresentado nesse capítulo? Por que? Que tipo de variável ele está analisando?
+
+.. admonition:: Objetivos específicos
+
+ Construir gráficos de distribuições de frequências para variáveis qualitativas.
+
+.. admonition:: Para o professor
+
+ Nas atividades que demandam construção de gráficos sugere-se fortemente o uso de programas computacionais, em especial, o Geogebra.
+
+Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o gráfico de setores em gráfico de retângulos e os gráficos de retângulos em gráficos de setores. 
+
+
+.. admonition:: Resposta 
+
+ .. _fig-trocando-setor-e-barra:
+ 
+ .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=praticando1.png
+   :width: 600px
+   :align: center
+
+   Infográfico 4 transformado
+   
+.. _ativ-4-analise-de-grafico:
+------------------------------------------
+Análise de gráfico
+------------------------------------------
+
+Observe o gráfico a seguir publicado em um jornal. Como você classificaria esse gráfico? Ele é um gráfico de barras do ponto de vista apresentado nesse capítulo? Por que? Que tipo de variável ele está analisando?
 
 .. admonition:: Para o professor
 
@@ -647,6 +707,13 @@ Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da
    :align: center
 
    Inflação da alimentação acumulada nos últimos 12 meses (Fonte: IBGE)
+   
+
+.. admonition:: Resposta 
+
+   É um gráfico que usa barras.  
+   Não, pois as barras não representam frequência, elas representam o valor acumulado da inflação de alimentação nos últimos 12 meses em relação aos meses considerados, a saber, agosto de 2016 até agosto de 2017. 
+   A inflação da alimentação acumulada nos últimos 12 meses que é uma variável quantitativa cuja evolução no período de tempo considerado está sendo apresentada nesse gráfico.
 
 
 .. **5) Produzindo informações de taxas a partir de dados reais**.
@@ -661,7 +728,7 @@ Atividade: Construção do histograma
 
 .. admonition:: Objetivos específicos
 
-   Objetivos: A partir de um conjunto de valores de uma variável quantitativa contínua observar a necessidade de agrupá-los em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências dos valores dessa variável.
+   Objetivos: A partir de um conjunto de observações sobre uma variável quantitativa contínua identificar a necessidade de agrupar os valores observados em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências dos valores observados.
 
 
 .. _fig-radiotelescopios:
@@ -673,6 +740,8 @@ Atividade: Construção do histograma
    Arranjo de radiotelescópios - :ref:`Very Large Array(VLA), Socorro, New Mexico, EUA. Foto: Hajor <https://commons.wikimedia.org/wiki/File:USA.NM.VeryLargeArray.03.jpg>`
 
 Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiotelescopios>` detecta um sinal com os registros de tempo mostrados na tabela:
+
+.. qual a unidade de observação?
 
 +---+------+------+------+------+------+------+------+------+
 |   | A    | B    | C    | D    | E    | F    | G    | H    |
@@ -694,11 +763,11 @@ Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiot
 | 8 | 4,27 | 4,95 | 5,64 | 6,97 | 5,26 | 5,95 | 6,64 | 7,97 | 
 +---+------+------+------+------+------+------+------+------+
 
-Observe que esses dados não podem ser catalogados por frequências diretamente, pois cada medição é diferente.
+#. Como construir uma tabela de frequências desses dados uma vez que os registros de tempo são todos distintos?
 
-#. Como você acha que pode ser visualizado o comportamento de uma variável com estas características?
+#. Como você faria para visualizar o comportamento de uma variável com estas características?
 
-Para isto, vamos a agrupar as informações em intervalos de modo a poder contar a frequência de casos que caem em cada “parte” da reta numérica. Suponha que cada registro é uma bolinha que cai na reta de forma aleatória, e para poder observar o comportamento dos registros colocamos caixinhas na reta numérica para observar onde caem mais bolinhas.
+O fato de todos os valores serem distintos entre si leva a necessidade de agrupá-los em intervalos de modo a podermos contar a frequência de casos que caem em cada intervalo da reta considerado. Suponha que cada registro é uma bolinha que cai na reta de forma aleatória, e para poder observar o comportamento dos registros colocamos caixinhas na reta numérica para observar onde caem mais bolinhas.
 
 
 .. admonition:: Para o professor
@@ -713,6 +782,7 @@ Para isto, vamos a agrupar as informações em intervalos de modo a poder contar
 
       Dispositivo de Galton
 
+.. por que classes vazias?
 
 #. Defina uma divisão regular do intervalo de 3 a 8 e conte quantas medições correspondem a cada uma das categorias. Cada categoria é o que chamamos de intervalo aberto por baixo e fechado por cima, isto quer dizer que, o limite inferior (quando existe) não se inclui e o limite superior está incluso, como se explicita na tabela.
 
@@ -744,9 +814,9 @@ Para isto, vamos a agrupar as informações em intervalos de modo a poder contar
    | > 8,0         |                             |
    +---------------+-----------------------------+
 
-#. Verifique que a quantidade de tempos registrados é igual ao total de tempos coletados. É importante  identificar se todos os casos estão incluídos ou se têm *dados ausentes*, situação na qual deve-se identificar o motivo.
+#. Verifique que a quantidade de tempos registrados é igual ao total de tempos coletados. É importante  identificar se todos os casos estão incluídos ou se existem *dados ausentes*, situação na qual deve-se identificar o motivo.
 
-Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de casos sobre cada intervalo da reta numérica. Observe que a base de cada retângulo deve ocupar o espaço correspondente ao intervalo que esse retângulo representa.
+Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de casos sobre cada intervalo da reta numérica. Observe que a base de cada retângulo deve ocupar o espaço correspondente  a cada intervalo definido no agrupamento dos dados.
 
 #. Complete a figira a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
 
@@ -760,19 +830,23 @@ Para visualizar o comportamento desses dados, iremos construir um gráfico chama
 
 
    Histograma
-      O histograma, também conhecido como distribuição de frequências, é a representação gráfica em colunas ou em barras adjacentes (retângulos) de um conjunto de dados previamente tabulado e dividido em intervalos de classe de amplitudes iguais ou não.
+      O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
+      
+      
+.. admonition:: Observação 
 
-      A base de cada retângulo representa um intervalo de classe, essa é a razão pela qual as barras são adjacentes, porque os intervalos são adjacentes. A altura de cada retângulo representa a quantidade ou a frequência absoluta com que o valor da classe ocorre no conjunto de dados para classes uniformes ou a densidade de frequência para classes não uniformes. (Wikipedia, simplificar)
+   **1)** Quando todos intervalos considerados têm a mesma amplitude a altura dos retângulos pode ser a frequência absoluta ou relativa de casos do intervalo, mas quando os intervalos apresentarem amplitudes desiguais usar a frequência não será mais apropriado. Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
+   
+   **2)** O gráfico de barras **não** é um histograma, apesar de suas representações serem parecidas.  O gráfico de barras é útil para descrever a distribuição de frequências de uma variável qualitativa. Nesse gráfico só há uma escala, a da frequência. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Os histogramas são úteis para representar a distribuição de frequências de uma variável qualitativa contínua cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência. 
 
-   **Observação:** é muito importante não confundir esse gráfico com os gráficos de barras, mesmo que ambos usem retângulos como representação de frequências. Os histogramas representam dados contínuos agrupados em classes, seu eixo das abscissas (horizontal) representa a escala da variável contínua. Quando a variável é qualitativa, o eixo das categorias contém apenas posições que permitem diferenciar a categoria correspondente a cada barras.
-
-#. Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma é 351,95). O que você pode observar?
+#. Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
 
 #. Refine o histograma utilizando um programa de computador <incluir link geogebra>. Observe o que acontece quando se refina muito a divisão do intervalo.
 
    Às vezes a escala do histograma pode ocultar comportamentos do fenômeno que estamos estudando.
 
-#. Faça o histograma das colunas A-D e outro histograma das colunas E-H e calcule a média de cada conjunto de dados (disponível de GeoGebra). Observe como existe a possibilidade de que os registros sejam de eventos distintos e mesmo assim, isto fica oculto sob os grupos do histograma.
+#. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos (disponível de GeoGebra). 
+.. Observe como existe a possibilidade de que os registros sejam de eventos distintos e mesmo assim, isto fica oculto sob os grupos do histograma.
 
 .. Como seria aqui o organizando as ideias???
 
@@ -803,7 +877,7 @@ Dados coletados ao longo do tempo (como a informação meteorológica) são conh
 
    Respostas possíveis: o índice de inflação, os preços de diversos bens, os índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.
 
-A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre (Fonte: :ref:`Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET<http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`)
+A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre em graus centígrados (Fonte: :ref:`Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET<http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`)
 
 
 +-------------------------------------------------------------------------------------+
@@ -842,7 +916,7 @@ A tabela a seguir fornece a média das temperaturas máximas para cada mês nos 
 
 #. Una os pontos correspondentes ao mesmo ano (mesma série) e observe o resultado. Como você descreveria o comportamento das diferentes linhas?
 
-#. Compare o gráfico com colegas que escolheram outros anos (ou coloca séries de outros anos no seu gráfico). Você encontra alguma similitude? A quê se deve essa similitude?
+#. Compare o gráfico com colegas que escolheram outros anos (ou acrescente séries de outros anos no seu gráfico). Você percebe alguma semelhança? Por que?
 
 .. admonition:: Resposta
 
@@ -854,12 +928,15 @@ A tabela a seguir fornece a média das temperaturas máximas para cada mês nos 
 
       Gráficos de linhas com a temperatura máxima média mensual da cidade de Porto Alegre
 
-O gráfico que você acabou de criar é uma **gráfico de linha**, muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. De aqui o nome de **séries temporais**, como descrevemos acima.
+O gráfico que você acabou de construir é chamado **gráfico de linha**. Esse gráfico é muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. Quando a variável quantitativa é observada ao longo do tempo, o conjunto de dados resultante é chamado uma **série temporal**.
 
-O fenômeno que você observa no seu gráfico com várias linha se chama de **sazonalidade**, e a origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano. Como você já deve ter observado, a temperatura é mais baixa se estamos no período de inverno e mais alta nos períodos da primavera e do verão.
+
+.. admonition:: Observação 
+
+   O fenômeno que você observa no seu gráfico com as várias linhas é chamado **sazonalidade**, e a origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano. Como você já deve ter observado, a temperatura é mais baixa se estamos no período de inverno e mais alta nos períodos da primavera e do verão.
 
 Sazonalidade
-   Variações periódicas que se observam nas séries temporais e que devem sua presença a um fenômeno implícito que altera de forma direta as medições da variável observada.
+   Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que altera de forma direta as medições da variável observada.
 
 .. Sugestão de exercício:
    Identificar numa lista, eventos que podem apresentar sazonalidade, por exemplo:
@@ -878,7 +955,7 @@ Se colocamos todos os dados da tabela num único gráfico com a escala temporal 
    Efeito da sazonalidade no gŕafico de linhas da temperatura máxima média
 
 
-Observa que a sazonalidade dificulta a leitura do gráfico acima. Como você acredita que pode ser evitado o efeito da sazonalidade para analisar a evolução da temperatura máxima ao longo dos anos?
+Observe que a sazonalidade dificulta a leitura do gráfico acima. Como você acha que pode ser evitado o efeito da sazonalidade para analisar a evolução da temperatura máxima ao longo dos anos?
 
 Uma forma de evitar o efeito da sazonalidade é comparar os valores de uma série temporal apenas com aqueles que seriam *equivalentes* dentro de cada período.
 
@@ -887,65 +964,66 @@ Uma forma de evitar o efeito da sazonalidade é comparar os valores de uma séri
    Recuperar da atividade onde os estudantes levaram notícias do jornal que continham estatísticas.
    Existem várias medições que são comparadas com as do ano anterior: inflação, por exemplo, crescimento do PIB o das taxas de desemprego por trimestre, entre outras.
 
-Observa a tabela abaixo, contém a temperatura máxima média para o mês de janeiro desde o ano de 1991 e até 2016 para diversas cidades (Fonte: :ref:`Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET<http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`).
+A tabela a seguir contém a média das temperaturas máximas (em graus centígrados) para o mês de janeiro de 1991 até 2016 para diversas cidades (Fonte: :ref:`Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET<http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`).
 
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
 | Ano  | Florianópolis | Porto Alegre | Manaus | João Pessoa | Recife | São Paulo | Salvador |
 +======+===============+==============+========+=============+========+===========+==========+
-| 1991 |               | 30.23        | 29.95  | 30.58       | 30.91  | 27.18     | 29.54    |
+| 1991 |               | 30,23        | 29,95  | 30,58       | 30,91  | 27,18     | 29,54    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1992 | 28.54         | 30.43        | 32.05  | 30.15       | 30.67  | 27.45     | 30.19    |
+| 1992 | 28,54         | 30,43        | 32,05  | 30,15       | 30,67  | 27,45     | 30,19    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1993 | 29.37         | 31.34        | 30.25  | 29.97       | 29.91  | 28.14     | 30.37    |
+| 1993 | 29,37         | 31,34        | 30,25  | 29,97       | 29,91  | 28,14     | 30,37    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1994 | 27.92         | 30.33        | 29.90  | 30.30       | 30.30  | 27.27     | 31.68    |
+| 1994 | 27,92         | 30,33        | 29,90  | 30,30       | 30,30  | 27,27     | 31,68    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1995 | 28.89         | 30.74        | 31.02  | 30.17       | 30.48  | 29.34     | 31.30    |
+| 1995 | 28,89         | 30,74        | 31,02  | 30,17       | 30,48  | 29,34     | 31,30    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1996 | 29.21         | 29.89        | 29.94  | 30.34       | 30.43  | 29.15     | 31.02    |
+| 1996 | 29,21         | 29,89        | 29,94  | 30,34       | 30,43  | 29,15     | 31,02    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1997 | 28.29         | 32.09        | 30.18  | 30.81       | 31.16  | 27.59     | 30.44    |
+| 1997 | 28,29         | 32,09        | 30,18  | 30,81       | 31,16  | 27,59     | 30,44    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1998 | 29.75         | 29.13        | 31.30  | 31.34       | 31.35  | 30.73     | 31.78    |
+| 1998 | 29,75         | 29,13        | 31,30  | 31,34       | 31,35  | 30,73     | 31,78    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 1999 | 29.21         | 30.65        | 30.28  | 30.71       | 30.99  | 30.79     | 30.57    |
+| 1999 | 29,21         | 30,65        | 30,28  | 30,71       | 30,99  | 30,79     | 30,57    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2000 |               | 30.63        | 30.83  | 30.37       | 29.95  | 27.79     | 30.55    |
+| 2000 |               | 30,63        | 30,83  | 30,37       | 29,95  | 27,79     | 30,55    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2001 |               |              | 29.93  | 30.35       | 29.83  | 30.25     | 30.21    |
+| 2001 |               |              | 29,93  | 30,35       | 29,83  | 30,25     | 30,21    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2002 | 29.46         | 30.44        | 31.85  | 30.19       | 29.61  | 28.02     | 29.75    |
+| 2002 | 29,46         | 30,44        | 31,85  | 30,19       | 29,61  | 28,02     | 29,75    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2003 | 29.51         | 31.03        | 32.01  | 31.03       | 31.44  | 27.52     | 32.36    |
+| 2003 | 29,51         | 31,03        | 32,01  | 31,03       | 31,44  | 27,52     | 32,36    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2004 | 28.36         | 30.83        | 32.12  | 30.12       | 30.66  | 26.75     | 30.57    |
+| 2004 | 28,36         | 30,83        | 32,12  | 30,12       | 30,66  | 26,75     | 30,57    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2005 | 28.95         | 32.22        | 33.20  | 31.15       | 31.47  | 27.35     | 31.78    |
+| 2005 | 28,95         | 32,22        | 33,20  | 31,15       | 31,47  | 27,35     | 31,78    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2006 | 29.88         | 31.26        | 32.34  | 30.92       | 30.61  | 29.72     | 31.98    |
+| 2006 | 29,88         | 31,26        | 32,34  | 30,92       | 30,61  | 29,72     | 31,98    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2007 | 29.28         | 31.08        | 30.70  | 31.13       | 30.87  | 27.43     | 31.95    |
+| 2007 | 29,28         | 31,08        | 30,70  | 31,13       | 30,87  | 27,43     | 31,95    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2008 | 27.99         | 30.40        | 30.63  | 30.79       | 30.36  | 26.66     | 31.88    |
+| 2008 | 27,99         | 30,40        | 30,63  | 30,79       | 30,36  | 26,66     | 31,88    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2009 | 28.39         | 29.05        | 30.63  | 31.05       | 31.09  | 27.28     | 31.70    |
+| 2009 | 28,39         | 29,05        | 30,63  | 31,05       | 31,09  | 27,28     | 31,70    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2010 | 29.57         | 30.28        | 31.95  | 30.82       | 30.11  | 28.98     | 31.51    |
+| 2010 | 29,57         | 30,28        | 31,95  | 30,82       | 30,11  | 28,98     | 31,51    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2011 | 30.10         | 32.02        | 30.87  | 31.01       | 30.41  | 29.49     | 30.08    |
+| 2011 | 30,10         | 32,02        | 30,87  | 31,01       | 30,41  | 29,49     | 30,08    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2012 | 28.50         | 31.25        | 31.11  | 30.56       | 30.23  | 27.05     | 30.61    |
+| 2012 | 28,50         | 31,25        | 31,11  | 30,56       | 30,23  | 27,05     | 30,61    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2013 | 28.76         | 31.42        | 32.33  | 31.23       | 31.24  | 26.83     | 32.06    |
+| 2013 | 28,76         | 31,42        | 32,33  | 31,23       | 31,24  | 26,83     | 32,06    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2014 | 30.90         | 33.09        | 31.88  | 30.74       | 30.43  | 31.92     | 29.55    |
+| 2014 | 30,90         | 33,09        | 31,88  | 30,74       | 30,43  | 31,92     | 29,55    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2015 | 31.74         | 30.89        | 31.58  | 30.88       | 30.87  | 31.49     | 30.30    |
+| 2015 | 31,74         | 30,89        | 31,58  | 30,88       | 30,87  | 31,49     | 30,30    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
-| 2016 | 29.90         | 32.02        | 33.55  | 31.08       | 31.32  | 27.93     | 30.35    |
+| 2016 | 29,90         | 32,02        | 33,55  | 31,08       | 31,32  | 27,93     | 30,35    |
 +------+---------------+--------------+--------+-------------+--------+-----------+----------+
 
-#. Escolhe uma cidade e localiza os pontos na grade quadriculada a seguir, usando o eixo das abscissas para o ano e o eixo vertical para a temperatura máxima média do mês de janeiro.
+
+#. Escolha uma cidade e localize os pontos na grade quadriculada a seguir, usando o eixo das abscissas para o ano e o eixo vertical para a média das temperaturas máximas do mês de janeiro.
 
    .. admonition:: Resposta
 
@@ -955,13 +1033,13 @@ Observa a tabela abaixo, contém a temperatura máxima média para o mês de jan
         :width: 400px
         :align: center
 
-        Gráfico de linha com a temperatura máxima média do mês de janeiro para Manaus
+        Gráfico de linha da média das temperaturas máximas média do mês de janeiro para Manaus de 1991 a 2016
 
-#. Observa que agora a variabilidade toma outra dinâmica, menos cíclica. Você pode dizer alguma coisa sobre o comportamento da temperatura máxima média no período?
+#. Observe que agora a variabilidade toma outra dinâmica, menos cíclica. Você pode dizer alguma coisa sobre o comportamento da média da temperatura máxima no período?
 
-#. Traça uma linha reta sobre o gráfico que seja mais próxima possível de todos os dados representados. O quê você observa?
+#. Traçe uma linha reta sobre o gráfico que seja mais próxima possível de todos os dados representados. O que você observa?
 
-#. Faz um novo gráfico, desta vez ajustando o eixo vertical desde o menor valor hasta el mayor de la série. Observa que resulta mais fácil observar o comportamento da variável, só lembra que é fundamental colocar marcas clars nos eixos do gráfico.
+#. Construa um novo gráfico, desta vez ajustando o eixo vertical desde o menor valor até o maior valor da série. Observe que é mais fácil observar o comportamento da variável. Lembre que é fundamental colocar marcas claras nos eixos do gráfico.
 
 .. admonition:: Resposta
 
@@ -971,17 +1049,11 @@ Observa a tabela abaixo, contém a temperatura máxima média para o mês de jan
      :width: 400px
      :align: center
 
-     Gráfico de linha com a temperatura máxima média do mês de janeiro para Manaus (eixo ajustado)
+     Gráfico de linha com a média das temperaturas máximas do mês de janeiro para Manaus (eixo ajustado)
 
 Esta última observação mostra a importância de ler com cuidado sempre os valores representados nos eixos de um gráfico para poder interpretar de forma correta.
 
 .. Para reforzar esta observação, colocar um exercício com gráficos de barras com o eixo vertical limitado, para refletir sobre o efeito visual de algumas manipulações gráficas.
-
-
-
-
-
-
 
 .. _ativ-titulo-da-atividade:
 
@@ -991,13 +1063,6 @@ Organizando as ideias 2
 Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
 
 
-
-
-
-
-
-
- 
 .. _ativ-titulo-da-atividade:
 
 Praticando 2
@@ -1019,6 +1084,22 @@ Após a coleta de dados os alunos deverão empregar as ferramentas estudadas par
 .. admonition:: Para o professor
 
    Essa atividade terá duração de pelo menos três meses para que ela possa ser desenvolvida de forma completa. Essa atividade deverá ser realizada preferencialmente nos dois primeiros anos do Ensino Médio. 
+   
+
+.. _ativ-titulo-da-atividade:
+
+Aprofundando
+------------------------------
+
+.. _ativ-titulo-da-atividade:
+
+Exercícios
+------------------------------
+
+.. _ativ-titulo-da-atividade:
+
+Material suplementar e Referências Bibliográficas
+------------------------------
 
 
 
