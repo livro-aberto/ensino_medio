@@ -2321,6 +2321,138 @@ Atividade: procurando pontos
       #. Nenhum dos pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J` torna a equação verdadeira.
 
 
+Atividade: lugar geométrico
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: perceber que, dados um vetor `\vec{v}` não nulo e um ponto `P`, é uma reta o lugar geométrico dos pontos `X` tais que `\overrightarrow{PX} = t \, \vec{v}` para algum `t \in {\mathbb R}`.
+
+Na figura a seguir estão representados um vetor `\vec{v}` e um ponto `P`.
+
+.. tikz::
+
+    \definecolor{qqqqff}{rgb}{0.,0.,1.}
+    \def\dx{1.5};
+    \def\dy{0.5};
+    \def\px{-1.5};
+    \def\py{3};
+    \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+    \tikzset{>=latex}
+    \clip  (-5.5,5.5) rectangle (4,0);
+    % \draw  (-5.5,5.5) rectangle (4,0);
+    \node (v1) at (1,1) {};
+    \node (v2) at (2.5,1.5) {};
+    \node (v3) at (-2.5,1.5) {};
+    \node (v4) at (\px,\py) {};
+    \node (v5) at (\px + \dx,\py + \dy) {};
+    \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+    \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+    \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+    \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+    \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+    % \draw[] (1.6549,1.5502) node {$\vec{v}$};
+    % \fill (v3) circle [radius=2pt];
+    \fill (v4) circle [radius=2pt];
+    % \fill (v5) circle [radius=2pt];
+    % \fill (v6) circle [radius=2pt];
+    % \fill (v7) circle [radius=2pt];
+    % \node [label={west:$O$}] at (v3) {};
+    \node [label={north west:$P$}] at (v4) {};
+    % \node [label={north west:$R$}] at (v5) {};
+    % \node [label={north west:$S$}] at (v6) {};
+    % \node [label={north west:$T$}] at (v7) {};
+    % \draw (v8.center)--(v9.center);
+
+#. Copie a figura para seu caderno e desenhe os pontos `R`, `S` e `T` tais que `\overrightarrow{PR} = \vec{v}`, `\overrightarrow{PS} = 2{,}5 \, \vec{v}` e `\overrightarrow{PT} = -2 \, \vec{v}`.
+
+#. Se você desenhasse todos os pontos `X` tais que `\overrightarrow{PX} = t \, \vec{v}` para algum `t \in {\mathbb R}`, que figura apareceria desenhada?
+
+.. admonition:: Resposta
+
+   #.
+
+    .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \def\dx{1.5};
+        \def\dy{0.5};
+        \def\px{-1.5};
+        \def\py{3};
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \clip  (-5.5,5.5) rectangle (4,0);
+        % \draw  (-5.5,5.5) rectangle (4,0);
+        \node (v1) at (1,1) {};
+        \node (v2) at (2.5,1.5) {};
+        \node (v3) at (-2.5,1.5) {};
+        \node (v4) at (\px,\py) {};
+        \node (v5) at (\px + \dx,\py + \dy) {};
+        \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+        \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+        \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+        \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+        \draw[] (1.6549,1.5502) node {$\vec{v}$};
+        % \fill (v3) circle [radius=2pt];
+        \fill (v4) circle [radius=2pt];
+        \fill (v5) circle [radius=2pt];
+        \fill (v6) circle [radius=2pt];
+        \fill (v7) circle [radius=2pt];
+        % \node [label={west:$O$}] at (v3) {};
+        \node [label={north west:$P$}] at (v4) {};
+        \node [label={north west:$R$}] at (v5) {};
+        \node [label={north west:$S$}] at (v6) {};
+        \node [label={north west:$T$}] at (v7) {};
+        % \draw (v8.center)--(v9.center);
+
+   #. Apareceria desenhada a reta que passa pelo ponto `P` e é paralela ao vetor `\vec{v}`.
+
+    .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \def\dx{1.5};
+        \def\dy{0.5};
+        \def\px{-1.5};
+        \def\py{3};
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \clip  (-5.5,5.5) rectangle (4,0);
+        % \draw  (-5.5,5.5) rectangle (4,0);
+        \node (v1) at (1,1) {};
+        \node (v2) at (2.5,1.5) {};
+        \node (v3) at (-2.5,1.5) {};
+        \node (v4) at (\px,\py) {};
+        \node (v5) at (\px + \dx,\py + \dy) {};
+        \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+        \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+        \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+        \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+        \draw[] (1.6549,1.5502) node {$\vec{v}$};
+        % \fill (v3) circle [radius=2pt];
+        \fill (v4) circle [radius=2pt];
+        % \fill (v5) circle [radius=2pt];
+        % \fill (v6) circle [radius=2pt];
+        % \fill (v7) circle [radius=2pt];
+        % \node [label={west:$O$}] at (v3) {};
+        \node [label={north west:$P$}] at (v4) {};
+        % \node [label={north west:$R$}] at (v5) {};
+        % \node [label={north west:$S$}] at (v6) {};
+        % \node [label={north west:$T$}] at (v7) {};
+        \draw (v8.center)--(v9.center);
+
+
+
 
 
 Atividade: usando vetores para demonstrar resultados em Geometria
@@ -2329,7 +2461,7 @@ Atividade: usando vetores para demonstrar resultados em Geometria
 .. admonition:: Para o professor
 
    **Objetivo específico**: praticar o uso de vetores para demonstrar resultados em Geometria.
-   
+
 
 (Adaptado de [Sesamath-MATHS-2e-2014]_, p. 219) Considere um paralelogramo `OIJK`. Os pontos `A`, `B` e `G` são tais que `\overrightarrow{OA} = \frac{1}{2} \, \overrightarrow{OI}`, `\overrightarrow{OB} = \frac{1}{3} \, \overrightarrow{OK}` e `\overrightarrow{AG} = \frac{3}{5} \, \overrightarrow{AB}`.
 
@@ -2337,11 +2469,11 @@ Atividade: usando vetores para demonstrar resultados em Geometria
 
 #. Demonstre que `\overrightarrow{OG} = \frac{1}{5} \, \overrightarrow{OJ}`. Conclua que, em particular, os pontos `O`, `G` e `J` são colineares.
 
-.. admonition:: Resposta    
+.. admonition:: Resposta
 
-   #. 
+   #.
 
-    .. tikz:: 
+    .. tikz::
 
        \tikzset{>=latex}
        % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
@@ -2355,19 +2487,23 @@ Atividade: usando vetores para demonstrar resultados em Geometria
        \fill (v1) circle [radius=2pt];
        \fill (v2) circle [radius=2pt];
        \fill (v3) circle [radius=2pt];
-       \fill (v4) circle [radius=2pt];   
-       \fill (v5) circle [radius=2pt];   
-       \fill (v6) circle [radius=2pt];   
-       \fill (v7) circle [radius=2pt];   
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
        \node [label={west:$O$}] at (v1) {};
        \node [label={east:$I$}] at (v2) {};
-       \node [label={east:$J$}] at (v3) {};       
+       \node [label={east:$J$}] at (v3) {};
        \node [label={west:$K$}] at (v4) {};
        \node [label={south:$A$}] at (v5) {};
        \node [label={west:$B$}] at (v6) {};
        \node [label={north:$G$}] at (v7) {};
-       \draw[line width=1.0pt] (v1.center)--(v2.center)--(v3.center)--(v4.center)--cycle;         
+       \draw[line width=1.0pt] (v1.center)--(v2.center)--(v3.center)--(v4.center)--cycle;
        \draw[line width=1.0pt] (v5.center)--(v6.center);
        \draw[dotted] (v1)--(v3);
-       
+
    #. Demonstração: `\overrightarrow{OG} = \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{AB} = \overrightarrow{OA} + \frac{3}{5} \, \left(\overrightarrow{OB} - \overrightarrow{OA}\right) = \frac{2}{5} \, \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{OB} = \frac{2}{5} \, \frac{1}{2} \, \overrightarrow{OI} + \frac{3}{5} \, \frac{1}{3} \, \overrightarrow{OK} = \frac{1}{5} \, \overrightarrow{OI} + \frac{1}{5} \, \overrightarrow{OK} = \frac{1}{5} \, \left(\overrightarrow{OI} + \overrightarrow{OK}\right) = \frac{1}{5} \, \overrightarrow{OJ}`. Desta maneira, `\overrightarrow{OG}` tem mesma direção e sentido de `\overrightarrow{OJ}` e, portanto, `O`, `G` e `J` são colineares.
+
+
+
+
