@@ -86,32 +86,27 @@ Atividade: Escolha do melhor fornecedor - Tomada de decisão
 
    Comparar distribuições empíricas de dados estimulando a necessidade de resumir a informação usando medidas de posição e de dispersão tais como moda e amplitude que auxiliam na descrição das distribuições.
 
-Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é 15,0 cm "mais ou menos" 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo azul representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
-
-
-
-
+Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação aceitável é 15,0 cm "mais ou menos" 0,2 cm. Há quatro empresas, A, B, C e D, fornecedoras desses parafusos, que são vendidos em caixas com 60 unidades. Para decidir de qual fornecedor passará a comprar os parafusos, a empresa resolveu comprar e analisar uma caixa de cada um dos fornecedores.  Os diâmetros das peças foram medidos e os valores obtidos estão representados nos gráficos a seguir, em que cada círculo representa um parafuso na posição da medida do seu diâmetro, medido em precisão de 0,02 cm.
 
 .. _fig-parafusos:
 
 .. figure:: _resources/fornecedora.png
-   :width: 800px
+   :width: 600px
    :align: center
    
 .. figure:: _resources/fornecedorb.png
-   :width: 800px
+   :width: 600px
    :align: center
    
 .. figure:: _resources/fornecedorc.png
-   :width: 800px
+   :width: 600px
    :align: center
 
 .. figure:: _resources/fornecedord.png
-   :width: 800px
+   :width: 600px
    :align: center
 
    Diagramas de pontos com as medidas dos parafusos de cada fornecedor
-
 
 #. Que informações foram usadas para a construção desses gráficos?
 #. Quantos parafusos da caixa do fornecedor A atendem a especificação do comprador?
@@ -162,6 +157,7 @@ Uma indústria precisa comprar parafusos de diâmetro de 15 cm cuja variação a
    +------------+--------------+--------------+
    | D          | 14,56        | 15,18        |
    +------------+--------------+--------------+
+
 .. Adicionei essa etapa de discussão, que pode ser útil para introduzir outros conceitos mais na frente.
 .. admonition:: Para Refletir
 
@@ -235,14 +231,24 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
 +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
 | Y           | 7| 8| 9| 9|10|10|11|11|11|12|12|12|13|13|14|14|15|15|16|18| 240  |
 +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
-| X           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240  |
+| Z           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240  |
 +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+------+
 
-#. Organize as informações apresentadas no quadro acima em diagramas de pontos. 
-#. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
-#. Determine os tempos médios de cura da dor de cabeça para cada substância.
-#. A partir dos diagramas construídos, compare os diferentes tratamentos. 
+#. Organize as informações apresentadas no quadro acima em diagramas de pontos.
 
+#. A partir dos diagramas, identifique o grupo que apresentou maior dispersão dos tempos de cura. 
+
+#. Determine os tempos médios de cura da dor de cabeça para cada substância.
+
+#. A partir dos diagramas construídos e das médias calculadas, responda:
+
+   **1.** Entre X e Y, qual medicamento você escolheria? Por que?
+       
+   **2.** Entre X e Z, qual medicamento você escolheria? Por que?
+   
+   **3.** Entre Y e Z, qual medicamento você escolheria? Por que?
+   
+   **4.** A partir dos dados disponíveis, é possível garantir que algum medicamento é melhor que os outros? Por que?
 
 .. Incluir na fase 3 como um exercício
 
@@ -274,20 +280,12 @@ ____
 
 ____
 
-____
-
-____
-
-
-
-
 
 .. admonition:: Resposta 
-
     
   .. _fig-medicamentos:
 
-  .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_dp.png
+  .. figure:: _resources/Medicamentos_DP.png
      :width: 600px
      :align: center
 
@@ -296,27 +294,16 @@ ____
  #. Diagramas de pontos
  #. Olhando os diagramas de pontos, percebe-se que o medicamento Y foi o que apresentou maior dispersão dos tempos de cura, observe que é a distribuição que apresentou a maior amplitude.
  #. De acordo com as somas informadas na tabela temos que as médias observadas de tempo de cura foram 10 minutos para o medicamento X, 12 minutos para o medicamento Y e 12 minutos para o medicamento Z.
- #. Comparando os diagramas de pontos dos medicamentos X e Y percebemos que existe uma interseção razoável, quando olhamos as distribuições empíricas dos tempos de cura. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados não apresentam evidências contra hipótese de que os tempos médios de cura para os dois medicamentos são iguais, apesar das médias empíricas serem diferentes. Portanto aqui **não rejeitaríamos** a hipótese de que os tempos médios de cura são iguais.  
+ #. Comparando os diagramas de pontos:
  
-.. _comparandoXeY:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_xy.png
-   :width: 600px
-   :align: center
-
-   Diagramas de pontos dos tempos de cura: medicamento X versus medicamento Y
-   
-   Comparando os diagramas de pontos dos medicamentos X e Z percebemos que a grande interseção que existia entre os tempos de cura de X e Y não existe mais, agora ela é pequena. Por essa razão, usando procedimentos de inferência estatística, seria possível concluir que os dados observados apresentam evidências contra a hipótese de que os tempos médios de cura para os dois medicamentos são iguais. Nesse caso, rejeitaríamos a hipótese de que os tempos médios de cura são iguais.
-   
-.. _comparando-XeZ:
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=medicamentos_xz.png
-   :width: 600px
-   :align: center
-
-   Diagramas de pontos dos tempos de cura: medicamento X versus medicamento Z
-   
-   
+    **1.** Observa-se que o medicamento X apresenta uma média empírica inferior a do medicamento Y, porém existe uma interseção razoável quando olhamos as distribuições empíricas dos tempos de cura para esses medicamentos, o que leva a uma indeterminação na escolha de um deles como o melhor. Uma forma de resolver essa indeterminação seria coletar mais dados para cada um dos medicamentos.
+    
+    **2.** Observa-se que o medicamento X apresenta uma média empírica inferior a do medicamento Z. Neste caso, a interseçâo é pequena quando comparamos os dois diagramas de pontos. Além disso, todas as 20 medições do tempo de cura de Z são maiores do que a média de X. Nesta comparação, os dados se revelam mais favoráveis à escolha do medicamento X.
+    
+    **3.** Observa-se que ambos medicamentos apresentam a mesma média empírica, porém dispersões diferentes. Assim, esses dados favorecem o medicamento Z, que apresenta menor dispersão em torno do tempo médio de cura.
+    
+    **4.** Como já foi discutido, apenas os medicamentos X e Z apresentam uma diferença clara. No entanto, para uma conclusão mais geral seria fundamental coletar mais informações.
+ 
 .. admonition:: Para o professor
 
    Essa atividade propõe uma reflexão sobre possíveis equivalências, do ponto de vista estatístico, de medidas-resumo com a finalidade de tomada de decisão sob incerteza.
@@ -399,7 +386,7 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-1:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_01quem2.png
+.. figure:: _resources/PNAD_2015_Esportes_01quem2.png
    :width: 600px
    :align: center
 
@@ -434,7 +421,7 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-2:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_03instrrend2.png
+.. figure:: _resources/PNAD_2015_Esportes_03instrrend2.png
    :width: 600px
    :align: center
 
@@ -456,7 +443,7 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-3:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_04principais.png
+.. figure:: _resources/PNAD_2015_Esportes_04principais.png
    :width: 600px
    :align: center
 
@@ -484,7 +471,7 @@ A seguir apresentaremos quatro :ref:`infográficos<def-infografico>`, produzidos
 
 .. _fig-infografico-pnad-4:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=pnad_2015_esportes_05investimento.png
+.. figure:: _resources/PNAD_2015_Esportes_05investimento.png
    :width: 600px
    :align: center
 
@@ -561,7 +548,7 @@ Uma variável quantitativa é classificada em **discreta** ou **contínua**. As 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=tipos_variaveis.png
+.. figure:: _resources/Tipos_variaveis.png
    :width: 400px
    :align: center
 
@@ -579,7 +566,6 @@ Uma variável quantitativa é classificada em **discreta** ou **contínua**. As 
 Gráficos para Variáveis Qualitativas
 ------------------------------------------
 
-
 Nas análises dos infográficos trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, temos um **gráfico de barras**. Nesse gráfico, a única escala usada é a da frequência na qual as respostas ocorrem. Cada barra representa uma resposta e seu comprimento corresponde à frequência (ou porcentagem) na qual a resposta ocorre. Observe também que nesse gráfico, a soma das porcentagens deve ser 100%, correspondendo ao conjunto completo observado. A orientação das barras pode ser tanto vertical, como horizontal. 
 
 Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. Se a variável é nominal, podemos dispor as respostas em ordem decrescente de frequência. 
@@ -590,7 +576,7 @@ Esses gráficos usam barras para representar as frequências em subgrupos difere
 
 .. _fig-infografico-1-detalhe:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=barrasmultiplas_sexo.png
+.. figure:: _resources/barrasmultiplas_sexo.png
    :width: 600px
    :align: center
 
@@ -680,7 +666,7 @@ Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o grá
 
  .. _fig-trocando-setor-e-barra:
  
- .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=praticando1.png
+ .. figure:: _resources/praticando1.png
    :width: 600px
    :align: center
 
@@ -695,14 +681,12 @@ Observe o gráfico a seguir publicado em um jornal. Como você classificaria ess
 
 .. admonition:: Para o professor
 
-		O principal objetivo dessa atividade é mostrar que podem existir diversas formas de usar barras para representar algum tipo de dado, mas que nem todos os gráficos que usam barras são gráficos de barras no sentido da representação de uma distribuição de frequências. O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Adiante, mostraremos que para esse tipo de dado, o mais usual é usar um gráfico de linhas unindo os pontos (tempo,valor da variável) por segmentos.
+   O principal objetivo dessa atividade é mostrar que podem existir diversas formas de usar barras para representar algum tipo de dado, mas que nem todos os gráficos que usam barras são gráficos de barras no sentido da representação de uma distribuição de frequências. O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Adiante, mostraremos que para esse tipo de dado, o mais usual é usar um gráfico de linhas unindo os pontos (tempo,valor da variável) por segmentos.
 
  
-
-
 .. _linhaversusbarra:
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=linhaversusbarra.png
+.. figure:: _resources/linhaversusbarra.png
    :width: 600px
    :align: center
 
@@ -721,7 +705,12 @@ Observe o gráfico a seguir publicado em um jornal. Como você classificaria ess
 Explorando 2
 -------------------------
 
- 
+
+.. admonition:: Para o professor
+
+   Nas atividades desta seção serão trabalhadas variáveis quantitativas contínuas e as representações gráficas que permitem analisar o seu comportamento. Na primeira atividade será abordada a análise de frequências. Já na segunda será tratada a evolução de uma variável ao longo do tempo.
+
+
 -----------------------------------
 Atividade: Construção do histograma
 -----------------------------------
@@ -730,16 +719,15 @@ Atividade: Construção do histograma
 
    Objetivos: A partir de um conjunto de observações sobre uma variável quantitativa contínua identificar a necessidade de agrupar os valores observados em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências dos valores observados.
 
-
 .. _fig-radiotelescopios:
 
 .. figure:: _resources/USA.NM.VeryLargeArray.03.jpg
-   :width: 360px
+   :width: 200px
    :align: center
 
-   Arranjo de radiotelescópios - :ref:`Very Large Array(VLA), Socorro, New Mexico, EUA. Foto: Hajor <https://commons.wikimedia.org/wiki/File:USA.NM.VeryLargeArray.03.jpg>`
+   Arranjo de radiotelescópios - `Very Large Array(VLA), Socorro, New Mexico, EUA. Foto: Hajor <https://commons.wikimedia.org/wiki/File:USA.NM.VeryLargeArray.03.jpg>`_
 
-Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiotelescopios>` detecta um sinal com os registros de tempo mostrados na tabela:
+Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiotelescopios>` detectou um sinal com os registros de tempo mostrados na tabela:
 
 .. qual a unidade de observação?
 
@@ -763,60 +751,44 @@ Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiot
 | 8 | 4,27 | 4,95 | 5,64 | 6,97 | 5,26 | 5,95 | 6,64 | 7,97 | 
 +---+------+------+------+------+------+------+------+------+
 
-#. Como construir uma tabela de frequências desses dados uma vez que os registros de tempo são todos distintos?
 
-#. Como você faria para visualizar o comportamento de uma variável com estas características?
+.. admonition:: Para refletir
 
-O fato de todos os valores serem distintos entre si leva a necessidade de agrupá-los em intervalos de modo a podermos contar a frequência de casos que caem em cada intervalo da reta considerado. Suponha que cada registro é uma bolinha que cai na reta de forma aleatória, e para poder observar o comportamento dos registros colocamos caixinhas na reta numérica para observar onde caem mais bolinhas.
+   * Como construir uma tabela de frequências desses dados uma vez que os registros de tempo são todos distintos?
 
+   * Como você faria para visualizar o comportamento de uma variável com estas características?
 
-.. admonition:: Para o professor
-
-   A referência às caixinhas recebendo bolinhas que caem aleatoriamente corresponde, de fato, ao famoso dispositivo experimental desenhado por Galton. Sugere-se mostrar um vídeo ou descrever o funcionamento do mesmo através de figuras:
-   
-   .. _fig-galton:
-
-   .. figure:: _resources/galtonbrett.gif
-     :width: 200px
-     :align: center
-
-      Dispositivo de Galton
+A natureza da variável quantitativa contínua induz a resultados que praticamente nâo se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição em frequências.
 
 .. por que classes vazias?
 
-#. Defina uma divisão regular do intervalo de 3 a 8 e conte quantas medições correspondem a cada uma das categorias. Cada categoria é o que chamamos de intervalo aberto por baixo e fechado por cima, isto quer dizer que, o limite inferior (quando existe) não se inclui e o limite superior está incluso, como se explicita na tabela.
+#. Usando  a divisão regular do intervalo de 3 a 8 proposta na tabela a seguir, complete-a. Cada categoria é o que chamamos de intervalo fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior não se inclui e o limite superior está incluso, como se explicita na tabela.
 
-   +---------------+-----------------------------+
-   | Categoria     | Casos                       |
-   +===============+=============================+
-   | < ou = a 3,0  |                             |
-   +---------------+-----------------------------+
-   | > 3,0 até 3,5 |                             |
-   +---------------+-----------------------------+
-   | > 3,5 até 4,0 |                             |
-   +---------------+-----------------------------+
-   | > 4,0 até 4,5 |                             |
-   +---------------+-----------------------------+
-   | > 4,5 até 5,0 |                             |
-   +---------------+-----------------------------+
-   | > 5,0 até 5,5 |                             |
-   +---------------+-----------------------------+
-   | > 5,5 até 6,0 |                             |
-   +---------------+-----------------------------+
-   | > 6,0 até 6,5 |                             |
-   +---------------+-----------------------------+
-   | > 6,5 até 7,0 |                             |
-   +---------------+-----------------------------+
-   | > 7,0 até 7,5 |                             |
-   +---------------+-----------------------------+
-   | > 7,5 até 8,0 |                             |
-   +---------------+-----------------------------+
-   | > 8,0         |                             |
-   +---------------+-----------------------------+
+   +---------------------+-----------------------------+
+   | Intervalo de classe | Número de observações       |
+   +=====================+=============================+
+   | [ 3,0 ; 3,5 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 3,5 ; 4,0 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 4,0 ; 4,5 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 4,5 ; 5,0 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 5,0 ; 5,5 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 5,5 ; 6,0 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 6,0 ; 6,5 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 6,5 ; 7,0 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 7,0 ; 7,5 )       |                             |
+   +---------------------+-----------------------------+
+   | [ 7,5 ; 8,0 )       |                             |
+   +---------------------+-----------------------------+
 
-#. Verifique que a quantidade de tempos registrados é igual ao total de tempos coletados. É importante  identificar se todos os casos estão incluídos ou se existem *dados ausentes*, situação na qual deve-se identificar o motivo.
-
-Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de casos sobre cada intervalo da reta numérica. Observe que a base de cada retângulo deve ocupar o espaço correspondente  a cada intervalo definido no agrupamento dos dados.
+Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de observações classificados no correspondente ao intervalo de classe no eixo. Observe que a base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
 
 #. Complete a figira a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
 
@@ -828,57 +800,33 @@ Para visualizar o comportamento desses dados, iremos construir um gráfico chama
    
       Histograma dos dados coletados pela grade de radiotelescópios
 
-
-   Histograma
-      O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
-      
-      
-.. admonition:: Observação 
-
-   **1)** Quando todos intervalos considerados têm a mesma amplitude a altura dos retângulos pode ser a frequência absoluta ou relativa de casos do intervalo, mas quando os intervalos apresentarem amplitudes desiguais usar a frequência não será mais apropriado. Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
-   
-   **2)** O gráfico de barras **não** é um histograma, apesar de suas representações serem parecidas.  O gráfico de barras é útil para descrever a distribuição de frequências de uma variável qualitativa. Nesse gráfico só há uma escala, a da frequência. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Os histogramas são úteis para representar a distribuição de frequências de uma variável qualitativa contínua cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência. 
-
 #. Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
 
-#. Refine o histograma utilizando um programa de computador <incluir link geogebra>. Observe o que acontece quando se refina muito a divisão do intervalo.
-
-   Às vezes a escala do histograma pode ocultar comportamentos do fenômeno que estamos estudando.
-
-#. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos (disponível de GeoGebra). 
-.. Observe como existe a possibilidade de que os registros sejam de eventos distintos e mesmo assim, isto fica oculto sob os grupos do histograma.
-
-.. Como seria aqui o organizando as ideias???
-
-.. Pode se incluir aqui uma discussão sobre o histograma ou então juntar com a da próxima atividade...
-
-
------------------------------------
-Atividade: Séries temporais
------------------------------------
+---------------------------------------------------
+Atividade: Medição da temperatura ao longo do tempo
+---------------------------------------------------
 
 .. admonition:: Objetivos específicos
 
-   Objetivos: Explorar o conceito de série temporal e a utilidade dos gráficos de linhas, além de 
+   Objetivos: Explorar o conceito de série temporal e a utilidade dos gráficos de linhas.
 
-Você deve ter notado que a previsão de tempo é feita sempre através de dois números, isto ocorre porque a temperatura varia de forma constante ao longo do dia e o que está sendo estimado são as temperaturas máxima e a mínima. Então, por exemplo: 28° / 19°, significa que a máxima temperatura durante o dia será aproximadamente de 28°C e a mínima de 19°C.
+Você deve ter notado que a previsão do tempo é feita sempre através de dois números, isto ocorre porque a temperatura varia de forma contínua ao longo do dia e o que está sendo estimado são as temperaturas máxima e a mínima. Então, por exemplo: 28° / 19°, significa que a temperatura máxima durante o dia será aproximadamente de 28°C e, a mínima, de 19°C.
 
-O mesmo critério é aplicado para registrar a temperatura diária num determinado local, se registram a temperatura máxima e mínima. Diversas **variáveis meteorológicas** (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
+No registro da temperatura diária num determinado local, também se usam a temperatura máxima e a mínima. Diversas **variáveis meteorológicas** (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
 
-No Brasil, as estações estão a cargo do :ref:`Instituto Nacional de Meteorologia (INMET)<http://www.inmet.gov.br/>` e as informações são armazenadas em bases de dados. Para poder tratar essas informações, frequentemente se resumem as informações por períodos de tempo de diferentes magnitudes: dias, semanas, meses ou anos.
+No Brasil, as estações estão a cargo do `Instituto Nacional de Meteorologia (INMET)<http://www.inmet.gov.br/>`_ e as informações são armazenadas em bases de dados. Para poder tratar essas informações, frequentemente elas são resumidas por períodos de tempo de diferentes magnitudes: dias, semanas, meses ou anos.
 
-Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como *séries de dados temporais* ou, apenas, *séries temporais*, já que correspondem a variáveis que mudam constantemente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
+Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como *séries de dados temporais* ou, apenas, *séries temporais*, já que correspondem a variáveis que mudam continuamente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
 
 .. admonition:: Para refletir
 
- Forneça outros exemplos de séries temporais nas áreas de saúde, economia, educação, etc.
+   Forneça outros exemplos de séries temporais nas áreas de saúde, economia, finanças, educação, etc.
 
 .. admonition:: Para o professor
 
    Respostas possíveis: o índice de inflação, os preços de diversos bens, os índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.
 
-A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre em graus centígrados (Fonte: :ref:`Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET<http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`)
-
+A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre em graus centígrados (Fonte: `Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET <http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`_)
 
 +-------------------------------------------------------------------------------------+
 | Temperatura Máxima Média mensal nos anos 1991-2000 na cidade de Porto Alegre        |
@@ -912,11 +860,11 @@ A tabela a seguir fornece a média das temperaturas máximas para cada mês nos 
 
 
 
-#. Escolha três anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a *série* de cada ano.
+#. Escolha dois anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a *série* de cada ano.
 
 #. Una os pontos correspondentes ao mesmo ano (mesma série) e observe o resultado. Como você descreveria o comportamento das diferentes linhas?
 
-#. Compare o gráfico com colegas que escolheram outros anos (ou acrescente séries de outros anos no seu gráfico). Você percebe alguma semelhança? Por que?
+#. Compare o gráfico com colegas que escolheram outros anos (ou acrescente séries de outros anos no seu gráfico). O que você percebe? Na sua percepção, a que se deve esse comportamento?
 
 .. admonition:: Resposta
 
@@ -933,15 +881,55 @@ O gráfico que você acabou de construir é chamado **gráfico de linha**. Esse 
 
 .. admonition:: Observação 
 
-   O fenômeno que você observa no seu gráfico com as várias linhas é chamado **sazonalidade**, e a origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano. Como você já deve ter observado, a temperatura é mais baixa se estamos no período de inverno e mais alta nos períodos da primavera e do verão.
+    Como você já deve ter observado, a temperatura é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de **sazonalidade**. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
 
 Sazonalidade
-   Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que altera de forma direta as medições da variável observada.
+   Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta as medições da variável observada.
 
-.. Sugestão de exercício:
-   Identificar numa lista, eventos que podem apresentar sazonalidade, por exemplo:
-   - Venda de (panetones, cadeiras de praia, casacos, etc.) ao longo do ano.
-   - Consumo elétrico nas cidades onde o verão é muito quente.
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Organizando as ideias 2
+------------------------------
+
+.. Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
+
+Histograma
+   O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
+      
+.. admonition:: Observação 
+
+   **1)** Quando todos intervalos considerados têm a mesma amplitude a altura dos retângulos pode ser a frequência absoluta ou relativa de casos do intervalo, mas quando os intervalos apresentarem amplitudes desiguais usar a frequência não será mais apropriado. Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
+   
+   **2)** O gráfico de barras **não** é um histograma, apesar de suas representações serem parecidas.  O gráfico de barras é útil para descrever a distribuição de frequências de uma variável qualitativa. Nesse gráfico só há uma escala, a da frequência. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Os histogramas são úteis para representar a distribuição de frequências de uma variável qualitativa contínua cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência. 
+
+
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Praticando 2
+------------------------------
+
+Exercícios e situações práticas que envolvam a construção de gráficos, a análise de gráficos e a apresentação de outros tipos de gráficos.
+
+#. Refine o histograma utilizando um programa de computador <incluir link geogebra>. Observe o que acontece quando se refina muito a divisão do intervalo.
+
+   Às vezes a escala do histograma pode ocultar comportamentos do fenômeno que estamos estudando.
+
+#. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos (disponível de GeoGebra). 
+.. Observe como existe a possibilidade de que os registros sejam de eventos distintos e mesmo assim, isto fica oculto sob os grupos do histograma.
+
+.. Como seria aqui o organizando as ideias???
+
+.. Pode se incluir aqui uma discussão sobre o histograma ou então juntar com a da próxima atividade...
+
+
+**Séries temporais**
+
 
 Se colocamos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
 
@@ -1053,22 +1041,9 @@ A tabela a seguir contém a média das temperaturas máximas (em graus centígra
 
 Esta última observação mostra a importância de ler com cuidado sempre os valores representados nos eixos de um gráfico para poder interpretar de forma correta.
 
-.. Para reforzar esta observação, colocar um exercício com gráficos de barras com o eixo vertical limitado, para refletir sobre o efeito visual de algumas manipulações gráficas.
-
-.. _ativ-titulo-da-atividade:
-
-Organizando as ideias 2
-------------------------------
-
-Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
 
 
-.. _ativ-titulo-da-atividade:
 
-Praticando 2
-------------------------------
-
-Exercícios e situações práticas que envolvam a construção de gráficos, a análise de gráficos e a apresentação de outros tipos de gráficos.
 
 
 .. _ativ-titulo-da-atividade:
@@ -1095,6 +1070,15 @@ Aprofundando
 
 Exercícios
 ------------------------------
+
+
+.. Sugestão de exercício (sazonalidade):
+   Identificar numa lista, eventos que podem apresentar sazonalidade, por exemplo:
+   - Venda de (panetones, cadeiras de praia, casacos, etc.) ao longo do ano.
+   - Consumo elétrico nas cidades onde o verão é muito quente.
+
+.. Para reforzar a observação sobre a importância da escala dos eixos do gráfico e sua leitura para a correta interpretação: colocar um exercício com gráficos de barras com o eixo vertical limitado, para refletir sobre o efeito visual de algumas manipulações gráficas.
+
 
 .. _ativ-titulo-da-atividade:
 
