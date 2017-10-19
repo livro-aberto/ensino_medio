@@ -569,7 +569,7 @@ As regras do jogo são como se segue.
 
 **Vamos jogar!**
 
-Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
+Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes para diferenciar suas jogadas das do seu colega.
 
 **Descrevendo setas por meio de uma Rosa dos Ventos**
 
@@ -1652,7 +1652,7 @@ Atividade: decomposição de vetores em componentes
    * Decompor um vetor como a soma de outros dois vetores em situações diversas.
    * Perceber que, dado um vetor `\vec{w}`, a decomposição `\vec{w} = \vec{u} + \vec{v}` não é única.
 
-Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}`. Este vetores `\vec{u}` e `\vec{v}` são denominados
+Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}` seja igual ao vetor `\vec{w}` especificado. Estes vetores `\vec{u}` e `\vec{v}` são denominados
 :index:`componentes` do vetor `\vec{w}` com relação às retas `r` e `s`.
 
 .. tikz:: Caso (A)
@@ -1783,6 +1783,8 @@ Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor 
         \draw[] (-0.17,-0.828) node {$\vec{v} = \vec{0}$};
 
 
+
+
 Atividade: igualdade de vetores
 ------------------------------------------
 
@@ -1793,103 +1795,146 @@ Atividade: igualdade de vetores
    **Observações e recomendações**
 
    * O aluno pode copiar o desenho no seu caderno colocando a folha do caderno por sobre a página do livro.
-   * Não se espera aqui que o aluno faça um desenho com muita precisão, principalmente no que se refere à direção dos vetores dados como resposta (seus módulos, contudo, podem se estabelecidos com mais precisão usando-se uma régua graduada). O importante é que o aluno use uma estratégia coerente.
-   * Uma estratégia que pode ser usada para se resolver o problema é fazer uma segunda cópia do caminho poligonal `{\mathcal P}` transladado por `\vec{u}` e determinar os pontos de interseção dos dois caminhos.
-
-   .. tikz::
-      \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-      \definecolor{qqqqff}{rgb}{0.,0.,1.}
-      \tikzset{>=latex}
-      \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
-      \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
-      \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
-      \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
-      \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
-      \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
-      \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
-      \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
-      \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
-      \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
-      \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
-      \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
-      \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
-      \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
-      \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
-      \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
-      \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
-      \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (2.0pt);
-      \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (2.0pt);
-      \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt);
-      \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (2.0pt);
+   * Não se espera aqui que, no primeiro item, o aluno faça um desenho com muita precisão, principalmente no que se refere à direção dos vetores dados como resposta (seus módulos, contudo, podem se estabelecidos com mais precisão usando-se uma régua graduada). O importante é que o aluno use uma estratégia coerente.
 
 
-A figura a seguir exibe um caminho poligonal `{\mathcal P}`, um vetor `\vec{u}` e dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` é igual a `\vec{u}`. Existem outros pares pontos em `{\mathcal P}` que são extremidades de um vetor igual a `\vec{u}`? Em caso afirmativo, marque-os!
+#. A figura a seguir exibe um caminho `{\mathcal P}`, um vetor `\vec{u}` e dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` é igual a `\vec{u}`. Existem outros pares pontos em `{\mathcal P}` que são extremidades de um vetor igual a `\vec{u}`? Em caso afirmativo, marque-os!
 
-.. tikz::
+    .. tikz::
 
-    \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-    \definecolor{qqqqff}{rgb}{0.,0.,1.}
-    \tikzset{>=latex}
-    \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
-    \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
-    \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
-    \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
-    \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
-    \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
-    \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
-    \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
-    \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
-    \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
-    \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
-    \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
-    \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
-    \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
-    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
-    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
+        \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+        \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+        \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+        \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+        \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+        \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+        \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
+        \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
+        \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+        \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+        \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+
+#. Existe algum caminho `{\mathcal P}` para o qual *não é possível* encontrar dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual ao vetor `\vec{u}` dado na figura?
+
+#. Existe algum caminho `{\mathcal P}` para o qual é possível encontrar uma infinidade de pares de pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual ao vetor `\vec{u}` dado na figura?
+
+#. Conceba uma estratégia que, dados um caminho `{\mathcal P}` e um vetor `\vec{u}`, obtenha todos os pares de pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual a `\vec{u}`.
 
 
 .. admonition:: Resposta
 
-   .. tikz::
+   #. 
+   
+       .. tikz::
 
-    \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-    \definecolor{qqqqff}{rgb}{0.,0.,1.}
-    \tikzset{>=latex}
-    \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
-    \draw [->,line width=0.8pt,color=qqqqff] (-0.7308501710822177,3.5401393293577077) -- (0.7091498289177827,3.9201393293577076);
-    \draw [->,line width=0.8pt,color=qqqqff] (-0.8600902461257978,-0.5867739288969923) -- (0.5799097538742026,-0.20677392889699242);
-    \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
-    \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
-    \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
-    \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
-    \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
-    \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
-    \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
-    \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
-    % \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
-    % \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
-    % \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
-    % \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
-    % \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
-    % \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
-    % \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
-    \draw [->,line width=0.8pt,color=qqqqff] (0.4120318302387269,-0.32222811671087537) -- (1.8520318302387273,0.057771883289124526);
-    \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
-    \draw [color=qqqqff](-0.1721,-0.1214) node[] {$\vec{u}$};
-    \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
-    \draw [color=qqqqff](0.1194,3.486) node[] {$\vec{u}$};
-    \draw [color=qqqqff](1.2007,-0.4958) node[] {$\vec{u}$};
-    \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
-    \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
-    \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
-    \draw [fill=qqqqff] (-0.7308501710822177,3.5401393293577077) circle (1.0pt);
-    \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (1.0pt);
-    \draw [fill=qqqqff] (-0.8600902461257978,-0.5867739288969923) circle (1.0pt);
-    \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (1.0pt);
-    \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
-    \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
-    \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
-    \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [->,line width=0.8pt,color=qqqqff] (-0.7308501710822177,3.5401393293577077) -- (0.7091498289177827,3.9201393293577076);
+        \draw [->,line width=0.8pt,color=qqqqff] (-0.8600902461257978,-0.5867739288969923) -- (0.5799097538742026,-0.20677392889699242);
+        \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
+        \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+        \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+        \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+        \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+        \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+        \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+        \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+        % \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+        % \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+        % \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+        % \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+        % \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+        % \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+        % \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+        \draw [->,line width=0.8pt,color=qqqqff] (0.4120318302387269,-0.32222811671087537) -- (1.8520318302387273,0.057771883289124526);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [color=qqqqff](-0.1721,-0.1214) node[] {$\vec{u}$};
+        \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
+        \draw [color=qqqqff](0.1194,3.486) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.2007,-0.4958) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
+        \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
+        \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+        \draw [fill=qqqqff] (-0.7308501710822177,3.5401393293577077) circle (1.0pt);
+        \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (1.0pt);
+        \draw [fill=qqqqff] (-0.8600902461257978,-0.5867739288969923) circle (1.0pt);
+        \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (1.0pt);
+        \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+        \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+        \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
+        \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
+        
+   #. Sim, existe. A figura a seguir exibe um exemplo.
+   
+       .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [line width=0.8pt] (2.5,0.5)-- (3,0.5);                
+        \draw [line width=0.8pt] (3,0.5)-- (3,1);
+        \draw [line width=0.8pt] (3,1)-- (2.5,1);
+        \draw [line width=0.8pt] (2.5,1)-- (2.5,0.5);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [](2.7428,0.1783) node[] {$\mathcal P$};
+        
+   #. Sim, existe. A figura a seguir exibe um exemplo.
+   
+       .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.006) -- (6.594,1.386);
+        \draw [line width=0.8pt] (3.82,1.64)-- (3.82,0.5);
+        \draw [line width=0.8pt] (3.82,0.5)-- (-0.5,0.5);
+        % \draw [line width=0.8pt] (-0.5,0.5)-- ({-0.5+3*(6.594-5.154)},{0.5+3*(1.686-1.306)});
+        \draw [line width=0.8pt] (-0.5,0.5)-- (3.82,1.64);
+        \draw [color=qqqqff](5.7421,1.4704) node[] {$\vec{u}$};
+        \draw [](1.7053,0.0985) node[] {$\mathcal P$};  
+        
+        
+   #. Uma estratégia que pode ser usada para se resolver o problema é fazer uma segunda cópia do caminho `{\mathcal P}` transladado por `\vec{u}` e determinar os pontos de interseção dos dois caminhos. A figura a seguir ilustra está técnica para o caminho `{\mathcal P}` do primeiro item.
+
+       .. tikz::
+          \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+          \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \tikzset{>=latex}
+          \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+          \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+          \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+          \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+          \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+          \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+          \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+          \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+          \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+          \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+          \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+          \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+          \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+          \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+          \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+          \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+          \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+          \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (2.0pt);
+          \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (2.0pt);
+          \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt);
+          \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (2.0pt);
+        
+
+
 
 ..
   Atividade: soma de três vetores
@@ -2036,7 +2081,7 @@ Na figura a seguir, `\vec{u} = \overrightarrow{AB}`, `\vec{v} = \overrightarrow{
        % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
-#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{v}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
+#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{w}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
 
 #. Desenhe na figura os vetores `\overrightarrow{AC}`, `\overrightarrow{AG}` e `\overrightarrow{AI}` e escreva-os em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`.
 
@@ -2354,7 +2399,7 @@ Na figura a seguir estão representados um vetor `\vec{v}` e um ponto `P`.
     % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
     % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
     % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
-    % \draw[] (1.6549,1.5502) node {$\vec{v}$};
+    \draw[] (1.6549,1.5502) node {$\vec{v}$};
     % \fill (v3) circle [radius=2pt];
     \fill (v4) circle [radius=2pt];
     % \fill (v5) circle [radius=2pt];
