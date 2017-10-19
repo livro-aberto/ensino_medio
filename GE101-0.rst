@@ -1652,7 +1652,7 @@ Atividade: decomposição de vetores em componentes
    * Decompor um vetor como a soma de outros dois vetores em situações diversas.
    * Perceber que, dado um vetor `\vec{w}`, a decomposição `\vec{w} = \vec{u} + \vec{v}` não é única.
 
-Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}` seja igual ao vetor `\vec{w}` especificado. Este vetores `\vec{u}` e `\vec{v}` são denominados
+Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}` seja igual ao vetor `\vec{w}` especificado. Estes vetores `\vec{u}` e `\vec{v}` são denominados
 :index:`componentes` do vetor `\vec{w}` com relação às retas `r` e `s`.
 
 .. tikz:: Caso (A)
@@ -2081,7 +2081,7 @@ Na figura a seguir, `\vec{u} = \overrightarrow{AB}`, `\vec{v} = \overrightarrow{
        % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
        % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
 
-#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{v}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
+#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{w}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
 
 #. Desenhe na figura os vetores `\overrightarrow{AC}`, `\overrightarrow{AG}` e `\overrightarrow{AI}` e escreva-os em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`.
 
@@ -2399,7 +2399,7 @@ Na figura a seguir estão representados um vetor `\vec{v}` e um ponto `P`.
     % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
     % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
     % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
-    % \draw[] (1.6549,1.5502) node {$\vec{v}$};
+    \draw[] (1.6549,1.5502) node {$\vec{v}$};
     % \fill (v3) circle [radius=2pt];
     \fill (v4) circle [radius=2pt];
     % \fill (v5) circle [radius=2pt];
