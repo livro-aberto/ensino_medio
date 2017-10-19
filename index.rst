@@ -51,6 +51,9 @@ Ensino Médio
 
    GE101
    GE101-0
+   GE101-0A
+   GE101-0B
+   GE101-0C
    GE101-1
    GE101-1A
    GE101-1B
