@@ -1,6 +1,6 @@
-********************
+**********************************
 ROTEIRO: A NATUREZA DA ESTATÍSTICA
-********************
+**********************************
  
 .. admonition:: Previsão de aulas necessárias 
     
@@ -97,8 +97,6 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
   
 .. admonition:: Dificuldades típicas dos estudantes (distratores)
 
-  Como a inclusão de Estatística na Educação Básica é relativamente recente,  não foram  observados muitos trabalhos acadêmicos abordando as dificuldades de aprendizagem da Estatística. No entanto, pelo mesmo motivo, os artigos discutem muito mais princípios que norteiam a  forma de abordar a Estatística nesse segmento de ensino e a formação dos professores para essa tarefa (Batanero e Burril, 2011), (Batanero e Borovcnik, 2016), (Franklin, C. A., 2007, GAISE) e (Relatório da ABE, 2015). Além disso, é importante observar que cabe à Educação Básica aspectos bastante introdutórios da Estatística. 
-  
   De acordo com Batanero e Borovnick (2016), mesmo que os métodos de análise de dados nessa fase do ensino envolvam somente calcular e interpretar porcentagens  ou medidas estatísticas simples, bem como interpretar vários tipos de gráficos, pesquisa sugere que os estudantes apresentam problemas na compreensão dos conceitos e na relação desses conceitos para o contexto de modo a ter algum significado. Uma razão para essas dificuldades é que o ensino, em geral, foca sobre a aplicação de métodos em detrimento à interpretação de resultados em um dado contexto.
   
   Os distratores apresentados a seguir refletem a experiência dos envolvidos com o desenvolvimento desse capítulo. 
@@ -146,26 +144,25 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
          
  **Praticando 1** 
       
- Atividades que exijam a reflexão crítica a partir dos conceitos fundamentais da estatística.  
- #. Atividade: **Realização de pesquisa** o foco nessa atividade será pedir aos estudantes que busquem dados já disponíveis sobre o tamanho da população da sua cidade ou estado e outros dados como número de escolas de ensino fundamental ou médio na cidade ou estado  ou dados sobre hospitais, número de leitos, número de  salas de cinema, meios de transporte e, a partir do cruzamento desses dados gerar informações. (Os links para a obtenção de dados serão informados.)
+ Atividades que exijam a reflexão crítica a partir de conceitos fundamentais da estatística.  
+ 
+ Atividades incluídas: (1) **A turma e a prática de atividades físicas** o foco nessa atividade será pedir aos estudantes levantem as informações da turma quanto à prática de atividades físicas e algumas outras variáveis da pesquisa PNAD/2015 para organizar os resultados e comparar com os da PNAD/2015. Será recomendado ao professor levar um mapa para os alunos inserirem suas respostas de modo a facilitar o posterior resumo dos dados e construção de gráficos. (2) **Classificação de variáveis** (3) **Reconstrução de infográficos** (4) **Análise de um gráfico de barras**.
  
       
- **Explorando -2 .** Proposição de uma atividade que envolve uma coleta de dados da turma para comparar com os resultados da PNAD/2015 e duas atividades para explorar o caso de variáveis quantitativas contínuas: uma cujo objetivo é estudar sua dispersão em termos da frequência com que seus valores ocorrem e a outra cujo objetivo é estudar seu comportamento ao longo do tempo.   
+ **Explorando -2 .** Proposição de uma atividades que envolvem analisar variáveis quantitativas contínuas: uma cujo objetivo é estudar a distribuição de frequências dos valores observados e a outra cujo objetivo é estudar seu comportamento ao longo do tempo.   
  
- #. Atividade: **Condução de uma coleta de dados sobre a turma** envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” com o objetivo de comparar os resultados da amostra com os da PNAD/2015.
- #. Atividade: **Análise de variável quantitativa contínua: dispersão em relação a distribuição de frequências** levando à necessidade da construção de intervalos de classe e à construção do histograma. 
- #. Atividade: **Análise de variável quantitativa contínua: comportamento ao longo do tempo** levando a necessidade da construção de um gráfico de linha para estudar o comportamento dessa variável ao longo do tempo.  
+ #. Atividade: **Análise de variável quantitativa contínua** levando à necessidade da construção de intervalos de classe e à construção do histograma. 
+ #. Atividade: **Análise de variável quantitativa contínua: comportamento ao longo do tempo** levando à  construção de um gráfico de linha para estudar o comportamento dessa variável ao longo do tempo.  
   
  **Organizando as ideias. 2** 
  
- Apresentar princípios básicos para a construção dos intervalos de classe no caso de variáveis quantitativas contínuas, problematizando a importância de que o número de intervalos de classe não deva ser nem muito pequeno - o que acarretaria grande perda de informação - nem muito alto - que não revelaria a estrutura dos dados. Explorar a propriedade das áreas relativas em relação à área total do histograma. Destacar a diferença entre gráfico de barras e histograma. Apresentar um resumo indicando os gráficos adequados para os diferentes tipos de variáveis.
+ Apresentar princípios básicos para a construção dos intervalos de classe no caso de variáveis quantitativas contínuas, problematizando a importância de que o número de intervalos de classe não deva ser nem muito pequeno - o que acarretaria grande perda de informação - nem muito alto - que não revelaria a estrutura dos dados. Explorar a propriedade das áreas relativas em relação à área total do histograma. Destacar a diferença entre gráfico de barras e histograma. 
     
  **Praticando 2** 
  
- Atividades que envolvam a organização de dados em tabelas e gráficos para posterior análise dos resultados obtidos e atividades de leitura e interpretação de gráficos. Incluir atividade envolvendo cartogramas. 
+ São apresentadas duas atividades que são desdobramentos das atividades no explorando 2. Em ambos os casos o Geogebra será uma ferramenta importante. A primeira envolve a construção de histogramas considerando um maior número de intervalos e a construção de histogramas considerando subconjuntos distintos do conjunto original. Disponibilizaremos o conjunto de dados para ser trabalhado no Geogebra.   A segunda atividade é um desdobramento da análise das médias de temperatura máxima com o objetivo de estudar possível tend~encia ao longo do tempo. Será fixado o mês de janeiro e dois gráficos de linha da evolução desse dado ao longo de vários anos serão trabalhados.
  
- 
- 
+  
  **Explorando -3 .** Projeto a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. As etapas sugeridas para o desenvolvimento do projeto estão destacadas no documento da ABE (2015).
  
  #. Atividade: **Realização de projeto** 
