@@ -1,3 +1,1282 @@
-********
-GE101-0C
-********
+
+
+************************************
+Praticando o assunto
+************************************
+
+
+.. _ativ-vetores-e-ou-nao-vetor:
+
+
+Atividade: toda seta é vetor?
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   * Identificar, nas situações apresentadas no enunciado do exercício, se as setas representam ou não um vetor.
+   * Perceber que grandezas vetoriais podem ser representadas geometricamente por outros meios (no caso, setas de mesmo tamanho para representar direção e sentido e uma escala de cores para representar o módulo) e que estes meios são usados em outras áreas.
+   * Perceber os diversos usos de setas como recurso gráfico.
+
+   **Recomendações e sugestões**
+
+   * A placa de trânsito pode levantar a questão sobre a espessura da seta: vetores têm espessura? Não somente na placa de trânsito mas, em todos os desenhos apresentados e em qualquer um que venha a ser feito, as setas têm alguma espessura e, neste ponto, é importante esclarecer que estas setas desenhadas são apenas *representações* do conceito matemático. Do mesmo modo que não dá para se desenhar uma reta, não dá para desenhar um vetor. O que é possível desenhar são representações destes objetos matemáticos abstratos.
+   * Caso seja de interesse, as referências [Horn-1998]_ e [Wong-2011]_ fazem um estudo sobre os diferentes usos de setas como recurso gráfico em diferentes áreas do conhecimento.
+
+Vimos que vetores são representados geometricamente por setas. Mas será que toda seta em um desenho representa um vetor? Analise as imagens a seguir e decida se as setas desenhadas representam um vetor, isto é, se as setas, de algum modo, estão "codificando" direção, sentido e módulo. Justifique sua resposta!
+
+.. _fig-geometria-flechas-01:
+
+.. figure:: _resources/geometria-flechas-01.jpg
+   :width: 150pt
+   :align: center
+
+   Uma placa de trânsito.
+
+
+.. _fig-geometria-flechas-02:
+
+.. figure:: _resources/geometria-flechas-02.jpg
+   :width: 300pt
+   :align: center
+
+   Um diagrama com os passos para dançar rumba.
+
+.. _fig-geometria-flechas-06:
+
+.. figure:: _resources/geometria-flechas-06.png
+   :width: 300pt
+   :align: center
+
+   O mapa de ondas do Oceano Atlântico no dia 30/09/2017 (fonte: INPE <http://ondas.cptec.inpe.br/mapas.php?regiao=atlantico>).
+
+.. _fig-geometria-flechas-07:
+
+.. figure:: _resources/geometria-flechas-07.jpg
+   :width: 350pt
+   :align: center
+
+   Campo de vento na superfície do mar, no dia 21/11/2015, gerado pelo escaterômetro ASCAT a bordo do satélite MetOp-A, onde as cores dos vetores indicam as divisões da escala Beaufort de ventos, que vai de 0 a 12 (fonte: INPE <http://www.inpe.br/noticias/noticia.php?Cod_Noticia=4067>).
+
+
+.. _fig-geometria-flechas-03:
+
+.. figure:: _resources/geometria-flechas-03.png
+   :width: 350pt
+   :align: center
+
+   Previsão do tempo no Jornal Nacional do dia 14/04/2012 (fonte: Globo Play <http://g1.globo.com/jornal-nacional/videos/t/edicoes/v/ventos-fortes-devem-atingir-o-sudeste-do-brasil-neste-domingo-15/1904441/>).
+
+
+.. _fig-geometria-flechas-08:
+
+.. figure::  _resources/geometria-flechas-08.*
+   :width: 200pt
+   :align: center
+
+   Notação matemática para uma função `f` cujo domínio é o conjunto `A` e o contradomínio é o conjunto `B`.
+
+.. admonition:: Resposta
+
+   * A seta da :numref:`fig-geometria-flechas-01` não representa um vetor, pois ela indica apenas direção e sentido, sem nenhuma atribuição com relação ao módulo.
+   * As setas da :numref:`fig-geometria-flechas-02` são vetores. De fato, elas são vetores deslocamentos.
+   * As setas da :numref:`fig-geometria-flechas-06`, somente por si, indicam apenas direção e sentido, logo elas não são vetores. O mapa de ondas, como um todo, por outro lado, está codificando uma grandeza vetorial: a direção e o sentido da propagação da onda (por meio das setas) e sua altura significativa em metros (por meio das cores).
+   * As setas da :numref:`fig-geometria-flechas-07` representam vetores, pois elas indicam direção, sentido e módulo. Note que, contudo, ao invés de representar o módulo por meio do comprimento da seta, esta figura optou por usar uma escala de cores.
+   * As setas da :numref:`fig-geometria-flechas-03`  representam vetores, pois elas indicam direção, sentido e módulo. Note que, aqui, existe uma redundância na representação do módulo: isto está sendo feito pelo comprimento da seta e por sua cor.
+   * A seta da :numref:`fig-geometria-flechas-08` não representa um vetor, pois o seu uso nesta notação não indica nem direção, nem sentido e nem módulo.
+
+
+Atividade: soma de dois vetores
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** somar vetores incluindo em situações singulares (não prototípicas, conforme [Poynter-et-al-2005]_).
+
+   **Observação:** dependendo das escolhas dos representantes dos vetores e dos procedimentos usados (a "regra do triângulo" ou a "regra do paralelogramo), estratégias diferentes podem ser usadas pelos alunos, todas produzindo o mesmo vetor soma.
+
+
+
+Represente graficamente o vetor soma `\vec{u} + \vec{v}` em cada um dos casos a seguir.
+
+
+.. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+
+
+.. tikz:: Caso (B)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (3,1) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+
+
+.. tikz:: Caso (C)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (0.5,4) {};
+       \node (v3) at (3,1) {};
+       \node (v7) at (1.5,3) {};
+       \node (v8) at (0.5,4) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};
+       \draw[] (0.692,3.3362) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+
+.. tikz:: Caso (D)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (3,2) {};
+       \node (v2) at (-0.5,1.5) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};
+       \node (v8) at (-0.5,1.5) {};
+       \node (v5) at (3.5,3.5) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);
+       \draw[] (1.281,1.496) node {$\vec{v}$};
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};
+       % \draw [dotted] (v7.center) -- (v5.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center);
+       % \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$};
+
+
+.. tikz:: Caso (E)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (2,3.5) {};
+       \node (v2) at (-1.5,2.5) {};
+       \node (v3) at (4,2.5) {};
+       \node (v4) at (0.5,1.5) {};
+       % \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};
+       \node (v8) at (1.5,0.5) {};
+       \node (v5) at (2,3.5) {};
+       \node (v6) at (-2,-0.5) {};
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};
+       % \draw[] (-0.0785,3.3467) node {$\vec{u}$};
+       % \draw [dotted] (v7.center) -- (v5.center);
+       % \draw [dotted] (v2.center) -- (v6.center);
+       % \draw [dotted] (v8.center) -- (v6.center);
+       % \draw [dotted] (v2.center) -- (v4.center);
+       % \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center);
+       % \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$};
+
+
+.. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (1,2) {};
+       \node (v2) at (3,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};
+       \node (v8) at (-1,2) {};
+       \node (v5) at (3.5,3.5) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw[] (1.9922,2.3) node {$\vec{v}$};
+       \draw[] (0.0075,2.3) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \fill (v1) circle [radius=2pt];
+
+
+.. admonition:: Resposta
+
+    Os procedimentos indicados a seguir não são únicos, pois diferentes estratégias podem ser usadas, todas produzindo o mesmo vetor soma no final.
+
+    .. tikz:: Caso (A)
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v2.center) -- (v3.center);
+       \draw[] (0.7865,2.0912) node {$\vec{v}$};
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw[->,line width=0.8pt, color=qqqqff]  (v1.center) -- (v3.center);
+       \draw[color=qqqqff] (1.7268,1.0213) node {$\vec{u} + \vec{v}$};
+
+
+
+    .. tikz:: Caso (B)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \draw[] (2,0.5) node {$\vec{v}$};
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);
+       \draw [dotted] (v3.center)  -- (v4.center);
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center);
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$};
+
+
+
+    .. tikz:: Caso (C)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (0.5,0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (3,1) {};
+       \node (v4) at (2,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \draw [->,line width=0.8pt] (v1.center) -- (v3.center);
+       \node (v7) at (1.5,3) {};
+       \node (v8) at (0.5,4) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw[] (2,0.5) node {$\vec{v}$};
+       \draw[] (-0.3354,0.8523) node {$\vec{u}$};
+       \draw[] (0.692,3.3362) node {$\vec{u}$};
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [dotted] (v2.center)  -- (v4.center);
+       \draw [dotted] (v3.center)  -- (v4.center);
+       \draw [dotted] (v1.center)  -- (v7.center);
+       \draw [dotted] (v2.center)  -- (v8.center);
+       \draw [->,line width=0.8pt,color=qqqqff] (v1.center) -- (v4.center);
+       \node [color=qqqqff,rotate=45] at (1.5364,1.1535) {$\vec{u} + \vec{v}$};
+
+    .. tikz:: Caso (D)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (3,2) {};
+       \node (v2) at (-0.5,1.5) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (0,3) {};
+       \node (v8) at (-0.5,1.5) {};
+       \node (v5) at (3.5,3.5) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);
+       \draw[] (1.281,1.496) node {$\vec{v}$};
+       \draw[] (3.4849,2.743) node {$\vec{u}$};
+       \draw[] (-0.5603,2.3331) node {$\vec{u}$};
+       \draw [dotted] (v7.center) -- (v5.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center);
+       \node [color=qqqqff,rotate=24] at (1.2584,2.7087) {$\vec{u} + \vec{v}$};
+
+    .. tikz:: Caso (E)
+
+     \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (2,3.5) {};
+       \node (v2) at (-1.5,2.5) {};
+       \node (v3) at (4,2.5) {};
+       \node (v4) at (0.5,1.5) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (2,3.5) {};
+       \node (v8) at (1.5,0.5) {};
+       \node (v5) at (2,3.5) {};
+       \node (v6) at (-2,-0.5) {};
+       \draw [->,line width=0.8pt] (v3.center)  -- (v4.center);
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       \draw[] (1.4917,2.2828) node {$\vec{v}$};
+       \draw[] (2.6145,1.8019) node {$\vec{u}$};
+       \draw[] (-0.0785,3.3467) node {$\vec{u}$};
+       \draw [dotted] (v7.center) -- (v5.center);
+       \draw [dotted] (v2.center) -- (v6.center);
+       \draw [dotted] (v8.center) -- (v6.center);
+       \draw [dotted] (v2.center) -- (v4.center);
+       \draw [dotted] (v1.center) -- (v3.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v6.center);
+       \node [color=qqqqff,rotate=45] at (-0.1887,1.6371) {$\vec{u} + \vec{v}$};
+
+
+    .. tikz:: Caso (F)
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \tikzset{>=latex}
+       \draw[step=0.5,color=gggggg,thin] (-3.0,-1.0) grid (5.0,4.5);
+       \node (v1) at (1,2) {};
+       \node (v2) at (3,2) {};
+       \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+       \node (v7) at (1,2) {};
+       \node (v8) at (-1,2) {};
+       \node (v5) at (3.5,3.5) {};
+       \draw [->,line width=0.8pt] (v7.center)  -- (v8.center);
+       % \draw [->,line width=0.8pt] (v5.center)  -- (v1.center);
+       \draw[] (1.9922,2.3) node {$\vec{v}$};
+       % \draw[] (3.4849,2.743) node {$\vec{u}$};
+       \draw[] (0.0075,2.3) node {$\vec{u}$};
+       % \draw [dotted] (v7.center) -- (v5.center);
+       \draw  (-3.0,4.5) rectangle (5.0,-1.0);
+       % \draw [->,line width=0.8pt,color=qqqqff] (v5.center) -- (v2.center);
+       \node [color=qqqqff,rotate=0] at (0.9859,1.5963) {$\vec{u} + \vec{v} = \vec{0}$};
+        % \fill (v1) circle [radius=2pt];
+        \fill [color=qqqqff] (v1) circle [radius=2pt];
+
+
+Atividade: decomposição de vetores em componentes
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   * Decompor um vetor como a soma de outros dois vetores em situações diversas.
+   * Perceber que, dado um vetor `\vec{w}`, a decomposição `\vec{w} = \vec{u} + \vec{v}` não é única.
+
+Em cada caso a seguir, determine um vetor `\vec{u}` sobre a reta `r` e um vetor `\vec{v}` sobre a reta `s` de modo que `\vec{u} + \vec{v}` seja igual ao vetor `\vec{w}` especificado. Estes vetores `\vec{u}` e `\vec{v}` são denominados
+:index:`componentes` do vetor `\vec{w}` com relação às retas `r` e `s`.
+
+.. tikz:: Caso (A)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({-0},{\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-0.2348,2.7408) node {$s$};
+        \draw[] (4.2227,-0.6945) node {$r$};
+
+
+.. tikz:: Caso (B)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+0.2*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.5*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-4.079,1.2004) node {$s$};
+        \draw[] (4.1563,0.5383) node {$r$};
+        \node (v3) at  (-1.85714, 0.42857) {};
+        \node (v4) at  (2.85714, 0.07143)  {};
+
+.. tikz:: Caso (C)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+1.5*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.6666666*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-3.998,1.7998) node {$s$};
+        \draw[] (2.3993,2.6634) node {$r$};
+        \node (v4) at  (1,1)  {};
+
+
+.. admonition:: Resposta
+
+
+
+   .. tikz:: Caso (A)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({-0},{\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-0.2348,2.7408) node {$s$};
+        \draw[] (4.2227,-0.6945) node {$r$};
+        \node (v3) at (0,1) {};
+        \node (v4) at (1,-0.5) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+        \draw [dotted] (v2.center) -- (v4.center);
+        \draw [dotted] (v2.center) -- (v3.center);
+        \draw[] (0.5751,-0.6927) node {$\vec{u}$};
+        \draw[] (-0.3238,0.2913) node {$\vec{v}$};
+
+
+   .. tikz:: Caso (B)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+0.2*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.5*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-4.079,1.2004) node {$s$};
+        \draw[] (4.1563,0.5383) node {$r$};
+        \node (v3) at  (-1.85714, 0.42857) {};
+        \node (v4) at  (2.85714, 0.07143)  {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+        \draw [dotted] (v2.center) -- (v4.center);
+        \draw [dotted] (v2.center) -- (v3.center);
+        \draw[] (1.5912,-0.5104) node {$\vec{u}$};
+        \draw[] (-1.3178,-0.1357) node {$\vec{v}$};
+
+
+   .. tikz:: Caso (C)
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \draw  (-4.5,-3) rectangle (4.5,3);
+        \clip (-4.5,-3) rectangle (4.5,3);
+        \node (v1) at (0,-0.5) {};
+        \node (v2) at (1,1) {};
+        \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5+1.5*\x});
+        \draw[domain=-5:5,smooth,variable=\x,gray] plot ({\x},{-0.5-0.6666666*\x});
+        \draw[color=qqqqff] (0.2309,0.4005) node {$\vec{w}$};
+        \draw[] (-3.998,1.7998) node {$s$};
+        \draw[] (2.3993,2.6634) node {$r$};
+        \node (v4) at  (1,1)  {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+        \draw[] (0.6984,0.1455) node {$\vec{u}$};
+        \draw[] (-0.17,-0.828) node {$\vec{v} = \vec{0}$};
+
+
+
+
+Atividade: igualdade de vetores
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** construir vetores iguais a um dado vetor.
+
+   **Observações e recomendações**
+
+   * O aluno pode copiar o desenho no seu caderno colocando a folha do caderno por sobre a página do livro.
+   * Não se espera aqui que, no primeiro item, o aluno faça um desenho com muita precisão, principalmente no que se refere à direção dos vetores dados como resposta (seus módulos, contudo, podem se estabelecidos com mais precisão usando-se uma régua graduada). O importante é que o aluno use uma estratégia coerente.
+
+
+#. A figura a seguir exibe um caminho `{\mathcal P}`, um vetor `\vec{u}` e dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` é igual a `\vec{u}`. Existem outros pares pontos em `{\mathcal P}` que são extremidades de um vetor igual a `\vec{u}`? Em caso afirmativo, marque-os!
+
+    .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
+        \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+        \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+        \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+        \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+        \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+        \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+        \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
+        \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
+        \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+        \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+        \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+
+#. Existe algum caminho `{\mathcal P}` para o qual *não é possível* encontrar dois pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual ao vetor `\vec{u}` dado na figura?
+
+#. Existe algum caminho `{\mathcal P}` para o qual é possível encontrar uma infinidade de pares de pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual ao vetor `\vec{u}` dado na figura?
+
+#. Conceba uma estratégia que, dados um caminho `{\mathcal P}` e um vetor `\vec{u}`, obtenha todos os pares de pontos `A` e `B` em `{\mathcal P}` tais que `\overrightarrow{AB}` seja igual a `\vec{u}`.
+
+
+.. admonition:: Resposta
+
+   #.
+
+       .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [->,line width=0.8pt,color=qqqqff] (-0.7308501710822177,3.5401393293577077) -- (0.7091498289177827,3.9201393293577076);
+        \draw [->,line width=0.8pt,color=qqqqff] (-0.8600902461257978,-0.5867739288969923) -- (0.5799097538742026,-0.20677392889699242);
+        \draw [->,line width=0.8pt,color=qqqqff] (2.1118844821953613,-0.12292557987585762) -- (3.5518844821953617,0.2570744201241423);
+        \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+        \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+        \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+        \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+        \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+        \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+        \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+        % \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+        % \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+        % \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+        % \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+        % \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+        % \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+        % \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+        \draw [->,line width=0.8pt,color=qqqqff] (0.4120318302387269,-0.32222811671087537) -- (1.8520318302387273,0.057771883289124526);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [color=qqqqff](-0.1721,-0.1214) node[] {$\vec{u}$};
+        \draw [color=qqqqff](2.8341,0.3341) node[] {$\vec{u}$};
+        \draw [color=qqqqff](0.1194,3.486) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.2007,-0.4958) node[] {$\vec{u}$};
+        \draw [color=qqqqff](1.7902,-0.2037) node[] {$A$};
+        \draw [color=qqqqff](3.8247,0.3554) node[] {$B$};
+        \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+        \draw [fill=qqqqff] (-0.7308501710822177,3.5401393293577077) circle (1.0pt);
+        \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (1.0pt);
+        \draw [fill=qqqqff] (-0.8600902461257978,-0.5867739288969923) circle (1.0pt);
+        \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (1.0pt);
+        \draw [fill=qqqqff] (2.1118844821953613,-0.12292557987585762) circle (1.0pt);
+        \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (1.0pt);
+        \draw [fill=qqqqff] (0.4120318302387269,-0.32222811671087537) circle (1.0pt);
+        \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (1.0pt);
+
+   #. Sim, existe. A figura a seguir exibe um exemplo.
+
+       .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+        \draw [line width=0.8pt] (2.5,0.5)-- (3,0.5);
+        \draw [line width=0.8pt] (3,0.5)-- (3,1);
+        \draw [line width=0.8pt] (3,1)-- (2.5,1);
+        \draw [line width=0.8pt] (2.5,1)-- (2.5,0.5);
+        \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+        \draw [](2.7428,0.1783) node[] {$\mathcal P$};
+
+   #. Sim, existe. A figura a seguir exibe um exemplo.
+
+       .. tikz::
+
+        \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \tikzset{>=latex}
+        \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.006) -- (6.594,1.386);
+        \draw [line width=0.8pt] (3.82,1.64)-- (3.82,0.5);
+        \draw [line width=0.8pt] (3.82,0.5)-- (-0.5,0.5);
+        % \draw [line width=0.8pt] (-0.5,0.5)-- ({-0.5+3*(6.594-5.154)},{0.5+3*(1.686-1.306)});
+        \draw [line width=0.8pt] (-0.5,0.5)-- (3.82,1.64);
+        \draw [color=qqqqff](5.7421,1.4704) node[] {$\vec{u}$};
+        \draw [](1.7053,0.0985) node[] {$\mathcal P$};
+
+
+   #. Uma estratégia que pode ser usada para se resolver o problema é fazer uma segunda cópia do caminho `{\mathcal P}` transladado por `\vec{u}` e determinar os pontos de interseção dos dois caminhos. A figura a seguir ilustra está técnica para o caminho `{\mathcal P}` do primeiro item.
+
+       .. tikz::
+          \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+          \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \tikzset{>=latex}
+          \draw [->,line width=0.8pt,color=qqqqff] (5.154,1.306) -- (6.594,1.686);
+          \draw [line width=0.8pt] (-3.324,0.544)-- (-0.508,0.632);
+          \draw [line width=0.8pt] (-0.508,0.632)-- (-1.08,-1.348);
+          \draw [line width=0.8pt] (-1.08,-1.348)-- (1.384,0.346);
+          \draw [line width=0.8pt] (1.384,0.346)-- (3.672,-1.128);
+          \draw [line width=0.8pt] (3.672,-1.128)-- (3.342,2.656);
+          \draw [line width=0.8pt] (3.342,2.656)-- (-0.068,4.306);
+          \draw [line width=0.8pt] (-0.068,4.306)-- (-3.324,0.544);
+          \draw [line width=0.8pt,color=ffzzqq] (2.824,0.726)-- (5.112,-0.748);
+          \draw [line width=0.8pt,color=ffzzqq] (5.112,-0.748)-- (4.782,3.036);
+          \draw [line width=0.8pt,color=ffzzqq] (4.782,3.036)-- (1.372,4.686);
+          \draw [line width=0.8pt,color=ffzzqq] (1.372,4.686)-- (-1.884,0.924);
+          \draw [line width=0.8pt,color=ffzzqq] (-1.884,0.924)-- (0.932,1.012);
+          \draw [line width=0.8pt,color=ffzzqq] (0.932,1.012)-- (0.36,-0.968);
+          \draw [line width=0.8pt,color=ffzzqq] (0.36,-0.968)-- (2.824,0.726);
+          \draw [color=qqqqff](5.7457,1.7774) node[] {$\vec{u}$};
+          \draw [](-2.2309,0.2612) node[] {$\mathcal P$};
+          \draw [fill=qqqqff] (0.7091498289177827,3.9201393293577076) circle (2.0pt);
+          \draw [fill=qqqqff] (0.5799097538742026,-0.20677392889699242) circle (2.0pt);
+          \draw [fill=qqqqff] (3.5518844821953617,0.2570744201241423) circle (2.0pt);
+          \draw [fill=qqqqff] (1.8520318302387273,0.057771883289124526) circle (2.0pt);
+
+
+
+
+..
+  Atividade: soma de três vetores
+  ------------------------------------------
+
+  .. admonition:: Para o professor
+
+     **Objetivo específico:** somar três vetores com representantes desenhados com uma mesma extremidade.
+
+  Na figura a seguir estão representados três vetores `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+  .. tikz::
+
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          % \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          % \draw [dotted] (v2.center) -- (v4.center);
+          % \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          % \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+  #. Copie a figura para seu caderno e, então, desenhe o vetor soma `\vec{u} + \vec{v}`.
+
+  .. admonition:: Resposta
+
+     #. O vetor soma `\vec{u} + \vec{v}` já está desenhado na figura, pois `\vec{u} + \vec{v} = \vec{w}`.
+
+     #. Observe que `\vec{u} + \vec{v} + \vec{w} = \vec{w} + \vec{w} = 2 \, \vec{w}`.
+
+
+      .. tikz::
+
+          \definecolor{qqqqff}{rgb}{0.,0.,1.}
+          \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+          \tikzset{>=latex}
+          \draw  (-2.5,-2) rectangle (3.5,2.5);
+          % \clip (-4.5,-3) rectangle (4.5,3);
+          \draw[step=0.5,color=gggggg,thin] (-2.5,-2.0) grid (3.5,2.5);
+          \node (v1) at (0,0) {};
+          \node (v2) at (1,-1) {};
+          \node (v3) at (0,1.5) {};
+          \node (v4) at (1, 0.5) {};
+          \node (v5) at (2, 1) {};
+          \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v3.center);
+          \draw [->,line width=0.8pt] (v1.center)  -- (v4.center);
+          \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v5.center);
+          \draw [dotted] (v2.center) -- (v4.center);
+          \draw [dotted] (v3.center) -- (v4.center);
+          \draw[] (-0.2948,0.7484) node {$\vec{u}$};
+          \draw[] (0.1492,-0.6437) node {$\vec{v}$};
+          \draw[] (0.609,-0.0321) node {$\vec{w}$};
+          \node [color=qqqqff,rotate=27] at (0.8844,0.8022) {$\vec{u} + \vec{v} + \vec{w}$};
+
+
+Atividade: a ordem das parcelas não altera a soma
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   #. Reconhecer vetores iguais.
+   #. Praticar a soma de dois e três vetores.
+   #. Perceber que, na soma de três vetores, a ordem das parcelas não altera o resultado da operação.
+
+Na figura a seguir, `\vec{u} = \overrightarrow{AB}`, `\vec{v} = \overrightarrow{AD}`, `\vec{w} = \overrightarrow{AF}` e os quadriláteros `ABCD`, `ABGF`, `ADIF`, `FGHI`, `DCHI` e `BCHG` são paralelogramos.
+
+
+.. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       % \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       % \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       % \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       % \draw[] (3.3431,0.584) node {$\vec{v}$};
+       % \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       % \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       % \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       % \draw[] (4.0729,2.858) node {$\vec{w}$};
+       % \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+#. Escreva os demais vetores indicados na figura em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`. Por exemplo, `\overrightarrow{BC} = \vec{w}`, pois `\overrightarrow{BC}` tem mesma direção, sentido e módulo de `\overrightarrow{AF} = \vec{w}`.
+
+#. Desenhe na figura os vetores `\overrightarrow{AC}`, `\overrightarrow{AG}` e `\overrightarrow{AI}` e escreva-os em termos de `\vec{u}`, `\vec{v}` e `\vec{w}`.
+
+#. Use a figura e os dois itens anteriores para mostrar que `\vec{u} + \vec{v} + \vec{w} = \vec{u} + \vec{w} + \vec{v} = \vec{v} + \vec{u} + \vec{w} = \vec{v} + \vec{w} + \vec{u} = \vec{w} + \vec{u} + \vec{v} = \vec{w} + \vec{v} + \vec{u}`, isto é, que a ordem das parcelas não altera a soma.
+
+.. admonition:: Resposta
+
+   #.
+
+
+    .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       % \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       % \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       % \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       % \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+   #.
+
+
+    .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       % \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+   #. Observe que `\vec{u} + \vec{v} + \vec{w} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{u} + \vec{w} + \vec{v} = \overrightarrow{AB} + \overrightarrow{BG} + \overrightarrow{GH} = \overrightarrow{AH}`, `\vec{v} + \vec{u} + \vec{w} = \overrightarrow{AD} + \overrightarrow{DC} + \overrightarrow{CH} = \overrightarrow{AH}`, `\vec{v} + \vec{w} + \vec{u} = \overrightarrow{AD} + \overrightarrow{DI} + \overrightarrow{IH} = \overrightarrow{AH}`, `\vec{w} + \vec{u} + \vec{v} = \overrightarrow{AF} + \overrightarrow{FG} + \overrightarrow{GH} = \overrightarrow{AH}` e  `\vec{w} + \vec{v} + \vec{u} = \overrightarrow{AF} + \overrightarrow{FI} + \overrightarrow{IH} = \overrightarrow{AH}`.
+
+
+    .. tikz::
+
+              \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+       \definecolor{hhhhhh}{rgb}{1.,0.,0.}
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (-1.5,-0.5) {};
+       \node (v2) at (-0.5,1.5) {};
+       \node (v3) at (2.5,-0.5) {};
+       \node (v4) at (3.5,1.5) {};
+       \node (v5) at (-1,2.5) {};
+       \node (v6) at (0,4.5) {};
+       \node (v7) at (3,2.5) {};
+       \node (v8) at (4,4.5) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \fill (v8) circle [radius=2pt];
+       \node [label={west:$A$}] at (v1) {};
+       \node [label={east:$B$}] at (v3) {};
+       \node [label={east:$C$}] at (v4) {};
+       \node [label={north east:$D$}] at (v2) {};
+       \node [label={west:$F$}] at (v5) {};
+       \node [label={east:$G$}] at (v7) {};
+       \node [label={east:$H$}] at (v8) {};
+       \node [label={west:$I$}] at (v6) {};
+       \draw [->,line width=1pt] (v1.center) -- (v3.center);
+       \draw [->,line width=1pt] (v1.center) -- (v2.center);
+       \draw [->,line width=1pt] (v1.center) -- (v5.center);
+       \draw [->,line width=1pt] (v3.center) -- (v4.center);
+       \draw [->,line width=1pt] (v2.center) -- (v4.center);
+       \draw [->,line width=1pt] (v3.center) -- (v7.center);
+       \draw [->,line width=1pt] (v4.center) -- (v8.center);
+       \draw [->,line width=1pt] (v2.center) -- (v6.center);
+       \draw [->,line width=1pt] (v5.center) -- (v7.center);
+       \draw [->,line width=1pt] (v6.center) -- (v8.center);
+       \draw [->,line width=1pt] (v5.center) -- (v6.center);
+       \draw [->,line width=1pt] (v7.center) -- (v8.center);
+       \draw[] (0.4834,-0.7751) node {$\vec{u}$};
+       \draw[] (1.1656,2.7667) node {$\vec{u}$};
+       \draw[] (1.8581,4.7328) node {$\vec{u}$};
+       \draw[] (1.3304,1.7581) node {$\vec{u}$};
+       \draw[] (-0.7185,0.584) node {$\vec{v}$};
+       \draw[] (3.3431,0.584) node {$\vec{v}$};
+       \draw[] (3.2151,3.4072) node {$\vec{v}$};
+       \draw[] (-0.7984,3.4072) node {$\vec{v}$};
+       \draw[] (-1.4918,0.9714) node {$\vec{w}$};
+       \draw[] (2.9514,0.9714) node {$\vec{w}$};
+       \draw[] (4.0729,2.858) node {$\vec{w}$};
+       \draw[] (-0.0714,2.858) node {$\vec{w}$};
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v6.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v4.center);
+       \draw [->,line width=1pt,color=qqqqff] (v1.center) -- (v7.center);
+       \draw [->,line width=1pt,color=hhhhhh] (v1.center) -- (v8.center);
+       \node [color=qqqqff,rotate=21] at (0.9947,0.2168) {\scalebox{0.8}{$\vec{u} + \vec{v}$}};
+       \node [color=qqqqff,rotate=32] at (1.1072,0.971) {\scalebox{0.8}{$\vec{u} + \vec{w}$}};
+       \node [color=qqqqff,rotate=72] at (-0.594,1.9358) {\scalebox{0.8}{$\vec{v} + \vec{w}$}};
+
+
+
+
+
+
+
+Atividade: procurando pontos
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: compreender a igualdade e soma de vetores por meio da resolução equações vetoriais.
+
+   **Recomendações e sugestões**
+
+   * Note que algumas equações podem ter mais de uma solução.
+   * O polígono desenhado não desempenha papel algum na solução da ativdiade.
+   * Enquanto a Equação g) não possui solução entre os pontos indicados na figura (isto é, os pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J`), certamente existe um ponto `X` no plano tal que `\overrightarrow{AB} + \overrightarrow{BX} = \overrightarrow{IJ}`.
+
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 211) Complete os espaços sublinhados com os nomes dos pontos indicados na figura de modo a deixar cada igualdade verdadeira.
+
+#. `\overrightarrow{IB} = \overrightarrow{\underline{\hphantom{M}}A} + \overrightarrow{A\underline{\hphantom{M}}}`.
+#. `\overrightarrow{HG} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \overrightarrow{HF}`.
+#. `\overrightarrow{D\underline{\hphantom{M}}} + \overrightarrow{C\underline{\hphantom{M}}} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{E\underline{\hphantom{M}}} + \overrightarrow{\underline{\hphantom{M}}E} = \overrightarrow{\underline{\hphantom{M}}B}`.
+#. `\overrightarrow{A\underline{\hphantom{M}}} = \overrightarrow{A\underline{\hphantom{M}}} + \overrightarrow{B\underline{\hphantom{M}}} +\overrightarrow{CJ}`.
+#. `\overrightarrow{FE} + \overrightarrow{\underline{\hphantom{M}}\,\underline{\hphantom{M}\vphantom{M}}} = \vec{0}`.
+#. `\overrightarrow{AB} + \overrightarrow{B\underline{\hphantom{M}}} = \overrightarrow{IJ}`.
+
+
+.. tikz::
+
+    %\newcommand{\pointGraphique}[4]{\draw (#1,#2) node[#4] {$#3$};
+    \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+    \draw[color=gggggg,thin] (-1,-1) grid (7,6);
+    \draw[line width=1.2pt] (0,2)--(1,0)--(2,0)--(3,1)--(4,0)--(5,0)--(4,2)--(6,4)--(4,4)--(3,5)--cycle;
+    % \pointGraphique{3}{5}{A}{above left}
+    \draw (3, 5) node[above left] {$A$};
+    \fill (3, 5) circle [radius=2pt];
+    % \pointGraphique{4}{4}{B}{above right}
+    \draw (4, 4) node[above right] {$B$};
+    \fill (4, 4) circle [radius=2pt];
+    % \pointGraphique{6}{4}{C}{above right}
+    \draw (6, 4) node[above right] {$C$};
+    \fill (6, 4) circle [radius=2pt];
+    % \pointGraphique{4}{2}{D}{above left}
+    \draw (4, 2) node[above left] {$D$};
+    \fill (4, 2) circle [radius=2pt];
+    % \pointGraphique{5}{0}{E}{below right}
+    \draw (5, 0) node[below right] {$E$};
+    \fill (5, 0) circle [radius=2pt];
+    % \pointGraphique{4}{0}{F}{below left}
+    \draw (4, 0) node[below left] {$F$};
+    \fill (4, 0) circle [radius=2pt];
+    % \pointGraphique{3}{1}{G}{above left}
+    \draw (3, 1) node[above left] {$G$};
+    \fill (3, 1) circle [radius=2pt];
+    % \pointGraphique{2}{0}{H}{below right}
+    \draw (2, 0) node[below right] {$H$};
+    \fill (2, 0) circle [radius=2pt];
+    % \pointGraphique{1}{0}{I}{below left}
+    \draw (1, 0) node[below left] {$I$};
+    \fill (1, 0) circle [radius=2pt];
+    % \pointGraphique{0}{2}{J}{above left}
+    \draw (0, 2) node[above left] {$J$};
+    \fill (0, 2) circle [radius=2pt];
+
+.. admonition:: Resposta
+
+      #. `\overrightarrow{IB} = \overrightarrow{IA} + \overrightarrow{AB}`.
+      #. `\overrightarrow{HG} + \overrightarrow{GF} = \overrightarrow{HF}` ou `\overrightarrow{HG} + \overrightarrow{AB} = \overrightarrow{HF}`.
+      #. `\overrightarrow{DD} + \overrightarrow{CC} = \overrightarrow{BB}`, `\overrightarrow{DC} + \overrightarrow{CD} = \overrightarrow{BB}`,       `\overrightarrow{DD} + \overrightarrow{CB} = \overrightarrow{CB}`, `\overrightarrow{DB} + \overrightarrow{CD} = \overrightarrow{CB}`,       `\overrightarrow{DC} + \overrightarrow{CB} = \overrightarrow{DB}` ou       `\overrightarrow{DB} + \overrightarrow{CC} = \overrightarrow{DB}`.
+      #. `\overrightarrow{EB} + \overrightarrow{AE} = \overrightarrow{AB}`, `\overrightarrow{EF} + \overrightarrow{GE} = \overrightarrow{AB}`, `\overrightarrow{EA} + \overrightarrow{AE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{BE} = \overrightarrow{BB}`, `\overrightarrow{EC} + \overrightarrow{CE} = \overrightarrow{BB}`, `\overrightarrow{ED} + \overrightarrow{DE} = \overrightarrow{BB}`, `\overrightarrow{EE} + \overrightarrow{EE} = \overrightarrow{BB}`, `\overrightarrow{EF} + \overrightarrow{FE} = \overrightarrow{BB}`, `\overrightarrow{EG} + \overrightarrow{GE} = \overrightarrow{BB}`, `\overrightarrow{EH} + \overrightarrow{HE} = \overrightarrow{BB}`, `\overrightarrow{EI} + \overrightarrow{IE} = \overrightarrow{BB}`, `\overrightarrow{EJ} + \overrightarrow{JE} = \overrightarrow{BB}`, `\overrightarrow{EB} + \overrightarrow{CE} = \overrightarrow{CB}`, `\overrightarrow{EH} + \overrightarrow{FE} = \overrightarrow{CB}`, `\overrightarrow{EB} + \overrightarrow{DE} = \overrightarrow{DB}`, `\overrightarrow{ED} + \overrightarrow{FE} = \overrightarrow{DB}`, `\overrightarrow{EB} + \overrightarrow{EE} = \overrightarrow{EB}`, `\overrightarrow{EB} + \overrightarrow{FE} = \overrightarrow{FB}`, `\overrightarrow{EA} + \overrightarrow{GE} = \overrightarrow{FB}`, `\overrightarrow{EB} + \overrightarrow{GE} = \overrightarrow{GB}`, `\overrightarrow{EC} + \overrightarrow{FE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{HE} = \overrightarrow{HB}`, `\overrightarrow{EB} + \overrightarrow{IE} = \overrightarrow{IB}` ou `\overrightarrow{EB} + \overrightarrow{JE} = \overrightarrow{JB}`.
+      #. `\overrightarrow{AJ} = \overrightarrow{AC} + \overrightarrow{BB} + \overrightarrow{CJ}` ou `\overrightarrow{AJ} = \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CJ}`.
+      #. `\overrightarrow{FE} + \overrightarrow{EF} = \vec{0}` ou `\overrightarrow{FE} + \overrightarrow{HI} = \vec{0}`.
+      #. Nenhum dos pontos `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` e `J` torna a equação verdadeira.
+
+
+Atividade: lugar geométrico
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: perceber que, dados um vetor `\vec{v}` não nulo e um ponto `P`, é uma reta o lugar geométrico dos pontos `X` tais que `\overrightarrow{PX} = t \, \vec{v}` para algum `t \in {\mathbb R}`.
+
+Na figura a seguir estão representados um vetor `\vec{v}` e um ponto `P`.
+
+.. tikz::
+
+    \definecolor{qqqqff}{rgb}{0.,0.,1.}
+    \def\dx{1.5};
+    \def\dy{0.5};
+    \def\px{-1.5};
+    \def\py{3};
+    \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+    \tikzset{>=latex}
+    \clip  (-5.5,5.5) rectangle (4,0);
+    % \draw  (-5.5,5.5) rectangle (4,0);
+    \node (v1) at (1,1) {};
+    \node (v2) at (2.5,1.5) {};
+    \node (v3) at (-2.5,1.5) {};
+    \node (v4) at (\px,\py) {};
+    \node (v5) at (\px + \dx,\py + \dy) {};
+    \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+    \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+    \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+    \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+    \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+    % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+    \draw[] (1.6549,1.5502) node {$\vec{v}$};
+    % \fill (v3) circle [radius=2pt];
+    \fill (v4) circle [radius=2pt];
+    % \fill (v5) circle [radius=2pt];
+    % \fill (v6) circle [radius=2pt];
+    % \fill (v7) circle [radius=2pt];
+    % \node [label={west:$O$}] at (v3) {};
+    \node [label={north west:$P$}] at (v4) {};
+    % \node [label={north west:$R$}] at (v5) {};
+    % \node [label={north west:$S$}] at (v6) {};
+    % \node [label={north west:$T$}] at (v7) {};
+    % \draw (v8.center)--(v9.center);
+
+#. Copie a figura para seu caderno e desenhe os pontos `R`, `S` e `T` tais que `\overrightarrow{PR} = \vec{v}`, `\overrightarrow{PS} = 2{,}5 \, \vec{v}` e `\overrightarrow{PT} = -2 \, \vec{v}`.
+
+#. Se você desenhasse todos os pontos `X` tais que `\overrightarrow{PX} = t \, \vec{v}` para algum `t \in {\mathbb R}`, que figura apareceria desenhada?
+
+.. admonition:: Resposta
+
+   #.
+
+    .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \def\dx{1.5};
+        \def\dy{0.5};
+        \def\px{-1.5};
+        \def\py{3};
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \clip  (-5.5,5.5) rectangle (4,0);
+        % \draw  (-5.5,5.5) rectangle (4,0);
+        \node (v1) at (1,1) {};
+        \node (v2) at (2.5,1.5) {};
+        \node (v3) at (-2.5,1.5) {};
+        \node (v4) at (\px,\py) {};
+        \node (v5) at (\px + \dx,\py + \dy) {};
+        \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+        \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+        \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+        \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+        \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+        \draw[] (1.6549,1.5502) node {$\vec{v}$};
+        % \fill (v3) circle [radius=2pt];
+        \fill (v4) circle [radius=2pt];
+        \fill (v5) circle [radius=2pt];
+        \fill (v6) circle [radius=2pt];
+        \fill (v7) circle [radius=2pt];
+        % \node [label={west:$O$}] at (v3) {};
+        \node [label={north west:$P$}] at (v4) {};
+        \node [label={north west:$R$}] at (v5) {};
+        \node [label={north west:$S$}] at (v6) {};
+        \node [label={north west:$T$}] at (v7) {};
+        % \draw (v8.center)--(v9.center);
+
+   #. Apareceria desenhada a reta que passa pelo ponto `P` e é paralela ao vetor `\vec{v}`.
+
+    .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+        \def\dx{1.5};
+        \def\dy{0.5};
+        \def\px{-1.5};
+        \def\py{3};
+        \definecolor{gggggg}{rgb}{0.9,0.9,0.9}
+        \tikzset{>=latex}
+        \clip  (-5.5,5.5) rectangle (4,0);
+        % \draw  (-5.5,5.5) rectangle (4,0);
+        \node (v1) at (1,1) {};
+        \node (v2) at (2.5,1.5) {};
+        \node (v3) at (-2.5,1.5) {};
+        \node (v4) at (\px,\py) {};
+        \node (v5) at (\px + \dx,\py + \dy) {};
+        \node (v6) at ({\px + 2.5*\dx}, {\py + 2.5*\dy}) {};
+        \node (v7) at ({\px - 2*\dx}, {\py - 2*\dy}) {};
+        \node (v8) at ({\px + 5*\dx}, {\py + 5*\dy}) {};
+        \node (v9) at ({\px - 5*\dx}, {\py - 5*\dy}) {};
+        \draw [->,line width=0.8pt] (v1.center)  -- (v2.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v5.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v6.center);
+        % \draw [->,line width=0.8pt] (v4.center)  -- (v7.center);
+        \draw[] (1.6549,1.5502) node {$\vec{v}$};
+        % \fill (v3) circle [radius=2pt];
+        \fill (v4) circle [radius=2pt];
+        % \fill (v5) circle [radius=2pt];
+        % \fill (v6) circle [radius=2pt];
+        % \fill (v7) circle [radius=2pt];
+        % \node [label={west:$O$}] at (v3) {};
+        \node [label={north west:$P$}] at (v4) {};
+        % \node [label={north west:$R$}] at (v5) {};
+        % \node [label={north west:$S$}] at (v6) {};
+        % \node [label={north west:$T$}] at (v7) {};
+        \draw (v8.center)--(v9.center);
+
+
+
+
+
+Atividade: usando vetores para demonstrar resultados em Geometria
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico**: praticar o uso de vetores para demonstrar resultados em Geometria.
+
+
+(Adaptado de [Sesamath-MATHS-2e-2014]_, p. 219) Considere um paralelogramo `OIJK`. Os pontos `A`, `B` e `G` são tais que `\overrightarrow{OA} = \frac{1}{2} \, \overrightarrow{OI}`, `\overrightarrow{OB} = \frac{1}{3} \, \overrightarrow{OK}` e `\overrightarrow{AG} = \frac{3}{5} \, \overrightarrow{AB}`.
+
+#. Faça uma figura para ilustrar o enunciado da atividade.
+
+#. Demonstre que `\overrightarrow{OG} = \frac{1}{5} \, \overrightarrow{OJ}`. Conclua que, em particular, os pontos `O`, `G` e `J` são colineares.
+
+.. admonition:: Resposta
+
+   #.
+
+    .. tikz::
+
+       \tikzset{>=latex}
+       % \draw[step=0.5,color=gggggg,thin] (-3.0,-1.5) grid (5.5,5.5);
+       \node (v1) at (0, 0) {};
+       \node (v2) at (6, 0) {};
+       \node (v4) at (1, 4) {};
+       \node (v3) at (7, 4) {};
+       \node (v5) at (3, 0) {};
+       \node (v6) at (0.3333333, 1.3333333) {};
+       \node (v7) at (1.4, 0.8) {};
+       \fill (v1) circle [radius=2pt];
+       \fill (v2) circle [radius=2pt];
+       \fill (v3) circle [radius=2pt];
+       \fill (v4) circle [radius=2pt];
+       \fill (v5) circle [radius=2pt];
+       \fill (v6) circle [radius=2pt];
+       \fill (v7) circle [radius=2pt];
+       \node [label={west:$O$}] at (v1) {};
+       \node [label={east:$I$}] at (v2) {};
+       \node [label={east:$J$}] at (v3) {};
+       \node [label={west:$K$}] at (v4) {};
+       \node [label={south:$A$}] at (v5) {};
+       \node [label={west:$B$}] at (v6) {};
+       \node [label={north:$G$}] at (v7) {};
+       \draw[line width=1.0pt] (v1.center)--(v2.center)--(v3.center)--(v4.center)--cycle;
+       \draw[line width=1.0pt] (v5.center)--(v6.center);
+       \draw[dotted] (v1)--(v3);
+
+   #. Demonstração: `\overrightarrow{OG} = \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{AB} = \overrightarrow{OA} + \frac{3}{5} \, \left(\overrightarrow{OB} - \overrightarrow{OA}\right) = \frac{2}{5} \, \overrightarrow{OA} + \frac{3}{5} \, \overrightarrow{OB} = \frac{2}{5} \, \frac{1}{2} \, \overrightarrow{OI} + \frac{3}{5} \, \frac{1}{3} \, \overrightarrow{OK} = \frac{1}{5} \, \overrightarrow{OI} + \frac{1}{5} \, \overrightarrow{OK} = \frac{1}{5} \, \left(\overrightarrow{OI} + \overrightarrow{OK}\right) = \frac{1}{5} \, \overrightarrow{OJ}`. Desta maneira, `\overrightarrow{OG}` tem mesma direção e sentido de `\overrightarrow{OJ}` e, portanto, `O`, `G` e `J` são colineares.
+
+
+
+
