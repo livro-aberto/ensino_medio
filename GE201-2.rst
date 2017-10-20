@@ -233,7 +233,7 @@ Observe ainda que, dado um segmento e um número positivo `k`, **só existe um p
 O que é a recíproca de um teorema?
 ---------
 
-Sabemos que um teorema é uma afirmação do tipo “Se A então B”. A recíproca de um teorema é uma afirmação onde as expressões A e B trocam de lugar. Assim a recíproca de “Se A então B” é “Se B então A”.
+Sabemos que um teorema é uma afirmação do tipo "Se A então B". A recíproca de um teorema é uma afirmação onde as expressões A e B trocam de lugar. Assim a recíproca de "Se A então B" é "Se B então A".
 
 Um teorema é uma afirmação verdadeira (pois conseguimos demonstrá-lo), mas sua recíproca nem sempre é verdadeira. Quando estamos trabalhando com números frequentemente as recíprocas das afirmações não são verdadeira, como no exemplo a seguir.
 
@@ -300,20 +300,20 @@ Na figura a seguir você vê um segmento `AB`, um ponto `P` no seu interior e as
    \draw [fill=black] (-1.2474868334000275,0.) circle (1.0pt);
    \draw [fill=black] (0.5068571428571428,0.) circle (1.0pt);
 
-A “projeção paralela sobre `r` na direção `d`” é uma função que, a cada ponto `X` do plano associa um ponto `X´` da seguinte forma. Trace por `X` uma reta paralela a `d`. Onde essa reta encontrar `r` está o ponto `X´`.
+A "projeção paralela sobre `r` na direção `d`" é uma função que, a cada ponto `X` do plano associa um ponto `X'` da seguinte forma. Trace por `X` uma reta paralela a `d`. Onde essa reta encontrar `r` está o ponto `X'`.
 
 Essa função parece uma chuva com vento da direita para a esquerda, fazendo as gotas caírem no chão.
 
-A razão em que o ponto `P` divide o segmento `AB` é `\dfrac{PA}{PB}`. Entretanto, pelo teorema de Tales, temos que  `\dfrac{PA}{P´A´}=\dfrac{PB}{P´B´}`.
+A razão em que o ponto `P` divide o segmento `AB` é `\dfrac{PA}{PB}`. Entretanto, pelo teorema de Tales, temos que  `\dfrac{PA}{P'A'}=\dfrac{PB}{P'B'}`.
 
-Isso quer dizer que  `\dfrac{PA}{PB}=\dfrac{P´A´}{P´B´}`, ou seja, a razão em que o ponto `P` divide o segmento `AB` é a mesma razão em que o ponto `P´` divide o segmento `A´B´`.
+Isso quer dizer que  `\dfrac{PA}{PB}=\dfrac{P'A'}{P'B'}`, ou seja, a razão em que o ponto `P` divide o segmento `AB` é a mesma razão em que o ponto `P'` divide o segmento `A'B'`.
 
 Dizemos então que **A projeção paralela conserva as razões.**
 
-Considere agora que, na figura acima se tenha `\dfrac{PA}{PB}=\dfrac{2}{3}` e que `A´B´` tenha 8 centímetros. 
+Considere agora que, na figura acima se tenha `\dfrac{PA}{PB}=\dfrac{2}{3}` e que `A'B'` tenha 8 centímetros. 
 
-#. Quanto mede o segmento `A´P´`?
-#. Qual é a razão `\dfrac{A´P´}{A´B´}` ?
+#. Quanto mede o segmento `A'P'`?
+#. Qual é a razão `\dfrac{A'P'}{A'B'}` ?
 
 
 .. admonition:: Resposta 
@@ -395,7 +395,7 @@ Atividade: Recíproca do Teorema de Tales
    \draw [fill=black] (0.12028381420322001,1.014714935047463) circle (1.0pt);
    \draw [fill=black] (3.8262485808239415,1.0080756473689043) circle (1.0pt);
 
-Na figura acima, se `\frac{a}{a´}=\frac{b}{b´}` as retas `r` e `s` são paralelas? A resposta é sim e essa ideia é a recíproca do teorema de Tales. Você vai agora acompanhar a justificativa desse fato.
+Na figura acima, se `\frac{a}{a'}=\frac{b}{b'}` as retas `r` e `s` são paralelas? A resposta é sim e essa ideia é a recíproca do teorema de Tales. Você vai agora acompanhar a justificativa desse fato.
  
 **Demonstração**
  
@@ -428,15 +428,15 @@ Consideremos a mesma figura anterior com algumas letras novas
    \draw [fill=black] (3.9128751318232196,1.015353941507814) circle (1.0pt);
    
 
-Por hipótese temos que `\frac{a}{a´}=\frac{b}{b´}`, o que é o mesmo que `\frac{a}{b}=\frac{a´}{b´}`. A primeira fração é a razão em que `P` divide o segmento `AB` e a segunda é a razão em que `Q` divide o segmento `AC`. Elas são iguais, ou seja, `\frac{PA}{PB}=\frac{QA}{QC}`.
+Por hipótese temos que `\frac{a}{a'}=\frac{b}{b'}`, o que é o mesmo que `\frac{a}{b}=\frac{a'}{b'}`. A primeira fração é a razão em que `P` divide o segmento `AB` e a segunda é a razão em que `Q` divide o segmento `AC`. Elas são iguais, ou seja, `\frac{PA}{PB}=\frac{QA}{QC}`.
 
 Vamos usar agora uma técnica nova de demonstração conhecida como “redução ao absurdo”. Ela consiste em negar a tese e depois mostrar, com argumentos sólidos, que o que afirmamos não é possível.
 
 Queremos mostrar que as retas `r` e `s` são paralelas. Vamos então imaginar o seguinte:
 
-**“Suponha que as retas r e s não são paralelas”**
+**"Suponha que as retas r e s não são paralelas"**
 
-Bem, dessa forma, vamos traçar agora pelo ponto `P` uma reta `r´` paralela à reta `s`. Essa nova reta vai cortar o segmento `AC` no ponto `R`.
+Bem, dessa forma, vamos traçar agora pelo ponto `P` uma reta `r'` paralela à reta `s`. Essa nova reta vai cortar o segmento `AC` no ponto `R`.
 
 Pelo teorema de Tales, ou melhor, pelo fato de que a projeção paralela conserva as razões, temos que `\frac{PA}{PB}=\frac{RA}{RC}` .
 

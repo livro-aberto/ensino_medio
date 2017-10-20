@@ -1,0 +1,411 @@
+************************************
+Vetores deslocamentos
+************************************
+
+Um dos objetivos da Física é estudar como certas grandezas variam no tempo. Um carro, por exemplo, ao percorrer a pista de Interlagos em São Paulo sem parar, ocupará posições diferentes em tempos diferentes, isto é, sua posição variará ao longo do tempo. Na figura a seguir, estão marcadas duas posições na pista: o ponto `S` que demarca a curva "S" do Sena (posição esta, digamos, ocupada pelo carro em um tempo inicial) e o ponto `T` que demarca o final do trecho da "reta oposta" (ocupada pelo carro em um tempo final). Também estão desenhados na figura os vetores posições relativas `\overrightarrow{LS}` e `\overrightarrow{LT}` (considerando-se, então, `L` como ponto de referência).
+Como representar matematicamente esta variação de posição de `S` para `T`? Isto também será feito por um segmento orientado que, neste contexto, será denominada :index:`vetor deslocamento`. A seta que representa o segmento orientado é desenhada com extremidade inicial na posição inicial (isto é, aquela associada ao tempo inicial) e extremidade final na posição final (isto é, aquela associado ao tempo final). As notações usadas para vetores deslocamentos são as mesmas usadas para vetores posições relativas. Assim, por exemplo, o vetor deslocamento azul na figura pode ser denotado por `\overrightarrow{ST}` ou `\vec{u}`.
+
+.. _fig-geometria-deslocamento-01:
+
+.. figure:: _resources/geometria-deslocamento-01.jpg
+   :width: 400pt
+   :align: center
+
+   Deslocamentos de um carro na pista de Interlagos.
+
+.. admonition:: Para o professor
+
+   Observe que o vetor deslocamento é definido apenas em termos dos pontos inicial e final e estes não mudam com escolhas diferentes para o ponto de referência. Por este motivo, o vetor deslocamento também não muda. Na :numref:`fig-geometria-deslocamento-01`, o ponto de referência `L` não precisa, obrigatoriamente, ser um ponto da pista.
+
+
+.. admonition:: Para reflexão
+
+    #. O deslocamento é uma grandeza escalar ou vetorial?
+    #. Na :numref:`fig-geometria-deslocamento-01`, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não?
+
+
+.. admonition:: Para o professor
+
+   Estudos educacionais mostram que os alunos têm a forte tendência em confundir vetor deslocamento com trajetória. No sentido de minimizar o efeito deste distrator, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/f8GCVdyx <https://www.geogebra.org/m/f8GCVdyx>`_>. Com ela, é possível visualizar um ponto percorrendo o modelo da pista de Interlagos apresentado na :numref:`fig-geometria-deslocamento-01` e, ao mesmo tempo, definir diferentes vetores deslocamentos definidos por duas posições na pista. Ao, dinamicamente, confrontar a trajetória percorrida com os diversos vetores deslocamentos, espera-se criar uma imagem mental que reforce as diferenças entre os dois conceitos.
+
+   .. figure:: _resources/ggb-interlagos-01-qr.png
+      :width: 50pt
+      :align: center
+
+           .. _fig-ggb-interlagos-01:
+
+   .. figure:: _resources/ggb-interlagos-01_2.*
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/f8GCVdyx>.
+
+   Além do trabalho de uma força em Física, como mencionado no texto para o aluno, a própria velocidade média (como uma grandeza vetorial) é um conceito que é definido em termos de vetores deslocamentos apenas e não de :index:`distâncias percorridas` em uma trajetória. Ao se considerar distâncias percorridas, um outro conceito é estabelecido: o de :index:`rapidez média` (*speed* em Inglês), também denominada de :index:`velocidade escalar média`. Assim, é importante diferenciar os dois conceitos: velocidade média (uma grandeza vetorial) e rapidez média (uma grandeza escalar).
+
+.. _label-hjb-cuidado-01:
+
+.. admonition:: Cuidado!
+
+    Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento!
+
+    Você pode ser estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. Uma resposta é que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importando a trajetória específica percorrida entre essas posições.
+
+.. _label-hjb-voce-sabia-01:
+
+.. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
+
+    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armazenados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+    Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
+
+            .. _fig-motion-vector-01:
+
+    .. figure:: _resources/motion-vector-01.*
+       :width: 400pt
+       :align: center
+
+       *motion vectors* para um vídeo da NASA sobre líquidos em baixa gravidade.
+
+
+
+
+.. _ativ-corrida-de-vetores-01:
+
+
+Atividade: corrida de vetores
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   * Reconhecer que deslocamentos e trajetórias percorridas são dois conceitos diferentes.
+   * Perceber que, a partir de uma determinada posição inicial,  existe uma única posição final tal que o vetor deslocamento correspondente tenha módulo e orientação pré-especificados por um segmento orientado, não importando onde este segmento orientado esteja desenhado.
+   * Justapor deslocamentos sucessivos.
+   * Reconhecer outras maneiras de se descrever um vetor deslocamento, no caso, por meio da orientação dada por uma Rosa dos Ventos.
+
+   **Observações e recomendações**
+
+   * As ruas do mapa foram propositalmente desenhadas como curvas: o objetivo é enfatizar para o aluno que os deslocamentos definidos pelas "cartas" do jogo **não são** as trajetórias percorridas.
+   * Sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/MADzWVcM <https://www.geogebra.org/m/MADzWVcM>`_>, que nada mais é do que uma versão eletrônica do jogo apresentado nesta atividade. Você pode usá-la para dar uma explicação geral do funcionamento do jogo no início da atividade com a participação de dois alunos. Essa versão também apresenta outras pistas além daquela apresentada na :numref:`fig-geometria-cv-02`.
+
+   .. figure::  _resources/ggb-cv-01-qr.png
+      :width: 50pt
+
+   .. _fig-ggb-cv-01:
+
+   .. figure:: _resources/ggb-cv-01.jpg
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/MADzWVcM>.
+
+   * Depois que os alunos jogarem, você pode fazer um levantamento de quem conseguiu ganhar a corrida com o menor número de cartas e, então, pedir para que os alunos reproduzam suas jogadas usando, por exemplo, a construção GeoGebra da :numref:`fig-ggb-cv-01`.
+   * Traga algumas cópias extras da :numref:`fig-geometria-cv-02`, pois alguns alunos podem errar no início ao aprenderem as regras.
+   * Observe que os segmentos orientados `\vec{\i}` e `\vec{\j}` não possuem uma descrição natural em termos de uma Rosa dos Eventos. Aqui, uma descrição alternativa seria indicar o ângulo que o segmento orientado faz com uma reta horizontal. No caso do segmento orientado `\vec{\i}` este ângulo é igual a `\text{arctg}(1/2) = 26{,}565051…^{\circ}` e, no caso do segmento orientado `\vec{\j}`, este ângulo é igual a `116{,}565051…^{\circ}`.
+
+.. Palavras-chaves: justaposição de deslocamentos, deslocamento total, deslocamento resultante.
+
+(Jogo *Corrida de Vetores*: versão simplificada) Sente-se junto com um colega. Vocês receberão de seu professor duas cópias da :numref:`fig-geometria-cv-02` e uma cópia da :numref:`fig-geometria-cv-03`. A :numref:`fig-geometria-cv-02` é o tabuleiro do jogo que consiste em um "mapa" de uma cidade fictícia cujas ruas são as curvas em laranja claro e as esquinas são os pontos pretos. Existem dois carros representados pelos pontos azul e vermelho.
+
+.. _fig-geometria-cv-02:
+
+.. figure::  _resources/geometria-cv-02.jpg
+   :width: 400pt
+   :align: center
+
+   Tabuleiro do jogo *Corrida de Vetores*.
+
+.. _fig-geometria-cv-03:
+
+.. figure::  _resources/geometria-cv-03.jpg
+   :width: 400pt
+   :align: center
+
+   "Cartas" do jogo *Corrida de Vetores*.
+
+As regras do jogo são como se segue.
+
+* Os carros só podem trafegar pelas ruas da cidade. Se, em algum momento, um carro sair da estrada, o jogador responsável pelo carro perde o jogo automaticamente.
+
+* Os carros saem da marca de largada representada pelo segmento azul. **Vence quem primeiro der uma volta completa no sentido horário em torno da "rosa dos ventos" desenhada no mapa.**
+
+* Tire "par ou ímpar" para saber quem vai começar o jogo. Os jogadores, então, se alternam durante o jogo.
+
+* Em cada jogada, o jogador deve escolher uma das "cartas" da :numref:`fig-geometria-cv-03`. Cada carta apresenta um segmento orientado que especifica a orientação e a distância com as quais, a partir da posição atual do carro do jogador, é possível determinar sua nova posição. Em outras palavras, a nova posição do carro deve ser de tal modo que o vetor determinado pelo deslocamento da posição antiga para a posição nova tenha a mesma orientação e o mesmo módulo do segmento orientado da carta escolhida pelo jogador.
+
+* Ao final de cada jogada, o jogador deve desenhar o vetor deslocamento associado. Para evitar confusão, recomenda-se que cada jogador use uma caneta com cor diferente.
+
+* Qualquer carta está disponível para uso em qualquer jogada, mesmo que ela já tenha sido selecionada em uma jogada anterior.
+
+**Fase de aquecimento**
+
+#. Em uma das folhas que o seu grupo recebeu, escreva a letra `A` para marcar a posição de largada do carro representado pelo ponto azul. Suponha que o jogador responsável por esse carro escolha a carta `\vec{h}`. Qual será a nova posição do ponto azul? Marque esta posição com a letra `B` e, então, desenhe o vetor deslocamento `\overrightarrow{AB}`.
+
+#. Com relação ao item anterior, desenhe uma possível trajetória percorrida pelo carro da posição `A` até a posição `B`. Quantas trajetórias possíveis existem?
+
+#. Suponha que o jogador responsável pelo carro representado pelo ponto azul tenha escolhido, na sua segunda jogada, a carta `\vec{a}`. Qual será a nova posição do ponto azul? Marque-a com a letra `C` e, então, desenhe os vetores deslocamentos `\overrightarrow{BC}` e `\overrightarrow{AC}`.
+
+#. Na posição `C` marcada no item anterior, na sua terceira jogada, quais cartas o jogador responsável pelo ponto azul **não deveria escolher** para não fazer com que seu carro saia da estrada e, assim, perca o jogo automaticamente?
+
+#. No Item b), qual é o número mínimo de quadras que devem ser percorridas para se sair de `A` e se chegar a `B`? Quantas trajetórias diferentes existem com esse número mínimo de "quadras"?
+
+**Vamos jogar!**
+
+Use a segunda folha com a :numref:`fig-geometria-cv-02` que você recebeu para jogar com seu colega. Lembre-se de marcar os vetores deslocamentos (como dita uma das regras do jogo) e de usar canetas com cores diferentes.
+
+**Descrevendo setas por meio de uma Rosa dos Ventos**
+
+Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:`fig-geometria-cv-02` tenha 1 cm.  Com essa informação, o segmento orientado `\vec{a}` pode ser interpretado da seguinte maneira: "se desloque 2 cm para o norte". Seguindo este modelo, como os segmentos orientados `\vec{b}`, `\vec{c}`, `\vec{d}`, `\vec{e}`, `\vec{f}`, `\vec{g}` e `\vec{h}` podem ser descritos?
+
+.. admonition:: Resposta
+
+   Fase de aquecimento
+
+   #. Ver figura a seguir.
+
+      .. figure:: _resources/geometria-cv-resposta-01.jpg
+         :width: 200pt
+         :align: center
+
+   #. A figura a seguir exibe duas das infinitas trajetórias possíveis. Observe que, em princípio, o carro azul poderia dar várias voltar em torno de um quarteirão antes de se dirigir ao ponto `B`.
+
+      .. figure:: _resources/geometria-cv-resposta-02_1.jpg
+         :width: 300pt
+         :align: center
+
+   #. Ver figura a seguir.
+
+      .. figure:: _resources/geometria-cv-resposta-03.jpg
+         :width: 200pt
+         :align: center
+
+   #. O jogador não deveria escolher as cartas `\vec{b}`, `\vec{f}`, `\vec{g}`, `\vec{h}` e `\vec{j}`.
+
+   #. O número mínimo de "quadras" para se sair de `A` e se chegar a `B` é igual a 4. Existem 6 trajetórias possíveis com esse número mínimo de "quadras". Elas estão apresentadas na figura a seguir.
+
+      .. figure:: _resources/geometria-cv-resposta-04.jpg
+         :width: 450pt
+         :align: center
+
+   Descrevendo segmentos orientados por meio de uma Rosa dos Ventos
+
+   Segmento orientado `\vec{b}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o noroeste.
+   Segmento orientado `\vec{c}`: "se desloque `2~\text{cm}` para o oeste".
+   Segmento orientado `\vec{d}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudoeste.
+   Segmento orientado `\vec{e}`: "se desloque `2~\text{cm}` para o sul.
+   Segmento orientado `\vec{f}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o sudeste.
+   Segmento orientado `\vec{g}`: "se desloque `2~\text{cm}` para o leste.
+   Segmento orientado `\vec{h}`: "se desloque `2 \, \sqrt{2}~\text{cm}` para o nordeste.
+
+.. admonition:: Para o professor
+
+   É importante observar que, no contexto de vetores deslocamentos, o vetor resultante `\vec{u} + \vec{v}` só está definido se os vetores `\vec{u}` e `\vec{v}` forem justapostos *nesta ordem*, isto é, se  a extremidade inicial de `\vec{v}` coincidir com a extremidade final de `\vec{u}`. Assim, por exemplo, não está definida como um vetor deslocamento a
+   resultante `\overrightarrow{AB} + \overrightarrow{CD}` dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{CD}` da figura. Cabe ainda observe que, fora do contexto aplicado, isto é, considerando-se `\overrightarrow{AB}` e `\overrightarrow{CD}` como coleções de segmentos orientados, a soma `\overrightarrow{AB} + \overrightarrow{CD}` *está definida* e é, a exemplo dos vetores parcelas, uma coleção de segmentos orientados.
+
+    .. tikz::
+
+       \tikzset{>=latex}
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+       \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+       \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+       \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+       \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+       \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+       \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+       \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+       \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+       \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
+
+
+
+
+
+
+
+**Vetor deslocamento resultante da justaposição de vetores deslocamentos**
+
+
+Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\vec{h}` e `\vec{a}` definiram dois vetores deslocamentos: `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+
+.. HJB: é importante que os vetores desta figura sejam congruentes àqueles apresentados nas cartas do jogo.
+
+.. _fig-geometria-cv-06:
+
+.. figure::  _resources/geometria-cv-06_1.jpg
+   :width: 290pt
+   :align: center
+
+   Justaposição de dois deslocamentos.
+
+Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
+
+.. math::
+   \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC}.
+   :label: label_vector_composition
+
+**Importante:** na expressão :eq:`label_vector_composition`, o sinal de "+" **não tem** o mesmo significado do sinal de "+" que aparece expressão `5 = 2 + 3`, por exemplo. No primeiro caso, o "+" significa *justaposição* de vetores deslocamentos e, no segundo caso, a *adição* de números. Mas, então, você pode estar se perguntando: por que usar o mesmo símbolo com objetos que são diferentes? Uma resposta é: se os objetos são diferentes, mas se "comportam de forma parecida", então faz parte da tradição matemática usar os mesmos símbolos. Há uma boa razão para esta tradição. Como você poderá verificar ao longo deste capítulo, a *justaposição* é uma operação com vetores deslocamentos que compartilha propriedades análogas às da operação de *adição* de números. Assim, muito da forma de pensar em um contexto pode ser aplicado ao outro contexto. Na próxima seção, que trata vetores do ponto de vista algébrico, você aprenderá uma relação explícita entre o "+" de vetores deslocamentos e o "+" de números, relação esta que também pode ser usada como justificativa para o uso do "+" nos dois contextos. De fato, a conexão os dois contextos é tão forte que, mesmo que o `+` signifique justaposição quando usado com vetores deslocamentos, é uma prática comum falar e escrever `\overrightarrow{AB} + \overrightarrow{BC}` como a *soma* obtida pela *adição* dos vetores `\overrightarrow{AB}` e `\overrightarrow{BC}`.
+
+
+.. _ativ-corrida-de-vetores-02:
+
+Atividade: deslocamentos justapostos
+------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   * Perceber que nem sempre `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`.
+   * Perceber que, na justaposição dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{BA}`, o resultado é um ponto, motivando assim as definições de vetor deslocamento nulo e vetor simétrico de um dado vetor que serão apresentadas logo após a atividade.
+
+   **Observações e recomendações**
+
+   * Sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/HnHZFwNW <https://www.geogebra.org/m/HnHZFwNW>`_>, com a qual é possível visualizar dinamicamente como `|\overrightarrow{AC}|` varia de acordo com a escolha do ponto `C`.
+
+   .. figure:: _resources/ggb-jv-01-qr.png
+      :width: 50pt
+
+   .. figure:: _resources/ggb-jv-01_1.jpg
+
+   .. figure::
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/HnHZFwNW>.
+
+Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de centro em `B` e raio `|\overrightarrow{AB}| = 5~\text{cm}`.
+
+
+.. tikz::
+
+   \definecolor{qqqqff}{rgb}{0.,0.,1.}
+   \tikzset{>=latex}
+   \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+   \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+   \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+   \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+   \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+   \draw[color=qqqqff] (0.8,2.3) node {$B$};
+
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
+#. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: reproduza a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
+#. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
+#. Se o ponto `C` pertence agora a circunferência de centro em `B` mas raio `\frac{1}{2} |\overrightarrow{AB}|`, quais são as escolhas para `C` para as quais `|\overrightarrow{AB} + \overrightarrow{BC}|` tem, respectivamente, o **maior** e o **menor** valor possível?
+#. Verdadeiro ou falso? Quaisquer que sejam os pontos `A`, `B` e `C`, tem-se `|\overrightarrow{AB} + \overrightarrow{BC}| = |\overrightarrow{AB}| + |\overrightarrow{BC}|`. Justifique sua resposta!
+
+.. admonition:: Resposta
+
+   #. É o ponto que `C` que é o simétrico do ponto `A` com relação ao ponto `B`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 10~\text{cm}`.
+
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (3.34,4.1) circle (1.5pt);
+       \draw[color=qqqqff] (3.54,4.3) node {$C$};
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (3.34,4.1);
+
+   #. É o ponto que `C = A`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 0~\text{cm}`.
+
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw[color=qqqqff] (-1.7,-0.4) node {$C$};
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-1.66,-0.1);
+
+   #. É o vetor deslocamento onde a extremidade final coincide com a extremidade inicial.
+
+   #. O ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o maior é possível apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 7{,}5~\text{cm}`.
+
+      .. tikz::
+
+        \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
+       \draw[color=qqqqff] (2.1,3.37) node {$C$};
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);
+
+      Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.
+
+      .. tikz::
+
+       \definecolor{qqqqff}{rgb}{0.,0.,1.}
+       \tikzset{>=latex}
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+       \draw[color=qqqqff] (0.8,2.3) node {$B$};
+       \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
+       \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};
+       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
+       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
+
+   #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
+
+
+.. admonition:: Para reflexão
+
+    Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
+
+    .. math::
+        |a| = \left\{\begin{array}{ll}
+                          \hphantom{+}a, & \text{se } a \geq 0, \\
+                          -a, & \text{se } a < 0.
+                     \end{array}\right.
+
+**Vetor deslocamento nulo e vetor deslocamento simétrico**
+
+Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desloca do ponto `B` de volta para o ponto `A`, qual é o vetor deslocamento resultante correspondente? Como você deve ter observado nos Itens b) e c) da atividade anterior, o vetor deslocamento resultante (o vetor `\overrightarrow{AA}`), neste caso, **não é** um segmento orientado e se reduz a um único ponto. Este é um caso excepcional, onde a extremidade final do vetor coincide com a extremidade final. Este tipo de vetor será denominado :index:`vetor deslocamento nulo` e será denotado por `\vec{0}`. Observe que:
+
+* a justaposição de qualquer vetor deslocamento com o vetor deslocamento nulo é igual ao vetor deslocamento inicial. Em símbolos, tem-se `\overrightarrow{AB} + \overrightarrow{BB} = \overrightarrow{AB}` quaisquer que sejam `A` e `B` e, com a notação mais curta, `\vec{v} + \vec{0} = \vec{v}` qualquer que seja `\vec{v}` (compare com o caso de  números reais: `a + 0 = 0` qualquer que seja `a`);
+* o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
+* para todo vetor deslocamento `\vec{v} = \overrightarrow{AB}` no plano, existe o vetor `\vec{w} = \overrightarrow{BA}` tal que `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA}`, isto é, `\vec{v} + \vec{w} = \vec{0}`. O vetor deslocamento `\vec{w}` com essa propriedade é denominado :index:`vetor deslocamento simétrico` de `\vec{v}` e, dada sua importância, receberá uma notação especial: `-\vec{v}`.
+
+.. admonition:: Para reflexão
+
+    Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
+
+
+**Segmentos orientados especificando apenas orientação e módulo**
+
+A :numref:`fig-geometria-cv-05` exibe o resultado de uma partida da *Corrida de Vetores* com ênfase nos vetores deslocamentos do carro azul. Note que, a partir da posição de largada `A`, o jogador escolheu a carta `\vec{a}` uma única vez, a carta `\vec{b}` duas vezes em seguida e a carta `\vec{g}` cinco vezes em seguida. Com essas cartas, o carro azul ocupou as posições `B`, `C`, …, `I` como indicadas na figura.
+
+
+
+.. _fig-geometria-cv-05:
+
+.. figure::  _resources/geometria-cv-05_2.jpg
+   :width: 400pt
+   :align: center
+
+   Segmentos orientados para vetor deslocamento (à esquerda) e segmentos orientados para definir orientação e módulo (à direita).
+
+Observe que os segmentos orientados das cartas têm um uso diferente dos segmentos orientados dos vetores deslocamentos:
+
+#. um segmento orientado associado a um vetor deslocamento representa variação de posição e, nesta representação, as posições inicial e final determinadas pelo segmento orientado são importantes, de modo que, por exemplo, o vetor deslocamento `\overrightarrow{DE}` é **diferente** do vetor deslocamento `\overrightarrow{IJ}`: se deslocar de `D` para `E` não é o mesmo que se deslocar de `I` para `J`;
+#. por sua vez, os segmentos orientados das cartas foram usados apenas para estabelecer uma orientação e uma distância com as quais é possível determinar a posição final do carro a partir de sua posição inicial, sendo que, neste caso, a posição inicial não é importante (o segmento orientado da carta `\vec{g}`, por exemplo, estabelece a instrução "se desloque duas unidades para leste" e essa instrução foi usada cinco vezes a partir das posições `D`, `E`, `F`, `G` e `H`).
+
+Para os segmentos orientados das cartas, as propriedades relevantes são orientação e módulo. A definição mais geral e abstrata de vetor apresentada na próxima seção fará uso justamente dessas propriedades.
+
