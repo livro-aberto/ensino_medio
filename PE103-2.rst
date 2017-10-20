@@ -1,20 +1,23 @@
-*******
-PE103-2
-*******
+****************************************************************************
 Explorando 2: Representações Gráficas para Variáveis Quantitativas Contínuas
-----------------------------------------------------------------------------
+****************************************************************************
   
+  
+.. _ativ-construcao-histograma:
 
------------------------------------
 Atividade: Construção do histograma
 -----------------------------------
 
 
 .. admonition:: Para o professor
 
-   Objetivos específicos: A partir de um conjunto de observações sobre uma variável quantitativa contínua identificar a necessidade de agrupar os valores observados em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências dos valores observados.
+   **Objetivos específicos** Identificar a necessidade de agrupar os valores observados em intervalos de classe para a construção de um gráfico que represente a distribuição de frequências dos valores observados a partir de um conjunto de observações sobre uma variável quantitativa contínua.
    
-   Observações e sugestões: a construção do histograma será dirigida nessa atividade, mas  recomenda-se fortemente o uso do GeoGebra para essa construção. (incluir link do arquivo de dados do  GeoGebra).
+   **Observações e sugestões** 
+   
+   A construção do histograma será dirigida nessa atividade, mas  recomenda-se fortemente o uso de recursos tecnológicos, como  o GeoGebra, para esse tipo de construção. 
+    
+   Incluir link do arquivo desses dados em formato GeoGebra. Em alguns aplicativos, e é o caso do GeoGebra, é necessário substituir a vírgula como separador decimal do padrão brasileiro por ponto.
    
 .. _fig-radiotelescopios:
 
@@ -57,7 +60,7 @@ Um arranjo de radiotelescópios como o que se mostra na :ref:`Figura <fig-radiot
 
 A natureza da variável quantitativa contínua induz a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
 
-#. Complete a tabela a seguir usando os intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior não se inclui e o limite superior está incluso.
+#. Complete a tabela a seguir usando os intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior está incluso e o limite superior não está incluso.
 
 +---------------------+-----------------------------+
 | Intervalo de classe | Número de observações       |
@@ -132,19 +135,25 @@ Para visualizar o comportamento desses dados, iremos construir um gráfico chama
    Histograma dos registros de tempo
    
    
+.. _ativ-medicao-temperatura-serie-temporal:
 
----------------------------------------------------
 Atividade: Medição da temperatura ao longo do tempo
 ---------------------------------------------------
 
 
 .. admonition:: Para o professor
 
- Objetivos específicos: A partir de um conjunto de observações sobre uma variável quantitativa contínua variando no tempo, definir série temporal e trabalhar com  gráficos de linha para ilustrar a evolução dos valores dessa variável ao longo do tempo. 
-   
- Observações e sugestões: na construção do gráfico de linha dessa será fornecida uma mamalha qadriculada para o preenchimento dos pontos, recomenda-se fortemente o uso do GeoGebra para essa construção. (incluir link do arquivo de dados do  GeoGebra e a função "CaminhoPoligonal").
+ **Objetivos específicos** 
  
- Respostas possíveis na **reflexão** porposta são: índices de inflação, preços de diversos bens,  índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.
+ * Definir série temporal a partir de um conjunto de observações sobre uma variável quantitativa contínua variando no tempo. 
+ 
+ * Trabalhar com  gráficos de linha para ilustrar a evolução dos valores da variável ao longo do tempo. 
+   
+ **Observações e sugestões** 
+ 
+ Para a construção do gráfico de linha será fornecida uma malha quadriculada para o preenchimento dos pontos, recomenda-se também uso do GeoGebra para essa construção. (incluir link do arquivo de dados do  GeoGebra e a função "CaminhoPoligonal").  
+ 
+ Respostas possíveis na reflexão proposta são: índices de inflação, preços de diversos bens,  índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.  
  
  Na discussão sobre sazonalidade, pedir aos alunos para trazer notícias de jornais ou revistas que contenham séries temporais. Mostrar que existem várias medições que são comparadas com as do ano anterior, por exemplo, inflação, crescimento do PIB, taxas de desemprego por trimestre, entre outras.
 
@@ -222,8 +231,10 @@ O gráfico que você acabou de construir é chamado **gráfico de linha**. Esse 
 
     Como você já deve ter observado, a temperatura é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de **sazonalidade**. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
 
-Sazonalidade
-   Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta as medições da variável observada.
+.. glossary::
+
+   Sazonalidade
+     Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta as medições da variável observada.
    
 Considere novamente os dados de temperatura da atividade anterior. Se representarmos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
 
@@ -235,22 +246,20 @@ Considere novamente os dados de temperatura da atividade anterior. Se representa
    :align: center
 
    Efeito da sazonalidade no gŕafico de linhas da temperatura máxima média
+   
 
 
+.. _cap-organizando-as-ideias2:
 
-
-
-
-
-.. _ativ-titulo-da-atividade:
-
+************************
 Organizando as ideias 2
-------------------------------
+************************
 
 .. Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
+.. glossary::
 
-Histograma
-   O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
+   Histograma
+    O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
       
 .. admonition:: Quantos intervalos considerar no agrupamento dos dados? 
   
@@ -259,27 +268,37 @@ Histograma
   
 .. admonition:: Gráfico de Barras versus Histograma
 
-   O gráfico de barras **não** é um histograma, apesar de suas representações serem parecidas.  Os **gráfico de barras** são úteis para descrever a distribuição de frequências de uma **variável qualitativa**. Nesse gráfico só há um eixo com escala que corresponde aos valores das frequências das respostas da variável. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Os **histogramas** são úteis para representar a distribuição de frequências de uma **variável quantitativa contínua** cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência que é definida como a razão entre a frequência e a amplitude do intervalo. 
+   O gráfico de barras **não** é um histograma, apesar de suas representações serem parecidas.  Os **gráficos de barras** são úteis para descrever a distribuição de frequências de uma **variável qualitativa**. Nesse gráfico só há um eixo com escala que corresponde aos valores das frequências das respostas da variável. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Os **histogramas** são úteis para representar a distribuição de frequências de uma **variável quantitativa contínua** cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência que é definida como a razão entre a frequência e a amplitude do intervalo. 
+   
 
 
 
+.. _cap-praticando2:
 
-
-.. _ativ-titulo-da-atividade:
-
+************
 Praticando 2
-------------------------------
+************
 
-.. _ativ-1-histograma-variacoes:
--------------------------
-Construção de histograma
--------------------------
+.. _ativ-variacoes-do-histograma:
+
+Atividade: Construção de Histogramas
+------------------------------------
 
 .. admonition:: Para o professor
 
-   Objetivo específico: Construir histogramas estudando o efeito na forma do histograma quando variamos o número de intervalos e também estudando  efeitos na forma do histograma quando usamos subconjuntos do conjunto de dados original.
+   **Objetivo específico** 
    
-   Observações e sugestões: Essa atividade deve ser realizada com o recurso do GeoGebra. A planilha de dados está disponível em <>. Comente com os alunos que em algumas situações o número de intervalos considerado pode ocultar comportamentos do fenômeno que estamos estudando. Essa situação deve ocorrer nesse exemplo quando aumentamos o número de intervalos.
+   * Avaliar o efeito na forma do histograma quando variamos o número de intervalos.
+   
+   * Avaliar o efeito na forma da histograma quando construímos histogramas usando subconjuntos do conjunto de dados original.
+   
+   **Observações e sugestões** 
+   
+   Essa atividade deve ser realizada com algum recurso tecnológico, de preferência o GeoGebra. 
+    
+   A planilha de dados está disponível em <incluir>. 
+    
+   Comente com os alunos que em algumas situações o número de intervalos considerado pode ocultar comportamentos do fenômeno que estamos estudando. Essa situação deve ocorrer nesse exemplo quando aumentamos o número de intervalos.
 
    
 #. Refaça o histograma dos dados de registros de tempo usando um programa de computador <incluir link GeoGebra>. 
@@ -289,16 +308,22 @@ Construção de histograma
 #. Construa um histograma considerando apenas os valores das colunas A até D e outro histograma considerando apenas os valores das colunas E até H. Calcule a média de cada um desses subconjuntos, sabendo que a soma dos registros das colunas de A até D é 159,96 e a soma dos registros das colunas de E até H é 191,99. 
 
 
-.. _ativ-1-histograma-series-evolucao:
-------------------------------------------
-Séries Temporais de Temperatura
+.. _ativ-series-temperatura-janeiro:
+
+Atividade: Séries Temporais de Temperatura
 ------------------------------------------
 
 .. admonition:: Para o professor
 
-   Objetivos específicos: Estudar uma possível tendência numa série temporal, eliminando o efeito da sazonalidade.
+   **Objetivos específicos** Identificar possível tendência numa série temporal, eliminando o efeito da sazonalidade.
    
-   Observações e sugestões: Essa atividade deve ser realizada preferencialmente com uso de tecnologia. A planilha de dados dessa atividade está disponível em <>. No GeoGebra a função que constrói o gráfico de linhas é CaminhoPoligonal.
+   **Observações e sugestões** 
+   
+   Essa atividade deve ser realizada preferencialmente com uso de tecnologia. 
+    
+   A planilha de dados dessa atividade está disponível em <>. 
+    
+   No GeoGebra a função que constrói o gráfico de linhas é CaminhoPoligonal (precisamos indicar o caminho das pedras nesse caso, pois não é trivial).
 
 
 A leitura do gráfico 
