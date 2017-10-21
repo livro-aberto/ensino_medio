@@ -17,10 +17,14 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
 .. admonition:: Habilidade 
  
     (EM11MT03) Realizar pesquisas, considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
+ 
+ 
+.. _sub-objetivogeral:
 
-.. admonition:: Objetivo Geral do Capítulo
+Objetivo Geral do Capítulo
+--------------------------
 
- Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuições empíricas de dados.
+Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuições empíricas de dados.
 
 .. admonition:: Por que estudar o assunto? 
   
@@ -137,10 +141,11 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
  #. Atividade: **Escolha do fornecedor**. Inspirado em Rossman e Chance (1998) apresentando quatro distribuições empíricas usando gráfico de dispersão univariado (diagrama de pontos).
  #. Atividade: **Comparação de medicamentos**. Tomada de decisão sob incerteza.
  #. Atividade: **Pesquisa PNAD2015-Atividade Física**. <https://vamoscontar.ibge.gov.br/atividades/ensino-medio/9801-pesquisando-a-pratica-de-esportes-e-atividades-fisicas-no-brasil.html>
+ #. Atividade: **Análise de Infográficos** referentes a PNAD2015-Atividade Física.
             
  **Organizando as ideias. 1** 
    
- Formalizar as ideias exploradas nas atividades introdutórias: população, amostra, noções básicas de amostragem, parâmetro, estimador, tipos de variáveis, distribuição, gráficos para variáveis qualitativas, frequências absolutas e frequências relativas.
+ Formalizar as ideias exploradas nas atividades introdutórias: população, amostra, noções básicas de amostragem, parâmetro, estimador, tipos de variáveis, gráficos para variáveis qualitativas, frequências absolutas e frequências relativas.
          
  **Praticando 1** 
       
@@ -160,24 +165,23 @@ ROTEIRO: A NATUREZA DA ESTATÍSTICA
     
  **Praticando 2** 
  
- São apresentadas duas atividades que são desdobramentos das atividades no explorando 2. Em ambos os casos o Geogebra será uma ferramenta importante. A primeira envolve a construção de histogramas considerando um maior número de intervalos e a construção de histogramas considerando subconjuntos distintos do conjunto original. Disponibilizaremos o conjunto de dados para ser trabalhado no Geogebra.   A segunda atividade é um desdobramento da análise das médias de temperatura máxima com o objetivo de estudar possível tend~encia ao longo do tempo. Será fixado o mês de janeiro e dois gráficos de linha da evolução desse dado ao longo de vários anos serão trabalhados.
+ São apresentadas duas atividades que são desdobramentos das atividades no explorando 2. Em ambos os casos o Geogebra será uma ferramenta importante. A primeira envolve a construção de histogramas considerando um maior número de intervalos e a construção de histogramas considerando subconjuntos distintos do conjunto original. Disponibilizaremos o conjunto de dados para ser trabalhado no Geogebra.   A segunda atividade é um desdobramento da análise das médias de temperatura máxima com o objetivo de estudar possível tendência ao longo do tempo. Será fixado o mês de janeiro e dois gráficos de linha da evolução desse dado ao longo de vários anos serão trabalhados. 
  
-  
- **Explorando -3 .** Projeto a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. As etapas sugeridas para o desenvolvimento do projeto estão destacadas no documento da ABE (2015).
- 
- #. Atividade: **Realização de projeto** 
- 
-.. admonition:: Exercícios
- 
-.. admonition:: Aprofundamentos
+ **Aprofundando o assunto**
+  #. Projeto a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. As etapas sugeridas para o desenvolvimento do projeto estão destacadas no documento da ABE (2015).
 
- Explorar propriedades do histograma: densidade de frequência, classes desiguais.
+  #. Proposição de atividade para construção de histogram quando as classes t~em amplitudes desiguais.  densidade de frequência, classes desiguais.
+ **Sugestões de leituras, vídeos e projetos aplicados**
 
-.. admonition:: Sugestões de leituras e projetos aplicados
+ - https://vamoscontar.ibge.gov.br/atividades/ensino-medio.html ("Atividades para o Ensino Médio")
+ - http://m3.ime.unicamp.br/recursos/1043 ("Acão, Reação, Correlação")
+ - https://www.youtube.com/watch?v=nB5l9OW2eyo ("O Prazer da Estatística")
+ - https://www.youtube.com/watch?v=-Wm9cxiXUe0 ("O que é Estatística?")
+ 
+ **Exercícios** 
+  Serão propostos exercícios do ENEM, Vestibulares entre outros abordando os conteúdos desse capítulo, a saber, conceitos básicos (população e amostra), amostra aleatória versus amostra de conveniência, análise de gráficos, construção de gráficos. Nos exercícios serão tratados os distratores.
 
- - https://vamoscontar.ibge.gov.br/atividades/ensino-medio.html 
- - http://m3.ime.unicamp.br/recursos/1043
- - http://www.estatistica.ccet.ufrn.br/cdee/wp-content/themes/cdee/arquivos/projeto02/oficina_site_educacao.pdf 
+ 
 
 .. admonition:: Referências bibliográficas
 
