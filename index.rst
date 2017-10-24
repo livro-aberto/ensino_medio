@@ -14,10 +14,6 @@ Ensino Médio
    GE301-ROTEIRO
    PE103-ROTEIRO
    
-   .. index_algebra_e_funcoes
-   .. index_geometria
-   .. index_prob_e_estatistica
-
 .. toctree::
    :maxdepth: 1
    :glob: 
