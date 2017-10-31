@@ -2,62 +2,94 @@
 ROTEIRO: SEMELHANÇA
 *******************
 
+.. admonition:: Previsão de aulas necessárias:
 
-.. admonition:: Habilidade do BNCC - previsão X aulas de 50 minutos - `FASE 1 DE ELABORAÇÃO <https://github.com/livro-aberto/ensino_medio/issues/10>`_ 
+   De 2 a 4 aulas de 40 minutos.
    
-   Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho. BNCC (EM12MT02)
+.. admonition:: Previsao de páginas necessárias:
+   
+   Sem previsão inicial.
+   
+   
+.. admonition:: Habilidade
 
-.. admonition:: Pré requisito
+   **(EM12MT02)** Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho.
+   
+   
+.. admonition:: Objetivos Gerais
 
-   BNCC (MTMT9FOA002) Reconhecer as condições necessárias e suficientes para obter triângulos semelhantes e utilizar a semelhança de triângulos para estabelecer as relações métricas no triângulo retângulo e as razões trigonométricas.
-    
-   Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais. BNCC (EM12MT01)
+   Esta habilidade tem por objetivo retomar o conceito de semelhança que deveria permear, segundo a nova base, todo o ensino fundamental. O conceito aparece desde o 5º ano do ensino fundamental e é retomado ano a ano sendo aprofundado.
+   
+   Não consideramos factível, no entanto, que o aluno chegue ao primeiro ano (no modelo atual) com o conceito de semelhança razoavelmente assimilado para que se possa evoluir para os objetivos listados na habilidade. Há uma passagem de semelhança direto ao teorema de Pitágoras e a inserção de figuras espaciais exigindo uma noção razoável de que, em figuras espaciais, podemos escolher um plano que contem todos os elementos que desejamos estudar e, nesse plano, podemos aplicar todos os conceitos de geometria plana.
+   
+   Por isso, iniciamos o trabalho entendendo que será necessário desenvolver o arcabouço da semelhança com uma apresentação mais cuidadosa do tema e sem contemplar o restante da habilidade e, tendo essa ferramenta bem consolidada iniciar outro capítulo que contempla o restante da habilidade.
+   
+
+.. admonition:: Conteúdos Abordados
+
+   * Semelhança de Figuras Planas
+   * Semelhança de Triângulos
+   
+.. admonition:: Pré-requisitos
+
+   * Proporcionalidade
+   * Teorema de Tales
+   
+.. admonition:: Habilidades Correlatas no Ensino Fundamental (BNCC)
+
+   * Quinto Ano:
+     
+     **Objetos do conhecimento**: Ampliação e redução de figuras poligonais em malhas quadriculadas: reconhecimento da congruência dos ângulos e da proporcionalidade dos lados correspondentes
+     
+     **Habilidade**: (EF05MA18) Reconhecer a congruência dos ângulos e a proporcionalidade entre os lados correspondentes de figuras poligonais em situações de ampliação e de redução em malhas quadriculadas e usando tecnologias digitais
+   
+   * Sexto Ano:
+   
+     **Objetos do Conhecimento**: Construção de figuras semelhantes: ampliação e redução de figuras planas em malhas quadriculadas
+     
+     **Habilidade**: (EF06MA20) Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais
+     
+   * Nono Ano:
   
-.. admonition:: Desdobramentos Imediatos
+     * **Objetos do Conhecimento**: Semelhança de triângulos
+       
+       **Habilidade**: (EF09MA12) Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes 
 
-	Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras. BNCC (EM12MT03)
-
-.. note::
-
-   * Semelhança. Definimos para polígonos. Fazemos uma prova de caso de semelhança para que haja uma conexão entre o Teorema de Tales e as semelhanças de triângulos. Deixamos um caso como atividade para os interessados e outro para todos os estudantes.
-
-   * Importante lembrar que na BNCC está "uso de semelhança"...
-
-    Neste vídeo o professor realiza o experimento de medir a altura do mastro da bandeira da escola com os estudantes e surgem diversas oportunidades de aprendizado sobre outros temas em que os estudantes tinham dificuldades no uso da matemática. Ele mostra toda a dinâmica da atividade. Esta pode ser uma atividade de aplicação do conteúdo de semelhanças.
-
-    https://www.teachingchannel.org/videos/similar-triangles-geometry-lesson-nea
-
-    * Acho que aqui vale a pena usar exemplos diferentes de polígonos e também tridimensionais.
-
-    * Este site possui diversos exemplos de atividades eletrônicas com semelhanças de triângulos.
-
-    https://education.ti.com/en/timathnspired/us/geometry/similarity-and-proportion
-
-    * Podemos retomar as coordenadas de vetores em atividades em que são dadas as coordenadas de um triângulo no plano e aplica-se uma homotetia (talvez seja melhor não falar esse nome) para obter uma figura semelhante. Podem ser feitos casos simples no papel e casos interessantes no Geogebra com uma barra em que o estudante pode escolher a razão da homotetia (inclusive com sinal negativo) para ver a figura se transformando em outra semelhante. 
-
-    "É preciso ficar claro para o aluno como e em que circunstâncias são produzidas figuras semelhantes. Para tanto, é preciso compreender a ideia de razão de semelhança (a razão k que existe entre dois de seus lados homólogos.), por meio de ampliações e reduções que podem ser feitas numa figura pela transformação conhecida como homotetia". (PCN, 1998, p. 195)
-
-   "O conceito de semelhança está presente no estudo de escalas, plantas, mapas, ampliações de fotos, fotocópias como também quando se verifica, por exemplo, se as medidas das partes do corpo humano se mantêm proporcionais entre um representante jovem e um representante adulto. (PCN 1998 p.125)."
-
-   * Em atividades pode-se explorar o fato de que a razão entre os perímetros de polígonos semelhantes é a razão de semelhança e que a razão entre as áreas de figuras semelhantes é a razão de semelhança ao quadrado.
+     * **Objetos do Conhecimento**: Relações métricas no triângulo retângulo Teorema de Pitágoras: verificações experimentais e demonstração
     
-.. admonition:: Roteiro da aula de semelhanças
+       **Habilidade**: (EF09MA13) Demonstrar relações métricas do triângulo retângulo, entre elas o teorema de Pitágoras, utilizando, inclusive, a semelhança de triângulos.
+    
+     * **Objetos do Conhecimento**: Retas paralelas cortadas por transversais: teoremas de proporcionalidade e verificações experimentais
+    
+       **Habilidade**: (EF09MA14) Resolver e elaborar problemas de aplicação do teorema de Pitágoras ou das relações de proporcionalidade envolvendo retas paralelas cortadas por secantes
+
+.. admonition:: Desdobramentos
+
+   Por tratar-se de um capítulo de resgate às habilidades que consideramos não serem pertencentes à realidade do aluno, ao menos no primeiro momento da aplicação deste material como livro didático, seu desdobramento natural, será o de voltar nossa atenção a cumprir o restante da habilidade com a apresentação das relações métricas no triângulo retângulo para, aí sim, fazer o uso com proveito do teorema de Pitágoras nas situações descritas na habilidade.
    
-   * Motivar o conceito de ampliação e redução através da construção com os estudantes de um pantógrafo. Os estudantes devem construir cada um ou cada grupo o seu próprio pantógrafo como no vídeo. Desenhar uma escala usando uma régua e o pantógrafo e conferir o que acontece no desenho final.
-   * Definição informal de figuras semelhantes (ampliação ou redução da outra, mesma forma, etc.). Apresentação de várias figuras semelhantes e figuras que não são semelhantes, nestes exemplos incluir objetos reais (garrafas de refrigerante, frascos de remédio, sombras), figuras 2d e 3d poligonais ou não poligonais. Não gastar mais do que duas paǵinas com isso.
-   * Definição de polígonos semelhantes. Antes explicar que a matemática é construída sobre conceitos precisos que derivam de conceitos primitivos escolhidos, assim a definição informal dada anteriormente não serve (Discutir: Isso é necessário ao estudante do Ensino Médio? Por que definir precisamente semelhança? Ampliação e redução não bastam a ele?)
-   * Exemplo: O caso particular de triângulos semelhantes. Usar o pantógrafo para construir exemplos de triângulos semelhantes. Pode usar o aplicativo pantógrafo do Geogebra.
-   * Atividade com material concreto que faça o estudante concluir por sobreposição de triângulos a hipótese de que dois triângulos com mesmos ângulos são semelhantes. Importante fazer o estudante escrever a hipótese a ser testada e futuramente verificada. 
-   * Lema fundamental das semelhanças de triângulos: enunciado e justificativa.
-   * Caso ângulo-ângulo de semelhança. Enunciado em forma de proposição, por exemplo: "Se dois triângulos possuem dois pares de ângulos respectivamente iguais, então os triângulos são semelhantes" e prova da proposição usando o lema fundamental.
-   * Enunciar sem provar (incluir nos exercícios aos estudantes de exatas) os demais casos de semelhança de triângulos (LLL e LAL).
-   * Atividade sobre a não validade dos casos análogos de semelhança para polígonos de gênero maior que três: AAA e LLLL não são casos de semelhança para quadriláteros, nem AAAA ou LLLLL, são para pentágonos.
-   * Projeto aplicado 1: Em um dia de sol - Uso de semelhanças para cálculo de uma altura inacessível conhecendo o tamanho de sua sombra e medindo o tamanho de um objeto de altura acessível e sua sombra. (Vale a pena contar a história de Tales e o cálculo da altura de uma pirâmide?)
-   * Projeto aplicado 2: Caso a sombra também não esteja disponível. Uso de semelhança para o cálculo de uma altura inacessível sem o uso da sombra do objeto usando um espelho e medições da altura e distância ao espelho de objeto acessível.
-   * Aplicação de semelhança de triângulos: Justificativa para o Teorema de Pitágoras.
-   * Cálculo da diagonal de uma caixa em uma situação prática em que se possa medir as areas, mas não seja viável medir a diagonal. Análogo para medir uma aresta lateral de uma pirâmide agora que já medimos sua altura e conhecemos as dimensões da base.
-   * Buscar problemas com situações reais autênticas para o público em geral.
-   * Entre os problemas para os estudantes de exatas incluir a prova dos dois casos de semelhança que não foram provados, uma atividade longa e abrangente com sobre o retângulo dourado.
-   * Avaliar a possibilidade de se incluir aqui a homotetia ou se colocamos no capítulo de transformações geométricas do espaço. Seja onde for, deve haver um projeto aplicado com o Cinema na Caixa.
+
+.. admonition:: Abordagem da introdução
+
+   Com um pequeno texto, a ideia de semelhança de triângulos é apresentada de maneira natural incentivando a noção de que duas figuras semelhantes são, basicamente a mesma figura (ou iguais), apresentadas em tamanhos diferentes. Desse modo, é possível estudar as grandezas que nos interessam em uma figura, desde que conheçamos essas grandezas em outra figura semelhante à primeira e a razão de semelhança. Essa noção é particularmente importante para que as pessoas possam resolver problemas do cotidiano usando maquetes, plantas, mapas ou mesmo figuras geométricas como esquemas dessas situações reais.
+   
+.. admonition:: Distratores
+
+   Há uma tendência entre os alunos de associar o crescimento à adição, de modo que se uma grandeza varia de 5 para 15, o aluno imediatamente associa o crescimento a um aumento de 10 unidades em relação ao valor inicial. Obviamente isso é correto, mas no caso de semelhança de figuras, é mais relevante associar esse crescimento a uma multiplicação. Nesse sentido, faz-se necessário reforçar o conceito de proporcionalidade.
+   
+.. admonition:: Estrutura do capítulo
+
+   * Para o Professor do capítulo: Fazer um pequeno apanhado do que deveria ter sido visto pelos alunos até aqui e da importância do conceito de semelhança para atingir a habilidade proposta.
+   
+   * Explorando: Texto para o aluno apresentando de forma natural (sem formalismos) o conceito de semelhança, seguido de uma atividade que coloque o aluno em contato com o conceito sem, no entanto, exigir conhecimento prévio
+   
+   * Organizando as ideias: Apresentação formal da semelhança de figuras explorando suas características fundamentais.
+   
+   * Atividades: É feita uma sequência de 9 atividades ressaltando aspectos importantes sobre o tema. O tema semelhança de triângulos recebe atenção especial com a demonstração guiada em uma das atividades do caso Ângulo-ângulo de semelhança de triângulos. A partir da semelhança de triângulos generaliza-se para polígonos em geral. A atividade introdutória é retomada e são acrescidas algumas perguntas que não eram interessantes para introduzir o assunto, mas que, em vista de tudo q foi explicado, tornam-se relevantes.
+   
+   * Propomos ainda um aprofundamento usando a sequência de quadrados da figura a seguir, para tratar sobre progressões geométricas:
+   
+   .. figure:: _resources/fig-sem-17.png
+
+
 
 
