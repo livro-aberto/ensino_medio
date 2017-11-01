@@ -11,6 +11,7 @@ Nas atividades anteriores foram trabalhados vários conceitos importantes da Est
 Conceitos Básicos 
 ------------------------------------------
 
+
 .. glossary:: 
 
    População
@@ -22,10 +23,33 @@ Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser
 
    Amostra
     é um subconjunto não-vazio da população.
+    
+.. glossary::
+
+   Parâmetro
+    característica numérica da população.
+    
+.. glossary::
+
+   Estimador
+    função que produz estimativas de parâmetros usando os dados da amostra.  
+    
+As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações possíveis de serem retiradas de dados amostrais a fim de se reconhecer estruturas que possibilitem futuramente inferir sobre os parâmetros populacionais de interesse; a segunda fase, denominada inferencial, consiste em estabelecer modelos probabilísticos para que se possa tecer afirmações sobre a população com uma certa confiabilidade estabelecida. Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e a Estatística Inferencial é a indução das informações obtidas da amostra para características de interesse da população não observada em sua totalidade.
+
 
 Problemas de *Inferência Estatística* envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população brasileira. 
 
 Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a população, não existe a necessidade de fazer uma *inferência estatística*. No entanto, muitas vezes a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
+
+.. admonition:: Proposições matemáticas versus proposições estatísticas
+
+ Você já deve ter percebido que as proposições estatísticas são de natureza diversa das proposições matemáticas. 
+ 
+ Uma proposição é dita matemática se é possível estabelecer o valor *verdadeiro* ou *falso* a ela, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição *"O quadrado de um número par é par."*  é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* é uma proposição matemática, pois sabemos que é falsa. 
+ 
+ Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um grau de confiabilidade para ela. 
+ 
+ A proposição *"Uma moeda, que ao ser lançada 10 vezes, resulta em 10 caras, é uma moeda viciada (as probabilidades de se obter cara e coroa não são iguais)."* é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos da moeda obtermos 10 coroas, embora isso seja pouco provável de ocorrer numa moeda não-viciada (probabilidades de obter cara e coroa iguais). Se ao lançarmos 100 vezes, essa mesma moeda obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que seja viciada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um grau de confiabilidade da sua veracidade são propsições de natureza estatística.
 
 .. admonition:: Como selecionar amostras?
 
@@ -43,15 +67,6 @@ Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a popu
 
  Os casos mais comuns de métodos não probabilísticos são **amostragem por conveniência** e **amostragem por julgamento**. A amostragem por conveniência carateriza-se por não ter um plano particular de amostragem. O objetivo nesse caso não seria generalizar conclusões e sim descrever as características principais do grupo de estudo.  Nas amostras por julgamento, os elementos da amostra são escolhidos por um especialista no assunto sob investigação. A desvantagem dos métodos não probabilísticos é não sermos capazes de avaliar incertezas devido à amostragem. 
 
-.. glossary::
-
-   Parâmetro
-    característica numérica da população.
-    
-.. glossary::
-
-   Estimador
-    função que produz estimativas de parâmetros usando os dados da amostra.  
  
 .. _sub-classificacao-de-variaveis:
 
