@@ -35,18 +35,13 @@ ROTEIRO: FUNÇÃO AFIM
       #. Distância entre pontos no plano (revisão)
       #. Função linear: modelo para a proporcionalidade direta
       #. Taxa de variação: abordagem algébrica e geométrica
-      #. Representação gráfica da Função Linear
-      #. Transformações: Translações e Homotetias
-      #. Função Afim
-      #. Taxa de variação da Função Afim
-      #. Aplicações: Movimento Uniforme, Juros Simples, Cálculo Estequiométrico
-      
-      Aprofundamentos
-      
-      #. Grandeza proporcional a várias outras
-      #. Inversa de Função Afim
-      #. Efeitos do Módulo
-      #. Funções recíprocas: proporcionalidade inversa
+      #. Representação gráfica da função linear
+      #. Transformações: translações e homotetias
+      #. Função afim
+      #. Taxa de variação da função afim
+      #. Aplicações: movimento uniforme, juros simples, cálculo estequiométrico
+      #. Inversa de função afim
+      #. Função afim por partes
 
    .. admonition:: Pré-requisitos
 
@@ -54,8 +49,10 @@ ROTEIRO: FUNÇÃO AFIM
 
       **(EF07MA14)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax + b = c`, fazendo uso das propriedades da igualdade.
 
+      **Habilidades relacionadas**
+      
       **(EF08MA07)** Associar uma equação linear de 1º grau com duas incógnitas a uma reta no plano cartesiano.
-
+      
       **(EF08MA08)** Resolver e elaborar problemas relacionados ao seu contexto próximo, que possam ser representados por sistemas de equações de 1º grau com duas incógnitas e interpretá-los, utilizando, inclusive, o plano cartesiano como recurso.
 
       **(EF08MA10)** Identificar a natureza da variação de duas grandezas, diretamente, inversamente proporcionais ou não proporcionais, expressando a relação existente por meio de sentença algébrica e representá-la no plano cartesiano.
@@ -76,10 +73,10 @@ ROTEIRO: FUNÇÃO AFIM
 
    .. admonition:: Abordagem da introdução
    
-      Iniciaremos com exemplos de proporcionalidade
+      O ensino de proporcionalidade no Ensino Fundamental dá maior ênfase a relações entre grandezas positivas, por isso é importante que, ao retomar o conceito, faça-se uso de problemas que abordem grandezas negativas, e também que sejam simultaneamente propostas aos alunos várias relações entre grandezas para que eles apontem as que são e as que não são relações de proporcionalidade. Vale salientar (sem a linguagem de funções) que grandezas proporcionais não é sinônimo de grandezas que variam com o mesmo sentido (Importante, porque depois, com a linguagem de funções, isto vai se traduzir como “função linear não é sinônimo de função crescente ou decrescente”). 
       
-      #. Escalas em mapas e plantas de arquitetura
-      #. Estimativa de público em grandes aglomerações
+      #. Escalas em mapas, plantas de arquitetura e temperatura.
+      #. Estimativa de público em grandes aglomerações.
 
       
    .. admonition:: Dificuldades típicas dos alunos (distratores)
@@ -94,9 +91,11 @@ ROTEIRO: FUNÇÃO AFIM
       
       #. Onuchic e Allevato (2008) alertam que não se transponha as propriedades dos números racionais, como a soma de frações, para a soma de razões, quando essas forem realizadas como vetores por exemplo, e citam `\frac{3}{5}+\frac{2,4}{5,6}=\frac{5,4}{10,6}`. Nesse caso, foi efetuada “[...] a adição das razões, consideradas como os vetores `(3;5)` e `(2,4; 5,6)`, cuja resultante, obtida pela regra do paralelogramo, é a razão (ou vetor)  `(5,4; 10,6)` " (p. 95). O vetor `(3;5)` refere-se à quantidade de álcool e água misturados em um recipiente de `8` litros, na razão de `3` para `5`. O vetor seguinte `(2,4; 5,6)` diz respeito à mistura de álcool para água, no segundo recipiente também de 8 litros, na razão de `3` para `7`. A razão entre álcool e água, na mistura resultante, é dada, então, pela razão ou vetor `(5,4;10,6)`. A relação proporcional (entre as partes - álcool e água – vetores) pode ser obtida pela tangente do ângulo do vetor `(5,4;10,6)`. .. [Onuchic-Allevato-2008]_
       
+      #. Há livros didáticos que sugerem que para decidir se a proporcionalidade é direta ou inversa basta testar se as grandezas variam no mesmo sentido ou em sentidos contrários, mas isso garante apenas que a função em questão é crescente (quando variam no mesmo sentido) ou decrescente (para sentidos contrários).
+      
    .. admonition:: Estratégia Pedagógica
 
-      * Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: química, física, biologia e sociologia. Chamar atenção para relações não proporcionais.
+      * Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: química, física, biologia e sociologia, chamando a atenção para relações não proporcionais. Investir na compreensão da taxa de variação para facilitar a associação entre a função e sua representação gráfica.
    
    .. admonition:: Estrutura
 
@@ -104,15 +103,15 @@ ROTEIRO: FUNÇÃO AFIM
 
       * Não é usual que se peça aos estudantes que verifiquem que determinada relação entre grandezas é uma proporcionalidade. Normalmente ela é assumida pelo "contrato didático". Perguntas como "por que a área de um retângulo é proporcional à sua base e à sua altura?" normalmente não são sequer consideradas. Nesse sentido, perpetua-se a ideia equivocada de que o mundo é proporcional.
    
-      * Apresentar o Teorema Fundamental da Proporcionalidade: Seja `f: \mathbb{R} \to \mathbb{R}` uma função crescente. As seguintes afirmações são equivalentes:
+      * Apresentar, indicando bilbiografia para a demonstração, o Teorema Fundamental da Proporcionalidade: Seja `f: \mathbb{R} \to \mathbb{R}` uma função crescente ou decrescente. As seguintes afirmações são equivalentes:
       
-      #. `f(kx)=kf(x)` para todo `k \in \mathbb{N}` e todo `x \in \mathbb{R}`.
+      #. `f(kx)=kf(x)` para todo `k \in \mathbb{Z}` e todo `x \in \mathbb{R}`.
       #. Pondo `a=f(1)`, tem-se `f(x) =a \cdot x` para todo `x \in \mathbb{R}`.
       #. `f(x_1+x_2)=f(x_1)+f(x_2)` para quaisquer `x_1, x_2 \in \mathbb{R}`.
       
       * Explorar tanto a visão geométrica quanto a algébrica (que em geral é mais privilegiada).
       
-      * Coeficiente angular e coeficiente linear: adequado?
+      * Apresentar algumas razões que indiquem que a nomenclatura *coeficiente angular* e *coeficiente linear*, apesar de muito empregada pelos livros didáticos, não é adequada.
       
       Quando se representa uma função afim que descreve um experimento, alguns cuidados devem ser tomados:
       
@@ -174,9 +173,9 @@ ROTEIRO: FUNÇÃO AFIM
       Transformações no Gráfico: Translações e Homotetias
       
       * Fazer referência às transformações no plano do eixo de vetores.
-      * Translação do gráfico de `l(x)=ax` pelo vetor `(0,b)`: `f(x)=ax+b`
-      * Translação do gráfico de `l(x)=ax` pelo vetor `(c,0)`: `g(x)=a(x-c)`
-      * Translação do gráfico de `l(x)=ax` pelo vetor `(c,b)`: `h(x)=a(x-c)+b`
+      * Translação do gráfico de `\ell(x)=ax` na vertical: `f(x)=ax+b`
+      * Translação do gráfico de `\ell(x)=ax` na horizontal: `g(x)=a(x-c)`
+      * Translação do gráfico de `\ell(x)=ax` na diagonal: `h(x)=a(x-c)+b`
       
       Definição da Função Afim
       
@@ -192,8 +191,6 @@ ROTEIRO: FUNÇÃO AFIM
 
       **Praticando o assunto**
       
-      Dividir um número `L` em partes proporcionais a `a_1,a_2,...,a_n` (Regra da sociedade)
-      
       Agrupar: situação, gráfico e expressão algébrica
 
       Interseção entre gráficos (sistemas de equações)
@@ -205,11 +202,9 @@ ROTEIRO: FUNÇÃO AFIM
       Cálculo Estequiométrico
       
       **Aprofundamento**
-      
-      #. Grandeza proporcional a várias outras 
+       
       #. Inversa da função afim
-      #. Efeitos do Módulo 
-      #. Funções recíprocas: proporcionalidade inversa
+      #. Função afim por partes
       
       *Em uma vinícola podemos comprar vinho por litro. Neste caso, o vinho é colocado em garrafões com capacidade de 5 litros. O vinho é vendido por 2,50 euros por litro e cada garrafão é vendido a 1,50 euros.*
       
