@@ -11,6 +11,7 @@ Nas atividades anteriores foram trabalhados vários conceitos importantes da Est
 Conceitos Básicos 
 ------------------------------------------
 
+
 .. glossary:: 
 
    População
@@ -22,10 +23,49 @@ Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser
 
    Amostra
     é um subconjunto não-vazio da população.
+    
+.. glossary::
 
-Problemas de *Inferência Estatística* envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população brasileira. 
+   Parâmetro
+    característica numérica da população.
+    
+.. glossary::
+
+   Estimador
+    função que produz estimativas de parâmetros usando os dados da amostra.  
+    
+As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente *inferir* sobre parâmetros populacionais de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. 
+
+Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e, a Estatística Inferencial, a indução das informações obtidas da amostra para características da população não observada em sua totalidade.
+
+
+A PNAD faz uso da *inferência estatística*, pois ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas propõe estimativas para as características da população brasileira. 
 
 Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a população, não existe a necessidade de fazer uma *inferência estatística*. No entanto, muitas vezes a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
+
+.. admonition:: Proposições matemáticas versus proposições estatísticas
+
+ Você já deve ter percebido que as proposições estatísticas são de natureza diversa das proposições matemáticas. 
+ 
+ Uma proposição é dita matemática se é possível classificá-la em *verdadeira* ou *falsa*, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição 
+ 
+ *"O quadrado de um número par é par."*  
+ 
+ é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição 
+ 
+ *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* 
+ 
+ é uma proposição matemática, pois sabemos que é falsa. 
+ 
+ Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um nível de confiança para ela. A proposição 
+ 
+ *"Uma moeda, que ao ser lançada 10 vezes, resulta em 10 coroas, é uma moeda viciada."*
+ 
+ é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos de uma moeda não-viciada obtermos 10 coroas, embora isso seja pouco provável de ocorrer.
+ 
+ **Observação:** Uma moeda é dita ser não-viciada se as probabilidades de se obter cara e coroa  são iguais. Caso contrário, a moeda é dita ser viciada.
+ 
+ Se lançarmos 100 vezes, essa mesma moeda obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que seja viciada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um nível de confiança sobre sua veracidade são propsições de natureza estatística.
 
 .. admonition:: Como selecionar amostras?
 
@@ -43,15 +83,6 @@ Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a popu
 
  Os casos mais comuns de métodos não probabilísticos são **amostragem por conveniência** e **amostragem por julgamento**. A amostragem por conveniência carateriza-se por não ter um plano particular de amostragem. O objetivo nesse caso não seria generalizar conclusões e sim descrever as características principais do grupo de estudo.  Nas amostras por julgamento, os elementos da amostra são escolhidos por um especialista no assunto sob investigação. A desvantagem dos métodos não probabilísticos é não sermos capazes de avaliar incertezas devido à amostragem. 
 
-.. glossary::
-
-   Parâmetro
-    característica numérica da população.
-    
-.. glossary::
-
-   Estimador
-    função que produz estimativas de parâmetros usando os dados da amostra.  
  
 .. _sub-classificacao-de-variaveis:
 
@@ -113,7 +144,7 @@ Uma variável quantitativa é classificada em discreta ou contínua.
 
  A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa. Nesse caso, podemos no máximo identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico 3 verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
 
- Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa discreta. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas cuja soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
+ Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas cuja soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
  
  
 .. _sub-graficos-variaveis-qualitativas:
@@ -142,7 +173,7 @@ O mesmo ocorre quando olhamos os gráficos para faixa etária, grau de instruç�
 
 No :ref:`infográfico 4 <fig-infografico-pnad-4>`, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira harmônica a figura maior em partes cujas áreas em relação à figura maior correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
 
-No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as respostas à pergunta "Quais as áreas em que deve ocorrer investimento público?" para quem respondeu *Não* á pergunta "O poder público deve investir em atividades físcas ou desportivas?" e também para representar as respostas à pergunta "Qual deve ser a prioridade nos investimentos?" para quem respondeu "Sim" à pergunta "O poder público deve investir em atividades físicas ou desportivas?" 
+No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as respostas à pergunta "Quais as áreas em que deve ocorrer investimento público?" para quem respondeu *Não* à pergunta "O poder público deve investir em atividades físcas ou desportivas?" e também para representar as respostas à pergunta "Qual deve ser a prioridade nos investimentos?" para quem respondeu "Sim" à pergunta "O poder público deve investir em atividades físicas ou desportivas?".
 
 
 .. admonition:: Observação
