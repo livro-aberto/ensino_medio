@@ -34,10 +34,12 @@ Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser
    Estimador
     função que produz estimativas de parâmetros usando os dados da amostra.  
     
-As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações possíveis de serem retiradas de dados amostrais a fim de se reconhecer estruturas que possibilitem futuramente inferir sobre os parâmetros populacionais de interesse; a segunda fase, denominada inferencial, consiste em estabelecer modelos probabilísticos para que se possa tecer afirmações sobre a população com uma certa confiabilidade estabelecida. Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e a Estatística Inferencial é a indução das informações obtidas da amostra para características de interesse da população não observada em sua totalidade.
+As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente *inferir* sobre parâmetros populacionais de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. 
+
+Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e, a Estatística Inferencial, a indução das informações obtidas da amostra para características da população não observada em sua totalidade.
 
 
-Problemas de *Inferência Estatística* envolvem tirar conclusões sobre a população baseando-se numa amostra. A PNAD faz isso. Ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas com base na qualidade da amostra, ela propõe estimativas para as características da população brasileira. 
+A PNAD faz uso da *inferência estatística*, pois ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas propõe estimativas para as características da população brasileira. 
 
 Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a população, não existe a necessidade de fazer uma *inferência estatística*. No entanto, muitas vezes a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
 
@@ -45,11 +47,25 @@ Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a popu
 
  Você já deve ter percebido que as proposições estatísticas são de natureza diversa das proposições matemáticas. 
  
- Uma proposição é dita matemática se é possível estabelecer o valor *verdadeiro* ou *falso* a ela, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição *"O quadrado de um número par é par."*  é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* é uma proposição matemática, pois sabemos que é falsa. 
+ Uma proposição é dita matemática se é possível classificá-la em *verdadeira* ou *falsa*, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição 
  
- Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um grau de confiabilidade para ela. 
+ *"O quadrado de um número par é par."*  
  
- A proposição *"Uma moeda, que ao ser lançada 10 vezes, resulta em 10 caras, é uma moeda viciada (as probabilidades de se obter cara e coroa não são iguais)."* é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos da moeda obtermos 10 coroas, embora isso seja pouco provável de ocorrer numa moeda não-viciada (probabilidades de obter cara e coroa iguais). Se ao lançarmos 100 vezes, essa mesma moeda obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que seja viciada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um grau de confiabilidade da sua veracidade são propsições de natureza estatística.
+ é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição 
+ 
+ *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* 
+ 
+ é uma proposição matemática, pois sabemos que é falsa. 
+ 
+ Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um nível de confiança para ela. A proposição 
+ 
+ *"Uma moeda, que ao ser lançada 10 vezes, resulta em 10 coroas, é uma moeda viciada."*
+ 
+ é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos de uma moeda não-viciada obtermos 10 coroas, embora isso seja pouco provável de ocorrer.
+ 
+ **Observação:** Uma moeda é dita ser não-viciada se as probabilidades de se obter cara e coroa  são iguais. Caso contrário, a moeda é dita ser viciada.
+ 
+ Se lançarmos 100 vezes, essa mesma moeda obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que seja viciada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um nível de confiança sobre sua veracidade são propsições de natureza estatística.
 
 .. admonition:: Como selecionar amostras?
 
