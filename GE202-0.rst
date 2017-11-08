@@ -94,6 +94,10 @@ As perguntas a seguir são importantes para o curioso Fabio. Se você não soube
 Organizando as ideias 
 *********************
 
+.. _sub_o_que_e_semelhanca:
+
+O que é semelhança para a Matemática?
+-------------------------------------
 Na atividade anterior percebemos que a planta de uma casa é um modelo reduzido da situação real e isso significa que as proporções entre as medidas são mantidas. Dizemos então que a planta da casa e o piso da casa são semelhantes.
 Para tornar o conceito preciso precisamos de uma definição.
 
@@ -146,6 +150,156 @@ Uma vez que você assinalou dois pontos de uma das figuras e seus correspondente
    .. figure:: _resources/FigSem-04.png
    
    Dizemos ainda que a razão de semelhança do peixe menor para o maior é `\dfrac{2}{5}`  e que que a razão de semelhança do peixe maior para o menor é `\dfrac{5}{2}` .
+
+.. admonition:: Curiosidade: Reconhecimento facial
+
+   As figuras a seguir não são semelhantes:
+   
+   .. figure:: _resources/emilias_parecidas.png
+   
+   Por outro lado, não podemos negar que são figuras *parecidas* em que as proporções não são todas mantidas.
+   
+   Hoje em dia, os softwares que fazem reconhecimento de faces, utilizam uma definição matemática para a palavra “parecido”. É por isso que, em fotos do Facebook, o software permite reconhecer pessoas já identificadas em fotos anteriores.
+   
+   Porém nada disso seria possível sem o primeiro passo, que é a semelhança de triângulos.
+
+.. _sub_semelhanca_de_triangulos:
+
+Semelhança de triângulos
+------------------------
+
+A semelhança de triângulos é uma ferramenta poderosa para resolver inúmeros problemas de geometria. Isso ocorre porque o triângulo tem uma situação especial no que estamos estudando: ao contrário dos outros polígonos, é muito fácil reconhecer quando dois triângulos são semelhantes. Entretanto, antes das formalidades, vamos ver alguns polígonos e descobrir se há alguns semelhantes.
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Triângulos semelhantes
+------------------------------
+
+.. admonition:: Para o professor
+
+   A atividade a seguir, pede que os alunos verifiquem se os triângulos são ou não semelhantes. Em princípio, os alunos podem ficar confusos tentando mostrar que todos os pontos no interior da região triângular atendem o que foi pedido na definição de semelhança. Vale lembrar que um triângulo fica definido por três pontos não colineares e, portanto, basta verificar que as razões entre distâncias `AB`, `BC` e `AC` e `A'B'`, `B'C'` e `A'C'`, respectivamente, são iguais. Desse modo, a figura formada pelos pontos `A`, `B` e `C` é semelhante à figura formada pelos pontos `A'`, `B'` e `C'`. 
+   
+   Portanto, atender à definião de semelhança, no caso de triângulos, consiste no caso de semelhança `LLL`. Um caso de semelhança de triângulos é um conjunto de condições mínimas que garantem a semelhança dos triângulos envolvidos. Apenas os triângulos possuem casos de semelhança simples o sufuciente para serem estudados e conhecidos.
+
+Na figura a seguir, os lados dos triângulos são mostrados. Verifique se esses triângulos são ou não semelhantes. Justifique sua resposta.
+
+
+.. tikz:: 
+   
+   \definecolor{wwqqcc}{rgb}{0.4,0.,0.8}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \fill[line width=1.2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.20000000298023224] (-2.4026846239814494,9.01432812261539) -- (-3.1006389948749313,3.0550614146931245) -- (4.239720652539582,6.236117881750678) -- cycle;
+   \fill[line width=1.2pt,color=wwqqcc,fill=wwqqcc,fill opacity=0.20000000298023224] (7.032280832257959,12.718092698860787) -- (12.293364416514931,1.9328713511339897) -- (17.311287593236727,9.404179602873993) -- cycle;
+   \draw [line width=0.8pt] (-3.1006389948749313,3.0550614146931245)-- (4.239720652539582,6.236117881750678);
+   \draw [line width=1.2pt,color=qqwuqq] (-2.4026846239814494,9.01432812261539)-- (-3.1006389948749313,3.0550614146931245);
+   \draw [line width=1.2pt,color=qqwuqq] (-3.1006389948749313,3.0550614146931245)-- (4.239720652539582,6.236117881750678);
+   \draw [line width=1.2pt,color=qqwuqq] (4.239720652539582,6.236117881750678)-- (-2.4026846239814494,9.01432812261539);
+   \draw [line width=1.2pt,color=wwqqcc] (7.032280832257959,12.718092698860787)-- (12.293364416514931,1.9328713511339897);
+   \draw [line width=1.2pt,color=wwqqcc] (12.293364416514931,1.9328713511339897)-- (17.311287593236727,9.404179602873993);
+   \draw [line width=1.2pt,color=wwqqcc] (17.311287593236727,9.404179602873993)-- (7.032280832257959,12.718092698860787);
+   \draw (0.8,4.5) node[anchor=north west] {8};
+   \draw (-3.6,6.5) node[anchor=north west] {6};
+   \draw (0.5,8.7) node[anchor=north west] {7,2};
+   \draw (8.6,7.5) node[anchor=north west] {12};
+   \draw (15.3,5.8) node[anchor=north west] {9};
+   \draw (12.2,12.1) node[anchor=north west] {10,8};
+   
+
+.. admonition:: Resposta 
+
+   Aqui, é interessante colocar os lados do primeiro triângulo em ordem crescente, por exemplo, e considerar que os lados do segundo triângulo homólogos aos do primeiros são aqueles que ocupam memsa ordem quando colocados também em ordem crescente. Nesse caso, os lados di triângulo verde, em ordem crescente, são `6; 7,2; 8` e, no triângulo lilás, os lados em ordem crescente são `9; 12; 10,8`. Basta agora verificarmos que:
+   
+   * `\dfrac{6}{9}=\dfrac{2}{3}`
+   * `\dfrac{8}{12}=\dfrac{2}{3}`
+   * `\dfrac{7,2}{10,8}=\dfrac{2}{3}`
+     
+   Portanto, temos `\dfrac{6}{9}=\dfrac{8}{12}=\dfrac{7,2}{10,8}=\dfrac{2}{3}` e os triângulos são semelhantes na razão `\dfrac{2}{3}`.
+
+
+
+.. _ativ-t-central-da-semelhanca-de-triangulos:
+
+Atividade: Teorema Central da Semelhança de triângulos
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   Nesta atividade, o aluno deve acompanhar a demonstração de mais um caso de semelhança de triângulos que facilita o reconhecimento de triângulos semelhantes. Trata-se do caso *Ângulo - Ângulo* ou, simplesmente `AA`.
+   
+   **Objetivos específicos**
+    
+   Levar o estudante a 
+   
+   * Aprender a ler com atenção um texto matemático.
+   * Compreender a hipótese do teorema, a tese e a demonstração.
+
+   **Observações e recomendações**
+   
+   * É importante que, se o aluno tem uma definição, ele deve usá-la.
+   * Como o aluno conhece a definição de figuras semelhantes então ele deve entender como a definição geral se aplica a triângulos semelhantes.
+   * O aluno deve entender bem o que é dado e onde se pretende chegar. Em seguida, deve ser levado a perceber a beleza do resultado, que permite reconhecer facilmente quando dois triângulos são semelhantes.
+
+.. admonition:: Teorema
+
+   Dois triângulos que possuem os mesmos ângulos internos são semelhantes
+
+
+Esse enunciado quer dizer que, se dois triângulos possuem dois ângulos internos respectivamente iguais, então seus lados são proporcionais. Demonstrando esse fato, poderemos reconhecer facilmente triângulos semelhantes, e essa é a importância desse teorema.
+
+A figura a seguir mostra, de forma simples, a hipótese e a tese do teorema.
+
+**Hipótese**: Ângulos com marcas iguais são iguais.
+
+
+.. tikz:: 
+
+   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \draw [shift={(-2.32,4.24)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-103.94809618437361:0.6) arc (-103.94809618437361:-46.138177007488174:0.6) -- cycle;
+   \draw [shift={(-3.08,1.18)},line width=0.8pt,color=ccqqqq,fill=ccqqqq,fill opacity=0.10000000149011612] (0,0) -- (-0.3080388573998622:0.6) arc (-0.3080388573998622:76.05190381562642:0.6) -- cycle;
+   \draw [shift={(0.64,1.16)},line width=0.8pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.10000000149011612] (0,0) -- (133.86182299251183:0.6) arc (133.86182299251183:179.69196114260015:0.6) -- cycle;
+   \draw [shift={(1.06,2.86)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-24.02650657867919:0.6) arc (-24.02650657867919:33.783412598206226:0.6) -- cycle;
+   \draw [shift={(2.72,2.12)},line width=0.8pt,color=ccqqqq,fill=ccqqqq,fill opacity=0.10000000149011612] (0,0) -- (79.61355074829451:0.6) arc (79.61355074829451:155.9734934213208:0.6) -- cycle;
+   \draw [shift={(3.1065988009495857,4.22922061722931)},line width=0.8pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.10000000149011612] (0,0) -- (-146.2165874017938:0.6) arc (-146.2165874017938:-100.38644925170551:0.6) -- cycle;
+   \draw [line width=0.8pt] (-2.32,4.24)-- (-3.08,1.18);
+   \draw [line width=0.8pt] (-3.08,1.18)-- (0.64,1.16);
+   \draw [line width=0.8pt] (0.64,1.16)-- (-2.32,4.24);
+   \draw [shift={(-3.08,1.18)},line width=0.8pt,color=ccqqqq] (-0.3080388573998622:0.6) arc (-0.3080388573998622:76.05190381562642:0.6);
+   \draw [shift={(-3.08,1.18)},line width=0.8pt,color=ccqqqq] (-0.3080388573998622:0.5) arc (-0.3080388573998622:76.05190381562642:0.5);
+   \draw [shift={(0.64,1.16)},line width=0.8pt,color=qqqqcc] (133.86182299251183:0.6) arc (133.86182299251183:179.69196114260015:0.6);
+   \draw [shift={(0.64,1.16)},line width=0.8pt,color=qqqqcc] (133.86182299251183:0.5) arc (133.86182299251183:179.69196114260015:0.5);
+   \draw [shift={(0.64,1.16)},line width=0.8pt,color=qqqqcc] (133.86182299251183:0.4) arc (133.86182299251183:179.69196114260015:0.4);
+   \draw [line width=0.8pt] (1.06,2.86)-- (2.72,2.12);
+   \draw [shift={(2.72,2.12)},line width=0.8pt,color=ccqqqq] (79.61355074829451:0.6) arc (79.61355074829451:155.9734934213208:0.6);
+   \draw [shift={(2.72,2.12)},line width=0.8pt,color=ccqqqq] (79.61355074829451:0.5) arc (79.61355074829451:155.9734934213208:0.5);
+   \draw [line width=0.8pt] (1.06,2.86)-- (3.1065988009495857,4.22922061722931);
+   \draw [line width=0.8pt] (3.1065988009495857,4.22922061722931)-- (2.72,2.12);
+   \draw [shift={(3.1065988009495857,4.22922061722931)},line width=0.8pt,color=qqqqcc] (-146.2165874017938:0.6) arc (-146.2165874017938:-100.38644925170551:0.6);
+   \draw [shift={(3.1065988009495857,4.22922061722931)},line width=0.8pt,color=qqqqcc] (-146.2165874017938:0.5) arc (-146.2165874017938:-100.38644925170551:0.5);
+   \draw [shift={(3.1065988009495857,4.22922061722931)},line width=0.8pt,color=qqqqcc] (-146.2165874017938:0.4) arc (-146.2165874017938:-100.38644925170551:0.4);
+   \draw (-1.43,1.1) node[anchor=north west] {$ a $};
+   \draw (-0.8,3.1) node[anchor=north west] {$ b $};
+   \draw (-3.13,3.1) node[anchor=north west] {$ c $};
+   \draw (3.,3.3) node[anchor=north west] {$ a' $};
+   \draw (1.7,4.1) node[anchor=north west] {$  b'$};
+   \draw (1.63,2.4) node[anchor=north west] {$c'$};
+   \draw [fill=black] (-2.32,4.24) circle (1.0pt);
+   \draw[color=black] (-2.47,4.574) node {$A$};
+   \draw [fill=black] (-3.08,1.18) circle (1.0pt);
+   \draw[color=black] (-3.33,1.054) node {$B$};
+   \draw [fill=black] (0.64,1.16) circle (1.0pt);
+   \draw[color=black] (0.79,0.994) node {$C$};
+   \draw [fill=black] (1.06,2.86) circle (1.0pt);
+   \draw[color=black] (0.69,2.914) node {$A'$};
+   \draw [fill=black] (2.72,2.12) circle (1.0pt);
+   \draw[color=black] (2.83,1.854) node {$B'$};
+   \draw [fill=black] (3.1065988009495857,4.22922061722931) circle (1.0pt);
+   \draw[color=black] (3.23,4.534) node {$C'$};
+
+**Tese**: `\dfrac{a}{a'}=\dfrac{b}{b'}=\dfrac{c}{c'}`
+
 
    
  
