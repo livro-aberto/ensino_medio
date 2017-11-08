@@ -1,13 +1,12 @@
-
 ************************************
 Organizando as ideias: vetores do ponto de vista geométrico
 ************************************
 
 .. admonition:: Para o professor
 
-   Vetores foram apresentados na última seção como uma grandeza vetorial proveniente da Física, e a partir daí, algumas de suas propriedades e operações foram exploradas.
+   O conceito de vetor foi apresentado na última seção a partir de conceitos da Física e da noção de grandeza vetorial. A partir daí, algumas propriedades de vetores e as operações com vetores foram exploradas.
 
-   Nesta seção introduziremos o conceito de vetores de uma maneira mais geral e formal, onde serão utilizadas apenas suas propriedades matemáticas. Além disso, formalizaremos as operações com vetores e alguns desdobramentos delas.
+   Nesta seção introduziremos o conceito de vetores de uma maneira mais geral e formal, onde serão utilizadas apenas suas propriedades matemáticas. Além disso, as operações com vetores e alguns desdobramentos também serão formalizadas.
 
    **Objetivos específicos**
 
@@ -15,12 +14,11 @@ Organizando as ideias: vetores do ponto de vista geométrico
    * Compreender e realizar operações com vetores, sendo elas: soma de vetores e multiplicação de vetor por um número real.
    * Compreender algumas propriedades da soma de vetores.
 
+Até aqui associamos o conceito de vetor à posição (vetor posição) e ao deslocamento (vetor deslocamento) de um objeto. A representação do vetor deslocamento foi feita por um segmento orientado tal que as extremidades inicial e final correspondiam às posições inicial e final da trajetória correspondente ao deslocamento.
 
-Até aqui associamos vetor ao deslocamento de um objeto e o estudamos utilizando seu conceito proveniente da Física. A representação do vetor deslocamento foi feita por um segmento orientado, sendo as extremidades inicial e final do segmento orientado as posições inicial e final da trajetória.
+A partir de agora, estudaremos vetores de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira superficial quando jogamos a Corrida de Vetores. Nesse jogo, os vetores representados nas cartas foram utilizados para estabelecer apenas a orientação e a distância a ser percorrida em uma jogada. Neles, as extremidades não eram relevantes, podendo variar de acordo com a jogada. Pensando dessa forma, vetores são segmentos de reta orientados com módulo, direção e sentido. No que se segue, vamos aprofundar o estudo discutindo as características e propriedades dos vetores.
 
-A partir de agora, estudaremos a geometria dos segmentos orientados de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira superficial quando jogamos a Corrida de Vetores. Neste jogo, os segmentos orientados das cartas foram utilizados para estabelecer a orientação e a distância a ser percorrida, sendo a extremidade inicial das setas das cartas menos relevante. Pensando dessa forma, segmentos orientados especificam módulo, direção e sentido. No que se segue, vamos tentar discutir um pouco melhor as características citadas dos segmentos de reta, e assim nos aprofundar nesse nosso estudo.
-
-Para começar esta nova etapa, vamos relembrar que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da figura é chamado `AB` ou `BA`. Neste caso, a ordem escolhida pelas letras não é importante, pois estamos interessados apenas em conhecer os pontos localizados entre os pontos extremos, sem estabelecer nenhuma relação de ordem. A reta `r`, da qual extraímos `AB`, é chamada de reta suporte de `AB`.
+Sabemos que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da figura é chamado `AB` ou `BA`. Neste caso, não se estabelece uma diferença entre as extremidades. O segmento `AB` é o mesmo que o segmento `BA`, pois ambos identificam o mesmo conjunto de pontos. A reta `r`, em que está o segmento `AB`, é chamada de reta suporte de `AB`.
 
 .. _fig-geometria-operacoesvetores-01:
 
@@ -30,7 +28,7 @@ Para começar esta nova etapa, vamos relembrar que :index:`segmento de reta` é 
 
    Segmento de reta `AB` ou `BA`.
 
-Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual estabelecemos uma orientação. Na verdade, podemos perceber que existem duas possíveis orientações no segmento `AB`: de `A` para `B` e de `B` para `A`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico os segmentos orientados.
+Observe que em um segmento de reta `AB` é possível estabelecer duas orientações: de A para B e de B para A, como ilustrado na :numref:`fig-geometria-operacoesvetores-02`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico as setas.
 
 .. _fig-geometria-operacoesvetores-02:
 
@@ -40,11 +38,12 @@ Considere agora um segmento de reta `AB`, sobre uma reta suporte `r`, na qual es
 
    Segmento de reta orientados de `A` para `B` e de `B` para `A`.
 
-Na :numref:`fig-geometria-operacoesvetores-02`, a orientação escolhida para o primeiro segmento foi de `A` para `B`. Neste caso, denotaremos o :index:`segmento orientado` por `\overrightarrow{AB}`. Já na segunda reta, o mesmo segmento de reta foi orientado de `B` para `A`, e, então, escreveremos `\overrightarrow{BA}`. Repare pelas notações adotadas para estes segmentos orientados que a ordem das letras que caracterizam os extremos fornecem a orientação adicionada ao segmento.
+Na Figura :numref:`fig-geometria-operacoesvetores-02`, a orientação de cada segmento fica evidenciada pelo sentido da seta. Assim, na primeira imagem o segmento tem orientação de `A` para `B` e na segunda de `B` para `A` .  Esses segmentos orientados são indicados por `\overrightarrow{AB}` e `\overrightarrow{BA}`, respectivamente.  Observe que, de acordo com a notação desses segmentos orientados, a ordem das letras correspondentes aos extremos indica a orientação estabelecida. 
 
-Como dissemos antes, a partir daqui segmentos orientados serão representados por felchas que possuem as seguintes características: módulo, direção e sentido. A extremidade inicial da seta coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da seta coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado a uma seta e uma seta a um segmento de reta orientado.
+.. Lhaylla: não acho mais necessário esse parágrafo abaixo se não vamos falar de flechas e associá-las aos vetores.
+.. Como dissemos antes, a partir daqui segmentos orientados serão representados por flechas que possuem as seguintes características: módulo, direção e sentido. A extremidade inicial da seta coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da seta coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado a uma seta e uma seta a um segmento de reta orientado.
 
-O *módulo do segmento orientado* é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e sentido do segmento orientado* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção do segmento proveniente de sua reta suporte.
+O *módulo do segmento orientado* é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e o sentido do segmento orientado* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção proveniente de sua reta suporte.
 
 .. _fig-geometria-operacoesvetores-03:
 
@@ -54,13 +53,13 @@ O *módulo do segmento orientado* é o comprimento do segmento de reta que o def
 
    Direções definidas pelas retas `r, s` e `t`.
 
-Diremos que dois segmentos possuem a mesma direção se eles forem colineares (sobre uma mesma reta suporte) ou paralelos (sobre retas suporte paralelas). O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos o sentido da direita e o da esquerda.
+Diremos que dois segmentos têm a mesma direção se eles forem colineares (sobre uma mesma reta suporte) ou paralelos (sobre retas suporte paralelas). O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos os sentidos da direita e o da esquerda.
 
 .. Lhaylla: colocar outra figura para sentido?
 
 **Vetor**
 
-Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados tenham sido desenhados em lugares diferentes, todas eles possuem as mesmas características: módulo, direção e sentido. A uma coleção de segmentos orientados com as mesmas características daremos o nome de *vetor*. Veja a próxima definição.
+Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados tenham sido desenhados em lugares diferentes, todos eles têm as mesmas características: módulo, direção e sentido. A uma coleção de segmentos orientados com as mesmas características daremos o nome de *vetor*. Veja a próxima definição.
 
 
 .. _fig-geometria-operacoesvetores-04:
@@ -74,29 +73,30 @@ Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados t
 
 .. admonition:: Definição
 
-   :index:`Vetor` é uma coleção de segmentos orientados que possuem o mesmo módulo, direção e sentido.
+   :index:`Vetor` é uma coleção de segmentos orientados que possuem o mesmo módulo, mesma direção e mesmo sentido.
 
-Pela definição acima, um vetor fica determinado por uma infinidade de segmentos orientados com mesmo módulo, direção e sentido, que serão chamados *representantes do vetor*. As características de um vetor são as mesmas de seus representantes: módulo, direção e sentido.
+Pela definição acima, um vetor fica determinado por uma infinidade de segmentos orientados com mesmo módulo, mesma direção e mesmo sentido, que isoladamente podem ser chamados representantes do vetor ou simplesmente vetor. Qualquer representante da coleção que identifica um vetor têm o mesmo módulo, a mesma direção e o mesmo sentido. Essas características são comum a todos, identificando-os. Assim, dizemos que as características de um vetor são as mesmas de seus representantes: módulo, direção e sentido.
 
-Repare que qualquer segmento de reta orientado determina uma coleção de segmentos que é um vetor e qualquer outro segmento desta coleção representa o mesmo vetor. A qualquer representante de uma mesma coleção também daremos o nome de vetor, ou seja, vetor é toda a coleção ou então um representante da coleção, dependendo do contexto.
+.. Lhaylla: retirei pois está muito repetitivo.
+.. Repare que qualquer segmento de reta orientado determina uma coleção de segmentos que é um vetor e qualquer outro segmento desta coleção representa o mesmo vetor. A qualquer representante de uma mesma coleção também daremos o nome de vetor, ou seja, vetor é toda a coleção ou então um representante da coleção, dependendo do contexto.
 
-Podemos denotar um vetor de duas formas diferentes. A primeira delas é com uma letra minúscula e uma seta, por exemplo `\vec{v}`. E, a outra é usando as duas letras que caracterizam as extremidades inicial e final de um de seus representantes, por exemplo `\overrightarrow{AB}`. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `\overrightarrow{AB}` é um representante do vetor `\vec{v}`.
+Um vetor pode ser representado por uma letra minúscula (por exemplo, `\vec{v}`) ou a partir das extremidades de um segmento orientado que o represente (por exemplo, `\overrightarrow{AB}`), como ilustrado na Figura XX. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `\overrightarrow{AB}` é um representante do vetor `\vec{v}`. 
 
-Para indicar o módulo do vetor `\vec{v}` usaremos a notação `|\vec{v}|`.
-
+O módulo de um vetor `\vec{v}` é indicado por `|\vec{v}|`.
+ 
 .. admonition:: Observação sobre terminologia
 
    Alguns autores definem segmentos equipolentes como sendo segmentos orientados que possuem o mesmo módulo, direção e sentido. Usando essa terminologia, é possível definir vetores de maneira análoga a definição dada anteriormente.
 
 **Vetores iguais**
 
-Em vista do que estudamos anteriormente, para comparar dois vetores é necessário comparar apenas o módulo, direção e sentido de seus representantes. Portanto:
+Em vista do que estudamos anteriormente, para verificar se dois vetores são iguais ou não é necessário comparar apenas o módulo, a direção e o sentido de seus representantes. Portanto:
 
 .. admonition:: Definição
 
-   Dizemos que dois vetores são iguais se os representantes de suas coleções possuem o mesmo módulo, direção e sentido.
+   Dois vetores são iguais se os representantes de suas coleções possuem o mesmo módulo, a mesma direção e o mesmo sentido.
 
-Na :numref:`fig-geometria-operacoesvetores-05`, os vetores `\vec{u}` e `\vec{v}` são iguais, pois possuem o mesmo módulo, direção e sentido. Neste caso, usaremos a seguinte notação: `\vec{u}=\vec{v}`.
+Na :numref:`fig-geometria-operacoesvetores-05`, os vetores `\vec{u}` e `\vec{v}` são iguais, pois possuem o mesmo módulo, a mesma direção e o mesmo sentido. Nesse caso, escreve-se `\vec{u}=\vec{v}`.
 
 .. _fig-geometria-operacoesvetores-05:
 
@@ -106,12 +106,9 @@ Na :numref:`fig-geometria-operacoesvetores-05`, os vetores `\vec{u}` e `\vec{v}`
 
    `\vec{u}` e `\vec{v}` são vetores iguais.
 
-Vale a pena ressaltar que se ao comparar dois vetores, pelo menos uma das suas características forem diferentes, então diremos que os vetores são diferentes. Não é necessário que todas as características dos vetores sejam diferentes para que eles sejam diferentes.
+Não é necessário que todas as características dos vetores sejam diferentes para que eles sejam diferentes. Se pelo menos pelo menos uma das  características de dois vetores for diferente, então esses vetores são diferentes. 
 
-.. Lhaylla: colocar uma figura com exemplo de vetores diferentes?
-
-
-Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são iguais, pois não possuem o mesmo sentido. Quando dois vetores possuem a mesma direção (como `\vec{u}` e `\vec{v}`), mas apontam para lados opostos, dizemos que esses vetores possuem *sentidos opostos*.
+Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são iguais, pois ssses vetores têm mesmo módulo, mesma direção (estão em retas suportes paralelas), mas não têm o mesmo sentido. Nesse caso, `\vec{u}` e `\vec{v}` têm sentidos opostos. 
 
 .. _fig-geometria-operacoesvetores-06:
 
@@ -127,18 +124,18 @@ Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são 
 
 .. admonition:: Não confunda!
 
-   Algumas palavras usadas frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma direção (comumente nos expressamos dessa forma), os vetores que indicam o deslocamento dos alunos não possuem a mesma direção, já que não são colineares nem paralelos. Ou seja, a palavra *direção* que usamos no nosso dia a dia não possui o mesmo significado da palavra *direção* usada em Matemática.
+   Algumas palavras usadas frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma "direção" (expressão usada no senso comum), os vetores que indicam o deslocamento dos alunos não têm a mesma "direção" (no sentido matemático). Os vetores correspondentes aos deslocamentos dos alunos não são colineares nem paralelos. Ou seja, de maneira geral, a expressão direção usada no nosso dia a dia não tem o mesmo significado da palavra direção usada em Matemática
 
 .. admonition:: Para reflexão
 
    Considere um ponto `A` e um vetor `\vec{v}`.
 
-   #. É possível construir um vetor igual a `\vec{v}` começando no ponto `A`? Por quê?
+   #. É possível determinar um vetor igual a `\vec{v}` começando no ponto `A`? Por quê?
    #. Quantos vetores iguais a `\vec{v}` existem?
 
 .. admonition:: Para o professor
 
-   As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível construir um vetor igual à `\vec{v}` e que portanto, a extremidade inicial do vetor não é importante. E também, que existem infinitos vetores iguais a `\vec{v}`.
+   As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível determinar um vetor igual à `\vec{v}` e que portanto, a extremidade inicial do vetor não é importante. E também, que existem infinitos vetores iguais a `\vec{v}`.
 
 
 **Vetor nulo**
@@ -149,21 +146,17 @@ Existe um objeto que não se enquadra na definição de vetor dada anteriormente
 
    O :index:`vetor nulo` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido.
 
-Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem, e portanto, seus representantes são pontos e não segmentos de reta orientados. Chamar de vetor o que é na verdade um ponto pode parecer um pouco estranho, mas vamos tentar abstrair esta ideia e trabalhar com ele como trabalhamos com qualquer outro vetor. O vetor nulo é o único com essa particularidade.
+Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem e, portanto, seus representantes são pontos e não segmentos de reta orientados. Chamar de vetor o que é na verdade um ponto pode parecer um pouco estranho, mas o vetor nulo é extamente isto: um ponto. O vetor nulo é o único com essa particularidade.
 
-Denotaremos o vetor nulo por `\vec{0}`.
-
-Agora que já sabemos o que é um vetor e como representá-lo por um segmento de reta orientado, vamos aprender como operá-los. A seguir definiremos duas operações com vetores: soma e multiplicação de um vetor por um número real.
+O veror nulo é indicado por `\vec{0}`.
 
 **Soma de vetores**
 
-Na seção anterior, vimos o conceito de segmentos orientados justapostos. Podemos estender esse conceito para o caso de vetores da seguinte forma: diremos que dois vetores estão justapostos se dois de seus representantes, que são segmentos orientados, estão justapostos.
-
 .. admonition:: Definição
 
-   A :index:`soma de vetores` é a operação que a cada par de vetores justapostos associa um vetor, chamado vetor soma, que possui um representante com extremidade inicial coincidente com extremidade inicial do primeiro vetor e extremidade final coincidente com extremidade final do segundo vetor.
+   A :index:`soma de vetores` é a operação que a cada par de vetores `\vec{u}=\overrightarrow{AB}` e `\vec{v}=\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, chamado vetor soma e indicado por `\vec{u}+\vec{v}`.
 
-Na :numref:`fig-geometria-operacoesvetores-08`, o vetor `\vec{u}+\vec{v}` resultante da soma de `\vec{u}` com `\vec{v}` está sendo ilustrado. Primeiramente, repare que `\overrightarrow{AB}` foi escolhido como representante do vetor `\vec{u}` e `\overrightarrow{BC}` como representante de `\vec{v}`. Como `\overrightarrow{AB}` e `\overrightarrow{BC}` estão justapostos, pela definição anterior, `\overrightarrow{AC}` é um representante do vetor soma `\vec{u}+\vec{v}`.
+Na :numref:`fig-geometria-operacoesvetores-08`, o vetor soma `\vec{u}+\vec{v}` resultante da soma de `\vec{u}` com `\vec{v}` está sendo ilustrado. Primeiramente, repare que `\overrightarrow{AB}` foi escolhido como representante do vetor `\vec{u}` e `\overrightarrow{BC}` como representante de `\vec{v}`. Como `\overrightarrow{AB}` e `\overrightarrow{BC}` estão justapostos, pela definição anterior, `\overrightarrow{AC}` é um representante do vetor soma `\vec{u}+\vec{v}`.
 
 .. _fig-geometria-operacoesvetores-08:
 
