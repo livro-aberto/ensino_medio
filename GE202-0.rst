@@ -500,6 +500,162 @@ Atividade: Identificando triângulos semelhantes
    Da igualdade `\dfrac{a}{d}=\dfrac{10}{12}`, como sabemos que `a=12`, encontramos `d = 14,4`.
 
 
+.. _ativ-criando-triangulos-semelhantes:
+
+Atividade: Criando triângulos
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   Levar o estudante a 
+   
+   * Exercitar sua imaginação para criar alguma situação favorável para aplicar a semelhança de triângulos
+   * Aplicar a proporcionalidade correta nos triângulos semelhantes identificados.
+   
+   **Observações e recomendações**
+   
+   * Como a figura dada não possui nenhum triângulo, os alunos devem ter sentir a necessidade de interferir na figura para criar triângulos semelhantes.
+   * Há mais de uma forma de criar triângulos semelhantes. 
+   * Não dê a dica antecipadamente. Deixem que eles descubram.
+
+Na figura a seguir, os pontos `A` e `B` dividem os lados `PS` e `QR`, respectivamente, na razão `1:2`. As  bases `PQ` e `RS` do trapézio `PQRS` medem, respectivamente `17` e `5`
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0.,0.)-- (6.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (0.56,2.88);
+   \draw [line width=0.8pt] (0.56,2.88)-- (2.66,2.88);
+   \draw [line width=0.8pt] (2.66,2.88)-- (6.,0.);
+   \draw [line width=0.8pt] (0.1953754646840149,1.0047881040892193)-- (4.8347249070631975,1.0047881040892193);
+   \draw (1.4,3.4) node[anchor=north west] {5};
+   \draw (2.669347702779354,-0.24120703346568212) node[anchor=north west] {17};
+   \draw (-0.4229812819058426,1.7) node[anchor=north west] {$A$};
+   \draw (4.867800340328985,1.7) node[anchor=north west] {$B$};
+   \draw (-0.8095224049914922,0.4593987521270573) node[anchor=north west] {$P$};
+   \draw (6.365647192285878,0.5801928530913226) node[anchor=north west] {$Q$};
+   \draw (2.71766534316506,3.3) node[anchor=north west] {$R$};
+   \draw (-0.0,3.3) node[anchor=north west] {$S$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw [fill=black] (6.,0.) circle (1.0pt);
+   \draw [fill=black] (0.56,2.88) circle (1.0pt);
+   \draw [fill=black] (2.66,2.88) circle (1.0pt);
+   \draw [fill=black] (0.1953754646840149,1.0047881040892193) circle (1.0pt);
+   \draw [fill=black] (4.8347249070631975,1.0047881040892193) circle (1.0pt);
+
+#. Podemos afirmar que `SR\parallel AB\parallel PQ`? Justifique sua resposta.
+#. Quanto mede o segmento `AB`?
+
+.. admonition:: Resposta 
+
+   #. O segmento `AB` é paralelo às pases pela volta do teorema de Tales.
+   #. A figura a seguir mostra uma possível solução criando triângulos semelhantes
+   
+   .. tikz:: 
+   
+      \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+      \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+      \draw [line width=0.8pt] (0.,0.)-- (6.,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (0.56,2.88);
+      \draw [line width=0.8pt] (0.56,2.88)-- (2.66,2.88);
+      \draw [line width=0.8pt] (2.66,2.88)-- (6.,0.);
+      \draw [line width=0.8pt] (0.1953754646840149,1.0047881040892193)-- (4.8347249070631975,1.0047881040892193);
+      \draw (1.4,3.4) node[anchor=north west] {5};
+      \draw (-0.4229812819058426,1.7) node[anchor=north west] {$A$};
+      \draw (4.867800340328985,1.7) node[anchor=north west] {$B$};
+      \draw (-0.8095224049914922,0.4593987521270573) node[anchor=north west] {$P$};
+      \draw (6.365647192285878,0.5801928530913226) node[anchor=north west] {$Q$};
+      \draw (2.71766534316506,3.3) node[anchor=north west] {$R$};
+      \draw (-0.0,3.3) node[anchor=north west] {$S$};
+      \draw [line width=2.pt,dash pattern=on 6pt off 6pt,color=ffqqqq] (2.66,2.88)-- (2.1,0.);
+      \draw [line width=2.pt,dash pattern=on 6pt off 6pt,color=ffqqqq] (4.8347249070631975,1.0047881040892193)-- (4.639349442379182,0.);
+      \draw (1.8237889960294955,-.2) node[anchor=north west] {$R^\prime$};
+      \draw (4.3846239364719235,-.2) node[anchor=north west] {$B^\prime$};
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw [fill=black] (6.,0.) circle (1.0pt);
+      \draw [fill=black] (0.56,2.88) circle (1.0pt);
+      \draw [fill=black] (2.66,2.88) circle (1.0pt);
+      \draw [fill=black] (0.1953754646840149,1.0047881040892193) circle (1.0pt);
+      \draw [fill=black] (4.8347249070631975,1.0047881040892193) circle (1.0pt);
+      \draw [fill=uuuuuu] (2.1,0.) circle (2.0pt);
+      \draw [fill=uuuuuu] (4.639349442379182,0.) circle (2.0pt);   
+      
+   Note que `\triangle RR'Q \sim \triangle BB'Q` na razão `1:3`. Portanto `\dfrac{B'Q}{R'Q}=\dfrac{1}{3}`, mas `R'Q = 17 - 5 = 12` e, portanto, `B'Q=4` e `PB'=AB=17 - 4 = 13`.
+   
+
+.. _ativ-procurando-triangulos:
+
+Atividade: Procurando triângulos semelhantes
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Observar a figura tentando encontrar dois triângulos semelhantes.
+   * Aplicar a proporcionalidade correta nos triângulos semelhantes identificados.
+   
+   **Observações e recomendações**
+   
+   * É importante que os alunos tenham disciplina. Não adianta tentar escrever proporções ao acaso. É necessário, primeiro, encontrar os triângulos semelhantes.
+
+#. Escreva uma expressão algébrica que relacione `a`, `b` e `c` através de uma única igualdade.
+
+   .. tikz:: 
+
+      \begin{scope}[scale=1.5]
+      \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+      \draw [shift={(1.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (149.95583993007403:0.6) arc (149.95583993007403:180.:0.6) -- cycle;
+      \draw [shift={(-4.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (28.67813706320757:0.6) arc (28.67813706320757:58.72229713313355:0.6) -- cycle;]
+      \draw [line width=0.8pt] (-4.,0.)-- (1.,0.);
+      \draw [line width=0.8pt] (1.,0.)-- (-2.7,2.14);
+      \draw [line width=0.8pt] (-2.7,2.14)-- (-4.,0.);
+      \draw [line width=0.8pt] (-4.,0.)-- (-1.4302666725051452,1.4056136970705435);
+      \draw (-2.02,2.1) node[anchor=north west] {$ a $};
+      \draw (-3.66,1.5) node[anchor=north west] {$ b $};
+      \draw (-0.26,1.1) node[anchor=north west] {$ c $};
+      \draw (-.1,0.38) node[anchor=north west] {$\alpha$};
+      \draw (-3.6,0.7) node[anchor=north west] {$\alpha$};
+      \draw [fill=black] (-4.,0.) circle (1.0pt);
+      \draw [fill=black] (1.,0.) circle (1.0pt);
+      \draw [fill=black] (-2.7,2.14) circle (1.0pt);
+      \draw [fill=black] (-1.4302666725051452,1.4056136970705435) circle (1.0pt);
+      \end{scope}
+   
+#. Qual o valor de `x` na figura a seguir?
+
+   .. tikz::
+      
+      \begin{scope}[scale=1.5]
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (3.4,0.21213203435596437) -- (3.1878679656440356,0.2121320343559644) -- (3.1878679656440356,0.) -- (3.4,0.) -- cycle; 
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (2.8190959657167878,1.4977754801678411) -- (3.0052144904352462,1.3959919119624344) -- (3.1069980586406527,1.5821104366808925) -- (2.9208795339221947,1.6838940048862994) -- cycle; 
+      \draw [line width=0.8pt] (2.,0.)-- (6.,0.);
+      \draw [line width=0.8pt] (3.4,2.56)-- (2.,0.);
+      \draw [line width=0.8pt] (3.4,2.56)-- (3.4,0.);
+      \draw [line width=0.8pt] (6.,0.)-- (2.9208795339221947,1.6838940048862994);
+      \draw (2.14,1.04) node[anchor=north west] {5};
+      \draw (2.86,2.34) node[anchor=north west] {2};
+      \draw (2.6,-0.16) node[anchor=north west] {3};
+      \draw (4.42,0.24) node[anchor=north west] {$ x $};
+      \draw [fill=black] (2.,0.) circle (1.0pt);
+      \draw [fill=black] (6.,0.) circle (1.0pt);
+      \draw [fill=black] (3.4,0.) circle (1.0pt);
+      \draw [fill=black] (3.4,2.56) circle (1.0pt);
+      \draw [fill=black] (2.9208795339221947,1.6838940048862994) circle (1.0pt);
+      \end{scope}
+
+
+.. admonition:: Resposta 
+
+   #. A semelhança deve gerar a seguinte proporção: `\dfrac{b}{a}=\dfrac{a+c}{b}`.
+   
+      Essa relação já atende ao que foi pedido. No entanto, é possível desenvolver um pouco mais a expressão chegando a `ac = b^2 - a^2`
+   
+   #. A partir da proporção `\dfrac{5}{3}=\dfrac{x+3}{7}`, encontramos que `3x+9 = 35` e, portanto, `x = \dfrac{26}{3}`
    
 .. _sec-semelhanca-explorando2:
    
