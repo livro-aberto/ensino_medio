@@ -36,7 +36,7 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
  
 .. admonition:: Desafios do Capítulo
       
- A relevância do raciocíno estatístico e conhecimento para o efetivo funcionamento na sociedade da informação levou à introdução do termo **Letramento Estatístico**: "A capacidade de compreender e avaliar criticamente resultados estatísticos que permeiam a vida diária,  acompanhada da capacidade de apreciar como o pensamento estatístico pode contribuir em decisões públicas e privadas, profissionais e pessoais." (Batanero, Borovcnik, 2016)
+ A relevância do raciocínio estatístico e conhecimento para o efetivo funcionamento na sociedade da informação levou à introdução do termo **Letramento Estatístico**: "A capacidade de compreender e avaliar criticamente resultados estatísticos que permeiam a vida diária,  acompanhada da capacidade de apreciar como o pensamento estatístico pode contribuir em decisões públicas e privadas, profissionais e pessoais." (Batanero, Borovcnik, 2016)
  
  De acordo com (De Veaux et al, 2008), o desafio para o estudante (e o professor) de Estatística introdutória é que, como na literatura e na arte, navegar por e dar sentido a exige não somente um conjunto de regras e axiomas, mas experiência de vida e "senso comum". São várias habilidades a serem trabalhadas e a maior parte delas exige capacidade de avaliação crítica em adição à manipulação matemática. A capacidade de avaliação crítica é adquirida com exemplos e experiência e isso demanda mais tempo.
  
