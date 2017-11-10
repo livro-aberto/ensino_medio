@@ -18,7 +18,9 @@ Até aqui associamos o conceito de vetor à posição (vetor posição) e ao des
 
 A partir de agora, estudaremos vetores de um novo ponto de vista, sem considerar suas propriedades físicas (ligadas ao deslocamento). Na verdade, isso já foi feito de maneira superficial quando jogamos a Corrida de Vetores. Nesse jogo, os vetores representados nas cartas foram utilizados para estabelecer apenas a orientação e a distância a ser percorrida em uma jogada. Neles, as extremidades não eram relevantes, podendo variar de acordo com a jogada. Pensando dessa forma, vetores são segmentos de reta orientados com módulo, direção e sentido. No que se segue, vamos aprofundar o estudo discutindo as características e propriedades dos vetores.
 
-Sabemos que :index:`segmento de reta` é um conjunto de pontos sobre uma reta delimitado por dois pontos chamados *extremos*. Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da figura é chamado `AB` ou `BA`. Neste caso, não se estabelece uma diferença entre as extremidades. O segmento `AB` é o mesmo que o segmento `BA`, pois ambos identificam o mesmo conjunto de pontos. A reta `r`, em que está o segmento `AB`, é chamada de reta suporte de `AB`.
+Sabemos que :index:`segmento de reta` é o conjunto de pontos sobre uma reta que estão entre dois pontos chamados *extremos*. 
+
+Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento de reta que contém os pontos compreendidos entre `A` e `B`. Representamos este segmento de reta pelas duas letras que caracterizam seus pontos extremos, ou seja, o segmento de reta da figura é chamado `AB` ou `BA`. Neste caso, não se estabelece uma diferença entre as extremidades. O segmento `AB` é o mesmo que o segmento `BA`, pois ambos identificam o mesmo conjunto de pontos. A reta `r`, em que está o segmento `AB`, é chamada de reta suporte de `AB`.
 
 .. _fig-geometria-operacoesvetores-01:
 
@@ -43,17 +45,17 @@ Na Figura :numref:`fig-geometria-operacoesvetores-02`, a orientação de cada se
 .. Lhaylla: não acho mais necessário esse parágrafo abaixo se não vamos falar de flechas e associá-las aos vetores.
 .. Como dissemos antes, a partir daqui segmentos orientados serão representados por flechas que possuem as seguintes características: módulo, direção e sentido. A extremidade inicial da seta coincidirá com a extremidade inicial do segmento orientado, assim como a extremidade final da seta coincidirá com a extremidade final do segmento orientado. Dessa forma, fica fácil associar um segmento de reta orientado a uma seta e uma seta a um segmento de reta orientado.
 
-O *módulo do segmento orientado* é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e o sentido do segmento orientado* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção proveniente de sua reta suporte.
+O *módulo do segmento orientado* é o comprimento do segmento de reta que o define, ou seja, a distância entre seus pontos extremos. Portanto, módulo é sempre um número não negativo. Já a *direção e o sentido do segmento orientado* estão ligados à orientação do segmento. Em Matemática, uma reta define uma direção e segmentos herdam a direção de sua reta suporte. Por simplicidade, utilizaremos apenas a expressão *direção do segmento* em referência à direção proveniente de sua reta suporte. Dizemos que dois segmentos têm a mesma direção se eles forem colineares (estão sobre uma mesma reta suporte) ou paralelos (quando estão sobre retas suporte paralelas). 
 
 .. _fig-geometria-operacoesvetores-03:
 
-.. figure:: _resources/DirecaoRetas.png
-   :width: 200pt
+.. figure:: _resources/SegmentosMesmaDirecao_1.png
+   :width: 500pt
    :align: center
 
-   Direções definidas pelas retas `r, s` e `t`.
+   Como os segmentos `AB` e `CD` estão sobre a reta `r`, então eles possuem a mesma direção. Já os segmentos `EF` e `GH` estão sobre retas paralelas `s` e `t`, então esses segmentos são paralelos.
 
-Diremos que dois segmentos têm a mesma direção se eles forem colineares (sobre uma mesma reta suporte) ou paralelos (sobre retas suporte paralelas). O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos os sentidos da direita e o da esquerda.
+O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos os sentidos da direita e o da esquerda.
 
 .. Lhaylla: colocar outra figura para sentido?
 
@@ -160,7 +162,7 @@ Na :numref:`fig-geometria-operacoesvetores-08`, o vetor soma `\vec{u}+\vec{v}` r
 
 .. _fig-geometria-operacoesvetores-08:
 
-.. figure:: _resources/SomaVetoresJustapostos.png
+.. figure:: _resources/SomaVetoresJustapostos_1.png
    :width: 150pt
    :align: center
 
@@ -170,13 +172,21 @@ Com essa definição, é possível somar dois vetores tal que o representante do
 
 .. _fig-geometria-operacoesvetores-09:
 
-.. figure:: _resources/SomaVetores_2.png
+.. figure:: _resources/SomaVetores_parte1.png
+   :width: 200pt
+   :align: center
+
+   Vetores `\vec{u}` e `\vec{v}` não justapostos.
+
+Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{u}`, representado por `\overrightarrow{AB}`, e `\vec{v}`, representado por `\overrightarrow{CD}`. Como os representantes de `\vec{u}` e `\vec{v}` não estão justapostos, é necessário escolher um outro representante do vetor `\vec{v}` justaposto ao representante de `\vec{u}` e então aplicar a definição. Sendo `\overrightarrow{BP}` um representante de `\vec{v}` justaposto à `\overrightarrow{AB}`, como na :numref:`fig-geometria-operacoesvetores-09.1`, o vetor com extremidade inicial em `A` e extremidade final em `P` é um representante do vetor soma `\vec{u}+\vec{v}`.
+
+.. _fig-geometria-operacoesvetores-09.1:
+
+.. figure:: _resources/SomaVetores_parte2.png
    :width: 200pt
    :align: center
 
    Soma de dois vetores quaisquer.
-
-Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{u}`, representado por `\overrightarrow{AB}`, e `\vec{v}`, representado por `\overrightarrow{CD}`. Como os representantes de `\vec{u}` e `\vec{v}` não estão justapostos, é necessário escolher um outro representante do vetor `\vec{v}` justaposto ao representante de `\vec{u}` e então aplicar a definição. Sendo `\overrightarrow{BP}` um representante de `\vec{v}` justaposto à `\overrightarrow{AB}`, o vetor com extremidade inicial em `A` e extremidade final em `P` é um representante do vetor soma `\vec{u}+\vec{v}`.
 
 **Importante:** Na :numref:`fig-geometria-operacoesvetores-09` temos dois representantes do vetor `\vec{v}`, sendo eles os segmentos orientados `\overrightarrow{BP}` e `\overrightarrow{CD}`. Esses dois segmentos, por possuírem o mesmo módulo, direção e sentido, pertencem à mesma coleção e por isso dão origem ao mesmo vetor.
 
