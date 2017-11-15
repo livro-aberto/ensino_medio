@@ -1,3 +1,385 @@
-*******
-GE202-1
-*******
+.. _sec-semelhanca-explorando2:
+   
+***********
+Explorando Polígonos
+***********
+
+
+.. _ativ-semelhanca-em-poligonos:
+
+Atividade: Reconhecendo a Semelhança em Polígonos
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+
+   Levar o estudante a 
+   
+   * Reconhecer visualmente a semelhança de alguns polígonos.
+   * Praticar sua intuição.
+   
+   **Observações e recomendações**
+   
+   * É importante que, se o aluno tem uma definição, ele deve usá-la.
+   * Como o aluno ainda não conhece as propriedades da semelhança ele deve usar sua intuição para responder às perguntas. Não há problema se errar alguma resposta. O professor deve sempre estimular o aluno a intuir algo sobre o que ainda não conhece. Depois que a teoria for construída ele vai verificar quão certo estava. Ou não.
+   
+   
+Você vê a seguir 12 polígonos. Nesta atividade, você deve praticar apenas sua intuição.
+
+Quais são os pares de figuras semelhantes que se pode ver abaixo?
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \definecolor{qqttcc}{rgb}{0.,0.2,0.8}
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-3.5,3.7) -- (-2.18,3.32) -- (-0.62,4.4) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (3.9,1.18) -- (4.26,3.18) -- (2.4350943396226388,5.312830188679249) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (0.3,3.12) -- (1.4,2.84) -- (1.68,3.94) -- (0.58,4.22) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-3.1465840390609063,2.132980254180715) -- (-2.7233235390335313,1.0219214416088525) -- (-0.675569158198525,1.8020183485936148) -- (-1.0988296582259,2.9130771611654773) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (0.18578784326381884,2.0945546887129005) -- (0.4620721644875895,0.7618891392805984) -- (1.4780522244324246,1.667491154843875) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (1.5763105799641612,2.1275462870707997) -- (2.736542208915043,2.4225204300244134) -- (2.5061981264250925,3.32854048781822) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-2.8208356524066267,4.873649919846116) -- (-2.3982831611232127,4.516105504144766) -- (-1.9276623138834543,4.80748950376103) -- (-2.059355125758425,5.345119135003117) -- (-2.6113666068109613,5.386008520853536) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (2.2497942429943407,-0.08321584328622736) -- (3.4361916223670033,0.22557251572857437) -- (3.509133393677943,1.4493243248971646) -- (2.3678165081750633,1.8968561777427269) -- (1.589502109689172,0.9496942646809107) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-2.08949480210841,0.5343608747433761) -- (-1.4556660651832893,-0.01820776770416384) -- (0.26704793774139846,0.16056444014651083) -- (-0.3667807991837222,0.7131330825940507) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-0.6105610826164614,5.572486732353299) -- (0.9008766746665194,4.467349447458219) -- (1.8272417517109276,4.369837334085124) -- (0.3158039944279462,5.4749746189802035) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (-1.0006095361088434,3.443472257040719) -- (-0.26926868581062696,2.695879387846988) -- (0.4620721644875895,2.6796273689514725) -- (-0.5780570448254295,3.7197565782644886) -- cycle;
+   \fill[line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.15000000596046448] (3.5662077735311306,4.873649919846116) -- (4.395060737202442,4.256073201816513) -- (4.843734530029543,4.573872794779144) -- (4.588037042695764,5.394304566273107) -- (3.745765636440139,5.40444426396115) -- cycle;
+   \draw [line width=0.8pt,color=qqttcc] (-3.5,3.7)-- (-2.18,3.32);
+   \draw [line width=0.8pt,color=qqttcc] (-2.18,3.32)-- (-0.62,4.4);
+   \draw [line width=0.8pt,color=qqttcc] (-0.62,4.4)-- (-3.5,3.7);
+   \draw [line width=0.8pt] (3.9,1.18)-- (4.26,3.18);
+   \draw [line width=0.8pt,color=qqttcc] (3.9,1.18)-- (4.26,3.18);
+   \draw [line width=0.8pt,color=qqttcc] (4.26,3.18)-- (2.4350943396226388,5.312830188679249);
+   \draw [line width=0.8pt,color=qqttcc] (2.4350943396226388,5.312830188679249)-- (3.9,1.18);
+   \draw [line width=0.8pt,color=qqttcc] (0.3,3.12)-- (1.4,2.84);
+   \draw [line width=0.8pt,color=qqttcc] (1.4,2.84)-- (1.68,3.94);
+   \draw [line width=0.8pt,color=qqttcc] (1.68,3.94)-- (0.58,4.22);
+   \draw [line width=0.8pt,color=qqttcc] (0.58,4.22)-- (0.3,3.12);
+   \draw [line width=0.8pt] (-2.7233235390335313,1.0219214416088525)-- (-0.675569158198525,1.8020183485936148);
+   \draw [line width=0.8pt,color=qqttcc] (-3.1465840390609063,2.132980254180715)-- (-2.7233235390335313,1.0219214416088525);
+   \draw [line width=0.8pt,color=qqttcc] (-2.7233235390335313,1.0219214416088525)-- (-0.675569158198525,1.8020183485936148);
+   \draw [line width=0.8pt,color=qqttcc] (-0.675569158198525,1.8020183485936148)-- (-1.0988296582259,2.9130771611654773);
+   \draw [line width=0.8pt,color=qqttcc] (-1.0988296582259,2.9130771611654773)-- (-3.1465840390609063,2.132980254180715);
+   \draw [line width=0.8pt] (0.18578784326381884,2.0945546887129005)-- (0.4620721644875895,0.7618891392805984);
+   \draw [line width=0.8pt,color=qqttcc] (0.18578784326381884,2.0945546887129005)-- (0.4620721644875895,0.7618891392805984);
+   \draw [line width=0.8pt,color=qqttcc] (0.4620721644875895,0.7618891392805984)-- (1.4780522244324246,1.667491154843875);
+   \draw [line width=0.8pt,color=qqttcc] (1.4780522244324246,1.667491154843875)-- (0.18578784326381884,2.0945546887129005);
+   \draw [line width=0.8pt] (1.5763105799641612,2.1275462870707997)-- (2.736542208915043,2.4225204300244134);
+   \draw [line width=0.8pt,color=qqttcc] (1.5763105799641612,2.1275462870707997)-- (2.736542208915043,2.4225204300244134);
+   \draw [line width=0.8pt,color=qqttcc] (2.736542208915043,2.4225204300244134)-- (2.5061981264250925,3.32854048781822);
+   \draw [line width=0.8pt,color=qqttcc] (2.5061981264250925,3.32854048781822)-- (1.5763105799641612,2.1275462870707997);
+   \draw [line width=0.8pt] (-2.8208356524066267,4.873649919846116)-- (-2.3982831611232127,4.516105504144766);
+   \draw [line width=0.8pt,color=qqttcc] (-2.8208356524066267,4.873649919846116)-- (-2.3982831611232127,4.516105504144766);
+   \draw [line width=0.8pt,color=qqttcc] (-2.3982831611232127,4.516105504144766)-- (-1.9276623138834543,4.80748950376103);
+   \draw [line width=0.8pt,color=qqttcc] (-1.9276623138834543,4.80748950376103)-- (-2.059355125758425,5.345119135003117);
+   \draw [line width=0.8pt,color=qqttcc] (-2.059355125758425,5.345119135003117)-- (-2.6113666068109613,5.386008520853536);
+   \draw [line width=0.8pt,color=qqttcc] (-2.6113666068109613,5.386008520853536)-- (-2.8208356524066267,4.873649919846116);
+   \draw [line width=0.8pt] (2.2497942429943407,-0.08321584328622736)-- (3.4361916223670033,0.22557251572857437);
+   \draw [line width=0.8pt,color=qqttcc] (2.2497942429943407,-0.08321584328622736)-- (3.4361916223670033,0.22557251572857437);
+   \draw [line width=0.8pt,color=qqttcc] (3.4361916223670033,0.22557251572857437)-- (3.509133393677943,1.4493243248971646);
+   \draw [line width=0.8pt,color=qqttcc] (3.509133393677943,1.4493243248971646)-- (2.3678165081750633,1.8968561777427269);
+   \draw [line width=0.8pt,color=qqttcc] (2.3678165081750633,1.8968561777427269)-- (1.589502109689172,0.9496942646809107);
+   \draw [line width=0.8pt,color=qqttcc] (1.589502109689172,0.9496942646809107)-- (2.2497942429943407,-0.08321584328622736);
+   \draw [line width=0.8pt] (-1.4556660651832893,-0.01820776770416384)-- (0.26704793774139846,0.16056444014651083);
+   \draw [line width=0.8pt] (-2.08949480210841,0.5343608747433761)-- (-1.4556660651832893,-0.01820776770416384);
+   \draw [line width=0.8pt,color=qqttcc] (-2.08949480210841,0.5343608747433761)-- (-1.4556660651832893,-0.01820776770416384);
+   \draw [line width=0.8pt,color=qqttcc] (-1.4556660651832893,-0.01820776770416384)-- (0.26704793774139846,0.16056444014651083);
+   \draw [line width=0.8pt,color=qqttcc] (0.26704793774139846,0.16056444014651083)-- (-0.3667807991837222,0.7131330825940507);
+   \draw [line width=0.8pt,color=qqttcc] (-0.3667807991837222,0.7131330825940507)-- (-2.08949480210841,0.5343608747433761);
+   \draw [line width=0.8pt] (-0.6105610826164614,5.572486732353299)-- (0.9008766746665194,4.467349447458219);
+   \draw [line width=0.8pt] (0.3158039944279462,5.4749746189802035)-- (-0.6105610826164614,5.572486732353299);
+   \draw [line width=0.8pt,color=qqttcc] (-0.6105610826164614,5.572486732353299)-- (0.9008766746665194,4.467349447458219);
+   \draw [line width=0.8pt,color=qqttcc] (0.9008766746665194,4.467349447458219)-- (1.8272417517109276,4.369837334085124);
+   \draw [line width=0.8pt,color=qqttcc] (1.8272417517109276,4.369837334085124)-- (0.3158039944279462,5.4749746189802035);
+   \draw [line width=0.8pt,color=qqttcc] (0.3158039944279462,5.4749746189802035)-- (-0.6105610826164614,5.572486732353299);
+   \draw [line width=0.8pt] (-1.0006095361088434,3.443472257040719)-- (-0.26926868581062696,2.695879387846988);
+   \draw [line width=0.8pt] (-1.0006095361088434,3.443472257040719)-- (-0.5780570448254295,3.7197565782644886);
+   \draw [line width=0.8pt] (-0.5780570448254295,3.7197565782644886)-- (0.4620721644875895,2.6796273689514725);
+   \draw [line width=0.8pt] (0.4620721644875895,2.6796273689514725)-- (-0.26926868581062696,2.695879387846988);
+   \draw [line width=0.8pt,color=qqttcc] (-1.0006095361088434,3.443472257040719)-- (-0.26926868581062696,2.695879387846988);
+   \draw [line width=0.8pt,color=qqttcc] (-0.26926868581062696,2.695879387846988)-- (0.4620721644875895,2.6796273689514725);
+   \draw [line width=0.8pt,color=qqttcc] (0.4620721644875895,2.6796273689514725)-- (-0.5780570448254295,3.7197565782644886);
+   \draw [line width=0.8pt,color=qqttcc] (-0.5780570448254295,3.7197565782644886)-- (-1.0006095361088434,3.443472257040719);
+   \draw [line width=0.8pt] (3.5662077735311306,4.873649919846116)-- (4.395060737202442,4.256073201816513);
+   \draw [line width=0.8pt,color=qqttcc] (3.5662077735311306,4.873649919846116)-- (4.395060737202442,4.256073201816513);
+   \draw [line width=0.8pt,color=qqttcc] (4.395060737202442,4.256073201816513)-- (4.843734530029543,4.573872794779144);
+   \draw [line width=0.8pt,color=qqttcc] (4.843734530029543,4.573872794779144)-- (4.588037042695764,5.394304566273107);
+   \draw [line width=0.8pt,color=qqttcc] (4.588037042695764,5.394304566273107)-- (3.745765636440139,5.40444426396115);
+   \draw [line width=0.8pt,color=qqttcc] (3.745765636440139,5.40444426396115)-- (3.5662077735311306,4.873649919846116);
+   \draw (-2.4470392178097606,5.10117818438334) node[anchor=north west] {1};
+   \draw (0.4133161078010417,5.149934241069887) node[anchor=north west] {2};
+   \draw (4.102524397083156,5.01991808990576) node[anchor=north west] {3};
+   \draw (3.5987118113221626,3.1996919736079814) node[anchor=north west] {4};
+   \draw (2.233542224098825,2.728383425638021) node[anchor=north west] {5};
+   \draw (0.8846246557710035,3.5897404271003626) node[anchor=north west] {6};
+   \draw (-0.4155368558702703,3.1996919736079814) node[anchor=north west] {7};
+   \draw (-2.2682670099590854,3.784764653846553) node[anchor=north west] {8};
+   \draw (-1.910722594257735,2.1108067076084174) node[anchor=north west] {9};
+   \draw (0.49457620227862137,1.606994121847425) node[anchor=north west] {10};
+   \draw (2.509826545322596,0.9731653849223058) node[anchor=north west] {11};
+   \draw (-1.065617611690907,0.4531007802657976) node[anchor=north west] {12};
+   \end{scope}
+   
+
+.. admonition:: Resposta 
+
+   Os alunos responderão a essa atividade apenas pela sua intuição de que as figuras têm ou não a mesma forma mas estão em tamanhos diferentes. No caso de polígonos, uma boa maneira de argumentar para dizer que, por exemplo, 2 e 12  não são semelhantes, é falar sobre os ângulos. Visualmente, o ângulo agudo de 2 é menor que o ângulo agudo de 12.
+   
+   Por outro lado, as figuras 6 e 9 possuem os mesmos ângulos (ambos são retângulos) mas obviamente não são semelhança e, portanto o argumento dos ângulos não é suficiente.
+   
+   Tente explorar esses argumentos apontando suas falhas para que os alunos estejam alertas quando estiverem em situações onde a verificação pode ser feita usando as propriedades da semelhança de polígonos que introduziremos a seguir.
+   
+   De fato, `1 \sim 11` e `4 \sim 8`. No caso do pentágono regular há alguma esperança de argumentação, mas no caso dos triângulos (a não ser q algum aluno resolva de fato medir os lados) isso ficará apenas intuitivamente combinado.
+
+
+.. _sec-organizando-semelhanca2:
+   
+***********
+Organizando as ideias
+***********
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender o que são polígonos semelhantes.
+   * Conhecer os critérios para identificar polígonos semelhantes.
+   * Aprender a operar com polígonos semelhantes
+   
+   **Observações e recomendações**
+   
+   * Todo polígono pode ser dividido em triângulos. 
+   * Para demonstrar que dois polígonos são semelhantes, eles devem ser divididos em triângulos da mesma maneira. Devemos então verificar se esses triângulos são respectivamente semelhantes.
+   
+
+
+.. admonition:: Polígonos semelhantes 
+
+   Dois polígonos são semelhantes quando puderem ser divididos em triângulos respectivamente semelhantes.
+   
+
+
+.. tikz:: 
+
+   \definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+   \definecolor{yqqqqq}{rgb}{0.5019607843137255,0.,0.}
+   \definecolor{qqccqq}{rgb}{0.,0.8,0.}
+   \fill[line width=0.8pt,color=qqccqq,fill=qqccqq,fill opacity=0.25] (-2.,3.36) -- (-2.96,0.98) -- (-1.92,-0.02) -- cycle;
+   \fill[line width=0.8pt,color=yqqqqq,fill=yqqqqq,fill opacity=0.25] (-2.,3.36) -- (-1.92,-0.02) -- (-0.09636363636363864,-0.012727272727270448) -- cycle;
+   \fill[line width=0.8pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (-2.,3.36) -- (-0.09636363636363864,-0.012727272727270448) -- (0.36,1.74) -- cycle;
+   \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.25] (3.302333522346044,4.769590499061349) -- (1.5412448814076949,0.4035582434016924) -- (3.4490909090909065,-1.430909090909088) -- cycle;
+   \fill[line width=0.8pt,color=zzttqq,fill=zzttqq,fill opacity=0.25] (3.302333522346044,4.769590499061349) -- (3.4490909090909065,-1.430909090909088) -- (6.794492247843107,-1.4175675102959144) -- cycle;
+   \fill[line width=0.8pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (3.302333522346044,4.769590499061349) -- (6.794492247843107,-1.4175675102959144) -- (7.631676431319485,1.7977534174778855) -- cycle;
+   \draw [line width=0.8pt,color=qqccqq] (-2.,3.36)-- (-2.96,0.98);
+   \draw [line width=0.8pt,color=qqccqq] (-2.96,0.98)-- (-1.92,-0.02);
+   \draw [line width=0.8pt,color=qqccqq] (-1.92,-0.02)-- (-2.,3.36);
+   \draw [line width=0.8pt,color=yqqqqq] (-2.,3.36)-- (-1.92,-0.02);
+   \draw [line width=0.8pt,color=yqqqqq] (-1.92,-0.02)-- (-0.09636363636363864,-0.012727272727270448);
+   \draw [line width=0.8pt,color=yqqqqq] (-0.09636363636363864,-0.012727272727270448)-- (-2.,3.36);
+   \draw [line width=0.8pt,color=qqqqcc] (-2.,3.36)-- (-0.09636363636363864,-0.012727272727270448);
+   \draw [line width=0.8pt,color=qqqqcc] (-0.09636363636363864,-0.012727272727270448)-- (0.36,1.74);
+   \draw [line width=0.8pt,color=qqqqcc] (0.36,1.74)-- (-2.,3.36);
+   \draw [line width=0.8pt] (-2.,3.36)-- (-2.96,0.98);
+   \draw [line width=0.8pt] (-2.96,0.98)-- (-1.92,-0.02);
+   \draw [line width=0.8pt] (-1.92,-0.02)-- (-0.09636363636363864,-0.012727272727270448);
+   \draw [line width=0.8pt] (-0.09636363636363864,-0.012727272727270448)-- (0.36,1.74);
+   \draw [line width=0.8pt] (0.36,1.74)-- (-2.,3.36);
+   \draw [line width=0.8pt] (-2.,3.36)-- (-1.92,-0.02);
+   \draw [line width=0.8pt] (-2.,3.36)-- (-0.09636363636363864,-0.012727272727270448);
+   \draw [line width=0.8pt,color=qqzzqq] (3.302333522346044,4.769590499061349)-- (1.5412448814076949,0.4035582434016924);
+   \draw [line width=0.8pt,color=qqzzqq] (1.5412448814076949,0.4035582434016924)-- (3.4490909090909065,-1.430909090909088);
+   \draw [line width=0.8pt,color=qqzzqq] (3.4490909090909065,-1.430909090909088)-- (3.302333522346044,4.769590499061349);
+   \draw [line width=0.8pt,color=zzttqq] (3.302333522346044,4.769590499061349)-- (3.4490909090909065,-1.430909090909088);
+   \draw [line width=0.8pt,color=zzttqq] (3.4490909090909065,-1.430909090909088)-- (6.794492247843107,-1.4175675102959144);
+   \draw [line width=0.8pt,color=zzttqq] (6.794492247843107,-1.4175675102959144)-- (3.302333522346044,4.769590499061349);
+   \draw [line width=0.8pt,color=qqqqcc] (3.302333522346044,4.769590499061349)-- (6.794492247843107,-1.4175675102959144);
+   \draw [line width=0.8pt,color=qqqqcc] (6.794492247843107,-1.4175675102959144)-- (7.631676431319485,1.7977534174778855);
+   \draw [line width=0.8pt,color=qqqqcc] (7.631676431319485,1.7977534174778855)-- (3.302333522346044,4.769590499061349);
+   \draw [line width=0.8pt] (3.302333522346044,4.769590499061349)-- (1.5412448814076949,0.4035582434016924);
+   \draw [line width=0.8pt] (1.5412448814076949,0.4035582434016924)-- (3.4490909090909065,-1.430909090909088);
+   \draw [line width=0.8pt] (3.4490909090909065,-1.430909090909088)-- (6.794492247843107,-1.4175675102959144);
+   \draw [line width=0.8pt] (6.794492247843107,-1.4175675102959144)-- (7.631676431319485,1.7977534174778855);
+   \draw [line width=0.8pt] (7.631676431319485,1.7977534174778855)-- (3.302333522346044,4.769590499061349);
+   \draw [fill=black] (-2.,3.36) circle (1.0pt);
+   \draw[color=black] (-2.113818181818184,3.728809090909093) node {$A$};
+   \draw [fill=black] (-2.96,0.98) circle (1.0pt);
+   \draw[color=black] (-3.275418181818184,0.8732090909090957) node {$B$};
+   \draw [fill=black] (-1.92,-0.02) circle (1.0pt);
+   \draw[color=black] (-2.089618181818184,-0.3367909090909032) node {$C$};
+   \draw [fill=black] (-0.09636363636363864,-0.012727272727270448) circle (1.0pt);
+   \draw[color=black] (-0.03261818181818353,-0.3125909090909032) node {$D$};
+   \draw [fill=black] (0.36,1.74) circle (1.0pt);
+   \draw[color=black] (0.5723818181818165,1.9380090909090948) node {$E$};
+   \draw [fill=black] (3.4490909090909065,-1.430909090909088) circle (1.0pt);
+   \draw[color=black] (7,-1.8) node {$D'$};
+   \draw [fill=black] (6.794492247843107,-1.4175675102959144) circle (1.0pt);
+   \draw[color=black] (3.5,-1.8) node {$C'$};
+   \draw [fill=black] (1.5412448814076949,0.4035582434016924) circle (1.0pt);
+   \draw[color=black] (1.1773818181818165,0.3408090909090962) node {$B'$};
+   \draw [fill=black] (3.302333522346044,4.769590499061349) circle (1.0pt);
+   \draw[color=black] (3.282781818181817,5.156609090909092) node {$A'$};
+   \draw [fill=black] (7.631676431319485,1.7977534174778855) circle (1.0pt);
+   \draw[color=black] (7.953381818181818,1.9864090909090948) node {$E'$};
+   
+Na figura acima, se os pares de triângulos de mesma cor forem semelhantes, os dois pentágonos são semelhantes.
+
+Assim, dois polígonos são semelhantes quando possuem os mesmos ângulos internos e seus lados respectivamente proporcionais.
+
+Observe que as duas condições são necessárias para a semelhança de polígonos. As figuras a seguir mostram que, se polígonos (que não triângulos) cumprem apenas uma das condições, não são obrigatoriamente semelhantes.
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-1.0761350170657953,1.5849650381020084) -- (-1.2611000551678038,1.688830021036213) -- (-1.3649650381020084,1.5038649829342046) -- (-1.18,1.4) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-0.6790034563844325,2.725440402431259) -- (-0.7828684393186371,2.54047536432925) -- (-0.5979034012166288,2.4366103813950457) -- (-0.49403841828242406,2.621575419497054) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-3.1979034012166285,3.896610381395045) -- (-3.0129383631146203,3.79274539846084) -- (-2.9090733801804154,3.977710436562848) -- (-3.0940384182824237,4.081575419497053) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-3.5950349618979915,2.756135017065795) -- (-3.4911699789637867,2.9411000551678037) -- (-3.676135017065795,3.044965038102008) -- (-3.78,2.86) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (2.5727524559491006,2.673359421950642) -- (2.3793930339984586,2.5861118778997425) -- (2.466640578049358,2.3927524559491005) -- (2.66,2.48) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.726640578049359,4.0327524559491) -- (1.8138881221002583,3.8393930339984577) -- (2.0072475440509003,3.926640578049357) -- (1.92,4.12) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0.3672475440508995,3.1866405780493574) -- (0.5606069660015414,3.273888122100257) -- (0.473359421950642,3.467247544050899) -- (0.28,3.38) -- cycle; 
+   \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.213359421950642,1.8272475440508995) -- (1.1261118778997425,2.0206069660015413) -- (0.9327524559491006,1.933359421950642) -- (1.02,1.74) -- cycle; 
+   \draw [line width=0.8pt] (-3.78,2.86)-- (-1.18,1.4);
+   \draw [line width=0.8pt] (-3.78,2.86)-- (-3.0940384182824237,4.081575419497053);
+   \draw [line width=0.8pt] (-3.0940384182824237,4.081575419497053)-- (-0.49403841828242406,2.621575419497054);
+   \draw [line width=0.8pt] (-0.49403841828242406,2.621575419497054)-- (-1.18,1.4);
+   \draw [line width=0.8pt] (1.02,1.74)-- (2.66,2.48);
+   \draw [line width=0.8pt] (1.02,1.74)-- (0.28,3.38);
+   \draw [line width=0.8pt] (0.28,3.38)-- (1.92,4.12);
+   \draw [line width=0.8pt] (1.92,4.12)-- (2.66,2.48);
+   \draw [line width=0.8pt] (4.64,5.34)-- (3.5212270614475734,2.882695152822351);
+   \draw [line width=0.8pt] (4.64,5.34)-- (5.879354140066113,2.941250051484943);
+   \draw [line width=0.8pt] (3.5212270614475734,2.882695152822351)-- (4.760581201513687,0.4839452043072941);
+   \draw [line width=0.8pt] (4.760581201513687,0.4839452043072941)-- (5.879354140066113,2.941250051484943);
+   \draw (-0.76,2.04) node[anchor=north west] {1,4};
+   \draw (-3.96,3.76) node[anchor=north west] {1,4};
+   \draw (-2.9,1.96) node[anchor=north west] {3,2};
+   \draw (1.96,2.04) node[anchor=north west] {2};
+   \draw (0.38,2.54) node[anchor=north west] {2};
+   \draw (0.98,4.18) node[anchor=north west] {2};
+   \draw (2.44,3.56) node[anchor=north west] {2};
+   \draw (-1.8,3.74) node[anchor=north west] {3,2};
+   \draw (3.82,4.42) node[anchor=north west] {3};
+   \draw (5.42,4.44) node[anchor=north west] {3};
+   \draw (3.88,1.64) node[anchor=north west] {3};
+   \draw (5.56,1.72) node[anchor=north west] {3};
+   \end{scope}
+
+Na figura acima, os dois primeiros quadriláteros não são semelhantes, mas possuem os mesmos ângulos internos. Os dois últimos não são semelhantes, mas possuem lados proporcionais.
+   
+
+
+.. _ativ-atividade-inicial:
+
+Atividade: Resolvendo o problema inicial
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender a aplicação do conceito geral de figuras semelhantes.
+   
+   **Observações e recomendações**
+   
+   * Os alunos devem concluir que as medidas da planta são proporcionais às medidas reais.
+
+
+Veja novamente a planta da casa que mostramos na  :ref:`ativ-planta_de_uma_casa`.
+
+Reproduzimos as perguntas originais e acrescentamos outras. 
+
+Responda
+
+#. O desenho fornece informações suficientes para que se calcule a área do Quarto 2?
+#. Com a régua Fabio mediu a distância entre a porta de entrada e a porta da cozinha e encontrou 9cm. Na realidade qual é essa distância? 
+#. Fabio mediu também o comprimento da mesa da sala de jantar e encontrou 2,3cm, Na realidade qual é essa medida? 
+#. Na planta, qual é a medida em centímetros do comprimento de Quarto 1?
+#. Qual é a razão de semelhança entre a planta e a casa real?
+
+
+
+.. admonition:: Resposta 
+
+   #. Não, pois só temos duas medidas dadas. Se o quarto fosse um retângulo poderíamos calcular sua área. Tudo o que podemos dizer, sem medir nada mais no desenho, é que a área do quarto é um pouco menor do que `2,50 \times 2,77 \approx 6,9m^2`.
+   #. 6,75m
+   #. 1,72m
+   #. 3,2cm
+   #. 1/75
+
+
+
+.. _ativ-trapezios-semelhantes:
+
+Atividade: Trapézios semelhantes
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   * Reconhecer quadriláteros semelhantes
+   * Aplicar a proporcionalidade correta nas figuras.
+   * Demonstrar um fato a partir de propriedades conhecidas.
+   
+   **Observações e recomendações**
+   
+   * O aluno deve voltar e recordar a semelhança de polígonos antes de atacar o problema.
+   * No item b) o aluno deve escrever claramente qual é a hipótese e qual é a tese da proposição a ser demonstrada.
+   
+
+Na figura a seguir, `ABCD` é um trapézio com bases  `AB=a` e `CD=b`. O segmento `MN` é paralelo às bases e divide o trapézio em dois outros trapézios semelhantes.
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \draw [line width=0.8pt] (0.,0.)-- (6.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (0.7,3.02);
+   \draw [line width=0.8pt] (0.7,3.02)-- (3.54,3.02);
+   \draw [line width=0.8pt] (3.54,3.02)-- (6.,0.);
+   \draw [line width=0.8pt] (0.4146938475705566,1.7891077423758293)-- (4.542647335680616,1.7891077423758295);
+   \draw (2.794,-.2) node[anchor=north west] {$ a $};
+   \draw (2.046,3.888) node[anchor=north west] {$ b $};
+   \draw (2.442,2.084) node[anchor=north west] {$ x $};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.176,-0.347) node {$A$};
+   \draw [fill=black] (6.,0.) circle (1.0pt);
+   \draw[color=black] (6.05,-0.391) node {$B$};
+   \draw [fill=black] (3.54,3.02) circle (1.0pt);
+   \draw[color=black] (3.564,3.393) node {$C$};
+   \draw [fill=black] (0.7,3.02) circle (1.0pt);
+   \draw[color=black] (0.44,3.327) node {$D$};
+   \draw [fill=black] (4.542647335680616,1.7891077423758295) circle (1.0pt);
+   \draw[color=black] (4.752,1.963) node {$N$};
+   \draw [fill=black] (0.4146938475705566,1.7891077423758293) circle (1.0pt);
+   \draw[color=black] (-0.022,1.831) node {$M$};
+   \end{scope}
+   
+#. Determine a medida do segmento `MN` em função das bases do trapézio.
+#. Prove que as retas AN e MC são paralelas.
+
+
+.. admonition:: Resposta 
+
+  #. Como os trapézios já são semelhantes, pelo próprio enunciado, basta fazer a proporção `\dfrac{b}{x}=\dfrac{x}{a}` para encontrar `x=\sqrt{ab}`
+   
+  #. Basta usar o fato de que os trapézios podem ser divididos em triângulos semelhantes. A semelhança garante igualdade de ângulos e, a partir disso, é possível provar facilmente que `\angle CMN \cong \angle MNA`. Esses ângulos são alternos internos, se consideramos as retas `NA` e `CM` cortadas pela trasnversal `MN`. A igualdade dos  ângulos garante o paralelismo.
+  
+  
+  
+

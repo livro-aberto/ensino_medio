@@ -1,3 +1,215 @@
 ***************
 Para saber mais
 ***************
+
+
+.. _ativ-sequencia-de-quadrados:
+
+Atividade: Uma sequência de quadrados
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** 
+   
+   Levar o estudante a 
+   
+   * Aplicar a semelhança de triângulos em uma situação diferente.
+   * Fazer a conexão da semelhança com um tema de álgebra.
+   
+   **Observações e recomendações**
+   
+   * Procurar sempre triângulos semelhantes.
+   * Perguntar se os alunos já conhecem as progressões geométricas.
+
+
+A figura a seguir mostra uma sequência de quadrados `(Q_1, Q_2, Q_3, Q_4, \cdots)`. O lado de `Q_1` mede 9 e o de `Q_2`, mede 6.
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \draw [line width=0.8pt] (-4.,0.)-- (4.418181818181819,0.);
+   \draw [line width=0.8pt] (-3.545454545454546,0.)-- (-3.545454545454546,2.545454545454546);
+   \draw [line width=0.8pt] (-3.545454545454546,2.545454545454546)-- (-1.,2.545454545454546);
+   \draw [line width=0.8pt] (-1.,2.545454545454546)-- (-1.,0.);
+   \draw [line width=0.8pt] (-1.,1.7318389373183896)-- (0.7318389373183896,1.7318389373183896);
+   \draw [line width=0.8pt] (0.7318389373183896,1.7318389373183896)-- (0.7318389373183896,0.);
+   \draw [line width=0.8pt] (0.7318389373183896,1.1782831126047495)-- (1.910122049923139,1.178283112604749);
+   \draw [line width=0.8pt] (1.910122049923139,1.178283112604749)-- (1.9101220499231388,0.);
+   \draw [line width=0.8pt] (1.9101220499231393,0.801662939626062)-- (2.7117849895492014,0.801662939626062);
+   \draw [line width=0.8pt] (2.7117849895492014,0.801662939626062)-- (2.7117849895492014,0.);
+   \draw [line width=0.8pt] (2.711784989549202,0.5454236438551744)-- (3.2572086334043755,0.5454236438551745);
+   \draw [line width=0.8pt] (3.2572086334043755,0.5454236438551745)-- (3.257208633404376,0.);
+   \draw [line width=0.8pt] (3.257208633404376,0.3710873193352558)-- (3.6282959527396312,0.3710873193352557);
+   \draw [line width=0.8pt] (3.6282959527396312,0.3710873193352557)-- (3.6282959527396303,0.);
+   \draw [line width=0.8pt] (3.628295952739631,0.2524749341596035)-- (3.8807708868992346,0.2524749341596035);
+   \draw [line width=0.8pt] (3.8807708868992346,0.2524749341596035)-- (3.8807708868992337,0.);
+   \draw [line width=0.8pt] (3.8807708868992346,0.1717751835149815)-- (4.052546070414215,0.17177518351498153);
+   \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.);
+   \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.11686987371567242);
+   \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.11686987371567242);
+   \draw [line width=0.8pt] (4.169415944129888,0.11686987371567242)-- (4.169415944129888,0.);
+   \draw [line width=0.8pt] (4.169415944129888,0.11686987371567242)-- (4.052546070414215,0.11686987371567242);
+   \draw [line width=0.8pt] (-1.7024667464495433,2.875472480028157)-- (4.418181818181819,0.);
+   \draw (-2.2478161652759083,-0.10987863797541066) node[anchor=north west] {9};
+   \draw (-2.4,1.5) node[anchor=north west] {$Q_1$};
+   \draw (-0.17293773490948447,-0.10987863797541066) node[anchor=north west] {6};
+   \draw (-0.3,1.1) node[anchor=north west] {$Q_2$};
+   \draw (1.2937866727633323,-0.10987863797541066) node[anchor=north west] {$ x $};
+   \draw (1.13,.8) node[anchor=north west] {$Q_3$};
+   \draw (2.2954521219057438,-0.10987863797541066) node[anchor=north west] {$ y $};
+   \draw (2.1,.6) node[anchor=north west] {$Q_4$};
+   \end{scope}
+
+#. Dois quadrados são sempre semelhantes? Justifique sua resposta.
+#. Qual o fator de redução na semelhança entre os quadrados `Q_1` e `Q_2`?
+#. Encontre as medidas `x` e `y` dos lados dos quadrados `Q_3` e `Q_4`, respectivamente.
+#. Qual o fator de redução na semelhança entre os quadrados `Q_2` e `Q_3`?
+
+
+
+.. admonition:: Resposta 
+
+   #. Sim, pois a razão entre os lados se mantem, dado que são todos iguais e os ângulos correspondentes são congruentes, dados que são todos retos. Alternativamente, pode-se dividir quadrados em triângulos retângulos isósceles e mostrar a semelhança entre os triângulos correspondentes. O importante é justificar a afirmação aplicando as definições e teoremas demonstrados anteriormente.
+   #. O Fator de redução `\alpha` é o número tal que `9\cdot \alpha = 6`, portanto `\alpha = \dfrac{2}{3}`
+   #. A semelhança entre os triângulos ressaltados na figura a seguir, nos fornece a equação `\dfrac{3}{6-x}=\dfrac{6}{x}` que resulta em `x=4`. Usando um procedimento análogo, encontramos `y=\dfrac{8}{3}`.
+      
+      .. tikz::
+      
+         \definecolor{qqffqq}{rgb}{0.,1.,0.}
+         \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+         \fill[line width=2.pt,color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (-1.,2.545454545454546) -- (-1.,1.7318389373183896) -- (0.7318389373183896,1.7318389373183896) -- cycle;
+         \fill[line width=2.pt,color=qqffqq,fill=qqffqq,fill opacity=0.10000000149011612] (0.7318389373183896,1.7318389373183896) -- (0.7318389373183896,1.1782831126047495) -- (1.910122049923139,1.178283112604749) -- cycle;
+         \draw [line width=0.8pt] (-4.,0.)-- (4.418181818181819,0.);
+         \draw [line width=0.8pt] (-3.545454545454546,0.)-- (-3.545454545454546,2.545454545454546);
+         \draw [line width=0.8pt] (-3.545454545454546,2.545454545454546)-- (-1.,2.545454545454546);
+         \draw [line width=0.8pt] (-1.,2.545454545454546)-- (-1.,0.);
+         \draw [line width=0.8pt] (-1.,1.7318389373183896)-- (0.7318389373183896,1.7318389373183896);
+         \draw [line width=0.8pt] (0.7318389373183896,1.7318389373183896)-- (0.7318389373183896,0.);
+         \draw [line width=0.8pt] (0.7318389373183896,1.1782831126047495)-- (1.910122049923139,1.178283112604749);
+         \draw [line width=0.8pt] (1.910122049923139,1.178283112604749)-- (1.9101220499231388,0.);
+         \draw [line width=0.8pt] (1.9101220499231393,0.801662939626062)-- (2.7117849895492014,0.801662939626062);
+         \draw [line width=0.8pt] (2.7117849895492014,0.801662939626062)-- (2.7117849895492014,0.);
+         \draw [line width=0.8pt] (2.711784989549202,0.5454236438551744)-- (3.2572086334043755,0.5454236438551745);
+         \draw [line width=0.8pt] (3.2572086334043755,0.5454236438551745)-- (3.257208633404376,0.);
+         \draw [line width=0.8pt] (3.257208633404376,0.3710873193352558)-- (3.6282959527396312,0.3710873193352557);
+         \draw [line width=0.8pt] (3.6282959527396312,0.3710873193352557)-- (3.6282959527396303,0.);
+         \draw [line width=0.8pt] (3.628295952739631,0.2524749341596035)-- (3.8807708868992346,0.2524749341596035);
+         \draw [line width=0.8pt] (3.8807708868992346,0.2524749341596035)-- (3.8807708868992337,0.);
+         \draw [line width=0.8pt] (3.8807708868992346,0.1717751835149815)-- (4.052546070414215,0.17177518351498153);
+         \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.);
+         \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.11686987371567242);
+         \draw [line width=0.8pt] (4.052546070414215,0.17177518351498153)-- (4.052546070414215,0.11686987371567242);
+         ]\draw [line width=0.8pt] (4.169415944129888,0.11686987371567242)-- (4.169415944129888,0.);
+         \draw [line width=0.8pt] (4.169415944129888,0.11686987371567242)-- (4.052546070414215,0.11686987371567242);
+         \draw [line width=0.8pt] (-1.7024667464495435,2.875472480028157)-- (4.418181818181819,0.);
+         \draw (-2.2478161652759083,-0.1) node[anchor=north west] {9};
+         \draw (-0.17293773490948447,-0.1) node[anchor=north west] {6};
+         \draw (1.2937866727633323, -.1) node[anchor=north west] {$ x $};
+         \draw (2.2954521219057438,-.1) node[anchor=north west] {$ y $};
+         \draw [line width=2.pt,color=ffqqqq] (-1.,2.545454545454546)-- (-1.,1.7318389373183896);
+         \draw [line width=2.pt,color=ffqqqq] (-1.,1.7318389373183896)-- (0.7318389373183896,1.7318389373183896);
+         \draw [line width=2.pt,color=ffqqqq] (0.7318389373183896,1.7318389373183896)-- (-1.,2.545454545454546);
+         \draw [line width=2.pt,color=qqffqq] (0.7318389373183896,1.7318389373183896)-- (0.7318389373183896,1.1782831126047495);
+         \draw [line width=2.pt,color=qqffqq] (0.7318389373183896,1.1782831126047495)-- (1.910122049923139,1.178283112604749);
+         \draw [line width=2.pt,color=qqffqq] (1.910122049923139,1.178283112604749)-- (0.7318389373183896,1.7318389373183896);
+         \draw (-1.5,2.5731538150846243) node[anchor=north west] {$3$};
+         \draw (-0.6,2.2) node[anchor=north west] {$6$};
+         \draw (-0.4,1.7) node[anchor=north west] {$6-x$};
+         \draw (.9,1.6) node[anchor=north west] {$ x $};
+                
+   #. Aqui, esperamos que o aluno perceba que o fator de redução em quadrados consecutivos é sempre o mesmo igual encontrado no item b).
+         
+
+.. _sub-semelhanca-PG:
+
+Progressões Geométricas
+---------      
+
+
+Inicialmente, vamos conhecer um assunto de álgebra que será desenvolvido mais adiante, no capítulo XX. Trata-se do conceito de progressão geométrica.
+
+
+.. admonition:: Progressão geométrica (PG) 
+
+   Uma progressão geométrica (PG) é uma sequência de números onde cada um deles é igual ao anterior multiplicado por uma constante.
+   
+   Essa constante é a razão da progressão geométrica.
+   
+
+.. admonition:: Exemplos 
+
+   #. `5, 10, 20, 40, 80, 160, 320, 640, \cdots`
+      
+      Esses números formam uma PG de razão 2. De fato, cada um deles é o dobro do anterior.
+   #. `1, \frac{1}{10}, \frac{1}{100}, \frac{1}{1000}, \frac{1}{10000}, \cdots`
+      
+      Esses números formam um PG de razão `\dfrac{1}{10}`. De fato, cada um deles é a décima parte do anterior
+      
+
+A partir do conceito, concluímos que em uma PG, a razão entre qualquer termo e o anterior é constante. Essa constante é, exatamente, a razão da progressão geométrica.
+
+Assim, se três elementos consecutivos de uma PG são `a, b, c`,  então, `\dfrac{b}{a}=\dfrac{c}{b}`, ou seja, `b ^2=ac`. Essa relação caracteriza os elementos consecutivos de qualquer progressão geométrica.
+
+
+.. _sub-relacionando-com-os-quadrados:
+
+Relacionando com os quadrados
+---------
+
+Na atividade anterior, o lado do quadrado `Q_3` mede `x=4`.
+Assim, as medidas dos lados dos três primeiros quadrados são `9`, `6` e `4`, e isso sugere uma progressão geométrica porque `6^2=9\cdot 4`.
+
+Vamos, a seguir, demonstrar que os lados da sequência de quadrados apresentada na atividade anterior formam, realmente uma progressão geométrica.
+
+
+Para isso, suponhamos que os lados de três quadrados consecutivos dessa sequência sejam `a`, `b`, `c`. Observe a figura a seguir e a semelhança entre os triângulos assinalados.
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \clip(-4.125567817343261,-1.2007694111985752) rectangle (5.580732920826904,3.2790616987261383);
+   \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.25] (-1.,2.545454545454546) -- (-1.,1.7318389373183896) -- (0.7318389373183896,1.7318389373183896) -- cycle;
+   \fill[line width=0.8pt,color=ccqqqq,fill=ccqqqq,fill opacity=0.25] (0.7318389373183896,1.7318389373183896) -- (0.7318389373183896,1.1782831126047495) -- (1.910122049923139,1.178283112604749) -- cycle;
+   \draw [line width=0.8pt] (-4.,0.)-- (4.418181818181819,0.);
+   \draw [line width=0.8pt] (-1.,2.545454545454546)-- (-1.,0.);
+   \draw [line width=0.8pt] (0.7318389373183896,1.7318389373183896)-- (0.7318389373183896,0.);
+   \draw [line width=0.8pt] (0.7318389373183896,1.1782831126047495)-- (1.910122049923139,1.178283112604749);
+   \draw [line width=0.8pt] (1.910122049923139,1.178283112604749)-- (1.9101220499231388,0.);
+   \draw [line width=0.8pt] (-1.7024667464495435,2.875472480028157)-- (4.418181818181819,0.);
+   \draw [line width=0.8pt] (-3.545454545454546,2.545454545454546)-- (-1.,2.545454545454546);
+   \draw [line width=0.8pt] (-3.545454545454546,2.545454545454546)-- (-3.545454545454546,0.);
+   \draw [line width=0.8pt] (-1.,1.7318389373183896)-- (0.7318389373183896,1.7318389373183896);
+   \draw [line width=0.8pt,color=qqzzqq] (-1.,2.545454545454546)-- (-1.,1.7318389373183896);
+   \draw [line width=0.8pt,color=qqzzqq] (-1.,1.7318389373183896)-- (0.7318389373183896,1.7318389373183896);
+   \draw [line width=0.8pt,color=qqzzqq] (0.7318389373183896,1.7318389373183896)-- (-1.,2.545454545454546);
+   \draw [line width=0.8pt,color=ccqqqq] (0.7318389373183896,1.7318389373183896)-- (0.7318389373183896,1.1782831126047495);
+   \draw [line width=0.8pt,color=ccqqqq] (0.7318389373183896,1.1782831126047495)-- (1.910122049923139,1.178283112604749);
+   \draw [line width=0.8pt,color=ccqqqq] (1.910122049923139,1.178283112604749)-- (0.7318389373183896,1.7318389373183896);
+   \draw (-2.345122119809089,0.0) node[anchor=north west] {$ a $};
+   \draw (-0.14349571963242416,0.0) node[anchor=north west] {$b$};
+   \draw (-0.2966523387751487,1.7) node[anchor=north west] {$b$};
+   \draw (-0.9284233927388872,1.1) node[anchor=north west] {$b$};
+   \draw (1.2923475848306178,0.0) node[anchor=north west] {$c$};
+   \draw (1.2157692752592557,1.2) node[anchor=north west] {$c$};
+   \draw (0.7945885726167633,.8) node[anchor=north west] {$c$};
+   \draw [-latex,line width=0.8pt] (0.5417061094186122,2.7996640766481438) -- (-1.,2.0682541994352994);
+   \draw [-latex,line width=0.8pt] (2.1115614556315405,2.1396112606267965) -- (0.7379380276952281,1.390362118116078);
+   \draw (0.4,3.2) node[anchor=north west] {$ a-b $};
+   \draw (2.1,2.4) node[anchor=north west] {$ b-c $};
+   \end{scope}
+   
+A semelhança dos triângulos coloridos fornece `\dfrac{a-b}{b-c}=\dfrac{b}{c}`   o que resulta imediatamente em `b^2=ac` . 
+
+De fato, os lados da sequência de quadrados formam uma progressão geométrica. 
+
+   
+   
+
+
+
