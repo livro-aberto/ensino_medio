@@ -1,3 +1,154 @@
 **********
 Exercícios
 **********
+
+#. Determine as medidas `x` e `y` nas figuras abaixo.
+
+   .. tikz:: 
+      \clip(-4.3,-1.32) rectangle (6.,3.6);
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (3.58,0.21213203435596437) -- (3.367867965644036,0.2121320343559644) -- (3.367867965644036,0.) -- (3.58,0.) -- cycle; 
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (5.,0.21213203435596437) -- (4.787867965644035,0.2121320343559644) -- (4.787867965644035,0.) -- (5.,0.) -- cycle; 
+      \draw [line width=0.8pt] (-4.,0.)-- (0.,0.);
+      \draw [line width=0.8pt] (-2.035,0.09) -- (-2.035,-0.09);
+      \draw [line width=0.8pt] (-1.965,0.09) -- (-1.965,-0.09);
+      \draw [line width=0.8pt] (-2.4641436807847166,3.1508722475607844)-- (-4.,0.);
+      \draw [line width=0.8pt] (-2.4641436807847166,3.1508722475607844)-- (0.,0.);
+      \draw [line width=0.8pt] (1.,0.)-- (5.,0.);
+      \draw [line width=0.8pt] (1.,0.)-- (5.,2.28);
+      \draw [line width=0.8pt] (-3.4004631175077957,1.2299745105056301)-- (-0.9619031428313264,1.2299745105056301);
+      \draw [line width=0.8pt] (-2.216183130169561,1.3199745105056302) -- (-2.216183130169561,1.1399745105056303);
+      \draw [line width=0.8pt] (-2.1461831301695606,1.3199745105056302) -- (-2.1461831301695606,1.1399745105056303);
+      \draw [line width=0.8pt] (3.58,1.4706)-- (3.58,0.);
+      \draw [line width=0.8pt] (5.,2.28)-- (5.,0.);
+      \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (1.,-0.32)-- (5.,-0.32);
+      \draw (-1.4,2.5) node[anchor=north west] {$ a $};
+      \draw (-2.26,1.2) node[anchor=north west] {$ a $};
+      \draw (-0.36,1.24) node[anchor=north west] {$ x $};
+      \draw (-2.3,0.) node[anchor=north west] {$ a + 6$};
+      \draw (3.1,0.86) node[anchor=north west] {7};
+      \draw (5.04,1.22) node[anchor=north west] {10};
+      \draw (2.94,-0.46) node[anchor=north west] {18};
+      \draw (4,0.5) node[anchor=north west] {$ y $};
+      \draw [fill=black] (-4.,0.) circle (1.0pt);
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw [fill=black] (-2.4641436807847166,3.1508722475607844) circle (1.0pt);
+      \draw [fill=black] (-3.4004631175077957,1.2299745105056301) circle (1.0pt);
+      \draw [fill=black] (-0.9619031428313264,1.2299745105056301) circle (1.0pt);
+      \draw [fill=black] (1.,0.) circle (1.0pt);
+      \draw [fill=black] (5.,0.) circle (1.0pt);
+      \draw [fill=black] (3.58,0.) circle (1.0pt);
+      \draw [fill=black] (5.,2.28) circle (1.0pt);
+      \draw [fill=black] (3.58,1.4706) circle (1.0pt);
+      \draw [color=black] (1.,-0.32)-- ++(-1.0pt,0 pt) -- ++(2.0pt,0 pt) ++(-1.0pt,-1.0pt) -- ++(0 pt,2.0pt);
+      \draw [color=black] (5.,-0.32)-- ++(-1.0pt,0 pt) -- ++(2.0pt,0 pt) ++(-1.0pt,-1.0pt) -- ++(0 pt,2.0pt);
+      
+#. Determine as medidas `x` e `y` na figura a seguir.
+
+   .. tikz:: 
+      
+      \clip(-2.3498338067109477,-1.4853536647927779) rectangle (5.844102600882048,2.450763593358133);
+      \draw [shift={(4.,0.)},line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0,0) -- (119.67517160754605:0.3784728132837411) arc (119.67517160754605:180.:0.3784728132837411) -- cycle;
+      \draw [shift={(1.8504464281507047,1.5626472567954692)},line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0,0) -- (-157.91094700933436:0.3784728132837411) arc (-157.91094700933436:-97.58611861688043:0.3784728132837411) -- cycle;
+      \draw [line width=0.8pt] (-2.,0.)-- (4.,0.);
+      \draw [line width=0.8pt] (4.,0.)-- (2.873091016604679,1.9776725767534562);
+      \draw [line width=0.8pt] (2.873091016604679,1.9776725767534562)-- (-2.,0.);
+      \draw [line width=0.8pt] (1.8504464281507047,1.5626472567954692)-- (1.6423300876403646,0.);
+      \draw (-0.24930969298618452,1.4) node[anchor=north west] {10};
+      \draw (-0.04114964568012691,-0.1417751776354958) node[anchor=north west] {8};
+      \draw (2.87309101660468,-0.1417751776354958) node[anchor=north west] {6};
+      \draw (2.1729163120297583,2.393992671365572) node[anchor=north west] {$ x $};
+      \draw (1.7755198580818303,0.8422541369022319) node[anchor=north west] {4,5};
+      \draw (3.5354184398512265,1.5613524821413407) node[anchor=north west] {$ y $};
+      \draw (3.1,0.6) node[anchor=north west] {$\alpha$};
+      \draw (1.1,1.2) node[anchor=north west] {$\alpha$};
+      \draw [fill=black] (-2.,0.) circle (1.0pt);
+      \draw [fill=black] (4.,0.) circle (1.0pt);
+      \draw [fill=black] (2.873091016604679,1.9776725767534562) circle (1.0pt);
+      \draw [fill=black] (1.8504464281507047,1.5626472567954692) circle (1.0pt);
+      \draw [fill=black] (1.6423300876403646,0.) circle (1.0pt);
+      
+#. Um turista em São Paulo visitou o parque do Ibirapuera e, ao sair, quis saber a que distância estava a estação do Metrô mais próxima. Consultando seu mapa o turista, que se localizou no ponto A percebeu que a estação Paraíso estava no ponto B, como se vê na figura a seguir.
+
+   .. figure:: _resources/FigSem-21.png
+
+   A escala do mapa que o turista consultou era de 1/300 e, a distância AB nesse mapa era de 4,8cm.
+   
+   Que distância o turista teria que caminhar até o Metrô?
+   
+#. Determine o lado do quadrado inscrito em um triângulo de base `a` e altura `h`, como na figura abaixo.
+
+   .. tikz:: 
+
+      \draw [line width=0.8pt] (0.,0.)-- (0.,2.);
+      \draw [line width=0.8pt] (0.,2.)-- (2.,2.);
+      \draw [line width=0.8pt] (2.,2.)-- (2.,0.);
+      \draw [line width=0.8pt] (-0.9,0.)-- (3.52,0.);
+      \draw [line width=0.8pt] (3.52,0.)-- (0.7438016528925621,3.6528925619834713);
+      \draw [line width=0.8pt] (0.7438016528925621,3.6528925619834713)-- (-0.9,0.);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-2.434545454545454,3.6528925619834713)-- (0.4927272727272726,3.6528925619834713);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-2.270909090909091,0.)-- (-1.18,0.);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-0.8890909090909092,-0.4327272727272719)-- (3.565454545454545,-0.4327272727272719);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-1.670909090909091,0.)-- (-1.670909090909091,3.6528925619834713);
+      \draw (1.1,-0.5) node[anchor=north west] {$ a $};
+      \draw (-2.1,2.1) node[anchor=north west] {$ h $};
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw [fill=black] (2.,0.) circle (1.0pt);
+      \draw [fill=black] (0.,2.) circle (1.0pt);
+      \draw [fill=black] (2.,2.) circle (1.0pt);
+      \draw [fill=black] (-0.9,0.) circle (1.0pt);
+      \draw [fill=black] (3.52,0.) circle (1.0pt);
+      \draw [fill=black] (0.7438016528925621,3.6528925619834713) circle (1.0pt);
+      \draw [color=black] (-0.8890909090909092,-0.4327272727272719)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+      \draw [color=black] (-1.670909090909091,0.)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+      \draw [color=black] (-1.670909090909091,3.6528925619834713)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+      \draw [color=black] (3.565454545454545,-0.4327272727272719)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+
+
+
+
+
+#. Carlos e sua esposa Joana estavam visitando Buenos Aires e ao passar pelo enorme obelisco que fica na Praça da República, ele teve a curiosidade de saber sua altura.
+
+   .. figure:: _resources/FigSem-23.png
+      
+   Joana que é engenheira e tem sempre uma pequena trena na bolsa disse o seguinte: Caminhe sobre a sombra do obelisco e conte seus passos. Procure dar passos iguais. Carlos fez o que ela pediu e encontrou 44 passos para o comprimento da sombra.
+   
+   Em seguida, ela pediu a Carlos que ficasse em pé e mediu a sombra de Carlos no chão, encontrando 87 centímetros. Pediu ainda que Carlos desse um passo do tamanho que ele usou para caminhar sobre a sombra e encontrou 70cm para o comprimento do passo. Como Joana sabia que Carlos possui 1,80m de altura, ela pode determinar a altura do obelisco.
+   
+   Com os dados dessa história, determine um valor aproximado para a altura do obelisco.
+
+#. A figura abaixo mostra uma sequência de três triângulos equiláteros sendo que os dois primeiros possuem lados medindo 8 e 6.
+
+   .. tikz::
+      
+      \begin{scope}[scale=.5]
+      \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+      \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.15000000596046448] (0.,0.) -- (8.,0.) -- (4.,6.9282032302755105) -- cycle;
+      \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.15000000596046448] (8.,0.) -- (14.,0.) -- (11.,5.196152422706633) -- cycle;
+      \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.15000000596046448] (14.,0.) -- (18.5,0.) -- (16.25,3.897114317029974) -- cycle;
+      \draw [line width=0.8pt,color=qqzzqq] (0.,0.)-- (8.,0.);
+      \draw [line width=0.8pt,color=qqzzqq] (8.,0.)-- (4.,6.9282032302755105);
+      \draw [line width=0.8pt,color=qqzzqq] (4.,6.9282032302755105)-- (0.,0.);
+      \draw [line width=0.8pt] (4.,6.9282032302755105)-- (32.,0.);
+      \draw [line width=0.8pt,color=qqzzqq] (8.,0.)-- (14.,0.);
+      \draw [line width=0.8pt,color=qqzzqq] (14.,0.)-- (11.,5.196152422706633);
+      \draw [line width=0.8pt,color=qqzzqq] (11.,5.196152422706633)-- (8.,0.);
+      \draw [line width=0.8pt,color=qqzzqq] (14.,0.)-- (18.5,0.);
+      \draw [line width=0.8pt,color=qqzzqq] (18.5,0.)-- (16.25,3.897114317029974);
+      \draw [line width=0.8pt,color=qqzzqq] (16.25,3.897114317029974)-- (14.,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (32.,0.);
+      \draw (3.9951310905372663,-0.5041937742192144) node[anchor=north west] {8};
+      \draw (11.082050730853824,-0.5041937742192144) node[anchor=north west] {6};
+      \draw (16.248216449963092,-0.5041937742192144) node[anchor=north west] {$ x $};
+      \draw (-0.6411714778941265,-0.3717279865497462) node[anchor=north west] {$A$};
+      \draw (32.144110970299295,-0.10679641121080977) node[anchor=north west] {$B$};
+      \end{scope}
+      
+   #. Calcule o lado do terceiro triângulo.
+   #. Quanto mede o segmento AB?
+
+
+#. Seja ABCD um retângulo e `M` um ponto do lado `CD`. São dadas as medidas: `BC = 5`, `CM = 4` e `MD = 2`. O ponto `P` é o ponto de interseção dos segmentos `AC` e `MB`. Calcule as distâncias de `P` aos quatro lados do retângulo.
+      
+      
+      
