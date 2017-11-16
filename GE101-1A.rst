@@ -4,6 +4,7 @@ Operações com coordenadas
 
 Na produção de uma animação gráfica (para jogos de vídeo-game ou desenhos animados) é necessário informar ao computador onde estará cada ponto na tela. 
 Então é definido um ponto da tela como a origem do sistema de coordenadas e as direções vertical e horizontal como eixos coordenados.
+Inseri esta linha para apresentar a revisão no Simpósio.
 Para se produzir o efeito de aproximação e afastamento de um objeto é necessário realizar ampliações e reduções, respectivamente, deste objeto.
 A ferramenta matemática adequada para efetuar ampliações e reduções é a *homotetia*.
 
@@ -12,14 +13,14 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
    Homotetia
       Fixados um ponto `O` no plano e um número real `r>0`. A *Homotetia de centro O  e razão r* é a correspondência que a cada ponto `P` do plano associa o ponto `P'` tal que `\overrightarrow{OP'}=r\overrightarrow{OP}`.
       
-Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
+Por exemplo, na figura abaixo estão ilustradas incluí apenas um trecho desnecessário numa frase existente a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
 .. figure:: _resources/homotetia-poligonos.png
    :width: 350pt
    
    Homotetias de razão 2 e `\frac{1}{3}`
 
-Conforme visto na seção :ref:`cap-vetores`, o vetor `r\vec{v}` tem comprimento `r|\vec{v}|`. Deste modo, se `r>1`, então a homotetia é uma ampliação e se `0<r<1`, então a homotetia é uma redução. Que tipo de correspondência é a homotetia se `r=1`? 
+Conforme visto na seção :ref:`cap-vetores`, o vetor `r\vec{v}` tem comprimento `r|\vec{v}|`. Deste modo, se `r>1`, então a  é uma ampliação e se `0<r<1`, então a homotetia é uma redução. Que tipo de correspondência é a homotetia se `r=1`? 
 
 `Neste link <https://www.geogebra.org/m/RtM2rrQH>`_ há uma animação feita no GeoGebra. Ela utiliza sucessivas homotetias que diferem umas das outras pela razão de homotetia `r` (varia de 0.1 a 1.2) da figura de um fusca. No link você poderá manipular esta razão de homotetia. A imagem da qual toma-se a homotetia está oculta na figura. Você saberia dizer quando que o fusca possui o tamanho da figura original? 
 
