@@ -24,7 +24,6 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       BNCC (EM13MT01) Estabelecer relações entre vistas ortogonais e representações em perspectiva de figuras geométricas espaciais e de objetos do mundo físico e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho.
       
 
-
    .. admonition:: Objetivo geral
 
       [...]
@@ -38,6 +37,8 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       [...]      
       
    .. admonition:: Pré-requisitos
+
+      BNCC (EF06MA26) Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.     
 
       BNCC (EF09MA16) Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.
 
