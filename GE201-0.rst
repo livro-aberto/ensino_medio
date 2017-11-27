@@ -1,10 +1,10 @@
-
 .. admonition:: Para o professor
 
-   Durante muito tempo, a Geometria plana ficou totalmente relegada ao ensino fundamental e, consequentemente, os aspectos mais refinados da sua construção foram deixados de lado, dada a falta de maturidade dos alunos desse segmento. Com a inserção de tópicos de Geometria plana pela base nacional cumum curricular no ensino médio, devemos repensar nossa prática de ensino de geometria para nos adequar a  essa nova realidade. Se no ensino fundamental o mero reconhecimento das figuras geométricas e a memorização de expressões algébricas que sintetizavam propriedades geométricas era suficiente, nesse novo momento, devemos dar protagonismo às justificativas das propriedades para que possamos contribuir de fato com o amadurecimento dos nossos alunos.
+   Durante muito tempo, a Geometria plana ficou totalmente relegada ao ensino fundamental e, consequentemente, os aspectos mais refinados da sua construção foram deixados de lado. Com a inserção de tópicos de Geometria plana pela Base Nacional Comum Curricular (BNCC) no Ensino Médio, devemos modificar nossa prática de ensino de geometria para nos adequar a  essa nova realidade. 
    
-   Por isso, embora iniciemos o capítulo com uma situação concreta convidando o aluno a se familiarizar com o modelo geométrico dessa situação, temos como objetivo maior introduzir termos mais abstratos utilizados no trabalho matemático acadêmico. Essa é a recomendação da habilidade descrita na BNCC:
-   
+  Embora iniciemos o capítulo com uma situação concreta convidando o aluno a se familiarizar com o modelo geométrico dessa situação, temos como objetivo maior introduzir um pouco mais de rigor nos assuntos abordados neste capítulo.
+
+
    .. admonition:: EM12MT01 
 
       Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais.
@@ -12,16 +12,17 @@
    
    Observamos que, no contexto do Ensino Médio, "Compreender o teorema de Tales" vai além da capacidade de reconhecer uma figura em que o teorema de Tales é aplicável. Esperamos que o aluno seja capaz de justificar outros teoremas a partir do teorema de Tales, como na atividadeda seção ":ref:`sub-divisao-de-segmentos`".
    
-   Algumas propriedades geométricas precisam estar garantidas para que se possa fazer uma justificativa razoavelmente aceitável para o teorema de Tales e, por isso, neste capítulo você encontrará rápidas visitas aos temas "Retas Paralelas" e "Congruência de Triângulos".
+   Algumas propriedades geométricas precisam estar compreendidas para que se possa demonstrar o teorema de Tales e, por isso, neste capítulo foram incluídas rápidas visitas aos temas "Retas Paralelas" e "Congruência de Triângulos".
    
-   A demonstração apresentada do teorema de Tales não é feita para o caso em que os segmentos determinados em uma transversão são incomensuráveis. No entanto, é muito importante que a validade nesse caso seja garantida pelo professor.
+   A demonstração inicial do teorema de Tales será feita no caso dos segmentos comensuráveis e, no final do capítulo aparecerá a demonstração geral.
    
    Algumas recomendações:
    
    * Alunos conhecem em níveis diferentes o Teorema de Tales. Procure explorar com perguntas para verificar o nível de profundidade da familiaridade de seus alunos.
-   * Uma das atividades iniciais, " :ref:`ativ-nas-ruas`", pede que os alunos façam uma estimativa. Estimule estimativas sem cálculo para comparar com o resultado que posteriormente será encontrado.
-   * A seção :ref:`sec-organizando2` é tão importante quanto delicada, pois trata da metodologia de demonstração. Um dos aspectos fundamentais de separação de **Hipótese** e **Tese** deve ser reforçado a exaustão. Convide, sempre que possível, seus alunos a reescrever teoremas que eles já têm familiaridade usando a estrutura de "Se Hipótese, então Tese".
-   * Dentre os exercícios, há um de demonstração do teorema das Bissetrizes, que decorre diretamente do teorema de Tales.
+   * Uma das atividades iniciais, " :ref:`ativ-nas-ruas`", é solicitado que os alunos façam uma estimativa. Estimule estimativas sem cálculo para comparar com o resultado que posteriormente será encontrado.
+   * No ensino Fundamental, a maioria das propriedades eram compreendidas através de observações das figuras. No ensino Médio entendemos que algumas demonstrações devem ser efetuadas para que o aluno perceba o aspecto construtivo da Matemática.   
+   * A seção :ref:`sec-organizando2` é tão importante como delicada, pois trata da metodologia de demonstração. Um dos aspectos fundamentais de separação de **Hipótese** e **Tese** deve ser incentivado. Convide, sempre que possível, seus alunos a reescrever teoremas com os quais eles já têm familiaridade usando a estrutura de "Se Hipótese, então Tese".
+   * Dentre os exercícios, é proposto um de demonstração do teorema das Bissetrizes, que decorre diretamente do teorema de Tales.
    
    
 
@@ -31,7 +32,7 @@
 Explorando
 **********
 
-O teorema de Tales é um resultado básico da geometria plana e vai permitir a exploração e desenvolvimento de outros resultados, também centrais, dessa matéria. O teorema de Tales (das retas paralelas) é conhecido desde a antiguidade. Tales de Mileto viveu no século 6 a.C., mas nenhum dos seus escritos sobreviveu. Tudo o que sabemos dele veio através de matemáticos posteriores. Entretanto, as retas paralelas sempre existiram e é delas que vamos falar neste capítulo.
+O teorema de Tales é um resultado básico da geometria plana e vai permitir a exploração e dedução de outros resultados, também centrais, dessa matéria. O teorema de Tales (das retas paralelas) é conhecido desde a antiguidade. Tales de Mileto viveu no século 6 a.C., mas nenhum dos seus escritos sobreviveu. Tudo o que sabemos dele veio através de escritos de outros. 
 
 
 .. _ativ-nas-ruas:
@@ -45,28 +46,33 @@ Atividade: Nas ruas de uma cidade
   
   Levar o estudante a:
   
-  * Reconhecer retas paralelas no mundo em que vive. 
-  * Estimar uma distância conhecendo outras.
+  * Reconhecer retas paralelas.
+  * Estimar uma distância.
   * Praticar sua intuição
   
   **Observações e recomendações**
   
-  * Os valores que aparecem no desenho são bem próximos dos reais.
-  * No item a) esperamos apenas que o aluno perceba o paralelismo entre as ruas, nada mais.
-  * Apenas visualmente, uma estimativa entre 180m e 190m é excelente.
-  * É conveniente verificar se alguns alunos souberam fazer algum cálculo, mostrando que já tinham trazido esse conceito do Ensino Fundamental.
+  * Os valores mencionados no desenho são bem próximos dos reais.
+  * No item a), esperamos apenas que o aluno perceba o paralelismo entre as ruas, nada mais.
+  * No item b), sem cálculos, entendemos que visualmente, uma estimativa entre 180m e 190m é excelente.
+  * É conveniente verificar se alguns alunos utilizaram regra de três, mostrando que já tinham trazido esse conceito do Ensino Fundamental.
   
-A figura a seguir mostra uma parte da cidade de Nova York. Observe as ruas numeradas de 67 a 71, as Avenidas Columbus e Broadway.
+A figura a seguir mostra uma parte da cidade de Nova York. Nessa região, as ruas são designadas por números. Observe as ruas numeradas de 67 a 71, as Avenidas Columbus e Broadway.
 
 .. figure:: _resources/Fig-tales-01.png
 
-A distância `A` entre duas esquinas consecutivas da Avenida Columbus é igual a `70m` e a distância `B` entre as esquinas correspondentes na Broadway é de `80m`. A distância `C` entre as esquinas da Columbus com as ruas 69 e 71 é de `161m`, e a distância entre as esquinas correspondentes na Broadway é `D`.
+A distância `A` entre duas esquinas consecutivas da Avenida Columbus é igual a `70m` e a distância `B` entre as respectivas esquinas correspondentes na Broadway é `80m`. A distância `C` entre as esquinas da Columbus com as ruas 69 e 71 é  `161m`, e a distância entre as esquinas correspondentes na Broadway é `D`.
 
-Responda:
-
-#. Que relação você vê entre as ruas de 67 à 71?
+#. Você lembra quais são as possíveis posições relativas entre duas retas no plano? Que relação você vê entre as ruas de 67 a 71?
 #. Visualmente, estime um valor para a distância `D`.
 #. Você consegue calcular a distância `D`?
+
+
+.. admonition:: Resposta 
+
+   #. São paralelas.
+   #. Qualquer valor entre 180m e 190m.
+   #. Resposta pessoal.
 
 
 .. _ativ-recordando-paralelas:
@@ -87,11 +93,12 @@ Atividade: recordando paralelas
    
    **Observações e recomendações**
    
-   * A relação de igualdade entre os ângulos `a`, `b` e `c` deve ser percebida intuitivamente, sem necessidade de buscar alguma demonstração. No último exercício do capítulo o aluno vai usar esses fatos como argumento para demonstrar que certo triiangulo é isósceles.
-   * 	Perceber a congruência dos dois triângulos de forma intuitiva já é bastante bom. Também o aluno poderá reproduzir a figura em uma folha de papel recortar os triângulos, e verificar, que eles se superpoem perfeitamente.
-   * 	Para uma justificativa mais formal necessitamos dos critérios de congruência de triângulos que estarão a seguir.
+   * Neste texto, segmentos congruentes serão chamados de iguais. Da mesma forma, ângulos congruentes serão também chamados de iguais.
+   * A relação de igualdade entre os ângulos `a`, `b` e `c` é conhecida desde o Ensino Fundamental. No último exercício do capítulo o aluno vai usar esses fatos como argumento para demonstrar que certo triângulo é isósceles.
+   * 	Se o aluno não conhecer os casos de congruência de triângulos, ela pode ser verificada de maneira informal a partir de sobreposição por dobradura ou recortando um desenho semelhante. 
+   * 	Para uma justificativa matemáticamente rigorosa, necessitamos dos critérios de congruência de triângulos que estarão no Organizando as ideias após a atividade.
    
-Na figura a seguir há dois pares de retas paralelas
+Na figura a seguir estão representados dois pares de retas paralelas: o par de retas `AD` e `BC` e o par de retas `AB` e `CD`.
 
 .. tikz:: legenda
   \draw [shift={(-0.7404492822759008,2.0323275076976457)},line width=0.8pt,color=green,fill=green,fill opacity=0.10000000149011612] (0,0) -- (-158.99677728856574:0.40327274248797285) arc (-158.99677728856574:-103.61977057805956:0.40327274248797285) -- cycle;
@@ -118,14 +125,13 @@ Na figura a seguir há dois pares de retas paralelas
   \draw [fill=black] (3.075292944186652,3.4972999696430898) circle (1.0pt);
   \end{scriptsize}
   
-Responda
 
-#. Você conhece o nome que se dá aos ângulos `a` e `b`?
+#. Você conhece o nome que se dá ao par de ângulos `a` e `b`?
 #. Que relação há entre os ângulos `a` e `b`?
-#. Você conhece o nome que se dá aos ângulos `b` e `c`?
+#. Você conhece o nome que se dá ao par de ângulos `b` e `c`?
 #. Que relação há entre os ângulos `b` e `c`?
-#. Os triângulos `ABC` e `CDA` são congruentes. Por quê?
-#. O que ocorre com os segmentos `AB` e `CD`? E com os segmentos `AD` e `BC`?
+#. Pode-se afirmar que os triângulos `ABC` e `CDA` são congruentes. Por quê?
+#. Que relação existe entre os segmentos `AB` e `CD`? E com os segmentos `AD` e `BC`?
 
 
 .. admonition:: Respostas 
@@ -143,7 +149,18 @@ Responda
 Organizando as ideias 
 =====================
 
-Na atividade anterior percebemos que os triângulos `ABC` e `CDA` são congruentes. Afinal, quando dois triângulos são congruentes? Não podemos nos deixar levar somente pela intuição.
+.. admonition:: Para o professor
+
+   Vale lembrar que serão utilizados conceitos do Ensino Fundamental. Em alguns casos, será necessário que se recorde tais conceitos para poder avançar no capítulo.
+   
+   * Ângulos nas paralelas cortadas por uma transversal;
+   * A definição de paralelogramo (Quadrilátero que possui dois pares de lados paralelos).
+
+Vamos lembrar que duas figuras são congruentes, quando podem ser levadas a coincidir por superposição mediante o deslocamento rígido de uma delas.
+
+Na atividade anterior os triângulos `ABC` e `CDA` são congruentes.
+
+Mas afinal, quais as condições mínimas para garantir que dois triângulos são congruentes? Não podemos nos deixar levar somente pelo que as imagens sugerem.
 
 Por exemplo, os dois triângulos da figura a seguir são congruentes?
 
@@ -171,7 +188,7 @@ Por exemplo, os dois triângulos da figura a seguir são congruentes?
    \draw [fill=black] (3.2665068298598277,4.71632784582858) circle (1.0pt);
    \draw [fill=black] (0.9837136824628329,5.234431672164059) circle (1.0pt);
    
-A resposta é não. Os dois triângulos da figura acima parecem, mas não são congruentes.
+A resposta é não e a justificativa necessita de material que será desenvolvido no capítulo de trigonometria. Os dois triângulos da figura acima parecem, mas não são congruentes.
 
 Os casos básicos que garantem a congruência de dois triângulos são:
 
@@ -246,9 +263,9 @@ Os casos básicos que garantem a congruência de dois triângulos são:
    \draw [fill=black] (8.36,2.64) circle (1.0pt);
    \draw [fill=black] (6.84,2.92) circle (1.0pt);
    
-Com essa importante ferramenta em mãos podemos agora justificar por que os triângulos `ABC` e `CDA` da atividade anterior são congruentes e, com isso, concluir as igualdades dos pares de segmentos do item f).
+Com os critérios de congruência em mãos, podemos agora justificar por que os triângulos `ABC` e `CDA` da atividade anterior são congruentes e, com isso, concluir as igualdades dos pares de segmentos do item f).
 
-Veja novamente a figura, agora simplificada e com os outros elementos que vamos necessitar
+Veja novamente a figura, agora simplificada e com os outros elementos que vamos necessitar.
 
 
 .. tikz:: 
@@ -279,9 +296,9 @@ Veja novamente a figura, agora simplificada e com os outros elementos que vamos 
    \draw [fill=black] (2.26,5.16) circle (1.0pt);
    \draw[color=black] (2.2807272727272756,5.466545454545455) node {$D$};
    
-Os ângulos marcados com `x` são alternos internos nas paralelas `AC` e `BC`.
+Os ângulos marcados com `x` são alternos internos nas paralelas `AD` e `BC`, cortadas pela transversal `AC`.
 
-Os ângulos marcados com `y` são alternos internos nas paralelas `AB` e `DC`.
+Os ângulos marcados com `y` são alternos internos nas paralelas `AB` e `DC`, cortadas pela transversal `AC`.
 
 Assim, os triângulos `ABC` e `CDA` são congruentes pelo caso **ALA**.
 
@@ -297,7 +314,7 @@ Dessa forma, temos `AB = CD` e `BC = DA`.
 
 .. _ativ-demonstrando-um-fato:
 
-Atividade: demonstrando um fato
+Atividade: demonstrando uma afirmação
 -------------------------------
 
 
@@ -307,20 +324,20 @@ Atividade: demonstrando um fato
    
    Levar o estudante a 
    
-   * Reconhecer em uma proposição o que é dado e o que se quer demonstrar. 
-   * Identificar as ferramentas que podem ser usadas como argumento para a demonstração.
+   * Demonstrar um resultado.
+   * Identificar, em uma proposição, as hipóteses e o que se que demonstrar.
    * Planejar a sequência de argumentos para concluir o resultado.
    
    **Observações e recomendações**
    
-   * Essa proposição já é um teorema, mas ainda não estamos dando esse título.
+   * Essa proposição é um teorema, mas ainda não estamos dando esse título, pois não é o objetivo no momento.
    * Para demonstrar a proposição é necessário interferir na figura, traçando novos segmentos que vão permitir o aparecimento de triângulos congruentes. Nessa primeira atividade de demonstração, daremos as dicas para que o aluno consiga percorrer o caminho até o final.
    
 
-As paralelas `r_1`, `r_2` e `r_3` estão cortadas pelas transversais `t_1` e `t_2` . Demonstre que:
+As paralelas `r_1`, `r_2` e `r_3` estão intersectadas pelas transversais `t_1` e `t_2` . Demonstre que:
 
 
-*“Se as paralelas determinam sobre uma transversal segmentos iguais então determinarão, na segunda transversal, segmentos também iguais.”*
+*“Se as paralelas determinam sobre uma transversal segmentos iguais então determinarão, na outra transversal, segmentos também iguais.”*
 
 
 Veja a figura:
@@ -351,28 +368,27 @@ Veja a figura:
    \draw [fill=black] (2.214029850746268,1.34) circle (1.0pt);
    \draw [fill=black] (3.8206965174129355,0.) circle (1.0pt);
 
-Vamos fazer perguntas e dar algumas dicas para que você possa demonstrar essa proposição.
+O enunciado pede que você demonstre uma afirmação. Em Matemática, demonstrar significa justificar a afirmação utilizando argumentos lógicos baseados em fatos conhecidos anteriormente.
 
-Com os elementos da figura acima, responda:
+Faremos, a seguir, perguntas que são dicas para ajudá-lo a demonstrar essa proposição.
 
-#. Que fato é dado na proposição?
+Vamos considerar, na figura dada, `AB=BC`. Não haveria diferença, caso escolhêssemos considerar `DE=EF` na outra trasnversal. Com os elementos da figura acima, responda:
+
 #. O que se deseja demonstrar?
 
    Para conseguir os argumentos necessários você vai ter que interferir na figura. Faça o seguinte:
 
-   * Trace por `D` uma paralela a `t_1` que encontra `r_2` no ponto `G`.
-   * Trace por `E` uma paralela a `t_1` que encontra `r_3` no ponto `H`.
+   * Trace por `D` uma paralela a `t_1` que intersecta `r_2` no ponto `G`.
+   * Trace por `E` uma paralela a `t_1` que intersecta `r_3` no ponto `H`.
 
-   Responda
-
+   
 #. Os triângulos `DGE` e `EHF` são congruentes? Por quê?
 #. O que se conclui da congruência dos triângulos `DGE` e `EHF`?
 
 
-.. admonition:: Resposta 
+.. admonition:: Respostas 
 
-   #. `AB = BC`
-   #. `DE = EF`
+   #. `DE = EF` (caso tivessesmo escolhido considerar inicialmente `DE=EF`, a resposta seria `AB=BC`). 
    #. Os triângulos `DGE` e `EHF` são congruentes pelo caso **ALA**.
    
       De fato, `ABGD` e `BCHE` são paralelogramos. Daí, `DG = AB = BC = EH`.
@@ -396,13 +412,13 @@ Atividade: dividindo um segmento em partes iguais
    
    * Perceber que nossa visão é limitada e nossos instrumentos de medida são limitados e imperfeitos.
    * Aprender que construções geométricas não dependem de medidas.
-   * Perceber que construções geométricas mostram resultados exatos, coisa que nossos sentidos não permitem.
+   * Perceber que construções geométricas são procedimentos abstratos, portanto mostram resultados exatos, coisa que nossos sentidos não permitem.
    * Executar concretamente uma aplicação de algo que ele mesmo demonstrou.
    
    **Observações e recomendações**
    
-   * Medir alguma coisa com a régua sempre acarreta erros, para mais ou para menos, pois nossa visão não é muito boa. Uma experiância interessante é desenhar um segmento no papel e pedir para vários alunos usarem a régua para medir o comprimento. Depois, peça que eles multipliquem a medida por um número grande (isso amplia qualquer erro) e verifique os resultados.
-   * As construções geométricas mostram processos exatos para executar diversas coisas. Quando as executamos concretamente com os instumentos de desenho, certamente também cometeremos erros, mas estes serão muito menores do que os outros que foram feitos atrvés de medidas
+   * O processo de medição, na prática, é sempre aproximado. Uma experiência interessante é desenhar um segmento no papel e pedir para vários alunos usarem a régua para medir o comprimento desse segmento. Depois, peça que eles multipliquem a medida por um número grande (isso amplia qualquer erro) e compare os resultados.
+   * As construções geométricas são processos rigorosos matematicamente, capazes de produzir medidas exatas. Quando as executamos concretamente com os instumentos de desenho, certamente também cometeremos erros, mas estes serão provavelmente menores do que os outros que foram feitos através de medidas. Por exemplo, se um segmento de 9cm for dividido em 7 partes iguais, cada parte medirá 1,285714...cm, medida impossível de ser construída com uma régua comum. Entretanto, com uma construção geométrica, obteremos uma divisão bastante boa.
    
 Um segmento desenhado no papel precisa ser dividido em três partes iguais. Um aluno fez assim:
 
@@ -412,21 +428,18 @@ Com a calculadora dividiu essa medida por 3.
 
 Ele pretende usar a régua para aplicar sobre o segmento a medida que aparece na calculadora.
 
-Responda
 
 #. Que número o visor da calculadora mostrou quando o segmento dado foi dividido por 3?
-#. Você consegue, com a régua, marcar sobre o segmento a medida que a calculadora mostrou?
+#. Você consegue, com a régua escolar, marcar sobre o segmento a medida que a calculadora mostrou?
 
-   Você percebe aí uma dificuldade. Nossos sentidos são limitados e a régua não marca com precisão frações menores que 1 milímetro. Como fazer então?
+   Você percebe aí uma dificuldade, não é mesmo? Nossos sentidos são limitados e a régua não marca com precisão medidas menores que 1 milímetro. Como fazer então?
 
-   A resposta está na atividade anterior.
-
-   Faça assim:
+   Buscamos  inspiração na atividade anterior. Considere a seguinte construção:
 
    Nosso segmento chama-se `AB`.
 
-   * A partir de A trace uma semirreta `AX` (que não contenha o segmento `AB`).
-   * Com o compasso em uma abertura qualquer assinale, a partir de `A`, três segmentos iguais. Chamaremos esses pontos sobre a semirreta `AX` de `M`, `N` e `P`. Veja a figura.
+   * A partir de `A` trace uma semirreta `AX` (que não contenha o segmento `AB`).
+   * Com o compasso em uma abertura qualquer fixada, assinale, a partir de `A`, três segmentos iguais. Chamaremos esses pontos sobre a semirreta `AX` de `M`, `N` e `P`. Veja a figura.
 
 
    .. tikz:: 
@@ -454,7 +467,7 @@ Responda
       \draw [fill=black] (3.4901626233843923,-1.739610837360873) circle (2.0pt);
       \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (2.0pt);
 
-   Em seguida trace a reta `PB` e trace paralelas a ela pelos pontos `M` e `N`. Essas retas cortarão o segmento `AB` nos pontos `C` e `D`.
+   Em seguida, trace a reta `PB` e trace paralelas a ela pelos pontos `M` e `N`. Essas paralelas intersectarão o segmento `AB` nos pontos `C` e `D`, como mostra a figura.
 
 
    .. tikz:: 
@@ -488,18 +501,17 @@ Responda
      \draw [fill=black] (5.235243935076588,-2.6094162560413094) circle (1.0pt);
      \draw [fill=red] (1.5,0.) circle (1.5pt);
      \draw [fill=red] (3.,0.) circle (1.5pt);
-   Responda
-
+   
 #. Com esse procedimento, explique por que os pontos `C` e `D` dividem o segmento `AB` em três partes iguais.
 #. Para dividir um segmento em partes iguais há necessidade de fazer medidas?
 
 
 .. admonition:: Resposta 
 
-   #. 2,3666666
-   #. Não
+   #. 2,3666666.
+   #. Não, pois a régua não permite marcar medidas menores que 1 mm.
    #. Porque quando paralelas são cortadas por transversais se, em uma delas os segmentos são iguais `(AM = MN = NP)` então sobre a outra os segmentos correspondentes serão também iguais `(AC = CD = DB)`.
-   #. Não
+   #. Não, pois o procedimento descrito nesta atividade não depende de medições.
 
    
    
