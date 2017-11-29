@@ -17,12 +17,14 @@ Conceitos Básicos
    População
     é um conjunto de elementos com pelo menos uma característica em comum.
 
-Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria em um ano, o conjunto de animais de certa espécie que vivem em uma região, todos os estudantes universitários de um país, etc.
+Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria, o conjunto de animais de certa espécie que vivem em uma região, todos os estudantes universitários de um país, etc.
 
 .. glossary::
 
    Amostra
     é um subconjunto não-vazio da população.
+    
+Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto à modificação da lista de produtos vendidos na cantina para outros mais saudáveis, trocando refrigerantes por sucos naturais entre outros. Para isso, a direção da escola irá entrevistar cinco alunos sorteados de cada uma de suas 40 turmas. Nesse exemplo, a população corresponde a todos os estudantes deste colégio e, a amostra, aos 200 estudantes que foram entrevistados.
     
 .. glossary::
 
@@ -33,6 +35,8 @@ Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser
 
    Estimador
     função que produz estimativas de parâmetros usando os dados da amostra.  
+    
+Voltando ao exemplo anterior, sobre a modificação da lista de produtos da cantina, temos que o parâmetro corresponde à proporção dos estudantes desse colégio que são favoráveis à mudança (na maioria das vezes não acessível, a menos que se realize um censo). O estimador desse parâmetro corresponderá à proporção de estudantes favoráveis à mudança na amostra, que resultará numa estimativa do parâmetro. 
     
 As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente *inferir* sobre parâmetros populacionais de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. 
 
@@ -66,22 +70,6 @@ Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a popu
  **Observação:** Uma moeda é dita ser equilibrada se as probabilidades de se obter cara e coroa são iguais. Caso contrário, a moeda é dita ser não-equilibrada.
  
  Se lançarmos 100 vezes essa mesma moeda e obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que não seja equilibrada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um nível de confiança sobre sua veracidade são propsições de natureza estatística.
-
-.. admonition:: Como selecionar amostras?
-
- Quando queremos estender nossas observações provenientes de uma amostra para a população é necessário escolher uma amostra que seja representativa da população. A disciplina Técnicas de Amostragem é voltada para a apresentação de técnicas de seleção de amostras. Embora não seja objetivo desse capítulo descrever métodos variados de seleção de amostras, cabe destacar que existem dois tipos principais de seleção de amostras: os probabilísticos e os não probabilísticos. 
- 
- O primeiro tipo é fundamental para que seja possível avaliar a incerteza das conclusões devido à amostragem.  Nesse tipo de seleção de amostra, conhecemos a probabilidade de seleção dos elementos da população na amostra. Entre os métodos probabilísticos mais comuns destacam-se
-  
- #. amostragem aleatória simples: todas as amostras de igual tamanho têm probabilidades iguais de serem selecionadas. 
-  
- #. amostragem aleatória estratificada: a população é dividida em grupos de elementos homogêneos e os grupos são heterogêneos entre si. A amostra é composta por amostras aleatórias simples de cada grupo, em geral, proporcionalmente aos tamanhos dos grupos.
-  
- #. amostragem aleatória por coglomerados: a população é subdividida em conglomerados (subpopulações). Uma amostra aleatória simples de conglomerados é obtida e, em seguida, todos os elementos dos conglomerados escolhidos são observados. 
-  
- #. amostragem aleatória sistemática: toda a população deve estar catalogada numa lista, por exemplo, lista dos alunos matriculados numa escola em ordem alfabética. Suponha que a lista contenha 1000 alunos e que se deseja obter uma amostra de tamanho 50. Para isso divide-se 1000 por 50 obtendo-se 20 blocos de 50 alunos. Sorteia-se ao acaso um número de 1 a 20, por exemplo, o número 9. Seleciona-se o aluno de número 9 e, depois, os próximos elementos são selecionados de 20 em 20 como uma Progressão Aritmética de razão 20 e primeiro termo 9. 
-
- Os casos mais comuns de métodos não probabilísticos são **amostragem por conveniência** e **amostragem por julgamento**. A amostragem por conveniência carateriza-se por não ter um plano particular de amostragem. O objetivo nesse caso não seria generalizar conclusões e sim descrever as características principais do grupo de estudo.  Nas amostras por julgamento, os elementos da amostra são escolhidos por um especialista no assunto sob investigação. A desvantagem dos métodos não probabilísticos é não sermos capazes de avaliar incertezas devido à amostragem. 
 
  
 .. _sub-classificacao-de-variaveis:
@@ -140,11 +128,13 @@ Uma variável quantitativa é classificada em discreta ou contínua.
    Classificação dos tipos de variáveis
    
    
-.. admonition:: Observação
+.. admonition:: Observação sobre a classificação de variáveis
 
- A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular nem média, nem mediana da modalidade, pois ela é uma variável qualitativa. Nesse caso, podemos no máximo identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico 3 verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
+ A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular média, nem mediana da modalidade, pois trata-se uma variável qualitativa. Nesse caso, é possível identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico 3 verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
+ 
+.. admonition:: Observação sobre a flexibilização na classificação de uma variável
 
- Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Nesse caso, poderemos somar todas as respostas cuja soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
+ Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Essa estratégia permite somar todas as respostas. Observe que a soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
  
  
 .. _sub-graficos-variaveis-qualitativas:
@@ -153,13 +143,22 @@ Uma variável quantitativa é classificada em discreta ou contínua.
 Gráficos para Variáveis Qualitativas
 -------------------------------------
 
-Nas análises dos infográficos trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, temos um **gráfico de barras**. Nesse gráfico, a única escala usada é a da frequência na qual as respostas ocorrem. Cada barra representa uma resposta e seu comprimento corresponde à frequência (ou porcentagem) na qual a resposta ocorre. Observe também que nesse gráfico, a soma das porcentagens deve ser 100%, correspondendo ao conjunto completo observado. A orientação das barras pode ser tanto vertical, como horizontal. 
+Nas análises dos infográficos, trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, tem-se um **gráfico de barras**. Nesse gráfico, cada barra, de mesma largura, representa uma resposta e seu comprimento corresponde à :index:`frequência<frequência>` na qual a resposta ocorre. Observe também que, nesse gráfico, se estivermos trabalhando com as porcentagens de cada resposta, a soma das porcentagens deve ser 100%.  
 
 Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. Se a variável é nominal, podemos dispor as respostas em ordem decrescente de frequência. 
 
+
+.. admonition:: :index:`Frequência absoluta<frequência absoluta>` e :index:`frequência relativa<frequência relativa>`
+
+	Suponha que uma turma de um colégio tenha 40 alunos e que seus tipos sanguíneos foram analisados. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as frequências absolutas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a frequência relativa em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10.
+    Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
+     
+
+   
+
 Os gráficos apresentados nos :ref:`infográfico 1 <fig-infografico-pnad-1>` e :ref:`infográfico 2 <fig-infografico-pnad-2>` são gráficos de barras?
 
-Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são **gráficos de barras múltiplas**, úteis para comparar diferentes distribuições de frequências. Observe que em cada um desses gráficos a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as porcentagens das respostas *Sim* e *Não* no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de *Sim* em cada subgrupo, pois nesse caso, as correspondentes porcentagens de *Não* são dadas pelo complementar em cada subgrupo considerado. 
+Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são **gráficos de barras múltiplas**, úteis para comparar diferentes distribuições de frequências. Observe que, em cada um desses gráficos, a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as porcentagens das respostas *Sim* e *Não* no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de *Sim* em cada subgrupo, pois nesse caso, as correspondentes porcentagens de *Não* são dadas pelo complementar em cada subgrupo considerado. 
 
 .. _fig-infografico-1-detalhe:
 
@@ -169,9 +168,9 @@ Esses gráficos usam barras para representar as frequências em subgrupos difere
 
    Detalhe legendado do :ref:`infográfico 1<fig-infografico-1>`
 
-O mesmo ocorre quando olhamos os gráficos para faixa etária, grau de instrução e rendimento. Todos são gráficos de barras múltiplas que nos apoiaram em nossas análises sobre a associação entre a prática de atividades físicas e a outra variável (sexo, faixa etária, grau de instrução, rendimento).
+O mesmo ocorre quando analisamos os gráficos para faixa etária, grau de instrução e rendimento. Todos são gráficos de barras múltiplas que nos apoiaram em nossas análises sobre a associação entre a prática de atividades físicas e a outra variável (sexo, faixa etária, grau de instrução, rendimento).
 
-No :ref:`infográfico 4 <fig-infografico-pnad-4>`, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira harmônica a figura maior em partes cujas áreas em relação à figura maior correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a razão da área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
+No :ref:`infográfico 4 <fig-infografico-pnad-4>`, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira proporcional a figura maior em partes cujas áreas em relação à figura maior correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a razão da área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
 
 No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as respostas à pergunta "Quais as áreas em que deve ocorrer investimento público?" para quem respondeu *Não* à pergunta "O poder público deve investir em atividades físcas ou desportivas?" e também para representar as respostas à pergunta "Qual deve ser a prioridade nos investimentos?" para quem respondeu "Sim" à pergunta "O poder público deve investir em atividades físicas ou desportivas?".
 
@@ -204,7 +203,7 @@ Atividade: Prática de Atividade Física na turma
    
   **Observações e sugestões** 
    
-  * Preparar um formulário a ser preenchido pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. O formulário poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas para efeito de comparação com os infográficos sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunos que essa será uma amostra de conveniência, pois o interesse é olhar o perfil da turma quanto à prática de atividades físicas e por isso, as respostas da turma podem não ser similares às da pesquisa.
+  * Preparar uma tabela a ser preenchida pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. A tabela poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas, para efeito de comparação com os infográficos, sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunos que essa será uma amostra de conveniência, pois o interesse é estudar o perfil da turma quanto à prática de atividades físicas e por isso, as respostas da turma podem não ser similares às da pesquisa.
    
   * Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas quando forem feitas comparações para grupos diferentes, como por exemplo, sexo.
 
@@ -250,7 +249,7 @@ Atividade: Construção de gráficos para variáveis qualitativas
 
    **Objetivos específicos** Construir gráficos de distribuições de frequências para variáveis qualitativas.
    
-   **Observações e sugestões** Embora os gráficos solicitados nessa atividade sejam simples, recomenda-se sugerir aos alunos usar algum recurso tecnológico para a construção dos mesmos, tais como, uma planilha ou o GeoGebra.
+   **Observações e sugestões** Embora os gráficos solicitados nesta atividade sejam simples, recomenda-se sugerir aos alunos usar algum recurso tecnológico para a construção dos mesmos, tais como, uma planilha ou o GeoGebra.
    
 
 Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o gráfico de setores em gráfico de retângulos e os gráficos de retângulos em gráficos de setores. 
@@ -276,15 +275,14 @@ Atividade: Análise de gráfico
 
    **Objetivos especícificos** Mostrar que podem existir diversas formas de usar barras para representar algum tipo de dado, mas que nem todos os gráficos que usam barras são gráficos de barras no sentido da representação de uma distribuição de frequências. 
    
-   **Observações e sugestões** O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Na seção "Explorando 2", veremos que para esse tipo de informação: valores de uma variável quantitativa ao longo do tempo, é mais comum usar um gráfico de linhas unindo por segmentos os pontos consecutivos dados (tempo,valor da variável).
+   **Observações e sugestões** O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Na seção "Explorando 2", veremos que, para esse tipo de informação - valores de uma variável quantitativa ao longo do tempo -, é mais comum usar um gráfico de linhas unindo por segmentos os pontos consecutivos dados (tempo,valor da variável).
 
 Observe o gráfico a seguir publicado em um jornal. 
 
 #. Como você classificaria esse gráfico? 
-#. Ele é um gráfico de barras do ponto de vista apresentado nesse capítulo? Por que? 
-#. Que tipo de variável ele está analisando?
-#. Construa um gráfico  diferente do apresentado para representar a mesma informação?
-#. O que é possível perceber a partir desses gráficos?
+#. Qual é a informação representada pelo comprimento da barra nesse gráfico?   
+#. Que tipo(s) de variável(is) ele está representando?
+#. Construa um gráfico diferente para representar a mesma informação, marcando num plano Cartesiano os pontos (x,y) em que x corresponde ao tempo e y corresponde à inflação acumulada no domicílio, unindo os pontos consecutivos por segmentos. É possível perceber a partir desse gráfico algum tipo de comportamento no período observado?
 
 
  
