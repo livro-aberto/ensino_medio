@@ -150,9 +150,25 @@ Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. S
 
 .. admonition:: :index:`Frequência absoluta<frequência absoluta>` e :index:`frequência relativa<frequência relativa>`
 
-	Suponha que uma turma de um colégio tenha 40 alunos e que seus tipos sanguíneos foram analisados. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as frequências absolutas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a frequência relativa em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10.
-    Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
-     
+ Numa turma de um colégio foram observados os tipos sanguíneos de seus 40 alunos. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as frequências absolutas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a frequência relativa em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10. Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
+ É comum resumir esse tipo de informação, usando uma tabela, informando as respostas da variável e suas frequências. Nesse exemplo a variável é tipo sanguíneo e sua classificação é qualitativa nominal, pois assume respostas não numéricas "A", "B", "AB" e "O". Em geral dispomos os valores dessa variável em ordem decrescente de frequência.
+ 
+ +----------+--------------+-------------+----------------+
+ | tipo     | frequência   | frequência  | porcentagem    |
+ | sanguíneo| absoluta     | relativa    |        (%)     |
+ +==========+==============+=============+================+
+ | O        |   18         |   0,45      |    45          |
+ +----------+--------------+-------------+----------------+
+ | A        |  12          |   0,30      |     30         |
+ +----------+--------------+-------------+----------------+
+ | AB       |  6           |    0,15     |     15         |
+ +----------+--------------+-------------+----------------+
+ | B        |   4          |    0,10     |     10         |
+ +----------+--------------+-------------+----------------+
+ | total    |   40         | 1,00        | 100            |
+ +----------+--------------+-------------+----------------+
+
+  
 
    
 
@@ -225,18 +241,22 @@ Atividade: Classificação de variáveis
 Suponha que cada uma das variáveis a seguir foi observada para todos os alunos de sua turma. Indique se cada uma delas é uma variável qualitativa ou quantitativa. Se for uma variável qualitativa, indique se ela é binária (apenas duas respostas possíveis) ou não. 
 
 
-#. altura
-#. espessura do braço
-#. razão da altura sobre a espessura do braço
+#. altura (em metros)
+#. peso (em quilos)
+#. razão do peso sobre o quadrado da medida da altura
 #. tempo de sono na noite anterior
-#. se foi dormir na noite anterior **antes** ou **depois** da meia-noite
+#. se foi dormir na noite anterior antes ou depois da meia-noite
 #. mês de nascimento
 #. número de irmãos
 #. nota obtida na última avaliação de Matemática
-#. se tirou nota **maior** ou **menor** do que 6,0 na última avaliação de Matemática
+#. se tirou nota maior ou igual a 6,0 ou menor do que 6,0 na última avaliação de Matemática
 #. distância da casa à escola
 #. se o indivíduo possui ou não um cartão de crédito
 #. modo de locomoção para a escola
+
+.. admonition:: Resposta 
+
+ (a) quantitativa, (b) quantitativa, (c) quantitativa (d) quantitativa, (e) qualitativa binária, (f) qualitativa (g) quantitativa (h) quantitativa (i) qualitativa binária (j) quantitativa (k) qualitativa binária (l) qualitativa.
 
 
 .. _ativ-3-construcao-de-grafico-variavel-qualitativa:
@@ -297,11 +317,13 @@ Observe o gráfico a seguir publicado em um jornal.
 
 .. admonition:: Resposta 
 
-   #. É um gráfico que usa barras. As alturas das barras indicam o valor da inflação da alimentação acumulada nos últimos 12 meses em função do tempo: agosto de 2016 até agosto de 2017.
-   #. Não, pois as barras não representam frequência, elas representam o valor acumulado da inflação de alimentação nos últimos 12 meses em relação aos meses considerados, a saber, agosto de 2016 até agosto de 2017. 
-   #. A inflação da alimentação acumulada nos últimos 12 meses que é uma variável quantitativa contínua cuja evolução no período de tempo considerado está sendo apresentada nesse gráfico.
-   #. (gráfico)
-   #. Podemos perceber que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
+   #. É um gráfico que usa barras, mas nesse gráfico o comprimento das barras não é frequência. 
+   
+   #. Valor da inflação da alimentação acumulada nos últimos 12 meses. Esses valores são apresentados em função do período de tempo: agosto de 2016 até agosto de 2017.
+   
+   #. O valor da inflação da alimentação acumulada nos últimos 12 meses é uma variável quantitativa, o período de tempo representado em mês/ano é uma variável qualitativa ordinal. 
+    
+   #. (gráfico) Podemos perceber que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
    
    
 .. _fig-grafico-de-linha-da-inflacao_alimentacao:
