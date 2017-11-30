@@ -1,6 +1,6 @@
-*************************************************
-Explorando: Gráficos para variáveis quantitativas
-*************************************************
+**************************************************************
+Explorando: Visualizando estruturas de variáveis quantitativas
+**************************************************************
   
   
 .. _ativ-construcao-histograma:
@@ -61,9 +61,9 @@ Um arranjo de oito radiotelescópios (A, B, C, D, E, F, G e H) como  ilustrado n
 
    * Como você faria para visualizar o comportamento de uma variável com estas características?
 
-A natureza da variável quantitativa contínua induz a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
+A natureza quantitativa de uma variável contínua pode muitas vezes levar a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
 
-#. Complete a tabela a seguir organizada a partir de intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior está incluso e o limite superior não está incluso.
+`a)` Complete a tabela a seguir que utiliza de intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior está incluso e o limite superior não está incluso.
 
 +---------------------+-----------------------------+
 | Intervalo de classe | Número de observações       |
@@ -88,9 +88,9 @@ A natureza da variável quantitativa contínua induz a resultados que praticamen
 +---------------------+-----------------------------+
 | [ 7,5 ; 8,0 [       |                             |
 +---------------------+-----------------------------+
-Para visualizar o comportamento desses dados, iremos construir um gráfico chamado **histograma**, composto por retângulos adjacentes cujas alturas representam a frequência de observações que ocorrem no  intervalo correspondente. A base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
+Para visualizar o comportamento desses dados, iremos construir um gráfico chamado :index:`histograma<histograma>`, composto por retângulos adjacentes cujas alturas representam a frequência de observações que ocorrem no intervalo correspondente. A base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
 
-#. Complete a figura a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
+`b)` Complete a figura a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
 
    .. _fig-histograma:
 
@@ -99,12 +99,14 @@ Para visualizar o comportamento desses dados, iremos construir um gráfico chama
       :align: center
    
       Histograma dos dados coletados pela grade de radiotelescópios
+ 
+`c)` Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
 
-#. Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
 
+.. admonition:: Resposta
 
-.. admonition:: Resposta 
-
+ `a)`
+ 
  +---------------------+-----------------------------+
  | Intervalo de classe | Número de observações       |
  +=====================+=============================+
@@ -128,14 +130,18 @@ Para visualizar o comportamento desses dados, iremos construir um gráfico chama
  +---------------------+-----------------------------+
  | [ 7,5 ; 8,0 [       |                2            |
  +---------------------+-----------------------------+
-   
- .. _fig-histograma-resposta:
  
- .. figure:: _resources/Histograma-resposta.png
-   :width: 400px
+ `b)` Figura 4.3 e `c)` O valor da média é aproximadamente 5,5. O histograma apresenta uma distribuição de frequências simétrica e a posição da média está no eixo de simetria do histograma.
+ 
+.. _fig-histograma-resposta:
+ 
+.. figure:: _resources/Histograma-resposta_1.png
+   :width: 300pt
    :align: center
 
    Histograma dos registros de tempo
+   
+ 
    
    
 .. _ativ-medicao-temperatura-serie-temporal:
@@ -154,7 +160,7 @@ Atividade: Medição da temperatura ao longo do tempo
    
  **Observações e sugestões** 
  
- Para a construção do gráfico de linha será fornecida uma malha quadriculada para o preenchimento dos pontos, recomenda-se também uso do GeoGebra para essa construção. (incluir link do arquivo de dados do  GeoGebra e a função "CaminhoPoligonal").  
+ Para a construção do gráfico de linha será fornecida uma malha quadriculada para o preenchimento dos pontos, recomenda-se também uso de planilhas de cálculo para essa construção. Veja nesse `link <https://docs.google.com/spreadsheets/d/1B2bbuggIVjdfG6NivzDYmsmzovkt0FuFUUhSVFaAyDc/edit#gid=1474980695>`_, uma sugestão para realizar esta atividade.  
  
  Respostas possíveis na reflexão proposta são: índices de inflação, preços de diversos bens,  índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.  
  
@@ -163,13 +169,13 @@ Atividade: Medição da temperatura ao longo do tempo
  
  
    
-Você deve ter notado que a previsão do tempo é feita sempre a partir de dois números, isto ocorre porque a temperatura varia de forma contínua ao longo do dia e o que está sendo estimado são as temperaturas máxima e mínima. Por exemplo: 28° / 19°, significa que a previsão da temperatura máxima durante o dia será aproximadamente de 28°C e, a mínima, 19°C.
+Você deve ter notado que a previsão do tempo é feita sempre a partir de dois números, isto ocorre porque a temperatura varia de forma contínua ao longo do dia e o que está sendo previsto são as temperaturas máxima e mínima. Por exemplo: 28° / 19°, significa que a previsão da temperatura máxima durante o dia será aproximadamente de 28°C e, a mínima, 19°C.
 
-Diversas **variáveis meteorológicas** (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
+Diversas variáveis meteorológicas (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
 
 No Brasil, as estações estão a cargo do `Instituto Nacional de Meteorologia (INMET)<http://www.inmet.gov.br/>`_ e as informações são armazenadas em bases de dados. Para poder tratar essas informações, frequentemente elas são resumidas por períodos de tempo de diferentes magnitudes: dias, semanas, meses ou anos.
 
-Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como *séries de dados temporais* ou, apenas, *séries temporais*, já que correspondem a variáveis que mudam continuamente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
+Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como séries de dados temporais ou, apenas, :index:`séries temporais<séries temporais>`, já que correspondem a variáveis que mudam continuamente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
 
 .. admonition:: Para refletir
 
@@ -211,13 +217,15 @@ A tabela a seguir fornece a média das temperaturas máximas para cada mês nos 
 
 
 
-#. Escolha dois anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a *série* de cada ano.
+#. Escolha dois anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a série de cada ano.
 
-#. Una os pontos correspondentes ao mesmo ano (mesma série) e observe o resultado. Você percebe algum comportamento similar para a  temperatura em anos diferentes?
+#. Una os pontos correspondentes ao mesmo ano (mesma série) de meses consecutivos com um segmento e observe o resultado. Você percebe algum comportamento similar para a  temperatura em anos diferentes?
 
 #. Compare seu gráfico com o de colegas que escolheram outros anos (ou acrescente séries de outros anos ao seu gráfico). O que você percebe com relação à temperatura nos meses iniciais, intermediários e finais do ano?  A que se deve esse comportamento da temperatura?
 
 .. admonition:: Resposta
+
+`a)` e `b)` Percebe-se temperaturas mais altas nos meses iniciais e finais do ano e, mais baixas, no meio do ano.
 
    .. _fig-linhas-temperatura
    
@@ -227,17 +235,19 @@ A tabela a seguir fornece a média das temperaturas máximas para cada mês nos 
 
       Gráficos de linhas com a temperatura máxima média mensual da cidade de Porto Alegre
 
-Os gráficos que você acabou de construir são chamados **gráfico de linha**. Esse tipo de gráfico é muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. Quando a variável quantitativa é observada ao longo do tempo, o conjunto de dados resultante é chamado uma **série temporal**.
+`c)` Idem ao item b). Isso ocorre devido às estações do ano. No hemisfério sul temos temperaturas mais altas nos meses finais e iniciais do ano e temperaturas mais baixas no meio do ano.
+
+Os gráficos que você acabou de construir são chamados :index:`gráficos de linha<gráficos de linha>`. Esse tipo de gráfico é muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. Quando a variável quantitativa é observada ao longo do tempo, o conjunto de dados resultante é chamado uma série temporal.
 
 
 .. admonition:: Observação 
 
-    Como você já deve ter observado, a temperatura é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de **sazonalidade**. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
+    Como você já deve ter observado, a temperatura em Porto Alegre é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de :index:`sazonalidade<sazonalidade>`. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
 
 .. glossary::
 
    Sazonalidade
-     Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta as medições da variável observada.
+     Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta nas medições da variável observada.
    
 Considere novamente os dados de temperatura da atividade anterior. Se representarmos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
 
@@ -258,16 +268,43 @@ Considere novamente os dados de temperatura da atividade anterior. Se representa
 Organizando as ideias
 *********************
 
-.. Discussão sobre a construção dos intervalos de classe, sobre a difernça entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
+.. Discussão sobre a construção dos intervalos de classe, sobre a diferença entre histograma e gráfico de barras, sobre a adequação dos diferentes gráficos aos tipos de variáveis.
 .. glossary::
 
    Histograma
-    O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a razão da área desse retângulo em relação à área total do histograma deve ser igual a frequência relativa de casos desse intervalo.
+    O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a razão da área desse retângulo em relação à área total do histograma deve ser igual à frequência relativa de casos desse intervalo.
       
-.. admonition:: Quantos intervalos de classe considerar no agrupamento dos dados? 
+.. admonition:: Quantos intervalos de classe considerar no agrupamento dos dados?
   
-  Quando existe a necessidade de agrupar os dados em intervalos, uma questão que se coloca é: quantos intervalos usar para que se possa reconhecer estruturas de frequências nesse conjunto? Não existe uma única resposta para essa questão. No entanto, devemos evitar tanto usar um número reduzido de intervalos, quanto usar um número grande de intervalos. Por exemplo, se usarmos um único intervalo, o histograma seria representado por um único retângulo que nada informaria sobre o comportamento dos dados. Por outro lado, se o número de intervalos for igual ao número de observações, o histograma potencialmente teria apenas classes cada uma com uma única observação e o objetivo de resumir os dados se perderia. 
-  Embora não exista uma resposta única sobre quantos intervalos considerar, alguns autores sugerem usar o número inteiro mais próximo da raiz quadrada do número de observações, outros sugerem usar de 5 a 15 intervalos de amplitudes iguais. No GeoGebra, por exemplo, a função que constrói histogramas permite trabalhar com 3 a 20 intervalos.  
+Quando existe a necessidade de agrupar os dados em intervalos, uma questão que se coloca é: quantos intervalos usar para que se possa reconhecer estruturas de frequências nesse conjunto? Não existe uma única resposta para essa questão. No entanto, devemos evitar tanto usar um número reduzido de intervalos, quanto usar um número grande de intervalos. Por exemplo, se usarmos um único intervalo, o histograma seria representado por um único retângulo que nada informaria sobre o comportamento dos dados, conforme o gráfico a seguir.
+  
+ .. _fig-coloque-aqui-o-nome:
+
+ .. figure:: _resources/histograma_2intervalos.png
+   :width: 200pt
+   :align: center
+
+   Histograma dos resgistros de tempo considerando apenas dois intervalos
+   
+Por outro lado, se o número de intervalos for igual ou superior ao número de observações, o histograma potencialmente teria apenas classes com uma única observação e o objetivo de visualizar estruturas dos dados em análise se perderia. A figura a seguir contruída a partir de 100 intervalos não revela a estrutura dos dados de registro de tempo, uma vez que cada classe contém no máximo duas observações.
+
+ .. _fig-coloque-aqui-o-nome:
+
+ .. figure:: _resources/histograma_100intervalos.png
+   :width: 300pt
+   :align: center
+
+   Histograma dos resgistros de tempo considerando cem intervalos
+   
+Embora não exista uma resposta única sobre quantos intervalos considerar, alguns autores sugerem usar o número inteiro mais próximo da raiz quadrada do número de observações, outros sugerem usar de 5 a 15 intervalos de amplitudes iguais. No GeoGebra, por exemplo, a função que constrói histogramas permite trabalhar com 3 a 20 intervalos. A figura a seguir apresenta um histograma construído com `\sqrt{64}=8` intervalos.
+
+ .. _fig-coloque-aqui-o-nome:
+
+ .. figure:: _resources/histograma_8intervalos.png
+   :width: 300pt
+   :align: center
+
+   Histograma dos resgistros de tempo considerando oito intervalos
  
 .. incluir histogramas um com unica classe e o outro com 60 classes
      
@@ -278,7 +315,7 @@ Organizando as ideias
    
    Os histogramas são úteis para representar a distribuição de frequências de uma variável quantitativa contínua cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência que é definida como a razão entre a frequência e a amplitude do intervalo. 
    
-.. incluir ilustração
+.. incluir ilustração dois gráficos de barras do tipo sanguíneo e um histograma dos registros de tempo com 5 classes.
    
 
 

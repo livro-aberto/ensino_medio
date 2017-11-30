@@ -2,56 +2,57 @@
 Aprofundando o assunto
 **********************
 
-.. admonition:: Como selecionar amostras?
 
- Quando queremos estender nossas observações provenientes de uma amostra para a população é importante ter cuidado na seleção da amostra, pois ela deve ser representativa da população. Embora não seja nosso objetivo aqui descrever métodos variados de seleção de amostras, cabe destacar que existem dois tipos principais de seleção: os probabilísticos e os não probabilísticos. 
+.. _sec-coloque-aqui-o-nome:
+
+A questão da seleção de amostras
+================================
+
+Quando queremos estender nossas observações provenientes de uma amostra para a população é importante ter cuidado na sua seleção, pois ela deve ser representativa da população. Embora não seja nosso objetivo aqui descrever métodos variados de seleção de amostras, cabe destacar que existem dois tipos principais de seleção: os probabilísticos e os não probabilísticos. 
  
- O primeiro tipo é fundamental para que seja possível avaliar a incerteza das conclusões devido à amostragem tais como margem erro e nível de confiança.  Nesse tipo de seleção de amostra, conhecemos a probabilidade de seleção dos elementos da população na amostra. Entre os métodos probabilísticos mais comuns destacam-se
+O primeiro tipo é fundamental para que seja possível avaliar a incerteza das conclusões devido à amostragem tais como margem erro e nível de confiança.  Nesse tipo de seleção de amostra, conhecemos a probabilidade de seleção dos elementos da população na amostra. Entre os métodos probabilísticos mais comuns destacam-se
   
- #. amostragem aleatória simples: todas as amostras de igual tamanho têm probabilidades iguais de serem selecionadas. 
+#. amostragem aleatória simples: todas as amostras de igual tamanho têm probabilidades iguais de serem selecionadas. 
   
- #. amostragem estratificada: a população é dividida em grupos de elementos homogêneos (similares nas características a serem investigadas) e os grupos são heterogêneos entre si. A amostra é composta por amostras aleatórias simples de cada grupo, em geral, proporcionalmente aos tamanhos dos grupos.
+#. amostragem estratificada: a população é dividida em grupos de elementos homogêneos (similares nas características a serem investigadas) e os grupos são heterogêneos entre si. A amostra é composta por amostras aleatórias simples de cada grupo, em geral, proporcionalmente aos tamanhos dos grupos.
   
- #. amostragem por coglomerados: a população é subdividida em conglomerados (subpopulações). Uma amostra aleatória simples de conglomerados é obtida e, em seguida, todos os elementos dos conglomerados escolhidos são observados. 
+#. amostragem por coglomerados: a população é subdividida em conglomerados (subpopulações). Uma amostra aleatória simples de conglomerados é obtida e, em seguida, todos os elementos dos conglomerados escolhidos são observados. 
   
- #. amostragem sistemática: toda a população deve estar catalogada numa lista, por exemplo, lista dos alunos matriculados numa escola em ordem alfabética. Suponha que a lista contenha 1000 alunos e que se deseja obter uma amostra de tamanho 50. Para isso divide-se 1000 por 50 obtendo-se 20 blocos de 50 alunos. Sorteia-se ao acaso um número de 1 a 20, por exemplo, o número 9. Seleciona-se o aluno de número 9 e, depois, os próximos elementos são selecionados de 20 em 20 como uma Progressão Aritmética de razão 20 e primeiro termo 9. 
+#. amostragem sistemática: toda a população deve estar catalogada numa lista, por exemplo, lista dos alunos matriculados numa escola em ordem alfabética. Suponha que a lista contenha 1000 alunos e que se deseja obter uma amostra de tamanho 50. Para isso divide-se 1000 por 50 obtendo-se 20 blocos de 50 alunos. Sorteia-se ao acaso um número de 1 a 20, por exemplo, o número 9. Seleciona-se o aluno de número 9 e, depois, os próximos elementos são selecionados de 20 em 20 como uma Progressão Aritmética de razão 20 e primeiro termo 9. 
 
- Os casos mais comuns de métodos não probabilísticos são **amostragem por conveniência** e **amostragem por julgamento**. A amostragem por conveniência carateriza-se por não ter um plano particular de amostragem. O objetivo nesse caso não seria generalizar conclusões e sim descrever as características principais do grupo de estudo.  Nas amostras por julgamento, os elementos da amostra são escolhidos por um especialista no assunto sob investigação. A grande desvantagem dos métodos não probabilísticos é não sermos capazes de avaliar incertezas devido à amostragem.
+Os casos mais comuns de métodos não probabilísticos são amostragem por conveniência e amostragem por julgamento. A amostragem por conveniência carateriza-se por não ter um plano particular de amostragem. O objetivo nesse caso não seria generalizar conclusões e sim descrever as características principais do grupo de estudo.  Nas amostras por julgamento, os elementos da amostra são escolhidos por um especialista no assunto sob investigação. A grande desvantagem dos métodos não probabilísticos é a impossibilidade de avaliar incertezas devido à amostragem.
  
 .. admonition:: Exemplo 
 
- A direção de uma escola de Ensino Médio deseja realizar uma pesquisa para conhecer a opinião de seus 520 alunos sobre a antecipação em 30 minutos dos horários de seus turnos. Para tanto, devem decidir entre as quatro estratégias de seleção de amostra a seguir.
+ A direção de uma escola de Ensino Médio deseja realizar uma pesquisa para conhecer a opinião de seus 520 alunos sobre a antecipação em 30 minutos dos horários de seus turnos. Para tanto, devem decidir entre as seguintes estratégias de seleção de amostra.
 
  #. 40 alunos considerando os primeiros a chegar na  escola na segunda-feira.  *Temos, nesse caso, uma amostra de conveniência, pois a probabilidade de seleção dos alunos não é determinada no plano de amostragem: selecionar os 40 primeiros. Observe também que, esse esquema de seleção não parece razoável para essa pesquisa, pois é possível resultar numa resposta viesada, isto é, tendendo a favorecer à mudança de horário por considerar apenas os primeiros a chegar, não representando necessariamente a opinião da maioria dos 520 alunos da escola.*
  
- #. 40 alunos escolhidos a partir do cadastro de 520 alunos matriculados da seguinte forma: como `520/40=13`, sorteia-se ao acaso um número entre 1 e 13, por exemplo 8; e, depois, seleciona-se do cadastro os alunos nas posições 8, 21, 34, 47,  e, assim sucessivamente de 13 em 13, até o aluno de posição 515 no cadastro de alunos, totalizando 40 observações. *Trata-se de uma amostra sistemática cuja probabilidade de seleção é conhecida, a saber,* `\frac{1}{13}`. *Nesse caso, não é esperada uma resposta viesada,  pois espera-se que as amostras sejam representativas do conjunto de estudantes do colégio.*
+ #. 40 alunos escolhidos a partir do cadastro de 520 alunos matriculados da seguinte forma: como `520/40=13`, sorteia-se ao acaso um número entre 1 e 13, por exemplo 8; e, depois, seleciona-se do cadastro os alunos nas posições 8, 21, 34, 47,  e, assim sucessivamente de 13 em 13, até o aluno de posição 515 no cadastro de alunos, totalizando 40 observações. *Trata-se de uma amostra sistemática cuja probabilidade de seleção é conhecida, a saber,* `\frac{1}{13}`. *Nesse caso, espera-se que a amostra seja representativa do conjunto de estudantes do colégio.*
  
  
- #. 40 alunos sendo 16 do primeiro ano, 14 do segundo ano e 10 do terceiro ano, escolhidos ao acaso e usando o fato de que na escola 40% dos alunos são de primeiro ano, 35% dos alunos são de segundo ano e 25% dos alunos são de terceiro ano. *Trata-se de uma amostra estratificada proprocionalmente ao tamanho dos estratos que corrrespondem aos anos do Ensino Médio. As probabilidades de seleção de amostra são conhecidas.  Nesse caso, também não é esperada uma resposta viesada, pois espera-se que as amostras sejam representativas do conjunto de estudantes do colégio.*
+ #. 40 alunos sendo 16 do primeiro ano, 14 do segundo ano e 10 do terceiro ano, escolhidos ao acaso, tendo em mente que na escola 40% dos alunos são de primeiro ano, 35% dos alunos são de segundo ano e 25% dos alunos são de terceiro ano. *Trata-se de uma amostra estratificada proprocionalmente ao tamanho dos estratos que corrrespondem aos anos do Ensino Médio. As probabilidades de seleção de amostra são conhecidas.  Nesse caso, também espera-se que a amostra seja representativa do conjunto de estudantes do colégio.*
  
  
- #. 40 alunos de uma turma do segundo ano na qual está um filho do diretor. *Trata-se de uma amostra de conveniência e que pode resultar num resultado viesado por se tratar de uma turma na qual está o filho do diretor, tanto a favor, como contra à proposta. o resultado dessa amostra pode ser influenciado pela presença do filho do diretor nessa turma.*
+ #. 40 alunos de uma turma do segundo ano na qual está um filho do diretor. *Trata-se de uma amostra de conveniência e que pode resultar num resultado duplamente viesado, tanto pelo fato de que a turma escolhida não representa necessariamente a maioria dos estudantes da escolat, quanto pela presença do filho do diretor nessa turma que pode influenciar o resultado.*
 
 
-  
 
+.. _sec-coloque-aqui-o-nome:
 
-.. _ativ-projeto:
-
-Atividade: Projeto
--------------------
-
+Projeto
+=======  
 
 .. admonition:: Para o professor
 
    **Objetivos específicos**
    
    Realizar uma pesquisa envolvendo: a definição do tema e da população a ser investigada, a construção do instrumento de coleta de dados, o planejamento e a seleção da amostra. 
-   Após a coleta de dados, os alunos deverão empregar as ferramentas estudadas para resumir a informação obtida por meio de gráficos e cálculo de medidas resumo. Ao final cada grupo deverá elaborar um relatório sobre o tema investigado incluindo os resultados obtidos e suas conclusões.
+   Após a coleta de dados, os alunos deverão empregar as ferramentas estudadas para resumir a informação obtida por meio de gráficos e cálculo de medidas apropriadas ao estudo. Ao final, cada grupo deverá elaborar um relatório sobre o tema investigado, incluindo os resultados obtidos e suas conclusões.
    
    **Observações e sugestões**
    
-   Essa atividade terá duração de pelo menos três meses para que ela possa ser desenvolvida de forma completa e deverá ser realizada preferencialmente nos dois primeiros anos do Ensino Médio. As seguintes etapas deverão ser realizadas. Recomenda-se foretemente definir o universo da pesquisa como o ambiente escolar.
+   Essa atividade terá duração de pelo menos três meses para que ela possa ser desenvolvida de forma completa e deverá ser realizada preferencialmente nos dois primeiros anos do Ensino Médio. As seguintes etapas deverão ser realizadas. Recomenda-se definir o universo da pesquisa como o ambiente escolar para viabilizar a coleta de dados.
    
    #. Definir o tema a ser investigado.  Os temas, preferencialmente interdisciplinares, deverão ser submetidos ao professor para avaliar a viabilidade e pertinência da pesquisa. Uma sugestão pode ser trabalhar com algum assunto que, dentro de três meses será relevante, por exemplo, em três meses teremos o dia mundial sem tabaco, o dia mundial da Diabetes, o dia mundial sem carro, o dia do meio ambiente, dia nacional da acessibilidade, etc. 
    
@@ -70,11 +71,11 @@ Atividade: Projeto
    #. Elaborar um relatório de pesquisa incluindo todas as etapas do projeto, resultados, análises e conclusões.
    
 
-Faça uma investigação sobre algum tema a ser escolhido. Essa atividade deve ser realizada em grupos.  Cada grupo escolherá um tema a ser investigado. Após a aprovação do tema pelo professor, as seguintes etapas deverão ser realizadas: 
+Faça uma investigação sobre algum tema de interesse. Essa atividade deve ser realizada em grupos.  Após a aprovação do tema pelo professor, as seguintes etapas deverão ser realizadas: 
 
 #. Elaborar um cronograma considerando um prazo de três meses para concluir o projeto.
 
-#. Definir a população e os elementos (unidades de observação) (pessoa, família, domicílio, cidade, escolas, turmas,...).
+#. Definir a população e os elementos (unidades de observação) (pessoa, família, domicílio, cidade, escolas, turmas, estudadantes, etc.).
    
 #. Definir como a amostra será escolhida e quantos elementos serão considerados na amostra. 
 
@@ -86,9 +87,9 @@ Faça uma investigação sobre algum tema a ser escolhido. Essa atividade deve s
    
 #. Construir uma planilha com os dados obtidos.
    
-#. Organizar os dados em tabelas e gráficos apropriados ao tipo de variável e calcular medidas resumo quando for o caso, que serão tratadas no capítulo medidas de posição e dispersão. 
+#. Organizar os dados em tabelas e gráficos apropriados ao tipo de variável, resumindo a informação obtida.
    
-#. Elaborar um relatório de pesquisa incluindo todas as etapas do projeto, resultados, análises e conclusões.
+#. Elaborar um relatório de pesquisa, incluindo todas as etapas do projeto, resultados, análises e conclusões.
 
 
 
