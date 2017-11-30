@@ -24,7 +24,13 @@ Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser
    Amostra
     é um subconjunto não-vazio da população.
     
-Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto à modificação da lista de produtos vendidos na cantina para outros mais saudáveis, trocando refrigerantes por sucos naturais entre outros. Para isso, a direção da escola irá entrevistar cinco alunos sorteados de cada uma de suas 40 turmas. Nesse exemplo, a população corresponde a todos os estudantes deste colégio e, a amostra, aos 200 estudantes que foram entrevistados.
+    Cada uma das unidades investigadas em um estudo estatístico é denominada um :index:`elemento<elemento>`.  Assim, cada parafuso investigado é um elemento na atividade "Escolha do fornecedor"; cada paciente observado é um elemento na atividade "Comparação de medicamentos"; e cada domicílio e seus residentes são elementos na atividade da PNAD. 
+
+
+Cada característica observada de um elemento é uma :index:`variável<variável>` estatística. Assim, a medida do diâmetro do parafuso é uma variável na atividade "Escolha do fornecedor", o tempo de cura da dor de cabeça é uma variável na atividade "Comparação de medicamentos" e, na atividade da PNAD, estão presentes várias variáveis estatísticas de interesse do domicílio e de seus residentes tais como local, número de cômodos, número de residentes; sexo, idade e rendimento dos residentes, etc.  
+
+    
+Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto à modificação da lista de produtos vendidos na cantina para outros mais saudáveis, trocando refrigerantes por sucos naturais entre outros. Para isso, a direção da escola irá entrevistar cinco alunos sorteados de cada uma de suas 40 turmas. Nesse exemplo, a população corresponde a todos os estudantes deste colégio e, a amostra, aos 200 estudantes que foram entrevistados. Cada estudante entrevistado é um elemento e, a variável de interesse  é a opinião do estudante: "a favor" ou "contra" à mudança. Num estudo desse tipo, costuma-se registrar também outras variáveis como sexo, idade, ano de ensino, turno, etc. 
     
 .. glossary::
 
@@ -38,14 +44,14 @@ Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto
     
 Voltando ao exemplo anterior, sobre a modificação da lista de produtos da cantina, temos que o parâmetro corresponde à proporção dos estudantes desse colégio que são favoráveis à mudança (na maioria das vezes não acessível, a menos que se realize um censo). O estimador desse parâmetro corresponderá à proporção de estudantes favoráveis à mudança na amostra, que resultará numa estimativa do parâmetro. 
     
-As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente *inferir* sobre parâmetros populacionais de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. 
+As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: a da **Estatística Descritiva** e da **Estatística Inferencial**. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente *inferir* sobre parâmetros de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. Vide a caixa "Para refletir" a seguir.
 
 Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e, a Estatística Inferencial, a indução das informações obtidas da amostra para características da população não observada em sua totalidade.
 
 
 A PNAD faz uso da *inferência estatística*, pois ela investiga uma amostra de domicílios em algumas cidades brasileiras, mas propõe estimativas para as características da população brasileira. 
 
-Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a população, não existe a necessidade de fazer uma *inferência estatística*. No entanto, muitas vezes a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
+Quando se realiza um :index:`censo<censo>` - levantamento de dados de toda a população -, não existe a necessidade de fazer uma *inferência estatística*. No entanto, muitas vezes a realização de um censo é inviável, por várias razões como custo muito alto, tempo muito longo, entre outras. 
 
 .. admonition:: Para refletir
 
@@ -77,6 +83,20 @@ Quando se realiza um :index:`censo<censo>`, levantamento de dados de toda a popu
 Classificação de variáveis 
 --------------------------
 
+A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Nesse sentido é importante reconhecer a natureza de cada variável investigada para posterior tratamento da informação obtida. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular média, pois  ela não assume valores numéricos.
+
+Existem dois tipos principais de variáveis (qualitativas e quantitativas), que se subdividem, por sua vez, em duas categorias, conforme a figura 2.2.
+
+   
+
+.. _fig-classificacao-de-variaveis:
+
+.. figure:: _resources/Tipos_variaveis.png
+   :width: 200pt
+   :align: center
+
+   Classificação dos tipos de variáveis
+
 .. glossary::
    
    Variável qualitativa
@@ -96,7 +116,7 @@ Uma variável qualitativa é classificada em nominal ou ordinal.
 
   Variável qualitativa ordinal
        
-    A variável qualitativa é ordinal quando existe uma ordenação natural das respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: Ensino Fundamental completo, Ensino Médio completo, Ensino Superior incompleto e Ensino Superior completo. Podemos perceber que quem tem Ensino Médio completo tem maior nível de instrução de quem tem Ensino Fundamental completo. 
+    A variável qualitativa é ordinal quando é possível estabelecer uma relação de ordem entre as respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: Ensino Fundamental completo, Ensino Médio completo, Ensino Superior incompleto e Ensino Superior completo. Podemos perceber que quem tem Ensino Médio completo tem maior nível de instrução de quem tem Ensino Fundamental completo. 
     
 .. glossary::
 
@@ -118,21 +138,8 @@ Uma variável quantitativa é classificada em discreta ou contínua.
       
    As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, peso, temperatura, etc.
 
-
-.. _fig-classificacao-de-variaveis:
-
-.. figure:: _resources/Tipos_variaveis.png
-   :width: 300pt
-   :align: center
-
-   Classificação dos tipos de variáveis
-   
-   
-.. admonition:: Observação sobre a classificação de variáveis
-
- A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular média, nem mediana da modalidade, pois trata-se uma variável qualitativa. Nesse caso, é possível identificar a(s) moda(s) que corresponde(m) à(s) resposta(s) mais frequente(s) da modalidade de atividade física praticada. Pelo infográfico 3 verifica-se que futebol é a atividade física mais praticada, ou seja, é a moda dessa variável.
- 
-.. admonition:: Observação sobre a flexibilização na classificação de uma variável
+  
+.. admonition:: Observação
 
  Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Essa estratégia permite somar todas as respostas. Observe que a soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
  
@@ -143,7 +150,7 @@ Uma variável quantitativa é classificada em discreta ou contínua.
 Gráficos para Variáveis Qualitativas
 -------------------------------------
 
-Nas análises dos infográficos, trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, tem-se um **gráfico de barras**. Nesse gráfico, cada barra, de mesma largura, representa uma resposta e seu comprimento corresponde à :index:`frequência<frequência>` na qual a resposta ocorre. Observe também que, nesse gráfico, se estivermos trabalhando com as porcentagens de cada resposta, a soma das porcentagens deve ser 100%.  
+Nas análises dos infográficos, trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, tem-se um :index:`gráfico de barras<gráfico de barras>`. Nesse gráfico, cada barra, de mesma largura, representa uma resposta e seu comprimento corresponde à :index:`frequência<frequência>` na qual a resposta ocorre. Observe também que, nesse gráfico, se estivermos trabalhando com as porcentagens de cada resposta, a soma das porcentagens deve ser 100%.  
 
 Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. Se a variável é nominal, podemos dispor as respostas em ordem decrescente de frequência. 
 
@@ -151,7 +158,7 @@ Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. S
 .. admonition:: :index:`Frequência absoluta<frequência absoluta>` e :index:`frequência relativa<frequência relativa>`
 
  Numa turma de um colégio foram observados os tipos sanguíneos de seus 40 alunos. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as frequências absolutas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a frequência relativa em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10. Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
- É comum resumir esse tipo de informação, usando uma tabela, informando as respostas da variável e suas frequências. Nesse exemplo a variável é tipo sanguíneo e sua classificação é qualitativa nominal, pois assume respostas não numéricas "A", "B", "AB" e "O". Em geral dispomos os valores dessa variável em ordem decrescente de frequência.
+ É comum resumir esse tipo de informação, usando uma tabela, informando as respostas da variável e suas frequências. Nesse exemplo a variável é tipo sanguíneo e sua classificação é qualitativa nominal, pois assume respostas não numéricas "A", "B", "AB" e "O", sem uma ordenação natural. Em geral dispomos os valores dessa variável em ordem decrescente de frequência.
  
  +----------+--------------+-------------+----------------+
  | tipo     | frequência   | frequência  | porcentagem    |
@@ -174,7 +181,7 @@ Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. S
 
 Os gráficos apresentados nos :ref:`infográfico 1 <fig-infografico-pnad-1>` e :ref:`infográfico 2 <fig-infografico-pnad-2>` são gráficos de barras?
 
-Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são **gráficos de barras múltiplas**, úteis para comparar diferentes distribuições de frequências. Observe que, em cada um desses gráficos, a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as porcentagens das respostas *Sim* e *Não* no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de *Sim* em cada subgrupo, pois nesse caso, as correspondentes porcentagens de *Não* são dadas pelo complementar em cada subgrupo considerado. 
+Esses gráficos usam barras para representar as frequências em subgrupos diferentes do conjunto observado. Mas eles não se encaixam na apresentação anterior. Verifique que se somarmos as porcentagens elas não resultarão em 100%. De fato, são :index:`gráficos de barras múltiplas<gráficos de barras múltiplas>`, úteis para comparar diferentes distribuições de frequências. Observe que, em cada um desses gráficos, a variável sob investigação é se a pessoa pratica ou não atividade física. No entanto, em vez de apresentar as porcentagens das respostas *Sim* e *Não* no universo de homens e no universo de mulheres, como a variável é binária, só foram apresentadas as porcentagens de *Sim* em cada subgrupo, pois nesse caso, as correspondentes porcentagens de *Não* são dadas pelo complementar em cada subgrupo considerado. 
 
 .. _fig-infografico-1-detalhe:
 
@@ -186,14 +193,14 @@ Esses gráficos usam barras para representar as frequências em subgrupos difere
 
 O mesmo ocorre quando analisamos os gráficos para faixa etária, grau de instrução e rendimento. Todos são gráficos de barras múltiplas que nos apoiaram em nossas análises sobre a associação entre a prática de atividades físicas e a outra variável (sexo, faixa etária, grau de instrução, rendimento).
 
-No :ref:`infográfico 4 <fig-infografico-pnad-4>`, temos um **gráfico de setores** e dois **gráficos de retângulos**. A ideia por trás desses gráficos é subdividir de maneira proporcional a figura maior em partes cujas áreas em relação à figura maior correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a razão da área de cada setor em relação a área do círculo corresponde a frequência (ou porcentagem) da resposta que ele representa. 
+No :ref:`infográfico 4 <fig-infografico-pnad-4>`, temos um :index:`gráfico de setores<gráfico de setores>` e dois :index:`gráficos de retângulos<gráficos de retângulos>`. A ideia por trás desses gráficos é subdividir de maneira proporcional a figura maior em partes cujas áreas em relação à figura maior correspondam à frequência de cada resposta. Por exemplo, no gráfico de setores, subdividimos o círculo em setores de tal modo que a razão da área de cada setor em relação a área do círculo corresponde à frequência (ou porcentagem) da resposta que ele representa. Portanto a soma das frequências, quando apresentadas em porcentagens, tem que ser igual a 100%.
 
-No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as respostas à pergunta "Quais as áreas em que deve ocorrer investimento público?" para quem respondeu *Não* à pergunta "O poder público deve investir em atividades físcas ou desportivas?" e também para representar as respostas à pergunta "Qual deve ser a prioridade nos investimentos?" para quem respondeu "Sim" à pergunta "O poder público deve investir em atividades físicas ou desportivas?".
+No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é subdividido em retângulos cujas áreas relativas correspondem às porcentagens das respostas que eles representam. Esses gráficos foram construídos para representar as respostas à pergunta "Em quais áreas em que deve ocorrer investimento público?" para quem respondeu *Não* à pergunta "O poder público deve investir em atividades físcas ou desportivas?" e também para representar as respostas à pergunta "Qual deve ser a prioridade nos investimentos?" para quem respondeu "Sim" à pergunta "O poder público deve investir em atividades físicas ou desportivas?".
 
 
 .. admonition:: Observação
 
-   Quando estamos trabalhando com variáveis qualitativas usamos a escala da frequência (absoluta, relativa, porcentagem)  na construção de gráficos para representar a distribuição de frequências das respostas dadas à variável sob investigação. As representações gráficas mais comuns são gráficos de barras e gráficos de setores. Para comparações da mesma variável em grupos diferentes é comum usar o gráfico de barras múltiplas.
+   Quando estamos trabalhando com variáveis qualitativas usamos a escala da frequência (absoluta, relativa, porcentagem)  na construção de gráficos para representar a distribuição de frequências das respostas dadas à variável sob investigação. As representações gráficas mais comuns são gráficos de barras e gráficos de setores. Para comparações da mesma variável em grupos diferentes é comum usar o gráfico de barras múltiplas com frequências relativas ou porcentagens.
 
 .. admonition:: Para o professor
 
@@ -323,7 +330,7 @@ Observe o gráfico a seguir publicado em um jornal.
    
    #. O valor da inflação da alimentação acumulada nos últimos 12 meses é uma variável quantitativa, o período de tempo representado em mês/ano é uma variável qualitativa ordinal. 
     
-   #. (gráfico) Podemos perceber que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
+   #. (gráfico) Como evoluiu a inflação da alimentação acumulada em 12 meses no período investigado, a saber, agosto de 2017 até agosto de 2017. Mais precisamente, percebe-se que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
    
    
 .. _fig-grafico-de-linha-da-inflacao_alimentacao:
