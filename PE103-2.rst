@@ -315,7 +315,105 @@ Dois tipos de gráficos para representar variáveis quantitativas contínuas for
 
    Histograma dos resgistros de tempo considerando oito intervalos
  
-.. incluir histogramas um com unica classe e o outro com 60 classes
+Até aqui, consideramos intervalos de mesma amplitude e usamos, como a altura dos retângulos, a frequência absoluta ou relativa das observações no intervalo. Suponha a seguinte distribuição de frequências de um conjunto de 50 observações.
+ 
++---------------------+----------------------+--------------------+
+| Intervalo de classe | frequência absoluta  |frequência relativa |
++=====================+======================+====================+
+| [ 1 ; 3 [           |   4                  |  0,08              | 
++---------------------+----------------------+--------------------+
+| [ 3 ; 5 [           |     12               |  0,24              |
++---------------------+----------------------+--------------------+
+| [ 5 ; 7 [           |    20                |  0,40              |
++---------------------+----------------------+--------------------+
+| [ 7 ; 9 [           |    8                 |  0,16              |
++---------------------+----------------------+--------------------+
+| [ 9; 11 [           |     6                |   0,12             |
++---------------------+----------------------+--------------------+
+
+Observe que nessa tabela todos os intervalos têm amplitude 2. Veja o histograma construído para esses dados a seguir.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/exemplo_histograma_areas_1.png
+   :width: 600pt
+   :align: center
+
+   Histograma na escala da frequência absoluta
+   
+Verifique que a razão da área de cada retângulo em relação à área total é igual à frequência relativa do intervalo correspondente.
+
+Porém, quando os intervalos apresentam amplitudes desiguais, usar a frequência não será mais apropriado.
+
+Suponha agora a seguinte distribuição de frequências de um conjunto de 50 observações.
+ 
++---------------------+----------------------+--------------------+------------------------+
+| Intervalo de classe | frequência absoluta  |frequência relativa | amplitude do intervalo |
++=====================+======================+====================+========================+
+| [ 1 ; 3 [           |   4                  |  0,08              | 2                      |
++---------------------+----------------------+--------------------+------------------------+
+| [ 3 ; 5 [           |    8                 |  0,16              | 2                      |
++---------------------+----------------------+--------------------+------------------------+
+| [ 5 ; 8 [           |    18                |  0,36              | 3                      |
++---------------------+----------------------+--------------------+------------------------+
+| [ 8 ; 12 [          |    12                |  0,24              | 4                      |
++---------------------+----------------------+--------------------+------------------------+
+| [12; 16 [           |     8                |   0,16             | 4                      |
++---------------------+----------------------+--------------------+------------------------+
+
+
+
+
+
+Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
+
+`\textsf{densidade de frequência absoluta}=\frac{\textsf{frequência absoluta do intervalo}}{\textsf{amplitude do intervalo}}`
+
+`\textsf{densidade de frequência relativa}=\frac{\textsf{frequência relativa do intervalo}}{\textsf{amplitude do intervalo}}`
+
+Veja a seguir uma construção equivocada do histograma desses dados, usando a frequência absoluta.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/histograma_incorreto_2.png
+   :width: 400pt
+   :align: center
+
+   Histograma incorreto
+
+Observe que a razão da área do primeiro retângulo em relação à área total é dada por `\displaystyle{\frac{8}{158}}\approx  0,051`, porém a frequência relativa do primeiro intervalo é 0,08! A razão da área do último retângulo é `\displaystyle{\frac{4\cdot 8}{158}}\approx 0,20`, porém a frequência relativa desse intervalo é 0,16! Ou seja, esse histograma não representa corretamente a distribuição de frequências desses dados. Na tabela a seguir, foram calculadas as densidades de frequência absoluta.
+
++---------------------+----------------------+------------------------+---------------------+
+| Intervalo de classe | frequência absoluta  | amplitude do intervalo |dens. freq. absoluta |
++=====================+======================+========================+=====================+
+| [ 1 ; 3 [           |   4                  | 2                      |2                    |
++---------------------+----------------------+------------------------+---------------------+
+| [ 3 ; 5 [           |    8                 | 2                      |4                    |
++---------------------+----------------------+------------------------+---------------------+
+| [ 5 ; 8 [           |    18                | 3                      |6                    |
++---------------------+----------------------+------------------------+---------------------+
+| [ 8 ; 12 [          |    12                | 4                      |3                    |
++---------------------+----------------------+------------------------+---------------------+
+| [12; 16 [           |     8                | 4                      |2                    |
++---------------------+----------------------+------------------------+---------------------+
+
+Veja a seguir a construção do histograma na escala da densidade de frequência absoluta e observe que agora ele representa corretamente a distribuição de frequências.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+ .. figure:: _resources/histograma_correto.png
+    :width: 400pt
+    :align: center
+
+    Histograma correto
+   
+Comparando as figuras 6.9 e 6.10, podemos perceber que a primeira distorce a estrutura da distribuição de frequências, atribuindo pesos maiores aos intervalos de maior amplitude e, menores, aos intervalos de menor amplitude.
+
+Em que situações há a necessidade de considerarmos intervalos de amplitudes desiguais? 
+   
+Normalmente, na primeira construção dos intervalos consideramos sempre intervalos de amplitudes iguais. Mas pode acontecer, nesse agrupamento, intervalos vazios ou intervalos com um número muito grande de observações. Quando essas situações ocorrem recomenda-se juntar dois intervalos consecutivos no primeiro caso ou subdividir o intervalo no segundo caso.
      
   
 .. admonition:: Gráfico de Barras versus Histograma
@@ -443,20 +541,7 @@ Atividade: Construção de Histogramas quando os intervalos têm amplitudes desi
    
    **Observações e sugestões**
    
-   Nessa atividade é importante construir o histograma usando a escala da frequência, para mostrar que ele não representa corretamente a dsitribuição de frequências desses dados, calculando as áreas relativas de cada retângulo com o histograma incorreto, o aluno perceberá facilmente que essa escala é inadequada.
-  
-
-Quando todos intervalos considerados têm a mesma amplitude, a altura dos retângulos pode ser a frequência absoluta ou relativa de observações que ocorrem no intervalo, mas quando os intervalos apresentam amplitudes desiguais, usar a frequência não será mais apropriado. Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
-
-`\textsf{densidade de frequência absoluta}=\frac{\textsf{frequência absoluta do intervalo}}{\textsf{amplitude do intervalo}}`
-
-`\textsf{densidade de frequência relativa}=\frac{\textsf{frequência relativa do intervalo}}{\textsf{amplitude do intervalo}}`
-
-
-   
-Em que situações há a necessidade de considerarmos intervalos de amplitudes desiguais? 
-   
-Normalmente, na primeira construção dos intervalos consideramos sempre intervalos de amplitudes iguais. Mas pode acontecer, nesse agrupamento, intervalos vazios ou intervalos com um número muito grande de observações. Quando essas situações ocorrem recomenda-se juntar dois intervalos consecutivos no primeiro caso ou subdividir o intervalo no segundo caso.
+   Nessa atividade o histograma deve ser construído, usando a escala de densidade de frequência (absoluta ou relativa). 
    
 Suponha a seguinte distribuição de frequências de salários medidos em salários mínimos para 200 funcionários de uma empresa.
  
@@ -475,30 +560,25 @@ Suponha a seguinte distribuição de frequências de salários medidos em salár
 +---------------------+----------------------+--------------------+
    
 #. Determine as amplitudes de cada intervalo considerado na tabela. 
-#. Construa o histograma desses dados lembrando que a área relativa de cada retângulo em relação a área total deve ser igual à frequência relativa do intervalo que ele representa. Usando a porcentagem como a altura dos retângulos essa propriedade é satisfeita?  
-
-
-.. admonition:: Observação 
-
-   Nessa situação a altura dos retângulos deve ser a densidade de frequência absoluta dada pela razão entre a frequência do intervalo e a amplitude do intervalo ou pela densidade de frequência relativa dada pela razão entre a porcentagem do intervalo e a amplitude do intervalo. 
+#. Construa um histograma adequado para esses dados.   
 
 
 .. admonition:: Resposta 
 
    
- +---------------------+-----------------------+------+----------+----------+
- | Intervalo de classe | freq. absoluta        | %    | amplitude|  d.f.(%) |
- +=====================+=======================+======+==========+==========+
- | [ 2,0 ; 3,0 )       |   12                  |  6   |  1       |     6    |
- +---------------------+-----------------------+------+----------+----------+
- | [ 3,0 ; 5,0 )       |     40                |  20  |     2    |      10  |
- +---------------------+-----------------------+------+----------+----------+
- | [ 5,0 ; 7,0 )       |    80                 |  40  |    2     |     20   |
- +---------------------+-----------------------+------+----------+----------+
- | [ 7,0 ; 10,0 )      |    48                 |  24  |     3    |    8     |
- +---------------------+-----------------------+------+----------+----------+
- | [ 10,0 ; 15,0 )     |     20                |  10  |     5    |     2    |
- +---------------------+-----------------------+------+----------+----------+
+ +---------------------+-----------------------+----------+--------------------------+
+ | Intervalo de classe | freq. absoluta        | amplitude| dens. de freq. absoluta  |
+ +=====================+=======================+==========+==========================+
+ | [ 2,0 ; 3,0 )       |   12                  |  1       |     12                   |
+ +---------------------+-----------------------+----------+--------------------------+
+ | [ 3,0 ; 5,0 )       |     40                |    2     |     20                   |
+ +---------------------+-----------------------+----------+--------------------------+
+ | [ 5,0 ; 7,0 )       |    80                 |    2     |    40                    |
+ +---------------------+-----------------------+----------+--------------------------+
+ | [ 7,0 ; 10,0 )      |    48                 |      3   |    16                    |
+ +---------------------+-----------------------+----------+--------------------------+
+ | [ 10,0 ; 15,0 )     |     20                |    5     |    4                     |
+ +---------------------+-----------------------+----------+--------------------------+
  
  
 .. _fig-coloque-aqui-o-nome:
@@ -512,7 +592,7 @@ Suponha a seguinte distribuição de frequências de salários medidos em salár
    
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/histogramacorreto.png
+.. figure:: _resources/histogramacorreto_1.png
    :width: 300pt
    :align: center
 
