@@ -12,12 +12,9 @@ Conceitos Básicos
 ------------------------------------------
 
 
-.. glossary:: 
+Em geral, a palavra população representa um conjunto de habitantes de um determinado lugar. No entanto, em Estatística, :index:`população<população>` tem um sentido mais amplo e pode ser definida como o conjunto de todos os elementos com pelo menos uma característica em comum. Observe que é exatamente essa característica em comum que vai definir o universo (população) de uma pesquisa.
 
-   População
-    é um conjunto de elementos com pelo menos uma característica em comum.
-
-Em Estatística, a população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria, o conjunto de animais de certa espécie que vivem em uma região, todos os estudantes universitários de um país, etc.
+Assim, em Estatística, a população não precisa ser um conjunto de pessoas, pode ser o conjunto de parafusos fabricados por uma indústria, o conjunto de animais de certa espécie que vivem em uma região, todos os estudantes universitários de um país, etc.
 
 .. glossary::
 
@@ -44,7 +41,7 @@ Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto
     
 Voltando ao exemplo anterior, sobre a modificação da lista de produtos da cantina, temos que o parâmetro corresponde à proporção dos estudantes desse colégio que são favoráveis à mudança (na maioria das vezes não acessível, a menos que se realize um censo). O estimador desse parâmetro corresponderá à proporção de estudantes favoráveis à mudança na amostra, que resultará numa estimativa do parâmetro. 
     
-As etapas da metodologia estatística podem ser divididas em duas estruturas básicas: :index:`Estatística Descritiva<Estatística Descritiva>` e :index:`Estatística Inferencial<Estatística Inferencial>`. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente inferir sobre parâmetros de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. Vide a caixa "Para refletir" a seguir.
+As etapas da análise estatística podem ser divididas em duas estruturas básicas: :index:`Estatística Descritiva<Estatística Descritiva>` e :index:`Estatística Inferencial<Estatística Inferencial>`. A primeira corresponde a uma exploração das informações que podem ser retiradas dos dados amostrais de modo a reconhecer estruturas que possibilitem futuramente inferir sobre parâmetros de interesse. A segunda consiste em estabelecer modelos probabilísticos para que se possa fazer afirmações sobre a população com algum nível de confiança. Vide a caixa "Para refletir" a seguir.
 
 Em resumo, a Estatística Descritiva é uma espécie de arqueologia dos dados observados e, a Estatística Inferencial, a indução das informações obtidas da amostra para características da população não observada em sua totalidade.
 
@@ -204,9 +201,27 @@ No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é sub
 
 .. admonition:: Para o professor
 
-   Como escolher entre o gráfico de setores ou o gráfico de barras para representar a distribuição de frequências de uma variável qualitativa? Se o número de respostas diferentes é grande, maior que 8, ou se  as diferenças nas frequências das respostas são pequenas, por exemplo uma tem porcentagem 22% e a outra tem porcentagem 25%, o gráfico de setores não será adequado, pois pequenas diferenças de ângulos  não são perceptíveis, enquanto que no gráfico de barras é fácil perceber pequenas diferenças. Se deseja-se fazer comparações múltiplas o gráfico de setores não é adequado. Observe que todos infográficos da atividade para comparar diferentes grupos quanto à prática de atividades físicas são gráficos de barras múltiplas. Finalmente, e não menos importante, sempre lembrar que em comparações múltiplas é fundamental relativizar a frequência absoluta usando frequências relativas ou porcentagens quando os grupos investigados têm tamanhos diferentes, pois a diferença em tamanhos pode mascarar possíveis similaridades.
+ Como escolher entre o gráfico de setores ou o gráfico de barras para representar a distribuição de frequências de uma variável qualitativa? Se o número de respostas diferentes é grande, maior que 4, ou se  as diferenças nas frequências das respostas são pequenas, por exemplo uma tem porcentagem 22% e a outra tem porcentagem 25%, o gráfico de setores não será adequado, pois pequenas diferenças de ângulos  não são perceptíveis, enquanto que no gráfico de barras é fácil perceber pequenas diferenças. Se deseja-se fazer comparações múltiplas o gráfico de setores não é adequado. Observe que todos infográficos da atividade para comparar diferentes grupos quanto à prática de atividades físicas são gráficos de barras múltiplas. Finalmente, e não menos importante, sempre lembrar que em comparações múltiplas é fundamental relativizar a frequência absoluta usando frequências relativas ou porcentagens quando os grupos investigados têm tamanhos diferentes, pois a diferença em tamanhos pode mascarar possíveis similaridades. Por exemplo, suponha o exemplo com os dados de tipos sanguíneos dos 40 alunos de uma turma. Agora desejamos comparar as respostas obtidas com um conjunto de 120 observações para as quais 30 são tipo "A"; 12, tipo "AB"; 18, tipo "B" e 60, tipo "O". Os gráficos de barras na mesma escala, usando a frequência absoluta parecem bem diferentes, como mostra a figura a seguir.    
    
+  .. _fig-coloque-aqui-o-nome:
+
+  .. figure:: _resources/exemplo_escala_absoluta.png
+     :width: 200pt
+     :align: center
+
+     Gráficos de barras da distribuição na escla da frequência absoluta
+    
+ Porém, os gráficos construídos, usando a escala da porcentagem, não parecem tão diferentes, como mostra a figura a seguir.
    
+  .. _fig-coloque-aqui-o-nome:
+
+  .. figure:: _resources/exemplo_escala_porcentagem.png
+     :width: 200pt
+     :align: center
+
+     Gráficos de barras na escala da porcentagem 
+    
+ Comparando os dois, percebem-se  apenas pequenas diferenças quanto às porcentagens dos sangues tipo "AB" e tipo "B", comparando os dois gráficos.
 
 ********************
 Praticando o assunto
@@ -228,7 +243,7 @@ Atividade: Prática de Atividade Física na turma
    
   * Preparar uma tabela a ser preenchida pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. A tabela poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas, para efeito de comparação com os infográficos, sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunos que essa será uma amostra de conveniência, pois o interesse é estudar o perfil da turma quanto à prática de atividades físicas e por isso, as respostas da turma podem não ser similares às da pesquisa.
    
-  * Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas quando forem feitas comparações para grupos diferentes, como por exemplo, sexo.
+  * Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas, isto é, gráficos de barras separados por grupos diferentes, como por exemplo, sexo.
 
 Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da turma com os dados obtidos da PNAD/2015. Para isso preencha o formulário de dados fornecido pelo professor. Construa tabelas e gráficos resumindo a informação obtida. 
 
@@ -258,7 +273,7 @@ Suponha que cada uma das variáveis a seguir foi observada para todos os alunos 
 #. nota obtida na última avaliação de Matemática
 #. se tirou nota maior ou igual a 6,0 ou menor do que 6,0 na última avaliação de Matemática
 #. distância da casa à escola
-#. se o indivíduo possui ou não um cartão de crédito
+#. se o indivíduo possui cartão de crédito ou não
 #. modo de locomoção para a escola
 
 .. admonition:: Resposta 
