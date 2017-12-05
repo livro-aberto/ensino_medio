@@ -1,3 +1,495 @@
+.. admonition:: Para o professor
+
+   **Habilidades e pré-requisitos**
+   
+   Neste capítulo contemplam-se as seguintes habilidades da segunda versão da `Base Nacional Comum Curricular (BNCC): <http://historiadabncc.mec.gov.br/documentos/bncc-2versao.revista.pdf>`_
+
+   .. admonition:: EM11MT07
+
+      Reconhecer função afim e suas representações algébrica e gráfica, identificar o modelo de variação e a taxa de variação, incluindo os casos em que a variação é proporcional (linear), e utilizar essas noções para representar e resolver problemas como os de Movimento Uniforme, entre outros.
+    
+   .. admonition:: EM11MT08
+    
+      Reconhecer progressões aritméticas como sequências numéricas de variação linear, associá-las a funções afins de domínios discretos e utilizá-las para resolver problemas.
+
+   Os pré-requisitos para este capítulo são:
+
+   (EF07MA13) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas.
+
+   (EF07MA14) Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax+b=c`, fazendo uso das propriedades da igualdade.
+   
+   (EF09MA05) Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.
+
+   (EF09MA07) Resolver problemas que envolvam a razão entre duas grandezas de espécies diferentes, como velocidade e densidade demográfica.
+   
+   
+
+   Prezado colega, o presente capítulo foi concebido a partir de uma abordagem de função afim, não usual. Deixamos a cargo do aluno levantar conjecturas a respeito dos conceitos, definições e propriedades das funções afins; claro que essas conjecturas ou indagações são provocadas por meio de atividades que abordam os conceitos a serem trabalhados. As atividades estão distribuídas por critérios que priorizam a ordem que achamos que cada conceito deve ser apresentado e desenvolvido.
+
+   Como é dito no texto de abertura do capítulo, iniciamos com o conceito de função linear associando-o à ideia de grandezas proporcionais. É muito comum estudantes nessa faixa etária acreditarem que praticamente todas as grandezas se relacionam de maneira proporcional, isso deve-se à grande quantidade de situações-problema a que eles foram apresentados no decorrer do Ensino Fundamental que podiam ser resolvidas pelo método intitulado: “Regra de Três”. Portanto esperamos que na condução das atividades, o professor chame a atenção de seus estudantes para este fato, reforçando por meio de exemplos ou atividades posteriores (do próprio capítulo) que existem grandezas que não se relacionam proporcionalmente.
+   
+   Não esperamos, com este capítulo que o estudante compreenda profundamente a demonstração do Teorema Fundamental da Proporcionalidade, mas que ele seja capaz de usá-lo para determinar quando uma dada situação envolve ou não proporcionalidade entre as grandezas. Contudo, é de suma importância que você, professor, conheça o Teorema e sua demonstração (que pode ser encontrada, por exemplo, no livro "A Matemática do Ensino Médio, vol 1" [Lima-2006]_) incluindo as equivalências que permitem verificar quando uma relação é uma proporcionalidade.
+
+   Busque com seus estudantes desenvolver as atividades, de maneira a deixá-los livres para criar conjecturas ou até mesmo a chegar a conclusões, por meio de argumentos diversos, sejam eles visuais, geométricos, algébricos, lógicos ou até mesmo dissertativos.
+
+   Vale ressaltar alguns pontos:
+
+   * Boa parte das atividades tem como objetivo de apontar para os alunos a importância da análise da taxa de variação para inferirmos se uma função é afim ou não. Neste capítulo, resolvemos não associar a **taxa de variação** ao **coeficiente angular** da reta, pois ao se tratar de grandezas diversas, essa associação passa a ser equivocada, já que as grandezas podem se apresentar com escalas distintas ou mesmo a situação não apresentar um ângulo (por exemplo, o que é o ângulo em uma função que relaciona temperatura e altitude?). O ângulo tem apelo visual independente das escalas escolhidas para os eixos, e assim, chamar a taxa de variação de coeficiente angular pode trazer confusão, veja a figura abaixo.
+
+   .. _fig-coef-ang:
+
+      .. figure:: _resources/coef_ang.png
+         :width: 300pt
+         :align: center
+
+
+   Portanto, deixaremos a seguinte relação, função afim tem taxa de variação e equação da reta tem coeficiente angular.
+
+   * Também não achamos adequado o termo *coeficiente linear* para o `b` em `f(x)=ax+b`. Primeiramente porque, quando ele é não nulo a função deixa de ser "linear", então ele funciona mais como uma medida da "não-linearidade" da função do que como seu coeficiente linear. Em alguns livros ele também é chamado de *intercepto*. Também optamos por não utilizar essa nomenclatura por ela ser restringir apenas aos casos em que os eixos estão na posição tradicional (isto é, se cruzando no `(0,0)`) e além disso, `0` deve pertencer ao domínio da função em questão. Por exemplo, o que significa o valor `3` na para a função `f:[1,5]\to \mathbb{R}`, `f(x)=x+3`? Por essas razões resolvemos não dar um nome para o "`b`", apenas lhe dar um significado geométrico que serve em qualquer situação: a medida da translação vertical que se faz no gráfico da função linear `\ell(x)=ax` para se obter o gráfico da função `f(x)=ax+b`.
+
+   * Em alguns livros o capítulo tem o nome de “Função do 1° grau”, também acreditamos que esse termo é equivocado pois função não tem grau, quem tem grau é polinômio. Ou seja, podemos dizer que toda função afim é uma função cuja expressão é um polinômio de 1° grau.
+   * Também é comum, apresentarmos uma função afim da forma `f(x)=ax+b`, sem se preocupar se o seu domínio é real ou não. Algumas atividades abordam funções com domínios discretos, outras cujos domínios são intervalos reais. Portanto aconselhamos que ressalte para seus estudantes a importância do domínio da função, como por exemplo: `f:\mathbb{R}\to\mathbb{R}` onde `f(x)=2x+1` ; `g:[0,2]\to \mathbb{R}` onde `g(x) = -2x`   e  `h:\mathbb{N}\to\mathbb{R}` onde `h(n)=3n-5`; logo temos que `f` é uma reta; `g` é um segmento de reta e por último `h` é um conjunto de pontos de uma reta.
+   * Pode ocorrer que algum estudante tente associar uma reta decrescente a uma relação de proporcionalidade inversa. Caso essa questão seja levantada durante a execução das atividades, tente mostrar a seus estudantes, com um exemplo simples, como é a curva que representa a variação de proporcionalidade inversa (hipérbole). Decidimos não discutir esse assunto nesse capítulo para que não ficasse demasiadamente extenso.
+   * Utilize com frequência recursos computacionais para gerar novas atividades ou dar um “ar” mais dinâmico às do capítulo. Existem duas atividades que apresentam versões digitais criadas no Geogebra. Caso não consiga trabalhá-las em sala de aula, estimule seus estudantes a acessarem seus respectivos links.
+   * As habilidades que estão listadas como pré-requisitos são retomadas pelas atividades e eventualmente um pouco mais aprofundadas em relação à maneira como elas são exploradas no Ensino Fundamental.
+   
+   **Alguns distratores** (apontados pela literatura de pesquisa)
+   
+   * A repetida confirmação da validade da proporcionalidade - juntamente com o status intuitivo que o conceito recebe gradualmente - pode conduzir a uma ideia errada: se houver uma relação entre duas variáveis, essa relação provavelmente é proporcional. Estudos mostram que existe uma tendência generalizada entre os estudantes americanos com idade de `12` a `16` anos de que, se uma figura aumentar de `k` vezes, a área e o volume dessa figura serão ampliados também de `k` vezes. [Dooren-et-al-2005]_
+   
+   * A pesquisa tem documentado dificuldades dos estudantes com o conceito de inclinação. Há confusões associadas ao cálculo da inclinação e à interpretação de funções lineares e seus gráficos. Os estudantes também apresentam dificuldades em relacionar gráficos a equações lineares e à noção de taxa de variação. Eles têm dificuldade em perceber a inclinação como uma razão e conectar tal razão ao modelo físico. [Stump-1999]_
+   
+   * Nem toda razão pode ser expressa por números racionais, o que vincula, por meio da proporcionalidade, a apresentação dos números irracionais. Isso sinaliza que nem todas as situações podem ser resolvidas recorrendo-se apenas aos números racionais. [Silva-et-al-2013]_
+   
+   **Referências Bibliográficas**
+
+   .. [Dooren-et-al-2005] Dooren W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L.: Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, V. 23, p. 57 –86.
+   
+   .. [Lima-2006] Lima, E. A matemática do ensino médio – Vol. 1,  9a ed. Coleção do Professor de Matemática. Sociedade Brasileira de Matemática, Rio de Janeiro.
+
+   .. [Silva-et-al-2013] Silva, A. da F. G; Pietropaolo, R. C.; Campos, T. M. M. Atual currículo de matemática do estado de São Paulo: indicações para a introdução do ensino da ideia de irracionalidade. Boletim GEPEM, Rio de Janeiro, n. 62, p. 31-44.
+   
+   .. [Stump-1999] Stump, S. Secondary mathematics teachers' knowledge of slope. Mathematics Education Research Journal, 11(2), 124–144.
+
+
+
+No capítulo anterior, você foi apresentado ao conceito de função, que nada mais é que uma relação entre duas grandezas que atende algumas condições. Neste capítulo pretendemos colocá-lo em contato com um dos modelos mais presentes em observações científicas e até mesmo em nosso cotidiano, o modelo linear, aqui representado pelo conceito de *função afim*. Este modelo pode ser percebido, seja nas relações de compra/consumo e venda, no esvaziamento de um recipiente por um ralo em função do tempo ou até mesmo nas relações entre distância e tempo do "movimento uniforme" estudado pela Cinemática.
+
+Iniciaremos o capítulo com o estudo de um tipo específico de função afim, a *função linear*. Esta deve ser encarada como um novo olhar sobre um objeto de conhecimento já abordado anteriormente, o conceito de proporcionalidade. Há inúmeras situações que podemos modelar usando proporcionalidade, basta que as grandezas se relacionem desta maneira; mas também há inúmeras outras onde não há proporcionalidade. Para podermos saber decidir se as grandezas são ou não proporcionais, apresentamos o Teorema Fundamental da Proporcionalidade e através de algumas atividades, relacionamos esse conceito com a definição de função linear. Não se assuste ao resolver alguns itens dessas atividades utilizando o processo intitulado “regra de três”, esse método de resolução é justificável por meio do Teorema Fundamental da Proporcionalidade, e consequentemente pode ser relacionado com alguns dos conceitos e propriedades da função linear, que serão apresentados no decorrer do capítulo.
+
+Já a função afim propriamente dita é apresentada através de uma atividade que utiliza conceitos básicos do estudo do movimento uniforme. Nos apropriamos do conceito de velocidade constante para introduzir a ideia de taxa de variação. A análise da taxa de variação é de suma importância para podermos afirmar se uma função apresentada é ou não afim. E por meio de translações no gráfico da função linear é que chegamos na definição de função afim.
+
+As demais atividades têm como objetivo de colocá-lo em contato com outras situações que permitem modelagem por meio de função afim, de preferência que abordem outras áreas do conhecimento, ou até mesmo, conceitos da própria matemática que já foram ou serão abordados futuramente, como é o caso de *Progressão Aritmética (P.A.)* e do estudo financeiro dos *Juros Simples*, também casos particulares de função afim.
+
+Responda cada uma das atividades com calma e clareza, e não hesite em pedir auxílio ao seu professor se alguma parte da atividade não estiver clara ou exigir algum outro conhecimento que você não domine.
+
+
 *******
-AF107-0
+Explorando: função linear
 *******
+
+
+.. _ativ-qual-area:
+
+Atividade: Qual é a área?
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Reconhecer, a princípio, a relação visual de dependência entre as grandezas abordadas na atividade, no caso, a medida do ângulo central e a medida da área do setor circular.
+   
+   * Inferir que a medida da área do setor é diretamente proporcional a medida do ângulo central.
+   
+   * Elaborar estratégias para descobrir a medida da área do setor circular dada a medida do ângulo central e vice-versa.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nos dois primeiros itens procure incentivar os alunos a resolver o problema utilizando apenas processos mentais, ou ao menos na hora de discutir a solução, utilize estratégias como:
+   
+   #. Como `\dfrac{1}{4}` de `20` é `5`, e `14` é um valor um pouco menor que `\dfrac{3}{4}` de `20`.
+   #. Ao analisar as opções descartamos a opção "b" por ser uma região menor que `\dfrac{3}{4}` da área do círculo, descartamos também a opção "c" por se tratar de um valor entre `15` e `20` só que mais próximo de `15`, logo a resposta correta está representada pela opção "a".
+   
+   * Nos itens `3` e `4`, discuta com a turma a importância de ter sido apresentado o ângulo.
+   
+   * Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/Xjjym4e7>, que é a versão eletrônica dessa atividade.
+
+   .. figure:: _resources/codigo.png
+      :width: 100pt
+      :align: center
+   .. figure:: _resources/ativ1_2.*
+      :width: 400pt
+      :align: center
+
+`1.` Cada círculo representado abaixo tem área total `20`. Em qual das opções abaixo o setor circular indicado pela cor amarela tem área `14`?
+
+
+.. _fig-setor1:
+
+.. figure:: _resources/setor1.png
+   :width: 500pt
+   :align: center
+
+`2.` Agora, escolha o setor circular amarelo de área `18`.
+
+
+.. _fig-setor2:
+
+.. figure:: _resources/setor2.png
+   :width: 500pt
+   :align: center
+
+`3.` Que critério você utilizou para resolver os itens anteriores? Aplique-o para determinar qual dos três setores a seguir tem área `7`.
+
+
+.. _fig-setor3:
+
+.. figure:: _resources/setor3.png
+   :width: 500pt
+   :align: center
+
+`4.` Possivelvemente você encontrou alguma dificuldade para encontrar a resposta correta no item anterior. Que tal acrescentarmos uma informação a mais para ajudar na decisão?
+
+
+.. _fig-setor4:
+
+.. figure:: _resources/setor4.png
+   :width: 500pt
+   :align: center
+
+`5.` E agora? Como você usou a informação sobre o ângulo para ajudar no cálculo da área? Faça mais uma vez e descubra qual dos setores abaixo tem área `4`.
+
+
+.. _fig-setor5:
+
+.. figure:: _resources/setor5.png
+   :width: 500pt
+   :align: center
+
+
+.. admonition:: Resposta 
+
+   `1.` b)
+   
+   `2.` a)
+   
+   `3.` Uma possível resposta seria: sendo a área total do círculo igual a `20`, então `\dfrac{1}{4}` do círculo equivale a uma área `5`. No entanto, como as áreas destacadas nos itens apresentados estão muito próximas esse critério não nos permite concluir com exatidão qual seria a resposta correta, que no caso é o item b).
+   
+   `4.` b)
+   
+   `5.` Fazendo uma regra de três. item a).
+
+
+********
+Organizando as ideias: função linear
+********
+
+Na :ref:`ativ-qual-area` relacionamos a área do setor circular com seu ângulo central. Você provavelmente usou a famosa “regra de três” para resolver as questões que foram propostas. De fato, essa técnica é eficaz sempre que a situação envolver duas grandezas que são proporcionais.
+
+**Definição:** Diz-se que duas grandezas são diretamente proporcionais quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número real, a quantidade correspondente da outra fica multiplicada pelo mesmo número.
+
+
+.. admonition:: caixa sem título
+
+   Podemos interpretar a definição acima utilizando a notação de função. Suponha que as grandezas `x` e `y` sejam diretamente proporcionais e que se relacionem por uma função `f` de tal maneira que `y=f(x)`. Pela definição, se `y` é a imagem de `x`, então `ky` deve ser a imagem de `kx`, qualquer que seja `k\in\mathbb{R}`.
+
+   .. math::
+   
+      x -- y \\
+      kx -- ky
+      
+   Sendo assim, `f(kx)= ky = kf(x)`.
+
+Na :ref:`ativ-qual-area`, as grandezas **área do setor circular**, `S`, e o **ângulo central**, x, estão relacionadas de maneira que a primeira é função da última, isto é, podemos considerar a função `S:[0,360] \to \mathbb{R}`, que a cada ângulo `x` associa a área `S(x)` do setor circular de ângulo central `x`.
+
+Primeiro, observe que a medida em que o ângulo aumenta, a área do setor também aumenta. isto significa, em termos da função `S`, que se trata de uma função crescente. Considere agora um setor central `\alpha`, cuja área é `A`, ou seja, `S(\alpha)=A`.
+
+.. figure:: _resources/um_setor.png
+   :width: 200pt
+   :align: center
+
+Se outro setor circular tem ângulo central `2\alpha` então ele é equivalente a dois setores iguais ao original e portanto ele terá área `2A`, isto é, `S(2\alpha)=2A`. 
+
+.. figure:: _resources/dois_setor.png
+   :width: 200pt
+   :align: center
+
+Da mesma forma se o ângulo central é `3\alpha` a área do setor é `3A`, isto é, `S(3\alpha)=3A`, e assim sucessivamente.
+
+.. figure:: _resources/tres_setor.png
+   :width: 200pt
+   :align: center
+
+A partir dessa ideia, então, podemos conjecturar que, para qualquer número natural `m`, a área de um setor circular de ângulo central `m\alpha` será `S(m\alpha)=mA`. Ou ainda, podemos escrever assim
+
+.. math::
+
+   S(m \cdot \alpha)=m \cdot S(\alpha).
+
+Como o ângulo `\alpha` escolhido poderia ser qualquer número real, podemos dizer que para qualquer `x \in \mathbb{R}` e qualquer `m \in \mathbb{N}` temos que a função `S` tem a seguinte propriedade
+
+.. math::
+
+   S(m \cdot x)=m \cdot S(x).
+
+Esta propriedade se parece bastante com a que enunciamos acima para relacionar grandezas proporcionais mas tem uma diferença! Você consegue perceber qual é?
+
+Para podermos afirmar que as grandezas relacionadas pela função `S` são diretamente proporcionais, deveríamos verificar a igualdade acima para `m \in \mathbb{R}` e não apenas natural como verificamos.
+
+No entanto existe o **Teorema Fundamental da Proporcionalidade** que afirma que, para podermos dizer que duas grandezas que se relacionam por meio de uma função `f: \mathbb{R} \to \mathbb{R}`são diretamente proporcionais basta verificarmos duas condições:
+
+#. A função que relaciona as duas grandezas é crescente ou descrescente;
+#. `f(m \cdot x)=m \cdot f(x)` para todo `m \in \mathbb{Z}` e para todo `x \in \mathbb{R}`.
+
+No caso em que as grandezas são positivas, como no caso da área dos setores circulares e ângulos, a segunda consição precisa ser verificada apenas para `m \in \mathbb{N}`.
+
+Portanto, podemos, pelo Teorema Fundamental da Proporcionalidade, afirmar que a área do setor circular é proporcional ao seu ângulo central.
+
+Desejamos agora representar o gráfico da função `S`. Para isso vamos novamente supor que a área total do círculo é `20` e começar localizando no plano cartesiano alguns pontos.
+
+.. figure:: _resources/graf_setor.png
+   :width: 400pt
+   :align: center
+
+Observe a figura abaixo. Nela, os quatro triângulos destacados são todos congruentes, o que nos mostra que os pontos marcados são colineares, isto é, estão todos sobre uma mesma reta. Como estamos tratando de grandezas proporcionais, dados quaisquer valores `x` e `x'` estejam no intervalo `[0,360]`, sabemos que `S(x)` está para `x` assim como `S(x')` está para `x'`, ou seja,
+
+.. math::
+
+   \dfrac{S(x)}{x}=\dfrac{S(x')}{x'}.
+
+
+.. _fig-triangulos:
+
+.. figure:: _resources/graf_setor2.png
+   :name: triangulos
+   :width: 400pt
+   :align: center
+
+Esta identidade implica que os triângulos destacados na figura a seguir são semelhantes (basta considerar `x'=90`), e portanto podemos concluir que os pontos `(0,0), (90,5) e (x,S(x))` são colineares.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/graf_setor3.png
+   :width: 400pt
+   :align: center
+
+
+.. figure:: _resources/graf_setor4.png
+   :width: 400pt
+   :align: center
+
+Ainda da última identidade, colocando `x'=90`, podemos deduzir uma expressão algébrica para `S(x)`. Vejamos,
+
+
+.. math::
+
+   \dfrac{S(x)}{x}=\dfrac{S(90)}{90} \Longrightarrow \dfrac{S(x)}{x}=\dfrac{5}{90} \Longrightarrow \dfrac{S(x)}{x}=\dfrac{1}{18} \Longrightarrow S(x)=\dfrac{x}{18}
+
+
+.. admonition:: Conclusão 
+
+   Em um círculo de área `20`, a área de um setor circular é proporcional ao seu ângulo central `x`, e é dada pela função `S:[0,360] \to \mathbb{R}` cuja expressão é `S(x)=\dfrac{x}{18}` e o gráfico é dado pelo segmento de reta abaixo.
+
+.. figure:: _resources/graf_setor5.png
+   :width: 400pt
+   :align: center
+
+De uma maneira mais geral, sempre que tivermos duas grandezas proporcionais relacionadas por uma função `f: \mathbb{R} \to \mathbb{R}`, basta conhecer a imagem de algum `c \neq 0`, para podermos deduzir uma expressão para ela:
+
+.. math::
+
+   \dfrac{f(x)}{x}=\dfrac{f(c)}{c} \Longrightarrow f(x)=\dfrac{f(c)}{c} \cdot x.
+
+Por causa da proporcionalidade entre grandezas, o quociente `\dfrac{f(c)}{c}` é o mesmo para qualquer escolha que fizermos para `c`, sendo assim, podemos representar este valor constante por uma letra
+
+.. math::
+
+   f(x)=a \cdot x
+
+Uma função real de variável real `f` que pode ser expressa pela regra acima, chama-se **função linear**.
+
+
+.. admonition:: Pausa para reflexão
+
+   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? Pense no seguinte caso: A área de um círculo de raio `2r` é igual a soma das áreas de `2` círculos de raio `r`?
+
+   .. figure:: _resources/area_soma.png
+      :width: 400pt
+      :align: center
+
+.. _ativ-purificador:
+
+Atividade: Quando trocar o filtro do purificador?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Identificar num conjunto de grandezas distintas e apresentadas em um quadro, duas grandezas que atendem as especificações da situação problema.
+   
+   * Perceber a relação da razão entre as grandezas com a taxa de variação da função linear.
+   
+   * Aplicar os conceitos de função linear com o intuito de resolver a situação problema.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d), explore com seus alunos o motivo pelo qual o resultado é o mesmo em ambos os casos.
+   
+   * Utilize o fato que a atividade anterior também aborda o conceito de função linear e faça um comparativo com os gráficos das duas atividades.
+   
+   * Se possível, consulte seu diretor ou responsável direto, como anda a troca dos filtros dos bebedouros da sua escola. Caso consiga o manual dos fabricantes, simule a mesma atividade com os dados da realidade de sua escola.
+   
+   * Conduza seus estudantes a perceber a diferença entre a resposta do item (e) que é uma razão: `9` litros/dia, e as respostas dadas aos dois itens anteriores em que tratam do consumo em litros para cada intervalo de tempo.
+
+Há `1` ano você adquiriu um purificador de água com capacidade de refrigeração, e deseja saber quanto tempo falta para realizar a troca do filtro interno. No manual do fabricante do seu purificador, você encontra o seguinte quadro:
+
+.. figure:: _resources/purificador.png
+   :width: 450pt
+   :align: center
+
+
+#. Quais informações do quadro são relevantes para responder à sua dúvida?
+#. Explique com suas palavras o significado da vazão 0,75 litros/minuto.
+#. Para calcular a vida útil do seu filtro interno, é necessário estimar a quantidade de água consumida diariamente na sua casa. Suponha, então, que você observou que o purificador é acionado ao longo de um dia o equivalente ao tempo total de 12 minutos. Quantos litros de água são consumidos em um dia, nessas condições? (assuma que o purificador foi regulado para funcionar com a vazão máxima recomendada pelo fabricante)
+#. Assumindo que o consumo estimado no item anterior seja o mesmo para todos os dias, qual foi o consumo de água do purificador ao final do primeiro dia de uso? E entre o 10º e o 11º dias de uso?
+#. Qual o aumento do consumo de água observado para cada dia de uso do purificador?
+#. Calcule a vida útil do filtro interno do seu aparelho e, supondo que você tenha utilizado o seu purificador todos os dias desde a instalação, determine em quanto tempo você deverá solicitar a troca do seu filtro interno.
+#. Com base nas informações que você possui, encontre uma expressão matemática que relacione o consumo de água do purificador em função do tempo de uso em dias e represente-a graficamente.
+
+
+.. admonition:: Resposta 
+
+   #. Vida útil do elemento filtrante e vazão máxima recomendada.
+   #. A cada minuto sai `0,75` litro de água do purificador.
+   #. `0,75 \times 12=9` litros.
+   #. `9` litros em ambos os casos.
+   #. `9` litros.
+   #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
+   #. `f(t)=9t`.
+
+   .. figure:: _resources/grafico_filtro.jpeg
+      :width: 350pt
+      :align: center
+
+********
+Organizando as ideias: taxa de variação
+********
+
+Dizer que o consumo diário em uma casa é de `L` litros/dia (lê-se: `L` litros por dia) significa dizer que a cada dia a mais de uso, a quantidade total de água consumida aumenta `L` litros.
+
+Representando por `f` a função que expressa o consumo de água em litros em relação ao tempo `t` em dias, a afirmação anterior pode ser traduzida da seguinte maneira:
+
+.. math::
+
+   f(1)=L \quad e \quad f(t+1)=f(t)+L
+
+Considere agora um tempo `T`. O consumo de água nesse período é representado pelo valor `f(T)`. Se quisermos saber o consumo de água no período correspondente ao dobro desse tempo precisamos calcular `f(2T)`. Esse valor é igual a `f(T+T)` que representa o consumo de água num período correspondente a uma sucessão de dois períodos iguais de tempo `T`.  Como o consumo é o mesmo para intervalos iguais de tempo, podemos afirmar que o consumo total será dado pela soma dos consumos em cada intervalo de tempo `T`, isto é,
+
+.. math::
+
+   f(2T)=f(T+T)=f(T)+f(T)=2f(T).
+
+Dessa forma, `f(3T)=f(2T+T)=f(2T)+f(T)=3f(T)`, e aplicando o mesmo raciocínio, temos para qualquer que seja o `n` natural,
+
+.. math::
+
+   f(nT)=nf(T).
+
+A igualdade acima, junto com o fato de `f` ser uma função crescente, nos permite concluir, pelo Teorema Fundamental da Proporcionalidade, que `f` é uma proporcionalidade direta e portanto para todo `t \in \mathbb{R}`
+
+.. math::
+
+   \dfrac{f(t)}{t}=\dfrac{f(1)}{1} \Longrightarrow \dfrac{f(t)}{t}=\dfrac{L}{1} \Longrightarrow f(t)=Lt.
+
+A função `f` é uma função linear e o número `L` que aparece multiplicando `t` é a *taxa de variação* entre as grandezas.
+
+
+.. admonition:: sem título 
+
+   Em qualquer função linear `f`, a *taxa de variação* de `f` é o valor constante dado pelo quociente `\dfrac{f(x)}{x}`, para qualquer `x \neq 0`.
+   
+   Assim, `\dfrac{f(x)}{x}=a` e portanto `f(x)=ax`.
+
+Por exemplo, para a função `S(x)=\dfrac{x}{18}` da :ref:`ativ-qual-area`, a taxa de variação é `\dfrac{1}{18}`, isto é, cada aumento de `1` grau no ângulo central do setor gera um aumento de `\dfrac{1}{18}` em sua área.
+
+.. admonition:: Algumas propriedades da função linear: 
+
+   * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
+   
+   .. math::
+
+      f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
+
+
+   .. figure:: _resources/taxa.png
+      :width: 350pt
+      :align: center
+
+   * Perceba pela figura acima, que, para taxas positivas, quanto maior for a taxa de variação, mais inclinada será a reta do gráfico.
+   
+   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem do plano cartesiano pertencerá ao gráfico de `f`.
+   
+   * Os dois exemplos que vimos neste capítulo apresentam taxa de variação positiva. Contudo, é possível que uma função linear tenha taxa de variação negativa, por exemplo, podemos ter `f(x)=-2x`. Isso significa que a cada aumento de `1` no valor de `x` há uma diminuição de `2` no valor de `f(x)`, isto é, `f(x+1)=f(x)-2`. Há também reflexos no gráfico de `f` que passará a estar contido em uma reta decrescente.
+   
+
+   .. figure:: _resources/image_negativa.png
+      :width: 350pt
+      :align: center
+
+   * O gráfico de uma função linear está contido em uma reta que passa pela origem do plano cartesiano, cuja inclinação dependerá do sinal de `a`, conforme mostra a figura.
+
+   .. figure:: _resources/graf_linear1.png
+      :width: 350pt
+      :align: center
+
+   .. figure:: _resources/graf_linear2.png
+      :width: 350pt
+      :align: center
+
+   Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/FSnzt9vC>.
+
+   .. figure:: _resources/codigo2_2.png
+      :width: 100pt
+      :align: center
+
+   .. figure:: _resources/taxa_linear.*
+      :width: 400pt
+      :align: center
+   
+   * Se uma reta contém a origem do plano cartesiano e o ponto `(x_0,y_0)` com `x_0\neq 0`, então ela é o gráfico da função linear `f:\mathbb{R}\to\mathbb{R}`, dada por `f(x)=ax`, em que `a=\dfrac{y_0}{x_0}`.
+   
+   Para ver isso, basta olhar para os dois triângulos retângulos destacados da figura abaixo e usar o fato de que são semelhantes para concluir que
+   
+   .. math::
+
+      \dfrac{f(x)}{x}=\dfrac{y_0}{x_0} \Longrightarrow f(x)=\dfrac{y_0}{x_0} \cdot x
+
+
+   .. figure:: _resources/reciproca.png
+      :width: 350pt
+      :align: center
+
+   Por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`
+
+   .. figure:: _resources/38.png
+      :width: 350pt
+      :align: center
+
+      Gráfico da função `f(x)=\dfrac 83 x`.
+      
+   .. figure:: _resources/25.png
+      :width: 350pt
+      :align: center
+
+      Gráfico da função `g(x)=-\dfrac{2}{5}x`.
+
+   Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.
+   
+   
