@@ -1,3 +1,92 @@
 ***************
 Para saber mais
 ***************
+
+Atividade: Afim de um passeio
+------------------------------
+
+.. admonition:: Para o professor
+
+   OBJETIVOS ESPECÍFICOS
+   
+   Levar o estudante a:
+   
+   * Compreender função afim por partes.
+   
+   OBSERVAÇÕES E RECOMENDAÇÕES
+   
+   * Experiências envolvendo um contexto simples como esse apresentado na atividade podem ser úteis para explorar o significado da inclinação zero  de uma reta. Aproveite a oportunidade para comentar sobre a diferença entre inclinação zero, que é o caso da inclinação do segmento de reta que representa o período em que o personagem da situação descrita na atividade permanece parado, e ausência de inclinação que é observado em retas verticais.
+   
+   * Apresentamos uma possível resposta com o gráfico contendo a origem, no entanto não é necessário iniciar a representação a partir do ponto `(0,0)`.
+   
+   * Se achar necessário peça para os estudantes efetuarem a conversão de `km/h` para `m/min`, no entanto as distâncias percorridas podem se obtidas utilizado-se o seguinte raciocínio: se em `1` hora ele percorre `1000` metros, em `12` minutos que corresponde a `\dfrac{1}{5}` de hora, ele percorre `\dfrac{1000}{5}=200` metros.
+
+
+Você caminha por `12` minutos a uma taxa de `1` km por hora,  ao encontrar um amigo permanece parado conversando por `3` minutos, voltando logo em seguida  a caminhar por mais `6` minutos a uma taxa de `2` km por hora.
+
+#. Como você representaria no plano cartesiano, o período em que você permaneceu parado conversando com seu amigo? Considere no eixo das abscissas o tempo em minutos e no eixo das ordenadas a distância percorrida em metros.
+
+#. Represente no plano cartesiano um gráfico que ilustra toda a situação descrita.
+
+#. Obtenha expressões para as funções afins cujos gráficos são os segmentos de reta que você representou no item anterior.
+
+
+.. admonition:: Resposta 
+
+   a) Por uma reta horizontal (paralela ao eixo das abscissas)
+   
+   b)
+
+   .. figure:: _resources/afim_porpartes.png
+      :width: 400pt
+      :align: center
+   c) Opção 1) `f:[0,12[\to\mathbb{R}` onde `f(x)=\frac{3}{50}x` ; `g:[12,15[\to\mathbb{R}` onde `g(x)=200`   e  `h:[15,20]\to\mathbb{R}` onde `h(x)=40x-400`
+
+   Opção 2) `f:[0,20]\to\mathbb{R}`  onde `f(x) = \left\{ \begin{array}{rlll} \frac{3}{50}x, & \text{se} & 0\leq x <12 \\ 200, & \text{se} & 12\leq x < 15 \\ 40x-400, & \text{se} & 15 \leq x \leq 20 \end{array} \right.`
+
+Atividade: Comprando vinho
+------------------------------
+
+.. admonition:: Para o professor
+
+   OBJETIVOS ESPECÍFICOS
+   
+   Levar o estudante a:
+   
+   * Compreender função afim por partes.
+   
+   OBSERVAÇÕES E RECOMENDAÇÕES
+   
+   * Chame atenção para o significado das bolas "abertas" e " fechadas", representadas na figura da solução, respectivamente pelas bolas brancas e pretas.
+   
+   * A experiência tem mostrado que os estudantes apresentam dificuldade em perceber que a representação gráfica que ilustra a situação da atividade inicia a partir do ponto `(0,5)`.
+
+Em uma vinícola podemos comprar vinho por litro. Neste caso, o vinho é colocado em garrafões com capacidade de `5` litros. O vinho é vendido a R$ `10,00` por litro e cada garrafão é vendido a R$ `5,00`.
+
+a) Calcule o preço que um cliente deverá pagar por `2` litros, por `5` litros e por `7` litros. Explique seus cálculos.
+ 
+b) Determine uma expressão para o preço `p` (em reais) em função do volume `x` (expresso em litros) de vinho adquirido. Considere `x` compreendido entre `0` e `15`.
+  
+c) Trace a curva que representa a função `p` no plano cartesiano. Utilize a escala de `1` cm para `1` litro no eixo das abscissas e `1` cm para `10` reais nas ordenadas.
+
+
+.. admonition:: Resposta 
+
+   a) `25,00` reais por `2` litros, `55,00` reais por `5` litros e `80,00` reais pelos `7` litros.
+   
+   b)
+   
+   .. math::
+
+      p(x)=10x+5, \text{ se } x \in (0,5]
+      
+     p(x)=10x+10, \text{ se } x \in (5,10]
+      
+      p(x)=10x+15, \text{ se } x \in (10,15].
+      
+   c)
+
+   .. figure:: _resources/vinicola.png
+      :width: 400pt
+      :align: center
+
