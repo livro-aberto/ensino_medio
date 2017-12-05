@@ -1,3 +1,471 @@
 *******
-AF107-1
+Explorando: função afim
 *******
+
+.. _ativ-dist-tempo:
+
+Atividade: Distância x tempo
+------------------------------
+
+.. admonition:: Para o professor
+
+   OBJETIVOS ESPECÍFICOS
+
+   * Interpretar uma situação que envolve movimento retilíneo uniforme a partir do gráfico que representa a relação entre distância até um ponto de referência e tempo de percurso.
+   * Compreender o modelo de variação que se estabelece entre as variáveis distância e tempo.
+   * Constatar que a distância percorrida sempre será a mesma em intervalos de tempo iguais.
+   * Identificar que mesmo a taxa de variação sendo constante, as grandezas envolvidas não são proporcionais.
+
+   OBSERVAÇÕES E RECOMENDAÇÕES
+
+   * Já no item (a) é comum boa parte dos alunos não identificarem a posição do ponto de referência, principalmente por criar associações equivocadas entre o gráfico e a situação real. Para isso utilize algum modelo que deixe claro que a reta apresentada do gráfico não é o “caminho” percorrido pela pessoa. Por exemplo:
+   
+   
+   .. _fig-modelo-distancia:
+
+   .. figure:: _resources/modelo_distancia_1.jpeg
+      :width: 300pt
+      :align: center
+ 
+   
+   * Se possível e caso ache interessante, discuta com seus alunos uma variante do problema. No caso em que, mesmo que a pessoa não ande em linha reta, o gráfico continue representando a relação entre a distância percorrida e o tempo de percurso. Apresente por exemplos percursos diferentes, refazendo as perguntas, como por exemplo:
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/percursos_1.jpeg
+      :width: 300pt
+      :align: center
+
+   
+   * Discuta com seus alunos o motivo da função não ser linear e consequentemente, nesta situação, a relação entre as grandezas não ser proporcional, utilize o fato de não atender o Teorema Fundamental da Proporcionalidade.
+   
+   * Caso seus alunos já tenham estudado esse conteúdo em Física, aproveite para relacionar a função `f(t)=at+b` com a equação do Movimento Uniforme: `S=S_0+Vt`, associando `S` com `f(t)` ; `S_0` com `b` e `V` com `a`.
+   
+   
+   
+O gráfico abaixo mostra a variação da distância (até um determinado ponto de referência) de uma pessoa que caminha em linha reta durante `4` segundos. Algumas informações sobre o movimento podem ser extraídas diretamente dessa representação gráfica.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/tempo_distancia_1.png
+   :width: 300pt
+   :align: center
+
+#. A que distância do ponto de referência estava a pessoa no início da contagem do tempo? E ao final de `4` segundos?
+#. Qual a distância total percorrida?
+#. É possível saber se ele está se afastando ou se aproximando do ponto de referência? Como?
+#. Qual a velocidade média da pessoa no intervalo de tempo de `0` a `4` segundos?
+#. A que distância a pessoa estava do ponto de referência após `1` segundo do início da caminhada? Qual a distância percorrida por ela nesse intervalo de tempo?
+#. Qual a distância percorrida pela pessoa entre `1` e `2` segundos? E entre `3` e `4` segundos?
+#. O que se pode concluir a partir das suas respostas nos itens (e) e (f)?
+#. As grandezas relacionadas pelo gráfico são proporcionais? Por que?
+
+
+.. admonition:: Resposta 
+
+   #. `1` metro. `9` metros.
+   #. `8` metros.
+   #. Sim, ela está se afastando. A medida que o tempo aumenta a distância até o ponto de referência também aumenta. Isto é, a função é crescente.
+   #. A velocidade média é `V=\dfrac{9-1}{4-0}=2` `m/s`.
+   #. `3` metros. `2` metros.
+   #. `2` metros em ambos os intervalos de tempo.
+   #. A cada segundo a pessoa se afasta `2` metros do ponto de referência.
+   #. Não, pois a distância até o ponto de referência em 2 segundos é 5 metros e em 1 segundo é 3 metros, logo `f(2\cdot 1)\neq 2\cdot f(1)` ou basta ver que o gráfico não passa pela origem do plano cartesiano .
+
+
+********
+Organizando as ideias: função afim
+********
+
+O gráfico da :ref:`ativ-dist-tempo` apresenta a distância até o ponto de referência como uma função do tempo. Como a ação acontece no intervalo de tempo de `0` a `4` segundos, podemos modelar essa relação com uma função `f` cujo domínio é o intervalo `[0,4]`, isto é, `f:[0,4] \to \mathbb{R}`. Vamos juntos encontrar uma expressão para `f`?
+
+Apesar do gráfico ser um segmento de reta, `f` não pode ser uma função linear, pois a reta não contém a origem do plano cartesiano. Como no início da contagem do tempo a pessoa estava na posição `1`, devemos ter `f(0)=1`. Em particular, as grandezas posição e tempo, nesse caso, não são proporcionais. 
+ 
+Vamos definir uma outra função que vai nos auxiliar a encontrar uma expressão para `f`. Chamaremos de `d(t)` a distância percorrida no intervalo de tempo `[0,t]`. Por exemplo, como fazemos para calcular `d(2)` ? Basta saber em que posições a pessoa estava nos tempos `t=0` e `t=2` e fazer a diferença. Neste caso `d(2)=f(2)-f(0)=5-1=4`. Isso nos dá a dica de como calcular `d(t)` para qualquer `t\in[0,4]`.
+
+.. math::
+
+     d(t)=f(t)-f(0) \Longrightarrow d(t)= f(t)-1
+
+Vamos preencher o seguinte quadro:
+
+.. table::
+   :widths: 1 2 2
+   :column-alignment: center center center
+
+   +-----+---------------------+---------------------+
+   | `t` |     `f(t)`          |    `d(t)=f(t)-1`    |
+   +-----+---------------------+---------------------+
+   |`0`  |   `1`               |                     |
+   +-----+---------------------+---------------------+
+   |`0,5`|                     |                     |
+   +-----+---------------------+---------------------+
+   |`1`  |   `3`               |                     |
+   +-----+---------------------+---------------------+
+   |`1,5`|                     |                     |
+   +-----+---------------------+---------------------+
+   | `2` |         `5`         |        `4`          |
+   +-----+---------------------+---------------------+
+   |`2,5`|                     |                     |
+   +-----+---------------------+---------------------+
+   |`3`  |                     |                     |
+   +-----+---------------------+---------------------+
+   |`3,5`|                     |                     |
+   +-----+---------------------+---------------------+
+   |`4`  |        `9`          |      `8`            |
+   +-----+---------------------+---------------------+
+
+Para representar o gráfico da função `d`, basta pensar da seguinte maneira: para cada `t`, os pontos `D=(t,d(t))` do gráfico de `d` e `F=(t,f(t))` do gráfico de `f` têm a mesma abscissa, mas a ordenada de `D` tem uma unidade a menos que a de `F`, ou seja, estão na mesma vertical, e `D` está `1` unidade abaixo de `F`. O que nos leva a concluir que o gráfico da função `d` também é uma reta, paralela ao gráfico de `f`, que está deslocada uma unidade verticalmente para baixo.
+
+.. figure:: _resources/distancia_posicao1.png
+   :width: 350pt
+   :align: center
+
+Sendo assim o gráfico de `d` está contido em uma reta que contém a origem do plano cartesiano, sugerindo-nos que se trata de uma função linear. Como o ponto `(1,2)` pertence ao gráfico de `d`, podemos afirmar que sua taxa de variação é `\frac 21` e, portanto, para todo `t\in[0,4]` , `d(t)= 2t`.
+
+Finalmente, como `d(t)=f(t)-1`, concluímos que uma expressão para `f` é
+
+.. math::
+
+     f(t)=2t+1
+
+Podemos então pensar que o gráfico da função `f` é obtido deslocando-se o gráfico da função linear `d(t)=2t` uma unidade na vertical para cima. Por se tratarem de retas paralelas podemos também dizer que `2` é a taxa de variação de `f`.
+
+.. figure:: _resources/desloca_b.png
+   :width: 350pt
+   :align: center
+
+
+.. admonition:: -
+
+   Toda função real de variável real que pode ser escrita na forma `f(x)=ax+b` é chamada de função afim. O número `a` é chamado de taxa de variação de `f` e `b` é a medida do deslocamento que se faz a partir da função linear `\ell(x)=ax` para se obter o gráfico de `f`.
+
+
+.. figure:: _resources/exemplo_afim1.png
+   :width: 350pt
+   :align: center
+
+   Exemplos: `\ell(x)=2x`, `f(x)=2x+5` e `f(x)=2x-3`
+
+.. figure:: _resources/exemplo_afim2.png
+   :width: 350pt
+   :align: center
+
+   Exemplos: `\ell(x)=-x`, `f(x)=-x-2` e `f(x)=-x+6`
+
+
+.. admonition:: A inclinação de uma reta
+   
+   .. figure:: _resources/1024px-Planalto_Palace_ramp_and_parlatorium.jpg
+      :width: 350pt
+      :align: center
+
+      Flickr: Planalto (Presidential) Palace, Brasília, Brazil (8), CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=18864847
+   
+   Em muitas construções, quando se deseja fazer o acesso entre dois espaços que estão em níveis diferentes, usa-se a rampa como recurso. A rampa é uma superfície, em geral, plana que liga dois níveis diferentes. Uma característica importante de uma rampa é a sua inclinação (ou declive). Rampas muito íngremes podem se tornar obstáculos intransponíveis para cadeirantes, por exemplo. Como medir, então, a inclinação de uma rampa? 
+   A inclinação de uma rampa é o número obtido quando dividimos a altura (diferença entre os níveis) pelo deslocamento horizontal
+   
+   .. math::
+
+      \text{inclinação}=\dfrac{\text{altura}}{\text{deslocamento horizontal}}
+   
+   .. figure:: _resources/rampa.png
+      :width: 450pt
+      :align: center
+
+   Uma rampa que tem o deslocamento horizontal muito menor que a altura, terá pela fórmula uma inclinação grande, enquanto uma rampa em que o deslocamento horizontal é bem maior que a altura, terá uma inclinação pequena. Rampas de inclinação pequena são as mais desejáveis. 
+
+   A Associação Brasileira de Normas Técnicas (ABNT) tem normas para a construção de rampas (a NBR 9050:2015 que pode ser acessada em <http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf>) que contém o seguinte artigo:
+
+   .. figure:: _resources/rampa_abnt.png
+      :width: 450pt
+      :align: center
+      
+   Por exemplo, para uma rampa ter inclinação `5% (1:20)` ela precisa de `20` metros de deslocamento horizontal para cada metro de subida, ou dito de outra forma, para cada metro de deslocamento horizontal, a rampa “sobe” `0,05` metros. Veja se as rampas ilustradas abaixo estão dentro das especificações da ABNT.
+   
+   .. table::
+      :widths: 1 2 2
+      :column-alignment: center center center
+
+   +------------------------------+---------------------+---------------------+
+   | `i=\dfrac{h}{c}\cdot 100 \%` | altura (h)          |deslocamento (c)     |
+   +------------------------------+---------------------+---------------------+
+   |Rampa 1                       | `0,85` m            | `13` m              |
+   +------------------------------+---------------------+---------------------+
+   |Rampa 2                       | `0,50` m            | `7` m              |
+   +------------------------------+---------------------+---------------------+
+   |Rampa 3                       | `1,20` m            | `24` m              |
+   +------------------------------+---------------------+---------------------+
+   |Rampa 4                       |  `1` m              |  `21` m             |
+   +------------------------------+---------------------+---------------------+
+  
+   Da mesma forma, a inclinação de uma reta é a medida do quão íngreme ela é em relação ao sistema de coordenadas onde ela está inserida. Dada uma reta em um plano cartesiano, para determinarmos sua inclinação basta fazer a divisão entre a variação das ordenadas e a variação das abscissas para quaisquer dois pontos da reta
+   
+   .. math::
+
+      \text{inclinação}=\dfrac{y_2-y_1}{x_2-x_1}
+
+   .. figure:: _resources/inclinacao.png
+      :width: 350pt
+      :align: center
+
+      Inclinação de uma reta
+
+   Por exemplo, a reta que contém os pontos `(1,2)` e `(5,7)` tem inclinação `\dfrac{7-2}{5-1}=\dfrac 54`, enquanto a reta que contém os pontos `(-1,3)` e `(2,-6)` tem inclinação `\dfrac{-6-3}{2-(-1)}=\dfrac{-9}{3}=-3`.
+
+   .. figure:: _resources/inclinacao_ex1.png
+      :width: 350pt
+      :align: center
+
+      Inclinação da reta que contém os pontos `(1,2)` e `(5,7)`
+      
+   .. figure:: _resources/inclinacao_ex2.png
+      :width: 350pt
+      :align: center
+
+      Inclinação da reta que contém os pontos `(-1,3)` e `(2,-6)`
+   
+   Se considerarmos uma reta no plano e a função afim `f` que a tem como gráfico, a inclinação da reta coincide com a taxa de variação da função `f`. Por exemplo, a primeira reta acima é o gráfico da função afim `f(x)=\dfrac 54 x +b`. Para determinarmos o valor de `b`, basta substituirmos um dos pontos que estão sobre a reta. Como `(1,2)` pertence ao gráfico de `f`, podemos afirmar que `f(1)=2`, logo
+   
+   .. math::
+
+      2=\dfrac 54 \cdot 1 + b \Longrightarrow b=2-\dfrac 54 = \dfrac 34
+
+   Isto é, a função `f` é dada pela expressão `f(x)=\dfrac 54 x + \dfrac 34`. A outra reta dada como exemplo tem expressão `f(x)=-3x`.
+   
+   Retas horizontais não possuem inclinação, de fato não há deslocamento vertical quando nos deslocamos horizontalmente sobre a reta, ou seja, sua inclinação será igual a zero.
+   
+   
+.. admonition:: Para o professor
+
+   .. figure:: _resources/codigo3_3.png
+      :width: 100pt
+      :align: center
+
+   Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/NFAmT23H>. Nela os estudantes poderão experimentar dinamicamente propriedades de crescimento, decrescimento e interseção com os eixos coordenados associadas à função afim `f(x)=ax+b`, em que `a` e `b` variam no intervalo `[-5,5]`.
+   
+********
+Explorando: Domínio Discretos
+********
+
+Atividade: Plantas companheiras
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   OBJETIVOS ESPECÍFICOS
+
+   * Identificar a expressão algébrica que expressa a regularidade observada na sequências figuras.
+
+   * Reconhecer que a relação entre as grandezas: quantidade de plantas companheiras `(\diamondsuit)` e o número que representa o tipo de modelo, é proporcional.
+
+   * Reconhecer que a relação entre as grandezas: quantidade de vegetais `(●)` e o número que representa o tipo de modelo, não é proporcional.
+
+   * Identificar que o domínio de ambas as funções é dado pelo conjunto discreto `{1,2,3,4,...n}` com `n` sendo um número natural. Sendo essa a justificativa para o gráfico de cada uma das funções abordadas serem um conjunto de pontos e não uma reta ou segmento de reta.
+
+   OBSERVAÇÕES E RECOMENDAÇÕES
+
+   * A atividade aborda assuntos relacionados à dois temas transversais dos PCN´s (Parâmetros Curriculares Nacionais): O Meio Ambiente e a Saúde. Vale, se possível, discutir com os alunos os benefícios de uma alimentação orgânica e às dificuldades de acesso, tanto ao plantio quanto ao consumo, pelo alto preço dos produtos; e ainda as vantagens da utilização das técnicas de plantio orgânico que não agridem o meio ambiente.
+
+   * Ainda neste ano de escolaridade boa parte dos alunos terão dificuldades de Identificar a expressão algébrica que expressa a relação entre as grandezas apresentadas na figura, caso essa dificuldade atrapalhe o andamento da atividade, sugerimos que o professor intervenha exibindo exemplos mais simples do mesmo assunto como por exemplo:
+
+   .. figure:: _resources/plantas_companheiras.jpeg
+      :width: 400pt
+      :align: center
+
+   * Aproveite para comentar com os alunos que as funções `C(n)` e `T(n)` , descrita nos itens e) e n) são funções quadráticas com domínio discreto, e que esse será o assunto do próximo capítulo envolvendo funções.
+
+   * Aproveite para descrever que a sequência de valores geradas por funções afins com domínio discreto, pode ser classificada como progressões aritméticas.
+
+No cultivo de produtos orgânicos, é comum o plantio de Plantas Companheiras.
+“Plantas Companheiras são plantas pertencentes a espécies ou famílias, que se ajudam e complementam mutuamente, não apenas na ocupação do espaço e utilização de água, luz e nutrientes, mas também por meio de interações bioquímicas chamadas de Efeitos Alelopáticos. Estes podem ser tanto de natureza estimuladora quanto inibidora, não somente entre plantas, mas também em relação a insetos e outros animais.”
+*Disponível em* <https://permacoletivo.files.wordpress.com/2008/06/manual-horta-organica-domestica.pdf> - *Acesso em 25/11/2017*
+ 
+Uma empresa especializada em consultoria e plantio de produtos orgânicos apresenta alguns modelos de plantio de um determinado vegetal, representado na figura a seguir por `(●)` e sua respectiva planta companheira, representada por `(\diamondsuit)`, cada modelo é adequado para o tamanho do plantio e tem como objetivo criar uma barreira natural contra pragas, observe a figura a seguir que apresenta os n modelos plantio:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/plantio.jpeg
+   :width: 400pt
+   :align: center
+
+a) Preencha o quadro a seguir, que nos informa a quantidade de cada tipo de planta em cada um dos modelos.
+
+   .. table:: 
+      :widths: 1 3 3
+      :column-alignment: center center center
+
+      +--------+---------------------------+--------------------------------------+
+      |Modelo  |Quantidade de vegetais (●) |Quantidade de plantas `(\diamondsuit)`|
+      +--------+---------------------------+--------------------------------------+
+      |    1   |             1             |                   4                  |
+      +--------+---------------------------+--------------------------------------+
+      |    2   |             4             |                   8                  |
+      +--------+---------------------------+--------------------------------------+
+      |    3   |             9             |                  12                  |
+      +--------+---------------------------+--------------------------------------+
+      |    4   |             16            |                  16                  |
+      +--------+---------------------------+--------------------------------------+
+      |    5   |                           |                                      |
+      +--------+---------------------------+--------------------------------------+
+      |    6   |                           |                                      |
+      +--------+---------------------------+--------------------------------------+
+      |    7   |                           |                                      |
+      +--------+---------------------------+--------------------------------------+
+
+b)  Descreva textualmente qual a relação entre a quantidade de vegetais `(●)` e o número do modelo.
+
+c) Descreva textualmente qual a relação entre a quantidade de plantas companheiras `(\diamondsuit)` e o número do modelo.
+
+d) Exiba uma expressão algébrica que relacione a quantidade `V` de vegetais `(●)` em função do número `n` do `n`-ésimo modelo.
+
+e) Exiba uma expressão algébrica que relacione a quantidade `C` de plantas companheiras `(\diamondsuit)` em função do número `n` do `n`-ésimo modelo.
+
+f) A expressão algébrica descrita no item `e)` pode ser considerada uma função linear?
+
+g) Se a resposta anterior for afirmativa, exiba o domínio dessa função.
+
+h) No plano cartesiano abaixo estão representados os pares ordenados `(n,V(n))` em que `n` é “número” `n` que representa o `n`-ésimo modelo e `V(n)` a quantidade `V` de vegetais `(●)`. Represente nele os pontos que correspondem aos pares ordenados `(n,C(n))` em que `C(n)` é a quantidade `C` de plantas companheiras `(◊)` em função de `n`.
+
+   .. figure:: _resources/grafico_plantas.jpeg
+      :width: 350pt
+      :align: center
+
+i) Qual seria a quantidade `C` de plantas companheiras `(\diamondsuit)` utilizadas no décimo modelo?
+
+j) Qual o valor de `n`, para um modelo que utilize `144` plantas companheiras `(\diamondsuit)`?
+
+k) Qual seria a quantidade a quantidade `V` de vegetais `(●)` no décimo modelo?
+
+l) Qual o valor de `n`, para um modelo que utilize `144` vegetais `(●)`?
+
+m) A relação entre as grandezas: quantidade `V` de vegetais `(●)` e  o número `n` do `n`-ésimo modelo, é proporcional? Justifique sua resposta.
+
+n) Exiba uma expressão algébrica que relacione a quantidade total `T` de plantas companheiras e vegetais em função, do número `n` do n-ésimo modelo. A expressão representada é uma função afim? Justifique sua resposta.
+ 
+o) Explique textualmente, o motivo que impossibilita que o gráfico de cada uma das funções abordadas seja uma reta ou um segmento de reta, e sim um conjunto de pontos.
+
+
+********
+Organizando as ideias: progressões aritméticas
+********
+
+Sequências de número reais (finitas ou infinitas), como a de plantas companheiras da atividade acima `(4, 8, 12, 16,...)` , em que a diferença entre termos consecutivos é constante são chamadas de progressões aritméticas, ou de forma abreviada, P.A.
+
+Se representarmos os pontos de uma progressão aritmética na reta real, eles ficarão todos igualmente distribuídos. 
+
+No exemplo da atividade, a diferença entre dois termos consecutivos quaisquer é 4. Em geral, em uma P.A. a diferença entre os termos consecutivos se chama razão da progressão aritmética. Se a razão é um número positivo, a P.A. é crescente e se for negativo, a sequência é decrescente.
+
+Podemos representar os termos de uma progressão aritmética que começa com `b` e tem razão `r` da seguinte maneira:
+
+`(b, b+r, b+2r, b+3r, ... )`
+
+Note que o termo seguinte é sempre obtido do anterior somando-se a mesma quantidade, assim o segundo termo é o primeiro mais a razão. O vigésimo é o décimo nono mais a razão.
+
+Veja os exemplos abaixo, determine se são progressões aritméticas, e em caso afirmativo, calcule a razão:
+
+#. `(-5, - 2, 1, 4, 7)`
+#. `\left(\pi, \dfrac{\pi}2, 0, -\dfrac{\pi}2, -\pi, -\dfrac{3\pi}2\right)`
+#. `(3, 9, 27, 81, ...)`
+
+Considere a função afim `f(x)=2x+1` e forme a sequência das imagens de todos os números inteiros positivos `(f(0), f(1), f(2), ... , f(n), ...)`. Essa sequência é uma progressão aritmética? Para verificar esse fato precisaremos fazer a diferença entre dois termos consecutivos quaisquer dessa sequência:
+
+.. math::
+
+   f(n)-f(n-1)=2n+1-[2(n-1)+1]=2n+1-[2n-2+1]=2
+
+Como a resposta 2 que obtivemos acima não depende do número `n` podemos concluir que ele é a razão da sequência e que, portanto, trata-se de uma P.A. 
+
+
+.. _fig-pa-afim:
+
+.. figure:: _resources/pa_afim.png
+   :width: 300pt
+   :align: center
+
+   legenda
+
+Faça o mesmo para uma outra função afim à sua escolha e descubra a razão da P.A. que você obterá.
+
+Vamos agora generalizar essa ideia:
+
+Consideremos uma função afim `f(x)=ax+b` e a sequência `(f(0), f(1), f(2), ... , f(n), ...)=(b, b+a,b+2a,... , b+na, ...)`. Pela expressão que obtivemos acima, podemos já conjecturar que a sequência é uma P.A. cujo primeiro termo é `b` e a razão é `a`. De fato, fazendo a diferença entre `f(n)` e `f(n-1)` temos
+
+.. math::
+
+   f(n)-f(n-1)=an+b-[a(n-1)+b]=an+b-[an-a+b]=a,
+
+e isto comprova a conjectura.
+
+Vamos agora pensar ao contrário, temos uma P.A. de primeiro termo -7 e razão 4, isto é,  `(-7,-3,1,5,...)`. Podemos pensar nessa progressão como sendo
+`(-7, - 7+4, - 7+4.2, - 7+4.3, ... , - 7+4.n, ...)`
+
+Assim, a P.A. é a imagem dos inteiros positivos pela função afim `f(x)=4x-7`.
+De maneira geral, dada uma progressão aritmética de primeiro termo `b` e razão `r`, `(b, b+r, b+2r, ...)` ela é a sequência das imagens dos inteiros positivos pela função afim `f(x)=rx+b`.
+
+.. table::
+   :widths: 1 3
+   :column-alignment: left center
+
+   +----------------------------+--------------------------------------------+
+   | Progressão Aritmética      | Função Afim                                |
+   +============================+============================================+
+   | `(b, b+r, b+2r, b+3r,...)` | `f(n)=rn+b`  com domínio `\{0,1,2,3,...\}` |
+   +----------------------------+--------------------------------------------+
+   | `b` - primeiro termo       | `b=f(0)`                                   |
+   +----------------------------+--------------------------------------------+
+   | `r` - razão                |  `r` - taxa de variação                    |
+   +----------------------------+--------------------------------------------+
+
+
+Observe no quadro abaixo as progressões aritméticas e as funções afins correspondentes
+
+.. table::
+   :widths: 1 3 3
+   :column-alignment: left center center
+
+   +--------------------------------------------------------------------+-----------------------------+-------------------+
+   | Progressão Aritmética                                              | Função Afim                 | Domínio           |
+   +====================================================================+=============================+===================+
+   | `(-5,-2,1,4,7)`                                                    | `f(n)=3n-5`                 | `\{0,1,2,3,4,5\}` |
+   +--------------------------------------------------------------------+-----------------------------+-------------------+
+   |`\left(\pi,\dfrac{\pi}2,0,-\dfrac{\pi}2,-\pi,-\dfrac{3\pi}2\right)` | `f(n)=-\dfrac{\pi}{2} n+\pi`| `\{0,1,2,3,4,5\}` |
+   +--------------------------------------------------------------------+-----------------------------+-------------------+
+   | `(90,82,74,66,58,50)`                                              | `f(n)=-8n+90`               | `\{0,1,2,3,4,5\}` |
+   +--------------------------------------------------------------------+-----------------------------+-------------------+
+   | `\left(\dfrac 32, \dfrac 74, 2, \dfrac 94\right)`                  | `f(n)=\dfrac n4+\dfrac 32`  | `\{0,1,2,3\}`     |
+   +--------------------------------------------------------------------+-----------------------------+-------------------+
+
+
+  
+.. admonition:: Notação
+
+   Em geral, para representar os termos de uma progressão aritmética usamos a notação `(a_1, a_2, a_3, a_4,...)`. Assim a notação `a_n` indica o termo da progressão que está na posição `n`.
+   
+
+#. 	Na progressão aritmética de primeiro termo `3` e razão `-5`, como determinar o décimo termo, `a_{10}`? 
+   
+Não precisamos conhecer todos os termos até chegar ao décimo! Para chegarmos ao décimo termo a partir do primeiro precisamos somar a razão 9 vezes, então, o décimo termo pode ser calculado como `a_{10}=3+9.(-5)=-42` .
+   
+#.	 Quais são a razão e o primeiro termo de uma P.A. que tem oitavo termo igual a 10 e vigésimo termo igual a 34? 
+   
+Do oitavo para o vigésimo termo precisamos somar 12 vezes a razão, isto é, `a_{20}=a_8+12 r`. Substituindo os valores temos, `34=10+12 r`, logo `r=2`. Para encontrarmos o primeiro termo, basta pensar que `a_8=a_1+7r`, isto é, `10=a_1+7.12`. Logo `a_1=-74`.
+
+#. Uma P.A. finita com uma quantidade ímpar de termos pode ser representada tomando como base seu termo central, somando a razão para os termos seguintes e subtraindo a razão para os termos anteriores, da seginte maneira:
+
+.. math::
+
+   (a-nr,...,a-2r,a-r,a,a+r,a+2r,...,a+nr)
+     
+Por exemplo,
+
+.. math::
+
+   \begin{eqnarray*}
+   (22, 24, 26, 28, 30)&=& (26-4, 26-2, 26, 26+2, 26+4)\\
+   (13, 8, 5) &=& (8-(-5), 8, 8+(-5))\\  
+   \end{eqnarray*}
