@@ -13,7 +13,7 @@ ROTEIRO: SEMELHANÇA
    
 .. admonition:: Habilidade
 
-   **(EM12MT02)** Resolver e elaborar problemas utilizando a semelhança de triângulos e o teorema de Pitágoras, incluindo aqueles que envolvem o cálculo das medidas de diagonais de prismas, de altura de pirâmides, e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho.
+   **(LAEM12T02)** Apresentar de modo formal a semelhança de figuras e os casos de semelhança de triângulos para que a habilidade EM12T02 possa ser atendida plenamente.
    
    
 .. admonition:: Objetivos Gerais
