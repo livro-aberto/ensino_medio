@@ -64,20 +64,20 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
  (EF08MT08)
   Identificar, em gráficos de barras, colunas ou setores, divulgados pela mídia, as variáveis e seus valores, os resultados e os elementos constitutivos do gráfico (título, eixos, legenda e fonte), interpretando-os para analisar a adequação do gráfico ao tema e aos dados e para propor outras formas de comunicação dos resultados da pesquisa, tais como texto escrito ou outro tipo de gráfico.
       
-  (EF08MA23) 
-   Selecionar razões, de diferentes naturezas (física, ética ou econômica), que justificam a realização de pesquisas amostrais e não censitárias, e reconhecer que a seleção da amostra pode ser feita de diferentes maneiras (amostra casual simples, sistemática e estratificada).
+ (EF08MA23) 
+  Selecionar razões, de diferentes naturezas (física, ética ou econômica), que justificam a realização de pesquisas amostrais e não censitárias, e reconhecer que a seleção da amostra pode ser feita de diferentes maneiras (amostra casual simples, sistemática e estratificada).
    
-  (EF09MT09)
-   Escolher e construir o gráfico mais adequado (colunas, setores, linhas e histogramas) para apresentar um determinado conjunto de dados de uma pesquisa, destacando aspectos como as medidas de tendência central para compor um relatório descritivo dos resultados.
+ (EF09MT09)
+  Escolher e construir o gráfico mais adequado (colunas, setores, linhas e histogramas) para apresentar um determinado conjunto de dados de uma pesquisa, destacando aspectos como as medidas de tendência central para compor um relatório descritivo dos resultados.
    
-   (EF09MT10)
-     Planejar uma pesquisa amostral envolvendo tema da realidade social, definir a técnica de amostragem e a amostra, coletar, organizar e interpretar os dados, para comunicar os resultados por meio de relatório contendo texto escrito, avaliação de medidas de tendência central e da amplitude, tabelas e gráficos adequados construídos com o apoio de planilhas eletrônicas.
-      
-   (EF09MA05)
-      Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.
+ (EF09MT10)
+  Planejar uma pesquisa amostral envolvendo tema da realidade social, definir a técnica de amostragem e a amostra, coletar, organizar e interpretar os dados, para comunicar os resultados por meio de relatório contendo texto escrito, avaliação de medidas de tendência central e da amplitude, tabelas e gráficos adequados construídos com o apoio de planilhas eletrônicas.
+         
+ (EF09MA05)
+  Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.
       
 
-    **Observação:** Como a BNCC ainda não entrou em vigor, os pré-requisitos acima, não necessariamente foram contemplados no Ensino Fundamental. Por essa razão, muitos deles serão abordados nesse capítulo e no capítulo de "Medidas de Posição e Dispersão" que dá sequência a esse capítulo. 
+ **Observação:** Como a BNCC ainda não entrou em vigor, os pré-requisitos acima, não necessariamente foram contemplados no Ensino Fundamental. Por essa razão, muitos deles serão abordados nesse capítulo e no capítulo de "Medidas de Posição e Dispersão" que dá sequência a esse capítulo. 
 
 
    
@@ -90,16 +90,32 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
    
 .. admonition:: Abordagem do Capítulo
   
- Esse capítulo aborda fortemente os conteúdos de organização e representação dos dados (incluindo agrupamentos de dados em classes), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos destacados na habilidade. Os conteúdos: realização de pesquisas considerando o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta serão trabalhados de forma transversal ao  longo dos capítulos que tratam de Estatística, revisitando pré-requisitos previstos pela BNCC para o Ensino Fundamental. 
-  
- As atividades propostas nesse capítulo envolvem o uso da Estatística em diferentes situações motivando o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuição e caracterizações da distribuição (posição e dispersão). Essas atividades não têm como objetivo o cálculo das medidas, mas a sua compreensão estrutural. Também serão trabalhados alguns distratores nessas atividades tais como explorar a diferença entre um gráfico de barras e um histograma e destacar que a informação importante no gráfico de barras, adequado para variáveis qualitativas ou quantitativas discretas que assumem um conjunto moderado de valores, é a frequência na qual cada resposta ocorre, ainda, destacar que para efeito de comprações múltiplas a frequência deve ser relativa ou porcentagem dado que diferentes conjuntos podem ter tamanhos diferentes.
+ Esse capítulo aborda fortemente os conteúdos:
  
- Nesse capítulo serão apresentadas algumas atividades envolvendo a realização de pesquisas e coleta de dados e, no final do capítulo, será sugerida a realização de um projeto que deverá ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. Também será recomendado que essa atividade seja preferencialmente trabalhada no primeiro ou segundo ano do Ensino Médio, pois no último ano há maior limitação de tempo em razão dos vários exames a serem realizados pelos estudantes.  
+ #. organização e representação dos dados (incluindo agrupamentos de dados em classes), 
+ 
+ #. construção de gráficos apropriados (incluindo o histograma), 
+ 
+ #. interpretação e análise crítica apresentadas em relatórios descritivos destacados na habilidade, como por exemplo, a análise dos infográficos produzidos pelo IBGE no suplemento especial da Pesquisa Nacional por Amostra de Domicílios (PNAD) do anos de 2015. 
+ 
+ Os conteúdos: 
+ 
+ #. realização de pesquisas considerando o planejamento, a discussão (se será censitária ou por amostra); 
+ 
+ #. seleção de amostras:
+ 
+ #. elaboração e aplicação de instrumentos de coleta
+ 
+ serão trabalhados de forma transversal ao  longo dos capítulos que tratam de Estatística, revisitando pré-requisitos previstos pela BNCC para o Ensino Fundamental. 
+  
+ As atividades propostas nesse capítulo envolvem o uso da Estatística em diferentes situações motivando o pensamento estatístico a partir de suas ideias fundamentais, a saber, população e amostra, parâmetro e estimador, distribuição e caracterizações da distribuição (posição e dispersão). Essas atividades não têm como objetivo o cálculo das medidas, mas a sua compreensão estrutural. Também serão trabalhados alguns distratores nessas atividades tais como explorar a diferença entre um gráfico de barras e um histograma e destacar que a informação importante no gráfico de barras, adequado para variáveis qualitativas ou quantitativas discretas, que assumem um conjunto moderado de valores, é a frequência na qual cada resposta ocorre.  Cabe também destacar, para efeito de comparações múltiplas, que a frequência deve ser relativa (ou porcentagem), dado que diferentes conjuntos podem ter tamanhos diferentes.
+ 
+ Neste capítulo serão apresentadas algumas atividades envolvendo a realização de pesquisas e coleta de dados e, no final do capítulo, será sugerida a realização de um projeto que deverá ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. Também será recomendado que essa atividade seja preferencialmente trabalhada no primeiro ou segundo ano do Ensino Médio, pois no último ano há maior limitação de tempo em razão dos vários exames a serem realizados pelos estudantes.  
  
  
 .. admonition:: Diferencial do Capítulo 
   
- Como propostas inovadoras o capítulo inclui a: 
+ Como propostas inovadoras relativas ao último desafio mencionado, este capítulo inclui a: 
  
  #. apresentação do diagrama de pontos introduzindo o conceito de distribuição empírica tanto em seu aspecto morfológico quanto variacional logo na primeira atividade revelando com isso a essência da Estatística;
  #. reflexão sobre possíveis equivalências, do ponto de vista estatístico, de medidas-resumo com a finalidade de tomada de decisão sob incerteza;
@@ -107,6 +123,8 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
  #. discussão sobre a adequação entre tipo de variável e tipo de gráfico;
  #. uso de tecnologia para a construção de gráficos;
  #. conceituação de parâmetro e estimador, elementos cruciais na Estatística.
+ 
+ O mais importante, neste capítulo, é fazer o estudante compreender a natureza não-determinística das conclusões obtidas por métodos estatísticos, para que possa exercer sua capacidade crítica, quanto às informações produzidas. Ao longo de todo o capítulo, é importante sempre realçar para o aluno a questão da incerteza associada às conclusões, quando usamos uma amostra. De fato, está totalmente fora do escopo do capítulo e do Ensino Médio, a quantificação da incerteza associada a essas conclusões. Mas, é fundamental, que os alunos tenham a noção da diferença entre "parâmetro" (característica numérica da população) e a estimativa do parâmetro que foi produzida por uma pesquisa, usando uma amostra da população.
 
   
 .. admonition:: Dificuldades típicas dos estudantes (distratores)
@@ -118,7 +136,9 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
   #. Confundir o valor da variável com o da frequência.  
   #. Em caso de variável quantitativa discreta, considerar apenas os valores da variável apresentados na tabela ignorando as frequências. 
   #. Confundir gráfico de barras com o histograma.
-  #. Dificuldade de interpretar um resultado obtido via procedimento de inferência estatística. 
+  #. Dificuldade de interpretar um resultado obtido via procedimento de inferência estatística.
+  
+  Observe que o último item, pode ser apresentado como "dificuldade em aceitar um pensamento não determinístico na disciplina Matemática, que no Ensino Médio apresenta apenas seu caráter determinístico". 
      
 .. admonition:: Exemplos
    
@@ -130,7 +150,7 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
     
  Apesar de variáveis e variação também aparecerem em muitas áreas da Matemática, a Matemática lida com variação funcional (determinística) enquanto que a Estatística lida com variação aleatória. Portanto, um objetivo da Educação Estatística é capacitar os estudantes a raciocinar sobre dados em contextos sob condições de incerteza, e distinguir entre raciocínio estatístico e raciocínio matemático. Além disso, a Estatística fornece métodos para identificar, quantificar, explicar, controlar e reduzir variação.
  
- Distribuição é um termo específico à Estatística e Probabilidade; é uma coleção de propriedades de um conjunto de dados como um todo, não de um particular valor do conjunto. Uma distribuição consiste de todos os valores diferentes nos dados incluindo as frequências (ou probabilidades) associadas com cada valor. Variação e distribuição estão relacionadas a outras noções estatísticas fundamentais tais como "centro" (modeladas pela média, mediana, ou moda), dispersão (modeladas pelo desvio-padrão, ou variância, etc) e forma (por exemplo, bi-modal, uniforme, simetrica, assimétrica à direita, etc). Medidas de "centro" resumem a informação sobre uma distribuição enquando medidas de dispersão resumem a variabilidade no conjunto de dados. Cada valor de uma variável mostra algum desvio do "centro". Tais medidas serão trabalhadas no capítulo que dá sequência ao Capítulo "A Natureza da Estatística" ("Medidas de Posição e Dispersão"), mas elas já ocorrem nas atividades propostas nesse capítulo, pois média, mediana e moda são trabalhadas no Ensino Fundamental. 
+ Distribuição é um termo específico da Estatística e Probabilidade; é uma coleção de propriedades de um conjunto de dados como um todo, não de um particular valor do conjunto. Uma distribuição consiste de todos os valores diferentes nos dados incluindo as frequências (ou probabilidades) associadas com cada valor. Variação e distribuição estão relacionadas a outras noções estatísticas fundamentais tais como "centro" (modeladas pela média, mediana, ou moda), dispersão (modeladas pelo desvio-padrão, ou variância, etc) e forma (por exemplo, bi-modal, uniforme, simétrica, assimétrica à direita, etc). Medidas de "centro" resumem a informação sobre uma distribuição enquando medidas de dispersão resumem a variabilidade no conjunto de dados. Cada valor de uma variável mostra algum desvio do "centro". Tais medidas serão trabalhadas no capítulo que dá sequência ao Capítulo "A Natureza da Estatística" ("Medidas de Posição e Dispersão"), mas elas já ocorrem nas atividades propostas nesse capítulo, pois média, mediana e moda são trabalhadas no Ensino Fundamental. 
  
  Para evitar o uso de vários termos com o mesmo significado: variação, variabilidade e dispersão, optamos por usar a palavra dispersão no livro. 
  
@@ -139,7 +159,7 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
 
  Usar um processo reflexivo baseado no pensamento estatístico. 
     
- #. Cálculos não serão valorizados, o mais importante nesse capítulo é a compreensão dos conceitos. 
+ #. Cálculos não serão valorizados, o mais importante nesse capítulo é a compreensão dos conceitos e a interpretação dos resultados. 
  #. As atividades deverão estar sempre bem caraterizadas a um problema a ser resolvido em um contexto específico.
  #. 	Estimular o uso de recursos tecnológicos para a realização de cálculos e construção de gráficos.
  #. 	Como recurso tecnológico, fez-se a opção pelo Geogebra e não pelo R, ainda que o R seja mais adequado para o tratamento de dados. O Geogebra atende satisfatoriamente as demandas da abordagem e das atividades propostas e é o recurso digital que ampara o texto em outros eixos temáticos. Além disso, de maneira geral, os professores têm maior familiaridade com o Geogebra do que com o R, pois a maioria dos professores será de Licenciados em Matemática e não em Estatística.
@@ -150,7 +170,7 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
      
  #. Atividade: **Escolha do fornecedor**. Inspirado em Rossman e Chance (1998) apresentando quatro distribuições empíricas usando gráfico de dispersão univariado (diagrama de pontos).
  #. Atividade: **Comparação de medicamentos**. Tomada de decisão sob incerteza.
- #. Atividade: **Pesquisa PNAD2015-Atividade Física**. <https://vamoscontar.ibge.gov.br/atividades/ensino-medio/9801-pesquisando-a-pratica-de-esportes-e-atividades-fisicas-no-brasil.html>
+ #. Atividade: **Pesquisa PNAD2015-Atividade Física**. O Os dados dessa atividade podem ser obtidos nesse  `link <https://vamoscontar.ibge.gov.br/atividades/ensino-medio/9801-pesquisando-a-pratica-de-esportes-e-atividades-fisicas-no-brasil.html>`_.
  #. Atividade: **Análise de Infográficos** referentes a PNAD2015-Atividade Física.
             
  **Organizando as ideias. 1** 
@@ -161,7 +181,7 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
       
  Atividades que exijam a reflexão crítica a partir de conceitos fundamentais da estatística.  
  
- Atividades incluídas: (1) **A turma e a prática de atividades físicas** o foco nessa atividade será pedir aos estudantes levantem as informações da turma quanto à prática de atividades físicas e algumas outras variáveis da pesquisa PNAD/2015 para organizar os resultados e comparar com os da PNAD/2015. Será recomendado ao professor levar um mapa para os alunos inserirem suas respostas de modo a facilitar o posterior resumo dos dados e construção de gráficos. (2) **Classificação de variáveis** (3) **Reconstrução de infográficos** (4) **Análise de um gráfico de barras**.
+ Atividades incluídas: (1) **A turma e a prática de atividades físicas** o foco nessa atividade será pedir aos estudantes levantem as informações da turma quanto à prática de atividades físicas (se pratica ou não atividade física em seu tempo livre, sexo, idade) e algumas outras variáveis da pesquisa PNAD/2015 para organizar os resultados e comparar com os da PNAD/2015. Será recomendado ao professor preparar um quadro para os alunos inserirem suas respostas, de modo a facilitar o posterior resumo dos dados e construção de gráficos. (2) **Classificação de variáveis** (3) **Reconstrução de infográficos** (4) **Análise de um gráfico de barras**.
  
       
  **Explorando -2 .** Proposição de uma atividades que envolvem analisar variáveis quantitativas contínuas: uma cujo objetivo é estudar a distribuição de frequências dos valores observados e a outra cujo objetivo é estudar seu comportamento ao longo do tempo.   
@@ -171,16 +191,19 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
   
  **Organizando as ideias. 2** 
  
- Apresentar princípios básicos para a construção dos intervalos de classe no caso de variáveis quantitativas contínuas, problematizando a importância de que o número de intervalos de classe não deva ser nem muito pequeno - o que acarretaria grande perda de informação - nem muito alto - que não revelaria a estrutura dos dados. Explorar a propriedade das áreas relativas em relação à área total do histograma. Destacar a diferença entre gráfico de barras e histograma. 
+ Apresentar princípios básicos para a construção dos intervalos de classe no caso de variáveis quantitativas contínuas, problematizando a importância de que o número de intervalos de classe não deva ser nem muito pequeno - o que acarretaria grande perda de informação - nem muito grande - que não revelaria a estrutura dos dados. Explorar a propriedade das áreas relativas em relação à área total do histograma. Destacar a diferença entre gráfico de barras e histograma. 
     
  **Praticando 2** 
  
  São apresentadas duas atividades que são desdobramentos das atividades no explorando 2. Em ambos os casos o Geogebra será uma ferramenta importante. A primeira envolve a construção de histogramas considerando um maior número de intervalos e a construção de histogramas considerando subconjuntos distintos do conjunto original. Disponibilizaremos o conjunto de dados para ser trabalhado no Geogebra.   A segunda atividade é um desdobramento da análise das médias de temperatura máxima com o objetivo de estudar possível tendência ao longo do tempo. Será fixado o mês de janeiro e dois gráficos de linha da evolução desse dado ao longo de vários anos serão trabalhados. 
  
  **Aprofundando o assunto**
-  #. Projeto a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. As etapas sugeridas para o desenvolvimento do projeto estão destacadas no documento da ABE (2015).
+ 
+ #. Apresentação da classificação de tipos de amostragem: probabilísticos e não probabilísticos e seus tipos mais comuns, acrescentando um exemplo comentado.
+  
+ #. Projeto (opcional) a ser realizado ao longo de pelo menos três meses paralalelamente às aulas. O projeto envolverá a formulação de um problema a ser investigado (de preferência envolvendo outra disciplina), a definição da população, a construção de um questionário, a coleta de dados (amostra ou censo), a análise dos resultados obtidos construindo gráficos e calculando medidas-resumo e a confecção de relatório final. Na conclusão do projeto, o capítulo "Medidas de Posição e Dispersão" já terá sido trabalhado. Serão recomendados para o professor vários temas, caso os grupos ou a turma demandem. As etapas sugeridas para o desenvolvimento do projeto estão destacadas no documento da ABE (2015).
 
-  #. Proposição de atividade para construção de histogram quando as classes t~em amplitudes desiguais.  densidade de frequência, classes desiguais.
+ 
  **Sugestões de leituras, vídeos e projetos aplicados**
 
  - https://vamoscontar.ibge.gov.br/atividades/ensino-medio.html ("Atividades para o Ensino Médio")
@@ -189,7 +212,8 @@ Motivar o pensamento estatístico a partir de suas ideias fundamentais, a saber,
  - https://www.youtube.com/watch?v=-Wm9cxiXUe0 ("O que é Estatística?")
  
  **Exercícios** 
-  Serão propostos exercícios do ENEM, Vestibulares entre outros abordando os conteúdos desse capítulo, a saber, conceitos básicos (população e amostra), amostra aleatória versus amostra de conveniência, análise de gráficos, construção de gráficos. Nos exercícios serão tratados os distratores.
+ 
+ Serão propostos exercícios do ENEM, Vestibulares entre outros abordando os conteúdos desse capítulo, a saber, conceitos básicos (população e amostra), amostra aleatória versus amostra de conveniência, análise de gráficos, construção de gráficos. Nos exercícios serão tratados os distratores.
 
  
 
