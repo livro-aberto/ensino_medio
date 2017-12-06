@@ -113,7 +113,8 @@ Atividade: Plantas Baixas
 A figura a seguir mostra a planta de uma casa e as medidas indicadas no desenho mostram as dimensões reais em metros. Entretanto, Fabio, uma pessoa que gostaria de ter mais informações sobre essa casa, mediu com sua régua a largura da parede do fundo da casa e, desprezando a espessura das paredes, encontrou 8cm, colocando essa informação no desenho.
 
 .. figure:: _resources/FigSem-02.png
-
+   :width: 250pt
+   
 As perguntas a seguir são importantes para o curioso Fabio. Se você não souber responder, não se preocupe, pois elas estão nessa atividade para que você perceba o que vamos desenvolver neste capítulo. Essa casa será retomada adiante.
 
 #. O desenho fornece informações suficientes para que se calcule a área do Quarto 2?
@@ -229,6 +230,7 @@ Na figura a seguir, os lados dos triângulos são mostrados. Verifique se esses 
 
 .. tikz:: 
    
+   \begin{scope}[scale=.5]
    \definecolor{wwqqcc}{rgb}{0.4,0.,0.8}
    \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
    \fill[line width=1.2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.20000000298023224] (-2.4026846239814494,9.01432812261539) -- (-3.1006389948749313,3.0550614146931245) -- (4.239720652539582,6.236117881750678) -- cycle;
@@ -246,7 +248,7 @@ Na figura a seguir, os lados dos triângulos são mostrados. Verifique se esses 
    \draw (8.6,7.5) node[anchor=north west] {12};
    \draw (15.3,5.8) node[anchor=north west] {9};
    \draw (12.2,12.1) node[anchor=north west] {10,8};
-   
+   \end{scope}
 
 .. admonition:: Resposta 
 

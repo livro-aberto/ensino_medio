@@ -70,6 +70,7 @@ Exercícios
 #. Um turista em São Paulo visitou o parque do Ibirapuera e, ao sair, quis saber a que distância estava a estação do Metrô mais próxima. Consultando seu mapa o turista, que se localizou no ponto A percebeu que a estação Paraíso estava no ponto B, como se vê na figura a seguir.
 
    .. figure:: _resources/FigSem-21.png
+      :width: 300pt
 
    A escala do mapa que o turista consultou era de 1/300 e, a distância AB nesse mapa era de 4,8cm.
    
@@ -110,6 +111,7 @@ Exercícios
 #. Carlos e sua esposa Joana estavam visitando Buenos Aires e ao passar pelo enorme obelisco que fica na Praça da República, ele teve a curiosidade de saber sua altura.
 
    .. figure:: _resources/FigSem-23.png
+      :width: 300pt
       
    Joana que é engenheira e tem sempre uma pequena trena na bolsa disse o seguinte: Caminhe sobre a sombra do obelisco e conte seus passos. Procure dar passos iguais. Carlos fez o que ela pediu e encontrou 44 passos para o comprimento da sombra.
    
@@ -121,7 +123,7 @@ Exercícios
 
    .. tikz::
       
-      \begin{scope}[scale=.5]
+      \begin{scope}[scale=.35]
       \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
       \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.15000000596046448] (0.,0.) -- (8.,0.) -- (4.,6.9282032302755105) -- cycle;
       \fill[line width=0.8pt,color=qqzzqq,fill=qqzzqq,fill opacity=0.15000000596046448] (8.,0.) -- (14.,0.) -- (11.,5.196152422706633) -- cycle;
