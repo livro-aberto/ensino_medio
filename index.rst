@@ -6,13 +6,13 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
    
+   PE103-ROTEIRO
    AF106-ROTEIRO
    AF107-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
    GE202-ROTEIRO
-   GE301-ROTEIRO
-   PE103-ROTEIRO
+   GE301-ROTEIRO   
    PE104-ROTEIRO
    
 .. toctree::
@@ -104,3 +104,14 @@ Ensino Médio
    GE301-A
    GE301-E
 
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   PE104
+   PE104-0
+   PE104-1
+   PE104-2
+   PE104-A
+   PE104-E
