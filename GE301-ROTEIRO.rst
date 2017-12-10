@@ -100,7 +100,23 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: O que há de inovador no capítulo?
 
-      [...]
+      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo sobre os usos, vantagens (e desvantagens) e conversões das diversas representações (semiótica), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
+      
+      * O fato das propriedades das projeções em perspectiva (ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga) serem abordadas usando a definição em 3D e não diretamente na representação 2D como é normalmente feito em Matemática e em Arte no Ensino Fundamental II ([Dourado-2013]_).
+      
+      .. figure:: _resources/2017-12-09_19-09-03.jpg
+         :width: 250pt
+         :align: center
+         
+      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma.
+      
+      .. figure:: _resources/pro-aba-01-br.*
+      
+      .. figure:: _resources/pro-aba-02-br.*
+      
+      .. figure:: _resources/pro-aba-03-br.*
+      
+      
 
    .. admonition:: Desafios no ensino
 
@@ -168,17 +184,25 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Fan-2015]_,[Khine-2017]_);
       
-      * que, além das propriedades matemáticas, as habilidades visuais incluem questões de neurociência, como mostram várias "ilusões" (como a clássica ilusão de Ponzo);
+      * que, além das propriedades matemáticas, as habilidades visuais incluem questões de neurociência, como mostram várias "ilusões" (como a clássica ilusão de Ponzo e a mesa de Shepard);
       
       .. figure:: _resources/ilusao-de-ponzo.png
-         :width: 300pt
+         :width: 200pt
+         :align: center
+         
+      .. figure:: _resources/shepard-table-01.jpg         
+         :width: 200pt
+         :align: center
+         
+      .. figure:: _resources/shepart-table-01.*         
+         :width: 200pt
          :align: center
          
       * que as representações 2D de objetos 3D podem trazer ambiguidades de representação e que, em muitos casos, o contexto pode ser determinante para uma escolha de interpretação.
       
       .. figure:: _resources/ambiguidade-01.jpg
          :width: 200pt
-         :align: center
+         :align: center         
          
       A introdução será concluída informando que, no que se seguirá no capítulo, (1) duas representações 2D de objetos 3D serão estudadas, a saber, projeções em perspectiva e projeções paralelas, (2) que estas projeções têm definições precisas e propriedades peculiares que devem ser observadas e que (3) a escolha destas projeções se deve ao fato delas serem utilizadas em vários contextos (que serão vistos), incluindo em aspectos corriqueiros do dia a dia.
          
@@ -213,6 +237,8 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       .. [Ainsworth-et-al-2011] Ainsworth, S. E.;Prain, V.;  Tytler, R. (2011). Drawing To Learn in Science. Science, n. 333 (6046), p. 1096-1097.
 
       .. [Cox-et-al-1998] Cox, M. V.; Perara, J. (1998). Children's Observational Drawings: A Nine‐Point Scale for Scoring Drawings of A Cube. Educational Psychology: An International Journal of Experimental Educational Psychology, v. 18, n. 3, p. 309-317.
+      
+      .. [Dourado-2013] Dourado, M. S. (2013). Geometria Espacial e Projeções em Perspectiva: Um Relato de Prática no Nono Ano do Ensino Fundamental. Dissertação de Mestrado, PROFMAT, Universidade Federal Fluminense.
 
       .. [Gardner-2011] Gardner, H. (2011). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.
       
