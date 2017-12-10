@@ -108,7 +108,9 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Desdobramentos imediatos
 
-      [...]
+      BNCC(EM13MT04) Definir e aplicar o Princípio de Cavalieri e utilizá-lo para compreender e estabelecer as expressões para o cálculo de medidas de volume de cilindros, prismas, pirâmides e cones e aplicar na resolução de problemas.
+      
+      Relacionar e interpretar adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em diversas áreas (Biologia, Geografia, Física, Química e etc). E, perceber detalhes que fazem parte do objeto mesmo que não sejam mostrados na figura. 
    
    .. admonition:: Abordagem da introdução
    
