@@ -1,0 +1,265 @@
+
+.. _praticando-poligonos-semelhantes:
+
+**********
+Praticando
+**********
+
+.. _ativ-atividade-inicial:
+
+Atividade: Resolvendo o problema inicial
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   
+   * Compreender a aplicação do conceito geral de figuras semelhantes.
+   
+   **Observações e recomendações**
+   
+   * Os alunos devem concluir que as medidas da planta são proporcionais às medidas reais.
+
+
+Veja novamente a planta da casa que mostramos na  :ref:`ativ-planta_de_uma_casa`.
+
+Reproduzimos as perguntas originais e acrescentamos outras. 
+
+Responda
+
+#. O desenho fornece informações suficientes para que se calcule a área do Quarto 2?
+#. Com a régua Fabio mediu a distância entre a porta de entrada e a porta da cozinha e encontrou 9cm. Na realidade qual é essa distância? 
+#. Fabio mediu também o comprimento da mesa da sala de jantar e encontrou 2,3cm, Na realidade qual é essa medida? 
+#. Na planta, qual é a medida em centímetros do comprimento de Quarto 1?
+#. Qual é a razão de semelhança entre a planta e a casa real?
+
+
+
+.. admonition:: Resposta 
+
+   #. Não, pois só temos duas medidas dadas. Se o quarto fosse um retângulo poderíamos calcular sua área. Tudo o que podemos dizer, sem medir nada mais no desenho, é que a área do quarto é um pouco menor do que `2,50 \times 2,77 \approx 6,9m^2`.
+   #. 6,75m
+   #. 1,72m
+   #. 3,2cm
+   #. 1/75
+
+
+
+.. _ativ-trapezios-semelhantes:
+
+Atividade: Trapézios semelhantes
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   Levar o estudante a 
+   * Reconhecer quadriláteros semelhantes
+   * Aplicar a proporcionalidade correta nas figuras.
+   * Demonstrar um fato a partir de propriedades conhecidas.
+   
+   **Observações e recomendações**
+   
+   * O aluno deve voltar e recordar a semelhança de polígonos antes de atacar o problema.
+   * No item b) o aluno deve escrever claramente qual é a hipótese e qual é a tese da proposição a ser demonstrada.
+   
+
+Na figura a seguir, `ABCD` é um trapézio com bases  `AB=a` e `CD=b`. O segmento `MN` é paralelo às bases e divide o trapézio em dois outros trapézios semelhantes.
+
+
+.. tikz:: 
+
+   \begin{scope}[scale=1.5]
+   \draw [line width=0.8pt] (0.,0.)-- (6.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (0.7,3.02);
+   \draw [line width=0.8pt] (0.7,3.02)-- (3.54,3.02);
+   \draw [line width=0.8pt] (3.54,3.02)-- (6.,0.);
+   \draw [line width=0.8pt] (0.4146938475705566,1.7891077423758293)-- (4.542647335680616,1.7891077423758295);
+   \draw (2.794,-.2) node[anchor=north west] {$ a $};
+   \draw (2.046,3.888) node[anchor=north west] {$ b $};
+   \draw (2.442,2.084) node[anchor=north west] {$ x $};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.176,-0.347) node {$A$};
+   \draw [fill=black] (6.,0.) circle (1.0pt);
+   \draw[color=black] (6.05,-0.391) node {$B$};
+   \draw [fill=black] (3.54,3.02) circle (1.0pt);
+   \draw[color=black] (3.564,3.393) node {$C$};
+   \draw [fill=black] (0.7,3.02) circle (1.0pt);
+   \draw[color=black] (0.44,3.327) node {$D$};
+   \draw [fill=black] (4.542647335680616,1.7891077423758295) circle (1.0pt);
+   \draw[color=black] (4.752,1.963) node {$N$};
+   \draw [fill=black] (0.4146938475705566,1.7891077423758293) circle (1.0pt);
+   \draw[color=black] (-0.022,1.831) node {$M$};
+   \end{scope}
+   
+#. Determine a medida do segmento `MN` em função das bases do trapézio.
+#. Prove que as retas AN e MC são paralelas.
+
+
+.. admonition:: Resposta 
+
+  #. Como os trapézios já são semelhantes, pelo próprio enunciado, basta fazer a proporção `\dfrac{b}{x}=\dfrac{x}{a}` para encontrar `x=\sqrt{ab}`
+   
+  #. Basta usar o fato de que os trapézios podem ser divididos em triângulos semelhantes. A semelhança garante igualdade de ângulos e, a partir disso, é possível provar facilmente que `\angle CMN \cong \angle MNA`. Esses ângulos são alternos internos, se consideramos as retas `NA` e `CM` cortadas pela trasnversal `MN`. A igualdade dos  ângulos garante o paralelismo.
+  
+
+.. _ativ-homotetia:
+
+Atividade: Aplicando a homotetia
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+   
+   Levar o estudante a
+   
+   #. Reconhecer a homotetia como transformação que leva uma figura em outra semelhante.
+   #. Reconhecer que a homotetia faz ampliações e reduções em uma figura, mantendo sua disposição no plano.
+   #. Recordar que uma homotetia transforma uma reta em outra paralela.
+   #. Aplicar a homotetia em um problema de construção geométrica.
+   
+   **Observações e recomendações**
+   
+   
+   #. O aluno deve reler o texto sobre homotetia contido no capítulo de vetores.
+   #. Enfatizar o fato fundamental de que uma homotetia transforma uma reta em outra paralela.
+   #. Esclarecer que há aplicações em que a razão de homotetia é dada e outras em que pretendemos ampliar uma figura até que alguma condição dada seja cumprida. Este é o caso que trataremos a seguir.
+   
+  
+Nesta atividade você deverá resolver um problema de construção geométrica usando a homotetia, ou seja, transformando uma figura em outra semelhante.
+
+Leia atentamente o enunciado abaixo para compreender bem o problema e, após, siga o roteiro para executar a solução.
+
+Problema:
+
+É dado um triângulo `ABC`. Inscrever nesse triângulo um quadrado que tenha um lado sobre `BC` e os outros vértices sobre os lados `AB` e `AC`.
+
+Obs.: Use seus instrumentos de desenho: régua, esquadro e compasso para desenhar em uma folha de papel, ou use um programa de geometria dinâmica para executar a solução no computador.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (5.,4.32)-- (0.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (7.,0.);
+   \draw [line width=0.8pt] (7.,0.)-- (5.,4.32);
+   \draw [fill=black] (5.,4.32) circle (1.0pt);
+   \draw[color=black] (4.94,4.63) node {$A$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.4,.17) node {$B$};
+   \draw [fill=black] (7.,0.) circle (1.0pt);
+   \draw[color=black] (7.4,.1) node {$C$};
+
+
+**Roteiro para a solução**
+
+Devemos obter uma figura assim
+
+
+.. tikz:: 
+
+   \definecolor{ttttff}{rgb}{0.2,0.2,1.}
+   \fill[line width=1.6pt,color=ttttff,fill=ttttff,fill opacity=0.10000000149011612] (3.091872791519435,2.671378091872792) -- (3.091872791519435,0.) -- (5.763250883392227,0.) -- (5.763250883392226,2.671378091872792) -- cycle;
+   \draw [line width=0.8pt] (5.,4.32)-- (0.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (7.,0.);
+   \draw [line width=0.8pt] (7.,0.)-- (5.,4.32);
+   \draw [line width=0.8pt] (2.8025915203928324,0.)-- (1.5035362233867127,0.);
+   \draw [line width=1.6pt,color=ttttff] (3.091872791519435,2.671378091872792)-- (3.091872791519435,0.);
+   \draw [line width=1.6pt,color=ttttff] (3.091872791519435,0.)-- (5.763250883392227,0.);
+   \draw [line width=1.6pt,color=ttttff] (5.763250883392227,0.)-- (5.763250883392226,2.671378091872792);
+   \draw [line width=1.6pt,color=ttttff] (5.763250883392226,2.671378091872792)-- (3.091872791519435,2.671378091872792);
+   \draw [fill=black] (5.,4.32) circle (1.0pt);
+   \draw[color=black] (4.94,4.63) node {$A$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.4,0.17) node {$B$};
+   \draw [fill=black] (7.,0.) circle (1.0pt);
+   \draw[color=black] (7.4,0.17) node {$C$};
+   \draw [fill=black] (5.763250883392226,2.671378091872792) circle (1.0pt);
+   \draw [fill=black] (3.091872791519435,2.671378091872792) circle (1.0pt);  
+   \draw [fill=black] (3.091872791519435,0.) circle (1.0pt);
+   \draw [fill=black] (5.763250883392227,0.) circle (1.0pt);
+
+Para começar vamos construir um quadrado abandonando uma das condições do problema.
+
+Constuiremos o quadrado `DEFG` com o lado `EF` sobre `BC` e o vértice D sobre o lado `AB` do triângulo `ABC`. Estamos, então, abandonando a condição de que `G` pertença ao lado `AC`.
+
+Roteiro para a construção:
+
+* Assinale um ponto `D`, qualquer, sobre o lado `AB` (se for um pouco mais próximo de `B` do que de `A` ficará melhor, mas isso não importa realmente).
+* Trace `DE` perpendicular a `BC`.
+* Trace a semirreta `DX` paralela à semirreta `BC` e de mesma orientação.
+* Com o compasso, encontre o ponto `G` sobre `DX` de forma que `DG = DE`.
+* Trace `GF` perpendicular a `BC`.
+
+Pela construção executada, `DEFG` é um quadrado, certo?
+
+Vamos agora utilizar a homotetia de centro `B` para ampliar (ou reduzir) o nosso quadrado até que o vértice `G` pertença ao lado `AC`. Estamos então cumprindo a condição que foi abandonada no início da construção. 
+
+Continuando o roteiro da construção:
+
+* A semirreta `BG` intersecta o lado `AC` no ponto `Q`.
+* A reta que passa por `Q` e é paralela a `BC` intersecta o lado `AB` no ponto `M`.
+* As perpendiculares a `BC` traçadas por `M` e `Q` intersectam `BC` em `N` e `P`, respectivamente.
+
+Verifique agora que, com os procedimentos executados na construção, `MNPQ` é um quadrado que cumpre todas as condições do enunciado
+
+
+.. admonition:: Resposta 
+
+   .. tikz:: 
+      
+      \definecolor{wqwqwq}{rgb}{0.3764705882352941,0.3764705882352941,0.3764705882352941}
+      \definecolor{ttttff}{rgb}{0.2,0.2,1.}
+      \fill[line width=1.6pt,color=ttttff,fill=ttttff,fill opacity=0.10000000149011612] (3.0918727915194344,2.6713780918727914) -- (3.091872791519435,0.) -- (5.7632508833922245,0.) -- (5.763250883392225,2.6713780918727914) -- cycle;
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (2.2425306841769226,0.) -- (2.2425306841769226,0.2323439346358045) -- (2.010186749541118,0.2323439346358045) -- (2.010186749541118,0.) -- cycle; 
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (3.7469881011446438,0.2323439346358045) -- (3.5146441665088393,0.23234393463580452) -- (3.5146441665088393,0.) -- (3.7469881011446438,0.) -- cycle; 
+      \draw [line width=0.8pt] (5.,4.32)-- (0.,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (7.,0.);
+      \draw [line width=0.8pt] (7.,0.)-- (5.,4.32);
+      \draw [line width=0.8pt] (2.010186749541118,1.7368013516035261)-- (3.746988101144644,1.7368013516035261);
+      \draw [line width=0.8pt] (3.746988101144644,1.7368013516035261)-- (3.7469881011446438,0.);
+      \draw [line width=0.8pt] (3.7469881011446438,0.)-- (2.010186749541118,0.);
+      \draw [line width=0.8pt] (2.010186749541118,0.)-- (2.010186749541118,1.7368013516035261);
+      \draw [->,line width=0.8pt] (5.763250883392225,2.6713780918727914) -- (7.16760618991217,3.3223238991867565);
+      \draw [line width=0.8pt] (0.,0.)-- (5.763250883392225,2.6713780918727914);
+      \draw [line width=1.6pt,color=ttttff] (3.0918727915194344,2.6713780918727914)-- (3.091872791519435,0.);
+      \draw [line width=1.6pt,color=ttttff] (3.091872791519435,0.)-- (5.7632508833922245,0.);
+      \draw [line width=1.6pt,color=ttttff] (5.7632508833922245,0.)-- (5.763250883392225,2.6713780918727914);
+      \draw [line width=1.6pt,color=ttttff] (5.763250883392225,2.6713780918727914)-- (3.0918727915194344,2.6713780918727914);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (7.,0.)-- (8.587783107635195,0.);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.746988101144644,1.7368013516035261)-- (6.707820104349295,1.7368013516035261);
+      \draw [shift={(2.010186749541118,1.7368013516035261)},line width=0.8pt,dash pattern=on 3pt off 3pt]  plot[domain=-1.5707963267948966:0.,variable=\t]({1.*1.7368013516035261*cos(\t r)+0.*1.7368013516035261*sin(\t r)},{0.*1.7368013516035261*cos(\t r)+1.*1.7368013516035261*sin(\t r)});
+      \draw [fill=black] (5.,4.32) circle (1.0pt);
+      \draw[color=black] (4.929548536701026,4.652118378564409) node {$A$};
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw[color=black] (-0.5687561178168232,.1) node {$B$};
+      \draw [fill=black] (7.,0.) circle (1.0pt);
+      \draw[color=black] (7.4,.1) node {$C$};
+      \draw [fill=black] (2.010186749541118,1.7368013516035261) circle (1.0pt);
+      \draw[color=black] (1.7532370828958943,2.089163619287174) node {$D$};
+      \draw [fill=black] (2.010186749541118,0.) circle (1.0pt);
+      \draw[color=black] (2.01,-.4) node {$E$};
+      \draw [fill=black] (3.746988101144644,1.7368013516035261) circle (1.0pt);
+      \draw[color=black] (3.7028351476452515,2.111069215520313) node {$G$};
+      \draw [fill=black] (3.7469881011446438,0.) circle (1.0pt);
+      \draw[color=black] (3.75,-.4) node {$F$};
+      \draw [fill=black] (5.763250883392225,2.6713780918727914) circle (1.0pt);
+      \draw[color=black] (5.783866789793441,2.987293064845863) node {$Q$};
+      \draw [fill=black] (3.0918727915194344,2.6713780918727914) circle (1.0pt);
+      \draw[color=black] (2.78280010585342,2.987293064845863) node {$M$};
+      \draw [fill=black] (3.091872791519435,0.) circle (1.0pt);
+      \draw[color=black] (3.1,-.4) node {$N$};
+      \draw [fill=black] (5.7632508833922245,0.) circle (1.0pt);
+      \draw[color=black] (5.76,-.4) node {$P$};
+      \draw [fill=wqwqwq] (6.707820104349295,1.7368013516035261) circle (0.5pt);
+      \draw[color=wqwqwq] (6.857241005217244,1.9577300418883412) node {$X$};
+      
+
+
+  
+
