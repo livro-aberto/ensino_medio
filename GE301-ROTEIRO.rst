@@ -43,7 +43,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       
       .. figure:: _resources/dia-a-dia-02.jpg
-           :width: 100pt
+           :width: 200pt
            :align: center
             
 
@@ -66,9 +66,33 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
    .. admonition:: Pré-requisitos
 
-      BNCC (EF06MA26) Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.     
+      BNCC(EF01MA13) Relacionar figuras geométricas espaciais (cones, cilindros, esferas e blocos retangulares) a objetos familiares do mundo físico.
 
-      BNCC (EF09MA16) Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.
+      BNCC(EF01MA14) Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos.
+
+      BNCC(EF02MA14) Reconhecer, nomear e comparar figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera), relacionando-as com objetos do mundo físico.
+
+      BNCC(EF02MA15) Reconhecer, comparar e nomear figuras planas (círculo, quadrado, retângulo e triângulo), por meio de características comuns, em desenhos apresentados em diferentes disposições ou em sólidos geométricos.
+
+      BNCC(EF03MA13) Associar figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera) a objetos do mundo físico e nomear essas figuras.
+
+      BNCC(EF03MA14) Descrever características de algumas figuras geométricas espaciais (prismas retos, pirâmides, cilindros, cones), relacionando-as com suas planificações.
+
+      BNCC(EF04MA17) Associar prismas e pirâmides a suas planificações e analisar, nomear e comparar seus atributos, estabelecendo relações entre as representações planas e espaciais.
+
+      BNCC(EF05MA16) Associar figuras espaciais a suas planificações (prismas, pirâmides, cilindros e cones) e analisar, nomear e comparar seus atributos.
+
+      BNCC(EF06MA17) Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano como em faces de poliedros.
+
+      BNCC(EF06MA20) Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais.
+
+      BNCC(EF06MA26) Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.     
+
+      BNCC(EF07MA17) Reconhecer e construir figuras obtidas por simetrias de translação, rotação e reflexão, usando instrumentos de desenho ou softwares de geometria dinâmica e vincular esse estudo a representações planas de obras de arte, elementos arquitetônicos, entre outros.
+
+      BNCC(EF09MA12) Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes.
+
+      BNCC(EF09MA16) Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.
 
    .. admonition:: Conexões com outros conteúdos
 
@@ -84,11 +108,50 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Desdobramentos imediatos
 
-      [...]
+      BNCC(EM13MT04) Definir e aplicar o Princípio de Cavalieri e utilizá-lo para compreender e estabelecer as expressões para o cálculo de medidas de volume de cilindros, prismas, pirâmides e cones e aplicar na resolução de problemas.
+      
+      Relacionar e interpretar adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em diversas áreas (Biologia, Geografia, Física, Química e etc). E, perceber detalhes que fazem parte do objeto mesmo que não sejam mostrados na figura. 
    
    .. admonition:: Abordagem da introdução
    
-      A abordagem da introdução será conduzida por meio de uma atividade: os alunos se dividirão em grupos e cada grupo receberá um conjunto de sólidos dispostos de uma determinada maneira.    
+      A abordagem da introdução será conduzida por meio de uma atividade: os alunos se dividirão em grupos e cada grupo receberá um conjunto de sólidos dispostos (feitos de papel ou canudinhos) de uma certa maneira (algo parecido como na figura a seguir). Pede-se então aos alunos que procurem fazer um desenho que retrate o mais fielmente possível o que eles vêem.  
+      
+      .. figure:: _resources/2017-12-10_10-08-00.jpg
+         :width: 200pt
+         :align: center
+      
+      Com esta atividade, o professor poderá ter um panorama e uma posição na escala das habilidades de desenho de seus alunos (conforme [Cox-et-al-1998]_, [Donley-1987]_) e os alunos, pela experiência da atividade, poderão aproveitar melhor a explanação que o professor fará a seguir.
+
+      .. figure:: _resources/2017-12-10_10-19-40.jpg
+         :width: 200pt
+         :align: center
+
+
+      Esta explanação tratará das representações pictóricas: conceito, história e finalidades de uso ([Ainsworth-et-al-2011]_, [Saraiva-2017]_), suas especificidades. Para evitar constrangimentos, o professor pode usar imagens análogas às produzidas pelos alunos (e não os desenhos produzidos pelos próprios alunos). Aqui é importante que se deixe claro:
+       
+      * que a questão de que desenho (representação) usar depende do que se quer com ele e, assim, o desenho estar "adequado" ou "não adequado" depende do contexto (afinal, como disse Picasso: "Levei quatro anos para aprender	 a pintar como Rafael, mas levei a vida toda para aprender a desenhar como uma criança.");
+      
+      .. figure:: _resources/2017-12-10_11-21-06.jpg
+         :width: 200pt
+         :align: center
+         
+      .. figure:: _resources/2017-12-10_11-23-10_1.jpg         
+         :width: 200pt
+         :align: center
+         
+      * que, como qualquer outra habilidade humana, com prática, é possível aprender a desenhar ([Edwards-2005]_);
+      
+      * que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_);
+      
+      * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Fan-2015]_,[Khine-2017]_);
+      
+      * que, além das propriedades matemáticas, as habilidades visuais incluem questões de neurociência, como mostram várias "ilusões" (como a clássica ilusão de Ponzo).
+      
+      .. figure:: _resources/ilusao-de-ponzo.png
+         :width: 300 pt
+         :align: center
+         
+      
       
    .. admonition:: Dificuldades típicas dos estudantes (distratores)
    
@@ -116,6 +179,9 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Referências bibliográficas
 
+      .. [Ainsworth-et-al-2011] Ainsworth, S. E.;Prain, V.;  Tytler, R. (2011). Drawing To Learn in Science. Science, n. 333 (6046), p. 1096-1097.
+
+      .. [Cox-et-al-1998] Cox, M. V.; Perara, J. (1998). Children's Observational Drawings: A Nine‐Point Scale for Scoring Drawings of A Cube. Educational Psychology: An International Journal of Experimental Educational Psychology, v. 18, n. 3, p. 309-317.
 
       .. [Gardner-2011] Gardner, H. (2011). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.
       
@@ -123,12 +189,22 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       .. [Khine-2017] Khine, M. S. (2017). Visual-Spatial Ability in STEM Educaton: Transforming Research into Practice. Springer-Verlag.
       
+      .. [Donley-1987] Donley, S. K. (1987). Perspectives Drawing Development in Children. Disponível em: <http://www.learningdesign.com/Portfolio/DrawDev/kiddrawing.html>.
+      
+      .. [Edwards-2005] Edwards, B. Desenhando Com o Lado Direito do Cérebro. Oitava edição, Ediouro.
+      
+      .. [Fan-2015] Fan, J. E. (2015). Drawing to Learn: How Producing Graphical Representations Enhances Scientific Thinking. Translational Issues in Psychological Science, American Psychological Association, v. 1, n. 2, p. 170–181.
+      
       .. [NRC-2006] National Research Council. (2006). Learning To Think Spatially. The National Academies Press, Washington, D.C..
 
       .. [Newcombe-2017] Newcombe, N. (2017). Harnessing Spatial Thinking to Support STEM Learning.  OECD Education Working Papers, n. 161, OECD Publishing, Paris. Disponível em: <https://goo.gl/kyiJ4z>.
+      
+      .. [Saraiva-2017] Saraiva, E. M. S. C. (2017). Estudo do Papel da Representação Visual no Contexto da Mediação dos Professores de Ciências Físicas. Tese de doutorado, Universidade de Trás-os-Montes e Alto Douro, Portugal.
       
       .. [Sinclair-et-al-2016] Sinclair, N. et al. (2016). Recent Research On Geometry Education: An ICME‑13 Survey Team Report. ZDM Mathematics Education, v. 48, p. 691-719.
       
       .. [Sugihara-2000] Sugihara, K. (2000). "Impossible Objects" Are Not Necessarily Impossible: Mathematical Study on Optical Illusion. Em: Akiyama, J.; Kano, M.;  Urabe, M. (Eds.). JCDCG’98, LNCS 1763, p. 305−316, Springer-Verlag.
 
       .. [Uttal-et-al-2012]  Uttal, D. H.; Cohen, C. A. (2012). Spatial Thinking and STEM Education: When, Why, and How? Em: Ross, B. H. The Psychology of Learning and Motivation, v. 57, Elsevier.
+
+
