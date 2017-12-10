@@ -108,7 +108,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :width: 250pt
          :align: center
          
-      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma.
+      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma, o que dá movimento ao processo (um aspecto cognitivo importante, segundo [Sinha-2009]_), que fortalece as definições e minimiza as ambiguidades.
       
       .. figure:: _resources/pro-aba-01-br.*
       
@@ -156,7 +156,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
    .. admonition:: Abordagem da introdução
    
-      A abordagem da introdução será conduzida por meio de uma atividade: os alunos se dividirão em grupos e cada grupo receberá um conjunto de sólidos dispostos (feitos de papel ou canudinhos) de uma certa maneira (algo parecido como na figura a seguir). Pede-se então aos alunos que procurem fazer um desenho que retrate o mais fielmente possível o que eles vêem.  
+      A abordagem da introdução será conduzida por meio de uma atividade: os alunos se dividirão em grupos e cada grupo receberá um conjunto de sólidos dispostos (feitos de papel ou canudinhos) de uma certa maneira (algo parecido como na figura a seguir, com oclusão proposital de um sólido com relação a outro). Pede-se então aos alunos que procurem fazer um desenho que retrate o mais fielmente possível o que eles vêem.  
       
       .. figure:: _resources/2017-12-10_10-08-00.jpg
          :width: 200pt
@@ -205,6 +205,10 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :width: 200pt
          :align: center
          
+      .. figure:: _resources/23795935_10214287958863105_3473076521964057361_n.jpg
+         :width: 200pt
+         :align: center
+         
       * que as representações 2D de objetos 3D podem trazer ambiguidades de representação e que, em muitos casos, o contexto pode ser determinante para uma escolha de interpretação.
       
       .. figure:: _resources/ambiguidade-01.jpg
@@ -212,12 +216,48 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :align: center         
          
       A introdução será concluída informando que, no que se seguirá no capítulo, (1) duas representações 2D de objetos 3D serão estudadas, a saber, projeções em perspectiva e projeções paralelas, (2) que estas projeções têm definições precisas e propriedades peculiares que devem ser observadas e que (3) a escolha destas projeções se deve ao fato delas serem utilizadas em vários contextos (que serão vistos), incluindo em aspectos corriqueiros do dia a dia.
-         
-      
-      
+                     
    .. admonition:: Dificuldades típicas dos estudantes (distratores)
    
-      [...]   
+      As dificuldades advêm principalmente de dois fatores: por um lado, as projeções em perspectiva e paralelas são ambiguas (isto é, não injetivas) e não preservam comprimentos, ângulos, proporções, áreas, etc., de modo que as medidas na representação 2D podem não corresponder às medidas do objeto original 3D; por outro lado, não existe a cultura de se praticar a produção de desenhos, de modo que, em geral, quando os alunos são levados a fazer alguma representação 2D de objetos 3D, os desenhos produzidos são algumas vezes ingênuos.     
+      
+      Um exemplo de distrator típico é apresentado por [Lellis-2009]_: na figura a seguir, é comum um aluno desavisado pensar que entre `A`, `B` e `C`, é o ponto `C` que está mais próximo da reta `r` na configuração 3D (afinal, na projeção paralela, é o que acontece).
+      
+      .. figure:: _resources/2017-12-10_18-14-52.jpg
+         :width: 250pt
+         :align: center
+         
+      Dependendo do ponto de vista, retas que são reversas são projetadas em retas concorrentes, o que também costuma confudir os alunos.
+      
+      .. figure:: _resources/2017-12-10_21-05-40.jpg
+         :width: 250pt
+         :align: center
+         
+      .. figure:: _resources/2017-12-10_21-21-23.jpg         
+         :width: 250pt
+         :align: center
+         
+      Outros dois exemplos são dados por [Volkert-2008]_: na primeira figura, a poligonal ligando um vértice do cubo ao ponto médio da aresta pode ser interpretada de várias maneiras diferentes; na segunda figura, os ângulos retos da configuração 3D podem, ao mesmo tempo, na representação 2D, ser desenhados como um ângulo agudo e um ângulo obtuso.
+      
+      .. figure:: _resources/ambiguidade-02.jpg
+         :width: 250pt
+         :align: center
+         
+      Com relação à questão de ângulos, [Fujita-et-al-2017]_ relatam o equívoco de alunos japoneses acharem que, na figura a seguir, o ângulo `MDN` ser reto, o que não é o caso.
+      
+      .. figure:: _resources/2017-12-10_21-28-52.jpg
+         :width: 170pt
+         :align: center
+      
+      O segundo tipo de dificuldade (a do desenho) é relatada por várias referências: [Gutierrez-1998]_, [Passos-2000]_, [Cohn-2012]_.
+      
+      .. figure:: _resources/2017-12-10_19-28-32.jpg
+         :width: 250pt
+         :align: center
+         
+      .. figure:: _resources/23795075_10214262389743893_4084204880383248735_n.jpg         
+         :width: 250pt
+         :align: center
    
    .. admonition:: Exemplos
    
@@ -242,33 +282,47 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
    .. admonition:: Referências bibliográficas
 
       .. [Ainsworth-et-al-2011] Ainsworth, S. E.;Prain, V.;  Tytler, R. (2011). Drawing To Learn in Science. Science, n. 333 (6046), p. 1096-1097.
+      
+      .. [Cohn-2012] Cohn, N. (2012). Explaining ‘I Can’t Draw’: Parallels between The Structure and Development of Language and Drawing. Human Development, v. 55, p. 167–192.
 
       .. [Cox-et-al-1998] Cox, M. V.; Perara, J. (1998). Children's Observational Drawings: A Nine‐Point Scale for Scoring Drawings of A Cube. Educational Psychology: An International Journal of Experimental Educational Psychology, v. 18, n. 3, p. 309-317.
       
+      .. [Donley-1987] Donley, S. K. (1987). Perspectives Drawing Development in Children. Disponível em: <http://www.learningdesign.com/Portfolio/DrawDev/kiddrawing.html>.            
+      
       .. [Dourado-2013] Dourado, M. S. (2013). Geometria Espacial e Projeções em Perspectiva: Um Relato de Prática no Nono Ano do Ensino Fundamental. Dissertação de Mestrado, PROFMAT, Universidade Federal Fluminense.
+      
+      .. [Edwards-2005] Edwards, B. Desenhando Com o Lado Direito do Cérebro. Oitava edição, Ediouro.
+      
+      .. [Fan-2015] Fan, J. E. (2015). Drawing to Learn: How Producing Graphical Representations Enhances Scientific Thinking. Translational Issues in Psychological Science, American Psychological Association, v. 1, n. 2, p. 170–181.
 
       .. [Gardner-2011] Gardner, H. (2011). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.
       
       .. [Gray-et-al-2004] Gray, J.R.; Thompson P. M. (2004). "Neurobiology of Intelligence: Science and Ethics”. Nature Reviews Neuroscience, v. 5/6, p. 471-482.
       
+      .. [Gutierrez-1998] Gutiérrez, A. (1998). Las Representaciones Planas de Cuerpos 3-Dimensionales En La Enseñanza de La Geometría Espacial. Revista EMA, v. 3, n. 3, p. 193-220.
+      
+      .. [Fujita-et-al-2017] Fujita, T. et al. (2017). Students’ Geometric Thinking with Cube Representations: Assessment Framework and Empirical Evidence. The Journal of Mathematical Behavior, v. 46, p. 96-111.
+      
+      .. [Lellis-2009] Lellis, M. (2009). Desenho em Perspectiva no Ensino Fundamental – Considerações Sobre Uma Experiência. Seminários de Ensino de Matemática (SEMA), Primeiro Semestre de 2009 (Ano II), Programa de Pós-Graduação da Faculdade de Educação da Universidade de S˜ao Paulo, 2009. Disponível em: <https://goo.gl/77Unkk>. 
+      
       .. [Khine-2017] Khine, M. S. (2017). Visual-Spatial Ability in STEM Educaton: Transforming Research into Practice. Springer-Verlag.
-      
-      .. [Donley-1987] Donley, S. K. (1987). Perspectives Drawing Development in Children. Disponível em: <http://www.learningdesign.com/Portfolio/DrawDev/kiddrawing.html>.
-      
-      .. [Edwards-2005] Edwards, B. Desenhando Com o Lado Direito do Cérebro. Oitava edição, Ediouro.
-      
-      .. [Fan-2015] Fan, J. E. (2015). Drawing to Learn: How Producing Graphical Representations Enhances Scientific Thinking. Translational Issues in Psychological Science, American Psychological Association, v. 1, n. 2, p. 170–181.
       
       .. [NRC-2006] National Research Council. (2006). Learning To Think Spatially. The National Academies Press, Washington, D.C..
 
       .. [Newcombe-2017] Newcombe, N. (2017). Harnessing Spatial Thinking to Support STEM Learning.  OECD Education Working Papers, n. 161, OECD Publishing, Paris. Disponível em: <https://goo.gl/kyiJ4z>.
       
+      .. [Passos-2000] Passo, C. L. B. (2000). Representações, Interpretações e Prática Pedagógica: A Geometria na Sala de Aula. Tese de doutorado, Faculdade de Educação, Universidade Estadual de Campinas.
+      
       .. [Saraiva-2017] Saraiva, E. M. S. C. (2017). Estudo do Papel da Representação Visual no Contexto da Mediação dos Professores de Ciências Físicas. Tese de doutorado, Universidade de Trás-os-Montes e Alto Douro, Portugal.
       
       .. [Sinclair-et-al-2016] Sinclair, N. et al. (2016). Recent Research On Geometry Education: An ICME‑13 Survey Team Report. ZDM Mathematics Education, v. 48, p. 691-719.
       
+      .. [Sinha-2009] Sinha, P. (2009). Pawan Sinha em Como O Cérebro Aprender A Ver. Palestra TED. Disponível em: <https://goo.gl/eDZKYo>.
+      
       .. [Sugihara-2000] Sugihara, K. (2000). "Impossible Objects" Are Not Necessarily Impossible: Mathematical Study on Optical Illusion. Em: Akiyama, J.; Kano, M.;  Urabe, M. (Eds.). JCDCG’98, LNCS 1763, p. 305−316, Springer-Verlag.
 
       .. [Uttal-et-al-2012]  Uttal, D. H.; Cohen, C. A. (2012). Spatial Thinking and STEM Education: When, Why, and How? Em: Ross, B. H. The Psychology of Learning and Motivation, v. 57, Elsevier.
+      
+      .. [Volkert-2008] Volkert, K. (2008). The Problem of Solid Geometry. Symposium on the Occasion of the 100th Anniversary of ICMI, Rome. Disponível em: <https://goo.gl/Kt5g5C>.
 
 
