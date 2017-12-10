@@ -22,8 +22,11 @@ Ensino Médio
    AF106
    AF106-0
    AF106-1
-   AF106-E
+   AF106-E1
    AF106-2
+   AF106-3
+   AF106-A
+   AF106-E1
 
 
 .. toctree::
