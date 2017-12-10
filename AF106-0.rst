@@ -64,9 +64,9 @@
 
 .. _sec-funcoes:
 
-**********
-Explorando
-**********
+******************************
+Explorando: Conceito de Função
+******************************
 
 O que o nosso batimento cardíaco, um terremoto ou a variação das ações de uma empresa na bolsa de valores possuem em comum? Os batimentos cardíacos podem ser monitorados a partir de um sinal bioelétrico cujo gráfico é representado em um eletrocardiograma, as ondas sísmicas produzidas por um terremoto podem ser observadas a partir do registro de um sismógrafo e as variações dos valores das ações de uma empresa percebidas ao longo do tempo podem ser facilmente visualizadas em um gráfico.
 
@@ -92,9 +92,7 @@ Atividade: Pluviometria no Sistema Cantareira
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   
-   Levar o estudante a:
-   
+        
    * Interpretar representações gráficas de relações de dependência entre grandezas.
    * Reconhecer uma relação de dependência entre grandezas a partir da sua representação gráfica.
    * Reconhecer a univocidade em uma relação de dependência entre grandezas.
@@ -102,7 +100,7 @@ Atividade: Pluviometria no Sistema Cantareira
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * Nível de abstração *Processo*.
-   * Os valores apresentados no gráfico são estimativas. Na página  http://www.nivelaguasaopaulo.com/cantareira é possível ter acesso aos valores exatos para cada mês. No entanto, cabe observar que os dados do período apresentado na atividade (de 12/2013 a 11/2016) podem não estar mais disponíveis na página de referência. Você pode (e é interessante que o faça) modificar e adequar esta atividade usando dados atualizados do Sistema Cantareira ou substiuindo esses dados por dados da região em que você leciona.
+   * Os valores apresentados no gráfico são estimativas. `Nesta página  <http://www.nivelaguasaopaulo.com/cantareira>`_ é possível ter acesso aos valores exatos para cada mês. No entanto, cabe observar que os dados do período apresentado na atividade (de 12/2013 a 11/2016) podem não estar mais disponíveis na página de referência. Você pode (e é interessante que o faça) modificar e adequar esta atividade usando dados atualizados do Sistema Cantareira ou substiuindo esses dados por dados da região em que você leciona.
    * No item (b), o objetivo é identificar o valor absoluto da diferença, não sendo importante se o valor é positivo ou negativo, ou seja, se choveu menos ou mais do que o esperado. 
  
    
@@ -128,11 +126,11 @@ De acordo com o gráfico acima:
 
 .. admonition:: Resposta 
 
-   a) Há duas relações: uma envolvendo tempo e volume de chuva real e a outra tempo e o volume de chuva esperado.
-   b) De acordo com os dados apresentados no gráfico, a maior e a menor incidência de chuvas ocorreram em fevereiro de 2015 e em abril de 2016, respectivamente.
-   c) Em dezembro de 2013, janeiro e fevereiro de 2014, janeiro e fevereiro de 2015 e junho de 2016.
-   d) Sim, nos meses de abril e julho do ano de 2016.
-   e) Houve uma coincidência entre a quantidade de chuva esperada e a que realmente caiu sobre a região do Sistema Cantareira.
+   #. Há duas relações: uma envolvendo tempo e volume de chuva real e a outra tempo e o volume de chuva esperado.
+   #. De acordo com os dados apresentados no gráfico, a maior e a menor incidência de chuvas ocorreram em fevereiro de 2015 e em abril de 2016, respectivamente.
+   #. Em dezembro de 2013, janeiro e fevereiro de 2014, janeiro e fevereiro de 2015 e junho de 2016.
+   #. Sim, nos meses de abril e julho do ano de 2016.
+   #. Houve uma coincidência entre a quantidade de chuva esperada e a que realmente caiu sobre a região do Sistema Cantareira.
 
 
 .. _ativ-funcoes-numeros-triangulares:
@@ -143,8 +141,7 @@ Atividade: Números triangulares
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   Levar o estudante a:
-   
+      
    * Reconhecer a relação de dependência entre a ordem e os termos de uma sequência. 
    * Reconhecer, a partir de um padrão geométrico, os primeiros termos de uma sequência e ser capaz de, a partir do padrão identificado, inferir os próximos termos da sequência.
    * Generalizar, ainda que em palavras, a determinação de um termo qualquer da sequência a partir da sua ordem, segundo um padrão identificado.
@@ -212,28 +209,20 @@ Atividade: Números triangulares
   
 Considere a sequência de números ilustrada acima. Ela é conhecida como a sequência dos *números triangulares*. O `n`-ésimo número triangular, `T_n`, é igual a quantidade total de círculos congruentes necessários para formar um triângulo equilátero cujo lado tem `n` círculos. Por exemplo, o quarto número triangular é `T_4=10`, porque são necessários `10` círculos congruentes para formar um triângulo cujo lado tem, `4` desses círculos.
 
-a) Determine o 6º, o 7º e o 8º números triangulares.
-
-b) Descreva o procedimento que você usou para determinar `T_6`, `T_7` e `T_8` no item anterior.
-
-c) Determine o milésimo número triangular, `T_{1000}`. 
-
-d) Descreva um procedimento que permita determinar qualquer número triangular a partir da sua ordem na sequência? Explique.
-
-e) Quais são as variáveis relacionadas?
+#. Determine o 6º, o 7º e o 8º números triangulares.
+#. Descreva o procedimento que você usou para determinar `T_6`, `T_7` e `T_8` no item anterior.
+#. Determine o milésimo número triangular, `T_{1000}`. 
+#. Descreva um procedimento que permita determinar qualquer número triangular a partir da sua ordem na sequência? Explique.
+#. Quais são as variáveis relacionadas?
 
 
 .. admonition:: Resposta
 
-   a) `21`, `28` e `36`.
-   
-   b) Uma resposta possível seria a partir de um raciocínio aditivo baseado em contagem: `T_6` é obtido adicionando `6` círculos a um dos lados do triângulo equilátero que corresponde a `T_5` e efetuando a soma dos círculos presentes nesse novo triângulo equilátero: `T_6 = 1 + 2 + 3 + 4 + 5 + 6 = 21`. Outra maneira é a partir do raciocínio recursivo. Assim `T_6` é obtido adicionando `6` círculos ao total de círculos do triângulo equilátero que corresponde a `T_5`: `T_6 = T_5 + 6 = 15 + 6 = 21`. Os números triângulares `T_7` e `T_8` podem ser obtidos de formas análogas.
-   
-   c) `T_{1000} = 1 +2 +3 + 4 + 5 + 6 +...+ 1000 = 500500`.
-   
-   d) Uma resposta possível é: o número triangular `T_n` é obtido somando `n` ao número triangular anterior.
-   
-   e) `n` e `T_n`.
+   #. `21`, `28` e `36`.
+   #. Uma resposta possível seria a partir de um raciocínio aditivo baseado em contagem: `T_6` é obtido adicionando `6` círculos a um dos lados do triângulo equilátero que corresponde a `T_5` e efetuando a soma dos círculos presentes nesse novo triângulo equilátero: `T_6 = 1 + 2 + 3 + 4 + 5 + 6 = 21`. Outra maneira é a partir do raciocínio recursivo. Assim `T_6` é obtido adicionando `6` círculos ao total de círculos do triângulo equilátero que corresponde a `T_5`: `T_6 = T_5 + 6 = 15 + 6 = 21`. Os números triângulares `T_7` e `T_8` podem ser obtidos de formas análogas.
+   #. `T_{1000} = 1 +2 +3 + 4 + 5 + 6 +...+ 1000 = 500500`.
+   #. Uma resposta possível é: o número triangular `T_n` é obtido somando `n` ao número triangular anterior.
+   #. `n` e `T_n`.
 
 
 .. _ativ-funcoes-arranha:
@@ -244,8 +233,6 @@ Atividade: Arranha-céu
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   Levar o estudante a:
-   
    
    * Reconhecer uma relação de dependência entre variáveis apresentada em forma de tabela.
    * Interpretar tabela que representa relação de dependência entre variáveis.
@@ -281,17 +268,11 @@ Considere que a altura de um andar é medida a partir do nível da rua até o pi
 #. Qual é a altura total desse prédio?
 #. Realize uma pesquisa na internet e descubra o maior arranha-céu brasileiro atualmente. Dividindo a altura total desse arranha-céu pela quantidade de andares, determine a altura média de um andar.
 
-
-
 .. admonition:: Resposta 
 
-   a) `4` metros.
-   b) `39` metros.
-   c) Significa que a garagem está abaixo do nível da rua.
-   d) `23º` andar.
-   e) O `40º` andar está localizado a `159` metros do solo, e como cada andar possui altura `4` metros, a altura total do prédio é `163` metros.
-   f) Andar e altura do andar.
-   g) A resposta depende do período em que a pesquisa for realizada. Em setembro de `2017` o maior arranha-céu brasileiro é o Millennium Palace, localizado em Balneário Camboriú, Santa Catarina, com `177` metros de altura e `46` andares.
-
-
-
+   #. `4` metros.
+   #. `39` metros.
+   #. Significa que a garagem está abaixo do nível da rua.
+   #. `23º` andar.
+   #. O `40º` andar está localizado a `159` metros do solo, e como cada andar possui altura `4` metros, a altura total do prédio é `163` metros.   
+   #. A resposta depende do período em que a pesquisa for realizada. Em setembro de `2017` o maior arranha-céu brasileiro é o Millennium Palace, localizado em Balneário Camboriú, Santa Catarina, com `177` metros de altura e `46` andares.

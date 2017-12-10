@@ -1,8 +1,8 @@
 .. _sec-funcao-organizando-ideias:
 
-*********************
-Organizando as ideias
-*********************
+*****************************************
+Organizando as ideias: Conceito de Função
+*****************************************
 
 Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados cujos elementos estão sendo relacionados. Nessa relacão, **cada** elemento de um desses conjuntos está associado a um **único** elemento do outro conjunto.
 
@@ -14,44 +14,41 @@ Por fim, na :ref:`ativ-funcoes-arranha` temos cada andar do prédio sendo relaci
 
 Nas três relações apresentadas, **cada** elemento de um conjunto `A` está associado a um **único** elemento de um conjunto `B`. Uma relação com essas propriedades é chamada **função**.
 
-.. admonition:: Definição 
-
-   Dizemos que uma relação `f` entre os elementos de dois conjuntos não vazios, `A` e `B`, é uma **função** de `A` em `B` se *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
+.. glossary:: 
    
-   Assim, para cada `x\in A` deve existir um único elemento `y\in B` que está associado a `x` pela função `f`. Esse elemento `y` é também denotado por `f(x)`:
+   Função
+      Dizemos que uma relação `f` entre os elementos de dois conjuntos não vazios, `A` e `B`, é uma função de `A` em `B` se *todo* elemento do conjunto `A` estiver relacionado a um *único* elemento do conjunto `B`.
    
-   .. _notacao:
-
-   .. figure:: _resources/funcao1.png
+Assim, para cada `x\in A` deve existir um único elemento `y\in B` que está associado a `x` pela função `f`. Esse elemento `y` é também denotado por `f(x)`:
+   
+.. figure:: _resources/funcao1.png
       :width: 200pt
       :align: center
    
    
-   O conjunto `A` é chamado **domínio** da função `f`, o conjunto `B` é chamado **contradomínio** de `f` e o subconjunto de `B` formado pelas imagens de todos os elementos de `A` é chamado **conjunto imagem** da função `f`.
+O conjunto `A` é chamado :index:`domínio da função <domínio da função>` `f`, o conjunto `B` é chamado :index:`contradomínio <contradomínio>` de `f` e o subconjunto de `B` formado pelas imagens de todos os elementos de `A` é chamado :index:`conjunto imagem <conjunto imagem>` da função `f`.
    
-      .. figure:: _resources/funcao.png
-         :width: 200pt
-         :align: center
+.. figure:: _resources/funcao.png
+     :width: 200pt
+     :align: center
    
    
-   De maneira geral, escreve-se:
+De maneira geral, escreve-se:
 
-   .. math::
+.. math::
       
-      f:A \to B \\
-      x \mapsto f(x)
+   f:A \to B \\
+   x \mapsto f(x)
       
-
-   
-Por exemplo, na atividade "Pluviometria no Sistema Cantareira", se `f` é a função que associa a cada ano-mês o índice de chuva real naquele período, `f(2014-3)=200` nos informa que o índice de chuva real observada na região do sistema Cantareira no mês de março do ano de 2014 foi de `200` milímetros.
+Por exemplo, na :ref:`ativ-funcoes-pluviometria`, se `f` é a função que associa a cada ano-mês o índice de chuva real naquele período, `f(2014-3)=200` nos informa que o índice de chuva real observada na região do sistema Cantareira no mês de março do ano de 2014 foi de `200` milímetros.
      
 Em uma função `f` de `A` em `B`, a dependência estabelecida entre as variáveis `x \in A` e `y \in B` permite que `y` seja identificada como “variável dependente” e `x` como  “variável independente”, uma vez que os valores assumidos por `y` são determinados em função da variação de `x` no domínio. Na atividade "Arranha-céu" por exemplo, a variável independente é aquela que representa os andares e a variável dependente é a altura do andar.
 
-**[Para a equipe de design: colocar um destaque para o parágrafo abaixo]**
+.. admonition:: Observação
 
-A definição de uma função `f` de `A` em `B` exige que a cada elemento `x\in A` corresponda uma imagem `y=f(x)\in B` e que não haja ambiguidade na determinação dessa imagem, ou seja, que ela seja única. Asssim, nem toda relação de `A` em `B é uma função. Por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois a imagem pode não ser única, ou seja, há ambiguidade: algumas pessoas têm mais de um número de telefone. E além disso, nem todas as pessoas têm telefone.
+   A definição de uma função `f` de `A` em `B` exige que a cada elemento `x\in A` corresponda uma imagem `y=f(x)\in B` e que não haja ambiguidade na determinação dessa imagem, ou seja, que ela seja única. Asssim, nem toda relação de `A` em `B é uma função. Por exemplo, a relação que associa a cada pessoa o número de seu telefone não é função, pois a imagem pode não ser única, ou seja, há ambiguidade: algumas pessoas têm mais de um número de telefone. E além disso, nem todas as pessoas têm telefone.
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
     Junto com seus colegas, reflita sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando os conjuntos domínio e contradomínio dessas funções.
 
@@ -70,8 +67,6 @@ Atividade: Colorindo o mapa
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS** 
-   
-   Levar o estudante a:
    
    * Identificar, em um contexto, diferentes relações de dependência entre conjuntos de dados
    * Identificar característica de univocidade (ou não) de uma relação. 
@@ -118,30 +113,23 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
     |   21:00 - 23:00  |     13      |       |                          |
     +------------------+-------------+-------+--------------------------+  
   
-a) Tomando como referência a ilustração anterior e utilizando a escala de cores a seguir, complete a terceira coluna da tabela com a cor que a ponte deveria estar colorida em cada período do dia destacado. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas. 
+#. Tomando como referência a ilustração anterior e utilizando a escala de cores a seguir, complete a terceira coluna da tabela com a cor que a ponte deveria estar colorida em cada período do dia destacado. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas. 
 
-		.. figure:: _resources/escala_cores.jpg
-			:width: 150pt
-			:align: center
+   		.. figure:: _resources/escala_cores.jpg
+			      :width: 150pt
+			      :align: center
 
-   **[Para equipe de design: por questões de acessibilidade colocar o nome das cores dentro de cada retângulo]**
-
-b) Você precisou associar uma mesma cor para para períodos diferentes do dia. Por que? 
-
-c) Sabendo que a ponte Rio-Niterói tem aproximadamente `13` km de extensão complete a quarta coluna da tabela com a velocidade média registrada em cada um dos períodos do dia.
-
-d) É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
-
+      Para equipe de design: por questões de acessibilidade colocar o nome das cores dentro de cada retângulo
+#. Você precisou associar uma mesma cor para para períodos diferentes do dia. Por que? 
+#. Sabendo que a ponte Rio-Niterói tem aproximadamente `13` km de extensão complete a quarta coluna da tabela com a velocidade média registrada em cada um dos períodos do dia.
+#. É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
 .. admonition:: Resposta 
 
-   a) Uma resposta possível é: associar a cor verde aos tempos de `13` e `14` minutos, a cor laranja aos tempos de `15` e `16` minutos, vermelha ao tempo de `18` minutos e a cor vinho ao tempo de `23` minutos.
-   
-   b) Isso se deu pelo fato de haver somente 4 cores disponíveis e, na tabela, haver 6 tempos diferentes de travessia.
-   
-   c) A velocidade média é determinada pela razão entre a distância percorrida e o tempo gasto para percorrê-la. Assim, os valores das velocidades médias nos diferentes períodos do dia são, pela ordem em que aparecem na tabela: `1,00` km/min, `0,72` km/min, `0,87` km/min, `0,87` km/min, `0,81` km/min, `0,81` km/min, `0,56` km/min, `0,93` km/min e `1,00` km/min.
-   
-   d) Não. Como a velocidade média é calculada efetuando-se a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão resultar em velocidades médias diferentes.
+   #. Uma resposta possível é: associar a cor verde aos tempos de `13` e `14` minutos, a cor laranja aos tempos de `15` e `16` minutos, vermelha ao tempo de `18` minutos e a cor vinho ao tempo de `23` minutos.
+   #. Isso se deu pelo fato de haver somente 4 cores disponíveis e, na tabela, haver 6 tempos diferentes de travessia.
+   #. A velocidade média é determinada pela razão entre a distância percorrida e o tempo gasto para percorrê-la. Assim, os valores das velocidades médias nos diferentes períodos do dia são, pela ordem em que aparecem na tabela: `1,00` km/min, `0,72` km/min, `0,87` km/min, `0,87` km/min, `0,81` km/min, `0,81` km/min, `0,56` km/min, `0,93` km/min e `1,00` km/min.
+   #. Não. Como a velocidade média é calculada efetuando-se a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão resultar em velocidades médias diferentes.
 
 Na atividade anterior, observam-se diferentes relações entre os dados. Por exemplo, para cada tempo de travessia é possível associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor é possível associar tempos diferentes e velocidades médias diferentes.
 
@@ -153,8 +141,6 @@ Atividade: É função?
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS** 
-   
-   Levar o estudante a:
    
    * Identificar, em um contexto, diferentes relações de dependência entre conjuntos de dados, reconhecendo quais são funções.
    * Identificar a  univocidade (ou não) de uma relação. 
@@ -212,8 +198,6 @@ Atividade: Não é função!
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    * Identificar a univocidade (ou não) em uma relação. 
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -231,10 +215,10 @@ Considere a relação formada por todos `(a,b)` de números naturais tais que `b
 
 .. admonition:: Resposta 
 
-   a) `(2,8)`, `(3,9)`, `(1,1)` e `(5,10)` pertencem a relação.
-   b) Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o número natural `3` está associado a `12` e a `15`. Portanto, a relação não pode ser função.
-   c) Infinitos.
-   d) Um exemplo não numérico: a relação associa cada livro ao seu autor.
+   #. `(2,8)`, `(3,9)`, `(1,1)` e `(5,10)` pertencem a relação.
+   #. Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o número natural `3` está associado a `12` e a `15`. Portanto, a relação não pode ser função.
+   #. Infinitos.
+   #. Um exemplo não numérico: a relação associa cada livro ao seu autor.
 
 .. _ativ-a-fila:
 
@@ -245,8 +229,6 @@ Atividade: A família
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    .. **REVER E ADEQUAR**
    
    * Identificar uma relação a partir de sua representação no plano cartesiano. 
@@ -354,8 +336,6 @@ Atividade: Praticando a notação
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    * Compreender funções a partir de sua representação analítica.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -441,8 +421,6 @@ Atividade: Enchendo o cone
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    * Determinar valores da imagem e do domínio de uma função a partir da sua expressão analítica.
    * Interpretar os resultados obtidos no contexto descrito.
    
@@ -472,9 +450,9 @@ O reservatório representado a seguir tem a forma de um cone cuja altura é `6 m
 
 .. admonition:: Resposta 
 
-   a) `V(2), V(3)` e `V(4)` são, respectivamente iguais a `2000`, `6750` e `16000` litros e correspondem aos volumes quando a altura da água no reservatório é igual `2`, `3` e `4` metros, respectivamente.
-   b) O menor volume observado é `V=0` litros, que corresponde a `h=0 \ m`, e o maior volume é `V(6)=54000` litros.
-   c) Corresponde a uma altura de `2,4` metros.
+   #. `V(2), V(3)` e `V(4)` são, respectivamente iguais a `2000`, `6750` e `16000` litros e correspondem aos volumes quando a altura da água no reservatório é igual `2`, `3` e `4` metros, respectivamente.
+   #. O menor volume observado é `V=0` litros, que corresponde a `h=0 \ m`, e o maior volume é `V(6)=54000` litros.
+   #. Corresponde a uma altura de `2,4` metros.
 
 .. _ativ-funcoes-uniformemente-variado:
 
@@ -485,8 +463,6 @@ Atividade: Uniformemente variado
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    * Compreender funções a partir de sua representação analítica, relacionando-a ao contexto descrito pelo problema.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -501,21 +477,20 @@ A posição `S` (em quilômetros), medida a partir de um referencial, de um veí
 
    S(t)=2t^2-4t+2
 
-a) Determine a posição inicial do veículo. Explique o significado desse resultado a partir do contexto.
-
-b) Após quanto tempo o veículo estará a 18km da origem?
+#. Determine a posição inicial do veículo. Explique o significado desse resultado a partir do contexto.
+#. Após quanto tempo o veículo estará a 18km da origem?
 
 
 .. admonition:: Resposta 
 
-   a) Inicialmente o veículo está posicionado a `S(0)=2` quilômetros da origem O.
-   b) Após `4` horas.
+   #. Inicialmente o veículo está posicionado a `S(0)=2` quilômetros da origem O.
+   #. Após `4` horas.
 
 
 .. _sec-aprofundando:
 
 ***************
-Aprofundamentos
+Para saber mais
 ***************
 
 .. _ativ-nao-funcao:
@@ -527,8 +502,6 @@ Atividade: Por que não é função?
 
    **OBJETIVOS ESPECÍFICOS** 
    
-   Levar o estudante a:
-
    * Identificar em contextos mais variados por que uma dada relação não define uma função.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -544,17 +517,15 @@ Vimos que para que uma relação de `A` em `B` seja uma função não pode haver
 
 Determine se cada uma das relações apresentadas a seguir é função. Justifique suas respostas a partir das condições `(I)` e `(II)`.  
 
-a) Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada "pessoa" associa "irmão da pessoa".
-b) Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada "número real `x` " associa "raiz quadrada do número real `x` ".
-c) Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada "número real positivo `x` " associa "triângulo de área `x` ".
+#. Seja `\mathcal{P}` o conjunto de todas as pessoas e considere a relação de `\mathcal{P}` em `\mathcal{P}`, que a cada "pessoa" associa "irmão da pessoa".
+#. Seja `\mathbb{R}`  o conjunto dos números reais e considere a relação de `\mathbb{R}` em `\mathbb{R}`, que a cada "número real `x` " associa "raiz quadrada do número real `x` ".
+#. Sejam `\mathbb{R}^+` o conjunto dos números reais positivos e `\mathcal{T}` o conjunto de todos os triângulos. Considere a relação de `\mathbb{R}^+` em `\mathcal{T}` que a cada "número real positivo `x` " associa "triângulo de área `x` ".
 
 
 .. admonition:: Resposta 
 
    #. Como existem filhos únicos no mundo, e famílias com mais do que dois filhos, existem "pessoas" no conjunto `\mathcal{P}` que não têm irmão e pessoas que têm mais do que um irmão. Portanto, pela relação dada, há no conjunto `\mathcal{P}` elementos sem correspondente bem como elementos com mais do que um correspondente. Por isso, a relação dada não é função.
-   
    #. Como não existe em `\mathbb{R}` raiz quadrada de número negativo a relação dada não se aplica aos números reais negativos, isto é, por exemplo o número real `-1` não pode ser associado à `\sqrt{-1}`, uma vez que `\sqrt{-1}` não pertence ao conjunto dos números reais. Portanto, haverá elementos (todos os números reais negativos) sem correspondente. Por isso, a relação dada não é função. Observe que, no entanto, a mesma relação considerada apenas para os números reias não negativos, ou seja, com domínio `\mathbb{R}^+`, seria uma função. 
-   
    #. Considerando, por exemplo, o número real `15` é possível contruir dois triângulos distintos ambos com área igual a 15. Basta considerar para o primeiro base e altura iguais a `5` e `6` e para o segundo base e altura iguais a `10` e `3`, que claramente não são triângulos congruentes. Dessa forma, haverá ambiguidade na determinação de correspondentes.Por isso, a relação dada não é função.
 
 .. _ativ-qual-e-imagem:
@@ -565,9 +536,7 @@ Atividade: Domínio e imagem
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS** 
-   
-   Levar o estudante a:
-
+  
    * Determinar a partir da expressão algébrica os conjuntos domínio e imagem.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
@@ -577,14 +546,14 @@ Atividade: Domínio e imagem
 
 Considere a seguinte lista de expressões algébricas. 
 
-a) `f(x)=\sqrt{x}`
-b) `G(z)=\sqrt{z-5}`
-c) `h(s)=\frac{1}{3-s}`
-d) `J(t)=\frac{1}{t+8}`
-e) `T(x)=\frac{1}{\sqrt{x}}`
-f) `R(x)=(x-2)^2+7`
-g) `g(u)=5u^2+8`
-h) `F(x)=(x+1)^2-3`
+#. `f(x)=\sqrt{x}`
+#. `G(z)=\sqrt{z-5}`
+#. `h(s)=\frac{1}{3-s}`
+#. `J(t)=\frac{1}{t+8}`
+#. `T(x)=\frac{1}{\sqrt{x}}`
+#. `R(x)=(x-2)^2+7`
+#. `g(u)=5u^2+8`
+#. `F(x)=(x+1)^2-3`
 
 Veja que, em algumas das expressões, a variável independente não pode assumir alguns valores, por exemplo, na letra a) `x` não pode assumir valores negativos. Complete a tabela abaixo com o maior conjunto domínio possível que cada uma das funções pode ter e o correspondente conjunto imagem.
 
