@@ -1,0 +1,265 @@
+
+.. _sec-aprofundando-grafico:
+
+**********************
+Aprofundando o assunto
+**********************
+
+
+
+.. _ativ-todo-mundo-tem-facebook:
+
+Atividade: Todo mundo tem *Facebook*?
+------------------------------
+
+
+.. admonition:: Para o professor
+
+      **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Utilizar os conhecimentos adquiridos ao longo do Capítulo para investigar o crescimento do número de usuários ativos na rede social Facebook.
+   * Fazer inferência baseado em um modelo matemático.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item e) os dados indicam que o número de usuários não irá ultrapassar `1.500.000.000`, mas isso pode não ser facilmente percebido. Espera-se, caso o estudante acredite que o número de usuários atinja os `2` bilhões, que isso ocorra depois de um grande intervalo de tempo.
+
+A rede socail virtual *Facebook* é um grande sucesso. O Facebook criado por Mark Zuckerberg em outubro de 2003, com o nome de *Facemash*, quando ele era  um estudante do segundo ano em Harvard. Inicialmente `450` visitantes geraram `22.000` visualizações de fotos em suas primeiras `4` horas online. Em fevereiro de `2004`, agora com o nome de *Thefacebook*, ele já contava com a participação de mais da metade dos alunos de Harvard, e um mês depois, estudantes das Universidades de Stanford, Columbia, Yale, Boston, Nova Iorque e MIT tiveram acesso à rede social criada por Mark Zuckerberg. A partir de setembro de `2005`, funcionários de várias empresas, dentre elas *Apple* e *Microsoft*, puderam ter acesso ao *Facebook* e no final de `2006` o serviço ficou disponível para qualquer pessoa maior de `13` anos e com um endereço válido de *e-mail*.
+
+A tabela a seguir mostra o número de usuários ativos do *Facebook* em janeiro dos anos de `2004` a `2015`.
+
+
+.. table::
+   :widths: 3 3 3
+   :column-alignment: center center center
+
+   +-------------+--------------------+------------------------+
+   |Ano          | Número de Usuários | Crescimento percentual |
+   +=============+====================+========================+
+   |        2004 | 5                  |         --             |
+   +-------------+--------------------+------------------------+
+   |        2005 | 1.000.000          |                        |
+   +-------------+--------------------+------------------------+
+   |        2006 | 5.500.000          | 450\%                  |
+   +-------------+--------------------+------------------------+
+   |        2007 | 12.000.000         |                        |
+   +-------------+--------------------+------------------------+
+   |        2008 | 70.000.000         |                        |
+   +-------------+--------------------+------------------------+
+   |        2009 | 150.000.000        |                        |
+   +-------------+--------------------+------------------------+
+   |        2010 | 370.000.000        |                        |
+   +-------------+--------------------+------------------------+
+   |        2011 | 600.000.000        |                        |
+   +-------------+--------------------+------------------------+
+   |        2012 | 800.000.000        |                        |
+   +-------------+--------------------+------------------------+
+   |        2013 | 1.056.000.000      |                        |
+   +-------------+--------------------+------------------------+
+   |        2014 | 1.228.000.000      |                        |
+   +-------------+--------------------+------------------------+
+   |        2015 | 1.317.000.000      |                        |
+   +-------------+--------------------+------------------------+
+
+
+Imagine que queremos investigar o crescimento anual do número de usuários. E, a partir da investigação formular um modelo que nos permita fazer previsões sobre a base de usuários para os próximos anos.
+
+#. Vamos começar investigando o crescimento percentual, preenchendo as lacunas da terceira coluna da tabela acima.
+	
+#. Marque no plano cartesiano os pontos correspondentes aos dados fornecidos pelas duas primeiras colunas da tabela, usando a seguinte escala: no eixo das abscissas `1` cm corresponde a `1` ano e no eixo das ordenadas `1` cm corresponde a `200` milhões de usuários ativos.
+	
+#. Como você descreveria o crescimento do número de usuários ativos do *Facebook*? Você acha que o crescimento está com tendência a diminuir, a aumentar ou a permanecer estável?
+
+#. Baseado no item c), faça uma previsão para o número de usuários para os anos de 2016 e 2017.
+
+#. Usando os dados da tabela e a representação gráfica feita no item b), faça uma previsão para o futuro do *Facebook*. Você acha que os números continuarão a aumentar? Se sim, quando ele atingirá a marca de `2` bilhões de usuários? Explique seu raciocínio.
+
+#. Um modelo matemático que fornece uma aproximação para a relação entre os dados das duas primeiras colunas da tabela é dado por uma função `f` que tem a seguinte expressão
+
+   .. math::
+
+      f(x)=\dfrac{980}{0,7+670 \cdot 0,45^{(x+1)}}
+	
+   em que `x` representa o tempo decorrido desde `2004`, isto é, para `2010` tem-se `x=6`, e `f(6)` é o valor em milhões de usuários ativos no *Facebook* naquele ano. Com a ajuda de uma calculadora científica, use a expressão acima para calcular a estimativa do número de usuários nos anos de `2013` e de `2014`, e em seguida compare com a tabela. 
+
+#. Use a expressão anterior e calcule a estimativa para os anos de `2016` e `2017` e compare com as suas previsões do item (d).
+
+Os dados reais para os meses de janeiro de `2016` e `2017` são `1.654.000.000` e `1.936.000.000`, respectivamente. Isso significa que apesar do modelo descrever de forma satisfatória o comportamento do crescimento do número de usuários até o ano de `2015`, para os anos seguintes ele não se mostra adequado. Existia de fato uma tendência para diminuição do crescimento, no entanto essa trajetória foi possivelmente modificada por ações que foram tomadas pela empresa ao perceber tal comportamento.
+
+Situações como essa são bastante comuns em Modelagem Matemática. O modelo se mostra adequado sob certas condições, mas quando outras variáveis são consideradas (investimento em propaganda, alteração no algoritmo que escolhe as atualizações que serão exibidas para cada usuário, etc) ele pode perder sua acurácia, momento em que se fazem necessárias revisões.
+
+
+.. admonition:: Resposta 
+
+   a. `19999900\%`, `450\%`, `118\%`, `483\%`, `114\%`, `147\%`, `62\%`, `33\%`, `32\%`, `16\%`, `7\%`.
+   
+   b.
+   
+   .. figure:: _resources/facebook.png
+      :width: 200pt
+      :align: center
+
+   c. No primeiro ano observa-se um grande crescimento no número de usuários ativos, entre os anos de `2006` e `2010` o crescimento percentual oscila,  e a partir de `2011` é cada vez menor, indicando que o crescimento do número de usuários está com tendência a diminuir. 
+   
+   d. Espera-se para `2016` um valor acima de `1.317.000.000` e abaixo de `1.400.000.000`. Para `2017` um valor maior que o anterior e que não ultrapasse `1.500.000.000`.
+   
+   e. É razoável imaginar que o número de usuários continuará a aumentar. Com um crescimento percentual cada vez menor a tendência observada é que a marca de `2` bilhões de usuários não será atingida.
+   
+   f. Para o ano de `2013` tem-se `f(9)=1.055.876.085` e para o ano de `2014` tem-se `f(10)=1.220.936.348`.
+   
+   g. Para o ano de `2016` o modelo prevê um numéro de usuários de `f(12)=1.359.620.842` e para `2017`, `f(13)=1.381.536.488`.
+   
+   
+.. _ativ-decodificando:
+
+Atividade: Decodificando a mensagem
+------------------------------
+
+.. admonition:: Para o professor
+
+      **OBJETIVOS ESPECÍFICOS**
+   
+   Levar o estudante a:
+   
+   * Estabelecer modelo matemático a partir de funções, mais especificamente, em uma situação que envolve codificação de mensagens.
+   * Compreender intuitivamente as condições necessárias para a existência da inversa de uma função. (injetividade e sobrejetividade)
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Na solução do item d) estimule seus estudantes a descrever com palavras de maneira precisa o que acontece com os números maiores que `26` caso ele use a expressão `f(x)=x+14`.
+
+Um dos conceitos mais importantes para a segurança na *internet* nos dias de de hoje é o que chamamos de **criptografia** (do grego *criptos* = escondido, *grafia* = escrita). Segundo o site *wikipedia* ela é o estudo dos princípios e técnicas pelas quais a informação pode ser transformada da sua forma original para outra codificada, de forma que possa ser conhecida apenas por seu destinatário (detentor da "chave secreta"), o que a torna difícil de ser decifrada por alguém não autorizado. Em outras palavras, cria-se um código que pode ser facilmente desfeito (decodificado) mas apenas por aqueles que conhecem a codificação.
+
+Considere a seguinte maneira de codificar o alfabeto
+
+.. table::
+   :widths: 3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+   :column-alignment: center center center center center center center center center center center center center center center center center center center center center center center center center center center
+
+   +----------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+   | original |A |B |C |D |E |F |G |H |I |J |K |L |M |N |O |P |Q |R |S |T |U |V |W |X |Y |Z |
+   +----------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+   | código   |P |Q |R |S |T |U |V |W |X |Y |Z |A |B |C |D |E |F |G |H |I |J |K |L |M |N |O |
+   +----------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+  
+#. Use o código acima para codificar a palavra IMAGEM.
+#. Se você recebesse uma mensagem com a expressão RGXEIDVGPUPG, como faria para decodificá-la?
+   
+   A codificação acima pode também ser representada em um gráfico em que no eixo horizontal estão as letras originais e no vertical os seus respectivos códigos.
+
+   .. figure:: _resources/codigo1_1.png
+      :width: 400px
+      :align: center
+
+#. Usando ainda o código acima escreva uma mensagem codificada com duas ou três palavras e troque com algum colega seu de classe. Decodifique a mensagem que recebeu.
+
+   Você deve ter percebido que a codificação é uma função do conjunto das letras do alfabeto em si mesmo: todas as letras precisam ter um código e uma mesma letra não pode ter mais de um código associada a si.
+   
+#. Seja `X` o conjunto dos números naturais de `1` a `26`. Fazendo a correspondência, `A \mapsto 1, B \mapsto 2, C \mapsto 3`, e assim por diante até `Z \mapsto 26`, determine uma função `f:X\to X` que corresponda ao código acima. Observe que por exemplo, `f(1)=16`.
+
+#. Usando a expressão `f(x)=x^2` crie um novo código entre as letras, representando-o no gráfico. O que devemos fazer quando os valores são  maiores que 26?
+
+#. Considerando o código do gráfico abaixo, tente decodificar a palavra APQGJXV.
+
+   .. figure:: _resources/codigo2_1.png
+      :width: 400px
+      :align: center
+
+#. Quais letras do código acima são impossíveis de decodificar e por quê? 
+
+#. Que propriedades deve ter um código para que seja possível decodificá-lo?
+
+
+.. admonition:: Resposta 
+
+   a. XBPVTB
+   
+   b. Usaria a linha debaixo para descobrir a letra original correspondente: CRIPTOGRAFAR.
+   
+   c. Resposta pessoal.
+   
+   d. Uma resposta possível seria:
+   
+   .. table::
+      :widths: 3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+      :column-alignment: center center center center center center center center center center center center center center center center center center center center center center center center center center center
+
+      +----------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+      | original |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |21 |22 |23 |24 |25 |26 |
+      +----------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+      | código   |16 |17 |18 |19 |20 |21 |22 |23 |24 |25 |26 |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |12 |13 |14 |15 |
+      +----------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+
+   Outra possibilidade é escrever `f(x)=x+15`, subtraindo `26` se `f(x)` for maior que `26`.
+   
+   e.
+
+   .. figure:: _resources/codigo3_2.png
+      :width: 400pt
+      :align: center
+      
+   Para valores maiores que `26` devemos subtrair `26` sucessivamente até encontrar um valor positivo menor que ou igual a `26` e então encontrar a letra correspondente. Isso equivale a tomar o resto da divisão por `26`.
+   
+   f. Impossível decodificar pois os códigos P, Q e X não tem correspondente no alfabeto e os códigos G e J têm mais de uma opção de escolha.
+   
+   g. Códigos de D a K têm duas letras do alfabeto associadas a cada um. Códigos de P a T e de X a Z não tem correspondente no alfabeto.
+   
+   h. Todo código deve possuir um único correspondente no alfabeto. Ou seja, a relação (código, alfabeto) deve ser uma função.
+
+.. _sec-projeto-aplicado:
+
+****************
+Projeto Aplicado
+****************
+
+
+.. admonition:: Para o professor
+
+   Este problema fica mais simples se for adotada uma abordagem prática e recomenda-se que seja realizado em grupos. Serão necessárias algumas tesouras e quadrados de cartolina de lados medindo `40\ cm`. Isso permitirá que os alunos construam modelos de várias caixas diferentes. Calculadoras poderão ser necessárias para ajudar no cálculo dos volumes. Desafie cada grupo de alunos a fazer a caixa de maior volume a partir do quadrado de cartolina dado.
+   Inicialmente, poucos alunos provavelmente adotarão uma abordagem algébrica. Normalmente eles preferem começar a realizar uma série de experiências até que tenham adquirido uma forte intuição para a situação, e só então consideram adotar um método sistematizado. Esta é uma sequência natural de raciocinar em matemática, portanto recomendamos que eles não sejam desencorajados ou apressados.
+   A seguir fornecemos uma solução gráfica para o problema. A relação entre o volume `V` da caixa (em centímetros cúbicos) e o tamanho `x` do lado do quadrado (medido em centímetros) é dada por `V(x)=(40-2x)\cdot (40-2x) \cdot x=(40-2x)^2 \cdot x`.
+
+   .. figure:: _resources/caixa_1.png
+      :width: 300pt
+      :align: center
+
+
+
+   .. figure:: _resources/grafico_volume_1.png
+      :width: 350pt
+      :align: center
+
+   O maior volume é aproximadamente `4740,7 \ cm^3` e ocorre quando `x` é aproximadamente `6,66 \ cm`.
+
+**Como construir uma caixa de volume máximo?**
+
+Vamos utilizar uma folha de cartolina quadrada de lado `40` cm para construir uma caixa sem tampa. Para isso, cortamos quadrados nos quatro cantos da cartolina e dobramos as partes retangulares restantes, para formar os lados da caixa. O objetivo é obter a caixa com o maior volume possível.
+
+
+.. figure:: _resources/caixa_sem_tampa_1.png
+   :width: 600px
+   :align: center
+
+#. Discuta com seus colegas de grupo a melhor estratégia para se obter a caixa de volume máximo. Em seguida construa a caixa e calcule o seu volume.
+
+#. Faça uma comparação com os volumes das caixas construídas pelos demais grupos. Organize os dados em uma tabela que relacione a medida do lado `x` do quadrado recortado com o volume `V(x)` da caixa obtida.
+
+   .. table::
+      :widths: 3 3 3 3 3 3 3 3 3 3 3
+      :column-alignment: center center center center center center center center center center center
+
+      +------+------+------+------+------+------+------+------+------+------+------+
+      | x    |      |      |      |      |      |      |      |      |      |      |
+      +------+------+------+------+------+------+------+------+------+------+------+
+      | V(x) |      |      |      |      |      |      |      |      |      |      |
+      +------+------+------+------+------+------+------+------+------+------+------+
+
+#. Encontre a expressão que fornece o volume `V(x)` da caixa em função do lado `x` do quadrado recortado.
+
+#. No contexto do problema, em que intervalo real a variável independente `x` pode ser considerada?
+
+#. Baseado nos itens anteriores, faça uma conjectura sobre qual o valor de `x` fornece o volume máximo.
+
+#. Utilize um software ou uma calculadora gráfica para visualizar a representação gráfica da função `V(x)`. A partir dessa representação gráfica determine, aproximadamente, o valor de `x` que fornece o volume máximo. 
