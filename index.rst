@@ -14,6 +14,7 @@ Ensino Médio
    GE202-ROTEIRO
    GE301-ROTEIRO   
    PE104-ROTEIRO
+   GE202-ROTEIRO2
    
 .. toctree::
    :maxdepth: 1
