@@ -104,14 +104,18 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Desafios no ensino
 
-      [...]
+      * Ensinar projeções de objetos do espaço tridimensional sobre o espaço bidimensional utilizando como principal recurso o livro didático. O livro didático já apresenta representações estáticas 2D dos objetos espaciais, que é, na verdade, o objeto de estudo destas projeções. Portanto, é importante promover uma dinâmica de ensino-aprendizagem do tema de projeções a partir de materiais concretos e recursos tecnológicos para fazer com que o aluno relacione o objeto 3D com sua representação 2D.
+      * Levar o aluno a perceber que o uso do desenho como linguagem ou forma de expressão é algo muito comum no seu cotidiano, estando presente em diversas momentos e de diferentes formas (livro didático, música, mapas e etc.). Portanto, torna-se essencial que ele desenvolva a habilidade de construir desenhos minimamente condizentes com objetos reais e que estes desenhos traduzam suas propriedades para quem o vê. Além disso, o desenho nas aulas de Matemática auxilia o aluno na construção dos diversos conceitos e no desenvolvimento efetivo de sua aprendizagem.
+      * Levar o aluno a perceber que as projeções possuem definições precisas que devem ser seguidas rigorosamente para se construir as representações 2D dos objetos 3D. Este desafio está ligado ao fato de, normalmente,  se desenhar o que se sabe do objeto e não sua representação real. Assim, um desenho muitas vezes revela a imagem mental que o aluno tem do objeto, mas não o que ele percebe daquele objeto. Nesse sentido, é preciso ter cuidado para que o aluno consiga desenvolver as representações 2D do objetos 3D de maneira consistente e precisa.
+
+
 
    .. admonition:: Desdobramentos imediatos
 
       BNCC(EM13MT04) Definir e aplicar o Princípio de Cavalieri e utilizá-lo para compreender e estabelecer as expressões para o cálculo de medidas de volume de cilindros, prismas, pirâmides e cones e aplicar na resolução de problemas.
       
-      Relacionar e interpretar adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em diversas áreas (Biologia, Geografia, Física, Química e etc). E, perceber detalhes que fazem parte do objeto mesmo que não sejam mostrados na figura. 
-   
+      Relacionar e interpretar adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em diversas áreas (Biologia, Geografia, Física, Química e etc). E, perceber detalhes que fazem parte do objeto mesmo que não sejam mostrados na figura.
+      
    .. admonition:: Abordagem da introdução
    
       A abordagem da introdução será conduzida por meio de uma atividade: os alunos se dividirão em grupos e cada grupo receberá um conjunto de sólidos dispostos (feitos de papel ou canudinhos) de uma certa maneira (algo parecido como na figura a seguir). Pede-se então aos alunos que procurem fazer um desenho que retrate o mais fielmente possível o que eles vêem.  
