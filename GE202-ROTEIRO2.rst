@@ -1,5 +1,5 @@
 *************************
-Aplicações de Semelhanças
+ROTEIRO: APLICAÇÕES DE SEMELHANÇA
 *************************
 
 .. admonition:: Previsão de aulas necessárias
