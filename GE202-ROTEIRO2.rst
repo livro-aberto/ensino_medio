@@ -1,3 +1,3 @@
 *************************
-Aplicações de Semelhanças
+ROTEIRO: APLICAÇÕES DE SEMELHANÇA
 *************************
