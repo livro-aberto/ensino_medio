@@ -65,7 +65,9 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       
    .. admonition:: Pré-requisitos
-
+      
+      **Ensino Fundamental**
+      
       BNCC (EF01MA13) Relacionar figuras geométricas espaciais (cones, cilindros, esferas e blocos retangulares) a objetos familiares do mundo físico.
 
       BNCC (EF01MA14) Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos.
@@ -93,6 +95,12 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       BNCC (EF09MA12) Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes.
 
       BNCC (EF09MA16) Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.
+      
+      **Ensino Médio**
+      
+      BNCC (EM12MT01) Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais
+      
+      BNCC (EM12MT03) Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras.
 
    .. admonition:: Conexões com outros conteúdos
 
@@ -282,11 +290,17 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       **Explorando 1**
       
-      Atividade com o uso de uma lanterna (pode ser a do celular) para introduzir a noção de uma projeção em perspectiva: os alunos, em grupos, usarão a laterna para projetar a sombra de objetos diferentes (feitos de canudinho ou papel) em um parede. Por meio de passos guiados, com objetos especialmente construídos (figuras geométricas espaciais e do mundo físico), os alunos serão levados a observar as propriedades da projeção: ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga. [Não esquecer: uma das atividades poderia ser a de tomar triângulos diferentes e tentar dispor a lanterna e o triângulo de forma que a sobra seja um triângulo equilátero!]
+      Atividade com o uso de uma lanterna (pode ser a do celular) para introduzir a noção de uma projeção em perspectiva: os alunos, em grupos, usarão a laterna para projetar a sombra de objetos diferentes (feitos de canudinho ou papel) em um parede. Por meio de passos guiados, com objetos especialmente construídos (figuras geométricas espaciais e do mundo físico), os alunos serão levados a observar as propriedades da projeção: ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, ângulos, retas paralelas e pontos de fuga. 
       
       .. figure:: _resources/20171211_102008.jpg
          :width: 300pt
          :align: center
+         
+         
+         
+      * Os alunos serão estimulados a investigar se propriedades geométricas como concorrência, paralelismo, razões, medidas de comprimento e ângulo são conservadas ou não por projeções em perspectiva.
+
+      * Uma das atividades que poderia ser feita neste momento é a de tomar triângulos diferentes e tentar dispor a lanterna e o triângulo de forma que a sombra seja um triângulo equilátero!
       
       **Organizando as ideias 1**      
       
@@ -326,10 +340,48 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       		
       
       
-      **Explorando 2: Projeções Paralelas**
+      **PROJEÇÕES PARALELAS**
       
-      #. 
+      **Explorando 2**
+
+      Atividade externa com o uso dos raios solares para introduzir a noção de uma projeção paralela (pode-se supor que, devido à distância da Terra ao Sol, estes raios solares chegam paralelos). Por meio de passos guiados, com objetos especialmente construídos (figuras geométricas espaciais e do mundo físico), os alunos serão levados a observar as propriedades das sombras destes objetos no chão ou em algum anteparo: ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, ângulos e retas paralelas.
       
+      .. figure:: _resources/paralela-01.jpg
+         :width: 300pt
+         :align: center
+                           
+      * Os alunos serão estimulados a investigar se propriedades geométricas como concorrência, paralelismo, razões, medidas de comprimento e ângulo são conservadas ou não por projeções paralelas.
+
+      * Uma das atividades que poderia ser feita neste momento é a de tomar triângulos diferentes e tentar dispor o anteparo e o triângulo de forma que a sombra seja um triângulo equilátero!
+      
+      **Organizando as ideias 2**      
+      
+      #. Apresentar o modelo matemático 3D associado à experiência da atividade anterior (uma função!). 
+      
+          .. figure:: _resources/paralela-02.jpg
+             :width: 250 pt
+             :align: center
+         
+      #. Por meio deste modelo 3D explicar e, para alguns casos mais simples, demonstrar as propriedades da projeção (isto é, ver os aspectos quantitativos das relações métricas usando-se o Teorema de Tales, por exemplo), procurando sempre conectar o que acontece com a projeção (representação 2D) com o que acontece no modelo 3D, com várias ilustrações.
+      
+      #. Apresentar as projeções ortogonais como um caso particular das projeções paralelas e, em seguida, apresentar os conceitos de vistas.
+
+          .. figure:: _resources/vistas-01.jpg
+             :width: 250 pt
+             :align: center
+
+
+      **Praticando 2**      
+      
+      #. Exercícios envolvendo vistas (por exemplo, dadas as vistas, determinar o objeto e vice-versa).
+      
+      #. Exercícios envolvendo os distratores (isto é, envolvendo a interpretação de representações 2D de objetos 3D).
+      
+      #. Um ou dois exercícios de rotação.
+      
+      #. Exercícios para desenvolver a capacidade de desenhar projeções paralelas de alguns sólidos geométricos espaciais (a partir de descrições verbais como um cilindro reto cuja altura é igual a medida do diâmetro da base; pirâmides; tronco de pirâmides).
+      
+      #. Exercícios contrastando dois tipos de projeções.
       
   
    .. admonition:: Aprofundamentos
