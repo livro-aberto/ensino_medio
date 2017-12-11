@@ -72,6 +72,9 @@
    .. [Stump-1999] Stump, S. Secondary mathematics teachers' knowledge of slope. Mathematics Education Research Journal, 11(2), 124–144.
 
 
+*******
+Explorando: função linear
+*******
 
 No capítulo anterior, você foi apresentado ao conceito de função, que nada mais é que uma relação entre duas grandezas que atende algumas condições. Neste capítulo pretendemos colocá-lo em contato com um dos modelos mais presentes em observações científicas e até mesmo em nosso cotidiano, o modelo linear, aqui representado pelo conceito de *função afim*. Este modelo pode ser percebido, seja nas relações de compra/consumo e venda, no esvaziamento de um recipiente por um ralo em função do tempo ou até mesmo nas relações entre distância e tempo do "movimento uniforme" estudado pela Cinemática.
 
@@ -83,12 +86,6 @@ As demais atividades têm como objetivo de colocá-lo em contato com outras situ
 
 Responda cada uma das atividades com calma e clareza, e não hesite em pedir auxílio ao seu professor se alguma parte da atividade não estiver clara ou exigir algum outro conhecimento que você não domine.
 
-
-*******
-Explorando: função linear
-*******
-
-
 .. _ativ-qual-area:
 
 Atividade: Qual é a área?
@@ -98,9 +95,7 @@ Atividade: Qual é a área?
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   
-   Levar o estudante a:
-   
+     
    * Reconhecer, a princípio, a relação visual de dependência entre as grandezas abordadas na atividade, no caso, a medida do ângulo central e a medida da área do setor circular.
    
    * Inferir que a medida da área do setor é diretamente proporcional a medida do ângulo central.
@@ -116,7 +111,7 @@ Atividade: Qual é a área?
    
    * Nos itens `3` e `4`, discuta com a turma a importância de ter sido apresentado o ângulo.
    
-   * Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/Xjjym4e7>, que é a versão eletrônica dessa atividade.
+   * Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/Xjjym4e7>`_, que é a versão eletrônica dessa atividade.
 
    .. figure:: _resources/codigo.png
       :width: 100pt
@@ -190,17 +185,20 @@ Organizando as ideias: função linear
 
 Na :ref:`ativ-qual-area` relacionamos a área do setor circular com seu ângulo central. Você provavelmente usou a famosa “regra de três” para resolver as questões que foram propostas. De fato, essa técnica é eficaz sempre que a situação envolver duas grandezas que são proporcionais.
 
-**Definição:** Diz-se que duas grandezas são diretamente proporcionais quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número real, a quantidade correspondente da outra fica multiplicada pelo mesmo número.
+.. glossary:: 
+   
+   Grandezas diretamente proporcionais
+      Diz-se que duas grandezas são *diretamente proporcionais* quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número real, a quantidade correspondente da outra fica multiplicada pelo mesmo número.
 
 
-.. admonition:: caixa sem título
+.. admonition:: Observação
 
    Podemos interpretar a definição acima utilizando a notação de função. Suponha que as grandezas `x` e `y` sejam diretamente proporcionais e que se relacionem por uma função `f` de tal maneira que `y=f(x)`. Pela definição, se `y` é a imagem de `x`, então `ky` deve ser a imagem de `kx`, qualquer que seja `k\in\mathbb{R}`.
 
    .. math::
    
-      x -- y \\
-      kx -- ky
+      x  &\mapsto y \\
+      kx &\mapsto ky
       
    Sendo assim, `f(kx)= ky = kf(x)`.
 
@@ -290,13 +288,13 @@ Ainda da última identidade, colocando `x'=90`, podemos deduzir uma expressão a
    \dfrac{S(x)}{x}=\dfrac{S(90)}{90} \Longrightarrow \dfrac{S(x)}{x}=\dfrac{5}{90} \Longrightarrow \dfrac{S(x)}{x}=\dfrac{1}{18} \Longrightarrow S(x)=\dfrac{x}{18}
 
 
-.. admonition:: Conclusão 
+.. admonition:: Observação 
 
    Em um círculo de área `20`, a área de um setor circular é proporcional ao seu ângulo central `x`, e é dada pela função `S:[0,360] \to \mathbb{R}` cuja expressão é `S(x)=\dfrac{x}{18}` e o gráfico é dado pelo segmento de reta abaixo.
 
-.. figure:: _resources/graf_setor5.png
-   :width: 400pt
-   :align: center
+   .. figure:: _resources/graf_setor5.png
+      :width: 400pt
+      :align: center
 
 De uma maneira mais geral, sempre que tivermos duas grandezas proporcionais relacionadas por uma função `f: \mathbb{R} \to \mathbb{R}`, basta conhecer a imagem de algum `c \neq 0`, para podermos deduzir uma expressão para ela:
 
@@ -313,7 +311,7 @@ Por causa da proporcionalidade entre grandezas, o quociente `\dfrac{f(c)}{c}` é
 Uma função real de variável real `f` que pode ser expressa pela regra acima, chama-se **função linear**.
 
 
-.. admonition:: Pausa para reflexão
+.. admonition:: Para refletir
 
    Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? Pense no seguinte caso: A área de um círculo de raio `2r` é igual a soma das áreas de `2` círculos de raio `r`?
 
@@ -329,9 +327,7 @@ Atividade: Quando trocar o filtro do purificador?
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-   
-   Levar o estudante a:
-   
+      
    * Identificar num conjunto de grandezas distintas e apresentadas em um quadro, duas grandezas que atendem as especificações da situação problema.
    
    * Perceber a relação da razão entre as grandezas com a taxa de variação da função linear.
@@ -411,15 +407,18 @@ A igualdade acima, junto com o fato de `f` ser uma função crescente, nos permi
 A função `f` é uma função linear e o número `L` que aparece multiplicando `t` é a *taxa de variação* entre as grandezas.
 
 
-.. admonition:: sem título 
+.. glossary::
 
-   Em qualquer função linear `f`, a *taxa de variação* de `f` é o valor constante dado pelo quociente `\dfrac{f(x)}{x}`, para qualquer `x \neq 0`.
+   Taxa de variação
+      Em qualquer função linear `f`, a *taxa de variação* de `f` é o valor constante dado pelo quociente `\dfrac{f(x)}{x}`, para qualquer `x \neq 0`.
    
-   Assim, `\dfrac{f(x)}{x}=a` e portanto `f(x)=ax`.
+      Assim, `\dfrac{f(x)}{x}=a` e portanto `f(x)=ax`.
 
 Por exemplo, para a função `S(x)=\dfrac{x}{18}` da :ref:`ativ-qual-area`, a taxa de variação é `\dfrac{1}{18}`, isto é, cada aumento de `1` grau no ângulo central do setor gera um aumento de `\dfrac{1}{18}` em sua área.
 
-.. admonition:: Algumas propriedades da função linear: 
+.. admonition:: Observação
+
+   **Algumas propriedades da função linear:**
 
    * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
    
@@ -453,7 +452,7 @@ Por exemplo, para a função `S(x)=\dfrac{x}{18}` da :ref:`ativ-qual-area`, a ta
       :width: 350pt
       :align: center
 
-   Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/FSnzt9vC>.
+   Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
 
    .. figure:: _resources/codigo2_2.png
       :width: 100pt
