@@ -104,11 +104,16 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Conexões com outros conteúdos
 
-      [...]
+      Neste capítulo, serão feitas conexões com diversos conteúdos matemáticos, entre eles:
+      
+      * funções,
+      * semelhança de triângulos,
+      * Teorema de Tales,
+      * geometria espacial de posição.
 
    .. admonition:: O que há de inovador no capítulo?
 
-      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo sobre os usos, vantagens (e desvantagens) e conversões das diversas representações (semiótica), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
+      * O fato do capítulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo sobre os usos, vantagens (e desvantagens) e conversões das diversas representações (semiótica), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
       
       * O fato das propriedades das projeções em perspectiva (ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga) serem abordadas usando a definição em 3D e não diretamente na representação 2D como é normalmente feito em Matemática e em Arte no Ensino Fundamental II ([Dourado-2013]_).
       
