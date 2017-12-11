@@ -390,8 +390,13 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
   
    .. admonition:: Aprofundamentos
-
-      [Outros tipos de projeções: ]
+   
+      * Explorar outros tipos de projeção.
+      * Um caso interessante que pode ser explorado é a projeção cartográfica, tipo de projeção utilizada na cartografia para construir mapas. Neste caso, construir um mapa consiste em fazer corresponder a cada ponto da Terra, um único ponto no mapa (função!). As projeções cartográficas podem ser classificadas de diversas formas, sendo uma delas de acordo com a superfície de projeção: plana, cilíndrica e cônica. 
+         
+          .. figure:: _resources/projecao-cartografica-01.jpg
+             :width: 250 pt
+             :align: center
    
    .. admonition:: Sugestões de leituras e projetos aplicados
 
