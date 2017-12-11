@@ -8,11 +8,11 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
    
    .. admonition:: Previsão de aulas necessárias
    
-      [...]
+      Entre 4 e 6 aulas de 50 minutos cada, a ser avaliado no final do desenvolvimento.
       
    .. admonition:: Previsão de páginas necessárias
    
-      [...]
+      A ser visto no final da elaboração do capítulo.
 
    .. admonition:: Fase de elaboração
    
@@ -26,14 +26,14 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Objetivo geral
 
-      Levar o aluno a compreender, descrever e construir representações 2D de objetos 3D obtidas por projeções ortogonais e em perspectiva.      
+      Levar o aluno a compreender, descrever e construir representações 2D de objetos 3D obtidas por projeções em perspectiva e paralelas.      
 
    .. admonition:: Por que estudar o assunto?
    
  
       As projeções em perspectiva fornecem um modelo matemático para a visão humana e para dispositivos óticos (como câmeras) e o estudo deste modelo auxilia na compreensão de como vemos, comunicamos e interagimos com o mundo.    
       
-      As projeções ortogonais fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: arquitetura, engenharia, biologia, física, etc.
+      As projeções paralelas fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: arquitetura, engenharia, biologia, física, etc.
       
       Cabe observar que estas projeções fazem parte das habilidades espaciais as quais, por sua vez, constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_). 
       
@@ -61,7 +61,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          * Aplicações: O problema da pintura de um ladrilhamento em perspectiva. Como descobrir de onde uma foto foi tirada?  Como se posicionar para visualizar sem distorções um quadro pintado em perspectiva? Perspectivas de um cubo e seus desdobramentos. Ilusões de ótica (incluindo propaganda em estádios de futebol e avisos de trânsito pintados no chão).
 
          
-      #. Projeções ortogonais: conceitualização, propriedades (ambiguidade, invariância do tamanho da projeção em função da distância do objeto ao plano, retas paralelas em geral são projetadas em retas paralelas) e aplicações (planta baixa, mapa de fuga, ilustrações em áreas diversas).
+      #. Projeções paralelas: conceitualização, propriedades (ambiguidade, invariância do tamanho da projeção em função da distância do objeto ao plano, retas paralelas em geral são projetadas em retas paralelas) e aplicações (planta baixa, mapa de fuga, ilustrações em áreas diversas).
       
       
    .. admonition:: Pré-requisitos
@@ -104,25 +104,37 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Conexões com outros conteúdos
 
-      [...]
+      Neste capítulo, serão feitas conexões com diversos conteúdos matemáticos, entre eles:
+      
+      * funções,
+      * semelhança de triângulos,
+      * Teorema de Tales,
+      * geometria espacial de posição.
 
    .. admonition:: O que há de inovador no capítulo?
 
-      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo sobre os usos, vantagens (e desvantagens) e conversões das diversas representações (semiótica), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
+      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo das diferentes representações (semiótica), seus usos, vantagens (e desvantagens), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
       
-      * O fato das propriedades das projeções em perspectiva (ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga) serem abordadas usando a definição em 3D e não diretamente na representação 2D como é normalmente feito em Matemática e em Arte no Ensino Fundamental II ([Dourado-2013]_).
+      * O fato das propriedades das projeções em perspectiva (ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, medidas de comprimento e ângulo, retas paralelas e pontos de fuga) serem abordadas usando a definição em 3D e não apenas a representação 2D  final como se é normalmente feito em Matemática e em Arte no Ensino Fundamental II ([Dourado-2013]_).
       
       .. figure:: _resources/2017-12-09_19-09-03.jpg
          :width: 250pt
          :align: center
          
-      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma, o que dá movimento ao processo (um aspecto cognitivo importante, segundo [Sinha-2009]_), que fortalece as definições e minimiza as ambiguidades.
+      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma, o que dá movimento ao processo (um aspecto cognitivo importante, segundo [Sinha-2009]_), promovendo assim um meelhor entendimento das definições e das propriedades decorrentes.
       
       .. figure:: _resources/pro-aba-01-br.*
+         :width: 400pt
+         :align: center
       
       .. figure:: _resources/pro-aba-02-br.*
-      
+         :width: 400pt
+         :align: center
+            
       .. figure:: _resources/pro-aba-03-br.*
+         :width: 400pt
+         :align: center
+      
       
       
 
@@ -138,9 +150,9 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Desdobramentos imediatos
 
-      Espera-se que as habilidades e conhecimentos adquiridos neste capítulo ajudem o aluno a relacionar, interpretar e compor adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em diversas áreas (Biologia, Geografia, Física, Química, etc). Além disse, espera-se que ele seja capaz de perceber detalhes que fazem parte do objeto 3D mesmo que não sejam mostrados na representação 2D. 
+      Espera-se que as habilidades e os conhecimentos adquiridos neste capítulo ajudem o aluno a relacionar, interpretar e compor adequadamente representações/ilustrações 2D de objetos 3D, não só na Matemática, mas em outras áreas (Biologia, Geografia, Física, Química, etc). Além disso, espera-se que ele seja capaz de perceber detalhes que fazem parte do objeto 3D mesmo que não sejam mostrados na representação 2D. 
       
-      Para o caso particular da Matemática do BNCC, destacamos:
+      Para o caso particular da Matemática do BNCC, esperamos que  as habilidades e os conhecimentos adquiridos neste capítulo contribuam para o desenvolvendo das seguintes habilidades:
 
       BNCC (EM12MT05) Resolver e elaborar problemas envolvendo medidas do volume e de área de superfície de cilindros e prismas retos, deduzindo expressões de cálculo, aplicando-as, preferencialmente, em situações cotidianas.
 
@@ -150,7 +162,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       BNCC (EM15MT05) Resolver e elaborar problemas envolvendo medidas de área da superfície e de volume de cilindros, prismas, pirâmides, cones e esferas.
       
-      Para a Física do BNCC, destacamos:
+      Para a Física do BNCC,  esperamos que  as habilidades e os conhecimentos adquiridos neste capítulo contribuam para o desenvolvendo das seguintes habilidades:
       
       BNCC (EM11CN10) Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
       
@@ -276,15 +288,19 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
    
    .. admonition:: Exemplos
    
-      [...]   
+         
       
    .. admonition:: Estratégia pedagógica
    
-      [...]   
+      * Concreto `\rightarrow` Abstrato `\rightarrow` Concreto: iniciar o estudo de cada tipo de projeção com um experimento concreto (estudo das sombras), pensar em um modelo matemático que represente este experimento, estudar as propriedades deste modelo e, de posse deste conhecimento, fazer previsões para o modelo concreto.
+      
+      * Embora o uso de recursos técnológicos não seja imposto para a condução das atividades, pretende-se estimular o seu uso (1) propondo sugestões de intervenções do professor ao longo das atividades caso haja equipamento disponível; (2) sugerindo exercícios com o uso de recursos tecnológicos para serem feitos "para casa".
    
    .. admonition:: Estrutura
    
-      **Abordagem da Introdução** (descrita acima) 
+      **Atividade Introdutória** 
+      
+      Ver a seção "Abordagem da Introdução".
       
       **PROJEÇÕES EM PERSPECTIVA**
       
@@ -373,15 +389,34 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
       **Praticando 2**      
       
-      #. Exercícios envolvendo vistas (por exemplo, dadas as vistas, determinar o objeto e vice-versa).
+      #. Exercícios envolvendo vistas: dadas as vistas, determinar o objeto e vice-versa; objetos diferentes que tem a mesma vista.
       
-      #. Exercícios envolvendo os distratores (isto é, envolvendo a interpretação de representações 2D de objetos 3D).
+          .. figure:: _resources/2017-12-11_20-27-42.jpg
+             :width: 250 pt
+             :align: center
+             
+          .. figure:: _resources/vistas-02.jpg
+             :width: 250pt
+             :align: center
+      
+      
+      #. Exercícios envolvendo os distratores.
+      
+          .. figure:: _resources/2017-12-10_18-14-52.jpg
+             :width: 200pt
+             :align: center
+      
       
       #. Um ou dois exercícios de rotação.
       
+          .. figure:: _resources/mental-rotation-02.jpg
+             :width: 200pt
+             :align: center
+      
+      
       #. Exercícios para desenvolver a capacidade de desenhar projeções paralelas de alguns sólidos geométricos espaciais (a partir de descrições verbais como um cilindro reto cuja altura é igual a medida do diâmetro da base; pirâmides; tronco de pirâmides).
       
-      #. Exercícios contrastando dois tipos de projeções.
+      #. Exercícios contrastando as propriedades dos dois tipos de projeções (em particular, a "vista" de um sólido 3D não é como a mesma coisa de como se vê o sólido de uma determinada posição).
       
   
    .. admonition:: Aprofundamentos
