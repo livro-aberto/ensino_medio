@@ -188,7 +188,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       * que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_);
       
-      * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Fan-2015]_,[Khine-2017]_);
+      * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Khine-2017]_);
       
       * que, além das propriedades matemáticas, as habilidades visuais incluem questões de neurociência, como mostram várias "ilusões" (como a clássica ilusão de Ponzo e a mesa de Shepard);
       
@@ -276,15 +276,69 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
    
    .. admonition:: Estrutura
    
-      [...]  
+      **Abordagem da Introdução** (descrita acima) 
+      
+      **PROJEÇÕES EM PERSPECTIVA**
+      
+      **Explorando 1**
+      
+      Atividade com o uso de uma lanterna (pode ser a do celular) para introduzir a noção de uma projeção em perspectiva: os alunos, em grupos, usarão a laterna para projetar a sombra de objetos diferentes (feitos de canudinho ou papel) em um parede. Por meio de passos guiados, com objetos especialmente construídos (figuras geométricas espaciais e do mundo físico), os alunos serão levados a observar as propriedades da projeção: ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga. [Não esquecer: uma das atividades poderia ser a de tomar triângulos diferentes e tentar dispor a lanterna e o triângulo de forma que a sobra seja um triângulo equilátero!]
+      
+      .. figure:: _resources/20171211_102008.jpg
+         :width: 300pt
+         :align: center
+      
+      **Organizando as ideias 1**      
+      
+      #. Apresentar o modelo matemático 3D associado à experiência da atividade anterior (uma função!). Na experiência o objeto está entre o observador e o plano de projeção, em pinturas e sistemas óticos, é o plano de projeção que está entre o observador e o objeto.
+      
+          .. figure:: _resources/2017-12-11_10-47-06.jpg
+             :width: 250 pt
+             :align: center
+         
+      #. Por meio deste modelo 3D explicar e, para alguns casos mais simples, demonstrar as propriedades da projeção (isto é, ver os aspectos quantitativos das relações métricas usando-se semelhança, por exemplo), procurando sempre conectar o que acontece com a projeção (representação 2D) com o que acontece no modelo 3D, com várias ilustrações. Um exemplo de propriedade que será tratada é a dos pontos de fuga: retas que são paralelas entre si mas não paralelas ao plano de projeção devem ser projetadas em retas que "se encontram no infinito".             	Observa-se que a tradição no Ensino Fundamental II é apenas apresentar as propriedades diretamente na representação 2D sem justificá-las.
+
+          .. figure:: _resources/ponto-de-fuga-01_1.jpg
+             :width: 350 pt
+             :align: center
+
+      
+      **Praticando 1**      
+      
+      #. O problema da representação de ladrilhos: dá-se a primeira linha de um ladrilhamento e o desafio é completar o restante. Serão abordados o algoritmo dos 2/3 (usando por vários pintores) e suas limitações e a solução dada por perspectiva. 
+
+          .. figure:: _resources/2017-12-11_10-56-02.jpg
+             :width: 250 pt
+             :align: center
+      
+      #. Os alunos receberão cópias de várias ilustrações e fotos, de épocas e culturas diferentes, para investigar a presença ou não da perspectiva.
+
+          .. figure:: _resources/perspectiva-01.jpg
+             :width: 250 pt
+             :align: center
+
+      
+      #. A construção de uma casinha passo a passo seguindo as regras da perspectiva.
+      
+          .. figure:: _resources/casinha-03.jpg
+             :width: 250 pt
+             :align: center
+      		
+      
+      
+      **Explorando 2: Projeções Paralelas**
+      
+      #. 
+      
+      
   
    .. admonition:: Aprofundamentos
 
-      [...]
+      [Outros tipos de projeções: ]
    
    .. admonition:: Sugestões de leituras e projetos aplicados
 
-      [...]
+      [Projetos aplicados: história das projeções, video mapping (projetor+smartphone)]
 
    .. admonition:: Referências bibliográficas
 
@@ -329,6 +383,8 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       .. [Sugihara-2000] Sugihara, K. (2000). "Impossible Objects" Are Not Necessarily Impossible: Mathematical Study on Optical Illusion. Em: Akiyama, J.; Kano, M.;  Urabe, M. (Eds.). JCDCG’98, LNCS 1763, p. 305−316, Springer-Verlag.
 
       .. [Uttal-et-al-2012]  Uttal, D. H.; Cohen, C. A. (2012). Spatial Thinking and STEM Education: When, Why, and How? Em: Ross, B. H. The Psychology of Learning and Motivation, v. 57, Elsevier.
+      
+      .. [Van-Meter-et-al-2005] Van Meter, P.; Garner, J. (2005). The Promise and Practice of Learner-Generated Drawing: Literature Review and Synthesis. Educational Psychology Review, v. 17, n. 4, p. 285-325.
       
       .. [Volkert-2008] Volkert, K. (2008). The Problem of Solid Geometry. Symposium on the Occasion of the 100th Anniversary of ICMI, Rome. Disponível em: <https://goo.gl/Kt5g5C>.
 
