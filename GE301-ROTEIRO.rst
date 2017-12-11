@@ -104,7 +104,12 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Conexões com outros conteúdos
 
-      [...]
+      Neste capítulo, serão feitas conexões com diversos conteúdos matemáticos, entre eles:
+      
+      * funções,
+      * semelhança de triângulos,
+      * Teorema de Tales,
+      * geometria espacial de posição.
 
    .. admonition:: O que há de inovador no capítulo?
 
