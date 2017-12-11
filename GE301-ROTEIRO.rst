@@ -257,6 +257,14 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       .. figure:: _resources/23795075_10214262389743893_4084204880383248735_n.jpg         
          :width: 250pt
          :align: center
+         
+      As propriedades das projeções podem gerar distratores em outras áreas. Por exemplo, em Estatística, o uso de diagramas de setores 3D pode distorcer a percepção visual e, com isto, um leitor desavisado pode pensar que uma determinada classe tem uma frequência que, na verdade, não tem.
+      
+      .. figure:: _resources/2017-12-11_06-19-46.jpg
+         :width: 300pt
+         :align: center
+      
+      
    
    .. admonition:: Exemplos
    
