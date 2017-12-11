@@ -29,12 +29,12 @@ Objetivo Geral do Capítulo
 Compreender como algumas medidas, chamadas medidas resumo, podem de alguma forma revelar informações sobre a distribuição dos dados. Para alcançar este objetivo geral, este capítulo inclui:
  
 #. definições de medidas de posição (média, mediana, moda e quartis);
-#. a definições de medidas de dispersão (desvio médio, variância e desvio padrão, amplitude (amostral), amplitude interquartílica, coeficiente de variação);
+#. definições de medidas de dispersão (desvio médio, variância e desvio padrão, amplitude (amostral), amplitude interquartílica, coeficiente de variação);
 #. sinalizações para a importância das medidas de dispersão para avaliar a representatividade da média na distribuição;
 #. revisão dos conceitos apresentados no capítulo "A Natureza da Estatística": parâmetro e estatística, definindo média populacional e média amostral, variância populacional e variância amostral.
 #. definição de representação gráfica para variáveis quantitativas, conhecida como desenho-esquemático ou diagrama de caixa (boxplot).
 
-Observação: Embora muitos textos denominem as medidas de posição (média, media e moda) como medidas de tendência central, interpretando "tendência central" como "valor representativo" na distribuição", preferimos denominá-las medidas de posição, pois, por exemplo, depedendo da forma da distribuição, a média pode não ser um "valor representativo" da distribuição.
+Observação: Embora muitos textos denominem as medidas de posição (média, mediana e moda) como medidas de tendência central, interpretando "tendência central" como "valor representativo" na distribuição", preferimos denominá-las medidas de posição, pois, por exemplo, dependendo da forma da distribuição, a média pode não ser um "valor representativo" da distribuição.
 
 .. admonition:: Por que estudar o assunto? 
 
@@ -92,7 +92,7 @@ Observação: Embora muitos textos denominem as medidas de posição (média, me
  
 .. admonition:: Diferencial do Capítulo 
 
- De acordo com Russel e Mokros (1991), a compreensão da ideia de "valor representativo" implica em três competências diferentes:
+ De acordo com Russel e Mokros (1991) (citados em Batanero e Borovnik, 2016), a compreensão da ideia de "valor representativo" implica em três competências diferentes:
 
  #. selecionar o melhor valor representativo para um dado conjunto de dados;
  #. construir um conjunto de dados tendo um determinado valor representativo, por exemplo, a moda;
@@ -214,6 +214,13 @@ Observação: Embora muitos textos denominem as medidas de posição (média, me
  #. Construção do boxplot, usando tecnologia.
  
  **Material Suplementar**
+ 
+ #. Statlet: são dois *applets* para treinar uma compreensão intuitiva da média, mediana, desvio padrão a partir de um gráfico de barras para variáveis discretas.
+      
+    #. `média e mediana <http://www.math.usu.edu/~schneit/Statlets/center/center.html.html>`_
+    #.  `média e desvio padrão <http://www.math.usu.edu/~schneit/Statlets/StandardDeviation/sd.html>`_
+    
+ #. Rossman/Chance `link <http://www.rossmanchance.com/applets/Dotplot.html>`_: *Applet* mostrando um histograma e um boxplot simultaneamente para aprender como estas representações revelam a distribuição. 
 
  **Exercícios** 
  
@@ -223,15 +230,15 @@ Observação: Embora muitos textos denominem as medidas de posição (média, me
 
 .. admonition:: Referências bibliográficas
 
- ABE (2015) ABE: Reflexões a respeito dos conteúdos de probabilidade e estatística na escola no Brasil - uma proposta. Disponível em: <https://goo.gl/OBtwpv>. Acesso em: 18 ago. 2017. 
+  ABE (2015) ABE: Reflexões a respeito dos conteúdos de probabilidade e estatística na escola no Brasil - uma proposta. Disponível em: <https://goo.gl/OBtwpv>. Acesso em: 18 ago. 2017. 
 
- Batanero, C., Burrill, G., & Reading, C. (Eds.). (2011). Teaching statistics in school mathematics-challenges for teaching and teacher education: A joint ICMI/IASE study: the 18th ICMI study (Vol. 14). Springer Science & Business Media.
+  Batanero, C., Burrill, G., & Reading, C. (Eds.). (2011). Teaching statistics in school mathematics-challenges for teaching and teacher education: A joint ICMI/IASE study: the 18th ICMI study (Vol. 14). Springer Science & Business Media.
       
- Batanero, C., & Borovcnik, M. (2016). Statistics and probability in high school. Springer.
+  Batanero, C., & Borovcnik, M. (2016). Statistics and probability in high school. Springer.
   
- Bussab, W. O. & Morettin, P. A. (2017). Estatística Básica.  Saraiva. Nona edição.
+  Bussab, W. O. & Morettin, P. A. (2017). Estatística Básica.  Saraiva. Nona edição.
   
- Rossman, Allan J., and Beth L. Chance. Workshop Statistics:: Discovery With Data and Minitab. Springer Science & Business Media, 1998.  
+  Rossman, Allan J., and Beth L. Chance. Workshop Statistics:: Discovery With Data and Minitab. Springer Science & Business Media, 1998.  
   
 
 
