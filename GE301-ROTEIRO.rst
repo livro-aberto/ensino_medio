@@ -505,7 +505,14 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
           .. figure:: _resources/moon-terminator-illusion.jpg
              :width: 200pt
              :align: center
+
+      * Razões cruzadas: o que as projeções em perspectiva preservam?
       
+          .. figure:: _resources/razao-cruzada-01.jpg
+             :width: 200pt
+             :align: center      
+
+
       * Recomendação de leitura: Flores, C. R. (2007) Olhar, Saber, Representar: Sobre A Aepresentação em Perspectiva. São Paulo: Musa Editora.      
       
 
