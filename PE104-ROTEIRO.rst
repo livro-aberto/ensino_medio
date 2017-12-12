@@ -78,7 +78,7 @@ Observação: Embora muitos textos denominem as medidas de posição (média, me
  #. a média pode ser um valor que não pertence ao conjunto analisado;
  #. a média é um valor representativo do conjunto analisado.
 
- Após definir a média e explorar algumas de suas propriedades, pretende-se apresentar situações em que ela pode ser inadequada como valor representativo de uma distribuição (distribuições com forte assimetria), motivando assim a definição da mediana, uma medida que não é afetada por valores extremos.
+ Após definir a média e explorar algumas de suas propriedades, pretende-se apresentar situações em que ela pode ser inadequada como valor representativo de uma distribuição (distribuições com forte assimetria), motivando assim a definição da mediana, uma medida que é pouco afetada por valores extremos.
 
  Uma vez definidas média e mediana, pretende-se apresentar uma situação em que ambas podem ser consideradas inadequadas como valores representativos de uma distribuição (distribuições bimodais simétricas), motivando assim a definição da moda.
 
@@ -92,7 +92,7 @@ Observação: Embora muitos textos denominem as medidas de posição (média, me
  
 .. admonition:: Diferencial do Capítulo 
 
- De acordo com Russel e Mokros (1991) (citados em Batanero e Borovnik, 2016), a compreensão da ideia de "valor representativo" implica em três competências diferentes:
+ De acordo com Russel e Mokros (1991), citados em Batanero e Borovnik (2016), a compreensão da ideia de "valor representativo" implica em três competências diferentes:
 
  #. selecionar o melhor valor representativo para um dado conjunto de dados;
  #. construir um conjunto de dados tendo um determinado valor representativo, por exemplo, a moda;
