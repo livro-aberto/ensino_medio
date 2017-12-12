@@ -440,7 +440,12 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
           .. figure:: _resources/ezgif-4-7c3b461d5e.*
              :width: 200pt
              :align: center
-             
+
+          .. figure:: _resources/ezgif-4-865c0ed686.*
+             :width: 200pt
+             :align: center
+
+
       * Anamorfose plana: diversão, sinalização, propaganda.
             
           .. figure:: _resources/anamorfose-01.jpg
