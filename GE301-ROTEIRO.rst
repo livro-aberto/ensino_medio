@@ -33,7 +33,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
  
       As projeções em perspectiva fornecem um modelo matemático para a visão humana e para dispositivos óticos (como câmeras) e o estudo deste modelo auxilia na compreensão de como vemos, comunicamos e interagimos com o mundo.    
       
-      As projeções paralelas fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: arquitetura, engenharia, biologia, física, etc.
+      As projeções paralelas fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: Arquitetura, Engenharia, Biologia, Física, etc.
       
       Cabe observar que estas projeções fazem parte das habilidades espaciais as quais, por sua vez, constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_). 
       
@@ -58,10 +58,10 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
          * Propriedades e suas justificativas via a definição 3D: ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, retas paralelas e pontos de fuga.
          
-         * Aplicações: O problema da pintura de um ladrilhamento em perspectiva. Como descobrir de onde uma foto foi tirada?  Como se posicionar para visualizar sem distorções um quadro pintado em perspectiva? Perspectivas de um cubo e seus desdobramentos. Ilusões de ótica (incluindo propaganda em estádios de futebol e avisos de trânsito pintados no chão).
+         * Aplicação: O problema da pintura de um ladrilhamento em perspectiva. Outras aplicações como projetos: Como descobrir de onde uma foto foi tirada?  Como se posicionar para visualizar sem distorções um quadro pintado em perspectiva? Perspectivas de um cubo e seus desdobramentos. Ilusões de ótica (incluindo propaganda em estádios de futebol e avisos de trânsito pintados no chão).
 
          
-      #. Projeções paralelas: conceitualização, propriedades (ambiguidade, invariância do tamanho da projeção em função da distância do objeto ao plano, retas paralelas em geral são projetadas em retas paralelas) e aplicações (planta baixa, mapa de fuga, ilustrações em áreas diversas).
+      #. Projeções paralelas: conceitualização, propriedades (ambiguidade, invariância do tamanho da projeção em função da distância do objeto ao plano, retas paralelas em geral são projetadas em retas paralelas) e aplicações (planta baixa, mapa de fuga, vistas e ilustrações em áreas diversas).
       
       
    .. admonition:: Pré-requisitos
@@ -112,7 +112,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: O que há de inovador no capítulo?
 
-      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo das diferentes representações (semiótica), seus usos, vantagens (e desvantagens), bem como o destaque para a componente humana (neurociência) na interação com essas representações.
+      * O fato do capitulo levar o aluno a refletir as projeções em perspectiva e paralelas em um contexto mais amplo das diferentes representações (semiótica), seus usos, vantagens (e desvantagens), bem como o destaque para a componente humana (neurociência) na interação com essas representações (abordagem recomendada por [Sinclair-et-al-2016]_).
       
       * O fato das propriedades das projeções em perspectiva (ambiguidade, variação do tamanho da projeção em função da distância do objeto ao observador, medidas de comprimento e ângulo, retas paralelas e pontos de fuga) serem abordadas usando a definição em 3D e não apenas a representação 2D  final como se é normalmente feito em Matemática e em Arte no Ensino Fundamental II ([Dourado-2013]_).
       
@@ -120,7 +120,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :width: 250pt
          :align: center
          
-      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma, o que dá movimento ao processo (um aspecto cognitivo importante, segundo [Sinha-2009]_), promovendo assim um meelhor entendimento das definições e das propriedades decorrentes.
+      * O fato das definições e propriedades serem abordadas com recursos de material concreto (via sombras) e/ou via softwares multiplataforma, o que dá movimento ao processo (um aspecto cognitivo importante, segundo [Sinha-2009]_), promovendo assim um melhor entendimento das definições e das propriedades decorrentes.
       
       .. figure:: _resources/pro-aba-01-br.*
          :width: 400pt
@@ -139,13 +139,11 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
    .. admonition:: Desafios no ensino
 
-      * Ensinar projeções de objetos do espaço tridimensional sobre o espaço bidimensional utilizando como principal recurso o livro didático. O livro didático já apresenta representações estáticas 2D dos objetos espaciais, que é, na verdade, o objeto de estudo destas projeções. Portanto, é importante promover uma dinâmica de ensino-aprendizagem do tema de projeções a partir de materiais concretos e recursos tecnológicos para fazer com que o aluno relacione o objeto 3D com sua representação 2D.
+      * Talvez o maior desafio seja justamente o de explicar algo 3D tendo como principal instrumento uma mídia 2D (o livro didático). Neste sentido, usar materiais concretos e recursos tecnológicos podem ajudar bastante.
       
-      * Levar o aluno a perceber que o uso do desenho como linguagem ou forma de expressão é algo muito comum no seu cotidiano, estando presente em diversas momentos e de diferentes formas (livro didático, música, mapas e etc.). Portanto, torna-se essencial que ele desenvolva a habilidade de construir desenhos minimamente condizentes com objetos reais e que estes desenhos traduzam suas propriedades para quem o vê. Além disso, o desenho nas aulas de Matemática auxilia o aluno na construção dos diversos conceitos e no desenvolvimento efetivo de sua aprendizagem.
+      * Em geral, as pessoas, ao desenharem, não desenham como vêem, mas sim como consideram o objeto em 3D (algumas referências e a história da arte comprovam isto). Por exemplo, "um cilindro tem uma tampa em cima e outra em baixo, conectadas por um rolo e o meu desenho tem que mostrar tudo isto". Assim, sobressaem os aspectos individuais e topológicos (o que está grudado no quê) no lugar da composição como o todo, como é visto. É preciso levar o aluno a perceber que as projeções têm definições precisas que devem ser seguidas. É parecido com o caso da parábola: os alunos acham que qualquer "cumbuca" para cima é uma parábola, enquanto que a parábola tem uma definição bem precisa. Levar os alunos a tomarem consciência disto é um desafio.
       
-      * Levar o aluno a perceber que as projeções possuem definições precisas que devem ser seguidas rigorosamente para se construir as representações 2D dos objetos 3D. Este desafio está ligado ao fato de, normalmente,  se desenhar o que se sabe do objeto e não sua representação real. Assim, um desenho muitas vezes revela a imagem mental que o aluno tem do objeto, mas não o que ele percebe daquele objeto. Nesse sentido, é preciso ter cuidado para que o aluno consiga desenvolver as representações 2D do objetos 3D de maneira consistente e precisa.
-
-
+      * Como aponta [Cohn-2012]_, em geral, as pessoas reclamam quando uma pessoa não escreve direito, mas desenhos mal feitos são mais tolerados. Ou seja, não há a tradição no mundo ocidental da cultura ao desenho (ao contrário o que ocorre no Japão, por exemplo, onde a cultura dos mangás naturalmente incopora a questão do desenho nos adolescentes japoneses). Levar o aluno a perceber que o desenho é uma forma de comunicação muito usada (principalmente em nossa cultura atual), que deve ser cultivada e pode ser desenvolvida (como qualquer outra habilidade) é outro desafio.
 
    .. admonition:: Desdobramentos imediatos
 
@@ -207,7 +205,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       * que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_);
       
-      * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Khine-2017]_);
+      * que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Sinclair-et-al-2016]_, [Khine-2017]_);
       
       * que, além das propriedades matemáticas, as habilidades visuais incluem questões de neurociência, como mostram várias "ilusões" (como a clássica ilusão de Ponzo e a mesa de Shepard);
       
@@ -353,6 +351,14 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
              :width: 250 pt
              :align: center
       		
+      **Aplicações 1: quadro informativo** 
+      
+      Apresentar algumas aplicações das projeções em perspectiva.
+      
+          .. figure:: _resources/aplicacoes-01.jpg
+             :width: 350 pt
+             :align: center
+      
       
       
       **PROJEÇÕES PARALELAS**
@@ -417,15 +423,43 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       #. Exercícios contrastando as propriedades dos dois tipos de projeções (em particular, a "vista" de um sólido 3D não é como a mesma coisa de como se vê o sólido de uma determinada posição).
       
+      **Aplicações 2: quadro informativo** 
+      
+      Apresentar algumas aplicações das projeções paralelas.
+            
+          .. figure:: _resources/aplicacoes-02.jpg
+             :width: 350 pt
+             :align: center
+            
+            
+
+      **EXERCÍCIOS DO ENEM E DE OUTRAS AVALIAÇÕES**
+      
+          .. figure:: _resources/enem-01.jpg
+             :width: 250pt
+             :align: center
+
+          .. figure:: _resources/enem-02.jpg
+             :width: 250pt
+             :align: center
+
+          .. figure:: _resources/enem-04.png
+             :width: 250pt
+             :align: center
+
+          .. figure:: _resources/enem-05.png
+             :width: 250pt
+             :align: center
+
+            
   
    .. admonition:: Aprofundamentos
    
-      * Explorar outros tipos de projeção.
-      * Um caso interessante que pode ser explorado é a projeção cartográfica, tipo de projeção utilizada na cartografia para construir mapas. Neste caso, construir um mapa consiste em fazer corresponder a cada ponto da Terra, um único ponto no mapa (função!). As projeções cartográficas podem ser classificadas de diversas formas, sendo uma delas de acordo com a superfície de projeção: plana, cilíndrica e cônica. 
+      * Explorar outros tipos de projeção. Um caso interessante que pode ser explorado é a projeção cartográfica, tipo de projeção utilizada na cartografia para construir mapas. Neste caso, construir um mapa consiste em fazer corresponder a cada ponto da Terra, um único ponto no mapa (função!). As projeções cartográficas podem ser classificadas de diversas formas, sendo uma delas de acordo com a superfície de projeção: plana, cilíndrica e cônica. 
          
           .. figure:: _resources/projecao-cartografica-01.jpg
              :width: 250 pt
-             :align: center
+             :align: center     
    
    .. admonition:: Sugestões de leituras e projetos aplicados
 
@@ -472,7 +506,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
              :width: 200pt
              :align: center
       
-      
+      * Recomendação de leitura: Flores, C. R. (2007) Olhar, Saber, Representar: Sobre A Aepresentação em Perspectiva. São Paulo: Musa Editora.      
       
 
    .. admonition:: Referências bibliográficas
