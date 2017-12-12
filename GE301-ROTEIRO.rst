@@ -106,10 +106,9 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
       Neste capítulo, serão feitas conexões com diversos conteúdos matemáticos, entre eles:
       
-      * funções,
-      * semelhança de triângulos,
-      * Teorema de Tales,
-      * geometria espacial de posição.
+      * funções;
+      * geometria plana: o teorema de Pitágoras, o teorema de Tales, semelhança de triângulos e trigonometria;
+      * geometria espacial de posição.            
 
    .. admonition:: O que há de inovador no capítulo?
 
@@ -285,12 +284,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :align: center
       
       
-   
-   .. admonition:: Exemplos
-   
-         
-      
-   .. admonition:: Estratégia pedagógica
+      .. admonition:: Estratégia pedagógica
    
       * Concreto `\rightarrow` Abstrato `\rightarrow` Concreto: iniciar o estudo de cada tipo de projeção com um experimento concreto (estudo das sombras), pensar em um modelo matemático que represente este experimento, estudar as propriedades deste modelo e, de posse deste conhecimento, fazer previsões para o modelo concreto.
       
@@ -346,6 +340,11 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
           .. figure:: _resources/perspectiva-01.jpg
              :width: 250 pt
              :align: center
+             
+          .. figure:: _resources/Hogarth-satire-on-false-pespective-1753.jpg
+             :width: 250 pt
+             :align: center
+             
 
       
       #. A construção de uma casinha passo a passo seguindo as regras da perspectiva.
@@ -395,7 +394,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
              :width: 250 pt
              :align: center
              
-          .. figure:: _resources/vistas-02.jpg
+          .. figure:: _resources/vistas-03.jpg
              :width: 250pt
              :align: center
       
@@ -430,7 +429,46 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
    
    .. admonition:: Sugestões de leituras e projetos aplicados
 
-      [Projetos aplicados: história das projeções, video mapping (projetor+smartphone)]
+      * De onde a foto foi tirada? De onde corretamente observar uma pintura em perspectiva?
+      
+      * Ilusões de ótica decorrentes de projeções em perspectiva
+      
+          .. figure:: _resources/sujihara-02.*
+             :width: 200pt
+             :align: center
+             
+          .. figure:: _resources/ezgif-4-7c3b461d5e.*
+             :width: 200pt
+             :align: center
+             
+      * Anamorfose plana: diversão, sinalização, propaganda.
+            
+          .. figure:: _resources/anamorfose-01.jpg
+             :width: 200pt
+             :align: center
+      
+      * Video mapping: projetor + smartphone.      
+      
+      * Construção de um perspectógrafo de Dürer com um apontador laser.
+      
+      * História da projeção em perspectiva.
+      
+      * Truques de perspectiva no cinema: Zoom Dolly (efeito Vertigo) e perspectiva forçada.
+      
+      * Joguinhos para treinar a visualização.
+
+          .. figure:: _resources/jogos-01.jpg
+             :width: 200pt
+             :align: center
+
+      * Moon terminator illusion.
+      
+          .. figure:: _resources/moon-terminator-illusion.jpg
+             :width: 200pt
+             :align: center
+      
+      
+      
 
    .. admonition:: Referências bibliográficas
 
