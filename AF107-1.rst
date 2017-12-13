@@ -350,6 +350,62 @@ n) Exiba uma expressão algébrica que relacione a quantidade total `T` de plant
 o) Explique textualmente, o motivo que impossibilita que o gráfico de cada uma das funções abordadas seja uma reta ou um segmento de reta, e sim um conjunto de pontos.
 
 
+.. admonition:: Resposta 
+
+   #.
+      .. table:: 
+         :widths: 1 3 3
+         :column-alignment: center center center
+
+         +--------+---------------------------+--------------------------------------+
+         |Modelo  |Quantidade de vegetais (●) |Quantidade de plantas `(\diamondsuit)`|
+         +--------+---------------------------+--------------------------------------+
+         |    1   |             1             |                   4                  |
+         +--------+---------------------------+--------------------------------------+
+         |    2   |             4             |                   8                  |
+         +--------+---------------------------+--------------------------------------+
+         |    3   |             9             |                  12                  |
+         +--------+---------------------------+--------------------------------------+
+         |    4   |             16            |                  16                  |
+         +--------+---------------------------+--------------------------------------+
+         |    5   |            25             |               20                     |
+         +--------+---------------------------+--------------------------------------+
+         |    6   |        36                 |            24                        |
+         +--------+---------------------------+--------------------------------------+
+         |    7   |         49                |             28                       |
+         +--------+---------------------------+--------------------------------------+
+   #. A quantidade de vegetais (●) é o quadrado do número do modelo.
+   
+   #. A quantidade plantas companheiras (◊) é o quádruplo do número do modelo.
+   
+   #. `V(n)=n^2`.
+   
+   #. `C(n)=4n`.
+   
+   #. Sim. Pois existe um número real `k` onde `(k=4)` tal que `C(n)=k.n`.
+   
+   #. `Dom(C)=\{1,2,3,4,5,6,7,...\}`.
+   
+   #.
+
+      .. figure:: _resources/sol_plant.jpeg
+         :width: 350pt
+         :align: center
+
+   #. `C(10)=40`.
+   
+   #. `n=36`.
+   
+   #. `V(10)=100`.
+   
+   #. `n=12`.
+   
+   #. Não, pois não existe um `k` real, tal que `V(n)=k.n`.
+   
+   #. `T(n)=n^2+4n`. A função `T(n)` não é uma função afim pois sua taxa de variação não é constante. Note que  `\frac{12-5}{2-1}=7` e `\frac{21-12}{3-2}=9` são diferentes.
+   
+   #. Em todos os casos “`V(n);C(n)` e `T(n)`” seus domínios são dados por um conjunto discreto,`\{1,2,3,4,5,...\}` ,ou seja qualquer “linha” que una os pontos apontaria que existiriam valores de `n` entre dois inteiros, o que é falso pois o domínio, como foi exibido, não é contínuo. 
+   
 ********
 Organizando as ideias: progressões aritméticas
 ********
