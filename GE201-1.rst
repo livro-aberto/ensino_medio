@@ -4,12 +4,13 @@
 Organizando as ideias: o que é um teorema?
 ******************************************
 
-Na atividade anterior você fez uma demonstração. Observe que nela havia uma situação (as retas paralelas cortadas por transversais), um fato que era dado `(AB = BC)` e um fato a ser concluído, ou demonstrado `(DE = EF)`.
-Essa estrutura é o que chamamos de **TEOREMA**.
+Na atividade anterior você fez uma demonstração. Havia três retas paralelas intersectadas por duas transversais e você considerou, naquela situação que  `AB = BC`. Assim, o fato a ser demonstrado era que `DE = EF`.
 
-Em um teorema, a situação e os fatos que são dados constituem a **HIPÓTESE** e aquilo o que se quer demonstrar é a **TESE**.
+Um **TEOREMA** é uma afirmação matemática que precisa de uma justificativa para ser aceita. 
 
-Para sair da hipótese e concluir a tese há um caminho composto por argumentos sucessivos, como uma corrente, que é a **DEMONSTRAÇÃO**.
+Em um teorema, a situação e os fatos que são dados constituem a **HIPÓTESE**. O fato que que se quer demonstrar é a **TESE**.
+
+A partir da hipótese e para concluir a tese há um caminho composto por argumentos sucessivos, onde cada um é consequência dos anteriores. Esse caminho é a **DEMONSTRAÇÃO**.
 
 Uma forma comum de enunciar um teorema é:
 
@@ -28,20 +29,19 @@ Se  **Hipótese**,  então **Tese**.
    
    **Tese**: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos
 
-O objetivo deste capítulo é compreender o “teorema de Tales”. Esse é um teorema muito antigo e importante, pois com ele, diversos outras propriedades de geometria foram demonstradas. O enunciado do teorema que vamos apresentar a seguir inclui a palavra “feixe”. Entenda essa palavra como “conjunto”.
+O objetivo deste capítulo é compreender o “teorema de Tales”. Esse é um teorema muito antigo e importante, pois com ele, diversas outras propriedades de figuras da geometria foram demonstradas. O enunciado do teorema que vamos apresentar a seguir inclui a palavra “feixe”. Entenda essa palavra como “conjunto”.
 
 Razão entre segmentos
 
 É preciso explicar certos termos que usamos em geometria. Eles são muito antigos, mas são usados hoje e serão sempre.
 
 A razão entre dois segmentos é a razão entre suas medidas.
-Por exemplo, se um triângulo retângulo tem catetos medindo 3 e 4 (em certa unidade), então sua hipotenusa mede 5 (na mesma unidade usada para medir os catetos).
 
-Se `\alpha` é o menor dos ângulos agudos do triângulo então a razão entre o cateto oposto ao ângulo `\alpha` e a hipotenusa do triângulo é  `\frac{3}{5}`, que costumamos chamar de seno do ângulo `\alpha`.
+Por exemplo, se um segmento `x` mede 15cm e um segmento `y` mede 20cm, a razão entre eles é escrita como `\frac{x}{y}` e é igual a `\frac{15}{20}=\frac{3}{4}=0,75`.
 
 Quando um ponto `P` está no interior do segmento `AB`, para definir sua posição em relação aos extremos do segmento é costume definir um número chamado de “razão em que `P` divide o segmento `AB`”.
 
-Essa razão é a fração `\frac{PA}{PB}`.
+Essa razão é o número real `\frac{PA}{PB}`.
 
 Assim, se um segmento `AB` mede `10cm` e um ponto `P` sobre ele está a 4cm de A então a razão em que `P` divide esse segmento é `\frac{PA}{PB}=\frac{4}{6}=\frac{2}{3}`.
 
@@ -58,7 +58,37 @@ Assim, se um segmento `AB` mede `10cm` e um ponto `P` sobre ele está a 4cm de A
    \draw [fill=black] (4,0.) circle (1.0pt);
    \draw[color=black] (4,-0.5) node {$P$};
    
+Isso pode ser visualizado na figura a seguir onde o segmento `PA` contém 2 partes e o segmento `PB`, 3 partes.
 
+.. tikz::
+   
+   \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+   \draw [line width=0.8pt] (0.,0.)-- (10.,0.);
+   \draw [line width=.5pt,dashed,color=ffqqqq] (0.,0.4)-- (2.,0.4);
+   \draw [line width=.5pt,dashed,color=ffqqqq] (2.,0.4)-- (4.,0.4);
+   \draw [line width=.5pt,dashed,color=ffqqqq] (4.,0.4)-- (6.,0.4);
+   \draw [line width=.5pt,dashed,color=ffqqqq] (6.,0.4)-- (8.,0.4);
+   \draw [line width=.5pt,dashed,color=ffqqqq] (8.,0.4)-- (10.,0.4);
+   \draw (0.7,0.8) node[anchor=north west] {$a$};
+   \draw (2.7,0.8) node[anchor=north west] {$a$};
+   \draw (4.7,0.8) node[anchor=north west] {$a$};
+   \draw (6.7,0.8) node[anchor=north west] {$a$};
+   \draw (8.7,0.8) node[anchor=north west] {$a$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.1322345939243572,-0.7290716059761639) node {$A$};
+   \draw [fill=black] (10.,0.) circle (1.0pt);
+   \draw[color=black] (9.974376348759716,-0.7290716059761639) node {$B$};
+   \draw [fill=black] (4.,0.) circle (1.0pt);
+   \draw[color=black] (4.004668330801247,-0.6767057461695107) node {$P$};
+   \draw [color=black] (0.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   \draw [color=black] (2.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   \draw [color=black] (4.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   \draw [color=black] (6.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   \draw [color=black] (8.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   \draw [color=black] (10.,0.4)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+   
+   
+   
 .. _ativ-segmentos-comensuraveis:
 
 Atividade: segmentos comensuráveis
@@ -67,32 +97,31 @@ Atividade: segmentos comensuráveis
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETIVOS ESPECÍFICOS**
    
    Levar o estudante a 
    
-   * Entender o que significa uma unidade de medida.
    * Identificar uma unidade comum a dois segmentos cujas medidas são racionais.
    
-   **Observações e recomendações**
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Quando as medidas dos dois segmentos são números decimais, os alunos não terão o menor problema em obter uma unidade comum para esses segmentos. 
-   * Quando as medidas são dadas em forma de fração a dica é obter frações equivalentes com o mesmo denominador. A unidade comum fica óbvia.
-   * É necessário comentar que dois segmentos nem sempre admitem uma unidade comum. Por exemplo, se um segmento mede 1 unidade e outro mede `\sqrt{2}` unidades, não existe uma unidade comum. Neste capítulo só vamos tratar de segmentos comensuráveis. Com eles faremos uma demonstração do teorema de Tales e isso será suficiente para as aplicações pois todas as medidas no mundo real são racionais.
+   * Quando as medidas dos dois segmentos são números racionais apresentados com representações decimais, os alunos não terão o menor problema em obter uma unidade comum para esses segmentos. 
+   * Quando as medidas são números racionais dados por meio da representação fracionária, a dica é obter frações equivalentes com o mesmo denominador. A unidade comum fica óbvia.
+   * É necessário comentar que dois segmentos nem sempre admitem uma unidade comum. Por exemplo, se um segmento mede 1 unidade e outro mede `\sqrt{2}` unidades, não existe uma unidade comum. Neste capítulo vamos abordar, inicialmente, a demonstração do teorema de Tales no caso dos segmentos comensuráveis. A demonstração geral aparecerá no final do capítulo..
 
 
-Dois segmentos são chamados de comensuráveis quando é possível determinar um terceiro segmento que cabe um número inteiro de vezes em um deles e também um número inteiro de vezes no outro.
+Dois segmentos são chamados de comensuráveis quando é possível determinar um terceiro segmento que cabe exatamente um número inteiro de vezes em um deles e também um número inteiro de vezes no outro.
 
 Assim, dados dois segmentos `a` e `b`, um segmento que cabe um número inteiro de vezes em um deles e também um número inteiro de vezes no outro é chamado de uma *unidade*, e vamos representá-lo por `u`.
 
-Por exemplo, se `a = 8cm` e `b = 10cm` podemos tomar `u = 2cm` pois essa unidade cabe 4 vezes em `a` e 5 vezes em `b`. Porém, há outras opções para `u`, que dependem da escolha de cada um. Com esses mesmos segmentos, podemos escolher `u = 0,5cm` e assim, essa unidade cabe 16 vezes em `a` e 20 vezes em `b`.
+Por exemplo, se `a = 8cm` e `b = 10cm` a unidade `u = 1cm` cabe 8 vezes em `a` e 10 vezes em `b`, mas podemos tomar `u = 2cm` pois essa unidade cabe 4 vezes em `a` e 5 vezes em `b`. . Porém, há outras opções para `u`, que dependem da escolha de cada pessoa. Com esses mesmos segmentos, podemos escolher, por exemplo,  `u = 0,5cm` e assim, essa unidade cabe 16 vezes em `a` e 20 vezes em `b`.
 Esses são os segmentos comensuráveis: os segmentos que permitem encontrar uma unidade de medida comum.
 
 
 
 Responda
 
-Na tabela abaixo, para cada par de segmentos `a` e `b` encontre uma unidade u de medida comum.
+Na tabela abaixo, para cada par de segmentos `a` e `b`, com suas medidas dadas em centímetros,  encontre uma unidade `u` de medida comum de forma que ela caiba um número inteiro de vezes em cada um deles..
 
 .. table:: 
    :widths: 1 1 1
@@ -132,16 +161,15 @@ Atividade: compreendendo o teorema de Tales
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETIOS ESPECÍFICOS**
    
-   Levar o estudante a 
-   
+      
    * Compreender o enunciado do teorema de Tales identificando   a hipótese e a tese
    
-   **Observações e recomendações**
+   **OBSERVAÇÕES E RECOEMNDAÇÕES**
    
-   * Talvez seja necessário explicar o que é uma proporcionalidade e o que significa dizer que certos segmentos são proporcionais a outros.
-   * Exemplos devem ser dados. Se o professor disser que, do lado esquerdo da figura, um segmento é o dobro do outro, os alunos deverão concluir que, do lado direito, os segmentos correspondentes serão um o dobro do outro.
+   * É necessário rever o que é uma proporcionalidade e o que significa dizer que  segmentos dados sejam proporcionais a outros também dados.
+   * Exemplos devem ser dados. Se o professor disser que, sobre uma das transversais, um segmento é o dobro do outro, os alunos deverão concluir que, na outra trasnversal, os segmentos correspondentes serão um o dobro do outro.
 
 
 Enunciado do teorema de Tales:
@@ -151,7 +179,7 @@ Enunciado do teorema de Tales:
 Vejamos uma figura
 
 
-.. tikz:: legenda
+.. tikz:: 
 
    \draw [line width=0.8pt] (-3.24,0.)-- (4.8,0.);
    \draw [line width=0.8pt] (-3.3,4.22)-- (4.82,4.22);
@@ -199,25 +227,23 @@ Atividade: demonstrando o teorema de Tales
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETICOS ESPECÍFICOS**
+    
+   * Demonstrar o teorema de Tales no caso dos segmentos comensuráveis.
    
-   Levar o estudante a 
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Compreender o enunciado do teorema de Tales identificando   a hipótese e a tese
+   * O aluno fará a demonstração do teorema de Tales no caso em que os dois segmentos da primeira transversal são comensuráveis. 
    
-   **Observações e recomendações**
+   O texto dirá que o resultado vale quando as medidas dos segmentos são números reais quaisquer. Uma demonstração geral do teorema de Tales usando áreas estará no Para Saber Mais, no final do capítulo.
    
-   * Talvez seja necessário explicar o que é uma proporcionalidade e o que significa dizer que certos segmentos são proporcionais a outros.
-   * Exemplos devem ser dados. Se o professor disser que, do lado esquerdo da figura, um segmento é o dobro do outro, os alunos deverão concluir que, do lado direito os segmentos correspondentes serão um o dobro do outro.
-   * O aluno fará a demonstração do teorema de Tales no caso em que os dois segmentos da primeira transversal são comensuráveis. Essa é exatamente a situação que interessa agora, pois nas aplicações no mundo real as medidas são números racionais.
-   
-A figura abaixo mostra três retas paralelas cortadas por duas transversais. Na reta da esquerda, os segmentos `AB = a` e `BC = b`, são comensuráveis e, na reta da direita, os segmentos correspondentes são `A'B' = a'` e `B'C' = b'`. 
-Nossa finalidade é demonstrar que 
+A figura a seguir mostra três retas paralelas cortadas por duas transversais. Na reta da esquerda, os segmentos `AB = a` e `BC = b`, são comensuráveis e, na reta da direita, os segmentos correspondentes são `A'B' = a'` e `B'C' = b'`. 
+Nosso objetivo é demonstrar que 
 
 .. math::
    \frac{a}{a'}=\frac{b}{b'}
    
-Como `a` e `b`, são comensuráveis a figura mostra uma unidade `u` comum a esses segmentos.
+Como `a` e `b` são comensuráveis, a figura mostra uma unidade `u` comum a esses segmentos.
 
 Por cada extremidade da unidade `u` assinalada na reta da esquerda traçamos retas paralelas às retas dadas determinando segmentos correspondentes na reta da direita.
 
@@ -289,7 +315,7 @@ Digamos que a unidade `u` cabe `m` vezes em `a`. Então `a = mu`.
 
 Digamos que a unidade `u` cabe `n` vezes em `b`. Então `b = nu`.
 
-Sabemos que, em retas paralelas cortadas por transversais, segmentos iguais de um cado correspondem a segmentos iguais do outro. A cada segmento `u` do lado esquerdo existe um correspondente `v` do lado direito.
+Sabemos ( da :ref:`ativ-demonstrando-um-fato`) que, em retas paralelas cortadas por transversais, segmentos iguais de um lado correspondem a segmentos iguais do outro. A cada segmento `u` do lado esquerdo existe um correspondente `v` do lado direito.
 
 Complete a demonstração
 
@@ -303,8 +329,11 @@ Complete a demonstração
    #. `m`
    #. `n`
    #. `a'= mv` e `b'=nv`
-      Dividindo, obtemos `\dfrac{a}{a'}=\dfrac{mu}{nu}=\dfrac{m}{n}` e que `\dfrac{b}{b'}=\dfrac{mv}{nv}=\dfrac{m}{n}`, logo `\dfrac{a}{a'}=\dfrac{b}{b'}`
+     
+      Tomando a razão entre os elementos do lado esquerdo e os do lado direito, obtemos `\dfrac{a}{a'}=\dfrac{mu}{nu}=\dfrac{m}{n}` e que `\dfrac{b}{b'}=\dfrac{mv}{nv}=\dfrac{m}{n}`, logo `\dfrac{a}{a'}=\dfrac{b}{b'}`
       
 
-
+.. admonition:: Observação
+   
+   O teorema de Tales foi demonstrado no caso dos dois segmentos de uma das retas serem comensuráveis. Entretanto, o teorema vale quando as medidas desses dois segmentos são números reais quaisquer. A demonstração geral do teorema está no final do capítulo, na seção Para Saber Mais.
 
