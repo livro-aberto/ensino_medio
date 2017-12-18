@@ -30,7 +30,6 @@ Ensino Médio
    AF106-A
    AF106-E1
 
-
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -41,8 +40,6 @@ Ensino Médio
    PE103-2
    PE103-A
    PE103-E
-
-
 
 .. toctree::
    :maxdepth: 1
@@ -117,7 +114,6 @@ Ensino Médio
    GE301-2
    GE301-A
    GE301-E
-
 
 .. toctree::
    :maxdepth: 1
