@@ -508,12 +508,33 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
 
       * Razões cruzadas: o que as projeções em perspectiva preservam?
       
-          .. figure:: _resources/razao-cruzada-01.jpg
+          .. figure:: _resources/2017-12-15_09-34-56.jpg
              :width: 200pt
              :align: center      
 
 
-      * Recomendação de leitura: Flores, C. R. (2007) Olhar, Saber, Representar: Sobre A Aepresentação em Perspectiva. São Paulo: Musa Editora.      
+      * Recomendação de leitura: Flores, C. R. (2007) Olhar, Saber, Representar: Sobre A Aepresentação em Perspectiva. São Paulo: Musa Editora. 
+      
+      * Geometrias não euclidianas tendo geometria projetiva como ponto de partida.
+      
+      * Teatro das sombras: <http://mrl.snu.ac.kr/research/ProjectShadowTheatre/ShadowTheatre.htm>.
+
+         .. figure:: _resources/2017-12-18_12-35-06.jpg
+             :width: 250pt
+             :align: center      
+
+
+      * Tira-teima (Juiz Virtual): <https://www.visgraf.impa.br/juizvirtual/>.
+      
+          .. figure:: _resources/2017-12-18_12-06-27.jpg
+             :width: 200pt
+             :align: center      
+             
+      * Ressonância e tomografia como projeções (uma inversível, a outra não). Ultrasonografia.
+
+          .. figure:: _resources/2017-12-18_13-30-47.jpg
+             :width: 200pt
+             :align: center      
       
 
    .. admonition:: Referências bibliográficas
