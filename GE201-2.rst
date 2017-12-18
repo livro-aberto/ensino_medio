@@ -12,11 +12,10 @@ Atividade: resolvendo a situação inicial
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETIVOS ESPECÍFICOS**
    
-   Levar o estudante a 
-   
-   * Compreender a aplicação do teorema de Tales em uma situação real.
+     
+   * Reconhecer a aplicabilidade do teorema de Tales em uma situação real.
    
    **Observações e recomendações**
    
@@ -54,12 +53,12 @@ Vamos voltar ao mapa que mostramos na primeira atividade, agora desenhado de for
    \draw [fill=blue] (3.968018275271273,-4.821964591661907) circle (2.5pt);
    
 #. Por que o teorema de Tales pode ser utilizado nessa situação?
-#. Utilizando os dados da atividade inicial calcule a medida `D`.
+#. Utilizando os dados da atividade inicial (:ref:`ativ-nas-ruas`) calcule a medida `D`.
 
 
 .. admonition:: Resposta 
 
-   #. Porque as ruas são paralelas
+   #. Porque as ruas são paralelas e estão cortadas por transversais.
    #. `184m`
    
 
@@ -70,18 +69,16 @@ Atividade: resolvendo novas situações
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETIVOS ESPECÍFICOS**
    
-   Levar o estudante a 
+   * Reconhecer uma aplicação do teorema de Tales em uma situação matemática.
    
-   * Compreender a aplicação do teorema de Tales em diversas outras situações.
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   **Observações e recomendações**
-   
-   * 	Os alunos compreenderam o teorema de Tales com a figura na situação padrão. Nesta atividade, vamos variar a figura para que eles possam raciocinar e decidir qual é a razão correta.
+   * 	Os alunos compreenderam o teorema de Tales a partir da representação mais tradicional. Nesta atividade, vamos variar as situações propostas para que eles possam raciocinar e decidir como aplicar o teorema de Tales
    * Em caso de dificuldade sugira que eles tracem uma nova paralela pelo ponto de interseção dos segmentos. Eles deverão reconhecer, então, o teorema de Tales.
 
-Quando há retas paralelas, o teorema de Tales estará presente. Nas figuras a seguir, as retas paralelas estão assinaladas com seu símbolo tradicional.
+Sempre que houver retas paralelas e trasnversais, o teorema de Tales estará presente. Nas figuras a seguir, as retas paralelas estão assinaladas com seu símbolo tradicional.
 
 
 .. tikz:: 
@@ -130,7 +127,7 @@ Quando há retas paralelas, o teorema de Tales estará presente. Nas figuras a s
       \draw [fill=black] (-2.394800264009806,3.4591432253197976) circle (1.0pt);
       \draw [fill=black] (-1.6069520360906888,2.4294196457913784) circle (1.0pt);
       
-#. Que relação há entre os quatro segmentos assinalados na figura acima?
+#. Encontre uma relação entre os quatro segmentos assinalados na figura acima.
 
 
 .. admonition:: Resposta 
@@ -151,10 +148,10 @@ Organizando as ideias
 Como se divide um segmento em uma razão dada?
 ---------
 
-Imagine que tenhamos um segmento `AB` e desejamos encontrar, no seu interior o ponto `P` que o divide na razão `\frac{PA}{PB}=\frac{3}{4}`. Um procedimento bastante usado é o descrito a seguir e mostrado na figura abaixo à esquerda.
+Imagine que tenhamos um segmento `AB` e desejamos determinar, no seu interior o ponto `P` que o divide na razão `\frac{PA}{PB}=\frac{3}{4}`. Isso significa encontrar um ponto `P` no interior do segmento `AB` de forma que o segmento `PA` seja proporcional a 3 e o segmento `PB`, proporcional a 4. Um procedimento bastante usado é o descrito a seguir e mostrado na figura a seguir à esquerda.
 
-A partir dos pontos `A` e `B` trace semirretas paralelas quaisquer, mas com sentidos opostos.
-Usando o compasso com uma abertura qualquer, assinale três segmentos iguais e consecutivos na semirreta que sai de `A` e, com a mesma abertura do compasso, quatro segmentos na semirreta que sai de `B`.
+A partir dos pontos `A` e `B` trace semirretas paralelas quaisquer,`AX` e `BY`,  mas com sentidos opostos como ilustrado na figura.
+Usando o compasso com uma abertura qualquer,mas fixada, assinale três segmentos iguais e consecutivos na semirreta de origem  `A` e, com a mesma abertura do compasso, quatro segmentos na semirreta de origem `B`.
 
 Temos então `AX = 3u` e `BY = 3u`.
 
@@ -184,7 +181,7 @@ A interseção da reta `XY` com o segmento `AB` é o ponto `P` procurado.
    \draw (1.21486,0.20032) node[anchor=north west] {B};
    \draw (7.2576,0.06722) node[anchor=north west] {B};
    \draw (-2.48532,2.32992) node[anchor=north west] {X};
-   \draw (3.29122,1.66442) node[anchor=north west] {X};
+   \draw (3.29122,2.06442) node[anchor=north west] {X};
    \draw (0.04358,-2.59478) node[anchor=north west] {Y};
    \draw (6.00646,-2.38182) node[anchor=north west] {Y};
    \draw (-3.2573,0.62624) node[anchor=north west] {u};
@@ -221,11 +218,12 @@ A interseção da reta `XY` com o segmento `AB` é o ponto `P` procurado.
    \draw [fill=black] (6.428571428571428,0.) circle (1.0pt);
    \draw [fill=red] (-1.2857142857142863,0.) circle (1.5pt);
 
-A figura da direita, acima, justifica visualmente a construção. Se um feixe de paralelas determina sobre uma transversal segmentos iguais determinará, sobre qualquer outra, segmentos também iguais.
+A figura acima, à direita, justifica visualmente a construção. Se um feixe de paralelas determina sobre uma transversal segmentos iguais determinará, sobre qualquer outra, segmentos também iguais.
 
 Assim, o segmento `AB` está dividido em 7 partes iguais e o ponto `P` é o terceiro ponto de divisão. Logo, `\frac{PA}{PB}=\frac{3}{4}`.
 
-Observe ainda que, dado um segmento e um número positivo `k`, **só existe um ponto interior ao segmento que o divide na razão** `k`.
+Observe ainda que, dado um segmento e um número positivo `k`, **só existe um ponto interior ao segmento que o divide na razão** `k`. . De fato, considerando `k` em uma das semirretas e a unidade de medida na outra, teremos `\dfrac{PA}{PB}=\dfrac{k}{1}=k`.
+
 
 
 .. _sub-reciproca-teorema:
@@ -235,24 +233,19 @@ O que é a recíproca de um teorema?
 
 Sabemos que um teorema é uma afirmação do tipo "Se A então B". A recíproca de um teorema é uma afirmação onde as expressões A e B trocam de lugar. Assim a recíproca de "Se A então B" é "Se B então A".
 
-Um teorema é uma afirmação verdadeira (pois conseguimos demonstrá-lo), mas sua recíproca nem sempre é verdadeira. Quando estamos trabalhando com números frequentemente as recíprocas das afirmações não são verdadeira, como no exemplo a seguir.
+Um teorema é uma afirmação matemática verdadeira (pois conseguimos demonstrá-lo), mas sua recíproca nem sempre é verdadeira. Quando estamos trabalhando com números frequentemente as recíprocas das afirmações não são verdadeira, como no exemplo a seguir.
 
 **Teorema**: Todo número múltiplo de 4 é par. (*verdadeiro*)
 
 **Recíproca**: Todo número par é múltiplo de 4.(*falso*)
 
-Em geometria, a maioria dos teoremas possui sua recíproca também verdadeira, mas isso é preciso verificar em cada caso. Você verá que isso ocorre com o Teorema de Tales em uma atividade mais adiante.
-
-
-.. admonition:: Nota importante
-   
-   O teorema de Tales foi demonstrado no caso dos dois segmentos de uma das retas serem comensuráveis. Entretanto, o teorema vale quando as medidas desses dois segmentos são números reais quaisquer. A demonstração geral do teorema poderá ser vista mais à frente, no capítulo das áreas.
+Em geometria, a maioria dos teoremas possui sua recíproca também verdadeira, mas isso é preciso verificar em cada caso. No caso do teorema de Tales a sua recíproca está  na :ref:`ativ-reciproca-tales`
 
 
 .. _sec-aprofundamentos:
 
 **********************
-Aprofundando o assunto 
+Para saber mais
 **********************
 
 
@@ -263,15 +256,14 @@ Atividade: a projeção paralela
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETIVOS ESPECÍFICOS**
    
-   Levar o estudante a 
    
-   * Conhecer um assunto novo relacionado com o tema do capítulo
+   * Aplicar o teorema de Tales para compreender a projeção paralela.
    
-   **Observações e recomendações**
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * 	Aplicar o conceito de razão em que um ponto divide um segmento.
+   * 	Lembrar o conceito de razão em que um ponto divide um segmento.
    
 Na figura a seguir você vê um segmento `AB`, um ponto `P` no seu interior e as retas `r` e `d`.
 
@@ -300,9 +292,9 @@ Na figura a seguir você vê um segmento `AB`, um ponto `P` no seu interior e as
    \draw [fill=black] (-1.2474868334000275,0.) circle (1.0pt);
    \draw [fill=black] (0.5068571428571428,0.) circle (1.0pt);
 
-A "projeção paralela sobre `r` na direção `d`" é uma função que, a cada ponto `X` do plano associa um ponto `X'` da seguinte forma. Trace por `X` uma reta paralela a `d`. Onde essa reta encontrar `r` está o ponto `X'`.
+A "projeção paralela sobre `r` na direção `d`" é uma função que, a cada ponto `X` do plano associa um ponto `X'` da seguinte forma: Trace por `X` uma reta paralela a `d`. Onde essa reta intersectar `r` está o ponto `X'`.
 
-Essa função parece uma chuva com vento da direita para a esquerda, fazendo as gotas caírem no chão.
+Observandoa  figura acima, essa função parece uma chuva com vento da direita para a esquerda, fazendo as gotas caírem no chão, a reta `r`.
 
 A razão em que o ponto `P` divide o segmento `AB` é `\dfrac{PA}{PB}`. Entretanto, pelo teorema de Tales, temos que  `\dfrac{PA}{P'A'}=\dfrac{PB}{P'B'}`.
 
@@ -310,7 +302,7 @@ Isso quer dizer que  `\dfrac{PA}{PB}=\dfrac{P'A'}{P'B'}`, ou seja, a razão em q
 
 Dizemos então que **A projeção paralela conserva as razões.**
 
-Considere agora que, na figura acima se tenha `\dfrac{PA}{PB}=\dfrac{2}{3}` e que `A'B'` tenha 8 centímetros. 
+Suponha agora que, na figura acima  tenha-se `\dfrac{PA}{PB}=\dfrac{2}{3}` e que `A'B'` tenha 8 centímetros. 
 
 #. Quanto mede o segmento `A'P'`?
 #. Qual é a razão `\dfrac{A'P'}{A'B'}` ?
@@ -330,14 +322,13 @@ Atividade: Recíproca do Teorema de Tales
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **OBJETICOS ESPECÍFICOS**
    
-   Levar o estudante a 
    
    * Usar sua intuição para responder a uma situação nova, mas relacionada com conceitos que já aprendeu
    * Aprender uma nova técnica de demonstração
    
-   **Observações e recomendações**
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * Na primeira parte da atividade o aluno deve usar sua intuição para responder. A justificativa dele para a resposta é importante para que você possa perceber se ele já tem a ideia da recíproca.
    * Na segunda parte da atividade o aluno deverá acompanhar com atenção a demonstração da recíproca do Teorema de Tales pois ela introduz, de forma leve, a técnica de demonstração por absurdo
@@ -370,8 +361,8 @@ Atividade: Recíproca do Teorema de Tales
 
 .. admonition:: Resposta 
 
-   #. Não
-   #. A razão `\frac{5}{13}` é diferente da razão `\frac{3}{8}` (são muito próximas)
+   #. Resposta pessoal.
+   #. Resposta pessoal, A resposta que o professor pode dar aos alunos pode ser: A razão `\frac{5}{13}` é diferente da razão `\frac{3}{8}`. Isso ficará claro com a recíproca do teorema de Tales.
    
 
 **Parte 2** Observe a figura a seguir:
@@ -430,9 +421,9 @@ Consideremos a mesma figura anterior com algumas letras novas
 
 Por hipótese temos que `\frac{a}{a'}=\frac{b}{b'}`, o que é o mesmo que `\frac{a}{b}=\frac{a'}{b'}`. A primeira fração é a razão em que `P` divide o segmento `AB` e a segunda é a razão em que `Q` divide o segmento `AC`. Elas são iguais, ou seja, `\frac{PA}{PB}=\frac{QA}{QC}`.
 
-Vamos usar agora uma técnica nova de demonstração conhecida como “redução ao absurdo”. Ela consiste em negar a tese e depois mostrar, com argumentos sólidos, que o que afirmamos não é possível.
+Vamos usar agora uma técnica nova de demonstração conhecida como “redução ao absurdo”. Ela consiste em negar a tese, reunir com a hipótese e depois mostrar, com argumentos sólidos, que o que afirmamos não é possível.
 
-Queremos mostrar que as retas `r` e `s` são paralelas. Vamos então imaginar o seguinte:
+Queremos mostrar que as retas `r` e `s` são paralelas. Continuando com nossa hipótese, vamos então imaginar o seguinte:
 
 **"Suponha que as retas r e s não são paralelas"**
 
@@ -441,3 +432,198 @@ Bem, dessa forma, vamos traçar agora pelo ponto `P` uma reta `r'` paralela à r
 Pelo teorema de Tales, ou melhor, pelo fato de que a projeção paralela conserva as razões, temos que `\frac{PA}{PB}=\frac{RA}{RC}` .
 
 Assim, `\frac{QA}{QC}=\frac{RA}{RC}` e, portanto, os pontos `Q` e `R` devem coincidir.
+
+
+.. admonition:: Resposta 
+
+   Como `\dfrac{QA}{QC}=\dfrac{RA}{RC}`, os pontos `Q` e `R` coincidem, assim como as retas `r` e `r’`.
+
+
+.. _tales-por-areas::
+
+Demonstração do teorema de Tales usando Áreas
+----------------------------------------------
+
+Duas propriedades dos triângulos:
+___________________________________
+
+
+A figura a seguir mostra as situações que nos permitirão concluir duas propriedades sobre os triângulos relacionadas às suas áreas.
+
+.. tikz::
+
+   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+   \draw [line width=0.8pt,color=ccqqqq,domain=-4.384390243902435:5.875121951219508] plot(\x,{(-0.-0.*\x)/1.});
+   \draw [line width=0.8pt,color=ccqqqq,domain=-4.384390243902435:5.875121951219508] plot(\x,{(--2.-0.*\x)/1.});
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (0.5581818181818191,2.)-- (0.5581818181818191,0.);
+   \draw [line width=0.8pt] (-2.7509090909090905,2.)-- (-3.2418181818181813,0.);
+   \draw [line width=0.8pt] (-3.2418181818181813,0.)-- (-0.4054545454545447,0.);
+   \draw [line width=0.8pt] (-0.4054545454545447,0.)-- (-2.7509090909090905,2.);]
+   \draw [line width=0.8pt] (-2.7509090909090905,2.)-- (-2.1327272727272724,0.);
+   \draw [line width=0.8pt] (1.4854545454545465,2.)-- (1.9036363636363647,0.);
+   \draw [line width=0.8pt] (1.9036363636363647,0.)-- (4.3036363636363655,0.);
+   \draw [line width=0.8pt] (4.3036363636363655,0.)-- (1.4854545454545465,2.);
+   \draw [line width=0.8pt] (2.7945454545454558,2.)-- (1.9036363636363647,0.);
+   \draw [line width=0.8pt] (2.7945454545454558,2.)-- (4.3036363636363655,0.);
+   \draw (-2.881951219512193,2.6) node[anchor=north west] {$A$};
+   \draw (-3.5,-0.1) node[anchor=north west] {$B$};
+   \draw (-0.5,-0.1) node[anchor=north west] {$C$};
+   \draw (-2.9,-0.2) node[anchor=north west] {$ a $};
+   \draw (-2.2,-0.1) node[anchor=north west] {$D$};
+   \draw (-1.3,-.1) node[anchor=north west] {$ a' $};
+   \draw (0.1,1.3) node[anchor=north west] {$  h$};
+   \draw (1.1,2.6) node[anchor=north west] {A};
+   \draw (1.7756097560975592,-0.25929046563192587) node[anchor=north west] {B};
+   \draw (4.265365853658532,-0.1) node[anchor=north west] {$C$};
+   \draw (2.4,2.6) node[anchor=north west] {A'};
+   \draw (-4.105365853658533,2.5) node[anchor=north west] {$ r$};
+   \draw (-4.169756097560972,0.5) node[anchor=north west] {$s$};
+   \draw [fill=black] (-2.7509090909090905,2.) circle (1.0pt);
+   \draw [fill=black] (-3.2418181818181813,0.) circle (1.0pt);
+   \draw [fill=black] (-0.4054545454545447,0.) circle (1.0pt);\draw [fill=black] (-2.1327272727272724,0.) circle (1.0pt);
+   \draw [fill=black] (1.9036363636363647,0.) circle (1.0pt);
+   \draw [fill=black] (4.3036363636363655,0.) circle (1.0pt);
+   \draw [fill=black] (1.4854545454545465,2.) circle (1.0pt);
+   \draw [fill=black] (2.7945454545454558,2.) circle (1.0pt);
+   \draw [color=black] (0.5581818181818191,2.)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+   \draw [color=black] (0.5581818181818191,0.)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+   
+Nesta seção, usaremos a notação `(XYZ)` para denotar a área do triângulo cujos vértices são `X`, `Y` e `Z`.
+
+A figura mostra as paralelas `r` e `s` que estão a uma distância `h` entre si. Do lado esquerdo aparece o triângulo `ABC` dividido em duas partes pelo segmento `AD`. A primeira propriedade diz respeito aos dois triângulos colados ABD e ADC.
+
+.. admonition:: Observação
+
+   **Propriedade 1**: *Se dois triângulos possuem mesma altura então a razão entre suas áreas é a razão entre suas bases*.
+   
+De fato, a propriedade pode ser verificada calculando diretamente as áreas dos triângulos `ABD` e `ADC`:
+
+.. math::
+
+   \dfrac{(ABD)}{(ADC)}=\dfrac{\dfrac{a\cdot h}{2}}{\dfrac{a'\cdot h}{2}}=\dfrac{a}{a'}
+   
+Do lado direito da figura acima aparecem os triângulos `ABC` e `A'BC` que mostram a segunda propriedade.
+
+.. admonition:: Observação
+
+   **Propriedade 2**: *Dois triângulos de mesma base e mesma altura possuem mesma área*.
+   
+
+Uma vez que a área do triângulo depende apenas da base e da altura, a propriedade fica bastante evidente. Por outro lado, a interpretação que se dá à propriedade é que, se escolhemos um lado de um triângulo qualquer como base e movemos o terceiro vértice sobre uma paralela à base, o novo triângulo formado tem a mesma área do triângulo original.
+
+Demonstrando o teorema
+_______________________
+
+Na primeira demonstração do Teorema de Tales, nossa estratégia envolvia o fato de que os segmentos determinados pelas paralelas sobre uma das transversais eram comensuráveis. Nossa nova estratégia não depende dessa condição e, por isso é válida também nos casos em que os segmentos citados não são comensuráveis.
+
+A Hipótese do teorema diz que há um feixe de retas paralelas cortadas por duas trasnversais. Nada é dito sobre as posições das retas transversais e isso significa, em Matemática, que o teorema deve ser válido independentemente dessas posições. Além disso, como visto na demonstração do caso de segmentos comensuráveis, podemos fazer nossa demonstração, sem perder a generalidade do teorema, com um feixe de três retas paralelas, pois essa demonstração pode ser repetida para cada escolha de três retas paralelas do feixe.
+
+O caso trivial do teorema ocorre quando as retas trasnversais são também paralelas, como na figura a seguir:
+
+.. tikz::
+
+
+   \draw [line width=2.pt] (0.,5.)-- (8.,5.);
+   \draw [line width=2.pt] (0.,3.)-- (8.,3.);
+   \draw [line width=2.pt] (0.,0.)-- (8.,0.);
+   \draw (2.,4.52) node[anchor=north west] {$a$};
+   \draw (1.28,1.86) node[anchor=north west] {$b$};
+   \draw (5.98,4.62) node[anchor=north west] {$a'$};
+   \draw (5.24,1.88) node[anchor=north west] {$b'$};
+   \draw [line width=2.pt] (3.,6.)-- (1.,-1.);
+   \draw [line width=2.pt] (7.,6.)-- (5.,-1.);
+   \draw (0.38,5.72) node[anchor=north west] {$r$};
+   \draw (0.28,3.64) node[anchor=north west] {$s$};
+   \draw (0.34,0.68) node[anchor=north west] {$t$};
+   \draw (2.26,5.6) node[anchor=north west] {$A$};
+   \draw (1.68,3.6) node[anchor=north west] {$B$};
+   \draw (0.8,0.6) node[anchor=north west] {$C$};
+   \draw (6.1,5.6) node[anchor=north west] {$A'$};
+   \draw (5.6,3.6) node[anchor=north west] {$B'$};
+   \draw (4.7,0.6) node[anchor=north west] {$C'$};
+   \draw [fill=black] (2.7142857142857144,5.) circle (2.0pt);
+   \draw [fill=black] (2.142857142857143,3.) circle (2.0pt);
+   \draw [fill=black] (1.2857142857142858,0.) circle (2.0pt);
+   \draw [fill=black] (6.714285714285714,5.) circle (2.0pt);
+   \draw [fill=black] (6.142857142857143,3.) circle (2.0pt);
+   \draw [fill=black] (5.285714285714286,0.) circle (2.0pt);
+
+Nesse caso, `ABB'A'` e `BCC'B'` são paralelogramos e, por isso, `a=a'` e `b=b'`. Portanto a tese `\dfrac{a}{b}=\dfrac{a'}{b'}` é verdadeira.
+
+No caso em que as retas transversais não são paralelas, podemos reduzir a figura a uma mais simples, usando o caso trivial, conforme a figura a seguir:
+
+.. tikz::
+
+   \draw [line width=2.pt] (0.,5.)-- (8.,5.);
+   \draw [line width=2.pt] (0.,2.)-- (8.,2.);
+   \draw [line width=2.pt] (0.,0.)-- (8.,0.);
+   \draw (1.76,3.78) node[anchor=north west] {$a$};
+   \draw (1.16,1.52) node[anchor=north west] {$b$};
+   \draw (5.66,3.94) node[anchor=north west] {$a'$};
+   \draw (7.02,1.64) node[anchor=north west] {$b'$};
+   \draw [line width=2.pt] (3.,6.)-- (1.,-1.);
+   \draw (0.38,5.72) node[anchor=north west] {$r$};
+   \draw (0.28,3.64) node[anchor=north west] {$s$};
+   \draw (0.34,0.68) node[anchor=north west] {$t$};
+   \draw (2.26,5.6) node[anchor=north west] {$A$};
+   \draw (1.4,2.6) node[anchor=north west] {$B$};
+   \draw (0.8,0.6) node[anchor=north west] {$C$};
+   \draw (4.62,5.6) node[anchor=north west] {$A'$};
+   \draw (6.28,2.6) node[anchor=north west] {$B'$};
+   \draw (7.46,0.6) node[anchor=north west] {$C'$};
+   \draw [line width=2.pt] (4.,6.)-- (8.,-1.);
+   \draw [line width=2.pt,dashed] (2.7142857142857144,5.)-- (6.1692307692307695,-1.0461538461538469);
+   \draw (4.5,2.6) node[anchor=north west] {$B''$};
+   \draw (5.58,0.6) node[anchor=north west] {$C''$};
+   \draw (3.76,3.94) node[anchor=north west] {$a''$};
+   \draw (5.22,1.56) node[anchor=north west] {$b''$};
+   \draw [fill=black] (2.7142857142857144,5.) circle (2.0pt);
+   \draw [fill=black] (1.8571428571428572,2.) circle (2.0pt);
+   \draw [fill=black] (1.2857142857142858,0.) circle (2.0pt);
+   \draw [fill=black] (4.428571428571429,2.) circle (2.0pt);
+   \draw [fill=black] (5.571428571428571,0.) circle (2.0pt);
+   \draw [fill=black] (4.571428571428571,5.) circle (2.0pt);
+   \draw [fill=black] (6.285714285714286,2.) circle (2.0pt);
+   \draw [fill=black] (7.428571428571429,0.) circle (2.0pt);
+
+Como `a'=a''` e `b'=b''`, mostrar que `\dfrac{a}{b}=\dfrac{a''}{b''}` mostra também que `\dfrac{a}{b}=\dfrac{a'}{b'}`, que é a tese de nosso teorema.
+
+Portanto, para mostrar o caso geral, tomemos a figura a seguir, já simplificada, onde as retas `r`, `s` e `t` são paralelas e as retas `OA` e `OA'` são as trasnversais.
+
+.. tikz::
+   
+   \clip(-6.245361801353108,-0.994413927588976) rectangle (5.35363262685944,6.113077489908864);
+   \draw [line width=0.8pt,domain=-6.245361801353108:47.35363262685944] plot(\x,{(-0.-0.*\x)/1.});
+   \draw [line width=0.8pt,domain=-6.245361801353108:47.35363262685944] plot(\x,{(--2.-0.*\x)/1.});
+   \draw [line width=0.8pt,domain=-6.245361801353108:47.35363262685944] plot(\x,{(--5.-0.*\x)/1.});
+   \draw [line width=0.8pt] (-3.2809171581007854,5.)-- (-4.062560888816656,0.);
+   \draw [line width=0.8pt] (-3.2809171581007854,5.)-- (1.5913287633614788,0.);
+   \draw [line width=0.8pt] (-4.062560888816656,0.)-- (-0.3575696052234269,2.);
+   \draw [line width=0.8pt] (-3.749903396530308,2.)-- (1.5913287633614788,0.);
+   \draw (-5.7,5.4) node[anchor=north west] {$r$};
+   \draw (-5.7,2.6) node[anchor=north west] {$ s $};
+   \draw (-5.7,.6) node[anchor=north west] {$ t $};
+   \draw (-4,3.8) node[anchor=north west] {$ a $};
+   \draw (-4.452437691958675,1.5) node[anchor=north west] {$ b $};
+   \draw (-1.9,4) node[anchor=north west] {$ a' $};
+   \draw (0.7,1.5) node[anchor=north west] {$  b'$};
+   \draw [fill=black] (-3.2809171581007854,5.) circle (1.0pt);
+   \draw[color=black] (-3.4144289970461084,5.499708715642349) node {$O$};
+   \draw [fill=black] (-4.062560888816656,0.) circle (1.0pt);
+   \draw[color=black] (-4.389528074085187,-0.3194309376553625) node {$B$};
+   \draw [fill=black] (1.5913287633614788,0.) circle (1.0pt);
+   \draw[color=black] (1.7756144775167264,-0.41379536446559567) node {$B'$};
+   \draw [fill=black] (-3.749903396530308,2.) circle (1.0pt);
+   \draw[color=black] (-4.169344411527976,2.3542278219679105) node {$A$};
+   \draw [fill=black] (-0.3575696052234269,2.) circle (1.0pt);
+   \draw[color=black] (-0.11167405868794078,2.385682630904655) node {$A'$};
+   
+Com os elementos da figura acima observe inicialmente que os triângulos `A'AB` e `AA'B'`  possuem mesma área pois têm a mesma base `AA'` e mesma altura, pois as retas `s` e `t` são paralelas (**Propriedade 2**).
+
+Agora, utilizando a **Propriedade 1**, temos que
+
+.. math::
+
+   \dfrac{a}{b}=\dfrac{(A'OA)}{(A'AB)}=\dfrac{(AOA')}{(AA´B'}=\dfrac{a'}{b'}
+   
+A igualdade `\dfrac{a}{b}=\dfrac{a'}{b'}` é nossa tese, o que encerra a demonstração.
