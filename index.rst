@@ -56,19 +56,6 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
-   AF209
-   AF209-0
-   AF209-1
-   AF209-2
-   AF209-3
-   AF209-4
-   AF209-A
-   AF209-E
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
    GE101
    GE101-0
    GE101-0A
@@ -108,6 +95,18 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   GE2022
+   GE2022-0
+   GE2022-1
+   GE2022-2
+   GE2022-3
+   GE2022-A
+   GE2022-E
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
    GE301
    GE301-0
    GE301-1
@@ -125,3 +124,17 @@ Ensino Médio
    PE104-2
    PE104-A
    PE104-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   AF209
+   AF209-0
+   AF209-1
+   AF209-2
+   AF209-3
+   AF209-4
+   AF209-A
+   AF209-E
