@@ -193,6 +193,10 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :width: 200pt
          :align: center
          
+      .. figure:: _resources/2017-12-25_20-01-15_1.jpg
+         :width: 200pt
+         :align: center         
+         
       .. figure:: _resources/2017-12-10_11-23-10_1.jpg         
          :width: 200pt
          :align: center
