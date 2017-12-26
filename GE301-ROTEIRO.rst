@@ -540,6 +540,19 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
              :width: 200pt
              :align: center      
       
+      * Conexão com Filosofia: a alegoria da caverna em "A República" de Platão.
+
+          .. figure:: _resources/mito-da-caverna2.jpg
+             :width: 200pt
+             :align: center
+             
+      * Conexão com Artes: o motivo da sombra como origem do desenho.
+      
+        A estranha ideia de que se começou a desenhar contornando uma sombra surge em dois textos clássicos do séc. I, publicados com poucos anos de intervalo entre eles. No livro X da Institutio Oratoria (95), Quintiliano diz que, se todos se tivessem limitado a imitar os seus predecessores, “não haveria poesia superior à de Livius Andronicus, nem em História nada que ultrapassasse os Anais dos Pontifícios; os nossos barcos seriam ainda jangadas e a arte da pintura limitar-se-ia a contornar com um risco as sombras que projetam os corpos à luz do sol[2]”. No capítulo 12 do livro XXXV da sua História Natural (77-79), Plínio, o Velho, conta que Cora, a filha de um oleiro de Sicião chamado Butades, traçou numa parede o contorno da sombra nela projetada pelo rosto de um rapaz por quem estava apaixonada e que partia para o estrangeiro. O gravador alemão Joachim von Sandrart publica em 1675, na sua Teutsche Academie, uma gravura representando os dois textos fundadores da ideia. A imagem de Quintiliano, que era muito mais simples, nunca se tornou um motivo da pintura europeia; a de Plínio, porém, que era muito mais sedutora pela história de amor que incluía, foi, desde essa altura, pintada várias de vezes (fonte: <http://llindegaard.blogspot.com.br/2015/02/o-motivo-da-sombra-como-origem-do.html>, ver também [Stoichita-1999]_).
+
+          .. figure:: _resources/vol1_mw11.jpg
+             :width: 200pt
+             :align: center               
 
    .. admonition:: Referências bibliográficas
 
@@ -580,6 +593,8 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       .. [Sinclair-et-al-2016] Sinclair, N. et al. (2016). Recent Research On Geometry Education: An ICME‑13 Survey Team Report. ZDM Mathematics Education, v. 48, p. 691-719.
       
       .. [Sinha-2009] Sinha, P. (2009). Pawan Sinha em Como O Cérebro Aprender A Ver. Palestra TED. Disponível em: <https://goo.gl/eDZKYo>.
+      
+      .. [Stoichita-1999] Stoichita, V. I. (1999). A Short History of The Shadow. Reaktion Books.
       
       .. [Sugihara-2000] Sugihara, K. (2000). "Impossible Objects" Are Not Necessarily Impossible: Mathematical Study on Optical Illusion. Em: Akiyama, J.; Kano, M.;  Urabe, M. (Eds.). JCDCG’98, LNCS 1763, p. 305−316, Springer-Verlag.
 
