@@ -26,7 +26,7 @@ Explorando
    
    O capítulo se inicia com a seção Explorando onde citamos duas tentativas bem documentadas, na antiguidade, de cálculo distâncias inacessíveis e, curiosamente, uma delas foi muito mal sucedida (pelos precários instrumentos disponíveis) e a outra muito bem sucedida. Esses relatos localizam o início da trigonometria do triângulo no percurso da história mostrando a curiosidade do ser humano em compreender o mundo em que vive através dos números. E isso acontece até hoje como, por exemplo, com o GPS, que nos dá imformações precisosas, utilizando a mesma trigonometria de séculos atrás.
    
-   A **SUBSTITUIR PELO LINK DA ATIVIDADE** (primeira atividade) é a atividade motivadora ou, como podemos dizer, provocativa. Nessa atividade não esperamos que os alunos consigam calcular corretamente o que é proposto, mas desejamos que a situação apresentada estimule os alunos a buscar uma resposta aproximada através de um desenho cuidadoso e de percebem que os novos conhecimentos que virão a seguir serão realmente úteis e interessantes. A situação da atividade é uma adaptação simplificada da construção de um túnel na ilha de Samos por volta de 530a.C. e que foi registrada pelo historiador grego Herodoto. Como toda atividade inicial, ela será retomada nos exercícios, ou nas atividades, onde os alunos terão oportunidade de calcular exatamente o que foi proposto, usando as ferramentas desenvolvidas no capítulo.
+   A :ref:`ativ-estimando-comp-ang` é a atividade motivadora ou, como podemos dizer, provocativa. Nessa atividade não esperamos que os alunos consigam calcular corretamente o que é proposto, mas desejamos que a situação apresentada estimule os alunos a buscar uma resposta aproximada através de um desenho cuidadoso e de percebem que os novos conhecimentos que virão a seguir serão realmente úteis e interessantes. A situação da atividade é uma adaptação simplificada da construção de um túnel na ilha de Samos por volta de 530a.C. e que foi registrada pelo historiador grego Herodoto. Como toda atividade inicial, ela será retomada nos exercícios, ou nas atividades, onde os alunos terão oportunidade de calcular exatamente o que foi proposto, usando as ferramentas desenvolvidas no capítulo.
    
    A seguir, na seção Organizando as Ideias o aluno poderá ver uma demonstração do teorema de Pitágoras. A demonstração escolhida foi a que usa semelhança de triângulos, por ser muito simples e natural, e por permitir que os alunos obtenham, sozinhos, outras relações métricas no triângulo retângulo que estarão na atividade seguinte. A seção termina localizando o local de nascimento de Pitágoras e exibindo uma bela imagem de um monumento a Pitágoras, como homenagem do Livro a esse importante personagem da Matemática.
    
@@ -51,14 +51,79 @@ Aristarco de Samos, que viveu entre 310 e 260 a.C. teve algumas boas ideias. Ele
 
 Quando a Lua está metade iluminada e metade escura, o ângulo Sol-Terra-Lua não é reto. Na verdade, esse ângulo (assinalado com `\alpha` na figura) é um pouco menor que o ângulo reto.
 Aristarco fez suas medidas e seus cálculos indicaram que o Sol estaria 19 vezes mais distante da Terra do que a Lua. O raciocínio dele foi perfeito, mas como os instrumentos de medida de ângulos naquela época tinham pouca precisão, seu resultado foi muito ruim. Na verdade, o Sol está 390 vezes mais distante da Terra do que a Lua.
-Um pouco depois de Aristarco, mas ainda no século III a.C. viveu Eratóstenes de Cyrene que foi matemático, inventor, poeta, astrônomo, geógrafo, entre outras atividades. Em matemática, ficou conhecido por ter descoberto um método para identificar números primos e, sobretudo, por ter sido a primeira pessoa a calcular o comprimento da circunferência da Terra, o que fez com extraordinária precisão. Veja como ele calculou a circunferência da Terra em 
-
-https://www.youtube.com/watch?v=8On7yCU1EjQ
+Um pouco depois de Aristarco, mas ainda no século III a.C. viveu Eratóstenes de Cyrene que foi matemático, inventor, poeta, astrônomo, geógrafo, entre outras atividades. Em matemática, ficou conhecido por ter descoberto um método para identificar números primos e, sobretudo, por ter sido a primeira pessoa a calcular o comprimento da circunferência da Terra, o que fez com extraordinária precisão. Veja como ele calculou a circunferência da Terra `nesse vídeo <https://www.youtube.com/watch?v=8On7yCU1EjQ>`_.
 
 A trigonometria se desenvolve no mundo grego desde a época de Aristarco até a da Ptolomeu (séc 2 AD). Após um período em que nada aconteceu, a trigonometria é resgatada e desenvolvida pelos hindus e árabes entre os séculos 5 e 12.
 
 Durante todo esse tempo, a trigonometria ganhou mais relações e as novas descobertas foram conquistadas em métodos para calcular distâncias e ângulos inacessíveis. E isso ocorre até hoje. Quando buscamos a localização de um ponto na superfície da Terra pelo GPS, esse programa utiliza os satélites, os sinais de rádio que permitem determinar distâncias e as mesmas fórmulas de trigonometria que você vai aprender nesta unidade. O que o GPS faz é calcular ângulos e distâncias em triângulos.
 
-   
-   
+.. figure:: _resources/TrigFig-02.png
 
+
+.. _ativ-estimando-comp-ang:
+
+Atividade: estimando comprimentos e ângulos 
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Compreender um texto e fazer, em escala, o desenho correspondente à situação descrita.
+   * Praticar sua intuição estimando distâncias e ângulos.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno complete sozinho a atividade. Só interfira se ele solicitar ajuda.
+   * Esclareça que esta atividade será retomada após o desenvolvimento da teoria.
+   * A Atividade é uma adaptação simplificada de uma atividade real documentada pelo historiador Heródoto (485-420 a.C.).
+   
+No século V a.C., na ilha de Samos, uma montanha estava interrompendo o trajeto de um arqueduto que traria a água da região norte da ilha para a região sul. O problema que vamos apresentar é uma simplificação da situação original, mas com o mesmo espírito.
+
+A figura a seguir mostra a montanha e os pontos **A** e **B** que serão as extremidades do túnel. O terreno em volta da montanha é plano. Então, os engenheiros projetaram a construção desse túnel desde o ponto **A**, na face norte da montanha até o ponto **B**, na face sul, mas alguns problemas deveriam ser resolvidos.
+
+.. figure:: _resources/TrigFig-02A.png
+
+Os engenheiros precisavam saber a distância entre os pontos **A** e **B** para ter uma ideia do tempo em que levaria a escavação do túnel e, como o trabalho deveria ser feito tanto a partir de **A** quanto a partir de **B**, seria necessário obter as direções em que cada equipe deveria escavar para que se encontrassem no meio do túnel.
+
+O engenheiro fez, então, as seguintes medições que você pode acompanhar no desenho:
+
+* A partir de **A** caminhou para oeste por 700m até **C**.
+* A partir de **C** caminhou para o sul por 320m até **D**.
+* A partir de **D** caminhou para o leste por 250m até **E**.
+* A partir de **E** caminhou para o sul riscando no chão sua trajetória.
+
+Dirigiu-se então ao ponto **B** e, a partir desse ponto, caminhou para oeste determinando o ponto **F** na trajetória riscada no chão. As distâncias **EF** e **FB** foram respectivamente de 140m e 720m.
+
+Com seus instrumentos, faça um desenho em escala da situação descrita acima.
+
+#. Qual é sua avaliação para o comprimento aproximado do túnel.
+#. Qual é sua estimativa para os ângulos assinalados na figura?
+
+
+.. admonition:: Resposta 
+
+   As respostas são pessoais, mas espera-se que estejam próximas de
+   
+   #. 530m
+   #. `60^{\circ}` e `120^{\circ}`
+
+
+********
+Organizando as ideias
+********
+
+Na atividade anterior, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram **estimados** por uma construção geométrica. Vamos agora descobrir relações que permitem calcular com grande exatidão essas medidas.
+
+Iniciamos observando um triângulo retângulo.
+
+
+
+.. tikz:: legenda
+
+   \draw (0,0)--(1,0)--(.5,.6)--(0,0);
+
+   
+   
+   
