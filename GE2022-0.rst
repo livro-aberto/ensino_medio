@@ -118,12 +118,179 @@ Na atividade anterior, as medidas do comprimento do túnel e dos ângulos assina
 
 Iniciamos observando um triângulo retângulo.
 
+.. figure:: _resources/TrigFig-03.png
 
+O triângulo `ABC` da figura acima é retângulo em `A` e seus lados medem `BC=a`, `AC=b` e `AB=c`. A altura relativa à hipotenusa é `AH=h`. O pé da altura dividiu a hipotenusa em duas partes: `HC=m` e `HB=n`.
 
-.. tikz:: legenda
+Observe ainda que os ângulos azuis são iguais, que os ângulos vermelhos também são iguais e que eles são complementares.
 
-   \draw (0,0)--(1,0)--(.5,.6)--(0,0);
+Vamos agora cortar o triângulo `ABC` na sua altura `AH`. O triângulo original e as duas partes aparecem na figura a seguir.
 
+.. figure:: _resources/TrigFig-04_1.png
+
+Veja que os três triângulos da figura acima são semelhantes. Vamos explorar isso.
+
+#. Como os triângulos `ABC` e `HAC` são semelhantes temos:
+  
+   .. math:: 
+
+     \dfrac{a}{b}=\dfrac{b}{m}=\dfrac{c}{h} \mbox{ }\mbox{ (1)}
+
+#. Como os triângulos `ABC` e `HBA` são semelhantes temos:
+     
+   .. math:: 
+
+     \dfrac{a}{c}=\dfrac{b}{h}=\dfrac{c}{n} \mbox{ }\mbox{ (2)}
+
+#. Como os triângulos `HAC` e `HBA` são semelhantes temos:
+
+   .. math:: 
+
+     \dfrac{b}{c}=\dfrac{m}{h}=\dfrac{h}{n} \mbox{ }\mbox{ (3)}
+
+Há muitas relações aí e você vai fazer sua exploração em uma atividade logo a seguir. No momento necessitamos de duas que estão em (1) e (2): `b^2=am` e `c^2=an`.
+
+Essas duas relações nos permitirão demonstrar o mais famoso resultado da matemática, que é o *Teorema de Pitágoras*. Seu enunciado é o seguinte:
+
+"*Em todo triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos*."
+
+Vamos fazer a demonstração passo a passo:
+
+#. O teorema fala sobre a soma dos quadrados dos catetos. Na nossa figura, os catetos `AC` e `AB` medem, respectivamente, `b` e `c`. A soma citada é, então:
    
+   `b^2 +c^2`
+
+#. Com as relações que separamos, podemos substituir cada cateto pelo produto de suas projeções pela hipotenusa e, portanto temos
    
+   `b^2 +c^2=am+an`
+
+#. As parcelas `am` e `an` possuem o fator `a` em comum e podemos colocá-lo em evidência
+
+   `b^2 +c^2= a(m+n)`
+   
+#. Mas  veja que `m+n = a`, de modo que temos
+
+   `b^2 +c^2=a\cdot a=a^2`
+   
+Como `a^2` é o quadrado da hipotenusa, concluímos a demonstração do teorema.
+
+
+A recíproca do teorema de Pitágoras é verdadeira e será demonstrada no final do capítulo. Seu enunciado é:
+
+"*Se, em um triângulo, o quadrado de um lado é igual à soma dos quadrados dos outros dois, então esse triângulo é retângulo*."
+
+.. admonition:: Você sabia
+
+   O teorema de Pitágoras, pela sua inegável beleza e por suas amplas aplicações tem fascinado pessoas, matemáticos ou não, por 2500 anos. Não se conhece a primeira demonstração desse teorema (descoberta na Escola de Pitágoras, séc. V a.C.), mas durante todo esse tempo, muitas demonstrações diferentes foram descobertas e publicadas em todo o mundo. Em 1927, Elisha Loomis (1852, 1940) publicou um livro com 230 demonstrações diferentes do teorema de Pitágoras, comentadas e com sua origem. A última edição do livro, publicado no ano de sua morte, contém 370 demonstrações do teorema de Pitágoras.
+   
+.. figure:: _resources/TrigFig-05a.png  
+
+   Estátua localizada no porto de Pythagoreio, Ilha de Samos, Mar Egeu
+
+.. figure:: _resources/TrigFig-06.png
+
+   Veja onde nasceu Pitágoras de Samos
+   
+
+***************
+Para Saber Mais
+***************
+
+.. admonition:: Para o professor
+
+   Nesta seção, falamos brevemente sobre a interpretação do teorema de Pitágoras em relação às áreas. Na verdade, essa foi a interpretação original do teorema.
+   
+   Não se conhece a demonstração produzida na Escola de Pitágoras, mas a primeira demonstração que temos documentada está nos Elementos de Euclides (que citaremos a seguir) no Livro 1, Item 47. A demonstração não é muito simples, mas aconselhamos que o professor a conheça.
+   
+   Oferecemos a seguir, para os alunos, uma demonstração do teorema de Pitágoras usando áreas que é bastante simples. No texto, mantivemos a demonstração por semelhança, pois ela permite obter rapidamente as outras relações úteis do triângulo retângulo.
+
+O teorema de Pitágoras é uma afirmação sobre áreas. Ele diz que, em qualquer triângulo retângulo, a área do quadrado construído sobre a hipotenusa é igual à soma das áreas dos quadrados construídos sobre os catetos. Para visualizar, na figura a seguir, o teorema de Pitágoras afirma que a área do quadrado azul é igual à soma das áreas dos quadrados verdes.
+
+.. figure:: _resources/TrigFig-06A.png
+
+A primeira demonstração completa que temos documentada foi publicada na coleção chamada “Os Elementos” de Euclides, no século 3 a.C.
+
+A demonstração não é simples, e utiliza propriedades de figuras que possuem mesma área.
+
+Apresentaremos, a seguir, uma demonstração visual do teorema de Pitágoras tendo a área como argumento. A partir de um triângulo retângulo de hipotenusa `a` e catetos `b` e `c`, foram construídos dois quadrados, ambos com lado igual a `b+c`. Você pode verificar que, claramente, a área do quadrado azul à esquerda é igual à soma das áreas dos quadrados verdes à direita.
+
+.. figure:: _resources/TrigFig-06B.png
+
+
+
+.. admonition:: Para o professor
+
+   Para visualizar animações interessantes do teorema de Pitágoras, explore os sites abaixo: 
+   
+   https://www.youtube.com/watch?v=MRXfc5OZqm0
+   
+   https://www.youtube.com/watch?v=pVo6szYE13Y
+   
+   https://www.youtube.com/watch?v=li6mLqzm8DU
+   
+   http://persweb.wabash.edu/facstaff/footer/Pythagoras.htm
+   
+   https://en.wikipedia.org/wiki/File:Pythagoras-2a.gif
+   
+   Em 1872 foi descoberto pelo inglês Henri Perigal uma forma de cortar os quadrados menores em peças que preenchem o quadrado maior, sendo essa, a divisão com o menor número de peças que se conhece.
+   
+   Você poderá apreciar essa divisão em
+   
+   https://www.youtube.com/watch?v=LtkAIQcACqY
+   
+   e também explorar um interessante applet construído com o Geo Gebra em 
+   
+   https://www.geogebra.org/m/yy5bKdW9
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: obtendo e aplicando outras relações 
+------------------------------
+
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Deduzir fórmulas novas a partir de relações conhecidas.
+   * Praticar sua intuição.
+
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno complete sozinho a atividade. Só interfira se ele solicitar ajuda. Se necessário, dê dicas. Não mostre a resposta de imediato.
+   
+Vamos retomar a figura que usamos na seção anterior e as semelhanças que apontamos para obter mais duas relações que podem nos ajudar no cálculo de medidas desconhecidas em triânguloes retângulos.
+
+.. figure:: _resources/TrigFig-03.png
+
+Use a semelhança entre `ABC` e `HBA` e a semelhança entre `HAC` e `HBA` para encontrar uma expressão para
+   
+#.  `h^2`
+#.  `b\cdot c`
+   
+#. Nas figuras a seguir, calcule os segmentos assinalados.
+   
+   A primeira figura mostra uma semicircunferência e um segmento perpendicular ao seu diâmetro e, a segunda figura mostra um triângulo retângulo e sua altura relativa à hipotenusa.
+
+.. figure:: _resources/TrigFig-07.png
+   
+.. admonition:: Resposta 
+
+   #. Usar a relação `\dfrac{m}{h}=\dfrac{h}{n}` da seelhança entre `HAC` e `HBA` para obter `h^2=mn`
+   
+   #. Usar a relação `\dfrac{a}{c}=\dfrac{b}{h}` da semelhança entre `ABC` e `HBA` para obter a relação `b\cdot c=a\cdot h`
+   
+   #. Como todo triângulo inscrito em uma semi circunferência é retângulo, podemos usar a relação `x^2=12 \cdot 27` para encontrar `x = 18` e, no triângulo da direita, usamos o Teorema de Pitágoras para encontrar a hipotenusa, que me de 30. Em seguida, usamos a relação `30\cdot x = 18\cdot 24`, encontrando `x = 14,4`.
+
+
+
+
+
+
+
+
+
    
