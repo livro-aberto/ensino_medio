@@ -30,7 +30,7 @@ Explorando
    
    A seguir, na seção Organizando as Ideias o aluno poderá ver uma demonstração do teorema de Pitágoras. A demonstração escolhida foi a que usa semelhança de triângulos, por ser muito simples e natural, e por permitir que os alunos obtenham, sozinhos, outras relações métricas no triângulo retângulo que estarão na atividade seguinte. A seção termina localizando o local de nascimento de Pitágoras e exibindo uma bela imagem de um monumento a Pitágoras, como homenagem do Livro a esse importante personagem da Matemática.
    
-   A **SUBSTITUIR PELO LINK DA ATIVIDADE** (Atividade 4.2.2) prepara o aluno para as razões trigonométricas e, a seguir, vem outra seção Organizando as Ideias para introduzir as razões trigonométricas de um ângulo agudo. Para isso, a ênfase está na semelhança, pois cada triângulo retângulo possui um semelhante com hipotenusa igual a 1.
+   A :ref:`ativ-razoes-trig` prepara o aluno para as razões trigonométricas e, a seguir, vem outra seção Organizando as Ideias para introduzir as razões trigonométricas de um ângulo agudo. Para isso, a ênfase está na semelhança, pois cada triângulo retângulo possui um semelhante com hipotenusa igual a 1.
    
    É comum ver nos livros didáticos publicados no Brasil, extensa lista de exercícios, todos envolvendo ângulos de `30^{\circ}`, `45^{\circ}` e `60^{\circ}`. Ocorre que, no mundo real, esses ângulos raramente aparecem e, por isso, também aparecerão pouco no nosso Livro. Será dada ênfase na utilização da calculadora científica do celular como é feita hoje nas escolas dos países mais desenvolvidos em educação.
    
@@ -456,7 +456,183 @@ Quando o ângulo é pequeno, a tangente e o seno são números bem próximos, ma
 A relação fundamental
 ---------
 
-O seno e o cosseno de um ângulo não são números independentes. Se conhecemos um, podemos facilmente calcular o outro. Veja a relação entre eles a seguir:
+Como definimos o seno e o cosseno de um ângulo agudo `\alpha` como os catetos de um triângulo retângulo que possui um ângulo igual a `\alpha` e hipotenusa 1, podemos usar o Teorema de Pitágoras para relacionar o seno e o cosseno desse ângulo:
+
+
+.. math::
+
+   \sin^2\alpha + \cos^2\alpha = 1
+   
+Outra maneira de ver essa relação, que é chamada *Relação Fundamental*, é tomarmos um triângulo retângulo de hipotenusa `a` e catetos `b` e `c`. Se `\alpha` é o ângulo oposto ao cateto `b`, então 
+
+.. math::
+
+   \sin^2\alpha + \cos^2\alpha =\left(\dfrac{b}{a}\right)^2+\left(\dfrac{c}{a}\right)^2 =\dfrac{b^2+c^2}{a^2}=\dfrac{a^2}{a^2}=1
+   
+**********************
+Praticando o assunto 
+**********************
+
+
+.. _ativ-medidas-da-peca:
+
+Atividade: calculando medidas de uma peça 
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Observar uma figura e encontrar, na teoria, as ferramentas adequadas para executar os cálculos.
+   * Praticar sua intuição.
+
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno complete o desenho construindo os triângulos adequados.
+   * Nos cálculos o aluno deve utilizar a calculadora.
+   * O aluno precisará das razões trigonométricas de `50^{\circ}` e das de `25^{\circ}`. As de `50^{\circ}`  estão no texto. As de `25^{\circ}`  podem ser encontradas em uma calculadora científica, mas se não houver disponível o professor pode dizer que ele pode, nessa emergência, usar a média entre as razões de `20^{\circ}`  e `30^{\circ}`. O professor deve alertar que os valores não são exatos, mas são próximos e atendem ao objetivo da atividade.
+
+A figura abaixo mostra o corte transversal uma peça de concreto usada na engenharia para conter terrenos com possibilidade de deslizamento.
+
+.. figure:: _resources/TrigFig-14.png
+
+Quais são as medidas de `AB` e `BC` em número inteiro de centímetros?
+
+
+.. admonition:: Resposta 
+
+   BC = 126cm e AB = 190cm
+
+.. _ativ-triang-nao-ret:
+
+Atividade: resolvendo um triângulo não retângulo 
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Construir uma figura de acordo com os dados do enunciado e encontrar, na teoria, as ferramentas adequadas para calcular os elementos solicitados.
+   * Praticar sua intuição.
+
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+
+   * Espera-se que o aluno complete o desenho construindo a altura relativa ao lado BC. Dessa forma ele poderá utilizar a trigonometria nos dois triângulos retângulos.
+   * Nos cálculos o aluno deve utilizar a calculadora.
+
+No triângulo `ABC` os ângulos `B` e `C` medem, respectivamente `24^{\circ}` e `43^{\circ}`, e o lado AB mede 60cm.
+
+Dados:
+
+.. table:: 
+
+   +--------------+--------+--------+----------+
+   |              | Seno   | Coseno | Tangente |
+   +--------------+--------+--------+----------+
+   | `24^{\circ}` | 0,4067 | 0,9135 | 0,4452   |
+   +--------------+--------+--------+----------+
+   | `43^{\circ}` | 0,6820 | 0,7314 | 0,9325   |
+   +--------------+--------+--------+----------+
+
+
+Quais são as medidas dos lados `AC` e `BC` com aproximações de 1 decimal?
+
+
+.. admonition:: Resposta 
+
+   `AC` = 35,8cm e `BC` = 81,0cm
+
+.. _ativ-pao-de-acucar:
+
+Atividade: qual é a altura do Pão de Açúcar?
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Construir uma figura de acordo com a proposta da atividade, planejar a solução e encontrar, na teoria, as ferramentas adequadas para calcular a medida inacessível.
+   * Praticar sua intuição.
+ 
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno faça o desenho descrevendo a situação descrita e colocando os dados apresentados. 
+   * Espera-se que o aluno desenhe triângulos retângulos a partir da altura inacessível.
+   * Nos cálculos o aluno deve utilizar a calculadora.
+
+A figura a seguir mostra o morro do Pão de Açúcar no Rio de Janeiro. O observador que tirou essa foto está em um lugar bem plano conhecido como o Aterro do Flamengo e dispunha de um teodolito (para medir ângulos) e uma trena (para medir distâncias). Seu objetivo era calcular a altura do Pão de Açúcar, uma medida que não pode ser feita diretamente.
+
+Este é um exemplo do que chamamos de “medida inacessível”.
+
+.. figure:: _resources/TrigFig-15.png
+
+As medidas que vamos descrever a seguir são reais. Acompanhe o procedimento.
+
+No lugar onde o observador tirou a foto acima (ponto A) o teodolito foi posicionado e o ângulo da linha de visada para o alto do Pão de Açúcar foi de 11o. O observador então afastou-se 460m do ponto A mantendo-se na mesma direção determinada pelo alto do Pão de Açúcar e o ponto A. Essa distância foi medida com uma trena. Nesse novo ponto de observação (ponto B) o ângulo da linha de visada para o alto do Pão de Açúcar foi de `9^\circ`. Sabe-se ainda que a altura do teodolito em relação ao piso é de 1,5m.
+
+Qual é a altura do Pão de Açúcar? Dê sua resposta com um número inteiro de metros.
+
+**Roteiro para calcular a altura do Pão de Açúcar**
+
+#. Seja P o ponto mais alto do Pão de Açúcar. Faça um desenho da situação descrita no plano vertical que passa pelos pontos P, A e B. Desenhe a altura PC desde P até a reta AB. O segmento PC passa por dentro do morro e é, portanto, inacessível.
+#. A distância AC também não é acessível. Ponha uma letra para ela.
+#. Observe os dados e o que se deseja calcular e verifique qual é a razão trigonométrica mais adequada.
+#. Obtenha no seu celular as razões trigonométricas que você necessita. Utilize 5 decimais de precisão.
+#. Faça os cálculos utilizando a calculadora. Aproxime a altura que você encontrar para o número inteiro mais próximo. Essa altura está referida ao plano horizontal que passa pela lente do teodolito. Acrescente mais um metro e a altura estará referida ao chão. Como é comum, as alturas das montanhas são referidas ao nível do mar. Acrescente então mais 1,5m que é a altura do teodolito em relação ao piso e mais 1 ou 2 metros, pois como se vê na foto inicial, o Aterro do Flamengo está bem pouco acima no nivel do mar.
+
+Faça os cálculos com cuidado. Em seguida, consulte o Google para ver o que ele diz sobre a altura do Pão de Açúcar e verifique se a sua matemática e os seus cálculos deram uma resposta adequada.
+
+
+.. admonition:: Resposta 
+
+   396m
+   
+   
+.. _ativ-piramide:
+
+Atividade: calculando elementos de uma pirâmide
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+  
+   * Visualizar triângulos retângulos em pirâmides
+   * Aplicar as relações desenvolvidas no capítulo em objeto espacial
+
+   
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno identifique os triângulos adequados à resolução da atividade.
+   * Ainda não há teoria de geometria espacial. Portanto, o professor deve dizer que, na pirâmide, a altura OE é perpendicular ao plano da base da pirâmide e que por isso, é perpendicular a qualquer reta do plano da base que passe por O.
+   * Nos cálculos o aluno deve utilizar a calculadora. O professor deve ajudar na sua utilização.
+    
+Uma pirâmide tem base quadrada de lado de comprimento 2 e arestas laterais todas de comprimento 3. 
+
+Observe o desenho a seguir
+
+.. figure:: _resources/TrigFig-16.png
+
+O ponto `O` é o centro do quadrado `ABCD` e o segmento `OE` é perpendicular ao plano do quadrado. Por isso, `OE` é perpendicular a qualquer reta contida no plano do quadrado e que passa por `O`.
+
+#. Quanto mede a altura da pirâmide?
+#. Qual é a área do triângulo `EBC`?
+#. Com a calculadora encontre um valor aproximado em graus para o ângulo que uma aresta lateral forma com a base da pirâmide.
+
+
+.. admonition:: Resposta 
+
+   #. `\sqrt{7}`
+   #. `2\sqrt{2}`
+   #. `62^\circ`
+
+
 
 
 
