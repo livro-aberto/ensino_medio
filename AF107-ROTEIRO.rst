@@ -27,7 +27,7 @@ ROTEIRO: FUNÇÃO AFIM
 
    .. admonition:: Objetivos gerais
 
-      Levar o estudante a ...
+      Levar o estudante a reconhecer função afim e suas representações algébrica e gráfica, bem como sua taxa de variação. Relacionar função afim em um domínio discreto com progressões aritméticas e aplicar os conceitos aprendidos na resolução de problemas.
 
    .. admonition:: Conteúdos abordados
 		

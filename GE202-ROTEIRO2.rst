@@ -1,5 +1,5 @@
 *************************
-ROTEIRO: APLICAÇÕES DE SEMELHANÇA
+ROTEIRO: TRIGONOMETRIA NOS TRIÂNGULOS
 *************************
 
 .. admonition:: Previsão de aulas necessárias
