@@ -78,7 +78,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
    
       O ensino de função quadrática tradicionalmente apresentado nos diversos livros didáticos baseia-se em modelagens em torno do gráfico gerado pelo polinômio de grau 2 em problemas de otimização, realcionados à máximos e mínimos. Acreditamos que essa abordagem não é tão eficaz quanto à utilização da forma canônica da função quadrática, partindo desse conceito, estimulamos o estudante a descobrir os valores de máximo e mínimo sem utilizar a representação gráfica. 
       
-      Posteriormente, provocamos o estudante a explorar as principais propriedades do gráfico da função real `f(x)=x^2`, de modo a associar à curva pretendida, sem a devida definição. Através da translação obtém-se generalização capaz de auxiliar no entendimento dos conceitos a seguir:
+      Posteriormente, provocamos o estudante a explorar as principais propriedades do gráfico da função real `f(x)=x^2`, de modo a associá-lo à curva pretendida, sem a devida definição. Através da translação obtém-se generalização capaz de auxiliar no entendimento dos conceitos a seguir:
           
       #. Associação do lugar geométrico (parábola) com a função quadrática.
       #. Problemas de otimização em diversas áreas.
