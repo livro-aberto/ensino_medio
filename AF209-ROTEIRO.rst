@@ -78,7 +78,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
    
       O ensino de função quadrática tradicionalmente apresentado nos diversos livros didáticos baseia-se em modelagens em torno do gráfico gerado pelo polinômio de grau 2 em problemas de otimização, realcionados à máximos e mínimos. Acreditamos que essa abordagem não é tão eficaz quanto à utilização da forma canônica da função quadrática, partindo desse conceito, estimulamos o estudante a descobrir os valores de máximo e mínimo sem utilizar a representação gráfica. 
       
-      Posteriormente, provocamos o estudante a explorar as principais propriedades do gráfico da função real `f(x)=x^2`, de modo a associá-lo à curva pretendida, sem a devida definição. Através da translação obtém-se generalização capaz de auxiliar no entendimento dos conceitos a seguir:
+      Posteriormente, provocamos o estudante a explorar as principais propriedades do gráfico da função `f` real dada por `f(x)=x^2`, de modo a associá-la à curva pretendida, sem a devida definição. Através da translação obtemos a generalização capaz de auxiliar no entendimento dos conceitos a seguir:
           
       #. Associação do lugar geométrico (parábola) com a função quadrática.
       #. Problemas de otimização em diversas áreas.
@@ -146,7 +146,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      #. Assumindo a base do retângulo como `x` e sua área como `A(x)`, exiba uma expressão que relacione a área deste retângulo em função de `x`.
      #. Verifique se a relação encontrada é dada por `A(x)=-(x^2-6x)`, caso contrário refaça o item anterior.
      #. Obserque que a relação apresentada no item anterior, possui dentro do parênteses um binômio que pode ser parte de um trinômio quadrado perfeito, qual seria o terceiro termo que faria o binômio se trasnformar num trinômio quadrado perfeito?
-     #. Agora repita a relação: `A(x)=-(x^2-6x +___-___  )` acrescentando e retirando o número encontrado no item anterior.
+     #. Agora repita a relação: `A(x)=-(x^2-6x + ?  - ?  )` acrescentando e retirando o número encontrado no item anterior.
      #. Ao fatorar a relação do item anterior podemos recair na forma:`A(x) = a(x-p)^2+q`, quais os valores de `a`, `p` e `q`, que foram encontrados neste processo de fatoração?
      #. Levando em consideração a forma apresentada no item anterior, para qual valor de `x` a área do retângulo será máxima?
      #. Qual a área máxima do Retângulo?
@@ -172,18 +172,17 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      
      Dada a função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`.
      
-     #. Calcule os valores de `f(3)` e `f(-3)`. Depois calcule os valores de `f(\sqrt{2})` e  `f(-\sqrt{2})`.
+     #. Calcule os valores de `f(3)` e `f(-3)`. Depois calcule os valores de `f(\frac{1}{2})` e `f(-\frac{1}{2})`, e também de `f(\sqrt{2})` e  `f(-\sqrt{2})`.
      #. Podemos afirmar que para todo `x\in\mathbb{R}`, `f(x)=f(-x)`?
      #. Podemos afirmar que para todo `x\in\mathbb{R}`, `f(x)\geq0`?
      #. Quais dos gráficos a seguir atendem as condições apresentadas nos dois itens anteriores a esse?
-      
-     
+          
      .. _fig-coloque-aqui-o-nome:funcoes_amorim.jpeg 
 
      .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=funcoes_amorim.jpeg
         :width: 200pt
         :align: center
-
+        
      #. Podemos afirmar que a taxa de variação da função `f` é sempre constante, assim como na função afim?
      #. Qual dos gráficos escolhidos atende a condição do item anterior?
 
@@ -195,7 +194,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      #. a dedução de que dada a função `f` da atividade 2, `f(x)\geq0` e `f(x)=f(-x)`.
      #. uma associação de `f` ao gráfico de `f_{5}(x)`.
      #. a simetria do gráfico em relação ao eixo ´y´ utilizando o fato de `f(x)=f(-x)`.
-     #. as diferenças entre os valores das imagens num certo domínio discreto gera uma Progressão Aritmética crescente.
+     #. as diferenças entre os valores das imagens num certo domínio discreto, como por exemplo `\mathbb{N}`, gera uma Progressão Aritmética crescente.
      
      
      **Explorando 3** *Atividade 3:*  **Translação na forma canônica** 
@@ -280,7 +279,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
          
      *Atividade:* **Movimento Uniformemente Variado**
      
-     Utilizando os valores obtidos pela mediçao da situação-problema, solicitaremos ao aluno que ele perceba que a diferença entre os deslocamentos (descobertos pelo produto dos valores apresentados) forma uma progressão aritmética crescente, o que garante que o gráfico espaço x tempo é uma parábola.
+     Utilizando os valores obtidos pela mediçao da situação-problema, solicitaremos ao aluno que ele perceba que a diferença entre os deslocamentos forma uma progressão aritmética crescente, o que garante que o gráfico espaço x tempo é uma parábola.
      
      *Explorando* 
      
@@ -323,6 +322,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
         :align: center
         
         
+        
      .. _fig-coloque-aqui-o-nome:lancamento_obliquo.jpeg
 
      .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=lancamento_obliquo.jpeg
@@ -330,25 +330,17 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
         :align: center
 
   
-                 
-           
-     **Mais atividades que envolvam**
-     
-     * Forma fatorada e a intersecção com o eixos
-     * 
-            
-     
-    
-      
-      **Aprofundamento**
+   
+   
+     **Aprofundamento**
        
-      **P.A. de Segunda Ordem**
+     **P.A. de Segunda Ordem**
       
       .. _fig-coloque-aqui-o-nome:numeros_poligonais.jpg
 
       .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=numeros_poligonais.jpg
-      :width: 200pt
-      :align: center
+        :width: 200pt
+        :align: center
 
        
       **Parábola por Dobraduras e suas propriedades**
@@ -393,7 +385,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
   
    .. admonition:: Referências Bibliográficas
           
-      .. [Alexandre-2009] Alexandre, Patrícia P; Santos,Márcia Hellen S Mendes. Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática. I Simpósio Nacional de Ensino de Ciência e Tecnologia – 2009 ISBN: 978-85-7014-048-7.
+      .. [Alexandre-2009] Alexandre, Patrícia P; Santos,Márcia Hellen S Mendes. Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática. I Simpósio Nacional de Ensino de Ciência e Tecnologia – 2009 
       
       .. [Batschelet-1978] Batschelet, Edward. Introdução à Matemática para Biocientistas /E.Batschelet; tradução de Vera Maria Abud Pacífico da Silva e Junia Maria Penteado de Araújo Quitete - Rio de Janeiro: Interciência, 1978.
       
@@ -407,7 +399,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
       
       .. [Parent-2015] Parent, Jennifer Suzanne Stokes, "Students' Understanding Of Quadratic Functions: Learning From Students' Voices" (2015).Vermont University - Graduate College Dissertations and Theses. Paper 376.
       
-      .. [Santos-2009] Santos, Angela R. Construções Concretas e Geometria Dinâmica: Abordagens Interligadas para o estudo de Cônicas - São Carlos, SP: SBMAC, 2009, 82 p., 20.5cm - (Notas em Matemática Aplicada; v.44) - ISSN 2175-3385.
+      .. [Santos-2009] Santos, Angela R. Construções Concretas e Geometria Dinâmica: Abordagens Interligadas para o estudo de Cônicas - São Carlos, SP: SBMAC, 2009, 82 p., 20.5cm - (Notas em Matemática Aplicada; v.44).
       
       .. [Silva-2013] Silva, Ramon de Abreu. Funções Quadráticas e suas Aplicações no Ensino Médio, TCC PROFMAT-IMPA.
       
