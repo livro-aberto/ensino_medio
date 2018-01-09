@@ -238,7 +238,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      
      **Praticando 3.3**
           
-     Cada um dos gráficos a seguir representam uma função `f:\mathbb{R}\to\mathbb{R}`. Exiba a forma canônica e polinomial da `f(x)` de cada um deles.
+     Cada um dos gráficos a seguir representa uma função `f:\mathbb{R}\to\mathbb{R}`. Exiba a forma canônica e polinomial em cada caso.
      
      .. _fig-coloque-aqui-o-nome:graficos_praticando_33.jpeg 
 
@@ -258,7 +258,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      
      **Organizando ideias 4** 
      
-     Neste momento faremos uma discussão sobre os pontos que a parábola intersecta os eixos, além de relacionar tanto os zeros da função quanto os coeficientes da forma polinomial ao gráfico da função. Além de discutir o sinal do discriminante (`\Delta`) nessa discussão.
+     Neste momento faremos uma discussão sobre os pontos em que a parábola intersecta os eixos, além de relacionar os zeros da função aos coeficientes na forma polinomial, assim como o sinal do discriminante (`\Delta`).
      
      
      **Outras Atividades**
@@ -272,13 +272,13 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      #. Represente por `x` a redução em reais no preço de cada caixa de sorvete. Apresente o preço de cada caixa em função de x. 
      #. Utilizando a mesma representação para `x` do item anterior apresente a quantidade de caixas vendidas em função de `x`.
      #. Ao denominarmos a receita de João por `R(x)` e ainda utilizando a mesma representação para `x` dos itens anteriores, apresente a relação entre `R(x)` e `x`.
-     #. Verifique se ao desenvolver algebricamente a relação acima você encontra como resultado a relação: `R(x)=-10x^2 + 200x + 80000`, caso a resposta seja negativa, refaça os itens anteriores novamente, caso necessite peça ajuda ao seu professor.
+     #. Verifique se ao desenvolver algebricamente a relação acima você encontra como resultado a relação: `R(x)=-10x^2 + 200x + 80000`. Caso a resposta seja negativa, refaça os itens anteriores novamente, solicitando auxílio ao seu professor se necessário.
      #. Passe a função quadrática do item anterior que está na forma polinomial para a forma canônica, utilizando os processos de fatoração estudados anteriormente.  
      #. Qual seria a receita máxima que João conseguiria nas condições apresentadas?
      #. Quanto João deveria cobrar pela caixa para que sua receita fosse máxima?
       
          
-     *Atividade:* **Movimento Uniformemente Variados**
+     *Atividade:* **Movimento Uniformemente Variado**
      
      Utilizando os valores obtidos pela mediçao da situação-problema, solicitaremos ao aluno que ele perceba que a diferença entre os deslocamentos (descobertos pelo produto dos valores apresentados) forma uma progressão aritmética crescente, o que garante que o gráfico espaço x tempo é uma parábola.
      
