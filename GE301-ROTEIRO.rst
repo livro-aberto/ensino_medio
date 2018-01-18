@@ -277,7 +277,7 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
          :align: center
       
       
-      .. admonition:: Estratégia pedagógica
+   .. admonition:: Estratégia pedagógica
    
       * Concreto `\rightarrow` Abstrato `\rightarrow` Concreto: iniciar o estudo de cada tipo de projeção com um experimento concreto (estudo das sombras), pensar em um modelo matemático que represente este experimento, estudar as propriedades deste modelo e, de posse deste conhecimento, fazer previsões para o modelo concreto.
       
