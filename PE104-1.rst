@@ -78,7 +78,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das dua
    
    (c) Com o acréscimo de 1 ponto a cada média, a média maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a média de cada um, a média maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde au aumento de 20% na média de cada um e, o segundo, ao acréscimo de 1 ponto na média de cada um.
    
-   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,9. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2S}{35}=\frac{1,2S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,9=7,08`, em que `S=207,5`.
+   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,9. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,9=7,08`, em que `S=207,5`.
    
    (e) Não há uma resposta certa para este item. Se cada aluno olhar o seu ponto de vista particular, para alguns será melhor ganhar um ponto e para outros será melhor ter um aumento de 20% sobre a nota. Mais especificamente, para quem tiver obtido nota 5,0 será indiferente; para quem tiver obtido nota inferior a 5,0 será melhor ganhar um ponto e, para os restantes, será melhor o acréscimo de 20% sobre a nota.
    
@@ -105,11 +105,138 @@ A maratona de Nova Iorque...
 .. admonition:: Resposta 
 
    (respostas da atividade) 
+
+*****************************************
+Organizando as ideias: Medidas de posição
+*****************************************
+
+Dado um conjunto de dados quantitativos, usamos o histograma como uma ferramenta gráfica para tentar visualizar alguma estrutura nestes dados. Definiremos agora algumas medidas que buscam de alguma forma resumir a informação do conjunto. Vamos começar pela média aritmética. 
+
+Para definir várias das medidas a serem trabalhadas neste capítulo vamos adotar a seguinte notação.
+
+Sejam `x_1,x_2, \cdots, x_n` os `n` valores observados de uma variável quantitativa tal que 
+
+`x_1` é o primeiro valor observado; `x_2` é o segundo valor observado; e, em geral,
+
+`x_i` é o `i`-ésimo valor observado, `i=1,2,\cdots,n`.
+
+A letra maiúscula sigma `\left (\Sigma\right )` é usada para denotar somatório, simplificando algumas fórmulas. Por exemplo,  `\displaystyle{\sum^n_{i=1}} x_i` é uma representação de `x_1+x_2+\cdots +x_n`.
+
+Os valores do conjunto não estão necessariamente ordenados do menor para o maior: 
+
+`x_1` correponde ao primeiro valor observado no conjunto e não ao menor deles. Portanto, introduziremos também uma notação para representar os dados ordenados. 
+
+Sejam `x_{(1)}` o menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; `x_{(2)}`, o segundo menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; e assim sucessivamente até
+
+`x_{(n)}`, o maior valor do conjunto `\{ x_1,x_2,...,x_n\}`. 
+
+
+Desse modo temos que 
+
+`x_{(1)}\leq x_{(2)}\leq \cdots\leq x_{(n)}` são os valores ordenados do conjunto `\{ x_1,x_2,...,x_n\}`.
+
+
+.. _sub-media:
+
+------
+Média
+------
+
+
+A :index:`média<média>` aritmética é definida por `\textsf{média}=\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\displaystyle{\sum^n_{i=1}} x_i`.
+
+Se todos os valores no conjunto fossem iguais a `c`, a média deste conjunto seria igual a `c`. Esta é justamente a ideia por trás de algumas medidas que serão definidas, chamadas muitas vezes de medidas de tendência central. A ideia é definir uma medida que de alguma forma seja representativa do conjunto de dados, clonando-os de alguma forma.
+
+Você já calculou a média dos dados das duas primeiras atividades, a saber, notas de artes e cem melhores tempos para completar a maratona de Nova Iorque em 2017 para mulheres. Identifique nos histogramas correspondentes a posição em que estas médias ficaram.
+
+.. admonition:: Observação 1 
+   
+   Como calcular a média quando os dados estão agrupados em `c` intervalos de classe? 
+   
+   Sejam `x_{m1}`, `x_{m2}`, ..., `x_{mc}` os pontos médios das `c` classes e, `n_1`, `n_2`, ..., `n_c`  as frequências absolutas das `c` classes, respectivamente. Lembre que o pnto médio de uma classe é corresponde ao ponto médio do intervalo de classe, a saber, a média aritmética dos extremos do intervalo. Neste caso a média é calculada por
+   
+   `\textsf{média}=\bar{x}=\frac{n_1\cdot x_{m1}+n_2\cdot x_{m2}+\cdots+n_c\cdot x_{mc}}{n}=f_1\cdot x_{m1}+f_2\cdot x_{m2}+\cdots +f_c\cdot x_{mc}` 
+   
+   em que `f_i=\frac{n_i}{n}`, `i=1,2,...,c` são as respectivas frequências relativas.
+   
+   Usando a notação de somatório temos que `\textsf{média}=\bar{x}=\frac{1}{n}\displaystyle{\sum^c_{i=1}}n_i\cdot x_{mi}=\displaystyle{\sum^c_{i=1}} f_i\cdot x_{mi}`
+   
+   Observe que quando os dados estão agrupados em intervalos de classes, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas das classes.
+   
+   Por exemplo, considere os dados agrupados das notas de artes, antes de qualquer tipo de bonificação. Os pontos médios das classes são 1, 3, 5 e 7 e, as frequências absolutas, 1, 5, 6 e 23, respectivamente. A média correspondente a este agrupamento, é dada então por
+   
+   `\frac{1\times 1+5\times 3+6\times 5+23\times 7}{35}=\frac{207}{35}\approx 5,9`
+   
+   Observe que para efeito da média o agrupamento dos dados não incorreu em perda, pois a média obtida é praticamente igual à média calculado considerando-se os dados brutos.
    
 
-*********************
-Organizando as ideias
-*********************
+.. admonition:: Observação 2 
+
+   A média como ponto de equilíbrio: inserir texto e exemplo.
+   
+   
+   
+-------
+Mediana
+-------
+
+A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central depois de ordenar os dados.
+
+Se o conjunto tem um número ímpar de elementos, por exemplo, 9, então a posição central será a de número 5, tal que há quatro valores antes e quatro depois. Se o conjunto tem um número par de elementos, por exemplo, 10, então há duas posições centrais, a saber as posições 5 e 6 tal que há quatro observações antes da posição 5 e quatro posições depois da posição 6. Neste caso, a mediana serão dada pela média aritmética dos dois valores centrais.
+
+Resumindo, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados, a mediana será dada por
+
+`\textsf{Mediana}=\left \{ \begin{array}{lr} 
+x_{\left (\frac{n+1}{2}\right )}, &\textsf{ se }n \textsf{ for ímpar}\\ 
+\frac{1}{2} [ x_{\left (\frac{n}{2}\right )}+x_{\left (\frac{n}{2}+1\right )} ], &\textsf{ se }n \textsf{ for par.}\end{array}\right.`
+
+Nas duas atividades iniciais podemos facilmente verificar quem são a mediana de notas de artes sem bonificação, a saber, a nota da posição 18, considerando-as em ordem crescente; e a mediana dos 100 melhores tempos para completar a maratona de Nova Iorque/2017 entre as mulheres, a saber, a média aritmética dos tempos nas posições 50 e 51, pois os dados já forma apresentados em ordem crescente.
+
+
+.. admonition:: Observação 1
+
+   Como identificar a mediana quando os dados estão agrupados em intervalos de classe?
+   
+
+
+.. admonition:: Observação 2
+
+   Média versus Mediana: comparação
+
+
+----
+Moda
+----
+
+A :index:`moda<moda>` é o valor mais frequente num conjunto de dados. 
+
+
+(Inserir exemplos, caixa para dados agrupados e caixa para comparações entre as medidas até aqui definidas.)
+
+-------
+Quartis
+-------
+
+Os :index:`quartis<quartis>` de uma distribuição de frequências ou conjunto de valores numéricos são três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
