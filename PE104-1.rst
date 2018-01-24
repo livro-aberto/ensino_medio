@@ -78,7 +78,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das dua
    
    (c) Com o acréscimo de 1 ponto a cada média, a média maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a média de cada um, a média maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde au aumento de 20% na média de cada um e, o segundo, ao acréscimo de 1 ponto na média de cada um.
    
-   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,9. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2S}{35}=\frac{1,2S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,9=7,08`, em que `S=207,5`.
+   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,9. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,9=7,08`, em que `S=207,5`.
    
    (e) Não há uma resposta certa para este item. Se cada aluno olhar o seu ponto de vista particular, para alguns será melhor ganhar um ponto e para outros será melhor ter um aumento de 20% sobre a nota. Mais especificamente, para quem tiver obtido nota 5,0 será indiferente; para quem tiver obtido nota inferior a 5,0 será melhor ganhar um ponto e, para os restantes, será melhor o acréscimo de 20% sobre a nota.
    
@@ -301,10 +301,68 @@ Cada uma destas seções que você construiu são chamadas de quartis, noção q
 
 
    
+   
+-------
+Mediana
+-------
 
-*********************
-Organizando as ideias
-*********************
+A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central depois de ordenar os dados.
+
+Se o conjunto tem um número ímpar de elementos, por exemplo, 9, então a posição central será a de número 5, tal que há quatro valores antes e quatro depois. Se o conjunto tem um número par de elementos, por exemplo, 10, então há duas posições centrais, a saber as posições 5 e 6 tal que há quatro observações antes da posição 5 e quatro posições depois da posição 6. Neste caso, a mediana serão dada pela média aritmética dos dois valores centrais.
+
+Resumindo, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados do conjunto, a mediana será dada por
+
+`\textsf{Mediana}=\left \{ \begin{array}{lr} 
+x_{\left (\frac{n+1}{2}\right )}, &\textsf{ se }n \textsf{ for ímpar}\\ 
+\frac{1}{2} [ x_{\left (\frac{n}{2}\right )}+x_{\left (\frac{n}{2}+1\right )} ], &\textsf{ se }n \textsf{ for par.}\end{array}\right.`
+
+Nas duas atividades iniciais podemos facilmente verificar quem são a mediana de notas de artes sem bonificação, a saber, a nota da posição 18, considerando-as em ordem crescente; e a mediana dos 100 melhores tempos para completar a maratona de Nova Iorque/2017 entre as mulheres, a saber, a média aritmética dos tempos nas posições 50 e 51, pois os dados já forma apresentados em ordem crescente.
+
+
+.. admonition:: Observação 1
+
+   Como identificar a mediana quando os dados estão agrupados em intervalos de classe?
+   
+
+
+.. admonition:: Observação 2
+
+   Média versus Mediana: comparação
+
+
+----
+Moda
+----
+
+A :index:`moda<moda>` é o valor mais frequente num conjunto de dados. 
+
+
+(Inserir exemplos, caixa para dados agrupados e caixa para comparações entre as medidas até aqui definidas.)
+
+-------
+Quartis
+-------
+
+Os :index:`quartis<quartis>` de uma distribuição de frequências ou conjunto de valores numéricos são três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
