@@ -35,6 +35,35 @@ Praticando
 ***************
 Para saber mais
 ***************
+Durante o decorrer deste capítulo foram apresentadas atividades cujos objetivos eram extrair, calcular, analisar e interpretar informações da distribuição de um conjunto de dados quaisquer fazendo uso das medidas de dispersão e de posição. 
+
+Acontece que somente com essas medidas, às vezes, não é possível responder a perguntas de interesse que podem surgir mediante a algum contexto acerca da distribuição dos dados. Daí, a necessidade de conhecermos outras técnicas que nos ajudará nesse sentido.
+
+Questões como, ter uma noção de posição, de assimetria, se há valores que interferem no comportamento da distribuição dos dados (pontos atípicos), ou sobre a dispersão da distribuição dos mesmos são pertinentes na área de análise exploratória dos dados, um campo da estatística. Para responder a estas questões é preciso retornar ao estudo quartis e as relações existentes entre estes, simetria e boxplot, um outro tipo de gráfico usado para variáveis quantitativas.
+
+O boxplot apresenta uma estrutura gráfica de resumo da distribuição dos dados. Nele pode ser observado um retângulo onde estão representados a mediana como uma medida de centro, os quartis como uma medida de dispersão (DQ) e os valores de máximo e mínimo que ajudam na identificação e verificação da existência de pontos atípicos. Este gráfico é extremamente útil quando se quer comparar diferentes conjuntos de dados.
+
+A síntese da distribuição dos dados no boxplot é expressa por meio de cinco números resumos a saber; mínimo, Q1, Q2, Q3 e máximo. Essas cinco medidas “resumo” observadas e traduzidas graficamente no boxplot são chamadas na área da estatística como “esquema dos cinco números”.
+
+O boxplot detecta observações atípicas do conjunto de dados, conhecidas e definidas no campo da estatística como pontosn atípicos. Essas observações merecem ser tratadas e investigadas com uma atenção especial porque elas podem ser o resultado de um erro de observação ou de arredondamento e podem influencia no comportamento dos dados.
+
+Os limites superiores e inferiores desempenham uma função importante na identificação de pontos atípicos que aparecem quando possíveis observações extrapolam esses limites no boxplot.
+
+
+Observe a figura a seguir do desenho explicativo do boxplot:
+
+Etapas para construção do boxplot:
+.# Ordenar os dados em ordem crescente.
+2) Calcular q1, q2 (mediana) e q3. 
+3) Encontrar a distância interquartílica (dq)
+4) Calcular o limite superior : LS = Q3 + (1,5) DQ e o limite inferior: Q1 – (1,5) DQ ou
+5) As observações que estiverem acima do limite superior ou abaixo do limite inferior serão chamadas de pontos atípicos e representas por asteriscos. Por tanto, esta etapa consiste em verificar se existe ou não valores atípicos.
+ 
+É importante dizer que o gráfico do boxplot pode ser desenhado tanto na posição vertical quanto na posição horizontal.  A posição relativas de Q1, Q2, Q3 dão a ideia de assimetria da distribuição. Além disso, observa-se que o retângulo do boxplot corresponde aos 50% valores centrais das observações, ou seja, metade dos dados estão dentro da caixa (retângulo) e a outra metade do lado de fora.
+Podemos notar que nem sempre o valor máximo ou mínimo será aquele correspondente as hastes do gráfico, mas pode ser um valor que não faz parte do comportamento esperado do grupo em estudo, ou seja, um outlier.
+
+
+
 
 .. admonition:: Para o professor
 
