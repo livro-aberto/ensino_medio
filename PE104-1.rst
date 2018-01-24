@@ -198,32 +198,32 @@ A continuação analisaremos os tempos de corrida das 100 melhores atletas na ca
   +----+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 
 
-1. Cria o histograma dos dados e observa ele. Utiliza a tabela embaixo e coloca as colunas no sistema de coordenadas proporcionado.
+1. Construa um histograma destes dados, completando a tabela a seguir, que indica os intervalos de classe. Estude as caractertísticas do histograma construído. 
 
-   .. table:: Guia para o cálculo de frequências do histograma
+   .. table:: Guia para a contagem de frequências dos intervalos 
 
      +-------------------+------------+
      | Intervalo         | Frequência |
      +-------------------+------------+
-     | 2.4481 a 2.51187  |            |
+     | [2,4481 ; 2,5119[ |            |
      +-------------------+------------+
-     | 2.51187 a 2.57564 |            |
+     | [2,5119 ; 2,5756[ |            |
      +-------------------+------------+
-     | 2.57564 a 2.63941 |            |
+     | [2,5756 ; 2,6394[ |            |
      +-------------------+------------+
-     | 2.63941 a 2.70318 |            |
+     | [2,6394 ; 2,7032[ |            |
      +-------------------+------------+
-     | 2.70318 a 2.76695 |            |
+     | [2,7032 ; 2,7669[ |            |
      +-------------------+------------+
-     | 2.76695 a 2.83072 |            |
+     | [2,7669 ; 2,8307[ |            |
      +-------------------+------------+
-     | 2.83072 a 2.89449 |            |
+     | [2,8307 ; 2,8945[ |            |
      +-------------------+------------+
-     | 2.89449 a 2.95826 |            |
+     | [2,8945 ; 2,9583[ |            |
      +-------------------+------------+
-     | 2.95826 a 3.02203 |            |
+     | [2,9583 ; 3,0220[ |            |
      +-------------------+------------+
-     | 3.02203 a 3.0858  |            |
+     | [3,0220 ; 3,0858[ |            |
      +-------------------+------------+
 
 
@@ -236,14 +236,26 @@ A continuação analisaremos os tempos de corrida das 100 melhores atletas na ca
       Eixos para a criação do histograma
 
 
-2. Calcula o tempo médio das corredoras (Soma: 286.9784). Localiza este ponto no eixo do histograma. Em que lugar ficaria uma corredora com tempo médio na carreira?
+2. Calcule o tempo médio dos 100 melhores tempos das corredoras (Soma: 286,9784). Localize este ponto no eixo horizontal do histograma. Em que posição ficaria uma corredora cujo tempo no qual completou a maratona é igual ao tempo médio calculado neste item?
 
-3. Traça uma linha vertical no histograma no tempo que separa os primeiros 25 lugares, no tempo que separa os primeiros 50 (mediana) e no tempo que separa os últimos 25 lugares. Observa a densidade (massa) acumulada pelo histograma entre estas linhas e comenta.
+3. Trace linhas verticais no histograma no tempo que separa os primeiros 25 lugares, no tempo que separa os primeiros 50 e no tempo que separa os últimos 25 lugares. As marcações dos tempos de posições 25, 50 e 75 neste conjunto de 100 observações são chamadas de quartis da distribuição, este conceito será formalizado adiante.
 
-   Coloca uma marcação onde se localiza a média no eixo horizontal do histograma, coincide com alguma das outras marcas? Observa a diferença entre a média e a mediana, a quê crees que se deve este comportamento?
+4. Considerando as marcações realizadas no item anterior, determine as medidas das áreas no histograma correspondentes aos seguintes intervalos
+
+   1. posição 1 até a posição 25;
+   2. posição 25 até a posição 50;
+   3. posição 50 até a posição 75;
+   4. posição 75 até a posição 100; 
+
+   e compare-as.
+   
+5. Calcule os comprimentos dos intervalos de tempo considerados no item anterior e compare-os.
+
+6. Marque o ponto onde se localiza a média no eixo horizontal do histograma. Este ponto coincide com alguma das outras marcas? 
+
+7. Observe a diferença entre a média e o tempo da posição 50. Como você poderia explicar por que são diferentes? 
 
 
-Cada uma destas seções que você construiu são chamadas de quartis, noção que será formalizada mais adiante.
 
 
 .. admonition:: Resposta 

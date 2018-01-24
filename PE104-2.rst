@@ -13,7 +13,7 @@ Atividade: Estratégia de Investimento
 
  **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
 
- **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus histogramas revelam formas distintas. Seu objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+ **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
  
 .. texto introdutório explicativo da bolsa de valores
 
@@ -65,15 +65,150 @@ Suponha que você tenha a oportunidade de comprar ações de uma de duas  Compan
 
 .. admonition:: Resposta 
 
-   texto
+ 1. Dado que são 10 observações em cada um dos conjuntos e que as somas das 10, resultam em 615, segue que a média das cotações na companhia `A` é 61,5 que também é a média das cotações na companhia `B`.
+   
+ 2. Para obter as medianas é necessário antes ordenar os valores. Na tabela a seguir os valores das cotações foram ordenados para cada companhia.
+   
+    .. table:: Cotação das ações das empresas
+
+     +-----+-----+
+     | `A` | `B` |
+     +-----+-----+
+     | 56  | 33  |
+     +-----+-----+
+     | 56  | 42  |
+     +-----+-----+
+     | 57  | 48  |
+     +-----+-----+
+     | 58  | 52  |
+     +-----+-----+
+     | 61  | 57  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 67  | 77  |
+     +-----+-----+
+     | 67  | 82  |
+     +-----+-----+
+     | 67  | 90  |
+     +-----+-----+
+  
+    Como são 10 observações em cada conjunto e 10 é um número par, temos que a mediana será dada pela média das duas posições centrais, a saber, posições 5 e 6: `\textsf{Mediana}=\frac{x_{(5)}+x_{(6)}}{2}`.
  
+    Na companhia `A` teremos  `\textsf{Mediana}=\frac{61+63}{2}=62` e, na companhia `B`, `\textsf{Mediana}=\frac{57+67}{2}=62`.
  
+ 3. Na companhia `A` o valor mais frequente foi 67, ocorrendo 3 vezes. Na companhia `B`, o valor mais frequente foi 67, ocorrendo duas vezes. Logo, tanto em `A` como em `B` o valor da moda foi 67.
  
+ 4. Não, pois tais medidas são idênticas nas duas companhias.
  
+ 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` flutuam mais do que as da companhia `A` e, portanto, como menor risco envolve menos flutuação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a flutuação das cotações é menor.
  
-*********************
-Organizando as ideias
-*********************
+*******************************************
+Organizando as ideias: Medidas de dispersão
+*******************************************
+
+Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
+
+
+.. _sub-amplitudes:
+
+----------------------------------------------
+Amplitude amostral e amplitude interquartílica
+----------------------------------------------
+
+Entre as medidas de dispersão mais simples, define-se a :index:`amplitude amostral` (R) como a diferença entre o maior valor e menor valor observados. Usando a notação apresentada anteriormente, dado um conjunto com `n` observações, temos
+
+
+.. math::
+
+  \textsf{Amplitude amostral}=\textsf{R}= \underbrace{x_{(n)}}_{\textsf{maior valor do conjunto}}-\underbrace{x_{(1)}}_{\textsf{menor valor do conjunto}}
+
+Uma desvantagem desta medida é que ela considera apenas os dois extremos do conjunto. Ainda é possível que dois conjuntos, tendo mesmas média, moda e mediana, apresentem a mesma amplitude e, no entanto, eles tenham comportamentos diferentes. Considere o exemplo a seguir, supondo os seguintes conjuntos de notas de Matemática de duas turmas de reforço, cada uma com 10 alunos.
+
+`\textsf{Notas da turma A}=\{ 1,1,1,5,5,5,5,9,9,9\}` e `\textsf{Notas da turma B}=\{1,3,3,5,5,5,5,7,7,9\}`
+
+Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude amostral iguais. No entanto, comparando os diagramas de pontos correspondentes a cada um deles, ilustrados na figura a seguir, é possível perceber diferenças quanto ao comportamento das notas nos dois conjuntos. 
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda.. figura
+
+Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a amplitude interquartílica (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
+
+
+.. math::
+
+   \textsf{DQ}=\textsf{Q}3-\textsf{Q}1
+   
+No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na terceira posição e, o terceiro quartil, como a nota na sétima posição. Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, DQ=7-3=4, indicando que na turma `B`, considerando a amplitude interquartílica, temos menor dispersão, comaparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura XX.
+
+De fato, a amplitude interquartílica também apresenta a desvantagem de somente considerar os dois quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
+
+.. _sub-desviosdamedia:
+
+----------------
+Desvios da Média
+----------------
+
+Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
+
+.. math::
+
+   d_i=x_i-\bar{x}, \quad i=1,2,\cdots n
+   
+Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
+
+Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda
+
+Em símbolos temos esta propriedade dos desvios da média pode ser traduzida em
+
+`\displaystyle{\sum^n_{i=1}} d_i=\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=0`, qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`, pois
+
+`\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
+
+Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação de modo a usar os desvios da média para definir uma medida de dispersão é eliminar o sinal negativo dos desvios da média. 
+
+.. _sub-desviosmedioabsoluto:
+
+---------------------
+Desvio Médio Absoluto
+---------------------
+
+
+.. _sub-varianciaedesviopadrao:
+
+-------------------------
+Variância e Desvio Padrão
+-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
