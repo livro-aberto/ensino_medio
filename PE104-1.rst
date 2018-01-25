@@ -109,7 +109,7 @@ Uma das mais famosas é a Maratona da Cidade de *Nova York*, nos Estados Unidos.
    Corredores participando da Maratona de *Nova York*, `Wikipedia <https://commons.wikimedia.org/wiki/File:New_York_marathon_Verrazano_bridge.jpg>`_
 
 
-Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados por separado. Qual das categorias você acredita que terá os melhores resultados na carreira? Em quanto tempo você acredita que uma pessoa percorre os 42 km da carreira? Você acredita que seja mais rápido correndo, em cadeira de rodas ou em triciclo de mão?
+Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados por separado. Qual das categorias você acha que terá os melhores resultados na carreira? Em quanto tempo você acha que uma pessoa percorre os 42 km da carreira? Você acha é mais rápido correr em cadeira de rodas ou em triciclo de mão?
 
 .. _handcycle:
 
@@ -120,7 +120,7 @@ Os resultados do evento são divididos nas categorias de homens e mulheres, alé
    Tricilo de mão (*handcycle*), `Wikipedia <https://commons.wikimedia.org/wiki/File%3AHandcycle_in_Richmond_Park_-_geograph.org.uk_-_1315077.jpg>`_
 
 
-A continuação analisaremos os tempos de corrida das 100 melhores atletas na categoria de Mulheres da Maratona de Nova York do ano 2017, dados disponíveis no `site oficial da competição <http://results.nyrr.org/event/M2017/finishers>`_.
+A seguir analisaremos os tempos de corrida das 100 melhores atletas na categoria de Mulheres da Maratona de Nova York do ano 2017, dados disponíveis no `site oficial da competição <http://results.nyrr.org/event/M2017/finishers>`_.
 
 .. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres
 
@@ -153,7 +153,7 @@ A continuação analisaremos os tempos de corrida das 100 melhores atletas na ca
 
    * Como você calcularia a média de valores em horas, minutos e segundos como os da tabela?
    
-   * Como você pode criar um histograma com estes dados, como você definiria os limites dos intervalos? **(fazer referência a atividade de histograma)**
+   * Como você construiria um histograma com estes dados, como você definiria os limites dos intervalos? **(fazer referência a atividade de histograma)**
    
    * Que tempo precisaria fazer uma corredora  para ficar entre as 25 primeiras? E entre as 50 primeiras?
 
@@ -162,13 +162,13 @@ A continuação analisaremos os tempos de corrida das 100 melhores atletas na ca
 
   É importante trazer a discussão sobre as perguntas na caixa **Para refletir** à sala de aula com o intuito de que os estudantes percebam a necessidade de tratar previamente dados de determinada natureza antes de usá-los numericamente, como é o caso do tempo.
    
-  A continuação se inclui a tabela com a respectiva conversão a horas em números decimais para a simplicidade dos cálculos na atividade, mas é fundamental deducir junto aos estudantes o método para calcular a conversão.
+  Na sequência se inclui a tabela com a respectiva conversão paraa horas em números decimais de modo a simplificar os cálculos na atividade, mas é fundamental deduzir com os estudantes como calcular a conversão.
   
-  No caso, a fórmula utilizada para calcular o resultado en horas com decimais (`horas_{10}`) é:
+  No caso, a fórmula utilizada para calcular o resultado en horas com decimais (`\textsf{horas}_{10}`) é:
    
   .. math::
 
-     horas_{10} = Horas + \frac{Minutos}{60} + \frac{Segundos}{60^2}
+     \textsf{horas}_{10} = \textsf{Horas} + \frac{\textsf{Minutos}}{60} + \frac{\textsf{Segundos}}{60^2}
 
 
 .. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (Horas em número decimal)
@@ -198,7 +198,7 @@ A continuação analisaremos os tempos de corrida das 100 melhores atletas na ca
   +----+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 
 
-1. Construa um histograma destes dados, completando a tabela a seguir, que indica os intervalos de classe. Estude as caractertísticas do histograma construído. 
+1. Construa um histograma destes dados, completando a tabela a seguir, que indica os intervalos de classe. Observe as caractertísticas do histograma construído. 
 
    .. table:: Guia para a contagem de frequências dos intervalos 
 
@@ -450,22 +450,22 @@ Você já calculou a média dos dados das duas primeiras atividades, a saber, no
  
  .. _fig-coloque-aqui-o-nome:
 
- .. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+ .. figure:: _resources/histogramaNotas_esquerda_1.png
     :width: 200pt
     :align: center
 
-    legenda
+    Histograma inclinado para à esquerda
     
  Se fossemos tentar equilibrar o histograma num ponto abaixo da média, considerando esta interpretação, o mesmo penderia para à direita, conforme ilustra a figura a seguir.
  
  
  .. _fig-coloque-aqui-o-nome:
 
- .. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+ .. figure:: _resources/histogramaNotas_direita.png
     :width: 200pt
     :align: center
 
-    legenda
+    Histograma inclinado para à direita
    
 
 
@@ -491,15 +491,50 @@ Resumindo, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados do conjunt
 x_{\left (\frac{n+1}{2}\right )}, &\textsf{ se }n \textsf{ for ímpar}\\ 
 \frac{1}{2} [ x_{\left (\frac{n}{2}\right )}+x_{\left (\frac{n}{2}+1\right )} ], &\textsf{ se }n \textsf{ for par.}\end{array}\right.`
 
-Nas duas atividades iniciais podemos facilmente verificar quem são a mediana de notas de artes sem bonificação, a saber, a nota da posição 18, considerando-as em ordem crescente; e a mediana dos 100 melhores tempos para completar a maratona de Nova Iorque/2017 entre as mulheres, a saber, a média aritmética dos tempos nas posições 50 e 51, pois os dados já forma apresentados em ordem crescente.
+Nas duas atividades iniciais podemos facilmente verificar quem são as medianas de notas de Artes sem bonificação, a saber, a nota da posição 18, considerando-as em ordem crescente; e a mediana dos 100 melhores tempos para completar a maratona de Nova Iorque/2017 entre as mulheres, a saber, a média aritmética dos tempos nas posições 50 e 51, pois os dados já foram apresentados em ordem crescente. Assim, a mediana das notas de Artes sem bonificação é dada por 
+
+
+.. math::
+
+   x_{(18)}=6,5, \textsf{ pois }n=35\textsf{ é ímpar, e neste caso mediana=}\underbrace{x_{\left (\frac{n+1}{2}\right )}}_{\textsf{observação na posição (n+1)/2 após ordenar os dados}}=x_{\left (\frac{36}{2}\right)}=x_{(18)}
+   
+e, a mediana dos 100 melhores tempos entre as mulheres é dada por
+ 
+.. math::
+   
+   \frac{x_{(50)}+x_{(51)}}{2}=\frac{2,9492+2,9494}{2}=2,9493 \textsf{ horas}
+   
+Observe, neste último caso, que `n` é par e igual a 100 tal que a mediana é dada por 
+
+.. math::
+
+   \frac{ \overbrace{x_{\left (\frac{n}{2}   \right )} +x_{\left (\frac{n}{2}+1\right )}}^{\textsf{observações nas posições n/2 e (n/2)+1 após ordenar os dados}}} {2}=\frac{x_{(50)}+x_{(51)}}{2}
 
 
 .. admonition:: Observação 1
 
-   Como identificar a mediana quando os dados estão agrupados em intervalos de classe?
+  Como identificar a mediana quando os dados estão agrupados em intervalos de classe?
    
-
-
+  Suponha novamente que um pai de aluno tenha tido acesso apenas ao histograma das notas de Artes, sem conhecer as notas individualmente.  Como este pai poderia calcular a mediana da turma, considerando as notas antes da bonificação? Sabemos que a posição da mediana deve ser a posição central depois de ter as notas ordenadas. Na tabela de frequências observe que os intervalos já estão ordenados, mas apenas conhecemos a quantidade de notas que ocorreram em cada intervalo e não as notas individualmente. No entanto, é fácil, a partir da tabela, identificar em que intervalo estará a mediana, bastando para isso encontrar o intervalo que compreende a nota da posição 18. Aqui, vamos introduzir o conceito de :index:`frequência absoluta acumulada` de um intervalo de classe que corresponde à soma das frequência absoluta do intervalo mais a soma acumulada das frequências absolutas  de todos os intervalos anteriores. Veja a tabela a seguir, incluindo as fre	quências acumuladas.
+   
+  +-----------+---------------------+--------------------------+--------------------------+
+  | intervalo | frequência absoluta | ponto médio do intervalo | freq. absoluta acumulada |
+  +-----------+---------------------+--------------------------+--------------------------+
+  | ]0,2]     | 1                   | 1,0                      |   1                      |
+  +-----------+---------------------+--------------------------+--------------------------+
+  | ]2,4]     | 5                   | 3,0                      |  1+5=6                   |
+  +-----------+---------------------+--------------------------+--------------------------+
+  | ]4,6]     | 6                   | 5,0                      | 6+6=12                   |
+  +-----------+---------------------+--------------------------+--------------------------+
+  | ]6,8]     | 23                  | 7,0                      |12+23=35                  |
+  +-----------+---------------------+--------------------------+--------------------------+
+    
+  Observe que a nota da posição 18 está no último intervalo, pois até o intervalo anterior, ]4,6], acumularam-se apenas 12 das 35 notas. 
+    
+  Uma forma de avaliar a mediana neste caso é tomar o ponto médio do intervalo de classe que compreende o valor da posição central. Neste caso, teríamos que a nota mediana seria 7,0, o ponto médio do intervalo de classe que contém a mediana. Comparando este valor com o valor da mediana considerando as 35 notas individuas, percebe-se que o erro de aproximação é de apenas 0,5 ponto já que vimos que a nota da posição 18 é 6,5.
+    
+  Existem outras formas de avaliar a mediana quando os dados estão agrupados e uma delas foi proposta no exercício 17 do capítulo ``A Natureza da Estatística ''.
+  
 .. admonition:: Observação 2
 
    Média versus Mediana: comparação
@@ -518,8 +553,11 @@ A :index:`moda<moda>` é o valor mais frequente num conjunto de dados.
 Quartis
 -------
 
-Os :index:`quartis<quartis>` de uma distribuição de frequências ou conjunto de valores numéricos são três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`.
-      
+Os :index:`quartis<quartis>` de uma distribuição de frequências ou conjunto de valores numéricos são três medidas, denotadas por Q1, mediana e Q3, que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`. 
+
+Observe que se agruparmos os dados nos intervalos `[x_{(1)},Q1[, [Q1,\textsf{mediana}[,[\textsf{mediana},Q3[ \textsf{ e } [Q3,x_{(n)}]`, cada um deles terá como frequência relativa 0,25.
+
+No exemplo da maratona é fácil construir tais intervalos tomando `\textsf{Q1}=x_{\left (\frac{n}{4}\right )}`
 
 **********
 Praticando
@@ -531,7 +569,7 @@ Praticando
  
    [Histograma]
 
-   Calcula a média (Soma em horas decimais: 251.1617). Calcula e tranasforma as medidas de posição calculadas para a categoria de mulheres:
+   Calcula a média (Soma em horas decimais: 251.1617). Calcula e transforma as medidas de posição calculadas para a categoria de mulheres:
 
    * Primeiro quartil (`Q1`), tempo necessário para ficar entre as primeiras 25.
    * Mediana (tempo necessário para ficar entre as primeiras 50)
