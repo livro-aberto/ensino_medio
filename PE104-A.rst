@@ -35,6 +35,48 @@ Praticando
 ***************
 Para saber mais
 ***************
+Durante o decorrer deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição de um conjunto de dados fazendo uso das medidas de posição e dispersão. Vimos que somente com o conhecimento dessas medidas nem sempre é possível tirar conclusões importantes da análise de dados, sendo assim surgindo a necessidade de apresentar outras medidas, como por exemplo, os quartis.  
+
+Uma ferramenta muito utilizada na área da estatística é o resumo dos dados em cinco medidas. Este resumo conhecido como esquema dos cinco números reflete em uma visão mais detalhada sobre o comportamento dos dados. 
+
+A estrutura gráfica de resumo dessas cinco medidas podem ser representadas e traduzidas em um gráfico alternativo para variáveis quantitativas, conhecido no campo da estatística como boxplot. 
+
+O boxplot é muito útil quando há necessidade de comparar diferentes grupos pertencentes a mesma distribuição de dados e além disso é que este gráfico detecta, caso existam, observações que distoam muito com relação as outras no conjunto de dados, conhecidas como pontos atípicos. 
+
+As medidas que compõem o esquema dos cino números são: mínimo não atípico, Q1, Q2 (mediana), Q3 e máximo não atípico.
+
+Observe a figura a seguir como um esquema explicativo do boxplot.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/boxplot_4.png
+   :width: 400pt
+   :align: center
+
+   Desenho explicativo do boxplot
+
+No desenho explicativo apresentado na figura 60 pode ser observado dentro de um retângulo a mediana como uma medida de centro, os quartis como uma medida de dispersão e os valores de mínimo e máximo não atípicos que ajudam na identificação e verificação da existência de pontos atípicos. 
+
+O retângulo do boxplot corresponde aos 50% valores centrais das observações, ou seja, metade dos dados estão dentro da caixa (retângulo) e a outra metade do lado de fora. É possível observar também uma distância interquartilica, DQ (Q3-Q1), que permite saber a respeito da dispersão dos dados. Além disso, a posição relativas de Q1, Q2, Q3 dão a ideia de simetria ou assimetria da distribuição dos dados.
+
+As observações atípicas, identificadas com asterísticos, merecem ser tratadas e investigadas porque elas podem ser o resultado de um erro de observação ou de arredondamento podendo influenciar no comportamento dos dados.
+
+As etapas que consistem para construção do boxplot são:
+
+ 1) Ordenar os dados em ordem crescente.
+
+ 2) Calcular Q1, Q2 (mediana) e Q3.
+
+ 3) Encontrar a distância interquartílica (DQ)
+
+ 4) Calcular o limite superior : LS = Q3 + (1,5) DQ e o limite inferior: Q1 – (1,5) DQ ou
+
+ 5) Verificar a existência de observações acima do máximo ou abaixo do minímo não atípico.
+ 
+ O gráfico do boxplot pode ser desenhado tanto na posição vertical quanto na posição horizontal e o valor máximo ou mínimo nem sempre será aquele correspondente as hastes do gráfico, mas pode ser um valor que não faz parte do comportamento esperado do grupo em estudo, ou seja, um ponto atípico.
+
+
+
 
 Durante o decorrer deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição de um conjunto de dados, fazendo uso das medidas de posição e dispersão. 
 
