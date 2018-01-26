@@ -36,10 +36,120 @@ Praticando
 Para saber mais
 ***************
 
+Durante o decorrer deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição de um conjunto de dados, fazendo uso das medidas de posição e dispersão. 
+
+Um gráfico alternativo ao histograma para representar variáveis quantitativas muito utilizado na Estatística, conhecido como :index:`boxplot` (gráfico caixa), usa cinco medidas, que compõem o :index:`esquema dos cinco números`, a saber,  mínimo (`x_{(1)}`), primeiro quartil (Q1), mediana, terceiro quartil (Q3) e máximo (`x_{(n)}`). 
+
+Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque do ano 2017.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda
+
+Na construção deste gráfico, que pode ter orientação tanto vertical como horizontal, o primeiro passo é desenhar um retângulo cujas bases estão alinhadas ao primeiro e ao terceiro quartis e, em seguida, traçar um segmento paralelo às bases na altura mediana. Veja na figura a seguir.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda
+
+
+Na construção do boxplot faz-se uma verificação de :index:`valores atípicos` na distribuição, isto é, valores que destoam dos demais no conjunto de dados. O critério adotado para classificar um valor como  atípico é descrito a seguir. 
+
+Valores menores do que `\textsf{Q}1-1,5\cdot \textsf{DQ}` ou maiores do que `\textsf{Q}3+1,5 \cdot \textsf{DQ}` são considerados atípicos e assinalados com um asterisco no gráfico. Veja a figura a seguir.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda
+   
+Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando no maior valor não atípico observado e menor valor não atípico observado.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/boxplot_4.png
+   :width: 400pt
+   :align: center
+
+   Ilustração do boxplot
+
+O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão dentro da caixa (retângulo) e a outra metade do lado de fora, 25% acima e 25% abaixo. Neste gráfico a distância entre quartis (DQ=Q3-Q1) é usada como medida de dispersão. Além disso, as posições dos cinco números nos permitem avaliar a simetria da distribuição. Por exemplo, se
+
+
+`\textsf{Q}3-\textsf{mediana}\approx \textsf{mediana} -\textsf{Q}1`
+   
+`\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
+   
+`\textsf{Q}1-x{(1)} \approx x_{(n)}-\textsf{Q}3`
+
+podemos concluir que a distribuição é aproximadamente simétrica, porém se alguns destes pares de intervalos apresentarem comprimentos muito diferentes, isso indica que a distribuição apresenta algum tipo de assimetria.
+
+.. incluir exemplos com os boxplots avaliando a simetria da distribuição
+
+O boxplot é muito útil quando há necessidade de comparar diferentes grupos. 
+
+
+.. _ativ-comparacaodegruposusandoboxplot:
+
+------------------------------------------------------
+Atividade: Modalidades da Maratona de Nova Iorque 2017
+------------------------------------------------------
+
+
 .. admonition:: Para o professor
 
- **Objetivos específicos** Ler, Analisar,...
+   **Objetivos específicos**
+   
+   **Observações e sugestões**
 
- **Observações e sugestões**  
+Na figura a seguir apresentam-se os boxplots dos 100 melhores tempos para as quatro modalidades da maratona de Nova Iorque no ano de 2017.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+   :width: 200pt
+   :align: center
+
+   legenda
+   
+1. Qual das modalidades apresentou maior dispersão?
+2. Qual(ais) modalidade(s) apresentaram valores atípicos?
+3. Como você avalia, em relação à simetria, cada uma das distribuições?
+4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres.
+5. Faça uma análise comparativa das distribuições das modalidades cadeira de rodas e triciclo de mão. 
+
+
+.. admonition:: Resposta 
+
+   1. x
+   
+   2. xx
+   
+   3. xxxx
+   
+   4. xxxxx
+   
+   5. xxxxx
+   
+
+
+
+
+
+
  
  
