@@ -270,12 +270,12 @@ Na tabela a seguir são apresentados os desvios da média elevados ao quadrado d
 +--------+-------+--------+
 | 10     | 30,25 | 20,25  |
 +--------+-------+--------+
-| soma   | 263,0 | 375,0  |
+| soma   | 188,5 | 3018,5 |
 +--------+-------+--------+
 
-Logo, concluímos que a variância na companhia A é variância=26,3 e, na companhia B, variância=37,5. 
+Logo, concluímos que a variância na companhia A é 18,85 e, na companhia B, 301,85, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 16 vezes  (`301,85/18,85\approx 16`) maior do que na companhia A com relação à variância.  
 
-Expandindo a soma no numerador da fórmula da variãncia é possível concluir que 
+Expandindo a soma no numerador da fórmula da variância é possível concluir que 
 
 .. math::
 
@@ -283,23 +283,50 @@ Expandindo a soma no numerador da fórmula da variãncia é possível concluir q
    
 .. explicação 
 
+No exemplo das cotações, podemos verificar que na companhia A, `\bar{x}=61,5` e `\sum^{10}_{i=1} x^2_i=38011` tal que a variância em A pode ser calculada por
 
 
+.. math::
+
+   \textsf{variância}=\frac{1}{10}\cdot (38011-10\cdot 61,5^2)=18,85
+
+e, na companhia B, 
+
+`\bar{x}=61,5` e `\sum^{10}_{i=1} x^2_i=40841` tal que a variância em B pode ser calculada por
 
 
+.. math::
+
+   \textsf{variância}=\frac{1}{10}\cdot (40841-10\cdot 61,5^2)=301,85
+   
+Vimos que o desvios médio absoluto da companhias B foi aproximadamente 4 vezes moaios do que o da companhia A. Na comparação de variâncias, a variância da companhia B foi cerca de 16 vezes maior do que a da companhia A. Esse grande aumento nessa diferença deve-se ao fato de que no cálculo da variância eleveamos os desvios da média ao quadrado tal que a unidade de medida na variância é o quadrado da unidade de medida das observações. Para retornar a escala de medida das observações basta extrair a raiz quadrada da variância, levando a definição de desvio padrão, uma medida de deispersão em torna da média, na mesma unidade das observações.
 
 
+.. math::
+
+   \textsf{desvio padrão}=\sqrt{\textsf{variância}}
+   
+No exemplo das cotações, podemos verificar que na companhia A, 
 
 
+.. math::
 
+   \textsf{desvio padrão}=\sqrt{18,85} \approx 4,34
 
+e, na companhia B, 
 
+.. math::
 
+   \textsf{desvio padrão}=\sqrt{301,85}\approx 17,37
+   
+   
+Observe que a o desvio padrão da companhia B é aproximadamente 4 vezes maior do que o da companhia A.
 
+.. caixa explicando que entre o desvio médio absoluto e o desvio padrão a escolha usual é o desvio padrão - texto do Nei 
 
+.. variância populacional e amostral, desvio padrão populacional e amostral (flávia)
 
-
-
+.. dados agrupados
 
 **********
 Praticando
@@ -314,136 +341,94 @@ Atividade: Comparação de conjuntos de dados
 
 .. admonition:: Para o professor
    
-   Nesta atividade serão coletados dados de uma mesma variável que possa ser separada por grupos, com o intuito de comparar as suas medidas de posição e dispersão. Se sugerem algumas opções, dependen do tamanho da turma e do contexto escolar, podem até ser escolhidas medições distintas para grupos pequenos de alunos.
+   **Objetivos específicos** Comparar diferentes distribuições de uma mesma variável quando separada por grupos.
    
-   Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos.
+   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Mateática, outro grupo trabalha com alturas, etc.
+   
+   Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos. Para a realização dos cálculos deve ser usado suporte tecnológico: calculadoras, aplicativos, etc.   
    
    O intuito é dar uma perspectiva para os estudantes da forma em que a estatística é utilizada na ciência para responder perguntas como:
    
-   * Uma deterinada espécie vegetal cresce melhor perto de um corpo de água ou longe do mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
+   * Uma deterinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
    
    * As meninas são mais altas que os meninos numa certa idade? Acontece o mesmo em todas as idades?
     
-   De forma ideal, pode ser formulada primeiro a pergunta e depois coletados os dados, apelando a informações encontradas num artigo científico ou numa publicação de jornal, com o intuito de tentar contrastar uyma afirmação dada num texto com dados coletados diretamente.
+   De forma ideal, pode ser formulada primeiro a pergunta, e depois coletados os dados, apelando a informações encontradas num artigo científico ou numa publicação de jornal, com o intuito de tentar contrastar uma afirmação dada num texto com dados coletados diretamente.
    
 
-Para realizar esta atividade será necessário coletar dois conjuntos de dados da mesma natureza, correspondentes a grupos distintos, os quais queremos comparar. Por ejemplo:
+Para realizar esta atividade será necessário coletar dois conjuntos de dados da mesma natureza, correspondentes a grupos distintos, os quais queremos comparar. Por exemplo:
 
-* Estaturas de: homens e mulheres, alunos de 1º e de 8º ano.
+* alturas de homens e mulheres;
 
-* Notas de graus distintos, de disciplinas distintas, de turmas distintas na mesma disciplina, de distintos professores que ministram a mesma disciplina.
+* alturas de alunos de 1º e de 9º ano do Ensino Fundamental;
 
-* Medições de produtos naturais: comprimento das folhas de vegetais comprados em distintas lojas, altura de árvores ou plantas similares em distintos locais da cidade.
+* notas de disciplinas distintas; 
 
-Entre outros que podem ser elegidos dependen da região e dos recursos disponíveis na escola.
+* notas de turmas distintas na mesma disciplina;
 
-Registra os dados coletados na seguinte tabela, mientras mais dados você colete com os criterios corretos os resultados do experimento podem sair melhor:
+* medições de produtos naturais: comprimento das folhas de vegetais (alface, rúcula, etc) comprados em lojas distintas, altura de árvores ou plantas similares locais da cidade distintos;
 
-.. table:: Registre as observações dos dados
+entre outros que podem ser escolhidos dependendo da região e dos recursos disponíveis na escola.
 
-   +-----------------------------+
-   | Variável:                   |
-   +--------------+--------------+
-   | Categoria A: | Categoria B: |
-   +==============+==============+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
-   |              |              |
-   +--------------+--------------+
+No seu caderno ou em uma planilha eletrônica, registre os dados coletados, como indicado no modelo de tabela a seguir, lembrando que quanto mais dados você coletar com os critérios definidos, os resultados do experimento terão maior chance de refletir a realidade. 
 
+.. table:: Exemplo de tabela considerando a altura como variável e duas turmas distintas como os grupos
 
-Para calcular as medidas de posição e dispersão, utilice de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter os dados.
+   +----------------------------------+
+   |Variável: `\textsf{altura em cm}` |
+   +--------------+-------------------+
+   | Turma A      | Turma B           |
+   +==============+===================+
+   |    155       |    165            |
+   +--------------+-------------------+
+   |     168      |     159           |
+   +--------------+-------------------+
+   |    `\vdots`  |  `\vdots`         |
+   +--------------+-------------------+
+
+Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter os dados.
 
 .. table:: Registre os seus resultados
 
-   +------------------------+-------------+-------------+
-   |                        | Categoria A | Categoria B |
-   +========================+=============+=============+
-   | Nome da categoria      |             |             |
-   +------------------------+-------------+-------------+
-   | Mínimo                 |             |             |
-   +------------------------+-------------+-------------+
-   | Máximo                 |             |             |
-   +------------------------+-------------+-------------+
-   | Média                  |             |             |
-   +------------------------+-------------+-------------+
-   | Q1                     |             |             |
-   +------------------------+-------------+-------------+
-   | Mediana                |             |             |
-   +------------------------+-------------+-------------+
-   | Q3                     |             |             |
-   +------------------------+-------------+-------------+
-   | Variância              |             |             |
-   +------------------------+-------------+-------------+
-   | Desvio padrão          |             |             |
-   +------------------------+-------------+-------------+
-   | Variância amostral     |             |             |
-   +------------------------+-------------+-------------+
-   | Desvio padrão amostral |             |             |
-   +------------------------+-------------+-------------+
+   +-----------------------------+-------------+-------------+
+   |                             | Grupo   A   | Grupo B     |
+   +=============================+=============+=============+
+   | Nome da categoria           |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mínimo (`x_{(1)}`)          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Máximo  (`x_{(n)}`)         |             |             |
+   +-----------------------------+-------------+-------------+
+   | Média                       |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q1                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mediana                     |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q3                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Amplitude amostral (R)      |             |             |
+   +-----------------------------+-------------+-------------+
+   |Dist. entre quartis (DQ)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio médio absoluto (DM)   |             |             |
+   +-----------------------------+-------------+-------------+
+   | Variância  (`\sigma^2`)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio padrão (`\sigma`)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Variância amostral (`s^2`)   |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio padrão amostral (`s`) |             |             |
+   +-----------------------------+-------------+-------------+
 
-Desenhe os boxplots no mesmo sistema de coordenadas e compare. Se quiser pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
+Sugere-se a construção dos histogramas para comparar os dois grupos. Você pode usar o GeoGebra para esta construção.
 
-1. Discute as suas observações com a turma. Lembre de intepretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
 
-2. Coincidem com o que você poderia ter previsto sobre estes dados? Existe conhecimento científico que suporte estas obervações? Consulte seus professores de ciências sobre suas conclusões.
+.. Se preferir,  pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
+
+1. Discuta as suas observações com a turma. Lembre-se de intepretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
+
+2. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas obervações? Consulte  professores de outras áreas sobre suas conclusões.
 
 
