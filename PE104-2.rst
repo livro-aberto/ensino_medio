@@ -134,22 +134,22 @@ Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+.. figure:: _resources/diagrama_notas.png
    :width: 200pt
    :align: center
 
-   legenda.. figura
+   Diagramas de pontos das notas
 
-Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a amplitude interquartílica (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
+Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a :index:`distância entre quartis` (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
 
 
 .. math::
 
    \textsf{DQ}=\textsf{Q}3-\textsf{Q}1
    
-No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na terceira posição e, o terceiro quartil, como a nota na sétima posição. Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, DQ=7-3=4, indicando que na turma `B`, considerando a amplitude interquartílica, temos menor dispersão, comaparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura XX.
+No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na terceira posição e, o terceiro quartil, como a nota na sétima posição. Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura 60.
 
-De fato, a amplitude interquartílica também apresenta a desvantagem de somente considerar os dois quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
+De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar os dois quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
 
 .. _sub-desviosdamedia:
 
@@ -165,16 +165,18 @@ Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `
    
 Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
 
-Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias.
+Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias na qual a linha pontilhada representa a cotação média e os segmentos em vermelho indicam o tamanho do desvio da média.
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
-   :width: 200pt
+.. figure:: _resources/desviosdamedialadoalado.png
+   :width: 300pt
    :align: center
 
-   legenda
+   Desvios da média das cotações nas companhias A e B
+   
+.. comentar a figura 
 
 Em símbolos temos esta propriedade dos desvios da média pode ser traduzida em
 
