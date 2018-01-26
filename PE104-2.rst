@@ -13,7 +13,7 @@ Atividade: Estratégia de Investimento
 
  **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
 
- **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus histogramas revelam formas distintas. Seu objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+ **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
  
 .. texto introdutório explicativo da bolsa de valores
 
@@ -65,22 +65,370 @@ Suponha que você tenha a oportunidade de comprar ações de uma de duas  Compan
 
 .. admonition:: Resposta 
 
-   texto
+ 1. Dado que são 10 observações em cada um dos conjuntos e que as somas das 10, resultam em 615, segue que a média das cotações na companhia `A` é 61,5 que também é a média das cotações na companhia `B`.
+   
+ 2. Para obter as medianas é necessário antes ordenar os valores. Na tabela a seguir os valores das cotações foram ordenados para cada companhia.
+   
+    .. table:: Cotação das ações das empresas
+
+     +-----+-----+
+     | `A` | `B` |
+     +-----+-----+
+     | 56  | 33  |
+     +-----+-----+
+     | 56  | 42  |
+     +-----+-----+
+     | 57  | 48  |
+     +-----+-----+
+     | 58  | 52  |
+     +-----+-----+
+     | 61  | 57  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 67  | 77  |
+     +-----+-----+
+     | 67  | 82  |
+     +-----+-----+
+     | 67  | 90  |
+     +-----+-----+
+  
+    Como são 10 observações em cada conjunto e 10 é um número par, temos que a mediana será dada pela média das duas posições centrais, a saber, posições 5 e 6: `\textsf{Mediana}=\frac{x_{(5)}+x_{(6)}}{2}`.
  
+    Na companhia `A` teremos  `\textsf{Mediana}=\frac{61+63}{2}=62` e, na companhia `B`, `\textsf{Mediana}=\frac{57+67}{2}=62`.
  
+ 3. Na companhia `A` o valor mais frequente foi 67, ocorrendo 3 vezes. Na companhia `B`, o valor mais frequente foi 67, ocorrendo duas vezes. Logo, tanto em `A` como em `B` o valor da moda foi 67.
  
+ 4. Não, pois tais medidas são idênticas nas duas companhias.
  
+ 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` flutuam mais do que as da companhia `A` e, portanto, como menor risco envolve menos flutuação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a flutuação das cotações é menor.
  
-*********************
-Organizando as ideias
-*********************
+*******************************************
+Organizando as ideias: Medidas de dispersão
+*******************************************
+
+Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
 
 
+.. _sub-amplitudes:
+
+----------------------------------------------
+Amplitude amostral e amplitude interquartílica
+----------------------------------------------
+
+Entre as medidas de dispersão mais simples, define-se a :index:`amplitude amostral` (R) como a diferença entre o maior valor e menor valor observados. Usando a notação apresentada anteriormente, dado um conjunto com `n` observações, temos
 
 
+.. math::
+
+  \textsf{Amplitude amostral}=\textsf{R}= \underbrace{x_{(n)}}_{\textsf{maior valor do conjunto}}-\underbrace{x_{(1)}}_{\textsf{menor valor do conjunto}}
+
+Uma desvantagem desta medida é que ela considera apenas os dois extremos do conjunto. Ainda é possível que dois conjuntos, tendo mesmas média, moda e mediana, apresentem a mesma amplitude e, no entanto, eles tenham comportamentos diferentes. Considere o exemplo a seguir, supondo os seguintes conjuntos de notas de Matemática de duas turmas de reforço, cada uma com 10 alunos.
+
+`\textsf{Notas da turma A}=\{ 1,1,1,5,5,5,5,9,9,9\}` e `\textsf{Notas da turma B}=\{1,3,3,5,5,5,5,7,7,9\}`
+
+Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude amostral iguais. No entanto, comparando os diagramas de pontos correspondentes a cada um deles, ilustrados na figura a seguir, é possível perceber diferenças quanto ao comportamento das notas nos dois conjuntos. 
 
 
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/diagrama_notas.png
+   :width: 200pt
+   :align: center
+
+   Diagramas de pontos das notas
+
+Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a :index:`distância entre quartis` (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
+
+
+.. math::
+
+   \textsf{DQ}=\textsf{Q}3-\textsf{Q}1
+   
+No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na terceira posição e, o terceiro quartil, como a nota na sétima posição. Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura 60.
+
+De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar os dois quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
+
+.. _sub-desviosdamedia:
+
+----------------
+Desvios da Média
+----------------
+
+Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
+
+.. math::
+
+   d_i=x_i-\bar{x}, \quad i=1,2,\cdots n
+   
+Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
+
+Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias na qual a linha pontilhada representa a cotação média e os segmentos em vermelho indicam o tamanho do desvio da média.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/desviosdamedialadoalado.png
+   :width: 300pt
+   :align: center
+
+   Desvios da média das cotações nas companhias A e B
+   
+O gráfico da figura 61 reforça a conclusão anterior, da atividade ``Estratégia de investimento´´ de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
+
+Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
+
+`\displaystyle{\sum^n_{i=1}} d_i=\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=0`, qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`, pois
+
+`\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
+
+Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação de modo a usar os desvios da média para definir uma medida de dispersão é eliminar o sinal negativo dos desvios da média. 
+
+.. _sub-desviosmedioabsoluto:
+
+---------------------
+Desvio Médio Absoluto
+---------------------
+
+O :index:`desvio médio absoluto` (DM) é definido como a média dos desvios da média tomados em valor absoluto. Deste modo todos tornam-se não-negativos e poderemos usar este resultado para avaliar a dispersão em torno da média.
+
+
+.. math::
+
+   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|
+   
+Na tabela a seguir são apresentados os desvios da média em valor absoluto das cotações nas companhias A e B e, a respectiva soma. 
+
++--------+------+-------+
+| semana | A    | B     |
++--------+------+-------+
+| 1      | 0,5  | 5,5   |
++--------+------+-------+
+| 2      | 5,5  | 13,5  |
++--------+------+-------+
+| 3      | 1,5  | 9,5   |
++--------+------+-------+
+| 4      | 4,5  | 20,5  |
++--------+------+-------+
+| 5      | 5,5  | 15,5  |
++--------+------+-------+
+| 6      | 1,5  | 28,5  |
++--------+------+-------+
+| 7      | 5,5  | 5,5   |
++--------+------+-------+
+| 8      | 3,5  | 19,5  |
++--------+------+-------+
+| 9      | 5,5  | 28,5  |
++--------+------+-------+
+| 10     | 5,5  | 4,5   |
++--------+------+-------+
+| soma   | 39,0 | 151,0 |
++--------+------+-------+
+
+Logo, concluímos que o desvio médio absoluto na companhia A é DM=3,9 e, na companhia B, DM=15,1, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 4 vezes  (`15,1/3,9\approx 3,9`) maior do que na companhia A com relação ao desvio médio.
+
+.. apresentar fórmula para dados agrupados e exemplo 
+
+
+.. _sub-varianciaedesviopadrao:
+
+-------------------------
+Variância e Desvio Padrão
+-------------------------
+
+Uma outra forma de eliminar o sinal negativo dos desvios da média é elevar ao quadrado cada um deles, tornando-os não-negativos. A :index:`variância` é definida como uma média dos desvios da média elevados ao quadrado. 
+
+
+.. math::
+
+   \textsf{variância} = \frac{1}{n}\cdot \sum^n_{i=1} (x_i-\bar{x})^2
+   
+Na tabela a seguir são apresentados os desvios da média elevados ao quadrado das cotações nas companhias A e B e, a respectiva soma. 
+
++--------+-------+--------+
+| semana | A     | B      |
++--------+-------+--------+
+| 1      | 0,25  | 30,25  |
++--------+-------+--------+
+| 2      | 30,25 | 182,25 |
++--------+-------+--------+
+| 3      | 2,25  | 90,25  |
++--------+-------+--------+
+| 4      | 20,25 | 420,25 |
++--------+-------+--------+
+| 5      | 30,25 | 240,25 |
++--------+-------+--------+
+| 6      | 2,25  | 812,25 |
++--------+-------+--------+
+| 7      | 30,25 | 30,25  |
++--------+-------+--------+
+| 8      | 12,25 | 380,25 |
++--------+-------+--------+
+| 9      | 30,25 | 812,25 |
++--------+-------+--------+
+| 10     | 30,25 | 20,25  |
++--------+-------+--------+
+| soma   | 188,5 | 3018,5 |
++--------+-------+--------+
+
+Logo, concluímos que a variância na companhia A é 18,85 e, na companhia B, 301,85, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 16 vezes  (`301,85/18,85\approx 16`) maior do que na companhia A com relação à variância.  
+
+Expandindo a soma no numerador da fórmula da variância é possível concluir que 
+
+.. math::
+
+   \sum^n_{i=1}(x_i-\bar{x})^2= \sum^n_{i=1} x^2_i -n\cdot \bar{x}^2
+   
+.. explicação 
+
+No exemplo das cotações, podemos verificar que na companhia A, `\bar{x}=61,5` e `\sum^{10}_{i=1} x^2_i=38011` tal que a variância em A pode ser calculada por
+
+
+.. math::
+
+   \textsf{variância}=\frac{1}{10}\cdot (38011-10\cdot 61,5^2)=18,85
+
+e, na companhia B, 
+
+`\bar{x}=61,5` e `\sum^{10}_{i=1} x^2_i=40841` tal que a variância em B pode ser calculada por
+
+
+.. math::
+
+   \textsf{variância}=\frac{1}{10}\cdot (40841-10\cdot 61,5^2)=301,85
+   
+Vimos que o desvios médio absoluto da companhias B foi aproximadamente 4 vezes moaios do que o da companhia A. Na comparação de variâncias, a variância da companhia B foi cerca de 16 vezes maior do que a da companhia A. Esse grande aumento nessa diferença deve-se ao fato de que no cálculo da variância eleveamos os desvios da média ao quadrado tal que a unidade de medida na variância é o quadrado da unidade de medida das observações. Para retornar a escala de medida das observações basta extrair a raiz quadrada da variância, levando a definição de desvio padrão, uma medida de deispersão em torna da média, na mesma unidade das observações.
+
+
+.. math::
+
+   \textsf{desvio padrão}=\sqrt{\textsf{variância}}
+   
+No exemplo das cotações, podemos verificar que na companhia A, 
+
+
+.. math::
+
+   \textsf{desvio padrão}=\sqrt{18,85} \approx 4,34
+
+e, na companhia B, 
+
+.. math::
+
+   \textsf{desvio padrão}=\sqrt{301,85}\approx 17,37
+   
+   
+Observe que a o desvio padrão da companhia B é aproximadamente 4 vezes maior do que o da companhia A.
+
+.. caixa explicando que entre o desvio médio absoluto e o desvio padrão a escolha usual é o desvio padrão - texto do Nei 
+
+.. variância populacional e amostral, desvio padrão populacional e amostral (flávia)
+
+.. dados agrupados
 
 **********
 Praticando
 **********
+
+.. _ativ-compara-categorias:
+
+-------------------------------------------
+Atividade: Comparação de conjuntos de dados
+-------------------------------------------
+
+
+.. admonition:: Para o professor
+   
+   **Objetivos específicos** Comparar diferentes distribuições de uma mesma variável quando separada por grupos.
+   
+   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Mateática, outro grupo trabalha com alturas, etc.
+   
+   Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos. Para a realização dos cálculos deve ser usado suporte tecnológico: calculadoras, aplicativos, etc.   
+   
+   O intuito é dar uma perspectiva para os estudantes da forma em que a estatística é utilizada na ciência para responder perguntas como:
+   
+   * Uma deterinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
+   
+   * As meninas são mais altas que os meninos numa certa idade? Acontece o mesmo em todas as idades?
+    
+   De forma ideal, pode ser formulada primeiro a pergunta, e depois coletados os dados, apelando a informações encontradas num artigo científico ou numa publicação de jornal, com o intuito de tentar contrastar uma afirmação dada num texto com dados coletados diretamente.
+   
+
+Para realizar esta atividade será necessário coletar dois conjuntos de dados da mesma natureza, correspondentes a grupos distintos, os quais queremos comparar. Por exemplo:
+
+* alturas de homens e mulheres;
+
+* alturas de alunos de 1º e de 9º ano do Ensino Fundamental;
+
+* notas de disciplinas distintas; 
+
+* notas de turmas distintas na mesma disciplina;
+
+* medições de produtos naturais: comprimento das folhas de vegetais (alface, rúcula, etc) comprados em lojas distintas, altura de árvores ou plantas similares locais da cidade distintos;
+
+entre outros que podem ser escolhidos dependendo da região e dos recursos disponíveis na escola.
+
+No seu caderno ou em uma planilha eletrônica, registre os dados coletados, como indicado no modelo de tabela a seguir, lembrando que quanto mais dados você coletar com os critérios definidos, os resultados do experimento terão maior chance de refletir a realidade. 
+
+.. table:: Exemplo de tabela considerando a altura como variável e duas turmas distintas como os grupos
+
+   +----------------------------------+
+   |Variável: `\textsf{altura em cm}` |
+   +--------------+-------------------+
+   | Turma A      | Turma B           |
+   +==============+===================+
+   |    155       |    165            |
+   +--------------+-------------------+
+   |     168      |     159           |
+   +--------------+-------------------+
+   |    `\vdots`  |  `\vdots`         |
+   +--------------+-------------------+
+
+Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter os dados.
+
+.. table:: Registre os seus resultados
+
+   +-----------------------------+-------------+-------------+
+   |                             | Grupo   A   | Grupo B     |
+   +=============================+=============+=============+
+   | Nome da categoria           |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mínimo (`x_{(1)}`)          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Máximo  (`x_{(n)}`)         |             |             |
+   +-----------------------------+-------------+-------------+
+   | Média                       |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q1                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mediana                     |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q3                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Amplitude amostral (R)      |             |             |
+   +-----------------------------+-------------+-------------+
+   |Dist. entre quartis (DQ)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio médio absoluto (DM)   |             |             |
+   +-----------------------------+-------------+-------------+
+   | Variância  (`\sigma^2`)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio padrão (`\sigma`)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Variância amostral (`s^2`)   |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio padrão amostral (`s`) |             |             |
+   +-----------------------------+-------------+-------------+
+
+Sugere-se a construção dos histogramas para comparar os dois grupos. Você pode usar o GeoGebra para esta construção.
+
+
+.. Se preferir,  pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
+
+1. Discuta as suas observações com a turma. Lembre-se de intepretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
+
+2. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas obervações? Consulte  professores de outras áreas sobre suas conclusões.
+
+
