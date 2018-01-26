@@ -176,21 +176,23 @@ Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Ve
 
    Desvios da média das cotações nas companhias A e B
    
-.. comentar a figura 
+O gráfico da figura 61 reforça a conclusão anterior, da atividade ``Estratégia de investimento´´ de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
 
-Em símbolos temos esta propriedade dos desvios da média pode ser traduzida em
+Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
 
 `\displaystyle{\sum^n_{i=1}} d_i=\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=0`, qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`, pois
 
 `\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
 
-Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação de modo a usar os desvios da média para definir uma medida de dispersão é eliminar o sinal negativo dos desvios da média. 
+Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação de modo a usar os desvios da média para definir uma medida de dispersão é eliminar o sinal negativo dos desvios da média. 
 
 .. _sub-desviosmedioabsoluto:
 
 ---------------------
 Desvio Médio Absoluto
 ---------------------
+
+O :index:`desvio médio absoluto` (DM) é definido como a média dos desvios da média tomados em valor absoluto. Deste modo todos tornam-se não-negativos e poderemos usar este resultado para avaliar a dispersão em torno da média.
 
 
 .. _sub-varianciaedesviopadrao:
