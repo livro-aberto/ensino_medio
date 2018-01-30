@@ -109,7 +109,13 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
 Organizando as ideias: Medidas de dispersão
 *******************************************
 
-Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
+Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. 
+
+Enquanto as medidas de posição procuram sintetizar o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos (ou esparsos) são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na atividade anterior, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
+
+Há uma piada irônica que diz que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há portanto que se avaliar a variabilidade dos dados coletados, a fim de tecer conclusões adequadas.
+
+Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
 
 
 .. _sub-amplitudes:
@@ -343,9 +349,9 @@ e, na companhia B,
 Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior do que o da companhia A.
 
 
-.. admonition:: Observação 1 
+.. admonition:: Por que utilizamos o desvio padrão e não o desvio médio na Estatística? 
 
-   **caixa explicando que entre o desvio médio absoluto e o desvio padrão a escolha usual é o desvio padrão - texto do Nei**
+   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma um "bico" de difícil acesso, enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades conhecemos já bastante analiticamente. Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado Método dos Mínimos Quadrados.
    
 
 .. admonition:: Observação 2 

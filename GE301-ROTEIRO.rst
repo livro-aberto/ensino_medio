@@ -557,9 +557,11 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       .. [Dourado-2013] Dourado, M. S. (2013). Geometria Espacial e Projeções em Perspectiva: Um Relato de Prática no Nono Ano do Ensino Fundamental. Dissertação de Mestrado, PROFMAT, Universidade Federal Fluminense.
       
-      .. [Edwards-2005] Edwards, B. Desenhando Com o Lado Direito do Cérebro. Oitava edição, Ediouro.
+      .. [Edwards-2005] Edwards, B. (2005). Desenhando Com o Lado Direito do Cérebro. Oitava edição, Ediouro.
       
       .. [Fan-2015] Fan, J. E. (2015). Drawing to Learn: How Producing Graphical Representations Enhances Scientific Thinking. Translational Issues in Psychological Science, American Psychological Association, v. 1, n. 2, p. 170–181.
+
+      .. [Fujita-et-al-2017] Fujita, T. et al. (2017). Students’ Geometric Thinking with Cube Representations: Assessment Framework and Empirical Evidence. The Journal of Mathematical Behavior, v. 46, p. 96-111.      
 
       .. [Gardner-2011] Gardner, H. (2011). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.
       
@@ -567,12 +569,10 @@ ROTEIRO: VISTAS ORTOGONAIS E REPRESENTAÇÕES EM PERSPECTIVA
       
       .. [Gutierrez-1998] Gutiérrez, A. (1998). Las Representaciones Planas de Cuerpos 3-Dimensionales En La Enseñanza de La Geometría Espacial. Revista EMA, v. 3, n. 3, p. 193-220.
       
-      .. [Fujita-et-al-2017] Fujita, T. et al. (2017). Students’ Geometric Thinking with Cube Representations: Assessment Framework and Empirical Evidence. The Journal of Mathematical Behavior, v. 46, p. 96-111.
-      
-      .. [Lellis-2009] Lellis, M. (2009). Desenho em Perspectiva no Ensino Fundamental – Considerações Sobre Uma Experiência. Seminários de Ensino de Matemática (SEMA), Primeiro Semestre de 2009 (Ano II), Programa de Pós-Graduação da Faculdade de Educação da Universidade de S˜ao Paulo, 2009. Disponível em: <https://goo.gl/77Unkk>. 
-      
       .. [Khine-2017] Khine, M. S. (2017). Visual-Spatial Ability in STEM Educaton: Transforming Research into Practice. Springer-Verlag.
-      
+
+      .. [Lellis-2009] Lellis, M. (2009). Desenho em Perspectiva no Ensino Fundamental – Considerações Sobre Uma Experiência. Seminários de Ensino de Matemática (SEMA), Primeiro Semestre de 2009 (Ano II), Programa de Pós-Graduação da Faculdade de Educação da Universidade de S˜ao Paulo. Disponível em: <https://goo.gl/77Unkk>.       
+
       .. [NRC-2006] National Research Council. (2006). Learning To Think Spatially. The National Academies Press, Washington, D.C..
 
       .. [Newcombe-2017] Newcombe, N. (2017). Harnessing Spatial Thinking to Support STEM Learning.  OECD Education Working Papers, n. 161, OECD Publishing, Paris. Disponível em: <https://goo.gl/kyiJ4z>.
