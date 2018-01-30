@@ -555,7 +555,9 @@ A média dos dados de `D_1` é `\bar{x}=\frac{25}{5}=5` e,  `\textsf{mediana}=x_
 
 Tanto a média como a mediana deste conjunto são valores que representam bem o conjunto.
 
-Por outro lado, a média dos dados de `D_2` é `\frac{126}{6}=21` e `\textsf{mediana}=x_{(3)}=\frac{4+9}{2}=6,5`, o que nos mostra o mal condicionamento da média e a robustez da mediana na presença do valor atípico 101, incluído no conjunto de dados `D_1`. 
+Por outro lado, a média dos dados de `D_2` é `\frac{126}{6}=21` e `\textsf{mediana}=x_{(3)}=\frac{4+9}{2}=6,5`, o que nos mostra o mal condicionamento da média e a robustez da mediana na presença do valor atípico 101, incluído no conjunto de dados `D_1`. Verifique, portanto, que na presença do valor atípico (101), a média é muito afetada, mudando de 5 para 21, enquanto que a mediana é pouco afetada, mudando de 4 para 6,5.   
+
+
 
 
 ----
