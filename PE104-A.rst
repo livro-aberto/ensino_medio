@@ -4,63 +4,76 @@ Explorando: Avaliação da magnitude da variância
 
 .. _ativ-titulo-da-atividade:
 
------------------
-Atividade: Título
------------------
+-------------------------
+Atividade: Inflação anual
+-------------------------
 
 .. admonition:: Para o professor
 
  **Objetivos específicos** 
  
- Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas com médias diferentes. 
+ Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas suas médias são diferentes. 
  
  Motivar a definição de coeficiente de variação.
  
- **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância.
+ **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância. Como o dado observado é a inflação anual de um país, a atividade começa com um pequeno texto introdutório sobre inflação.
  
- 
-.. introdução para explicar o conceito de inflação
+A seguir são apresentados dados sobre as inflações anuais em dois países. Antes de trabalhar com os dados, vamos tentar explicar o que é :index:`inflação<inflação>`. De uma maneira bem simples, pode-se dizer que a inflação é o aumento contínuo nos preços de produtos e serviços. Esse aumento costuma ser avaliado de forma mensal, gerando os índices de inflação, que refletem a variação nos preços.
+
+A inflação pode ser medida de várias formas diferentes. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
+`link <https://www.youtube.com/watch?v=JVcDZOlIMBk>`_, um vídeo produzido pelo IBGE, explicando o IPCA.
 
 Foram observadas as inflações anuais de dois países A e B para os anos de 2011 a 2015, conforme tabela a seguir. 
 
 .. table:: Inflação anual
-   
-    +--------+---------+----------+----------+---------+---------+
-    | País   | 2011    | 2012     | 2013     | 2014    | 2015    | 
-    +--------+---------+----------+----------+---------+---------+
-    |   A    |   2,0%  |   1,8%   |   2,1%   |   2,2%  |   1,9%  |
-    +--------+---------+----------+----------+---------+---------+
-    |   B    |   0,01% |  -0,19%  |   -0,09% |   0,21% |   0,11% |
-    +--------+---------+----------+----------+---------+---------+
-    
-.. refazer tabela no excel indicando soma simples soma de quadrados colocando a soma no cabeçalho 
- 
-1. Calcule as médias anuais de inflação dos dois países e compare-as. Há diferenças entre elas?
 
-2. Calcule as variâncias das inflações anuais dos dois países e compare-as. Há diferença entre elas?
+ +------+-------+--------+--------+-------+-------+--------+
+ | País | 2011  | 2012   | 2013   | 2014  | 2015  | soma   |
+ +------+-------+--------+--------+-------+-------+--------+
+ | A    | 2,00% | 1,80%  | 2,10%  | 2,20% | 1,90% | 10,00% |
+ +------+-------+--------+--------+-------+-------+--------+
+ | B    | 0,01% | -0,19% | -0,09% | 0,21% | 0,11% | 0,05%  |
+ +------+-------+--------+--------+-------+-------+--------+
+   
+1. Calcule as médias anuais de inflação dos dois países. Há diferenças entre elas?
+
+2. Calcule as variâncias das inflações anuais dos dois países, sabendo que para o país A, `\displaystyle{\sum^5_{i=1}}x^2_i=20,1`  (% `^2` ) e para o país B,  `\displaystyle{\sum^5_{i=1}}x^2_i=0,1005`  (% `^2` ). Há diferença entre elas?
 
 3. Qual dos países apresenta maior flutuação inflacionária quando comparada à média inflacionária? 
 
 
 .. admonition:: Resposta 
 
-   1. x
+   1. No país A, a inflação média anual, considerando estes 5 anos, é    `\bar{x}=\frac{10}{5}=2,00` %. No país B, a inflação média anual, considerando estes 5 anos, é `\bar{x}=\frac{0,05}{5}=0,01` %. Logo, as inflações anuais médias dos dois países são bem diferentes.
    
-   2. xx
+   2. Usando a fórmula simplificada para o cálculo da variância, temos, para o país A, `\textsf{s}^2=\frac{1}{5-1}\left (20,1-5\cdot 2^2\right )= 0,025` (% `^2` ). Para o país B, temos `\textsf{s}^2=\frac{1}{5-1}\left (0,1005-5\cdot 0,01^2\right )= 0,025` (% `^2` ). Logo, as variâncias destes dois conjuntos de inflações anuais são iguais e, consequentemente, os desvios padrões também são iguais. 
    
-   3. xxx
-
-
- 
+   3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
 
 **********************************************
 Organizando as ideias: Coeficiente de variação
 **********************************************
 
+Como foi visto na atividade anterior, o valor da variância (desvio padrão) é relativo ao conjunto de dados, de modo que não é possível afirmar que um valor 100 de variância seja muito grande ou pequeno. Isso vai depender dos valores observados no conjunto de dados. Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à  média é o mesmo para os dois conjuntos? 
 
+A resposta a esta pergunta será dada pela definição de :index:`coeficiente de variação<coeficiente de variação>`.
 
+.. glossary::
 
+   Coeficiente de variação 
+      é a razão entre o desvio padrão e a média. Em geral, ele é descrito em termos percentuais. 
+      
+O coeficiente de variação amostral, em termos percentuais, é calculado  por 
 
+.. math::
+
+   CVA=\frac{\overbrace{s}^{\textsf{desvio padrão amostral}}}{\underbrace{\bar{x}}_{\textsf{média amostral}}}\cdot 100 \%
+   
+Esta expressão é usada quando dispomos de uma amostra da população. Se, dispomos dos dados da população, então o coeficiente de variação populacional é dado por  
+
+.. math::
+
+   CVP=\frac{\overbrace{\sigma}^{\textsf{desvio padrão populacional}}}{\textsf{média populacional}}\cdot 100\%
 
 
 **********
@@ -81,8 +94,7 @@ Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulhe
 
 
 .. _fig-coloque-aqui-o-nome:
-
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+.. figure:: _resources/boxplotmulheres.png
    :width: 200pt
    :align: center
 
@@ -93,7 +105,7 @@ Na construção deste gráfico, que pode ter orientação tanto vertical como ho
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+.. figure:: _resources/boxplotcaixa.png
    :width: 200pt
    :align: center
 
@@ -107,7 +119,7 @@ Valores menores do que `\textsf{Q}1-1,5\cdot \textsf{DQ}` ou maiores do que `\te
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+.. figure:: _resources/boxplotdq_1.png
    :width: 200pt
    :align: center
 
@@ -117,12 +129,22 @@ Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eix
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/boxplot_4.png
-   :width: 400pt
+.. figure:: _resources/boxplotcompl.png
+   :width: 200pt
    :align: center
 
    Ilustração do boxplot
 
+Observação: Quando não houver a presença de pontos atípicos o gráfico reprentativo do boxplot será:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/boxplotx.png
+   :width: 200pt
+   :align: center
+
+   legenda
 O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão dentro da caixa (retângulo) e a outra metade do lado de fora, 25% acima e 25% abaixo. Neste gráfico a distância entre quartis (DQ=Q3-Q1) é usada como medida de dispersão. Além disso, as posições dos cinco números nos permitem avaliar a simetria da distribuição. Por exemplo, se
 
 
