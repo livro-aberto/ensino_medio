@@ -110,6 +110,10 @@ A maratona de Nova Iorque...
 Organizando as ideias: Medidas de posição
 *****************************************
 
+Medidas de Posição, como o próprio termo indica, visam a sintetizar o conjunto de dados em geral numa única medida em algum lugar geométrico entre os extremos observados (mínimo e máximo). Isso só é possível se nossas observações são de natureza quantitativa, pois, como dissemos anteriormente, as variáveis qualitativas estão no domínio da frequência apenas, ou seja, só podemos contar quantas observações recaem em cada categoria, mas não podemos operar matematicamente com as categorias em si.
+As principais medidas de posição usadas na Estatística são a média aritmética, a mediana, a moda e os quartis da distribuição. Outras medidas de posição
+existem, mas não são tão usuais na Estatística.
+
 Dado um conjunto de dados quantitativos, usamos o histograma como uma ferramenta gráfica para tentar visualizar alguma estrutura nestes dados. Definiremos agora algumas medidas que buscam de alguma forma resumir a informação do conjunto. Vamos começar pela média aritmética. 
 
 Para definir várias das medidas a serem trabalhadas neste capítulo vamos adotar a seguinte notação.
@@ -135,6 +139,7 @@ Desse modo temos que
 
 `x_{(1)}\leq x_{(2)}\leq \cdots\leq x_{(n)}` são os valores ordenados do conjunto `\{ x_1,x_2,...,x_n\}`.
 
+Por exemplo, para o conjunto de observações `\{ 2, 3, 1, 5, 2\}`, temos `x_1=2`, `x_2=3`, `x_3=1`, `x_4=5`, `x_5=2`, e `x_{(1)}=1`, `x_{(2)}=2`, `x_{(3)}=2`, `x_{(4)}=3`, `x_{(5)}=5`. 
 
 .. _sub-media:
 
@@ -144,13 +149,17 @@ Média
 
 Considere um conjunto contendo `n` valores de uma variável quantitativa representado por `\{x_1,x_2,\cdots,x_n\}`. 
 
-A :index:`média<média>` aritmética deste conjunto é definida por `\textsf{média}=\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\displaystyle{\sum^n_{i=1}} x_i`.
+A :index:`média<média>` aritmética deste conjunto é definida como o valor `\bar{x}` que pode substituir todas as observações sem alterar a característica da soma aritmética dos valores, isto é, `x_1+x_2+\cdots+x_n=\bar{x}+\bar{x}+\cdots+\bar{x}`. Assim, temos `x_1+x_2+\cdots+x_n=n\bar{x}`, e, consequentemente, `\textsf{média}=\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\displaystyle{\sum^n_{i=1}} x_i`.
 
-Se todos os valores de um conjunto com `n` valores fossem iguais a `7`, usando a definição de média, teríamos `\textsf{média}=\bar{x}=\displaystyle{\frac{7n}{n}}=7`. 
+Se todos os valores de um conjunto com `n` valores fossem iguais a `k`, usando a definição de média, teríamos `\textsf{média}=\bar{x}=\displaystyle{\frac{kn}{n}}=k`. 
 
-Esta é justamente a ideia por trás da definição de média: uma medida que de alguma forma representa o conjunto de dados. É claro que, em geral, haverá valores diferentes no conjunto e, neste caso, a média será um valor pertencente ao intervalo de variação dos valores neste conjunto e não necessariamente, um valor que tenha sido observado.
+Esta é justamente a ideia por trás da definição de qualquer média: uma medida que de alguma forma representa o conjunto de dados segundo uma formulação e se situa entre os extremos das observações. É claro que, em geral, haverá valores diferentes no conjunto e, neste caso, a média será um valor pertencente ao intervalo de variação dos valores neste conjunto e não necessariamente, um valor que tenha sido observado.
 
-Por exemplo, considerando novamente os dados das notas de Artes antes da bonificação, vimos que ao todo são 35 notas variando de 0,8 até 8,0 e, a média resultante, foi 5,9. Observe que 5,9, a média da turma, é um valor entre 0,8 (menor nota da turma) e 8,0 (maior nota da turma), porém não se observaram nas notas de Artes desta turma a nota 5,9.
+Por exemplo, considerando novamente os dados das notas de Artes antes da bonificação, vimos que ao todo são 35 notas variando de 0,8 até 8,0 e, a média resultante, foi 5,9. Observe que 5,9, a média da turma, é um valor entre 0,8 (menor nota da turma) e 8,0 (maior nota da turma), porém não se observou nas notas de Artes desta turma a nota 5,9.
+
+Cabe ressaltar que, se os dados são apresentados em tabelas de frequência, indicando que o valor `x_i` ocorre `f_i` vezes no conjunto de dados, então naturalmente a média será calculada como
+
+`\textsf{média}=\bar{x}=\frac{f_1\cdot x_{1}+f_2\cdot x_{2}+\cdots+f_n\cdot x_{n}}{f_1+f_2+\cdots+f_n}`
 
 Você já calculou a média dos dados das duas primeiras atividades, a saber, notas de artes e cem melhores tempos para completar a maratona de Nova Iorque em 2017 para mulheres. Identifique nos histogramas correspondentes a posição em que estas médias ficaram.
 
@@ -158,6 +167,8 @@ Você já calculou a média dos dados das duas primeiras atividades, a saber, no
    
    Como calcular a média quando os dados estão agrupados em `c` intervalos de classe? 
    
+   Se os dados são apresentados em classes com as respectivas frequências da classe, a fórmula anterior também expressa a média dos dados, com `x_i` agora representando o ponto médio do intervalo da `i`-ésima classe e `f_i` a frequência da `i`-ésima classe.
+
    Suponha, por exemplo, que um pai de aluno tenha tido acesso apenas ao histograma das notas de Artes, sem conhecer as notas individualmente.  Como este pai poderia calcular a média da turma? Supondo as notas antes da bonificação, temos a seguinte distribuição de frequências
    
 .. aqui entra a tabela dos dados agrupados
@@ -170,26 +181,32 @@ Os pontos médios das classes são 1, 3, 5 e 7 e, as frequências absolutas, 1, 
    
    Para facilitar vamos usar a notação a seguir.
    
-   Sejam `x_{m1}`, `x_{m2}`, ..., `x_{mc}` os pontos médios das `c` classes e, `n_1`, `n_2`, ..., `n_c`  as frequências absolutas das `c` classes, respectivamente. Lembre que o pnto médio de uma classe é corresponde ao ponto médio do intervalo de classe, a saber, a média aritmética dos extremos do intervalo. Neste caso a média é calculada por
+   Sejam agora `x_{1}`, `x_{2}`, ..., `x_{c}` os pontos médios das `c` classes e, `f_1`, `f_2`, ..., `f_c`  as frequências absolutas das `c` classes, respectivamente. Lembre que o ponto médio de uma classe é corresponde ao ponto médio do intervalo de classe, a saber, a média aritmética dos extremos do intervalo. Neste caso a média é calculada por
    
-   `\textsf{média}=\bar{x}=\frac{n_1\cdot x_{m1}+n_2\cdot x_{m2}+\cdots+n_c\cdot x_{mc}}{n}`
+   `\textsf{média}=\bar{x}=\frac{f_1\cdot x_{1}+f_2\cdot x_{2}+\cdots+f_n\cdot x_{n}}{f_1+f_2+\cdots+f_n}`
    
-   Introduzindo o valor `n` para dentro do somatório, obtemos
+   Denotando por `p_i=\frac{f_i}{f_1+f_2+\cdots+f_n}` a frequência relativa da `i`-ésima classe, temos
    
-   `\textsf{média}=\bar{x}=f_1\cdot x_{m1}+f_2\cdot x_{m2}+\cdots +f_c\cdot x_{mc}` 
+ 
+   `\textsf{média}=\bar{x}=p_1\cdot x_{1}+p_2\cdot x_{2}+\cdots +p_c\cdot x_{c}` 
    
-   em que `f_i=\frac{n_i}{n}`, `i=1,2,...,c` são as respectivas frequências relativas.
-   
-   Usando a notação de somatório temos que `\textsf{média}=\bar{x}=\frac{1}{n}\displaystyle{\sum^c_{i=1}}n_i\cdot x_{mi}=\displaystyle{\sum^c_{i=1}} f_i\cdot x_{mi}`
-   
-   Observe que quando os dados estão agrupados em intervalos de classes, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas das classes.
+     
+   Observe que quando os dados estão agrupados em intervalos de classes, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas (ou relativas) das classes.
    
  
    
 
 .. admonition:: Observação 2 
 
-   A média como ponto de equilíbrio: inserir texto e exemplo.
+   A média aritmética é tamém denotada como o primeiro momento das observações, no sentido de ser, como na Física, o centro de massa dos dados, isto é, o ponto de equilíbrio de forças dos dados observados. Uma forma de ver isso, é perceber que a soma resultante das distâncias entre cada valor observado e a média é nula, pois se `d_i=x_i - \bar{x}`, então temos 
+   
+   `d_1+d_2+\cdots+d_n=(x_1 - \bar{x})+(x_2 - \bar{x})+\cdots+(x_n - \bar{x})=x_1+x_2+\cdots+x_n - n\cdot\bar{x}=n\cdot\bar{x}-n\cdot\bar{x}=0`
+   
+   Esse fato acarreta um mal condicionamento da média aritmética, já que valores atipicamente altos farão com que a média seja mais deslocada próxima a eles, se afastando assim da grande maioria dos valores observados. O mesmo se dá com valores atipicamente pequenos em relação à grande maioria, fazendo com que a média se afaste da maioria dos dados e seja catalizada para valores menores. 
+   
+   Vejamos os seguintes conjuntos de dados: `D_1=\{1, 1, 4, 9, 10\}` e `D_`2=\{1, 1, 4, 9, 100\}`. A média dos dados de `D_1` é 5, o que representa bem o conjunto de dados. No entanto, a média de `D_2` é 23, valor acima da grande maioria dos dados observados. Isso mostra que em presença de dados atipicamente altos ou atipicamente baixos, devemos ter cautela em tomar a média como medida de posição das observações coletadas. Uma medida mais "robusta", isto é, pouco abalada para valores atípicos, deverá entrar em jogo em situações desse tipo. Essa medida é a mediana de que trataremos a seguir.
+   
+   Portanto, devemos ter cautela em sintetizar os dados com a média aritmética, se os mesmos são muito assimétricos e possuem valores discrepantes. Por exemplo, não seria adequado resumir a informação a respeito dos salários de trabalhadores de uma indústria com a média aritmética, se há cargos no executivo com salários astronômicos, pois estes elevariam a média salarial acima da realidade do trabalhador mediano.
    
    
    
@@ -197,13 +214,13 @@ Os pontos médios das classes são 1, 3, 5 e 7 e, as frequências absolutas, 1, 
 Mediana
 -------
 
-A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central depois de ordenar os dados.
+A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central (ou a média dos dois valores centrais quando o número de observações é par) depois de ordenar os dados em ordem crescente.
 
-Se o conjunto tem um número ímpar de elementos, por exemplo, 9, então a posição central será a de número 5, tal que há quatro valores antes e quatro depois. Se o conjunto tem um número par de elementos, por exemplo, 10, então há duas posições centrais, a saber as posições 5 e 6 tal que há quatro observações antes da posição 5 e quatro posições depois da posição 6. Neste caso, a mediana serão dada pela média aritmética dos dois valores centrais.
+Se o conjunto tem um número ímpar de elementos, por exemplo, 9, então a posição central será a de número 5, tal que há quatro valores antes e quatro depois. Se o conjunto tem um número par de elementos, por exemplo, 10, então há duas posições centrais, a saber as posições 5 e 6 tal que há quatro observações antes da posição 5 e quatro posições depois da posição 6. Neste caso, a mediana será dada pela média aritmética dos dois valores centrais.
 
 Resumindo, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados do conjunto, a mediana será dada por
 
-`\textsf{Mediana}=\left \{ \begin{array}{lr} 
+`\textsf{Mediana}=Me=\left \{ \begin{array}{lr} 
 x_{\left (\frac{n+1}{2}\right )}, &\textsf{ se }n \textsf{ for ímpar}\\ 
 \frac{1}{2} [ x_{\left (\frac{n}{2}\right )}+x_{\left (\frac{n}{2}+1\right )} ], &\textsf{ se }n \textsf{ for par.}\end{array}\right.`
 
@@ -218,23 +235,62 @@ Nas duas atividades iniciais podemos facilmente verificar quem são a mediana de
 
 .. admonition:: Observação 2
 
-   Média versus Mediana: comparação
+   Vimos que a média é uma medida de posição mal condicionada na presença de valores atípicos e de distribuições altamente assimétricas. A mediana, por sua, vez, é uma medida robusta, isto é, se abala pouco para valores extremos na distribuição. Vejamos isso à luz de um exemplo simples.
+   
+   Sejam os conjuntos de dados já ordenados em ordem crescente: `D_1=\{1, 1, 4, 9, 10\}` e `D_2=\{1, 1, 4, 9, 10, 100\}`. A média dos dados de `D_1` é 5 e a mediana é 4, e ambos os valores representam bem o conjunto de dados. Por outro lado, a média dos dados de `D_2` é 20,8333... e a mediana é 6,5, o que nos mostra o mal condicionamento da média e a robustez da mediana na presença do valor atípico 100 incluído no conjunto de dados `D_1`.
 
 
 ----
 Moda
 ----
 
-A :index:`moda<moda>` é o valor mais frequente num conjunto de dados. 
+A :index:`moda<moda>` (Mo) é a observação mais frequente de um conjunto de dados. Caso
+não haja observação mais frequente, ou seja, todos os valores aparecem apenas uma única vez no conjunto de dados, a distribuição é dita amodal. Um conjunto é dito unimodal se houver apenas uma moda; bimodal se houver duas modas; ou multimodal (ou plurimodal) se houver três ou mais modas no conjunto de dados coletados.
+
+Vejamos exemplos das quatro situações descritas acima: Sejam as notas da prova de Matemática dos alunos de quatro turmas diferentes dadas pela tabela a seguir.
+
+Turma Notas                         Moda          Distribuição
+
+T1:    2; 4; 6; 8; 8,5; 9, 10       Não existe    Amodal
+
+T2:    2; 4; 5; 5; 8; 9; 10         5             Unimodal
+
+T3:    2; 4; 5; 5; 8; 9; 9; 10      5 e 9         Bimodal
+
+T4:    2; 2; 4; 5; 5; 8; 9; 9; 10   2, 5 e 9      Plurimodal
 
 
-(Inserir exemplos, caixa para dados agrupados e caixa para comparações entre as medidas até aqui definidas.)
+A pergunta que surge naturalmente agora é: Quando a moda será preferível à média ou à mediana?
+
+Se a distribuição for bem equilibrada, isto é, o histograma da distribuição tem
+uma certa simetria, e há um único valor modal, então as três medidas-resumo são qualitativamente equivalentes. Nesse caso, em geral, preferiremos tomar a média como medida de posição, pois ela possui propriedades probabilísticas importantes para a análise inferencial da população.
+
+Se, no entanto, a distribuição é altamente assimétrica com valores atípicos e unimodal, então preferiremos, em geral, tomar a mediana como medida síntese, embora a moda também possa ser usada em certas situações nesse caso.
+
+Se, por outro lado, o histograma da distribuição é do tipo bimodal (ou mesmo plurimodal) como na representação esquemática abaixo, então nem a média, nem a mediana são boas medidas de representação dos dados, pois estas se situariam no "vale" da distribuição em que há pouca incidência de valores. Assim, neste caso, preferiremos quase sempre a moda como medida síntese.
+
+(COLOCAR AQUI UM GRÁFICO ESQUEMÁTICO DE DISTRIBUIÇÃO SIMÉTRICA BIMODAL COM A INDICAÇÃO DO LUGAR GEOMÉTRICO DA MÉDIA E DA MEDIANA PARA OS ALUNOS VEREM QUE ELAS SE SITUAL EM UMA REGIÃO DE BAIXA PROBABILIDADE)
+
+.. admonition:: Relação Empírica entre Média, Mediana e Moda 
+
+   A seguinte relação empírica em geral subsiste aproximadamente para os conjuntos de dados observados:
+   `\bar{x}-Mo = 3(\bar{x}-Me)`.
+   
+   Essa expressão pode ser apresentada de diversas formas e indica geometricamente que a mediana se situa entre a média e a moda, sendo sua distância à moda o dobro de sua distância à média (verifique isso pela relação acima). Sua verificação na prática tende a ser mais perfeita quanto maior for o conjunto de dados, e sendo a moda calculada com base em dados agrupados em classes.
+. 
 
 -------
 Quartis
 -------
 
-Os :index:`quartis<quartis>` de uma distribuição de frequências ou conjunto de valores numéricos são três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`.
+Os :index:`quartis<quartis>` são os três valores que dividem a distribuição em quatro partes iguais. O primeiro quartil (`Q_1`) é o valor da distribuição em que abaixo dele há 25% da informação e acima dele há 75% da informação. O segundo quartil (`Q_2`) é precisamente a mediana da distribuição (o valor que divide a distribuição ao meio). Finalmente o terceiro quartil (`Q_3`) é o valor da distribuição em que abaixo dele há 75% da informação e acima dele há 25% da informação. Em resumo os quartis de uma distribuição de frequências ou conjunto de valores numéricos são as três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}`.
+
+Para que servem os quartis da distribuição?
+
+Temos uma dupla resposta a esta pergunta: serve para reconhecer os valores atípicos da distribuição, os chamados dados discrepantes ou "outliers" e para construir um importante gráfico estrutural da distribuição chamado Desenho Esquemático ou Box-Plot.
+
+
+
       
 
 
