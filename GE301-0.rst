@@ -1,6 +1,8 @@
-.. HJB: existe um problema de nomeclatura. O que a BNCC quer dizer com representações em perspectiva? Alguns autores entendem perspectiva como projeção central enquanto outros admitem que mesmo uma projeção paralela ortogonal é uma perspectiva. Assim, projeção, perspectiva e representação são usados como sinônimos. Alertar o professor sobre esta multiplicidade de nomes.
+.. HJB: ideia das várias projeções cartográficas para mostrar diferentes representações de um mesmo objeto.
 
+.. HJB: é possível posicionar o cubo de forma que sua sombra seja um quadrado? Fazer a pergunta para os dois tipos de projeção. Desenhar um quadrado cuja somba seja maior do que a original? Menor?
 
+.. HJB: qualidade do desenho e a analogia com escrita (escrita informal, escrita formal com correção ortográfica).
 
 .. admonition:: Para o professor
 
@@ -50,13 +52,158 @@
 
    **Abordagem adotada no capítulo**
 
+   Observações:
+   
+   * Existem outras nomeclaturas para o que estamos denominando de "projeções em perspectiva" e "projeções paralelas". Alguns textos mais antigos, usam, por exemplo, "perspectiva central", "perspectiva ortogonal" de modo que, neste caso, perspectiva fica como sinônimo de projeção. Outros usam a palavra representação: "representação em perspectiva", como ocorre no enunciado da habilidade na BNCC. Em textos mais recentes, principalmente os de computação gráfica, os termos mais usados são "projeção em perspectiva" e "projeção ortogonal" (aparece também o termo "projeção central").
+   
+   * Existem vários modelos matemáticos que tentam capturar como "vemos" ([Lindberg-1976]_, [Howard-et-al-1995]_). Para este capítulo, usaremos o modelo simples dado por projeções em perspectiva.
 
-
+   
    **Observações metodológicas gerais**
 
 
-***********************************************
+****
 Explorando: representando o que vemos 
-***********************************************
+****
+
+Desde a pré-história, o ser humano tem registrado em pinturas o que ele vê no mundo que o cerca. Na :numref:`fig-proj-pintura-01`, por exemplo, temos, em (a), o desenho de leões e bisões na Caverna de Chauvet na França (com cerca de 30000 anos de idade) e, em (b), a pintura rupestre no Parque Nacional Serra da Capivara no Piauí (com cerca de 11000 anos de idade).
+
+.. _fig-proj-pintura-01:
+
+.. figure:: _resources/fig-proj-pintura-01.jpg
+   :width: 400pt
+   :align: center
+
+   Pinturas pré-históricas.
+
+
+Ao longo da história, seja em paredes, páginas de livros, telas de pintura ou telas de computador, surgiram diversas formas de se representar os objetos tridimensionais que estão em nossa volta. Neste capítulo, estudaremos duas destas formas de representação, importantes por suas aplicações. Para que você possa entender melhor o contexto, iniciaremos com atividades cujo objetivo é levar você a ver como as pessoas representam o que vêem e como nossos cérebros interpretam essas representações.
+
+
+.. _ativ-proj-atelier-geometrico:
+
+Atividade: *Atelier* Geométrico
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+     
+   * Para o aluno: criar desenhos próprios com os quais será possível, após a realização desta e da próxima atividade e sob a condução professor, refletir sobre representações de objetos 3D no plano.
+   * Para o professor: realizar um diagnóstico da turma no que se refere às habilidades de representação por meio de desenhos.
+
+   
+   **Observações e recomendações:**
+   
+   * Sugerimos que você use os seguintes sólidos geométricos: um cubo (por ser um objeto 3D matemático familiar ao contexto escolar desde as séries iniciais), um cilindro circular reto (por conta das bases circulares paralelas as quais, em projeções em perspectiva, não são simultaneamente visíveis) e uma esfera (ou um cone). 
+   
+         .. figure:: _resources/fig-proj-solidos-01.jpg
+   
+     É importante que estes sólidos estejam dispostos de modo que pelo menos um fique parcialmente escondido atrás de outro, pois esta característica será verificada na produção dos alunos. 
+     
+     Não recomendamos o uso de modelos vazados (feitos de canudinhos, por exemplo) ou transparentes, pois estes tornam a cena mais complexa e difícil de se representar.
+     
+     Caso sua escola não possua modelos geométricos, você pode substituí-los por embalagens ou objetos do dia a dia com os formatos sugeridos.
+     
+     Certifique-se que todos os alunos consigam ver adequadamente os sólidos. Se estes foram muito pequenos e sua turma for numerosa, talvez seja adequado usar mais de um conjunto de sólidos em mais mesas, separando os alunos em torno delas.
+     
+
+   * Deixe seus alunos trabalharem livremente. Caso algum deles pergunte se seu desenho está ficando "bom" ou "correto", comente que isto será discutido em grupo ao término da próxima atividade. 
+   
+   * Durante a execução da atividade, circule entre os alunos e observe seus desenhos. É importante que, nesta etapa, você já diagnostique as habilidades de representação deles para a discussão que será feita em seguida. 
+   
+     Observe, por exemplo, se as posições relativas dos sólidos foram desenhadas corretamente, um atributo que, segundo [Ebersbach-et-al-2011]_ e [Willats-1977]_, exige maturidade e flexibilidade cognitivas as quais normalmente se desenvolvem por volta dos 11 anos. Antes dessa idade, é comum os alunos desenharem os objetos dispostos separadamente, um ao lado do outro, mesmo quando, na visualização da cena, existe um objeto que está na frente de outro.
+     
+     Com relação a desenhos de um cubo, [Cox-et-al-1998]_ propuseram
+     uma escala de aferição da "maturidade" da representação, a qual pode lhe ser útil.
+     
+     .. _fig-proj-escala-cox:
+     
+     .. figure:: _resources/escala_Page_1.jpg
+     
+     .. figure:: _resources/escala_Page_2.jpg
+        :width: 200pt
+        
+        Escala de aferição da "maturidade' da representação do cubo.
+     
+     Para o caso de um cilindro circular reto, [Mitchelmore-1978]_ propõe a evolução em estágios descrita na figura a seguir.
+     
+     .. _fig-proj-escala-mitchelmore:     
+     
+     .. figure:: _resources/escala_Page_3.jpg
+     
+        Escala de aferição da "maturidade' da representação do cilindro.
+     
+     Pesquisadores têm procurado explicar estas diferentes formas de desenhar que aparecem ao longo do desenvolvimento da criança. Georges Henri Luquet (1876-1965) explica, por exemplo, que o desenho do cilindro do Estágio 2 deve-se a uma preponderância de um "realismo intelectual" em relação a um "realismo visual": a criança sabe que um cilindro circular reto têm duas bases circulares e pensa, nesta etapa, que se não registrar estas estas duas bases circulares, o desenho estaria incompleto. [Morra-2008]_, por sua vez, argumenta que a complexidade das regras ou estratégias de organização espacial que uma criança consegue dominar está restrita pela quantidade de informação que ela pode assimilar e processar simultaneamente, ou seja, pela memória de trabalho da criança. Assim, os desenhos ficam mais realistas a medida que a memória de trabalho da criança aumenta.
+     
+   * Caso algum aluno já tenha terminado esta atividade, você pode sugerir que ele já trabalhe na próxima.      
+     
+     
+
+Seu professor irá dispor um conjunto de objetos geométricos sobre uma mesa e o objetivo desta tarefa é que você desenhe em uma folha de papel **o que você vê nesta cena** o mais fielmente que conseguir.
+
+   .. figure:: _resources/fig-proj-aula-de-desenho-01.jpg   
+
+.. _ativ-proj-lobo:
+
+
+Atividade: É O Lobo!
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** refletir sobre representações de objetos 3D no plano, no caso, representações de um lobo.
+
+
+Na sua opinião, qual das seis imagens (A), (B), (C), (D), (E) e (F) a seguir melhor representa um lobo? Por quê?
+
+.. _fig-proj-lobo:
+
+.. figure:: _resources/lobo.jpg
+   :width: 1000pt
+   
+   Seis representações de um lobo.
+
+
+
+.. admonition:: Para o professor
+   
+   * Sugerimos que você inicie uma sistematização com a atividade das representações do lobo. Peça para que os alunos manifestem suas respostas e justificativas. Caso não apareçam naturalmente, apresente os argumentos e as ponderações do "Organizando as ideias" a seguir.
+   
+   * Passe então para a primeira atividade. Deixe os desenhos que foram feitos pelos alunos com os próprios alunos (você pode recolhê-los após a sistematização). Aqui, sugerimos fortemente que se apresente para os alunos o fato de que a representação muda com a idade. Desenhe no quadro algumas das imagens da :numref:`fig-proj-escala-cox` ou da :numref:`fig-proj-escala-mitchelmore`, comente sobre o "realismo intelectual" vs. "realismo visual" e a questão da "memória de trabalho".
+   
+   * É importante que, no final da sistematização e do "Organizando as ideias" a seguir, o aluno perceba que existem representações diferentes com usos e qualidades próprias e específicas pois, afinal, duas destas representações (projeções em perspectivas e projeções paralelas, temas deste capítulo) serão abordadas nas seções seguintes.  
+ 
+ 
+****
+Organizando as ideias: tudo é uma questão de comunicação! 
+****
+
+Em um primeiro momento, você pode achar que a fotografia (A) na :numref:`fig-proj-lobo` é a "melhor" representação de um lobo. Mas, pense um pouco: "melhor" em que sentido? O "melhor" sempre pressupõe um critério e, por conseguinte, um contexto. 
+
+Por exemplo, caso você queira fazer menção a um lobo em uma mensagem de texto enviada por SMS, então certamente a representação (F) é a mais adequada. Agora, imagine que você está escrevendo um livro de Biologia e sua editora lhe disse que, por razões orçamentárias, apenas figuras em "preto e branco" serão aceitas. Neste caso, as representações (B) e (C) parecem ser a melhor opção. E se você estivesse ilustrando um livro infantil? Aí, as representações (D) e (E) poderiam dar um tom artístico mais pessoal ao livro.
+
+Se você acha a representação (E) muito tosca, lembramos aqui uma frase célebre do pintor Pablo Picasso (1881-1973):  "Levei quatro anos para aprender a pintar como Rafael, mas levei a vida toda para aprender a desenhar como uma criança.”.
+
+
+.. _fig-proj-picasso:
+
+.. figure:: _resources/picasso-01.jpg
+
+   Os touros de Pablo Picasso.
+   
+
+`%`
+
+`%`
+
+`%`
+
+`%`
+
+`%`
+
+`%`
 
 
