@@ -20,7 +20,7 @@ Atividade: Inflação anual
  
 A seguir são apresentados dados sobre as inflações anuais em dois países. Antes de trabalhar com os dados, vamos tentar explicar o que é :index:`inflação<inflação>`. De uma maneira bem simples, pode-se dizer que a inflação é o aumento contínuo nos preços de produtos e serviços. Esse aumento costuma ser avaliado de forma mensal, gerando os índices de inflação, que refletem a variação nos preços.
 
-A inflação pode ser medida de várias formas diferentes. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
+A inflação pode ser medida de várias formas. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
 `link <https://www.youtube.com/watch?v=JVcDZOlIMBk>`_, um vídeo produzido pelo IBGE, explicando o IPCA.
 
 Foram observadas as inflações anuais de dois países A e B para os anos de 2011 a 2015, conforme tabela a seguir. 
@@ -54,7 +54,10 @@ Foram observadas as inflações anuais de dois países A e B para os anos de 201
 Organizando as ideias: Coeficiente de variação
 **********************************************
 
-Como foi visto na atividade anterior, o valor da variância (desvio padrão) é relativo ao conjunto de dados, de modo que não é possível afirmar que um valor 100 de variância seja muito grande ou pequeno. Isso vai depender dos valores observados no conjunto de dados. Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à  média é o mesmo para os dois conjuntos? 
+Nem sempre uma variância pequena (e consequentemente desvio-padrão pe-
+queno) signi.ca pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
+
+Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? 
 
 A resposta a esta pergunta será dada pela definição de :index:`coeficiente de variação<coeficiente de variação>`.
 
@@ -67,18 +70,49 @@ O coeficiente de variação amostral, em termos percentuais, é calculado  por
 
 .. math::
 
-   CVA=\frac{\overbrace{s}^{\textsf{desvio padrão amostral}}}{\underbrace{\bar{x}}_{\textsf{média amostral}}}\cdot 100 \%
+   CVA=\frac{s}{\bar{x}}\cdot 100 \%
+
+em que `s` é o desvio padrão amostral e `\bar{x}` é a média amostral.
    
 Esta expressão é usada quando dispomos de uma amostra da população. Se, dispomos dos dados da população, então o coeficiente de variação populacional é dado por  
 
 .. math::
 
-   CVP=\frac{\overbrace{\sigma}^{\textsf{desvio padrão populacional}}}{\textsf{média populacional}}\cdot 100\%
+   CVP=\frac{{\sigma}}{\textsf{média populacional}}\cdot 100\%
+   
+em que `\sigma` é o desvio padrão populacional.
+
+Observe que o coeficiente de variação só é definido para conjuntos cuja média é diferente de zero.
+
+Uma escala que costuma ser utilizada para avaliar o coeficiente de variação é apresentada a seguir.
+
+.. table:: escala de heterogeneidade dos dados
+   
+   +-----------------------+--------------------------------+
+   | Faixa de valores      | Classificação do conjunto      |
+   +-----------------------+--------------------------------+
+   | [0%; 50%[             | dados relativamente homogêneos |
+   +-----------------------+--------------------------------+
+   | [50%; 100%[           | dados heterogêneos             |
+   +-----------------------+--------------------------------+
+   | Maior ou igual a 100% | dados com superdispersão       |
+   +-----------------------+--------------------------------+
+
+
+
+
+
 
 
 **********
 Praticando
 **********
+
+.. Análise comparativa dos dois tipos de bonificação
+
+.. Avaliação do cv numa transformação de posição
+
+.. Avaliação do efito do cv  numa transformação de escala
 
 
  
