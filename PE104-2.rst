@@ -197,7 +197,7 @@ Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, 
 
 `\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
 
-Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média. 
+Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
 
 .. _sub-desviosmedioabsoluto:
 
@@ -462,8 +462,14 @@ Sugere-se a construção dos histogramas para comparar os dois grupos. Você pod
 
 .. Se preferir,  pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
 
-1. Discuta as suas observações com a turma. Lembre-se de intepretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
+1. Discuta as suas observações com a turma. Lembre-se de interpretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
 
-2. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas observações? Consulte  professores de outras áreas sobre suas conclusões.
+2. Analisando os dois conjuntos de dados obtidos, que medida de posição você julga mais adequada para resumir a informação do conjunto? Por quê?
+
+3. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas observações? Consulte  professores de outras áreas sobre suas conclusões.
+
+.. atividade valor empírico do desvio padrão e comparando com o valor obtido nas atividades
+
+.. atividade para avaliar o resultado empírico da desigualdade de Tchebychev remetendo aos conjuntos já analisados
 
 
