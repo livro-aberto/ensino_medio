@@ -113,7 +113,7 @@ Pela atividade anterior, você deve ter notado que usar apenas medidas de posiç
 
 Enquanto as medidas de posição procuram sintetizar o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos (ou esparsos) são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na atividade anterior, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
 
-Há uma piada irônica que diz que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há portanto que se avaliar a variabilidade dos dados coletados, a fim de tecer conclusões adequadas.
+Há uma piada irônica que conta que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há portanto que se avaliar a variabilidade dos dados coletados, a fim de tecer conclusões adequadas.
 
 Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
 
@@ -138,7 +138,7 @@ Uma desvantagem desta medida é que ela considera apenas os dois extremos do con
 Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude amostral iguais. No entanto, comparando os diagramas de pontos correspondentes a cada um deles, ilustrados na figura a seguir, é possível perceber diferenças quanto à dispersão das notas em torno da média 5,0 nos dois conjuntos. 
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-diagrama-de-pontos-notas:
 
 .. figure:: _resources/diagrama_notas.png
    :width: 200pt
@@ -153,14 +153,12 @@ Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os
 
    \textsf{DQ}=\textsf{Q}3-\textsf{Q}1
    
-No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na terceira posição (mediana da primeira metade das notas com cinco valores) e, o terceiro quartil, como a nota na sétima posição (mediana da segunda metade das notas com cinco valores). 
+No exemplo anterior, como cada conjunto tem 10 observações, podemos identificar o primeiro quartil como a nota na posição `11/4=2,75\approx 3` e, o terceiro quartil, como a nota na posição `31/4=7,75\approx 8`.
 
 
-.. math::
+`\textsf{Notas da turma A}= \{ 1,1,\underbrace{1}_{\textsf{Q}1=x{(3)}},5,5,5,5,\overbrace{9}^{\textsf{Q}3=x{(8)}},9,9\}`
 
-   \textsf{Notas da turma A}= \{ \overbrace{1,1,\underbrace{1}_{\textsf{Q}1},5,5}^{\textsf{primeira metade}},\underbrace{5,5,\overbrace{9}^{\textsf{Q}3},9,9}_{\textsf{segunda metade}}\}
-
-Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, usando o mesmo raciocínio, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura 60.
+Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, usando o mesmo raciocínio, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura 78.
 
 De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar o primeiro e terceiro quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
 
@@ -181,7 +179,7 @@ Poderíamos pensar em usar os desvios da média para definir uma medida de dispe
 Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias na qual a linha pontilhada representa a cotação média e os segmentos em vermelho indicam o tamanho do desvio da média.
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-desvios-da-media:
 
 .. figure:: _resources/desviosdamedialadoalado.png
    :width: 400pt
@@ -189,7 +187,7 @@ Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Ve
 
    Desvios da média das cotações nas companhias A e B
    
-O gráfico da figura 61 reforça a conclusão anterior, da atividade ``Estratégia de investimento´´, de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
+O gráfico da figura 79 reforça a conclusão anterior, da atividade ``Estratégia de investimento´´, de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
 
 Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
 
@@ -214,31 +212,33 @@ O :index:`desvio médio absoluto` (DM) é definido como a média dos desvios da 
    
 Na tabela a seguir são apresentados os desvios da média em valor absoluto das cotações nas companhias A e B e, a respectiva soma. 
 
-+--------+------+-------+
-| semana | A    | B     |
-+--------+------+-------+
-| 1      | 0,5  | 5,5   |
-+--------+------+-------+
-| 2      | 5,5  | 13,5  |
-+--------+------+-------+
-| 3      | 1,5  | 9,5   |
-+--------+------+-------+
-| 4      | 4,5  | 20,5  |
-+--------+------+-------+
-| 5      | 5,5  | 15,5  |
-+--------+------+-------+
-| 6      | 1,5  | 28,5  |
-+--------+------+-------+
-| 7      | 5,5  | 5,5   |
-+--------+------+-------+
-| 8      | 3,5  | 19,5  |
-+--------+------+-------+
-| 9      | 5,5  | 28,5  |
-+--------+------+-------+
-| 10     | 5,5  | 4,5   |
-+--------+------+-------+
-| soma   | 39,0 | 151,0 |
-+--------+------+-------+
+.. table:: Desvios da média em valores absolutos para as companhias A e B
+   
+   +--------+------+-------+
+   | semana | A    | B     |
+   +--------+------+-------+
+   | 1      | 0,5  | 5,5   |
+   +--------+------+-------+
+   | 2      | 5,5  | 13,5  |
+   +--------+------+-------+
+   | 3      | 1,5  | 9,5   |
+   +--------+------+-------+
+   | 4      | 4,5  | 20,5  |
+   +--------+------+-------+
+   | 5      | 5,5  | 15,5  |
+   +--------+------+-------+
+   | 6      | 1,5  | 28,5  |
+   +--------+------+-------+
+   | 7      | 5,5  | 5,5   |
+   +--------+------+-------+
+   | 8      | 3,5  | 19,5  |
+   +--------+------+-------+
+   | 9      | 5,5  | 28,5  |
+   +--------+------+-------+
+   | 10     | 5,5  | 4,5   |
+   +--------+------+-------+
+   | soma   | 39,0 | 151,0 |
+   +--------+------+-------+
 
 Logo, concluímos que o desvio médio absoluto na companhia A é DM= `\frac{39}{10}=3,9` reais e, na companhia B, DM= `\frac{151}{10}=15,1` reais, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 4 vezes maior do que na companhia A com relação ao desvio médio (`{15,1}/{3,9}\approx 3,89`).
 
@@ -260,31 +260,33 @@ Uma outra forma de eliminar o sinal negativo dos desvios da média é elevar ao 
    
 Na tabela a seguir são apresentados os desvios da média elevados ao quadrado das cotações nas companhias A e B e, a respectiva soma. 
 
-+--------+-------+--------+
-| semana | A     | B      |
-+--------+-------+--------+
-| 1      | 0,25  | 30,25  |
-+--------+-------+--------+
-| 2      | 30,25 | 182,25 |
-+--------+-------+--------+
-| 3      | 2,25  | 90,25  |
-+--------+-------+--------+
-| 4      | 20,25 | 420,25 |
-+--------+-------+--------+
-| 5      | 30,25 | 240,25 |
-+--------+-------+--------+
-| 6      | 2,25  | 812,25 |
-+--------+-------+--------+
-| 7      | 30,25 | 30,25  |
-+--------+-------+--------+
-| 8      | 12,25 | 380,25 |
-+--------+-------+--------+
-| 9      | 30,25 | 812,25 |
-+--------+-------+--------+
-| 10     | 30,25 | 20,25  |
-+--------+-------+--------+
-| soma   | 188,5 | 3018,5 |
-+--------+-------+--------+
+.. table:: Desvios da média elevados ao quadrado para as companhias A e B
+   
+   +--------+-------+--------+
+   | semana | A     | B      |
+   +--------+-------+--------+
+   | 1      | 0,25  | 30,25  |
+   +--------+-------+--------+
+   | 2      | 30,25 | 182,25 |
+   +--------+-------+--------+
+   | 3      | 2,25  | 90,25  |
+   +--------+-------+--------+
+   | 4      | 20,25 | 420,25 |
+   +--------+-------+--------+
+   | 5      | 30,25 | 240,25 |
+   +--------+-------+--------+
+   | 6      | 2,25  | 812,25 |
+   +--------+-------+--------+
+   | 7      | 30,25 | 30,25  |
+   +--------+-------+--------+
+   | 8      | 12,25 | 380,25 |
+   +--------+-------+--------+
+   | 9      | 30,25 | 812,25 |
+   +--------+-------+--------+
+   | 10     | 30,25 | 20,25  |
+   +--------+-------+--------+
+   | soma   | 188,5 | 3018,5 |
+   +--------+-------+--------+
 
 Logo, concluímos que a variância na companhia A é `\frac{188,5}{10}=18,85\textsf{ reais}^2` e, na companhia B, `\frac{3018,5}{10}=301,85\textsf{ reais}^2` , indicando que a dispersão em torno da média na companhia B é cerca de 16 vezes maior do que na companhia A com relação à variância  (`301,85/18,85\approx 16`).  
 
@@ -309,21 +311,21 @@ Como a soma é finita, podemos reunir os termos semelhantes, obtendo
    
 
 
-No exemplo das cotações, podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38011` tal que a variância em A pode ser calculada por
+No exemplo das cotações, podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38.011` tal que a variância em A pode ser calculada por
 
 
 .. math::
 
-   \textsf{variância}=\frac{1}{10}\cdot (38011-10\cdot 61,5^2)=18,85\textsf{ reais}^2
+   \textsf{variância}=\frac{1}{10}\cdot (38.011-10\cdot 61,5^2)=18,85\textsf{ reais}^2
 
 e, na companhia B, 
 
-`\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=40841` tal que a variância em B pode ser calculada por
+`\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=40.841` tal que a variância em B pode ser calculada por
 
 
 .. math::
 
-   \textsf{variância}=\frac{1}{10}\cdot (40841-10\cdot 61,5^2)=301,85\textsf{ reais}^2
+   \textsf{variância}=\frac{1}{10}\cdot (40.841-10\cdot 61,5^2)=301,85\textsf{ reais}^2
    
 Vimos que o desvio médio absoluto da companhia B foi aproximadamente 4 vezes maior do que o da companhia A. Na comparação de variâncias, a variância da companhia B foi cerca de 16 vezes maior do que a da companhia A. Este grande aumento deve-se ao fato de que consideramos os desvios da média elevados ao quadrado no cálculo da variância. Observe que a unidade de medida na variância é o quadrado da unidade de medida das observações. Para retornar à escala de medida das observações, basta extrair a raiz quadrada da variância, levando a definição de desvio padrão, uma medida de dispersão em torno da média, na mesma unidade das observações.
 
@@ -351,12 +353,46 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
 
 .. admonition:: Por que utilizamos o desvio padrão e não o desvio médio na Estatística? 
 
-   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma um "bico" de difícil acesso, enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades conhecemos já bastante analiticamente. Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado Método dos Mínimos Quadrados.
+   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma uma mudança abrupta em torno de `x=0`,  enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades conhecemos já bastante analiticamente. Veja a figura a seguir.
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/funcoesmoduloequadratica.png
+      :width: 200pt
+      :align: center
+
+      Funções modular e quadrática com destaque para o comportamento em torno de x=0.
+      
+   Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado Método dos Mínimos Quadrados. 
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/gauss.png
+      :width: 200pt
+      :align: center
+
+      Carl Friedrich Gauss
+   
+**Variância populacional e amostral, desvio padrão populacional e amostral**
+
+No capítulo ``A Natureza da Estatística´´ foram definidos os termos parâmetro e estimador. Parâmetro é uma caraceterística numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população) usada para estimar o parâmetro, na maioria das vezes desconhecido. Embora a demonstração do resultado a ser apresentado aqui esteja fora do escopo deste livro, ele precisa ser destacado para que você possa escolher a ferramenta correta para calcular uma variância ou desvio padrão quando estiver usando algum aplicativo ou alguma planilha eletrônica. 
+
+Por exemplo, na planilha Excel, existem duas funções para calcular a variância, a saber, **var.p(dados)** para variância populacional e **var.a(dados)** para variância amostral. Também existem duas funções para calcular o desvio padrão: **desvpad.p(dados)** para desvio padrão populacional e **desvpad.a(dados)** para desvio padrão amostral. No GeoGebra, a função que calcula todas as medidas resumo, retorna as seguintes informações conforme a figura a seguir.
+
+
+.. _fig-medidas-resumo_Geogebra:
+
+.. figure:: _resources/dpap.png
+   :width: 200pt
+   :align: center
+
+   Medidas-resumo no GeoGebra
+ 
+Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (`\sigma` ) para representar desvio padrão populacional e `s` para representar desvio padrão amostral. Na verdade esta notação é muito usado nos textos de Estatística, incluinto `\sigma^2` para a variância populacional e `s^2` para a variância amostral.
    
 
-.. admonition:: Observação 2 
 
-   **variância populacional e amostral, desvio padrão populacional e amostral (Flávia)**
+
    
 
 .. admonition:: Observação 3 
