@@ -2,7 +2,7 @@
 Explorando: Avaliação da magnitude da variância
 ***********************************************
 
-.. _ativ-titulo-da-atividade:
+.. _ativ-inflacao-anual:
 
 -------------------------
 Atividade: Inflação anual
@@ -110,6 +110,47 @@ Praticando
 
 .. Análise comparativa dos dois tipos de bonificação
 
+
+.. _ativ-comparacao-dois-tipos-de-bonificacao:
+
+
+-----------------------------------------------------------------------------
+Atividade: Comparação das duas possibilidades de bonificação na Nota de Artes
+-----------------------------------------------------------------------------
+
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
+   
+   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas em sua turma seja o mais homênea possível em relação à média, ou seja, apresente o menor coeficiente de variação.
+   
+Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que para o professor, o ideal seja que o resultado geral de sua turma, seja o mais homgêneo possível em relação à média da turma. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
+
+Para facilitar, use as informações a seguir.
+
+.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
+   
+   +------------+---------+---------+----------+
+   | `n=35`     | antes   | 1 pt    | 20%      |
+   +------------+---------+---------+----------+
+   | `\sum x`   | 207,5   | 242,5   | 249,0    |
+   +------------+---------+---------+----------+
+   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
+   +------------+---------+---------+----------+
+
+
+
+
+.. admonition:: Resposta 
+
+   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média. Veja os cálculos a seguir.
+   
+   Considerando a acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. A variância, calculada por `s^2` é dada por \frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
+   
+   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por \frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
+   
 .. Avaliação do cv numa transformação de posição
 
 .. Avaliação do efito do cv  numa transformação de escala
