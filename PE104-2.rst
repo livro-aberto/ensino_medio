@@ -15,9 +15,18 @@ Atividade: Estratégia de Investimento
 
  **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
  
-.. texto introdutório explicativo da bolsa de valores
+Para investir na bolsa de valores compramos ações de empresas a um certo preço e depois vendemos estas ações, na expectativa de que seus preços tenham aumentado e, assim ter algum lucro no investimento. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
 
-Suponha que você tenha a oportunidade de investir um capital, comprando ações de uma de duas  Companhias `A` ou `B` e para escolher uma das duas, disponha de duas amostras de preços do valor destas ações registrados no fechamento da bolsa em dez sextas-feiras consecutivas. Veja na figura e na tabela a seguir a cotação das ações ao longo das últimas 10 semanas.
+
+.. _fig-investindo-na-bolsa:
+
+.. figure:: _resources/bolsa-de-valores.png
+   :width: 200pt
+   :align: center
+
+   Esquema simplificado de Investimento na Bolsa de Valores
+
+Suponha que você tenha a oportunidade de investir um capital, comprando ações de uma de duas  Companhias `A` ou `B` e para escolher uma das duas, disponha de duas amostras de preços do valor destas ações (em reais) registrados no fechamento da bolsa de valores em dez sextas-feiras consecutivas. Veja na figura e na tabela a seguir a cotação das ações ao longo das últimas 10 semanas.
 
 .. _fig-coloque-aqui-o-nome:
 
@@ -111,9 +120,9 @@ Organizando as ideias: Medidas de dispersão
 
 Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. 
 
-Enquanto as medidas de posição procuram sintetizar o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos (ou esparsos) são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na atividade anterior, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
+Enquanto as medidas de posição procuram resumir o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na :ref:`ativ-estrategia-de-investimento`, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
 
-Há uma piada irônica que conta que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há portanto que se avaliar a variabilidade dos dados coletados, a fim de tecer conclusões adequadas.
+Há uma piada irônica que conta que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há, portanto, que se avaliar a dispersão dos dados coletados, a fim de poder obter conclusões adequadas.
 
 Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
 
@@ -144,7 +153,7 @@ Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude
    :width: 200pt
    :align: center
 
-   Diagramas de pontos das notas
+   Diagramas de pontos das notas nas turmas A e B
 
 Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a :index:`distância entre quartis` (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
 
@@ -158,7 +167,7 @@ No exemplo anterior, como cada conjunto tem 10 observações, podemos identifica
 
 `\textsf{Notas da turma A}= \{ 1,1,\underbrace{1}_{\textsf{Q}1=x{(3)}},5,5,5,5,\overbrace{9}^{\textsf{Q}3=x{(8)}},9,9\}`
 
-Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, usando o mesmo raciocínio, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura 78.
+Deste modo, temos para a turma `A`, DQ=9-1=8 e, para a turma `B`, usando o mesmo raciocínio, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura :ref:`fig-diagrama-de-pontos-notas`.
 
 De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar o primeiro e terceiro quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
 
@@ -176,7 +185,7 @@ Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `
    
 Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
 
-Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Veja na figura a seguir a ilustração dos 10 desvios da média das duas companhias na qual a linha pontilhada representa a cotação média e os segmentos em vermelho indicam o tamanho do desvio da média.
+Por exemplo, considere os dados da :ref:`ativ-Estrategia-de-Investimento`. Veja na figura a seguir a ilustração dos desvios da média das duas companhias na qual a linha pontilhada representa a cotação média da companhia e os segmentos em vermelho indicam o tamanho do desvio da média.
 
 
 .. _fig-desvios-da-media:
@@ -195,7 +204,7 @@ Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, 
 
 `\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
 
-Portanto, não será possível usarmos a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
+Portanto, não será possível usar a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
 
 .. _sub-desviosmedioabsoluto:
 
@@ -203,12 +212,11 @@ Portanto, não será possível usarmos a soma dos desvios da média como medida 
 Desvio Médio Absoluto
 ---------------------
 
-O :index:`desvio médio absoluto` (DM) é definido como a média dos desvios da média tomados em valor absoluto. Deste modo todos tornam-se não-negativos e poderemos usar este resultado para avaliar a dispersão em torno da média.
-
+Tomando todos os desvios da média em valor absoluto, observe que todos passarão a ser não-negativos tal que a soma resultante não será sempre nula. Assim, pode-se construir uma medida de dispersão em torno da média no conjunto de dados, considerando todas as observações chamada :index:`desvio médio absoluto` (DM) que é definida como a média dos desvios da média tomados em valor absoluto.
 
 .. math::
 
-   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|
+   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|=\frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\cdots+|x_n-\bar{x}|}{n}
    
 Na tabela a seguir são apresentados os desvios da média em valor absoluto das cotações nas companhias A e B e, a respectiva soma. 
 
@@ -242,7 +250,18 @@ Na tabela a seguir são apresentados os desvios da média em valor absoluto das 
 
 Logo, concluímos que o desvio médio absoluto na companhia A é DM= `\frac{39}{10}=3,9` reais e, na companhia B, DM= `\frac{151}{10}=15,1` reais, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 4 vezes maior do que na companhia A com relação ao desvio médio (`{15,1}/{3,9}\approx 3,89`).
 
-.. apresentar fórmula para dados agrupados e exemplo 
+**Cálculo do desvio médio absoluto para dados agrupados**
+
+Se os dados estão agrupados em `c` intervalos de classe cujos pontos médios são dados por `\tilde{x}_1,\tilde{x}_2,\cdots,\tilde{x}_c`  o desvio médio absoluto pode ser aproximado por
+
+
+.. math::
+
+   DM=\frac{1}{n}\sum^c_{i=1}n_i|\tilde{x}_i-\bar{x}|=\sum^c_{i=1} f_i|\tilde{x}_i-\bar{x}|
+   
+em que `n_i` representa a frequência aboluta do `i`-ésimo intervalo de classe e, `f_i=\frac{n_i}{n}` representa a frequência relativa do `i`-ésimo intervalo de classe, `i=1,2,\cdots c`.
+   
+
 
 
 .. _sub-varianciaedesviopadrao:
@@ -256,7 +275,7 @@ Uma outra forma de eliminar o sinal negativo dos desvios da média é elevar ao 
 
 .. math::
 
-   \textsf{variância} = \frac{1}{n}\cdot \sum^n_{i=1} (x_i-\bar{x})^2
+   \textsf{variância} = \frac{1}{n}\cdot \sum^n_{i=1} (x_i-\bar{x})^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\cdots+(x_n-\bar{x})^2}{n}
    
 Na tabela a seguir são apresentados os desvios da média elevados ao quadrado das cotações nas companhias A e B e, a respectiva soma. 
 
@@ -309,9 +328,7 @@ Como a soma é finita, podemos reunir os termos semelhantes, obtendo
    \sum^n_{i=1}(x_i-\bar{x})^2=(x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2=\sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
    
    
-
-
-No exemplo das cotações, podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38.011` tal que a variância em A pode ser calculada por
+Na :ref:`ativ-estrategia-de-investimento` , podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38.011` tal que a variância em A pode ser calculada por
 
 
 .. math::
@@ -353,7 +370,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
 
 .. admonition:: Por que utilizamos o desvio padrão e não o desvio médio na Estatística? 
 
-   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma uma mudança abrupta em torno de `x=0`,  enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades conhecemos já bastante analiticamente. Veja a figura a seguir.
+   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma uma mudança abrupta em torno de `x=0`,  enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades analíticas são bem conhecidas. Veja a figura a seguir.
    
    .. _fig-coloque-aqui-o-nome:
 
@@ -375,7 +392,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
    
 **Variância populacional e amostral, desvio padrão populacional e amostral**
 
-No capítulo **A Natureza da Estatística** foram definidos os termos parâmetro e estimador. Parâmetro é uma característica numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro, na maioria das vezes desconhecido. Embora a demonstração do resultado a ser apresentado aqui esteja fora do escopo deste livro, ele precisa ser destacado para que você possa escolher a ferramenta correta para calcular uma variância ou desvio padrão quando estiver usando uma calculadora com funções estatísticas, algum aplicativo ou alguma planilha eletrônica. 
+No capítulo **A Natureza da Estatística** foram definidos os termos :index:`parâmetro` e :index:`estimador`. Parâmetro é uma característica numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro, na maioria das vezes desconhecido. Embora a demonstração do resultado a ser apresentado aqui esteja fora do escopo deste livro, ele precisa ser destacado para que você possa escolher a ferramenta correta para calcular uma variância ou desvio padrão quando estiver usando uma calculadora com funções estatísticas, algum aplicativo ou alguma planilha eletrônica. 
 
 Por exemplo, na planilha Excel, existem duas funções para calcular a variância, a saber, **var.p(dados)** para variância populacional e **var.a(dados)** para variância amostral. Também existem duas funções para calcular o desvio padrão: **desvpad.p(dados)** para desvio padrão populacional e **desvpad.a(dados)** para desvio padrão amostral. No GeoGebra, a função que calcula todas as medidas resumo, retorna as seguintes informações conforme a figura a seguir.
 
@@ -388,11 +405,11 @@ Por exemplo, na planilha Excel, existem duas funções para calcular a variânci
 
    Medidas-resumo no GeoGebra
  
-Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (`\sigma` ) para representar desvio padrão populacional e `s` para representar desvio padrão amostral. Na verdade esta notação é muito usada nos textos de Estatística, incluinto `\sigma^2` para a variância populacional e `s^2` para a variância amostral.
+Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (`\sigma` ) para representar desvio padrão populacional e `s` para representar desvio padrão amostral. Na verdade esta notação é muito usada nos textos de Estatística, incluindo `\sigma^2` para a variância populacional e `s^2` para a variância amostral. Em geral, na Estatística, usam-se letras gregas para representar parâmetros.
 
-Mas afinal, qual é a diferença entre as duas expressões e por que elas são diferentes?
+Mas afinal, qual é a diferença entre as duas expressões, o que elas representam?
 
-Se temos uma amostra e não a população, em geral, calculamos estimativas dos parâmetros. De fato, a média calculada por `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` será uma estimativa da média populacional, em geral denotada pela letra grega `\mu`. Como já dito anteriormente, a média aritmética apresenta boas propriedades como estimador da média populacional. No caso da variância, é possível verificar que, usando o denominador `n` para o seu cálculo (lembre-se que é uma média dos desvios quadrados da média), este estimador tende a produzir resultados menores do que o valor da variância populacional. No entanto, também é possível mostrar que uma pequena correção, resolve este problema chamado de viés de estimação. A correção envolve simplesmente trocar o denominador `n` da fórmula da variância para o denominador `n-1`. Assim, temos expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população, o que na prática, é o mais comum:
+Se temos uma amostra e não a população, em geral, calculamos estimativas dos parâmetros. De fato, a média calculada por `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` será uma estimativa da média populacional, em geral denotada pela letra grega `\mu`. Como já dito anteriormente, a média aritmética apresenta boas propriedades na teoria da Inferência Estatística, tornando-a um bom estimador para a média populacional. No caso da variância, se estamos trabalhando com uma amostra, é possível verificar que, usando o denominador `n` em seu cálculo (lembre-se que é uma média dos desvios quadrados da média), este estimador tende a produzir resultados menores do que o valor da variância populacional. No entanto, também é possível mostrar que uma pequena correção, resolve este problema chamado de viés de estimação. A correção envolve simplesmente trocar o denominador `n` da fórmula da variância para o denominador `n-1`. Assim, temos expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população, o que na prática, é o mais comum:
 
 
 .. math::
@@ -400,6 +417,8 @@ Se temos uma amostra e não a população, em geral, calculamos estimativas dos 
    \textsf{variância amostral}=s^2=\frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2
    
    \textsf{desvio padrão amostral}=\sqrt{s^2}=s
+   
+Se você estiver trabalhando com uma amostra e usar o denominador `n` para calcular a variância, isso implicará que você escolheu um estimador viesado, pois tende a produzir estimativas que são menores do que o verdadeiro valor da variância. Observe que se você estiver trabalhando com amostras muito grandes, essa diferença não será importante, pois haverá pouca diferença entre dividir por `n` ou por `n-1`.
    
 
 Expressões que deverão ser consideradas quando o conjunto de dados sob estudo refere-se à população com `n` elementos:
