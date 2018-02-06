@@ -187,7 +187,7 @@ Por exemplo, considere os dados da atividade ``Estratégia de Investimento''. Ve
 
    Desvios da média das cotações nas companhias A e B
    
-O gráfico da figura 79 reforça a conclusão anterior, da atividade ``Estratégia de investimento´´, de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
+O gráfico :ref:`fig-desvios-da-media` reforça a conclusão anterior, da :ref:`ativ-estrategia-de-investimento`, de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
 
 Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
 
@@ -375,7 +375,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
    
 **Variância populacional e amostral, desvio padrão populacional e amostral**
 
-No capítulo ``A Natureza da Estatística´´ foram definidos os termos parâmetro e estimador. Parâmetro é uma caraceterística numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população) usada para estimar o parâmetro, na maioria das vezes desconhecido. Embora a demonstração do resultado a ser apresentado aqui esteja fora do escopo deste livro, ele precisa ser destacado para que você possa escolher a ferramenta correta para calcular uma variância ou desvio padrão quando estiver usando algum aplicativo ou alguma planilha eletrônica. 
+No capítulo **A Natureza da Estatística** foram definidos os termos parâmetro e estimador. Parâmetro é uma característica numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro, na maioria das vezes desconhecido. Embora a demonstração do resultado a ser apresentado aqui esteja fora do escopo deste livro, ele precisa ser destacado para que você possa escolher a ferramenta correta para calcular uma variância ou desvio padrão quando estiver usando uma calculadora com funções estatísticas, algum aplicativo ou alguma planilha eletrônica. 
 
 Por exemplo, na planilha Excel, existem duas funções para calcular a variância, a saber, **var.p(dados)** para variância populacional e **var.a(dados)** para variância amostral. Também existem duas funções para calcular o desvio padrão: **desvpad.p(dados)** para desvio padrão populacional e **desvpad.a(dados)** para desvio padrão amostral. No GeoGebra, a função que calcula todas as medidas resumo, retorna as seguintes informações conforme a figura a seguir.
 
@@ -388,16 +388,40 @@ Por exemplo, na planilha Excel, existem duas funções para calcular a variânci
 
    Medidas-resumo no GeoGebra
  
-Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (`\sigma` ) para representar desvio padrão populacional e `s` para representar desvio padrão amostral. Na verdade esta notação é muito usado nos textos de Estatística, incluinto `\sigma^2` para a variância populacional e `s^2` para a variância amostral.
+Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (`\sigma` ) para representar desvio padrão populacional e `s` para representar desvio padrão amostral. Na verdade esta notação é muito usada nos textos de Estatística, incluinto `\sigma^2` para a variância populacional e `s^2` para a variância amostral.
+
+Mas afinal, qual é a diferença entre as duas expressões e por que elas são diferentes?
+
+Se temos uma amostra e não a população, em geral, calculamos estimativas dos parâmetros. De fato, a média calculada por `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` será uma estimativa da média populacional, em geral denotada pela letra grega `\mu`. Como já dito anteriormente, a média aritmética apresenta boas propriedades como estimador da média populacional. No caso da variância, é possível verificar que, usando o denominador `n` para o seu cálculo (lembre-se que é uma média dos desvios quadrados da média), este estimador tende a produzir resultados menores do que o valor da variância populacional. No entanto, também é possível mostrar que uma pequena correção, resolve este problema chamado de viés de estimação. A correção envolve simplesmente trocar o denominador `n` da fórmula da variância para o denominador `n-1`. Assim, temos expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população, o que na prática, é o mais comum:
+
+
+.. math::
+
+   \textsf{variância amostral}=s^2=\frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2
+   
+   \textsf{desvio padrão amostral}=\sqrt{s^2}=s
    
 
+Expressões que deverão ser consideradas quando o conjunto de dados sob estudo refere-se à população com `n` elementos:
 
+.. math::
 
+   \textsf{variância populacional} = \sigma^2=\frac{1}{n}\sum^n_{i=1}(x_i-\mu)^2
    
+   \textsf{desvio padrão populacional}=\sqrt{\sigma^2}=\sigma
+   
+**Cálculo da variância amostral para dados agrupados**
 
-.. admonition:: Observação 3 
+Sejam `\tilde{x}_1`, `\tilde{x}_2, \cdots, \tilde{x}_c` os pontos médios dos `c` intervalos de classe considerados e `n_1, n_2, \cdots, n_c` as respectivas frequências absolutas. Então, temos
 
-   **dados agrupados (Flávia)**
+
+.. math::
+
+   s^2 = \frac{1}{n-1}\sum^c_{i=1}n_i(\tilde{x}_i-\bar{x})^2=\frac{1}{n-1}\left(\sum^c_{i=1}n_i\tilde{x}^2_i- n\bar{x}^2\right )
+   
+em que `\bar{x}` é a média amostral. Se conhecemos apenas as frequências relativas do conjunto de dados, também podemos calcular a variância amostral por `s^2=\displaystyle{\sum^c_{i=1}}f_i(\tilde{x}_i-\bar{x})^2=\displaystyle{\sum^c_{i=1}}f_i\tilde{x}^2_i -\bar{x}^2`.
+
+O desvio padrão amostral é, então, calculado por `s=\sqrt{s^2}`.
 
 **********
 Praticando
@@ -420,7 +444,7 @@ Atividade: Comparação de conjuntos de dados
    
    O intuito é dar uma perspectiva para os estudantes da forma em que a estatística é utilizada na ciência para responder perguntas como:
    
-   * Uma deterinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
+   * Uma determinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
    
    * As meninas são mais altas que os meninos numa certa idade? Acontece o mesmo em todas as idades?
     
@@ -504,8 +528,56 @@ Sugere-se a construção dos histogramas para comparar os dois grupos. Você pod
 
 3. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas observações? Consulte  professores de outras áreas sobre suas conclusões.
 
-.. atividade valor empírico do desvio padrão e comparando com o valor obtido nas atividades
 
-.. atividade para avaliar o resultado empírico da desigualdade de Tchebychev remetendo aos conjuntos já analisados
+.. _ativ-aproxima-dpa-usando-R:
+
+-------------------------------------------------------------
+Atividade: Aproximação para o valor do desvio padrão amostral
+-------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+   
+ **Objetivos específicos** 
+   
+ Apresentar fórmula para obter uma aproximação do desvio padrão amostral em função da amplitude amostral.
+   
+ Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
+   
+ **Observações e sugestões** 
+   
+texto da atividade
+ 
+ 
+.. admonition:: Resposta 
+
+  texto
+   
+   
+   
+ .. _ativ-Tchebyshev:
+
+--------------------------------------------------------------
+Atividade: Avaliação empírica de frequência em torno da média
+--------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+   
+   **Objetivos específicos** Apresentar fórmula para obter limite superior para frequências numa distribuição conhecidos a média e o desvio padrão amostrais.
+   
+     
+   **Observações e sugestões**  
+   
+   
+texto da atividade
+
+
+.. admonition:: Resposta 
+
+   texto
+
+
+
 
 
