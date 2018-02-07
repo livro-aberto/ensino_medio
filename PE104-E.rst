@@ -4,10 +4,22 @@ Exercícios
 
 1. (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
 
-   1. ``Há, no grupo em questão, pelo menos um recruta que mede mais de 1,81 m e pelo menos um que mede menos de 1,81 m.´´
+   1. "Há, no grupo em questão, pelo menos um recruta que mede mais de 1,81 m e pelo menos um que mede menos de 1,81 m."
    
-   2. ``Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m.´´
+   2. "Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m."
    
+2. Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot.x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0` .
+
+   1. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
+
+   2. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
+
+   3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+
+
+
+
+     
    
 
 .. admonition:: Resposta 
@@ -17,6 +29,14 @@ Exercícios
       1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
       
       2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
+      
+   2. `y_i=c\cdot x_i`, `i=1,2,...,n`.
+   
+      1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
+      
+      2. Podemos verificar que a soma dos desvios da média tomados ao quadrado será dada pela soma original dos desvios da média elevados ao quadrado multiplicada por `c^2`, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}(c\cdot x_i-c\cdot \bar{x})^2=c^2\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial multiplicada por `c^2`, a saber, `s^2_y=c^2\cdot s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial multiplicado por `c`, `s_y=c\cdot s`. Lembre que estamos considerando `c>0`.
+      
+      3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial. 
 
 
 ********************
