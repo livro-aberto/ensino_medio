@@ -109,13 +109,97 @@ Você poder tentar simular este efeito usando a câmera do seu celular. Se reún
 Jogos que utilizam projeções
 ---------
 
-Vários jogos concretos ou digitais utilizam projeções, sejam elas apenas para criar a cena do jogo ou como uma componente da dinâmica do jogo. É claro que as projeções, neste caso, aparecem de uma forma mais informal do que a estudada neste capítulo, mas por trás da confecção do jogo, toda a Matemática discutida neste capítulo certamente foi utilizada. 
+Vários jogos concretos ou digitais utilizam projeções, sejam elas apenas para criar a cena do jogo ou como uma componente da dinâmica do jogo. E, em alguns, as ambiguidades existentes nas projeções em perspectiva são o tema principal.  É claro que as projeções, neste caso, aparecem de uma forma mais informal do que a estudada neste capítulo, mas por trás da confecção do jogo, toda a Matemática aqui discutida certamente foi utilizada.
 
-Vamos listar alguns jogos que envolvem projeção a seguir. Utilize tudo que você aprendeu até aqui e se divirta!
+Os jogos para *Playstation* chamados *Echochrome* e *Echochrome II* foram pioneiros em utilizar efeitos de ilusão de ótica em sua dinâmica. Estes dois jogos inspiraram a criação de muitos jogos que conhecemos hoje. Em *Echochrome*, o objetivo é levar o personagem através de um caminho do começo ao fim. Para isso, são necessárias mudanças de perspectiva que transformam caminhos impossíveis em factíveis. 
 
+
+.. ProjAplicado_Jogos_Echochrome:
+
+.. figure:: _resources/Echochrome.*
+   :width: 300pt
+   :align: center
+
+   Jogo Echochrome (Fonte: https://www.youtube.com/watch?v=GybxIwfU4rI)
+   
+Já em *Echochrome II*, para conduzir o personagem do início ao fim do caminho, são utilizadas luzes e sombras, que criam as ilusões de ótica por onde o personagem deve caminhar. Cada jogador enxerga de uma forma diferente os enigmas presentes no jogo, e portanto, existem infinitas possibilidades de condução do personagem. 
+
+.. ProjAplicado_Jogos_EchochromeII:
+
+.. figure:: _resources/EchochromeII.*
+   :width: 300pt
+   :align: center
+
+   Jogo Echochrome (Fonte: https://www.youtube.com/watch?v=bWMSpmqVUOY)
+   
+
+A seguir, vamos listar alguns jogos que envolvem projeção. Escolha um jogo, utilize tudo que você aprendeu até aqui e se divirta!
+
+**Jogo para vídeo-games:**
+
+* Fez: este é um jogo do tipo quebra-cabeça onde o personagem principal, chamado Gomez, imagina viver em um mundo 2D, mas ao receber um chapéu *Fez* percebe que o mundo é 3D. O jogador tem que ajudar Gomez a viver nesse mundo novo considerando as projeções do mundo 3D que possui. O objetivo é realinhar plataformas e resolver charadas para restaurar a ordem do universo. 
+
+Para entender melhor o funcionamento do jogo, assista o vídeo disponível em <https://www.youtube.com/watch?v=HFNIH3m6i2s>. Este vídeo possui áudio em português e cerca de 11 minutos. 
+
+Este jogo está disponível para *Playstation* e *Xbox*.
+
+.. ProjAplicado_Jogos_Fez:
+
+.. figure:: _resources/Fez.png
+   :width: 500pt
+   :align: center
+
+   Jogo Fez (Fonte: Wikipedia)
+   
+* The Bridge: neste jogo, o objetivo é levar o personagem principal Escher para a porta de saída. Esse caminho é cheio de  enigmas que são inspirados nas obras do artista M. C. Escher. O jogador tem que desafiar a gravidade, girar a cena, abrir portas, subir escadas e etc para assim conduzir o personagem pelo caminho da saída. 
+
+.. ProjAplicado_Jogos_TheBridge:
+
+.. figure:: _resources/TheBridge.*
+   :width: 300pt
+   :align: center
+
+   Jogo The Bridge (Fonte: https://www.youtube.com/watch?v=h8hOGbdoJdw)
+
+Este jogo está disponível para *Playstation* e *Xbox*, assim como para computadores e celulares.
+
+**Jogo para celular:**
+
+* Monument Valley: neste jogo, o jogador deve resolver quebra-cabeças inspirados nas criações do artista holandês M. C. Escher. É claro que os cenários são cheios de ilusões de ótica e arquiteturas que desafiam a lógica. O jogo está disponível para IOS e Android.
+
+.. ProjAplicado_Jogos_MonumentValley:
+
+.. figure:: _resources/MonumentValley.png
+   :width: 200pt
+   :align: center
+
+   Jogo Monument Valley (Fonte: https://www.monumentvalleygame.com/)
+   
+* Shadowmatic: o objetivo deste jogo é trabalhar com as sombras de objetos projetadas sobre uma parede provocadas por uma fonte de luz fora da tela. Os objetos que são projetados normalmente não se assemelham a nenhum objeto real e o jogador deve movimentá-lo até a sombra formar uma silhueta reconhecível. O jogo está disponível para IOS e Android.
+
+.. ProjAplicado_Jogos_Shadowmatic:   
+   
+.. figure:: _resources/ShadowmaticFish3.*
+   :width: 320pt
+   :align: center
+
+   Jogo Shadowmatic (Fonte: https://www.shadowmatic.com/)
+   
+
+**Jogo para computador:**
+
+* Perspective: neste jogo, o jogador deve mover o avatar em um cenário 3D que muda de acordo com a perspectiva. Nele nada é impossível, e sim questão de perspectiva! O jogo é gratuito e pode ser acessado no site <http://games.digipen.edu/games/perspective#.WnW81ZOpmCQ.> 
+
+.. ProjAplicado_Jogos_Perspective:   
+   
+.. figure:: _resources/Perspective2.*
+   :width: 320pt
+   :align: center
+
+   Jogo Perspective (Fonte: https://www.youtube.com/watch?v=SS4r9Fq3beU&t=25s)
 **Jogos concretos:**
 
-* La Boca: neste jogo, o jogador escolhe um outro jogador dentre os demais competidores que o ajudará a construir um sólido geométrico com um conjunto de blocos menores fornecidos pelo jogo. Cada jogador terá acesso à informações de apenas uma face do sólido (uma vista do sólido), sendo uma oposta à outra, e assim, cooperativamente eles devem fazer a construção. As jogadas são pontuadas para o par de jogadores de acordo com o tempo gasto na montagem, mas a pontuação final é individual e feita pela soma de todas as jogadas.
+* La Boca: neste jogo, o jogador escolhe um outro jogador dentre os demais competidores que o ajudará a construir um sólido geométrico com um conjunto de blocos menores disponibilizados pelo jogo. Cada um dos dois jogadores terá acesso à informações de apenas uma face do sólido (uma vista do sólido), sendo uma oposta à outra, e assim, cooperativamente eles devem fazer a construção. 
 
 .. ProjAplicado_Jogos_LaBoca:
 
@@ -125,7 +209,7 @@ Vamos listar alguns jogos que envolvem projeção a seguir. Utilize tudo que voc
 
    Jogo La Boca produzido pela empresa alemã Kosmos (Fonte: Amazon)
 
-O vídeo em português disponível em <https://www.youtube.com/watch?v=n7yiM_zak0Y> vai te ajudar a entender melhor o andamento do jogo. São apenas 3 minutos de vídeo.
+O vídeo em português disponível em <https://www.youtube.com/watch?v=n7yiM_zak0Y> vai te ajudar a entender melhor o andamento do jogo. São apenas 3 minutos de vídeo. Vale a pena assistir!
 
 OBS.: Se você ficou curioso com o nome do jogo, saiba que ele é inspirado na rua *Caminito* do bairro *La Boca*, que fica localizado em Buenos Aires-Argentina. Esta é uma rua com muitas casas com fachadas coloridas e ponto turístico certo de quem visita a cidade.
     
@@ -140,39 +224,6 @@ OBS.: Se você ficou curioso com o nome do jogo, saiba que ele é inspirado na r
    Jogo Papertown produzido pela editora brasileira RedBox (Fonte: http://rodrigorego.com.br/papertown.html)
    
 Assista a uma partida do jogo disponível em <https://www.youtube.com/watch?v=b_uhElq1sWM>. O vídeo possui áudio em português e cerca de 33 minutos.   
-
-**Jogo para vídeo-games:**
-
-* Fez: este é um jogo do tipo quebra-cabeça onde o personagem principal, chamado Gomez, imagina viver em um mundo 2D, mas ao receber um chapéu *Fez* percebe que o mundo é 3D. O jogador tem que ajudar Gomez a viver nesse mundo novo considerando as projeções do mundo 3D que possui. O objetivo é realinhar plataformas e resolver charadas para restaurar a ordem do universo. 
-
-Para entender melhor o funcionamento do jogo, assista o vídeo disponível em <https://www.youtube.com/watch?v=HFNIH3m6i2s>. Este vídeo possui áudio em português e cerca de 11 minutos. 
-
-Este jogo está disponível para Playstation e Xbox.
-
-.. ProjAplicado_Jogos_Fez:
-
-.. figure:: _resources/Fez.png
-   :width: 500pt
-   :align: center
-
-   Jogo Fez (Fonte: Wikipedia)
-
-**Jogo para celular:**
-
-* Monument Valley: neste jogo, o jogador deve resolver quebra-cabeças inspirados nas criações do artista holandês M. C. Escher. É claro que os cenários são cheios de ilusões de ótica e arquiteturas que desafiam a lógica. O jogo está disponível para IOS e Android.
-
-
-.. ProjAplicado_Jogos_MonumentValley:
-
-.. figure:: _resources/MonumentValley.png
-   :width: 200pt
-   :align: center
-
-   Jogo Monument Valley (Fonte: https://www.monumentvalleygame.com/)
-
-**Jogo para computador:**
-
-* Perspective: neste jogo, o jogador deve mover o avatar em um cenário 3D que muda de acordo com a perspectiva. Nele nada é impossível, e sim questão de perspectiva! O jogo é gratuito e pode ser acessado no site <http://games.digipen.edu/games/perspective#.WnW81ZOpmCQ.> 
 
 **Jogos em desenvolvimento:**
 
