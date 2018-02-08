@@ -17,7 +17,7 @@ Atividade: Inflação anual
  
  Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas suas médias são diferentes. 
  
- Motivar a definição de coeficiente de variação.
+ Perceber a necessidade de definir uma medida que avalie a magnitude da variância (desvio padrão) em relação à média.
  
  **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância. Como o dado observado é a inflação anual de um país, a atividade começa com um pequeno texto introdutório sobre inflação.
  
@@ -54,7 +54,7 @@ Foram observadas as inflações anuais de dois países A e B para os anos de 201
    3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
 
 
-.. _sec-coloque-aqui-o-nome:
+.. _sec-oi-cv:
 
 
 ==============================================
@@ -63,6 +63,8 @@ Organizando as ideias: Coeficiente de variação
 
 Nem sempre uma variância pequena (e consequentemente desvio-padrão pe-
 queno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
+
+Um conjunto de dados é classificado como relativamente homogêneo, se a dispersão em torno da média (desvio padrão) é pequena comparada ao valor da média. Os dados são ditos heterogêneos, se a dispersão em torno da média for moderada comparada ao valor da média. Os dados são superdispersos,  se a dispersão em torno da média for grande comparada à média. 
 
 Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? 
 
@@ -104,16 +106,16 @@ Uma escala que costuma ser utilizada para avaliar o coeficiente de variação é
    +-----------------------+--------------------------------+
    | Maior ou igual a 100% | dados com superdispersão       |
    +-----------------------+--------------------------------+
+   
+
 
 
 
 .. _sec-praticando3:
 
-==========
-Praticando
-==========
-
-.. Análise comparativa dos dois tipos de bonificação
+====================
+Praticando o assunto
+====================
 
 
 .. _ativ-comparacao-dois-tipos-de-bonificacao:
@@ -160,9 +162,9 @@ Para facilitar, use as informações a seguir.
 
 .. _ativ-transformacao-de-adicao:
 
--------------------------------------------------------
-Atividade: Efeito no CV por uma transformação de adição
--------------------------------------------------------
+--------------------------------------------------------------------------------
+Atividade: Efeito no coeficiente de variação por uma transformação de adição
+--------------------------------------------------------------------------------
 
 
 .. admonition:: Para o professor
@@ -208,48 +210,60 @@ Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em 
 Para saber mais
 ===============
 
-Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição de um conjunto de dados, fazendo uso das medidas de posição e dispersão. 
+Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição dos dados de um conjunto (`\{x_1,x_2,\cdots, x_n\}`), fazendo uso de medidas de posição e dispersão. 
 
-Um gráfico alternativo ao histograma para representar variáveis quantitativas muito utilizado na Estatística, conhecido como :index:`boxplot` (gráfico caixa), usa cinco medidas, que compõem o :index:`esquema dos cinco números`, a saber,  mínimo (`x_{(1)}`), primeiro quartil (Q1), mediana, terceiro quartil (Q3) e máximo (`x_{(n)}`). 
+Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística e conhecido como :index:`boxplot` (gráfico caixa), usa cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
 
-Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque do ano 2017.
+1. mínimo (`\textsf{Min}=x_{(1)}`), 
+2. primeiro quartil (`\textsf{Q}1`), 
+3. mediana (`\textsf{Q}2`), 
+4. terceiro quartil (`\textsf{Q}32`) e 
+5. máximo (`\textsf{Max}=x_{(n)}`). 
+
+Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque/2017.
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-boxplotmulheres:
 .. figure:: _resources/boxplotmulheres.png
    :width: 200pt
    :align: center
 
-   legenda
+   Boxplot dos 100 melhores tempos na Maratonoa de Nova Iorque/2017 na categoria mulheres
 
-Na construção deste gráfico, que pode ter orientação tanto vertical como horizontal, o primeiro passo é desenhar um retângulo cujas bases estão alinhadas ao primeiro e ao terceiro quartis e, em seguida, traçar um segmento paralelo às bases na altura mediana. Veja na figura a seguir.
+Na construção deste gráfico, o primeiro passo é construir um eixo na escala dos dados observados, que pode ter orientação tanto vertical como horizontal, e, depois, desenhar um retângulo cujas bases correspondem ao primeiro e ao terceiro quartis, de acordo com o eixo construído. Em seguida, traça-se um segmento paralelo às bases, correspondendo ao valor da mediana. Veja a figura a seguir, considerando o eixo na escala dos dados com orientação vertical.
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-caixadoboxplot:
 
 .. figure:: _resources/boxplotcaixa.png
    :width: 200pt
    :align: center
 
-   legenda
+   Caixa do boxplot
 
 
-Na construção do boxplot faz-se uma verificação de :index:`valores atípicos` na distribuição, isto é, valores que destoam dos demais no conjunto de dados. O critério adotado para classificar um valor como  atípico é descrito a seguir. 
+No boxplot toma-se a distância entre quartis (`\textsf{DQ}=Q3-Q1`) como medida de dispersão e assinala-se de forma destacada valores que são classificados como :index:`valores atípicos` da distribuição, isto é, valores que destoam dos demais no conjunto de dados. O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
 
-Valores menores do que `\textsf{Q}1-1,5\cdot \textsf{DQ}` ou maiores do que `\textsf{Q}3+1,5 \cdot \textsf{DQ}` são considerados atípicos e assinalados com um asterisco no gráfico. Veja a figura a seguir.
+Defina 
+
+`\textsf{cerca inferior}=\textsf{Q}1-1,5\cdot \textsf{DQ}` e `\textsf{cerca superior}=\textsf{Q}3+1,5\cdot \textsf{DQ}` 
 
 
-.. _fig-coloque-aqui-o-nome:
+
+Se `x_i< \textsf{cerca inferior}` ou `x_i> \textsf{cerca superior}` , então `x_i` é classificado como valor atípico, e assinalado no boxplot com um asterisco ou algum outro caracter, de acordo com o eixo na escala dos dados. Veja figura a seguir.
+
+
+.. _fig-valoresatipicosnoboxplot:
 
 .. figure:: _resources/boxplotdq_1.png
    :width: 200pt
    :align: center
 
-   legenda
+   Valores atípicos no boxplot
    
-Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando no maior valor não atípico observado e menor valor não atípico observado.
+Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando nos maior e menor valores não atípicos observados. Veja figura a seguir.
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-finalizacaodoboxplot:
 
 .. figure:: _resources/boxplotcompl.png
    :width: 200pt
@@ -257,18 +271,20 @@ Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eix
 
    Ilustração do boxplot
 
-Observação: Quando não houver a presença de pontos atípicos o gráfico reprentativo do boxplot será:
+A figura a seguir ilustra um boxplot quando não há valores atípicos no conjunto de dados. Observe que destacam-se no gráfico as medidas do esquema dos cinco números.
 
-
-.. _fig-coloque-aqui-o-nome:
+.. _fig-boxplotsemvaloratipico:
 
 .. figure:: _resources/boxplotx.png
    :width: 200pt
    :align: center
 
-   legenda
-O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão dentro da caixa (retângulo) e a outra metade do lado de fora, 25% acima e 25% abaixo. Neste gráfico a distância entre quartis (DQ=Q3-Q1) é usada como medida de dispersão. Além disso, as posições dos cinco números nos permitem avaliar a simetria da distribuição. Por exemplo, se
+   Boxplot quando não há valores atípicos
+   
+   
+O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão no intervalo delimitado pela  caixa (retângulo) e, a outra metade, está nos dois intervalos delimitados fora da caixa, sendo 25% acima e 25% abaixo da caixa. 
 
+As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetria da distribuição. Por exemplo, se
 
 `\textsf{Q}3-\textsf{mediana}\approx \textsf{mediana} -\textsf{Q}1`
    
@@ -280,8 +296,7 @@ podemos concluir que a distribuição é aproximadamente simétrica, porém se a
 
 .. incluir exemplos com os boxplots avaliando a simetria da distribuição
 
-O boxplot é muito útil quando há necessidade de comparar diferentes grupos. 
-
+O boxplot é muito útil quando há necessidade de comparar diferentes grupos, como veremos na atividade a seguir. 
 
 .. _ativ-comparacaodegruposusandoboxplot:
 
@@ -292,39 +307,75 @@ Atividade: Modalidades da Maratona de Nova Iorque 2017
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **Objetivos específicos** Comparar diferentes conjuntso de dados, considerando a mesma variável.
    
-   **Observações e sugestões**
+   **Observações e sugestões** Nesta atividade retomaremos as quatro categorais da maratona de Nova Iorque para usar o boxplot como esquema gráfico para auxiliar na comparação dos resultados para as diferentes categorias, a saber, homens, mulheres, cadeira de rodas e triciclo de mão. Os dados estão disponíveis neste `link <https://ggbm.at/ZhqKD9Nz>`_.
 
-Na figura a seguir apresentam-se os boxplots dos 100 melhores tempos para as quatro modalidades da maratona de Nova Iorque no ano de 2017.
+Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na maratona de Nova Iorque no ano de 2017 para as categorias homens e mulheres e os melhores tempos para as categorias cadeira de rodas e triciclo de mão e as medidas resumo calculadas pelo GeoGebra para as quatro categorias.
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-boxplotsmaratona:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
-   :width: 200pt
+.. figure:: _resources/boxplots_maratona.png
+   :width: 400pt
    :align: center
 
-   legenda
+   Boxplots para os 100 melhores tempos das categorias homens e mulheres e dos melhores tempos das categorias cadeira de rodas e triciclo de mão da maratona de Nova Iorque/2017
+   
+
+.. _fig-medidasresumo4categorias:
+
+.. figure:: _resources/resumo-quatrocategorias.png
+   :width: 500pt
+   :align: center
+
+   Medidas resumo para as quatro categorias da maratona de Nova Iorque/2017  
+ 
    
 1. Qual das modalidades apresentou maior dispersão?
 2. Qual(ais) modalidade(s) apresentaram valores atípicos?
 3. Como você avalia, em relação à simetria, cada uma das distribuições?
-4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres.
+4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres, usando a figura a seguir.
+
+.. _fig-boxplothm:
+
+.. figure:: _resources/bphm_1.png
+   :width: 300pt
+   :align: center
+
+   Boxplot dos 100 melhores tempos para homens e mulheres na maratona de Nova Iorque/2017
+   
 5. Faça uma análise comparativa das distribuições das modalidades cadeira de rodas e triciclo de mão. 
 
 
 .. admonition:: Resposta 
 
-   1. x
+   1. Considerando a amplitude amostral é fácil perceber que a maior dispersão ocorre na categoria triciclo de mão. O mesmo vale se considerarmos a distância entre quartis. Pela :ref:`fig-medidasresumo4categorias` podemos ver que esta resposta também valerá se considerarmos o desvio padrão. 
    
-   2. xx
+   2. Pela :ref:`fig-boxplotsmaratona` podemos ver que a única categoria que não apresentou valores atípicos foi a categoria das mulheres, pois não há pontos destacados no boxplot correspondente às mulheres.
    
-   3. xxxx
+   3. Considerando as categorias "cadeira de rodas" e "triciclo de mão", vemos que 
    
-   4. xxxxx
+   `\textsf{Q1-Min}<< \textsf{Max-Q}3`; 
    
-   5. xxxxx
+   `\textsf{Mediana-Q}1< \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} <<\textsf{Max-mediana}`, em que o símbolo `<<` é usado para indicar "bem menor do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à direita acentuada. Observe, que nestes dois casos tem-se que a mediana é menor do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   Considerando as categorias "homens" e "mulheres", vemos que 
+   
+   `\textsf{Q1-Min}>> \textsf{Max-Q}3`; 
+   
+   `\textsf{Mediana-Q}1 > \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} >>\textsf{Max-mediana}`, em que o símbolo `>>` é usado para indicar "bem maior do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à esquerda acentuada. Observe, que nestes dois casos tem-se que a mediana é maior do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetri à esquerda, mas na categoria mulheres não há pontos discrepantes. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   5. Considerando as categorias "cadeira de rodas" e "triciclo de mão" vemos que na primeira, 51 completaram a maratona e, na segunda, 69 completaram a amaratona. Quanto à amplitude, vemos que ela foi maior na cetegoria "triciclo de mão", valendo o mesmo para a distãncia entre quartis e para o desvio padrão. Possivelmente, esta diferença nas dispersões das duas categorias esteja sendo acarretada pelo maior valor atípico da categoria "triciclo de mão", a saber, 9,5206 h. Já foi observado que ambas as categorias apresentam distribuições com assimetria à direita de modo que a mediana ´e menor do que a média.
+   Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
    
 
 
