@@ -14,7 +14,7 @@ Atividade: Notas de Artes
 
  **Objetivos específicos** Estudar o efeito numa distribuição de dados após uma transformação simples: adição (posição) ou multiplicação (escala).
 
- **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam numa distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos no <**link**> e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos numa distribuição quando somamos um valor contante a todos os dados e quando multiplicamos um valor contante a todos os dados.
+ **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam numa distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos no `link <https://ggbm.at/TNh7dPCf>`_ , e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos numa distribuição quando somamos um valor contante a todos os dados e quando multiplicamos um valor contante a todos os dados.
 
 Ao final de um trimestre, um professor de Artes registrou as seguintes notas de seus 35 alunos, listadas no quadro a seguir, em ordem crescente.
 
@@ -79,7 +79,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das dua
    
    (b) Analisando os dois histogramas, percebe-se que o primeiro apresenta uma alteração de forma com intervalos mais largos e distribuição de frequências diferente. Assim, o primeiro tem sua forma diferente em relação ao original.
    
-   (c) Com o acréscimo de 1 ponto a cada média, a média maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a média de cada um, a média maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde au aumento de 20% na média de cada um e, o segundo, ao acréscimo de 1 ponto na média de cada um.
+   (c) Com o acréscimo de 1 ponto a cada nota, a nota maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a nota de cada um, a nota maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde ao aumento de 20% na nota de cada um e, o segundo, ao acréscimo de 1 ponto na nota de cada um.
    
    (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,93. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,93\approx 7,12`, em que `S=207,5`.
    
@@ -95,7 +95,7 @@ Atividade: A maratona
 
   **Objetivos específicos** Identificar a posição da média em diferentes formas de distribuição que apresentam assimetrias.
    
-  **Observações e sugestões** Nesta atividade serão apresentados conjuntos diferentes de dados envolvendo tempos para completar maratonas. Os dados estão disponíveis no <**link**>. Serão fornecidos os totais para que o cálculo das médias envolva apenas uma divisão e possa ser feito com uma calculadora simples. Pretende-se levar o aluno a perceber que na presença de forte assimetria (histograma alongado à direita ou à esquerda), a média pode ser uma medida pouco *representativa* do conjunto e com isso motivar a definição de mediana.
+  **Observações e sugestões** Nesta atividade serão apresentados conjuntos diferentes de dados envolvendo tempos para completar maratonas. Os dados estão disponíveis no `link <https://ggbm.at/ZhqKD9Nz>`_. Serão fornecidos os totais para que o cálculo das médias envolva apenas uma divisão e possa ser feito com uma calculadora simples. Pretende-se levar o aluno a perceber que na presença de forte assimetria (histograma alongado à direita ou à esquerda), a média pode ser uma medida pouco *representativa* do conjunto e com isso motivar a definição de mediana.
    
   É importante discutir as perguntas na caixa **Para refletir** em sala de aula com o intuito de que os estudantes percebam a necessidade de tratar previamente dados de determinada natureza antes de usá-los numericamente, como é o caso do tempo considerado em unidades distintas (hora:minuto:segundo).
    
@@ -162,6 +162,8 @@ A seguir analisaremos os tempos de corrida das 100 melhores atletas na categoria
   +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
   | 10 | 2:31:44 | 2:40:09 | 2:49:37 | 2:53:38 | 2:56:57 | 2:58:26 | 2:59:23 | 3:01:18 | 3:03:32 | 3:05:09 |
   +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  
+Observe que os tempos já estão ordenados do menor para o maior. Por exemplo, para identificar o tempo da quadragésima sétima chegada, basta tomar a interseção da linha 7 com a coluna +40 para obter o tempo 2:55:36. 
 
 
 .. admonition:: Para refletir
@@ -171,7 +173,6 @@ A seguir analisaremos os tempos de corrida das 100 melhores atletas na categoria
    * Como você construiria um histograma com estes dados, como você definiria os limites dos intervalos? (Consulte a :ref:`ativ-construcao-histograma` do capítulo **A Natureza da Estatística** em caso de dúvida.)  
    
    * Qual o maior tempo em que uma corredora deveria completar a maratona para ficar entre as 25 primeiras? E entre as 50 primeiras?
-
 
 .. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (em horas)
 
@@ -705,19 +706,19 @@ Para que servem os quartis da distribuição?
 
 Os quartis servem para 
 
-#. identificar valores atípicos da distribuição (se houver), também conhecidos como  dados discrepantes ou *outliers*; 
+#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
 #. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
 #. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
  
-Trabalharemos essas aplicações na :ref:`sec-Para-saber-mais` deste capítulo.
+Trabalharemos essas aplicações na :ref:`sec-Parasabermais` deste capítulo.
 
 
 
 .. _sec-praticando1:
 
-==========
-Praticando
-==========
+====================
+Praticando o assunto
+====================
 
 .. _ativ-maratona-categoria-homens:
 
