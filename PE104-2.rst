@@ -17,12 +17,11 @@ Atividade: Estratégia de Investimento
 
  **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
  
-Para investir na bolsa de valores compramos ações de empresas a um certo preço e depois vendemos estas ações, na expectativa de que seus preços tenham aumentado e, assim ter algum lucro no investimento. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
+Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
 
+.. _fig-coloque-aqui-o-nome:
 
-.. _fig-investindo-na-bolsa:
-
-.. figure:: _resources/bolsa-de-valores.png
+.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
    :width: 200pt
    :align: center
 
@@ -373,14 +372,14 @@ e, na companhia B,
 Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior do que o da companhia A.
 
 
-.. admonition:: Por que utilizamos o desvio padrão e não o desvio médio na Estatística? 
+.. admonition:: Por que o desvio padrão é preferível ao desvio médio? 
 
    Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma uma mudança abrupta em torno de `x=0`,  enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades analíticas são bem conhecidas. Veja a figura a seguir.
    
    .. _fig-coloque-aqui-o-nome:
 
-   .. figure:: _resources/funcoesmoduloequadratica.png
-      :width: 200pt
+   .. figure:: _resources/funcoesmoduloequadratica_2.png
+      :width: 300pt
       :align: center
 
       Funções modular e quadrática com destaque para o comportamento em torno de x=0.
@@ -510,7 +509,7 @@ No seu caderno ou em uma planilha eletrônica, registre os dados coletados, como
    |    `\vdots`  |  `\vdots`         |
    +--------------+-------------------+
 
-Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter os dados.
+Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter as medidas resumo dos dados.
 
 .. table:: Registre os seus resultados
 
@@ -569,13 +568,16 @@ Atividade: Aproximação para o valor do desvio padrão amostral
    
  **Objetivos específicos** 
    
- Apresentar fórmula para obter uma aproximação do desvio padrão amostral em função da amplitude amostral.
+ Calcular uma aproximação grosseira do desvio padrão amostral em função da amplitude amostral.
    
  Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
+ 
+ Avaliar o cálculo do desvio padrão, comparando com a aproximação.
    
  **Observações e sugestões** 
  
- Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno.
+ Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno. Além disso, esta atividade pode ser útil para o aluno avaliar se ele calculou corretamente um desvio padrão. É muito comum, mesmo informando-se somatórios e permitindo-se o uso de calculadoras, a produção de resultados incorretos para a variância e, conseuqnetemente, para o desvio padrão. Uma ferramenta útil pode ser sempre comparar o valor obtido do desvio padrão com a razão `R\4`. Se a diferença for grande (mais de 50% do valor de `s`) recomenda-se verificar novamente o cálculo de `s`.
+ 
  
 Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média (`[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` ). A partir desta informação, pode-se obter uma fórmula empírica para estimar o valor do desvio padrão amostral `s` dada por
 
@@ -586,7 +588,7 @@ Nos conjuntos de dados, quando não há valores atípicos (valores muito altos o
    
 em que `R` é a amplitude amostral. 
 
-a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio parão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
 
 .. _fig-resumoNArtes:
 
@@ -596,7 +598,7 @@ a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados d
 
    Estatísticas resumo das Notas de Artes 
    
-b) Idem para estimar o ``valor´´ do desvio padrão amostral dos dados da :ref:`ativ-Maratona-de-NY` e compare o valor obtido com o desvio parão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+b) Idem para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Maratona-de-NY` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
 
 .. _fig-summaryMaratonaMulheres:
 
@@ -606,9 +608,9 @@ b) Idem para estimar o ``valor´´ do desvio padrão amostral dos dados da :ref:
 
    Estatísticas resumo dos 100 melhores tempos para mulheres - Maratona de Nova Iorque/2017 
    
-c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-Estrategia-de_investimento`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-Estrategia-de-investimento`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-estrategia:
 
 .. figure:: _resources/summary_estrategiainvestimento.png
    :width: 200pt
@@ -632,9 +634,16 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
  b) Da figura :ref:`fig-summaryMaratonaMulheres` vemos que `s\approx 0,1866` e que `R=3,085-2,448=0,637`. Pela fórmula apresentada temos `{s}\approx\frac{0,637}{4}=0,15925`. 
  
  Comparando o valor aproximado de `s` (0,15925) com o valor calculado de `s` (0,1866) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 15% do valor de `s`, pois `\frac{|0,15925-0,1866|}{0,1866}\approx 0,15`. 
+ 
+ c) Da figura :ref:`fig-estrategia` vemos que, para a companhia A,  `s\approx 4,5765` e que `R=67-56=11`. Pela fórmula apresentada temos `{s}\approx\frac{11}{4}=2,75`. 
+ 
+ Comparando o valor aproximado de `s` (2,75) com o valor calculado de `s` (4,5765) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 40% do valor de `s`, pois `\frac{|2,75-4,5765|}{4,5765}\approx 0,4`. 
+ 
+ Da figura :ref:`fig-estrategia` vemos que, para a companhia B,  `s\approx 17,3738` e que `R=90-33=57`. Pela fórmula apresentada temos `{s}\approx\frac{57}{4}=14,25`. 
+ 
+ Comparando o valor aproximado de `s` (14,25) com o valor calculado de `s` (17,3738) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 18% do valor de `s`, pois `\frac{|14,25-17,3738|}{17,3738}\approx 0,18`. 
    
-   
-   
+ 
  .. _ativ-Tchebyshev:
 
 --------------------------------------------------------------
