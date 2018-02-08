@@ -390,7 +390,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
    .. _fig-coloque-aqui-o-nome:
 
    .. figure:: _resources/gauss.png
-      :width: 200pt
+      :width: 100pt
       :align: center
 
       Carl Friedrich Gauss
@@ -405,7 +405,7 @@ Por exemplo, na planilha Excel, existem duas funções para calcular a variânci
 .. _fig-medidas-resumo_Geogebra:
 
 .. figure:: _resources/dpap.png
-   :width: 200pt
+   :width: 300pt
    :align: center
 
    Medidas-resumo no GeoGebra
@@ -414,7 +414,7 @@ Veja, pela figura, que o GeoGebra usa a notação letra grega minúscula sigma (
 
 Mas afinal, qual é a diferença entre as duas expressões, o que elas representam?
 
-Se temos uma amostra e não a população, em geral, calculamos estimativas dos parâmetros. De fato, a média calculada por `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` será uma estimativa da média populacional, em geral denotada pela letra grega `\mu`. Como já dito anteriormente, a média aritmética apresenta boas propriedades na teoria da Inferência Estatística, tornando-a um bom estimador para a média populacional. No caso da variância, se estamos trabalhando com uma amostra, é possível verificar que, usando o denominador `n` em seu cálculo (lembre-se que é uma média dos desvios quadrados da média), este estimador tende a produzir resultados menores do que o valor da variância populacional. No entanto, também é possível mostrar que uma pequena correção, resolve este problema chamado de viés de estimação. A correção envolve simplesmente trocar o denominador `n` da fórmula da variância para o denominador `n-1`. Assim, temos expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população, o que na prática, é o mais comum:
+Se temos uma amostra e não a população, em geral, calculamos estimativas dos parâmetros. De fato, a média calculada por `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` será uma estimativa da média populacional, em geral denotada pela letra grega `\mu`. Como já dito anteriormente, a média aritmética apresenta boas propriedades na teoria da Inferência Estatística, tornando-a um bom estimador para a média populacional. No caso da variância, se estamos trabalhando com uma amostra, é possível verificar que, usando o denominador `n` em seu cálculo (lembre-se que é uma média dos desvios quadrados da média), este estimador tende a produzir resultados menores do que o valor da variância populacional. No entanto, também é possível mostrar que uma pequena correção, resolve este problema chamado de viés de estimação. A correção envolve simplesmente trocar o denominador `n` da fórmula da variância para o denominador `n-1`. Assim, as expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população são dadas por
 
 
 .. math::
@@ -422,6 +422,8 @@ Se temos uma amostra e não a população, em geral, calculamos estimativas dos 
    \textsf{variância amostral}=s^2=\frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2
    
    \textsf{desvio padrão amostral}=\sqrt{s^2}=s
+   
+Na maioria das vezes trabalhamos com amostras. Assim, neste capítulo, salvo menção em contrário, estaremos sempre calculando a variância amostral (`s^2`) e o desvio padrão amostral (`s`), mesmo que o termo "amostral" esteja omitido.
    
 Se você estiver trabalhando com uma amostra e usar o denominador `n` para calcular a variância, isso implicará que você escolheu um estimador viesado, pois tende a produzir estimativas que são menores do que o verdadeiro valor da variância. Observe que se você estiver trabalhando com amostras muito grandes, essa diferença não será importante, pois haverá pouca diferença entre dividir por `n` ou por `n-1`.
    
@@ -450,9 +452,9 @@ O desvio padrão amostral é, então, calculado por `s=\sqrt{s^2}`.
 
 .. _sec-praticando2:
 
-==========
-Praticando
-==========
+====================
+Praticando o assunto
+====================
 
 .. _ativ-compara-categorias:
 
@@ -465,7 +467,7 @@ Atividade: Comparação de conjuntos de dados
    
    **Objetivos específicos** Comparar diferentes distribuições de uma mesma variável quando separada por grupos.
    
-   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Mateática, outro grupo trabalha com alturas, etc.
+   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Matemática, outro grupo trabalha com alturas, etc.
    
    Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos. Para a realização dos cálculos deve ser usado suporte tecnológico: calculadoras, aplicativos, etc.   
    
@@ -572,13 +574,64 @@ Atividade: Aproximação para o valor do desvio padrão amostral
  Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
    
  **Observações e sugestões** 
+ 
+ Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno.
+ 
+Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média (`[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` ). A partir desta informação, pode-se obter uma fórmula empírica para estimar o valor do desvio padrão amostral `s` dada por
+
+
+.. math::
+
+   s\approx \frac{\overbrace{R}^{x_{(n)}-x_{(1)}}}{4}
    
-texto da atividade
+em que `R` é a amplitude amostral. 
+
+a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio parão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-resumoNArtes:
+
+.. figure:: _resources/summary_NArtes.png
+   :width: 100pt
+   :align: center
+
+   Estatísticas resumo das Notas de Artes 
+   
+b) Idem para estimar o ``valor´´ do desvio padrão amostral dos dados da :ref:`ativ-Maratona-de-NY` e compare o valor obtido com o desvio parão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-summaryMaratonaMulheres:
+
+.. figure:: _resources/summary_MaratonaNYMulheres.png
+   :width: 100pt
+   :align: center
+
+   Estatísticas resumo dos 100 melhores tempos para mulheres - Maratona de Nova Iorque/2017 
+   
+c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-Estrategia-de_investimento`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/summary_estrategiainvestimento.png
+   :width: 200pt
+   :align: center
+
+   Estatísticas resumo das cotações das ação nas Companhias A e B.
+
+
+
+
+   
+
  
  
 .. admonition:: Resposta 
 
-  texto
+ a) Da figura :ref:`fig-resumoNArtes` vemos que `s\approx 1,96` e que `R=8-0,8=7,2`. Pela fórmula apresentada temos `{s}\approx\frac{7,2}{4}=1,8`. 
+ 
+ Comparando o valor aproximado de `s` (1,8) com o valor calculado de `s` (1,96) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 8% do valor de `s`, pois `\frac{|1,8-1,96|}{1,96}\approx 0,08`. 
+ 
+ b) Da figura :ref:`fig-summaryMaratonaMulheres` vemos que `s\approx 0,1866` e que `R=3,085-2,448=0,637`. Pela fórmula apresentada temos `{s}\approx\frac{0,637}{4}=0,15925`. 
+ 
+ Comparando o valor aproximado de `s` (0,15925) com o valor calculado de `s` (0,1866) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 15% do valor de `s`, pois `\frac{|0,15925-0,1866|}{0,1866}\approx 0,15`. 
    
    
    
