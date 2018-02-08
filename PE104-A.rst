@@ -1,8 +1,11 @@
-***********************************************
-Explorando: Avaliação da magnitude da variância
-***********************************************
+.. _sec-explorando3:
 
-.. _ativ-titulo-da-atividade:
+
+===============================================
+Explorando: Avaliação da magnitude da variância
+===============================================
+
+.. _ativ-inflacao-anual:
 
 -------------------------
 Atividade: Inflação anual
@@ -50,12 +53,16 @@ Foram observadas as inflações anuais de dois países A e B para os anos de 201
    
    3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
 
-**********************************************
+
+.. _sec-coloque-aqui-o-nome:
+
+
+==============================================
 Organizando as ideias: Coeficiente de variação
-**********************************************
+==============================================
 
 Nem sempre uma variância pequena (e consequentemente desvio-padrão pe-
-queno) signi.ca pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
+queno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
 
 Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? 
 
@@ -78,9 +85,9 @@ Esta expressão é usada quando dispomos de uma amostra da população. Se, disp
 
 .. math::
 
-   CVP=\frac{{\sigma}}{\textsf{média populacional}}\cdot 100\%
+   CVP=\frac{{\sigma}}{\mu}\cdot 100\%
    
-em que `\sigma` é o desvio padrão populacional.
+em que `\sigma` é o desvio padrão populacional e `\mu` é a média populacional.
 
 Observe que o coeficiente de variação só é definido para conjuntos cuja média é diferente de zero.
 
@@ -100,25 +107,106 @@ Uma escala que costuma ser utilizada para avaliar o coeficiente de variação é
 
 
 
+.. _sec-praticando3:
 
-
-
-
-**********
+==========
 Praticando
-**********
+==========
 
 .. Análise comparativa dos dois tipos de bonificação
 
-.. Avaliação do cv numa transformação de posição
 
-.. Avaliação do efito do cv  numa transformação de escala
+.. _ativ-comparacao-dois-tipos-de-bonificacao:
 
 
- 
-***************
+-----------------------------------------------------------------------------
+Atividade: Comparação das duas possibilidades de bonificação na Nota de Artes
+-----------------------------------------------------------------------------
+
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
+   
+   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas em sua turma seja o mais homênea possível em relação à média, ou seja, apresente o menor coeficiente de variação.
+   
+Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que o professor deseja que o resultado geral de sua turma seja o mais homogêneo possível em relação à média da turma. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
+
+Para facilitar, use as informações a seguir.
+
+.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
+   
+   +------------+---------+---------+----------+
+   | `n=35`     | antes   | 1 pt    | 20%      |
+   +------------+---------+---------+----------+
+   | `\sum x`   | 207,5   | 242,5   | 249,0    |
+   +------------+---------+---------+----------+
+   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
+   +------------+---------+---------+----------+
+
+
+
+
+.. admonition:: Resposta 
+
+   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média, conforme os cálculos a seguir.
+   
+   Considerando o acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. 
+   A variância, calculada por `s^2` é dada por `\frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
+   
+   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por `\frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
+   
+
+.. _ativ-transformacao-de-adicao:
+
+-------------------------------------------------------
+Atividade: Efeito no CV por uma transformação de adição
+-------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Obter uma expressão geral para o cálculo de medidas de posição e dispersão, quando os dados são transformados pela adição de uma constante.
+   
+   **Observações e sugestões** Esta atividade buscará formalizar o que já foi feito na :ref:`ativ-comparacao-dois-tipos-de-bonificacao` para uma situação genérica. A ideia é levar o estudante a concluir que ao adicionar uma constante a todos os dados, as medidas de posição serão afetadas igualmente pela adição de uma constante, mas, as medidas de dispersão não serão afetadas. Desse modo, se o valor da constante for positivo, a média aumentará e o desvio padrão permanecerá o mesmo, acarretando na diminuição do coeficiente de variação após a transformação. Se a constante for negativa, a transformação acarretará no aumento do coeficiente de variação. Uma atividade similar será proposta nos exercícios, trabalhando com a transformação de multiplicação por uma constante.
+   
+   A caixa para refletir sugere uma discussão em sala de aula, para estender as conclusões desta atividade para todas as medidas de posição trabalhadas e todas as medidas de dispersão trabalhadas neste capítulo, ou seja, que no caso das medidas de posição, todas são afetadas pela mesma trasnformação, mas as medidas de dispersão não são afetadas pela transformação de adição de uma constante.
+   
+Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=x_i+a`, `i=1,2,\cdots, n` e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` .
+
+#. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
+
+#. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
+
+#. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+
+
+.. admonition:: Resposta 
+
+    a) A média do novo conjunto será dada pela média inicial acrescida da constante `a`, pois
+    `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{x_1+a+x_2+a+\cdots+x_n+a} {n}=`
+    `\frac{\displaystyle{\sum^n_{i=1}}x_i+n\cdot a}{n}=\frac{\displaystyle{\sum^n_{i=1}}x_i}{n}+\frac{n\cdot a}{n}=\bar{x}+a`
+      
+    b) Podemos verificar que a soma dos desvios da média tomados ao quadrado é a mesma nos dois conjuntos, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}[\underbrace{x_i+a}_{=y_i}-(\overbrace{\bar{x}+a)}^{=\bar{y}}]^2=\displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.
+    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial, a saber, `s^2_y=s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial, `s_y=s`.
+    
+    c) Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{s_y}{\bar{y}}\cdot 100=\frac{s}{\bar{x}+a}\cdot 100`. Logo, se o `a>0`, o coeficiente de variação do novo conjunto será menor do que o coeficiente de variação do conjunto inicial. Porém, se `a<0`, o coeficiente de variação do novo conjunto será maior do que o coeficiente de variação do conjunto inicial.
+    
+    
+.. admonition:: Para Refletir 
+
+   1. Mantendo a mesma situação da :ref:`ativ-transformacao-de-adicao`, compare as demais medidas de posição do novo conjunto com o conjunto inicial apresentadas neste capítulo. O que você pode concluir?
+   
+   2. Agora compare as demais medidas de dispersão capítulo do novo conjunto com o conjunto inicial apresentadas neste capítulo. O que você pode concluir?
+   
+
+
+.. _sec-parasabermais:
+
+===============
 Para saber mais
-***************
+===============
 
 Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição de um conjunto de dados, fazendo uso das medidas de posição e dispersão. 
 
