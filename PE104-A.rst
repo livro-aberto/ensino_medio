@@ -171,24 +171,36 @@ Atividade: Efeito no coeficiente de variação por uma transformação de adiç�
 
    **Objetivos específicos** Obter uma expressão geral para o cálculo de medidas de posição e dispersão, quando os dados são transformados pela adição de uma constante.
    
-   **Observações e sugestões** Esta atividade buscará formalizar o que já foi feito na :ref:`ativ-comparacao-dois-tipos-de-bonificacao` para uma situação genérica. A ideia é levar o estudante a concluir que ao adicionar uma constante a todos os dados, as medidas de posição serão afetadas igualmente pela adição de uma constante, mas, as medidas de dispersão não serão afetadas. Desse modo, se o valor da constante for positivo, a média aumentará e o desvio padrão permanecerá o mesmo, acarretando na diminuição do coeficiente de variação após a transformação. Se a constante for negativa, a transformação acarretará no aumento do coeficiente de variação. Uma atividade similar será proposta nos exercícios, trabalhando com a transformação de multiplicação por uma constante.
+   **Observações e sugestões** Esta atividade buscará formalizar o que já foi feito na :ref:`ativ-comparacao-dois-tipos-de-bonificacao` para uma situação genérica. A ideia é levar o estudante a concluir que ao adicionar uma constante a todos os dados, as medidas de posição serão afetadas igualmente pela adição de uma constante, mas, as medidas de dispersão não serão afetadas. Desse modo, se o valor da constante for positivo, a média aumentará e o desvio padrão permanecerá o mesmo, acarretando na diminuição do coeficiente de variação após a transformação. Se a constante for negativa, a transformação acarretará no aumento do coeficiente de variação. Na seção de exercícios, foi proposta uma atividade similar, considerando a transformação de multiplicação por uma constante positiva.
    
-   A caixa para refletir sugere uma discussão em sala de aula, para estender as conclusões desta atividade para todas as medidas de posição trabalhadas e todas as medidas de dispersão trabalhadas neste capítulo, ou seja, que no caso das medidas de posição, todas são afetadas pela mesma trasnformação, mas as medidas de dispersão não são afetadas pela transformação de adição de uma constante.
+   A caixa para refletir sugere uma discussão em sala de aula de modo a estender as conclusões desta atividade para as demais medidas de posição e de dispersão trabalhadas neste capítulo, ou seja, 
    
-Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=x_i+a`, `i=1,2,\cdots, n` e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` .
+   #. medidas de posição: todas são afetadas pela mesma trasnformação, 
+      
+   #. medidas de dispersão: não são afetadas pela transformação de adição de uma constante.
+   
+Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
+
+Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que 
+
+.. math::
+
+   y_i=x_i+a,\quad  i=1,2,\cdots, n  
+   
+e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` .
 
 #. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
 
 #. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
 
-#. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+#. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. São iguais? Por quê?  
 
 
 .. admonition:: Resposta 
 
     a) A média do novo conjunto será dada pela média inicial acrescida da constante `a`, pois
     `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{x_1+a+x_2+a+\cdots+x_n+a} {n}=`
-    `\frac{\displaystyle{\sum^n_{i=1}}x_i+n\cdot a}{n}=\frac{\displaystyle{\sum^n_{i=1}}x_i}{n}+\frac{n\cdot a}{n}=\bar{x}+a`
+    `\frac{\displaystyle{\sum^n_{i=1}}x_i+n\cdot a}{n}=\frac{\displaystyle{\sum^n_{i=1}}x_i}{n}+\frac{n\cdot a}{n}=\bar{x}+a` .
       
     b) Podemos verificar que a soma dos desvios da média tomados ao quadrado é a mesma nos dois conjuntos, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}[\underbrace{x_i+a}_{=y_i}-(\overbrace{\bar{x}+a)}^{=\bar{y}}]^2=\displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.
     Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial, a saber, `s^2_y=s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial, `s_y=s`.
@@ -198,9 +210,9 @@ Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em 
     
 .. admonition:: Para Refletir 
 
-   1. Mantendo a mesma situação da :ref:`ativ-transformacao-de-adicao`, compare as demais medidas de posição do novo conjunto com o conjunto inicial apresentadas neste capítulo. O que você pode concluir?
+   1. Mantendo a mesma situação da :ref:`ativ-transformacao-de-adicao`, compare as demais medidas de posição do novo conjunto com o conjunto inicial, considerando as medidas apresentadas neste capítulo.  O que você pode concluir?
    
-   2. Agora compare as demais medidas de dispersão capítulo do novo conjunto com o conjunto inicial apresentadas neste capítulo. O que você pode concluir?
+   2. Compare as demais medidas de dispersão do novo conjunto com as do conjunto inicial, considerando as medidas apresentadas neste capítulo. O que você pode concluir?
    
 
 
@@ -210,14 +222,14 @@ Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em 
 Para saber mais
 ===============
 
-Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, analisar, calcular e interpretar informações da distribuição dos dados de um conjunto (`\{x_1,x_2,\cdots, x_n\}`), fazendo uso de medidas de posição e dispersão. 
+Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, calcular e interpretar informações sobre a distribuição dos dados de um conjunto `\{x_1,x_2,\cdots, x_n\}`, utilizando medidas de posição e dispersão. 
 
-Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística e conhecido como :index:`boxplot` (gráfico caixa), usa cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
+Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística, é conhecido como :index:`boxplot` (gráfico caixa). A construção deste gráfico é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
 
 1. mínimo (`\textsf{Min}=x_{(1)}`), 
 2. primeiro quartil (`\textsf{Q}1`), 
 3. mediana (`\textsf{Q}2`), 
-4. terceiro quartil (`\textsf{Q}32`) e 
+4. terceiro quartil (`\textsf{Q}3`) e 
 5. máximo (`\textsf{Max}=x_{(n)}`). 
 
 Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque/2017.
@@ -228,9 +240,9 @@ Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulhe
    :width: 200pt
    :align: center
 
-   Boxplot dos 100 melhores tempos na Maratonoa de Nova Iorque/2017 na categoria mulheres
+   Boxplot dos 100 melhores tempos na Maratonona de Nova Iorque/2017 na categoria mulheres
 
-Na construção deste gráfico, o primeiro passo é construir um eixo na escala dos dados observados, que pode ter orientação tanto vertical como horizontal, e, depois, desenhar um retângulo cujas bases correspondem ao primeiro e ao terceiro quartis, de acordo com o eixo construído. Em seguida, traça-se um segmento paralelo às bases, correspondendo ao valor da mediana. Veja a figura a seguir, considerando o eixo na escala dos dados com orientação vertical.
+O primeiro passo na construção do boxplot é traçar um eixo na escala dos dados observados, que pode ter orientação tanto vertical como horizontal, e, depois, desenhar um retângulo cujas bases correspondem ao primeiro e ao terceiro quartis, de acordo com o eixo. Em seguida, traça-se um segmento paralelo às bases, correspondendo ao valor da mediana. Veja a figura a seguir, considerando o eixo na escala dos dados com orientação vertical.
 
 
 .. _fig-caixadoboxplot:
@@ -242,11 +254,15 @@ Na construção deste gráfico, o primeiro passo é construir um eixo na escala 
    Caixa do boxplot
 
 
-No boxplot toma-se a distância entre quartis (`\textsf{DQ}=Q3-Q1`) como medida de dispersão e assinala-se de forma destacada valores que são classificados como :index:`valores atípicos` da distribuição, isto é, valores que destoam dos demais no conjunto de dados. O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
+A distância entre quartis (`\textsf{DQ}=\textsf{Q}3-\textsf{Q}1`) é a medida de dispersão utilizada na classificação de :index:`valores atípicos<valores atípicos>` da distribuição, isto é, valores que destoam dos demais no conjunto de dados. 
+
+O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
 
 Defina 
 
-`\textsf{cerca inferior}=\textsf{Q}1-1,5\cdot \textsf{DQ}` e `\textsf{cerca superior}=\textsf{Q}3+1,5\cdot \textsf{DQ}` 
+.. math::
+
+   \textsf{cerca inferior}=\textsf{Q}1-1,5\cdot \textsf{DQ}\textsf{ e }\textsf{cerca superior}=\textsf{Q}3+1,5\cdot \textsf{DQ}
 
 
 
@@ -261,7 +277,7 @@ Se `x_i< \textsf{cerca inferior}` ou `x_i> \textsf{cerca superior}` , então `x_
 
    Valores atípicos no boxplot
    
-Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando nos maior e menor valores não atípicos observados. Veja figura a seguir.
+Na finalização da contrução do boxplot, traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando nos maior e menor valores não atípicos observados. Veja figura a seguir.
 
 .. _fig-finalizacaodoboxplot:
 
@@ -271,7 +287,7 @@ Na finalização da contrução do boxplot traçam-se segmentos paralelos ao eix
 
    Ilustração do boxplot
 
-A figura a seguir ilustra um boxplot quando não há valores atípicos no conjunto de dados. Observe que destacam-se no gráfico as medidas do esquema dos cinco números.
+A figura a seguir ilustra um boxplot quando não há valores atípicos no conjunto de dados. Observe que neste caso, destacam-se no gráfico as medidas do esquema dos cinco números.
 
 .. _fig-boxplotsemvaloratipico:
 
@@ -280,23 +296,39 @@ A figura a seguir ilustra um boxplot quando não há valores atípicos no conjun
    :align: center
 
    Boxplot quando não há valores atípicos
-   
-   
+  
 O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão no intervalo delimitado pela  caixa (retângulo) e, a outra metade, está nos dois intervalos delimitados fora da caixa, sendo 25% acima e 25% abaixo da caixa. 
 
 As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetria da distribuição. Por exemplo, se
 
-`\textsf{Q}3-\textsf{mediana}\approx \textsf{mediana} -\textsf{Q}1`
-   
-`\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
-   
-`\textsf{Q}1-x{(1)} \approx x_{(n)}-\textsf{Q}3`
+#. `\textsf{mediana} -\textsf{Q}1\approx \textsf{Q}3-\textsf{mediana}`
+ 
+#. `\textsf{Q}1-x{(1)} \approx x_{(n)}-\textsf{Q}3`
+
+#. `\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
 
 podemos concluir que a distribuição é aproximadamente simétrica, porém se alguns destes pares de intervalos apresentarem comprimentos muito diferentes, isso indica que a distribuição apresenta algum tipo de assimetria.
 
-.. incluir exemplos com os boxplots avaliando a simetria da distribuição
+Analisando a :ref:`fig-boxplotmulheres` podemos observar que 
 
-O boxplot é muito útil quando há necessidade de comparar diferentes grupos, como veremos na atividade a seguir. 
+#. não existem valores discrepantes;
+#. o melhor tempo é ligeiramente inferior a 2,5 h e, o centésimo tempo, é ligeiramente inferior a 3,1 h;
+#. o tempo que corresponde à mediana está entre 2,9 h e 3,0 h;
+#. o primeiro quartil está próximo de 2,8 h e, o terceiro, próximo de 3,0 h e que 
+#. a distribuição dos 100 melhores tempos na categoria mulheres apresenta assimetria à esquerda. Verifique que
+
+`\textsf{mediana} -\textsf{Q}1 > \textsf{Q}3-\textsf{mediana}`
+ 
+`\textsf{Q}1-x_{(1)} >> x_{(n)}-\textsf{Q}3`
+
+`\textsf{mediana}-x_{(1)}>> x_{(n)}-\textsf{mediana}`  em que o símbolo `>>` é usado para representar "bem  maior do que".
+
+
+Os valores exatos destas medidas estão na figura :ref:`fig-medidasresumo4categorias`.
+
+
+
+O boxplot é muito útil na comparação de diferentes grupos, como veremos na atividade a seguir. 
 
 .. _ativ-comparacaodegruposusandoboxplot:
 
@@ -307,7 +339,7 @@ Atividade: Modalidades da Maratona de Nova Iorque 2017
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos** Comparar diferentes conjuntso de dados, considerando a mesma variável.
+   **Objetivos específicos** Comparar diferentes conjuntos de dados, considerando a mesma variável.
    
    **Observações e sugestões** Nesta atividade retomaremos as quatro categorais da maratona de Nova Iorque para usar o boxplot como esquema gráfico para auxiliar na comparação dos resultados para as diferentes categorias, a saber, homens, mulheres, cadeira de rodas e triciclo de mão. Os dados estão disponíveis neste `link <https://ggbm.at/ZhqKD9Nz>`_.
 
@@ -372,7 +404,7 @@ Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na m
    `\textsf{Mediana-Min} >>\textsf{Max-mediana}`, em que o símbolo `>>` é usado para indicar "bem maior do que". 
    Logo, conclui-se que nestas categorias tem-se assimetria à esquerda acentuada. Observe, que nestes dois casos tem-se que a mediana é maior do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
    
-   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetri à esquerda, mas na categoria mulheres não há pontos discrepantes. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetria à esquerda, mas na categoria mulheres não há pontos discrepantes. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
    
    5. Considerando as categorias "cadeira de rodas" e "triciclo de mão" vemos que na primeira, 51 completaram a maratona e, na segunda, 69 completaram a amaratona. Quanto à amplitude, vemos que ela foi maior na cetegoria "triciclo de mão", valendo o mesmo para a distãncia entre quartis e para o desvio padrão. Possivelmente, esta diferença nas dispersões das duas categorias esteja sendo acarretada pelo maior valor atípico da categoria "triciclo de mão", a saber, 9,5206 h. Já foi observado que ambas as categorias apresentam distribuições com assimetria à direita de modo que a mediana ´e menor do que a média.
    Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
