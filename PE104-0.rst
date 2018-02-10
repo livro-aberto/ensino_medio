@@ -56,15 +56,15 @@
   #. a média pode ser um valor que não pertence ao conjunto analisado;
   #. a média é um valor representativo do conjunto analisado.
 
-  Após definir a média e explorar algumas de suas propriedades, pretende-se apresentar situações em que ela pode ser inadequada como valor representativo de uma distribuição (distribuições com forte assimetria), motivando assim a definição da mediana, uma medida que é pouco afetada por valores extremos.
+  Após definir a média e explorar algumas de suas propriedades, situações em que ela pode ser inadequada como valor representativo de uma distribuição (distribuições com forte assimetria) são apresentadas, motivando assim a definição da mediana, uma medida que é pouco afetada por valores extremos.
 
-  Uma vez definidas média e mediana, pretende-se apresentar uma situação em que ambas podem ser consideradas inadequadas como valores representativos de uma distribuição (distribuições bimodais simétricas), motivando assim a definição da moda.
+  Uma vez definidas média e mediana, uma situação em que ambas podem ser consideradas inadequadas como valores representativos de uma distribuição (distribuições bimodais simétricas) é apresentada, motivando assim a definição da moda.
 
-  Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base num exemplo com dados reais em que todos os conjuntos apresentam média, mediana e moda coincidentes, mas apresentam distribuições empíricas diferentes (traduzidas no diagrama de pontos). 
+  Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base numa atividade em que dois conjuntos de dados apresentam média, mediana e moda coincidentes, mas suas distribuições são diferentes. 
 
-  Finalmente, após a definição das medidas de dispersão, será proposta uma atividade na qual variados conjuntos de dados apresentam a mesma variância. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
+  Finalmente, após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
  
-  Na seção **Para saber mais** será apresentado o esquema dos cinco números - mínimo, quartis e máximo - usado na construção do boxplot. Os boxplots são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, será apresentado o critério adotado para considerar um valor do conjunto como valor destoante em relação aos demais valores do conjunto de dados. 
+  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, comjunto formado pleas mmedidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado o critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
 
   **Diferencial do Capítulo**
 
@@ -78,22 +78,23 @@
 
   Embora a fórmula de cálculo da variância seja necessária, evitaremos seu uso direto, isto é, exploraremos o uso da tecnologia para obter variância, desvio padrão e demais medidas trabalhadas no capítulo.
  
-  A definição de quartis e a construção do boxplot são propostas inovadoras em relação ao conteúdo usual de Estatística nos livros didáticos do Ensino Médio. Os conceitos relativamente simples de quartis aliados  à grande utilidade do boxplot na comparação de grupos diferentes, reforçam a pertinência em tratá-los no Ensino Médio.
+  A definição de quartis e a construção do boxplot são propostas inovadoras em relação ao conteúdo usual de Estatística nos livros didáticos do Ensino Médio. Os conceitos relativamente simples de quartis aliados  à grande utilidade do *boxplot* na comparação de grupos diferentes, reforçam a pertinência em tratá-los no Ensino Médio.
   
   **Dificuldades típicas dos estudantes (distratores)**
 
-  Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cáculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar estes conceitos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas das dificuldades são destacadas.
+  Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cáculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar estes conceitos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas destas dificuldades são destacadas.
 
-  #. Cálculo de médias combinadas (quando pede-se para combinar médias de diferentes grupos, muitos estudantes não levam em conta os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
-  #. Cálculo de média para dados agrupados: ignora-se a frequência, considerando apenas os pontos médios dos intervalos, somando-os e dividindo pelo número de intervalos, ou simplesmente, considerando apenas o valor da variável, quando a variável é quantitativa discreta.
+  #. Cálculo de médias combinadas a partir das médias de diferentes grupos: despresam-se os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
+  #. Cálculo de média para dados agrupados: ignoram-se as frequências, considerando apenas os pontos médios dos intervalos, somando-os e dividindo pelo número de intervalos, ou simplesmente, considerando apenas o valor da variável, quando a variável é quantitativa discreta.
   #. Compreensão das medidas de posição: média, mediana e moda.
+  #. Compreensão das medidas de dispersão, em particular, da variãncia e do desvio padrão. 
   #. Interpretação dos valores obtidos no contexto considerado.
  
-  Observação: os dois primeiros estendem-se para o cálculo da variância e do desvio padrão.
+  Os dois primeiros itens estendem-se para o cálculo da variância e do desvio padrão.
  
   Os distratores serão explorados nas atividades e nos exercícios.
 
-  **Exemplos**
+  **Exemplos** 
    
   Princípios norteadores dos exemplos selecionados: 
   
@@ -108,77 +109,51 @@
   #. Dar importância à compreensão dos conceitos e à interpretação dos resultados. 
   #. As atividades deverão estar sempre bem caraterizadas a um problema a ser resolvido em um contexto específico.
   #. 	Neste capítulo, o uso de recursos tecnológicos para a realização dos cálculos de medidas resumo é fundamental. Recomenda-se o GeoGebra e planilhas de cálculo. 
- 
-  **Estrutura**
   
-  **Explorando 1** Nesta seção serão trabalhadas duas atividades. A primeira servirá como motivação para compreender a necessidade mínima de duas medidas para caracterizar uma distribuição e, a segunda, focará especificamente no cálculo de medidas de posição tais como média, mediana e moda, que já devem ser conhecidas do Ensino Fundamental. Também proporemos a divisão do conjunto de dados em quatro intervalos de classes de frequências iguais a 1/4 para definir os três quartis de uma distribuição.
+  O uso de calculadoras é fortemente recomendável. No entanto, cabe alertar o estudante quanto à notação adotada no Brasil para o separador decimal: a vírgula, e que é adotada neste livro. No entanto, a notação utilizada, em geral, nas calculadoras e na maioria dos programas e aplicativos é o ponto decimal. Por exemplo, o GeoGebra usa o ponto como separador de casas decimais e, em geral as planilhas eletrônicas estão formatadas para números, usando a vírgula como separador decimal. Assim, copiar e colar os dados de um aplicativo para outro pode acarretar em grandes variações. Cabe também realçar que é muito importante treinar o estudante a usar corretamente as calculadoras: não é raro, apesar de permitir o uso das mesmas, ocorrerem erros pelo manuseio incorreto da calculadora. O estudante deve ser alertado para a ordem de hierarquia das operações, muito trabalhada nos anos iniciais do segundo segmento do Ensino Fundamental, mas que é aparentemente esquecida quando vão utilizar calculadoras.
+  
+  Cabe reforçar também que apesar do capítulo poder à primeira vista parecer pesado pelo excesso de definições e fórmulas, é possível verificar que as atividades são relativamente simples e visam muito mais à interpretação das medidas do que o cálculo das mesmas. Sempre serão fornecidas informações para facilitar cálculos quando estes forem solicitados. Nas avaliações, a não ser que seja permitido o uso de calculadora, recomenda-se fortemente não pedir para calcular variâncias e desvios padrões, estes deverão ser, em geral  dados, e perguntas envolvendo o significado dos mesmos devem ser feitas.
+  
+  Enfim o que deve ser valorizado no capítulo é conhecer o significado das medidas aqui apresentadas. O cálculo das mesmas pode ser feito, usando-se aplicativos e, as fórmulas, se por acaso forem necessárias para resolver algum problema, deverão ser sempre fornecidas. Principalmente, em se tratando de medidas de dispersão.
+  
+  
+ 
+  **Estrutura do Capítulo**
+  
+  **Explorando 1: Medidas de Posição** Nesta seção serão trabalhadas duas atividades. A primeira servirá como motivação para compreender a necessidade mínima de duas medidas para caracterizar uma distribuição e, a segunda, focará especificamente no cálculo de medidas de posição tais como média, mediana e moda, que já devem ser conhecidas do Ensino Fundamental. Também proporemos a divisão do conjunto de dados em quatro intervalos de classes de frequências iguais a 1/4 para definir os três quartis de uma distribuição.
  
   #. Atividade: Distribuição de notas para perceber o efeito de transformações simples (multiplicação e/ou adição de um valor) no dado na posição e escala(forma) da distribuição, comparando histogramas. 
  
   #. Atividade: Apresentação de diferentes conjuntos de dados sobre tempos para completar uma “maratona” que apresentam diferentes formas de distribuição (assimétricas e simétricas).
 
-  **Organizando as ideias. 1** 
- 
-  Definições de:
- 
-  #. Média; 
-  #. Mediana;
-  #. Moda e 
-  #. Quartis
- 
-  de um conjunto de valores.
- 
-  Inclusão de uma caixa para descrição do tratamento de dados agrupados. 
- 
-          
-  **Praticando 1** Atividades explorando os conceitos  e propriedades apresentados no organizando 1, incluindo atividades com dados agrupados.
+  **Organizando as ideias 1: Medidas de posição** Definições de média; mediana; moda e quartis.
+         
+  **Praticando o assunto 1:** Atividades explorando conceitos e propriedades apresentados no organizando as ideias 1. agrupados.
     
-  **Explorando -2 .** Proposição de uma atividade envolvendo alguns conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
+  **Explorando 2: Medidas de dispersão** Proposição de uma atividade envolvendo alguns conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
  
-  **Organizando as ideias 2** 
+  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância e 
+  desvio-padrão.
  
-  Definições de 
+  Nesta seção também  serão retomados os conceitos de parâmetro e estimador, tratados no capítulo **A Natureza da Estatística** apresentando a definição de variância populacional e amostral, desvio-padrão populacional e amostral e, média populacional e amostral.
  
-  #. amplitude; 
-  #. amplitude interquartílica;
-  #. desvio-médio;
-  #. variância e 
-  #. desvio-padrão
- 
-  de um conjunto de valores.
- 
-  Inclusão de uma caixa para descrição do tratamento de dados agrupados. 
- 
-  Inclusão de uma caixa para reforçar a diferença entre estatística e parâmetro, tratadas no capítulo "A Natureza da Estatística" apresentando a definição de variância populacional e amostral, idem para desvio-padrão populacional e amostral.
- 
-  **Praticando 2** 
- 
-  Atividades que usarão os conceitos e propriedades apresentados no organizando 2.
+  **Praticando o assunto 2** Atividades que usarão os conceitos e propriedades apresentados no organizando 2 e que buscam dar significado às medidas de dispersão definidas.
 
-  **Explorando 3**
+  **Explorando 3** Proposição de uma atividade apresentado dois conjuntos de dados com a mesma variância, mas com medidas de posição diferentes.
  
-  Atividade: Apresentar conjuntos de dados, todos com a mesma variância, mas com medidas de posição diferentes.
+  **Organizando as ideias 3** Definição de coeficiente de variação amostral e populacional.
  
-  **Organizando 3**
+  **Praticando o assunto 3** Atividades usando coeficiente de variação. 
  
-  Definição de coeficiente de variação amostral.
+  **Para saber mais**
  
-  **Praticando 3**
- 
-  Atividades usando a noção de coeficiente de variação 
- 
- 
-  **Aprofundando o assunto**
- 
-  #. Definição do desenho esquemático (boxplot) outro tipo de representação gráfica para variáveis quantitativas.
- 
+  #. Definição do *boxplot* (gráfico caixa) representação gráfica para variáveis quantitativas alternativa ao histograma.
   #. Descrição do critério de classificação de um valor como valor destoante do conjunto de dados.
   
-  #. Construção do boxplot, usando tecnologia.
  
   **Material Suplementar**
  
-  Um applet do GeoGebra está disbonibilizado com manual de instruções. Nele será possível gerar conjuntos de dados e serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos a as medidas resumo. 
+  Um applet do GeoGebra está disbonibilizado com manual de instruções. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos a as medidas resumo. 
 
   **Exercícios** 
  
