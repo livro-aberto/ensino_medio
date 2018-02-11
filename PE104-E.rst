@@ -107,49 +107,128 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
   
 2. Consultando os **marcos** referentes às Copas de 2010 e 2014, verificou-se que eles foram 5 e 6, respectivamente. Determine a média e o desvio padrão dos **marcos**, considerando as 20 Copas do Mundo até 2014.
 
+`7.` (ENEM-2012) Um produtor de café irrigado em Minas Gerais recebeu um relatório de consultoria estatística, constando, entre outras informações, o desvio padrão das produções de uma safra dos talhões de sua propriedade. Os talhões têm a mesma área de 30.000 `\textsf{m}^2` e o valor obtido para o desvio padrão foi de 90 kg/talhão. O produtor deve apresentar as informações sobre a produção e a variância dessas produções em sacas de 60 kg por hectare (10.000 `\textsf{m}^2`). 
+A variância das produções dos talhões expressa em `\textsf{(sacas/hectare)}^2` é 
+
+a) 20,25 	b) 4,50 	c) 0,71  d) 0,50 	e) 0,25
+
+
+`8.` (ENEM) O quadro seguinte mostra o desempenho de um time de futebol no último campeonato. A coluna da esquerda mostra o número de gols marcados e a coluna da direita informa em quantos jogos o time marcou aquele número de gols.
+
+.. table:: Desempenho de um time
+   
+   +---------------+------------------------+
+   | Gols marcados | Quantidade de partidas |
+   +---------------+------------------------+
+   | 0             | 5                      |
+   +---------------+------------------------+
+   | 1             | 3                      |
+   +---------------+------------------------+
+   | 2             | 4                      |
+   +---------------+------------------------+
+   | 3             | 3                      |
+   +---------------+------------------------+
+   | 4             | 2                      |
+   +---------------+------------------------+
+   | 5             | 2                      |
+   +---------------+------------------------+
+   | 7             | 1                      |
+   +---------------+------------------------+  
+
  
- 
+Se X, Y e Z são, respectivamente, a média, a mediana e a moda desta distribuição, então:
+
+a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
+
+
+`9.`
+
+`10.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado. A seguir, estão os resultados para as suas duas turmas.
+
+.. table:: Notas da turma da manhã
+
+   +-----+------+-----+-----+-----+
+   | 7,4 | 7,3  | 6,2 | 6,3 | 4,1 |
+   +-----+------+-----+-----+-----+
+   | 5,7 | 10,0 | 6,2 | 4,9 | 6,0 |
+   +-----+------+-----+-----+-----+
+   | 8,7 | 6,5  | 3,0 | 5,8 | 7,0 |
+   +-----+------+-----+-----+-----+
+   | 8,0 | 8,0  | 4,9 | 7,4 | 6,8 |
+   +-----+------+-----+-----+-----+
+   | 6,7 | 7,6  | 6,1 | 6,2 | 8,5 |
+   +-----+------+-----+-----+-----+
+   | 7,4 | 4,4  | 8,1 | 5,8 | 6,6 |
+   +-----+------+-----+-----+-----+
+   | 4,2 | 5,3  | 4,9 | 8,1 | 6,8 |
+   +-----+------+-----+-----+-----+
+   | 6,8 | 4,4  | 5,4 | 7,1 | 6,1 |
+   +-----+------+-----+-----+-----+
+   | 5,3 | 5,2  | 5,7 | 9,9 | 8,3 |
+   +-----+------+-----+-----+-----+
+   
+.. table:: Notas da turma da tarde
+   
+   +-----+-----+-----+-----+-----+
+   | 5,1 | 4,7 | 5,7 | 4,7 | 5,0 |
+   +-----+-----+-----+-----+-----+
+   | 4,2 | 4,9 | 6,0 | 4,4 | 4,4 |
+   +-----+-----+-----+-----+-----+
+   | 6,0 | 4,9 | 5,6 | 6,2 | 6,6 |
+   +-----+-----+-----+-----+-----+
+   | 6,2 | 4,7 | 6,0 | 4,6 | 3,6 |
+   +-----+-----+-----+-----+-----+
+   | 5,4 | 5,2 | 5,6 | 5,5 | 5,2 |
+   +-----+-----+-----+-----+-----+
+   | 5,8 | 4,5 | 5,0 | 3,8 | 4,6 |
+   +-----+-----+-----+-----+-----+
+   | 4,1 | 4,7 | 4,2 | 6,8 | 5,6 |
+   +-----+-----+-----+-----+-----+
+   | 5,3 | 4,5 | 4,7 | 5,1 | 5,2 |
+   +-----+-----+-----+-----+-----+
+   
+Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre as duas turmas. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
+
+   
    
 
 
 
-
-
-
-
-
-
-
-     
-   
-
+ 
 .. admonition:: Resposta 
 
-`1.` A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
+   `1.` A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
    
-1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
+   1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
       
-2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
+   2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
       
-`2.` `y_i=c\cdot x_i`, `i=1,2,...,n`.
+   `2.` `y_i=c\cdot x_i`, `i=1,2,...,n`.
    
-1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
+   1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
       
-2. Podemos verificar que a soma dos desvios da média tomados ao quadrado será dada pela soma original dos desvios da média elevados ao quadrado multiplicada por `c^2`, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}(c\cdot x_i-c\cdot \bar{x})^2=c^2\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial multiplicada por `c^2`, a saber, `s^2_y=c^2\cdot s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial multiplicado por `c`, `s_y=c\cdot s`. Lembre que estamos considerando `c>0`.
+   2. Podemos verificar que a soma dos desvios da média tomados ao quadrado será dada pela soma original dos desvios da média elevados ao quadrado multiplicada por `c^2`, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}(c\cdot x_i-c\cdot \bar{x})^2=c^2\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial multiplicada por `c^2`, a saber, `s^2_y=c^2\cdot s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial multiplicado por `c`, `s_y=c\cdot s`. Lembre que estamos considerando `c>0`.
 
-3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial.
+   3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial.
       
-`3.` O primeiro passo é colocar os tempos do quadro apresentado em ordem crescente, a saber, `20,50< 20,60< 20,60< 20,80< 20,90 \leq  20,90 \leq 20,90 < 20,96`. Como o número de observações é par (`n=8`), segue que a mediana é dada por `\frac{x_{(4)}+x_{(5)}}{2}=\frac{20,80+20,90}{2}=20,85.` A resposta correta encontra-se na opção d).
+   `3.` O primeiro passo é colocar os tempos do quadro apresentado em ordem crescente, a saber, `20,50< 20,60< 20,60< 20,80< 20,90 \leq  20,90 \leq 20,90 < 20,96`. Como o número de observações é par (`n=8`), segue que a mediana é dada por `\frac{x_{(4)}+x_{(5)}}{2}=\frac{20,80+20,90}{2}=20,85.` A resposta correta encontra-se na opção d).
    
-`4.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
+   `4.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
    
-`5.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois Dq=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressaõ indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
+   `5.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois Dq=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressaõ indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
    
-`6.` Respostas 
+   `6.` Respostas 
    
-1. A média é dada por `\bar{x}=\frac{132}{18}\approx 7,33` e o desvio padrão amostral é dado por `\sqrt{\frac{1}{18-1}\left (1060-18\cdot 7,33^2\right )}\approx 2,33`. Comparando a média aproximada de 7,5 com a média 7,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 2,3% da média obtida com a soma exata (`\frac{|7,5-7,33|}{7,33}\approx 0,023`. Comparando o desvio padrão aproximado de 2,25 com o desvio padrão 2,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 3,4% o desvio padrão obtido com as somas exatas (`\frac{|2,25-2,33|}{2,33}\approx 0,034`.
+   1. A média é dada por `\bar{x}=\frac{132}{18}\approx 7,33` e o desvio padrão amostral é dado por `\sqrt{\frac{1}{18-1}\left (1060-18\cdot 7,33^2\right )}\approx 2,33`. Comparando a média aproximada de 7,5 com a média 7,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 2,3% da média obtida com a soma exata (`\frac{|7,5-7,33|}{7,33}\approx 0,023`. Comparando o desvio padrão aproximado de 2,25 com o desvio padrão 2,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 3,4% o desvio padrão obtido com as somas exatas (`\frac{|2,25-2,33|}{2,33}\approx 0,034`.
    
-2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **marcos** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **marcos**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
+   2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **marcos** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **marcos**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
+   
+   `7.` Para resolver esta questão é necesário transformar a escala do desvio padrão informado em kg por talhão, para a escala sacas por hectare e, em seguida, calcular o quadrado do sesvio padrão na nova escala. Observe que `s= 90` kg/talhão e que 90 kg corresponde a 1,5 sacas (cada saca tem 60 Kg) e 1 talhão correspode a 1 hectare. Logo, tempos que `s=\frac{1,5}{3}=0,5 ` sacas por hectare tal que a variância, em `\textsf{(sacas/hectare)}^2` , é 0,25. A resposta correta encontra-se na opção e).
+   
+   `8.` É fácil ver que a moda é zero tal que Z=0. Somando o número de partidas jogadas vemos foram consideradas 20 partidas. Assim, o valor da mediana é o valor que ocupa as posições centrais 10 e 11. Da tabela, calculando as frequências acumuladas, vemos que até 1 gol acumularam-se 8 partidas e até 2 gols, acumularam-se 12 partidas. Assim podemos concluir que nas posições 10 e 11 o número de gols foi 2, tal que a mediana=Y=2. A média é dada por `\bar{x}=X=\frac{5\cdot 0+3\cdot 1 +4\cdot 2+3\cdot 3+2\cdot 4+2\cdot 5+1\cdot 7}{20}=\frac{45}{20}=2,25` . Logo, tem-se Z<Y<X e a resposta correta encontra-se na opção e).
+   
+   
+   
 
 
 
@@ -159,3 +238,8 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
 ====================
 Material Suplementar
 ====================
+
+Um material suporte para as atividades deste capítulo foi preparado e está disponível no <**link**>. Para utilizá-lo é necessário ter o GeoGebra instalado em seu computador, tablet ou celular. Com este applet, você poderá, gerar vários conjuntos de dados e observar como ficam os respectivos histograma e boxplot. Além disso, você também poderá inserir os valores de um conjunto de dados em particular para obter várias das medidas resumo trabalhadas neste capítulo, além de obter o histograma e o boxplot. 
+
+
+

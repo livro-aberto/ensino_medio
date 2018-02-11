@@ -21,7 +21,7 @@ Para investir na bolsa de valores compramos ações de empresas por intermédio 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: https://www.umlivroaberto.com/iii/lembrando.png
+.. figure:: _resources/bolsa-de-valores1.png
    :width: 200pt
    :align: center
 
@@ -639,15 +639,15 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
  
 .. _ativ-mediamaisoumenosdoisdesvios:
 
-Atividade: Frequência de valores no intervalo centrado na média e limites distando dois desvios padrões da média
------------------------------------------------------------------------------------------------------------------
+Atividade: Frequência de valores no intervalo centrado na média e de comprimento igual a 4 desvios padrões 
+----------------------------------------------------------------------------------------------------------
 
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos**
+   **Objetivos específicos** Calcular a frequência relativa de dados que caem no intervalo centrado na média mais ou menos dois desvios padrões.
    
-   **Observações e sugestões**
+   **Observações e sugestões** Esta atividade será útil na atividade seguinte que trata da desigualdade de Tchebyshev para um conjunto de dados empíricos, fornecendo um limite inferior para a frequência que será calculada aqui. Este limite, é em geral, pobre, pois usa somente o valor da média e do desvio padrão para obtê-lo, sem levar em conta a forma da distribuição dos dados. Deste modo, os resultados desta atividade serão aproveitados na próxima, para fins de comparação entre o valor real da frequência no conjunto observado e o valor mínimo, proposto pela desigualdade de Tchebyshev.
    
 Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, calcule a frequência absoluta de dados que estão no intervalo `[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` e comente sobre os resultados obtidos.
 
