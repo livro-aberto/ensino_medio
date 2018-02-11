@@ -1,320 +1,3 @@
-.. _sec-explorando1:
-
-Explorando: Medidas de posição
-==============================
-
-.. _ativ-Notas-de-Artes:
-
--------------------------
-Atividade: Notas de Artes
--------------------------
-
-
-.. admonition:: Para o professor
-
- **Objetivos específicos** Estudar o efeito numa distribuição de dados após uma transformação simples: adição (posição) ou multiplicação (escala).
-
- **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam numa distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos no `link <https://ggbm.at/TNh7dPCf>`_ , e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos numa distribuição quando somamos um valor contante a todos os dados e quando multiplicamos um valor contante a todos os dados.
-
-Ao final de um trimestre, um professor de Artes registrou as seguintes notas de seus 35 alunos, listadas no quadro a seguir, em ordem crescente.
-
-+-----+-----+-----+-----+-----+-----+-----+
-| 0,8 | 2,0 | 2,0 | 2,5 | 2,5 | 3,5 | 4,5 |
-+-----+-----+-----+-----+-----+-----+-----+
-| 5,0 | 5,4 | 5,5 | 5,5 | 5,5 | 6,0 | 6,0 |
-+-----+-----+-----+-----+-----+-----+-----+
-| 6,0 | 6,0 | 6,3 | 6,5 | 6,8 | 6,8 | 7,0 |
-+-----+-----+-----+-----+-----+-----+-----+
-| 7,0 | 7,0 | 7,0 | 7,3 | 7,3 | 7,5 | 7,5 |
-+-----+-----+-----+-----+-----+-----+-----+
-| 7,5 | 7,5 | 7,8 | 8,0 | 8,0 | 8,0 | 8,0 |
-+-----+-----+-----+-----+-----+-----+-----+
-
-Este professor verificou que a média da turma foi aproximadamente 5,93 (soma das notas `S=207,5`). Como a participação da turma foi muito boa ao longo do trimestre, o professor resolveu dar uma bonificação na nota de cada aluno desta turma, pensando em duas possibilidades:
-
-#. acrescentar um ponto para cada aluno da turma;
-#. aumentar em 20% a nota de cada aluno da turma.
-
-Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `]0,2], \quad ]2,4], \quad ]4,6], \quad ]6,8]`. Os números esntre parênteses correspondem às frequências absolutas.
-
-
-.. _fig-histograma-notas-sem-bonificacao:
-
-.. figure:: _resources/histogramaNotas_E1_1.png
-   :width: 200pt
-   :align: center
-
-   Histograma das notas de Artes sem bonificação
-   
-
-Os dois histogramas a seguir correspondem às notas, após usar cada uma das duas possibilidades consideradas pelo professor, mantendo, em cada um, quatro intervalos de classe.  
-
-.. _fig-histogramas-notas-com-bonificacoes:
-
-.. figure:: _resources/histogramaNotas_E1_3_2.png
-   :width: 200pt
-   :align: center
-   
-.. figure:: _resources/histogramaNotas_E1_2_4.png
-   :width: 200pt
-   :align: center
-
-   Histograma das notas de Artes com bonificação
-   
- 
-#. Qual dos dois histogramas manteve a mesma forma em relação ao histograma das notas sem a bonificação?
-
-#. Qual dos dois histogramas teve a sua forma alterada após a bonificação?
-
-#. Identifique a possibilidade considerada em cada um deles, a saber, (a) acréscimo de 1,0 ponto ou (b) aumento de 20%.
-
-#. Dada a informação inicial de que a média da turma foi 5,93, de quanto será a média se o professor acrescentar um ponto a cada aluno? E se ele aumentar em 20% a nota de cada aluno?
-
-#. Se você fosse um aluno desta turma, que possibilidade de bonificação você escolheria? Por quê?
-
-
-.. admonition:: Resposta 
-
-   (a) Analisando os dois histogramas, percebe-se que o segundo mantém as mesmas frequências com um deslocamento dos intervalos em uma unidade. Logo, o segundo histograma mantém a mesma forma em relação ao original, tendo sido deslocado para à direita em uma unidade.
-   
-   (b) Analisando os dois histogramas, percebe-se que o primeiro apresenta uma alteração de forma com intervalos mais largos e distribuição de frequências diferente. Assim, o primeiro tem sua forma diferente em relação ao original.
-   
-   (c) Com o acréscimo de 1 ponto a cada nota, a nota maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a nota de cada um, a nota maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde ao aumento de 20% na nota de cada um e, o segundo, ao acréscimo de 1 ponto na nota de cada um.
-   
-   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,93. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,93\approx 7,12`, em que `S=207,5`.
-   
-   (e) Não há uma resposta certa para este item. Se cada aluno olhar o seu ponto de vista particular, para alguns será melhor ganhar um ponto e para outros será melhor ter um aumento de 20% sobre a nota. Mais especificamente, para quem tiver obtido nota 5,0 será indiferente; para quem tiver obtido nota inferior a 5,0 será melhor ganhar um ponto e, para os restantes, será melhor o acréscimo de 20% sobre a nota.
-   
-.. _ativ-maratona-de-NY:
-
--------------------------
-Atividade: A maratona
--------------------------
-
-.. admonition:: Para o professor
-
-  **Objetivos específicos** Identificar a posição da média em diferentes formas de distribuição que apresentam assimetrias.
-   
-  **Observações e sugestões** Nesta atividade serão apresentados conjuntos diferentes de dados envolvendo tempos para completar maratonas. Os dados estão disponíveis no `link <https://ggbm.at/ZhqKD9Nz>`_. Serão fornecidos os totais para que o cálculo das médias envolva apenas uma divisão e possa ser feito com uma calculadora simples. Pretende-se levar o aluno a perceber que na presença de forte assimetria (histograma alongado à direita ou à esquerda), a média pode ser uma medida pouco *representativa* do conjunto e com isso motivar a definição de mediana.
-   
-  É importante discutir as perguntas na caixa **Para refletir** em sala de aula com o intuito de que os estudantes percebam a necessidade de tratar previamente dados de determinada natureza antes de usá-los numericamente, como é o caso do tempo considerado em unidades distintas (hora:minuto:segundo).
-   
-  Na sequência se inclui a tabela com a respectiva conversão para horas em números decimais de modo a simplificar os cálculos na atividade, mas deve-se deduzir com os estudantes como calcular a conversão.
-  
-  Expressão utilizada para calcular o resultado em horas decimais (`\textsf{horas}_{10}`):
-   
-  .. math::
-
-     \textsf{horas}_{10} = \textsf{Horas} + \frac{\textsf{Minutos}}{60} + \frac{\textsf{Segundos}}{60^2}
-     
-  A escolha da hora para a unidade de conversão nesta atividade não foi arbritária, pois as quatro categorias que serão tratadas apresentam tempos bastante variados entre os 100 primeiros a chegar e, para efeito da comparação a ser feita adiante, a unidade hora mostrou-se a mais conveniente na construção de gráficos.
-  
-  Para concluir esta atividade, é importante comentar com os estudantes a diferença observada entre a média e a mediana e que esta se deve a uma forte assimetria na distribuição dos dados. O histograma tem uma grande massa acumulada para o lado direito, tornando a média inferior à mediana. 
-
-A maratona é uma prova de atletismo que consiste em correr uma distância de 42,195 km. Pelas suas características, este tipo de prova é realizada nas ruas de uma grande cidade ou na estrada. As principais cidades do mundo realizam um destes eventos anualmente, recebendo milhares de atletas profissionais e amadores que encaram o desafio e almejam finalizar a carreria ou melhorar a própria marca do passado.
-
-Uma das mais famosas é a Maratona da Cidade de *Nova York*, nos Estados Unidos. Com mais de 50.000 participantes cada ano, é um dos pincipais eventos do atletismo mundial, junto com as maratonas de Chicago, Londres, Boston, Berlim e Tóquio.
-
-.. _maratona-NY:
-
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/3/35/New_York_marathon_Verrazano_bridge.jpg
-   :width: 200pt
-   :align: center
-
-   Corredores participando da Maratona de *Nova York*, `Wikipedia <https://commons.wikimedia.org/wiki/File:New_York_marathon_Verrazano_bridge.jpg>`_
-
-
-Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados por separado. Qual das categorias você acha que terá os melhores resultados na carreira? Em quanto tempo você acha que uma pessoa percorre os 42 km da carreira? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
-
-.. _handcycle:
-
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/0/07/Handcycle_in_Richmond_Park_-_geograph.org.uk_-_1315077.jpg
-   :width: 200pt
-   :align: center
-   
-   Tricilo de mão (*handcycle*), `Wikipedia <https://commons.wikimedia.org/wiki/File%3AHandcycle_in_Richmond_Park_-_geograph.org.uk_-_1315077.jpg>`_
-
-
-A seguir analisaremos os tempos de corrida das 100 melhores atletas na categoria de Mulheres da Maratona de Nova York do ano 2017, dados disponíveis no `site oficial da competição <http://results.nyrr.org/event/M2017/finishers>`_.
-
-.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (hora:minuto:segundo)
-
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  |    |   +0    |   +10   |   +20   |   +30   |   +40   |   +50   |   +60   |   +70   |   +80   |   +90   |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 1  | 2:26:53 | 2:32:01 | 2:42:52 | 2:49:44 | 2:53:59 | 2:56:58 | 2:58:35 | 2:59:36 | 3:01:24 | 3:03:43 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 2  | 2:27:54 | 2:32:09 | 2:44:26 | 2:49:59 | 2:54:42 | 2:57:05 | 2:58:36 | 2:59:41 | 3:01:26 | 3:03:46 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 3  | 2:28:08 | 2:33:18 | 2:44:48 | 2:50:04 | 2:54:52 | 2:57:10 | 2:58:50 | 2:59:43 | 3:01:28 | 3:04:02 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 4  | 2:29:36 | 2:34:10 | 2:45:20 | 2:50:05 | 2:55:04 | 2:57:40 | 2:58:52 | 2:59:46 | 3:01:44 | 3:04:04 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 5  | 2:29:39 | 2:34:23 | 2:45:52 | 2:51:11 | 2:55:25 | 2:57:49 | 2:58:56 | 2:59:51 | 3:02:09 | 3:04:17 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 6  | 2:29:39 | 2:36:38 | 2:46:45 | 2:53:01 | 2:55:34 | 2:57:49 | 2:59:01 | 2:59:56 | 3:02:15 | 3:04:26 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 7  | 2:29:41 | 2:37:22 | 2:47:04 | 2:53:02 | 2:55:36 | 2:57:50 | 2:59:03 | 3:00:02 | 3:02:39 | 3:04:42 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 8  | 2:29:56 | 2:37:33 | 2:47:30 | 2:53:02 | 2:55:39 | 2:58:08 | 2:59:10 | 3:00:05 | 3:02:41 | 3:04:49 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 9  | 2:31:21 | 2:39:01 | 2:47:35 | 2:53:19 | 2:56:47 | 2:58:23 | 2:59:16 | 3:00:49 | 3:02:56 | 3:04:58 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  | 10 | 2:31:44 | 2:40:09 | 2:49:37 | 2:53:38 | 2:56:57 | 2:58:26 | 2:59:23 | 3:01:18 | 3:03:32 | 3:05:09 |
-  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
-  
-Observe que os tempos já estão ordenados do menor para o maior. Por exemplo, para identificar o tempo da quadragésima sétima chegada, basta tomar a interseção da linha 7 com a coluna +40 para obter o tempo 2:55:36. 
-
-
-.. admonition:: Para refletir
-
-   * Como você calcularia a média de valores em horas, minutos e segundos como os da tabela?
-   
-   * Como você construiria um histograma com estes dados, como você definiria os limites dos intervalos? (Consulte a :ref:`ativ-construcao-histograma` do capítulo **A Natureza da Estatística** em caso de dúvida.)  
-   
-   * Qual o maior tempo em que uma corredora deveria completar a maratona para ficar entre as 25 primeiras? E entre as 50 primeiras?
-
-.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (em horas)
-
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |    |+0     |+10    |+20    |+30    |+40    |+50    |+60    |+70    |+80    |+90    |
-  +====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
-  | 1  | 2,448 | 2,534 | 2,714 | 2,829 | 2,900 | 2,949 | 2,976 | 2,993 | 3,023 | 3,061 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 2  | 2,465 | 2,536 | 2,741 | 2,833 | 2,912 | 2,951 | 2,977 | 2,995 | 3,024 | 3,063 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 3  | 2,469 | 2,555 | 2,747 | 2,834 | 2,914 | 2,953 | 2,981 | 2,995 | 3,024 | 3,067 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 4  | 2,493 | 2,569 | 2,756 | 2,835 | 2,918 | 2,961 | 2,981 | 2,996 | 3,028 | 3,068 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 5  | 2,494 | 2,573 | 2,764 | 2,853 | 2,924 | 2,964 | 2,982 | 2,998 | 3,036 | 3,071 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 6  | 2,494 | 2,611 | 2,779 | 2,884 | 2,926 | 2,964 | 2,984 | 2,999 | 3,037 | 3,073 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 7  | 2,495 | 2,623 | 2,784 | 2,884 | 2,927 | 2,964 | 2,984 | 3,000 | 3,044 | 3,077 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 8  | 2,499 | 2,626 | 2,792 | 2,884 | 2,928 | 2,969 | 2,986 | 3,000 | 3,044 | 3,080 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 9  | 2,523 | 2,650 | 2,793 | 2,889 | 2,946 | 2,973 | 2,988 | 3,013 | 3,048 | 3,083 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | 10 | 2,529 | 2,669 | 2,827 | 2,894 | 2,949 | 2,974 | 2,990 | 3,021 | 3,059 | 3,085 |
-  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-
-
-1. Construa um histograma destes dados, completando a tabela a seguir, que indica os intervalos de classe. Que caracterísiticas da distribuição dos 100 melhores tempos para mulheres podem ser destacadas, analisando-se o histograma construído?
-
-   .. table:: Guia para a contagem de frequências dos intervalos 
-
-     +-----------------+------------+
-     | Intervalo       | Frequência |
-     +-----------------+------------+
-     | [2,448 ; 2,512[ |            |
-     +-----------------+------------+
-     | [2,512 ; 2,576[ |            |
-     +-----------------+------------+
-     | [2,576 ; 2,639[ |            |
-     +-----------------+------------+
-     | [2,639 ; 2,703[ |            |
-     +-----------------+------------+
-     | [2,703 ; 2,767[ |            |
-     +-----------------+------------+
-     | [2,767 ; 2,831[ |            |
-     +-----------------+------------+
-     | [2,831 ; 2,895[ |            |
-     +-----------------+------------+
-     | [2,895 ; 2,958[ |            |
-     +-----------------+------------+
-     | [2,958 ; 3,022[ |            |
-     +-----------------+------------+
-     | [3,022 ; 3,085[ |            |
-     +-----------------+------------+
-
-
-   .. _hist-maratona-mulheres:
-
-   .. figure:: _resources/Histograma_mulheres.png
-      :width: 200pt
-      :align: center
-
-      Eixos para a criação do histograma
-
-
-2. Calcule o tempo médio dos 100 melhores tempos das corredoras, sabendo que a soma dos tempos foi 286,978 horas. Localize o valor encontrado no eixo horizontal do histograma. Em que posição ficaria uma corredora cujo tempo no qual completou a maratona é igual ao tempo médio calculado neste item?
-
-3. Trace linhas verticais no histograma no tempo que separa os primeiros 25 lugares, no tempo que separa os primeiros 50 e no tempo que separa os últimos 25 lugares. As marcações dos tempos de posições 25, 50 e 75 neste conjunto de 100 observações são chamadas de quartis da distribuição, este conceito será formalizado adiante.
-
-4. Considerando as marcações realizadas no item anterior, determine as medidas das áreas no histograma correspondentes aos seguintes intervalos
-
-   1. posição 1 até a posição 25;
-   2. posição 25 até a posição 50;
-   3. posição 50 até a posição 75;
-   4. posição 75 até a posição 100; 
-
-   e compare-as.
-   
-5. Calcule os comprimentos dos intervalos de tempo considerados no item anterior e compare-os.
-
-6. O valor obtido para o tempo médio coincide com alguma das outras marcas feitas no histograma? 
-
-7. Observe que o tempo médio e o tempo da posição 50 são diferentes. Você poderia explicar por que eles são diferentes? 
-
-
-
-
-.. admonition:: Resposta 
-
-   1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
-   
-      .. table:: Guia para o cálculo de frequências do histograma
-
-        +-----------------+------------+
-        | Intervalo       | Frequência |
-        +-----------------+------------+
-        | [2,448 ; 2,512[ |     8      |
-        +-----------------+------------+
-        | [2,512 ; 2,576[ |     7      |
-        +-----------------+------------+
-        | [2,576 ; 2,639[ |     3      |
-        +-----------------+------------+
-        | [2,639 ; 2,703[ |     2      |
-        +-----------------+------------+
-        | [2,703 ; 2,767[ |     5      |
-        +-----------------+------------+
-        | [2,767 ; 2,831[ |     6      |
-        +-----------------+------------+
-        | [2,831 ; 2,895[ |     9      |
-        +-----------------+------------+
-        | [2,895 ; 2,958[ |     13     |
-        +-----------------+------------+
-        | [2,958 ; 3,022[ |     27     |
-        +-----------------+------------+
-        | [3,022 ; 3,085[ |     20     |
-        +-----------------+------------+
-
-      .. _hist-maratona-mulheres-res:
-
-      .. figure:: _resources/Histograma_mulheres_resposta_1.png
-         :width: 200pt
-         :align: center
-
-         Histograma dos tempos da categoria de mulheres na Maratona de NY
-
-  
-   2. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
-   
-   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a carreira em até 2:45:52 (2,764 horas).
-   
-      Já para ficar nas primeiras 50, precisaria terminar o percurso em 2:56:57 (2,949 horas) ou menos.
-   
-      Finalmente, para ficar entre as primeiras 75, su tiempo tendría que ser menor ou igual a 2:59:51 (2,998 horas).
-
-      .. figure:: _resources/Histograma_mulheres_resposta_lineas.png
-         :width: 200pt
-         :align: center
-	         
-         Histograma dos tempos da categoria de mulheres na Maratona de NY mostrando os quartis, a mediana e a média
-
-
 .. _sec-organizando1:
 
 =========================================
@@ -858,41 +541,46 @@ Atividade: Comparação das diferentes categorias na maratona
    
    **Observações e sugestões**
    
+   Esta atividade introduz os elementos necessários para a comparação de dois histogramas, a saber: mesmas escalas nos eixos, e colunas de frequências relativas.
+   
+   Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de disperssão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
+   
+   As perguntas não tem respostas fechadas, tem o intuito de gerar uma discussão sobre os assuntos já colocados.
    
    
 Observe os histogramas a seguir referentes as quatro categorias da Maratona de Nova Iorque: mulheres, homens, cadeira de rodas e triciclo de mão. 
 
 
+.. _fig-coloque-aqui-o-nome:
 
-#. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou? 
+.. figure:: _resources/4histogramas.png
+   :width: 300pt
+   :align: center
+
+   Histogramas comparativos das quatro modalidades da maratona de Nova Iorque 2017
+
+
+#. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
 
 #. Em qual categoria se encontra o atleta que completou a maratona no menor tempo? E no maior tempo?
    
-.. #. Aproximadamente em que lugar da carreira 
+#. Você consegue estimar a média das primeiras duas categorias observando o gráfico? Você pensa que serão muito distintas das outras categorias?
+
+#. Observa a tabela a seguir e marca as médias no histograma, comenta sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+
+#. Observa que as médias não são muito diferentes, porém, as distruibuições são muito diferentes. Se você conhecese apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
+
+.. table:: Média das quatro categorias da maratona de Nova Iorque 2017
+
+  +-----------+------------------+-----------------+--------------------+------------------+
+  | Categoria | Cadeira de rodas | Triciclo de mão | Mulheres (corrida) | Homens (corrida) |
+  +-----------+------------------+-----------------+--------------------+------------------+
+  | Média     | 2,59             | 2,73            | 2,87               | 2,51             |
+  +-----------+------------------+-----------------+--------------------+------------------+
 
 
 .. admonition:: Resposta 
 
-   texto
-
-
-
-
-
-      
-
-
-  
- 
-
- 
-
-
-
-
-  
-  
-
-
-
-
+   As perguntas tem o intuito de motivar uma discussão dos elementos necessários que tem que ser considerados para fazer histogramas que sejam comparáveis, introduzir de forma intuitiva o conceito de dispersão. As perguntas não tem uma resposta fechada, são mais uma guia para a discussão que o professor irá conduzir e serve como introdução a seção de Medidas de disperssão.
+   
+   

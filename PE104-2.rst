@@ -572,11 +572,11 @@ Atividade: Aproximação para o valor do desvio padrão amostral
    
  Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
  
- Avaliar o cálculo do desvio padrão, comparando com a aproximação.
+ Avaliar o valor obtido do desvio padrão, comparando-o com a aproximação.
    
  **Observações e sugestões** 
  
- Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno. Além disso, esta atividade pode ser útil para o aluno avaliar se ele calculou corretamente um desvio padrão. É muito comum, mesmo informando-se somatórios e permitindo-se o uso de calculadoras, a produção de resultados incorretos para a variância e, conseuqnetemente, para o desvio padrão. Uma ferramenta útil pode ser sempre comparar o valor obtido do desvio padrão com a razão `R\4`. Se a diferença for grande (mais de 50% do valor de `s`) recomenda-se verificar novamente o cálculo de `s`.
+ Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno. Além disso, esta atividade pode ser útil para o aluno avaliar se ele calculou corretamente um desvio padrão. É muito comum, mesmo informando-se somatórios e permitindo-se o uso de calculadoras, a produção de resultados incorretos para a variância e, consequentemente, para o desvio padrão. Uma ferramenta útil pode ser  comparar o valor obtido do desvio padrão com a razão `\frac{R}{4}`. Se a diferença for grande (mais de 50% do valor obtido de `s`) recomenda-se verificar novamente o cálculo de `s`.
  
  
 Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média (`[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` ). A partir desta informação, pode-se obter uma fórmula empírica para estimar o valor do desvio padrão amostral `s` dada por
@@ -618,13 +618,6 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
 
    Estatísticas resumo das cotações das ação nas Companhias A e B.
 
-
-
-
-   
-
- 
- 
 .. admonition:: Resposta 
 
  a) Da figura :ref:`fig-resumoNArtes` vemos que `s\approx 1,96` e que `R=8-0,8=7,2`. Pela fórmula apresentada temos `{s}\approx\frac{7,2}{4}=1,8`. 
@@ -642,6 +635,34 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
  Da figura :ref:`fig-estrategia` vemos que, para a companhia B,  `s\approx 17,3738` e que `R=90-33=57`. Pela fórmula apresentada temos `{s}\approx\frac{57}{4}=14,25`. 
  
  Comparando o valor aproximado de `s` (14,25) com o valor calculado de `s` (17,3738) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 18% do valor de `s`, pois `\frac{|14,25-17,3738|}{17,3738}\approx 0,18`. 
+ 
+ 
+.. _ativ-mediamaisoumenosdoisdesvios:
+
+Atividade: Frequência de valores no intervalo centrado na média e limites distando dois desvios padrões da média
+-----------------------------------------------------------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos**
+   
+   **Observações e sugestões**
+   
+Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, calcule a frequência absoluta de dados que estão no intervalo `[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` e comente sobre os resultados obtidos.
+
+
+.. admonition:: Resposta 
+
+ No caso dos dados da :ref:`ativ-Notas-de-Artes` temos `\bar{x}=5,93` e `s=1,96` tal que os limites deste intervalo são, respectivamente, 2,01 e 9,85. Portanto, das 35 notas podemos ver que 32 observações caem dentro destes limites, ou equivalentemente,  cerca de 91% das observações.
+ 
+ No caso dos dados da :ref:`maratona-de-NY` temos `\bar{x}=2,8697` e `s=0,1866` tal que os limites deste intervalo são, respectivamente, 2,4969 e 3,2429. Portanto, dos 100 tempos podemos ver que 93 caem dentro destes limites, ou equivalentemente,  93% dos tempos.
+ 
+ No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia A, temos `\bar{x}=61,5` e `s=4,5765` tal que os limites deste intervalo são, aproximadamente, 52,3 e 70,7. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
+ 
+ No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia B, temos `\bar{x}=61,5` e `s=18,3136` tal que os limites deste intervalo são, aproximadamente,  24,9 e 98,1. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
+ 
+ Comentário acerca destes resultados: verifica-se que para os quatro conjuntos aqui considerados, de fato, a maior parte dos dados (mais de 90%) situam-se entre os limites de uma média mais ou menos 2 desvios padrões.
    
  
  .. _ativ-Tchebyshev:
@@ -653,18 +674,27 @@ Atividade: Avaliação empírica de frequência em torno da média
 
 .. admonition:: Para o professor
    
-   **Objetivos específicos** Apresentar fórmula para obter limite superior para frequências numa distribuição conhecidos a média e o desvio padrão amostrais.
+   **Objetivos específicos** Estimar um limite inferior para a frequência de dados em um intervalo centrado na média distando da média k desvios padrões à esquerda e  à direita. 
    
-     
-   **Observações e sugestões**  
+   **Observações e sugestões**  Nesta atividade faremos uso de um resultado da teoria das probabilidades conhecido como Desigualdade de Tchebyshev. A desigualdade de Tchebyshev afirma que se X é uma variável aleatória com média `\mu` e variância `\sigma^2` então
    
+   .. math::
+
+      P(|X-\mu|<k\cdot \sigma) \geq 1- \frac{1}{k^2}, \quad k>0
    
-texto da atividade
+   Trazendo esta fórmula para dados de uma amostra podemos dizer que a frequência relativa no intervalo `]\bar{x}-k\cdot s ; \bar{x}+k\cdot s[` é pelo menos igual a `\frac{k^2-1}{k^2}` em que `k\in \mathbb{N}`. 
+   No texto para o aluno, apresntaremos `k>1` em vez de `k>0` , pois para `0<k\leq 1` a desigualdadde não nos traz nenhuma informação, pois é claro que qualquer frequência relativa é maior ou igual a zero. Para `k=1` o resultado seria zero.
+   
+Usando um resultado da teoria das probabilidades, conhecido como  Desigualdade de Tchebyshev, podemos dizer que a frequência relativa de dados no intervalo aberto `]\bar{x}-k\cdot s ; \bar{x}+k\cdot s[` é no mínimo igual à razão `\frac{k^2-1}{k^2}` em que `k` é um número maior do que 1. 
+
+Verifique a validade desta afirmação para os resultados da :ref:`ativ-mediamaisoumenosdoisdesvios`.
 
 
 .. admonition:: Resposta 
 
-   texto
+   Considerando `k=2` encontramos o valor mínimo de frequência relativa dado por `\frac{3}{4}=0,75` ou 75%. Para todos os conjuntos considerados, a frequência relativa foi bem superior à 75%: 91%, 93% e 100% nos dois últimos casos. A desigualdade de Tchebyshev é bastante útil se conhecemos apenas a média e o desvio padrão para avaliar este limite inferior de frequência relativa, mas cabe ressaltar que, quando conehcemos os dados, em geral encontraremos frequências relativamente maiores do que o limite inferior especificado pela desigualdade.
+   
+   
 
 
 
