@@ -205,14 +205,14 @@ Atividade: dois modelos de projeção
 
    **Objetivo específico:** ponderar sobre concepções de modelos geométricos que permitam representar projeções de sombras considerando, para isto, algumas hipóteses simplificadoras.
    
-   **Observação:** caso um objeto opaco seja iluminado por uma fonte de luz não pontual, o bloqueio da luz por este objeto produz uma sombra mais complexa, com regiões e intensidades diferentes, como mostra o exemplo da :numref:`fig-proj-sombras-01`.
+   **Observação:** caso um objeto opaco seja iluminado por uma fonte não pontual de luz, o bloqueio da luz por este objeto produz uma sombra mais complexa, com regiões e intensidades diferentes, como mostra o exemplo da :numref:`fig-proj-sombras-01`.
     
       .. _fig-proj-sombras-01:
    
       .. figure:: _resources/sombras-01.jpg
          :width: 350pt
          
-         Bloqueio de uma fonte de luz não pontual.
+         Bloqueio de uma fonte não pontual de luz.
          
   
 O objetivo desta atividade é levar você a ponderar sobre concepções de modelos geométricos que permitam representar projeções de sombras considerando, para isto, algumas hipóteses simplificadoras. Esses modelos serão úteis no que se segue ao longo do capítulo. De fato, com esse conhecimento, será possível explicar e quantificar os fenômenos que você observou na :ref:`ativ-proj-luz-e-sombras` e, também, compreender o seu uso em aplicações diversas.
@@ -252,6 +252,26 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
 Organizando as ideias: projeções em perspectiva e projeções paralelas 
 ****
 
+**Projeções em perspectiva**
 
+Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar a lanterna do celular como um ponto `O` e o anteparo como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-perspectiva-01`, irá obstruir os raios de luz que emanam de `O`, produzindo uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta `AP`. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta `OP` com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-perspectiva-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
+
+.. _fig-proj-perspectiva-01:
+   
+.. figure:: _resources/projecao-perspectiva-01_2.jpg
+   :width: 450px
+         
+   Um modelo para o experimento com a lanterna do celular.
+
+Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. Esta abstração será útil para modelar outras situações, como veremos mais adiante. 
+
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um ponto `O` que não pertence a `\pi`. Seja `\psi` o plano paralelo à `\pi` passando por `O`. Se `P` é um ponto que não pertence a `\psi`, então o ponto `P'` de intersecção entre a reta `OP` e o plano `\pi` é denominado :index:`projeção em perspectiva` do ponto `P` com relação ao :index:`centro` `O` e ao :index:`plano de projeção` `\pi`. Observe que uma projeção em perspectiva é uma função 
   
+.. _fig-proj-perspectiva-02:
+   
+.. figure:: _resources/projecao-perspectiva-02.jpg
+   :width: 450px
+         
+   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` e ao plano de projeção `\pi`.
   
+Note que uma projeção em perspectiva pode ser interpretada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
