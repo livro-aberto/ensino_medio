@@ -5,19 +5,117 @@
 Exercícios
 ==========
 
-1. (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
+`1.` (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
 
-   1. "Há, no grupo em questão, pelo menos um recruta que mede mais de 1,81 m e pelo menos um que mede menos de 1,81 m."
+1. "Há, no grupo em questão, pelo menos um recruta que mede mais de 1,81 m e pelo menos um que mede menos de 1,81 m."
    
-   2. "Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m."
+2. "Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m."
    
-2. Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0` .
+`2.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0.` 
 
-   1. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
+1. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
 
-   2. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
+2. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
 
-   3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+   
+`3.` (ENEM 2015) Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os tempos no quadro a seguir. Escolha a opção que indica o valor da mediana dos tempos apresentados.
+
+1. 20,70 s.
+   
+2. 20,77 s.
+   
+3. 20,80 s.
+   
+4. 20,85 s.
+   
+5. 20,90 s.
+   
+.. table:: Tempos em segundos
+   
+   +---------------+------+------+------+------+------+------+------+------+
+   |Raia           |1     |2     |3     |4     |5     |6     |7     |8     |
+   +===============+======+======+======+======+======+======+======+======+
+   |Tempo (s)      |20,90 |20,90 |20,50 |20,80 |20,60 |20,60 |20,90 |20,96 |
+   +---------------+------+------+------+------+------+------+------+------+
+
+`4.` (ENEM 2016-adaptado) Em uma cidade, o número de casos de dengue confirmados aumentou consideravelmente nos últimos dias. A prefeitura resolveu desenvolver uma ação, contratando funcionários para ajudar no combate à doença, os quais orientarão os moradores a eliminarem criadouros do mosquito Aedes aegypti, transmissor da dengue. A tabela a seguir apresenta o número atual de casos confirmados, por região da cidade.
+
+A prefeitura optou pela seguinte quantidade de funcionários a serem contratados: (I) 10 funcionários para cada região da cidade cujo número de casos seja maior que a média dos casos confirmados e (II) 7 funcionários para cada região da cidade cujo número de casos seja menor ou igual à média dos casos confirmados. Quantos funcionários a prefeitura deverá contratar para efetivar a ação?
+
+1. 59
+2. 65
+3. 68
+4. 71
+5. 80
+   
+.. table:: Número atual de casos por região da cidade
+ 
+   +-----------------+-----------------+
+   |Regiao           |Casos confirmados|
+   +=================+=================+
+   |Oeste            |237              |  
+   +-----------------+-----------------+
+   |Centro           |262              |
+   +-----------------+-----------------+
+   |Norte            |158              |
+   +-----------------+-----------------+
+   |Sul              |159              |
+   +-----------------+-----------------+
+   |Noroeste         |160              |
+   +-----------------+-----------------+
+   |Leste            |278              |
+   +-----------------+-----------------+
+   |Centro-Oeste     |300              |
+   +-----------------+-----------------+
+   |Centro-Sul       |278              |
+   +-----------------+-----------------+
+   | Soma            |1.832            |
+   +-----------------+-----------------+   
+
+`5.` O *boxplot* a seguir representa a distribuição do número de gols marcado por um artilheiro nas Copas do Mundo desde a Copa de 1930 até a Copa de 2006 que vamos chamar de **marco**. Observe que aqui só é considerado o **marco**, sem levar em conta se houve mais de um artilheiro na Copa. Desse modo, nestas 18 Copas do Mundo, a figura leva em consideração os 18 **marcos** observados.
+
+  .. _fig-boxplotgols:
+
+  .. figure:: _resources/boxpltgols.png
+     :width: 200pt
+     :align: center
+
+     Boxplot dos **marcos** das Copas do Mundo de 1936 a 2006.
+   
+Com base neste gráfico, as seguintes afirmações foram feitas a cerca da distribuição da quantidade de gols dos artilheiros nestas Copas do Mundo.
+
+1. A distribuição apresenta assimetria à direita.
+   
+2. A média dos **marcos** é maior do que a mediana dos **marcos**.
+   
+3. O boxplot não nos permite avaliar a existência de moda.
+   
+4. Uma aproximação grosseira para o valor do desvio padrão dos **marcos** nestas Copas é dada por 2,25 gols.
+   
+5. A distância entre quartis desta distribuição é 3 gols.
+   
+6. Esta distribuição não apresentou valores atípicos.
+   
+7. Uma aproximação para o valor da média dos **marcos** pode ser calculada por `0,25\cdot (5+6,25+7,75+11)=7,5` gols. 
+   
+Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.
+
+`6.` Na questão anterior, sabe-se foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **marcos** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **marcos** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
+
+1. Com base nestas informações, calcule a média e o desvio padrão do **marco** e compare com as aproximações obtidas no exercício anterior. 
+  
+2. Consultando os **marcos** referentes às Copas de 2010 e 2014, verificou-se que eles foram 5 e 6, respectivamente. Determine a média e o desvio padrão dos **marcos**, considerando as 20 Copas do Mundo até 2014.
+
+ 
+ 
+   
+
+
+
+
+
+
 
 
 
@@ -27,22 +125,36 @@ Exercícios
 
 .. admonition:: Resposta 
 
-   1. A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
+`1.` A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
    
-      1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
+1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
       
-      2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
+2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
       
-   2. `y_i=c\cdot x_i`, `i=1,2,...,n`.
+`2.` `y_i=c\cdot x_i`, `i=1,2,...,n`.
    
-      1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
+1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
       
-      2. Podemos verificar que a soma dos desvios da média tomados ao quadrado será dada pela soma original dos desvios da média elevados ao quadrado multiplicada por `c^2`, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}(c\cdot x_i-c\cdot \bar{x})^2=c^2\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial multiplicada por `c^2`, a saber, `s^2_y=c^2\cdot s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial multiplicado por `c`, `s_y=c\cdot s`. Lembre que estamos considerando `c>0`.
+2. Podemos verificar que a soma dos desvios da média tomados ao quadrado será dada pela soma original dos desvios da média elevados ao quadrado multiplicada por `c^2`, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}(c\cdot x_i-c\cdot \bar{x})^2=c^2\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial multiplicada por `c^2`, a saber, `s^2_y=c^2\cdot s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial multiplicado por `c`, `s_y=c\cdot s`. Lembre que estamos considerando `c>0`.
+
+3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial.
       
-      3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial. 
+`3.` O primeiro passo é colocar os tempos do quadro apresentado em ordem crescente, a saber, `20,50< 20,60< 20,60< 20,80< 20,90 \leq  20,90 \leq 20,90 < 20,96`. Como o número de observações é par (`n=8`), segue que a mediana é dada por `\frac{x_{(4)}+x_{(5)}}{2}=\frac{20,80+20,90}{2}=20,85.` A resposta correta encontra-se na opção d).
+   
+`4.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
+   
+`5.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois Dq=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressaõ indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
+   
+`6.` Respostas 
+   
+1. A média é dada por `\bar{x}=\frac{132}{18}\approx 7,33` e o desvio padrão amostral é dado por `\sqrt{\frac{1}{18-1}\left (1060-18\cdot 7,33^2\right )}\approx 2,33`. Comparando a média aproximada de 7,5 com a média 7,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 2,3% da média obtida com a soma exata (`\frac{|7,5-7,33|}{7,33}\approx 0,023`. Comparando o desvio padrão aproximado de 2,25 com o desvio padrão 2,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 3,4% o desvio padrão obtido com as somas exatas (`\frac{|2,25-2,33|}{2,33}\approx 0,034`.
+   
+2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **marcos** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **marcos**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
 
 
-.. _sec-coloque-aqui-o-nome:
+
+
+.. _sec-applet-medidas:
 
 ====================
 Material Suplementar
