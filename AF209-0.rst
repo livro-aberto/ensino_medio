@@ -1,4 +1,3 @@
-
 =================
 Função Quadrática
 =================
@@ -12,50 +11,19 @@ Função Quadrática
 	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
 
 	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+    
 
-.. note:: **Roteiro**
+.. admonition:: Para o professor
 
-   `1.` Motivar o conceito de função quadrática com problemas de geometria.
+   Prezado colega, neste capítulo tivemos o cuidado de apresentar os conceitos, propriedades, definições e aplicações relacionadas ao estudo das funções quadráticas em doses homeopáticas e por meio de atividades que guiarão os alunos para os objetivos deste capítulo, mencionados anteriormente. Optamos, por influência da habilidade do BNCC, introduzir os conceitos mais básicos por uma atividade que estuda o movimento de queda livre de um objeto. De posse de conceitos básicos, partimos para a segunda atividade que tem como objetivo geral familiarizar os alunos com o gráfico de uma função real `f` definida por `f(x)=x^2`, chamando a atenção para suas caracteríticas e propriedades. Já as atividades seguintes exploram problemas de otimização, apresentando a forma canônica da função quadrática e finalmente associando ela à curva denominada *parábola*. Além disso, convidamos os alunos à explorar com detalhes o fato de algumas curvas terem o formato parecido com uma parábola mas não serem.
    
-   **Ideia 1.** Explorar (utilizando Geogebra) área e perímetro de retângulos inscritos no triângulo.
-   
-   **Ideia 2.** Problema dos retângulos de perímetro constante: altura `=f` (base): função afim, área `=f` (base): função quadrática.
-
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulos.png
-      :width: 600px
-      :align: center
-
-   
-   `2.` Explorar, de maneira informal, as noções de zero, crescimento e decrescimento, máximo da função.
-   
-   `3.` Parábola (lugar geométrico).
-   
-   `4.` Gráfico de Função Quadrática.
-   
-   `5.` Forma Algébrica: polinômios de grau 2 (revisitar os exemplos explorando suas versões algébricas e apresentar novos problemas, tipo lucro máximo, etc).
-   
-   `6.` Revisão sobre fatoração (Algeplan?)
-   
-   `7.` Forma canônica do Trinômio.
-   
-   `8.` Interseções com os Eixos, Vértice da Parábola.
-   
-   `9.` Movimento Uniformemente Variado.
-   
-   `10.` Taxa de variação linear (no gráfico) [Aprofundamento]
-   
-   `11.` Sinal da Imagem e Inequações [Aprofundamento] 
-   
-   **Referências**
-   
-   [1] Expose_bourdeaux_2010.pptx
-
-titulo
+     
+Introdução 
 =======
 
-Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, em que queremos saber em que condições uma determinada quantidade assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Vamos ver em um exemplo.
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, onde o objetivo é determinar em que condições uma determinada grandeza assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Assim como os outros capítulos deste material, vamos apresentar conceitos, definições e propriedades por meio de atividades e aprofundando esses conhecimentos na seção "Organizando Ideias", espero que você disfrute, se aproprie e internalize esses conceitos que serão úteis em diversas áreas do conhecimento, não só nos estudos de Mecânica da Física, mas em áreas como engenharias, economia, etc.
 
-O retângulo que se move
+Lançando Objetos
 -----------------------
 .. admonition:: Para o professor
 
@@ -71,40 +39,964 @@ O retângulo que se move
    * Os estudantes podem ter dificuldade com a expressão "em função de"...
 
 
-Considere o triângulo `ABC`, retângulo em `\hat{B}`, cujos lados medem `AB=10` e `BC=8`. Marcamos um ponto `M` em qualquer lugar do lado `AB` e a partir dele, inscrevemos um retângulo `MNPB` no triângulo `ABC`, conforme ilustra a figura abaixo.
+
+.. admonition:: Organizando ideias 
+
+   **Um pouco de História:** *Aristóteles e Galileu Galilei no estudo da Queda Livre*
+
+   Aristóteles; (Estagira, 384 a.C. — Atenas, 322 a.C.) discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
+   Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, que afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
+   Aristóteles afirmava que havia dois tipos de movimentos: os naturais e os violentos. Os naturais, para ele, decorre diretamente da natureza do objeto e os violentos decorrem de  forças aplicadas a esses objetos, ou seja um movimento imposto.
+   No caso dos movimentos naturais, Aristóteles afirmava que o cada objeto tem um lugar próprio na natureza e que esses se “esforçam” para retornar ao seu lugar de origem. Por exemplo um vaso de cerâmica, ao ser abandonado cai procurando seu lugar ao solo, já que em sua composição o elemento terra é o mais presente, e pelo mesmo motivo um sopro, ou “baforada” acaba se misturando com o ar.
+   Além disso, Aristóteles, afirmava que um objeto mais pesado (com maior massa) cai em direção ao solo, mais rapidamente que um objeto mais leve, ou seja, para ele, objetos ao serem lançados, caíam com rapidez proporcional ao seu peso. Suas afirmações sobre o movimento, pautaram o pensamento científico por mais de dois mil anos, sendo a base da ciência na era Medieval e Renascentista. Sendo corrigidas por seus sucessores, como Galileu Galilei.
+
+   Galileu Galilei (Pisa, 15 de fevereiro de 1564 — Florença, 8 de janeiro de 1642) filósofo italiano e também considerado, físico, matemático e astrônomo, teve também um papel importante na revolução científica, e no contexto histórico mundial, sendo considerado um dos maiores cientistas de sua época. 
+   Galileu abandonou a faculdade de Medicina dedicando-se aos estudos de física e matemática na Universidade de Pisa, uma das mais conceituadas da época. Foi na Universidade de Pisa, já como professor de matemática que Galileu, realizou experiências públicas sobre a queda dos corpos. 
+   Certos historiadores, relatam que perante uma multidão de professores, estudantes e religiosos, Galileu, ao alto da torre de Pisa deixou cair dois pedaços de metal, um deles com o peso dez vezes maior que o outro e os dois chegaram ao solo praticamente no mesmo instante, contrariando assim Aristóteles. Ele prosseguiu realizado outras experiências laboratoriais que acabaram criando o conceito de resistência do ar, o que explicaria por que uma pena e uma bola de metal abandonadas de uma mesma altura, não chegam ao chão ao mesmo tempo. Mesmo assim Galileu não conseguiu convencer as autoridades universitárias de Pisa, que o acusaram de sacrilégio e acabaram tornando sua continuidade em Pisa um tanto desagradável. Por isso, no ano seguinte Galileu aceita uma cadeira na Universidade de Pádua, onde foi muito bem recebido e, por quase dezoito anos continuou realizando diversas experiências e ganhando prestígio com suas publicações e suas famosas aulas magnas.
+
+   Uma das conclusões mais importantes de Galileu, foram com bases em experiências laboratoriais com planos inclinados. Como retratam as figuras a seguir:
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=org_id_at_1_plano_inclinado.jpg
+      :width: 200pt
+      :align: center
+
+      *pietrocola_et_al._-_fisica_em_contextos_-_volume_1* 
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=org_id_at_1_plano_inclinado_continuacao.jpg
+      :width: 200pt
+      :align: center
+
+      *pietrocola_et_al._-_fisica_em_contextos_-_volume_1*
+   
+   
+   Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. A partir dessas conclusões chegamos as fórmulas: `g=\frac{2d}{t^2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
 
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulo_01.png
-   :width: 300px
+.. _atividade-2-quadratica:
+
+Atividade 2: O gráfico da função real `f(x)=x^2`
+----
+
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+  
+   #. Inferir, através da análise das imagens da função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`, experimental e formalmente, as propriedades:
+      
+      `i` **)** de simetria axial em relação ao eixo vertical, ou seja, que `f(x)=f(-x)`, para todo `x` real;\
+      
+      `ii` **)** de que `f` possuí mínimo absoluto, ou seja, que `f(x)\geq 0`, para todo `x` real.\
+      
+   #. Inferir que os pontos do gráfico de `f` não podem ser conectados por segmentos de reta.
+   #. Definir a taxa de variação para dois pontos em funções reais.
+   #. Inferir que as taxas de variação em intervalos de mesmo tamanho, a direita ou a esquerda do eixo de simetria, estão em progressão aritmética.
+   #. Destacar o comportamento crescente e não proporcional de `f` para a direita ou para a esquerda do seu eixo de simetria.
+
+
+   **Observações e recomendações**
+   
+   #. ...
+   
+   #. ...
+   
+   #. ...
+
+No capítulo anterior foi estudado o modelo matemático para funções afim. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, na :ref:`Tarefa 1` aparece o termo `ax^2`, com `a\in\mathbb{R}` e `a\neq0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como esta da :ref:`Tarefa 1`. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
+
+Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o que se pede:
+
+#. Complete a tabela a seguir com os valores que faltam.
+
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+   |   `x`  |  `-5`  |  `-3`  |`______`|  `-1`  |`______`|   `1`  |   `2`  |   `3`  |`______`|`10 \over 3`| `\sqrt{123}` |
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+   | `f(x)` |`______`|`______`|   `4`  |`______`|   `0`  |`______`|`______`|`______`|  `25`  |  `______`  |   `______`   |
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+
+#. Represente os pontos da tabela no gráfico que segue. Despreze os pontos cujo valor de `x` não aparece destacado no gráfico.
+
+.. figure:: _resources/Ativ_2b.png
+   :width: 200 px
    :align: center
 
-Vamos imaginar que o ponto `M` é móvel, e portanto o retângulo se move junto com ele.
+#. Destaque os pares de pontos que estão a mesma distância do eixo `y`.
 
-#. Faça um desenho onde o ponto `M` está posicionado em um lugar diferente da figura anterior.
-#. Enquanto o ponto `M` se move, o que muda e o que não muda na construção?
-#. Descreva precisamente o que acontece com o retângulo.
+#. Caso seja possível, forneça o ponto da função `f` que está a mesma distância do eixo `y` que cada um dos pontos de `f` já listados a seguir. [Mesma distância = equidistante]
 
-Observe a seguinte figura
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+   |          `(x,y) \in f`         | `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})` | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)` | `(\sqrt{\frac{1}{2}},\frac{1}{2})` | `(- \pi , \pi^{2})` |
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+   | Ponto equidistante do eixo `y` | `______` | `______`  |           `______`           |           `______`             |    `______`    |                `______`            |       `______`      |
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
 
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=quadratica_02.png
-   :width: 300px
+#. De todos os pontos que podemos obter com a função `f`, existe um que não tem correspondente equidistante do eixo `y`. Que ponto é esse? Tente descrever as características que esse ponto tem em relação aos outros da função `f` ou em relação aos eixos coordenados. 
+
+#. Existe algum ponto da imagem de `f` que seja menor do que zero?
+
+#. Considerando os pontos do domínio de `f` entre `-4` e `0`, a melhor classificação para esta função é crescente ou decrescente? E entre `0` e `4`?
+
+#. Para o intervalo crescente de `f`, é possível verificar a validade do :ref:`TFP` [teorema fundamental da proporcionalidade]?
+
+#. No item :ref:`b` você marcou no plano cartesiano alguns dos pontos da função `f`. Agora serão apresentados alguns gráficos e, para cada um deles, você deve afirmar com alguma justificativa, se é ou não o gráfico de `f`. Para isso, use o que você experimentou nos itens da atividade até aqui.
+
+.. figure:: _resources/Graficos_Ativ2.png
+   :width: 350 px
    :align: center
 
-#. Qual dos dois retângulos tem o maior perímetro, `BMNP` ou `BM'N'P'`? Por que?
-#. Descreva o comportamento geral do perímetro do retângulo à medida que o ponto `M` se move. Quando ele tem o maior perímetro? E o menor?
-#. O que aconteceria com os perímetros caso o triângulo retângulo `ABC` fosse isósceles?
-#. Qual dos dois retângulos tem a maior área? Por que?
-#. Descreva o comportamento geral da área do retângulo à medida que o ponto `M` se move. Quando ele tem a maior área?
+.. admonition:: Resposta 
 
-Vamos chamar de `x` o segmento `AM`. Escreva em função de `x` as seguintes grandezas:
+   #. 
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      |   `x`  | `-5` | `-3` | `-2` | `-1` |  `0`  |  `1`  |  `2`  |  `3`  |  `5`  |  `10 \over 3`  | `\sqrt{123}` |
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      | `f(x)` | `25` |  `9` | `4`  |  `1` |  `0`  |  `1`  |  `2`  |  `3`  |  `25` |  `100 \over 9` |     `123`    |
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      
+      As posições referentes ao `-2` e ao `5` deste gabarito poderiam ter sido ocupadas, respectivamente, pelo `2` e pelo `-5`.
 
-#. O comprimento `MB`.
-#. O comprimento `MN`.
-#. O perímetro `MBNP`.
-#. A área de `BMNP`.
+   #. 
+         .. figure:: _resources/Ativ_2b_Gab.png
+            :width: 150 px
+            :align: center
+      
+   #. `(-3,9)` e `(3,9)`;
+      
+      `(-2,4)` e `(2,4)`;
+      
+      `(-1,1)` e `(1,1)`.
+   
+   #. 
+      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+      |          `(x,y) \in f`         |  `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})` | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)` | `(\sqrt{\frac{1}{2}},\frac{1}{2})` | `(- \pi , \pi^{2})` |
+      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+      | Ponto equidistante do eixo `y` | `(-7,49)` | `(5,25)`  | `(-\frac{2}{5},\frac{4}{25})`|  `(\frac{6}{7},\frac{36}{49})` | `(-\sqrt{3},3)`| `(-\sqrt{\frac{1}{2}},\frac{1}{2})`|  `(\pi , \pi^{2})`  |
+      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+  
+      
+   #. `(0,0)`; Esse ponto pertence ao eixo `y`, logo dista zero deste eixo. Outra argumentação boa é que o zero é o único número simétrico de si mesmo.
 
-Acesse o aplicativo Geogebra <link> e observe... (completar)
+   #. Não.
+   
+   #. Decrescente; Crescente.
+   
+   #. Não, pois `\frac{f(4) - f(3)}{1} \neq \frac{f(3)-f(2)}{1} \neq \frac{f(2)-f(1)}{1} \neq \frac{f(1)-f(0)}{1}`.
+   
+   #. 
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `1` | As imagens dos números no intervalo `[-2,2]-{0}` não correspondem ao que foi calculado no item a.                                                                                                                     |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `2` | As imagens de `{-1, 1}` estão incorretas. Perceba ainda que, por exemplo, para `x>2` as variações nas imagens não aparentam ter o crescimento calculado no item h.                                                    |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `3` | Conforme visto no capítulo de função afim, esse gráfico só pode corresponder a uma função real do tipo `f(x)=ax+b`. Outra razão é o gráfico não ser simétrico em relação ao eixo y.                                   |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `4` | A parte crescente não satisfazer o teorema fundamental da proporcionalidade.                                                                                                                                          |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `5` | As imagens de `-5` e `5` parecem já ter aparecido para algum outro elemento do domínio no intervalo `[-5,5]` e isso não ocorre.                                                                                       |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `6` | A sessão 9 :ref:`Para saber mais` do capítulo de função afim evidencia que um gráfico deste tipo, composto por vários segmentos de reta, apresenta, para intervalos diferentes do eixo `x`, funções afins diferentes. |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `7` | Corresponde a todas as características observadas para a função `f`. Esse é o seu gráfico.                                                                                                                            |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `8` | Todas as imagens se concentram de zero a oito, mas a imagem de `f` tem, por exemplo, os valores `9` e `16`.                                                                                                           |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+**Organizando ideias: Características da função real**  `f(x)=x^{2}`.
+
+Na atividade isolamos o termo `x^{2}` que apareceu no início deste capítulo e motivamos algumas experimentações que devem ter provocado algumas conjecturas e também conduziu a algumas certezas. Será que sua atenção recaiu nesses fatos que listamos a seguir?
+
+**Simetria axial de** `f`
+
+Os itens de 'b' a 'd' esclarecem que, na função `f`, valores simétricos do domínio geram imagens iguais, ou seja, `f(-x) = f(x)`, para qualquer `x \in \mathbb{R}`. Basta perceber que `f(-x) = (-x)^{2} = (-x)(-x) = x^{2} = f(x)`. Isso faz com que o eixo `y` seja mediatriz do segmento que une esses pares de pontos do tipo `(x,x^{2})` e `(-x,x^{2})` que destacamos, ou para qualquer outro elemento do domínio de `f`. A única exceção é `x=0` pois 0 é simétrico de si mesmo. Assim, podemos afirmar que, para o gráfico da função `f`, o eixo `y` é eixo de simetria.
+
+.. figure:: _resources/Simetria_Parabola.png
+   :width: 200 px
+   :align: center
+
+**A imagem de** `f`
+
+O item 'e' nos leva a refletir sobre um fato muito importante no estudo que estamos desenvolvendo aqui. Não importa qual o valor real do domínio que seja utilizado, a menor imagem é zero, pois sendo x um número real, só existem três possibilidades para x:
+
+.. math::
+
+   & x<0 \Rightarrow x \cdot x = x^{2}>0 \Rightarrow f(x)>0;\\
+   & x=0 \Rightarrow x \cdot x = 0 \cdot 0 =0 \Rightarrow f(x)=0;\\
+   & x>0 \Rightarrow x \cdot x = x^{2}>0 \Rightarrow f(x)>0.\\
+   
+Para qualquer `x \in \mathbb{R}`, `f(x) = x^{2} \ge 0`, ou seja, o menor valor de `f` é zero e `Im(f) = [0, +\infty[`.
+
+.. figure:: _resources/VMin.png
+   :width: 300 px
+   :align: center
+
+**A não proporcionalidade no crescimento de** `f`
+
+Como o gráfico da função `f` é simétrico em relação ao eixo `y`, a análise gráfica que se faz em uma das metades da figura fica espelhada para compor a outra metade. Assim, vamos analisar o que ocorre na parte crescente de `f` quando aumentamos em uma unidade um elemento `x` do seu domínio:
+Se `x \in ]0,+\infty[`, temos que `f(x) = x^{2}` e `f(x+1)=(x+1)^{2}=x^{2}+2x+1`. Assim, `f(x+1)-f(x)=2x+1`, ou seja, as variações das imagens dependem do `x` escolhido. Mais especificamente, neste caso elas formam uma progressão aritmética de razão `2` e, com isso, as variações analisadas são crescentes. Graficamente,
+
+.. figure:: _resources/Ativ2_NProp.png
+   :width: 180 px
+   :align: center
+
+`f` **e as progressões aritméticas**
+
+Muito provavelmente, as características anteriores de `f`, ou mesmo os itens da atividade, tenham transmitido alguma ideia da existência de uma progressão aritmética nessa função real. A tabela a seguir exibe elementos do domínio em progressão aritmética, suas imagens e as diferenças consecutivas dessas imagens:
+
++-----------+----------+---------------+
+| `x \in f` |  `f(x)`  | `f(x+1)-f(x)` |
++-----------+----------+---------------+
+|    `0`    |    `0`   |               |
++-----------+----------+---------------+
+|    `1`    |    `1`   | `1-0=1`       |
++-----------+----------+---------------+
+|    `2`    |    `4`   | `4-1=3`       |
++-----------+----------+---------------+
+|    `3`    |    `9`   | `9-4=5`       |
++-----------+----------+---------------+
+|    `4`    |   `16`   | `16-9=7`      |
++-----------+----------+---------------+
+|    `5`    |   `25`   | `25-16=9`     |
++-----------+----------+---------------+
+| `\vdots`  | `\vdots` |   `\vdots`    |
++-----------+----------+---------------+
+
+Escolhendo `x` do domínio de `f` e um `r \in \mathbb{R}` constante, podemos analisar a situação da tabela acima de uma forma mais geral:
+
++-----------+---------------------------+-----------------------------------------------------+
+| `x \in f` |           `f(x)`          |                    `f(x+r)-f(x)`                    |
++-----------+---------------------------+-----------------------------------------------------+
+|    `x`    |           `x^2`           |                                                     |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+r`   |   `(x+r)^2=x^2+2xr+r^2`   | `(x+r)^2-x^2=2xr+r^2`                               |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+2r`  |  `(x+2r)^2=x^2+4xr+4r^2`  | `(x+2r)^2-(x+r)^2=2xr+3r^2=(2xr+r^2)+2r^2`          |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+3r`  |  `(x+3r)^2=x^2+6xr+9r^2`  | `(x+3r)^2-(x+2r)^2=2xr+5r^2=(2xr+r^2)+2 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+4r`  |  `(x+4r)^2=x^2+8xr+16r^2` | `(x+4r)^2-(x+3r)^2=2xr+7r^2=(2xr+r^2)+3 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+5r`  | `(x+5r)^2=x^2+10xr+25r^2` | `(x+5r)^2-(x+4r)^2=2xr+9r^2=(2xr+r^2)+4 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+| `\vdots`  |            `\vdots`       |                     `\vdots`                        |
++-----------+---------------------------+-----------------------------------------------------+
+
+E esse padrão continua, nos permitindo perceber que as diferenças entre imagens consecutivas de elementos do domínio que estão em progressão aritmética, formam uma outra progressão aritmética com primeiro termo igual a `2xr+r^2` e razão `2r^2`.
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade 3 : Perímetro Fixo
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   Prezado colega esta atividade tem como objetivo aplicar o conceito de otimização em função quadrática num contexto geométrico, sem a utilização do gráfico da função nem muito menos da curva denominada parábola, para isso pretendemos:
+
+   #. explorar a situação através do uso, já corriqueiro, de preenchimento de um quadro.
+   #. modelar a situação utilizando álgebra de maneira simples e guiada.
+   #. apresentar e explorar a técnica de completar quadrados para passarmos a função quadrática encontrada da forma polinomial para a forma canônica, sem obrigatoriamente citar esses termos.
+   #. utilizar a apresentação da forma canônica para identificarmos os valores de área máxima e os valores que maximizam essa área, convidando seu aluno à fazer inferências apenas aritméticas na forma encontrada.
+
+**Explorando 3** 
+
+Imagine que você tenha um pedaço de barbante de `12cm` de comprimento e queira cercar uma região retangular com ele. A figura abaixo ajuda a ilustrar a situação.
+
+*Figura das mãos com o barbante*
+
+#. A situação em questão envolve quatro grandezas, aponte quais são.
+#. Quais grandezas descritas acima variam e quais não variam?
+#. Preencha o quadro a seguir, que modela a situação:
+
+   +------+--------+------+
+   | Base | Altura | Área |
+   +------+--------+------+
+   | 0    |        |      |
+   +------+--------+------+
+   | 1    |        |      |
+   +------+--------+------+
+   | 2    |        |      |
+   +------+--------+------+
+   | 3    |        |      |
+   +------+--------+------+
+   | 4    |        |      |
+   +------+--------+------+
+   | 5    |        |      |
+   +------+--------+------+
+   | 6    |        |      |
+   +------+--------+------+
+
+#. O que ocorreu com a área para os valores da base iguais a `0` e `6`?  Esses valores devem ser considerados em nossa análise da situação?
+#. Qual a medida da base do retângulo que apresentou área máxima no quadro acima? 
+#. Assumindo a base do retângulo como `x`, e sua altura como `h(x)`, exiba uma expressão algébrica que representa a medida da altura desse retângulo em função de `x`. A expressão `h(x)`, encontrada pode ser considerada uma função afim? Com que domínios e imagens?
+#. Assumindo a base do retângulo como `x`, a altura `h(x)` encontrada no item anterior e sua área como `A(x)`, exiba uma expressão que apresente a área deste retângulo em função de `x`. 
+#. Verifique se a relação encontrada pode ser dada por `A(x)=-(x^2-6x)`, caso contrário refaça os itens anteriores.
+#. A expressão `A(x)`, encontrada pode ser considerada uma função afim? Por quê? 
+#. Observe que a relação apresentada no item anterior, possui dentro do parênteses um binômio que pode ser parte de um trinômio quadrado perfeito, qual seria o terceiro termo que faria o binômio se transformar num trinômio quadrado perfeito?
+#. Agora repita a relação: `A(x)=-(x^2-6x+?-?)` acrescentando e retirando o número encontrado no item anterior.
+#. Ao fatorar a relação do item anterior podemos recair na forma: `A(x)=a(x-p)^2+q`, quais os valores de a, p e q, que foram encontrados neste processo de fatoração?
+#. Levando em consideração a forma apresentada no item anterior, e ao analisarmos apenas o termo `(x-p)^2`, Existe algum valor de `x` que torne a expressão negativa? e qual valor de `x` torna a expressão nula?
+#. Ao analisarmos `A(x)=-(x-3)^2+9`, existe algum valor de `x` que faça `A(x)` ser maior que `9`? Por quê?
+#. Qual a área máxima do Retângulo?
+#. Qual o valor de `x`, que gera a área máxima?
+
+
+.. admonition:: Resposta 
+
+   #. No retângulo temos as medidas de: **perímetro**, **área**, **base** e **altura**.
+   #. O perímetro não varia, e a área a base e a altura variam.
+   #. Segue o quadro preenchido:
+   
+      +------+--------+------+
+      | Base | Altura | Área |
+      +------+--------+------+
+      | 0    |    6   |   0  |
+      +------+--------+------+
+      | 1    |    5   |   5  |
+      +------+--------+------+
+      | 2    |   4    |   8  |
+      +------+--------+------+
+      | 3    |   3    |   9  |
+      +------+--------+------+
+      | 4    |   2    |   8  |
+      +------+--------+------+
+      | 5    |   1    |   5  |
+      +------+--------+------+
+      | 6    |   0    |   0  |
+      +------+--------+------+
+      
+   #. A área foi nula. Eles não devem ser considerados, pois não existem retângulos cujas medidas dos lados sejam nulas.
+
+   #. base = 3cm.
+
+   #. `h(x)=6-x` . Sim, com: `h:]0,6[\to]0,\infty[`.
+
+   #. `A(x)=-(x^2-6x)`.
+
+   #. Verificação.
+
+   #. Não por vários motivos, seguem alguns: 
+
+      `i.1)` a função afim é sempre monótona (sempre crescente ou sempre decrescente), os valores da última coluna do quadro nos mostram que ora `A(x)` é crescente ora é decrescente.
+      
+      `i.2)` a função afim apresenta taxa de variação constante, já `A(x)` não apresenta, pois: `\frac{5-0}{1-0}=5` e `\frac{8-5}{2-1}=3`.
+
+   #. `9`.
+
+   #. `A(x)=-(x^2-6x+9-9)`.
+
+   #. `A(x)=-(x^2-6x+9-9)=-(x^2-6x+9)+9=-(x-3)^2+9` , com `a=-1` ; `p=3` e `q=9`.
+
+   #. Não existe. `x=p`.
+
+   #. Não. Pois para quaisquer valores de `x`, `(x-3)^2` sempre será positivo, e consequentemente `-(x-3)^2` será sempre negativo, e se esse valor negativo for somado com `9` o resultado obrigatoriamente será menor que `9`.
+
+   #. `9cm^2`.
+   
+   #. `3cm`. 
+
+**Organizando as ideias 3: Quadrados, Máximos ou Mínimos e na Função Quadrática**
+
+Na atividade 3 você foi auxiliado na transformação da lei de formação da função `A` descrita por `A(x)=6x-x²` para `A(x)=-(x-3)²+9`. Qual o objetivo dessa transformação? Que vantagem há nisso?
+
+Sabe-se que uma função real do tipo `f(x)=x^2` tem a propriedade `f(x) \geq 0`, para todo `x \in \mathbb{R}`. Ou seja, qualquer variável real que esteja elevada ao quadrado tem resultado mínimo igual a zero e pode crescer tanto quanto se queira. Imagine agora que esse quadrado seja multiplicada por um número negativo, os resultados que podiam crescer o quanto se quisesse, agora ficam negativos e, na verdade, passam a diminuir tanto quanto se queira e o zero passa a ser o seu maior valor. As tabelas abaixo evidenciam isso:
+
+.. figure:: _resources/OrgI3_Fator.png
+   :width: 400 px
+   :align: center
+
+A análise feita gera a regra que segue.
+
+
+.. admonition:: – Fique atento!
+
+    Para `f(x)=ax^2` temos: 
+    
+    `a > 0`, `f` tem resultado **mínimo** em `x^2 = 0`;
+   
+    `a = 0`, `f` é constante e nula, ou seja `f(x)=0`;
+   
+    `a < 0`, `f` tem resultado **máximo** em `x^2 = 0`.   
+
+Na atividade 3, a forma `A(x) = 6x – x^2` tem duas variações simultâneas: `6x` e `-x^2`, o que torna mais difícil a determinação de um possível resultado máximo de `A`. Já a forma `A(x)=-(x-3)^2 +9` só tem uma variação: `-(x-3)^2`, que pela regra descrita acima tem um resultado máximo que ocorre em `(x-3)^2=0`, logo o resultado máximo de `A` é `0+9=9`. Destacamos com isso o quanto fica simples a determinação de um resultado máximo ou mínimo em situações em que podemos reduzir as variações a um único termo ao quadrado.
+
+Diante do que conhecemos até aqui, podemos finalmente estabelecer que toda função real do tipo `f(x)=ax^{2}+bx+c`, onde `a`, `b` e `c` são números reais e `a \neq 0`, pode ser transformada em sua forma equivalente `f(x)=a(x-p)^{2}+q`. Em ambos os formatos, chamaremos a função de **função quadrática**. Chamaremos `f(x)=ax^{2}+bx+c` de **forma geral** e `f(x)=a(x-p)^{2}+q` de **forma canônica** da função quadrática.  
+
+A forma `f(x)=a(x-p)^{2}+q` permite identificar rapidamente  qual é o resultado máximo ou mínimo da função conforme `a` seja positivo ou negativo. 
+Considere, como exemplo do que foi concluído, que o tamanho do barbante seja de `14` cm. Sua área `A(x)` em função da base `x` será `A(x)=7x-x^{2}`. Fatorando `A(x)`, teremos:
+
+.. math::
+
+   & A(x)= 7x-x^{2}\\
+   & A(x)=-x^{2}+2 \cdot \frac{7}{2}x\\
+   & A(x)=-x^{2}+2 \cdot \frac{7}{2}x - \frac{49}{4} + \frac{49}{4}\\
+   & A(x)=-\left(x^{2}-2 \cdot \frac{7}{2}x + \frac{49}{4}\right) + \frac{49}{4}\\
+   & A(x)=- \left(x - \frac{7}{2} \right )^{2}+ \frac{49}{4}\\
+
+A função tem um resultado máximo, pois `a=-1<0` e este valor aparece quando `\left(x-\frac{7}{2}\right)^{2}=0`, ou seja, `x=\frac{7}{2}`. Assim, o valor máximo da função é `A(x)=0+\frac{49}{4}=\frac{49}{4}`.
+
+De modo geral, `f(x)=ax^{2}+bx+c` equivale a `f(x)=a(x-p)^{2}+q` e, avaliado se existe o resultado máximo ou o mínimo para a função real, esse resultado é o ponto `(p,q)` que passaremos a chamar de ponto de máximo ou ponto de mínimo, dependendo do valor `a`.
+
+**Obtendo o ponto de máximo ou de mínimo através da forma geral**
+
+Você já deve ter percebido que a forma geral modificada para a forma canônica, exibe imediatamente o ponto `(p,q)`. No entanto, podemos usar essa técnica no sentido inverso para que a mudança para a forma canônica não seja o único modo de obter `(p,q)`. Assim, vamos desenvolver a *forma canônica* de `f`:
+
+.. math::
+   & a(x-p)^2+q= \\
+   & a(x^2-2px+p^2)+q \\
+   & ax^2-2apx+ap^2+q \\
+   & ax^2-2apx+(ap^2+q) \\
+   
+Comparando esse resultado com sua forma equivalente *forma geral* `ax^2+bx+c`, que é a *forma geral* temos:
+
+.. math::
+   & ax^2=ax^2 \Rightarrow a=a \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (1) \\
+   & -2apx=bx \Rightarrow p=-\frac{b}{2a} \;\;\;\;\; (2)\\
+   & ap^2+q=c \Rightarrow q=c-ap^2 \;\;\;\;\; (3)\\
+
+A conclusão `(1)` não traz novidade, a `(2)` nos mostra como determinar `p` a partir da *forma geral* e `(3)` revelará quem é `q`, mas precisaremos simplificar um pouco mais a expressão. Para isso, usaremos `(2)` em `(3)`:
+
+.. math::
+   q &=c-a \cdot \left(- \frac{b}{2a} \right)^{2} =c \cdot 1-a \cdot \left( \frac{b^2}{4a^2} \right) \\
+   & =c \cdot \frac{4a}{4a} - \frac{b^2}{4a}= \frac{4ac-b^2}{4a} \\
+   & = - \frac{b^2-4ac}{4a}
+
+Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4ac`" é representada pela letra grega `\Delta`, ou seja, `\Delta = b^2-4ac`, temos que `q = - \frac{\Delta}{4a}`.
+
+.. admonition:: Teorema 
+   
+   Seja a função quadrática, de domínio real, `f(x)=ax^2+bx+c`,
+   
+   `\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (p,q)= \left( -\frac{b}{2a}, -\frac{\Delta}{4a} \right)`
+   
+   e uma das situações a seguir é verdadeira:
+   
+   `(i)\;(p,q)` é o **ponto de mínimo**, se `a>0`;
+   
+   `(ii)\;(p,q)` é o **ponto de máximo**, se `a<0`.
+
+.. admonition:: Para Saber Mais
+
+   **Função Quadrática e a soma dos primeiros termos de uma Progressão Aritmética**
+   
+   No livro *Antologia Matemática* de Malba Tahan, conta um episódio cuja personagem principal seria o "príncipe da matemática" Carl Frederick **Gauss** (`\star 1777- \dagger 1855`). Não se sabe se o episódio é real, mas conta-se que aos sete anos de idade, chegando para mais um dia de aula, *Gauss* e seus colegas teriam encontrado o professor com pouca paciência num certo dia. Assim, o professor, com o intuito de entreter seus alunos por longo tempo e não precisar dar-lhes qualquer atenção, pediu para que todos somassem os números naturais desde `1` até `100`. Contudo, o jovem *Gauss* em pouco tempo levou o resultado do exercício para o professor e este, incrédulo do feito, teria mandado *Gauss* para a direção. Mais tarde, tudo se esclareceu e o professor reconheceu o acerto do jovem e desculpou-se.
+   
+   Vamos tentar refazer o caminho do jovem *Gauss* neste episódio. O professor pediu para que fosse resolvida a expressão `1+2+2+4+5+ \cdots +96+ 97+98+99+100`.
+   
+   #. Numa folha de papel, escreva essa conta.
+   
+   #. Os números dessa conta estão em progressão aritmética. Identifique o primeiro termo e a razão.
+   
+   #. Quantos números tem essa conta? (Considere os que você escreveu e os que você só deixou indicado.)
+   
+   #. Na linha abaixo da conta, escreva a mesma conta, mas agora na ordem contrária, ou seja, partindo do 100 até o 1.
+   
+   #. A quantidade de números da conta na segunda linha mudou, em relação a linha de cima, por causa dessa troca de ordem?
+   
+   #. Se você somar todos os números que você escreveu, qual dos resultados a seguir você terá obtido:
+      
+      `\Box` o mesmo resultado de *Gauss*.
+      
+      `\Box` a metade do resultado de *Gauss*.
+      
+      `\Box` o dobro do resultado de *Gauss*.
+      
+      `\Box` o quadrado do resultado de *Gauss*
+   
+   #. Ao invés de somar a linha de conta que você escreveu, some um número de cada linha, seguindo a ordem em que foi pedido que você escrevesse os números. Quantas somas serão feitas?
+      
+   #. Quanto deu os resultados de cada uma dessas somas?
+   
+   #. Tente explicar o por quê do item anterior. 
+   
+   #. Com base nos itens 'g' e 'h', determine o resultado da soma de todos os números da primeira e da segunda linhas.
+   
+   #. Lembrando do que você marcou no item 'f', determine o resultado obtido por *Gauss*.
+   
+   #. Você seria de capaz de refazer as etapas, porém desta vez encontrando uma expressão para o resultado da soma dos `n` primeiros números naturais? Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdot +(n-3)+(n-2)+(n-1)+n`.
+   
+   **As respostas estão no fim da sessão**
+   
+   No capítulo de funções, um dos exercícios sugere que você determine a relação entre uma sequência de figuras e a quantidade de pontos usados para compor cada figura.
+      
+   .. figure:: https://www.umlivroaberto.org/BookCloud/Volume_1/master/view/_images/figurados_1.png
+      :width: 200 px
+      :align: center
+   
+   As quantidades de pontos em cada figuras são comumente chamado de números poligonais. Assim, `(1,4,9,16, \cdots)` são números quadrados; `(1,5,12,22, \cdots)` são números pentagonais; etc.
+   
+   Nesta atividade, vamos pensar sobre os números triângulares. A imagem a seguir exibe os cinco primeiros:
+   
+   .. figure:: _resources/Numeros_Triangulares_1.png
+      :width: 300 px
+      :align: center
+      
+   #. Escreva a sequência de números triângulares até o sexto termo.
+   
+   #. Os números triangulares formam uma progressão aritmética?
+   
+   #. A figura a seguir, destaca as linhas de cada triângulo. Escreva o total de bolinhas de cada um desses triângulos como soma das quantidades das suas linhas.
+   
+      .. figure:: _resources/Linhas_Num_Triang.png
+         :width: 300 px
+         :align: center
+   
+   #. Após o item anterior, que relação você percebe entre os números triangulares e o episódio do menino *Gauss*?
+   
+   #. Com base nessa relação, você seria capaz de determinar o centésimo número triangular? Determine-o.
+   
+   #. Chamando de `T_{n}` o número triangular da posição `n`, escreva a relação entre `n` e `T_{n}`.
+   
+   **As respostas estão no fim da sessão**
+   
+   De modo mais geral, a soma dos primeiros termos de qualquer progressão aritmética é expressa por uma função quadrática.
+   
+   Isso acontece porque o método que usamos para somar números naturais, que formam uma progressão aritmética, continua válido para uma progressão aritmética diferente dessa. Observe.
+   
+   .. math::
+      
+      a_{1}+a_{2}+a_{3}+ \cdots +a_{n-1}+a_{n}
+      
+      a_{n}+a_{n-1}+ \cdots +a_{3}+a_{2}+a_{1}
+      
+   Somando um elemento de cada linha e na ordem escrita teremos:
+   
+   .. math::
+   
+      (a_{1}+a_{n})+(a_{2}+a_{n-1})+ \cdot + (a_{n-1}+a_{2})+(a_{n}+a_{1})
+      
+   Cada par de parênteses exibe um elemento que, em relação às sequências de onde foram extraídos, varia em `+r`, enquanto o outro varia `-r`, onde `r` é a razão da progressão aritmética. Assim, dispomos de `n` parcelas iguais a, por exemplo, `a_{1}+a_{n}`. Já podemos concluir o teorema a seguir:
+   
+     .. admonition:: Teorema 
+
+        Dada a progressão aritmética `(a_{1},a_{2},a_{3}, \cdots ,a_{n-1},a_{n}, \cdots)`, a soma dos seus `n` primeiros termos será indicada por `S_{n}` e
+   
+        .. math::
+   
+           S_{n} = \frac{n \cdot (a_{1}+a_{n})}{2}
+              
+   Contudo, sabe-se que `a_{n}=a_{1}+(n-1)\cdot r` e a relação da soma dos primeiros termos da progressão aritmética pode ainda ser apresentada conforme segue:
+   
+   `S_{n}=\frac{[a_1+a_{1}+(n-1)\cdot r] \cdot n}{2}= \frac{[a_1 \cdot n +a_{1}  \cdot n + (n \cdot r-r)\cdot n]}{2}= \frac{2a_{1}n+n^2r-rn}{2}`
+   
+   `S_{n}=\frac{r \cdot n^2}{2}+ \frac{(2a_{1}-r)n}{2}`, que é uma função quadrática com domínio discreto `n \in \mathbb{N}^*`.
+   
+
+.. admonition:: Resposta 
+
+   **Atividade Menino `Gauss`** 
+
+   #. `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   
+   #. `a_{1}=1` e `r=1`.
+   
+   #. `100` números
+   
+   #. `10100 \div 2 = 5050`.
+   
+      +-------------------------------------+
+      | `1+2+3+4+5+ \cdot +96+97+98+99+100` |
+      +-------------------------------------+
+      | `100+99+98+97+96+ \cdot +5+4+3+2+1` |
+      +-------------------------------------+
+   
+   #. Não, continua tendo `100` números.
+   
+   #. o dobro do resultado de *Gauss*.
+   
+   #. Serão feitas `100` somas, indicadas a seguir.
+      
+      `1+100=101`
+      
+      `2+99=101`
+      
+      `3+98=101`
+      
+      `4+97=101`
+      
+      `5+96=101`
+      
+      `\;\;\;\;\;\;\;\; \vdots`
+      
+      `96+5=101`
+      
+      `4+97=101`
+            
+      `3+98=101`
+      
+      `2+99=101`
+      
+      `1+100=101`
+      
+   #. `101`.
+   
+   #. Os resultados são os mesmos porque os elementos somados tem a característica de um ser uma unidade maior que o anterior e o outro ser uma unidade maior do que o anterior correspondente.  
+   
+   #. `100 \cdot 101 = 10100`.
+   
+   #. .. math::
+         
+         1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n
+         
+         n+(n-1)+(n-2)+(n-3)+ \cdots +5+4+3+2+1
+         
+      As somas de um elemento de cada linha, respeitando a ordem da escrita, dá `(n+1)`.
+      Além disso temos um total de `n` somas com esse resultado. 
+      Com isso, a soma de todos os números das duas linhas será `n \cdot (n+1)`, e
+                
+      `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n=`
+      
+      `\frac{n \cdot (n+1)}{2} = \frac{n^2 + n}{2}=`
+      
+      `= \frac{n^2}{2} + \frac{n}{2}`
+
+   **Atividade Números triangulares**       
+
+   #. `(1,3,6,10,15,21)`
+
+   #. Não; `3-1 \neq 6-3 \neq 10-6 \neq 15-10 \neq 21-15`.
+
+   #. `1`
+   
+      `1+2`
+      
+      `1+2+3`
+      
+      `1+2+3+4`
+      
+      `1+2+3+4+5`
+      
+   #. Um número triangular é soma dos primeiros números naturais, tal como o episódio do menino *Guass*.
+
+   #. Sim; `T_{100}=1+2+3+ \cdots +98+99+100=5050`.
+
+   #. `T_{n}= \frac{n \cdot (n+1)}{2}= \frac{n^2}{2} + \frac{n}{2}`.
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade 5: Aumento na Passagem
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   Prezado colega esta atividade tem como objetivo aplicar o conceito de otimização em função quadrática num contexto econômico, chamando atenção para o aluno de:
+
+   #. As vantagens e desvantagens de se trabalhar num plano cartesiano cujos eixos estão em escalas distintas.
+   #. Guiá-lo para uma modelagem algébrica da situação.
+   #. Identificar se a relação encontrada é uma função quadrática e se o gráfico apresentado é de uma parábola.
+   #. Fazer uma discussão à respeito do domínio e da imagem da função levando em consideração à modelagem da situação.
+   #. Reforçar a utilização da passagem da forma polinomial para a forma canônica, apontando assim de maneira direta o faturamento máximo e o aumento que irá gerar o faturamento máximo.
+
+**Explorando 5**
+
+Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasileiras diariamente, e transporta mensalmente, uma média de `1200` passageiros. O custo individual da passagem cobrado pela empresa, é atualmente de `R$ 40,00`, porém seus diretores estudam um aumento desse valor. Para isso contratam uma outra empresa para realizar uma pesquisa de mercado, a pesquisa realizada por essa empresa, estima que a cada `R$ 1,00` de aumento no preço da passagem, `10` passageiros deixarão de viajar pela transportadora. De posse desta informação, os diretores desejam saber qual é o preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora. Para isso vamos responder os itens a seguir:
+
+#. Preencha o quadro a seguir, seguindo o padrão que modela a situação.
+
+    +------------------+------------------+--------------------------------+----------------------+
+    | Aumento em reais | Novo preço       | Nova quantidade de passageiros | Faturamento em reais |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 0                | 40 + 1 . 0 = 40  | 1 200 - 10 . 0 = 1 200         | 40 . 1200 = 48 000   |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 10               | 40 + 1 . 10 = 50 | 1 200 - 10 . 10 = 1 100        | 50 . 1 100 = 55 000  |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 20               | 40 + 1 . 20 = 60 | 1 200 - 10 . 20 = 1 000        | 60 . 1 000 = 60 000  |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 30               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 40               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 50               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 60               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 70               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 80               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 90               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 100              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 110              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 120              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+
+#. Escolha um dos planos cartesianos a seguir, para representar os pontos da tabela acima e os represente no plano escolhido.
+
+   *Inserir a figura dos planos cartesianos, trocando Gráfico por plano*
+
+#. Qual gráfico você escolheu? Justifique sua escolha.
+
+#. A escala no gráfico escolhido é a mesma nos dois eixos? Quais os gráficos do item “b” possuem a mesma escala nos dois eixos?
+
+#. Quais as vantagens e desvantagens em ambos os casos (eixos em escalas distintas e eixos em mesma escala)? 
+
+#. Podemos afirmar que os pontos obtidos, são pontos de uma parábola? Justifique sua resposta.
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o novo preço da passagem (já com o aumento de `x` reais).
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente a nova quantidade mensal de passageiros (já com o aumento de `x` reais).
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o faturamento da empresa em função de x, dado por `F(x)`.
+
+#. Se representarmos expressão obtida no item anterior por uma função `F:A\to B`, onde `A` é seu domínio e `B` é sua imagem, podemos afirmar que `F` é uma função quadrática? Justifique sua resposta
+
+#. Apresente os conjuntos `A` (domínio de `F`) e `B` (imagem `F`) que satisfazem os valores possíveis na situação apresentada.
+
+#. Em que ponto o gráfico corta o eixo das ordenadas? E o que esse valor representa na situação?
+
+#. Em que ponto o gráfico corta o eixo das abscissas? O que esse ponto representa na situação? 
+
+#. E se o domínio fosse o `\mathbb{R}`, qual seria o outro ponto de intersecção com o eixo das abscissas? Por que ele não é considerado na situação?
+
+#. Utilize o processo de completar quadrados  e apresente a função `F` em sua forma canônica.
+
+#. Enfim, qual é o aumento no preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora?
+
+#. Qual é o valor desse faturamento máximo?
+
+
+
+.. admonition:: Resposta 
+
+   Respostas:  
+
+   #. 
+      +------------------+------------+--------------------------------+----------------------+
+      | Aumento em reais | Novo preço | Nova quantidade de passageiros | Faturamento em reais |
+      +------------------+------------+--------------------------------+----------------------+
+      | 0                | 40         | 1 200                          | 48 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 10               | 50         | 1 100                          | 55 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 20               | 60         | 1 000                          | 60 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 30               | 70         | 900                            | 63 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 40               | 80         | 800                            | 64 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 50               | 90         | 700                            | 63 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 60               | 100        | 600                            | 60 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 70               | 110        | 500                            | 55 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 80               | 120        | 400                            | 48 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 90               | 130        | 300                            | 39 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 100              | 140        | 200                            | 28 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 110              | 150        | 100                            | 15 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 120              | 160        | 0                              | 0                    |
+      +------------------+------------+--------------------------------+----------------------+
+
+
+   #. *Inserir figura do paper dos gráficos da resposta
+   
+   #. O gráfico B, pois nos outros, os valores do eixo das ordenadas não atendiam.
+
+   #. Não. Gráfico A e gráfico C.
+
+   #. **Escalas distintas**: (*Vantagens*) Podemos visualizar melhor o comportamento do gráfico pois ele passa a ficar visível num espaço menor, além de traça-lo com mais facilidade.
+      
+      **Escalas distintas**: (*Desvantagens*) Não podemos analisá-lo geometricamente de maneira satisfatória, as variações entre os eixos são muito discrepantes, e isso pode levar a interpretações equivocadas.
+      
+      **Escalas iguais**: (*Vantagens*) Podemos analisá-lo tanto numericamente quanto geometricamente, inferindo com mais precisão.
+      
+      **Escalas iguais**: (*Desvantagens*) Precisaríamos de muito espaço e/ou bastante compactação para desenharmos fielmente este gráfico. Note como ficaria:
+      
+      *Inserir figura do gráfico com escala real*
+      
+   #. Sim, por vários motivos: já vimos que o gráfico de toda função quadrática é uma parábola, e que as função quadráticas são as únicas funções em que as diferenças das imagens, geram uma Progressão aritmética:
+   
+      *Inserir figura da PA*
+
+   #. `40+x`.
+
+   #. `1 200 - 10x`.
+
+   #. `F(x)=(40+x).(1200-10x)` ou `F(x)=-10x^2+800x+48000`.
+
+   #. Sim. Ou pela justificativa dada no item “f” ou pelo fato da função quadrática ser uma função do polinômio de grau 2, e a função em questão, apresenta `a=-10` ; `b=800` e `c=48000` coeficientes do polinômio do segundo grau. 
+
+   #. `A=[0,120];B=[0,64000]`.
+
+   #. R$ `48000,00` que representa o faturamento atual, inicial ou seja, o faturamento sem aumento.
+
+   #. No ponto `(120,0)`, representa que se o aumento for de R$ `120,00`, não haverá faturamento, ou seja, a empresa faturaria zero reais. 
+
+   #. O ponto seria `(-40,0)`, ele é desconsiderado pois sua abscissa é negativa, e não cabe na situação utilizar “aumentos negativos”.
+
+   #. `F(x)=-10x^2+800x+48000` `\Leftrightarrow` `F(x)=-10(x^2-80x)+48000` `\Leftrightarrow` `F(x)=-10(x^2-80x+1600-1600)+48000` `\Leftrightarrow` `F(x)=-10(x-40)^2+16000+48000` `\Leftrightarrow` `F(x)=-10(x-40)^2+64000`.
+
+   #. R$ `40,00`.
+
+   #. R$ `6400,00`.
+   
+   
+.. _Atividade Altura do Arco
+Atividade 6: Altura do Arco da Praça da Apoteose
+----------
+A passarela Professor Darcy Ribeiro `(\star 1922, \dagger 1997)`, mais conhecida como Sambódromo, fica na cidade do Rio de Janeiro e foi construida em 1984. Com projeto arquitetônico de Oscar Niemeyer `(\star 1907, \dagger 2012)`, ela foi concebida para ser o local fixo de uma das maiores festas populares do Brasil, o Carnaval. Ao final da passarela, encontra-se a praça da apoteose, com o museu do samba e um enorme arco cujo formato lembra o de uma parábola. 
+
+.. figure:: https://images.adsttc.com/adbr001cdn.archdaily.net/wp-content/uploads/2012/02/1329492836_riodejaneiro_sambodromo15.jpg
+   :width: 350 px
+   :align: center
+
+
+Em `2011`, pela primeira vez desde a construção, a prefeitura providenciou a limpeza do arco.  
+
+.. figure:: https://extra.globo.com/noticias/rio/1077268-c89-c80/w367h550-PROP/02_15_gvg_rio_lavagem10.jpg
+   :width: 200px
+   :align: center
+
+`Banho nos arcos do Sambódromo <https://extra.globo.com/noticias/rio/banho-nos-arcos-do-sambodromo-1077277.html>`_
+
+A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativa da altura do arco, com a finalidade de saber se seu equipamento seria suficiente para a tarefa, já que a altura máxima que o equipamento suportaria, seria de `40` m de altura. Uma busca rápida na internet não forneceu o resultado esperado, apenas que o comprimento da base é de `50` m. Sendo assim, a estimativa teve que ser feita através de cálculos. Admitindo por aproximação que o arco seja parabólico, faça o que se pede:
+
+#. Quantas informações concretas são fornecidas para esta parábola?
+
+#. Caso você soubesse a função que descreve essa parábola, você seria capaz de determinar a altura aproximada do arco?
+
+#. Dentre as opções a seguir marque a que faz o rascunho do arco no plano cartesiano.
+
+   .. figure:: _resources/Ativ6_C_unico.png
+      :width: 400px
+      :align: center
+
+#. Para essa escolha, qual o significado dos valores de `x` e de `y`?
+
+#. Que pontos do plano cartesiano são conhecidos, se juntarmos a escolha gráfica com os dados fornecidos sobre o arco?
+
+#. Com base em sua escolha do rascunho gráfico mais adequado e considerando os pontos conhecidos da parábola, qual forma da função quadrática resulta em maior quantidade de informações conhecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Quantos dados estão faltando para que seja conhecida a função que descreve esta parábola?
+
+#. Com o auxílio da calculadora gráfica em: `Estimando a parábola <endereço web>`_obtenha a informação que falta para obter a função que descreve a parábola.
+   
+   **Colocar na web a atividade do gif para estimar o 'a' que falta na lei da função**
+
+   .. figure:: _resources/Sambodromo_Geogebra.*
+      :width: 300px
+      :align: center
+  
+#. Qual a altura estimada para a altura do arco?
+
+#. A empresa contratada para a limpeza do arco teve capacidade de concluir o serviço com o equipamento que possuia?
+
+.. admonition:: Resposta 
+
+   #. Apenas o comprimento da base, de `50` m.
+   
+   #. Sim, seria a imagem do vértice.
+   
+   #. Figura 2, pois a base do "arco" foi rascunhado sobre o eixo `x` e a altura procurada está sobre o eixo `y`.
+   
+   #. `x` pontos na base do arco e `y` medidas referentes às alturas de cada ponto da base do arco.
+   
+   #. `(-25,0)` e `(25,0)`.
+   
+   #. `f(x)=a(x-x_1)(x-x_2)`
+   
+   #. Apenas um, o `a`.
+   
+   #. `a=-0,04`, portanto `f(x)=-0,04(x+25)(x-25)`.
+   
+   #. A altura aproximada do arco acontece para `x=0`. Assim, `f(0)=-0,04(0+25)(0-25)=-0,04 \dot (-625)=25` m.
+   
+   #. Sim.
+   
+   **Nota**: Dentre as informações pesquisadas sobre a altura real desse arco, os autores encontraram `25` m, `26` m e até `30` m.
+   
+   
+   
+
+
+   
+
+.. _*Atividade* **É parábola?**
+*Atividade X:* **É parábola?**
+-----------------
+
+Seja `f:\mathbb{R}\to\mathbb{R}` uma função definida por `f(x)=x^4`. 
+
+#. Preencha as imagens dessa função utilizando a tabela a seguir e posteriormente trace o seu gráfico:
+
++------+------+
+| x    | f(x) |
++------+------+
+| -2   |      |
++------+------+
+| -3/2 |      |
++------+------+
+| -1   |      |
++------+------+
+| -1/2 |      |
++------+------+
+| 0    |      |
++------+------+
+| 1/2  |      |
++------+------+
+| 1    |      |
++------+------+
+| 3/2  |      |
++------+------+
+| 2    |      |
++------+------+
+
+
+**Pensar em induzir o aluno à demonstrar que não é usando: o método da demonstração por absurdo, também denominado método da demonstração por contradição ou da redução ao absurdo.**
+
+"O que nos garante que a ideia de demonstração por absurdo é logicamente correta? A garantia é dada pelo Princípio do Terceiro Excluído, o qual diz que cada propriedade matemática ou é verdadeira ou é falsa, não há uma terceira possibilidade."
+
+"Para provar a veracidade de uma afirmação, uma demonstração por absurdo mostra que a falsidade da afirmação produziria um absurdo. Mais precisamente, no caso de uma implicação `H \to T` uma demonstração por absurdo consiste em, supondo a validade de H, mostrar que a não validade de **T** produz um resultado contraditório ou absurdo. Dizendo de outro modo: o objetivo é mostrar que a combinação da validade da hipótese **H** com a não validade da tese **T** produz um resultado absurdo."
+
+#." Suponha que temos uma implicação `H \to T` verdadeira, mas que ainda não sabemos isso e que, por sugestão infeliz, tentemos mostrar que ela é falsa, em vez de verdadeira, e que o método que empregamos seja o da demonstração por absurdo. Se em nosso raciocínio cometermos um engano (por exemplo, um erro de cálculo), muito provavelmente esse nos levará a um absurdo e assim estaremos concluindo erroneamente que `H \to T` é falsa"
+
+#.Quando conseguimos provar a veracidade de uma implicação `H \to T` tudo o que fazemos é mostrar que é impossível a tese **T** ser falsa (supondo valha a hipótese **H**). Ou seja, não estamos dando uma real razão da tese ser verdadeira (como, por exemplo, ser consequência de alguma propriedade). Por isso se diz que as demonstrações por absurdo não são causais.
+
+*Minha demonstração*
+
+Suponha por absurdo que o gráfico de `f:\mathbb{R}\to\mathbb{R}` uma função definida por  `f(x)=x^4` seja uma **parábola**, ou seja, existe um ponto `F=(0,p)` e uma reta `d:y=-p` tal que: `PF=Pd`, onde `P=(x,x^4) \in f`, logo:
+
+`\sqrt{(x^4-p)^2+(x-0)^2}=x^4-(-p)`
+
+`(x^4-p)^2+x^2=(x^4+p)^2`
+
+`x^8-2px^4+p^2+x^2=x^8+2px^4+p^2`
+
+`x^2=4px^4`
+
+`1=4px^2`
+
+`p=\frac{1}{4x^2}`
+
+logo d é definida por `d:y=-\frac{1}{4x^2}` o que não é uma reta e sim uma curva.
+
+Como consequência, por não existir a reta diretriz não temos uma parábola.
+
+Portanto o gráfico de ´f´ não é uma parábola.
+
+**Podemos até omitir a demonstração por absurdo**
 
 
 
