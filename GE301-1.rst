@@ -354,6 +354,24 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
   `% Lhaylla`
   
   
+.. admonition:: Para o professor
+
+   **Observações e recomendações:**
+ 
+   * Compreender a definição de projeção em perspectiva pressupõe a compreensão da :numref:`fig-proj-perspectiva-01`, da :numref:`fig-proj-perspectiva-02` e da :numref:`fig-proj-perspectiva-03`. Elas são representações 2D de configurações 3D, justamente o assunto desenvolvido neste capítulo. Assim, se o único recurso didático disponível for tão somente este livro didático, o aluno se verá na árdua tarefa de tentar entender o que é uma imagem produzida por uma projeção em perspectiva usando aquilo que está querendo entender, a saber, imagens produzidas por projeções em perspectiva. Temos aí um dilema recursivo. Neste contexto, **sugerimos fortemente** que você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/TxYEqV5d> (projeção de um ponto), <https://www.geogebra.org/m/YpH3fH9E> (projeção de um segmento de reta), <https://www.geogebra.org/m/HFjMUzgz> (projeção de um triângulo) e <https://www.geogebra.org/m/GhC6qGVY> (projeção de um Cubo de Necker) para computadores desktop, tablets e smarphones.
+   
+      .. figure:: _resources/perspectiva-cubo-geogebra-02.*
+   
+   
+      .. figure:: _resources/perspectiva-celular-05_1.jpg
+               
+      
+     Por meio destas construções, é possível girar, ampliar e reduzir a cena 3D, bem como modificar as posições dos vários pontos que compõem a configuração. Com esse recurso dinâmico e de movimento, efeitos de ambiguidade e equívocos de interpretação podem ser minimizados.   
+   
+   * Recomendamos que você enfatize, em uma linguagem que julgue adequada a seus alunos, duas ideias fundamentais associadas às projeções em perspectiva e paralelas: (1) interdependência (o ponto projetado `P'` depende funcionalmente do ponto `P`); (2) variância (propriedades que são e não preservadas pelas projeções). Acreditamos que essa explicação ficará potencializada por meio das construções interativas do GeoGebra indicadas anteriormente.
+   
+   
+  
 ****
 Organizando as ideias: projeções em perspectiva e projeções paralelas 
 ****
@@ -414,3 +432,5 @@ Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entr
 
    Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
 
+
+**Projeções paralelas**
