@@ -73,7 +73,7 @@ A prefeitura optou pela seguinte quantidade de funcionários a serem contratados
    | Soma            |1.832            |
    +-----------------+-----------------+   
 
-`5.` O *boxplot* a seguir representa a distribuição do número de gols marcado por um artilheiro nas Copas do Mundo desde a Copa de 1930 até a Copa de 2006 que vamos chamar de **marco**. Observe que aqui só é considerado o **marco**, sem levar em conta se houve mais de um artilheiro na Copa. Desse modo, nestas 18 Copas do Mundo, a figura leva em consideração os 18 **marcos** observados.
+`5.` O *boxplot* a seguir representa a distribuição do número de gols da artilharia nas Copas do Mundo desde a Copa de 1930 até a Copa de 2006. Vamos chamar este número de **recorde**. Observe que só é considerado o **recorde**, sem levar em conta se houve mais de um artilheiro na Copa. Desse modo, nestas 18 Copas do Mundo, a figura leva em consideração os 18 **recordes** observados.
 
   .. _fig-boxplotgols:
 
@@ -81,31 +81,31 @@ A prefeitura optou pela seguinte quantidade de funcionários a serem contratados
      :width: 200pt
      :align: center
 
-     Boxplot dos **marcos** das Copas do Mundo de 1936 a 2006.
+     Boxplot dos **recordes** das Copas do Mundo de 1936 a 2006.
    
-Com base neste gráfico, as seguintes afirmações foram feitas a cerca da distribuição da quantidade de gols dos artilheiros nestas Copas do Mundo.
+Com base neste gráfico, as seguintes afirmações foram feitas a cerca da distribuição dos **recordes**  nestas Copas do Mundo.
 
 1. A distribuição apresenta assimetria à direita.
    
-2. A média dos **marcos** é maior do que a mediana dos **marcos**.
+2. A média dos **recordes** é maior do que a mediana dos **recordes**.
    
 3. O boxplot não nos permite avaliar a existência de moda.
    
-4. Uma aproximação grosseira para o valor do desvio padrão dos **marcos** nestas Copas é dada por 2,25 gols.
+4. Uma aproximação grosseira para o valor do desvio padrão dos **recordes** nestas Copas é dada por 2,25 gols.
    
 5. A distância entre quartis desta distribuição é 3 gols.
    
 6. Esta distribuição não apresentou valores atípicos.
    
-7. Uma aproximação para o valor da média dos **marcos** pode ser calculada por `0,25\cdot (5+6,25+7,75+11)=7,5` gols. 
+7. Uma aproximação para o valor da média dos **recordes** pode ser calculada por `0,25\cdot (5+6,25+7,75+11)=7,5` gols. 
    
 Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.
 
-`6.` Na questão anterior, sabe-se foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **marcos** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **marcos** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
+`6.` Na questão anterior, sabe-se foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **recordes** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **recordes** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
 
-1. Com base nestas informações, calcule a média e o desvio padrão do **marco** e compare com as aproximações obtidas no exercício anterior. 
+1. Com base nestas informações, calcule a média e o desvio padrão dos **recordes** e compare com as aproximações obtidas no exercício anterior. 
   
-2. Consultando os **marcos** referentes às Copas de 2010 e 2014, verificou-se que eles foram 5 e 6, respectivamente. Determine a média e o desvio padrão dos **marcos**, considerando as 20 Copas do Mundo até 2014.
+2. Consultando os **recordes** referentes às Copas de 2010 e 2014, verificou-se que eles foram 5 e 6, respectivamente. Determine a média e o desvio padrão dos **recordes**, considerando as 20 Copas do Mundo até 2014.
 
 `7.` (ENEM-2012) Um produtor de café irrigado em Minas Gerais recebeu um relatório de consultoria estatística, constando, entre outras informações, o desvio padrão das produções de uma safra dos talhões de sua propriedade. Os talhões têm a mesma área de 30.000 `\textsf{m}^2` e o valor obtido para o desvio padrão foi de 90 kg/talhão. O produtor deve apresentar as informações sobre a produção e a variância dessas produções em sacas de 60 kg por hectare (10.000 `\textsf{m}^2`). 
 A variância das produções dos talhões expressa em `\textsf{(sacas/hectare)}^2` é 
@@ -145,7 +145,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
 
 `10.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado. A seguir, estão os resultados para as suas duas turmas.
 
-.. table:: Notas da turma da manhã
+.. table:: Notas de uma amostra de alunos do turno da manhã
 
    +-----+------+-----+-----+-----+
    | 7,4 | 7,3  | 6,2 | 6,3 | 4,1 |
@@ -167,7 +167,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    | 5,3 | 5,2  | 5,7 | 9,9 | 8,3 |
    +-----+------+-----+-----+-----+
    
-.. table:: Notas da turma da tarde
+.. table:: Notas de uma amostra de alunos dp turno da tarde
    
    +-----+-----+-----+-----+-----+
    | 5,1 | 4,7 | 5,7 | 4,7 | 5,0 |
@@ -187,7 +187,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    | 5,3 | 4,5 | 4,7 | 5,1 | 5,2 |
    +-----+-----+-----+-----+-----+
    
-Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre as duas turmas. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
+Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre os dois turnos. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
 
    
    
@@ -227,6 +227,47 @@ Usando todas as ferramentas estudadas neste capítulo, ajude este professor, faz
    
    `8.` É fácil ver que a moda é zero tal que Z=0. Somando o número de partidas jogadas vemos foram consideradas 20 partidas. Assim, o valor da mediana é o valor que ocupa as posições centrais 10 e 11. Da tabela, calculando as frequências acumuladas, vemos que até 1 gol acumularam-se 8 partidas e até 2 gols, acumularam-se 12 partidas. Assim podemos concluir que nas posições 10 e 11 o número de gols foi 2, tal que a mediana=Y=2. A média é dada por `\bar{x}=X=\frac{5\cdot 0+3\cdot 1 +4\cdot 2+3\cdot 3+2\cdot 4+2\cdot 5+1\cdot 7}{20}=\frac{45}{20}=2,25` . Logo, tem-se Z<Y<X e a resposta correta encontra-se na opção e).
    
+   `9.`
+   
+   `10.` As figuras a seguir ilustram os respectivos histogramas (ambos na mesma escala e usando a frequência bsoluta no eixo vertical) e boxplots das notas para os alunos da manhã e da tarde. 
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/histograma_turma_manha_1.png
+      :width: 200pt
+      :align: center
+
+      Histograma das notas dos alunos do turno da manhã
+      
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/histograma_turma_tarde_1.png
+      :width: 200pt
+      :align: center
+
+      Histograma das notas dos alunos do turno da tarde
+      
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/notas_turmas_manha_tarde.png
+      :width: 300pt
+      :align: center
+
+      Boxplots das notas dos alunos do turno da manhã e do turno da tarde e quadro das medidas resumo gerados pelo GeoGebra
+      
+   Comparando os dois turnos pode-se perceber que 
+   
+   #. ambas as distribuições de notas são aproximadamente simétricas (observe que em ambas as distribuições os valores de média e mediana são próximos, a saber, 6,47  e 6,3 no turno da manhã e 5,11 e 5,05 no turno da tarde);
+   #. a dispersão das notas no turno da tarde é inferior à dispersão das notas do turno da manhã, mas o boxplot revela que o "centro" no turno da tarde, caracterizado pelo retângulo no boxplot está mais para à esquerda em relação ao retângulo do boxplot para os alunos do turno da manhã, indicando  inferioridade de notas (50% das notas centrais no turno da tarde estão entre 4,6 e 5,6; enquanto que 50% das notas centrais do turno da manhã estão entre 5,35 e 7,4); 
+   #. a distribuição das notas no turno da manhã é mais homogênea em relação à média do que a distribuição das notas do turno da tarde, observação que pode ser comprovada pelo cálculo do coeficiente de variação amostral de ambos os turnos, a saber, `\textsf{CVA}_{\textsf{manhã}}=\frac{1,503}{6,4686}\cdot 100=23,2` % e `\textsf{CVA}_{\textsf{tarde}}=\frac{0,7437}{5,1075}\cdot 100=14,6` %; 
+   #. a frequência de notas em torno da média mais ou menos um desvio padrão no turno da manhã é 62,2% e, no turno da tarde, 70% (estes valores estão perto do valor estipulado pela regra empírica de 67%);
+   #. a frequência de notas em torno da média mais ou menos dois desvios padrões no turno da manhã é 93,3% no turno da tarde, 92,5% (estes valores estão perto do valor estipulado pela regra empírica de 95%);
+   #. utilizando a aproximação grosseira para o cálculo do desvio padrão amostral, obtém-se `\frac{10-3}{4}=1,75` para o turno da manhã (um erro relativo de 16,4%) em relação ao valor de `s` calculado para o turno da manhã e, `\frac{6,8-3,6}{4}=0,8` para o turno da tarde (um erro relativo de 7,6%) em relação ao valor de `s` calculado para o turno da tarde;
+   #. não existem notas atípicas nas duas distribuições;  
+   #. apesar do turno da manhã apresentar melhores notas, a menor nota foi observada neste turno.
+   
+      
+   
    
    
 
@@ -239,7 +280,7 @@ Usando todas as ferramentas estudadas neste capítulo, ajude este professor, faz
 Material Suplementar
 ====================
 
-Um material suporte para as atividades deste capítulo foi preparado e está disponível no <**link**>. Para utilizá-lo é necessário ter o GeoGebra instalado em seu computador, tablet ou celular. Com este applet, você poderá, gerar vários conjuntos de dados e observar como ficam os respectivos histograma e boxplot. Além disso, você também poderá inserir os valores de um conjunto de dados em particular para obter várias das medidas resumo trabalhadas neste capítulo, além de obter o histograma e o boxplot. 
+Um material suporte para as atividades deste capítulo foi preparado e está disponível no <**link**>. Para utilizá-lo é necessário ter o GeoGebra instalado em seu computador, tablet ou celular. Com este applet, você poderá, gerar vários conjuntos de dados e observar como ficam os respectivos histograma e boxplot e também poderá observar os valores de algumas medidas resumo do conjunto gerado. Além disso, você também poderá inserir os valores de um conjunto de dados em particular para obter algumas medidas resumo trabalhadas neste capítulo, além de obter o histograma e o boxplot. 
 
 
 
