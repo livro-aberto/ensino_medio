@@ -1,4 +1,8 @@
-.. HJB: perguntar para o aluno mais para o final como ele sabia quea as sombras pela luz do Sol de arestas paralelas do cubo vazado são paralelas ...
+.. HJB: perguntar para o aluno mais para o final como ele sabia que as sombras pela luz do Sol de arestas paralelas do cubo vazado são paralelas ...
+
+.. HJB: criar um exercício que explore projeções como funções (injetiva, sobrejetiva, para que pontos f(p) = p, f(f(p)) = p).
+
+.. HJB: conexão com artes (perspectógrafos).
 
 
 ***********************************************
@@ -265,7 +269,7 @@ Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar a lanterna do celular com
 
 Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. Esta abstração será útil para modelar outras situações, como veremos mais adiante. 
 
-Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um ponto `O` que não pertence a `\pi`. Seja `\psi` o plano paralelo à `\pi` passando por `O`. Se `P` é um ponto que não pertence a `\psi`, então o ponto `P'` de intersecção entre a reta `OP` e o plano `\pi` é denominado :index:`projeção em perspectiva` do ponto `P` com relação ao :index:`centro` `O` e ao :index:`plano de projeção` `\pi`. Observe que uma projeção em perspectiva é uma função 
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um ponto `O` que não pertence a `\pi`. Seja `\psi` o plano paralelo à `\pi` passando por `O`. Se `P` é um ponto que não pertence a `\psi`, então o ponto `P'` de intersecção entre a reta `OP` e o plano `\pi` é denominado :index:`projeção em perspectiva` do ponto `P` com relação ao :index:`centro` `O` e ao :index:`plano de projeção` `\pi`.  
   
 .. _fig-proj-perspectiva-02:
    
@@ -273,5 +277,29 @@ Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\
    :width: 450px
          
    `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` e ao plano de projeção `\pi`.
-  
-Note que uma projeção em perspectiva pode ser interpretada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
+
+Vamos agora considerar uma outra situação onde projeções em perspectiva aparecem. Suponha que você queira desenhar um quadro de uma cena. Mas você quer um quadro tão perfeito que, ao observá-lo frente a cena, ele se confundiria como a própria cena. O pintor surrealista belga René Magritte (1898-1967) imaginou essa situação em alguns de seus quadros (:numref:`fig-proj-janela-de-alberti-01`).
+
+.. _fig-proj-janela-de-alberti-01:
+
+.. figure:: _resources/rene-magritte-the-human-condition-03.jpg
+   :width: 600px
+   
+   Pinturas "A Condição Humana" do artista surrealista belga René Magritte (1898-1967).
+
+
+
+
+.. _fig-proj-janela-de-alberti-02:
+
+.. figure:: _resources/montaque-01.jpg
+   :width: 450pt
+   
+   Realidade observada (Montaque, 2010).
+   
+   
+
+.. admonition:: Para refletir
+
+   Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
+
