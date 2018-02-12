@@ -141,7 +141,19 @@ Se X, Y e Z são, respectivamente, a média, a mediana e a moda desta distribui�
 a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
 
 
-`9.`
+`9.` Os resultados obtidos na prova de seleção para vagas de estágio numa empresa estão representados no histograma a seguir.
+
+
+.. _fig-hist-vagas-estagio:
+
+.. figure:: _resources/exercicio9.png
+   :width: 200pt
+   :align: center
+
+   Histograma das notas na prova de seleção para vagas de estágio
+   
+#. Com base neste histograma, calcule a média, a variância, a moda, o primeiro quartil e o terceiro quartil.
+#. Usando a informação do histograma, faça um esboço do boxplot destes dados.
 
 `10.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado. A seguir, estão os resultados para as suas duas turmas.
 
@@ -189,8 +201,36 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    
 Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre os dois turnos. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
 
+`11.` Quando comparou-se a média com a mediana falou-se em grau de assimetria da distribuição (:ref:`sec-organizando1`). Na seção :ref:`sec-Parasabermais` falou-se novamente em grau de assimetria. A assimetria pode ser medida pelo **índice de assimetria de Pearson** 
+
+.. math::
+
+   I=\frac{3\cdot(\bar{x}-\textsf{mediana})}{s}
    
+Se `I\approx 0`, os dados são considerados aproximadamente simétricos. Um valor de `I` negativo, indica assimetria à esquerda e, um valor de `I` positivo, assimetria à direita. 
+
+Se `I\geq 1,00` ou `I\leq -1,00` , os dados podem ser considerados fortemente assimétricos à direita ou à esquerda, respectivamente. Calcule o índice de assimetria de Pearson, para os dados de
+
+#. :ref:`ativ-Notas-de-Artes`;
+#. :ref:`ativ-comparacaodegruposusandoboxplot`;
+#. exercício 10.
+
+`12.` Em provas aplicadas em grande escala é comum divulgar as notas transformadas da seguinte forma
+
+.. math::
+
+   y_i = 500+100\cdot \frac{(x_i-\bar{x})}{s}, \quad i=1,2,...,n
    
+em que `x_i` é a nota obtida pelo `i`-ésimo candidato, `\bar{x}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}x_i` , `s` é o desvio padrão amostral das notas do conjunto `\{ x_1,x_2, ..., x_n\}` e `y_i` é a nota transformada do `i`-ésimo candidato. 
+
+Considere as afirmações a seguir.
+
+#. A média das notas transformadas é 500.
+#. O desvio padrão das notas transformadas é 100.
+#. Se a distribuição de notas é aproximadamente simétrica e com poucas notas atípicas, cerca de 67% dos candidatos obtiveram notas transformadas entre 400 e 600.
+#. Se a distribuição de notas é aproximadamente simétrica e com poucas notas atípicas, cerca de 95% dos candidatos obtiveram notas transformadas entre 300 e 700.
+
+Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.   
 
 
 
@@ -215,19 +255,40 @@ Usando todas as ferramentas estudadas neste capítulo, ajude este professor, faz
    
    `4.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
    
-   `5.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois Dq=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressaõ indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
+   `5.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois DQ=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressão indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
    
    `6.` Respostas 
    
    1. A média é dada por `\bar{x}=\frac{132}{18}\approx 7,33` e o desvio padrão amostral é dado por `\sqrt{\frac{1}{18-1}\left (1060-18\cdot 7,33^2\right )}\approx 2,33`. Comparando a média aproximada de 7,5 com a média 7,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 2,3% da média obtida com a soma exata (`\frac{|7,5-7,33|}{7,33}\approx 0,023`. Comparando o desvio padrão aproximado de 2,25 com o desvio padrão 2,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 3,4% o desvio padrão obtido com as somas exatas (`\frac{|2,25-2,33|}{2,33}\approx 0,034`.
    
-   2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **marcos** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **marcos**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
+   2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **recordes** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **recordes**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
    
    `7.` Para resolver esta questão é necesário transformar a escala do desvio padrão informado em kg por talhão, para a escala sacas por hectare e, em seguida, calcular o quadrado do sesvio padrão na nova escala. Observe que `s= 90` kg/talhão e que 90 kg corresponde a 1,5 sacas (cada saca tem 60 Kg) e 1 talhão correspode a 1 hectare. Logo, tempos que `s=\frac{1,5}{3}=0,5 ` sacas por hectare tal que a variância, em `\textsf{(sacas/hectare)}^2` , é 0,25. A resposta correta encontra-se na opção e).
    
    `8.` É fácil ver que a moda é zero tal que Z=0. Somando o número de partidas jogadas vemos foram consideradas 20 partidas. Assim, o valor da mediana é o valor que ocupa as posições centrais 10 e 11. Da tabela, calculando as frequências acumuladas, vemos que até 1 gol acumularam-se 8 partidas e até 2 gols, acumularam-se 12 partidas. Assim podemos concluir que nas posições 10 e 11 o número de gols foi 2, tal que a mediana=Y=2. A média é dada por `\bar{x}=X=\frac{5\cdot 0+3\cdot 1 +4\cdot 2+3\cdot 3+2\cdot 4+2\cdot 5+1\cdot 7}{20}=\frac{45}{20}=2,25` . Logo, tem-se Z<Y<X e a resposta correta encontra-se na opção e).
    
-   `9.`
+   `9.` Respostas
+   
+   #. A média pode ser calculada por `\bar{x}\approx 0,15\cdot 1+0,25\cdot 3+0,20\cdot 5+0,3 \cdot 7+0,1\cdot 9=0,15+0,75+1+2,1+0,9=4,9`.
+   
+   Para calcular a variância, primeiro obtemos uma aproximação para a soma de quadrados das notas, dada por `0,15\cdot 1^2+0,25\cdot 3^2+0,20\cdot 5^2+0,3 \cdot 7^2+0,1\cdot 9^2=0,15+2,25+5+14,7+8,1=30,2`, assim, `s^2\approx 30,2-4,9^2=6,19`.
+   
+   A classe modal corresponde ao intervalo delimitado por 6 e 8, uma aproximação para o valor modal é considerar o ponto médio da classe modal. Neste caso, temos que 7 é uma aproximação para o valor da moda nesta distribuição.
+   
+   Não podemos identificar quem é o valor central ou valores centrais, pois não foi dada a informação do número de candidatos que fizeram a prova. Mas isso não é problema, pois a mediana divide a distribuição em dois intervalos de frequências iguais a 50%. Logo, precisamos identificar em que intervalo, cairá a mediana e, como apresentado na :ref:`sec-organizando1` tomar o ponto médio desta classe como aproximação para o valor da mediana. Observe na figura que a frequência do primeiro intervalo é 0,15; a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40 ainda é menod do que 0,5. Considerando os três primeiros intervalos, a frequência acumulada é 0,4+0,2=0,6. Logo, a mediana está no intervalo delimitado por 4 e 6, de modo que tomamos o ponto médio deste intervalo como uma aproxmação para o valor da mediana, a saber, 5.
+   
+   O mesmo raciocínio utilizado para obter a mediana, pode ser usado para obter aproximações do primeiro e terceiro quartis. Em vez de 50% na frequência acumulada, deveremos encontrar 25% e 75%, respectivamente. Como a frequência do primeiro intervalo é 0,15 e a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40, seque que o primeiro quartil deve estar no segundo intervalo delimitado por 2 e 4. Logo, tomamos o ponto médio deste intervalo como uma aproximação para o primeiro quartil, a saber, 3. Até o terceiro intervalo a frequência acumumulada é 0,6, considerando o quarto intervalo, a frequência acumulada é 0,9. Logo, como o terceiro quartil está no quarto intervalo, tomamos o ponto médio  7 com aproximação para o terceiro quartil.
+   
+   #. Com base no histograma temos o seguinte esquema dos cinco números Min=0, Q1=3, Mediana=5, Q3=7, Max=10. DQ=7-3=4. Cerca inferior=3-6=-3, cerca superior=7+6=13. Logo, não existem valores discrepantes. A figura a seguir ilustra um boxplot para este esquema dos cinco números.
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/boxplotexercicio9.png
+      :width: 200pt
+      :align: center
+
+      Boxplot dos resultados dos candidatos na prova de seleção
    
    `10.` As figuras a seguir ilustram os respectivos histogramas (ambos na mesma escala e usando a frequência bsoluta no eixo vertical) e boxplots das notas para os alunos da manhã e da tarde. 
    
@@ -265,6 +326,14 @@ Usando todas as ferramentas estudadas neste capítulo, ajude este professor, faz
    #. utilizando a aproximação grosseira para o cálculo do desvio padrão amostral, obtém-se `\frac{10-3}{4}=1,75` para o turno da manhã (um erro relativo de 16,4%) em relação ao valor de `s` calculado para o turno da manhã e, `\frac{6,8-3,6}{4}=0,8` para o turno da tarde (um erro relativo de 7,6%) em relação ao valor de `s` calculado para o turno da tarde;
    #. não existem notas atípicas nas duas distribuições;  
    #. apesar do turno da manhã apresentar melhores notas, a menor nota foi observada neste turno.
+   
+   `11.` Respostas
+   
+   #. `I=\frac{3\cdot (5,93-6,5)}{1,9645}\approx -0,87`, indicando alguma assimetria à esquerda. 
+   #. Na categoria cadeira de rodas, temos `I=\frac{3\cdot (2,5855-2,0978)}{1,4209}\approx 1,03` , indicando forte assimetria à direita. Na categoria triciclo de mão temos `I=\frac{3\cdot (2,7338-2,3797)}{1,3779}\approx 0,77` , indicando alguma assimetria à direita. Na categoria mulheres temos `I=\frac{3\cdot (2,8698-2,9493)}{0,1867}\approx -1,28` , indicando forte assimetria à esquerda.  Na categoria homens temos `I=\frac{3\cdot (2,5116-2,55)}{0,1283}\approx -0,9` , indicando assimetria à esquerda. 
+   #. No turno da manhã temos `I=\frac{3\cdot (6,4689-6,3)}{1,503}\approx 0,3` e, no turna da tarde,   `I=\frac{3\cdot (5,1075-5,05)}{0,7437}\approx 0,2`. Pela análise dos boxplots destas duas distribuições avaliamos que ambas eram aproximadamente simétricas. Valores de `I` entre -0,3 e 0,3 podem indicar dados aproximadamente simétricos.
+   
+    
    
       
    
