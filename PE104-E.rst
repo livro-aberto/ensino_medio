@@ -17,7 +17,7 @@ Exercícios
 
 2. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
 
-3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Qual deles é maior ou menor? Por quê?
+3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Houve alguma alteração? Por quê? 
    
 `3.` (ENEM 2015) Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os tempos no quadro a seguir. Escolha a opção que indica o valor da mediana dos tempos apresentados.
 
@@ -101,7 +101,7 @@ Com base neste gráfico, as seguintes afirmações foram feitas a cerca da distr
    
 Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.
 
-`6.` Na questão anterior, sabe-se foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **recordes** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **recordes** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
+`6.` Na questão anterior foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **recordes** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **recordes** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
 
 1. Com base nestas informações, calcule a média e o desvio padrão dos **recordes** e compare com as aproximações obtidas no exercício anterior. 
   
@@ -155,7 +155,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
 #. Com base neste histograma, calcule a média, a variância, a moda, o primeiro quartil e o terceiro quartil.
 #. Usando a informação do histograma, faça um esboço do boxplot destes dados.
 
-`10.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado. A seguir, estão os resultados para as suas duas turmas.
+`10.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado em duas amostras, uma de alunos do turno da manhã e outra de alunos do turno da tarde. A seguir, estão os resultados para as duas amostras.
 
 .. table:: Notas de uma amostra de alunos do turno da manhã
 
@@ -179,7 +179,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    | 5,3 | 5,2  | 5,7 | 9,9 | 8,3 |
    +-----+------+-----+-----+-----+
    
-.. table:: Notas de uma amostra de alunos dp turno da tarde
+.. table:: Notas de uma amostra de alunos do turno da tarde
    
    +-----+-----+-----+-----+-----+
    | 5,1 | 4,7 | 5,7 | 4,7 | 5,0 |
@@ -333,6 +333,19 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
    #. Na categoria cadeira de rodas, temos `I=\frac{3\cdot (2,5855-2,0978)}{1,4209}\approx 1,03` , indicando forte assimetria à direita. Na categoria triciclo de mão temos `I=\frac{3\cdot (2,7338-2,3797)}{1,3779}\approx 0,77` , indicando alguma assimetria à direita. Na categoria mulheres temos `I=\frac{3\cdot (2,8698-2,9493)}{0,1867}\approx -1,28` , indicando forte assimetria à esquerda.  Na categoria homens temos `I=\frac{3\cdot (2,5116-2,55)}{0,1283}\approx -0,9` , indicando assimetria à esquerda. 
    #. No turno da manhã temos `I=\frac{3\cdot (6,4689-6,3)}{1,503}\approx 0,3` e, no turna da tarde,   `I=\frac{3\cdot (5,1075-5,05)}{0,7437}\approx 0,2`. Pela análise dos boxplots destas duas distribuições avaliamos que ambas eram aproximadamente simétricas. Valores de `I` entre -0,3 e 0,3 podem indicar dados aproximadamente simétricos.
    
+   `12.` Respostas
+   
+   #. Concordo, pois `\bar{y}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}y_i=\frac{1}{n}\displaystyle{\sum^n_{i=1}}[500+100\cdot (x_i-\bar{x})]=\frac{1}{n}[n\cdot 500+\frac{100}{s}\cdot \overbrace{\displaystyle{\sum^n_{i=1}}(x_i-\bar{x})}^{=0}]=500.`
+   
+   #. Concordo, pois `s^2_y=\frac{1}{n-1}\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\frac{1}{n-1}\displaystyle{\sum^n_{i=1}}(500+\frac{100}{s}\cdot (x_i-\bar{x})-500)^2=\frac{1}{n-1}\displaystyle{\sum^n_{i=1}}(\frac{100}{s}\cdot (x_i-\bar{x}))^2=`
+   
+   `\frac{100^2}{\underbrace{s^2}_{\textsf{variância das notas originais}}}\cdot \overbrace{\frac{1}{n-1}\cdot \displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2}^{=s^2}=100^2`
+   
+   Logo, o desvio padrão das notas transformadas é `s_y=\sqrt{100^2}=100.`
+   
+   #. Concordo, está de acordo com a regra empírica apresentada na secção :ref:`sec-parasabermais`: o intervalo centrado na média mais ou menos um desvio corresponde às notas entre 400 e 600. 
+   
+   #. Concordo, está de acorodo com a regra empírica apresentada na secção :ref:`sec-parasabermais`: o intervalo centrado na média mais ou menos um desvio corresponde às notas entre 300 e 700.  
     
    
       

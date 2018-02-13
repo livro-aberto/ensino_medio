@@ -303,7 +303,7 @@ As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetr
 
 #. `\textsf{mediana} -\textsf{Q}1\approx \textsf{Q}3-\textsf{mediana}`
  
-#. `\textsf{Q}1-x{(1)} \approx x_{(n)}-\textsf{Q}3`
+#. `\textsf{Q}1-x_{(1)} \approx x_{(n)}-\textsf{Q}3`
 
 #. `\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
 
@@ -326,7 +326,19 @@ Analisando a :ref:`fig-boxplotmulheres` podemos observar que
 
 Os valores exatos destas medidas estão na figura :ref:`fig-medidasresumo4categorias`.
 
-Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades da distribuição normal de probabilidades que não faz parte do conteúdo de Estatística a ser abordado no Ensino Médio. Entre várias propriedades desta distribuição, destaca-se que ela é simétrica tal que a média é igual a mediana e unimodal. A regra empírica estabelece que em distribuições aproximadamente simétricas para as quais a presença de valores atípicos é muito rara ou não existem valores atípicos, 
+Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades da distribuição normal de probabilidades que não faz parte do conteúdo de Estatística a ser abordado no Ensino Médio. Entre várias propriedades desta distribuição, destaca-se que ela é simétrica e unimodal tal que média, mediana e moda são iguais. É muito comum ouvir a expressão curva em forma de sino que é a forma da distribuição normal. Veja nafigura a seguir uma ilustração a densidade normal com média `\mu=0` e desvio padrão `\sigma=1`.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/densidadenormal.png
+   :width: 200pt
+   :align: center
+
+   Densidade Normal Padrão (Curva em forma de sino)
+
+
+A regra empírica estabelece que em distribuições aproximadamente simétricas para as quais a presença de valores atípicos é muito rara ou não existem valores atípicos, 
 
 #. a frequência relativa de valores no intervalo `[\bar{x}-s;\bar{x}+s]` é aproximadamente 67%,
 #. a frequência relativa de valores no intervalo `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]` é aproximadamente 95%.
