@@ -50,7 +50,7 @@
 
   Pretende-se ao longo do capítulo, além de apresentar as definições das variadas medidas, enfatizar suas propriedades. Por exemplo, no caso da média, pretende-se explorar as seguintes propriedades:
 
-  #. a média de um conjunto de números é um valor entre os valores extremos deste conjunto;
+  #. a média de um conjunto de números é um valor que pertence ao intervalo delimitado pelos valores extremos deste conjunto (mínimo e máximo);
   #. a soma dos desvios da média é sempre zero para qualquer conjunto de números;
   #. a média é influenciada por todos os valores no conjunto;
   #. a média pode ser um valor que não pertence ao conjunto analisado;
@@ -60,11 +60,11 @@
 
   Uma vez definidas média e mediana, uma situação em que ambas podem ser consideradas inadequadas como valores representativos de uma distribuição (distribuições bimodais simétricas) é apresentada, motivando assim a definição da moda.
 
-  Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base numa atividade em que dois conjuntos de dados apresentam média, mediana e moda coincidentes, mas suas distribuições são diferentes. 
+  Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base em uma atividade em que dois conjuntos de dados apresentam média, mediana e moda coincidentes, mas suas distribuições são diferentes. 
 
   Finalmente, após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
  
-  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, comjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
+  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, conjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
 
   **Diferencial do Capítulo**
 
@@ -82,12 +82,12 @@
   
   **Dificuldades típicas dos estudantes (distratores)**
 
-  Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cáculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar estes conceitos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas destas dificuldades são destacadas.
+  Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cálculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar os mesmos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas destas dificuldades são destacadas.
 
   #. Cálculo de médias combinadas a partir das médias de diferentes grupos: desprezam-se os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
   #. Cálculo de média para dados agrupados: ignoram-se as frequências, considerando apenas os pontos médios dos intervalos, somando-os e dividindo pelo número de intervalos, ou simplesmente, considerando apenas o valor da variável, quando a variável é quantitativa discreta.
   #. Compreensão das medidas de posição: média, mediana e moda.
-  #. Compreensão das medidas de dispersão, em particular, da variãncia e do desvio padrão. 
+  #. Compreensão das medidas de dispersão, em particular, da variância e do desvio padrão. 
   #. Interpretação dos valores obtidos no contexto considerado.
  
   Os dois primeiros itens estendem-se para o cálculo da variância e do desvio padrão.
@@ -153,7 +153,7 @@
  
   **Material Suplementar**
  
-  Um applet do GeoGebra está disbonibilizado com manual de instruções. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos e as medidas resumo. 
+  Um applet do GeoGebra foi disponibilizado com manual de instruções nesta seção. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos e as medidas resumo. 
 
   **Exercícios** 
  
@@ -198,7 +198,7 @@ Atividade: Notas de Artes
 
  **Objetivos específicos** Estudar o efeito numa distribuição de dados após uma transformação simples: adição (posição) ou multiplicação (escala).
 
- **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam numa distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos no `link <https://ggbm.at/TNh7dPCf>`_ , e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos numa distribuição quando somamos um valor contante a todos os dados e quando multiplicamos um valor contante a todos os dados.
+ **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam em uma distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos neste `link <https://ggbm.at/TNh7dPCf>`_ , e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos em uma distribuição quando somamos um valor constante a todos os dados e quando multiplicamos um valor constante a todos os dados.
 
 Ao final de um trimestre, um professor de Artes registrou as seguintes notas de seus 35 alunos, listadas no quadro a seguir, em ordem crescente.
 
@@ -219,7 +219,7 @@ Este professor verificou que a média da turma foi aproximadamente 5,93 (soma da
 #. acrescentar um ponto para cada aluno da turma;
 #. aumentar em 20% a nota de cada aluno da turma.
 
-Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `]0,2], \quad ]2,4], \quad ]4,6], \quad ]6,8]`. Os números entre parênteses correspondem às frequências absolutas.
+Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `[0,2[, \quad [2,4[, \quad [4,6[, \quad [6,8]`. Os números entre parênteses correspondem às frequências absolutas.
 
 
 .. _fig-histograma-notas-sem-bonificacao:
@@ -250,7 +250,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das dua
 
 #. Qual dos dois histogramas teve a sua forma alterada após a bonificação?
 
-#. Identifique a possibilidade considerada em cada um deles, a saber, (a) acréscimo de 1,0 ponto ou (b) aumento de 20%.
+#. Considerando a figura :ref:`fig-histogramas-notas-com-bonificacoes`, identifique qual deles corresponde ao  acréscimo de 1,0 ponto e qual deles corresponde ao aumento de 20%.
 
 #. Dada a informação inicial de que a média da turma foi 5,93, de quanto será a média se o professor acrescentar um ponto a cada aluno? E se ele aumentar em 20% a nota de cada aluno?
 
@@ -295,9 +295,9 @@ Atividade: A maratona
   
   Para concluir esta atividade, é importante comentar com os estudantes a diferença observada entre a média e a mediana e que esta se deve a uma forte assimetria na distribuição dos dados. O histograma tem uma grande massa acumulada para o lado direito, tornando a média inferior à mediana. 
 
-A maratona é uma prova de atletismo que consiste em correr uma distância de 42,195 km. Pelas suas características, este tipo de prova é realizada nas ruas de uma grande cidade ou na estrada. As principais cidades do mundo realizam um destes eventos anualmente, recebendo milhares de atletas profissionais e amadores que encaram o desafio e almejam finalizar a carreria ou melhorar a própria marca do passado.
+A maratona é uma prova de atletismo que consiste em correr uma distância de 42,195 km. Pelas suas características, este tipo de prova é realizada nas ruas de uma grande cidade ou na estrada. As principais cidades do mundo realizam um destes eventos anualmente, recebendo milhares de atletas profissionais e amadores que encaram o desafio e almejam finalizar a corrida ou melhorar o próprio tempo do passado.
 
-Uma das mais famosas é a Maratona da Cidade de *Nova York*, nos Estados Unidos. Com mais de 50.000 participantes cada ano, é um dos pincipais eventos do atletismo mundial, junto com as maratonas de Chicago, Londres, Boston, Berlim e Tóquio.
+Uma das mais famosas é a Maratona da Cidade de Nova Iorque, nos Estados Unidos. Com mais de 50.000 participantes cada ano, é um dos principais eventos do atletismo mundial, junto com as maratonas de Chicago, Londres, Boston, Berlim e Tóquio.
 
 .. _maratona-NY:
 
@@ -354,7 +354,7 @@ Observe que os tempos já estão ordenados do menor para o maior. Por exemplo, p
 
    * Como você calcularia a média de valores em horas, minutos e segundos como os da tabela?
    
-   * Como você construiria um histograma com estes dados, como você definiria os limites dos intervalos? (Consulte a :ref:`ativ-construcao-histograma` do capítulo **A Natureza da Estatística** em caso de dúvida.)  
+   * Como você construiria um histograma com estes dados? Como você definiria os limites dos intervalos? (Consulte a :ref:`ativ-construcao-histograma` do capítulo **A Natureza da Estatística** em caso de dúvida.)  
    
    * Qual o maior tempo em que uma corredora deveria completar a maratona para ficar entre as 25 primeiras? E entre as 50 primeiras?
 
@@ -486,11 +486,11 @@ Observe que os tempos já estão ordenados do menor para o maior. Por exemplo, p
   
    2. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
    
-   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a carreira em até 2:45:52 (2,764 horas).
+   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a corrida em até 2:45:52 (2,764 horas).
    
       Já para ficar nas primeiras 50, precisaria terminar o percurso em 2:56:57 (2,949 horas) ou menos.
    
-      Finalmente, para ficar entre as primeiras 75, su tiempo tendría que ser menor ou igual a 2:59:51 (2,998 horas).
+      Finalmente, para ficar entre as primeiras 75, seu tempo teria que ser menor ou igual a 2:59:51 (2,998 horas).
 
       .. figure:: _resources/Histograma_mulheres_resposta_lineas.png
          :width: 200pt
