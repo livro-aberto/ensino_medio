@@ -1,10 +1,6 @@
 .. HJB: perguntar para o aluno mais para o final como ele sabia que as sombras pela luz do Sol de arestas paralelas do cubo vazado são paralelas ...
 
-.. HJB: criar um exercício que explore projeções como funções (injetiva, sobrejetiva, para que pontos f(p) = p, f(f(p)) = p).
-
 .. HJB: conexão com artes (perspectógrafos).
-
-.. HJB: não esquecer de colocar a dica para o professor de usar os applets do GeoGebra por conta do movimento.
 
 
 ***********************************************
@@ -342,7 +338,7 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
    
    .. Ver <https://www.maa.org/press/periodicals/convergence/eratosthenes-and-the-mystery-of-the-stades-parallel-light-rays>.
    
-   * Uma simplficação frequentemente usada é a de admitir que os raios do Sol chegam paralelos à Terra. Essa simplificação é razoável para você? Dê argumentos para a sua posição!
+   * Uma simplficação frequentemente usada é a de admitir que os raios do Sol chegam paralelos à Terra. Essa simplificação é razoável para você? Dê argumentos que justifiquem sua opinião!
    
    * Admitindo que os raios do Sol chegam paralelos à Terra, desenhe, a lápis, um diagrama representando alguns raios solares atingido o anteparo.
    
@@ -358,7 +354,7 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
 
    **Observações e recomendações:**
  
-   * Compreender a definição de projeção em perspectiva pressupõe a compreensão da :numref:`fig-proj-perspectiva-01`, da :numref:`fig-proj-perspectiva-02` e da :numref:`fig-proj-perspectiva-03`. Elas são representações 2D de configurações 3D, justamente o assunto desenvolvido neste capítulo. Assim, se o único recurso didático disponível for tão somente este livro didático, o aluno se verá na árdua tarefa de tentar entender o que é uma imagem produzida por uma projeção em perspectiva usando aquilo que está querendo entender, a saber, imagens produzidas por projeções em perspectiva. Temos aí um dilema recursivo. Neste contexto, **sugerimos fortemente** que você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/TxYEqV5d> (projeção de um ponto), <https://www.geogebra.org/m/YpH3fH9E> (projeção de um segmento de reta), <https://www.geogebra.org/m/HFjMUzgz> (projeção de um triângulo) e <https://www.geogebra.org/m/GhC6qGVY> (projeção de um Cubo de Necker) para computadores desktop, tablets e smarphones.
+   * Compreender a definição de projeção em perspectiva pressupõe a compreensão da :numref:`fig-proj-perspectiva-01`, da :numref:`fig-proj-perspectiva-02` e da :numref:`fig-proj-perspectiva-03`. Elas são representações 2D de configurações 3D, justamente o assunto desenvolvido neste capítulo. Assim, se o único recurso didático disponível for tão somente este livro didático, o aluno se verá na árdua tarefa de tentar entender o que é uma imagem produzida por uma projeção em perspectiva usando aquilo que está querendo entender, a saber, imagens produzidas por projeções em perspectiva. Temos aí um dilema didático recursivo. Neste contexto, **sugerimos fortemente** que você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/TxYEqV5d> (projeção de um ponto), <https://www.geogebra.org/m/YpH3fH9E> (projeção de um segmento de reta), <https://www.geogebra.org/m/HFjMUzgz> (projeção de um triângulo) e <https://www.geogebra.org/m/GhC6qGVY> (projeção de um Cubo de Necker) para computadores desktop, tablets e smarphones.
    
       .. figure:: _resources/perspectiva-cubo-geogebra-02.*
    
@@ -434,3 +430,37 @@ Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entr
 
 
 **Projeções paralelas**
+
+Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar o anteparo usado nos experimentos com raios solares como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-paralela-01`, irá obstruir os raios do Sol, os quais estamos supondo aqui serem todos paralelos, produzindo então uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta que é paralela à direção dos raios do Sol. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta que passa por `P` e é paralela aos raios Sol com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-paralela-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
+
+.. _fig-proj-paralela-01:
+   
+.. figure:: _resources/projecao-paralela-01.jpg
+   :width: 450px
+         
+   Um modelo para o experimento com a luz do Sol.
+
+Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. 
+
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um vetor `\vec{v}` cuja direção não é paralela ao plano `\pi`. Se `P` é um ponto qualquer, então o ponto `P'` de intersecção entre a reta que passa por `P` e tem direção paralela à direção do vetor `\vec{v}` e o plano `\pi` é denominado :index:`projeção paralela` do ponto `P` com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`.  
+  
+.. _fig-proj-paralela-03:
+   
+.. figure:: _resources/projecao-paralela-03.jpg
+   :width: 450px
+         
+   `P'` é a projeção paralela do ponto `P` com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`.
+
+Se a direção do vetor `\vec{v}` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`.
+
+.. _fig-proj-paralela-02:
+   
+.. figure:: _resources/projecao-paralela-02_1.jpg
+   :width: 450px
+         
+   `P'` é a projeção ortogonal do ponto `P` com relação a direção dada pelo vetor `\vec{v}` perpendicular ao plano de projeção `\pi`.
+
+
+.. admonition:: Para refletir
+
+   Note que uma projeção paralela pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3}`, faz associar o ponto `P'` de interseção entre a reta que passa por `P` e é paralela a direção de um vetor `\vec{v}` e o plano `\pi`, supondo que a direção do vetor `\vec{v}` não é paralela ao plano `\pi`. Assim, no contexto da :numref:`fig-proj-paralela-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
