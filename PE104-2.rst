@@ -133,9 +133,9 @@ Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão d
 
 .. _sub-amplitudes:
 
-----------------------------------------------
-Amplitude amostral e amplitude interquartílica
-----------------------------------------------
+--------------------------------------------
+Amplitude amostral e distância entre quartis
+--------------------------------------------
 
 Entre as medidas de dispersão mais simples, define-se a :index:`amplitude amostral` (R) como a diferença entre o maior valor e menor valor observados. Usando a notação apresentada anteriormente, dado um conjunto com `n` observações, temos
 
@@ -536,10 +536,6 @@ Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa a
    +-----------------------------+-------------+-------------+
    |Desvio médio absoluto (DM)   |             |             |
    +-----------------------------+-------------+-------------+
-   | Variância  (`\sigma^2`)     |             |             |
-   +-----------------------------+-------------+-------------+
-   |Desvio padrão (`\sigma`)     |             |             |
-   +-----------------------------+-------------+-------------+
    |Variância amostral (`s^2`)   |             |             |
    +-----------------------------+-------------+-------------+
    |Desvio padrão amostral (`s`) |             |             |
@@ -586,7 +582,7 @@ Nos conjuntos de dados, quando não há valores atípicos (valores muito altos o
 
    s\approx \frac{\overbrace{R}^{x_{(n)}-x_{(1)}}}{4}
    
-em que `R` é a amplitude amostral. 
+em que `R` é a amplitude amostral, `x_{(n)}=\textsf{Max}` e `x_{(1)}=\textsf{Min}`. 
 
 a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
 
@@ -639,15 +635,15 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
  
 .. _ativ-mediamaisoumenosdoisdesvios:
 
-Atividade: Frequência de valores no intervalo centrado na média e de comprimento igual a 4 desvios padrões 
-----------------------------------------------------------------------------------------------------------
+Atividade: Frequência de valores no intervalo centrado na média mais ou menos 2 desvios padrões 
+-----------------------------------------------------------------------------------------------
 
 
 .. admonition:: Para o professor
 
    **Objetivos específicos** Calcular a frequência relativa de dados que caem no intervalo centrado na média mais ou menos dois desvios padrões.
    
-   **Observações e sugestões** Esta atividade será útil na atividade seguinte que trata da desigualdade de Tchebyshev para um conjunto de dados empíricos, fornecendo um limite inferior para a frequência que será calculada aqui. Este limite, é em geral, pobre, pois usa somente o valor da média e do desvio padrão para obtê-lo, sem levar em conta a forma da distribuição dos dados. Deste modo, os resultados desta atividade serão aproveitados na próxima, para fins de comparação entre o valor real da frequência no conjunto observado e o valor mínimo, proposto pela desigualdade de Tchebyshev.
+   **Observações e sugestões** Esta atividade será útil na atividade seguinte que trata da desigualdade de Tchebyshev para um conjunto de dados empíricos, fornecendo um limite inferior para a frequência que será calculada aqui. Este limite, é em geral, pobre, pois é obtido somente com a informação de média e do desvio padrão, sem levar em conta a forma da distribuição dos dados. Deste modo, os resultados desta atividade serão aproveitados na próxima, para fins de comparação entre o valor real da frequência no conjunto observado e o valor mínimo, proposto pela desigualdade de Tchebyshev.
    
 Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, calcule a frequência absoluta de dados que estão no intervalo `[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` e comente sobre os resultados obtidos.
 
@@ -679,11 +675,17 @@ Atividade: Avaliação empírica de frequência em torno da média
    **Observações e sugestões**  Nesta atividade faremos uso de um resultado da teoria das probabilidades conhecido como Desigualdade de Tchebyshev. A desigualdade de Tchebyshev afirma que se X é uma variável aleatória com média `\mu` e variância `\sigma^2` então
    
    .. math::
+      
+      P(|X-\mu|\geq k\cdot \sigma)\leq \frac{1}{k^2}, \quad k>0
+   
+   ou, equivalentemente,
+   
+   .. math::
 
       P(|X-\mu|<k\cdot \sigma) \geq 1- \frac{1}{k^2}, \quad k>0
    
    Trazendo esta fórmula para dados de uma amostra podemos dizer que a frequência relativa no intervalo `]\bar{x}-k\cdot s ; \bar{x}+k\cdot s[` é pelo menos igual a `\frac{k^2-1}{k^2}` em que `k\in \mathbb{N}`. 
-   No texto para o aluno, apresntaremos `k>1` em vez de `k>0` , pois para `0<k\leq 1` a desigualdadde não nos traz nenhuma informação, pois é claro que qualquer frequência relativa é maior ou igual a zero. Para `k=1` o resultado seria zero.
+   No texto para o aluno, apresentaremos `k>1` em vez de `k>0` , pois para `0<k\leq 1` a desigualdadde não nos traz nenhuma informação, pois é claro que qualquer frequência relativa é maior ou igual a zero. Para `k=1` o resultado seria zero.
    
 Usando um resultado da teoria das probabilidades, conhecido como  Desigualdade de Tchebyshev, podemos dizer que a frequência relativa de dados no intervalo aberto `]\bar{x}-k\cdot s ; \bar{x}+k\cdot s[` é no mínimo igual à razão `\frac{k^2-1}{k^2}` em que `k` é um número maior do que 1. 
 
@@ -692,7 +694,7 @@ Verifique a validade desta afirmação para os resultados da :ref:`ativ-mediamai
 
 .. admonition:: Resposta 
 
-   Considerando `k=2` encontramos o valor mínimo de frequência relativa dado por `\frac{3}{4}=0,75` ou 75%. Para todos os conjuntos considerados, a frequência relativa foi bem superior à 75%: 91%, 93% e 100% nos dois últimos casos. A desigualdade de Tchebyshev é bastante útil se conhecemos apenas a média e o desvio padrão para avaliar este limite inferior de frequência relativa, mas cabe ressaltar que, quando conehcemos os dados, em geral encontraremos frequências relativamente maiores do que o limite inferior especificado pela desigualdade.
+   Considerando `k=2` encontramos o valor mínimo de frequência relativa dado por `\frac{3}{4}=0,75` ou 75%. Para todos os conjuntos considerados, a frequência relativa foi bem superior à 75%: 91%, 93% e 100% nos dois últimos casos. A desigualdade de Tchebyshev é bastante útil se conhecemos apenas a média e o desvio padrão para avaliar este limite inferior de frequência relativa, mas cabe ressaltar que, quando conhecemos os dados, em geral encontraremos frequências relativamente maiores do que o limite inferior especificado pela desigualdade.
    
    
 

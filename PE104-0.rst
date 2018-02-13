@@ -8,13 +8,13 @@
  
   **Objetivo Geral do Capítulo**
     
-  Compreender como algumas medidas, chamadas medidas resumo, podem de alguma forma revelar informações sobre a distribuição dos dados. Para alcançar este objetivo geral, este capítulo inclui:
+  Compreender como algumas medidas, chamadas medidas resumo, podem revelar informações sobre a distribuição dos dados. Para alcançar este objetivo geral, este capítulo inclui:
  
   #. definições de medidas de posição (média, mediana, moda e quartis);
-  #. definições de medidas de dispersão (desvio médio, variância e desvio padrão, amplitude (amostral), amplitude interquartílica, coeficiente de variação);
+  #. definições de medidas de dispersão (desvio médio, variância e desvio padrão, amplitude (amostral), distância entre quartis, coeficiente de variação);
   #. sinalizações para a importância das medidas de dispersão para avaliar a representatividade da média na distribuição;
-  #. revisão dos conceitos apresentados no aapítulo :ref:`cap-a-natureza-da-estatistica`: parâmetro e estatística, definindo média populacional e média amostral, variância populacional e variância amostral.
-  #. definição de representação gráfica para variáveis quantitativas, conhecida como desenho-esquemático ou diagrama de caixa (boxplot).
+  #. revisão dos conceitos apresentados no capítulo **A Natureza da Estatística**: parâmetro e estatística, definindo média populacional e média amostral, variância populacional e variância amostral.
+  #. apresentação de representação gráfica para variáveis quantitativas conhecida como *boxplot* (gráfico caixa).
 
   Observação: Embora muitos textos denominem as medidas de posição (média, mediana e moda) como medidas de tendência central, interpretando "tendência central" como "valor representativo" na distribuição", preferimos denominá-las medidas de posição, pois, por exemplo, dependendo da forma da distribuição, a média pode não ser um "valor representativo" da distribuição.
 
@@ -30,7 +30,7 @@
   **Conteúdos abordados**
 
   #. Medidas de posição: média, mediana, moda e quartis.
-  #. Medidas de dispersão: amplitude, amplitude interquartílica, desvio médio, variância, desvio padrão e coeficiente de variação.
+  #. Medidas de dispersão: amplitude, distância entre quartis, desvio médio, variância, desvio padrão e coeficiente de variação.
   #. Parâmetro versus Estimador (estimativa) (Média populacional versus média amostral, Variância populacional versus variância amostral, etc.).
   #. Construção do *boxplot* (gráfico caixa).
  
@@ -64,7 +64,7 @@
 
   Finalmente, após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
  
-  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, comjunto formado pleas mmedidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado o critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
+  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, comjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
 
   **Diferencial do Capítulo**
 
@@ -84,7 +84,7 @@
 
   Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cáculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar estes conceitos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas destas dificuldades são destacadas.
 
-  #. Cálculo de médias combinadas a partir das médias de diferentes grupos: despresam-se os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
+  #. Cálculo de médias combinadas a partir das médias de diferentes grupos: desprezam-se os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
   #. Cálculo de média para dados agrupados: ignoram-se as frequências, considerando apenas os pontos médios dos intervalos, somando-os e dividindo pelo número de intervalos, ou simplesmente, considerando apenas o valor da variável, quando a variável é quantitativa discreta.
   #. Compreensão das medidas de posição: média, mediana e moda.
   #. Compreensão das medidas de dispersão, em particular, da variãncia e do desvio padrão. 
@@ -120,24 +120,23 @@
  
   **Estrutura do Capítulo**
   
-  **Explorando 1: Medidas de Posição** Nesta seção serão trabalhadas duas atividades. A primeira servirá como motivação para compreender a necessidade mínima de duas medidas para caracterizar uma distribuição e, a segunda, focará especificamente no cálculo de medidas de posição tais como média, mediana e moda, que já devem ser conhecidas do Ensino Fundamental. Também proporemos a divisão do conjunto de dados em quatro intervalos de classes de frequências iguais a 1/4 para definir os três quartis de uma distribuição.
+  **Explorando 1: Medidas de Posição** Nesta seção serão trabalhadas duas atividades. A primeira propõe duas transformações simples nos dados de um conjunto e procura avaliar o efeito destas transformações na distribuição dos dados. A segunda foca especificamente no cálculo de medidas de posição tais como média, mediana e moda, que já devem ser conhecidas do Ensino Fundamental. Também proporemos a divisão do conjunto de dados em quatro intervalos de classes de frequências iguais a 1/4 para definir os três quartis de uma distribuição.
  
   #. Atividade: Distribuição de notas para perceber o efeito de transformações simples (multiplicação e/ou adição de um valor) no dado na posição e escala(forma) da distribuição, comparando histogramas. 
  
-  #. Atividade: Apresentação de diferentes conjuntos de dados sobre tempos para completar uma “maratona” que apresentam diferentes formas de distribuição (assimétricas e simétricas).
+  #. Atividade: Apresentação de diferentes conjuntos de dados sobre tempos para completar uma “maratona” que apresentam diferentes tipos de assimetria.
 
   **Organizando as ideias 1: Medidas de posição** Definições de média; mediana; moda e quartis.
          
-  **Praticando o assunto 1:** Atividades explorando conceitos e propriedades apresentados no organizando as ideias 1. agrupados.
+  **Praticando o assunto 1:** Atividades explorando conceitos e propriedades apresentados no organizando as ideias 1. 
     
-  **Explorando 2: Medidas de dispersão** Proposição de uma atividade envolvendo alguns conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
+  **Explorando 2: Medidas de dispersão** Proposição de uma atividade envolvendo dois conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
  
-  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância e 
-  desvio-padrão.
+  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância e desvio padrão.
  
   Nesta seção também  serão retomados os conceitos de parâmetro e estimador, tratados no capítulo **A Natureza da Estatística** apresentando a definição de variância populacional e amostral, desvio-padrão populacional e amostral e, média populacional e amostral.
  
-  **Praticando o assunto 2** Atividades que usarão os conceitos e propriedades apresentados no organizando 2 e que buscam dar significado às medidas de dispersão definidas.
+  **Praticando o assunto 2** Atividades que usam os conceitos e propriedades apresentados no organizando 2 e que buscam dar significado às medidas de dispersão definidas.
 
   **Explorando 3** Proposição de uma atividade apresentado dois conjuntos de dados com a mesma variância, mas com medidas de posição diferentes.
  
@@ -148,12 +147,13 @@
   **Para saber mais**
  
   #. Definição do *boxplot* (gráfico caixa) representação gráfica para variáveis quantitativas alternativa ao histograma.
-  #. Descrição do critério de classificação de um valor como valor destoante do conjunto de dados.
+  #. Descrição do critério de classificação de um valor como valor atípico do conjunto de dados adotado na construção do boxplot.
+  #. Apresentação de regra empírica para avalaiar a frequência de dados nos intervalos `\bar{x}\pm s` e `\bar{x}\pm 2\cdot s`.
   
  
   **Material Suplementar**
  
-  Um applet do GeoGebra está disbonibilizado com manual de instruções. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos a as medidas resumo. 
+  Um applet do GeoGebra está disbonibilizado com manual de instruções. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos e as medidas resumo. 
 
   **Exercícios** 
  
@@ -169,7 +169,13 @@
   
   4. Bussab, W. O. & Morettin, P. A. (2017). Estatística Básica.  Saraiva. Nona edição.
   
-  5. Rossman, Allan J., and Beth L. Chance. Workshop Statistics:: Discovery With Data and Minitab. Springer Science & Business Media, 1998.  
+  5. Levine, D. M., Bereneson, M. L. e Stephan, D. (2000). Estatística: Teoria e Aplicações. LTC.
+  
+  6. Rossman, Allan J., and Beth L. Chance. Workshop Statistics:: Discovery With Data and Minitab. Springer Science & Business Media, 1998.  
+  
+  7. Triola, M. F. (2005), Introdução à Estatística. LTC. Nona Edição.
+  
+  Observação: Os textos d), e), f) e g) são recomendados para cursos de estatística a nível de graduação, mas seus capítulos iniciais, que tratam da natureza da estatística, representações gráficas e medidas resumo podem ser úteis. Os mesmos foram consultados para o material deste capítulo.
   
 
 .. _sec-explorando1:
@@ -177,6 +183,8 @@
 ******************************
 Explorando: Medidas de Posição
 ******************************
+
+As medidas resumo (de posição e  de dispersão) correspondem a uma síntese do conjunto de dados observados e ao passo preliminar para fazer uma inferência estatística, ou seja, a partir das informações obtidas na amostra, expandir nossas conclusões para a população. Como as distribuições podem apresentar formas variadas é importante conhecer diferentes tipos de medidas resumo, tanto de posição como de dispersão, para usar medidas apropriadas em cada caso.
   
 
 .. _ativ-Notas-de-Artes:
@@ -211,7 +219,7 @@ Este professor verificou que a média da turma foi aproximadamente 5,93 (soma da
 #. acrescentar um ponto para cada aluno da turma;
 #. aumentar em 20% a nota de cada aluno da turma.
 
-Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `]0,2], \quad ]2,4], \quad ]4,6], \quad ]6,8]`. Os números esntre parênteses correspondem às frequências absolutas.
+Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `]0,2], \quad ]2,4], \quad ]4,6], \quad ]6,8]`. Os números entre parênteses correspondem às frequências absolutas.
 
 
 .. _fig-histograma-notas-sem-bonificacao:
@@ -235,7 +243,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das dua
    :width: 200pt
    :align: center
 
-   Histograma das notas de Artes com bonificação
+   Histogramas das notas de Artes com bonificação
    
  
 #. Qual dos dois histogramas manteve a mesma forma em relação ao histograma das notas sem a bonificação?
@@ -300,7 +308,7 @@ Uma das mais famosas é a Maratona da Cidade de *Nova York*, nos Estados Unidos.
    Corredores participando da Maratona de *Nova York*, `Wikipedia <https://commons.wikimedia.org/wiki/File:New_York_marathon_Verrazano_bridge.jpg>`_
 
 
-Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados por separado. Qual das categorias você acha que terá os melhores resultados na carreira? Em quanto tempo você acha que uma pessoa percorre os 42 km da carreira? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
+Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados separadamente. Qual das categorias você acha que terá os melhores resultados na maratona? Em quanto tempo você acha que uma pessoa percorre os 42 km? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
 
 .. _handcycle:
 
