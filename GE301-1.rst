@@ -2,6 +2,8 @@
 
 .. HJB: conexão com artes (perspectógrafos).
 
+.. HJB: não esquecer de falar o caso em que o observador está entre o plano de projeção e o objeto, situação que modela câmeras obscuras.
+
 
 ***********************************************
 Explorando: projeções em perspectiva e projeções paralelas
@@ -594,6 +596,40 @@ Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entr
 .. admonition:: Para refletir
 
    Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
+   
+
+.. admonition:: Você sabia?
+
+   Com o Renascimento (século XIV-século XVII), os artistas começaram a fazer suas pinturas com a preocupação de retratar a realidade, isto é, retratar o que se vê. Para isso, eles consideraram o uso de princípios óticos geométricos e, em particular, das projeções em perspectiva. Vários aparatos foram idealizados com o próposito de produzir imagens realistas. Observe que o princípio básico de todos os dispositivos é o alinhamento do ponto do objeto a ser retratado, do ponto projetado no quadro e um centro fixo (tipicamente, o olho do observador).
+   
+      .. figure:: _resources/durer-01.jpg
+         :width: 400 pt
+         
+         Dispositivo de Albrecht Dürer (1471-1528).
+
+
+      .. figure:: _resources/cigoli-02.jpg
+         :width: 400 pt
+         
+         Dispositivo de Lodovico Cardi (Cigoli) (1559-1613).         
+         
+
+      .. figure:: _resources/jamnitzer-01.jpg
+         :width: 400 pt
+         
+         Dispositivo de Wenzel Jamnitzer (1507/1508-1585).         
+
+
+      .. figure:: _resources/schmalcalder-02.jpg
+         :width: 400 pt
+         
+         Dispositivo de Charles Augustus Schmalcalder (1781-1843).         
+
+
+      .. figure:: _resources/kircher-01.jpg
+         :width: 400 pt
+         
+         Camera obscura de Athanasius Kircher (1601-1680).         
 
 
 **Projeções paralelas**
@@ -618,7 +654,7 @@ Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\
          
    `P'` é a projeção paralela do ponto `P` com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`.
 
-Se a direção do vetor `\vec{v}` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`.
+Se a direção do vetor `\vec{v}` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`. Uma projeção paralela que não é ortogonal é denominada :index:`projeção oblíquoa`.
 
 .. _fig-proj-paralela-02:
    
