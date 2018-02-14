@@ -1,5 +1,4 @@
 
-
 .. admonition:: Resposta 
 
    1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
@@ -147,13 +146,13 @@ Temos a seguinte distribuição de frequências das notas antes da bonificação
  +-----------+----------------------+---------------------------+
  | intervalo | frequência absoluta  | ponto médio do intervalo  |
  +-----------+----------------------+---------------------------+
- | ]0,2]     | 1                    | 1,0                       |
+ | [0,2[     | 1                    | 1,0                       |
  +-----------+----------------------+---------------------------+
- | ]2,4]     | 5                    | 3,0                       |
+ | [2,4[     | 5                    | 3,0                       |
  +-----------+----------------------+---------------------------+
- | ]4,6]     | 6                    | 5,0                       |
+ | [4,6[     | 6                    | 5,0                       |
  +-----------+----------------------+---------------------------+
- | ]6,8]     | 23                   | 7,0                       |
+ | [6,8]     | 23                   | 7,0                       |
  +-----------+----------------------+---------------------------+
    
 Apenas sabemos, por exemplo, que entre 2 e 4 existem cinco notas, mas  não conhecemos as notas individualmente. Portanto, a soma exata destas cinco notas não é conhecida. A estratégia é tomar o ponto médio desta classe, `3=\frac{2+4}{2}` como a nota representativa das cinco observações, pois espera-se que os erros cometidos para mais e para menos sejam compensados na classe. Desse modo estimamos a soma das notas neste intervalo como `3+3+3+3+3=5\cdot 3=15`. 
@@ -306,13 +305,13 @@ Voltando à :ref:`ativ-Notas-de-Artes`, suponha novamente que o coordenador tenh
     +-----------+---------------------+--------------------------+--------------------------+
     | intervalo | frequência absoluta | ponto médio do intervalo | freq. absoluta acumulada |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]0,2]     | 1                   | 1,0                      |   1                      |
+    | [0,2[     | 1                   | 1,0                      |   1                      |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]2,4]     | 5                   | 3,0                      |  1+5=6                   |
+    | [2,4[     | 5                   | 3,0                      |  1+5=6                   |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]4,6]     | 6                   | 5,0                      | 6+6=12                   |
+    | [4,6[     | 6                   | 5,0                      | 6+6=12                   |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]6,8]     | 23                  | 7,0                      |12+23=35                  |
+    | [6,8[     | 23                  | 7,0                      |12+23=35                  |
     +-----------+---------------------+--------------------------+--------------------------+
     
 Observe que a nota da posição 18 está no último intervalo, pois até o intervalo anterior, ]4,6], acumularam-se apenas 12 das 35 notas. 
