@@ -83,6 +83,7 @@ Lançando Objetos
 Atividade 2: O gráfico da função real `f(x)=x^2`
 ----
 
+
 .. admonition:: Para o professor
 
    **Objetivos Específicos**
@@ -339,7 +340,7 @@ Imagine que você tenha um pedaço de barbante de `12cm` de comprimento e queira
 #. Verifique se a relação encontrada pode ser dada por `A(x)=-(x^2-6x)`, caso contrário refaça os itens anteriores.
 #. A expressão `A(x)`, encontrada pode ser considerada uma função afim? Por quê? 
 #. Observe que a relação apresentada no item anterior, possui dentro do parênteses um binômio que pode ser parte de um trinômio quadrado perfeito, qual seria o terceiro termo que faria o binômio se transformar num trinômio quadrado perfeito?
-#. Agora repita a relação: `A(x)=-(x^2-6x+?-?)` acrescentando e retirando o número encontrado no item anterior.
+#. Agora repita a relação: `A(x)=-(x^2-6x+\Box -\Box)` acrescentando e retirando o número encontrado no item anterior.
 #. Ao fatorar a relação do item anterior podemos recair na forma: `A(x)=a(x-p)^2+q`, quais os valores de a, p e q, que foram encontrados neste processo de fatoração?
 #. Levando em consideração a forma apresentada no item anterior, e ao analisarmos apenas o termo `(x-p)^2`, Existe algum valor de `x` que torne a expressão negativa? e qual valor de `x` torna a expressão nula?
 #. Ao analisarmos `A(x)=-(x-3)^2+9`, existe algum valor de `x` que faça `A(x)` ser maior que `9`? Por quê?
@@ -678,6 +679,659 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
 
    #. `T_{n}= \frac{n \cdot (n+1)}{2}= \frac{n^2}{2} + \frac{n}{2}`.
 
+.. _ativ-titulo-da-atividade:
+
+Atividade: O Gráfico da Curva
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   Prezado colega, após o aluno ser instigado a desenvolver a forma canônica da expressão apresentada na atividade anterior, propomos uma análise mais criteriosa nos coeficientes `a`, `p` e `q`, de `y=a(x-p)^2+q` através das transformações ocorridas na curva. Para isso dispomos da atividade tanto no modelo textual (estático) quanto num modelo interativo disponível na plataforma do geogebra via link em destaque (a seguir no texto).
+   Neste modelo interativo separamos a abordagem em quatro partes: 
+   
+   #. Análise dos valores de `a`.
+   #. Análise dos valores de `p`.
+   #. Análise dos valores de `q`.
+   #. Análise dos valores de `a`, `p` e `q`.
+   
+   Sugerimos ao colega que acesse antes os "links", não só para testar a funcionalidade deles, mas para se apropriar das vantagens que a plataforma oferece. Caso seja da realidade de seus alunos, sugerimos também o acesso à atividade como tarefa de casa.
+   
+   
+**Explorando 4**
+
+Para melhor explorarmos essa atividade sugerimos a versão online, disponível nos links a seguir:
+
+Parte 1: https://ggbm.at/jdFEcyav
+
+Parte 2: https://ggbm.at/DmKxRtU9
+
+Parte 3: https://ggbm.at/Qcm5QFjH
+
+Parte 4: https://ggbm.at/jVJh78hz
+
+Caso não seja possível, segue a atividade que corresponde à apresentada nos "links":
+
+Na atividade 2, você teve a oportunidade de explorar as propriedades do gráfico da função `f:\mathbb{R}\to\mathbb{R}` dada por `f(x)=x^2`, já na atividade 3, você foi apresentado à um processo que o levou a transformar a relação quadrática dada na forma polinomial: `f(x)=ax^2 + bx + c` para forma canônica `f(x)=a(x-p)^2+q`. O objetivo desta atividade é que você consiga perceber as mudanças ocorridas no gráfico da função `f` (dada em sua forma canônica) acarretadas pelas variações dos coeficientes `a`, `p` e `q`. Esperamos que além de você ter contato com novos conceitos, comprove e consolide os conceitos abordados nas atividades anteriores deste capítulo.
+
+**PARTE 1** 
+
+Dada a função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`, ao assumirmos `p=q=0` temos que `f(x)=ax^2`, onde analisaremos as variações dos valores de `a`, observando as figuras a seguir:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/a001.jpg
+   :width: 400pt
+   :align: center
+
+   (`a=0,01`)
+
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/a015.jpg
+   :width: 400pt
+   :align: center
+
+   (`a=0,15`)
+
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/a1.jpg
+   :width: 400pt
+   :align: center
+
+   (`a=1`)
+   
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/a2.jpg
+   :width: 400pt
+   :align: center
+
+   (`a=2`)
+   
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/a5.jpg
+   :width: 400pt
+   :align: center
+
+   (`a=5`)
+   
+   
+Note que os gráficos das figuras acima apresentam apenas valores de `a` maiores que zero, e que a curva em questão é côncava, com base nessa afirmação responda:
+
+#. Quando o valor de `a` aumenta, a concavidade da curva fica mais aberta ou mais fechada?
+#. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
+#. Tente explicar com suas palavras uma justificativa para as respostas dadas no item anterior.
+   
+   Observe as novas figuras a seguir que apresentam novos valores de `a`.
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a-001.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=-0,01`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a-015.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=-0,15`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a-1.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=-1`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a-2.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=-2`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a-5.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=-5`)
+   
+#. Quando o valor de `a` diminui (fica "mais negativo"), a concavidade da curva fica mais aberta ou mais fechada?
+#. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
+
+
+   A figura a seguir apresenta o gráfico da função `f` definida anteriormente para `a=0`.
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/a0.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=0`)
+   
+#. Com base no gráfico acima, comente cada uma das alternativas a seguir, que indicam o comportamento do gráfico quando `a=0`.
+
+   f1. A curva some, pois não é mais função.
+
+   f2. Não existe mais curva, o gráfico apresentado é uma reta representada pela função constante `f:\mathbb{R}\to\mathbb{R}` dado por `f(x)=0`
+
+   f3. A curva ainda existe mais fica invisível, pois a abertura de sua concavidade tende ao infinito.
+ 
+   f4. A curva se transforma numa reta que está sobreposta ao eixo das abscissas.
+
+
+#. Você deve ter notado que quando o valor de `a>0` a concavidade da curva aponta para cima, e quando `a<0` a concavidade aponta para baixo. Com base neste fato, reescreva as falsas afirmações a seguir, tornando-as verdadeiras:
+
+   g1. Quando `a>0`a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor máximo passa a ser crescente.
+
+   g2. Quando `a>0`a, da esquerda para direita, a curva é crescente e ao assumir o seu valor mínimo passa a ser decrescente.
+
+   g3. Quando `a<0`a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor máximo passa a ser crescente.
+
+   g4. Quando `a<0`a, da esquerda para direita, a curva é crescente e ao assumir o seu valor mínimo passa a ser decrescente.
+
+
+**PARTE 2** 
+
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `q=0` e analisaremos os valores de `p` na função `f(x)=(x-p)^2` observando as figuras a seguir:
+
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/p-4.jpg
+   :width: 400pt
+   :align: center
+
+   (`p=-4`)
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/p-2.jpg
+   :width: 400pt
+   :align: center
+
+   (`p=-2`)
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/p0.png
+   :width: 400pt
+   :align: center
+
+   (`p=0`)
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/p3.jpg
+   :width: 400pt
+   :align: center
+
+   (`p=3`)
+   
+   
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/p5.jpg
+   :width: 400pt
+   :align: center
+
+   (`p=5`)
+   
+   
+Em cada um dos itens a seguir destaque as alternativas verdadeiras.
+
+#. Quando os valores de `p` aumentam a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+           
+#. Quando os valores de `p` se aproximam de zero a curva se
+
+   (  ) afasta de zero.     
+   
+   (  ) iguala a zero.     
+   
+   (  ) aproxima de zero.     
+   
+   (  ) transforma em uma reta.
+   
+#. Quando os valores de `p` diminuem a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+
+#. Você deve ter notado que a curva tangencia o eixo das abscissas em um ponto, que é justamente o ponto em que a curva deixa de ser decrescente e passa a ser crescente. Quais são as relações dos valores de `p` com este ponto?
+
+   (  ) O ponto de tangência em questão é `(-p,0)`.
+   
+   (  ) Se temos `x=p`, temos que `f(p)=0`, o que faz com que `p` indique a posição do ponto de tangência no eixo das ordenadas.
+   
+   (  ) O ponto de tangência em questão é `(0,-p)`.
+   
+   (  ) Se temos `x=p`, temos que `f(p)=0`, o que faz com que p indique a posição do ponto de tangência no eixo das abscissas.
+   
+   (  ) O ponto de tangência em questão é `(0,p)`.
+   
+   (  ) O ponto de tangência em questão é `(p,0)`.
+   
+   
+#. O movimento que a curva faz quando `p` varia, é uma
+
+   (  ) translação vertical.
+   
+   (  ) translação horizontal.
+   
+   (  ) rotação em `360°`.
+   
+   (  ) rotação em `180°`.
+   
+   
+
+**PARTE 3** 
+
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `p=0` e analisaremos os valores de `q` na função `f(x)=x^2+q` observando as figuras a seguir:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/q-5.jpg
+   :width: 400pt
+   :align: center
+
+   (`q=-5`)
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/q-1.jpg
+   :width: 400pt
+   :align: center
+
+   (´q=-1´)
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/q0.jpg
+   :width: 400pt
+   :align: center
+
+   (`q=0`)
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/q2.jpg
+   :width: 400pt
+   :align: center
+
+   (`q=2`)
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/q5.jpg
+   :width: 400pt
+   :align: center
+
+   (`q=5`)
+   
+   
+
+
+#. Quando os valores de `q` aumentam a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+           
+#. Quando os valores de `q` se aproximam de zero a curva se
+
+   (  ) afasta de zero.     
+   
+   (  ) iguala a zero.     
+   
+   (  ) aproxima de zero.     
+   
+   (  ) transforma em uma reta.
+   
+#. Quando os valores de `q` diminuem a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+
+#. Você deve ter notado que a curva intersecta o eixo das ordenadas em um ponto, que é justamente o ponto em que a curva deixa de ser decrescente e passa a ser crescente. Quais são relações dos valores de `q` com esse ponto?
+
+   (  ) O ponto de intersecção é `(-q,0)`.
+   
+   (  ) O ponto de intersecção é `(q,0)`.
+   
+   (  ) O ponto de intersecção é `(0,-q)`.
+   
+   (  ) O ponto de intersecção é `(0,q)`.
+   
+   (  ) Na figura, `q` representa o maior valor que essa função atinge.
+   
+   (  ) Na figura, `q` representa o menor valor que essa função atinge.
+   
+   
+#. O movimento que a curva faz quando `q` varia, é uma
+
+   (  ) translação vertical.
+   
+   (  ) translação horizontal.
+   
+   (  ) rotação em `360°`.
+   
+   (  ) rotação em `180°`.
+
+
+
+**PARTE 4** 
+
+Em cada uma das partes anteriores, estudamos as variações gráficas que cada um dos valores de `a`, `p`e `q` fazem na curva. Para elucidarmos essas ideias, convidamos a variar esses valores juntos na função f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`.
+
+
+#. Observe as figuras a seguir, e note que em todas os valores de `a` são sempre iguais a `1`, já os valores de `p` e `q`variam.
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/41.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=4` e `q=-3`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/411.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=3`e `q=0`)
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/412.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-1`e `q=2`)
+   
+   
+   a.1) A variação de `p` faz com que o gráfico sofra que tipo de translação (vertical ou horizontal?
+   a.2) A variação de `q` faz com que o gráfico sofra que tipo de translação (vertical ou horizontal?
+
+
+#. As figuras a seguir mostram as variações obtidas no gráfico para os valores de a = 1, (p =5 e q =5); (p=-5 e q=5); em seguida (p=5 e q=-5) e por último (p=-5 e q=-5). Já vimos anteriormente que existe um ponto no gráfico em que função deixa de ser decrescente e passa a ser crescente, este ponto chamamos de vértice da curva. 
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/42.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=5` e `q=5`)
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/43.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-5` e `q=5`)
+   
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/44.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=5` e `q=-5`)
+   
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/45.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-5` e `q=-5`)
+
+
+   Exiba as coordenadas do vértice em função de `p` e `q`.
+
+
+#. Observe que ao mantermos os valores de `a=1`, `p=0` e `q=0`, temos a curva `y=x^2`. Considerando uma função `f` de Domínio `D` e imagem `I` dada por f(x)=y, utilize a figura a seguir, e em seguida escolha a alternativa na qual os conjuntos `D` e `I` estão definidos na atividade.
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/4c.jpg
+      :width: 500pt
+      :align: center
+
+      (`a=1`; `p=q=0`)
+      
+      
+   (  ) `D=[-5,5]` e `I=[0,5]`
+   
+   (  ) `D=[0,+\infty[` e `I=[0,+\infty[`
+   
+   (  ) `D=[0,5]` e `I=[-5,5]`
+   
+   (  ) `D=\mathbb{R}` e `I=[0,+\infty[`  
+   
+   (  ) `D=\mathbb{R}` e `I=\mathbb{R}`
+
+
+#. Observe que ao mantermos os valores de `a=-2`, `p=3` e `q=-4`, temos que `y=-2(x-3)^2 -4`. Considerando uma função `f` de Domínio `D` e imagem `I` dada por `f(x)=y`, utilize a figura a seguir, e em seguida escolha a alternativa na qual os conjuntos `D` e `I` estão definidos na atividade.
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/4d_1.jpg
+      :width: 500pt
+      :align: center
+
+      (`a=-2`, `p=3` e `q=-4`)
+      
+   
+   (  ) `D=[-4,3]` e `I=[-4,3]`
+   
+   (  ) `D=\mathbb{R}` e `I=[-4,+\infty[`
+   
+   (  ) `D=[-5,5]` e `I=[-5,5]`
+   
+   (  ) `D=[-4,3]` e `I=[-4,+\infty[`  
+   
+   (  ) `D=\mathbb{R}` e `I=\mathbb{R}`
+
+
+#. Em relação à função real `f` definida por `f(x)=a(x-p)^2+q` , caso **`a`** assuma apenas valores **positivos**, assinale quais das afirmações seguintes são verdadeiras: 
+
+   (  ) O valor de `p` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `p` representa o menor valor que `f` pode assumir.
+
+   (  ) O valor de `q` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `q` representa o menor valor que `f` pode assumir.
+   
+   (  ) A função `f`, não tem valor máximo, mas tem valor mínimo.
+   
+   (  ) A função `f`, não tem valor mínimo, mas tem valor máximo.
+   
+   (  ) A função f, tem valores de máximo e mínimo.
+   
+   
+#. Em relação à função real `f` definida por `f(x)=a(x-p)^2+q` , caso **`a`** assuma apenas valores **negativos**, assinale quais das afirmações seguintes são verdadeiras: 
+
+   (  ) O valor de `p` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `p` representa o menor valor que `f` pode assumir.
+
+   (  ) O valor de `q` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `q` representa o menor valor que `f` pode assumir.
+   
+   (  ) A função `f`, não tem valor máximo, mas tem valor mínimo.
+   
+   (  ) A função `f`, não tem valor mínimo, mas tem valor máximo.
+   
+   (  ) A função f, tem valores de máximo e mínimo.   
+   
+   
+   
+#. Ainda na função `f` ao assumirmos os valores de `a=3`;  `p=1` e `q=-2`, Assinale quais afirmações a seguir são verdadeiras.
+
+   (  ) O vértice da curva é `V=(3,1)`.
+
+   (  ) O vértice da curva é `V=(3,-2)`.
+   
+   (  ) O vértice da curva é `V=(1,-2)`.
+   
+   (  ) O vértice da curva é `V=(-2,1)`.
+   
+   (  ) `-2`, é o maior valor que a função f pode assumir.
+   
+   (  ) `3`, é o maior valor que a função f pode assumir.
+   
+   (  ) `1`, é o maior valor que a função f pode assumir.
+   
+   (  ) `-2`, é o menor valor que a função f pode assumir.
+   
+   (  ) `3`, é o menor valor que a função f pode assumir.
+   
+   (  ) `1`, é o menor valor que a função f pode assumir.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `a>0`.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `p>0`.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `q<0`.
+   
+   
+
+.. admonition:: Resposta 
+
+   **Parte 1**
+   
+   #. Mais fechada.
+   #. Mais aberta.
+   #. `a` é o coeficiente que multiplica o `x^2`, sendo `0<a<1` o valor resultante dessa multiplicação (imagem de `f`) é um número menor que `x^2`, o que acarreta um crescimento (para `x>0`) mais lento de `f` o que leva a concavidade ser mais aberta. Já no caso `a>1` o resultado desse produto (imagem de `f`) é um valor maior que `x^2`, o que acarreta um crescimento (para `x>0`) mais acelerado de `f`, o que leva a concavidade ser mais fechada.
+   #. Mais fechada.
+   #. Mais aberta.
+   
+   #. 
+      f1. A curva na verdade se transforma numa reta, no caso a função real constante `f` definida por `f(x)=0`.  
+      
+      f2. Correto.
+      
+      f3. Não há mais curva, e sim a reta `y=0`.
+      
+      f4. Correto.
+      
+      
+   #. 
+      g1. Quando `a>0`a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor **mínimo** passa a ser crescente.
+
+      g2. Quando `a>0`a, da esquerda para direita, a curva é **decrescente** e ao assumir o seu valor mínimo passa a ser **crescente**.
+
+      g3. Quando `a<0`a, da esquerda para direita, a curva é **crescente** e ao assumir o seu valor máximo passa a ser **decrescente**.
+
+      g4. Quando `a<0`a, da esquerda para direita, a curva é crescente e ao assumir o seu valor **máximo** passa a ser decrescente.
+   
+   **Parte 2**
+   
+   #. Direita.
+   #. Se aproxima de zero.
+   #. Esquerda.
+   #. (F) ; (F); (F); (V); (F) ; (V)
+   #. Translação Horizontal.
+   
+   **Parte 3**
+   
+   #. Cima.
+   #. Se aproxima de zero.
+   #. Baixo.
+   #. (F) ; (F); (F); (V); (F) ; (V)
+   #. Translação Vertical.
+   
+   
+   **Parte 4**
+   
+   #. 
+      a1. Horizontal.
+      a2. Vertical.
+      
+   #. `V=(p,q)`
+   
+   #. `D=\mathbb{R}` e `I=[0,+\infty[`
+   
+   #. `D=\mathbb{R}` e `I=[-4,+\infty[`
+      
+   #. (F);(F);(F);(V);(V);(F);(F);(F);(F);(V);(F);(F);(V);(F)
+   
+   #. (F);(F);(V);(F);(F);(F);(V);(F);(F);(V);(F);(F)
+   
+   
 
 
 .. _ativ-titulo-da-atividade:
@@ -846,10 +1500,21 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
    #. R$ `6400,00`.
    
+
+   
    
 .. _Atividade Altura do Arco
 Atividade 6: Altura do Arco da Praça da Apoteose
 ----------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos Gerais**
+   
+   #.
+   
+
 A passarela Professor Darcy Ribeiro `(\star 1922, \dagger 1997)`, mais conhecida como Sambódromo, fica na cidade do Rio de Janeiro e foi construida em 1984. Com projeto arquitetônico de Oscar Niemeyer `(\star 1907, \dagger 2012)`, ela foi concebida para ser o local fixo de uma das maiores festas populares do Brasil, o Carnaval. Ao final da passarela, encontra-se a praça da apoteose, com o museu do samba e um enorme arco cujo formato lembra o de uma parábola. 
 
 .. figure:: https://images.adsttc.com/adbr001cdn.archdaily.net/wp-content/uploads/2012/02/1329492836_riodejaneiro_sambodromo15.jpg
@@ -927,9 +1592,93 @@ A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativ
    
    **Nota**: Dentre as informações pesquisadas sobre a altura real desse arco, os autores encontraram `25` m, `26` m e até `30` m.
    
+.. _Atividade do Túnel
+Atividade 7: Mãos a obra!
+-------
    
-   
+A prefeitura de uma cidade, com o fim de melhorar as atividades comerciais locais, fez um levantamento com produtores, fornecedores e compradores. Ficou claro que a redução no percurso até a cidade beneficiaria a todos. Por esse motivo, a prefeitura encomendou a contrução de uma nova estrada, que exigiria dois túneis em certo trecho, um para cada sentido da estrada. O formato das entradas ou das saídas dos túneis, a pedido da prefeitura, deverão ser arcos parabólicos. 
 
+.. figure:: _resources/Ativ7_Esboco_Tuneis.jpg
+   :width: 200px
+   :align: center
+
+Limitações geológicas impedem que as alturas dos túneis sejam maiores do que `5` m e cada túnel deve permitir a passagem de caminhões comerciais, que tem `4,3` m de altura e `2,6` m de largura. Além disso, para que os caminhões não arrastem pelas paredes dos túneis, uma largura extra de `0,4` m deverá ser considerada conforme o rascunho a seguir.
+
+.. figure:: _resources/Ativ7_Rascunho.png
+   :width: 300px
+   :align: center
+
+Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresentadas por questões econômicas. Sendo assim, a empresa deve calcular a largura das bases das entradas ou saídas dos túneis. [Para simplificar o texto, as medidas das entradas ou saídas dos túneis serão tratatas apenas por *medidas dos túneis*.]
+
+#. Caso você conhecesse a função que descreve essa parábola, você seria capaz de calcular a largura da base dos túneis?
+
+#. Dentre as opções a seguir marque a que faz o rascunho de um dos túneis no plano cartesiano.
+
+   .. figure:: _resources/Ativ6_C_unico.png
+      :width: 400px
+      :align: center
+
+#. Para essa escolha, qual o significado dos valores de `x` e de `y`?
+
+#. Que pontos do plano cartesiano são conhecidos, se juntarmos a escolha gráfica com os dados fornecidos as medidas dos túneis?
+
+#. Com base em sua escolha do rascunho gráfico mais adequado e considerando os pontos conhecidos da parábola, qual forma da função quadrática resulta em maior quantidade de informações conhecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Quantos dados estão faltando para que seja conhecida a função que descreve esta parábola?
+
+#. Com alguma coordenada ainda não utilizada desta curva, determine a informação que falta para conhecer a função que descreve esta parábola.
+
+#. Determine, segundo esse plano cartesiano, as coordenadas das extremidades das bases desses túneis [Se julgar útil, use apenas a aproximação `\sqrt{14}=3,75`].
+
+#. Com tudo que foi feito, qual a largudas das bases desses túneis?
+
+.. admonition:: Resposta
+
+   #. Sim.
+   
+   #. Figura 2.
+   
+   #. Em `x` temos medidas que se referem a base dos túneis e em `y` temos para cada ponto das bases, as alturas relativas na curva.
+
+   #. `(\ -\frac{2,6+0,4}{2};4,3)\ = (-1,5;4,3)`, `(0,5)` e `(\ \frac{2,6+0,4}{2};4,3)\ = (1,5;4,3)`.
+
+   #. `f(x)=a(x-p)^2+q`.
+
+   #. Somente um, o valor de `a`.
+   
+   #. 
+      .. math::
+            f(1,5)= a \cdot (1,5-0)^2+5=4,3 & \Rightarrow \\
+                  & \Rightarrow 2,25 \cdot a = 4,3-5 \\
+                  & \Rightarrow a = \frac{-0,7}{2,25} \\
+                  & \Rightarrow a = - \frac{14}{45}. \\
+
+   #. 
+       .. math::
+           - \frac{14}{45} x^2 + 5 = 0 & \Rightarrow \frac{14}{45} x^2 = 5 \\
+           & \Rightarrow x^2 = \frac{45 \cdot 5}{14} \Rightarrow x= \pm \sqrt{\frac{225}{14}} \\ 
+           & \Rightarrow x = \pm \frac{\sqrt{225}}{\sqrt{14}} \Rightarrow x = \pm \frac{15}{3,75} \\ 
+           & \Rightarrow x = \pm 4. \\ 
+       
+       Portanto, as coordenadas das extremidades das bases são `(-4,0)` e `(4,0)`. 
+   
+   #. As larguras das bases dos túneis deverão ser iguais a `2 \cdot 4 = 8` m.
+
+
+.. _Atividade Angry Birds
+Atividade 8: A jogada vencedora
+------
+
+
+   
+   
+   
 
    
 
