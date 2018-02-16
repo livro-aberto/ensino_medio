@@ -1,3 +1,60 @@
+
+.. admonition:: Resposta 
+
+   1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
+   
+      .. table:: Guia para o cálculo de frequências do histograma
+
+        +-----------------+------------+
+        | Intervalo       | Frequência |
+        +-----------------+------------+
+        | [2,448 ; 2,512[ |     8      |
+        +-----------------+------------+
+        | [2,512 ; 2,576[ |     7      |
+        +-----------------+------------+
+        | [2,576 ; 2,639[ |     3      |
+        +-----------------+------------+
+        | [2,639 ; 2,703[ |     2      |
+        +-----------------+------------+
+        | [2,703 ; 2,767[ |     5      |
+        +-----------------+------------+
+        | [2,767 ; 2,831[ |     6      |
+        +-----------------+------------+
+        | [2,831 ; 2,895[ |     9      |
+        +-----------------+------------+
+        | [2,895 ; 2,958[ |     13     |
+        +-----------------+------------+
+        | [2,958 ; 3,022[ |     27     |
+        +-----------------+------------+
+        | [3,022 ; 3,085[ |     20     |
+        +-----------------+------------+
+
+      .. _hist-maratona-mulheres-res:
+
+      .. figure:: _resources/Histograma_mulheres_resposta_1.png
+         :width: 200pt
+         :align: center
+
+         Histograma dos tempos da categoria de mulheres na Maratona de NY
+
+  
+   2. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
+   
+   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a corrida em até 2:45:52 (2,764 horas).
+   
+      Já para ficar nas primeiras 50, precisaria terminar o percurso em 2:56:57 (2,949 horas) ou menos.
+   
+      Finalmente, para ficar entre as primeiras 75, seu tempo teria que ser menor ou igual a 2:59:51 (2,998 horas).
+
+      .. figure:: _resources/Histograma_mulheres_resposta_lineas.png
+         :width: 200pt
+         :align: center
+	         
+         Histograma dos tempos da categoria de mulheres na Maratona de NY mostrando os quartis, a mediana e a média
+
+
+
+
 .. _sec-organizando1:
 
 =========================================
@@ -80,7 +137,7 @@ Você já calculou a média dos dados das duas primeiras atividades, a saber, :r
 
 Quando os dados disponíveis estão agrupados em `c` intervalos de classe,  não é possível calcular a soma total exata dos dados. Neste caso, usamos uma aproximação para o cálculo da média como mostra o exemplo a seguir.
    
-Suponha, por exemplo, que um coordenador tenha tido acesso apenas ao histograma das notas de Artes, sem conhecer as notas individualmente.  Como este coordenador poderia calcular a média da turma, considerando as notas antes da bonificação?
+Suponha que um coordenador tenha tido acesso apenas ao histograma das notas de Artes, sem conhecer as notas individualmente.  Como este coordenador poderia calcular a média da turma, considerando as notas antes da bonificação?
 
 Temos a seguinte distribuição de frequências das notas antes da bonificação:
 
@@ -89,13 +146,13 @@ Temos a seguinte distribuição de frequências das notas antes da bonificação
  +-----------+----------------------+---------------------------+
  | intervalo | frequência absoluta  | ponto médio do intervalo  |
  +-----------+----------------------+---------------------------+
- | ]0,2]     | 1                    | 1,0                       |
+ | [0,2[     | 1                    | 1,0                       |
  +-----------+----------------------+---------------------------+
- | ]2,4]     | 5                    | 3,0                       |
+ | [2,4[     | 5                    | 3,0                       |
  +-----------+----------------------+---------------------------+
- | ]4,6]     | 6                    | 5,0                       |
+ | [4,6[     | 6                    | 5,0                       |
  +-----------+----------------------+---------------------------+
- | ]6,8]     | 23                   | 7,0                       |
+ | [6,8]     | 23                   | 7,0                       |
  +-----------+----------------------+---------------------------+
    
 Apenas sabemos, por exemplo, que entre 2 e 4 existem cinco notas, mas  não conhecemos as notas individualmente. Portanto, a soma exata destas cinco notas não é conhecida. A estratégia é tomar o ponto médio desta classe, `3=\frac{2+4}{2}` como a nota representativa das cinco observações, pois espera-se que os erros cometidos para mais e para menos sejam compensados na classe. Desse modo estimamos a soma das notas neste intervalo como `3+3+3+3+3=5\cdot 3=15`. 
@@ -248,13 +305,13 @@ Voltando à :ref:`ativ-Notas-de-Artes`, suponha novamente que o coordenador tenh
     +-----------+---------------------+--------------------------+--------------------------+
     | intervalo | frequência absoluta | ponto médio do intervalo | freq. absoluta acumulada |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]0,2]     | 1                   | 1,0                      |   1                      |
+    | [0,2[     | 1                   | 1,0                      |   1                      |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]2,4]     | 5                   | 3,0                      |  1+5=6                   |
+    | [2,4[     | 5                   | 3,0                      |  1+5=6                   |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]4,6]     | 6                   | 5,0                      | 6+6=12                   |
+    | [4,6[     | 6                   | 5,0                      | 6+6=12                   |
     +-----------+---------------------+--------------------------+--------------------------+
-    | ]6,8]     | 23                  | 7,0                      |12+23=35                  |
+    | [6,8[     | 23                  | 7,0                      |12+23=35                  |
     +-----------+---------------------+--------------------------+--------------------------+
     
 Observe que a nota da posição 18 está no último intervalo, pois até o intervalo anterior, ]4,6], acumularam-se apenas 12 das 35 notas. 
@@ -377,7 +434,7 @@ Tome `\textsf{Q}3` como o valor correspondente à posição `\frac{3n+1}{4}` dep
 
 Se os resultados de  `\frac{n+1}{4}` e `\frac{3n+1}{4}` não forem números inteiros, arredonde-os para o inteiro mais próximo. Se a parte decimal do resultado destas operações for 0,5; calcule a média dos dois valores nas posições correspondentes. Por exemplo, suponha `n=21` tal que `(21+1)/4=5,5`. Assim, neste caso, para obter o primeiro quartil, calcule a média dos valores nas posições 5 e 6.
 
-Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, asaber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que os intervalos [0,8 ; 5,4[, [5,4 ; 6,5[ ; [6,5 ; 7,4[ e [7,4 ; 8,0] compreendem, cada um, aproximadamente 25% das notas nesta turma. Observe que os comprimentos destes intervalos são diferentes, a saber, 4,6; 1,1; 0,9 e 0,6.
+Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, a saber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que os intervalos [0,8 ; 5,4[, [5,4 ; 6,5[ ; [6,5 ; 7,4[ e [7,4 ; 8,0] compreendem, cada um, aproximadamente 25% das notas nesta turma. Observe que os comprimentos destes intervalos são diferentes, a saber, 4,6; 1,1; 0,9 e 0,6.
 
 
 Vejamos agora como ficam estes intervalos para os dados da :ref:`ativ-maratona-de-NY` referentes aos 100 melhores tempos da maratona para a categoria mulheres.
@@ -393,7 +450,7 @@ Os quartis servem para
 #. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
 #. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
  
-Trabalharemos essas aplicações na :ref:`sec-Parasabermais` deste capítulo.
+Trabalharemos essas aplicações na seção :ref:`sec-Parasabermais` deste capítulo.
 
 
 
@@ -455,7 +512,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
    :width: 200pt
    :align: center
 
-   Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova York do ano 2017
+   Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova Iorque do ano 2017
 
 
 #. Calcule a média dos 100 melhores tempos na categoria homens, babendo que a soma dos tempos é dada por 251,1617 horas. 
@@ -566,9 +623,9 @@ Observe os histogramas a seguir referentes as quatro categorias da Maratona de N
    
 #. Você consegue estimar a média das primeiras duas categorias observando o gráfico? Você pensa que serão muito distintas das outras categorias?
 
-#. Observa a tabela a seguir e marca as médias no histograma, comenta sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+#. Observe a tabela a seguir e marque as médias no histograma. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
 
-#. Observa que as médias não são muito diferentes, porém, as distruibuições são muito diferentes. Se você conhecese apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
+#. Observe que as médias não são muito diferentes, porém, as distribuições são muito diferentes. Se você conhecesse apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
 
 .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
 
@@ -579,8 +636,6 @@ Observe os histogramas a seguir referentes as quatro categorias da Maratona de N
   +-----------+------------------+-----------------+--------------------+------------------+
 
 
-.. admonition:: Resposta 
 
-   As perguntas tem o intuito de motivar uma discussão dos elementos necessários que tem que ser considerados para fazer histogramas que sejam comparáveis, introduzir de forma intuitiva o conceito de dispersão. As perguntas não tem uma resposta fechada, são mais uma guia para a discussão que o professor irá conduzir e serve como introdução a seção de Medidas de disperssão.
    
    
