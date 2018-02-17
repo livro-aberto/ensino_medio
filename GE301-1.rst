@@ -600,7 +600,7 @@ Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\
 .. figure:: _resources/projecao-perspectiva-05.jpg
    :width: 450px
          
-   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` e ao plano de projeção `\pi`.
+   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` no plano de projeção `\pi`.
 
 Vamos agora considerar uma outra situação onde projeções em perspectiva aparecem. Suponha que você queira desenhar um quadro de uma cena. Mas você quer um quadro tão perfeito que, ao observá-lo frente a cena, ele se confunda como a própria cena. O pintor surrealista belga René Magritte (1898-1967) imaginou essa situação em alguns de seus quadros (:numref:`fig-proj-janela-de-alberti-01`). Como produzir um tal quadro?
 
@@ -627,7 +627,7 @@ Note que este processo de produzir um quadro que funcione como uma janela nada m
 .. figure:: _resources/projecao-perspectiva-03_1.jpg
    :width: 450px
          
-   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` e ao plano de projeção `\pi`.
+   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` no plano de projeção `\pi`.
 
 Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entre" o centro `O` e o plano `\pi`, no caso da métafora da Janela de Alberti, o plano `\pi` fica entre `O` e o objeto. Não obstante, as duas situações são modeladas por projeções em perspectiva.
 
@@ -639,7 +639,7 @@ O objeto também pode ser posicionado de modo que o centro `O` fique entre este 
 .. figure:: _resources/projecao-perspectiva-06.jpg
    :width: 450px
          
-   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` e ao plano de projeção `\pi`.
+   `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` no plano de projeção `\pi`.
 
 
 Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de projeção está entre o observador e o objeto), sombras (quando o objeto está entre o observador e o plano de projeção) e câmeras (quando o observador está entre o o objeto e o plano de projeção).
@@ -666,14 +666,14 @@ Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar o anteparo usado nos expe
 
 Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. 
 
-Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e uma direção determinada por uma reta `d` que não é paralela ao plano `\pi`. Se `P` é um ponto qualquer, então o ponto `P'` de intersecção entre a reta que passa por `P` e é paralela à reta `d` e o plano `\pi` é denominado :index:`projeção paralela` do ponto `P` com relação a direção dada pela reta `d` e ao plano de projeção `\pi`.  
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e uma direção determinada por uma reta `d` que não é paralela ao plano `\pi`. Se `P` é um ponto qualquer, então o ponto `P'` de intersecção entre a reta que passa por `P` e é paralela à reta `d` e o plano `\pi` é denominado :index:`projeção paralela` do ponto `P` com relação a direção dada pela reta `d` no plano de projeção `\pi`.  
   
 .. _fig-proj-paralela-03:
    
 .. figure:: _resources/projecao-paralela-03_1.jpg
    :width: 450px
          
-   `P'` é a projeção paralela do ponto `P` com relação a direção dada pela reta `d` e ao plano de projeção `\pi`.
+   `P'` é a projeção paralela do ponto `P` com relação a direção dada pela reta `d` no plano de projeção `\pi`.
 
 Se a reta `d` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`. Uma projeção paralela que não é ortogonal é denominada :index:`projeção oblíquoa`.
 
@@ -682,12 +682,12 @@ Se a reta `d` for perpendicular ao plano `\pi`, então a projeção paralela é 
 .. figure:: _resources/projecao-paralela-02_2.jpg
    :width: 450px
          
-   `P'` é a projeção ortogonal do ponto `P` com relação a direção dada pela reta `d` perpendicular ao plano de projeção `\pi`.
+   `P'` é a projeção ortogonal do ponto `P` com relação a direção dada pela reta `d` perpendicular ao plano de projeção `\pi` neste plano.
 
 
 .. admonition:: Para refletir
 
-   Note que uma projeção paralela pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3}`, faz associar o ponto `P'` de interseção entre a reta que passa por `P` e é paralela a reta `d` e o plano `\pi`, supondo que `d`não é paralela ao plano `\pi`. Assim, no contexto da :numref:`fig-proj-paralela-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
+   Note que uma projeção paralela pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3}`, faz associar o ponto `P'` de interseção entre a reta que passa por `P` e é paralela a reta `d` e o plano `\pi`, supondo que `d` não é paralela ao plano `\pi`. Assim, no contexto da :numref:`fig-proj-paralela-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
 
 
 .. admonition:: Você sabia?
