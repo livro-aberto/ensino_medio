@@ -1,6 +1,12 @@
-=================
+==========
 Função Quadrática
-=================
+==========
+
+
+.. _sec-lancamento-vertical:
+
+Lançamento Vertical
+====
 
 .. admonition:: Objetivos Específicos
 
@@ -18,13 +24,16 @@ Função Quadrática
    Prezado colega, neste capítulo tivemos o cuidado de apresentar os conceitos, propriedades, definições e aplicações relacionadas ao estudo das funções quadráticas em doses homeopáticas e por meio de atividades que guiarão os alunos para os objetivos deste capítulo, mencionados anteriormente. Optamos, por influência da habilidade do BNCC, introduzir os conceitos mais básicos por uma atividade que estuda o movimento de queda livre de um objeto. De posse de conceitos básicos, partimos para a segunda atividade que tem como objetivo geral familiarizar os alunos com o gráfico de uma função real `f` definida por `f(x)=x^2`, chamando a atenção para suas caracteríticas e propriedades. Já as atividades seguintes exploram problemas de otimização, apresentando a forma canônica da função quadrática e finalmente associando ela à curva denominada *parábola*. Além disso, convidamos os alunos à explorar com detalhes o fato de algumas curvas terem o formato parecido com uma parábola mas não serem.
    
      
-Introdução 
-=======
+.. admonition:: Introdução 
+
 
 Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, onde o objetivo é determinar em que condições uma determinada grandeza assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Assim como os outros capítulos deste material, vamos apresentar conceitos, definições e propriedades por meio de atividades e aprofundando esses conhecimentos na seção "Organizando Ideias", espero que você disfrute, se aproprie e internalize esses conceitos que serão úteis em diversas áreas do conhecimento, não só nos estudos de Mecânica da Física, mas em áreas como engenharias, economia, etc.
 
+.. _sub-Ativ-Lancamento-vertical:
+
 Lançando Objetos
------------------------
+-----
+
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
@@ -40,9 +49,10 @@ Lançando Objetos
 
 
 
-.. admonition:: Organizando ideias 
+.. _sub-Org-ideias-Galileu:
 
-   **Um pouco de História:** *Aristóteles e Galileu Galilei no estudo da Queda Livre*
+**Um pouco de História:** *Aristóteles e Galileu Galilei no estudo da Queda Livre*
+----
 
    Aristóteles; (Estagira, 384 a.C. — Atenas, 322 a.C.) discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
    Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, que afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
@@ -77,6 +87,11 @@ Lançando Objetos
    
    Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. A partir dessas conclusões chegamos as fórmulas: `g=\frac{2d}{t^2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
 
+
+.. _sub-prop-de-x-a-2:
+
+Explorando: Padrões em `f(x)=x^2`
+=====
 
 .. _atividade-2-quadratica:
 
@@ -207,8 +222,10 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
       | Gráfico `8` | Todas as imagens se concentram de zero a oito, mas a imagem de `f` tem, por exemplo, os valores `9` e `16`.                                                                                                           |
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _sub-org-ideias-em-x-a-2
 
-**Organizando ideias: Características da função real**  `f(x)=x^{2}`.
+Organizando as ideias: Características da função real  `f(x)=x^{2}`
+------
 
 Na atividade isolamos o termo `x^{2}` que apareceu no início deste capítulo e motivamos algumas experimentações que devem ter provocado algumas conjecturas e também conduziu a algumas certezas. Será que sua atenção recaiu nesses fatos que listamos a seguir?
 
@@ -290,11 +307,15 @@ Escolhendo `x` do domínio de `f` e um `r \in \mathbb{R}` constante, podemos ana
 E esse padrão continua, nos permitindo perceber que as diferenças entre imagens consecutivas de elementos do domínio que estão em progressão aritmética, formam uma outra progressão aritmética com primeiro termo igual a `2xr+r^2` e razão `2r^2`.
 
 
-.. _ativ-titulo-da-atividade:
+.. _sec-vertex:
+
+Explorando: O ponto de máximo ou de mínimo em funções quadráticas
+=====
+   
+.. _sub-Ativ-Perimetro_Fixo:
 
 Atividade 3 : Perímetro Fixo
-------------------------------
-
+-----
 
 .. admonition:: Para o professor
 
@@ -679,10 +700,15 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
 
    #. `T_{n}= \frac{n \cdot (n+1)}{2}= \frac{n^2}{2} + \frac{n}{2}`.
 
-.. _ativ-titulo-da-atividade:
+.. _sec-parametros-grafico-quadratica:
+
+Explorando: Os parâmetros da forma canônica e o gráfico da função quadrática
+====
+
+.. _sub-graf-curva:
 
 Atividade: O Gráfico da Curva
-------------------------------
+------
 
 
 .. admonition:: Para o professor
@@ -1331,13 +1357,16 @@ Em cada uma das partes anteriores, estudamos as variações gráficas que cada u
    
    #. (F);(F);(V);(F);(F);(F);(V);(F);(F);(V);(F);(F)
    
-   
+.. _explorando-max-min-can:
+
+Explorando: Valores de máximo ou de mínimo da forma canônica
+========
 
 
-.. _ativ-titulo-da-atividade:
+.. _ativ-aumento-passagem: 
 
-Atividade 5: Aumento na Passagem
-------------------------------
+Atividade: Aumento na Passagem
+---------------
 
 
 .. admonition:: Para o professor
@@ -1350,7 +1379,6 @@ Atividade 5: Aumento na Passagem
    #. Fazer uma discussão à respeito do domínio e da imagem da função levando em consideração à modelagem da situação.
    #. Reforçar a utilização da passagem da forma polinomial para a forma canônica, apontando assim de maneira direta o faturamento máximo e o aumento que irá gerar o faturamento máximo.
 
-**Explorando 5**
 
 Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasileiras diariamente, e transporta mensalmente, uma média de `1200` passageiros. O custo individual da passagem cobrado pela empresa, é atualmente de `R$ 40,00`, porém seus diretores estudam um aumento desse valor. Para isso contratam uma outra empresa para realizar uma pesquisa de mercado, a pesquisa realizada por essa empresa, estima que a cada `R$ 1,00` de aumento no preço da passagem, `10` passageiros deixarão de viajar pela transportadora. De posse desta informação, os diretores desejam saber qual é o preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora. Para isso vamos responder os itens a seguir:
 
@@ -1499,9 +1527,12 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
    #. R$ `40,00`.
 
    #. R$ `6400,00`.
-   
 
-   
+
+.. _sec-obtendo-lei-do-grafico:
+
+Explorando: Determinando a função quadrádica pelo gráfico
+=====
    
 .. _Atividade Altura do Arco
 Atividade 6: Altura do Arco da Praça da Apoteose
@@ -1675,16 +1706,183 @@ Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresenta
 Atividade 8: A jogada vencedora
 ------
 
+.. admonition:: Para o professor
 
+   Os jogos eletrônicos constituem ótimos laboratórios de aprendizagem por simular situações que podem ir assumindo toda a complexidade da realidade aos poucos, uma "variável" por vez. De acordo com [WANG]_, jogos de computador podem criar ambientes e mundos que de outra forma seriam inacessíveis aos estudantes.
    
+   Esta atividade tem dois objetivos principais:
    
+   #. Dar um exemplo de como encontrar a lei de formação da função quadrática em casos em que a forma `f(x)=ax^2+bx+c` é mais adequada;
+   
+   #. Apresentar uma contextualização mais natural de lançamento oblíquo, no que diz respeito à realidade do aluno e a necessidade de obter uma lei de formação para esta trajetória.
+   
+   Tanto aqui como nas outras atividades, encorage a tentativa de obter os resultados por caminhos diferentes e analise com eles a dificuldade que isso traz.
+   
+   Existe disponível na internet diversos projetos que envolvem o uso do jogo Angry Birds para o estudo das parábolas e lançamentos obblíquos. Por exemplo, `Transforming Parabolas – The Angry Birds Project <https://algebra2coach.com/transforming-parabolas-angry-birds-project/>`_ e `Transforming Parabolas – The Angry Birds Project <https://www.tes.com/teaching-resource/angry-bird-parabolas-graphing-quadratic-equations-6165424>`_.
+   
+Vamos trabalhar aqui com um famoso jogo que simula lançamento de objetos. No caso, são "pássaros" caricaturados em formato de personagens de cinema que tem que impedir o plano dos "porcos verdes" de roubarem seus ovos e trazer destruição ao universo. A "variável" resistência do ar, por exemplo, não está incluída em boa parte das fases deste jogo.
+
+.. figure:: _resources/videotogif_2018.02.16_16.10.40.*
+
+Digamos que o programador de uma das fases decida, dentre todos os possíveis lançamentos, um que forneça a maior quantidade de pontos possível para a fase. Entendendo a tela como um plano cartesiano, o programador deve escolher a parábola que representará a "Jogada Vencedora". A figura a seguir ilustra a situação.
+
+.. figure:: _resources/AB_Plano_Cartesiano.png
+   :width: 300px
+   :align: center
+
+Com a finalidade de inserir na programação a função que descreve a "Jogada Vencedora" o programador usou três coordenadas como referência: o pássaro e os dois "sóis", cujas coordenadas estão destacadas a seguir.
+
+.. figure:: _resources/AB_Coordenadas.png
+   :width: 300px
+   :align: center
+
+#. Quais são as coordenadas indicadas no gráfico pelo programador?
+
+#. Quais os significados dos valores de `x` e de `y` neste contexto?
+
+#. Das formas da função quadrática apresentadas a seguir, qual delas parece mais adequada diante das informações fornecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Substituido a origem na forma escolhida do item anterior, qual a conclusão?
+
+#. Faça o mesmo para as outras duas coordenadas, mas considere também o que você concluiu no item anterior, e obtenha duas equações diferentes com variáveis `a` e `b`.
+
+#. Nas equações apresentadas no item anterior, uma tem um `49` e outra tem um `25`. Multiplique a do `49` por `25` e a do `25` por `49`. Depois subtrai, membro a membro, os resultados. Qual a conclusão?
+
+#. Mais uma vez vamos pegar as equações do item 'e'. Repare que uma tem um coeficiente `7` e a outra tem um coeficiente `5`. Multiplique a do `7` por `5` e a do `5` por `7`. Depois subtrai, membro a membro, os resultados. Qual a conclusão?
+
+#. Qual a função que o programador vai inserir como a "Jogada Vencedora"?
+
+.. admonition:: Resposta
+
+   #. `(0,0)`, `(5,3)` e `(7,1)`.
+   
+   #. `x` será o deslocamento horizontal do pássaro após o lançamento e `y` será a altura do pássaro em relação ao eixo `x` durante o arremesso.
+   
+   #. `f(x)=ax^2+bx+c`.
+   
+   #. `f(0)=a \cdot 0^2+b \cdot 0+c=0 \Rightarrow c=0`.
+   
+   #. 
+      .. math::
+         
+         f(5)& =a \cdot 5^2+b \cdot 5+0=3 \Rightarrow 25a+5b=3 \\
+         
+         f(7)& =a \cdot 7^2+b \cdot 7+0=1 \Rightarrow 49a+7b=1 \\
+   
+   #. 
+      .. math::
+         
+         49 \cdot 25a+ 49 \cdot 5b= 49 \cdot 3 & \Rightarrow 1225a+245b=147 \\
+         
+         25 \cdot 49a+ 25 \cdot 7b = 25 \cdot 1 & \Rightarrow 1225a+175b=25 \\
+         
+         (245-175) \cdot b = 147-25 & \Rightarrow b= \frac{122}{70} \Rightarrow b= \frac{61}{35} \\
+         
+   #. 
+      .. math::
+         
+         7 \cdot 25a+ 7 \cdot 5b= 7 \cdot 3 & \Rightarrow 175a+35b=21 \\
+         
+         5 \cdot 49a+ 5 \cdot 7b = 5 \cdot 1 & \Rightarrow 245a+35b=5 \\
+         
+         (245-175) \cdot a = 5-21 & \Rightarrow a= - \frac{16}{70} \Rightarrow a=- \frac{8}{35} \\
+               
+   #. `f(x)= - \frac{8}{35}x^2+ \frac{61}{35}x`.
+   
+**Organizando as ideias**
+----
+
+Nesta seção vimos como obter a lei de formação de algumas funções quadráticas através de alguns dados iniciais. A forma escolhida para a lei de formação depende de cada informação dada, mas isso pode ser generalizado conforme passamos a apresentar. 
+
+**Uso da forma** `f(x)=a(x-p)^2+q`
+
+Essa forma necessita de apenas duas coordenadas da parábola: o vértice que fornece `p` e `q`, e uma outra coordenada qualquer para que seja montada a equação que fornece o `a`.
+
+Supondo que essa outra coordenada é `(\kappa,\lambda)` teremos:
+
+.. math::
+   
+   a \cdot ( \kappa -p)^2+q= \lambda & \Rightarrow a \cdot ( \kappa -p)^2 = \lambda -q \\
+                       & \Rightarrow a = \frac{\lambda -q}{( \kappa -p)^2}\\
+                       
+Assim, fica concluida a tarefa de determinar a lei de formação procurada.
+
+**Uso da forma** `f(x)=a(x-x_1)(x-x_2)`
+
+Aqui há a necessidade de três coordenadas, sendo os dois **zeros da função**, ou seja, ambos os valores devem existir e precisam ser diferentes; a terceira coordenada pode ser outra qualquer, incluindo o vértice. Contudo, dispondo do vértice a técnica anterior resulta num caminho mais rápido.
+
+Aqui, mais uma vez, o `a` fica sendo o valor desconhecido a ser determinado com a terceira coordenada citada, vamos supor que ela seja `(\kappa,\lambda)`. Assim,
+
+.. math::
+   
+   a\cdot (\kappa -x_1) \cdot (\kappa -x_2) = \lambda \Rightarrow a= \frac{\lambda}{(\kappa-x_1) \cdot (\kappa-x_2)}
+
+**Uso da forma** `f(x)=ax^2+bx+c`
+
+Se as coordenadas fornecidas não apresentarem nenhuma das particularidades relatas nos casos anteriores, o caminho será o apresentado aqui. A utilização dos símbolos para representar os valores conhecidos ficariam pouco atrativo e não apresentariam uma simplificação digna de nota. Por esse motivo vamos seguir com um exemplo.
+
+.. admonition:: Exemplo 
+
+   Uma equipe técnica está analisando máquinas que arremessam bolas de tênis para decidir qual a mais adequada às necessidades de treinamento dos atletas dessa equipe.
+   
+   .. figure:: _resources/videotogif_2018.02.17_16.08.41.*
+      :width: 200px
+      :align: center
+   
+   Com instrumento adequado, sem vento, eles mediram a altura da bola em alguns instantes de tempo, conforme tabela.
+   
+   +-------------------+-----+------+------+
+   | Tempo em segundos | `1` | `2`  | `3`  |
+   +-------------------+-----+------+------+
+   | Altura em metros  | `7` | `11` | `13` |
+   +-------------------+-----+------+------+
+   
+   Sem vento, podemos considerar a trajetória da bola ao longo do tempo como uma parábola. Logo, as três coordenadas apresentadas na tabela permitem a determinação da função quadrática que dá a altura da bola em função do tempo.
+   
+   Não sabemos se um desses pontos é o vértice e, com certeza, nenhum deles é zero da função. Teremos que utilizar a forma `f(x)=ax^2+bx+c`. Com os dados da tabela, obtemos três equações para `a`, `b` e `c`:
+   
+   .. math::
+      
+      a \cdot (1)^2+b \cdot (1)+c=7 \Rightarrow a+b+c=6 \;\;\;\;\;\; & [1] \\
+      a \cdot (2)^2+b \cdot (2)+c=11 \Rightarrow 4a+2b+c=11 \;\;\;\;\;\; & [2] \\
+      a \cdot (3)^2+b \cdot (3)+c=13 \Rightarrow 9a+3b+c=13 \;\;\;\;\;\; & [3] \\
+   
+   Subtraindo `[2]-[1]` e `[3]-[2]` obtemos outras duas equações, mas desta só para `a` e `b`:
+   
+   .. math::
+      
+      3a+b=10-6 \Rightarrow 3a+b=4 \;\;\;\;\;\; & [4] \\
+      5a+b=12-10 \Rightarrow 5a+b=2 \;\;\;\;\;\; & [5] \\
+      
+   Subtraindo `[5]-[4]` ou percebendo que `[5]` é igual `2a+(3a+b)=2` chega-se na mesma conclusão, `2a=-2 \Rightarrow a=-1`.
+   
+   Substituindo esse resultado em `[4]`, temos que `3 \cdot (-1)+b=4 \Rightarrow b=7`.
+   
+   Por fim, ao usar estes valores em `[1]` encontramos `(-1)+(7)+c=7 \Rightarrow c=1`.
+   
+   Assim, a função quadrática que dá a altura `h` da bola em função do tempo `t` para o arremesso analisado é `h(t)=-t^2+7t+1`.
+   
+   Com essa função podemos determinar de que altura a bola foi lançada, quanto tempo ela ficou no ar e até altura máxima que atingiu. Tente!
+   
+.. admonition:: Resposta 
+
+   #. Fazendo `t=0` temos `h(0)=1`, portanto a bola foi laçada de uma altura de `1` m.
+   
+   #. Para `h(t)=0`, temos `-t^2+7t+1=0 \Rightarrow t= \frac{7 \pm \sqrt{53}}{2}`, que tem resultado positivo aproximado de `7,14` segundos. Esse foi o tempo total da bola no ar.
+   
+   #. A bola atinge sua altura máxima em `-\frac{7}{2 \cdot (-1)}= 3,5` segundos. Logo, sua altura máxima foi `h(3,5)=-(3,5)^2+7 \cdot (3,5)+1=- \frac{53}{4 \cdot (-1)} = 13,25` metros.
    
 
-   
+.. _sub-Ativ-eh-parabola:
 
-.. _*Atividade* **É parábola?**
-*Atividade X:* **É parábola?**
------------------
+*Atividade* **É parábola?**
+======
 
 Seja `f:\mathbb{R}\to\mathbb{R}` uma função definida por `f(x)=x^4`. 
 
@@ -1780,3 +1978,11 @@ a) `g(x)=0,5(x-1)^2+4`
 b) `g(x)=0,5(x+1)^2+4`
 c) `g(x)=-0,5(x-1)^2+4`
 d) `g(x)=-0,5(x-1)^2-4`
+
+
+.. _sec-Bibliografia:
+
+Bibliografia
+====
+
+.. [WANG] WANG, Wanderley S. **O aprendizado através de jogos para computador: por uma escola mais divertida e mais eficiente**, `26/08/2006`. Dinponível em Portal da Família, `Artigo 479 <http://www.portaldafamilia.org.br/artigos/artigo479.shtml>`_.
