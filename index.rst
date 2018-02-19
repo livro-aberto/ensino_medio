@@ -7,18 +7,6 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
    
-   PE104
-   PE104-0
-   PE104-1
-   PE104-2
-   PE104-A
-   PE104-E
-
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-   
    PE103-ROTEIRO
    PE104-ROTEIRO
    AF106-ROTEIRO
@@ -48,6 +36,18 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   AF107
+   AF107-0
+   AF107-1
+   AF107-2
+   AF107-A
+   AF107-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
    PE103
    PE103-0
    PE103-1
@@ -58,13 +58,14 @@ Ensino Médio
 .. toctree::
    :maxdepth: 1
    :glob: 
+   
+   PE104
+   PE104-0
+   PE104-1
+   PE104-2
+   PE104-A
+   PE104-E
 
-   AF107
-   AF107-0
-   AF107-1
-   AF107-2
-   AF107-A
-   AF107-E
 
 .. toctree::
    :maxdepth: 1
