@@ -3,10 +3,13 @@ Ensino Médio
 ************
 
 
+
 .. toctree::
    :maxdepth: 1
    :glob: 
    
+   introducao
+   manual-do-professor
    PE103-ROTEIRO
    PE104-ROTEIRO
    AF106-ROTEIRO
