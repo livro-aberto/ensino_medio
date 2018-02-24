@@ -1,3 +1,163 @@
+.. _ativ-naoretangulo1:
+
+Atividade: calculando elementos de um triângulo não retângulo.
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **OB	JETIVOS ESPECÍFICOS**
+   
+   * Calcular elementos de um triângulo não retângulo.
+   * Aplicar as relações em triângulos retângulos desenvolvidas no capítulo.
+
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Espera-se que o aluno siga o roteiro e trabalhe nos triângulos retângulos adequados.
+   * Nos cálculos o aluno não deve utilizar a calculadora, pois nenhuma aproximação é solicitada. 
+
+
+Observe o triângulo `ABC` da figura a seguir. São conhecidos dois lados e o ângulo entre eles.
+
+
+.. tikz:: 
+
+   \draw [shift={(-2.6,2.7)},line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0,0) -- (-19.98310652189998:0.46706013933203844) arc (-19.98310652189998:40.016893478100016:0.46706013933203844) -- cycle;
+   \draw [line width=0.8pt] (-2.6,2.7)-- (1.8,1.1);
+   \draw [line width=0.8pt] (-2.6,2.7)-- (0.028086815167808865,4.906547473135632);
+   \draw [line width=0.8pt] (0.028086815167808865,4.906547473135632)-- (1.8,1.1);
+   \draw (-1.6669385450070555,4.236925559919031) node[anchor=north west] {8};
+   \draw (-1.0597603638754054,2) node[anchor=north west] {10};
+   \draw [fill=black] (-2.6,2.7) circle (1.0pt);
+   \draw[color=black] (-2.9980599421033647,2.6372445827068023) node {$A$};
+   \draw [fill=black] (1.8,1.1) circle (1.0pt);
+   \draw[color=black] (2.0228365557160486,1.049240108977874) node {$B$};
+   \draw[color=black] (-1.7,2.824068638439617) node {$60^\circ$};
+   \draw [fill=black] (0.028086815167808865,4.906547473135632) circle (1.0pt);
+   \draw[color=black] (-0.055581064311522835,5.346193390832621) node {$C$};
+
+#. Quanto mede o lado `BC`?
+#. Qual é a distância de `A` ao lado `BC`?
+
+Para calcular siga o roteiro:
+
+* Trace `CD` perpendicular a `AB`.
+* Usando seno e cosseno de `60^circ` calcule `AD` e `CD`.
+* Calcule `DB`.
+* Calcule `BC` no triângulo `BDC`.
+* Calcule a área do triângulo `ABC` considerando a base `AB` e a altura `CD`. Se você não lembrar como se calcula, pergunte ao professor. 
+  
+  Você deve estar se perguntando o que a área tem a ver com esta atividade, mas isso vai ficar claro a seguir.
+* Desenhe novamente o triângulo `ABC` e a altura `AH`. O segmento `AH` é a distância de `A` ao lado `BC`, que é a pergunta do item b).
+* Calcule a área do triângulo `ABC` considerando a base `BC` e a altura `AH`.
+
+
+.. admonition:: Resposta 
+
+   #. `BC = 2\sqrt{21}`
+   #. `AH=\dfrac{20}{\sqrt{7}}`
+
+
+
+
+.. _organizando-3:
+
 ********
-GE2022-2
+Organizando as ideias
 ********
+
+Em algumas atividades anteriores você calculou elementos em triângulos que não eram retângulos. Mas, para isso, você precisou dividir o triângulo dado em triângulos retângulos para aplicar as ferramentas desenvolvidas no capítulo. Vamos agora abordar a trigonometria que pode ser aplicada em todos os triângulos, mas para isso, precisamos ampliar nossas definições de seno e de cosseno.
+
+.. _sub-seno-cos-maior-que-90:
+
+Senos e cossenos até `180^{\circ}`
+===================
+
+Observe o que acontece quando um ângulo é próximo de `90^{\circ}`.
+
+Afigura abaixo mostra o triângulo `ABC` de hipotenusa igual a 1 com o ângulo `BAC =\alpha` aproximando-se de `90^{\circ}`. O seno de `\alpha` fica cada vez mais próximo de 1 enquanto que o cosseno de `\alpha` diminui, aproximando-se de zero.
+
+
+.. tikz:: 
+
+
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \clip(-0.9221201047138317,-1.5964236511929875) rectangle (3.4843212153469962,6.016685362179443);
+   \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0.75,0.) -- (0.75,0.3) -- (0.47398011550346203,0.3) -- (0.473980115503462,0.) -- cycle;
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.3272109891134278) arc (0.:84.64531064246371:0.3272109891134278) -- cycle;
+   \draw [line width=0.8pt] (0.,0.)-- (1.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (0.473980115503462,5.056866460780054);
+   \draw [line width=0.8pt] (0.473980115503462,5.056866460780054)-- (0.473980115503462,0.);
+   \draw (-.05,0.7) node[anchor=north west] {$\alpha$};
+   \draw (-0.20225592866429043,2.5046207456953127) node[anchor=north west] {1};
+   \draw (0.6266785770897266,2.4609926138135223) node[anchor=north west] {sin$\alpha$};
+   \draw (-0.2895121924278712,-0.4) node[anchor=north west] {cos$\alpha$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.2458840605460808,-0.23304452988703647) node {$A$};
+   \draw [fill=black] (0.473980115503462,5.056866460780054) circle (1.0pt);
+   \draw[color=black] (0.4957941814443555,5.438612614745719) node {$C$};
+   \draw [fill=black] (0.473980115503462,0.) circle (1.0pt);
+   \draw[color=black] (0.4957941814443555,-0.2766726617688269) node {$B$};
+
+Quando o ângulo `\alpha` atinge `90^{\circ}` o triângulo desaparece e, sem triângulo, não podemos usar as definições anteriores de seno e cosseno. Mas a figura acima, sugere que adotemos as definições a seguir:
+
+
+.. math::
+
+   \sin\alpha=0\\
+   \cos\alpha=1
+
+Para ângulos entre `90^\circ` e `180^\circ` a figura a seguir vai sugerir as novas definições.
+
+
+.. tikz:: 
+
+   \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \clip(-3.0028816140856316,-0.92516866560888) rectangle (2.1104498822616287,3.2714300923494335);
+   \draw [shift={(0.,0.)},line width=0.8pt,fill=black,fill opacity=0.25] (0,0) -- (0.:0.40743677261731154) arc (0.:122.89602321343347:0.40743677261731154) -- cycle;
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (122.89602321343347:0.40743677261731154) arc (122.89602321343347:180.:0.40743677261731154) -- cycle;
+   \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (-1.6961883777198885,0.) -- (-1.6961883777198885,0.28810130482246243) -- (-1.984289682542351,0.28810130482246243) -- (-1.984289682542351,0.) -- cycle; 
+   \draw [line width=0.8pt] (-2.5343293255757215,0.)-- (2.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (-1.984289682542351,3.0677117060407775);
+   \draw (0.1954970509602643,0.7249502634912335) node[anchor=north west] {$\alpha$};
+   \draw [line width=2.pt,color=qqzzqq] (-1.984289682542351,3.1)-- (-1.984289682542351,0.);
+   \draw [line width=2.pt,color=ccqqqq] (0.,0.)-- (-1.984289682542351,0.);
+   \draw (-0.7619793646904179,0.6) node[anchor=north west] {$\beta$};
+   \draw (-0.7619793646904179,1.7027985177727822) node[anchor=north west] {1};
+   \draw [color=qqwuqq](-3,1.5398238087258573) node[anchor=north west] {sin$\beta$};
+   \draw [color=ffqqqq](-1.5,-0.01) node[anchor=north west] {cos$\beta$};
+   \begin{scriptsize}
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw [fill=black] (-1.984289682542351,3.0677117060407775) circle (1.0pt);
+   \draw [fill=black] (-1.984289682542351,0.) circle (1.0pt);
+   \end{scriptsize}
+   
+
+Para `\alpha` entre `90^\circ` e `180^\circ` consideremos `\beta` o suplemento de `\alpha` como na figura acima. Então, quando `\alpha` é um ângulo obtuso, definimos:
+
+
+.. math::
+
+   \sin\alpha=\sin\beta\\
+   \cos\alpha=-\cos\beta
+
+Discuta com seus colegas e seu professor qual seria uma boa definição de seno e cosseno para os ângulos de `0^circ` e `180^\circ`.
+
+
+.. _sub-coloque-aqui-o-nome:
+
+A lei dos cossenos
+=================
+
+A lei dos cossenos é uma relação que envolve os três lados de um triângulo e um de seus ângulos. Ela é muito útil e você poderá ver como a encontraremos observando os três casos a seguir.
+
+Seja `ABC` o nosso triângulo com lados `a`, `b`, `c`.
+
+#. O ângulo `A` é agudo.
+
+   A figura a seguir mostra o triângulo `ABC` nesse caso e sua altura `CH`.
+
