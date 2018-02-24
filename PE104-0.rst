@@ -1,46 +1,464 @@
-******************************
-Medidas de Posição e Dispersão
-******************************
+.. admonition:: Para o professor
 
-
-.. admonition:: Objetivos específicos
+  Neste capítulo serão trabalhadas as seguintes habilidades da BNCC para o Ensino Médio:
 
   (EM11MT04) Utilizar a média, a mediana e a amplitude para descrever, comparar e interpretar dois conjuntos de dados numéricos obtidos nas pesquisas realizadas pelos estudantes, em termos de localização (centro) e dispersão (amplitude). 
-   
+        
   (EM13MT05) Calcular e interpretar medidas de dispersão (amplitude, desvio médio, variância e desvio padrão) para um conjunto de dados numéricos, agrupados ou não, em pesquisas realizadas pelos estudantes ou usando dados de outras fontes com temas envolvendo os temas integradores.
+ 
+  **Objetivo Geral do Capítulo**
+    
+  Compreender como algumas medidas, chamadas medidas resumo, podem revelar informações sobre a distribuição dos dados. Para alcançar este objetivo geral, este capítulo inclui:
+ 
+  #. definições de medidas de posição (média, mediana, moda e quartis);
+  #. definições de medidas de dispersão (desvio médio, variância e desvio padrão, amplitude (amostral), distância entre quartis, coeficiente de variação);
+  #. sinalizações para a importância das medidas de dispersão para avaliar a representatividade da média na distribuição;
+  #. revisão dos conceitos apresentados no capítulo **A Natureza da Estatística**: parâmetro e estatística, definindo média populacional e média amostral, variância populacional e variância amostral.
+  #. apresentação de representação gráfica para variáveis quantitativas conhecida como *boxplot* (gráfico caixa).
 
-.. admonition:: Pré-requisito
+  Observação: Embora muitos textos denominem as medidas de posição (média, mediana e moda) como medidas de tendência central, interpretando "tendência central" como "valor representativo" na distribuição", preferimos denominá-las medidas de posição, pois, por exemplo, dependendo da forma da distribuição, a média pode não ser um "valor representativo" da distribuição.
 
- (EF07MA29) Compreender, em contextos significativos, o significado de média estatística como indicador da tendência de uma pesquisa, calcular seu valor e relacioná-lo, intuitivamente, com a amplitude do conjunto de dados.
+  **Por que estudar o assunto?** 
+
+  As medidas resumo (posição e dispersão) correspondem a uma síntese do conjunto de dados observados e ao passo preliminar para fazer uma inferência estatística, ou seja, a partir das informações obtidas na amostra, expandir nossas conclusões para a população. Como as distribuições podem apresentar formas variadas é importante conhecer diferentes tipos de medidas resumo, tanto de posição como de dispersão, para usar medidas apropriadas em cada caso.
+
+  **Desafios do Capítulo**
+
+  #. Entender as especificidades das variadas medidas resumo e reconhecer suas limitações em cada contexto.
+  #. A partir de algumas medidas resumo, ser capaz de ter uma noção quanto à forma da distribuição dos dados.
+
+  **Conteúdos abordados**
+
+  #. Medidas de posição: média, mediana, moda e quartis.
+  #. Medidas de dispersão: amplitude, distância entre quartis, desvio médio, variância, desvio padrão e coeficiente de variação.
+  #. Parâmetro versus Estimador (estimativa) (Média populacional versus média amostral, Variância populacional versus variância amostral, etc.).
+  #. Construção do *boxplot* (gráfico caixa).
+ 
+  **Pré-requisitos**
+
+  (EF07MA29) Compreender, em contextos significativos, o significado de média estatística como indicador da tendência de uma pesquisa, calcular seu valor e relacioná-lo, intuitivamente, com a amplitude do conjunto de dados.
+ 
+  (EF08MA22) Obter os valores de medidas de tendência central de uma pesquisa estatística (média, moda e mediana) com a compreensão de seus significados e relacioná-los com a dispersão de dados, indicada pela amplitude.
+ 
+  (EM11MT03) Realizar pesquisas, considerando: o planejamento, a discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
+
+  **Desdobramentos imediatos**
+
+  (EM15MT06) Analisar criticamente os métodos de amostragem em relatórios de pesquisas divulgadas pela mídia e as afirmativas feitas para toda a população baseadas em uma amostra.
+   
+  **Abordagem do Capítulo**
+
+  Pretende-se ao longo do capítulo, além de apresentar as definições das variadas medidas, enfatizar suas propriedades. Por exemplo, no caso da média, pretende-se explorar as seguintes propriedades:
+
+  #. a média de um conjunto de números é um valor que pertence ao intervalo delimitado pelos valores extremos deste conjunto (mínimo e máximo);
+  #. a soma dos desvios da média é sempre zero para qualquer conjunto de números;
+  #. a média é influenciada por todos os valores no conjunto;
+  #. a média pode ser um valor que não pertence ao conjunto analisado;
+  #. a média é um valor representativo do conjunto analisado.
+
+  Após definir a média e explorar algumas de suas propriedades, situações em que ela pode ser inadequada como valor representativo de uma distribuição (distribuições com forte assimetria) são apresentadas, motivando assim a definição da mediana, uma medida que é pouco afetada por valores extremos.
+
+  Uma vez definidas média e mediana, uma situação em que ambas podem ser consideradas inadequadas como valores representativos de uma distribuição (distribuições bimodais simétricas) é apresentada, motivando assim a definição da moda.
+
+  Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base em uma atividade em que dois conjuntos de dados apresentam média, mediana e moda coincidentes, mas suas distribuições são diferentes. 
+
+  Finalmente, após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
+ 
+  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, conjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
+
+  **Diferencial do Capítulo**
+
+  De acordo com Russel e Mokros (1991), citados em Batanero e Borovnik (2016), a compreensão da ideia de "valor representativo" implica em três competências diferentes:
+
+  #. selecionar o melhor valor representativo para um dado conjunto de dados;
+  #. construir um conjunto de dados tendo um determinado valor representativo, por exemplo, a moda;
+  #. compreender o efeito que uma mudança em parte dos dados tem sobre os possíveis valores representativos.
+
+  Pretende-se explorar estas três competências nas atividades e exercícios do capítulo.
+
+  Embora a fórmula de cálculo da variância seja necessária, evitaremos seu uso direto, isto é, exploraremos o uso da tecnologia para obter variância, desvio padrão e demais medidas trabalhadas no capítulo.
+ 
+  A definição de quartis e a construção do boxplot são propostas inovadoras em relação ao conteúdo usual de Estatística nos livros didáticos do Ensino Médio. Os conceitos relativamente simples de quartis aliados  à grande utilidade do *boxplot* na comparação de grupos diferentes, reforçam a pertinência em tratá-los no Ensino Médio.
   
- (EF08MA22) Obter os valores de medidas de tendência central de uma pesquisa estatística (média, moda e mediana) com a compreensão de seus significados e relacioná-los com a dispersão de dados, indicada pela amplitude.
+  **Dificuldades típicas dos estudantes (distratores)**
 
- (EM11MT03) Realizar pesquisas, considerando: o planejamento, a 
- discussão (se será censitária ou por amostra), a seleção de amostras, a elaboração e aplicação de instrumentos de coleta, a organização e representação dos dados (incluindo agrupamentos de dados em classe), a construção de gráficos apropriados (incluindo o histograma), a interpretação e a análise crítica apresentadas em relatórios descritivos.
+  Com base no texto de Batanero e Borovnik (2016), apesar da maior parte dos métodos de análise exploratória de dados envolverem apenas cálculos e interpretações de medidas estatísticas simples, bem como, construções de gráficos e suas respectivas leituras, pesquisadores sugerem que os estudantes apresentam problemas na compreensão de conceitos, e em relacionar os mesmos ao contexto de forma significativa. Uma razão para isso é que, em geral, os professores focam sobre a aplicação de métodos em vez da interpretação de resultados em um dado contexto. Neste texto, um resumo de resultados de pesquisas realizadas neste tema é apresentado. A seguir, algumas destas dificuldades são destacadas.
+
+  #. Cálculo de médias combinadas a partir das médias de diferentes grupos: desprezam-se os tamanhos dos diferentes grupos,  calculando uma média simples das médias dos grupos.
+  #. Cálculo de média para dados agrupados: ignoram-se as frequências, considerando apenas os pontos médios dos intervalos, somando-os e dividindo pelo número de intervalos, ou simplesmente, considerando apenas o valor da variável, quando a variável é quantitativa discreta.
+  #. Compreensão das medidas de posição: média, mediana e moda.
+  #. Compreensão das medidas de dispersão, em particular, da variância e do desvio padrão. 
+  #. Interpretação dos valores obtidos no contexto considerado.
+ 
+  Os dois primeiros itens estendem-se para o cálculo da variância e do desvio padrão.
+ 
+  Os distratores serão explorados nas atividades e nos exercícios.
+
+  **Exemplos** 
+   
+  Princípios norteadores dos exemplos selecionados: 
+  
+  #. propor problemas cuja solução requer dados a serem coletados pelos alunos ou que de alguma forma estão disponíveis para consulta.
+  #. contextualizar sempre os problemas propostos, pois o contexto é fundamental nas investigações e interpretações.
+     
+  **Estratégia pedagógica**
+
+  Usar um processo reflexivo baseado no pensamento estatístico. 
+    
+  #. Fórmulas e algoritmos para obter as medidas resumo, embora importantes neste capítulo, não serão valorizados. 
+  #. Dar importância à compreensão dos conceitos e à interpretação dos resultados. 
+  #. As atividades deverão estar sempre bem caraterizadas a um problema a ser resolvido em um contexto específico.
+  #. 	Neste capítulo, o uso de recursos tecnológicos para a realização dos cálculos de medidas resumo é fundamental. Recomenda-se o GeoGebra e planilhas de cálculo. 
+  
+  O uso de calculadoras é fortemente recomendável. No entanto, cabe alertar o estudante quanto à notação adotada no Brasil para o separador decimal: a vírgula, e que é adotada neste livro. No entanto, a notação utilizada, em geral, nas calculadoras e na maioria dos programas e aplicativos é o ponto decimal. Por exemplo, o GeoGebra usa o ponto como separador de casas decimais e, em geral as planilhas eletrônicas estão formatadas para números, usando a vírgula como separador decimal. Assim, copiar e colar os dados de um aplicativo para outro pode acarretar em grandes variações. Cabe também realçar que é muito importante treinar o estudante a usar corretamente as calculadoras: não é raro, apesar de permitir o uso das mesmas, ocorrerem erros pelo manuseio incorreto da calculadora. O estudante deve ser alertado para a ordem de hierarquia das operações, muito trabalhada nos anos iniciais do segundo segmento do Ensino Fundamental, mas que é aparentemente esquecida quando vão utilizar calculadoras.
+  
+  Cabe reforçar também que apesar do capítulo poder à primeira vista parecer pesado pelo excesso de definições e fórmulas, é possível verificar que as atividades são relativamente simples e visam muito mais à interpretação das medidas do que o cálculo das mesmas. Sempre serão fornecidas informações para facilitar cálculos quando estes forem solicitados. Nas avaliações, a não ser que seja permitido o uso de calculadora, recomenda-se fortemente não pedir para calcular variâncias e desvios padrões, estes deverão ser, em geral  dados, e perguntas envolvendo o significado dos mesmos devem ser feitas.
+  
+  Enfim o que deve ser valorizado no capítulo é conhecer o significado das medidas aqui apresentadas. O cálculo das mesmas pode ser feito, usando-se aplicativos e, as fórmulas, se por acaso forem necessárias para resolver algum problema, deverão ser sempre fornecidas. Principalmente, em se tratando de medidas de dispersão.
   
   
+ 
+  **Estrutura do Capítulo**
+  
+  **Explorando 1: Medidas de Posição** Nesta seção serão trabalhadas duas atividades. A primeira propõe duas transformações simples nos dados de um conjunto e procura avaliar o efeito destas transformações na distribuição dos dados. A segunda foca especificamente no cálculo de medidas de posição tais como média, mediana e moda, que já devem ser conhecidas do Ensino Fundamental. Também proporemos a divisão do conjunto de dados em quatro intervalos de classes de frequências iguais a 1/4 para definir os três quartis de uma distribuição.
+ 
+  #. Atividade: Distribuição de notas para perceber o efeito de transformações simples (multiplicação e/ou adição de um valor) no dado na posição e escala(forma) da distribuição, comparando histogramas. 
+ 
+  #. Atividade: Apresentação de diferentes conjuntos de dados sobre tempos para completar uma “maratona” que apresentam diferentes tipos de assimetria.
+
+  **Organizando as ideias 1: Medidas de posição** Definições de média; mediana; moda e quartis.
+         
+  **Praticando o assunto 1:** Atividades explorando conceitos e propriedades apresentados no organizando as ideias 1. 
+    
+  **Explorando 2: Medidas de dispersão** Proposição de uma atividade envolvendo dois conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
+ 
+  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância e desvio padrão.
+ 
+  Nesta seção também  serão retomados os conceitos de parâmetro e estimador, tratados no capítulo **A Natureza da Estatística** apresentando a definição de variância populacional e amostral, desvio-padrão populacional e amostral e, média populacional e amostral.
+ 
+  **Praticando o assunto 2** Atividades que usam os conceitos e propriedades apresentados no organizando 2 e que buscam dar significado às medidas de dispersão definidas.
+
+  **Explorando 3** Proposição de uma atividade apresentado dois conjuntos de dados com a mesma variância, mas com medidas de posição diferentes.
+ 
+  **Organizando as ideias 3** Definição de coeficiente de variação amostral e populacional.
+ 
+  **Praticando o assunto 3** Atividades usando coeficiente de variação. 
+ 
+  **Para saber mais**
+ 
+  #. Definição do *boxplot* (gráfico caixa) representação gráfica para variáveis quantitativas alternativa ao histograma.
+  #. Descrição do critério de classificação de um valor como valor atípico do conjunto de dados adotado na construção do boxplot.
+  #. Apresentação de regra empírica para avaliar a frequência de dados nos intervalos `\bar{x}\pm s` e `\bar{x}\pm 2\cdot s`.
+  
+ 
+  **Material Suplementar**
+ 
+  Um applet do GeoGebra foi disponibilizado com manual de instruções nesta seção. Nele será possível gerar conjuntos de dados para os quais serão fornecidas as medidas resumo do conjunto bem como o histograma e o boxplot. Neste applet também será possível entrar com o seu próprio conjunto de dados para obter os gráficos e as medidas resumo. 
+
+  **Exercícios** 
+ 
+  Nesta seção são propostos exercícios do ENEM, Vestibulares entre outros, abordando os conteúdos desse capítulo. Nos exercícios serão tratados os distratores.
+  
+  **Referências Bibliográficas**
+  
+  1. ABE (2015) ABE: Reflexões a respeito dos conteúdos de probabilidade e estatística na escola no Brasil - uma proposta. Disponível em: <https://goo.gl/OBtwpv>. Acesso em: 18 ago. 2017. 
+
+  2. Batanero, C., Burrill, G., & Reading, C. (Eds.). (2011). Teaching statistics in school mathematics-challenges for teaching and teacher education: A joint ICMI/IASE study: the 18th ICMI study (Vol. 14). Springer Science & Business Media.
+      
+  3. Batanero, C., & Borovcnik, M. (2016). Statistics and probability in high school. Springer.
+  
+  4. Bussab, W. O. & Morettin, P. A. (2017). Estatística Básica.  Saraiva. Nona edição.
+  
+  5. Levine, D. M., Bereneson, M. L. e Stephan, D. (2000). Estatística: Teoria e Aplicações. LTC.
+  
+  6. Rossman, Allan J., and Beth L. Chance. Workshop Statistics:: Discovery With Data and Minitab. Springer Science & Business Media, 1998.  
+  
+  7. Triola, M. F. (2005), Introdução à Estatística. LTC. Nona Edição.
+  
+  Observação: Os textos d), e), f) e g) são recomendados para cursos de estatística a nível de graduação, mas seus capítulos iniciais, que tratam da natureza da estatística, representações gráficas e medidas resumo podem ser úteis. Os mesmos foram consultados para o material deste capítulo.
+  
+
+.. _sec-explorando1:
+
+******************************
+Explorando: Medidas de Posição
+******************************
+
+As medidas resumo (de posição e  de dispersão) correspondem a uma síntese do conjunto de dados observados e ao passo preliminar para fazer uma inferência estatística, ou seja, a partir das informações obtidas na amostra, expandir nossas conclusões para a população. Como as distribuições podem apresentar formas variadas é importante conhecer diferentes tipos de medidas resumo, tanto de posição como de dispersão, para usar medidas apropriadas em cada caso.
+
+Entre características importantes de conjuntos de dados quantitativos destacam-se 
+
+#. um valor representativo ou médio do conjunto: pertence ao intervalo delimitado pelos valores extremos do conjunto (mínimo e máximo);
+#. dispersão: uma medida de quanto os valores variam no conjunto;
+#. forma da distribuição: simétrica, assimétrica, multimodal, etc;
+#. valores atípicos: valores que destoam em relação a grande maioria dos dados no conjunto.
+
+Ao longo deste capítulo veremos como as medidas que serão estudadas nos ajudam a revelar estas características do conjunto de dados.
+
+  
+
+.. _ativ-Notas-de-Artes:
+
+-------------------------
+Atividade: Notas de Artes
+-------------------------
 
 
-.. admonition:: Desdobramentos imediatos
+.. admonition:: Para o professor
 
-   Preencha aqui as habilidades do BNCC que serão baseadas nessa:
+ **Objetivos específicos** Estudar o efeito numa distribuição de dados após uma transformação simples: adição (posição) ou multiplicação (escala).
 
-   BNCC (???) Descrição, segundo o BNCC, da primeira habilidade que tem esta como pré-requisito, segundo o BNCC.
-   BNCC (???) Descrição, segundo o BNCC, da segunda habilidade que tem esta como pré-requisito, segundo o BNCC.
+ **Observações e sugestões**    Esta atividade tem como objetivo principal levar o aluno a perceber efeitos que certas transformações simples nos dados (adição e multiplicação) acarretam em uma distribuição de frequências e, consequentemente, levá-lo a avaliar possíveis mudanças nas medidas de posição e dispersão que serão tratadas neste capítulo. Como ela é uma atividade introdutória, essas propriedades não serão totalmente exploradas na atividade, mas ao longo da capítulo ela será retomada. Os dados desta atividade podem ser obtidos neste `link <https://ggbm.at/TNh7dPCf>`_ , e sugere-se o uso do GeoGebra ou uma planilha para realizar as transformações indicadas, embora não seja necessário para a realização da atividade.  No item (e) não há uma resposta certa, mas ele deverá ser explorado futuramente com o objetivo de avaliar os efeitos em uma distribuição quando somamos um valor constante a todos os dados e quando multiplicamos um valor constante a todos os dados.
 
-.. note::
+Ao final de um trimestre, um professor de Artes registrou as seguintes notas de seus 35 alunos, listadas no quadro a seguir, em ordem crescente.
 
-   Roteiro do capítulo.
++-----+-----+-----+-----+-----+-----+-----+
+| 0,8 | 2,0 | 2,0 | 2,5 | 2,5 | 3,5 | 4,5 |
++-----+-----+-----+-----+-----+-----+-----+
+| 5,0 | 5,4 | 5,5 | 5,5 | 5,5 | 6,0 | 6,0 |
++-----+-----+-----+-----+-----+-----+-----+
+| 6,0 | 6,0 | 6,3 | 6,5 | 6,8 | 6,8 | 7,0 |
++-----+-----+-----+-----+-----+-----+-----+
+| 7,0 | 7,0 | 7,0 | 7,3 | 7,3 | 7,5 | 7,5 |
++-----+-----+-----+-----+-----+-----+-----+
+| 7,5 | 7,5 | 7,8 | 8,0 | 8,0 | 8,0 | 8,0 |
++-----+-----+-----+-----+-----+-----+-----+
 
-   Preencher aqui um esqueleto de como será organizado esse capítulo. Por exemplo:
+Este professor verificou que a média da turma foi aproximadamente 5,93 (soma das notas `S=207,5`). Como a participação da turma foi muito boa ao longo do trimestre, o professor resolveu dar uma bonificação na nota de cada aluno desta turma, pensando em duas possibilidades:
 
-   1. Texto motivador para despertar o interesse em estudar...
-   2. Para o professor - comentar sobre as dificuldades que os alunos enfrentam ao...
-   3. Conceitos básicos e definições de...
-   4. Atividades para exercitar as definições...
-   5. Sistematização dos conceitos para...
-   6. ... (assim por diante)
-   10. Exercícios de fixação dos...
+#. acrescentar um ponto para cada aluno da turma;
+#. aumentar em 20% a nota de cada aluno da turma.
+
+Na figura a seguir veja um histograma das notas sem a bonificação, em que os intervalos de classe considerados foram `[0,2[, \quad [2,4[, \quad [4,6[, \quad [6,8]`. Os números entre parênteses correspondem às frequências absolutas.
 
 
+.. _fig-histograma-notas-sem-bonificacao:
+
+.. figure:: _resources/histogramaNotas_E1_1.png
+   :width: 200pt
+   :align: center
+
+   Histograma das notas de Artes sem bonificação
+   
+
+Os dois histogramas a seguir correspondem às notas, após usar cada uma das duas possibilidades consideradas pelo professor, mantendo, em cada um, quatro intervalos de classe.  
+
+.. _fig-histogramas-notas-com-bonificacoes:
+
+.. figure:: _resources/histogramaNotas_E1_3_2.png
+   :width: 200pt
+   :align: center
+   
+.. figure:: _resources/histogramaNotas_E1_2_4.png
+   :width: 200pt
+   :align: center
+
+   Histogramas das notas de Artes com bonificação
+   
+ 
+#. Qual dos dois histogramas manteve a mesma forma em relação ao histograma das notas sem a bonificação?
+
+#. Qual dos dois histogramas teve a sua forma alterada após a bonificação?
+
+#. Considerando a figura :ref:`fig-histogramas-notas-com-bonificacoes`, identifique qual deles corresponde ao  acréscimo de 1,0 ponto e qual deles corresponde ao aumento de 20%.
+
+#. Dada a informação inicial de que a média da turma foi 5,93, de quanto será a média se o professor acrescentar um ponto a cada aluno? E se ele aumentar em 20% a nota de cada aluno?
+
+#. Se você fosse um aluno desta turma, que possibilidade de bonificação você escolheria? Por quê?
+
+
+.. admonition:: Resposta 
+
+   (a) Analisando os dois histogramas, percebe-se que o segundo mantém as mesmas frequências com um deslocamento dos intervalos em uma unidade. Logo, o segundo histograma mantém a mesma forma em relação ao original, tendo sido deslocado para à direita em uma unidade.
+   
+   (b) Analisando os dois histogramas, percebe-se que o primeiro apresenta uma alteração de forma com intervalos mais largos e distribuição de frequências diferente. Assim, o primeiro tem sua forma diferente em relação ao original.
+   
+   (c) Com o acréscimo de 1 ponto a cada nota, a nota maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a nota de cada um, a nota maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde ao aumento de 20% na nota de cada um e, o segundo, ao acréscimo de 1 ponto na nota de cada um.
+   
+   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,93. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,93\approx 7,12`, em que `S=207,5`.
+   
+   (e) Não há uma resposta certa para este item. Se cada aluno olhar o seu ponto de vista particular, para alguns será melhor ganhar um ponto e para outros será melhor ter um aumento de 20% sobre a nota. Mais especificamente, para quem tiver obtido nota 5,0 será indiferente; para quem tiver obtido nota inferior a 5,0 será melhor ganhar um ponto e, para os restantes, será melhor o acréscimo de 20% sobre a nota.
+   
+.. _ativ-maratona-de-NY:
+
+-------------------------
+Atividade: A maratona
+-------------------------
+
+.. admonition:: Para o professor
+
+  **Objetivos específicos** Identificar a posição da média em diferentes formas de distribuição que apresentam assimetrias.
+   
+  **Observações e sugestões** Nesta atividade serão apresentados conjuntos diferentes de dados envolvendo tempos para completar maratonas. Os dados estão disponíveis no `link <https://ggbm.at/ZhqKD9Nz>`_. Serão fornecidos os totais para que o cálculo das médias envolva apenas uma divisão e possa ser feito com uma calculadora simples. Pretende-se levar o aluno a perceber que na presença de forte assimetria (histograma alongado à direita ou à esquerda), a média pode ser uma medida pouco *representativa* do conjunto e com isso motivar a definição de mediana.
+   
+  É importante discutir as perguntas na caixa **Para refletir** em sala de aula com o intuito de que os estudantes percebam a necessidade de tratar previamente dados de determinada natureza antes de usá-los numericamente, como é o caso do tempo considerado em unidades distintas (hora:minuto:segundo).
+   
+  Na sequência se inclui a tabela com a respectiva conversão para horas em números decimais de modo a simplificar os cálculos na atividade, mas deve-se deduzir com os estudantes como calcular a conversão.
+  
+  Expressão utilizada para calcular o resultado em horas decimais (`\textsf{horas}_{10}`):
+   
+  .. math::
+
+     \textsf{horas}_{10} = \textsf{Horas} + \frac{\textsf{Minutos}}{60} + \frac{\textsf{Segundos}}{60^2}
+     
+  A escolha da hora para a unidade de conversão nesta atividade não foi arbritária, pois as quatro categorias que serão tratadas apresentam tempos bastante variados entre os 100 primeiros a chegar e, para efeito da comparação a ser feita adiante, a unidade hora mostrou-se a mais conveniente na construção de gráficos.
+  
+  Para concluir esta atividade, é importante comentar com os estudantes a diferença observada entre a média e a mediana e que esta se deve a uma forte assimetria na distribuição dos dados. O histograma tem uma grande massa acumulada para o lado direito, tornando a média inferior à mediana. 
+
+A maratona é uma prova de atletismo que consiste em correr uma distância de 42,195 km. Pelas suas características, este tipo de prova é realizada nas ruas de uma grande cidade ou na estrada. As principais cidades do mundo realizam um destes eventos anualmente, recebendo milhares de atletas profissionais e amadores que encaram o desafio e almejam finalizar a corrida ou melhorar o próprio tempo do passado.
+
+Uma das mais famosas é a Maratona da Cidade de Nova Iorque, nos Estados Unidos. Com mais de 50.000 participantes cada ano, é um dos principais eventos do atletismo mundial, junto com as maratonas de Chicago, Londres, Boston, Berlim e Tóquio.
+
+.. _maratona-NY:
+
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/3/35/New_York_marathon_Verrazano_bridge.jpg
+   :width: 200pt
+   :align: center
+
+   Corredores participando da Maratona de *Nova York*, `Wikipedia <https://commons.wikimedia.org/wiki/File:New_York_marathon_Verrazano_bridge.jpg>`_
+
+
+Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados separadamente. Qual das categorias você acha que terá os melhores resultados na maratona? Em quanto tempo você acha que uma pessoa percorre os 42 km? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
+
+.. _handcycle:
+
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/0/07/Handcycle_in_Richmond_Park_-_geograph.org.uk_-_1315077.jpg
+   :width: 200pt
+   :align: center
+   
+   Tricilo de mão (*handcycle*), `Wikipedia <https://commons.wikimedia.org/wiki/File%3AHandcycle_in_Richmond_Park_-_geograph.org.uk_-_1315077.jpg>`_
+
+
+A seguir analisaremos os tempos de corrida das 100 melhores atletas na categoria de Mulheres da Maratona de Nova York do ano 2017, dados disponíveis no `site oficial da competição <http://results.nyrr.org/event/M2017/finishers>`_.
+
+.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (hora:minuto:segundo)
+
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  |    |   +0    |   +10   |   +20   |   +30   |   +40   |   +50   |   +60   |   +70   |   +80   |   +90   |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 1  | 2:26:53 | 2:32:01 | 2:42:52 | 2:49:44 | 2:53:59 | 2:56:58 | 2:58:35 | 2:59:36 | 3:01:24 | 3:03:43 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 2  | 2:27:54 | 2:32:09 | 2:44:26 | 2:49:59 | 2:54:42 | 2:57:05 | 2:58:36 | 2:59:41 | 3:01:26 | 3:03:46 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 3  | 2:28:08 | 2:33:18 | 2:44:48 | 2:50:04 | 2:54:52 | 2:57:10 | 2:58:50 | 2:59:43 | 3:01:28 | 3:04:02 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 4  | 2:29:36 | 2:34:10 | 2:45:20 | 2:50:05 | 2:55:04 | 2:57:40 | 2:58:52 | 2:59:46 | 3:01:44 | 3:04:04 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 5  | 2:29:39 | 2:34:23 | 2:45:52 | 2:51:11 | 2:55:25 | 2:57:49 | 2:58:56 | 2:59:51 | 3:02:09 | 3:04:17 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 6  | 2:29:39 | 2:36:38 | 2:46:45 | 2:53:01 | 2:55:34 | 2:57:49 | 2:59:01 | 2:59:56 | 3:02:15 | 3:04:26 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 7  | 2:29:41 | 2:37:22 | 2:47:04 | 2:53:02 | 2:55:36 | 2:57:50 | 2:59:03 | 3:00:02 | 3:02:39 | 3:04:42 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 8  | 2:29:56 | 2:37:33 | 2:47:30 | 2:53:02 | 2:55:39 | 2:58:08 | 2:59:10 | 3:00:05 | 3:02:41 | 3:04:49 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 9  | 2:31:21 | 2:39:01 | 2:47:35 | 2:53:19 | 2:56:47 | 2:58:23 | 2:59:16 | 3:00:49 | 3:02:56 | 3:04:58 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  | 10 | 2:31:44 | 2:40:09 | 2:49:37 | 2:53:38 | 2:56:57 | 2:58:26 | 2:59:23 | 3:01:18 | 3:03:32 | 3:05:09 |
+  +----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+  
+Observe que os tempos já estão ordenados do menor para o maior. Por exemplo, para identificar o tempo da quadragésima sétima chegada, basta tomar a interseção da linha 7 com a coluna +40 para obter o tempo 2:55:36. 
+
+
+.. admonition:: Para refletir
+
+   * Como você calcularia a média de valores em horas, minutos e segundos como os da tabela?
+   
+   * Como você construiria um histograma com estes dados? Como você definiria os limites dos intervalos? (Consulte a :ref:`ativ-construcao-histograma` do capítulo **A Natureza da Estatística** em caso de dúvida.)  
+   
+   * Qual o maior tempo em que uma corredora deveria completar a maratona para ficar entre as 25 primeiras? E entre as 50 primeiras?
+
+.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para mulheres (em horas)
+
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  |    |+0     |+10    |+20    |+30    |+40    |+50    |+60    |+70    |+80    |+90    |
+  +====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
+  | 1  | 2,448 | 2,534 | 2,714 | 2,829 | 2,900 | 2,949 | 2,976 | 2,993 | 3,023 | 3,061 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 2  | 2,465 | 2,536 | 2,741 | 2,833 | 2,912 | 2,951 | 2,977 | 2,995 | 3,024 | 3,063 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 3  | 2,469 | 2,555 | 2,747 | 2,834 | 2,914 | 2,953 | 2,981 | 2,995 | 3,024 | 3,067 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 4  | 2,493 | 2,569 | 2,756 | 2,835 | 2,918 | 2,961 | 2,981 | 2,996 | 3,028 | 3,068 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 5  | 2,494 | 2,573 | 2,764 | 2,853 | 2,924 | 2,964 | 2,982 | 2,998 | 3,036 | 3,071 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 6  | 2,494 | 2,611 | 2,779 | 2,884 | 2,926 | 2,964 | 2,984 | 2,999 | 3,037 | 3,073 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 7  | 2,495 | 2,623 | 2,784 | 2,884 | 2,927 | 2,964 | 2,984 | 3,000 | 3,044 | 3,077 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 8  | 2,499 | 2,626 | 2,792 | 2,884 | 2,928 | 2,969 | 2,986 | 3,000 | 3,044 | 3,080 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 9  | 2,523 | 2,650 | 2,793 | 2,889 | 2,946 | 2,973 | 2,988 | 3,013 | 3,048 | 3,083 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | 10 | 2,529 | 2,669 | 2,827 | 2,894 | 2,949 | 2,974 | 2,990 | 3,021 | 3,059 | 3,085 |
+  +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
+1. Construa um histograma destes dados, completando a tabela a seguir, que indica os intervalos de classe. Que características da distribuição dos 100 melhores tempos para mulheres podem ser destacadas, analisando-se o histograma construído?
+
+   .. table:: Guia para a contagem de frequências dos intervalos 
+
+     +-----------------+------------+
+     | Intervalo       | Frequência |
+     +-----------------+------------+
+     | [2,448 ; 2,512[ |            |
+     +-----------------+------------+
+     | [2,512 ; 2,576[ |            |
+     +-----------------+------------+
+     | [2,576 ; 2,639[ |            |
+     +-----------------+------------+
+     | [2,639 ; 2,703[ |            |
+     +-----------------+------------+
+     | [2,703 ; 2,767[ |            |
+     +-----------------+------------+
+     | [2,767 ; 2,831[ |            |
+     +-----------------+------------+
+     | [2,831 ; 2,895[ |            |
+     +-----------------+------------+
+     | [2,895 ; 2,958[ |            |
+     +-----------------+------------+
+     | [2,958 ; 3,022[ |            |
+     +-----------------+------------+
+     | [3,022 ; 3,085[ |            |
+     +-----------------+------------+
+
+
+   .. _hist-maratona-mulheres:
+
+   .. figure:: _resources/Histograma_mulheres.png
+      :width: 200pt
+      :align: center
+
+      Eixos para a criação do histograma
+
+
+2. Calcule o tempo médio dos 100 melhores tempos das corredoras, sabendo que a soma dos tempos foi 286,978 horas. Localize o valor encontrado no eixo horizontal do histograma. Em que posição ficaria uma corredora cujo tempo no qual completou a maratona é igual ao tempo médio calculado neste item?
+
+3. Trace linhas verticais no histograma no tempo que separa os primeiros 25 lugares, no tempo que separa os primeiros 50 e no tempo que separa os últimos 25 lugares. As marcações dos tempos de posições 25, 50 e 75 neste conjunto de 100 observações são chamadas de quartis da distribuição, este conceito será formalizado adiante.
+
+4. Considerando as marcações realizadas no item anterior, determine as medidas das áreas no histograma correspondentes aos seguintes intervalos
+
+   1. posição 1 até a posição 25;
+   2. posição 25 até a posição 50;
+   3. posição 50 até a posição 75;
+   4. posição 75 até a posição 100; 
+
+   e compare-as.
+   
+5. Calcule os comprimentos dos intervalos de tempo considerados no item anterior e compare-os.
+
+6. O valor obtido para o tempo médio coincide com alguma das outras marcas feitas no histograma? 
+
+7. Observe que o tempo médio e o tempo da posição 50 são diferentes. Você poderia explicar por que eles são diferentes? 
+
+
+
+
+
+ 
+
+
+
+  
 

@@ -1,45 +1,435 @@
-***********************************************
+.. _sec-explorando3:
+
+
+===============================================
 Explorando: Avaliação da magnitude da variância
-***********************************************
+===============================================
 
-.. _ativ-titulo-da-atividade:
+.. _ativ-inflacao-anual:
 
------------------
-Atividade: Título
------------------
+-------------------------
+Atividade: Inflação anual
+-------------------------
+
+.. admonition:: Para o professor
+
+ **Objetivos específicos** 
+ 
+ Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas suas médias são diferentes. 
+ 
+ Perceber a necessidade de definir uma medida que avalie a magnitude da variância (desvio padrão) em relação à média.
+ 
+ **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância. Como o dado observado é a inflação anual de um país, a atividade começa com um pequeno texto introdutório sobre inflação.
+ 
+A seguir são apresentados dados sobre as inflações anuais em dois países. Antes de trabalhar com os dados, vamos tentar explicar o que é :index:`inflação<inflação>`. De uma maneira bem simples, pode-se dizer que a inflação é o aumento contínuo nos preços de produtos e serviços. Esse aumento costuma ser avaliado de forma mensal, gerando os índices de inflação, que refletem a variação nos preços.
+
+A inflação pode ser medida de várias formas. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
+`link <https://www.youtube.com/watch?v=JVcDZOlIMBk>`_, um vídeo produzido pelo IBGE, explicando o IPCA.
+
+Foram observadas as inflações anuais de dois países A e B para os anos de 2011 a 2015, conforme tabela a seguir. 
+
+.. table:: Inflação anual
+
+ +------+-------+--------+--------+-------+-------+--------+
+ | País | 2011  | 2012   | 2013   | 2014  | 2015  | soma   |
+ +------+-------+--------+--------+-------+-------+--------+
+ | A    | 2,00% | 1,80%  | 2,10%  | 2,20% | 1,90% | 10,00% |
+ +------+-------+--------+--------+-------+-------+--------+
+ | B    | 0,01% | -0,19% | -0,09% | 0,21% | 0,11% | 0,05%  |
+ +------+-------+--------+--------+-------+-------+--------+
+   
+1. Calcule as médias anuais de inflação dos dois países. Há diferenças entre elas?
+
+2. Calcule as variâncias das inflações anuais dos dois países, sabendo que para o país A, `\displaystyle{\sum^5_{i=1}}x^2_i=20,1`  (% `^2` ) e para o país B,  `\displaystyle{\sum^5_{i=1}}x^2_i=0,1005`  (% `^2` ). Há diferença entre elas?
+
+3. Qual dos países apresenta maior flutuação inflacionária quando comparada à média inflacionária? 
+
+
+.. admonition:: Resposta 
+
+   1. No país A, a inflação média anual, considerando estes 5 anos, é    `\bar{x}=\frac{10}{5}=2,00` %. No país B, a inflação média anual, considerando estes 5 anos, é `\bar{x}=\frac{0,05}{5}=0,01` %. Logo, as inflações anuais médias dos dois países são bem diferentes.
+   
+   2. Usando a fórmula simplificada para o cálculo da variância, temos, para o país A, `\textsf{s}^2=\frac{1}{5-1}\left (20,1-5\cdot 2^2\right )= 0,025` (% `^2` ). Para o país B, temos `\textsf{s}^2=\frac{1}{5-1}\left (0,1005-5\cdot 0,01^2\right )= 0,025` (% `^2` ). Logo, as variâncias destes dois conjuntos de inflações anuais são iguais e, consequentemente, os desvios padrões também são iguais. 
+   
+   3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
+
+
+.. _sec-oi-cv:
+
+
+==============================================
+Organizando as ideias: Coeficiente de variação
+==============================================
+
+Nem sempre uma variância pequena (e consequentemente desvio-padrão pequeno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
+
+Um conjunto de dados é classificado como relativamente homogêneo, se a dispersão em torno da média (desvio padrão) é pequena comparada ao valor da média. Os dados são ditos heterogêneos, se a dispersão em torno da média for moderada comparada ao valor da média. Os dados são superdispersos,  se a dispersão em torno da média for grande comparada à média. 
+
+Na atividade anterior, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? 
+
+A resposta a esta pergunta será dada pela definição de :index:`coeficiente de variação<coeficiente de variação>`.
+
+.. glossary::
+
+   Coeficiente de variação 
+      é a razão entre o desvio padrão e a média. Em geral, ele é descrito em termos percentuais. 
+      
+O coeficiente de variação amostral, em termos percentuais, é calculado  por 
+
+.. math::
+
+   CVA=\frac{s}{\bar{x}}\cdot 100 \%
+
+em que `s` é o desvio padrão amostral e `\bar{x}` é a média amostral.
+   
+Esta expressão é usada quando dispomos de uma amostra da população. Se, dispomos dos dados da população, então o coeficiente de variação populacional é dado por  
+
+.. math::
+
+   CVP=\frac{{\sigma}}{\mu}\cdot 100\%
+   
+em que `\sigma` é o desvio padrão populacional e `\mu` é a média populacional.
+
+Observe que o coeficiente de variação só é definido para conjuntos cuja média é diferente de zero.
+
+Uma escala que costuma ser utilizada para avaliar o coeficiente de variação é apresentada a seguir.
+
+.. table:: escala de heterogeneidade dos dados
+   
+   +-----------------------+--------------------------------+
+   | Faixa de valores      | Classificação do conjunto      |
+   +-----------------------+--------------------------------+
+   | [0%; 50%[             | dados relativamente homogêneos |
+   +-----------------------+--------------------------------+
+   | [50%; 100%[           | dados heterogêneos             |
+   +-----------------------+--------------------------------+
+   | Maior ou igual a 100% | dados com superdispersão       |
+   +-----------------------+--------------------------------+
+   
+
+
+
+
+.. _sec-praticando3:
+
+====================
+Praticando o assunto
+====================
+
+
+.. _ativ-comparacao-dois-tipos-de-bonificacao:
+
+
+-----------------------------------------------------------------------------
+Atividade: Comparação das duas possibilidades de bonificação na Nota de Artes
+-----------------------------------------------------------------------------
+
 
 
 .. admonition:: Para o professor
 
- **Objetivos específicos** Ler, Analisar,...
+   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
+   
+   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas em sua turma seja o mais homênea possível em relação à média, ou seja, apresente o menor coeficiente de variação.
+   
+Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que o professor deseja que o resultado geral de sua turma seja o mais homogêneo possível em relação à média da turma. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
 
- **Observações e sugestões** 
- 
+Para facilitar, use as informações a seguir.
 
-*********************
-Organizando as ideias
-*********************
-
-
-
-
-
-
-
-**********
-Praticando
-**********
+.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
+   
+   +------------+---------+---------+----------+
+   | `n=35`     | antes   | 1 pt    | 20%      |
+   +------------+---------+---------+----------+
+   | `\sum x`   | 207,5   | 242,5   | 249,0    |
+   +------------+---------+---------+----------+
+   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
+   +------------+---------+---------+----------+
 
 
- 
-***************
+
+
+.. admonition:: Resposta 
+
+   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média, conforme os cálculos a seguir.
+   
+   Considerando o acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. 
+   A variância, calculada por `s^2` é dada por `\frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
+   
+   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por `\frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
+   
+
+.. _ativ-transformacao-de-adicao:
+
+--------------------------------------------------------------------------------
+Atividade: Efeito no coeficiente de variação por uma transformação de adição
+--------------------------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Obter uma expressão geral para o cálculo de medidas de posição e dispersão, quando os dados são transformados pela adição de uma constante.
+   
+   **Observações e sugestões** Esta atividade buscará formalizar o que já foi feito na :ref:`ativ-comparacao-dois-tipos-de-bonificacao` para uma situação genérica. A ideia é levar o estudante a concluir que ao adicionar uma constante a todos os dados, as medidas de posição serão afetadas igualmente pela adição de uma constante, mas, as medidas de dispersão não serão afetadas. Desse modo, se o valor da constante for positivo, a média aumentará e o desvio padrão permanecerá o mesmo, acarretando na diminuição do coeficiente de variação após a transformação. Se a constante for negativa, a transformação acarretará no aumento do coeficiente de variação. Na seção de exercícios, foi proposta uma atividade similar, considerando a transformação de multiplicação por uma constante positiva.
+   
+   A caixa para refletir sugere uma discussão em sala de aula de modo a estender as conclusões desta atividade para as demais medidas de posição e de dispersão trabalhadas neste capítulo, ou seja, 
+   
+   #. medidas de posição: todas são afetadas pela mesma trasnformação, 
+      
+   #. medidas de dispersão: não são afetadas pela transformação de adição de uma constante.
+   
+Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
+
+Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que 
+
+.. math::
+
+   y_i=x_i+a,\quad  i=1,2,\cdots, n  
+   
+e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` .
+
+#. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
+
+#. Em função do desvio padrão do conjunto inicial, `s`, determine o desvio padrão do novo conjunto.
+
+#. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. São iguais? Por quê?  
+
+
+.. admonition:: Resposta 
+
+    a) A média do novo conjunto será dada pela média inicial acrescida da constante `a`, pois
+    `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{x_1+a+x_2+a+\cdots+x_n+a} {n}=`
+    `\frac{\displaystyle{\sum^n_{i=1}}x_i+n\cdot a}{n}=\frac{\displaystyle{\sum^n_{i=1}}x_i}{n}+\frac{n\cdot a}{n}=\bar{x}+a` .
+      
+    b) Podemos verificar que a soma dos desvios da média tomados ao quadrado é a mesma nos dois conjuntos, pois `\displaystyle{\sum^n_{i=1}}(y_i-\bar{y})^2=\displaystyle{\sum^n_{i=1}}[\underbrace{x_i+a}_{=y_i}-(\overbrace{\bar{x}+a)}^{=\bar{y}}]^2=\displaystyle{\sum^n_{i=1}}(x_i-\bar{x})^2`.
+    Portanto, a variância do novo conjunto, denotada por `s^2_y` será igual à variância do conjunto inicial, a saber, `s^2_y=s^2` e, assim, o desvio padrão do novo conjunto será igual ao desvio padrão do conjunto inicial, `s_y=s`.
+    
+    c) Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{s_y}{\bar{y}}\cdot 100=\frac{s}{\bar{x}+a}\cdot 100`. Logo, se o `a>0`, o coeficiente de variação do novo conjunto será menor do que o coeficiente de variação do conjunto inicial. Porém, se `a<0`, o coeficiente de variação do novo conjunto será maior do que o coeficiente de variação do conjunto inicial.
+    
+    
+.. admonition:: Para Refletir 
+
+   1. Mantendo a mesma situação da :ref:`ativ-transformacao-de-adicao`, compare as demais medidas de posição do novo conjunto com o conjunto inicial, considerando as medidas apresentadas neste capítulo.  O que você pode concluir?
+   
+   2. Compare as demais medidas de dispersão do novo conjunto com as do conjunto inicial, considerando as medidas apresentadas neste capítulo. O que você pode concluir?
+   
+
+
+.. _sec-parasabermais:
+
+===============
 Para saber mais
-***************
+===============
+
+Ao longo deste capítulo foram apresentadas atividades cujos objetivos eram coletar, calcular e interpretar informações sobre a distribuição dos dados de um conjunto `\{x_1,x_2,\cdots, x_n\}`, utilizando medidas de posição e dispersão. 
+
+Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística, é conhecido como :index:`boxplot` (gráfico caixa). A construção deste gráfico é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
+
+1. mínimo (`\textsf{Min}=x_{(1)}`), 
+2. primeiro quartil (`\textsf{Q}1`), 
+3. mediana (`\textsf{Q}2`), 
+4. terceiro quartil (`\textsf{Q}3`) e 
+5. máximo (`\textsf{Max}=x_{(n)}`). 
+
+Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque/2017.
+
+
+.. _fig-boxplotmulheres:
+.. figure:: _resources/boxplotmulheres.png
+   :width: 200pt
+   :align: center
+
+   Boxplot dos 100 melhores tempos na Maratonona de Nova Iorque/2017 na categoria mulheres
+
+O primeiro passo na construção do boxplot é traçar um eixo na escala dos dados observados, que pode ter orientação tanto vertical como horizontal, e, depois, desenhar um retângulo cujas bases correspondem ao primeiro e ao terceiro quartis, de acordo com o eixo. Em seguida, traça-se um segmento paralelo às bases, correspondendo ao valor da mediana. Veja a figura a seguir, considerando o eixo na escala dos dados com orientação vertical.
+
+
+.. _fig-caixadoboxplot:
+
+.. figure:: _resources/boxplotcaixa_2.png
+   :width: 200pt
+   :align: center
+
+   Caixa do boxplot
+
+
+A distância entre quartis (`\textsf{DQ}=\textsf{Q}3-\textsf{Q}1`) é a medida de dispersão utilizada na classificação de :index:`valores atípicos<valores atípicos>` da distribuição, isto é, valores que destoam dos demais no conjunto de dados. 
+
+O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
+
+Defina 
+
+.. math::
+
+   \textsf{cerca inferior}=\textsf{Q}1-1,5\cdot \textsf{DQ}\textsf{ e }\textsf{cerca superior}=\textsf{Q}3+1,5\cdot \textsf{DQ}
+
+
+
+Se `x_i< \textsf{cerca inferior}` ou `x_i> \textsf{cerca superior}` , então `x_i` é classificado como valor atípico, e assinalado no boxplot com um asterisco ou algum outro caracter, de acordo com o eixo na escala dos dados. Veja figura a seguir.
+
+
+.. _fig-valoresatipicosnoboxplot:
+
+.. figure:: _resources/boxplotdq_2.png
+   :width: 300pt
+   :align: center
+
+   Valores atípicos no boxplot
+   
+Na finalização da contrução do boxplot, traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando nos maior e menor valores não atípicos observados. Veja figura a seguir.
+
+.. _fig-finalizacaodoboxplot:
+
+.. figure:: _resources/boxplotcompl_1.png
+   :width: 300pt
+   :align: center
+
+   Ilustração do boxplot
+
+A figura a seguir ilustra um boxplot quando não há valores atípicos no conjunto de dados. Observe que neste caso, destacam-se no gráfico as medidas do esquema dos cinco números.
+
+.. _fig-boxplotsemvaloratipico:
+
+.. figure:: _resources/boxplotx_1.png
+   :width: 200pt
+   :align: center
+
+   Boxplot quando não há valores atípicos
+  
+O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão no intervalo delimitado pela  caixa (retângulo) e, a outra metade, está nos dois intervalos delimitados fora da caixa, sendo 25% acima e 25% abaixo da caixa. 
+
+As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetria da distribuição. Por exemplo, se
+
+#. `\textsf{mediana} -\textsf{Q}1\approx \textsf{Q}3-\textsf{mediana}`
+ 
+#. `\textsf{Q}1-x_{(1)} \approx x_{(n)}-\textsf{Q}3`
+
+#. `\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
+
+podemos concluir que a distribuição é aproximadamente simétrica, porém se alguns destes pares de intervalos apresentarem comprimentos muito diferentes, isso indica que a distribuição apresenta algum tipo de assimetria.
+
+Analisando o :ref:`fig-boxplotmulheres` podemos observar que 
+
+#. não existem valores atípicos;
+#. o melhor tempo é ligeiramente inferior a 2,5 h e, o centésimo tempo, é ligeiramente inferior a 3,1 h;
+#. o tempo que corresponde à mediana está entre 2,9 h e 3,0 h;
+#. o primeiro quartil está próximo de 2,8 h e, o terceiro, próximo de 3,0 h e que 
+#. a distribuição dos 100 melhores tempos na categoria mulheres apresenta assimetria à esquerda. Verifique que
+
+`\textsf{mediana} -\textsf{Q}1 > \textsf{Q}3-\textsf{mediana}`
+ 
+`\textsf{Q}1-x_{(1)} >> x_{(n)}-\textsf{Q}3`
+
+`\textsf{mediana}-x_{(1)}>> x_{(n)}-\textsf{mediana}`  em que o símbolo `>>` é usado para representar "bem  maior do que".
+
+
+Os valores exatos destas medidas estão na figura :ref:`fig-medidasresumo4categorias`.
+
+Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades da distribuição normal de probabilidades que não faz parte do conteúdo de Estatística a ser abordado no Ensino Médio. Entre várias propriedades desta distribuição, destaca-se que ela é simétrica e unimodal tal que média, mediana e moda são iguais. Veja na figura a seguir uma ilustração da densidade normal com média `\mu` e desvio padrão `\sigma`, também conhecida como a curva em forma de sino.
+
+
+.. _fig-densidade-normal:
+
+.. figure:: _resources/densidadenormal_1.png
+   :width: 300pt
+   :align: center
+
+   Densidade Normal com região colorida no intervalo entre `\mu-\sigma` e `\mu+\sigma` , cuja área corresponde a aproximadamente 0,67 da área total igual a 1. 
+
+
+A regra empírica estabelece que em distribuições aproximadamente simétricas para as quais a presença de valores atípicos é muito rara ou não existem valores atípicos, 
+
+#. a frequência relativa de valores no intervalo `[\bar{x}-s;\bar{x}+s]` é aproximadamente 67%,
+#. a frequência relativa de valores no intervalo `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]` é aproximadamente 95%.
+
+No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de casos nos intervalos `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`, obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à direta.  
+
+O boxplot é muito útil na comparação de diferentes grupos, como veremos na atividade a seguir. 
+
+.. _ativ-comparacaodegruposusandoboxplot:
+
+------------------------------------------------------
+Atividade: Modalidades da Maratona de Nova Iorque 2017
+------------------------------------------------------
+
 
 .. admonition:: Para o professor
 
- **Objetivos específicos** Ler, Analisar,...
+   **Objetivos específicos** Comparar diferentes conjuntos de dados, considerando a mesma variável.
+   
+   **Observações e sugestões** Nesta atividade retomaremos as quatro categorais da maratona de Nova Iorque para usar o boxplot como esquema gráfico para auxiliar na comparação dos resultados para as diferentes categorias, a saber, homens, mulheres, cadeira de rodas e triciclo de mão. Os dados estão disponíveis neste `link <https://ggbm.at/ZhqKD9Nz>`_.
 
- **Observações e sugestões**  
+Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na maratona de Nova Iorque no ano de 2017 para as categorias homens e mulheres e os melhores tempos para as categorias cadeira de rodas e triciclo de mão e as medidas resumo calculadas pelo GeoGebra para as quatro categorias.
+
+
+.. _fig-boxplotsmaratona:
+
+.. figure:: _resources/boxplots_maratona.png
+   :width: 400pt
+   :align: center
+
+   Boxplots para os 100 melhores tempos das categorias homens e mulheres e dos melhores tempos das categorias cadeira de rodas e triciclo de mão da maratona de Nova Iorque/2017
+   
+
+.. _fig-medidasresumo4categorias:
+
+.. figure:: _resources/resumo-quatrocategorias.png
+   :width: 500pt
+   :align: center
+
+   Medidas resumo para as quatro categorias da maratona de Nova Iorque/2017  
+ 
+   
+1. Qual das modalidades apresentou maior dispersão?
+2. Qual(ais) modalidade(s) apresentaram valores atípicos?
+3. Como você avalia, em relação à simetria, cada uma das distribuições?
+4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres, usando a figura a seguir.
+
+.. _fig-boxplothm:
+
+.. figure:: _resources/bphm_1.png
+   :width: 300pt
+   :align: center
+
+   Boxplot dos 100 melhores tempos para homens e mulheres na maratona de Nova Iorque/2017
+   
+5. Faça uma análise comparativa das distribuições das modalidades cadeira de rodas e triciclo de mão. 
+
+
+.. admonition:: Resposta 
+
+   1. Considerando a amplitude amostral é fácil perceber que a maior dispersão ocorre na categoria triciclo de mão. O mesmo vale se considerarmos a distância entre quartis. Pela :ref:`fig-medidasresumo4categorias` podemos ver que esta resposta também valerá se considerarmos o desvio padrão. 
+   
+   2. Pela :ref:`fig-boxplotsmaratona` podemos ver que a única categoria que não apresentou valores atípicos foi a categoria das mulheres, pois não há pontos destacados no boxplot correspondente às mulheres.
+   
+   3. Considerando as categorias "cadeira de rodas" e "triciclo de mão", vemos que 
+   
+   `\textsf{Q1-Min}<< \textsf{Max-Q}3`; 
+   
+   `\textsf{Mediana-Q}1< \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} <<\textsf{Max-mediana}`, em que o símbolo `<<` é usado para indicar "bem menor do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à direita acentuada. Observe, que nestes dois casos tem-se que a mediana é menor do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   Considerando as categorias "homens" e "mulheres", vemos que 
+   
+   `\textsf{Q1-Min}>> \textsf{Max-Q}3`; 
+   
+   `\textsf{Mediana-Q}1 > \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} >>\textsf{Max-mediana}`, em que o símbolo `>>` é usado para indicar "bem maior do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à esquerda acentuada. Observe, que nestes dois casos tem-se que a mediana é maior do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetria à esquerda, mas na categoria mulheres não há valores atípicos. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   5. Considerando as categorias "cadeira de rodas" e "triciclo de mão" vemos que na primeira, 51 completaram a maratona e, na segunda, 69 completaram a maratona. Quanto à amplitude, vemos que ela foi maior na cetegoria "triciclo de mão", valendo o mesmo para a distância entre quartis e para o desvio padrão. Possivelmente, esta diferença nas dispersões das duas categorias esteja sendo acarretada pelo maior valor atípico da categoria "triciclo de mão", a saber, 9,5206 h. Já foi observado que ambas as categorias apresentam distribuições com assimetria à direita de modo que a mediana é menor do que a média.
+   Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+
+
+
+
+
+
  
  
