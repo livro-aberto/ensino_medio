@@ -1,5 +1,8 @@
 .. HJB: não esquecer de incluir "Você sabia?" sobre as propagandas em campos de futebol, HUD, AR, ...
 
+.. HJB: não esquecer de mencionar para o professor que as atividades são um excelente exercício de Geometria de Posição (atualmente há ênfase em medidas na Geometria Espacial).
+
+
 ***********************************************
 Praticando o assunto
 ***********************************************
@@ -348,7 +351,7 @@ Atividade: Construindo Objetos Geométricos Peculiares
       .. figure:: _resources/geb-01.png
          :width: 200pt
       
-         GEB (fonte: ` Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_)
+         GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
       
    Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
    
@@ -380,32 +383,117 @@ Atividade: Retas Paralelas e O Infinito
 
    **Objetivo específico:** compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
    
+   **Observações e recomendações:**
+   
+   * No que se segue, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
+   
+   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de poder girar a cena e poder escolher direções diferentes para a reta `r`.
    
 
-Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
+   
+   
+
+Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
 
    .. _fig-proj-infinito-01:
 
    .. figure:: _resources/infinito-01.jpg
+    
+      Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
 
-      Corredores paralelos (fonte: PEXELS e Wikimedia Commons) 
-
-..     Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_
+.. Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_.
 
 
 Este tipo de situação é traduzido pela frase popular "Retas paralelas se encontram no infinito!". Note, contudo, que as retas paralelas na cena tridimensional **nunca** se encontram. A concorrência ocorre para os prolongamentos das projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção.
 
-#. Considere uma projeção em perspectiva determinada por um centro `O`
+**PARTE 1.**
+
+Vamos primeiro compreender como a projeção em perspectiva de uma reta não paralela ao plano de projeção pode ser obtida por meio da interseção de dois planos. Caso queira acompanhar os passos descritos a seguir com um modelo interativo que pode ser girado e ampliado, acesse (inclusive do seu celular) o endereço: <https://www.geogebra.org/m/pcx56y49>.
+
+
+Como na :numref:`fig-proj-infinito-02`, considere uma projeção em perspectiva determinada por um centro `O` e um plano de projeção `\pi`. Suponha que o ponto `O` *não pertença* ao plano `\pi`. Considere também uma reta `r` não paralela ao plano `\pi` e que não passa pelo ponto `O`.
+
+.. _fig-proj-infinito-02:
+
+.. figure:: _resources/infinito-02_2.jpg
+
+   Projeção em perspectiva de uma reta: passo 1.
    
+Para determinar a projeção em perspectiva de uma reta `r`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e o centro `O` com o plano `\pi`. A :numref:`fig-proj-infinito-03`     exibe as projeções `A'`, `B'` e `C'` dos pontos `A`, `B` e `C` da reta `r`.
+   
+.. _fig-proj-infinito-03:
+
+.. figure:: _resources/infinito-03_3.jpg
+
+   Projeção em perspectiva de uma reta: passo 2.
+   
+Observe que os pontos da reta `r` projetados pertencem ao plano `\pi` e, também, ao plano `\phi` que passa por `O` e contém a reta `r`, conforme a :numref:`fig-proj-infinito-04`.
+
+.. _fig-proj-infinito-04:
+
+.. figure:: _resources/infinito-04.jpg
+
+   Projeção em perspectiva de uma reta: passo 3.
+
+Em particular, os pontos da reta `r` projetados no plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
+
+.. _fig-proj-infinito-05:
+
+.. figure:: _resources/infinito-05_3.jpg
+
+   Projeção em perspectiva de uma reta: passo 4.
+
+Existe uma reta `s` que passa por `O` e é paralela a reta `r`. Essa reta pertence ao plano `\phi` e intersectará o plano `\pi` e, portanto, a reta `r'` em um ponto `F`, conforme a :numref:`fig-proj-infinito-06`.
+
+.. _fig-proj-infinito-06:
+
+.. figure:: _resources/infinito-06_1.jpg
+
+   Projeção em perspectiva de uma reta: passo 5.
+
+
+**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção no plano `\pi` seja o ponto `F`. Por quê? 
+
+Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim, uma reta menos um ponto: `r' - \{F\}`. Se prolongarmos esta projeção incluindo o ponto `F`, obteremos uma reta: `r'`.
+
+**Pergunta 2.** Suponha no que foi feito até agora, a reta `r` seja trocada por uma outra reta diferente, mas paralela a reta `r`. O ponto `F` para esta nova reta será o mesmo, não mudará. Por quê?
+
+**Pergunta 3.** Supomos inicialmente que a reta `r` não passa pelo ponto `O`. O que mudaria no que foi feito se `O` fosse um ponto de `r`?
+
+
+Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções no plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
+Isto também explica a "convergência"
+das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito-01`.
+
+.. _fig-proj-infinito-08:
+
+.. figure:: _resources/infinito-08.jpg
+
+   Projeção em perspectiva de um feixe com 3 retas paralelas (<https://www.geogebra.org/m/EAuVTyTG>).
+
+
+.. _fig-proj-infinito-09:
+
+.. figure:: _resources/infinito-09_1.jpg
+
+   Projeção em perspectiva de um feixe com muitas retas paralelas (<https://www.geogebra.org/m/ycxHtZEP>).
+
+
+**Pergunta 4.** Qual é a projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção? Faça uma conjectura e justifique-a!
+
+**PARTE 2**
+
+**Pergunta 1.** O desenvolvimento feito na PARTE 1 trata de projeções em perspectiva de retas paralelas. O que pode ser dito sobre *projeções paralelas de retas paralelas*? Faça uma conjectura e justifique-a!
+
+**PARTE 3.**
 
 
 
+.. admonition:: Para refletir
 
-   
-   
-.. figure:: _resources/2017-12-15_05-14-38.jpg
-   :width: 400pt
-   
-   Fonte: <http://www.gocomics.com/bc>.
+    .. figure:: _resources/2017-12-15_05-14-38.jpg
+       :width: 400pt
+
+       Fonte: <http://www.gocomics.com/bc>.
    
    
