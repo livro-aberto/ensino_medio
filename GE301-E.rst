@@ -457,15 +457,33 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
   `17.` A
   
   `18.` E
-  
-  
-`XX.` Vimos que uma projeção paralela com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`, com a direção do vetor não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
 
-#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção do vetor `\vec{v}` não seja paralela ao plano `\pi`?   
+`XX.` Vimos que uma projeção em perspectiva com relação a um centro `O` em um plano de projeção `\pi` pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi`, com `\psi` o plano paralela a `\pi` que passa por `O`.
+
+#. Por que ao se modelar uma projeção em perspectiva por meio de uma função, os pontos do plano `\psi` são excluídos do seu domínio? 
 
 #. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
    
 #. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3} - \psi`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
+   
+#. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
+   
+#. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
+
+#. Se o centro `O` é um ponto do plano de projeção `\pi`, determine `f(P)` para todo `P \in {\mathbb R}^{3} - \psi`.
+
+.. admonition:: Resposta
+
+  .. Lhaylla
+
+  
+`XX.` Vimos que uma projeção paralela com relação a uma direção `d` em um plano de projeção `\pi`, com a direção `d` não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
+
+#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção `d` não seja paralelo ao plano `\pi`?   
+
+#. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
+   
+#. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3}`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
    
 #. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
    
