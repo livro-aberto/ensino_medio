@@ -1,4 +1,3 @@
-
 .. admonition:: Resposta 
 
    1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
@@ -51,8 +50,31 @@
          :align: center
 	         
          Histograma dos tempos da categoria de mulheres na Maratona de NY mostrando os quartis, a mediana e a média
-
-
+         
+   4. Neste item deve-se observar que as marcações indicadas dividem o conjunto de dados em quatro intervalos de frequências absolutas iguais a 25, pois são 100 valores observados. Como o histograma é uma representação da distribuição de frequências, espera-se que as áreas correspondentes a cada um destes limites, sejam aproximadamente iguais a 1/4 da área total do histograma que é dada por 6,364 (para obter este valor soma-se os produtos dos comprimentos dos intervalos pela frequência dos intervalos=áreas dos retângulos). Se formos calcular diretamente da figura tais áreas, serão necessárias algumas aproximações, pois os tempos 25, 50 e 75 não são extremos dos intervalos considerados. Por esta razão é possível obter pequenas diferenças em relação ao valor esperado, a saber, `6,364/4\approx 1,59`. 
+    
+   5. Os comprimentos dos intervalos são dados por:
+    
+   +------------+-------------+
+   | Intervalo  | comprimento |
+   +------------+-------------+
+   | t1 a t25   | 0,316       |
+   +------------+-------------+
+   | t25 a t50  | 0,185       |
+   +------------+-------------+
+   | t50 a t75  | 0,049       |
+   +------------+-------------+
+   | t75 a t100 | 0,087       |
+   +------------+-------------+
+   
+   Lembre-se que se o histograma for construído considerando os intervalos acima, deve-se trabalhar com a escala de densidade de frequência (absoluta ou relativa: razão da frequência pelo comprimento do intervalo), pois os comprimentos dos intervalos são diferentes. No histograma construído nesta atividade, usou-se a escala da frequência absoluta, pois os intervalos considerados têm comprimentos iguais.
+   
+   6. Não coincide.
+   
+   7. Tem-se que o tempo médio foi 2,8698 e tempo da posição 50 foi 2,949 e, portanto, são diferentes. Adiante vamos trabalhar a razão desta diferença neste conjunto. Mas, observando a forma do histograma podemos perceber uma grande concentração de valores mais à direita e que o histograma é alongado à esquerda. Distribuições com esta aparência são ditas ter uma forma assimétrica à esquerda o que faz com que a média seja um valor puxado para baixo.
+     
+         
+    
 
 
 .. _sec-organizando1:
@@ -129,7 +151,7 @@ Cabe ressaltar que, se os dados são apresentados em tabelas de frequência, ind
 
 `\textsf{média}=\bar{x}=\frac{n_1\cdot x_{1}+n_2\cdot x_{2}+\cdots+n_c\cdot x_{c}}{\underbrace{n_1+n_2+\cdots n_c}_{=n}}` ou, equivalentemente, 
 
-`\textsf{média}=\bar{x}={f_1\cdot x_{1}+f_2\cdot x_{2}+\cdots+f_c\cdot x_{c}}=\displaystyle{\sum^n_{i=1}}f_i\cdot x_i` em que `f_i=\frac{n_i}{n}` corresponde à frequência relativa do `i` -ésimo valor observado.
+`\textsf{média}=\bar{x}={f_1\cdot x_{1}+f_2\cdot x_{2}+\cdots+f_c\cdot x_{c}}=\displaystyle{\sum^c_{i=1}}f_i\cdot x_i` em que `f_i=\frac{n_i}{n}` corresponde à frequência relativa do `i` -ésimo valor observado.
 
 Você já calculou a média dos dados das duas primeiras atividades, a saber, :ref:`ativ-Notas-de-Artes` e :ref:`ativ-maratona-de-NY`. Identifique nos histogramas correspondentes a posição em que estas médias ficaram.
 
