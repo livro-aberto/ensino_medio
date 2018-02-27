@@ -1,6 +1,8 @@
 *******************
-manual-do-professor
+Manual do Professor
 *******************
+
+As observações ao professor que tratam de atividades específicas ou sobre algum capítulo acompanham o material do estudante, embora apenas seja visível ao professor. As observações sobre a proposta pedagógica do material, sobre aspectos transversais da Matemática ou seu ensino estarão presentes neste Manual do Professor. 
 
 **HJB**
 
