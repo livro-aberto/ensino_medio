@@ -9,7 +9,7 @@ Exercícios
    :width: 200pt
    :align: center
 
-A projeção ortogonal, no plano \alpha, do caminho traçado no globo terrestre pode ser representada por:
+A projeção ortogonal, no plano `\alpha`, do caminho traçado no globo terrestre pode ser representada por:
 
 .. figure:: _resources/ENEM-2016-Q178-respoaseditadas-versao2.png
    :width: 135pt
@@ -73,7 +73,7 @@ Qual dos esboços a seguir melhor representa os anéis de Borromeo?
    :width: 300pt
    :align: center
    
-Medindo-se com uma régua diretamente na fotografia, verifica-se que a medida do queixo até o alto da cabeça da turista é igual a `\frac23` da medida do queixo da esfinge até o alto da sua cabeça. Considere que essas medidas na realidade são representadas por `d` e `d’`, respectivamente, que a distância da esfinge à lente da câmera fotográfica, localizada no plano horizontal do queixo da turista e da esfinge, é representada por `b`, e que a distância da turista à mesma lente, por `a`. A razão entre `b` e a será dada por: 
+Medindo-se com uma régua diretamente na fotografia, verifica-se que a medida do queixo até o alto da cabeça da turista é igual a `\frac23` da medida do queixo da esfinge até o alto da sua cabeça. Considere que essas medidas na realidade são representadas por `d` e `d’`, respectivamente, que a distância da esfinge à lente da câmera fotográfica, localizada no plano horizontal do queixo da turista e da esfinge, é representada por `b`, e que a distância da turista à mesma lente, por `a`. A razão entre `b` e `a` será dada por: 
 
 `\text{(A)}` `\frac{b}{a}=\frac{d'}{c}` 
 
@@ -345,35 +345,126 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
 
 .. admonition:: Resposta
 
-  `1.` E
+  `1.` Alternativa E. 
   
-  `2.` C
+  Os pontos `A` e `B` estão localizados sobre um mesmo paralelo do globo terrestre, isto implica que o arco `AB` está contido em um plano paralelo ao plano `\alpha`. Portanto sua projeção ortogonal em `\alpha` será também um arco congruente à `AB`. Já os pontos `B` e `C` estão localizados sobre um mesmo meridiano e não são simétricos em relação à linha do Equador. Se tormarmos um plano contendo `B`, `C` e o ponto de interseção do arco `BC` com a linha do Equador, ele conterá o arco `BC` e será perpendicular à `\alpha`. Logo, a projeção ortogonal do arco `BC` sobre o plano `\alpha` é um segmento de reta. Sendo assim, a projeção ortogonal do caminho traçado sobre o globo terrestre é a mostrada no item E.
   
-  `3.` B
+  `2.` Alternativa C
   
-  `4.` E
+  Os pontos `P, A` e `E` estão sobre uma mesma reta que é perpendicular ao piso da casa, logo a projeção ortogonal de `P, A` e `E` será coincidente. Como os pontos `A, B, C, D` e `E` equidistam do corrimão, a projeção ortogonal do corrimão será um ponto equidistante das projeções ortogonais dos pontos `A, B, C, D` e `E` e portanto, a projeção ortogonal do corrimão será o centro de um círculo `\mathcal C` que contém as projeções ortogonais dos pontos `A, B, C, D` e `E`. Além disso, os pontos `A, B, C, D` e `E` estão igualmente espaçados sobre o corrimão, portanto, como estamos interessados apenas no caminho percorrido de `A` até `D`, a projeção ortogonal procurada terá `3/4` do círculo `\mathcal C`. Logo, o item C contém a figura que melhor representa a projeção ortogonal pedida. 
   
-  `5.` D
+  `3.` Alternativa B
+  
+  Observe que, ao movimentar a gangorra, a trajetória dos pontos `A` e `B` estão contidas em um círculo centrado no pivô. Este círculo é perpendicular ao plano do chão, e portanto, devido a forma que o movimento é realizado, a projeção ortogonal da trajetória são dois segmentos de reta na horizontal, como os mostrados no item B.
+  
+  `4.` Alternativa E
+  
+  Observe que apenas o item E mostra o anel mais da direita à frente do anel da esquerda e por trás do anel superior. Portanto, a esboço que melhor representa os anéis de Borromeo é o do item E. 
+  
+  `5.` Alternativa D
+  
+  Para responder este exercício, basta observar que `d=\frac23 d'` e usar semelhança de triângulos. Veja a figura abaixo:
+  
+  .. _fig-projecoes-ENEM2009-solucao:
+
+  .. figure:: _resources/ENEM2009_esfinge2.png
+     :width: 150pt
+     :align: center
+  
+  Como o triângulo `ABC` é semelhante ao triângulo `ADE` (`\hat{A}` é ângulo comum aos dois triângulos e `m(\hat{B})=m(\hat{D})=90^0`), temos:
+  
+  .. math::
+
+     \frac{a}{b}=\frac{c}{2/3c'} \Longleftrightarrow \frac{b}{a}=\frac{2d'}{3c}.
+     
+   
+  Portanto, a opção correta é a apresentada no item D.  
   
   `6.` E
   
-  `7.` A
+  `7.` Alternativa A
+
+  Primeiramente, vamos escolher um dos cubinhos na figura inicial para estudar o que acontece com ele e ao seu redor. O cubinho escolhido está marcado com uma estrelinha vermelha na figura abaixo. Note que, esse cubinho deve aparecer bem na frente caso olhássemos o bloco por trás.
   
-  `8.` A
+  .. _fig-projecoes-OBM2014-solucao:
+
+  .. figure:: _resources/OBM2014-fase1N1-Q20-cantomarcado.png
+     :width: 150pt
+     :align: center
   
-  `9.` `a=1, b=c=3, d=e=2, f=1, x=3` e `m=0`
+  Portanto, já podemos excluir a alternativa apresentada em C, pois este cubinho foi pintado de preto na figura. Além disso, observe na figura acima que o cubinho marcado possui dois cubinhos adjacentes de cores diferentes. Isso não acontece na opção E, que também deve ser excluída. 
+  
+  Pelo enunciado, o bloco retangular possui seis cubinhos pretos e seis cubinhos brancos, mas pela figura conseguimos ver 6 cubinhos brancos e 4 cubinhos pretos. Isto quer dizer que os dois cubinhos que não estão visíveis na figura inicial, abaixo do cubo marcado com a estrelinha e embaixo do preto ao seu lado, são da cor preta. Assim, as possibilidade B e D também não são compatíveis com a figura inicial. Portanto, a opção apresentada no item A é a correta. 
+  
+  `8.` Alternativa A
+  
+  Vamos fazer uma contagem de baixo para cima de quantos blocos estão faltando em cada nível. O primeiro nível está totalmente completo. O segundo nível precisa de um bloco para ser completado, assim como o terceiro que possui exatamente a mesma configuração. Para completar o quarto nível, será preciso utilizar três blocos, assim como no quinto nível. Finalmente, no sexto nível são necessários quatro blocos para que ele fique completo. Portanto, no total utilizamos 12 blocos para contruir o paralelogramo pedido. Logo, a opção correta é a A.
+  
+  É importante observar que a construção do bloco poderia ser pensada de outras formas que não a sugerida acima. Como o volume do cubo inicial e da parte que falta ser completada são fixados, o número de blocos utilizados na solução será único independente da configuração.
+  
+  `9.` Para resolver esta questão precisamos observar as fatias de tamanho `3 \times 3 \times 1`, pois seu total de cubinhos será o mesmo independente de como a contagem for feita. Por exemplo, se considerarmos a fatia de tamanho `3 \times 3 \times 1` marcada com `1, 3, a, 2, 2` e `1`), é possível observar que:
+  
+  .. math::
+
+     1+3+a=2+2+1 \Longleftrightarrow a = 1.
+     
+  Observando diferentes fatias obtemos as seguintes equações diretamente:
+  
+  .. math::
+
+     1+2+1=m+2+2 \Longleftrightarrow m=0,
+     
+  .. math::
+
+     2+x+2=3+3+1 \Longleftrightarrow x=3,
+     
+  .. math::
+
+     a+1+d=1+3+m \Longleftrightarrow d=2. 
+     
+  Repare que na fatia que possui as marcações `c, b, 1, 2, x, 2` temos:
+  
+  .. math::
+
+     c+b+1=2+x+2 \Longleftrightarrow c+b=6.
+     
+  Como os valores de `b` e `c` podem ser no máximo 6, então concluímos que `b=c=3`. Seguindo então com o mesmo raciocínio, encontramos:
+  
+  .. math::
+
+     1+c+f=2+1+2 \Longleftrightarrow f = 1.
+      
+  .. math::
+
+     f+e+d=2+2+1 \Longleftrightarrow e=2.
+  
+  Concluímos então que: `a=1`, `b=c=3`, `d=e=2`, `f=1`, `x=3` e `m=0`.
   
 	  `10.` C
       
-  `11.` E
+  `11.` Alternativa E
   
-  `12.` B
+  Observando a cena de cima, o cubo menor e os dois cubos empilhados estão em cantos opostos e em diferentes linhas. Portanto, eliminamos as possibilidades A e D. Além disso, no sentido horário, estão posicionados: a pirâmide, o cubo, o cilindro e os dois cubos empilhados. A única alternativa, entre as opções B, C e E, em que podemos encontrar esta ordenação no sentido horário é a alternativa E. 
   
-  `13.` C
+  `12.` Alternativa B
+  
+  Na figura abaixo, os quadradinhos que estiveram em contato com o bloco na sua posição inicial foram marcados com um círculo vermelho e os números contidos no interior dos quadradinhos representam em qual giro tal quadradinho foi tocado pelo bloco. Por esta figura, concluímos que 19 quadradinhos foram tocados pelo bloco. Logo, a respota correta é a alternatica B.
+  
+  .. _fig-projecoes-OBM2005-solucao:
+
+  .. figure:: _resources/OBM2005_Q25_solucao.png
+     :width: 200pt
+     :align: center
+    
+  `13.` Alternativa C
+  
+  Note que as figuras I e III representam o mesmo objeto em posições diferentes, mas não representam o objeto dado (este é o espelhamento do objeto dado em relação a coluna de dois cubinhos). A figura II representa o objeto dado visto por trás. Já a figura IV também representa o objeto dado, após duas rotações consecutivas. Portanto, a alternativa correta é a C.
   
   `14.` B
+    
+  `15.` Alternativa B
   
-  `15.` B
+  Na opção A, o círculo preto está acima do círculo branco, então a estrelinha deveria estar à direita do círculo branco, mas não está. Logo A não é a resposta correta, assim como E, que contém o mesmo cubo de A. Em C, o círculo branco foi colocado acima da estrelinha, logo o círculo preto deveria estar à direita da estrelinha, mas não está. Portanto, C também não pode ser a resposta, assim como D que contém o mesmo cubo de C. Na alternativa B, o círculo preto está abaixo do círculo branco e à direita da estrelinha, exatamente como foi desenhado na cartolina. Portanto, a resposta correta é a B.
   
   `16.` A
   
@@ -381,14 +472,38 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
   
   `18.` E
   
+  A alternativa correta é a E, pois uma circunferência contida em um plano perpendicular ao plano de projeção é um segmento de reta.
+  
+  
   
 `XX.` Vimos que uma projeção paralela com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`, com a direção do vetor não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
 
-#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção do vetor `\vec{v}` não seja paralela ao plano `\pi`?   
+`XX.` Vimos que uma projeção em perspectiva com relação a um centro `O` em um plano de projeção `\pi` pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi`, com `\psi` o plano paralela a `\pi` que passa por `O`.
+
+#. Por que ao se modelar uma projeção em perspectiva por meio de uma função, os pontos do plano `\psi` são excluídos do seu domínio? 
 
 #. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
    
 #. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3} - \psi`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
+   
+#. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
+   
+#. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
+
+#. Se o centro `O` é um ponto do plano de projeção `\pi`, determine `f(P)` para todo `P \in {\mathbb R}^{3} - \psi`.
+
+.. admonition:: Resposta
+
+  .. Lhaylla
+
+  
+`XX.` Vimos que uma projeção paralela com relação a uma direção `d` em um plano de projeção `\pi`, com a direção `d` não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
+
+#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção `d` não seja paralelo ao plano `\pi`?   
+
+#. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
+   
+#. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3}`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
    
 #. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
    

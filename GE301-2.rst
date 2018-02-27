@@ -1,5 +1,8 @@
 .. HJB: não esquecer de incluir "Você sabia?" sobre as propagandas em campos de futebol, HUD, AR, ...
 
+.. HJB: não esquecer de mencionar para o professor que as atividades são um excelente exercício de Geometria de Posição (atualmente há ênfase em medidas na Geometria Espacial).
+
+
 ***********************************************
 Praticando o assunto
 ***********************************************
@@ -51,11 +54,29 @@ Atividade: Feixe de Retas
 
 
 
+.. Lhaylla Cabe falar de superfície cilindríca e cônica?
+
 .. admonition:: Resposta
 
-   .. Lhaylla
+  #. Projeções em Perspectiva
 
-
+     * Se você respondeu que a superfície obtida ao desenhar todas as retas que passam por `O` e por pontos do círculo é um cone, sua intuição está te levando na direção correta, mas do ponto de vista matemático precisamos ser mais cuidadosos. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos um cone circular reto. Portanto, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cone. Mas se todos os segmentos de reta que formam o cone forem prolongados infinitamente, obteremos a superfície procurada na questão.
+     
+       Você pode estar se perguntando se esta superfície possui um nome e a resposta é sim! Dados um ponto `A` não contido em um plano `\pi` e um objeto geométrico `\gamma` contido em `\pi`, a superfície formada por todas as retas que passam por `A` e por um ponto de `\gamma` é chamada de *superfície cônica*. Repare que, todas as retas da superfície se intersectam em `A`. De posse desta definição, podemos afirmar que a superfície que obtemos nesta questão é uma superfície cônica gerada a partir do ponto `O` (equivale ao ponto `A` da definição) e do círculo (equivale ao objeto `\gamma` da definição).
+   
+     * Ao desenhar todas as retas que passam por `O` e por pontos do quadrado é possível que você pense na forma de uma pirâmide, mas a superfície formada por essas retas não é exatamente uma pirâmide. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos uma pirâmide reta de base quadrada. Assim, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser uma pirâmide. Mas se todos os segmentos de reta que formam a pirâmide forem prolongados infinitamente, obteremos a superfície procurada na questão.
+     
+       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cônica. De fato, ela é um conjunto de retas que passam pelo ponto `O` e por pontos do quadrado, como determina a definição apresentada anteriormente.
+     
+  #. Projeções Paralelas
+   
+     * Ao desenhar todas as retas que passam por pontos do círculo que são paralelas a `d`, é possível que nos remetamos à forma de um cilindro, mas a superfície obtida por esta união de retas não é exatamente um cilindro. Se considerarmos apenas a união dos segmentos de reta `PP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um cilindro circular reto. Na situação apresentada na atividade, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cilindro. Caso todos os segmentos de reta que formam o cilindro sejam prolongados infinitamente, obteremos a superfície procurada na questão.
+     
+       A superfície deste caso não pode ser chamada de superfície cônica, pois ela não foi gerada por um ponto e por um objeto como nos casos anteriores. Vamos, então, precisar de uma nova definição. Dados um objeto geométrico `\gamma` contido em um plano `\pi` e uma reta `r` não contida em `\pi`, a superfície formada por todas as retas que passam por pontos de `\gamma` e são paralelas à `r` é chamada de *superfície cilíndrica*. Sendo assim, a superfície que obtemos nesta questão é uma superfície cilíndrica gerada a partir do círculo (equivale ao objeto `\gamma` da definição) e `d` (equivale reta `r` da definição).
+   
+     * Neste caso, se desenharmos todas as retas que passam por pontos do quadrado que são paralelas a `d`, é possível que nos lembremos da forma de um prisma, mas a superfície obtida por esta união de retas não é um prisma. Se considerarmos todos os segmentos de reta `PP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um prisma reto de base quadrangular. Mas a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, logo ela não pode ser um prisma. Caso todos os segmentos de reta que formam o prisma sejam prolongados infinitamente, obteremos a superfície procurada na questão.
+     
+       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cilíndrica. De fato, ela é um conjunto de retas que passam por pontos do círculo e são paralelas à `d`, como determina a definição apresentada anteriormente.
 
 .. _ativ-proj-cone-cilindro:
 
@@ -107,9 +128,23 @@ Atividade: Projeções de Curvas sobre Um Cone e Um Cilindro
 
 .. admonition:: Resposta
 
-   .. Lhaylla
+   #. Cone
 
+      * Para encontrar a projeção em perspectiva de uma curva com relação ao ponto `O` no plano `\pi` é preciso traçar as retas que passam pelo ponto `O` e pela curva, e encontrar suas interseções com o plano `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cone, as retas que passam por `O` e por pontos da curva serão prologamentos dos segmentos de reta que formam o cone (aqueles que possuem extremidade em `O` e em seu círculo de base). Logo, a projeção em perspectiva das curvas 1, 2 e 3 com relação ao centro de projeção `O` no plano `\pi` é um círculo contido no plano `\pi`.
+   
+      * As pinturas conteriam a projeção em perspectiva das três curvas em relação à posição do olho do observador, que como vimos no item anterior é um círculo. 
+   
+      * Neste caso, o objeto a ser projetado é uma reta localizada sobre o cone. Repare que as retas que passam pelo ponto `O` e por pontos da reta a ser projetada coincidem com ela mesma, e por isso sua interseção com o plano `\pi` é um ponto. Portanto, a projeção em perspectiva da reta em relação ao ponto `O` sobre o plano `\pi` é seu ponto de interseção com o plano `\pi`. 
+   
+      * As retas que passam pelo ponto `O` e por pontos do cone são prolongamentos dos segmentos de reta que possuem extremidades em `O` e em pontos da base do cone. Assim, como a interseção dessas retas com o plano `\pi` é um círculo, então a projeção em perspectiva do cone é um círculo.
 
+   #. Cilindro
+
+      * Para encontrar a projeção paralela de uma curva com relação à direção dada no plano `\pi` é preciso traçar as retas que passam pelos pontos da curva e são paralelas à direção dada, e então, encontrar suas interseções com `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cilindro cujo eixo é a direção de projeção escolhida, as retas que passam por seus pontos e são paralelas ao eixo do cilindro serão prologamentos dos segmentos de reta que formam o cilindro (ou seja, aqueles segmentos que possuem extremidades sobre seus círculos de base). Logo, a projeção paralela das curvas 1, 2 e 3 com relação à direção dada pelo eixo do cilindro no plano `\pi` é o círculo contido no plano `\pi`.
+   
+      * A projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi` é um ponto. De fato, essa reta já é paralela ao eixo do cilindro, e portanto, para encontrar sua projeção basta encontrar sua interseção com o plano `\pi`, que é um ponto. 
+   
+      * A projeção paralela do cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi` é dada por um círculo, pois as retas que passam por pontos do cilindro e são paralelas ao seu eixo são prolongamentos dos segmentos de reta que o formam. Assim, a interseção dessas retas com o plano `\pi` é a própria base do cilindro.
 
 .. _ativ-proj-construindo:
 
@@ -124,7 +159,10 @@ Atividade: Construindo Objetos Geométricos Peculiares
    
    * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/X2rA45gS> (projeção da sinalização de solo no para-brisa),  <https://www.geogebra.org/m/xjMqSPX2> (projeção do para-brisa no solo), <https://www.geogebra.org/m/Uxtn6hxy> (peça "Squaring The Circle"), <https://www.geogebra.org/m/Q7eXY36j> (problema dos buracos).
    
-   * Este vídeos <https://youtu.be/pNjh1Ji_rg8> e <https://youtu.be/2xtA-IABcP4> explicam, respectivamente, com o uso do GeoGebra para celulares, a construção da peça "Squaring The Circle" e da solução do problema da mesa com  três buracos.
+   * Estes vídeos <https://youtu.be/pNjh1Ji_rg8> e <https://youtu.be/2xtA-IABcP4> explicam, respectivamente, com o uso do GeoGebra para celulares, a construção da peça "Squaring The Circle" e da solução do problema da mesa com  três buracos.
+   
+      .. figure:: _resources/problema-dos-tres-buracos.png
+         :width: 300pt
    
    * Observe para seus alunos como o conectivo lógico "e" se associa com interseções: no "Squaring The Circle", a imagem de um ponto de vista deve ser um círculo "e" de outro ponto de vista deve ser um quadrado. A solução é então obtida pela interseção de dois cones (um de base circular e o outro de base quadrada).
    
@@ -146,7 +184,7 @@ Atividade: Construindo Objetos Geométricos Peculiares
    
          Estudo de sinalização de solo em uma rua.
 
-   Como deveria ser pintada a palavra na rua para que, vista pelo para-brisa de um carro, ela fosse visualizada sem distorções, como na :numref:`fig-proj-aviso-na-rua-02`. Aqui, é suficiente que você descreva um procecimento de como obter o desenho da palavra na rua: você não precisa efetivamente fazer o desenho da palavra.
+   Como deveria ser pintada a palavra na rua para que, vista pelo para-brisa de um carro, ela fosse visualizada sem distorções, como na :numref:`fig-proj-aviso-na-rua-02`. Aqui, é suficiente que você descreva um procedimento de como obter o desenho da palavra na rua: você não precisa efetivamente fazer o desenho da palavra.
 
 
       .. _fig-proj-aviso-na-rua-02:
@@ -186,7 +224,20 @@ Atividade: Construindo Objetos Geométricos Peculiares
 
 .. admonition:: Resposta
 
-   .. Lhaylla
+  #. * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o solo. Pode-se escolher pontos mais representativos das letras para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. 
+  
+     * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
+   
+  #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
+  
+     Considere um cone circular reto. Se tomarmos o vértice do cone como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre o cone será um círculo. Agora, considere uma pirâmide de base quadrangular reta. Se tomarmos o vértice da pirâmide como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre a pirâmide será um quadrado. Portanto, para construirmos um objeto que possua um quadrado e um círculo como suas projeções em perspectiva, é preciso "encaixar" o cilindro e a pirâmide construídos anteriormente fazendo coincidir seus eixos e posicionando seus vértices em lados opostos. A peça mostrada na :numref:`fig-proj-squaring-the-circle-01` será a interseção do cilindro com a pirâmide. 
+      
+  #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
+  
+     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
+
+ 
+
 
 .. admonition:: Para refletir
 
@@ -251,12 +302,7 @@ Atividade: Construindo Objetos Geométricos Peculiares
    
    Calvin, Haroldo e Perspectiva!     
    
-.. figure:: _resources/2017-12-15_05-14-38.jpg
-   :width: 400pt
    
-   Fonte: <http://www.gocomics.com/bc>.
-   
-
 .. admonition:: Você sabia?
 
 
@@ -308,7 +354,7 @@ Atividade: Construindo Objetos Geométricos Peculiares
       .. figure:: _resources/geb-01.png
          :width: 200pt
       
-         GEB (fonte: ` Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_)
+         GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
       
    Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
    
@@ -329,3 +375,128 @@ Atividade: Construindo Objetos Geométricos Peculiares
       
       Uma peça peculiar feita de papel (fonte: `David Recheson <https://youtu.be/QTNg0ofgB78>`_).
       
+
+
+.. _ativ-proj-infinito:
+
+Atividade: Retas Paralelas e O Infinito
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
+   
+   **Observações e recomendações:**
+   
+   * No que se segue, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
+   
+   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de poder girar a cena e poder escolher direções diferentes para a reta `r`.
+   
+
+   
+   
+
+Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
+
+   .. _fig-proj-infinito-01:
+
+   .. figure:: _resources/infinito-01.jpg
+    
+      Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
+
+.. Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_.
+
+
+Este tipo de situação é traduzido pela frase popular "Retas paralelas se encontram no infinito!". Note, contudo, que as retas paralelas na cena tridimensional **nunca** se encontram. A concorrência ocorre para os prolongamentos das projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção.
+
+**PARTE 1.**
+
+Vamos primeiro compreender como a projeção em perspectiva de uma reta não paralela ao plano de projeção pode ser obtida por meio da interseção de dois planos. Caso queira acompanhar os passos descritos a seguir com um modelo interativo que pode ser girado e ampliado, acesse (inclusive do seu celular) o endereço: <https://www.geogebra.org/m/pcx56y49>.
+
+
+Como na :numref:`fig-proj-infinito-02`, considere uma projeção em perspectiva determinada por um centro `O` e um plano de projeção `\pi`. Suponha que o ponto `O` *não pertença* ao plano `\pi`. Considere também uma reta `r` não paralela ao plano `\pi` e que não passa pelo ponto `O`.
+
+.. _fig-proj-infinito-02:
+
+.. figure:: _resources/infinito-02_2.jpg
+
+   Projeção em perspectiva de uma reta: passo 1.
+   
+Para determinar a projeção em perspectiva de uma reta `r`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e o centro `O` com o plano `\pi`. A :numref:`fig-proj-infinito-03`     exibe as projeções `A'`, `B'` e `C'` dos pontos `A`, `B` e `C` da reta `r`.
+   
+.. _fig-proj-infinito-03:
+
+.. figure:: _resources/infinito-03_3.jpg
+
+   Projeção em perspectiva de uma reta: passo 2.
+   
+Observe que os pontos da reta `r` projetados pertencem ao plano `\pi` e, também, ao plano `\phi` que passa por `O` e contém a reta `r`, conforme a :numref:`fig-proj-infinito-04`.
+
+.. _fig-proj-infinito-04:
+
+.. figure:: _resources/infinito-04.jpg
+
+   Projeção em perspectiva de uma reta: passo 3.
+
+Em particular, os pontos da reta `r` projetados no plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
+
+.. _fig-proj-infinito-05:
+
+.. figure:: _resources/infinito-05_3.jpg
+
+   Projeção em perspectiva de uma reta: passo 4.
+
+Existe uma reta `s` que passa por `O` e é paralela a reta `r`. Essa reta pertence ao plano `\phi` e intersectará o plano `\pi` e, portanto, a reta `r'` em um ponto `F`, conforme a :numref:`fig-proj-infinito-06`. Neste contexto, o ponto `F` é denominado :index:`ponto de fuga` associado à direção dada pela reta `r`.
+
+.. _fig-proj-infinito-06:
+
+.. figure:: _resources/infinito-06_1.jpg
+
+   Projeção em perspectiva de uma reta: passo 5.
+
+
+**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção no plano `\pi` seja o ponto `F`. Por quê? 
+
+Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim, uma reta menos um ponto: `r' - \{F\}`. Se prolongarmos esta projeção incluindo o ponto `F`, obteremos uma reta: `r'`.
+
+**Pergunta 2.** Suponha no que foi feito até agora, a reta `r` seja trocada por uma outra reta diferente, mas paralela a reta `r`. O ponto `F` para esta nova reta será o mesmo, não mudará. Por quê?
+
+**Pergunta 3.** Supomos inicialmente que a reta `r` não passa pelo ponto `O`. O que mudaria no que foi feito se `O` fosse um ponto de `r`?
+
+
+Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções no plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
+Isto também explica a "convergência"
+das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito-01`.
+
+.. _fig-proj-infinito-08:
+
+.. figure:: _resources/infinito-08.jpg
+
+   Projeção em perspectiva de um feixe com 3 retas paralelas (<https://www.geogebra.org/m/EAuVTyTG>).
+
+
+.. _fig-proj-infinito-09:
+
+.. figure:: _resources/infinito-09_1.jpg
+
+   Projeção em perspectiva de um feixe com muitas retas paralelas (<https://www.geogebra.org/m/ycxHtZEP>).
+
+
+**Pergunta 4.** Qual é a projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção? Faça uma conjectura e justifique-a!
+
+**PARTE 2**
+
+**Pergunta 1.** O desenvolvimento feito na PARTE 1 trata de projeções em perspectiva de retas paralelas. O que pode ser dito sobre *projeções paralelas de retas paralelas*? Faça uma conjectura e justifique-a!
+
+**PARTE 3.**
+
+
+
+.. admonition:: Para refletir
+
+    .. figure:: _resources/2017-12-15_05-14-38.jpg
+       :width: 400pt
+
+       Fonte: <http://www.gocomics.com/bc>.
+   
+   
