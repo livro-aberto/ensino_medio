@@ -1,3 +1,177 @@
 ********
-GE2022-A
+Exercícios
 ********
+
+#. No capítulo sobre o teorema de Tales, este livro fez uma afirmação que não justificou. Sobre os triângulos que estão na figura a seguir, afirmou-se que eles não são congruentes.
+   
+   .. tikz:: 
+
+      \begin{scope}[scale=.7]
+      \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+      \draw [shift={(-3.12,2.96)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-13.706961004079805:0.4013909933956407) arc (-13.706961004079805:56.29303899592019:0.4013909933956407) -- cycle;
+      \draw [shift={(3.2665068298598277,4.71632784582858)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (167.21274687833522:0.4013909933956407) arc (167.21274687833522:238.21274687833528:0.4013909933956407) -- cycle;
+      \draw [line width=0.8pt] (-3.12,2.96)-- (0.16,2.16);
+      \draw [line width=0.8pt] (-3.12,2.96)-- (-1.8209561349802097,4.907321536218554);
+      \draw [line width=0.8pt] (-1.8209561349802097,4.907321536218554)-- (0.16,2.16);
+      \draw [line width=0.8pt] (1.4880625549427764,1.8465654931215187)-- (3.2665068298598277,4.71632784582858);
+      \draw [line width=0.8pt] (3.2665068298598277,4.71632784582858)-- (0.9837136824628329,5.234431672164059);
+      \draw [line width=0.8pt] (0.9837136824628329,5.234431672164059)-- (1.4880625549427764,1.8465654931215187);
+      \draw (-3,4.3) node[anchor=north west] {\tiny 5};
+      \draw (1.8,5.5) node[anchor=north west] {\tiny 5};
+      \draw (-2,2.6) node[anchor=north west] {\tiny 7};
+      \draw (0.7,3.8) node[anchor=north west] {\tiny 7};
+      \draw (-2.9,3.4) node[anchor=north west] {\tiny $70^\circ$};
+      \draw (2.1,4.8) node[anchor=north west] {\tiny $70^\circ$};
+      \end{scope}
+      
+   Você, neste exercício, deve justificar por que esses triângulos não são congruentes. Se desejar, siga o roteiro:
+   
+   * Se dois triângulos são congruentes, seus lados são respectivamente congruentes assim como seus ângulos. Assim, se esses triângulos são congruentes devemos ter a situação da figura a seguir:
+   
+   
+     .. tikz::
+        
+        \begin{scope}[scale =.8]
+        \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+        \draw [shift={(-3.12,2.96)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-13.706961004079805:0.40139099339564077) arc (-13.706961004079805:56.29303899592019:0.40139099339564077) -- cycle;
+        \draw [shift={(3.2665068298598277,4.71632784582858)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (167.21274687833522:0.40139099339564077) arc (167.21274687833522:238.21274687833528:0.40139099339564077) -- cycle;
+        \draw [shift={(-1.8209561349802097,4.907321536218554)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-123.70696100407982:0.40139099339564077) arc (-123.70696100407982:-54.20651224692482:0.40139099339564077) -- cycle;
+        \draw [shift={(0.9837136824628329,5.234431672164059)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-81.53261016145498:0.40139099339564077) arc (-81.53261016145498:-12.787253121664788:0.40139099339564077) -- cycle;
+        \draw [line width=0.8pt] (-3.12,2.96)-- (0.16,2.16);
+        \draw [line width=0.8pt] (-3.12,2.96)-- (-1.8209561349802097,4.907321536218554);
+        \draw [line width=0.8pt] (-1.8209561349802097,4.907321536218554)-- (0.16,2.16);
+        \draw [line width=0.8pt] (1.4880625549427764,1.8465654931215187)-- (3.2665068298598277,4.71632784582858);
+        \draw [line width=0.8pt] (3.2665068298598277,4.71632784582858)-- (0.9837136824628329,5.234431672164059);
+        \draw [line width=0.8pt] (0.9837136824628329,5.234431672164059)-- (1.4880625549427764,1.8465654931215187);
+        \draw (-3,4.2) node[anchor=north west] {\tiny 5};
+        \draw (2.0,5.4) node[anchor=north west] {\tiny 5};
+        \draw (-2,2.6) node[anchor=north west] {\tiny 7};
+        \draw (0.7,3.685696544144699) node[anchor=north west] {\tiny 7};
+        \draw (-2.6621758981707764,3.284305550749058) node[anchor=north west] {\tiny $70^\circ$};
+        \draw (2.315072419935169,4.568756729615109) node[anchor=north west]  {\tiny$70^\circ$};
+        \draw (-2.060089408077315,4.327922133577725) node[anchor=north west] {\tiny $70^\circ$};
+        \draw (1.271455837106503,4.789521775982712) node[anchor=north west] {\tiny $70^\circ$};
+        \draw (-0.9,4.006809338861212) node[anchor=north west] {\tiny 7};
+        \draw (2.4,3.4247923984375324) node[anchor=north west] {\tiny 7};
+        \end{scope}
+   
+   * Mostre que um triângulo com essas medidas de lados e ângulos não existe. Você pode, por exemplo, calcular o valor do cosseno do ângulo de `70^\circ` a partir dos elementos da figura e comparar com o valor que a sua calculadora fornece.
+   
+#. No trapézio `ABCD` os ângulos `A` e `D` são retos. Sabe-se que `AB = 8` cm, `AD = 4` cm e `DC = CB`.
+   
+   #.  Calcule o perímetro do trapézio.
+   #. Encontre uma aproximação em graus para a medida do menor ângulo do trapézio.
+   
+#. Considere o retângulo `ABCD` e o ponto `P` do lado `CD`. Sabe-se que o ângulo `APB` é reto, que `DP = 4` m e `PC = 9` m.
+
+   Calcule o perímetro desse retângulo.
+   
+#. Em um triângulo `ABC` os lados `AB` e `AC` medem, cada um, `\sqrt{2-\sqrt{3}}`. Se esses lados fazem, entre si, `150^\circ` calcule a medida do lado `BC`.
+
+#. A figura a seguir mostra dois triângulos congruentes. Cada retângulo possui um lado igual ao triplo do outro. 
+
+   .. tikz::
+      
+      \begin{scope}[scale=.8]
+      \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+      \fill[line width=1.2pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.20000000298023224] (-0.02,3.) -- (-0.02,0.) -- (0.98,0.) -- (0.98,3.) -- cycle;
+      \fill[line width=1.2pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.20000000298023224] (0.98,1.) -- (0.98,0.) -- (3.98,0.) -- (3.98,1.) -- cycle;\draw [line width=1.2pt,color=qqqqcc] (-0.02,3.)-- (-0.02,0.);
+      \draw [line width=1.2pt,color=qqqqcc] (-0.02,0.)-- (0.98,0.);
+      \draw [line width=1.2pt,color=qqqqcc] (0.98,0.)-- (0.98,3.);
+      \draw [line width=1.2pt,color=qqqqcc] (0.98,3.)-- (-0.02,3.);
+      \draw [line width=1.2pt,color=qqqqcc] (0.98,1.)-- (0.98,0.);
+      \draw [line width=1.2pt,color=qqqqcc] (0.98,0.)-- (3.98,0.);
+      \draw [line width=1.2pt,color=qqqqcc] (3.98,0.)-- (3.98,1.);
+      \draw [line width=1.2pt,color=qqqqcc] (3.98,1.)-- (0.98,1.);
+      \draw[color=black] (-0.16902082076290637,-0.2) node {\tiny $A$};
+      \draw[color=black] (4.1,1.2) node {\tiny $C$};
+      \draw[color=black] (1.1,3.15) node {\tiny $B$};
+      \end{scope}
+
+   #. Calcule o cosseno do ângulo `BAC`.
+   #. Dê uma aproximação com 1 decimal para a medida desse ângulo.
+
+#. No triângulo `ABC`, o ângulo `A` mede `95^\circ`, o ângulo `B` mede `60^\circ` e o lado `AB` mede 1000 (em certa unidade). Determine valores aproximados, em números inteiros para as medidas dos lados `AC` e `BC`.
+
+#. No triângulo `ABC` o ângulo `B` mede `60^\circ` e os lados `AC` e `BC` medem 7cm e 8 cm, respectivamente.
+   
+   #. Quanto mede o lado `AB`?
+      
+      Você encontrou dois valores possíveis para o lado `AB`. Vamos entender isso.
+   
+   #. Faça uma construção geométrica desse triângulo utilizando seus instrumentos de desenho ou no computador, com um programa de geometria dinâmica. Siga o roteiro a seguir.
+ 
+      * Com a régua desenhe na sua folha de papel o segmento BC de 8cm.
+      * Com seu esquadro desenhe a semirreta BX formando `60^\circ`  com BC.
+      * Para encaixar o lado `AC`, abra o compasso com abertura 7cm (use a régua) e, com centro em `C`, desenhe um arco de circunferência cortando a semirreta `BX`.
+      
+      O seu arco cortou a semirreta `BX` em dois pontos: `A` e `A’`.
+      Isto significa que existem dois triângulos que cumprem as condições do enunciado: o triângulo `ABC` e o triângulo `A’BC`. Por isso, você encontrou duas respostas para o item a). Quanto medem os segmentos `AB` e `A’B`?
+
+#. A imagem abaixo é a de um moderno teodolito eletrônico (marca *DBOIM*) que mede ângulos com precisão de `0,0005^\circ`.
+
+   .. figure:: _resources/TrigFig-32.jpg
+
+   Vamos usar esse teodolito para medir uma distância completamente inacessível: o raio da Terra.
+   
+   Para isso, precisamos levar o teodolito para um lugar alto, com altura conhecida em relação ao nível do mar. Com uma única medição você vai se surpreender com o poder da trigonometria, mas um pouco de imaginação, ou criatividade, é tembém necessária.
+   
+   Vamos considerar a Terra como uma esfera de centro `C` e raio `R`, e um ponto `P` situado a uma altura `h` em relação ao nível do mar. 
+   
+   O teodolito está localizado em `P` e sua luneta está em posição horizontal. Devemos explicar que a reta `CP` é chamada de “reta vertical” nesse ponto `P`, e qualquer reta perpendicular a `CP` é chamada de “reta horizontal” nesse ponto. Portanto, no desenho a seguir a reta `PX`, perpendicular a `CP` é uma reta horizontal.
+   
+   .. tikz::
+      
+      \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+      \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+      \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+      \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+      \draw [line width=1.2pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.15000000596046448] (0.,0.) circle (3.14cm);
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (1.2791509186598562,2.87645284338141) -- (1.1732863105725637,2.677956703217737) -- (1.371782450736237,2.572092095130444) -- (1.4776470588235295,2.7705882352941176) -- cycle; 
+      \draw [shift={(0.,3.558666666666667)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-28.072486935852965:0.6362894492625363) arc (-28.072486935852965:0.:0.6362894492625363) -- cycle;
+      \draw [line width=0.8pt] (0.,0.)-- (1.4776470588235295,2.7705882352941176);
+      \draw [line width=2.pt,color=qqzzqq] (0.,3.558666666666667)-- (0.,3.14);
+      \draw [line width=0.8pt] (0.,3.14)-- (0.,0.);
+      \draw [line width=0.8pt] (-0.6070666666666666,3.558666666666667)-- (3.0562666666666667,3.558666666666667);
+      \draw [line width=0.8pt] (0.,3.558666666666667)-- (3.1597636475527118,1.8734593879718868);
+      \draw [color=ffqqqq](2.49725428013766,2.919836788377576) node[anchor=north west] {horizonte};
+      \draw [->,line width=0.8pt,color=ffqqqq] (2.38,2.7636289449262534) -- (1.4776470588235295,2.7705882352941176);
+      \draw [color=qqwuqq](-0.4,3.65) node[anchor=north west] {\small $ h $};
+      \draw (-0.6,2.1987087458800367) node[anchor=north west] {$ R $};
+      \draw (0.864111360363817,1.9017736695575203) node[anchor=north west] {$ R $};
+      \draw (2.6,3.5) node[anchor=north west] {X};
+      \begin{scriptsize}
+      \draw [fill=black] (0.,0.) circle (1.5pt);
+      \draw[color=black] (-0.238790351691246,-0.22979598547197205) node {$C$};
+      \draw [fill=black] (0.,3.14) circle (1.0pt);
+      \draw [fill=qqqqcc] (0.,3.558666666666667) circle (1.5pt);
+      \draw[color=qqqqcc] (-0.026693868603733892,3.884875786425755) node {$P$};
+      \draw [fill=qqqqcc] (1.4776470588235295,2.7705882352941176) circle (1.5pt);
+      \draw[color=qqqqcc] (1.479191161317602,3.0789091506932103) node {$H$};
+      \draw[color=qqwuqq] (.8,3.4) node {$\alpha$};
+      \end{scriptsize}
+   
+   Em dia claro, um observador em `P`, olhando pela luneta do teodolito na posição horizontal `PX`, só vê o céu.
+   
+   Para quem olha para o mar, o “horizonte” é o ponto do mar mais afastado que conseguimos ver, é o ponto onde o céu encontra o mar. Na figura mostrada, para o observador que está em `P`, o ponto `H` é um ponto do horizonte. Entretanto, como na direção `PX` o observador só vê o céu, ele precisa baixar ligeiramente a luneta do teodolito para ver o horizonte. Assim, o teodolito consegue medir com precisão o ângulo `XPH =\alpha`.
+   
+   #. Determine `R` em função de `h` e `\alpha`
+   
+      Vamos medir agora o raio da Terra. 
+   
+      No Rio de Janeiro, no famoso morro do Corcovado, a base da estátua está precisamente a 710m acima do nível do mar.
+   
+      .. figure:: _resources/TrigFig-34.jpg
+   
+      Nesse pátio onde você vê as pessoas, o teodolito foi posicionado e, em diversas direções, é possível ver o horizonte no mar. A imagem a seguir mostra uma dessas direções. Nessa foto o Pão de Açúcar está no centro, abaixo está a enseada de Botafogo, e à direita, um pequeno pedaço do horizonte.
+   
+      .. figure:: _resources/TrigFig-35.jpg
+   
+   #. Sabendo que o teodlito mediu `\alpha=0,8555^\circ` e que `h=710` m, encontre um valor aproximado para o raio da Terra.
+   
+   
+
+
+      
+
+              
