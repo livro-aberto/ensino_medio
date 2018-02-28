@@ -1,6 +1,12 @@
 .. HJB: não esquecer de incluir "Você sabia?" sobre as propagandas em campos de futebol, HUD, AR, ...
 
-.. HJB: não esquecer de mencionar para o professor que as atividades são um excelente exercício de Geometria de Posição (atualmente há ênfase em medidas na Geometria Espacial).
+.. HJB: colocar no "Você sabia?" depois de tratar sobre a variação do tamanho o cartão com o urso, tratar também da Sala de Ahmes.
+
+.. HJB: faixa de trânsito 3D (https://www.youtube.com/watch?v=1yzxH5waryI, http://www.beheadingboredom.com/peanuts-chalk-art/
+
+.. HJB: criar uma atividade para pintar no chão usando o GIMP (http://portaldoprofessor.mec.gov.br/fichaTecnicaAula.html?aula=27220, 
+
+
 
 
 ***********************************************
@@ -337,9 +343,7 @@ Atividade: Construindo Objetos Geométricos Peculiares
   
    .. figure:: _resources/fig-fort-mchenry.jpg  
   
-      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library). 
-      
-      
+      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library).             
    
 
 .. admonition:: Para o professor
@@ -379,21 +383,34 @@ Atividade: Construindo Objetos Geométricos Peculiares
 
 .. _ativ-proj-infinito:
 
-Atividade: Retas Paralelas e O Infinito
+Atividade: Retas Paralelas, Obras de Arte e O Infinito
 ------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivo específico:** compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
+   **Objetivos específicos:** 
+   
+   * Compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
+   
+   * Compreender a propriedade de que a projeção paralela de um feixe de retas paralelas que não são paralelas à direção da projeção são retas paralelas.
+   
+   * Identificar a existência de elementos de projeções em perspectiva e projeções paralelas em fotografias e pinturas históricas.
    
    **Observações e recomendações:**
    
-   * No que se segue, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
+   * O desenvolvimento e os questionamentos das PARTES 1 e 2 constituem um excelente exercício de geometria de posição.
    
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de poder girar a cena e poder escolher direções diferentes para a reta `r`.
+   * Esta atividade é uma oportunidade do aluno ter contato com a noção de infinito. De fato, projeções em perspectiva permitem "materializar" o infinito em uma direção: no plano de projeção, ele pode ser identificado com o ponto de fuga associado à direção.
    
-
+   * Na PARTE 1, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
    
+   * Sugerimos fortemente que, para a discussão da PARTE 1, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de se poder girar a cena e se poder escolher direções diferentes para a reta `r`. 
+   
+   * Para a PARTE 3, sugerimos que os alunos sejam divididos em grupos de cinco e que sejam distribuídas pelo menos uma imagem desenhada em perspectiva (como a pintura :numref:`fig-proj-ponto-de-fuga-01` ou a foto :numref:`fig-proj-ponto-de-fuga-02`), outra desenhada em projeção paralela (como a :numref:`fig-proj-ponto-de-fuga-03`), outra desenhada em "perspectiva inversa" (como a :numref:`fig-proj-ponto-de-fuga-04`) e, finalmente, uma que parece estar desenhada em perspectiva, mas não está  (como a :numref:`fig-proj-ponto-de-fuga-05`).
+   
+   * Muitos desenhos japoneses antigos, a exemplo da :numref:`fig-proj-ponto-de-fuga-03`, foram feitos com projeções paralelas, uma característica da cultura da época. Você pode encontrar outros desenhos japoneses nos seguintes endereços: <https://ukiyo-e.org/> e <http://www.jaodb.com/>. Ainda no contexto cultural, iconografias bizantinas e russas antigas compartilham a "perspectiva inversa" da :numref:`fig-proj-ponto-de-fuga-04`.
+   
+   * Versões interativas feitas no GeoGebra da :numref:`fig-proj-ponto-de-fuga-01` à :numref:`fig-proj-ponto-de-fuga-05` estão disponíveis neste endereço: <https://www.geogebra.org/m/kFpnVERB>. O botão "S" exibe a solução e o botão "I" posiciona as retas para a configuração inicial. Com este recurso computacional, economiza-se papel que seria necessário para imprimir as imagens necessárias para a PARTE 3.
    
 
 Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
@@ -489,6 +506,72 @@ das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito
 **Pergunta 1.** O desenvolvimento feito na PARTE 1 trata de projeções em perspectiva de retas paralelas. O que pode ser dito sobre *projeções paralelas de retas paralelas*? Faça uma conjectura e justifique-a!
 
 **PARTE 3.**
+
+.. https://www.geogebra.org/m/kFpnVERB
+
+Caso uma pintura queira retratar a realidade segundo a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alberti-03`), os elementos desenhados devem respeitar as propriedades das projeções em perspectiva. Em particular, segmentos de retas que são paralelos na cena tridimensional devem ser desenhados como segmentos de reta cujos prolongamentos se encontram em um ponto de fuga.
+
+Você receberá reproduções de pinturas, desenhos e fotos do seu professor (as imagens a seguir dão alguns exemplos). 
+
+
+   .. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
+
+   .. _fig-proj-ponto-de-fuga-01:
+
+   .. figure:: _resources/ponto-de-fuga-01_2.jpg
+      :width: 300pt
+   
+      A Última Ceia de Leonardo da Vinci (1452-1519) (fonte: Wikimedia Commons).
+
+
+   .. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
+   
+   .. _fig-proj-ponto-de-fuga-02:   
+
+   .. figure:: _resources/ponto-de-fuga-02.jpg
+      :width: 300pt
+   
+      Linha de trem na cidade de Orléans na França (fonte: Wikimedia Commons).
+
+   
+   .. _fig-proj-ponto-de-fuga-03:   
+   
+   .. figure:: _resources/ponto-de-fuga-03.jpg
+      :width: 300pt
+   
+      Pintura japonesa em papel do século XIII (fonte: `University of Maryland <http://faculty.philosophy.umd.edu/jhbrown/digitaltech/index.html>`_).
+
+   .. https://en.wikipedia.org/wiki/Macedonian_Orthodox_Church_%E2%80%93_Ohrid_Archbishopric#/media/File:Ohrid_annunciation_icon.jpg
+   
+   .. _fig-proj-ponto-de-fuga-04:   
+
+   .. figure:: _resources/ponto-de-fuga-04.jpg
+      :width: 150pt
+   
+      Ícone bizantino na Igreja de São Clemente em Ohrid, República da Macedônia (fonte: Wikimedia Commons).      
+
+   .. https://en.wikipedia.org/wiki/Arnolfini_Portrait#/media/File:Van_Eyck_-_Arnolfini_Portrait.jpg
+   
+   .. _fig-proj-ponto-de-fuga-05:         
+
+   .. figure:: _resources/ponto-de-fuga-07.jpg
+      :width: 150pt
+   
+      O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441)(fonte: Wikimedia Commons).
+
+      
+
+Em cada uma delas, você deve identificar quais são os elementos que são supostamente paralelos na cena tridimensional sendo registrada (contornos de paredes, ladrilhos, etc.) e, então, desenhar segmentos de reta nesses elementos da imagem. Aqui está um exemplo.
+
+   .. figure:: _resources/ponto-de-fuga-08.jpg
+      :width: 400pt
+
+
+.. admonition:: Resposta
+
+   .. Lhaylla
+
+
 
 
 
