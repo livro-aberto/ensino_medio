@@ -513,74 +513,21 @@ das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito
 
 **PARTE 3.**
 
-.. https://www.geogebra.org/m/kFpnVERB
-
-Caso uma pintura queira retratar a realidade segundo a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alberti-03`), os elementos desenhados devem respeitar as propriedades das projeções em perspectiva. Em particular, segmentos de retas que são paralelos na cena tridimensional devem ser desenhados como segmentos de reta cujos prolongamentos se encontram em um ponto de fuga.
-
-Você receberá reproduções de pinturas, desenhos e fotos do seu professor (as imagens a seguir dão alguns exemplos). 
-
-
-   .. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
-
-   .. _fig-proj-ponto-de-fuga-01:
-
-   .. figure:: _resources/ponto-de-fuga-01_2.jpg
-      :width: 300pt
-   
-      A Última Ceia de Leonardo da Vinci (1452-1519) (fonte: Wikimedia Commons).
-
-
-   .. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
-   
-   .. _fig-proj-ponto-de-fuga-02:   
-
-   .. figure:: _resources/ponto-de-fuga-02.jpg
-      :width: 300pt
-   
-      Linha de trem na cidade de Orléans na França (fonte: Wikimedia Commons).
-
-   
-   .. _fig-proj-ponto-de-fuga-03:   
-   
-   .. figure:: _resources/ponto-de-fuga-03.jpg
-      :width: 300pt
-   
-      Pintura japonesa em papel do século XIII (fonte: `University of Maryland <http://faculty.philosophy.umd.edu/jhbrown/digitaltech/index.html>`_).
-
-   .. https://en.wikipedia.org/wiki/Macedonian_Orthodox_Church_%E2%80%93_Ohrid_Archbishopric#/media/File:Ohrid_annunciation_icon.jpg
-   
-   .. _fig-proj-ponto-de-fuga-04:   
-
-   .. figure:: _resources/ponto-de-fuga-04.jpg
-      :width: 150pt
-   
-      Ícone bizantino na Igreja de São Clemente em Ohrid, República da Macedônia (fonte: Wikimedia Commons).      
-
-   .. https://en.wikipedia.org/wiki/Arnolfini_Portrait#/media/File:Van_Eyck_-_Arnolfini_Portrait.jpg
-   
-   .. _fig-proj-ponto-de-fuga-05:         
-
-   .. figure:: _resources/ponto-de-fuga-07.jpg
-   
-   
-      O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441) (fonte: Wikimedia Commons).
-
-      
-
-Em cada uma delas, você deve identificar quais são os elementos que são supostamente paralelos na cena tridimensional sendo registrada (contornos de paredes, ladrilhos, etc.) e, então, desenhar segmentos de reta nesses elementos da imagem. Aqui está um exemplo.
-
-   .. figure:: _resources/ponto-de-fuga-08.jpg
-      :width: 400pt
-
-
 .. admonition:: Resposta
 
-   .. Lhaylla
+   **PARTE 1.**
+   
+   **Pergunta 1.** Suponhamos que `F` seja um ponto da projeção da reta `r` em `\pi`. Isto significa que existe um ponto `P\in r` tal que a reta `t` que passa por `O` e `P` intersecta `\pi` em `F`. Logo, `t` e `s` contêm os pontos `O` e `F`, o que implica que `t=s`. Observe, então, que `s` e `r` contêm o ponto `O`, o que mostra que `s` e `r` são concorrentes. Como, por hipótese, as retas `s` e `r` são paralelas, temos um absurdo. Portanto, concluímos que o ponto `F` não pertence à projeção da reta `r`.
 
-
-
-
-
+   **Pergunta 2.** Podemos perceber que o que torna `F` um ponto "especial" ao se calcular a projeção da reta `r` é o fato dele ser o ponto de interseção da reta `s` com o plano `\pi`, sendo `s` a reta paralela à `r` passando por `O`. Se, então, tomarmos uma reta qualquer paralela à reta `r`, ela continuará sendo paralela à reta `s` que intersecta `\pi` em `F`. E daí, da mesma forma que anteriormente, `F` não poderá fazer parte da projeção da nova reta. 
+   
+   **Pergunta 3.** Se `O` fosse um ponto da reta `r`, a projeção de `r` seria apenas o ponto de interseção da reta `r` com o plano `\pi`.
+   
+   **Pergunta 4.** A projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção é também um feixe de retas paralelas. 
+   
+   Vamos trabalhar apenas com duas retas `r` e `s` paralelas ao plano de projeção para facilitar nosso raciocínio que pode ser generalizado para um número qualquer de retas. Primeiramente, note que a projeção em perspectiva de uma reta paralela ao plano de projeção será também uma reta. Portanto, as projeções das retas `r` e `s` serão duas retas que chamaremos de `r'` e `s'`, respectivamente, e que suporemos serem distintas. Caso `r'` e `s'` não fossem retas paralelas, elas seriam concorrentes em um ponto `P` (como as duas retas estão dentro do mesmo plano, que é o plano de projeção, elas não poderiam ser reversas). Neste caso, existiriam dois pontos diferentes `A` e `B` pertencentes às retas paralelas `r` e `s`, respectivamente, que foram projetados em `P`. Isso significaria que as retas que passam pelo centro de projeção e por `A` e `B` se encontram em `P`, o que não é possível pois `A` e `B` pertencem à retas paralelas. Logo, a projeção de duas retas paralelas ao plano de projeção deve ser duas retas paralelas.
+   
+   
 .. admonition:: Para refletir
 
     .. figure:: _resources/2017-12-15_05-14-38.jpg
