@@ -2,37 +2,94 @@
 Função Quadrática
 ==========
 
-
-.. _sec-lancamento-vertical:
-
-Lançamento Vertical
-====
-
-.. admonition:: Objetivos Específicos
-
-	**(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
-
-.. admonition:: Pré-requisitos 
-
-	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
-
-	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
-    
-
 .. admonition:: Para o professor
 
-   Prezado colega, neste capítulo tivemos o cuidado de apresentar os conceitos, propriedades, definições e aplicações relacionadas ao estudo das funções quadráticas em doses homeopáticas e por meio de atividades que guiarão os alunos para os objetivos deste capítulo, mencionados anteriormente. Optamos, por influência da habilidade do BNCC, introduzir os conceitos mais básicos por uma atividade que estuda o movimento de queda livre de um objeto. De posse de conceitos básicos, partimos para a segunda atividade que tem como objetivo geral familiarizar os alunos com o gráfico de uma função real `f` definida por `f(x)=x^2`, chamando a atenção para suas caracteríticas e propriedades. Já as atividades seguintes exploram problemas de otimização, apresentando a forma canônica da função quadrática e finalmente associando ela à curva denominada *parábola*. Além disso, convidamos os alunos à explorar com detalhes o fato de algumas curvas terem o formato parecido com uma parábola mas não serem.
+   **Habilidades e pré-requisitos**
    
+   Neste capítulo contemplam-se as seguintes habilidades da segunda versão da Base Nacional Comum Curricular (BNCC):
+   
+   
+   .. admonition:: EM12MT09 
+
+      Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+   
+
+   .. admonition:: Pré-requisitos 
+
+   	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
+
+   	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+   
+   Prezado colega, neste capítulo tivemos o cuidado de apresentar os conceitos, propriedades, definições e aplicações relacionadas ao estudo das funções quadráticas de modo gradativo e por meio de atividades que guiarão os alunos para os objetivos deste capítulo, mencionados anteriormente. Optamos, por influência da habilidade do BNCC, introduzir os conceitos mais básicos por uma atividade que estuda o movimento de queda livre de um objeto. De posse desses conceitos básicos, partimos para a segunda atividade que tem como objetivo geral de familiarizar os alunos com o gráfico de uma função real `f` definida por `f(x)=x^2`, chamando a atenção para suas caracteríticas e propriedades. 
+   
+   Nas atividades seguintes exploramos problemas de otimização. Optamos por abordar esse assunto utilizando a forma canônica da função quadrática, pois é fato que a mesma já exibe claramente as coordenadas do vértice da parábola, facilitando assim a descoberta desse valor (máximo ou mínimo). Além disso, a forma canônica permite, de modo simples, apresentar ao aluno que todos os gráficos das funções quadráticas podem ser obtidos por translações do gráfico da função real `f` definida por `f(x)=ax^2` apresentado nas atividades iniciais do capítulo.
+   
+   Para concluir o capítulo, aplicamos os conhecimentos adquiridos em problemas nos quais a modelagem permite uma aproximação por parábolas e, nesses casos, o estudante precisa determinar a lei de formação da função quadrática através de informações gráficas inicialmente apresentadas. 
+   
+   Por fim, na seção aprofundamentos, abordamos dois assuntos de extrema importância: A utilização prática da parábola que vem como consequência da sua propriedade refletora, e desfazemos alguns equívocos frequentes que ocorrem ao se admitir que algumas curvas ou situações podem ser modeladas por funções quadráticas.
+   
+   
+   .. admonition:: Objetivos Específicos 
+
+      #. Motivar o conceito de função quadrática através do movimento uniformemente variado (M.U.V.).
+      #. Explorar de modo intuitivo, as principais propriedades da função quadrática, com ênfase no seu gráfico.
+      #. Explorar o conceito de otimização, por meio da forma canônica, em situações que possam ser modeladas por funções quadráticas.
+      #. Inferir que o gráfico de toda função quadrática é uma parábola e que pode ser obtido por translações da função real `f` definida por `f(x)=ax^2` (`a \in \mathbb{R}`), definindo formalmente suas formas polinomiais e canônicas.
+      #. Apresentar situações modeladas por funções quadráticas de domínio discreto.
+      #. Determinar os zeros de uma função quadrática e reconhecê-los  graficamente, assim como os momentos de crescimento e decrescimento da função.
+      #. Reconhecer o eixo de simetria do gráfico de uma função quadrática.
+      #. Determinar a lei de formação de uma função quadrática apresentando seu gráfico.
+      
+   
+   .. admonition:: Dificuldades típicas dos alunos (distratores)
+      
+      #. Os alunos conhecem a denominação correta do gráfico apresentado pela função quadrática, porém, não conseguem distingui-lo de outros gráficos curvilíneos.  [Alexandre-et-al-2009]_
+      
+         Distrator trabalhado em: :ref:`ativ2-invest-x-a-2`, :ref:`sub-aprof-catenaria`. 
+            
+      #. Os alunos sabem, conceitualmente, a relação existente entre os eixos das abscissas e ordenadas na função quadrática, mas não possuem habilidades de diferenciá-los durante o processo resolução de uma questão contextualizada envolvendo função quadrática.  [Alexandre-et-al-2009]_ 
+      
+         Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`, :ref:`sec-obtendo-lei-do-grafico`. 
+      
+      #. Os alunos compreendem a qual eixo está relacionado, genericamente, o domínio e a imagem, porém não conseguem particularizá-lo a função quadrática.  [Alexandre-et-al-2009]_
+      
+         Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`, :ref:`sec-obtendo-lei-do-grafico`. 
+      
+      #. Há uma grande dificuldade em utilizar processos simples de fatoração para representar uma função quadrática em sua forma fatorada, consequentemente na busca dos zeros da função. [Parent-2015]_ 
+      
+         Distrator trabalhado em: :ref:`sub-Org-Ideias5`, :ref:`sec-obtendo-lei-do-grafico`.
+      
+      #. "[...]os estudantes ficam confusos quando as equações quadráticas são apresentadas de maneira não usual pois não são exatamente como estes estão acostumados a vê-las. Por o exemplo, ao apresentar `x^2 + 3x + 1 = x + 4` que não está em forma padrão, vários alunos apresentam dificuldades quando solicitado a realizar várias tarefas.  [Kotsopoulos-2007]_
+      
+         Distrator trabalhado em: :ref:`sub-Org-Ideias-Quad-Max-Min-na-quadratica` , :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`. 
+      
+      #. Ao fazer alusão com a função afim alguns alunos acreditam equivocadamente que o coeficiente "a" da forma polinomial ou canônica representa a taxa de variação da função ou a "inclinação" de uma função quadrática. [Parent-2015]_
+      
+         Distrator trabalhado em: :ref:`sub-Org-Ideias-Quad-Max-Min-na-quadratica`, :ref:`sec-parametros-grafico-quadratica`.
+
+      #. Alguns alunos não associam a ideia de máximo ao `a<0` e ao mínimo ao `a>0`, associam apenas ao valor numérico da expressão `\frac{-\Delta}{4a}`, sem ao menos se preocupar se o domínio é um intervalo e se a ordenada do vértice está contida na imagem.
+      
+         Distrator trabalhado em: :ref:`sub-Org-Ideias-Quad-Max-Min-na-quadratica`.
+      
+      #. Há uma grande tendência dos alunos associarem a imagem da função quadrática ao gráfico da parábola e não a um conjunto de valores reais do eixo das ordenadas.
+      
+         Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-org-ideias-em-x-a-2`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`. 
+      
      
 .. admonition:: Introdução 
 
 
-Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, onde o objetivo é determinar em que condições uma determinada grandeza assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Assim como os outros capítulos deste material, vamos apresentar conceitos, definições e propriedades por meio de atividades e aprofundando esses conhecimentos na seção "Organizando Ideias", espero que você disfrute, se aproprie e internalize esses conceitos que serão úteis em diversas áreas do conhecimento, não só nos estudos de Mecânica da Física, mas em áreas como engenharias, economia, etc.
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, onde o objetivo é determinar em que condições uma determinada grandeza assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, área máxima de uma região plana, o preço mínimo de um determinado produto e assim por diante. Assim como os outros capítulos deste material, vamos apresentar conceitos, definições e propriedades por meio de atividades e aprofundando esses conhecimentos na seção "Organizando Ideias", espero que você disfrute, se aproprie e internalize esses conceitos que serão úteis em diversas áreas do conhecimento, não só nos estudos físicos do movimento, mas em áreas como engenharias, economia, administração, ciência da computação etc.
 
-.. _sub-Ativ-Lancamento-vertical:
+.. _sec-queda-vertical:
 
-Lançando Objetos
------
+Explorando: Queda Vertical
+====
+
+.. _ativ-lancando-vertical-em-Dubai:
+
+Atividade: Lançando Objetos das nuvens em Dubai
+-------
 
 .. admonition:: Para o professor
 
@@ -40,62 +97,293 @@ Lançando Objetos
    
    Levar o estudante a:
    
-   * 
+   * Reconhecer que a relação matemática entre a distância percorrida por um objeto em queda livre e o tempo de queda não pode ser modelada por uma função afim.
+   
+   * Relacionar o movimento de queda livre de um objeto à existência de uma aceleração na velocidade de queda.
+   
+   * Inferir que o tempo é uma grandeza contínua, mesmo as informações disponíveis apresentando-o como uma grandeza discreta.
+   
+   * Reconhecer que o movimento pode ser descrito por uma curva e não por um conjunto de pontos disconectos.
+   
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * 
-   * Os estudantes podem ter dificuldade com a expressão "em função de"...
+   * Sugerimos resolver a atividade anteriormente para definir o tempo necessário de sua aplicação.
+   
+   * Orientamos que seja feita um acompanhamento por parte do professor, durante a confecção da tabela apresentada no item a, com a finalidade de ter a certeza que os estudantes estejam compreendendo o significado dos valores gerados por ela.
+   
+   * Caso seja necessário, reforce as principais caracteríticas da função afim, como por exemplo: a sua variação proporcional.
+   
+   * No item d, recomendamos chame a atenção dos estudantes para que o todo gráfico seja apenas um conjunto de sete pontos, partindo da origem.
+   
+   * Para o item e, orientamos que o professor enfatize com os alunos que o registro fotográfico foi feito em intervalos de `1` s, mas que o fenômeno continuou mesmo sem os registros.
+   
+   
+   
+
+No topo do hotel Burj Al Arab, em Dubai, encontra-se a quadra de tênis mais alta do mundo, com aproximadamente `200` metros de altura. Em `2005`, os campeões Roger Federer e Andre Agassi disputaram uma partida de exibição. Por descuido, uma das bolinhas usadas nesse jogo caiu `200` m, verticalmente e em queda livre. Vamos aproveitar essa situação para investigar a matemática por trás desse fenômeno físico. A imagem a seguir traduz a situação no início da queda da bola.  
 
 
+.. _fig-coloque-aqui-o-nome:
 
-.. _sub-Org-ideias-Galileu:
+.. figure:: _resources/fig_1.jpg
+   :width: 150pt
+   :align: center
 
-**Um pouco de História:** *Aristóteles e Galileu Galilei no estudo da Queda Livre*
+   Hotel e a bolinha de tênis
+   
+Um observador registra com seu equipamento fotográfico a queda da bolinha, disparando fotos a cada intervalo de `1` segundo, até a mesma atingir o solo. Os registros fotográficos encontram-se agrupados e animados a seguir:
+
+.. figure:: _resources/Queda_Livre.*
+   :width: 200 pt
+   :align: center
+
+   Bola de tênis em queda livre
+   
+A simulação da queda pode ser visualizada no Geogebra: https://ggbm.at/hvnNHMY2
+
+A tabela a seguir descreve a altura da bolinha ao longo do tempo. 
+
++-------+-------------+--------------+
+| `t`   | Tempo (s)   | Altura (m)   |
++-------+-------------+--------------+
+| `t_0` | `0`         | `200`        |
++-------+-------------+--------------+
+| `t_1` | `1`         | `195`        |
++-------+-------------+--------------+
+| `t_2` | `2`         | `180`        |
++-------+-------------+--------------+
+| `t_3` | `3`         | `155`        |
++-------+-------------+--------------+
+| `t_4` | `4`         | `120`        |
++-------+-------------+--------------+
+| `t_5` | `5`         | `75`         |
++-------+-------------+--------------+
+| `t_6` | `6`         | `20`         |
++-------+-------------+--------------+
+
+
+#. Numa folha de papel ou similar, reproduza a tabela a seguir e preencha o que falta, informando a distância total percorrida pela bolinha na queda, a partir de `t_0`.
+
+   +--------------------------+---------------------------------------+
+   |    Tempo de Queda        |   Distância percorrida pela bolinha   |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_0` = `0` s | `d_0 = 200 - 200 = 0` m               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_1` = `1` s | `d_1 = 200 - 195 = 5` m               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_2` = `2` s | `d_2 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_3` = `3` s | `d_3 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_4` = `4` s | `d_4 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_5` = `5` s | `d_5 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_6` = `6` s | `d_6 =`                               |
+   +--------------------------+---------------------------------------+
+
+
+#. As distâncias percorridas pela bolinha ao longo do tempo de queda aumentam com a mesma taxa de variação?
+
+#. É possível obter uma função afim que relaciona a distância percorrida `d_n` (em metros) com o tempo de queda `t` (em segundos)? Justifique.
+
+#. Em uma folha de papel ou similar, copie o plano cartesiano abaixo e, em seguida, represente os pares ordenados `(t;d_n)` em que `t` representa o tempo de queda em segundos e `d_n` a distância, em metros, percorrida pela bolinha na queda:
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/fig_3.jpg
+      :width: 300pt
+      :align: center
+
+      Gráfico 
+   
+#. O domínio da função que descreve a queda da bolinha ao longo do tempo é `D = \{0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 \}`. A mesma situação poderia ser descrita por uma função de domínio contínuo?
+
+#. Neste caso, ao ligarmos todos os pontos do gráfico do item `d` teríamos um segmento de reta ou uma curva?
+ 
+#. Dentre as alternativas a seguir, qual relação atende aos valores descritos no gráfico sendo `d(t)` a distância percorrida pela bolinha na queda (em metros) com o tempo de queda `t` (em segundos).
+
+   `\Box \; d(t)= -t^2`
+   
+   `\Box \; d(t)= 10t+10`
+   
+   `\Box \; d(t)= 20t`
+   
+   `\Box \; d(t)= 5t^2`
+   
+   `\Box \; d(t)= 10t^2`
+   
+   
+.. admonition:: Resposta 
+
+   #. 	`d_0 = 0` m ; 	`d_1 = 5` m ; `d_2 = 20` m ; `d_3 = 45` m ; `d_4 = 80` m ; `d_5 = 125` m ; `d_6 = 180` m.
+
+   #. Não. Para verificar, basta calcular a razão do quanto variou as distâncias em dois intervalos distintos de um segundo, por exemplo:`\frac{5-0}{1-0}=5 \neq \frac{20-5}{2-1}=15`, pois a função afim é caracterizada por variações constantes.
+   
+   #. Não, pois a taxa de variação não é constante.
+   
+   #.
+      
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/fig_4.jpg
+         :width: 300pt
+         :align: center
+
+         Gráfico
+
+   #. Sim, pois o tempo é contínuo.
+
+   #. Curva.
+
+   #. `d(t) = 5t^2`
+
+.. _sub-Org-ideias-Galileu-MUV:
+
+Organizando as ideias
+-------
+
+**Aristóteles e Galileu Galilei** `(\star 1564 , \dagger 1642)` **no estudo da Queda Livre**
+
+
+Aristóteles; (`\star` Estagira, `384` a.C. — `\dagger` Atenas, `322` a.C.) discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
+ 
+Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, que afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
+ 
+Aristóteles afirmava que havia dois tipos de movimentos: os naturais e os violentos. Os naturais, para ele, decorre diretamente da natureza do objeto e os violentos decorrem de  forças aplicadas a esses objetos, ou seja um movimento imposto.
+ 
+No caso dos movimentos naturais, Aristóteles afirmava que o cada objeto tem um lugar próprio na natureza e que esses se “esforçam” para retornar ao seu lugar de origem. Por exemplo um vaso de cerâmica, ao ser abandonado cai procurando seu lugar ao solo, já que em sua composição o elemento terra é o mais presente, e pelo mesmo motivo um sopro, ou “baforada” acaba se misturando com o ar.
+ 
+Além disso, Aristóteles, afirmava que um objeto mais pesado (com maior massa) cai em direção ao solo, mais rapidamente que um objeto mais leve, ou seja, para ele, objetos ao serem lançados, caíam com rapidez proporcional ao seu peso. Suas afirmações sobre o movimento, pautaram o pensamento científico por mais de dois mil anos, sendo a base da ciência na era Medieval e Renascentista. Sendo corrigidas por seus sucessores, como Galileu Galilei.
+
+Galileu Galilei filósofo italiano e também considerado físico, matemático e astrônomo, teve também um papel importante na revolução científica, e no contexto histórico mundial, sendo considerado um dos maiores cientistas de sua época. 
+ 
+Galileu abandonou a faculdade de Medicina dedicando-se aos estudos de física e matemática na Universidade de Pisa, uma das mais conceituadas da época. Foi na Universidade de Pisa, já como professor de matemática que Galileu, realizou experiências públicas sobre a queda dos corpos. 
+ 
+Certos historiadores, relatam que perante uma multidão de professores, estudantes e religiosos, Galileu, ao alto da torre de Pisa deixou cair dois pedaços de metal, um deles com o peso dez vezes maior que o outro e os dois chegaram ao solo praticamente no mesmo instante, contrariando assim Aristóteles. Ele prosseguiu realizado outras experiências laboratoriais que acabaram criando o conceito de resistência do ar, o que explicaria por que uma pena e uma bola de metal abandonadas de uma mesma altura, não chegam ao chão ao mesmo tempo. Mesmo assim Galileu não conseguiu convencer as autoridades universitárias de Pisa, que o acusaram de sacrilégio e acabaram tornando sua continuidade em Pisa um tanto desagradável. Por isso, no ano seguinte Galileu aceita uma cadeira na Universidade de Pádua, onde foi muito bem recebido e, por quase dezoito anos continuou realizando diversas experiências e ganhando prestígio com suas publicações e suas famosas aulas magnas.
+
+Uma das conclusões mais importantes de Galileu, foram com bases em experiências laboratoriais com planos inclinados. Como retratam as figuras a seguir:
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/plano_inclinado_bruno.jpg
+   :width: 300pt
+   :align: center
+
+   Experiência Galileu
+
++---------+----------------------+----------------------+
+| Medição | Espaço percorrido    | Tempo Gasto          |
++---------+----------------------+----------------------+
+| 1ª      | `\frac{\Delta p}{4}` | `\frac{t}{2}`        |
++---------+----------------------+----------------------+
+| 2ª      | `\frac{\Delta p}{2}` | `\frac{t}{\sqrt{2}}` |
++---------+----------------------+----------------------+
+| 3ª      | `\Delta p`           | `t`                  |
++---------+----------------------+----------------------+
+   
+   
+Galileu notou que:
+   
+Na primeira medição obtemos a razão:`\frac{\frac{\Delta p}{4}}{(\frac{t}{2})^2}=\frac{\Delta p}{4}.\frac{4}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na segunda medição obtemos a razão:`\frac{\frac{\Delta p}{2}}{(\frac{t}{\sqrt{2}})^2}=\frac{\Delta p}{2}.\frac{2}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na terceira medição obtemos a razão: `\frac{\Delta p}{t^2}`
+   
+Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. Em outras palavras, Galileu constatou que **a distância percorrida é proporcional ao quadrado do tempo gasto nesse percurso**. A partir dessas conclusões chegamos as fórmulas: `\frac{d}{t^2} = \frac{g}{2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
+
+**O movimento uniformemente variado**
+
+Nos casos em que a velocidade de um móvel varia de modo constante por todo o intervalo de tempo deste movimento, o movimento é chamado de **uniformemente variado** e temos que a função que dá a velocidade em cada instante de tempo do movimento é uma função afim, logo
+
+.. math::
+
+   v(t)=v_0 + a \cdot t,
+
+onde `v_0` é a velocidade no início da observação do movimento e `a` é o fator de vai alterando a velocidade, chamado de aceleração.
+
+São as leis de Newton `(\star 1643, \dagger 1727)` que estabelecem como a aceleração se relaciona com os objetos de um modo geral, permitindo o uso das relações obtidas por Galileu para situações além da queda livre dos corpos, que vão desde jogadas feitas por atletas com bolas, discos, flechas ou dardos, passando pela aceleração e frenagem de automóveis, e chegando até ao lançamento de foguetes e satélites.
+
+Nas palavras de [Pietrocola-et-al-2016]_ ,
+
+*"Para um corpo permanecer em movimento uniformemente variado (MUV) - com aceleração constante -, é preciso que uma força atue nele. No caso dos corpos em queda, a força gravitacional Terra-corpo se encarrega dessa tarefa. Para o lançamento vertical, é necessária a ação de uma força gravitacional. Já no caso do movimento variado no plano horizontal, uma força deve ser constantemente aplicada no corpo"*.
+
+Essas constatações conduzem ao fato de que a relação existente entre a posição de um corpo em cada instante de tempo, no caso de um *MUV*, conforme já constatamos, não é uma função afim. Prova-se que as grandezas posição e tempo podem ser descrita por uma equação do tipo `p(t)=p_0+v_0 \cdot t + \frac{a}{2} \cdot t^2`; onde `p(t)` é a posição no tempo `t`, `p_0` é a posição inicial em relação ao referencial estabelecido na análise, `v_0` é a velocidade no início da observação e `a` é a aceleração.
+
+.. sub-Praticando-Frenagem
+Praticando: Distância segura entre os carros
 ----
 
-   Aristóteles; (Estagira, 384 a.C. — Atenas, 322 a.C.) discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
-   Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, que afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
-   Aristóteles afirmava que havia dois tipos de movimentos: os naturais e os violentos. Os naturais, para ele, decorre diretamente da natureza do objeto e os violentos decorrem de  forças aplicadas a esses objetos, ou seja um movimento imposto.
-   No caso dos movimentos naturais, Aristóteles afirmava que o cada objeto tem um lugar próprio na natureza e que esses se “esforçam” para retornar ao seu lugar de origem. Por exemplo um vaso de cerâmica, ao ser abandonado cai procurando seu lugar ao solo, já que em sua composição o elemento terra é o mais presente, e pelo mesmo motivo um sopro, ou “baforada” acaba se misturando com o ar.
-   Além disso, Aristóteles, afirmava que um objeto mais pesado (com maior massa) cai em direção ao solo, mais rapidamente que um objeto mais leve, ou seja, para ele, objetos ao serem lançados, caíam com rapidez proporcional ao seu peso. Suas afirmações sobre o movimento, pautaram o pensamento científico por mais de dois mil anos, sendo a base da ciência na era Medieval e Renascentista. Sendo corrigidas por seus sucessores, como Galileu Galilei.
+Um noção importantes sobre a direção defensiva trata do fato de que *"Ao pisar no freio do veículo, ele não para instantaneamente. Entre o momento que o motorista observa um obstáculo à sua frente e decide acionar os freios até o instante que o carro realmente para, ele se desloca vários metros"* [JCNET-2013]_. Esse fato gera a chamada **distância de frenagem**, que precisa ser conhecida, para a segurança de todo motorista.
 
-   Galileu Galilei (Pisa, 15 de fevereiro de 1564 — Florença, 8 de janeiro de 1642) filósofo italiano e também considerado, físico, matemático e astrônomo, teve também um papel importante na revolução científica, e no contexto histórico mundial, sendo considerado um dos maiores cientistas de sua época. 
-   Galileu abandonou a faculdade de Medicina dedicando-se aos estudos de física e matemática na Universidade de Pisa, uma das mais conceituadas da época. Foi na Universidade de Pisa, já como professor de matemática que Galileu, realizou experiências públicas sobre a queda dos corpos. 
-   Certos historiadores, relatam que perante uma multidão de professores, estudantes e religiosos, Galileu, ao alto da torre de Pisa deixou cair dois pedaços de metal, um deles com o peso dez vezes maior que o outro e os dois chegaram ao solo praticamente no mesmo instante, contrariando assim Aristóteles. Ele prosseguiu realizado outras experiências laboratoriais que acabaram criando o conceito de resistência do ar, o que explicaria por que uma pena e uma bola de metal abandonadas de uma mesma altura, não chegam ao chão ao mesmo tempo. Mesmo assim Galileu não conseguiu convencer as autoridades universitárias de Pisa, que o acusaram de sacrilégio e acabaram tornando sua continuidade em Pisa um tanto desagradável. Por isso, no ano seguinte Galileu aceita uma cadeira na Universidade de Pádua, onde foi muito bem recebido e, por quase dezoito anos continuou realizando diversas experiências e ganhando prestígio com suas publicações e suas famosas aulas magnas.
+Como essa distância depende de muitos fatores, logo que um veículo é lançado, revistas especializadas tratam de divulgar tabelas com as relações entre as velocidades e as distâncias de frenagem para estes veículos. A análise experimental e cuidadosa de qualquer uma dessas tabelas revela que a distância percorrida por um veículo após o acionamento dos freios é proporcional ao quadrado da sua velocidade [Avila]_.
 
-   Uma das conclusões mais importantes de Galileu, foram com bases em experiências laboratoriais com planos inclinados. Como retratam as figuras a seguir:
-   
-   
-   .. _fig-coloque-aqui-o-nome:
+No artigo [JCNET-2013]_ encontramos que um veículo a `80` Km/h, ao considerarmos os tempos de percepção, de reação e de parada, vai percorrer em média `57` metros em pista seca até parar totalmente assim que o motorista observar o obstáculo e decidir frear.
 
-   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=org_id_at_1_plano_inclinado.jpg
-      :width: 200pt
-      :align: center
+#. Considere que o tempo de reação entre a percepção do obstáculo e a pisada no freio para um motorista seja de um segundo. Nesse tempo, quantos o seu carro se desloca, se inicialmente está a 80Km/h? [Se necessário, utilize que `\upsilon` Km/h = `( \upsilon \div 3,6 )` m/s].
 
-      *pietrocola_et_al._-_fisica_em_contextos_-_volume_1* 
-   
-   
-   .. _fig-coloque-aqui-o-nome:
+#. A distância de `57` m do artigo considera o tempo de reação descrito acima. Quantos metros o veículo percorre antes de parar após o acinamento do freio, ou seja, após o que percorre no tempo de reação?
 
-   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=org_id_at_1_plano_inclinado_continuacao.jpg
-      :width: 200pt
-      :align: center
+#. Construa a proporção citada no texto, considerando as velocidades de `80` Km/h e `v` Km/h, e as distâncias obtida em 'b' e `d` metros? 
 
-      *pietrocola_et_al._-_fisica_em_contextos_-_volume_1*
+#. Resolva para `D` a igualdade obtida no item anterior?
+
+#. O que significa essa igualdade para `D` e `v`?
+
+#. Essa igualdade é uma função afim?
+
+#. Use a essa igualdade para determinar os dados que estão faltando no gráfico abaixo conforme o padrão que o exemplo preenchido fornece. 
+
+.. figure:: _resources/Frenagem_Exemplo.png
+   :width: 450pt
+   :align: center
    
+   Exemplo preenchido
+
+
+.. figure:: _resources/Frenagem_Exercicio.png
+   :width: 450pt
+   :align: center
    
-   Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. A partir dessas conclusões chegamos as fórmulas: `g=\frac{2d}{t^2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
+.. admonition:: Resposta 
+
+   #. `80 \div 3,6 = \frac{200}{9} \approx 22`. Assim, o carro se desloca aproximadamente 22m nesse segundo.
+   
+   #. `57-22 = 35` m.
+   
+   #. `\frac{35}{80^2}=\frac{D}{v^2} \Leftrightarrow \frac{D}{v^2}=\frac{7}{1280} \Rightarrow \frac{D}{v^2} \approx 0,0055`.
+   
+   #. `D=0,0055 \cdot v^2`.
+   
+   #. Uma relação que dá a distância de frenagem para cada velocidade do veículo em questão.
+   
+   #. Não.
+   
+   #. `a=25` m; `b \approx 45` m; `c = 70` m; `f \approx 28` m; `g=55` m; `h=83` m. Os valores a serem preenchidos na faixa azul de pista molhada exigem uma outra relação de `D` e `v`: `\frac{D}{v^2}=\frac{71}{80^2} \Leftrightarrow \frac{D}{v^2}=\frac{71}{6400} \Rightarrow D = 0,01 \cdot v^2`, aproximadamente. Assim, `d=81` m; `e=106` m; `i=100` m; `j=128` m.
+
+   Na prática, para manter uma distância segura entre os carros e evitar o "engavetamento", aconselha-se seguir a regra dos dois segundos:
+   
+   - *Observe a estrada à sua frente e escolha um ponto fixo de referência (à margem) como uma árvore, placa, poste, casa, etc.*
+
+   - *Quando o veículo que está à sua frente passar por este ponto, comece a contar pausadamente: cinqüenta e um, cinqüenta e dois. (mais ou menos dois segundos).*
+
+   - *Se o seu veículo passar pelo ponto de referência antes de contar (cinqüenta e um e cinqüenta e dois), deve aumentar a distância, diminuindo a velocidade, para ficar em segurança.*
+
+   - *Se o seu veículo passar pelo ponto de referência após você ter falado as seis palavras, significa que a sua distância, é segura.* [DetranPR]_
 
 
 .. _sub-prop-de-x-a-2:
 
-Explorando: Padrões em `f(x)=x^2`
+Explorando: A função real `f` definida por `f(x)=x^2`.
 =====
 
-.. _atividade-2-quadratica:
+.. _ativ2-invest-x-a-2:
 
-Atividade 2: O gráfico da função real `f(x)=x^2`
+Atividade: Em busca de padrões em `f(x)=x^2` .
 ----
 
 
@@ -110,20 +398,29 @@ Atividade 2: O gráfico da função real `f(x)=x^2`
       `ii` **)** de que `f` possuí mínimo absoluto, ou seja, que `f(x)\geq 0`, para todo `x` real.\
       
    #. Inferir que os pontos do gráfico de `f` não podem ser conectados por segmentos de reta.
-   #. Definir a taxa de variação para dois pontos em funções reais.
-   #. Inferir que as taxas de variação em intervalos de mesmo tamanho, a direita ou a esquerda do eixo de simetria, estão em progressão aritmética.
-   #. Destacar o comportamento crescente e não proporcional de `f` para a direita ou para a esquerda do seu eixo de simetria.
+   #. Inferir que as variações das imagens geradas por elementos do domínio em progressão aritmética, estão também em progressão aritmética.
+   #. Observar que o comportamento crescente  ou descrescente de `f` não é proporcional a `x`.
+   #. Relacionar as constatações feitas sobre `f` com possíveis gráficos, concluindo o que não pode ocorrer nesta representação.
+   #. Representar o gráfico de `f`.
 
 
    **Observações e recomendações**
    
-   #. ...
+   Esta atividade, mesmo não inserida em uma contextualização, representa uma excelente oportunidade de investigação através do experimento. Aqui o estudante terá a oportunidade de perceber, em um ambiente de pouca complexidade de conhecimento matemático, o que acontece ou não no comportamento da função quadrática. Sendo assim, recomendamos que: 
    
-   #. ...
+   #. O professor faça a atividade antes de aplicá-la com os alunos, com a finalidade de conhecer o tempo de aplicação do mesmo.
    
-   #. ...
-
-No capítulo anterior foi estudado o modelo matemático para funções afim. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, na :ref:`Tarefa 1` aparece o termo `ax^2`, com `a\in\mathbb{R}` e `a\neq0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como esta da :ref:`Tarefa 1`. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
+   #. Ao final de cada item que o professor faça uma espécie de resumo para a turma das respostas dadas pelos alunos com ênfase na característica que aquele item procura revelar.
+   
+   #. Para o item 'c', será necessário o conhecimento de distâsncia de um ponto a uma reta, que é o segmento gerado a partir do trajeto da projeção ortogonal do ponto na reta. Sem esse conhecimento a ideia de simetria não pode ser efetivada. Assim, investigue se os alunos tem essa noção antes de aplicar a atividade.
+   
+   #. A escolha, em alguns itens, por valores fracionários ou irracionais, prezam pelo fortalecimento da continuidade da função mesmo que a marcação desses pontos não seja feita.
+   
+   #. Recomendamos que o estudante seja estimulado a argumentar com os outros de sua turma sobre as razões que descartam cada gráfico do item 'i' como candidato ao gráfico de `f`.
+   
+   #. Consideramos que os casos mais difíceis de serem descartados no item 'i' sejam os Gráficos `2`, `5` e `6`. Portanto, leia as respostas destes em particular e perceba que eles foram gerados pelas seguintes equações. Gráfico `2`: `f(x) = 8 - \frac{8}{x^2+1}`; Gráfico `5`: `f(x)=4 - 4 \cdot \cos (\ \frac{3}{4} \cdot x )` ; Gráfico `6`: `\; f(x) = \left\{ \begin{array}{rlll} -3x-2, & \text{se} & x < -1 \\ -x, & \text{se} & -1 \leq x < 0 \\ x, & \text{se} & 0 \leq x < 1 \\ 3x-2, & \text{se} & x \geq 1 \end{array} \right.`
+   
+No capítulo anterior foi estudado o modelo matemático para funções afins. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, na :ref:`ativ-lancando-vertical-em-Dubai` aparece o termo `\alpha \cdot x^2`, com `\alpha \in \mathbb{R}` e `\alpha \neq 0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como esta da as que apareceram na seção anterior. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
 
 Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o que se pede:
 
@@ -135,11 +432,13 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
    | `f(x)` |`______`|`______`|   `4`  |`______`|   `0`  |`______`|`______`|`______`|  `25`  |  `______`  |   `______`   |
    +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
 
-#. Represente os pontos da tabela no gráfico que segue. Despreze os pontos cujo valor de `x` não aparece destacado no gráfico.
+#. Em uma folha de papel ou similar, faça a figura do plano cartesiano conforme a indicada a seguir.
 
-.. figure:: _resources/Ativ_2b.png
-   :width: 200 px
-   :align: center
+   .. figure:: _resources/Ativ_2b.png
+      :width: 200 pt
+      :align: center
+
+   Represente os pontos da tabela do item 'a' nesse plano cartesiano, desprezando as coordenadas cujo valor de `x` não aparece destacado no que você fez no papel.
 
 #. Destaque os pares de pontos que estão a mesma distância do eixo `y`.
 
@@ -157,13 +456,15 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
 
 #. Considerando os pontos do domínio de `f` entre `-4` e `0`, a melhor classificação para esta função é crescente ou decrescente? E entre `0` e `4`?
 
-#. Para o intervalo crescente de `f`, é possível verificar a validade do :ref:`TFP` [teorema fundamental da proporcionalidade]?
+#. Considerando os elementos `\{ 0; 1; 2; 3; 4; 5 \}` do domínio de `f`, pode-se afirmar que a razão em que as imagens variam é a mesma para cada unidade de variação do domínio?
 
-#. No item :ref:`b` você marcou no plano cartesiano alguns dos pontos da função `f`. Agora serão apresentados alguns gráficos e, para cada um deles, você deve afirmar com alguma justificativa, se é ou não o gráfico de `f`. Para isso, use o que você experimentou nos itens da atividade até aqui.
+#. Agora serão apresentados alguns gráficos e, para cada um deles, você deve afirmar com alguma justificativa, se é ou não o gráfico de `f`. Para isso, use o que você experimentou nos itens da atividade até aqui.
 
-.. figure:: _resources/Graficos_Ativ2.png
-   :width: 350 px
-   :align: center
+   .. figure:: _resources/Graficos_Ativ2_1.png
+      :width: 350 pt
+      :align: center
+
+#. No mesmo papel em que você marcou alguns dos pontos da função `f`, lá no item 'b', construa o gráfico que você acha que representa a função `f` e compare com o de seus colegas. Se houver discondâncias, tentem argumentar e aprimorar os gráficos uns dos outros com base nas argumentações.
 
 .. admonition:: Resposta 
 
@@ -171,14 +472,14 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
       +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
       |   `x`  | `-5` | `-3` | `-2` | `-1` |  `0`  |  `1`  |  `2`  |  `3`  |  `5`  |  `10 \over 3`  | `\sqrt{123}` |
       +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
-      | `f(x)` | `25` |  `9` | `4`  |  `1` |  `0`  |  `1`  |  `2`  |  `3`  |  `25` |  `100 \over 9` |     `123`    |
+      | `f(x)` | `25` |  `9` | `4`  |  `1` |  `0`  |  `1`  |  `4`  |  `9`  |  `25` |  `100 \over 9` |     `123`    |
       +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
       
       As posições referentes ao `-2` e ao `5` deste gabarito poderiam ter sido ocupadas, respectivamente, pelo `2` e pelo `-5`.
 
    #. 
          .. figure:: _resources/Ativ_2b_Gab.png
-            :width: 150 px
+            :width: 200 pt
             :align: center
       
    #. `(-3,9)` e `(3,9)`;
@@ -201,7 +502,7 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
    
    #. Decrescente; Crescente.
    
-   #. Não, pois `\frac{f(4) - f(3)}{1} \neq \frac{f(3)-f(2)}{1} \neq \frac{f(2)-f(1)}{1} \neq \frac{f(1)-f(0)}{1}`.
+   #. Não. `\frac{f(5)-f(4)}{1} \neq \frac{f(4) - f(3)}{1} \neq \frac{f(3)-f(2)}{1} \neq \frac{f(2)-f(1)}{1} \neq \frac{f(1)-f(0)}{1}`.
    
    #. 
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,12 +518,18 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Gráfico `6` | A sessão 9 :ref:`Para saber mais` do capítulo de função afim evidencia que um gráfico deste tipo, composto por vários segmentos de reta, apresenta, para intervalos diferentes do eixo `x`, funções afins diferentes. |
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Gráfico `7` | Corresponde a todas as características observadas para a função `f`. Esse é o seu gráfico.                                                                                                                            |
+      | Gráfico `7` | Existe nesse gráfico imagens que são negativas e isso não é possível, pois `f(x) \geq 0`.                                                                                                                             |
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Gráfico `8` | Todas as imagens se concentram de zero a oito, mas a imagem de `f` tem, por exemplo, os valores `9` e `16`.                                                                                                           |
       +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      
+   #. Resposta livre, mas as representações devem devem ficar o mais próxima possível desta:
+   
+      .. figure:: _resources/Ativ_2_G2.png
+         :width: 200pt
+         :align: center
 
-.. _sub-org-ideias-em-x-a-2
+.. _sub-org-ideias-em-x-a-2:
 
 Organizando as ideias: Características da função real  `f(x)=x^{2}`
 ------
@@ -234,8 +541,12 @@ Na atividade isolamos o termo `x^{2}` que apareceu no início deste capítulo e 
 Os itens de 'b' a 'd' esclarecem que, na função `f`, valores simétricos do domínio geram imagens iguais, ou seja, `f(-x) = f(x)`, para qualquer `x \in \mathbb{R}`. Basta perceber que `f(-x) = (-x)^{2} = (-x)(-x) = x^{2} = f(x)`. Isso faz com que o eixo `y` seja mediatriz do segmento que une esses pares de pontos do tipo `(x,x^{2})` e `(-x,x^{2})` que destacamos, ou para qualquer outro elemento do domínio de `f`. A única exceção é `x=0` pois 0 é simétrico de si mesmo. Assim, podemos afirmar que, para o gráfico da função `f`, o eixo `y` é eixo de simetria.
 
 .. figure:: _resources/Simetria_Parabola.png
-   :width: 200 px
+   :width: 200 pt
    :align: center
+
+.. admonition:: Teorema 1
+
+   A função real `f` definida por `f(x)=x^2` é simétrica em relação ao eixo `y`.
 
 **A imagem de** `f`
 
@@ -247,11 +558,15 @@ O item 'e' nos leva a refletir sobre um fato muito importante no estudo que esta
    & x=0 \Rightarrow x \cdot x = 0 \cdot 0 =0 \Rightarrow f(x)=0;\\
    & x>0 \Rightarrow x \cdot x = x^{2}>0 \Rightarrow f(x)>0.\\
    
-Para qualquer `x \in \mathbb{R}`, `f(x) = x^{2} \ge 0`, ou seja, o menor valor de `f` é zero e `Im(f) = [0, +\infty[`.
+.. admonition:: Teorema 2
+
+   A função real `f` definida por `f(x)=x^2` é tal que para qualquer `x \in \mathbb{R}`, `f(x) = x^{2} \ge 0`, ou seja, o menor valor de `f` é zero e `Im(f) = [0, +\infty[`.
 
 .. figure:: _resources/VMin.png
-   :width: 300 px
+   :width: 300 pt
    :align: center
+
+
 
 **A não proporcionalidade no crescimento de** `f`
 
@@ -259,8 +574,13 @@ Como o gráfico da função `f` é simétrico em relação ao eixo `y`, a análi
 Se `x \in ]0,+\infty[`, temos que `f(x) = x^{2}` e `f(x+1)=(x+1)^{2}=x^{2}+2x+1`. Assim, `f(x+1)-f(x)=2x+1`, ou seja, as variações das imagens dependem do `x` escolhido. Mais especificamente, neste caso elas formam uma progressão aritmética de razão `2` e, com isso, as variações analisadas são crescentes. Graficamente,
 
 .. figure:: _resources/Ativ2_NProp.png
-   :width: 180 px
+   :width: 200 pt
    :align: center
+   
+
+.. admonition:: Observação 
+
+   A função real `f` definida por `f(x)=x^2` não é função afim.
 
 `f` **e as progressões aritméticas**
 
@@ -291,7 +611,7 @@ Escolhendo `x` do domínio de `f` e um `r \in \mathbb{R}` constante, podemos ana
 +-----------+---------------------------+-----------------------------------------------------+
 |    `x`    |           `x^2`           |                                                     |
 +-----------+---------------------------+-----------------------------------------------------+
-|   `x+r`   |   `(x+r)^2=x^2+2xr+r^2`   | `(x+r)^2-x^2=2xr+r^2`                               |
+|   `x+r`   |   `(x+r)^2=x^2+2xr+r^2`   | `(x+r)^2-x^2=2xr+ 1 \cdot r^2`                      |
 +-----------+---------------------------+-----------------------------------------------------+
 |   `x+2r`  |  `(x+2r)^2=x^2+4xr+4r^2`  | `(x+2r)^2-(x+r)^2=2xr+3r^2=(2xr+r^2)+2r^2`          |
 +-----------+---------------------------+-----------------------------------------------------+
@@ -304,17 +624,21 @@ Escolhendo `x` do domínio de `f` e um `r \in \mathbb{R}` constante, podemos ana
 | `\vdots`  |            `\vdots`       |                     `\vdots`                        |
 +-----------+---------------------------+-----------------------------------------------------+
 
-E esse padrão continua, nos permitindo perceber que as diferenças entre imagens consecutivas de elementos do domínio que estão em progressão aritmética, formam uma outra progressão aritmética com primeiro termo igual a `2xr+r^2` e razão `2r^2`.
+E esse padrão continua, nos permitindo perceber que
+
+.. admonition:: Observação
+
+   Na função real `f` definida por `f(x)=x^2` as diferenças entre imagens consecutivas, geradas por uma parte do domínio cujos elementos estejam em progressão aritmética, formam também uma progressão aritmética com primeiro termo igual a `2xr+r^2` e razão `2r^2`.
 
 
 .. _sec-vertex:
 
-Explorando: O ponto de máximo ou de mínimo em funções quadráticas
+Explorando: Um caso de otimização
 =====
    
 .. _sub-Ativ-Perimetro_Fixo:
 
-Atividade 3 : Perímetro Fixo
+Atividade: Perímetro Fixo
 -----
 
 .. admonition:: Para o professor
@@ -326,15 +650,17 @@ Atividade 3 : Perímetro Fixo
    #. apresentar e explorar a técnica de completar quadrados para passarmos a função quadrática encontrada da forma polinomial para a forma canônica, sem obrigatoriamente citar esses termos.
    #. utilizar a apresentação da forma canônica para identificarmos os valores de área máxima e os valores que maximizam essa área, convidando seu aluno à fazer inferências apenas aritméticas na forma encontrada.
 
-**Explorando 3** 
 
-Imagine que você tenha um pedaço de barbante de `12cm` de comprimento e queira cercar uma região retangular com ele. A figura abaixo ajuda a ilustrar a situação.
+Imagine que você tenha um pedaço de barbante de `12` cm de comprimento e queira moldar retângulo com ele. A figura abaixo ajuda a ilustrar a situação.
 
-*Figura das mãos com o barbante*
+.. figure:: _resources/Maos_com_Barbante.png
+   :width: 300 pt
+   :align: center
+
 
 #. A situação em questão envolve quatro grandezas, aponte quais são.
 #. Quais grandezas descritas acima variam e quais não variam?
-#. Preencha o quadro a seguir, que modela a situação:
+#. Numa folha de papel ou similar, copie a tabela a seguir e complete-a.
 
    +------+--------+------+
    | Base | Altura | Área |
@@ -423,9 +749,12 @@ Imagine que você tenha um pedaço de barbante de `12cm` de comprimento e queira
    
    #. `3cm`. 
 
-**Organizando as ideias 3: Quadrados, Máximos ou Mínimos e na Função Quadrática**
+.. _sub-Org-Ideias-Quad-Max-Min-na-quadratica:
 
-Na atividade 3 você foi auxiliado na transformação da lei de formação da função `A` descrita por `A(x)=6x-x²` para `A(x)=-(x-3)²+9`. Qual o objetivo dessa transformação? Que vantagem há nisso?
+Organizando as ideias: Máximos ou mínimos
+-----
+
+Na :ref:`sub-Ativ-Perimetro_Fixo` você foi auxiliado na transformação da lei de formação da função `A` descrita por `A(x)=6x-x²` para `A(x)=-(x-3)²+9`. Qual o objetivo dessa transformação? Que vantagem há nisso?
 
 Sabe-se que uma função real do tipo `f(x)=x^2` tem a propriedade `f(x) \geq 0`, para todo `x \in \mathbb{R}`. Ou seja, qualquer variável real que esteja elevada ao quadrado tem resultado mínimo igual a zero e pode crescer tanto quanto se queira. Imagine agora que esse quadrado seja multiplicada por um número negativo, os resultados que podiam crescer o quanto se quisesse, agora ficam negativos e, na verdade, passam a diminuir tanto quanto se queira e o zero passa a ser o seu maior valor. As tabelas abaixo evidenciam isso:
 
@@ -446,9 +775,9 @@ A análise feita gera a regra que segue.
    
     `a < 0`, `f` tem resultado **máximo** em `x^2 = 0`.   
 
-Na atividade 3, a forma `A(x) = 6x – x^2` tem duas variações simultâneas: `6x` e `-x^2`, o que torna mais difícil a determinação de um possível resultado máximo de `A`. Já a forma `A(x)=-(x-3)^2 +9` só tem uma variação: `-(x-3)^2`, que pela regra descrita acima tem um resultado máximo que ocorre em `(x-3)^2=0`, logo o resultado máximo de `A` é `0+9=9`. Destacamos com isso o quanto fica simples a determinação de um resultado máximo ou mínimo em situações em que podemos reduzir as variações a um único termo ao quadrado.
+A forma `A(x) = 6x – x^2` tem duas variações simultâneas: `6x` e `-x^2`, o que torna mais difícil a determinação de um possível resultado máximo de `A`. Já a forma `A(x)=-(x-3)^2 +9` só tem uma variação: `-(x-3)^2`, que pela regra descrita acima tem um resultado máximo que ocorre em `(x-3)^2=0`, logo o resultado máximo de `A` é `0+9=9`. Destacamos com isso o quanto fica simples a determinação de um resultado máximo ou mínimo em situações em que podemos reduzir as variações a um único termo ao quadrado.
 
-Diante do que conhecemos até aqui, podemos finalmente estabelecer que toda função real do tipo `f(x)=ax^{2}+bx+c`, onde `a`, `b` e `c` são números reais e `a \neq 0`, pode ser transformada em sua forma equivalente `f(x)=a(x-p)^{2}+q`. Em ambos os formatos, chamaremos a função de **função quadrática**. Chamaremos `f(x)=ax^{2}+bx+c` de **forma geral** e `f(x)=a(x-p)^{2}+q` de **forma canônica** da função quadrática.  
+Diante do que conhecemos até aqui, podemos finalmente estabelecer que toda função real do tipo `f(x)=ax^{2}+bx+c`, onde `a`, `b` e `c` são números reais e `a \neq 0`, pode ser transformada em sua forma equivalente `f(x)=a(x-p)^{2}+q`. Em ambos os formatos, chamaremos a função de **função quadrática**. Chamaremos `f(x)=ax^{2}+bx+c` de **forma polinomial** e `f(x)=a(x-p)^{2}+q` de **forma canônica** da função quadrática.  
 
 A forma `f(x)=a(x-p)^{2}+q` permite identificar rapidamente  qual é o resultado máximo ou mínimo da função conforme `a` seja positivo ou negativo. 
 Considere, como exemplo do que foi concluído, que o tamanho do barbante seja de `14` cm. Sua área `A(x)` em função da base `x` será `A(x)=7x-x^{2}`. Fatorando `A(x)`, teremos:
@@ -491,9 +820,9 @@ A conclusão `(1)` não traz novidade, a `(2)` nos mostra como determinar `p` a 
 
 Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4ac`" é representada pela letra grega `\Delta`, ou seja, `\Delta = b^2-4ac`, temos que `q = - \frac{\Delta}{4a}`.
 
-.. admonition:: Teorema 
+.. admonition:: Teorema 3
    
-   Seja a função quadrática, de domínio real, `f(x)=ax^2+bx+c`,
+   Seja a função quadrática `f`, de domínio real, definida por  `f(x)=ax^2+bx+c` ou pela sua forma equivalente `f(x)=a(x-p)^2+q`, temos que
    
    `\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (p,q)= \left( -\frac{b}{2a}, -\frac{\Delta}{4a} \right)`
    
@@ -541,14 +870,14 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
    
    #. Lembrando do que você marcou no item 'f', determine o resultado obtido por *Gauss*.
    
-   #. Você seria de capaz de refazer as etapas, porém desta vez encontrando uma expressão para o resultado da soma dos `n` primeiros números naturais? Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdot +(n-3)+(n-2)+(n-1)+n`.
+   #. Você seria de capaz de refazer as etapas, porém desta vez encontrando uma expressão para o resultado da soma dos `n` primeiros números naturais? Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n`.
    
    **As respostas estão no fim da sessão**
    
    No capítulo de funções, um dos exercícios sugere que você determine a relação entre uma sequência de figuras e a quantidade de pontos usados para compor cada figura.
       
    .. figure:: https://www.umlivroaberto.org/BookCloud/Volume_1/master/view/_images/figurados_1.png
-      :width: 200 px
+      :width: 300 pt
       :align: center
    
    As quantidades de pontos em cada figuras são comumente chamado de números poligonais. Assim, `(1,4,9,16, \cdots)` são números quadrados; `(1,5,12,22, \cdots)` são números pentagonais; etc.
@@ -556,7 +885,7 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
    Nesta atividade, vamos pensar sobre os números triângulares. A imagem a seguir exibe os cinco primeiros:
    
    .. figure:: _resources/Numeros_Triangulares_1.png
-      :width: 300 px
+      :width: 300 pt
       :align: center
       
    #. Escreva a sequência de números triângulares até o sexto termo.
@@ -566,7 +895,7 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
    #. A figura a seguir, destaca as linhas de cada triângulo. Escreva o total de bolinhas de cada um desses triângulos como soma das quantidades das suas linhas.
    
       .. figure:: _resources/Linhas_Num_Triang.png
-         :width: 300 px
+         :width: 300 pt
          :align: center
    
    #. Após o item anterior, que relação você percebe entre os números triangulares e o episódio do menino *Gauss*?
@@ -595,7 +924,7 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
       
    Cada par de parênteses exibe um elemento que, em relação às sequências de onde foram extraídos, varia em `+r`, enquanto o outro varia `-r`, onde `r` é a razão da progressão aritmética. Assim, dispomos de `n` parcelas iguais a, por exemplo, `a_{1}+a_{n}`. Já podemos concluir o teorema a seguir:
    
-     .. admonition:: Teorema 
+     .. admonition:: Teorema 4 
 
         Dada a progressão aritmética `(a_{1},a_{2},a_{3}, \cdots ,a_{n-1},a_{n}, \cdots)`, a soma dos seus `n` primeiros termos será indicada por `S_{n}` e
    
@@ -607,7 +936,11 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
    
    `S_{n}=\frac{[a_1+a_{1}+(n-1)\cdot r] \cdot n}{2}= \frac{[a_1 \cdot n +a_{1}  \cdot n + (n \cdot r-r)\cdot n]}{2}= \frac{2a_{1}n+n^2r-rn}{2}`
    
-   `S_{n}=\frac{r \cdot n^2}{2}+ \frac{(2a_{1}-r)n}{2}`, que é uma função quadrática com domínio discreto `n \in \mathbb{N}^*`.
+   `S_{n}=\frac{r}{2} \cdot n^2 + \frac{(2a_{1}-r)}{2} \cdot n`, que é uma função quadrática dada em sua forma polinomial (com `c=0`) e domínio discreto `\mathbb{N}^*`.
+   
+   .. admonition:: Observação
+      
+      A expressão que fornece a soma dos `n` primeiros termos de uma progressão aritmética é uma função quadrática de `n`.
    
 
 .. admonition:: Resposta 
@@ -705,9 +1038,9 @@ Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4
 Explorando: Os parâmetros da forma canônica e o gráfico da função quadrática
 ====
 
-.. _sub-graf-curva:
+.. _ativ4-graf-curva:
 
-Atividade: O Gráfico da Curva
+Atividade: O Gráfico e a forma canônica
 ------
 
 
@@ -723,76 +1056,34 @@ Atividade: O Gráfico da Curva
    
    Sugerimos ao colega que acesse antes os "links", não só para testar a funcionalidade deles, mas para se apropriar das vantagens que a plataforma oferece. Caso seja da realidade de seus alunos, sugerimos também o acesso à atividade como tarefa de casa.
    
-   
-**Explorando 4**
-
 Para melhor explorarmos essa atividade sugerimos a versão online, disponível nos links a seguir:
 
-Parte 1: https://ggbm.at/jdFEcyav
+- Parte 1: https://ggbm.at/jdFEcyav
 
-Parte 2: https://ggbm.at/DmKxRtU9
+- Parte 2: https://ggbm.at/DmKxRtU9
 
-Parte 3: https://ggbm.at/Qcm5QFjH
+- Parte 3: https://ggbm.at/Qcm5QFjH
 
-Parte 4: https://ggbm.at/jVJh78hz
+- Parte 4: https://ggbm.at/jVJh78hz
 
 Caso não seja possível, segue a atividade que corresponde à apresentada nos "links":
 
-Na atividade 2, você teve a oportunidade de explorar as propriedades do gráfico da função `f:\mathbb{R}\to\mathbb{R}` dada por `f(x)=x^2`, já na atividade 3, você foi apresentado à um processo que o levou a transformar a relação quadrática dada na forma polinomial: `f(x)=ax^2 + bx + c` para forma canônica `f(x)=a(x-p)^2+q`. O objetivo desta atividade é que você consiga perceber as mudanças ocorridas no gráfico da função `f` (dada em sua forma canônica) acarretadas pelas variações dos coeficientes `a`, `p` e `q`. Esperamos que além de você ter contato com novos conceitos, comprove e consolide os conceitos abordados nas atividades anteriores deste capítulo.
+Na :ref:`ativ2-invest-x-a-2`, você teve a oportunidade de explorar as propriedades do gráfico da função `f:\mathbb{R}\to\mathbb{R}` dada por `f(x)=x^2`, já na atividade 3, você foi apresentado à um processo que o levou a transformar a relação quadrática dada na forma polinomial: `f(x)=ax^2 + bx + c` para forma canônica `f(x)=a(x-p)^2+q`. O objetivo desta atividade é que você consiga perceber as mudanças ocorridas no gráfico da função `f` (dada em sua forma canônica) acarretadas pelas variações dos coeficientes `a`, `p` e `q`. Esperamos que além de você ter contato com novos conceitos, comprove e consolide os conceitos abordados nas atividades anteriores deste capítulo.
 
 **PARTE 1** 
 
-Dada a função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`, ao assumirmos `p=q=0` temos que `f(x)=ax^2`, onde analisaremos as variações dos valores de `a`, observando as figuras a seguir:
+Dada a função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`, ao assumirmos `p=q=0` temos que `f(x)=ax^2`, onde analisaremos as variações dos valores de `a`, observando a figura a seguir:
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/a001.jpg
-   :width: 400pt
+.. figure:: _resources/at4_1.jpg
+   :width: 500pt
    :align: center
 
-   (`a=0,01`)
-
-
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/a015.jpg
-   :width: 400pt
-   :align: center
-
-   (`a=0,15`)
-
-
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/a1.jpg
-   :width: 400pt
-   :align: center
-
-   (`a=1`)
+   (`a>0`)
    
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/a2.jpg
-   :width: 400pt
-   :align: center
-
-   (`a=2`)
-   
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/a5.jpg
-   :width: 400pt
-   :align: center
-
-   (`a=5`)
-   
-   
-Note que os gráficos das figuras acima apresentam apenas valores de `a` maiores que zero, e que a curva em questão é côncava, com base nessa afirmação responda:
+Note que os gráficos apresentados na figura acima apresentam apenas valores de `a` maiores que zero, e que a curva em questão é côncava, com base nessa afirmação responda:
 
 #. Quando o valor de `a` aumenta, a concavidade da curva fica mais aberta ou mais fechada?
 #. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
@@ -803,48 +1094,13 @@ Note que os gráficos das figuras acima apresentam apenas valores de `a` maiores
 
    .. _fig-coloque-aqui-o-nome:
 
-   .. figure:: _resources/a-001.jpg
-      :width: 400pt
+   .. figure:: _resources/at4_2.jpg
+      :width: 500pt
       :align: center
 
-      (`a=-0,01`)
-   
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/a-015.jpg
-      :width: 400pt
-      :align: center
-
-      (`a=-0,15`)
-   
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/a-1.jpg
-      :width: 400pt
-      :align: center
-
-      (`a=-1`)
-   
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/a-2.jpg
-      :width: 400pt
-      :align: center
-
-      (`a=-2`)
-   
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/a-5.jpg
-      :width: 400pt
-      :align: center
-
-      (`a=-5`)
-   
+      (`a<0`)
+      
+       
 #. Quando o valor de `a` diminui (fica "mais negativo"), a concavidade da curva fica mais aberta ou mais fechada?
 #. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
 
@@ -884,53 +1140,17 @@ Note que os gráficos das figuras acima apresentam apenas valores de `a` maiores
 
 **PARTE 2** 
 
-Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `q=0` e analisaremos os valores de `p` na função `f(x)=(x-p)^2` observando as figuras a seguir:
-
-
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/p-4.jpg
-   :width: 400pt
-   :align: center
-
-   (`p=-4`)
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/p-2.jpg
-   :width: 400pt
-   :align: center
-
-   (`p=-2`)
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `q=0` e analisaremos os valores de `p` na função `f(x)=(x-p)^2` observando a figura a seguir:
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/p0.png
-   :width: 400pt
+.. figure:: _resources/at4_3.jpg
+   :width: 500pt
    :align: center
 
-   (`p=0`)
+   Variação de `p`
 
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/p3.jpg
-   :width: 400pt
-   :align: center
-
-   (`p=3`)
-   
-   
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/p5.jpg
-   :width: 400pt
-   :align: center
-
-   (`p=5`)
    
    
 Em cada um dos itens a seguir destaque as alternativas verdadeiras.
@@ -994,56 +1214,21 @@ Em cada um dos itens a seguir destaque as alternativas verdadeiras.
 
 **PARTE 3** 
 
-Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `p=0` e analisaremos os valores de `q` na função `f(x)=x^2+q` observando as figuras a seguir:
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `p=0` e analisaremos os valores de `q` na função `f(x)=x^2+q` observando a figura a seguir:
+
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/q-5.jpg
-   :width: 400pt
+.. figure:: _resources/at4_4.jpg
+   :width: 500pt
    :align: center
 
-   (`q=-5`)
+   Variação de `q`
    
    
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/q-1.jpg
-   :width: 400pt
-   :align: center
-
-   (´q=-1´)
-   
-   
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/q0.jpg
-   :width: 400pt
-   :align: center
-
-   (`q=0`)
-   
-   
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/q2.jpg
-   :width: 400pt
-   :align: center
-
-   (`q=2`)
-   
-   
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/q5.jpg
-   :width: 400pt
-   :align: center
-
-   (`q=5`)
-   
-   
-
-
+Em cada um dos itens a seguir destaque as alternativas verdadeiras.
+    
 #. Quando os valores de `q` aumentam a curva se desloca para
 
    (  ) direita.    
@@ -1103,7 +1288,7 @@ Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g
 
 **PARTE 4** 
 
-Em cada uma das partes anteriores, estudamos as variações gráficas que cada um dos valores de `a`, `p`e `q` fazem na curva. Para elucidarmos essas ideias, convidamos a variar esses valores juntos na função f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`.
+Em cada uma das partes anteriores, estudamos as variações gráficas que cada um dos valores de `a`, `p`e `q` fazem na curva. Para elucidarmos essas ideias, convidamos a variar esses valores juntos na função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`.
 
 
 #. Observe as figuras a seguir, e note que em todas os valores de `a` são sempre iguais a `1`, já os valores de `p` e `q`variam.
@@ -1293,8 +1478,46 @@ Em cada uma das partes anteriores, estudamos as variações gráficas que cada u
    
    (  ) A concavidade da curva está voltada para cima, pois `q<0`.
    
-   
 
+.. _sub-prat-formacanonica:
+
+Praticando
+---------
+
+`1`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma canônica, passe todas para forma polinomial representando-as graficamente.
+     
+#. `f(x)=2(x-5)^2+8`
+#. `g(x)=-3(x+2)^2-7`
+     
+
+`2`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma polinomial, passe todas para forma canônica representando-as graficamente.
+     
+#. `f(x) = x^2-8x+6`
+#. `f(x) = -x^2+8x`
+#. `f(x) = 2x^2+8`
+#. `f(x) = 2x^2+8x`
+#. `f(x) = x^2+x+1`
+     
+`3`) Cada um dos gráficos a seguir representa uma função `f:\mathbb{R}\to\mathbb{R}`. Exiba a forma canônica em cada caso.
+     
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/prat_33_a.jpg
+   :width: 400pt
+   :align: center
+
+   Praticando 3.3 
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure::  _resources/prat_33_a_1.jpg
+   :width: 400pt
+   :align: center
+
+   Praticando 3.3
+   
 .. admonition:: Resposta 
 
    **Parte 1**
@@ -1357,9 +1580,226 @@ Em cada uma das partes anteriores, estudamos as variações gráficas que cada u
    
    #. (F);(F);(V);(F);(F);(F);(V);(F);(F);(V);(F);(F)
    
+   
+   **Resposta Praticando 1**
+      #. `f(x)=2x^2-20x+58` 
+      #. `g(x)=-3x^2-12x-19`
+   
+   **Resposta Praticando 2**
+      #. `f(x)=(x-4)^2-10` 
+      #. `f(x)=-(x-4)^2+16`
+      #. `f(x)=2(x-0)^2+8`
+      #. `f(x)=2(x+2)^2-8`
+   
+   **Resposta Praticando 3**
+      #. `f(x)= 2(x-1)^2+3` 
+      #. `f(x)=-(x-3)^2+1`
+      #. `f(x)=(x-1)^2-1`
+      #. `f(x)=-3(x-1)^2`
+   
+
+
+.. _sub-Org-I-4-transformacoes:
+
+Organizando Ideias
+---------  
+   
+A curva apresentada nas atividades anteriores foi descoberta e utilizada muito antes do surgimento do conceito de função. Os relatos históricos apontam que os gregos já utilizavam curvas obtidas por meio de cortes específicos em cones retos (denominadas *cônicas*), porém foram os textos de Apolônio (262 a.C. — 194 a.C.) que definiram e explicitaram as propriedades destas curvas. Das *cônicas*
+definidas por Apolônio, a que estamos estudando, é denominada de **parábola**.
+
+A abordagem dada à **parábola** durante muitos séculos foi apenas geométrica, a seguir apresentamos sua definição geométrica:
+
+
+.. admonition:: Definição 
+
+   Dado um ponto `F` do plano e uma reta `d` que não contém `F`, chamamos de **parábola** o conjunto dos pontos `P` do plano tais que `P` equidista de `F` e `d`.  Onde denominamos `F` como *foco* e `d` como *reta diretiz*.
+          
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/parabola_definicao.jpg
+      :width: 300pt
+      :align: center
+
+      Parábola como Lugar Geométrico
+      
+      
+   Ou seja,
+   `P\in` à **parábola** `\equiv d(P,F)=d(P,d)`  
+   
+   
+Agora vamos mostrar que essa definição atende à função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`.
+
+Na figura a seguir destacamos, além do gráfico da função `f`, os pontos `F=(0,\frac{1}{4})` e a reta `d:y=-\frac{1}{4}`
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_x2.jpg
+   :width: 500pt
+   :align: center
+
+   Parábola, Foco e diretriz
+   
+
+Sabemos que todos ponto pertencentes à `f` são do tipo `P=(x,x^2)` para que `f` satizfaça a definição anterior, temos que para todo `P` pertencente à `f`, a distância de `P` ao foco `F=(0,\frac{1}{4})` seja a mesma distância de `P` à reta diretriz `d:y=-\frac{1}{4}`, e isto é fato, veja:
+
+`d(P,F)=\sqrt{(x-0)^2+(x^2-\frac{1}{4})^2}=\sqrt{x^2+(x^2-\frac{1}{4})^2}`
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_x2_1.jpg
+   :width: 400pt
+   :align: center
+
+   Distância de P à F
+
+Por outro lado:
+
+`d(P,d)=x^2+\frac{1}{4}`
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_2_x2.jpg
+   :width: 500pt
+   :align: center
+
+   Distância de P à d
+   
+   
+Como queremos `d(P,F)=d(P,d)`, temos:
+
+`\sqrt{x^2+(x^2-\frac{1}{4})^2}=x^2+\frac{1}{4}`
+
+Elevando ambos os membros ao quadrado, temos:
+
+`(\sqrt{x^2+(x^2-\frac{1}{4})^2})^2=(x^2+\frac{1}{4})^2`
+
+`x^2+(x^2-\frac{1}{4})^2=(x^2+\frac{1}{4})^2`
+
+Desenvolvendo teremos:
+
+`x^2+(x^4-\frac{1}{2}x^2+\frac{1}{16})=x^4+\frac{1}{2}x^2+\frac{1}{16}`
+
+`x^4+(x^2-\frac{1}{2}x^2)+\frac{1}{16}=x^4+\frac{1}{2}x^2+\frac{1}{16}`
+
+E finalmente:
+
+`x^4+\frac{1}{2}x^2+\frac{1}{16}=x^4+\frac{1}{2}x^2+\frac{1}{16}`
+
+Isso nos mostra que a curva descrita no gráfico da função quadrática `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2` é realmente uma **parábola**.
+
+Agora utilizaremos os conceitos abordados na atividade 4 (O gráfico da Curva).
+
+#. Observamos que a variação de `a` na curva `y=ax^2` faz com que a concavidade da curva fique mais aberta quando `a` se aproxima de zero ou mais fechada quando `a` se afasta de zero, e também que o sinal de `a` indica se a concavidade aponta para cima (`a>0`) ou para baixo (`a<0`). É facil demonstrar que o gráfico de toda função real `f` dada na forma `f(x)=ax^2` é uma *parábola*. Note que o texto anterior, provamos para `a=1`. Para generalizarmos, basta assumirmos o foco como `F=(0,\frac{1}{4a})` e reta diretriz como a reta horizontal `y=-\frac{1}{4a}`.
+
+#. Além disso vimos que as variações dos termos `p` e `q` da forma canônica `f(x)=a(x-p)^2+q` provocam as *translações* horizontais e verticais respectivamente. Como as translaçoes não deformam as figuras transladadas, podemos inferir que os gráficos todas as funções reais dadas por `f(x)=a(x-p)^2+q` são parábolas. Cujo vértice é dado por `V=(p,q)`.
+
+#. Portanto toda função quadrática apresentada na sua forma canônica `f(x)=a(x-p)^2+q` e também em sua forma polinomial `f(x)=ax^2+bx+c` têm gráficos parabólicos.
+
+
+**Observação**
+
+Toda parábola com reta diretriz paralela ao eixo das abscissas será uma função quadrática.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_e_fc.jpg
+   :width: 500pt
+   :align: center
+
+   São funções de `x` em `y`
+   
+Note que se esta condição não for aceita, o gráfico apresentado, não será sequer uma função real de `x` em `y`, observe nas figuras a seguir:
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_n_fc.jpg
+   :width: 500pt
+   :align: center
+
+   Não é função de `x` em `y`
+      
+Se a figura anterior, representar o gráfico da relação `\phi:\mathbb{R_x+}\to\mathbb{R_y}` dada por `x=y^2`, temos que `\phi` não é função, já que a maioria dos pontos do domínio apresentam duas imagens, na figura destacamos apenas as duas imagens de `x=9`.
+   
+Porém, **mesmo não sendo comum**, se assumirmos a relação `\phi:\mathbb{R_y}\to\mathbb{R_x+}` dada por `x=y^2`, temos que `\phi` é função, só que de `y` em `x`.
+   
+Já no caso da figura a seguir, o gráfico, não representa uma função de `x` em `y` nem de `y` em `x`. 
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/parabola_n_fc_2.jpg
+   :width: 500pt
+   :align: center
+
+   Não é função de `x` em `y`
+   
+
+   
+Ou seja, para que uma parábola seja o gráfico de uma função quadrática de `\mathbb{R_x}\to\mathbb{R_y}` a condição necessária é que sua reta diretriz seja paralela ao eixo das abscissas.
+   
+.. _sub-praticando-parabola-lg:
+Praticando
+----
+
+`1)` Numa jogo eletrônico em que você controla um oficial militar infiltrado. Dentre as fases de treinamento tático há uma que exibe um salão vigiado por câmeras. 
+
+.. figure:: _resources/MGS_1998_PS_Espreita.jpg
+   :width: 200pt
+   :align: center
+
+Como as câmeras fazem movimento de vai e vem, é possível atravessar o salão sem ser detectado, e esse é o objetivo desta fase. A imagem a seguir mostra a vista de cima desta fase.
+
+.. figure:: _resources/Vista_Superior_Salao_1.png
+   :width: 300pt
+   :align: center
+   
+A região em cinza é uma região que uma câmera consegue enxergar em algum momento do seu movimento de vai e vem. O traço verde contínuo são barreia intransponíveis e as pontilhadas podem ser ultrapassadas. Em 'E' o personagem entra e em 'S' ele sai. Os pontos em vermelho são posições possíveis para o personagem que, percebendo a proximidade do olhar de alguma das câmeras deve correr e se esconder numa região em preto. Sendo assi, para cada posição do personagem, diga para onde é mais perto correr: 'E', Região horizontal 'H', Região quadrada 'Q' ou 'S'.
+
+
+.. admonition:: Resposta 
+
+   Traçando uma reta no limite da região 'H' e um ponto no centro de 'Q', pode-se traçar os pontos do salão que equidistam de 'H' ou 'Q', que é a parábola:
+   
+   .. figure:: _resources/Vista_Superior_Salao_SOLUCAO.png
+      :width: 300pt
+      :align: center
+   
+   
+   `1)` 'H' ou 'Q', pois 'E' parece estar mais distânte do que essas.
+   
+   `2)` 'H'.
+   
+   `3)` 'H'.
+   
+   `4)` 'Q'
+   
+   `5)` 'Q'
+   
+   `6)` 'H'
+
+
+
+.. _sub-para-saber-mais-parabola-lg:
+
+Para saber mais
+-------
+
+A definição geométrica da **parábola** apresentada inicialmente pode ser associada à referência histórica de corte de cone reto, para isso acesso o link do geogebra a seguir e mantenha os valores de `t` e `a`, variando apenas os valores de `s`. 
+
+https://ggbm.at/Z38MMkqV
+   
+ 
+Para demonstrar que toda parábola é gerada por cortes específicos em cones retos, sugerimos uma leitura das páginas `13`, `14` e `15` da dissetação de [MONTEIRO]_.
+
+
 .. _explorando-max-min-can:
 
-Explorando: Valores de máximo ou de mínimo da forma canônica
+Explorando: Otimização em domínio discreto e escalas gráficas 
 ========
 
 
@@ -1378,12 +1818,19 @@ Atividade: Aumento na Passagem
    #. Identificar se a relação encontrada é uma função quadrática e se o gráfico apresentado é de uma parábola.
    #. Fazer uma discussão à respeito do domínio e da imagem da função levando em consideração à modelagem da situação.
    #. Reforçar a utilização da passagem da forma polinomial para a forma canônica, apontando assim de maneira direta o faturamento máximo e o aumento que irá gerar o faturamento máximo.
+   #. Apresentar em que pontos a parábola intersecta os eixos coordenados, levando-os à fazer inferências sobre a utilização das coordenadas desses pontos no contexto do problema.
+   
+   
+   **Observação:** Sugerimos que o professor além de fazer a atividade antes de aplicá-la, leia com atenção as respostas das atividades, nela o colega encontrará sugestões que o auxiliarão na condução dessa atividade na sua sala de aula.
+   
 
 
 Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasileiras diariamente, e transporta mensalmente, uma média de `1200` passageiros. O custo individual da passagem cobrado pela empresa, é atualmente de `R$ 40,00`, porém seus diretores estudam um aumento desse valor. Para isso contratam uma outra empresa para realizar uma pesquisa de mercado, a pesquisa realizada por essa empresa, estima que a cada `R$ 1,00` de aumento no preço da passagem, `10` passageiros deixarão de viajar pela transportadora. De posse desta informação, os diretores desejam saber qual é o preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora. Para isso vamos responder os itens a seguir:
 
-#. Preencha o quadro a seguir, seguindo o padrão que modela a situação.
+#. Se aumentarmos em `R$2,00` a passagem qual será seu novo preço? Qual a nova quantidade de passageiros? Qual será o novo faturamento em reais? E se o aumento fosse de `R$ 12,00`?
 
+
+#. Preencha a tabela a seguir, seguindo o padrão que modela a situação.
     +------------------+------------------+--------------------------------+----------------------+
     | Aumento em reais | Novo preço       | Nova quantidade de passageiros | Faturamento em reais |
     +------------------+------------------+--------------------------------+----------------------+
@@ -1413,16 +1860,26 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
     +------------------+------------------+--------------------------------+----------------------+
     | 120              |                  |                                |                      |
     +------------------+------------------+--------------------------------+----------------------+
-
+    | 130              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
 #. Escolha um dos planos cartesianos a seguir, para representar os pontos da tabela acima e os represente no plano escolhido.
 
-   *Inserir a figura dos planos cartesianos, trocando Gráfico por plano*
+  
+   .. _fig-coloque-aqui-o-nome:
 
-#. Qual gráfico você escolheu? Justifique sua escolha.
+   .. figure:: _resources/graficos_c.jpg
+      :width: 600pt
+      :align: center
 
-#. A escala no gráfico escolhido é a mesma nos dois eixos? Quais os gráficos do item “b” possuem a mesma escala nos dois eixos?
+      Melhor Plano
+
+#. Qual "gráfico" você escolheu? Justifique sua escolha.
+
+#. A escala no "gráfico" escolhido é a mesma nos dois eixos? Quais os "gráficos" do item “b” possuem a mesma escala nos dois eixos?
 
 #. Quais as vantagens e desvantagens em ambos os casos (eixos em escalas distintas e eixos em mesma escala)? 
+
+#. Explique o motivo do valor `130` estar na tabela e não estar no gráfico. Justifique levando em consideração o valor de sua imagem dentro do conceito da atividade.
 
 #. Podemos afirmar que os pontos obtidos, são pontos de uma parábola? Justifique sua resposta.
 
@@ -1446,7 +1903,7 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
 #. Enfim, qual é o aumento no preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora?
 
-#. Qual é o valor desse faturamento máximo?
+#. Qual é o valor desse faturamento máximo? Este valor aparece tabela e no gráfico?
 
 
 
@@ -1454,8 +1911,11 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
    Respostas:  
 
+   #. Novo preço será de `40+2=42` reais; A nova quantidade de passageiros será de `1200-10 \times 2=1200-20=1180` passageiros; O novo faturamento será de `42 \times 1180=49560` reais. No caso do aumento ser de doze reais teremos na ordem: `R$ 52,00` de novo preço; `1080` passageiros; E `R$56160,00` de faturamento.   
+   
+
    #. 
-      +------------------+------------+--------------------------------+----------------------+
+       +------------------+------------+--------------------------------+----------------------+
       | Aumento em reais | Novo preço | Nova quantidade de passageiros | Faturamento em reais |
       +------------------+------------+--------------------------------+----------------------+
       | 0                | 40         | 1 200                          | 48 000               |
@@ -1484,9 +1944,18 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
       +------------------+------------+--------------------------------+----------------------+
       | 120              | 160        | 0                              | 0                    |
       +------------------+------------+--------------------------------+----------------------+
+      | 130              | 170        | -100                           | -17 000              |
+      +------------------+------------+--------------------------------+----------------------+   
 
+   #. 
+   
+      .. _fig-coloque-aqui-o-nome:
 
-   #. *Inserir figura do paper dos gráficos da resposta
+      .. figure:: _resources/graficos_c_resp.jpg
+         :width: 400pt
+         :align: center
+
+         Gráfico B
    
    #. O gráfico B, pois nos outros, os valores do eixo das ordenadas não atendiam.
 
@@ -1500,11 +1969,27 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
       
       **Escalas iguais**: (*Desvantagens*) Precisaríamos de muito espaço e/ou bastante compactação para desenharmos fielmente este gráfico. Note como ficaria:
       
-      *Inserir figura do gráfico com escala real*
       
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/graficos_f.jpg
+         :width: 400pt
+         :align: center
+
+         Escala real
+      
+   #. A imagem de `130` é negativa, logo se a nova passagem for de `130`reais "haveria" um faturamento negativo, o que não é condizente para os dados apresentados no contexto.
+   
    #. Sim, por vários motivos: já vimos que o gráfico de toda função quadrática é uma parábola, e que as função quadráticas são as únicas funções em que as diferenças das imagens, geram uma Progressão aritmética:
    
-      *Inserir figura da PA*
+      
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/PA_g.jpg
+         :width: 100pt
+         :align: center
+
+         **P.A.**
 
    #. `40+x`.
 
@@ -1514,9 +1999,9 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
    #. Sim. Ou pela justificativa dada no item “f” ou pelo fato da função quadrática ser uma função do polinômio de grau 2, e a função em questão, apresenta `a=-10` ; `b=800` e `c=48000` coeficientes do polinômio do segundo grau. 
 
-   #. `A=[0,120];B=[0,64000]`.
+   #. `A` é o conjunto dos números naturais de `0` a `120`; `B` é o conjunto dos números naturais contidos no intervalo:`[0,64000]` que são imagens dos elementos do conjunto `A`.
 
-   #. R$ `48000,00` que representa o faturamento atual, inicial ou seja, o faturamento sem aumento.
+   #. R$ `48000,00` que representa o faturamento atual, inicial ou seja, o faturamento sem aumento no valor da passagem.
 
    #. No ponto `(120,0)`, representa que se o aumento for de R$ `120,00`, não haverá faturamento, ou seja, a empresa faturaria zero reais. 
 
@@ -1526,40 +2011,268 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
    #. R$ `40,00`.
 
-   #. R$ `6400,00`.
+   #. R$ `6400,00`. Sim, em ambos.
 
+
+.. admonition:: Praticando 
+
+   `1`) Trace os gráficos das funções `f:\mathbb{R}\to\mathbb{R}` definidas por:
+   
+   #. `f(x)=x^2-2x`
+   #. `f(x)=-x^2+9`
+   #. `f(x)=x^2-2x+1`
+   #. `f(x)=-x^2+6x-5`
+   #. `f(x)=-3x^2`
+   #. `f(x)=x^2+x+1`
+   
+   
+   `2`) Dada a função real `f` dada por `f(x)=-x^2+4x+5` , o gráfico da mesma está representado abaixo:
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/fi.jpg
+      :width: 300pt
+      :align: center
+
+      `f(x)=-x^2+4x+5`
+      
+   As coordenadas corretas dos pontos do gráfico são:
+ 
+   (A)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(5,0)`  ; `V=(3,9)`
+
+   (B)  `C=(0,4)`  ;  `A=(0,-1)`  ; `B=(0,5)`  ; `V=(2,9)`
+   
+   (C)  `C=(0,5)`  ;  `A=(0,-1)`  ; `B=(0,5)`  ; `V=(9,2)`
+   
+   (D)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(4,0)`  ; `V=(3,4)`
+   
+   (E)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(5,0)`  ; `V=(2,9)`
+   
+
+   `3`) Seja a função real `g`, definida por `g(x)=ax^2+bx+c` representada no gráfico a seguir:
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/f2_2.jpg
+      :width: 400pt
+      :align: center
+
+      (`g(x)=ax^2+bx+c`)
+   
+   Pode-se afirmar que:
+   
+   (A) `a>0`; `b>0`; `c<0`
+   
+   (B) `a>0`; `b<0`; `c>0`
+   
+   (C) `a<0`; `b<0`; `c<0`
+   
+   (D) `a<0`; `b>0`; `c<0`
+   
+   (E) `a<0`; `b>0`; `c>0`
+   
+   
+   
+.. admonition:: Resposta 
+
+   `1`) 
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/r1.jpg
+      :width: 400pt
+      :align: center
+
+      
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/r2.jpg
+      :width: 400pt
+      :align: center
+
+     
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/r3.jpg
+      :width: 400pt
+      :align: center
+
+   
+   `2`) Gabarito letra E. Em `f(x)=-x^2+4x+5`, temos que `C=(0,5)`, `x_1=-1` e `x_2=5`, logo `A=(-1,0)` e `B=(5,0)`.
+   
+   Como `x_v=\frac{-b}{2a}=\frac{-4}{2\cdot(-1)}=2` e `f(2)=9`, temos que `V=(2,9)`;
+  
+
+   `3`) Gabarito letra E. Como a concavidade da parábola está voltada para baixo, temos que `a<0`;
+   
+   Como o `x_v` é positivo e `a<0`, temos que `x_v=\frac{-b}{2a}\to+=\frac{-?}{-}` assim `b>0`.
+   
+   Como a parábola intersecta o eixo das ordenadas na parte positiva deste eixo, temos que `c>0`.
+
+.. _sub-Org-Ideias5:
+
+Oraganizando Ideias: Intersecção com os eixos coordenados
+---------
+
+Em atividades anteriores, observamos as mudanças ocorridas no gráfico de uma funçao quadrática em sua forma canônica. Ao observarmos essa função definida em sua forma polinomial, também conseguimos perceber a influência que cada um de seus coeficientes (`a`, `b` e  `c`) tem na posição do gráfico da função. 
+
+Dada a função real `f` definida por `f(x)=ax^2+bx+c`, podemos descobrir em quais pontos `f` intersecta os eixos coordenados:
+
+#. **O eixo das ordenadas**
+   
+   Todo ponto pertencente ao eixo das ordenadas possui coordenada `x=0`, logo `P=(0,f(0))` pertence à parábola e ao eixo dadas ordenadas com `P=(0,c)`, pois:
+   
+   `f(0)=a\cdot(0)^2+b\cdot0 + c = 0 + 0 + c = c`
+
+#. **O eixo das abscissas**
+   
+   Todo ponto pertencente ao eixo das abscissas possui coordenada `f(x)=0`, logo `P=(x,0)` pertence à parábola e ao eixo das abscissas. E quando substituímos `f(x)` por `0` , temos uma equação do segundo grau, ela pode ser resolvida por diversas maneiras, a mais comum utilizando a fórmula quadrática, conhecida no Brasil erroneamente por fórmula de Báskara:
+   
+   `x=\frac{-b\pm\sqrt{\Delta}}{2a}`  onde `\Delta=b^2-4ac`
+   
+   Ao resolvermos a equação quadrática é possível que encontremos os **zeros da função**, termo utilizado para os valores de `x` que fazem `f(x)` ser nula, `f(x)=0`. Neste caso obteremos o(s) ponto(s) em que o gráfico da função intersecta o eixo das abscissas.
+   
+   Analisemos o sinal de `\Delta`
+   
+   **Caso** `1)` Para `\Delta>0` , teremos na fórmula quadrática, uma raiz quadrada de um número positivo, sendo seu resultado um número real positivo qualquer (inteiro, racional não inteiro ou irracional), ao somarmos esse valor com `-b` e dividirmos o resultado por `2a`,  encontraremos um dos zeros da função `f` que chamaremos de `x_1`; ao subtrairmos esse valor de `-b` e dividirmos o resultado por `2a`, teremos o outro zero da função `f` que chamaremos de `x_2`, sendo: `x_1= \frac{-b+\sqrt{\Delta}}{2a}` e `x_2=\frac{-b-\sqrt{\Delta}}{2a}`
+   
+   Portanto a parábola (gráfico de `f`) intersectará o eixo das abscissas em dois pontos: `P_1=(x_1,0)`  e `P_2=(x_2,0)`
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_pos.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta>0`)
+   
+   **Caso** `2)` Para `\Delta=0` , teremos na fórmula quadrática, uma raiz quadrada de zero, que resulta em zero, e somar ou subtrair `0` de `-b` acharemos sempre `-b`, resultando assim num único zero de `f`, no caso: `x= \frac{-b\pm\sqrt{0}}{2a}=\frac{-b\pm0}{2a}=\frac{-b}{2a}=x_v`. Note que esta expressão é a mesma apresentada anteriormente para a coordenada `x` do vértice da parábola.
+   
+   Portanto a parábola (gráfico de `f`) "tocará" no eixo das abscissas em apenas um ponto: `V=(\frac{-b}{2a},0)`. Ou melhor, o eixo das abscissas será tangente à parábola no ponto `V`.
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_zero.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta=0`)
+   
+   **Caso** `3)` Para `\Delta<0` , teremos na fórmula quadrática, uma raiz quadrada de um número real negativo, que resulta no fato de não existir um valor de `x` real que atenda essa equação quadrática. Sendo assim o gráfico nem toca nem intersecta o eixo das abscissas, logo a função `f` não possuirá zeros.
+   
+   Portanto a parábola (gráfico de `f`) ficará posicionada totalmente acima (`a>0`) ou abaixo (`a<0`) do eixo das abscissas.
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_neg.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta<0`)
+   
+Vale ressaltar que uma função quadrática `f:\mathbb{R}\to\mathbb{R}` definida em sua forma polinomial por: `f(x)=ax^2+bx+c`, além de poder ser representada em sua forma canônica: `f(x)=a(x-p)^2+q`, também pode ser escrita em sua forma fatorada: `f(x)=a(x-x_1)(x-x_2)` , onde `x_1` e `x_2` são os zeros de `f`.
+
+Exemplo `1` : Seja a função real `f` definida por `f(x) = x^2 - 6x + 8` representada graficamente por:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/ex1.jpg
+   :width: 300pt
+   :align: center
+
+   (`f(x) = x^2 - 6x + 8`)
+   
+Note que suas raízes são `x_1=2` e `x_2=4` (podemos descobrir esses valoress utilizando a fórmula quadrática), note que a forma fatorada de `f` será:
+
+`f(x)=(x-2)(x-4)` 
+
+Para retornarmos para a forma polinomial basta efetuarmos o produto indicado.
+
+
+Exemplo 2: Seja a função real `f` definida por `f(x) = -2x^2 +4x + 6` representada graficamente por:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/ex2.jpg
+   :width: 300pt
+   :align: center
+
+   (`f(x) = -2x^2 +4x + 6`)
+   
+Note que suas raízes são `x_1=3` e `x_2=-1` (podemos descobrir esses valores utilizando a fórmula quadrática), note que a forma fatorada de `f` será:
+
+`f(x)=a(x-3)(x+1)` 
+
+Substituindo o ponto `(0,6)` temos:
+
+`6=a(0-3)(0+1)` 
+
+`6=-3a`
+
+`a=-2`
+
+Portanto, `f` na sua forma fatorada será dada por:`f(x)=-2(x-3)(x+1)` 
+
+Para retornarmos para a forma polinomial basta efetuarmos o produto indicado.
 
 .. _sec-obtendo-lei-do-grafico:
 
-Explorando: Determinando a função quadrádica pelo gráfico
+Explorando: Determinando a função quadrática através do gráfico
 =====
    
-.. _Atividade Altura do Arco
-Atividade 6: Altura do Arco da Praça da Apoteose
+.. _sub-Atividade-Altura-do-Arco:
+Atividade: Altura do Arco da Praça da Apoteose
 ----------
 
 
 .. admonition:: Para o professor
 
-   **Objetivos Gerais**
+   **Objetivos Específicos**
    
-   #.
+   #. Relacionar, a partir de dados gráficos, qual a forma da função quadrática que melhor descreve a situação.
+   
+   #. Associar situações concretas à forma da parábola e buscar soluções a partir da aplicação das ferramentas da função quadrática.
+   
+   #. Inferir sobre a utilidade da função quadrática no cotidiano.
+   
+   #. Distinguir em problemas concretos o papel de abscissa e ordenada para a representação gráfica da parábola.
+   
+   **Observações e Recomendações**
+   
+   Como um dos objetivos principais deste conjunto de atividades é trazer alguma sugestão de aplicação ou contextualização do tema, todos os enunciados apresentam um texto de motivação ou ambientação. 
+   
+   Além disso, as atividades tem um apelo mais visual, no sentido de conectar a função quadrática à sua representação gráfica, a parábola. Sendo assim, em todos os casos apresentados, o estudante deve fazer a escolha do sistema de coordenadas cartesiamos q	ue melhor se adequa à situação apresentada e, a partir daí usar os conteúdos estudados para responder às questões sobre a situação apresentada.
+   
+   Orientamos o professor a calcular o tempo das atividades levando em conta a possibilidade de um aluno não seguir o caminho que as respostas das atividades sugerem para que eles entendam as dificuldades que essas escolhas trazem. Isso será, certamente, tão importante quanto a resposta prevista em si.
+   
+   Para cada sugestão gráfica apresentada para desenvolver o problema, deixe que os alunos argumente o porque de suas escolhas e peça para aqueles que escolheram a forma que sugerimos nas respostas argumente sobre sua escolha.
+   
+   Mesmo esse grupo de atividades sendo único, adicionamos à última atividade um texto sobre jogos eletrônicos e seus uso em sala de aula. Posto aqui, as orientações ficariam maiores do que o necessário e no tempo errado. 
    
 
 A passarela Professor Darcy Ribeiro `(\star 1922, \dagger 1997)`, mais conhecida como Sambódromo, fica na cidade do Rio de Janeiro e foi construida em 1984. Com projeto arquitetônico de Oscar Niemeyer `(\star 1907, \dagger 2012)`, ela foi concebida para ser o local fixo de uma das maiores festas populares do Brasil, o Carnaval. Ao final da passarela, encontra-se a praça da apoteose, com o museu do samba e um enorme arco cujo formato lembra o de uma parábola. 
 
 .. figure:: https://images.adsttc.com/adbr001cdn.archdaily.net/wp-content/uploads/2012/02/1329492836_riodejaneiro_sambodromo15.jpg
-   :width: 350 px
+   :width: 350 pt
    :align: center
 
 
 Em `2011`, pela primeira vez desde a construção, a prefeitura providenciou a limpeza do arco.  
 
 .. figure:: https://extra.globo.com/noticias/rio/1077268-c89-c80/w367h550-PROP/02_15_gvg_rio_lavagem10.jpg
-   :width: 200px
+   :width: 200pt
    :align: center
-
-`Banho nos arcos do Sambódromo <https://extra.globo.com/noticias/rio/banho-nos-arcos-do-sambodromo-1077277.html>`_
+   
+   `Banho nos arcos do Sambódromo <https://extra.globo.com/noticias/rio/banho-nos-arcos-do-sambodromo-1077277.html>`_
 
 A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativa da altura do arco, com a finalidade de saber se seu equipamento seria suficiente para a tarefa, já que a altura máxima que o equipamento suportaria, seria de `40` m de altura. Uma busca rápida na internet não forneceu o resultado esperado, apenas que o comprimento da base é de `50` m. Sendo assim, a estimativa teve que ser feita através de cálculos. Admitindo por aproximação que o arco seja parabólico, faça o que se pede:
 
@@ -1570,7 +2283,7 @@ A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativ
 #. Dentre as opções a seguir marque a que faz o rascunho do arco no plano cartesiano.
 
    .. figure:: _resources/Ativ6_C_unico.png
-      :width: 400px
+      :width: 400pt
       :align: center
 
 #. Para essa escolha, qual o significado dos valores de `x` e de `y`?
@@ -1587,14 +2300,12 @@ A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativ
 
 #. Quantos dados estão faltando para que seja conhecida a função que descreve esta parábola?
 
-#. Com o auxílio da calculadora gráfica em: `Estimando a parábola <endereço web>`_obtenha a informação que falta para obter a função que descreve a parábola.
+#. Com o auxílio da calculadora gráfica em: `Estimando a parábola <https://ggbm.at/VFR6nWHM>`_ obtenha a informação que falta para obter a função que descreve a parábola.
    
-   **Colocar na web a atividade do gif para estimar o 'a' que falta na lei da função**
-
    .. figure:: _resources/Sambodromo_Geogebra.*
-      :width: 300px
+      :width: 400pt
       :align: center
-  
+
 #. Qual a altura estimada para a altura do arco?
 
 #. A empresa contratada para a limpeza do arco teve capacidade de concluir o serviço com o equipamento que possuia?
@@ -1624,19 +2335,19 @@ A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativ
    **Nota**: Dentre as informações pesquisadas sobre a altura real desse arco, os autores encontraram `25` m, `26` m e até `30` m.
    
 .. _Atividade do Túnel
-Atividade 7: Mãos a obra!
+Atividade: Mãos a obra!
 -------
    
 A prefeitura de uma cidade, com o fim de melhorar as atividades comerciais locais, fez um levantamento com produtores, fornecedores e compradores. Ficou claro que a redução no percurso até a cidade beneficiaria a todos. Por esse motivo, a prefeitura encomendou a contrução de uma nova estrada, que exigiria dois túneis em certo trecho, um para cada sentido da estrada. O formato das entradas ou das saídas dos túneis, a pedido da prefeitura, deverão ser arcos parabólicos. 
 
 .. figure:: _resources/Ativ7_Esboco_Tuneis.jpg
-   :width: 200px
+   :width: 200pt
    :align: center
 
 Limitações geológicas impedem que as alturas dos túneis sejam maiores do que `5` m e cada túnel deve permitir a passagem de caminhões comerciais, que tem `4,3` m de altura e `2,6` m de largura. Além disso, para que os caminhões não arrastem pelas paredes dos túneis, uma largura extra de `0,4` m deverá ser considerada conforme o rascunho a seguir.
 
 .. figure:: _resources/Ativ7_Rascunho.png
-   :width: 300px
+   :width: 300pt
    :align: center
 
 Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresentadas por questões econômicas. Sendo assim, a empresa deve calcular a largura das bases das entradas ou saídas dos túneis. [Para simplificar o texto, as medidas das entradas ou saídas dos túneis serão tratatas apenas por *medidas dos túneis*.]
@@ -1646,7 +2357,7 @@ Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresenta
 #. Dentre as opções a seguir marque a que faz o rascunho de um dos túneis no plano cartesiano.
 
    .. figure:: _resources/Ativ6_C_unico.png
-      :width: 400px
+      :width: 400pt
       :align: center
 
 #. Para essa escolha, qual o significado dos valores de `x` e de `y`?
@@ -1703,37 +2414,31 @@ Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresenta
 
 
 .. _Atividade Angry Birds
-Atividade 8: A jogada vencedora
+Atividade: A jogada vencedora
 ------
 
 .. admonition:: Para o professor
 
    Os jogos eletrônicos constituem ótimos laboratórios de aprendizagem por simular situações que podem ir assumindo toda a complexidade da realidade aos poucos, uma "variável" por vez. De acordo com [WANG]_, jogos de computador podem criar ambientes e mundos que de outra forma seriam inacessíveis aos estudantes.
    
-   Esta atividade tem dois objetivos principais:
-   
-   #. Dar um exemplo de como encontrar a lei de formação da função quadrática em casos em que a forma `f(x)=ax^2+bx+c` é mais adequada;
-   
-   #. Apresentar uma contextualização mais natural de lançamento oblíquo, no que diz respeito à realidade do aluno e a necessidade de obter uma lei de formação para esta trajetória.
-   
-   Tanto aqui como nas outras atividades, encorage a tentativa de obter os resultados por caminhos diferentes e analise com eles a dificuldade que isso traz.
-   
-   Existe disponível na internet diversos projetos que envolvem o uso do jogo Angry Birds para o estudo das parábolas e lançamentos obblíquos. Por exemplo, `Transforming Parabolas – The Angry Birds Project <https://algebra2coach.com/transforming-parabolas-angry-birds-project/>`_ e `Transforming Parabolas – The Angry Birds Project <https://www.tes.com/teaching-resource/angry-bird-parabolas-graphing-quadratic-equations-6165424>`_.
+   Existe disponível na internet diversos projetos que envolvem o uso do jogo Angry Birds para o estudo das parábolas e lançamentos oblíquos. Por exemplo, `Transforming Parabolas – The Angry Birds Project <https://algebra2coach.com/transforming-parabolas-angry-birds-project/>`_ e `Transforming Parabolas – The Angry Birds Project <https://www.tes.com/teaching-resource/angry-bird-parabolas-graphing-quadratic-equations-6165424>`_.
    
 Vamos trabalhar aqui com um famoso jogo que simula lançamento de objetos. No caso, são "pássaros" caricaturados em formato de personagens de cinema que tem que impedir o plano dos "porcos verdes" de roubarem seus ovos e trazer destruição ao universo. A "variável" resistência do ar, por exemplo, não está incluída em boa parte das fases deste jogo.
 
 .. figure:: _resources/videotogif_2018.02.16_16.10.40.*
+   :width: 300pt
+   :align: center
 
 Digamos que o programador de uma das fases decida, dentre todos os possíveis lançamentos, um que forneça a maior quantidade de pontos possível para a fase. Entendendo a tela como um plano cartesiano, o programador deve escolher a parábola que representará a "Jogada Vencedora". A figura a seguir ilustra a situação.
 
 .. figure:: _resources/AB_Plano_Cartesiano.png
-   :width: 300px
+   :width: 300pt
    :align: center
 
 Com a finalidade de inserir na programação a função que descreve a "Jogada Vencedora" o programador usou três coordenadas como referência: o pássaro e os dois "sóis", cujas coordenadas estão destacadas a seguir.
 
 .. figure:: _resources/AB_Coordenadas.png
-   :width: 300px
+   :width: 300pt
    :align: center
 
 #. Quais são as coordenadas indicadas no gráfico pelo programador?
@@ -1795,7 +2500,9 @@ Com a finalidade de inserir na programação a função que descreve a "Jogada V
                
    #. `f(x)= - \frac{8}{35}x^2+ \frac{61}{35}x`.
    
-**Organizando as ideias**
+
+.. sub-Org-Ideias-MUV-Graf-para-Lei
+Organizando as ideias
 ----
 
 Nesta seção vimos como obter a lei de formação de algumas funções quadráticas através de alguns dados iniciais. A forma escolhida para a lei de formação depende de cada informação dada, mas isso pode ser generalizado conforme passamos a apresentar. 
@@ -1832,7 +2539,7 @@ Se as coordenadas fornecidas não apresentarem nenhuma das particularidades rela
    Uma equipe técnica está analisando máquinas que arremessam bolas de tênis para decidir qual a mais adequada às necessidades de treinamento dos atletas dessa equipe.
    
    .. figure:: _resources/videotogif_2018.02.17_16.08.41.*
-      :width: 200px
+      :width: 200pt
       :align: center
    
    Com instrumento adequado, sem vento, eles mediram a altura da bola em alguns instantes de tempo, conforme tabela.
@@ -1878,52 +2585,268 @@ Se as coordenadas fornecidas não apresentarem nenhuma das particularidades rela
    
    #. A bola atinge sua altura máxima em `-\frac{7}{2 \cdot (-1)}= 3,5` segundos. Logo, sua altura máxima foi `h(3,5)=-(3,5)^2+7 \cdot (3,5)+1=- \frac{53}{4 \cdot (-1)} = 13,25` metros.
    
+.. _sec-Aprof-quadratica:
 
-.. _sub-Ativ-eh-parabola:
+Aprofundamento
+=====
 
-*Atividade* **É parábola?**
-======
+.. _sub-aprof-prop-refletora:
+
+A Propriedade Refletora da Parábola
+---------
+
+
+
+A *Parábola* possui uma propriedade que é bastante explorada por alguns recursos tecnológicos do nosso cotidiano, na realidade a propriedade é explorada por meio de um sólido espacial, mais especificamente por uma superfície parabólica refletora. Ao rotacionarmos uma parábola em torno do seu eixo de simetria temos um sólido chamado *parabolóide de revolução*, mas trateremos no texto apenas como superfície parabólica, pois basta a superfície deste sólido ser refletora que conseguimos aplicar a tal propriedade, apresentada a seguir, em diversas situações e instrumentos.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/paraboloide.jpg
+   :width: 200pt
+   :align: center
+
+   Parabolóide de Revolução
+   
+.. admonition:: A Propriedade Refletora da Parábola
+
+	   Se uma fonte de luz estiver fixada no foco de uma superfície parabólica refletora todos os seus raios refletidos serão paralelos ao eixo de rotação (eixo de simetria) da superfície em questão. Caso os raios cheguem paralelos ao eixo de rotação (eixo de simetria) estes serão refletidos para o foco.
+
+
+**APLICAÇÕES**
+
+
+- **O Farol Automotivo**
+
+Alguns faróis automotivos utilizam espelhos parabólicos para que os raios luminosos iluminem especificamente uma determinada região (no caso a rodovia), sem desperdiçar luminosidade para regiões que não são de interesse luminoso do condutor do automóvel. Segue a figura.
+
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/farol.jpg
+   :width: 300pt
+   :align: center
+
+   Farol automotivo
+
+Para essa reflexão induzida, a lâmpada emisora dos raios luminosos é acoplada de tal maneira que a emissão de luz ocorra no foco da superfície do espelho parabólico, fazendo com que os raios saiam todos na mesma direção, sempre paralelos ao eixo de simetria que contém o foco.
+
+
+- **A Antena Parabólica** 
+
+Em regiões afastadas dos grandes centros, sinais, emitidos por ondas, de radio, televisão, internet, etc., chegam com baixa intensidade, é necessário que uma antena receptora tenha a capacidade de reunir uma quantidade significativa dessas ondas, concentrando-as num único ponto, fazendo assim o sinal ficar forte o suficiente para ser processado. Mais uma vez a propriedade é usada, criando uma antena no formato de uma superície parabólica refletora, colocando o receptor de sinal garantimos que todos as ondas que incidirem paralelamente ao eixo de simetria do parabolóide, se concentrem no foco (receptor de sinal). 
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/antena.jpg
+   :width: 300pt
+   :align: center
+
+   Antena Parabólica
+
+Vale ainda observar que apesar das ondas emitidas não serem paralelas, o artefato funciona pois como foi dito a antena é útil quando instalada longe da antena emissora da onda, assim como os raios solares na superfície da terra, a distância faz com que boa parte dessas ondas acabem chegando paralelas o eixo de simetria da antena parabólica.
+
+- **O Forno de Odeillo**
+
+"Na foto a seguir vemos o forno solar de Odeillo, cuja potência é de 1MW e está instalado no sul da França, na região dos Pirineus. O espelho parabólico é constituído por 9.500 pequenos espelhos planos. A temperatura atingida chega até 3800 ºC."
+
+Disponível em http://osfundamentosdafisica.blogspot.com.br/2010/06/forno-solar.html - Acesso em 21/02/2018
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/forno.jpg
+   :width: 300pt
+   :align: center
+
+   O Forno de Odeillo, disponível em: https://pixabay.com/pt/forno-solar-odello-odeillo-fran%C3%A7a-921116/ - Acesso em 21/20/2018
+   
+
+O forno acima consegue derreter aço numa fraçao de minuto, ele utiliza os mesmo conceito da antena parabólica, pois como estamos bastante afastados do sol, os raios solares chegam praticamente paralelos à superfície terrestre, com isso eles refletem no espelho e se concentram no interior da "Câmara de concreto".
+
+Além das aplicações apresentadas, essa propriedade támbem é utilizada em alguns grandes telescópios, aparelhos radioterápicos e/ou ultrasônicos de uso da medicina, todos utilizando espelhos parabólicos.
+
+**Entendendo o por quê da propriedade** 
+
+Para entender a propriedade, partimos de conceitos já conhecidos da física, como o princípio que *"todo raio que incide sobre uma superfície refletora, o ângulo de incidência é igual ao ângulo de reflexão"*. Observe a figura que exemplifica o princípio: onde `\alpha` representa o ângulo de incidência e `\beta` o ângulo de reflexão.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/f1.jpg
+   :width: 500pt
+   :align: center
+
+   Curva `f`, reta tangente `t` e raios
+
+Imagine uma superfície parabólica refletora, esta superfície pode ser substituída pela curva *parábola* (representada na figura acima pela curva `f`) que é a interseção dessa superfície com o plano que contém os raios (incidente e refletido) e o eixo da parábola (eixo de rotação da superfície parabólica). 
+É também fato que, o ângulo entre uma reta `r` e uma curva `\lambda`, é por definição, o ângulo que `r` faz com a reta tangente à curva `\lambda`, tangente esta que é traçada à partir do ponto em que `r` intersecta a curva `\lambda`.
+
+De posse dessas afirmativas, podemos dizer que a parábola divide o plano em duas regiões: a região interior à concavidade, que chamaremos de *região focal*, por conter o foco, e a região exterior à concavidade, chamaremos de *região não-focal*. Com isso, admita dois pontos `P_1` e  `P_2` contidos na reta `r` que contém `P` e é paralela à diretriz `d`. Observe na figura a seguir onde,
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/d1.jpg
+   :width: 300pt
+   :align: center
+
+   `d(P_1,F)<d(P_1,d)` e `d(P_2,F)>d(P_2,d)`
+
+o ponto `P_1` está na região focal e o ponto `P_2` na região não-focal. Com isso, é fácil perceber que à distância de `P_1` ao foco é menor que a distância de `P_1` à reta diretriz `d`, já o ponto `P_2`, tem distância até o foco maior que a sua distância à reta diretriz `d`.
+
+Com isso podemos concluir a:
+
+**Propriedade 2.1** Um ponto `P_1` está na *região focal* de uma parábola, se e somente se, a sua distância ao foco for **menor** que a sua distância à reta diretriz. 
+
+**Propriedade 2.3** Um ponto `P_2` está na *região não-focal* de uma parábola, se e somente se, a sua distância ao foco for **maior** que a sua distância à reta diretriz. 
+
+Dado um ponto `P` da parábola de foco F e diretriz `d`, tracemos o triângulo `PFP'` (onde `P'` é a projeção ortogonal de `P` na reta `d`) e a reta `t` como sendo a reta bissetriz do ângulo `F\widehat{P}P'=\alpha`, vamos mostrar que `t` é tangente à parábola. 
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/f2_1.jpg
+   :width: 400pt
+   :align: center
+
+   Reta `t` bissetriz de `F\widehat{P}P'`
+
+
+Sendo `D` o ponto de intersecção da reta `t` com o lado `FP'`, temos que a ceviana `PD` não apenas é bissetriz interna do triângulo, mas também mediana e altura, já que o triângulo `FPP'` é isósceles devido à definição de parábola `(PF=PP')`, logo podemos concluir que `t` é mediatriz do segmento `FP'`.
+
+Marquemos sobre `t` um ponto `Q` distinto de `P` onde sua projeção ortogonal sobre `d` seja `Q'`, como mostra a figura a seguir:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/f3_1.jpg
+   :width: 400pt
+   :align: center
+
+   `(Q \in t)`
+
+Como `Q` está sobre a metriatriz `t`, temos que:
+
+`FQ = P'Q > QQ'` 
+
+(pois `QQ'` é cateto e `P'Q` é hipotenusa do triângulo `QQ'P'`).
+
+Logo, pela *propriedade 2.2* pode-se afirmar que o ponto `Q` está na *região não-focal* da parábola, assim como qualquer outro ponto da reta `t`, exceto `P` que é ponto da parábola. Com isso comcluímos que que a reta `t` é tangente à parábola no ponto `P`. 
+
+Agora observe a figura a seguir fecharmos a conclusão à respeito da **Propriedade Refletora da Parábola**:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/f4.jpg
+   :width: 400pt
+   :align: center
+
+   Propriedade Refletora da Parábola
+
+Na figura anterior, é fato que os ângulos representados por `\alpha` são todos iguais, devido aos fatos que:
+
+#. `t` é bissetriz do ângulo `FPP'`
+#. os ângulos entre as retas `PP'` e `t` são opostos pelo vértice.
+
+Portanto, todas as ondas emitidas de F, ao tocarem a superfície parabólica refletora partem paralelas ao eixo de simetria e analogamente, todas as ondas que chegam paralelas ao eixo de simetria, ao tocarem na superfície parabólica refletora, partem em direção ao foco.
+
+
+.. _sub-aprof-catenaria:
+
+Aprofundamento: Será que é parábola?
+------
+
+**A Catenária**
+
+Um famoso problema da história do cálculo é a descoberta da relação que fornece as coordenada de um fio suspenso no ar por dois pontos de apoio como, por exemplo, os fios de alta tensão de postes públicos de energia.
+
+.. figure:: http://worldartsme.com/images/phone-pole-clipart-1.jpg
+   :width: 200px
+   :align: center
+
+O conhecimento dessa relação permite, por exemplo, calcular o seu comprimento para fins de planejamento e economia na execução de um projeto.
+
+O conhecimento adquirido sobre as parábolas e a relação que ela tem com a queda dos corpos, nos conduz à certeza de que a forma desses fios suspensos por dois pontos de apoio é também uma parábola. Foi em `1690` que esse problema foi oficialmente lançado para a comunidade científica da época por Jakob Bernoulli `(\star 1654, \dagger 1705)`, através do *Acta eruditorum*, jornal fundado Leibniz `(\star 1646, \dagger 1716)`. Porém, antes disso, famosos como Leonardo da Vinci `(\star 1452, \dagger 1519 )` e Galileu Galilei `(\star 1564,\dagger 1642)` tentaram resolver esse problema, obtendo a conclusão de que tratava-se de uma parábola.
+
+Após a divulgação do problema, três estudiosos se destacaram nesta que é considerada uma das soluções mais difíceis da história do cálculo: O irmão de mais novo de Jakob, Johann Bernoulli `(\star 1667, \dagger 1748)`, Leibniz e Huygens (\star 1629, \dagger 1695). Considerando aspectos da mecânica eles concluiram que a curva emquestão não era uma parábola! Foi Leibniz quem deu-lhe o nome de **catenária**, que do latim, vem de *catena* que significa *cadeia*.
+
+Hoje, com os recuros computacionais gerados a partir desses e de outros fatos históricos, podemos verificar experimentalmente que,  de fato, o problema do fio suspenso por dois pontos de apoio não se resolve com uma parábola:
+
+.. figure:: _resources/Aprof_Parabola_x_Catenaria.*
+   :width: 300pt
+   :align: center
+
+   Esta animação pode ser manipulada em `Parábola ou Catenária? <https://ggbm.at/wGMsrZb3>`_.
+
+*O telhado com forma de catenária é importante tanto esteticamente como funcionalmente, dá estabilidade, flexibilidade e firmeza a estrutura, sua forma tem qualidade acústica dispersando os ruídos rapidamente, algo de grande valor para um aeroporto, também sua forma evita alguns afeitos dos ventos.* [Saarinem-apud-Torres-2004]_ 
+
+.. figure:: _resources/Dulles_International_Airport.png
+   :width: 200pt
+   :align: center
+   
+   Dulles International Airport. Disponível em [Torres-2004]_
+   
+
+
+.. figure:: _resources/Catenaria_Casa_Mila.png
+   :width: 200pt
+   :align: center
+   
+   Arco Catenário da casa de Milá. A catenária invertida é uma estrutura que se auto sustenta. Disponível em [Torres-2004]_.
+   
+.. figure:: _resources/Ponte-Bisantis-Catanzaro.jpg
+   :width: 200pt
+   :align: center
+   
+   Ponte Bisantis, Itália. Conhecida pelo nome do engenhero que a projetou: Viaduto Morandis. Disponível em `Morandis <https://3.bp.blogspot.com/-EPxjzeb0KMs/UPUgsG5jn5I/AAAAAAAAtmY/VBjNknF0oEk/s400/Ponte-Bisantis-Catanzaro.jpg>`_ .
+   
+Acesse `Ponte Morandis <https://www.geogebra.org/m/qezn7h4M>`_ para ver como a catenária descreve o arco desta ponte, mas a parábola não.
+
+Segundo [Talavera-2008]_ a catenária tem equação `y=\frac{e^{ax}+ e^{-ax}}{2a}`, sendo `e` um número irracional tal que `\exp \approx 2,71`, e `a` é uma constante não nula; Além disso, ela pode ser representada na forma do cosseno hiperbólico, `y=a \cdot \cosh (\ \frac{x}{a} )\ +b-a`. A estimativa de erro da catenária em relação a parábola, ao termarmos fazê-las coincidir é da ordem de `\frac{1}{16}`. 
+
+**A função real definida por** `f(x)=x^{2^2}` **, ou melhor,** `f(x)=x^4`
 
 Seja `f:\mathbb{R}\to\mathbb{R}` uma função definida por `f(x)=x^4`. 
 
-#. Preencha as imagens dessa função utilizando a tabela a seguir e posteriormente trace o seu gráfico:
+Ao preenchermos a tabela a seguir com as imagens dessa função podemos notar algumas características de funções quadráticas:
 
-+------+------+
-| x    | f(x) |
-+------+------+
-| -2   |      |
-+------+------+
-| -3/2 |      |
-+------+------+
-| -1   |      |
-+------+------+
-| -1/2 |      |
-+------+------+
-| 0    |      |
-+------+------+
-| 1/2  |      |
-+------+------+
-| 1    |      |
-+------+------+
-| 3/2  |      |
-+------+------+
-| 2    |      |
-+------+------+
++-------+-------+
+| x     |  f(x) |
++-------+-------+
+| `-2`  | `16`  |
++-------+-------+
+|`-3/2` |`81/16`|
++-------+-------+
+| `-1`  |  `1`  |
++-------+-------+
+|`-1/2` |`1/16` |
++-------+-------+
+| `0`   |  `0`  |
++-------+-------+
+| `1/2` |`1/16` |
++-------+-------+
+|  `1`  |  `1`  |
++-------+-------+
+| `3/2` |`81/16`|
++-------+-------+
+|  `2`  |  `16` |
++-------+-------+
+
+Note que existe uma simetria em relação ao eixo das ordenadas, ou seja, temos que `f(-x)=f(x)`. Além disso, `f(x)\geq0`. Pode-se verificar essas propriedades no gráfico da função respresentado na figura a seguir:
 
 
-**Pensar em induzir o aluno à demonstrar que não é usando: o método da demonstração por absurdo, também denominado método da demonstração por contradição ou da redução ao absurdo.**
+.. _fig-coloque-aqui-o-nome:
 
-"O que nos garante que a ideia de demonstração por absurdo é logicamente correta? A garantia é dada pelo Princípio do Terceiro Excluído, o qual diz que cada propriedade matemática ou é verdadeira ou é falsa, não há uma terceira possibilidade."
+.. figure:: _resources/x4.jpg
+   :width: 400pt
+   :align: center
 
-"Para provar a veracidade de uma afirmação, uma demonstração por absurdo mostra que a falsidade da afirmação produziria um absurdo. Mais precisamente, no caso de uma implicação `H \to T` uma demonstração por absurdo consiste em, supondo a validade de H, mostrar que a não validade de **T** produz um resultado contraditório ou absurdo. Dizendo de outro modo: o objetivo é mostrar que a combinação da validade da hipótese **H** com a não validade da tese **T** produz um resultado absurdo."
-
-#." Suponha que temos uma implicação `H \to T` verdadeira, mas que ainda não sabemos isso e que, por sugestão infeliz, tentemos mostrar que ela é falsa, em vez de verdadeira, e que o método que empregamos seja o da demonstração por absurdo. Se em nosso raciocínio cometermos um engano (por exemplo, um erro de cálculo), muito provavelmente esse nos levará a um absurdo e assim estaremos concluindo erroneamente que `H \to T` é falsa"
-
-#.Quando conseguimos provar a veracidade de uma implicação `H \to T` tudo o que fazemos é mostrar que é impossível a tese **T** ser falsa (supondo valha a hipótese **H**). Ou seja, não estamos dando uma real razão da tese ser verdadeira (como, por exemplo, ser consequência de alguma propriedade). Por isso se diz que as demonstrações por absurdo não são causais.
-
-*Minha demonstração*
-
-Suponha por absurdo que o gráfico de `f:\mathbb{R}\to\mathbb{R}` uma função definida por  `f(x)=x^4` seja uma **parábola**, ou seja, existe um ponto `F=(0,p)` e uma reta `d:y=-p` tal que: `PF=Pd`, onde `P=(x,x^4) \in f`, logo:
+   (`f(x)=x^4`)
+   
+Porém, ao atender algumas propriedades específicas do gráfico de "`y=x^2`", não a caracteriza como sendo uma parábola. Para respondermos a essa pergunta, usaremos a seguinte estratégia:
+ 
+Vamos supor que o gráfico de `f:\mathbb{R}\to\mathbb{R}` definida por  `f(x)=x^4` seja uma **parábola**, ou seja, existe um ponto `F=(0,p)` e uma reta `d:y=-p` tal que: `PF=Pd`, onde `P=(x,x^4) \in f`, logo:
 
 `\sqrt{(x^4-p)^2+(x-0)^2}=x^4-(-p)`
 
@@ -1943,41 +2866,459 @@ Como consequência, por não existir a reta diretriz não temos uma parábola.
 
 Portanto o gráfico de ´f´ não é uma parábola.
 
-**Podemos até omitir a demonstração por absurdo**
+**Observação**
+
+Para comprovarmos que `f` não é uma função quadrática, podemos utilizar o fato que `f(x)=x^4` não atende uma das propriedade das funções quadráticas. Por exmplo: Note que se escolhermos um subconjunto do domínio de `f` onde seus elementos estejam em Progressão Aritmética (P.A.), as diferenças entre as imagens desses elementos não forma uma P.A., portanto `f` não é uma função quadrática.
+
++-----+------------+-------------+
+| `x` | `f(x)=x^4` | Diferenças  |
++-----+------------+-------------+
+| -4  | 256        | 81-256=-175 |
++-----+------------+-------------+
+| -3  | 81         | 16-81=-65   |
++-----+------------+-------------+
+| -2  | 16         | 1-16=-15    |
++-----+------------+-------------+
+| -1  | 1          | 0-1=-1      |
++-----+------------+-------------+
+| 0   | 0          | 1-0=1       |
++-----+------------+-------------+
+| 1   | 1          | 16-1=15     |
++-----+------------+-------------+
+| 2   | 16         | 81-16=65    |
++-----+------------+-------------+
+| 3   | 81         | 256-81=175  |
++-----+------------+-------------+
+| 4   | 256        | ....        |
++-----+------------+-------------+
 
 
+**E se for** `g(x) = \sqrt{x^2+1}` **, é parábola?**  
+
+Seja `g:\mathbb{R}\to\mathbb{R}` uma função definida por `g(x)=\sqrt{x^2+1}`. 
+
+Observe seu gráfico:
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/ativ_final.jpg
+   :width: 300pt
+   :align: center
+
+   É uma parábola?
+
+Podemos afirmar que o gráfico da função `g` é uma parábola?
+
+A resposta é não, deixaremos como exercício para o leitor repetir o processo utilizado na parte 1, porém é fácil mostrar que `g` não é função quadrática, basta mostrarmos que `g` não atende a propriedade das funções quadráticas euniciada ao final da parte 1. Observe:
+
++-----+---------------------+----------------------+
+| `x` | `f(x)=\sqrt{x^2+1}` | Diferenças           |
++-----+---------------------+----------------------+
+| `-4`| `\sqrt{17}`         | `\sqrt{10}-\sqrt{17}`|
++-----+---------------------+----------------------+
+| `-3`| `\sqrt{10}`         | `\sqrt{5}-\sqrt{10}` |
++-----+---------------------+----------------------+
+| `-2`| `\sqrt{5}`          | `\sqrt{2}-\sqrt{5}`  |
++-----+---------------------+----------------------+
+| `-1`| `\sqrt{2}`          | `1-\sqrt{2}`         |
++-----+---------------------+----------------------+
+| `0` | `1`                 | `\sqrt{2}-1`         |
++-----+---------------------+----------------------+
+| `1` | `\sqrt{2}`          | `\sqrt{5}-\sqrt{2}`  |
++-----+---------------------+----------------------+
+| `2` | `\sqrt{5}`          | `\sqrt{10}-\sqrt{5}` |
++-----+---------------------+----------------------+
+| `3` | `\sqrt{10}`         | `\sqrt{17}-\sqrt{10}`|
++-----+---------------------+----------------------+
+| `4` | `\sqrt{17}`         | ....                 |
++-----+---------------------+----------------------+
+
+Note que as diferenças não estão em P.A., o que a descaracteriza como função quadrática.
+
+
+.. _sec-exercicios-quadratica:
 
 Exercícios
------------
+=====
 
-Considere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
-
-.. tikz::
-
-  \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
-  \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-  \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-3,-2) grid (6,5);
-  \clip(-2.9174583680872663,-2.0220658086854835) rectangle (6.036227110425744,5.031600421266512);
-  \draw [samples=50,rotate around={-180.:(1.,4.)},xshift=1.cm,yshift=4.cm,line width=2pt,color=ffzzqq,domain=-6.0:6.0)] plot (\x,{(\x)^2/2});
-  \draw [->,line width=1.pt] (-3.,0.) -- (6.,0.);
-  \draw [->,line width=1.pt] (0.,-2.) -- (0.,5.);
-  \draw (-0.4,0.04) node[anchor=north west] {$0$};
-  \draw (0.9,-0.05) node[anchor=north west] {$1$};
-  \draw (-0.5,1.2) node[anchor=north west] {$1$};
-  \draw [line width=1.pt] (-0.1,1.)-- (0.1,1.);
-  \draw [line width=1.pt] (1.,-0.1)-- (1.,0.1);
-  \begin{scriptsize}
-  \draw [fill=black] (1.,4.) circle (3.5pt);
-  \draw [fill=black] (3.,2.) circle (3.5pt);
-  \end{scriptsize}
+`1`) **(UFRJ)** Um fabricante está lançandoa série de mesas  “Super 4”. Os tampos das mesas dessa série são retangulares e têm `4` metros de perímetro. A fórmica usada para revestir o tampo custa `R$ 10,00` por metro quadrado. Cada metro de ripa usada para revestir as cabeceiras custa `R$ 25,00` e as ripas para as outras duas laterais custam `R$ 30,00` por metro.
 
 
-A forma canônica de `g` é:
+.. _fig-coloque-aqui-o-nome:
 
-a) `g(x)=0,5(x-1)^2+4`
-b) `g(x)=0,5(x+1)^2+4`
-c) `g(x)=-0,5(x-1)^2+4`
-d) `g(x)=-0,5(x-1)^2-4`
+.. figure:: _resources/e1.jpg
+   :width: 300pt
+   :align: center
+
+   
+a) Determine o gasto do fabricante para revestir uma mesa dessa série com cabeceira de medida x.
+
+b) Determine as dimensões da mesa da série “Super 4” para a qual o gasto com o revestimento é o maior possível.
+
+
+`2`) **(UFF)** Considerem  `m` , `n`  e  `p`  números reais e as funções reais  `f`  e  `g`  de variável real, definidas por `f(x)= mx^2+nx+p`   e   `g(x) = mx + p` .  A alternativa que melhor representa os gráficos de  `f`  e  `g` é:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/e2.jpg
+   :width: 400pt
+   :align: center
+
+
+
+`3`) **(PUC-RJ)** Considere a função `f:[-8,3]\to\mathbb{R}`, definida por `f(x)=x^2+12x+35` . Então a imagem de `f` é um intervalo de comprimento:
+
+(A) 75     
+
+(B) 78     
+
+(C) 81     
+
+(D) 83     
+
+(E) 90
+
+
+`4`) **(UERJ)** Um barco percorre seu trajeto de descida de um rio, a favor da correnteza, com a velocidade de `2 m/s` em relação à água. Na subida, contra a correnteza, retornando ao ponto de partida, sua velocidade é de `8 m/s`, também em relação à água.
+
+Considere que:
+
+- o barco navegue sempre em linha reta e na direção da correnteza;
+
+- a velocidade da correnteza seja sempre constante;
+
+- a soma dos tempos de descida e de subida do barco seja igual a `10 min`.
+
+Assim, a maior distância, em metros, que o barco pode percorrer, neste intervalo de tempo, é igual a:
+
+(A) `1.250`
+
+(B) `1.500`
+
+(C) `1.750`
+
+(D) `2.000`
+
+
+`5`) **(UFF)** Um muro, com `6` metros de comprimento, será aproveitado como parte de um dos lados do cercado retangular que certo criador precisa construir. Para completar o contorno desse cercado o criador usará `34` metros de cerca. 
+
+Determine as dimensões do cercado retangular de maior área possível que o criador poderá construir.
+
+`6`) **(ENEM-2014)** Um professor, depois de corrigir as provas de sua turma, percebeu que várias questões estavam muito difíceis. Para compensar, decidiu utilizar uma função polinomial `f`, de grau menor que `3`, para alterar as notas `x` da prova para notas `y = f(x)`, da seguinte maneira:
+
+•	A nota zero permanece zero.
+
+•	A nota 10 permanece 10.
+
+•	A nota 5 passa a ser 6.
+
+A expressão da função `y = f(x)` a ser utilizada pelo professor é
+
+#. `y=-\frac{1}{25}x^2+\frac{7}{5}x`
+#. `y=-\frac{1}{10}x^2+2x`
+#. `y=\frac{1}{24}x^2+\frac{7}{12}x`
+#. `y=\frac{4}{5}x^2+2x`
+#. `y=x`
+   
+`7)` Um médico acompanha o estado febril de pacientes acometidos de uma determinada infecção. Ele conseguiu identificar dentre os casos analisados que, em geral, uma pessoa tem sua temperatura corporal `T`, em função dos dias de infecção `D`, dada por `T(D)=-\frac{4}{9} \cdot D^2 + \frac{8}{3} \cdot D +36`, com `0 \leq D \leq 6`. Considere que a temperatura saudável de uma pessoa seja de `36\,^oC`. Com base nessas informações, responda as questões que seguem:
+
+.. figure:: _resources/Enfermagem.png
+   :width: 200 pt
+   :align: center
+
+#. Quanto tempo dura o estado febril de um paciente infectado e nas condições analisadas?
+
+#. Qual a temperatura máxima que uma pessoa com esta infecção atinge em sua febre?
+
+`8)` Na figura retangular, fazendo-se o valor de `x` variar de `0` a `4`, a área da região sombreada também varia. O valor máximo que essa área poderá ter é:
+
+.. figure:: _resources/Area_Max_Exerc.png
+   :width: 200pt
+   :align: center
+
+`(A)\; 30`
+
+`(B)\; 24`
+
+`(C)\; 20`
+
+`(D)\; 18`
+
+`(E)\; 16`
+
+`9)` A representação gráfica a seguir, representa um objeto arremessado de um prédio e que segue uma trajetória parabólica.
+
+.. figure:: _resources/Exerc_Lancamento.png
+   :width: 200pt
+   :align: center
+
+Sabendo que as medidas estão em metros, determine a altura máxima atingida por esse objeto, uma vez que essa altura foi alcançada a `2` metros do prédio.
+
+
+`10)` Um fábrica tem o custo de sua produção descrito no gráfico a seguir.
+
+.. figure:: _resources/Exerc_Prod.png
+   :width: 150pt
+   :align: center
+
+`x` representa a quantidade de unidades produzidas e `y` o custo total, em reais, para produzir essas quantidades. 
+Considere que o preço de venda das `x` unidades produzidas seja `220 – x`; Lembre-se que o lucro é a diferença entre o que se arrecada e o gasto que se tem. Nessas condições, qual deve ser a quantidade `x` produzida para se obter o lucro máximo?
+
+`11) \; ( \text{UERJ}-2005)` Numa operação de salvamento marítimo, foi lançado um foguete sinalizador que permaneceu aceso durante toda sua trajetória. Considere que a altura `h`, em metros, alcançada por este foguete, em relação ao nível do mar, é descrita por `h = 10 + 5t - t^2`, em que `t` é o tempo, em segundos, após seu lançamento. A luz emitida pelo foguete é útil apenas a partir de `14` m acima do nível do mar. O intervalo de tempo, em segundos, no qual o foguete emite luz útil é igual a:
+
+`(\text{A}) \; 3`
+
+`(\text{B}) \; 4`
+
+`(\text{C}) \; 5`
+
+`(\text{D}) \; 6`
+
+
+`12) \; ( \text{UFRJ})` Considere a função `y = f(x)` definida por:
+
+ `y = f(x) = \left\{ \begin{array}{rlll} 4x, & \text{se} & 0 \leq x \leq 2 \\ -x^2+6x, & \text{se} & 2 \leq x \leq 6 \\ \end{array} \right.`
+
+#. Esboce o gráfico de `y = f(x)` no intervalo de `[0,6]`;
+
+#. Para que valores de `x` temos `f(x) = 5` ?
+
+
+ 
+`13) \; (\text{AFA})` O retângulo, com base no eixo das abcissas, está inscrito numa parábola, conforme figura abaixo. O valor de  `x`  que faz esse retângulo ter perímetro máximo é
+
+.. figure:: _resources/AFA_2000.png
+   :width: 200pt
+   :align: center
+
+`(\text{A}) \; 1`
+
+`(\text{B}) \; 0,5`
+
+`(\text{C}) \; 0,25`
+
+`(\text{D}) \; 1,25`
+
+`14) \; (\text{ENEM} 2010)` Nos processos industriais, como na indústria de cerâmica, é necessário o uso de fornos capazes de produzir elevadas temperaturas e, em muitas situações, o tempo de elevação dessa temperatura deve ser controlado, para garantir a qualidade do produto final e a economia do processo.
+Em uma indústria de cerâmica, o forno é programado para elevar a temperatura ao longo do tempo de acordo 
+com a função: 
+
+ `T(t) = \left\{ \begin{array}{rlll} \frac{7}{5}t+20, & \text{para} & 0 \leq t < 100 \\ \frac{2}{125}t^2- \frac{16}{5}t +320, & \text{para} & t \geq 100 \\ \end{array} \right.`
+
+em que `T` é o valor da temperatura atingida pelo forno, em graus Celsius, e `t` é o tempo, em minutos, decorrido desde o instante em que o forno é ligado. 
+Uma peça deve ser colocada nesse forno quando a temperatura for `48 \,^{o}C` e retirada quando a temperatura for `200 \,^{o}C`. 
+
+O tempo de permanência dessa peça no forno é, em 
+minutos, igual a: 
+
+`(\text{A}) \; 100`
+
+`(\text{B}) \; 108`
+
+`(\text{C}) \; 128`
+
+`(\text{D}) \; 130`
+
+`(\text{E}) \; 150`
+
+
+`15) \; (\text{UERJ} - 2010 - 2^a \text{fase})` Um terreno retangular tem `800` m de perímetro e será dividido pelos segmentos `\overline{PA}` e `\overline{CQ}` em três partes, como mostra a figura.
+
+.. figure:: _resources/UERJ20102afase.png
+   :width: 200pt
+   :align: center
+
+Admita que os segmentos de reta `\overline{PA}` e `\overline{CQ}` estão contidos nas bissetrizes de dois ângulos retos do terreno e que a área do paralelogramo `PAQC` tem medida `S`.
+Determine o maior valor, em `m^2` , que `S` pode assumir.
+
+`16) \; (\text{UERJ} - 2012 - 2^a \text{fase})` Distância de frenagem é aquela percorrida por um carro do instante em que seu freio é acionado até o momento em que ele para. Essa distância é diretamente proporcional ao quadrado da velocidade que o carro está desenvolvendo no instante em que o freio é acionado.
+
+.. figure:: _resources/Frenagem_Grafico.png
+   :width: 200pt
+   :align: center
+   
+O gráfico abaixo indica a distância de frenagem `d`, em metros, percorrida por um carro, em função de sua velocidade `v`, em quilômetros por hora.
+
+Admita que o freio desse carro seja acionado quando ele alcançar a velocidade de `100` km/h. 
+
+Calcule sua distância de frenagem, em metros.
+
+`17) \; (\text{ENEM} 2013)` A parte interior de uma taça foi gerada pela rotação de uma parábola em torno de um eixo `z`, conforme mostra a figura.
+
+.. figure:: _resources/ENEM2013.png
+   :width: 150pt
+   :align: center
+
+A função real que expressa a parábola, no plano cartesiano da figura, é dada pela lei `f(x)=\frac{3}{2}x^2-6x+C`, onde `C` é a medida da altura do líquido contido na taça, em centímetros. Sabe-se que o ponto `V`, na figura, representa o vértice da parábola, localizado sobre o eixo `x`.
+Nessas condições, a altura do líquido contido na taça, em centímetros, é
+
+`(\text{A}) \; 1`
+
+`(\text{B}) \; 2`
+
+`(\text{C}) \; 4`
+
+`(\text{D}) \; 5`
+
+`(\text{E}) \; 6`
+
+`18)\; (\text{FGV}-2014 \; \text{Objetiva})` A figura abaixo mostra uma parte do gráfico da função quadrática que simula a trajetória de uma bala de canhão. Com os eixos e escala adequados, o canhão estava no solo, no ponto `(0,0)` e a bala passou, em seguida, pelos pontos `(1,1)` e `(4,3)`.
+
+.. figure:: _resources/FGV2014Obj.png
+   :width: 200pt
+   :align: center
+
+A bala atingirá o solo no ponto
+
+`(\text{A}) \; (11,0)`
+
+`(\text{B}) \; (14,0)`
+
+`(\text{C}) \; (13,0)`
+
+`(\text{D}) \; (12,0)`
+
+`(\text{E}) \; (15,0)`
+
+`19) \; (\text{ENEM}-2014)` Um professor, depois de corrigir as provas de sua turma, percebeu que várias questões estavam muito difíceis. Para compensar, decidiu utilizar uma função polinomial `f`, de grau menor que `3`, para alterar as notas `x` da prova para notas `y = f(x)`, da seguinte maneira:
+
+* A nota zero permanece zero.
+
+* A nota `10` permanece `10`.
+
+* A nota `5` passa a ser `6`.
+
+A expressão da função `y = f(x)` a ser utilizada pelo professor é
+
+`(\text{A}) \; y=-\frac{1}{25}x^2+\frac{7}{5}x`
+
+`(\text{B}) \; y=-\frac{1}{10}x^2+2x`
+
+`(\text{C}) \; y=\frac{1}{24}x^2+\frac{7}{12}x`
+
+`(\text{D}) \; y=\frac{4}{5}x^2+2`
+
+`(\text{E}) \; y=x`
+
+
+`20) \; (\text{FGV-RJ}–2016 \; ADM) A figura abaixo mostra os gráficos de duas funções quadráticas `f` e `g` que são simétricos em relação ao ponto `P = (1,1)`.
+
+.. figure:: _resources/FGVRJ2016.png
+   :width: 250pt
+   :align: center
+
+Sabendo que  `f(x) = x^2` , determine uma expressão para g(x).
+
+
+`21) \; (\text{UNICAMP}-2002)` Uma piscina, cuja capacidade é de `120 \, m^3` , leva `20` horas para ser esvaziada. O volume de água na piscina, `t` horas após o início do processo de esvaziamento, é dado pela função `V(t) = a(b – t)^2` para `0 \leq t \leq 20` e `V(t)=0` para `t \geq 20`.
+
+a) Calcule as constantes `a` e `b`.
+
+b) Faça o gráfico da função `V(t)` para `t \in [0,30]`.
+
+`22) \;` Quando uma pizzaria cobra R$ `14,00` por pizza, `80` unidades são vendidas por dia. Quando o preço é R$ `12,00` por pizza, `90` unidades são vendidas. Admitindo que a quantidade vendida `q` seja função afim do preço `p`, dada pela expressão `q=150-5p`, qual o preço que deve ser cobrado para maximizar a receita diária?
+
+`23) \;(\text{ITA})` Os dados experimentais da tabela a seguir correspondem às concentrações de uma substância química medida em intervalos de `1` segundo. 
+
++-----------+----------------------+
+| Tempo (s) | Concentração (moles) |
++-----------+----------------------+
+| `1`       | `3,00`               |
++-----------+----------------------+
+| `2`       | `5,00`               |
++-----------+----------------------+
+| `3`       | `1,00`               |
++-----------+----------------------+
+
+Assumindo que a linha que passa pelos três pontos experimentais é uma parábola, tem-se que a concentração (em moles) após `2,5` segundos é:
+
+`(\text{A}) \; 3,60`
+
+`(\text{B}) \; 3,65`
+
+`(\text{C}) \; 3,70`
+
+`(\text{D}) \; 3,75`
+
+`(\text{E}) \; 3,80`
+
+
+.. admonition:: Resposta
+
+   `1`) 
+   
+   #. `x`: cabeceira  e  `y`: lateral 
+      
+      Temos que `2x + 2y = 4 \to y = 2 - x`
+   
+      Gasto é dado por `10xy + 25 \cdot 2x + 30 \cdot 2y = 10x(2 - x) +50x +60(2 - x)`
+   
+      Gasto = `120 +10x - 10x^2`
+   
+      b) O gasto é máximo para `x=\frac{-10}{2x-10}=\frac{1}{2}` m
+
+
+   `2`)
+   
+   
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/resp2.jpg
+         :width: 300pt
+         :align: center
+
+   
+   `3`)
+   
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/resp3.jpg
+         :width: 300pt
+         :align: center
+
+  
+   `4`) Gabarito: B. Seja `c` a velocidade constante da correnteza, `2+c` velocidade de subida e `8-c` velocidade de descida.
+   
+   `t_subida + t_descida = 10 min`
+   
+   ´\frac{d}{2+c}+\frac{d}{8-c}=600seg`
+   
+   `d(c)=-60c^2+360c+960`
+   
+   `x_v=3` e `f(3)= 1500`
+   
+   
+   `5`) 
+   
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/resp5.jpg
+         :width: 200pt
+         :align: center
+
+     
+   O perímetro do cercado é dado por: `6+x+y+x+6+y` . 
+
+   Como o muro de 6m será aproveitado, tem-se que `34=x+y+x+6+y`, ou seja `y=14–x`.
+   
+   A área do cercado é dada por `A= (x + 6)y = (x + 6)(14 – x) = -x^2 + 8x + 84`, `0 \leq x <14` que pode ser representada graficamente  por um arco de parábola, com concavidade voltada para baixo e vértice no ponto de abscissa `x_v=4`, que fornece o maior valor para a área. Portanto, o valor de `y` no cercado é `y = 14 – x = 14 – 4 = 10`. 
+
+   Logo, o cercado de maior área será o quadrado de lado igual a `10m`. 
+   
+   `6`) Gabarito A. Note que `(0,0)` e `(10,10)` pertencem à reta `y=x` porém o ponto `(5,6)` não pertence à ela, o que nos faz concluir que trata-se de uma função quadrática que passa pela origem, logo é da forma: `y=ax^2+bx`, substituindo os pontos `(10,10)` e `(5,6)` encontramos `a=-\frac{1}{25}´ e `b=\frac{7}{5}´.
+   
+   `7a)` Um caminho é reconhecer que o domínio de está restrito a `D \in [0,6]` indicando um total de seis dias de infecção e, portanto, tempo em que a temperatura excede `36 \,^{o}C`, devido à `a=-\frac{4}{9} <0`. Outro caminho é definir para o domínio da função os dias em que a temperatura é `36 \,^{o}C`, pois fora disso ele será maior, indicando o estado febril. Assim, `-\frac{4}{9} \cdot D^2 + \frac{8}{3} \cdot D + 36 = 36 \Leftrightarrow -\frac{4}{9} \cdot D^2 + \frac{8}{3} \cdot D = 0 \Leftrightarrow -\frac{4}{3} \cdot D \left( \frac{D}{3}-2 \right)`, portanto `D=0` ou `D=6` e nesse intervalo, há febre.
+   
+   `7b)\; p=\frac{0+6}{2}=3`. Logo, `T(3)=-\frac{4}{9} \cdot (3)^2 + \frac{8}{3} \cdot (3) + 36 = 40 \, ^{o}C`.
+   
+   `8) \,` A área sombreada `A` em função de `x` é resultado da diferença entre a área do retângulo `4 \times 8` e os dois triângulos retângulos em branco. Assim, `A(x) = 32 - \frac{8 \cdot x}{2} - \frac{(8-2x)(4-x)}{2} = 16+4x-x^2`. De onde vem que `p=-\frac{4}{2 \cdot (-1)} = 2`, portanto `A(2)=16+4 \cdot (2) - (2)^2 = 20`. Letra `C`.
+   
+   `9) \,` Pela simetria do gráfico da parábola, os zeros da função são `10` e `-6`. Daí, a função que tem como gráfico essa parábola é `f(x)=a(x-10)(x+6)`. Como o ponto `(0,15)` é ponto dessa parábola, temos ainda `f(0)=a(0-10)(0+6)=15 \Leftrightarrow a=-\frac{15}{60}=- \frac{1}{4}`. Portanto a altura máxima atingida nesse arremesso foi `f(2)=- \frac{1}{4} \cdot (2-10)(2+6) = - \frac{1}{4} \cdot -64 = 16` m.
+   
+   `10) \,` A função que fornece o custo total `y` em função das `x` unidades produzidas é uma função afim com coordenadas `(0,1500)` e `(10,2100)`. Assim, temos `y= \frac{2100-1500}{10-0} \cdot x + 1500`. Já a arrecadação `A` em função das `x` unidades agora vendidas, será `A(x)=(220-x) \cdot x` e o lucro `L(x)=A(x)-y=220x-x^2-(60x+1500)`, portanto `L(x) = -x^2 +160x -1500` e a quantidade `x` que deve ser produzida e vendida para se ter o maior lucro possível será `p=- \frac{160}{2 \cdot (-1)} = 80` unidades.
+   
+ 
 
 
 .. _sec-Bibliografia:
@@ -1985,4 +3326,76 @@ d) `g(x)=-0,5(x-1)^2-4`
 Bibliografia
 ====
 
-.. [WANG] WANG, Wanderley S. **O aprendizado através de jogos para computador: por uma escola mais divertida e mais eficiente**, `26/08/2006`. Dinponível em Portal da Família, `Artigo 479 <http://www.portaldafamilia.org.br/artigos/artigo479.shtml>`_.
+.. [Avila] Ávila, G. **Funções e gráficos num problema de frenagem**. Revista do professor de matemática, número `12`. Disponível em `RPM12 <http://rpm.org.br/cdrpm/12/5.htm>`_ . 
+
+.. [JCNET-2013] Jornal da Cidade - Bauru e garnde região, matérial online de `05` de fevereiro. `Distância de Frenagem <https://www.jcnet.com.br/Geral/2013/02/direcao-defensiva-saiba-como-a-velocidade-influi-na-frenagem-do-veiculo.html#prettyPhoto>`_ .
+
+.. [DetranPR] **Comportamentos seguros no trânsito**, Departamento de trânsito do Paraná. Disponível em `Motorista <http://www.detran.pr.gov.br/modules/catasg/servicos-detalhes.php?tema=motorista&id=345>`_ .
+
+.. [Wang-2006] Wang, Wanderley S. **O aprendizado através de jogos para computador: por uma escola mais divertida e mais eficiente**, `26` de agosto. Dinponível em Portal da Família, `Artigo 479 <http://www.portaldafamilia.org.br/artigos/artigo479.shtml>`_ .
+
+.. [Talavera-2008] Talavera, Leda Maria Bastoni. **Parábola e catenária: história e aplicações**. São Paulo, USP, Faculdade de Educação, Dissertação de Mestrado. Disponível em `Teses USP Parabola e Catenária <http://www.teses.usp.br/teses/disponiveis/48/48134/tde-17062008-135338/en.php>`_ .
+
+.. [Saarinem-apud-Torres-2004] Saarinem *apud* Torres, Raul I. **El vientre de un arquicteto**. Espanha, Islas Canarias, Universidad de Laguna. Curso Universitario Interdisciplinar Sociedad, Ciencia, Tecnología y Matemáticas, Módulo `1`, `02` Abril. Disponível em `El vientre de un arquitecto <http://imarrero.webs.ull.es/sctm04/modulo1/10/ribanez.pdf>`_ acessado em 03/02/2018.
+
+.. [Torres-2004] TORRES, Raul I. **El vientre de un arquicteto**. Espanha, Islas Canarias, Universidad de Laguna. Curso Universitario Interdisciplinar Sociedad, Ciencia, Tecnología y Matemáticas, Módulo `1`, `02` Abril. Disponível em `El vientre de un arquitecto <http://imarrero.webs.ull.es/sctm04/modulo1/10/ribanez.pdf>`_ acessado em 03/02/2018.
+
+.. [Monteiro-2014] MONTEIRO, R. M. **Resgate do teorema de Dandelin no estudo de cônicas com o geogebra**. Espírito Santo: UFES, PROFMAT. Dinponível em `Monteiro <http://portais4.ufes.br/posgrad/teses/tese_7674_Disserta%E7%E3o%20-%20final%20-%20Rubens%20Monteiro.pdf>`_.
+
+.. [Pietrocola-et-al-2016] Pietrocola, M. [et. al.]. **Física em contexto, 1: ensino médio**, `1^a` ed. - São Paulo: Editora do Brasil.
+
+.. [Hellmeister-2013] Hellmeister, Ana Catarina P., coordenadora. **Geometria em Sala de Aula**. Rio de Janeiro: SBM. `552` p. (Coleção do Professor de Matemática; `32`)
+
+.. [Eves-2004] Eves, Howard. **Introdução à história da matemática** tradução: Hygino H. Domingues. - Campinas, SP: Editora da UNICAMP. Tradução de: **An introduction to the history of mathematics**.
+
+.. [Rocha-2013] Rocha, Alan M. **Problemas de Otimização Envolvendo a Matemática do Ensino Médio**. Goiás: UFG, PROFMAT. Disponível em `ROCHA <https://repositorio.bc.ufg.br/tede/handle/tde/2955>`_.
+
+.. [Alexandre-et-al-2009] Alexandre, Patrícia P; Santos,Márcia Hellen S Mendes. **Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática**. I Simpósio Nacional de Ensino de Ciência e Tecnologia. 
+      
+.. [Batschelet-1978] Batschelet, Edward. **Introdução à Matemática para Biocientistas** /E.Batschelet; tradução de Vera Maria Abud Pacífico da Silva e Junia Maria Penteado de Araújo Quitete - Rio de Janeiro: Interciência.
+      
+.. [Kotsopoulos-2007] Kotsopoulos, D. **Unraveling student challenges with quadratics: A cognitive approach**. Australian Mathematics Teacher, `63(2)`, `19-24`.
+      
+.. [Lima-2006] Lima, E. **A matemática do ensino médio – Vol. 1**,  `9^a` ed. Coleção do Professor de Matemática. Rio de Janeiro, Sociedade Brasileira de Matemática.
+       
+.. [Louzada-2013] Louzada, Sílvia. **Relações entre Cônicas e Funções no Ensino Médio**. Espírito Santo, UFES, PROFMAT.
+          
+.. [Maia-2007] Maia, Diana. **Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática**. São Paulo, PUC, Dissertação de Mestrado.
+      
+.. [Parent-2015] Parent, Jennifer Suzanne Stokes. **"Students' Understanding Of Quadratic Functions: Learning From Students' Voices"**.Vermont University - Graduate College Dissertations and Theses. Paper 376.
+      
+.. [Santos-2009] Santos, Angela R. **Construções Concretas e Geometria Dinâmica: Abordagens Interligadas para o estudo de Cônicas** - São Carlos, SP: SBMAC, `82` p., `20.5` cm - (Notas em Matemática Aplicada; v. `44` ).
+      
+.. [Silva-2013] Silva, Ramon de Abreu. **Funções Quadráticas e suas Aplicações no Ensino Médio**. Rio de Janeiro, IMPA, PROFMAT.
+      
+.. [Stump-1999] Stump, S. **Secondary mathematics teachers' knowledge of slope**. Mathematics Education Research Journal, `11(2)`, `124–144`.
+
+.. [Connally-et-al-2011] Connally, Hughes-Hallett, Gleason, et. al. **Functions Modeling Change: A Preparation for Calculus**, `4^{th}` edition. EUA, National Science Foundation under Grant. 
+
+.. [D'Amore-et-al-2015] D’Amore B., Fandiño Pinilla M. I. **A formula for an objective measurement of students’ understanding difficulties of a mathematical text**. Universidad Distrital “Francisco José de Caldas”, Bogotà, Colombia (Grupo MESCUD). Evaluative and educational use. Scientia Paedagogica Experimentalis.
+
+.. [Cooney-et-al-2011] Cooney, Thomas J., [et. al.]  **Developing an essential understanding of functions for teaching mathematics** in grades `9-12`, `2^{th}` edition. EUA: The National Council of Teachers of Mathematics. (Essential understanding series)
+
+.. [Duarte-2014] Duarte, José L. **Problemas de máximos e mínimos no ensino médio**. UNESP: Ilha Solteira, SP.
+
+.. [Assis-2015] Assis, Victor Hugo D. de. **Características da função quadrática e a metodologia da resolução de problemas** UNESP: São José do Rio Preto, SP.
+
+.. [Chung-2013] Chung, Kenji. **A Parábola, sua propriedade refletora e aplicações** UFRPE: Recife, PE.
+
+.. [Cance-2015] Cance, Cesar A. **Projeto canhão: o ensino de funções quadráticas com o auxílio do software Geogebra**. UFSCar, PROFMAT: São Carlos, SP.
+
+.. [Tassone-2015] Tassone, Márcia Z. T. **Construção da Parábola através de modelos lúdicos e computacionais**. UFSCar, PROFMAT: São Carlos, SP.
+
+.. [Silva-2015] Silva, Tiago L. **O ensino de funções polinomiais do 2º grau: Uma aplicação com o software GeoGebra** UFERSA:  Mossoró. 61f: il.
+
+.. [Junior-2017] Junior, Gilberto C. da S. **Método dos mínimos quadrados aplicado ao lançamento de foguetes propulsionados a ar comprimido** Universidade Estadual Paulista “Júlio de Mesquita Filho”: Rio Claro: [s.n.]. 107 f.: fig., tab
+
+.. [Figueredo-2017] Figueredo, Eudes J.G. de. **Uma análise sobre a valorização do conceito de máximo e mínimo por estudantes do ensino médio** UFRPE, PROFMAT: Recife. 91 f.: il.
+
+.. [Cerqueira-2015] Cerqueira, Adriano A. **Parábola e suas aplicações** UFBA, PROFMAT: Salvador.
+
+
+
+
+
+
