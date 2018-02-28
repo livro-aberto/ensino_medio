@@ -119,7 +119,7 @@ Ensino Médio
    GE2022-2
    GE2022-3
    GE2022-A
-   GE2022-E
+.. GE2022-E
 
 .. toctree::
    :maxdepth: 1
