@@ -772,8 +772,7 @@ Note que este processo de produzir um quadro que funcione como uma janela nada m
 
 Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entre" o centro `O` e o plano `\pi`, no caso da métafora da Janela de Alberti, o plano `\pi` fica entre `O` e o objeto. Não obstante, as duas situações são modeladas por projeções em perspectiva.
 
-O objeto também pode ser posicionado de modo que o centro `O` fique entre este e o plano de projeção, como mostra a :numref:`fig-proj-perspectiva-06`. Este tipo de configuração modela um terceiro tipo de situação: as :index:`câmeras obscuras`, modelos básicos de câmera sem lentes (ver :numref:`fig-proj-kircher-01`).
-
+O objeto também pode ser posicionado de modo que o centro `O` fique entre este e o plano de projeção, como mostra a :numref:`fig-proj-perspectiva-06`. Este tipo de configuração modela um terceiro tipo de situação: as :index:`câmeras obscuras`, modelos básicos de câmera sem lentes (ver :numref:`fig-proj-kircher-01`). 
 
 .. _fig-proj-perspectiva-06:
    
@@ -782,15 +781,31 @@ O objeto também pode ser posicionado de modo que o centro `O` fique entre este 
          
    `P'` é a projeção em perspectiva do ponto `P` com relação ao centro `O` no plano de projeção `\pi`.
 
+Supondo que a abertura da pupila seja pequena o suficiente e ignorando-se a presença de lentes e a curvatura da retina, o olho humano também pode ser considerado como uma câmera obscura e, assim, também modelado por projeções em perspectiva. É este modelo simplificado que consideraremos neste capítulo.
 
-Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de projeção está entre o observador e o objeto), sombras (quando o objeto está entre o observador e o plano de projeção) e câmeras (quando o observador está entre o o objeto e o plano de projeção).
+   .. A relação entre a câmera obscura e o funcionamento do olho foi estabelecida primeiro por Kepler.
+
+   .. https://fr.wikipedia.org/wiki/La_Dioptrique_(Descartes)#/media/File:Descartes;_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
+
+.. _fig-proj-olho-humano-01:
+
+.. figure:: _resources/Descartes_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
+   :width: 200pt
+   
+   Esquema do olho proposto por René Descartes em sua obra *A dióptrica* (fonte: `Revista Scientiae Studia <http://www.revistas.usp.br/ss/article/view/11212/12980>`_).
+
+
+
+Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de projeção está entre o observador e o objeto), sombras (quando o objeto está entre o observador e o plano de projeção) e câmeras e modelos simplificados do olho humano (quando o observador está entre o o objeto e o plano de projeção).
 
 .. figure:: _resources/projecao-cubo.*
    :width: 450px
 
 .. admonition:: Para refletir
 
-   Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`. O conceito de função :ref:`sec-funcao-organizando-ideias`.
+   Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`. 
+   
+   .. O conceito de função :ref:`sec-funcao-organizando-ideias`.
    
 
 
