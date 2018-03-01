@@ -631,12 +631,31 @@ Coloque os seus dois dedos indicadores um do lado do outro. Eles têm o mesmo ta
 
 **PARTE 1**
 
-Vamos começar com uma configuração bem simples. Considere a :numref:`fig-proj-comprimento-01`. Nela, o segmento `AB` é paralelo ao plano de projeção `\pi`. O segmento `OA`, por sua vez, é perpendicular a `\pi`. Os pontos `A'` e `B'` são, respectivamente, as projeções de `A` e `B` sobre o plano `\pi`com relação ao centro `O`.
+Vamos começar com uma configuração bem simples. Considere a :numref:`fig-proj-comprimento-01`. Nela, o segmento `AB` é paralelo ao plano de projeção `\pi` e o segmento `OA`, por sua vez, é perpendicular a `\pi`. Os pontos `A'` e `B'` são, respectivamente, as projeções de `A` e `B` sobre o plano `\pi` com relação ao centro `O`. Considere as medidas de comprimento `h = AB`, `x = OA`, `h' = A'B'` e `d = OA'`. Nosso objetivo é estudar como o comprimento `h'` da projeção sobre o plano `\pi` se relaciona com o comprinto `h` do segmento `AB` (você pode imaginar que `h` é o comprimento real do seu dedo e `h'` é o comprimento da imagem que você vê de seu dedo quando ele está a uma distância `x`).
 
    .. _fig-proj-comprimento-01:
    
-   .. figure:: _resources/perspectiva-comprimento-01.jpg
+   .. figure:: _resources/perspectiva-comprimento-01_1.jpg
       
       Configuração geométrica simples.
 
 **Pergunta 1.**
+
+Considere que `h = 2` e `d = 3`. 
+
+#. Determine o valor de `h'` para `x = 6`.
+#. Mais geralmente, determine `h'` como uma função `f` de `x`. Qual é o domínio desta função? Note que, usando o conceito de função, o item anterior está lhe pedindo para calcular `f(6)`.
+#. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual à metade do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?
+#. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = 2 \, f(6)`?
+#. Para que valores de `x` tem-se `f(x) = h`? E `f(x) > h`? E `f(x) < h`? Interprete no contexto de visualização de imagens.
+#. Existem valores diferentes de `x_{1}` e `x_{2}` para os `f(x_{1}) = f(x_{2})`? Interprete no contexto de visualização de imagens.
+#. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização de imagens.
+#. Se os valores de `x` vão ficando arbitrariamente próximos de `0` com valores maiores do que `0`, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização de imagens.
+
+Justifique todas as respostas!
+
+**Pergunta 2.**
+
+#. Generalize o Item b) da Pergunta 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
+
+
