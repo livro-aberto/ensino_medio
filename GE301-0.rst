@@ -1,39 +1,434 @@
-****************
-Nome do capítulo
-****************
+.. HJB: (preocupação da Lhaylla) "objetos geométricos" é um termo conhecido!
+
+.. HJB: (preocupação da Lhaylla) será que o aluno e o professor estão acostumados com estas questões semióticas de representação?
+
+.. LC: A figura :number:`fig-proj-escala-mitchelmore` não existe no texto. Ver com Humberto.
+
+.. HJB: aprender a desenhar bem (cultura do Mangá no Japão).
+
+.. HJB: comparação da quantidade de informação em bits que cada sistema recebe (visual, auditivo, ...). Ver Arcavi - The Role of Visual Representations in The Learning of Mathematics.
+
+.. HJB: referências em Inglês (geral para o professor).
+
+.. HJB: que as observações para o professor, ao contrário do que se normalmente faz, aponta diretamente para as atividades propostas.
+
+.. HJB: colocar a citação do Leonardo da Vinci.
+
+.. HJB: indicar a abordagem matricial do Gladson.
+
+.. HJB: lembrar para o professores que a habilidade visual é uma das grandes habilidades do Howard Gardner.
+
+.. admonition:: Para o professor
+
+   **Habilidades e pré-requisitos**
+
+   Neste capítulo contempla-se a seguinte habilidade da segunda versão da `Base Nacional Comum Curricular <http://historiadabncc.mec.gov.br/documentos/bncc-2versao.revista.pdf>`_ (BNCC):
+
+   .. admonition:: EM13MT01
+
+       Estabelecer relações entre vistas ortogonais e representações em perspectiva de figuras geométricas espaciais e de objetos do mundo físico e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho.
+
+   
+   Os pré-requisitos para este capítulo são:
+
+   **Ensino Fundamental**
+
+   BNCC (EF02MA14) Reconhecer, nomear e comparar figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera), relacionando-as com objetos do mundo físico.
+
+   BNCC (EF02MA15) Reconhecer, comparar e nomear figuras planas (círculo, quadrado, retângulo e triângulo), por meio de características comuns, em desenhos apresentados em diferentes disposições ou em sólidos geométricos.
+
+   BNCC (EF03MA13) Associar figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera) a objetos do mundo físico e nomear essas figuras.                     
+   
+   BNCC (EF06MA17) Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano como em faces de poliedros.
+
+   BNCC (EF06MA26) Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.     
+
+   BNCC (EF09MA12) Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes.
+
+   BNCC (EF09MA16) Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.
+
+   **Ensino Médio**
+
+   BNCC (EM12MT01) Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais
+
+   BNCC (EM12MT03) Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras.
 
 
-.. admonition:: Objetivos específicos
+   **Tópicos que serão tratados no capítulo**
 
-   (EM13MT01) Estabelecer relações entre vistas ortogonais e representações em perspectiva de figuras geométricas espaciais e de objetos do mundo físico e aplicar esse conhecimento em situações relacionadas ao mundo do trabalho. 
-
-.. admonition:: Pré-requisito
-
-   Preencha aqui as habilidades do BNCC que são pré-requisitos:
-
-   BNCC (???) Descrição do primeiro pré-requisito, segundo o BNCC.
-   BNCC (???) Descrição do segundo pré-requisito, segundo o BNCC.
-
-.. admonition:: Desdobramentos imediatos
-
-   Preencha aqui as habilidades do BNCC que serão baseadas nessa:
-
-   BNCC (???) Descrição, segundo o BNCC, da primeira habilidade que tem esta como pré-requisito, segundo o BNCC.
-   BNCC (???) Descrição, segundo o BNCC, da segunda habilidade que tem esta como pré-requisito, segundo o BNCC.
-
-.. note::
-
-   Roteiro do capítulo.
-
-   Preencher aqui um esqueleto de como será organizado esse capítulo. Por exemplo:
-
-   1. Texto motivador para despertar o interesse em estudar...
-   2. Para o professor - comentar sobre as dificuldades que os alunos enfrentam ao...
-   3. Conceitos básicos e definições de...
-   4. Atividades para exercitar as definições...
-   5. Sistematização dos conceitos para...
-   6. ... (assim por diante)
-   10. Exercícios de fixação dos...
+   * Projeções em perspectiva.
+   * Projeções paralelas.
 
 
+   **Objetivo geral do capítulo**
+
+   Levar o aluno a compreender, descrever e construir representações 2D de objetos 3D obtidas por projeções em perspectiva e paralelas.
+
+   **Abordagem adotada no capítulo**
+
+   Observações:
+   
+   * Existem outras nomeclaturas para o que estamos denominando de "projeções em perspectiva" e "projeções paralelas". Alguns textos mais antigos, usam, por exemplo, "perspectiva central", "perspectiva ortogonal" de modo que, neste caso, perspectiva fica como sinônimo de projeção. Outros usam a palavra representação: "representação em perspectiva", como ocorre no enunciado da habilidade na BNCC. Em textos mais recentes, principalmente os de computação gráfica, os termos mais usados são "projeção em perspectiva" e "projeção ortogonal" (aparece também o termo "projeção central").
+   
+   * Em particular, é preciso ter atenção para o uso da palavra :index:`vista`. Alguns livros, por exemplo, pedem para o aluno reconhecer a *vista* do cubo a partir da direção dada pela seta azul em (A) na :numref:`fig-proj-vistas-01` e esperam como resposta a imagem (B), ou seja, uma projeção ortogonal do cubo vazado. Contudo, (B) *não é o que se é visto* a partir da direção indicada. O que se vê é o resultado de uma projeção em perspectiva, a saber, a imagem (C).
+   
+      .. _fig-proj-vistas-01:
+      
+      .. figure:: _resources/vistas-01_1.jpg
+      
+         O que é uma *vista*?
+         
+         
+   * Os tópicos de projeções em perspectiva e projeções paralelas são desenvolvidas concomitantemente, pelos seguintes motivos: (1) ganha-se tempo na realização das atividades; (2) permite ao aluno comparar as propriedades dos dois tipos de projeções.         
+   
+   * Existem vários modelos matemáticos que tentam capturar como "vemos" ([Lindberg-1976]_, [Howard-et-al-1995]_). Para este capítulo, usaremos o modelo simples dado por projeções em perspectiva.
+
+   * [Cohn-2012]_ observa que, em geral, as pessoas reclamam quando alguém não escreve direito, mas essas mesmas pessoas são mais condescendentes quando se refere a desenhos. Por que considerar o desenho de forma diferente da linguagem? [Cohn-2012]_ argumenta que o desenvolvimento do desenho é análogo ao da linguagem. De fato, é importante ter em mente (a) que, como qualquer outra habilidade humana, com prática, é possível aprender a desenhar ([Edwards-2005]_); (b) que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_); (c) que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Sinclair-et-al-2016]_, [Khine-2017]_).
+   
+   * As projeções em perspectiva constituem uma excelente oportunidade do aluno apreciar uma característica importante da Matemática: o de identificar uma mesma estrutura (projeções em perspectiva) em fenômenos diferentes (sombras, pinturas, câmeras). 
+   
+   **Observações metodológicas gerais**
+
+
+****
+Explorando: representando o que vemos 
+****
+
+Desde a pré-história, o ser humano tem registrado em pinturas o que ele vê no mundo que o cerca. Na :numref:`fig-proj-pintura-01`, por exemplo, temos, em (a), um desenho de leões e bisões na Caverna de Chauvet na França (com cerca de 30000 anos de idade) e, em (b), uma pintura rupestre no Parque Nacional Serra da Capivara no Piauí (com cerca de 11000 anos de idade).
+
+.. _fig-proj-pintura-01:
+
+.. figure:: _resources/fig-proj-pintura-01.jpg
+   :width: 400pt
+   :align: center
+
+   Pinturas pré-históricas.
+
+
+Ao longo da história, seja em paredes, páginas de livros, telas de pintura ou telas de computador, surgiram diversas formas de se representar os objetos tridimensionais que estão em nossa volta. Neste capítulo, estudaremos duas destas formas de representação, importantes por suas aplicações. Para que você possa entender melhor o contexto, iniciaremos com atividades cujo objetivo é levar você a ver como as pessoas representam o que veem e como nossos cérebros interpretam essas representações.
+
+
+.. _ativ-proj-atelier-geometrico:
+
+Atividade: *Atelier* Geométrico
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos:**
+     
+   * Para o aluno: criar desenhos próprios com os quais será possível, após a realização desta e da próxima atividade e sob a condução do professor, refletir sobre representações de objetos 3D no plano.
+   * Para o professor: realizar um diagnóstico da turma no que se refere às habilidades de representação por meio de desenhos.
+
+   
+   **Observações e recomendações:**
+   
+   * Sugerimos que você use os seguintes sólidos geométricos: um cubo (por ser um objeto 3D matemático familiar ao contexto escolar desde as séries iniciais), um cilindro circular reto (por conta das bases circulares paralelas as quais, em projeções em perspectiva, não são simultaneamente visíveis) e uma esfera (ou um cone). 
+   
+         .. figure:: _resources/fig-proj-solidos-01.jpg
+   
+     É importante que estes sólidos estejam dispostos de modo que pelo menos um fique parcialmente escondido atrás de outro, pois esta característica será verificada na produção dos alunos. 
+     
+     Não recomendamos o uso de modelos vazados (feitos de canudinhos, por exemplo) ou transparentes, pois estes tornam a cena mais complexa e difícil de se representar. 
+     
+     .. Caso sua escola não possua modelos geométricos, você pode substituí-los por embalagens ou objetos do dia a dia com os formatos sugeridos.
+
+     Certifique-se que todos os alunos consigam ver adequadamente os sólidos. Se estes foram muito pequenos e sua turma for numerosa, talvez seja adequado usar mais de um conjunto de sólidos em mais mesas, separando os alunos em torno delas.
+     
+
+   * Deixe seus alunos trabalharem livremente. Caso algum deles pergunte se seu desenho está ficando "bom" ou "correto", comente que isto será discutido em grupo ao término da próxima atividade. 
+   
+   * Durante a execução da atividade, circule entre os alunos e observe seus desenhos. É importante que, nesta etapa, você já diagnostique as habilidades de representação deles para a discussão que será feita em seguida. 
+   
+     Observe, por exemplo, se as posições relativas dos sólidos foram desenhadas corretamente, um atributo que, segundo [Ebersbach-et-al-2011]_ e [Willats-1977]_, exige maturidade e flexibilidade cognitivas as quais normalmente se desenvolvem por volta dos 11 anos. Antes dessa idade, é comum os alunos desenharem os objetos dispostos separadamente, um ao lado do outro, mesmo quando, na visualização da cena, existe um objeto que está na frente de outro.
+     
+     Com relação a desenhos de um cubo, [Cox-et-al-1998]_ propuseram
+     uma escala de aferição da "maturidade" da representação, a qual pode lhe ser útil.
+     
+     .. _fig-proj-escala-cox:
+     
+     .. figure:: _resources/escala_Page_1.jpg
+     
+     .. figure:: _resources/escala_Page_2.jpg
+        :width: 200pt
+        
+        Escala de aferição da "maturidade' da representação do cubo.
+     
+     Para o caso de um cilindro circular reto, [Mitchelmore-1978]_ propõe a evolução em estágios descrita na :number:`fig-proj-escala-mitchelmore`.
+     
+     
+   * Caso algum aluno já tenha terminado esta atividade, você pode sugerir que ele já trabalhe na próxima.      
+     
+     
+Seu professor irá dispor um conjunto de objetos geométricos sobre uma mesa e o objetivo desta tarefa é que você desenhe em uma folha de papel **o que você vê nesta cena** o mais fielmente que conseguir.
+
+   .. figure:: _resources/fig-proj-aula-de-desenho-01.jpg   
+
+.. _ativ-proj-lobo:
+
+
+Atividade: É O Lobo!
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** refletir sobre representações de objetos 3D no plano, no caso, representações de um lobo.
+
+
+Na sua opinião, qual das seis imagens (A), (B), (C), (D), (E) e (F) a seguir melhor representa um lobo? Por quê?
+
+.. _fig-proj-lobo:
+
+.. figure:: _resources/lobo.jpg
+   :width: 1000pt
+   
+   Seis representações de um lobo.
+
+
+
+.. admonition:: Para o professor
+   
+   * Sugerimos que você inicie uma sistematização com a atividade das representações do lobo. Peça para que os alunos manifestem suas respostas e justificativas. Caso não apareçam naturalmente, apresente os argumentos e as ponderações do "Organizando as ideias" a seguir.
+   
+   * Passe então para a primeira atividade. Deixe os desenhos que foram feitos pelos alunos com os próprios alunos (você pode recolhê-los após a sistematização). Aqui, sugerimos fortemente que se apresente para os alunos o fato de que a representação muda com a idade. Desenhe no quadro algumas das imagens da :numref:`fig-proj-escala-cox` ou da :numref:`fig-proj-escala-mitchelmore`, comente sobre o "realismo intelectual" vs. "realismo visual" e a questão da "memória de trabalho".
+   
+   * É importante que, no final da sistematização e do "Organizando as ideias" a seguir, o aluno perceba que existem representações diferentes com usos e qualidades próprias e específicas pois, afinal, duas destas representações (projeções em perspectivas e projeções paralelas, temas deste capítulo) serão abordadas nas seções seguintes. 
+   
+   * Um outro estudo muito interessante que mostra como os aspectos sócio-culturais podem influenciar a maneira de como se desenha é o apresentado pela Revista Quartz (<https://goo.gl/ry3uqV>) para o caso de círculos e triângulos.
+   
+      .. figure:: _resources/aspectos-culturais-02.jpg
+         :width: 250pt
+   
+   
+                    
+ 
+ 
+****
+Organizando as ideias: tudo é uma questão de comunicação! 
+****
+
+Em um primeiro momento, você pode achar que a fotografia (A) na :numref:`fig-proj-lobo` é a "melhor" representação de um lobo. Mas, pense um pouco: "melhor" em que sentido? O "melhor" sempre pressupõe um critério e, por conseguinte, um contexto. 
+
+Por exemplo, caso você queira fazer menção a um lobo em uma mensagem de texto enviada por SMS, então certamente a representação (F) é a mais adequada. Agora, imagine que você está escrevendo um livro de Biologia e sua editora lhe disse que, por razões orçamentárias, apenas figuras em "preto e branco" serão aceitas. Neste caso, as representações (B) e (C) parecem ser a melhor opção. E se você estivesse ilustrando um livro infantil? Aí, as representações (D) e (E) poderiam dar um tom artístico mais pessoal ao livro.
+
+A representação (E) pode parecer muito tosca e infantil, mas lembramos aqui uma frase célebre do pintor Pablo Picasso (1881-1973):  "Levei quatro anos para aprender a pintar como Rafael, mas levei a vida toda para aprender a desenhar como uma criança.".
+
+
+.. _fig-proj-picasso:
+
+.. figure:: _resources/picasso-01.jpg
+
+   Os touros de Pablo Picasso.
+
+Do mesmo modo que um lobo pode ser representado de maneiras diferentes, existem diversas representações para os objetos geométricos tradicionais em Matemática (cubos, cilindros, esferas, pirâmides, etc.). Mais ainda, estudiosos descobriram que a forma de representar muda com a idade de uma pessoa.
+O filósofo Georges Henri Luquet explica, por exemplo, que o desenho do cilindro do Estágio 2 na :numref:`fig-proj-escala-mitchelmore` deve-se a uma preponderância de um "realismo intelectual" em relação a um "realismo visual": a pessoa sabe que um cilindro circular reto têm duas bases circulares e pensa, nesta etapa, que se não registrar estas estas duas bases circulares, o desenho estaria incompleto. Assim, esta pessoa está registrando o que pensa, não o que vê.
+     
+.. _fig-proj-escala-mitchelmore:     
+     
+.. figure:: _resources/escala_Page_3.jpg
+     
+   Representação de um cilindro em estágios etários diferentes.
+    
+    
+O psicólogo Sergio Morra, por sua vez, argumenta que a complexidade das regras ou estratégias de organização espacial que uma pessoa consegue dominar está restrita pela quantidade de informação que ela pode assimilar e processar simultaneamente, ou seja, pela memória de trabalho. Assim, os desenhos podem ficar "mais realistas" a medida que a memória de trabalho da pessoa aumenta com a idade.
+
+Outro aspecto interessante é que o meio cultural pode influenciar a maneira como uma pessoa representa objetos tridimensionais, como aponta o estudo de [Gutierrez-1998]_. A :numref:`fig-proj-aspectos-culturais-01`), por exemplo, mostra como filhos de tecelões, oleiros e fazendeiros de povoados isolados na Índia, entre 8 e 12 anos de idade, com pouca ou nenhuma escolaridade, desenheram cilindros e pirâmides que lhe foram apresentados.
+
+.. _fig-proj-aspectos-culturais-01:
+
+.. figure:: _resources/aspectos-culturais-01.jpg
+   :width: 300pt
+   
+   Influência de fatores culturais na produção de desenhos em perspectiva ([Gutierrez-1998]_).
+   
+.. Na cultura popular, lembrar da cena sobre como fazer o número 3 com as mãos no filme Bastardos Inglórios.   
+     
+Muitos acham que a habilidade de desenhar é um dom que, quem não tem, nunca irá desenhar bem. Neurocientistas têm mostrado **que este não é o caso**! De fato, estudos científicos mostram (a) que, como qualquer outra habilidade humana, com prática e dedicação, é possível aprender a desenhar; (b) que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana; (c) que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades.
+
+Ainda no contexto de objetos geométricos matemáticos, para você ter uma ideia da multiplicidade de representações, considere o problema de representar no plano o globo terrestre modelado como uma esfera. Essas representações nada mais são do que os :index:`mapas cartográficos` da Geografia! Existem muitos deles, cada um com propriedades e usos específicos! A escolha do mapa depende do que se quer comunicar!
+
+.. _fig-proj-mapas-cartograficos:     
+
+.. figure:: _resources/mapas_1.jpg
+
+   Mapas cartográficos são representações no plano do globo terrestre modelado como uma superfície esférica.
+
+Um ponto muito importante para o que se seguirá é ter em mente que, apesar de podermos representar o que vemos de formas diferentes com usos diferentes, certas representações são construídas de maneira bem específicas e, portanto, possuem propriedades que lhe são próprias. Reconhecer, compreender e empregar corretamente estas propriedades são habilidades fundamentais para você se comunicar adequadamente em termos visuais! Este será exatamente o caso das duas representações 2D de objetos 3D obtidas por projeções em perspectivas e projeções paralelas, temas deste capítulo!
+
+A seguinte analogia entre desenho e escrita, inspirada no livro *Desenho e Escrita como Sistemas de Representação* de Analice Dutra Pillar ([Pillar-2012]_), pode lhe ajudar a perceber a importância de se dar atenção às características específicas de uma determinada representação. Você se comunica por escrito via WhatsApp e, também, ao fazer uma redação no ENEM. No WhatsApp, pela agilidade que é característica deste meio de comunicação, você usa abreviações: "tdb" (tudo bem), "pdc" (pode crer), "obg" (obrigado), etc. Mesmo com abreviações, as pessoas se entendem. Por outro lado, em uma redação do ENEM, exige-se que o texto seja escrito seguindo características específicas, a saber, "de acordo com a modalidade escrita formal da língua portuguesa": você deve respeitar as regras ortográficas e gramaticais. Analogamente, existem várias maneiras de se desenhar um cubo. Contudo, os desenhos obtidos por projeções em perspectiva e projeções paralelas possuem propriedades específicas. São essas propriedades e suas aplicações que vamos estudar neste capítulo!
+
+.. admonition:: Você sabia?
+
+   O matemático alemão Johann Carl Friedrich Gauss (1777-1855) demonstrou um teorema, o chamado *egregium*, a partir do qual é possível deduzir o seguinte resultado: qualquer representação plana que se faça de um globo terrestre modelado como uma esfera **sempre** terá algum tipo de distorção, isto é, ela não preservará ângulos ou não preservará áreas ou não preservará distâncias. Na página web <https://goo.gl/HbLnPW>, você encontrará um aplicativo que permite visualizar essas distorções para diferentes mapas cartográficos: as curvas fechadas mais espessas (círculos no exemplo da figura a seguir) são, no mapa, as representações de círculos de mesmo raio desenhados sobre a superfície esférica do globo terrestre. A partir da comparação dos formatos relativos dessas curvas (a :index:`indicatriz de Tissot`) é possível ter uma ideia das distorções presentes no mapa.
+   
+         .. figure:: _resources/egregium.qrcode.png
+            :width: 70pt
+          
+         .. figure:: _resources/egregium_1.jpg
+         
+            
+   Existem mapas que preservam um ou outro atributo geométrico. O mapa de Mercator, por exemplo, preserva ângulos (mas não preserva áreas) e possui uma característica adicional útil para a navegação: as curvas de rumo constante sobre a superfície terrestre são representadas por retas neste mapa.        
+            
+
+****
+Explorando: interpretando o que vemos 
+****
+
+.. _ativ-proj-interpretando:
+
+
+Atividade: Será Que É?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** perceber que a interpretação de uma imagem passa pelo cérebro e que, por este motivo, relações matemáticas presentes na imagem, como congruência, podem não ser compreendidas como tal.
+
+   **Observações e recomendações:** 
+   
+   * Os dois exemplos a seguir mostram que a parte visual do nosso cérebro pode não reconhecer movimentos de translação e rotação como isometrias. 
+
+   * Para o segundo item do exercício, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/BNCePM5C <https://www.geogebra.org/m/BNCePM5C>`_>, com a qual é possível visualizar dinamicamente que os três carros são congruentes por meio de um carro extra e de um contorno que podem ser movidos na construção.
+
+   .. figure:: _resources/ponzo-illusion-06.png
+      :width: 50pt
+
+   .. figure:: _resources/ponzo-illusion-05.*
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/BNCePM5C>.
+
+
+   * Para o segundo item do exercício, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/mFSV2Mp6W <https://www.geogebra.org/m/mFSV2Mp6>`_>, com a qual é possível visualizar dinamicamente que os paralelogramos que são as tampas das mesas são congruentes por meio de um paralelogramo congruente intermediário.
+
+   .. figure:: _resources/mesa-de-shepard-03.png
+      :width: 50pt
+
+   .. figure:: _resources/mesa-de-shepard-07.*
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/mFSV2Mp6W>.
+      
+   *  Caso haja interesse da turma, o tópico de ilusões visuais pode ser aprofundadado, por exemplo, por meio de um projeto. Nesta linha, o livro [Shapiro-et-al-2017]_ traz um compêndio atual no contexto da Psicologia. Ilusões visuais são mais do que fatos curiosos, como mostra o livro "Fisiologia Aeroespacial: Conhecimentos Essenciais para Voar com Segurança" de Thais Russomano e João de Carvalho Castro (2012), para a área de aviação.
+
+#. (Ponzo) Observe a :numref:`fig-proj-ponzo`. Qual carro é maior na imagem?
+
+    .. _fig-proj-ponzo:
+
+    .. figure:: _resources/ponzo-illusion-04.jpg
+       :width: 400pt
+
+       Qual carro é maior na imagem?
+
+
+#. (Shepard) Observe a :numref:`fig-proj-shepard`. Qual mesa é mais comprida na imagem?
+
+    .. _fig-proj-shepard:
+
+    .. figure:: _resources/mesa-de-shepard.jpg
+       :width: 400pt
+
+       Qual mesa é mais comprida na imagem?
+
+.. admonition:: Resposta
+
+   #. Tipicamente, as pessoas quando veem a :numref:`fig-proj-ponzo` acham que os carros têm tamanhos diferentes, sendo o carro mais acima na rua considerado o maior. Contudo, na imagem, os três carros têm o mesmo tamanho! Este tipo de viés de interpretação foi primeiro demonstrado pelo psicólogo italiano Mario Ponzo (1882-1960). Ele sugeriu que a mente humana usa o que está em torno de um objeto para julgar o seu tamanho. 
+   
+   .. https://en.wikipedia.org/wiki/Two-streams_hypothesis
+   
+   #. Tipicamente, as pessoas quando veem a :numref:`fig-proj-shepard`, acham que a mesa à esquerda é a mais comprida. Contudo, na imagem, as duas mesas têm as mesmas medidas! De fato, os paralelogramos que são as tampas das mesas são congruentes! Este tipo de viés de interpretação foi primeiro publicado pelo cientista cognitivo Roger Newland Shepard (1929-) em seu livro *Mind Sights* de 1990.
+   
+
+
+****
+Organizando as ideias: ver é uma atividade complexa! 
+****
+
+Os dois exemplos apresentados na atividade anterior mostram que o ato de ver e compreender uma imagem não se encerra na própria imagem, mas depende da maneira que nosso cérebro processa toda a informação e se ajusta ao estímulo visual. 
+
+Psicólogos têm mapeado outras situações onde nosso cérebro faz adequações visuais subjetivas ao contexto: forma, cor, iluminação, distância, localização e movimento. Mais ainda: não só o sistema visual é afetado por ilusões, os demais sentidos também o são. Um exemplo clássico é o Efeito McGurk que mostra **como o que você vê altera o modo como você ouve**! Experimente você mesmo por meio do vídeo <`https://goo.gl/k241EQ <https://goo.gl/k241EQ>`_> no YouTube.
+
+.. figure:: _resources/efeito-mcgurk-01.png
+   :width: 50pt
+
+
+O fato de nosso cérebro estar sucetível a estes tipos de ilusões pode parecer um defeito a princípio mas, como mostra o cientista cognitivo Donald Hoffman  `palestra TED <https://goo.gl/x5H5oa>`_, isto é resultado de um processo evolutivo que garantiu a nossa sobrevivência.
+
+
+   .. figure:: _resources/ted-realidade-02.png
+      :width: 50pt
+
+   .. figure:: _resources/ted-realidade-01.jpg
+      :width: 400pt
+      :align: center
+
+      <https://goo.gl/x5H5oa>.
+
+
+Outro aspecto da interpretação de representações 2D de objetos 3D se refere à questão de ambiguidade: um mesmo desenho plano pode ser a representação de objetos tridimensionais diferentes. Considere, por exemplo, a Imagem (A) na :numref:`fig-proj-ambiguidade-01`. Ela pode ser a representação de um cubo visto de cima como na Imagem (B) ou de um cubo visto de baixo como na Imagem (C).
+
+   .. _fig-proj-ambiguidade-01:
+
+   .. figure:: _resources/ambiguidade-01_1.jpg
+      :width: 400pt
+      :align: center
+
+      Um cubo visto de cima ou de baixo?
+
+De fato, a Imagem (A) pode até mesmo nem ser a representação de um cubo, como mostra a animação da :numref:`fig-proj-ambiguidade-02`. A Imagem (A) é conhecida como :index:`Cubo de Necker`, em homenagem ao cristalógrafo Louis Albert Necker (1786-1861) que observou este tipo de ambiguidade em 1832.
+
+   .. _fig-proj-ambiguidade-02:
+
+   .. figure:: _resources/ambiguidade-02.*
+      :width: 200pt
+      :align: center
+
+      Versão interativa: <https://goo.gl/CXR6AG>.
+
+
+Compreender como vemos e interpretamos representações 2D de objetos 3D obtidas por projeções centrais e paralelas é uma habilidade importante que afeta o modo de nos cuminicarmos e interagirmos com o mundo.
+
+
+.. admonition:: Para refletir
+
+   Se nosso cérebro distorce os estímos que recebemos do mundo a nossa volta, como saber o que é real?
+   
+
+.. admonition:: Para refletir
+
+   Será que uma pessoa que nasceu cega mas que, posteriormente, recuperou sua visão, saberia ver de imediato? Ou seria necessário "ensiná-la a ver"? Como saber, por exemplo, onde a imagem de um objeto termina e a imagem de outro começa?  Esta `palestra TED <https://goo.gl/KLdhKg>`_ discute esses assuntos, mostra a importância do movimento no processo de se "aprender a ver" e conta como o trabalho do neurocientista indiano Pawan Sinha tem mudado a concepção sobre os mecanismos da visão e, também, as vidas de muitas crianças que nasceram cegas. 
+
+   .. figure:: _resources/ted-aprendendo-a-ver-02.png
+      :width: 50pt
+
+   .. figure:: _resources/ted-aprendendo-a-ver-01.jpg
+      :width: 400pt
+      :align: center
+
+      <https://goo.gl/KLdhKg>.
+
+
+.. admonition:: Para o professor
+
+   O livro [Duval-2011]_ é uma excelente introdução para as questões de representações semióticas no Ensino da Matemática.
+
+.. admonition:: Voce sabia?
+
+   Todas estas questões de representações e significados fazem parte da :index:`semiótica`, disciplina que se ocupa do estudo dos signos e dos processos significativos na natureza e na cultura. Os signos, aqui, não estão restritos à desenhos em uma folha de papel. Eles podem ser qualquer veículo de significação ou representação de um objeto, de um conceito ou de uma ideia, como textos, sons e gestos. Um dos pontos destacados pela semiótica é a distinção entre a representação de algo e este próprio algo. Um exemplo clássico é dada pela pintura na :numref:`fig-proj-semiotica-01`. O que é que está na pintura? Se você respondeu "cachimbo", saiba que a legenda em Francês "Ceci n'est pas une pipe." tem como tradução "Isto não é um cachimbo.". Segundo o autor da pintura, o surrealista belga René Magritte (1898-1967), ele não poderia escrever o contrário, pois a pintura não é um cachimbo, mas uma representação de um cachimbo. O nome da pintura: "A Traição das Imagens".
+   
+      .. _fig-proj-semiotica-01:
+   
+      .. figure:: _resources/semiotica-01.jpg
+         :width: 350px
+         
+         Pintura de René Magritte (1898-1967).
+
+   Uma vez que a comunicação se dá por meio de signos, a semiótica é de interesse para muitas áreas: Propaganda, Cinema, Ciência, Literatura, Religião … Em Matemática, o aspecto semiótico é fundamental, como aponta [Pinilla-2007]_:
+      
+     É importante ter em mente que os conceitos matemáticos não existem na realidade concreta. O ponto P, o número 3, adição, paralelismo entre retas não são objetos concretos os quais existem na realidade empírica. Eles são conceitos puros, ideais e abstratos e, desta maneira, eles não podem ser "exibidos empiricamente", como em outras Ciências. Em Matemática, os conceitos só podem ser representados por um registro semiótico determinado. De fato, em Matemática, não trabalhamos diretamente com os objetos (isto é, com os conceitos), mas com suas representações semióticas.
+
+   Caso você queira saber mais sobre semiótica, recomendamos começar com o livro "O que é semiótica?" da Coleção "Primeiros Passos" da Editora Brasiliense ([Santaella-1998]_).
 

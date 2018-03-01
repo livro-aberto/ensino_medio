@@ -6,17 +6,20 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
    
+   introducao
+   manual-do-professor
    PE103-ROTEIRO
+   PE104-ROTEIRO
    AF106-ROTEIRO
    AF107-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
    GE202-ROTEIRO
    GE301-ROTEIRO   
-   PE104-ROTEIRO
    GE202-ROTEIRO2
    AF209-ROTEIRO
    
+
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -34,6 +37,18 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   AF107
+   AF107-0
+   AF107-1
+   AF107-2
+   AF107-A
+   AF107-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
    PE103
    PE103-0
    PE103-1
@@ -44,13 +59,14 @@ Ensino Médio
 .. toctree::
    :maxdepth: 1
    :glob: 
+   
+   PE104
+   PE104-0
+   PE104-1
+   PE104-2
+   PE104-A
+   PE104-E
 
-   AF107
-   AF107-0
-   AF107-1
-   AF107-2
-   AF107-A
-   AF107-E
 
 .. toctree::
    :maxdepth: 1
@@ -101,7 +117,7 @@ Ensino Médio
    GE2022-2
    GE2022-3
    GE2022-A
-   GE2022-E
+.. GE2022-E
 
 .. toctree::
    :maxdepth: 1
@@ -113,17 +129,6 @@ Ensino Médio
    GE301-2
    GE301-A
    GE301-E
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
-   PE104
-   PE104-0
-   PE104-1
-   PE104-2
-   PE104-A
-   PE104-E
 
 
 .. toctree::
@@ -138,3 +143,4 @@ Ensino Médio
    AF209-4
    AF209-A
    AF209-E
+   definicoes
