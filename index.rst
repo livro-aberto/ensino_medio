@@ -2,8 +2,6 @@
 Ensino Médio
 ************
 
-
-
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -145,3 +143,4 @@ Ensino Médio
    AF209-4
    AF209-A
    AF209-E
+   definicoes
