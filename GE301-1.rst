@@ -633,40 +633,40 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
      
         .. math::
        
-           \frac{m(AB)}{m(BI)}=\frac{m(DE)}{m(EI)}
+           \frac{AB}{BI}=\frac{DE}{EI}
        
      e
     
         .. math::
        
-          \frac{m(AB)}{m(AI)}=\frac{m(C_SG)}{m(C_SI)}.
+          \frac{AB}{AI}=\frac{C_SG}{C_SI}.
        
        
-     Como a distância do lápis à Terra é de 1 m, então `m(EB)=1` m `=0,001` km. Além disso, `m(AB)=8` cm `=0,00008` km e `m(C_SG)= 695.000` km. Chamaremos de `x` a medida do segmento `BI`, e portanto, 
+     Como a distância do lápis à Terra é de 1 m, então `EB=1` m `=0,001` km. Além disso, `AB=8` cm `=0,00008` km e `C_SG= 695.000` km. Portanto, 
        
        .. math::
        
          \begin{array}{ll}
-         m(C_SI) & = m(C_TC_S)-m(C_TE)-m(EB)-m(BI)\\
-                 & = 150.000.000-6.500-x-0,001 \\
-                 & = 149.993.499,999-x.
+         C_SI & = C_TC_S-C_TE-EB-BI\\
+                 & = 150.000.000-6.500-BI-0,001 \\
+                 & = 149.993.499,999-BI.
          \end{array}        
          
      Substituindo estes valores na equações acima, temos:
      
         .. math::
        
-          \frac{0,00008}{x}=\frac{m(DE)}{0,001+x}
+          \frac{0,00008}{BI}=\frac{DE}{0,001+BI}
        
      e
     
         .. math::
        
-           \frac{0,00008}{\sqrt{x^2+0,00008^2}} = \frac{695.000}{149.993.499,999-x}.
+           \frac{0,00008}{\sqrt{BI^2+0,00008^2}} = \frac{695.000}{149.993.499,999-BI}.
        
-     Resolvendo a segunda equação, encontramos `x=0,01726` e substituindo este valor na primeira equação, vemos que `m(DE)=8,4cm`. Assim, a sombra do lápis, dada pelo segmento `DF`, possui comprimento `16,8cm`. 
+     Resolvendo a segunda equação, encontramos `BI=0,01726` km e substituindo este valor na primeira equação, vemos que a medida do segmento `DE` é `8,4` cm. Assim, a sombra do lápis, dada pelo segmento `DF`, possui comprimento `16,8` cm. 
     
-     Portanto, supondo que os raios solares que atingem a Terra são paralelos, a sombra de um lápis de 16cm seria de 16cm. Supondo que estes raios não são paralelos, a sombra do mesmo lápis mede 16,8cm. Note que a diferença entre os valores encontrados para as sombras é muito pequeno, e isso decorre do fato dos raios solares serem quase paralelos.
+     Portanto, supondo que os raios solares que atingem a Terra são paralelos, a sombra de um lápis de `16` cm seria de `16` cm. Supondo que estes raios não são paralelos, a sombra do mesmo lápis mede `16,8` cm. Note que a diferença entre os valores encontrados para as sombras é muito pequeno, e isso decorre do fato dos raios solares serem quase paralelos.
      
      * A :numref:`fig-experimentos-modelosdeproj3` mostra uma representação do sol, alguns raios luminosos paralelos que dele emanam e o anteparo. 
   
