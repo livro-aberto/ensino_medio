@@ -584,9 +584,148 @@ Em cada uma delas, você deve identificar quais são os elementos que são supos
    
    **Pergunta 3.** Se `O` fosse um ponto da reta `r`, a projeção de `r` seria apenas o ponto de interseção da reta `r` com o plano `\pi`.
    
-   **Pergunta 4.** A projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção é também um feixe de retas paralelas. 
+   **Pergunta 4.** A projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção é também um feixe de retas paralelas. Veja a figura abaixo.
    
-   Vamos trabalhar apenas com duas retas `r` e `s` paralelas ao plano de projeção para facilitar nosso raciocínio que pode ser generalizado para um número qualquer de retas. Primeiramente, note que a projeção em perspectiva de uma reta paralela ao plano de projeção será também uma reta. Portanto, as projeções das retas `r` e `s` serão duas retas que chamaremos de `r'` e `s'`, respectivamente, e que suporemos serem distintas. Caso `r'` e `s'` não fossem retas paralelas, elas seriam concorrentes em um ponto `P` (como as duas retas estão dentro do mesmo plano, que é o plano de projeção, elas não poderiam ser reversas). Neste caso, existiriam dois pontos diferentes `A` e `B` pertencentes às retas paralelas `r` e `s`, respectivamente, que foram projetados em `P`. Isso significaria que as retas que passam pelo centro de projeção e por `A` e `B` se encontram em `P`, o que não é possível pois `A` e `B` pertencem à retas paralelas. Logo, a projeção de duas retas paralelas ao plano de projeção deve ser duas retas paralelas.
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar1Per4:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_2_1.png
+      :width: 300pt
+      :align: center
+
+      Retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`, e suas projeções em perspectiva `r'` e `s'`, respectivamente.
+   
+   Para conjecturar, vamos trabalhar apenas com duas retas `r` e `s` paralelas entre si e ao plano de projeção para facilitar nosso raciocínio que pode ser generalizado para um número qualquer de retas. Primeiramente, note que a projeção em perspectiva de uma reta paralela ao plano de projeção será também uma reta. Portanto, as projeções das retas `r` e `s` serão duas retas que chamaremos de `r'` e `s'`, respectivamente, e que suporemos serem distintas. Caso `r'` e `s'` não fossem retas paralelas, elas seriam concorrentes em um ponto `P` (como as duas retas estão dentro do mesmo plano, que é o plano de projeção, elas não poderiam ser reversas). Neste caso, existiriam dois pontos diferentes `A` e `B` pertencentes às retas paralelas `r` e `s`, respectivamente, que foram projetados em `P`. Isso significaria que as retas que passam pelo centro de projeção e por `A` e `B` se encontram em `P`, o que não é possível pois `A` e `B` pertencem à retas paralelas. Logo, a projeção de duas retas paralelas ao plano de projeção deve ser duas retas paralelas.
+   
+   Podemos pensar de outra forma também que talvez você considere de mais fácil entendimento. Se `r'` é a projeção de `r` no plano de projeção, então `r'` é paralela a `r`. Do mesmo modo, `s'` é paralela a `s`. Mas, então `r'` é paralela a `s'`, porque `r'` é paralela a `r`, `r` é paralela a `s` e `s` é paralela a `s'`. 
+   
+   **PARTE 2.** 
+   
+   Como percebemos no caso das projeções em perspectiva que retas paralelas ao plano de projeção e não paralelas possuem comportamentos diferentes ao serem projetadas, vamos estudar os dois casos em separado aqui também.  Além disso, vamos também considerar que a direção de projeção pode ou não ser perpendicular ao plano de projeção.
+   
+   *Retas paralelas entre si e não paralelas ao plano de projeção*
+   
+   Primeiramente, vamos tomar duas retas `r` e `s` paralelas entre si, mas não paralelas ao plano de projeção. Além disso, considere a direção de projeção `d` oblíqua em relação ao plano de projeção `\pi`, como exibido na :numref:`fig-AtRetasParalObrasArteInfinitoPar2_1`.
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_1:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_3_2.png
+      :width: 300pt
+      :align: center
+
+      Retas `r` e `s` paralelas entre si e `d` a direção de projeção oblíqua em relação ao plano de projeção `\pi`.
+   
+   Para determinar a projeção paralela da reta `r` em relação à `d` sobre `\pi`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e é paralela à `d` com o plano `\pi`. Tome os pontos `A` e `B` pertencentes à reta `r`, como na :numref:`fig-AtRetasParalObrasArteInfinitoPar2_2`. As projeções dos pontos `A` e `B` serão chamadas `A'` e `B'`, respectivamente. 
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_2:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_4_3.png
+      :width: 300pt
+      :align: center
+
+      Projeções paralelas `A'` e `B'` dos pontos `A` e `B` da reta `r` em relação à direção `d` sobre o plano `\pi`.
+      
+   Observe que o ponto `B` é a interseção da reta `r` com o plano `\pi` e por isso, sua projeção coincide com ele mesmo. Projetando todos os pontos de `r`, encontramos a reta `r'` que passa por `A'` e  `B'`, conforme :numref:`fig-AtRetasParalObrasArteInfinitoPar2_3`. Assim, `r'` é a projeção paralela da reta `r` em relação à `d` sobre o plano `\pi`. 
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_3:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_6_1.png
+      :width: 300pt
+      :align: center
+
+      A reta `r'` é a projeção paralela da reta `r` em relação à direção `d` sobre o plano `\pi`. 
+   
+   Afim de aplicar novamente a definição de projeção paralela à reta `s`, vamos tomar os pontos `C` e `D` de `s`. As retas que passam por esses pontos e são paralelas à `d` intersectam `\pi` em `C'` e `D'`, respectivamente. Se replicássemos esse raciocínio para todos os pontos de `s`, teríamos que a reta `s'` que passa por `C'` e `D'` é a projeção paralela de `s` em relação à `d` sobre o plano `\pi`. 
+   
+   A :numref:`fig-AtRetasParalObrasArteInfinitoPar2_4` exibe as retas `r'` e `s'` que são as projeções de `r` e `s` em relação à `d` sobre o plano `\pi`. 
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_4:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_5_2.png
+      :width: 300pt
+      :align: center
+
+      `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
+      
+   Repare que a reta que passa pelo ponto `B` e é paralela à `d` e a reta `r` determinam um plano, que chamaremos de `\pi_r`. Portanto, `\pi_r` é paralelo à reta `d` e, além disso, a forma como `\pi_r` foi determinado faz com que ele contenha todas as retas paralelas à `d` que passam por pontos de `r`. Assim, `r'` é a reta de interseção de `\pi_r` com `\pi`. Se pensarmos de maneira análoga para a reta `s`, poderíamos determinar o plano `\pi_s` a partir da reta que passa pelo ponto `C` e é paralela à `d` e a reta `s`. `\pi_s` é também paralelo à reta `d` e contém todas as retas paralelas à `d` que passam por pontos de `s`. Dessa forma, `s'` é a reta de interseção de `\pi_s` com `\pi`. Se `\pi_r` e `\pi_s` são dois planos paralelos à `d` que não possuem interseção, então eles são paralelos entre si, e isto implica que suas interseções com `\pi` serão paralelas. Logo, `r'` e `s'` são retas paralelas.
+   
+   No caso anterior, as retas `r` e `s` são oblíquas em relação ao plano de projeção, assim como a direção de projeção `d`. Caso `d` fosse perpendicular à `\pi`, não haveria nenhuma alteração na projeção das retas, ou seja, as projeções paralelas de retas paralelas entre si e oblíquas à `\pi` também seriam retas paralelas entre si. Veja a figura :numref:`fig-AtRetasParalObrasArteInfinitoPar2_5`.
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_5:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_13_3.png
+      :width: 300pt
+      :align: center
+
+      A direção de projeção `d` é perpendicular ao plano de projeção `\pi`, e `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
+   
+   Se tomarmos retas `r` e `s` paralelas entre si e perpendiculares ao plano de projeção teremos duas situações diferentes. Na primeira, caso `d` seja uma reta oblíqua em relação à `\pi`, então teremos uma situação semelhante aos dois casos anteriores. Veja a figura :numref:`fig-AtRetasParalObrasArteInfinitoPar2_6`.
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_6:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_12_1.png
+      :width: 300pt
+      :align: center
+
+      As retas `r` e `s` são perpendiculares ao plano de projeção `\pi` e `d` é oblíqua em relação à `\pi`. As `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
+   
+   Porém, se tivermos `r, s` e `d` perpendiculares ao plano de projeção `\pi`, a situação será um pouco diferente. Sendo a direção `d` perpendicular à `\pi`, a reta que passa por pontos de `r` e é paralela à `d` coincide com `r`. O mesmo acontece com a reta `s`. Como a interseção de `r` e `s` com o plano `\pi` são os pontos `A` e `B`, respectivamente, então as projeções paralelas de `r` e `s` serão os pontos `A` e `B`. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_7`. 
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_7:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_11_2.png
+      :width: 300pt
+      :align: center
+
+      A direção de projeção `d` é perpendicular ao plano de projeção `\pi`, assim como `r` e `s`. A projeção paralela das retas `r` e `s` serão os pontos `A` e `B`, onde `r` e `s` intersectam o plano `\pi`. 
+   
+   *Retas paralelas entre si e paralelas ao plano de projeção*
+   
+   Vamos agora tomar duas retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`, além da reta `d` que será a direção de projeção e `\pi` o plano de projeção. Neste caso, `d` pode ser ou não perpendicular ao plano de projeção. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_8`.
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_8:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_10.png
+      :width: 350pt
+      :align: center
+
+      Retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`.
+      
+   Seguindo o mesmo raciocínio dos casos anteriores, tomemos os pontos `A` e `B` pertencentes à reta `r` e vamos projetá-los sobre `\pi` conforme mostra a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_9`. Para isso, basta tomar a reta passando por cada ponto e paralela à `d`, e então calcular sua interseção com `\pi`. Chamaremos de `A'` e `B'` as projeções dos pontos `A` e `B`, respectivamente. 
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_9:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_9_1.png
+      :width: 300pt
+      :align: center
+
+      Projeções paralelas `A'` e `B'` dos pontos `A` e `B` da reta `r` em relação à direção `d` sobre o plano `\pi`. 
+      
+   Projetando todos os pontos de `r`, encontramos a reta `r'` que passa por `A'` e `B'`, que é a projeção paralela à reta `r` em relação à direção `d` sobre o plano `\pi`. Observe que `r'` é paralela à `r`. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_10`.  
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_10:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_8.png
+      :width: 300pt
+      :align: center
+
+      A reta `r'` é a projeção paralela da reta `r` em relação à direção `d` sobre o plano `\pi`.  
+      
+   Para encontrar a projeção paralela da reta `s`, tomemos os pontos `C` e `D` de `s`. As retas que passam por esses pontos e são paralelas à `d` intersectam `\pi` em `C'` e `D'`, respectivamente. Se replicássemos esse raciocínio para todos os pontos de `s`, teríamos que a reta `s'` que passa por `C'` e `D'` é a projeção paralela de `s` em relação à direção `d` sobre o plano `\pi`. Note que `s'` é paralela à `s`.
+   
+   A :numref:`fig-AtRetasParalObrasArteInfinitoPar2_11` exibe as retas `r'` e `s'` que são as projeções paralelas das retas `r` e `s`.  
+   
+   .. _fig-AtRetasParalObrasArteInfinitoPar2_11:
+
+   .. figure:: _resources/AtRetasParalObrasArteInfinito_7.png
+      :width: 300pt
+      :align: center
+
+      `r` e `s` são retas paralelas ao plano de projeção, e `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` no plano `\pi`.  
+      
+   Como `r` é paralela à `s`, `r` é paralela à `r'` e `s` é paralela à `s'`, concluímos que `r'` é paralela à `s'`. Ou seja, a projeção paralela de retas paralelas entre si e paralelas ao plano de projeção será também retas paralelas.   
+   
+   Por tudo que vimos, podemos concluir que as projeções paralelas de retas paralelas são retas também paralelas, com exceção para as retas perpendiculares ao plano de projeção que são projetadas perpendicularmente no plano de projeção. Neste caso, as projeção serão pontos.
    
    
 .. admonition:: Para refletir
