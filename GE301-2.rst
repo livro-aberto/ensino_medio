@@ -506,7 +506,7 @@ Observe que os pontos da reta `r` projetados pertencem ao plano `\pi` e, também
 
    Projeção em perspectiva de uma reta: passo 3.
 
-Em particular, os pontos da reta `r` projetados no plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
+Em particular, os pontos da reta `r` projetados sobre o plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
 
 .. _fig-proj-infinito-05:
 
@@ -523,7 +523,7 @@ Existe uma reta `s` que passa por `O` e é paralela a reta `r`. Essa reta perten
    Projeção em perspectiva de uma reta: passo 5.
 
 
-**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção no plano `\pi` seja o ponto `F`. Por quê? 
+**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção sobre o plano `\pi` seja o ponto `F`. Por quê? 
 
 Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim, uma reta menos um ponto: `r' - \{F\}`. Se prolongarmos esta projeção incluindo o ponto `F`, obteremos uma reta: `r'`.
 
@@ -532,7 +532,7 @@ Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim,
 **Pergunta 3.** Supomos inicialmente que a reta `r` não passa pelo ponto `O`. O que mudaria no que foi feito se `O` fosse um ponto de `r`?
 
 
-Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções no plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
+Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções sobre o plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
 Isto também explica a "convergência"
 das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito-01`.
 
@@ -611,11 +611,22 @@ Você receberá reproduções de pinturas, desenhos e fotos do seu professor (as
    
       O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441) (fonte: Wikimedia Commons).
 
+
+   .. https://commons.wikimedia.org/wiki/File:Palace_of_Assembly_Chandigarh_2006.jpg
+   
+   .. _fig-proj-ponto-de-fuga-09:         
+
+   .. figure:: _resources/ponto-de-fuga-09.jpg
+      :width: 300pt
+   
+   
+      Palácio da Assembleia em Chandigarh na Índia (fonte: Wikimedia Commons).
+
       
 
 Em cada uma delas, você deve identificar quais são os elementos que são supostamente paralelos na cena tridimensional sendo registrada (contornos de paredes, ladrilhos, etc.) e, então, desenhar segmentos de reta nesses elementos da imagem. Aqui está um exemplo.
 
-   .. figure:: _resources/ponto-de-fuga-08.jpg
+   .. figure:: _resources/ponto-de-fuga-08_1.jpg
       :width: 400pt
 
 
@@ -809,7 +820,9 @@ Atividade: comprimentos em projeções em perspectiva
    
    **Observações e recomendações:**
    
-   * 
+   * O uso do conceito de função nesta atividade não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. Observe, por exemplo, como a notação funcional permite compactar informação: no lugar de falar "Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item?", basta falar "Qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?". No espírito da :ref:`ativ-funcoes-enchendo-o-cone`, é importante articular as representações em linguagem natural e a linguagem funcional e explicitar para o alunos as vantagens e desvantagens de cada representação.
+   
+   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP> e <https://www.geogebra.org/m/UGFWgAQ5>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas.
    
 Coloque os seus dois dedos indicadores um do lado do outro. Eles têm o mesmo tamanho, não é? Agora afaste um deles. Seus dedos continuam com o mesmo tamanho? Sim, mas você **vê** o dedo que está mais longe menor, não é? Esta propriedade pode ser explicada via projeções em perspectiva e a exploraremos nesta atividade.
 
@@ -823,9 +836,9 @@ Vamos começar com uma configuração bem simples. Considere a :numref:`fig-proj
    
    .. figure:: _resources/perspectiva-comprimento-01_1.jpg
       
-      Configuração geométrica simples.
+      Configuração geométrica simples (versão interativa: <https://www.geogebra.org/m/HKuqwxXn>).
 
-**Pergunta 1.**
+**Etapa 1.**
 
 Considere que `h = 2` e `d = 3`. 
 
@@ -837,10 +850,11 @@ Considere que `h = 2` e `d = 3`.
 #. Existem valores diferentes de `x_{1}` e `x_{2}` para os `f(x_{1}) = f(x_{2})`? Interprete no contexto de visualização de imagens.
 #. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização de imagens.
 #. Se os valores de `x` vão ficando arbitrariamente próximos de `0` com valores maiores do que `0`, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização de imagens.
+#. Deseja-se construir um segmento `CD` cuja projeção em perspectiva sobre o plano `\pi` com relação ao centro `O` também seja o segmento `A'B'`, mas cuja distância até `O` seja igual a 15. Qual deve ser o comprimento d            o segmento `CD`?
 
 Justifique todas as respostas!
 
-**Pergunta 2.**
+**Etapa 2.**
 
 #. Generalize o Item b) da Pergunta 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
 
