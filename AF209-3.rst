@@ -1,3 +1,190 @@
-*******
-AF209-3
-*******
+.. _sec-vertex:
+
+*********************************
+Explorando: Um caso de otimização
+*********************************
+   
+.. _sub-Ativ-Perimetro_Fixo:
+
+Atividade: Perímetro Fixo
+-----
+
+.. admonition:: Para o professor
+
+   Prezado colega esta atividade tem como objetivo aplicar o conceito de otimização em função quadrática num contexto geométrico, sem a utilização do gráfico da função nem muito menos da curva denominada parábola, para isso pretendemos:
+
+   #. explorar a situação através do uso, já corriqueiro, de preenchimento de um quadro.
+   #. modelar a situação utilizando álgebra de maneira simples e guiada.
+   #. apresentar e explorar a técnica de completar quadrados para passarmos a função quadrática encontrada da forma polinomial para a forma canônica, sem obrigatoriamente citar esses termos.
+   #. utilizar a apresentação da forma canônica para identificarmos os valores de área máxima e os valores que maximizam essa área, convidando seu aluno à fazer inferências apenas aritméticas na forma encontrada.
+
+
+Imagine que você tenha um pedaço de barbante de `12` cm de comprimento e queira moldar um retângulo com ele e calcular sua área. A figura abaixo ajuda a ilustrar a situação.
+
+.. figure:: _resources/Maos_com_Barbante.png
+   :width: 300 pt
+   :align: center
+
+
+#. A situação em questão envolve quatro grandezas, aponte quais são.
+#. Quais grandezas descritas acima variam e quais não variam?
+#. Numa folha de papel ou similar, copie a tabela a seguir e complete-a.
+
+   +------+--------+------+
+   | Base | Altura | Área |
+   +------+--------+------+
+   | 0    |        |      |
+   +------+--------+------+
+   | 2    |        |      |
+   +------+--------+------+
+   | 4    |        |      |
+   +------+--------+------+
+   | 6    |        |      |
+   +------+--------+------+
+
+#. O que ocorreu com a área para os valores da base iguais a `0` e `6`?  Esses valores devem ser considerados em nossa análise da situação?
+#. Quais as medidas da base do retângulo que apresentaram área máxima no quadro acima? 
+#. Assumindo a base do retângulo como `x`, e sua altura como `h(x)`, exiba uma expressão algébrica que representa a medida da altura desse retângulo em função de `x`. A expressão `h(x)`, encontrada pode ser considerada uma função afim? Com que domínios e imagens?
+#. Assumindo a base do retângulo como `x`, a altura `h(x)` encontrada no item anterior e sua área como `A(x)`, exiba uma expressão que apresente a área deste retângulo em função de `x`. 
+#. Verifique se a relação encontrada pode ser dada por `A(x)=-(x^2-6x)`, caso contrário refaça os itens anteriores.
+#. A expressão `A(x)`, encontrada pode ser considerada uma função afim? Por quê? 
+#. Observe que a relação apresentada no item 'h', possui dentro do parênteses um binômio que pode ser parte de um trinômio quadrado perfeito, qual seria o terceiro termo que faria o binômio se transformar num trinômio quadrado perfeito?
+#. Agora repita a relação: `A(x)=-(x^2-6x+\Box -\Box)` acrescentando e retirando o número encontrado no item anterior.
+#. Ao fatorar a relação do item anterior podemos recair na forma: `A(x)=a(x-p)^2+q`, quais os valores de a, p e q, que foram encontrados neste processo de fatoração?
+#. Levando em consideração a forma apresentada no item anterior, e ao analisarmos apenas o termo `(x-p)^2`, Existe algum valor de `x` que torne a expressão negativa? e qual valor de `x` torna a expressão nula?
+#. Ao analisarmos `A(x)=-(x-3)^2+9`, existe algum valor de `x` que faça `A(x)` ser maior que `9`? Por quê?
+#. Qual a área máxima do Retângulo?
+#. Qual o valor de `x`, que gera a área máxima?
+
+
+.. admonition:: Resposta 
+
+   #. No retângulo temos as medidas de: **perímetro**, **área**, **base** e **altura**.
+   #. O perímetro não varia, e a área, a base e a altura variam.
+   #. Segue o quadro preenchido:
+   
+      +------+--------+------+
+      | Base | Altura | Área |
+      +------+--------+------+
+      | 0    |    6   |   0  |
+      +------+--------+------+
+      | 2    |   4    |   8  |
+      +------+--------+------+
+      | 4    |   2    |   8  |
+      +------+--------+------+
+      | 6    |   0    |   0  |
+      +------+--------+------+
+      
+   #. A área foi nula. Eles não devem ser considerados, pois não existem retângulos cujas medidas dos lados sejam nulas.
+
+   #. Considerando a base como `x` temos `x=2` ou `x=4`.
+
+   #. `h(x)=6-x` . Sim, com: `h:]0,6[\to]0,\infty[`.
+
+   #. `A(x)=x(6-x) \to A(x)=-(x^2-6x)`.
+
+   #. Verificação.
+
+   #. Não por vários motivos, seguem alguns: 
+
+      `i.1)` a função afim é sempre monótona (sempre crescente ou sempre decrescente), os valores da última coluna do quadro nos mostram que ora `A(x)` é crescente ora é decrescente.
+      
+      `i.2)` a função afim apresenta taxa de variação constante, já `A(x)` não apresenta, pois: `\frac{5-0}{1-0}=5` e `\frac{8-5}{2-1}=3`.
+
+   #. `9`.
+
+   #. `A(x)=-(x^2-6x+9-9)`.
+
+   #. `A(x)=-(x^2-6x+9-9)=-(x^2-6x+9)+9=-(x-3)^2+9` , com `a=-1` ; `p=3` e `q=9`.
+
+   #. Não existe. `x=p`.
+
+   #. Não. Pois para quaisquer valores de `x`, `(x-3)^2` sempre será positivo, e consequentemente `-(x-3)^2` será sempre negativo, e se esse valor negativo for somado com `9` o resultado obrigatoriamente será menor que `9`.
+
+   #. `9cm^2`.
+   
+   #. `3cm`. 
+
+.. _sec-org-ideias-quad-max-min-na-quadratica:
+
+*****************************************
+Organizando as ideias: Máximos ou mínimos
+*****************************************
+
+Na :ref:`sub-Ativ-Perimetro_Fixo` você foi auxiliado na transformação da lei de formação da função `A` descrita por `A(x)=6x-x²` para `A(x)=-(x-3)²+9`. Qual o objetivo dessa transformação? Que vantagem há nisso?
+
+Sabe-se que uma função real do tipo `f(x)=x^2` tem a propriedade `f(x) \geq 0`, para todo `x \in \mathbb{R}`. Ou seja, qualquer variável real que esteja elevada ao quadrado tem resultado mínimo igual a zero e pode crescer tanto quanto se queira. Imagine agora que esse quadrado seja multiplicada por um número negativo, os resultados que podiam crescer o quanto se quisesse, agora ficam negativos e, na verdade, passam a diminuir tanto quanto se queira e o zero passa a ser o seu maior valor. As tabelas abaixo evidenciam isso:
+
+.. figure:: _resources/OrgI3_Fator.png
+   :width: 400 px
+   :align: center
+
+A análise feita gera a regra que segue.
+
+
+.. admonition:: – Fique atento!
+
+    Para `f(x)=ax^2` temos: 
+    
+    `a > 0`, `f` tem resultado **mínimo** em `x^2 = 0`;
+   
+    `a = 0`, `f` é constante e nula, ou seja `f(x)=0`;
+   
+    `a < 0`, `f` tem resultado **máximo** em `x^2 = 0`.   
+
+A forma `A(x) = 6x – x^2` tem duas variações simultâneas: `6x` e `-x^2`, o que torna mais difícil a determinação de um possível resultado máximo de `A`. Já a forma `A(x)=-(x-3)^2 +9` só tem uma variação: `-(x-3)^2`, que pela regra descrita acima tem um resultado máximo que ocorre em `(x-3)^2=0`, logo o resultado máximo de `A` é `0+9=9`. Destacamos com isso o quanto fica simples a determinação de um resultado máximo ou mínimo em situações em que podemos reduzir as variações a um único termo ao quadrado.
+
+Diante do que conhecemos até aqui, podemos finalmente estabelecer que toda função real `f` do tipo `f(x)=ax^{2}+bx+c`, onde `a`, `b` e `c` são números reais e `a \neq 0`, pode ser transformada em sua forma equivalente `f(x)=a(x-p)^{2}+q`. Em ambos os formatos, chamaremos `f` de **função quadrática**. Denominando `f(x)=ax^{2}+bx+c` de **forma polinomial** e `f(x)=a(x-p)^{2}+q` de **forma canônica** da função quadrática.  
+
+A forma `f(x)=a(x-p)^{2}+q` permite identificar rapidamente  qual é o resultado máximo ou mínimo da função conforme `a` seja positivo ou negativo. 
+Considere, como exemplo do que foi concluído, que o tamanho do barbante seja de `14` cm. Sua área `A(x)` em função da base `x` será `A(x)=7x-x^{2}`. Fatorando `A(x)`, teremos:
+
+.. math::
+
+   & A(x)= 7x-x^{2}\\
+   & A(x)=-x^{2}+2 \cdot \frac{7}{2}x\\
+   & A(x)=-x^{2}+2 \cdot \frac{7}{2}x - \frac{49}{4} + \frac{49}{4}\\
+   & A(x)=-\left(x^{2}-2 \cdot \frac{7}{2}x + \frac{49}{4}\right) + \frac{49}{4}\\
+   & A(x)=- \left(x - \frac{7}{2} \right )^{2}+ \frac{49}{4}\\
+
+A função tem um resultado máximo, pois `a=-1<0` e este valor aparece quando `\left(x-\frac{7}{2}\right)^{2}=0`, ou seja, `x=\frac{7}{2}`. Assim, o valor máximo da função é `A(x)=0+\frac{49}{4}=\frac{49}{4}`.
+
+De modo geral, `f(x)=ax^{2}+bx+c` equivale a `f(x)=a(x-p)^{2}+q` e, avaliado se existe o resultado máximo ou o mínimo para a função real, esse resultado é o ponto `(p,q)` que passaremos a chamar de ponto de máximo ou ponto de mínimo, dependendo do valor `a`.
+
+**Obtendo o ponto de máximo ou de mínimo através da forma geral**
+
+Você já deve ter percebido que a forma geral modificada para a forma canônica, exibe imediatamente o ponto `(p,q)`. No entanto, podemos usar essa técnica no sentido inverso para que a mudança para a forma canônica não seja o único modo de obter `(p,q)`. Assim, vamos desenvolver a *forma canônica* de `f`:
+
+.. math::
+   & a(x-p)^2+q= \\
+   & a(x^2-2px+p^2)+q \\
+   & ax^2-2apx+ap^2+q \\
+   & ax^2-2apx+(ap^2+q) \\
+   
+Comparando esse resultado com sua forma equivalente *forma geral* `ax^2+bx+c`, que é a *forma geral* temos:
+
+.. math::
+   & ax^2=ax^2 \Rightarrow a=a \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (1) \\
+   & -2apx=bx \Rightarrow p=-\frac{b}{2a} \;\;\;\;\; (2)\\
+   & ap^2+q=c \Rightarrow q=c-ap^2 \;\;\;\;\; (3)\\
+
+A conclusão `(1)` não traz novidade, a `(2)` nos mostra como determinar `p` a partir da *forma geral* e `(3)` revelará quem é `q`, mas precisaremos simplificar um pouco mais a expressão. Para isso, usaremos `(2)` em `(3)`:
+
+.. math::
+   q &=c-a \cdot \left(- \frac{b}{2a} \right)^{2} =c \cdot 1-a \cdot \left( \frac{b^2}{4a^2} \right) \\
+   & =c \cdot \frac{4a}{4a} - \frac{b^2}{4a}= \frac{4ac-b^2}{4a} \\
+   & = - \frac{b^2-4ac}{4a}
+
+Lembrando, que em equações do segundo grau `ax^2+bx+c=0`, a expressão "`b^2-4ac`" é representada pela letra grega `\Delta`, ou seja, `\Delta = b^2-4ac`, temos que `q = - \frac{\Delta}{4a}`.
+
+.. admonition:: Teorema 3
+   
+   Seja a função quadrática `f`, de domínio real, definida por  `f(x)=ax^2+bx+c` ou pela sua forma equivalente `f(x)=a(x-p)^2+q`, temos que
+   
+   `\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (p,q)= \left( -\frac{b}{2a}, -\frac{\Delta}{4a} \right)`
+   
+   e uma das situações a seguir é verdadeira:
+   
+   `(i)\;(p,q)` é o **ponto de mínimo**, se `a>0`;
+   
+   `(ii)\;(p,q)` é o **ponto de máximo**, se `a<0`.

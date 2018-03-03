@@ -1,3 +1,149 @@
-*******
-AF209-1
-*******
+.. _sec-org-ideias-galileu-muv:
+
+*************************************
+Organizando as ideias: Queda Vertical
+*************************************
+
+**Aristóteles** (`\star` Estagira, `384` a.C. — `\dagger` Atenas, `322` a.C.) e **Galileu Galilei** `(\star 1564 , \dagger 1642)` **no estudo da Queda Livre**
+
+
+Aristóteles, discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
+ 
+Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, onde se afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
+ 
+Aristóteles afirmava que havia dois tipos de movimentos: os naturais e os violentos. Os naturais, para ele, decorre diretamente da natureza do objeto e os violentos decorrem de  forças aplicadas a esses objetos, ou seja um movimento imposto.
+ 
+No caso dos movimentos naturais, Aristóteles afirmava que cada objeto tem um lugar próprio na natureza e que esses se “esforçam” para retornar ao seu lugar de origem. Por exemplo um vaso de cerâmica, ao ser abandonado cai procurando seu lugar ao solo, já que em sua composição o elemento terra é o mais presente, e pelo mesmo motivo um sopro, ou “baforada” acaba se misturando com o ar.
+ 
+Além disso, Aristóteles, afirmava que um objeto mais pesado (com maior massa) cai em direção ao solo, mais rapidamente que um objeto mais leve, ou seja, para ele, objetos ao serem lançados, caíam com rapidez proporcional ao seu peso. Suas afirmações sobre o movimento, pautaram o pensamento científico por mais de dois mil anos, sendo a base da ciência na era Medieval e Renascentista. Sendo corrigidas por seus sucessores, como Galileu Galilei.
+
+Galileu Galilei filósofo italiano e também considerado físico, matemático e astrônomo, teve também um papel importante na revolução científica, e no contexto histórico mundial, sendo considerado um dos maiores cientistas de sua época. 
+ 
+Galileu abandonou a faculdade de Medicina dedicando-se aos estudos de física e matemática na Universidade de Pisa, uma das mais conceituadas da época. Foi na Universidade de Pisa, já como professor de matemática que Galileu, realizou experiências públicas sobre a queda dos corpos. 
+ 
+Certos historiadores, relatam que perante uma multidão de professores, estudantes e religiosos, Galileu, ao alto da torre de Pisa deixou cair dois pedaços de metal, um deles com o peso dez vezes maior que o outro e os dois chegaram ao solo praticamente no mesmo instante, contrariando assim Aristóteles. Ele prosseguiu realizado outras experiências laboratoriais que acabaram criando o conceito de resistência do ar, o que explicaria por que uma pena e uma bola de metal abandonadas de uma mesma altura, não chegam ao chão ao mesmo tempo. Mesmo assim Galileu não conseguiu convencer as autoridades universitárias de Pisa, que o acusaram de sacrilégio e acabaram tornando sua continuidade em Pisa um tanto desagradável. Por isso, no ano seguinte Galileu aceita uma cadeira na Universidade de Pádua, onde foi muito bem recebido e, por quase dezoito anos continuou realizando diversas experiências e ganhando prestígio com suas publicações e suas famosas aulas magnas.
+
+Uma das conclusões mais importantes de Galileu, foram com bases em experiências laboratoriais com planos inclinados. Como retratam as figuras a seguir:
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/plano_inclinado_bruno.jpg
+   :width: 300pt
+   :align: center
+
+   Experiência Galileu
+
++---------+----------------------+----------------------+
+| Medição | Espaço percorrido    | Tempo Gasto          |
++---------+----------------------+----------------------+
+| 1ª      | `\frac{\Delta p}{4}` | `\frac{t}{2}`        |
++---------+----------------------+----------------------+
+| 2ª      | `\frac{\Delta p}{2}` | `\frac{t}{\sqrt{2}}` |
++---------+----------------------+----------------------+
+| 3ª      | `\Delta p`           | `t`                  |
++---------+----------------------+----------------------+
+   
+   
+Galileu notou que:
+   
+Na primeira medição obtemos a razão:`\frac{\frac{\Delta p}{4}}{(\frac{t}{2})^2}=\frac{\Delta p}{4}.\frac{4}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na segunda medição obtemos a razão:`\frac{\frac{\Delta p}{2}}{(\frac{t}{\sqrt{2}})^2}=\frac{\Delta p}{2}.\frac{2}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na terceira medição obtemos a razão: `\frac{\Delta p}{t^2}`
+   
+Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. Em outras palavras, Galileu constatou que **a distância percorrida é proporcional ao quadrado do tempo gasto nesse percurso**. A partir dessas conclusões chegamos as fórmulas: `\frac{d}{t^2} = \frac{g}{2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
+
+**O movimento uniformemente variado**
+
+Nos casos em que a velocidade de um móvel varia de modo constante por todo o intervalo de tempo deste movimento, o movimento é chamado de **uniformemente variado** e temos que a função que dá a velocidade em cada instante de tempo do movimento é uma função afim, logo
+
+.. math::
+
+   v(t)=v_0 + a \cdot t,
+
+onde `v_0` é a velocidade no início da observação do movimento e `a` é o fator que vai alterando a velocidade, chamado de aceleração.
+
+São as leis de Newton `(\star 1643, \dagger 1727)` que estabelecem como a aceleração se relaciona com os objetos de um modo geral, permitindo o uso das relações obtidas por Galileu para situações além da queda livre dos corpos, que vão desde jogadas feitas por atletas com bolas, discos, flechas ou dardos, passando pela aceleração e frenagem de automóveis, e chegando até ao lançamento de foguetes e satélites.
+
+Nas palavras de [Pietrocola-et-al-2016]_ ,
+
+*"Para um corpo permanecer em movimento uniformemente variado (MUV) - com aceleração constante -, é preciso que uma força atue nele. No caso dos corpos em queda, a força gravitacional Terra-corpo se encarrega dessa tarefa. Para o lançamento vertical, é necessária a ação de uma força gravitacional. Já no caso do movimento variado no plano horizontal, uma força deve ser constantemente aplicada no corpo"*.
+
+Essas constatações conduzem ao fato de que a relação existente entre a posição de um corpo em cada instante de tempo, no caso de um *MUV*, conforme já constatamos, não é uma função afim. Prova-se que as grandezas posição e tempo podem ser descrita por uma equação do tipo `p(t)=p_0+v_0 \cdot t + \frac{a}{2} \cdot t^2`; onde `p(t)` é a posição no tempo `t`, `p_0` é a posição inicial em relação ao referencial estabelecido na análise, `v_0` é a velocidade no início da observação e `a` é a aceleração.
+
+.. sec-praticando-frenagem
+
+**********
+Praticando
+**********
+
+Atividade: Distância segura entre os carros
+-------------------------------------------
+
+Uma noção importante sobre a direção defensiva trata do fato de que *"Ao pisar no freio do veículo, ele não para instantaneamente. Entre o momento que o motorista observa um obstáculo à sua frente e decide acionar os freios até o instante que o carro realmente para, ele se desloca vários metros"* [JCNET-2013]_. Esse fato gera a chamada **distância de frenagem**, que precisa ser conhecida, para a segurança de todo motorista.
+
+Como essa distância depende de muitos fatores, logo que um veículo é lançado, revistas especializadas tratam de divulgar tabelas com as relações entre as velocidades e as distâncias de frenagem para estes veículos. A análise experimental e cuidadosa de qualquer uma dessas tabelas revela que a distância percorrida por um veículo após o acionamento dos freios é proporcional ao quadrado da sua velocidade [Avila]_.
+
+No artigo [JCNET-2013]_ encontramos que um veículo a `80` Km/h, ao considerarmos os tempos de percepção, de reação e de parada, vai percorrer em média `57` metros em pista seca até parar totalmente assim que o motorista observar o obstáculo e decidir frear.
+
+#. Considere que o tempo de reação entre a percepção do obstáculo e a pisada no freio para um motorista seja de um segundo. Nesse tempo, quantos metros o seu carro se desloca, se inicialmente está a 80Km/h? [Se necessário, utilize que `\upsilon` Km/h = `( \upsilon \div 3,6 )` m/s].
+
+#. A distância de `57` m descrita no texto considera duas distância juntas: a que o móvel percorre no segundo anterior ao acionamento do freio, e a distância de frenagem. Sendo assim, quanto é somente a distância de frenagem desse móvel a `80` Km/h e que percorreu um total de `57` m antes de parar?  
+
+#. Sendo `k` uma constante de proporcionalidade, exiba uma relação algébrica entre a distância de frenagem e a velocidade do móvel antes do acionamento do freio, descrita no segundo parágrafo do texto.
+
+#. Para os valores considerados no item 'b', qual o valor da constante de proporcionalidade `k`?
+
+#. A relação algébrica obtida no item 'c' é uma função afim?
+
+   Observe a figura a seguir. Ela exibe, na placa o número `80`, referente a velocidade do carro antes de perceber o obstáculo e decidir freiar. 
+
+   .. figure:: _resources/Frenagem_Exemplo.png
+      :width: 450pt
+      :align: center
+   
+      Exemplo preenchido
+
+
+   .. figure:: _resources/prat_1.jpg
+      :width: 100pt
+      :align: center
+
+      Significado das bandeiras nas figuras
+
+
+#. Conforme o exemplo acima, determine todos os valores que estão faltando e que estão representados pelas letras de 'a' até 'j', observando a mudança nas placas de velocidade do carro antes de perceber o obstáculo e decidir freiar.
+
+.. figure:: _resources/Frenagem_Exercicio.png
+   :width: 450pt
+   :align: center
+   
+
+   
+   
+.. admonition:: Resposta 
+
+   #. `80 \div 3,6 = \frac{200}{9} \approx 22`. Assim, o carro se desloca aproximadamente 22m nesse segundo.
+   
+   #. `57-22 = 35` m.
+   
+   #. `D=kv^2`
+   
+   #. `k=\frac{D}{v^2} \Leftrightarrow k=\frac{35}{80^2} \Leftrightarrow k=\frac{7}{1280} \Rightarrow k \approx 0,0055`.
+   
+   #. Não.
+   
+   #. `a=25` m; `b \approx 45` m; `c = 70` m; `f \approx 28` m; `g=55` m; `h=83` m. Os valores a serem preenchidos na faixa azul de pista molhada exigem uma outra relação de `D` e `v`: `\frac{D}{v^2}=\frac{71}{80^2} \Leftrightarrow \frac{D}{v^2}=\frac{71}{6400} \Rightarrow D = 0,01 \cdot v^2`, aproximadamente. Assim, `d=81` m; `e=106` m; `i=100` m; `j=128` m.
+
+   Na prática, para manter uma distância segura entre os carros e evitar o "engavetamento", aconselha-se seguir a regra dos dois segundos:
+   
+   - *Observe a estrada à sua frente e escolha um ponto fixo de referência (à margem) como uma árvore, placa, poste, casa, etc.*
+
+   - *Quando o veículo que está à sua frente passar por este ponto, comece a contar pausadamente: cinqüenta e um, cinqüenta e dois. (mais ou menos dois segundos).*
+
+   - *Se o seu veículo passar pelo ponto de referência antes de contar (cinqüenta e um e cinqüenta e dois), deve aumentar a distância, diminuindo a velocidade, para ficar em segurança.*
+
+   - *Se o seu veículo passar pelo ponto de referência após você ter falado as seis palavras, significa que a sua distância, é segura.* [DetranPR]_
+
