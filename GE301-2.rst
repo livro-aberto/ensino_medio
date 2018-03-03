@@ -39,7 +39,8 @@ Atividade: comprimentos em projeções em perspectiva
    
    * O uso do conceito de função nesta atividade não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. Observe, por exemplo, como a notação funcional permite compactar informação: no lugar de falar "Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item?", basta falar "Qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?". No espírito da :ref:`ativ-funcoes-enchendo-o-cone`, é importante articular as representações em linguagem natural e a linguagem funcional e explicitar para o alunos as vantagens e desvantagens de cada representação.
    
-   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática.
+   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5>,
+   <https://www.geogebra.org/m/SubrgSmG> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática.
    
 Coloque os seus dois dedos indicadores um do lado do outro. Eles têm o mesmo tamanho, não é? Agora afaste um deles. Seus dedos continuam com o mesmo tamanho? Sim, mas você **vê** o dedo que está mais longe menor, não é? Esta propriedade pode ser explicada via projeções em perspectiva e a exploraremos nesta atividade.
 
@@ -95,7 +96,7 @@ Justifique todas as respostas!
       Uma variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/u4mkzbmP>).
 
 
-#. E se, agora, ao invés de um paralelogramo, o quadrilátero `ARSB` fosse um paralelogramo qualquer paralelo ao plano `\pi`? O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. E se, agora, ao invés de um retângulo, o quadrilátero `ARSB` fosse um paralelogramo qualquer paralelo ao plano `\pi`? O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 
    .. _fig-proj-comprimento-03:
    
@@ -103,13 +104,27 @@ Justifique todas as respostas!
       
       Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/UGFWgAQ5>).
 
-#. Vamos generalizar um pouco mais: agora, `RS` é um segmento qualquer que satisfaz duas condições: (1) seu comprimento é igual ao comprimento `h` do segmento `AB` e (2) `RS` está contido o plano `\omega` que é paralelo a `\pi` e contém o segmento `AB`. O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS` neste caso? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+   .. Talvez colocar aqui uma sugestão de um item anterior fazendo o caso em que `R = A` e `S` gira em torno de `R`. Isto ajudará na demonstração do item seguinte, no sentido de escolher uma direção que coloque a situação `girada` na situação padrão.        
+   
+   
+#.  Nos dois itens anteriores, o segmento `RS` foi considerado como paralelo ao segmento `AB`. Vamos relaxar esta hipótese, considerando que `RS` não precisa ser paralelo a `AB`, mas que (1) `RS` tem o mesmo comprimento `h` de `AB`, (2) `R = A` e (3) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+      .. _fig-proj-comprimento-05:
+
+      .. figure:: _resources/perspectiva-comprimento-05_1.jpg
+      
+         Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/SubrgSmG>).
+
+#. Vamos generalizar um pouco mais: agora, `RS` é um segmento qualquer que satisfaz duas condições: (1) seu comprimento é igual ao comprimento `h` do segmento `AB` e (2) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 
    .. _fig-proj-comprimento-04:
    
-   .. figure:: _resources/perspectiva-comprimento-04_1.jpg
+   .. figure:: _resources/perspectiva-comprimento-04_2.jpg
       
       Ainda outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/Du4285XX>).
+      
+#. Verdadeiro ou falso? Se `RS` é um segmento que é paralelo ao plano de projeção `\pi`, então sua projeção sobre `\pi` com relação a um centro `O` depende apenas de dois números: a distância `d` de `O` ao plano `\pi` e da distância `x` de `O` ao plano `\omega` que é paralelo a `\pi` e que passa por `R`.      
       
 Justifique todas as respostas!      
       
