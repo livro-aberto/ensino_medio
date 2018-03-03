@@ -1,0 +1,111 @@
+.. _sec-org-ideias5:
+
+**********************************************************
+Organizando as ideias: interseção com os eixos coordenados
+**********************************************************
+
+Em atividades anteriores, observamos as mudanças ocorridas no gráfico de uma funçao quadrática em sua forma canônica. Ao observarmos essa função definida em sua forma polinomial, também conseguimos perceber a influência que cada um de seus coeficientes (`a`, `b` e  `c`) tem na posição do gráfico da função. 
+
+Dada a função real `f` definida por `f(x)=ax^2+bx+c`, podemos descobrir em quais pontos `f` intersecta os eixos coordenados:
+
+#. **O eixo das ordenadas**
+   
+   Todo ponto pertencente ao eixo das ordenadas possui coordenada `x=0`, logo `P=(0,f(0))` pertence à parábola e ao eixo dadas ordenadas com `P=(0,c)`, pois:
+   
+   `f(0)=a\cdot(0)^2+b\cdot0 + c = 0 + 0 + c = c`
+
+#. **O eixo das abscissas**
+   
+   Todo ponto pertencente ao eixo das abscissas possui coordenada `f(x)=0`, logo `P=(x,0)` pertence à parábola e ao eixo das abscissas. E quando substituímos `f(x)` por `0` , temos uma equação do segundo grau, ela pode ser resolvida por diversas maneiras, a mais comum utilizando a fórmula quadrática, conhecida no Brasil erroneamente por fórmula de Báskara:
+   
+   `x=\frac{-b\pm\sqrt{\Delta}}{2a}`  onde `\Delta=b^2-4ac`
+   
+   Ao resolvermos a equação quadrática é possível que encontremos os **zeros da função**, termo utilizado para os valores de `x` que fazem `f(x)` ser nula, `f(x)=0`. Neste caso obteremos o(s) ponto(s) em que o gráfico da função intersecta o eixo das abscissas.
+   
+   Analisemos o sinal de `\Delta`
+   
+   **Caso** `1)` Para `\Delta>0` , teremos na fórmula quadrática, uma raiz quadrada de um número positivo, sendo seu resultado um número real positivo qualquer (inteiro, racional não inteiro ou irracional), ao somarmos esse valor com `-b` e dividirmos o resultado por `2a`,  encontraremos um dos zeros da função `f` que chamaremos de `x_1`; ao subtrairmos esse valor de `-b` e dividirmos o resultado por `2a`, teremos o outro zero da função `f` que chamaremos de `x_2`, sendo: `x_1= \frac{-b+\sqrt{\Delta}}{2a}` e `x_2=\frac{-b-\sqrt{\Delta}}{2a}`
+   
+   Portanto a parábola (gráfico de `f`) intersectará o eixo das abscissas em dois pontos: `P_1=(x_1,0)`  e `P_2=(x_2,0)`
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_pos.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta>0`)
+   
+   **Caso** `2)` Para `\Delta=0` , teremos na fórmula quadrática, uma raiz quadrada de zero, que resulta em zero, e somar ou subtrair `0` de `-b` acharemos sempre `-b`, resultando assim num único zero de `f`, no caso: `x= \frac{-b\pm\sqrt{0}}{2a}=\frac{-b\pm0}{2a}=\frac{-b}{2a}=p=x_v`. Note que esta expressão é a mesma apresentada anteriormente para a coordenada `x` do vértice da parábola.
+   
+   Portanto a parábola (gráfico de `f`) "tocará" no eixo das abscissas em apenas um ponto: `V=(\frac{-b}{2a},0)`. Ou melhor, o eixo das abscissas será tangente à parábola no ponto `V`.
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_zero.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta=0`)
+   
+   **Caso** `3)` Para `\Delta<0` , teremos na fórmula quadrática, uma raiz quadrada de um número real negativo, que resulta no fato de não existir um valor de `x` real que atenda essa equação quadrática. Sendo assim o gráfico nem toca nem intersecta o eixo das abscissas, logo a função `f` não possuirá zeros.
+   
+   Portanto a parábola (gráfico de `f`) ficará posicionada totalmente acima (`a>0`) ou abaixo (`a<0`) do eixo das abscissas.
+   
+   
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/delta_neg.jpg
+      :width: 400pt
+      :align: center
+
+      (`\Delta<0`)
+   
+Vale ressaltar que uma função quadrática `f:\mathbb{R}\to\mathbb{R}` definida em sua forma polinomial por: `f(x)=ax^2+bx+c`, além de poder ser representada em sua forma canônica: `f(x)=a(x-p)^2+q`, também pode ser escrita em sua forma fatorada: `f(x)=a(x-x_1)(x-x_2)` , onde `x_1` e `x_2` são os zeros de `f`.
+
+Exemplo `1` : Seja a função real `f` definida por `f(x) = x^2 - 6x + 8` representada graficamente por:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/ex1.jpg
+   :width: 300pt
+   :align: center
+
+   (`f(x) = x^2 - 6x + 8`)
+   
+Note que suas raízes são `x_1=2` e `x_2=4` (podemos descobrir esses valoress utilizando a fórmula quadrática), note que a forma fatorada de `f` será:
+
+`f(x)=(x-2)(x-4)` 
+
+Para retornarmos para a forma polinomial basta efetuarmos o produto indicado.
+
+
+Exemplo 2: Seja a função real `f` definida por `f(x) = -2x^2 +4x + 6` representada graficamente por:
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/ex2.jpg
+   :width: 300pt
+   :align: center
+
+   (`f(x) = -2x^2 +4x + 6`)
+   
+Note que suas raízes são `x_1=3` e `x_2=-1` (podemos descobrir esses valores utilizando a fórmula quadrática), note que a forma fatorada de `f` será:
+
+`f(x)=a(x-3)(x+1)` 
+
+Substituindo o ponto `(0,6)` temos:
+
+`6=a(0-3)(0+1)` 
+
+`6=-3a`
+
+`a=-2`
+
+Portanto, `f` na sua forma fatorada será dada por:`f(x)=-2(x-3)(x+1)` 
+
+Para retornarmos para a forma polinomial basta efetuarmos o produto indicado.

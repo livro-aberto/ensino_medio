@@ -1,0 +1,85 @@
+.. _sub-Org-Ideias-MUV-Graf-para-Lei:
+
+*********************
+Organizando as ideias
+*********************
+
+Nesta seção vimos como obter a lei de formação de algumas funções quadráticas através de alguns dados iniciais. A forma escolhida para a lei de formação depende de cada informação dada, mas isso pode ser generalizado conforme passamos a apresentar. 
+
+**Uso da forma** `f(x)=a(x-p)^2+q`
+
+Essa forma necessita de apenas duas coordenadas da parábola: o vértice que fornece `p` e `q`, e uma outra coordenada qualquer para que seja montada a equação que fornece o `a`.
+
+Supondo que essa outra coordenada é `(\kappa,\lambda)` teremos:
+
+.. math::
+   
+   a \cdot ( \kappa -p)^2+q= \lambda & \Rightarrow a \cdot ( \kappa -p)^2 = \lambda -q \\
+                       & \Rightarrow a = \frac{\lambda -q}{( \kappa -p)^2}\\
+                       
+Assim, fica concluida a tarefa de determinar a lei de formação procurada.
+
+**Uso da forma** `f(x)=a(x-x_1)(x-x_2)`
+
+Aqui há a necessidade de três coordenadas, sendo os dois **zeros da função**, ou seja, ambos os valores devem existir e precisam ser diferentes; a terceira coordenada pode ser outra qualquer, incluindo o vértice. Contudo, dispondo do vértice a técnica anterior resulta num caminho mais rápido.
+
+Aqui, mais uma vez, o `a` fica sendo o valor desconhecido a ser determinado com a terceira coordenada citada, vamos supor que ela seja `(\kappa,\lambda)`. Assim,
+
+.. math::
+   
+   a\cdot (\kappa -x_1) \cdot (\kappa -x_2) = \lambda \Rightarrow a= \frac{\lambda}{(\kappa-x_1) \cdot (\kappa-x_2)}
+
+**Uso da forma** `f(x)=ax^2+bx+c`
+
+Se as coordenadas fornecidas não apresentarem nenhuma das particularidades relatas nos casos anteriores, o caminho será o apresentado aqui. A utilização dos símbolos para representar os valores conhecidos ficariam pouco atrativo e não apresentariam uma simplificação digna de nota. Por esse motivo vamos seguir com um exemplo.
+
+.. admonition:: Exemplo 
+
+   Uma equipe técnica está analisando máquinas que arremessam bolas de tênis para decidir qual a mais adequada às necessidades de treinamento dos atletas dessa equipe.
+   
+   .. figure:: _resources/videotogif_2018.02.17_16.08.41.*
+      :width: 200pt
+      :align: center
+   
+   Com instrumento adequado, sem vento, eles mediram a altura da bola em alguns instantes de tempo, conforme tabela.
+   
+   +-------------------+-----+------+------+
+   | Tempo em segundos | `1` | `2`  | `3`  |
+   +-------------------+-----+------+------+
+   | Altura em metros  | `7` | `11` | `13` |
+   +-------------------+-----+------+------+
+   
+   Sem vento, podemos considerar a trajetória da bola ao longo do tempo como uma parábola. Logo, as três coordenadas apresentadas na tabela permitem a determinação da função quadrática que dá a altura da bola em função do tempo.
+   
+   Não sabemos se um desses pontos é o vértice e, com certeza, nenhum deles é zero da função. Teremos que utilizar a forma `f(x)=ax^2+bx+c`. Com os dados da tabela, obtemos três equações para `a`, `b` e `c`:
+   
+   .. math::
+      
+      a \cdot (1)^2+b \cdot (1)+c=7 \Rightarrow a+b+c=6 \;\;\;\;\;\; & [1] \\
+      a \cdot (2)^2+b \cdot (2)+c=11 \Rightarrow 4a+2b+c=11 \;\;\;\;\;\; & [2] \\
+      a \cdot (3)^2+b \cdot (3)+c=13 \Rightarrow 9a+3b+c=13 \;\;\;\;\;\; & [3] \\
+   
+   Subtraindo `[2]-[1]` e `[3]-[2]` obtemos outras duas equações, mas desta só para `a` e `b`:
+   
+   .. math::
+      
+      3a+b=10-6 \Rightarrow 3a+b=4 \;\;\;\;\;\; & [4] \\
+      5a+b=12-10 \Rightarrow 5a+b=2 \;\;\;\;\;\; & [5] \\
+      
+   Subtraindo `[5]-[4]` ou percebendo que `[5]` é igual `2a+(3a+b)=2` chega-se na mesma conclusão, `2a=-2 \Rightarrow a=-1`.
+   
+   Substituindo esse resultado em `[4]`, temos que `3 \cdot (-1)+b=4 \Rightarrow b=7`.
+   
+   Por fim, ao usar estes valores em `[1]` encontramos `(-1)+(7)+c=7 \Rightarrow c=1`.
+   
+   Assim, a função quadrática que dá a altura `h` da bola em função do tempo `t` para o arremesso analisado é `h(t)=-t^2+7t+1`.
+   
+   Com essa função podemos determinar de que altura a bola foi lançada, quanto tempo ela ficou no ar e até altura máxima que atingiu. Tente!
+   
+.. admonition:: Resposta 
+
+   #. Fazendo `t=0` temos `h(0)=1`, portanto a bola foi laçada de uma altura de `1` m.
+   
+   #. Para `h(t)=0`, temos `-t^2+7t+1=0 \Rightarrow t= \frac{7 \pm \sqrt{53}}{2}`, que tem resultado positivo aproximado de `7,14` segundos. Esse foi o tempo total da bola no ar.
+   
+   #. A bola atinge sua altura máxima em `-\frac{7}{2 \cdot (-1)}= 3,5` segundos. Logo, sua altura máxima foi `h(3,5)=-(3,5)^2+7 \cdot (3,5)+1=- \frac{53}{4 \cdot (-1)} = 13,25` metros.

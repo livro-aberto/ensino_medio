@@ -1,0 +1,278 @@
+.. _sec-obtendo-lei-do-grafico:
+
+***************************************************************
+Explorando: determinando a função quadrática através do gráfico
+***************************************************************
+   
+.. _sub-Atividade-Altura-do-Arco:
+
+Atividade: altura do arco da praça da Apoteose
+-----------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+   
+   #. Relacionar, a partir de dados gráficos, qual a forma da função quadrática que melhor descreve a situação.
+   
+   #. Associar situações concretas à forma da parábola e buscar soluções a partir da aplicação das ferramentas da função quadrática.
+   
+   #. Inferir sobre a utilidade da função quadrática no cotidiano.
+   
+   #. Distinguir em problemas concretos o papel de abscissa e ordenada para a representação gráfica da parábola.
+   
+   **Observações e Recomendações**
+   
+   Como um dos objetivos principais deste conjunto de atividades é trazer alguma sugestão de aplicação ou contextualização do tema, todos os enunciados apresentam um texto de motivação ou ambientação. 
+   
+   Além disso, as atividades tem um apelo mais visual, no sentido de conectar a função quadrática à sua representação gráfica, a parábola. Sendo assim, em todos os casos apresentados, o estudante deve fazer a escolha do sistema de coordenadas cartesiamos q	ue melhor se adequa à situação apresentada e, a partir daí usar os conteúdos estudados para responder às questões sobre a situação apresentada.
+   
+   Orientamos o professor a calcular o tempo das atividades levando em conta a possibilidade de um aluno não seguir o caminho que as respostas das atividades sugerem para que eles entendam as dificuldades que essas escolhas trazem. Isso será, certamente, tão importante quanto a resposta prevista em si.
+   
+   Para cada sugestão gráfica apresentada para desenvolver o problema, deixe que os alunos argumente o porque de suas escolhas e peça para aqueles que escolheram a forma que sugerimos nas respostas argumente sobre sua escolha.
+   
+   Mesmo esse grupo de atividades sendo único, adicionamos à última atividade um texto sobre jogos eletrônicos e seus uso em sala de aula. Posto aqui, as orientações ficariam maiores do que o necessário e no tempo errado. 
+   
+
+A passarela Professor Darcy Ribeiro `(\star 1922, \dagger 1997)`, mais conhecida como Sambódromo, fica na cidade do Rio de Janeiro e foi construida em 1984. Com projeto arquitetônico de Oscar Niemeyer `(\star 1907, \dagger 2012)`, ela foi concebida para ser o local fixo de uma das maiores festas populares do Brasil, o Carnaval. Ao final da passarela, encontra-se a praça da apoteose, com o museu do samba e um enorme arco cujo formato lembra o de uma parábola. 
+
+.. figure:: https://images.adsttc.com/adbr001cdn.archdaily.net/wp-content/uploads/2012/02/1329492836_riodejaneiro_sambodromo15.jpg
+   :width: 350 pt
+   :align: center
+
+
+Em `2011`, pela primeira vez desde a construção, a prefeitura providenciou a limpeza do arco.  
+
+.. figure:: https://extra.globo.com/noticias/rio/1077268-c89-c80/w367h550-PROP/02_15_gvg_rio_lavagem10.jpg
+   :width: 200pt
+   :align: center
+   
+   `Banho nos arcos do Sambódromo <https://extra.globo.com/noticias/rio/banho-nos-arcos-do-sambodromo-1077277.html>`_
+
+A empresa que foi contratada para fazer essa limpeza, precisou ter uma estimativa da altura do arco, com a finalidade de saber se seu equipamento seria suficiente para a tarefa, já que a altura máxima que o equipamento suportaria, seria de `40` m de altura. Uma busca rápida na internet não forneceu o resultado esperado, apenas que o comprimento da base é de `50` m. Sendo assim, a estimativa teve que ser feita através de cálculos. Admitindo por aproximação que o arco seja parabólico, faça o que se pede:
+
+#. Quantas informações concretas são fornecidas para esta parábola?
+
+#. Caso você soubesse a função que descreve essa parábola, você seria capaz de determinar a altura aproximada do arco?
+
+#. Dentre as opções a seguir marque a que faz o rascunho do arco no plano cartesiano.
+
+   .. figure:: _resources/Ativ6_C_unico.png
+      :width: 400pt
+      :align: center
+
+#. Para essa escolha, qual o significado dos valores de `x` e de `y`?
+
+#. Que pontos do plano cartesiano são conhecidos, se juntarmos a escolha gráfica com os dados fornecidos sobre o arco?
+
+#. Com base em sua escolha do rascunho gráfico mais adequado e considerando os pontos conhecidos da parábola, qual forma da função quadrática resulta em maior quantidade de informações conhecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Quantos dados estão faltando para que seja conhecida a função que descreve esta parábola?
+
+#. Com o auxílio da calculadora gráfica em: `Estimando a parábola <https://ggbm.at/VFR6nWHM>`_ obtenha a informação que falta para obter a função que descreve a parábola.
+   
+   .. figure:: _resources/Sambodromo_Geogebra.*
+      :width: 400pt
+      :align: center
+
+#. Qual a altura estimada para a altura do arco?
+
+#. A empresa contratada para a limpeza do arco teve capacidade de concluir o serviço com o equipamento que possuia?
+
+.. admonition:: Resposta 
+
+   #. Apenas o comprimento da base, de `50` m.
+   
+   #. Sim, seria a imagem do vértice.
+   
+   #. Figura 2, pois a base do "arco" foi rascunhado sobre o eixo `x` e a altura procurada está sobre o eixo `y`.
+   
+   #. `x` pontos na base do arco e `y` medidas referentes às alturas de cada ponto da base do arco.
+   
+   #. `(-25,0)` e `(25,0)`.
+   
+   #. `f(x)=a(x-x_1)(x-x_2)`
+   
+   #. Apenas um, o `a`.
+   
+   #. `a=-0,04`, portanto `f(x)=-0,04(x+25)(x-25)`.
+   
+   #. A altura aproximada do arco acontece para `x=0`. Assim, `f(0)=-0,04(0+25)(0-25)=-0,04 \dot (-625)=25` m.
+   
+   #. Sim.
+   
+   **Nota**: Dentre as informações pesquisadas sobre a altura real desse arco, os autores encontraram `25` m, `26` m e até `30` m.
+   
+.. _Atividade do Túnel
+Atividade: Mãos a obra!
+-------
+   
+A prefeitura de uma cidade, com o fim de melhorar as atividades comerciais locais, fez um levantamento com produtores, fornecedores e compradores. Ficou claro que a redução no percurso até a cidade beneficiaria a todos. Por esse motivo, a prefeitura encomendou a contrução de uma nova estrada, que exigiria dois túneis em certo trecho, um para cada sentido da estrada. O formato das entradas ou das saídas dos túneis, a pedido da prefeitura, deverão ser arcos parabólicos. 
+
+.. figure:: _resources/Ativ7_Esboco_Tuneis.jpg
+   :width: 200pt
+   :align: center
+
+Limitações geológicas impedem que as alturas dos túneis sejam maiores do que `5` m e cada túnel deve permitir a passagem de caminhões comerciais, que tem `4,3` m de altura e `2,6` m de largura. Além disso, para que os caminhões não arrastem pelas paredes dos túneis, uma largura extra de `0,4` m deverá ser considerada conforme o rascunho a seguir.
+
+.. figure:: _resources/Ativ7_Rascunho.png
+   :width: 300pt
+   :align: center
+
+Por fim, o projeto dos túneis deve satisfazer as condições mínimas apresentadas por questões econômicas. Sendo assim, a empresa deve calcular a largura das bases das entradas ou saídas dos túneis. [Para simplificar o texto, as medidas das entradas ou saídas dos túneis serão tratatas apenas por *medidas dos túneis*.]
+
+#. Caso você conhecesse a função que descreve essa parábola, você seria capaz de calcular a largura da base dos túneis?
+
+#. Dentre as opções a seguir marque a que faz o rascunho de um dos túneis no plano cartesiano.
+
+   .. figure:: _resources/Ativ6_C_unico.png
+      :width: 400pt
+      :align: center
+
+#. Para essa escolha, qual o significado dos valores de `x` e de `y`?
+
+#. Que pontos do plano cartesiano são conhecidos, se juntarmos a escolha gráfica com os dados fornecidos as medidas dos túneis?
+
+#. Com base em sua escolha do rascunho gráfico mais adequado e considerando os pontos conhecidos da parábola, qual forma da função quadrática resulta em maior quantidade de informações conhecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Quantos dados estão faltando para que seja conhecida a função que descreve esta parábola?
+
+#. Com alguma coordenada ainda não utilizada desta curva, determine a informação que falta para conhecer a função que descreve esta parábola.
+
+#. Determine, segundo esse plano cartesiano, as coordenadas das extremidades das bases desses túneis [Se julgar útil, use apenas a aproximação `\sqrt{14}=3,75`].
+
+#. Com tudo que foi feito, qual a largudas das bases desses túneis?
+
+.. admonition:: Resposta
+
+   #. Sim.
+   
+   #. Figura 2.
+   
+   #. Em `x` temos medidas que se referem a base dos túneis e em `y` temos para cada ponto das bases, as alturas relativas na curva.
+
+   #. `(\ -\frac{2,6+0,4}{2};4,3)\ = (-1,5;4,3)`, `(0,5)` e `(\ \frac{2,6+0,4}{2};4,3)\ = (1,5;4,3)`.
+
+   #. `f(x)=a(x-p)^2+q`.
+
+   #. Somente um, o valor de `a`.
+   
+   #. 
+      .. math::
+            f(1,5)= a \cdot (1,5-0)^2+5=4,3 & \Rightarrow \\
+                  & \Rightarrow 2,25 \cdot a = 4,3-5 \\
+                  & \Rightarrow a = \frac{-0,7}{2,25} \\
+                  & \Rightarrow a = - \frac{14}{45}. \\
+
+   #. 
+       .. math::
+           - \frac{14}{45} x^2 + 5 = 0 & \Rightarrow \frac{14}{45} x^2 = 5 \\
+           & \Rightarrow x^2 = \frac{45 \cdot 5}{14} \Rightarrow x= \pm \sqrt{\frac{225}{14}} \\ 
+           & \Rightarrow x = \pm \frac{\sqrt{225}}{\sqrt{14}} \Rightarrow x = \pm \frac{15}{3,75} \\ 
+           & \Rightarrow x = \pm 4. \\ 
+       
+       Portanto, as coordenadas das extremidades das bases são `(-4,0)` e `(4,0)`. 
+   
+   #. As larguras das bases dos túneis deverão ser iguais a `2 \cdot 4 = 8` m.
+
+
+.. _Atividade Angry Birds
+Atividade: A jogada vencedora
+------
+
+.. admonition:: Para o professor
+
+   Os jogos eletrônicos constituem ótimos laboratórios de aprendizagem por simular situações que podem ir assumindo toda a complexidade da realidade aos poucos, uma "variável" por vez. De acordo com [WANG]_, jogos de computador podem criar ambientes e mundos que de outra forma seriam inacessíveis aos estudantes.
+   
+   Existe disponível na internet diversos projetos que envolvem o uso do jogo Angry Birds para o estudo das parábolas e lançamentos oblíquos. Por exemplo, `Transforming Parabolas – The Angry Birds Project <https://algebra2coach.com/transforming-parabolas-angry-birds-project/>`_ e `Transforming Parabolas – The Angry Birds Project <https://www.tes.com/teaching-resource/angry-bird-parabolas-graphing-quadratic-equations-6165424>`_.
+   
+Vamos trabalhar aqui com um famoso jogo que simula lançamento de objetos. No caso, são "pássaros" caricaturados em formato de personagens de cinema que tem que impedir o plano dos "porcos verdes" de roubarem seus ovos e trazer destruição ao universo. A "variável" resistência do ar, por exemplo, não está incluída em boa parte das fases deste jogo.
+
+.. figure:: _resources/videotogif_2018.02.16_16.10.40.*
+   :width: 300pt
+   :align: center
+
+Digamos que o programador de uma das fases decida, dentre todos os possíveis lançamentos, um que forneça a maior quantidade de pontos possível para a fase. Entendendo a tela como um plano cartesiano, o programador deve escolher a parábola que representará a "Jogada Vencedora". A figura a seguir ilustra a situação.
+
+.. figure:: _resources/AB_Plano_Cartesiano.png
+   :width: 300pt
+   :align: center
+
+Com a finalidade de inserir na programação a função que descreve a "Jogada Vencedora" o programador usou três coordenadas como referência: o pássaro e os dois "sóis", cujas coordenadas estão destacadas a seguir.
+
+.. figure:: _resources/AB_Coordenadas.png
+   :width: 300pt
+   :align: center
+
+#. Quais são as coordenadas indicadas no gráfico pelo programador?
+
+#. Quais os significados dos valores de `x` e de `y` neste contexto?
+
+#. Das formas da função quadrática apresentadas a seguir, qual delas parece mais adequada diante das informações fornecidas?
+   
+   `\Box \; f(x)=ax^2+bx+c`
+   
+   `\Box \; f(x)=a(x-p)^2+q`
+   
+   `\Box \; f(x)=a(x-x_1)(x-x_2)`
+
+#. Substituido a origem na forma escolhida do item anterior, qual a conclusão?
+
+#. Faça o mesmo para as outras duas coordenadas, mas considere também o que você concluiu no item anterior, e obtenha duas equações diferentes com variáveis `a` e `b`.
+
+#. Nas equações apresentadas no item anterior, uma tem um `49` e outra tem um `25`. Multiplique a do `49` por `25` e a do `25` por `49`. Depois subtrai, membro a membro, os resultados. Qual a conclusão?
+
+#. Mais uma vez vamos pegar as equações do item 'e'. Repare que uma tem um coeficiente `7` e a outra tem um coeficiente `5`. Multiplique a do `7` por `5` e a do `5` por `7`. Depois subtrai, membro a membro, os resultados. Qual a conclusão?
+
+#. Qual a função que o programador vai inserir como a "Jogada Vencedora"?
+
+.. admonition:: Resposta
+
+   #. `(0,0)`, `(5,3)` e `(7,1)`.
+   
+   #. `x` será o deslocamento horizontal do pássaro após o lançamento e `y` será a altura do pássaro em relação ao eixo `x` durante o arremesso.
+   
+   #. `f(x)=ax^2+bx+c`.
+   
+   #. `f(0)=a \cdot 0^2+b \cdot 0+c=0 \Rightarrow c=0`.
+   
+   #. 
+      .. math::
+         
+         f(5)& =a \cdot 5^2+b \cdot 5+0=3 \Rightarrow 25a+5b=3 \\
+         
+         f(7)& =a \cdot 7^2+b \cdot 7+0=1 \Rightarrow 49a+7b=1 \\
+   
+   #. 
+      .. math::
+         
+         49 \cdot 25a+ 49 \cdot 5b= 49 \cdot 3 & \Rightarrow 1225a+245b=147 \\
+         
+         25 \cdot 49a+ 25 \cdot 7b = 25 \cdot 1 & \Rightarrow 1225a+175b=25 \\
+         
+         (245-175) \cdot b = 147-25 & \Rightarrow b= \frac{122}{70} \Rightarrow b= \frac{61}{35} \\
+         
+   #. 
+      .. math::
+         
+         7 \cdot 25a+ 7 \cdot 5b= 7 \cdot 3 & \Rightarrow 175a+35b=21 \\
+         
+         5 \cdot 49a+ 5 \cdot 7b = 5 \cdot 1 & \Rightarrow 245a+35b=5 \\
+         
+         (245-175) \cdot a = 5-21 & \Rightarrow a= - \frac{16}{70} \Rightarrow a=- \frac{8}{35} \\
+               
+   #. `f(x)= - \frac{8}{35}x^2+ \frac{61}{35}x`.
+   
