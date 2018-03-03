@@ -39,7 +39,8 @@ Atividade: comprimentos em projeções em perspectiva
    
    * O uso do conceito de função nesta atividade não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. Observe, por exemplo, como a notação funcional permite compactar informação: no lugar de falar "Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item?", basta falar "Qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?". No espírito da :ref:`ativ-funcoes-enchendo-o-cone`, é importante articular as representações em linguagem natural e a linguagem funcional e explicitar para o alunos as vantagens e desvantagens de cada representação.
    
-   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`
+   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5>,
+   <https://www.geogebra.org/m/SubrgSmG> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática.
    
 Coloque os seus dois dedos indicadores um do lado do outro. Eles têm o mesmo tamanho, não é? Agora afaste um deles. Seus dedos continuam com o mesmo tamanho? Sim, mas você **vê** o dedo que está mais longe menor, não é? Esta propriedade pode ser explicada via projeções em perspectiva e a exploraremos nesta atividade.
 
@@ -95,7 +96,7 @@ Justifique todas as respostas!
       Uma variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/u4mkzbmP>).
 
 
-#. E se, agora, ao invés de um paralelogramo, o quadrilátero `ARSB` fosse um paralelogramo qualquer paralelo ao plano `\pi`? O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. E se, agora, ao invés de um retângulo, o quadrilátero `ARSB` fosse um paralelogramo qualquer paralelo ao plano `\pi`? O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 
    .. _fig-proj-comprimento-03:
    
@@ -103,13 +104,27 @@ Justifique todas as respostas!
       
       Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/UGFWgAQ5>).
 
-#. Vamos generalizar um pouco mais: agora, `RS` é um segmento qualquer que satisfaz duas condições: (1) seu comprimento é igual ao comprimento `h` do segmento `AB` e (2) `RS` está contido o plano `\omega` que é paralelo a `\pi` e contém o segmento `AB`. O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS` neste caso? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+   .. Talvez colocar aqui uma sugestão de um item anterior fazendo o caso em que `R = A` e `S` gira em torno de `R`. Isto ajudará na demonstração do item seguinte, no sentido de escolher uma direção que coloque a situação `girada` na situação padrão.        
+   
+   
+#.  Nos dois itens anteriores, o segmento `RS` foi considerado como paralelo ao segmento `AB`. Vamos relaxar esta hipótese, considerando que `RS` não precisa ser paralelo a `AB`, mas que (1) `RS` tem o mesmo comprimento `h` de `AB`, (2) `R = A` e (3) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+      .. _fig-proj-comprimento-05:
+
+      .. figure:: _resources/perspectiva-comprimento-05_1.jpg
+      
+         Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/SubrgSmG>).
+
+#. Vamos generalizar um pouco mais: agora, `RS` é um segmento qualquer que satisfaz duas condições: (1) seu comprimento é igual ao comprimento `h` do segmento `AB` e (2) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 
    .. _fig-proj-comprimento-04:
    
-   .. figure:: _resources/perspectiva-comprimento-04_1.jpg
+   .. figure:: _resources/perspectiva-comprimento-04_2.jpg
       
       Ainda outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/Du4285XX>).
+      
+#. Verdadeiro ou falso? Se `RS` é um segmento que é paralelo ao plano de projeção `\pi`, então sua projeção sobre `\pi` com relação a um centro `O` depende apenas de dois números: a distância `d` de `O` ao plano `\pi` e da distância `x` de `O` ao plano `\omega` que é paralelo a `\pi` e que passa por `R`.      
       
 Justifique todas as respostas!      
       
@@ -118,4 +133,67 @@ Justifique todas as respostas!
 As Etapas 1, 2 e 3 trataram da relação entre os comprimentos de segmentos de retas paralelos ao plano de projeção e os comprimentos de suas *projeções em perspectiva* nesse plano. O que dizer de projeções paralelas? Isto é, qual é a relação entre os comprimentos de segmentos de retas paralelos ao plano de projeção e os comprimentos de suas *projeções paralelas* nesse plano? Faça uma conjectura e justifique-a!
 
 **PARTE 2**      
+
+.. admonition:: Resposta
+
+   **PARTE 1.**
+   
+   **Pergunta 1.** 
+   
+   #. Como os triângulos `OB'A'` e `OBA` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
+   
+      .. math::
+
+         \frac{h'}{3}=\frac26 \Leftrightarrow h'=1.
+      
+   #. Novamente usando a razão de semelhança entre os triângulos `OB'A'` e `OBA`, mas agora sem substituir o valor de `x` temos:
+    
+      .. math::
+
+         \frac{h'}{3}=\frac{2}{x} \Longleftrightarrow h'=\frac6x.
+      
+      Assim, a função procurada é `f(x)=\frac{6}{x}`. Note que, como esta função modela a situação apresentada na figura, os valores de `x` devem ser apenas positivos, pois `x` é a distância de `O` até `A`. Além disso, `O` não pode coincidir com `A'`, o que implica que x também não pode ser `0`. Portanto, o domínio da função `f` é o intervalo `]0,\infty[`.
+      
+   #. Se `f(x) = \frac12 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = \frac12 \cdot 1 \Longleftrightarrow x = 12.
+         
+   #. Se `f(x) = 2 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = 2 \cdot 1 \Longleftrightarrow x = 3.
+         
+   #. Se `f(x)=h`, então `\frac6x=2`. Logo, `x=3`. No contexto das imagens dos dedos, podemos dizer que os dois dedos estão sobre plano de projeção. 
+   
+      Se `f(x)>h`, então `\frac6x>2`. Logo, `x<3`. No contexto das imagens dos dedos, isto significa que os dedos estão posicionados antes do plano de projeção, ou seja, entre o observador e o plano de projeção. Neste caso, o tamanho da projeção dos dedos no plano de projeção seria maior que o tamanho dos próprios dedos. 
+      
+      Se `f(x)<h`, então `\frac6x<2`. Logo, `x>3`. No contexto das imagens dos dedos, isto quer dizer que o objeto está posicionado após o plano de projeção. Assim, sua projeção terá tamanho menor que o tamanho dos dedos. 
+      
+   #. Se existissem `x_1` e `x_2` tais que `f(x_1)=f(x_2)`, então teríamos    
+   
+      .. math::
+         
+         \begin{array}{ll}
+         & \frac{6}{x_1} = \frac{6}{x_2} \\
+         \Longleftrightarrow & 6x_1 = 6x_2 \\
+         \Longleftrightarrow & 6(x_1 - x_2)=0 \\
+         \Longleftrightarrow & x_1 = x_2.
+         \end{array}
+         
+      Portanto, se `f(x_1)=f(x_2)`, então `x_1 = x_2`. No contexto das imagens dos dedos, isto significa que se a projeção dos dois dedos possui o mesmo tamanho, então eles estão a uma mesma distância do plano de projeção.
+      
+   #. Se os valores de `x` vão ficando arbritariamente grandes, então os valores correspondentes de `h'` ficarão arbritariamente pequenos. Isto significa, no contexto das imagens dos dedos, que a medida que os dedos se afastam do observador, sua projeção diminui de tamanho.
+   
+   #. Se os valores de `x` vão ficando arbritariamente próximos de `0` mas com valores maiores do que `0`, então os valores correspondentes de `h'` ficarão arbritariamente grandes. Na situação dos dedos, isto significa que quanto mais próximo do observador estiverem os dedos, maiores serão suas projeções.
+         
+   **Pergunta 2.** 
+   
+   #. Esta pergunta pode ser respondida usando o mesmo argumento do item a) da Pergunta 1, mas sem utilizar valores para `h` e `d`. Como os triângulos `OB'A'` e `OBA` são semelhantes, temos que 
+   
+      .. math::
+
+         \frac{h'}{d}=\frac{h}{x} \Leftrightarrow h'=\frac{hd}{x}. 
 
