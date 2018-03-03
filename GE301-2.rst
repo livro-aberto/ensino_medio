@@ -134,3 +134,66 @@ As Etapas 1, 2 e 3 trataram da relação entre os comprimentos de segmentos de r
 
 **PARTE 2**      
 
+.. admonition:: Resposta
+
+   **PARTE 1.**
+   
+   **Pergunta 1.** 
+   
+   #. Como os triângulos `OB'A'` e `OBA` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
+   
+      .. math::
+
+         \frac{h'}{3}=\frac26 \Leftrightarrow h'=1.
+      
+   #. Novamente usando a razão de semelhança entre os triângulos `OB'A'` e `OBA`, mas agora sem substituir o valor de `x` temos:
+    
+      .. math::
+
+         \frac{h'}{3}=\frac{2}{x} \Longleftrightarrow h'=\frac6x.
+      
+      Assim, a função procurada é `f(x)=\frac{6}{x}`. Note que, como esta função modela a situação apresentada na figura, os valores de `x` devem ser apenas positivos, pois `x` é a distância de `O` até `A`. Além disso, `O` não pode coincidir com `A'`, o que implica que x também não pode ser `0`. Portanto, o domínio da função `f` é o intervalo `]0,\infty[`.
+      
+   #. Se `f(x) = \frac12 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = \frac12 \cdot 1 \Longleftrightarrow x = 12.
+         
+   #. Se `f(x) = 2 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = 2 \cdot 1 \Longleftrightarrow x = 3.
+         
+   #. Se `f(x)=h`, então `\frac6x=2`. Logo, `x=3`. No contexto das imagens dos dedos, podemos dizer que os dois dedos estão sobre plano de projeção. 
+   
+      Se `f(x)>h`, então `\frac6x>2`. Logo, `x<3`. No contexto das imagens dos dedos, isto significa que os dedos estão posicionados antes do plano de projeção, ou seja, entre o observador e o plano de projeção. Neste caso, o tamanho da projeção dos dedos no plano de projeção seria maior que o tamanho dos próprios dedos. 
+      
+      Se `f(x)<h`, então `\frac6x<2`. Logo, `x>3`. No contexto das imagens dos dedos, isto quer dizer que o objeto está posicionado após o plano de projeção. Assim, sua projeção terá tamanho menor que o tamanho dos dedos. 
+      
+   #. Se existissem `x_1` e `x_2` tais que `f(x_1)=f(x_2)`, então teríamos    
+   
+      .. math::
+         
+         \begin{array}{ll}
+         & \frac{6}{x_1} = \frac{6}{x_2} \\
+         \Longleftrightarrow & 6x_1 = 6x_2 \\
+         \Longleftrightarrow & 6(x_1 - x_2)=0 \\
+         \Longleftrightarrow & x_1 = x_2.
+         \end{array}
+         
+      Portanto, se `f(x_1)=f(x_2)`, então `x_1 = x_2`. No contexto das imagens dos dedos, isto significa que se a projeção dos dois dedos possui o mesmo tamanho, então eles estão a uma mesma distância do plano de projeção.
+      
+   #. Se os valores de `x` vão ficando arbritariamente grandes, então os valores correspondentes de `h'` ficarão arbritariamente pequenos. Isto significa, no contexto das imagens dos dedos, que a medida que os dedos se afastam do observador, sua projeção diminui de tamanho.
+   
+   #. Se os valores de `x` vão ficando arbritariamente próximos de `0` mas com valores maiores do que `0`, então os valores correspondentes de `h'` ficarão arbritariamente grandes. Na situação dos dedos, isto significa que quanto mais próximo do observador estiverem os dedos, maiores serão suas projeções.
+         
+   **Pergunta 2.** 
+   
+   #. Esta pergunta pode ser respondida usando o mesmo argumento do item a) da Pergunta 1, mas sem utilizar valores para `h` e `d`. Como os triângulos `OB'A'` e `OBA` são semelhantes, temos que 
+   
+      .. math::
+
+         \frac{h'}{d}=\frac{h}{x} \Leftrightarrow h'=\frac{hd}{x}. 
+
