@@ -995,6 +995,7 @@ Atividade: feixe de retas
      
        Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cilíndrica. De fato, ela é um conjunto de retas que passam por pontos do círculo e são paralelas à `d`, como determina a definição apresentada anteriormente.
 
+
 .. _ativ-proj-cone-cilindro:
 
 Atividade: projetando curvas que estão sobre um cone e um cilindro
@@ -1062,6 +1063,7 @@ Atividade: projetando curvas que estão sobre um cone e um cilindro
       * A projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi` é um ponto. De fato, essa reta já é paralela ao eixo do cilindro, e portanto, para encontrar sua projeção basta encontrar sua interseção com o plano `\pi`, que é um ponto. 
    
       * A projeção paralela do cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi` é dada por um círculo, pois as retas que passam por pontos do cilindro e são paralelas ao seu eixo são prolongamentos dos segmentos de reta que o formam. Assim, a interseção dessas retas com o plano `\pi` é a própria base do cilindro.
+
 
 .. _ativ-proj-construindo:
 
@@ -1143,17 +1145,61 @@ Atividade: construindo objetos geométricos peculiares
 
   #. * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o solo. Pode-se escolher pontos mais representativos das letras para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. 
   
+     .. _fig-proj-obj-peculiares-solucao-escola-01:
+
+     .. figure:: _resources/ProjecaoEscola.png
+        :width: 320pt
+   
+        Construção da projeção da palavra ESCOLA.
+        
+     A construção mostrada na :numref:`fig-proj-obj-peculiares-solucao-escola-01` foi feita no Geogebra 3D e está disponível em <https://www.geogebra.org/m/X2rA45gS> e <https://www.geogebra.org/m/xjMqSPX2>.  
+  
      * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
    
   #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
   
-     Considere um cone circular reto. Se tomarmos o vértice do cone como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre o cone será um círculo. Agora, considere uma pirâmide de base quadrangular reta. Se tomarmos o vértice da pirâmide como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre a pirâmide será um quadrado. Portanto, para construirmos um objeto que possua um quadrado e um círculo como suas projeções em perspectiva, é preciso "encaixar" o cilindro e a pirâmide construídos anteriormente fazendo coincidir seus eixos e posicionando seus vértices em lados opostos. A peça mostrada na :numref:`fig-proj-squaring-the-circle-01` será a interseção do cilindro com a pirâmide. 
+     
+     .. _fig-proj-obj-peculiares-solucao-peça-01:
+
+     .. figure:: _resources/ConstrucaoDaPeca.png
+        :width: 400pt
+   
+        Construção da obra "Squaring The Circle". A primeira figura é o cone com vértice `C`, a segunda é a pirâmide de base quadrada com vértice `P`, a terceira é a união do cone com a pirâmide, e a quarta é a interseção entre o cone e a pirâmide (`C` e `P` foram mantidos para auxiliar na compreensão, mas não fazem parte da interseção).
+     
+     A última figura mostrada na :numref:`fig-proj-obj-peculiares-solucao-peça-01` é a interseção do cilindro com a pirâmide. Na :numref:`fig-proj-obj-peculiares-solucao-peça-02`, a mesma peça pode ser vista de outro ângulo.
+     
+     .. _fig-proj-obj-peculiares-solucao-peça-02:
+
+     .. figure:: _resources/Peca_1.png
+        :width: 90pt
+   
+        Peça da obra "Squaring The Circle".
+     
+     O vídeo <https://youtu.be/pNjh1Ji_rg8> apresenta a construção da peça "Squaring The Circle". E na construção feita no Geogebra 3D disponível em <https://www.geogebra.org/m/Uxtn6hxy>, é possível interagir com a peça criada anteriormente.
       
   #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
   
-     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
+     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Veja a 
+     :numref:`fig-proj-obj-peculiares-solucao-rolha-01`.
+     
+     .. _fig-proj-obj-peculiares-solucao-rolha-01:
 
- 
+     .. figure:: _resources/Solidos_1.png
+        :width: 320pt
+   
+        Imagem dos três sólidos que devem ser criados para a construção da rolha.
+     
+     Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
+     
+     .. _fig-proj-obj-peculiares-solucao-rolha-02:
+
+     .. figure:: _resources/IntersecoesPrismasCilindro_1.png
+        :width: 280pt
+   
+        Interseção dos três sólidos e a rolha.
+        
+     Para entender melhor o processo descrito acima, use a construção do Geogebra 3D disponível no endereço <https://www.geogebra.org/m/Q7eXY36j> e o vídeo disponível em <https://youtu.be/2xtA-IABcP4>.  
+     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos. 
 
 
 .. admonition:: Para refletir
@@ -1645,6 +1691,66 @@ Em cada uma delas, você deve identificar quais são os elementos que são supos
    Como `r` é paralela à `s`, `r` é paralela à `r'` e `s` é paralela à `s'`, concluímos que `r'` é paralela à `s'`. Ou seja, a projeção paralela de retas paralelas entre si e paralelas ao plano de projeção será também retas paralelas.   
    
    Por tudo que vimos, podemos concluir que as projeções paralelas de retas paralelas são retas também paralelas, com exceção para as retas perpendiculares ao plano de projeção que são projetadas perpendicularmente no plano de projeção. Neste caso, as projeção serão pontos.
+   
+   **PARTE 3.** 
+   
+   Versões interativas feitas no GeoGebra da :numref:`fig-proj-ponto-de-fuga-01` à :numref:`fig-proj-ponto-de-fuga-05` estão disponíveis no endereço <https://www.geogebra.org/m/kFpnVERB>. O botão "S" exibe a solução e o botão "I" posiciona as retas para a configuração inicial. A seguir, apresentaremos a resposta final de cada uma das figuras.
+   
+   .. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
+
+   .. _fig-proj-ponto-de-fuga-01-solucao:
+
+   .. figure:: _resources/material-fZWyKPYy-final.png
+      :width: 300pt
+   
+      A Última Ceia de Leonardo da Vinci (1452-1519) com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).
+
+
+   .. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
+   
+   .. _fig-proj-ponto-de-fuga-02-solucao:   
+
+   .. figure:: _resources/material-nMXfrneZ-final.png
+      :width: 300pt
+   
+      Linha de trem na cidade de Orléans na França com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).
+   
+   
+   .. http://faculty.philosophy.umd.edu/jhbrown/digitaltech/index.html
+   
+   .. _fig-proj-ponto-de-fuga-03-solucao:   
+   
+   .. figure:: _resources/material-q9entV6e-final.png
+      :width: 300pt
+   
+      Pintura japonesa em papel do século XIII com segmentos desenhados sobre a imagem (fonte: University of Maryland).
+    
+      
+   .. _fig-proj-ponto-de-fuga-04-solucao:   
+   
+   .. figure:: _resources/material-brCxFwkH-final.png
+      :width: 150pt
+   
+      Ícone bizantino na Igreja de São Clemente em Ohrid, República da Macedônia, com segmentos desenhados sobre a imagem(fonte: Wikimedia Commons).   
+      
+
+   .. https://en.wikipedia.org/wiki/Arnolfini_Portrait#/media/File:Van_Eyck_-_Arnolfini_Portrait.jpg
+   
+   .. _fig-proj-ponto-de-fuga-05-solucao:         
+
+   .. figure:: _resources/material-wAKGaw7e-final.png
+      :width: 150pt
+   
+      O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441) com segmentos desenhados sobre a imagem(fonte: Wikimedia Commons).
+      
+   .. _fig-proj-ponto-de-fuga-06-solucao:   
+   
+   .. figure:: _resources/material-W3A6HwxC-final.png
+      :width: 300pt
+   
+      Palácio da Assembléia em Chandigarh na Índia com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).   
+   
+
    
    
 .. admonition:: Para refletir
