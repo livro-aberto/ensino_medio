@@ -335,11 +335,10 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
 
 `\text{(E)}` a projeção ortogonal de uma circunferência pode resultar num segmento de reta.
 
-`XX.` Vimos que uma projeção em perspectiva de centro `O` e plano de projeção `\pi` pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi`, com `\psi` o plano paralelo à `\pi` passando por `O`.
 
-#. Por que ao se modelar uma projeção em perspectiva por meio de uma função, os pontos do plano `\psi` devem ser excluídos do domínio?
-   
-#. Por que na definição de projeção em perspectiva supõe que o ponto `O` não pertença ao plano `\pi`?
+`19.` Vimos que uma projeção em perspectiva com relação a um centro `O` em um plano de projeção `\pi` pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi`, com `\psi` o plano paralela a `\pi` que passa por `O`.
+
+#. Por que ao se modelar uma projeção em perspectiva por meio de uma função, os pontos do plano `\psi` são excluídos do seu domínio? 
 
 #. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
    
@@ -348,6 +347,34 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
 #. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
    
 #. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
+
+#. Se o centro `O` é um ponto do plano de projeção `\pi`, determine `f(P)` para todo `P \in {\mathbb R}^{3} - \psi`.
+
+  
+`20.` Vimos que uma projeção paralela com relação a uma direção `d` em um plano de projeção `\pi`, com a direção `d` não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
+
+#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção `d` não seja paralelo ao plano `\pi`?   
+
+#. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
+   
+#. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3}`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
+   
+#. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
+   
+#. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
+
+
+.. admonition:: Para o professor
+
+   Este exercício tem por objetivo relacionar as projeções em perspectiva com funções quadráticas, no sentido que a diferença `w_{n} = g(n + 1) - g(n)` entre as alturas de dois segmentos projetados consecutivos é inversamente proporcional a uma função quadrática em `n`.
+
+`21.` Considere a configuração geométrica da :numref:`fig-proj-ladrilhamentos-01` da Etapa 1 da PARTE 2 da :ref:`ativ-proj-comprimentos`, ainda com os dados `a = 3`, `d = 5` e `h = 4` e `x = 6`. Suponha agora que vários segmentos congruentes a `RS` sejam desenhados no plano `\gamma`: `R_{7}S_{7}`, `R_{8}S_{8}`, `\ldots`, `R_{n}S_{n}`, `\ldots` de tal modo que (1) para cada `n \geq 7`, o quadrilátero `RR_{n}S_{n}S` é um retângulo e (2) para cada `n \geq 7`, a distância de `V` até o segmento `R_{n}S_{n}` é `n`. Assim, os segmentos `R_{n}S_{n}` estão uniformemente espaçados, com a distância entre dois segmentos consecutivos sendo igual a `1`. Observe as alturas `y_{n} = g(n)` das projeções `R_{n}'S_{n}'` sobre o plano `\pi` com relação ao plano "do chão" `\gamma`: elas aumentam a medida que `n`aumentam, mas a diferença entre duas consecutivas parece diminuir.
+
+   .. figure:: _resources/perspectiva-ladrilhamentos-04.jpg
+   
+   #. Determine `y_{n} = g(n)`. Quando `n` fica arbitrariamente grande, o que pode dizer a respeito de `y_{n}`?
+   
+   #. Determine `w_{n} = y_{n + 1} - y_{n}` (a diferença de altura de dois segmentos projetados consecutivos). Quando `n` fica arbitrariamente grande, o que pode dizer a respeito de `w_{n}`?
 
 .. admonition:: Resposta
 
@@ -512,42 +539,8 @@ Com relação a um plano `\alpha` qualquer fixado, pode-se dizer que:
   
   
   
-`XX.` Vimos que uma projeção paralela com relação a direção dada pelo vetor `\vec{v}` e ao plano de projeção `\pi`, com a direção do vetor não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
 
-`XX.` Vimos que uma projeção em perspectiva com relação a um centro `O` em um plano de projeção `\pi` pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi`, com `\psi` o plano paralela a `\pi` que passa por `O`.
 
-#. Por que ao se modelar uma projeção em perspectiva por meio de uma função, os pontos do plano `\psi` são excluídos do seu domínio? 
-
-#. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
-   
-#. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3} - \psi`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
-   
-#. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
-   
-#. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
-
-#. Se o centro `O` é um ponto do plano de projeção `\pi`, determine `f(P)` para todo `P \in {\mathbb R}^{3} - \psi`.
-
-.. admonition:: Resposta
-
-  .. Lhaylla
-
-  
-`XX.` Vimos que uma projeção paralela com relação a uma direção `d` em um plano de projeção `\pi`, com a direção `d` não paralela a `\pi`, pode ser considerada como uma função `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi`.
-
-#. Por que ao se modelar uma projeção paralela por meio de uma função, supõe-se que a direção `d` não seja paralelo ao plano `\pi`?   
-
-#. Dado um ponto `Y \in \pi` quantos pontos `X` existem tais que `f(X) = Y`? Se você desenhasse todos os pontos `X` que satisfazem essa propriedade, o que apareceria desenhado?
-   
-#. Verdadeiro ou falso? Para cada ponto `P \in {\mathbb R}^{3}`, vale que `f(f(P)) = f(P)`. Justifique sua resposta.
-   
-#. Você conhece outras funções `f` tais que `f(f(P)) = f(P)` para todo do domínio de `f`? Quais?
-   
-#. Verdadeiro ou falso? Se `f(P) = f(Q)`, então `P = Q`. Justifique sua resposta.
-
-.. admonition:: Resposta
-
-  .. Lhaylla
 
 
 **********
