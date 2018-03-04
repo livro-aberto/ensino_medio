@@ -27,7 +27,7 @@
 
 .. _ativ-proj-comprimentos:
 
-Atividade: comprimentos em projeções em perspectiva
+Atividade: comprimentos em projeções
 ------------------------------
 
 .. admonition:: Para o professor
@@ -39,8 +39,7 @@ Atividade: comprimentos em projeções em perspectiva
    
    * O uso do conceito de função nesta atividade não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. Observe, por exemplo, como a notação funcional permite compactar informação: no lugar de falar "Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item?", basta falar "Qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?". No espírito da :ref:`ativ-funcoes-enchendo-o-cone`, é importante articular as representações em linguagem natural e a linguagem funcional e explicitar para o alunos as vantagens e desvantagens de cada representação.
    
-   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5>,
-   <https://www.geogebra.org/m/SubrgSmG> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática.
+   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5>, <https://www.geogebra.org/m/SubrgSmG> e <https://www.geogebra.org/m/Du4285XX>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática.
    
 
 
@@ -72,7 +71,7 @@ Considere que `h = 2` e `d = 3`.
 #. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual à metade do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?
 #. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = 2 \, f(6)`?
 #. Para que valores de `x` tem-se `f(x) = h`? E `f(x) > h`? E `f(x) < h`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
-#. Existem valores diferentes de `x_{1}` e `x_{2}` para os `f(x_{1}) = f(x_{2})`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. Existem valores diferentes de `x_{1}` e `x_{2}` para os quais `f(x_{1}) = f(x_{2})`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 #. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 #. Se os valores de `x` vão ficando arbitrariamente próximos de `0` com valores maiores do que `0`, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 #. Deseja-se construir um segmento `CD` cuja projeção em perspectiva sobre o plano `\pi` com relação ao centro `O` também seja o segmento `A'B'`, mas cuja distância até `O` seja igual a 15. Qual deve ser o comprimento do segmento `CD`?
@@ -81,7 +80,7 @@ Justifique todas as respostas!
 
 **Etapa 2.**
 
-#. Generalize o Item b) da Pergunta 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
+#. Generalize o Item b) da Etapa 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
 
 #. Verdadeiro ou falso? No contexto da :numref:`fig-proj-comprimento-01`, sem atribuir valores numéricos específicos para `h` e `d`, verdadeiro ou falso? Se dobrarmos a distância `x` do segmento `AB` até o ponto `O`, então o comprimento `h'` de sua projeção ficará reduzido à metade.
 
@@ -139,6 +138,8 @@ As Etapas 1, 2 e 3 trataram da relação entre os comprimentos de segmentos de r
    .. https://en.wikipedia.org/wiki/List_of_paintings_by_Pieter_de_Hooch
    
    .. https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/holland/v/jan-vermeer-the-glass-of-wine-c-1661
+   
+   .. https://br.pinterest.com/pin/432556739189656869/?lp=true
 
    .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_At_the_Linen_Closet.jpg
    .. .. figure:: _resources/ladrilhos-01-Pieter_de_Hooch_-_At_the_Linen_Closet.jpg
@@ -255,36 +256,99 @@ As Etapas 1, 2 e 3 trataram da relação entre os comprimentos de segmentos de r
    .. https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Presentation_Miniature,_Chroniques_de_Hainaut_KBR_9242.jpg
    .. .. figure:: _resources/ladrilhos-37-Rogier_van_der_Weyden_-_Presentation_Miniature_Chroniques_de_Hainaut_KBR_9242.jpg
 
+   .. http://www.tate.org.uk/art/artworks/lavery-the-chess-players-n04544
+   .. .. figure:: _resources/xadrez-06.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Chess_Players_by_James_Northcote_(1746-1831)_-_IMG_7288.JPG
+   .. .. figure:: _resources/xadrez-07-1280px-Chess_Players_by_James_Northcote_1746-1831_-_IMG_7288.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Chess_players_by_Karel_van_Mander.jpg
+   .. .. figure:: _resources/xadrez-08-Chess_players_by_Karel_van_Mander.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+   .. .. figure:: _resources/xadrez-09-Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Alfonso-LJ-27V.jpg
+   .. .. figure:: _resources/xadrez-10-Alfonso-LJ-27V.jpg
+   
+   
+Tendo em mente a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alberti-03`), um problema que desafiou artistas, especialmente os renascentistas, foi o de desenhar ladrilhos e tabuleiros de xadrez. Afinal, para produzir um desenho realístico, que se pareça com uma fotografia, os comprimentos dos vários elementos do ladrilho e do tabuleiro devem satisfazer as propriedades das projeções em perspectiva. Estudaremos algumas destas propriedades nesta PARTE 2.
+
 
    .. https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Presentation_Miniature,_Chroniques_de_Hainaut_KBR_9242.jpg
+   
+   .. _fig-proj-ladrilhos-37:
+   
    .. figure:: _resources/ladrilhos-37-Rogier_van_der_Weyden_-_Presentation_Miniature_Chroniques_de_Hainaut_KBR_9242.jpg
-
+      :width: 300pt
    
+      Miniatura de Rogier van der Weyden (1399/1400 -1464) (fonte: Wikimedia Commons).
+      
+
+   .. https://commons.wikimedia.org/wiki/File:Alfonso-LJ-27V.jpg
+   
+   .. _fig-proj-xadrez-10:   
+   
+   .. figure:: _resources/xadrez-10-Alfonso-LJ-27V.jpg
+      :width: 300pt
+   
+      Miniatura do Livro dos Jogos (1283) (fonte: Wikimedia Commons).
+
    .. https://commons.wikimedia.org/wiki/File:Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+   
+   .. _fig-proj-ladrilhos-18:
+   
    .. figure:: _resources/ladrilhos-18-Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+      :width: 300pt
+   
+      Quadro "Retrato de Um Artista em Seu Estúdio" do pintor holandês Michiel van Musscher (1645-1705) (fonte: Wikimedia Commons).
    
    
+   .. https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
    
+   .. _fig-proj-xadrez-09:   
    
+   .. figure:: _resources/xadrez-09-Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+      :width: 300pt      
    
-   
-   
+      Quadro "O Jogo de Xadrez" do pintor holandês Lucas van Leyden (1494-1533) (fonte: Wikimedia Commons).
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+**Etapa 1.**
 
-   
-   
+Considere a :numref:`fig-proj-ladrilhamentos-01`. Nela, há dois planos perpendiculares: `\pi` que é o plano de projeção e `\gamma` que representa o plano do chão. Um segmento de reta `RS` de comprimento `h` está contido no plano `\gamma` e ele é paralelo ao plano `\pi`. Na figura, `P` é o ponto médio de `RS`. Como de costume, o ponto `O` representa a posição do observador. O ponto `U` é a projeção ortogonal de `O` sobre `\gamma` e, portanto, `a = OU` é a altura do observador com relação ao plano do chão `\gamma`. Agora, uma condição importante que irá simplificar nosso estudo: vamos supor que o ponto `O` é tal que o segmento `OP` é perpendicular ao segmento `RS`, ou seja, o ângulo `OPR` é reto (na :numref:`fig-proj-ladrilhamentos-01` ele não aparenta ser reto por conta da distorção da projeção em perspectiva usada para produzir a figura). Ainda na figura: `R'`, `P'` e `S'` são as projeções em perspectiva sobre o plano `\pi` com relação ao centro `O` dos pontos `R`, `P` e `S`, respectivamente. O comprimento do segmento projetado `R'S'` é `h'`.
+O ponto `V` é a projeção ortogonal de `P'` sobre `\gamma` e, portanto, `y = VP'` é a altura do ponto `P'` com relação ao plano do chão `\gamma`.
+
+      
+   .. _fig-proj-ladrilhamentos-01:
+
+   .. figure:: _resources/perspectiva-ladrilhamentos-01_2.jpg
+
+      Um segmento de reta desenhado no chão (versão interativa: <>).
+
+Suponha que `a = 3`, `d = 4`, `x = 8` e `h = 7`.
+
+#. Determine os valores correspondentes para `h'` e `y`.
+#. Mais geralmente determine `h'` como uma função `f` de `x` e `y` como função `g` de `x` para `x \geq d`. A restrição de que `x` seja sempre maior do que ou igual a `d` é porque estamos interessados apenas no caso em que o plano `\pi` está entre o observador `O` e o segmento de reta `RS` (o caso de uma pintura).
+#. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual à metade do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = \frac{1}{2} \, g(8)`?
+#. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual ao dobro do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = 2 \, g(8)`?
+#. Verdadeiro ou falso? Para todo `x > d`, tem-se `g(x) < a`.
+#. Existem valores diferentes de `x_{1} > d` e `x_{2} > d` para os quais `g(x_{1}) = g(x_{2})`?
+#. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `y` correspondentes? 
+
+Justifique todas as respostas!
+
+**Etapa 2.**
+
+#. Generalize o Item b) da Etapa 1: determine `y` como função de `x` em termos de `a`, `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
+
+#. Verdadeiro ou falso? No contexto da :numref:`fig-proj-ladrilhamentos-01`, sem atribuir valores numéricos específicos para `a`, `h` e `d`, verdadeiro ou falso? Se dobrarmos a distância `x` do segmento `RS` até o ponto `U`, então a altura `y` com relação ao plano `\gamma` de sua projeção dobrará também.
+
+Justifique todas as respostas!
 
 
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 
