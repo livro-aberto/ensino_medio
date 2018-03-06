@@ -16,7 +16,7 @@
   #. revisão dos conceitos apresentados no capítulo **A Natureza da Estatística**: parâmetro e estatística, definindo média populacional e média amostral, variância populacional e variância amostral.
   #. apresentação de representação gráfica para variáveis quantitativas conhecida como *boxplot* (gráfico caixa).
 
-  Observação: Embora muitos textos denominem as medidas de posição (média, mediana e moda) como medidas de tendência central, interpretando "tendência central" como "valor representativo" na distribuição", preferimos denominá-las medidas de posição, pois, por exemplo, dependendo da forma da distribuição, a média pode não ser um "valor representativo" da distribuição.
+  Observação: Embora muitos textos denominem as medidas de posição (média, mediana e moda) como medidas de tendência central, preferimos denominá-las medidas de posição, pois, por exemplo, na presença de forte assimetria, a média não será um valor central, pois será influenciada  pelos valores extremos da distribuição.
 
   **Por que estudar o assunto?** 
 
@@ -76,7 +76,7 @@
 
   Pretende-se explorar estas três competências nas atividades e exercícios do capítulo.
 
-  Embora a fórmula de cálculo da variância seja necessária, evitaremos seu uso direto, isto é, exploraremos o uso da tecnologia para obter variância, desvio padrão e demais medidas trabalhadas no capítulo.
+  A fórmula de cálculo da variância é apresentada de forma detalhada  para que o aluno compreenda o significado desta medida. No entanto, dada a sua complexidade, evitaremos seu uso direto, propondo o uso da tecnologia para obtê-la.
  
   A definição de quartis e a construção do boxplot são propostas inovadoras em relação ao conteúdo usual de Estatística nos livros didáticos do Ensino Médio. Os conceitos relativamente simples de quartis aliados  à grande utilidade do *boxplot* na comparação de grupos diferentes, reforçam a pertinência em tratá-los no Ensino Médio.
   
@@ -132,23 +132,32 @@
     
   **Explorando 2: Medidas de dispersão** Proposição de uma atividade envolvendo dois conjuntos de dados reais, todos com medidas de posição iguais, mas apresentando diferenças em suas distribuições caracterizando a necessidade da medida de dispersão.
  
-  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância e desvio padrão.
- 
+  **Organizando as ideias 2: Medidas de dispersão**  Definições de amplitude; distância entre quartis; desvio-médio; variância; desvio padrão e coeficiente de variação.
+  
   Nesta seção também  serão retomados os conceitos de parâmetro e estimador, tratados no capítulo **A Natureza da Estatística** apresentando a definição de variância populacional e amostral, desvio-padrão populacional e amostral e, média populacional e amostral.
- 
+  
+  Proposição de uma atividade apresentando dois conjuntos de dados com a mesma variância, mas com medidas de posição diferentes para motivar a definição de coeficiente de variação.
+  
+  
   **Praticando o assunto 2** Atividades que usam os conceitos e propriedades apresentados no organizando 2 e que buscam dar significado às medidas de dispersão definidas.
 
-  **Explorando 3** Proposição de uma atividade apresentado dois conjuntos de dados com a mesma variância, mas com medidas de posição diferentes.
- 
-  **Organizando as ideias 3** Definição de coeficiente de variação amostral e populacional.
- 
-  **Praticando o assunto 3** Atividades usando coeficiente de variação. 
- 
-  **Para saber mais**
- 
+  **Explorando 3** Proposição de atividade de construção de representação de dados usando Mínimo, Q1, Mediana, Q3 e Máximo. 
+  
+  **Organizando as ideias 3** 
+  
   #. Definição do *boxplot* (gráfico caixa) representação gráfica para variáveis quantitativas alternativa ao histograma.
   #. Descrição do critério de classificação de um valor como valor atípico do conjunto de dados adotado na construção do boxplot.
   #. Apresentação de regra empírica para avaliar a frequência de dados nos intervalos `\bar{x}\pm s` e `\bar{x}\pm 2\cdot s`.
+ 
+  **Praticando o assunto 3**  Proposição de atividades de comparação de grupos, usando o boxplot.
+ 
+  **Para saber mais**
+ 
+  Nesta seção serão apresentadas
+  #. fórmulas para o cálculo de medidas no contexto de dados agrupado;
+  #. demonstrações de propriedades trabalhadas nas seções organizando as ideias; 
+  #. texto explicando a escolha do desvio padrão em detrimento do desvio médio;
+  #. atividade para compreender a escolha do denominador n-1 no cálculo da variância amostral.
   
  
   **Material Suplementar**
