@@ -80,7 +80,7 @@ Justifique todas as respostas!
 
 **Etapa 2.**
 
-#. Generalize o Item b) da Etapa 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`.
+#. Generalize o Item b) da Etapa 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`).
 
 #. Verdadeiro ou falso? No contexto da :numref:`fig-proj-comprimento-01`, sem atribuir valores numéricos específicos para `h` e `d`, verdadeiro ou falso? Se dobrarmos a distância `x` do segmento `AB` até o ponto `O`, então o comprimento `h'` de sua projeção ficará reduzido à metade.
 
@@ -381,13 +381,15 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
 
    **PARTE 1.**
    
-   **Pergunta 1.** 
+   **Etapa 1.** 
    
    #. Como os triângulos `OB'A'` e `OBA` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
    
       .. math::
 
          \frac{h'}{3}=\frac26 \Leftrightarrow h'=1.
+         
+      Em outras palavras, sendo a distância do centro de projeção ao plano de projeção igual a `3` e a distância do centro de projeção ao segmento `AB` (a ser projetado) igual `6`, a projeção do segmento de reta `AB` de comprimento `2` terá comprimento `1`. 
       
    #. Novamente usando a razão de semelhança entre os triângulos `OB'A'` e `OBA`, mas agora sem substituir o valor de `x` temos:
     
@@ -397,11 +399,20 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
       
       Assim, a função procurada é `f(x)=\frac{6}{x}`. Note que, como esta função modela a situação apresentada na figura, os valores de `x` devem ser apenas positivos, pois `x` é a distância de `O` até `A`. Além disso, `O` não pode coincidir com `A'`, o que implica que x também não pode ser `0`. Portanto, o domínio da função `f` é o intervalo `]0,\infty[`.
       
+      .. _fig-proj-comprimentos-solucao-01:
+
+      .. figure:: _resources/funcao6x_1.png
+         :width: 200pt
+
+         Gráfico da função `f(x)=\frac6x` com `x\in ]0,\infty[`.
+      
    #. Se `f(x) = \frac12 \, f(6)`, então 
    
       .. math::
       
          \frac6x = \frac12 \cdot 1 \Longleftrightarrow x = 12.
+         
+      Portanto, para que a projeção do segmento de reta `AB` tenha a metade do comprimento que tinha quando `x = OA = 6` é preciso que `x = 12`. 
          
    #. Se `f(x) = 2 \, f(6)`, então 
    
@@ -409,11 +420,13 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
       
          \frac6x = 2 \cdot 1 \Longleftrightarrow x = 3.
          
-   #. Se `f(x)=h`, então `\frac6x=2`. Logo, `x=3`. No contexto das imagens dos dedos, podemos dizer que os dois dedos estão sobre plano de projeção. 
+      Sendo assim, para que a projeção do segmento de reta `AB` tenha o dobro do comprimento que tinha quando `x = OA = 6` é preciso que `x = 3`. 
+         
+   #. Se `f(x)=h`, então `\frac6x=2`. Logo, `x=3`. Sendo assim, para que a projeção do segmento de reta `AB` e `AB` tenham o mesmo comprimento, é preciso que a distância de `AB` ao plano de projeção seja `3`. Já no contexto das imagens dos dedos, podemos dizer que os dois dedos estão sobre plano de projeção. 
    
-      Se `f(x)>h`, então `\frac6x>2`. Logo, `x<3`. No contexto das imagens dos dedos, isto significa que os dedos estão posicionados antes do plano de projeção, ou seja, entre o observador e o plano de projeção. Neste caso, o tamanho da projeção dos dedos no plano de projeção seria maior que o tamanho dos próprios dedos. 
+      Se `f(x)>h`, então `\frac6x>2`. Logo, `x<3`. Portanto, para que o comprimento da projeção do segmento de reta `AB` seja maior que seu próprio comprimento, é preciso que a distância de `AB` até `O` seja menor que `3`. No contexto das imagens dos dedos, isto significa que os dedos estão posicionados antes do plano de projeção, ou seja, entre o observador e o plano de projeção. Neste caso, o tamanho da projeção dos dedos no plano de projeção seria maior que o tamanho dos próprios dedos. 
       
-      Se `f(x)<h`, então `\frac6x<2`. Logo, `x>3`. No contexto das imagens dos dedos, isto quer dizer que o objeto está posicionado após o plano de projeção. Assim, sua projeção terá tamanho menor que o tamanho dos dedos. 
+      Se `f(x)<h`, então `\frac6x<2`. Logo, `x>3`. Ao contrário do que vimos no caso anterior, para que o comprimento da projeção do segmento de reta `AB` seja menor que seu comprimento, é preciso que a distância de `AB` até `O` seja maior que `3`. No contexto das imagens dos dedos, isto quer dizer que o objeto está posicionado após o plano de projeção. Assim, sua projeção terá tamanho menor que o tamanho dos dedos. 
       
    #. Se existissem `x_1` e `x_2` tais que `f(x_1)=f(x_2)`, então teríamos    
    
@@ -426,17 +439,85 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
          \Longleftrightarrow & x_1 = x_2.
          \end{array}
          
-      Portanto, se `f(x_1)=f(x_2)`, então `x_1 = x_2`. No contexto das imagens dos dedos, isto significa que se a projeção dos dois dedos possui o mesmo tamanho, então eles estão a uma mesma distância do plano de projeção.
+      Portanto, se `f(x_1)=f(x_2)`, então `x_1 = x_2`. Isto quer dizer que, se as projeções de dois segmentos possuem o mesmo comprimento, então eles estão posicionados a uma mesma distância de `O`. No contexto das imagens dos dedos, isto significa que se a projeção dos dois dedos possui o mesmo tamanho, então eles estão a uma mesma distância do observador, e consequentemente eles estão a uma mesma distância do plano de projeção.
       
-   #. Se os valores de `x` vão ficando arbritariamente grandes, então os valores correspondentes de `h'` ficarão arbritariamente pequenos. Isto significa, no contexto das imagens dos dedos, que a medida que os dedos se afastam do observador, sua projeção diminui de tamanho.
+   #. Se os valores de `x` vão ficando arbritariamente grandes, então os valores correspondentes de `h'` ficarão arbritariamente pequenos. Analise mais uma vez o gráfico mostrado na :numref:`fig-proj-comprimentos-solucao-01`. Isto significa, no contexto das imagens dos dedos, que a medida que os dedos se afastam do observador, sua projeção diminui de tamanho.
    
-   #. Se os valores de `x` vão ficando arbritariamente próximos de `0` mas com valores maiores do que `0`, então os valores correspondentes de `h'` ficarão arbritariamente grandes. Na situação dos dedos, isto significa que quanto mais próximo do observador estiverem os dedos, maiores serão suas projeções.
-         
-   **Pergunta 2.** 
+   #. Se os valores de `x` vão ficando arbritariamente próximos de `0` mas com valores maiores do que `0`, então os valores correspondentes de `h'` ficarão arbritariamente grandes. Novamente, analise o gráfico mostrado na :numref:`fig-proj-comprimentos-solucao-01`. Na situação dos dedos, isto significa que quanto mais próximo do observador estiverem os dedos, maiores serão suas projeções.
    
-   #. Esta pergunta pode ser respondida usando o mesmo argumento do item a) da Pergunta 1, mas sem utilizar valores para `h` e `d`. Como os triângulos `OB'A'` e `OBA` são semelhantes, temos que 
+   #. Se o segmento `CD` está a uma distância `15` de `O`, então `x=15`. Neste caso, utilizando a função `f` temos
+   
+   .. math::
+
+      f(15) = \frac6{15}.
+      
+   Como os triângulos `OB'A'` e `ODC` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
+   
+   .. math::
+
+      \frac{\frac6{15}}{3}=\frac{CD}{15} \Longleftrightarrow CD=2.
+      
+        
+   **Etapa 2.** 
+   
+   #. Esta pergunta pode ser respondida usando o mesmo argumento do item a) da Pergunta 1, mas sem utilizar valores dados na etapa anterior para `h` e `d`. Como os triângulos `OB'A'` e `OBA` são semelhantes, temos que 
    
       .. math::
 
          \frac{h'}{d}=\frac{h}{x} \Leftrightarrow h'=\frac{hd}{x}. 
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, se a distância de `AB` ao ponto `O` é igual a `2x`, teremos:   
+   
+      .. math::
 
+         \frac{h'}{d}=\frac{h}{2x} \Leftrightarrow h'=\frac{hd}{2x}=\frac{\frac{hd}{x}}2. 
+         
+      Comparando o valor de `h'` deste e do item anterior, podemos concluir que a afirmação é verdadeira.
+      
+   **Etapa 3.** 
+   
+   #. Observe na :numref:`fig-proj-comprimento-02` que os triângulos `OS'R'` e `OSR` são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{R'}S'` é congruente à `O\hat{R}S`), então 
+   
+      .. math::
+      
+         \frac{S'R'}{R'O} = \frac{SR}{RO}  \Longleftrightarrow \frac{R'S'}{R'O} = \frac{h}{RO} \Longleftrightarrow R'S'= \frac{h \cdot R'O}{RO}.
+         
+      Analogamente, os triângulos `OA'R'` e `OAR` também são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{A'}R'` é congruente à `O\hat{A}R`). Logo, 
+      
+      .. math::
+      
+         \frac{OA'}{R'O} = \frac{OA}{RO}  \Longleftrightarrow \frac{d}{R'O} = \frac{x}{RO} \Longleftrightarrow RO = \frac{x \cdot R'O}{d}.
+         
+      Substituindo o valor de `RO` em `S'R'` temos:    
+      
+      .. math::
+      
+         R'S'= \frac{h \cdot R'O}{\frac{x \cdot R'O}{d}} = \frac{hd}{x}.
+         
+      Pela atividade a da etapa 2, sabemos que `h'=\frac{hd}{x}` e com isso, podemos concluir que `R'S'` possui o mesmo comprimento do segmento `A'B'`. Portanto, a projeção da translação de um segmento paralelamente ao plano `\pi` terá o mesmo comprimento do segmento.
+      
+      Neste caso, temos três opções: 
+      
+      (1) Se `x>d`, ou seja, `RS` está posicionado após o plano de projeção, então `R'S'` terá comprimento menor que `AB` e `RS`. 
+      
+      (2) Se `x=d`, ou seja, `RS` está posicionado sobre o plano de projeção, então `R'S'` terá comprimento o mesmo comprimento que `AB` e `RS`. 
+      
+      (3) Se `x<d`, ou seja, `RS` está posicionado antes do plano de projeção, então `R'S'` terá comprimento maior que `AB` e `RS`.  
+      
+      No contexto da visualização das imagens de seus dois dedos, temos que se afastarmos os dedos indicadores e mantivermos os dois em um plano paralelo ao plano de projeção `\pi` ("translação" de um dos dedos paralelamente ao plano de projeção), então suas projeções terão sempre o mesmo comprimento. 
+      
+   #. Se, ao invés de um retângulo, o quadrilátero `ARSB` for um paralelogramo, teremos a mesma situação da atividade anterior e exatamente as mesmas possiblidades. 
+   
+      Já no contexto da visualização das imagens de seus dois dedos, temos que se afastarmos os dedos indicadores e elevarmos um em relação ao outro (mais uma vez, uma "translação" de um dedo paralelamente ao plano de projeção), além de  mantê-los dentro de um plano paralelo ao plano de projeção `\pi`, então suas projeções terão sempre o mesmo comprimento. 
+      
+   #. Observe na :numref:`fig-proj-comprimento-04` que os triângulos `OAB` e `OAS` são congruentes (o lado `OA` é comum aos dois triângulos, os ângulos `O\hat{A}B` e `O\hat{A}S` são congruentes, e os lados `AB` e `AS` são congruentes), os triângulos `OA'S'` e `OAS` são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{R'}S'` é congruente à `O\hat{R}S`) e os triângulos `OA'B'` e `OAB` são semelhantes (visto na etapa anterior). Assim, pela transitividade da semelhança de triângulos, podemos concluir que os triângulos `OA'B'` e `OA'S'` são semelhantes. Como `OA'` é lado comum aos triângulos `OA'B'` e `OA'S'`, então, na verdade, eles são congruentes. Dessa forma, temos que `A'S'` possui a mesma medida `h'` do segmento `A'B'`. Sendo assim, temos aqui as mesmas mesmas possibilidades das duas questões anteriores. 
+      
+      No contexto da visualização das imagens de seus dedos, temos os dois dedos mantendo a mesma base e um deles sendo rotacionado em relação ao outro dentro do plano `\omega` paralelo ao plano de projeção `\pi`. Nesta situação, como os dedos possuem o mesmo comprimento, suas projeções terão também o mesmo comprimento.
+   
+   #. O segmento `RS` pode ser obtido fazendo uma translação e depois uma rotação de uma cópia do segumento `AB`. Portanto, de acordo com o que vimos anteriormente, a projeção `R'S'` do segmento `RS` terá o mesmo comprimento da projeção `A'B'` do segmento `AB`, já que `RS` e `AB` possuem o mesmo comprimento `h`. Sendo assim, as possibilidade analisadas no item (a) também serão válidas na situação mais geral.
+   
+      No contexto da visualização das imagens de seus dedos, teremos que unificar as situações anteriores. Isso quer dizer que enquanto um dos dedos permanece fixado, o outro pode ser disposto em qualquer posição desde que dentro do plano `omega` (ou seja, o segundo dedo está sofrendo translações e rotações). Pelo que estudamos nos itens anteriores, como os dedos possuem o mesmo comprimento, suas projeções terão também o mesmo comprimento.
+   
+   #. A afirmação é verdadeira. Como vimos nos casos anteriores, o comprimento da projeção de um segmento que mede `h` será `\frac{hd}{x}`, ou seja, o comprimento da projeção depende apenas de `d` e `x`. 
+   
+   **Etapa 4.**
