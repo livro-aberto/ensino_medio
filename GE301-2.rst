@@ -316,7 +316,7 @@ Tendo em mente a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alb
 **Etapa 1.**
 
 Considere a :numref:`fig-proj-ladrilhamentos-01`. Nela, há dois planos perpendiculares: o plano de projeção `\pi` e o plano `\gamma` que representa o chão. Um segmento de reta `RS` de comprimento `h` está contido no plano `\gamma` e ele é paralelo ao plano `\pi`. Na figura, `P` é o ponto médio de `RS`. Como de costume, o ponto `O` representa a posição do observador. O ponto `U` é a projeção ortogonal de `O` sobre `\gamma` e, portanto, `a = OU` é a altura do observador com relação ao plano do chão `\gamma`. Agora, uma condição importante que irá simplificar nosso estudo: vamos supor que o ponto `O` é tal que o segmento `OP` é perpendicular ao segmento `RS`, ou seja, o ângulo `OPR` é reto (na :numref:`fig-proj-ladrilhamentos-01` ele não aparenta ser reto por conta da distorção da projeção em perspectiva usada para produzir a figura). Os pontos `R'`, `P'` e `S'` são as projeções em perspectiva sobre o plano `\pi` com relação ao centro `O` dos pontos `R`, `P` e `S`, respectivamente. O comprimento do segmento projetado `R'S'` é `h'`.
-O ponto `V` é a interseção do plano `\pi`com a reta `UP` e, portanto, `y = VP'` é a altura do ponto `P'` com relação ao plano do chão `\gamma`.
+O ponto `V` é a interseção do plano `\pi` com a reta `UP` e, portanto, `y = VP'` é a altura do ponto `P'` com relação ao plano do chão `\gamma`.
 
 Como o comprimento `h'` do segmento projetado `R'S'` varia de acordo com os valores de `d`, `h` e `x`, você estudou na PARTE 1. O objetivo agora é determinar como a altura `y` deste segmento com relação ao plano `\gamma` varia de acordo com os valores de `a`, `d` e `x`. Com essas duas informações será possível criar um método para fazer desenhos em perspectiva de ladrilhamentos e tabuleiros de xadrez com precisão na configuração descrita na :numref:`fig-proj-ladrilhamentos-01`.
 
@@ -330,7 +330,7 @@ Como o comprimento `h'` do segmento projetado `R'S'` varia de acordo com os valo
 Suponha que `a = 3`, `d = 5` e `h = 4`.
 
 #. Determine o valor de `y` para `x = 6`.
-#. Mais geralmente, `y` como função `g` de `x` para `x \geq d`. A restrição de que `x` seja sempre maior do que ou igual a `d` é porque estamos interessados apenas no caso em que o plano `\pi` está entre o observador `O` e o segmento de reta `RS` (o caso de uma pintura).
+#. Mais geralmente, determine `y` como função `g` de `x` para `x \geq d`. A restrição de que `x` seja sempre maior do que ou igual a `d` é porque estamos interessados apenas no caso em que o plano `\pi` está entre o observador `O` e o segmento de reta `RS` (o caso de uma pintura).
 #. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual à metade do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = \frac{1}{2} \, g(6)`?
 #. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual ao dobro do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = 2 \, g(6)`?
 #. Verdadeiro ou falso? Para todo `x > d`, tem-se `g(x) < a`.
@@ -401,7 +401,7 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
       
       .. _fig-proj-comprimentos-solucao-01:
 
-      .. figure:: _resources/funcao6x_1.png
+      .. figure:: _resources/funcao6x_2.png
          :width: 200pt
 
          Gráfico da função `f(x)=\frac6x` com `x\in ]0,\infty[`.
@@ -521,3 +521,107 @@ As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de
    #. A afirmação é verdadeira. Como vimos nos casos anteriores, o comprimento da projeção de um segmento que mede `h` será `\frac{hd}{x}`, ou seja, o comprimento da projeção depende apenas de `d` e `x`. 
    
    **Etapa 4.**
+   
+   Vamos considerar um plano de projeção `\pi` e uma direção `d` de projeção (que pode ser perpendicular ou oblíqua à `\pi`). Considere um segmento de reta `AB` paralelo ao plano de projeção `\pi`. Os pontos `A'` e `B'` são, respectivamente, as projeções paralelas de `A` e `B` sobre o plano de projeção `\pi` na direção de `d`. Note que `ABB'A'` é um paralelogramo, pois possui lados opostos paralelos. Isto implica que `A'B'` possui o mesmo comprimento de `AB`, ou seja, o comprimento da projeção paralela de um segmento paralelo ao plano de projeção coincide com o comprimento do segmento. 
+   
+   .. _fig-proj-comprimentos-solucao-03:
+
+   .. figure:: _resources/ProjecaoParalelaSegmentosParalelos.png
+      :width: 350pt
+
+      Projeção paralela do segmento `AB` sobre o plano `\pi` na direção `d`. 
+   
+   Seguindo esse mesmo raciocínio, para quaisquer dois segmentos de mesmo comprimento paralelos à `\pi`, podemos concluir que suas projeções paralelas sobre o plano `\pi` na direção `d` também terão os mesmos comprimentos.  
+   
+   **PARTE 2.**
+   
+   **Etapa 1.**
+   
+   #. Como os triângulos `OUP'` e `P'VP` são semelhantes (pois o ângulo em `P` é comum aos dois triângulos e os ângulos `O\hat{U}P'` e `P'\hat{V}P` são congruentes), temos que 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{1}{y}=\frac{6}{3} \Longleftrightarrow y=\frac12.   
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, assim como sua razão de semelhança, encontramos 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{x-5}{y}=\frac{x}{3} \Longleftrightarrow y=\frac{3x-15}{x}.
+         
+      .. _fig-proj-comprimentos-solucao-02:
+
+      .. figure:: _resources/funcao3x-15x.png
+         :width: 400pt
+
+         Gráfico da função `g(x)=\frac{3x-15}{x}` com `x\geq 5`.   
+         
+   #. Se `g(x) = \frac12 \, g(6)`, então 
+   
+      .. math::
+      
+         \frac{3x-15}{x} = \frac12 \cdot \frac12 \Longleftrightarrow x = \frac{60}{11}. 
+         
+   #. Se `g(x) = 2 \, g(6)`, então 
+   
+      .. math::
+      
+         \frac{3x-15}{x} = 2 \cdot \frac12 \Longleftrightarrow x = \frac{15}{2}.
+   
+   #. Analisando a :numref:`fig-proj-comprimentos-solucao-02`, é possível dizer que a afirmação é verdadeira. Além disso, note que se `x>5`, então `-\frac{15}{x}<0`. Assim, `3-\frac{15}{x} < 3 \Longleftrightarrow g(x)<3`. 
+   
+   #. Se existissem `x_1>d` e `x_2>d` tais que `g(x_1)=g(x_2)`, então teríamos    
+   
+      .. math::
+         
+         \begin{array}{ll}
+         & \dfrac{3x_1-15}{x_1} = \dfrac{3x_2-15}{x_2} \\
+         \Longleftrightarrow & 3x_1x_2-15x_2 = 3x_1x_2-15x_1 \\
+         \Longleftrightarrow & 15(x_1 - x_2)=0 \\
+         \Longleftrightarrow & x_1 = x_2.
+         \end{array}
+         
+      Portanto, se `g(x_1)=g(x_2)`, então `x_1 = x_2`. 
+      
+   #. A função `g(x)` pode ser escrita da forma `g(x)=3-\frac{15}{x}`. Note que, quanto maior os valores de `x`, menores são os valores de `\frac{15}{x}` e assim, `3-\frac{15}{x}` ficará cada vez mais próximo de `3`. Logo, se os valores `x` vão ficando arbitrariamente grandes, os valores de `g(x)=y` vão ficando mais próximos de `3`.
+   
+   Isto pode ainda ser observado no gráfico da função `g` na :numref:`fig-proj-comprimentos-solucao-02`.  
+        
+   **Etapa 2.**
+   
+   #. Utilizando a mesma semelhança de triângulos do item (a) da Etapa 1, assim como sua razão de semelhança, temos 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{x-d}{y}=\frac{x}{a} \Longleftrightarrow y=\frac{a(x-d)}{x}.
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, se a distância de `RS` ao ponto `U` é igual a `2x`, teremos:   
+   
+      .. math::
+
+         \frac{2x-d}{y}=\frac{2x}{a} \Longleftrightarrow y=\frac{2xa-da}{2x}=2\left(\frac{a(x-\frac{d}{2})}{x}\right). 
+         
+      Comparando o valor de `y` deste e do item anterior, podemos concluir que a afirmação é falsa, já que o valor encontrado neste item não corresponde ao dobro do encontrado no item anterior.  
+   
+   **Etapa 3.**
+   
+   A :numref:`fig-proj-comprimentos-solucao-04` mostra a projeção em perspectiva do quadriculado `RABS` feita no Geogebra no endereço <https://www.geogebra.org/m/jGxrcxvw>. 
+   
+   .. _fig-proj-comprimentos-solucao-04:
+
+   .. figure:: _resources/Ladrilhamento_Parte2Etapa3.png
+      :width: 350pt
+
+      Projeção em perspectiva do quadriculado `RABS` da :numref:`fig-proj-ladrilhamentos-02`.
+   
+   **Etapa 4.**
+   
+   Neste caso, precisamos estudar duas possibilidades. Na primeira, considere que a direção de projeção `d` seja paralela ao lado `RA` (e de todos os que são paralelos a ele) do quadriculado, ou seja, perpendicular ao plano de projeção `\pi`. Como `RABS` está contido em um plano `\gamma` perpendicular ao plano de projeção `\pi`, a projeção do quadriculado `RABS` será o segmento de reta `R'S'`, onde `R'` e `S'` são as projeções paralelas dos pontos `R` e `S`, respectivamente. Isso acontece pois, segmentos perpendiculares ao plano de projeção são projetados em pontos e segmentos paralelos ao plano de projeção são projetados em segmentos de mesmo comprimento, como já foi estudado antes. 
+   
+   Caso a direção de projeção `d` seja oblíqua em relação ao plano de projeção, a projeção do quadriculado `RABS` será um novo quadriculado `R'A'B'S'`, onde `R', A', B'` e `S'` são as projeções paralelas dos pontos `R, A, B` e `S`, respectivamente. Repare que, como `RS` é um segmento de reta paralelo ao plano de projeção, então `R'S'` será paralelo à `RS` e terá o mesmo comprimento de `RS`, assim como `A'B'` será paralelo à `AB` e terá o mesmo comprimento de `AB`. Assim, podemos concluir que o quadrilátero `R'A'B'S'` é um paralelogramo (podendo ser mais alongado ou mais achatado dependendo da direção de projeção) e sua parte interna será quadriculada de acordo com a direção de projeção `d`. 
+   
+   .. Lhaylla Falta figura
+   
+   
+   
+     
