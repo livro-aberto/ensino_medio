@@ -245,6 +245,39 @@ Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na m
    
 
 
+.. _sec-Parasabermais:
+
+Para saber mais
+===============
+
+
+.. _sub-mediadadosagrupados:
+
+Cálculo da média para dados agrupados
+--------------------------------------
+
+Considere um conjunto de `n` dados agrupados em `c` intervalos de classe.
+   
+Sejam `\tilde{x}_{1}`, `\tilde{x}_{2}`, ..., `\tilde{x}_{c}` os pontos médios dos `c` intervalos de classe e, `n_1`, `n_2`, ..., `n_c` ,  as frequências absolutas dos `c` intervalos de classe, respectivamente. Lembre que o ponto médio de um intervalo de classe  corresponde à média aritmética dos extremos do intervalo. Neste caso a média é calculada por
+   
+`\textsf{média}=\bar{x}=\frac{n_1\cdot \tilde{x}_{1}+n_2\cdot \tilde{x}_{2}+\cdots+n_c\cdot \tilde{x}_{n}}{\underbrace{n_1+n_2+\cdots+n_c}_{=n}}=\frac{1}{n}\cdot \displaystyle{\sum^c_{i=1}}n_i\cdot \tilde{x}_i`
+   
+Denotando por `f_i=\frac{n_i}{n}` a frequência relativa do `i`-ésimo intervalo classe, temos
+   
+ 
+`\textsf{média}=\bar{x}=f_1\cdot \tilde{x}_{1}+f_2\cdot \tilde{x}_{2}+\cdots +f_c\cdot \tilde{x}_{c}=\displaystyle{\sum^c_{i=1}}f_i\cdot \tilde{x}_i` 
+   
+     
+Quando os dados estão agrupados em intervalos de classe, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas (ou relativas) das classes.
+
+
+.. _sub-coloque-aqui-o-nome:
+
+Subseção
+---------
+
+
+
 
 
 
