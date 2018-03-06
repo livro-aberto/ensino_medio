@@ -452,6 +452,91 @@ em que `\bar{x}` é a média amostral. Se conhecemos apenas as frequências rela
 
 O desvio padrão amostral é, então, calculado por `s=\sqrt{s^2}`.
 
+.. _ativ-inflacao-anual:
+
+-------------------------
+Atividade: Inflação anual
+-------------------------
+
+.. admonition:: Para o professor
+
+ **Objetivos específicos** 
+ 
+ Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas suas médias são diferentes. 
+ 
+ Perceber a necessidade de definir uma medida que avalie a magnitude da variância (desvio padrão) em relação à média.
+ 
+ **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância. Como o dado observado é a inflação anual de um país, a atividade começa com um pequeno texto introdutório sobre inflação.
+ 
+A seguir são apresentados dados sobre as inflações anuais em dois países. Antes de trabalhar com os dados, vamos tentar explicar o que é :index:`inflação<inflação>`. De uma maneira bem simples, pode-se dizer que a inflação é o aumento contínuo nos preços de produtos e serviços. Esse aumento costuma ser avaliado de forma mensal, gerando os índices de inflação, que refletem a variação nos preços.
+
+A inflação pode ser medida de várias formas. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
+`link <https://www.youtube.com/watch?v=JVcDZOlIMBk>`_, um vídeo produzido pelo IBGE, explicando o IPCA.
+
+Foram observadas as inflações anuais de dois países A e B para os anos de 2011 a 2015, conforme tabela a seguir. 
+
+.. table:: Inflação anual
+
+ +------+-------+--------+--------+-------+-------+--------+
+ | País | 2011  | 2012   | 2013   | 2014  | 2015  | soma   |
+ +------+-------+--------+--------+-------+-------+--------+
+ | A    | 2,00% | 1,80%  | 2,10%  | 2,20% | 1,90% | 10,00% |
+ +------+-------+--------+--------+-------+-------+--------+
+ | B    | 0,01% | -0,19% | -0,09% | 0,21% | 0,11% | 0,05%  |
+ +------+-------+--------+--------+-------+-------+--------+
+   
+1. Calcule as médias anuais de inflação dos dois países. Há diferenças entre elas?
+
+2. Calcule as variâncias das inflações anuais dos dois países, sabendo que para o país A, `\displaystyle{\sum^5_{i=1}}x^2_i=20,1`  (% `^2` ) e para o país B,  `\displaystyle{\sum^5_{i=1}}x^2_i=0,1005`  (% `^2` ). Há diferença entre elas?
+
+3. Qual dos países apresenta maior flutuação inflacionária quando comparada à média inflacionária? 
+
+
+.. admonition:: Resposta 
+
+   1. No país A, a inflação média anual, considerando estes 5 anos, é    `\bar{x}=\frac{10}{5}=2,00` %. No país B, a inflação média anual, considerando estes 5 anos, é `\bar{x}=\frac{0,05}{5}=0,01` %. Logo, as inflações anuais médias dos dois países são bem diferentes.
+   
+   2. Usando a fórmula simplificada para o cálculo da variância, temos, para o país A, `\textsf{s}^2=\frac{1}{5-1}\left (20,1-5\cdot 2^2\right )= 0,025` (% `^2` ). Para o país B, temos `\textsf{s}^2=\frac{1}{5-1}\left (0,1005-5\cdot 0,01^2\right )= 0,025` (% `^2` ). Logo, as variâncias destes dois conjuntos de inflações anuais são iguais e, consequentemente, os desvios padrões também são iguais. 
+   
+   3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
+
+
+
+.. _sub-cv:
+
+-----------------------
+Coeficiente de variação
+-----------------------
+
+Nem sempre uma variância pequena (e consequentemente desvio-padrão pequeno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
+
+Na :ref:`ativ-inflacao-anual`, estudamos dois conjuntos de dados que apresentam médias diferentes, mas suas variâncias são iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? Comparando o valor do desvio padrão de cerca de 0,16% à média do país A de 2%, vemos que ele é pequeno em relação à média. Comparando o valor do desvio padrão 0,16% em relação à média do país B de 0,01%, vemos que ele é muito grande em relação à média. Neste caso dizemos que no país A os dados apresentam variação relativa em torno da média pequena. Já, no país B, os dados apresentam variação relativa em torno da média grande. 
+
+O :index:`coeficiente de variação<coeficiente de variação>` é uma medida usada para calcular a variação relativa dos dados de um conjunto em torno da média: quanto maior seu valor, maior é a variação relativa em torno da média.
+
+.. glossary::
+
+   Coeficiente de variação 
+      é a razão entre o desvio padrão e a média. Em geral, ele é descrito em termos percentuais. 
+      
+O coeficiente de variação amostral, em termos percentuais, é calculado  por 
+
+.. math::
+
+   CVA=\frac{s}{\bar{x}}\cdot 100 \%
+
+em que `s` é o desvio padrão amostral e `\bar{x}` é a média amostral.
+   
+Esta expressão é usada quando dispomos de uma amostra da população. Se, dispomos dos dados da população, então o coeficiente de variação populacional é dado por  
+
+.. math::
+
+   CVP=\frac{{\sigma}}{\mu}\cdot 100\%
+   
+em que `\sigma` é o desvio padrão populacional e `\mu` é a média populacional.
+
+Observe que o coeficiente de variação só é definido para conjuntos cuja média é diferente de zero.
+
 
 .. _sec-praticando2:
 
@@ -663,6 +748,47 @@ Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, ca
  No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia B, temos `\bar{x}=61,5` e `s=18,3136` tal que os limites deste intervalo são, aproximadamente,  24,9 e 98,1. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
  
  Comentário acerca destes resultados: verifica-se que para os quatro conjuntos aqui considerados, de fato, a maior parte dos dados (mais de 90%) situam-se entre os limites de uma média mais ou menos 2 desvios padrões.
+ 
+ .. _ativ-comparacao-dois-tipos-de-bonificacao:
+
+
+-----------------------------------------------------------------------------
+Atividade: Comparação das duas possibilidades de bonificação na Nota de Artes
+-----------------------------------------------------------------------------
+
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
+   
+   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas apresente o menor coeficiente de variação.
+   
+Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que o professor deseja que o resultado geral de sua turma apresente o menor coeficiente de variação. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
+
+Para facilitar, use as informações a seguir.
+
+.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
+   
+   +------------+---------+---------+----------+
+   | `n=35`     | antes   | 1 pt    | 20%      |
+   +------------+---------+---------+----------+
+   | `\sum x`   | 207,5   | 242,5   | 249,0    |
+   +------------+---------+---------+----------+
+   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
+   +------------+---------+---------+----------+
+
+
+
+
+.. admonition:: Resposta 
+
+   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média, conforme os cálculos a seguir.
+   
+   Considerando o acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. 
+   A variância, calculada por `s^2` é dada por `\frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
+   
+   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por `\frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
    
  
 
