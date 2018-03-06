@@ -17,16 +17,17 @@ definicoes
   .. |terciarios| replace:: azuis claros
   .. |terciarias| replace:: azuis claras
 
-  .. |atento| replace:: vermelho
-  .. |atenta| replace:: vermelha
-  .. |atentos| replace:: vermelhos
-  .. |atentas| replace:: vermelhas
+  .. |atento| replace:: azul escuro
+  .. |atenta| replace:: azul escura
+  .. |atentos| replace:: azuis escuros
+  .. |atentas| replace:: azuis escuras
 
-  .. |avisado| replace:: azul escuro
-  .. |avisada| replace:: azul escura
-  .. |avisados| replace:: azuis escuros
-  .. |avisadas| replace:: azuis escuras
-    
+
+  .. |destacado| replace:: vermelho
+  .. |destacada| replace:: vermelha
+  .. |destacados| replace:: vermelhos
+  .. |destacadas| replace:: vermelhas
+  
 As cores são, |primario|, |secundario|, |terciario|, |atento| e |avisado|. Para inserir as cores no texto devemos usar as expressões segundo sua concordância, veja abaixo.::
    
    Escrevendo, obtém-se
@@ -45,20 +46,20 @@ As cores são, |primario|, |secundario|, |terciario|, |atento| e |avisado|. Para
    |terciarios| = azuis claros
    |terciarias| = azuis claras
 
-   |atento| = vermelho
-   |atenta| = vermelha
-   |atentos| = vermelhos
-   |atentas| = vermelhas
+   |atento| = azul escuro
+   |atenta| = azul escura
+   |atentos| = azuis escuros
+   |atentas| = azuis escuras
 
-   |avisado| = azul escuro
-   |avisada| = azul escura
-   |avisados| = azuis escuros
-   |avisadas| = azuis escuras
+   |destacado| = vermelho
+   |destacada| = vermelha
+   |destacados| = vermelhos
+   |destacadas| = vermelhas
 
 
 .. tikz::
 
-   \foreach \cor/\y in {primario/0, secundario/.4, terciario/.8, atento/1.2}{
+   \foreach \cor/\y in {primario/0, secundario/.4, terciario/.8, atento/1.2, destacado/1.6}{
    \fill[\cor] (0,-\y) circle (.2);
    \node at (1.5,-\y) {\cor};
    };
