@@ -108,6 +108,38 @@
    Esta abordagem tem várias vantagens: (1) ela é a mais natural e próxima dos experimentos que se deseja modelar; (2) todas as propriedades das representações 2D obtidas pelas projeções podem ser deduzidas e evita-se o uso de regras sem explicações; (3) aplicações recentes com recursos tecnológicos usam o modelo 3D e não especificações na representação plana; (4) ela se relaciona com episódios históricos que habitualmente não são apresentados; (5) ela oferece um excelente cenário de interesse onde se é possível exercitar geometria de posição e aplicar semelhança de triângulos.  As projeções em perspectiva, em particular, constituem uma excelente oportunidade do aluno apreciar uma característica importante da Matemática: o de identificar uma mesma estrutura (projeções em perspectiva) em fenômenos diferentes (sombras, pinturas, câmeras, modelos ópticos para o olho humano). 
    
    Aqui, talvez o maior desafio seja justamente o de explicar algo 3D tendo como principal instrumento uma mídia 2D (os desenhos estáticos nas páginas do livro didático). Neste sentido, usar materiais concretos e recursos tecnológicos ajuda bastante e, por este motivo, todos os diagramas de configurações tridimensionais são acompanhados de construções interativas feitas no GeoGebra. Cada cena 3D pode ser girada, ampliada ou reduzida e, em muitos casos, parâmetros da construção podem ser alterados. Esta possibilidade de movimentação constitui-se em um aspecto cognitivo importante ([Sinha-2009]_) que evita os equívocos de interpretação gerados pelas distorções das projeções. A propósito, o GeoGebra também foi usado para se criar os diagramas deste capítulo. Desta maneira, tem-se a garantia de que as ilustrações estão matematicamente consistentes. Além disso, essas construções estão disponíveis para que você faça modificações e derivações que ache necessárias. Estas construções do GeoGebra podem ser acessadas de computadores *desktop*, *tablets* e *smartphones*.
+        
+   As dificuldades advêm principalmente de dois fatores: por um lado, as projeções em perspectiva e paralelas são ambiguas (isto é, não injetivas) e não preservam comprimentos, ângulos, proporções, áreas, etc., de modo que as medidas na representação 2D podem não corresponder às medidas do objeto original 3D; por outro lado, não existe a cultura de se praticar a produção de desenhos, de modo que, em geral, quando os alunos são levados a fazer alguma representação 2D de objetos 3D, os desenhos produzidos são algumas vezes ingênuos.     
+      
+   Um exemplo de distrator típico é apresentado por [Lellis-2009]_: na figura a seguir, é comum um aluno desavisado pensar que entre `A`, `B` e `C`, é o ponto `C` que está mais próximo da reta `r` na configuração 3D (afinal, na projeção paralela, é o que acontece).
+      
+      .. figure:: _resources/2017-12-10_18-14-52.jpg
+         :width: 250pt
+         :align: center
+         
+   Dependendo do ponto de vista, retas que são reversas são projetadas em retas concorrentes, o que também costuma confudir os alunos.
+      
+      .. figure:: _resources/2017-12-10_21-05-40.jpg
+         :width: 250pt
+         :align: center
+         
+      .. figure:: _resources/2017-12-10_21-21-23.jpg         
+         :width: 250pt
+         :align: center
+         
+   Outros dois exemplos são dados por [Volkert-2008]_: na primeira figura, a poligonal ligando um vértice do cubo ao ponto médio da aresta pode ser interpretada de várias maneiras diferentes; na segunda figura, os ângulos retos da configuração 3D podem, ao mesmo tempo, na representação 2D, ser desenhados como um ângulo agudo e um ângulo obtuso.
+      
+      .. figure:: _resources/ambiguidade-02.jpg
+         :width: 250pt
+         :align: center
+         
+   Com relação à questão de ângulos, [Fujita-et-al-2017]_ relatam o equívoco de alunos japoneses acharem que, na figura a seguir, o ângulo `MFN` ser reto, o que não é o caso.
+      
+      .. figure:: _resources/perspectiva-angulo-01.jpg
+         :width: 120pt
+         :align: center
+   
+   Os alunos serão confrontados com estes distratores na :ref:`ativ-proj-distratores`. Espera-se que, após a realização de todas as atividades anteriores, o aluno esteja mais bem preparado ao fazê-lo.
 
    No estudo quantitativo dos comprimentos das projeções, optou-se por uma abordagem funcional (:ref:`ativ-proj-comprimentos`). O uso do conceito de função nesta parte não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. A notação funcional permite, por exemplo, compactar informação e, com isto, articular melhor o pensamento. 
    
