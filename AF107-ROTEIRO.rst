@@ -31,16 +31,13 @@ ROTEIRO: FUNÇÃO AFIM
 
    .. admonition:: Conteúdos abordados
 		
-      #. Proporcionalidade: grandezas diretamente proporcionais (revisão)
-      #. Distância entre pontos no plano (revisão)
+      #. Teorema Fundamental da Proporcionalidade
       #. Função linear: modelo para a proporcionalidade direta
       #. Taxa de variação: abordagem algébrica e geométrica
       #. Representação gráfica da função linear
-      #. Transformações: translações e homotetias
       #. Função afim
       #. Taxa de variação da função afim
-      #. Aplicações: movimento uniforme, juros simples, cálculo estequiométrico
-      #. Inversa de função afim
+      #. Aplicações: movimento uniforme e juros simples
       #. Função afim por partes
 
    .. admonition:: Pré-requisitos
@@ -50,14 +47,6 @@ ROTEIRO: FUNÇÃO AFIM
       **(EF07MA14)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax + b = c`, fazendo uso das propriedades da igualdade.
 
       **Habilidades relacionadas**
-      
-      **(EF08MA07)** Associar uma equação linear de 1º grau com duas incógnitas a uma reta no plano cartesiano.
-      
-      **(EF08MA08)** Resolver e elaborar problemas relacionados ao seu contexto próximo, que possam ser representados por sistemas de equações de 1º grau com duas incógnitas e interpretá-los, utilizando, inclusive, o plano cartesiano como recurso.
-
-      **(EF08MA10)** Identificar a natureza da variação de duas grandezas, diretamente, inversamente proporcionais ou não proporcionais, expressando a relação existente por meio de sentença algébrica e representá-la no plano cartesiano.
-
-      **(EF08MA11)** Resolver e elaborar problemas que envolvam grandezas diretamente ou inversamente proporcionais, por meio de estratégias variadas.
 
       **(EF09MA05)** Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.
 
@@ -89,19 +78,17 @@ ROTEIRO: FUNÇÃO AFIM
       
       #. "[...] nem toda razão pode ser expressa por números racionais, o que vincula, por meio da proporcionalidade, a apresentação dos números irracionais. Isso sinaliza que nem todas as situações podem ser resolvidas recorrendo-se apenas aos números racionais." [Silva-et-al-2013]_
       
-      #. Onuchic e Allevato (2008) alertam que não se transponha as propriedades dos números racionais, como a soma de frações, para a soma de razões, quando essas forem realizadas como vetores por exemplo, e citam `\frac{3}{5}+\frac{2,4}{5,6}=\frac{5,4}{10,6}`. Nesse caso, foi efetuada “[...] a adição das razões, consideradas como os vetores `(3;5)` e `(2,4; 5,6)`, cuja resultante, obtida pela regra do paralelogramo, é a razão (ou vetor)  `(5,4; 10,6)` " (p. 95). O vetor `(3;5)` refere-se à quantidade de álcool e água misturados em um recipiente de `8` litros, na razão de `3` para `5`. O vetor seguinte `(2,4; 5,6)` diz respeito à mistura de álcool para água, no segundo recipiente também de 8 litros, na razão de `3` para `7`. A razão entre álcool e água, na mistura resultante, é dada, então, pela razão ou vetor `(5,4;10,6)`. A relação proporcional (entre as partes - álcool e água – vetores) pode ser obtida pela tangente do ângulo do vetor `(5,4;10,6)`. .. [Onuchic-Allevato-2008]_
-      
       #. Há livros didáticos que sugerem que para decidir se a proporcionalidade é direta ou inversa basta testar se as grandezas variam no mesmo sentido ou em sentidos contrários, mas isso garante apenas que a função em questão é crescente (quando variam no mesmo sentido) ou decrescente (para sentidos contrários).
       
    .. admonition:: Estratégia Pedagógica
 
-      * Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: química, física, biologia e sociologia, chamando a atenção para relações não proporcionais. Investir na compreensão da taxa de variação para facilitar a associação entre a função e sua representação gráfica.
+      * Motivar o conceito de função linear revisitando a noção de proporcionalidade. Apresentar atividades exploratórias ilustrando a importância das funções lineares em outras áreas tais como: química, física, biologia e sociologia, chamando a atenção para relações não proporcionais. Investir na compreensão da taxa de variação das funções linear e afim para facilitar a associação entre a função e sua representação gráfica.
    
    .. admonition:: Estrutura
 
       **Para o professor do Capítulo**
 
-      * Não é usual que se peça aos estudantes que verifiquem que determinada relação entre grandezas é uma proporcionalidade. Normalmente ela é assumida pelo "contrato didático". Perguntas como "por que a área de um retângulo é proporcional à sua base e à sua altura?" normalmente não são sequer consideradas. Nesse sentido, perpetua-se a ideia equivocada de que o mundo é proporcional.
+      * Não é usual que se peça aos estudantes que verifiquem que determinada relação entre grandezas é de proporcionalidade, normalmente ela é assumida de maneira tácita. Perguntas como "por que a área de um retângulo é proporcional à sua base e à sua altura?" normalmente não são sequer consideradas. Nesse sentido, perpetua-se a ideia equivocada de que o "mundo é proporcional".
    
       * Apresentar, indicando bilbiografia para a demonstração, o Teorema Fundamental da Proporcionalidade: Seja `f: \mathbb{R} \to \mathbb{R}` uma função crescente ou decrescente. As seguintes afirmações são equivalentes:
       
@@ -109,15 +96,15 @@ ROTEIRO: FUNÇÃO AFIM
       #. Pondo `a=f(1)`, tem-se `f(x) =a \cdot x` para todo `x \in \mathbb{R}`.
       #. `f(x_1+x_2)=f(x_1)+f(x_2)` para quaisquer `x_1, x_2 \in \mathbb{R}`.
       
-      * Explorar tanto a visão geométrica quanto a algébrica (que em geral é mais privilegiada).
+      * Explorar tanto a visão geométrica quanto a algébrica (que em geral é mais privilegiada) dos conceitos apresentados.
       
       * Apresentar algumas razões que indiquem que a nomenclatura *coeficiente angular* e *coeficiente linear*, apesar de muito empregada pelos livros didáticos, não é adequada.
       
       Quando se representa uma função afim que descreve um experimento, alguns cuidados devem ser tomados:
       
-      * Numa função em que as grandezas associadas não possuem a mesma dimensão, as taxas de variações associadas ao gráfico não podem ser chamadas de coeficiente angular, já que este é um número puro e a taxa de variação é uma grandeza que possui dimensão.
+      * Numa função em que as grandezas associadas não possuem a mesma unidade de medida, as taxas de variações associadas ao gráfico não podem ser chamadas de coeficiente angular, já que este é um número puro e a taxa de variação, neste caso, é uma grandeza que representa uma comparação entre grandezas de unidades diferentes.
       
-      * Numa função em que o gráfico é construído com escalas diferentes, sendo ou não as grandezas de mesma dimensão, as taxas de variação não podem ser a tangente do ângulo, uma vez que o ângulo representado neste gráfico não representará o coeficiente angular da reta.
+      * Numa função em que o gráfico é construído com escalas diferentes, as taxas de variação não podem ser a tangente do ângulo, uma vez que o ângulo representado neste gráfico não representará o coeficiente angular da reta.
       
       **Texto para o aluno**
 
@@ -163,7 +150,7 @@ ROTEIRO: FUNÇÃO AFIM
       
       Gráfico da Função Linear
       
-      * via distância de pontos ou via semelhança de triângulos?
+      * Via semelhança de triângulos
       * Atividade envolvendo distância entre pontos no plano (relacionar com módulo de um vetor)
 
       Variação da Função Linear
