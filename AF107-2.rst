@@ -11,16 +11,16 @@ Atividade: Antecipando o pagamento de uma dívida
 
    **OBJETIVOS ESPECÍFICOS**
    
-   * Relacionar função afim com domínio discreto com progressões aritméticas.
-   * Perceber nas sequências apresentadas que a diferença entre termos consecutivos é constante.
+   * Relacionar função afim de domínio discreto com progressões aritméticas.
+   * Perceber nas sequências apresentadas que a diferença entre termos consecutivos é constante, e portanto elas formam uma P.A.
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Leve seus alunos a conjecturar por que, apesar da variação ser sempre de 250 reais, em um caso a primeira função (valor a pagar) é decrescente e a segunda fução (desconto) é crescente, relacionando com as expressões obtidas no item (f).
+   * Questione seus estudantes sobre o fato de, apesar da variação ser sempre de 250 reais, em um caso a primeira função (valor a pagar) é decrescente e a segunda função (desconto) é crescente, relacionando com as expressões obtidas no item (f).
    * No item (d) espera-se que a resposta seja em forma de porcentagem. Caso julgue necessário, aproveite o momento para fazer uma rápida revisão sobre o assunto.
    * Possivelmente os estudantes não estão familizarizados com alguns dos termos apresentados nessa atividade: *antecipação de uma dívida*, *desconto comercial*, *tempo de antecipação*. Antes de iniciar a atividade esclareça para eles o significado de cada um desses termos.
 
-O cliente de um banco foi à sua agência de relacionamento para negociar a antecipação de uma dívida no valor de `R$ 5.000,00` que venceria no prazo de 8 meses. Lá, foi informado pelo gerente que a a modalidade praticada era a de desconto comercial, no qual o valor a ser descontado é calculado a partir do valor da dívida e é proporcional ao tempo de antecipação. Para o caso em questão, o gerente gerou a seguinte quadro:
+O cliente de um banco foi à sua agência de relacionamento para negociar a antecipação de uma dívida no valor de `R\$ 5.000,00`, que venceria no prazo de 8 meses. Lá, foi informado pelo gerente que a modalidade praticada era a de desconto comercial, no qual o valor a ser descontado é calculado a partir do valor da dívida e é proporcional ao tempo de antecipação. Para o caso em questão, o gerente gerou a seguinte quadro:
 
 .. table:: 
    :widths: 3 1 1 1 1 1
@@ -32,11 +32,11 @@ O cliente de um banco foi à sua agência de relacionamento para negociar a ante
    | Valor a pagar (R$)  | 5.000 | 4.750 | 4.500 | 4.250 | 4.000 |
    +---------------------+-------+-------+-------+-------+-------+
 
-#. Complete a tabela até o 8º mês de antecipação.
-#. Descreva a variação sofrida pelo valor a pagar à medida em que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor a pagar entre dois meses consecutivos?
-#. Descreva a variação sofrida pelo valor do desconto à medida em que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor desconto entre dois meses consecutivos?
+#. Observando o padrão de desconto, complete a tabela até o 8º mês de antecipação.
+#. Descreva a variação sofrida pelo valor a pagar à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor a pagar entre dois meses consecutivos?
+#. Descreva a variação sofrida pelo valor do desconto à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor de desconto entre dois meses consecutivos?
 #. Qual é, então, a taxa mensal de desconto comercial praticada pelo banco?
-#. No plano cartesiano abaixo estão representados os pares ordenados `(n,D(n))` em que `n` é o tempo de antecipação e `D(n)` o valor do desconto correspondente. Represente nele os pontos que correspondem aos pares ordenados `(n,V(n))` em que `V(n)` é o valor a pagar no tempo `n`.
+#. No plano cartesiano a seguir estão representados os pares ordenados `(n,D(n))` em que `n` é o tempo de antecipação e `D(n)` o valor do desconto correspondente. Represente nele os pontos que correspondem aos pares ordenados `(n,V(n))` em que `V(n)` é o valor a pagar no tempo `n`.
 
 
 .. admonition:: Resposta 
@@ -57,7 +57,7 @@ O cliente de um banco foi à sua agência de relacionamento para negociar a ante
    
    #. A medida que o tempo aumenta, o valor do desconto aumenta. Entre dois meses consecutivos a variação do desconto é de R$ `250,00`.
    
-   #. `5` %.
+   #. `5` % do valor da dívida.
    
    #.
 
@@ -130,6 +130,61 @@ Uma caixa de água é abastecida por uma torneira cujo fluxo de água é constan
    #. Reduzem `5` litros em ambos os casos.
    
    #. Em `5` litros.
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Temperatura Controlada
+------------------------------
+
+Num laboratório, um químico conseguiu controlar a variação de temperatura de dois compostos. A variação de ambos está associada às funções afins `f` e `g`, de maneira que a taxa de variação das temperaturas de cada um dos compostos seja constante. Observe o gráfico, onde o eixo das ordenadas indica a temperatura (em graus Celsius) de cada composto em função do tempo `t`, em minutos. O gráfico da figura a seguir modela a situação:
+
+
+.. figure:: _resources/at_temp_1.jpg
+   :width: 500pt
+   :align: center
+
+O gráfico da função `f` passa pelos pontos `A=(0,-4)` e `B=(4,0)`, indicando que o composto associado à `f` está com uma temperatura de `-4\,^{\circ}\mathrm{C}` no início da medição e após `4` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+O gráfico da função `g` passa pelos pontos `C=(0,2)` e `D=(2,0)`, indicando que o composto associado à `g` está com uma temperatura de `2\,^{\circ}\mathrm{C}` no início da medição e após `2` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+Com base nas informações do texto responda as perguntas a seguir:
+
+#. Determine as expressões das funções afins `f` e `g`.
+
+#. A temperatura do composto associado à função `f` estão aumentando ou diminuindo? E do composto associado à função `g`?
+
+#. Em quanto tempo cada composto atinge a temperatura de 
+
+   `c.1)` `1\,^{\circ}\mathrm{C}`? 
+   
+   `c.2)` `-3\,^{\circ}\mathrm{C}`?`
+   
+   `c.3)` `-8\,^{\circ}\mathrm{C}`?
+   
+   `c.3)` `10\,^{\circ}\mathrm{C}`?
+   
+
+#. Após quantos minutos os dois compostos terão a mesma temperatura? E que temperatura é essa?
+
+
+.. admonition:: Resposta 
+
+   #. Como `f` intersecta o eixo das ordenadas no ponto `A=(0,-4)` temos que `b=-4`; substituindo o ponto `B=(4,0)`, ou seja, fazendo `f(4)=0` encontramos `a=1`. Do mesmo modo, `g` intersecta o eixo das ordenadas no ponto `C=(0,2)`, logo temos que `n=2`; substituindo o ponto `D=(2,0)`, ou seja, fazendo `f(2)=0` encontramos `m=-1`.
+
+   #. Observando os gráficos temos que: a temperatura do composto associado à função `f` está aumentando, e a temperatura do composto associado à função `g` está diminuindo.
+   
+   #. 
+   
+      `c.1)` Fazendo `f(t)=1` encontramos `t=5`, ou seja o composto associado à função afim `f`, atinge `1\,^{\circ}\mathrm{C}` após `5` minutos. E fazendo `g(t)=1` encontramos `t=1`, ou seja o composto associado à função afim `g`, atinge `1\,^{\circ}\mathrm{C}` após `1` minuto.
+      
+      `c.2)` Fazendo `f(t)=-3` encontramos `t=1`, ou seja o composto associado à função afim `f`, atinge `-3\,^{\circ}\mathrm{C}` após `1` minuto. E fazendo `g(t)=-3` encontramos `t=5`, ou seja o composto associado à função afim `g`, atinge `-3\,^{\circ}\mathrm{C}` após `5` minutos.
+      
+      `c.3)` Fazendo `f(t)=-8` encontramos `t=-4`, ou seja o composto associado à função afim `f`, nunca atingirá essa temperatura, já que `f` é sempre maior ou igual a  `-4\,^{\circ}\mathrm{C}`. E fazendo `g(t)=-8` encontramos `t=10`, ou seja o composto associado à função afim `g`, atinge `-8\,^{\circ}\mathrm{C}` após `10` minutos.
+      
+      `c.4)` Fazendo `f(t)=10` encontramos `t=14`, ou seja o composto associado à função afim `f`, atinge `10\,^{\circ}\mathrm{C}` após `14` minutos. E fazendo `g(t)=10` encontramos `t=-8`, ou seja o composto associado à função afim `g`, nunca atingirá essa temperatura, já que `g` é sempre menor ou igual a  `2\,^{\circ}\mathrm{C}`.
+      
+
+   #. Basta fazermos `f(t)=g(t)` , ou seja `t-4=-t+2`, resolvendo encontramos `t=3` minutos, e a temperatura é igual a `f(3)=g(3)=-1\,^{\circ}\mathrm{C}`. Portanto, os dois compostos atigem `-1\,^{\circ}\mathrm{C}` após `3` minutos de observação.
 
 
 .. _ativ-titulo-da-atividade:
