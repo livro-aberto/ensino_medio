@@ -489,12 +489,12 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
 
    * Considere a :numref:`fig-proj-raios-do-sol-03`. Pergunta 1: qual representação do Sol é mais comum entre as crianças? (A), (B) ou (C)? Pergunta 2: qual representação do Sol é mais fiel ao comportamento dos raios de luz? (A), (B) ou (C)?
    
-      .. _fig-proj-raios-do-sol-03:
+   .. _fig-proj-raios-do-sol-03:
    
-      .. figure:: _resources/raios-de-luz-03_1.jpg
-         :width: 400px
+   .. figure:: _resources/raios-de-luz-03_1.jpg
+      :width: 400px
          
-         Três representações dos raios do Sol.
+      Três representações dos raios do Sol.
    
    .. Ver <https://www.maa.org/press/periodicals/convergence/eratosthenes-and-the-mystery-of-the-stades-parallel-light-rays>.
    
@@ -567,31 +567,31 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
      
      Traçando o segmento que une `C_T` e `C_S`, o quadrilátero `PQC_SR` fica dividido em dois triângulos congruentes `PQC_S` e `PRC_S` (pelo caso lado, ângulo, lado). Assim, os ângulos `Q\hat{P}C_S` e `R\hat{P}C_S` são congruentes e serão chamados de `\theta` para facilitar a escrita. Como 
      
-       .. math::
+     .. math::
      
-          d(Q,C_S)= 695.000
+        d(Q,C_S)= 695.000
 
      e 
      
-       .. math::
+     .. math::
      
-          \begin{array}{ll}
-          d(P,C_S) & = d(C_T, C_S)-d(C_T,P)\\ 
+        \begin{array}{ll}
+        d(P,C_S) & = d(C_T, C_S)-d(C_T,P)\\ 
               &= 150.000.000-6.500\\
               &=149.993.500,
-              \end{array}
+        \end{array}
      
      então
      
-       .. math::
+     .. math::
      
-          \sin\theta = \frac{d(Q,C_S)}{d(P,C_S)}=0{,}00463.
+        \sin\theta = \frac{d(Q,C_S)}{d(P,C_S)}=0{,}00463.
      
      Portanto, `\theta=\arcsin(0,00463) = 0{,}26528` e assim, como a medida do ângulo `Q\hat{P}C_S` é igual a `2\theta`, temos que 
      
-       .. math::
+     .. math::
      
-          m(Q\hat{P}C_S)=0{,}53056^\circ.
+        m(Q\hat{P}C_S)=0{,}53056^\circ.
           
      De acordo com os cálculos feitos acima, o maior ângulo  possível entre dois raios solares que atingem o ponto `P` é de `0{,}53056^\circ`. Este valor é tão pequeno (podendo ser ainda menor), que torna-se praticamente imperceptível, e assim, os raios solares que atingem `P` parecem paralelos. Esse mesmo raciocínio pode ser utilizado para calcular o ângulo de inclinação de raios solares que atingem outros pontos. Sugerimos que você altere a posição do ponto `P` e faça os cálculos para outros casos da mesma forma que foi feito anteriormente.
      
@@ -631,38 +631,38 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
      
      Dessa forma, estamos interessados em encontrar o comprimento do segmento `DE` que representa a sombra de metade do lápis, representado pelo segmento `AB`. Note que os triângulos `ABI`, `DEI` e `C_SGI` são semelhantes (pois possuem dois ângulos congruentes), e  portanto satisfazem as seguintes razões de semelhança:
      
-        .. math::
+     .. math::
        
-           \frac{AB}{BI}=\frac{DE}{EI}
+        \frac{AB}{BI}=\frac{DE}{EI}
        
      e
     
-        .. math::
+     .. math::
        
-          \frac{AB}{AI}=\frac{C_SG}{C_SI}.
+        \frac{AB}{AI}=\frac{C_SG}{C_SI}.
        
        
      Como a distância do lápis à Terra é de `1~\text{m}`, então `EB=1~\text{m}=0{,}001~\text{km}`. Além disso, `AB=8~\text{cm}` `=0{,}00008~\text{km}` e `C_SG= 695.000~\text{km}`. Portanto, 
        
-       .. math::
+     .. math::
        
-         \begin{array}{ll}
+        \begin{array}{ll}
          C_SI & = C_TC_S-C_TE-EB-BI\\
                  & = 150.000.000-6.500-BI-0,001 \\
                  & = 149.993.499,999-BI.
-         \end{array}        
+        \end{array}        
          
      Substituindo estes valores na equações acima, temos:
      
-        .. math::
+     .. math::
        
-          \frac{0,00008}{BI}=\frac{DE}{0,001+BI}
+        \frac{0,00008}{BI}=\frac{DE}{0,001+BI}
        
      e
     
-        .. math::
+     .. math::
        
-           \frac{0,00008}{\sqrt{BI^2+0,00008^2}} = \frac{695.000}{149.993.499,999-BI}.
+        \frac{0,00008}{\sqrt{BI^2+0,00008^2}} = \frac{695.000}{149.993.499,999-BI}.
        
      Resolvendo a segunda equação, encontramos `BI=0{,}01726~\text{km}` e substituindo este valor na primeira equação, vemos que a medida do segmento `DE` é `8{,}4~\text{cm}`. Assim, a sombra do lápis, dada pelo segmento `DF`, possui comprimento `16{,}8~\text{cm}`. 
     
@@ -848,54 +848,54 @@ Observação. As projeções paralelas definidas aqui são generalizações para
 
    Com o Renascimento (século XIV-século XVII), os artistas começaram a fazer suas pinturas com a preocupação de retratar a realidade, isto é, retratar o que se vê. Para isso, eles consideraram o uso de princípios óticos geométricos e, em particular, das projeções em perspectiva. Vários aparatos foram idealizados com o próposito de produzir imagens realistas. Observe que o princípio básico de todos os dispositivos é o alinhamento do ponto do objeto a ser retratado, do ponto projetado no quadro e um centro fixo, tipicamente, o olho do observador.
    
-      .. figure:: _resources/durer-01.jpg
-         :width: 300 pt
+   .. figure:: _resources/durer-01.jpg
+      :width: 300 pt
          
-         Dispositivo de Albrecht Dürer (1471-1528).
+      Dispositivo de Albrecht Dürer (1471-1528).
 
 
-      .. figure:: _resources/cigoli-02.jpg
-         :width: 300 pt
+   .. figure:: _resources/cigoli-02.jpg
+      :width: 300 pt
          
-         Dispositivo de Lodovico Cardi (Cigoli) (1559-1613).         
+      Dispositivo de Lodovico Cardi (Cigoli) (1559-1613).         
          
 
-      .. figure:: _resources/jamnitzer-01.jpg
-         :width: 300 pt
+   .. figure:: _resources/jamnitzer-01.jpg
+      :width: 300 pt
          
-         Dispositivo de Wenzel Jamnitzer (1507/1508-1585).         
+      Dispositivo de Wenzel Jamnitzer (1507/1508-1585).         
 
 
-      .. figure:: _resources/schmalcalder-02.jpg
-         :width: 300 pt
+   .. figure:: _resources/schmalcalder-02.jpg
+      :width: 300 pt
          
-         Dispositivo de Charles Augustus Schmalcalder (1781-1843).         
+      Dispositivo de Charles Augustus Schmalcalder (1781-1843).         
 
 
-      .. _fig-proj-kircher-01:
+   .. _fig-proj-kircher-01:
       
-      .. figure:: _resources/kircher-01.jpg
-         :width: 300 pt
+   .. figure:: _resources/kircher-01.jpg
+      :width: 300 pt
          
-         Camera obscura de Athanasius Kircher (1601-1680).         
+      Camera obscura de Athanasius Kircher (1601-1680).         
 
    
    Existiram dispositivos renascentistas que produziam desenhos em projeções paralelas? O único que se conhece até o momento é a máquina de Johannes Lencker (1523-1585) que produzir desenhos em projeções ortogonais. 
   
    
-      .. figure:: _resources/lencker-01.jpg
-         :width: 300 pt
+   .. figure:: _resources/lencker-01.jpg
+      :width: 300 pt
          
-         Dispositivo de Johannes Lencker (1523-1585). 
+      Dispositivo de Johannes Lencker (1523-1585). 
          
    Enquanto que os pintores renascentistas procuravam fazer seus quadros retratando as pessoas como as vemos, na Idade Média essa preocupação não apareceria. No lugar de princípios óticos geométricos, as regras medievais incluiam pintar as pessoas de acordo com o seu *status* social: quanto maior o *status*, maior o tamanho na pintura (:numref:`fig-proj-medieval-social-03`, :numref:`fig-proj-medieval-social-05`, :numref:`fig-proj-medieval-social-01`).
    
-      .. _fig-proj-medieval-social-03:
+   .. _fig-proj-medieval-social-03:
       
-      .. figure:: _resources/medieval-social-03.jpg
-         :width: 200 pt
+   .. figure:: _resources/medieval-social-03.jpg
+      :width: 200 pt
          
-         São Lourenço entre Santos e Patrocinadores de Fra Filippo Lippi (1406-1469).            
+      São Lourenço entre Santos e Patrocinadores de Fra Filippo Lippi (1406-1469).            
          
    
 
@@ -940,11 +940,11 @@ Atividade: feixe de retas
    
    * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/kKqT9EhP> (projeções em perspectiva) e <https://www.geogebra.org/m/zdw7rVHc> (projeções paralelas). Além do círculo e do quadrado, há outras curvas não prototípicas que podem ser usadas para evidenciar o conceito mais geral de cone e cilindro.
    
-      .. _fig-proj-praticando-05:
+   .. _fig-proj-praticando-05:
    
-      .. figure:: _resources/praticando-feixe-de-retas-05.jpg
+   .. figure:: _resources/praticando-feixe-de-retas-05.jpg
       
-         Projeção em perspectiva de uma curva não prototípica.
+      Projeção em perspectiva de uma curva não prototípica.
             
    * Provavelmente os alunos responderão que o conjunto de retas usados para construir a projeção em perspectiva do quadrado formam uma pirâmide de base quadrada, o que está correto se, no lugar de retas usássemos, segmentos de reta. Não obstante, sugerimos que você aproveite a oportunidade para comparar a pirâmide de base quadrada com o cone circular reto e mesmo o caso da curva não prototípica da :numref:`fig-proj-praticando-05` para mostrar o que há em comum em todos os casos: as retas que passam todas por um mesmo ponto (o centro `O`) e passam por pontos do objeto em questão. É esta característica que dá uma definição mais geral para cones/superfícies cônicas. Assim, a pirâmide de base quadrada pode ser considerada um cone. Cabe lembrar que por este motivo, projeções em perspectiva também são denominadas :index:`projeções cônicas`. Observação análoga cabe para projeções paralelas: o conjunto de retas usadas para construir uma projeção paralela formam um cilindro e, por este motivo, projeções paralelas também são conhecidas por :index:`projeções cilíndricas`.
 
@@ -952,11 +952,11 @@ Atividade: feixe de retas
 
    * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do círculo é perpendicular ao plano `\pi` e (2) o círculo é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do círculo com relação ao centro `O` sobre o plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do círculo. Se desenharmos todas estas retas, que tipo de superfície será obtida?
 
-      .. figure:: _resources/praticando-feixe-de-retas-01.jpg
+   .. figure:: _resources/praticando-feixe-de-retas-01.jpg
 
    * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do quadrado é perpendicular ao plano `\pi` e (2) o quadrado é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do quadrado com relação ao centro `O` sobre o plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do quadrado. Se desenharmos todas estas retas, que tipo de superfície será obtida?
 
-      .. figure:: _resources/praticando-feixe-de-retas-02.jpg
+   .. figure:: _resources/praticando-feixe-de-retas-02.jpg
 
 
 #. (Projeções Paralelas)
@@ -1096,22 +1096,22 @@ Atividade: construindo objetos geométricos peculiares
 
    * Deseja-se pintar a palavra "ESCOLA" em uma rua para advertir os motoristas da proximidade de uma escola. Contudo, se a palavra for pintada normalmente, como na :numref:`fig-proj-aviso-na-rua-01` (B), o motorista verá pelo para-brisa uma imagem distorcida pela perspectiva, como na :numref:`fig-proj-aviso-na-rua-01` (C).
 
-      .. _fig-proj-aviso-na-rua-01:
+   .. _fig-proj-aviso-na-rua-01:
 
-      .. figure:: _resources/aviso-na-rua-01_4.jpg
-         :width: 450pt
+   .. figure:: _resources/aviso-na-rua-01_4.jpg
+      :width: 450pt
    
-         Estudo de sinalização de solo em uma rua.
+      Estudo de sinalização de solo em uma rua.
 
    Como deveria ser pintada a palavra na rua para que, vista pelo para-brisa de um carro, ela fosse visualizada sem distorções, como na :numref:`fig-proj-aviso-na-rua-02`. Aqui, é suficiente que você descreva um procedimento de como obter o desenho da palavra na rua: você não precisa efetivamente fazer o desenho da palavra.
 
 
-      .. _fig-proj-aviso-na-rua-02:
+   .. _fig-proj-aviso-na-rua-02:
 
-      .. figure:: _resources/aviso-na-rua-02.jpg
-         :width: 450pt
+   .. figure:: _resources/aviso-na-rua-02.jpg
+      :width: 450pt
    
-         Imagem no para-brisa sem distorções.
+      Imagem no para-brisa sem distorções.
 
 
    * O desenho da palavra que você propôs para ser pintada na rua no item anterior seria vista **sempre** sem distorções a medida que o carro se aproxima da palavra pintada?
@@ -1119,24 +1119,24 @@ Atividade: construindo objetos geométricos peculiares
    
 #. O grupo Troika tem como missão "desenvolver obras artísticas com um interesse particular na percepção e experiência espacial, desafiando prescrições de conhecimento, controle, e o que significa ser humano na era da tecnologia". A obra "Squaring The Circle" (Quadratura do Círculo) é uma peça feita de ferro que, quando observada de um ponto de vista particular, o que se vê é um círculo e, a mesma peça, quando observada de outro ponto de vista, se mostra como um quadrado.
 
-      .. _fig-proj-squaring-the-circle-01:      
+   .. _fig-proj-squaring-the-circle-01:      
    
-      .. figure:: _resources/ezgif-4-7c3b461d5e.*
-         :width: 100pt
+   .. figure:: _resources/ezgif-4-7c3b461d5e.*
+      :width: 100pt
       
-      .. figure:: _resources/squaring-the-circle-02.jpg      
+   .. figure:: _resources/squaring-the-circle-02.jpg      
     
-         Squaring The Circle (Quadratura do Círculo) do grupo Troika (fonte: <http://troika.uk.com>.
+      Squaring The Circle (Quadratura do Círculo) do grupo Troika (fonte: <http://troika.uk.com>.
  
    Como construir uma tal peça? Aqui, é suficiente que você descreva um procedimento matemático de como obtê-la: você não precisa explicitar equações para o formato geométrico da peça. 
 
 #. Este é um desafio antigo e que apareceu na edição de agosto de 1958 da revista Scientific American. A :numref:`fig-proj-cork-plug-01` exibe uma mesa com três buracos: um na forma de um quadrado, o outro na forma de um círculo e o terceiro na forma de um triângulo isósceles. O diâmetro do círculo, o lado do quadrado, a base do triângulo isósceles e sua respectiva altura têm a mesma medida.
 
-      .. _fig-proj-cork-plug-01:
+   .. _fig-proj-cork-plug-01:
    
-      .. figure:: _resources/cork-plug-table.*
+   .. figure:: _resources/cork-plug-table.*
    
-         Uma mesa com três buracos.
+      Uma mesa com três buracos.
 
    Pergunta: é possível construir uma rolha que possa ser usada para tapar qualquer um dos três buracos, um por vez? Em caso afirmativo, descreva um procedimento matemático de como obtê-la.
       
@@ -1224,10 +1224,9 @@ Atividade: construindo objetos geométricos peculiares
 
    Uma situação semelhante a da sinalização de trânsito descrita na :ref:`ativ-proj-construindo` é a confecção de paineis de propaganda em gramados de campos de futebol. Se eles forem desenhados sem distorções, suas imagens transmitidas pelas emissoras de TV ficarão distorcidas. Assim, para que a imagem fique correta quando observada pela câmera de TV, sua projeção em perspectiva é que deve ser desenhada no gramado.   
    
-      .. figure:: _resources/futebol-01.jpg
-   
-   
-         Fonte: cutedrop (Letícia Motta).
+   .. figure:: _resources/futebol-01.jpg
+  
+      Fonte: cutedrop (Letícia Motta).
    
    Note como a projeção depende da posição do observador: enquanto a câmera de TV transmite uma imagem sem distorções do painel de propaganda, uma pessoa sentada junto ao painel o verá bem distorcido.
    
@@ -1235,23 +1234,23 @@ Atividade: construindo objetos geométricos peculiares
    
    Um exemplo clássico de anamorfose é dado pelo quadro "Os Embaixadores" (1533) do artista alemão Hans Holbein, O Jovem (1497/1498-1543). Você consegue identificar a parte do quadro em anamorfose?
    
-     .. figure:: _resources/1039px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg
+   .. figure:: _resources/1039px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg
 
-        "Os Embaixadores" de Hans Holbein, O Jovem (fonte: `Wikimedia Commons <https://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg>`_).
+      "Os Embaixadores" de Hans Holbein, O Jovem (fonte: `Wikimedia Commons <https://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg>`_).
 
    Anamorfose também já foi usada para esconder imagens sensíveis, como as imagens produzidas pelo artista alemão Erhard Schön (c. 1491–1542). Você consegue identificar o que está representado em anamorfose?
 
-      .. figure:: _resources/schon-02.jpg
+   .. figure:: _resources/schon-02.jpg
  
-        "Aus, du alter Tor!" de Erhard Schön (fonte: `Explora Museum <http://www.exploramuseum.de/images/pressefotos/anamorphoseAUSDUALTERTOR1_m.jpg>`_).
+      "Aus, du alter Tor!" de Erhard Schön (fonte: `Explora Museum <http://www.exploramuseum.de/images/pressefotos/anamorphoseAUSDUALTERTOR1_m.jpg>`_).
         
-        .. Fora seu velho idiota!
+      .. Fora seu velho idiota!
         
-     .. figure:: _resources/schon-03.jpg
+   .. figure:: _resources/schon-03.jpg
  
-        "Was siehst du?" de Erhard Schön (fonte: `The British Museum <http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?partid=1&assetid=30265001&objectid=1355159>`_).  
+      "Was siehst du?" de Erhard Schön (fonte: `The British Museum <http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?partid=1&assetid=30265001&objectid=1355159>`_).  
         
-        .. O que você vê?
+      .. O que você vê?
 
    Um belo exemplo de uso artístico da anamorfose no Brasil é o projeto "Luz nas Vielas" do grupo espanhol Boa Mistura que pintou, junto com os moradores da Vila Brasilândia em São Paulo, palavras como "firmeza", "amor", "doçura" nas paredes das vielas do bairro. Para conhecer mais sobre o projeto, acesse o vídeo `Poesia e Magia <https://www.youtube.com/watch?v=Zi8ekDi7uLQ>`_ no YouTube ou a `página oficial do grupo <http://www.boamistura.com/#/project/luz-nas-vielas-2>`_.
    
@@ -1273,11 +1272,11 @@ Atividade: construindo objetos geométricos peculiares
    
    A :index:`Geometria Descritiva` é o ramo da geometria que estuda a representação de objetos tridimensionais em duas dimensões através de um certo conjunto específico de procedimentos. As técnicas resultantes são importantes para a engenharia, a arquitetura, o design gráfico e as artes (:numref:`fig-proj-geometria-descritiva-01`). A base teórica para a geometria descritiva é fornecida pelas projeções ortogonais. 
    
-    .. _fig-proj-geometria-descritiva-01:
+   .. _fig-proj-geometria-descritiva-01:
    
-    .. figure:: _resources/geometria-descritiva-01.jpg
+   .. figure:: _resources/geometria-descritiva-01.jpg
    
-       Projeções ortogonais de um carro e de uma cabeça humana.
+      Projeções ortogonais de um carro e de uma cabeça humana.
       
    O matemático francês Gaspard Monge (1746-1818) é considerado fundador da geometria descritiva. Ele a usou em engenharia militar (construção de fortificações) durante a época de Napoleão Bonaparte. De fato, geometria descritiva já foi considerada um segredo militar.
   
@@ -1312,19 +1311,19 @@ Atividade: construindo objetos geométricos peculiares
 
    O cientista cognitivo americano Douglas Richard Hofstadter (1945-) concebeu, para a capa de seu livro "Gödel Escher Bach: Um Entrelaçamento de Gênios Brilhantes", um objeto bem peculiar: suas projeções ortogonais em três planos produzem as letras "G" (de Gödel), "E" (de Escher) e "B" (de Bach).
    
-      .. figure:: _resources/geb-01.png
-         :width: 200pt
+   .. figure:: _resources/geb-01.png
+      :width: 200pt
       
-         GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
+      GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
       
    Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
    
-      .. figure:: _resources/triplets-qr.png
-         :width: 50pt
+   .. figure:: _resources/triplets-qr.png
+      :width: 50pt
    
-      .. figure:: _resources/triplets-exemplo.*
+   .. figure:: _resources/triplets-exemplo.*
         
-         Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
+      Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
          
    .. HJB: Shigeo Fukuda         
          
@@ -1332,7 +1331,7 @@ Atividade: construindo objetos geométricos peculiares
    
    Caso você queira construir uma versão simples de uma destas peças, um molde para ser impresso e recortado está disponível `neste endereço <https://goo.gl/ddFnuf>`_. Um vídeo exibindo as etapas de montagem pode ser acessado no `YouTube <https://youtu.be/QTNg0ofgB78>`_. Caso você tenha acesso a uma impressora 3D, o arquivo STL para impressão podem ser obtido gratuitamente no `Thingverse <https://www.thingiverse.com/thing:1657791>`_. 
    
-      .. figure:: _resources/sugihara-richeson.*
+   .. figure:: _resources/sugihara-richeson.*
       
       Uma peça peculiar feita de papel (fonte: `David Recheson <https://youtu.be/QTNg0ofgB78>`_).
       
@@ -1375,11 +1374,11 @@ Atividade: retas paralelas, obras de arte e o infinito
 
 Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
 
-   .. _fig-proj-infinito-01:
+.. _fig-proj-infinito-01:
 
-   .. figure:: _resources/infinito-01.jpg
+.. figure:: _resources/infinito-01.jpg
     
-      Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
+   Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
 
 .. Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_.
 
@@ -1474,24 +1473,24 @@ Caso uma pintura queira retratar a realidade segundo a metáfora da janela de Al
 Você receberá reproduções de pinturas, desenhos e fotos do seu professor (as imagens a seguir dão alguns exemplos). 
 
 
-   .. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
+.. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
 
-   .. _fig-proj-ponto-de-fuga-01:
+.. _fig-proj-ponto-de-fuga-01:
 
-   .. figure:: _resources/ponto-de-fuga-01_2.jpg
-      :width: 300pt
+.. figure:: _resources/ponto-de-fuga-01_2.jpg
+   :width: 300pt
    
-      A Última Ceia de Leonardo da Vinci (1452-1519) (fonte: Wikimedia Commons).
+   A Última Ceia de Leonardo da Vinci (1452-1519) (fonte: Wikimedia Commons).
 
 
-   .. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
+.. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
    
-   .. _fig-proj-ponto-de-fuga-02:   
+.. _fig-proj-ponto-de-fuga-02:   
 
-   .. figure:: _resources/ponto-de-fuga-02.jpg
-      :width: 300pt
+.. figure:: _resources/ponto-de-fuga-02.jpg
+   :width: 300pt
    
-      Linha de trem na cidade de Orléans na França (fonte: Wikimedia Commons).
+   Linha de trem na cidade de Orléans na França (fonte: Wikimedia Commons).
 
    
    .. _fig-proj-ponto-de-fuga-03:   
@@ -1690,7 +1689,7 @@ Em cada uma delas, você deve identificar quais são os elementos que são supos
       
    Como `r` é paralela à `s`, `r` é paralela à `r'` e `s` é paralela à `s'`, concluímos que `r'` é paralela à `s'`. Ou seja, a projeção paralela de retas paralelas entre si e paralelas ao plano de projeção será também retas paralelas.   
    
-   Por tudo que vimos, podemos concluir que as projeções paralelas de retas paralelas são retas também paralelas, com exceção para as retas perpendiculares ao plano de projeção que são projetadas perpendicularmente no plano de projeção. Neste caso, as projeção serão pontos.
+   Por tudo que vimos, podemos concluir que as projeções paralelas de retas paralelas são retas também paralelas, com exceção para as retas perpendiculares ao plano de projeção que são projetadas perpendicularmente no plano de projeção. Neste caso, as projeções serão pontos.
    
    **PARTE 3.** 
    
