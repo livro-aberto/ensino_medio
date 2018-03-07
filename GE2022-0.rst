@@ -48,6 +48,7 @@ A trigonometria começa a aparecer ainda na antiguidade e seu desenvolvimento fo
 Aristarco de Samos, que viveu entre 310 e 260 a.C. teve algumas boas ideias. Ele observou a Lua nos momentos em que ela está metade iluminada e metade escura, ou seja, nas posições de quarto minguante e quarto crescente, e a figura abaixo mostra o sol (*S*), a Terra (*T*) e a lua (*L*), com tamanho e órbitas exagerados para que se veja melhor.
 
 .. figure:: _resources/TrigFig-01.png
+   :width: 200 pt
 
 Quando a Lua está metade iluminada e metade escura, o ângulo Sol-Terra-Lua não é reto. Na verdade, esse ângulo (assinalado com `\alpha` na figura) é um pouco menor que o ângulo reto.
 Aristarco fez suas medidas e seus cálculos indicaram que o Sol estaria 19 vezes mais distante da Terra do que a Lua. O raciocínio dele foi perfeito, mas como os instrumentos de medida de ângulos naquela época tinham pouca precisão, seu resultado foi muito ruim. Na verdade, o Sol está 390 vezes mais distante da Terra do que a Lua.
@@ -60,6 +61,7 @@ A trigonometria se desenvolve no mundo grego desde a época de Aristarco até a 
 Durante todo esse tempo, a trigonometria ganhou mais relações e as novas descobertas foram conquistadas em métodos para calcular distâncias e ângulos inacessíveis. E isso ocorre até hoje. Quando buscamos a localização de um ponto na superfície da Terra pelo GPS, esse programa utiliza os satélites, os sinais de rádio que permitem determinar distâncias e as mesmas fórmulas de trigonometria que você vai aprender nesta unidade. O que o GPS faz é calcular ângulos e distâncias em triângulos.
 
 .. figure:: _resources/TrigFig-02.png
+   :width: 200 pt
 
 
 .. _ativ-estimando-comp-ang:
@@ -86,6 +88,7 @@ No século V a.C., na ilha de Samos, uma montanha estava interrompendo o trajeto
 A figura a seguir mostra a montanha e os pontos **A** e **B** que serão as extremidades do túnel. O terreno em volta da montanha é plano. Então, os engenheiros projetaram a construção desse túnel desde o ponto **A**, na face norte da montanha até o ponto **B**, na face sul, mas alguns problemas deveriam ser resolvidos.
 
 .. figure:: _resources/TrigFig-02A.png
+   :width: 200 pt
 
 Os engenheiros precisavam saber a distância entre os pontos **A** e **B** para ter uma ideia do tempo em que levaria a escavação do túnel e, como o trabalho deveria ser feito tanto a partir de **A** quanto a partir de **B**, seria necessário obter as direções em que cada equipe deveria escavar para que se encontrassem no meio do túnel.
 
@@ -112,15 +115,113 @@ Com seus instrumentos, faça um desenho em escala da situação descrita acima.
    #. `60^{\circ}` e `120^{\circ}`
 
 
+.. _ativ-descobrindo-pitagoras:
+
+Atividade: Descobrindo um teorema
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Fazer uma conjectura a partir Fazer uma conjectura a partir de uma situação concreta.
+   * Exprimir a conjectura usando símbolos e operações.
+
+
+A figura a seguir mostra um triângulo `ABC`, retângulo em `A` e quadrados construídos sobre seus lados
+
+
+.. tikz:: 
+
+   \definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+   \clip(-5.26565643546426,-6.789062838538253) rectangle (5.785670595615494,7.1982057095701775);
+   \draw[line width=0.8pt,fill=black,fill opacity=0.05000000074505806] (1.8150509513750424,1.8872143947231454) -- (1.9617853545590336,1.5240340024585624) -- (2.324965746823617,1.6707684056425538) -- (2.1782313436396255,2.033948797907137) -- cycle; 
+   \fill[line width=1.6pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (2.1782313436396255,2.033948797907137) -- (3.,0.) -- (5.0339487979071365,0.8217686563603743) -- (4.212180141546762,2.855717454267511) -- cycle;
+   \fill[line width=1.6pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (-2.855968586582208,0.) -- (2.1782313436396255,2.033948797907137) -- (0.14428254573248944,7.068148728128969) -- (-4.889917384489344,5.034199930221834) -- cycle;
+   \fill[line width=1.6pt,color=qqzzqq, opacity =.25] (3.,0.) -- (-2.855968586582208,0.) -- (-2.8559685865822084,-5.855968586582206) -- (3.,-5.8559685865822075) -- cycle;
+   \fill[line width=0.8pt,color=yqyqyq,fill=yqyqyq,fill opacity=0.10000000149011612] (2.1782313436396255,2.033948797907137) -- (-2.855968586582208,0.) -- (3.,0.) -- cycle;
+   \draw [line width=0.8pt] (-2.855968586582208,0.)-- (3.,0.);
+   \draw[line width=0.8pt] (-0.1970026843675304,7.752156939198234) -- (5.342509611913049,7.752156939198234);
+   \draw [line width=0.8pt] (-2.855968586582208,0.)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=0.8pt] (2.1782313436396255,2.033948797907137)-- (3.,0.);
+   \draw [line width=1.6pt,color=qqqqcc] (2.1782313436396255,2.033948797907137)-- (3.,0.);
+   \draw [line width=1.6pt,color=qqqqcc] (3.,0.)-- (5.0339487979071365,0.8217686563603743);
+   \draw [line width=1.6pt,color=qqqqcc] (5.0339487979071365,0.8217686563603743)-- (4.212180141546762,2.855717454267511);
+   \draw [line width=1.6pt,color=qqqqcc] (4.212180141546762,2.855717454267511)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=1.6pt,color=qqqqcc] (-2.855968586582208,0.)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=1.6pt,color=qqqqcc] (2.1782313436396255,2.033948797907137)-- (0.14428254573248944,7.068148728128969);
+   \draw [line width=1.6pt,color=qqqqcc] (0.14428254573248944,7.068148728128969)-- (-4.889917384489344,5.034199930221834);
+   \draw [line width=1.6pt,color=qqqqcc] (-4.889917384489344,5.034199930221834)-- (-2.855968586582208,0.);
+   \draw [line width=1.6pt,color=qqzzqq] (3.,0.)-- (-2.855968586582208,0.);
+   \draw [line width=1.6pt,color=qqzzqq] (-2.855968586582208,0.)-- (-2.8559685865822084,-5.855968586582206);
+   \draw [line width=1.6pt,color=qqzzqq] (-2.8559685865822084,-5.855968586582206)-- (3.,-5.8559685865822075);
+   \draw [line width=1.6pt,color=qqzzqq] (3.,-5.8559685865822075)-- (3.,0.);
+   \draw [line width=1.2pt,dash pattern=on 2pt off 2pt,color=qqqqcc] (-4.283827313715963,3.534074364064485)-- (1.5721412728662443,3.5340743640644856);
+   \draw [line width=1.2pt,dash pattern=on 2pt off 2pt,color=qqqqcc] (-1.3558430204248593,6.462058657355588)-- (-1.3558430204248593,0.6060900707733814);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq] (2.1782313436396255,2.033948797907137)-- (-2.855968586582208,0.);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq, opacity =.2] (-2.855968586582208,0.)-- (3.,0.);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq] (3.,0.)-- (2.1782313436396255,2.033948797907137);
+   \begin{scriptsize}
+   \draw [fill=black] (3.,0.) circle (1.0pt);
+   \draw[color=black] (3.292890062289234,-0.2662871096678862) node {$C$};
+   \draw [fill=black] (-2.855968586582208,0.) circle (1.0pt);
+   \draw[color=black] (-3.2714320088032514,-0.07240417929806636) node {$B$};
+   \draw [fill=black] (2.4793908969815135,7.752156939198234) circle (1.5pt);
+   \draw [fill=black] (2.1782313436396255,2.033948797907137) circle (1.0pt);
+   \draw[color=black] (2.240382725995924,2.558864161435203) node {$A$};
+   \draw [fill=qqqqcc] (-1.355843020424859,3.534074364064485) circle (1.0pt);
+   \end{scriptsize}
+
+Na versão digital, você pode mover a bolinha sobre o segmento de reta que aparece em cima, para modificar a figura mantendo o triângulo ABC sempre retângulo em `A`.
+
+Na figura anterior o quadrado construído sobre o lado `AB` foi dividido em quatro partes congruentes por um segmento paralelo à BC e outro perpendicular à `BC`, ambos passanto pelo centro desse quadrado.
+
+Imprima uma cópia dessa figura.
+
+Recorte os quadrados azuis e corte nas linhas tracejadas separando as quatro partes do quadrado maior. Você tem, então 5 peças azuis de papel.
+
+* Tente cobrir o quadrado construído sobre a hipotenusa utilizando as 5 peças que você possui.
+
+Se você conseguiu, elabore uma frase que descreva a propriedade do triângulo retângulo que você observou
+
+
+.. admonition:: Resposta 
+
+   Uma resposta possível é:
+   
+   "Em um triângulo retângulo, a área do quadrado construído sobre a hipotenusa é igual à soma das áreas dos triângulos construídos sobre os catetos".
+
+
+A propriedade que você observou parece verdadeira nesse triângulo retângulo que o livro mostrou. Entretanto, se o triângulo for diferente, será que a mesma propriedade ocorrerá? Essa é uma boa pergunta você poderia investigar.
+
+Na versão digital do livro, é possível modificar a figura movendo a bolinha sobre o segmento que aparece no alto da figura. Se você tiver acesso à versão digital, modifique a figura, imprima novamente e faça de novo a experiência de tentar cobrir o quadrado maior com as 5 peças obtidas dos quadrados menores. Se você não tem acesso à versão digital, utilize seus intrumentos de desenho, régua, esquadros e compasso, para criar uma figura do mesmo tipo com as medidas que você quiser. Com sua figura pronta, faça de novo a experiência e observe o resultado.
+
+A propriedade que você observou parece ser verdadeira em todos os triângulos retângulos. A frase que você elaborou descrevendo uma propriedade dos triângulos retângulos que foi observada é chamada de uma conjectura. Essa palavra significa uma afirmação que parece ser verdade em todos os casos, mas que ainda não temos certeza.
+
+Para adquirir essa certeza, precisamos de uma demonstração. E é isso que veremos a seguir.
+
+
+.. admonition:: Para o professor
+
+   A decomposição que descrevemos é devida ao inglês Henry Perigal (1801, 1898).
+   
+   Perigal era um livreiro em Londres e um matemático amador reconhecido, pois foi membro da “London Mathematical Society” desde 1868 até sua morte. Em 1891 Perigal publicou o livro “Geometric Dissections and Transpositions” contendo a demonstração do teorema de Pitágoras utilizando a decomposição que mostramos na figura anterior. 
+   
+   Para ver uma exclente animação da conjectura do teorema de Pitágoras com uma animação, recomende seus alunos a ver o vídeo: https://www.youtube.com/watch?v=LtkAIQcACqY
+
+      
 ********
 Organizando as ideias
 ********
  
-Na atividade anterior, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram **estimados** por uma construção geométrica. Vamos agora descobrir relações que permitem calcular com grande exatidão essas medidas.
+Na :ref:`ativ-estimando-comp-ang`, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram estimados por uma construção geométrica e na :ref:`ativ-descobrindo-pitagoras` você teve a oportunidade de elaborar uma conjectura relacionada ao triângulo retângulo. Vamos agora utilizar a semelhança de triângulos para descobrir relações entre os elementos de um triângulo retângulo e demonstrar o teorema de Pitágoras que é, talvez, o resultado mais famoso da Matemática. No final, a conjectura que você elaborou na :ref:`ativ-descobrindo-pitagoras` vai se transformar em certeza e, com isso, você poderá calcular com exatidão o comprimento do túnel da :ref:`ativ-estimando-comp-ang`.
 
 Iniciamos observando um triângulo retângulo.
 
 .. figure:: _resources/TrigFig-03.png
+   :width: 200 pt
  
 O triângulo `ABC` da figura acima é retângulo em `A` e seus lados medem `BC=a`, `AC=b` e `AB=c`. A altura relativa à hipotenusa é `AH=h`. O pé da altura dividiu a hipotenusa em duas partes: `HC=m` e `HB=n`.
  
@@ -130,6 +231,7 @@ Observe ainda que os ângulos azuis são iguais, que os ângulos vermelhos tamb�
 Vamos agora cortar o triângulo `ABC` na sua altura `AH`. O triângulo original e as duas partes aparecem na figura a seguir.
  
 .. figure:: _resources/TrigFig-04_1.png
+   :width: 200 pt
 
 Veja que os três triângulos da figura acima são semelhantes. Vamos explorar isso.
 
@@ -186,11 +288,13 @@ A recíproca do teorema de Pitágoras é verdadeira e será demonstrada no final
 
    O teorema de Pitágoras, pela sua inegável beleza e por suas amplas aplicações tem fascinado pessoas, matemáticos ou não, por 2500 anos. Não se conhece a primeira demonstração desse teorema (descoberta na Escola de Pitágoras, séc. V a.C.), mas durante todo esse tempo, muitas demonstrações diferentes foram descobertas e publicadas em todo o mundo. Em 1927, Elisha Loomis (1852, 1940) publicou um livro com 230 demonstrações diferentes do teorema de Pitágoras, comentadas e com sua origem. A última edição do livro, publicado no ano de sua morte, contém 370 demonstrações do teorema de Pitágoras.
    
-.. figure:: _resources/TrigFig-05a.png  
+.. figure:: _resources/TrigFig-05a.png
+   :width: 200 pt
 
    Estátua localizada no porto de Pythagoreio, Ilha de Samos, Mar Egeu
 
 .. figure:: _resources/TrigFig-06.png
+   :width: 300 pt
 
    Veja onde nasceu Pitágoras de Samos
    
@@ -210,6 +314,8 @@ Para Saber Mais
 O teorema de Pitágoras é uma afirmação sobre áreas. Ele diz que, em qualquer triângulo retângulo, a área do quadrado construído sobre a hipotenusa é igual à soma das áreas dos quadrados construídos sobre os catetos. Para visualizar, na figura a seguir, o teorema de Pitágoras afirma que a área do quadrado azul é igual à soma das áreas dos quadrados verdes.
 
 .. figure:: _resources/TrigFig-06A.png
+   :width: 250 pt
+   
 
 A primeira demonstração completa que temos documentada foi publicada na coleção chamada “Os Elementos” de Euclides, no século 3 a.C.
 
@@ -218,6 +324,7 @@ A demonstração não é simples, e utiliza propriedades de figuras que possuem 
 Apresentaremos, a seguir, uma demonstração visual do teorema de Pitágoras tendo a área como argumento. A partir de um triângulo retângulo de hipotenusa `a` e catetos `b` e `c`, foram construídos dois quadrados, ambos com lado igual a `b+c`. Você pode verificar que, claramente, a área do quadrado azul à esquerda é igual à soma das áreas dos quadrados verdes à direita.
 
 .. figure:: _resources/TrigFig-06B.png
+   :width: 200 pt
 
 
 
@@ -268,6 +375,7 @@ Atividade: obtendo e aplicando outras relações
 Vamos retomar a figura que usamos na seção anterior e as semelhanças que apontamos para obter mais duas relações que podem nos ajudar no cálculo de medidas desconhecidas em triânguloes retângulos.
 
 .. figure:: _resources/TrigFig-03.png
+   :width: 200 pt
 
 Use a semelhança entre `ABC` e `HBA` e a semelhança entre `HAC` e `HBA` para encontrar uma expressão para
    
@@ -279,6 +387,7 @@ Use a semelhança entre `ABC` e `HBA` e a semelhança entre `HAC` e `HBA` para e
    A primeira figura mostra uma semicircunferência e um segmento perpendicular ao seu diâmetro e, a segunda figura mostra um triângulo retângulo e sua altura relativa à hipotenusa.
 
 .. figure:: _resources/TrigFig-07.png
+   :width: 250 pt
    
 .. admonition:: Resposta 
 
@@ -333,6 +442,7 @@ Vamos seguir a ideia da atividade anterior. Consideremos o triângulo `ABC` ret�
 Considere agora um triângulo semelhante a `ABC` com hipotenusa igual a 1. Os catetos desse novo triângulo medem, naturalmente, `\dfrac{b}{a}` e `\dfrac{c}{a}`.
 
 .. figure:: _resources/TrigFig-08.png
+   :width: 300 pt
 
 O número `\dfrac{b}{a}` chama-se seno do ângulo `\alpha` e é representado por `\mbox{sen }\alpha` (na notação brasileira) ou `\sin\alpha` (na notação internacional).
 
@@ -348,12 +458,14 @@ O seno e o cosseno de um ângulo são números associados ao ângulo e não depe
 Dado um ângulo agudo de um triângulo retângulo de hipotenusa igual a 1, o seno e o cosseno desse ângulo são as medidas do cateto oposto a esse ângulo e do cateto adjacente a esse ângulo.
 
 .. figure:: _resources/TrigFig-09.png
+   :width: 200 pt
 
 Temos o hábito de fazer referência a determinado ângulo através de sua medida. Assim, quando escrevemos `\mbox{sen } 40^{\circ}` estamos nos referindo ao seno do ângulo que mede `40^{\circ}`. O seno é uma característica do ângulo, e não depende de sua medida.
 
 Veja, por exemplo o seno e o cosseno do ângulo de `40^{\circ}` na figura a seguir, com aproximação de cinco decimais.
 
 .. figure:: _resources/TrigFig-10.png
+   :width: 200 pt
 
 Os valores que estão na figura acima foram obtidos com uma calculadora científica. Infelizmente, com os recursos da matemática elementar, só podemos calcular valores exatos de seno e cosseno de poucos ângulos.
 
@@ -365,6 +477,7 @@ Com um triângulo equilátero de lado 2 temos que sua altura mede `\sqrt{3}` pel
 
 
 .. figure:: _resources/TrigFig-11_2.png
+   :width: 200 pt
 
 Observando as figuras acima temos que
 
@@ -380,6 +493,7 @@ Observando as figuras acima temos que
 Para os cálculos com outros ângulos, antigamente o livro didático fornecia a vocês, alunos, uma tabela com senos e cossenos de `1^{\circ}` até `89^{\circ}`. Hoje você tem os senos e cossenos de todos os ângulos que quiser disponíveis na calculadora do seu celular. Procure e encontre algo assim:
 
 .. figure:: _resources/TrigFig-12.png
+   :width: 300 pt
 
 Usando uma calculadora desse tipo, fizemos uma pequena tabela de senos e cossenos para que se possa observar a variação desses números quando o ângulo varia.
 
@@ -421,6 +535,7 @@ Consideremos novamente o triângulo `ABC` retângulo em `A`, com hipotenusa `a` 
 Imagine agora um triângulo semelhante a `ABC` onde o cateto adjacente ao ângulo `\alpha` tenha comprimento 1. Naturalmente que o outro cateto (que é oposto ao ângulo `\alpha`) mede `\dfrac{b}{c}`.
 
 .. figure:: _resources/TrigFig-13.png
+   :width: 200 pt
 
 O número real `\dfrac{b}{c}` é chamado de tangente do ângulo `\alpha` e é representado por `\mbox{tg }\alpha` (na notação brasileira) ou `\tan\alpha` (na notação internacional).
 
@@ -500,6 +615,7 @@ Atividade: calculando medidas de uma peça
 A figura abaixo mostra o corte transversal uma peça de concreto usada na engenharia para conter terrenos com possibilidade de deslizamento.
 
 .. figure:: _resources/TrigFig-14.png
+   :width: 200 pt
 
 Quais são as medidas de `AB` e `BC` em número inteiro de centímetros?
 
@@ -572,6 +688,7 @@ A figura a seguir mostra o morro do Pão de Açúcar no Rio de Janeiro. O observ
 Este é um exemplo do que chamamos de “medida inacessível”.
 
 .. figure:: _resources/TrigFig-15.png
+   :width: 200 pt
 
 As medidas que vamos descrever a seguir são reais. Acompanhe o procedimento.
 
@@ -621,6 +738,7 @@ Uma pirâmide tem base quadrada de lado de comprimento 2 e arestas laterais toda
 Observe o desenho a seguir
 
 .. figure:: _resources/TrigFig-16.png
+   :width: 200 pt
 
 O ponto `O` é o centro do quadrado `ABCD` e o segmento `OE` é perpendicular ao plano do quadrado. Por isso, `OE` é perpendicular a qualquer reta contida no plano do quadrado e que passa por `O`.
 

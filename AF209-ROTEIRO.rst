@@ -139,7 +139,7 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
      
      .. _fig-coloque-aqui-o-nome:maos_com_barbante.jpg
 
-     .. figure:: _resources/maos_com_barbante.jpg
+     .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=maos_com_barbante.jpg
           :width: 200pt
           :align: center
       

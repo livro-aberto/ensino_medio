@@ -1,141 +1,310 @@
+.. admonition:: Para o professor
 
-=================
-Função Quadrática
-=================
+   **Habilidades e pré-requisitos**
+   
+   Neste capítulo contemplam-se as seguintes habilidades da segunda versão da Base Nacional Comum Curricular (BNCC):
+   
+   
+   .. admonition:: EM12MT09 
 
-.. admonition:: Objetivos Específicos
+      Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+   
 
-	**(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+   .. admonition:: Pré-requisitos 
 
-.. admonition:: Pré-requisitos 
+   	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
 
-	**(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
+   	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+   
+    
+   
+   .. admonition:: Objetivos Específicos 
 
-	**(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
+      #. Motivar o conceito de função quadrática através do movimento uniformemente variado (M.U.V.).
+      #. Explorar de modo intuitivo, as principais propriedades da função quadrática, com ênfase no seu gráfico.
+      #. Explorar o conceito de otimização, por meio da forma canônica, em situações que possam ser modeladas por funções quadráticas.
+      #. Inferir que o gráfico de toda função quadrática é uma parábola e que pode ser obtido por translações da função real `f` definida por `f(x)=ax^2` (`a \in \mathbb{R}`), definindo formalmente suas formas polinomiais e canônicas.
+      #. Apresentar situações modeladas por funções quadráticas de domínio discreto.
+      #. Determinar os zeros de uma função quadrática e reconhecê-los  graficamente, assim como os momentos de crescimento e decrescimento da função.
+      #. Reconhecer o eixo de simetria do gráfico de uma função quadrática.
+      #. Determinar a lei de formação de uma função quadrática apresentando seu gráfico.
+      
+   
+   Prezado colega, neste capítulo tivemos o cuidado de apresentar os conceitos, propriedades, definições e aplicações relacionadas ao estudo das funções quadráticas de modo gradativo e por meio de atividades que guiarão os alunos para os objetivos deste capítulo, mencionados anteriormente. Optamos, por influência da habilidade do BNCC, introduzir os conceitos mais básicos por uma atividade que estuda o movimento de queda livre de um objeto. De posse desses conceitos básicos, partimos para a segunda atividade que tem como objetivo geral de familiarizar os alunos com o gráfico de uma função real `f` definida por `f(x)=x^2`, chamando a atenção para suas caracteríticas e propriedades. 
+   
+   Nas atividades seguintes exploramos problemas de otimização. Optamos por abordar esse assunto utilizando a forma canônica da função quadrática, pois é fato que a mesma já exibe claramente as coordenadas do vértice da parábola, facilitando assim a descoberta desse valor (máximo ou mínimo). Além disso, a forma canônica permite, de modo simples, apresentar ao aluno que todos os gráficos das funções quadráticas podem ser obtidos por translações do gráfico da função real `f` definida por `f(x)=ax^2` apresentado nas atividades iniciais do capítulo.
+   
+   Para concluir o capítulo, aplicamos os conhecimentos adquiridos em problemas nos quais a modelagem permite uma aproximação por parábolas e, nesses casos, o estudante precisa determinar a lei de formação da função quadrática através de informações gráficas inicialmente apresentadas. 
+   
+   Por fim, na seção aprofundamentos, abordamos dois assuntos de extrema importância: A utilização prática da parábola que vem como consequência da sua propriedade refletora, e desfazemos alguns equívocos frequentes que ocorrem ao se admitir que algumas curvas ou situações podem ser modeladas por funções quadráticas.
+  
+  
+   .. admonition:: Dificuldades típicas dos alunos (distratores)
+      
+    #. Os alunos conhecem a denominação correta do gráfico apresentado pela função quadrática, porém, não conseguem distingui-lo de outros gráficos curvilíneos.  [Alexandre-et-al-2009]_
 
-.. note:: **Roteiro**
+       Distrator trabalhado em: :ref:`ativ2-invest-x-a-2`, :ref:`sub-aprof-catenaria`. 
 
-   `1.` Motivar o conceito de função quadrática com problemas de geometria.
-   
-   **Ideia 1.** Explorar (utilizando Geogebra) área e perímetro de retângulos inscritos no triângulo.
-   
-   **Ideia 2.** Problema dos retângulos de perímetro constante: altura `=f` (base): função afim, área `=f` (base): função quadrática.
+    #. Os alunos sabem, conceitualmente, a relação existente entre os eixos das abscissas e ordenadas na função quadrática, mas não possuem habilidades de diferenciá-los durante o processo resolução de uma questão contextualizada envolvendo função quadrática.  [Alexandre-et-al-2009]_ 
 
-   .. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulos.png
-      :width: 600px
-      :align: center
+       Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`, :ref:`sec-obtendo-lei-do-grafico`. 
 
-   
-   `2.` Explorar, de maneira informal, as noções de zero, crescimento e decrescimento, máximo da função.
-   
-   `3.` Parábola (lugar geométrico).
-   
-   `4.` Gráfico de Função Quadrática.
-   
-   `5.` Forma Algébrica: polinômios de grau 2 (revisitar os exemplos explorando suas versões algébricas e apresentar novos problemas, tipo lucro máximo, etc).
-   
-   `6.` Revisão sobre fatoração (Algeplan?)
-   
-   `7.` Forma canônica do Trinômio.
-   
-   `8.` Interseções com os Eixos, Vértice da Parábola.
-   
-   `9.` Movimento Uniformemente Variado.
-   
-   `10.` Taxa de variação linear (no gráfico) [Aprofundamento]
-   
-   `11.` Sinal da Imagem e Inequações [Aprofundamento] 
-   
-   **Referências**
-   
-   [1] Expose_bourdeaux_2010.pptx
+    #. Os alunos compreendem a qual eixo está relacionado, genericamente, o domínio e a imagem, porém não conseguem particularizá-lo a função quadrática.  [Alexandre-et-al-2009]_
 
-titulo
-=======
+       Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`, :ref:`sec-obtendo-lei-do-grafico`. 
 
-Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, em que queremos saber em que condições uma determinada quantidade assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, o volume máximo que uma caixa pode ter, o preço mínimo de um determinado produto e assim por diante. Vamos ver em um exemplo.
+    #. Há uma grande dificuldade em utilizar processos simples de fatoração para representar uma função quadrática em sua forma fatorada, consequentemente na busca dos zeros da função. [Parent-2015]_ 
 
-O retângulo que se move
------------------------
+       Distrator trabalhado em: :ref:`sub-Org-Ideias5`, :ref:`sec-obtendo-lei-do-grafico`.
+
+    #. "[...]os estudantes ficam confusos quando as equações quadráticas são apresentadas de maneira não usual pois não são exatamente como estes estão acostumados a vê-las. Por o exemplo, ao apresentar `x^2 + 3x + 1 = x + 4` que não está em forma padrão, vários alunos apresentam dificuldades quando solicitado a realizar várias tarefas.  [Kotsopoulos-2007]_
+
+       Distrator trabalhado em: :ref:`sec-org-ideias-quad-max-min-na-quadratica` , :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`. 
+
+    #. Ao fazer alusão com a função afim alguns alunos acreditam equivocadamente que o coeficiente "a" da forma polinomial ou canônica representa a taxa de variação da função ou a "inclinação" de uma função quadrática. [Parent-2015]_
+
+       Distrator trabalhado em: :ref:`sec-org-ideias-quad-max-min-na-quadratica`, :ref:`sec-parametros-grafico-quadratica`.
+
+    #. Alguns alunos não associam a ideia de máximo ao `a<0` e ao mínimo ao `a>0`, associam apenas ao valor numérico da expressão `\frac{-\Delta}{4a}`, sem ao menos se preocupar se o domínio é um intervalo e se a ordenada do vértice está contida na imagem.
+
+       Distrator trabalhado em: :ref:`sec-org-ideias-quad-max-min-na-quadratica`.
+
+    #. Há uma grande tendência dos alunos associarem a imagem da função quadrática ao gráfico da parábola e não a um conjunto de valores reais do eixo das ordenadas.
+
+       Distrator trabalhado em: :ref:`ativ-lancando-vertical-em-Dubai`, :ref:`sub-org-ideias-em-x-a-2`, :ref:`sub-Ativ-Perimetro_Fixo`, :ref:`ativ-aumento-passagem`. 
+
+   **Bibliografia**
+   
+   .. [Alexandre-et-al-2009] Alexandre, Patrícia P; Santos,Márcia Hellen S Mendes. **Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática**. I Simpósio Nacional de Ensino de Ciência e Tecnologia. 
+
+   .. [Assis-2015] Assis, Victor Hugo D. de. **Características da função quadrática e a metodologia da resolução de problemas** UNESP: São José do Rio Preto, SP.
+
+   .. [Avila] Ávila, G. **Funções e gráficos num problema de frenagem**. Revista do professor de matemática, número `12`. Disponível em `RPM12 <http://rpm.org.br/cdrpm/12/5.htm>`_ .
+
+   .. [Batschelet-1978] Batschelet, Edward. **Introdução à Matemática para Biocientistas** /E.Batschelet; tradução de Vera Maria Abud Pacífico da Silva e Junia Maria Penteado de Araújo Quitete - Rio de Janeiro: Interciência.
+
+   .. [Cance-2015] Cance, Cesar A. **Projeto canhão: o ensino de funções quadráticas com o auxílio do software Geogebra**. UFSCar, PROFMAT: São Carlos, SP.
+
+   .. [Cerqueira-2015] Cerqueira, Adriano A. **Parábola e suas aplicações** UFBA, PROFMAT: Salvador.
+
+   .. [Chung-2013] Chung, Kenji. **A Parábola, sua propriedade refletora e aplicações** UFRPE: Recife, PE.
+
+   .. [Connally-et-al-2011] Connally, Hughes-Hallett, Gleason, et. al. **Functions Modeling Change: A Preparation for Calculus**, `4^{th}` edition. EUA, National Science Foundation under Grant. 
+
+   .. [Cooney-et-al-2011] Cooney, Thomas J., [et. al.]  **Developing an essential understanding of functions for teaching mathematics** in grades `9-12`, `2^{th}` edition. EUA: The National Council of Teachers of Mathematics. (Essential understanding series)
+
+   .. [DetranPR] **Comportamentos seguros no trânsito**, Departamento de trânsito do Paraná. Disponível em `Motorista <http://www.detran.pr.gov.br/modules/catasg/servicos-detalhes.php?tema=motorista&id=345>`_ .
+
+   .. [Duarte-2014] Duarte, José L. **Problemas de máximos e mínimos no ensino médio**. UNESP: Ilha Solteira, SP.
+
+   .. [D'Amore-et-al-2015] D’Amore B., Fandiño Pinilla M. I. **A formula for an objective measurement of students’ understanding difficulties of a mathematical text**. Universidad Distrital “Francisco José de Caldas”, Bogotà, Colombia (Grupo MESCUD). Evaluative and educational use. Scientia Pedagogica Experimentalis.
+
+   .. [Eves-2004] Eves, Howard. **Introdução à história da matemática** tradução: Hygino H. Domingues. - Campinas, SP: Editora da UNICAMP. Tradução de: **An introduction to the history of mathematics**.
+
+   .. [Figueredo-2017] Figueredo, Eudes J.G. de. **Uma análise sobre a valorização do conceito de máximo e mínimo por estudantes do ensino médio** UFRPE, PROFMAT: Recife. 91 f.: il.
+
+   .. [Hellmeister-2013] Hellmeister, Ana Catarina P., coordenadora. **Geometria em Sala de Aula**. Rio de Janeiro: SBM. `552` p. (Coleção do Professor de Matemática; `32`)
+
+   .. [JCNET-2013] Jornal da Cidade - Bauru e garnde região, matérial online de `05` de fevereiro. `Distância de Frenagem <https://www.jcnet.com.br/Geral/2013/02/direcao-defensiva-saiba-como-a-velocidade-influi-na-frenagem-do-veiculo.html#prettyPhoto>`_ .
+
+   .. [Junior-2017] Junior, Gilberto C. da S. **Método dos mínimos quadrados aplicado ao lançamento de foguetes propulsionados a ar comprimido** Universidade Estadual Paulista “Júlio de Mesquita Filho”: Rio Claro: [s.n.]. 107 f.: fig., tab
+
+   .. [Kotsopoulos-2007] Kotsopoulos, D. **Unraveling student challenges with quadratics: A cognitive approach**. Australian Mathematics Teacher, `63(2)`, `19-24`.
+
+   .. [Lima-2006] Lima, E. **A matemática do ensino médio – Vol. 1**,  `9^a` ed. Coleção do Professor de Matemática. Rio de Janeiro, Sociedade Brasileira de Matemática.
+
+   .. [Louzada-2013] Louzada, Sílvia. **Relações entre Cônicas e Funções no Ensino Médio**. Espírito Santo, UFES, PROFMAT.
+
+   .. [Maia-2007] Maia, Diana. **Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática**. São Paulo, PUC, Dissertação de Mestrado.
+
+   .. [Monteiro-2014] MONTEIRO, R. M. **Resgate do teorema de Dandelin no estudo de cônicas com o geogebra**. Espírito Santo: UFES, PROFMAT. Dinponível em `Monteiro <http://portais4.ufes.br/posgrad/teses/tese_7674_Disserta%E7%E3o%20-%20final%20-%20Rubens%20Monteiro.pdf>`_.
+
+   .. [Parent-2015] Parent, Jennifer Suzanne Stokes. **"Students' Understanding Of Quadratic Functions: Learning From Students' Voices"**.Vermont University - Graduate College Dissertations and Theses. Paper 376.
+
+   .. [Pietrocola-et-al-2016] Pietrocola, M. [et. al.]. **Física em contexto, 1: ensino médio**, `1^a` ed. - São Paulo: Editora do Brasil.
+
+   .. [Rocha-2013] Rocha, Alan M. **Problemas de Otimização Envolvendo a Matemática do Ensino Médio**. Goiás: UFG, PROFMAT. Disponível em `ROCHA <https://repositorio.bc.ufg.br/tede/handle/tde/2955>`_.
+
+   .. [Saarinem-apud-Torres-2004] Saarinem *apud* Torres, Raul I. **El vientre de un arquicteto**. Espanha, Islas Canarias, Universidad de Laguna. Curso Universitario Interdisciplinar Sociedad, Ciencia, Tecnología y Matemáticas, Módulo `1`, `02` Abril. Disponível em `El vientre de un arquitecto <http://imarrero.webs.ull.es/sctm04/modulo1/10/ribanez.pdf>`_ acessado em 03/02/2018.
+
+   .. [Santos-2009] Santos, Angela R. **Construções Concretas e Geometria Dinâmica: Abordagens Interligadas para o estudo de Cônicas** - São Carlos, SP: SBMAC, `82` p., `20.5` cm - (Notas em Matemática Aplicada; v. `44` ).
+
+   .. [Silva-2013] Silva, Ramon de Abreu. **Funções Quadráticas e suas Aplicações no Ensino Médio**. Rio de Janeiro, IMPA, PROFMAT.
+
+   .. [Silva-2015] Silva, Tiago L. **O ensino de funções polinomiais do 2º grau: Uma aplicação com o software GeoGebra** UFERSA:  Mossoró. 61f: il.
+
+   .. [Stump-1999] Stump, S. **Secondary mathematics teachers' knowledge of slope**. Mathematics Education Research Journal, `11(2)`, `124–144`.
+
+   .. [Talavera-2008] Talavera, Leda Maria Bastoni. **Parábola e catenária: história e aplicações**. São Paulo, USP, Faculdade de Educação, Dissertação de Mestrado. Disponível em `Teses USP Parabola e Catenária <http://www.teses.usp.br/teses/disponiveis/48/48134/tde-17062008-135338/en.php>`_ .
+
+   .. [Tassone-2015] Tassone, Márcia Z. T. **Construção da Parábola através de modelos lúdicos e computacionais**. UFSCar, PROFMAT: São Carlos, SP.
+
+   .. [Torres-2004] TORRES, Raul I. **El vientre de un arquicteto**. Espanha, Islas Canarias, Universidad de Laguna. Curso Universitario Interdisciplinar Sociedad, Ciencia, Tecnología y Matemáticas, Módulo `1`, `02` Abril. Disponível em `El vientre de un arquitecto <http://imarrero.webs.ull.es/sctm04/modulo1/10/ribanez.pdf>`_ acessado em 03/02/2018.
+
+   .. [Wang-2006] Wang, Wanderley S. **O aprendizado através de jogos para computador: por uma escola mais divertida e mais eficiente**, `26` de agosto. Dinponível em Portal da Família, `Artigo 479 <http://www.portaldafamilia.org.br/artigos/artigo479.shtml>`_ .
+
+     
+.. admonition:: Introdução 
+
+
+Vamos agora conhecer um novo tipo de função real, as **funções quadráticas** também conhecidas como funções polinomiais do segundo grau. Elas aparecem em diversas situações do cotidiano, especialmente em problemas que chamamos de otimização, onde o objetivo é determinar em que condições uma grandeza assume valores máximos ou mínimos, como por exemplo, o lucro máximo de uma empresa, área máxima de uma região plana, o preço mínimo de um determinado produto e assim por diante. Assim como os outros capítulos deste material, vamos apresentar conceitos, definições e propriedades por meio de atividades e aprofundando esses conhecimentos na seção "Organizando Ideias". Espero que você disfrute, se aproprie e internalize esses conceitos que serão úteis em diversas áreas do conhecimento, não só nos estudos físicos do movimento, mas em áreas como engenharias, economia, administração, ciência da computação etc.
+
+.. _sec-queda-vertical:
+
+**************************
+Explorando: queda vertical
+**************************
+
+.. _ativ-lancando-vertical-em-Dubai:
+
+Atividade: Lançando Objetos das nuvens em Dubai
+-------
+
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
    
    Levar o estudante a:
    
-   * 
+   * Reconhecer que a relação matemática entre a distância percorrida por um objeto em queda livre e o tempo de queda não pode ser modelada por uma função afim.
+   
+   * Relacionar o movimento de queda livre de um objeto à existência de uma aceleração na velocidade de queda.
+   
+   * Inferir que o tempo é uma grandeza contínua, mesmo as informações disponíveis apresentando-o como uma grandeza discreta.
+   
+   * Reconhecer que o movimento pode ser descrito por uma curva e não por um conjunto de pontos disconectos.
+   
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * 
-   * Os estudantes podem ter dificuldade com a expressão "em função de"...
+   * Sugerimos resolver a atividade anteriormente para definir o tempo necessário de sua aplicação.
+   
+   * Orientamos que seja feita um acompanhamento por parte do professor, durante a confecção da tabela apresentada no item a, com a finalidade de ter a certeza que os estudantes estejam compreendendo o significado dos valores gerados por ela.
+   
+   * Caso seja necessário, reforce as principais caracteríticas da função afim, como por exemplo: a sua variação proporcional.
+   
+   * No item d, recomendamos que o professor chame a atenção dos estudantes para o fato de que, o gráfico seja apenas um conjunto de sete pontos, partindo da origem, e não uma curva contínua.
+   
+   * Para o item e, orientamos que o professor enfatize com os alunos que o registro fotográfico foi feito em intervalos de `1` s, mas que o fenômeno continuou mesmo sem os registros.
+   
+   
+   
+
+No topo do hotel Burj Al Arab, em Dubai, encontra-se a quadra de tênis mais alta do mundo, com aproximadamente `200` metros de altura. Em `2005`, os campeões Roger Federer e Andre Agassi disputaram uma partida de exibição. Considere que por um descuido, uma das bolinhas usadas nesse jogo caiu `200` m, verticalmente e em queda livre. Vamos aproveitar essa situação para investigar a matemática por trás desse fenômeno físico. A imagem a seguir traduz a situação no início da queda da bola.  
 
 
-Considere o triângulo `ABC`, retângulo em `\hat{B}`, cujos lados medem `AB=10` e `BC=8`. Marcamos um ponto `M` em qualquer lugar do lado `AB` e a partir dele, inscrevemos um retângulo `MNPB` no triângulo `ABC`, conforme ilustra a figura abaixo.
+.. _fig-coloque-aqui-o-nome:
 
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=retangulo_01.png
-   :width: 300px
+.. figure:: _resources/fig_1.jpg
+   :width: 150pt
    :align: center
 
-Vamos imaginar que o ponto `M` é móvel, e portanto o retângulo se move junto com ele.
+   Hotel e a bolinha de tênis
+   
+Um observador registra com seu equipamento fotográfico a queda da bolinha, disparando fotos a cada intervalo de `1` segundo, até a mesma atingir o solo. Os registros fotográficos encontram-se agrupados e animados a seguir:
 
-#. Faça um desenho onde o ponto `M` está posicionado em um lugar diferente da figura anterior.
-#. Enquanto o ponto `M` se move, o que muda e o que não muda na construção?
-#. Descreva precisamente o que acontece com o retângulo.
-
-Observe a seguinte figura
-
-.. figure:: https://www.umlivroaberto.com/livro/lib/exe/fetch.php?media=quadratica_02.png
-   :width: 300px
+.. figure:: _resources/Queda_Livre.*
+   :width: 200 pt
    :align: center
 
-#. Qual dos dois retângulos tem o maior perímetro, `BMNP` ou `BM'N'P'`? Por que?
-#. Descreva o comportamento geral do perímetro do retângulo à medida que o ponto `M` se move. Quando ele tem o maior perímetro? E o menor?
-#. O que aconteceria com os perímetros caso o triângulo retângulo `ABC` fosse isósceles?
-#. Qual dos dois retângulos tem a maior área? Por que?
-#. Descreva o comportamento geral da área do retângulo à medida que o ponto `M` se move. Quando ele tem a maior área?
+   Bola de tênis em queda livre
+   
+A simulação da queda pode ser visualizada no Geogebra: https://ggbm.at/hvnNHMY2
 
-Vamos chamar de `x` o segmento `AM`. Escreva em função de `x` as seguintes grandezas:
+A tabela a seguir descreve a altura da bolinha ao longo do tempo. 
 
-#. O comprimento `MB`.
-#. O comprimento `MN`.
-#. O perímetro `MBNP`.
-#. A área de `BMNP`.
-
-Acesse o aplicativo Geogebra <link> e observe... (completar)
-
-
-
-
-Exercícios
------------
-
-Considere a função quadrática `g:\mathbb{R}\to\mathbb{R}` cujo gráfico está esboçado abaixo.
-
-.. tikz::
-
-  \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
-  \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-  \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-3,-2) grid (6,5);
-  \clip(-2.9174583680872663,-2.0220658086854835) rectangle (6.036227110425744,5.031600421266512);
-  \draw [samples=50,rotate around={-180.:(1.,4.)},xshift=1.cm,yshift=4.cm,line width=2pt,color=ffzzqq,domain=-6.0:6.0)] plot (\x,{(\x)^2/2});
-  \draw [->,line width=1.pt] (-3.,0.) -- (6.,0.);
-  \draw [->,line width=1.pt] (0.,-2.) -- (0.,5.);
-  \draw (-0.4,0.04) node[anchor=north west] {$0$};
-  \draw (0.9,-0.05) node[anchor=north west] {$1$};
-  \draw (-0.5,1.2) node[anchor=north west] {$1$};
-  \draw [line width=1.pt] (-0.1,1.)-- (0.1,1.);
-  \draw [line width=1.pt] (1.,-0.1)-- (1.,0.1);
-  \begin{scriptsize}
-  \draw [fill=black] (1.,4.) circle (3.5pt);
-  \draw [fill=black] (3.,2.) circle (3.5pt);
-  \end{scriptsize}
++-------+-------------+--------------+
+| `t`   | Tempo (s)   | Altura (m)   |
++-------+-------------+--------------+
+| `t_0` | `0`         | `200`        |
++-------+-------------+--------------+
+| `t_1` | `1`         | `195`        |
++-------+-------------+--------------+
+| `t_2` | `2`         | `180`        |
++-------+-------------+--------------+
+| `t_3` | `3`         | `155`        |
++-------+-------------+--------------+
+| `t_4` | `4`         | `120`        |
++-------+-------------+--------------+
+| `t_5` | `5`         | `75`         |
++-------+-------------+--------------+
+| `t_6` | `6`         | `20`         |
++-------+-------------+--------------+
 
 
-A forma canônica de `g` é:
+#. Numa folha de papel ou similar, reproduza a tabela a seguir e preencha o que falta, informando a distância total percorrida pela bolinha na queda, a partir de `t_0`.
 
-a) `g(x)=0,5(x-1)^2+4`
-b) `g(x)=0,5(x+1)^2+4`
-c) `g(x)=-0,5(x-1)^2+4`
-d) `g(x)=-0,5(x-1)^2-4`
+   +--------------------------+---------------------------------------+
+   |    Tempo de Queda        |   Distância percorrida pela bolinha   |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_0` = `0` s | `d_0 = 200 - 200 = 0` m               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_1` = `1` s | `d_1 = 200 - 195 = 5` m               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_2` = `2` s | `d_2 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_3` = `3` s | `d_3 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_4` = `4` s | `d_4 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_5` = `5` s | `d_5 =`                               |
+   +--------------------------+---------------------------------------+
+   | De `t_0` à `t_6` = `6` s | `d_6 =`                               |
+   +--------------------------+---------------------------------------+
+
+
+#. As distâncias percorridas pela bolinha ao longo do tempo de queda aumentam com a mesma taxa de variação?
+
+#. É possível obter uma função afim que relaciona a distância percorrida `d_n` (em metros) com o tempo de queda `t` (em segundos)? Justifique.
+
+#. Em uma folha de papel ou similar, copie o plano cartesiano abaixo e, em seguida, represente os pares ordenados `(t;d_n)` em que `t` representa o tempo de queda em segundos e `d_n` a distância, em metros, percorrida pela bolinha na queda:
+
+
+   .. _fig-coloque-aqui-o-nome:
+
+   .. figure:: _resources/fig_3.jpg
+      :width: 300pt
+      :align: center
+
+      Gráfico 
+   
+#. O domínio da função que descreve a queda da bolinha ao longo do tempo é `D = \{0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 \}`. A mesma situação poderia ser descrita por uma função de domínio contínuo?
+
+#. Neste caso, ao ligarmos todos os pontos do gráfico do item `d` teríamos um segmento de reta ou uma curva?
+ 
+#. Dentre as alternativas a seguir, qual relação atende aos valores descritos no gráfico sendo `d(t)` a distância percorrida pela bolinha na queda (em metros) com o tempo de queda `t` (em segundos).
+
+   `\Box \; d(t)= -t^2`
+   
+   `\Box \; d(t)= 10t+10`
+   
+   `\Box \; d(t)= 20t`
+   
+   `\Box \; d(t)= 5t^2`
+   
+   `\Box \; d(t)= 10t^2`
+   
+   
+.. admonition:: Resposta 
+
+   #. 	`d_0 = 0` m ; 	`d_1 = 5` m ; `d_2 = 20` m ; `d_3 = 45` m ; `d_4 = 80` m ; `d_5 = 125` m ; `d_6 = 180` m.
+
+   #. Não. Para verificar, basta calcular a razão do quanto variou as distâncias em dois intervalos distintos de um segundo, por exemplo:`\frac{5-0}{1-0}=5 \neq \frac{20-5}{2-1}=15`, pois a função afim é caracterizada por variações constantes.
+   
+   #. Não, pois a taxa de variação não é constante.
+   
+   #.
+      
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/fig_4.jpg
+         :width: 300pt
+         :align: center
+
+         Gráfico
+
+   #. Sim, pois o tempo é contínuo.
+
+   #. Curva.
+
+   #. `d(t) = 5t^2`

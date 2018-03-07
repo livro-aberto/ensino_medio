@@ -1,3 +1,205 @@
-*******
-AF209-4
-*******
+***************
+Para saber mais
+***************
+
+**Função Quadrática e a soma dos primeiros termos de uma Progressão Aritmética**
+
+No livro *Antologia Matemática* de Malba Tahan, conta um episódio cuja personagem principal seria o "príncipe da matemática" Carl Frederick **Gauss** (`\star 1777- \dagger 1855`). Não se sabe se o episódio é real, mas conta-se que aos sete anos de idade, chegando para mais um dia de aula, *Gauss* e seus colegas teriam encontrado o professor com pouca paciência. Assim, o professor, com o intuito de entreter seus alunos por longo tempo e não precisar dar-lhes qualquer atenção, pediu para que todos somassem os números naturais desde `1` até `100`. Contudo, o jovem *Gauss* em pouco tempo levou o resultado do exercício para o professor e este, incrédulo do feito, teria mandado *Gauss* para a direção. Mais tarde, tudo se esclareceu e o professor reconheceu o acerto do jovem e desculpou-se.
+
+Vamos tentar refazer o caminho do jovem *Gauss* neste episódio. O professor pediu para que fosse resolvida a expressão `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+
+#. Numa folha de papel, repita a expressão acima.
+
+#. Os números dessa conta estão em progressão aritmética. Identifique o primeiro termo e a razão.
+
+#. Quantos números tem essa conta? (Considere os que você escreveu e os que você só deixou indicado.)
+
+#. Na linha abaixo da conta, escreva a mesma conta, mas agora na ordem contrária, ou seja, partindo do 100 até o 1.
+
+#. A quantidade de números da conta na segunda linha mudou, em relação a linha de cima, por causa dessa troca de ordem?
+
+#. Se você somar todos os números que você escreveu nos itens 'a' e 'd', qual dos resultados a seguir você terá obtido:
+
+    `\Box` `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+
+    `\Box` a metade de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+
+    `\Box` o dobro de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+
+    `\Box` o quadrado de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+
+#. Observe que na figura a seguir reescrevemos a expressão apresentada no item 'd', e somamos verticalmente os números agrupados, continue a somar completando as respostas das somas que faltam na figura.
+
+    .. figure:: _resources/pa.jpg
+       :width: 300pt
+       :align: center
+
+
+#. Quanto deu os resultados de cada uma dessas somas?
+
+#. Com base nos itens 'g' e 'h', determine o resultado da soma de todos os números da primeira e da segunda linhas.
+
+#. Lembrando do que você marcou no item 'f', determine o resultado obtido por *Gauss*.
+
+#. Você seria de capaz de refazer as etapas, porém desta vez encontrando uma expressão para o resultado da soma dos `n` primeiros números naturais? Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n`.
+
+**As respostas estão no fim da sessão**
+
+No capítulo de funções, um dos exercícios sugere que você determine a relação entre uma sequência de figuras e a quantidade de pontos usados para compor cada figura.
+
+.. figure:: https://www.umlivroaberto.org/BookCloud/Volume_1/master/view/_images/figurados_1.png
+  :width: 300 pt
+  :align: center
+
+As quantidades de pontos em cada figuras são comumente chamado de números poligonais. Assim, `(1,4,9,16, \cdots)` são números quadrados; `(1,5,12,22, \cdots)` são números pentagonais; etc.
+
+Nesta atividade, vamos pensar sobre os números triângulares. A imagem a seguir exibe os cinco primeiros:
+
+.. figure:: _resources/Numeros_Triangulares_1.png
+  :width: 300 pt
+  :align: center
+
+#. Escreva a sequência de números triângulares até o sexto termo.
+
+#. Os números triangulares formam uma progressão aritmética?
+
+#. A figura a seguir, destaca as linhas de cada triângulo, uma de cada cor. Escreva o total de bolinhas de **cada um desses triângulos** como soma das quantidades das suas linhas. Exemplo: `T_4 = 1 + 2 + 3 + 4`  
+
+  .. figure:: _resources/Linhas_Num_Triang.png
+     :width: 300 pt
+     :align: center
+
+#. Após o item anterior, que relação você percebe entre os números triangulares e o episódio do menino *Gauss*?
+
+#. Com base nessa relação, você seria capaz de determinar o centésimo número triangular? Determine-o.
+
+#. Chamando de `T_{n}` o número triangular da posição `n`, escreva a relação entre `n` e `T_{n}`.
+
+**As respostas estão no fim da sessão**
+
+De modo mais geral, a soma dos primeiros termos de qualquer progressão aritmética é expressa por uma função quadrática.
+
+Isso acontece porque o método que usamos para somar números naturais, que formam uma progressão aritmética, continua válido para uma progressão aritmética diferente dessa. Observe.
+
+.. math::
+
+  a_{1}+a_{2}+a_{3}+ \cdots +a_{n-1}+a_{n}
+
+  a_{n}+a_{n-1}+ \cdots +a_{3}+a_{2}+a_{1}
+
+Somando um elemento de cada linha e na ordem escrita teremos:
+
+.. math::
+
+  (a_{1}+a_{n})+(a_{2}+a_{n-1})+ \cdot + (a_{n-1}+a_{2})+(a_{n}+a_{1})
+
+Fazendo uma analogia com a atividade, é fato (verificável de maneira simples) que todas as parcelas dessa soma são iguais, além disso, a quantidade de parcelas é dada pela mesma da quantidade de elementos da progressão. E também, temos que cada par dentro dos parênteses exibe um elemento que, em relação às sequências de onde foram extraídos, varia em `+r`, enquanto o outro varia `-r`, onde `r` é a razão da progressão aritmética. Assim, dispomos de `n` parcelas iguais a, por exemplo, `a_{1}+a_{n}`. Já podemos concluir o teorema a seguir:
+
+.. admonition:: Teorema 4 
+
+  Dada a progressão aritmética `(a_{1},a_{2},a_{3}, \cdots ,a_{n-1},a_{n}, \cdots)`, a soma dos seus `n` primeiros termos será indicada por `S_{n}` e
+
+  .. math::
+
+     S_{n} = \frac{n \cdot (a_{1}+a_{n})}{2}
+
+Contudo, sabe-se que `a_{n}=a_{1}+(n-1)\cdot r` e a relação da soma dos primeiros termos da progressão aritmética pode ainda ser apresentada conforme segue:
+
+`S_{n}=\frac{[a_1+a_{1}+(n-1)\cdot r] \cdot n}{2}= \frac{[a_1 \cdot n +a_{1}  \cdot n + (n \cdot r-r)\cdot n]}{2}= \frac{2a_{1}n+n^2r-rn}{2}`
+
+`S_{n}=\frac{r}{2} \cdot n^2 + \frac{(2a_{1}-r)}{2} \cdot n`, que é uma função quadrática dada em sua forma polinomial (com `c=0`) e domínio discreto `\mathbb{N}^*`.
+
+.. admonition:: Observação
+
+  A expressão que fornece a soma dos `n` primeiros termos de uma progressão aritmética é uma função quadrática de `n`.
+
+
+.. admonition:: Resposta 
+
+   **Atividade Menino `Gauss`** 
+
+   #. `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   
+   #. `a_{1}=1` e `r=1`.
+   
+   #. `100` números
+   
+   #. 
+   
+      +-------------------------------------+
+      | `1+2+3+4+5+ \cdot +96+97+98+99+100` |
+      +-------------------------------------+
+      | `100+99+98+97+96+ \cdot +5+4+3+2+1` |
+      +-------------------------------------+
+   
+   #. Não, continua tendo `100` números.
+   
+   #. o dobro de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   
+   #. Serão feitas `100` somas, indicadas a seguir.
+      
+      `1+100=101`
+      
+      `2+99=101`
+      
+      `3+98=101`
+      
+      `4+97=101`
+      
+      `5+96=101`
+      
+      `\;\;\;\;\;\;\;\; \vdots`
+      
+      `96+5=101`
+      
+      `4+97=101`
+            
+      `3+98=101`
+      
+      `2+99=101`
+      
+      `1+100=101`
+      
+   #. `101`.
+   
+   #. `100 \cdot 101 = 10100`.
+   
+   #. `\frac{100 \cdot 101}{2} = \frac{10100}{2} = 5050`.
+   
+   #. .. math::
+         
+         1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n
+         
+         n+(n-1)+(n-2)+(n-3)+ \cdots +5+4+3+2+1
+         
+      As somas de um elemento de cada linha, respeitando a ordem da escrita, dá `(n+1)`.
+      Além disso temos um total de `n` somas com esse resultado. 
+      Com isso, a soma de todos os números das duas linhas será `n \cdot (n+1)`, e
+                
+      `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n=`
+      
+      `\frac{n \cdot (n+1)}{2} = \frac{n^2 + n}{2}=`
+      
+      `= \frac{n^2}{2} + \frac{n}{2}`
+
+   **Atividade Números triangulares**       
+
+   #. `(1,3,6,10,15,21)`
+
+   #. Não; `3-1 \neq 6-3 \neq 10-6 \neq 15-10 \neq 21-15`.
+
+   #. `1`
+   
+      `1+2`
+      
+      `1+2+3`
+      
+      `1+2+3+4`
+      
+      `1+2+3+4+5`
+      
+   #. Um número triangular é soma dos primeiros números naturais, tal como o episódio do menino *Guass*.
+
+   #. Sim; `T_{100}=1+2+3+ \cdots +98+99+100=5050`.
+
+   #. `T_{n}= \frac{n \cdot (n+1)}{2}= \frac{n^2}{2} + \frac{n}{2}`.
