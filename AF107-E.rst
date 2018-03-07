@@ -36,7 +36,7 @@ Quem comprar `20` unidades dessa mercadoria, na promoção, pagará por unidade,
    :width: 300pt
    :align: center
 
-Esse veículo foi vendido pelo seu primeiro dono, após `5` anos de uso, por R$ `24.000,00`. Sabendo-se que o valor comercial do veículo atinge seu valor mínimo após `20` anos de uso, e que esse valor mínimo corresponde a `20%` do valor que tinha quando era novo. Responda:
+Esse veículo foi vendido pelo seu primeiro dono, após `5` anos de uso, por R$ `24.000,00`. Sabendo-se que o valor comercial do veículo atinge seu valor mínimo após `20` anos de uso, e que esse valor mínimo corresponde a `20\%` do valor que tinha quando era novo. Responda:
 
 #. Qual o valor de fábrica do veículo (valor quando era novo)?
 #. Qual o função `f(x)=ax+b` que está definida no gráfico acima no intervalo `[0,20]` ?
@@ -117,38 +117,73 @@ O vigésimo termo dessa progressão corresponde a:
 #. −30		
 #. − 20
 
+`12.` (ENEM-2011) O número mensal de passagens de uma determinada empresa aérea aumentou no ano passado nas seguintes condições: em janeiro foram vendidas `33 000` passagens; em fevereiro, `34 500`; em março, `36 000`. Esse padrão de crescimento se mantém para os meses subsequentes. Quantas passagens foram vendidas por essa empresa em julho do ano passado?
+
+#. `38 000`
+#. `40 500`
+#. `41 000`
+#. `42 000`	
+#. `48 000`
+
+
+
+`13.` (UNICAMP) A ANATEL determina que as emissoras de rádio FM utilizem as frequências de `87,9` a `107,9` MHz, e que haja uma diferença de `0,2` MHz entre emissoras com frequências vizinhas. A cada emissora, identificada por sua freqüência, é associado um canal, que é um número natural que começa em `200`. Desta forma, à emissora cuja frequência é de `87,9` MHz corresponde o canal `200`; à seguinte, cuja frequência é de `88,1` MHz, corresponde o
+canal `201`, e assim por diante. Pergunta-se:
+
+
+a) Quantas emissoras FM podem funcionar [na mesma região], respeitando-se o intervalo de frequências permitido pela ANATEL? Qual o número do canal com maior frequência?
+
+
+b) Os canais `200` e `285` são reservados para uso exclusivo das rádios comunitárias. Qual a frequência do canal `285`, supondo que todas as frequências possíveis são utilizadas?
+
+
+`14.` (UFRJ-2000) Mister MM, o Mágico da Matemática, apresentou-se diante de uma platéia com `50` fichas, cada uma contendo um número. Ele pediu a uma espectadora que ordenasse as fichas de forma que o número de cada uma, excetuando-se a primeira e a última, fosse a média aritmética do número da anterior com o da posterior. Mister MM solicitou a seguir à espectadora que lhe informasse o valor da décima sexta e da trigésima primeira ficha, obtendo como resposta `103` e `58` respectivamente. Para delírio da platéia, Mister MM adivinhou então o valor da última ficha.
+
+Determine você também este valor.
+
+
 .. admonition:: Resposta 
 
-   `1.` Os pontos estão sobre a reta `f(x)=-4x+170`. Quem comprar `20` unidades irá pagar R$ `90,00`, portanto R$ `4,50` a unidade.
+   `1.` Temos uma reta que contém esses 6 pontos dada pela função afim `V`, tal que `V(q)=aq+b`, onde `V(q)` representa o valor total da compra de `q` unidades. Com isso a taxa de variação de `V` é dada por `a=\frac{\Delta_x}{\Delta_y}=\frac{50-150}{30-5}=\frac{-100}{25}=-4`, logo temos que `V(q)=-4q+b`, substituindo o ponto `(5,150)` ou o ponto `(30,50)` temos que `b=170`. Daí os pontos estão sobre a reta `V(q)=-4q+170`. Quem comprar `20` unidades (`V(20)`) irá pagar R$ `90,00`, portanto para cada unidade temos:  (`90/20=4,5`), ou seja, R$ `4,50` a unidade.
+   
+   De outro modo, poderíamos achar os R$ `90,00` de outras maneiras, uma delas utiliza o fato que toda função afim possui taxa de variação constante, logo: `a=\frac{\Delta_x}{\Delta_y}=\frac{1950-750}{x-100}=\frac{50-150}{30-5}=-4`, o que resulta em `x=90`
    
    `2.`
    
    #. Entre `0` e `50` kWh.
-   #. Aproximadamente `178,94` kWh.
+   #. Temos os pontos `A=(100,750)` e `B=(200,2250)` , a reta que passa por esses pontos pode ser representada pela função afim: `f(x)= 15x-750` , queremos obter o valor de `x` tal que, `f(x)=1950` que é dado por: `1950= 15x-750`, que resulta em `x=180` kWh.
    
    `3.`
    
-   #. Na década de `40`.
-   #. Na década de `2040`.
+   #. A abscissa de ordenada `5`, está entre `1940` e `1950`. Portanto teremos `5000` habitantes na década de `40`.
+   #. Sabendo que os pontos `(1960,7)` e `(1980,10)` pertencem à a função afim dada por `P(t)=at+b` (onde `P(t)` nos informa a quantidade de habitantes em milhares de pessoas a cada ano `t`) temos `a=\frac{3}{20}` e `b=-287`. Daí, se substituirmos: `P(t)=20`, teremos `t=2046,6666...`. Portanto teremos `20000` habitantes na década de `2040`.
    
    `4.`
    
-   #. R$ `30 000,00`.
-   #. `f(x)=-1200x+30000`.
-   #. 27600,00` reais.
+   #. Pelos dados do problema e sendo `V` o valor de fábrica do veículo, temos que os pontos `(0,V)` ; `(5,24000)` e `(20,\frac{v}{5}`) pertencem ao gráfico da função afim `f` dada por `f(x)=ax+b`, com isso temos que a taxa de variação é representada por `a=\frac{24000-V}{5-0}=\frac{0,2V-V}{20-0}` daí encontramos `V=30000`, ou seja, o valor de fábrica do veículo é de R$ `30 000,00`.
+   #. Ao utilizarmos os pontos `(0,30000)` e `(5,24000)`, encontramos: `f(x)=-1200x+30000`.
+   #. Ao substituirmos `x=2` em `f`, encontramos `f(2)=27600`, portanto o valor comercial do veículo após dois anos de uso é de  `27600,00` reais.
    
-   `5.` `V=65`.
+   `5.` Sendo `a` a taxa de variação da função afim, representada no gráfico pela reta que contém os pontos `(100,5)` ; `(200,20)`  e `(500,V)`, temos que `a=\frac{V-20}{500-200}=\frac{20-5}{200-100}` logo: `a=\frac{V-20}{300}=\frac{15}{100}`. Portanto temos `V=65`.
    
-   `6.` Letra e).
+   `6.` O gráfico deve ser apresentado por partes, a primeira parte com valores do eixo horizontal de `0` a `100`, passando pelos pontos `(0,750)` `(100,1050)`, após isso o gráfico deverá ser representada por uma outra reta mais inclinada já que a taxa de variação aumentou de `3` para `9`. Gabarito Letra (E).
    
-   `7.` `30` horas.
+   `7.` Sendo `A` a função afim dada por `A(x)=-10x+720` que representa a quantidade de litros de água do reservatório `A` após `x` horas de perda de água. E, sendo `B` a função afim dada por `B(x)=12x+60` que representa a quantidade de litros de água do reservatório `B` após `x` horas de ganho de água. Para encontrarmos o valor de `x_0`, basta igualarmos as funções, daí teremos: `12x+60=-10x+720` o que resulta em `x_0=30`. Portanto    `30` horas.
    
    `8.` `(8,13,18,23,28, 33,38,43,48,53,58,63,68,73,78,83)`
 
-   `9.` (E)
+   `9.` Precisamos saber quantos números multiplos de `15` há de `1` a `10000`, depois subtrairmos este valor de `10000`, para isso basta descobrir a quantidade `n` de termos da P.A.: `(15,30,45,...,9990)` daí temos: `9990=15+(n-1) \cdot 15` e concluimos que `n=666`, portanto `10000-666=9334`. Gabarito letra (E)
    
-   `10.` (D)
+   `10.` (D) 
    
-   `11.` (A)
+   `11.` (A) 
+   
+   `12.` O padrão de crescimento adotado caracteriza a sequência: `(33000,34500,36000)` como uma P.A. de razão `r=1500` e `a_1=33000`. Queremos encontrar o sétimo termo dessa P.A. dado por: `a_7=33000+6 \cdot 1500=42000`. Gabarito letra D.
+   
+   `13.` 
+   
+   #. Os números que representam as frequências formam uma PA de  primeiro termo `87,9`; razão `0,2` e último termo `107,9`. Logo, `87,9 + (n-1) \cdot 0,2` o que resulta em `n = 101`. Temos então, `101` emissoras. Os números dos canais constituem uma PA com `101` termos, onde o primeiro termo é `200` e razão `1` com `a_{101} = 200 + (101 – 1) \to a_{101} = 300`.  Portanto temos `101` emissoras, e `300` é o número do canal com maior frequência.  
+   
+   #. Na PA formada pelos números dos canais, temos: `285 = 200 + n-1 \to n = 285 – 199 = 86`. Daí, na PA constituída pelos números das frequências: `a_{86} = 87,9 + (86-1).0,2 = 87,9 + 17 = 104,9`. Portanto a frequência do canal `285` é `104,9` MHz. 
 
-
+   `14.` A condição de ordenação das fichas caracteriza como P.A. a sequência abordada, com isso, temos `a_{16}=103` e `a_{31}=58`, obtendo assim as os sistema linear cujas duas equações são dadas por: `a_1+15r=103` e `a_1+30r=58` resolvendo encontramos: `a_1=148` e `r=-3`. Logo `x_{50}=148+49 \cdot (-3)=1` e portanto  `x_{50}=1`.
