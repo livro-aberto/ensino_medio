@@ -297,6 +297,69 @@ Se os resultados de  `\frac{n+1}{4}` e `\frac{3n+1}{4}` não forem números inte
 Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, a saber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que na turma cerca de 25% das notas foram menores do que 5 e cerca de 25% das notas foram maiores do que 7,4.
 
 
+.. _sub-soma-desvios-da-media:
+
+Soma dos desvios da média
+-------------------------
+
+Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
+
+.. math::
+
+   d_i=x_i-\bar{x}, \quad i=1,2,\cdots, n
+   
+Uma propriedade dos desvios da média é dada por
+
+
+.. math::
+
+   \sum^n_{i=1}d_i=\sum^n_{i=1}(x_i-\bar{x})=0, 
+   
+qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`.
+
+Demonstração: 
+
+`\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
+
+
+.. _sub-formula-calculo-variancia:
+
+Fórmula para o cálculo da variância amostral
+--------------------------------------------
+
+Vimos que a variância amostral do conjunto de dados `\{x_1,x_2,\cdots,x_n\}` é definida por 
+
+.. math::
+
+   s^2 = \frac{1}{n-1}\cdot \sum^n_{i=1} (x_i-\bar{x})^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\cdots+(x_n-\bar{x})^2}{n-1}
+   
+De fato, é possível mostrar que
+
+.. math::
+
+   s^2 = \frac{1}{n-1}\cdot \left (\sum^n_{i=1} x^2_i-n\cdot \bar{x}^2\right )
+   
+Demonstração:  Expandindo a soma no numerador da fórmula da variância é possível concluir que 
+
+.. math::
+
+   \sum^n_{i=1}(x_i-\bar{x})^2= \sum^n_{i=1} x^2_i -n\cdot \bar{x}^2
+   
+Lembre que `(x_i-\bar{x})^2=x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2`. Assim, 
+
+.. math::
+
+   \small {\sum^n_{i=1}(x_i-\bar{x})^2=\sum^n_{i=1}(x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2)=(x^2_1-2\cdot\bar{x}\cdot x_1+\bar{x}^2)+(x^2_2-2\cdot\bar{x}\cdot x_2+\bar{x}^2)+ \cdots + (x^2_n-2\cdot\bar{x}\cdot x_n+\bar{x}^2)}
+   
+Como a soma é finita, podemos reunir os termos semelhantes, obtendo
+
+.. math::
+
+   \sum^n_{i=1}(x_i-\bar{x})^2=(x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2=\sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
+   
+
+
+
 
 
 

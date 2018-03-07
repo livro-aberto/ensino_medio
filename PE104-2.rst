@@ -1,6 +1,6 @@
 .. admonition:: Resposta 
 
-   As perguntas tem o intuito de motivar uma discussão dos elementos necessários que tem que ser considerados para fazer histogramas que sejam comparáveis, introduzir de forma intuitiva o conceito de dispersão. As perguntas não tem uma resposta fechada, são mais uma guia para a discussão que o professor irá conduzir e serve como introdução à seção :ref:`sec-organizando2`.
+  As perguntas tem o intuito de motivar uma discussão dos elementos necessários que tem que ser considerados para fazer histogramas que sejam comparáveis, introduzir de forma intuitiva o conceito de dispersão. As perguntas não tem uma resposta fechada, são mais uma guia para a discussão que o professor irá conduzir e serve como introdução à seção :ref:`sec-organizando2`.
 
 .. _sec-explorando2:
 
@@ -19,7 +19,7 @@ Atividade: Estratégia de Investimento
 
  **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
 
- **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que apenas medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+ **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
  
 Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
 
@@ -71,9 +71,9 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
   +--------+-----+-----+
   
  
-(a)	Obtenha as médias das cotações das companhias A e B e compare-as.
-(b)	Obtenha as medianas das cotações das companhias A e B e compare-as, lembrando que os dados da tabela estão apresentados na ordem temporal.
-(c)	Obtenha as modas das cotações das companhias A e B e compare-as.
+(a)	Obtenha as médias das cotações das ações das companhias A e B nas semanas observadas e compare-as.
+(b)	Obtenha as medianas das cotações das ações das companhias A e B nas semanas observadas e compare-as, lembrando que os dados da tabela estão apresentados na ordem temporal.
+(c)	Obtenha as modas das cotações das ações das companhias A e B nas semanas observadas e compare-as.
 (d)	Analisando apenas as medidas de posição obtidas em (a), (b) e (c), pode-se dizer que as duas companhias diferem uma da outra? Por quê?
 (e) Um investimento que apresenta grandes ganhos e perdas pode ser chamado de alto risco, já investimentos cujos valores flutuam pouco são considerados de baixo risco. Se você é um investidor da bolsa de valores avesso ao risco, isto é, você gostaria de escolher o investimento com menores flutuações, em qual das companhias você investiria o seu dinheiro? Por quê?
 
@@ -117,7 +117,7 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
  
  4. Não, pois tais medidas são idênticas nas duas companhias.
  
- 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` flutuam mais do que as da companhia `A` e, portanto, como menor risco envolve menos flutuação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a flutuação das cotações é menor.
+ 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` variam mais do que as da companhia `A` e, portanto, como menor risco envolve menos variação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a variação das cotações é menor.
  
 
 .. _sec-organizando2:
@@ -126,7 +126,7 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
 Organizando as ideias: Medidas de dispersão
 ===========================================
 
-Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores flutuações de valores do que o outro. A ideia por trás de flutuação é a noção de dispersão. 
+Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores variações de valores do que o outro. A ideia por trás de variação é a noção de dispersão. 
 
 Enquanto as medidas de posição procuram resumir o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na :ref:`ativ-estrategia-de-investimento`, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
 
@@ -191,9 +191,39 @@ Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `
 
    d_i=x_i-\bar{x}, \quad i=1,2,\cdots n
    
+Na :ref:`ativ-estrategia-de-investimento` os desvios da média, para cada uma das Companhias estão registrados na tabela a seguir.
+
+.. table:: Legenda
+
+   +--------+-------+-------+
+   | Semana | Cia A | Cia B |
+   +--------+-------+-------+
+   | 1      | -0,5  | 5,5   |
+   +--------+-------+-------+
+   | 2      | -5,5  | -13,5 |
+   +--------+-------+-------+
+   | 3      | 1,5   | -9,5  |
+   +--------+-------+-------+
+   | 4      | -4,5  | 20,5  |
+   +--------+-------+-------+
+   | 5      | 5,5   | 15,5  |
+   +--------+-------+-------+
+   | 6      | 1,5   | -28,5 |
+   +--------+-------+-------+
+   | 7      | 5,5   | 5,5   |
+   +--------+-------+-------+
+   | 8      | -3,5  | -19,5 |
+   +--------+-------+-------+
+   | 9      | 5,5   | 28,5  |
+   +--------+-------+-------+
+   | 10     | -5,5  | -4,5  |
+   +--------+-------+-------+
+   | soma   | 0     | 0     |
+   +--------+-------+-------+
+   
 Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
 
-Por exemplo, considere os dados da :ref:`ativ-Estrategia-de-Investimento`. Veja na figura a seguir a ilustração dos desvios da média das duas companhias na qual a linha pontilhada representa a cotação média da companhia e os segmentos em vermelho indicam o tamanho do desvio da média.
+Com os dados da :ref:`ativ-Estrategia-de-Investimento` você pôde comprovar esta propriedade. Veja na figura a seguir a ilustração dos desvios da média das duas companhias na qual a linha pontilhada representa a cotação média da companhia e os segmentos em vermelho indicam o tamanho do desvio da média.
 
 
 .. _fig-desvios-da-media:
@@ -204,7 +234,7 @@ Por exemplo, considere os dados da :ref:`ativ-Estrategia-de-Investimento`. Veja 
 
    Desvios da média das cotações nas companhias A e B
    
-O gráfico :ref:`fig-desvios-da-media` reforça a conclusão anterior, da :ref:`ativ-estrategia-de-investimento`, de que as cotações da companhia A flutuam bem menos em torno da média do que as cotações da companhia B.  
+O gráfico :ref:`fig-desvios-da-media` reforça a conclusão anterior, da :ref:`ativ-estrategia-de-investimento`, de que as cotações da companhia A variam bem menos em torno da média do que as cotações da companhia B.  
 
 Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
 
@@ -212,7 +242,13 @@ Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, 
 
 `\small{\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0}`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
 
-Portanto, não será possível usar a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa. Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
+Portanto, não será possível usar a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa.
+
+Na Companhia A a soma dos desvios negativos é -19,5 e, dos desvios positivos, 19,5. Na Companhia B a soma dos desvios negativos é -75,5 e, dos desvios positivos, 75,5.
+
+Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
+
+Veja na :ref:`sec-Parasabermais` a demonstração da propriedade de que a soma dos desvios da média é sempre nula. 
 
 .. _sub-desviosmedioabsoluto:
 
@@ -220,12 +256,10 @@ Portanto, não será possível usar a soma dos desvios da média como medida de 
 Desvio Médio Absoluto
 ---------------------
 
-Tomando todos os desvios da média em valor absoluto, observe que todos passarão a ser não-negativos tal que a soma resultante não será sempre nula. Assim, pode-se construir uma medida de dispersão em torno da média no conjunto de dados, considerando todas as observações chamada :index:`desvio médio absoluto` (DM) que é definida como a média dos desvios da média tomados em valor absoluto.
+Considerando os desvios da média em valor absoluto (`|x_i-\bar{x}|`) observe que todos serão não-negativos tal que a soma dos desvios da média em valor absoluto (`\displaystyle{\sum^n_{i=1}}|x_i-\bar{x}|`) será nula apenas quando todos os valores do conjunto forem iguais. 
 
-.. math::
+Com base na observação anterior, pode-se definir uma medida de dispersão dos dados, considerando todas as observações, chamada :index:`desvio médio absoluto` (DM) que é definida como a média dos desvios da média tomados em valor absoluto.
 
-   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|=\frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\cdots+|x_n-\bar{x}|}{n}
-   
 Na tabela a seguir são apresentados os desvios da média em valor absoluto das cotações nas companhias A e B e, a respectiva soma. 
 
 .. table:: Desvios da média em valores absolutos para as companhias A e B
@@ -258,17 +292,12 @@ Na tabela a seguir são apresentados os desvios da média em valor absoluto das 
 
 Logo, concluímos que o desvio médio absoluto na companhia A é DM= `\frac{39}{10}=3,9` reais e, na companhia B, DM= `\frac{151}{10}=15,1` reais, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 4 vezes maior do que na companhia A com relação ao desvio médio (`{15,1}/{3,9}\approx 3,89`).
 
-**Cálculo do desvio médio absoluto para dados agrupados**
-
-Se os dados estão agrupados em `c` intervalos de classe cujos pontos médios são dados por `\tilde{x}_1,\tilde{x}_2,\cdots,\tilde{x}_c`  o desvio médio absoluto pode ser aproximado por
-
+De maneira geral, o desvio médio absoluto do conjunto de dados `\{ x_1,x_2, \cdots, x_n\}` é 
 
 .. math::
 
-   DM=\frac{1}{n}\sum^c_{i=1}n_i|\tilde{x}_i-\bar{x}|=\sum^c_{i=1} f_i|\tilde{x}_i-\bar{x}|
-   
-em que `n_i` representa a frequência aboluta do `i`-ésimo intervalo de classe e, `f_i=\frac{n_i}{n}` representa a frequência relativa do `i`-ésimo intervalo de classe, `i=1,2,\cdots c`.
-   
+   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|=\frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\cdots+|x_n-\bar{x}|}{n}
+
 
 
 
@@ -317,25 +346,15 @@ Na tabela a seguir são apresentados os desvios da média elevados ao quadrado d
 
 Logo, concluímos que a variância na companhia A é `\frac{188,5}{10}=18,85\textsf{ reais}^2` e, na companhia B, `\frac{3018,5}{10}=301,85\textsf{ reais}^2` , indicando que a dispersão em torno da média na companhia B é cerca de 16 vezes maior do que na companhia A com relação à variância  (`301,85/18,85\approx 16`).  
 
-Expandindo a soma no numerador da fórmula da variância é possível concluir que 
+
+Quando lidamos com grande quantidade de dados, calcular a variância usando a definição apresentada será uma tarefa maçante, pois após calcular a média de muitos dados teremos que calcular cada desvio da média, elevá-los ao quadrado e, finalmente, somá-los. Se o conjunto tiver 50 valores será muito trabalhoso calcular a variância desta forma. Um modo menos trabalhoso de calcular a variância é calcular a média dos dados (`\bar{x}`) e a soma de quadrados dos dados, a saber, `\displaystyle{\sum^n_{i=1}x^2_i}`. De fato, é possível mostrar que
 
 .. math::
 
-   \sum^n_{i=1}(x_i-\bar{x})^2= \sum^n_{i=1} x^2_i -n\cdot \bar{x}^2
+   \textsf{variância} = \frac{1}{n}\cdot \left (\sum^n_{i=1} x^2_i-n\cdot \bar{x}^2\right )
    
-Lembre que `(x_i-\bar{x})^2=x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2`. Assim, 
+A demonstração desta igualdade está na Seção :ref:`sec-Para-saber-mais`.
 
-.. math::
-
-   \small {\sum^n_{i=1}(x_i-\bar{x})^2=\sum^n_{i=1}(x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2)=(x^2_1-2\cdot\bar{x}\cdot x_1+\bar{x}^2)+(x^2_2-2\cdot\bar{x}\cdot x_2+\bar{x}^2)+ \cdots + (x^2_n-2\cdot\bar{x}\cdot x_n+\bar{x}^2)}
-   
-Como a soma é finita, podemos reunir os termos semelhantes, obtendo
-
-.. math::
-
-   \sum^n_{i=1}(x_i-\bar{x})^2=(x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2=\sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
-   
-   
 Na :ref:`ativ-estrategia-de-investimento` , podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38.011` tal que a variância em A pode ser calculada por
 
 
