@@ -384,7 +384,7 @@ Resumindo, quando dispomos dos dados apenas na forma agrupada, para obter uma ap
     
 Existem outras formas de avaliar a mediana quando os dados estão agrupados e uma delas foi proposta no exercício 17 do capítulo **A Natureza da Estatística**.
   
-**Escolha entre a média e a mediana como valor que melhor representa a distribuição dos dados**
+**Escolha entre a média e a mediana como valor mais adequado para resumir a informação do conjunto de dados**
 
 Vimos que a média é uma medida muito afetada na presença de valores atípicos (muito afastados da maioria do dados) e de distribuições fortemente assimétricas (caraceterizadas por histogramas alongados para à direita ou para à esquerda). A mediana, por sua vez, é pouco afetada para valores atípicos na distribuição, e por isso é dita ser uma :index:`medida robusta<medida robusta>`. 
 
@@ -430,28 +430,28 @@ O conceito de moda é adequado para conjuntos de dados qualitativos ou quantitat
 
 A pergunta que surge naturalmente agora é: Quando a moda será preferível à média ou à mediana?
 
-Se a distribuição for bem equilibrada, isto é, o histograma da distribuição é aproximadamente simétrico, e há uma única moda, então as três medidas-resumo (média, mediana e moda) são qualitativamente equivalentes. Nesse caso, em geral, preferiremos tomar a média como medida de posição, pois ela possui propriedades relevantes para a inferência estatística. 
+Se o histograma da distribuição é aproximadamente simétrico, e há uma única moda, então as três medidas-resumo (média, mediana e moda) serão valores aproximadamente iguais. Nesse caso, em geral, preferiremos usar a média como medida de posição, pois ela possui propriedades relevantes para a inferência estatística. 
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/histapsimetrico.png
-   :width: 200pt
+.. figure:: _resources/registros_de_tempo_simetria_2.png
+   :width: 300 pt
    :align: center
 
-   Histograma de distribuição aproximadamente simétrica
+   Histograma simétrico: distribuição unimodal (Dados: Registros de tempo de atividade do capítulo **A Natureza da Estatística**)
 
-Se, no entanto, a distribuição é altamente assimétrica com valores atípicos e unimodal, então preferiremos, em geral, tomar a mediana como medida resumo, embora a moda também possa ser usada em certas situações neste caso.
+Se, no entanto, a distribuição apresenta forte assimetria com a presença valores atípicos e unimodal, então preferiremos, em geral, tomar a mediana como medida resumo.
 
 .. _fig-assimetriadireita:
 
-.. figure:: _resources/histogramacomassimetriadireita_1.png
+.. figure:: _resources/triciclodemao_histogramacdesigual.png
    :width: 200pt
    :align: center
 
-   Histograma de distribuição com assimetria à direita
+   Histograma de distribuição com assimetria à direita (Tempos de chegada para a categoria Triciclo de mão na maratona de Nova Iorque/2017).
 
-Se, por outro lado, o histograma da distribuição é do tipo simétrico e bimodal como na representação esquemática abaixo, então nem a média, nem a mediana são boas medidas de representação dos dados, pois estas se situariam no "vale" da distribuição em que há pouca incidência de valores. Assim, neste caso, preferiremos quase sempre as duas modas como medidas resumo.
+Se, por outro lado, o histograma da distribuição é do tipo simétrico e bimodal como na representação esquemática a seguir, então nem a média, nem a mediana serão indicadas como medidas de representação dos dados, pois observe na figura, que elas estarão situadas bem no centro onde há pouca incidência de valores. Assim, neste caso, as duas modas serão mais úteis para descrever de forma resumida este conjunto de dados.
 
 
 .. _fig-coloque-aqui-o-nome:
@@ -476,45 +476,18 @@ Quartis
 
 Os :index:`quartis<quartis>` são os três valores que dividem a distribuição em quatro partes de frequências iguais. 
 
-O primeiro quartil (`\textsf{Q}_1`) é o valor da distribuição em que abaixo dele há 25% da informação e acima dele há 75% da informação. 
+O primeiro quartil (`\textsf{Q}_1`) é o valor da distribuição para o qual a frequência relativa de valores abaixo dele é igual 25% do número de observações do conjunto de dados e, consequentemente, acima dele, é 75% do número de observações do conjunto de dados.
 
-O segundo quartil (`\textsf{Q}_2`) é precisamente a mediana da distribuição (o valor que divide a distribuição ao meio). 
+O segundo quartil (`\textsf{Q}_2`) é a mediana da distribuição ou, equivalentemente, o  valor da distribuição para o qual que a frequência relativa de valores abaixo dele é 50% do número de observações do conjunto de dados e, consequentemente, acima dele, é 50% do número de observações do conjunto de dados.
 
-Finalmente o terceiro quartil (`\textsf{Q}_3`) é o valor da distribuição em que abaixo dele há 75% da informação e acima dele há 25% da informação. 
+Finalmente o terceiro quartil (`\textsf{Q}_3`) é o valor da distribuição
+para o qual a frequência relativa de valores abaixo dele é igual 75% do número de observações do conjunto de dados e, consequentemente, acima dele, é 25% do número de observações do conjunto de dados. 
 
-Em resumo os quartis de uma distribuição de frequências ou conjunto de valores numéricos são as três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}=0,25` , pois se agruparmos os dados nos intervalos `[x_{(1)},\textsf{Q}1[, [\textsf{Q}1,\textsf{mediana}[,[\textsf{mediana},\textsf{Q}3[ \textsf{ e } [\textsf{Q}3,x_{(n)}]`, cada um deles terá 0,25 como frequência relativa.
+Você já determinou os quartis para os dados da :ref:`ativ-maratona-de-NY` referentes aos 100 melhores tempos da maratona para a categoria mulheres.
 
-**Um método para a determinação dos quartis**
+Como `n=100`, podemos tomar como o primeiro quartil o tempo da 25a. posição `\left (\frac{100}{4}=25\right )`, a saber, `\textsf{Q}1=2,764` h, já vimos que a mediana é 2,949 h e, para o terceiro quartil podemos tomar o  o valor da 75a. posição `\left (3\cdot\frac{100}{4}=75\right )`, a saber, `\textsf{Q}3=2,998` h. 
 
-Existem métodos diferentes para determinar os quartis de um conjunto `\{x_1,x_2,\cdots,x_n\}` de `n` observações. Um método simples será descrito a seguir. 
-
-Tome `\textsf{Q}1` como o valor correspondente à posição `\frac{n+1}{4}` depois de ordenar os dados. 
-
-Tome `\textsf{Q}2` como a mediana do conjunto de dados, calculada pelo método apresentado para o cálculo da mediana.
-
-Tome `\textsf{Q}3` como o valor correspondente à posição `\frac{3n+1}{4}` depois de ordenar os dados. 
-
-Se os resultados de  `\frac{n+1}{4}` e `\frac{3n+1}{4}` não forem números inteiros, arredonde-os para o inteiro mais próximo. Se a parte decimal do resultado destas operações for 0,5; calcule a média dos dois valores nas posições correspondentes. Por exemplo, suponha `n=21` tal que `(21+1)/4=5,5`. Assim, neste caso, para obter o primeiro quartil, calcule a média dos valores nas posições 5 e 6.
-
-Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, a saber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que os intervalos [0,8 ; 5,4[, [5,4 ; 6,5[ ; [6,5 ; 7,4[ e [7,4 ; 8,0] compreendem, cada um, aproximadamente 25% das notas nesta turma. Observe que os comprimentos destes intervalos são diferentes, a saber, 4,6; 1,1; 0,9 e 0,6.
-
-
-Vejamos agora como ficam estes intervalos para os dados da :ref:`ativ-maratona-de-NY` referentes aos 100 melhores tempos da maratona para a categoria mulheres.
-
-Como `n=100`, para o primeiro quartil tomaremos o valor da posição `\frac{100+1}{4}=25,25 \approx 25`, a saber, `\textsf{Q}1=2,764` h, já vimos que a mediana é 2,949 h e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 100+1}{4}=75,25\approx 75`, a saber, `\textsf{Q}3=2,998` h. Logo, podemos dizer que os intervalos [2,448 ; 2,764[ , [2,764 ; 2,949[ ; [2,949 ; 2,998[ e [2,998 ; 3,085] compreendem, cada um, aproximadamente 25% dos 100 melhores tempos para completar a maratona entre as mulheres. Observe novamente que os comprimentos destes intervalos são diferentes, a saber, 0,316; 0,185; 0,049 e 0,087.
-
-
-Para que servem os quartis da distribuição?
-
-Os quartis servem para 
-
-#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
-#. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
-#. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
- 
-Trabalharemos essas aplicações na seção :ref:`sec-Parasabermais` deste capítulo.
-
-
+Já vimos como determinar mediana (ou segundo quartil) de um conjunto de `n` dados. Um método simples para obter os demais quartis, Q1 e Q3, é considerar dois novos conjuntos de dados, o primeiro, consistindo da primeira metade dos valores ordenados e, o segundo, consistindo da segunda metade. Depois, basta determinar a mediana de cada um destes dois conjuntos, obtendo Q1 e Q3, respectivamente.
 
 .. _sec-praticando1:
 
@@ -620,7 +593,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
          |  Mínimo | 2,448    | 2,181  |
          +---------+----------+--------+
-         |  Máximo | 3,086    | 2,639  |
+         |  Máximo | 3,085    | 2,639  |
          +---------+----------+--------+
          |  Média  | 2,8698   | 2,5116 |
          +---------+----------+--------+
@@ -647,7 +620,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
 -----------------------------------------------------------
 Atividade: Comparação das diferentes categorias na maratona
 -----------------------------------------------------------
-
+.. deixar apenas as categorias cadeira de rodas e triciclo de mão 
 
 .. admonition:: Para o professor
 
