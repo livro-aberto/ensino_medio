@@ -155,6 +155,5 @@ Ensino Médio
    AF209-10
    AF209-11
    AF209-E
-   definicoes
-   
-.. .. include:: definicoes.rst
+      
+.. include:: definicoes.rst
