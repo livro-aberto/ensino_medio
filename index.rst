@@ -2,7 +2,7 @@
 Ensino Médio
 ************
    
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
    
@@ -20,7 +20,7 @@ Ensino Médio
    AF209-ROTEIRO
    
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -45,7 +45,7 @@ Ensino Médio
    AF107-E
 
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -56,7 +56,7 @@ Ensino Médio
    PE103-A
    PE103-E
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
    
@@ -68,7 +68,7 @@ Ensino Médio
    PE104-E
 
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -84,7 +84,7 @@ Ensino Médio
    GE101-B
    GE101-E
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -94,7 +94,7 @@ Ensino Médio
    GE201-2
    GE201-E
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -107,7 +107,7 @@ Ensino Médio
    GE202-A
    GE202-E
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -119,7 +119,7 @@ Ensino Médio
    GE2022-A
 .. GE2022-E
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
@@ -137,7 +137,7 @@ Ensino Médio
    GE301-E
 
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
