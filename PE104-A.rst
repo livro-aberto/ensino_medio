@@ -262,8 +262,10 @@ Para saber mais
    
 .. _sub-mediadadosagrupados:
 
-Cálculo da média para dados agrupados
---------------------------------------
+Cálculo das medidas de posição  e dispersão para dados agrupados
+----------------------------------------------------------------
+
+**Média**
 
 Considere um conjunto de `n` dados agrupados em `c` intervalos de classe.
    
@@ -278,6 +280,16 @@ Denotando por `f_i=\frac{n_i}{n}` a frequência relativa do `i`-ésimo intervalo
    
      
 Quando os dados estão agrupados em intervalos de classe, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas (ou relativas) das classes.
+
+**Variância e desvio padrão amostrais**
+
+.. math::
+
+   s^2 = \frac{1}{n-1}\sum^c_{i=1}n_i(\tilde{x}_i-\bar{x})^2=\frac{1}{n-1}\left(\sum^c_{i=1}n_i\tilde{x}^2_i- n\bar{x}^2\right )
+   
+em que `\bar{x}` é a média amostral. Se conhecemos apenas as frequências relativas do conjunto de dados, também podemos calcular a variância amostral por `s^2=\displaystyle{\sum^c_{i=1}}f_i(\tilde{x}_i-\bar{x})^2=\displaystyle{\sum^c_{i=1}}f_i\tilde{x}^2_i -\bar{x}^2`.
+
+O desvio padrão amostral é, então, calculado por `s=\sqrt{s^2}`.
 
 .. _sub-determinacao-dos-quartis:
 
