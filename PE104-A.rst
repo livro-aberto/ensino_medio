@@ -25,12 +25,13 @@ Na tabela a seguir, são apresentadas algumas informações sobre os 100 melhore
 
    Mínimo, Q1, Mediana, Q3 e Máximo para os 100 melhores tempos (em horas) de homens e de mulheres na Maratona de Nova Iorque/2017
 
-#. Identifique entre os 10 valores apresentados, o menor deles e o maior. 
+#. Identifique entre as 10 medidas calculadas para as duas amostras, o menor e o maior valores obtidos. 
 #. Construa em um eixo, que pode ser vertical ou horizontal, uma escala que comprenda este intervalo do menor valor até o maior valor identificados no item anterior. 
-#. Marque no eixo Q1 e Q3  para as mulheres e desenhe um retângulo cujas bases correspondam a estas duas medidas.
-#. Dentro do retângulo, trace um segmento paralelo às bases que corresponda ao valor da Mediana das mulheres.
-#. Para terminar, trace um segmento partindo do ponto médio da base correspondente a Q1 até o menor valor observado. 
-
+#. Marque no eixo os valores de Q1 e Q3  para as mulheres e desenhe um retângulo cujas bases correspondam a estas duas medidas.
+#. Dentro do retângulo desenhado, trace um segmento paralelo às bases que corresponda ao valor da Mediana das mulheres.
+#. Para terminar, trace um segmento partindo do ponto médio da base correspondente a Q1 até o menor valor observado e, um segmento partindo do ponto médio da base correspondente a Q3 até o maior valor observado.
+#. Ao lado ou acima da figura construída (dependendo de seu eixo ter orientação vertical ou horizontal), repita os intens anteriores para a categoria homens.
+#. Compare as duas figuras obtidas. Que diferenças você pode destacar entre as duas categorais, a partir da figura construída?
 
 
 
@@ -50,7 +51,7 @@ Os quartis servem para
 
 
 
-Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística, é conhecido como :index:`boxplot` (gráfico caixa). A construção deste gráfico é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
+Um gráfico alternativo ao histograma para representar variáveis quantitativas, muito utilizado na Estatística, é conhecido como :index:`boxplot` (gráfico caixa). A construção desse gráfico é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
 
 1. mínimo (`\textsf{Min}=x_{(1)}`), 
 2. primeiro quartil (`\textsf{Q}1`), 
@@ -80,7 +81,7 @@ O primeiro passo na construção do boxplot é traçar um eixo na escala dos dad
    Caixa do boxplot
 
 
-A distância entre quartis (`\textsf{DQ}=\textsf{Q}3-\textsf{Q}1`) é a medida de dispersão utilizada na classificação de :index:`valores atípicos<valores atípicos>` da distribuição, isto é, valores que destoam dos demais no conjunto de dados. 
+A distância entre quartis (`\textsf{DQ}=\textsf{Q}3-\textsf{Q}1`) é a medida de dispersão utilizada na classificação de valores da distribuição como  :index:`valores atípicos<valores atípicos>`, isto é, valores que destoam dos demais no conjunto de dados. 
 
 O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
 
@@ -152,7 +153,9 @@ Analisando o :ref:`fig-boxplotmulheres` podemos observar que
 
 Os valores exatos destas medidas estão na figura :ref:`fig-medidasresumo4categorias`.
 
-Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades da distribuição normal de probabilidades que não faz parte do conteúdo de Estatística a ser abordado no Ensino Médio. Entre várias propriedades desta distribuição, destaca-se que ela é simétrica e unimodal tal que média, mediana e moda são iguais. Veja na figura a seguir uma ilustração da densidade normal com média `\mu` e desvio padrão `\sigma`, também conhecida como a curva em forma de sino.
+Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. 
+
+Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades de um modelo teórico conhecido como densidade normal de probabilidades. Entre várias propriedades desta densidade, destaca-se que ela é simétrica e unimodal tal que média, mediana e moda são iguais. Veja na figura a seguir uma ilustração da densidade normal com média `\mu` e desvio padrão `\sigma`, também conhecida como a curva em forma de sino.
 
 
 .. _fig-densidade-normal:
