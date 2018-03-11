@@ -195,14 +195,78 @@ Explorando: Medidas de Posição
 
 
 No capítulo **A Natureza da Estatística** trabalhamos com representações gráficas de conjuntos de dados com a finalidade de obter informações sobre estruturas da sua distribuição como estratégia para resumir os dados.
+No exemplo dos resgistros de tempo deste capítulo, os dados, na tabela a seguir
+
+.. table:: 64 registros de tempo de atividade do capítulo **A Natureza da Estatística**
+   
+   +------+------+------+------+------+------+------+------+
+   |  A   | B    | C    | D    | E    | F    | G    | H    |
+   +======+======+======+======+======+======+======+======+
+   | 3,03 | 4,37 | 5,04 | 5,73 | 4,03 | 5,37 | 6,04 | 6,74 | 
+   +------+------+------+------+------+------+------+------+
+   | 3,38 | 4,46 | 5,11 | 5,84 | 4,38 | 5,46 | 6,11 | 6,84 | 
+   +------+------+------+------+------+------+------+------+
+   | 3,60 | 4,55 | 5,19 | 5,95 | 4,60 | 5,55 | 6,19 | 6,96 | 
+   +------+------+------+------+------+------+------+------+
+   | 3,78 | 4,63 | 5,29 | 6,08 | 4,78 | 5,64 | 6,29 | 7,08 | 
+   +------+------+------+------+------+------+------+------+
+   | 3,92 | 4,71 | 5,36 | 6,23 | 4,92 | 5,72 | 6,36 | 7,23 | 
+   +------+------+------+------+------+------+------+------+
+   | 4,04 | 4,79 | 5,45 | 6,41 | 5,04 | 5,79 | 6,45 | 7,40 | 
+   +------+------+------+------+------+------+------+------+
+   | 4,16 | 4,87 | 5,54 | 6,62 | 5,16 | 5,87 | 6,54 | 7,63 | 
+   +------+------+------+------+------+------+------+------+
+   | 4,27 | 4,95 | 5,64 | 6,97 | 5,26 | 5,95 | 6,64 | 7,97 | 
+   +------+------+------+------+------+------+------+------+
+
+foram organizados em intervalos de classe, como mostra a tabela a seguir
+
+.. table:: Registros de tempo agrupados em intervalos de classe
+ 
+   +---------------------+-----------------------------+
+   | Intervalo de classe | Número de observações       |
+   +=====================+=============================+
+   | [ 3,0 ; 3,5 [       |               2             |
+   +---------------------+-----------------------------+
+   | [ 3,5 ; 4,0 [       |               3             |
+   +---------------------+-----------------------------+
+   | [ 4,0 ; 4,5 [       |               7             |
+   +---------------------+-----------------------------+
+   | [ 4,5 ; 5,0 [       |               9             |
+   +---------------------+-----------------------------+
+   | [ 5,0 ; 5,5 [       |              11             |
+   +---------------------+-----------------------------+
+   | [ 5,5 ; 6,0 [       |              11             |
+   +---------------------+-----------------------------+
+   | [ 6,0 ; 6,5 [       |               9             |
+   +---------------------+-----------------------------+
+   | [ 6,5 ; 7,0 [       |               7             |
+   +---------------------+-----------------------------+
+   | [ 7,0 ; 7,5 [       |               3             |
+   +---------------------+-----------------------------+
+   |   [ 7,5 ; 8,0 [     |                2            |
+   +---------------------+-----------------------------+
+   
+que, por sua vez, foi usada para construir o histograma a seguir.
+ 
+ 
+.. _fig-histograma-resposta:
+ 
+.. figure:: _resources/Histograma-resposta_1.png
+   :width: 300pt
+   :align: center
+
+   Histograma dos registros de tempo
+   
+Observe que os 64 registros de tempo foram resumidos numa representação gráfica que revela o comportamento destes dados: registros de tempo entre 3,0 e 8,0, estrutura simétrica em torno da média dos resgistros de tempo que é 5,5.
 
 .. inserir tabela e histograma do capítulo anterior
 
-Este capítulo tem como objetivo responder, entre outras, as seguintes perguntas sobre um conjunto de dados quantitativos.
+O capítulo **Medidas de Posição e Dispersão** tem como objetivo responder, entre outras, as seguintes perguntas sobre um conjunto de dados quantitativos.
 
 #. É possível encontrar valor(es) para resumir as observações? Qual(is) seria(m) este(s) valor(es)? Como encontrá-lo(s)?
 #. Como medir se os dados estão "próximos" ou "afastados" uns dos outros?
-#. Como você classifica a forma do gráfico obtido? 
+#. Como você classifica a forma do gráfico construído para representar os dados? 
 #. Existe algum valor muito diferente dos demais? Como identificá-lo? 
 
 Ao longo deste capítulo veremos como resumir a informação dos dados, usando apenas algumas medidas que caracterizam a distribuição em vez de usar toda a coleção de dados para descrevê-la. Por esta razão, tais medidas são chamadas medidas resumo.
