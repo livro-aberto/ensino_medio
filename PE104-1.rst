@@ -522,7 +522,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
          |  Mínimo | 2,448    | 2,181  |
          +---------+----------+--------+
-         |  Máximo | 3,085    | 2,639  |
+         |  Máximo | 3,086    | 2,639  |
          +---------+----------+--------+
          |  Média  | 2,8698   | 2,5116 |
          +---------+----------+--------+
@@ -532,7 +532,6 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
          |  `Q3`   | 2,998    | 2,611  |
          +---------+----------+--------+
-
 
 
       .. _fig-coloque-aqui-o-nome:
@@ -567,15 +566,15 @@ Atividade: Comparação das diferentes categorias na maratona
    
    Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de disperssão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
    
-   As perguntas não tÊm respostas fechadas, tÊm o intuito de gerar uma discussão sobre os assuntos já colocados.
+   As perguntas não tÊm respostas fechadas, têm o intuito de gerar uma discussão sobre os assuntos já colocados.
    
    
-Observe os histogramas a seguir referentes as quatro categorias da Maratona de Nova Iorque: mulheres, homens, cadeira de rodas e triciclo de mão. 
+Observe os histogramas a seguir referentes as categorias de cadeira de rodas e triciclo de mão da Maratona de Nova Iorque em 2017. 
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/4histogramas.png
+.. figure:: _resources/Histogramas_cadeira_triciclo.png
    :width: 300pt
    :align: center
 
@@ -584,21 +583,40 @@ Observe os histogramas a seguir referentes as quatro categorias da Maratona de N
 
 #. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
 
-#. Em qual categoria se encontra o atleta que completou a maratona no menor tempo? E no maior tempo?
+#. Em qual categoria se encontra o atleta que completou a maratona no maior tempo?
    
-#. Você consegue estimar o tempo médio das duas primeiras categorias, observando o gráfico? Você acha que serão muito diferentes das outras duas categorias?
+#. Você consegue estimar o tempo médio destas categorias observando os histogramas? Você acha que elas serão muito diferentes das de homens e mulheres (:ref:`ativ-maratona-categoria-homens`)?
 
-#. Observe a tabela a seguir e marque as médias no histograma. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+#. Observe o quadro a seguir e marque as médias nos histogramas. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
 
-#. Observe que as médias não são muito diferentes, porém, as distribuições são muito diferentes. Se você conhecesse apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
+   .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
 
-.. table:: Média das quatro categorias da maratona de Nova Iorque 2017
+      +-----------+------------------+-----------------+
+      | Categoria | Cadeira de rodas | Triciclo de mão |
+      +-----------+------------------+-----------------+
+      | Média     | 2,59             | 2,73            |
+      +-----------+------------------+-----------------+
+  
+#. Observe que as médias não são muito diferentes, porém, as distribuições são similares. Se você conhecesse apenas a média, seria capaz de perceber a forma destes histogramas? Por quê?
 
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Categoria | Cadeira de rodas | Triciclo de mão | Mulheres (corrida) | Homens (corrida) |
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Média     | 2,59             | 2,73            | 2,87               | 2,51             |
-  +-----------+------------------+-----------------+--------------------+------------------+
+#. Comparando os dois histogramas, qual distribuição apresenta maior dispersão? Por quê?
+
+.. admonition:: Resposta 
+
+  #. As escalas horizontal e vertical são coincidentes em ambos os histogramas para permitir a comparação. Isto foi discutido no Capítulo **A Natureza da Estatística**.
+  
+  #. Observando-se os histogramas o maior tempo está na categoria de Triciclo de mão.
+  
+  #. A simples visualização pode remeter a estimativa de 4 horas para estas categorias, valor bem maior do que as médias para homens e mulheres (:ref:`ativ-maratona-categoria-homens`). No entanto, este valor excede muito as médias reais, apresentadas. Isto mostra que estimar o centro de equilíbrio de uma distribuição a partir do histograma não é trivial.
+  
+  #. Ambos os histogramas apresentam assimetria à direita: grande concentração de dados à esquerda e forma alongada para a direita.
+  
+  #. Não é possível, apenas um número é insuficiente para caracterizar a forma do histograma. Outras informações são necessárias para isto.
+  
+  #. O triciclo de mão apresenta maior dispersão, considerando a amplitude.
+  
+
+
 
 
 
