@@ -1,7 +1,3 @@
-.. admonition:: Resposta 
-
-  As perguntas tem o intuito de motivar uma discussão dos elementos necessários que tem que ser considerados para fazer histogramas que sejam comparáveis, introduzir de forma intuitiva o conceito de dispersão. As perguntas não tem uma resposta fechada, são mais uma guia para a discussão que o professor irá conduzir e serve como introdução à seção :ref:`sec-organizando2`.
-
 .. _sec-explorando2:
 
 ================================
@@ -20,6 +16,8 @@ Atividade: Estratégia de Investimento
  **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
 
  **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+ 
+ Esta atividade pode ser vinculada às disciplinas de História ou Geografia, por exemplo, no estudo do período da Crise Econômica de 1929 ou outros temas relacionados com o PIB e crescimento econômico.
  
 Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
 
@@ -406,7 +404,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
 
       Funções modular e quadrática com destaque para o comportamento em torno de x=0.
       
-   Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado Método dos Mínimos Quadrados. 
+   Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado  `Método dos Mínimos Quadrados <https://pt.wikipedia.org/wiki/M%C3%A9todo_dos_m%C3%ADnimos_quadrados>`_. 
    
    .. _fig-coloque-aqui-o-nome:
 
@@ -418,7 +416,7 @@ Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior d
    
 **Variância populacional e amostral, desvio padrão populacional e amostral**
 
-No capítulo **A Natureza da Estatística** foram apresentados os conceitos :index:`parâmetro` e :index:`estimador`. Parâmetro é uma característica numérica da população, enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro, na maioria das vezes desconhecido. Em geral, usam-se letras gregas para denotar parâmetros.
+No capítulo **A Natureza da Estatística** foram apresentados os conceitos :index:`parâmetro` e :index:`estimador`. Parâmetro é uma característica numérica da população, em geral desconhecida; enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro. Em geral, usam-se letras gregas para denotar parâmetros.
 
 Se dispomos de uma amostra da população, de fato, calculamos a média amostral e a variância amostral (funções dos dados da amostra) e usamos estes resultados como estimativas da média populacional e da variância populacional. Como já foi comentado anteriormente, a média amostral tem boas propriedades como estimador da média populacional. No entanto, é possível mostrar que a variância calculada pela fórmula apresentada no início deste capítulo é um estimador que tende a produzir valores menores do que o valor da variância da população. Dizemos que é um estimador viesado por essa razão. 
 
@@ -438,15 +436,15 @@ Na maioria das vezes trabalhamos com amostras. Assim, neste capítulo, salvo men
 
 Se você estiver trabalhando com uma amostra e usar o denominador `n` para calcular a variância, isso implicará que você escolheu um estimador viesado, pois tende a produzir estimativas que são menores do que o verdadeiro valor da variância. Observe que se você estiver trabalhando com amostras muito grandes, essa diferença não será importante, pois haverá pouca diferença entre dividir por `n` ou por `n-1`.
 
-Expressões que deverão ser consideradas quando o conjunto de dados sob estudo refere-se à população com `n` elementos:
+Expressões que deverão ser consideradas quando o conjunto de dados sob estudo refere-se à população com `N` elementos:
 
 .. math::
 
-   \textsf{variância populacional} = \sigma^2=\frac{1}{n}\sum^n_{i=1}(x_i-\mu)^2
+   \textsf{variância populacional} = \sigma^2=\frac{1}{N}\sum^n_{i=1}(x_i-\mu)^2
    
    \textsf{desvio padrão populacional}=\sqrt{\sigma^2}=\sigma
    
-em que `mu` representa a média populacional.
+em que `\mu` representa a média populacional.
    
 Veja na figura a seguir uma saída do GeoGebra de análise descritiva do conjunto de Notas de Artes sem bonificação.   
 
@@ -675,12 +673,23 @@ Atividade: Aproximação para o valor do desvio padrão amostral
  
 Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média. A partir desta suposição, pode-se obter uma fórmula para estimar o valor do desvio padrão amostral `s` .
 
-Como `\textsf{Max}=x_{(n)}\approx \bar{x}+2\cdot s` e  `\textsf{Min}=x_{(1)}\approx \bar{x}-2\cdot s` e `R = x_{(n)}-x_{(1)}` , tomando a diferença das duas primeiras expressões apresentadas, obtemos
+
+.. math::
+
+   \left \{ \begin{array}{l} \textsf{Max}=x_{(n)}\approx \bar{x}+2\cdot s \\ \textsf{Min}=x_{(1)}\approx \bar{x}-2\cdot s\end{array}\right. 
+   
+Tomando a diferença das primeiras expressões apresentadas, obtemos
 
 
 .. math::
 
-   s\approx \frac{\overbrace{R}^{x_{(n)}-x_{(1)}}}{4}
+   R= \textsf{Max-Min} \approx 4\cdot s
+
+tal que
+
+.. math::
+
+   s\approx \frac{R}{4}
    
 a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
 
