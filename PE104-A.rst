@@ -55,16 +55,7 @@ Na tabela a seguir, são apresentadas algumas informações sobre os 100 melhore
 Organizando as ideias: Boxplot
 ==============================
 
-O gráfico construído na :ref:`ativ-construcao-do-boxplot` é uma versão simplificada do gráfico conehcido como **boxplot** na qual não se consideram valores atípicos. Este gráfico, muito simples de ser construído, usa a informação das medidas Mínimo, Q1, Mediana, Q3 e Máximo.
-
-Antes de apresentar a explicação detalhada da contrução de um **boxplot** vamos responder a pergunta: "Para que servem os quartis da distribuição?"
-
-Os quartis servem para 
-
-#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
-#. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
-#. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
- 
+O gráfico construído na :ref:`ativ-construcao-do-boxplot` é uma versão simplificada do gráfico conhecido como **boxplot** na qual não se consideram valores atípicos. Este gráfico, muito simples de ser construído, usa a informação das medidas Mínimo, Q1, Mediana, Q3 e Máximo.
 
 A construção do **boxplot** é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
 
@@ -151,6 +142,15 @@ As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetr
 
 podemos concluir que a distribuição é aproximadamente simétrica, porém se alguns destes pares de intervalos apresentarem comprimentos muito diferentes, isso indica que a distribuição apresenta algum tipo de assimetria.
 
+Afinal, para que servem os quartis da distribuição?
+
+Os quartis servem para 
+
+#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
+#. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
+#. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
+
+
 Analisando o :ref:`fig-boxplotmulheres` podemos observar que 
 
 #. não existem valores atípicos;
@@ -187,7 +187,7 @@ A regra empírica estabelece que em distribuições aproximadamente simétricas 
 #. a frequência relativa de valores no intervalo `[\bar{x}-s;\bar{x}+s]` é aproximadamente 67%,
 #. a frequência relativa de valores no intervalo `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]` é aproximadamente 95%.
 
-No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de casos nos intervalos `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`, obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à direta.  
+No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de observações que nos intervalos definidos por `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`,  obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à direta.  
 
 O boxplot é muito útil na comparação de diferentes grupos, como veremos na atividade a seguir. 
 
@@ -447,6 +447,18 @@ Como a soma é finita, podemos reunir os termos semelhantes, obtendo
 .. math::
 
    \sum^n_{i=1}(x_i-\bar{x})^2=(x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2=\sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
+   
+Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Temos `n=35`, `\displaystyle{\sum^{35}_{i=1}}x_i=207,5` e `\displaystyle{\sum^{35}_{i=1}}x^2_i=1361,39`  tal que `\bar{x}=\frac{207,5}{35}\approx 5,93` e 
+
+
+.. math::
+
+   s^2=\frac{1}{34}\left ( 1361,39-35\cdot 5,93^2\right )\approx 3,8417 
+   
+tal que o desvio padrão amostral é, aproximadamente, 1,96.
+
+   
+
    
 
 
