@@ -12,9 +12,9 @@ Atividade: Homens e Mulheres na Maratona de Nova Iorque
 
    **Objetivos específicos:** Usando as medidas mínimo, Q1, mediana, Q3 e máximo, construir um esquema visual simples que permita comparar dois grupos distintos.
    
-   **Observações e sugestões:** Nesta atividade, pretende-se apresentar o boxplot, gráfico alternativo para a representação de variáveis quantitativas, que além de bastante simples de construir é útil na comparação de grupos diferentes. Este gráfico é baseado nas cinco medidas citadas nos objetivos específicos e, as mesmas, já foram obtidas pelos alunos em atividades anteriores. De qualquer forma, serão novamente apresentadas no enunciado da atividade, para facilitar.
+   **Observações e sugestões:** Nesta atividade pretende-se apresentar o boxplot, gráfico alternativo para a representação de variáveis quantitativas, que além de bastante simples de construir é útil na comparação de grupos diferentes. Este gráfico é baseado nas cinco medidas citadas nos objetivos específicos e, as mesmas, já foram obtidas pelos alunos em atividades anteriores. De qualquer forma, serão novamente apresentadas no enunciado da atividade, para facilitar.
    
-Na tabela a seguir, são apresentadas algumas informações sobre os 100 melhores tempos na maratona de Nova Iorque em 2017 para o grupo dos homens e para o grupo das mulheres.
+No quadro a seguir, são apresentadas algumas informações sobre os 100 melhores tempos na maratona de Nova Iorque em 2017 para o grupo dos homens e para o grupo das mulheres.
 
 
 .. _fig-homens-e-mulheres:
@@ -187,7 +187,7 @@ A regra empírica estabelece que em distribuições aproximadamente simétricas 
 #. a frequência relativa de valores no intervalo `[\bar{x}-s;\bar{x}+s]` é aproximadamente 67%,
 #. a frequência relativa de valores no intervalo `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]` é aproximadamente 95%.
 
-No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de observações que nos intervalos definidos por `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`,  obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à direta.  
+No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de observações que nos intervalos definidos por `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`,  obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à esquerda.  
 
 O boxplot é muito útil na comparação de diferentes grupos, como veremos na atividade a seguir. 
 
@@ -335,21 +335,29 @@ Os resultados obtidos na prova de seleção para vagas de estágio numa empresa 
 
    Histograma das notas na prova de seleção para vagas de estágio
    
-#. Com base neste histograma, calcule a média, a variância, a moda, o primeiro quartil e o terceiro quartil.
+#. Com base neste histograma, calcule a média, a variância, a mediana, a moda, o primeiro quartil e o terceiro quartil.
 #. Usando a informação do histograma, faça um esboço do boxplot destes dados.
 
 
 .. admonition:: Resposta 
 
-   #. A média pode ser calculada por `\bar{x}\approx 0,15\cdot 1+0,25\cdot 3+0,20\cdot 5+0,3 \cdot 7+0,1\cdot 9=0,15+0,75+1+2,1+0,9=4,9`.
+   #. A média pode ser calculada por `\bar{x}\approx`
    
-   Para calcular a variância, primeiro obtemos uma aproximação para a soma de quadrados das notas, dada por `0,15\cdot 1^2+0,25\cdot 3^2+0,20\cdot 5^2+0,3 \cdot 7^2+0,1\cdot 9^2=0,15+2,25+5+14,7+8,1=30,2`, assim, `s^2\approx 30,2-4,9^2=6,19`.
+      `0,15\cdot 1+0,25\cdot 3+0,20\cdot 5+0,3 \cdot 7+0,1\cdot 9=` 
    
-   A classe modal corresponde ao intervalo delimitado por 6 e 8, uma aproximação para o valor modal é considerar o ponto médio da classe modal. Neste caso, temos que 7 é uma aproximação para o valor da moda nesta distribuição.
+      `0,15+0,75+1+2,1+0,9=4,9`.
    
-   Não podemos identificar quem é o valor central ou valores centrais, pois não foi dada a informação do número de candidatos que fizeram a prova. Mas isso não é problema, pois a mediana divide a distribuição em dois intervalos de frequências iguais a 50%. Logo, precisamos identificar em que intervalo, cairá a mediana e, como apresentado na :ref:`sec-organizando1` tomar o ponto médio desta classe como aproximação para o valor da mediana. Observe na figura que a frequência do primeiro intervalo é 0,15; a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40 ainda é menod do que 0,5. Considerando os três primeiros intervalos, a frequência acumulada é 0,4+0,2=0,6. Logo, a mediana está no intervalo delimitado por 4 e 6, de modo que tomamos o ponto médio deste intervalo como uma aproxmação para o valor da mediana, a saber, 5.
+      Para calcular a variância, primeiro obtemos uma aproximação para a soma de quadrados das notas, dada por 
    
-   O mesmo raciocínio utilizado para obter a mediana, pode ser usado para obter aproximações do primeiro e terceiro quartis. Em vez de 50% na frequência acumulada, deveremos encontrar 25% e 75%, respectivamente. Como a frequência do primeiro intervalo é 0,15 e a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40, seque que o primeiro quartil deve estar no segundo intervalo delimitado por 2 e 4. Logo, tomamos o ponto médio deste intervalo como uma aproximação para o primeiro quartil, a saber, 3. Até o terceiro intervalo a frequência acumumulada é 0,6, considerando o quarto intervalo, a frequência acumulada é 0,9. Logo, como o terceiro quartil está no quarto intervalo, tomamos o ponto médio  7 com aproximação para o terceiro quartil.
+      `0,15\cdot 1^2+0,25\cdot 3^2+0,20\cdot 5^2+0,3 \cdot 7^2+0,1\cdot 9^2=`
+   
+      `0,15+2,25+5+14,7+8,1=30,2`, assim, `s^2\approx 30,2-4,9^2=6,19`.
+   
+      A classe modal corresponde ao intervalo delimitado por 6 e 8, uma aproximação para o valor modal é considerar o ponto médio da classe modal. Neste caso, temos que 7 é uma aproximação para o valor da moda nesta distribuição.
+   
+      Não podemos identificar quem é o valor central ou valores centrais, pois não foi dada a informação do número de candidatos que fizeram a prova. Mas isso não é problema, pois a mediana divide a distribuição em dois intervalos de frequências iguais a 50%. Logo, precisamos identificar em que intervalo, cairá a mediana e, como apresentado na :ref:`sec-organizando1` tomar o ponto médio desta classe como aproximação para o valor da mediana. Observe na figura que a frequência do primeiro intervalo é 0,15; a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40 ainda é menod do que 0,5. Considerando os três primeiros intervalos, a frequência acumulada é 0,4+0,2=0,6. Logo, a mediana está no intervalo delimitado por 4 e 6, de modo que tomamos o ponto médio deste intervalo como uma aproxmação para o valor da mediana, a saber, 5.
+   
+      O mesmo raciocínio utilizado para obter a mediana, pode ser usado para obter aproximações do primeiro e terceiro quartis. Em vez de 50% na frequência acumulada, deveremos encontrar 25% e 75%, respectivamente. Como a frequência do primeiro intervalo é 0,15 e a frequência acumulada, considerando os dois primeiros intervalos é 0,15+0,25=0,40, seque que o primeiro quartil deve estar no segundo intervalo delimitado por 2 e 4. Logo, tomamos o ponto médio deste intervalo como uma aproximação para o primeiro quartil, a saber, 3. Até o terceiro intervalo a frequência acumumulada é 0,6, considerando o quarto intervalo, a frequência acumulada é 0,9. Logo, como o terceiro quartil está no quarto intervalo, tomamos o ponto médio  7 com aproximação para o terceiro quartil.
    
    #. Com base no histograma temos o seguinte esquema dos cinco números Min=0, Q1=3, Mediana=5, Q3=7, Max=10. DQ=7-3=4. Cerca inferior=3-6=-3, cerca superior=7+6=13. Logo, não existem valores discrepantes. A figura a seguir ilustra um boxplot para este esquema dos cinco números.
    
@@ -410,7 +418,11 @@ qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`.
 
 Demonstração: 
 
-`\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0`, lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
+`\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=(x_1-\bar{x})+(x_2-\bar{x})+\cdots+(x_n-\bar{x})=\\ \underbrace{(x_1+x_2+\cdots +x_n)}_{=n\cdot \bar{x}} - n\cdot \bar{x}=0`
+
+lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
+
+Veja um exemplo na seção :ref:`sub-desviosdamedia`.
 
 
 .. _sub-formula-calculo-variancia:
@@ -440,13 +452,13 @@ Lembre que `(x_i-\bar{x})^2=x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2`. Assim,
 
 .. math::
 
-   \small {\sum^n_{i=1}(x_i-\bar{x})^2=\sum^n_{i=1}(x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2)=(x^2_1-2\cdot\bar{x}\cdot x_1+\bar{x}^2)+(x^2_2-2\cdot\bar{x}\cdot x_2+\bar{x}^2)+ \cdots + (x^2_n-2\cdot\bar{x}\cdot x_n+\bar{x}^2)}
+   \small {\sum^n_{i=1}(x_i-\bar{x})^2=\sum^n_{i=1}(x^2_i-2\cdot \bar{x}\cdot x_i+\bar{x}^2)=\\ (x^2_1-2\cdot\bar{x}\cdot x_1+\bar{x}^2)+(x^2_2-2\cdot\bar{x}\cdot x_2+\bar{x}^2)+ \cdots + (x^2_n-2\cdot\bar{x}\cdot x_n+\bar{x}^2)}
    
 Como a soma é finita, podemos reunir os termos semelhantes, obtendo
 
 .. math::
 
-   \sum^n_{i=1}(x_i-\bar{x})^2=(x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2=\sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
+   \sum^n_{i=1}(x_i-\bar{x})^2= \\ (x^2_1+x^2_2+\cdots x^2_n)\underbrace{-2\cdot \bar{x}\cdot \overbrace{(x_1+x_2+\cdots+x_n)}^{=n\cdot \bar{x}}}_{=-2\cdot n\cdot \bar{x}^2}+n\cdot \bar{x}^2= \\ \sum^n_{i=1} x^2_i-n\cdot\bar{x}^2
    
 Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Temos `n=35`, `\displaystyle{\sum^{35}_{i=1}}x_i=207,5` e `\displaystyle{\sum^{35}_{i=1}}x^2_i=1361,39`  tal que `\bar{x}=\frac{207,5}{35}\approx 5,93` e 
 
