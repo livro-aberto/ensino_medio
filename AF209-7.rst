@@ -1,12 +1,11 @@
-   
-.. _sec-explorando-max-min-can:
+.. _sec-funcao-quadratica-explorando-max-min-can:
 
 *************************************************************
 Explorando: otimização em domínio discreto e escalas gráficas 
 *************************************************************
 
 
-.. _ativ-aumento-passagem: 
+.. _ativ-funcao-quadratica-aumento-passagem: 
 
 Atividade: aumento na passagem
 ------------------------------
@@ -67,9 +66,6 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
     +------------------+------------------+--------------------------------+----------------------+
 #. Escolha um dos planos cartesianos a seguir, para representar os pontos da tabela acima e os represente no plano escolhido.
 
-  
-   .. _fig-coloque-aqui-o-nome:
-
    .. figure:: _resources/graficos_c.jpg
       :width: 600pt
       :align: center
@@ -90,7 +86,7 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
 #. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente a nova quantidade mensal de passageiros (já com o aumento de `x` reais).
 
-#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o faturamento da empresa em função de x, dado por `F(x)`.
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o faturamento da empresa em função de `x`, dado por `F(x)`.
 
 #. Se representarmos expressão obtida no item anterior por uma função `F:A\to B`, onde `A` é seu domínio e `B` é sua imagem, podemos afirmar que `F` é uma função quadrática? Justifique sua resposta
 
@@ -151,8 +147,6 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
       +------------------+------------+--------------------------------+----------------------+   
 
    #. 
-   
-      .. _fig-coloque-aqui-o-nome:
 
       .. figure:: _resources/graficos_c_resp.jpg
          :width: 400pt
@@ -172,27 +166,21 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
       
       **Escalas iguais**: (*Desvantagens*) Precisaríamos de muito espaço e/ou bastante compactação para desenharmos fielmente este gráfico. Note como ficaria:
       
-      
-      .. _fig-coloque-aqui-o-nome:
-
       .. figure:: _resources/graficos_f.jpg
          :width: 400pt
          :align: center
 
          Escala real
       
-   #. A imagem de `130` é negativa, logo se a nova passagem for de `130`reais "haveria" um faturamento negativo, o que não é condizente para os dados apresentados no contexto.
+   #. A imagem de `130` é negativa, logo se a nova passagem for de `130` reais "haveria" um faturamento negativo, o que não é condizente para os dados apresentados no contexto.
    
    #. Sim, por vários motivos: já vimos que o gráfico de toda função quadrática é uma parábola, e que as função quadráticas são as únicas funções em que as diferenças das imagens, geram uma Progressão aritmética:
    
-      
-      .. _fig-coloque-aqui-o-nome:
-
       .. figure:: _resources/PA_g.jpg
          :width: 100pt
          :align: center
 
-         **P.A.**
+         **Progressão Aritmética**
 
    #. `40+x`.
 
@@ -200,7 +188,7 @@ Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasilei
 
    #. `F(x)=(40+x).(1200-10x)` ou `F(x)=-10x^2+800x+48000`.
 
-   #. Sim. Ou pela justificativa dada no item “f” ou pelo fato da função quadrática ser uma função do polinômio de grau 2, e a função em questão, apresenta `a=-10` ; `b=800` e `c=48000` coeficientes do polinômio do segundo grau. 
+   #. Sim. Ou pela justificativa dada no item 'f' ou pelo fato da função quadrática ser uma função do polinômio de grau 2, e a função em questão, apresenta `a=-10` ; `b=800` e `c=48000` coeficientes do polinômio do segundo grau. 
 
    #. `A` é o conjunto dos números naturais de `0` a `120`; `B` é o conjunto dos números naturais contidos no intervalo:`[0,64000]` que são imagens dos elementos do conjunto `A`.
 
@@ -232,11 +220,8 @@ Praticando
 
 `2`) Dada a função real `f` dada por `f(x)=-x^2+4x+5` , o gráfico da mesma está representado abaixo:
 
-
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/fi.jpg
-  :width: 300pt
+  :width: 200pt
   :align: center
 
   `f(x)=-x^2+4x+5`
@@ -256,11 +241,8 @@ As coordenadas corretas dos pontos do gráfico são:
 
 `3`) Seja a função real `g`, definida por `g(x)=ax^2+bx+c` representada no gráfico a seguir:
 
-
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/f2_2.jpg
-  :width: 400pt
+  :width: 200pt
   :align: center
 
   (`g(x)=ax^2+bx+c`)
@@ -282,24 +264,14 @@ Pode-se afirmar que:
 .. admonition:: Resposta 
 
    `1`) 
-   
-   .. _fig-coloque-aqui-o-nome:
 
    .. figure:: _resources/r1.jpg
       :width: 400pt
       :align: center
 
-      
-   
-   .. _fig-coloque-aqui-o-nome:
-
    .. figure:: _resources/r2.jpg
       :width: 400pt
       :align: center
-
-     
-   
-   .. _fig-coloque-aqui-o-nome:
 
    .. figure:: _resources/r3.jpg
       :width: 400pt
@@ -308,11 +280,11 @@ Pode-se afirmar que:
    
    `2`) Gabarito letra E. Em `f(x)=-x^2+4x+5`, temos que `C=(0,5)`, `x_1=-1` e `x_2=5`, logo `A=(-1,0)` e `B=(5,0)`.
    
-   Como `x_v=\frac{-b}{2a}=\frac{-4}{2\cdot(-1)}=2` e `f(2)=9`, temos que `V=(2,9)`;
+   Como `p=\frac{-b}{2a}=\frac{-4}{2\cdot(-1)}=2` e `f(2)=9`, temos que `V=(2,9)`;
   
 
    `3`) Gabarito letra E. Como a concavidade da parábola está voltada para baixo, temos que `a<0`;
    
-   Como o `x_v` é positivo e `a<0`, temos que `x_v=\frac{-b}{2a}\to+=\frac{-?}{-}` assim `b>0`.
+   Como o `p` é positivo e `a<0`, temos que `p=\frac{-b}{2a} \Rightarrow \text{positivo}=\frac{-b}{\text{negativo}}` assim `b>0`.
    
    Como a parábola intersecta o eixo das ordenadas na parte positiva deste eixo, temos que `c>0`.
