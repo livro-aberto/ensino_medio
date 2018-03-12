@@ -201,15 +201,30 @@ Cuidado com esta interpretação: o ponto de equilíbrio corresponde à posiçã
 
 Considere o exemplo a seguir. Numa tarde, 10 clientes interessados em obter um cartão de crédito oferecido por uma rede de supermercados informaram a uma atendente seus salários (em salários mínimos): `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}`. 
 
-A média destes dados é, então, `\bar{x}=\frac{46}{10}=4,6`, que representa bem este conjunto, pois nele existem cinco valores acima da média e cinco valores abaixo da média e, estes valores não estão muito afastados do valor da média. 
+A média destes dados é, então, `\bar{x}=\frac{46}{10}=4,6`, que representa bem este conjunto, pois nele existem cinco valores acima da média e cinco valores abaixo da média e, estes valores não estão muito afastados do valor da média, conforme ilustrado no Diagrama de Pontos a seguir. 
 
-.. ilustração
+
+.. _fig-diagramadepontos-media-sem-outlier:
+
+.. figure:: _resources/ilustrasomedia.png
+   :width: 200pt
+   :align: center
+
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` com destaque para a média do conjunto 
+
 
 Suponha uma pequena variação do conjunto de dez salários na qual no lugar do salário de 10 salários mínimos, o salário é de 100 salários mínimos. Assim, os registros são `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}`.  Observe que a única diferença entre os dois conjuntos está no valor extremo: um é 10 e o outro é 100. O que esta única diferença nos dois conjuntos acarreta na média?
 
-Com os dados do segundo conjunto, a média é dada por `\frac{136}{10}=13,6`, valor maior do que a maioria dos dados observados no conjunto, a saber, apenas uma observação é bem superior a 13,6. 
+Com os dados do segundo conjunto, a média é dada por `\frac{136}{10}=13,6`, valor maior do que a maioria dos dados observados no conjunto, a saber, apenas uma observação é bem superior a 13,6. Observe, que para representar o diagrama de pontos destes dados usou-se um recurso de quebra do eixo dos dados devido ao valor atípico 100, em relação aos demais valores.
 
-.. ilustração
+
+.. _fig-diagramadepontos-media-com-outlier:
+
+.. figure:: _resources/ilustrasomediacomoutlier.png
+   :width: 400pt
+   :align: center
+
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` com destaque para a média do conjunto e quebra do eixo devido ao valor atípico
 
 Este exemplo simples mostra que na presença de dados atipicamente altos, deve-se tomar cuidado em escolher a média como medida de posição das observações coletadas. Uma medida pouco afetada para valores atípicos, conhecida como :index:`medida robusta<medida robusta>`,  deverá ser considerada em situações deste tipo. A mediana, que trataremos a seguir, é considerada uma medida robusta.
 
