@@ -4,13 +4,71 @@
 Exercícios
 ==========
 
-`1.` (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
+`1.` Numa instituição de ensino médio os estudantes são obrigados a apresentar exame no final do ano se a média dos bimestres é menor do que 7. Um estudante de ensino médio quer saber em quantas disciplinas ele pode ser aprovado sem fazer exame final. No final do segundo bimestre ele teve as seguintes notas, indique quanto deverão somar, no mínimo, as duas notas dos dois últimos bimestres para evitar o exame final, conclua quando isto ainda é possível.
+
+   +-------------------+-----+-----+-----------------------+----------------------------+
+   | Disciplina        | 1o. | 2o. | Soma mínima das notas | Exemplo de notas possíveis |
+   +===================+=====+=====+=======================+==============+=============+
+   | Língua portuguesa | 7   | 4   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Física            | 5   | 4   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Matemática        | 8   | 8   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | História          | 3   | 4   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+----------------------------+
+   | Geografia         | 5   | 5   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Filosofia         | 7   | 9   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Educação Física   | 9   | 8   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Inglés            | 7   | 5   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Química           | 3   | 7   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+   | Biologia          | 8   | 6   |                       |              |             |
+   +-------------------+-----+-----+-----------------------+--------------+-------------+
+
+
+	`2.` Suponha que o aluno do exercício anterior conseguiu evitar o exame final das disciplinas de Língua Portuguesa, Física e Biologia, por ter obtido média sete. As notas deste aluno dos quatro bimestres estão indicadas no quadro a seguir. 
+    
+      +-------------------+-----+-----+-----+-----+
+      | Disciplina        | 1o. | 2o. | 3o. | 4o. |
+      +===================+=====+=====+=====+=====+
+      | Língua portuguesa | 7   | 4   | 8   | 9   |
+      +-------------------+-----+-----+-----+-----+
+      | Física            | 5   | 4   | 9   | 10  |
+      +-------------------+-----+-----+-----+-----+
+      | Biologia          | 8   | 6   | 7   | 7   |
+      +-------------------+-----+-----+-----+-----+
+
+	      1. Complete o quadro seguir com os desvios da média de cada disciplina.
+          
+         +-------------------+-----+-----+-----+-----+------+
+         | Disciplina        | Desvios da média      | Soma |
+         +===================+=====+=====+=====+=====+======+
+         | Língua portuguesa |     |     |     |     |      |
+         +-------------------+-----+-----+-----+-----+------+
+         | Física            |     |     |     |     |      |
+         +-------------------+-----+-----+-----+-----+------+
+         | Biologia          |     |     |     |     |      |
+         +-------------------+-----+-----+-----+-----+------+
+              
+      2. Em qual das disciplinas foi maior o desvio padrão das notas? E o menor?
+      
+      3. Você acha que a mediana das notas seria um bom critério para a aprovação? Apresente exemplos para os quais:
+      	   *. a mediana das notas é 7 e a média é inferior a 7;
+         *. a mediana das notas é 7 e a média é exatamente a 7;
+         *. a mediana das notas é 7 e a média é superior a 7.
+
+`3.` (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
 
 1. "Há, no grupo em questão, pelo menos um recruta que mede mais de 1,81 m e pelo menos um que mede menos de 1,81 m."
    
 2. "Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m."
 
-`2.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
+`3.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
 
 Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que 
 
@@ -26,7 +84,7 @@ e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os el
 
 #. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. São iguais? Por quê?  
    
-`3.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0.` 
+`5.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0.` 
 
 1. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
 
@@ -34,7 +92,7 @@ e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os el
 
 3. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. Houve alguma alteração? Por quê? 
    
-`4.` (ENEM 2015) Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os tempos no quadro a seguir. Escolha a opção que indica o valor da mediana dos tempos apresentados.
+`6.` (ENEM 2015) Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os tempos no quadro a seguir. Escolha a opção que indica o valor da mediana dos tempos apresentados.
 
 1. 20,70 s.
    
@@ -54,7 +112,7 @@ e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os el
    |Tempo (s)      |20,90 |20,90 |20,50 |20,80 |20,60 |20,60 |20,90 |20,96 |
    +---------------+------+------+------+------+------+------+------+------+
 
-`5.` (ENEM 2016-adaptado) Em uma cidade, o número de casos de dengue confirmados aumentou consideravelmente nos últimos dias. A prefeitura resolveu desenvolver uma ação, contratando funcionários para ajudar no combate à doença, os quais orientarão os moradores a eliminarem criadouros do mosquito Aedes aegypti, transmissor da dengue. A tabela a seguir apresenta o número atual de casos confirmados, por região da cidade.
+`7.` (ENEM 2016-adaptado) Em uma cidade, o número de casos de dengue confirmados aumentou consideravelmente nos últimos dias. A prefeitura resolveu desenvolver uma ação, contratando funcionários para ajudar no combate à doença, os quais orientarão os moradores a eliminarem criadouros do mosquito Aedes aegypti, transmissor da dengue. A tabela a seguir apresenta o número atual de casos confirmados, por região da cidade.
 
 A prefeitura optou pela seguinte quantidade de funcionários a serem contratados: (I) 10 funcionários para cada região da cidade cujo número de casos seja maior que a média dos casos confirmados e (II) 7 funcionários para cada região da cidade cujo número de casos seja menor ou igual à média dos casos confirmados. Quantos funcionários a prefeitura deverá contratar para efetivar a ação?
 
@@ -88,7 +146,7 @@ A prefeitura optou pela seguinte quantidade de funcionários a serem contratados
    | Soma            |1.832            |
    +-----------------+-----------------+   
 
-`6.` O *boxplot* a seguir representa a distribuição do número de gols da artilharia nas Copas do Mundo desde a Copa de 1930 até a Copa de 2006. Vamos chamar este número de **recorde**. Observe que só é considerado o **recorde**, sem levar em conta se houve mais de um artilheiro na Copa. Desse modo, nestas 18 Copas do Mundo, a figura leva em consideração os 18 **recordes** observados.
+`8.` O *boxplot* a seguir representa a distribuição do número de gols da artilharia nas Copas do Mundo desde a Copa de 1930 até a Copa de 2006. Vamos chamar este número de **recorde**. Observe que só é considerado o **recorde**, sem levar em conta se houve mais de um artilheiro na Copa. Desse modo, nestas 18 Copas do Mundo, a figura leva em consideração os 18 **recordes** observados.
 
   .. _fig-boxplotgols:
 
@@ -116,13 +174,13 @@ Com base neste gráfico, as seguintes afirmações foram feitas a cerca da distr
    
 Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.
 
-`7.` Na questão anterior foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **recordes** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **recordes** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
+`9.` Na questão anterior foram consideradas 18 Copas do Mundo. Sabe-se que a soma exata dos **recordes** destas Copas é dada por `\displaystyle{\sum^{18}_{i=1}}x_i=132` e que a soma dos quadrados dos **recordes** é dada por `\displaystyle{\sum^{18}_{i=1}}x^2_i=1060`. 
 
 1. Com base nestas informações, calcule a média e o desvio padrão dos **recordes** e compare com as aproximações obtidas no exercício anterior. 
   
 2. Consultando os **recordes** referentes às Copas de 2010 e 2014, verificou-se que eles foram 5 e 6, respectivamente. Determine a média e o desvio padrão dos **recordes**, considerando as 20 Copas do Mundo até 2014.
 
-`8.` (ENEM-2010) O quadro seguinte mostra o desempenho de um time de futebol no último campeonato. A coluna da esquerda mostra o número de gols marcados e a coluna da direita informa em quantos jogos o time marcou aquele número de gols.
+`10.` (ENEM-2010) O quadro seguinte mostra o desempenho de um time de futebol no último campeonato. A coluna da esquerda mostra o número de gols marcados e a coluna da direita informa em quantos jogos o time marcou aquele número de gols.
 
 .. table:: Desempenho de um time
    
@@ -152,7 +210,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
 
 
 
-`9.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado em duas amostras, uma de alunos do turno da manhã e outra de alunos do turno da tarde. A seguir, estão os resultados para as duas amostras.
+`11.` Um professor de Matemática suspeita que seus alunos do turno da tarde são mais fracos do que os seus alunos do turno da manhã. Para verificar sua suspeita, logo no início do ano letivo ele aplicou um teste básico de questões envolvendo conteúdos básicos e esperados para o nível a ser iniciado em duas amostras, uma de alunos do turno da manhã e outra de alunos do turno da tarde. A seguir, estão os resultados para as duas amostras.
 
 .. table:: Notas de uma amostra de alunos do turno da manhã
 
@@ -198,7 +256,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    
 Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre os dois turnos. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
 
-`10.` Quando comparou-se a média com a mediana falou-se em grau de assimetria da distribuição (:ref:`sec-organizando1`). Na seção :ref:`sec-Parasabermais` falou-se novamente em grau de assimetria. A assimetria pode ser medida pelo **índice de assimetria de Pearson** 
+`12.` Quando comparou-se a média com a mediana falou-se em grau de assimetria da distribuição (:ref:`sec-organizando1`). Na seção :ref:`sec-Parasabermais` falou-se novamente em grau de assimetria. A assimetria pode ser medida pelo **índice de assimetria de Pearson** 
 
 .. math::
 
@@ -212,7 +270,7 @@ Se `I\geq 1,00` ou `I\leq -1,00` , os dados podem ser considerados fortemente as
 #. :ref:`ativ-comparacaodegruposusandoboxplot`;
 #. exercício 10.
 
-`11.` Em provas aplicadas em grande escala é comum divulgar as notas transformadas da seguinte forma
+`13.` Em provas aplicadas em grande escala é comum divulgar as notas transformadas da seguinte forma
 
 .. math::
 
@@ -234,13 +292,66 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
  
 .. admonition:: Resposta 
 
-   `1.` A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
+		   `1.` 
+           
+   .. table:: Legenda
+
+      +-------------------+-----+-----+----------------------------+----------------------------+
+      | Disciplina        | 1o. | 2o. | Soma mínima das notas      | Exemplo de notas possíveis |
+      +                   +     +     + nos dois últimos bimestres +----------------------------+
+      |                   |     |     |                            | 3o.          | 4o.         |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Língua portuguesa | 7   | 4   | 17                         | 8            | 9           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Física            | 5   | 4   | 19                         | 9            | 10          |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Matemática        | 8   | 8   | 12                         | 6            | 6           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | História          | 3   | 4   | 21                         | Exame Final                |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Geografia         | 5   | 5   | 18                         | 9            | 9           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Filosofia         | 7   | 9   | 12                         | 6            | 6           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Educação Física   | 9   | 8   | 11                         | 5            | 6           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Inglés            | 7   | 5   | 16                         | 8            | 8           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Química           | 3   | 7   | 18                         | 8            | 10          |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+      | Biologia          | 8   | 6   | 14                         | 7            | 7           |
+      +-------------------+-----+-----+----------------------------+--------------+-------------+
+
+   `2.` O estudante deve obter as respostas dos seguintes quadros:
+   
+      +-------------------+-----------------+------+-------------------+
+      | Disciplina        | Desvio da média | Soma | Desvio padrão (s) |
+      +-------------------+----+----+---+---+------+-------------------+
+      | Língua portuguesa | 0  | -3 | 1 | 2 | 0    | 2,16              |
+      +-------------------+----+----+---+---+------+-------------------+
+      | Física            | -2 | -3 | 2 | 3 | 0    | 2,94              |
+      +-------------------+----+----+---+---+------+-------------------+
+      | Biologia          | 1  | -1 | 0 | 0 | 0    | 0,82              |
+      +-------------------+----+----+---+---+------+-------------------+
+      
+      
+      +----------------+-------+---------+
+      | Notas          | Média | Mediana |
+      +----------------+-------+---------+
+      | 1 | 7 | 7 | 7  | 5,5   | 7       |
+      +---+---+---+----+-------+---------+
+      | 5 | 6 | 8 | 9  | 7     | 7       |
+      +---+---+---+----+-------+---------+
+      | 7 | 7 | 7 | 10 | 7,75  | 7       |
+      +---+---+---+----+-------+---------+
+
+   `3.` A primeira a firmação é verdadeira e, na segunda, os dados são insuficientes para uma conclusão.
    
    1. Como nem todos os recrutas têm a mesma altura, se nenhum deles medisse mais de 1,81 m, a média seria menor do que 1,81 m. Logo, pelo menos um recruta tem altura maior do que 1,81 m. Analogamente, se nenhum recruta medisse menos de 1,81 m, a média seria maior do que 1,81 m. Logo, ao menos um recruta mede menos de 1,81 m.
       
    2. Por exemplo, pode-se ter no grupo 51 recrutas com 1,81 m, exatamente um com 1,80 m e exatamente um com 1,82 m, o que tornaria a sentença a falsa. No entanto, também pode-se ter 49 recrutas com 1,81 m, dois com 1,80 m e dois com 1,82 m, o que tornaria a sentença verdadeira. Portanto, os dados são insuficientes para uma conclusão.
    
-   `2.` Com esta transformação 
+   `4.` Com esta transformação 
    
    1. a média do novo conjunto será dada pela média inicial acrescida da constante `a`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{x_1+a+x_2+a+\cdots+x_n+a} {n}=`
    `\frac{\displaystyle{\sum^n_{i=1}}x_i+n\cdot a}{n}=\frac{\displaystyle{\sum^n_{i=1}}x_i}{n}+\frac{n\cdot a}{n}=\bar{x}+a`.
@@ -253,7 +364,7 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
    
    
       
-   `3.` `y_i=c\cdot x_i`, `i=1,2,...,n`.
+   `5.` `y_i=c\cdot x_i`, `i=1,2,...,n`.
    
    1. A média do novo conjunto será dada pela média inicial multiplicada pela constante `c`, pois `\bar{y}=\frac{y_1+y_2+\cdots +y_n}{n}=\frac{c\cdot x_1+c\cdot x_2+\cdots+c\cdot x_n}{n}=\frac{c}{n}\cdot \displaystyle{\sum^n_{i=1}}x_i =c\cdot\bar{x}`.
       
@@ -261,22 +372,22 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
 
    3. Com base nas respostas anteriores, o coeficiente de variação do novo conjunto será dado por `\textsf{CV}_y=\frac{c\cdot s_y}{c\cdot \bar{y}}\cdot 100=\frac{s}{\bar{x}}\cdot 100`. Logo, o coeficiente de variação do novo conjunto será igual ao coeficiente de variação do conjunto inicial.
       
-   `4.` O primeiro passo é colocar os tempos do quadro apresentado em ordem crescente, a saber, `20,50< 20,60< 20,60< 20,80< 20,90 \leq  20,90 \leq 20,90 < 20,96`. Como o número de observações é par (`n=8`), segue que a mediana é dada por `\frac{x_{(4)}+x_{(5)}}{2}=\frac{20,80+20,90}{2}=20,85.` A resposta correta encontra-se na opção d).
+   `6.` O primeiro passo é colocar os tempos do quadro apresentado em ordem crescente, a saber, `20,50< 20,60< 20,60< 20,80< 20,90 \leq  20,90 \leq 20,90 < 20,96`. Como o número de observações é par (`n=8`), segue que a mediana é dada por `\frac{x_{(4)}+x_{(5)}}{2}=\frac{20,80+20,90}{2}=20,85.` A resposta correta encontra-se na opção d).
    
-   `5.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
+   `7.` A média do número de casos confirmados é dada por `\frac{1.832}{8}= 229`. Logo, o número de regiões da cidade cujo número de casos confirmados é maior do que 229 é 5, e o número de regiões da cidade cujo número de casos confirmados é menor do que 229 é 3. Assim, o número de funcionários que devem ser contratados pela prefeitura é `5\cdot 10 + 3\cdot 7= 71` . A resposta correta encontra-se na opção d).
    
-   `6.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois DQ=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressão indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
+   `8.` **a)** Concordo, pois podemos perceber que os comprimentos dos intervalos à direita são maiores: `\textsf{Q3-mediana}=13-6,5=6,5>\textsf{mediana-Q1}=6,5-6=0,5`, `\textsf{Max-Q3}=13-9=4>\textsf{Q1-Min}=6-4=2` e `\textsf{Max-mediana}=13-6,5=6,5>\textsf{mediana-Min}=6,5=4=2,5`.  **b)** Concordo, pois há assimetria à direita.  **c)** Comcordo: este gráfico não nos revela a existência de um intervalo de maior frequência, pois os quatro intervalos nele considerados têm frequências relativas iguais a 0,25. **d)** Concordo, considerando a aproximação apresentada na :ref:`ativ-aproxima-dpa-usando-R`, dada por `\frac{R}{4}=\frac{13-4}{4}=\frac{9}{4}=2,25.` **e)** Concordo, pois DQ=Q3-Q1=9-6=3 gols. **f)** Concordo: o gráfico não apresenta pontos destacados. Também podemos verificar que a cerca inferior é dada por `\textsf{Q}1-1,5\cdot\textsf{DQ}=6-1,5\cdot 3=1,5` e a cerca superior é dada por `\textsf{Q}3+1,5\cdot \textsf{DQ}=9+4,5=13,5`. Como o valor mínimo é 4 e, o máximo é 13, conclui-se que não existem valores atípicos. **g)** Concordo, pois o **boxplot** agrupou os dados em quatro intervalos de frequências relativas dadas por 0,25, a saber. [4 ; 6[, [6 ; 6,5[, [6,5 ; 9[ e [9 ; 13]. Os valores dentro dos parênteses na expressão indicada correspondem aos pontos médios de cada um destes intervalos. Ou seja, esta média, foi calculada com base na fórmula `\displaystyle{\sum^4_{i=1}}f_i\cdot\tilde{x}_i`.
    
-   `7.` Respostas 
+   `9.` Respostas 
    
    1. A média é dada por `\bar{x}=\frac{132}{18}\approx 7,33` e o desvio padrão amostral é dado por `\sqrt{\frac{1}{18-1}\left (1060-18\cdot 7,33^2\right )}\approx 2,33`. Comparando a média aproximada de 7,5 com a média 7,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 2,3% da média obtida com a soma exata (`\frac{|7,5-7,33|}{7,33}\approx 0,023`. Comparando o desvio padrão aproximado de 2,25 com o desvio padrão 2,33, conclui-se que o erro de aproximação é bem pequeno, representando apenas cerca de 3,4% o desvio padrão obtido com as somas exatas (`\frac{|2,25-2,33|}{2,33}\approx 0,034`.
    
    2. Nesse caso temos 20 dados, e `\displaystyle{\sum^{20}_{i=1}}=132+5+6=143` tal qua a média dos **recordes** nas 20 Copas do Mundo até 2014 é `\bar{x}=\frac{143}{20}=7,15`. Para o cálculo do desvio padrão temos que considerar a soma de quadrados dos 20 **recordes**, a saber, considerando as 20 Copas temos `\displaystyle{\sum^{20}_{i=1}}x^2_i=1060+5^2+6^2=1060+25+36=1121`. Assim, o desvio padrão amostral é dado por `\sqrt{\frac{1}{20-1}\left (1121-20\cdot 7,15^2\right )}\approx 2,28`.
    
-   `8.` É fácil ver que a moda é zero tal que Z=0. Somando o número de partidas jogadas vemos foram consideradas 20 partidas. Assim, o valor da mediana é o valor que ocupa as posições centrais 10 e 11. Da tabela, calculando as frequências acumuladas, vemos que até 1 gol acumularam-se 8 partidas e até 2 gols, acumularam-se 12 partidas. Assim podemos concluir que nas posições 10 e 11 o número de gols foi 2, tal que a mediana=Y=2. A média é dada por `\bar{x}=X=\frac{5\cdot 0+3\cdot 1 +4\cdot 2+3\cdot 3+2\cdot 4+2\cdot 5+1\cdot 7}{20}=\frac{45}{20}=2,25` . Logo, tem-se Z<Y<X e a resposta correta encontra-se na opção e).
+   `10.` É fácil ver que a moda é zero tal que Z=0. Somando o número de partidas jogadas vemos foram consideradas 20 partidas. Assim, o valor da mediana é o valor que ocupa as posições centrais 10 e 11. Da tabela, calculando as frequências acumuladas, vemos que até 1 gol acumularam-se 8 partidas e até 2 gols, acumularam-se 12 partidas. Assim podemos concluir que nas posições 10 e 11 o número de gols foi 2, tal que a mediana=Y=2. A média é dada por `\bar{x}=X=\frac{5\cdot 0+3\cdot 1 +4\cdot 2+3\cdot 3+2\cdot 4+2\cdot 5+1\cdot 7}{20}=\frac{45}{20}=2,25` . Logo, tem-se Z<Y<X e a resposta correta encontra-se na opção e).
    
    
-   `9.` As figuras a seguir ilustram os respectivos histogramas (ambos na mesma escala e usando a frequência bsoluta no eixo vertical) e boxplots das notas para os alunos da manhã e da tarde. 
+   `11.` As figuras a seguir ilustram os respectivos histogramas (ambos na mesma escala e usando a frequência bsoluta no eixo vertical) e boxplots das notas para os alunos da manhã e da tarde. 
    
    .. _fig-coloque-aqui-o-nome:
 
@@ -313,13 +424,13 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
    #. não existem notas atípicas nas duas distribuições;  
    #. apesar do turno da manhã apresentar melhores notas, a menor nota foi observada neste turno.
    
-   `10.` Respostas
+   `12.` Respostas
    
    #. `I=\frac{3\cdot (5,93-6,5)}{1,9645}\approx -0,87`, indicando alguma assimetria à esquerda. 
    #. Na categoria cadeira de rodas, temos `I=\frac{3\cdot (2,5855-2,0978)}{1,4209}\approx 1,03` , indicando forte assimetria à direita. Na categoria triciclo de mão temos `I=\frac{3\cdot (2,7338-2,3797)}{1,3779}\approx 0,77` , indicando alguma assimetria à direita. Na categoria mulheres temos `I=\frac{3\cdot (2,8698-2,9493)}{0,1867}\approx -1,28` , indicando forte assimetria à esquerda.  Na categoria homens temos `I=\frac{3\cdot (2,5116-2,55)}{0,1283}\approx -0,9` , indicando assimetria à esquerda. 
    #. No turno da manhã temos `I=\frac{3\cdot (6,4689-6,3)}{1,503}\approx 0,3` e, no turna da tarde,   `I=\frac{3\cdot (5,1075-5,05)}{0,7437}\approx 0,2`. Pela análise dos boxplots destas duas distribuições avaliamos que ambas eram aproximadamente simétricas. Valores de `I` entre -0,3 e 0,3 podem indicar dados aproximadamente simétricos.
    
-   `11.` Respostas
+   `13.` Respostas
    
    #. Concordo, pois `\bar{y}=\frac{1}{n}\displaystyle{\sum^n_{i=1}}y_i=\frac{1}{n}\displaystyle{\sum^n_{i=1}}[500+100\cdot (x_i-\bar{x})]=\frac{1}{n}[n\cdot 500+\frac{100}{s}\cdot \overbrace{\displaystyle{\sum^n_{i=1}}(x_i-\bar{x})}^{=0}]=500.`
    
