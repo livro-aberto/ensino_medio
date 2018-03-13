@@ -4,7 +4,7 @@
 Exercícios
 ==========
 
-`1.` Numa instituição de ensino médio os estudantes são obrigados a apresentar exame no final do ano se a média dos bimestres é menor do que 7. Um estudante de ensino médio quer saber em quantas disciplinas ele pode ser aprovado sem fazer exame final. No final do segundo bimestre ele teve as seguintes notas, indique quanto deverão somar, no mínimo, as duas notas dos dois últimos bimestres para evitar o exame final, conclua quando isto ainda é possível.
+`1.` Numa Escola de Ensino Médio os estudantes precisam fazer um exame no final do ano, se a média dos bimestres for inferior a 7. Um estudante de Ensino Médio desta Escola gostaria de saber em quantas disciplinas ele pode ser aprovado sem fazer exame final. No final do segundo bimestre ele obteve as notas registradas no quadro a seguir. Indique quanto deverão somar, no mínimo, as duas notas dos dois últimos bimestres para evitar o exame final, conclua quando isto ainda é possível.
 
    +-------------------+-----+-----+-----------------------+----------------------------+
    | Disciplina        | 1o. | 2o. | Soma mínima das notas | Exemplo de notas possíveis |
@@ -57,10 +57,13 @@ Exercícios
               
       2. Em qual das disciplinas foi maior o desvio padrão das notas? E o menor?
       
-      3. Você acha que a mediana das notas seria um bom critério para a aprovação? Apresente exemplos para os quais:
-      	   *. a mediana das notas é 7 e a média é inferior a 7;
-         *. a mediana das notas é 7 e a média é exatamente a 7;
-         *. a mediana das notas é 7 e a média é superior a 7.
+      3. Você acha que a mediana das notas seria um bom critério para a aprovação? Apresente exemplos para os quais a mediana das notas é 7 e a média é:
+      
+         1. inferior a 7;
+         
+         2. igual a 7;
+         
+         3. superior a 7.
 
 `3.` (UFRJ - 2005 - adaptado)  A altura média de um grupo de 53 recrutas é 1,81 m. Sabe-se também que nem todos os recrutas do grupo têm a mesma altura. Diga se cada uma das afirmações a seguir é verdadeira, falsa ou se os dados são insuficientes para uma conclusão. Em cada caso, justifique a sua resposta.
 
@@ -68,7 +71,7 @@ Exercícios
    
 2. "Há, no grupo em questão, mais de um recuta que mede mais de 1,81 m e mais de um que mede menos de 1,81 m."
 
-`3.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
+`4.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. 
 
 Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que 
 
@@ -285,7 +288,59 @@ Considere as afirmações a seguir.
 #. Se a distribuição de notas é aproximadamente simétrica e com poucas notas atípicas, cerca de 67% dos candidatos obtiveram notas transformadas entre 400 e 600.
 #. Se a distribuição de notas é aproximadamente simétrica e com poucas notas atípicas, cerca de 95% dos candidatos obtiveram notas transformadas entre 300 e 700.
 
-Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.   
+Responda se concorda ou não com cada uma destas afirmações, justificando cada resposta.  
+
+`14.` (Dados trabalhados na Atividade "Comparação de Medicamentos" no Capítulo **A Natureza da Estatística**)
+
+Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça. Para isso 60 pacientes com perfis similares foram separados aleatoriamente em três grupos de 20 cada. Para cada grupo,  será ministrado um dos medicamentos e observado o tempo de cura da dor de cabeça (em minutos). No quadro a seguir estão dispostos os dados obtidos.
+
+.. _tabela-medicamentos:
+
+.. table:: Legenda
+   :widths: 1 3
+   :column-alignment: left center
+   
++-------------+-----------------------------------------------------------+--------------+---------------------+
+| medicamento | tempo em minutos                                          | soma simples | soma de quadrados   |
++=============+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==============+======================
+| X           | 7| 8| 8| 9| 9| 9| 9|10|10|10|10|10|10|11|11|11|11|12|12|13| 200          |  1961               |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+| Y           | 7| 8| 9| 9|10|10|11|11|11|12|12|12|13|13|14|14|15|15|16|18| 240          |  3030               |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+| Z           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240          | 2890                |
++-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+
+#. Complete o quadro a seguir.
+   
+   .. table:: Medidas resumo para os medicamentos X, Y e Z
+   
+      +---------+---+---+---+
+      | medida  | X | Y | Z |
+      +---------+---+---+---+
+      | média   |   |   |   |
+      +---------+---+---+---+
+      | moda    |   |   |   |
+      +---------+---+---+---+
+      | s       |   |   |   |
+      +---------+---+---+---+
+      | Min     |   |   |   |
+      +---------+---+---+---+
+      | Q1      |   |   |   |
+      +---------+---+---+---+
+      | mediana |   |   |   |
+      +---------+---+---+---+
+      | Q3      |   |   |   |
+      +---------+---+---+---+
+      | Max     |   |   |   |
+      +---------+---+---+---+
+
+#. Construa os boxplots para os três conjuntos de dados.
+
+#. Como você avalia a forma das distribuições quanto à assimetria? Por quê?
+   
+#. Com base nas informações obtidas, que medicamento você escolheria? Por quê?
+   
+   
 
 
 
@@ -442,7 +497,32 @@ Responda se concorda ou não com cada uma destas afirmações, justificando cada
    
    #. Concordo, está de acordo com a regra empírica apresentada na secção :ref:`sec-parasabermais`: o intervalo centrado na média mais ou menos um desvio padrão corresponde às notas entre 400 e 600. 
    
-   #. Concordo, está de acorodo com a regra empírica apresentada na secção :ref:`sec-parasabermais`: o intervalo centrado na média mais ou menos dois desvios padrões corresponde às notas entre 300 e 700.  
+   #. Concordo, está de acorodo com a regra empírica apresentada na secção :ref:`sec-parasabermais`: o intervalo centrado na média mais ou menos dois desvios padrões corresponde às notas entre 300 e 700. 
+   
+   `14.` Respostas
+   
+   #. quadro
+   
+   .. table:: Legenda
+   
+      +---------+-------+------+-------+
+      | medida  | X     | Y    | Z     |
+      +---------+-------+------+-------+
+      | média   | 10    | 12   | 12    |
+      +---------+-------+------+-------+
+      | s       | 1,487 | 2,81 | 0,725 |
+      +---------+-------+------+-------+
+      | Min     | 7     | 7    | 11    |
+      +---------+-------+------+-------+
+      | Q1      | 9     | 10   | 11,75 |
+      +---------+-------+------+-------+
+      | Mediana | 10    | 12   | 12    |
+      +---------+-------+------+-------+
+      | Q3      | 11    | 14   | 12,25 |
+      +---------+-------+------+-------+
+      | Max     | 13    | 18   | 13    |
+      +---------+-------+------+-------+
+   
     
    
       
