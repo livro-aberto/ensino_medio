@@ -10,13 +10,14 @@ A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida p
 
 
 .. tikz:: Soma de dois vetores 
-
+   
+   \begin{scope}
    \draw (-.5,-2) rectangle (3.5,2.5);
    \draw[-latex, thick, blue] (0,0) -- (2,2);
    \draw[-latex, thick, blue] (1.5,0) -- (2.6,-1.5) node[right, black]{$\vec{v}$};
    \node[above] at (1,1) {$\vec{u}$};
    \node[above] at (2.05,-.75) {$\vec{v}$};
-   
+   \end{scope}
    
    \begin{scope}[xshift=5cm]
    \draw (-.5,-2) rectangle (3.5,2.5);
@@ -24,7 +25,7 @@ A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida p
    \draw[-latex, thick, blue] (2,2) -- (3.1,.5);
    \node[above] at (1,1) {$\vec{u}$};
    \node[above] at (2.55,1.25) {$\vec{v}$};
-      
+   
    \begin{scope}[xshift=5cm]
    \draw (-.5,-2) rectangle (3.5,2.5);
    \draw[-latex, thick, blue] (0,0) -- (2,2);
@@ -33,9 +34,9 @@ A operação de adição entre dois vetores `\vec{u}` e `\vec{v}` foi definida p
    \node[above] at (1,1) {$\vec{u}$};
    \node[above] at (2.55,1.25) {$\vec{v}$};
    \node[below] at (1.55,.25) {$\vec{u}+\vec{v}$};
-   \end{scope}   
    \end{scope}
-
+   \end{scope}
+   
 o :index:`vetor soma <vetor soma>` é o vetor que tem origem na origem de `\vec{u}` e extremidade na extremidade de `\vec{v}`, após esta reoganização.
 Mas então surge a pergunta: *se, por outro lado, movermos o vetor* `\vec{u}` *para a extremidade de* `\vec{v}` *o resultado será o mesmo?* 
 Ou seja, `\vec{u}+\vec{v}= \vec{v}+\vec{u}`?
