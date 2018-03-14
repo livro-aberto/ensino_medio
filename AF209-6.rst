@@ -1,123 +1,4 @@
-.. _sec-prat-formacanonica:
-
-**********
-Praticando
-**********
-
-`1`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma canônica, passe todas para forma polinomial representando-as graficamente.
-     
-#. `f(x)=2(x-5)^2+8`
-#. `g(x)=-3(x+2)^2-7`
-     
-
-`2`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma polinomial, passe todas para forma canônica representando-as graficamente.
-     
-#. `f(x) = x^2-8x+6`
-#. `f(x) = -x^2+8x`
-#. `f(x) = 2x^2+8`
-#. `f(x) = 2x^2+8x`
-#. `f(x) = x^2+x+1`
-     
-`3`) Cada um dos gráficos a seguir representa uma função `f:\mathbb{R}\to\mathbb{R}`. Exiba a forma canônica em cada caso.
-     
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/prat_33_a.jpg
-   :width: 400pt
-   :align: center
-
-   Praticando 3.3 
-   
-   
-.. _fig-coloque-aqui-o-nome:
-
-.. figure::  _resources/prat_33_a_1.jpg
-   :width: 400pt
-   :align: center
-
-   Praticando 3.3
-   
-.. admonition:: Resposta 
-
-   **Parte 1**
-   
-   #. Mais fechada.
-   #. Mais aberta.
-   #. `a` é o coeficiente que multiplica o `x^2`, sendo `0<a<1` o valor resultante dessa multiplicação (imagem de `f`) é um número menor que `x^2`, o que acarreta um crescimento (para `x>0`) mais lento de `f` o que leva a concavidade ser mais aberta. Já no caso `a>1` o resultado desse produto (imagem de `f`) é um valor maior que `x^2`, o que acarreta um crescimento (para `x>0`) mais acelerado de `f`, o que leva a concavidade ser mais fechada.
-   #. Mais fechada.
-   #. Mais aberta.
-   
-   #. 
-      f1. A curva na verdade se transforma numa reta, no caso a função real constante `f` definida por `f(x)=0`.  
-      
-      f2. Correto.
-      
-      f3. Não há mais curva, e sim a reta `y=0`.
-      
-      f4. Correto.
-      
-      
-   #. 
-      g1. Quando `a>0`a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor **mínimo** passa a ser crescente.
-
-      g2. Quando `a>0`a, da esquerda para direita, a curva é **decrescente** e ao assumir o seu valor mínimo passa a ser **crescente**.
-
-      g3. Quando `a<0`a, da esquerda para direita, a curva é **crescente** e ao assumir o seu valor máximo passa a ser **decrescente**.
-
-      g4. Quando `a<0`a, da esquerda para direita, a curva é crescente e ao assumir o seu valor **máximo** passa a ser decrescente.
-   
-   **Parte 2**
-   
-   #. Direita.
-   #. Esquerda.
-   #. (F) ; (F); (F) ; (V)
-   #. Translação Horizontal.
-   
-   **Parte 3**
-   
-   #. Cima.
-   #. Baixo.
-   #. (F) ; (F); (F); (V); (F) ; (V)
-   #. Translação Vertical.
-   
-   
-   **Parte 4**
-   
-   #. 
-      a1. Horizontal.
-      a2. Vertical.
-      
-   #. `V=(p,q)`
-   
-   #. `D=\mathbb{R}` e `I=[0,+\infty[`
-   
-   #. `D=\mathbb{R}` e `I=[-\infty,-4]`
-      
-   #. (F);(F);(F);(V);(V);(F);(F);(F);(F);(V);(F);(F);(V);(F)
-   
-   #. (F);(F);(V);(F);(F);(F);(V);(F);(F);(V);(F);(F)
-   
-   
-   **Resposta Praticando 1**
-      #. `f(x)=2x^2-20x+58` 
-      #. `g(x)=-3x^2-12x-19`
-   
-   **Resposta Praticando 2**
-      #. `f(x)=(x-4)^2-10` 
-      #. `f(x)=-(x-4)^2+16`
-      #. `f(x)=2(x-0)^2+8`
-      #. `f(x)=2(x+2)^2-8`
-   
-   **Resposta Praticando 3**
-      #. `f(x)= 2(x-1)^2+3` 
-      #. `f(x)=-(x-3)^2+1`
-      #. `f(x)=(x-1)^2-1`
-      #. `f(x)=-3(x-1)^2`
-   
-
-
-.. _sec-org-I-4-transformacoes:
+.. _sec-funcao-quadratica-org-ideias-transformacoes:
 
 *****************************************************************************************
 Organizando as ideias: os parâmetros da forma canônica e o gráfico da função quadrática
@@ -133,9 +14,6 @@ A abordagem dada à **parábola** durante muitos séculos foi apenas geométrica
 
    Dado um ponto `F` e uma reta `d` que não contém `F`, chamamos de **parábola** o conjunto dos pontos `P`, no plano definido por `F` e `d`, tais que `P` equidista de `F` e `d`.  Onde denominamos `F` como *foco* e `d` como *reta diretiz*.
           
-   
-   .. _fig-coloque-aqui-o-nome:
-
    .. figure:: _resources/parabola_definicao.jpg
       :width: 300pt
       :align: center
@@ -144,15 +22,12 @@ A abordagem dada à **parábola** durante muitos séculos foi apenas geométrica
       
       
    Ou seja,
-   `P\in` à **parábola** `\equiv d(P,F)=d(P,d)`  
+   `P\in` **parábola** `\equiv d(P,F)=d(P,d)`  
    
    
 Agora vamos mostrar que essa definição atende à função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`.
 
 Na figura a seguir destacamos, além do gráfico da função `f`, os pontos `F=(0,\frac{1}{4})` e a reta `d:y=-\frac{1}{4}`
-
-
-.. _fig-coloque-aqui-o-nome:
 
 .. figure:: _resources/parabola_x2.jpg
    :width: 500pt
@@ -166,20 +41,16 @@ Sabemos que todos ponto pertencentes à `f` são do tipo `P=(x,x^2)` para que `f
 `d(P,F)=\sqrt{(x-0)^2+(x^2-\frac{1}{4})^2}=\sqrt{x^2+(x^2-\frac{1}{4})^2}`
 
 
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/parabola_x2_1.jpg
    :width: 400pt
    :align: center
 
-   Distância de P à F
+   Distância de P a F
 
 Por outro lado:
 
 `d(P,d)=x^2+\frac{1}{4}`
 
-
-.. _fig-coloque-aqui-o-nome:
 
 .. figure:: _resources/parabola_2_x2.jpg
    :width: 500pt
@@ -210,7 +81,7 @@ E finalmente:
 
 Isso nos mostra que a curva descrita no gráfico da função quadrática `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2` é realmente uma **parábola**.
 
-Agora utilizaremos os conceitos abordados na :ref:`ativ4-graf-curva`.
+Agora utilizaremos os conceitos abordados na :ref:`ativ-funcao-quadratica-graf-curva`.
 
 #. Observamos que a variação de `a` na curva `y=ax^2` faz com que a concavidade da curva fique mais aberta quando `a` se aproxima de zero ou mais fechada quando `a` se afasta de zero, e também que o sinal de `a` indica se a concavidade aponta para cima (`a>0`) ou para baixo (`a<0`). É facil demonstrar que o gráfico de toda função real `f` dada na forma `f(x)=ax^2` é uma *parábola*. Note que o texto anterior, provamos para `a=1`. Para generalizarmos, basta assumirmos o foco como `F=(0,\frac{1}{4a})` e reta diretriz como a reta horizontal `y=-\frac{1}{4a}`.
 
@@ -223,9 +94,6 @@ Agora utilizaremos os conceitos abordados na :ref:`ativ4-graf-curva`.
 
 Toda parábola com reta diretriz paralela ao eixo das abscissas será uma função quadrática.
 
-
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/parabola_e_fc.jpg
    :width: 500pt
    :align: center
@@ -234,9 +102,6 @@ Toda parábola com reta diretriz paralela ao eixo das abscissas será uma funç�
    
 Note que se esta condição não for aceita, o gráfico apresentado, não será sequer uma função real de `x` em `y`, observe nas figuras a seguir:
    
-   
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/parabola_n_fc.jpg
    :width: 500pt
    :align: center
@@ -249,8 +114,6 @@ Porém, **mesmo não sendo comum**, se assumirmos a relação `\phi:\mathbb{R_y}
    
 Já no caso da figura a seguir, o gráfico, não representa uma função de `x` em `y` nem de `y` em `x`. 
 
-.. _fig-coloque-aqui-o-nome:
-
 .. figure:: _resources/parabola_n_fc_2.jpg
    :width: 500pt
    :align: center
@@ -258,17 +121,35 @@ Já no caso da figura a seguir, o gráfico, não representa uma função de `x` 
    Não é função de `x` em `y`
    
 
-   
 Ou seja, para que uma parábola seja o gráfico de uma função quadrática de `\mathbb{R_x}\to\mathbb{R_y}` a condição necessária é que sua reta diretriz seja paralela ao eixo das abscissas.
 
 
-.. _sec-praticando-parabola-lg:
+.. _sec-funcao-quadratica-praticando-parabola-lg:
 
 **********
 Praticando
 **********
 
-`1)` Numa jogo eletrônico em que você controla um oficial militar infiltrado. Dentre as fases de treinamento tático há uma que exibe um salão vigiado por câmeras. 
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+   
+   - Construir estratégia de resolução que dependa da identificação do que não é solução antes da conclusão.
+   - Aplicar a definição geométrica de parábola numa situação prática;
+   
+   **Observações e Recomendações**
+   
+   Problemas geométricos que envolvem distâncias de um ponto a outro são, em geral, tratados com o recurso das circunferências e suas propriedades. Aqui desejamos ampliar as ferramentas de solução de problemas desse tipo, ajudando o estudante a incorporar como método de solução de problemas de distâncias, a parábola.
+   
+   - Comece a resolver os pontos que parecem óbvios.
+   
+   - Quando o estudante tender a achar que todos são óbvios, sugira que ele utilize régua ou compasso para tentar comprovar a sua intuição.
+   
+   - Para motivar a solução dada pelos autores, sugira outros pontos, próximos da interseção da parábola com a linha contínua na parte superior da imagem.
+   
+   - Questione se existe uma região onde a resposta seria: "Tanto faz"! Estimule os estudantes a exibir ou descrever essa região. Se necessário, fornaça-lhe como opções as definições de circunferência, reta mediatriz e parábola.
+
+`1)` Num jogo eletrônico em que você controla um oficial militar infiltrado. Dentre as fases de treinamento tático há uma que exibe um salão vigiado por câmeras. 
 
 .. figure:: _resources/MGS_1998_PS_Espreita.jpg
    :width: 200pt
@@ -276,47 +157,43 @@ Praticando
 
 Como as câmeras fazem movimento de vai e vem, é possível atravessar o salão sem ser detectado, e esse é o objetivo desta fase. A imagem a seguir mostra a vista de cima desta fase.
 
-.. figure:: _resources/Vista_Superior_Salao_1.png
+.. figure:: _resources/Vista_Superior_Salao_2.png
    :width: 300pt
    :align: center
    
-A região em cinza é uma região que uma câmera consegue enxergar em algum momento do seu movimento de vai e vem. O traço verde contínuo são barreia intransponíveis e as pontilhadas podem ser ultrapassadas. Em 'E' o personagem entra e em 'S' ele sai. Os pontos em vermelho são posições possíveis para o personagem que, percebendo a proximidade do olhar de alguma das câmeras deve correr e se esconder numa região em preto. Sendo assi, para cada posição do personagem, diga para onde é mais perto correr: 'E', Região horizontal 'H', Região quadrada 'Q' ou 'S'.
+A região em cinza é uma região que, em algum momento, pode ser enxergado por câmera durante o movimento de vai e vem. A linha verde contínua representa alguma barreira intransponível; já as linhas tracejadas podem ser ultrapassadas pelo personagem para se abrigar das câmeras e terminar a fase. Em 'E' o personagem entra no cenário essa passagem se fecha, em 'S' ele sai e vence a fase. 
+
+Os pontos em vermelho são posições possíveis para o personagem que, percebendo a proximidade do olhar de alguma das câmeras deve correr e se esconder numa região em preto. Sendo assim, para cada posição do personagem, diga para onde ele deve correr: Região horizontal 'H' ou Região quadrada 'Q'.
 
 
 .. admonition:: Resposta 
 
-   Traçando uma reta no limite da região 'H' e um ponto no centro de 'Q', pode-se traçar os pontos do salão que equidistam de 'H' ou 'Q', que é a parábola:
+   Traçando uma reta no limite da região 'H' e usando o ponto 'Q', pode-se traçar os pontos do salão que equidistam de 'H' ou 'Q', que é a parábola. Assim, as melhores chances de fuga se dão para: 
    
-   .. figure:: _resources/Vista_Superior_Salao_SOLUCAO.png
+   .. figure:: _resources/Vista_Superior_Salao_SOLUCAO_2.png
       :width: 300pt
       :align: center
    
    
-   `1)` 'H' ou 'Q', pois 'E' parece estar mais distânte do que essas.
+   `1)` Região 'H'.
    
-   `2)` 'H'.
+   `2)` Região 'H'.
    
-   `3)` 'H'.
+   `3)` Região 'H'.
    
-   `4)` 'Q'
+   `4)` Região 'Q'
    
-   `5)` 'Q'
+   `5)` Região 'Q'
    
-   `6)` 'H'
+   `6)` Região 'H'
 
 
 
-.. _sub-para-saber-mais-parabola-lg:
+.. admonition:: Para pesquisar
 
-***************
-Para saber mais
-***************
+   A definição geométrica da **parábola** apresentada inicialmente pode ser associada à referência histórica de corte de cone reto, para isso acesse o link do geogebra a seguir e mantenha os valores de `t` e `a`, variando apenas os valores de `s`. 
 
-A definição geométrica da **parábola** apresentada inicialmente pode ser associada à referência histórica de corte de cone reto, para isso acesso o link do geogebra a seguir e mantenha os valores de `t` e `a`, variando apenas os valores de `s`. 
-
-https://ggbm.at/Z38MMkqV
+   `O cone e as cônicas - excentricidade (parábola) <https://ggbm.at/Z38MMkqV>`_
    
- 
-Para demonstrar que toda parábola é gerada por cortes específicos em cones retos, sugerimos uma leitura das páginas `13`, `14` e `15` da dissetação de [MONTEIRO]_.
-
-
+   Para demonstrar que toda parábola é gerada por cortes específicos em cones retos, sugerimos uma leitura das páginas `13`, `14` e `15` da dissetação de [Monteiro-2014]_.
+   

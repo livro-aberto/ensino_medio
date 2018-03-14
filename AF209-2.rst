@@ -1,10 +1,10 @@
-.. _sub-prop-de-x-a-2:
+.. _sec-funcao-quadratica-propriedades-de-x-a-2:
 
 *****************************************************
 Explorando: a função real `f` definida por `f(x)=x^2`
 *****************************************************
 
-.. _ativ2-invest-x-a-2:
+.. _ativ-funcao-quadratica-investigando-x-a-2:
 
 Atividade: em busca de padrões em `f(x)=x^2`
 --------------------------------------------
@@ -35,7 +35,7 @@ Atividade: em busca de padrões em `f(x)=x^2`
    
    #. Ao final de cada item que o professor faça uma espécie de resumo para a turma das respostas dadas pelos alunos com ênfase na característica que aquele item procura revelar.
    
-   #. Para o item 'c', será necessário o conhecimento de distâsncia de um ponto a uma reta, que é o segmento gerado a partir do trajeto da projeção ortogonal do ponto na reta. Sem esse conhecimento a ideia de simetria não pode ser efetivada. Assim, investigue se os alunos tem essa noção antes de aplicar a atividade.
+   #. Para o item 'c', será necessário o conhecimento da distância de um ponto a uma reta, que é o segmento gerado a partir do trajeto da projeção ortogonal do ponto na reta. Sem esse conhecimento a ideia de simetria não pode ser efetivada. Assim, investigue se os alunos tem essa noção antes de aplicar a atividade.
    
    #. A escolha, em alguns itens, por valores fracionários ou irracionais, prezam pelo fortalecimento da continuidade da função mesmo que a marcação desses pontos não seja feita.
    
@@ -43,7 +43,7 @@ Atividade: em busca de padrões em `f(x)=x^2`
    
    #. Consideramos que os casos mais difíceis de serem descartados no item 'i' sejam os Gráficos `2`, `5` e `6`. Portanto, leia as respostas destes em particular e perceba que eles foram gerados pelas seguintes equações. Gráfico `2`: `f(x) = 8 - \frac{8}{x^2+1}`; Gráfico `5`: `f(x)=4 - 4 \cdot \cos (\ \frac{3}{4} \cdot x )` ; Gráfico `6`: `\; f(x) = \left\{ \begin{array}{rlll} -3x-2, & \text{se} & x < -1 \\ -x, & \text{se} & -1 \leq x < 0 \\ x, & \text{se} & 0 \leq x < 1 \\ 3x-2, & \text{se} & x \geq 1 \end{array} \right.`
    
-No capítulo anterior foi estudado o modelo matemático para funções afins. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, na :ref:`ativ-lancando-vertical-em-Dubai` aparece o termo `\alpha \cdot x^2`, com `\alpha \in \mathbb{R}` e `\alpha \neq 0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como estas que apareceram na seção anterior. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
+No capítulo anterior foi estudado o modelo matemático para funções afins. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, no :ref:`sec-funcao-quadratica-movimento-com-velocidade-variavel-queda-vertical` aparece o termo `\alpha \cdot x^2`, com `\alpha \in \mathbb{R}` e `\alpha \neq 0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como estas que apareceram na seção anterior. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
 
 Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o que se pede:
 
@@ -112,11 +112,11 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
       `(-1,1)` e `(1,1)`.
    
    #. 
-      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
-      |          `(x,y) \in f`         |  `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})` | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)` | `(\sqrt{\frac{1}{2}},\frac{1}{2})` | `(- \pi , \pi^{2})` |
-      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
-      | Ponto equidistante do eixo `y` | `(-7,49)` | `(5,25)`  | `(-\frac{2}{5},\frac{4}{25})`|  `(\frac{6}{7},\frac{36}{49})` | `(-\sqrt{3},3)`| `(-\sqrt{\frac{1}{2}},\frac{1}{2})`|  `(\pi , \pi^{2})`  |
-      +--------------------------------+-----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
+      |          `(x,y) \in f`         |  `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})`  | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)`  | `(\sqrt{\frac{1}{2}},\frac{1}{2})`  | `(- \pi , \pi^{2})` |
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
+      | Ponto equidistante do eixo `y` | `(-7,49)` | `(5,25)`  | `(-\frac{2}{5},\frac{4}{25})` |  `(\frac{6}{7},\frac{36}{49})` | `(-\sqrt{3},3)` | `(-\sqrt{\frac{1}{2}},\frac{1}{2})` |  `(\pi , \pi^{2})`  |
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
   
       
    #. `(0,0)`; Esse ponto pertence ao eixo `y`, logo dista zero deste eixo. Outra argumentação boa é que o zero é o único número simétrico de si mesmo.
@@ -152,7 +152,7 @@ Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o 
          :width: 200pt
          :align: center
 
-.. _sec-org-ideias-em-x-a-2:
+.. _sec-funcao-quadratica-org-ideias-em-x-a-2:
 
 *******************************************************************
 Organizando as ideias: características da função real  `f(x)=x^{2}`

@@ -1,82 +1,3 @@
-.. admonition:: Resposta 
-
-   1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
-   
-      .. table:: Guia para o cálculo de frequências do histograma
-
-        +-----------------+------------+
-        | Intervalo       | Frequência |
-        +-----------------+------------+
-        | [2,448 ; 2,512[ |     8      |
-        +-----------------+------------+
-        | [2,512 ; 2,576[ |     7      |
-        +-----------------+------------+
-        | [2,576 ; 2,639[ |     3      |
-        +-----------------+------------+
-        | [2,639 ; 2,703[ |     2      |
-        +-----------------+------------+
-        | [2,703 ; 2,767[ |     5      |
-        +-----------------+------------+
-        | [2,767 ; 2,831[ |     6      |
-        +-----------------+------------+
-        | [2,831 ; 2,895[ |     9      |
-        +-----------------+------------+
-        | [2,895 ; 2,958[ |     13     |
-        +-----------------+------------+
-        | [2,958 ; 3,022[ |     27     |
-        +-----------------+------------+
-        | [3,022 ; 3,085] |     20     |
-        +-----------------+------------+
-
-      .. _hist-maratona-mulheres-res:
-
-      .. figure:: _resources/Histograma_mulheres_resposta_1.png
-         :width: 200pt
-         :align: center
-
-         Histograma dos tempos da categoria de mulheres na Maratona de NY
-
-  
-   2. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
-   
-   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a corrida em até 2:45:52 (2,764 horas).
-   
-      Já para ficar nas primeiras 50, precisaria terminar o percurso em 2:56:57 (2,949 horas) ou menos.
-   
-      Finalmente, para ficar entre as primeiras 75, seu tempo teria que ser menor ou igual a 2:59:51 (2,998 horas).
-
-      .. figure:: _resources/Histograma_mulheres_resposta_lineas.png
-         :width: 200pt
-         :align: center
-	         
-         Histograma dos tempos da categoria de mulheres na Maratona de NY mostrando os quartis, a mediana e a média
-         
-   4. Neste item deve-se observar que as marcações indicadas dividem o conjunto de dados em quatro intervalos de frequências absolutas iguais a 25, pois são 100 valores observados. Como o histograma é uma representação da distribuição de frequências, espera-se que as áreas correspondentes a cada um destes limites, sejam aproximadamente iguais a 1/4 da área total do histograma que é dada por 6,364 (para obter este valor soma-se os produtos dos comprimentos dos intervalos pela frequência dos intervalos=áreas dos retângulos). Se formos calcular diretamente da figura tais áreas, serão necessárias algumas aproximações, pois os tempos 25, 50 e 75 não são extremos dos intervalos considerados. Por esta razão é possível obter pequenas diferenças em relação ao valor esperado, a saber, `6,364/4\approx 1,59`. 
-    
-   5. Os comprimentos dos intervalos são dados por:
-    
-   +------------+-------------+
-   | Intervalo  | comprimento |
-   +------------+-------------+
-   | t1 a t25   | 0,316       |
-   +------------+-------------+
-   | t25 a t50  | 0,185       |
-   +------------+-------------+
-   | t50 a t75  | 0,049       |
-   +------------+-------------+
-   | t75 a t100 | 0,087       |
-   +------------+-------------+
-   
-   Lembre-se que se o histograma for construído considerando os intervalos acima, deve-se trabalhar com a escala de densidade de frequência (absoluta ou relativa: razão da frequência pelo comprimento do intervalo), pois os comprimentos dos intervalos são diferentes. No histograma construído nesta atividade, usou-se a escala da frequência absoluta, pois os intervalos considerados têm comprimentos iguais.
-   
-   6. Não coincide.
-   
-   7. Tem-se que o tempo médio foi 2,8698 e tempo da posição 50 foi 2,949 e, portanto, são diferentes. Adiante vamos trabalhar a razão desta diferença neste conjunto. Mas, observando a forma do histograma podemos perceber uma grande concentração de valores mais à direita e que o histograma é alongado à esquerda. Distribuições com esta aparência são ditas ter uma forma assimétrica à esquerda o que faz com que a média seja um valor puxado para baixo.
-     
-         
-    
-
-
 .. _sec-organizando1:
 
 =========================================
@@ -109,7 +30,7 @@ De um modo geral, sejam `x_1,x_2, \cdots, x_n` , os `n` valores observados de um
 
 `x_1` é o primeiro valor observado; `x_2` é o segundo valor observado; e, assim por diante, tal que `x_n` é o último valor observado. 
 
-Os valores observados não ocorrem necessariamente de forma ordenada do menor para o maior. Neste exemplo, das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, `x_1=55`, `x_2=22` e `x_3=30` de modo que `x_1>x_2` e `x_2<x_3`.
+Os valores observados não ocorrem necessariamente de forma ordenada do menor para o maior. Neste exemplo, das idades das três primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde foram `x_1=55`, `x_2=22` e `x_3=30` de modo que `x_1>x_2` e `x_2<x_3`.
 
 Para definir a mediana, será útil usar uma notação para representar os dados ordenados. 
 
@@ -119,9 +40,13 @@ Sejam `x_{(1)}` o menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; `x_{(2)}`, o s
 Desse modo, 
 `x_{(1)}\leq x_{(2)}\leq \cdots\leq x_{(n)}` são os valores ordenados do conjunto `\{ x_1,x_2,...,x_n\}`.
 
-Neste exemplo, das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, os registros obtidos foram `\{55, 22, 30, 14, 25, 40\}` tal que `x_1=55`, `x_2=22`, `x_3=30`, `x_4=14`, `x_5=25` e `x_6=40`.
+No exemplo das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, os registros obtidos foram `\{55, 22, 30, 14, 25, 40\}` tal que 
 
-Mas, `x_{(1)}=14`, `x_{(2)}=22`, `x_{(3)}=25`, `x_{(4)}=30`, `x_{(5)}=40` e `x_{(6)}=55`. 
+`x_1=55`, `x_2=22`, `x_3=30`, `x_4=14`, `x_5=25` e `x_6=40`  
+
+e 
+
+`x_{(1)}=14`, `x_{(2)}=22`, `x_{(3)}=25`, `x_{(4)}=30`, `x_{(5)}=40` e `x_{(6)}=55`. 
 
 A letra maiúscula sigma `\left (\Sigma\right )` é usada para denotar somatório, simplificando algumas fórmulas. Por exemplo,  
 
@@ -219,7 +144,7 @@ Logo, a média correspondente a este agrupamento, a ser considerada pelo coorden
    
 Observe que este agrupamento resultou numa soma 207, muito próxima da soma exata dada por 207,5. Por esta razão dizemos que o agrupamento não incorreu em grande perda de informação para efeito de calcular a soma dos dados: em vez de usar as 35 notas, foi possível com cinco intervalos de classe avaliar de forma precisa a soma original dos dados. Consequentemente, a média estimada por este agrupamento (5,91) não se diferencia muito da média considerando os dados brutos (5,93).   
 
-Na seção :ref:`sec-Parasabermais` apresenta-se notação e fórmula para o cálculo da média numa situação genérica de dados agrupados. 
+Na seção :ref:`sec-Para-saber-mais` apresenta-se notação e fórmula para o cálculo da média numa situação genérica de dados agrupados. 
 
 **Interpretação da média como ponto de equilíbrio no histograma** 
    
@@ -276,11 +201,30 @@ Cuidado com esta interpretação: o ponto de equilíbrio corresponde à posiçã
 
 Considere o exemplo a seguir. Numa tarde, 10 clientes interessados em obter um cartão de crédito oferecido por uma rede de supermercados informaram a uma atendente seus salários (em salários mínimos): `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}`. 
 
-A média destes dados é, então, `\bar{x}=\frac{46}{10}=4,6`, que representa bem este conjunto, pois nele existem cinco valores acima da média e cinco valores abaixo da média e, estes valores não estão muito afastados do valor da média. 
+A média destes dados é, então, `\bar{x}=\frac{46}{10}=4,6`, que representa bem este conjunto, pois nele existem cinco valores acima da média e cinco valores abaixo da média e, estes valores não estão muito afastados do valor da média, conforme ilustrado no Diagrama de Pontos a seguir. 
 
-Suponha uma pequena variação do conjunto de dez salários apresentado no qual no lugar do salário de 10 salários mínimos, o salário é de 100 salários mínimos. Assim, os registros são `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}`.  Observe que a única diferença entre os dois conjuntos está no valor extremo: um é 10 e o outro é 100. O que esta única diferença nos dois conjuntos acarreta na média?
 
-Com os dados do segundo conjunto a média é dada por `\frac{136}{10}=13,6`, valor bem maior do que a maioria dos dados observados no conjunto, a saber, apenas uma observação é superior a 13,6. 
+.. _fig-diagramadepontos-media-sem-outlier:
+
+.. figure:: _resources/ilustrasomedia.png
+   :width: 200pt
+   :align: center
+
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` com destaque para a média do conjunto 
+
+
+Suponha uma pequena variação do conjunto de dez salários na qual no lugar do salário de 10 salários mínimos, o salário é de 100 salários mínimos. Assim, os registros são `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}`.  Observe que a única diferença entre os dois conjuntos está no valor extremo: um é 10 e o outro é 100. O que esta única diferença nos dois conjuntos acarreta na média?
+
+Com os dados do segundo conjunto, a média é dada por `\frac{136}{10}=13,6`, valor maior do que a maioria dos dados observados no conjunto, a saber, apenas uma observação é bem superior a 13,6. Observe, que para representar o diagrama de pontos destes dados usou-se um recurso de quebra do eixo dos dados devido ao valor atípico 100, em relação aos demais valores.
+
+
+.. _fig-diagramadepontos-media-com-outlier:
+
+.. figure:: _resources/ilustrasomediacomoutlier.png
+   :width: 400pt
+   :align: center
+
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` com destaque para a média do conjunto e quebra do eixo devido ao valor atípico
 
 Este exemplo simples mostra que na presença de dados atipicamente altos, deve-se tomar cuidado em escolher a média como medida de posição das observações coletadas. Uma medida pouco afetada para valores atípicos, conhecida como :index:`medida robusta<medida robusta>`,  deverá ser considerada em situações deste tipo. A mediana, que trataremos a seguir, é considerada uma medida robusta.
 
@@ -329,7 +273,7 @@ Considere o exemplo dos salários de 10 clientes interessados em obter um cartã
 
 .. math::
 
-   \{1, 1, 2, 3, \overbrace{4}^{\textsf{5a. pos.}}, \underbrace{5}_{\textsf{6a. pos.}}, 5, 6, 9, 100\}
+   \{1, 1, 2, 3, \overbrace{4}^{\textsf{5a. posição}}, \underbrace{5}_{\textsf{6a. posição}}, 5, 6, 9, 100\}
    
 Observe que os valores já estão ordenados e que o salário da 5a. posição é 4 e, o da 6a., é 5. Logo, a mediana dos salários será dada por 
 
@@ -388,13 +332,13 @@ Existem outras formas de avaliar a mediana quando os dados estão agrupados e um
 
 Vimos que a média é uma medida muito afetada na presença de valores atípicos (muito afastados da maioria do dados) e de distribuições fortemente assimétricas (caraceterizadas por histogramas alongados para à direita ou para à esquerda). A mediana, por sua vez, é pouco afetada para valores atípicos na distribuição, e por isso é dita ser uma :index:`medida robusta<medida robusta>`. 
 
-Por exemplo, vamos voltar ao exemplo sobre as informações de salário entre os interessados para obter um cartão de crédito de uma rede de supermercados. Lembre-se que trabalhamos com dois conjuntos de dados, a saber, `D_1=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` e `D_2=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` .  
+Por exemplo, vamos voltar ao exemplo sobre as informações de salário entre os interessados para obter um cartão de crédito de uma rede de supermercados. Lembre-se que trabalhamos com dois conjuntos de dados, a saber, `C_1=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` e `C_2=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` .  
 
-A média dos dados do conjunto `D_1` é `\bar{x}=\frac{46}{10}=4,6` e, a `\textsf{mediana}=\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5` . 
+A média dos dados do conjunto `C_1` é `\bar{x}=\frac{46}{10}=4,6` e, a `\textsf{mediana}=\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5` . 
 
-Tanto a média, como a mediana do conjunto `D_1` são valores que o representam bem: observe que os demais valores no conjunto `D_1` não estão muito afastados dos valores da média e da mediana e, de forma equilibrada, alguns estão abaixo deles e outros, acima deles.
+Tanto a média, como a mediana do conjunto `C_1` são valores que o representam bem: observe que os demais valores no conjunto `C_1` não estão muito afastados dos valores da média e da mediana e, de forma equilibrada, alguns estão abaixo deles e outros, acima deles.
 
-Por outro lado, a média dos dados do conjunto `D_2` é `\frac{136}{10}=13,6`, enquanto que a `\textsf{mediana}` é dada por  `\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5`.  Este último exemplo ilustra como a média é fortemente influenciada pela presença do valor atípico 100, enquanto a mediana não.   Na presença do valor atípico (100), a média é muito afetada, mudando de 4,6 para 13,6, enquanto que a mediana não foi afetada, mantendo-se igual a 4,5.  Observe que apenas um valor no conjunto `D_2` está acima da média. 
+Por outro lado, a média dos dados do conjunto `C_2` é `\frac{136}{10}=13,6`, enquanto que a `\textsf{mediana}` é dada por  `\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5`.  Este último exemplo ilustra como a média é fortemente influenciada pela presença do valor atípico 100, enquanto a mediana não.   Na presença do valor atípico (100), a média é muito afetada, mudando de 4,6 para 13,6, enquanto que a mediana não foi afetada, mantendo-se igual a 4,5.  Observe que apenas um valor no conjunto `C_2` está acima da média. 
 
 
 Em distribuições aproximadamente simétricas (veja a :ref:`fig-simetria` ) temos que a média e a mediana são valores próximos um do outro, esta é uma das razões que levam muitas pessoas a confundir estas duas medidas, achando que elas representam a mesma posição na distribuição dos dados qualquer que seja a situação. Mas, vimos que em distribuições com assimetria à direita, veja, por exemplo a figura  :ref:`fig-assimetriaadireita`, a média é maior do que a mediana e, em distribuições com assimetria à esquerda, veja por exemplo a figura :ref:`fig-assimetriaaesquerda`, a média é menor do que a mediana.
@@ -593,7 +537,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
          |  Mínimo | 2,448    | 2,181  |
          +---------+----------+--------+
-         |  Máximo | 3,085    | 2,639  |
+         |  Máximo | 3,086    | 2,639  |
          +---------+----------+--------+
          |  Média  | 2,8698   | 2,5116 |
          +---------+----------+--------+
@@ -603,7 +547,6 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
          |  `Q3`   | 2,998    | 2,611  |
          +---------+----------+--------+
-
 
 
       .. _fig-coloque-aqui-o-nome:
@@ -638,15 +581,15 @@ Atividade: Comparação das diferentes categorias na maratona
    
    Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de disperssão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
    
-   As perguntas não tÊm respostas fechadas, tÊm o intuito de gerar uma discussão sobre os assuntos já colocados.
+   As perguntas não tÊm respostas fechadas, têm o intuito de gerar uma discussão sobre os assuntos já colocados.
    
    
-Observe os histogramas a seguir referentes as quatro categorias da Maratona de Nova Iorque: mulheres, homens, cadeira de rodas e triciclo de mão. 
+Observe os histogramas a seguir referentes as categorias de cadeira de rodas e triciclo de mão da Maratona de Nova Iorque em 2017. 
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/4histogramas.png
+.. figure:: _resources/Histogramas_cadeira_triciclo.png
    :width: 300pt
    :align: center
 
@@ -655,21 +598,40 @@ Observe os histogramas a seguir referentes as quatro categorias da Maratona de N
 
 #. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
 
-#. Em qual categoria se encontra o atleta que completou a maratona no menor tempo? E no maior tempo?
+#. Em qual categoria se encontra o atleta que completou a maratona no maior tempo?
    
-#. Você consegue estimar o tempo médio das duas primeiras categorias, observando o gráfico? Você acha que serão muito diferentes das outras duas categorias?
+#. Você consegue estimar o tempo médio destas categorias observando os histogramas? Você acha que elas serão muito diferentes das de homens e mulheres (:ref:`ativ-maratona-categoria-homens`)?
 
-#. Observe a tabela a seguir e marque as médias no histograma. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+#. Observe o quadro a seguir e marque as médias nos histogramas. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
 
-#. Observe que as médias não são muito diferentes, porém, as distribuições são muito diferentes. Se você conhecesse apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
+   .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
 
-.. table:: Média das quatro categorias da maratona de Nova Iorque 2017
+      +-----------+------------------+-----------------+
+      | Categoria | Cadeira de rodas | Triciclo de mão |
+      +-----------+------------------+-----------------+
+      | Média     | 2,59             | 2,73            |
+      +-----------+------------------+-----------------+
+  
+#. Observe que as médias não são muito diferentes, porém, as distribuições são similares. Se você conhecesse apenas a média, seria capaz de perceber a forma destes histogramas? Por quê?
 
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Categoria | Cadeira de rodas | Triciclo de mão | Mulheres (corrida) | Homens (corrida) |
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Média     | 2,59             | 2,73            | 2,87               | 2,51             |
-  +-----------+------------------+-----------------+--------------------+------------------+
+#. Comparando os dois histogramas, qual distribuição apresenta maior dispersão? Por quê?
+
+.. admonition:: Resposta 
+
+  #. As escalas horizontal e vertical são coincidentes em ambos os histogramas para permitir a comparação. Isto foi discutido no Capítulo **A Natureza da Estatística**.
+  
+  #. Observando-se os histogramas o maior tempo está na categoria de Triciclo de mão.
+  
+  #. A simples visualização pode remeter a estimativa de 4 horas para estas categorias, valor bem maior do que as médias para homens e mulheres (:ref:`ativ-maratona-categoria-homens`). No entanto, este valor excede muito as médias reais, apresentadas. Isto mostra que estimar o centro de equilíbrio de uma distribuição a partir do histograma não é trivial.
+  
+  #. Ambos os histogramas apresentam assimetria à direita: grande concentração de dados à esquerda e forma alongada para a direita.
+  
+  #. Não é possível, apenas um número é insuficiente para caracterizar a forma do histograma. Outras informações são necessárias para isto.
+  
+  #. O triciclo de mão apresenta maior dispersão, considerando a amplitude.
+  
+
+
 
 
 
