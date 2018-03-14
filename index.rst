@@ -12,13 +12,13 @@ Ensino Médio
    PE104-ROTEIRO
    AF106-ROTEIRO
    AF107-ROTEIRO
+   AF209-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
    GE202-ROTEIRO
    GE301-ROTEIRO   
    GE202-ROTEIRO2
-   AF209-ROTEIRO
-   
+      
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -44,6 +44,25 @@ Ensino Médio
    AF107-E
 
 
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+   
+   AF209
+   AF209-0
+   AF209-1
+   AF209-2
+   AF209-3
+   AF209-4
+   AF209-5
+   AF209-6
+   AF209-7
+   AF209-8
+   AF209-9
+   AF209-10
+   AF209-11
+   AF209-E
+      
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -136,23 +155,4 @@ Ensino Médio
    GE301-E
 
 
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
-   AF209
-   AF209-0
-   AF209-1
-   AF209-2
-   AF209-3
-   AF209-4
-   AF209-5
-   AF209-6
-   AF209-7
-   AF209-8
-   AF209-9
-   AF209-10
-   AF209-11
-   AF209-E
-      
 .. include:: definicoes.rst
