@@ -19,6 +19,41 @@ Ensino Médio
    GE301-ROTEIRO   
    GE202-ROTEIRO2
       
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   GE101
+   GE101-0
+   GE101-0A
+   GE101-0B
+   GE101-0C
+   GE101-1
+   GE101-1A
+   GE101-1B
+   GE101-A
+   GE101-B
+   GE101-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   GE301
+   GE301-0
+   GE301-1
+   GE301-2
+   GE301-3
+   GE301-4
+   GE301-5
+   GE301-6
+   GE301-7
+   GE301-8
+   GE301-A
+   GE301-E
+
 .. toctree::
    :maxdepth: 1
    :glob: 
@@ -90,22 +125,6 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
-   GE101
-   GE101-0
-   GE101-0A
-   GE101-0B
-   GE101-0C
-   GE101-1
-   GE101-1A
-   GE101-1B
-   GE101-A
-   GE101-B
-   GE101-E
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
    GE201
    GE201-0
    GE201-1
@@ -136,23 +155,6 @@ Ensino Médio
    GE2022-3
    GE2022-A
 .. GE2022-E
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
-   GE301
-   GE301-0
-   GE301-1
-   GE301-2
-   GE301-3
-   GE301-4
-   GE301-5
-   GE301-6
-   GE301-7
-   GE301-8
-   GE301-A
-   GE301-E
 
 
 .. include:: definicoes.rst
