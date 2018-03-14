@@ -22,7 +22,7 @@ A abordagem dada à **parábola** durante muitos séculos foi apenas geométrica
       
       
    Ou seja,
-   `P\in` à **parábola** `\equiv d(P,F)=d(P,d)`  
+   `P\in` **parábola** `\equiv d(P,F)=d(P,d)`  
    
    
 Agora vamos mostrar que essa definição atende à função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`.
@@ -45,7 +45,7 @@ Sabemos que todos ponto pertencentes à `f` são do tipo `P=(x,x^2)` para que `f
    :width: 400pt
    :align: center
 
-   Distância de P à F
+   Distância de P a F
 
 Por outro lado:
 
@@ -130,7 +130,26 @@ Ou seja, para que uma parábola seja o gráfico de uma função quadrática de `
 Praticando
 **********
 
-`1)` Numa jogo eletrônico em que você controla um oficial militar infiltrado. Dentre as fases de treinamento tático há uma que exibe um salão vigiado por câmeras. 
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+   
+   - Construir estratégia de resolução que dependa da identificação do que não é solução antes da conclusão.
+   - Aplicar a definição geométrica de parábola numa situação prática;
+   
+   **Observações e Recomendações**
+   
+   Problemas geométricos que envolvem distâncias de um ponto a outro são, em geral, tratados com o recurso das circunferências e suas propriedades. Aqui desejamos ampliar as ferramentas de solução de problemas desse tipo, ajudando o estudante a incorporar como método de solução de problemas de distâncias, a parábola.
+   
+   - Comece a resolver os pontos que parecem óbvios.
+   
+   - Quando o estudante tender a achar que todos são óbvios, sugira que ele utilize régua ou compasso para tentar comprovar a sua intuição.
+   
+   - Para motivar a solução dada pelos autores, sugira outros pontos, próximos da interseção da parábola com a linha contínua na parte superior da imagem.
+   
+   - Questione se existe uma região onde a resposta seria: "Tanto faz"! Estimule os estudantes a exibir ou descrever essa região. Se necessário, fornaça-lhe como opções as definições de circunferência, reta mediatriz e parábola.
+
+`1)` Num jogo eletrônico em que você controla um oficial militar infiltrado. Dentre as fases de treinamento tático há uma que exibe um salão vigiado por câmeras. 
 
 .. figure:: _resources/MGS_1998_PS_Espreita.jpg
    :width: 200pt
@@ -138,41 +157,43 @@ Praticando
 
 Como as câmeras fazem movimento de vai e vem, é possível atravessar o salão sem ser detectado, e esse é o objetivo desta fase. A imagem a seguir mostra a vista de cima desta fase.
 
-.. figure:: _resources/Vista_Superior_Salao_1.png
+.. figure:: _resources/Vista_Superior_Salao_2.png
    :width: 300pt
    :align: center
    
-A região em cinza é uma região que uma câmera consegue enxergar em algum momento do seu movimento de vai e vem. O traço verde contínuo são barreia intransponíveis e as pontilhadas podem ser ultrapassadas. Em 'E' o personagem entra e em 'S' ele sai. Os pontos em vermelho são posições possíveis para o personagem que, percebendo a proximidade do olhar de alguma das câmeras deve correr e se esconder numa região em preto. Sendo assi, para cada posição do personagem, diga para onde é mais perto correr: 'E', Região horizontal 'H', Região quadrada 'Q' ou 'S'.
+A região em cinza é uma região que, em algum momento, pode ser enxergado por câmera durante o movimento de vai e vem. A linha verde contínua representa alguma barreira intransponível; já as linhas tracejadas podem ser ultrapassadas pelo personagem para se abrigar das câmeras e terminar a fase. Em 'E' o personagem entra no cenário essa passagem se fecha, em 'S' ele sai e vence a fase. 
+
+Os pontos em vermelho são posições possíveis para o personagem que, percebendo a proximidade do olhar de alguma das câmeras deve correr e se esconder numa região em preto. Sendo assim, para cada posição do personagem, diga para onde ele deve correr: Região horizontal 'H' ou Região quadrada 'Q'.
 
 
 .. admonition:: Resposta 
 
-   Traçando uma reta no limite da região 'H' e um ponto no centro de 'Q', pode-se traçar os pontos do salão que equidistam de 'H' ou 'Q', que é a parábola:
+   Traçando uma reta no limite da região 'H' e usando o ponto 'Q', pode-se traçar os pontos do salão que equidistam de 'H' ou 'Q', que é a parábola. Assim, as melhores chances de fuga se dão para: 
    
-   .. figure:: _resources/Vista_Superior_Salao_SOLUCAO.png
+   .. figure:: _resources/Vista_Superior_Salao_SOLUCAO_2.png
       :width: 300pt
       :align: center
    
    
-   `1)` 'H' ou 'Q', pois 'E' parece estar mais distânte do que essas.
+   `1)` Região 'H'.
    
-   `2)` 'H'.
+   `2)` Região 'H'.
    
-   `3)` 'H'.
+   `3)` Região 'H'.
    
-   `4)` 'Q'
+   `4)` Região 'Q'
    
-   `5)` 'Q'
+   `5)` Região 'Q'
    
-   `6)` 'H'
+   `6)` Região 'H'
 
 
 
-.. admonition:: Você sabia?
+.. admonition:: Para pesquisar
 
-   A definição geométrica da **parábola** apresentada inicialmente pode ser associada à referência histórica de corte de cone reto, para isso acesso o link do geogebra a seguir e mantenha os valores de `t` e `a`, variando apenas os valores de `s`. 
+   A definição geométrica da **parábola** apresentada inicialmente pode ser associada à referência histórica de corte de cone reto, para isso acesse o link do geogebra a seguir e mantenha os valores de `t` e `a`, variando apenas os valores de `s`. 
 
    `O cone e as cônicas - excentricidade (parábola) <https://ggbm.at/Z38MMkqV>`_
    
-   Para demonstrar que toda parábola é gerada por cortes específicos em cones retos, sugerimos uma leitura das páginas `13`, `14` e `15` da dissetação de [MONTEIRO]_.
+   Para demonstrar que toda parábola é gerada por cortes específicos em cones retos, sugerimos uma leitura das páginas `13`, `14` e `15` da dissetação de [Monteiro-2014]_.
    
