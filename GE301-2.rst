@@ -8,301 +8,10 @@
 
 .. HJB: relacionar quando uma projeção em perspectiva é uma homotetia.
 
-.. HJB: relacionar a projeção paralela 3D com a 2D.
+.. HJB: por que as células que identificam cores são chamadas cones?
 
 
-
-
-***********************************************
-Praticando o assunto
-***********************************************
-
-.. HJB: esta habilidade pratica a habilidade de compor.
-
-.. _ativ-proj-feixe-de-retas:
-
-Atividade: feixe de retas
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** analisar a geometria do feixe de retas usados na construção de uma projeção em perspectiva e de uma projeção paralela e concluir que estes formam um cone no caso de uma projeção em perspectiva e um cilindro no caso de uma projeção paralela.
-     
    
-   **Observações e recomendações:**
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/kKqT9EhP> (projeções em perspectiva) e <https://www.geogebra.org/m/zdw7rVHc> (projeções paralelas). Além do círculo e do quadrado, há outras curvas não prototípicas que podem ser usadas para evidenciar o conceito mais geral de cone e cilindro.
-   
-      .. _fig-proj-praticando-05:
-   
-      .. figure:: _resources/praticando-feixe-de-retas-05.jpg
-      
-         Projeção em perspectiva de uma curva não prototípica.
-            
-   * Provavelmente os alunos responderão que o conjunto de retas usados para construir a projeção em perspectiva do quadrado formam uma pirâmide de base quadrada, o que está correto se, no lugar de retas usássemos, segmentos de reta. Não obstante, sugerimos que você aproveite a oportunidade para comparar a pirâmide de base quadrada com o cone circular reto e mesmo o caso da curva não prototípica da :numref:`fig-proj-praticando-05` para mostrar o que há em comum em todos os casos: as retas que passam todas por um mesmo ponto (o centro `O`) e passam por pontos do objeto em questão. É esta característica que dá uma definição mais geral para cones/superfícies cônicas. Assim, a pirâmide de base quadrada pode ser considerada um cone. Cabe lembrar que por este motivo, projeções em perspectiva também são denominadas :index:`projeções cônicas`. Observação análoga cabe para projeções paralelas: o conjunto de retas usadas para construir uma projeção paralela formam um cilindro e, por este motivo, projeções paralelas também são conhecidas por :index:`projeções cilíndricas`.
-
-#. (Projeções em Perspectiva)
-
-   * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do círculo é perpendicular ao plano `\pi` e (2) o círculo é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do círculo com relação ao centro `O` no plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do círculo. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-01.jpg
-
-   * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do quadrado é perpendicular ao plano `\pi` e (2) o quadrado é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do quadrado com relação ao centro `O` no plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do quadrado. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-02.jpg
-
-
-#. (Projeções Paralelas)
-
-   * Na figura a seguir, (1) a reta `d` que passa pelo centro do círculo é perpendicular ao plano `\pi` e (2) o círculo é paralelo a `\pi`. Como vimos, para determinar a projeção paralela do círculo com relação a direção dada por `d` no plano de projeção `\pi`, é necessário construir retas que passam por pontos do círculo e que são paralelas a `d`. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-03.jpg
-
-   * Na figura a seguir, (1) a reta `d` que passa pelo centro do quadrado é perpendicular ao plano `\pi` e (2) o quadrado é paralelo a `\pi`. Como vimos, para determinar a projeção paralela do quadrado com relação a direção dada por `d` no plano de projeção `\pi`, é necessário construir retas que passam por pontos do quadrado e que são paralelas a `d`. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-04.jpg
-
-
-
-.. Lhaylla Cabe falar de superfície cilindríca e cônica?
-
-.. admonition:: Resposta
-
-  #. Projeções em Perspectiva
-
-     * Se você respondeu que a superfície obtida ao desenhar todas as retas que passam por `O` e por pontos do círculo é um cone, sua intuição está te levando na direção correta, mas do ponto de vista matemático precisamos ser mais cuidadosos. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos um cone circular reto. Portanto, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cone. Mas se todos os segmentos de reta que formam o cone forem prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Você pode estar se perguntando se esta superfície possui um nome e a resposta é sim! Dados um ponto `A` não contido em um plano `\pi` e um objeto geométrico `\gamma` contido em `\pi`, a superfície formada por todas as retas que passam por `A` e por um ponto de `\gamma` é chamada de *superfície cônica*. Repare que, todas as retas da superfície se intersectam em `A`. De posse desta definição, podemos afirmar que a superfície que obtemos nesta questão é uma superfície cônica gerada a partir do ponto `O` (equivale ao ponto `A` da definição) e do círculo (equivale ao objeto `\gamma` da definição).
-   
-     * Ao desenhar todas as retas que passam por `O` e por pontos do quadrado é possível que você pense na forma de uma pirâmide, mas a superfície formada por essas retas não é exatamente uma pirâmide. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos uma pirâmide reta de base quadrada. Assim, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser uma pirâmide. Mas se todos os segmentos de reta que formam a pirâmide forem prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cônica. De fato, ela é um conjunto de retas que passam pelo ponto `O` e por pontos do quadrado, como determina a definição apresentada anteriormente.
-     
-  #. Projeções Paralelas
-   
-     * Ao desenhar todas as retas que passam por pontos do círculo que são paralelas a `d`, é possível que nos remetamos à forma de um cilindro, mas a superfície obtida por esta união de retas não é exatamente um cilindro. Se considerarmos apenas a união dos segmentos de reta `PP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um cilindro circular reto. Na situação apresentada na atividade, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cilindro. Caso todos os segmentos de reta que formam o cilindro sejam prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       A superfície deste caso não pode ser chamada de superfície cônica, pois ela não foi gerada por um ponto e por um objeto como nos casos anteriores. Vamos, então, precisar de uma nova definição. Dados um objeto geométrico `\gamma` contido em um plano `\pi` e uma reta `r` não contida em `\pi`, a superfície formada por todas as retas que passam por pontos de `\gamma` e são paralelas à `r` é chamada de *superfície cilíndrica*. Sendo assim, a superfície que obtemos nesta questão é uma superfície cilíndrica gerada a partir do círculo (equivale ao objeto `\gamma` da definição) e `d` (equivale reta `r` da definição).
-   
-     * Neste caso, se desenharmos todas as retas que passam por pontos do quadrado que são paralelas a `d`, é possível que nos lembremos da forma de um prisma, mas a superfície obtida por esta união de retas não é um prisma. Se considerarmos todos os segmentos de reta `PP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um prisma reto de base quadrangular. Mas a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, logo ela não pode ser um prisma. Caso todos os segmentos de reta que formam o prisma sejam prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cilíndrica. De fato, ela é um conjunto de retas que passam por pontos do círculo e são paralelas à `d`, como determina a definição apresentada anteriormente.
-
-.. _ativ-proj-cone-cilindro:
-
-Atividade: projeções de curvas sobre um Cone e um Cilindro
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** concluir que pontos diferentes em um mesmo feixe de retas associados a uma mesma projeção em perspectiva ou uma mesma projeção paralela têm a mesma projeção.         
-   
-   **Observações e recomendações:**
-   
-   * A Curva 1 é um círculo, a Curva 2 é uma elipse e a Curva 3 é uma hélice.
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/NNjgC2Aj> (cone) e <https://www.geogebra.org/m/NrqMykdJ> (cilindro). Além do círculo e do quadrado, há outras curvas não prototípicas que podem ser usadas para evidenciar o conceito mais geral de cone e cilindro. 
-   
-   * No caso das projeções das hélices, observe para seus alunos que pontos diferentes da curva são projetados no mesmo ponto do plano `\pi`. De fato, observe que todos os pontos de uma reta usada para obter a projeção de um ponto têm a mesma projeção do ponto. Sugerimos que você destaque esta propriedade para seus alunos. Assim, usando a terminologia de funções, segue-se que as projeções em perspectiva e projeções paralelas **não são** funções injetivas.
-            
-#. (Cone) As três imagens a seguir exibem três curvas diferentes, mas que possuem uma característica em comum: elas estão sobre um mesmo cone circular reto cuja base é paralela ao plano `\pi`. Para sua comodidade, em cada imagem, a curva é desenhada sem e com o cone. Caso tenha acesso a Internet (inclusive de um celular), você pode interagir com essas curvas e visualizá-las de pontos de vista diferentes por meio do aplicativo GeoGebra disponível em: <https://www.geogebra.org/m/NNjgC2Aj>.
-
-   .. figure:: _resources/perspectiva-varios-01.jpg
-   
-   .. figure:: _resources/perspectiva-varios-02.jpg
-   
-   .. figure:: _resources/perspectiva-varios-03.jpg
-   
-   * Qual é a projeção em perspectiva destas três curvas com relação ao centro `O` no plano `\pi`? Justifique sua resposta!
-   
-   * Usando a analogia de pintura que funciona como uma janela (conforme o que vimos com relação à :numref:`fig-proj-janela-de-alberti-01` e à :numref:`fig-proj-janela-de-alberti-03`), se você pintasse um quadro para cada uma das três curvas, tendo o ponto `O` como a posição do olho do observador, o que seria pintado nos três quadros?
-
-   * Qual é a projeção em perspectiva de uma reta que passa por `O` sobre o cone com relação ao centro `O` no plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção em perspectiva do próprio cone com relação ao centro `O` no plano `\pi`? Justifique sua resposta!
-
-#. (Cilindro) As três imagens a seguir exibem três curvas diferentes, mas que possuem uma característica em comum: elas estão sobre um mesmo cilindro circular reto cuja base é paralela ao plano `\pi`. Para sua comodidade, em cada imagem, a curva é desenhada sem e com o cilindro. Caso tenha acesso a Internet (inclusive de um celular), você pode interagir com essas curvas e visualizá-las de pontos de vista diferentes por meio do aplicativo GeoGebra disponível em: <https://www.geogebra.org/m/NrqMykdJ>.
-
-   .. figure:: _resources/paralela-varios-01.jpg
-   
-   .. figure:: _resources/paralela-varios-02.jpg
-   
-   .. figure:: _resources/paralela-varios-03.jpg
-   
-   * Qual é a projeção paralela destas três curvas com relação à direção dada pelo eixo do cilindro no plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção paralela do próprio cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi`? Justifique sua resposta!
-
-
-.. admonition:: Resposta
-
-   #. Cone
-
-      * Para encontrar a projeção em perspectiva de uma curva com relação ao ponto `O` no plano `\pi` é preciso traçar as retas que passam pelo ponto `O` e pela curva, e encontrar suas interseções com o plano `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cone, as retas que passam por `O` e por pontos da curva serão prologamentos dos segmentos de reta que formam o cone (aqueles que possuem extremidade em `O` e em seu círculo de base). Logo, a projeção em perspectiva das curvas 1, 2 e 3 com relação ao centro de projeção `O` no plano `\pi` é um círculo contido no plano `\pi`.
-   
-      * As pinturas conteriam a projeção em perspectiva das três curvas em relação à posição do olho do observador, que como vimos no item anterior é um círculo. 
-   
-      * Neste caso, o objeto a ser projetado é uma reta localizada sobre o cone. Repare que as retas que passam pelo ponto `O` e por pontos da reta a ser projetada coincidem com ela mesma, e por isso sua interseção com o plano `\pi` é um ponto. Portanto, a projeção em perspectiva da reta em relação ao ponto `O` sobre o plano `\pi` é seu ponto de interseção com o plano `\pi`. 
-   
-      * As retas que passam pelo ponto `O` e por pontos do cone são prolongamentos dos segmentos de reta que possuem extremidades em `O` e em pontos da base do cone. Assim, como a interseção dessas retas com o plano `\pi` é um círculo, então a projeção em perspectiva do cone é um círculo.
-
-   #. Cilindro
-
-      * Para encontrar a projeção paralela de uma curva com relação à direção dada no plano `\pi` é preciso traçar as retas que passam pelos pontos da curva e são paralelas à direção dada, e então, encontrar suas interseções com `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cilindro cujo eixo é a direção de projeção escolhida, as retas que passam por seus pontos e são paralelas ao eixo do cilindro serão prologamentos dos segmentos de reta que formam o cilindro (ou seja, aqueles segmentos que possuem extremidades sobre seus círculos de base). Logo, a projeção paralela das curvas 1, 2 e 3 com relação à direção dada pelo eixo do cilindro no plano `\pi` é o círculo contido no plano `\pi`.
-   
-      * A projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi` é um ponto. De fato, essa reta já é paralela ao eixo do cilindro, e portanto, para encontrar sua projeção basta encontrar sua interseção com o plano `\pi`, que é um ponto. 
-   
-      * A projeção paralela do cilindro com relação à direção dada pelo eixo do cilindro no plano `\pi` é dada por um círculo, pois as retas que passam por pontos do cilindro e são paralelas ao seu eixo são prolongamentos dos segmentos de reta que o formam. Assim, a interseção dessas retas com o plano `\pi` é a própria base do cilindro.
-
-.. _ativ-proj-construindo:
-
-Atividade: construindo objetos geométricos peculiares
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** construir objetos geométricos que satisfazem certas propriedades pré-estabelecidas de interesse prático ou artístico usando, para isto, propriedades das projeções em perspectica e das projeções ortogonais.  
-   
-   **Observações e recomendações:**
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/X2rA45gS> (projeção da sinalização de solo no para-brisa),  <https://www.geogebra.org/m/xjMqSPX2> (projeção do para-brisa no solo), <https://www.geogebra.org/m/Uxtn6hxy> (peça "Squaring The Circle"), <https://www.geogebra.org/m/Q7eXY36j> (problema dos buracos).
-   
-   * Estes vídeos <https://youtu.be/pNjh1Ji_rg8> e <https://youtu.be/2xtA-IABcP4> explicam, respectivamente, com o uso do GeoGebra para celulares, a construção da peça "Squaring The Circle" e da solução do problema da mesa com  três buracos.
-   
-      .. figure:: _resources/problema-dos-tres-buracos.png
-         :width: 300pt
-   
-   * Observe para seus alunos como o conectivo lógico "e" se associa com interseções: no "Squaring The Circle", a imagem de um ponto de vista deve ser um círculo "e" de outro ponto de vista deve ser um quadrado. A solução é então obtida pela interseção de dois cones (um de base circular e o outro de base quadrada).
-   
-   * Para que a palavra "ESCOLA" apareça sem distorções no para-brisa, seu desenho no chão, além de ter uma altura mais esticada, é também mais larga da parte de cima, como mostra a figura a seguir. Com isto, se a parte de baixo tem uma largura próxima a largura da rua, a parte de cima teria que ser pintada na calçada, o que não é viável. Por este motivo, em geral, essas sinalizações são pintadas com largura constante, mas altura bem esticada. A imagem vista no para-brisa então ainda mostrará distorções, mas será mais legível. O documento "Sinalização Horizontal" do Departamento Nacional de Infraestrutura de Transportes (DNIT), disponível no endereço <https://goo.gl/CTTyaE>, apresenta no Apêndice D o formato exatado de como as letras e números devem ser desenhados.
-   
-      .. figure:: _resources/aviso-na-rua-03.jpg
-      
-      .. figure:: _resources/aviso-na-rua-04.jpg
-   
-            
-#. 
-
-   * Deseja-se pintar a palavra "ESCOLA" em uma rua para advertir os motoristas da proximidade de uma escola. Contudo, se a palavra for pintada normalmente, como na :numref:`fig-proj-aviso-na-rua-01` (B), o motorista verá pelo para-brisa uma imagem distorcida pela perspectiva, como na :numref:`fig-proj-aviso-na-rua-01` (C).
-
-      .. _fig-proj-aviso-na-rua-01:
-
-      .. figure:: _resources/aviso-na-rua-01_4.jpg
-         :width: 450pt
-   
-         Estudo de sinalização de solo em uma rua.
-
-   Como deveria ser pintada a palavra na rua para que, vista pelo para-brisa de um carro, ela fosse visualizada sem distorções, como na :numref:`fig-proj-aviso-na-rua-02`. Aqui, é suficiente que você descreva um procedimento de como obter o desenho da palavra na rua: você não precisa efetivamente fazer o desenho da palavra.
-
-
-      .. _fig-proj-aviso-na-rua-02:
-
-      .. figure:: _resources/aviso-na-rua-02.jpg
-         :width: 450pt
-   
-         Imagem no para-brisa sem distorções.
-
-
-   * O desenho da palavra que você propôs para ser pintada na rua no item anterior seria vista **sempre** sem distorções a medida que o carro se aproxima da palavra pintada?
-   
-   
-#. O grupo Troika tem como missão "desenvolver obras artísticas com um interesse particular na percepção e experiência espacial, desafiando prescrições de conhecimento, controle, e o que significa ser humano na era da tecnologia". A obra "Squaring The Circle" (Quadratura do Círculo) é uma peça feita de ferro que, quando observada de um ponto de vista particular, o que se vê é um círculo e, a mesma peça, quando observada de outro ponto de vista, se mostra como um quadrado.
-
-      .. _fig-proj-squaring-the-circle-01:      
-   
-      .. figure:: _resources/ezgif-4-7c3b461d5e.*
-         :width: 100pt
-      
-      .. figure:: _resources/squaring-the-circle-02.jpg      
-    
-         Squaring The Circle (Quadratura do Círculo) do grupo Troika (fonte: <http://troika.uk.com>.
- 
-   Como construir uma tal peça? Aqui, é suficiente que você descreva um procedimento matemático de como obtê-la: você não precisa explicitar equações para o formato geométrico da peça. 
-
-#. Este é um desafio antigo e que apareceu na edição de agosto de 1958 da revista Scientific American. A :numref:`fig-proj-cork-plug-01` exibe uma mesa com três buracos: um na forma de um quadrado, o outro na forma de um círculo e o terceiro na forma de um triângulo isósceles. O diâmetro do círculo, o lado do quadrado, a base do triângulo isósceles e sua respectiva altura têm a mesma medida.
-
-      .. _fig-proj-cork-plug-01:
-   
-      .. figure:: _resources/cork-plug-table.*
-   
-         Uma mesa com três buracos.
-
-   Pergunta: é possível construir uma rolha que possa ser usada para tapar qualquer um dos três buracos, um por vez? Em caso afirmativo, descreva um procedimento matemático de como obtê-la.
-      
-
-.. admonition:: Resposta
-
-  #. * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o solo. Pode-se escolher pontos mais representativos das letras para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. 
-  
-     * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
-   
-  #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
-  
-     Considere um cone circular reto. Se tomarmos o vértice do cone como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre o cone será um círculo. Agora, considere uma pirâmide de base quadrangular reta. Se tomarmos o vértice da pirâmide como centro de projeção e o plano que contém sua base como plano de projeção, a projeção em perspectiva de qualquer objeto sobre a pirâmide será um quadrado. Portanto, para construirmos um objeto que possua um quadrado e um círculo como suas projeções em perspectiva, é preciso "encaixar" o cilindro e a pirâmide construídos anteriormente fazendo coincidir seus eixos e posicionando seus vértices em lados opostos. A peça mostrada na :numref:`fig-proj-squaring-the-circle-01` será a interseção do cilindro com a pirâmide. 
-      
-  #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
-  
-     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
-
- 
-
-
-.. admonition:: Para refletir
-
-    .. figure:: _resources/visaoArmandinho.png
-       :width: 400pt
-
-       Fonte: <http://tirasbeck.blogspot.com.br/>.
-   
-
-
-.. admonition:: Você sabia?
-
-   Uma situação semelhante a da sinalização de trânsito descrita na :ref:`ativ-proj-construindo` é a confecção de paineis de propaganda em gramados de campos de futebol. Se eles forem desenhados sem distorções, suas imagens transmitidas pelas emissoras de TV ficarão distorcidas. Assim, para que a imagem fique correta quando observada pela câmera de TV, sua projeção em perspectiva é que deve ser desenhada no gramado.   
-   
-      .. figure:: _resources/futebol-01.jpg
-   
-   
-         Fonte: cutedrop (Letícia Motta).
-   
-   Note como a projeção depende da posição do observador: enquanto a câmera de TV transmite uma imagem sem distorções do painel de propaganda, uma pessoa sentada junto ao painel o verá bem distorcido.
-   
-   Em artes plásticas, esta imagem distorcida que é vista corretamente de um certo ponto de vista é denominada :index:`anamorfose`. A palavra vem do Grego: *ana* (de volta, de novo) e *morphe* (forma). Além de distorções provocadas por projeções em perspectiva, a anamorfose inclui também distorções via espelhos cilíndricos, cônicos e piramidais.
-   
-   Um exemplo clássico de anamorfose é dado pelo quadro "Os Embaixadores" (1533) do artista alemão Hans Holbein, O Jovem (1497/1498-1543). Você consegue identificar a parte do quadro em anamorfose?
-   
-     .. figure:: _resources/1039px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg
-
-        "Os Embaixadores" de Hans Holbein, O Jovem (fonte: `Wikimedia Commons <https://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg>`_).
-
-   Anamorfose também já foi usada para esconder imagens sensíveis, como as imagens produzidas pelo artista alemão Erhard Schön (c. 1491–1542). Você consegue identificar o que está representado em anamorfose?
-
-      .. figure:: _resources/schon-02.jpg
- 
-        "Aus, du alter Tor!" de Erhard Schön (fonte: `Explora Museum <http://www.exploramuseum.de/images/pressefotos/anamorphoseAUSDUALTERTOR1_m.jpg>`_).
-        
-        .. Fora seu velho idiota!
-        
-     .. figure:: _resources/schon-03.jpg
- 
-        "Was siehst du?" de Erhard Schön (fonte: `The British Museum <http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?partid=1&assetid=30265001&objectid=1355159>`_).  
-        
-        .. O que você vê?
-
-   Um belo exemplo de uso artístico da anamorfose no Brasil é o projeto "Luz nas Vielas" do grupo espanhol Boa Mistura que pintou, junto com os moradores da Vila Brasilândia em São Paulo, palavras como "firmeza", "amor", "doçura" nas paredes das vielas do bairro. Para conhecer mais sobre o projeto, acesse o vídeo `Poesia e Magia <https://www.youtube.com/watch?v=Zi8ekDi7uLQ>`_ no YouTube ou a `página oficial do grupo <http://www.boamistura.com/#/project/luz-nas-vielas-2>`_.
-   
-   .. figure:: _resources/boa-mistura-01.jpg
-   
-      Anamorfose do projeto "Luz nas Vielas" do grupo Boa Mistura (fonte: `TEDx Talks <https://www.youtube.com/watch?v=gKRNLXghU94>`_)
-      
-   Quer gerar suas próprias anamorfoses? Aqui estão dois softwares gratuitos que fazem isso a partir de uma imagem digital (arquivo jpg) de sua escolha: o `Simple Anamorphic Converter <http://kejebodo.blogspot.com.br/2013/06/simple-anamorphic-converter.html>`_ (distorções via projeções em perspectiva) e o `Anamorph Me! <https://www.anamorphosis.com/software.html>`_ (distorções via projeções paralelas, cilíndricas e cônicas).
-   
-   .. figure:: _resources/anamorfose-02.jpg
-   
-      Brincando com anamorfose.
-
 .. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 .. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 .. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -311,228 +20,608 @@ Atividade: construindo objetos geométricos peculiares
    :width: 600pt
    
    Calvin, Haroldo e Perspectiva!     
-   
-   
-.. admonition:: Você sabia?
 
 
-   Projeções ortogonais já foram um segredo militar!
-   
-   A :index:`Geometria Descritiva` é o ramo da geometria que estuda a representação de objetos tridimensionais em duas dimensões através de um certo conjunto específico de procedimentos. As técnicas resultantes são importantes para a engenharia, a arquitetura, o design gráfico e as artes (:numref:`fig-proj-geometria-descritiva-01`). A base teórica para a geometria descritiva é fornecida pelas projeções ortogonais. 
-   
-    .. _fig-proj-geometria-descritiva-01:
-   
-    .. figure:: _resources/geometria-descritiva-01.jpg
-   
-       Projeções ortogonais de um carro e de uma cabeça humana.
-      
-   O matemático francês Gaspard Monge (1746-1818) é considerado fundador da geometria descritiva. Ele a usou em engenharia militar (construção de fortificações) durante a época de Napoleão Bonaparte. De fato, geometria descritiva já foi considerada um segredo militar.
-  
-   .. _fig-proj-gaspar-monge-01:
-  
-   .. figure:: _resources/gaspard-monge-01.jpg
-      :width: 200pt
-     
-      Gaspard Monge (1746-1818).
-  
-   Dennis Lieu e Sheryl Sorby, no excelente livro Visualization, Modeling, and Graphics for Engineering Design, apresentam o contexto histórico: 
-  
-      A pólvora começou a ser usada no mundo ocidental durante o Renascimento, assim como o canhão. Os canhões tornaram obsoletas a maioria das fortalezas construídas durante a era medieval. As muralhas não conseguiam suportar o impacto dos projéteis de canhão. Assim, as fortalezas precisavam ser remodeladas para suportar os tiros de canhão. Na França, um novo estilo de fortificação mais resistente foi então desenvolvido. A fortificação era construída com muros inclinados que ajudavam a defletir o tiro de canhão e não desmoronavam da mesma maneira que as muralhas planas verticais, quando atingidas diretamente. As novas fortalezas eram geometricamente mais complicadas de se construir do que suas predecessoras com muralhas verticais. Mais ainda, o perímetro da fortaleza evoluiu de um formato simples retangular para um formato pentagonal com uma extensão proeminente em cada ápice. Este formato de perímetro e o uso de muros inclinados resultaram em paredes que se justapunham em ângulos não usuais, os quais não podiam ser medidos facilmente ou diretamente. [...]
-      
-      Felizmente, os franceses tinham Gaspard Monge, que desenvolveu uma técnica de análise gráfica chamada geometria descritiva. [...] As técnicas de geometria descritiva permitiram que os engenheiros da época criassem qualquer ponto de vista de um objeto geométrico a partir de dois pontos de vista existentes. Ao criar o ponto de vista apropriado, os engenheiros podiam observar e medir os atributos de um objeto. [...] A geometria complexa, os ângulos de interseção incomuns, e a altura das muralhas tinham a intenção de maximizar o fogo cruzado sobre um inimigo em aproximação sem revelar o interior da fortaleza. [...]
-      
-      A astúcia dos franceses na construção de fortificações manteve a França como o principal poder europeu até o século XVIII. Na época, a geometria descritiva era considerada um segredo do estado francês, cuja divulgação era crime punível com a morte. Como resultado da aliança entre a França e o recém-constituído Estados Unidos, muitas fortificações dos EUA utilizaram projetos franceses. Como exemplo, temos o Forte McHenry que foi construído em 1806 e é primorosamente preservado em Baltimore, Maryland. O Forte McHenry sobreviveu ao bombardeamento inglês durante a Guerra de 1812 e tem importância porque ele inspirou Scott Key a escrever The Star Spangled Banner, o hino nacional dos EUA.
-     
-   .. _fig-proj-forte-01:
-  
-   .. figure:: _resources/fig-fort-mchenry.jpg  
-  
-      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library).             
-   
-
-.. admonition:: Para o professor
-
-   O livro "Joy of Ambiguous Solids: How to Make Anomalous Objects That Change Their Appearances in a Mirror" de  Sugihara Kokichi apresenta outros moldes em papel com outras peças peculiares.
-      
-      
-.. admonition:: Você sabia?
-
-   O cientista cognitivo americano Douglas Richard Hofstadter (1945-) concebeu, para a capa de seu livro "Gödel Escher Bach: Um Entrelaçamento de Gênios Brilhantes", um objeto bem peculiar: suas projeções ortogonais em três planos produzem as letras "G" (de Gödel), "E" (de Escher) e "B" (de Bach).
-   
-      .. figure:: _resources/geb-01.png
-         :width: 200pt
-      
-         GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
-      
-   Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
-   
-      .. figure:: _resources/triplets-qr.png
-         :width: 50pt
-   
-      .. figure:: _resources/triplets-exemplo.*
-        
-         Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
-         
-   .. HJB: Shigeo Fukuda         
-         
-   Existem muitas produções artísticas que produzem este efeito de múltiplas projeções com múltiplos signifcados. Indicamos aqui duas referências: as esculturas do artista `John V. Muntean <https://www.jvmuntean.com/#intro>`_ e do matemático `Kokichi Sugihara <http://home.mims.meiji.ac.jp/~sugihara/Welcomee.html>`_. 
-   
-   Caso você queira construir uma versão simples de uma destas peças, um molde para ser impresso e recortado está disponível `neste endereço <https://goo.gl/ddFnuf>`_. Um vídeo exibindo as etapas de montagem pode ser acessado no `YouTube <https://youtu.be/QTNg0ofgB78>`_. Caso você tenha acesso a uma impressora 3D, o arquivo STL para impressão podem ser obtido gratuitamente no `Thingverse <https://www.thingiverse.com/thing:1657791>`_. 
-   
-      .. figure:: _resources/sugihara-richeson.*
-      
-      Uma peça peculiar feita de papel (fonte: `David Recheson <https://youtu.be/QTNg0ofgB78>`_).
-      
 
 
-.. _ativ-proj-infinito:
 
-Atividade: retas paralelas, obras de arte e o infinito
+.. _ativ-proj-comprimentos:
+
+Atividade: comprimentos em projeções
 ------------------------------
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos:** 
+   **Objetivo específico:** compreender quantitativamente como se relacionam as medidas de comprimento de um objeto e de sua imagem por uma projeção em perspectiva.
    
-   * Compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
-   
-   * Compreender a propriedade de que a projeção paralela de um feixe de retas paralelas que não são paralelas à direção da projeção são retas paralelas.
-   
-   * Identificar a existência de elementos de projeções em perspectiva e projeções paralelas em fotografias e pinturas históricas.
    
    **Observações e recomendações:**
    
-   * O desenvolvimento e os questionamentos das PARTES 1 e 2 constituem um excelente exercício de geometria de posição.
+   * O uso do conceito de função nesta atividade não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. Observe, por exemplo, como a notação funcional permite compactar informação: no lugar de falar "Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item?", basta falar "Qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?". No espírito da :ref:`ativ-funcoes-enchendo-o-cone`, é importante articular as representações em linguagem natural e a linguagem funcional e explicitar para o alunos as vantagens e desvantagens de cada representação.
    
-   * Esta atividade é uma oportunidade do aluno ter contato com a noção de infinito. De fato, projeções em perspectiva permitem "materializar" o infinito em uma direção: no plano de projeção, ele pode ser identificado com o ponto de fuga associado à direção.
-   
-   * Na PARTE 1, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
-   
-   * Sugerimos fortemente que, para a discussão da PARTE 1, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de se poder girar a cena e se poder escolher direções diferentes para a reta `r`.
-   
-   * Na discussão das PARTES 1 e 2 é interessante relacionar o que foi estabelecido sobre projeções de retas paralelas com a projeção dos lados paralelos do cubo vazado na :ref:`ativ-proj-luz-e-sombras`.
-   
-   * Para a PARTE 3, sugerimos que os alunos sejam divididos em grupos de cinco e que sejam distribuídas pelo menos uma imagem desenhada em perspectiva (como a pintura :numref:`fig-proj-ponto-de-fuga-01` ou a foto :numref:`fig-proj-ponto-de-fuga-02`), outra desenhada em projeção paralela (como a :numref:`fig-proj-ponto-de-fuga-03`), outra desenhada em "perspectiva inversa" (como a :numref:`fig-proj-ponto-de-fuga-04`) e, finalmente, uma que parece estar desenhada em perspectiva, mas não está  (como a :numref:`fig-proj-ponto-de-fuga-05`).
-   
-   * Muitos desenhos japoneses antigos, a exemplo da :numref:`fig-proj-ponto-de-fuga-03`, foram feitos com projeções paralelas, uma característica da cultura da época. Você pode encontrar outros desenhos japoneses nos seguintes endereços: <https://ukiyo-e.org/> e <http://www.jaodb.com/>. Ainda no contexto cultural, iconografias bizantinas e russas antigas compartilham a "perspectiva inversa" da :numref:`fig-proj-ponto-de-fuga-04`.
-   
-   * Versões interativas feitas no GeoGebra da :numref:`fig-proj-ponto-de-fuga-01` à :numref:`fig-proj-ponto-de-fuga-05` estão disponíveis neste endereço: <https://www.geogebra.org/m/kFpnVERB>. O botão "S" exibe a solução e o botão "I" posiciona as retas para a configuração inicial. Com este recurso computacional, economiza-se papel que seria necessário para imprimir as imagens necessárias para a PARTE 3.
+   * As construções interativas do GeoGebra para as figuras das Etapas 1 e 3 estão disponíveis nos endereços: <https://www.geogebra.org/m/HKuqwxXn>, <https://www.geogebra.org/m/u4mkzbmP>, <https://www.geogebra.org/m/UGFWgAQ5>, <https://www.geogebra.org/m/SubrgSmG>, <https://www.geogebra.org/m/Du4285XX>, <https://www.geogebra.org/m/YjAhaCNu> e <https://www.geogebra.org/m/jGxrcxvw>. Caso os alunos tenham dificuldades em interpretar as versões estáticas, recomendamos o uso destas versões dinâmicas. Note, por exemplo, que na :numref:`fig-proj-comprimento-04`, que é por si a imagem de uma projeção em perspectiva, o segmento `R'S'` aparenta não ter o mesmo comprimento do segmento `A'B'` mas, de fato, eles possuem o mesmo comprimento no espaço tridimensional. Ao usar a construção interativa <https://www.geogebra.org/m/Du4285XX>, você e o aluno poderão girar a cena e, assim, desfazer essa percepção provocada pela figura estática. Outro exemplo: na :numref:`fig-proj-ladrilhamentos-01`, o ângulo `OPR` não parece ser reto na imagem mas, na cena tridimensional, é reto. Novamente, a explicação está no fato de que a :numref:`fig-proj-ladrilhamentos-01` foi construída com uma projeção em perspectiva e, portanto, do ponto de vista escolhido, a amplitude do ângulo `OPR` foi projetada de forma distorcida.
    
 
-Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
 
-   .. _fig-proj-infinito-01:
+**PARTE 1**
 
-   .. figure:: _resources/infinito-01.jpg
-    
-      Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
+Coloque os seus dois dedos indicadores um do lado do outro. Eles têm o mesmo tamanho, não é? Agora afaste um deles. Seus dedos continuam com o mesmo tamanho? Sim, mas você **vê** o dedo que está mais longe menor, não é? Esta propriedade pode ser explicada via projeções em perspectiva e a exploraremos nesta atividade.
 
-.. Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_.
+.. _fig-proj-dedos-03:
 
+.. figure:: _resources/dedos-03.jpg
 
-Este tipo de situação é traduzido pela frase popular "Retas paralelas se encontram no infinito!". Note, contudo, que as retas paralelas na cena tridimensional **nunca** se encontram. A concorrência ocorre para os prolongamentos das projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção.
-
-**PARTE 1.**
-
-Vamos primeiro compreender como a projeção em perspectiva de uma reta não paralela ao plano de projeção pode ser obtida por meio da interseção de dois planos. Caso queira acompanhar os passos descritos a seguir com um modelo interativo que pode ser girado e ampliado, acesse (inclusive do seu celular) o endereço: <https://www.geogebra.org/m/pcx56y49>.
+   Visualização de imagens dos dois dedos indicadores.
 
 
-Como na :numref:`fig-proj-infinito-02`, considere uma projeção em perspectiva determinada por um centro `O` e um plano de projeção `\pi`. Suponha que o ponto `O` *não pertença* ao plano `\pi`. Considere também uma reta `r` não paralela ao plano `\pi` e que não passa pelo ponto `O`.
+Vamos começar com uma configuração bem simples. Considere a :numref:`fig-proj-comprimento-01`. Nela, o segmento `AB` é paralelo ao plano de projeção `\pi` e o segmento `OA`, por sua vez, é perpendicular a `\pi`. Os pontos `A'` e `B'` são, respectivamente, as projeções de `A` e `B` sobre o plano `\pi` com relação ao centro `O`. Considere as medidas de comprimento `h = AB`, `x = OA`, `h' = A'B'` e `d = OA'`. Nosso objetivo é estudar como o comprimento `h'` da projeção sobre o plano `\pi` se relaciona com o comprinto `h` do segmento `AB` (você pode imaginar que `h` é o comprimento real do seu dedo e `h'` é o comprimento da imagem que você vê de seu dedo quando ele está a uma distância `x`).
 
-.. _fig-proj-infinito-02:
-
-.. figure:: _resources/infinito-02_2.jpg
-
-   Projeção em perspectiva de uma reta: passo 1.
+   .. _fig-proj-comprimento-01:
    
-Para determinar a projeção em perspectiva de uma reta `r`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e o centro `O` com o plano `\pi`. A :numref:`fig-proj-infinito-03`     exibe as projeções `A'`, `B'` e `C'` dos pontos `A`, `B` e `C` da reta `r`.
+   .. figure:: _resources/perspectiva-comprimento-01_1.jpg
+      
+      Configuração geométrica simples (versão interativa: <https://www.geogebra.org/m/HKuqwxXn>).
+
+**Etapa 1.**
+
+Considere que `h = 2` e `d = 3`. 
+
+#. Determine o valor de `h'` para `x = 6`.
+#. Mais geralmente, determine `h'` como uma função `f` de `x`. Qual é o domínio desta função? Note que, usando o conceito de função, o item anterior está lhe pedindo para calcular `f(6)`.
+#. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual à metade do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = \frac{1}{2} \, f(6)`?
+#. Qual deve ser o valor de `x` para que o valor de `h`' correspondente seja igual ao dobro do valor de `h'` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `f(x) = 2 \, f(6)`?
+#. Para que valores de `x` tem-se `f(x) = h`? E `f(x) > h`? E `f(x) < h`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. Existem valores diferentes de `x_{1}` e `x_{2}` para os quais `f(x_{1}) = f(x_{2})`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. Se os valores de `x` vão ficando arbitrariamente próximos de `0` com valores maiores do que `0`, o que se pode dizer a respeito dos valores de `h'` correspondentes? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+#. Deseja-se construir um segmento `CD` cuja projeção em perspectiva sobre o plano `\pi` com relação ao centro `O` também seja o segmento `A'B'`, mas cuja distância até `O` seja igual a 15. Qual deve ser o comprimento do segmento `CD`?
+
+Justifique todas as respostas!
+
+**Etapa 2.**
+
+#. Generalize o Item b) da Etapa 1: determine `h'` como função de `x` em termos de `h` e `d` (isto é, sem especificar valores numéricos particulares para `h` e `d`).
+
+#. Verdadeiro ou falso? No contexto da :numref:`fig-proj-comprimento-01`, sem atribuir valores numéricos específicos para `h` e `d`, verdadeiro ou falso? Se dobrarmos a distância `x` do segmento `AB` até o ponto `O`, então o comprimento `h'` de sua projeção ficará reduzido à metade.
+
+Justifique todas as respostas!
+
+**Etapa 3.**
+
+#. A :numref:`fig-proj-comprimento-02` foi construída a partir da :numref:`fig-proj-comprimento-01` acrescentando-se um segmento `RS` que é uma "cópia" do segmento `AB` obtida translando-se o segmento `AB` paralelamente ao plano `\pi`. Mais precisamente, `RS` é tal que `ARSB` é um retângulo que é paralelo ao plano `\pi`. O segmento `R'S'` é a projeção em perspectiva do segmento `RS` sobre o plano `\pi` com relação ao centro `O`. Pergunta: o comprimento do segmento `R'S'` é maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+   .. _fig-proj-comprimento-02:
    
-.. _fig-proj-infinito-03:
+   .. figure:: _resources/perspectiva-comprimento-02.jpg
+      
+      Uma variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/u4mkzbmP>).
 
-.. figure:: _resources/infinito-03_3.jpg
 
-   Projeção em perspectiva de uma reta: passo 2.
+#. E se, agora, ao invés de um retângulo, o quadrilátero `ARSB` fosse um paralelogramo qualquer paralelo ao plano `\pi`? O comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+   .. _fig-proj-comprimento-03:
    
-Observe que os pontos da reta `r` projetados pertencem ao plano `\pi` e, também, ao plano `\phi` que passa por `O` e contém a reta `r`, conforme a :numref:`fig-proj-infinito-04`.
-
-.. _fig-proj-infinito-04:
-
-.. figure:: _resources/infinito-04.jpg
-
-   Projeção em perspectiva de uma reta: passo 3.
-
-Em particular, os pontos da reta `r` projetados no plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
-
-.. _fig-proj-infinito-05:
-
-.. figure:: _resources/infinito-05_3.jpg
-
-   Projeção em perspectiva de uma reta: passo 4.
-
-Existe uma reta `s` que passa por `O` e é paralela a reta `r`. Essa reta pertence ao plano `\phi` e intersectará o plano `\pi` e, portanto, a reta `r'` em um ponto `F`, conforme a :numref:`fig-proj-infinito-06`. Neste contexto, o ponto `F` é denominado :index:`ponto de fuga` associado à direção dada pela reta `r`.
-
-.. _fig-proj-infinito-06:
-
-.. figure:: _resources/infinito-06_1.jpg
-
-   Projeção em perspectiva de uma reta: passo 5.
+   .. figure:: _resources/perspectiva-comprimento-03.jpg
+      
+      Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/UGFWgAQ5>).
 
 
-**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção no plano `\pi` seja o ponto `F`. Por quê? 
+   .. Talvez colocar aqui uma sugestão de um item anterior fazendo o caso em que `R = A` e `S` gira em torno de `R`. Isto ajudará na demonstração do item seguinte, no sentido de escolher uma direção que coloque a situação `girada` na situação padrão.        
+   
+   
+#.  Nos dois itens anteriores, o segmento `RS` foi considerado como paralelo ao segmento `AB`. Vamos relaxar esta hipótese, considerando que `RS` não precisa ser paralelo a `AB`, mas que (1) `RS` tem o mesmo comprimento `h` de `AB`, (2) `R = A` e (3) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
 
-Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim, uma reta menos um ponto: `r' - \{F\}`. Se prolongarmos esta projeção incluindo o ponto `F`, obteremos uma reta: `r'`.
+      .. _fig-proj-comprimento-05:
 
-**Pergunta 2.** Suponha no que foi feito até agora, a reta `r` seja trocada por uma outra reta diferente, mas paralela a reta `r`. O ponto `F` para esta nova reta será o mesmo, não mudará. Por quê?
+      .. figure:: _resources/perspectiva-comprimento-05_1.jpg
+      
+         Outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/SubrgSmG>).
 
-**Pergunta 3.** Supomos inicialmente que a reta `r` não passa pelo ponto `O`. O que mudaria no que foi feito se `O` fosse um ponto de `r`?
+#. Vamos generalizar um pouco mais: agora, `RS` é um segmento qualquer que satisfaz duas condições: (1) seu comprimento é igual ao comprimento `h` do segmento `AB` e (2) `RS` está contido no plano `\omega` que é paralelo a `\pi` e que passa por `A`. Neste caso, o comprimento do segmento `R'S'` seria maior, menor ou igual ao comprimento `h` dos segmentos `AB` e `RS`? Interprete no contexto de visualização das imagens de seus dois dedos indicadores em analogia à :numref:`fig-proj-dedos-03`.
+
+   .. _fig-proj-comprimento-04:
+   
+   .. figure:: _resources/perspectiva-comprimento-04_2.jpg
+      
+      Ainda outra variação da :numref:`fig-proj-comprimento-01` (versão interativa: <https://www.geogebra.org/m/Du4285XX>).
+      
+#. Verdadeiro ou falso? Se `RS` é um segmento que é paralelo ao plano de projeção `\pi`, então sua projeção sobre `\pi` com relação a um centro `O` depende apenas de dois números: a distância `d` de `O` ao plano `\pi` e da distância `x` de `O` ao plano `\omega` que é paralelo a `\pi` e que passa por `R`.      
+      
+Justifique todas as respostas!      
+      
+**Etapa 4.**      
+
+As Etapas 1, 2 e 3 trataram da relação entre os comprimentos de segmentos de retas paralelos ao plano de projeção e os comprimentos de suas *projeções em perspectiva* nesse plano. O que dizer de projeções paralelas? Isto é, qual é a relação entre os comprimentos de segmentos de retas paralelos ao plano de projeção e os comprimentos de suas *projeções paralelas* nesse plano? Faça uma conjectura e justifique-a!
+
+**PARTE 2**      
+
+   .. https://en.wikipedia.org/wiki/List_of_paintings_by_Pieter_de_Hooch
+   
+   .. https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/holland/v/jan-vermeer-the-glass-of-wine-c-1661
+   
+   .. https://br.pinterest.com/pin/432556739189656869/?lp=true
+
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_At_the_Linen_Closet.jpg
+   .. .. figure:: _resources/ladrilhos-01-Pieter_de_Hooch_-_At_the_Linen_Closet.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_Woman_and_Child_with_Serving_Maid_-_Google_Art_Project.jpg
+   .. .. figure:: _resources/ladrilhos-02-1226px-Pieter_de_Hooch_-_Woman_and_Child_with_Serving_Maid_-_Google_Art_Project.jpg
+   
+   .. https://www.rijksmuseum.nl/en/collection/SK-A-182
+   .. Woman with a Child in a Pantry, Pieter de Hooch, c. 1656 - c. 1660 
+   .. Rijksmuseum
+   .. .. figure:: _resources/ladrilhos-03-SK-A-182.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Abraham_van_Strij_-_De_huisvrouw.jpg
+   .. The Housewife, Abraham van Strij (I), 1800 - 1811
+   .. Rijksmuseum
+   .. .. figure:: _resources/ladrilhos-04-SK-C-237.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Placing_a_Child_in_a_Cradle.jpg
+   .. .. figure:: _resources/ladrilhos-05-Pieter_de_Hooch_-_A_Woman_Placing_a_Child_in_a_Cradle.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Pieter_de_Hooch_024.jpg
+   .. .. figure:: _resources/ladrilhos-06-Pieter_de_Hooch_024.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Pieter_de_Hooch_-_The_Golf_Players_-_c.1658.jpg
+   .. .. figure:: _resources/ladrilhos-07-Pieter_de_Hooch_-_The_Golf_Players_-_c.1658.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_with_a_Baby_in_Her_Lap,_and_a_Small_Child_-_WGA11693.jpg
+   .. .. figure:: _resources/ladrilhos-08-Pieter_de_Hooch_-_A_Woman_with_a_Baby_in_Her_Lap_and_a_Small_Child_-_WGA11693.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Pieter_de_Hooch_-_Cardplayers_in_a_Sunlit_Room.jpg
+   .. .. figure:: _resources/ladrilhos-09-Pieter_de_Hooch_-_Cardplayers_in_a_Sunlit_Room.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Drinking_with_Two_Men_-_WGA11694.jpg
+   .. .. figure:: _resources/ladrilhos-10-Pieter_de_Hooch_-_A_Woman_Drinking_with_Two_Men_-_WGA11694.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Cornelis_de_man,_la_nuova_chiesa_di_delft_con_la_tomba_di_guglielmo_il_silenzioso,_1660-70_ca._02_cani.jpg
+   .. .. figure:: _resources/ladrilhos-11-Cornelis_de_man_la_nuova_chiesa_di_delft_con_la_tomba_di_guglielmo_il_silenzioso_1660-70_ca._02_cani.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Cornelis_de_Man_-_Interior_with_a_Family_and_Two_Nurses_before_a_Fire_-_WGA13905.jpg
+   .. .. figure:: _resources/ladrilhos-12-Cornelis_de_Man_-_Interior_with_a_Family_and_Two_Nurses_before_a_Fire_-_WGA13905.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Man_Group_portrait.jpg
+   .. .. figure:: _resources/ladrilhos-13-Man_Group_portrait.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Man,_Cornelis_de_-_A_Man_Weighing_Gold_-_c._1670.jpg
+   .. .. figure:: _resources/ladrilhos-14-Man_Cornelis_de_-_A_Man_Weighing_Gold_-_c._1670.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:The_Chess_Players_Cornelis_de_Man.jpg
+   .. .. figure:: _resources/ladrilhos-15-The_Chess_Players_Cornelis_de_Man.jpg
+   
+   .. https://www.nga.gov/collection/art-object-page.202761.html
+   .. .. figure:: _resources/ladrilhos-16-2015.68.1.jpg   
+   
+   .. https://en.wikipedia.org/wiki/File:A_Boy_Bringing_Bread_Pieter_de_Hooch.jpg
+   .. .. figure:: _resources/ladrilhos-17-A_Boy_Bringing_Bread_Pieter_de_Hooch.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+   .. .. figure:: _resources/ladrilhos-18-Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Woman_writing_a_letter,_with_her_maid,_by_Johannes_Vermeer.jpg
+   .. .. figure:: _resources/ladrilhos-19-843px-Woman_writing_a_letter_with_her_maid_by_Johannes_Vermeer.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Jan_Vermeer_van_Delft_006.jpg
+   .. .. figure:: _resources/ladrilhos-20-Jan_Vermeer_van_Delft_006.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Jan_Vermeer_van_Delft_014.jpg
+   .. .. figure:: _resources/ladrilhos-21-Jan_Vermeer_van_Delft_014.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Vermeer_-_Woman_with_a_Lute_near_a_window.jpg
+   .. .. figure:: _resources/ladrilhos-22-893px-Vermeer_-_Woman_with_a_Lute_near_a_window.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Vermeer,_Johannes_-_The_Loveletter.jpg
+   .. .. figure:: _resources/ladrilhos-23-Vermeer_Johannes_-_The_Loveletter.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Vermeer_The_concert.JPG
+   .. .. figure:: _resources/ladrilhos-24-Vermeer_The_concert.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Vermeer_The_Allegory_of_the_Faith.jpg
+   .. .. figure:: _resources/ladrilhos-25-791px-Vermeer_The_Allegory_of_the_Faith.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Jan_Vermeer_van_Delft_-_The_Glass_of_Wine_-_Google_Art_Project.jpg
+   .. .. figure:: _resources/ladrilhos-26-1186px-Jan_Vermeer_van_Delft_-_The_Glass_of_Wine_-_Google_Art_Project.jpg
+   
+   .. https://en.wikipedia.org/wiki/File:Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg
+   .. .. figure:: _resources/ladrilhos-27-Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_Man_reading_letter_to_a_woman.jpg
+   .. .. figure:: _resources/ladrilhos-28-Pieter_de_Hooch_-_Man_reading_letter_to_a_woman.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Glindoni_John_Dee_performing_an_experiment_before_Queen_Elizabeth_I.jpg
+   .. .. figure:: _resources/ladrilhos-29-1280px-Glindoni_John_Dee_performing_an_experiment_before_Queen_Elizabeth_I.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Nicolaes_Maes_-_Portrait_of_Four_Children_-_WGA13813.jpg
+   .. .. figure:: _resources/ladrilhos-30-Nicolaes_Maes_-_Portrait_of_Four_Children_-_WGA13813.jpg
+        
+   .. https://commons.wikimedia.org/wiki/File:Dirck_van_Delen_-_A_Musical_Company_in_a_Renaissance_Hall.jpg
+   .. .. figure:: _resources/ladrilhos-31-Dirck_van_Delen_-_A_Musical_Company_in_a_Renaissance_Hall.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Wedding_ball_of_the_Duc_de_Joyeuse,_1581.JPG
+   .. .. figure:: _resources/ladrilhos-32-Wedding_ball_of_the_Duc_de_Joyeuse_1581.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:BASSEN,_Bartholomeus_van,_Renaissance_Interior_with_Banqueters,_1618-20.jpg
+   .. .. figure:: _resources/ladrilhos-33-BASSEN_Bartholomeus_van_Renaissance_Interior_with_Banqueters_1618-20.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Peeling_Apples.jpg
+   .. .. figure:: _resources/ladrilhos-34-Pieter_de_Hooch_-_A_Woman_Peeling_Apples.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_The_Bedroom_-_WGA11695.jpg
+   .. .. figure:: _resources/ladrilhos-35-Pieter_de_Hooch_-_The_Bedroom_-_WGA11695.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_Mother_Lacing_Her_Bodice_beside_a_Cradle_-_WGA11698.jpg
+   .. .. figure:: _resources/ladrilhos-36-Pieter_de_Hooch_-_Mother_Lacing_Her_Bodice_beside_a_Cradle_-_WGA11698.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Presentation_Miniature,_Chroniques_de_Hainaut_KBR_9242.jpg
+   .. .. figure:: _resources/ladrilhos-37-Rogier_van_der_Weyden_-_Presentation_Miniature_Chroniques_de_Hainaut_KBR_9242.jpg
+
+   .. http://www.tate.org.uk/art/artworks/lavery-the-chess-players-n04544
+   .. .. figure:: _resources/xadrez-06.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Chess_Players_by_James_Northcote_(1746-1831)_-_IMG_7288.JPG
+   .. .. figure:: _resources/xadrez-07-1280px-Chess_Players_by_James_Northcote_1746-1831_-_IMG_7288.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Chess_players_by_Karel_van_Mander.jpg
+   .. .. figure:: _resources/xadrez-08-Chess_players_by_Karel_van_Mander.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+   .. .. figure:: _resources/xadrez-09-Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+   
+   .. https://commons.wikimedia.org/wiki/File:Alfonso-LJ-27V.jpg
+   .. .. figure:: _resources/xadrez-10-Alfonso-LJ-27V.jpg
+   
+   
+Tendo em mente a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alberti-03`), um problema que desafiou artistas, especialmente os renascentistas, foi o de desenhar ladrilhamentos e tabuleiros de xadrez. A :numref:`fig-proj-ladrilhos-37`, a :numref:`fig-proj-xadrez-10`, a :numref:`fig-proj-ladrilhos-18` e a :numref:`fig-proj-xadrez-09` ilustram algumas tentativas. Perceba que para produzir um desenho realístico, que se pareça com uma fotografia, os comprimentos dos vários elementos do ladrilhamento e do tabuleiro devem satisfazer as propriedades das projeções em perspectiva. Estudaremos algumas destas propriedades nesta PARTE 2.
 
 
-Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções no plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
-Isto também explica a "convergência"
-das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito-01`.
+   .. https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Presentation_Miniature,_Chroniques_de_Hainaut_KBR_9242.jpg
+   
+   .. _fig-proj-ladrilhos-37:
+   
+   .. figure:: _resources/ladrilhos-37-Rogier_van_der_Weyden_-_Presentation_Miniature_Chroniques_de_Hainaut_KBR_9242.jpg
+      :width: 300pt
+   
+      Miniatura de Rogier van der Weyden (1399/1400 -1464) (fonte: Wikimedia Commons).
+      
 
-.. _fig-proj-infinito-08:
+   .. https://commons.wikimedia.org/wiki/File:Alfonso-LJ-27V.jpg
+   
+   .. _fig-proj-xadrez-10:   
+   
+   .. figure:: _resources/xadrez-10-Alfonso-LJ-27V.jpg
+      :width: 300pt
+   
+      Miniatura do Livro dos Jogos (1283) (fonte: Wikimedia Commons).
 
-.. figure:: _resources/infinito-08.jpg
+   .. https://commons.wikimedia.org/wiki/File:Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+   
+   .. _fig-proj-ladrilhos-18:
+   
+   .. figure:: _resources/ladrilhos-18-Portrait_of_an_Artist_in_His_Studio_by_Michiel_van_Musscher.jpg
+      :width: 300pt
+   
+      Quadro "Retrato de Um Artista em Seu Estúdio" do pintor holandês Michiel van Musscher (1645-1705) (fonte: Wikimedia Commons).
+   
+   
+   .. https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+   
+   .. _fig-proj-xadrez-09:   
+   
+   .. figure:: _resources/xadrez-09-Lucas_van_Leyden_-_The_Game_of_Chess_-_WGA12919.jpg
+      :width: 300pt      
+   
+      Quadro "O Jogo de Xadrez" do pintor holandês Lucas van Leyden (1494-1533) (fonte: Wikimedia Commons).
 
-   Projeção em perspectiva de um feixe com 3 retas paralelas (<https://www.geogebra.org/m/EAuVTyTG>).
+**Etapa 1.**
+
+Considere a :numref:`fig-proj-ladrilhamentos-01`. Nela, há dois planos perpendiculares: o plano de projeção `\pi` e o plano `\gamma` que representa o chão. Um segmento de reta `RS` de comprimento `h` está contido no plano `\gamma` e ele é paralelo ao plano `\pi`. Na figura, `P` é o ponto médio de `RS`. Como de costume, o ponto `O` representa a posição do observador. O ponto `U` é a projeção ortogonal de `O` sobre `\gamma` e, portanto, `a = OU` é a altura do observador com relação ao plano do chão `\gamma`. Agora, uma condição importante que irá simplificar nosso estudo: vamos supor que o ponto `O` é tal que o segmento `OP` é perpendicular ao segmento `RS`, ou seja, o ângulo `OPR` é reto (na :numref:`fig-proj-ladrilhamentos-01` ele não aparenta ser reto por conta da distorção da projeção em perspectiva usada para produzir a figura). Os pontos `R'`, `P'` e `S'` são as projeções em perspectiva sobre o plano `\pi` com relação ao centro `O` dos pontos `R`, `P` e `S`, respectivamente. O comprimento do segmento projetado `R'S'` é `h'`.
+O ponto `V` é a interseção do plano `\pi` com a reta `UP` e, portanto, `y = VP'` é a altura do ponto `P'` com relação ao plano do chão `\gamma`.
+
+Como o comprimento `h'` do segmento projetado `R'S'` varia de acordo com os valores de `d`, `h` e `x`, você estudou na PARTE 1. O objetivo agora é determinar como a altura `y` deste segmento com relação ao plano `\gamma` varia de acordo com os valores de `a`, `d` e `x`. Com essas duas informações será possível criar um método para fazer desenhos em perspectiva de ladrilhamentos e tabuleiros de xadrez com precisão na configuração descrita na :numref:`fig-proj-ladrilhamentos-01`.
+
+      
+   .. _fig-proj-ladrilhamentos-01:
+
+   .. figure:: _resources/perspectiva-ladrilhamentos-01_2.jpg
+
+      Situação preliminar (versão interativa: <https://www.geogebra.org/m/YjAhaCNu>).
+
+Suponha que `a = 3`, `d = 5` e `h = 4`.
+
+#. Determine o valor de `y` para `x = 6`.
+#. Mais geralmente, determine `y` como função `g` de `x` para `x \geq d`. A restrição de que `x` seja sempre maior do que ou igual a `d` é porque estamos interessados apenas no caso em que o plano `\pi` está entre o observador `O` e o segmento de reta `RS` (o caso de uma pintura).
+#. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual à metade do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = \frac{1}{2} \, g(6)`?
+#. Qual deve ser o valor de `x` para que o valor de `y` correspondente seja igual ao dobro do valor de `y` que você obteve no primeiro item? Em outras palavras, qual é o valor de `x` para o qual `g(x) = 2 \, g(6)`?
+#. Verdadeiro ou falso? Para todo `x > d`, tem-se `g(x) < a`.
+#. Existem valores diferentes de `x_{1} > d` e `x_{2} > d` para os quais `g(x_{1}) = g(x_{2})`?
+#. Se os valores de `x` vão ficando arbitrariamente grandes, o que se pode dizer a respeito dos valores de `y` correspondentes? 
+
+Justifique todas as respostas!
+
+**Etapa 2.**
+
+#. Generalize o Item b) da Etapa 1: determine `y` como função de `x` em termos de `a`, `d` e `h` (isto é, sem especificar valores numéricos particulares para `a`, `d` e `h`.
+
+#. Verdadeiro ou falso? No contexto da :numref:`fig-proj-ladrilhamentos-01`, sem atribuir valores numéricos específicos para `a`, `d` e `h`, verdadeiro ou falso? Se dobrarmos a distância `x` do segmento `RS` até o ponto `U`, então a altura `y` com relação ao plano `\gamma` de sua projeção dobrará também.
+
+Justifique todas as respostas!
+
+**Etapa 3.**
+
+Desafio final: usando o que você aprendeu até agora nesta atividade, desenhe a projeção em perspectiva do quadriculado `RABS` na :numref:`fig-proj-ladrilhamentos-02`. Considere `a = 3`, `d = 5`, `x = 6` e `h = 4`. O quadrado `RABS` está dividido em `4 \times 4 = 16` quadrados menores congruentes.
+
+   .. _fig-proj-ladrilhamentos-02:
+
+   .. figure:: _resources/perspectiva-ladrilhamentos-02.jpg
+
+      Projeção em perspectiva de um quadriculado `4 \times 4` (versão interativa: <https://www.geogebra.org/m/jGxrcxvw>).
+
+Registre sua resposta na :numref:`fig-proj-ladrilhamentos-03` onde, para sua comodidade, já se encontra desenhada a projeção `R'S'` do segmento `RS` com relação ao centro `O`.
 
 
-.. _fig-proj-infinito-09:
+   .. _fig-proj-ladrilhamentos-03:
 
-.. figure:: _resources/infinito-09_1.jpg
+   .. figure:: _resources/perspectiva-ladrilhamentos-03.jpg
 
-   Projeção em perspectiva de um feixe com muitas retas paralelas (<https://www.geogebra.org/m/ycxHtZEP>).
+      Plano `\pi` com a projeção `R'S'` do segmento `RS` com relação ao centro `O`.
+
+**Etapa 4.**      
+
+As Etapas 1, 2 e 3 conduziram você a investigar *projeções em perspectiva* de um quadriculado. O que pode ser disto sobre *projeções paralelas* de um quadriculado como o da :numref:`fig-proj-ladrilhamentos-02`? Faça uma conjectura e justifique-a!
 
 
-**Pergunta 4.** Qual é a projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção? Faça uma conjectura e justifique-a!
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-**PARTE 2**
 
-**Pergunta 1.** O desenvolvimento feito na PARTE 1 trata de projeções em perspectiva de retas paralelas. O que pode ser dito sobre *projeções paralelas de retas paralelas*? Faça uma conjectura e justifique-a!
-
-**PARTE 3.**
 
 .. admonition:: Resposta
 
    **PARTE 1.**
    
-   **Pergunta 1.** Suponhamos que `F` seja um ponto da projeção da reta `r` em `\pi`. Isto significa que existe um ponto `P\in r` tal que a reta `t` que passa por `O` e `P` intersecta `\pi` em `F`. Logo, `t` e `s` contêm os pontos `O` e `F`, o que implica que `t=s`. Observe, então, que `s` e `r` contêm o ponto `O`, o que mostra que `s` e `r` são concorrentes. Como, por hipótese, as retas `s` e `r` são paralelas, temos um absurdo. Portanto, concluímos que o ponto `F` não pertence à projeção da reta `r`.
+   **Etapa 1.** 
+   
+   #. Como os triângulos `OB'A'` e `OBA` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
+   
+      .. math::
 
-   **Pergunta 2.** Podemos perceber que o que torna `F` um ponto "especial" ao se calcular a projeção da reta `r` é o fato dele ser o ponto de interseção da reta `s` com o plano `\pi`, sendo `s` a reta paralela à `r` passando por `O`. Se, então, tomarmos uma reta qualquer paralela à reta `r`, ela continuará sendo paralela à reta `s` que intersecta `\pi` em `F`. E daí, da mesma forma que anteriormente, `F` não poderá fazer parte da projeção da nova reta. 
-   
-   **Pergunta 3.** Se `O` fosse um ponto da reta `r`, a projeção de `r` seria apenas o ponto de interseção da reta `r` com o plano `\pi`.
-   
-   **Pergunta 4.** A projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção é também um feixe de retas paralelas. 
-   
-   Vamos trabalhar apenas com duas retas `r` e `s` paralelas ao plano de projeção para facilitar nosso raciocínio que pode ser generalizado para um número qualquer de retas. Primeiramente, note que a projeção em perspectiva de uma reta paralela ao plano de projeção será também uma reta. Portanto, as projeções das retas `r` e `s` serão duas retas que chamaremos de `r'` e `s'`, respectivamente, e que suporemos serem distintas. Caso `r'` e `s'` não fossem retas paralelas, elas seriam concorrentes em um ponto `P` (como as duas retas estão dentro do mesmo plano, que é o plano de projeção, elas não poderiam ser reversas). Neste caso, existiriam dois pontos diferentes `A` e `B` pertencentes às retas paralelas `r` e `s`, respectivamente, que foram projetados em `P`. Isso significaria que as retas que passam pelo centro de projeção e por `A` e `B` se encontram em `P`, o que não é possível pois `A` e `B` pertencem à retas paralelas. Logo, a projeção de duas retas paralelas ao plano de projeção deve ser duas retas paralelas.
-   
-   
-.. admonition:: Para refletir
+         \frac{h'}{3}=\frac26 \Leftrightarrow h'=1.
+         
+      Em outras palavras, sendo a distância do centro de projeção ao plano de projeção igual a `3` e a distância do centro de projeção ao segmento `AB` (a ser projetado) igual `6`, a projeção do segmento de reta `AB` de comprimento `2` terá comprimento `1`. 
+      
+   #. Novamente usando a razão de semelhança entre os triângulos `OB'A'` e `OBA`, mas agora sem substituir o valor de `x` temos:
+    
+      .. math::
 
-    .. figure:: _resources/2017-12-15_05-14-38.jpg
-       :width: 400pt
+         \frac{h'}{3}=\frac{2}{x} \Longleftrightarrow h'=\frac6x.
+      
+      Assim, a função procurada é `f(x)=\frac{6}{x}`. Note que, como esta função modela a situação apresentada na figura, os valores de `x` devem ser apenas positivos, pois `x` é a distância de `O` até `A`. Além disso, `O` não pode coincidir com `A'`, o que implica que x também não pode ser `0`. Portanto, o domínio da função `f` é o intervalo `]0,\infty[`.
+      
+      .. _fig-proj-comprimentos-solucao-01:
 
-       Fonte: <http://www.gocomics.com/bc>.
+      .. figure:: _resources/funcao6x_2.png
+         :width: 200pt
+
+         Gráfico da função `f(x)=\frac6x` com `x\in ]0,\infty[`.
+      
+   #. Se `f(x) = \frac12 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = \frac12 \cdot 1 \Longleftrightarrow x = 12.
+         
+      Portanto, para que a projeção do segmento de reta `AB` tenha a metade do comprimento que tinha quando `x = OA = 6` é preciso que `x = 12`. 
+         
+   #. Se `f(x) = 2 \, f(6)`, então 
+   
+      .. math::
+      
+         \frac6x = 2 \cdot 1 \Longleftrightarrow x = 3.
+         
+      Sendo assim, para que a projeção do segmento de reta `AB` tenha o dobro do comprimento que tinha quando `x = OA = 6` é preciso que `x = 3`. 
+         
+   #. Se `f(x)=h`, então `\frac6x=2`. Logo, `x=3`. Sendo assim, para que a projeção do segmento de reta `AB` e `AB` tenham o mesmo comprimento, é preciso que a distância de `AB` ao plano de projeção seja `3`. Já no contexto das imagens dos dedos, podemos dizer que os dois dedos estão sobre plano de projeção. 
+   
+      Se `f(x)>h`, então `\frac6x>2`. Logo, `x<3`. Portanto, para que o comprimento da projeção do segmento de reta `AB` seja maior que seu próprio comprimento, é preciso que a distância de `AB` até `O` seja menor que `3`. No contexto das imagens dos dedos, isto significa que os dedos estão posicionados antes do plano de projeção, ou seja, entre o observador e o plano de projeção. Neste caso, o tamanho da projeção dos dedos no plano de projeção seria maior que o tamanho dos próprios dedos. 
+      
+      Se `f(x)<h`, então `\frac6x<2`. Logo, `x>3`. Ao contrário do que vimos no caso anterior, para que o comprimento da projeção do segmento de reta `AB` seja menor que seu comprimento, é preciso que a distância de `AB` até `O` seja maior que `3`. No contexto das imagens dos dedos, isto quer dizer que o objeto está posicionado após o plano de projeção. Assim, sua projeção terá tamanho menor que o tamanho dos dedos. 
+      
+   #. Se existissem `x_1` e `x_2` tais que `f(x_1)=f(x_2)`, então teríamos    
+   
+      .. math::
+         
+         \begin{array}{ll}
+         & \frac{6}{x_1} = \frac{6}{x_2} \\
+         \Longleftrightarrow & 6x_1 = 6x_2 \\
+         \Longleftrightarrow & 6(x_1 - x_2)=0 \\
+         \Longleftrightarrow & x_1 = x_2.
+         \end{array}
+         
+      Portanto, se `f(x_1)=f(x_2)`, então `x_1 = x_2`. Isto quer dizer que, se as projeções de dois segmentos possuem o mesmo comprimento, então eles estão posicionados a uma mesma distância de `O`. No contexto das imagens dos dedos, isto significa que se a projeção dos dois dedos possui o mesmo tamanho, então eles estão a uma mesma distância do observador, e consequentemente eles estão a uma mesma distância do plano de projeção.
+      
+   #. Se os valores de `x` vão ficando arbritariamente grandes, então os valores correspondentes de `h'` ficarão arbritariamente pequenos. Analise mais uma vez o gráfico mostrado na :numref:`fig-proj-comprimentos-solucao-01`. Isto significa, no contexto das imagens dos dedos, que a medida que os dedos se afastam do observador, sua projeção diminui de tamanho.
+   
+   #. Se os valores de `x` vão ficando arbritariamente próximos de `0` mas com valores maiores do que `0`, então os valores correspondentes de `h'` ficarão arbritariamente grandes. Novamente, analise o gráfico mostrado na :numref:`fig-proj-comprimentos-solucao-01`. Na situação dos dedos, isto significa que quanto mais próximo do observador estiverem os dedos, maiores serão suas projeções.
+   
+   #. Se o segmento `CD` está a uma distância `15` de `O`, então `x=15`. Neste caso, utilizando a função `f` temos
+   
+   .. math::
+
+      f(15) = \frac6{15}.
+      
+   Como os triângulos `OB'A'` e `ODC` são semelhantes (pois possuem dois ângulos correspondentes congruentes), temos que 
+   
+   .. math::
+
+      \frac{\frac6{15}}{3}=\frac{CD}{15} \Longleftrightarrow CD=2.
+      
+        
+   **Etapa 2.** 
+   
+   #. Esta pergunta pode ser respondida usando o mesmo argumento do item a) da Pergunta 1, mas sem utilizar valores dados na etapa anterior para `h` e `d`. Como os triângulos `OB'A'` e `OBA` são semelhantes, temos que 
+   
+      .. math::
+
+         \frac{h'}{d}=\frac{h}{x} \Leftrightarrow h'=\frac{hd}{x}. 
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, se a distância de `AB` ao ponto `O` é igual a `2x`, teremos:   
+   
+      .. math::
+
+         \frac{h'}{d}=\frac{h}{2x} \Leftrightarrow h'=\frac{hd}{2x}=\frac{\frac{hd}{x}}2. 
+         
+      Comparando o valor de `h'` deste e do item anterior, podemos concluir que a afirmação é verdadeira.
+      
+   **Etapa 3.** 
+   
+   #. Observe na :numref:`fig-proj-comprimento-02` que os triângulos `OS'R'` e `OSR` são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{R'}S'` é congruente à `O\hat{R}S`), então 
+   
+      .. math::
+      
+         \frac{S'R'}{R'O} = \frac{SR}{RO}  \Longleftrightarrow \frac{R'S'}{R'O} = \frac{h}{RO} \Longleftrightarrow R'S'= \frac{h \cdot R'O}{RO}.
+         
+      Analogamente, os triângulos `OA'R'` e `OAR` também são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{A'}R'` é congruente à `O\hat{A}R`). Logo, 
+      
+      .. math::
+      
+         \frac{OA'}{R'O} = \frac{OA}{RO}  \Longleftrightarrow \frac{d}{R'O} = \frac{x}{RO} \Longleftrightarrow RO = \frac{x \cdot R'O}{d}.
+         
+      Substituindo o valor de `RO` em `S'R'` temos:    
+      
+      .. math::
+      
+         R'S'= \frac{h \cdot R'O}{\frac{x \cdot R'O}{d}} = \frac{hd}{x}.
+         
+      Pela atividade a da etapa 2, sabemos que `h'=\frac{hd}{x}` e com isso, podemos concluir que `R'S'` possui o mesmo comprimento do segmento `A'B'`. Portanto, a projeção da translação de um segmento paralelamente ao plano `\pi` terá o mesmo comprimento do segmento.
+      
+      Neste caso, temos três opções: 
+      
+      (1) Se `x>d`, ou seja, `RS` está posicionado após o plano de projeção, então `R'S'` terá comprimento menor que `AB` e `RS`. 
+      
+      (2) Se `x=d`, ou seja, `RS` está posicionado sobre o plano de projeção, então `R'S'` terá comprimento o mesmo comprimento que `AB` e `RS`. 
+      
+      (3) Se `x<d`, ou seja, `RS` está posicionado antes do plano de projeção, então `R'S'` terá comprimento maior que `AB` e `RS`.  
+      
+      No contexto da visualização das imagens de seus dois dedos, temos que se afastarmos os dedos indicadores e mantivermos os dois em um plano paralelo ao plano de projeção `\pi` ("translação" de um dos dedos paralelamente ao plano de projeção), então suas projeções terão sempre o mesmo comprimento. 
+      
+   #. Se, ao invés de um retângulo, o quadrilátero `ARSB` for um paralelogramo, teremos a mesma situação da atividade anterior e exatamente as mesmas possiblidades. 
+   
+      Já no contexto da visualização das imagens de seus dois dedos, temos que se afastarmos os dedos indicadores e elevarmos um em relação ao outro (mais uma vez, uma "translação" de um dedo paralelamente ao plano de projeção), além de  mantê-los dentro de um plano paralelo ao plano de projeção `\pi`, então suas projeções terão sempre o mesmo comprimento. 
+      
+   #. Observe na :numref:`fig-proj-comprimento-04` que os triângulos `OAB` e `OAS` são congruentes (o lado `OA` é comum aos dois triângulos, os ângulos `O\hat{A}B` e `O\hat{A}S` são congruentes, e os lados `AB` e `AS` são congruentes), os triângulos `OA'S'` e `OAS` são semelhantes (o ângulo `O` é comum aos dois triângulos e `O\hat{R'}S'` é congruente à `O\hat{R}S`) e os triângulos `OA'B'` e `OAB` são semelhantes (visto na etapa anterior). Assim, pela transitividade da semelhança de triângulos, podemos concluir que os triângulos `OA'B'` e `OA'S'` são semelhantes. Como `OA'` é lado comum aos triângulos `OA'B'` e `OA'S'`, então, na verdade, eles são congruentes. Dessa forma, temos que `A'S'` possui a mesma medida `h'` do segmento `A'B'`. Sendo assim, temos aqui as mesmas mesmas possibilidades das duas questões anteriores. 
+      
+      No contexto da visualização das imagens de seus dedos, temos os dois dedos mantendo a mesma base e um deles sendo rotacionado em relação ao outro dentro do plano `\omega` paralelo ao plano de projeção `\pi`. Nesta situação, como os dedos possuem o mesmo comprimento, suas projeções terão também o mesmo comprimento.
+   
+   #. O segmento `RS` pode ser obtido fazendo uma translação e depois uma rotação de uma cópia do segumento `AB`. Portanto, de acordo com o que vimos anteriormente, a projeção `R'S'` do segmento `RS` terá o mesmo comprimento da projeção `A'B'` do segmento `AB`, já que `RS` e `AB` possuem o mesmo comprimento `h`. Sendo assim, as possibilidade analisadas no item (a) também serão válidas na situação mais geral.
+   
+      No contexto da visualização das imagens de seus dedos, teremos que unificar as situações anteriores. Isso quer dizer que enquanto um dos dedos permanece fixado, o outro pode ser disposto em qualquer posição desde que dentro do plano `omega` (ou seja, o segundo dedo está sofrendo translações e rotações). Pelo que estudamos nos itens anteriores, como os dedos possuem o mesmo comprimento, suas projeções terão também o mesmo comprimento.
+   
+   #. A afirmação é verdadeira. Como vimos nos casos anteriores, o comprimento da projeção de um segmento que mede `h` será `\frac{hd}{x}`, ou seja, o comprimento da projeção depende apenas de `d` e `x`. 
+   
+   **Etapa 4.**
+   
+   Vamos considerar um plano de projeção `\pi` e uma direção `d` de projeção (que pode ser perpendicular ou oblíqua à `\pi`). Considere um segmento de reta `AB` paralelo ao plano de projeção `\pi`. Os pontos `A'` e `B'` são, respectivamente, as projeções paralelas de `A` e `B` sobre o plano de projeção `\pi` na direção de `d`. Note que `ABB'A'` é um paralelogramo, pois possui lados opostos paralelos. Isto implica que `A'B'` possui o mesmo comprimento de `AB`, ou seja, o comprimento da projeção paralela de um segmento paralelo ao plano de projeção coincide com o comprimento do segmento. 
+   
+   .. _fig-proj-comprimentos-solucao-03:
+
+   .. figure:: _resources/ProjecaoParalelaSegmentosParalelos.png
+      :width: 350pt
+
+      Projeção paralela do segmento `AB` sobre o plano `\pi` na direção `d`. 
+   
+   Seguindo esse mesmo raciocínio, para quaisquer dois segmentos de mesmo comprimento paralelos à `\pi`, podemos concluir que suas projeções paralelas sobre o plano `\pi` na direção `d` também terão os mesmos comprimentos.  
+   
+   **PARTE 2.**
+   
+   **Etapa 1.**
+   
+   #. Como os triângulos `OUP'` e `P'VP` são semelhantes (pois o ângulo em `P` é comum aos dois triângulos e os ângulos `O\hat{U}P'` e `P'\hat{V}P` são congruentes), temos que 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{1}{y}=\frac{6}{3} \Longleftrightarrow y=\frac12.   
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, assim como sua razão de semelhança, encontramos 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{x-5}{y}=\frac{x}{3} \Longleftrightarrow y=\frac{3x-15}{x}.
+         
+      .. _fig-proj-comprimentos-solucao-02:
+
+      .. figure:: _resources/funcao3x-15x.png
+         :width: 400pt
+
+         Gráfico da função `g(x)=\frac{3x-15}{x}` com `x\geq 5`.   
+         
+   #. Se `g(x) = \frac12 \, g(6)`, então 
+   
+      .. math::
+      
+         \frac{3x-15}{x} = \frac12 \cdot \frac12 \Longleftrightarrow x = \frac{60}{11}. 
+         
+   #. Se `g(x) = 2 \, g(6)`, então 
+   
+      .. math::
+      
+         \frac{3x-15}{x} = 2 \cdot \frac12 \Longleftrightarrow x = \frac{15}{2}.
+   
+   #. Analisando a :numref:`fig-proj-comprimentos-solucao-02`, é possível dizer que a afirmação é verdadeira. Além disso, note que se `x>5`, então `-\frac{15}{x}<0`. Assim, `3-\frac{15}{x} < 3 \Longleftrightarrow g(x)<3`. 
+   
+   #. Se existissem `x_1>d` e `x_2>d` tais que `g(x_1)=g(x_2)`, então teríamos    
+   
+      .. math::
+         
+         \begin{array}{ll}
+         & \dfrac{3x_1-15}{x_1} = \dfrac{3x_2-15}{x_2} \\
+         \Longleftrightarrow & 3x_1x_2-15x_2 = 3x_1x_2-15x_1 \\
+         \Longleftrightarrow & 15(x_1 - x_2)=0 \\
+         \Longleftrightarrow & x_1 = x_2.
+         \end{array}
+         
+      Portanto, se `g(x_1)=g(x_2)`, então `x_1 = x_2`. 
+      
+   #. A função `g(x)` pode ser escrita da forma `g(x)=3-\frac{15}{x}`. Note que, quanto maior os valores de `x`, menores são os valores de `\frac{15}{x}` e assim, `3-\frac{15}{x}` ficará cada vez mais próximo de `3`. Logo, se os valores `x` vão ficando arbitrariamente grandes, os valores de `g(x)=y` vão ficando mais próximos de `3`.
+   
+   Isto pode ainda ser observado no gráfico da função `g` na :numref:`fig-proj-comprimentos-solucao-02`.  
+        
+   **Etapa 2.**
+   
+   #. Utilizando a mesma semelhança de triângulos do item (a) da Etapa 1, assim como sua razão de semelhança, temos 
+   
+      .. math::
+
+         \frac{VP}{VP'}=\frac{UP}{UO} \Longleftrightarrow \frac{x-d}{y}=\frac{x}{a} \Longleftrightarrow y=\frac{a(x-d)}{x}.
+         
+   #. Utilizando a mesma semelhança de triângulos do item anterior, se a distância de `RS` ao ponto `U` é igual a `2x`, teremos:   
+   
+      .. math::
+
+         \frac{2x-d}{y}=\frac{2x}{a} \Longleftrightarrow y=\frac{2xa-da}{2x}=2\left(\frac{a(x-\frac{d}{2})}{x}\right). 
+         
+      Comparando o valor de `y` deste e do item anterior, podemos concluir que a afirmação é falsa, já que o valor encontrado neste item não corresponde ao dobro do encontrado no item anterior.  
+   
+   **Etapa 3.**
+   
+   A :numref:`fig-proj-comprimentos-solucao-04` mostra a projeção em perspectiva do quadriculado `RABS` feita no Geogebra no endereço <https://www.geogebra.org/m/jGxrcxvw>. 
+   
+   .. _fig-proj-comprimentos-solucao-04:
+
+   .. figure:: _resources/Ladrilhamento_Parte2Etapa3.png
+      :width: 350pt
+
+      Projeção em perspectiva do quadriculado `RABS` da :numref:`fig-proj-ladrilhamentos-02`.
+   
+   **Etapa 4.**
+   
+   Neste caso, precisamos estudar duas possibilidades. Na primeira, considere que a direção de projeção `d` seja paralela ao lado `RA` (e a todos os que são paralelos a ele) do quadriculado, ou seja, perpendicular ao plano de projeção `\pi`. Como `RABS` está contido em um plano `\gamma` perpendicular ao plano de projeção `\pi`, a projeção do quadriculado `RABS` será o segmento de reta `R'S'`, onde `R'` e `S'` são as projeções paralelas dos pontos `R` e `S`, respectivamente. Isso acontece pois, segmentos perpendiculares ao plano de projeção são projetados em pontos e segmentos paralelos ao plano de projeção são projetados em segmentos de mesmo comprimento, como já foi estudado antes. 
+   
+   Caso a direção de projeção `d` seja oblíqua em relação ao plano de projeção, a projeção do quadriculado `RABS` será um novo quadriculado `R'A'B'S'`, onde `R', A', B'` e `S'` são as projeções paralelas dos pontos `R, A, B` e `S`, respectivamente. Repare que, como `RS` é um segmento de reta paralelo ao plano de projeção, então `R'S'` será paralelo à `RS` e terá o mesmo comprimento de `RS`, assim como `A'B'` será paralelo à `AB` e terá o mesmo comprimento de `AB`. Assim, podemos concluir que o quadrilátero `R'A'B'S'` é um paralelogramo (podendo ser mais alongado ou mais achatado dependendo da direção de projeção) e sua parte interna será quadriculada de acordo com a direção de projeção `d`. 
+   
+   .. Lhaylla Falta figura
    
    
+   
+     

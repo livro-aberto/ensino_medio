@@ -1,3 +1,76 @@
-*******
-AF209-1
-*******
+.. _sec-org-ideias-galileu-muv:
+
+*************************************
+Organizando as ideias: queda vertical
+*************************************
+
+**Aristóteles** (`\star` Estagira, `384` a.C. — `\dagger` Atenas, `322` a.C.) e **Galileu Galilei** `(\star 1564 , \dagger 1642)` **no estudo da Queda Livre**
+
+
+Aristóteles, discípulo de Platão e professor de Alexandre o Grande, foi um grande filósofo grego e seus estudos, nas mais diversas áreas, impactaram significativamente a história da humanidade. 
+ 
+Em sua época, a escola Platônica dominava a produção científica ocidental, e boa parte dela era influenciada pelo conceito de “natureza” de um objeto, onde se afirmava que todo objeto era composto da combinação dos quatro elementos: “terra, ar, água e fogo”. O estudo dos Movimentos de Aristóteles apresenta alguns equívocos que perpassaram por alguns séculos, devido a essas definições. 
+ 
+Aristóteles afirmava que havia dois tipos de movimentos: os naturais e os violentos. Os naturais, para ele, decorre diretamente da natureza do objeto e os violentos decorrem de  forças aplicadas a esses objetos, ou seja um movimento imposto.
+ 
+No caso dos movimentos naturais, Aristóteles afirmava que cada objeto tem um lugar próprio na natureza e que esses se “esforçam” para retornar ao seu lugar de origem. Por exemplo um vaso de cerâmica, ao ser abandonado cai procurando seu lugar ao solo, já que em sua composição o elemento terra é o mais presente, e pelo mesmo motivo um sopro, ou “baforada” acaba se misturando com o ar.
+ 
+Além disso, Aristóteles, afirmava que um objeto mais pesado (com maior massa) cai em direção ao solo, mais rapidamente que um objeto mais leve, ou seja, para ele, objetos ao serem lançados, caíam com rapidez proporcional ao seu peso. Suas afirmações sobre o movimento, pautaram o pensamento científico por mais de dois mil anos, sendo a base da ciência na era Medieval e Renascentista. Sendo corrigidas por seus sucessores, como Galileu Galilei.
+
+Galileu Galilei filósofo italiano e também considerado físico, matemático e astrônomo, teve também um papel importante na revolução científica, e no contexto histórico mundial, sendo considerado um dos maiores cientistas de sua época. 
+ 
+Galileu abandonou a faculdade de Medicina dedicando-se aos estudos de física e matemática na Universidade de Pisa, uma das mais conceituadas da época. Foi na Universidade de Pisa, já como professor de matemática que Galileu, realizou experiências públicas sobre a queda dos corpos. 
+ 
+Certos historiadores, relatam que perante uma multidão de professores, estudantes e religiosos, Galileu, ao alto da torre de Pisa deixou cair dois pedaços de metal, um deles com o peso dez vezes maior que o outro e os dois chegaram ao solo praticamente no mesmo instante, contrariando assim Aristóteles. Ele prosseguiu realizado outras experiências laboratoriais que acabaram criando o conceito de resistência do ar, o que explicaria por que uma pena e uma bola de metal abandonadas de uma mesma altura, não chegam ao chão ao mesmo tempo. Mesmo assim Galileu não conseguiu convencer as autoridades universitárias de Pisa, que o acusaram de sacrilégio e acabaram tornando sua continuidade em Pisa um tanto desagradável. Por isso, no ano seguinte Galileu aceita uma cadeira na Universidade de Pádua, onde foi muito bem recebido e, por quase dezoito anos continuou realizando diversas experiências e ganhando prestígio com suas publicações e suas famosas aulas magnas.
+
+Em 2014, a BBC publicou na internet a experiência da bola e da pena feita no vácuo: `Human Universe: Episode 4 Preview - BBC Two <https://www.youtube.com/watch?v=E43-CfukEgs>`_, verificando na prática a veracidade das conclusões de Galileu. 
+
+Uma das conclusões mais importantes de Galileu, foram com bases em experiências laboratoriais com planos inclinados. Como retratam as figuras a seguir:
+   
+   
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/plano_inclinado_bruno.jpg
+   :width: 300pt
+   :align: center
+
+   Experiência Galileu
+
++---------+----------------------+----------------------+
+| Medição | Espaço percorrido    | Tempo Gasto          |
++---------+----------------------+----------------------+
+| 1ª      | `\frac{\Delta p}{4}` | `\frac{t}{2}`        |
++---------+----------------------+----------------------+
+| 2ª      | `\frac{\Delta p}{2}` | `\frac{t}{\sqrt{2}}` |
++---------+----------------------+----------------------+
+| 3ª      | `\Delta p`           | `t`                  |
++---------+----------------------+----------------------+
+   
+   
+Galileu notou que:
+   
+Na primeira medição obtemos a razão:`\frac{\frac{\Delta p}{4}}{(\frac{t}{2})^2}=\frac{\Delta p}{4}.\frac{4}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na segunda medição obtemos a razão:`\frac{\frac{\Delta p}{2}}{(\frac{t}{\sqrt{2}})^2}=\frac{\Delta p}{2}.\frac{2}{t^2}=\frac{\Delta p}{t^2}`
+   
+Na terceira medição obtemos a razão: `\frac{\Delta p}{t^2}`
+   
+Após obter esses dados ele concluiu que se dividirmos, em cada caso, o espaço percorrido pelo quadrado do tempo gasto, obteremos uma razão constante. Em outras palavras, Galileu constatou que **a distância percorrida é proporcional ao quadrado do tempo gasto nesse percurso**. A partir dessas conclusões chegamos as fórmulas: `\frac{d}{t^2} = \frac{g}{2}` e portanto `d(t)=\frac{gt^2}{2}`, onde `g` é a aceleração da gravidade; `d(t)` é a distância percorrida pelo objeto durante as `t` unidades de tempo.
+
+**O movimento uniformemente variado**
+
+Nos casos em que a velocidade de um móvel varia de modo constante por todo o intervalo de tempo deste movimento, o movimento é chamado de **uniformemente variado** e temos que a função que dá a velocidade em cada instante de tempo do movimento é uma função afim, logo
+
+.. math::
+
+   v(t)=v_0 + a \cdot t,
+
+onde `v_0` é a velocidade no início da observação do movimento e `a` é o fator que vai alterando a velocidade, chamado de aceleração.
+
+São as leis de Newton `(\star 1643, \dagger 1727)` que estabelecem como a aceleração se relaciona com os objetos de um modo geral, permitindo o uso das relações obtidas por Galileu para situações além da queda livre dos corpos, que vão desde jogadas feitas por atletas com bolas, discos, flechas ou dardos, passando pela aceleração e frenagem de automóveis, e chegando até ao lançamento de foguetes e satélites.
+
+Nas palavras de [Pietrocola-et-al-2016]_ ,
+
+*"Para um corpo permanecer em movimento uniformemente variado (MUV) - com aceleração constante -, é preciso que uma força atue nele. No caso dos corpos em queda, a força gravitacional Terra-corpo se encarrega dessa tarefa. Para o lançamento vertical, é necessária a ação de uma força gravitacional. Já no caso do movimento variado no plano horizontal, uma força deve ser constantemente aplicada no corpo"*.
+
+Essas constatações conduzem ao fato de que a relação existente entre a posição de um corpo em cada instante de tempo, no caso de um *MUV*, conforme já constatamos, não é uma função afim. Prova-se que as grandezas posição e tempo podem ser descrita por uma equação do tipo `p(t)=p_0+v_0 \cdot t + \frac{a}{2} \cdot t^2`; onde `p(t)` é a posição no tempo `t`, `p_0` é a posição inicial em relação ao referencial estabelecido na análise, `v_0` é a velocidade no início da observação e `a` é a aceleração.

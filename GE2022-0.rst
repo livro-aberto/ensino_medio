@@ -115,11 +115,108 @@ Com seus instrumentos, faça um desenho em escala da situação descrita acima.
    #. `60^{\circ}` e `120^{\circ}`
 
 
+.. _ativ-descobrindo-pitagoras:
+
+Atividade: Descobrindo um teorema
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Fazer uma conjectura a partir Fazer uma conjectura a partir de uma situação concreta.
+   * Exprimir a conjectura usando símbolos e operações.
+
+
+A figura a seguir mostra um triângulo `ABC`, retângulo em `A` e quadrados construídos sobre seus lados
+
+
+.. tikz:: 
+
+   \definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+   \clip(-5.26565643546426,-6.789062838538253) rectangle (5.785670595615494,7.1982057095701775);
+   \draw[line width=0.8pt,fill=black,fill opacity=0.05000000074505806] (1.8150509513750424,1.8872143947231454) -- (1.9617853545590336,1.5240340024585624) -- (2.324965746823617,1.6707684056425538) -- (2.1782313436396255,2.033948797907137) -- cycle; 
+   \fill[line width=1.6pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (2.1782313436396255,2.033948797907137) -- (3.,0.) -- (5.0339487979071365,0.8217686563603743) -- (4.212180141546762,2.855717454267511) -- cycle;
+   \fill[line width=1.6pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (-2.855968586582208,0.) -- (2.1782313436396255,2.033948797907137) -- (0.14428254573248944,7.068148728128969) -- (-4.889917384489344,5.034199930221834) -- cycle;
+   \fill[line width=1.6pt,color=qqzzqq, opacity =.25] (3.,0.) -- (-2.855968586582208,0.) -- (-2.8559685865822084,-5.855968586582206) -- (3.,-5.8559685865822075) -- cycle;
+   \fill[line width=0.8pt,color=yqyqyq,fill=yqyqyq,fill opacity=0.10000000149011612] (2.1782313436396255,2.033948797907137) -- (-2.855968586582208,0.) -- (3.,0.) -- cycle;
+   \draw [line width=0.8pt] (-2.855968586582208,0.)-- (3.,0.);
+   \draw[line width=0.8pt] (-0.1970026843675304,7.752156939198234) -- (5.342509611913049,7.752156939198234);
+   \draw [line width=0.8pt] (-2.855968586582208,0.)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=0.8pt] (2.1782313436396255,2.033948797907137)-- (3.,0.);
+   \draw [line width=1.6pt,color=qqqqcc] (2.1782313436396255,2.033948797907137)-- (3.,0.);
+   \draw [line width=1.6pt,color=qqqqcc] (3.,0.)-- (5.0339487979071365,0.8217686563603743);
+   \draw [line width=1.6pt,color=qqqqcc] (5.0339487979071365,0.8217686563603743)-- (4.212180141546762,2.855717454267511);
+   \draw [line width=1.6pt,color=qqqqcc] (4.212180141546762,2.855717454267511)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=1.6pt,color=qqqqcc] (-2.855968586582208,0.)-- (2.1782313436396255,2.033948797907137);
+   \draw [line width=1.6pt,color=qqqqcc] (2.1782313436396255,2.033948797907137)-- (0.14428254573248944,7.068148728128969);
+   \draw [line width=1.6pt,color=qqqqcc] (0.14428254573248944,7.068148728128969)-- (-4.889917384489344,5.034199930221834);
+   \draw [line width=1.6pt,color=qqqqcc] (-4.889917384489344,5.034199930221834)-- (-2.855968586582208,0.);
+   \draw [line width=1.6pt,color=qqzzqq] (3.,0.)-- (-2.855968586582208,0.);
+   \draw [line width=1.6pt,color=qqzzqq] (-2.855968586582208,0.)-- (-2.8559685865822084,-5.855968586582206);
+   \draw [line width=1.6pt,color=qqzzqq] (-2.8559685865822084,-5.855968586582206)-- (3.,-5.8559685865822075);
+   \draw [line width=1.6pt,color=qqzzqq] (3.,-5.8559685865822075)-- (3.,0.);
+   \draw [line width=1.2pt,dash pattern=on 2pt off 2pt,color=qqqqcc] (-4.283827313715963,3.534074364064485)-- (1.5721412728662443,3.5340743640644856);
+   \draw [line width=1.2pt,dash pattern=on 2pt off 2pt,color=qqqqcc] (-1.3558430204248593,6.462058657355588)-- (-1.3558430204248593,0.6060900707733814);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq] (2.1782313436396255,2.033948797907137)-- (-2.855968586582208,0.);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq, opacity =.2] (-2.855968586582208,0.)-- (3.,0.);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,color=yqyqyq] (3.,0.)-- (2.1782313436396255,2.033948797907137);
+   \begin{scriptsize}
+   \draw [fill=black] (3.,0.) circle (1.0pt);
+   \draw[color=black] (3.292890062289234,-0.2662871096678862) node {$C$};
+   \draw [fill=black] (-2.855968586582208,0.) circle (1.0pt);
+   \draw[color=black] (-3.2714320088032514,-0.07240417929806636) node {$B$};
+   \draw [fill=black] (2.4793908969815135,7.752156939198234) circle (1.5pt);
+   \draw [fill=black] (2.1782313436396255,2.033948797907137) circle (1.0pt);
+   \draw[color=black] (2.240382725995924,2.558864161435203) node {$A$};
+   \draw [fill=qqqqcc] (-1.355843020424859,3.534074364064485) circle (1.0pt);
+   \end{scriptsize}
+
+Na versão digital, você pode mover a bolinha sobre o segmento de reta que aparece em cima, para modificar a figura mantendo o triângulo ABC sempre retângulo em `A`.
+
+Na figura anterior o quadrado construído sobre o lado `AB` foi dividido em quatro partes congruentes por um segmento paralelo à BC e outro perpendicular à `BC`, ambos passanto pelo centro desse quadrado.
+
+Imprima uma cópia dessa figura.
+
+Recorte os quadrados azuis e corte nas linhas tracejadas separando as quatro partes do quadrado maior. Você tem, então 5 peças azuis de papel.
+
+* Tente cobrir o quadrado construído sobre a hipotenusa utilizando as 5 peças que você possui.
+
+Se você conseguiu, elabore uma frase que descreva a propriedade do triângulo retângulo que você observou
+
+
+.. admonition:: Resposta 
+
+   Uma resposta possível é:
+   
+   "Em um triângulo retângulo, a área do quadrado construído sobre a hipotenusa é igual à soma das áreas dos triângulos construídos sobre os catetos".
+
+
+A propriedade que você observou parece verdadeira nesse triângulo retângulo que o livro mostrou. Entretanto, se o triângulo for diferente, será que a mesma propriedade ocorrerá? Essa é uma boa pergunta você poderia investigar.
+
+Na versão digital do livro, é possível modificar a figura movendo a bolinha sobre o segmento que aparece no alto da figura. Se você tiver acesso à versão digital, modifique a figura, imprima novamente e faça de novo a experiência de tentar cobrir o quadrado maior com as 5 peças obtidas dos quadrados menores. Se você não tem acesso à versão digital, utilize seus intrumentos de desenho, régua, esquadros e compasso, para criar uma figura do mesmo tipo com as medidas que você quiser. Com sua figura pronta, faça de novo a experiência e observe o resultado.
+
+A propriedade que você observou parece ser verdadeira em todos os triângulos retângulos. A frase que você elaborou descrevendo uma propriedade dos triângulos retângulos que foi observada é chamada de uma conjectura. Essa palavra significa uma afirmação que parece ser verdade em todos os casos, mas que ainda não temos certeza.
+
+Para adquirir essa certeza, precisamos de uma demonstração. E é isso que veremos a seguir.
+
+
+.. admonition:: Para o professor
+
+   A decomposição que descrevemos é devida ao inglês Henry Perigal (1801, 1898).
+   
+   Perigal era um livreiro em Londres e um matemático amador reconhecido, pois foi membro da “London Mathematical Society” desde 1868 até sua morte. Em 1891 Perigal publicou o livro “Geometric Dissections and Transpositions” contendo a demonstração do teorema de Pitágoras utilizando a decomposição que mostramos na figura anterior. 
+   
+   Para ver uma exclente animação da conjectura do teorema de Pitágoras com uma animação, recomende seus alunos a ver o vídeo: https://www.youtube.com/watch?v=LtkAIQcACqY
+
+      
 ********
 Organizando as ideias
 ********
  
-Na atividade anterior, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram **estimados** por uma construção geométrica. Vamos agora descobrir relações que permitem calcular com grande exatidão essas medidas.
+Na :ref:`ativ-estimando-comp-ang`, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram estimados por uma construção geométrica e na :ref:`ativ-descobrindo-pitagoras` você teve a oportunidade de elaborar uma conjectura relacionada ao triângulo retângulo. Vamos agora utilizar a semelhança de triângulos para descobrir relações entre os elementos de um triângulo retângulo e demonstrar o teorema de Pitágoras que é, talvez, o resultado mais famoso da Matemática. No final, a conjectura que você elaborou na :ref:`ativ-descobrindo-pitagoras` vai se transformar em certeza e, com isso, você poderá calcular com exatidão o comprimento do túnel da :ref:`ativ-estimando-comp-ang`.
 
 Iniciamos observando um triângulo retângulo.
 

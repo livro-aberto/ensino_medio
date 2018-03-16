@@ -1,30 +1,26 @@
-**********
-definicoes
-**********
+  .. |primario| replace:: verde
+  .. |primaria| replace:: verde
+  .. |primarios| replace:: verdes
+  .. |primarias| replace:: verdes
 
-  .. |primario|: verde
-  .. |primaria|: verde
-  .. |primarios|: verdes
-  .. |primarias|: verdes
+  .. |secundario| replace:: cinza
+  .. |secundaria| replace:: cinza
+  .. |secundarios| replace:: cinzas
+  .. |secundarias| replace:: cinzas
 
-  .. |secundario|: cinza
-  .. |secundaria|: cinza
-  .. |secundarios|: cinzas
-  .. |secundarias|: cinzas
+  .. |terciario| replace:: azul claro
+  .. |terciaria| replace:: azul clara
+  .. |terciarios| replace:: azuis claros
+  .. |terciarias| replace:: azuis claras
 
-  .. |terciario|: azul claro
-  .. |terciaria|: azul clara
-  .. |terciarios|: azuis claros
-  .. |terciarias|: azuis claras
+  .. |atento| replace:: azul escuro
+  .. |atenta| replace:: azul escura
+  .. |atentos| replace:: azuis escuros
+  .. |atentas| replace:: azuis escuras
 
-  .. |atento|: vermelho
-  .. |atenta|: vermelha
-  .. |atentos|: vermelhos
-  .. |atentas|: vermelhas
 
-  .. |avisado|: azul escuro
-  .. |avisada|: azul escura
-  .. |avisados|: azuis escuros
-  .. |avisadas|: azuis escuras
-    
-As frutas estavam |secundarias|, mas os legumes pareciam |avisados|. Muito estranho tudo isso!
+  .. |destacado| replace:: vermelho
+  .. |destacada| replace:: vermelha
+  .. |destacados| replace:: vermelhos
+  .. |destacadas| replace:: vermelhas
+  

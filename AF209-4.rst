@@ -1,3 +1,197 @@
-*******
-AF209-4
-*******
+***************
+Para saber mais
+***************
+
+**Função Quadrática e a soma dos primeiros termos de uma Progressão Aritmética**
+
+No livro *Antologia Matemática* de Malba Tahan, conta um episódio cuja personagem principal seria o "príncipe da matemática" Carl Frederick **Gauss** (`\star 1777- \dagger 1855`). Não se sabe se o episódio é real, mas conta-se que aos sete anos de idade, chegando para mais um dia de aula, *Gauss* e seus colegas teriam encontrado o professor com pouca paciência. Assim, o professor, com o intuito de entreter seus alunos por longo tempo e não precisar dar-lhes qualquer atenção, pediu para que todos somassem os números naturais desde `1` até `100`. Contudo, o jovem *Gauss* em pouco tempo levou o resultado do exercício para o professor e este, incrédulo do feito, teria mandado *Gauss* para a direção. Mais tarde, tudo se esclareceu e o professor reconheceu o acerto no método e no resultado dado pelo jovem e desculpou-se.
+
+Como o jovem *Gauss* teria obtido este resultado por um método aparentemente desconhido do enfurecido professor e com tanta rapidez? 
+
+Com a finalidade de responder a essa pergunta sugerimos uma atividade. Ela necessitará de uma fita métrica. 
+
+.. figure:: _resources/P_20180310_174436_1.jpg
+   :width: 200 pt
+   :align: center 
+
+Como as fitas métricas comercializadas tem um tamanho padrão, em nossa atividade vamos entender comoo jovem *Gauss* fez a soma começando por somar os números da fita métrica, ou seja, vamos começar resolvendo a expressão 
+
+.. math:: 
+
+   1+2+3+4+5+ \cdots +147+148+149+150
+
+#. De posse da fita métrica, perceba que ela tem os dois lados numerados. Cada um desses lados tem todos os números que queremos somar?
+
+#. Qual o número que corresponde ao verso (outro lado da fita) do número `1`? E quais são os números dos versos correspondentes de `18` e `75`?
+
+#. Agora, vamos fazer algumas somas de um número com o seu correspondente no verso da fita. Faça:
+
+   `1 + \,\;` seu correspondente;
+   
+   `15 + \;` seu correspondente;
+   
+   `31 + \;` seu correspondente;
+   
+   `49 + \;` seu correspondente;
+   
+   `75 + \;` seu correspondente.
+
+
+#. Qual o resultado obtido sempre que se soma um número com o seu correspondente no verso desta fita?
+
+#. Com base na resposta do item anterior, qual o resultado da soma de todos os números dos dois lados dessa fita?
+
+#. A soma de todos os números em ambos os lados da fita é o resultado que queríamos obter?
+
+#. Que operação devemos fazer com a soma de todos os números da fita para que ele seja o resultado da expressão 
+
+   .. math:: 
+
+      1+2+3+4+5+ \cdots +147+148+149+150 \text{ ?}
+   
+   Qual é o valor dessa expressão?
+
+#. Imagine agora uma outra fita que tenha em cada lado, todos os números de 1 até 100.
+
+   .. figure:: _resources/Fita_metrica_1a100.png
+      :width: 250pt
+      :align: center
+
+   Utilizando o mesmo raciocício, tente responder a mesma pergunta feita para a turma do jovem *Gauss*, ou seja, quanto dá `1+2+3+ \cdots +97+98+99+100`?
+
+#. E se a fita fosse até o número natural `n`?
+
+   .. figure:: _resources/Fita_metrica_1an.png
+      :width: 250pt
+      :align: center
+
+Com o que foi aprendido, obtenha uma expressão para o resultado da soma dos `n` primeiros números naturais. Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n`.
+
+**As respostas estão no fim da sessão**
+
+No capítulo de funções, um dos exercícios sugere que você determine a relação entre uma sequência de figuras e a quantidade de pontos usados para compor cada figura.
+
+.. figure:: https://www.umlivroaberto.org/BookCloud/Volume_1/master/view/_images/figurados_1.png
+  :width: 300 pt
+  :align: center
+
+As quantidades de pontos em cada figuras são comumente chamado de números poligonais. Assim, `(1,4,9,16, \cdots)` são números quadrados; `(1,5,12,22, \cdots)` são números pentagonais; etc.
+
+Nesta atividade, vamos pensar sobre os números triângulares. A imagem a seguir exibe os cinco primeiros:
+
+.. figure:: _resources/Numeros_Triangulares_1.png
+  :width: 300 pt
+  :align: center
+
+#. Escreva a sequência de números triângulares até o sexto termo.
+
+#. Os números triangulares formam uma progressão aritmética?
+
+#. A figura a seguir, destaca as linhas de cada triângulo, uma de cada cor. Escreva o total de bolinhas de **cada um desses triângulos** como soma das quantidades das suas linhas. Exemplo: `T_4 = 1 + 2 + 3 + 4`  
+
+  .. figure:: _resources/Linhas_Num_Triang.png
+     :width: 300 pt
+     :align: center
+
+#. Após o item anterior, que relação você percebe entre os números triangulares e o episódio do menino *Gauss*?
+
+#. Com base nessa relação, você seria capaz de determinar o centésimo número triangular? Determine-o.
+
+#. Chamando de `T_{n}` o número triangular da posição `n`, escreva a relação entre `n` e `T_{n}`.
+
+**As respostas estão no fim da sessão**
+
+De modo mais geral, a soma dos primeiros termos de qualquer progressão aritmética é expressa por uma função quadrática.
+
+Isso acontece porque o método que usamos para somar números naturais, que formam uma progressão aritmética, continua válido para uma progressão aritmética diferente dessa. Observe.
+
+.. math::
+
+  a_{1}+a_{2}+a_{3}+ \cdots +a_{n-1}+a_{n}
+
+  a_{n}+a_{n-1}+ \cdots +a_{3}+a_{2}+a_{1}
+
+Somando um elemento de cada linha e na ordem escrita teremos:
+
+.. math::
+
+  (a_{1}+a_{n})+(a_{2}+a_{n-1})+ \cdot + (a_{n-1}+a_{2})+(a_{n}+a_{1})
+
+Fazendo uma analogia com a atividade, é fato (verificável de maneira simples) que todas as parcelas dessa soma são iguais, além disso, a quantidade de parcelas é dada pela mesma da quantidade de elementos da progressão. E também, temos que cada par dentro dos parênteses exibe um elemento que, em relação às sequências de onde foram extraídos, varia em `+r`, enquanto o outro varia `-r`, onde `r` é a razão da progressão aritmética. Assim, dispomos de `n` parcelas iguais a, por exemplo, `a_{1}+a_{n}`. Já podemos concluir o teorema a seguir:
+
+.. admonition:: Teorema 4 
+
+  Dada a progressão aritmética `(a_{1},a_{2},a_{3}, \cdots ,a_{n-1},a_{n}, \cdots)`, a soma dos seus `n` primeiros termos será indicada por `S_{n}` e
+
+  .. math::
+
+     S_{n} = \frac{n \cdot (a_{1}+a_{n})}{2}
+
+Contudo, sabe-se que `a_{n}=a_{1}+(n-1)\cdot r` e a relação da soma dos primeiros termos da progressão aritmética pode ainda ser apresentada conforme segue:
+
+`S_{n}=\frac{[a_1+a_{1}+(n-1)\cdot r] \cdot n}{2}= \frac{[a_1 \cdot n +a_{1}  \cdot n + (n \cdot r-r)\cdot n]}{2}= \frac{2a_{1}n+n^2r-rn}{2}`
+
+`S_{n}=\frac{r}{2} \cdot n^2 + \frac{(2a_{1}-r)}{2} \cdot n`, que é uma função quadrática dada em sua forma polinomial (com `c=0`) e domínio discreto `\mathbb{N}^*`.
+
+.. admonition:: Observação
+
+  A expressão que fornece a soma dos `n` primeiros termos de uma progressão aritmética, em função de `n`, é uma **função quadrática**.
+
+
+.. admonition:: Resposta 
+
+   **Atividade Menino `Gauss`** 
+
+   #. Sim.
+   
+   #. `150`; `133` e `76`.
+   
+   #. `1+150=151`;
+   
+      `15+136=151`;
+      
+      `31+120=151`;
+      
+      `49+102=151`;
+      
+      `75+76=151`.
+   
+   #. `151`.
+   
+   #. `150 \cdot 151=22650`.
+   
+   #. Não.
+   
+   #. Devemos dividir a soma obtida por `2`; `22650 \div 2=11325`.
+   
+   #. As somas de cada número com seu correspondente no verso dá, agora, `101`. Com isso, a soma de todos os números de ambos os lados dessa fita será `100 \cdot 101` e `(100 \cdot 101) \div 2 = 10100 \div 2 = 5050`.
+   
+   #. As somas de cada número com seu correspondente no verso dá, agora, `n+1`. Com isso, a soma de todos os números de ambos os lados dessa fita será `n \cdot (n+1)` e
+                
+      `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n=`
+      
+      `\frac{n \cdot (n+1)}{2} = \frac{n^2 + n}{2}=`
+      
+      `= \frac{n^2}{2} + \frac{n}{2}`
+
+   **Atividade Números triangulares**       
+
+   #. `(1,3,6,10,15,21)`
+
+   #. Não; `3-1 \neq 6-3 \neq 10-6 \neq 15-10 \neq 21-15`.
+
+   #. `1`
+   
+      `1+2`
+      
+      `1+2+3`
+      
+      `1+2+3+4`
+      
+      `1+2+3+4+5`
+      
+   #. Um número triangular é soma dos primeiros números naturais, tal como o episódio do menino *Guass*.
+
+   #. Sim; `T_{100}=1+2+3+ \cdots +98+99+100=5050`.
+
+   #. `T_{n}= \frac{n \cdot (n+1)}{2}= \frac{n^2}{2} + \frac{n}{2}`.

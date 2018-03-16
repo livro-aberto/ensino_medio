@@ -1,3 +1,256 @@
-*******
-AF209-2
-*******
+.. _sec-funcao-quadratica-propriedades-de-x-a-2:
+
+*****************************************************
+Explorando: a função real `f` definida por `f(x)=x^2`
+*****************************************************
+
+.. _ativ-funcao-quadratica-investigando-x-a-2:
+
+Atividade: em busca de padrões em `f(x)=x^2`
+--------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos Específicos**
+  
+   #. Inferir, através da análise das imagens da função `f:\mathbb{R}\to\mathbb{R}` definida por `f(x)=x^2`, experimental e formalmente, as propriedades:
+      
+      `i` **)** de simetria axial em relação ao eixo vertical, ou seja, que `f(x)=f(-x)`, para todo `x` real;\
+      
+      `ii` **)** de que `f` possuí mínimo absoluto, ou seja, que `f(x)\geq 0`, para todo `x` real.\
+      
+   #. Inferir que os pontos do gráfico de `f` não podem ser conectados por segmentos de reta.
+   #. Inferir que as variações das imagens geradas por elementos do domínio em progressão aritmética, estão também em progressão aritmética.
+   #. Observar que o comportamento crescente  ou descrescente de `f` não é proporcional a `x`.
+   #. Relacionar as constatações feitas sobre `f` com possíveis gráficos, concluindo o que não pode ocorrer nesta representação.
+   #. Representar o gráfico de `f`.
+
+
+   **Observações e recomendações**
+   
+   Esta atividade, mesmo não inserida em uma contextualização, representa uma excelente oportunidade de investigação através do experimento. Aqui o estudante terá a oportunidade de perceber, em um ambiente de pouca complexidade de conhecimento matemático, o que acontece ou não no comportamento da função quadrática. Sendo assim, recomendamos que: 
+   
+   #. O professor faça a atividade antes de aplicá-la com os alunos, com a finalidade de conhecer o tempo de aplicação do mesmo.
+   
+   #. Ao final de cada item que o professor faça uma espécie de resumo para a turma das respostas dadas pelos alunos com ênfase na característica que aquele item procura revelar.
+   
+   #. Para o item 'c', será necessário o conhecimento da distância de um ponto a uma reta, que é o segmento gerado a partir do trajeto da projeção ortogonal do ponto na reta. Sem esse conhecimento a ideia de simetria não pode ser efetivada. Assim, investigue se os alunos tem essa noção antes de aplicar a atividade.
+   
+   #. A escolha, em alguns itens, por valores fracionários ou irracionais, prezam pelo fortalecimento da continuidade da função mesmo que a marcação desses pontos não seja feita.
+   
+   #. Recomendamos que o estudante seja estimulado a argumentar com os outros de sua turma sobre as razões que descartam cada gráfico do item 'i' como candidato ao gráfico de `f`.
+   
+   #. Consideramos que os casos mais difíceis de serem descartados no item 'i' sejam os Gráficos `2`, `5` e `6`. Portanto, leia as respostas destes em particular e perceba que eles foram gerados pelas seguintes equações. Gráfico `2`: `f(x) = 8 - \frac{8}{x^2+1}`; Gráfico `5`: `f(x)=4 - 4 \cdot \cos (\ \frac{3}{4} \cdot x )` ; Gráfico `6`: `\; f(x) = \left\{ \begin{array}{rlll} -3x-2, & \text{se} & x < -1 \\ -x, & \text{se} & -1 \leq x < 0 \\ x, & \text{se} & 0 \leq x < 1 \\ 3x-2, & \text{se} & x \geq 1 \end{array} \right.`
+   
+No capítulo anterior foi estudado o modelo matemático para funções afins. Lá, constatou-se que as funções afins são do tipo `f(x)=ax+b`. Contudo, no :ref:`sec-funcao-quadratica-movimento-com-velocidade-variavel-queda-vertical` aparece o termo `\alpha \cdot x^2`, com `\alpha \in \mathbb{R}` e `\alpha \neq 0`. Isso revela uma situação nova em relação à função afim. A atividade que segue tem a finalidade de destacar algumas das características de funções como estas que apareceram na seção anterior. Para isso, passaremos a investigar a função real definida por `f(x)=x^2`.
+
+Dada a função `f: \mathbb{R} \to \mathbb{R}` definida por `f(x)=x^2`, faça o que se pede:
+
+#. Complete a tabela a seguir com os valores que faltam.
+
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+   |   `x`  |  `-5`  |  `-3`  | `____` |  `-1`  | `____` |   `1`  |   `2`  |   `3`  | `____` |`10 \over 3`| `\sqrt{123}` |
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+   | `f(x)` | `____` | `____` |   `4`  | `____` |   `0`  | `____` | `____` | `____` |  `25`  |  `______`  |   `______`   |
+   +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+------------+--------------+
+
+#. Em uma folha de papel ou similar, faça a figura do plano cartesiano conforme a indicada a seguir.
+
+   .. figure:: _resources/Ativ_2b.png
+      :width: 200 pt
+      :align: center
+
+   Represente os pontos da tabela do item 'a' nesse plano cartesiano, desprezando as coordenadas cujo valor de `x` não aparece destacado no que você fez no papel.
+
+#. Destaque os pares de pontos que estão a mesma distância do eixo `y`.
+
+#. Caso seja possível, forneça o ponto da função `f` que está a mesma distância do eixo `y` que cada um dos pontos de `f` já listados a seguir. [Mesma distância = equidistante]
+
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+   |          `(x,y) \in f`         | `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})` | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)` | `(\sqrt{\frac{1}{2}},\frac{1}{2})` | `(- \pi , \pi^{2})` |
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+   | Ponto equidistante do eixo `y` | `______` | `______`  |           `______`           |           `______`             |    `______`    |                `______`            |       `______`      |
+   +--------------------------------+----------+-----------+------------------------------+--------------------------------+----------------+------------------------------------+---------------------+
+
+#. De todos os pontos que podemos obter com a função `f`, existe um que não tem correspondente equidistante do eixo `y`. Que ponto é esse? Tente descrever as características que esse ponto tem em relação aos outros da função `f` ou em relação aos eixos coordenados. 
+
+#. Existe algum ponto da imagem de `f` que seja menor do que zero?
+
+#. Considerando os pontos do domínio de `f` entre `-4` e `0`, a melhor classificação para esta função é crescente ou decrescente? E entre `0` e `4`?
+
+#. Considerando os elementos `\{ 0; 1; 2; 3; 4; 5 \}` do domínio de `f`, pode-se afirmar que a razão em que as imagens variam é a mesma para cada unidade de variação do domínio?
+
+#. Agora serão apresentados alguns gráficos e, para cada um deles, você deve afirmar com alguma justificativa, se é ou não o gráfico de `f`. Para isso, use o que você experimentou nos itens da atividade até aqui.
+
+   .. figure:: _resources/Graficos_Ativ2_1.png
+      :width: 350 pt
+      :align: center
+
+#. No mesmo papel em que você marcou alguns dos pontos da função `f`, lá no item 'b', construa o gráfico que você acha que representa a função `f` e compare com o de seus colegas. Se houver discondâncias, tentem argumentar e aprimorar os gráficos uns dos outros com base nas argumentações.
+
+.. admonition:: Resposta 
+
+   #. 
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      |   `x`  | `-5` | `-3` | `-2` | `-1` |  `0`  |  `1`  |  `2`  |  `3`  |  `5`  |  `10 \over 3`  | `\sqrt{123}` |
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      | `f(x)` | `25` |  `9` | `4`  |  `1` |  `0`  |  `1`  |  `4`  |  `9`  |  `25` |  `100 \over 9` |     `123`    |
+      +--------+------+------+------+------+-------+-------+-------+-------+-------+----------------+--------------+
+      
+      As posições referentes ao `-2` e ao `5` deste gabarito poderiam ter sido ocupadas, respectivamente, pelo `2` e pelo `-5`.
+
+   #. 
+         .. figure:: _resources/Ativ_2b_Gab.png
+            :width: 200 pt
+            :align: center
+      
+   #. `(-3,9)` e `(3,9)`;
+      
+      `(-2,4)` e `(2,4)`;
+      
+      `(-1,1)` e `(1,1)`.
+   
+   #. 
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
+      |          `(x,y) \in f`         |  `(7,49)` | `(-5,25)` | `(\frac{2}{5},\frac{4}{25})`  | `(-\frac{6}{7},\frac{36}{49})` | `(\sqrt{3},3)`  | `(\sqrt{\frac{1}{2}},\frac{1}{2})`  | `(- \pi , \pi^{2})` |
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
+      | Ponto equidistante do eixo `y` | `(-7,49)` | `(5,25)`  | `(-\frac{2}{5},\frac{4}{25})` |  `(\frac{6}{7},\frac{36}{49})` | `(-\sqrt{3},3)` | `(-\sqrt{\frac{1}{2}},\frac{1}{2})` |  `(\pi , \pi^{2})`  |
+      +--------------------------------+-----------+-----------+-------------------------------+--------------------------------+-----------------+-------------------------------------+---------------------+
+  
+      
+   #. `(0,0)`; Esse ponto pertence ao eixo `y`, logo dista zero deste eixo. Outra argumentação boa é que o zero é o único número simétrico de si mesmo.
+
+   #. Não.
+   
+   #. Decrescente; Crescente.
+   
+   #. Não. `\frac{f(5)-f(4)}{1} \neq \frac{f(4) - f(3)}{1} \neq \frac{f(3)-f(2)}{1} \neq \frac{f(2)-f(1)}{1} \neq \frac{f(1)-f(0)}{1}`.
+   
+   #. 
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `1` | As imagens dos números no intervalo `[-2,2]-{0}` não correspondem ao que foi calculado no item a.                                                                                                                     |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `2` | As imagens de `{-1, 1}` estão incorretas. Perceba ainda que, por exemplo, para `x>2` as variações nas imagens não aparentam ter o crescimento calculado no item h.                                                    |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `3` | Conforme visto no capítulo de função afim, esse gráfico só pode corresponder a uma função real do tipo `f(x)=ax+b`. Outra razão é o gráfico não ser simétrico em relação ao eixo y.                                   |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `4` | A parte crescente não satisfazer o teorema fundamental da proporcionalidade.                                                                                                                                          |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `5` | As imagens de `-5` e `5` parecem já ter aparecido para algum outro elemento do domínio no intervalo `[-5,5]` e isso não ocorre.                                                                                       |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `6` | A sessão 9 :ref:`Para saber mais` do capítulo de função afim evidencia que um gráfico deste tipo, composto por vários segmentos de reta, apresenta, para intervalos diferentes do eixo `x`, funções afins diferentes. |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `7` | Existe nesse gráfico imagens que são negativas e isso não é possível, pois `f(x) \geq 0`.                                                                                                                             |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Gráfico `8` | Todas as imagens se concentram de zero a oito, mas a imagem de `f` tem, por exemplo, os valores `9` e `16`.                                                                                                           |
+      +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      
+   #. Resposta livre, mas as representações devem devem ficar o mais próxima possível desta:
+   
+      .. figure:: _resources/Ativ_2_G2.png
+         :width: 200pt
+         :align: center
+
+.. _sec-funcao-quadratica-org-ideias-em-x-a-2:
+
+*******************************************************************
+Organizando as ideias: características da função real  `f(x)=x^{2}`
+*******************************************************************
+
+Na atividade isolamos o termo `x^{2}` que apareceu no início deste capítulo e motivamos algumas experimentações que devem ter provocado algumas conjecturas e também conduziu a algumas certezas. Será que sua atenção recaiu nesses fatos que listamos a seguir?
+
+**Simetria axial de** `f`
+
+Os itens de 'b' a 'd' esclarecem que, na função `f`, valores simétricos do domínio geram imagens iguais, ou seja, `f(-x) = f(x)`, para qualquer `x \in \mathbb{R}`. Basta perceber que `f(-x) = (-x)^{2} = (-x)(-x) = x^{2} = f(x)`. Isso faz com que o eixo `y` seja mediatriz do segmento que une esses pares de pontos do tipo `(x,x^{2})` e `(-x,x^{2})` que destacamos, ou para qualquer outro elemento do domínio de `f`. A única exceção é `x=0` pois 0 é simétrico de si mesmo. Assim, podemos afirmar que, para o gráfico da função `f`, o eixo `y` é eixo de simetria.
+
+.. figure:: _resources/Simetria_Parabola.png
+   :width: 200 pt
+   :align: center
+
+.. admonition:: Teorema 1
+
+   A função real `f` definida por `f(x)=x^2` é simétrica em relação ao eixo `y`.
+
+**A imagem de** `f`
+
+O item 'e' nos leva a refletir sobre um fato muito importante no estudo que estamos desenvolvendo aqui. Não importa qual o valor real do domínio que seja utilizado, a menor imagem é zero, pois sendo x um número real, só existem três possibilidades para x:
+
+.. math::
+
+   & x<0 \Rightarrow x \cdot x = x^{2}>0 \Rightarrow f(x)>0;\\
+   & x=0 \Rightarrow x \cdot x = 0 \cdot 0 =0 \Rightarrow f(x)=0;\\
+   & x>0 \Rightarrow x \cdot x = x^{2}>0 \Rightarrow f(x)>0.\\
+   
+.. admonition:: Teorema 2
+
+   A função real `f` definida por `f(x)=x^2` é tal que para qualquer `x \in \mathbb{R}`, `f(x) = x^{2} \ge 0`, ou seja, o menor valor de `f` é zero e `Im(f) = [0, +\infty[`.
+
+.. figure:: _resources/VMin.png
+   :width: 300 pt
+   :align: center
+
+
+
+**A não proporcionalidade no crescimento de** `f`
+
+Como o gráfico da função `f` é simétrico em relação ao eixo `y`, a análise gráfica que se faz em uma das metades da figura fica espelhada para compor a outra metade. Assim, vamos analisar o que ocorre na parte crescente de `f` quando aumentamos em uma unidade um elemento `x` do seu domínio:
+Se `x \in ]0,+\infty[`, temos que `f(x) = x^{2}` e `f(x+1)=(x+1)^{2}=x^{2}+2x+1`. Assim, `f(x+1)-f(x)=2x+1`, ou seja, as variações das imagens dependem do `x` escolhido. Mais especificamente, neste caso elas formam uma progressão aritmética de razão `2` e, com isso, as variações analisadas são crescentes. Graficamente,
+
+.. figure:: _resources/Ativ2_NProp.png
+   :width: 200 pt
+   :align: center
+   
+
+.. admonition:: Observação 
+
+   A função real `f` definida por `f(x)=x^2` não é função afim.
+
+`f` **e as progressões aritméticas**
+
+Muito provavelmente, as características anteriores de `f`, ou mesmo os itens da atividade, tenham transmitido alguma ideia da existência de uma progressão aritmética nessa função real. A tabela a seguir exibe elementos do domínio em progressão aritmética, suas imagens e as diferenças consecutivas dessas imagens:
+
++-----------+----------+---------------+
+| `x \in f` |  `f(x)`  | `f(x+1)-f(x)` |
++-----------+----------+---------------+
+|    `0`    |    `0`   | `1-0=1`       |
++-----------+----------+---------------+
+|    `1`    |    `1`   | `4-1=3`       |
++-----------+----------+---------------+
+|    `2`    |    `4`   | `9-4=5`       |
++-----------+----------+---------------+
+|    `3`    |    `9`   | `16-9=7`      |
++-----------+----------+---------------+
+|    `4`    |   `16`   | `25-16=9`     |
++-----------+----------+---------------+
+|    `5`    |   `25`   | `36-25=11`    |
++-----------+----------+---------------+
+| `\vdots`  | `\vdots` |   `\vdots`    |
++-----------+----------+---------------+
+
+Escolhendo `x` do domínio de `f` e um `r \in \mathbb{R}` constante, podemos analisar a situação da tabela acima de uma forma mais geral:
+
++-----------+---------------------------+-----------------------------------------------------+
+| `x \in f` |           `f(x)`          |                    `f(x+r)-f(x)`                    |
++-----------+---------------------------+-----------------------------------------------------+
+|    `x`    |           `x^2`           | `(x+r)^2-x^2=2xr+ 1 \cdot r^2`                      |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+r`   |   `(x+r)^2=x^2+2xr+r^2`   | `(x+2r)^2-(x+r)^2=2xr+3r^2=(2xr+r^2)+2r^2`          |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+2r`  |  `(x+2r)^2=x^2+4xr+4r^2`  | `(x+3r)^2-(x+2r)^2=2xr+5r^2=(2xr+r^2)+2 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+3r`  |  `(x+3r)^2=x^2+6xr+9r^2`  | `(x+4r)^2-(x+3r)^2=2xr+7r^2=(2xr+r^2)+3 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+4r`  |  `(x+4r)^2=x^2+8xr+16r^2` | `(x+5r)^2-(x+4r)^2=2xr+9r^2=(2xr+r^2)+4 \cdot 2r^2` |
++-----------+---------------------------+-----------------------------------------------------+
+|   `x+5r`  | `(x+5r)^2=x^2+10xr+25r^2` |                     `\vdots`                        |
++-----------+---------------------------+-----------------------------------------------------+
+| `\vdots`  |            `\vdots`       |                     `\vdots`                        |
++-----------+---------------------------+-----------------------------------------------------+
+
+E esse padrão continua, nos permitindo perceber que
+
+.. admonition:: Observação
+
+   Na função real `f` definida por `f(x)=x^2` as diferenças entre imagens consecutivas, geradas por uma parte do domínio cujos elementos estejam em progressão aritmética, formam também uma progressão aritmética com primeiro termo igual a `2xr+r^2` e razão `2r^2`.
+

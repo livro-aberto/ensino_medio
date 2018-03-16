@@ -1,0 +1,290 @@
+.. _sec-funcao-quadratica-explorando-max-min-can:
+
+*************************************************************
+Explorando: otimização em domínio discreto e escalas gráficas 
+*************************************************************
+
+
+.. _ativ-funcao-quadratica-aumento-passagem: 
+
+Atividade: aumento na passagem
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   Prezado colega esta atividade tem como objetivo aplicar o conceito de otimização em função quadrática num contexto econômico, chamando atenção para o aluno de:
+
+   #. As vantagens e desvantagens de se trabalhar num plano cartesiano cujos eixos estão em escalas distintas.
+   #. Guiá-lo para uma modelagem algébrica da situação.
+   #. Identificar se a relação encontrada é uma função quadrática e se o gráfico apresentado é de uma parábola.
+   #. Fazer uma discussão a respeito do domínio e da imagem da função levando em consideração a modelagem da situação.
+   #. Reforçar a utilização da passagem da forma polinomial para a forma canônica, apontando assim de maneira direta o faturamento máximo e o aumento que irá gerar o faturamento máximo.
+   #. Apresentar em que pontos a parábola intersecta os eixos coordenados, levando-os a fazer inferências sobre a utilização das coordenadas desses pontos no contexto do problema.
+   
+   
+   **Observação:** Sugerimos que o professor além de fazer a atividade antes de aplicá-la, leia com atenção as respostas das atividades, nela o colega encontrará sugestões que o auxiliarão na condução dessa atividade na sua sala de aula.
+   
+
+
+Uma empresa de transporte rodoviário, faz o trajeto entre duas cidades brasileiras diariamente, e transporta mensalmente, uma média de `1200` passageiros. O custo individual da passagem cobrado pela empresa, é atualmente de `R$ 40,00`, porém seus diretores estudam um aumento desse valor. Para isso contratam uma outra empresa para realizar uma pesquisa de mercado, a pesquisa realizada por essa empresa, estima que a cada `R$ 1,00` de aumento no preço da passagem, `10` passageiros deixarão de viajar pela transportadora. De posse desta informação, os diretores desejam saber qual é o preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora. Para isso vamos responder os itens a seguir:
+
+#. Se aumentarmos em `R$2,00` a passagem qual será seu novo preço? Qual a nova quantidade de passageiros? Qual será o novo faturamento em reais? E se o aumento fosse de `R$ 12,00`?
+
+
+#. Preencha a tabela a seguir, seguindo o padrão que modela a situação.
+    +------------------+------------------+--------------------------------+----------------------+
+    | Aumento em reais | Novo preço       | Nova quantidade de passageiros | Faturamento em reais |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 0                | 40 + 1 . 0 = 40  | 1 200 - 10 . 0 = 1 200         | 40 . 1200 = 48 000   |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 10               | 40 + 1 . 10 = 50 | 1 200 - 10 . 10 = 1 100        | 50 . 1 100 = 55 000  |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 20               | 40 + 1 . 20 = 60 | 1 200 - 10 . 20 = 1 000        | 60 . 1 000 = 60 000  |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 30               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 40               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 50               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 60               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 70               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 80               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 90               |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 100              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 110              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 120              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+    | 130              |                  |                                |                      |
+    +------------------+------------------+--------------------------------+----------------------+
+#. Escolha um dos planos cartesianos a seguir, para representar os pontos da tabela acima e os represente no plano escolhido.
+
+   .. figure:: _resources/graficos_c.jpg
+      :width: 600pt
+      :align: center
+
+      Melhor Plano
+
+#. Qual "gráfico" você escolheu? Justifique sua escolha.
+
+#. A escala no "gráfico" escolhido é a mesma nos dois eixos? Quais os "gráficos" do item “b” possuem a mesma escala nos dois eixos?
+
+#. Quais as vantagens e desvantagens em ambos os casos (eixos em escalas distintas e eixos em mesma escala)? 
+
+#. Explique o motivo do valor `130` estar na tabela e não estar no gráfico. Justifique levando em consideração o valor de sua imagem dentro do conceito da atividade.
+
+#. Podemos afirmar que os pontos obtidos, são pontos de uma parábola? Justifique sua resposta.
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o novo preço da passagem (já com o aumento de `x` reais).
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente a nova quantidade mensal de passageiros (já com o aumento de `x` reais).
+
+#. Ao representarmos por `x` o aumento, em reais pretendido , exiba uma expressão algébrica que represente o faturamento da empresa em função de `x`, dado por `F(x)`.
+
+#. Se representarmos expressão obtida no item anterior por uma função `F:A\to B`, onde `A` é seu domínio e `B` é sua imagem, podemos afirmar que `F` é uma função quadrática? Justifique sua resposta
+
+#. Apresente os conjuntos `A` (domínio de `F`) e `B` (imagem `F`) que satisfazem os valores possíveis na situação apresentada.
+
+#. Em que ponto o gráfico corta o eixo das ordenadas? E o que esse valor representa na situação?
+
+#. Em que ponto o gráfico corta o eixo das abscissas? O que esse ponto representa na situação? 
+
+#. E se o domínio fosse o `\mathbb{R}`, qual seria o outro ponto de intersecção com o eixo das abscissas? Por que ele não é considerado na situação?
+
+#. Utilize o processo de completar quadrados  e apresente a função `F` em sua forma canônica.
+
+#. Enfim, qual é o aumento no preço de passagem, em reais, que vai maximizar o faturamento dessa transportadora?
+
+#. Qual é o valor desse faturamento máximo? Este valor aparece tabela e no gráfico?
+
+
+
+.. admonition:: Resposta 
+
+   Respostas:  
+
+   #. Novo preço será de `40+2=42` reais; A nova quantidade de passageiros será de `1200-10 \times 2=1200-20=1180` passageiros; O novo faturamento será de `42 \times 1180=49560` reais. No caso do aumento ser de doze reais teremos na ordem: `R$ 52,00` de novo preço; `1080` passageiros; E `R$56160,00` de faturamento.   
+   
+
+   #. 
+       +------------------+------------+--------------------------------+----------------------+
+      | Aumento em reais | Novo preço | Nova quantidade de passageiros | Faturamento em reais |
+      +------------------+------------+--------------------------------+----------------------+
+      | 0                | 40         | 1 200                          | 48 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 10               | 50         | 1 100                          | 55 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 20               | 60         | 1 000                          | 60 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 30               | 70         | 900                            | 63 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 40               | 80         | 800                            | 64 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 50               | 90         | 700                            | 63 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 60               | 100        | 600                            | 60 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 70               | 110        | 500                            | 55 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 80               | 120        | 400                            | 48 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 90               | 130        | 300                            | 39 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 100              | 140        | 200                            | 28 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 110              | 150        | 100                            | 15 000               |
+      +------------------+------------+--------------------------------+----------------------+
+      | 120              | 160        | 0                              | 0                    |
+      +------------------+------------+--------------------------------+----------------------+
+      | 130              | 170        | -100                           | -17 000              |
+      +------------------+------------+--------------------------------+----------------------+   
+
+   #. 
+
+      .. figure:: _resources/graficos_c_resp.jpg
+         :width: 400pt
+         :align: center
+
+         Gráfico B
+   
+   #. O gráfico B, pois nos outros, os valores do eixo das ordenadas não atendiam.
+
+   #. Não. Gráfico A e gráfico C.
+
+   #. **Escalas distintas**: (*Vantagens*) Podemos visualizar melhor o comportamento do gráfico pois ele passa a ficar visível num espaço menor, além de traça-lo com mais facilidade.
+      
+      **Escalas distintas**: (*Desvantagens*) Não podemos analisá-lo geometricamente de maneira satisfatória, as variações entre os eixos são muito discrepantes, e isso pode levar a interpretações equivocadas.
+      
+      **Escalas iguais**: (*Vantagens*) Podemos analisá-lo tanto numericamente quanto geometricamente, inferindo com mais precisão.
+      
+      **Escalas iguais**: (*Desvantagens*) Precisaríamos de muito espaço e/ou bastante compactação para desenharmos fielmente este gráfico. Note como ficaria:
+      
+      .. figure:: _resources/graficos_f.jpg
+         :width: 400pt
+         :align: center
+
+         Escala real
+      
+   #. A imagem de `130` é negativa, logo se a nova passagem for de `130` reais "haveria" um faturamento negativo, o que não é condizente para os dados apresentados no contexto.
+   
+   #. Sim, por vários motivos: já vimos que o gráfico de toda função quadrática é uma parábola, e que as função quadráticas são as únicas funções em que as diferenças das imagens, geram uma Progressão aritmética:
+   
+      .. figure:: _resources/PA_g.jpg
+         :width: 100pt
+         :align: center
+
+         **Progressão Aritmética**
+
+   #. `40+x`.
+
+   #. `1 200 - 10x`.
+
+   #. `F(x)=(40+x).(1200-10x)` ou `F(x)=-10x^2+800x+48000`.
+
+   #. Sim. Ou pela justificativa dada no item 'f' ou pelo fato da função quadrática ser uma função do polinômio de grau 2, e a função em questão, apresenta `a=-10` ; `b=800` e `c=48000` coeficientes do polinômio do segundo grau. 
+
+   #. `A` é o conjunto dos números naturais de `0` a `120`; `B` é o conjunto dos números naturais contidos no intervalo:`[0,64000]` que são imagens dos elementos do conjunto `A`.
+
+   #. R$ `48000,00` que representa o faturamento atual, inicial ou seja, o faturamento sem aumento no valor da passagem.
+
+   #. No ponto `(120,0)`, representa que se o aumento for de R$ `120,00`, não haverá faturamento, ou seja, a empresa faturaria zero reais. 
+
+   #. O ponto seria `(-40,0)`, ele é desconsiderado pois sua abscissa é negativa, e não cabe na situação utilizar “aumentos negativos”.
+
+   #. `F(x)=-10x^2+800x+48000` `\Leftrightarrow` `F(x)=-10(x^2-80x)+48000` `\Leftrightarrow` `F(x)=-10(x^2-80x+1600-1600)+48000` `\Leftrightarrow` `F(x)=-10(x-40)^2+16000+48000` `\Leftrightarrow` `F(x)=-10(x-40)^2+64000`.
+
+   #. R$ `40,00`.
+
+   #. R$ `6400,00`. Sim, em ambos.
+
+**********
+Exercícios 
+**********
+
+`1`) Trace os gráficos das funções `f:\mathbb{R}\to\mathbb{R}` definidas por:
+
+#. `f(x)=x^2-2x`
+#. `f(x)=-x^2+9`
+#. `f(x)=x^2-2x+1`
+#. `f(x)=-x^2+6x-5`
+#. `f(x)=-3x^2`
+#. `f(x)=x^2+x+1`
+
+
+`2`) Dada a função real `f` dada por `f(x)=-x^2+4x+5` , o gráfico da mesma está representado abaixo:
+
+.. figure:: _resources/fi.jpg
+  :width: 200pt
+  :align: center
+
+  `f(x)=-x^2+4x+5`
+
+As coordenadas corretas dos pontos do gráfico são:
+
+(A)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(5,0)`  ; `V=(3,9)`
+
+(B)  `C=(0,4)`  ;  `A=(0,-1)`  ; `B=(0,5)`  ; `V=(2,9)`
+
+(C)  `C=(0,5)`  ;  `A=(0,-1)`  ; `B=(0,5)`  ; `V=(9,2)`
+
+(D)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(4,0)`  ; `V=(3,4)`
+
+(E)  `C=(0,5)`  ;  `A=(-1,0)`  ; `B=(5,0)`  ; `V=(2,9)`
+
+
+`3`) Seja a função real `g`, definida por `g(x)=ax^2+bx+c` representada no gráfico a seguir:
+
+.. figure:: _resources/f2_2.jpg
+  :width: 200pt
+  :align: center
+
+  (`g(x)=ax^2+bx+c`)
+
+Pode-se afirmar que:
+
+(A) `a>0`; `b>0`; `c<0`
+
+(B) `a>0`; `b<0`; `c>0`
+
+(C) `a<0`; `b<0`; `c<0`
+
+(D) `a<0`; `b>0`; `c<0`
+
+(E) `a<0`; `b>0`; `c>0`
+
+   
+   
+.. admonition:: Resposta 
+
+   `1`) 
+
+   .. figure:: _resources/r1.jpg
+      :width: 400pt
+      :align: center
+
+   .. figure:: _resources/r2.jpg
+      :width: 400pt
+      :align: center
+
+   .. figure:: _resources/r3.jpg
+      :width: 400pt
+      :align: center
+
+   
+   `2`) Gabarito letra E. Em `f(x)=-x^2+4x+5`, temos que `C=(0,5)`, `x_1=-1` e `x_2=5`, logo `A=(-1,0)` e `B=(5,0)`.
+   
+   Como `p=\frac{-b}{2a}=\frac{-4}{2\cdot(-1)}=2` e `f(2)=9`, temos que `V=(2,9)`;
+  
+
+   `3`) Gabarito letra E. Como a concavidade da parábola está voltada para baixo, temos que `a<0`;
+   
+   Como o `p` é positivo e `a<0`, temos que `p=\frac{-b}{2a} \Rightarrow \text{positivo}=\frac{-b}{\text{negativo}}` assim `b>0`.
+   
+   Como a parábola intersecta o eixo das ordenadas na parte positiva deste eixo, temos que `c>0`.

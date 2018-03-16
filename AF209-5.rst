@@ -1,0 +1,492 @@
+.. _sec-funcao-quadratica-parametros-grafico:
+
+****************************************************************************
+Explorando: os parâmetros da forma canônica e o gráfico da função quadrática
+****************************************************************************
+
+.. _ativ-funcao-quadratica-graf-curva:
+
+Atividade: o gráfico e a forma canônica
+---------------------------------------
+
+
+.. admonition:: Para o professor
+
+   Prezado colega, após o aluno ser instigado a desenvolver a forma canônica da expressão apresentada na atividade anterior, propomos uma análise mais criteriosa nos coeficientes `a`, `p` e `q`, de `y=a(x-p)^2+q` através das transformações ocorridas na curva. Para isso dispomos da atividade tanto no modelo textual (estático) quanto num modelo interativo disponível na plataforma do geogebra via link em destaque (a seguir no texto).
+   Neste modelo interativo separamos a abordagem em quatro partes: 
+   
+   #. Análise dos valores de `a`.
+   #. Análise dos valores de `p`.
+   #. Análise dos valores de `q`.
+   #. Análise dos valores de `a`, `p` e `q`.
+   
+   Sugerimos ao colega que acesse antes os "links", não só para testar a funcionalidade deles, mas para se apropriar das vantagens que a plataforma oferece. Caso seja da realidade de seus alunos, sugerimos também o acesso à atividade como tarefa de casa.
+   
+   
+   .. admonition:: Objetivos específicos 
+
+      #. Reconhecer que a variação dos valores de `a` acarretam na concavidade e na existência (`a=0`) no gráfico de `f`.
+      #. Reconhecer que a variação dos valores de `p` acarretam translações horizontais no gráfico de `f`.
+      #. Reconhecer que a variação dos valores de `q` acarretam translações verticais no gráfico de `f`.
+      #. Reconhecer que toda função real `f` dada por `f(x)=a(x-p)^2+q` pode ser obtida por translações do gráfico de `f(x)=ax^2`.
+      
+   Essa atividade é um boa referência para conduzirmos a conclusão de que **todas as parábolas são semelhantes**.
+      
+   
+Para melhor explorarmos essa atividade sugerimos a versão online, disponível nos links a seguir:
+
+- Parte 1: `Forma Canônica e o parâmetro 'a' <https://ggbm.at/jdFEcyav>`_
+
+- Parte 2: `Forma Canônica e o parâmetro 'p' <https://ggbm.at/DmKxRtU9>`_
+
+- Parte 3: `Forma Canônica e o parâmetro 'q' <https://ggbm.at/Qcm5QFjH>`_
+
+- Parte 4: `Forma Canônica <https://ggbm.at/jVJh78hz>`_
+
+Caso não seja possível, segue a atividade que corresponde à apresentada nos "links":
+
+Na :ref:`ativ-funcao-quadratica-investigando-x-a-2`, você teve a oportunidade de explorar as propriedades do gráfico da função `f:\mathbb{R}\to\mathbb{R}` dada por `f(x)=x^2`, já na atividade 3, você foi apresentado à um processo que o levou a transformar a relação quadrática dada na forma polinomial: `f(x)=ax^2 + bx + c` para forma canônica `f(x)=a(x-p)^2+q`. O objetivo desta atividade é que você consiga perceber as mudanças ocorridas no gráfico da função `f` (dada em sua forma canônica) acarretadas pelas variações dos coeficientes `a`, `p` e `q`. Esperamos que além de você ter contato com novos conceitos, comprove e consolide os conceitos abordados nas atividades anteriores deste capítulo.
+
+**PARTE 1** 
+
+Dada a função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`, ao assumirmos `p=q=0` temos que `f(x)=ax^2`, onde analisaremos as variações dos valores de `a`, observando a figura a seguir:
+
+.. figure:: _resources/at4_1.jpg
+   :width: 500pt
+   :align: center
+
+   (`a>0`)
+   
+Note que os gráficos apresentados na figura acima apresentam apenas valores de `a` maiores que zero, e que a curva em questão é côncava, com base nessa afirmação responda:
+
+#. Quando o valor de `a` aumenta, a concavidade da curva fica mais aberta ou mais fechada?
+#. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
+#. Tente explicar com suas palavras uma justificativa para as respostas dadas no item anterior.
+   
+   Observe as novas figuras a seguir que apresentam novos valores de `a`.
+
+   .. figure:: _resources/at4_2.jpg
+      :width: 500pt
+      :align: center
+
+      (`a<0`)
+      
+       
+#. Quando o valor de `a` diminui (fica "mais negativo"), a concavidade da curva fica mais aberta ou mais fechada?
+#. Quando o valor de `a` se aproxima de zero, a concavidade da curva fica mais aberta ou mais fechada?
+
+   A figura a seguir apresenta o gráfico da função `f` definida anteriormente para `a=0`.
+
+   .. figure:: _resources/a0.jpg
+      :width: 400pt
+      :align: center
+
+      (`a=0`)
+   
+#. Com base no gráfico acima, comente cada uma das alternativas a seguir, que indicam o comportamento do gráfico quando `a=0`.
+
+   f1. A curva some, pois não é mais função.
+
+   f2. Não existe mais curva, o gráfico apresentado é uma reta representada pela função constante `f:\mathbb{R}\to\mathbb{R}` dado por `f(x)=0`
+
+   f3. A curva ainda existe mais fica invisível, pois a abertura de sua concavidade tende ao infinito.
+ 
+   f4. A curva se transforma numa reta que está sobreposta ao eixo das abscissas.
+
+
+#. Você deve ter notado que quando o valor de `a>0` a concavidade da curva aponta para cima, e quando `a<0` a concavidade aponta para baixo. Com base neste fato, reescreva as falsas afirmações a seguir, tornando-as verdadeiras:
+
+   g1. Quando `a>0` a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor máximo passa a ser crescente.
+
+   g2. Quando `a>0` a, da esquerda para direita, a curva é crescente e ao assumir o seu valor mínimo passa a ser decrescente.
+
+   g3. Quando `a<0` a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor máximo passa a ser crescente.
+
+   g4. Quando `a<0` a, da esquerda para direita, a curva é crescente e ao assumir o seu valor mínimo passa a ser decrescente.
+
+
+**PARTE 2** 
+
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `q=0` e analisaremos os valores de `p` na função `f(x)=(x-p)^2` observando a figura a seguir:
+
+.. figure:: _resources/at4_3.jpg
+   :width: 500pt
+   :align: center
+
+   Variação de `p`
+
+Em cada um dos itens a seguir destaque as alternativas verdadeiras.
+
+#. Quando os valores de `p` aumentam a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+           
+
+#. Quando os valores de `p` diminuem a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+
+#. Você deve ter notado que a curva tangencia o eixo das abscissas em um ponto, que é justamente o ponto em que a curva deixa de ser decrescente e passa a ser crescente. Qual é a relação dos valores de `p` com este ponto?
+
+   (  ) O ponto de tangência em questão é `(-p,0)`.
+   
+   (  ) O ponto de tangência em questão é `(0,-p)`.
+   
+   (  ) O ponto de tangência em questão é `(0,p)`.
+   
+   (  ) O ponto de tangência em questão é `(p,0)`.
+   
+   
+#. O movimento que a curva faz quando `p` varia, é uma
+
+   (  ) translação vertical.
+   
+   (  ) translação horizontal.
+   
+   (  ) rotação em `360°`.
+   
+   (  ) rotação em `180°`.
+   
+ 
+**PARTE 3** 
+
+Dada a função `g:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `g(x)=a(x-p)^2+q`, tomemos `a=1` e `p=0` e analisaremos os valores de `q` na função `f(x)=x^2+q` observando a figura a seguir:
+
+.. figure:: _resources/at4_4.jpg
+   :width: 500pt
+   :align: center
+
+   Variação de `q`
+   
+   
+Em cada um dos itens a seguir destaque as alternativas verdadeiras.
+    
+#. Quando os valores de `q` aumentam a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+           
+
+#. Quando os valores de `q` diminuem a curva se desloca para
+
+   (  ) direita.    
+   
+   (  ) cima.     
+   
+   (  ) esquerda.     
+   
+   (  ) baixo.
+
+#. Você deve ter notado que a curva intersecta o eixo das ordenadas em um ponto, que é justamente o ponto em que a curva deixa de ser decrescente e passa a ser crescente. Quais são relações dos valores de `q` com esse ponto?
+
+   (  ) O ponto de intersecção é `(-q,0)`.
+   
+   (  ) O ponto de intersecção é `(q,0)`.
+   
+   (  ) O ponto de intersecção é `(0,-q)`.
+   
+   (  ) O ponto de intersecção é `(0,q)`.
+   
+   (  ) Na figura, `q` representa o maior valor que essa função atinge.
+   
+   (  ) Na figura, `q` representa o menor valor que essa função atinge.
+   
+   
+#. O movimento que a curva faz quando `q` varia, é uma
+
+   (  ) translação vertical.
+   
+   (  ) translação horizontal.
+   
+   (  ) rotação em `360°`.
+   
+   (  ) rotação em `180°`.
+
+
+
+**PARTE 4** 
+
+Em cada uma das partes anteriores, estudamos as variações gráficas que cada um dos valores de `a`, `p` e `q` fazem na curva. Para elucidarmos essas ideias, convidamos a variar esses valores juntos na função `f:\mathbb{R}\to\mathbb{R}`, definida na sua forma canônica: `f(x)=a(x-p)^2+q`.
+
+
+#. Observe as figuras a seguir, e note que em todas os valores de `a` são sempre iguais a `1`, já os valores de `p` e `q` variam.
+
+   .. figure:: _resources/41.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=4` e `q=-3`)
+
+   .. figure:: _resources/411.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=3` e `q=0`)
+
+   .. figure:: _resources/412.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-1` e `q=2`)
+   
+   
+   a.`1)` A variação de `p` faz com que o gráfico sofra que tipo de translação (vertical ou horizontal?
+   
+   a.`2)` A variação de `q` faz com que o gráfico sofra que tipo de translação (vertical ou horizontal?
+
+
+#. As figuras a seguir mostram as variações obtidas no gráfico para os valores de `a = 1`, (`p =5` e `q =5`); (`p=-5` e `q=5`); em seguida (`p=5` e `q=-5`) e por último (`p=-5` e `q=-5`). Já vimos anteriormente que existe um ponto no gráfico em que a função deixa de ser decrescente e passa a ser crescente, este ponto chamamos de **vértice** da curva. 
+
+   .. figure:: _resources/42.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=5` e `q=5`)
+
+   .. figure:: _resources/43.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-5` e `q=5`)
+   
+   .. figure:: _resources/44.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=5` e `q=-5`)
+   
+   .. figure:: _resources/45.jpg
+      :width: 500pt
+      :align: center
+
+      (`p=-5` e `q=-5`)
+
+
+   Exiba as coordenadas do vértice em função de `p` e `q`.
+
+
+#. Observe que ao mantermos os valores de `a=1`, `p=0` e `q=0`, temos a curva `y=x^2`. Considerando uma função `f` de Domínio `D` e imagem `I` dada por f(x)=y, utilize a figura a seguir, e em seguida escolha a alternativa na qual os conjuntos `D` e `I` estão definidos na atividade.
+
+   .. figure:: _resources/4c.jpg
+      :width: 500pt
+      :align: center
+
+      (`a=1`; `p=q=0`)
+      
+      
+   (  ) `D=[-5,5]` e `I=[0,5]`
+   
+   (  ) `D=[0,+\infty[` e `I=[0,+\infty[`
+   
+   (  ) `D=[0,5]` e `I=[-5,5]`
+   
+   (  ) `D=\mathbb{R}` e `I=[0,+\infty[`  
+   
+   (  ) `D=\mathbb{R}` e `I=\mathbb{R}`
+
+
+#. Observe que ao mantermos os valores de `a=-2`, `p=3` e `q=-4`, temos que `y=-2(x-3)^2 -4`. Considerando uma função `f` de Domínio `D` e imagem `I` dada por `f(x)=y`, utilize a figura a seguir, e em seguida escolha a alternativa na qual os conjuntos `D` e `I` estão definidos na atividade.
+
+   .. figure:: _resources/4d_1.jpg
+      :width: 500pt
+      :align: center
+
+      (`a=-2`, `p=3` e `q=-4`)
+      
+   
+   (  ) `D=[-4,3]` e `I=[-4,3]`
+   
+   (  ) `D=\mathbb{R}` e `I=]-\infty,-4]`
+   
+   (  ) `D=[-5,5]` e `I=[-5,5]`
+   
+   (  ) `D=[-4,3]` e `I=[-4,+\infty[`  
+   
+   (  ) `D=\mathbb{R}` e `I=\mathbb{R}`
+
+
+#. Em relação à função real `f` definida por `f(x)=a(x-p)^2+q` , caso `a` assuma apenas valores **positivos**, assinale quais das afirmações seguintes são verdadeiras: 
+
+   (  ) O valor de `p` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `p` representa o menor valor que `f` pode assumir.
+
+   (  ) O valor de `q` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `q` representa o menor valor que `f` pode assumir.
+   
+   (  ) A função `f`, não tem valor máximo, mas tem valor mínimo.
+   
+   (  ) A função `f`, não tem valor mínimo, mas tem valor máximo.
+   
+   (  ) A função f, tem valores de máximo e mínimo.
+   
+   
+#. Em relação à função real `f` definida por `f(x)=a(x-p)^2+q` , caso `a` assuma apenas valores **negativos**, assinale quais das afirmações seguintes são verdadeiras: 
+
+   (  ) O valor de `p` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `p` representa o menor valor que `f` pode assumir.
+
+   (  ) O valor de `q` representa o maior valor que `f` pode assumir.
+   
+   (  ) O valor de `q` representa o menor valor que `f` pode assumir.
+   
+   (  ) A função `f`, não tem valor máximo, mas tem valor mínimo.
+   
+   (  ) A função `f`, não tem valor mínimo, mas tem valor máximo.
+   
+   (  ) A função f, tem valores de máximo e mínimo.   
+   
+  
+#. Ainda na função `f` ao assumirmos os valores de `a=3`;  `p=1` e `q=-2`, Assinale quais afirmações a seguir são verdadeiras.
+
+   (  ) O vértice da curva é `V=(3,1)`.
+
+   (  ) O vértice da curva é `V=(3,-2)`.
+   
+   (  ) O vértice da curva é `V=(1,-2)`.
+   
+   (  ) O vértice da curva é `V=(-2,1)`.
+   
+   (  ) `-2`, é o maior valor que a função f pode assumir.
+   
+   (  ) `3`, é o maior valor que a função f pode assumir.
+   
+   (  ) `1`, é o maior valor que a função f pode assumir.
+   
+   (  ) `-2`, é o menor valor que a função f pode assumir.
+   
+   (  ) `3`, é o menor valor que a função f pode assumir.
+   
+   (  ) `1`, é o menor valor que a função f pode assumir.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `a>0`.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `p>0`.
+   
+   (  ) A concavidade da curva está voltada para cima, pois `q<0`.
+
+.. admonition:: Resposta 
+
+   **Parte 1**
+   
+   #. Mais fechada.
+   #. Mais aberta.
+   #. `a` é o coeficiente que multiplica o `x^2`, sendo `0<a<1` o valor resultante dessa multiplicação (imagem de `f`) é um número menor que `x^2`, o que acarreta um crescimento (para `x>0`) mais lento de `f` o que leva a concavidade ser mais aberta. Já no caso `a>1` o resultado desse produto (imagem de `f`) é um valor maior que `x^2`, o que acarreta um crescimento (para `x>0`) mais acelerado de `f`, o que leva a concavidade ser mais fechada.
+   #. Mais fechada.
+   #. Mais aberta.
+   
+   #. 
+      f1. A curva na verdade se transforma numa reta, no caso a função real constante `f` definida por `f(x)=0`.  
+      
+      f2. Correto.
+      
+      f3. Não há mais curva, e sim a reta `y=0`.
+      
+      f4. Correto.
+      
+      
+   #. 
+      g1. Quando `a>0`a, da esquerda para direita, a curva é decrescente e ao assumir o seu valor **mínimo** passa a ser crescente.
+
+      g2. Quando `a>0`a, da esquerda para direita, a curva é **decrescente** e ao assumir o seu valor mínimo passa a ser **crescente**.
+
+      g3. Quando `a<0`a, da esquerda para direita, a curva é **crescente** e ao assumir o seu valor máximo passa a ser **decrescente**.
+
+      g4. Quando `a<0`a, da esquerda para direita, a curva é crescente e ao assumir o seu valor **máximo** passa a ser decrescente.
+   
+   **Parte 2**
+   
+   #. Direita.
+   #. Esquerda.
+   #. (F) ; (F); (F) ; (V)
+   #. Translação Horizontal.
+   
+   **Parte 3**
+   
+   #. Cima.
+   #. Baixo.
+   #. (F) ; (F); (F); (V); (F) ; (V)
+   #. Translação Vertical.
+   
+   
+   **Parte 4**
+   
+   #. 
+      a1. Horizontal.
+      a2. Vertical.
+      
+   #. `V=(p,q)`
+   
+   #. `D=\mathbb{R}` e `I=[0,+\infty[`
+   
+   #. `D=\mathbb{R}` e `I=[-\infty,-4]`
+      
+   #. (F);(F);(F);(V);(V);(F);(F);(F);(F);(V);(F);(F);(V);(F)
+   
+   #. (F);(F);(V);(F);(F);(F);(V);(F);(F);(V);(F);(F)
+
+***********
+Exercícios
+***********
+
+`1`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma canônica, passe todas para forma polinomial representando-as graficamente.
+     
+#. `f(x)=2(x-5)^2+8`
+#. `g(x)=-3(x+2)^2-7`
+     
+
+`2`) Dadas as funções quadráticas `f:\mathbb{R}\to\mathbb{R}` a seguir na forma polinomial, passe todas para forma canônica representando-as graficamente.
+     
+#. `f(x) = x^2-8x+6`
+#. `f(x) = -x^2+8x`
+#. `f(x) = 2x^2+8`
+#. `f(x) = 2x^2+8x`
+#. `f(x) = x^2+x+1`
+     
+`3`) Cada um dos gráficos a seguir representa uma função `f:\mathbb{R}\to\mathbb{R}`. Exiba a forma canônica em cada caso.
+
+.. figure:: _resources/prat_33_a.jpg
+   :width: 400pt
+   :align: center
+   
+.. figure::  _resources/prat_33_a_1.jpg
+   :width: 400pt
+   :align: center
+   
+.. admonition:: Resposta
+
+   **Resposta Praticando 1**
+      #. `f(x)=2x^2-20x+58` 
+      #. `g(x)=-3x^2-12x-19`
+   
+   **Resposta Praticando 2**
+      #. `f(x)=(x-4)^2-10` 
+      #. `f(x)=-(x-4)^2+16`
+      #. `f(x)=2(x-0)^2+8`
+      #. `f(x)=2(x+2)^2-8`
+   
+   **Resposta Praticando 3**
+      #. `f(x)= 2(x-1)^2+3` 
+      #. `f(x)=-(x-3)^2+1`
+      #. `f(x)=(x-1)^2-1`
+      #. `f(x)=-3(x-1)^2`
+   

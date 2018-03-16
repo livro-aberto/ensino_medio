@@ -1,3 +1,5 @@
+.. HJB: verificação global (projeção no -> projeção sobre).
+
 .. HJB: (preocupação da Lhaylla) "objetos geométricos" é um termo conhecido!
 
 .. HJB: (preocupação da Lhaylla) será que o aluno e o professor estão acostumados com estas questões semióticas de representação?
@@ -8,15 +10,32 @@
 
 .. HJB: comparação da quantidade de informação em bits que cada sistema recebe (visual, auditivo, ...). Ver Arcavi - The Role of Visual Representations in The Learning of Mathematics.
 
-.. HJB: referências em Inglês (geral para o professor).
-
 .. HJB: que as observações para o professor, ao contrário do que se normalmente faz, aponta diretamente para as atividades propostas.
 
-.. HJB: colocar a citação do Leonardo da Vinci.
+.. HJB: indicar a abordagem matricial do Gladson (http://em.uniriotec.br/~cambrainha/bienal.html).
 
-.. HJB: indicar a abordagem matricial do Gladson.
+.. HJB: incluir como apêndice do livro uma lista das letras gregas.
 
-.. HJB: lembrar para o professores que a habilidade visual é uma das grandes habilidades do Howard Gardner.
+.. HJB: "Com Amor, Van Gogh" (Van Gogh pintava uma mesma obra em pé e depois sentado, o que dada dois centros de projeção para a pintura). (Visto na matéria do BandNews)
+
+.. HJB: não esquecer de colocar mais detalhes no "Por que estudar o assunto?" para o aluno (VR, AR, Projetos Aplicados, ...).
+
+.. HJB: ideia de tirar uma fotografia (círculo, parábola, ...) e verificar que tipo de figura aparece usando o GeoGebra.
+
+.. HJB: incluir indicações de leitura para o professor no início.
+
+.. HJB: lembrar ao professor que a generalização da definição de projeção é f: X -> X é uma projeção <=> f(f(x)) = f(x) para todo x em X.
+
+.. HJB: mudar o tamanho das abas das planificações!
+
+.. HJB: incluir as imagens que o Ezequiel enviou (https://en.wikipedia.org/wiki/Remedios_Varo).
+
+.. HJB: colocar nas transparências o exemplo que o Paulo Colonese enviou das ruas paralelas.
+
+.. HJB: indicar as referências do artigo da RPM e do Mathematics Teacher.
+
+.. HJB: colocar uma atividade ou sugestão de projeto sobre o estudo da área das projeções ortogonais (espaçonave fugindo do Sol/problema das projeções do cubo unitário).
+
 
 .. admonition:: Para o professor
 
@@ -49,24 +68,105 @@
 
    **Ensino Médio**
 
+   BNCC (EM11MT06) Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas e utilizá-las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
+
    BNCC (EM12MT01) Compreender o teorema de Tales e aplicá-lo em demonstrações e na resolução de problemas, incluindo a divisão de segmentos em partes proporcionais
 
-   BNCC (EM12MT03) Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras.
+   BNCC (EM12MT03) Utilizar a noção de semelhança para compreender as razões trigonométricas no triângulo retângulo, suas relações em triângulos quaisquer e aplicá-las em situações como o cálculo de medidas inacessíveis, entre outras.   
 
 
    **Tópicos que serão tratados no capítulo**
 
-   * Projeções em perspectiva.
-   * Projeções paralelas.
+   * Representações 2D de objetos 3D: conceitualização, exemplos, usos na comunicação humana.
+   * Projeções em perspectiva: conceitualização via definição no espaço tridimensional, propriedades e aplicações.
+   * Projeções paralelas: conceitualização via definição no espaço tridimensional, propriedades e aplicações.
 
 
    **Objetivo geral do capítulo**
 
-   Levar o aluno a compreender, descrever e construir representações 2D de objetos 3D obtidas por projeções em perspectiva e paralelas.
+   .. Levar o aluno a compreender, descrever, analisar e construir representações 2D de objetos 3D obtidas por projeções em perspectiva e paralelas.
+   
+   Levar o aluno a compreender como representações 2D de objetos 3D obtidas por projeções em perspectiva e paralelas fornecem modelos matemáticos que auxiliam na compreensão de como  vemos, comunicamos e interagimos com o mundo e, também, por um processo metacognitivo sobre essas projeções, levá-lo a refletir sobre o universo dos signos e dos processos significativos na natureza e na cultura (semiótica).
+
+
+   
 
    **Abordagem adotada no capítulo**
+   
+   O capítulo inicia com atividades que procuram levar o aluno a ganhar uma consciência das diversas maneiras de se representar objetos 3D por um desenho 2D. Para isto, ele é convidado inicialmente a fazer na :ref:`ativ-proj-atelier-geometrico` um desenho de um conjunto de objetos geométricos (:numref:`fig-proj-solidos-01`) o mais fielmente que ele conseguir. Com esta atividade, você também poderá avaliar como seus alunos estão desenhando. 
+   
+   A :ref:`ativ-proj-lobo`, por sua vez, tem o intuito de provocar o aluno e levá-lo a perceber que uma determinada representação é ou não adequada dependendo do contexto e dos objetivos de uso. De fato, procura-se levá-lo a perceber que, mais do que usos e propósitos, as representações variam de acordo com a idade, a cultura e o gênero. 
+   
+   [Cohn-2012]_ observa que, em geral, as pessoas reclamam quando alguém não escreve direito, mas essas mesmas pessoas são mais condescendentes quando se refere a desenhos. Por que considerar o desenho de forma diferente da linguagem? [Cohn-2012]_ argumenta que o desenvolvimento do desenho é análogo ao da linguagem. De fato, é importante ter em mente (a) que, como qualquer outra habilidade humana, com prática, é possível aprender a desenhar ([Edwards-2005]_); (b) que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_); (c) que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Sinclair-et-al-2016]_, [Khine-2017]_).      
+   
+   Uma representação não se encerra em si. É preciso considerar também a componente de quem interpreta a representação: nós! A :ref:`ativ-proj-interpretando` procura destacar esse aspecto interpretativo. Mais precisamente, a atividade busca levar o aluno a perceber que a interpretação de uma imagem passa pelo cérebro e que, por este motivo, relações matemáticas presentes na imagem, como congruência, podem não ser compreendidas como tal gerando as assim chamadas "ilusões".
+      
+   Todas estas questões de representações e significados fazem parte da semiótica, disciplina que se ocupa do estudo dos signos e dos processos significativos na natureza e na cultura. Com o intuito de estimular uma reflexão metacognitiva sobre o tema, o termo "semiótica" é então apresentado explicitamente para o aluno em uma caixa "Para refletir", junto com exemplos e indicações de leituras complementares.
+   
+   Esta primeira parte se encerra com indicações sobre o porquê estudar projeções em perspectiva e projeções paralelas e, também, com um alerta sobre as especificidades das representações obtidas por essas projeções: reconhecê-las é fundamental para entender e se fazer entender em termos de comunicação visual.
+   
+   Para o estudo das projeções em perspectiva e projeções paralelas que se segue, a seguinte estratégia pedagógica foi adotada:
+   
+   .. figure:: _resources/estrategia-pedagogica-01_1.jpg
+   
+   Mais precisamente, cada tipo de projeção é motivado com um experimento concreto, um modelo matemático abstrato que represente o experimento é então estabelecido e suas propriedades determinadas e, de posse deste conhecimento, conexões e previsões são feitas para o modelo concreto inicial. Os dois tipos de projeções (em perspectiva e paralelas) são desenvolvidos concomitantemente, pelos seguintes motivos: (1) ganha-se tempo na realização das atividades; (2) estimula-se aluno a comparar as propriedades dois tipos de projeção.
+   
+   Para os experimentos concretos, escolhemos atividades com luzes e sombras com um celular (para as projeções em perspectiva) e com a luz solar (para as projeções paralelas). Os motivos para tal escolha são compartilhados por Leonardo da Vinci (1452-1519).
+   
+      .. figure:: _resources/leonardo-da-vinci-01.jpg
+   
+   Nestes experimentos, os alunos são levados a observar e descrever o comportamento das sombras de alguns objetos geométricos familiares, identificando o que varia e o que não varia de acordo com a posição do objeto, do anteparo de projeção e da fonte de luz.
+   
+   Ao contrário do que normalmente se faz em livros didáticos quando se trata de projeções em perspectiva e projeções paralelas, a modelagem matemática dos experimentos é feita utilizando-se um modelo 3D e não a representação 2D que dela decorre.
+   
+      .. figure:: _resources/2017-12-09_19-09-03.jpg
+   
+   Esta abordagem tem várias vantagens: (1) ela é a mais natural e próxima dos experimentos que se deseja modelar; (2) todas as propriedades das representações 2D obtidas pelas projeções podem ser deduzidas e evita-se o uso de regras sem explicações; (3) aplicações recentes com recursos tecnológicos usam o modelo 3D e não especificações na representação plana; (4) ela se relaciona com episódios históricos que habitualmente não são apresentados; (5) ela oferece um excelente cenário de interesse onde se é possível exercitar geometria de posição e aplicar semelhança de triângulos.  As projeções em perspectiva, em particular, constituem uma excelente oportunidade do aluno apreciar uma característica importante da Matemática: o de identificar uma mesma estrutura (projeções em perspectiva) em fenômenos diferentes (sombras, pinturas, câmeras, modelos ópticos para o olho humano). 
+   
+   Aqui, talvez o maior desafio seja justamente o de explicar algo 3D tendo como principal instrumento uma mídia 2D (os desenhos estáticos nas páginas do livro didático). Neste sentido, usar materiais concretos e recursos tecnológicos ajuda bastante e, por este motivo, todos os diagramas de configurações tridimensionais são acompanhados de construções interativas feitas no GeoGebra. Cada cena 3D pode ser girada, ampliada ou reduzida e, em muitos casos, parâmetros da construção podem ser alterados. Esta possibilidade de movimentação constitui-se em um aspecto cognitivo importante ([Sinha-2009]_) que evita os equívocos de interpretação gerados pelas distorções das projeções. A propósito, o GeoGebra também foi usado para se criar os diagramas deste capítulo. Desta maneira, tem-se a garantia de que as ilustrações estão matematicamente consistentes. Além disso, essas construções estão disponíveis para que você faça modificações e derivações que ache necessárias. Estas construções do GeoGebra podem ser acessadas de computadores *desktop*, *tablets* e *smartphones*.
+        
+   As dificuldades advêm principalmente de dois fatores: por um lado, as projeções em perspectiva e paralelas são ambiguas (isto é, não injetivas) e não preservam comprimentos, ângulos, proporções, áreas, etc., de modo que as medidas na representação 2D podem não corresponder às medidas do objeto original 3D; por outro lado, não existe a cultura de se praticar a produção de desenhos, de modo que, em geral, quando os alunos são levados a fazer alguma representação 2D de objetos 3D, os desenhos produzidos são algumas vezes ingênuos.     
+      
+   Um exemplo de distrator típico é apresentado por [Lellis-2009]_: na figura a seguir, é comum um aluno desavisado pensar que entre `A`, `B` e `C`, é o ponto `C` que está mais próximo da reta `r` na configuração 3D (afinal, na projeção paralela, é o que acontece).
+      
+      .. figure:: _resources/2017-12-10_18-14-52.jpg
+         :width: 250pt
+         :align: center
+         
+   Dependendo do ponto de vista, retas que são reversas são projetadas em retas concorrentes, o que também costuma confudir os alunos.
+      
+      .. figure:: _resources/2017-12-10_21-05-40.jpg
+         :width: 250pt
+         :align: center
+         
+      .. figure:: _resources/2017-12-10_21-21-23.jpg         
+         :width: 250pt
+         :align: center
+         
+   Outros dois exemplos são dados por [Volkert-2008]_: na primeira figura, a poligonal ligando um vértice do cubo ao ponto médio da aresta pode ser interpretada de várias maneiras diferentes; na segunda figura, os ângulos retos da configuração 3D podem, ao mesmo tempo, na representação 2D, ser desenhados como um ângulo agudo e um ângulo obtuso.
+      
+      .. figure:: _resources/ambiguidade-02.jpg
+         :width: 250pt
+         :align: center
+         
+   Com relação à questão de ângulos, [Fujita-et-al-2017]_ relatam o equívoco de alunos japoneses acharem que, na figura a seguir, o ângulo `MFN` ser reto, o que não é o caso.
+      
+      .. figure:: _resources/perspectiva-angulo-01.jpg
+         :width: 120pt
+         :align: center
+   
+   Os alunos serão confrontados com estes distratores na :ref:`ativ-proj-distratores`. Espera-se que, após a realização de todas as atividades anteriores, o aluno esteja mais bem preparado ao fazê-lo.
 
-   Observações:
+   No estudo quantitativo dos comprimentos das projeções, optou-se por uma abordagem funcional (:ref:`ativ-proj-comprimentos`). O uso do conceito de função nesta parte não é casual e vai além do propósito de uma mera conexão entre Geometria e Álgebra. A notação funcional permite, por exemplo, compactar informação e, com isto, articular melhor o pensamento. 
+   
+   As aplicações dos modelos matemáticos ao longo do capítulo se dão principalmente com relação a pinturas, mas as articulações e aplicações são muitas e variadas. No final do capítulo apresentamos uma lista de referências e sugestões de projetos que incluem temas como projeção mapeada, técnicas de cinema, jogos de computador e de tabuleiro, teatro, história das Artes, etc.
+   
+
+   
+   
+      
+
+   **Observações**
    
    * Existem outras nomeclaturas para o que estamos denominando de "projeções em perspectiva" e "projeções paralelas". Alguns textos mais antigos, usam, por exemplo, "perspectiva central", "perspectiva ortogonal" de modo que, neste caso, perspectiva fica como sinônimo de projeção. Outros usam a palavra representação: "representação em perspectiva", como ocorre no enunciado da habilidade na BNCC. Em textos mais recentes, principalmente os de computação gráfica, os termos mais usados são "projeção em perspectiva" e "projeção ortogonal" (aparece também o termo "projeção central").
    
@@ -76,18 +176,9 @@
       
       .. figure:: _resources/vistas-01_1.jpg
       
-         O que é uma *vista*?
-         
-         
-   * Os tópicos de projeções em perspectiva e projeções paralelas são desenvolvidas concomitantemente, pelos seguintes motivos: (1) ganha-se tempo na realização das atividades; (2) permite ao aluno comparar as propriedades dos dois tipos de projeções.         
-   
-   * Existem vários modelos matemáticos que tentam capturar como "vemos" ([Lindberg-1976]_, [Howard-et-al-1995]_). Para este capítulo, usaremos o modelo simples dado por projeções em perspectiva.
-
-   * [Cohn-2012]_ observa que, em geral, as pessoas reclamam quando alguém não escreve direito, mas essas mesmas pessoas são mais condescendentes quando se refere a desenhos. Por que considerar o desenho de forma diferente da linguagem? [Cohn-2012]_ argumenta que o desenvolvimento do desenho é análogo ao da linguagem. De fato, é importante ter em mente (a) que, como qualquer outra habilidade humana, com prática, é possível aprender a desenhar ([Edwards-2005]_); (b) que habilidades visuais constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_); (c) que o desenvolvimento das habilidades espaciais desenvolvem outros tipos de habilidades ([Van-Meter-et-al-2005]_, [Fan-2015]_, [Sinclair-et-al-2016]_, [Khine-2017]_).
-   
-   * As projeções em perspectiva constituem uma excelente oportunidade do aluno apreciar uma característica importante da Matemática: o de identificar uma mesma estrutura (projeções em perspectiva) em fenômenos diferentes (sombras, pinturas, câmeras). 
-   
-   **Observações metodológicas gerais**
+         O que é uma *vista*?         
+            
+   * Existem vários modelos matemáticos que tentam capturar como "vemos" ([Lindberg-1976]_, [Howard-et-al-1995]_). Para este capítulo, usaremos o modelo simples dado por projeções em perspectiva.     
 
 
 ****
@@ -126,7 +217,11 @@ Atividade: *Atelier* Geométrico
    
    * Sugerimos que você use os seguintes sólidos geométricos: um cubo (por ser um objeto 3D matemático familiar ao contexto escolar desde as séries iniciais), um cilindro circular reto (por conta das bases circulares paralelas as quais, em projeções em perspectiva, não são simultaneamente visíveis) e uma esfera (ou um cone). 
    
+         .. _fig-proj-solidos-01:
+    
          .. figure:: _resources/fig-proj-solidos-01.jpg
+         
+            Exemplo de um conjunto de sólidos.
    
      É importante que estes sólidos estejam dispostos de modo que pelo menos um fique parcialmente escondido atrás de outro, pois esta característica será verificada na produção dos alunos. 
      
@@ -155,7 +250,7 @@ Atividade: *Atelier* Geométrico
         
         Escala de aferição da "maturidade' da representação do cubo.
      
-     Para o caso de um cilindro circular reto, [Mitchelmore-1978]_ propõe a evolução em estágios descrita na :number:`fig-proj-escala-mitchelmore`.
+     Para o caso de um cilindro circular reto, [Mitchelmore-1978]_ propõe a evolução em estágios descrita na :numref:`fig-proj-escala-mitchelmore`.
      
      
    * Caso algum aluno já tenha terminado esta atividade, você pode sugerir que ele já trabalhe na próxima.      
@@ -415,7 +510,7 @@ Compreender como vemos e interpretamos representações 2D de objetos 3D obtidas
 
    O livro [Duval-2011]_ é uma excelente introdução para as questões de representações semióticas no Ensino da Matemática.
 
-.. admonition:: Voce sabia?
+.. admonition:: Para refletir
 
    Todas estas questões de representações e significados fazem parte da :index:`semiótica`, disciplina que se ocupa do estudo dos signos e dos processos significativos na natureza e na cultura. Os signos, aqui, não estão restritos à desenhos em uma folha de papel. Eles podem ser qualquer veículo de significação ou representação de um objeto, de um conceito ou de uma ideia, como textos, sons e gestos. Um dos pontos destacados pela semiótica é a distinção entre a representação de algo e este próprio algo. Um exemplo clássico é dada pela pintura na :numref:`fig-proj-semiotica-01`. O que é que está na pintura? Se você respondeu "cachimbo", saiba que a legenda em Francês "Ceci n'est pas une pipe." tem como tradução "Isto não é um cachimbo.". Segundo o autor da pintura, o surrealista belga René Magritte (1898-1967), ele não poderia escrever o contrário, pois a pintura não é um cachimbo, mas uma representação de um cachimbo. O nome da pintura: "A Traição das Imagens".
    
@@ -432,3 +527,25 @@ Compreender como vemos e interpretamos representações 2D de objetos 3D obtidas
 
    Caso você queira saber mais sobre semiótica, recomendamos começar com o livro "O que é semiótica?" da Coleção "Primeiros Passos" da Editora Brasiliense ([Santaella-1998]_).
 
+
+.. _obs-proj-por-que-estudar-o-assunto:
+
+.. admonition:: Observação
+
+   No que se segue, iremos estudar duas formas de representação bem específicas: aquelas obtidas por projeções em perspectiva e projeções paralelas. 
+   
+   As projeções em perspectiva fornecem um modelo matemático para a visão humana e para dispositivos óticos (como câmeras) e o estudo deste modelo auxilia na compreensão de como vemos, comunicamos e interagimos com o mundo. As projeções paralelas, por sua vez, fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: Arquitetura, Engenharia, Biologia, Física, etc.
+      
+   Cabe observar que projeções em perspectiva e paralelas fazem parte das habilidades espaciais as quais, por sua vez, constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_). 
+      
+   As habilidades espaciais são particularmente críticas para profissões relacionadas com as áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM), conforme apontam vários estudos recentes ([NRC-2006]_, [Uttal-et-al-2012]_, [Khine-2017]_, [Newcombe-2017]_).
+      
+   Mesmo no dia a dia, é importante, por exemplo, saber interpretar os diagramas 2D de objetos 3D que descrevem como montar uma cama, colocar um cartucho em uma impressora, abrir a porta de emergência do avião, descobrir a saída de emergência mais próxima em um hotel ou em um estádio de futebol (mapa de fuga, saídas de emergência), etc. 
+   
+      .. figure:: _resources/planta-baixa-03.jpg
+         :width: 400pt
+      
+      Mapa do circuito de visitação do terceiro andar do Aquário do Rio de Janeiro (fonte: Joselí Maria Silva dos Santos).
+      
+      
+   Como veremos, as representações obtidas por projeções em perspectiva e projeções paralelas possuem propriedades bem **específicas**. Reconhecer e usar essas propriedades adequadamente é importante para você entender e se fazer entender em termos de comunicação visual.

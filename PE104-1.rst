@@ -1,135 +1,80 @@
-.. admonition:: Resposta 
-
-   1. A tabela com as frequências por intervalo e o histograma ficam de seguinte forma:
-   
-      .. table:: Guia para o cálculo de frequências do histograma
-
-        +-----------------+------------+
-        | Intervalo       | Frequência |
-        +-----------------+------------+
-        | [2,448 ; 2,512[ |     8      |
-        +-----------------+------------+
-        | [2,512 ; 2,576[ |     7      |
-        +-----------------+------------+
-        | [2,576 ; 2,639[ |     3      |
-        +-----------------+------------+
-        | [2,639 ; 2,703[ |     2      |
-        +-----------------+------------+
-        | [2,703 ; 2,767[ |     5      |
-        +-----------------+------------+
-        | [2,767 ; 2,831[ |     6      |
-        +-----------------+------------+
-        | [2,831 ; 2,895[ |     9      |
-        +-----------------+------------+
-        | [2,895 ; 2,958[ |     13     |
-        +-----------------+------------+
-        | [2,958 ; 3,022[ |     27     |
-        +-----------------+------------+
-        | [3,022 ; 3,085[ |     20     |
-        +-----------------+------------+
-
-      .. _hist-maratona-mulheres-res:
-
-      .. figure:: _resources/Histograma_mulheres_resposta_1.png
-         :width: 200pt
-         :align: center
-
-         Histograma dos tempos da categoria de mulheres na Maratona de NY
-
-  
-   2. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
-   
-   3. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a corrida em até 2:45:52 (2,764 horas).
-   
-      Já para ficar nas primeiras 50, precisaria terminar o percurso em 2:56:57 (2,949 horas) ou menos.
-   
-      Finalmente, para ficar entre as primeiras 75, seu tempo teria que ser menor ou igual a 2:59:51 (2,998 horas).
-
-      .. figure:: _resources/Histograma_mulheres_resposta_lineas.png
-         :width: 200pt
-         :align: center
-	         
-         Histograma dos tempos da categoria de mulheres na Maratona de NY mostrando os quartis, a mediana e a média
-         
-   4. Neste item deve-se observar que as marcações indicadas dividem o conjunto de dados em quatro intervalos de frequências absolutas iguais a 25, pois são 100 valores observados. Como o histograma é uma representação da distribuição de frequências, espera-se que as áreas correspondentes a cada um destes limites, sejam aproximadamente iguais a 1/4 da área total do histograma que é dada por 6,364 (para obter este valor soma-se os produtos dos comprimentos dos intervalos pela frequência dos intervalos=áreas dos retângulos). Se formos calcular diretamente da figura tais áreas, serão necessárias algumas aproximações, pois os tempos 25, 50 e 75 não são extremos dos intervalos considerados. Por esta razão é possível obter pequenas diferenças em relação ao valor esperado, a saber, `6,364/4\approx 1,59`. 
-    
-   5. Os comprimentos dos intervalos são dados por:
-    
-   +------------+-------------+
-   | Intervalo  | comprimento |
-   +------------+-------------+
-   | t1 a t25   | 0,316       |
-   +------------+-------------+
-   | t25 a t50  | 0,185       |
-   +------------+-------------+
-   | t50 a t75  | 0,049       |
-   +------------+-------------+
-   | t75 a t100 | 0,087       |
-   +------------+-------------+
-   
-   Lembre-se que se o histograma for construído considerando os intervalos acima, deve-se trabalhar com a escala de densidade de frequência (absoluta ou relativa: razão da frequência pelo comprimento do intervalo), pois os comprimentos dos intervalos são diferentes. No histograma construído nesta atividade, usou-se a escala da frequência absoluta, pois os intervalos considerados têm comprimentos iguais.
-   
-   6. Não coincide.
-   
-   7. Tem-se que o tempo médio foi 2,8698 e tempo da posição 50 foi 2,949 e, portanto, são diferentes. Adiante vamos trabalhar a razão desta diferença neste conjunto. Mas, observando a forma do histograma podemos perceber uma grande concentração de valores mais à direita e que o histograma é alongado à esquerda. Distribuições com esta aparência são ditas ter uma forma assimétrica à esquerda o que faz com que a média seja um valor puxado para baixo.
-     
-         
-    
-
-
 .. _sec-organizando1:
 
 =========================================
 Organizando as ideias: Medidas de posição
 =========================================
 
-Medidas de Posição, como o próprio termo indica, visam a resumir um conjunto de dados em geral numa única medida em algum lugar geométrico entre os extremos observados do conjunto (mínimo e máximo). Isso só é possível se nossas observações são de natureza quantitativa, pois, como vimos no capítulo "A Natureza da Estatística", as variáveis qualitativas estão no domínio da frequência apenas, ou seja, só podemos contar quantas observações ocorrem em cada categoria da variável qualitativa, mas não podemos operar matematicamente com as categorias em si.
-As principais medidas de posição usadas na Estatística são a média aritmética, a mediana, a moda e os quartis da distribuição. Outras medidas de posição existem, mas não são tão usuais. 
+Medidas de Posição, como o próprio termo indica, visam a resumir um conjunto de dados em geral numa única medida em algum lugar geométrico entre os extremos observados do conjunto (mínimo e máximo). Veja na figura a seguir, as marcações da média e da mediana das notas de Artes sem bonificação.
+
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/medidas_posicao_artes.png
+   :width: 200pt
+   :align: center
+
+   Média e mediana assinaladas no Histograma de das notas de Artes
+
+Só é possível obter medidas como a média e a mediana, se nossas observações são de natureza quantitativa, pois, como vimos no capítulo 
+**A Natureza da Estatística**, as variáveis qualitativas estão no domínio da frequência apenas, ou seja, só podemos contar quantas observações ocorrem em cada categoria da variável qualitativa, mas não podemos operar matematicamente com as categorias em si. Por exemplo, na atividade Prática de Atividades Físicas deste capítulo, trabalhamos com a variável modalidade do esporte praticado. As modalidades correspondem à "Futebol", "Caminhada", "Fitness", etc. Observe que são respostas não numéricas e, por isso, não podemos calcular uma média e não existe uma relação de ordem natural das respostas. Apenas podemos ordenar as respostas pela frequência na qual elas ocorreram.
+
+As principais medidas de posição usadas na Estatística são a média, a mediana, a moda e os quartis da distribuição. Outras medidas de posição existem, mas não são tão usuais. 
 
 Definiremos a seguir as principais medidas que buscam de alguma forma resumir a informação do conjunto.  
 
-Para definir várias das medidas a serem trabalhadas neste capítulo vamos adotar a seguinte notação.
+Para definir várias medidas a serem estudadas neste capítulo vamos adotar a seguinte notação.
 
-Sejam `x_1,x_2, \cdots, x_n` os `n` valores observados de uma variável quantitativa tal que 
+Suponha que na primeira segunda-feira do mês de março de 2018, um Posto de Saúde tenha registrado as idades (em anos completos) das seis primeiras pessoas que chegaram para tomar a vacina da febre amarela e, os registros, obtidos foram `\{55, 22, 30, 14, 25, 40\}`. Neste exemplo dizemos que o número de observações, denotado por `n`, é `6` e que as observações são dadas por `x_1=55`, `x_2=22`, `x_3=30`, `x_4=14`, `x_5=25` e `x_6=40`.
 
-`x_1` é o primeiro valor observado; `x_2` é o segundo valor observado; e, em geral,
+De um modo geral, sejam `x_1,x_2, \cdots, x_n` , os `n` valores observados de uma variável quantitativa tal que 
 
-`x_i` é o `i`-ésimo valor observado, `i=1,2,\cdots,n`.
+`x_1` é o primeiro valor observado; `x_2` é o segundo valor observado; e, assim por diante, tal que `x_n` é o último valor observado. 
 
-A letra maiúscula sigma `\left (\Sigma\right )` é usada para denotar somatório, simplificando algumas fórmulas. Por exemplo,  seja `f(i)` uma função definida em  `\mathbb{N}`, então `\displaystyle{\sum^n_{i=1}} f(i)=f(1)+f(2)+\cdots + f(n)`. Assim, 
+Os valores observados não ocorrem necessariamente de forma ordenada do menor para o maior. Neste exemplo, das idades das três primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde foram `x_1=55`, `x_2=22` e `x_3=30` de modo que `x_1>x_2` e `x_2<x_3`.
 
-.. math::
+Para definir a mediana, será útil usar uma notação para representar os dados ordenados. 
 
-   \sum^n_{i=1} x_i
-   
-é uma representação de `x_1+x_2+\cdots +x_n` e
-
-
-.. math::
-
-   \sum^n_{i=1} x^2_i
-   
-é uma representação de `x^2_1+x^2_2+\cdots +x^2_n` .
-   
-   
-
-Os valores do conjunto não estão necessariamente ordenados do menor para o maior: 
-
-`x_1` correponde ao primeiro valor observado no conjunto e não ao menor deles. Portanto, introduziremos também uma notação para representar os dados ordenados. 
-
-Sejam `x_{(1)}` o menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; `x_{(2)}`, o segundo menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; e assim sucessivamente até
-
-`x_{(n)}`, o maior valor do conjunto `\{ x_1,x_2,...,x_n\}`. 
+Sejam `x_{(1)}` o menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; `x_{(2)}`, o segundo menor valor do conjunto `\{ x_1,x_2,...,x_n\}`; e assim sucessivamente até `x_{(n)}`, o maior valor do conjunto `\{ x_1,x_2,...,x_n\}`. 
 
 
 Desse modo, 
 `x_{(1)}\leq x_{(2)}\leq \cdots\leq x_{(n)}` são os valores ordenados do conjunto `\{ x_1,x_2,...,x_n\}`.
 
-Por exemplo, para o conjunto de observações `\{ 2, 3, 1, 5, 2\}`, temos 
+No exemplo das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, os registros obtidos foram `\{55, 22, 30, 14, 25, 40\}` tal que 
 
-`x_1=2`, `x_2=3`, `x_3=1`, `x_4=5`, `x_5=2`, e 
+`x_1=55`, `x_2=22`, `x_3=30`, `x_4=14`, `x_5=25` e `x_6=40`  
 
-`x_{(1)}=1`, `x_{(2)}=2`, `x_{(3)}=2`, `x_{(4)}=3`, `x_{(5)}=5`.
+e 
+
+`x_{(1)}=14`, `x_{(2)}=22`, `x_{(3)}=25`, `x_{(4)}=30`, `x_{(5)}=40` e `x_{(6)}=55`. 
+
+A letra maiúscula sigma `\left (\Sigma\right )` é usada para denotar somatório, simplificando algumas fórmulas. Por exemplo,  
+
+.. math::
+
+   \sum^n_{i=1} x_i=x_1+x_2+\cdots +x_n 
+   
+e 
+
+.. math::
+
+  \sum^n_{i=1} x^2_i=x^2_1+x^2_2+\cdots +x^2_n 
+   
+Observe que neste exemplo, das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde,
+
+
+.. math::
+
+   \sum^6_{i=1}x_i=x_1+x_2+x_3+x_4+x_5+x_6=\\
+   55 + 22 + 30 + 14 + 25 + 40 = 186
+e
+
+.. math::
+
+   \sum^n_{i=1} x^2_i=x^2_1+x^2_2+x^2_3+x^2_4+x^2_5 +x^2_6=\\
+   55^2+ 22^2+ 30^2+ 14^2+ 25^2+  40^2=6.830
+   
+
 
 .. _sub-media:
 
@@ -137,29 +82,37 @@ Por exemplo, para o conjunto de observações `\{ 2, 3, 1, 5, 2\}`, temos
 Média
 ------
 
-Considere um conjunto contendo `n` valores de uma variável quantitativa representado por `\{x_1,x_2,\cdots,x_n\}`. 
+A definição de média de um conjunto de dados quantitativos já é conhecida desde o Ensino Fundamental e, consiste na soma dos valores do conjunto dividida pelo número de observações. No exemplo das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, a soma das idades é 186 tal que a média será dada por `\frac{186}{6}=31` anos.
 
-A :index:`média<média>` aritmética deste conjunto é definida como o valor `\bar{x}` que pode substituir todas as observações sem alterar a característica da soma aritmética dos valores, isto é, `x_1+x_2+\cdots+x_n=\bar{x}+\bar{x}+\cdots+\bar{x}`. Assim, temos `x_1+x_2+\cdots+x_n=n\bar{x}`, e, consequentemente, `\textsf{média}=\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\displaystyle{\sum^n_{i=1}} x_i`.
+De modo mais geral, considere um conjunto contendo `n` valores de uma variável quantitativa representado por `\{x_1,x_2,\cdots,x_n\}`. 
+A :index:`média<média>` deste conjunto, denotada por `\bar{x}`,  é definida por 
 
-Se todos os valores de um conjunto com `n` valores fossem iguais a `k`, usando a definição de média, teríamos `\textsf{média}=\bar{x}=\displaystyle{\frac{n\cdot k}{n}}=k`. 
+
+.. math::
+
+   \bar{x}=\frac{\sum^n_{i=1}x_i}{n}=\frac{x_1+x_2+\cdots x_n}{n}
+
+
+Observe que a média pode substituir todas as observações sem alterar a  soma dos valores, isto é, 
+
+
+.. math::
+
+   x_1+x_2+\cdots+x_n=\bar{x}+\bar{x}+\cdots+\bar{x} = n\cdot \bar{x}
+   
+fornecendo a expressão que define a média, denotada por `\bar{x}` .
 
 Esta é justamente a ideia por trás da definição de qualquer média: uma medida que de alguma forma representa o conjunto de dados, segundo uma formulação, e se situa entre os extremos das observações. É claro que, em geral, haverá valores diferentes no conjunto e, neste caso, a média será um valor pertencente ao intervalo de variação dos valores neste conjunto e não necessariamente, um valor que tenha sido observado.
 
-Por exemplo, considerando os dados da :ref:`ativ-Notas-de-Artes`: antes da bonificação, vimos que ao todo são 35 notas variando de 0,8 até 8,0 e, a média resultante, foi 5,93. Observe que 5,93, a média da turma, é um valor entre 0,8 (menor nota da turma) e 8,0 (maior nota da turma), porém não se observou nas notas de Artes desta turma a nota 5,93.
-
-Cabe ressaltar que, se os dados são apresentados em tabelas de frequência, indicando que o valor `x_i` ocorre `n_i` vezes, `i=1,2,...,c` no conjunto de dados, então naturalmente a média será calculada como
-
-`\textsf{média}=\bar{x}=\frac{n_1\cdot x_{1}+n_2\cdot x_{2}+\cdots+n_c\cdot x_{c}}{\underbrace{n_1+n_2+\cdots n_c}_{=n}}` ou, equivalentemente, 
-
-`\textsf{média}=\bar{x}={f_1\cdot x_{1}+f_2\cdot x_{2}+\cdots+f_c\cdot x_{c}}=\displaystyle{\sum^c_{i=1}}f_i\cdot x_i` em que `f_i=\frac{n_i}{n}` corresponde à frequência relativa do `i` -ésimo valor observado.
+No exemplo das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde a média é 31 anos, porém não se observou uma idade igual a 31 anos.
 
 Você já calculou a média dos dados das duas primeiras atividades, a saber, :ref:`ativ-Notas-de-Artes` e :ref:`ativ-maratona-de-NY`. Identifique nos histogramas correspondentes a posição em que estas médias ficaram.
 
 **Média para dados agrupados** 
 
-Quando os dados disponíveis estão agrupados em `c` intervalos de classe,  não é possível calcular a soma total exata dos dados. Neste caso, usamos uma aproximação para o cálculo da média como mostra o exemplo a seguir.
+Quando os dados disponíveis estão agrupados em intervalos de classe,  não é possível calcular a soma total exata dos dados. Neste caso, usamos uma aproximação para o cálculo da média como mostra o exemplo a seguir.
    
-Suponha que um coordenador tenha tido acesso apenas ao histograma das notas de Artes, sem conhecer as notas individualmente.  Como este coordenador poderia calcular a média da turma, considerando as notas antes da bonificação?
+Suponha que um coordenador tenha tido acesso apenas ao :ref:`fig-histograma-notas-sem-bonificacao`, sem conhecer as notas separadamente.  Como este coordenador poderia calcular a média da turma, considerando as notas antes da bonificação?
 
 Temos a seguinte distribuição de frequências das notas antes da bonificação:
 
@@ -177,7 +130,7 @@ Temos a seguinte distribuição de frequências das notas antes da bonificação
  | [6,8]     | 23                   | 7,0                       |
  +-----------+----------------------+---------------------------+
    
-Apenas sabemos, por exemplo, que entre 2 e 4 existem cinco notas, mas  não conhecemos as notas individualmente. Portanto, a soma exata destas cinco notas não é conhecida. A estratégia é tomar o ponto médio desta classe, `3=\frac{2+4}{2}` como a nota representativa das cinco observações, pois espera-se que os erros cometidos para mais e para menos sejam compensados na classe. Desse modo estimamos a soma das notas neste intervalo como `3+3+3+3+3=5\cdot 3=15`. 
+Apenas sabemos que, por exemplo, entre 2 e 4 existem cinco notas, mas  não conhecemos o valor exato de cada uma destas cinco notas. Portanto, a soma exata destas cinco notas não é conhecida. A estratégia é tomar o ponto médio desta classe `\left (\frac{2+4}{2}\right )=3` como a nota representativa das cinco observações, pois espera-se que os erros cometidos para mais e para menos sejam compensados na classe. Desse modo estimamos a soma das notas neste intervalo como `3+3+3+3+3=5\cdot 3=15`. 
 
 Esse procedimento é adotado para todas as classes a fim de obter uma estimativa da soma total dos dados, a saber, 
 
@@ -189,28 +142,15 @@ Logo, a média correspondente a este agrupamento, a ser considerada pelo coorden
    
    `\textsf{média}=\bar{x}=\frac{1\times 1+5\times 3+6\times 5+23\times 7}{35}=\frac{207}{35}\approx 5,91`
    
-Observe que este agrupamento não incorreu em grande perda de informação, uma vez que a soma exata é 207,5 e, a estimada é 207. Consequentemente, a média estimada por este agrupamento (5,91) não se diferencia muito da média considerando os dados brutos (5,93).   
+Observe que este agrupamento resultou numa soma 207, muito próxima da soma exata dada por 207,5. Por esta razão dizemos que o agrupamento não incorreu em grande perda de informação para efeito de calcular a soma dos dados: em vez de usar as 35 notas, foi possível com cinco intervalos de classe avaliar de forma precisa a soma original dos dados. Consequentemente, a média estimada por este agrupamento (5,91) não se diferencia muito da média considerando os dados brutos (5,93).   
 
-Para facilitar vamos usar a notação a seguir.
-   
-Sejam `\tilde{x}_{1}`, `\tilde{x}_{2}`, ..., `\tilde{x}_{c}` os pontos médios dos `c` intervalos de classe e, `n_1`, `n_2`, ..., `n_c` ,  as frequências absolutas dos `c` intervalos de classe, respectivamente. Lembre que o ponto médio de um intervalo de classe  corresponde à média aritmética dos extremos do intervalo. Neste caso a média é calculada por
-   
-`\textsf{média}=\bar{x}=\frac{n_1\cdot \tilde{x}_{1}+n_2\cdot \tilde{x}_{2}+\cdots+n_c\cdot \tilde{x}_{n}}{\underbrace{n_1+n_2+\cdots+n_c}_{=n}}=\frac{1}{n}\cdot \displaystyle{\sum^c_{i=1}}n_i\cdot \tilde{x}_i`
-   
-Denotando por `f_i=\frac{n_i}{n}` a frequência relativa do `i`-ésimo intervalo classe, temos
-   
- 
-`\textsf{média}=\bar{x}=f_1\cdot \tilde{x}_{1}+f_2\cdot \tilde{x}_{2}+\cdots +f_c\cdot \tilde{x}_{c}=\displaystyle{\sum^c_{i=1}}f_i\cdot \tilde{x}_i` 
-   
-     
-Quando os dados estão agrupados em intervalos de classe, a média é calculada como uma média ponderada dos pontos médios das classes em que os pesos são dados pelas frequências absolutas (ou relativas) das classes.
+Na seção :ref:`sec-Para-saber-mais` apresenta-se notação e fórmula para o cálculo da média numa situação genérica de dados agrupados. 
 
 **Interpretação da média como ponto de equilíbrio no histograma** 
    
-Observe o histograma das notas de Artes, com as notas dispostas ao longo do eixo horizontal. Suponha que cada ponto que compõe a nota corresponda a um peso de 1 kg tal que uma nota 5 corresponda a 5 kg. Neste caso, podemos perguntar onde se encontrará o ponto de equilíbrio (ou centro de massa) do histograma que representa a distribuição de frequências dos dados. É natural pensar na média como o ponto de equilíbiro, como mostra o histograma a seguir com destaque para a média. Veja adiante a seção sobre desvios da média para reforçar esta noção de ponto de equilíbrio.
- 
- 
- .. _fig-coloque-aqui-o-nome:
+Observe o :ref:`fig-histograma-notas-sem-bonificacao` , em que as notas dispostas ao longo do eixo horizontal. Suponha que o histograma seja mais do que uma representação da distribuição de frequências, que seja um objeto. Assim, cada ponto que compõe as notas teria massa e poderia ser associado a um peso.  Por exemplo, a nota 1 corresponderia a 1kg, a nota 5 a 5 kg e a nota 6,3 a 6,3 Kg.  esse caso, podemos perguntar onde se encontrará o ponto de equilíbrio (ou centro de massa) do histograma que representa a distribuição de frequências dos dados. É natural pensar na média como o ponto de equilíbrio, como mostra o histograma a seguir, com destaque para a média. Veja adiante a seção sobre desvios da média para reforçar esta noção de ponto de equilíbrio.
+
+.. _fig-coloque-aqui-o-nome:
 
  .. figure:: _resources/histogramaNotas_E1_PE_1.png
     :width: 200pt
@@ -241,24 +181,62 @@ Se fossemos tentar equilibrar o histograma num ponto abaixo da média, considera
 
     Histograma inclinado para à direita
     
-O exemplo anterior revela por que a média aritmética é também denotada como o primeiro momento das observações, no sentido de ser, como na Física, o centro de massa dos dados, isto é, o ponto de equilíbrio de forças dos dados observados. 
+.. O exemplo anterior revela por que a média aritmética é também denotada como o primeiro momento das observações, no sentido de ser, como na Física, o centro de massa dos dados, isto é, o ponto de equilíbrio de forças dos dados observados.
+
+Cuidado com esta interpretação: o ponto de equilíbrio corresponde à posição para a qual a soma dos valores, interpretada como peso, é a mesma à esquerda e à direita dela. Esta posição, correspondendo à posição da média, não é necessariamente a posição na qual a área total do histograma é dividida em duas metades (mediana). É claro que, se a forma do histograma for simétrica, estas duas posições serão coincidentes. Veja a figura a seguir, ilustrando uma situação de simetria na qual temos que a média é igual à mediana.
+
+
+.. _fig-simetria:
+
+.. figure:: _resources/registros_de_tempo_simetria_1.png
+   :width: 300pt
+   :align: center
+
+   Histograma dos resgistros de tempo de atividade do Capítulo **A Natureza da Estatística** 
+
+
    
-Esse fato acarreta um mal condicionamento da média aritmética, já que valores atipicamente altos farão com que a média seja mais deslocada próxima a eles, se afastando assim da grande maioria dos valores observados. O mesmo se dá com valores atipicamente pequenos em relação à grande maioria, fazendo com que a média se afaste da maioria dos dados. 
+.. Esse fato acarreta um mal condicionamento da média aritmética, já que valores atipicamente altos farão com que a média seja mais próxima a eles, se afastando assim da grande maioria dos valores observados. O mesmo se dá com valores atipicamente pequenos em relação à grande maioria, fazendo com que a média se afaste da maioria dos dados. 
    
-Vejamos os seguintes conjuntos de dados: `D_1=\{1, 1, 4, 9, 10\}` e `D_2=\{1, 1, 4, 9, 100\}`.
 
-A média dos dados do conjunto `D_1` é `\bar{x}=\frac{25}{5}=5`, que representa bem este conjunto, pois nele existem dois valores acima da média e três valores abaixo da média que não estão muito afastados do valor da média. No entanto, a média do conjunto `D_2` é `\bar{x}=\frac{115}{5}=23`, valor bem maior do que a maioria dos dados observados no conjunto `D_2` . Isso mostra que em presença de dados atipicamente altos (baixos), deve-se tomar cuidado em escolher a média como medida de posição das observações coletadas. Uma :index:`medida robusta<medida robusta>`, isto é, pouco afetada para valores atípicos, deverá ser considerada em situações deste tipo. A mediana, que trataremos a seguir, é considerada uma medida robusta.
+Considere o exemplo a seguir. Numa tarde, 10 clientes interessados em obter um cartão de crédito oferecido por uma rede de supermercados informaram a uma atendente seus salários (em salários mínimos): `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}`. 
 
-Desta discussão podemos concluir que deve-se ter cautela em resumir os dados com a média aritmética, se a distribuição destes dados, representada pelo histograma, apresenta forma muito assimétrica, como mostram as figuras a seguir. 
+A média destes dados é, então, `\bar{x}=\frac{46}{10}=4,6`, que representa bem este conjunto, pois nele existem cinco valores acima da média e cinco valores abaixo da média e, estes valores não estão muito afastados do valor da média, conforme ilustrado no Diagrama de Pontos a seguir. 
 
 
-.. _fig-assimetriaadireita:
+.. _fig-diagramadepontos-media-sem-outlier:
 
-.. figure:: _resources/histogramacomassimetriadireita_1.png
+.. figure:: _resources/ilustrasomedia.png
    :width: 200pt
    :align: center
 
-   Histograma de distribuição com assimetria à direita
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` com destaque para a média do conjunto 
+
+
+Suponha uma pequena variação do conjunto de dez salários na qual no lugar do salário de 10 salários mínimos, o salário é de 100 salários mínimos. Assim, os registros são `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}`.  Observe que a única diferença entre os dois conjuntos está no valor extremo: um é 10 e o outro é 100. O que esta única diferença nos dois conjuntos acarreta na média?
+
+Com os dados do segundo conjunto, a média é dada por `\frac{136}{10}=13,6`, valor maior do que a maioria dos dados observados no conjunto, a saber, apenas uma observação é bem superior a 13,6. Observe, que para representar o diagrama de pontos destes dados usou-se um recurso de quebra do eixo dos dados devido ao valor atípico 100, em relação aos demais valores.
+
+
+.. _fig-diagramadepontos-media-com-outlier:
+
+.. figure:: _resources/ilustrasomediacomoutlier.png
+   :width: 400pt
+   :align: center
+
+   Diagrama de pontos do conjunto `\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` com destaque para a média do conjunto e quebra do eixo devido ao valor atípico
+
+Este exemplo simples mostra que na presença de dados atipicamente altos, deve-se tomar cuidado em escolher a média como medida de posição das observações coletadas. Uma medida pouco afetada para valores atípicos, conhecida como :index:`medida robusta<medida robusta>`,  deverá ser considerada em situações deste tipo. A mediana, que trataremos a seguir, é considerada uma medida robusta.
+
+Desta discussão podemos concluir que deve-se ter cautela em resumir os dados com a média quando sua distribuição, representada pelo histograma, apresenta forma muito assimétrica, como mostram as figuras a seguir. 
+
+.. _fig-assimetriaadireita:
+
+.. figure:: _resources/triciclodemao_histogramacdesigual.png
+   :width: 200pt
+   :align: center
+
+   Histograma da distribuição dos tempos de chegada na categoria triciclo de mão revelando assimetria à direita (mediana<média)
    
 
 .. _fig-assimetriaaesquerda:
@@ -277,52 +255,58 @@ Alguns textos usam os termos assimetria positiva para indicar assimetria à dire
 Mediana
 -------
 
-A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central depois de ordenar os dados.
+A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central dos dados ordenados.
 
-Se o conjunto tem um número ímpar de elementos, por exemplo, 9, então a posição central será a de número 5, tal que há quatro valores antes e quatro depois. Se o conjunto tem um número par de elementos, por exemplo, 10, então há duas posições centrais, a saber as posições 5 e 6 tal que há quatro observações antes da posição 5 e quatro posições depois da posição 6. Neste caso, a mediana é dada pela média aritmética dos dois valores centrais.
+Se o conjunto de dados tem uma quantidade ímpar de elementos então, considerando os dados ordenados, a mediana ocupará a posição central. Por exemplo, se o conjunto de dados tiver `n=9` elementos,  a posição central será a quinta. Nesse caso, haverá, ordenadamente, quatro elementos anteriores e quatro posteriores à mediana. 
 
-Resumindo, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados do conjunto, a mediana será dada por
+Por exemplo considere o seguinte conjunto de idades de crianças atendidas (na ordem de atendimento) em um ambulatório pediátrico de um Posto de Saúde na primeira segunda-feira do mês de março no turno da manhã `\{4,6,9,3,2,3,7,8,7\}`. Temos ao todo 9 observações cujos valores ordenados são
+
+
+.. math::
+
+   2 \leq 3 \leq 3 \leq 4 \leq \underbrace{\overbrace{6}^{\textsf{valor da quinta posição}}}_{\textsf{mediana}} \leq 7 \leq 7 \leq 8 \leq 9  
+
+Se o conjunto de dados tem uma quantidade par de elementos não será possível identificar "um" elemento central. Nesse caso, para a determinação da mediana serão considerados os dois elementos centrais da sequência ordenada. A mediana é dada pela média aritmética desses elementos. Por exemplo, se o conjunto de dados tiver 10 elementos, então as posições centrais são a 5a e a 6a. A mediana será a média dos elementos que ocupam essas posições na sequência ordenada. 
+
+Considere o exemplo dos salários de 10 clientes interessados em obter um cartão de crédito oferecido por uma rede de supermercados e que informaram à atendente seus salários (em salários mínimos): 
+
+
+.. math::
+
+   \{1, 1, 2, 3, \overbrace{4}^{\textsf{5a. posição}}, \underbrace{5}_{\textsf{6a. posição}}, 5, 6, 9, 100\}
+   
+Observe que os valores já estão ordenados e que o salário da 5a. posição é 4 e, o da 6a., é 5. Logo, a mediana dos salários será dada por 
+
+.. math::
+
+   \frac{4+5}{2}=4,5
+   
+Lembre que a média destes dados resultou em 13,6. Este exemplo ilustra a propriedade de que a mediana é pouco afetada na presença de valores atipicamente grandes (ou pequenos). Já a média não possui esta propriedade, sendo muito afetada na presença de valores atípicos. 
+
+
+
+De maneira geral, se `x_{(1)},x_{(2)},...,x_{(n)}` são os valores ordenados do conjunto de dados, a mediana será dada por
 
 `\textsf{Mediana}=\left \{ \begin{array}{lr} 
 x_{\left (\frac{n+1}{2}\right )}, &\textsf{ se }n \textsf{ for ímpar}\\ 
 \frac{1}{2} [ x_{\left (\frac{n}{2}\right )}+x_{\left (\frac{n}{2}+1\right )} ], &\textsf{ se }n \textsf{ for par.}\end{array}\right.`
 
-Nas duas atividades iniciais podemos facilmente verificar quem são as medianas de notas de Artes sem bonificação, a saber, a nota da posição 18, considerando-as em ordem crescente; e a mediana dos 100 melhores tempos para completar a maratona de Nova Iorque/2017 entre as mulheres, a saber, a média aritmética dos tempos nas posições 50 e 51, pois os dados já foram apresentados em ordem crescente. Assim, a mediana das notas de Artes sem bonificação é dada por 
+Considere a :ref:`ativ-notas-de-Artes` na qual tem-se `n=35` notas. Como 35 é ímpar, usando a definição anterior, podemos concluir que a mediana das notas será a nota na 18a. posição `\left (\frac{35+1}{2}=18\right )`, a saber, `\textsf{mediana}=x_{(18)}=6,5` .
+
+Considere a :ref:`ativ-maratona-de-NY` na qual tem-se `n=100` melhores tempo de chegada entre as mulheres. Como 100 é par, usando a definição anterior, podemos concluir que a mediana dos 100 melhores tempos será dada pela média dos tempos na 50a e na 51a. chegada, a saber, 
 
 
 .. math::
 
-   x_{(18)}=6,5, \textsf{ pois }n=35\textsf{ é ímpar,}
-   
-e neste caso 
-
-
-.. math::
-
-   \textsf{mediana=}\underbrace{x_{\left (\frac{n+1}{2}\right )}}_{\textsf{observação na posição (n+1)/2 após ordenar os dados}}=
-   
-   x_{\left (\frac{36}{2}\right)}=x_{(18)}
-   
-e, a mediana dos 100 melhores tempos entre as mulheres é dada por
- 
-.. math::
-   
-   \frac{x_{(50)}+x_{(51)}}{2}=\frac{2,949+2,949}{2}=2,949 \textsf{ horas}
-   
-Observe, neste último caso, que `n` é par e igual a 100 tal que a mediana é dada por 
-
-.. math::
-
-   \frac{ \overbrace{x_{\left (\frac{n}{2}   \right )} +x_{\left (\frac{n}{2}+1\right )}}^{\textsf{observações nas posições n/2 e (n/2)+1 após ordenar os dados}}} {2}=\frac{x_{(50)}+x_{(51)}}{2}
-
+   \textsf{mediana}=\frac{x_{(50)}+x_{(51)}}{2}=\frac{2,949+2,949}{2}=2,949 \textsf{ horas}
 
 **Mediana  para dados agrupados** 
    
 Voltando à :ref:`ativ-Notas-de-Artes`, suponha novamente que o coordenador tenha tido acesso apenas ao
-:ref:`fig-histograma-notas-sem-bonificacao`, sem conhecê-las individualmente.  Como ele poderia calcular a mediana da turma, considerando as notas antes da bonificação? Sabemos que a posição da mediana deve ser a posição central depois de ter as notas ordenadas. Na tabela de frequências observe que os intervalos já estão ordenados, mas apenas conhecemos a quantidade de notas que ocorreram em cada intervalo e não as notas individualmente. No entanto, é fácil, a partir da tabela, identificar em que intervalo estará a mediana, bastando para isso encontrar o intervalo que compreende a nota da posição 18. Aqui, vamos introduzir o conceito de :index:`frequência absoluta acumulada` de um intervalo de classe que corresponde à soma da frequência absoluta do intervalo mais a soma acumulada das frequências absolutas  de todos os intervalos anteriores. Veja a tabela a seguir, incluindo as frequências acumuladas.
+:ref:`fig-histograma-notas-sem-bonificacao`, sem conhecê-las separadamente.  Como ele poderia calcular a mediana da turma, considerando as notas antes da bonificação? Sabemos que a posição da mediana deve ser a posição central depois de ter as notas ordenadas. Na tabela de frequências observe que os intervalos já estão ordenados, mas apenas conhecemos a quantidade de notas que ocorreram em cada intervalo e não as notas individualmente. No entanto, é fácil, a partir da tabela, identificar em que intervalo estará a mediana, bastando para isso encontrar o intervalo que compreende a nota da posição 18. Aqui, vamos introduzir o conceito de :index:`frequência absoluta acumulada` de um intervalo de classe que corresponde à soma da frequência absoluta do intervalo mais a soma acumulada das frequências absolutas  de todos os intervalos anteriores. Veja a tabela a seguir, incluindo as frequências acumuladas.
   
   
-.. table:: Notas de artes agrupadas e frequ~encia absoluta acumulada
+.. table:: Notas de artes agrupadas e frequência absoluta acumulada
 
     +-----------+---------------------+--------------------------+--------------------------+
     | intervalo | frequência absoluta | ponto médio do intervalo | freq. absoluta acumulada |
@@ -338,26 +322,26 @@ Voltando à :ref:`ativ-Notas-de-Artes`, suponha novamente que o coordenador tenh
     
 Observe que a nota da posição 18 está no último intervalo, pois até o intervalo anterior, ]4,6], acumularam-se apenas 12 das 35 notas. 
     
-Uma forma de estimar a mediana no caso em que não conhecemos as notas individualmente é tomar o ponto médio do intervalo de classe que compreende o valor da posição central. Neste caso, teríamos que a nota mediana seria 7,0, o ponto médio do intervalo de classe que contém a mediana (]6,8]). Comparando este valor com o valor da mediana obtido, usando-se as 35 notas individuais, percebe-se que o erro de aproximação é de apenas 0,5 ponto já que sabemos que a nota da posição 18 é 6,5.
+Uma forma de estimar a mediana no caso em que não conhecemos as notas separadamente é tomar o ponto médio do intervalo de classe que compreende o valor da posição central. Neste caso, teríamos que a nota mediana seria 7,0, o ponto médio do intervalo de classe que contém a mediana (]6,8]). Comparando este valor com o valor da mediana obtido, usando-se as 35 notas individuais, percebe-se que o erro de aproximação é de apenas 0,5 ponto já que sabemos que a nota da posição 18 é 6,5.
 
 Resumindo, quando dispomos dos dados apenas na forma agrupada, para obter uma aproximação da mediana, deve-se identificar o intervalo de classe que compreende o valor da posição central e, então, calcular o ponto médio desta classe como valor aproximado da mediana.
     
 Existem outras formas de avaliar a mediana quando os dados estão agrupados e uma delas foi proposta no exercício 17 do capítulo **A Natureza da Estatística**.
   
-**Escolha entre a média e a mediana**
+**Escolha entre a média e a mediana como valor mais adequado para resumir a informação do conjunto de dados**
 
-Vimos que a média é uma medida de posição mal condicionada na presença de valores atípicos (muito afastados da maioria do dados) e de distribuições fortemente assimétricas. A mediana, por sua vez, é pouco afetada para valores extremos na distribuição, e por isso é dita ser uma :index:`medida robusta<medida robusta>`. 
+Vimos que a média é uma medida muito afetada na presença de valores atípicos (muito afastados da maioria do dados) e de distribuições fortemente assimétricas (caraceterizadas por histogramas alongados para à direita ou para à esquerda). A mediana, por sua vez, é pouco afetada para valores atípicos na distribuição, e por isso é dita ser uma :index:`medida robusta<medida robusta>`. 
 
-Por exemplo, considere os seguintes conjuntos de dados já ordenados: `D_1=\{1, 1, 4, 9, 10\}` e `D_2=\{1, 1, 4, 9, 10, 101\}`. 
+Por exemplo, vamos voltar ao exemplo sobre as informações de salário entre os interessados para obter um cartão de crédito de uma rede de supermercados. Lembre-se que trabalhamos com dois conjuntos de dados, a saber, `C_1=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 10\}` e `C_2=\{1, 1, 2, 3, 4, 5, 5, 6, 9, 100\}` .  
 
-A média dos dados de `D_1` é `\bar{x}=\frac{25}{5}=5` e, a `\textsf{mediana}=x_{(3)}=4` , observando que os dados já estão ordenados.  
+A média dos dados do conjunto `C_1` é `\bar{x}=\frac{46}{10}=4,6` e, a `\textsf{mediana}=\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5` . 
 
-Tanto a média como a mediana deste conjunto são valores que representam bem o conjunto: observe que os demais valores no conjunto `D_1` não estão muito afastados dos valores da média e da mediana e, de forma equilibrada, alguns estão abaixo deles e outros, acima deles.
+Tanto a média, como a mediana do conjunto `C_1` são valores que o representam bem: observe que os demais valores no conjunto `C_1` não estão muito afastados dos valores da média e da mediana e, de forma equilibrada, alguns estão abaixo deles e outros, acima deles.
 
-Por outro lado, a média dos dados de `D_2` é `\frac{126}{6}=21` e `\textsf{mediana}=x_{(3)}=\frac{4+9}{2}=6,5`, o que nos mostra o mal condicionamento da média e a robustez da mediana na presença do valor atípico 101, incluído no conjunto de dados `D_1` no lugar do valo 10. Na presença do valor atípico (101), a média é muito afetada, mudando de 5 para 21, enquanto que a mediana é pouco afetada, mudando de 4 para 6,5.  Observe que apenas um valor no conjunto `D_2` está acima da média. 
+Por outro lado, a média dos dados do conjunto `C_2` é `\frac{136}{10}=13,6`, enquanto que a `\textsf{mediana}` é dada por  `\frac{x_{(5)}+x_{(6)}}{2}=\frac{4+5}{2}=4,5`.  Este último exemplo ilustra como a média é fortemente influenciada pela presença do valor atípico 100, enquanto a mediana não.   Na presença do valor atípico (100), a média é muito afetada, mudando de 4,6 para 13,6, enquanto que a mediana não foi afetada, mantendo-se igual a 4,5.  Observe que apenas um valor no conjunto `C_2` está acima da média. 
 
 
-Em distribuições aproximadamente simétricas temos que a média e a mediana são valores próximos um do outro, esta é uma das razões que levam muitas pessoas a confundir estas duas medidas, achando que elas representam a mesma posição na distribuição dos dados qualquer que seja a situação. Mas, vimos que em distribuições com assimetria à direita, veja, por exemplo a figura  :ref:`fig-assimetriaadireita`, a média é maior do que a mediana e, em distribuições com assimetria à esquerda, veja por exemplo a figura :ref:`fig-assimetriaaesquerda`, a média é menor do que a mediana.
+Em distribuições aproximadamente simétricas (veja a :ref:`fig-simetria` ) temos que a média e a mediana são valores próximos um do outro, esta é uma das razões que levam muitas pessoas a confundir estas duas medidas, achando que elas representam a mesma posição na distribuição dos dados qualquer que seja a situação. Mas, vimos que em distribuições com assimetria à direita, veja, por exemplo a figura  :ref:`fig-assimetriaadireita`, a média é maior do que a mediana e, em distribuições com assimetria à esquerda, veja por exemplo a figura :ref:`fig-assimetriaaesquerda`, a média é menor do que a mediana.
 
 
 ----
@@ -390,28 +374,28 @@ O conceito de moda é adequado para conjuntos de dados qualitativos ou quantitat
 
 A pergunta que surge naturalmente agora é: Quando a moda será preferível à média ou à mediana?
 
-Se a distribuição for bem equilibrada, isto é, o histograma da distribuição é aproximadamente simétrico, e há uma única moda, então as três medidas-resumo (média, mediana e moda) são qualitativamente equivalentes. Nesse caso, em geral, preferiremos tomar a média como medida de posição, pois ela possui propriedades relevantes para a inferência estatística. 
+Se o histograma da distribuição é aproximadamente simétrico, e há uma única moda, então as três medidas-resumo (média, mediana e moda) serão valores aproximadamente iguais. Nesse caso, em geral, preferiremos usar a média como medida de posição, pois ela possui propriedades relevantes para a inferência estatística. 
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/histapsimetrico.png
-   :width: 200pt
+.. figure:: _resources/registros_de_tempo_simetria_2.png
+   :width: 300 pt
    :align: center
 
-   Histograma de distribuição aproximadamente simétrica
+   Histograma simétrico: distribuição unimodal (Dados: Registros de tempo de atividade do capítulo **A Natureza da Estatística**)
 
-Se, no entanto, a distribuição é altamente assimétrica com valores atípicos e unimodal, então preferiremos, em geral, tomar a mediana como medida resumo, embora a moda também possa ser usada em certas situações neste caso.
+Se, no entanto, a distribuição apresenta forte assimetria com a presença valores atípicos e unimodal, então preferiremos, em geral, tomar a mediana como medida resumo.
 
 .. _fig-assimetriadireita:
 
-.. figure:: _resources/histogramacomassimetriadireita_1.png
+.. figure:: _resources/triciclodemao_histogramacdesigual.png
    :width: 200pt
    :align: center
 
-   Histograma de distribuição com assimetria à direita
+   Histograma de distribuição com assimetria à direita (Tempos de chegada para a categoria Triciclo de mão na maratona de Nova Iorque/2017).
 
-Se, por outro lado, o histograma da distribuição é do tipo simétrico e bimodal como na representação esquemática abaixo, então nem a média, nem a mediana são boas medidas de representação dos dados, pois estas se situariam no "vale" da distribuição em que há pouca incidência de valores. Assim, neste caso, preferiremos quase sempre as duas modas como medidas resumo.
+Se, por outro lado, o histograma da distribuição é do tipo simétrico e bimodal como na representação esquemática a seguir, então nem a média, nem a mediana serão indicadas como medidas de representação dos dados, pois observe na figura, que elas estarão situadas bem no centro onde há pouca incidência de valores. Assim, neste caso, as duas modas serão mais úteis para descrever de forma resumida este conjunto de dados.
 
 
 .. _fig-coloque-aqui-o-nome:
@@ -436,45 +420,18 @@ Quartis
 
 Os :index:`quartis<quartis>` são os três valores que dividem a distribuição em quatro partes de frequências iguais. 
 
-O primeiro quartil (`\textsf{Q}_1`) é o valor da distribuição em que abaixo dele há 25% da informação e acima dele há 75% da informação. 
+O primeiro quartil (`\textsf{Q}_1`) é o valor da distribuição para o qual a frequência relativa de valores abaixo dele é igual 25% do número de observações do conjunto de dados e, consequentemente, acima dele, é 75% do número de observações do conjunto de dados.
 
-O segundo quartil (`\textsf{Q}_2`) é precisamente a mediana da distribuição (o valor que divide a distribuição ao meio). 
+O segundo quartil (`\textsf{Q}_2`) é a mediana da distribuição ou, equivalentemente, o  valor da distribuição para o qual que a frequência relativa de valores abaixo dele é 50% do número de observações do conjunto de dados e, consequentemente, acima dele, é 50% do número de observações do conjunto de dados.
 
-Finalmente o terceiro quartil (`\textsf{Q}_3`) é o valor da distribuição em que abaixo dele há 75% da informação e acima dele há 25% da informação. 
+Finalmente o terceiro quartil (`\textsf{Q}_3`) é o valor da distribuição
+para o qual a frequência relativa de valores abaixo dele é igual 75% do número de observações do conjunto de dados e, consequentemente, acima dele, é 25% do número de observações do conjunto de dados. 
 
-Em resumo os quartis de uma distribuição de frequências ou conjunto de valores numéricos são as três medidas que repartem os dados em quatro intervalos de frequências relativas iguais a `\frac{1}{4}=0,25` , pois se agruparmos os dados nos intervalos `[x_{(1)},\textsf{Q}1[, [\textsf{Q}1,\textsf{mediana}[,[\textsf{mediana},\textsf{Q}3[ \textsf{ e } [\textsf{Q}3,x_{(n)}]`, cada um deles terá 0,25 como frequência relativa.
+Você já determinou os quartis para os dados da :ref:`ativ-maratona-de-NY` referentes aos 100 melhores tempos da maratona para a categoria mulheres.
 
-**Um método para a determinação dos quartis**
+Como `n=100`, podemos tomar como o primeiro quartil o tempo da 25a. posição `\left (\frac{100}{4}=25\right )`, a saber, `\textsf{Q}1=2,764` h, já vimos que a mediana é 2,949 h e, para o terceiro quartil podemos tomar o  o valor da 75a. posição `\left (3\cdot\frac{100}{4}=75\right )`, a saber, `\textsf{Q}3=2,998` h. 
 
-Existem métodos diferentes para determinar os quartis de um conjunto `\{x_1,x_2,\cdots,x_n\}` de `n` observações. Um método simples será descrito a seguir. 
-
-Tome `\textsf{Q}1` como o valor correspondente à posição `\frac{n+1}{4}` depois de ordenar os dados. 
-
-Tome `\textsf{Q}2` como a mediana do conjunto de dados, calculada pelo método apresentado para o cálculo da mediana.
-
-Tome `\textsf{Q}3` como o valor correspondente à posição `\frac{3n+1}{4}` depois de ordenar os dados. 
-
-Se os resultados de  `\frac{n+1}{4}` e `\frac{3n+1}{4}` não forem números inteiros, arredonde-os para o inteiro mais próximo. Se a parte decimal do resultado destas operações for 0,5; calcule a média dos dois valores nas posições correspondentes. Por exemplo, suponha `n=21` tal que `(21+1)/4=5,5`. Assim, neste caso, para obter o primeiro quartil, calcule a média dos valores nas posições 5 e 6.
-
-Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, a saber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que os intervalos [0,8 ; 5,4[, [5,4 ; 6,5[ ; [6,5 ; 7,4[ e [7,4 ; 8,0] compreendem, cada um, aproximadamente 25% das notas nesta turma. Observe que os comprimentos destes intervalos são diferentes, a saber, 4,6; 1,1; 0,9 e 0,6.
-
-
-Vejamos agora como ficam estes intervalos para os dados da :ref:`ativ-maratona-de-NY` referentes aos 100 melhores tempos da maratona para a categoria mulheres.
-
-Como `n=100`, para o primeiro quartil tomaremos o valor da posição `\frac{100+1}{4}=25,25 \approx 25`, a saber, `\textsf{Q}1=2,764` h, já vimos que a mediana é 2,949 h e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 100+1}{4}=75,25\approx 75`, a saber, `\textsf{Q}3=2,998` h. Logo, podemos dizer que os intervalos [2,448 ; 2,764[ , [2,764 ; 2,949[ ; [2,949 ; 2,998[ e [2,998 ; 3,085] compreendem, cada um, aproximadamente 25% dos 100 melhores tempos para completar a maratona entre as mulheres. Observe novamente que os comprimentos destes intervalos são diferentes, a saber, 0,316; 0,185; 0,049 e 0,087.
-
-
-Para que servem os quartis da distribuição?
-
-Os quartis servem para 
-
-#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
-#. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
-#. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
- 
-Trabalharemos essas aplicações na seção :ref:`sec-Parasabermais` deste capítulo.
-
-
+Já vimos como determinar mediana (ou segundo quartil) de um conjunto de `n` dados. Um método simples para obter os demais quartis, Q1 e Q3, é considerar dois novos conjuntos de dados, o primeiro, consistindo da primeira metade dos valores ordenados e, o segundo, consistindo da segunda metade. Depois, basta determinar a mediana de cada um destes dois conjuntos, obtendo Q1 e Q3, respectivamente.
 
 .. _sec-praticando1:
 
@@ -493,7 +450,7 @@ Atividade: Categoria homens na maratona
 
    **Objetivos específicos** Usar medidas de posição para a comparação das distribuições de uma mesma variável em dois grupos diferentes. 
    
-   **Observações e sugestões**
+   **Observações e sugestões** Nesta atividade serão comparados os dados dos 100 melhores tempos na maratona de Nova Iorque/2017 para as categorias homens e mulheres. A tabela com o s 100 melhores tempos em horas para a categoria homens é fornecida. A comparação será feita com base nas medidas de posição média, quartis, mínimo e máximo, que são fáceis de serem determinadas apesar da quantidade de dados ser 100. No caso da média, a soma dos 100 tempos é informada. 
 
 
 Considere os dados da categoria Homens da Maratona da Cidade de Nova Iorque do ano 2017 apresentados na tabela a seguir, já convertidos para horas. 
@@ -537,11 +494,11 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
    Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova Iorque do ano 2017
 
 
-#. Calcule a média dos 100 melhores tempos na categoria homens, babendo que a soma dos tempos é dada por 251,1617 horas. 
+#. Calcule a média dos 100 melhores tempos na categoria homens, sabendo que a soma dos tempos é dada por 251,1617 horas. 
 #. Calcule a mediana dos 100 melhores tempos na categoria homens.
 #. Identifique o intervalo de classe modal dos 100 melhores tempos na categoria homens.
 #. Determine os quartis dos 100 melhores tempos na categoria homens.
-#. Localize no histograma a posição da média e dos quartis.
+#. Localize no histograma a média e os quartis.
 #. Compare com os resultados obtidos para a categoria homens com os obtidos para a categoria mulheres na :ref:`ativ-maratona-de-NY`: completando a tabela a seguir. 
 
     
@@ -592,7 +549,6 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
          +---------+----------+--------+
 
 
-
       .. _fig-coloque-aqui-o-nome:
 
       .. figure:: _resources/Histograma_homens_resposta.png
@@ -608,6 +564,7 @@ A figura a seguir mostra um histograma destes dados, considerando-se 10 interval
 Atividade: Comparação das diferentes categorias na maratona
 -----------------------------------------------------------
 
+.. ATENÇÃO:deixar apenas as categorias cadeira de rodas e triciclo de mão 
 
 .. admonition:: Para o professor
 
@@ -620,19 +577,19 @@ Atividade: Comparação das diferentes categorias na maratona
    
    **Observações e sugestões**
    
-   Esta atividade introduz os elementos necessários para a comparação de dois histogramas, a saber: mesmas escalas nos eixos, e colunas de frequências relativas.
+   Esta atividade introduz os elementos necessários para a comparação de dois histogramas, a saber: mesmas escalas nos eixos e colunas de frequências relativas.
    
    Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de disperssão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
    
-   As perguntas não tem respostas fechadas, tem o intuito de gerar uma discussão sobre os assuntos já colocados.
+   As perguntas não tÊm respostas fechadas, têm o intuito de gerar uma discussão sobre os assuntos já colocados.
    
    
-Observe os histogramas a seguir referentes as quatro categorias da Maratona de Nova Iorque: mulheres, homens, cadeira de rodas e triciclo de mão. 
+Observe os histogramas a seguir referentes as categorias de cadeira de rodas e triciclo de mão da Maratona de Nova Iorque em 2017. 
 
 
 .. _fig-coloque-aqui-o-nome:
 
-.. figure:: _resources/4histogramas.png
+.. figure:: _resources/Histogramas_cadeira_triciclo.png
    :width: 300pt
    :align: center
 
@@ -641,21 +598,40 @@ Observe os histogramas a seguir referentes as quatro categorias da Maratona de N
 
 #. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
 
-#. Em qual categoria se encontra o atleta que completou a maratona no menor tempo? E no maior tempo?
+#. Em qual categoria se encontra o atleta que completou a maratona no maior tempo?
    
-#. Você consegue estimar a média das primeiras duas categorias observando o gráfico? Você pensa que serão muito distintas das outras categorias?
+#. Você consegue estimar o tempo médio destas categorias observando os histogramas? Você acha que elas serão muito diferentes das de homens e mulheres (:ref:`ativ-maratona-categoria-homens`)?
 
-#. Observe a tabela a seguir e marque as médias no histograma. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+#. Observe o quadro a seguir e marque as médias nos histogramas. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
 
-#. Observe que as médias não são muito diferentes, porém, as distribuições são muito diferentes. Se você conhecesse apenas a média, conseguiria imaginar esses histogramas? Qual é a distribuição mais dispersa, e a menos dispersa?
+   .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
 
-.. table:: Média das quatro categorias da maratona de Nova Iorque 2017
+      +-----------+------------------+-----------------+
+      | Categoria | Cadeira de rodas | Triciclo de mão |
+      +-----------+------------------+-----------------+
+      | Média     | 2,59             | 2,73            |
+      +-----------+------------------+-----------------+
+  
+#. Observe que as médias não são muito diferentes, porém, as distribuições são similares. Se você conhecesse apenas a média, seria capaz de perceber a forma destes histogramas? Por quê?
 
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Categoria | Cadeira de rodas | Triciclo de mão | Mulheres (corrida) | Homens (corrida) |
-  +-----------+------------------+-----------------+--------------------+------------------+
-  | Média     | 2,59             | 2,73            | 2,87               | 2,51             |
-  +-----------+------------------+-----------------+--------------------+------------------+
+#. Comparando os dois histogramas, qual distribuição apresenta maior dispersão? Por quê?
+
+.. admonition:: Resposta 
+
+  #. As escalas horizontal e vertical são coincidentes em ambos os histogramas para permitir a comparação. Isto foi discutido no Capítulo **A Natureza da Estatística**.
+  
+  #. Observando-se os histogramas o maior tempo está na categoria de Triciclo de mão.
+  
+  #. A simples visualização pode remeter a estimativa de 4 horas para estas categorias, valor bem maior do que as médias para homens e mulheres (:ref:`ativ-maratona-categoria-homens`). No entanto, este valor excede muito as médias reais, apresentadas. Isto mostra que estimar o centro de equilíbrio de uma distribuição a partir do histograma não é trivial.
+  
+  #. Ambos os histogramas apresentam assimetria à direita: grande concentração de dados à esquerda e forma alongada para a direita.
+  
+  #. Não é possível, apenas um número é insuficiente para caracterizar a forma do histograma. Outras informações são necessárias para isto.
+  
+  #. O triciclo de mão apresenta maior dispersão, considerando a amplitude.
+  
+
+
 
 
 
