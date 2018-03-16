@@ -36,7 +36,7 @@ Quem comprar `20` unidades dessa mercadoria, na promoção, pagará por unidade,
    :width: 300pt
    :align: center
 
-Esse veículo foi vendido pelo seu primeiro dono, após `5` anos de uso, por R$ `24.000,00`. Sabendo-se que o valor comercial do veículo atinge seu valor mínimo após `20` anos de uso, e que esse valor mínimo corresponde a `20%` do valor que tinha quando era novo. Responda:
+Esse veículo foi vendido pelo seu primeiro dono, após `5` anos de uso, por R$ `24.000,00`. Sabendo-se que o valor comercial do veículo atinge seu valor mínimo após `20` anos de uso, e que esse valor mínimo corresponde a `20\%` do valor que tinha quando era novo. Responda:
 
 #. Qual o valor de fábrica do veículo (valor quando era novo)?
 #. Qual o função `f(x)=ax+b` que está definida no gráfico acima no intervalo `[0,20]` ?
@@ -117,38 +117,334 @@ O vigésimo termo dessa progressão corresponde a:
 #. −30		
 #. − 20
 
+`12.` (ENEM-2011) O número mensal de passagens de uma determinada empresa aérea aumentou no ano passado nas seguintes condições: em janeiro foram vendidas `33 000` passagens; em fevereiro, `34 500`; em março, `36 000`. Esse padrão de crescimento se mantém para os meses subsequentes. Quantas passagens foram vendidas por essa empresa em julho do ano passado?
+
+#. `38 000`
+#. `40 500`
+#. `41 000`
+#. `42 000`	
+#. `48 000`
+
+
+
+`13.` (UNICAMP) A ANATEL determina que as emissoras de rádio FM utilizem as frequências de `87,9` a `107,9` MHz, e que haja uma diferença de `0,2` MHz entre emissoras com frequências vizinhas. A cada emissora, identificada por sua freqüência, é associado um canal, que é um número natural que começa em `200`. Desta forma, à emissora cuja frequência é de `87,9` MHz corresponde o canal `200`; à seguinte, cuja frequência é de `88,1` MHz, corresponde o
+canal `201`, e assim por diante. Pergunta-se:
+
+
+a) Quantas emissoras FM podem funcionar [na mesma região], respeitando-se o intervalo de frequências permitido pela ANATEL? Qual o número do canal com maior frequência?
+
+
+b) Os canais `200` e `285` são reservados para uso exclusivo das rádios comunitárias. Qual a frequência do canal `285`, supondo que todas as frequências possíveis são utilizadas?
+
+
+`14.` (UFRJ-2000) Mister MM, o Mágico da Matemática, apresentou-se diante de uma platéia com `50` fichas, cada uma contendo um número. Ele pediu a uma espectadora que ordenasse as fichas de forma que o número de cada uma, excetuando-se a primeira e a última, fosse a média aritmética do número da anterior com o da posterior. Mister MM solicitou a seguir à espectadora que lhe informasse o valor da décima sexta e da trigésima primeira ficha, obtendo como resposta `103` e `58` respectivamente. Para delírio da platéia, Mister MM adivinhou então o valor da última ficha.
+
+Determine você também este valor.
+
+
 .. admonition:: Resposta 
 
-   `1.` Os pontos estão sobre a reta `f(x)=-4x+170`. Quem comprar `20` unidades irá pagar R$ `90,00`, portanto R$ `4,50` a unidade.
+   `1.` Temos uma reta que contém esses 6 pontos dada pela função afim `V` ,tal que `V(q)=aq+b`, onde `V(q)` representa o valor total da compra de `q` unidades. Com isso a taxa de variação de `V` é dada por `a=\frac{\Delta_x}{\Delta_y}=\frac{50-150}{30-5}=\frac{-100}{25}=-4`, logo temos que `V(q)=-4q+b`, substituindo o ponto `(5,150)` ou o ponto `(30,50)` temos que `b=170`. Daí os pontos estão sobre a reta `V(q)=-4q+170`. Quem comprar `20` unidades (`V(20)`)irá pagar R$ `90,00`, portanto para cada unidade temos:  (`90/20=4,5`), ou seja, R$ `4,50` a unidade.
+   
+   De outro modo, poderíamos achar os R$ `90,00` de outras maneiras, uma delas utiliza o fato que toda função afim possui taxa de variação constante, logo: `a=\frac{\Delta_x}{\Delta_y}=\frac{1950-750}{x-100}=\frac{50-150}{30-5}=-4`, o que resulta em `x=90`
    
    `2.`
    
    #. Entre `0` e `50` kWh.
-   #. Aproximadamente `178,94` kWh.
+   #. Temos os pontos `A=(100,750)` e `B=(200,2250)` , a reta que passa por esses pontos pode ser representada pela função afim: `f(x)= 15x-750` , queremos obter o valor de `x` tal que, `f(x)=1950` que é dado por: `1950= 15x-750`, que resulta em `x=180`kWh.
    
    `3.`
    
-   #. Na década de `40`.
-   #. Na década de `2040`.
+   #. A abscissa de ordenada `5`, está entre `1940` e `1950`. Portanto teremos `5000` habitantes na década de `40`.
+   #. Sabendo que os pontos `(1960,7)` e `(1980,10)` pertencem à a função afim dada por `P(t)=at+b` (onde `P(t)` nos informa a quantidade de habitantes em milhares de pessoas a cada ano `t`) temos `a=\frac{3}{20}` e `b=-287`. Daí, se substituirmos: `P(t)=20`, teremos `t=2046,6666...`. Portanto teremos `20000` habitantes na década de `2040`.
    
    `4.`
    
-   #. R$ `30 000,00`.
-   #. `f(x)=-1200x+30000`.
-   #. 27600,00` reais.
+   #. Pelos dados do problema e sendo `V` o valor de fábrica do veículo, temos que os pontos `(0,V)` ; `(5,24000)` e `(20,\frac{v}{5}` pertencem ao gráfico da função afim `f` dada por `f(x)=ax+b`, com isso temos que a taxa de variação é representada por `a=\frac{24000-V}{5-0}=\frac{0,2V-V}{20-0}` daí encopntramos `V=30000`, ou seja o valor de fábrica do veículo é de R$ `30 000,00`.
+   #. Ao utilizarmos os pontos `(0,30000)` e `(5,24000)`, encontramos: `f(x)=-1200x+30000`.
+   #. Ao substituirmos `x=2` em `f`, encontramos `f(2)=27600`, portanto o valor comercial do veículo após dois anos de uso é de  27600,00` reais.
    
-   `5.` `V=65`.
+   `5.` Sendo `a` a taxa de variação da função afim, representada no gráfico pela reta que contém os pontos `(100,5)` ; `(200,20)`  e `(500,V)`, temos que `a=\frac{V-20}{500-200}=\frac{20-5}{200-100}` logo: `a=\frac{V-20}{300}=\frac{15}{100}`. Portanto temos `V=65`.
    
-   `6.` Letra e).
+   `6.` O gráfico deve ser apresentado por partes, a primeira parte com valores do eixo horizontal de `0` a `100`, passando pelos pontos `(0,750)` `(100,1050)`, após isso o gráfico deverá ser representada por uma outra reta mais inclinada já que a taxa de variação aumentou de `3` para `9`. Gabarito Letra (E).
    
-   `7.` `30` horas.
+   `7.` Sendo `A` a função afim dada por `A(x)=-10x+720` que representa a quantidade de litros de água do reservatório `A` após `x` horas de perda de água. E, sendo `B` a função afim dada por `B(x)=12x+60` que representa a quantidade de litros de água do reservatório `B` após `x` horas de ganho de água. Para encontrarmos o valor de `x_0`, basta igualarmos as funções, daí teremos: `12x+60=-10x+720` o que resulta em `x_0=30`. Portanto    `30` horas.
    
-   `8.` `(8,13,18,23,28, 33,38,43,48,53,58,63,68,73,78,83)`
+   `8.` `(8,13,18,23,28, 33,38,43,48,53,58,63,68,73,78,83)` **Sugiro trocar pela 12**
 
-   `9.` (E)
+   `9.` Precisamos saber quantos números multiplos de `15` há de `1` a `10000`, depois subtrairmos este valor de `10000`, para isso basta descobrir a quantidade `n` de termos da P.A.: `(15,30,45,...,9990)` daí temos: `9990=15+(n-1) \cdot 15` e concluimos que `n=666`, portanto `10000-666=9334`. Gabarito letra (E)
    
-   `10.` (D)
+   `10.` (D) **Sugiro trocar pela 13**
    
-   `11.` (A)
+   `11.` (A) **Sugiro trocar pela 14**
+   
+   `12.` O padrão de crescimento adotado caracteriza a sequência: `(33000,34500,36000)` como uma P.A. de razão `r=1500` e `a_1=33000`. Queremos encontrar o sétimo termo dessa P.A. dado por: `a_7=33000+6 \cdot 1500=42000`. Gabarito letra D.
+   
+   `13.` 
+   
+   #. Os números que representam as frequências formam uma PA de  primeiro termo `87,9`; razão `0,2` e último termo `107,9`. Logo, `87,9 + (n-1) \cdot 0,2` o que resulta em `n = 101`. Temos então, `101` emissoras. Os números dos canais constituem uma PA com `101` termos, onde o primeiro termo é `200` e razão `1` com `a_{101} = 200 + (101 – 1) \to a_{101} = 300`.  Portanto temos `101` emissoras, e `300` é o número do canal com maior frequência.  
+   
+   #. Na PA formada pelos números dos canais, temos: `285 = 200 + n-1 \to n = 285 – 199 = 86`. Daí, na PA constituída pelos números das frequências: `a_{86} = 87,9 + (86-1).0,2 = 87,9 + 17 = 104,9`. Portanto a frequência do canal `285` é `104,9` MHz. 
+
+   `14.` A condição de ordenação das fichas caracteriza como P.A. a sequência abordada, com isso, temos `a_{16}=103` e `a_{31}=58`, obtendo assim as os sistema linear cujas duas equações são dadas por: `a_1+15r=103` e `a_1+30r=58` resolvendo encontramos: `a_1=148` e `r=-3`. Logo `x_{50}=148+49 \cdot (-3)=1` e portanto  `x_{50}=1`.
 
 
+Questão Extra:
+
+Trace o gráfico das funções afins `f`, informando os pontos de intersecção com os eixos coordenados descritas por:
+
+#. `f(x)=2x-4`
+#. `f(x)=x+3`
+#. `f(x)=-x+2`
+#. `f(x)=2x`
+#. `f(x)=-x`
+#. `f(x)=6`
+#. `f(x)=-4`
+#. `f(x)=5x-1`
+
+
+Resposta:
+
+
+.. figure:: _resources/e1_1.jpg
+   :width: 300pt
+   :align: center
+
+
+
+.. figure:: _resources/e2_1.jpg
+   :width: 300pt
+   :align: center
+
+
+
+.. figure:: _resources/e3.jpg
+   :width: 300pt
+   :align: center
+
+ 
+.. figure:: _resources/e4.jpg
+   :width: 300pt
+   :align: center
+
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Temperatura Controlada
+------------------------------
+
+Num laboratório, um químico conseguiu controlar a variação de temperatura de dois compostos. A variação de ambos está associada às funções afins `f` e `g`, de maneira que a taxa de variação das temperaturas de cada um dos compostos seja constante. Observe o gráfico, onde o eixo das ordenadas indica a temperatura (em graus Celsius) de cada composto em função do tempo `t`, em minutos. O gráfico da figura a seguir modela a situação:
+
+
+.. figure:: _resources/at_temp_1.jpg
+   :width: 500pt
+   :align: center
+
+O gráfico da função `f` passa pelos pontos `A=(0,-4)` e `B=(4,0)`, indicando que o composto associado à `f` está com uma temperatura de `-4\,^{\circ}\mathrm{C}` no início da medição e após `4` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+O gráfico da função `g` passa pelos pontos `C=(0,2)` e `D=(2,0)`, indicando que o composto associado à `g` está com uma temperatura de `2\,^{\circ}\mathrm{C}` no início da medição e após `2` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+Com base nas informações do texto responda as perguntas a seguir:
+
+#. Sendo `f` e `g` dadas por `f(t)=at+b` e `g(t)=mt+n`, quais os valores dos coeficientes `a`, `b`, `m` e `n`?
+
+#. A temperatura do composto associado à função `f` estão aumentando ou diminuindo? E do composto associado à função `g`?
+
+#. Em quanto tempo cada composto atinge a temperatura de 
+
+   `c.1)` `1\,^{\circ}\mathrm{C}`? 
+   
+   `c.2)` `-3\,^{\circ}\mathrm{C}`?`
+   
+   `c.3)` `-8\,^{\circ}\mathrm{C}`?
+   
+   `c.3)` `10\,^{\circ}\mathrm{C}`?
+   
+
+#. Após quantos minutos os dois compostos terão a mesma temperatura? E que temperatura é essa?
+
+
+.. admonition:: Resposta 
+
+   #. Como `f` intersecta o eixo das ordenadas no ponto `A=(0,-4)` temos que `b=-4`; substituindo o ponto `B=(4,0)`, ou seja, fazendo `f(4)=0` encontramos `a=1`. Do mesmo modo, `g` intersecta o eixo das ordenadas no ponto `C=(0,2)`, logo temos que `n=2`; substituindo o ponto `D=(2,0)`, ou seja, fazendo `f(2)=0` encontramos `m=-1`.
+
+   #. Observando os gráficos temos que: a temperatura do composto associado à função `f` está aumentando, e a temperatura do composto associado à função `g` está diminuindo.
+   
+   #. 
+   
+      `c.1)` Fazendo `f(t)=1` encontramos `t=5`, ou seja o composto associado à função afim `f`, atinge `1\,^{\circ}\mathrm{C}` após `5` minutos. E fazendo `g(t)=1` encontramos `t=1`, ou seja o composto associado à função afim `g`, atinge `1\,^{\circ}\mathrm{C}` após `1` minuto.
+      
+      `c.2)` Fazendo `f(t)=-3` encontramos `t=1`, ou seja o composto associado à função afim `f`, atinge `-3\,^{\circ}\mathrm{C}` após `1` minuto. E fazendo `g(t)=-3` encontramos `t=5`, ou seja o composto associado à função afim `g`, atinge `-3\,^{\circ}\mathrm{C}` após `5` minutos.
+      
+      `c.3)` Fazendo `f(t)=-8` encontramos `t=-4`, ou seja o composto associado à função afim `f`, nunca atingirá essa temperatura, já que `f` é sempre maior ou igual a  `-4\,^{\circ}\mathrm{C}`. E fazendo `g(t)=-8` encontramos `t=10`, ou seja o composto associado à função afim `g`, atinge `-8\,^{\circ}\mathrm{C}` após `10` minutos.
+      
+      `c.4)` Fazendo `f(t)=10` encontramos `t=14`, ou seja o composto associado à função afim `f`, atinge `10\,^{\circ}\mathrm{C}` após `14` minutos. E fazendo `g(t)=10` encontramos `t=-8`, ou seja o composto associado à função afim `g`, nunca atingirá essa temperatura, já que `g` é sempre menor ou igual a  `2\,^{\circ}\mathrm{C}`.
+      
+
+   #. Basta fazermos `f(t)=g(t)` , ou seja `t-4=-t+2`, resolvendo encontramos `t=3` minutos, e a temperatura é igual a `f(3)=g(3)=-1\,^{\circ}\mathrm{C}`. Portanto, os dois compostos atigem `-1\,^{\circ}\mathrm{C}` após `3` minutos de observação.
+
+
+**Exemplos de Grandezas Inversamente Proporcionais**
+
+No ensino fundamental, mais precisamente no fim do `7\,^{\circ}` ano, você teve contato com o conceito de proporcionalidade, provavelmente você aprendeu a identificar se as relações entre duas grandezas eram diretamente ou inversamente proporcionais. Por outro lado foi apresentado a algumas técnicas de resolução de problemas que envolviam esses conceitos, como por exemplo a famosa "Regra de Três". 
+
+Nessa atividade propormos que você relembre esses conceitos, na medida que identifique, em situações reais, se há ou não uma relação proporcional entre duas grandezas apresentadas, e caso haja identifique se a relação é direta ou inversa.
+
+Para isso imaginemos algumas situações ocorridas num dia qualquer no cotidiano de uma padaria.
+
+Situação `1` 
+
+"O padeiro sabe a quantidade exata de **quilos de farinha de trigo** utilizada para assar uma determinada **quantidade de pães**."
+
+Situação `2` 
+
+"Para assarmos 300 pães, a **quantidade de fornos** interfere diretamente no **tempo** de confecção desses pães.
+
+
+Situação `3`
+
+"Um cliente, ao comprar pães nessa padaria, sabe quea **quantidade de pães** comprados está relacionada com o **preço total (em reais)**  que vai pagar pelos pães."
+
+
+Situação `4`
+
+"O gerente dessa padaria começou a anotar a **quantidade de clientes** presentes na padaria durante um certo período de **tempo**.
+
+Situação `5`
+
+"A garçonete percebeu que às `8` horas o porteiro tomou um copo d`àgua, e às `9` horas também, ela tentou relacionar o **tempo** com a **quantidade de copos de água** que o porteiro bebeia.
+
+Situação `6`
+
+"A cozinheira ao fritar rabanadas sabe que a **intensidade do fogo** que atinge a frigideira interfere na **temperatura** do óleo de cozinha utilizado na fritura.
+
+Situação `7`
+
+"O entregador da padaria percorre **distâncias** diferentes em cada entrega e o **tempo** de entrega também muda.
+
+Situação `8`
+
+"O mesmo entregador, entrega pães numa determinada casa todos os dias, e eles sempre faz o mesmo percurso. Ele sabe que a **velocidade** de sua moto pode interferir no **tempo** de entrega.
+
+Situação `9`
+
+"Essa padaria utiliza galões de água mineral para seus funcionários consumirem, o dono sabe que **a quantidade de galões estocada** está relacionada **a quantidade de funcionários**.
+
+Situação `10`
+
+"A caixa da padaria observou que **três criaças** comeram **três biscoitos** em **três minutos**, e ficou intrigada ao pensar em quantos **minutos**, **uma criança** levaria para comer **um biscoito**.
+
+Você deve ter notado que as palavras em negrito que aparecem em cada uma das situações são grandezas. Então em cada uma das situações diga se há uma relação proporcional entre elas, e se houver classifíque-a como direta ou inversa. E na situação `10`, tente responder a pergunta da caixa da padaria e justifique sua resposta.
+
+
+
+
+.. admonition:: Resposta 
+
+   `1.`  Direta
+
+   `2.` Inversa
+
+   `3.` Direta
+
+   `4.` Não há
+
+   `5.` Não há
+
+   `6.` Direta
+
+   `7.` Direta
+
+   `8.` Inversa
+
+   `9.` Inversa
+
+   `10.` Três minutos, pois a quantidade de crianças e biscoitos não interfere na velocidade com que cada criança come cada biscoito.
+
+
+
+Em cada uma das situações
+
+
+#. Velocidade x tempo 
+#. Quantidade de suprimentos x quantidade de consumidores
+#. Quantidade de trabalhadores x tempo de serviço
+#. Quantidade de dentes de uma engrenagem x quantidade de voltas
+#. Quantidade de gordura corporal x tempo de atividade física (com dieta constante)
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Proporcionalidade na Construção de Retângulos
+------------------------------
+
+No capítulo de semelhança, encontramos uma definição para **Figuras Semalhantes** apresentamos a mesma a seguir:
+
+"Duas figuras `F` e `F'` são semelhantes quando existe uma correspondência biunívoca entre os pontos de uma e os pontos de outra, de forma que, para quaisquer pontos `X` e `Y` da figura `F` e seus correspondentes `X'` e `Y'` da figura `F'` tem-se que a razão `\dfrac{XY}{X'Y'}`   é constante."
+
+Apesar da linguagem um pouco rebuscada conseguimos percerber que há noções de proporcionalidade por trás desse conceito, pois se utilizarmos vários segmentos de reta correspondentes de uma figura com a outra temos uma proporção. Por exemplo, se além de `X` e `Y`, utilizássemos outros pontos de `F`, como `P`, `Q` e `R` com seus respectivos pontos em `F'`, teremos:`\dfrac{XY}{X'Y'}=\dfrac{XP}{X'P'}=\dfrac{YQ}{Y'Q'}=\dfrac{PR}{P'R'}=...=k`, onde `k` é a constante citada.
+
+Nesta atividade, trabalharemos apenas com retângulos e propomos que você utilize a definição lembrada acima (ligada ao conceito de proporcionalidade) com o objetivo de obter segmentos ausentes nas figuras e de também verificar se há semelhança entre alguns desses retângulos. Para isso, apresentamos na figura a seguir um retângulo de lados `3` e `1,5`.
+
+
+.. figure:: _resources/atv_rot_1.png
+   :width: 300pt
+   :align: center
+
+Utilize o texto anterior para responder as alternativas a seguir.
+
+#. Observe o retângulo da figura a seguir e diga se ele é semelhante ou não ao retângulo apresentado no texto.
+
+
+   .. figure:: _resources/atv_rot_2.png
+      :width: 300pt
+      :align: center
+
+#. Na figura a seguir temos a medida base de um retângulo em destaque, qual deve ser a medida de sua altura para que o retângulo gerado seja semelhante ao do texto inicial?
+
+   
+   .. figure:: _resources/atv_rot_3.jpg
+      :width: 300pt
+      :align: center
+
+#. Seguindo a mesma ideia da alternativa anterior, qual deve ser a medida da altura desse novo retângulo de base `5`, para que ele seja semelhante ao do texto inicial?
+
+
+   .. figure:: _resources/atv_rot_4.png
+      :width: 300pt
+      :align: center
+
+#. Já na figura a seguir, apresentamos um retângulo de altura `4`, qual deve ser a medida da base desse novo retângulo, para que ele seja semelhante ao do texto inicial?
+
+
+   .. figure:: _resources/atv_rot_5.jpg
+      :width: 300pt
+      :align: center
+
+ 
+#. Na figura a seguir, apresentamos um retângulo, de mesma base (medindo `3`) do retângulo do texto inicial, mas com altura de medida igual à altura de um triângulo equilátero cujo a medida do lado também é `3`. Esse retângulo é semelhante ao inicial?
+
+
+   .. figure:: _resources/atv_rot_6.jpg
+      :width: 300pt
+      :align: center
+
+#. Se utlizarmos a altura do retângulo da figura anterior na construção de um novo retângulo, qual deve ser a medida da base dele para que seja semelhante ao retângulo do texto inicial?
+
+   
+
+
+.. admonition:: Resposta 
+
+   #. Não, pois a medida da base dobrou e a altura se manteve.
+
+   #. `3` , pois se a medida da base dobrou a altura deve dobrar `1,5 \cdot 2 = 3`.
+
+   #. `2,5`, pois em todos os retângulos a razão de semelhança, entre a base e a altura é de `\frac{1}{2}`, portando a altura deve ser a metade da base.
+
+   #. `8`, pelo mesmo motivo citado anteriormente, a base deve ser o dobro a altura.
+
+   #. Não, pois a razão entre base e altura não é de `\frac{1}{2}`.
+
+   #. `3\sqrt{3}`, pois a altura de um triângulo equilátero de lado `3` é `\frac{3\sqrt{3}}{2}`, ao assumir essa medida como altura do retângulo, sua base deve ser o dobro dessa medida.
