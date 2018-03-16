@@ -2,122 +2,107 @@
 ROTEIRO: FUNÇÃO QUADRÁTICA
 **************************
 
-.. admonition:: Roteiro
 
-   .. admonition:: Previsão de aulas necessárias
+.. admonition:: Previsão de aulas necessárias
 
-      6 aulas de 50 minutos cada, a ser reavaliado no final do desenvolvimento.
+   6 aulas de 50 minutos cada, a ser reavaliado no final do desenvolvimento.
 
-   .. admonition:: Previsão de páginas necessárias
+.. admonition:: Previsão de páginas necessárias
 
-      		A ser visto no final da elaboração/revisão do capítulo.
+   A ser visto no final da elaboração/revisão do capítulo.
 
-	
-   .. admonition::Fase de elaboração
+.. admonition::Fase de elaboração
 
-      `Fase 1 (Refinamentos)<https://www.umlivroaberto.com/BookCloud/Metodologia/master/view/fases-de-elaboracao.html#sec-fase-1>`_
+   `Fase 1 (Refinamentos)<https://www.umlivroaberto.com/BookCloud/Metodologia/master/view/fases-de-elaboracao.html#sec-fase-1>`_
 
 
-   .. admonition:: Habilidade
+.. admonition:: Habilidade
 
-     **(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
+   **(EM12MT09)** Reconhecer função quadrática e suas representações algébrica e gráfica, compreendendo o modelo de variação determinando domínio, imagem, máximo e mínimo, e utilizar essas noções e representações para resolver problemas como os de movimento uniformemente variado.
 
+.. admonition:: Objetivos gerais
+
+   Levar o estudante a reconhecer uma função quadrática seja por representação algébrica ou gráfica, entendendo suas aplicaçãoes tanto em problemas de otimização quanto na utilização das propriedades da curva (parábola) nas diversas áreas do conhecimento.
+
+.. admonition:: Conteúdos abordados
    
-   .. admonition:: Objetivos gerais
+   #. Noções acerca do movimento uniformemente variado (MUV).
+   #. Domínio, imagem, simetria, interseções com os eixos, gráfico e ponto de máximo ou de mínimo da função quadrática.
+   #. Propriedades geométricas do gráfico da função quadrática: a parábola, o seu eixo de simetria, o seu vértice e a sua propriedade reflexiva.
+   #. Formas mais comuns da função quadrática: `f(x)=a(x-p)^2+q`, `f(x)=ax^2+bx+c` e `f(x)=a(x-x_1)(x-x_2)`.
+   #. Obtenção da lei de formação da função quadrática por situações descritivas ou gráficas.
+   #. Funções quadrática com domínio discreto.
+   #. A relação da função quadrática com a soma dos primeiros termos de uma progressão aritmética.
+   #. Análise de curvas que pareceriam parábola: Catenária, `g(x)=x^4` e `h(x)=\sqrt{x^2+1}`.
 
-      Levar o estudante a reconhecer uma função quadrática seja por representação algébrica ou gráfica, entendendo suas aplicaçãoes tanto em problemas de otimização quanto na utilização das propriedades da curva (parábola) nas diversas áreas do conhecimento.
+.. admonition:: Pré-requisitos
 
-   .. admonition:: Conteúdos abordados
-   
-      #. Noções acerca do movimento uniformemente variado (MUV).
+   **(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
 
-      #. Domínio, imagem, simetria, interseções com os eixos, gráfico e ponto de máximo ou de mínimo da função quadrática.
+   **(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
 
-      #. Propriedades geométricas do gráfico da função quadrática: a parábola, o seu eixo de simetria, o seu vértice e a sua propriedade reflexiva.
+   **(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas, e utilizá-las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
 
-      #. Formas mais comuns da função quadrática: `f(x)=a(x-p)^2+q`, `f(x)=ax^2+bx+c` e `f(x)=a(x-x_1)(x-x_2)`.
-
-      #. Obtenção da lei de formação da função quadrática por situações descritivas ou gráficas.
-
-      #. Funções quadrática com domínio discreto.
-
-      #. A relação da função quadrática com a soma dos primeiros termos de uma progressão aritmética.
-
-      #. Análise de curvas que pareceriam parábola: Catenária, `g(x)=x^4` e `h(x)=\sqrt{x^2+1}`.
-
-
-   .. admonition:: Pré-requisitos
-   
-     **(EF08MT15)** Resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau do tipo `ax^2=b`.
-
-     **(EF09MT18)** Compreender os processos de fatoração de expressões algébricas, a partir de suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais de 2º grau.
-   
-     **(EM11MT06)** Compreender função como uma relação de dependência entre duas variáveis, as ideias de domínio, contradomínio e imagem, e suas representações algébricas e gráficas, e utilizá-las para analisar, interpretar e resolver problemas em contextos diversos, inclusive fenômenos naturais, sociais e de outras áreas.
-
-     
-     **Habilidades relacionadas**
+   **Habilidades relacionadas**
       
-     **(EM12MT07)** Comparar e ordenar números reais, localizando-os na reta numérica e compreender intervalos numéricos, densidade e completude do conjunto dos números reais, os significados de módulo e de simétrico, no contexto de equações e inequações.
-     
-     **(EM11MT08)** Reconhecer progressões aritméticas como sequências numéricas de variação linear, associá-las a funções afins de domínios discretos e utilizá-las para resolver problemas.
-     
-   .. admonition:: Desdobramentos imediatos
+   **(EM12MT07)** Comparar e ordenar números reais, localizando-os na reta numérica e compreender intervalos numéricos, densidade e completude do conjunto dos números reais, os significados de módulo e de simétrico, no contexto de equações e inequações.
 
-      **(EM11MT02)** Reconhecer grandezas formadas pela relação entre duas outras grandezas - velocidade (`m/s`; `km/h`), densidade (`g/cm^3`; pessoas/`km^2`) e energia `(Kwh)`, entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
-      
-      **(EM11CN01)** Observar e descrever posições, deslocamentos e velocidades de objetos em linhas, como carros em estradas; em planos, como bolas numa quadra; ou no espaço, como aviões em torno do globo.
-      
-      **(EM11CN03)** Relacionar força, tempo de aplicação e variação da velocidade de objetos para interpretar situações, como a ação de pneus em frenagens e acelerações ou a ação de equipamentos de segurança de passageiros.
-      
-      **(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
-      
-      
-   .. admonition:: O que há de inovador no capítulo?
+   **(EM11MT08)** Reconhecer progressões aritméticas como sequências numéricas de variação linear, associá-las a funções afins de domínios discretos e utilizá-las para resolver problemas.
 
-      O capítulo inicia com duas situações relacionadas com movimentos onde a velocidade varia. Através delas, insentivamos o reconhecimento, por parte do estudante, de que a função afim é inadequada neste contexto; apresentamos então a função quadrática.
+.. admonition:: Desdobramentos imediatos
 
-      Optou-se por explorar numericamente a função quadrática antes do seu gráfico, com o intuito de levar o estudante a perceber e destacar as características dessa função que mais aparecem nos problemas a ela relacionados: simetria e a sua imagem, em particular seus ínfimos ou supremos. Acreditamos que essa abordagem possibilita uma melhor compreensão da forma canônica, potencializando sua compreensão e uttilização.
+   **(EM11MT02)** Reconhecer grandezas formadas pela relação entre duas outras grandezas - velocidade (`m/s`; `km/h`), densidade (`g/cm^3`; pessoas/`km^2`) e energia `(Kwh)`, entre outras – e aplicar esse conhecimento em situações que envolvem proporcionalidade em outras áreas como Física, Química, Biologia e Geografia.
+      
+   **(EM11CN01)** Observar e descrever posições, deslocamentos e velocidades de objetos em linhas, como carros em estradas; em planos, como bolas numa quadra; ou no espaço, como aviões em torno do globo.
+      
+   **(EM11CN03)** Relacionar força, tempo de aplicação e variação da velocidade de objetos para interpretar situações, como a ação de pneus em frenagens e acelerações ou a ação de equipamentos de segurança de passageiros.
+      
+   **(EM11CN10)** Representar e/ou obter informações de tabelas, esquemas e gráficos de valores de grandezas que caracterizam movimentos ou causas de suas variações; converter tabelas em gráficos e vice-versa; estimar e analisar variações com base nos dados.
 
-      Há um esforço no sentido de justificar o gráfico da função quadrática e apresentar as característica geométricas dessa curva, utilizando-se para isso, de argumentos inteligíveis para esse nível escolar. Incluímos o estudo geométrico da parábola, para que o estudante possa conhecer suas belas aplicações no mundo que o cerca. 
+.. admonition:: O que há de inovador no capítulo?
 
-      Além disso, conectamos o estudo da função quadrática à soma dos primeiros termos de uma progressão aritmética e tentamos finalizar o capítulo impedindo que o estudante recorra na ideia de que, sendo curva, será parábola, através de casos interessantes e que geram dúvidas até em pessoas mais experimentadas no tema.
+   O capítulo inicia com duas situações relacionadas com movimentos onde a velocidade varia. Através delas, insentivamos o reconhecimento, por parte do estudante, de que a função afim é inadequada neste contexto; apresentamos então a função quadrática.
+
+   Optou-se por explorar numericamente a função quadrática antes do seu gráfico, com o intuito de levar o estudante a perceber e destacar as características dessa função que mais aparecem nos problemas a ela relacionados: simetria e a sua imagem, em particular seus ínfimos ou supremos. Acreditamos que essa abordagem possibilita uma melhor compreensão da forma canônica, potencializando sua compreensão e uttilização.
+
+   Há um esforço no sentido de justificar o gráfico da função quadrática e apresentar as característica geométricas dessa curva, utilizando-se para isso, de argumentos inteligíveis para esse nível escolar. Incluímos o estudo geométrico da parábola, para que o estudante possa conhecer suas belas aplicações no mundo que o cerca. 
+
+   Além disso, conectamos o estudo da função quadrática à soma dos primeiros termos de uma progressão aritmética e tentamos finalizar o capítulo impedindo que o estudante recorra na ideia de que, sendo curva, será parábola, através de casos interessantes e que geram dúvidas até em pessoas mais experimentadas no tema.
 
    
 
-   .. admonition:: Abordagem da introdução
+.. admonition:: Abordagem da introdução
 
-      Inspirados pela habilidade que pontua o capítulo, partimos para uma abordagem do estudo do movimento que apresenta variação na velocidade. As duas atividades que abrem o capítulo tem como objetivo desfazer a ideia de que toda função será afim. Esse objetivo permite a apresentação de um novo modelo que está associado a ideias ligadas ao gráfico da função real `f`, dada por `f(x)=ax^2`, onde `a` é um número real não nulo. 
+   Inspirados pela habilidade que pontua o capítulo, partimos para uma abordagem do estudo do movimento que apresenta variação na velocidade. As duas atividades que abrem o capítulo tem como objetivo desfazer a ideia de que toda função será afim. Esse objetivo permite a apresentação de um novo modelo que está associado a ideias ligadas ao gráfico da função real `f`, dada por `f(x)=ax^2`, onde `a` é um número real não nulo. 
 
-      Na seção “Organizando Ideias” apresentamos um breve resumo histórico das ideias de Galileu, sobre queda livre, que contradiziam as antigas ideias de Arquimedes.
+   Na seção “Organizando Ideias” apresentamos um breve resumo histórico das ideias de Galileu, sobre queda livre, que contradiziam as antigas ideias de Arquimedes.
 
-      Ainda sem se preocupar com a definição de função quadrática, estimulamos uma análise numérica que possibilitam naturalidade e pouca sofisticação na construção das propriedades, tanto da função `f` estabelecida, como do seu gráfico. Na seção “Organizando Ideias” dessa atividade, chamamos a atenção para o fato que se as diferenças entre imagens consecutivas de `f`, geradas por uma parte do domínio cujos elementos estejam em progressão aritmética, formam também uma progressão aritmética. Esse fato será utilizado no decorrer do capítulo como uma das ferramentas de caracterização da função quadrática.
+   Ainda sem se preocupar com a definição de função quadrática, estimulamos uma análise numérica que possibilitam naturalidade e pouca sofisticação na construção das propriedades, tanto da função `f` estabelecida, como do seu gráfico. Na seção “Organizando Ideias” dessa atividade, chamamos a atenção para o fato que se as diferenças entre imagens consecutivas de `f`, geradas por uma parte do domínio cujos elementos estejam em progressão aritmética, formam também uma progressão aritmética. Esse fato será utilizado no decorrer do capítulo como uma das ferramentas de caracterização da função quadrática.
 
-      Em seguida, através de um problema de otimização com tema geométrico, deixamos clara a nossa predileção em entender e manipular a forma canônica o quanto antes. Criamos aqui uma diferença significativa deste texto em relação ao ensino tradicional da função quadrática, que se baseia em modelagens em torno do gráfico gerado pelo polinômio de grau `2` em problemas de otimização realcionados a máximos e mínimos. Acreditamos que assim estamos possibilitando o estudante a obter, sem utilização da representação gráfica ou a utilização de fórmulas pré-definidas, os valores buscados nestas otimizações.
+   Em seguida, através de um problema de otimização com tema geométrico, deixamos clara a nossa predileção em entender e manipular a forma canônica o quanto antes. Criamos aqui uma diferença significativa deste texto em relação ao ensino tradicional da função quadrática, que se baseia em modelagens em torno do gráfico gerado pelo polinômio de grau `2` em problemas de otimização realcionados a máximos e mínimos. Acreditamos que assim estamos possibilitando o estudante a obter, sem utilização da representação gráfica ou a utilização de fórmulas pré-definidas, os valores buscados nestas otimizações.
+
+.. admonition:: Dificuldades típicas dos alunos (distratores)
       
-         
+   #. Os alunos conhecem a denominação correta do gráfico apresentado pela função quadrática, porém, não conseguem distingui-lo de outros gráficos curvilíneos.  [Alexandre-2009]_. 
       
-   .. admonition:: Dificuldades típicas dos alunos (distratores)
-      
-      #. Os alunos conhecem a denominação correta do gráfico apresentado pela função quadrática, porém, não conseguem distingui-lo de outros gráficos curvilíneos.  [Alexandre-2009]_. 
-      
-         **Abordado na Seção: "Você Sabia" no tópico "Será que é parábola?"**
+      **Abordado na Seção: "Você Sabia" no tópico "Será que é parábola?"**
             
-      #. Os alunos sabem, conceitualmente, a relação existente entre os eixos das abscissas e ordenadas na função quadrática, mas não possuem habilidades de diferenciá-los durante o processo resolução de uma questão contextualizada envolvendo função quadrática.  [Alexandre-2009]_ 
+   #. Os alunos sabem, conceitualmente, a relação existente entre os eixos das abscissas e ordenadas na função quadrática, mas não possuem habilidades de diferenciá-los durante o processo resolução de uma questão contextualizada envolvendo função quadrática.  [Alexandre-2009]_ 
       
-         **Abordado nas atividades: "Em busca de pardrões de** `f(x)=x^2`" e **aumento na passagem.**  
+      **Abordado nas atividades: "Em busca de pardrões de** `f(x)=x^2`" e **aumento na passagem.**  
       
       
       #. Os alunos compreendem a qual eixo está relacionado, genericamente, o domínio e a imagem, porém não conseguem particularizá-lo a função quadrática.  [Alexandre-2009]_
       
-         **Abordado nas atividades: "Em busca de pardrões de** `f(x)=x^2`" e **aumento na passagem.** 
+      **Abordado nas atividades: "Em busca de pardrões de** `f(x)=x^2`" e **aumento na passagem.** 
       
       #. Há uma grande dificuldade em utilizar processos simples de fatoração para representar uma função quadrática em sua forma fatorada, consequentemente na busca dos zeros da função. [Parent-2015]_
       
-         **Abordado na atividades: "Perímetro Fixo" e na seção "Organizando Ideias: Máximos e Mínimos"**
+      **Abordado na atividades: "Perímetro Fixo" e na seção "Organizando Ideias: Máximos e Mínimos"**
       
       #. Ao fazer alusão com a função afim alguns alunos acreditam equivocadamente que o coeficiente "a" da forma polinomial ou canônica representa a taxa de variação da função ou a "inclinação" de uma função quadrática. [Parent-2015]_ 
       
-         **Abordado nas duas primeiras atividades do capítulo**
+      **Abordado nas duas primeiras atividades do capítulo**
 
       #. Alguns alunos não associam a ideia de máximo ao `a<0` e ao mínimo ao `a>0`, associam apenas ao valor numérico da expressão `\frac{-\Delta}{4a}`, sem ao menos se preocupar se o domínio é um intervalo e se a ordenada do vértice está contida na imagem.
       
@@ -128,9 +113,9 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
          **Abordado nas atividades: "Perímetro Fixo" e "Aumento da Passagem"**
       
       
-   .. admonition:: Estratégia Pedagógica
+.. admonition:: Estratégia Pedagógica
    
-      Motivar o aluno a explorar as diversas aplicações da função quadrática, explicitando suas características e as características do seu gráfico, explorando o importante conceito de otimização e apontando caminho para modelagens em outras áreas como: Física, Economia, Engenharia, Artes; chamando a atenção ora nas propriedades geométricas da parábola, ora no algebrismo contido na base do estudo desse conceito.
+   Motivar o aluno a explorar as diversas aplicações da função quadrática, explicitando suas características e as características do seu gráfico, explorando o importante conceito de otimização e apontando caminho para modelagens em outras áreas como: Física, Economia, Engenharia, Artes; chamando a atenção ora nas propriedades geométricas da parábola, ora no algebrismo contido na base do estudo desse conceito.
       
                   
 .. admonition:: Estrutura
@@ -149,9 +134,8 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
 
          
    **1. Explorando Movimentos com velocidade variada** 
-     
+
    *Atividade 1:*  **Lançando Objetos das nuvens em Dubai**
-     
      
    Com esta atividade pretende-se levar o aluno a,
      
@@ -306,29 +290,25 @@ ROTEIRO: FUNÇÃO QUADRÁTICA
    
    
    
-      **A Catenária** 
+   **A Catenária** 
       
       
-      .. _fig-coloque-aqui-o-nome:catenaria.jpg
+   .. _fig-coloque-aqui-o-nome:catenaria.jpg
+   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=catenaria.jpg
+      :width: 200pt
+      :align: center
 
-      .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=catenaria.jpg
-         :width: 200pt
-         :align: center
-         
-                  
-      .. _fig-coloque-aqui-o-nome:corrente.jpg
+   .. _fig-coloque-aqui-o-nome:corrente.jpg
 
-      .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=corrente.jpg
-         :width: 200pt
-         :align: center
+   .. figure:: https://www.umlivroaberto.com/wiki/lib/exe/fetch.php?media=corrente.jpg
+      :width: 200pt
+      :align: center
 
 
    O capítulo termina com vários exercícios de vestibulares e outros elaborada pelos autores.
-  
-   .. admonition:: Referências Bibliográficas
-          
-   **Bibliografia**
-   
+
+.. admonition:: Referências Bibliográficas
+
    .. [Alexandre-et-al-2009] Alexandre, Patrícia P; Santos,Márcia Hellen S Mendes. **Principais dificuldades de alunos do 2º ano do ensino médio quanto a interpretação gráfica da função quadrática**. I Simpósio Nacional de Ensino de Ciência e Tecnologia. 
 
    .. [Assis-2015] Assis, Victor Hugo D. de. **Características da função quadrática e a metodologia da resolução de problemas** UNESP: São José do Rio Preto, SP.
