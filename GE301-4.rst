@@ -4,6 +4,10 @@
 
 .. A forma de definir as vistas é diferente nos EUA e no Brasil (https://prezi.com/q3cqwsb1_vio/planos-de-proyeccion/).
 
+.. Se um cubo dobrar de tamanho, suas projeções também dobram de tamanho?
+
+.. Não esquecer de colocar a observação sobre as vistas em softwares de computação gráfica.
+
 
 .. _ativ-proj-vistas-ortogonais:
 
@@ -32,7 +36,12 @@ Os três planos são denominados de :index:`plano frontal`, :index:`plano horizo
 
 Nas imagens (D), (E) e (F) da :numref:`fig-proj-vistas-ortogonais-03`, as setas indicam quais pontos serão projetados nos respectivos planos, da seguinte maneira: supondo-se que o objeto é opaco e que "raios de luz" chegam no sentido da seta, estes raios atingirão pontos do objeto e serão então bloqueados, não atingindo outros pontos. Apenas os pontos que recebem "raios de luz" serão projetados no plano. Estes pontos serão desenhados com uma linha sólida. Partes do objeto que ficam "escondidos" são desenhados com uma linha pontilhada, como acontece na imagem (F).
 
+Na :numref:`fig-proj-vistas-ortogonais-04` as três projeções nos três planos estão desenhadas simultaneamente com o sólido 3D(imagem (A)) e sem ele (imagem (B)). As três projeções podem então ser dispostas lado a lado em um mesmo plano, gerando então a representação clássica das :index:`vistas principais` (imagem (C)): a :index:`vista frontal` (projeção ortogonal no plano frontal), a :index:`vista lateral`(projeção ortogonal no plano lateral) e a :index:`vista superior` (projeção ortogonal no plano horizontal).
 
+   .. _fig-proj-vistas-ortogonais-04:
+
+   .. figure:: _resources/vistas-ortogonais-04.jpg
+   
 
 
 
@@ -50,3 +59,63 @@ Nas imagens (D), (E) e (F) da :numref:`fig-proj-vistas-ortogonais-03`, as setas 
       .. figure:: _resources/vistas-01_1.jpg
       
          O que é uma *vista*?         
+
+
+.. admonition:: Você sabia?
+
+
+   Projeções ortogonais já foram um segredo militar!
+   
+   A :index:`Geometria Descritiva` é o ramo da geometria que estuda a representação de objetos tridimensionais em duas dimensões através de um certo conjunto específico de procedimentos. As técnicas resultantes são importantes para a engenharia, a arquitetura, o design gráfico e as artes (:numref:`fig-proj-geometria-descritiva-01`). A base teórica para a geometria descritiva é fornecida pelas projeções ortogonais. 
+   
+   .. _fig-proj-geometria-descritiva-01:
+   
+   .. figure:: _resources/geometria-descritiva-01.jpg
+   
+      Projeções ortogonais de um carro e de uma cabeça humana.
+      
+   O matemático francês Gaspard Monge (1746-1818) é considerado fundador da geometria descritiva. Ele a usou em engenharia militar (construção de fortificações) durante a época de Napoleão Bonaparte. De fato, geometria descritiva já foi considerada um segredo militar.
+
+   .. _fig-proj-gaspar-monge-01:
+
+   .. figure:: _resources/gaspard-monge-01.jpg
+      :width: 200pt
+
+      Gaspard Monge (1746-1818).
+
+   Dennis Lieu e Sheryl Sorby, no excelente livro Visualization, Modeling, and Graphics for Engineering Design, apresentam o contexto histórico: 
+
+      A pólvora começou a ser usada no mundo ocidental durante o Renascimento, assim como o canhão. Os canhões tornaram obsoletas a maioria das fortalezas construídas durante a era medieval. As muralhas não conseguiam suportar o impacto dos projéteis de canhão. Assim, as fortalezas precisavam ser remodeladas para suportar os tiros de canhão. Na França, um novo estilo de fortificação mais resistente foi então desenvolvido. A fortificação era construída com muros inclinados que ajudavam a defletir o tiro de canhão e não desmoronavam da mesma maneira que as muralhas planas verticais, quando atingidas diretamente. As novas fortalezas eram geometricamente mais complicadas de se construir do que suas predecessoras com muralhas verticais. Mais ainda, o perímetro da fortaleza evoluiu de um formato simples retangular para um formato pentagonal com uma extensão proeminente em cada ápice. Este formato de perímetro e o uso de muros inclinados resultaram em paredes que se justapunham em ângulos não usuais, os quais não podiam ser medidos facilmente ou diretamente. [...]
+      
+      Felizmente, os franceses tinham Gaspard Monge, que desenvolveu uma técnica de análise gráfica chamada geometria descritiva. [...] As técnicas de geometria descritiva permitiram que os engenheiros da época criassem qualquer ponto de vista de um objeto geométrico a partir de dois pontos de vista existentes. Ao criar o ponto de vista apropriado, os engenheiros podiam observar e medir os atributos de um objeto. [...] A geometria complexa, os ângulos de interseção incomuns, e a altura das muralhas tinham a intenção de maximizar o fogo cruzado sobre um inimigo em aproximação sem revelar o interior da fortaleza. [...]
+      
+      A astúcia dos franceses na construção de fortificações manteve a França como o principal poder europeu até o século XVIII. Na época, a geometria descritiva era considerada um segredo do estado francês, cuja divulgação era crime punível com a morte. Como resultado da aliança entre a França e o recém-constituído Estados Unidos, muitas fortificações dos EUA utilizaram projetos franceses. Como exemplo, temos o Forte McHenry que foi construído em 1806 e é primorosamente preservado em Baltimore, Maryland. O Forte McHenry sobreviveu ao bombardeamento inglês durante a Guerra de 1812 e tem importância porque ele inspirou Scott Key a escrever The Star Spangled Banner, o hino nacional dos EUA.
+
+   .. _fig-proj-forte-01:
+
+   .. figure:: _resources/fig-fort-mchenry.jpg  
+
+      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library).             
+   
+
+
+.. admonition:: Você sabia?
+
+   O cientista cognitivo americano Douglas Richard Hofstadter (1945-) concebeu, para a capa de seu livro "Gödel Escher Bach: Um Entrelaçamento de Gênios Brilhantes", um objeto bem peculiar: suas projeções ortogonais em três planos produzem as letras "G" (de Gödel), "E" (de Escher) e "B" (de Bach).
+   
+   .. figure:: _resources/geb-01.png
+      :width: 200pt
+      
+      GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
+      
+   Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
+   
+   .. figure:: _resources/triplets-qr.png
+      :width: 50pt
+   
+   .. figure:: _resources/triplets-exemplo.*
+
+      Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
+         
+
+      
