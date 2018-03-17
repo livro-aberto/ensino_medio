@@ -42,9 +42,9 @@
    
    Jones [Jones-2006]_ chama atenção para três níveis de abstração nos quais é possível situar o entendimento do conceito de função:  como *ação*, como *processo* e como *objeto*. O nível ação é aquele em que são conhecidas todas as ações que devem ser tomadas para converter a variável independente `x` na sua imagem, por exemplo: tome `x`, primeiro eleve ao quadrado e então subtraia do seu dobro. Nesse nível de abstração, que é o mais simples entre os três, os procedimentos e algoritmos estão bem definidos. A ideia de função como processo está diretamente relacionada com o nível ação, no sentido de que a partir da variável `x` chega-se por um processo à variável `y`. Contudo nesse nível de abstração os procedimentos algorítmicos não são tão importantes como no nível anterior. Aqui as funções que não envolvem conjuntos numéricos fazem mais sentido, apoiadas pela ideia de correspondência entre conjuntos. Por exemplo, uma atividade que envolva uma tabela, sem especificar a expressão algébrica ou algoritmo que a gerou pode ser associada ao nível processo. Finalmente, o nível objeto é o mais abstrato dos três. Uma função nesse nível de abstração passa a ser considerada como parte de um universo de funções. Torna-se um elemento dentro de um conjunto. Nesse nível de compreensão, estão as operações com as funções: soma, produto, composição, derivada, integral etc.
 
-	.. figure:: _resources/niveis_abstracao_1.png
-	   :width: 200pt
-	   :align: center
+   .. figure:: _resources/caixa_2.png
+      :width: 400pt
+      :align: center
 
    Considerando essas pesquisas, procura-se, neste texto, não privilegiar o pensamento algébrico em detrimento da visualização, buscando alcançar os diferentes níveis de abstração indicados por 	Jones [Jones-2006]_.
    
@@ -255,10 +255,10 @@ Imagine um arranha-céu de `40` andares cujas diferentes alturas que corresponde
    | Altura (metros) | -1          |  3  |  7  |  11 |  15 | ... |     |...  |     | 91  |
    +-----------------+-------------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 	
-Considere que a altura de um andar é medida a partir do nível da rua até o piso desse andar e que a altura entre os andares seja sempre a mesma, conforme o esquema abaixo.
+   Considere que a altura de um andar é medida a partir do nível da rua até o piso desse andar e que a altura entre os andares seja sempre a mesma, conforme o esquema abaixo.
 
-.. figure:: _resources/arranha.png
-   :width: 200pt
+.. figure:: _resources/Arranha-ceu.png
+   :width: 400pt
    :align: center
 
 #. Qual a altura entre os andares?
