@@ -1,16 +1,10 @@
-.. Colocar uma questão poliedros em posiçáo regular/não regular e sobre equiprojetividade.
-
-.. Colocar um "Para saber mais" sobre um problema aberto em poliedro equiprojetivos.
-
-.. A forma de definir as vistas é diferente nos EUA e no Brasil (https://prezi.com/q3cqwsb1_vio/planos-de-proyeccion/).
-
 .. Se um cubo dobrar de tamanho, suas projeções também dobram de tamanho?
-
-.. Não esquecer de colocar a observação sobre as vistas em softwares de computação gráfica.
 
 .. Ver os exercícios de projeções ortogonais do livro Matemática do Ensino Médio, volume 2.
 
 .. Relacionar projeções ortogonais com a teoria dos nós?
+
+.. Falar sobre os outros nomes para três planos que são dois a dois perpendiculares?
 
 
 .. _ativ-proj-vistas-ortogonais:
@@ -127,8 +121,22 @@ Importante:
          O que é uma *vista*?         
 
 
-.. admonition:: Você sabia?
+.. admonition:: Observação
 
+   A Associação Brasileira de Normas Técnicas (ABNT) em seu documento NBR 10067 estabelece princípios gerais de representação em desenho técnico. Nele são consideradas seis vistas ortogonais simultâneas, três a mais ao que foi feito na :ref:`ativ-proj-vistas-ortogonais`. A :numref:`fig-proj-vistas-ortogonais-06` traz exatamente o exemplo apresentado neste documento. Uma versão interativa que pode ser acessada por meio de um navegador (inclusive o de seu celular) está disponível aqui: <https://www.geogebra.org/m/SR7HrtkN>.
+      
+   
+      .. _fig-proj-vistas-ortogonais-06:
+   
+      .. figure:: _resources/vistas-ortogonais-06.jpg
+      
+         As seis vistas ortogonais do documento NBR 10067 da ABNT.
+
+   .. https://prezi.com/q3cqwsb1_vio/planos-de-proyeccion/
+
+   Observamos que as definições das vistas ortogonais como definidas no documento da ABNT não são universais. Nos Estados Unidos, por exemplo, as projeções em cada par de planos paralelos no paralelepípedo da :ref:`fig-proj-vistas-ortogonais-06` são permutados.
+
+.. admonition:: Você sabia?
 
    Projeções ortogonais já foram um segredo militar!
    
@@ -185,3 +193,27 @@ Importante:
          
 
       
+.. admonition:: Você sabia?
+
+   Em softwares especializados de computação gráfica (Blender, Autocad, Autodesk 3DS Max, etc.), um recurso comum é o assim denominado *quad view* que faz com que o programa exiba quatro janelas de visualização simultâneas: três janelas com as três vistas ortogonais principais mais uma quarta janela com a projeção em perspectiva. As janelas com as vistas ortogonais são usadas para uma interação mais precisa com o objeto 3D, enquanto que a janela com a projeção em perspectiva permite visualizar como o objeto será visto.
+   
+      .. figure:: _resources/blender-04.jpg
+      
+         Sistema *quadview* no software gratuito de computação gráfica Blender.
+         
+
+.. admonition:: Você sabia?
+
+   Existem perguntas sobre projeções ortogonais que a humanidade ainda não conhece as respostas. Vamos agora descrever uma dessas perguntas. Considere, a título de exemplo, um cubo que será projetado em um plano. Se você girar o cubo de forma que nenhuma de suas faces fique paralela à direção perpendicular a este plano de projeção, sua projeção será um polígono com 6 lados. Por este motivo, o cubo é denominado um :index:`poliedro equiprojetivo` de índice 6. Nesta construção interativa feita no GeoGebra <https://www.geogebra.org/m/bF3y2m7K> você pode constatar este fato.
+   
+      .. figure:: _resources/poliedros-equiprojetivos-01.png
+         :width: 250pt
+   
+   Mais geralmente, dizemos que um poliedro é equiprojetivo de índice `k` se ao girá-lo de forma que nenhuma de suas faces fique paralela à direção perpendicular ao plano de projeção, sua projeção sobre este plano sempre será um polígono com `k` lados.
+   
+   Observe que existem poliedros que não são equiprojetivos. O tetraedro regular, por exemplo. A imagem a seguir mostra duas posições do tetraedro regular nas quais nenhuma de suas faces é paralela à reta perpendicular ao plano horizontal. Em uma dessas posições, sua projeção é um polígono de 3 lados. Na outra, a projeção é um polígono de 4 lados.
+   
+      .. figure:: _resources/poliedros-equiprojetivos-02_1.jpg   
+         :width: 500pt
+   
+   Dado um valor `\geq 3` para `k`, quais são todos os poliedros equiprojetivos de índice `k`? Esta é uma pergunta que ninguém conseguiu responder até o presente momento. Ela é um entre muitos problemas em aberto em Matemática. 
