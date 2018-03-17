@@ -96,18 +96,18 @@ Os quatro problemas acima fornecem três informações e propõem que, a partir 
 Isso se deve ao fato de que as grandezas relacionadas não são proporcionais entre si. Não é verdade que se `5` músicos tocam uma peça de música em `10` minutos, `35` músicos (que é `7 \times 5`) tocarão a peça em `7 \times 10` minutos, afinal trata-se da mesma música, logo `35`, `45` ou `179` músicos tocarão a tal peça nos mesmos `10` minutos. Isto é, o tempo de execução não é diretamente proporcional ao número de músicos que executam a música.
 
 
-.. admonition:: Definição 
+.. glossary:: 
 
-   Diz-se que duas grandezas são **diretamente proporcionais** quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número real, a quantidade correspondente da outra fica multiplicada pelo mesmo número, sempre que os resultados dessas multiplicações fizerem sentido no contexto observado.
+   Grandezas diretamente proporcionais
+      Diz-se que duas grandezas são diretamente proporcionais quando elas se correspondem de tal modo que, multiplicando-se uma quantidade de uma delas por um número real, a quantidade correspondente da outra fica multiplicada pelo mesmo número, sempre que os resultados dessas multiplicações fizerem sentido no contexto observado.
+      
+      .. math::
+
+         X\quad &\overline{\quad \quad \quad}& \quad Y \\
+         k\cdot X \quad &\overline{\quad \quad \quad}& \quad k\cdot Y\\
+
+
    
-   .. math::
-
-      \begin{eqnarray*}
-      X\quad &\overline{\quad \quad \quad}& \quad Y \\
-      k\cdot X \quad &\overline{\quad \quad \quad}& \quad k\cdot Y\\
-      \end{eqnarray*}
-
-
 É muito comum encontrarmos situações no nosso dia a dia em que as grandezas envolvidas são diretamente proporcionais, e você certamente já resolveu muitos problemas, na escola e fora dela, usando a “regra de três”.
 
 
@@ -203,10 +203,8 @@ Duas piscinas de 1000 litros cada estão sendo enchidas simultaneamente. A pisci
    
       .. math::
 
-         \begin{eqnarray*}
          1\quad &\overline{\quad \quad \quad}& \quad 200 \\
-         k\cdot 1 \quad &\overline{\quad \quad \quad}& \quad k\cdot 200\\
-         \end{eqnarray*}
+         k\cdot 1 \quad &\overline{\quad \quad \quad}& \quad k\cdot 200
       
    #. Não, pois ao final da primeira hora o volume total de água aumentou 150 litros e na hora seguinte aumentou apenas 50 litros. Para haver proporcionalidade direta, deveria ter aumentado também 150 litros na segunda hora, totalizando 300 litros.
 
