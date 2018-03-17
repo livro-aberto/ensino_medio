@@ -1,10 +1,52 @@
+.. Colocar uma questão poliedros em posiçáo regular/não regular e sobre equiprojetividade.
+
+.. Colocar um "Para saber mais" sobre um problema aberto em poliedro equiprojetivos.
+
+.. A forma de definir as vistas é diferente nos EUA e no Brasil (https://prezi.com/q3cqwsb1_vio/planos-de-proyeccion/).
+
+
+.. _ativ-proj-vistas-ortogonais:
+
+
+Atividade: vistas ortogonais
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** compreender as projeções ortogonais simultâneas de objetos 3D sobre três planos, dois a dois perpendiculares, as quais constituem as assim denominadas *vistas ortogonais* principais.  
+
+Em desenho técnico, uma prática comum para se representar objetos 3D (como o objeto em (A) na :numref:`fig-proj-vistas-ortogonais-03`) é o de de projetá-lo ortogonalmente sobre três planos que são dois a dois perpendiculares (como os planos em (B) na :numref:`fig-proj-vistas-ortogonais-03`). 
+
+Tipicamente, como em (C) na :numref:`fig-proj-vistas-ortogonais-03`, os planos são posicionados de forma a ficarem, na medida do possível, parelelos às faces do objeto 3D (isto quando, naturalmente, o objeto tem faces planas). Este tipo de escolha tem uma vantagem: as projeções das faces paralelas sobre um dos planos de projeção serão congruentes às faces originais. Em termos de desenho técnico, as projeções estarão em :index:`verdadeira grandeza`. No contexto de construção de peças e equipamentos, esta congruência é um dos motivos para o uso de projeções ortogonais, em oposição às projeções em perspectiva, para representações 2D de objetos 3D. Como faces não paralelas a um plano de projeção vão aparecer distorcidas, três planos são considerados, cada plano representando em verdadeira grandeza os elementos do objeto que lhe são paralelos.
+
+Os três planos são denominados de :index:`plano frontal`, :index:`plano horizontal` e :index:`plano lateral`. A atribuição de um destes nomes a um determinado plano é uma escolha arbitrária, em princípio pois, afinal, ao se girar o objeto 3D, podemos converter uma escolha de nomes em outra. As imagens (D), (E) e (F) exibem uma atribuição de nomes. É claro, se o objeto tem naturalmente uma base horizontal (por exemplo, o fundo de uma caixa), então é razoável denominar o plano paralelo a essa base de plano horizontal. Do mesmo modo, se objeto tem naturalmente uma frente, então é conveniente denominar o plano paralelo a esta frente de plano frontal. Uma explicação análoga pode ser dada para a escolha do plano lateral. 
+
+
+   .. _fig-proj-vistas-ortogonais-03:
+
+   .. figure:: _resources/vistas-ortogonais-03_1.jpg
+   
+   
+
+
+Nas imagens (D), (E) e (F) da :numref:`fig-proj-vistas-ortogonais-03`, as setas indicam quais pontos serão projetados nos respectivos planos, da seguinte maneira: supondo-se que o objeto é opaco e que "raios de luz" chegam no sentido da seta, estes raios atingirão pontos do objeto e serão então bloqueados, não atingindo outros pontos. Apenas os pontos que recebem "raios de luz" serão projetados no plano. Estes pontos serão desenhados com uma linha sólida. Partes do objeto que ficam "escondidos" são desenhados com uma linha pontilhada, como acontece na imagem (F).
+
+
+
+
+
+
+
+
+
 .. admonition:: Observação
 
-    É preciso ter atenção para o uso da palavra :index:`vista`. Autores diferentes dão significados diferentes à palavra, significados estes que podem, inclusive, ser diferentes de sua interpretação comum ("aquilo que se apresenta ao olhar, que se vê"). Por exemplo, é comum encontrar em livros de arquitetura e engenharia exercícios que pedem para determinar a *vista* de um objeto a partir de uma direção dada, como na :numref:`fig proj-vistas-observacao`. A resposta esperada por estes livros é a imagem (B), ou seja, uma projeção ortogonal do cubo vazado. Contudo, (B) *não é o que se é visto* a partir da direção indicada. O que se vê é melhor descrito por uma projeção em perspectiva, a saber, a imagem (C). Pegue o cubo vazado que você usou na :ref:`ativ-proj-luz-e-sombras` e veja por você mesmo.
+   É preciso ter atenção para o uso da palavra :index:`vista`. Autores diferentes dão significados diferentes à palavra, significados estes que podem, inclusive, ser diferentes de sua interpretação comum ("aquilo que se apresenta ao olhar, que se vê"). Por exemplo, é comum encontrar em livros de arquitetura e engenharia exercícios que pedem para determinar a *vista* de um objeto a partir de uma direção dada, como na :numref:`fig proj-vistas-observacao`. A resposta esperada por estes livros é a imagem (B), ou seja, uma projeção ortogonal do cubo vazado. Contudo, (B) *não é o que se é visto* a partir da direção indicada. O que se vê é melhor descrito por uma projeção em perspectiva, a saber, a imagem (C). Pegue o cubo vazado que você usou na :ref:`ativ-proj-luz-e-sombras` e veja por você mesmo.
       
       
-       .. _fig-proj-vistas-observacao:
+      .. _fig-proj-vistas-observacao:
       
-       .. figure:: _resources/vistas-01_1.jpg
+      .. figure:: _resources/vistas-01_1.jpg
       
-           O que é uma *vista*?         
+         O que é uma *vista*?         
