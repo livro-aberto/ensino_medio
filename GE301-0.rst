@@ -12,8 +12,6 @@
 
 .. HJB: que as observações para o professor, ao contrário do que se normalmente faz, aponta diretamente para as atividades propostas.
 
-.. HJB: indicar a abordagem matricial do Gladson (http://em.uniriotec.br/~cambrainha/bienal.html).
-
 .. HJB: incluir como apêndice do livro uma lista das letras gregas.
 
 .. HJB: "Com Amor, Van Gogh" (Van Gogh pintava uma mesma obra em pé e depois sentado, o que dada dois centros de projeção para a pintura). (Visto na matéria do BandNews)
@@ -28,13 +26,15 @@
 
 .. HJB: mudar o tamanho das abas das planificações!
 
-.. HJB: incluir as imagens que o Ezequiel enviou (https://en.wikipedia.org/wiki/Remedios_Varo).
-
 .. HJB: colocar nas transparências o exemplo que o Paulo Colonese enviou das ruas paralelas.
 
 .. HJB: indicar as referências do artigo da RPM e do Mathematics Teacher.
 
 .. HJB: colocar uma atividade ou sugestão de projeto sobre o estudo da área das projeções ortogonais (espaçonave fugindo do Sol/problema das projeções do cubo unitário).
+
+.. HJB: incluir a observação do PNLD 2018 sobre o ensino de Geometria Espacial.
+
+.. HJB: muitos livros fazem um capítulo sobre geometria de posição antes de tratar de projeções ortogonais. Não deveríamos fazê-lo também?
 
 
 .. admonition:: Para o professor
@@ -124,7 +124,7 @@
    Esta abordagem tem várias vantagens: (1) ela é a mais natural e próxima dos experimentos que se deseja modelar; (2) todas as propriedades das representações 2D obtidas pelas projeções podem ser deduzidas e evita-se o uso de regras sem explicações; (3) aplicações recentes com recursos tecnológicos usam o modelo 3D e não especificações na representação plana; (4) ela se relaciona com episódios históricos que habitualmente não são apresentados; (5) ela oferece um excelente cenário de interesse onde se é possível exercitar geometria de posição e aplicar semelhança de triângulos.  As projeções em perspectiva, em particular, constituem uma excelente oportunidade do aluno apreciar uma característica importante da Matemática: o de identificar uma mesma estrutura (projeções em perspectiva) em fenômenos diferentes (sombras, pinturas, câmeras, modelos ópticos para o olho humano). 
    
    Aqui, talvez o maior desafio seja justamente o de explicar algo 3D tendo como principal instrumento uma mídia 2D (os desenhos estáticos nas páginas do livro didático). Neste sentido, usar materiais concretos e recursos tecnológicos ajuda bastante e, por este motivo, todos os diagramas de configurações tridimensionais são acompanhados de construções interativas feitas no GeoGebra. Cada cena 3D pode ser girada, ampliada ou reduzida e, em muitos casos, parâmetros da construção podem ser alterados. Esta possibilidade de movimentação constitui-se em um aspecto cognitivo importante ([Sinha-2009]_) que evita os equívocos de interpretação gerados pelas distorções das projeções. A propósito, o GeoGebra também foi usado para se criar os diagramas deste capítulo. Desta maneira, tem-se a garantia de que as ilustrações estão matematicamente consistentes. Além disso, essas construções estão disponíveis para que você faça modificações e derivações que ache necessárias. Estas construções do GeoGebra podem ser acessadas de computadores *desktop*, *tablets* e *smartphones*.
-        
+
    As dificuldades advêm principalmente de dois fatores: por um lado, as projeções em perspectiva e paralelas são ambiguas (isto é, não injetivas) e não preservam comprimentos, ângulos, proporções, áreas, etc., de modo que as medidas na representação 2D podem não corresponder às medidas do objeto original 3D; por outro lado, não existe a cultura de se praticar a produção de desenhos, de modo que, em geral, quando os alunos são levados a fazer alguma representação 2D de objetos 3D, os desenhos produzidos são algumas vezes ingênuos.     
       
    Um exemplo de distrator típico é apresentado por [Lellis-2009]_: na figura a seguir, é comum um aluno desavisado pensar que entre `A`, `B` e `C`, é o ponto `C` que está mais próximo da reta `r` na configuração 3D (afinal, na projeção paralela, é o que acontece).
@@ -161,10 +161,11 @@
    
    As aplicações dos modelos matemáticos ao longo do capítulo se dão principalmente com relação a pinturas, mas as articulações e aplicações são muitas e variadas. No final do capítulo apresentamos uma lista de referências e sugestões de projetos que incluem temas como projeção mapeada, técnicas de cinema, jogos de computador e de tabuleiro, teatro, história das Artes, etc.
    
-
+   **Sobre questões de adequação de tempo**
    
+   O assunto de projeções é muito rico. De fato, em nossa opinião, ele é um tópico chave, pois permite estabelecer conexões legítimas com várias áreas dentro e fora da Matemática e, também, permite desenvolver várias competências estabelecidas pela BNCC. Neste sentido, o capítulo foi redigido com a premissa de oferecer ao aluno e a você, professor, uma linha narrativa gradual, com vários desdobramentos, conexões e referências. 
    
-      
+   Contudo, caso haja alguma limitação no número de aulas necessárias para a condução de todas as atividades propostas neste capítulo, alguns cortes podem ser realizados em detrimento da consistência da narrativa e, também, em função da escolha do nível de profundidade que se deseja tratar o assunto. Ao invés de oferecer um material enxuto, preferimos manter todas as conexões e deixar para você, professor, a escolha consciente de um percurso no material do capítulo que equilibre o tempo disponível e o tratamento do assunto de representações e projeções.
 
    **Observações**
    
@@ -179,6 +180,12 @@
          O que é uma *vista*?         
             
    * Existem vários modelos matemáticos que tentam capturar como "vemos" ([Lindberg-1976]_, [Howard-et-al-1995]_). Para este capítulo, usaremos o modelo simples dado por projeções em perspectiva.     
+   
+   **Leituras complementares**
+   
+   * Caso o tópico de matrizes esteja na grade curricular de sua escola, recomendamos a leitura do caderno explicativo "Perspectiva e Anamorfismo" de Gladson Antunes, Leonardo Silvares e Michel Cambrainha, disponível no endereço <https://goo.gl/eQzPWH>, que oferece uma abordagem matricial das projeções em perspectiva.
+   
+   * Recomendamos a leitura do livro "Olhar, Saber, Representar: Sobre A Representação em Perspectiva" de Cláudia Flores (publicado em 2007 pela Musa Editora) que traz, por meio da análise de cerca de 70 obras do Renascimento, uma abordagem da história da arte em termos do nosso modo de olhar e da representação em perspectiva. Outra referência sobre este tema é o excelente livro "The Science of Art: Optical Themes in Western Art from Brunelleschi To Seurat" de Martin Kemp (publicado em 1992 pela Yale University Press).
 
 
 ****
