@@ -18,10 +18,10 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
    Observe que o vetor deslocamento é definido apenas em termos dos pontos inicial e final e estes não mudam com escolhas diferentes para o ponto de referência. Por este motivo, o vetor deslocamento também não muda. Na :numref:`fig-geometria-deslocamento-01`, o ponto de referência `L` não precisa, obrigatoriamente, ser um ponto da pista.
 
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
-    #. O deslocamento é uma grandeza escalar ou vetorial?
-    #. Na :numref:`fig-geometria-deslocamento-01`, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não?
+   #. O deslocamento é uma grandeza escalar ou vetorial?
+   #. Na :numref:`fig-geometria-deslocamento-01`, os vetores posições relativas foram desenhados tomando-se o ponto de largada `L` como ponto de referência. Se escolhêssemos um outro ponto de referência, o vetor deslocamento seria diferente? Por que sim? Por que não?
 
 
 .. admonition:: Para o professor
@@ -44,26 +44,30 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. _label-hjb-cuidado-01:
 
-.. admonition:: Cuidado!
+.. admonition:: Observação
 
-    Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento!
+   **Cuidado!**
 
-    Você pode estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. Uma resposta é que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importando a trajetória específica percorrida entre essas posições.
+   Um equívoco muito comum é achar que o vetor deslocamento dá a *trajetória* do objeto que se desloca, isto é, que o objeto se desloca seguindo o segmento de reta que vai do ponto inicial ao ponto final especificados pelo vetor deslocamento. *Este pode não ser o caso!* Por exemplo, na :numref:`fig-geometria-deslocamento-01`, o carro *não seguiu em linha reta* de `S` para `T`. Ele seguiu pela pista, passando pela curva "S" do Sena, depois seguindo pelo trecho da "reta oposta" da pista. O que o vetor deslocamento faz é apenas especificar os pontos inicial e final do deslocamento!
+
+   Você pode estar se perguntando sobre o porquê de se considerar o vetor deslocamento e não a trajetória efetivamente percorrida. Uma resposta é que, para alguns conceitos da Física (o conceito de *trabalho* de uma força, por exemplo), apenas as posições inicial e final (representadas pelo vetor deslocamento) serão importantes, não importando a trajetória específica percorrida entre essas posições.
 
 .. _label-hjb-voce-sabia-01:
 
-.. admonition:: Você sabia?  Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.
+.. admonition:: Você sabia?  
 
-    Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armazenados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
-    Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
+   **Vetores deslocamentos são usados em Computação Gráfica para compactação de vídeos.**
+
+   Dado que um vídeo pode ser considerado como uma sequência de fotos digitais, uma pessoa que esteja abaixando sua cabeça no vídeo terá, por exemplo, o pixel que representa a posição da ponta do seu nariz deslocado para outro pixel em outra posição na foto digital seguinte. Esses deslocamentos são codificados por vetores, denominados :index:`motion vectors` ou :index:`displacement vectors` em Inglês. A compactação (economia no armazenamento de dados) vem, entre fatores, do fato de que (1) apenas os pixels que se deslocaram são armazenados (muitos pixels "ficam parados", como se pode observar na :numref:`fig-motion-vector-01`) e (2) pixels próximos tendem a se deslocar na mesma orientação (se o nariz está se deslocando para baixo no vídeo, a boca muito provavelmente também será deslocada para baixo) e, ao se criar blocos de pixels com essa correlação, menos informação será necessária ser armazenada.
+   Este vídeo <`https://www.youtube.com/watch?v=Zsehy1Sbab8 <https://www.youtube.com/watch?v=Zsehy1Sbab8>`_> exibe a técnica do *motion vectors* sendo visualizada em um trecho do filme Matrix.
 
             .. _fig-motion-vector-01:
 
-    .. figure:: _resources/motion-vector-01.*
-       :width: 400pt
-       :align: center
+   .. figure:: _resources/motion-vector-01.*
+      :width: 400pt
+      :align: center
 
-       *motion vectors* para um vídeo da NASA sobre líquidos em baixa gravidade.
+      *motion vectors* para um vídeo da NASA sobre líquidos em baixa gravidade.
 
 
 
@@ -72,7 +76,7 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 
 Atividade: corrida de vetores
-------------------------------------------
+-----------------------------
 
 .. admonition:: Para o professor
 
@@ -332,46 +336,47 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
       .. tikz::
 
-        \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \tikzset{>=latex}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
-       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-       \draw[color=qqqqff] (0.8,2.3) node {$B$};
-       \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
-       \draw[color=qqqqff] (2.1,3.37) node {$C$};
-       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+         \tikzset{>=latex}
+         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+         \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+         \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+         \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+         \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+         \draw[color=qqqqff] (0.8,2.3) node {$B$};
+         \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
+         \draw[color=qqqqff] (2.1,3.37) node {$C$};
+         \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);
 
       Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.
 
       .. tikz::
 
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \tikzset{>=latex}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
-       \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-       \draw[color=qqqqff] (0.8,2.3) node {$B$};
-       \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
-       \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};
-       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
+         \definecolor{qqqqff}{rgb}{0.,0.,1.}
+         \tikzset{>=latex}
+         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+         \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
+         \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
+         \draw[color=qqqqff] (-1.7,0.24) node {$A$};
+         \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
+         \draw[color=qqqqff] (0.8,2.3) node {$B$};
+         \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
+         \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};
+         \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
+         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
 
    #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
 
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
-    Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
+   Quaisquer que sejam os **números reais** `a` e `b`, é verdade que `|a + b| = |a| + |b|`? Aqui, as barras `|\hphantom{x}|` representam o :index:`valor absoluto` (módulo) de um número real. Assim, por exemplo,
 
-    .. math::
-        |a| = \left\{\begin{array}{ll}
-                          \hphantom{+}a, & \text{se } a \geq 0, \\
-                          -a, & \text{se } a < 0.
+   .. math::
+      
+      |a| = \left\{\begin{array}{ll}
+                        \hphantom{+}a, & \text{se } a \geq 0, \\
+                        -a, & \text{se } a < 0.
                      \end{array}\right.
 
 **Vetor deslocamento nulo e vetor deslocamento simétrico**
@@ -382,9 +387,9 @@ Se um objeto se desloca de um ponto `A` para um ponto `B` e, em seguida, se desl
 * o vetor deslocamento nulo `\vec{0}` e o número real `0` têm naturezas diferentes: `\vec{0}` é um *ponto do plano*, enquanto que `0` *não o é*;
 * para todo vetor deslocamento `\vec{v} = \overrightarrow{AB}` no plano, existe o vetor `\vec{w} = \overrightarrow{BA}` tal que `\overrightarrow{AB} + \overrightarrow{BA} = \overrightarrow{AA}`, isto é, `\vec{v} + \vec{w} = \vec{0}`. O vetor deslocamento `\vec{w}` com essa propriedade é denominado :index:`vetor deslocamento simétrico` de `\vec{v}` e, dada sua importância, receberá uma notação especial: `-\vec{v}`.
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
-    Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
+   Se o vetor deslocamento de um objeto é o vetor nulo, então a trajetória percorrida correspondente tem obrigatoriamente comprimento `0`?
 
 
 **Segmentos orientados especificando apenas orientação e módulo**
