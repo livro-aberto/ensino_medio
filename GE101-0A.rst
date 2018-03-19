@@ -206,21 +206,20 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
    É importante observar que, no contexto de vetores deslocamentos, o vetor resultante `\vec{u} + \vec{v}` só está definido se os vetores `\vec{u}` e `\vec{v}` forem justapostos *nesta ordem*, isto é, se  a extremidade inicial de `\vec{v}` coincidir com a extremidade final de `\vec{u}`. Assim, por exemplo, não está definida como um vetor deslocamento a
    resultante `\overrightarrow{AB} + \overrightarrow{CD}` dos vetores deslocamentos `\overrightarrow{AB}` e `\overrightarrow{CD}` da figura. Cabe ainda observe que, fora do contexto aplicado, isto é, considerando-se `\overrightarrow{AB}` e `\overrightarrow{CD}` como coleções de segmentos orientados, a soma `\overrightarrow{AB} + \overrightarrow{CD}` *está definida* e é, a exemplo dos vetores parcelas, uma coleção de segmentos orientados.
 
-    .. tikz::
+   .. tikz::
 
-       \tikzset{>=latex}
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
-       \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
-       \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
-       \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
-       \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
-       \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
-       \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
-       \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
-       \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
-       \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
-
+      \tikzset{>=latex}
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
+      \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
+      \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
+      \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
+      \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
+      \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
+      \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
+      \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
+      \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
+      \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
 
 
 
@@ -282,7 +281,8 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
 .. tikz::
 
-   %\definecolor{qqqqff}{rgb}{0.,0.,1.}
+   \begin{scope}[scale=.3]
+   \definecolor{qqqqff}{rgb}{0.,0.,1.}
    \tikzset{>=latex}
    \draw[->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
    \draw[line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
@@ -290,6 +290,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
    \draw[color=qqqqff] (-1.7,0.24) node {$A$};
    \draw[fill=qqqqff] (0.84,2.) circle (1.5pt);
    \draw[color=qqqqff] (0.8,2.3) node {$B$};
+   \end{scope}
 
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: construa a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: construa a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
