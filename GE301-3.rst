@@ -50,26 +50,26 @@ Atividade: perspectiva em perspectiva
 
    #. A seguir, listaremos alguns dos erros visíveis da gravura, sendo que outros ainda podem ser detectados:
 
-   * O homem de pé no canto direito da tela está segurando uma vara de pescar cujo anzol passa pelo outro homem que está pescando na margem do rio.  
-   * A flâmula está presa alinhadamente em dois prédios distintos de uma maneira que não condiz com a realidade.
-   * A flâmula está sobreposta por duas árvores que estão plantadas no morro que fica atrás dos prédios.
-   * O homem que está bem no alto do morro, tem acesso a uma pessoa que está na janela do prédio.
-   * É possível visualizar duas portas da igreja que estão posicionadas em direções perpendiculares.
-   * Os tamanhos dos animais crescem a medida que eles se afastam no horizonte.
-   * O telhado do prédio que contém uma pessoa na janela pode ser visto, embora a cena esteja numa perspectiva de baixo para cima.
+      * O homem de pé no canto direito da tela está segurando uma vara de pescar cujo anzol passa pelo outro homem que está pescando na margem do rio.  
+      * A flâmula está presa alinhadamente em dois prédios distintos de uma maneira que não condiz com a realidade.
+      * A flâmula está sobreposta por duas árvores que estão plantadas no morro que fica atrás dos prédios.
+      * O homem que está bem no alto do morro, tem acesso a uma pessoa que está na janela do prédio.
+      * É possível visualizar duas portas da igreja que estão posicionadas em direções perpendiculares.
+      * Os tamanhos dos animais crescem a medida que eles se afastam no horizonte.
+      * O telhado do prédio que contém uma pessoa na janela pode ser visto, embora a cena esteja numa perspectiva de baixo para cima.
    
    #. 
       * Com as informações obtidas no diagrama de setores 3D não é possível identificar qual é mais frequente entre A ou C, e entre B ou D.
       * Dadas as porcentagens de cada item, fica claro que o diagrama apresentado na figura acima realmente não representa a real situação de frequência dos itens A, B, C, e D. Veja a versão 2D do diagrama na :numref:`fig-proj-graficosetores-sol`. Esta imagem foi gerada na construção interativa feita no Geogebra e disponível em <https://www.geogebra.org/m/yFJXfXq2>.
 
-         .. _fig-proj-graficosetores-sol:
+      .. _fig-proj-graficosetores-sol:
 
-         .. figure:: _resources/GraficoSetor2D.png
-            :width: 200pt
+      .. figure:: _resources/GraficoSetor2D.png
+         :width: 200pt
 
-            Diagrama de setores 2D.
+         Diagrama de setores 2D.
 
-         Pela versão 2D do diagrama, conseguimos determinar que o item A é o mais frequente entre A e C, e B é o item mais frequente entre B e D. 
+      Pela versão 2D do diagrama, conseguimos determinar que o item A é o mais frequente entre A e C, e B é o item mais frequente entre B e D. 
 
    #. As projeções das bases dos dois paralelepípedos não são paralelas e congruentes, logo a imagem não representa a projeção perspectiva dos dois blocos.
 
@@ -98,17 +98,23 @@ Atividade: perspectiva em perspectiva
 
 #. Simplício está estudando Geometria Espacial em um livro e se depara com a figura a seguir. 
 
+            .. _fig-proj-distratores-1:
+
             .. figure:: _resources/perspectiva-distratores-01_1.jpg
 
 
    O livro diz que `ABCDEFGH` é uma projeção em perspectiva de um cubo e pergunta quantos pontos de interseção existem entre as retas `BD` e `EG`. Simplício responde: "Pergunta fácil! Existe um único ponto de interseção entre `GD` e `EG`. Este ponto `P` aqui, como podemos ver claramente!".
 
+                  .. _fig-proj-distratores-2:
+                  
                   .. figure:: _resources/perspectiva-distratores-02_1.jpg
 
 
    Você concorda com a resposta de Simplício? Por que sim? Por que não?
 
 #. (Adaptado de [Lellis-2009]_) Na figura a seguir `ABCDEFGH` é uma projeção paralela de um cubo. Qual ponto está mais próximo da reta `r = FG`? O ponto `P`, o ponto `C` ou o ponto `Q`?
+
+   .. _fig-proj-distratores-3:
 
    .. figure:: _resources/perspectiva-distratores-03.jpg
 
@@ -140,13 +146,28 @@ Atividade: perspectiva em perspectiva
 
 .. admonition:: Resposta
 
-   #. Não. As retas `BD` e `EG` estão contidas em faces opostas do cubo, portanto elas não se encontram.
+   #. Não. As retas `BD` e `EG` estão contidas em faces opostas do cubo, portanto elas não se encontram. Veja a figura abaixo.
 
-   #. Primeiramente, repare que os pontos `P, C` e `Q` estão contidos no plano da face `CDHG` que é perpendicular à reta `r`. Além disso, `r` intersecta tal plano em `G`, o que implica que o ponto (entre `P, C` e `Q`) mais próximo de `r` será também o ponto mais próximo de `G`.
+      .. figure:: _resources/Distrator_a.png
+         :width: 160pt
+         
+      Utilize a construção interativa disponível em <https://www.geogebra.org/m/aGaRUudY> para visualizar melhor a situação.      
+
+   #. Primeiramente, repare que os pontos `P, C` e `Q` estão contidos no plano da face `CDHG` que é perpendicular à reta `r`. Além disso, `r` intersecta tal plano em `G`, o que implica que o ponto (entre `P, C` e `Q`) mais próximo de `r` será também o ponto mais próximo de `G`. Observe a figura abaixo.
+   
+      .. figure:: _resources/Distrator_b.png
+         :width: 200pt
 
       Observe que `CG` é perpendicular à reta `r`, logo a distância de `C` à reta `r` é dada pelo comprimento do segmento de reta `CG`. `PCG` é um triângulo retângulo onde `PG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `PG` é maior que o comprimento de `CG`. `QCG` é também um triângulo retângulo onde `QG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `QG` é maior que o comprimento de `CG`. Assim, `CG` é menor que `PG` e `QG` ao mesmo tempo. Portanto, `C` é o ponto mais próximo de `G`, e consequentemente, o ponto mais próximo de `r`. 
+      
+      Para um melhor entendimento do que foi discutido acima, acesse a construção interativa disponível em <https://www.geogebra.org/m/C4GQJnVk>.
 
-   #. Não. A reta `DM` está contida no plano que contém a face `ABCD` do cubo e portanto, não pode cortar sua face oposta `EFGH` no ponto `N` como sugerido por Simplício.
+   #. Não. A reta `DM` está contida no plano que contém a face `ABCD` do cubo e portanto, não pode cortar sua face oposta `EFGH` no ponto `N` como sugerido por Simplício. Veja isso na figura abaixo.
+   
+      .. figure:: _resources/Distrator_c.png
+         :width: 130pt
+         
+      A construção interativa disponível em <https://www.geogebra.org/m/jNFQMfhH> pode te ajudar a entender melhor a situação.
 
    #. 
       * Não. De fato, `DM = MF = FN = ND`, pois esses segmentos são hipotenusas de triângulos retângulos formados por catetos que medem o mesmo que a aresta do cubo e metade dela. Mas isto não implica que `DMFN` é um quadrado, e portanto seus ângulos internos são retos. Com a congruência de todos os lados de `DMFN` podemos afirmar que o quadrilátero é um losango, mas não podemos afirmar que é um quadrado. 
