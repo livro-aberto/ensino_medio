@@ -79,7 +79,7 @@ Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que
 
    y_i=x_i+a,\quad  i=1,2,\cdots, n  
    
-e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` .
+e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial acrescidos de uma constante `a` . Na :ref:`ativ-Notas-de-artes` essa transformação será realizada sobre o conjunto das notas, se o professor acrescentar 1,0 ponto às notas dos alunos da turma.
 
 #. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
 
@@ -87,7 +87,7 @@ e `a` é um número real fixado, ou seja, o novo conjunto compreende todos os el
 
 #. Compare o coeficiente de variação do novo conjunto com o do conjunto inicial. São iguais? Por quê?  
    
-`5.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0.` 
+`5.` Seja `\{x_1,x_2,\cdots x_n\}` uma amostra de tamanho `n` de uma população, em que a média amostral é dada por `\bar{x}`, o desvio padrão amostral é dado por `s` e o coeficiente de variação amostral é dado por `\textsf{CV}=\frac{s}{\bar{x}}\cdot 100` %. Defina um novo conjunto de dados `\{y_1,y_2,\cdots y_n\}` em que `y_i=c\cdot x_i`, `i=1,2,\cdots, n` e `c` é um número real fixado e `c>0`, ou seja, o novo conjunto compreende todos os elementos do conjunto inicial multiplicados por uma constante `c>0.` Na :ref:`ativ-Notas-de-artes` essa transformação será realizada sobre o conjunto das notas, se o professor aumentar em 20% a nota de cada aluno, isto é, multiplicar cada nora pelo fator 1,2. 
 
 1. Em função da média do conjunto inicial, `\bar{x}`, determine a média do novo conjunto.
 
@@ -259,7 +259,7 @@ a) X = Y < Z 		b) Z < X = Y 	c) Y < Z < X 		d) Z < X < Y 	e) Z < Y < X
    
 Usando todas as ferramentas estudadas neste capítulo, ajude este professor, fazendo um relatório detalhado e comparativo sobre os dois turnos. Se preferir, você poderá baixar estes dados no **link**, mas lembre-se que como eles estão registrados no GeoGebra, a vírgula foi trocada por ponto. 
 
-`12.` Quando comparou-se a média com a mediana falou-se em grau de assimetria da distribuição (:ref:`sec-organizando1`). Na seção :ref:`sec-Parasabermais` falou-se novamente em grau de assimetria. A assimetria pode ser medida pelo **índice de assimetria de Pearson** 
+`12.` Quando comparou-se a média com a mediana falou-se em grau de assimetria da distribuição (:ref:`sec-organizando1`). Na seção :ref:`sec-Para-saber-mais` falou-se novamente em grau de assimetria. A assimetria pode ser medida pelo **índice de assimetria de Pearson** 
 
 .. math::
 
@@ -296,19 +296,18 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
 
 .. _tabela-medicamentos:
 
-.. table:: Legenda
-   :widths: 1 3
-   :column-alignment: left center
+   .. table:: Legenda
    
-+-------------+-----------------------------------------------------------+--------------+---------------------+
-| medicamento | tempo em minutos                                          | soma simples | soma de quadrados   |
-+=============+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==============+======================
-| X           | 7| 8| 8| 9| 9| 9| 9|10|10|10|10|10|10|11|11|11|11|12|12|13| 200          |  1961               |
-+-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
-| Y           | 7| 8| 9| 9|10|10|11|11|11|12|12|12|13|13|14|14|15|15|16|18| 240          |  3030               |
-+-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
-| Z           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240          | 2890                |
-+-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+   
+      +-------------+-----------------------------------------------------------+--------------+---------------------+
+      | medicamento | tempo em minutos                                          | soma simples | soma de quadrados   |
+      +=============+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==============+======================
+      | X           | 7| 8| 8| 9| 9| 9| 9|10|10|10|10|10|10|11|11|11|11|12|12|13| 200          |  1961               |
+      +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+      | Y           | 7| 8| 9| 9|10|10|11|11|11|12|12|12|13|13|14|14|15|15|16|18| 240          |  3030               |
+      +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
+      | Z           |11|11|11|11|11|12|12|12|12|12|12|12|12|12|12|13|13|13|13|13| 240          | 2890                |
+      +-------------+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--------------+---------------------+
 
 #. Complete o quadro a seguir.
    
@@ -522,6 +521,41 @@ Deseja-se comparar três medicamentos, X, Y e Z, no tratamento da dor de cabeça
       +---------+-------+------+-------+
       | Max     | 13    | 18   | 13    |
       +---------+-------+------+-------+
+      
+   #. Boxplots
+   
+   .. _fig-coloque-aqui-o-nome:
+
+
+   .. figure:: _resources/boxplotsmedicamentos.png
+      :width: 200pt
+      :align: center
+      
+      Boxplots para os tempos de cura dos medicamentos X, Y e Z
+      
+   #. Observando-se nos boxplots os comprimentos dos seguintes pares de intervalos 
+   			      
+      #. Q1 e mínimo e máximo e Q3;               
+      #. Mediana e Q1 e Q3 e mediana;      
+      #. Mediana e mínimo e Máximo e mediana.
+   
+   conclui-se que são aproximadamente iguais, concluindo-se que as distribuições, para os três medicamentos, são simétricas. Observe que os índicens de assimetria são iguais a zero em cada uma, pois tem-se média=mediana, nas três distribuições.
+   
+   #. Como todas as distribuições são simétricas, podemos usar a regra empírica de frequ~encia entre a média mais ou menos dois desvios padrões. Para o medicamento X, com cerca de 95% de chance a dor de cabeça será curada entre 8,513 min e 11,487 min.  Para o medicamento Y, com cerca de 95% de chance a dor de cabeça será curada entre 9,19 min e 14,81 min.
+   Para o medicamento Z, com cerca de 95% de chance a dor de cabeça será curada entre 11,275 min e 12,725 min. Observe que apesar do intervalo de 95% de chance para o tempo de cura no medicamento em Z ser mais estreito do que o mesmo intervalo para o medicamento X, o intervalo para o medicamento X apresenta valores menores: de fato, cerca de 75% dos valores em X são mennores do que o valor mínimo em Z. Por esta razão, neste exemplo, a melhor escolha parece ser o medicamento X.
+            
+
+
+   
+      
+   
+   
+
+
+   
+   
+   
+   
    
     
    
