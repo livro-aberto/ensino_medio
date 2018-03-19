@@ -62,9 +62,11 @@
 
   Em adição às medidas de posição, medidas de dispersão complementam a descrição de uma distribuição. A motivação para a necessidade de definir medidas de dispersão será realizada com base em uma atividade em que dois conjuntos de dados apresentam média, mediana e moda coincidentes, mas suas distribuições são diferentes. 
 
-  Finalmente, após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
+  Após a definição das medidas de dispersão, uma atividade, na qual dois conjuntos de dados apresentam a mesma variância, é proposta. A finalidade dessa atividade será avaliar a magnitude da variância em relação ao conjunto e definir o coeficiente de variação amostral, usado para avaliar essa magnitude. 
+  
+  Na seção seguinte, será proposta uma atividade para construir uma representação gráfica alternativa ao histograma conhecida como boxplot. O esquema dos cinco números, conjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. Na conclusão desta seção, apresenta-se uma regra empírica para a determinação de frequência de observações nos em intervalos centrados na média de comprimentos dados por dosi desvios padrões e quatro desvios padrões para uma situações nas quais não existem valores atípicos ou estes são raros e, a forma da distribuição não é muito assimétrica.
  
-  Na seção **Para saber mais** será apresentado o *boxplot* (gráfico caixa), esquema alternativo ao histograma para representar dados quantitativos.  O esquema dos cinco números, conjunto formado pelas medidas: mínimo, quartis e máximo é usado na construção do boxplot. Os *boxplots* são gráficos simples e muito usados na comparação de diferentes conjuntos de dados. Na construção do boxplot, é apresentado um critério de classificação de um valor do conjunto como valor atípico em relação aos demais valores do conjunto de dados. 
+  Na seção **Para saber mais** são apresentadas fórmulas para o cálculo de algumas medidas trabalhadas no capítulo para dados agrupados e algumas demonstrações de resultados trabalhados no capítulo.
 
   **Diferencial do Capítulo**
 
@@ -154,7 +156,8 @@
   **Para saber mais**
  
   Nesta seção serão apresentadas
-  #. fórmulas para o cálculo de medidas no contexto de dados agrupado;
+  
+  #. fórmulas para o cálculo de medidas apresentadas no capítulo para dados agrupados;
   #. demonstrações de propriedades trabalhadas nas seções organizando as ideias; 
   #. texto explicando a escolha do desvio padrão em detrimento do desvio médio;
   #. atividade para compreender a escolha do denominador n-1 no cálculo da variância amostral.
@@ -388,7 +391,7 @@ Os dois histogramas a seguir correspondem às notas, após usar cada uma das pos
    
    (b) Com o acréscimo de 1 ponto a cada nota, a nota maior que é 8,0 passa a ser 9,0; já com o aumento de 20% sobre a nota de cada um, a nota maior passa a ser 9,6. Portanto, analisando os dois histogramas dados, conclui-se que o primeiro corresponde ao aumento de 20% na nota de cada um e, o segundo, ao acréscimo de 1 ponto na nota de cada um.
    
-   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,93. Ou seja, a nova média pe dada por `\frac{207,5+35}{35}\approx 5,93+1`. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,93\approx 7,12`, em que `S=207,5`.
+   (d) Observe que se todos os alunos tiverem o acréscimo de 1 ponto, a soma total das notas será acrescida de 35 pontos (pois são 35 alunos). Ao dividir o total por 35, perceba que a nova média será alterada exatamente pelo acréscimo de 1 ponto, passando a ser 6,93. Ou seja, a nova média é dada por `\frac{207,5+35}{35}\approx 5,93+1`. Já no caso do aumento de 20% sobre a nota de cada aluno, teremos que a nova soma total de notas será dada pela soma original acrescida de 20% tal que a média será dada por `\frac{S+0,2\cdot S}{35}=\frac{1,2\cdot S}{35}=1,2\times \underbrace{\frac{S}{35}}_{\approx 5,9 \textsf{ média original}} = 1,2\times 5,93\approx 7,12`, em que `S=207,5`.
    
    (e) Não há uma resposta certa para este item. Se cada aluno olhar o seu ponto de vista particular, para alguns será melhor ganhar um ponto e para outros será melhor ter um aumento de 20% sobre a nota. Mais especificamente, para quem tiver obtido nota 5,0 será indiferente; para quem tiver obtido nota inferior a 5,0 será melhor ganhar um ponto e, para os restantes, será melhor o acréscimo de 20% sobre a nota.
    
@@ -433,7 +436,7 @@ Uma das mais famosas é a Maratona da Cidade de Nova Iorque, nos Estados Unidos.
    Corredores participando da Maratona de *Nova York*, `Wikipedia <https://commons.wikimedia.org/wiki/File:New_York_marathon_Verrazano_bridge.jpg>`_
 
 
-Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados separadamente. Qual das categorias você acha que terá os melhores resultados na maratona? Em quanto tempo você acha que uma pessoa percorre os 42 km? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
+Os resultados do evento são divididos nas categorias de homens e mulheres, além disso, no evento participam cadeirantes e pessoas usando triciclos de mão (*handcycle*), categorias cujos resultados são premiados e publicados separadamente. Qual das categorias você acha que terá os melhores resultados na maratona? Em quanto tempo você acha que uma pessoa percorre os 42,195 km? O que você acha ser mais rápido: correr em cadeira de rodas ou em triciclo de mão?
 
 .. _handcycle:
 
@@ -551,37 +554,37 @@ Para calcular a média destes dados é conveniente reduzi-los a uma única unida
 
 3. Calcule o tempo médio dos 100 melhores tempos das corredoras, sabendo que a soma dos tempos é 286,978 horas. Localize o valor encontrado no eixo horizontal do histograma. Em que posição ficaria uma corredora cujo tempo no qual completou a maratona é igual ao tempo médio calculado neste item?
 
-4. Trace linhas verticais no histograma de modo a separar as classificações em 4 grupos: uma linha linha vertical que identifica o 25o lugar, separando os 25 primeiros colocados dos demais; outra, que identifica a 50a classificação e, por fim, uma que marca o 75o tempo na classificação geral. 
+4. Trace linhas verticais no histograma de modo a separar as classificações em 4 grupos: uma linha vertical que identifica o 25o. lugar, separando os 25 primeiros colocados dos demais; outra, que identifica a 50a. classificação e, por fim, uma que marca o 75o. tempo na classificação geral. 
 
- As marcações dos tempos de posições 25, 50 e 75 neste conjunto de 100 observações são chamadas de quartis da distribuição, este conceito será formalizado adiante.
+ As marcações dos tempos das 25a., 50a. e 75a. posições neste conjunto de 100 observações são chamadas de quartis da distribuição, este conceito será formalizado adiante.
 
 5. Considerando as marcações realizadas no item anterior, determine aproximadamente as medidas das áreas contando os retângulos da grade do histograma correspondentes aos seguintes intervalos de tempo
 
    1. primeiro lugar até o 25o.;
-   2. 25o. até o 50o;
-   3. 50o até o 75o;
-   4. 75o até o 100o; 
+   2. 25o. até o 50o.;
+   3. 50o. até o 75o.;
+   4. 75o. até o 100o.; 
 
    e compare-as.
    
 6. Calcule os comprimentos dos intervalos de tempo determinados pela proposta de divisão no item (d) e compare-os.
 
-   +------------+-------------+
-   | Intervalo  | comprimento |
-   +------------+-------------+
-   | t1 a t25   |             |
-   +------------+-------------+
-   | t25 a t50  |             |
-   +------------+-------------+
-   | t50 a t75  |             |
-   +------------+-------------+
-   | t75 a t100 |             |
-   +------------+-------------+
+   +--------------+-------------+
+   | Intervalo    | comprimento |
+   +--------------+-------------+
+   | 1o. a 25o.   |             |
+   +--------------+-------------+
+   | 25o. a 50o  .|             |
+   +--------------+-------------+
+   | 50o. a 75o.  |             |
+   +--------------+-------------+
+   | 750. a 100o. |             |
+   +--------------+-------------+
 
 
 7. O valor obtido para o tempo médio coincide com alguma das outras marcas feitas no histograma? 
 
-8. Observe que o tempo médio dos 100 melhores tempos para mulheres e o tempo da corredora que chegou em 50o lugar são diferentes. Qual deles você escolheria como medida resumo destes dados? Por quê?
+8. Observe que o tempo médio dos 100 melhores tempos para mulheres e o tempo da corredora que chegou em 50o. lugar são diferentes. Qual deles você escolheria como medida resumo destes dados? Por quê?
 
 .. admonition:: Resposta 
 
@@ -624,7 +627,7 @@ Para calcular a média destes dados é conveniente reduzi-los a uma única unida
   
    2. Observando a forma do histograma podemos perceber uma grande concentração de valores mais à direita e que o histograma é alongado à esquerda. Distribuições com esta aparência são ditas ter uma forma assimétrica à esquerda.
    
-   3. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a. posição.
+   3. O tempo médio das primeiras 100 corredoras é de 2,8698 horas, isto é 2:52:11. Uma corredora com esse tempo teria ficado na 36a.posição.
    
    4. Para ficar entre os primeiros 25 lugares, uma corredora teria que terminar a corrida em até 2:45:52 (2,764 horas).
    
@@ -658,5 +661,5 @@ Para calcular a média destes dados é conveniente reduzi-los a uma única unida
    
    7. Não coincide.
    
-   8. Tem-se que o tempo médio foi 2,8698 e tempo da posição 50 foi 2,949 e, portanto, são diferentes. Adiante vamos trabalhar a razão desta diferença neste conjunto. Isto se deve à forma observada no histograma, comentada no segundo item. Observando o histograma, a média fica puxada para baixo, quase na primeira terceira parte. Neste caso, o tempo da 50a posição representa melhor o conjunto como um todo.
+   8. Tem-se que o tempo médio foi 2,8698 e tempo da posição 50 foi 2,949 e, portanto, são diferentes. Adiante vamos trabalhar a razão desta diferença neste conjunto. Isto se deve à forma observada no histograma, comentada no segundo item. Observando o histograma, a média fica puxada para baixo, quase na primeira terceira parte. Neste caso, o tempo da 50a. posição representa melhor o conjunto como um todo.
 
