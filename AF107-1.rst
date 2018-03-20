@@ -1,3 +1,4 @@
+.. _sec-funcao-afim:
 *******
 Explorando: função afim
 *******
@@ -26,12 +27,12 @@ Atividade: Distância x tempo
    .. figure:: _resources/modelo_distancia_1.jpeg
       :width: 300pt
       :align: center
- 
+   
    
    * Recomendamos que, se possível, discuta com seus alunos uma variante do problema. O caso em que, mesmo que a pessoa não ande em linha reta, o gráfico continua representando a relação entre a distância percorrida e o tempo de percurso. Apresente por exemplo percursos diferentes, refazendo as perguntas, como por exemplo:
    
    
-   .. _fig-coloque-aqui-o-nome:
+   .. _fig-percursos:
 
    .. figure:: _resources/percursos_1.jpeg
       :width: 300pt
@@ -47,7 +48,7 @@ Atividade: Distância x tempo
 O gráfico a seguir mostra a variação da distância a um ponto de referência de uma pessoa que caminha em linha reta durante `4` segundos. Algumas informações sobre o movimento podem ser extraídas diretamente dessa representação gráfica.
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-tempo-distancia:
 
 .. figure:: _resources/tempo_distancia_1.png
    :width: 300pt
@@ -82,40 +83,40 @@ Organizando as ideias: função afim
 O gráfico da :ref:`ativ-dist-tempo` apresenta a distância até o ponto de referência como uma função do tempo. Como a ação acontece no intervalo de tempo de `0` a `4` segundos, podemos modelar essa relação com uma função `f` cujo domínio é o intervalo `[0,4]`, isto é, `f:[0,4] \to \mathbb{R}`. Vamos juntos determinar uma expressão para `f`?
 
 Apesar do gráfico ser um segmento de reta, `f` não pode ser uma função linear, pois a reta não contém a origem do plano cartesiano. Como no início da contagem do tempo a pessoa estava na posição `1`, devemos ter `f(0)=1`. Em particular, as grandezas posição e tempo, nesse caso, não são proporcionais. 
- 
+
 Vamos definir uma outra função que vai nos auxiliar a determinar uma expressão para `f`. Chamaremos de `d(t)` a distância percorrida no intervalo de tempo `[0,t]`. Por exemplo, como fazemos para calcular `d(2)` ? Basta saber em que posições a pessoa estava nos tempos `t=0` e `t=2` e fazer a diferença. Neste caso `d(2)=f(2)-f(0)=5-1=4`. Isso nos dá a dica de como calcular `d(t)` para qualquer `t\in[0,4]`.
 
 .. math::
 
-     d(t)=f(t)-f(0) \Longrightarrow d(t)= f(t)-1
+   d(t)=f(t)-f(0) \Longrightarrow d(t)= f(t)-1
 
 Vamos preencher o seguinte quadro:
 
 .. table::
-   :widths: 1 2 2
+   :widths: 3 2 2
    :column-alignment: center center center
 
-   +-----+---------------------+---------------------+
-   | `t` |     `f(t)`          |    `d(t)=f(t)-1`    |
-   +-----+---------------------+---------------------+
-   |`0`  |   `1`               |                     |
-   +-----+---------------------+---------------------+
-   |`0,5`|                     |                     |
-   +-----+---------------------+---------------------+
-   |`1`  |   `3`               |                     |
-   +-----+---------------------+---------------------+
-   |`1,5`|                     |                     |
-   +-----+---------------------+---------------------+
-   | `2` |         `5`         |        `4`          |
-   +-----+---------------------+---------------------+
-   |`2,5`|                     |                     |
-   +-----+---------------------+---------------------+
-   |`3`  |                     |                     |
-   +-----+---------------------+---------------------+
-   |`3,5`|                     |                     |
-   +-----+---------------------+---------------------+
-   |`4`  |        `9`          |      `8`            |
-   +-----+---------------------+---------------------+
++-----+---------------------+---------------------+
+| `t` |     `f(t)`          |    `d(t)=f(t)-1`    |
++-----+---------------------+---------------------+
+|`0`  |   `1`               |                     |
++-----+---------------------+---------------------+
+|`0,5`|                     |                     |
++-----+---------------------+---------------------+
+|`1`  |   `3`               |                     |
++-----+---------------------+---------------------+
+|`1,5`|                     |                     |
++-----+---------------------+---------------------+
+| `2` |         `5`         |        `4`          |
++-----+---------------------+---------------------+
+|`2,5`|                     |                     |
++-----+---------------------+---------------------+
+|`3`  |                     |                     |
++-----+---------------------+---------------------+
+|`3,5`|                     |                     |
++-----+---------------------+---------------------+
+|`4`  |        `9`          |      `8`            |
++-----+---------------------+---------------------+
 
 Para representar o gráfico da função `d`, devemos considerar os pontos `D=(t,d(t))`, para cada `t` de `0` a `4` segundos. Já para representar o gráfico da função `d`, devemos considerar os pontos `F=(t,f(t))` para `t` de `0` a `4` segundos. Observamos que para cada `t` de `0` a `4` segundos, os pontos do gráfico de `f` têm ordenada igual a ordenada do ponto correspondente ao gráfico de `f` mais uma unidade, como ilustra a tabela anterior. Portanto, tem-se que o gráfico da função `d` também é uma reta: uma reta paralela a reta que corresponde ao gráfico de `f` deslocada verticalmente uma unidade para baixo como ilustra a figura a seguir.
 
@@ -129,34 +130,45 @@ Finalmente, como `d(t)=f(t)-1` para `t\in[0,4]`, concluímos que uma expressão 
 
 .. math::
 
-     f(t)=2t+1
+   f(t)=2t+1
 
-Concluimos assim que o gráfico da função `f` é obtido deslocando-se o gráfico da função linear `d(t)=2t` uma unidade na vertical para cima. Por se tratarem de retas paralelas podemos também dizer que `2` é a taxa de variação de `f`.
+Concluimos assim que o gráfico da função `f` é obtido deslocando-se o gráfico da função linear `d(t)=2t` uma unidade na vertical para cima.
+
+Usando a expressão de `f`, podemos calcular sua taxa de variação média em um intervalo qualquer não-vazio `[t_1,t_2]`
+
+.. math::
+   \dfrac{f(t_2)-f(t_1)}{t_2-t_1}=\dfrac{2t_2+1-(2t_1+1)}{t_2-t_1}=\dfrac{2(t_2-t_1)}{t_2-t_1}=2.
+
+Vemos que aqui também a taxa de variação média não depende do intervalo considerado e que o valor da taxa coincide com a taxa de variação média da função `d`.
 
 .. figure:: _resources/desloca_b.png
    :width: 350pt
    :align: center
 
 
-.. admonition:: Observação
+.. glossary:: 
 
-   Toda função real de variável real que pode ser representada na forma `f(x)=ax+b` é chamada de função afim. O número `a` é chamado de taxa de variação de `f` e `b` é a medida do deslocamento que se faz a partir da função linear `\ell(x)=ax` para se obter o gráfico de `f`.
+   Função Afim
+      Toda função real de variável real que pode ser representada na forma `f(x)=ax+b` é chamada de função afim. 
+   
+   O número `a` é a taxa de variação média de `f` e `b` é a medida do deslocamento vertical que se faz a partir da função linear `\ell(x)=ax` para se obter o gráfico de `f`.
+
+.. admonition:: Exemplo
+   
+   .. figure:: _resources/exemplo_afim1.png
+      :width: 350pt
+      :align: center
+   
+      Exemplos: `\ell(x)=2x`, `f(x)=2x+5` e `f(x)=2x-3`
+   
+   .. figure:: _resources/exemplo_afim2.png
+      :width: 350pt
+      :align: center
+   
+      Exemplos: `\ell(x)=-x`, `f(x)=-x-2` e `f(x)=-x+6`
 
 
-.. figure:: _resources/exemplo_afim1.png
-   :width: 350pt
-   :align: center
-
-   Exemplos: `\ell(x)=2x`, `f(x)=2x+5` e `f(x)=2x-3`
-
-.. figure:: _resources/exemplo_afim2.png
-   :width: 350pt
-   :align: center
-
-   Exemplos: `\ell(x)=-x`, `f(x)=-x-2` e `f(x)=-x+6`
-
-
-**A inclinação de uma reta**
+**A inclinação de uma reta e a taxa de variação média**
    
 .. figure:: _resources/1024px-Planalto_Palace_ramp_and_parlatorium.jpg
    :width: 350pt
@@ -200,12 +212,14 @@ Por exemplo, para uma rampa ter inclinação `5% (1:20)` ela precisa de `20` met
 +------------------------------+---------------------+---------------------+
 |Rampa 4                       |  `1` m              |  `21` m             |
 +------------------------------+---------------------+---------------------+
- 
+
 Da mesma forma, a inclinação de uma reta é a medida do quão íngreme ela é em relação ao sistema de coordenadas onde ela está inserida. Dada uma reta em um plano cartesiano, para determinarmos sua inclinação basta fazer a divisão entre a variação das ordenadas e a variação das abscissas para quaisquer dois pontos da reta
    
 .. math::
 
    \text{inclinação}=\dfrac{y_2-y_1}{x_2-x_1}
+
+.. _fig-inclina:
 
 .. figure:: _resources/inclinacao.png
    :width: 350pt
@@ -215,26 +229,34 @@ Da mesma forma, a inclinação de uma reta é a medida do quão íngreme ela é 
 
 Por exemplo, a reta que contém os pontos `(1,2)` e `(5,7)` tem inclinação `\dfrac{7-2}{5-1}=\dfrac 54`, enquanto a reta que contém os pontos `(-1,3)` e `(2,-6)` tem inclinação `\dfrac{-6-3}{2-(-1)}=\dfrac{-9}{3}=-3`.
 
+.. _fig-inclina-1:
+
 .. figure:: _resources/inclinacao_ex1.png
    :width: 350pt
    :align: center
 
    Inclinação da reta que contém os pontos `(1,2)` e `(5,7)`
-      
+
+.. _fig-inclina-2:
+
 .. figure:: _resources/inclinacao_ex2.png
    :width: 350pt
    :align: center
 
    Inclinação da reta que contém os pontos `(-1,3)` e `(2,-6)`
    
-Se considerarmos uma reta no plano e a função afim `f` que a tem como gráfico, a inclinação da reta coincide com a taxa de variação da função `f`. Por exemplo, a reta da Figura `2.7` acima é o gráfico da função afim `f(x)=\dfrac 54 x +b`. Para determinarmos o valor de `b`, basta substituirmos um dos pontos que estão sobre a reta. Como `(1,2)` pertence ao gráfico de `f`, podemos afirmar que `f(1)=2`, logo
-   
+Se considerarmos uma reta no plano e a função afim `f` que a tem como gráfico, a inclinação da reta coincide com a taxa de variação da função `f`. 
+
+Por exemplo, a reta da :ref:`fig-inclina-2` acima é o gráfico da função afim `f(x)=\dfrac 54 x +b`. Para determinarmos o valor de `b`, basta substituirmos um dos pontos que estão sobre a reta. Como `(1,2)` pertence ao gráfico de `f`, podemos afirmar que `f(1)=2`, logo
+
 .. math::
 
    2=\dfrac 54 \cdot 1 + b \Longrightarrow b=2-\dfrac 54 = \dfrac 34
 
-Isto é, a função `f` é dada pela expressão `f(x)=\dfrac 54 x + \dfrac 34`. Já a reta da Figura `2.8` tem expressão `f(x)=-3x`.
-   
+Isto é, a função `f` é dada pela expressão `f(x)=\dfrac 54 x + \dfrac 34`. 
+
+Já a reta da :ref:`fig-inclina-2` tem expressão `f(x)=-3x`.
+
 Retas horizontais não possuem inclinação, de fato não há deslocamento vertical quando nos deslocamos horizontalmente sobre a reta, ou seja, sua inclinação será igual a zero.
    
    

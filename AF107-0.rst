@@ -3,39 +3,37 @@
    **Habilidades e pré-requisitos**
    
    Neste capítulo contemplam-se as seguintes habilidades da segunda versão da `Base Nacional Comum Curricular (BNCC): <http://historiadabncc.mec.gov.br/documentos/bncc-2versao.revista.pdf>`_
-
+   
    .. admonition:: EM11MT07
-
+   
       Reconhecer função afim e suas representações algébrica e gráfica, identificar o modelo de variação e a taxa de variação, incluindo os casos em que a variação é proporcional (linear), e utilizar essas noções para representar e resolver problemas como os de Movimento Uniforme, entre outros.
-
+   
    Os pré-requisitos para este capítulo são:
-
+   
    (EF07MA13) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas.
-
+   
    (EF07MA14) Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma `ax+b=c`, fazendo uso das propriedades da igualdade.
    
    Além disso há outras habilidades que se relacionam com os conceitos abordados nesse capítulo, a saber,
    
    (EF09MA05) Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.
-
+   
    (EF09MA07) Resolver problemas que envolvam a razão entre duas grandezas de espécies diferentes, como velocidade e densidade demográfica.
    
    (EF09MA08) Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.
    
    Prezado colega, o presente capítulo foi concebido a partir de uma abordagem de função afim não usual. Deixamos a cargo do aluno levantar conjecturas a respeito dos conceitos, definições e propriedades da função afim. Essas conjecturas ou indagações são provocadas por meio de atividades que abordam os conceitos a serem trabalhados.
-
+   
    Iniciamos o capítulo resgatando a ideia de grandezas proporcionais e relacionando-a com o conceito de função linear. É comum que a noção de proporcionalidade, mais especificamente a de proporcionalidade direta, amplamente vinculada à "regra de três", seja associada pelos estudantes a qualquer variação entre grandezas. Ainda que, de fato, a proporcionalidade tenha um papel de destaque em modelos da física e da química, nem toda variação entre grandezas é um modelo desse tipo. Portanto acreditamos que, na condução das atividades seja natural para o professor (e recomendamos que o faça) chamar a atenção dos estudantes para o fato que existem grandezas cuja relação não é de proporcionalidade.
    
-   Optamos por apresentar ao estudante o Teorema Fundamental da Proporcionalide apenas como um aprofundamento. Contudo, recomendamos que você, professor, conheça o Teorema e sua demonstração (que pode ser encontrada, por exemplo, no livro "A Matemática do Ensino Médio, vol 1" [Lima-2006]_) incluindo as equivalências que permitem verificar quando uma relação é uma proporcionalidade.
-
    Busque com seus estudantes desenvolver as atividades, de maneira a deixá-los livres para criar conjecturas ou até mesmo a chegar a conclusões, por meio de argumentos diversos, sejam eles visuais, geométricos, algébricos, lógicos ou até mesmo dissertativos.
-
+   
    Vale ressaltar alguns pontos:
-
+   
    * Boa parte das atividades tem como objetivo apontar para os estudantes a importância da análise da taxa de variação para inferirmos se uma função é afim ou não. Neste capítulo, resolvemos não fazer uso do termo **coeficiente angular** da reta. Essa decisão se pauta em dois aspectos: (i) Dependendo da escolha da unidade para as grandezas envolvidas, a imagem da representação gráfica pode sugerir um ângulo cuja a tangente não correspnde ao coeficiente angular da reta determinada pela função, e assim levar ao equívoco. (ii) Além disso, acreditamos que a compreensão de taxa de variação pode ser mais fácil se dotada de significado. Assim, por exemplo, é mais fácil compreender a taxa de variação entre temperatura e altitude ou entre velocidade e tempo do que associar essa ideia a um conceito essencialmente numérico, que é o caso do coeficiente angular de uma reta. O ângulo tem apelo visual independente das escalas escolhidas para os eixos, e assim, chamar a taxa de variação de coeficiente angular pode trazer confusão. Portanto, neste texto, optamos por destacar a especificidade de cada conceito associando o termo taxa de variação à função afim e coeficiente angular a retas (desde que estejam em um sistema de coordenadas cujos eixos apresentam-se na mesma escala).
-
+   
    * Também não achamos adequado o termo *coeficiente linear* para o `b` em `f(x)=ax+b`. Primeiramente porque, quando ele é não nulo a função deixa de ser "linear", então ele funciona mais como uma medida da "não-linearidade" da função. Em alguns livros ele também é chamado de *intercepto*. Também optamos por não utilizar essa nomenclatura por ela ser restringir apenas aos casos em que os eixos estão na posição tradicional (isto é, se cruzando no `(0,0)`) e além disso, `0` deve pertencer ao domínio da função em questão. Por essas razões, resolvemos não dar um nome para o "`b`", apenas lhe dar um significado geométrico que serve em qualquer situação: a medida da translação vertical que se faz no gráfico da função linear `\ell(x)=ax` para se obter o gráfico da função `f(x)=ax+b`.
-
+   
    * Em alguns livros o capítulo tem o nome de “Função do 1° grau”. Também acreditamos que esse termo é equivocado pois função não tem grau, o que tem grau é polinômio. No entanto, podemos dizer que toda função afim pode ser expressa por um polinômio do 1° grau.
    * Também é comum, apresentarmos uma função afim da forma `f(x)=ax+b`, sem nos preocuparmos se o seu domínio é toda real ou não. Algumas atividades abordam funções com domínios discretos, outras cujos domínios são intervalos reais. Sendo assim, ressalte para seus estudantes a importância do domínio da função, como por exemplo: `f:\mathbb{R}\to\mathbb{R}` onde `f(x)=2x+1` ; `g:[0,2]\to \mathbb{R}` onde `g(x) = -2x`   e  `h:\mathbb{N}\to\mathbb{R}` onde `h(n)=3n-5`; de maneira que o gráfico de `f` é uma reta; de `g` é um segmento de reta e de `h` é um conjunto de pontos colineares.
    * Pode ocorrer que algum estudante tente associar uma reta de inclinação negativa a uma relação de proporcionalidade inversa. Caso essa questão seja levantada durante a execução das atividades, mostre a seus estudantes, com um exemplo simples, como é a curva que representa a variação de proporcionalidade inversa (hipérbole). Decidimos não discutir esse assunto nesse capítulo para que não ficasse demasiadamente extenso.
@@ -52,11 +50,11 @@
    * Nem toda razão pode ser expressa por números racionais, o que vincula, por meio da proporcionalidade, a apresentação dos números irracionais. Isso sinaliza que nem todas as situações podem ser resolvidas recorrendo-se apenas aos números racionais. [Silva-et-al-2013]_
    
    **Referências Bibliográficas**
-
+   
    .. [Dooren-et-al-2005] Dooren W., De Bock, D., Hessels, A., Janssens, D. & Verschaffel, L.: Not everything is proportional: Effects of age and problem type on propensities for overgeneralization. Cognition and Instruction, V. 23, p. 57 –86.
    
    .. [Lima-2006] Lima, E. A matemática do ensino médio – Vol. 1,  9a ed. Coleção do Professor de Matemática. Sociedade Brasileira de Matemática, Rio de Janeiro.
-
+   
    .. [Silva-et-al-2013] Silva, A. da F. G; Pietropaolo, R. C.; Campos, T. M. M. Atual currículo de matemática do estado de São Paulo: indicações para a introdução do ensino da ideia de irracionalidade. Boletim GEPEM, Rio de Janeiro, n. 62, p. 31-44.
    
    .. [Stump-1999] Stump, S. Secondary mathematics teachers' knowledge of slope. Mathematics Education Research Journal, 11(2), 124–144.
@@ -119,7 +117,7 @@ Atividade: Na piscina
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-     
+   
    * Reconhecer uma relação de proporcionalidade entre grandezas a partir da análise gráfica e da construção e análise dos dados em uma tabela;
    * Conjecturar sobre a representação gráfica de grandezas diretamente proporcionais, associando-a a um conjunto de pontos colineares.
    
@@ -252,22 +250,20 @@ em que `x` é qualquer valor real e `a=f(1)` é uma constante, ou seja, um núme
    Usando a “regra de três” fica assim
    
    .. math::
-
-      \begin{eqnarray*}
-      1\quad &\overline{\quad \quad \quad}& \quad a \\
+   
       x \quad &\overline{\quad \quad \quad}& \quad f(x)\\
-      \end{eqnarray*}
+      1\quad &\overline{\quad \quad \quad}& \quad a \\
    
    O que nos leva a
    
    .. math::
 
-      \dfrac 1x = \dfrac a{f(x)} \Longrightarrow f(x) = a\cdot x
+      \dfrac x1 = \dfrac {f(x)}a \Longrightarrow f(x) = a\cdot x
 
 
 .. admonition:: Definição 
 
-   Seja `D\subset \mathbb{R}`. Uma função real `f:D\to\mathbb{R}` é chamada de **função linear** quando existe uma constante `a\neq 0` tal que para todo `x\in D`,
+   Seja `D\subset \mathbb{R}`. Uma função real `f:D\to\mathbb{R}` é chamada de **função linear** quando existe uma constante `a\in \mathbb{R}` tal que para todo `x\in D`,
    
    .. math::
 
@@ -280,7 +276,7 @@ Na :ref:`ativ-na-piscina` você deve ter percebido que as grandezas relacionadas
 .. admonition:: Para refletir 
    
    .. admonition:: Para o professor
-
+   
       Até o presente momento, apenas argumentamos que se duas grandezas são proporcionais então elas se relacionam de maneira que uma delas é uma função linear da outra. Essa reflexão vai no sentido da afirmação recíproca. E ainda faz uma provocação, sem ter o intuito de formalizar, no sentido de intuir que a função inversa de uma função linear é também uma função linear.
    
    Suponha que duas grandezas `x` e `y` se relacionem de maneira que `y` seja uma função linear de `x`. 
@@ -390,7 +386,7 @@ Utilizando as ideias do texto anterior, responda as questões propostas.
    .. figure:: _resources/atv_rot_5.jpg
       :width: 300pt
       :align: center
- 
+
 #. Na figura a seguir, apresentamos um retângulo cuja base tem a mesma medida da base de `R` (igual a `3`), e cuja altura coincide com a de um triângulo equilátero de lado medindo `3`. Esse retângulo é semelhante a `R`?
 
 
@@ -424,7 +420,7 @@ Atividade: Qual é a área?
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-     
+   
    * Em um círculo dado, reconhecer a relação de dependência entre a medida do ângulo central e a medida da área do setor circular.
    
    * Inferir que a medida da área do setor é diretamente proporcional a medida do ângulo central.
@@ -516,14 +512,405 @@ Atividade: Qual é a área?
 
 .. admonition:: Para refletir
 
-   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? Pense no seguinte caso: A área de um círculo de raio `2r` é igual a soma das áreas de `2` círculos de raio `r`?
+   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? 
+   
+   Pense no seguinte caso: A área de um círculo de raio `2r` é igual ao dobro da área de um círculo de raio `r`? Ou ainda, é possível encontrar um número real (fixo) tal que `A(r)=k\cdot r`?
 
    .. figure:: _resources/area_soma.png
       :width: 400pt
       :align: center
 
 ********
-Explorando: taxa de variação
+Explorando: taxa de variação média
+********
+
+.. _ativ-alcool:
+
+Atividade: Teor de álcool sanguíneo
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Conjecturar que taxa de variação média de uma função linear qualquer é a mesma para qualquer intervalo. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * A atividade aborda assuntos relacionados a temas transversais, como saúde e consumo de álcool. Sugerimos que procure fazer um trabalho colaborativo com os professores de Biologia, Química e de Geografia para ampliar a discussão com os alunos em questões como os processos bioquímicos do metabolismo do álcool, ou mesmo em questões sobre o a relação entre álcool e direção. No site referenciado há informações adicionais que podem enriquecer a discussão.
+   
+   * Caso necessário, faça uma revisão sobre taxa de variação média, vista no capítulo de funções.
+
+De acordo com o site `wikiHow <https://pt.wikihow.com/Calcular-o-N%C3%ADvel-de-%C3%81lcool-no-Sangue>`_ o Teor Alcoólico Sanguíneo, ou TAS, é a medida da proporção de álcool no sangue de uma pessoa. Um TAS de `0,08` indica que há `80mg` de álcool por `100ml` de sangue. 
+
+Uma bebida padrão geralmente consiste de `350 ml` de cerveja, `150 ml` de vinho ou um `45 ml` de bebidas fortes. No geral, uma bebida padrão é a que contém `14 ml` de álcool puro. O álcool é absorvido de forma diferente pelos homens e pelas mulheres. O corpo masculino geralmente tem mais água (`61\%` *versus* `52\%`) e, portanto, dilui melhor o álcool, gerando TAS mais baixos.
+
+O TAS é proporcional ao número de doses de bebida padrão consumidas, de maneira que para um homem de `75kg`, a função linear `h(x)` que relaciona o TAS com o número de doses `x` de bebida padrão é dada pela expressão
+
+.. math::
+
+   h(x)=0,0205 \cdot x.
+
+Para uma mulher que pesa `60 kg`, a mesma relação é dada pela função linear
+
+.. math::
+
+   m(x)=0,3075 \cdot x.
+
+#. Complete a tabela a seguir que relaciona os valores de `h(x)` e de `m(x)` correspondentes a valores inteiros de `x`, de `0` a `5`.
+
+   .. table:: Legenda
+      :widths: 1 3 3
+      :column-alignment: center center center
+
+   +---------+--------+--------+
+   | `x`     |`h(x)`  | `m(x)` |
+   +=========+========+========+
+   | 0       |        |        |
+   +---------+--------+--------+
+   | 1       |        |        |
+   +---------+--------+--------+
+   | 2       |        |        |
+   +---------+--------+--------+
+   | 3       |        |        |
+   +---------+--------+--------+
+   | 4       |        |        |
+   +---------+--------+--------+
+   | 5       |        |        |
+   +---------+--------+--------+
+      
+#. Calcule, para a função `h(x)`, as taxas de variação médias nos seguintes intervalos de valores de `x`:
+
+   b.1) entre `x=0` e `x=1`;
+   
+   b.2) entre `x=1` e `x=3`;
+   
+   b.3) entre `x=2` e `x=5`;
+   
+
+#. Repita o item anterior para a função `m(x)` nos intervalos:
+
+   c.1) entre `x=2` e `x=3`;
+   
+   c.2) entre `x=1` e `x=4`;
+   
+   c.3) entre `x=0` e `x=5`;
+
+#. A partir dos itens anteriores, faça uma conjectura sobre as taxas de variação médias de uma função linear qualquer.
+
+.. admonition:: Resposta 
+
+   #. `\ `
+   
+      .. table:: Legenda
+         :widths: 1 3 3
+         :column-alignment: center center center
+
+      +---------+--------+--------+
+      | `x`     |`h(x)`  | `m(x)` |
+      +=========+========+========+
+      | 0       |    0   |  0     |
+      +---------+--------+--------+
+      | 1       | 0,0205 | 0,3075 |
+      +---------+--------+--------+
+      | 2       | 0,041  | 0,615  |
+      +---------+--------+--------+
+      | 3       | 0,0615 | 0,9225 |
+      +---------+--------+--------+
+      | 4       | 0,082  | 1,23   |
+      +---------+--------+--------+
+      | 5       | 0,1025 | 1,5375 |
+      +---------+--------+--------+
+
+   #.
+      b.1) `0,0205`
+      
+      b.2) `0,0205`
+      
+      b.3) `0,0205`
+      
+   #.
+      c.1) `0,3075`
+      
+      c.2) `0,3075`
+      
+      c.3) `0,3075`
+      
+   #. A conjectura é que a taxa de variação média de uma função linear qualquer deve ser constante.
+      
+
+
+
+.. _ativ-camara:
+
+Atividade: câmara frigorífica
+------------------------------
+
+.. admonition:: Para o professor
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Perceber com o auxílio da representação gráfica a relação entre taxa de variação média negativa e função linear decrescente.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É possível que os estudantes utilizem regra de três para responder as questões propostas no item a). A seguir iremos construir a representação gráfica da função linear, por isso é importante  fazer a conexão da regra de três com sua interpretação geométrica, destacando o uso da semelhança de triângulos.
+   
+   .. figure:: _resources/semelhanca_linear.jpg
+      :width: 200pt
+      :align: center
+
+Uma câmara frigorífica está programada para diminuir sua temperatura segundo uma taxa constante em `^\circ C` por hora. Na primeira observação constata-se que ela está a `0^\circ C`. Após `8` horas, realiza-se uma nova observação e seu visor mostra a temperatura de `-24^\circ C` e também o seguinte gráfico para a evolução da temperatura em função do tempo.
+
+.. figure:: _resources/decrescente_1.png
+   :width: 200pt
+   :align: center
+
+#. Qual a temperatura da câmara `1` hora após a primeira observação? E `5` horas após a primeira observação? E `t` horas após a primeira observação?
+#. Qual o valor da taxa (de variação média) constante segundo a qual a temperatura diminui?
+#. Determine a função que relaciona temperatura e tempo nesse contexto, considerando para seu domínio o intervalo de números reais `[0,8]`. Ela é uma função crescente ou decrescente? Por que?
+#. Como seria o gráfico se a temperatura, no mesmo intervalo de tempo, ao invés de diminuir, estivesse aumentando `1,5^\circ C/h`? Qual seria a expressão da função, nesse caso? Teríamos uma função crescente ou decrescente? Por que?
+#. Complete as lacunas da sentença abaixo para formular uma conjectura que relacione a taxa de variação média da função linear com o crescimento ou decrescimento da função.
+
+   "Quando a taxa de variação média de uma função linear é um número real ____________________, a função é ______________________ e quando a taxa é um número real _______________________, a função é _______________________."
+
+
+.. admonition:: Resposta
+
+   #. Após `1` hora desde a primeira observação a temperatura será de `-3^\circ C`. Após `5` horas a temperatura será de `-15^\circ C` e `t` horas após a primeira observação a temperatura será `-3t^\circ C`.
+   
+   #. `-3^\circ C/h`.
+   
+   #. `f:[0,8] \to \mathbb{R}`, `f(t)=-3t`. `f` é uma função decrescente, pois a medida que o tempo aumenta a temperatura correspondente diminui. Ou ainda, para quaisquer tempos `t_1` e `t_2` tais que `t_1 < t_2` tem-se que `-3t_1>-3t_2`, isto é, `f(t_1)>f(t_2)`.
+   
+   #. A expressão da função é `f(t) =1,5\cdot t`. É uma função crescente, pois a medida que o tempo aumenta a temperatura correspondente também aumenta.
+   
+      .. figure:: _resources/tesp_frigorifico.jpg
+         :width: 250pt
+         :align: center
+   
+   #. Quando a taxa de variação média de uma função linear é um número real *positivo*, a função é *crescente* e quando a taxa é um número real *negativo*, a função é *descrescente*.
+   
+   
+.. _ativ-celular:
+
+Atividade: Hora de carregar o celular
+------------------------------
+
+.. admonition:: Para o professor
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Perceber, a partir da taxa de variação média constante, que o gráfico de uma função linear está contido em uma reta. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d) é possível que os estudantes façam direto a "regra de três"; o que está correto. Contudo, peça para que justifiquem o procedimento usando alguma justificativa geométrica envolvendo os pontos do gráfico. A ideia é que, nesse item eles percebam os triângulos semelhantes que podem ser considerados para a solução.
+   
+   
+
+(**Incluir ilustração de um celular sendo carregado, explicitando o ícone da bateria**)
+
+.. figure:: _resources/bateria.png
+   :width: 100pt
+   :align: center
+
+
+O tempo total de recarga da bateria (de `0\%` a `100\%`) de um determinado modelo de telefone celular é  de `2` horas e `5` minutos. Supondo que o carregamento ocorre segundo uma taxa constante:
+
+#. Faça uma tabela que forneça o percentual de carga na bateria a cada `25` minutos, a partir de zero. 
+
+#. Represente em um plano cartesiano os pontos da tabela do item anterior.
+
+#. Descreva uma estratégia que permita, a partir da representação gráfica obtida no item anterior, determinar o percentual de carga na bateria após `40` minutos de carregamento.
+
+#. Determine a função que modela o carregamento desse modelo de telefone, especificando seus domínio e conjunto imagem.
+
+#. Qual é a taxa de carregamento desse modelo de telefone celular.
+
+.. admonition:: Resposta
+
+   #. `\ `
+   
+      .. table::
+         :widths: 5 5
+         :column-alignment: center center
+
+      +---------+----------------------+
+      | t (min) | Porcentagem de carga |
+      +---------+----------------------+
+      | 0       | 0                    |
+      +---------+----------------------+
+      | 25      | 20                   |
+      +---------+----------------------+
+      | 50      | 40                   |
+      +---------+----------------------+
+      | 75      | 60                   |
+      +---------+----------------------+
+      | 100     | 80                   |
+      +---------+----------------------+
+      | 125     | 100                  |
+      +---------+----------------------+
+   
+   #.
+   
+      .. figure:: _resources/pontos_bateria.jpg
+         :width: 250pt
+         :align: center
+
+   #. A partir da representação dos pontos no plano cartesiano pode-se concluir, usando semelhança de triângulos, que se em `25` minutos a carga na bateria é de `20\%` então em `40` minutos a carga será de `32\%`.
+   
+   #. `f(t)=\dfrac{4}{5}t=0,8t`, com domínio sendo o conjunto `\{0,1,2,...,125\}` e a imagem o conjunto `\{0,1,2,...,100\}`.
+   
+   #. A bateria carrega a uma taxa de `0,8\%` a cada minuto, isto é, `0,8\%/min`.
+
+********
+Organizando: taxa de variação média
+********
+
+No capítulo de Introdução às Funções, você aprendeu a calcular a taxa de variação média de uma função em um determinado intervalo. É um número expresso em forma de uma razão que fornece diversas informações sobre o comportamento da função no intervalo considerado. 
+
+Relembrando, se um intervalo `[x_1,x_2]` está contido no domínio de uma função `f`, então a taxa de variação média dessa função nesse intervalo é a razão
+
+.. math::
+   \dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+
+Como você deve ter percebido na :ref:`ativ-alcool`, o valor obtido para as taxas de variação médias nos diversos intervalos foi sempre o mesmo para cada função considerada. Essa é uma propriedade importante das funções lineares, que provaremos agora.
+
+Considere uma função linear `\ell:\mathbb{R}\to\mathbb{R}`, dada por `\ell(x)=a\cdot x`, e também dois números reais distintos `x_1<x_2`. A taxa de variação média de `\ell` no intervalo  `[x_1,x_2]` pode ser calculada assim
+
+.. math::
+   \dfrac{\ell(x_2)-\ell(x_1)}{x_2-x_1}=\dfrac{a x_2- a x_1}{x_2-x_1}=\dfrac{a(x_2-x_1)}{x_2-x_1}=a.
+
+Podemos destacar duas coisas sobre a conclusão deste último cálculo:
+
+1) o valor final para a taxa de variação média não depende dos valores de `x_1` e `x_2`. Isso significa que podemos escolher qualquer intervalo  de números reais e chegaremos ao mesmo resultado. 
+
+2) o resultado coincide com o coeficiente de `x` na expressão da função, e também pode ser obtido calculando-se a imagem de `x=1`. Sendo assim, podemos afirmar que a função `y=7x` tem taxa de variação média constante igual a `7`, enquanto que a função `y=-\frac {3x}5` tem taxa de variação média constante igual a `-\frac {3}5`.
+
+.. admonition:: Teorema
+
+   Toda função linear `f` tem taxa de variação média constante igual a `f(1)`, e pode ser representada pela expressão `f(x)=f(1)\cdot x`.
+
+.. admonition:: Para refletir
+   
+   .. admonition:: Para o professor
+   
+      Essa ideia será trabalhada mais adiante na seção dedicada a função afim. Por enquanto, deixe que criem suas próprias jutificativas e contra-exemplos
+   
+   É verdade que se uma função tem taxa de variação média constante então ela é uma função linear? Pense em exemplos com taxas de variação médias constantes e verifique se há ou não proporcionalidade nesses casos.
+
+Usando essas ideias no contexto da :ref:`ativ-camara`, podemos afirmar que a expressão da temperatura em função do tempo, mostrada pelo gráfico pode ser dada por `f(t)=-3t`, uma vez que `f(1)=-3`. A cada hora a temperatura decresce `3^\circ C`, gerando portanto uma função decrescente.
+
+De uma maneira geral, se a taxa de variação média `a` de uma função linear é um número real **negativo**, então essa função é decrescente, pois, para `a<0`
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1>ax_2 \Longleftrightarrow f(x_1)>f(x_2).
+
+Por outro lado, se a taxa de variação média `a` de uma função linear é um número real **positivo**, então essa função é crescente, pois, nesse caso `a>0` e
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1<ax_2 \Longleftrightarrow f(x_1)<f(x_2).
+   
+
+Vamos agora entender como é a representação gráfica de uma função com taxa de variação média constante. Para isso, consideremos uma função `f:\mathbb{R}\to\mathbb{R}` que tenha essa propriedade, isto é, para qualquer intervalo a taxa de variação média de `f` neste intervalo é igual a `a`.
+
+Na figura a seguir, os pontos `A=(x_1,f(x_1))` e `B=(x_2,f(x_2))` pertencem ao gráfico da função `f`. O segmento `BC` mede `f(x_2)-f(x_1)` e o segmento `AC` mede `x_2-x_1`. Dessa forma o quociente `\dfrac{\overline{BC}}{\overline{AC}}` é igual à taxa de variação média da função nesse intervalo, e portanto podemos conluir que `\overline{BC}=a\cdot \overline{AC}`.
+
+.. figure:: _resources/grafico1.1.jpg
+   :width: 300pt
+   :align: center
+
+.. math::
+   \dfrac{\overline{BC}}{\overline{AC}}= \dfrac{f(x_2)-f(x_1)}{x_2-x_1}=a \Longrightarrow \overline{BC}=a\cdot \overline{AC}.
+
+Por isso, quaisquer dois pontos do gráfico de `f`, sempre serão extremidades da hipotenusa de um triângulo retângulo cujos catetos são paralelos aos eixos e suas medidas se relacionam conforme a seguinte figura.
+
+.. figure:: _resources/grafico2_1.jpg
+   :width: 200pt
+   :align: center
+
+Consideremos agora três pontos do gráfico de `f` com os respectivos triângulos retângulos da construção anterior.
+
+.. figure:: _resources/grafico3.jpg
+   :width: 300pt
+   :align: center
+
+Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir que os três pontos pertencem a uma mesma reta. A conclusão é válida quaisquer que sejam os três pontos considerados, logo acabamos de justificar a seguinte propriedade.
+
+.. admonition:: Teorema
+
+   Se uma função tem taxa de variação média constante então seu gráfico está contido em uma reta. 
+   
+   Em particular, como a função linear tem taxa de variação média constante, seu gráfico está contido em uma reta.
+
+.. glossary::
+
+.. admonition:: Observação
+
+   **Algumas propriedades da função linear:**
+
+   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem `(0,0)` do plano cartesiano pertencerá ao gráfico de `f`. Em qualquer caso, o gráfico de uma função linear está contido em uma reta que passa pela origem (mesmo quando não fizer sentido calcular a imagem de `x=0`).
+   
+   * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
+   
+   .. math::
+
+      f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
+   
+   
+   .. figure:: _resources/taxa.png
+      :width: 350pt
+      :align: center
+   
+   * Para taxas de variação médias positivas, quanto maior for o valor de `a`, mais inclinada será a reta que contém o gráfico da função linear associada.
+   
+   .. figure:: _resources/aumenta_a.*
+      :width: 400pt
+      :align: center
+   
+   Para uma visualização do comportamento da representação gráfica com taxa de variação média também negativa, sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
+   
+   .. figure:: _resources/codigo2_2.png
+      :width: 100pt
+      :align: center
+   
+   .. figure:: _resources/taxa_linear.*
+      :width: 400pt
+      :align: center
+   
+   * Se uma reta contém a origem do plano cartesiano e o ponto `(x_0,y_0)` com `x_0\neq 0`, então ela é o gráfico da função linear `f:\mathbb{R}\to\mathbb{R}`, dada por `f(x)=ax`, em que `a=\dfrac{y_0}{x_0}`.
+   
+   Para verificar isso, basta observarmos uma reta nas condições dadas e os dois  triângulos retângulos destacados da figura a seguir a partir da origem e dos pontos `(x_0,y_0)` e `(x,y)`. Observe que, qualquer que seja o ponto `(x,y)` escolhido diferente da origem, esses triângulos são semelhantes, portanto,
+   
+   .. math::
+
+      \dfrac{f(x)}{x}=\dfrac{y_0}{x_0} \Longrightarrow f(x)=\dfrac{y_0}{x_0} \cdot x
+
+
+   .. figure:: _resources/reciproca.png
+      :width: 350pt
+      :align: center
+
+   Assim, por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`.
+   
+   
+   .. figure:: _resources/38.png
+      :width: 350pt
+      :align: center
+
+      Gráfico da função `f(x)=\dfrac 83 x`.
+      
+   .. figure:: _resources/25.png
+      :width: 350pt
+      :align: center
+
+      Gráfico da função `g(x)=-\dfrac{2}{5}x`.
+
+   Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.
+
+********
+Praticando
 ********
 
 .. _ativ-purificador:
@@ -534,7 +921,7 @@ Atividade: Quando trocar o filtro do purificador?
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-      
+   
    * Identificar num conjunto de grandezas distintas e apresentadas em um quadro, duas grandezas que atendem as especificações da situação problema.
    
    * Perceber a relação da razão entre as grandezas com a taxa de variação da função linear.
@@ -568,7 +955,7 @@ Há `1` ano você adquiriu um purificador de água com capacidade de refrigeraç
 
 
 .. admonition:: Resposta 
-
+   
    #. Vida útil do elemento filtrante e vazão máxima recomendada.
    #. A cada minuto sai `0,75` litro de água do purificador.
    #. `0,75 \times 12=9` litros.
@@ -576,124 +963,7 @@ Há `1` ano você adquiriu um purificador de água com capacidade de refrigeraç
    #. `9` litros.
    #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
    #. `f(t)=9t`.
-
+   
    .. figure:: _resources/grafico_filtro.jpeg
       :width: 350pt
       :align: center
-
-********
-Organizando as ideias: taxa de variação
-********
-
-Dizer que o consumo médio diário em uma casa é de `L` litros/dia (lê-se: `L` litros por dia) significa dizer que a cada dia a mais de uso, a quantidade total de água consumida aumenta `L` litros.
-
-Representando por `f` a função que expressa o consumo de água em litros em relação ao tempo `t` em dias, a afirmação anterior pode ser traduzida da seguinte maneira:
-
-.. math::
-
-   f(1)=L \quad e \quad f(t+1)=f(t)+L
-
-Considere agora um tempo `T`. O consumo de água nesse período é representado pelo valor `f(T)`. Se quisermos saber o consumo de água no período correspondente ao dobro desse tempo precisamos calcular `f(2T)`. Esse valor é igual a `f(T+T)` que representa o consumo de água num período correspondente a uma sucessão de dois períodos iguais de tempo `T`.  Como o consumo é o mesmo para intervalos iguais de tempo, podemos afirmar que o consumo total será dado pela soma dos consumos em cada intervalo de tempo `T`, isto é,
-
-.. math::
-
-   f(2T)=f(T+T)=f(T)+f(T)=2f(T).
-
-Dessa forma, `f(3T)=f(2T+T)=f(2T)+f(T)=3f(T)`, e aplicando o mesmo raciocínio, temos para qualquer que seja o `n` natural,
-
-.. math::
-
-   f(nT)=nf(T).
-
-A igualdade acima, junto com o fato de `f` ser uma função crescente, nos permite concluir, pelo Teorema Fundamental da Proporcionalidade, que `f` é uma proporcionalidade direta e portanto para todo `t \in \mathbb{R}`
-
-.. math::
-
-   \dfrac{f(t)}{t}=\dfrac{f(1)}{1} \Longrightarrow \dfrac{f(t)}{t}=\dfrac{L}{1} \Longrightarrow f(t)=Lt.
-
-A função `f` é uma função linear e o número `L` que aparece multiplicando `t` é a *taxa de variação* entre as grandezas.
-
-
-.. glossary::
-
-
-.. admonition:: Definição 
-
-   Em qualquer função linear `f`, a **taxa de variação** de `f` é o valor constante dado pelo quociente `\dfrac{f(x)}{x}`, para qualquer `x \neq 0`.
-
-.. admonition:: Observação
-
-   **Algumas propriedades da função linear:**
-
-   * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
-   
-   .. math::
-
-      f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
-
-
-   .. figure:: _resources/taxa.png
-      :width: 350pt
-      :align: center
-
-   * Perceba pela figura acima, que, para taxas positivas, quanto maior for a taxa de variação, mais inclinada será a reta do gráfico.
-   
-   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem do plano cartesiano pertencerá ao gráfico de `f`.
-   
-   * Os dois exemplos que vimos neste capítulo apresentam taxa de variação positiva. Contudo, é possível que uma função linear tenha taxa de variação negativa, por exemplo, podemos ter `f(x)=-2x`. Isso significa que a cada aumento de `1` no valor de `x` há uma diminuição de `2` no valor de `f(x)`, isto é, `f(x+1)=f(x)-2`. Há também reflexos no gráfico de `f` que passará a estar contido em uma reta decrescente.
-   
-
-   .. figure:: _resources/image_negativa.png
-      :width: 350pt
-      :align: center
-
-   * O gráfico de uma função linear está contido em uma reta que passa pela origem do plano cartesiano, cuja inclinação dependerá do sinal de `a`, conforme mostra a figura.
-
-   .. figure:: _resources/graf_linear1.png
-      :width: 350pt
-      :align: center
-
-   .. figure:: _resources/graf_linear2.png
-      :width: 350pt
-      :align: center
-
-   Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
-
-   .. figure:: _resources/codigo2_2.png
-      :width: 100pt
-      :align: center
-
-   .. figure:: _resources/taxa_linear.*
-      :width: 400pt
-      :align: center
-   
-   * Se uma reta contém a origem do plano cartesiano e o ponto `(x_0,y_0)` com `x_0\neq 0`, então ela é o gráfico da função linear `f:\mathbb{R}\to\mathbb{R}`, dada por `f(x)=ax`, em que `a=\dfrac{y_0}{x_0}`.
-   
-   Para verificar isso, basta observarmos uma reta nas condições dadas e os dois  triângulos retângulos destacados da figura a seguir a partir da origem e dos pontos `(x_0,y_0)` e `(x,y)`. Observe que, qualquer que seja o ponto `(x,y)` escolhido, esses triângulos são semelhantes, portanto,
-   
-   .. math::
-
-      \dfrac{f(x)}{x}=\dfrac{y_0}{x_0} \Longrightarrow f(x)=\dfrac{y_0}{x_0} \cdot x
-
-
-   .. figure:: _resources/reciproca.png
-      :width: 350pt
-      :align: center
-
-   Assim, por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`.
-   
-   Uma vez que se sabe que uma reta é o gráfico da função `f(x)=5x`, então sabe-se que os pontos da reta são do tipo `(x,5x)` e que, por exemplo, `(7,35)` é um ponto da reta, mas que `(2,12)` não é.
-
-   .. figure:: _resources/38.png
-      :width: 350pt
-      :align: center
-
-      Gráfico da função `f(x)=\dfrac 83 x`.
-      
-   .. figure:: _resources/25.png
-      :width: 350pt
-      :align: center
-
-      Gráfico da função `g(x)=-\dfrac{2}{5}x`.
-
-   Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.
