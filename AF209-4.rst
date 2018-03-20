@@ -4,44 +4,68 @@ Para saber mais
 
 **Função Quadrática e a soma dos primeiros termos de uma Progressão Aritmética**
 
-No livro *Antologia Matemática* de Malba Tahan, conta um episódio cuja personagem principal seria o "príncipe da matemática" Carl Frederick **Gauss** (`\star 1777- \dagger 1855`). Não se sabe se o episódio é real, mas conta-se que aos sete anos de idade, chegando para mais um dia de aula, *Gauss* e seus colegas teriam encontrado o professor com pouca paciência. Assim, o professor, com o intuito de entreter seus alunos por longo tempo e não precisar dar-lhes qualquer atenção, pediu para que todos somassem os números naturais desde `1` até `100`. Contudo, o jovem *Gauss* em pouco tempo levou o resultado do exercício para o professor e este, incrédulo do feito, teria mandado *Gauss* para a direção. Mais tarde, tudo se esclareceu e o professor reconheceu o acerto do jovem e desculpou-se.
+No livro *Antologia Matemática* de Malba Tahan, conta um episódio cuja personagem principal seria o "príncipe da matemática" Carl Frederick **Gauss** (`\star 1777- \dagger 1855`). Não se sabe se o episódio é real, mas conta-se que aos sete anos de idade, chegando para mais um dia de aula, *Gauss* e seus colegas teriam encontrado o professor com pouca paciência. Assim, o professor, com o intuito de entreter seus alunos por longo tempo e não precisar dar-lhes qualquer atenção, pediu para que todos somassem os números naturais desde `1` até `100`. Contudo, o jovem *Gauss* em pouco tempo levou o resultado do exercício para o professor e este, incrédulo do feito, teria mandado *Gauss* para a direção. Mais tarde, tudo se esclareceu e o professor reconheceu o acerto no método e no resultado dado pelo jovem e desculpou-se.
 
-Vamos tentar refazer o caminho do jovem *Gauss* neste episódio. O professor pediu para que fosse resolvida a expressão `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+Como o jovem *Gauss* teria obtido este resultado por um método aparentemente desconhido do enfurecido professor e com tanta rapidez? 
 
-#. Numa folha de papel, repita a expressão acima.
+Com a finalidade de responder a essa pergunta sugerimos uma atividade. Ela necessitará de uma fita métrica. 
 
-#. Os números dessa conta estão em progressão aritmética. Identifique o primeiro termo e a razão.
+.. figure:: _resources/P_20180310_174436_1.jpg
+   :width: 200 pt
+   :align: center 
 
-#. Quantos números tem essa conta? (Considere os que você escreveu e os que você só deixou indicado.)
+Como as fitas métricas comercializadas tem um tamanho padrão, em nossa atividade vamos entender comoo jovem *Gauss* fez a soma começando por somar os números da fita métrica, ou seja, vamos começar resolvendo a expressão 
 
-#. Na linha abaixo da conta, escreva a mesma conta, mas agora na ordem contrária, ou seja, partindo do 100 até o 1.
+.. math:: 
 
-#. A quantidade de números da conta na segunda linha mudou, em relação a linha de cima, por causa dessa troca de ordem?
+   1+2+3+4+5+ \cdots +147+148+149+150
 
-#. Se você somar todos os números que você escreveu nos itens 'a' e 'd', qual dos resultados a seguir você terá obtido:
+#. De posse da fita métrica, perceba que ela tem os dois lados numerados. Cada um desses lados tem todos os números que queremos somar?
 
-    `\Box` `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+#. Qual o número que corresponde ao verso (outro lado da fita) do número `1`? E quais são os números dos versos correspondentes de `18` e `75`?
 
-    `\Box` a metade de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+#. Agora, vamos fazer algumas somas de um número com o seu correspondente no verso da fita. Faça:
 
-    `\Box` o dobro de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   `1 + \,\;` seu correspondente;
+   
+   `15 + \;` seu correspondente;
+   
+   `31 + \;` seu correspondente;
+   
+   `49 + \;` seu correspondente;
+   
+   `75 + \;` seu correspondente.
 
-    `\Box` o quadrado de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
 
-#. Observe que na figura a seguir reescrevemos a expressão apresentada no item 'd', e somamos verticalmente os números agrupados, continue a somar completando as respostas das somas que faltam na figura.
+#. Qual o resultado obtido sempre que se soma um número com o seu correspondente no verso desta fita?
 
-    .. figure:: _resources/pa.jpg
-       :width: 300pt
-       :align: center
+#. Com base na resposta do item anterior, qual o resultado da soma de todos os números dos dois lados dessa fita?
 
+#. A soma de todos os números em ambos os lados da fita é o resultado que queríamos obter?
 
-#. Quanto deu os resultados de cada uma dessas somas?
+#. Que operação devemos fazer com a soma de todos os números da fita para que ele seja o resultado da expressão 
 
-#. Com base nos itens 'g' e 'h', determine o resultado da soma de todos os números da primeira e da segunda linhas.
+   .. math:: 
 
-#. Lembrando do que você marcou no item 'f', determine o resultado obtido por *Gauss*.
+      1+2+3+4+5+ \cdots +147+148+149+150 \text{ ?}
+   
+   Qual é o valor dessa expressão?
 
-#. Você seria de capaz de refazer as etapas, porém desta vez encontrando uma expressão para o resultado da soma dos `n` primeiros números naturais? Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n`.
+#. Imagine agora uma outra fita que tenha em cada lado, todos os números de 1 até 100.
+
+   .. figure:: _resources/Fita_metrica_1a100.png
+      :width: 250pt
+      :align: center
+
+   Utilizando o mesmo raciocício, tente responder a mesma pergunta feita para a turma do jovem *Gauss*, ou seja, quanto dá `1+2+3+ \cdots +97+98+99+100`?
+
+#. E se a fita fosse até o número natural `n`?
+
+   .. figure:: _resources/Fita_metrica_1an.png
+      :width: 250pt
+      :align: center
+
+Com o que foi aprendido, obtenha uma expressão para o resultado da soma dos `n` primeiros números naturais. Ou seja, tente expressar em função de `n`, o resultado de `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n`.
 
 **As respostas estão no fim da sessão**
 
@@ -111,70 +135,38 @@ Contudo, sabe-se que `a_{n}=a_{1}+(n-1)\cdot r` e a relação da soma dos primei
 
 .. admonition:: Observação
 
-  A expressão que fornece a soma dos `n` primeiros termos de uma progressão aritmética é uma função quadrática de `n`.
+  A expressão que fornece a soma dos `n` primeiros termos de uma progressão aritmética, em função de `n`, é uma **função quadrática**.
 
 
 .. admonition:: Resposta 
 
    **Atividade Menino `Gauss`** 
 
-   #. `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   #. Sim.
    
-   #. `a_{1}=1` e `r=1`.
+   #. `150`; `133` e `76`.
    
-   #. `100` números
+   #. `1+150=151`;
    
-   #. 
+      `15+136=151`;
+      
+      `31+120=151`;
+      
+      `49+102=151`;
+      
+      `75+76=151`.
    
-      +-------------------------------------+
-      | `1+2+3+4+5+ \cdot +96+97+98+99+100` |
-      +-------------------------------------+
-      | `100+99+98+97+96+ \cdot +5+4+3+2+1` |
-      +-------------------------------------+
+   #. `151`.
    
-   #. Não, continua tendo `100` números.
+   #. `150 \cdot 151=22650`.
    
-   #. o dobro de `1+2+3+4+5+ \cdots +96+ 97+98+99+100`.
+   #. Não.
    
-   #. Serão feitas `100` somas, indicadas a seguir.
-      
-      `1+100=101`
-      
-      `2+99=101`
-      
-      `3+98=101`
-      
-      `4+97=101`
-      
-      `5+96=101`
-      
-      `\;\;\;\;\;\;\;\; \vdots`
-      
-      `96+5=101`
-      
-      `4+97=101`
-            
-      `3+98=101`
-      
-      `2+99=101`
-      
-      `1+100=101`
-      
-   #. `101`.
+   #. Devemos dividir a soma obtida por `2`; `22650 \div 2=11325`.
    
-   #. `100 \cdot 101 = 10100`.
+   #. As somas de cada número com seu correspondente no verso dá, agora, `101`. Com isso, a soma de todos os números de ambos os lados dessa fita será `100 \cdot 101` e `(100 \cdot 101) \div 2 = 10100 \div 2 = 5050`.
    
-   #. `\frac{100 \cdot 101}{2} = \frac{10100}{2} = 5050`.
-   
-   #. .. math::
-         
-         1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n
-         
-         n+(n-1)+(n-2)+(n-3)+ \cdots +5+4+3+2+1
-         
-      As somas de um elemento de cada linha, respeitando a ordem da escrita, dá `(n+1)`.
-      Além disso temos um total de `n` somas com esse resultado. 
-      Com isso, a soma de todos os números das duas linhas será `n \cdot (n+1)`, e
+   #. As somas de cada número com seu correspondente no verso dá, agora, `n+1`. Com isso, a soma de todos os números de ambos os lados dessa fita será `n \cdot (n+1)` e
                 
       `1+2+3+4+5+ \cdots +(n-3)+(n-2)+(n-1)+n=`
       

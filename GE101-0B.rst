@@ -1,6 +1,6 @@
-************************************
+***********************************************************
 Organizando as ideias: vetores do ponto de vista geométrico
-************************************
+***********************************************************
 
 .. admonition:: Para o professor
 
@@ -59,7 +59,6 @@ O conceito de direção é comumente confundido com o conceito de sentido, mas o
 
 .. Lhaylla: colocar outra figura para sentido?
 
-**Vetor**
 
 Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados tenham sido desenhados em lugares diferentes, todos eles têm as mesmas características: módulo, direção e sentido. A uma coleção de segmentos orientados com as mesmas características daremos o nome de *vetor*. Veja a próxima definição.
 
@@ -73,9 +72,10 @@ Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados t
    Segmentos orientados com mesmo módulo, direção e sentido.
 
 
-.. admonition:: Definição
+.. glossary:: 
 
-   :index:`Vetor` é uma coleção de segmentos orientados que possuem o mesmo módulo, mesma direção e mesmo sentido.
+   Vetor
+      Vetor é uma coleção de segmentos orientados que possuem o mesmo módulo, mesma direção e mesmo sentido.
 
 Pela definição acima, um vetor fica determinado por uma infinidade de segmentos orientados com mesmo módulo, mesma direção e mesmo sentido, que isoladamente podem ser chamados representantes do vetor ou simplesmente vetor. Qualquer representante da coleção que identifica um vetor têm o mesmo módulo, a mesma direção e o mesmo sentido. Essas características são comum a todos, identificando-os. Assim, dizemos que as características de um vetor são as mesmas de seus representantes: módulo, direção e sentido.
 
@@ -86,15 +86,17 @@ Um vetor pode ser representado por uma letra minúscula (por exemplo, `\vec{v}`)
 
 O módulo de um vetor `\vec{v}` é indicado por `|\vec{v}|`.
  
-.. admonition:: Observação sobre terminologia
+.. admonition:: Observação
 
+   **Observação sobre terminologia**
+   
    Alguns autores definem segmentos equipolentes como sendo segmentos orientados que possuem o mesmo módulo, direção e sentido. Usando essa terminologia, é possível definir vetores de maneira análoga a definição dada anteriormente.
 
 **Vetores iguais**
 
 Em vista do que estudamos anteriormente, para verificar se dois vetores são iguais ou não é necessário comparar apenas o módulo, a direção e o sentido de seus representantes. Portanto:
 
-.. admonition:: Definição
+.. admonition:: Observação
 
    Dois vetores são iguais se os representantes de suas coleções possuem o mesmo módulo, a mesma direção e o mesmo sentido.
 
@@ -124,11 +126,13 @@ Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são 
 **Importante:** Para cada direção, já sabemos que existem dois sentidos. Assim, caso dois vetores possuam a mesma direção, podemos comparar seus sentidos. Caso contrário, não é possível fazer tal comparação.
 
 
-.. admonition:: Não confunda!
+.. admonition:: Observação
 
+   **Não confunda!**
+   
    Algumas palavras usadas frequentemente no nosso cotidiano podem ter diferentes significados quando estão relacionadas a objetos matemáticos. Pense na seguinte situação: durante uma aula, a professora pede que seus alunos Pedro e Beatriz, que estão sentados em diferentes posições da sala de aula, andem em direção à porta. Neste caso, os dois alunos sairão de suas carteiras e se encontrarão na porta. Apesar dos dois alunos estarem andando na mesma "direção" (expressão usada no senso comum), os vetores que indicam o deslocamento dos alunos não têm a mesma "direção" (no sentido matemático). Os vetores correspondentes aos deslocamentos dos alunos não são colineares nem paralelos. Ou seja, de maneira geral, a expressão direção usada no nosso dia a dia não tem o mesmo significado da palavra direção usada em Matemática
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
    Considere um ponto `A` e um vetor `\vec{v}`.
 
@@ -140,23 +144,21 @@ Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são 
    As indagações feitas acima têm por objetivo levar o aluno a perceber que, dado um vetor `\vec{v}`, a partir de qualquer ponto é possível determinar um vetor igual à `\vec{v}` e que portanto, a extremidade inicial do vetor não é importante. E também, que existem infinitos vetores iguais a `\vec{v}`.
 
 
-**Vetor nulo**
-
 Existe um objeto que não se enquadra na definição de vetor dada anteriormente, mas que será denominado vetor: o vetor nulo. Vejamos:
 
-.. admonition:: Definição
+.. glossary::
 
-   O :index:`vetor nulo` é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido.
+   Vetor nulo
+      O vetor nulo é o vetor que possui módulo 0. Neste caso, dizemos que este vetor não possui direção nem sentido.
 
-Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem e, portanto, seus representantes são pontos e não segmentos de reta orientados. Chamar de vetor o que é na verdade um ponto pode parecer um pouco estranho, mas o vetor nulo é extamente isto: um ponto. O vetor nulo é o único com essa particularidade.
+Repare que as extremidades inicial e final dos representantes do vetor nulo coincidem e, portanto, seus representantes são pontos e não segmentos de reta orientados. Chamar de vetor o que é na verdade um ponto pode parecer um pouco estranho, mas o vetor nulo é exatamente isto: um ponto. O vetor nulo é o único com essa particularidade.
 
-O veror nulo é indicado por `\vec{0}`.
+O vetor nulo é indicado por `\vec{0}`.
 
-**Soma de vetores**
+.. glossary::
 
-.. admonition:: Definição
-
-   A :index:`soma de vetores` é a operação que a cada par de vetores `\vec{u}=\overrightarrow{AB}` e `\vec{v}=\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, chamado vetor soma e indicado por `\vec{u}+\vec{v}`.
+   Soma de vetores
+      A soma de vetores é a operação que a cada par de vetores `\vec{u}=\overrightarrow{AB}` e `\vec{v}=\overrightarrow{BC}` associa o vetor `\overrightarrow{AC}`, chamado vetor soma e indicado por `\vec{u}+\vec{v}`.
 
 Na :numref:`fig-geometria-operacoesvetores-08`, o vetor soma `\vec{u}+\vec{v}` resultante da soma de `\vec{u}` com `\vec{v}` está sendo ilustrado. Primeiramente, repare que `\overrightarrow{AB}` foi escolhido como representante do vetor `\vec{u}` e `\overrightarrow{BC}` como representante de `\vec{v}`. Como `\overrightarrow{AB}` e `\overrightarrow{BC}` estão justapostos, pela definição anterior, `\overrightarrow{AC}` é um representante do vetor soma `\vec{u}+\vec{v}`.
 
@@ -192,7 +194,7 @@ Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{
 
 É possível observar nos exemplos anteriores que, em geral, os dois vetores a serem somados e o vetor soma formam um triângulo. Devido a isso, esse método que utilizamos para somar vetores é conhecido como *Regra do Triângulo*.
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
    Em quais situações, os dois vetores a serem somados e o vetor soma não formam um triângulo?
 
@@ -202,7 +204,9 @@ Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{
    O objetivo da reflexão acima é fazer o aluno identificar que vetores com mesma direção não formam um triângulo ao serem somados. É importante esclarecer que, neste caso, o triângulo não vai existir, mas a operação deverá ser executada seguindo a definição.
 
 
-.. admonition:: Regra do paralelogramo
+.. admonition:: Observação
+
+   **Regra do paralelogramo**
 
    Caso os vetores `\vec{u}` e `\vec{v}` não possuam a mesma direção, há uma outra forma de representar graficamente e visualizar o vetor soma `\vec{u}+\vec{v}`. Para isso, devemos, primeiramente, tomar representantes dos vetores `\vec{u}` e `\vec{v}` com a mesma extremidade inicial, e a partir daí, construir um paralelogramo. Veja a construção abaixo.
 
@@ -271,16 +275,16 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
 .. math::
 
-  (\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w}).
+   (\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w}).
 
 * Comutatividade da soma: observando novamente a :numref:`fig-geometria-operacoesvetores-10`, podemos notar que ao traçar a diagonal do paralelogramo `ABDC`, dividimos o paralelogramo em dois triângulos: `ABD` e `ACD`. Repare que se considerarmos `\overrightarrow{AB}` e `\overrightarrow{BD}` representantes dos vetores `\vec{u}` e `\vec{v}`, respectivamente, então, pela regra do triângulo, `\overrightarrow{AD}` é um representante do vetor `\vec{u}+\vec{v}`. Agora, se `\overrightarrow{AC}` e `\overrightarrow{CD}` são representantes dos vetores `\vec{v}` e `\vec{u}`, respectivamente, então, `\overrightarrow{AD}` é um representante do vetor `\vec{v}+\vec{u}`. Portanto, `\overrightarrow{AD}` é um representante tanto de `\vec{u}+\vec{v}` como de `\vec{v}+\vec{u}`. Assim, podemos concluir que
 
 .. math::
 
-  \vec{u} + \vec{v} = \vec{v} + \vec{u}.
+   \vec{u} + \vec{v} = \vec{v} + \vec{u}.
 
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
    Você consegue perceber que `|\vec{u}+\vec{v}|` nem sempre é igual a `|\vec{u}|+|\vec{v}|`? E, quais características devem `\vec{u}` e `\vec{v}` ter para que a igualdade seja satisfeita?
 
@@ -289,24 +293,23 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
    O questionamento feito anteriormente pode ser discutido usando a lei de formação de um triângulo, que diz que para que um triângulo exista, cada lado deve ser menor que a soma dos outros dois. Ao realizar a soma de dois vetores, utilizando a regra do triângulo, construímos um triângulo de lados `|\vec{u}+\vec{v}|`, `|\vec{u}|` e  `|\vec{v}|`. É fácil ver que não é possível construir um triângulo de lados  `|\vec{u}|`, `|\vec{v}|` e `|\vec{u}+\vec{v}|=|\vec{u}|+|\vec{v}|`.
 
-**Multiplicação de um vetor por um número real**
 
+.. glossary::
 
-.. admonition:: Definição
+   Multiplicação de um vetor por um número real
+      A multiplicação de um vetor por um número real é a operação que a cada vetor `\vec{v}` e um número real `a` associa o vetor `a\vec{v}` tal que:
 
-   A multiplicação de um vetor por um número real é a operação que a cada vetor `\vec{v}` e um número real `a` associa o vetor `a\vec{v}` tal que:
+      #. o módulo de `a\vec{v}` é igual a `|a|\cdot|\vec{v}|`, ou seja, o módulo de `a\vec{v}` é o produto de `|a|`  pelo módulo de `\vec{v}`;
+      #. `\vec{v}` e `a\vec{v}` possuem a mesma direção;
+      #. `\vec{v}` e `a\vec{v}` possuem o mesmo sentido se `a>0` e sentidos opostos se `a<0`.
 
-   #. o módulo de `a\vec{v}` é igual a `|a|\cdot|\vec{v}|`, ou seja, o módulo de `a\vec{v}` é o produto de `|a|`  pelo módulo de `\vec{v}`;
-   #. `\vec{v}` e `a\vec{v}` possuem a mesma direção;
-   #. `\vec{v}` e `a\vec{v}` possuem o mesmo sentido se `a>0` e sentidos opostos se `a<0`.
+      .. _fig-geometria-operacoesvetores-14:
 
-   .. _fig-geometria-operacoesvetores-14:
+      .. figure:: _resources/MultiplicacaoVetorPorReal.png
+         :width: 300pt
+         :align: center
 
-   .. figure:: _resources/MultiplicacaoVetorPorReal.png
-      :width: 300pt
-      :align: center
-
-      Vetor multiplicação de `\vec{v}` por um número real.
+         Vetor multiplicação de `\vec{v}` por um número real.
 
 
 A partir desta definição, podemos perceber que:

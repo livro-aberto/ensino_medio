@@ -30,15 +30,17 @@
 
    Neste capítulo contempla-se a seguinte habilidade da segunda versão da `Base Nacional Comum Curricular <http://historiadabncc.mec.gov.br/documentos/bncc-2versao.revista.pdf>`_ (BNCC):
 
-   .. admonition:: EM11MT01
+   .. admonition:: Observação 
+   
+      **EM11MT01**
 
-       Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
+      Compreender o conceito de vetor, tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) quanto do ponto de vista algébrico, caracterizado por suas coordenadas, aplicando-o em situações da Física.
 
    A própria BNCC dá detalhes do que se espera dessa habilidade:
 
-   .. admonition:: (BNCC, 2016, p. 562)
+   
 
-       O trabalho com vetores deve proporcionar aos/s estudantes, inicialmente, compreender o conceito de vetor tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) como do ponto de vista algébrico (caracterizado por suas coordenadas). Na continuidade, esse trabalho é ampliado para que eles sejam capazes de interpretar a representação geométrica da soma de vetores e da multiplicação de um vetor por um escalar e de compreender as relações entre vetores e as transformações isométricas (reflexão, translação e rotação). É importante que todo esse trabalho seja proposto de modo articulado e integrado com situações estudadas na Física, por exemplo, e com apoio de softwares de geometria dinâmica.
+      O trabalho com vetores deve proporcionar aos/s estudantes, inicialmente, compreender o conceito de vetor tanto do ponto de vista geométrico (coleção de segmentos orientados de mesmo comprimento, direção e sentido) como do ponto de vista algébrico (caracterizado por suas coordenadas). Na continuidade, esse trabalho é ampliado para que eles sejam capazes de interpretar a representação geométrica da soma de vetores e da multiplicação de um vetor por um escalar e de compreender as relações entre vetores e as transformações isométricas (reflexão, translação e rotação). É importante que todo esse trabalho seja proposto de modo articulado e integrado com situações estudadas na Física, por exemplo, e com apoio de softwares de geometria dinâmica. (BNCC, 2016, p. 562)
 
    Os pré-requisitos para este capítulo são:
 
@@ -169,7 +171,7 @@
    No que se refere às grandezas físicas, optou-se pela seguinte ordem encadeada conceitualmente: posição relativa `\rightarrow` deslocamento `\rightarrow` velocidade média `\rightarrow` aceleração média (note que para definir aceleração média, é preciso antes definir velocidade média a qual, por sua vez, pressupõe o conceito de deslocamento e, este, pressupõe o conceito de posição relativa).
 
    O vetor posição relativa, apesar de suas limitações (a soma deste tipo de vetor não faz sentido neste contexto), é simples e permite evidenciar para o aluno que existem grandezas que não podem ser descritas apenas com um número ou apenas como uma orientação. Assim, como primeira atividade, usamos um problema que envolve posições relativas para motivar o conceito de grandeza vetorial.
-   Além disso, o vetor posição relativa tem uma vantagem adicional: a escala determinada para as posições automaticamente determinar a escala do vetor, isto é, tem-se uma escola só (compare com o caso de velocidades e forças: as posições podem ter uma escala e os vetores podem ter outra completamente diferente).
+   Além disso, o vetor posição relativa tem uma vantagem adicional: a escala determinada para as posições automaticamente determinar a escala do vetor, isto é, tem-se uma escala só (compare com o caso de velocidades e forças: as posições podem ter uma escala e os vetores podem ter outra completamente diferente).
 
    Vetores deslocamentos são então introduzidos e, por meio de uma versão simplificada do jogo *Corrida de Vetores* (conforme [Gardner-1973]_ e [Oliveira-2009]_),
 
@@ -179,7 +181,7 @@
 
    Ainda com a *Corrida de Vetores*, apresenta-se o uso de um segmento orientado apenas como um indicador de orientação e distância, interpretação esta que motivará a definição geral de vetor como uma coleção de segmentos orientados de mesma direção, sentido e módulo, tema da seção seguinte (*Organizando as ideias*). Nesta seção, discute-se a questão dos vários significados que *direção* e *sentido* podem ter e qual será aquele adotado no contexto de vetores. Os conceitos de soma, vetor nulo e vetor simétrico são revisitados. Introduz-se a operação subtração e de multiplicação por um número real e algumas propriedades são então discutidas.
 
-   No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente à sistemas não ortogonais e de ser um primeiro contato com a leitura de certos problemas geométricos via combinações lineares (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
+   No lugar de conceber as coordenadas dos vetores a partir do tradicional sistema de coordenadas já apresentado e usado no Ensino Fundamental II, o tratamento de vetores do ponto de vista algébrico é conduzido como um desdobramento natural das operações de adição de vetores e multiplicação por número real que foram desenvolvidas geometricamente na seção anterior. Mais precisamente, um sistema de coordenadas é construído a partir da percepção que, fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a \cdot \vec{u}+b \cdot \vec{v}`. Assim, com essa nossa escolha, vetores determinam sistemas de coordenadas e não o contrário. Essa abordagem tem a vantagem de levar naturalmente a sistemas não ortogonais e de ser um primeiro contato com a leitura de certos problemas geométricos via combinações lineares (por exemplo, resolver um sistema linear `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` pode ser interpretado como encontrar os pontos de interseção das retas cujas equações são `2\,a + 3\,b = 4` e `5\,a - 8\,b = 7` ou, dualmente, determinar números reais `a` e `b` tais que `\vec{w} = a \cdot \vec{u} + b \cdot \vec{v}`, onde `\vec{u} = (2, 5)`, `\vec{v} = (3, -8)` e `\vec{w} = (4, 7)`).
 
    Uma vez estabelecido o fato de que se `(a, b)` são as coordenadas de um ponto `P` com relação a um sistema de coordenadas com origem `O`, então o vetor posição relativa `\overrightarrow{OP}` também tem coordenadas `(a, b)` com relação a este sistema de coordenadas, optou-se por identificar pontos com vetores desta maneira: `P = \overrightarrow{OP}`. Com isto, a soma `P + \vec{v}` de um ponto com um vetor deve ser interpretada como a soma `\vec{OP} + \vec{v}` de vetores. Esta formulação será especialmente útil na interpretação de translações por meio de soma de vetores. Em particular, mostra-se que dado um ponto `P=(x,y)` e um vetor `\vec{v}=(c,d)`, as coordenadas da translação de `P` por `\vec{v}` são `P'=P+\vec{v} = (x,y) + (c,d) = (x+c,y+d)` e, mais geralmente, mostra-se que se os vetores `\vec{u}` e `\vec{v}` se expressam como `\vec{u}=(a,b)` e  `\vec{v} = (c, d)` num sistema de coordenadas, então `\vec{u} + \vec{v} = (a + c, b + d)`.
 
@@ -193,7 +195,7 @@
 
    #. Números racionais são classes de equivalência de frações;  vetores são classes de equivalência de segmentos orientados.
    #. Existem várias "interpretações" para frações, cada uma com suas particularidades: parte-todo, divisão, razão, medida, operador; vetores também têm suas "interpretações", cada uma com suas particularidades: posição, deslocamento, velocidade, aceleração, força, torque.
-   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tomar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de segmentos orientados também se dá por um critério: elas são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
+   #. A "igualdade" de frações se dá estabelecendo-se um critério: duas frações são iguais se elas expressam a mesma quantidade (dividir um bolo em duas partes e tomar uma parte é um processo diferente de dividir o mesmo bolo em quatro partes e tomar duas partes mas, nos dois processos, a quantidade de bolo tomada é a mesma); a "igualdade" de segmentos orientados também se dá por um critério: eles são iguais se possuem a mesma direção, módulo e sentido (ir 10 km para o norte saindo de Manaus não é o mesmo que ir 10 km para o norte saindo do Rio de Janeiro, pois as posições iniciais em cada caso são diferentes mas, nos dois processos, caminhou-se 10 km para o norte).
    #. Existe uma flexibilidade no rigor (um "abuso de linguagem") ao se referenciar números racionais como, por exemplo, dizer  "o número racional `2/4`" ao invés de dizer "o número racional cujo representante é a fração `2/4`"); esta flexibilidade também ocorre com vetores: dizer "o vetor `\overrightarrow{OP}`" ao invés de dizer "o vetor cujo representante é o segmento orientado `\overrightarrow{OP}`".
 
 
@@ -343,9 +345,9 @@ Grandezas deste tipo são denominadas :index:`grandezas escalares`.
 
 Por outro lado, como você deve ter percebido com a atividade anterior, um único número não basta para especificar completamente uma posição com relação a um ponto de referência. Além da distância entre o ponto de referência e a posição em questão (no caso da atividade, "10 km"), também é necessário ter uma orientação (no caso da atividade, "à nordeste"). Grandezas físicas deste tipo – as quais, para serem perfeitamente descritas, necessitam de um valor numérico, uma unidade e uma orientação – são denominadas :index:`grandezas vetoriais`.
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
-    Quais outras grandezas físicas você conhece? Elas são grandezas escalares ou vetoriais?
+   Quais outras grandezas físicas você conhece? Elas são grandezas escalares ou vetoriais?
 
 
 **Vetor posição relativa**
@@ -365,7 +367,7 @@ com relação às estações de pesquisa `A` e `B` da atividade anterior.
 
    Vetores posições relativas do ponto `G` determinados pelos pontos de referência `A` e `B`.
 
-.. admonition:: Para reflexão
+.. admonition:: Para refletir
 
     Por que posições relativas não poderiam ser representadas apenas com segmentos de reta? Por que usar segmentos orientados é importante neste contexto?
 
@@ -387,8 +389,9 @@ para `\vec{v}` da figura seguinte (relacionada com a atividade proposta no iníc
 
    Notação para vetores posições relativas.
 
-.. admonition:: Observações sobre notação e terminologia
+.. admonition:: Observação
 
+   **Observações sobre notação e terminologia**
 
    * Alguns livros usam ainda um outro tipo de notação: grandezas vetoriais são representadas por letras em negrito e grandezas escalares por letras em itálico.
 
@@ -407,7 +410,7 @@ Antes de prosseguirmos, é importante destacar uma característica importante do
       :width: 50pt
       :align: center
 
-           .. _fig-ggb-vpr-01:
+   .. _fig-ggb-vpr-01:
 
    .. figure:: _resources/ggb-vpr-01.jpg
       :width: 400pt

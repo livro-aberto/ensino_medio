@@ -12,13 +12,46 @@ Ensino Médio
    PE104-ROTEIRO
    AF106-ROTEIRO
    AF107-ROTEIRO
+   AF209-ROTEIRO
    GE101-ROTEIRO
    GE201-ROTEIRO
    GE202-ROTEIRO
    GE301-ROTEIRO   
    GE202-ROTEIRO2
-   AF209-ROTEIRO
-   
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   GE101
+   GE101-0
+   GE101-0A
+   GE101-0B
+   GE101-0C
+   GE101-1
+   GE101-1A
+   GE101-1B
+   GE101-A
+   GE101-B
+   GE101-E
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+
+   GE301
+   GE301-0
+   GE301-1
+   GE301-2
+   GE301-3
+   GE301-4
+   GE301-5
+   GE301-6
+   GE301-7
+   GE301-8
+   GE301-A
+   GE301-E
 
 .. toctree::
    :maxdepth: 1
@@ -48,6 +81,25 @@ Ensino Médio
 .. toctree::
    :maxdepth: 1
    :glob: 
+   
+   AF209
+   AF209-0
+   AF209-1
+   AF209-2
+   AF209-3
+   AF209-4
+   AF209-5
+   AF209-6
+   AF209-7
+   AF209-8
+   AF209-9
+   AF209-10
+   AF209-11
+   AF209-E
+      
+.. toctree::
+   :maxdepth: 1
+   :glob: 
 
    PE103
    PE103-0
@@ -67,22 +119,6 @@ Ensino Médio
    PE104-A
    PE104-E
 
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
-   GE101
-   GE101-0
-   GE101-0A
-   GE101-0B
-   GE101-0C
-   GE101-1
-   GE101-1A
-   GE101-1B
-   GE101-A
-   GE101-B
-   GE101-E
 
 .. toctree::
    :maxdepth: 1
@@ -119,41 +155,5 @@ Ensino Médio
    GE2022-A
 .. GE2022-E
 
-.. toctree::
-   :maxdepth: 1
-   :glob: 
 
-   GE301
-   GE301-0
-   GE301-1
-   GE301-2
-   GE301-3
-   GE301-4
-   GE301-5
-   GE301-6
-   GE301-7
-   GE301-8
-   GE301-A
-   GE301-E
-
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-
-   AF209
-   AF209-0
-   AF209-1
-   AF209-2
-   AF209-3
-   AF209-4
-   AF209-5
-   AF209-6
-   AF209-7
-   AF209-8
-   AF209-9
-   AF209-10
-   AF209-11
-   AF209-E
-      
 .. include:: definicoes.rst

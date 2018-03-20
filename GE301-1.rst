@@ -14,7 +14,7 @@ Atividade: luzes e sombras
 .. admonition:: Para o professor
 
    **Objetivos específicos:**
-     
+
    * Observar o comportamento das sombras de alguns objetos geométricos familiares, identificando o que varia e o que não varia de acordo com a posição do objeto, do anteparo de projeção e da fonte de luz; descrever essas variações.
    
    * Comparar as propriedades dos dois tipos de sombras: aquelas produzidas por uma lanterna de celular (projeção em perspectiva) e aquelas produzidas pela luz solar (projeção paralela).
@@ -26,10 +26,9 @@ Atividade: luzes e sombras
    
    * Para a confecção do cubo vazado, o seguinte molde pode ser usado. Uma versão em PDF para impressão está disponível neste endereço: <https://goo.gl/ap7NV8>.
    
-      .. figure:: _resources/cubo-vazado_1.jpg
+      .. figure:: _resources/cubo-vazado_1.jpg   
    
-   
-     Naturalmente, outros modelos podem ser usados, como aqueles feitos com canudinhos. O importante é que modelo não fique muito irregular e tenha as faces vazadas para que se possa ver todas as arestas.    
+    Naturalmente, outros modelos podem ser usados, como aqueles feitos com canudinhos. O importante é que modelo não fique muito irregular e tenha as faces vazadas para que se possa ver todas as arestas.    
    
    * Sugerimos que grupos diferentes usem triângulos com formatos diferentes. Se o triângulo for confeccionado com papel comum, sugerimos que ele seja reforçado (colando-se duas ou mais cópias) para evitar que ele se dobre durante a realização dos experimentos.
    
@@ -666,27 +665,27 @@ O objetivo desta atividade é levar você a ponderar sobre concepções de model
        
      Resolvendo a segunda equação, encontramos `BI=0{,}01726~\text{km}` e substituindo este valor na primeira equação, vemos que a medida do segmento `DE` é `8{,}4~\text{cm}`. Assim, a sombra do lápis, dada pelo segmento `DF`, possui comprimento `16{,}8~\text{cm}`. 
     
-     Portanto, supondo que os raios solares que atingem a Terra são paralelos, a sombra de um lápis de `16~\text{cm}` seria de `16~\text{cm}`. Supondo que estes raios não são paralelos, a sombra do mesmo lápis mede `16{,}8~\text{cm}`. Note que a diferença entre os valores encontrados para as sombras é muito pequeno, e isso decorre do fato dos raios solares serem quase paralelos.
+     Portanto, supondo que os raios solares que atingem a Terra são paralelos, a sombra de um lápis de `16~\text{cm}` seria de `16~\text{cm}`. Supondo que estes raios não são paralelos, a sombra do mesmo lápis mede `16{,}8~\text{cm}`. Note que a diferença entre os valores encontrados para as sombras é de `5\%` do comprimento do lápis.
      
-     * A :numref:`fig-experimentos-modelosdeproj3` mostra uma representação do sol, alguns raios luminosos paralelos que dele emanam e o anteparo. 
+     * A :numref:`fig-experimentos-modelosdeproj3` mostra a representação de alguns raios luminosos paralelos (desenhados da cor azul) que emanam do Sol sobre um anteparo de projeção. 
   
      .. _fig-experimentos-modelosdeproj3:
 
-     .. figure:: _resources/Sol_Raios4.png
+     .. figure:: _resources/Sol_Raios3.png
         :width: 250pt
         :align: center
 
-        Diagrama representando o Sol (sem nenhuma escala em relação ao seu tamanho e distância à Terra) e raios luminosos que dele emanam.
+        Diagrama representando raios luminosos que emanam do Sol sobre um anteparo.
    
-     * A :numref:`fig-experimentos-modelosdeproj4` mostra a mesma situação anterior, mas agora foi incluído um triângulo opaco desenhado na cor vermelha. Os raios luminosos do Sol estão representados da cor azul. Alguns raios solares são impedidos de alcançar o anteparo ao encontrar o triângulo e portanto, foram pontilhados em nosso desenho a partir do ponto onde tocam o triângulo. A sombra provocada pelo triângulo no anteparo foi desenhada na cor preta.
+     * A :numref:`fig-experimentos-modelosdeproj4` mostra a mesma situação anterior, mas agora foi incluído um triângulo opaco desenhado na cor vermelha. Alguns raios solares são impedidos de alcançar o anteparo ao encontrar o triângulo e portanto, foram pontilhados em nosso desenho a partir do ponto onde tocam o triângulo. A sombra provocada pelo triângulo no anteparo foi desenhada na cor preta.
 
      .. _fig-experimentos-modelosdeproj4:
 
-     .. figure:: _resources/Sol_Raios_Triangulo4.png
+     .. figure:: _resources/Sol_Raios_Triangulo3.png
         :width: 280pt
         :align: center
 
-        Diagrama representando o Sol (sem nenhuma escala em relação ao seu tamanho e distância à Terra) com raios luminosos que dele emanam, assim como a sombra produzida por um triângulo opaco.
+        Diagrama representando raios luminosos que emanam do Sol sobre um anteparo, assim como a sombra produzida por um triângulo opaco.
          
   
 .. admonition:: Para o professor
@@ -801,7 +800,7 @@ Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de proje�
 
    Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`. 
    
-   .. O conceito de função :ref:`sec-funcao-organizando-ideias`.
+   .. O conceito de função :ref:`sec-funcao-organizando-ideias-conceito`.
    
 
 
@@ -1143,63 +1142,71 @@ Atividade: construindo objetos geométricos peculiares
 
 .. admonition:: Resposta
 
-  #. * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o solo. Pode-se escolher pontos mais representativos das letras para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. 
-  
-     .. _fig-proj-obj-peculiares-solucao-escola-01:
+   #. 
+      * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o plano do solo, como mostrado na :numref:`fig-proj-obj-peculiares-solucao-escola-01`. 
 
-     .. figure:: _resources/ProjecaoEscola.png
-        :width: 320pt
-   
-        Construção da projeção da palavra ESCOLA.
-        
-     A construção mostrada na :numref:`fig-proj-obj-peculiares-solucao-escola-01` foi feita no Geogebra 3D e está disponível em <https://www.geogebra.org/m/X2rA45gS> e <https://www.geogebra.org/m/xjMqSPX2>.  
-  
-     * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
-   
-  #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
-  
-     
-     .. _fig-proj-obj-peculiares-solucao-peça-01:
+      .. _fig-proj-obj-peculiares-solucao-escola-01:
 
-     .. figure:: _resources/ConstrucaoDaPeca.png
-        :width: 400pt
+      .. figure:: _resources/ProjecaoEscola.png
+         :width: 320pt
    
-        Construção da obra "Squaring The Circle". A primeira figura é o cone com vértice `C`, a segunda é a pirâmide de base quadrada com vértice `P`, a terceira é a união do cone com a pirâmide, e a quarta é a interseção entre o cone e a pirâmide (`C` e `P` foram mantidos para auxiliar na compreensão, mas não fazem parte da interseção).
-     
-     A última figura mostrada na :numref:`fig-proj-obj-peculiares-solucao-peça-01` é a interseção do cilindro com a pirâmide. Na :numref:`fig-proj-obj-peculiares-solucao-peça-02`, a mesma peça pode ser vista de outro ângulo.
-     
-     .. _fig-proj-obj-peculiares-solucao-peça-02:
+         Construção da projeção da palavra "ESCOLA".
+   
+      Observe que, é possível escolher pontos mais representativos das letras da palavra "ESCOLA" para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. Veja o resultado final na figura abaixo.
 
-     .. figure:: _resources/Peca_1.png
-        :width: 90pt
+      .. _fig-proj-obj-peculiares-solucao-escola-02:
+
+      .. figure:: _resources/aviso-na-rua-03.jpg
+
+         Resultado final da projeção da palavra "ESCOLA".
+         
+      A construção mostrada na :numref:`fig-proj-obj-peculiares-solucao-escola-01` foi feita no Geogebra 3D e está disponível em <https://www.geogebra.org/m/X2rA45gS> e <https://www.geogebra.org/m/xjMqSPX2>. 
+
+      * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
    
-        Peça da obra "Squaring The Circle".
-     
-     O vídeo <https://youtu.be/pNjh1Ji_rg8> apresenta a construção da peça "Squaring The Circle". E na construção feita no Geogebra 3D disponível em <https://www.geogebra.org/m/Uxtn6hxy>, é possível interagir com a peça criada anteriormente.
+   #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
+   
+   .. _fig-proj-obj-peculiares-solucao-peça-01:
+
+   .. figure:: _resources/ConstrucaoDaPeca.png
+      :width: 400pt
+   
+      Construção da obra "Squaring The Circle". A primeira figura é o cone com vértice `C`, a segunda é a pirâmide de base quadrada com vértice `P`, a terceira é a união do cone com a pirâmide, e a quarta é a interseção entre o cone e a pirâmide (`C` e `P` foram mantidos para auxiliar na compreensão, mas não fazem parte da interseção).
+   
+   A última figura mostrada na :numref:`fig-proj-obj-peculiares-solucao-peça-01` é a interseção do cilindro com a pirâmide. Na :numref:`fig-proj-obj-peculiares-solucao-peça-02`, a mesma peça pode ser vista de outro ângulo.
+
+   .. _fig-proj-obj-peculiares-solucao-peça-02:
+
+   .. figure:: _resources/Peca_1.png
+      :width: 90pt
+   
+      Peça da obra "Squaring The Circle".
+   
+   O vídeo <https://youtu.be/pNjh1Ji_rg8> apresenta a construção da peça "Squaring The Circle". E na construção feita no Geogebra 3D disponível em <https://www.geogebra.org/m/Uxtn6hxy>, é possível interagir com a peça criada anteriormente.
       
-  #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
+   #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
   
-     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Veja a 
-     :numref:`fig-proj-obj-peculiares-solucao-rolha-01`.
+   Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Veja a :numref:`fig-proj-obj-peculiares-solucao-rolha-01`.
      
-     .. _fig-proj-obj-peculiares-solucao-rolha-01:
+   .. _fig-proj-obj-peculiares-solucao-rolha-01:
 
-     .. figure:: _resources/Solidos_1.png
-        :width: 320pt
+   .. figure:: _resources/Solidos_1.png
+      :width: 320pt
    
-        Imagem dos três sólidos que devem ser criados para a construção da rolha.
+      Imagem dos três sólidos que devem ser criados para a construção da rolha.
      
-     Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
+   Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
      
-     .. _fig-proj-obj-peculiares-solucao-rolha-02:
+   .. _fig-proj-obj-peculiares-solucao-rolha-02:
 
-     .. figure:: _resources/IntersecoesPrismasCilindro_1.png
-        :width: 280pt
+   .. figure:: _resources/IntersecoesPrismasCilindro_1.png
+      :width: 280pt
    
-        Interseção dos três sólidos e a rolha.
+      Interseção dos três sólidos e a rolha.
         
-     Para entender melhor o processo descrito acima, use a construção do Geogebra 3D disponível no endereço <https://www.geogebra.org/m/Q7eXY36j> e o vídeo disponível em <https://youtu.be/2xtA-IABcP4>.  
-     Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos. 
+   Para entender melhor o processo descrito acima, use a construção do Geogebra 3D disponível no endereço <https://www.geogebra.org/m/Q7eXY36j> e o vídeo disponível em <https://youtu.be/2xtA-IABcP4>.  
+   
+   Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos. 
 
 
 .. admonition:: Para refletir
@@ -1265,42 +1272,6 @@ Atividade: construindo objetos geométricos peculiares
       Brincando com anamorfose.
    
    
-.. admonition:: Você sabia?
-
-
-   Projeções ortogonais já foram um segredo militar!
-   
-   A :index:`Geometria Descritiva` é o ramo da geometria que estuda a representação de objetos tridimensionais em duas dimensões através de um certo conjunto específico de procedimentos. As técnicas resultantes são importantes para a engenharia, a arquitetura, o design gráfico e as artes (:numref:`fig-proj-geometria-descritiva-01`). A base teórica para a geometria descritiva é fornecida pelas projeções ortogonais. 
-   
-   .. _fig-proj-geometria-descritiva-01:
-   
-   .. figure:: _resources/geometria-descritiva-01.jpg
-   
-      Projeções ortogonais de um carro e de uma cabeça humana.
-      
-   O matemático francês Gaspard Monge (1746-1818) é considerado fundador da geometria descritiva. Ele a usou em engenharia militar (construção de fortificações) durante a época de Napoleão Bonaparte. De fato, geometria descritiva já foi considerada um segredo militar.
-  
-   .. _fig-proj-gaspar-monge-01:
-  
-   .. figure:: _resources/gaspard-monge-01.jpg
-      :width: 200pt
-     
-      Gaspard Monge (1746-1818).
-  
-   Dennis Lieu e Sheryl Sorby, no excelente livro Visualization, Modeling, and Graphics for Engineering Design, apresentam o contexto histórico: 
-  
-      A pólvora começou a ser usada no mundo ocidental durante o Renascimento, assim como o canhão. Os canhões tornaram obsoletas a maioria das fortalezas construídas durante a era medieval. As muralhas não conseguiam suportar o impacto dos projéteis de canhão. Assim, as fortalezas precisavam ser remodeladas para suportar os tiros de canhão. Na França, um novo estilo de fortificação mais resistente foi então desenvolvido. A fortificação era construída com muros inclinados que ajudavam a defletir o tiro de canhão e não desmoronavam da mesma maneira que as muralhas planas verticais, quando atingidas diretamente. As novas fortalezas eram geometricamente mais complicadas de se construir do que suas predecessoras com muralhas verticais. Mais ainda, o perímetro da fortaleza evoluiu de um formato simples retangular para um formato pentagonal com uma extensão proeminente em cada ápice. Este formato de perímetro e o uso de muros inclinados resultaram em paredes que se justapunham em ângulos não usuais, os quais não podiam ser medidos facilmente ou diretamente. [...]
-      
-      Felizmente, os franceses tinham Gaspard Monge, que desenvolveu uma técnica de análise gráfica chamada geometria descritiva. [...] As técnicas de geometria descritiva permitiram que os engenheiros da época criassem qualquer ponto de vista de um objeto geométrico a partir de dois pontos de vista existentes. Ao criar o ponto de vista apropriado, os engenheiros podiam observar e medir os atributos de um objeto. [...] A geometria complexa, os ângulos de interseção incomuns, e a altura das muralhas tinham a intenção de maximizar o fogo cruzado sobre um inimigo em aproximação sem revelar o interior da fortaleza. [...]
-      
-      A astúcia dos franceses na construção de fortificações manteve a França como o principal poder europeu até o século XVIII. Na época, a geometria descritiva era considerada um segredo do estado francês, cuja divulgação era crime punível com a morte. Como resultado da aliança entre a França e o recém-constituído Estados Unidos, muitas fortificações dos EUA utilizaram projetos franceses. Como exemplo, temos o Forte McHenry que foi construído em 1806 e é primorosamente preservado em Baltimore, Maryland. O Forte McHenry sobreviveu ao bombardeamento inglês durante a Guerra de 1812 e tem importância porque ele inspirou Scott Key a escrever The Star Spangled Banner, o hino nacional dos EUA.
-     
-   .. _fig-proj-forte-01:
-  
-   .. figure:: _resources/fig-fort-mchenry.jpg  
-  
-      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library).             
-   
 
 .. admonition:: Para o professor
 
@@ -1309,25 +1280,8 @@ Atividade: construindo objetos geométricos peculiares
       
 .. admonition:: Você sabia?
 
-   O cientista cognitivo americano Douglas Richard Hofstadter (1945-) concebeu, para a capa de seu livro "Gödel Escher Bach: Um Entrelaçamento de Gênios Brilhantes", um objeto bem peculiar: suas projeções ortogonais em três planos produzem as letras "G" (de Gödel), "E" (de Escher) e "B" (de Bach).
-   
-   .. figure:: _resources/geb-01.png
-      :width: 200pt
-      
-      GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
-      
-   Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
-   
-   .. figure:: _resources/triplets-qr.png
-      :width: 50pt
-   
-   .. figure:: _resources/triplets-exemplo.*
-        
-      Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
          
-   .. HJB: Shigeo Fukuda         
-         
-   Existem muitas produções artísticas que produzem este efeito de múltiplas projeções com múltiplos signifcados. Indicamos aqui duas referências: as esculturas do artista `John V. Muntean <https://www.jvmuntean.com/#intro>`_ e do matemático `Kokichi Sugihara <http://home.mims.meiji.ac.jp/~sugihara/Welcomee.html>`_. 
+   Existem muitas produções artísticas que produzem o efeito de múltiplas projeções com múltiplos signifcados como visto na :ref:`ativ-proj-construindo`. Indicamos aqui duas referências: as esculturas do artista `John V. Muntean <https://www.jvmuntean.com/#intro>`_ e do matemático `Kokichi Sugihara <http://home.mims.meiji.ac.jp/~sugihara/Welcomee.html>`_. 
    
    Caso você queira construir uma versão simples de uma destas peças, um molde para ser impresso e recortado está disponível `neste endereço <https://goo.gl/ddFnuf>`_. Um vídeo exibindo as etapas de montagem pode ser acessado no `YouTube <https://youtu.be/QTNg0ofgB78>`_. Caso você tenha acesso a uma impressora 3D, o arquivo STL para impressão podem ser obtido gratuitamente no `Thingverse <https://www.thingiverse.com/thing:1657791>`_. 
    

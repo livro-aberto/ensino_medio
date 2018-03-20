@@ -1,7 +1,7 @@
 .. _sec-funcao-organizando-ideias-conceito:
 
 *****************************************
-Organizando as ideias: Conceito de Função
+Organizando as ideias: conceito de função
 *****************************************
 
 Vamos identificar juntos quais são as características comuns presentes em cada uma das situações anteriores. Em todas elas há pelo menos dois conjuntos bem determinados cujos elementos estão sendo relacionados. Nessa relacão, **cada** elemento de um desses conjuntos está associado a um **único** elemento do outro conjunto.
@@ -29,8 +29,8 @@ Assim, para cada `x\in A` deve existir um único elemento `y\in B` que está ass
 O conjunto `A` é chamado :index:`domínio da função <domínio da função>` `f`, o conjunto `B` é chamado :index:`contradomínio <contradomínio>` de `f` e o subconjunto de `B` formado pelas imagens de todos os elementos de `A` é chamado :index:`conjunto imagem <conjunto imagem>` da função `f`.
    
 .. figure:: _resources/funcao.png
-     :width: 200pt
-     :align: center
+   :width: 200pt
+   :align: center
    
    
 De maneira geral, escreve-se:
@@ -50,7 +50,7 @@ Em uma função `f` de `A` em `B`, a dependência estabelecida entre as variáve
 
 .. admonition:: Para refletir
 
-    Junto com seus colegas, reflita sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando os conjuntos domínio e contradomínio dessas funções.
+   Junto com seus colegas, reflita sobre a definição que acabamos de ver. Vocês conseguem pensar em outros exemplos de relações do seu dia a dia que possam ser consideradas funções? Descrevam algumas delas e compartilhem com o restante da turma, destacando os conjuntos domínio e contradomínio dessas funções.
 
 .. _sec-funcao-organizando-ideias:
 
@@ -60,7 +60,7 @@ Praticando
 
 .. _ativ-funcoes-colorindo-o-mapa:
 
-Atividade: Colorindo o mapa
+Atividade: colorindo o mapa
 ----------------
 
 
@@ -122,6 +122,7 @@ A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos 
 			      :align: center
 
       Para equipe de design: por questões de acessibilidade colocar o nome das cores dentro de cada retângulo
+      
 #. Você precisou associar uma mesma cor para para períodos diferentes do dia. Por que? 
 #. Sabendo que a ponte Rio-Niterói tem aproximadamente `13` km de extensão complete a quarta coluna da tabela com a velocidade média registrada em cada um dos períodos do dia.
 #. É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
@@ -243,20 +244,10 @@ Atividade: A família
 
 Cada ponto do gráfico a seguir representa uma das seguintes pessoas.
 
-
-.. _fig-pessoas:
-
-.. figure:: _resources/pessoas_1.png
-   :width: 200pt
-   :align: center
-   
-   `People vector created by Iconicbestiary - Freepik.com <http://www.freepik.com/free-photos-vectors/people>`_
-   
-
 .. _fig-altura-idade:
 
-.. figure:: _resources/altura_idade1_1.png
-   :width: 480pt
+.. figure:: _resources/Familia_2.png	
+   :width: 450pt
    :align: center
 
 
@@ -355,63 +346,62 @@ Determine o valor de:
 
 
 .. table:: 
-    :widths: 6 6
-    :column-alignment: center center
-    
-    +---------------------+-------------------+
-    | `f(3)`              |                   |
-    +---------------------+-------------------+
-    | `g(-1)`             |                   |
-    +---------------------+-------------------+
-    | `k(2)`              |                   |
-    +---------------------+-------------------+
-    | `f(1)+g(1)`         |                   |
-    +---------------------+-------------------+
-    | `g(2)-k(-1)`        |                   |
-    +---------------------+-------------------+
-    | `k(0).f(-2)`        |                   |
-    +---------------------+-------------------+
-    | `f(0)+h(0)-1`       |                   |
-    +---------------------+-------------------+
-    | `f(-2).g(-2)+k(2)`  |                   |
-    +---------------------+-------------------+
-    |`\dfrac{f(-3)}{k(0)}`|                   |
-    +---------------------+-------------------+
-    |`x` quando `h(x)=0`  |                   |
-    +---------------------+-------------------+
-    |`x` quando `h(x)=3`  |                   |
-    +---------------------+-------------------+
+   :widths: 6 6
+   :column-alignment: center center
 
++---------------------+-------------------+
+| `f(3)`              |                   |
++---------------------+-------------------+
+| `g(-1)`             |                   |
++---------------------+-------------------+
+| `k(2)`              |                   |
++---------------------+-------------------+
+| `f(1)+g(1)`         |                   |
++---------------------+-------------------+
+| `g(2)-k(-1)`        |                   |
++---------------------+-------------------+
+| `k(0).f(-2)`        |                   |
++---------------------+-------------------+
+| `f(0)+h(0)-1`       |                   |
++---------------------+-------------------+
+| `f(-2).g(-2)+k(2)`  |                   |
++---------------------+-------------------+
+|`\dfrac{f(-3)}{k(0)}`|                   |
++---------------------+-------------------+
+|`x` quando `h(x)=0`  |                   |
++---------------------+-------------------+
+|`x` quando `h(x)=3`  |                   |
++---------------------+-------------------+
 
 .. admonition:: Resposta 
 
-   	.. table:: 
-    	   :widths: 6 6
-    	   :column-alignment: center center
-    
-    +---------------------+-------------------+
-    | `f(3)`              |   42              |
-    +---------------------+-------------------+
-    | `g(-1)`             |    -1             |
-    +---------------------+-------------------+
-    | `k(2)`              |     6             |
-    +---------------------+-------------------+
-    | `f(1)+g(1)`         |     8             |
-    +---------------------+-------------------+
-    | `g(0)-k(-1)`        |  `-\dfrac{46}{3}` |
-    +---------------------+-------------------+
-    | `k(0).f(-2)`        |   `20`            |
-    +---------------------+-------------------+
-    | `f(0)+h(0)-1`       | `-8`              |
-    +---------------------+-------------------+
-    | `f(-2).g(-2)+k(2)`  |  `\dfrac{36}{5}`  |
-    +---------------------+-------------------+
-    |`\dfrac{f(-3)}{k(0)}`|  `\dfrac{6}{5}`   |
-    +---------------------+-------------------+
-    |`x` quando `h(x)=0`  |  `\dfrac{7}{2}`   |
-    +---------------------+-------------------+
-    |`x` quando `h(x)=3`  |   `5`             |
-    +---------------------+-------------------+
+   .. table:: 
+      :widths: 6 6
+      :column-alignment: center center
+   
+   +---------------------+-------------------+
+   | `f(3)`              |   42              |
+   +---------------------+-------------------+
+   | `g(-1)`             |    -1             |
+   +---------------------+-------------------+
+   | `k(2)`              |     6             |
+   +---------------------+-------------------+
+   | `f(1)+g(1)`         |     8             |
+   +---------------------+-------------------+
+   | `g(0)-k(-1)`        |  `-\dfrac{46}{3}` |
+   +---------------------+-------------------+
+   | `k(0).f(-2)`        |   `20`            |
+   +---------------------+-------------------+
+   | `f(0)+h(0)-1`       | `-8`              |
+   +---------------------+-------------------+
+   | `f(-2).g(-2)+k(2)`  |  `\dfrac{36}{5}`  |
+   +---------------------+-------------------+
+   |`\dfrac{f(-3)}{k(0)}`|  `\dfrac{6}{5}`   |
+   +---------------------+-------------------+
+   |`x` quando `h(x)=0`  |  `\dfrac{7}{2}`   |
+   +---------------------+-------------------+
+   |`x` quando `h(x)=3`  |   `5`             |
+   +---------------------+-------------------+
 
 
 .. _ativ-funcoes-enchendo-o-cone:
@@ -458,7 +448,7 @@ O reservatório representado a seguir tem a forma de um cone cuja altura é `6 m
 
 .. _ativ-funcoes-uniformemente-variado:
 
-Atividade: Uniformemente variado
+Atividade: uniformemente variado
 --------------------------------
 
 .. admonition:: Para o professor
@@ -497,8 +487,8 @@ Para saber mais
 
 .. _ativ-nao-funcao:
 
-Atividade: Por que não é função?
----------------------
+Atividade: por que não é função?
+--------------------------------
 
 .. admonition:: Para o professor
 
@@ -532,8 +522,8 @@ Determine se cada uma das relações apresentadas a seguir é função. Justifiq
 
 .. _ativ-qual-e-imagem:
 
-Atividade: Domínio e imagem
----------------------
+Atividade: domínio e imagem
+----------------------------
 
 .. admonition:: Para o professor
 
@@ -560,55 +550,55 @@ Considere a seguinte lista de expressões algébricas.
 Veja que, em algumas das expressões, a variável independente não pode assumir alguns valores, por exemplo, na letra a) `x` não pode assumir valores negativos. Complete a tabela abaixo com o maior conjunto domínio possível que cada uma das funções pode ter e o correspondente conjunto imagem.
 
 .. table:: 
-    :widths: 3 3 3
-    :column-alignment: center center center
-    
-    +-------------+-----------------------------+---------------------------+
-    | Expressão   |         domínio `A`         |  Imagem                   |
-    +=============+=============================+===========================+
-    |    `(a)`    |        `\mathbb{R}^+`       |                           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(b)`    |                             |                           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(c)`    |                             |`\mathbb{R}\setminus \{0\}`|
-    +-------------+-----------------------------+---------------------------+
-    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(e)`    |                             |                           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(f)`    |                             |   `[7,+\infty[`           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(g)`    |                             |                           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(h)`    |                             |                           |
-    +-------------+-----------------------------+---------------------------+
+   :widths: 3 3 3
+   :column-alignment: center center center    
+
++-------------+-----------------------------+---------------------------+
+| Expressão   |         domínio `A`         |  Imagem                   |
++=============+=============================+===========================+
+|    `(a)`    |        `\mathbb{R}^+`       |                           |
++-------------+-----------------------------+---------------------------+
+|    `(b)`    |                             |                           |
++-------------+-----------------------------+---------------------------+
+|    `(c)`    |                             |`\mathbb{R}\setminus \{0\}`|
++-------------+-----------------------------+---------------------------+
+|    `(d)`    |`\mathbb{R}\setminus \{-8\}` |                           |
++-------------+-----------------------------+---------------------------+
+|    `(e)`    |                             |                           |
++-------------+-----------------------------+---------------------------+
+|    `(f)`    |                             |   `[7,+\infty[`           |
++-------------+-----------------------------+---------------------------+
+|    `(g)`    |                             |                           |
++-------------+-----------------------------+---------------------------+
+|    `(h)`    |                             |                           |
++-------------+-----------------------------+---------------------------+
 
 Ajude o estudante a completar a tabela.
 
 
 .. admonition:: Resposta 
 
-   	.. table:: 
-    	   :widths: 3 3 3
-    	   :column-alignment: center center center
-    
-    +-------------+-----------------------------+---------------------------+
-    | Expressão   |         domínio `A`         |  Imagem                   |
-    +=============+=============================+===========================+
-    |    `(a)`    |        `\mathbb{R}^+`       |  `\mathbb{R}^+`           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(b)`    |  `[5,+\infty[`              |  `\mathbb{R}^+`           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(c)`    | `\mathbb{R}\setminus \{3\}` |`\mathbb{R}\setminus \{0\}`|
-    +-------------+-----------------------------+---------------------------+
-    |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |`\mathbb{R}\setminus \{0\}`|
-    +-------------+-----------------------------+---------------------------+
-    |    `(e)`    | `]0,+\infty[`               | `]0,+\infty[`             |
-    +-------------+-----------------------------+---------------------------+
-    |    `(f)`    |  `\mathbb{R}`               |   `[7,+\infty[`           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(g)`    |  `\mathbb{R}`               |   `[8,+\infty[`           |
-    +-------------+-----------------------------+---------------------------+
-    |    `(h)`    |    `\mathbb{R}`             |   `[-3,+\infty[`          |
-    +-------------+-----------------------------+---------------------------+
+   .. table:: 
+      :widths: 3 3 3
+      :column-alignment: center center center
+   
+   +-------------+-----------------------------+---------------------------+
+   | Expressão   |         domínio `A`         |  Imagem                   |
+   +=============+=============================+===========================+
+   |    `(a)`    |        `\mathbb{R}^+`       |  `\mathbb{R}^+`           |
+   +-------------+-----------------------------+---------------------------+
+   |    `(b)`    |  `[5,+\infty[`              |  `\mathbb{R}^+`           |
+   +-------------+-----------------------------+---------------------------+
+   |    `(c)`    | `\mathbb{R}\setminus \{3\}` |`\mathbb{R}\setminus \{0\}`|
+   +-------------+-----------------------------+---------------------------+
+   |    `(d)`    |`\mathbb{R}\setminus \{-8\}` |`\mathbb{R}\setminus \{0\}`|
+   +-------------+-----------------------------+---------------------------+
+   |    `(e)`    | `]0,+\infty[`               | `]0,+\infty[`             |
+   +-------------+-----------------------------+---------------------------+
+   |    `(f)`    |  `\mathbb{R}`               |   `[7,+\infty[`           |
+   +-------------+-----------------------------+---------------------------+
+   |    `(g)`    |  `\mathbb{R}`               |   `[8,+\infty[`           |
+   +-------------+-----------------------------+---------------------------+
+   |    `(h)`    |    `\mathbb{R}`             |   `[-3,+\infty[`          |
+   +-------------+-----------------------------+---------------------------+
 
