@@ -173,22 +173,20 @@ em que `x` é qualquer valor real e `a=f(1)` é uma constante, ou seja, um núme
    Usando a “regra de três” fica assim
    
    .. math::
-
-      \begin{eqnarray*}
-      1\quad &\overline{\quad \quad \quad}& \quad a \\
+   
       x \quad &\overline{\quad \quad \quad}& \quad f(x)\\
-      \end{eqnarray*}
+      1\quad &\overline{\quad \quad \quad}& \quad a \\
    
    O que nos leva a
    
    .. math::
 
-      \dfrac 1x = \dfrac a{f(x)} \Longrightarrow f(x) = a\cdot x
+      \dfrac x1 = \dfrac {f(x)}a \Longrightarrow f(x) = a\cdot x
 
 
 .. admonition:: Definição 
 
-   Seja `D\subset \mathbb{R}`. Uma função real `f:D\to\mathbb{R}` é chamada de **função linear** quando existe uma constante `a\neq 0` tal que para todo `x\in D`,
+   Seja `D\subset \mathbb{R}`. Uma função real `f:D\to\mathbb{R}` é chamada de **função linear** quando existe uma constante `a\in \mathbb{R}` tal que para todo `x\in D`,
    
    .. math::
 
@@ -281,7 +279,7 @@ Utilizando as ideias do texto anterior, responda as questões propostas.
    .. figure:: _resources/atv_rot_5.jpg
       :width: 300pt
       :align: center
- 
+
 #. Na figura a seguir, apresentamos um retângulo cuja base tem a mesma medida da base de `R` (igual a `3`), e cuja altura coincide com a de um triângulo equilátero de lado medindo `3`. Esse retângulo é semelhante a `R`?
 
 
@@ -384,25 +382,41 @@ Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.ge
 
 .. admonition:: Para refletir
 
-   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? Pense no seguinte caso: A área de um círculo de raio `2r` é igual a soma das áreas de `2` círculos de raio `r`?
+   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? 
+   
+   Pense no seguinte caso: A área de um círculo de raio `2r` é igual ao dobro da área de um círculo de raio `r`? Ou ainda, é possível encontrar um número real (fixo) tal que `A(r)=k\cdot r`?
 
    .. figure:: _resources/area_soma.png
       :width: 400pt
       :align: center
 
 ********
-Explorando: taxa de variação
+Explorando: taxa de variação média
 ********
 
-.. _ativ-purificador:
+.. _ativ-alcool:
 
-Atividade: Quando trocar o filtro do purificador?
+Atividade: Teor de álcool sanguíneo
 ------------------------------
 
 Há `1` ano você adquiriu um purificador de água com capacidade de refrigeração, e deseja saber quanto tempo falta para realizar a troca do filtro interno. No manual do fabricante do purificador, encontra-se o seguinte quadro:
 
-.. figure:: _resources/purificador.png
-   :width: 450pt
+.. admonition:: Para o professor
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Perceber, a partir da taxa de variação média constante, que o gráfico de uma função linear está contido em uma reta. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d) é possível que os estudantes façam direto a "regra de três"; o que está correto. Contudo, peça para que justifiquem o procedimento usando alguma justificativa geométrica envolvendo os pontos do gráfico. A ideia é que, nesse item eles percebam os triângulos semelhantes que podem ser considerados para a solução.
+   
+   
+
+(**Incluir ilustração de um celular sendo carregado, explicitando o ícone da bateria**)
+
+.. figure:: _resources/bateria.png
+   :width: 100pt
    :align: center
 
 
@@ -414,110 +428,170 @@ Há `1` ano você adquiriu um purificador de água com capacidade de refrigeraç
 #. Calcule a vida útil do filtro interno do seu aparelho e, supondo que você tenha utilizado o seu purificador todos os dias desde a instalação, determine em quanto tempo você deverá solicitar a troca do seu filtro interno.
 #. Com base nas informações que você possui, determine uma expressão matemática que relacione o consumo de água do purificador em função do tempo de uso em dias e represente-a graficamente.
 
+#. Faça uma tabela que forneça o percentual de carga na bateria a cada `25` minutos, a partir de zero. 
 
-.. admonition:: Resposta 
+#. Represente em um plano cartesiano os pontos da tabela do item anterior.
 
-   #. Vida útil do elemento filtrante e vazão máxima recomendada.
-   #. A cada minuto sai `0,75` litro de água do purificador.
-   #. `0,75 \times 12=9` litros.
-   #. `9` litros em ambos os casos.
-   #. `9` litros.
-   #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
-   #. `f(t)=9t`.
+#. Descreva uma estratégia que permita, a partir da representação gráfica obtida no item anterior, determinar o percentual de carga na bateria após `40` minutos de carregamento.
 
-   .. figure:: _resources/grafico_filtro.jpeg
-      :width: 350pt
-      :align: center
+#. Determine a função que modela o carregamento desse modelo de telefone, especificando seus domínio e conjunto imagem.
+
+#. Qual é a taxa de carregamento desse modelo de telefone celular.
+
+.. admonition:: Resposta
+
+   #. `\ `
+   
+      .. table::
+         :widths: 5 5
+         :column-alignment: center center
+
+      +---------+----------------------+
+      | t (min) | Porcentagem de carga |
+      +---------+----------------------+
+      | 0       | 0                    |
+      +---------+----------------------+
+      | 25      | 20                   |
+      +---------+----------------------+
+      | 50      | 40                   |
+      +---------+----------------------+
+      | 75      | 60                   |
+      +---------+----------------------+
+      | 100     | 80                   |
+      +---------+----------------------+
+      | 125     | 100                  |
+      +---------+----------------------+
+   
+   #.
+   
+      .. figure:: _resources/pontos_bateria.jpg
+         :width: 250pt
+         :align: center
+
+   #. A partir da representação dos pontos no plano cartesiano pode-se concluir, usando semelhança de triângulos, que se em `25` minutos a carga na bateria é de `20\%` então em `40` minutos a carga será de `32\%`.
+   
+   #. `f(t)=\dfrac{4}{5}t=0,8t`, com domínio sendo o conjunto `\{0,1,2,...,125\}` e a imagem o conjunto `\{0,1,2,...,100\}`.
+   
+   #. A bateria carrega a uma taxa de `0,8\%` a cada minuto, isto é, `0,8\%/min`.
 
 ********
-Organizando as ideias: taxa de variação
+Organizando: taxa de variação média
 ********
 
-Dizer que o consumo médio diário em uma casa é de `L` litros/dia (lê-se: `L` litros por dia) significa dizer que a cada dia a mais de uso, a quantidade total de água consumida aumenta `L` litros.
+No capítulo de Introdução às Funções, você aprendeu a calcular a taxa de variação média de uma função em um determinado intervalo. É um número expresso em forma de uma razão que fornece diversas informações sobre o comportamento da função no intervalo considerado. 
 
-Representando por `f` a função que expressa o consumo de água em litros em relação ao tempo `t` em dias, a afirmação anterior pode ser traduzida da seguinte maneira:
-
-.. math::
-
-   f(1)=L \quad e \quad f(t+1)=f(t)+L
-
-Considere agora um tempo `T`. O consumo de água nesse período é representado pelo valor `f(T)`. Se quisermos saber o consumo de água no período correspondente ao dobro desse tempo precisamos calcular `f(2T)`. Esse valor é igual a `f(T+T)` que representa o consumo de água num período correspondente a uma sucessão de dois períodos iguais de tempo `T`.  Como o consumo é o mesmo para intervalos iguais de tempo, podemos afirmar que o consumo total será dado pela soma dos consumos em cada intervalo de tempo `T`, isto é,
+Relembrando, se um intervalo `[x_1,x_2]` está contido no domínio de uma função `f`, então a taxa de variação média dessa função nesse intervalo é a razão
 
 .. math::
+   \dfrac{f(x_2)-f(x_1)}{x_2-x_1}
 
-   f(2T)=f(T+T)=f(T)+f(T)=2f(T).
+Como você deve ter percebido na :ref:`ativ-alcool`, o valor obtido para as taxas de variação médias nos diversos intervalos foi sempre o mesmo para cada função considerada. Essa é uma propriedade importante das funções lineares, que provaremos agora.
 
-Dessa forma, `f(3T)=f(2T+T)=f(2T)+f(T)=3f(T)`, e aplicando o mesmo raciocínio, temos para qualquer que seja o `n` natural,
-
-.. math::
-
-   f(nT)=nf(T).
-
-A igualdade acima, junto com o fato de `f` ser uma função crescente, nos permite concluir, pelo Teorema Fundamental da Proporcionalidade, que `f` é uma proporcionalidade direta e portanto para todo `t \in \mathbb{R}`
+Considere uma função linear `\ell:\mathbb{R}\to\mathbb{R}`, dada por `\ell(x)=a\cdot x`, e também dois números reais distintos `x_1<x_2`. A taxa de variação média de `\ell` no intervalo  `[x_1,x_2]` pode ser calculada assim
 
 .. math::
+   \dfrac{\ell(x_2)-\ell(x_1)}{x_2-x_1}=\dfrac{a x_2- a x_1}{x_2-x_1}=\dfrac{a(x_2-x_1)}{x_2-x_1}=a.
 
-   \dfrac{f(t)}{t}=\dfrac{f(1)}{1} \Longrightarrow \dfrac{f(t)}{t}=\dfrac{L}{1} \Longrightarrow f(t)=Lt.
+Podemos destacar duas coisas sobre a conclusão deste último cálculo:
 
-A função `f` é uma função linear e o número `L` que aparece multiplicando `t` é a *taxa de variação* entre as grandezas.
+1) o valor final para a taxa de variação média não depende dos valores de `x_1` e `x_2`. Isso significa que podemos escolher qualquer intervalo  de números reais e chegaremos ao mesmo resultado. 
 
+2) o resultado coincide com o coeficiente de `x` na expressão da função, e também pode ser obtido calculando-se a imagem de `x=1`. Sendo assim, podemos afirmar que a função `y=7x` tem taxa de variação média constante igual a `7`, enquanto que a função `y=-\frac {3x}5` tem taxa de variação média constante igual a `-\frac {3}5`.
+
+.. admonition:: Teorema
+
+   Toda função linear `f` tem taxa de variação média constante igual a `f(1)`, e pode ser representada pela expressão `f(x)=f(1)\cdot x`.
+
+.. admonition:: Para refletir
+   
+   .. admonition:: Para o professor
+   
+      Essa ideia será trabalhada mais adiante na seção dedicada a função afim. Por enquanto, deixe que criem suas próprias jutificativas e contra-exemplos
+   
+   É verdade que se uma função tem taxa de variação média constante então ela é uma função linear? Pense em exemplos com taxas de variação médias constantes e verifique se há ou não proporcionalidade nesses casos.
+
+Usando essas ideias no contexto da :ref:`ativ-camara`, podemos afirmar que a expressão da temperatura em função do tempo, mostrada pelo gráfico pode ser dada por `f(t)=-3t`, uma vez que `f(1)=-3`. A cada hora a temperatura decresce `3^\circ C`, gerando portanto uma função decrescente.
+
+De uma maneira geral, se a taxa de variação média `a` de uma função linear é um número real **negativo**, então essa função é decrescente, pois, para `a<0`
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1>ax_2 \Longleftrightarrow f(x_1)>f(x_2).
+
+Por outro lado, se a taxa de variação média `a` de uma função linear é um número real **positivo**, então essa função é crescente, pois, nesse caso `a>0` e
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1<ax_2 \Longleftrightarrow f(x_1)<f(x_2).
+   
+
+Vamos agora entender como é a representação gráfica de uma função com taxa de variação média constante. Para isso, consideremos uma função `f:\mathbb{R}\to\mathbb{R}` que tenha essa propriedade, isto é, para qualquer intervalo a taxa de variação média de `f` neste intervalo é igual a `a`.
+
+Na figura a seguir, os pontos `A=(x_1,f(x_1))` e `B=(x_2,f(x_2))` pertencem ao gráfico da função `f`. O segmento `BC` mede `f(x_2)-f(x_1)` e o segmento `AC` mede `x_2-x_1`. Dessa forma o quociente `\dfrac{\overline{BC}}{\overline{AC}}` é igual à taxa de variação média da função nesse intervalo, e portanto podemos conluir que `\overline{BC}=a\cdot \overline{AC}`.
+
+.. figure:: _resources/grafico1.1.jpg
+   :width: 300pt
+   :align: center
+
+.. math::
+   \dfrac{\overline{BC}}{\overline{AC}}= \dfrac{f(x_2)-f(x_1)}{x_2-x_1}=a \Longrightarrow \overline{BC}=a\cdot \overline{AC}.
+
+Por isso, quaisquer dois pontos do gráfico de `f`, sempre serão extremidades da hipotenusa de um triângulo retângulo cujos catetos são paralelos aos eixos e suas medidas se relacionam conforme a seguinte figura.
+
+.. figure:: _resources/grafico2_1.jpg
+   :width: 200pt
+   :align: center
+
+Consideremos agora três pontos do gráfico de `f` com os respectivos triângulos retângulos da construção anterior.
+
+.. figure:: _resources/grafico3.jpg
+   :width: 300pt
+   :align: center
+
+Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir que os três pontos pertencem a uma mesma reta. A conclusão é válida quaisquer que sejam os três pontos considerados, logo acabamos de justificar a seguinte propriedade.
+
+.. admonition:: Teorema
+
+   Se uma função tem taxa de variação média constante então seu gráfico está contido em uma reta. 
+   
+   Em particular, como a função linear tem taxa de variação média constante, seu gráfico está contido em uma reta.
 
 .. glossary::
-
-
-.. admonition:: Definição 
-
-   Em qualquer função linear `f`, a **taxa de variação** de `f` é o valor constante dado pelo quociente `\dfrac{f(x)}{x}`, para qualquer `x \neq 0`.
 
 .. admonition:: Observação
 
    **Algumas propriedades da função linear:**
 
+   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem `(0,0)` do plano cartesiano pertencerá ao gráfico de `f`. Em qualquer caso, o gráfico de uma função linear está contido em uma reta que passa pela origem (mesmo quando não fizer sentido calcular a imagem de `x=0`).
+   
    * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
    
    .. math::
 
       f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
-
-
+   
+   
    .. figure:: _resources/taxa.png
       :width: 350pt
       :align: center
-
-   * Perceba pela figura acima, que, para taxas positivas, quanto maior for a taxa de variação, mais inclinada será a reta do gráfico.
    
-   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem do plano cartesiano pertencerá ao gráfico de `f`.
+   * Para taxas de variação médias positivas, quanto maior for o valor de `a`, mais inclinada será a reta que contém o gráfico da função linear associada.
    
-   * Os dois exemplos que vimos neste capítulo apresentam taxa de variação positiva. Contudo, é possível que uma função linear tenha taxa de variação negativa, por exemplo, podemos ter `f(x)=-2x`. Isso significa que a cada aumento de `1` no valor de `x` há uma diminuição de `2` no valor de `f(x)`, isto é, `f(x+1)=f(x)-2`. Há também reflexos no gráfico de `f` que passará a estar contido em uma reta decrescente.
+   .. figure:: _resources/aumenta_a.*
+      :width: 400pt
+      :align: center
    
-
-   .. figure:: _resources/image_negativa.png
-      :width: 350pt
-      :align: center
-
-   * O gráfico de uma função linear está contido em uma reta que passa pela origem do plano cartesiano, cuja inclinação dependerá do sinal de `a`, conforme mostra a figura.
-
-   .. figure:: _resources/graf_linear1.png
-      :width: 350pt
-      :align: center
-
-   .. figure:: _resources/graf_linear2.png
-      :width: 350pt
-      :align: center
-
-   Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
-
+   Para uma visualização do comportamento da representação gráfica com taxa de variação média também negativa, sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
+   
    .. figure:: _resources/codigo2_2.png
       :width: 100pt
       :align: center
-
+   
    .. figure:: _resources/taxa_linear.*
       :width: 400pt
       :align: center
    
    * Se uma reta contém a origem do plano cartesiano e o ponto `(x_0,y_0)` com `x_0\neq 0`, então ela é o gráfico da função linear `f:\mathbb{R}\to\mathbb{R}`, dada por `f(x)=ax`, em que `a=\dfrac{y_0}{x_0}`.
    
-   Para verificar isso, basta observarmos uma reta nas condições dadas e os dois  triângulos retângulos destacados da figura a seguir a partir da origem e dos pontos `(x_0,y_0)` e `(x,y)`. Observe que, qualquer que seja o ponto `(x,y)` escolhido, esses triângulos são semelhantes, portanto,
+   Para verificar isso, basta observarmos uma reta nas condições dadas e os dois  triângulos retângulos destacados da figura a seguir a partir da origem e dos pontos `(x_0,y_0)` e `(x,y)`. Observe que, qualquer que seja o ponto `(x,y)` escolhido diferente da origem, esses triângulos são semelhantes, portanto,
    
    .. math::
 
@@ -530,8 +604,7 @@ A função `f` é uma função linear e o número `L` que aparece multiplicando 
 
    Assim, por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`.
    
-   Uma vez que se sabe que uma reta é o gráfico da função `f(x)=5x`, então sabe-se que os pontos da reta são do tipo `(x,5x)` e que, por exemplo, `(7,35)` é um ponto da reta, mas que `(2,12)` não é.
-
+   
    .. figure:: _resources/38.png
       :width: 350pt
       :align: center
@@ -545,3 +618,62 @@ A função `f` é uma função linear e o número `L` que aparece multiplicando 
       Gráfico da função `g(x)=-\dfrac{2}{5}x`.
 
    Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.
+
+********
+Praticando
+********
+
+.. _ativ-purificador:
+
+Atividade: Quando trocar o filtro do purificador?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Identificar num conjunto de grandezas distintas e apresentadas em um quadro, duas grandezas que atendem as especificações da situação problema.
+   
+   * Perceber a relação da razão entre as grandezas com a taxa de variação da função linear.
+   
+   * Aplicar os conceitos de função linear com o intuito de resolver a situação problema.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d), explore com seus alunos o motivo pelo qual o resultado é o mesmo em ambos os casos.
+   
+   * Utilize o fato que a atividade anterior também aborda o conceito de função linear e faça um comparativo com os gráficos das duas atividades.
+   
+   * Se possível, consulte seu diretor ou responsável direto, como anda a troca dos filtros dos bebedouros da sua escola. Caso consiga o manual dos fabricantes, simule a mesma atividade com os dados da realidade de sua escola.
+   
+   * Conduza seus estudantes a perceber a diferença entre a resposta do item (e) que é uma razão: `9` litros/dia, e as respostas dadas aos dois itens anteriores em que tratam do consumo em litros para cada intervalo de tempo.
+
+Há `1` ano você adquiriu um purificador de água com capacidade de refrigeração, e deseja saber quanto tempo falta para realizar a troca do filtro interno. No manual do fabricante do seu purificador, você encontra o seguinte quadro:
+
+.. figure:: _resources/purificador.png
+   :width: 450pt
+   :align: center
+
+
+#. Quais informações do quadro são relevantes para responder à sua dúvida?
+#. Explique com suas palavras o significado da vazão 0,75 litros/minuto.
+#. Para calcular a vida útil do seu filtro interno, é necessário estimar a quantidade de água consumida diariamente na sua casa. Suponha, então, que você observou que o purificador é acionado ao longo de um dia o equivalente ao tempo total de 12 minutos. Quantos litros de água são consumidos em um dia, nessas condições? (assuma que o purificador foi regulado para funcionar com a vazão máxima recomendada pelo fabricante)
+#. Assumindo que o consumo estimado no item anterior seja o mesmo para todos os dias, qual foi o consumo de água do purificador ao final do primeiro dia de uso? E entre o 10º e o 11º dias de uso?
+#. Qual o aumento do consumo de água observado para cada dia de uso do purificador?
+#. Calcule a vida útil do filtro interno do seu aparelho e, supondo que você tenha utilizado o seu purificador todos os dias desde a instalação, determine em quanto tempo você deverá solicitar a troca do seu filtro interno.
+#. Com base nas informações que você possui, encontre uma expressão matemática que relacione o consumo de água do purificador em função do tempo de uso em dias e represente-a graficamente.
+
+
+.. admonition:: Resposta 
+   
+   #. Vida útil do elemento filtrante e vazão máxima recomendada.
+   #. A cada minuto sai `0,75` litro de água do purificador.
+   #. `0,75 \times 12=9` litros.
+   #. `9` litros em ambos os casos.
+   #. `9` litros.
+   #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
+   #. `f(t)=9t`.
+   
+   .. figure:: _resources/grafico_filtro.jpeg
+      :width: 350pt
+      :align: center
