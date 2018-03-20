@@ -1,40 +1,39 @@
 .. _sec-explorando2:
 
-================================
-Explorando: Medidas de dispersão
-================================
+********************************
+Explorando: medidas de dispersão
+********************************
 
 .. _ativ-estrategia-de-investimento:
 
--------------------------------------
-Atividade: Estratégia de Investimento
+Atividade: estratégia de investimento
 -------------------------------------
 
 
 .. admonition:: Para o professor
 
- **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
+   **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
 
- **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
- 
- Esta atividade pode ser vinculada às disciplinas de História ou Geografia, por exemplo, no estudo do período da Crise Econômica de 1929 ou outros temas relacionados com o PIB e crescimento econômico.
- 
+   **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+
+   Esta atividade pode ser vinculada às disciplinas de História ou Geografia, por exemplo, no estudo do período da Crise Econômica de 1929 ou outros temas relacionados com o PIB e crescimento econômico.
+
 Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-ativ-bolsa-de-valores:
 
-.. figure:: _resources/bolsa-de-valores1.png
-   :width: 200pt
+.. figure:: _resources/resized001.png
+   :width: 300pt
    :align: center
 
-   Esquema simplificado de Investimento na Bolsa de Valores
+   Esquema simplificado de investimento na bolsa de valores
 
 Suponha que você tenha a oportunidade de investir um capital, comprando ações de uma de duas  Companhias `A` ou `B` e para escolher uma das duas, disponha de duas amostras de preços do valor destas ações (em reais) registrados no fechamento da bolsa de valores em dez sextas-feiras consecutivas. Veja na figura e na tabela a seguir a cotação das ações ao longo das últimas 10 semanas.
 
 .. _fig-coloque-aqui-o-nome:
 
 .. figure:: _resources/Acoes_medidas_dispersao.png
-   :width: 200pt
+   :width: 350pt
    :align: center
 
    Gráficos de linha da cotação das ações
@@ -42,33 +41,33 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
 
 .. table:: Cotação das ações das empresas em reais (R$)
 
-  +--------+-----+-----+
-  | Semana | `A` | `B` |
-  +--------+-----+-----+
-  | 1      | 61  | 67  |
-  +--------+-----+-----+
-  | 2      | 56  | 48  |
-  +--------+-----+-----+
-  | 3      | 63  | 52  |
-  +--------+-----+-----+
-  | 4      | 57  | 82  |
-  +--------+-----+-----+
-  | 5      | 67  | 77  |
-  +--------+-----+-----+
-  | 6      | 63  | 33  |
-  +--------+-----+-----+
-  | 7      | 67  | 67  |
-  +--------+-----+-----+
-  | 8      | 58  | 42  |
-  +--------+-----+-----+
-  | 9      | 67  | 90  |
-  +--------+-----+-----+
-  | 10     | 56  | 57  |
-  +--------+-----+-----+
-  | Total  | 615 | 615 |
-  +--------+-----+-----+
-  
- 
++--------+-----+-----+
+| Semana | `A` | `B` |
++--------+-----+-----+
+| 1      | 61  | 67  |
++--------+-----+-----+
+| 2      | 56  | 48  |
++--------+-----+-----+
+| 3      | 63  | 52  |
++--------+-----+-----+
+| 4      | 57  | 82  |
++--------+-----+-----+
+| 5      | 67  | 77  |
++--------+-----+-----+
+| 6      | 63  | 33  |
++--------+-----+-----+
+| 7      | 67  | 67  |
++--------+-----+-----+
+| 8      | 58  | 42  |
++--------+-----+-----+
+| 9      | 67  | 90  |
++--------+-----+-----+
+| 10     | 56  | 57  |
++--------+-----+-----+
+| Total  | 615 | 615 |
++--------+-----+-----+
+
+
 (a)	Obtenha as médias das cotações das ações das companhias A e B nas semanas observadas e compare-as.
 (b)	Obtenha as medianas das cotações das ações das companhias A e B nas semanas observadas e compare-as, lembrando que os dados da tabela estão apresentados na ordem temporal.
 (c)	Obtenha as modas das cotações das ações das companhias A e B nas semanas observadas e compare-as.
@@ -120,9 +119,9 @@ Suponha que você tenha a oportunidade de investir um capital, comprando ações
 
 .. _sec-organizando2:
 
-===========================================
-Organizando as ideias: Medidas de dispersão
-===========================================
+*******************************************
+Organizando as ideias: medidas de dispersão
+*******************************************
 
 Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores variações de valores do que o outro. A ideia por trás de variação é a noção de dispersão. 
 
@@ -133,18 +132,15 @@ Há uma piada irônica que conta que o Estatístico é o profissional que diz qu
 Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
 
 
-.. _sub-amplitudes:
+**Amplitude amostral e distância entre quartis**
 
---------------------------------------------
-Amplitude amostral e distância entre quartis
---------------------------------------------
 
 Entre as medidas de dispersão mais simples, define-se a :index:`amplitude amostral` (R) como a diferença entre o maior valor e menor valor observados. Usando a notação apresentada anteriormente, dado um conjunto com `n` observações, temos
 
 
 .. math::
 
-  \textsf{Amplitude amostral}=\textsf{R}= \underbrace{x_{(n)}}_{\textsf{maior valor do conjunto}}-\underbrace{x_{(1)}}_{\textsf{menor valor do conjunto}}
+   \textsf{Amplitude amostral}=\textsf{R}= \underbrace{x_{(n)}}_{\textsf{maior valor do conjunto}}-\underbrace{x_{(1)}}_{\textsf{menor valor do conjunto}}
 
 Uma desvantagem desta medida é que ela considera apenas os dois extremos do conjunto. Ainda é possível que dois conjuntos, tendo mesmas média, moda e mediana, apresentem a mesma amplitude e, no entanto, eles tenham comportamentos diferentes. Considere o exemplo a seguir, supondo os seguintes conjuntos de notas de Matemática de duas turmas de reforço, cada uma com 10 alunos.
 
@@ -176,11 +172,7 @@ Deste modo, temos para a turma `A`, Q1=1 (mediana da primeira metade) e Q3=9 (me
 
 De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar o primeiro e terceiro quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
 
-.. _sub-desviosdamedia:
-
-----------------
-Desvios da Média
-----------------
+**Desvios da Média**
 
 Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
 
@@ -192,32 +184,32 @@ Na :ref:`ativ-estrategia-de-investimento` os desvios da média, para cada uma da
 
 .. table:: Legenda
 
-   +--------+-------+-------+
-   | Semana | Cia A | Cia B |
-   +--------+-------+-------+
-   | 1      | -0,5  | 5,5   |
-   +--------+-------+-------+
-   | 2      | -5,5  | -13,5 |
-   +--------+-------+-------+
-   | 3      | 1,5   | -9,5  |
-   +--------+-------+-------+
-   | 4      | -4,5  | 20,5  |
-   +--------+-------+-------+
-   | 5      | 5,5   | 15,5  |
-   +--------+-------+-------+
-   | 6      | 1,5   | -28,5 |
-   +--------+-------+-------+
-   | 7      | 5,5   | 5,5   |
-   +--------+-------+-------+
-   | 8      | -3,5  | -19,5 |
-   +--------+-------+-------+
-   | 9      | 5,5   | 28,5  |
-   +--------+-------+-------+
-   | 10     | -5,5  | -4,5  |
-   +--------+-------+-------+
-   | soma   | 0     | 0     |
-   +--------+-------+-------+
-   
++--------+-------+-------+
+| Semana | Cia A | Cia B |
++--------+-------+-------+
+| 1      | -0,5  | 5,5   |
++--------+-------+-------+
+| 2      | -5,5  | -13,5 |
++--------+-------+-------+
+| 3      | 1,5   | -9,5  |
++--------+-------+-------+
+| 4      | -4,5  | 20,5  |
++--------+-------+-------+
+| 5      | 5,5   | 15,5  |
++--------+-------+-------+
+| 6      | 1,5   | -28,5 |
++--------+-------+-------+
+| 7      | 5,5   | 5,5   |
++--------+-------+-------+
+| 8      | -3,5  | -19,5 |
++--------+-------+-------+
+| 9      | 5,5   | 28,5  |
++--------+-------+-------+
+| 10     | -5,5  | -4,5  |
++--------+-------+-------+
+| soma   | 0     | 0     |
++--------+-------+-------+
+
 Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
 
 Com os dados da :ref:`ativ-Estrategia-de-Investimento` você pôde comprovar esta propriedade. Veja na figura a seguir a ilustração dos desvios da média das duas companhias na qual a linha pontilhada representa a cotação média da companhia e os segmentos em vermelho indicam o tamanho do desvio da média.
@@ -245,11 +237,7 @@ Uma forma de  contornar esta situação, de modo a usar os desvios da média par
 
 Veja na seção :ref:`sec-Para-saber-mais` a demonstração da propriedade de que a soma dos desvios da média é sempre nula. 
 
-.. _sub-desviosmedioabsoluto:
-
----------------------
-Desvio Médio Absoluto
----------------------
+**Desvio Médio Absoluto**
 
 Considerando os desvios da média em valor absoluto (`|x_i-\bar{x}|`) observe que todos serão não-negativos tal que a soma dos desvios da média em valor absoluto (`\displaystyle{\sum^n_{i=1}}|x_i-\bar{x}|`) será nula apenas quando todos os valores do conjunto forem iguais. 
 
@@ -293,17 +281,9 @@ De maneira geral, o desvio médio absoluto do conjunto de dados `\{ x_1,x_2, \cd
 
    \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|=\frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\cdots+|x_n-\bar{x}|}{n}
 
-
-
-
-.. _sub-varianciaedesviopadrao:
-
--------------------------
-Variância e Desvio Padrão
--------------------------
+**Variância e Desvio Padrão**
 
 Uma outra forma de eliminar o sinal negativo dos desvios da média é elevar ao quadrado cada um deles, tornando-os não-negativos. A :index:`variância` é definida como uma média dos desvios da média elevados ao quadrado. 
-
 
 .. math::
 
@@ -461,7 +441,6 @@ Observe que o GeoGebra usa como separador decimal o ponto e não a vírgula. Log
 
 .. _ativ-inflacao-anual:
 
--------------------------
 Atividade: Inflação anual
 -------------------------
 
@@ -508,12 +487,7 @@ Foram observadas as inflações anuais de dois países A e B para os anos de 201
    3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
 
 
-
-.. _sub-cv:
-
------------------------
-Coeficiente de variação
------------------------
+**Coeficiente de variação**
 
 Nem sempre uma variância pequena (e consequentemente desvio-padrão pequeno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude (ordem de grandeza) dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
 
@@ -547,16 +521,15 @@ Observe que o coeficiente de variação só é definido para conjuntos cuja méd
 
 .. _sec-praticando2:
 
-====================
-Praticando o assunto
-====================
+**********
+Praticando
+**********
+
 
 .. _ativ-compara-categorias:
 
+Atividade: comparação de conjuntos de dados
 -------------------------------------------
-Atividade: Comparação de conjuntos de dados
--------------------------------------------
-
 
 .. admonition:: Para o professor
    
@@ -651,10 +624,8 @@ Sugere-se a construção dos histogramas para comparar os dois grupos. Você pod
 
 .. _ativ-aproxima-dpa-usando-R:
 
+Atividade: aproximação para o valor do desvio padrão amostral
 -------------------------------------------------------------
-Atividade: Aproximação para o valor do desvio padrão amostral
--------------------------------------------------------------
-
 
 .. admonition:: Para o professor
    
@@ -742,7 +713,7 @@ c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-
  
 .. _ativ-mediamaisoumenosdoisdesvios:
 
-Atividade: Frequência de valores no intervalo centrado na média mais ou menos 2 desvios padrões 
+Atividade: frequência de valores no intervalo centrado na média mais ou menos 2 desvios padrões 
 -----------------------------------------------------------------------------------------------
 
 
@@ -769,12 +740,8 @@ Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, ca
  
  .. _ativ-comparacao-dois-tipos-de-bonificacao:
 
-
+Atividade: comparação das duas possibilidades de bonificação na Nota de Artes
 -----------------------------------------------------------------------------
-Atividade: Comparação das duas possibilidades de bonificação na Nota de Artes
------------------------------------------------------------------------------
-
-
 
 .. admonition:: Para o professor
 
