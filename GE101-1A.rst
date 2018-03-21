@@ -14,10 +14,60 @@ A ferramenta matemática adequada para efetuar ampliações e reduções é a *h
       
 Por exemplo, na figura abaixo estão ilustradas a aplicação de homotetias de centro `O` nos pontos do triângulo `OAB` e do quadrado `CDEF` com razões 2 e 1/3, respectivamente.
 
-.. figure:: _resources/homotetia-poligonos.png
-   :width: 350pt
-   
-   Homotetias de razão 2 e `\frac{1}{3}`
+.. tikz:: Homotetias de razão 2 e `\frac{1}{3}`
+
+   \node [ponto] (O) at (0,0) {};
+   \node [below] at (O) {$O$};
+   \node [ponto] (C) at (-2,1) {};
+   \node [below] at (C) {$C$};
+   \node [ponto] (D) at (-1,1.5) {};
+   \node [right] at (D) {$D$};
+   \node [ponto] (E) at (-1.5,2.5) {};
+   \node [right] at (E) {$E$};
+   \node [ponto] (F) at (-2.5,2) {};
+   \node [ left] at (F) {$F$};
+   \filldraw [color=primario, fill=primario, fill opacity=0.3] (C.center) -- (D.center) -- (E.center) -- (F.center) -- cycle;
+   \node [ponto] (C1) at ($(C)!2/3!(O)$) {};
+   \node [below] at (C1) {$C''$};
+   \node [ponto] (D1) at ($(D)!2/3!(O)$) {};
+   \node [right] at (D1) {$D''$};
+   \node [ponto] (E1) at ($(E)!2/3!(O)$) {};
+   \node [above right] at (E1) {$E''$};
+   \node [ponto] (F1) at ($(F)!2/3!(O)$) {};
+   \node [left] at (F1) {$F''$};
+   \filldraw [color=secundario, fill=secundario, fill opacity=0.3] (C1.center) -- (D1.center) -- (E1.center) -- (F1.center) -- cycle;
+   \node [ponto] (C2) at ($(O)!2!(C)$) {};
+   \node [below] at (C2) {$C'$};
+   \node [ponto] (D2) at ($(O)!2!(D)$) {};
+   \node [right] at (D2) {$D'$};
+   \node [ponto] (E2) at ($(O)!2!(E)$) {};
+   \node [above right] at (E2) {$E'$};
+   \node [ponto] (F2) at ($(O)!2!(F)$) {};
+   \node [left] at (F2) {$F'$};
+   \filldraw [color=atento, fill=atento, fill opacity=0.3] (C2.center) -- (D2.center) -- (E2.center) -- (F2.center) -- cycle;
+   \draw [help lines] (O) -- ($(O)!1.5!(C2)$);
+   \draw [help lines] (O) -- ($(O)!2!(D2)$);
+   \draw [help lines] (O) -- ($(O)!1.2!(E2)$);
+   \draw [help lines] (O) -- ($(O)!1.2!(F2)$);
+   \node [ponto] (A) at (2,0.5) {};
+   \node [below] at (A) {$A$};
+   \node [ponto] (B) at (2,2) {};
+   \node [above] at (B) {$B$};
+   \filldraw [color=primario, very thick] (A) -- (B);
+   \node [ponto] (A1) at ($(A)!2/3!(O)$) {};
+   \node [below] at (A1) {$A''$};
+   \node [ponto] (B1) at ($(B)!2/3!(O)$) {};
+   \node [above] at (B1) {$B''$};
+   \filldraw [color=secundario, very thick] (A1) -- (B1);
+   \node [ponto] (A2) at ($(O)!2!(A)$) {};
+   \node [below] at (A2) {$A'$};
+   \node [ponto] (B2) at ($(O)!2!(B)$) {};
+   \node [right] at (B2) {$B'$};
+   \filldraw [color=secundario, very thick] (A2) -- (B2);
+   \draw [help lines] (O) -- ($(O)!1.5!(A2)$);
+   \draw [help lines] (O) -- ($(O)!1.5!(B2)$);
+
+
 
 Conforme visto na seção :ref:`cap-vetores`, o vetor `r\vec{v}` tem comprimento `r|\vec{v}|`. Deste modo, se `r>1`, então a homotetia é uma ampliação e se `0<r<1`, então a homotetia é uma redução. Que tipo de correspondência é a homotetia se `r=1`? 
 
