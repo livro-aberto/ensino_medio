@@ -282,14 +282,13 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 .. tikz::
 
    \begin{scope}[scale=.3]
-   \definecolor{qqqqff}{rgb}{0.,0.,1.}
    \tikzset{>=latex}
-   \draw[->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+   \draw[->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
    \draw[line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-   \draw[fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-   \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-   \draw[fill=qqqqff] (0.84,2.) circle (1.5pt);
-   \draw[color=qqqqff] (0.8,2.3) node {$B$};
+   \draw[fill=primario] (-1.66,-0.1) circle (1.5pt);
+   \node[left] at (-1.7,0.24) {$A$};
+   \draw[fill=primario] (0.84,2.) circle (1.5pt);
+   \node[above] at (0.8,2.3) {$B$};
    \end{scope}
 
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: construa a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
@@ -304,32 +303,30 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
       .. tikz::
 
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \tikzset{>=latex}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
-       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-       \draw[color=qqqqff] (0.8,2.3) node {$B$};
-       \draw [fill=qqqqff] (3.34,4.1) circle (1.5pt);
-       \draw[color=qqqqff] (3.54,4.3) node {$C$};
-       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (3.34,4.1);
+         \tikzset{>=latex}
+         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
+         \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
+         \draw (-1.7,0.24) node {$A$};
+         \draw [fill=primario] (0.84,2.) circle (1.5pt);
+         \draw (0.8,2.3) node {$B$};
+         \draw [fill=primario] (3.34,4.1) circle (1.5pt);
+         \draw (3.54,4.3) node {$C$};
+         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (3.34,4.1);
 
    #. É o ponto que `C = A`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 0~\text{cm}`.
 
       .. tikz::
 
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \tikzset{>=latex}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
-       \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-       \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-       \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-       \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-       \draw[color=qqqqff] (0.8,2.3) node {$B$};
-       \draw[color=qqqqff] (-1.7,-0.4) node {$C$};
-       \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-1.66,-0.1);
+         \tikzset{>=latex}
+         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
+         \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
+         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
+         \draw (-1.7,0.24) node {$A$};
+         \draw [fill=primario] (0.84,2.) circle (1.5pt);
+         \draw (0.8,2.3) node {$B$};
+         \draw (-1.7,-0.4) node {$C$};
+         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (-1.66,-0.1);
 
    #. É o vetor deslocamento onde a extremidade final coincide com a extremidade inicial.
 
@@ -337,34 +334,32 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
       .. tikz::
 
-         \definecolor{qqqqff}{rgb}{0.,0.,1.}
          \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
          \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-         \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-         \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-         \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-         \draw[color=qqqqff] (0.8,2.3) node {$B$};
-         \draw [fill=qqqqff] (2.0876,3.0492) circle (1.5pt);
-         \draw[color=qqqqff] (2.1,3.37) node {$C$};
-         \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (2.0876,3.0492);
+         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
+         \draw (-1.7,0.24) node {$A$};
+         \draw [fill=primario] (0.84,2.) circle (1.5pt);
+         \draw (0.8,2.3) node {$B$};
+         \draw [fill=primario] (2.0876,3.0492) circle (1.5pt);
+         \draw (2.1,3.37) node {$C$};
+         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (2.0876,3.0492);
 
       Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.
 
       .. tikz::
 
-         \definecolor{qqqqff}{rgb}{0.,0.,1.}
          \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (0.84,2.);
+         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
          \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-         \draw [fill=qqqqff] (-1.66,-0.1) circle (1.5pt);
-         \draw[color=qqqqff] (-1.7,0.24) node {$A$};
-         \draw [fill=qqqqff] (0.84,2.) circle (1.5pt);
-         \draw[color=qqqqff] (0.8,2.3) node {$B$};
-         \draw [fill=qqqqff] (-0.4048,0.9514) circle (1.5pt);
-         \draw[color=qqqqff] (-0.3957,1.2975) node {$C$};
-         \draw [->,line width=0.8pt,color=qqqqff] (0.84,2) -- (-0.4048,0.9514);
-         \draw [->,line width=0.8pt,color=qqqqff] (-1.66,-0.1) -- (-0.4048,0.9514);
+         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
+         \draw (-1.7,0.24) node {$A$};
+         \draw [fill=primario] (0.84,2.) circle (1.5pt);
+         \draw (0.8,2.3) node {$B$};
+         \draw [fill=primario] (-0.4048,0.9514) circle (1.5pt);
+         \draw (-0.3957,1.2975) node {$C$};
+         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (-0.4048,0.9514);
+         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (-0.4048,0.9514);
 
    #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
 
@@ -378,7 +373,7 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
       |a| = \left\{\begin{array}{ll}
                         \hphantom{+}a, & \text{se } a \geq 0, \\
                         -a, & \text{se } a < 0.
-                     \end{array}\right.
+            \end{array}\right.
 
 **Vetor deslocamento nulo e vetor deslocamento simétrico**
 
