@@ -8,18 +8,38 @@ Organizando as ideias: gráficos
 
 Para funções reais de variável real, isto é, funções cujo domínio é um subconjunto de `\mathbb{R}` e o contradomínio é `\mathbb{R}`, sua representação gráfica no plano cartesiano será o conjunto dos pares ordenados `(x,f(x))` em que `x` pertence ao domínio da função.
 
-.. figure:: _resources/graf_ilustra.png
-   :width: 300pt
-   :align: center
+.. tikz::
+   \draw[line width=1.pt,color=primario,samples=100,domain=-2.05:1.8] plot(\x,{.5*sin((3.5*(\x)-3.2)*180/pi)-0.6*cos((4.5*(\x)+2.0)*180/pi)});
+   \draw[->](-.8,-1)--(-.8,1.5) ;
+   \draw[->](-2.3,0)--(2.5,0);
+   \draw[fill](.965,-.5)circle(1pt);
+   \draw[dashed](-.8,-.5)--(.965,-.5);
+   \draw[dashed](.965,-.5)--(.965,-0);
+   \draw(.965,-0)node[scale=.5, above]{$x$};
+   \draw[dashed](-.8,-.5)node[left, scale=.5]{$f(x)$};
+   \draw(.97,-.55) node[scale=.5,right] {($x, f(x)$)};
 
 
 .. admonition:: Para refletir
 
    Os conjuntos domínio e imagem ficam evidenciados na representação gráfica de uma  função a partir dos eixos coordenados. Observe a representação gráfica a seguir, em que estão destacados conjuntos sobre os eixos. Qual deles você identifica como domínio? A que conjunto corresponde o outro?
-
-   .. figure:: _resources/graf_dominio_imagem.png
-      :width: 400pt
-      :align: center
+   
+   .. tikz::
+      
+      \draw[line width=1.pt,color=primario,samples=100,domain=-1.5:1.8] plot(\x,{.5*sin((3.5*(\x)-3.2)*180/pi)-0.6*cos((4.5*(\x)+2.0)*180/pi)});
+      \draw[->](-.8,-1)--(-.8,2) ;
+      \draw[->](-2,0)--(2.5,0);
+      \draw[dashed](-2,.95)--(2.5,.95);
+      \draw[dashed](-2,-.67)--(2.5,-.67);
+      \draw[color=red, thick](-.8, -.67)--(-.8, .95);
+      \begin{scope}[xshift=5cm]
+      \draw[line width=1.pt,color=primario,samples=100,domain=-1.5:1.8] plot(\x,{.5*sin((3.5*(\x)-3.2)*180/pi)-0.6*cos((4.5*(\x)+2.0)*180/pi)});
+      \draw[->](-.8,-1)--(-.8,2) ;
+      \draw[->](-2,0)--(2.5,0);
+      \draw[dashed](-1.5,-1)--(-1.5,2);
+      \draw[dashed](1.8,-1)--(1.8,2);
+      \draw[color=blue, thick](-1.5,0)--(1.8,0);
+      \end{scope}      
 
 
 .. _sec-praticando-grafico:
@@ -51,18 +71,52 @@ Arthur, Caetano, Gael, Levi e Pedro utilizam a mesma avenida para ir à escola a
 
 .. _fig-mapa-escola:
 
-.. figure:: _resources/jornada_escola.png
-   :width: 400pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw(-2,2)grid(1,2.1);
+   \foreach \x in {0,1,2,3}
+   \node at (\x - 2,2.1)[above]{\x};
+   \coordinate (A) at (-2,1);
+   \coordinate (B) at (0,1);
+   \coordinate (C) at (1,1);
+   \coordinate (D) at (1.5,.25);
+   \coordinate (E) at (3,1.5);
+   \coordinate (F) at (4.5,2.75);
+   \coordinate (G) at (4.5,-.5);
+   \coordinate (H) at (5.25,-1);
+   \draw(A)--(B)--(C)--(D)--(E)--(F)--(G)--(H);
+   \node[ponto] at (A){};\node[ponto] at (B){};\node[ponto] at (D){};\node[ponto, blue] at (E){};\node[ponto] at (F){};\node[ponto] at (H){};
+   \node[below] at (A){\tiny Arthur};\node[below] at (B){\tiny Pedro };\node[below] at (D){\tiny Gael};\node[below right] at (E){\tiny Escola};\node[above] at (F){\tiny Caetano};\node[above right] at (H){\tiny Levi};
+   
+   
 
 Os pontos marcados no plano cartesiano abaixo fornecem informações sobre a jornada de cada criança na última segunda-feira.
 
 
 .. _fig-grafico-jornada:
 
-.. figure:: _resources/jornada_escola_grafico.png
-   :width: 300pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \begin{scope}[xscale=1.2,yscale=.5]
+   \draw[help lines,xstep=.2,ystep=.2, lightgray] (0,0) grid (2.5,7);
+   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (2.5,7);
+   \draw[thick,->](0,0)--(2.5,0);
+   \draw[thick,->](0,0)--(0,7);
+   \draw(1.5,-.8)node{\tiny tempo até a escola(min)};
+   \draw(-.4,4)node[rotate=90]{\tiny distância até a escola(min)};
+   \node[ponto] at(.9,2){};
+   \node[ponto] at(.9,6){};
+   \node[ponto] at(1.5,4){};
+   \node[ponto] at(2,2){};
+   \node[ponto] at(2,6){};
+   \foreach \y in{0,1, 2, 3, 4, 5, 6}
+   \draw(-.1,\y)node{\tiny \y};
+   \draw(1,0)node[below]{\tiny 20};
+   \draw(2,0)node[below]{\tiny 40};
+   \end{scope}
+   
 
 #. Associe cada ponto do gráfico com o nome da criança que ele representa.
 #. Como Pedro e Caetano foram para a escola na última segunda-feira? Por que? 
@@ -72,11 +126,35 @@ Os pontos marcados no plano cartesiano abaixo fornecem informações sobre a jor
 
 .. admonition:: Resposta 
 
-   #.
+   #. 
 
-	     .. figure:: _resources/jornada_escola_grafico_sol.png
-	        :width: 300pt
-	        :align: center
+
+      .. tikz::
+
+         \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+         \begin{scope}[xscale=1.2,yscale=.5]
+         \draw[help lines,xstep=.2,ystep=.2, lightgray] (0,0) grid (2.5,7);
+         \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (2.5,7);
+         \draw[thick,->](0,0)--(2.5,0);
+         \draw[thick,->](0,0)--(0,7);
+         \draw(1.5,-.8)node{\tiny tempo até a escola(min)};
+         \draw(-.4,4)node[rotate=90]{\tiny distância até a escola(min)};
+         \node[ponto] at(.9,2){};
+         \node[ponto] at(.9,6){};
+         \node[ponto] at(1.5,4){};
+         \node[ponto] at(2,2){};
+         \node[ponto] at(2,6){};
+         \node[  left] at(.9,2){\tiny Caetano};
+         \node[left] at(.9,6){\tiny Levi};
+         \node[above] at(1.5,4){\tiny Pedro};
+         \node[right] at(2,2){\tiny Gael};
+         \node[right] at(2,6){\tiny Arthur};
+         \foreach \y in{0,1, 2, 3, 4, 5, 6}
+         \draw(-.1,\y)node{\tiny \y};
+         \draw(1,0)node[below]{\tiny 20};
+         \draw(2,0)node[below]{\tiny 40};
+         \end{scope}
+         
 
    #. Pedro e Caetano foram para a escola de bicicleta ou correndo (ou de alguma forma que seja mais rápida do que ir a pé e mais lenta que ir de carro). Caetano e Gael moram ambos a `2` km da escola. Como Gael, que foi caminhando, levou `40` minutos, Caetano que gastou aproximadamente `18` minutos não pode ter ido caminhando. Caetano também não pode ter ido de carro, pois Levi que mora a `6` km da escola demorou o mesmo tempo que ele e foi de carro. 
 
@@ -99,9 +177,67 @@ Atividade: qual é o gráfico?*
 
 Dentre os gráficos apresentados a seguir identifique aquele que melhor descreve os dados apresentados em cada uma das tabelas seguintes.
 
-.. figure:: _resources/grafico_tabelas.png
-   :width: 350pt
-   :align: center
+.. tikz::
+
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(a)};
+   \draw[thick](0,0)--(1.8,1.8);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(b)};
+   \draw[thick](0,.7)--(1.3,1.8);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(c)};
+   \draw[domain=0:1.9,thick]plot(\x,.5*\x^2);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(d)};
+   \draw[thick](0,0).. controls (.7,1.5)..(1.7,1.8);
+   \end{scope}
+   \end{scope}
+   \end{scope}
+   \begin{scope}[yshift=-3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(e)};
+   \draw[thick](0,1.7)--(1.7,0);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(f)};
+   \draw[thick](0,1.7)--(1.2,0.25)--(1.9,.25);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(g)};
+   \draw[domain=0:1.9,thick]plot(\x,{1.7*exp(-\x)});
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(h)};
+   \draw[domain=0:1.9, thick]plot(\x,{(1.8-.5*\x^2} );
+   \end{scope}
+   \end{scope}
+   \end{scope}
+   \end{scope}
+   \begin{scope}[yshift=-6cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(i)};
+   \draw[thick](0,0)..controls(.7,.1) and (.7,1.7) ..(1.8,1.8);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(j)};
+   \draw[thick](0,0)..controls(.7,1.5) and (.8,.0) ..(1.8,1.8);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(k)};
+   \draw[thick](0,0)..controls(1,0) and (.7,1.8) ..(1.6,1.8)..controls(1.9,1.8)..(2,1.8);
+   \begin{scope}[xshift=3cm]
+   \draw[thick](0,2)--(0,0)--(2,0);
+   \draw(1,2)node[scale=.8]{(l)};
+   \draw[thick](0,2)..controls(.5,1) and (.7,1.8) ..(1.3,1)..controls(1.6,.5)..(1.7,0);
+   \end{scope}
+   \end{scope}
+   \end{scope}
+   \end{scope}
+
 
 `a)` Café esfriando
 
@@ -175,9 +311,9 @@ Atividade: imaginando gráficos
 Associe cada uma das situações apresentadas a seguir a um dos gráficos dados abaixo. Explique sua escolha e escreva, em cada um dos eixos, o que eles representam. 
 
 
-.. figure:: _resources/graficos.png
-   :width: 480pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(a)};\draw[thick](0,0)--(1.8,1.8);  &  \draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(b)};\draw[thick](0.1,1.9) arc(180:270:1.8);&\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(c)};\draw[domain= 0:1.8,thick] plot(\x,1.8-\x); &\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(d)};\draw[domain= 0:1.8,thick] plot(\x,.5*\x^2+.1*\x);&\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(e)};\draw[domain= 0:2,thick] plot(\x,{max(0,.4*\x^2-.1)});&\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(f)};\draw[thick](1.8,0) arc(0:90:1.8);\\  \draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(g)};\draw[domain=0:1.8,thick, samples=100]plot(\x, {2-exp(-\x)});& \draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(h)};\draw[domain=0.35:1.65,thick]plot(\x,{1.7-4*(1-\x)^2});& \draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(i)};\draw[domain=0:1.8, samples=100,thick]plot(\x,{abs(2*sin(200*\x))});&\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(i)};\draw[domain=0:1.8, samples=100,thick]plot(\x,{2-(abs(2*sin(200*\x))});&\draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(j)};\draw[domain=0:1.8, samples=100,thick]plot(\x,{1.5-1.5*exp(-\x^3)});&       \draw[thick](0,2)--(0,0)--(2,0);\draw(1,2)node{(k)};\draw[thick](0,1)--(1.8,1.8);\\};
 
 
 `(I)` Após um concerto houve um grande silêncio. Então uma pessoa na platéia começou a aplaudir. Gradualmente, as pessoas à sua volta também começaram a apludir de forma que rapidamente todos estavam aplaudindo.
@@ -204,9 +340,103 @@ Associe cada uma das situações apresentadas a seguir a um dos gráficos dados 
 
    Observe as figuras abaixo
 
-   .. figure:: _resources/grafico_construir_grafico.png
-      :width: 480pt
-      :align: center
+   .. tikz::
+      
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[domain=.2:2.2]plot (\x, \x+.2);
+      \foreach \x in{0.5,1,1.5}
+      \draw[dashed](\x,\x+.2)[->]--(\x+.5,\x+.2)--(\x+.5,\x+.7);
+      \foreach \x in{0.5,1,1.5}
+      \draw(\x+.2,\x+.15)--(\x+.2,\x+.25);
+      \foreach \x in{0.5,1,1.5}
+      \draw(\x+.25,\x+.15)--(\x+.25,\x+.25);
+      \begin{scope}[xshift=3cm]
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[domain=.2:2.3]plot(\x,{.3*(exp(\x))}) ;
+      \draw [->,dashed] (1.,0.4946163812100384) -- (1.,0.8154845485377135);
+      \draw [->,dashed] (1.5,0.8154845485377135) -- (1.5,1.3445067211014192);
+      \draw [->,dashed] (2.,1.3445067211014192) -- (2.,2.216716829679195);
+      \draw [dashed] (0.5,0.4946163812100384)-- (1.,0.4946163812100384);
+      \draw [dashed] (0.7274102214004744,0.5488318498488993) -- (0.7274102214004744,0.44040091257117747);
+      \draw [dashed] (0.7725897785995253,0.5488318498488993) -- (0.7725897785995253,0.44040091257117747);
+      \draw [dashed] (1.,0.8154845485377135)-- (1.5,0.8154845485377135);
+      \draw [dashed] (1.2274102214004736,0.8697000171765743) -- (1.2274102214004736,0.7612690798988525);
+      \draw [dashed] (1.2725897785995244,0.8697000171765743) -- (1.2725897785995244,0.7612690798988525);
+      \draw [dashed] (1.5,1.3445067211014192)-- (2.,1.3445067211014192);
+      \draw [dashed] (1.727410221400475,1.39872218974028) -- (1.727410221400475,1.290291252462558);
+      \draw [dashed] (1.7725897785995257,1.39872218974028) -- (1.7725897785995257,1.290291252462558);
+      \begin{scope}[xshift=3cm]
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[domain=.2:2.3]plot(\x,{2+(ln(\x))}) ;
+      \draw [->,dashed] (1.,1.3068528194400546) -- (1.,2.);
+      \draw [->,dashed] (1.5,2.) -- (1.5,2.4054651081081646);
+      \draw [->,dashed] (2.,2.4054651081081646) -- (2.,2.6931471805599454);
+      \draw [dashed] (0.5,1.3068528194400546)-- (1.,1.3068528194400546);
+      \draw [dashed] (0.7274102214004744,1.3610682880789153) -- (0.7274102214004744,1.2526373508011936);
+      \draw [dashed] (0.7725897785995253,1.3610682880789153) -- (0.7725897785995253,1.2526373508011936);
+      \draw [dashed] (1.,2.)-- (1.5,2.);
+      \draw [dashed] (1.2274102214004736,2.054215468638861) -- (1.2274102214004736,1.9457845313611395);
+      \draw [dashed] (1.2725897785995244,2.054215468638861) -- (1.2725897785995244,1.9457845313611395);
+      \draw [dashed] (1.5,2.4054651081081646)-- (2.,2.4054651081081646);
+      \draw [dashed] (1.727410221400475,2.4596805767470253) -- (1.727410221400475,2.3512496394693034);
+      \draw [dashed] (1.7725897785995257,2.4596805767470253) -- (1.7725897785995257,2.3512496394693034);
+      \end{scope}
+      \end{scope}
+      \begin{scope}[yshift=-3.5cm]
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[smooth,samples=100,domain=.2:2.2] plot(\x,{2.5-(\x)});
+      \draw [->,dashed] (1.,2.) -- (1.,1.5);
+      \draw [->,dashed] (1.5,1.5) -- (1.5,1.);
+      \draw [->,dashed] (2.,1.) -- (2.,0.5);
+      \draw [,dashed] (0.5,2.)-- (1.,2.);
+      \draw [dashed] (0.7274102214004744,2.054215468638861) -- (0.7274102214004744,1.9457845313611395);
+      \draw [dashed] (0.7725897785995253,2.054215468638861) -- (0.7725897785995253,1.9457845313611395);
+      \draw [dashed] (1.,1.5)-- (1.5,1.5);
+      \draw [dashed] (1.2274102214004736,1.5542154686388605) -- (1.2274102214004736,1.4457845313611388);
+      \draw [dashed] (1.2725897785995244,1.5542154686388605) -- (1.2725897785995244,1.4457845313611388);
+      \draw [dashed] (1.5,1.)-- (2.,1.);
+      \draw [dashed] (1.727410221400475,1.054215468638861) -- (1.727410221400475,0.9457845313611393);
+      \draw [dashed] (1.7725897785995257,1.054215468638861) -- (1.7725897785995257,0.9457845313611393);
+      \begin{scope}[xshift=3cm]
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[domain=.2:2.05]plot(\x,{2.5-.3*(exp(\x))}) ;
+      \draw [dashed] (0.7274102214004744,2.054215468638861) -- (0.7274102214004744,1.9457845313611395);
+      \draw [dashed] (0.7725897785995253,2.054215468638861) -- (0.7725897785995253,1.9457845313611395);
+      \draw [->,dashed] (1.,2.0053836187899616) -- (1.,1.6845154514622864);
+      \draw [->,dashed] (1.5,1.6845154514622864) -- (1.5,1.1554932788985808);
+      \draw [->,dashed] (2.,1.1554932788985808) -- (2.,0.2832831703208054);
+      \draw [dashed] (1.,1.6845154514622864)-- (1.5,1.6845154514622864);
+      \draw [dashed] (1.2274102214004736,1.7387309201011474) -- (1.2274102214004736,1.6302999828234255);
+      \draw [dashed] (1.2725897785995244,1.7387309201011474) -- (1.2725897785995244,1.6302999828234255);
+      \draw [dashed] (1.5,1.1554932788985808)-- (2.,1.1554932788985808);
+      \draw [dashed] (1.727410221400475,1.2097087475374417) -- (1.727410221400475,1.10127781025972);
+      \draw [dashed] (1.7725897785995257,1.2097087475374417) -- (1.7725897785995257,1.10127781025972);
+      \draw [dashed] (0.5,2.0053836187899616)-- (1.,2.0053836187899616);
+      \begin{scope}[xshift=3cm]
+      \draw[->](0,0)--(2.5,0);
+      \draw[->](0,0)--(0,2.5);
+      \draw[domain=.37:2.1]plot(\x,{1.0/(\x)}) ;
+      \draw [->,dashed] (1.,2.) -- (1.,1.);
+      \draw [->,dashed] (1.5,1.) -- (1.5,0.6666666666666666);
+      \draw [->,dashed] (2.,0.6666666666666666) -- (2.,0.5);
+      \draw [dashed] (0.7274102214004744,2.054215468638861) -- (0.7274102214004744,1.9457845313611395);
+      \draw [dashed] (0.7725897785995253,2.054215468638861) -- (0.7725897785995253,1.9457845313611395);
+      \draw [dashed] (1.,1.)-- (1.5,1.);
+      \draw [dashed] (1.2274102214004736,1.054215468638861) -- (1.2274102214004736,0.9457845313611393);
+      \draw [dashed] (1.2725897785995244,1.054215468638861) -- (1.2725897785995244,0.9457845313611393);
+      \draw [dashed] (1.5,0.6666666666666666)-- (2.,0.6666666666666666);
+      \draw [dashed] (1.727410221400475,0.7208821353055274) -- (1.727410221400475,0.6124511980278056);
+      \draw [dashed] (1.7725897785995257,0.7208821353055274) -- (1.7725897785995257,0.6124511980278056);
+      \draw [dashed] (0.5,2.)-- (1.,2.);
+      \end{scope}
+      \end{scope}
+      \end{scope}      
+
 
    O que os gráficos da primeira linha têm em comum? E as da segunda linha?
 
@@ -223,16 +453,24 @@ Associe cada uma das situações apresentadas a seguir a um dos gráficos dados 
    Função crescente e função decrescente
       Uma função `f: \mathbb{R} \to \mathbb{R}` é dita *crescente* quando os valores das imagens, `f(x)`, aumentam à medida em que os valores de `x` aumentam, ou seja, para `x_2>x_1` tem-se `f(x_2)>f(x_1)`.
 
-         .. figure:: _resources/grafico_crescente.png
-            :width: 200pt
-            :align: center
+         .. tikz::
+
+            \draw[thick,->](-2,0)--(5,0);
+            \draw[thick,->](0,-1)--(0,4);
+            \draw[thick,domain=-2:2.9, primario]plot(\x,{.5+.2*exp(\x)});
+            \draw[thick,dashed, ->](1,{.5+.2*exp(1)})--(2.5,{.5+.2*exp(1)})--(2.5,{.5+.2*exp(2.5)}) ;
+
 	
       E é dita *decrescente* quando os valores das imagens, `f(x)`, diminuem à medida em que os valores de `x` aumentam, ou seja, para `x_2>x_1` tem-se `f(x_2)<f(x_1)`.
-   
-         .. figure:: _resources/grafico_decrescente.png
-            :width: 200pt
-            :align: center     
-        
+
+
+         .. tikz::
+            
+            \draw[thick,->](-2,0)--(5,0);
+            \draw[thick,->](0,-1)--(0,4);
+            \draw[thick,domain=-2:3.6, primario]plot(\x,{3-.1*exp(\x)});
+            \draw[thick,dashed, ->](1,{3-.1*exp(1)})--(3,{3-.1*exp(1)})--(3,{3-.1*exp(3)}) ;
+            
 
 
 .. _ativ-praticando-notacao:
@@ -253,9 +491,19 @@ Atividade: leia no gráfico!
 
 Seja `f` a função real cuja representação gráfica é apresentada a seguir.
 
-.. figure:: _resources/praticando_notacao_grafico.png
-   :width: 300pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[lightgray](-.6,-1.5)grid[xstep=.25,ystep=.25,line width =1pt](5.5,3);
+   \draw(-.6,-1.5)grid[xstep=1,ystep=1,line width =1pt](5.5,3);
+   \draw[->,thick](-.5,0)--(5.5,0) node[right]{$x$};
+   \draw[->,thick](0,-1.5)--(0,3)node[above]{$y$};
+   \draw[thick, primario](0,-.5)--(.5,1)--(1,1.5)--(1.5,1.5)--(2,.5)--(2.5,0)--(3,-1)--(4,2)--(4.5,2.5)--(5,2.75);
+   \foreach \x in{2, 4, 6, ..., 10}
+   \draw(.5*\x,-.2)node{\x};
+   \foreach \y in{-2, 2,4,6}
+   \draw(-.2,.5*\y)node{\y};
+   \node[below left]at (0,0){0};
 
 A partir da representação gráfica calcule os seguintes valores:
 
@@ -310,10 +558,12 @@ A partir da representação gráfica calcule os seguintes valores:
 
    Observe o gráfico da função real dada pela expressão `f(x)=3x^2-15x+18`. Veja que ele possui interseções com o eixo das abscissas e com o eixo das ordenadas. Qual procedimento você utilizaria para determinar esses pontos de interseção?
 
+   .. tikz::
+   
+      \draw[->, thick](-.5,0)--(4,0);
+      \draw[->,thick](0,-.5)--(0,6);
+      \draw[domain=-.2:3.7, samples=100, primario]plot(\x,{1.5*(\x-1.5)*(\x-2)});
 
-   .. figure:: _resources/zeros_parabola.png
-      :width: 200pt
-      :align: center
 
    Os valores de `x` para os quais há interseção com o eixo das abscissas são chamados de *zeros* da função.
 
