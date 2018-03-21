@@ -71,7 +71,7 @@ Explorando: Conceito de Função
 
 O que o nosso batimento cardíaco, um terremoto ou a variação das ações de uma empresa na bolsa de valores possuem em comum? Os batimentos cardíacos podem ser monitorados a partir de um sinal bioelétrico cujo gráfico é representado em um eletrocardiograma, as ondas sísmicas produzidas por um terremoto podem ser observadas a partir do registro de um sismógrafo e as variações dos valores das ações de uma empresa percebidas ao longo do tempo podem ser facilmente visualizadas em um gráfico.
 
-.. figure:: _resources/sismografo.png
+.. figure:: _resources/sismografo_1.png
 
 Como nos fenômenos descritos acima, muitas situações e decisões do dia a dia dependem do reconhecimento de uma relação entre duas grandezas e da análise de como a variação de uma delas influencia na variação da outra (Por exemplo, a distância percorrida e o tempo transcorrido, a área de um polígono e o comprimento de seus lados, a absorção de um medicamento pelo organismo humano e o tempo desde a sua ingestão, valor da conta de energia elétrica e consumo, quantidade de vereadores e a população etc). O tema funções trata da relação entre grandezas, identificando um tipo especial de relação. Funções são uma ferramenta matemática importante para descrever, analisar e tomar decisões em diversas situações.
 
@@ -110,9 +110,43 @@ As chuvas são a principal fonte de água para os reservatórios que abastecem a
 
 O gráfico a seguir apresenta a variação pluviométrica (em milímetros) da chuva real e da chuva esperada no Sistema Cantareira, que abastece a região metropolitana de São Paulo, no período de dezembro de 2013 (2013-12) a novembro de 2016 (2016-11).
 
-.. figure:: _resources/cantareira_chuva_1.png
-   :width: 500pt
-   :align: center
+
+.. tikz::
+   
+   \draw[step=1,black,thin,  xscale=.5, yscale=1, help lines, line width =-.1] (-.1,-.1) grid (35, 4);
+   \draw[color=primario, very thick]  (0,.6)--(.5, .9)--(1, .8)--(1.5, 2) --(2, .4)--(2.5,.2)--(3, .5)--(3.5, .2)--(4, .7)--(4.5,.5)--(5,1.3)--(5.5, 1.6)--(6, 1.5)--(6.5, 3.2)--(7,2)--(7.5, .5)--(8, .7)--(8.5, .3)--(9, .4)--(9.5, .3)--(10,1.5 )--(10.5,1.2 )--(11., 2)--(11.5, 2.6)--(12.5,2.4)--(13,1.7)--(13.5, 0)--(14, 1)--(14.5,1.9)--(15, 0)--(15.5, .6)--(16, .6)--(16.5,1.7)--(17, 1.7)--(17.5,.8);
+   \draw[color=secundario, very thick] (0,2.3)--(.5, 2.5)--(1,2)--(1.5, 1.8)--(2, .9)--(2.5, .6)--(3, .5)--(3.5, .4)--(4, 1)--(4.5, 1.3)--(5, 1.6)--(5.5, 2.2)--(6,2.7 )--(6.5,1.9 )--(7, 1.7)--(7.5, .9)--(8, .7)--(8.5,.6 )--(9,.46)--(9.5,.3)--(10, .9)--(10.5,1.4 )--(11,1.6 )--(11.5, 2.2)--(12, 2.6)--(12.5, 2)--(13, 1.8)--(13.5, .9)--(14, .8)--(14.5, .6)--(15, .5)--(15.5,.5)--(16, .9)--(16.5,1.2)--(17, 1.6)--(17.5,2.2);
+   \draw[color=black, very thick](-.1,0)--(17.5,0);
+   \begin{scriptsize}
+   \draw (0, -.15)node[left, rotate=30] {2013-12};
+   \draw (1, -.15)node[left, rotate=30] {2014-02};
+   \draw (2, -.15)node[left, rotate=30] {2014-05};
+   \draw (3, -.15)node[left, rotate=30] {2014-07};
+   \draw (4, -.15)node[left, rotate=30] {2014-09};
+   \draw (5, -.15)node[left, rotate=30] {2014-11};
+   \draw (6, -.15)node[left, rotate=30] {2015-01};
+   \draw (7, -.15)node[left, rotate=30] {2015-03};
+   \draw (8, -.15)node[left, rotate=30] {2015-05};
+   \draw (9, -.15)node[left, rotate=30] {2015-07};
+   \draw (10, -.15)node[left, rotate=30] {2015-09};
+   \draw (11, -.15)node[left, rotate=30] {2015-11};
+   \draw (12, -.15)node[left, rotate=30] {2016-01};
+   \draw (13, -.15)node[left, rotate=30] {2016-03};
+   \draw (14, -.15)node[left, rotate=30] {2016-05};
+   \draw (15, -.15)node[left, rotate=30] {2016-07};
+   \draw (16, -.15)node[left, rotate=30] {2016-09};
+   \draw (17, -.15)node[left, rotate=30] {2016-11};
+   \draw(0,.15) node[left]{0};
+   \draw(0,1.0) node[left]{100};
+   \draw(0,2.0) node[left]{200};
+   \draw(0,3.0) node[left]{300};
+   \draw(0,4.0) node[left]{400};
+   \draw(9,-1.3) node {Mês};
+   \draw[color=primario, thick](7,-1.7)--(7.5, -1.7) node[color=black, right] {Real};
+   \draw[color=secundario, thick](9,-1.7)--(9.5, -1.7) node[color=black, right] {Esperada};
+   \end{scriptsize}
+
+
 
    Volume de chuvas real e esperado no Sistema Cantareira
  

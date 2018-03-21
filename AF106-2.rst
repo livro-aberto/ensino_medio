@@ -1,13 +1,13 @@
 .. _sec-explorando-grafico:
 
 *******************
-Explorando: Gráfico
+Explorando: gráfico
 *******************
 
 
 Segundo informações do `Big Data Business <http://www.bigdatabusiness.com.br/visualizacao-de-dados-por-que-transformar-big-data-em-graficos/>`_, as palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem ou em um gráfico, pode favorecer a comunicação.
 
-.. figure:: _resources/infograficos.png
+.. figure:: _resources/grafico-final.png
    :width: 480pt
    :align: center
 
@@ -76,9 +76,21 @@ Uma empresa resolve lançar uma ação promocional na internet usando uma `hasht
    +-----+------------+-----+------------+
 
  
-.. figure:: _resources/hashtags.png
-   :width: 480pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[help lines,xstep=.2,ystep=.2, lightgray] (-.6,-.4) grid (7,4.5);
+   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (7,4.5);
+   \draw[thick,->](-.6,0)--(7.1,0);
+   \draw[thick,->](0,-.4)--(0,4.5);
+   \foreach \x in {5, 10, ..., 30}
+   \draw(.2*\x,-.3)node{\x};
+   \foreach \y in {500, 1000, 1500, 2000}
+   \draw(-.5, .002*\y)node{\y};
+   \node [ponto] at (.2,.3){};
+   \node [ponto] at (.4,.35){};\node [ponto] at (.6,.4){};\node [ponto] at (.8,.44){};   \node [ponto] at (1,.57){};\node [ponto] at (1.2,.56){};\node [ponto] at (1.4,.55){};\node [ponto] at (1.6,1.48){};\node [ponto] at (1.8,1.81){};\node [ponto] at (2,2.1){};\node [ponto] at (2.2,2.7){};\node [ponto] at (2.4,3.76){};\node [ponto] at (2.6,3.58){};\node [ponto] at (2.8,3.38){};\node [ponto] at (3,3.42){};\node [ponto] at (3.2,3.44){};\node [ponto] at (3.4,2.9){};\node [ponto] at (3.6,1.36){};\node [ponto] at (3.8,1.06){};\node [ponto] at (4,.96){};\node [ponto] at (4.2,1.06){};\node [ponto] at (4.4,.96){};\node [ponto] at (4.6,.7){};\node [ponto] at (4.8,.62){};\node [ponto] at (5.,.8){};\node [ponto] at (5.2,2.21){};\node [ponto] at (5.4,3.16){};\node [ponto] at (5.6,2.96){};;  \node [ponto] at (5.8,2.96){};;\node [ponto] at (6,2.86){};
+   
+
  
  
 #. Quantas vezes a *hashtag* foi mencionada mais de 1500 vezes em um dia?
@@ -102,9 +114,18 @@ No caso de funções reais de variável real, isto é, cujos domínio e contrado
 
 A representação geométrica mais comum para esses pontos, e que você provavelmente já conhece, é no :index:`plano cartesiano <plano cartesiano>`. Essa representação tem como base duas retas numéricas perpendiculares que se intersectam em suas origens conforme a figura abaixo.
 
-.. figure:: _resources/plano_cartesiano.png
-   :width: 300pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[lightgray](-4.5,-4.5)grid[xstep=.5,ystep=.5,line width =1pt](4.5,4.5);
+   \draw[->,thick](-4.5,0)--(4.5,0) node[right]{$x$};
+   \draw[->,thick](0,-4.5)--(0,4.5)node[above]{$y$};
+   \draw[dashed](-2,0)--(-2,2)--(0,2);
+   \node[ponto] at (-2,2){};
+   \node[above] at (-2,2){$(a,b)$};
+   \node[below] at (-2,0){$a$};
+   \node[right] at (0,2){$b$};
+   
 
 As retas que compõem um sistema cartesiano são chamadas de :index:`eixos <eixos coordenados>` do plano cartesiano. O eixo em que são registradas as primeiras coordenadas do par é chamado de :index:`eixo das abscissas <eixo das abscissas>`. O outro eixo, em que são registradas as segundas coordenadas do par é chamado de :index:`eixo das ordenadas <eixo das ordenadas>`. 
 
@@ -141,9 +162,72 @@ Atividade: Do mapa para o gráfico
    #. Uma possibilidade é `\{`(13, verde), (14, verde), (15, laranja), (16, laranja), (18, vermelha), (23, vinho) `\}`.
    #. Três possíveis representações são:
    
-      .. figure:: _resources/grafico_cores.png
-         :width: 300pt
-         :align: center
+      .. tikz::
+      
+        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
+        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+        \draw(.5*\x, -.1)--(.5*\x,0);
+        \draw(.5,-.3) node[scale=.7]{13};
+        \draw(1,-.3) node[scale=.7]{14};
+        \draw(1.5,-.3) node[scale=.7]{15};
+        \draw(2,-.3) node[scale=.7]{16};
+        \draw(3,-.3) node[scale=.7]{18};
+        \draw(5.5,-.3) node[scale=.7]{23};
+        \draw(-.5,1)node[scale=.7]{verde};
+        \draw(-.6,2)node[scale=.7]{laranja};
+        \draw(-.65,3)node[scale=.7]{vermelho};
+        \draw(-.5,4)node[scale=.7]{vinho};
+        \draw[dashed](0,1)--(.5,1)--(.5,0);
+        \draw[dashed](0,1)--(1,1)--(1,0);
+        \draw[dashed](0,2)--(1.5,2)--(1.5,0);
+        \draw[dashed](0,2)--(2,2)--(2,0);
+        \draw[dashed](0,3)--(3,3)--(3,0);
+        \draw[dashed](0,4)--(5.5,4)--(5.5,0);
+        \draw[fill](.5,1)circle(1pt);
+        \draw[fill](1,1)circle(1pt);
+        \draw[fill](1.5,2)circle(1pt);
+        \draw[fill](2,2)circle(1pt);
+        \draw[fill](3,3)circle(1pt);
+        \draw[fill](5.5,4)circle(1pt);
+        \begin{scope}[yshift=-5.5cm]
+        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
+        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+        \draw(.5*\x, -.1)--(.5*\x,0);
+        \draw(.25,-.3) node[scale=.7]{13};
+        \draw(.75,-.3) node[scale=.7]{14};
+        \draw(1.25,-.3) node[scale=.7]{15};
+        \draw(1.75,-.3) node[scale=.7]{16};
+        \draw(2.75,-.3) node[scale=.7]{18};
+        \draw(5.25,-.3) node[scale=.7]{23};
+        \draw(-.5,0.5)node[scale=.7]{verde};
+        \draw(-.6,1.5)node[scale=.7]{laranja};
+        \draw(-.65,2.5)node[scale=.7]{vermelho};
+        \draw(-.5,3.5)node[scale=.7]{vinho};
+        \draw[dashed,fill, color=green](0,0) rectangle (.5,1);
+        \draw[black,dashed,fill, color=green](.5,0) rectangle (1,1);
+        \draw[dashed,fill, color=orange](1,1) rectangle (1.5,2);
+        \draw[black,dashed,fill, color=orange](1.5,1) rectangle (2,2);
+        \draw[black,dashed,fill, color=red](2.5,2) rectangle (3,3);
+        \draw[black,dashed,fill, color=violet](5,3) rectangle (5.5,4);
+        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (-.1,-.1) grid (5.5,4);
+        \begin{scope}[yshift=-2.5cm]
+        \draw[dashed,fill, color=green](0,0) rectangle (1,1);
+        \draw[dashed,fill, color=orange](1,0) rectangle (1.5,1);
+        \draw[dashed,fill, color=red](2.5,0) rectangle (3,1);
+        \draw[black,dashed,fill, color=violet](5,0) rectangle (5.5,1);
+        \draw (.6,1.5)node[scale=.7, rotate=45]  {verde};
+        \draw (.25,.5)node[scale=.7]  {13};
+        \draw (.75,.5)node[scale=.7]  {14};
+        \draw(1.25,.5) node[scale=.7]{15};
+        \draw(2.75,.5) node[scale=.7]{18};
+        \draw[white](5.25,.5) node[scale=.7]{23};
+        \draw (1.6,1.5)node[scale=.7, rotate=45]  {Laranja};
+        \draw (3.1,1.5)node[scale=.7, rotate=45]  {Vermelho};
+        \draw (5.5,1.5)node[scale=.7, rotate=45]  {Vinho};
+        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (0,0) grid (5.5,1);
+        \end{scope}\end{scope}
+  
+
    
    #. Uma possibilidade de resposta é: verde para `t \in [0,15[`, laranja para `t \in[15, 18[`, vermelho para `t \in[18,23[` e vinho para `t \in[23,25]`.
    #. Ver item b).
@@ -168,9 +252,20 @@ Represente, no plano cartesiano, o conjunto de pontos que correspondem aos pares
 
 .. admonition:: Resposta 
 
-   .. figure:: _resources/triangulares_grafico.png
-      :width: 200pt
-      :align: center
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[help lines,xstep=.25,ystep=.25, lightgray] (0,0) grid (4,4);
+      \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (4,4);
+      \draw[thick,->](0,0)--(4.2,0);
+      \draw[thick,->](0,0)--(0,4.2);
+      \foreach \x in {2, 4, 6, 8}
+      \draw(.5*\x,-.2)node{\x};
+      \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8}
+      \node[ponto] at(.5*\x, {.05*\x*(1+\x)}){};
+      \foreach \y in{10, 20, 30, 40}
+      \draw(0,.1*\y) node[left]{\y};
+
 
 .. _ativ-funcoes-jornada-ate-a-escola:
 
@@ -201,18 +296,43 @@ No plano cartesiano a seguir, o eixo horizontal indica o tempo em minutos e o ei
 
 .. _fig-pontos-jornada:
 
-.. figure:: _resources/jornada_1.png
-   :width: 480pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \begin{scope}[yscale=.75]
+   \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
+   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
+   \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
+   \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
+   \foreach \x in {5, 10, ..., 30}
+   \draw(.2*\x,-.3)node{\x};
+   \foreach \y in {1, 2, 3, 4, 5, 6}
+   \draw(-.3, \y)node{\y};
+   \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){}; \node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
+   \end{scope}
+
 
 
 .. admonition:: Resposta 
 
    #. A jornada de Leonardo é descrita pelo gráfico abaixo.
    
-      .. figure:: _resources/jornada_sol_1.png
-         :width: 480pt
-         :align: center
+      .. tikz::
+
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+         \begin{scope}[yscale=.75]
+         \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
+         \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
+         \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
+         \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
+         \foreach \x in {5, 10, ..., 30}
+         \draw(.2*\x,-.3)node{\x};
+         \foreach \y in {1, 2, 3, 4, 5, 6}
+         \draw(-.3, \y)node{\y};
+         \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){};\node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
+         \draw[thick, red](0,0)--(1,0)--(2,3)--(3,4)--(4,4)--(5,6)--(6,6);
+         \end{scope}
+
 
    #. Aproximadamente `1,25` km.
    #. Resposta pessoal.
