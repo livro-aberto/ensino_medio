@@ -1,4 +1,3 @@
-
 .. _sec-exercicios-grafico:
 
 **********
@@ -7,15 +6,34 @@ Exercícios
 
 `1.` O gráfico abaixo mostra a altura do nível de água em uma piscina com vazamento. Identifique as variáveis na situação descrita e representada a partir do gráfico. Observe a relação apresentada no gráfico e indique possíveis causas para o comportamento observado.
 
-.. figure:: _resources/vazamento.png
-   :width: 400pt
-   :align: center
+.. tikz::
+
+   \draw[help lines, gray](0,-.05)grid[xstep=.5](6.5,.05);
+   \draw[help lines, gray](-.05,0)grid[ystep=.8](.05,5);
+   \draw[->,  thick](-.5,0)--(6.5,0)node[yshift=-.2cm,below left]{\tiny tempo(h)};
+   \draw[->,  thick](0,-0.5)--(0,5)node[left,xshift=-.5cm,rotate=90]{\tiny altura do nível da água(cm)};
+   \foreach \x in {2, 4, 6, 8, 10, 12}
+   \draw(.5*\x,-.2)node{\tiny \x};
+   \foreach \x in {1, 2, 3, 4, 5}
+   \draw(-.3,.8*\x)node{\tiny \x};
+   \draw [red,thick,smooth](0,2.4) .. controls (2,2.3)and(2.5,-.5) .. (3.5,2.4)
+         (3.5,2.4) .. controls (4,3.5) and (5,3) .. (6,2.6);
+
 
 `2.` Garrafas de água potável são vendidas em vários tamanhos e preços. Cada ponto no gráfico abaixo representa uma garrafa de água.
 
-.. figure:: _resources/garrafas.png
-   :width: 350pt
-   :align: center
+.. tikz::
+
+   \draw[help lines,xstep=.5cm,ystep=.5cm](0,0)grid(4.7,2.3);
+   \draw[thick, ->](0,0)--(4.7,0);
+   \draw[thick, ->](0,0)--(0,2.3);
+   \draw(3.9,-.2) node[scale=.4]{quantidade de \'{a}gua};
+   \draw(-.15,2) node[rotate=90, scale=.4]{pre\c{c}o};
+   \draw[fill=primario](1.5,1) circle (1pt) node[above left, scale=.4] {$A$};
+   \draw[fill=primario](3.5,2) circle (1pt) node[above left, scale=.4] {$B$};
+   \draw[fill=primario](.5,.5) circle (1pt) node[above left, scale=.4] {$C$};
+   \draw[fill=primario](4.5,1.5) circle (1pt) node[above left, scale=.4] {$D$};
+   \draw[fill=primario](3.5,1) circle (1pt) node[above left, scale=.4] {$E$};
 
 #. Qual garrafa armazena a maior quantidade de água?
 #. Qual garrafa é vendida pelo preço mais alto?
