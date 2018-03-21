@@ -89,23 +89,41 @@ Situações como essa são bastante comuns em Modelagem Matemática. O modelo se
 
 .. admonition:: Resposta 
 
-   a. `19999900\%`, `450\%`, `118\%`, `483\%`, `114\%`, `147\%`, `62\%`, `33\%`, `32\%`, `16\%`, `7\%`.
+   #. `19999900\%`, `450\%`, `118\%`, `483\%`, `114\%`, `147\%`, `62\%`, `33\%`, `32\%`, `16\%`, `7\%`.
    
-   b.
+   #.
    
-   .. figure:: _resources/facebook.png
-      :width: 200pt
-      :align: center
-
-   c. No primeiro ano observa-se um grande crescimento no número de usuários ativos, entre os anos de `2006` e `2010` o crescimento percentual oscila,  e a partir de `2011` é cada vez menor, indicando que o crescimento do número de usuários está com tendência a diminuir. 
+     .. tikz::
    
-   d. Espera-se para `2016` um valor acima de `1.317.000.000` e abaixo de `1.400.000.000`. Para `2017` um valor maior que o anterior e que não ultrapasse `1.500.000.000`.
+        \draw [help lines, xstep=.5cm,ystep=.25cm] (-.1,-.1) grid (7.5,4.1);
+        \foreach \x in {0,1, 2,3, 4, 5, 6,7,8,9,10,11,12,13,14, 15}
+        \draw[shift={(.5*\x,0)},color=black] (0pt,-2pt) -- (0pt,-2pt) node[below, scale=.4] {\footnotesize $\x$};
+        \foreach \y in {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600}
+        \draw[shift={(-.3,.18 +.0025*\y)},color=black] (0pt,-2pt) -- (0pt,-2pt) node[below, scale=.4] {\footnotesize $\y$};
+        \draw[thick, ->](-.1,0)--(7.6,0);
+        \draw[thick, ->](0,-.1)--(0,4.1);
+        \draw[fill =primario](.5,0) circle(1pt);
+        \draw[fill =primario](1,.06) circle(1pt);
+        \draw[fill =primario](1.5,.08) circle(1pt);
+        \draw[fill =primario](2,.09) circle(1pt);
+        \draw[fill =primario](2.5,.2) circle(1pt);
+        \draw[fill =primario](3,.37) circle(1pt);
+        \draw[fill =primario](3.5,.92) circle(1pt);   
+        \draw[fill =primario](4,1.5) circle(1pt);
+        \draw[fill =primario](4.5,2) circle(1pt);
+        \draw[fill =primario](5,2.62) circle(1pt);
+        \draw[fill =primario](5.5,3.08) circle(1pt);
+        \draw[fill =primario](6,3.35) circle(1pt);
+      
+   #. No primeiro ano observa-se um grande crescimento no número de usuários ativos, entre os anos de `2006` e `2010` o crescimento percentual oscila,  e a partir de `2011` é cada vez menor, indicando que o crescimento do número de usuários está com tendência a diminuir. 
    
-   e. É razoável imaginar que o número de usuários continuará a aumentar. Com um crescimento percentual cada vez menor a tendência observada é que a marca de `2` bilhões de usuários não será atingida.
+   #. Espera-se para `2016` um valor acima de `1.317.000.000` e abaixo de `1.400.000.000`. Para `2017` um valor maior que o anterior e que não ultrapasse `1.500.000.000`.
    
-   f. Para o ano de `2013` tem-se `f(9)=1.055.876.085` e para o ano de `2014` tem-se `f(10)=1.220.936.348`.
+   #. É razoável imaginar que o número de usuários continuará a aumentar. Com um crescimento percentual cada vez menor a tendência observada é que a marca de `2` bilhões de usuários não será atingida.
    
-   g. Para o ano de `2016` o modelo prevê um numéro de usuários de `f(12)=1.359.620.842` e para `2017`, `f(13)=1.381.536.488`.
+   #. Para o ano de `2013` tem-se `f(9)=1.055.876.085` e para o ano de `2014` tem-se `f(10)=1.220.936.348`.
+   
+   #. Para o ano de `2016` o modelo prevê um numéro de usuários de `f(12)=1.359.620.842` e para `2017`, `f(13)=1.381.536.488`.
    
    
 .. _ativ-decodificando:
@@ -142,11 +160,43 @@ Considere a seguinte maneira de codificar o alfabeto
 #. Se você recebesse uma mensagem com a expressão RGXEIDVGPUPG, como faria para decodificá-la?
    
    A codificação acima pode também ser representada em um gráfico em que no eixo horizontal estão as letras originais e no vertical os seus respectivos códigos.
+   
+   .. tikz::
 
-   .. figure:: _resources/codigo1_1.png
-      :width: 400px
-      :align: center
-
+      \draw[scale=.5](0,0)grid(26,26);
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (.2+.5*\x,-.4) node {\i};
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (-.4,.2+.5*\x) node {\i};
+      \fill[color=primario](5.5,0)--(6,0)--(6,.5)--(5.5,.5);
+      \fill[color=primario](6,.5)--(6.5,.5)--(6.5,1)--(6,1);
+      \fill[color=primario](6.5,1)--(7,1)--(7,1.5)--(6.5,1.5);
+      \fill[color=primario](7,1.5)--(7.5,1.5)--(7.5,2)--(7,2);
+      \fill[color=primario] ( 7.5 , 2.0 )--( 8.0 , 2.0 )--( 8.0 , 2.5 )--( 7.5 , 2.5 );
+      \fill[color=primario] ( 8.0 , 2.5 )--( 8.5 , 2.5 )--( 8.5 , 3.0 )--( 8.0 , 3.0 );
+      \fill [color=primario]( 8.5 , 3.0 )--( 9.0 , 3.0 )--( 9.0 , 3.5 )--( 8.5 , 3.5 );
+      \fill [color=primario]( 9.0 , 3.5 )--( 9.5 , 3.5 )--( 9.5 , 4.0 )--( 9.0 , 4.0 );
+      \fill [color=primario]( 9.5 , 4.0 )--( 10.0 , 4.0 )--( 10.0 , 4.5 )--( 9.5 , 4.5 );
+      \fill [color=primario]( 10.0 , 4.5 )--( 10.5 , 4.5 )--( 10.5 , 5.0 )--( 10.0 , 5.0 );
+      \fill[color=primario] ( 10.5 , 5.0 )--( 11.0 , 5.0 )--( 11.0 , 5.5 )--( 10.5 , 5.5 );
+      \fill[color=primario] ( 11.0 , 5.5 )--( 11.5 , 5.5 )--( 11.5 , 6.0 )--( 11.0 , 6.0 );
+      \fill[color=primario] ( 11.5 , 6.0 )--( 12.0 , 6.0 )--( 12.0 , 6.5 )--( 11.5 , 6.5 );
+      \fill[color=primario] ( 12.0 , 6.5 )--( 12.5 , 6.5 )--( 12.5 , 7.0 )--( 12.0 , 7.0 );
+      \fill[color=primario] ( 12.5 , 7.0 )--( 13.0 , 7.0 )--( 13.0 , 7.5 )--( 12.5 , 7.5 );
+      \fill[color=primario] ( 0.0 , 7.5 )--( 0.5 , 7.5 )--( 0.5 , 8.0 )--( 0.0 , 8.0 );
+      \fill[color=primario] ( 0.5 , 8.0 )--( 1.0 , 8.0 )--( 1.0 , 8.5 )--( 0.5 , 8.5 );
+      \fill[color=primario] ( 1.0 , 8.5 )--( 1.5 , 8.5 )--( 1.5 , 9.0 )--( 1.0 , 9.0 );
+      \fill[color=primario] ( 1.5 , 9.0 )--( 2.0 , 9.0 )--( 2.0 , 9.5 )--( 1.5 , 9.5 );
+      \fill[color=primario] ( 2.0 , 9.5 )--( 2.5 , 9.5 )--( 2.5 , 10.0 )--( 2.0 , 10.0 );
+      \fill[color=primario] ( 2.5 , 10.0 )--( 3.0 , 10.0 )--( 3.0 , 10.5 )--( 2.5 , 10.5 );
+      \fill[color=primario] ( 3.0 , 10.5 )--( 3.5 , 10.5 )--( 3.5 , 11.0 )--( 3.0 , 11.0 );
+      \fill[color=primario] ( 3.5 , 11.0 )--( 4.0 , 11.0 )--( 4.0 , 11.5 )--( 3.5 , 11.5 );
+      \fill[color=primario] ( 4.0 , 11.5 )--( 4.5 , 11.5 )--( 4.5 , 12.0 )--( 4.0 , 12.0 );
+      \fill[color=primario] ( 4.5 , 12.0 )--( 5.0 , 12.0 )--( 5.0 , 12.5 )--( 4.5 , 12.5 );
+      \fill[color=primario] ( 5.0 , 12.5 )--( 5.5 , 12.5 )--( 5.5 , 13.0 )--( 5.0 , 13.0 );
+      \draw(12.3,-1)node{alfabeto};
+      \draw(-1,12.3) node[rotate=90.]{C\'{o}digo};
+      
 #. Usando ainda o código acima escreva uma mensagem codificada com duas ou três palavras e troque com algum colega seu de classe. Decodifique a mensagem que recebeu.
 
    Você deve ter percebido que a codificação é uma função do conjunto das letras do alfabeto em si mesmo: todas as letras precisam ter um código e uma mesma letra não pode ter mais de um código associada a si.
@@ -157,9 +207,41 @@ Considere a seguinte maneira de codificar o alfabeto
 
 #. Considerando o código do gráfico abaixo, tente decodificar a palavra APQGJXV.
 
-   .. figure:: _resources/codigo2_1.png
-      :width: 400px
-      :align: center
+   .. tikz::
+   
+      \draw[scale=.5](0,0)grid(26,26);
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (.2+.5*\x,-.4) node {\i};
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (-.4,.2+.5*\x) node {\i};
+      \fill[color=primario] ( 0.0 , 1.5 )--( 0.5 , 1.5 )--( 0.5 , 2.0 )--( 0.0 , 2.0 );
+      \fill[color=primario] ( 0.5 , 2.0 )--( 1.0 , 2.0 )--( 1.0 , 2.5 )--( 0.5 , 2.5 );
+      \fill[color=primario] ( 1.0 , 2.5 )--( 1.5 , 2.5 )--( 1.5 , 3.0 )--( 1.0 , 3.0 );
+      \fill[color=primario] ( 1.5 , 3.0 )--( 2.0 , 3.0 )--( 2.0 , 3.5 )--( 1.5 , 3.5 );
+      \fill[color=primario] ( 2.0 , 3.5 )--( 2.5 , 3.5 )--( 2.5 , 4.0 )--( 2.0 , 4.0 );
+      \fill[color=primario] ( 2.5 , 4.0 )--( 3.0 , 4.0 )--( 3.0 , 4.5 )--( 2.5 , 4.5 );
+      \fill[color=primario] ( 3.0 , 4.5 )--( 3.5 , 4.5 )--( 3.5 , 5.0 )--( 3.0 , 5.0 );
+      \fill[color=primario] ( 3.5 , 5.0 )--( 4.0 , 5.0 )--( 4.0 , 5.5 )--( 3.5 , 5.5 );
+      \fill[color=primario] ( 4.0 , 0.0 )--( 4.5 , 0.0 )--( 4.5 , 0.5 )--( 4.0 , 0.5 );
+      \fill[color=primario] ( 4.5 , 0.5 )--( 5.0 , 0.5 )--( 5.0 , 1.0 )--( 4.5 , 1.0 );
+      \fill[color=primario] ( 5.0 , 1.0 )--( 5.5 , 1.0 )--( 5.5 , 1.5 )--( 5.0 , 1.5 );
+      \fill[color=primario] ( 5.5 , 1.5 )--( 6.0 , 1.5 )--( 6.0 , 2.0 )--( 5.5 , 2.0 );
+      \fill[color=primario] ( 6.0 , 2.0 )--( 6.5 , 2.0 )--( 6.5 , 2.5 )--( 6.0 , 2.5 );
+      \fill[color=primario] ( 6.5 , 2.5 )--( 7.0 , 2.5 )--( 7.0 , 3.0 )--( 6.5 , 3.0 );
+      \fill[color=primario] ( 7.0 , 3.0 )--( 7.5 , 3.0 )--( 7.5 , 3.5 )--( 7.0 , 3.5 );
+      \fill[color=primario] ( 7.5 , 3.5 )--( 8.0 , 3.5 )--( 8.0 , 4.0 )--( 7.5 , 4.0 );
+      \fill[color=primario] ( 8.0 , 4.0 )--( 8.5 , 4.0 )--( 8.5 , 4.5 )--( 8.0 , 4.5 );
+      \fill[color=primario] ( 8.5 , 4.5 )--( 9.0 , 4.5 )--( 9.0 , 5.0 )--( 8.5 , 5.0 );
+      \fill[color=primario] ( 9.0 , 5.0 )--( 9.5 , 5.0 )--( 9.5 , 5.5 )--( 9.0 , 5.5 );
+      \fill[color=primario] ( 9.5 , 5.5 )--( 10.0 , 5.5 )--( 10.0 , 6.0 )--( 9.5 , 6.0 );
+      \fill[color=primario] ( 10.0 , 6.0 )--( 10.5 , 6.0 )--( 10.5 , 6.5 )--( 10.0 , 6.5 );
+      \fill[color=primario] ( 10.5 , 6.5 )--( 11.0 , 6.5 )--( 11.0 , 7.0 )--( 10.5 , 7.0 );
+      \fill[color=primario] ( 11.0 , 7.0 )--( 11.5 , 7.0 )--( 11.5 , 7.5 )--( 11.0 , 7.5 );
+      \fill[color=primario] ( 11.5 , 10.0 )--( 12.0 , 10.0 )--( 12.0 , 10.5 )--( 11.5 , 10.5 );
+      \fill[color=primario] ( 12.0 , 10.5 )--( 12.5 , 10.5 )--( 12.5 , 11.0 )--( 12.0 , 11.0 );
+      \fill[color=primario] ( 12.5 , 11.0 )--( 13.0 , 11.0 )--( 13.0 , 11.5 )--( 12.5 , 11.5 );
+      \draw(12.3,-1)node{alfabeto};
+      \draw(-1,12.3) node[rotate=90.]{C\'{o}digo};
 
 #. Quais letras do código acima são impossíveis de decodificar e por quê? 
 
@@ -189,11 +271,43 @@ Considere a seguinte maneira de codificar o alfabeto
    Outra possibilidade é escrever `f(x)=x+15`, subtraindo `26` se `f(x)` for maior que `26`.
    
    e.
-
-   .. figure:: _resources/codigo3_2.png
-      :width: 400pt
-      :align: center
-      
+   
+   .. tikz::
+   
+      \draw[scale=.5](0,0)grid(26,26);
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (.2+.5*\x,-.4) node {\i};
+      \foreach \i [count=\x from 0] in{{A}, {B},{C}, {D}, {E}, {F}, {G}, {H},{I},{J},{K},{L},{M},{N},{O},{P},{Q},{R},{S},{T},{U},{V},{W},{X},{Y},{Z}}
+      \draw (-.4,.2+.5*\x) node {\i};
+      \fill[color=primario] ( 0.0 , 0.0 )--( 0.5 , 0.0 )--( 0.5 , 0.5 )--( 0.0 , 0.5 );
+      \fill[color=primario] ( 0.5 , 1.5 )--( 1.0 , 1.5 )--( 1.0 , 2.0 )--( 0.5 , 2.0 );
+      \fill[color=primario] ( 1.0 , 4.0 )--( 1.5 , 4.0 )--( 1.5 , 4.5 )--( 1.0 , 4.5 );
+      \fill[color=primario] ( 1.5 , 7.5 )--( 2.0 , 7.5 )--( 2.0 , 8.0 )--( 1.5 , 8.0 );
+      \fill[color=primario] ( 2.0 , 12.0 )--( 2.5 , 12.0 )--( 2.5 , 12.5 )--( 2.0 , 12.5 );
+      \fill[color=primario] ( 2.5 , 4.5 )--( 3.0 , 4.5 )--( 3.0 , 5.0 )--( 2.5 , 5.0 );
+      \fill[color=primario] ( 3.0 , 11.0 )--( 3.5 , 11.0 )--( 3.5 , 11.5 )--( 3.0 , 11.5 );
+      \fill[color=primario] ( 3.5 , 5.5 )--( 4.0 , 5.5 )--( 4.0 , 6.0 )--( 3.5 , 6.0 );
+      \fill[color=primario] ( 4.0 , 1.0 )--( 4.5 , 1.0 )--( 4.5 , 1.5 )--( 4.0 , 1.5 );
+      \fill[color=primario] ( 4.5 , 10.5 ) rectangle ( 5.0 , 11.0 );
+      \fill[color=primario] ( 5.0 , 8.0 ) rectangle ( 5.5 , 8.5 );
+      \fill[color=primario] ( 5.5 , 6.5 ) rectangle ( 6.0 , 7.0 );
+      \fill[color=primario] ( 6.0 , 6.0 ) rectangle ( 6.5 , 6.5 );
+      \fill[color=primario] ( 6.5 , 6.5 ) rectangle ( 7.0 , 7.0 );
+      \fill[color=primario] ( 7.0 , 8.0 ) rectangle ( 7.5 , 8.5 );
+      \fill[color=primario] ( 7.5 , 10.5 ) rectangle ( 8.0 , 11.0 );
+      \fill[color=primario] ( 8.0 , 1.0 ) rectangle ( 8.5 , 1.5 );
+      \fill[color=primario] ( 8.5 , 5.5 ) rectangle ( 9.0 , 6.0 );
+      \fill[color=primario] ( 9.0 , 11.0 ) rectangle ( 9.5 , 11.5 );
+      \fill[color=primario] ( 9.5 , 4.5 ) rectangle ( 10.0 , 5.0 );
+      \fill[color=primario] ( 10.0 , 12.0 ) rectangle ( 10.5 , 12.5 );
+      \fill[color=primario] ( 10.5 , 7.5 ) rectangle ( 11.0 , 8.0 );
+      \fill[color=primario] ( 11.0 , 4.0 ) rectangle ( 11.5 , 4.5 );
+      \fill[color=primario] ( 11.5 , 1.5 ) rectangle ( 12.0 , 2.0 );
+      \fill[color=primario] ( 12.0 , 0.0 ) rectangle ( 12.5 , 0.5 );
+      \fill[color=primario] ( 12.5 , 12.5 ) rectangle ( 13.0 , 13.0 );
+      \draw(12.3,-1)node{alfabeto};
+      \draw(-1,12.3) node[rotate=90.]{Código};   
+   
    Para valores maiores que `26` devemos subtrair `26` sucessivamente até encontrar um valor positivo menor que ou igual a `26` e então encontrar a letra correspondente. Isso equivale a tomar o resto da divisão por `26`.
    
    f. Impossível decodificar pois os códigos P, Q e X não tem correspondente no alfabeto e os códigos G e J têm mais de uma opção de escolha.
@@ -214,16 +328,43 @@ Projeto Aplicado
    Este problema fica mais simples se for adotada uma abordagem prática e recomenda-se que seja realizado em grupos. Serão necessárias algumas tesouras e quadrados de cartolina de lados medindo `40\ cm`. Isso permitirá que os alunos construam modelos de várias caixas diferentes. Calculadoras poderão ser necessárias para ajudar no cálculo dos volumes. Desafie cada grupo de alunos a fazer a caixa de maior volume a partir do quadrado de cartolina dado.
    Inicialmente, poucos alunos provavelmente adotarão uma abordagem algébrica. Normalmente eles preferem começar a realizar uma série de experiências até que tenham adquirido uma forte intuição para a situação, e só então consideram adotar um método sistematizado. Esta é uma sequência natural de raciocinar em matemática, portanto recomendamos que eles não sejam desencorajados ou apressados.
    A seguir fornecemos uma solução gráfica para o problema. A relação entre o volume `V` da caixa (em centímetros cúbicos) e o tamanho `x` do lado do quadrado (medido em centímetros) é dada por `V(x)=(40-2x)\cdot (40-2x) \cdot x=(40-2x)^2 \cdot x`.
+   
+   .. tikz::
+   
+      \draw [line width=2.pt] (0.,0.)-- (0.,1.);
+      \draw [line width=2.pt] (0.,1.)-- (3.,1.);
+      \draw [line width=2.pt] (3.,1.)-- (3.,0.);
+      \draw [line width=2.pt] (3.,0.)-- (0.,0.);
+      \draw [line width=2.pt] (1.,1.)-- (1.5,1.5);
+      \draw [line width=2.pt] (3.,0.)-- (4.5,1.5);
+      \draw [line width=2.pt] (4.5,1.5)-- (4.5,2.5);
+      \draw [line width=2.pt] (4.5,2.5)-- (1.5,2.5);
+      \draw [line width=2.pt] (1.5,2.5)-- (1.5,1.5);
+      \draw [line width=2.pt] (1.5,1.5)-- (3.5,1.5);
+      \draw [line width=2.pt] (0.,1.)-- (1.5,2.5);
+      \draw [line width=2.pt] (3.,1.)-- (4.5,2.5);
+      \draw [->,line width=.5pt] (1.8,-0.47) -- (2.53,-0.47);
+      \draw [<-,line width=.5pt] (-0.47,-0.47) -- (.3,-0.47);
+      \draw [<->,line width=.5pt] (3.7,0.) -- (5.2,1.5);
+      \draw [<->,line width=.5pt] (5.2,1.5) -- (5.2,2.5);
+      \draw (5.5,2)node {$x$};
+      \draw (4.7,.5)node[rotate=43, scale=.9] {$40-2x$}; 
+      \draw (1,-.5)node[scale=.9] {$40-2x$};
+      
 
-   .. figure:: _resources/caixa_1.png
-      :width: 300pt
-      :align: center
-
-
-
-   .. figure:: _resources/grafico_volume_1.png
-      :width: 350pt
-      :align: center
+   .. tikz::
+   
+      \begin{scope}[yscale=1.5]
+      \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (10,5);
+      \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (10,5);
+      \draw[->, thick](-.2,0)--(10.2,0) node [right]{ $x$};
+      \draw[->, thick](0,-.2)--(0,5.2) node[above]{$V(x)$};
+      \draw[primario,thick,samples=100,domain=-0.:20] plot(.5*\x,{(.1*\x)*(4-.2*(\x))^(2)});
+      \foreach \x in {2, 4, 6, ..., 20}
+      \draw (.5*\x,-.3)node{\x};
+      \foreach \y in{1000, 2000, 3000, 4000, 5000}
+      \draw(-.5,.001*\y)node{\y};
+      \end{scope}   
 
    O maior volume é aproximadamente `4740,7 \ cm^3` e ocorre quando `x` é aproximadamente `6,66 \ cm`.
 
@@ -231,10 +372,60 @@ Projeto Aplicado
 
 Vamos utilizar uma folha de cartolina quadrada de lado `40` cm para construir uma caixa sem tampa. Para isso, cortamos quadrados nos quatro cantos da cartolina e dobramos as partes retangulares restantes, para formar os lados da caixa. O objetivo é obter a caixa com o maior volume possível.
 
+.. tikz::
 
-.. figure:: _resources/caixa_sem_tampa_1.png
-   :width: 600px
-   :align: center
+   \usetikzlibrary[patterns]
+   \fill[fill=black,pattern=dots,pattern color=black] (-3.,3.) -- (-2.,3.) -- (-2.,2.) -- (-3.,2.) -- cycle;
+   \fill[fill=black,pattern=dots,pattern color=black] (-3.,-2.) -- (-2.,-2.) -- (-2.,-3.) -- (-3.,-3.) -- cycle;
+   \fill[fill=black,pattern=dots,pattern color=black] (2.,-3.) -- (2.,-2.) -- (3.,-2.) -- (3.,-3.) -- cycle;
+   \fill[line width=2.pt,fill=black,pattern=dots,pattern color=black] (2.,2.) -- (2.,3.) -- (3.,3.) -- (3.,2.) -- cycle;
+   \draw [line width=0.4pt, dashed] (-2.,2.)-- (2.,2.);
+   \draw [line width=0.4pt,dashed] (2.,2.)-- (2.,-2.);
+   \draw [line width=0.4pt,dashed] (2.,-2.)-- (-2.,-2.);
+   \draw [line width=0.4pt,dashed] (-2.,-2.)-- (-2.,2.);
+   \draw [line width=0.4pt] (-3.,2.)-- (-3.,-2.);
+   \draw [line width=0.4pt] (-2.,-3.)-- (2.,-3.);
+   \draw [line width=0.4pt] (3.,-2.)-- (3.,2.);
+   \draw [line width=0.4pt] (2.,3.)-- (-2.,3.);
+   \draw [line width=0.4pt] (-3.,3.)-- (-2.,3.);
+   \draw [line width=0.4pt] (-2.,3.)-- (-2.,2.);
+   \draw [line width=0.4pt] (-2.,2.)-- (-3.,2.);
+   \draw [line width=0.4pt] (-3.,2.)-- (-3.,3.);
+   \draw [line width=0.4pt] (-3.,-2.)-- (-2.,-2.);
+   \draw [line width=0.4pt] (-2.,-2.)-- (-2.,-3.);
+   \draw [line width=0.4pt] (-2.,-3.)-- (-3.,-3.);
+   \draw [line width=0.4pt] (-3.,-3.)-- (-3.,-2.);
+   \draw [line width=0.4pt] (2.,-3.)-- (2.,-2.);
+   \draw [line width=0.4pt] (2.,-2.)-- (3.,-2.);
+   \draw [line width=0.4pt] (3.,-2.)-- (3.,-3.);
+   \draw [line width=0.4pt] (3.,-3.)-- (2.,-3.);
+   \draw [line width=0.4pt] (2.,2.)-- (2.,3.);
+   \draw [line width=0.4pt] (2.,3.)-- (3.,3.);
+   \draw [line width=0.4pt] (3.,3.)-- (3.,2.);
+   \draw [line width=0.4pt] (3.,2.)-- (2.,2.);
+   \draw [<-,line width=0.4pt] (-3.4,-2.98) -- (-3.4,-1.);
+   \draw [->,line width=0.4pt] (-3.4,1) -- (-3.4,3.);
+   \draw (-3.5,0) node[rotate=90] {40 cm};
+   \draw [<-,line width=0.4pt] (-3.,3.36) -- (-1,3.36);
+   \draw [->,line width=0.4pt] (1,3.36) -- (3.02,3.36);
+   \draw (0,3.4) node {40 cm};
+   \begin{scope}[xshift=4cm]
+   \fill[line width=2.pt,fill=black,fill opacity=1.0] (0.,-0.2) -- (0.,0.2) -- (0.4,0.2) -- (0.4,0.4) -- (0.8025630171471898,0.) -- (0.4,-0.4) -- (0.4,-0.2) -- cycle;
+   \begin{scope}[xshift=2cm, yshift=-1cm]
+   \draw [line width=.4pt] (0.,0.)-- (0.,1.);
+   \draw [line width=.4pt] (0.,1.)-- (3.,1.);
+   \draw [line width=.4pt] (3.,1.)-- (3.,0.);
+   \draw [line width=.4pt] (3.,0.)-- (0.,0.);
+   \draw [line width=.4pt] (1.,1.)-- (1.5,1.5);
+   \draw [line width=.4pt] (3.,0.)-- (4.5,1.5);
+   \draw [line width=.4pt] (4.5,1.5)-- (4.5,2.5);
+   \draw [line width=.4pt] (4.5,2.5)-- (1.5,2.5);
+   \draw [line width=.4pt] (1.5,2.5)-- (1.5,1.5);
+   \draw [line width=.4pt] (1.5,1.5)-- (3.5,1.5);
+   \draw [line width=.4pt] (0.,1.)-- (1.5,2.5);
+   \draw [line width=.4pt] (3.,1.)-- (4.5,2.5);
+   \end{scope}
+   \end{scope}
 
 #. Discuta com seus colegas de grupo a melhor estratégia para se obter a caixa de volume máximo. Em seguida construa a caixa e calcule o seu volume.
 
