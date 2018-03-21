@@ -11,21 +11,149 @@ Exercícios
 
 #. A figura a seguir exibe os vetores `\vec{A}` e `\vec{B}`. Escolha a opção que exibe a soma `\vec{A} + \vec{B}`.
 
-    .. figure:: _resources/geometria-bz-01.jpg
-       :width: 600px
-       :align: center
-   
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \matrix[column sep=2ex]{
+      & &
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (-3,3);
+      \coordinate (B) at (-2,-2);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \draw [vetor, color=black, very thick] (O) -- (B);
+      \node [above right] at ($(A)!0.5!(O)$) {$\vec{A}$};
+      \node [below right] at ($(B)!0.5!(O)$) {$\vec{B}$};
+      \\
+      \node [above] at (-1.5,4) {(A)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (0,0) -- (-3,1);
+      & 
+      \node [above] at (-1.5,4) {(B)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (1,0) -- (-4,0);
+      & 
+      \node [above] at (-1.5,4) {(C)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-4,1) -- (1,0);
+      & 
+      \node [above] at (-1.5,4) {(D)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-1,-2) -- (-2,3);
+      & 
+      \node [above] at (-1.5,4) {(E)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (1,0) -- (-4,1);
+      \\};
+      \end{scope}
+
+
 #. A figura a seguir exibe o vetor `\vec{A}`. Escolha a opção que exibe o vetor de mesma direção e sentido de `\vec{A}` mas de módulo igual a `1`.
 
-    .. figure:: _resources/geometria-bz-02.jpg
-       :width: 600px
-       :align: center
+   .. tikz::
+      
+      \newcommand \vectorbox{
+      \draw [style=help lines, opacity=0.5] (-1,-1) [step=0.2cm] grid (3.5,3.5);
+      \draw [eixos] (-0.5,0) -- (3.5,0);
+      \foreach \x in {1,2,3}
+      {        
+      \coordinate (A\x) at ($(0,0)+(\x,0)$) {};
+      \draw ($(A\x)+(0,2pt)$) -- ($(A\x)-(0,2pt)$);
+      \node [below, scale=0.5] at ($(A\x)-(0,0.5ex)$) {\x};
+      }
+      \draw [eixos] (0,-0.5) -- (0,3.5);
+      \foreach \x in {1,2,3}
+      {        
+      \coordinate (A\x) at ($(0,0)+(0,\x)$) {};
+      \draw ($(A\x)+(2pt,0)$) -- ($(A\x)-(2pt,0)$);
+      \node [left, scale=0.5] at ($(A\x)-(0.5ex,0)$) {\x};
+      }
+      }
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.4cm, y=0.4cm]
+      \matrix[column sep=2ex]{
+      & &
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (2,2);
+      \coordinate (B) at (-2,-2);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \node [above] at ($(A)!0.5!(O)$) {$\vec{A}$};
+      \\
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (0,2);
+      \coordinate (B) at (2,0);
+      \node [above] at (1.5,3.2) {(A)};
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \draw [vetor, color=black, very thick] (O) -- (B);
+      &
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (1,1);
+      \node [above] at (1.5,3.2) {(B)};
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      &
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at ({sqrt(2)/2},{sqrt(2)/2});
+      \node [above] at (1.5,3.2) {(C)};
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      &
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (2,0);
+      \node [above] at (1.5,3.2) {(D)};
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      &
+      \vectorbox
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (2,2);
+      \node [above] at (1.5,3.2) {(E)};
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \\};
+      \end{scope}
+
+
 
 #. A figura a seguir exibe o vetor `\vec{A}` e uma lista de vetores.   
 
-   .. figure:: _resources/geometria-bz-05.jpg
-      :width: 400px
-      :align: center    
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \matrix[column sep=2ex]{
+      \draw [style=help lines] (-1,-1) [step=0.2cm] grid (4,5);
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (3,3);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \node [above] at (1.5,2.5) {$\vec{A}$};
+      & 
+      \draw [style=help lines] (-3,-1) [step=0.2cm] grid (17,5);
+      \draw [vetor, color=black, very thick] (0,0) -- (0,4);
+      \node [above] at (-1,2.5) {$\vec{H}$};
+      \draw [vetor, color=black, very thick] (5,0) -- (2,3);
+      \node [above] at (3.5,2.5) {$\vec{I}$};
+      \draw [vetor, color=black, very thick] (8,2) -- (7,0);
+      \node [above] at (7.5,2.5) {$\vec{J}$};
+      \draw [vetor, color=black, very thick] (10,0) -- (12,2);
+      \node [above] at (11,2.5) {$\vec{K}$};
+      \draw [vetor, color=black, very thick] (14,0) -- (15,3);
+      \node [above] at (14.5,2.5) {$\vec{L}$};
+      \\};
+      \end{scope}
+
+
 	
    Quais vetores têm a mesma direção e sentido de `\vec{A}`?
     
@@ -41,10 +169,24 @@ Exercícios
 
 #. A figura a seguir exibe os vetores `\vec{A}` e `\vec{B}` de mesmo módulo. 
 
-   .. figure:: _resources/geometria-bz-07.jpg
-      :width: 150px
-      :align: center    
-	
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \draw [style=help lines] (-3,-3) [step=0.2cm] grid (6,6);
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (5,0);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \node [below] at ($(A)!0.5!(O)$) {$\vec{A}$};
+      \coordinate (B) at (0,5);
+      \draw [vetor, color=black, very thick] (O) -- (B);
+      \node [left] at ($(B)!0.5!(O)$) {$\vec{B}$};
+      \end{scope}
+
+
    Qual das seguintes afirmações sobre o módulo da soma dos dos vetores é verdadeira?
 
    `\text{(A)}` O módulo do vetor soma é igual ao módulo do vetor `\vec{A}`. O vetor soma tem apenas direção e sentido diferentes.
@@ -59,27 +201,162 @@ Exercícios
 
 #. Escolha a opção que exibe o vetor `\vec{A} = (-2, 3)`.
 
-   .. figure:: _resources/geometria-bz-10.jpg
-      :width: 600px
-      :align: center
-	
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \newcommand \vectorbox{
+      \draw [style=help lines, opacity=0.5] (-4.5,-4.5) [step=0.2cm] grid (4.5,4.5);
+      \draw [eixos] (-4.5,0) -- (4.5,0);
+      \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+      {
+      \coordinate (A\x) at ($(0,0)+(\x,0)$) {};
+      \draw ($(A\x)+(0,2pt)$) -- ($(A\x)-(0,2pt)$);
+      \node [below, scale=0.5] at ($(A\x)-(0,0.5ex)$) {\x};
+      }
+      \draw [eixos] (0,-4.5) -- (0,4.5);
+      \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+      {        
+      \coordinate (A\x) at ($(0,0)+(0,\x)$) {};
+      \draw ($(A\x)+(2pt,0)$) -- ($(A\x)-(2pt,0)$);
+      \node [left, scale=0.5] at ($(A\x)-(0.5ex,0)$) {\x};
+      }
+      }
+      \begin{scope}[x=0.4cm, y=0.4cm]
+      \matrix[column sep=2ex, row sep=2ex]{
+      \vectorbox
+      \node [above] at (0,4.5) {(A)};
+      \draw [vetor, color=black, very thick] (-2,0) -- (0,3);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(B)};
+      \draw [vetor, color=black, very thick] (0,0) -- (-2,3);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(C)};
+      \draw [vetor, color=black, very thick] (0,0) -- (3,-2);
+      \\
+      \vectorbox
+      \node [above] at (0,4.5) {(D)};
+      \draw [vetor, color=black, very thick] (-2,3) -- (-3,4);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(E)};
+      \draw [vetor, color=black, very thick] (-2,0) -- (-2,3);
+      \\};
+      \end{scope}
+
+
+
 #. A figura a seguir exibe o vetor `\vec{A}`. Escolha a opção que exibe o vetor `-3 \, \vec{A}`.
 
-   .. figure:: _resources/geometria-bz-11.jpg
-      :width: 600px
-      :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \newcommand \vectorbox{
+      \draw [style=help lines, opacity=0.5] (-3.5,-3.5) [step=0.2cm] grid (3.5,3.5);
+      \draw [eixos] (-3.5,0) -- (3.5,0);
+      \draw [eixos] (0,-3.5) -- (0,3.5);
+      }
+      \begin{scope}[x=0.4cm, y=0.4cm]
+      \matrix[column sep=2ex, row sep=2ex]{
+      &
+      \vectorbox
+      \draw [vetor, color=black, very thick] (0,0) -- (-1,1);
+      \node [above] at (-1,1) {$\vec{A}$};
+      \\
+      \vectorbox
+      \node [above] at (0,4.5) {(A)};
+      \draw [vetor, color=black, very thick] (0,0) -- (3,3);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(B)};
+      \draw [vetor, color=black, very thick] (0,0) -- (-3,3);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(C)};
+      \draw [vetor, color=black, very thick] (0,0) -- (3,-3);
+      \\
+      \vectorbox
+      \node [above] at (0,4.5) {(D)};
+      \draw [vetor, color=black, very thick] (0,-1.5) -- (-1,-0.5);
+      &
+      \vectorbox
+      \node [above] at (0,4.5) {(E)};
+      \draw [vetor, color=black, very thick] (0,0) -- (1.5,-1.5);
+      \\};
+      \end{scope}
+
+
 
 #. A figura a seguir exibe os vetores `\vec{A}` e `\vec{B}`. Escolha a opção que exibe a diferença `\vec{A} - \vec{B}`.
 
-    .. figure:: _resources/geometria-bz-13.jpg
-       :width: 600px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \matrix{
+      & & 
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (-3,3);
+      \coordinate (B) at (-2,-2);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \draw [vetor, color=black, very thick] (O) -- (B);
+      \node [above right] at ($(A)!0.5!(O)$) {$\vec{A}$};
+      \node [below right] at ($(B)!0.5!(O)$) {$\vec{B}$};
+      \\ 
+      \node [above] at (-1.5,4) {(A)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-2,3) -- (-1,-2);
+      & 
+      \node [above] at (-1.5,4) {(B)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-1,0) -- (-3,0);
+      & 
+      \node [above] at (-1.5,4) {(C)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (1,0) -- (-4,1);
+      &
+      \node [above] at (-1.5,4) {(D)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-1,0) -- (-2,1);
+      & 
+      \node [above] at (-1.5,4) {(E)};
+      \draw [style=help lines] (-5,-3) [step=0.2cm] grid (2,4);
+      \draw [vetor, color=black, very thick] (-1,-2) -- (-2,3);
+      \\};
+      \end{scope}
+
+
 
 #. A figura a seguir exibe os vetores `\vec{A}` e `\vec{B}` de mesmo módulo. 
 
-   .. figure:: _resources/geometria-bz-16.jpg
-      :width: 150px
-      :align: center    
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \draw [style=help lines] (-5,-2) [step=0.2cm] grid (6,6);
+      \coordinate (O) at (0,0);
+      \coordinate (A) at (5,0);
+      \coordinate (B) at (-4,3);
+      \draw [vetor, color=black, very thick] (O) -- (A);
+      \draw [vetor, color=black, very thick] (O) -- (B);
+      \node [above] at ($(A)!0.5!(O)$) {$\vec{A}$};
+      \node [below left] at ($(B)!0.5!(O)$) {$\vec{B}$};
+      \end{scope}
+
 
    Qual das seguintes afirmações sobre o módulo da soma dos dos vetores é verdadeira?
 
@@ -95,9 +372,46 @@ Exercícios
 
 #. A figura a seguir exibe os vetores `\vec{A}` e `\vec{B}`. Escolha a opção que exibe o vetor diferença `\vec{A} - \vec{B}`.
 
-   .. figure:: _resources/geometria-bz-19.jpg
-      :width: 500px
-      :align: center    
+   .. tikz::
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.2cm, y=0.2cm]
+      \matrix{
+      & &
+      \draw [style=help lines] (-4,-3) [step=0.2cm] grid (5,4);
+      \coordinate (OA) at (1,1);
+      \coordinate (OB) at (-2,-2);
+      \coordinate (A) at (-2,1);
+      \coordinate (B) at (3,-2);
+      \draw [vetor, color=black, very thick] (OA) -- (A);
+      \draw [vetor, color=black, very thick] (OB) -- (B);
+      \node [above] at ($(A)!0.5!(OA)$) {$\vec{A}$};
+      \node [above] at ($(B)!0.5!(OB)$) {$\vec{B}$};
+      \\
+      \node [left] at (0,0) {(A)};
+      \draw [style=help lines] (0,-1) [step=0.2cm] grid (9,1);
+      \draw [vetor,color=black, very thick] (1,0) -- (5,0);
+      &
+      \node [left] at (0,0) {(B)};
+      \draw [style=help lines] (0,-1) [step=0.2cm] grid (9,1);
+      \draw [vetor,color=black, very thick] (1,0) -- (3,0);
+      &
+      \node [left] at (0,0) {(C)};
+      \draw [style=help lines] (0,-1) [step=0.2cm] grid (9,1);
+      \draw [vetor,color=black, very thick] (3,0) -- (1,0);
+      &
+      \node [left] at (0,0) {(D)};
+      \draw [style=help lines] (0,-1) [step=0.2cm] grid (9,1);
+      \draw [vetor,color=black, very thick] (0,0) -- (8,0);
+      &
+      \node [left] at (0,0) {(E)};
+      \draw [style=help lines] (0,-1) [step=0.2cm] grid (9,1);
+      \draw [vetor,color=black, very thick] (9,0) -- (1,0);
+      \\};
+      \end{scope}
+
 
 #. Considere o vetor `\vec{A} = (2, 2)`. Qual opção exibe o módulo deste vetor?
 
@@ -119,48 +433,268 @@ Exercícios
 #. sentidos opostos;
 #. mesmos módulo, direção e sentido.
 
-    .. figure:: _resources/Figura1.png
-       :width: 300px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (-5,-4) [step=0.5cm] grid (6,5);
+      \coordinate (A) at (-1,1);
+      \node [below] at (A) {$A$};
+      \coordinate (B) at (-3,0);
+      \node [left] at (B) {$B$};
+      \coordinate (C) at (1,3);
+      \node [above] at (C) {$C$};
+      \draw [vetor, color=black] (A) -- (B);
+      \draw [vetor, color=black] (A) -- (C);
+      \coordinate (D) at (3,3);
+      \node [above] at (D) {$D$};
+      \coordinate (F) at (5,4);
+      \node [right] at (F) {$F$};
+      \coordinate (E) at (1,1);
+      \node [below left] at (E) {$E$};
+      \draw [vetor, color=black] (D) -- (E);
+      \draw [vetor, color=black] (D) -- (F);
+      \node [ponto] (G) at (0,-1) {};
+      \node [below right] at (G) {$G$};
+      \coordinate (I) at (2,0);
+      \node [below] at (I) {$I$};
+      \coordinate (H) at (-4,-3);
+      \node [below left] at (H) {$H$};
+      \draw [vetor, color=black] (G) -- (I);
+      \draw [vetor, color=black] (G) -- (H);
+      \coordinate (J) at (4,2);
+      \node [below] at (J) {$J$};
+      \draw [vetor, color=black] (I) -- (J);
+      \end{scope}
 
 
 `3.` Na figura abaixo, represente graficamente o vetor soma `\vec{u}+\vec{v}` em cada um dos itens.
 
-    .. figure:: _resources/Figura2.png
-       :width: 500px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \matrix{
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(a)};
+      \coordinate (o) at (-1,0);
+      \coordinate (a) at (2,1);
+      \coordinate (b) at (-2,-2);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (b) -- (o);
+      \node [above] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(b)};
+      \coordinate (o) at (-1,0);
+      \coordinate (a) at (2,0);
+      \coordinate (b) at (-1,1);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(c)};
+      \coordinate (oa) at (0,0);
+      \coordinate (a) at (2,2);
+      \coordinate (ob) at (-1,1);
+      \coordinate (b) at (-1,-2);
+      \draw [vetor, color=black] (oa) -- (a);
+      \draw [vetor, color=black] (ob) -- (b);
+      \node [above left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+      \node [left] at ($(ob)!0.5!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(d)};
+      \coordinate (oa) at (-1,1);
+      \coordinate (a) at (1,0);
+      \coordinate (ob) at (-1,-1);
+      \coordinate (b) at (1,-2);
+      \draw [vetor, color=black] (oa) -- (a);
+      \draw [vetor, color=black] (b) -- (ob);
+      \node [above right] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+      \node [above right] at ($(b)!0.5!(ob)$) {$\vec{u}$};
+      \\};
+      \end{scope}
+
 
 `4.` Na figura abaixo, represente graficamente o vetor diferença `\vec{u}-\vec{v}` em cada um dos itens.
 
-    .. figure:: _resources/Figura3_1.png
-       :width: 600px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \matrix{
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(a)};
+      \coordinate (o) at (-1,-1);
+      \coordinate (a) at (1,1);
+      \coordinate (b) at (2,-1);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (o) -- (b);
+      \node [above left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(b)};
+      \coordinate (o) at (-1,1);
+      \coordinate (a) at (2,2);
+      \coordinate (b) at (1,-1);
+      \draw [vetor, color=black] (a) -- (o);
+      \draw [vetor, color=black] (b) -- (o);
+      \node [above] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [below left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(c)};
+      \coordinate (oa) at (-1,-1);
+      \coordinate (a) at (2,2);
+      \coordinate (ob) at (1,-1);
+      \coordinate (b) at (-1,1);
+      \draw [vetor, color=black] (oa) -- (a);
+      \draw [vetor, color=black] (ob) -- (b);
+      \node [above left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+      \node [above right] at ($(ob)!0.1!(b)$) {$\vec{u}$};
+      &
+      \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+      \node at (-2.5,2.5) {(d)};
+      \node [ponto] (o) at (0,0) {};
+      \coordinate (a) at (3,0);
+      \coordinate (b) at (-2,0);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      \\};
+      \end{scope}
+
 
 `5.` Considere os vetores `\vec{u}` e `\vec{v}` da figura abaixo. Represente graficamente `-\vec{u}`, `-\vec{v}`, `\vec{u}+\vec{v}`, `\vec{u}-\vec{v}`, `\vec{v}-\vec{u}` e `-\vec{u}-\vec{v}`.
 
-    .. figure:: _resources/Figura4.png
-       :width: 300px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (-6,-5) [step=0.5cm] grid (6,5);
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (-3,2);
+      \coordinate (b) at (2,2);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [below right] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      \end{scope}
+
 
 `6.` Considere os vetores `\vec{u}` e `\vec{v}` da abaixo. Represente graficamente `2\vec{u}`, `3\vec{v}`, `2\vec{u}+3\vec{v}` e `2\vec{u}-3\vec{v}`.
-    
-    .. figure:: _resources/Figura5.png
-       :width: 500px
-       :align: center
+
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (-2,-4) [step=0.5cm] grid (20,4);
+      \coordinate (oa) at (0,0);
+      \coordinate (ob) at (1,0);
+      \coordinate (a) at (-1,1);
+      \coordinate (b) at (3,0);
+      \draw [vetor, color=black] (oa) -- (a);
+      \draw [vetor, color=black] (ob) -- (b);
+      \node [below left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+      \node [below right] at ($(ob)!0.5!(b)$) {$\vec{u}$};
+      \end{scope}
+
 
 `7.` Na figura abaixo, encontre `\vec{u}+\vec{v}+\vec{w}`.
 
-    .. figure:: _resources/Figura6.png
-       :width: 200px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{eixos}=[->]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (-5,-2) [step=0.5cm] grid (4,4);
+      \coordinate (o) at (-1,3);
+      \coordinate (a) at (3,1);
+      \coordinate (b) at (-4,-1);
+      \draw [vetor, color=black] (o) -- (a);
+      \draw [vetor, color=black] (b) -- (o);
+      \draw [vetor, color=black] (a) -- (b);
+      \node [above right] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [above left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      \node [below right] at ($(a)!0.5!(b)$) {$\vec{w}$};
+      \end{scope}
 
-`8.` Calcule `–\overrightarrow{BA}+\overrightarrow{CD}+\overrightarrow{BC}-\overrightarrow{AD}`. 
+
+`8.` Para um quadrilátero qualquer, calcule: `–\overrightarrow{BA}+\overrightarrow{CD}+\overrightarrow{BC}-\overrightarrow{AD}`. 
 
 `9.` Na figura abaixo, determine as coordendas do vetor `\vec{v}` em cada um dos itens.
 
-    .. figure:: _resources/Figura7.png
-     :width: 700px
-     :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \tikzstyle{eixos}=[->]
+      \newcommand \vectorbox{
+      \draw [eixos] (-4.5,0) -- (4.5,0);
+      \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+      {        
+      \coordinate (A\x) at ($(0,0)+(\x,0)$) {};
+      \draw ($(A\x)+(0,2pt)$) -- ($(A\x)-(0,2pt)$);
+      \node [below, scale=0.5] at ($(A\x)-(0,0.5ex)$) {\x};
+      }
+      \draw [eixos] (0,-4.5) -- (0,4.5);
+      \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+      {        
+      \coordinate (A\x) at ($(0,0)+(0,\x)$) {};
+      \draw ($(A\x)+(2pt,0)$) -- ($(A\x)-(2pt,0)$);
+      \node [left, scale=0.5] at ($(A\x)-(0.5ex,0)$) {\x};
+      }
+      }
+      \matrix[column sep=2ex, row sep=2ex, x=0.4cm, y=0.4cm]{
+      \vectorbox
+      \node [above] at (-4,4.5) {(a)};
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (2,3);
+      \draw [vetor, color=black, very thick] (o) -- (a);
+      \node [above left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \draw [ densely dotted,thick] (a|-o) -- (a) -- (o|-a);
+      &
+      \vectorbox
+      \node [above] at (-4,4.5) {(b)};
+      \coordinate (or) at (0,0);
+      \coordinate (o) at (1,2);
+      \coordinate (a) at (4,1);
+      \draw [vetor, color=black, very thick] (o) -- (a);
+      \node [above right] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \draw [ densely dotted,thick] (a|-or) -- (a) -- (or|-a);
+      \draw [ densely dotted,thick] (o|-or) -- (o) -- (or|-o);
+      &
+      \vectorbox
+      \node [above] at (-4,4.5) {(c)};
+      \coordinate (or) at (0,0);
+      \coordinate (o) at (1,-2);
+      \coordinate (a) at (-3,1);
+      \draw [vetor, color=black, very thick] (o) -- (a);
+      \node [below left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \draw [ densely dotted,thick] (a|-or) -- (a) -- (or|-a);
+      \draw [ densely dotted,thick] (o|-or) -- (o) -- (or|-o);
+      \\};
+
 
 `10.` Considere o vetor `\overrightarrow{AB}=(3,2)` e o ponto `P=(0,-2)`. Encontre as coordenadas do ponto `Q` tal que `\overrightarrow{AB}=\overrightarrow{PQ}`.
 
@@ -179,9 +713,23 @@ Exercícios
 
 `14.` (FCC-SP) Qual é a relação entre os vetores `\vec{M}, \vec{N}, \vec{P}` e `\vec{R}` representados na figura?
 
-    .. figure:: _resources/Medicina13.png
-       :width: 200px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (-2,2);
+      \coordinate (b) at (3,2);
+      \coordinate (c) at (2,3);
+      \draw [vetor, color=black] (o) -- (a);
+      \node [below left] at ($(o)!0.5!(a)$) {$\vec{M}$};
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below right] at ($(o)!0.5!(b)$) {$\vec{P}$};
+      \draw [vetor, color=black] (a) -- (c);
+      \node [above left] at ($(a)!0.5!(c)$) {$\vec{N}$};
+      \draw [vetor, color=black] (b) -- (c);
+      \node [above right] at ($(b)!0.5!(c)$) {$\vec{R}$};
+
 
 a) `\vec{M} + \vec{N} + \vec{P} + \vec{R} = \vec{O}` 
 b) `\vec{P} + \vec{M} = \vec{R} + \vec{N}`
@@ -191,9 +739,20 @@ e) `\vec{P} + \vec{R} + \vec{N} = \vec{M}`
 
 `15.` (PUC-MG) Para o diagrama vetorial abaixo, a única igualdade correta é:
 
-    .. figure:: _resources/Medicina14.png
-       :width: 200px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (4,0);
+      \coordinate (b) at (3,-2);
+      \draw [vetor, color=black] (o) -- (a);
+      \node [above] at ($(o)!0.5!(a)$) {$\vec{a}$};
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below left] at ($(o)!0.5!(b)$) {$\vec{b}$};
+      \draw [vetor, color=black] (b) -- (a);
+      \node [right] at ($(a)!0.5!(b)$) {$\vec{c}$};
+
 
 a) `\vec{a}+\vec{b}=\vec{c}`
 b) `\vec{b}-\vec{a}=\vec{c}`
@@ -203,20 +762,103 @@ e) `\vec{c}-\vec{b}=\vec{a}`
 
 `16.` (UFC-2003) `\bf{M}` e `\bf{N}` são vetores de módulos iguais (`|\bf{M}|=|\bf{N}|=` `M`). O vetor `\bf{M}` é fixo e o vetor `\bf{N}` pode girar em torno do ponto O (veja figura) no plano formado por `\bf{M}` e `\bf{N}`. Sendo `\bf{R}=\bf{M}+\bf{N}`, indique, entre os gráficos abaixo, aquele que pode representar a variação de `|\bf{R}|` como função do ângulo `\theta` entre `\bf{M}` e `\bf{N}`.
 
-    .. figure:: _resources/Medicina23.png
-       :width: 200px
-       :align: center
-       
-    .. figure:: _resources/RespostasMedicina23.png
-       :width: 800px
-       :align: center   
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (5,0);
+      \coordinate (b) at (4,3);
+      \draw [vetor, color=black] (o) -- (a);
+      \node [below] at (a) {M};
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below right] at (b) {N};
+      \tkzMarkAngle[arc=l,size=1.3 cm, thick](a,o,b) node [right];
+      \tkzLabelAngle[pos=2](a,o,b) {$\theta$}; 
+      \newcommand \graphboxA{
+         \draw[->, thick](0,0)--(2.2,0);
+         \draw[->,thick](0,-.2)--(0,2.5);
+         \draw [thick] ($(0,1)+(2pt,0)$) -- ($(0,1)-(2pt,0)$);
+         \draw [thick] ($(0,2)+(2pt,0)$) -- ($(0,2)-(2pt,0)$);
+         \node [left] at (0,2) {2M};
+         \node [left] at (0,0) {0};
+         \draw [thick] ($(1,0)+(0,2pt)$) -- ($(1,0)-(0,2pt)$);
+         \draw [thick] ($(2,0)+(0,2pt)$) -- ($(2,0)-(0,2pt)$);
+         \node [below] at (1,0) {$\pi$};
+         \node [below] at (2,0) {$2\pi$};
+      }
+      \newcommand \graphboxB{
+         \begin{scope}[yshift=1cm]
+         \draw[->, thick](0,0)--(2.2,0);
+         \draw[->,thick](0,-1.25)--(0,1.5);
+         \draw [thick] ($(0,1)+(2pt,0)$) -- ($(0,1)-(2pt,0)$);
+         \draw [thick] ($(0,-1)+(2pt,0)$) -- ($(0,-1)-(2pt,0)$);
+         \node [left] at (0,1) {2M};
+         \node [left] at (0,-1) {-2M};
+         \node [left] at (0,0) {0};
+         \draw [thick] ($(1,0)+(0,2pt)$) -- ($(1,0)-(0,2pt)$);
+       	  \draw [thick] ($(2,0)+(0,2pt)$) -- ($(2,0)-(0,2pt)$);
+         \node [below] at (1,0) {$\pi$};
+         \node [below] at (2,0) {$2\pi$};
+         \end{scope}
+      }
+      \matrix[column sep=2ex, row sep=2ex, x=2cm, y=1cm]{
+      \graphboxA
+      \node at (-0.2,3) {a)};
+      \draw [help lines, lightgray] (2pt,2) -- (1,2);
+      \draw[domain=0:2, samples=100]plot(\x,{1-cos(deg(pi*\x))});=function ];
+      &
+      \graphboxA
+      \node at (-0.2,3) {b)};
+      \draw[domain=0:2, samples=100]plot(\x,{1+cos(deg(pi*\x))});=function ];
+      &
+      \graphboxB
+      \node at (-0.2,3) {c)};
+      \draw [help lines, lightgray] (2pt,0) -- (1,0);
+      \draw[domain=0:2, samples=100]plot(\x,{1+cos(deg(pi*\x))});=function ];
+      \\
+      \graphboxB
+      \node at (-0.2,3) {d)};
+      \draw [help lines, lightgray] (2pt,0) -- (0.5,0);
+      \draw[domain=0:2, samples=100]plot(\x,{1+cos(deg(2*pi*\x))});=function ];
+      &
+      \graphboxA
+      \node at (-0.2,3) {e)};
+      \draw[domain=0:2, samples=100]plot(\x,{1+cos(deg(2*pi*\x))});=function ];
+		      \\};
+
+
+   .. figure:: _resources/Medicina23.png
+      :width: 200px
+      :align: center
+      
+   .. figure:: _resources/RespostasMedicina23.png
+      :width: 800px
+      :align: center   
 
 `17.` (UFC-2006) Analisando a disposição dos vetores `\overrightarrow{BA}, \overrightarrow{EA}, \overrightarrow{CB}, \overrightarrow{CD}` e `\overrightarrow{DE}`, conforme figura abaixo, assinale a alternativa que contém a relação vetorial correta.
 
-    .. figure:: _resources/Medicina31.png
-       :width: 200px
-       :align: center
-       
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (a) at (-2,2);
+      \coordinate (b) at (-1,3.5);
+      \coordinate (c) at (-0.5,0.5);
+      \coordinate (d) at (4,-1);
+      \coordinate (e) at (3,1.5);
+      \draw [vetor, color=black] (c) -- (b);
+      \draw [vetor, color=black] (b) -- (a);
+      \draw [vetor, color=black] (c) -- (d);
+      \draw [vetor, color=black] (d) -- (e);
+      \draw [vetor, color=black] (e) -- (a);
+      \node [below left] at (a) {$A$};
+      \node [above] at (b) {$B$};
+      \node [below] at (c) {$C$};
+      \node [below right] at (d) {$D$};
+      \node [above] at (e) {$E$};
+
+
 a) `\overrightarrow{CB} + \overrightarrow{CD} + \overrightarrow{DE} = \overrightarrow{BA} + \overrightarrow{EA}` 
 b) `\overrightarrow{BA} + \overrightarrow{EA} + \overrightarrow{CB} = \overrightarrow {DE} + \overrightarrow{CD}` 
 c) `\overrightarrow{EA} - \overrightarrow{DE} + \overrightarrow{CB} = \overrightarrow{BA} + \overrightarrow{CD}` 
@@ -225,9 +867,28 @@ e) `\overrightarrow{BA} - \overrightarrow{DE} - \overrightarrow{CB} = \overright
 
 `18.` (UFB) Observe a figura a seguir e determine quais vetores que:
 
-    .. figure:: _resources/FisVest1.png
-       :width: 250px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (0,0) [step=0.5cm] grid (6,5);
+      \draw [vetor, thick] (1,3) -- (1,5); 
+      \node [left] at (1,3.5) {$\vec{A}$};
+      \draw [vetor, thick] (4,5) -- (2,5); 
+      \node [above] at (3,5) {$\vec{B}$};
+      \draw [vetor, thick] (1,2) -- (3,4); 
+      \node [right] at (2,2.5) {$\vec{C}$};
+      \draw [vetor, thick] (1,0) -- (3,2); 
+      \node [right] at (2,0.5) {$\vec{D}$};
+      \draw [vetor, thick] (4,3) -- (4,1); 
+      \node [right] at (4,2.5) {$\vec{E}$};
+      \draw [vetor, thick] (5,2) -- (5,4); 
+      \node [right] at (5,3.5) {$\vec{F}$};
+      \draw [vetor, thick] (3,0) -- (6,0); 
+      \node [above] at (4.5,0) {$\vec{G}$};
+      \end{scope}
+
 
 a) tem a mesma direção.
 b) tem o mesmo sentido.
@@ -238,9 +899,24 @@ d) são iguais.
 
 `20.` (CFT-CE) Dados os vetores `\vec{a}, \vec{b}, \vec{c}, \vec{d}` e `\vec{e}` a seguir representados, obtenha o módulo do vetor soma `\vec{R} = \vec{a}+\vec{b}+\vec{c}+\vec{d}+\vec{e}`. 
 
-    .. figure:: _resources/FisVest11_1.png
-       :width: 500px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (0,0) [step=0.5cm] grid (16,6);
+      \draw [vetor, thick] (1,2) -- (4,5); 
+      \node [above left] at (3,4) {$\vec{a}$};
+      \draw [vetor, thick] (3,1) -- (7,1); 
+      \node [above right] at (4,1) {$\vec{b}$};
+      \draw [vetor, thick] (10,4) -- (6,4); 
+      \node [above right] at (8,4) {$\vec{c}$};
+      \draw [vetor, thick] (12,4) -- (12,0); 
+      \node [above left] at (12,1) {$\vec{d}$};
+      \draw [vetor, thick] (12,6) -- (15,3); 
+      \node [above right] at (14,4) {$\vec{e}$};
+      \end{scope}
+
 
 a) zero
 b) `\sqrt{10}`
@@ -250,9 +926,20 @@ e) `\sqrt{52}`
 
 `21.` (UEL-PR) Na figura a seguir estão desenhados dois vetores (`\vec{x}` e `\vec{y}`). Esses vetores representam deslocamentos sucessivos de um corpo. Qual é o módulo do vetor igual a `\vec{x}+\vec{y}` ?
 
-    .. figure:: _resources/FisVest15.png
-       :width: 250px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \begin{scope}[x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (0,0) [step=0.5cm] grid (7,7);
+      \draw [vetor, thick] (1,1) -- (4,6); 
+      \node [above left] at (3,4) {$\vec{x}$};
+      \draw [vetor, thick] (4,6) -- (5,4); 
+      \node [ right] at (4.5,5.5) {$\vec{y}$};
+      \node [right, rotate=-90, scale=0.5] at (5.2,2) {1 cm};
+      \node [below, scale=0.5] at (4.5,1) {1 cm};
+      \end{scope}
+
 
 a) 4 cm
 b) 5 cm
@@ -262,9 +949,23 @@ e) 25 cm
 
 `22.`  (UnB-DF) Sobre a composição dos vetores a seguir podemos dizer que:
 
-    .. figure:: _resources/FisVest19.png
-       :width: 300px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (2,2);
+      \coordinate (b) at (4,-2);
+      \coordinate (c) at (6,0);
+      \draw [vetor, color=black] (o) -- (a);
+      \node [above left] at ($(o)!0.5!(a)$) {$\vec{v_1}$};
+      \draw [vetor, color=black] (a) -- (b);
+      \node [above right] at ($(a)!0.3!(b)$) {$\vec{v_2}$};
+      \draw [vetor, color=black] (b) -- (c);
+      \node [below right] at ($(b)!0.5!(c)$) {$\vec{v_3}$};
+      \draw [vetor, color=black] (c) -- (o);
+      \node [below] at ($(c)!0.7!(o)$) {$\vec{v_4}$};
+
 
 a) `\overrightarrow{v_1} + \overrightarrow{v_2} + \overrightarrow{v_3} = \overrightarrow{v_4}` 
 b) `\overrightarrow{v_1} + \overrightarrow{v_2} + \overrightarrow{v_3} + \overrightarrow {v_4} = \vec{0}` 
@@ -273,9 +974,20 @@ d) `\overrightarrow{v_4} + \overrightarrow{v_2} + \overrightarrow{v_3} = \overri
 
 `23.` (UnB-DF) É dado o diagrama vetorial da figura. Qual a expressão correta?
 
-    .. figure:: _resources/FisVest20.png
-       :width: 200px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (o) at (0,0);
+      \coordinate (a) at (4,1);
+      \coordinate (b) at (3,-3);
+      \draw [vetor, color=black] (o) -- (a);
+      \node [above left] at ($(o)!0.5!(a)$) {$\vec{A}$};
+      \draw [vetor, color=black] (o) -- (b);
+      \node [below left] at ($(o)!0.5!(b)$) {$\vec{B}$};
+      \draw [vetor, color=black] (a) -- (b);
+      \node [below right] at ($(a)!0.5!(b)$) {$\vec{C}$};
+
 
 a) `\vec{B}+\vec{C}=-\vec{A}`
 b) `\vec{A}+\vec{B}=\vec{C}`
@@ -285,9 +997,31 @@ e) `\vec{B}-\vec{A}=\vec{C}`
 
 `24.` (UCSal-BA) Dado o conjunto de vetores, marque V para as questões verdadeiras e F para as falsas.
 
-    .. figure:: _resources/FisVest25.png
-       :width: 300px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \coordinate (a) at (0,0);
+      \coordinate (b) at (4,0);
+      \coordinate (c) at (4,1.5);
+      \coordinate (d) at (-0.5,2);
+      \coordinate (e) at (2,3);
+      \draw [vetor] (a) -- (b);
+      \draw [vetor] (b) -- (c);
+      \draw [vetor] (c) -- (d);
+      \draw [vetor] (a) -- (d);
+      \draw [vetor] (c) -- (a);
+      \draw [vetor] (d) -- (e);
+      \draw [vetor] (e) -- (c);
+      \node [below] at ($(a)!0.5!(b)$) {$\vec{u}$};
+      \node [right] at ($(b)!0.5!(c)$) {$\vec{v}$};
+      \node [above left] at ($(a)!0.5!(c)$) {$\vec{w}$};
+      \node [left] at ($(a)!0.5!(d)$) {$\vec{x}$};
+      \node [above] at ($(d)!0.5!(c)$) {$\vec{s}$};
+      \node [above left] at ($(d)!0.5!(e)$) {$\vec{y}$};
+      \node [above right] at ($(e)!0.5!(c)$) {$\vec{z}$};
+      
+      
 
 a) `\vec{y}+\vec{z}=\vec{s}`
 b) `\vec{x}+\vec{w}=-(\vec{y}+\vec{z})`
@@ -298,9 +1032,26 @@ f) `-\vec{u}+\vec{x}+\vec{y}+\vec{z}-\vec{v}=\vec{0}`
 
 `25.` (UFC) Na figura a seguir, onde o reticulado forma quadrados de lado `L=0,50cm`, estão desenhados dez vetores, contidos no plano `xy`. O módulo da soma de todos esses vetores é, em centímetros:
 
-    .. figure:: _resources/FisVest27.png
-       :width: 400px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \begin{scope}[ x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (0,0) [step=0.5cm] grid (16,12);
+      \draw [->, thick] (-0.5,0) -- (16.5,0); 
+      \draw [->, thick] (0,-0.5) -- (0,12.5); 
+      \draw [vetor, very thick, color=black] (12,4) -- (10,6); 
+      \draw [vetor, very thick, color=black] (10,6) -- (9,4); 
+      \draw [vetor, very thick, color=black] (9,4) -- (7,6); 
+      \draw [vetor, very thick, color=black] (7,6) -- (6,4); 
+      \draw [vetor, very thick, color=black] (6,4) -- (3,6); 
+      \draw [vetor, very thick, color=black] (3,7) -- (6,9); 
+      \draw [vetor, very thick, color=black] (6,9) -- (7,7); 
+      \draw [vetor, very thick, color=black] (7,7) -- (9,9); 
+      \draw [vetor, very thick, color=black] (9,9) -- (10,7); 
+      \draw [vetor, very thick, color=black] (10,7) -- (12,9); 
+      \end{scope}
+
 
 a) 0,0
 b) 0,50
@@ -314,9 +1065,24 @@ e) 2,0
 (II) `\vec{b}=2\vec{j}`
 (III) `\vec{b}+\vec{c}=+1\vec{i}`
 
-    .. figure:: _resources/FisVest33.png
-       :width: 250px
-       :align: center
+   .. tikz::
+      
+      \usetikzlibrary{calc}
+      \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+      \begin{scope}[ x=0.5cm, y=0.5cm]
+      \draw [style=help lines, lightgray] (0,0) [step=0.5cm] grid (5,5);
+      \draw [vetor, thick] (0,2) -- (2,5); 
+      \node [above left] at (1,3) {$\vec{a}$};
+      \draw [vetor, thick] (2,0) -- (2,2); 
+      \node [above right] at (2,1) {$\vec{b}$};
+      \draw [vetor, thick] (3,4) -- (4,2); 
+      \node [above right] at (3.3,3) {$\vec{c}$};
+      \draw [vetor, color=black] (0,0) -- (0,1);
+      \draw [vetor, color=black] (0,0) -- (1,0);
+      \node [below] at (1,0) {$\vec{i}$};
+      \node [left] at (0,1) {$\vec{j}$};
+      \end{scope}
+
 
 Podemos afirmar que:
 
@@ -361,27 +1127,229 @@ e) há apenas uma correta.
      
      `3.` A resposta dada na figura abaixo foi encontrada utilizando a regra do triângulo para calcular o vetor soma `\vec{u}+\vec{v}`.
      
-     .. figure:: _resources/Figura2_resposta.png
-        :width: 600px
-        :align: center
+     .. tikz::
+     
+        \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+        \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+        \begin{scope}[x=0.5cm, y=0.5cm]
+        \usetikzlibrary{calc}
+        \matrix{
+        \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+        \node at (-2.5,2.5) {(a)};
+        \coordinate (o) at (-1,0);
+        \coordinate (a) at (2,1);
+        \coordinate (b) at (-2,-2);
+        \draw [vetor, color=black] (o) -- (a);
+        \draw [vetor, color=black] (b) -- (o);
+        \node [above] at ($(o)!0.5!(a)$) {$\vec{v}$};
+        \node [left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+        \draw [vetor, color=destacado] (b) -- (a);
+        \node [below right, color=destacado] at ($(a)!0.5!(b)$) {$\vec{u}+\vec{v}$};
+        &
+        \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (4,3);
+        \node at (-2.5,2.5) {(b)};
+        \coordinate (o) at (-1,0);
+        \coordinate (a) at (2,0);
+        \coordinate (b) at (-1,1);
+        \draw [vetor, color=black] (o) -- (a);
+        \draw [vetor, color=black] (o) -- (b);
+        \node [below] at ($(o)!0.5!(a)$) {$\vec{v}$};
+        \node [left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+        \draw [vetor, color=atento] (-1,1) -- (2,1);
+        \node [above, color=atento] at ($(-1,1)!0.5!(2,1)$) {$\vec{v}$};
+        \draw [vetor, color=destacado] (-1,0) -- (2,1);
+        \node [right, color=destacado] at (1.5,0.5) {$\vec{u}+\vec{v}$};
+        &
+        \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+        \node at (-2.5,2.5) {(c)};
+        \coordinate (oa) at (0,0);
+        \coordinate (a) at (2,2);
+        \coordinate (ob) at (-1,1);
+        \coordinate (b) at (-1,-2);
+        \draw [vetor, color=black] (oa) -- (a);
+        \draw [vetor, color=black] (ob) -- (b);
+        \node [above left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+        \node [left] at ($(ob)!0.5!(b)$) {$\vec{u}$};
+        \draw [vetor, color=atento] (b) -- (1,0);
+        \node [below right, color=atento] at (0,-1) {$\vec{v}$};
+        \draw [vetor, color=destacado] (ob) -- (1,0);
+        \node [right, color=destacado] at (1,0.5) {$\vec{u}+\vec{v}$};
+        &
+        \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+        \node at (-2.5,2.5) {(d)};
+        \coordinate (oa) at (-1,1);
+        \coordinate (a) at (1,0);
+        \coordinate (ob) at (-1,-1);
+        \coordinate (b) at (1,-2);
+        \draw [vetor, color=black] (oa) -- (a);
+        \draw [vetor, color=black] (b) -- (ob);
+        \node [above right] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+        \node [above right] at ($(ob)!0.5!(b)$) {$\vec{u}$};
+        \node [below left, color=atento] at ($(ob)!0.5!(b)$) {$\vec{v}$};
+        \draw [vetor, color=atento, dashed] (ob) -- (b);
+        \node [ color=destacado] at (0,-3) {$\vec{u}+\vec{v}=\vec{0}$};
+        \\};
+        \end{scope} 
+        
         
      `4.` Para encontrar a resposta mostrada na figura abaixo, primeiramente encontramos o vetor `–\vec{v}` justaposto ao vetor `\vec{u}`, e então aplicamos a regra do triângulo para calcular `\vec{u}-\vec{v}`. Para facilitar a visualização, o vetor v foi omitido da resposta.
      
-     .. figure:: _resources/Figura3_resposta.png
-        :width: 600px
-        :align: center 
+     .. tikz::
+     
+        \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+        \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+        \begin{scope}[x=0.5cm, y=0.5cm]
+        \usetikzlibrary{calc}
+        \matrix{
+          \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+          \node at (-2.5,2.5) {(a)};
+          \coordinate (o) at (-1,-1);
+          \coordinate (a) at (1,1);
+          \coordinate (b) at (2,-1);
+          \draw [vetor, color=atento] (a) -- (o);
+          \draw [vetor, color=black] (o) -- (b);
+          \node [above left, color=atento] at ($(o)!0.5!(a)$) {$-\vec{v}$};
+          \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+          \draw [vetor, color=destacado] (a) -- (b);
+          \node [above right, color=destacado] at ($(a)!0.5!(b)$) {$\vec{u}-\vec{v}$};
+          &
+          \draw [style=help lines, lightgray] (-3,-3) [step=0.5cm] grid (3,3);
+          \node at (-2.5,2.5) {(b)};
+          \coordinate (o) at (-1,1);
+          \coordinate (a) at (2,2);
+          \coordinate (b) at (1,-1);
+          \draw [vetor, color=black, color=atento] (o) -- (a);
+          \draw [vetor, color=black] (b) -- (o);
+          \node [above, color=atento] at ($(o)!0.5!(a)$) {$-\vec{v}$};
+          \node [below left] at ($(o)!0.5!(b)$) {$\vec{u}$};
+          \draw [vetor, color=destacado] (b) -- (a);
+          \node [above right, color=destacado] at ($(a)!0.5!(b)$) {$\vec{u}-\vec{v}$};
+          &
+          \draw [style=help lines, lightgray] (-4,-4) [step=0.5cm] grid (3,3);
+          \node at (-2.5,2.5) {(c)};
+          \coordinate (oa) at (-1,-1);
+          \coordinate (a) at (2,2);
+          \coordinate (ob) at (1,-3);
+          \coordinate (b) at (-1,-1);
+          \coordinate (res) at (-4,-4);
+          \draw [vetor, color=black] (oa) -- (a);
+          \draw [vetor, color=black] (ob) -- (b);
+          \node [above left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+          \node [above right] at ($(ob)!0.1!(b)$) {$\vec{u}$};
+          \draw [vetor, color=atento] (oa) -- (res);
+          \node [above left, color=atento] at ($(oa)!0.5!(res)$) {$-\vec{v}$};
+          \draw [vetor, color=destacado] (ob) -- (res);
+          \node [below right, color=destacado] at ($(res)!0.5!(ob)$) {$\vec{u}-\vec{v}$};
+          &
+          \draw [style=help lines, lightgray] (-3,-5) [step=0.5cm] grid (3,3);
+          \node at (-2.5,2.5) {(d)};
+          \node [ponto] (o) at (0,0) {};
+          \coordinate (a) at (3,0);
+          \coordinate (b) at (-2,0);
+          \draw [vetor, color=black] (o) -- (a);
+          \draw [vetor, color=black] (o) -- (b);
+          \node [below] at ($(o)!0.5!(a)$) {$\vec{v}$};
+          \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+          \coordinate (o) at (3,-2) {};
+          \coordinate (a) at (-2,-2);
+          \coordinate (b) at (1,-2);
+          \draw [vetor, color=atento] (b) -- (a);
+          \draw [vetor, color=black] (o) -- (b);
+          \node [below, color=atento] at ($(b)!0.5!(a)$) {$\vec{v}$};
+          \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+          \coordinate (o) at (3,-4) {};
+          \coordinate (b) at (-2,-4);
+          \draw [vetor, color=destacado] (o) -- (b);
+          \node [below, color=destacado] at ($(o)!0.5!(b)$) {$\vec{u}-\vec{v}$};
+        \\};
+        \end{scope}
+        
         
      `5.` Neste caso, a resposta foi encontrada utilizando a regra do paralelogramo.   
      
-     .. figure:: _resources/Figura4_resposta.png
-        :width: 300px
-        :align: center 
+     .. tikz::
+     
+        \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+        \begin{scope}[x=0.5cm, y=0.5cm]
+        \usetikzlibrary{calc}
+        \draw [style=help lines, lightgray] (-6,-5) [step=0.5cm] grid (6,5);
+        \coordinate (o) at (0,0);
+        \coordinate (a) at (-3,2);
+        \coordinate (b) at (2,2);
+        \coordinate (c) at (3,-2);
+        \coordinate (d) at (-2,-2);
+        \coordinate (e) at (-1,4);
+        \coordinate (f) at (5,0);
+        \coordinate (g) at (1,-4);
+        \coordinate (h) at (-5,0);
+
+        \draw [vetor, color=black] (o) -- (a);
+        \draw [vetor, color=black] (o) -- (b);
+        \node [below left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+        \node [below right] at ($(o)!0.5!(b)$) {$\vec{u}$};
+        \draw [vetor, color=atento] (o) -- (c);
+        \draw [vetor, color=atento] (o) -- (d);
+        \node [below left, color=atento] at ($(o)!0.5!(c)$) {$-\vec{v}$};
+        \node [above left, color=atento] at ($(o)!0.5!(d)$) {$-\vec{u}$};
+        \draw [vetor, color=destacado] (o) -- (e);
+        \draw [vetor, color=destacado] (o) -- (f);
+        \draw [vetor, color=destacado] (o) -- (g);
+        \draw [vetor, color=destacado] (o) -- (h);
+        \node [above right, color=destacado] at ($(o)!0.5!(e)$) {$\vec{u}+\vec{v}$};
+        \node [below right, color=destacado] at ($(o)!0.5!(f)$) {$\vec{u}-\vec{v}$};
+        \node [below left, color=destacado] at ($(o)!0.5!(g)$) {$-\vec{u}-\vec{v}$};
+        \node [below left, color=destacado] at ($(o)!0.6!(h)$) {$-\vec{u}+\vec{v}$};
+        \draw [help lines, lightgray] (e) -- (f) -- (g) -- (h) -- cycle;
+        \end{scope}
+     
+     
         
      `6.` Os vetores soma da figura abaixo foram encontrados aplicando a regra do paralelogramo.
      
-     .. figure:: _resources/Figura5_resposta_1.png
-        :width: 500px
-        :align: center 
+     .. tikz::
+     
+        \begin{scope}[x=0.5cm, y=0.5cm]
+        \usetikzlibrary{calc}
+        \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+        \draw [style=help lines, lightgray] (-2,-4) [step=0.5cm] grid (21,4);
+        \coordinate (oa) at (0,0);
+        \coordinate (ob) at (1,0);
+        \coordinate (a) at (-1,1);
+        \coordinate (b) at (3,0);
+        \draw [vetor, color=black] (oa) -- (a);
+        \draw [vetor, color=black] (ob) -- (b);
+        \node [below left] at ($(oa)!0.5!(a)$) {$\vec{v}$};
+        \node [below ] at ($(ob)!0.5!(b)$) {$\vec{u}$};
+
+        \coordinate (o) at (6,0);
+        \coordinate (a) at (5,1);
+        \coordinate (b) at (8,0);
+        \draw [vetor, color=black] (o) -- (a);
+        \draw [vetor, color=black] (o) -- (b);
+        \node [below left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+        \node [below right] at ($(o)!0.5!(b)$) {$\vec{u}$};
+
+        \coordinate (o) at (13,0);
+        \coordinate (a) at (10,3);
+        \coordinate (b) at (17,0);
+        \coordinate (c) at (16,-3);
+        \coordinate (d) at (14,3);
+        \coordinate (e) at (20,-3);
+
+        \draw [vetor, color=black] (o) -- (a);
+        \draw [vetor, color=black] (o) -- (b);
+        \draw [vetor, color=atento] (o) -- (c);
+        \draw [vetor, color=destacado] (o) -- (d);
+        \draw [vetor, color=destacado] (o) -- (e);
+
+        \node [below left] at ($(o)!0.5!(a)$) {$3\vec{v}$};
+        \node [below right] at ($(o)!0.5!(b)$) {$2\vec{u}$};
+        \node [below left, color=atento] at ($(o)!0.5!(c)$) {$-3\vec{v}$};
+        \node [below right, color=destacado] at ($(o)!0.5!(d)$) {$2\vec{u}+3\vec{v}$};
+        \node [ right, color=destacado] at ($(o)!0.5!(e)$) {$2\vec{u}-3\vec{v}$};
+        \draw [help lines, dashed] (c) -- (e) -- (d) -- (a);
+        \end{scope}
+     
         
      `7.` `\vec{u}+\vec{v}+\vec{w}=\vec{0}`.
      
@@ -408,10 +1376,23 @@ e) há apenas uma correta.
      
      `13.` Para dividirmos o vetor `\overrightarrow{AB}=(6,-3)` em 3 vetores de mesmo módulo, precisamos marcar dois pontos que chamaremos de `P_1` e `P_2`, como na figura abaixo. Neste caso, os vetores `\overrightarrow{AP_1}`, `\overrightarrow{P_1P_2}` e `\overrightarrow{P_2B}` possuem os mesmos módulo, direção e sentido. Ou seja, `\overrightarrow{AP_1}=\frac13\overrightarrow{AB}`,  `\overrightarrow{P_1P_2}=\frac13\overrightarrow{AB}` e `\overrightarrow{P_2B}=\frac13\overrightarrow{AB}`.
      
-     .. figure:: _resources/Figura8_resposta_2.png
-        :width: 300px
-        :align: center 
+     .. tikz::
      
+        \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+        \tikzstyle{vetor}=[->,line width=0.8pt,color=primario,>=latex]
+        \coordinate (A) at (0,0);
+        \node [ponto] (P1) at (3,0) {};
+        \node [ponto] (P2) at (6,0) {};
+        \coordinate (B) at (9,0);
+        \draw [vetor, color=black] (A) -- (P1);
+        \draw [vetor, color=black] (P1) -- (P2);
+        \draw [vetor, color=black] (P2) -- (B);
+        \node [left] at (A) {$A$};
+        \node [below] at (P1) {$P1$};
+        \node [below] at (P2) {$P2$};
+        \node [right] at (B) {$B$};
+        
+          
      Se `P_1=(a,b)`, então `\overrightarrow{AP_1}=(a+4,b-4)`. Logo, `(a+4,b-4)=\frac13(6,-3)=(2,-1)`, donde concluímos que `a=-2` e `b=3`. Portanto, `P_1=(-2,3)`.
 
      Considere agora `P_2=(c,d)`. Neste caso, `\overrightarrow{P_1P_2}=(c+2,d-3)=\frac13(6,-3)=(2,-1)`. Assim, `c=0` e `d=2`. Portanto, `P_2=(0,2)`.
