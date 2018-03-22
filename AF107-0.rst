@@ -128,17 +128,47 @@ Atividade: Na piscina
 
 Duas piscinas de 1000 litros cada estão sendo enchidas simultaneamente. A piscina 1 leva 5 horas para ficar completamente cheia e a piscina 2, 8 horas. A cada hora, o volume total de água em cada piscina foi sendo registrado em dois gráficos
 
-.. figure:: _resources/piscina1.png
-   :width: 400pt
-   :align: center
-   
-   Piscina 1
+.. tikz:: Piscina 1
 
-.. figure:: _resources/piscina2.png
-   :width: 400pt
-   :align: center
-   
-   Piscina 2
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=primario, fill=primario, shift only]
+   \begin{scope}[yscale=.5]
+   \draw[lightgray](0,0)grid[xstep=.25,ystep=.25](6,10);
+   \draw[gray](0,0)grid(6,10);
+   \draw[thick, ->](0,0)--(6,0)node [above left]{\tiny tempo(horas)};
+   \draw[thick, ->](-0,0)--(0,10);
+   \node[right, rotate=90]at (.2,5.5){\tiny capacidade(litros)};
+   \foreach \x in{0,1, 2, 3, 4, 5}
+   \node[ponto]at(\x,2*\x){};
+   \foreach\x in{0,1, 2, 3, 4, 5, 6}
+   \node[below] at(\x, 0){\tiny \x};
+   \foreach\y in{100, 200, 300, ..., 1000}
+   \node[left]at(0,.01*\y){\tiny \y};
+   \end{scope}
+
+.. tikz:: Piscina 2
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=primario, fill=primario, shift only]
+   \begin{scope}[yscale=.5]
+   \draw[lightgray](0,0)grid[xstep=.25,ystep=.25](8,10);
+   \draw[gray](0,0)grid(8,10);
+   \draw[thick, ->](0,0)--(8,0)node [above left]{\tiny tempo(horas)};
+   \draw[thick, ->](-0,0)--(0,10);
+   \node[right, rotate=90]at (.2,5.5){\tiny capacidade(litros)};
+   \node[ponto]at(0,0){};
+   \node[ponto]at(1,1.5){};
+   \node[ponto]at(2,2){};
+   \node[ponto]at(3,3){};
+   \node[ponto]at(4,5){};
+   \node[ponto]at(5,8){};
+   \node[ponto]at(6,9){};
+   \node[ponto]at(7,9.5){};
+   \node[ponto]at(8,10){};
+   \foreach\x in{0,1, 2, 3, 4, 5, 6, 7, 8}
+   \node[below] at(\x, 0){\tiny \x};
+   \foreach\y in{100, 200, 300, ..., 1000}
+   \node[left]at(0,.01*\y){\tiny \y};
+   \end{scope}
+
 
 #. Construa uma tabela com os dados de cada gráfico.
 #. As grandezas volume total de água e tempo de enchimento da piscina 1 são diretamente proporcionais? Explique.
@@ -352,47 +382,144 @@ De acordo com a definição, se as figuras são semelhantes, então existe uma f
 
 Considere um retângulo `R`, de lados `3` e `1,5`.
 
-.. figure:: _resources/atv_rot_1.png
-   :width: 300pt
-   :align: center
-   
-   Retângulo `R`.
+.. tikz:: Retângulo R
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only] 
+   \draw[thick,black,fill=primario] (0.,0.) -- (3.,0.) -- (3.,1.5) -- (0.,1.5) -- cycle;
+   \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+   \draw (0.,1.3) -- (0.2,1.3) -- (0.2,1.5) -- (0.,1.5); 
+   \draw (2.8,1.5) -- (2.8,1.3) -- (3.,1.3) -- (3.,1.5); 
+   \draw(3.,0.2) -- (2.8,0.2) -- (2.8,0.) -- (3.,0.);
+   \node[ponto]at(0,0){};
+   \node[ponto]at(3,0){};
+   \node[ponto]at(3,1.5){};
+   \node[ponto]at(0,1.5){};
+   \node[below ]at(0,0){$A$};
+   \node[below ]at(3,0){$B$};
+   \node[above ]at(3,1.5){$C$};
+   \node[above ]at(0,1.5){$D$};
+   \node[above]at(1.7,-.7){$ \overline{AB}=3$};
+   \node[right]at(3,.75){$ \overline{BC}=1.5$};
 
 Utilizando as ideias do texto anterior, responda as questões propostas.
 
 #. Observe o retângulo da figura a seguir e determine se ele é semelhante ou não ao retângulo `R`.
 
 
-   .. figure:: _resources/atv_rot_2.png
-      :width: 300pt
-      :align: center
+
+   .. tikz:: 
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick,black,fill=primario] (0.,0.) -- (6.,0.) -- (6.,1) -- (0.,1.)-- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw (0.,.8) -- (0.2,.8) -- (0.2,1) -- (0.,1); 
+      \draw (5.8,1) -- (5.8,.8) -- (6.,.8) -- (6.,1); 
+      \draw(6.,0.2) -- (5.8,0.2) -- (5.8,0.) -- (6.,0.);
+      \node[ponto]at(0,0){};
+      \node[ponto]at(6,0){};
+      \node[ponto]at(6,1){};
+      \node[ponto]at(0,1){};
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(6,0){$B$};
+      \node[above ]at(6,1){$C$};
+      \node[above ]at(0,1){$D$};
+      \node[above]at(3,-.7){$\overline{AB}=6$};
+      \node[right]at(6,.5){$\overline{BC}=1.5$}; 
+      
 
 #. Na figura a seguir temos a medida base de um retângulo em destaque, qual deve ser a medida de sua altura para que o retângulo gerado seja semelhante a `R`? Qual a função linear que relaciona esses dois retângulos?
 
+   .. tikz:: 
    
-   .. figure:: _resources/atv_rot_3.jpg
-      :width: 300pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \fill[bottom color=primario,top color =white] (0.,0.) -- (6.,0.) -- (6.,.5) -- (0.,.5) -- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw(6.,0.2) -- (5.8,0.2) -- (5.8,0.) -- (6.,0.);
+      \draw(0.,.5)--(0.,0.) -- (6.,0.) -- (6.,.5);
+      \node[ponto]at(0,0){};
+      \draw[fill](0,.6)circle(.5pt);
+      \draw[fill](0,.7)circle(.5pt);
+      \draw[fill](0,.8)circle(.5pt);
+      \node[ponto]at(6,0){};
+      \draw[fill](6,.6)circle(.5pt);
+      \draw[fill](6,.7)circle(.5pt);
+      \draw[fill](6,.8)circle(.5pt);
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(6,0){$B$};
+      \node[above ]at(6,1.5){$C$};
+      \node[above ]at(0,1.5){$D$};
+      \node[above]at(3,-.7){$\overline{AB}=6$};   
 
 #. Seguindo a mesma ideia do item anterior, qual deve ser a medida da altura desse novo retângulo de base `5`, para que ele seja semelhante a `R`? E neste caso, qual a função linear entre os retângulos?
 
+   .. tikz:: 
 
-   .. figure:: _resources/atv_rot_4.png
-      :width: 300pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \fill[bottom color=primario,top color =white] (0.,0.) -- (5.,0.) -- (5.,.5) -- (0.,.5) -- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw(5.,0.2) -- (4.8,0.2) -- (4.8,0.) -- (5.,0.);
+      \draw(0.,.5)--(0.,0.) -- (5.,0.) -- (5.,.5);
+      \node[ponto]at(0,0){};
+      \draw[fill](0,.6)circle(.5pt);
+      \draw[fill](0,.7)circle(.5pt);
+      \draw[fill](0,.8)circle(.5pt);
+      \node[ponto]at(5,0){};
+      \draw[fill](5,.6)circle(.5pt);
+      \draw[fill](5,.7)circle(.5pt);
+      \draw[fill](5,.8)circle(.5pt);
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(5,0){$B$};
+      \node[above ]at(5,1.5){$C$};
+      \node[above ]at(0,1.5){$D$};
+      \node[above]at(2.5,-.7){$\overline{AB}=5$};
+   
 
 #. Já na figura a seguir, apresentamos um retângulo de altura `4`, qual deve ser a medida da base desse novo retângulo, para que ele seja semelhante a `R`?
 
-   .. figure:: _resources/atv_rot_5.jpg
-      :width: 300pt
-      :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \fill[left color = white, right color =primario,] (2.,0.) -- (3.,0.) -- (3.,2.5) -- (2.,2.5) -- cycle;
+   \draw[thick] (2.,0.) -- (3.,0.) -- (3.,2.5) -- (2.,2.5) ;
+   \draw (2.8,2.5) -- (2.8,2.3) -- (3.,2.3) -- (3.,2.5); 
+   \draw(3.,0.2) -- (2.8,0.2) -- (2.8,0.) -- (3.,0.);
+   \node[ponto]at(0,0){};
+   \node[ponto]at(3,0){};
+   \node[ponto]at(3,2.5){};
+   \node[ponto]at(0,2.5){};
+   \node[below ]at(0,0){$A$};
+   \node[below ]at(3,0){$B$};
+   \node[above ]at(3,2.5){$C$};
+   \node[above ]at(0,2.5){$D$};
+   \node[right]at(3,1.25){$\overline{BC}=4$};
+   \draw[fill](1.7,0)circle(.5pt);
+   \draw[fill](1.8,0)circle(.5pt);
+   \draw[fill](1.9,0)circle(.5pt);
+   \draw[fill](1.7,2.5)circle(.5pt);
+   \draw[fill](1.8,2.5)circle(.5pt);
+   \draw[fill](1.9,2.5)circle(.5pt);
 
 #. Na figura a seguir, apresentamos um retângulo cuja base tem a mesma medida da base de `R` (igual a `3`), e cuja altura coincide com a de um triângulo equilátero de lado medindo `3`. Esse retângulo é semelhante a `R`?
 
 
-   .. figure:: _resources/atv_rot_6.jpg
-      :width: 300pt
-      :align: center
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[fill=primario,very thick](0,0)--(4,0)--(4,3.46)--(0,3.46)--cycle;
+      \draw[fill=terciario,very thick](0,0)--(4,0)--(2,3.46)--cycle;
+      \node[ponto]at(0,0){};
+      \node[ponto]at(4,0){};
+      \node[ponto]at(4,3.46){};
+      \node[ponto]at(0,3.46){};
+      \node[ponto]at(2,3.46){};
+      \node[below]at(0,0){$A$};
+      \node[below]at(4,0){$B$};
+      \node[above]at(4,3.46){$C$};
+      \node[above]at(0,3.46){$D$};
+      \node[above]at(2,3.46){$P$};
+      \node[above]at(2,-1.2){$\overline{AB}=\overline{AP}=\overline{PB}=3$};
+      
+
 
 #. Se utlizarmos a altura do retângulo da figura anterior na construção de um novo retângulo, qual deve ser a medida de sua base para que seja semelhante a `R`?
 
@@ -450,36 +577,38 @@ Atividade: Qual é a área?
 
 .. _fig-setor1:
 
-.. figure:: _resources/setor1.png
-   :width: 500pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(210:1) arc (210:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(250:1) arc (250:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(270:1) arc (270:0:1);\node at((-1,1){(c)}; \\};
 
 `2.` Agora, um dos setores circulares em amarelo tem área `18`. Qual é esse setor?
 
-
 .. _fig-setor2:
 
-.. figure:: _resources/setor2.png
-   :width: 500pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(330:1) arc (330:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(250:1) arc (250:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(300:1) arc (300:0:1);\node at((-1,1){(c)}; \\};
+   
+
 
 `3.` Explique a estratégia matemática que você utilizou para resolver os itens anteriores? Dentre os setores circulares apresentados a seguir, um deles tem área `7`. Aplique sua estratégia para determinar qual é esse setor.
 
 
 .. _fig-setor3:
 
-.. figure:: _resources/setor3.png
-   :width: 500pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(110:1) arc (110:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(126:1) arc (126:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(142:1) arc (142:0:1);\node at((-1,1){(c)}; \\};
 
 `4.` Possivelvemente você encontrou alguma dificuldade para determinar a resposta correta no item anterior. Que tal acrescentarmos uma informação a mais para ajudar na decisão?
 
 
 .. _fig-setor4:
 
-.. figure:: _resources/setor4.png
-   :width: 500pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(110:1) arc (110:0:1);\node at((-1,1){(a)}; \draw[atento] (.2,0) arc (0:110:.2);\node at(.4,.3){\tiny $ 110^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(126:1) arc (126:0:1);\node at((-1,1){(b)};\draw[atento] (.2,0) arc (0:126:.2);\node at(.4,.3){\tiny $ 126^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(142:1) arc (142:0:1);\node at((-1,1){(c)};\draw[atento] (.2,0) arc (0:142:.2);\node at(.4,.3){\tiny $ 142^\circ$}; \\};
+   
 
 `5.` E agora? Como você usou a medida do ângulo que determina o setor circular para ajudar no cálculo da área? Vamos fazer mais uma vez! Um dos setores apresentados a seguir tem área `4`. Determine esse setor.
 
@@ -488,9 +617,10 @@ Atividade: Qual é a área?
 
 .. _fig-setor5:
 
-.. figure:: _resources/setor5.png
-   :width: 500pt
-   :align: center
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(72:1) arc (72:0:1);\node at((-1,1){(a)}; \draw[atento] (.2,0) arc (0:72:.2);\node at(.4,.2){\tiny $ 72^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(60:1) arc (60:0:1);\node at((-1,1){(b)};\draw[atento] (.2,0) arc (0:60:.2);\node at(.5,.2){\tiny $ 60^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(45:1) arc (45:0:1);\node at((-1,1){(c)};\draw[atento] (.2,0) arc (0:45:.2);\node at(.5,.2){\tiny $ 45^\circ$};\\};
+   
 
 
 .. admonition:: Resposta 
@@ -516,9 +646,21 @@ Atividade: Qual é a área?
    
    Pense no seguinte caso: A área de um círculo de raio `2r` é igual ao dobro da área de um círculo de raio `r`? Ou ainda, é possível encontrar um número real (fixo) tal que `A(r)=k\cdot r`?
 
-   .. figure:: _resources/area_soma.png
-      :width: 400pt
-      :align: center
+   .. tikz::
+   
+      \fill[primario](-2,0)circle(2cm);
+      \node[right]at(0.2,0){\Huge =};
+      \fill[primario](2,0)circle(1cm);
+      \node[right]at(3.2,0){\Huge +};
+      \fill[primario](5,0)circle(1cm);
+      \node[right]at(6.2,0){\Huge ?};
+      \draw(-2,0)--+(50:2);
+      \node[left]at(-1.4,.8){$2r$};
+      \draw(2,0)--+(50:1);
+      \node[left]at(2.4,.5){$r$};
+      \draw(5,0)--+(50:1);
+      \node[left]at(5.4,.5){$r$};      
+      
 
 ********
 Explorando: taxa de variação média
@@ -655,16 +797,47 @@ Atividade: câmara frigorífica
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
    * É possível que os estudantes utilizem regra de três para responder as questões propostas no item a). A seguir iremos construir a representação gráfica da função linear, por isso é importante  fazer a conexão da regra de três com sua interpretação geométrica, destacando o uso da semelhança de triângulos.
+   .. tikz::
    
-   .. figure:: _resources/semelhanca_linear.jpg
-      :width: 200pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[->, thick](-3,0)--(5,0);
+      \draw[->, thick](0,-13)--(0,2);
+      \draw[primario, thick](0,0)--(4,-12);
+      \draw[dashed](0,-12)--(4,-12)--(4,0);
+      \node[ponto]at (0,0){};
+      \node[ponto]at (4,-12){};
+      \node[above,rotate=90] at(-1,-10){Temperatura $^\circ$C};
+      \node[above] at(5,0){Tempo (h)};
+      \node[above] at(4,0){8};
+      \node[left] at(0,-12){$-24$};
+      \node[above] at(2,0){$t$};
+      \node[left] at(0,-6){$f(t)$};
+      \draw[dashed](2,0)--(2,-6)--(0,-6);
+      \node[ponto]at (2,-6){};
+
 
 Uma câmara frigorífica está programada para diminuir sua temperatura segundo uma taxa constante em `^\circ C` por hora. Na primeira observação constata-se que ela está a `0^\circ C`. Após `8` horas, realiza-se uma nova observação e seu visor mostra a temperatura de `-24^\circ C` e também o seguinte gráfico para a evolução da temperatura em função do tempo.
 
-.. figure:: _resources/decrescente_1.png
-   :width: 200pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw(-3,-.05) grid(5,.05);
+   \draw(-.05,-12) grid(.05,2);
+   \draw[->, thick](-3,0)--(5,0);
+   \draw[->, thick](0,-12)--(0,2);
+   \draw[primario, thick](0,0)--(4,-12);
+   \draw[dashed](0,-12)--(4,-12)--(4,0);
+   \node[ponto]at (0,0){};
+   \node[ponto]at (4,-12){};
+   \node[above,rotate=90] at(-1,-10){Temperatura $^\circ$C};
+   \node[above] at(4,0){Tempo (h)};
+   \foreach\x in{-4, -2, 0, 2, 4, 6, 8}
+   \node[below left] at (.5*\x, 0){\x};
+   \foreach \y in{-24, -22, -20, ..., -2}
+   \node[left]at(0,.5*\y){\y};
+   \node[left]at(0,1){2};
+   \node[left]at(0,2){4};
+
 
 #. Qual a temperatura da câmara `1` hora após a primeira observação? E `5` horas após a primeira observação? E `t` horas após a primeira observação?
 #. Qual o valor da taxa (de variação média) constante segundo a qual a temperatura diminui?
@@ -684,10 +857,22 @@ Uma câmara frigorífica está programada para diminuir sua temperatura segundo 
    #. `f:[0,8] \to \mathbb{R}`, `f(t)=-3t`. `f` é uma função decrescente, pois a medida que o tempo aumenta a temperatura correspondente diminui. Ou ainda, para quaisquer tempos `t_1` e `t_2` tais que `t_1 < t_2` tem-se que `-3t_1>-3t_2`, isto é, `f(t_1)>f(t_2)`.
    
    #. A expressão da função é `f(t) =1,5\cdot t`. É uma função crescente, pois a medida que o tempo aumenta a temperatura correspondente também aumenta.
-   
-      .. figure:: _resources/tesp_frigorifico.jpg
-         :width: 250pt
-         :align: center
+
+
+      .. tikz::
+
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+         \draw[->, thick](-1,0)--(6,0)node[above, xshift=-.5cm]{Tempo (h)};
+         \draw[->, thick](0,-1)--(0,7)node[left,xshift=-.7cm, rotate=90]{Temperatura ($^\circ$C)};
+         \draw[primario, domain=0:4.4]plot(\x, 1.5*\x);
+         \node[below]at (1,0){1};
+         \node[below]at (4,0){8};
+         \node[left]at (0,1.5){1.5};
+         \node[left]at (0,6){12};
+         \draw[dashed](0,1.5)--(1,1.5)--(1,0);
+         \draw[dashed](0,6)--(4,6)--(4,0);
+         
+
    
    #. Quando a taxa de variação média de uma função linear é um número real *positivo*, a função é *crescente* e quando a taxa é um número real *negativo*, a função é *descrescente*.
    
@@ -753,10 +938,20 @@ O tempo total de recarga da bateria (de `0\%` a `100\%`) de um determinado model
       +---------+----------------------+
    
    #.
-   
-      .. figure:: _resources/pontos_bateria.jpg
-         :width: 250pt
-         :align: center
+
+      .. tikz::
+      
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]         
+         \draw[->, thick](-1,0)--(6,0) node[above]{tempo(min)};
+         \draw[->, thick](0,-1)--(0,6);
+         \foreach \x/\y in{25/20, 50/40, 75/60, 100/80, 125/100}
+         \node[ponto]at(.04*\x, .05*\y){};
+         \foreach \x/\y in{25/20, 50/40, 75/60, 100/80, 125/100}
+         \draw[dashed](.04*\x,0)--(.04*\x,.05*\y)--(0,.05*\y)node[left]{\y} node[below] at(.04*\x,0){\x};
+         \node[ponto]at(0,0){};
+         \node[below left]at(0,0){0};
+         
+
 
    #. A partir da representação dos pontos no plano cartesiano pode-se concluir, usando semelhança de triângulos, que se em `25` minutos a carga na bateria é de `20\%` então em `40` minutos a carga será de `32\%`.
    
@@ -817,24 +1012,64 @@ Vamos agora entender como é a representação gráfica de uma função com taxa
 
 Na figura a seguir, os pontos `A=(x_1,f(x_1))` e `B=(x_2,f(x_2))` pertencem ao gráfico da função `f`. O segmento `BC` mede `f(x_2)-f(x_1)` e o segmento `AC` mede `x_2-x_1`. Dessa forma o quociente `\dfrac{\overline{BC}}{\overline{AC}}` é igual à taxa de variação média da função nesse intervalo, e portanto podemos conluir que `\overline{BC}=a\cdot \overline{AC}`.
 
-.. figure:: _resources/grafico1.1.jpg
-   :width: 300pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](0,1)--(3,1);
+   \draw[dashed](0,2.5)--(3,2.5);
+   \draw[dashed](1,0)--(1,1)--(3,2.5)--(3,0);
+   \node[below] at(1,0){$x_1$};
+   \node[below] at(3,0){$x_2$};
+   \node[below] at(2,1){$x_2-x_1$};
+   \node[right, rotate=0] at(3,1.75){$f(x_2)-f(x_1)$};
+   \node[left] at(0,1){$f(x_1)$};
+   \node[left] at(0,2.5){$f(x_2)$};
+   \node[ponto]at(1,1){};
+   \node[above]at(1,1){$A$};
+   \node[ponto]at(3,1){};
+   \node[right]at(3,1){$C$};
+   \node[ponto]at(3,2.5){};
+   \node[right]at(3,2.5){$B$};
+
 
 .. math::
    \dfrac{\overline{BC}}{\overline{AC}}= \dfrac{f(x_2)-f(x_1)}{x_2-x_1}=a \Longrightarrow \overline{BC}=a\cdot \overline{AC}.
 
 Por isso, quaisquer dois pontos do gráfico de `f`, sempre serão extremidades da hipotenusa de um triângulo retângulo cujos catetos são paralelos aos eixos e suas medidas se relacionam conforme a seguinte figura.
 
-.. figure:: _resources/grafico2_1.jpg
-   :width: 200pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](1,1)--(3,1);
+   \draw[dashed](1,1)--(3,2.5)--(3,1);
+   \node[below] at(2,1){$d$};
+   \node[right, rotate=0] at(3,1.75){$a\cdot d$};
+   \node[ponto]at(1,1){};
+   \node[ponto]at(3,1){};
+   \node[ponto]at(3,2.5){};
 
 Consideremos agora três pontos do gráfico de `f` com os respectivos triângulos retângulos da construção anterior.
 
-.. figure:: _resources/grafico3.jpg
-   :width: 300pt
-   :align: center
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](.5,1)--(3,3.5)--(3,2)--(1.5,2)--(1.5,1)--cycle;
+   \node[ponto]at(.5,1){};
+   \node[ponto]at(1.5,2){};
+   \node[ponto]at(3,3.5){};
+   \node[below]at(1,1){$d$};
+   \node[right]at(1.5,1.4){$a\cdot d$};
+   \node[above]at(2.3,2){$D$};
+   \node[right]at(3,2.7){$a\cdot D$};
+   \draw(1.5,1)rectangle++(-1mm, 1mm);
+   \draw(3,2)rectangle++(-1mm, 1mm);
+   
 
 Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir que os três pontos pertencem a uma mesma reta. A conclusão é válida quaisquer que sejam os três pontos considerados, logo acabamos de justificar a seguinte propriedade.
 
@@ -858,10 +1093,24 @@ Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir 
 
       f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
    
+
+   .. tikz::
    
-   .. figure:: _resources/taxa.png
-      :width: 350pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick,->](-1,0)--(4,0);
+      \draw[thick,->](0,-1)--(0,4);
+      \draw[domain=-.5:2, thick, primario]plot(\x,2*\x);
+      \draw[dashed, thick](.5,0)--(.5,1)--(0,1);
+      \draw[dashed, thick](1.5,0)--(1.5,3)--(0,3);
+      \draw[dashed, thick](.5,1)--(1.5,1);
+      \node[ponto] at(.5,1){};
+      \node[ponto] at(1.5,3){};
+      \node[right] at(1.5,2){$a$};
+      \node[below] at(1,1){$1$};
+      \node[below] at(1.5,.1){$x+1$};
+      \node[below] at(.5,0){$x$};
+      \node[left] at(0,3){$f(x+1)$};
+      \node[left] at(0,1){$f(x)$};   
    
    * Para taxas de variação médias positivas, quanto maior for o valor de `a`, mais inclinada será a reta que contém o gráfico da função linear associada.
    
@@ -887,25 +1136,58 @@ Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir 
 
       \dfrac{f(x)}{x}=\dfrac{y_0}{x_0} \Longrightarrow f(x)=\dfrac{y_0}{x_0} \cdot x
 
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \usetikzlibrary[patterns]
+      \fill[color=terciario](2,0)--(2,1.5)--(0,0)-- cycle;
+      \fill[pattern color=secundario, pattern =north east lines](3,0)--(3,2.25)--(0,0)-- cycle;
+      \draw[dashed](2,0)--(2,1.5)--(0,1.5);
+      \draw[dashed](3,0)--(3,2.25)--(0,2.25);
+      \draw[thick, ->](-1.5,0)--(4,0);
+      \draw[thick, ->] (0,-1.5)--(0,3.5);
+      \draw[thick,primario,domain=-1.5:4]plot(\x,.75*\x);
+      \node[ponto]at(2, 1.5){};
+      \node[ponto]at(3, 2.25){};
+      \node[below] at(2,0){$x$};
+      \node[below] at(3,0){$x_0$};
+      \node[left] at(0,1.5){$f(x)$};
+      \node[left] at(0,2.25){$y_0$};
 
-   .. figure:: _resources/reciproca.png
-      :width: 350pt
-      :align: center
 
    Assim, por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`.
    
+
+   .. tikz::
    
-   .. figure:: _resources/38.png
-      :width: 350pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick, ->](-2,0)--(5,0);
+      \draw[thick, ->] (0,-1.5)--(0,5);
+      \draw[thick,primario,samples=100,domain=-.5:1.5]plot(\x, 3*\x);
+      \draw[dashed](.5,0)--(.5,1.5)--(0,1.5);
+      \node[ponto]at(.5,1.5){};
+      \node[right]at(.5,1.5){$(3,8)$};
+      \node[below]at(.5,0){$3$};
+      \node[left]at(0,1.5){$8$};
 
-      Gráfico da função `f(x)=\dfrac 83 x`.
+   Gráfico da função `f(x)=\dfrac 83 x`
+
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick, ->](-3,0)--(3,0);
+      \draw[thick, ->] (0,-1.5)--(0,3);
+      \draw[dashed](-1.5,0)--(-1.5,.5)--(0,.5);
+      \node[above] at(-1.5,.5){$(-5,2)$};
+      \node[below] at(-1.5,0){$-5$};
+      \node[right] at(0,.5){$2$};
+      \draw[domain=-3:3,thick,primario,samples=100]plot(\x,{-\x/3});
+      \node[ponto] at(-1.5,.5){};
       
-   .. figure:: _resources/25.png
-      :width: 350pt
-      :align: center
+      
 
-      Gráfico da função `g(x)=-\dfrac{2}{5}x`.
+   Gráfico da função `g(x)=-\dfrac{2}{5}x`.
 
    Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.
 
@@ -963,7 +1245,21 @@ Há `1` ano você adquiriu um purificador de água com capacidade de refrigeraç
    #. `9` litros.
    #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
    #. `f(t)=9t`.
+
+
+   .. tikz::
    
-   .. figure:: _resources/grafico_filtro.jpeg
-      :width: 350pt
-      :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]   
+      \draw[thick,->](-3,0)--(3,0)node[ right]{$t$};
+      \draw[thick,->](0,-2)--(0,10)node[right]{$f(t)$};
+      \draw[lightgray](-3,-2) grid[xstep=.2,ystep=.2](3,10);
+      \draw[gray](-3,-2) grid(3,10);
+      \foreach \x in { -3, -2,-1}
+      \node at  (\x ,-.3)  {\x};
+      \foreach \x in {3, 2,1}
+      \node at  (\x ,-.3)  {\x};
+      \foreach \x in { -2,-1}
+      \node at  (-.3 ,\x)  {\x};
+      \foreach \x in {1, 2, 3, ..., 10}
+      \node at  (-.3 ,\x)  {\x};
+      \draw[domain=-.2:1.1, primario,very thick, samples=100]plot(\x,9*\x);
