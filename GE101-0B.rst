@@ -24,19 +24,41 @@ Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento 
 
 .. _fig-geometria-operacoesvetores-01:
 
-.. figure:: _resources/SegmentoDeReta_1.png
-   :width: 200pt
-   :align: center
+   .. tikz::
 
-   Segmento de reta `AB` ou `BA`.
+      \node [ponto] (A) at (0,0) {};
+      \node [ponto] (B) at (2,0) {};
+      \node [above] at (A) {$A$};
+      \node [above] at (B) {$B$};
+      \node [above] at (4,0) {$r$};
+      \draw [very thick] (A) -- (B);
+      \draw [dashed, thick] (-2,0) -- (4,0);
+
+      Segmento de reta `AB` ou `BA`.
 
 Observe que em um segmento de reta `AB` é possível estabelecer duas orientações: de A para B e de B para A, como ilustrado na :numref:`fig-geometria-operacoesvetores-02`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico as setas.
 
 .. _fig-geometria-operacoesvetores-02:
 
-.. figure:: _resources/SegmentosOrientados_2.png
-   :width: 200pt
-   :align: center
+.. tikz::
+
+   \matrix{
+   \node [ponto] (A) at (0,0) {};
+   \node [ponto] (B) at (2,0) {};
+   \node [above] at (A) {$A$};
+   \node [above] at (B) {$B$};
+   \node [above] at (4,0) {$r$};
+   \draw [vetor, color=black, very thick] (A) -- (B);
+   \draw [dashed, thick] (-2,0) -- (4,0);
+   \\
+   \node [ponto] (A) at (0,0) {};
+   \node [ponto] (B) at (2,0) {};
+   \node [above] at (A) {$A$};
+   \node [above] at (B) {$B$};
+   \node [above] at (4,0) {$r$};
+   \draw [vetor, color=black, very thick] (B) -- (A);
+   \draw [dashed, thick] (-2,0) -- (4,0);
+   \\};
 
    Segmento de reta orientados de `A` para `B` e de `B` para `A`.
 
@@ -49,11 +71,36 @@ O *módulo do segmento orientado* é o comprimento do segmento de reta que o def
 
 .. _fig-geometria-operacoesvetores-03:
 
-.. figure:: _resources/SegmentosMesmaDirecao_1.png
-   :width: 500pt
-   :align: center
+.. tikz:: Como os segmentos $AB$ e $CD$ estão sobre a reta $r$, então eles possuem a mesma direção. Já os segmentos $EF$ e $GH$ estão sobre retas paralelas $s$ e $t$, então esses segmentos são paralelos.
 
-   Como os segmentos `AB` e `CD` estão sobre a reta `r`, então eles possuem a mesma direção. Já os segmentos `EF` e `GH` estão sobre retas paralelas `s` e `t`, então esses segmentos são paralelos.
+   \node [ponto] (A) at (0,0) {};
+   \node [ponto] (B) at (1,1) {};
+   \node [ponto] (C) at (2,2) {};
+   \node [ponto] (D) at (3.3,3.3) {};
+   \node [above left] at (A) {$A$};
+   \node [above left] at (B) {$B$};
+   \node [above left] at (C) {$C$};
+   \node [above left] at (D) {$D$};
+   \node [above left] at (-1,-1) {$r$};
+   \draw  (-1,-1) -- (4,4);
+   \draw [color=atento, very thick] (A) -- (B);
+   \draw [color=destacado, very thick] (C) -- (D);
+   \node [ponto] (E) at (5,2) {};
+   \node [ponto] (F) at (7,2) {};
+   \node [above] at (E) {$E$};
+   \node [above] at (F) {$F$};
+   \node [above] at (4,2) {$s$};
+   \draw  (4,2) -- (10,2);
+   \draw [color=primario, very thick] (E) -- (F);
+   \node [ponto] (G) at (6,0) {};
+   \node [ponto] (H) at (8.5,0) {};
+   \node [above] at (G) {$G$};
+   \node [above] at (H) {$H$};
+   \node [above] at (3.5,0) {$t$};
+   \draw  (3.5,0) -- (9.5,0);
+   \draw [color=terciario, very thick] (G) -- (H);
+
+   
 
 O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos os sentidos da direita e o da esquerda.
 
@@ -65,9 +112,15 @@ Na :numref:`fig-geometria-operacoesvetores-04`, embora os segmentos orientados t
 
 .. _fig-geometria-operacoesvetores-04:
 
-.. figure:: _resources/Flechas_1.png
-   :width: 200pt
-   :align: center
+.. tikz::
+
+   \foreach \i in {0,2,...,6}{
+      \foreach \j in {0,...,2}{
+         \pgfmathsetmacro{\x}{random(0,2)};
+         \pgfmathsetmacro{\y}{random(0,10)};
+      \draw [vetor, color=black] ({\i+\x/2},{\j+\y/10}) -- ({\i+\x/2+1},{\j+\y/10+0.5});
+      };
+   };	
 
    Segmentos orientados com mesmo módulo, direção e sentido.
 
@@ -104,11 +157,21 @@ Na :numref:`fig-geometria-operacoesvetores-05`, os vetores `\vec{u}` e `\vec{v}`
 
 .. _fig-geometria-operacoesvetores-05:
 
-.. figure:: _resources/DoisVetoresIguais.png
-   :width: 250pt
-   :align: center
+.. tikz:: {$\vec{u}$} e $\vec{v}$ são vetores iguais.
 
-   `\vec{u}` e `\vec{v}` são vetores iguais.
+   \coordinate (A) at (0,0) {};
+   \coordinate (B) at (1,1) {};
+   \draw [dashed, thick] (-1,-1) -- (2,2);
+   \node [left] at (2,2) {$r$};
+   \draw [vetor, color=black, very thick] (A) -- (B);
+   \node [above left] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \coordinate (C) at (2,0) {};
+   \coordinate (D) at (3,1) {};
+   \draw [dashed, thick] (1,-1) -- (4,2);
+   \node [left] at (4,2) {$s$};
+   \draw [vetor, color=black, very thick] (C) -- (D);
+   \node [above left] at ($(C)!0.5!(D)$) {$\vec{v}$};
+
 
 Não é necessário que todas as características dos vetores sejam diferentes para que eles sejam diferentes. Se pelo menos pelo menos uma das  características de dois vetores for diferente, então esses vetores são diferentes. 
 
@@ -116,11 +179,20 @@ Na :numref:`fig-geometria-operacoesvetores-06`, `\vec{u}` e `\vec{v}` não são 
 
 .. _fig-geometria-operacoesvetores-06:
 
-.. figure:: _resources/VetoresSentidosOpostos.png
-   :width: 250pt
-   :align: center
+.. tikz:: `\vec{u}` e `\vec{v}` possuem sentidos opostos.
 
-   `\vec{u}` e `\vec{v}` possuem sentidos opostos.
+   \coordinate (A) at (0,0) {};
+   \coordinate (B) at (1,1) {};
+   \draw [dashed, thick] (-1,-1) -- (2,2);
+   \node [left] at (2,2) {$r$};
+   \draw [vetor, color=black, very thick] (A) -- (B);
+   \node [above left] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \coordinate (C) at (2,0) {};
+   \coordinate (D) at (3,1) {};
+   \draw [dashed, thick] (1,-1) -- (4,2);
+   \node [left] at (4,2) {$s$};
+   \draw [vetor, color=black, very thick] (D) -- (C);
+   \node [above left] at ($(C)!0.5!(D)$) {$\vec{v}$};
 
 
 **Importante:** Para cada direção, já sabemos que existem dois sentidos. Assim, caso dois vetores possuam a mesma direção, podemos comparar seus sentidos. Caso contrário, não é possível fazer tal comparação.
@@ -164,33 +236,69 @@ Na :numref:`fig-geometria-operacoesvetores-08`, o vetor soma `\vec{u}+\vec{v}` r
 
 .. _fig-geometria-operacoesvetores-08:
 
-.. figure:: _resources/SomaVetoresJustapostos_1.png
-   :width: 150pt
-   :align: center
+.. tikz:: Soma de dois vetores justapostos `\vec{u}` e `\vec{v}`.
 
-   Soma de dois vetores justapostos `\vec{u}` e `\vec{v}`.
+   \node [ponto] (B) at (0,0) {};
+   \node [above] at (B) {$B$};
+   \node [ponto] (A) at (-1,-2) {};
+   \node [below left] at (A) {$A$};
+   \node [ponto] (C) at (2,-0.5) {};
+   \node [right] at (C) {$C$};
+   \draw [vetor] (A) -- (B);
+   \draw [vetor] (B) -- (C);
+   \node [above left] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \node [above] at ($(B)!0.5!(C)$) {$\vec{v}$};
+   \draw [vetor, color=destacado] (A) -- (C);
+   \node [below right, color=destacado] at ($(A)!0.5!(C)$) {$\vec{u}+\vec{v}$};
+
 
 Com essa definição, é possível somar dois vetores tal que o representante do primeiro possui extremidade final coincidente com a extremidade inicial do representante do segundo, ou seja, quando os representantes dos vetores estão justapostos. E caso isso não aconteça, é possível realizar essa operação? Sim, nesta situação basta escolher um outro representante do segundo vetor de forma que sua extremidade inicial coincida com a extremidade final do primeiro, e então aplicar a definição como no caso anterior.
 
 .. _fig-geometria-operacoesvetores-09:
 
-.. figure:: _resources/SomaVetores_parte1.png
-   :width: 200pt
-   :align: center
+.. tikz:: Vetores `\vec{u}` e `\vec{v}` não justapostos.
 
-   Vetores `\vec{u}` e `\vec{v}` não justapostos.
+   \node [ponto] (B) at (0,0) {};
+   \node [above] at (B) {$B$};
+   \node [ponto] (A) at (-1,-2) {};
+   \node [below left] at (A) {$A$};
+   \node [ponto] (D) at (3,0.5) {};
+   \node [right] at (D) {$D$};
+   \node [ponto] (C) at (1,1) {};
+   \node [left] at (C) {$C$};
+   \draw [vetor, color=atento] (A) -- (B);
+   \draw [vetor, color=destacado] (C) -- (D);
+   \node [above left, color=atento] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \node [above, color=destacado] at ($(C)!0.5!(D)$) {$\vec{v}$};
+
 
 Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{u}`, representado por `\overrightarrow{AB}`, e `\vec{v}`, representado por `\overrightarrow{CD}`. Como os representantes de `\vec{u}` e `\vec{v}` não estão justapostos, é necessário escolher um outro representante do vetor `\vec{v}` justaposto ao representante de `\vec{u}` e então aplicar a definição. Sendo `\overrightarrow{BP}` um representante de `\vec{v}` justaposto à `\overrightarrow{AB}`, como na :numref:`fig-geometria-operacoesvetores-09.1`, o vetor com extremidade inicial em `A` e extremidade final em `P` é um representante do vetor soma `\vec{u}+\vec{v}`.
 
 .. _fig-geometria-operacoesvetores-09.1:
 
-.. figure:: _resources/SomaVetores_parte2.png
-   :width: 200pt
-   :align: center
+.. tikz:: Soma de dois vetores quaisquer.
 
-   Soma de dois vetores quaisquer.
+   \node [ponto] (B) at (0,0) {};
+   \node [above] at (B) {$B$};
+   \node [ponto] (A) at (-1,-2) {};
+   \node [below left] at (A) {$A$};
+   \node [ponto] (D) at (3,0.5) {};
+   \node [right] at (D) {$D$};
+   \node [ponto] (C) at (1,1) {};
+   \node [left] at (C) {$C$};
+   \node [ponto] (P) at (2,-0.5) {};
+   \node [right] at (P) {$P$};
+   \draw [vetor, color=atento] (A) -- (B);
+   \draw [vetor, color=destacado] (C) -- (D);
+   \draw [vetor, color=destacado] (B) -- (P);
+   \draw [vetor, color=black] (A) -- (P);
+   \node [above left, color=atento] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \node [above, color=destacado] at ($(C)!0.5!(D)$) {$\vec{v}$};
+   \node [above, color=destacado] at ($(B)!0.5!(P)$) {$\vec{v}$};
+   \node [below right, color=black] at ($(A)!0.5!(P)$) {$\vec{u}+\vec{v}$};
 
-**Importante:** Na :numref:`fig-geometria-operacoesvetores-09` temos dois representantes do vetor `\vec{v}`, sendo eles os segmentos orientados `\overrightarrow{BP}` e `\overrightarrow{CD}`. Esses dois segmentos, por possuírem o mesmo módulo, direção e sentido, pertencem à mesma coleção e por isso dão origem ao mesmo vetor.
+
+**Importante:** Na :numref:`fig-geometria-operacoesvetores-09.1` temos dois representantes do vetor `\vec{v}`, sendo eles os segmentos orientados `\overrightarrow{BP}` e `\overrightarrow{CD}`. Esses dois segmentos, por possuírem o mesmo módulo, direção e sentido, pertencem à mesma coleção e por isso dão origem ao mesmo vetor.
 
 É possível observar nos exemplos anteriores que, em geral, os dois vetores a serem somados e o vetor soma formam um triângulo. Devido a isso, esse método que utilizamos para somar vetores é conhecido como *Regra do Triângulo*.
 
@@ -212,11 +320,35 @@ Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{
 
    .. _fig-geometria-operacoesvetores-10:
 
-   .. figure:: _resources/RegraParalelogramo_1.png
-      :width: 150pt
-      :align: center
+   .. tikz:: Regra do paralelogramo.
+   
+      \coordinate (a) at (0,-1);
+      \coordinate (b) at (-1.2,0);
+      \coordinate (c) at (1,0);
+      \coordinate (d) at (2.2,2);
+      \node [ponto] (A) at (0,0) {};
+      \node [ponto] (B) at (-1.2,1) {};
+      \node [ponto] (C) at (1.2,2) {};
+      \node [ponto] (D) at (0,3) {};
+      \node [below] at (A) {$A$};
+      \node [left] at (B) {$B$};
+      \node [right] at (C) {$C$};
+      \node [above] at (D) {$D$};
+      \draw [vetor, color=black, very thick] (a) -- (b);
+      \draw [vetor, color=black, very thick] (c) -- (d);
+      \draw [vetor, color=black, thick] (A) -- (B);
+      \draw [vetor, color=black, thick] (A) -- (C);
+      \draw [vetor, color=black, thick] (A) -- (D);
+      \draw [vetor, color=black, thick] (B) -- (D);
+      \draw [vetor, color=black, thick] (C) -- (D);
+      \node [below left] at ($(a)!0.5!(b)$) {$\vec{u}$};
+      \node [below right] at ($(c)!0.5!(d)$) {$\vec{v}$};
+      \node [below left] at ($(A)!0.5!(B)$) {$\vec{u}$};
+      \node [below right] at ($(A)!0.5!(C)$) {$\vec{v}$};
+      \node [above right] at ($(C)!0.5!(D)$) {$\vec{u}$};
+      \node [above left] at ($(B)!0.5!(D)$) {$\vec{v}$};
+      \node [above, rotate=-90] at ($(A)!0.5!(D)$) {$\vec{u}+\vec{v}$};
 
-      Regra do paralelogramo.
 
    Escolhemos o ponto `A` para ser a extremidade inicial dos representantes de `\vec{u}` e `\vec{v}`. Sejam então, `\overrightarrow{AB}` e `\overrightarrow{AC}` os representantes de `\vec{u}` e `\vec{v}`, respectivamente. Agora, a partir de `B` trace um outro representante de `\vec{v}`, digamos `\overrightarrow{BD}`, e a partir de `C` tracemos um outro representante de `\vec{u}`, digamos `\overrightarrow{CD}`. É fácil ver que esta construção produz um paralelogramo (quadrilátero que possui lados opostos paralelos e congruentes). Assim, pela regra do triângulo aplicada aos segmentos `\overrightarrow{AB}` e `\overrightarrow{BD}` justapostos, `\overrightarrow{AD}` é um representante do vetor soma `\vec{u}+\vec{v}`. Note que `\overrightarrow{AD}` poderia também ser determinado traçando a diagonal do paralelogramo `ABDC` e por isso, esse método costuma ser chamado de *Regra do Paralelogramo*.
 
@@ -238,21 +370,35 @@ para qualquer vetor `\vec{v}`.
 
    .. _fig-geometria-operacoesvetores-11:
 
-   .. figure:: _resources/VetoresSimetricos_3.png
-      :width: 300pt
-      :align: center
+   .. tikz:: Vetores Simétricos.
+   
+      \filldraw [white, fill opacity=0] (-2,-1) rectangle (2,1);
+      \coordinate (a) at (-2,0);
+      \coordinate (b) at (-0.25,0);
+      \coordinate (c) at (0.25,0);
+      \coordinate (d) at (2,0);
+      \draw [vetor, color=black, very thick] (a) -- (b);
+      \draw [vetor, color=black, very thick] (d) -- (c);
+      \node [below ] at ($(a)!0.5!(b)$) {$\vec{v}$};
+      \node [below ] at ($(c)!0.5!(d)$) {$-\vec{v}$};
 
-      Vetores Simétricos.
 
    O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{v}` para `\vec{u}`.
 
    .. _fig-geometria-operacoesvetores-12:
 
-   .. figure:: _resources/DiferencaVetores_1.png
-      :width: 150pt
-      :align: center
-
-      Vetor diferença `\vec{v}-\vec{u}`.
+   .. tikz:: Vetor diferença `\vec{v}-\vec{u}`.
+   
+      \coordinate (B) at (0,0) {};
+      \coordinate (A) at (-1,-2) {};
+      \coordinate (C) at (2,-0.5) {};
+      \draw [vetor,color=black] (A) -- (B);
+      \draw [vetor,color=black] (C) -- (B);
+      \node [above left] at ($(A)!0.5!(B)$) {$\vec{v}$};
+      \node [above] at ($(B)!0.5!(C)$) {$\vec{u}$};
+      \draw [vetor, color=destacado] (A) -- (C);
+      \node [below right, color=destacado] at ($(A)!0.5!(C)$) {$\vec{v}-\vec{u}$};
+      
 
 Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`).
 
@@ -260,10 +406,30 @@ Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o
 
 .. _fig-geometria-operacoesvetores-13:
 
-.. figure:: _resources/IMG_3464.jpg
-   :width: 200pt
+.. tikz:: Associatividade da soma de vetores.
 
-   Associatividade da soma de vetores.
+   \node [ponto] (B) at (0,0) {};
+   \node [above left] at (B) {$B$};
+   \node [ponto] (A) at (-1,-2) {};
+   \node [below left] at (A) {$A$};
+   \node [ponto] (D) at (5,-2) {};
+   \node [below right] at (D) {$D$};
+   \node [ponto] (C) at (3,0) {};
+   \node [above right] at (C) {$C$};
+   \draw [vetor, color=black] (A) -- (B);
+   \draw [vetor, color=black] (C) -- (D);
+   \draw [vetor, color=black] (B) -- (C);
+   \draw [vetor, color=black] (B) -- (D);
+   \draw [vetor, color=black] (A) -- (D);
+   \draw [vetor, color=black] (A) -- (C);
+   \node [above left, color=black] at ($(A)!0.5!(B)$) {$\vec{u}$};
+   \node [above right, color=black] at ($(C)!0.5!(D)$) {$\vec{w}$};
+   \node [above, color=black] at ($(C)!0.5!(B)$) {$\vec{v}$};
+   \node [above right, color=black] at ($(C)!0.5!(D)$) {$\vec{w}$};
+   \node [above left, color=black, rotate=30] at ($(A)!0.5!(C)$) {$\vec{u}+\vec{v}$};
+   \node [above right, color=black, rotate=-22] at ($(B)!0.5!(D)$) {$\vec{v}+\vec{w}$};
+   \node [above, color=black] at ($(A)!0.5!(D)$) {$( \vec{u}+\vec{v} ) + \vec{w}$};
+   \node [below, color=black] at ($(A)!0.5!(D)$) {$ \vec{u}+ ( \vec{v}  + \vec{w} )$};
 
 
 Aplicando a regra do triângulo aos vetores `\vec{u}` e  `\vec{v}`, obtemos `\overrightarrow{AC}` como representante de `\vec{u} + \vec{v}` . Novamente aplicando esta regra para somar `\vec{u} + \vec{v}` com `\vec{w}` a partir de seus representantes `\overrightarrow{AC}` e `\overrightarrow{CD}`, respectivamente, obtemos o vetor soma `(\vec{u} + \vec{v})+\vec{w}` que possui `\overrightarrow{AD}` como representante.
@@ -305,11 +471,28 @@ Assim, `\overrightarrow{AD}` é um representante dos vetores `(\vec{u} + \vec{v}
 
       .. _fig-geometria-operacoesvetores-14:
 
-      .. figure:: _resources/MultiplicacaoVetorPorReal.png
-         :width: 300pt
-         :align: center
-
-         Vetor multiplicação de `\vec{v}` por um número real.
+      .. tikz:: Vetor multiplicação de `\vec{v}` por um número real.
+      
+         \coordinate (A) at (0,0) {};
+         \coordinate (B) at (0.5,1) {};
+         \draw [vetor, color=black] (A) -- (B);
+         \node [left, color=black] at ($(A)!0.5!(B)$) {$\vec{v}$};
+         \coordinate (A) at (1,0) {};
+         \coordinate (B) at (2,2) {};
+         \draw [vetor, color=black] (A) -- (B);
+         \node [left, color=black] at ($(A)!0.5!(B)$) {$2\vec{v}$};
+         \coordinate (A) at (-1,0) {};
+         \coordinate (B) at (-0.75,0.5) {};
+         \draw [vetor, color=black] (A) -- (B);
+         \node [left, color=black] at ($(A)!0.5!(B)$) {$\frac{1}{2}\vec{v}$};
+         \coordinate (A) at (-2,0) {};
+         \coordinate (B) at (-1.5,1) {};
+         \draw [vetor, color=black] (B) -- (A);
+         \node [left, color=black] at ($(A)!0.5!(B)$) {$-\vec{v}$};
+         \coordinate (A) at (-3,0) {};
+         \coordinate (B) at (-1.5,3) {};
+         \draw [vetor, color=black] (B) -- (A);
+         \node [left, color=black] at ($(A)!0.5!(B)$) {$-3\vec{v}$};
 
 
 A partir desta definição, podemos perceber que:
@@ -334,20 +517,18 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
 
    #. `\overrightarrow{AB} = \overrightarrow{AM} + \overrightarrow{MB}`.
 
-        .. tikz::
-              \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-              \definecolor{qqqqff}{rgb}{0.,0.,1.}
-              \tikzset{>=latex}
-              \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$A$}] (v1) at (0,0) {};
-              \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$B$}] (v2) at (5,2) {};
-              \node [label={[anchor=south, inner sep=0pt,yshift=-0.5ex]south:$M$}] (v3) at (2.5,1) {};
-              \draw [fill=qqqqff] (v1) circle (0.4ex);
-              \draw [fill=qqqqff] (v2) circle (0.4ex);
-              \draw [fill=qqqqff] (v3) circle (0.4ex);
-              \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v2.center);
-              \draw [->,line width=0.8pt,color=qqqqff] (v1.center)  -- (v3.center);
-              \draw[] (0.8379,0.8781) node {$\overrightarrow{AM}$};
-              \draw[] (3.2725,1.7919) node {$\overrightarrow{MB}$};
+      .. tikz::
+      
+         \node[ponto] (v1) at (0,0) {};
+         \node[below] at (v1) {$A$};
+         \node[ponto] (v2) at (5,2) {};
+         \node[below] at (v2) {$B$};
+         \node[ponto] (v3) at (2.5,1) {};
+         \node[below] at (v3) {$M$};
+         \draw[vetor] (v1) -- (v3);
+         \draw[vetor] (v3) -- (v2);
+         \node[above left]  at ($(v1)!0.5!(v3)$) {$\overrightarrow{AM}$};
+         \node[above left] at ($(v2)!0.5!(v3)$) {$\overrightarrow{MB}$};
 
 
    #. `\overrightarrow{AM} = \frac{1}{2} \, \overrightarrow{AB}`.
@@ -366,27 +547,23 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
 
       .. tikz::
 
-              \begin{tikzpicture}[scale=0.9]
-              \definecolor{ffzzqq}{rgb}{1.,0.6,0.}
-              \definecolor{qqqqff}{rgb}{0.,0.,1.}
-              \tikzset{>=latex}
-              \node [label={[xshift=0.7ex,yshift=0.7ex]south west:$B$}] (v1) at (-3.8,1.6) {};
-              \node [label={north:$A$}] (v2) at (-1.44,6.84) {};
-              \node [label={[xshift=-0.7ex,yshift=0.7ex]south east:$C$}] (v3) at (3.4,1.72) {};
-              \node [label={west:$M$}] (v4) at (-2.62,4.22) {};
-              \node [label={east:$N$}] (v5) at (0.98,4.28) {};
-              \draw [fill=black] (v1) circle (0.3ex);
-              \draw [fill=black] (v2) circle (0.3ex);
-              \draw [fill=black] (v3) circle (0.3ex);
-              \draw [fill=black] (v4) circle (0.3ex);
-              \draw [fill=black] (v5) circle (0.3ex);
-              \draw [->] (v1.center)--(v2.center);
-              \draw [->] (v1.center)--(v4.center);
-              \draw [->] (v2.center)--(v3.center);
-              \draw [->] (v2.center)--(v5.center);
-              \draw [->, color=qqqqff] (v1.center)--(v3.center);
-              \draw [->, color=qqqqff] (v4.center)--(v5.center);
-              \end{tikzpicture}
+         \node[ponto] (v1) at (-3.8,1.6) {};
+         \node[ponto] (v2) at (-1.44,6.84) {};
+         \node[ponto] (v3) at (3.4,1.72) {};
+         \node[ponto] (v4) at (-2.62,4.22) {};
+         \node[ponto] (v5) at (0.98,4.28) {};
+         \node[below left] at (v1) {$B$};
+         \node[above] at (v2) {$A$};
+         \node[below right] at (v3) {$C$};
+         \node[left] at (v4) {$M$};
+         \node[right] at (v5) {$N$};
+         \draw [vetor, color=black] (v1)--(v2);
+         \draw [vetor, color=black] (v1)--(v4);
+         \draw [vetor, color=black] (v2)--(v3);
+         \draw [vetor, color=black] (v2)--(v5);
+         \draw [vetor, color=atento] (v1.center)--(v3.center);
+         \draw [vetor, color=atento] (v4.center)--(v5.center);
+         
 
 
 ..    .. tikz::

@@ -100,70 +100,72 @@
    Nessa articulação, uma particularidade pouco evidenciada teve que ser considerada: enquanto que, tradicionalmente, em Matemática, vetores são definidos como coleções de segmentos orientados de mesma direção, sentido e módulo, de modo que se é possível operá-los a partir de qualquer um de seus representantes, dependendo da situação física em questão, nem todos os representantes são válidos e até mesmo certas operações deixam de fazer sentido. Por exemplo, na figura a seguir, se `\overrightarrow{OA}` e `\overrightarrow{OB}` são os vetores posições relativas dos pontos `A` e `B` com relação ao ponto `O`,
    apesar da soma `\overrightarrow{OA} + \overrightarrow{OB}` estar definida matematicamente, ela não faz sentido no contexto físico em questão (note, contudo, que a diferença `\overrightarrow{OB} - \overrightarrow{OA}` faz sentido: `\overrightarrow{OB} - \overrightarrow{OA}` é o vetor deslocamento `\overrightarrow{AB}`).
 
-    .. tikz::
+   .. tikz::
 
-       \tikzset{>=latex}
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (-1.4,2.28);
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (1.58,1.68);
-       \draw [fill=qqqqff] (-1.98,-0.3) circle (1.0pt);
-       \draw[color=qqqqff] (-2.05,-0.60) node {$O$};
-       \draw [fill=qqqqff] (-1.4,2.28) circle (1.0pt);
-       \draw[color=qqqqff] (-1.4,2.57) node {$A$};
-       \draw [fill=qqqqff] (1.58,1.68) circle (1.0pt);
-       \draw[color=qqqqff] (1.8,1.81) node {$B$};
+      \node [ponto] (O) at (-1.98,-0.3) {};
+      \node [ponto] (A) at (-1.4,2.28) {};
+      \node [ponto] (B) at (1.58,1.68) {};
+      \node [above] at (A) {$A$};
+      \node [above right] at (B) {$B$};
+      \node [below left] at (O) {$O$};
+      \draw [vetor] (O) -- (A);
+      \draw [vetor] (O) -- (B);
 
    Outro exemplo: no contexto de vetores deslocamentos, na figura a seguir, a soma `\overrightarrow{AB} + \overrightarrow{CD}` não faz sentido (pois os segmentos orientados `\overrightarrow{AB}` e `\overrightarrow{CD}` não estão justapostos), enquanto que a soma `\overrightarrow{CD} + \overrightarrow{DE}` faz (`\overrightarrow{CD} + \overrightarrow{DE}` é o vetor deslocamento `\overrightarrow{CE}`).
 
    .. tikz::
 
-      \tikzset{>=latex}
-      \definecolor{qqqqff}{rgb}{0.,0.,1.}
-      \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
-      \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
-      \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
-      \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
-      \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
-      \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
-      \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
-      \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
-      \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
-      \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
-      \draw [fill=qqqqff] (3.92,4.9) circle (1.5pt);
-      \draw [->,line width=1.pt,color=qqqqff] (1.72,4.32) -- (3.92,4.9);
-      \draw[color=qqqqff] (4.2,5.05) node {$E$};
+      \node [ponto] (A) at (-1.74,1.16) {};
+      \node [ponto] (B) at (-0.36,2.98) {};
+      \node [ponto] (C) at (3.92,0.94) {};
+      \node [ponto] (D) at (1.72,4.32) {};
+      \node [ponto] (E) at (3.92,4.9) {};
+      \node [below left] at (A) {$A$};
+      \node [above right] at (B) {$B$};
+      \node [below right] at (C) {$C$};
+      \node [above left] at (D) {$D$};
+      \node [above right] at (E) {$E$};
+      \draw [vetor] (A) -- (B);
+      \draw [vetor] (C) -- (D);
+      \draw [vetor] (D) -- (E);
 
    Ainda nesta linha, observe que enquanto do ponto de vista da Matemática, a "regra do triângulo" e a "regra do paralelogramo" são equivalentes para se obter a soma de dois vetores, dependendo do contexto físico, uma regra pode ser mais natural do que a outra. Por exemplo, a "regra do triângulo" é mais natural no contexto da soma de vetores deslocamentos, enquanto que ela é artificial no caso da soma de vetores que representam forças (uma vez que, para forças, a linha de ação da força é relevante). Reciprocamente, a "regra do paralelogramo" é mais natural no contexto da soma de vetores que representam forças (com todos os vetores com suas extremidades iniciais coincidentes), mas ela é artificial no contexto de vetores deslocamentos.
 
-    .. tikz::
+   .. tikz::
 
-      \tikzset{>=latex}
-       \definecolor{ffqqqq}{rgb}{1.,0.,0.}
-       \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-       \definecolor{qqqqff}{rgb}{0.,0.,1.}
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (-1.4,2.28);
-       \draw [->,line width=0.8pt,color=qqqqff] (-1.98,-0.3) -- (1.58,1.68);
-       \draw [line width=0.8pt,dotted] (-1.4,2.28)-- (2.16,4.26);
-       \draw [line width=0.8pt,dotted] (2.16,4.26)-- (1.58,1.68);
-       \draw [->,line width=0.8pt,color=ffqqqq] (-1.98,-0.3) -- (2.16,4.26);
-       \draw [->,line width=0.8pt,color=qqqqff] (-9.45376,-0.3) -- (-5.89376,1.68);
-       \draw [->,line width=0.8pt,color=qqqqff] (-5.89376,1.68) -- (-5.31376,4.26);
-       \draw [->,line width=0.8pt,color=ffqqqq] (-9.45376,-0.3) -- (-5.31376,4.26);
-       \draw (-9.69334,-0.98342) node[anchor=north west] {Regra do Triângulo};
-       \draw (-2.37284,-0.98342) node[anchor=north west] {Regra do Paralelogramo};
-       \draw [fill=qqqqff] (-1.98,-0.3) circle (1.0pt);
-       \draw [fill=qqqqff] (-1.4,2.28) circle (1.0pt);
-       \draw[color=qqqqff] (-2.0082,1.1423) node {$\vec{v}$};
-       \draw [fill=qqqqff] (1.58,1.68) circle (1.0pt);
-       \draw[color=qqqqff] (0.31578,0.22779) node {$\vec{u}$};
-       \draw [fill=uuuuuu] (2.16,4.26) circle (1.5pt);
-       \draw[color=ffqqqq] (1.1084,2.166) node {$\vec{u} + \vec{v}$};
-       \draw [fill=qqqqff] (-9.45376,-0.3) circle (1.0pt);
-       \draw [fill=qqqqff] (-5.89376,1.68) circle (1.0pt);
-       \draw [fill=uuuuuu] (-5.31376,4.26) circle (1.5pt);
-       \draw[color=qqqqff] (-7.27092,0.20117) node {$\vec{u}$};
-       \draw[color=qqqqff] (-4.9816,2.59697) node {$\vec{v}$};
-       \draw[color=ffqqqq] (-8.114,2.1553) node {$\vec{u} + \vec{v}$};
+      \matrix{
+      \coordinate (a) at (-4.45,-0.3);
+      \coordinate (b) at (0.89,1.68);
+      \coordinate (c) at (0.31,4.26);
+      \node [ponto] at (a) {};
+      \node [ponto] at (b) {};
+      \node [ponto] at (c) {};
+      \draw [vetor] (a) -- (b);
+      \draw [vetor] (b) -- (c);
+      \draw [vetor,color=destacado]  (a) -- (c);
+      \node [below] at ($(a)!0.5!(b)$) {$\vec{u}$};
+      \node [right] at ($(b)!0.5!(c)$) {$\vec{v}$};
+      \node [above,rotate=45,color=destacado] at ($(a)!0.5!(c)$) {$\vec{u}$ + $\vec{v}$} ;
+      \draw (-4.69334,-0.98342) node[anchor=north west] {Regra do Triángulo};
+      &
+      \coordinate (o) at (-1.98,-0.3);
+      \coordinate (a) at (-1.4,2.28);
+      \coordinate (b) at (1.58,1.68);
+      \coordinate (c) at (2.16,4.26);
+      \node [ponto] at (o) {};
+      \node [ponto] at (a) {};
+      \node [ponto] at (b) {};
+      \node [ponto] at (c) {};
+      \draw [vetor] (o) -- (a);
+      \draw [vetor] (o) -- (b);
+      \draw [dotted] (a)-- (c);
+      \draw [dotted] (b)-- (c);
+      \draw [vetor,color=destacado] (o) -- (c);
+      \node [left] at ($(o)!0.5!(a)$) {$\vec{v}$};
+      \node [below] at ($(o)!0.5!(b)$) {$\vec{u}$};
+      \node [above,rotate=45,color=destacado] at ($(o)!0.5!(c)$)  {$\vec{u}$ + $\vec{v}$} ;
+      \draw (-2.37284,-0.98342) node[anchor=north west] {Regra do Paralelogramo};
+      \\};
 
    Para acomodar estas particularidades, alguns livros de Física e Engenharia introduzem nomes especiais: :index:`vetor fixo` (quando o vetor admite um único representante em uma posição específica no contexto físico), :index:`vetor deslizante` (quando o vetor admite qualquer representante de mesmo módulo e sentido em uma mesma reta) e :index:`vetor livre` (quando o vetor admite qualquer representante de mesmo módulo, direção e sentido em qualquer lugar do plano, ou seja, como o vetor tradicionalmente definido em Matemática). Esta terminologia já está aparecendo em livros de Matemática mais recentes usados em cursos de formação de professores (ver, por exemplo, [Anton-et-al-2007]_). Incorporar essa terminologia em sala de aula ainda é uma questão. Contudo, o mais importante, em nossa opinião, é que você tenha, antes de tudo, consciência das peculiaridades de cada caso, pois elas influenciam a maneira de como os alunos aprendem e fazem uso do conceito de vetor (conforme [Roche-1997]_).
    Também é preciso ficar atento ao fato de que, muito provavelmente, esta deve ser a primeira vez que o aluno verá um símbolo usado em contexto ("`+`" para adição de números) em outro contexto ("`+`" para representar a adição de vetores).
@@ -234,6 +236,10 @@ representa a localização de uma estação de pesquisa `A` na Antártida.
 
 
 .. _fig-geometria-vp-01:
+
+.. tikz::
+   
+   \vetoresmapaantartida{_resources/rosa.png}
 
 .. figure:: _resources/geometria-vp-01.jpg
    :width: 250pt
