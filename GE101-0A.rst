@@ -7,6 +7,53 @@ Como representar matematicamente esta variação de posição de `S` para `T`? I
 
 .. _fig-geometria-deslocamento-01:
 
+.. tikz::
+
+   \begin{scope}[line cap=round,line join=round,>=latex,x=0.001cm,y=0.001cm,scale=4]
+   \filldraw [white, fill opacity=100] (0,200) rectangle (2400,2200);
+   \draw [grafica, line width=2pt] (5.04401,1280.3)-- (209.455,435.9657720937503);
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{318.647*(1.0-t)**(3.0-1.0-0.0)*t**(0.0)+361.833*2.0*(1.0-t)**(3.0-1.0-1.0)*t**(1.0)+386.322*(1.0-t)**(3.0-1.0-2.0)*t**(2.0),244.11577209375037*(1.0-t)**(3.0-1.0-0.0)*t**(0.0)+239.9257720937503*2.0*(1.0-t)**(3.0-1.0-1.0)*t**(1.0)+279.9657720937503*(1.0-t)**(3.0-1.0-2.0)*t**(2.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{209.455*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+221.765*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+268.521*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+318.647*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),435.9657720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+367.1657720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+260.3257720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+244.11577209375037*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw [grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] (138.179,1855.6177720937503)-- (5.04401,1280.3367720937504);
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{386.322*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+442.508*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+460.402*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+460.402*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),279.9657720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+353.2857720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+327.1657720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+327.1657720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{460.402*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+534.808*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+707.814*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+841.606*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),327.1657720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+278.8157720937504*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+215.02577209375022*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+345.50577209375024*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{841.606*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+893.131*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+903.281*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+921.183*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),345.50577209375024*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+394.49577209375025*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+481.3057720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+547.9857720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{921.183*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+938.703*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1079.22*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1105.64*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),547.9857720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+613.2357720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1134.5767720937502*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1239.8967720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{1105.64*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1128.42*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1160.75*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1147.38*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1239.8967720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1330.6797720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1444.8177720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1475.4617720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{1147.38*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1107.46*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+892.385*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+843.739*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1475.4617720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1559.3737720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1584.0617720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1566.3457720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{843.739*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+744.842*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+683.333*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+606.76*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1566.3457720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1547.6357720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1415.9157720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1305.9957720937505*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{606.76*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+563.092*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+417.513*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+378.175*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1305.9957720937505*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1243.1287720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1068.8397720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1033.2157720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{378.175*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+288.797*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+186.292*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+169.032*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1033.2157720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+981.9757720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1071.3487720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1086.6437720937502*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{169.032*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+151.793*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+122.607*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+138.801*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1086.6437720937502*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1101.9217720937504*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1363.7277720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1381.6537720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{138.801*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+174.102*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+240.937*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+309.284*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1381.6537720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1421.4877720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1314.9407720937502*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1318.6827720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw [grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{309.284*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+371.309*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+365.138*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+365.138*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1318.6827720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1321.1957720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1403.8567720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1403.8567720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{365.138*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+361.754*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+356.028*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+238.092*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1403.8567720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1472.8107720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1464.6937720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1564.8117720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{238.092*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+221.71*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+199.238*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+192.319*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1564.8117720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1585.1927720937504*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1687.1847720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1714.9357720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{192.319*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+179.072*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+183.119*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+218.519*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1714.9357720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1770.2777720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1796.9417720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1799.0777720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{218.519*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+245.627*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+382.753*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+405.89*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1799.0777720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1794.1087720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1646.5287720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1631.5627720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{405.89*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+474.532*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+569.688*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+601.081*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1631.5627720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1577.3287720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1616.5497720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1640.3287720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{601.081*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+645.2*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+765.212*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+765.212*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1640.3287720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1681.8427720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1882.1817720937502*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1882.1817720937502*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{765.212*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+803.265*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+785.46*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+778.378*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1882.1817720937502*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1943.7277720937504*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1971.5983720937502*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1985.9352720937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{778.378*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+757.855*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+598.898*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+598.898*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1985.9352720937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+2018.8283720937502*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+2062.9133120937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+2062.9133120937504*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{598.898*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+488.676*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+347.149*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+264.362*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),2062.9133120937504*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+2060.9260120937506*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+2007.9005720937503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1972.9894720937505*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{264.362*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+219.353*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+151.503*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+138.179*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),1972.9894720937505*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+1955.8987720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+1877.8547720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+1855.6177720937503*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \draw [grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] (5.04401,1280.3367720937504)-- (209.455,435.9657720937503);
+   \draw[grafica, line width=2pt, smooth, samples=100, domain=0.0:1.0] plot[parametric] function{209.455*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+221.765*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+268.521*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+318.647*(1.0-t)**(4.0-1.0-3.0)*t**(3.0),435.9657720937503*(1.0-t)**(4.0-1.0-0.0)*t**(0.0)+367.1657720937503*3.0*(1.0-t)**(4.0-1.0-1.0)*t**(1.0)+260.3257720937504*3.0*(1.0-t)**(4.0-1.0-2.0)*t**(2.0)+244.11577209375037*(1.0-t)**(4.0-1.0-3.0)*t**(3.0)};
+   \node [ponto] (T) at (1150,1462) {};
+   \node [right] at (T) {$T$};
+   \node [ponto] (S) at (450,330) {};
+   \node [below] at (S) {$S$}; 
+   \node [ponto] (L) at (75,1000) {};
+   \node [left] at (L) {$L$}; 
+   \draw [vetor] (L) -- (S);
+   \draw [vetor] (S) -- (T);
+   \draw [vetor] (L) -- (T);
+   \draw (1300,1200) node [anchor=north west] {$L$: largada};
+   \draw (1300,1100) node [anchor=north west] {$S$: curva "S" do Sena};
+   \draw (1300,1000) node [anchor=north west] {$T$: final do trecho da reta oposta};
+   \end{scope}
+
+
 .. figure:: _resources/geometria-deslocamento-01.jpg
    :width: 400pt
    :align: center
@@ -208,21 +255,16 @@ Suponha que o lado de cada quadradinho da malha quadriculada no mapa da :numref:
 
    .. tikz::
 
-      \tikzset{>=latex}
-      \definecolor{qqqqff}{rgb}{0.,0.,1.}
-      \draw [->,line width=1.pt,color=qqqqff] (-1.74,1.16) -- (-0.36,2.98);
-      \draw [->,line width=1.pt,color=qqqqff] (3.92,0.94) -- (1.72,4.32);
-      \draw [fill=qqqqff] (-1.74,1.16) circle (1.5pt);
-      \draw[color=qqqqff] (-1.957267111111111,0.8293039555555549) node {$A$};
-      \draw [fill=qqqqff] (-0.36,2.98) circle (1.5pt);
-      \draw[color=qqqqff] (-0.26802106666666636,3.262544488888885) node {$B$};
-      \draw [fill=qqqqff] (3.92,0.94) circle (1.5pt);
-      \draw[color=qqqqff] (4.055303555555557,0.6718318666666663) node {$C$};
-      \draw [fill=qqqqff] (1.72,4.32) circle (1.5pt);
-      \draw[color=qqqqff] (1.5214344888888895,4.622530711111104) node {$D$};
-
-
-
+      \node [ponto] (A) at (-1.74,1.16) {};
+      \node [ponto] (B) at (-0.36,2.98) {};
+      \node [ponto] (C) at (3.92,0.94) {};
+      \node [ponto] (D) at (1.72,4.32) {};
+      \node [below left] at (A) {$A$};
+      \node [above right] at (B) {$B$};
+      \node [below right] at (C) {$C$};
+      \node [above left] at (D) {$D$};
+      \draw [vetor] (A) -- (B);
+      \draw [vetor] (C) -- (D);
 
 
 
@@ -235,11 +277,23 @@ Conforme os Itens a), b) e c) da atividade anterior, as escolhas das cartas `\ve
 
 .. _fig-geometria-cv-06:
 
-.. figure::  _resources/geometria-cv-06_1.jpg
-   :width: 290pt
-   :align: center
+.. tikz::
+   
+   \node [ponto] (A) at (0,0) {};
+   \node [ponto] (B) at (0,2) {};
+   \node [ponto] (C) at (2,4) {};
+   \node [below left] at (A) {$A$};
+   \node [above left] at (B) {$B$};
+   \node [above right] at (C) {$C$};
+   \draw [vetor] (A) -- (B);
+   \draw [vetor] (B) -- (C);
+   \draw [vetor, color=destacado] (A) -- (C);
+   \node [left] at ($(A)!0.5!(B)$) {$\vec{a}$};
+   \node [above left] at ($(C)!0.5!(B)$) {$\vec{h}$};
 
    Justaposição de dois deslocamentos.
+
+
 
 Note uma particularidade: a extremidade inicial do segundo vetor deslocamento (o ponto `B`) coincide com a extremidade final do primeiro vetor deslocamento. Nesta situação, o vetor deslocamento `\overrightarrow{AC}` é denominado :index:`vetor deslocamento resultante` da :index:`justaposição` do vetor deslocamento `\overrightarrow{AB}` com o vetor deslocamento `\overrightarrow{BC}`. Esta relação entre os três vetores deslocamentos será representada simbolicamente da seguinte maneira:
 
@@ -281,16 +335,14 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
 .. tikz::
 
-   \begin{scope}[scale=.3]
-   \tikzset{>=latex}
-   \draw[->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
-   \draw[line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-   \draw[fill=primario] (-1.66,-0.1) circle (1.5pt);
-   \node[left] at (-1.7,0.24) {$A$};
-   \draw[fill=primario] (0.84,2.) circle (1.5pt);
-   \node[above] at (0.8,2.3) {$B$};
-   \end{scope}
-
+   \node [ponto] (B) at (0,0) {};
+   \node [above] at (B) {$B$};
+   \draw [color=secundario, densely dotted] (B) circle (2);
+   \node [ponto] (A) at ({-sqrt(2)},{-sqrt(2)}) {};
+   \node [above] at (A) {$A$};
+   \draw [vetor] (A) -- (B);
+      
+      
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **maior** valor possível? Dica: construa a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Qual é o ponto `C` da circunferência para o qual `|\overrightarrow{AB} + \overrightarrow{BC}|` tem o **menor** valor possível? Dica: construa a figura no seu caderno e faça alguns experimentos para tentar obter a resposta!
 #. Como você descreveria o vetor deslocamento `\overrightarrow{AC}` para o ponto `C` escolhido no item anterior?
@@ -303,30 +355,31 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
       .. tikz::
 
-         \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
-         \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
-         \draw (-1.7,0.24) node {$A$};
-         \draw [fill=primario] (0.84,2.) circle (1.5pt);
-         \draw (0.8,2.3) node {$B$};
-         \draw [fill=primario] (3.34,4.1) circle (1.5pt);
-         \draw (3.54,4.3) node {$C$};
-         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (3.34,4.1);
-
+         \node [ponto] (B) at (0,0) {};
+         \node [above] at (B) {$B$};
+         \draw [color=secundario, densely dotted] (B) circle (2);
+         \node [ponto] (A) at ({-sqrt(2)},{-sqrt(2)}) {};
+         \node [above] at (A) {$A$};
+         \node [ponto] (C) at ({sqrt(2)},{sqrt(2)}) {};
+         \node [above right] at (C) {$C$};
+         \draw [vetor] (A) -- (B);
+         \draw [vetor] (B) -- (C);
+      
+      
    #. É o ponto que `C = A`. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 0~\text{cm}`.
 
       .. tikz::
 
-         \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
-         \draw [line width=0.8pt,dotted] (0.84,2.) circle (3.2649655434629015cm);
-         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
-         \draw (-1.7,0.24) node {$A$};
-         \draw [fill=primario] (0.84,2.) circle (1.5pt);
-         \draw (0.8,2.3) node {$B$};
-         \draw (-1.7,-0.4) node {$C$};
-         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (-1.66,-0.1);
+         \node [ponto] (B) at (0,0) {};
+         \node [above] at (B) {$B$};
+         \draw [color=secundario, densely dotted] (B) circle (2);
+         \node [ponto] (A) at ({-sqrt(2)},{-sqrt(2)}) {};
+         \node [below] at (A) {$A$};
+         \node [ponto] (C) at ({-sqrt(2)},{-sqrt(2)}) {};
+         \node [above] at (C) {$C$};
+         \draw [vetor] (A) -- (B);
+         \draw [vetor] (B) -- (C);
+
 
    #. É o vetor deslocamento onde a extremidade final coincide com a extremidade inicial.
 
@@ -334,33 +387,32 @@ Considere o vetor deslocamento `\overrightarrow{AB}` e a circunferência de cent
 
       .. tikz::
 
-         \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
-         \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
-         \draw (-1.7,0.24) node {$A$};
-         \draw [fill=primario] (0.84,2.) circle (1.5pt);
-         \draw (0.8,2.3) node {$B$};
-         \draw [fill=primario] (2.0876,3.0492) circle (1.5pt);
-         \draw (2.1,3.37) node {$C$};
-         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (2.0876,3.0492);
+         \node [ponto] (B) at (0,0) {};
+         \node [above] at (B) {$B$};
+         \draw [color=secundario, densely dotted] (B) circle (2);
+         \node [ponto] (A) at ({-2*sqrt(2)},{-2*sqrt(2)}) {};
+         \node [above] at (A) {$A$};
+         \node [ponto] (C) at ({sqrt(2)},{sqrt(2)}) {};
+         \node [above] at (C) {$C$};
+         \draw [vetor] (A) -- (B);
+         \draw [vetor] (B) -- (C);
+
 
       Por sua vez, o ponto `C` pertencente à circunferência de centro em `B` e raio `\frac{1}{2} |\overrightarrow{AB}|` que torna o valor de `|\overrightarrow{AB} + \overrightarrow{BC}|` o menor possível é apresentado na figura a seguir. Para este `C`, `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}`.
 
       .. tikz::
 
-         \tikzset{>=latex}
-         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (0.84,2.);
-         \draw [line width=0.8pt,dotted] (0.84,2.) circle (1.632482771731cm);
-         \draw [fill=primario] (-1.66,-0.1) circle (1.5pt);
-         \draw (-1.7,0.24) node {$A$};
-         \draw [fill=primario] (0.84,2.) circle (1.5pt);
-         \draw (0.8,2.3) node {$B$};
-         \draw [fill=primario] (-0.4048,0.9514) circle (1.5pt);
-         \draw (-0.3957,1.2975) node {$C$};
-         \draw [->,line width=0.8pt,color=primario] (0.84,2) -- (-0.4048,0.9514);
-         \draw [->,line width=0.8pt,color=primario] (-1.66,-0.1) -- (-0.4048,0.9514);
-
+         \node [ponto] (B) at (0,0) {};
+         \node [above] at (B) {$B$};
+         \draw [color=secundario, densely dotted] (B) circle (2);
+         \node [ponto] (A) at ({-2*sqrt(2)},{-2*sqrt(2)}) {};
+         \node [above] at (A) {$A$};
+         \node [ponto] (C) at ({-sqrt(2)},{-sqrt(2)}) {};
+         \node [above] at (C) {$C$};
+         \draw [vetor] (A) -- (C);
+         \draw [vetor] (B) -- (C);
+      
+      
    #. Falso! Basta considerar o ponto `C` como no segundo caso do item anterior onde `|\overrightarrow{AB} + \overrightarrow{BC}| = 2{,}5~\text{cm}` mas `|\overrightarrow{AB}| + |\overrightarrow{BC}| = 5~\text{cm} + 2{,}5~\text{cm} = 7{,}5~\text{cm}`.
 
 

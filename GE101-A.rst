@@ -66,13 +66,14 @@ Copie o trecho de 0 a 6 segundos duas vezes em seu caderno, uma para cada item a
 
 .. tikz::
    
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
    \begin{scope}[scale=.8]
    \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (8.05,8.05);
-   \fill[red] (0,0)coordinate(o) circle (.1);
+   \node[ponto, color=destacado] (o) at (0,0) {};
    \foreach \n in {1,3,5,6,7,8}{
-   \fill[blue] (\n,\n)coordinate(t\n) circle (.08);};
+   \node[ponto,color=atento] (t\n) at (\n,\n) {};};
    
-   \draw[blue] (o)--(t1)--(t3)--(t5)--(t6)--(t7)--(t8);
+   \draw[color=atento] (o)--(t1)--(t3)--(t5)--(t6)--(t7)--(t8);
    \node[right] at (o) {$t=0$ s};
    \node[right] at (t1) {$t=1$ s};
    \node[right] at (t3) {$t=2$ s};
@@ -92,15 +93,16 @@ Considerando as velocidades médias em cada um destes intervalos de 1 segundo co
 
 .. tikz:: 
 
+   \tikzstyle{vetor}=[->,>=latex]
+   \definecolor{atento}{RGB}{0,94,176} %azul forte
    \begin{scope}[scale=.8]
    \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (6.05,2.05);
-   \draw[blue,-latex,thick] (5,0)node[below,black]{$t=43$ s}--(6,1);
-   \draw[blue,-latex,thick] (6,1) node[right,black]{$t=44$ s}--(6,2);
-   \draw[blue,-latex,thick] (6,2)node[right,black]{$t=45$ s} --(5,2);
-   \draw[blue,-latex,thick] (5,2)node[above,black]{$t=46$ s}--(3,1);
-   \draw[blue,-latex,thick] (3,1)node[above,black]{$t=47$ s}--(0,0)node[below,black]{$t=48$ s};
-   \foreach \x/\y in {5/0,6/1,6/2,5/2,3/1,0/0}{ \fill[blue] (\x,\y) circle (.08);};
-   
+   \draw[vetor, color=atento] (5,0)node[below,black]{$t=43$ s} -- (6,1);
+   \draw[vetor, color=atento] (6,1)node[right,black]{$t=44$ s} -- (6,2);
+   \draw[vetor, color=atento] (6,2)node[right,black]{$t=45$ s} -- (5,2);
+   \draw[vetor, color=atento] (5,2)node[above,black]{$t=46$ s} -- (3,1);
+   \draw[vetor, color=atento] (3,1)node[above,black]{$t=47$ s} -- (0,0)node[below,black]{$t=48$ s};
+   \foreach \x/\y in {5/0,6/1,6/2,5/2,3/1,0/0}{\fill[blue] (\x,\y) circle (.08);};
    \end{scope}
    
    
@@ -120,29 +122,33 @@ Considerando as velocidades médias em cada um destes intervalos de 1 segundo co
    
       .. tikz::
           
-          \begin{scope}[scale=.5]
-          \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (8.05,8.05);
-          \fill[red] (0,0)coordinate(o) circle (.2);
-          \foreach \n in {1,3,5,6,7,8}{
-          \fill[blue] (\n,\n)coordinate(t\n) circle (.13);};
-          
-          \node[right] at (o) {$t=0$ s};
-          \node[right] at (t1) {$t=1$ s};
-          \node[right] at (t3) {$t=2$ s};
-          \node[right] at (t5) {$t=3$ s};
-          \node[right] at (t6) {$t=4$ s};
-          \node[right] at (t7) {$t=5$ s};
-          \node[right] at (t8) {$t=6$ s};
-          
-          \draw[-latex,blue,thick] (o)--(t1);
-          \draw[-latex,blue,thick] (t1)--(t3);
-          \draw[-latex,blue,thick] (t3)--(t5);
-          \draw[-latex,blue,thick] (t5)--(t6);
-          \draw[-latex,blue,thick] (t6)--(t7);
-          \draw[-latex,blue,thick] (t7)--(t8);
-          
-          \end{scope}
-          
+         \tikzstyle{vetor}=[->,>=latex]
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only, label={}]
+         \definecolor{destacado}{RGB}{183,13,40} %avermelhado
+         \definecolor{atento}{RGB}{0,94,176} %azul forte
+         \begin{scope}[scale=.5]
+         \draw[step=1.0,gray,thin] (-0.05,-0.05) grid (8.05,8.05);
+         \node[ponto, color=destacado] (o) at (0,0) {};
+         \foreach \n in {1,3,5,6,7,8}{
+         \node[ponto, color=atento] (t\n) at (\n,\n) {};};
+         
+         \node[right] at (o) {$t=0$ s};
+         \node[right] at (t1) {$t=1$ s};
+         \node[right] at (t3) {$t=2$ s};
+         \node[right] at (t5) {$t=3$ s};
+         \node[right] at (t6) {$t=4$ s};
+         \node[right] at (t7) {$t=5$ s};
+         \node[right] at (t8) {$t=6$ s};
+         
+         \draw[vetor, color=atento] (o)--(t1);
+         \draw[vetor, color=atento] (t1)--(t3);
+         \draw[vetor, color=atento] (t3)--(t5);
+         \draw[vetor, color=atento] (t5)--(t6);
+         \draw[vetor, color=atento] (t6)--(t7);
+         \draw[vetor, color=atento] (t7)--(t8);
+         
+         \end{scope}
+         
    #. .. tikz::
           
           \begin{scope}[scale=.5]
