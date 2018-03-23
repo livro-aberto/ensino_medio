@@ -24,7 +24,7 @@ Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento 
 
 .. _fig-geometria-operacoesvetores-01:
 
-   .. tikz::
+   .. tikz:: Segmento de reta AB ou BA.
 
       \node [ponto] (A) at (0,0) {};
       \node [ponto] (B) at (2,0) {};
@@ -34,13 +34,13 @@ Na :numref:`fig-geometria-operacoesvetores-01` temos uma reta `r` e um segmento 
       \draw [very thick] (A) -- (B);
       \draw [dashed, thick] (-2,0) -- (4,0);
 
-      Segmento de reta `AB` ou `BA`.
+      
 
 Observe que em um segmento de reta `AB` é possível estabelecer duas orientações: de A para B e de B para A, como ilustrado na :numref:`fig-geometria-operacoesvetores-02`. Para indicar essas possibilidades, ao desenhar tais segmentos, utilizaremos como recurso gráfico as setas.
 
 .. _fig-geometria-operacoesvetores-02:
 
-.. tikz::
+.. tikz:: Segmento de reta orientados de A para B e de B para A.
 
    \matrix{
    \node [ponto] (A) at (0,0) {};
@@ -60,7 +60,7 @@ Observe que em um segmento de reta `AB` é possível estabelecer duas orientaç�
    \draw [dashed, thick] (-2,0) -- (4,0);
    \\};
 
-   Segmento de reta orientados de `A` para `B` e de `B` para `A`.
+   
 
 Na Figura :numref:`fig-geometria-operacoesvetores-02`, a orientação de cada segmento fica evidenciada pelo sentido da seta. Assim, na primeira imagem o segmento tem orientação de `A` para `B` e na segunda de `B` para `A` .  Esses segmentos orientados são indicados por `\overrightarrow{AB}` e `\overrightarrow{BA}`, respectivamente.  Observe que, de acordo com a notação desses segmentos orientados, a ordem das letras correspondentes aos extremos indica a orientação estabelecida. 
 
@@ -71,7 +71,7 @@ O *módulo do segmento orientado* é o comprimento do segmento de reta que o def
 
 .. _fig-geometria-operacoesvetores-03:
 
-.. tikz:: Como os segmentos $AB$ e $CD$ estão sobre a reta $r$, então eles possuem a mesma direção. Já os segmentos $EF$ e $GH$ estão sobre retas paralelas $s$ e $t$, então esses segmentos são paralelos.
+.. tikz:: 
 
    \node [ponto] (A) at (0,0) {};
    \node [ponto] (B) at (1,1) {};
@@ -100,7 +100,7 @@ O *módulo do segmento orientado* é o comprimento do segmento de reta que o def
    \draw  (3.5,0) -- (9.5,0);
    \draw [color=terciario, very thick] (G) -- (H);
 
-   
+Como os segmentos `AB` e `CD` estão sobre a reta `r`, então eles possuem a mesma direção. Já os segmentos `EF` e `GH` estão sobre retas paralelas `s` e `t`, então esses segmentos são paralelos.
 
 O conceito de direção é comumente confundido com o conceito de sentido, mas o sentido é a orientação sobre uma direção. E repare que, sobre cada direção existem sempre dois possíveis sentidos. Por exemplo, sobre a direção horizontal temos os sentidos da direita e o da esquerda.
 
@@ -138,7 +138,7 @@ Pela definição acima, um vetor fica determinado por uma infinidade de segmento
 Um vetor pode ser representado por uma letra minúscula (por exemplo, `\vec{v}`) ou a partir das extremidades de um segmento orientado que o represente (por exemplo, `\overrightarrow{AB}`), como ilustrado na Figura XX. Quando escrevemos `\vec{v}=\overrightarrow{AB}` estamos considerando que o segmento de reta orientado `\overrightarrow{AB}` é um representante do vetor `\vec{v}`. 
 
 O módulo de um vetor `\vec{v}` é indicado por `|\vec{v}|`.
- 
+
 .. admonition:: Observação
 
    **Observação sobre terminologia**
@@ -252,6 +252,7 @@ Na :numref:`fig-geometria-operacoesvetores-08`, o vetor soma `\vec{u}+\vec{v}` r
    \node [below right, color=destacado] at ($(A)!0.5!(C)$) {$\vec{u}+\vec{v}$};
 
 
+
 Com essa definição, é possível somar dois vetores tal que o representante do primeiro possui extremidade final coincidente com a extremidade inicial do representante do segundo, ou seja, quando os representantes dos vetores estão justapostos. E caso isso não aconteça, é possível realizar essa operação? Sim, nesta situação basta escolher um outro representante do segundo vetor de forma que sua extremidade inicial coincida com a extremidade final do primeiro, e então aplicar a definição como no caso anterior.
 
 .. _fig-geometria-operacoesvetores-09:
@@ -270,7 +271,6 @@ Com essa definição, é possível somar dois vetores tal que o representante do
    \draw [vetor, color=destacado] (C) -- (D);
    \node [above left, color=atento] at ($(A)!0.5!(B)$) {$\vec{u}$};
    \node [above, color=destacado] at ($(C)!0.5!(D)$) {$\vec{v}$};
-
 
 Na :numref:`fig-geometria-operacoesvetores-09`, queremos somar os vetores `\vec{u}`, representado por `\overrightarrow{AB}`, e `\vec{v}`, representado por `\overrightarrow{CD}`. Como os representantes de `\vec{u}` e `\vec{v}` não estão justapostos, é necessário escolher um outro representante do vetor `\vec{v}` justaposto ao representante de `\vec{u}` e então aplicar a definição. Sendo `\overrightarrow{BP}` um representante de `\vec{v}` justaposto à `\overrightarrow{AB}`, como na :numref:`fig-geometria-operacoesvetores-09.1`, o vetor com extremidade inicial em `A` e extremidade final em `P` é um representante do vetor soma `\vec{u}+\vec{v}`.
 
@@ -370,9 +370,9 @@ para qualquer vetor `\vec{v}`.
 
    .. _fig-geometria-operacoesvetores-11:
 
-   .. tikz:: Vetores Simétricos.
+   .. tikz:: Vetores simétricos.
    
-      \filldraw [white, fill opacity=0] (-2,-1) rectangle (2,1);
+      %\filldraw [white, fill opacity=0] (-2,-1) rectangle (2,1);
       \coordinate (a) at (-2,0);
       \coordinate (b) at (-0.25,0);
       \coordinate (c) at (0.25,0);
@@ -381,6 +381,7 @@ para qualquer vetor `\vec{v}`.
       \draw [vetor, color=black, very thick] (d) -- (c);
       \node [below ] at ($(a)!0.5!(b)$) {$\vec{v}$};
       \node [below ] at ($(c)!0.5!(d)$) {$-\vec{v}$};
+
 
 
    O vetor `\vec{v}-\vec{u}`, dado pela soma de `\vec{v}` com o vetor simétrico de `\vec{u}`, é chamado o vetor diferença de `\vec{v}` para `\vec{u}`.
@@ -397,8 +398,7 @@ para qualquer vetor `\vec{v}`.
       \node [above left] at ($(A)!0.5!(B)$) {$\vec{v}$};
       \node [above] at ($(B)!0.5!(C)$) {$\vec{u}$};
       \draw [vetor, color=destacado] (A) -- (C);
-      \node [below right, color=destacado] at ($(A)!0.5!(C)$) {$\vec{v}-\vec{u}$};
-      
+      \node [below right, color=destacado] at ($(A)!0.5!(C)$) {$\vec{v}-\vec{u}$};      
 
 Observe que, se um objeto se desloca de um ponto `S` para um ponto `T`, então o vetor deslocamento `\overrightarrow{ST}` pode ser descrito, com relação a qualquer ponto de referência `L`, como `\overrightarrow{ST} = \overrightarrow{LT} - \overrightarrow{LS}`, isto é, a variação dos vetores posições relativas (veja, por exemplo, a situação descrita na :numref:`fig-geometria-deslocamento-01`).
 
@@ -505,7 +505,7 @@ A partir desta definição, podemos perceber que:
 A multiplicação de um vetor por um número real satisfaz outras propriedades que serão apresentadas na próxima seção.
 
 
-.. admonition:: Exemplo
+.. admonition:: Exemplo: ponto médio de um segmento
 
    Já sabemos que o ponto médio de um segmento de reta é o ponto que divide o segmento de reta em duas partes iguais. Considere um segmento de reta orientado `\overrightarrow{AB}` e seu ponto médio `M` para responder as atividades a seguir:
 
@@ -513,7 +513,7 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
 
    #. Escreva o vetor `\overrightarrow{AM}` como a multiplicação de um vetor por um número real.
 
-.. admonition:: Resposta
+   **Solução:**
 
    #. `\overrightarrow{AB} = \overrightarrow{AM} + \overrightarrow{MB}`.
 
@@ -534,11 +534,11 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
    #. `\overrightarrow{AM} = \frac{1}{2} \, \overrightarrow{AB}`.
 
 
-.. admonition:: Exemplo
+.. admonition:: Exemplo: base média de um triângulo
 
    O segmento de reta cujos extremos são pontos médios de dois lados de um triângulo é paralelo ao terceiro lado. Mostre que a medida deste segmento é metade da medida do terceiro lado do triângulo.
 
-.. admonition:: Resposta
+   **Solução:**
 
    Considere um triângulo `ABC`. Sejam, `M` e `N` os pontos médios dos lados `AB` e `AC` respectivamente. Tem-se que `\overrightarrow{MA} = \frac{1}{2} \, \overrightarrow{BA}`, `\overrightarrow{AN} = \frac{1}{2} \, \overrightarrow{AC}`,
    `\overrightarrow{BC} = \overrightarrow{BA} + \overrightarrow{AC}` e `\overrightarrow{MN} = \overrightarrow{MA} + \overrightarrow{AN}`. Portanto, `\overrightarrow{MN} = \overrightarrow{MA} + \overrightarrow{AN} =
@@ -563,7 +563,7 @@ A multiplicação de um vetor por um número real satisfaz outras propriedades q
          \draw [vetor, color=black] (v2)--(v5);
          \draw [vetor, color=atento] (v1.center)--(v3.center);
          \draw [vetor, color=atento] (v4.center)--(v5.center);
-         
+
 
 
 ..    .. tikz::
