@@ -113,8 +113,6 @@ Ensino Médio
    PE103-A
    PE103-E
 
-.. Medidas de posição e dispersão
-
 .. .. toctree::
    :maxdepth: 1
    :glob: 
@@ -131,12 +129,26 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
 
+   GE101
+   GE101-0
+   GE101-0A
+   GE101-0B
+   GE101-0C
+   GE101-1
+   GE101-1A
+   GE101-1B
+   GE101-A
+   GE101-B
+   GE101-E
+
+.. .. toctree::
+   :maxdepth: 1
+   :glob: 
+
    GE201-0
    GE201-1
    GE201-2
    GE201-E
-
-.. Semelhança de figuras planas
 
 .. .. toctree::
    :maxdepth: 1
@@ -149,8 +161,6 @@ Ensino Médio
    GE202-4
    GE202-A
    GE202-E
-
-.. Trigonometria nos triângulos
 
 .. .. toctree::
    :maxdepth: 1
