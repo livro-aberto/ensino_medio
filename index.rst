@@ -6,24 +6,26 @@ Ensino Médio
    :maxdepth: 1
    :glob: 
    
-   introducao
    manual-do-professor
-   PE103-ROTEIRO
-   PE104-ROTEIRO
-   AF106-ROTEIRO
-   AF107-ROTEIRO
-   AF209-ROTEIRO
-   GE101-ROTEIRO
-   GE201-ROTEIRO
-   GE202-ROTEIRO
-   GE301-ROTEIRO   
-   GE202-ROTEIRO2
+   introducao
+   GE101
+   GE301
+   AF106
+   AF107
+   AF209
+   PE103
+   PE104
+   GE201
+   GE202
+   GE2022
 
-.. toctree::
+
+.. Vetores no plano
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   GE101
    GE101-0
    GE101-0A
    GE101-0B
@@ -35,12 +37,12 @@ Ensino Médio
    GE101-B
    GE101-E
 
+.. Vistas ortogonais e representações em perspectiva
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   GE301
    GE301-0
    GE301-1
    GE301-2
@@ -53,11 +55,12 @@ Ensino Médio
    GE301-A
    GE301-E
 
-.. toctree::
+.. Introdução às funções
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   AF106
    AF106-0
    AF106-1
    AF106-E1
@@ -66,23 +69,24 @@ Ensino Médio
    AF106-A
    AF106-E1
 
-.. toctree::
+.. Função afim
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   AF107
    AF107-0
    AF107-1
    AF107-2
    AF107-A
    AF107-E
 
+.. Função quadrática
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
    
-   AF209
    AF209-0
    AF209-1
    AF209-2
@@ -96,45 +100,48 @@ Ensino Médio
    AF209-10
    AF209-11
    AF209-E
-      
-.. toctree::
+
+.. A natureza da estatística
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   PE103
    PE103-0
    PE103-1
    PE103-2
    PE103-A
    PE103-E
 
-.. toctree::
+.. Medidas de posição e dispersão
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
    
-   PE104
    PE104-0
    PE104-1
    PE104-2
    PE104-A
    PE104-E
 
+.. Teorema de Tales
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   GE201
    GE201-0
    GE201-1
    GE201-2
    GE201-E
 
-.. toctree::
+.. Semelhança de figuras planas
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   GE202
    GE202-0
    GE202-1
    GE202-2
@@ -143,11 +150,12 @@ Ensino Médio
    GE202-A
    GE202-E
 
-.. toctree::
+.. Trigonometria nos triângulos
+
+.. .. toctree::
    :maxdepth: 1
    :glob: 
 
-   GE2022
    GE2022-0
    GE2022-1
    GE2022-2
@@ -155,5 +163,11 @@ Ensino Médio
    GE2022-A
 .. GE2022-E
 
+Planejamentos dos capítulos
 
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+   
+   indice-de-roteiros
 .. include:: definicoes.rst
