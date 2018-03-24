@@ -1,0 +1,265 @@
+.. _sec-praticando2:
+
+**********
+Praticando
+**********
+
+
+.. _ativ-compara-categorias:
+
+Atividade: comparação de conjuntos de dados
+-------------------------------------------
+
+.. admonition:: Para o professor
+   
+   **Objetivos específicos** Comparar diferentes distribuições de uma mesma variável quando separada por grupos.
+   
+   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Matemática, outro grupo trabalha com alturas, etc.
+   
+   Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos. Para a realização dos cálculos deve ser usado suporte tecnológico: calculadoras, aplicativos, etc.   
+   
+   O intuito é dar uma perspectiva para os estudantes da forma em que a estatística é utilizada na ciência para responder perguntas como:
+   
+   * Uma determinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
+   
+   * As meninas são mais altas que os meninos numa certa idade? Acontece o mesmo em todas as idades?
+    
+   De forma ideal, pode ser formulada primeiro a pergunta, e depois coletados os dados, apelando a informações encontradas num artigo científico ou numa publicação de jornal, com o intuito de tentar contrastar uma afirmação dada num texto com dados coletados diretamente.
+   
+
+Para realizar esta atividade será necessário coletar dois conjuntos de dados da mesma natureza, correspondentes a grupos distintos, os quais queremos comparar. Por exemplo:
+
+* alturas de homens e mulheres;
+
+* alturas de alunos de 1º e de 9º ano do Ensino Fundamental;
+
+* notas de disciplinas distintas; 
+
+* notas de turmas distintas na mesma disciplina;
+
+* medições de produtos naturais: comprimento das folhas de vegetais (alface, rúcula, etc) comprados em lojas distintas, altura de árvores ou plantas similares locais da cidade distintos;
+
+entre outros que podem ser escolhidos dependendo da região e dos recursos disponíveis na escola.
+
+No seu caderno ou em uma planilha eletrônica, registre os dados coletados, como indicado no modelo de tabela a seguir, lembrando que quanto mais dados você coletar com os critérios definidos, os resultados do experimento terão maior chance de refletir a realidade. 
+
+.. table:: Exemplo de tabela considerando a altura como variável e duas turmas distintas como os grupos
+
+   +----------------------------------+
+   |Variável: `\textsf{altura em cm}` |
+   +--------------+-------------------+
+   | Turma A      | Turma B           |
+   +==============+===================+
+   |    155       |    165            |
+   +--------------+-------------------+
+   |     168      |     159           |
+   +--------------+-------------------+
+   |    `\vdots`  |  `\vdots`         |
+   +--------------+-------------------+
+
+Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter as medidas resumo dos dados.
+
+.. table:: Registre os seus resultados
+
+   +-----------------------------+-------------+-------------+
+   |                             | Grupo   A   | Grupo B     |
+   +=============================+=============+=============+
+   | Nome da categoria           |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mínimo (`x_{(1)}`)          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Máximo  (`x_{(n)}`)         |             |             |
+   +-----------------------------+-------------+-------------+
+   | Média                       |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q1                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Mediana                     |             |             |
+   +-----------------------------+-------------+-------------+
+   | Q3                          |             |             |
+   +-----------------------------+-------------+-------------+
+   | Amplitude amostral (R)      |             |             |
+   +-----------------------------+-------------+-------------+
+   |Dist. entre quartis (DQ)     |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio médio absoluto (DM)   |             |             |
+   +-----------------------------+-------------+-------------+
+   |Variância amostral (`s^2`)   |             |             |
+   +-----------------------------+-------------+-------------+
+   |Desvio padrão amostral (`s`) |             |             |
+   +-----------------------------+-------------+-------------+
+
+Sugere-se a construção dos histogramas para comparar os dois grupos. Você pode usar o GeoGebra para esta construção.
+
+
+.. Se preferir,  pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
+
+1. Discuta as suas observações com a turma. Lembre-se de interpretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
+
+2. Analisando os dois conjuntos de dados obtidos, que medida de posição você julga mais adequada para resumir a informação do conjunto? Por quê?
+
+3. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas observações? Consulte  professores de outras áreas sobre suas conclusões.
+
+
+.. _ativ-aproxima-dpa-usando-R:
+
+Atividade: aproximação para o valor do desvio padrão amostral
+-------------------------------------------------------------
+
+.. admonition:: Para o professor
+   
+ **Objetivos específicos** 
+   
+ Calcular uma aproximação grosseira do desvio padrão amostral em função da amplitude amostral.
+   
+ Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
+ 
+ Avaliar o valor obtido do desvio padrão, comparando-o com a aproximação.
+   
+ **Observações e sugestões** 
+ 
+ Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno. Além disso, esta atividade pode ser útil para o aluno avaliar se ele calculou corretamente um desvio padrão. É muito comum, mesmo informando-se somatórios e permitindo-se o uso de calculadoras, a produção de resultados incorretos para a variância e, consequentemente, para o desvio padrão. Uma ferramenta útil pode ser  comparar o valor obtido do desvio padrão com a razão `\frac{R}{4}`. Se a diferença for grande (mais de 50% do valor obtido de `s`) recomenda-se verificar novamente o cálculo de `s`.
+ 
+ 
+Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média. A partir desta suposição, pode-se obter uma fórmula para estimar o valor do desvio padrão amostral `s` .
+
+
+.. math::
+
+   \left \{ \begin{array}{l} \textsf{Max}=x_{(n)}\approx \bar{x}+2\cdot s \\ \textsf{Min}=x_{(1)}\approx \bar{x}-2\cdot s\end{array}\right. 
+   
+Tomando a diferença das primeiras expressões apresentadas, obtemos
+
+
+.. math::
+
+   R= \textsf{Max-Min} \approx 4\cdot s
+
+tal que
+
+.. math::
+
+   s\approx \frac{R}{4}
+   
+a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-resumoNArtes:
+
+.. figure:: _resources/summary_NArtes.png
+   :width: 100pt
+   :align: center
+
+   Estatísticas resumo das Notas de Artes 
+   
+b) Idem para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Maratona-de-NY` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-summaryMaratonaMulheres:
+
+.. figure:: _resources/summary_MaratonaNYMulheres.png
+   :width: 100pt
+   :align: center
+
+   Estatísticas resumo dos 100 melhores tempos para mulheres - Maratona de Nova Iorque/2017 
+   
+c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-Estrategia-de-investimento`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
+
+.. _fig-estrategia:
+
+.. figure:: _resources/summary_estrategiainvestimento.png
+   :width: 200pt
+   :align: center
+
+   Estatísticas resumo das cotações das ação nas Companhias A e B.
+
+.. admonition:: Resposta 
+
+ a) Da figura :ref:`fig-resumoNArtes` vemos que `s\approx 1,96` e que `R=8-0,8=7,2`. Pela fórmula apresentada temos `{s}\approx\frac{7,2}{4}=1,8`. 
+ 
+ Comparando o valor aproximado de `s` (1,8) com o valor calculado de `s` (1,96) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 8% do valor de `s`, pois `\frac{|1,8-1,96|}{1,96}\approx 0,08`. 
+ 
+ b) Da figura :ref:`fig-summaryMaratonaMulheres` vemos que `s\approx 0,1866` e que `R=3,085-2,448=0,637`. Pela fórmula apresentada temos `{s}\approx\frac{0,637}{4}=0,15925`. 
+ 
+ Comparando o valor aproximado de `s` (0,15925) com o valor calculado de `s` (0,1866) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 15% do valor de `s`, pois `\frac{|0,15925-0,1866|}{0,1866}\approx 0,15`. 
+ 
+ c) Da figura :ref:`fig-estrategia` vemos que, para a companhia A,  `s\approx 4,5765` e que `R=67-56=11`. Pela fórmula apresentada temos `{s}\approx\frac{11}{4}=2,75`. 
+ 
+ Comparando o valor aproximado de `s` (2,75) com o valor calculado de `s` (4,5765) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 40% do valor de `s`, pois `\frac{|2,75-4,5765|}{4,5765}\approx 0,4`. 
+ 
+ Da figura :ref:`fig-estrategia` vemos que, para a companhia B,  `s\approx 17,3738` e que `R=90-33=57`. Pela fórmula apresentada temos `{s}\approx\frac{57}{4}=14,25`. 
+ 
+ Comparando o valor aproximado de `s` (14,25) com o valor calculado de `s` (17,3738) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 18% do valor de `s`, pois `\frac{|14,25-17,3738|}{17,3738}\approx 0,18`. 
+ 
+ 
+.. _ativ-mediamaisoumenosdoisdesvios:
+
+Atividade: frequência de valores no intervalo centrado na média mais ou menos 2 desvios padrões 
+-----------------------------------------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Calcular a frequência relativa de dados que caem no intervalo centrado na média mais ou menos dois desvios padrões.
+   
+   **Observações e sugestões** Esta atividade será útil no final da próxima seção que trata da construção do boxplot e seus resultados serão retomados adiante. Além disso, será útil na verificação da afirmação feita na atividade anterior de que quando não há valores atípicos, a grande maioria dos dados situa-se entre a média mais ou menos dois desvios padrões. 
+   
+Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, calcule a frequência absoluta de dados que estão no intervalo `[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` e comente sobre os resultados obtidos.
+
+
+.. admonition:: Resposta 
+
+ No caso dos dados da :ref:`ativ-Notas-de-Artes` temos `\bar{x}=5,93` e `s=1,96` tal que os limites deste intervalo são, respectivamente, 2,01 e 9,85. Portanto, das 35 notas podemos ver que 32 observações caem dentro destes limites, ou equivalentemente,  cerca de 91% das observações.
+ 
+ No caso dos dados da :ref:`maratona-de-NY` temos `\bar{x}=2,8697` e `s=0,1866` tal que os limites deste intervalo são, respectivamente, 2,4969 e 3,2429. Portanto, dos 100 tempos podemos ver que 93 caem dentro destes limites, ou equivalentemente,  93% dos tempos.
+ 
+ No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia A, temos `\bar{x}=61,5` e `s=4,5765` tal que os limites deste intervalo são, aproximadamente, 52,3 e 70,7. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
+ 
+ No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia B, temos `\bar{x}=61,5` e `s=18,3136` tal que os limites deste intervalo são, aproximadamente,  24,9 e 98,1. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
+ 
+ Comentário acerca destes resultados: verifica-se que para os quatro conjuntos aqui considerados, de fato, a maior parte dos dados (mais de 90%) situa-se entre os limites de uma média mais ou menos 2 desvios padrões.
+ 
+ .. _ativ-comparacao-dois-tipos-de-bonificacao:
+
+Atividade: comparação das duas possibilidades de bonificação na Nota de Artes
+-----------------------------------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
+   
+   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas apresente o menor coeficiente de variação.
+   
+Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que o professor deseja que o resultado geral de sua turma apresente o menor coeficiente de variação. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
+
+Para facilitar, use as informações a seguir.
+
+.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
+   
+   +------------+---------+---------+----------+
+   | `n=35`     | antes   | 1 pt    | 20%      |
+   +------------+---------+---------+----------+
+   | `\sum x`   | 207,5   | 242,5   | 249,0    |
+   +------------+---------+---------+----------+
+   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
+   +------------+---------+---------+----------+
+
+
+
+
+.. admonition:: Resposta 
+
+   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média, conforme os cálculos a seguir.
+   
+   Considerando o acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. 
+   A variância, calculada por `s^2` é dada por `\frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
+   
+   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por `\frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
+   
+ 
+
+   
+   
+
+
+
+
+

@@ -1,786 +1,198 @@
-.. _sec-explorando2:
 
-********************************
-Explorando: medidas de dispersão
-********************************
-
-.. _ativ-estrategia-de-investimento:
-
-Atividade: estratégia de investimento
--------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
-
-   **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
-
-   Esta atividade pode ser vinculada às disciplinas de História ou Geografia, por exemplo, no estudo do período da Crise Econômica de 1929 ou outros temas relacionados com o PIB e crescimento econômico.
-
-Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
-
-.. _fig-ativ-bolsa-de-valores:
-
-.. figure:: _resources/resized001.png
-   :width: 300pt
-   :align: center
-
-   Esquema simplificado de investimento na bolsa de valores
-
-Suponha que você tenha a oportunidade de investir um capital, comprando ações de uma de duas  Companhias `A` ou `B` e para escolher uma das duas, disponha de duas amostras de preços do valor destas ações (em reais) registrados no fechamento da bolsa de valores em dez sextas-feiras consecutivas. Veja na figura e na tabela a seguir a cotação das ações ao longo das últimas 10 semanas.
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/Acoes_medidas_dispersao.png
-   :width: 350pt
-   :align: center
-
-   Gráficos de linha da cotação das ações
- 
-
-.. table:: Cotação das ações das empresas em reais (R$)
-
-+--------+-----+-----+
-| Semana | `A` | `B` |
-+--------+-----+-----+
-| 1      | 61  | 67  |
-+--------+-----+-----+
-| 2      | 56  | 48  |
-+--------+-----+-----+
-| 3      | 63  | 52  |
-+--------+-----+-----+
-| 4      | 57  | 82  |
-+--------+-----+-----+
-| 5      | 67  | 77  |
-+--------+-----+-----+
-| 6      | 63  | 33  |
-+--------+-----+-----+
-| 7      | 67  | 67  |
-+--------+-----+-----+
-| 8      | 58  | 42  |
-+--------+-----+-----+
-| 9      | 67  | 90  |
-+--------+-----+-----+
-| 10     | 56  | 57  |
-+--------+-----+-----+
-| Total  | 615 | 615 |
-+--------+-----+-----+
-
-
-(a)	Obtenha as médias das cotações das ações das companhias A e B nas semanas observadas e compare-as.
-(b)	Obtenha as medianas das cotações das ações das companhias A e B nas semanas observadas e compare-as, lembrando que os dados da tabela estão apresentados na ordem temporal.
-(c)	Obtenha as modas das cotações das ações das companhias A e B nas semanas observadas e compare-as.
-(d)	Analisando apenas as medidas de posição obtidas em (a), (b) e (c), pode-se dizer que as duas companhias diferem uma da outra? Por quê?
-(e) Um investimento que apresenta grandes ganhos e perdas pode ser chamado de alto risco, já investimentos cujos valores flutuam pouco são considerados de baixo risco. Se você é um investidor da bolsa de valores avesso ao risco, isto é, você gostaria de escolher o investimento com menores flutuações, em qual das companhias você investiria o seu dinheiro? Por quê?
-
-.. admonition:: Resposta 
-
- 1. Dado que são 10 observações em cada um dos conjuntos e que as somas das 10, resultam em 615, segue que a média das cotações na companhia `A` é R$ 61,50, que também é a média das cotações na companhia `B`.
-   
- 2. Para obter as medianas é necessário antes ordenar os valores. Na tabela a seguir os valores das cotações foram ordenados para cada companhia.
-   
-    .. table:: Cotação das ações das empresas
-
-     +-----+-----+
-     | `A` | `B` |
-     +-----+-----+
-     | 56  | 33  |
-     +-----+-----+
-     | 56  | 42  |
-     +-----+-----+
-     | 57  | 48  |
-     +-----+-----+
-     | 58  | 52  |
-     +-----+-----+
-     | 61  | 57  |
-     +-----+-----+
-     | 63  | 67  |
-     +-----+-----+
-     | 63  | 67  |
-     +-----+-----+
-     | 67  | 77  |
-     +-----+-----+
-     | 67  | 82  |
-     +-----+-----+
-     | 67  | 90  |
-     +-----+-----+
-  
-    Como são 10 observações em cada conjunto e 10 é um número par, temos que a mediana será dada pela média das duas posições centrais, a saber, posições 5 e 6: `\textsf{Mediana}=\frac{x_{(5)}+x_{(6)}}{2}`.
- 
-    Na companhia `A` teremos  `\textsf{Mediana}=\frac{61+63}{2}=62` reais e, na companhia `B`, `\textsf{Mediana}=\frac{57+67}{2}=62`  reais.
- 
- 3. Na companhia `A` o valor mais frequente foi 67, ocorrendo 3 vezes. Na companhia `B`, o valor mais frequente foi 67, ocorrendo duas vezes. Logo, tanto em `A` como em `B` o valor da moda foi 67  reais.
- 
- 4. Não, pois tais medidas são idênticas nas duas companhias.
- 
- 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` variam mais do que as da companhia `A` e, portanto, como menor risco envolve menos variação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a variação das cotações é menor.
- 
-
-.. _sec-organizando2:
-
-*******************************************
-Organizando as ideias: medidas de dispersão
-*******************************************
-
-Pela atividade anterior, você deve ter notado que usar apenas medidas de posição para caracterizar uma distribuição não é suficiente. Nos dois conjuntos analisados, vimos que ambos apresentaram média, mediana e moda iguais. No entanto, vimos que um deles apresenta maiores variações de valores do que o outro. A ideia por trás de variação é a noção de dispersão. 
-
-Enquanto as medidas de posição procuram resumir o conjunto de dados em alguns valores situados entre dados coletados, as medidas de dispersão buscam avaliar quão dispersos são os dados coletados. Isso é de fundamental importância, pois podemos ter dois conjuntos de dados com as mesmas medidas de posição, como na :ref:`ativ-estrategia-de-investimento`, mas com dispersões diferentes, fazendo com que os valores qualitativos dessas medidas de posição sejam também diferentes.
-
-Há uma piada irônica que conta que o Estatístico é o profissional que diz que uma pessoa, ao se sentar numa cadeira com duas placas de metal, uma aquecida a `100^o` C e outra resfriada a `-40^o` C, estará em média confortável, pois temperatura média é de `30^o` C. Na verdade, um Estatístico jamais diria isso, pois ele não toma decisões apenas por uma medida de posição, mas leva em conta também a dispersão dos dados em torno de uma medida de posição. Uma cadeira com duas placas de metal, uma aquecida a `35^o` C e outra a `25^o` C, também tem temperatura média de `30^o` C, mas há menos dispersão da temperatura nessa cadeira que na outra. Assim, embora quantitativamente iguais, os dois valores de `30^o` C não são qualitativamente equivalentes. Há, portanto, que se avaliar a dispersão dos dados coletados, a fim de poder obter conclusões adequadas.
-
-Nesta seção serão apresentadas medidas que buscam caracterizar a dispersão dos dados em um conjunto.
-
-
-**Amplitude amostral e distância entre quartis**
-
-
-Entre as medidas de dispersão mais simples, define-se a :index:`amplitude amostral` (R) como a diferença entre o maior valor e menor valor observados. Usando a notação apresentada anteriormente, dado um conjunto com `n` observações, temos
-
-
-.. math::
-
-   \textsf{Amplitude amostral}=\textsf{R}= \underbrace{x_{(n)}}_{\textsf{maior valor do conjunto}}-\underbrace{x_{(1)}}_{\textsf{menor valor do conjunto}}
-
-Uma desvantagem desta medida é que ela considera apenas os dois extremos do conjunto. Ainda é possível que dois conjuntos, tendo mesmas média, moda e mediana, apresentem a mesma amplitude e, no entanto, eles tenham comportamentos diferentes. Considere o exemplo a seguir, supondo os seguintes conjuntos de notas de Matemática de duas turmas de reforço, cada uma com 10 alunos.
-
-`\textsf{Notas da turma A}=\{ 1,1,1,5,5,5,5,9,9,9\}` e `\textsf{Notas da turma B}=\{1,3,3,5,5,5,5,7,7,9\}`
-
-Verifique que para esses dois conjuntos tem-se média, moda, mediana e amplitude amostral iguais. No entanto, comparando os diagramas de pontos correspondentes a cada um deles, ilustrados na figura a seguir, é possível perceber diferenças quanto à dispersão das notas em torno da média 5,0 nos dois conjuntos. 
-
-
-.. _fig-diagrama-de-pontos-notas:
-
-.. figure:: _resources/diagrama_notas_1.png
-   :width: 200pt
-   :align: center
-
-   Diagramas de pontos das notas nas turmas A e B
-
-Neste caso, uma medida um pouco mais refinada, mas ainda sem considerar todos os valores no conjunto, é a :index:`distância entre quartis` (DQ), definida como a diferença entre o terceiro e primeiro quartis da distribuição. Usando a notação apresentada anteriormente,
-
-
-.. math::
-
-   \textsf{DQ}=\textsf{Q}3-\textsf{Q}1
-   
-No exemplo anterior, como cada conjunto tem 10 observações, podemos dividi-los em duas metades com cinco observações e tomar as medianas para identificar os primeiro e terceiros quartis. 
-
-`\textsf{Notas da turma A}= \{ \overbrace{1,1,1,5,5}^{\textsf{primeira metade}},\underbrace{5,5,9,9,9}_{\textsf{segunda metade}}\}`
-
-Deste modo, temos para a turma `A`, Q1=1 (mediana da primeira metade) e Q3=9 (mediana da segunda metade) tal que DQ=9-1=8 e, para a turma `B`, usando o mesmo raciocínio, DQ=7-3=4, indicando que na turma `B`, considerando a distância entre quartis, temos menor dispersão, comparada à turma `A`, observação que pode ser verificada nos diagramas de pontos da figura :ref:`fig-diagrama-de-pontos-notas`.
-
-De fato, a distância entre quartis (DQ) também apresenta a desvantagem de somente considerar o primeiro e terceiro quartis, não considerando todas as observações do conjunto. A seguir, serão definidas medidas de dispersão que levam em conta todas as observações realizadas.
-
-**Desvios da Média**
-
-Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
-
-.. math::
-
-   d_i=x_i-\bar{x}, \quad i=1,2,\cdots n
-   
-Na :ref:`ativ-estrategia-de-investimento` os desvios da média, para cada uma das Companhias estão registrados na tabela a seguir.
-
-.. table:: Legenda
-
-+--------+-------+-------+
-| Semana | Cia A | Cia B |
-+--------+-------+-------+
-| 1      | -0,5  | 5,5   |
-+--------+-------+-------+
-| 2      | -5,5  | -13,5 |
-+--------+-------+-------+
-| 3      | 1,5   | -9,5  |
-+--------+-------+-------+
-| 4      | -4,5  | 20,5  |
-+--------+-------+-------+
-| 5      | 5,5   | 15,5  |
-+--------+-------+-------+
-| 6      | 1,5   | -28,5 |
-+--------+-------+-------+
-| 7      | 5,5   | 5,5   |
-+--------+-------+-------+
-| 8      | -3,5  | -19,5 |
-+--------+-------+-------+
-| 9      | 5,5   | 28,5  |
-+--------+-------+-------+
-| 10     | -5,5  | -4,5  |
-+--------+-------+-------+
-| soma   | 0     | 0     |
-+--------+-------+-------+
-
-Poderíamos pensar em usar os desvios da média para definir uma medida de dispersão dos dados em relação à média do conjunto, no entanto, a não ser que todos os valores sejam iguais, teremos valores acima da média e valores abaixo da média de tal modo que os desvios da média poderão apresentar sinais positivos ou negativos. Vimos que a média pode ser interpretada como o centro de massa (ponto de equilíbrio) dos dados e, esta propriedade pode ser descrita da seguinte forma: a soma dos desvios da média de qualquer conjunto de dados é sempre nula. 
-
-Com os dados da :ref:`ativ-Estrategia-de-Investimento` você pôde comprovar esta propriedade. Veja na figura a seguir a ilustração dos desvios da média das duas companhias na qual a linha pontilhada representa a cotação média da companhia e os segmentos em vermelho indicam o tamanho do desvio da média.
-
-
-.. _fig-desvios-da-media:
-
-.. figure:: _resources/desviosdamedialadoalado.png
-   :width: 400pt
-   :align: center
-
-   Desvios da média das cotações nas companhias A e B
-   
-O gráfico :ref:`fig-desvios-da-media` reforça a conclusão anterior, da :ref:`ativ-estrategia-de-investimento`, de que as cotações da companhia A variam bem menos em torno da média do que as cotações da companhia B.  
-
-Em símbolos, a propriedade de que a soma dos desvios da média é sempre nula, pode ser traduzida em
-
-`\displaystyle{\sum^n_{i=1}} d_i=\displaystyle{\sum^n_{i=1}} (x_i-\bar{x})=0`, qualquer que seja o conjunto `\{ x_1,x_2,\cdots, x_n\}`
-
-Portanto, não será possível usar a soma dos desvios da média como medida de dispersão de um conjunto de dados, pois ela sempre resultará em zero. Isso se deve ao fato de que a soma em valor absoluto dos desvios de sinal negativo é sempre igual a soma dos desvios de sinal positivo, uma consequência da propriedade da média como centro de massa.
-
-Na Companhia A a soma dos desvios negativos é -19,5 e, dos desvios positivos, 19,5. Na Companhia B a soma dos desvios negativos é -75,5 e, dos desvios positivos, 75,5.
-
-Uma forma de  contornar esta situação, de modo a usar os desvios da média para definir uma medida de dispersão, é eliminar o sinal negativo dos desvios da média de tal forma que a soma nula destes desvios transformados ocorra apenas quando todos os dados são iguais, ou seja, quando qualquer medida de dispersão bem definida deve ser nula.  
-
-Veja na seção :ref:`sec-Para-saber-mais` a demonstração da propriedade de que a soma dos desvios da média é sempre nula. 
-
-**Desvio Médio Absoluto**
-
-Considerando os desvios da média em valor absoluto (`|x_i-\bar{x}|`) observe que todos serão não-negativos tal que a soma dos desvios da média em valor absoluto (`\displaystyle{\sum^n_{i=1}}|x_i-\bar{x}|`) será nula apenas quando todos os valores do conjunto forem iguais. 
-
-Com base na observação anterior, pode-se definir uma medida de dispersão dos dados, considerando todas as observações, chamada :index:`desvio médio absoluto` (DM) que é definida como a média dos desvios da média tomados em valor absoluto.
-
-Na tabela a seguir são apresentados os desvios da média em valor absoluto das cotações nas companhias A e B e, a respectiva soma. 
-
-.. table:: Desvios da média em valores absolutos para as companhias A e B
-   
-   +--------+------+-------+
-   | semana | A    | B     |
-   +--------+------+-------+
-   | 1      | 0,5  | 5,5   |
-   +--------+------+-------+
-   | 2      | 5,5  | 13,5  |
-   +--------+------+-------+
-   | 3      | 1,5  | 9,5   |
-   +--------+------+-------+
-   | 4      | 4,5  | 20,5  |
-   +--------+------+-------+
-   | 5      | 5,5  | 15,5  |
-   +--------+------+-------+
-   | 6      | 1,5  | 28,5  |
-   +--------+------+-------+
-   | 7      | 5,5  | 5,5   |
-   +--------+------+-------+
-   | 8      | 3,5  | 19,5  |
-   +--------+------+-------+
-   | 9      | 5,5  | 28,5  |
-   +--------+------+-------+
-   | 10     | 5,5  | 4,5   |
-   +--------+------+-------+
-   | soma   | 39,0 | 151,0 |
-   +--------+------+-------+
-
-Logo, concluímos que o desvio médio absoluto na companhia A é DM= `\frac{39}{10}=3,9` reais e, na companhia B, DM= `\frac{151}{10}=15,1` reais, indicando que, de fato, a dispersão em torno da média na companhia B é cerca de 4 vezes maior do que na companhia A com relação ao desvio médio (`{15,1}/{3,9}\approx 3,89`).
-
-De maneira geral, o desvio médio absoluto do conjunto de dados `\{ x_1,x_2, \cdots, x_n\}` é 
-
-.. math::
-
-   \textsf{DM} = \frac{1}{n}\cdot \sum^n_{i=1}|x_i-\bar{x}|=\frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\cdots+|x_n-\bar{x}|}{n}
-
-**Variância e Desvio Padrão**
-
-Uma outra forma de eliminar o sinal negativo dos desvios da média é elevar ao quadrado cada um deles, tornando-os não-negativos. A :index:`variância` é definida como uma média dos desvios da média elevados ao quadrado. 
-
-.. math::
-
-   \textsf{variância} = \frac{1}{n}\cdot \sum^n_{i=1} (x_i-\bar{x})^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\cdots+(x_n-\bar{x})^2}{n}
-   
-Na tabela a seguir são apresentados os desvios da média elevados ao quadrado das cotações nas companhias A e B e, a respectiva soma. 
-
-.. table:: Desvios da média elevados ao quadrado para as companhias A e B
-   
-   +--------+-------+--------+
-   | semana | A     | B      |
-   +--------+-------+--------+
-   | 1      | 0,25  | 30,25  |
-   +--------+-------+--------+
-   | 2      | 30,25 | 182,25 |
-   +--------+-------+--------+
-   | 3      | 2,25  | 90,25  |
-   +--------+-------+--------+
-   | 4      | 20,25 | 420,25 |
-   +--------+-------+--------+
-   | 5      | 30,25 | 240,25 |
-   +--------+-------+--------+
-   | 6      | 2,25  | 812,25 |
-   +--------+-------+--------+
-   | 7      | 30,25 | 30,25  |
-   +--------+-------+--------+
-   | 8      | 12,25 | 380,25 |
-   +--------+-------+--------+
-   | 9      | 30,25 | 812,25 |
-   +--------+-------+--------+
-   | 10     | 30,25 | 20,25  |
-   +--------+-------+--------+
-   | soma   | 188,5 | 3018,5 |
-   +--------+-------+--------+
-
-Logo, concluímos que a variância na companhia A é `\frac{188,5}{10}=18,85\textsf{ reais}^2` e, na companhia B, `\frac{3018,5}{10}=301,85\textsf{ reais}^2` , indicando que a dispersão em torno da média na companhia B é cerca de 16 vezes maior do que na companhia A com relação à variância  (`301,85/18,85\approx 16`).  
-
-
-Quando lidamos com grande quantidade de dados, calcular a variância usando a definição apresentada será uma tarefa maçante, pois após calcular a média de muitos dados, teremos que calcular cada desvio da média, elevá-los ao quadrado e, finalmente, somá-los. Para conjuntos de dados com  mais de 10 elementos será, em geral, muito trabalhoso calcular a variância desta forma. Um modo mais simples para calcular a variância é apresentado a seguir.  Pode-se mostrar que o numerador da fórmulada variância é dado por
-
-.. math::
-
-   \sum^n_{i=1} (x_i-\bar{x})^2 = \sum^n_{i=1} x^2_i-n\cdot \bar{x}^2
-
-Assim, basta conhecer a soma simples (`\displaystyle{\sum^n_{i=1}}x_i`), para determinar a média `\bar{x}`, e a soma de quadrados (`\displaystyle{\sum^n_{i=1}}x^2_i`) para calcular a variância.
-   
-A demonstração desta igualdade está na Seção :ref:`sec-Para-saber-mais`.
-
-Na :ref:`ativ-estrategia-de-investimento` , podemos verificar que na companhia A, `\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=38.011` tal que a variância em A pode ser calculada por
-
-
-.. math::
-
-   \textsf{variância}=\frac{1}{10}\cdot (38.011-10\cdot 61,5^2)=18,85\textsf{ reais}^2
-
-e, na companhia B, 
-
-`\bar{x}=61,5` e `\displaystyle{\sum^{10}_{i=1}} x^2_i=40.841` tal que a variância em B pode ser calculada por
-
-
-.. math::
-
-   \textsf{variância}=\frac{1}{10}\cdot (40.841-10\cdot 61,5^2)=301,85\textsf{ reais}^2
-   
-Vimos que o desvio médio absoluto da companhia B foi aproximadamente 4 vezes maior do que o da companhia A. Na comparação de variâncias, a variância da companhia B foi cerca de 16 vezes maior do que a da companhia A. Este grande aumento deve-se ao fato de que consideramos os desvios da média elevados ao quadrado no cálculo da variância. Observe que a unidade de medida na variância é o quadrado da unidade de medida das observações. Para retornar à escala de medida das observações, basta extrair a raiz quadrada da variância, levando a definição de desvio padrão, uma medida de dispersão em torno da média, na mesma unidade das observações.
-
-
-.. math::
-
-   \textsf{desvio padrão}=\sqrt{\textsf{variância}}
-   
-No exemplo das cotações, podemos verificar que na companhia A, 
-
-
-.. math::
-
-   \textsf{desvio padrão}=\sqrt{18,85} \approx 4,34 \textsf{ reais}
-
-e, na companhia B, 
-
-.. math::
-
-   \textsf{desvio padrão}=\sqrt{301,85}\approx 17,37\textsf{ reais}
-   
-   
-Verifique que o desvio padrão da companhia B é aproximadamente 4 vezes maior do que o da companhia A.
-
-
-.. admonition:: Por que o desvio padrão é preferível ao desvio médio? 
-
-   Você deve estar se perguntando por que se utiliza o desvio padrão na Estatística em detrimento do desvio médio, cujo cálculo é bem mais simples. A resposta é um tanto complexa para o nível em que estamos, mas ela está associada à necessidade na Estatística de se minimizar estruturas de maneira simples. O desvio médio faz uso da função modular `f(x)=|x|`, que não possui boas propriedades matemáticas para a minimização, por possuir na sua forma uma mudança abrupta em torno de `x=0`,  enquanto que a variância faz uso da função quadrática `f(x)=x^2`, representando parábolas de vértice suave e cujas propriedades analíticas são bem conhecidas. Veja a figura a seguir.
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/funcoesmoduloequadratica_2.png
-      :width: 300pt
-      :align: center
-
-      Funções modular e quadrática com destaque para o comportamento em torno de x=0.
-      
-   Muitos problemas de estimação de posição de astros na Física são resolvidos por funções quadráticas por esse motivo, um legado deixado pelo matemático alemão Carl Friedrich Gauss (1777 - 1855) no chamado  `Método dos Mínimos Quadrados <https://pt.wikipedia.org/wiki/M%C3%A9todo_dos_m%C3%ADnimos_quadrados>`_. 
-   
-   .. _fig-coloque-aqui-o-nome:
-
-   .. figure:: _resources/gauss.png
-      :width: 100pt
-      :align: center
-
-      Carl Friedrich Gauss
-   
-**Variância populacional e amostral, desvio padrão populacional e amostral**
-
-No capítulo **A Natureza da Estatística** foram apresentados os conceitos :index:`parâmetro` e :index:`estimador`. Parâmetro é uma característica numérica da população, em geral desconhecida; enquanto estimador é uma função dos dados da amostra (subconjunto da população), usada para estimar o parâmetro. Em geral, usam-se letras gregas para denotar parâmetros.
-
-Se dispomos de uma amostra da população, de fato, calculamos a média amostral e a variância amostral (funções dos dados da amostra) e usamos estes resultados como estimativas da média populacional e da variância populacional. Como já foi comentado anteriormente, a média amostral tem boas propriedades como estimador da média populacional. No entanto, é possível mostrar que a variância calculada pela fórmula apresentada no início deste capítulo é um estimador que tende a produzir valores menores do que o valor da variância da população. Dizemos que é um estimador viesado por essa razão. 
-
-Para contornar este defeito do estimador, usamos o denominador `n-1` no lugar de `n`. Observe que com isto os valores produzidos serão um pouco maiores, pois o denominador é um pouco menor.
-
-.. Por exemplo, na planilha Excel, existem duas funções para calcular a variância, a saber, **var.p(dados)** para variância populacional e **var.a(dados)** para variância amostral. Também existem duas funções para calcular o desvio padrão: **desvpad.p(dados)** para desvio padrão populacional e **desvpad.a(dados)** para desvio padrão amostral. No GeoGebra, a função que calcula todas as medidas resumo, retorna as seguintes informações conforme a figura a seguir.
-
-Assim, as expressões que deverão ser usadas quando o conjunto de dados sob estudo é uma amostra da população são dadas por
-
-.. math::
-
-   \textsf{variância amostral}=s^2=\frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2
-   
-   \textsf{desvio padrão amostral}=\sqrt{s^2}=s
-   
-Na maioria das vezes trabalhamos com amostras. Assim, neste capítulo, salvo menção em contrário, estaremos sempre calculando a variância amostral (`s^2`) e o desvio padrão amostral (`s`), mesmo que o termo "amostral" esteja omitido.
-
-Se você estiver trabalhando com uma amostra e usar o denominador `n` para calcular a variância, isso implicará que você escolheu um estimador viesado, pois tende a produzir estimativas que são menores do que o verdadeiro valor da variância. Observe que se você estiver trabalhando com amostras muito grandes, essa diferença não será importante, pois haverá pouca diferença entre dividir por `n` ou por `n-1`.
-
-Expressões que deverão ser consideradas quando o conjunto de dados sob estudo refere-se à população com `N` elementos:
-
-.. math::
-
-   \textsf{variância populacional} = \sigma^2=\frac{1}{N}\sum^n_{i=1}(x_i-\mu)^2
-   
-   \textsf{desvio padrão populacional}=\sqrt{\sigma^2}=\sigma
-   
-em que `\mu` representa a média populacional.
-   
-Veja na figura a seguir uma saída do GeoGebra de análise descritiva do conjunto de Notas de Artes sem bonificação.   
-
-
-.. _fig-medidas-resumo_Geogebra:
-
-.. figure:: _resources/summary_NArtes.png
-   :width: 100pt
-   :align: center
-
-   Medidas-resumo no GeoGebra das notas de Artes
- 
-Observe que o GeoGebra usa como separador decimal o ponto e não a vírgula. Logo após a informação da média (com quatro casas decimais), tem-se a letra grega `\sigma`, usada para representar desvio padrão populacional. Em seguida, tem-se a letra `s`, usada para representar o desvio padrão amostral.
-
-.. _ativ-inflacao-anual:
-
-Atividade: Inflação anual
--------------------------
-
-.. admonition:: Para o professor
-
- **Objetivos específicos** 
- 
- Comparar diferentes conjuntos de dados que apresentam a mesma variância, mas suas médias são diferentes. 
- 
- Perceber a necessidade de definir uma medida que avalie a magnitude da variância (desvio padrão) em relação à média.
- 
- **Observações e sugestões** Nesta atividade são apresentados dois conjuntos de dados cujas variâncias são iguais, mas cujas médias são distintas. Pretende-se na discussão, levar à definição de coeficiente de variação, uma medida útil para avaliar a magnitude da variância. Como o dado observado é a inflação anual de um país, a atividade começa com um pequeno texto introdutório sobre inflação.
- 
-A seguir são apresentados dados sobre as inflações anuais em dois países. Antes de trabalhar com os dados, vamos tentar explicar o que é :index:`inflação<inflação>`. De uma maneira bem simples, pode-se dizer que a inflação é o aumento contínuo nos preços de produtos e serviços. Esse aumento costuma ser avaliado de forma mensal, gerando os índices de inflação, que refletem a variação nos preços.
-
-A inflação pode ser medida de várias formas. O índice oficial de inflação no Brasil é o IPCA (Índice de Preços ao Consumidor Amplo), que mede a variação mensal de preços de produtos considerando o consumo de famílias com renda mensal entre 1 e 40 salários mínimos. O IBGE (Instituto Brasileiro de Geografia e Estatística) é o orgão responsável pela medição e divulgação do IPCA. Veja neste 
-`link <https://www.youtube.com/watch?v=JVcDZOlIMBk>`_, um vídeo produzido pelo IBGE, explicando o IPCA.
-
-Foram observadas as inflações anuais de dois países A e B para os anos de 2011 a 2015, conforme tabela a seguir. 
-
-.. table:: Inflação anual
-
- +------+-------+--------+--------+-------+-------+--------+
- | País | 2011  | 2012   | 2013   | 2014  | 2015  | soma   |
- +------+-------+--------+--------+-------+-------+--------+
- | A    | 2,00% | 1,80%  | 2,10%  | 2,20% | 1,90% | 10,00% |
- +------+-------+--------+--------+-------+-------+--------+
- | B    | 0,01% | -0,19% | -0,09% | 0,21% | 0,11% | 0,05%  |
- +------+-------+--------+--------+-------+-------+--------+
-   
-1. Calcule as médias das inflações anuais dos dois países. Há diferenças entre elas?
-
-2. Calcule as variâncias das inflações anuais dos dois países, sabendo que para o país A, `\displaystyle{\sum^5_{i=1}}x^2_i=20,1`  (% `^2` ) e para o país B,  `\displaystyle{\sum^5_{i=1}}x^2_i=0,1005`  (% `^2` ). Há diferença entre elas?
-
-3. Qual dos países apresenta maior variação inflacionária quando comparada à média inflacionária? 
-
-
-.. admonition:: Resposta 
-
-   1. No país A, a inflação média anual, considerando estes 5 anos, é    `\bar{x}=\frac{10}{5}=2,00` %. No país B, a inflação média anual, considerando estes 5 anos, é `\bar{x}=\frac{0,05}{5}=0,01` %. Logo, as inflações anuais médias dos dois países são bem diferentes.
-   
-   2. Usando a fórmula simplificada para o cálculo da variância, temos, para o país A, `\textsf{s}^2=\frac{1}{5-1}\left (20,1-5\cdot 2^2\right )= 0,025` (% `^2` ). Para o país B, temos `\textsf{s}^2=\frac{1}{5-1}\left (0,1005-5\cdot 0,01^2\right )= 0,025` (% `^2` ). Logo, as variâncias destes dois conjuntos de inflações anuais são iguais e, consequentemente, os desvios padrões também são iguais. 
-   
-   3. Verifique que os cinco desvios da média produzidos pelos dados dos dois países são idênticos, levando à mesma variância (mesmo desvio padrão). No entanto, a média no país A (2%) é bem maior do que no país B, indicando uma variação relativa à média menos forte do que no país B. A seguir, será definido o coeficiente de variação, que avalia essa propriedade de dispersão relativa à média. Observe que o desvio padrão para os dois países é  `\sqrt{0,025}\approx 0,16` % de modo que no país A o desvio padrão corresponde a 8% da média (`\frac{0,16}{2}=0,08` ), enquanto que no país B, corresponde a 1600% da média (`\frac{0,16}{0,01}=16`), ou seja, a flutuação em torno da média é muito mais forte no país B.
-
-
-**Coeficiente de variação**
-
-Nem sempre uma variância pequena (e consequentemente desvio-padrão pequeno) significa pouca dispersão. Tampouco uma variância grande é sempre indicador de alta dispersão. Esses valores podem ser altos ou baixos devido à magnitude (ordem de grandeza) dos dados observados. Se medimos observações em microscópio, por exemplo, teremos inevitavelmente valor numericamente baixo de variância, podendo no entanto haver alta dispersão dos dados no nível microscópico. Da mesma maneira, ao medir os produtos internos brutos brasileiros em dólares em vários anos teremos valores observados de alta magnitude, gerando variância numericamente grande, mas não necessariamente indicando alta dispersão.
-
-Na :ref:`ativ-inflacao-anual`, estudamos dois conjuntos de dados que apresentam médias diferentes, mas variâncias iguais. Podemos dizer que o impacto da variância em relação à média é o mesmo para os dois conjuntos? Comparando o valor do desvio padrão de cerca de 0,16% à média do país A de 2%, vemos que ele é pequeno em relação à média. Comparando o valor do desvio padrão 0,16% em relação à média do país B de 0,01%, vemos que ele é muito grande em relação à média. Neste caso dizemos que no país A os dados apresentam variação relativa em torno da média pequena. Já, no país B, os dados apresentam variação relativa em torno da média grande. 
-
-O :index:`coeficiente de variação<coeficiente de variação>` é uma medida usada para calcular a variação relativa dos dados de um conjunto em torno da média: quanto maior seu valor, maior é a variação relativa em torno da média.
-
-.. glossary::
-
-   Coeficiente de variação 
-      é a razão entre o desvio padrão e a média. Em geral, ele é descrito em termos percentuais. 
-      
-O coeficiente de variação amostral, em termos percentuais, é calculado  por 
-
-.. math::
-
-   CVA=\frac{s}{\bar{x}}\cdot 100 \%
-
-em que `s` é o desvio padrão amostral e `\bar{x}` é a média amostral.
-   
-Esta expressão é usada quando dispomos de uma amostra da população. Se, dispomos dos dados da população, então o coeficiente de variação populacional é dado por  
-
-.. math::
-
-   CVP=\frac{{\sigma}}{\mu}\cdot 100\%
-   
-em que `\sigma` é o desvio padrão populacional e `\mu` é a média populacional.
-
-Observe que o coeficiente de variação só é definido para conjuntos cuja média é diferente de zero.
-
-
-.. _sec-praticando2:
+.. _sec-praticando1:
 
 **********
 Praticando
 **********
 
+.. _ativ-maratona-categoria-homens:
 
-.. _ativ-compara-categorias:
+Atividade: Categoria homens na maratona
+---------------------------------------
 
-Atividade: comparação de conjuntos de dados
--------------------------------------------
 
 .. admonition:: Para o professor
+
+   **Objetivos específicos** Usar medidas de posição para a comparação das distribuições de uma mesma variável em dois grupos diferentes. 
    
-   **Objetivos específicos** Comparar diferentes distribuições de uma mesma variável quando separada por grupos.
+   **Observações e sugestões** Nesta atividade serão comparados os dados dos 100 melhores tempos na maratona de Nova Iorque/2017 para as categorias homens e mulheres. A tabela com o s 100 melhores tempos em horas para a categoria homens é fornecida. A comparação será feita com base nas medidas de posição média, quartis, mínimo e máximo, que são fáceis de serem determinadas apesar da quantidade de dados ser 100. No caso da média, a soma dos 100 tempos é informada. 
+
+
+Considere os dados da categoria Homens da Maratona da Cidade de Nova Iorque do ano 2017 apresentados na tabela a seguir, já convertidos para horas. 
+
+.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para homens 
    
-   **Observações e sugestões**  Nesta atividade serão coletados dados de uma mesma variável que possa ser separada em grupos, com o intuito de comparar as suas medidas de posição e dispersão. Sugerem-se algumas opções, dependendo do tamanho da turma e do contexto escolar, podem até ser escolhidas variáveis distintas para grupos pequenos de alunos, por exemplo, um grupo trabalha com as médias de Matemática, outro grupo trabalha com alturas, etc.
-   
-   Uma vez coletados os dados, serão calculadas suas medidas de posição e dispersão e comparadas, tentando orientar os estudantes a comentar as observações e não apenas fazer os cálculos. Para a realização dos cálculos deve ser usado suporte tecnológico: calculadoras, aplicativos, etc.   
-   
-   O intuito é dar uma perspectiva para os estudantes da forma em que a estatística é utilizada na ciência para responder perguntas como:
-   
-   * Uma determinada espécie vegetal cresce melhor perto de uma fonte de água ou longe da mesmo? Na sombra de uma árvore ou recebendo luz direta do sol?
-   
-   * As meninas são mais altas que os meninos numa certa idade? Acontece o mesmo em todas as idades?
-    
-   De forma ideal, pode ser formulada primeiro a pergunta, e depois coletados os dados, apelando a informações encontradas num artigo científico ou numa publicação de jornal, com o intuito de tentar contrastar uma afirmação dada num texto com dados coletados diretamente.
-   
-
-Para realizar esta atividade será necessário coletar dois conjuntos de dados da mesma natureza, correspondentes a grupos distintos, os quais queremos comparar. Por exemplo:
-
-* alturas de homens e mulheres;
-
-* alturas de alunos de 1º e de 9º ano do Ensino Fundamental;
-
-* notas de disciplinas distintas; 
-
-* notas de turmas distintas na mesma disciplina;
-
-* medições de produtos naturais: comprimento das folhas de vegetais (alface, rúcula, etc) comprados em lojas distintas, altura de árvores ou plantas similares locais da cidade distintos;
-
-entre outros que podem ser escolhidos dependendo da região e dos recursos disponíveis na escola.
-
-No seu caderno ou em uma planilha eletrônica, registre os dados coletados, como indicado no modelo de tabela a seguir, lembrando que quanto mais dados você coletar com os critérios definidos, os resultados do experimento terão maior chance de refletir a realidade. 
-
-.. table:: Exemplo de tabela considerando a altura como variável e duas turmas distintas como os grupos
-
-   +----------------------------------+
-   |Variável: `\textsf{altura em cm}` |
-   +--------------+-------------------+
-   | Turma A      | Turma B           |
-   +==============+===================+
-   |    155       |    165            |
-   +--------------+-------------------+
-   |     168      |     159           |
-   +--------------+-------------------+
-   |    `\vdots`  |  `\vdots`         |
-   +--------------+-------------------+
-
-Para calcular as medidas de posição e dispersão, utilize de forma cuidadosa as fórmulas apresentadas. De forma alternativa, você pode digitar os dados no `Aplicativo de medidas de posição e dispersão do Livro Aberto <https://ggbm.at/KbYqnQ6Q>`_ e obter as medidas resumo dos dados.
-
-.. table:: Registre os seus resultados
-
-   +-----------------------------+-------------+-------------+
-   |                             | Grupo   A   | Grupo B     |
-   +=============================+=============+=============+
-   | Nome da categoria           |             |             |
-   +-----------------------------+-------------+-------------+
-   | Mínimo (`x_{(1)}`)          |             |             |
-   +-----------------------------+-------------+-------------+
-   | Máximo  (`x_{(n)}`)         |             |             |
-   +-----------------------------+-------------+-------------+
-   | Média                       |             |             |
-   +-----------------------------+-------------+-------------+
-   | Q1                          |             |             |
-   +-----------------------------+-------------+-------------+
-   | Mediana                     |             |             |
-   +-----------------------------+-------------+-------------+
-   | Q3                          |             |             |
-   +-----------------------------+-------------+-------------+
-   | Amplitude amostral (R)      |             |             |
-   +-----------------------------+-------------+-------------+
-   |Dist. entre quartis (DQ)     |             |             |
-   +-----------------------------+-------------+-------------+
-   |Desvio médio absoluto (DM)   |             |             |
-   +-----------------------------+-------------+-------------+
-   |Variância amostral (`s^2`)   |             |             |
-   +-----------------------------+-------------+-------------+
-   |Desvio padrão amostral (`s`) |             |             |
-   +-----------------------------+-------------+-------------+
-
-Sugere-se a construção dos histogramas para comparar os dois grupos. Você pode usar o GeoGebra para esta construção.
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   |    |+0     |+10    |+20    |+30    |+40    |+50    |+60    |+70    |+80    |+90    |
+   +====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
+   | 1  | 2,181 | 2,258 | 2,457 | 2,500 | 2,526 | 2,551 | 2,573 | 2,602 | 2,616 | 2,631 |  
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 2  | 2,182 | 2,311 | 2,461 | 2,501 | 2,528 | 2,552 | 2,575 | 2,606 | 2,621 | 2,631 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 3  | 2,192 | 2,341 | 2,469 | 2,502 | 2,53  | 2,554 | 2,577 | 2,608 | 2,621 | 2,631 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 4  | 2,198 | 2,358 | 2,471 | 2,507 | 2,531 | 2,555 | 2,578 | 2,610 | 2,622 | 2,634 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 5  | 2,200 | 2,377 | 2,472 | 2,508 | 2,531 | 2,557 | 2,588 | 2,610 | 2,623 | 2,635 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 6  | 2,211 | 2,379 | 2,474 | 2,514 | 2,533 | 2,562 | 2,588 | 2,612 | 2,625 | 2,635 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 7  | 2,213 | 2,394 | 2,478 | 2,518 | 2,542 | 2,563 | 2,591 | 2,613 | 2,626 | 2,636 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 8  | 2,223 | 2,398 | 2,487 | 2,520 | 2,546 | 2,568 | 2,592 | 2,613 | 2,627 | 2,636 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 9  | 2,233 | 2,426 | 2,495 | 2,523 | 2,548 | 2,571 | 2,595 | 2,613 | 2,628 | 2,639 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+   | 10 | 2,249 | 2,453 | 2,496 | 2,524 | 2,549 | 2,573 | 2,597 | 2,614 | 2,629 | 2,639 |
+   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
 
 
-.. Se preferir,  pode utilizar o aplicativo de `Análise comparativa do Livro Aberto <http://www.geogebra.org>`_.
-
-1. Discuta as suas observações com a turma. Lembre-se de interpretar as medidas de dispersão e não apenas as de posição, que informação adicional oferecem?
-
-2. Analisando os dois conjuntos de dados obtidos, que medida de posição você julga mais adequada para resumir a informação do conjunto? Por quê?
-
-3. Os resultados que você obteve parecem refletir a realidade? Existe algum resultado científico que suporte estas observações? Consulte  professores de outras áreas sobre suas conclusões.
+A figura a seguir mostra um histograma destes dados, considerando-se 10 intervalos de classe.
 
 
-.. _ativ-aproxima-dpa-usando-R:
+.. _fig-histograma-maratona-homens:
 
-Atividade: aproximação para o valor do desvio padrão amostral
--------------------------------------------------------------
-
-.. admonition:: Para o professor
-   
- **Objetivos específicos** 
-   
- Calcular uma aproximação grosseira do desvio padrão amostral em função da amplitude amostral.
-   
- Comparar os resultados obtidos pela fórmula de aproximação com os valores exatos do desvio padrão amostral.
- 
- Avaliar o valor obtido do desvio padrão, comparando-o com a aproximação.
-   
- **Observações e sugestões** 
- 
- Nesta atividade pretende-se apresentar interpretações para o desvio padrão, evitando que ele torne-se apenas uma medida a mais sem muito sentido para o aluno. Além disso, esta atividade pode ser útil para o aluno avaliar se ele calculou corretamente um desvio padrão. É muito comum, mesmo informando-se somatórios e permitindo-se o uso de calculadoras, a produção de resultados incorretos para a variância e, consequentemente, para o desvio padrão. Uma ferramenta útil pode ser  comparar o valor obtido do desvio padrão com a razão `\frac{R}{4}`. Se a diferença for grande (mais de 50% do valor obtido de `s`) recomenda-se verificar novamente o cálculo de `s`.
- 
- 
-Nos conjuntos de dados, quando não há valores atípicos (valores muito altos ou muito baixos em relação à maior parte dos valores no conjunto), a maior parte dos valores se situará no intervalo centrado na média distando 2 desvios padrões à esquerda e à direita da média. A partir desta suposição, pode-se obter uma fórmula para estimar o valor do desvio padrão amostral `s` .
-
-
-.. math::
-
-   \left \{ \begin{array}{l} \textsf{Max}=x_{(n)}\approx \bar{x}+2\cdot s \\ \textsf{Min}=x_{(1)}\approx \bar{x}-2\cdot s\end{array}\right. 
-   
-Tomando a diferença das primeiras expressões apresentadas, obtemos
-
-
-.. math::
-
-   R= \textsf{Max-Min} \approx 4\cdot s
-
-tal que
-
-.. math::
-
-   s\approx \frac{R}{4}
-   
-a) Use esta fórmula para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Notas-de-Artes` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
-
-.. _fig-resumoNArtes:
-
-.. figure:: _resources/summary_NArtes.png
-   :width: 100pt
-   :align: center
-
-   Estatísticas resumo das Notas de Artes 
-   
-b) Idem para estimar o valor do desvio padrão amostral dos dados da :ref:`ativ-Maratona-de-NY` e compare o valor obtido com o desvio padrão amostral `s`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
-
-.. _fig-summaryMaratonaMulheres:
-
-.. figure:: _resources/summary_MaratonaNYMulheres.png
-   :width: 100pt
-   :align: center
-
-   Estatísticas resumo dos 100 melhores tempos para mulheres - Maratona de Nova Iorque/2017 
-   
-c) Idem para estimar o valor de desvio padrão amostral dos dados da :ref:`ativ-Estrategia-de-investimento`. Use os dados na figura a seguir, produzidos pelo GeoGebra.
-
-.. _fig-estrategia:
-
-.. figure:: _resources/summary_estrategiainvestimento.png
+.. figure:: _resources/Histograma_homens_1.png
    :width: 200pt
    :align: center
 
-   Estatísticas resumo das cotações das ação nas Companhias A e B.
+   Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova Iorque do ano 2017
 
-.. admonition:: Resposta 
 
- a) Da figura :ref:`fig-resumoNArtes` vemos que `s\approx 1,96` e que `R=8-0,8=7,2`. Pela fórmula apresentada temos `{s}\approx\frac{7,2}{4}=1,8`. 
- 
- Comparando o valor aproximado de `s` (1,8) com o valor calculado de `s` (1,96) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 8% do valor de `s`, pois `\frac{|1,8-1,96|}{1,96}\approx 0,08`. 
- 
- b) Da figura :ref:`fig-summaryMaratonaMulheres` vemos que `s\approx 0,1866` e que `R=3,085-2,448=0,637`. Pela fórmula apresentada temos `{s}\approx\frac{0,637}{4}=0,15925`. 
- 
- Comparando o valor aproximado de `s` (0,15925) com o valor calculado de `s` (0,1866) vemos que a aproximação é um pouco menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 15% do valor de `s`, pois `\frac{|0,15925-0,1866|}{0,1866}\approx 0,15`. 
- 
- c) Da figura :ref:`fig-estrategia` vemos que, para a companhia A,  `s\approx 4,5765` e que `R=67-56=11`. Pela fórmula apresentada temos `{s}\approx\frac{11}{4}=2,75`. 
- 
- Comparando o valor aproximado de `s` (2,75) com o valor calculado de `s` (4,5765) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 40% do valor de `s`, pois `\frac{|2,75-4,5765|}{4,5765}\approx 0,4`. 
- 
- Da figura :ref:`fig-estrategia` vemos que, para a companhia B,  `s\approx 17,3738` e que `R=90-33=57`. Pela fórmula apresentada temos `{s}\approx\frac{57}{4}=14,25`. 
- 
- Comparando o valor aproximado de `s` (14,25) com o valor calculado de `s` (17,3738) vemos que a aproximação é menor do que o valor de `s`. O erro percentual cometido por esta aproximação corresponde a 18% do valor de `s`, pois `\frac{|14,25-17,3738|}{17,3738}\approx 0,18`. 
- 
- 
-.. _ativ-mediamaisoumenosdoisdesvios:
+#. Calcule a média dos 100 melhores tempos na categoria homens, sabendo que a soma dos tempos é dada por 251,1617 horas. 
+#. Calcule a mediana dos 100 melhores tempos na categoria homens.
+#. Identifique o intervalo de classe modal dos 100 melhores tempos na categoria homens.
+#. Determine os quartis dos 100 melhores tempos na categoria homens.
+#. Localize no histograma a média e os quartis.
+#. Compare com os resultados obtidos para a categoria homens com os obtidos para a categoria mulheres na :ref:`ativ-maratona-de-NY`: completando a tabela a seguir. 
 
-Atividade: frequência de valores no intervalo centrado na média mais ou menos 2 desvios padrões 
------------------------------------------------------------------------------------------------
+    
+   .. table:: Tabela de medidas-resumo para Mulheres e Homens - Maratona de Nova Iorque/2017
 
+      +---------+----------+--------+
+      |         | Mulheres | Homens |
+      +---------+----------+--------+
+      |  Mínimo |          |        |
+      +---------+----------+--------+
+      |  Máximo |          |        |
+      +---------+----------+--------+
+      |  Média  |          |        |
+      +---------+----------+--------+
+      | Mediana |          |        |
+      +---------+----------+--------+
+      |  `Q1`   |          |        |
+      +---------+----------+--------+
+      |  `Q3`   |          |        |
+      +---------+----------+--------+
+
+
+   .. admonition:: Para refletir
+
+      * O que seria necessário considerar para poder comparar o histograma da categoria de Homens com o das Mulheres? Observe que os limites dos intervalos são distintos, mas estão na mesma escala.
+
+      * Como poderiam ser utilizadas a mediana e os quartis para comparar duas distribuições de dados? Pense em alguma forma de comparar esse dados de forma visual e descreva-a.
+
+   
+   .. admonition:: Resposta 
+
+      .. table:: Legenda
+
+         +---------+----------+--------+
+         |         | Mulheres | Homens |
+         +---------+----------+--------+
+         |  Mínimo | 2,448    | 2,181  |
+         +---------+----------+--------+
+         |  Máximo | 3,086    | 2,639  |
+         +---------+----------+--------+
+         |  Média  | 2,8698   | 2,5116 |
+         +---------+----------+--------+
+         | Mediana | 2,949    | 2,550  |
+         +---------+----------+--------+
+         |  `Q1`   | 2,772    | 2,473  |
+         +---------+----------+--------+
+         |  `Q3`   | 2,998    | 2,611  |
+         +---------+----------+--------+
+
+
+      .. _fig-coloque-aqui-o-nome:
+
+      .. figure:: _resources/Histograma_homens_resposta.png
+         :width: 200pt
+         :align: center
+
+         Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova York do ano 2017, com média, mediana, Q1 e Q3 indicados
+         
+ 
+.. _ativ-comparacao-de-diferentes-grupos:
+
+Atividade: Comparação das diferentes categorias na maratona
+-----------------------------------------------------------
+
+.. ATENÇÃO:deixar apenas as categorias cadeira de rodas e triciclo de mão 
 
 .. admonition:: Para o professor
 
-   **Objetivos específicos** Calcular a frequência relativa de dados que caem no intervalo centrado na média mais ou menos dois desvios padrões.
+   **Objetivos específicos** 
    
-   **Observações e sugestões** Esta atividade será útil no final da próxima seção que trata da construção do boxplot e seus resultados serão retomados adiante. Além disso, será útil na verificação da afirmação feita na atividade anterior de que quando não há valores atípicos, a grande maioria dos dados situa-se entre a média mais ou menos dois desvios padrões. 
+   Comparar distribuições de uma mesma variável para grupos distintos a partir dos histogramas.
    
-Para os conjuntos de dados considerados na :ref:`ativ-aproxima-dpa-usando-R`, calcule a frequência absoluta de dados que estão no intervalo `[\bar{x}-2\cdot s,\bar{x}+2\cdot s]` e comente sobre os resultados obtidos.
+   Perceber a necessidade de usar a mesma escala nos eixos do histograma, para tornar os mesmos comparáveis.
+   
+   
+   **Observações e sugestões**
+   
+   Esta atividade introduz os elementos necessários para a comparação de dois histogramas, a saber: mesmas escalas nos eixos e colunas de frequências relativas.
+   
+   Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de dispersão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
+   
+   As perguntas não têm respostas fechadas, têm o intuito de gerar uma discussão sobre os assuntos já colocados.
+   
+   
+Observe os histogramas a seguir referentes as categorias de cadeira de rodas e triciclo de mão da Maratona de Nova Iorque em 2017. 
 
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/Histogramas_cadeira_triciclo.png
+   :width: 300pt
+   :align: center
+
+   Histogramas comparativos das quatro modalidades da maratona de Nova Iorque 2017
+
+
+#. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
+
+#. Em qual categoria se encontra o atleta que completou a maratona no maior tempo?
+   
+#. Você consegue estimar o tempo médio destas categorias observando os histogramas? Você acha que elas serão muito diferentes das de homens e mulheres (:ref:`ativ-maratona-categoria-homens`)?
+
+#. Observe o quadro a seguir e marque as médias nos histogramas. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
+
+   .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
+
+      +-----------+------------------+-----------------+
+      | Categoria | Cadeira de rodas | Triciclo de mão |
+      +-----------+------------------+-----------------+
+      | Média     | 2,59             | 2,73            |
+      +-----------+------------------+-----------------+
+  
+#. Observe que as médias não são muito diferentes, porém, as distribuições são similares. Se você conhecesse apenas a média, seria capaz de perceber a forma destes histogramas? Por quê?
+
+#. Comparando os dois histogramas, qual distribuição apresenta maior dispersão? Por quê?
 
 .. admonition:: Resposta 
 
- No caso dos dados da :ref:`ativ-Notas-de-Artes` temos `\bar{x}=5,93` e `s=1,96` tal que os limites deste intervalo são, respectivamente, 2,01 e 9,85. Portanto, das 35 notas podemos ver que 32 observações caem dentro destes limites, ou equivalentemente,  cerca de 91% das observações.
- 
- No caso dos dados da :ref:`maratona-de-NY` temos `\bar{x}=2,8697` e `s=0,1866` tal que os limites deste intervalo são, respectivamente, 2,4969 e 3,2429. Portanto, dos 100 tempos podemos ver que 93 caem dentro destes limites, ou equivalentemente,  93% dos tempos.
- 
- No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia A, temos `\bar{x}=61,5` e `s=4,5765` tal que os limites deste intervalo são, aproximadamente, 52,3 e 70,7. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
- 
- No caso dos dados da :ref:`estrategia-de-investimento`, para a companhia B, temos `\bar{x}=61,5` e `s=18,3136` tal que os limites deste intervalo são, aproximadamente,  24,9 e 98,1. Portanto, das 10 cotações podemos ver que todas caem dentro destes limites, ou equivalentemente,  100% das cotações.
- 
- Comentário acerca destes resultados: verifica-se que para os quatro conjuntos aqui considerados, de fato, a maior parte dos dados (mais de 90%) situa-se entre os limites de uma média mais ou menos 2 desvios padrões.
- 
- .. _ativ-comparacao-dois-tipos-de-bonificacao:
-
-Atividade: comparação das duas possibilidades de bonificação na Nota de Artes
------------------------------------------------------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** Avaliar o efeito no coeficiente de variação de um conjunto de dados quando realizamos transformações de adição de uma constante e de multiplicação por uma constante.
-   
-   **Observações e sugestões** Nesta atividade pretende-se retornar ao item (e) da :ref:`ativ-Notas-de-Artes` quando foi perguntado ao estudante o que ele achava melhor: ganhar um ponto ou um acréscimo de 20% em sua nota. A ideia será propor a mesma pergunta de um ponto de vista do professor, que prefere que a distribuição das notas apresente o menor coeficiente de variação.
-   
-Vamos retornar a :ref:`ativ-Notas-de-Artes` e às duas possibilidades de bonificação das notas: acrescentar um ponto a todos os alunos ou aumentar em 20% a nota de cada aluno. Suponha, que o professor deseja que o resultado geral de sua turma apresente o menor coeficiente de variação. Partindo deste ponto de vista, qual das duas possibilidades é mais interessante para o professor adotar?
-
-Para facilitar, use as informações a seguir.
-
-.. table:: Dados sobre as somas simples e somas de quadrados das notas antes da bonificação (antes), após serem acrescidas de um ponto (1 pt) e após serem aumentadas em 20% (20%)
-   
-   +------------+---------+---------+----------+
-   | `n=35`     | antes   | 1 pt    | 20%      |
-   +------------+---------+---------+----------+
-   | `\sum x`   | 207,5   | 242,5   | 249,0    |
-   +------------+---------+---------+----------+
-   | `\sum x^2` | 1361,39 | 1811,39 | 1960,402 |
-   +------------+---------+---------+----------+
-
-
-
-
-.. admonition:: Resposta 
-
-   O professor deverá escolher o aumento de um ponto para cada estudante, pois esta bonificação acarretará num coeficiente de variação menor, implicando em maior homogeneidade da turma em relação à média, conforme os cálculos a seguir.
-   
-   Considerando o acréscimo de um ponto a todos os alunos temos que a média passa a ser `\bar{x}=\frac{242,5}{35}\approx 6,93`. 
-   A variância, calculada por `s^2` é dada por `\frac{1811,39-35\cdot 6,93^2}{35-1}\approx 3,84` e, o desvio padrão, `s\approx 1,96`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{1,96}{6,93}\cdot 100\approx 28` %.
-   
-   Considerando um aumento de 20% para cada nota temos que a média passa a ser `\bar{x}=\frac{249,0}{35}\approx 7,11`. A variância, calculada por `s^2` é dada por `\frac{1960,402-35\cdot 7,11^2}{35-1}\approx 5,56` e, o desvio padrão, `s\approx 2,36`. Assim, o coeficiente de variação da turma, resultante desta bonificação será dado por `\textsf{CV}=\frac{2,36}{7,11}\cdot 100\approx 33` %.
-   
- 
-
-   
-   
-
-
-
+  #. As escalas horizontal e vertical são coincidentes em ambos os histogramas para permitir a comparação. Isto foi discutido no Capítulo **A Natureza da Estatística**.
+  
+  #. Observando-se os histogramas o maior tempo está na categoria de Triciclo de mão.
+  
+  #. A simples visualização pode remeter a estimativa de 4 horas para estas categorias, valor bem maior do que as médias para homens e mulheres (:ref:`ativ-maratona-categoria-homens`). No entanto, este valor excede muito as médias reais, apresentadas. Isto mostra que estimar o centro de equilíbrio de uma distribuição a partir do histograma não é trivial.
+  
+  #. Ambos os histogramas apresentam assimetria à direita: grande concentração de dados à esquerda e forma alongada para a direita.
+  
+  #. Não é possível, apenas um número é insuficiente para caracterizar a forma do histograma. Outras informações são necessárias para isto.
+  
+  #. O triciclo de mão apresenta maior dispersão, considerando a amplitude.
+  
 
 

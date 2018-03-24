@@ -1,0 +1,124 @@
+
+
+   
+   
+
+
+.. _sec-explorando2:
+
+********************************
+Explorando: medidas de dispersão
+********************************
+
+.. _ativ-estrategia-de-investimento:
+
+Atividade: estratégia de investimento
+-------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Definir medidas que caracterizam a dispersão de um conjunto de dados.
+
+   **Observações e sugestões** Nessa atividade são apresentados dois conjuntos de dados temporais que apresentam mesma média, mesma mediana e mesma moda e, no entanto, seus gráficos de linha são distintos. O objetivo principal é mostrar que as medidas de posição podem ser insuficientes para caracterizar a distribuição dos dados, levando à necessidade de usar medidas de dispersão. Lembre que é esperado, do Ensino Fundamental, que os estudantes já tenham a noção de amplitude amostral, uma medida bruta de dispersão, pois só leva em conta o mínimo e o máximo observados. 
+
+   Esta atividade pode ser vinculada às disciplinas de História ou Geografia, por exemplo, no estudo do período da Crise Econômica de 1929 ou outros temas relacionados com o PIB e crescimento econômico.
+
+Para investir na bolsa de valores compramos ações de empresas por intermédio de uma corretora a um certo preço e depois de um período de tempo vendemos estas ações na expectativa de que seus preços tenham aumentado. No entanto, também podemos perder com o investimento, caso o preço da ação diminua no período de investimento. Uma ação é a menor parte do capital de uma empresa. Veja na figura a seguir um esquema simplificado do investimento na bolsa de valores.
+
+.. _fig-ativ-bolsa-de-valores:
+
+.. figure:: _resources/resized001.png
+   :width: 300pt
+   :align: center
+
+   Esquema simplificado de investimento na bolsa de valores
+
+Suponha que você tenha a oportunidade de investir um capital, comprando ações de uma de duas  Companhias `A` ou `B` e para escolher uma das duas, disponha de duas amostras de preços do valor destas ações (em reais) registrados no fechamento da bolsa de valores em dez sextas-feiras consecutivas. Veja na figura e na tabela a seguir a cotação das ações ao longo das últimas 10 semanas.
+
+.. _fig-coloque-aqui-o-nome:
+
+.. figure:: _resources/Acoes_medidas_dispersao.png
+   :width: 350pt
+   :align: center
+
+   Gráficos de linha da cotação das ações
+ 
+
+.. table:: Cotação das ações das empresas em reais (R$)
+
++--------+-----+-----+
+| Semana | `A` | `B` |
++--------+-----+-----+
+| 1      | 61  | 67  |
++--------+-----+-----+
+| 2      | 56  | 48  |
++--------+-----+-----+
+| 3      | 63  | 52  |
++--------+-----+-----+
+| 4      | 57  | 82  |
++--------+-----+-----+
+| 5      | 67  | 77  |
++--------+-----+-----+
+| 6      | 63  | 33  |
++--------+-----+-----+
+| 7      | 67  | 67  |
++--------+-----+-----+
+| 8      | 58  | 42  |
++--------+-----+-----+
+| 9      | 67  | 90  |
++--------+-----+-----+
+| 10     | 56  | 57  |
++--------+-----+-----+
+| Total  | 615 | 615 |
++--------+-----+-----+
+
+
+(a)	Obtenha as médias das cotações das ações das companhias A e B nas semanas observadas e compare-as.
+(b)	Obtenha as medianas das cotações das ações das companhias A e B nas semanas observadas e compare-as, lembrando que os dados da tabela estão apresentados na ordem temporal.
+(c)	Obtenha as modas das cotações das ações das companhias A e B nas semanas observadas e compare-as.
+(d)	Analisando apenas as medidas de posição obtidas em (a), (b) e (c), pode-se dizer que as duas companhias diferem uma da outra? Por quê?
+(e) Um investimento que apresenta grandes ganhos e perdas pode ser chamado de alto risco, já investimentos cujos valores flutuam pouco são considerados de baixo risco. Se você é um investidor da bolsa de valores avesso ao risco, isto é, você gostaria de escolher o investimento com menores flutuações, em qual das companhias você investiria o seu dinheiro? Por quê?
+
+.. admonition:: Resposta 
+
+ 1. Dado que são 10 observações em cada um dos conjuntos e que as somas das 10, resultam em 615, segue que a média das cotações na companhia `A` é R$ 61,50, que também é a média das cotações na companhia `B`.
+   
+ 2. Para obter as medianas é necessário antes ordenar os valores. Na tabela a seguir os valores das cotações foram ordenados para cada companhia.
+   
+    .. table:: Cotação das ações das empresas
+
+     +-----+-----+
+     | `A` | `B` |
+     +-----+-----+
+     | 56  | 33  |
+     +-----+-----+
+     | 56  | 42  |
+     +-----+-----+
+     | 57  | 48  |
+     +-----+-----+
+     | 58  | 52  |
+     +-----+-----+
+     | 61  | 57  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 63  | 67  |
+     +-----+-----+
+     | 67  | 77  |
+     +-----+-----+
+     | 67  | 82  |
+     +-----+-----+
+     | 67  | 90  |
+     +-----+-----+
+  
+    Como são 10 observações em cada conjunto e 10 é um número par, temos que a mediana será dada pela média das duas posições centrais, a saber, posições 5 e 6: `\textsf{Mediana}=\frac{x_{(5)}+x_{(6)}}{2}`.
+ 
+    Na companhia `A` teremos  `\textsf{Mediana}=\frac{61+63}{2}=62` reais e, na companhia `B`, `\textsf{Mediana}=\frac{57+67}{2}=62`  reais.
+ 
+ 3. Na companhia `A` o valor mais frequente foi 67, ocorrendo 3 vezes. Na companhia `B`, o valor mais frequente foi 67, ocorrendo duas vezes. Logo, tanto em `A` como em `B` o valor da moda foi 67  reais.
+ 
+ 4. Não, pois tais medidas são idênticas nas duas companhias.
+ 
+ 5. Analisando os gráficos de linha da figura 57, percebe-se que as cotações da companhia `B` variam mais do que as da companhia `A` e, portanto, como menor risco envolve menos variação, escolheria a companhia `A`. Observe que as amplitudes (diferença entre o maior e menor valores) observadas nas companhias `A` e `B` são `67-56=11` e `90-33=57`, respectivamente, confirmando que na companhia `A` a variação das cotações é menor.
+ 

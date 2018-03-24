@@ -1,8 +1,8 @@
 .. _sec-organizando1:
 
-=========================================
-Organizando as ideias: Medidas de posição
-=========================================
+*****************************************
+Organizando as ideias: medidas de posição
+*****************************************
 
 Medidas de Posição, como o próprio termo indica, visam a resumir um conjunto de dados em geral numa única medida em algum lugar geométrico entre os extremos observados do conjunto (mínimo e máximo). Veja na figura a seguir, as marcações da média e da mediana das notas de Artes sem bonificação.
 
@@ -74,13 +74,8 @@ e
    \sum^n_{i=1} x^2_i=x^2_1+x^2_2+x^2_3+x^2_4+x^2_5 +x^2_6=\\
    55^2+ 22^2+ 30^2+ 14^2+ 25^2+  40^2=6.830
    
+**Média**
 
-
-.. _sub-media:
-
-------
-Média
-------
 
 A definição de média de um conjunto de dados quantitativos já é conhecida desde o Ensino Fundamental e, consiste na soma dos valores do conjunto dividida pelo número de observações. No exemplo das idades das seis primeiras pessoas que chegaram para tomar a vacina no Posto de Saúde, a soma das idades é 186 tal que a média será dada por `\frac{186}{6}=31` anos.
 
@@ -248,12 +243,8 @@ Desta discussão podemos concluir que deve-se ter cautela em resumir os dados co
    Histograma de distribuição com assimetria à esquerda
    
 Alguns textos usam os termos assimetria positiva para indicar assimetria à direita e assimetria negativa para indicar assimetria à esquerda. 
-   
 
-
--------
-Mediana
--------
+**Mediana**
 
 A :index:`mediana<mediana>` de um conjundo de valores numéricos é definida como o valor que ocupa a posição central dos dados ordenados.
 
@@ -343,10 +334,7 @@ Por outro lado, a média dos dados do conjunto `C_2` é `\frac{136}{10}=13,6`, e
 
 Em distribuições aproximadamente simétricas (veja a :ref:`fig-simetria` ) temos que a média e a mediana são valores próximos um do outro, esta é uma das razões que levam muitas pessoas a confundir estas duas medidas, achando que elas representam a mesma posição na distribuição dos dados qualquer que seja a situação. Mas, vimos que em distribuições com assimetria à direita, veja, por exemplo a figura  :ref:`fig-assimetriaadireita`, a média é maior do que a mediana e, em distribuições com assimetria à esquerda, veja por exemplo a figura :ref:`fig-assimetriaaesquerda`, a média é menor do que a mediana.
 
-
-----
-Moda
-----
+**Moda**
 
 A :index:`moda<moda>` é a observação mais frequente de um conjunto de dados. 
 
@@ -413,10 +401,8 @@ Se, por outro lado, o histograma da distribuição é do tipo simétrico e bimod
    
    Essa expressão pode ser apresentada de diversas formas e indica geometricamente que a mediana se situa entre a média e a moda, sendo sua distância à moda o dobro de sua distância à média (verifique isso pela relação acima). Sua verificação na prática tende a ser mais perfeita quanto maior for o conjunto de dados, e sendo a moda calculada com base em dados agrupados em classes.
 
+**Quartis**
 
--------
-Quartis
--------
 
 Os :index:`quartis<quartis>` são os três valores que dividem a distribuição em quatro partes de frequências iguais. 
 
@@ -432,208 +418,3 @@ Você já determinou os quartis para os dados da :ref:`ativ-maratona-de-NY` refe
 Como `n=100`, podemos tomar como o primeiro quartil o tempo da 25a. posição `\left (\frac{100}{4}=25\right )`, a saber, `\textsf{Q}1=2,764` h, já vimos que a mediana é 2,949 h e, para o terceiro quartil podemos tomar o  o valor da 75a. posição `\left (3\cdot\frac{100}{4}=75\right )`, a saber, `\textsf{Q}3=2,998` h. 
 
 Já vimos como determinar mediana (ou segundo quartil) de um conjunto de `n` dados. Um método simples para obter os demais quartis, Q1 e Q3, é considerar dois novos conjuntos de dados, o primeiro, consistindo da primeira metade dos valores ordenados e, o segundo, consistindo da segunda metade. Depois, basta determinar a mediana de cada um destes dois conjuntos, obtendo Q1 e Q3, respectivamente.
-
-.. _sec-praticando1:
-
-====================
-Praticando o assunto
-====================
-
-.. _ativ-maratona-categoria-homens:
-
----------------------------------------
-Atividade: Categoria homens na maratona
----------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** Usar medidas de posição para a comparação das distribuições de uma mesma variável em dois grupos diferentes. 
-   
-   **Observações e sugestões** Nesta atividade serão comparados os dados dos 100 melhores tempos na maratona de Nova Iorque/2017 para as categorias homens e mulheres. A tabela com o s 100 melhores tempos em horas para a categoria homens é fornecida. A comparação será feita com base nas medidas de posição média, quartis, mínimo e máximo, que são fáceis de serem determinadas apesar da quantidade de dados ser 100. No caso da média, a soma dos 100 tempos é informada. 
-
-
-Considere os dados da categoria Homens da Maratona da Cidade de Nova Iorque do ano 2017 apresentados na tabela a seguir, já convertidos para horas. 
-
-.. table:: 100 melhores tempos de finalização da Maratona de Nova Iorque 2017 para homens 
-   
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   |    |+0     |+10    |+20    |+30    |+40    |+50    |+60    |+70    |+80    |+90    |
-   +====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
-   | 1  | 2,181 | 2,258 | 2,457 | 2,500 | 2,526 | 2,551 | 2,573 | 2,602 | 2,616 | 2,631 |  
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 2  | 2,182 | 2,311 | 2,461 | 2,501 | 2,528 | 2,552 | 2,575 | 2,606 | 2,621 | 2,631 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 3  | 2,192 | 2,341 | 2,469 | 2,502 | 2,53  | 2,554 | 2,577 | 2,608 | 2,621 | 2,631 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 4  | 2,198 | 2,358 | 2,471 | 2,507 | 2,531 | 2,555 | 2,578 | 2,610 | 2,622 | 2,634 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 5  | 2,200 | 2,377 | 2,472 | 2,508 | 2,531 | 2,557 | 2,588 | 2,610 | 2,623 | 2,635 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 6  | 2,211 | 2,379 | 2,474 | 2,514 | 2,533 | 2,562 | 2,588 | 2,612 | 2,625 | 2,635 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 7  | 2,213 | 2,394 | 2,478 | 2,518 | 2,542 | 2,563 | 2,591 | 2,613 | 2,626 | 2,636 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 8  | 2,223 | 2,398 | 2,487 | 2,520 | 2,546 | 2,568 | 2,592 | 2,613 | 2,627 | 2,636 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 9  | 2,233 | 2,426 | 2,495 | 2,523 | 2,548 | 2,571 | 2,595 | 2,613 | 2,628 | 2,639 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-   | 10 | 2,249 | 2,453 | 2,496 | 2,524 | 2,549 | 2,573 | 2,597 | 2,614 | 2,629 | 2,639 |
-   +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-
-
-A figura a seguir mostra um histograma destes dados, considerando-se 10 intervalos de classe.
-
-
-.. _fig-histograma-maratona-homens:
-
-.. figure:: _resources/Histograma_homens_1.png
-   :width: 200pt
-   :align: center
-
-   Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova Iorque do ano 2017
-
-
-#. Calcule a média dos 100 melhores tempos na categoria homens, sabendo que a soma dos tempos é dada por 251,1617 horas. 
-#. Calcule a mediana dos 100 melhores tempos na categoria homens.
-#. Identifique o intervalo de classe modal dos 100 melhores tempos na categoria homens.
-#. Determine os quartis dos 100 melhores tempos na categoria homens.
-#. Localize no histograma a média e os quartis.
-#. Compare com os resultados obtidos para a categoria homens com os obtidos para a categoria mulheres na :ref:`ativ-maratona-de-NY`: completando a tabela a seguir. 
-
-    
-   .. table:: Tabela de medidas-resumo para Mulheres e Homens - Maratona de Nova Iorque/2017
-
-      +---------+----------+--------+
-      |         | Mulheres | Homens |
-      +---------+----------+--------+
-      |  Mínimo |          |        |
-      +---------+----------+--------+
-      |  Máximo |          |        |
-      +---------+----------+--------+
-      |  Média  |          |        |
-      +---------+----------+--------+
-      | Mediana |          |        |
-      +---------+----------+--------+
-      |  `Q1`   |          |        |
-      +---------+----------+--------+
-      |  `Q3`   |          |        |
-      +---------+----------+--------+
-
-
-   .. admonition:: Para refletir
-
-      * O que seria necessário considerar para poder comparar o histograma da categoria de Homens com o das Mulheres? Observe que os limites dos intervalos são distintos, mas estão na mesma escala.
-
-      * Como poderiam ser utilizadas a mediana e os quartis para comparar duas distribuições de dados? Pense em alguma forma de comparar esse dados de forma visual e descreva-a.
-
-   
-   .. admonition:: Resposta 
-
-      .. table:: Legenda
-
-         +---------+----------+--------+
-         |         | Mulheres | Homens |
-         +---------+----------+--------+
-         |  Mínimo | 2,448    | 2,181  |
-         +---------+----------+--------+
-         |  Máximo | 3,086    | 2,639  |
-         +---------+----------+--------+
-         |  Média  | 2,8698   | 2,5116 |
-         +---------+----------+--------+
-         | Mediana | 2,949    | 2,550  |
-         +---------+----------+--------+
-         |  `Q1`   | 2,772    | 2,473  |
-         +---------+----------+--------+
-         |  `Q3`   | 2,998    | 2,611  |
-         +---------+----------+--------+
-
-
-      .. _fig-coloque-aqui-o-nome:
-
-      .. figure:: _resources/Histograma_homens_resposta.png
-         :width: 200pt
-         :align: center
-
-         Histograma dos resultados da categoria de Homens da Maratona da Cidade de Nova York do ano 2017, com média, mediana, Q1 e Q3 indicados
-         
- 
-.. _ativ-comparacao-de-diferentes-grupos:
-
------------------------------------------------------------
-Atividade: Comparação das diferentes categorias na maratona
------------------------------------------------------------
-
-.. ATENÇÃO:deixar apenas as categorias cadeira de rodas e triciclo de mão 
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** 
-   
-   Comparar distribuições de uma mesma variável para grupos distintos a partir dos histogramas.
-   
-   Perceber a necessidade de usar a mesma escala nos eixos do histograma, para tornar os mesmos comparáveis.
-   
-   
-   **Observações e sugestões**
-   
-   Esta atividade introduz os elementos necessários para a comparação de dois histogramas, a saber: mesmas escalas nos eixos e colunas de frequências relativas.
-   
-   Os histogramas são apresentados com uma série de perguntas de discussão que podem motivar a formulação do conceito de dispersão de forma intuitiva, que será trabalhado na seguinte seção. Além de mostrar como apenas as medidas de posição não dizem suficiente sobre uma distribuição.
-   
-   As perguntas não têm respostas fechadas, têm o intuito de gerar uma discussão sobre os assuntos já colocados.
-   
-   
-Observe os histogramas a seguir referentes as categorias de cadeira de rodas e triciclo de mão da Maratona de Nova Iorque em 2017. 
-
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/Histogramas_cadeira_triciclo.png
-   :width: 300pt
-   :align: center
-
-   Histogramas comparativos das quatro modalidades da maratona de Nova Iorque 2017
-
-
-#. Compare as escalas utilizadas na construção destes histogramas, tanto no eixo horizontal, como no eixo vertical. O que você observou?
-
-#. Em qual categoria se encontra o atleta que completou a maratona no maior tempo?
-   
-#. Você consegue estimar o tempo médio destas categorias observando os histogramas? Você acha que elas serão muito diferentes das de homens e mulheres (:ref:`ativ-maratona-categoria-homens`)?
-
-#. Observe o quadro a seguir e marque as médias nos histogramas. Comente sobre a posição da média em cada caso e sobre a simetria ou assimetria de cada distribuição de dados. 
-
-   .. table:: Média das quatro categorias da maratona de Nova Iorque 2017
-
-      +-----------+------------------+-----------------+
-      | Categoria | Cadeira de rodas | Triciclo de mão |
-      +-----------+------------------+-----------------+
-      | Média     | 2,59             | 2,73            |
-      +-----------+------------------+-----------------+
-  
-#. Observe que as médias não são muito diferentes, porém, as distribuições são similares. Se você conhecesse apenas a média, seria capaz de perceber a forma destes histogramas? Por quê?
-
-#. Comparando os dois histogramas, qual distribuição apresenta maior dispersão? Por quê?
-
-.. admonition:: Resposta 
-
-  #. As escalas horizontal e vertical são coincidentes em ambos os histogramas para permitir a comparação. Isto foi discutido no Capítulo **A Natureza da Estatística**.
-  
-  #. Observando-se os histogramas o maior tempo está na categoria de Triciclo de mão.
-  
-  #. A simples visualização pode remeter a estimativa de 4 horas para estas categorias, valor bem maior do que as médias para homens e mulheres (:ref:`ativ-maratona-categoria-homens`). No entanto, este valor excede muito as médias reais, apresentadas. Isto mostra que estimar o centro de equilíbrio de uma distribuição a partir do histograma não é trivial.
-  
-  #. Ambos os histogramas apresentam assimetria à direita: grande concentração de dados à esquerda e forma alongada para a direita.
-  
-  #. Não é possível, apenas um número é insuficiente para caracterizar a forma do histograma. Outras informações são necessárias para isto.
-  
-  #. O triciclo de mão apresenta maior dispersão, considerando a amplitude.
-  
-
-
-
-
-
-   
-   
