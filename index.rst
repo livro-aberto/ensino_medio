@@ -1,16 +1,16 @@
 ************
 Ensino Médio
 ************
-   
+
+
 .. toctree::
+   :numbered:
    :maxdepth: 1
    :glob: 
-   
-   manual-do-professor
-   introducao
+
    GE101
    GE301
-   AF106
+   Introdução às funções <AF106>
    AF107
    AF209
    PE103
@@ -19,7 +19,21 @@ Ensino Médio
    GE202
    GE2022
 
+Em construção...
 
+.. toctree::
+   
+   manual-do-professor
+   introducao
+
+
+Planejamentos dos capítulos
+
+.. toctree::
+   :maxdepth: 1
+   :glob: 
+   
+   indice-de-roteiros
 .. Vetores no plano
 
 .. .. toctree::
@@ -173,11 +187,4 @@ Ensino Médio
    GE2022-A
 .. GE2022-E
 
-Planejamentos dos capítulos
-
-.. toctree::
-   :maxdepth: 1
-   :glob: 
-   
-   indice-de-roteiros
 .. include:: definicoes.rst
