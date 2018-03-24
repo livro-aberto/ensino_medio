@@ -1,1 +1,87 @@
+     
+********
+Organizando as ideias
+********
+ 
+Na :ref:`ativ-estimando-comp-ang`, as medidas do comprimento do túnel e dos ângulos assinalados na figura foram estimados por uma construção geométrica e na :ref:`ativ-descobrindo-pitagoras` você teve a oportunidade de elaborar uma conjectura relacionada ao triângulo retângulo. Vamos agora utilizar a semelhança de triângulos para descobrir relações entre os elementos de um triângulo retângulo e demonstrar o teorema de Pitágoras que é, talvez, o resultado mais famoso da Matemática. No final, a conjectura que você elaborou na :ref:`ativ-descobrindo-pitagoras` vai se transformar em certeza e, com isso, você poderá calcular com exatidão o comprimento do túnel da :ref:`ativ-estimando-comp-ang`.
 
+Iniciamos observando um triângulo retângulo.
+
+.. figure:: _resources/TrigFig-03.png
+   :width: 200 pt
+ 
+O triângulo `ABC` da figura acima é retângulo em `A` e seus lados medem `BC=a`, `AC=b` e `AB=c`. A altura relativa à hipotenusa é `AH=h`. O pé da altura dividiu a hipotenusa em duas partes: `HC=m` e `HB=n`.
+ 
+Observe ainda que os ângulos azuis são iguais, que os ângulos vermelhos também são iguais e que eles são complementares.
+ 
+
+Vamos agora cortar o triângulo `ABC` na sua altura `AH`. O triângulo original e as duas partes aparecem na figura a seguir.
+ 
+.. figure:: _resources/TrigFig-04_1.png
+   :width: 300 pt
+
+Veja que os três triângulos da figura acima são semelhantes. Vamos explorar isso.
+
+#. Como os triângulos `ABC` e `HAC` são semelhantes temos:
+  
+   .. math:: 
+
+     \dfrac{a}{b}=\dfrac{b}{m}=\dfrac{c}{h} \mbox{ }\mbox{ (1)}
+
+#. Como os triângulos `ABC` e `HBA` são semelhantes temos:
+     
+   .. math:: 
+
+     \dfrac{a}{c}=\dfrac{b}{h}=\dfrac{c}{n} \mbox{ }\mbox{ (2)}
+
+#. Como os triângulos `HAC` e `HBA` são semelhantes temos:
+
+   .. math:: 
+
+     \dfrac{b}{c}=\dfrac{m}{h}=\dfrac{h}{n} \mbox{ }\mbox{ (3)}
+
+Há muitas relações aí e você vai fazer sua exploração em uma atividade logo a seguir. No momento necessitamos de duas que estão em (1) e (2): `b^2=am` e `c^2=an`.
+
+Essas duas relações nos permitirão demonstrar o mais famoso resultado da matemática, que é o *Teorema de Pitágoras*. Seu enunciado é o seguinte:
+
+"*Em todo triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos*."
+
+Vamos fazer a demonstração passo a passo:
+
+#. O teorema fala sobre a soma dos quadrados dos catetos. Na nossa figura, os catetos `AC` e `AB` medem, respectivamente, `b` e `c`. A soma citada é, então:
+   
+   `b^2 +c^2`
+
+#. Com as relações que separamos, podemos substituir cada cateto pelo produto de suas projeções pela hipotenusa e, portanto temos
+   
+   `b^2 +c^2=am+an`
+
+#. As parcelas `am` e `an` possuem o fator `a` em comum e podemos colocá-lo em evidência
+
+   `b^2 +c^2= a(m+n)`
+    
+#. Mas  veja que `m+n = a`, de modo que temos
+
+   `b^2 +c^2=a\cdot a=a^2`
+   
+Como `a^2` é o quadrado da hipotenusa, concluímos a demonstração do teorema.
+
+
+A recíproca do teorema de Pitágoras é verdadeira e será demonstrada no final do capítulo. Seu enunciado é:
+
+"*Se, em um triângulo, o quadrado de um lado é igual à soma dos quadrados dos outros dois, então esse triângulo é retângulo*."
+
+.. admonition:: Você sabia
+
+   O teorema de Pitágoras, pela sua inegável beleza e por suas amplas aplicações tem fascinado pessoas, matemáticos ou não, por 2500 anos. Não se conhece a primeira demonstração desse teorema (descoberta na Escola de Pitágoras, séc. V a.C.), mas durante todo esse tempo, muitas demonstrações diferentes foram descobertas e publicadas em todo o mundo. Em 1927, Elisha Loomis (1852, 1940) publicou um livro com 230 demonstrações diferentes do teorema de Pitágoras, comentadas e com sua origem. A última edição do livro, publicado no ano de sua morte, contém 370 demonstrações do teorema de Pitágoras.
+   
+.. figure:: _resources/TrigFig-05a.png
+   :width: 200 pt
+
+   Estátua localizada no porto de Pythagoreio, Ilha de Samos, Mar Egeu
+
+.. figure:: _resources/TrigFig-06.png
+   :width: 300 pt
+
+   Veja onde nasceu Pitágoras de Samos
+   

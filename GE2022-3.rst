@@ -1,294 +1,148 @@
-********
-Praticando o assunto 
-********
+*****************
+Organizando as ideias
+*****************
+
+**Senos e cossenos**
+
+Vamos seguir a ideia da atividade anterior. Consideremos o triângulo `ABC` retângulo em `A`, com hipotenusa `a` e catetos `b` e `c`. Seja ainda, `\alpha`  o ângulo `A\hat{B}C`.
+
+Considere agora um triângulo semelhante a `ABC` com hipotenusa igual a 1. Os catetos desse novo triângulo medem, naturalmente, `\dfrac{b}{a}` e `\dfrac{c}{a}`.
+
+.. figure:: _resources/TrigFig-08.png
+   :width: 380 pt
+
+O número `\dfrac{b}{a}` chama-se seno do ângulo `\alpha` e é representado por `\mbox{sen }\alpha` (na notação brasileira) ou `\sin\alpha` (na notação internacional).
+
+O número `\dfrac{c}{a}` chama-se cosseno do ângulo `\alpha` e é representado por `\cos\alpha`.
+
+Portanto, em qualquer triângulo retângulo:
+
+* o seno de um ângulo é a razão entre o cateto oposto a esse ângulo e a hipotenusa: `\sin\alpha=\dfrac{b}{a}`.
+* o cosseno de um ângulo é a razão entre o cateto adjacente a esse ângulo e a hipotenusa: `\cos\alpha=\dfrac{c}{a}`.
+
+O seno e o cosseno de um ângulo são números associados ao ângulo e não dependem do triângulo que contém esse ângulo.
+
+Dado um ângulo agudo de um triângulo retângulo de hipotenusa igual a 1, o seno e o cosseno desse ângulo são as medidas do cateto oposto a esse ângulo e do cateto adjacente a esse ângulo.
+
+.. figure:: _resources/TrigFig-09.png
+   :width: 200 pt
+
+Temos o hábito de fazer referência a determinado ângulo através de sua medida. Assim, quando escrevemos `\mbox{sen } 40^{\circ}` estamos nos referindo ao seno do ângulo que mede `40^{\circ}`. O seno é uma característica do ângulo, e não depende de sua medida.
+
+Veja, por exemplo o seno e o cosseno do ângulo de `40^{\circ}` na figura a seguir, com aproximação de cinco decimais.
+
+.. figure:: _resources/TrigFig-10.png
+   :width: 200 pt
+
+Os valores que estão na figura acima foram obtidos com uma calculadora científica. Infelizmente, com os recursos da matemática elementar, só podemos calcular valores exatos de seno e cosseno de poucos ângulos.
+
+Para obter os valores de seno e cosseno dos ângulos de `30^{\circ}`, `45^{\circ}` e `60^{\circ}` observe as figuras a seguir.
+
+Com um quadrado de lado 1 temos que sua diagonal mede `\sqrt{2}` pelo teorema de Pitágoras. A diagonal forma com um lado o ângulo de `45^{\circ}`.
+
+Com um triângulo equilátero de lado 2 temos que sua altura mede `\sqrt{3}` pelo teorema de Pitágoras. Os ângulos de `30^{\circ}` e `60^{\circ}` aparecem naturalmente.
 
 
-.. _ativ-inicial-retorno:
+.. figure:: _resources/TrigFig-11_2.png
+   :width: 200 pt
 
-Atividade: retomando a atividade inicial
-------------------------------
+Observando as figuras acima temos que
 
 
-.. admonition:: Para o professor
+.. math::
 
-   **OBJETIVOS ESPECÍFICOS**
+   \sin45^{\circ}=\cos45^{\circ}=\dfrac{1}{\sqrt{2}}=\dfrac{\sqrt{2}}{2}
    
-   * Resolver a situação inicial do capítulo utilizando os recursos desenvolvidos até o momento. 
-   * Estimar medidas de ângulos com a utilização da calculadora. 
+   \sin30^{\circ}=\dfrac{1}{2}=\cos60^{\circ}
    
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
+   \sin60^{\circ}=\dfrac{\sqrt{3}}{2}=\cos30^{\circ}
    
-   * Espera-se que o aluno siga o roteiro e trabalhe nos triângulos retângulos adequados.
-   * Nos cálculos o aluno deve utilizar a calculadora científica ou a do celular para estimar o valor do ângulo a partir do cosseno.
-   * O professor deve ajudar o aluno na utilização adequada da calculadora.
+Para os cálculos com outros ângulos, antigamente o livro didático fornecia a vocês, alunos, uma tabela com senos e cossenos de `1^{\circ}` até `89^{\circ}`. Hoje você tem os senos e cossenos de todos os ângulos que quiser disponíveis na calculadora do seu celular. Procure e encontre algo assim:
 
-Volte para a :ref:`ativ-estimando-comp-ang`. Leia novamente a atividade e veja o desenho que você fez. Coloque os dados do enunciado no desenho e destaque o triângulo que permitirá calcular o comprimento do túnel.
-
-#.  Calcule o comprimento `AB` do túnel dando a resposta em número inteiro de metros.
-#.  Com o valor de `AB` encontrado no item anterior calcule o cosseno do ângulo ABF (dê a resposta com 4 decimais).
-#. Utilizando a calculadora científica ou a do celular dê as medidas em graus dos ângulos `ABF` e `CAB` com aproximação de 1 decimal.
-
-
-.. admonition:: Resposta 
-
-   #.  533m
-   #.  0,5062
-   #. `59,6^\circ` e `120,4^\circ`
-   
-
-
-.. _ativ-altura-do-retangulo:
-
-Atividade: a altura de um retângulo
-------------------------------
-
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Resolver um problema de geometria utilizando os recursos desenvolvidos no capítulo. 
-   * Planejar a solução de um problema de geometria quando este admite mais de um caminho para encontrar a resposta.
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
-   
-   * Espera-se que o aluno una os centros das circunferências e descubra que o triângulo formado é equilátero.
-   * O aluno pode utilizar o teorema de Pitágoras ou utilizar as razões trigonométricas do ângulo de `60^\circ`. A escolha deve ser do aluno.
-
-
-A figura a seguir mostra três circunferências de mesmo raio tangentes entre si e interiores aos lados do retângulo `ABCD`.
-
-
-.. tikz:: 
-
-   \draw [line width=0.8pt] (0.,0.) circle (1.cm);
-   \draw [line width=0.8pt] (2.,0.) circle (1.cm);
-   \draw [line width=0.8pt] (1.,1.7320508075688772) circle (1.cm);
-   \draw [line width=0.8pt] (-1.,-1.)-- (3.,-1.);
-   \draw [line width=0.8pt] (3.,-1.)-- (3.,2.732050807568877);
-   \draw [line width=0.8pt] (3.,2.732050807568877)-- (-1.,2.732050807568877);
-   \draw [line width=0.8pt] (-1.,2.732050807568877)-- (-1.,-1.);
-   \begin{scriptsize}
-   \draw[color=black] (-1.1405863966856364,-1.1) node {$A$};
-   \draw[color=black] (3.1523660650370093,-1.1) node {$B$};
-   \draw[color=black] (3.0,2.9) node {$C$};
-   \draw[color=black] (-1.1,2.9) node {$D$};
-   \end{scriptsize}
-
-A base `AB` do retângulo mede 80cm.
-
-#.  Quanto mede o lado `BC`?
-#.  Dê esse valor com aproximação de 1 decimal.
-
-
-.. admonition:: Resposta 
-
-   #. `20(2+\sqrt{3})` cm
-   #. 74,6cm
-
-
-.. _ativ-distancia-inacessivel:
-
-Atividade: calculando distância inacessível no plano horizontal
-------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Observar uma figura, identificar os dados e selecionar a ferramenta necessária para calcular o que é pedido.
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
-   
-   * Espera-se que o aluno escolha a Leio dos Cossenos, uma vez que apenas um ângulo é dado.
-   * O aluno deve utilizar a calculadora para encontrar a resposta.
-
-A figura a seguir mostra um pequeno lago em uma fazenda.
-
-
-.. tikz:: 
-
-   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
-   \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
-   \draw [shift={(-1.0789618388348796,1.253969848922879)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-7.470454126570987:0.27251587501216484) arc (-7.470454126570987:81.0987627089991:0.27251587501216484) -- cycle;
-   \draw [rotate around={-52.67122148326201:(0.6933932562639893,2.5673678562445246)},line width=1.6pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.20000000298023224] (0.6933932562639893,2.5673678562445246) ellipse (1.9471972190703781cm and 0.857832740081316cm);
-   \draw [line width=0.8pt] (-0.6063280975911546,4.27171944290363)-- (-1.0789618388348796,1.253969848922879);
-   \draw [line width=0.8pt] (-1.0789618388348796,1.253969848922879)-- (2.00318196775098,0.8498147345776224);
-   \draw [line width=0.8pt] (-0.6063280975911546,4.27171944290363)-- (-0.4873635259107605,4.115718730983113);
-   \draw [line width=0.8pt] (2.00318196775098,0.8498147345776224)-- (1.8741500384387402,1.0190169815059371);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (-0.4873635259107605,4.115718730983113)-- (1.8741500384387402,1.0190169815059371);
-   \draw [color=qqwuqq](-1,1.8) node[anchor=north west] {\tiny $96^{\circ}$};
-   \draw (-1.5694904138567762,2.8481877177440484) node[anchor=north west] {\tiny 56m};
-   \draw (0.038353248714996374,1.1) node[anchor=north west] {\tiny 52m};
-   \begin{scriptsize}
-   \draw [fill=xdxdff] (-0.6063280975911546,4.27171944290363) circle (1.5pt);
-   \draw[color=xdxdff] (-0.5066785013093333,4.46284427719113) node {$C$};
-   \draw [fill=xdxdff] (2.00318196775098,0.8498147345776224) circle (1.5pt);
-   \draw[color=xdxdff] (2.1639770738098822,0.8111315520281096) node {$D$};
-   \draw [fill=ccqqqq] (-1.0789618388348796,1.253969848922879) circle (1.5pt);
-   \draw[color=ccqqqq] (-1.283348745094003,1.1245248082921002) node {$P$};
-   \draw [fill=black] (-0.4873635259107605,4.115718730983113) circle (1.0pt);
-   \draw[color=black] (-0.5,3.9) node {$A$};
-   \draw [fill=black] (1.8741500384387402,1.0190169815059371) circle (1.0pt);
-   \draw[color=black] (1.9,1.2471569520475747) node {$B$};
-   \end{scriptsize}
-
-O fazendeiro gostaria de saber a distância entre os pontos `A` e `B` da figura e, para isso, colocou as estacas `C` e `D`, colineares com `A` e `B` e de forma que `AC = BD = 5` m.
-
-Utilize sua calculadora e informe ao fazendeiro um valor aproximado para a distância `AB` em um número inteiro de metros.
-
-
-.. admonition:: Resposta 
-
-   62m
-   
-   
-.. _ativ-relacoes:
-
-Atividade: Identificando relações que resolvem um problema
-------------------------------
-
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Observar uma figura, identificar os dados e selecionar uma ferramenta necessária para calcular o que é pedido.
-   * Perceber que nem sempre se consegue atingir diretamente a medida que é o objetivo da questão. Às vezes optamos por calcular primeiro uma outra medida que pode nos facilitar, a seguir, encontrar a resposta da questão.
-
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
-   
-   * Há duas formas equivalentes de resolver a questão. Uma delas utiliza duas vezes o teorema de Pitágoras e, a outra, consiste em calcular o cosseno de um ângulo no triângulo menor, passar ao complemento e aplicar a Lei dos Cossenos no triângulo vizinho.
-   * Observar aos alunos que não se deve dizer que uma solução é melhor que outra. As duas são boas e questões de preferência são pessoais.
-
-A figura a seguir mostra um triângulo com alguns dados.
-
-
-.. tikz:: 
-   
-   \begin{scope}[scale =.43]
-   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-   \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0.,0.4371150498340989) -- (-0.4371150498340989,0.43711504983409893) -- (-0.4371150498340989,0.) -- (0.,0.) -- cycle; 
-   \draw [shift={(0.,7.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-123.21091076089908:1.236348063585548) arc (-123.21091076089908:-90.:1.236348063585548) -- cycle;
-   \draw [line width=0.8pt] (-4.58257569495584,0.)-- (0.,7.);
-   \draw [line width=0.8pt] (-4.58257569495584,0.)-- (0.,2.);
-   \draw [line width=0.8pt] (-4.58257569495584,0.)-- (0.,0.);
-   \draw [line width=0.8pt] (0.,0.)-- (0.,7.);
-   \draw (-3.261002042388659,4.845224426221589) node[anchor=north west] {\small$ x $};
-   \draw (0,4.5) node[anchor=north west] {\small 5};
-   \draw (-2.5,2.4) node[anchor=north west] {\small 5};
-   \draw (0.,1.6) node[anchor=north west] {\small 2};
-   \draw (-1,6.) node[anchor=north west] {\small$ \theta $};
-   \end{scope}
-
-#.  Calcule a medida `x`.
-#.  Encontre uma medida aproximada em graus para o ângulo `\theta`.
-
-
-.. admonition:: Resposta 
-
-   #. `\sqrt{70}`
-   #. `33,2^\circ`
-   
-
-.. _ativ-distancia-inacessivel-2:
-
-Atividade:calculando distância inacessível no plano horizontal
-------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Calcular distância inacessível utilizando uma relação trigonométrica e as ferramentas do celular.
-
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
-   
-   * Os alunos devem selecionar a relação trigonométrica adequada para a solução do problema.
-   * Observar aos alunos que a medida encontrada é uma aproximação e, por isso, não há sentido em dar a resposta, em metros, com decimais.
-
-Antonio e Bernardo estão em Ilha Bela, SP na face da ilha voltada para o continente onde está São Sebastião. Eles estão no ponto `A` do mapa a seguir e desejam saber a distância aproximada desse ponto à ponta do Varadouro, no continente, perfeitamente visível do lugar onde estão, e que está assinalada no mapa pelo ponto `P`. Para determinar um valor aproximado para `AP` eles imaginaram o seguinte procedimento.
-
-Bernardo sabe que, caminhando, o tamanho de seu passo é, em média, de 70 cm. Assim, Bernardo caminhou ao longo da avenida próxima da praia dando 429 passos, concluindo que tinha caminhado cerca de 300m. Ele está agora no ponto `B` do mapa abaixo. Mesmo distantes, Antonio e Bernardo podem se ver, um ao outro. Então, com os teodolitos digitais dos seus celulares mediram os ângulos: `BAP = 111^\circ` e `PBA = 58^\circ`.
-
-.. figure:: _resources/TrigFig-26_2.png
+.. figure:: _resources/TrigFig-12.png
    :width: 300 pt
 
-Calcule um valor aproximado para a distância `AP` dando a resposta em número inteiro de metros.
+Usando uma calculadora desse tipo, fizemos uma pequena tabela de senos e cossenos para que se possa observar a variação desses números quando o ângulo varia.
+
+Quase todos os senos e cossenos dos ângulos da tabela são números irracionais. Mostramos aproximações com três decimais.
+
+.. table:: 
+
+   +--------------+-------+---------+
+   | Ângulo       | Seno  | Cosseno |
+   +--------------+-------+---------+
+   | `10^{\circ}` | 0,174 | 0,985   |
+   +--------------+-------+---------+
+   | `20^{\circ}` | 0,342 | 0,940   |
+   +--------------+-------+---------+
+   | `30^{\circ}` | 0,500 | 0,866   |
+   +--------------+-------+---------+
+   | `40^{\circ}` | 0,643 | 0,766   |
+   +--------------+-------+---------+
+   | `50^{\circ}` | 0,766 | 0,643   |
+   +--------------+-------+---------+
+   | `60^{\circ}` | 0,866 | 0,500   |
+   +--------------+-------+---------+
+   | `70^{\circ}` | 0,940 | 0,342   |
+   +--------------+-------+---------+
+   | `80^{\circ}` | 0,985 | 0,174   |
+   +--------------+-------+---------+
 
 
-.. admonition:: Resposta 
+Observe uma simetria nos números da tabela e procure explicar a razão.
 
-   1333m
+**A tangente**
 
-.. _ativ-paralelepipedo:
+Consideremos novamente o triângulo `ABC` retângulo em `A`, com hipotenusa `a` e catetos `b` e `c`, sendo `\alpha` o ângulo `A\hat{B}C`.
 
-Atividade: calcular elementos de um paralelepípedoe
-------------------------------
+Imagine agora um triângulo semelhante a `ABC` onde o cateto adjacente ao ângulo `\alpha` tenha comprimento 1. Naturalmente que o outro cateto (que é oposto ao ângulo `\alpha`) mede `\dfrac{b}{c}`.
+
+.. figure:: _resources/TrigFig-13.png
+   :width: 300 pt
+
+O número real `\dfrac{b}{c}` é chamado de tangente do ângulo `\alpha` e é representado por `\mbox{tg }\alpha` (na notação brasileira) ou `\tan\alpha` (na notação internacional).
+
+Portanto, em qualquer triângulo retângulo, a tangente de um ângulo é a razão entre o cateto oposto e o cateto adjacente a esse ângulo: `\tan\alpha=\dfrac{b}{c}`.
+
+A tangente também é a razão entre o seno e o cosseno como mostramos a seguir:
+
+.. math::
+
+   \tan\alpha=\dfrac{b}{c}=\dfrac{b/a}{c/a}=\dfrac{\sin\alpha}{\cos\alpha}
 
 
-.. admonition:: Para o professor
+Quando o ângulo é pequeno, a tangente e o seno são números bem próximos, mas quando o ângulo aumenta, a tangente assume valores cada vez maiores. Veja isso na tabela a seguir:
 
-   **OBJETIVOS ESPECÍFICOS**
+.. table:: 
+
+
+   +-----------+----------+-------+
+   | Ângulo    | Tangente | Seno  |
+   +-----------+----------+-------+   
+   | `5^\circ` | 0,0875   | 0,0871|
+   +-----------+----------+-------+   
+   | `10^\circ`| 0,1763   | 0,1736|
+   +-----------+----------+-------+ 
+   | `80^\circ`| 5,671    |       |
+   +-----------+----------+-------+ 
+   | `85^\circ`| 11,430   |       |
+   +-----------+----------+-------+ 
+
+
+**A relação fundamental**
+
+O seno e o cosseno de um ângulo não são números independentes. Se conhecemos um, podemos facilmente calcular o outro. Veja a relação entre eles a seguir:
+
++Como definimos o seno e o cosseno de um ângulo agudo `\alpha` como os catetos de um triângulo retângulo que possui um ângulo igual a `\alpha` e hipotenusa 1, podemos usar o Teorema de Pitágoras para relacionar o seno e o cosseno desse ângulo:
+
+
+.. math::
+
+   \sin^2\alpha + \cos^2\alpha = 1
    
-   * Compreender que o material do capítulo não se restringe à geometria plana, mas se aplica de forma eficiente em diversas situações da geometria espacial.
-   * Calcular elementos de um prisma utilizando o material do capítulo.
+Outra maneira de ver essa relação, que é chamada *Relação Fundamental*, é tomarmos um triângulo retângulo de hipotenusa `a` e catetos `b` e `c`. Se `\alpha` é o ângulo oposto ao cateto `b`, então 
+
+.. math::
+
+   \sin^2\alpha + \cos^2\alpha =\left(\dfrac{b}{a}\right)^2+\left(\dfrac{c}{a}\right)^2 =\dfrac{b^2+c^2}{a^2}=\dfrac{a^2}{a^2}=1
    
-   **OBSERVAÇÕES E RECOMENDAÇÕES**	
-   
-   * Os alunos devem completar a figura com os triângulos necessários à solução das questões.
-   * Observar aos alunos que eles devem buscar traçar os triângulos que fiquem mais visíveis. Se a primeira tentativa não for boa, devem buscar outra até que fiquem satisfeitos com a visualização da situação espacial.
-   * Como, formalmente, os conceitos e propriedades das figuras espaciais ainda não foram dados, o professor deve dizer aos alunos que o ângulo que uma reta faz com um plano é o ângulo que essa reta faz com sua projeção sobre o plano. Assim, na figura do problema, o ângulo que a diagonal `EC` faz com o plano da base `ABCD` é o ângulo `ECA`.
-   
-A figura a seguir mostra um paralelepípedo retângulo `ABCD-EFGH` cuja base é o quadrado `ABCD` de lado 2 e cuja altura mede 4.
-
-
-.. tikz:: 
-
-   \begin{scope}[scale=.7]
-   \draw [line width=0.8pt] (0.,0.)-- (3.007394464358025,-0.3870723230316714);
-   \draw [line width=0.8pt] (3.007394464358025,-0.3870723230316714)-- (4.4,0.64);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (0.,0.)-- (1.3926055356419753,1.0270723230316714);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (1.3926055356419753,1.0270723230316714)-- (4.4,0.64);
-   \draw [line width=0.8pt] (0.,0.)-- (0.,5.654384676096289);
-   \draw [line width=0.8pt] (0.,5.654384676096289)-- (3.007394464358025,5.267312353064617);
-   \draw [line width=0.8pt] (3.007394464358025,5.267312353064617)-- (4.4,6.294384676096288);
-   \draw [line width=0.8pt] (4.4,6.294384676096288)-- (1.392605535641975,6.68145699912796);
-   \draw [line width=0.8pt] (1.392605535641975,6.68145699912796)-- (0.,5.654384676096289);
-   \draw [line width=0.8pt] (3.007394464358025,5.267312353064617)-- (3.007394464358025,-0.3870723230316714);
-   \draw [line width=0.8pt] (4.4,6.294384676096288)-- (4.4,0.64);
-   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (1.392605535641975,6.68145699912796)-- (1.3926055356419753,1.0270723230316714);
-   \draw (1.,-.2) node[anchor=north west] {\small 2};
-   \draw (3.6,.1) node[anchor=north west] {\small 2};
-   \draw (-0.5556663863078048,3.4) node[anchor=north west] {\small 4};
-   \begin{scriptsize}
-   \draw[color=black] (-0.1,-0.2) node {$A$};
-   \draw[color=black] (3.,-0.6) node {$B$};
-   \draw[color=black] (4.702655545497268,0.6125565858791853) node {$C$};
-   \draw[color=black] (1.7,1.2) node {$D$};
-   \draw[color=black] (-0.4461180127285326,5.84349142428943) node {$E$};
-   \draw[color=black] (1.2,7.) node {$H$};
-   \draw[color=black] (3.3,5.1) node {$F$};
-   \draw[color=black] (4.675268452102451,6.473394572370244) node {$G$};
-   \end{scriptsize}
-   \end{scope}
-   
-Com os dados que estão na figura, calcule:
-
-#. o comprimento de uma diagonal.
-#. o cosseno do ângulo que uma diagonal faz com o plano da base. 
-#. o cosseno do ângulo formado por duas diagonais do paralelepípedo.
-#. Dê valores aproximados em graus para os ângulos dos itens b e c.
-
-
-.. admonition:: Resposta 
-
-   #. `2\sqrt{6}`
-   #. `\dfrac{\sqrt{3}}{3}`
-   #. `\dfrac{1}{3}`
-   #. `54,7^\circ` e `70,5^\circ`
-

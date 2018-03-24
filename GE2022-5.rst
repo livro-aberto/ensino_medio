@@ -1,0 +1,364 @@
+.. _organizando-3:
+
+*********************
+Organizando as ideias
+*********************
+
+Em algumas atividades anteriores você calculou elementos em triângulos que não eram retângulos. Mas, para isso, você precisou dividir o triângulo dado em triângulos retângulos para aplicar as ferramentas desenvolvidas no capítulo. Vamos agora abordar a trigonometria que pode ser aplicada em todos os triângulos, mas para isso, precisamos ampliar nossas definições de seno e de cosseno.
+
+.. _sub-seno-cos-maior-que-90:
+
+**Senos e cossenos até 180 graus**
+
+Observe o que acontece quando um ângulo é próximo de `90^{\circ}`.
+
+Afigura abaixo mostra o triângulo `ABC` de hipotenusa igual a 1 com o ângulo `BAC =\alpha` aproximando-se de `90^{\circ}`. O seno de `\alpha` fica cada vez mais próximo de 1 enquanto que o cosseno de `\alpha` diminui, aproximando-se de zero.
+
+
+.. tikz:: 
+
+
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \clip(-0.9221201047138317,-1.5964236511929875) rectangle (3.4843212153469962,6.016685362179443);
+   \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0.75,0.) -- (0.75,0.3) -- (0.47398011550346203,0.3) -- (0.473980115503462,0.) -- cycle;
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.3272109891134278) arc (0.:84.64531064246371:0.3272109891134278) -- cycle;
+   \draw [line width=0.8pt] (0.,0.)-- (1.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (0.473980115503462,5.056866460780054);
+   \draw [line width=0.8pt] (0.473980115503462,5.056866460780054)-- (0.473980115503462,0.);
+   \draw (-.05,0.7) node[anchor=north west] {$\alpha$};
+   \draw (-0.20225592866429043,2.5046207456953127) node[anchor=north west] {1};
+   \draw (0.6266785770897266,2.4609926138135223) node[anchor=north west] {sin$\alpha$};
+   \draw (-0.2895121924278712,-0.4) node[anchor=north west] {cos$\alpha$};
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw[color=black] (-0.2458840605460808,-0.23304452988703647) node {$A$};
+   \draw [fill=black] (0.473980115503462,5.056866460780054) circle (1.0pt);
+   \draw[color=black] (0.4957941814443555,5.438612614745719) node {$C$};
+   \draw [fill=black] (0.473980115503462,0.) circle (1.0pt);
+   \draw[color=black] (0.4957941814443555,-0.2766726617688269) node {$B$};
+
+Quando o ângulo `\alpha` atinge `90^{\circ}` o triângulo desaparece e, sem triângulo, não podemos usar as definições anteriores de seno e cosseno. Mas a figura acima, sugere que adotemos as definições a seguir:
+
+
+.. math::
+
+   \sin\alpha=0\\
+   \cos\alpha=1
+
+Para ângulos entre `90^\circ` e `180^\circ` a figura a seguir vai sugerir as novas definições.
+
+
+.. tikz:: 
+
+   \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+   \definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+   \clip(-3.0028816140856316,-0.92516866560888) rectangle (2.1104498822616287,3.2714300923494335);
+   \draw [shift={(0.,0.)},line width=0.8pt,fill=black,fill opacity=0.25] (0,0) -- (0.:0.40743677261731154) arc (0.:122.89602321343347:0.40743677261731154) -- cycle;
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (122.89602321343347:0.40743677261731154) arc (122.89602321343347:180.:0.40743677261731154) -- cycle;
+   \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (-1.6961883777198885,0.) -- (-1.6961883777198885,0.28810130482246243) -- (-1.984289682542351,0.28810130482246243) -- (-1.984289682542351,0.) -- cycle; 
+   \draw [line width=0.8pt] (-2.5343293255757215,0.)-- (2.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (-1.984289682542351,3.0677117060407775);
+   \draw (0.1954970509602643,0.7249502634912335) node[anchor=north west] {$\alpha$};
+   \draw [line width=2.pt,color=qqzzqq] (-1.984289682542351,3.1)-- (-1.984289682542351,0.);
+   \draw [line width=2.pt,color=ccqqqq] (0.,0.)-- (-1.984289682542351,0.);
+   \draw (-0.7619793646904179,0.6) node[anchor=north west] {$\beta$};
+   \draw (-0.7619793646904179,1.7027985177727822) node[anchor=north west] {1};
+   \draw [color=qqwuqq](-3,1.5398238087258573) node[anchor=north west] {sin$\beta$};
+   \draw [color=ffqqqq](-1.5,-0.01) node[anchor=north west] {cos$\beta$};
+   \begin{scriptsize}
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw [fill=black] (-1.984289682542351,3.0677117060407775) circle (1.0pt);
+   \draw [fill=black] (-1.984289682542351,0.) circle (1.0pt);
+   \end{scriptsize}
+   
+
+Para `\alpha` entre `90^\circ` e `180^\circ` consideremos `\beta` o suplemento de `\alpha` como na figura acima. Então, quando `\alpha` é um ângulo obtuso, definimos:
+
+
+.. math::
+
+   \sin\alpha=\sin\beta\\
+   \cos\alpha=-\cos\beta
+
+Discuta com seus colegas e seu professor qual seria uma boa definição de seno e cosseno para os ângulos de `0^circ` e `180^\circ`.
+
+
+.. _sub-coloque-aqui-o-nome:
+
+**A lei dos cossenos**
+
+
+A lei dos cossenos é uma relação que envolve os três lados de um triângulo e um de seus ângulos. Ela é muito útil e você poderá ver como a encontraremos observando os três casos a seguir.
+
+Seja `ABC` o nosso triângulo com lados `a`, `b`, `c`.
+
+#. O ângulo `A` é agudo.
+
+   A figura a seguir mostra o triângulo `ABC` nesse caso e sua altura `CH`.
+
+
+   .. tikz:: 
+
+      \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+      \draw[line width=0.4pt,fill=black,fill opacity=0.10000000149011612] (1.48,0.2349816549731034) -- (1.2450183450268966,0.23498165497310342) -- (1.2450183450268966,0.) -- (1.48,0.) -- cycle; 
+      \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.15000000596046448] (0,0) -- (0.:0.44308565782911746) arc (0.:63.279254153124235:0.44308565782911746) -- cycle;
+      \draw [line width=0.8pt] (1.48,2.94)-- (0.,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (4.,0.);
+      \draw [line width=0.8pt] (4.,0.)-- (1.48,2.94);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (1.48,2.94)-- (1.48,0.);
+      \draw (2.6,2.0) node[anchor=north west] {$ a $};
+      \draw (0.3397423689355889,2.0) node[anchor=north west] {$ b $};
+      \draw (1.7133079082058529,-0.3) node[anchor=north west] {$ c $};
+      \draw (1.4,1.5) node[anchor=north west] {$ h $};
+      \draw (0.672056612307427,0) node[anchor=north west] {$ x $};
+      \draw (2.1563935660349705,0) node[anchor=north west] {$ c-x $};
+      \begin{scriptsize}
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw (-0.3913489664824548,-0.) node[anchor=north west] {A};
+      \draw [fill=black] (4.,0.) circle (1.0pt);   \draw[color=black] (4.15,-0.15) node {$B$};
+      \draw [fill=black] (1.48,2.94) circle (1.0pt);
+      \draw[color=black] (1.5,3.15) node {$C$};
+      \draw [fill=black] (1.48,0.) circle (1.0pt);
+      \draw[color=black] (1.45,-0.2) node {$H$};
+      \end{scriptsize}
+   
+
+   Aplicando o Teorema de Pitágoras no triângulo retângulo `CHA`, obtem-se:
+
+   .. math::
+
+      b^2 = x^2+h^2
+   
+      x^2= b^2-h^2
+   
+   Ao aplicarmos o Teorema de Pitágoras no triângulo retângulo `CHB`, obtemos
+
+   .. math::
+
+      a^2 =h^2 + (c - x)^2 = h^2 + c^2 - 2cx + x^2
+   
+   Podemos substituir `x^2` na expressão anterior pelo valor encontrado no primeiro Teorema de Pitágoras:
+
+   .. math::
+
+      a^2 &=\not{h^2} + c^2 - 2cx + (b^2 - \not{h^2})
+   
+      a^2 &= b^2 + c^2 - 2cx
+   
+   Finalmente, podemos escrever `x = b\cos A` e teremos:
+
+
+   .. math::
+
+      a^2 = b^2 + c^2 - 2bc\cos A
+
+   Essa é a expressão conhecida como Lei dos Cossenos. Até agora, ela vale quando o ângulo A é agudo, mas vamos verificar os outros casos, a seguir.
+   
+#. O ângulo `A` é reto.
+
+   Se `A = 90^{\circ}` então, `\cos A = 0`. Sabemos que, nesse caso, vale o Teorema de Pitágoras:
+   
+   .. math::
+
+      a^2 = b^2+c^2
+  
+   Como `\cos A=0`, segue que `-2bc\cos A=0` e, como 0 é o elemento neutro da adição, podemos somar `-2bc\cos A=0` ao segundo membro do teorema de pitágoras sem alterar a igualdade:
+  
+   .. math::
+  
+      a^2 = b^2 + c^2 - 2bc\cos A
+      
+   Portanto, a relação da Lei dos Cossenos é válida no caso do ângulo `A` ser reto.
+
+#. O ângulo `A` é obtuso
+
+   A figura a seguir mostra o triângulo `ABC` nesse caso e sua altura `CH`.
+   
+   .. tikz:: 
+
+      \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+      \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.15000000596046448] (0,0) -- (0.:0.45338997545305054) arc (0.:116.67958882499202:0.45338997545305054) -- cycle;
+      \draw[line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (-1.0114916699533718,0.) -- (-1.0114916699533718,0.32059512616485436) -- (-1.3320867961182261,0.32059512616485436) -- (-1.3320867961182261,0.) -- cycle; 
+      \draw [shift={(0.,0.)},line width=0.8pt,fill=black,fill opacity=0.10000000149011612] (0,0) -- (116.67958882499202:0.3400424815897879) arc (116.67958882499202:180.:0.3400424815897879) -- cycle;
+      \draw [line width=0.8pt] (-1.3320867961182261,2.650911995020492)-- (0.,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (4.,0.);
+      \draw [line width=0.8pt] (4.,0.)-- (-1.3320867961182261,2.650911995020492);
+
+      \draw (1.3,1.7) node[anchor=north west] {$ a $};
+      \draw (-0.6,1.6) node[anchor=north west] {$ b $};
+      \draw (1.9549905259163904,0.) node[anchor=north west] {$ c $};
+      \draw (-1.8081462703439288,1.6) node[anchor=north west] {$ h $};
+      \draw (-0.7880188255745652,0.) node[anchor=north west] {$ x $};
+      \draw [line width=0.8pt] (0.,0.)-- (-2.1152149355371312,0.);
+      \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (-1.3320867961182261,2.650911995020492)-- (-1.3320867961182261,0.);
+      \draw [line width=0.8pt] (0.,0.)-- (-1.3320867961182261,0.);
+      \draw (-0.7,0.6) node[anchor=north west] {$\theta$};
+      \begin{scriptsize}
+      \draw (-0.,-0.2) node {A};
+      \draw [fill=black] (0.,0.) circle (1.0pt);
+      \draw [fill=black] (4.,0.) circle (1.0pt);
+      \draw[color=black] (4.176601405636338,-0.22708391734398156) node {$B$};
+      \draw [fill=black] (-1.3320867961182261,2.650911995020492) circle (1.0pt);
+      \draw[color=black] (-1.4454342899814883,3.037323905917978) node {$C$};
+      \draw [fill=black] (-1.3320867961182261,0.) circle (1.0pt);
+      \draw[color=black] (-1.3774257936635306,-0.2) node {$H$};
+      \end{scriptsize}
+      
+   Vamos proceder de modo análogo ao que fizemos no caso em que `A` era um ângulo agudo. Primeiramente, aplicamos o Teorema de Pitágoras no triângulo retângulo `CHA`
+   
+   .. math::
+   
+      b^2=x^2+h^2
+      
+      x^2=b^2 - h^2
+      
+   Em seguida, aplicamos o Teorema de Pitágoras no triângulo retângulo `CHB`
+   
+   .. math::
+   
+      a^2 &=h^2 + (c+x)^2
+      
+      a^2 &= h^2 + c^2 + 2cx + x^2
+      
+   Substituindo o valor de `x^2 = b^2 - h^2` ficamos com a expressão
+   
+   .. math::
+      
+      a^2 &= h^2 + c^2 + 2cx + b^2 -h^2
+      
+      a^2 &= b^2 + c^2 + 2cx
+      
+   Agora, temos que `x = b\cos \theta` onde `\theta` é o suplemento do ângulo `A`. Mas nesse caso, `\cos\theta=-\cos A` e, portanto
+   
+   .. math:: 
+      
+      a^2=b^2 + c^2 - 2bc\cos A
+      
+   E concluímos que a Lei dos Cossenos funciona para qualquer tipo de triângulo.
+   
+   Podemos ainda escrever essa relação usando os outros ângulos:
+
+   .. math::
+   
+      b^2=a^2+c^2 - 2ac\cos B\\
+      c^2=a^2+b^2 - 2ab\cos C
+
+A recíproca do teorema de Pitágoras
+
+
+Esta é uma questão importante. A recíproca de um teorema não é uma afirmação necessariamente verdadeira, mas a recíproca do teorema de Pitágoras é verdadeira. Vamos lembrar como enunciamos o teorema de Pitágoras: 
+
+**Teorema**: *Em todo triângulo retângulo, o quadrado da hipotenusa é igual a soma dos quadrados dos catetos*.
+
+Há muitas maneiras de se enunciar esse teorema. Como nosso objetivo aqui é examinar sua recíproca vamos enunciar o mesmo teorema de forma ligeiramente diferente.
+
+**Teorema**:  *Se um triângulo é retângulo então o quadrado da hipotenusa é igual a soma dos quadrados dos catetos*.
+
+Observe que, na recíproca, não podemos falar em hipotenusa e em catetos, pois ainda não sabemos se o triângulo a que nos referimos é retângulo. Uma formulação possível para a recíproca é:
+
+*Se, em um triângulo, o quadrado de um lado é igual à soma dos quadrados dos outros dois, então esse triângulo é retângulo*.
+
+De fato, seja `a`, o maior lado do triângulo `ABC` e sejam `b` e `c`, os outros dois. Como o maior ângulo de um triângulo está sempre oposto ao seu maior lado então, no nosso triângulo, o ângulo `A` é o maior ângulo.
+
+Se o ângulo `A` é reto, então `a^2=b^2+c^2` , como diz o teorema de Pitágoras. Entretanto, se o ângulo `A` é agudo temos, pela relação encontrada no caso a) da demonstração da Lei dos Cossenos, `a^2=b^2+c^2-2cx`, ou seja, `a^2<b^2+c^2`. Por outro lado, se o ângulo `A` é obtuso temos, pela relação encontrada no caso c) da demonstração da Lei dos Cossenos, `a^2=b^2+c^2+2cx`, ou seja, `a^2>b^2+c^2` . Isso mostra que `a^2=b^2+c^2`  apenas quando o ângulo `A` é reto.
+
+Concluimos então que se, em um triângulo, o quadrado de um lado é igual à soma dos quadrados dos outros dois, então esse triângulo é retângulo.
+
+
+**A Lei dos Senos**
+
+
+A Lei dos Senos é uma relação que envolve os três lados e os três ângulos do triângulo. Ela afirma, em palavras simples, que os lados de qualquer triângulo são respectivamente proporcionais aos senos dos ângulos opostos.
+
+Vamos ver por que isso ocorre.
+
+A figura a seguir mostra um triângulo `ABC` com as alturas a partir de `C` e a partir de `A`.
+
+
+.. tikz:: 
+
+   \definecolor{qqttcc}{rgb}{0.,0.2,0.8}
+   \definecolor{dcrutc}{rgb}{0.8627450980392157,0.0784313725490196,0.23529411764705882}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \clip(-0.64,-1.44) rectangle (8.64,3.3);
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.25] (0,0) -- (0.:0.4) arc (0.:61.7826441452707:0.4) -- cycle;
+   \draw [shift={(5.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.25] (0,0) -- (0.:0.4) arc (0.:61.78264414527068:0.4) -- cycle;
+   \draw [shift={(8.,0.)},line width=0.8pt,color=dcrutc,fill=dcrutc,fill opacity=0.25] (0,0) -- (124.33021719550332:0.4) arc (124.33021719550332:180.:0.4) -- cycle;
+   \draw [shift={(1.32,2.46)},line width=0.8pt,color=qqttcc,fill=qqttcc,fill opacity=0.25] (0,0) -- (-118.21735585472932:0.4) arc (-118.21735585472932:-55.66978280449669:0.4) -- cycle;
+   \draw [line width=0.8pt] (1.32,2.46)-- (0.,0.);
+   \draw [line width=0.8pt] (1.32,2.46)-- (3.,0.);
+   \draw [line width=0.8pt] (0.,0.)-- (3.,0.);
+   \draw [line width=0.8pt] (5.,0.)-- (8.,0.);
+   \draw [line width=0.8pt] (6.32,2.46)-- (5.,0.);
+   \draw [line width=0.8pt] (6.32,2.46)-- (8.,0.);
+   \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (6.32,2.46)-- (6.32,0.);
+   \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (0.6706697459584295,1.2498845265588916);
+   \draw (1.,3.1) node[anchor=north west] {$ A $};
+   \draw (6.1,3.1) node[anchor=north west] {$ A $};
+   \draw (-0.6,0.1) node[anchor=north west] {$ B $};
+   \draw (4.4,0.1) node[anchor=north west] {$ B $};
+   \draw (3.04,0.28) node[anchor=north west] {$ C $};
+   \draw (8.08,0.26) node[anchor=north west] {$ C $};
+   \draw (1.3,1.3) node[anchor=north west] {$ h $};
+   \draw (6.3,1.4) node[anchor=north west] {$ h' $};
+   \draw (1.34,0.0) node[anchor=north west] {$  a$};
+   \draw (2.1,1.8) node[anchor=north west] {$ b $};
+   \draw (7.1,1.8) node[anchor=north west] {$ b $};
+   \draw (5.24,1.8) node[anchor=north west] {$ c $};
+   \begin{scriptsize}
+   \draw [fill=black] (1.32,2.46) circle (1.0pt);
+   \draw [fill=black] (0.,0.) circle (1.0pt);
+   \draw [fill=black] (3.,0.) circle (1.0pt);
+   \draw [fill=black] (5.,0.) circle (1.0pt);
+   \draw [fill=black] (8.,0.) circle (1.0pt);
+   \draw [fill=black] (6.32,2.46) circle (1.0pt);
+   \draw [fill=black] (6.32,0.) circle (1.0pt);
+   \draw [fill=black] (0.6706697459584295,1.2498845265588916) circle (1.0pt);
+   \end{scriptsize}
+   
+Usando as razões trigonométricas nos triângulos retângulos temos, na figura esquerda acima, que `h=a\sin B=b\sin A`, ou seja, 
+
+.. math::
+   
+   \dfrac{a}{\sin A}=\dfrac{b}{\sin B}
+
+
+Por outro lado, na figura da direita, acima, temos `h^{\prime}=b\sin C = c\sin B`, ou seja, 
+
+.. math::
+   
+   \dfrac{b}{\sin B}=\dfrac{c}{\sin C}
+   
+Reunindo as duas partes temos que:
+
+.. math::
+   
+   \dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}
+   
+que é a relação da Lei dos Senos.
+
+O leitor deve ter reparado que a figura na qual nos apoiamos para demonstrar a Lei dos Senos mostrou um triângulo acutângulo. Porém a expressão da Lei dos Senos vale em qualquer triângulo. Para junstificar essa afirmação vejamos a figura abaixo que mostra um triângulo onde um dos ângulos é obtuso.
+
+
+.. tikz:: 
+
+   \definecolor{qqqqcc}{rgb}{0.,0.,0.8}
+   \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+   \draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.25] (0,0) -- (32.30262735278115:0.5458751028518833) arc (32.30262735278115:60.26812632820428:0.5458751028518833) -- cycle;
+   \draw [shift={(1.4628370590887592,2.5613145535471507)},line width=0.8pt,color=qqqqcc,fill=qqqqcc,fill opacity=0.25] (0,0) -- (-119.73187367179573:0.4367000822815067) arc (-119.73187367179573:4.219095349248441:0.4367000822815067) -- cycle;
+   \draw [shift={(1.4628370590887592,2.5613145535471507)},line width=0.8pt,fill=black,fill opacity=0.25] (0,0) -- (4.219095349248461:0.32752506171113005) arc (4.219095349248461:60.26812632820428:0.32752506171113005) -- cycle;
+   \draw [line width=0.8pt] (1.4628370590887592,2.5613145535471507)-- (0.,0.);
+   \draw (0.9802834681676981,3.1) node[anchor=north west] {$ A $};
+   \draw (-0.5263318157035,0.36034613884836586) node[anchor=north west] {$ B $};
+   \draw (4.4,3.2) node[anchor=north west] {$ C $};
+   \draw (3.3602989166019097,4.0) node[anchor=north west] {$ h $};
+   \draw (2.268548710898143,1.6) node[anchor=north west] {$  a$};
+   \draw (2.7489188014078003,3.2) node[anchor=north west] {$ b $};
+   \draw [line width=0.8pt] (1.4628370590887592,2.5613145535471507)-- (4.393094611197663,2.7774810942764963);
+   \draw [line width=0.8pt] (4.393094611197663,2.7774810942764963)-- (0.,0.);
+   \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (4.393094611197663,2.7774810942764963)-- (2.2766511385566925,3.9862400657031287);
+   \draw [line width=0.8pt] (1.4628370590887592,2.5613145535471507)-- (2.6701932949655593,4.675301944728987);
+   \draw (1.6,3.2) node[anchor=north west] {$ \theta $};
+   
+Com os elementos da figura acima, o ângulo `\theta` é o suplemento do ângulo obtuso `A`. Porém, como `\theta + A=180^\circ`,  temos que `\sin \theta = \sin A` e, portanto, `h=a\sin B=b\sin\theta=b\sin A` e, da mesma forma que antes, `\dfrac{a}{\sin A}=\dfrac{b}{\sin B}`.
