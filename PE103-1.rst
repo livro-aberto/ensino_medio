@@ -8,9 +8,7 @@ Nas atividades anteriores foram trabalhados vários conceitos importantes da Est
 .. _sub-conceitos-basicos:
 
 
-Conceitos Básicos 
-------------------------------------------
-
+**Conceitos Básicos**
 
 Em geral, a palavra população representa um conjunto de habitantes de um determinado lugar. No entanto, em Estatística, :index:`população<população>` tem um sentido mais amplo e pode ser definida como o conjunto de todos os elementos com pelo menos uma característica em comum. Observe que é exatamente essa característica em comum que vai definir o universo (população) de uma pesquisa.
 
@@ -19,25 +17,24 @@ Assim, em Estatística, a população não precisa ser um conjunto de pessoas, p
 .. glossary::
 
    Amostra
-    é um subconjunto não-vazio da população.
-    
-    Cada uma das unidades investigadas em um estudo estatístico é denominada um :index:`elemento<elemento>`.  Assim, cada parafuso investigado é um elemento na atividade "Escolha do fornecedor"; cada paciente observado é um elemento na atividade "Comparação de medicamentos"; e cada domicílio e seus residentes são elementos na atividade da PNAD. 
+      é um subconjunto não-vazio da população.
+
+Cada uma das unidades investigadas em um estudo estatístico é denominada um :index:`elemento<elemento>`.  Assim, cada parafuso investigado é um elemento na atividade "Escolha do fornecedor"; cada paciente observado é um elemento na atividade "Comparação de medicamentos"; e cada domicílio e seus residentes são elementos na atividade da PNAD. 
 
 
 Cada característica observada de um elemento é uma :index:`variável<variável>` estatística. Assim, a medida do diâmetro do parafuso é uma variável na atividade "Escolha do fornecedor", o tempo de cura da dor de cabeça é uma variável na atividade "Comparação de medicamentos" e, na atividade da PNAD, estão presentes várias variáveis estatísticas de interesse do domicílio e de seus residentes tais como local, número de cômodos, número de residentes; sexo, idade e rendimento dos residentes, etc.  
 
-    
 Suponha que deseja-se investigar a opinião dos estudantes de um colégio quanto à modificação da lista de produtos vendidos na cantina para outros mais saudáveis, trocando refrigerantes por sucos naturais entre outros. Para isso, a direção da escola irá entrevistar cinco alunos sorteados de cada uma de suas 40 turmas. Nesse exemplo, a população corresponde a todos os estudantes deste colégio e, a amostra, aos 200 estudantes que foram entrevistados. Cada estudante entrevistado é um elemento e, a variável de interesse  é a opinião do estudante: "a favor" ou "contra" à mudança. Num estudo desse tipo, costuma-se registrar também outras variáveis como sexo, idade, ano de ensino, turno, etc. 
     
 .. glossary::
 
    Parâmetro
-    característica numérica da população.
+      característica numérica da população.
     
 .. glossary::
 
    Estimador
-    função que produz estimativas de parâmetros usando os dados da amostra.  
+      função que produz estimativas de parâmetros usando os dados da amostra.  
     
 Voltando ao exemplo anterior, sobre a modificação da lista de produtos da cantina, temos que o parâmetro corresponde à proporção dos estudantes desse colégio que são favoráveis à mudança (na maioria das vezes não acessível, a menos que se realize um censo). O estimador desse parâmetro corresponderá à proporção de estudantes favoráveis à mudança na amostra, que resultará numa estimativa do parâmetro. 
     
@@ -52,33 +49,32 @@ Quando se realiza um :index:`censo<censo>` - levantamento de dados de toda a pop
 
 .. admonition:: Para refletir
 
- Proposições são elementos importantes na construção de toda a ciência. No que se refere à natureza da Estatística, em contraponto à natureza da Matemática, podemos destacar dois tipos de proposições. 
+   Proposições são elementos importantes na construção de toda a ciência. No que se refere à natureza da Estatística, em contraponto à natureza da Matemática, podemos destacar dois tipos de proposições. 
  
- Uma proposição é dita matemática se é possível classificá-la em *verdadeira* ou *falsa*, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição 
+   Uma proposição é dita matemática se é possível classificá-la em *verdadeira* ou *falsa*, ainda que essa afirmação seja uma conjectura não provada. Assim, a proposição 
  
- *"O quadrado de um número par é par."*  
+   *"O quadrado de um número par é par."*  
  
- é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição 
+   é uma proposição matemática, pois sabemos que ela é verdadeira. Da mesma forma, a proposição 
  
- *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* 
+   *"O triângulo de lados 6, 4 e 3 é um triângulo retângulo."* 
  
- é uma proposição matemática, pois sabemos que é falsa. 
+   é uma proposição matemática, pois sabemos que é falsa. 
  
- Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um nível de confiança para ela. A proposição 
+   Por outro lado, uma proposição estatística é uma afirmação sobre a qual nunca teremos condição de afirmar se é *verdadeira* ou *falsa*, mas apenas aferir um nível de confiança para ela. A proposição 
  
- *"Uma moeda, que ao ser lançada 10 vezes, resulta em 10 coroas, não é uma moeda equilibrada."*
+   * "Uma moeda, que ao ser lançada 10 vezes, resulta em 10 coroas, não é uma moeda equilibrada."*
  
- é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos de uma moeda equilibrada obtermos 10 coroas, embora isso seja pouco provável de ocorrer.
+   é uma proposição estatística, pois existe a possibilidade de em 10 lançamentos de uma moeda equilibrada obtermos 10 coroas, embora isso seja pouco provável de ocorrer.
  
- **Observação:** Uma moeda é dita ser equilibrada se as probabilidades de se obter cara e coroa são iguais. Caso contrário, a moeda é dita ser não-equilibrada.
+   **Observação:** Uma moeda é dita ser equilibrada se as probabilidades de se obter cara e coroa são iguais. Caso contrário, a moeda é dita ser não-equilibrada.
  
- Se lançarmos 100 vezes essa mesma moeda e obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que não seja equilibrada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um nível de confiança sobre sua veracidade são propsições de natureza estatística.
+   Se lançarmos 100 vezes essa mesma moeda e obtivermos 8 caras, teremos mais evidências para aceitar a proposição de que não seja equilibrada, mas ainda assim não poderemos afirmar que a proposição seja verdadeira. Proposições desse tipo que envolvem um nível de confiança sobre sua veracidade são propsições de natureza estatística.
 
  
 .. _sub-classificacao-de-variaveis:
 
-Classificação de variáveis 
---------------------------
+**Classificação de variáveis**
 
 A classificação das variáveis estudadas é importante, pois as técnicas e procedimentos estatísticos de análise de dados dependem do tipo de variável investigado. Nesse sentido é importante reconhecer a natureza de cada variável investigada para posterior tratamento da informação obtida. Por exemplo, se estamos estudando a modalidade de atividades físicas praticadas pelos brasileiros de 15 anos ou mais, não faz sentido calcular média, pois  ela não assume valores numéricos.
 
@@ -97,7 +93,7 @@ Existem dois tipos principais de variáveis (qualitativas e quantitativas), que 
 .. glossary::
    
    Variável qualitativa
-    Uma variável estatística é qualitativa se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no “Suplemento de Práticas de Esporte e Atividade Física” da PNAD/2015, representa variáveis qualitativas.
+      Uma variável estatística é qualitativa se as possíveis respostas para ela são atributos não-numéricos. A maior parte das variáveis identificadas no "Suplemento de Práticas de Esporte e Atividade Física" da PNAD/2015, representa variáveis qualitativas.
 
 Uma variável qualitativa é classificada em nominal ou ordinal. 
 
@@ -105,47 +101,41 @@ Uma variável qualitativa é classificada em nominal ou ordinal.
 
 .. glossary:: 
    
- Variável qualitativa nominal 
-    
-  Uma variável qualitativa é nominal quando não existe nenhuma ordenação natural das respostas associadas à variável. Exemplos de variáveis nominais: bairro de residência, tipo sanguíneo, modalidade de atividade física que pratica, etc. 
+   Variável qualitativa nominal 
+      Uma variável qualitativa é nominal quando não existe nenhuma ordenação natural das respostas associadas à variável. Exemplos de variáveis nominais: bairro de residência, tipo sanguíneo, modalidade de atividade física que pratica, etc. 
   
 .. glossary::
 
-  Variável qualitativa ordinal
-       
-    A variável qualitativa é ordinal quando é possível estabelecer uma relação de ordem entre as respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: Ensino Fundamental completo, Ensino Médio completo, Ensino Superior incompleto e Ensino Superior completo. Podemos perceber que quem tem Ensino Médio completo tem maior nível de instrução de quem tem Ensino Fundamental completo. 
+   Variável qualitativa ordinal
+      A variável qualitativa é ordinal quando é possível estabelecer uma relação de ordem entre as respostas associadas a ela. Por exemplo, nível de instrução da mãe com as respostas possíveis: Ensino Fundamental completo, Ensino Médio completo, Ensino Superior incompleto e Ensino Superior completo. Podemos perceber que quem tem Ensino Médio completo tem maior nível de instrução de quem tem Ensino Fundamental completo. 
     
 .. glossary::
 
- Variável quantitativa
-
-  Uma variável é quantitativa se as respostas para ela são numéricas. Exemplos de variáveis quantitativas são idade, peso, altura, temperatura, número de irmãos, número de horas semanais dedicadas à prática de atividade física.
+   Variável quantitativa
+      Uma variável é quantitativa se as respostas para ela são numéricas. Exemplos de variáveis quantitativas são idade, peso, altura, temperatura, número de irmãos, número de horas semanais dedicadas à prática de atividade física.
 
 Uma variável quantitativa é classificada em discreta ou contínua. 
 
 .. glossary::
 
-  Variável quantitativa discreta
-
-   As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro, número de irmãos, etc.  
+   Variável quantitativa discreta
+      As variáveis discretas resultam de uma contagem ou são variáveis cuja quantidade de valores possíveis é finita. Por exemplo, o número de atendimentos em um Pronto-Socorro nos finais de semana, o número de erros de impressão na página de um livro, número de irmãos, etc.  
    
 .. glossary::
 
-  Variável quantitativa contínua
-      
-   As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, peso, temperatura, etc.
+   Variável quantitativa contínua
+         As variáveis quantitativas contínuas em geral resultam de uma medição. Por exemplo, altura, peso, temperatura, etc.
 
   
 .. admonition:: Observação
 
- Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Essa estratégia permite somar todas as respostas. Observe que a soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
+   Na análise dos infográficos vimos que uma variável quantitativa pode ser tratada como qualitativa, por exemplo, a idade trabalhada em faixas etárias torna-se uma variável qualitativa ordinal. No entanto, se consideramos a idade em anos completos temos uma variável quantitativa. Por outro lado, também podemos transformar uma variável qualitativa em quantitativa. Considere a variável "prática de atividades físicas" que tem como respostas "Sim" ou "Não". Esse tipo de variável com apenas duas respostas é chamado :index:`variável binária<variável binária>` e tem uma representação numérica natural. Podemos atribuir o número 1 para a resposta "Sim" e o número 0 para a resposta "Não". Essa estratégia permite somar todas as respostas. Observe que a soma representará o número de pessoas na amostra que praticam atividade física e a "média" representará a proporção de pessoas na amostra que praticam atividade física.
  
  
-.. _sub-graficos-variaveis-qualitativas:
 
 
-Gráficos para Variáveis Qualitativas
--------------------------------------
+**Gráficos para Variáveis Qualitativas**
+
 
 Nas análises dos infográficos, trabalhamos com alguns tipos de gráficos para representar a distribuição de frequências de variáveis qualitativas. No :ref:`infográfico 3 <fig-infografico-pnad-3>`, tem-se um :index:`gráfico de barras<gráfico de barras>`. Nesse gráfico, cada barra, de mesma largura, representa uma resposta e seu comprimento corresponde à :index:`frequência<frequência>` na qual a resposta ocorre. Observe também que, nesse gráfico, se estivermos trabalhando com as porcentagens de cada resposta, a soma das porcentagens deve ser 100%.  
 
@@ -154,25 +144,25 @@ Em geral, se a variável for ordinal dispomos as respostas em ordem crescente. S
 
 .. admonition:: Frequência absoluta e frequência relativa
 
- Numa turma de um colégio foram observados os tipos sanguíneos de seus 40 alunos. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as :index:`frequências absolutas<frequência absoluta>` para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a :index:`frequência relativa` em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10. Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
- É comum resumir esse tipo de informação, usando uma tabela, informando as respostas da variável e suas frequências. Nesse exemplo a variável é tipo sanguíneo e sua classificação é qualitativa nominal, pois assume respostas não numéricas "A", "B", "AB" e "O", sem uma ordenação natural. Em geral dispomos os valores dessa variável em ordem decrescente de frequência.
- 
- +----------+--------------+-------------+----------------+
- | tipo     | frequência   | frequência  | porcentagem    |
- | sanguíneo| absoluta     | relativa    | (%)            |
- +==========+==============+=============+================+
- | O        | 18           | 0,45        | 45             |
- +----------+--------------+-------------+----------------+
- | A        | 12           | 0,30        | 30             |
- +----------+--------------+-------------+----------------+
- | AB       | 6            | 0,15        | 15             |
- +----------+--------------+-------------+----------------+
- | B        | 4            | 0,10        | 10             |
- +----------+--------------+-------------+----------------+
- | total    | 40           | 1,00        | 100            |
- +----------+--------------+-------------+----------------+
+   Numa turma de um colégio foram observados os tipos sanguíneos de seus 40 alunos. Verificou-se que 18 alunos têm sangue tipo "O", 12, tipo "A", 6, tipo "AB" e 4, tipo "B". Nesse exemplo, temos que as :index:`frequências absolutas<frequência absoluta>` para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 18, 12, 6 e 4. Em geral, quando queremos comparar grupos diferentes, usamos a :index:`frequência relativa` em vez da frequência absoluta. A frequência relativa é dada pela razão entre a frequência absoluta e o número total de observações. Nesse exemplo, temos que as frequências relativas para os tipos sanguíneos "O", "A", "AB" e "B" foram, respectivamente, 0,45; 0,30; 0,15 e 0,10. Observe que em termos percentuais as frequências relativas observadas equivalem a, respectivamente, 45%, 30%, 15% e 10%.
+   É comum resumir esse tipo de informação, usando uma tabela, informando as respostas da variável e suas frequências. Nesse exemplo a variável é tipo sanguíneo e sua classificação é qualitativa nominal, pois assume respostas não numéricas "A", "B", "AB" e "O", sem uma ordenação natural. Em geral dispomos os valores dessa variável em ordem decrescente de frequência.
 
-  
+   +----------+--------------+-------------+----------------+
+   | tipo     | frequência   | frequência  | porcentagem    |
+   | sanguíneo| absoluta     | relativa    | (%)            |
+   +==========+==============+=============+================+
+   | O        | 18           | 0,45        | 45             |
+   +----------+--------------+-------------+----------------+
+   | A        | 12           | 0,30        | 30             |
+   +----------+--------------+-------------+----------------+
+   | AB       | 6            | 0,15        | 15             |
+   +----------+--------------+-------------+----------------+
+   | B        | 4            | 0,10        | 10             |
+   +----------+--------------+-------------+----------------+
+   | total    | 40           | 1,00        | 100            |
+   +----------+--------------+-------------+----------------+
+
+
 
    
 
@@ -201,159 +191,24 @@ No gráficos de retângulos essa mesma ideia é usada: o retângulo maior é sub
 
 .. admonition:: Para o professor
 
- Como escolher entre o gráfico de setores ou o gráfico de barras para representar a distribuição de frequências de uma variável qualitativa? Se o número de respostas diferentes é grande, maior que 4, ou se  as diferenças nas frequências das respostas são pequenas, por exemplo uma tem porcentagem 22% e a outra tem porcentagem 25%, o gráfico de setores não será adequado, pois pequenas diferenças de ângulos  não são perceptíveis, enquanto que no gráfico de barras é fácil perceber pequenas diferenças. Se deseja-se fazer comparações múltiplas o gráfico de setores não é adequado. Observe que todos infográficos da atividade para comparar diferentes grupos quanto à prática de atividades físicas são gráficos de barras múltiplas. Finalmente, e não menos importante, sempre lembrar que em comparações múltiplas é fundamental relativizar a frequência absoluta usando frequências relativas ou porcentagens quando os grupos investigados têm tamanhos diferentes, pois a diferença em tamanhos pode mascarar possíveis similaridades. Por exemplo, suponha o exemplo com os dados de tipos sanguíneos dos 40 alunos de uma turma. Agora desejamos comparar as respostas obtidas com um conjunto de 120 observações para as quais 30 são tipo "A"; 12, tipo "AB"; 18, tipo "B" e 60, tipo "O". Os gráficos de barras na mesma escala, usando a frequência absoluta parecem bem diferentes, como mostra a figura a seguir.    
+   Como escolher entre o gráfico de setores ou o gráfico de barras para representar a distribuição de frequências de uma variável qualitativa? Se o número de respostas diferentes é grande, maior que 4, ou se  as diferenças nas frequências das respostas são pequenas, por exemplo uma tem porcentagem 22% e a outra tem porcentagem 25%, o gráfico de setores não será adequado, pois pequenas diferenças de ângulos  não são perceptíveis, enquanto que no gráfico de barras é fácil perceber pequenas diferenças. Se deseja-se fazer comparações múltiplas o gráfico de setores não é adequado. Observe que todos infográficos da atividade para comparar diferentes grupos quanto à prática de atividades físicas são gráficos de barras múltiplas. Finalmente, e não menos importante, sempre lembrar que em comparações múltiplas é fundamental relativizar a frequência absoluta usando frequências relativas ou porcentagens quando os grupos investigados têm tamanhos diferentes, pois a diferença em tamanhos pode mascarar possíveis similaridades. Por exemplo, suponha o exemplo com os dados de tipos sanguíneos dos 40 alunos de uma turma. Agora desejamos comparar as respostas obtidas com um conjunto de 120 observações para as quais 30 são tipo "A"; 12, tipo "AB"; 18, tipo "B" e 60, tipo "O". Os gráficos de barras na mesma escala, usando a frequência absoluta parecem bem diferentes, como mostra a figura a seguir.    
    
-  .. _fig-coloque-aqui-o-nome:
+   .. _fig-coloque-aqui-o-nome:
 
-  .. figure:: _resources/exemplo_escala_absoluta.png
-     :width: 200pt
-     :align: center
+   .. figure:: _resources/exemplo_escala_absoluta.png
+      :width: 200pt
+      :align: center
 
-     Gráficos de barras da distribuição na escla da frequência absoluta
+      Gráficos de barras da distribuição na escla da frequência absoluta
     
- Porém, os gráficos construídos, usando a escala da porcentagem, não parecem tão diferentes, como mostra a figura a seguir.
+   Porém, os gráficos construídos, usando a escala da porcentagem, não parecem tão diferentes, como mostra a figura a seguir.
    
-  .. _fig-coloque-aqui-o-nome:
+   .. _fig-coloque-aqui-o-nome:
 
-  .. figure:: _resources/exemplo_escala_porcentagem.png
-     :width: 200pt
-     :align: center
+   .. figure:: _resources/exemplo_escala_porcentagem.png
+      :width: 200pt
+      :align: center
 
-     Gráficos de barras na escala da porcentagem 
+      Gráficos de barras na escala da porcentagem 
     
- Comparando os dois, percebem-se  apenas pequenas diferenças quanto às porcentagens dos sangues tipo "AB" e tipo "B", comparando os dois gráficos.
-
-********************
-Praticando o assunto
-********************
-
-  
-.. _ativ-1-pratica-atividade-fisica-na-turma:
-
-
-Atividade: Prática de Atividade Física na turma
-------------------------------------------
-
-
-.. admonition:: Para o professor
-
-  **Objetivos específicos** Conduzir uma coleta de dados sobre a turma envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” para comparar os resultados dessa "amostra" com os da PNAD/2015.
-   
-  **Observações e sugestões** 
-   
-  * Preparar uma tabela a ser preenchida pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. A tabela poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas, para efeito de comparação com os infográficos, sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunos que essa será uma amostra de conveniência, pois o interesse é estudar o perfil da turma quanto à prática de atividades físicas e por isso, as respostas da turma podem não ser similares às da pesquisa.
-   
-  * Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas, isto é, gráficos de barras separados por grupos diferentes, como por exemplo, sexo.
-
-Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da turma com os dados obtidos da PNAD/2015. Para isso preencha o formulário de dados fornecido pelo professor. Construa tabelas e gráficos resumindo a informação obtida. 
-
-
-.. _ativ-classificacao-de-variaveis:
-
-Atividade: Classificação de variáveis
--------------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** 
-   
-   * Diferenciar variável qualitativa e variável quantitativa. 
-   * Identificar variáveis qualitativas binárias.
-
-Suponha que cada uma das variáveis a seguir foi observada para todos os alunos de sua turma. Indique se cada uma delas é uma variável qualitativa ou quantitativa. Se for uma variável qualitativa, indique se ela é binária (apenas duas respostas possíveis) ou não. 
-
-
-#. altura (em metros)
-#. peso (em quilos)
-#. razão do peso sobre o quadrado da medida da altura
-#. tempo de sono na noite anterior
-#. se foi dormir na noite anterior antes ou depois da meia-noite
-#. mês de nascimento
-#. número de irmãos
-#. nota obtida na última avaliação de Matemática
-#. se tirou nota maior ou igual a 6,0 ou menor do que 6,0 na última avaliação de Matemática
-#. distância da casa à escola
-#. se o indivíduo possui cartão de crédito ou não
-#. modo de locomoção para a escola
-
-.. admonition:: Resposta 
-
- (a) quantitativa, (b) quantitativa, (c) quantitativa (d) quantitativa, (e) qualitativa binária, (f) qualitativa (g) quantitativa (h) quantitativa (i) qualitativa binária (j) quantitativa (k) qualitativa binária (l) qualitativa.
-
-
-.. _ativ-3-construcao-de-grafico-variavel-qualitativa:
-
-Atividade: Construção de gráficos para variáveis qualitativas
--------------------------------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** Construir gráficos de distribuições de frequências para variáveis qualitativas.
-   
-   **Observações e sugestões** Embora os gráficos solicitados nesta atividade sejam simples, recomenda-se sugerir aos alunos usar algum recurso tecnológico para a construção dos mesmos, tais como, uma planilha ou o GeoGebra.
-   
-
-Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o gráfico de setores em gráfico de retângulos e os gráficos de retângulos em gráficos de setores. 
-
-
-.. admonition:: Resposta 
-
- .. _fig-trocando-setor-e-barra:
- 
- .. figure:: _resources/praticando1.png
-   :width: 600px
-   :align: center
-
-   Infográfico 4 transformado
-   
-.. _ativ-4-analise-de-grafico:
-
-Atividade: Análise de gráfico
------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos especícificos** Mostrar que podem existir diversas formas de usar barras para representar algum tipo de dado, mas que nem todos os gráficos que usam barras são gráficos de barras no sentido da representação de uma distribuição de frequências. 
-   
-   **Observações e sugestões** O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Na seção "Explorando 2", veremos que, para esse tipo de informação - valores de uma variável quantitativa ao longo do tempo -, é mais comum usar um gráfico de linhas unindo por segmentos os pontos consecutivos dados (tempo,valor da variável).
-
-Observe o gráfico a seguir publicado em um jornal. 
-
-#. Como você classificaria esse gráfico? 
-#. Qual é a informação representada pelo comprimento da barra nesse gráfico?   
-#. Que tipo(s) de variável(is) ele está representando?
-#. Construa um gráfico diferente para representar a mesma informação, marcando num plano Cartesiano os pontos (x,y) em que x corresponde ao tempo e y corresponde à inflação acumulada no domicílio, unindo os pontos consecutivos por segmentos. É possível perceber a partir desse gráfico algum tipo de comportamento no período observado?
-
-
- 
-.. _linhaversusbarra:
-
-.. figure:: _resources/linhaversusbarra.png
-   :width: 600px
-   :align: center
-
-   Inflação da alimentação acumulada nos últimos 12 meses (Fonte: IBGE)
-   
-
-.. admonition:: Resposta 
-
-   #. É um gráfico que usa barras, mas nesse gráfico o comprimento das barras não é frequência. 
-   
-   #. Valor da inflação da alimentação acumulada nos últimos 12 meses. Esses valores são apresentados em função do período de tempo: agosto de 2016 até agosto de 2017.
-   
-   #. O valor da inflação da alimentação acumulada nos últimos 12 meses é uma variável quantitativa, o período de tempo representado em mês/ano é uma variável qualitativa ordinal. 
-    
-   #. (gráfico) Como evoluiu a inflação da alimentação acumulada em 12 meses no período investigado, a saber, agosto de 2017 até agosto de 2017. Mais precisamente, percebe-se que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
-   
-   
-.. _fig-grafico-de-linha-da-inflacao_alimentacao:
-
-.. figure:: _resources/inflacao_alimentacao.png
-   :width: 300px
-   :align: center
-
-   Gráfico de linha da inflação da alimentação acumulada nos últimos 12 meses
-   
-  
+   Comparando os dois, percebem-se  apenas pequenas diferenças quanto às porcentagens dos sangues tipo "AB" e tipo "B", comparando os dois gráficos.
