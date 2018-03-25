@@ -1,0 +1,139 @@
+
+
+.. _sec-praticando:
+
+**********
+Praticando
+**********
+
+
+.. _ativ-problema-inicial:
+
+Atividade: resolvendo a situação inicial
+----------------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+     
+   * Reconhecer a aplicabilidade do teorema de Tales em uma situação real.
+   
+   **Observações e recomendações**
+   
+   * Os alunos devem perceber que os segmentos que aparecem nas transversais não precisam estar conectados.
+   * Deixe que os alunos concluam o resultado e encontrem a resposta. Não dê nenhuma dica inicialmente.
+    
+Vamos voltar ao mapa que mostramos na primeira atividade, agora desenhado de forma esquemática.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (0.,5.)-- (7.2,1.44);
+   \draw [line width=0.8pt] (0.,5.)-- (0.,-2.86);
+   \draw [line width=2.8pt,color=red] (7.2,1.44)-- (5.629240434037691,-1.60334665905197);
+   \draw [line width=0.8pt] (5.629240434037691,-1.60334665905197)-- (4.7328383780696734,-3.3401256424900057);
+   \draw [line width=2.8pt,color=blue] (4.7328383780696734,-3.3401256424900057)-- (3.968018275271273,-4.821964591661907);
+   \draw [line width=0.8pt] (0.,3.22)-- (6.468075385494003,0.02189605939463218);
+   \draw [line width=0.8pt] (0.,1.18)-- (5.629240434037691,-1.60334665905197);
+   \draw [line width=0.8pt] (0.,2.86)-- (6.320045688178182,-0.2649114791547684);
+   \draw [line width=0.8pt] (0.,-1.)-- (4.7328383780696734,-3.3401256424900057);
+   \draw [line width=0.8pt] (0.,-2.86)-- (3.968018275271273,-4.821964591661907);
+   \draw [line width=2.8pt,color=red] (0.,5.)-- (0.,1.18);
+   \draw [line width=2.8pt,color=blue] (0.,-1.)-- (0.,-2.86);
+   \draw [color=blue](4.4,-4.0) node[anchor=north west] {$A$};
+   \draw [color=blue](-0.6170786902907064,-1.7707838711724064) node[anchor=north west] {$B$};
+   \draw [color=red](6.5,-0.3084989813871627) node[anchor=north west] {$C$};
+   \draw [color=red](-0.6767637878329612,3.3322919686903827) node[anchor=north west] {$D$};
+   \draw [fill=red] (0.,5.) circle (2.5pt);
+   \draw [fill=red] (0.,1.18) circle (2.5pt);
+   \draw [fill=blue] (0.,-1.) circle (2.5pt);
+   \draw [fill=blue] (0.,-2.86) circle (2.5pt);
+   \draw [fill=red] (7.2,1.44) circle (2.5pt);
+   \draw [fill=red] (5.629240434037691,-1.60334665905197) circle (2.5pt);
+   \draw [fill=blue] (4.7328383780696734,-3.3401256424900057) circle (2.5pt);
+   \draw [fill=blue] (3.968018275271273,-4.821964591661907) circle (2.5pt);
+   
+#. Por que o teorema de Tales pode ser utilizado nessa situação?
+#. Utilizando os dados da atividade inicial (:ref:`ativ-nas-ruas`) calcule a medida `D`.
+
+
+.. admonition:: Resposta 
+
+   #. Porque as ruas são paralelas e estão cortadas por transversais.
+   #. `184m`
+   
+
+.. _ativ-novas-situacoes:
+
+Atividade: resolvendo novas situações
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Reconhecer uma aplicação do teorema de Tales em uma situação matemática.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * 	Os alunos compreenderam o teorema de Tales a partir da representação mais tradicional. Nesta atividade, vamos variar as situações propostas para que eles possam raciocinar e decidir como aplicar o teorema de Tales
+   * Em caso de dificuldade sugira que eles tracem uma nova paralela pelo ponto de interseção dos segmentos. Eles deverão reconhecer, então, o teorema de Tales.
+
+Sempre que houver retas paralelas e trasnversais, o teorema de Tales estará presente. Nas figuras a seguir, as retas paralelas estão assinaladas com seu símbolo tradicional.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-2.04,0.56)-- (3.44,3.96);
+   \draw [line width=0.8pt] (-2.04,0.56)-- (-1.9,3.68);
+   \draw [line width=0.8pt] (-1.9,3.68)-- (2.1553812418250367,3.1629737631761174);
+   \draw [line width=0.8pt] (-1.9789362312897274,1.9208497026860774)-- (1.9886091282959177,4.382465436735565);
+   \draw [line width=0.8pt] (0.3865465119480187,3.3884849813372337)-- (1.9886091282959177,4.382465436735565);
+   \draw [line width=0.8pt] (1.1103882995267922,3.9434991515970954) -- (1.2052858218334364,3.7905466744675635);
+   \draw [line width=0.8pt] (1.1698698184104994,3.980403743605235) -- (1.2647673407171436,3.8274512664757028);
+   \draw [line width=0.8pt] (2.1553812418250367,3.1629737631761174)-- (3.44,3.96);
+   \draw [line width=0.8pt] (2.7205011003173425,3.6195108241487546) -- (2.8153986226239867,3.4665583470192227);
+   \draw [line width=0.8pt] (2.7799826192010486,3.6564154161568942) -- (2.8748801415076928,3.5034629390273624);
+   \draw (-2.4,2.88) node[anchor=north west] {6};
+   \draw (-2.8,1.34) node[anchor=north west] {4,2};
+   \draw (-0.74,4.1) node[anchor=north west] {7,5};
+   \draw (1.42,3.8) node[anchor=north west] {$ x $};
+   \draw [fill=black] (-2.04,0.56) circle (1.0pt);
+   \draw [fill=black] (-1.9,3.68) circle (1.0pt);
+   \draw [fill=black] (2.1553812418250367,3.1629737631761174) circle (1.0pt);
+   \draw [fill=black] (-1.9789362312897274,1.9208497026860774) circle (1.0pt);
+   \draw [fill=black] (0.3865465119480187,3.3884849813372337) circle (1.0pt);
+   
+#. Qual é o valor da medida que está faltando na figura acima?
+   
+   .. tikz:: 
+
+      \draw [line width=0.8pt] (-2.8,1.)-- (1.0687644969670296,5.635260395386114);
+      \draw [line width=0.8pt] (-2.394800264009806,3.4591432253197976)-- (0.16,0.12);
+      \draw [line width=0.8pt] (-2.394800264009806,3.4591432253197976)-- (-2.22,4.52);
+      \draw [line width=0.8pt] (-2.418451428579632,3.9661819892341916) -- (-2.2097237468538884,3.9317893598589273);
+      \draw [line width=0.8pt] (-2.405076517155918,4.04735386546087) -- (-2.1963488354301743,4.012961236085605);
+      \draw [line width=0.8pt] (1.0687644969670296,5.635260395386114)-- (1.2676091397680478,6.8420416758336735);
+      \draw [line width=0.8pt] (1.0571355217928105,6.215261412184186) -- (1.265863203518554,6.180868782808922);
+      \draw [line width=0.8pt] (1.070510433216524,6.2964332884108645) -- (1.2792381149422676,6.2620406590356);
+      \draw [line width=0.8pt] (-2.8,1.)-- (-2.394800264009806,3.4591432253197976);
+      \draw [line width=0.8pt] (0.16,0.12)-- (1.0687644969670296,5.635260395386114);
+      \draw (-2,3.2) node[anchor=north west] {$ a $};
+      \draw (-0.9,4.5) node[anchor=north west] {$ b $};
+      \draw (-1.1,1.4) node[anchor=north west] {$ c $};
+      \draw (-2.1,2.0) node[anchor=north west] {$ d $};
+      \draw [fill=black] (-2.8,1.) circle (1.0pt);
+      \draw [fill=black] (0.16,0.12) circle (1.0pt);
+      \draw [fill=black] (1.0687644969670296,5.635260395386114) circle (1.0pt);
+      \draw [fill=black] (-2.394800264009806,3.4591432253197976) circle (1.0pt);
+      \draw [fill=black] (-1.6069520360906888,2.4294196457913784) circle (1.0pt);
+      
+#. Encontre uma relação entre os quatro segmentos assinalados na figura acima.
+
+
+.. admonition:: Resposta 
+
+   #. 5,25
+   #. `\dfrac{a}{d}=\dfrac{c}{b}`
+
