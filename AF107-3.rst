@@ -1,3 +1,74 @@
-*******
-AF107-3
-*******
+**********
+Praticando
+**********
+
+.. _ativ-purificador:
+
+Atividade: Quando trocar o filtro do purificador?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Identificar num conjunto de grandezas distintas e apresentadas em um quadro, duas grandezas que atendem as especificações da situação problema.
+   
+   * Perceber a relação da razão entre as grandezas com a taxa de variação da função linear.
+   
+   * Aplicar os conceitos de função linear com o intuito de resolver a situação problema.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d), explore com seus alunos o motivo pelo qual o resultado é o mesmo em ambos os casos.
+   
+   * Utilize o fato que a atividade anterior também aborda o conceito de função linear e faça um comparativo com os gráficos das duas atividades.
+   
+   * Se possível, consulte seu diretor ou responsável direto, como anda a troca dos filtros dos bebedouros da sua escola. Caso consiga o manual dos fabricantes, simule a mesma atividade com os dados da realidade de sua escola.
+   
+   * Conduza seus estudantes a perceber a diferença entre a resposta do item (e) que é uma razão: `9` litros/dia, e as respostas dadas aos dois itens anteriores em que tratam do consumo em litros para cada intervalo de tempo.
+
+Há `1` ano você adquiriu um purificador de água com capacidade de refrigeração, e deseja saber quanto tempo falta para realizar a troca do filtro interno. No manual do fabricante do seu purificador, você encontra o seguinte quadro:
+
+.. figure:: _resources/purificador.png
+   :width: 450pt
+   :align: center
+
+
+#. Quais informações do quadro são relevantes para responder à sua dúvida?
+#. Explique com suas palavras o significado da vazão 0,75 litros/minuto.
+#. Para calcular a vida útil do seu filtro interno, é necessário estimar a quantidade de água consumida diariamente na sua casa. Suponha, então, que você observou que o purificador é acionado ao longo de um dia o equivalente ao tempo total de 12 minutos. Quantos litros de água são consumidos em um dia, nessas condições? (assuma que o purificador foi regulado para funcionar com a vazão máxima recomendada pelo fabricante)
+#. Assumindo que o consumo estimado no item anterior seja o mesmo para todos os dias, qual foi o consumo de água do purificador ao final do primeiro dia de uso? E entre o 10º e o 11º dias de uso?
+#. Qual o aumento do consumo de água observado para cada dia de uso do purificador?
+#. Calcule a vida útil do filtro interno do seu aparelho e, supondo que você tenha utilizado o seu purificador todos os dias desde a instalação, determine em quanto tempo você deverá solicitar a troca do seu filtro interno.
+#. Com base nas informações que você possui, encontre uma expressão matemática que relacione o consumo de água do purificador em função do tempo de uso em dias e represente-a graficamente.
+
+
+.. admonition:: Resposta 
+   
+   #. Vida útil do elemento filtrante e vazão máxima recomendada.
+   #. A cada minuto sai `0,75` litro de água do purificador.
+   #. `0,75 \times 12=9` litros.
+   #. `9` litros em ambos os casos.
+   #. `9` litros.
+   #. A vida útil do filtro interno, nas condições descritas, será de aproximadamente `14` meses e meio. A troca do filtro interno deverá ser realizada daqui a dois meses e meio.
+   #. `f(t)=9t`.
+
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]   
+      \draw[thick,->](-3,0)--(3,0)node[ right]{$t$};
+      \draw[thick,->](0,-2)--(0,10)node[right]{$f(t)$};
+      \draw[lightgray](-3,-2) grid[xstep=.2,ystep=.2](3,10);
+      \draw[gray](-3,-2) grid(3,10);
+      \foreach \x in { -3, -2,-1}
+      \node at  (\x ,-.3)  {\x};
+      \foreach \x in {3, 2,1}
+      \node at  (\x ,-.3)  {\x};
+      \foreach \x in { -2,-1}
+      \node at  (-.3 ,\x)  {\x};
+      \foreach \x in {1, 2, 3, ..., 10}
+      \node at  (-.3 ,\x)  {\x};
+      \draw[domain=-.2:1.1, primario,very thick, samples=100]plot(\x,9*\x);
+
+

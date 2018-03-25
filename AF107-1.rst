@@ -1,518 +1,417 @@
-.. _sec-funcao-afim:
-***********************
-Explorando: função afim
-***********************
+************************************
+Organizando as ideias: função linear
+************************************
 
-.. _ativ-dist-tempo:
 
-Atividade: Distância x tempo
+Considere duas grandezas diretamente proporcionais que podem assumir qualquer valor real e vamos representá-las pelas letras `x` e `y`. Então, sempre que multiplicarmos `x` por qualquer número real `k`, o valor correspondente da grandeza `y` também fica multiplicado pelo mesmo valor. Isto é
+
+.. math::
+
+   \begin{eqnarray*}
+   x\quad &\overline{\quad \quad \quad}& \quad y \\
+   k\cdot x \quad &\overline{\quad \quad \quad}& \quad k\cdot y\\
+   \end{eqnarray*}
+
+Vamos agora, usando a notação de função, expressar a propriedade acima. Se considerarmos que a grandeza `y` é expressa como função da grandeza `x`, isto é, `y=f(x)` ,  a segunda linha do diagrama acima implica que `f(k\cdot x)=k\cdot y`. Portanto, qualquer que seja o valor de `k\in\mathbb{R}`, tem-se
+
+.. math::
+
+   f(k\cdot x)= k\cdot f(x)
+
+Observe que, a partir dessa última igualdade, podemos fazer o seguinte 
+
+.. math::
+
+   f(x)=f(x\cdot 1)= x\cdot f(1) \Longrightarrow f(x)=a\cdot x
+
+em que `x` é qualquer valor real e `a=f(1)` é uma constante, ou seja, um número real fixo. 
+
+
+
+.. admonition:: Observação
+
+   Usando a “regra de três” fica assim
+   
+   .. math::
+   
+      x \quad &\overline{\quad \quad \quad}& \quad f(x)\\
+      1\quad &\overline{\quad \quad \quad}& \quad a \\
+   
+   O que nos leva a
+   
+   .. math::
+
+      \dfrac x1 = \dfrac {f(x)}a \Longrightarrow f(x) = a\cdot x
+
+
+.. admonition:: Definição 
+
+   Seja `D\subset \mathbb{R}`. Uma função real `f:D\to\mathbb{R}` é chamada de **função linear** quando existe uma constante `a\in \mathbb{R}` tal que para todo `x\in D`,
+   
+   .. math::
+
+      f(x) = a\cdot x
+
+
+Na :ref:`ativ-na-piscina` você deve ter percebido que as grandezas relacionadas eram diretamente proporcionais apenas no caso da piscina 1. Naquele caso, a função que fornece o volume de água na piscina em função do tempo é dada por `V:\{1,2,3,4,5\}\to \mathbb{R}`,   `V(t)=V(1)\cdot t=200\cdot t`.
+
+
+.. admonition:: Para refletir 
+   
+   .. admonition:: Para o professor
+   
+      Até o presente momento, apenas argumentamos que se duas grandezas são proporcionais então elas se relacionam de maneira que uma delas é uma função linear da outra. Essa reflexão vai no sentido da afirmação recíproca. E ainda faz uma provocação, sem ter o intuito de formalizar, no sentido de intuir que a função inversa de uma função linear é também uma função linear.
+   
+   Suponha que duas grandezas `x` e `y` se relacionem de maneira que `y` seja uma função linear de `x`. 
+   
+   #. Essas duas grandezas são proporcionais?
+   #. Podemos afirmar também que `x` é uma função linear de `y`?
+
+**********
+Praticando
+**********
+
+.. _ativ-cambio:
+
+Atividade: taxa de câmbio
 ------------------------------
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-
-   * Interpretar uma situação que envolve movimento retilíneo uniforme a partir do gráfico que representa a relação entre distância e tempo.
-   * Compreender o modelo de variação que se estabelece entre as variáveis distância e tempo.
-   * Constatar que a distância percorrida sempre será a mesma em intervalos de tempo iguais.
-   * Identificar que mesmo a taxa de variação sendo constante, as grandezas envolvidas não são proporcionais.
-
+   
+   * Utilizar a taxa de câmbio fornecida para realizar a conversão do valor dado em moeda estrangeira para o valor correspondente em reais.
+   
+   * Obter a partir das informações fornecidas a função linear que converte dólar americano em reais.
+   
    **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É bastante provável que no item c) os estudantes apresentem o seguinte raciocínio: se `1` dólar americano equivale a `R \$ 3,20` reais então `x` dólares americanos irão corresponder a `y` reais, isto é, `y=3,20 \cdot x`. Em analogia ao que foi feito anteriormente, é importante chamar atenção de que se `y=f(x)` é a função que fornece a quantia equivalente em reais a `x` dólares americanos, como as grandezas envolvidas são diretamente proporcionais e `f(1)=3,20`, então `f(x)=x \cdot f(1)` e portanto `f(x)=3,20 \cdot x`.
+   
+   * Ainda no item c) o questionamente apresentado sobre o domínio da função tem como objetivo levar a uma reflexão de que na prática não faz sentido, por exemplo, converter `\sqrt{5}` dólares americanaos para reais.
+   
+Segundo o `site do Banco Central do Brasil <http://www.bcb.gov.br/pre/bc_atende/port/taxCam.asp>`_, a *taxa de câmbio* é o preço de uma moeda estrangeira medido em unidades ou frações (centavos) da moeda nacional. Em um determinado dia as taxas de câmbio do dólar americano e do euro eram respectivamente `R\$ 3,20` e `R\$ 4,00`.
 
-   * Já no item (a) é comum boa parte dos alunos não identificarem a posição do ponto de referência, principalmente por criar associações equivocadas entre o gráfico e a situação real. Para isso utilize algum modelo que deixe claro que a reta apresentada do gráfico não é o “caminho” percorrido pela pessoa. Por exemplo:
-   
-   
-   .. _fig-modelo-distancia:
-
-   .. figure:: _resources/modelo_distancia_1.jpeg
-      :width: 300pt
-      :align: center
-   
-   
-   * Recomendamos que, se possível, discuta com seus alunos uma variante do problema. O caso em que, mesmo que a pessoa não ande em linha reta, o gráfico continua representando a relação entre a distância percorrida e o tempo de percurso. Apresente por exemplo percursos diferentes, refazendo as perguntas, como por exemplo:
-   
-   
-   .. _fig-percursos:
-
-   .. figure:: _resources/percursos_1.jpeg
-      :width: 300pt
-      :align: center
-
-   
-   * Discuta com seus alunos o motivo da função não ser linear e consequentemente, nesta situação, a relação entre as grandezas não ser proporcional. Utilize o fato de não atender o Teorema Fundamental da Proporcionalidade.
-   
-   * Caso seus alunos já tenham estudado esse conteúdo em Física, aproveite para relacionar a função `f(t)=at+b` com a equação tradicional do Movimento Uniforme: `S=S_0+Vt`, associando `S` com `f(t)` ; `S_0` com `b` e `V` com `a`.
-   
-   
-   
-O gráfico a seguir mostra a variação da distância a um ponto de referência de uma pessoa que caminha em linha reta durante `4` segundos. Algumas informações sobre o movimento podem ser extraídas diretamente dessa representação gráfica.
-
-
-.. _fig-tempo-distancia:
-
-.. figure:: _resources/tempo_distancia_1.png
-   :width: 300pt
-   :align: center
-
-#. A que distância do ponto de referência estava a pessoa no início da contagem do tempo? E ao final de `4` segundos?
-#. Qual a distância total percorrida?
-#. É possível saber se ele está se afastando ou se aproximando do ponto de referência? Como?
-#. Qual a velocidade média da pessoa no intervalo de tempo de `0` a `4` segundos?
-#. A que distância a pessoa estava do ponto de referência após `1` segundo do início da caminhada? Qual a distância percorrida por ela nesse intervalo de tempo?
-#. Qual a distância percorrida pela pessoa entre `1` e `2` segundos? E entre `3` e `4` segundos?
-#. O que se pode concluir, a partir das suas respostas nos itens (e) e (f), sobre a variação da distância percorrida a cada minuto de caminhada?
-#. As grandezas relacionadas pelo gráfico são proporcionais? Porque?
+#. Nesse mesmo dia você deseja comprar `100` dólares. Qual seria o valor em reais necessário para realizar essa compra?
+#. Para adquirir nesse mesmo dia `200` euros, qual o valor em reais deverá ser desembolsado?
+#. A partir da taxa praticada nesse dia, apresente uma função que converta dólar americano para reais. Qual o conjunto domínio mais adequado a ser considerado para essa função? Justifique.
+#. Com a taxa de câmbio que está sendo praticada nesse dia, quantos dólares americanos podem ser comprados com `R\$ 2000,00`. Com os mesmos `R\$ 2000,00`, quantos euros podem ser adquiridos?
 
 
 .. admonition:: Resposta 
 
-   #. `1` metro. `9` metros.
-   #. `8` metros.
-   #. Sim, ela está se afastando. A medida que o tempo aumenta a distância até o ponto de referência também aumenta. Isto é, a função é crescente.
-   #. A velocidade média é `V=\dfrac{9-1}{4-0}=2` `m/s`.
-   #. `3` metros. `2` metros.
-   #. `2` metros em ambos os intervalos de tempo.
-   #. A cada segundo a pessoa se afasta `2` metros do ponto de referência.
-   #. Não, pois a distância até o ponto de referência em 2 segundos é 5 metros e em 1 segundo é 3 metros, ou basta ver que o gráfico não passa pela origem do plano cartesiano .
+   #. A partir da taxa de câmbio fornecida sabemos que `1` dólar americano é equivalente a `R\$ 3,20`, e portanto, para comprar `100` dólares americanos serão necessários `R \$ 320,00`.
+   #. Como nesse dia `1` euro é equivalente a `R\$ 4,00`, então será necessário desembolsar R\$ 800,00` para a compra de `200` euros.
+   #. Vamos chamar de `y=f(x)` a função que fornece a quantia equivalente em reais a `x` dólares americanos. Como as grandezas envolvidas são diretamente proporcionais e `f(1)=3,20` (veja que isso é a tradução, usando a linguagem de função, de que `1` dólar americano equivale a `R\$ 3,20`), então `f(x)=x \cdot f(1)` e portanto `f(x)=3,20 \cdot x`. Como na prática não existem quantias irracionais de dólares americanos e de reais, devemos considerar `f: \mathbb{Q} \to \mathbb{Q}`.
+   #. Utilizando a função obtida no item anterior vemos que `R\$ 2000,00` equivalem a `x=\dfrac{2000}{3,20}=625` reais. Raciocinando de forma análoga obtemos que com `R\$ 2000,00` poderão ser adquiridos `\dfrac{2000}{4}=500` euros.
 
 
-********
-Organizando as ideias: função afim
-********
+.. _ativ-prop-retangulo:
 
-O gráfico da :ref:`ativ-dist-tempo` apresenta a distância até o ponto de referência como uma função do tempo. Como a ação acontece no intervalo de tempo de `0` a `4` segundos, podemos modelar essa relação com uma função `f` cujo domínio é o intervalo `[0,4]`, isto é, `f:[0,4] \to \mathbb{R}`. Vamos juntos determinar uma expressão para `f`?
+Atividade: proporcionalidade na construção de retângulos
+------------------------------
 
-Apesar do gráfico ser um segmento de reta, `f` não pode ser uma função linear, pois a reta não contém a origem do plano cartesiano. Como no início da contagem do tempo a pessoa estava na posição `1`, devemos ter `f(0)=1`. Em particular, as grandezas posição e tempo, nesse caso, não são proporcionais. 
+.. admonition:: Para o professor
 
-Vamos definir uma outra função que vai nos auxiliar a determinar uma expressão para `f`. Chamaremos de `d(t)` a distância percorrida no intervalo de tempo `[0,t]`. Por exemplo, como fazemos para calcular `d(2)` ? Basta saber em que posições a pessoa estava nos tempos `t=0` e `t=2` e fazer a diferença. Neste caso `d(2)=f(2)-f(0)=5-1=4`. Isso nos dá a dica de como calcular `d(t)` para qualquer `t\in[0,4]`.
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Levar o estudante a relacionar os conceitos de proporcionalidade e semelhança de figuras e função linear.
+   
+   * Construir retângulos que sejam semelhantes a um retângulo dado.
 
-.. math::
 
-   d(t)=f(t)-f(0) \Longrightarrow d(t)= f(t)-1
-
-Vamos preencher o seguinte quadro:
-
-.. table::
-   :widths: 3 2 2
-   :column-alignment: center center center
-
-+-----+---------------------+---------------------+
-| `t` |     `f(t)`          |    `d(t)=f(t)-1`    |
-+-----+---------------------+---------------------+
-|`0`  |   `1`               |                     |
-+-----+---------------------+---------------------+
-|`0,5`|                     |                     |
-+-----+---------------------+---------------------+
-|`1`  |   `3`               |                     |
-+-----+---------------------+---------------------+
-|`1,5`|                     |                     |
-+-----+---------------------+---------------------+
-| `2` |         `5`         |        `4`          |
-+-----+---------------------+---------------------+
-|`2,5`|                     |                     |
-+-----+---------------------+---------------------+
-|`3`  |                     |                     |
-+-----+---------------------+---------------------+
-|`3,5`|                     |                     |
-+-----+---------------------+---------------------+
-|`4`  |        `9`          |      `8`            |
-+-----+---------------------+---------------------+
-
-Para representar o gráfico da função `d`, devemos considerar os pontos `D=(t,d(t))`, para cada `t` de `0` a `4` segundos. Já para representar o gráfico da função `d`, devemos considerar os pontos `F=(t,f(t))` para `t` de `0` a `4` segundos. Observamos que para cada `t` de `0` a `4` segundos, os pontos do gráfico de `f` têm ordenada igual a ordenada do ponto correspondente ao gráfico de `f` mais uma unidade, como ilustra a tabela anterior. Portanto, tem-se que o gráfico da função `d` também é uma reta: uma reta paralela a reta que corresponde ao gráfico de `f` deslocada verticalmente uma unidade para baixo como ilustra a figura a seguir.
-
-.. figure:: _resources/distancia_posicao1.png
-   :width: 350pt
-   :align: center
-
-Sendo assim o gráfico de `d` é em uma reta que contém a origem do plano cartesiano, mostrando-nos que se trata de uma função linear. Como o ponto `(1,2)` pertence ao gráfico de `d`, podemos afirmar que sua taxa de variação é `\frac 21` e, portanto, para todo `t\in[0,4]` , `d(t)= 2t`.
-
-Finalmente, como `d(t)=f(t)-1` para `t\in[0,4]`, concluímos que uma expressão para `f` é
-
-.. math::
-
-   f(t)=2t+1
-
-Concluimos assim que o gráfico da função `f` é obtido deslocando-se o gráfico da função linear `d(t)=2t` uma unidade na vertical para cima.
-
-Usando a expressão de `f`, podemos calcular sua taxa de variação média em um intervalo qualquer não-vazio `[t_1,t_2]`
-
-.. math::
-   \dfrac{f(t_2)-f(t_1)}{t_2-t_1}=\dfrac{2t_2+1-(2t_1+1)}{t_2-t_1}=\dfrac{2(t_2-t_1)}{t_2-t_1}=2.
-
-Vemos que aqui também a taxa de variação média não depende do intervalo considerado e que o valor da taxa coincide com a taxa de variação média da função `d`.
-
-.. figure:: _resources/desloca_b.png
-   :width: 350pt
-   :align: center
+Na seção :ref:`sec_semelhanca_organizando1` do Capítulo de semelhança, encontramos a seguinte definição para *figuras semelhantes*:
 
 
 .. glossary:: 
 
-   Função Afim
-      Toda função real de variável real que pode ser representada na forma `f(x)=ax+b` é chamada de função afim. 
-   
-   O número `a` é a taxa de variação média de `f` e `b` é a medida do deslocamento vertical que se faz a partir da função linear `\ell(x)=ax` para se obter o gráfico de `f`.
+   Figuras semelhantes
+      Duas figuras `F` e `F'` são semelhantes quando existe uma correspondência biunívoca entre os pontos de uma e os pontos de outra, de forma que, para quaisquer pontos `X` e `Y` da figura `F` e seus correspondentes `X'` e `Y'` da figura `F'` tem-se que a razão `\dfrac{XY}{X'Y'}`   é constante.
 
-.. admonition:: Exemplo
-   
-   .. figure:: _resources/exemplo_afim1.png
-      :width: 350pt
-      :align: center
-   
-      Exemplos: `\ell(x)=2x`, `f(x)=2x+5` e `f(x)=2x-3`
-   
-   .. figure:: _resources/exemplo_afim2.png
-      :width: 350pt
-      :align: center
-   
-      Exemplos: `\ell(x)=-x`, `f(x)=-x-2` e `f(x)=-x+6`
+Apesar da linguagem um pouco diferente da que estamos usando neste capítulo, se analisarmos com cuidado podemos percerber que a noção de proporcionalidade está presente na definição de figuras semelhantes. Vamos traduzir! 
+
+Considere as seguintes grandezas: `\ell` representa os comprimentos de todos os possíveis segmentos na figura `F` e `\ell'` representa os comprimentos de todos os possíveis segmentos correspondentes na figura `F'`. 
+
+De acordo com a definição, se as figuras são semelhantes, então existe uma função `f` que relaciona as duas grandezas, isto é, `\ell'=f(\ell)` e existe um número real `a` tal que `\dfrac{\ell'}\ell = \dfrac{f(\ell)}\ell = a`. Portanto podemos dizer que, nesse caso, `f(\ell)=a\cdot\ell`, ou seja, que entre duas figuras semelhantes existe uma função linear que relaciona os comprimentos dos segmentos de reta contidos nas duas figuras. 
+
+Considere um retângulo `R`, de lados `3` e `1,5`.
+
+.. tikz:: Retângulo R
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only] 
+   \draw[thick,black,fill=primario] (0.,0.) -- (3.,0.) -- (3.,1.5) -- (0.,1.5) -- cycle;
+   \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+   \draw (0.,1.3) -- (0.2,1.3) -- (0.2,1.5) -- (0.,1.5); 
+   \draw (2.8,1.5) -- (2.8,1.3) -- (3.,1.3) -- (3.,1.5); 
+   \draw(3.,0.2) -- (2.8,0.2) -- (2.8,0.) -- (3.,0.);
+   \node[ponto]at(0,0){};
+   \node[ponto]at(3,0){};
+   \node[ponto]at(3,1.5){};
+   \node[ponto]at(0,1.5){};
+   \node[below ]at(0,0){$A$};
+   \node[below ]at(3,0){$B$};
+   \node[above ]at(3,1.5){$C$};
+   \node[above ]at(0,1.5){$D$};
+   \node[above]at(1.7,-.7){$ \overline{AB}=3$};
+   \node[right]at(3,.75){$ \overline{BC}=1.5$};
+
+Utilizando as ideias do texto anterior, responda as questões propostas.
+
+#. Observe o retângulo da figura a seguir e determine se ele é semelhante ou não ao retângulo `R`.
 
 
-**A inclinação de uma reta e a taxa de variação média**
+
+   .. tikz:: 
    
-.. figure:: _resources/1024px-Planalto_Palace_ramp_and_parlatorium.jpg
-   :width: 350pt
-   :align: center
-
-   Flickr: `Planalto (Presidential) Palace, Brasília, Brazil (8) <https://commons.wikimedia.org/w/index.php?curid=18864847>`_, CC BY 2.0, 
-   
-Em muitas construções, quando se deseja fazer o acesso entre dois espaços que estão em níveis diferentes, usa-se a rampa como recurso. A rampa é uma superfície, em geral plana, que liga dois níveis diferentes. Uma característica importante de uma rampa é a sua inclinação (ou declive). Rampas muito íngremes podem se tornar obstáculos intransponíveis para cadeirantes, por exemplo. Como medir, então, a inclinação de uma rampa? 
-A inclinação de uma rampa é o número obtido quando dividimos a altura (diferença entre os níveis) pelo deslocamento horizontal
-   
-.. .. math::
-
-   \text{inclinação}=\dfrac{\text{altura}}{\text{deslocamento horizontal}}
-   
-.. figure:: _resources/resized005.png
-   :width: 350pt
-   :align: center
-
-Uma rampa que tem o deslocamento horizontal muito menor que a altura, terá pela fórmula uma inclinação grande, enquanto uma rampa em que o deslocamento horizontal é bem maior que a altura, terá uma inclinação pequena. Rampas de inclinação pequena são as mais desejáveis. 
-
-A Associação Brasileira de Normas Técnicas (ABNT) tem normas para a construção de rampas (a NBR 9050:2015 que pode ser acessada `neste link <http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf>`_) que contém o seguinte artigo:
-
-.. figure:: _resources/rampa_abnt.png
-   :width: 450pt
-   :align: center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick,black,fill=primario] (0.,0.) -- (6.,0.) -- (6.,1) -- (0.,1.)-- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw (0.,.8) -- (0.2,.8) -- (0.2,1) -- (0.,1); 
+      \draw (5.8,1) -- (5.8,.8) -- (6.,.8) -- (6.,1); 
+      \draw(6.,0.2) -- (5.8,0.2) -- (5.8,0.) -- (6.,0.);
+      \node[ponto]at(0,0){};
+      \node[ponto]at(6,0){};
+      \node[ponto]at(6,1){};
+      \node[ponto]at(0,1){};
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(6,0){$B$};
+      \node[above ]at(6,1){$C$};
+      \node[above ]at(0,1){$D$};
+      \node[above]at(3,-.7){$\overline{AB}=6$};
+      \node[right]at(6,.5){$\overline{BC}=1.5$}; 
       
-Por exemplo, para uma rampa ter inclinação `5% (1:20)` ela precisa de `20` metros de deslocamento horizontal para cada metro de subida, ou dito de outra forma, para cada metro de deslocamento horizontal, a rampa “sobe” `0,05` metros. Veja se as rampas ilustradas abaixo estão dentro das especificações da ABNT.
+
+#. Na figura a seguir temos a medida base de um retângulo em destaque, qual deve ser a medida de sua altura para que o retângulo gerado seja semelhante a `R`? Qual a função linear que relaciona esses dois retângulos?
+
+   .. tikz:: 
    
-.. table::
-   :widths: 1 2 2
-   :column-alignment: center center center
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \fill[bottom color=primario,top color =white] (0.,0.) -- (6.,0.) -- (6.,.5) -- (0.,.5) -- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw(6.,0.2) -- (5.8,0.2) -- (5.8,0.) -- (6.,0.);
+      \draw(0.,.5)--(0.,0.) -- (6.,0.) -- (6.,.5);
+      \node[ponto]at(0,0){};
+      \draw[fill](0,.6)circle(.5pt);
+      \draw[fill](0,.7)circle(.5pt);
+      \draw[fill](0,.8)circle(.5pt);
+      \node[ponto]at(6,0){};
+      \draw[fill](6,.6)circle(.5pt);
+      \draw[fill](6,.7)circle(.5pt);
+      \draw[fill](6,.8)circle(.5pt);
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(6,0){$B$};
+      \node[above ]at(6,1.5){$C$};
+      \node[above ]at(0,1.5){$D$};
+      \node[above]at(3,-.7){$\overline{AB}=6$};   
 
-+------------------------------+---------------------+---------------------+
-| `i=\dfrac{h}{c}\cdot 100 \%` | altura (h)          |deslocamento (c)     |
-+------------------------------+---------------------+---------------------+
-|Rampa 1                       | `0,85` m            | `13` m              |
-+------------------------------+---------------------+---------------------+
-|Rampa 2                       | `0,50` m            | `7` m              |
-+------------------------------+---------------------+---------------------+
-|Rampa 3                       | `1,20` m            | `24` m              |
-+------------------------------+---------------------+---------------------+
-|Rampa 4                       |  `1` m              |  `21` m             |
-+------------------------------+---------------------+---------------------+
+#. Seguindo a mesma ideia do item anterior, qual deve ser a medida da altura desse novo retângulo de base `5`, para que ele seja semelhante a `R`? E neste caso, qual a função linear entre os retângulos?
 
-Da mesma forma, a inclinação de uma reta é a medida do quão íngreme ela é em relação ao sistema de coordenadas onde ela está inserida. Dada uma reta em um plano cartesiano, para determinarmos sua inclinação basta fazer a divisão entre a variação das ordenadas e a variação das abscissas para quaisquer dois pontos da reta
+   .. tikz:: 
+
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \fill[bottom color=primario,top color =white] (0.,0.) -- (5.,0.) -- (5.,.5) -- (0.,.5) -- cycle;
+      \draw (0.2,0.) -- (0.2,0.2) -- (0.,0.2) -- (0.,0.); 
+      \draw(5.,0.2) -- (4.8,0.2) -- (4.8,0.) -- (5.,0.);
+      \draw(0.,.5)--(0.,0.) -- (5.,0.) -- (5.,.5);
+      \node[ponto]at(0,0){};
+      \draw[fill](0,.6)circle(.5pt);
+      \draw[fill](0,.7)circle(.5pt);
+      \draw[fill](0,.8)circle(.5pt);
+      \node[ponto]at(5,0){};
+      \draw[fill](5,.6)circle(.5pt);
+      \draw[fill](5,.7)circle(.5pt);
+      \draw[fill](5,.8)circle(.5pt);
+      \node[below ]at(0,0){$A$};
+      \node[below ]at(5,0){$B$};
+      \node[above ]at(5,1.5){$C$};
+      \node[above ]at(0,1.5){$D$};
+      \node[above]at(2.5,-.7){$\overline{AB}=5$};
    
-.. math::
 
-   \text{inclinação}=\dfrac{y_2-y_1}{x_2-x_1}
+#. Já na figura a seguir, apresentamos um retângulo de altura `4`, qual deve ser a medida da base desse novo retângulo, para que ele seja semelhante a `R`?
 
-.. _fig-inclina:
+.. tikz::
 
-.. figure:: _resources/inclinacao.png
-   :width: 350pt
-   :align: center
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \fill[left color = white, right color =primario,] (2.,0.) -- (3.,0.) -- (3.,2.5) -- (2.,2.5) -- cycle;
+   \draw[thick] (2.,0.) -- (3.,0.) -- (3.,2.5) -- (2.,2.5) ;
+   \draw (2.8,2.5) -- (2.8,2.3) -- (3.,2.3) -- (3.,2.5); 
+   \draw(3.,0.2) -- (2.8,0.2) -- (2.8,0.) -- (3.,0.);
+   \node[ponto]at(0,0){};
+   \node[ponto]at(3,0){};
+   \node[ponto]at(3,2.5){};
+   \node[ponto]at(0,2.5){};
+   \node[below ]at(0,0){$A$};
+   \node[below ]at(3,0){$B$};
+   \node[above ]at(3,2.5){$C$};
+   \node[above ]at(0,2.5){$D$};
+   \node[right]at(3,1.25){$\overline{BC}=4$};
+   \draw[fill](1.7,0)circle(.5pt);
+   \draw[fill](1.8,0)circle(.5pt);
+   \draw[fill](1.9,0)circle(.5pt);
+   \draw[fill](1.7,2.5)circle(.5pt);
+   \draw[fill](1.8,2.5)circle(.5pt);
+   \draw[fill](1.9,2.5)circle(.5pt);
 
-   Inclinação de uma reta
+#. Na figura a seguir, apresentamos um retângulo cuja base tem a mesma medida da base de `R` (igual a `3`), e cuja altura coincide com a de um triângulo equilátero de lado medindo `3`. Esse retângulo é semelhante a `R`?
 
-Por exemplo, a reta que contém os pontos `(1,2)` e `(5,7)` tem inclinação `\dfrac{7-2}{5-1}=\dfrac 54`, enquanto a reta que contém os pontos `(-1,3)` e `(2,-6)` tem inclinação `\dfrac{-6-3}{2-(-1)}=\dfrac{-9}{3}=-3`.
 
-.. _fig-inclina-1:
-
-.. figure:: _resources/inclinacao_ex1.png
-   :width: 350pt
-   :align: center
-
-   Inclinação da reta que contém os pontos `(1,2)` e `(5,7)`
-
-.. _fig-inclina-2:
-
-.. figure:: _resources/inclinacao_ex2.png
-   :width: 350pt
-   :align: center
-
-   Inclinação da reta que contém os pontos `(-1,3)` e `(2,-6)`
+   .. tikz::
    
-Se considerarmos uma reta no plano e a função afim `f` que a tem como gráfico, a inclinação da reta coincide com a taxa de variação da função `f`. 
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[fill=primario,very thick](0,0)--(4,0)--(4,3.46)--(0,3.46)--cycle;
+      \draw[fill=terciario,very thick](0,0)--(4,0)--(2,3.46)--cycle;
+      \node[ponto]at(0,0){};
+      \node[ponto]at(4,0){};
+      \node[ponto]at(4,3.46){};
+      \node[ponto]at(0,3.46){};
+      \node[ponto]at(2,3.46){};
+      \node[below]at(0,0){$A$};
+      \node[below]at(4,0){$B$};
+      \node[above]at(4,3.46){$C$};
+      \node[above]at(0,3.46){$D$};
+      \node[above]at(2,3.46){$P$};
+      \node[above]at(2,-1.2){$\overline{AB}=\overline{AP}=\overline{PB}=3$};
+      
 
-Por exemplo, a reta da :ref:`fig-inclina-2` acima é o gráfico da função afim `f(x)=\dfrac 54 x +b`. Para determinarmos o valor de `b`, basta substituirmos um dos pontos que estão sobre a reta. Como `(1,2)` pertence ao gráfico de `f`, podemos afirmar que `f(1)=2`, logo
 
-.. math::
+#. Se utlizarmos a altura do retângulo da figura anterior na construção de um novo retângulo, qual deve ser a medida de sua base para que seja semelhante a `R`?
 
-   2=\dfrac 54 \cdot 1 + b \Longrightarrow b=2-\dfrac 54 = \dfrac 34
+.. admonition:: Resposta 
 
-Isto é, a função `f` é dada pela expressão `f(x)=\dfrac 54 x + \dfrac 34`. 
+   #. Não, pois a medida da base dobrou e a altura se manteve.
 
-Já a reta da :ref:`fig-inclina-2` tem expressão `f(x)=-3x`.
+   #. `3` , pois se a medida da base dobrou a altura deve dobrar `1,5 \cdot 2 = 3`. Os retângulos se relacionam por meio da função linear `f(x)=2 \cdot x`.
 
-Retas horizontais não possuem inclinação, de fato não há deslocamento vertical quando nos deslocamos horizontalmente sobre a reta, ou seja, sua inclinação será igual a zero.
-   
-   
-.. admonition:: Para o professor
+   #. `2,5`, pois em todos os retângulos a razão de semelhança, entre a base e a altura é de `\frac{1}{2}`, portando a altura deve ser a metade da base. Neste caso os retângulos se relacionam por meio da função linear `f(x)=\dfrac{5}{3} \cdot x`.
 
-   .. figure:: _resources/codigo3_3.png
-      :width: 100pt
-      :align: center
+   #. `8`, pelo mesmo motivo citado anteriormente, a base deve ser o dobro a altura.
 
-   Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/NFAmT23H>. Nela os estudantes poderão experimentar dinamicamente propriedades de crescimento, decrescimento e interseção com os eixos coordenados associadas à função afim `f(x)=ax+b`, em que `a` e `b` variam no intervalo `[-5,5]`.
-   
-*****************************
-Explorando: domínio discretos
-*****************************
+   #. Não, pois a razão entre base e altura não é de `\frac{1}{2}`.
 
-Atividade: Plantas companheiras
+   #. `3\sqrt{3}`, pois a altura de um triângulo equilátero de lado `3` é `\frac{3\sqrt{3}}{2}`, ao assumir essa medida como altura do retângulo, sua base deve ser o dobro dessa medida.
+
+
+.. _ativ-qual-area:
+
+Atividade: qual é a área?
 ------------------------------
 
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
-
-   * Identificar a expressão algébrica que expressa a regularidade observada na sequências apresentada na figura.
-
-   * Reconhecer uma relação de proporcionalidade entre grandezas (no caso: quantidade de plantas companheiras `(\diamondsuit)` e o número que representa o tipo de modelo).
-
-   * Identificar que uma relação entre grandezas não é de proporcionalidade (no caso: quantidade de vegetais `(●)` e o número que representa o tipo de modelo).
-
-   * Identificar funções de domínio discreto e observar a implicação na representação gráfica.
-
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
-
-   * A atividade aborda assuntos relacionados a dois temas transversais, tais como Meio Ambiente, Saúde e sustentabilidade. Sugerimos que procure fazer um trabalho colaborativo com os professores de Biologia e de Geografia para ampliar a discussão com os alunos sobre os benefícios de uma alimentação orgânica e sobre as questões de viabilidade econômica e de sustentabilidade de tal tipo de cultura.
    
-   * Nesta atividade o estudante deve identificar que o domínio de ambas as funções é um conjunto discreto e que esse fato tem implicações no gráfico das funções, que serão conjuntos de pontos colineares, mas não serão retas.
+   * Em um círculo dado, reconhecer a relação de dependência entre a medida do ângulo central e a medida da área do setor circular.
+   
+   * Inferir que a medida da área do setor é diretamente proporcional a medida do ângulo central.
+   
+   * Determinar a medida da área do setor circular dada a medida do ângulo central e vice-versa.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nos dois primeiros itens procure incentivar os alunos a resolver o problema utilizando apenas processos mentais, ou ao menos na hora de discutir a solução, utilize argumentações que valorizem a estimativa, tais como:
+   
+   #. Como `\dfrac{1}{4}` de `20` é `5`, e `14` é um valor um pouco menor que `\dfrac{3}{4}` de `20` então o setor circular de área `14` tem que ser menor do que `\dfrac{3}{4}` do círculo.
+   #. Ao analisar as opções descartamos a opção "b" por ser uma região menor que `\dfrac{3}{4}` da área do círculo, descartamos também a opção "c" por se tratar de um valor entre `15` e `20` mais próximo de `15`, logo a resposta correta está representada pela opção "a".
+   
+   * Nos itens `3` e `4`, discuta com a turma a importância de ter sido apresentado a medida do ângulo.
+   
+   * Sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/Xjjym4e7>`_, que é a versão eletrônica dessa atividade.
 
-   * Ainda neste ano de escolaridade boa parte dos alunos terão dificuldades de identificar a expressão algébrica que expressa a relação entre as grandezas apresentadas na figura, caso essa dificuldade atrapalhe o andamento da atividade, sugerimos que o professor intervenha exibindo exemplos mais simples do mesmo assunto como por exemplo:
-
-   .. figure:: _resources/plantas_companheiras.jpeg
+   .. figure:: _resources/codigo.png
+      :width: 100pt
+      :align: center
+   .. figure:: _resources/ativ1_2.*
       :width: 400pt
       :align: center
 
-   * Aproveite para comentar com os alunos que as funções `C(n)` e `T(n)` , descrita nos itens e) e n) são funções quadráticas com domínio discreto, e que esse será o assunto de um capítulo envolvendo funções.
-
-No cultivo de produtos orgânicos, é comum o plantio de Plantas Companheiras.
-"Plantas Companheiras são plantas pertencentes a espécies ou famílias que se ajudam e complementam mutuamente, não apenas na ocupação do espaço e utilização de água, luz e nutrientes, mas também por meio de interações bioquímicas chamadas de Efeitos Alelopáticos. Estes podem ser tanto de natureza estimuladora quanto inibidora, não somente entre plantas, mas também em relação a insetos e outros animais."
-Disponível `neste link <https://permacoletivo.files.wordpress.com/2008/06/manual-horta-organica-domestica.pdf>`_ - *Acesso em 25/11/2017*
- 
-Uma empresa especializada em consultoria e plantio de produtos orgânicos apresenta alguns modelos de plantio de um determinado vegetal, representado na figura a seguir por `(●)` e sua respectiva planta companheira, representada por `(\diamondsuit)`, cada modelo é adequado para o tamanho do plantio e tem como objetivo criar uma barreira natural contra pragas, observe a figura a seguir que apresenta os modelos de plantio, identificados sequencialmente por Modelo 1, Modelo 2, Modelo 3, ... , Modelo `n`.
+`1.` Cada círculo representado a seguir tem área total `20`. Um dos setores circulares destacados em amarelo nesses círculos tem área `14`. Qual é esse setor?
 
 
-.. _fig-coloque-aqui-o-nome:
+.. _fig-setor1:
 
-.. figure:: _resources/plantio.jpeg
-   :width: 400pt
-   :align: center
+.. tikz::
 
-#. Preencha o quadro a seguir, que nos informa a quantidade de cada tipo de planta em cada um dos modelos.
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(210:1) arc (210:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(250:1) arc (250:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(270:1) arc (270:0:1);\node at((-1,1){(c)}; \\};
 
-   .. table:: 
-      :widths: 1 3 3
-      :column-alignment: center center center
-      
-   +--------+---------------------------+--------------------------------------+
-   | Modelo |   Qtde. de vegetais (●)   |    Qtde. de plantas `(\diamondsuit)` |
-   +--------+---------------------------+--------------------------------------+
-   |    1   |             1             |                   4                  |
-   +--------+---------------------------+--------------------------------------+
-   |    2   |             4             |                   8                  |
-   +--------+---------------------------+--------------------------------------+
-   |    3   |             9             |                  12                  |
-   +--------+---------------------------+--------------------------------------+
-   |    4   |             16            |                  16                  |
-   +--------+---------------------------+--------------------------------------+
-   |    5   |                           |                                      |
-   +--------+---------------------------+--------------------------------------+
-   |    6   |                           |                                      |
-   +--------+---------------------------+--------------------------------------+
-   |    7   |                           |                                      |
-   +--------+---------------------------+--------------------------------------+
+`2.` Agora, um dos setores circulares em amarelo tem área `18`. Qual é esse setor?
 
-#. Descreva textualmente qual a relação entre a quantidade de vegetais `(●)` e o número `n` que identifica o modelo na sequência.
+.. _fig-setor2:
 
-#. Descreva textualmente qual a relação entre a quantidade de plantas companheiras `(\diamondsuit)` e o número `n` que identifica o modelo na sequência.
+.. tikz::
 
-#. Exiba uma expressão algébrica que relacione a quantidade `V` de vegetais `(●)` em função do número `n` que identifica do `n`-ésimo modelo na sequência.
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(330:1) arc (330:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(250:1) arc (250:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(300:1) arc (300:0:1);\node at((-1,1){(c)}; \\};
+   
 
-#. Exiba uma expressão algébrica que relacione a quantidade `C` de plantas companheiras `(\diamondsuit)` em função do número `n` do `n`-ésimo modelo na sequência.
 
-#. A expressão algébrica descrita no item e) pode ser associada a uma função linear que relaciona a ordem `n` do modelo e a quantidade de plantas companheiras `(\diamondsuit)`? 
+`3.` Explique a estratégia matemática que você utilizou para resolver os itens anteriores? Dentre os setores circulares apresentados a seguir, um deles tem área `7`. Aplique sua estratégia para determinar qual é esse setor.
 
-#. Se a resposta anterior for afirmativa, exiba o domínio dessa função.
 
-#. No plano cartesiano a seguir estão representados os pares ordenados `(n,V(n))` em que `n` é “número” `n` que representa o `n`-ésimo modelo e `V(n)` a quantidade `V` de vegetais `(●)`. Represente nele os pontos que correspondem aos pares ordenados `(n,C(n))` em que `C(n)` é a quantidade `C` de plantas companheiras `(◊)` em função de `n`.
+.. _fig-setor3:
 
-   .. figure:: _resources/grafico_plantas.jpeg
-      :width: 350pt
-      :align: center
+.. tikz::
 
-#. Qual a quantidade `C` de plantas companheiras `(\diamondsuit)` utilizadas no décimo modelo?
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(110:1) arc (110:0:1);\node at((-1,1){(a)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(126:1) arc (126:0:1);\node at((-1,1){(b)};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(142:1) arc (142:0:1);\node at((-1,1){(c)}; \\};
 
-#. Qual o valor de `n`, para um modelo que utilize `144` plantas companheiras `(\diamondsuit)`?
+`4.` Possivelvemente você encontrou alguma dificuldade para determinar a resposta correta no item anterior. Que tal acrescentarmos uma informação a mais para ajudar na decisão?
 
-#. Qual a quantidade a quantidade `V` de vegetais `(●)` no décimo modelo?
 
-#. Qual o valor de `n`, para um modelo que utilize `144` vegetais `(●)`?
+.. _fig-setor4:
 
-#. A relação entre as grandezas: quantidade `V` de vegetais `(●)` e  o número `n` do `n`-ésimo modelo, é proporcional? Justifique sua resposta.
+.. tikz::
 
-#. Exiba uma expressão algébrica que relacione a quantidade total `T` de plantas companheiras e vegetais em função, do número `n` do n-ésimo modelo. A expressão representada é uma função afim? Justifique sua resposta.
- 
-#. Explique textualmente, o motivo que impossibilita que o gráfico de cada uma das funções abordadas seja uma reta ou um segmento de reta, e sim um conjunto de pontos colineares que não chegam a compor uma reta nem um segmento de reta. 
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(110:1) arc (110:0:1);\node at((-1,1){(a)}; \draw[atento] (.2,0) arc (0:110:.2);\node at(.4,.3){\tiny $ 110^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(126:1) arc (126:0:1);\node at((-1,1){(b)};\draw[atento] (.2,0) arc (0:126:.2);\node at(.4,.3){\tiny $ 126^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(142:1) arc (142:0:1);\node at((-1,1){(c)};\draw[atento] (.2,0) arc (0:142:.2);\node at(.4,.3){\tiny $ 142^\circ$}; \\};
+   
+
+`5.` E agora? Como você usou a medida do ângulo que determina o setor circular para ajudar no cálculo da área? Vamos fazer mais uma vez! Um dos setores apresentados a seguir tem área `4`. Determine esse setor.
+
+`6.` Determine a função que relaciona a área do setor circular com o seu ângulo central, especificando seu domínio.
+
+
+.. _fig-setor5:
+
+.. tikz::
+
+   \node [matrix, column sep =.5cm] at (0,0)   {\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(72:1) arc (72:0:1);\node at((-1,1){(a)}; \draw[atento] (.2,0) arc (0:72:.2);\node at(.4,.2){\tiny $ 72^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(60:1) arc (60:0:1);\node at((-1,1){(b)};\draw[atento] (.2,0) arc (0:60:.2);\node at(.5,.2){\tiny $ 60^\circ$};&\draw(0,0)circle(1);\draw[fill=primario] (1,0)--(0,0) --(45:1) arc (45:0:1);\node at((-1,1){(c)};\draw[atento] (.2,0) arc (0:45:.2);\node at(.5,.2){\tiny $ 45^\circ$};\\};
+   
 
 
 .. admonition:: Resposta 
 
-   #.
-      .. table:: 
-         :widths: 1 3 3
-         :column-alignment: center center center
-
-      +--------+---------------------------+--------------------------------------+
-      |Modelo  |Quantidade de vegetais (●) |Quantidade de plantas `(\diamondsuit)`|
-      +--------+---------------------------+--------------------------------------+
-      |    1   |             1             |                   4                  |
-      +--------+---------------------------+--------------------------------------+
-      |    2   |             4             |                   8                  |
-      +--------+---------------------------+--------------------------------------+
-      |    3   |             9             |                  12                  |
-      +--------+---------------------------+--------------------------------------+
-      |    4   |             16            |                  16                  |
-      +--------+---------------------------+--------------------------------------+
-      |    5   |            25             |               20                     |
-      +--------+---------------------------+--------------------------------------+
-      |    6   |        36                 |            24                        |
-      +--------+---------------------------+--------------------------------------+
-      |    7   |         49                |             28                       |
-      +--------+---------------------------+--------------------------------------+
-
-   #. A quantidade de vegetais (●) é o quadrado do número `n` que identifica a ordem do modelo na sequência.
+   `1.` b)
    
-   #. A quantidade plantas companheiras (◊) é o quádruplo do número do modelo.
+   `2.` a)
    
-   #. `V(n)=n^2`.
+   `3.` Uma possível resposta seria: sendo a área total do círculo igual a `20`, então `\dfrac{1}{4}` do círculo equivale a uma área `5`. No entanto, como as áreas destacadas nos itens apresentados estão muito próximas esse critério não nos permite concluir com exatidão qual seria a resposta correta, que no caso é o item b).
    
-   #. `C(n)=4n`.
+   `4.` b)
    
-   #. Sim. Pois existe um número real `k` tal que `C(n)=k.n`. Esse número `k` é `4`. Portanto, `C(n)=4.n`.
+   `5.` Fazendo uma regra de três. item a).
    
-   #. `Dom(C)=\{1,2,3,4,5,6,7,...\}`.
+   `6.` `S: [0, 360] \to \mathbb{R}` em que `S(x)= \dfrac{x}{18}`.
+
+
+
+
+.. admonition:: Para refletir
+
+   Em uma circunferência, podemos relacionar a área `A` e o raio `r` por meio da função `A(r)=\pi r^2`. Aumentando o raio da circunferência, sua área também aumenta. Isso nos indica que a função `A` é crescente. Reflita um pouco e responda: Essa função é linear? Ou seja, a área de um círculo é proporcional ao seu raio? 
    
-   #.
+   Pense no seguinte caso: A área de um círculo de raio `2r` é igual ao dobro da área de um círculo de raio `r`? Ou ainda, é possível encontrar um número real (fixo) tal que `A(r)=k\cdot r`?
 
-      .. figure:: _resources/sol_plant.jpeg
-         :width: 350pt
-         :align: center
-
-   #. `C(10)=40`.
+   .. tikz::
    
-   #. `n=36`.
-   
-   #. `V(10)=100`.
-   
-   #. `n=12`.
-   
-   #. Não, pois não existe um `k` real, tal que `V(n)=k.n`.
-   
-   #. `T(n)=n^2+4n`. A função `T(n)` não é uma função afim pois sua taxa de variação não é constante. Note que  `\frac{12-5}{2-1}=7` e `\frac{21-12}{3-2}=9` são diferentes.
-   
-   #. Observe que os domínios das três funções, `V`, `C` e `T`, é o mesmo: o conjunto dos números naturais. Cada número natural corresponde à ordem que identifica sequencialmente o modelo . Como não cabe ter o modelo `1,5` ou `9,56`, por exemplo, não haverá `V(1,5)`, `C(9,56)` , nem `T(3,14)`. Portanto, os pontos dos gráficos dessas funções serão colineares mas não comporão uma reta nem um segmento de reta, estarão "separados", "espaçados".
-   
-********
-Organizando as ideias: progressões aritméticas
-********
-
-Sequências de número reais (finitas ou infinitas), como da quantidade de plantas Companheiras (◊) nos modelos descritos na atividade anterior `(4, 8, 12, 16,...)`, em que a diferença entre termos consecutivos é constante são chamadas de progressões aritméticas, ou de forma abreviada, P.A.
-
-Se representarmos os pontos de uma progressão aritmética na reta real, eles ficarão todos igualmente distribuídos. 
-
-No caso das plantas companheiras, a diferença entre dois termos consecutivos quaisquer é `4`. Em geral, em uma P.A. a diferença entre os termos consecutivos se chama razão da progressão aritmética. Se a razão é um número positivo, a P.A. é crescente e se for negativo, a sequência é decrescente.
-
-Podemos representar os termos de uma progressão aritmética que começa com `b` e tem razão `r` da seguinte maneira:
-
-$$(b, b+r, b+2r, b+3r, ... )$$
-
-Note que cada termo, com exceção do primeiro, é obtido a partir do anterior somando-se uma mesma quantidade, que é chamada razão da P.A. Assim, o segundo termo é o primeiro mais a razão. O vigésimo é o décimo nono mais a razão.
-
-Observe os exemplos de sequênias numéricas a seguir. Determine quais dessas sequências são progressões aritméticas e, nesses casos, identifique o prmeiro termo e a razão.
-
-#. `(-5, - 2, 1, 4, 7)`
-#. `\left(\pi, \dfrac{\pi}2, 0, -\dfrac{\pi}2, -\pi, -\dfrac{3\pi}2\right)`
-#. `(3, 9, 27, 81, ...)`
-
-Considere a função afim `f(x)=2x+1` e determine a sequência das imagens de todos os números inteiros positivos `(f(0), f(1), f(2), ... , f(n), ...)`. Essa sequência é uma progressão aritmética? Para verificar esse fato precisaremos fazer a diferença entre dois termos consecutivos quaisquer dessa sequência:
-
-.. math::
-
-   f(n)-f(n-1)=2n+1-[2(n-1)+1]=2n+1-[2n-2+1]=2
-
-Como a resposta 2 que obtivemos acima não depende do número `n` podemos concluir que ele é a razão da sequência e que, portanto, trata-se de uma P.A. 
-
-
-.. _fig-pa-afim:
-
-.. figure:: _resources/pa_afim.png
-   :width: 300pt
-   :align: center
-
-Vamos agora generalizar essa ideia:
-
-Consideremos uma função afim `f(x)=ax+b` e a sequência `(f(0), f(1), f(2), ... , f(n), ...)=(b, b+a,b+2a,... , b+na, ...)`. Pela expressão que obtivemos acima, podemos já conjecturar que a sequência é uma P.A. cujo primeiro termo é `b` e a razão é `a`. De fato, fazendo a diferença entre `f(n)` e `f(n-1)` temos
-
-.. math::
-
-   f(n)-f(n-1)=an+b-[a(n-1)+b]=an+b-[an-a+b]=a,
-
-e isto comprova a conjectura.
-
-Considere agora uma P.A. cujo primeiro termo é -7 e a razão é 4, isto é,  `(-7,-3,1,5,...)`. Podemos pensar nessa progressão como sendo
-$$(-7, - 7+4, - 7+4.2, - 7+4.3, ... , - 7+4.n, ...)$$
-
-Assim, a P.A. é a imagem dos inteiros positivos pela função afim `f(x)=4x-7`.
-De maneira geral, dada uma progressão aritmética de primeiro termo `b` e razão `r`, `(b, b+r, b+2r, ...)` ela é a sequência das imagens dos inteiros positivos pela função afim `f(x)=rx+b`.
-
-.. table::
-   :widths: 3 3
-   :column-alignment: left center
-
-+----------------------------+--------------------------------------------+
-| Progressão Aritmética      | Função Afim                                |
-+============================+============================================+
-| `(b, b+r, b+2r, b+3r,...)` | `f(n)=rn+b`  com domínio `\{0,1,2,3,...\}` |
-+----------------------------+--------------------------------------------+
-| `b` - primeiro termo       | `b=f(0)`                                   |
-+----------------------------+--------------------------------------------+
-| `r` - razão                |  `r` - taxa de variação                    |
-+----------------------------+--------------------------------------------+
-
-Observe no quadro a seguir as progressões aritméticas e as funções afins correspondentes
-
-.. table::
-   :widths: 1 3 3
-   :column-alignment: left center center
-
-+--------------------------------------------------------------------+-----------------------------+-------------------+
-| Progressão Aritmética                                              | Função Afim                 | Domínio           |
-+====================================================================+=============================+===================+
-| `(-5,-2,1,4,7)`                                                    | `f(n)=3n-5`                 | `\{0,1,2,3,4,5\}` |
-+--------------------------------------------------------------------+-----------------------------+-------------------+
-|`\left(\pi,\dfrac{\pi}2,0,-\dfrac{\pi}2,-\pi,-\dfrac{3\pi}2\right)` | `f(n)=-\dfrac{\pi}{2} n+\pi`| `\{0,1,2,3,4,5\}` |
-+--------------------------------------------------------------------+-----------------------------+-------------------+
-| `(90,82,74,66,58,50)`                                              | `f(n)=-8n+90`               | `\{0,1,2,3,4,5\}` |
-+--------------------------------------------------------------------+-----------------------------+-------------------+
-| `\left(\dfrac 32, \dfrac 74, 2, \dfrac 94\right)`                  | `f(n)=\dfrac n4+\dfrac 32`  | `\{0,1,2,3\}`     |
-+--------------------------------------------------------------------+-----------------------------+-------------------+
-
-
-
+      \fill[primario](-2,0)circle(2cm);
+      \node[right]at(0.2,0){\Huge =};
+      \fill[primario](2,0)circle(1cm);
+      \node[right]at(3.2,0){\Huge +};
+      \fill[primario](5,0)circle(1cm);
+      \node[right]at(6.2,0){\Huge ?};
+      \draw(-2,0)--+(50:2);
+      \node[left]at(-1.4,.8){$2r$};
+      \draw(2,0)--+(50:1);
+      \node[left]at(2.4,.5){$r$};
+      \draw(5,0)--+(50:1);
+      \node[left]at(5.4,.5){$r$};      
+      
