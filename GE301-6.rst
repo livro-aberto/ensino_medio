@@ -1,0 +1,456 @@
+
+************
+Praticando 3
+************
+
+.. _ativ-proj-perspectiva-em-perspectiva:
+
+Atividade: perspectiva em perspectiva
+-------------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** analisar e identificar as implicações de desenhos relacionados com projeções em perspectiva.
+   
+   **Observação e recomendação:** o diagrama 3D na :numref:`fig-proj-diagrama-de-setores-01` está disponível como uma construção interativa no GeoGebra: <https://www.geogebra.org/m/yFJXfXq2>. É importante observar para os alunos que, por conta das distorções das projeções em perspectiva, diagramas 3D estáticos podem ser interpretados de forma equivocada! Neste caso, um diagrama 2D é preferível.
+
+
+#. Com o objetivo de alertar as pessoas sobre as inconsistências que podem ocorrer caso um desenho seja feito sem o conhecimento das propriedades das projeções em perspectiva, o pintor (e também cartunista, crítico social e satirista) inglês William Hogarth FRSA (1697-1764) produziu uma gravura intitulada "Sátira sobre a Falsa Perspectiva" a qual apresenta alguns exemplos intencionais de efeitos confusos e equívocos de perspectiva. Tente identificar esses elementos estranhos na gravura!
+
+   .. https://commons.wikimedia.org/wiki/File:Hogarth-satire-on-false-pespective-1753.jpg
+   
+   .. figure:: _resources/perspectiva-em-perspectiva-01.jpg
+   
+   .. Lhaylla, dê uma olhada aqui: http://www.magicalmaths.org/can-you-spot-the-22-things-wrong-with-this-false-perspective-picture-great-image/
+   
+#. Muitas pessoas gostam de fazer diagramas estatísticos em 3D, como na figura a seguir.   
+
+   .. _fig-proj-diagrama-de-setores-01:
+
+   .. figure:: _resources/perspectiva-diagrama-de-setores-01.jpg
+      :width: 250 pt
+      
+      Diagrama de setores 3D.
+   
+      
+   
+   * Segundo este diagrama, qual item é mais frequente? A ou C? B ou D?
+   
+   * O diagrama foi construído com as seguintes frequências relativas: Item A com `11\%`, Item B com `42\%`, Item C com `5\%` e Item D com `42\%`. Construa, com estes dados, uma versão 2D do diagrama de setores da :numref:`fig-proj-diagrama-de-setores-01`. Com este diagrama 2D, qual item é mais frequente? A ou C? B ou D?
+   
+#. Por que a imagem abaixo não pode ser uma projeção em perspectiva de dois blocos, isto é, dois paralelepípedos retos retângulos?
+
+   .. figure:: _resources/perspectiva-em-perspectiva-05.jpg
+      :width: 450pt
+   
+#. ([Grunbaum-1985]_) A sociedade profissional americana *Mathematical Association of America* (MAA) tem como emblema um icosaedro regular. A imagem a seguir exibe o emblema na capa de uma edição de 1984 da revista *Mathematics Magazine* publicada pela MAA. O matemático Branko Grunbaum percebeu que o icosaedro da imagem não pode ser nem uma projeção em perspectiva e nem uma projeção paralela de um icosaedro regular. Por quê? Dica: tente analisar os elementos que são paralelos em um icosaedro regular tridimensional e como estes elementos estão projetados na imagem.
+
+   .. figure:: _resources/perspectiva-em-perspectiva-04.jpg
+      :width: 250pt
+   
+      Emblema  capa de uma edição de 1984 da revista *Mathematics Magazine* publicada pela Mathematics Association of America.  
+      
+.. admonition:: Resposta
+
+   #. A seguir, listaremos alguns dos erros visíveis da gravura, sendo que outros ainda podem ser detectados:
+
+      * O homem de pé no canto direito da tela está segurando uma vara de pescar cujo anzol passa pelo outro homem que está pescando na margem do rio.  
+      * A flâmula está presa alinhadamente em dois prédios distintos de uma maneira que não condiz com a realidade.
+      * A flâmula está sobreposta por duas árvores que estão plantadas no morro que fica atrás dos prédios.
+      * O homem que está bem no alto do morro, tem acesso a uma pessoa que está na janela do prédio.
+      * É possível visualizar duas portas da igreja que estão posicionadas em direções perpendiculares.
+      * Os tamanhos dos animais crescem a medida que eles se afastam no horizonte.
+      * O telhado do prédio que contém uma pessoa na janela pode ser visto, embora a cena esteja numa perspectiva de baixo para cima.
+   
+   #. 
+      * Com as informações obtidas no diagrama de setores 3D não é possível identificar qual é mais frequente entre A ou C, e entre B ou D.
+      * Dadas as porcentagens de cada item, fica claro que o diagrama apresentado na figura acima realmente não representa a real situação de frequência dos itens A, B, C, e D. Veja a versão 2D do diagrama na :numref:`fig-proj-graficosetores-sol`. Esta imagem foi gerada na construção interativa feita no Geogebra e disponível em <https://www.geogebra.org/m/yFJXfXq2>.
+
+      .. _fig-proj-graficosetores-sol:
+
+      .. figure:: _resources/GraficoSetor2D.png
+         :width: 200pt
+
+         Diagrama de setores 2D.
+
+      Pela versão 2D do diagrama, conseguimos determinar que o item A é o mais frequente entre A e C, e B é o item mais frequente entre B e D. 
+
+   #. As projeções das bases dos dois paralelepípedos não são paralelas e congruentes, logo a imagem não representa a projeção perspectiva dos dois blocos.
+
+   #. Observe na figura a seguir que as retas desenhadas em vermelho sobre o icosaedro regular são paralelas. Se a imagem tivesse sido feita em projeção paralela, todas as três retas vermelhas deveriam ser paralelas. Como não são, a imagem não é uma projeção paralela do icosaedro.  Se a imagem tivesse sido feita em projeção perspectiva, todas as três retas vermelhas deveriam se encontrar em um único ponto, o centro de projeção. Como isto também não acontece, a imagem não é uma projeção perspectiva do icosaedro. Sendo assim, o emblema da Mathematical Association of America não foi feito em projeção paralela nem perspectiva.
+
+      .. _fig-proj-emblemaMAA-sol:
+
+      .. figure:: _resources/emblemaMMA_retasparalelas.png
+         :width: 200pt
+
+         Retas paralelas sobre um icosaedro regular.
+   
+   
+.. _ativ-proj-distratores:
+
+Atividade: estudos de Simplício
+-------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** julgar situações com foco nos distratores (retas que não são concorrentes mas cujas projeções o são,  pontos que não são colineares mas cujas projeções o são, distorções de comprimento e ângulo).
+   
+   **Observações e recomendações:** as construções interativas feitas com o GeoGebra estão disponíveis nos endereços
+   <https://www.geogebra.org/m/aGaRUudY>,
+   <https://www.geogebra.org/m/jNFQMfhH>,
+   <https://www.geogebra.org/m/C4GQJnVk> e 
+   <https://www.geogebra.org/m/bd5f8KTg>.
+
+#. Simplício está estudando Geometria Espacial em um livro e se depara com a figura a seguir. 
+
+            .. _fig-proj-distratores-1:
+
+            .. figure:: _resources/perspectiva-distratores-01_1.jpg
+
+
+   O livro diz que `ABCDEFGH` é uma projeção em perspectiva de um cubo e pergunta quantos pontos de interseção existem entre as retas `BD` e `EG`. Simplício responde: "Pergunta fácil! Existe um único ponto de interseção entre `GD` e `EG`. Este ponto `P` aqui, como podemos ver claramente!".
+
+                  .. _fig-proj-distratores-2:
+                  
+                  .. figure:: _resources/perspectiva-distratores-02_1.jpg
+
+
+   Você concorda com a resposta de Simplício? Por que sim? Por que não?
+
+#. (Adaptado de [Lellis-2009]_) Na figura a seguir `ABCDEFGH` é uma projeção paralela de um cubo. Qual ponto está mais próximo da reta `r = FG`? O ponto `P`, o ponto `C` ou o ponto `Q`?
+
+   .. _fig-proj-distratores-3:
+
+   .. figure:: _resources/perspectiva-distratores-03.jpg
+
+#. (Adaptado de [Volkert-2008]_) Eis outra pergunta do livro de Geometria Espacial que Simplício está estudando: "Existem três pontos distintos, cada um em arestas distintas de um cubo e que sejam colineares?".
+
+            .. figure:: _resources/perspectiva-ambiguidade-01_1.jpg
+               :width: 125pt
+
+   Simplício pensa: "Existem sim! Eu construo o ponto médio `M` da aresta `AB` e o ponto médio `N` da aresta `FG`. Trançando o segmento `DN`, vejo que ele passa por `M`. Pronto: os pontos `D`, `M` e `N` são distintos, cada um está em uma aresta diferente e eles são colineares!".
+   
+                  .. figure:: _resources/perspectiva-ambiguidade-02_1.jpg
+                     :width: 125pt
+   
+
+
+   Você concorda com a resposta de Simplício? Por que sim? Por que não?   
+   
+#. (Adaptado de [Fujita-et-al-2017]_) No seu livro de Geometria Espacial, Simplício lê o enunciado de uma questão: "Na figura a seguir, `ABCDEFGH` é um cubo, `M` é ponto médio da aresta `AE` e `N` é ponto médio da aresta `CG`. O ângulo `MFN` é reto? Justifique sua resposta!".   
+
+            .. figure:: _resources/perspectiva-angulo-01.jpg
+               :width: 150pt
+
+   Simplício dá como resposta "Sim, o ângulo `MFN` é reto!" e dá como justificativa "O quadrilátero `DMFN` é um quadrado, pois `DM = MF = FN = ND` e, sendo um quadrado, seus ângulos internos são todos retos!".
+
+   * A justificativa de Simplício está correta? Justifique sua resposta!
+
+   * A resposta de Simplício está correta? Justifique sua resposta.
+   
+
+.. admonition:: Resposta
+
+   #. Não. As retas `BD` e `EG` estão contidas em faces opostas do cubo, portanto elas não se encontram. Veja a figura abaixo.
+
+      .. figure:: _resources/Distrator_a.png
+         :width: 160pt
+         
+      Utilize a construção interativa disponível em <https://www.geogebra.org/m/aGaRUudY> para visualizar melhor a situação.      
+
+   #. Primeiramente, repare que os pontos `P, C` e `Q` estão contidos no plano da face `CDHG` que é perpendicular à reta `r`. Além disso, `r` intersecta tal plano em `G`, o que implica que o ponto (entre `P, C` e `Q`) mais próximo de `r` será também o ponto mais próximo de `G`. Observe a figura abaixo.
+   
+      .. figure:: _resources/Distrator_b.png
+         :width: 200pt
+
+      Observe que `CG` é perpendicular à reta `r`, logo a distância de `C` à reta `r` é dada pelo comprimento do segmento de reta `CG`. `PCG` é um triângulo retângulo onde `PG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `PG` é maior que o comprimento de `CG`. `QCG` é também um triângulo retângulo onde `QG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `QG` é maior que o comprimento de `CG`. Assim, `CG` é menor que `PG` e `QG` ao mesmo tempo. Portanto, `C` é o ponto mais próximo de `G`, e consequentemente, o ponto mais próximo de `r`. 
+      
+      Para um melhor entendimento do que foi discutido acima, acesse a construção interativa disponível em <https://www.geogebra.org/m/C4GQJnVk>.
+
+   #. Não. A reta `DM` está contida no plano que contém a face `ABCD` do cubo e portanto, não pode cortar sua face oposta `EFGH` no ponto `N` como sugerido por Simplício. Veja isso na figura abaixo.
+   
+      .. figure:: _resources/Distrator_c.png
+         :width: 130pt
+         
+      A construção interativa disponível em <https://www.geogebra.org/m/jNFQMfhH> pode te ajudar a entender melhor a situação.
+
+   #. 
+      * Não. De fato, `DM = MF = FN = ND`, pois esses segmentos são hipotenusas de triângulos retângulos formados por catetos que medem o mesmo que a aresta do cubo e metade dela. Mas isto não implica que `DMFN` é um quadrado, e portanto seus ângulos internos são retos. Com a congruência de todos os lados de `DMFN` podemos afirmar que o quadrilátero é um losango, mas não podemos afirmar que é um quadrado. 
+      * Não. Observe que as diagonais do quadrilátero `DMFN` são os segmentos `FD` e `MN`, onde `FD` é também a diagonal do cubo e `MN` possui o mesmo comprimento da diagonal de uma face do cubo. Como a diagonal do cubo é maior que a diagonal da face, então `FD` e `MN` não são congruentes, o que implica que o quadrilátero `DMFN` não é um quadrado. Assim, o ângulo `MFN` não é reto. 
+
+
+.. Se um cubo dobrar de tamanho, suas projeções também dobram de tamanho?
+
+.. Ver os exercícios de projeções ortogonais do livro Matemática do Ensino Médio, volume 2.
+
+.. Relacionar projeções ortogonais com a teoria dos nós?
+
+.. Falar sobre os outros nomes para três planos que são dois a dois perpendiculares?
+
+
+.. _ativ-proj-vistas-ortogonais:
+
+
+Atividade: vistas ortogonais
+------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** compreender as projeções ortogonais simultâneas de objetos 3D sobre três planos, dois a dois perpendiculares, as quais constituem as assim denominadas *vistas ortogonais* principais.  
+
+Em desenho técnico, uma prática comum para se representar objetos 3D (como o objeto em (A) na :numref:`fig-proj-vistas-ortogonais-03`) é o de de projetá-lo ortogonalmente sobre três planos que são dois a dois perpendiculares (como os planos em (B) na :numref:`fig-proj-vistas-ortogonais-03`). 
+
+Tipicamente, como em (C) na :numref:`fig-proj-vistas-ortogonais-03`, os planos são posicionados de forma a ficarem, na medida do possível, parelelos às faces do objeto 3D (isto quando, naturalmente, o objeto tem faces planas). Este tipo de escolha tem uma vantagem: as projeções das faces paralelas sobre um dos planos de projeção serão congruentes às faces originais. Em termos de desenho técnico, as projeções estarão em :index:`verdadeira grandeza`. No contexto de construção de peças e equipamentos, esta congruência é um dos motivos para o uso de projeções ortogonais, em oposição às projeções em perspectiva, para representações 2D de objetos 3D. Como faces não paralelas a um plano de projeção vão aparecer distorcidas, três planos são considerados, cada plano representando em verdadeira grandeza os elementos do objeto que lhe são paralelos.
+
+Os três planos são denominados de :index:`plano frontal`, :index:`plano horizontal` e :index:`plano lateral`. A atribuição de um destes nomes a um determinado plano é uma escolha arbitrária, em princípio pois, afinal, ao se girar o objeto 3D, podemos converter uma escolha de nomes em outra. As imagens (D), (E) e (F) exibem uma atribuição de nomes. É claro, se o objeto tem naturalmente uma base horizontal (por exemplo, o fundo de uma caixa), então é razoável denominar o plano paralelo a essa base de plano horizontal. Do mesmo modo, se objeto tem naturalmente uma frente, então é conveniente denominar o plano paralelo a esta frente de plano frontal. Uma explicação análoga pode ser dada para a escolha do plano lateral. 
+
+
+   .. _fig-proj-vistas-ortogonais-03:
+
+   .. figure:: _resources/vistas-ortogonais-03_1.jpg
+   
+   
+
+
+Nas imagens (D), (E) e (F) da :numref:`fig-proj-vistas-ortogonais-03`, as setas indicam quais pontos serão projetados nos respectivos planos, da seguinte maneira: supondo-se que o objeto é opaco e que "raios de luz" chegam no sentido da seta, estes raios atingirão pontos do objeto e serão então bloqueados, não atingindo outros pontos. Apenas os pontos que recebem "raios de luz" serão projetados no plano. Estes pontos serão desenhados com uma linha sólida. Partes do objeto que ficam "escondidos" são desenhados com uma linha pontilhada, como acontece na imagem (F).
+
+Na :numref:`fig-proj-vistas-ortogonais-04` as três projeções nos três planos estão desenhadas simultaneamente com o sólido 3D(imagem (A)) e sem ele (imagem (B)). As três projeções podem então ser dispostas lado a lado em um mesmo plano, gerando então a representação clássica das :index:`vistas principais` (imagem (C)): a :index:`vista frontal` (projeção ortogonal no plano frontal), a :index:`vista lateral` (projeção ortogonal no plano lateral) e a :index:`vista superior` (projeção ortogonal no plano horizontal). Apesar do objeto 3D original ter as faces pintadas de vermelho, nas projeções apenas os contornos estão desenhados.
+
+
+   .. _fig-proj-vistas-ortogonais-04:
+
+   .. figure:: _resources/vistas-ortogonais-04.jpg
+   
+
+**Etapa 1.**
+
+Desenhe as vistas principais ortogonais de cada um dos objetos geométricos apresentados a seguir. Dê sua resposta como em (C) em :numref:`fig-proj-vistas-ortogonais-04`.
+
+#. .. figure:: _resources/vistas-ortogonais-objetos-01.png
+
+#. .. figure:: _resources/vistas-ortogonais-objetos-02.png
+
+#. .. figure:: _resources/vistas-ortogonais-objetos-03.png
+
+#. .. figure:: _resources/vistas-ortogonais-objetos-04.png
+
+#. .. figure:: _resources/vistas-ortogonais-objetos-05.png
+
+**Etapa 2.**
+
+Em cada uma das figuras a seguir, desenhe um objeto cujas projeções ortogonais sobre os planos frontal, horizontal e lateral são aquelas apresentadas. 
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-07.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-08.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-09.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-01.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-02.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-03.png
+
+#. .. figure:: _resources/vistas-ortogonais-problema-inverso-04.png
+
+
+**Etapa 3.**
+
+Desenhe **dois objetos diferentes** cujas projeções ortogonais sobre os planos frontal, horizontal e lateral são aquelas na figura a seguir. Nota: as projeções são congruentes e são formadas pelos quatro lados de um mesmo quadrado.
+
+.. figure:: _resources/vistas-ortogonais-problema-inverso-06.png
+
+
+**Etapa 4.**
+
+   .. Enunciado: https://www.theguardian.com/science/2015/sep/28/can-you-solve-it-are-you-smarter-than-an-uzbek-in-3d
+   .. Solução: https://www.theguardian.com/science/2015/sep/28/did-you-solve-it-are-you-smarter-than-an-uzbek-in-3d
+
+**(Adaptado de um problema proposto por Martin Gardner)** A figura a seguir exibe as vistas frontal e superior de uma estrutura 3D de madeira. Como seria este objeto 3D e sua vista lateral?
+
+.. figure:: _resources/vistas-ortogonais-05_1.jpg
+
+Importante:
+
+* A estrutura não tem segmentos ou linhas pintadas sobre ela.
+
+* Todos os contornos escondidos da estrutura devem ser desenhas com linhas tracejadas. Assim, em particular, as vistas frontal e superior não possuem contornos escondidos.
+
+* Uma vez que a estrutura é feita de madeira, isto significa que nenhuma de suas partes pode ter espessura zero.ave zero thickness. 
+
+
+
+.. admonition:: Resposta
+
+   **Etapa 1.**
+   
+   A seguir serão apresentadas as vistas principais ortogonais de cada um dos objetos geométricos dados, conforme mostrado na :numref:`fig-proj-vistas-ortogonais-04` (C).
+
+   #. .. figure:: _resources/vistasortogonais_cubo.png
+
+   #. .. figure:: _resources/vistasortogonais_cubogirado.png
+
+   #. .. figure:: _resources/vistasortogonais_esfera.png
+
+   #. .. figure:: _resources/vistasortogonais_cilindro.png
+
+   #. .. figure:: _resources/vistasortogonais_cone2.png
+   
+   **Etapa 2.**
+   
+   A seguir serão apresentados os objetos cujas projeções ortogonais sobre os planos frontal, horizontal e lateral foram dadas anterioramente.
+   
+   #. .. figure:: _resources/Etapa2_a_1.png
+
+   #. .. figure:: _resources/Etapa2_b_1.png
+
+   #. .. figure:: _resources/Etapa2_c_1.png
+
+   #. .. figure:: _resources/Etapa2_d_1.png
+
+   #. .. figure:: _resources/Etapa2_e_1.png
+
+   #. .. figure:: _resources/Etapa2_f_1.png
+
+   #. .. figure:: _resources/Etapa2_g_1.png
+   
+   **Etapa 3.**
+   
+   A seguir serão apresentados dois objetos cujas projeções ortogonais sobre os planos frontal, horizontal e lateral são quadrados de mesmo lado. Um dos objetos é um cubo com faces paralelas aos planos de projeção e o outro é uma linha poligonal fechada formada por segmentos de reta coincidentes com 6 arestas do cubo feito anteriormente. Veja as figuras abaixo.
+   
+   .. figure:: _resources/Etapa3_1.png
+   
+   .. figure:: _resources/Etapa3_2.png
+   
+   Na verdade, esta não é a única linha poligonal fechada que possui quadrados como projeções ortogonais sobre os planos frontal, horizontal e lateral. Veja na figura abaixo para um outro exemplo.
+   
+   .. figure:: _resources/Etapa3_3.png
+   
+   **Etapa 4.**
+   
+   A estrutura 3D procurada pode ser vista na figura abaixo.
+   
+   .. figure:: _resources/objeto_etapa4.png
+   
+   Neste caso, as vistas do objeto no formato mostrado na :numref:`fig-proj-vistas-ortogonais-04` (C), incluindo a lateral, podem ser encontradas na figura a seguir.
+   
+   .. figure:: _resources/vistasortogonais_objeto_etapa4.png
+   
+   Na verdade, este é apenas um exemplo de um objeto que possui as vistas frontal e superior dadas. É possível encontrar outros objetos que possuam essas mesmas vistas.
+   
+
+
+
+
+
+.. admonition:: Observação
+
+   É preciso ter atenção para o uso da palavra :index:`vista`. Autores diferentes dão significados diferentes à palavra, significados estes que podem, inclusive, ser diferentes de sua interpretação comum ("aquilo que se apresenta ao olhar, que se vê"). Por exemplo, é comum encontrar em livros de arquitetura e engenharia exercícios que pedem para determinar a *vista* de um objeto a partir de uma direção dada, como na :numref:`fig proj-vistas-observacao`. A resposta esperada por estes livros é a imagem (B), ou seja, uma projeção ortogonal do cubo vazado. Contudo, (B) *não é o que se é visto* a partir da direção indicada. O que se vê é melhor descrito por uma projeção em perspectiva, a saber, a imagem (C). Pegue o cubo vazado que você usou na :ref:`ativ-proj-luz-e-sombras` e veja por você mesmo.
+      
+      
+      .. _fig-proj-vistas-observacao:
+      
+      .. figure:: _resources/vistas-01_1.jpg
+      
+         O que é uma *vista*?         
+
+
+.. admonition:: Observação
+
+   A Associação Brasileira de Normas Técnicas (ABNT) em seu documento NBR 10067 estabelece princípios gerais de representação em desenho técnico. Nele são consideradas seis vistas ortogonais simultâneas, três a mais ao que foi feito na :ref:`ativ-proj-vistas-ortogonais`. A :numref:`fig-proj-vistas-ortogonais-06` traz exatamente o exemplo apresentado neste documento. Uma versão interativa que pode ser acessada por meio de um navegador (inclusive o de seu celular) está disponível aqui: <https://www.geogebra.org/m/SR7HrtkN>.
+      
+   
+      .. _fig-proj-vistas-ortogonais-06:
+   
+      .. figure:: _resources/vistas-ortogonais-06.jpg
+      
+         As seis vistas ortogonais do documento NBR 10067 da ABNT.
+
+   .. https://prezi.com/q3cqwsb1_vio/planos-de-proyeccion/
+
+   Observamos que as definições das vistas ortogonais como definidas no documento da ABNT não são universais. Nos Estados Unidos, por exemplo, as projeções em cada par de planos paralelos no paralelepípedo da :ref:`fig-proj-vistas-ortogonais-06` são permutados.
+
+.. admonition:: Você sabia?
+
+   Projeções ortogonais já foram um segredo militar!
+   
+   A :index:`Geometria Descritiva` é o ramo da geometria que estuda a representação de objetos tridimensionais em duas dimensões através de um certo conjunto específico de procedimentos. As técnicas resultantes são importantes para a engenharia, a arquitetura, o design gráfico e as artes (:numref:`fig-proj-geometria-descritiva-01`). A base teórica para a geometria descritiva é fornecida pelas projeções ortogonais. 
+   
+   .. _fig-proj-geometria-descritiva-01:
+   
+   .. figure:: _resources/geometria-descritiva-01.jpg
+   
+      Projeções ortogonais de um carro e de uma cabeça humana.
+      
+   O matemático francês Gaspard Monge (1746-1818) é considerado fundador da geometria descritiva. Ele a usou em engenharia militar (construção de fortificações) durante a época de Napoleão Bonaparte. De fato, geometria descritiva já foi considerada um segredo militar.
+
+   .. _fig-proj-gaspar-monge-01:
+
+   .. figure:: _resources/gaspard-monge-01.jpg
+      :width: 200pt
+
+      Gaspard Monge (1746-1818).
+
+   Dennis Lieu e Sheryl Sorby, no excelente livro Visualization, Modeling, and Graphics for Engineering Design, apresentam o contexto histórico: 
+
+      A pólvora começou a ser usada no mundo ocidental durante o Renascimento, assim como o canhão. Os canhões tornaram obsoletas a maioria das fortalezas construídas durante a era medieval. As muralhas não conseguiam suportar o impacto dos projéteis de canhão. Assim, as fortalezas precisavam ser remodeladas para suportar os tiros de canhão. Na França, um novo estilo de fortificação mais resistente foi então desenvolvido. A fortificação era construída com muros inclinados que ajudavam a defletir o tiro de canhão e não desmoronavam da mesma maneira que as muralhas planas verticais, quando atingidas diretamente. As novas fortalezas eram geometricamente mais complicadas de se construir do que suas predecessoras com muralhas verticais. Mais ainda, o perímetro da fortaleza evoluiu de um formato simples retangular para um formato pentagonal com uma extensão proeminente em cada ápice. Este formato de perímetro e o uso de muros inclinados resultaram em paredes que se justapunham em ângulos não usuais, os quais não podiam ser medidos facilmente ou diretamente. [...]
+      
+      Felizmente, os franceses tinham Gaspard Monge, que desenvolveu uma técnica de análise gráfica chamada geometria descritiva. [...] As técnicas de geometria descritiva permitiram que os engenheiros da época criassem qualquer ponto de vista de um objeto geométrico a partir de dois pontos de vista existentes. Ao criar o ponto de vista apropriado, os engenheiros podiam observar e medir os atributos de um objeto. [...] A geometria complexa, os ângulos de interseção incomuns, e a altura das muralhas tinham a intenção de maximizar o fogo cruzado sobre um inimigo em aproximação sem revelar o interior da fortaleza. [...]
+      
+      A astúcia dos franceses na construção de fortificações manteve a França como o principal poder europeu até o século XVIII. Na época, a geometria descritiva era considerada um segredo do estado francês, cuja divulgação era crime punível com a morte. Como resultado da aliança entre a França e o recém-constituído Estados Unidos, muitas fortificações dos EUA utilizaram projetos franceses. Como exemplo, temos o Forte McHenry que foi construído em 1806 e é primorosamente preservado em Baltimore, Maryland. O Forte McHenry sobreviveu ao bombardeamento inglês durante a Guerra de 1812 e tem importância porque ele inspirou Scott Key a escrever The Star Spangled Banner, o hino nacional dos EUA.
+
+   .. _fig-proj-forte-01:
+
+   .. figure:: _resources/fig-fort-mchenry.jpg  
+
+      Forte McHenry em Baltimore, Maryland, EUA (fonte: IAN Image and Video Library).             
+   
+
+
+.. admonition:: Você sabia?
+
+   O cientista cognitivo americano Douglas Richard Hofstadter (1945-) concebeu, para a capa de seu livro "Gödel Escher Bach: Um Entrelaçamento de Gênios Brilhantes", um objeto bem peculiar: suas projeções ortogonais em três planos produzem as letras "G" (de Gödel), "E" (de Escher) e "B" (de Bach).
+   
+   .. figure:: _resources/geb-01.png
+      :width: 200pt
+      
+      GEB (fonte: `Max Brown <https://www.flickr.com/photos/maxbraun/3205365815>`_).
+      
+   Inspirado por esta ideia, o Projeto CDME da Universidade Federal Fluminense concebeu um jogo para praticar visualização espacial e vocabulário: para cada objeto, você deve identificar as letras formadas por projeções e dispô-las em uma ordem a fim de formar uma palavra sem acentos do dicionário. Além do Português, existem fases em Inglês, Espanhol e Francês! O jogo pode ser acessado de qualquer navegador, incluindo o do smartphone.
+   
+   .. figure:: _resources/triplets-qr.png
+      :width: 50pt
+   
+   .. figure:: _resources/triplets-exemplo.*
+
+      Jogo `Trip-Lets <http://www.cdme.im-uff.mat.br/html5/triplets/triplets-html/triplets-br.html>`_ do Projeto CDME da UFF.
+         
+
+      
+.. admonition:: Você sabia?
+
+   Em softwares especializados de computação gráfica (Blender, Autocad, Autodesk 3DS Max, etc.), um recurso comum é o assim denominado *quad view* que faz com que o programa exiba quatro janelas de visualização simultâneas: três janelas com as três vistas ortogonais principais mais uma quarta janela com a projeção em perspectiva. As janelas com as vistas ortogonais são usadas para uma interação mais precisa com o objeto 3D, enquanto que a janela com a projeção em perspectiva permite visualizar como o objeto será visto.
+   
+      .. figure:: _resources/blender-04.jpg
+      
+         Sistema *quadview* no software gratuito de computação gráfica Blender.
+         
+
+.. admonition:: Você sabia?
+
+   Existem perguntas sobre projeções ortogonais que a humanidade ainda não conhece as respostas. Vamos agora descrever uma dessas perguntas. Considere, a título de exemplo, um cubo que será projetado em um plano. Se você girar o cubo de forma que nenhuma de suas faces fique paralela à direção perpendicular a este plano de projeção, sua projeção será um polígono com 6 lados. Por este motivo, o cubo é denominado um :index:`poliedro equiprojetivo` de índice 6. Nesta construção interativa feita no GeoGebra <https://www.geogebra.org/m/bF3y2m7K> você pode constatar este fato.
+   
+      .. figure:: _resources/poliedros-equiprojetivos-01.png
+         :width: 250pt
+   
+   Mais geralmente, dizemos que um poliedro é equiprojetivo de índice `k` se ao girá-lo de forma que nenhuma de suas faces fique paralela à direção perpendicular ao plano de projeção, sua projeção sobre este plano sempre será um polígono com `k` lados.
+   
+   Observe que existem poliedros que não são equiprojetivos. O tetraedro regular, por exemplo. A imagem a seguir mostra duas posições do tetraedro regular nas quais nenhuma de suas faces é paralela à reta perpendicular ao plano horizontal. Em uma dessas posições, sua projeção é um polígono de 3 lados. Na outra, a projeção é um polígono de 4 lados.
+   
+      .. figure:: _resources/poliedros-equiprojetivos-02_1.jpg   
+         :width: 500pt
+   
+   Dado um valor `\geq 3` para `k`, quais são todos os poliedros equiprojetivos de índice `k`? Esta é uma pergunta que ninguém conseguiu responder até o presente momento. Ela é um entre muitos problemas em aberto em Matemática. 
