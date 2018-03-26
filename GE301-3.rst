@@ -1,174 +1,206 @@
-.. _ativ-proj-perspectiva-em-perspectiva:
+*********************************************************************
+Organizando as ideias: projeções em perspectiva e projeções paralelas 
+*********************************************************************
 
+**Projeções em perspectiva**
 
-.. admonition:: Para o professor
+Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar a lanterna do celular como um ponto `O` e o anteparo como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-perspectiva-01`, irá obstruir os raios de luz que emanam de `O`, produzindo uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta `AP`. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta `OP` com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-perspectiva-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
 
-   **Objetivo específico:** analisar e identificar as implicações de desenhos relacionados com projeções em perspectiva.
+.. _fig-proj-perspectiva-01:
    
-   **Observação e recomendação:** o diagrama 3D na :numref:`fig-proj-diagrama-de-setores-01` está disponível como uma construção interativa no GeoGebra: <https://www.geogebra.org/m/yFJXfXq2>. É importante observar para os alunos que, por conta das distorções das projeções em perspectiva, diagramas 3D estáticos podem ser interpretados de forma equivocada! Neste caso, um diagrama 2D é preferível.
-
-
-Atividade: perspectiva em perspectiva
-------------------------------
-
-#. Com o objetivo de alertar as pessoas sobre as inconsistências que podem ocorrer caso um desenho seja feito sem o conhecimento das propriedades das projeções em perspectiva, o pintor (e também cartunista, crítico social e satirista) inglês William Hogarth FRSA (1697-1764) produziu uma gravura intitulada "Sátira sobre a Falsa Perspectiva" a qual apresenta alguns exemplos intencionais de efeitos confusos e equívocos de perspectiva. Tente identificar esses elementos estranhos na gravura!
-
-   .. https://commons.wikimedia.org/wiki/File:Hogarth-satire-on-false-pespective-1753.jpg
-   
-   .. figure:: _resources/perspectiva-em-perspectiva-01.jpg
-   
-   .. Lhaylla, dê uma olhada aqui: http://www.magicalmaths.org/can-you-spot-the-22-things-wrong-with-this-false-perspective-picture-great-image/
-   
-#. Muitas pessoas gostam de fazer diagramas estatísticos em 3D, como na figura a seguir.   
-
-   .. _fig-proj-diagrama-de-setores-01:
-
-   .. figure:: _resources/perspectiva-diagrama-de-setores-01.jpg
-      :width: 250 pt
-      
-      Diagrama de setores 3D.
-   
-      
-   
-   * Segundo este diagrama, qual item é mais frequente? A ou C? B ou D?
-   
-   * O diagrama foi construído com as seguintes frequências relativas: Item A com `11\%`, Item B com `42\%`, Item C com `5\%` e Item D com `42\%`. Construa, com estes dados, uma versão 2D do diagrama de setores da :numref:`fig-proj-diagrama-de-setores-01`. Com este diagrama 2D, qual item é mais frequente? A ou C? B ou D?
-   
-#. Por que a imagem abaixo não pode ser uma projeção em perspectiva de dois blocos, isto é, dois paralelepípedos retos retângulos?
-
-   .. figure:: _resources/perspectiva-em-perspectiva-05.jpg
-      :width: 450pt
-   
-#. ([Grunbaum-1985]_) A sociedade profissional americana *Mathematical Association of America* (MAA) tem como emblema um icosaedro regular. A imagem a seguir exibe o emblema na capa de uma edição de 1984 da revista *Mathematics Magazine* publicada pela MAA. O matemático Branko Grunbaum percebeu que o icosaedro da imagem não pode ser nem uma projeção em perspectiva e nem uma projeção paralela de um icosaedro regular. Por quê? Dica: tente analisar os elementos que são paralelos em um icosaedro regular tridimensional e como estes elementos estão projetados na imagem.
-
-   .. figure:: _resources/perspectiva-em-perspectiva-04.jpg
-      :width: 250pt
-   
-      Emblema  capa de uma edição de 1984 da revista *Mathematics Magazine* publicada pela Mathematics Association of America.  
-      
-.. admonition:: Resposta
-
-   #. A seguir, listaremos alguns dos erros visíveis da gravura, sendo que outros ainda podem ser detectados:
-
-      * O homem de pé no canto direito da tela está segurando uma vara de pescar cujo anzol passa pelo outro homem que está pescando na margem do rio.  
-      * A flâmula está presa alinhadamente em dois prédios distintos de uma maneira que não condiz com a realidade.
-      * A flâmula está sobreposta por duas árvores que estão plantadas no morro que fica atrás dos prédios.
-      * O homem que está bem no alto do morro, tem acesso a uma pessoa que está na janela do prédio.
-      * É possível visualizar duas portas da igreja que estão posicionadas em direções perpendiculares.
-      * Os tamanhos dos animais crescem a medida que eles se afastam no horizonte.
-      * O telhado do prédio que contém uma pessoa na janela pode ser visto, embora a cena esteja numa perspectiva de baixo para cima.
-   
-   #. 
-      * Com as informações obtidas no diagrama de setores 3D não é possível identificar qual é mais frequente entre A ou C, e entre B ou D.
-      * Dadas as porcentagens de cada item, fica claro que o diagrama apresentado na figura acima realmente não representa a real situação de frequência dos itens A, B, C, e D. Veja a versão 2D do diagrama na :numref:`fig-proj-graficosetores-sol`. Esta imagem foi gerada na construção interativa feita no Geogebra e disponível em <https://www.geogebra.org/m/yFJXfXq2>.
-
-      .. _fig-proj-graficosetores-sol:
-
-      .. figure:: _resources/GraficoSetor2D.png
-         :width: 200pt
-
-         Diagrama de setores 2D.
-
-      Pela versão 2D do diagrama, conseguimos determinar que o item A é o mais frequente entre A e C, e B é o item mais frequente entre B e D. 
-
-   #. As projeções das bases dos dois paralelepípedos não são paralelas e congruentes, logo a imagem não representa a projeção perspectiva dos dois blocos.
-
-   #. Observe na figura a seguir que as retas desenhadas em vermelho sobre o icosaedro regular são paralelas. Se a imagem tivesse sido feita em projeção paralela, todas as três retas vermelhas deveriam ser paralelas. Como não são, a imagem não é uma projeção paralela do icosaedro.  Se a imagem tivesse sido feita em projeção perspectiva, todas as três retas vermelhas deveriam se encontrar em um único ponto, o centro de projeção. Como isto também não acontece, a imagem não é uma projeção perspectiva do icosaedro. Sendo assim, o emblema da Mathematical Association of America não foi feito em projeção paralela nem perspectiva.
-
-      .. _fig-proj-emblemaMAA-sol:
-
-      .. figure:: _resources/emblemaMMA_retasparalelas.png
-         :width: 200pt
-
-         Retas paralelas sobre um icosaedro regular.
-   
-   
-.. _ativ-proj-distratores:
-
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** julgar situações com foco nos distratores (retas que não são concorrentes mas cujas projeções o são,  pontos que não são colineares mas cujas projeções o são, distorções de comprimento e ângulo).
-   
-   **Observações e recomendações:** as construções interativas feitas com o GeoGebra estão disponíveis nos endereços
-   <https://www.geogebra.org/m/aGaRUudY>,
-   <https://www.geogebra.org/m/jNFQMfhH>,
-   <https://www.geogebra.org/m/C4GQJnVk> e 
-   <https://www.geogebra.org/m/bd5f8KTg>.
-
-#. Simplício está estudando Geometria Espacial em um livro e se depara com a figura a seguir. 
-
-            .. _fig-proj-distratores-1:
-
-            .. figure:: _resources/perspectiva-distratores-01_1.jpg
-
-
-   O livro diz que `ABCDEFGH` é uma projeção em perspectiva de um cubo e pergunta quantos pontos de interseção existem entre as retas `BD` e `EG`. Simplício responde: "Pergunta fácil! Existe um único ponto de interseção entre `GD` e `EG`. Este ponto `P` aqui, como podemos ver claramente!".
-
-                  .. _fig-proj-distratores-2:
-                  
-                  .. figure:: _resources/perspectiva-distratores-02_1.jpg
-
-
-   Você concorda com a resposta de Simplício? Por que sim? Por que não?
-
-#. (Adaptado de [Lellis-2009]_) Na figura a seguir `ABCDEFGH` é uma projeção paralela de um cubo. Qual ponto está mais próximo da reta `r = FG`? O ponto `P`, o ponto `C` ou o ponto `Q`?
-
-   .. _fig-proj-distratores-3:
-
-   .. figure:: _resources/perspectiva-distratores-03.jpg
-
-#. (Adaptado de [Volkert-2008]_) Eis outra pergunta do livro de Geometria Espacial que Simplício está estudando: "Existem três pontos distintos, cada um em arestas distintas de um cubo e que sejam colineares?".
-
-            .. figure:: _resources/perspectiva-ambiguidade-01_1.jpg
-               :width: 125pt
-
-   Simplício pensa: "Existem sim! Eu construo o ponto médio `M` da aresta `AB` e o ponto médio `N` da aresta `FG`. Trançando o segmento `DN`, vejo que ele passa por `M`. Pronto: os pontos `D`, `M` e `N` são distintos, cada um está em uma aresta diferente e eles são colineares!".
-   
-                  .. figure:: _resources/perspectiva-ambiguidade-02_1.jpg
-                     :width: 125pt
-   
-
-
-   Você concorda com a resposta de Simplício? Por que sim? Por que não?   
-   
-#. (Adaptado de [Fujita-et-al-2017]_) No seu livro de Geometria Espacial, Simplício lê o enunciado de uma questão: "Na figura a seguir, `ABCDEFGH` é um cubo, `M` é ponto médio da aresta `AE` e `N` é ponto médio da aresta `CG`. O ângulo `MFN` é reto? Justifique sua resposta!".   
-
-            .. figure:: _resources/perspectiva-angulo-01.jpg
-               :width: 150pt
-
-   Simplício dá como resposta "Sim, o ângulo `MFN` é reto!" e dá como justificativa "O quadrilátero `DMFN` é um quadrado, pois `DM = MF = FN = ND` e, sendo um quadrado, seus ângulos internos são todos retos!".
-
-   * A justificativa de Simplício está correta? Justifique sua resposta!
-
-   * A resposta de Simplício está correta? Justifique sua resposta.
-   
-
-.. admonition:: Resposta
-
-   #. Não. As retas `BD` e `EG` estão contidas em faces opostas do cubo, portanto elas não se encontram. Veja a figura abaixo.
-
-      .. figure:: _resources/Distrator_a.png
-         :width: 160pt
+.. figure:: _resources/projecao-perspectiva-01_2.jpg
+   :width: 450px
          
-      Utilize a construção interativa disponível em <https://www.geogebra.org/m/aGaRUudY> para visualizar melhor a situação.      
+   Um modelo para o experimento com a lanterna do celular.
 
-   #. Primeiramente, repare que os pontos `P, C` e `Q` estão contidos no plano da face `CDHG` que é perpendicular à reta `r`. Além disso, `r` intersecta tal plano em `G`, o que implica que o ponto (entre `P, C` e `Q`) mais próximo de `r` será também o ponto mais próximo de `G`. Observe a figura abaixo.
+Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. Esta abstração será útil para modelar outras situações, como veremos mais adiante. 
+
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um ponto `O`. Seja `\psi` o plano paralelo à `\pi` passando por `O`. Se `P` é um ponto que não pertence a `\psi`, então o ponto `P'` de intersecção entre a reta `OP` e o plano `\pi` é denominado :index:`projeção em perspectiva` do ponto `P` sobre o :index:`plano de projeção` `\pi` com relação ao :index:`centro` `O`. 
+  
+.. _fig-proj-perspectiva-02:
    
-      .. figure:: _resources/Distrator_b.png
-         :width: 200pt
-
-      Observe que `CG` é perpendicular à reta `r`, logo a distância de `C` à reta `r` é dada pelo comprimento do segmento de reta `CG`. `PCG` é um triângulo retângulo onde `PG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `PG` é maior que o comprimento de `CG`. `QCG` é também um triângulo retângulo onde `QG` é sua hipotenusa e `CG` é o seu cateto, então o comprimento de `QG` é maior que o comprimento de `CG`. Assim, `CG` é menor que `PG` e `QG` ao mesmo tempo. Portanto, `C` é o ponto mais próximo de `G`, e consequentemente, o ponto mais próximo de `r`. 
-      
-      Para um melhor entendimento do que foi discutido acima, acesse a construção interativa disponível em <https://www.geogebra.org/m/C4GQJnVk>.
-
-   #. Não. A reta `DM` está contida no plano que contém a face `ABCD` do cubo e portanto, não pode cortar sua face oposta `EFGH` no ponto `N` como sugerido por Simplício. Veja isso na figura abaixo.
-   
-      .. figure:: _resources/Distrator_c.png
-         :width: 130pt
+.. figure:: _resources/projecao-perspectiva-05.jpg
+   :width: 450px
          
-      A construção interativa disponível em <https://www.geogebra.org/m/jNFQMfhH> pode te ajudar a entender melhor a situação.
+   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
 
-   #. 
-      * Não. De fato, `DM = MF = FN = ND`, pois esses segmentos são hipotenusas de triângulos retângulos formados por catetos que medem o mesmo que a aresta do cubo e metade dela. Mas isto não implica que `DMFN` é um quadrado, e portanto seus ângulos internos são retos. Com a congruência de todos os lados de `DMFN` podemos afirmar que o quadrilátero é um losango, mas não podemos afirmar que é um quadrado. 
-      * Não. Observe que as diagonais do quadrilátero `DMFN` são os segmentos `FD` e `MN`, onde `FD` é também a diagonal do cubo e `MN` possui o mesmo comprimento da diagonal de uma face do cubo. Como a diagonal do cubo é maior que a diagonal da face, então `FD` e `MN` não são congruentes, o que implica que o quadrilátero `DMFN` não é um quadrado. Assim, o ângulo `MFN` não é reto. 
+Vamos agora considerar uma outra situação onde projeções em perspectiva aparecem. Suponha que você queira desenhar um quadro de uma cena. Mas você quer um quadro tão perfeito que, ao observá-lo frente a cena, ele se confunda como a própria cena. O pintor surrealista belga René Magritte (1898-1967) imaginou essa situação em alguns de seus quadros (:numref:`fig-proj-janela-de-alberti-01`). Como produzir um tal quadro?
+
+.. _fig-proj-janela-de-alberti-01:
+
+.. figure:: _resources/rene-magritte-the-human-condition-03.jpg
+   :width: 600px
+   
+   Pinturas "A Condição Humana" do artista surrealista belga René Magritte (1898-1967).
+
+Suponha que a cena seja composta por um cubo, como no caso da :numref:`fig-proj-janela-de-alberti-03`. Cada ponto do cubo está emitindo um raio luminoso para o olho do observador. Ao posicionar o quadro frente à cena, basta então desenharmos os pontos de interseção destes raios emitidos pelo cubo com o plano do quadro. Como cada ponto de interseção do quadro está alinhado com o respectivo ponto do cubo e o olho do observador, este não notará a diferença. É como se o quadro funcionasse como uma janela para a cena, analogia esta idealizada pelo pintor renascentista italiano Leon Battista Alberti (1404-1472). 
+
+.. _fig-proj-janela-de-alberti-03:
+
+.. figure:: _resources/janela-de-alberti-03.jpg
+   :width: 600pt
+   
+   A métafora da janela: (A) Taylor (1719), (B) Montaque (2010).
+   
+Note que este processo de produzir um quadro que funcione como uma janela nada mais é do que uma projeção em perspectiva: o centro `O` é a posição do olho do observador e o plano de projeção `\pi` é o plano do quadro.
+
+.. _fig-proj-perspectiva-03:
+   
+.. figure:: _resources/projecao-perspectiva-03_1.jpg
+   :width: 450px
+         
+   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
+
+Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entre" o centro `O` e o plano `\pi`, no caso da métafora da Janela de Alberti, o plano `\pi` fica entre `O` e o objeto. Não obstante, as duas situações são modeladas por projeções em perspectiva.
+
+O objeto também pode ser posicionado de modo que o centro `O` fique entre este e o plano de projeção, como mostra a :numref:`fig-proj-perspectiva-06`. Este tipo de configuração modela um terceiro tipo de situação: as :index:`câmeras obscuras`, modelos básicos de câmera sem lentes (ver :numref:`fig-proj-kircher-01`). 
+
+.. _fig-proj-perspectiva-06:
+   
+.. figure:: _resources/projecao-perspectiva-06.jpg
+   :width: 450px
+         
+   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
+
+Supondo que a abertura da pupila seja pequena o suficiente e ignorando-se a presença de lentes e a curvatura da retina, o olho humano também pode ser considerado como uma câmera obscura e, assim, também modelado por projeções em perspectiva. É este modelo simplificado que consideraremos neste capítulo.
+
+   .. A relação entre a câmera obscura e o funcionamento do olho foi estabelecida primeiro por Kepler.
+
+   .. https://fr.wikipedia.org/wiki/La_Dioptrique_(Descartes)#/media/File:Descartes;_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
+
+.. _fig-proj-olho-humano-01:
+
+.. figure:: _resources/Descartes_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
+   :width: 200pt
+   
+   Esquema do olho proposto por René Descartes em sua obra *A dióptrica* (fonte: `Revista Scientiae Studia <http://www.revistas.usp.br/ss/article/view/11212/12980>`_).
+
+
+
+Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de projeção está entre o observador e o objeto), sombras (quando o objeto está entre o observador e o plano de projeção) e câmeras e modelos simplificados do olho humano (quando o observador está entre o o objeto e o plano de projeção).
+
+.. figure:: _resources/projecao-cubo.*
+   :width: 450px
+
+.. admonition:: Para refletir
+
+   Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`. 
+   
+   .. O conceito de função :ref:`sec-funcao-organizando-ideias-conceito`.
+   
+
+
+**Projeções paralelas**
+
+Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar o anteparo usado nos experimentos com raios solares como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-paralela-01`, irá obstruir os raios do Sol, os quais estamos supondo aqui serem todos paralelos, produzindo então uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta que é paralela à direção dos raios do Sol. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta que passa por `P` e é paralela aos raios Sol com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-paralela-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
+
+.. _fig-proj-paralela-01:
+   
+.. figure:: _resources/projecao-paralela-01_1.jpg
+   :width: 450px
+         
+   Um modelo para o experimento com a luz do Sol.
+
+Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. 
+
+Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e uma direção determinada por uma reta `d` que não é paralela ao plano `\pi`. Se `P` é um ponto qualquer, então o ponto `P'` de intersecção entre a reta que passa por `P` e é paralela à reta `d` e o plano `\pi` é denominado :index:`projeção paralela` do ponto `P` com relação a direção dada pela reta `d` sobre o plano de projeção `\pi`.  
+  
+.. _fig-proj-paralela-03:
+   
+.. figure:: _resources/projecao-paralela-03_1.jpg
+   :width: 450px
+         
+   `P'` é a projeção paralela do ponto `P` com relação a direção dada pela reta `d` sobre o plano de projeção `\pi`.
+
+Se a reta `d` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`. Uma projeção paralela que não é ortogonal é denominada :index:`projeção oblíquoa`.
+
+.. _fig-proj-paralela-02:
+   
+.. figure:: _resources/projecao-paralela-02_2.jpg
+   :width: 450px
+         
+   `P'` é a projeção ortogonal do ponto `P` com relação a direção dada pela reta `d` perpendicular ao plano de projeção `\pi` sobre este plano.
+
+Observação. As projeções paralelas definidas aqui são generalizações para o espaço `{\mathbb R}^{3}` das projeções paralelas no plano que você estou na :ref:`ativ-projecao-paralela` do capítulo sobre Teorema de Tales. Aqui, a projeção é em um plano e, lá, em uma reta.
+
+
+.. admonition:: Para refletir
+
+   Note que uma projeção paralela pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3}`, faz associar o ponto `P'` de interseção entre a reta que passa por `P` e é paralela a reta `d` e o plano `\pi`, supondo que `d` não é paralela ao plano `\pi`. Assim, no contexto da :numref:`fig-proj-paralela-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
+
+
+.. admonition:: Você sabia?
+
+   Com o Renascimento (século XIV-século XVII), os artistas começaram a fazer suas pinturas com a preocupação de retratar a realidade, isto é, retratar o que se vê. Para isso, eles consideraram o uso de princípios óticos geométricos e, em particular, das projeções em perspectiva. Vários aparatos foram idealizados com o próposito de produzir imagens realistas. Observe que o princípio básico de todos os dispositivos é o alinhamento do ponto do objeto a ser retratado, do ponto projetado no quadro e um centro fixo, tipicamente, o olho do observador.
+   
+   .. figure:: _resources/durer-01.jpg
+      :width: 300 pt
+         
+      Dispositivo de Albrecht Dürer (1471-1528).
+
+
+   .. figure:: _resources/cigoli-02.jpg
+      :width: 300 pt
+         
+      Dispositivo de Lodovico Cardi (Cigoli) (1559-1613).         
+         
+
+   .. figure:: _resources/jamnitzer-01.jpg
+      :width: 300 pt
+         
+      Dispositivo de Wenzel Jamnitzer (1507/1508-1585).         
+
+
+   .. figure:: _resources/schmalcalder-02.jpg
+      :width: 300 pt
+         
+      Dispositivo de Charles Augustus Schmalcalder (1781-1843).         
+
+
+   .. _fig-proj-kircher-01:
+      
+   .. figure:: _resources/kircher-01.jpg
+      :width: 300 pt
+         
+      Camera obscura de Athanasius Kircher (1601-1680).         
+
+   
+   Existiram dispositivos renascentistas que produziam desenhos em projeções paralelas? O único que se conhece até o momento é a máquina de Johannes Lencker (1523-1585) que produzir desenhos em projeções ortogonais. 
+  
+   
+   .. figure:: _resources/lencker-01.jpg
+      :width: 300 pt
+         
+      Dispositivo de Johannes Lencker (1523-1585). 
+         
+   Enquanto que os pintores renascentistas procuravam fazer seus quadros retratando as pessoas como as vemos, na Idade Média essa preocupação não apareceria. No lugar de princípios óticos geométricos, as regras medievais incluiam pintar as pessoas de acordo com o seu *status* social: quanto maior o *status*, maior o tamanho na pintura (:numref:`fig-proj-medieval-social-03`, :numref:`fig-proj-medieval-social-05`, :numref:`fig-proj-medieval-social-01`).
+   
+   .. _fig-proj-medieval-social-03:
+      
+   .. figure:: _resources/medieval-social-03.jpg
+      :width: 200 pt
+         
+      São Lourenço entre Santos e Patrocinadores de Fra Filippo Lippi (1406-1469).            
+         
+   
+
+      .. _fig-proj-medieval-social-05:
+      
+      .. figure:: _resources/medieval-social-05.jpg
+         :width: 300 pt
+         
+         Henrique III acompanhando o Mestre de Obras (século XIV).    
+
+
+
+      .. _fig-proj-medieval-social-01:
+      
+      .. figure:: _resources/medieval-social-01.jpg
+         :width: 200 pt
+         
+         Políptico da Misericórdia de Piero della Francesca (1415-1492).    
+         
+         
+   
+   
+

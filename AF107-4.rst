@@ -1,0 +1,271 @@
+
+.. _sec-funcao-afim:
+***********************
+Explorando: função afim
+***********************
+
+.. _ativ-dist-tempo:
+
+Atividade: distância x tempo
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+
+   * Interpretar uma situação que envolve movimento retilíneo uniforme a partir do gráfico que representa a relação entre distância e tempo.
+   * Compreender o modelo de variação que se estabelece entre as variáveis distância e tempo.
+   * Constatar que a distância percorrida sempre será a mesma em intervalos de tempo iguais.
+   * Identificar que mesmo a taxa de variação sendo constante, as grandezas envolvidas não são proporcionais.
+
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+
+   * Já no item (a) é comum boa parte dos alunos não identificarem a posição do ponto de referência, principalmente por criar associações equivocadas entre o gráfico e a situação real. Para isso utilize algum modelo que deixe claro que a reta apresentada do gráfico não é o “caminho” percorrido pela pessoa. Por exemplo:
+   
+   
+   .. _fig-modelo-distancia:
+
+   .. figure:: _resources/modelo_distancia_1.jpeg
+      :width: 300pt
+      :align: center
+   
+   
+   * Recomendamos que, se possível, discuta com seus alunos uma variante do problema. O caso em que, mesmo que a pessoa não ande em linha reta, o gráfico continua representando a relação entre a distância percorrida e o tempo de percurso. Apresente por exemplo percursos diferentes, refazendo as perguntas, como por exemplo:
+   
+   
+   .. _fig-percursos:
+
+   .. figure:: _resources/percursos_1.jpeg
+      :width: 300pt
+      :align: center
+
+   
+   * Discuta com seus alunos o motivo da função não ser linear e consequentemente, nesta situação, a relação entre as grandezas não ser proporcional. Utilize o fato de não atender o Teorema Fundamental da Proporcionalidade.
+   
+   * Caso seus alunos já tenham estudado esse conteúdo em Física, aproveite para relacionar a função `f(t)=at+b` com a equação tradicional do Movimento Uniforme: `S=S_0+Vt`, associando `S` com `f(t)` ; `S_0` com `b` e `V` com `a`.
+   
+   
+   
+O gráfico a seguir mostra a variação da distância a um ponto de referência de uma pessoa que caminha em linha reta durante `4` segundos. Algumas informações sobre o movimento podem ser extraídas diretamente dessa representação gráfica.
+
+
+.. _fig-tempo-distancia:
+
+.. figure:: _resources/tempo_distancia_1.png
+   :width: 300pt
+   :align: center
+
+#. A que distância do ponto de referência estava a pessoa no início da contagem do tempo? E ao final de `4` segundos?
+#. Qual a distância total percorrida?
+#. É possível saber se ele está se afastando ou se aproximando do ponto de referência? Como?
+#. Qual a velocidade média da pessoa no intervalo de tempo de `0` a `4` segundos?
+#. A que distância a pessoa estava do ponto de referência após `1` segundo do início da caminhada? Qual a distância percorrida por ela nesse intervalo de tempo?
+#. Qual a distância percorrida pela pessoa entre `1` e `2` segundos? E entre `3` e `4` segundos?
+#. O que se pode concluir, a partir das suas respostas nos itens (e) e (f), sobre a variação da distância percorrida a cada minuto de caminhada?
+#. As grandezas relacionadas pelo gráfico são proporcionais? Porque?
+
+
+.. admonition:: Resposta 
+
+   #. `1` metro. `9` metros.
+   #. `8` metros.
+   #. Sim, ela está se afastando. A medida que o tempo aumenta a distância até o ponto de referência também aumenta. Isto é, a função é crescente.
+   #. A velocidade média é `V=\dfrac{9-1}{4-0}=2` `m/s`.
+   #. `3` metros. `2` metros.
+   #. `2` metros em ambos os intervalos de tempo.
+   #. A cada segundo a pessoa se afasta `2` metros do ponto de referência.
+   #. Não, pois a distância até o ponto de referência em 2 segundos é 5 metros e em 1 segundo é 3 metros, ou basta ver que o gráfico não passa pela origem do plano cartesiano .
+
+
+**********************************
+Organizando as ideias: função afim
+**********************************
+
+O gráfico da :ref:`ativ-dist-tempo` apresenta a distância até o ponto de referência como uma função do tempo. Como a ação acontece no intervalo de tempo de `0` a `4` segundos, podemos modelar essa relação com uma função `f` cujo domínio é o intervalo `[0,4]`, isto é, `f:[0,4] \to \mathbb{R}`. Vamos juntos determinar uma expressão para `f`?
+
+Apesar do gráfico ser um segmento de reta, `f` não pode ser uma função linear, pois a reta não contém a origem do plano cartesiano. Como no início da contagem do tempo a pessoa estava na posição `1`, devemos ter `f(0)=1`. Em particular, as grandezas posição e tempo, nesse caso, não são proporcionais. 
+
+Vamos definir uma outra função que vai nos auxiliar a determinar uma expressão para `f`. Chamaremos de `d(t)` a distância percorrida no intervalo de tempo `[0,t]`. Por exemplo, como fazemos para calcular `d(2)` ? Basta saber em que posições a pessoa estava nos tempos `t=0` e `t=2` e fazer a diferença. Neste caso `d(2)=f(2)-f(0)=5-1=4`. Isso nos dá a dica de como calcular `d(t)` para qualquer `t\in[0,4]`.
+
+.. math::
+
+   d(t)=f(t)-f(0) \Longrightarrow d(t)= f(t)-1
+
+Vamos preencher o seguinte quadro:
+
+.. table::
+   :widths: 3 2 2
+   :column-alignment: center center center
+
++-----+---------------------+---------------------+
+| `t` |     `f(t)`          |    `d(t)=f(t)-1`    |
++-----+---------------------+---------------------+
+|`0`  |   `1`               |                     |
++-----+---------------------+---------------------+
+|`0,5`|                     |                     |
++-----+---------------------+---------------------+
+|`1`  |   `3`               |                     |
++-----+---------------------+---------------------+
+|`1,5`|                     |                     |
++-----+---------------------+---------------------+
+| `2` |         `5`         |        `4`          |
++-----+---------------------+---------------------+
+|`2,5`|                     |                     |
++-----+---------------------+---------------------+
+|`3`  |                     |                     |
++-----+---------------------+---------------------+
+|`3,5`|                     |                     |
++-----+---------------------+---------------------+
+|`4`  |        `9`          |      `8`            |
++-----+---------------------+---------------------+
+
+Para representar o gráfico da função `d`, devemos considerar os pontos `D=(t,d(t))`, para cada `t` de `0` a `4` segundos. Já para representar o gráfico da função `d`, devemos considerar os pontos `F=(t,f(t))` para `t` de `0` a `4` segundos. Observamos que para cada `t` de `0` a `4` segundos, os pontos do gráfico de `f` têm ordenada igual a ordenada do ponto correspondente ao gráfico de `f` mais uma unidade, como ilustra a tabela anterior. Portanto, tem-se que o gráfico da função `d` também é uma reta: uma reta paralela a reta que corresponde ao gráfico de `f` deslocada verticalmente uma unidade para baixo como ilustra a figura a seguir.
+
+.. figure:: _resources/distancia_posicao1.png
+   :width: 350pt
+   :align: center
+
+Sendo assim o gráfico de `d` é em uma reta que contém a origem do plano cartesiano, mostrando-nos que se trata de uma função linear. Como o ponto `(1,2)` pertence ao gráfico de `d`, podemos afirmar que sua taxa de variação é `\frac 21` e, portanto, para todo `t\in[0,4]` , `d(t)= 2t`.
+
+Finalmente, como `d(t)=f(t)-1` para `t\in[0,4]`, concluímos que uma expressão para `f` é
+
+.. math::
+
+   f(t)=2t+1
+
+Concluimos assim que o gráfico da função `f` é obtido deslocando-se o gráfico da função linear `d(t)=2t` uma unidade na vertical para cima.
+
+Usando a expressão de `f`, podemos calcular sua taxa de variação média em um intervalo qualquer não-vazio `[t_1,t_2]`
+
+.. math::
+   \dfrac{f(t_2)-f(t_1)}{t_2-t_1}=\dfrac{2t_2+1-(2t_1+1)}{t_2-t_1}=\dfrac{2(t_2-t_1)}{t_2-t_1}=2.
+
+Vemos que aqui também a taxa de variação média não depende do intervalo considerado e que o valor da taxa coincide com a taxa de variação média da função `d`.
+
+.. figure:: _resources/desloca_b.png
+   :width: 350pt
+   :align: center
+
+
+.. glossary:: 
+
+   Função Afim
+      Toda função real de variável real que pode ser representada na forma `f(x)=ax+b` é chamada de função afim. 
+   
+   O número `a` é a taxa de variação média de `f` e `b` é a medida do deslocamento vertical que se faz a partir da função linear `\ell(x)=ax` para se obter o gráfico de `f`.
+
+.. admonition:: Exemplo
+   
+   .. figure:: _resources/exemplo_afim1.png
+      :width: 350pt
+      :align: center
+   
+      Exemplos: `\ell(x)=2x`, `f(x)=2x+5` e `f(x)=2x-3`
+   
+   .. figure:: _resources/exemplo_afim2.png
+      :width: 350pt
+      :align: center
+   
+      Exemplos: `\ell(x)=-x`, `f(x)=-x-2` e `f(x)=-x+6`
+
+
+**A inclinação de uma reta e a taxa de variação média**
+   
+.. figure:: _resources/1024px-Planalto_Palace_ramp_and_parlatorium.jpg
+   :width: 350pt
+   :align: center
+
+   Flickr: `Planalto (Presidential) Palace, Brasília, Brazil (8) <https://commons.wikimedia.org/w/index.php?curid=18864847>`_, CC BY 2.0, 
+   
+Em muitas construções, quando se deseja fazer o acesso entre dois espaços que estão em níveis diferentes, usa-se a rampa como recurso. A rampa é uma superfície, em geral plana, que liga dois níveis diferentes. Uma característica importante de uma rampa é a sua inclinação (ou declive). Rampas muito íngremes podem se tornar obstáculos intransponíveis para cadeirantes, por exemplo. Como medir, então, a inclinação de uma rampa? 
+A inclinação de uma rampa é o número obtido quando dividimos a altura (diferença entre os níveis) pelo deslocamento horizontal
+   
+.. .. math::
+
+   \text{inclinação}=\dfrac{\text{altura}}{\text{deslocamento horizontal}}
+   
+.. figure:: _resources/resized005.png
+   :width: 350pt
+   :align: center
+
+Uma rampa que tem o deslocamento horizontal muito menor que a altura, terá pela fórmula uma inclinação grande, enquanto uma rampa em que o deslocamento horizontal é bem maior que a altura, terá uma inclinação pequena. Rampas de inclinação pequena são as mais desejáveis. 
+
+A Associação Brasileira de Normas Técnicas (ABNT) tem normas para a construção de rampas (a NBR 9050:2015 que pode ser acessada `neste link <http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf>`_) que contém o seguinte artigo:
+
+.. figure:: _resources/rampa_abnt.png
+   :width: 450pt
+   :align: center
+      
+Por exemplo, para uma rampa ter inclinação `5% (1:20)` ela precisa de `20` metros de deslocamento horizontal para cada metro de subida, ou dito de outra forma, para cada metro de deslocamento horizontal, a rampa “sobe” `0,05` metros. Veja se as rampas ilustradas abaixo estão dentro das especificações da ABNT.
+   
+.. table::
+   :widths: 1 2 2
+   :column-alignment: center center center
+
++------------------------------+---------------------+---------------------+
+| `i=\dfrac{h}{c}\cdot 100 \%` | altura (h)          |deslocamento (c)     |
++------------------------------+---------------------+---------------------+
+|Rampa 1                       | `0,85` m            | `13` m              |
++------------------------------+---------------------+---------------------+
+|Rampa 2                       | `0,50` m            | `7` m              |
++------------------------------+---------------------+---------------------+
+|Rampa 3                       | `1,20` m            | `24` m              |
++------------------------------+---------------------+---------------------+
+|Rampa 4                       |  `1` m              |  `21` m             |
++------------------------------+---------------------+---------------------+
+
+Da mesma forma, a inclinação de uma reta é a medida do quão íngreme ela é em relação ao sistema de coordenadas onde ela está inserida. Dada uma reta em um plano cartesiano, para determinarmos sua inclinação basta fazer a divisão entre a variação das ordenadas e a variação das abscissas para quaisquer dois pontos da reta
+   
+.. math::
+
+   \text{inclinação}=\dfrac{y_2-y_1}{x_2-x_1}
+
+.. _fig-inclina:
+
+.. figure:: _resources/inclinacao.png
+   :width: 350pt
+   :align: center
+
+   Inclinação de uma reta
+
+Por exemplo, a reta que contém os pontos `(1,2)` e `(5,7)` tem inclinação `\dfrac{7-2}{5-1}=\dfrac 54`, enquanto a reta que contém os pontos `(-1,3)` e `(2,-6)` tem inclinação `\dfrac{-6-3}{2-(-1)}=\dfrac{-9}{3}=-3`.
+
+.. _fig-inclina-1:
+
+.. figure:: _resources/inclinacao_ex1.png
+   :width: 350pt
+   :align: center
+
+   Inclinação da reta que contém os pontos `(1,2)` e `(5,7)`
+
+.. _fig-inclina-2:
+
+.. figure:: _resources/inclinacao_ex2.png
+   :width: 350pt
+   :align: center
+
+   Inclinação da reta que contém os pontos `(-1,3)` e `(2,-6)`
+   
+Se considerarmos uma reta no plano e a função afim `f` que a tem como gráfico, a inclinação da reta coincide com a taxa de variação da função `f`. 
+
+Por exemplo, a reta da :ref:`fig-inclina-2` acima é o gráfico da função afim `f(x)=\dfrac 54 x +b`. Para determinarmos o valor de `b`, basta substituirmos um dos pontos que estão sobre a reta. Como `(1,2)` pertence ao gráfico de `f`, podemos afirmar que `f(1)=2`, logo
+
+.. math::
+
+   2=\dfrac 54 \cdot 1 + b \Longrightarrow b=2-\dfrac 54 = \dfrac 34
+
+Isto é, a função `f` é dada pela expressão `f(x)=\dfrac 54 x + \dfrac 34`. 
+
+Já a reta da :ref:`fig-inclina-2` tem expressão `f(x)=-3x`.
+
+Retas horizontais não possuem inclinação, de fato não há deslocamento vertical quando nos deslocamos horizontalmente sobre a reta, ou seja, sua inclinação será igual a zero.
+   
+   
+.. admonition:: Para o professor
+
+   .. figure:: _resources/codigo3_3.png
+      :width: 100pt
+      :align: center
+
+   Sugerimos o uso da construção GeoGebra disponível no endereço <https://www.geogebra.org/m/NFAmT23H>. Nela os estudantes poderão experimentar dinamicamente propriedades de crescimento, decrescimento e interseção com os eixos coordenados associadas à função afim `f(x)=ax+b`, em que `a` e `b` variam no intervalo `[-5,5]`.
+   

@@ -1,0 +1,98 @@
+.. _sec-organizando3:
+
+*********************
+Organizando as ideias
+*********************
+
+
+**Como se divide um segmento em uma razão dada?**
+
+
+Imagine que tenhamos um segmento `AB` e desejamos determinar, no seu interior o ponto `P` que o divide na razão `\frac{PA}{PB}=\frac{3}{4}`. Isso significa encontrar um ponto `P` no interior do segmento `AB` de forma que o segmento `PA` seja proporcional a 3 e o segmento `PB`, proporcional a 4. Um procedimento bastante usado é o descrito a seguir e mostrado na figura a seguir à esquerda.
+
+A partir dos pontos `A` e `B` trace semirretas paralelas quaisquer,`AX` e `BY`,  mas com sentidos opostos como ilustrado na figura.
+Usando o compasso com uma abertura qualquer,mas fixada, assinale três segmentos iguais e consecutivos na semirreta de origem  `A` e, com a mesma abertura do compasso, quatro segmentos na semirreta de origem `B`.
+
+Temos então `AX = 3u` e `BY = 3u`.
+
+A interseção da reta `XY` com o segmento `AB` é o ponto `P` procurado.
+
+
+.. tikz:: 
+
+   \draw [line width=0.8pt] (-3.,0.)-- (-1.62,2.92);
+   \draw [line width=0.8pt] (-3.,0.)-- (1.,0.);
+   \draw [line width=0.8pt] (3.,0.)-- (7.,0.);
+   \draw [line width=0.8pt] (1.,0.)-- (-0.502351497488208,-3.178888675844614);
+   \draw [line width=0.8pt] (-2.1744449131418495,1.746826705525942)-- (-0.10074011581086806,-2.3291022740345904);
+   \draw [line width=0.8pt] (3.8255550868581505,1.7468267055259423)-- (5.899259884189131,-2.3291022740345904);
+   \draw [line width=0.8pt] (3.,0.)-- (4.228558269739617,2.59955807799977);
+   \draw [line width=0.8pt] (7.,0.)-- (4.767191011235955,-4.724494382022471);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (2.7729644593415306,0.4462451650548752)-- (5.372740816526203,-4.663693244820947);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.0256681798973055,1.072708419540557)-- (5.649835588579647,-4.085171333659179);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.2905674262019144,1.6752010023642823)-- (5.959404510836151,-3.570478338777889);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (3.5514960008445655,2.2854980594391745)-- (6.1918296069376995,-2.904156839673689);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (4.187082831957212,2.159393075614541)-- (6.562234402556889,-2.509038578647954);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (4.762684778290206,2.1511901820602617)-- (6.823021221818061,-1.8984628971188342);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (5.34265446345135,2.1344023668297014)-- (7.096003566828064,-1.3118578872516715);
+   \draw [line width=0.8pt,dash pattern=on 1pt off 1pt] (5.937130743373617,2.0891014044734284)-- (7.329336201567188,-0.6473201825610867);
+   \draw (-3.44364,0.06722) node[anchor=north west] {A};
+   \draw (2.5991,0.01398) node[anchor=north west] {A};
+   \draw (1.21486,0.20032) node[anchor=north west] {B};
+   \draw (7.2576,0.06722) node[anchor=north west] {B};
+   \draw (-2.48532,2.32992) node[anchor=north west] {X};
+   \draw (3.29122,2.06442) node[anchor=north west] {X};
+   \draw (0.04358,-2.59478) node[anchor=north west] {Y};
+   \draw (6.00646,-2.38182) node[anchor=north west] {Y};
+   \draw (-3.2573,0.62624) node[anchor=north west] {u};
+   \draw (0.97528,-0.33208) node[anchor=north west] {u};
+   \draw [color=red](-1.527,-0.2256) node[anchor=north west] {P};
+   \draw [color=red](4.51574,-0.2256) node[anchor=north west] {P};
+   \draw [fill=black] (-3.,0.) circle (1.0pt);
+   \draw [fill=black] (1.,0.) circle (1.0pt);
+   \draw [fill=black] (3.,0.) circle (1.0pt);
+   \draw [fill=black] (7.,0.) circle (1.0pt);
+   \draw [fill=black] (-2.724814971047283,0.5822755685086475) circle (1.0pt);
+   \draw [fill=black] (-2.449629942094566,1.1645511370172947) circle (1.0pt);
+   \draw [fill=black] (-3.,0.) circle (1.0pt);
+   \draw [fill=black] (-2.1744449131418495,1.746826705525942) circle (1.0pt);
+   \draw [fill=black] (0.724814971047283,-0.5822755685086476) circle (1.0pt);
+   \draw [fill=black] (0.44962994209456597,-1.1645511370172952) circle (1.0pt);
+   \draw [fill=black] (0.17444491314184896,-1.7468267055259428) circle (1.0pt);
+   \draw [fill=black] (-0.10074011581086806,-2.3291022740345904) circle (1.0pt);
+   \draw [fill=black] (3.2751850289527167,0.5822755685086475) circle (1.0pt);
+   \draw [fill=black] (3.550370057905434,1.1645511370172947) circle (1.0pt);
+   \draw [fill=black] (3.8255550868581505,1.7468267055259423) circle (1.0pt);
+   \draw [fill=black] (6.724814971047282,-0.5822755685086476) circle (1.0pt);
+   \draw [fill=black] (6.449629942094566,-1.1645511370172952) circle (1.0pt);
+   \draw [fill=black] (6.174444913141849,-1.7468267055259428) circle (1.0pt);
+   \draw [fill=black] (5.899259884189131,-2.3291022740345904) circle (1.0pt);
+   \draw [fill=black] (5.6240748552364135,-2.9113778425432377) circle (1.0pt);
+   \draw [fill=black] (5.348889826283696,-3.493653411051885) circle (1.0pt);
+   \draw [fill=black] (5.073704797330978,-4.0759289795605325) circle (1.0pt);
+   \draw [fill=black] (3.5714285714285707,0.) circle (1.0pt);
+   \draw [fill=black] (4.142857142857142,0.) circle (1.0pt);
+   \draw [fill=red] (4.7142857142857135,0.) circle (1.5pt);
+   \draw [fill=black] (5.285714285714286,0.) circle (1.0pt);
+   \draw [fill=black] (5.857142857142857,0.) circle (1.0pt);
+   \draw [fill=black] (6.428571428571428,0.) circle (1.0pt);
+   \draw [fill=red] (-1.2857142857142863,0.) circle (1.5pt);
+
+A figura acima, à direita, justifica visualmente a construção. Se um feixe de paralelas determina sobre uma transversal segmentos iguais determinará, sobre qualquer outra, segmentos também iguais.
+
+Assim, o segmento `AB` está dividido em 7 partes iguais e o ponto `P` é o terceiro ponto de divisão. Logo, `\frac{PA}{PB}=\frac{3}{4}`.
+
+Observe ainda que, dado um segmento e um número positivo `k`, **só existe um ponto interior ao segmento que o divide na razão** `k`. . De fato, considerando `k` em uma das semirretas e a unidade de medida na outra, teremos `\dfrac{PA}{PB}=\dfrac{k}{1}=k`.
+
+**O que é a recíproca de um teorema?**
+
+Sabemos que um teorema é uma afirmação do tipo "Se A então B". A recíproca de um teorema é uma afirmação onde as expressões A e B trocam de lugar. Assim a recíproca de "Se A então B" é "Se B então A".
+
+Um teorema é uma afirmação matemática verdadeira (pois conseguimos demonstrá-lo), mas sua recíproca nem sempre é verdadeira. Quando estamos trabalhando com números frequentemente as recíprocas das afirmações não são verdadeira, como no exemplo a seguir.
+
+**Teorema**: Todo número múltiplo de 4 é par. (*verdadeiro*)
+
+**Recíproca**: Todo número par é múltiplo de 4.(*falso*)
+
+Em geometria, a maioria dos teoremas possui sua recíproca também verdadeira, mas isso é preciso verificar em cada caso. No caso do teorema de Tales a sua recíproca está  na :ref:`ativ-reciproca-tales`
+

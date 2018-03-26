@@ -1,0 +1,294 @@
+
+
+
+**********
+Praticando
+**********
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: antecipando o pagamento de uma dívida
+------------------------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Relacionar função afim de domínio discreto com progressões aritméticas.
+   * Perceber nas sequências apresentadas que a diferença entre termos consecutivos é constante, e portanto elas formam uma P.A.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Questione seus estudantes sobre o fato de, apesar da variação ser sempre de 250 reais, em um caso a primeira função (valor a pagar) é decrescente e a segunda função (desconto) é crescente, relacionando com as expressões obtidas no item (f).
+   * No item (d) espera-se que a resposta seja em forma de porcentagem. Caso julgue necessário, aproveite o momento para fazer uma rápida revisão sobre o assunto.
+   * Possivelmente os estudantes não estão familizarizados com alguns dos termos apresentados nessa atividade: *antecipação de uma dívida*, *desconto comercial*, *tempo de antecipação*. Antes de iniciar a atividade esclareça para eles o significado de cada um desses termos.
+
+O cliente de um banco foi à sua agência de relacionamento para negociar a antecipação de uma dívida no valor de `R\$ 5.000,00`, que venceria no prazo de 8 meses. Lá, foi informado pelo gerente que a modalidade praticada era a de desconto comercial, no qual o valor a ser descontado é calculado a partir do valor da dívida e é proporcional ao tempo de antecipação. Para o caso em questão, o gerente gerou a seguinte quadro:
+
+.. table:: 
+   :widths: 3 1 1 1 1 1
+   :column-alignment: center center center center center center
+
++---------------------+-------+-------+-------+-------+-------+
+| Antecipação (meses) | 0     | 1     | 2     | 3     | 4     |
++---------------------+-------+-------+-------+-------+-------+
+| Valor a pagar (R$)  | 5.000 | 4.750 | 4.500 | 4.250 | 4.000 |
++---------------------+-------+-------+-------+-------+-------+
+
+#. Observando o padrão de desconto, complete a tabela até o 8º mês de antecipação.
+#. Descreva a variação sofrida pelo valor a pagar à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor a pagar entre dois meses consecutivos?
+#. Descreva a variação sofrida pelo valor do desconto à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor de desconto entre dois meses consecutivos?
+#. Qual é, então, a taxa mensal de desconto comercial praticada pelo banco?
+#. No plano cartesiano a seguir estão representados os pares ordenados `(n,D(n))` em que `n` é o tempo de antecipação e `D(n)` o valor do desconto correspondente. Represente nele os pontos que correspondem aos pares ordenados `(n,V(n))` em que `V(n)` é o valor a pagar no tempo `n`.
+
+
+.. admonition:: Resposta 
+
+   #.
+   
+      .. table:: 
+         :widths: 4 1 1 1 1 1 1 1
+         :column-alignment: center center center center center center center center
+
+         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+         | Antecipação (meses) | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     |
+         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+         | Valor a pagar (R$)  | 5.000 | 4.750 | 4.500 | 4.250 | 4.000 | 3.750 | 3.500 | 3.250 | 3.000 |
+         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+   #. A medida que o tempo aumenta, o valor a pagar diminui. Entre dois meses consecutivos a variação do valor a pagar é de R$ `250,00`.
+   
+   #. A medida que o tempo aumenta, o valor do desconto aumenta. Entre dois meses consecutivos a variação do desconto é de R$ `250,00`.
+   
+   #. `5` % do valor da dívida.
+   
+   #.
+
+      .. figure:: _resources/antecipando.jpeg
+         :width: 400pt
+         :align: center
+
+   #. `D(n)=250n` e `V(n)=-250n+5000`.
+   
+   #. R$ `4.900,00`.
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Abastecendo a caixa
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Identificar a taxa de variação gerada por duas razões distintas.
+   * Reconhecer que a taxa de variação é negativa na situação descrita.
+   * Relacionar o preenchimento do quadro com a expressão algébrica que modela a situação, sem a necessidade da representação gráfica.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Discuta com seus alunos a importância da utilização dos conceitos trabalhados no processo de controle do desperdício de água potável. E como ações simples, pautadas em dados quantitativos podem influenciar na economia de água.
+   * Durante a aplicação da atividade, conduza as discussões para que seus alunos argumentem à respeito do sinal da taxa de variação.
+   * Possibilite à seus alunos a oportunidade de apresentar soluções diferentes das usuais, seja utilizando conceitos de Progressões aritméticas ou até mesmo de proporcionalidade (fazendo os ajustes necessários, já que `V(0)` não é zero).
+
+Uma caixa de água é abastecida por uma torneira cujo fluxo de água é constante e igual a `10` litros por minuto e, simultaneamente, seu conteúdo escoa, por um ralo, cujo fluxo de água é controlado à razão constante de `15` litros por minuto. Em certo instante, o volume de água dentro da caixa é de `100` litros, estando a torneira e o ralo ambos abertos. 
+
+#. Sendo V(t) o volume de água na caixa após t minutos do instante citado. Exiba uma sentença matemática para V(t).
+
+#. Complete a tabela abaixo com os valores correspondentes ao volume de água na caixa.
+
+   .. table:: 
+      :widths: 2 2 2 2 2 2 2 2 2
+      :column-alignment: center center center center center center center center center
+
+   +-----------------+---+---+---+---+---+---+----+----+
+   | Tempo (minutos) | 0 | 1 | 2 | 3 | 4 | 5 | 10 | 20 |
+   +-----------------+---+---+---+---+---+---+----+----+
+   | Volume (litros) |   | 4 |   |   |   |   |    |    |
+   +-----------------+---+---+---+---+---+---+----+----+
+
+#. À medida que os valores do tempo aumentam, o que ocorre com os valores correspondentes ao volume de água da caixa?
+   
+#. Quando os valores do tempo aumentam de `t=1` a `t=2`, o quanto variam os valores correspondentes ao volume de água da caixa? E quando estes valores aumentam de `t=12` a `t=13`?
+   
+#. Quando os valores do tempo aumentam em uma unidade, a partir de um instante qualquer, o quanto variam os valores correspondentes ao volume de água da caixa?
+
+.. admonition:: Resposta 
+
+   #. `V(t)=-5t+100`.
+   
+   #.
+      .. table::
+         :widths: 2 1 1 1 1 1 1 1 1 
+         :column-alignment: center center center center center center center center center
+
+         +-----------------+-----+----+----+----+----+----+----+----+
+         | Tempo (minutos) | 0   | 1  | 2  | 3  | 4  | 5  | 10 | 20 |
+         +-----------------+-----+----+----+----+----+----+----+----+
+         | Volume (litros) | 100 | 95 | 90 | 85 | 80 | 75 | 50 | 0  |
+         +-----------------+-----+----+----+----+----+----+----+----+
+
+   #. Diminuem.
+   
+   #. Reduzem `5` litros em ambos os casos.
+   
+   #. Em `5` litros.
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Temperatura Controlada
+------------------------------
+
+Num laboratório, um químico conseguiu controlar a variação de temperatura de dois compostos. A variação de ambos está associada às funções afins `f` e `g`, de maneira que a taxa de variação das temperaturas de cada um dos compostos seja constante. Observe o gráfico, onde o eixo das ordenadas indica a temperatura (em graus Celsius) de cada composto em função do tempo `t`, em minutos. O gráfico da figura a seguir modela a situação:
+
+
+.. figure:: _resources/at_temp_1.jpg
+   :width: 500pt
+   :align: center
+
+O gráfico da função `f` passa pelos pontos `A=(0,-4)` e `B=(4,0)`, indicando que o composto associado à `f` está com uma temperatura de `-4\,^{\circ}\mathrm{C}` no início da medição e após `4` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+O gráfico da função `g` passa pelos pontos `C=(0,2)` e `D=(2,0)`, indicando que o composto associado à `g` está com uma temperatura de `2\,^{\circ}\mathrm{C}` no início da medição e após `2` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
+
+Com base nas informações do texto responda as perguntas a seguir:
+
+#. Determine as expressões das funções afins `f` e `g`.
+
+#. A temperatura do composto associado à função `f` estão aumentando ou diminuindo? E do composto associado à função `g`?
+
+#. Em quanto tempo cada composto atinge a temperatura de 
+
+   `c.1)` `1\,^{\circ}\mathrm{C}`? 
+   
+   `c.2)` `-3\,^{\circ}\mathrm{C}`?`
+   
+   `c.3)` `-8\,^{\circ}\mathrm{C}`?
+   
+   `c.3)` `10\,^{\circ}\mathrm{C}`?
+   
+
+#. Após quantos minutos os dois compostos terão a mesma temperatura? E que temperatura é essa?
+
+
+.. admonition:: Resposta 
+
+   #. Como `f` intersecta o eixo das ordenadas no ponto `A=(0,-4)` temos que `b=-4`; substituindo o ponto `B=(4,0)`, ou seja, fazendo `f(4)=0` encontramos `a=1`. Do mesmo modo, `g` intersecta o eixo das ordenadas no ponto `C=(0,2)`, logo temos que `n=2`; substituindo o ponto `D=(2,0)`, ou seja, fazendo `f(2)=0` encontramos `m=-1`.
+
+   #. Observando os gráficos temos que: a temperatura do composto associado à função `f` está aumentando, e a temperatura do composto associado à função `g` está diminuindo.
+   
+   #. 
+   
+      `c.1)` Fazendo `f(t)=1` encontramos `t=5`, ou seja o composto associado à função afim `f`, atinge `1\,^{\circ}\mathrm{C}` após `5` minutos. E fazendo `g(t)=1` encontramos `t=1`, ou seja o composto associado à função afim `g`, atinge `1\,^{\circ}\mathrm{C}` após `1` minuto.
+      
+      `c.2)` Fazendo `f(t)=-3` encontramos `t=1`, ou seja o composto associado à função afim `f`, atinge `-3\,^{\circ}\mathrm{C}` após `1` minuto. E fazendo `g(t)=-3` encontramos `t=5`, ou seja o composto associado à função afim `g`, atinge `-3\,^{\circ}\mathrm{C}` após `5` minutos.
+      
+      `c.3)` Fazendo `f(t)=-8` encontramos `t=-4`, ou seja o composto associado à função afim `f`, nunca atingirá essa temperatura, já que `f` é sempre maior ou igual a  `-4\,^{\circ}\mathrm{C}`. E fazendo `g(t)=-8` encontramos `t=10`, ou seja o composto associado à função afim `g`, atinge `-8\,^{\circ}\mathrm{C}` após `10` minutos.
+      
+      `c.4)` Fazendo `f(t)=10` encontramos `t=14`, ou seja o composto associado à função afim `f`, atinge `10\,^{\circ}\mathrm{C}` após `14` minutos. E fazendo `g(t)=10` encontramos `t=-8`, ou seja o composto associado à função afim `g`, nunca atingirá essa temperatura, já que `g` é sempre menor ou igual a  `2\,^{\circ}\mathrm{C}`.
+      
+
+   #. Basta fazermos `f(t)=g(t)` , ou seja `t-4=-t+2`, resolvendo encontramos `t=3` minutos, e a temperatura é igual a `f(3)=g(3)=-1\,^{\circ}\mathrm{C}`. Portanto, os dois compostos atigem `-1\,^{\circ}\mathrm{C}` após `3` minutos de observação.
+
+
+.. _ativ-titulo-da-atividade:
+
+Atividade: Frio nas alturas
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Explorar o zero da função afim.
+   * Compreender em um contexto específico a importância da determinação do zero da função.
+   * Perceber que a altitude de acionamento do sistema anti-gelo (o zero da função) se obtém dividindo o valor da temperatura pelo valor absoluto da taxa de variação.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É possível responder à pergunta e) pensando como um problema de progressão aritmética: Se a temperatura local é `30^\circ C` e ela diminui `2^\circ C` a cada 1 000 pés, para chegar a zero devemos subtrair 2 de 30, um total de 15 vezes, logo, a altitude é 15 000 pés.
+   * Os itens f) e g) pretendem dar uma ideia de como se obtem a expressão geral do zero da função afim. Caso julgue pertinente, estimule-os a pensar em situações hipotéticas em que as taxas de variação da temperatura em função da altitude sejam diferentem.
+
+Mesmo em pleno verão um avião, precisa lidar com temperaturas muito baixas. Quando uma aeronave opera em baixas temperaturas, com umidade presente, há a possibilidade de formação de gelo que virá a se acumular na sua estrutura ou em seu grupo moto-propulsor. O gelo se forma quando um avião voa através de uma nuvem ou de um ambiente contendo gotículas de água super-resfriadas. O principal problema causado pela formação de gelo é a modificação do fluxo de ar sobre as superfícies das asas, prejudicando assim o desempenho da nave e acarretando, eventualmente, em mais gastos de combustível. Para evitar problemas como esses as aeronaves contam com um sistema anti-gelo que diminui a formação de camadas de gelo em sua fuselagem, produzindo os chamados “rastros de condensação” como na imagem.
+
+.. figure:: _resources/resized000.png
+   :width: 400pt
+   :align: center
+
+A temperatura na troposfera (primeira camada da atmosfera que tem aproximadamente `40\ 000` pés de altitude) diminui `2^\circ C` a cada aumento de `1\ 000` pés na altitude. Suponha que, em um determinado dia, a temperatura em um aeroporto seja de `30^\circ C`, e que a água congela a `0^\circ C`.
+
+#. Qual a taxa de variação, em `^\circ C/\text{pé}`, da temperatura da atmosfera, `T`, em função da altitude, `h`.
+
+#. A função `T(h)` é crescente ou decrescente? Como isso se reflete na taxa de variação?
+
+#. Determine uma expressão para `T(h)` e represente seu gráfico.
+
+#. Qual a temperatura a `37\ 200` pés de altitude?
+
+#. A partir de que altitude o piloto deverá acionar o sistema anti-gelo da aeronave?
+
+#. Em outro dia, a temperatura no mesmo aeroporto era de `25^\circ C`. Qual a altitude de acionamento do sistema anti-gelo, nesse caso?
+
+#. Estabeleça uma maneira de calcular a altitude de acionamento do sistema anti-gelo quando a temperatura do aeroporto é igual a `T_0`.
+
+
+.. admonition:: Resposta 
+
+   #. `-0,002 ^\circ C/\text{pé}`
+   #. `T` é decrescente, portanto a taxa de variação é negativa.
+   #. `T(h)=30-0,002h`
+   #. `T(37\ 200)=-44,4^\circ C`
+   #. `15\ 000` pés
+   #. `12\ 500` pés
+   #. Nesse caso, `T(h)=T_0-0,002h`. Para determinar a altitude, basta calcular `h` para o qual se tem `T(h)=0`, isto é, `h=\dfrac{T_0}{0,002}= 500 T_0`
+
+.. admonition:: Observação 
+
+   Seja `f:\mathbb{R}\to\mathbb{R}` uma função afim, `f(x)=ax+b`, cuja taxa de variação não é nula (isto é, o gráfico de `f` não é uma reta horizontal).
+   
+   A reta que é o gráfico de `f`, certamente terá interseção com o eixo das abscissas. O valor de `x` onde ocorre essa interseção é o zero da função afim.
+   
+   Seu valor pode ser calculado de duas formas:
+   
+   * Diretamente pela expressão de `f`:
+   
+   .. math::
+
+      f(k)=0 \Longleftrightarrow ak+b=0 \Longleftrightarrow ak=-b \Longleftrightarrow k=-\dfrac ba
+   
+   * Pelo gráfico, usando semelhança de triângulos:
+
+   .. figure:: _resources/zero_geometrico.png
+      :width: 400pt
+      :align: center
+
+   Por exemplo, o zero da função `f(x)=5x-21` é o valor `k=\dfrac{-(-21)}5`. 
+   
+   Já o zero da função `g(x)=7-\dfrac x2` é `k=\dfrac{-7}{-\frac 12}=14` .
+   
+.. _ativ-titulo-da-atividade:
+
+Atividade: Qual a frequência?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Utilizar a ideia de progressão aritmética para resolver um problema.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Evite usar a fórmula `a_n=a_1+(n-1)r` como único recurso para resolver problemas de P.A. Ela, apesar de parecer prática, pode esconder as ideias simples dos problemas de progressão aritmética. Por exemplo, da 1ª para 70ª frequencia, somamos 69 vezes a razão. E depois da 70ª para a 86ª, somamos 16 vezes a razão. Isso é mais simples do que escrever `a_{70}=a_1+(70-1)r` e `a_{86}=a_1+(86-1)r`.
+
+A Agência Nacional de Telecomunicações (ANATEL) determina que as emissoras de rádio FM utilizem as frequências de 87,9 a 107,9 MHz, e que haja uma diferença de 0,2 MHz entre emissoras com frequências vizinhas.
+
+#. Em uma determinada região as frequências entre a 70ª e 86ª são reservadas rádios comunitárias. Determine a frequência mínima e máxima para uma rádio comunitária.
+#. Determine quantas emissoras FM podem funcionar em uma mesma região.
+#. Lembre-se da frequência da rádio que você costuma ouvir e determine a posição dela na sequência das frequências do problema.
+
+.. admonition:: Resposta 
+
+   #. 101,7 a 104,9.
+   #. 101 emissoras FM.
+   #. Resposta individual.
+   

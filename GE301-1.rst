@@ -1,1716 +1,200 @@
+*************************************
+Explorando: interpretando o que vemos 
+*************************************
+
+.. _ativ-proj-interpretando:
+
+
+Atividade: será que é?
+------------------------------
+
+.. admonition:: Para o professor
+
+   **Objetivo específico:** perceber que a interpretação de uma imagem passa pelo cérebro e que, por este motivo, relações matemáticas presentes na imagem, como congruência, podem não ser compreendidas como tal.
+
+   **Observações e recomendações:** 
+   
+   * Os dois exemplos a seguir mostram que a parte visual do nosso cérebro pode não reconhecer movimentos de translação e rotação como isometrias. 
+
+   * Para o segundo item do exercício, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/BNCePM5C <https://www.geogebra.org/m/BNCePM5C>`_>, com a qual é possível visualizar dinamicamente que os três carros são congruentes por meio de um carro extra e de um contorno que podem ser movidos na construção.
+
+   .. figure:: _resources/ponzo-illusion-06.png
+      :width: 50pt
+
+   .. figure:: _resources/ponzo-illusion-05.*
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/BNCePM5C>.
+
+
+   * Para o segundo item do exercício, sugerimos o uso da construção GeoGebra disponível no endereço <`https://www.geogebra.org/m/mFSV2Mp6W <https://www.geogebra.org/m/mFSV2Mp6>`_>, com a qual é possível visualizar dinamicamente que os paralelogramos que são as tampas das mesas são congruentes por meio de um paralelogramo congruente intermediário.
+
+   .. figure:: _resources/mesa-de-shepard-03.png
+      :width: 50pt
+
+   .. figure:: _resources/mesa-de-shepard-07.*
+      :width: 400pt
+      :align: center
+
+      <https://www.geogebra.org/m/mFSV2Mp6W>.
+      
+   *  Caso haja interesse da turma, o tópico de ilusões visuais pode ser aprofundadado, por exemplo, por meio de um projeto. Nesta linha, o livro [Shapiro-et-al-2017]_ traz um compêndio atual no contexto da Psicologia. Ilusões visuais são mais do que fatos curiosos, como mostra o livro "Fisiologia Aeroespacial: Conhecimentos Essenciais para Voar com Segurança" de Thais Russomano e João de Carvalho Castro (2012), para a área de aviação.
+
+#. (Ponzo) Observe a :numref:`fig-proj-ponzo`. Qual carro é maior na imagem?
+
+   .. _fig-proj-ponzo:
+
+   .. figure:: _resources/ponzo-illusion-04.jpg
+      :width: 400pt
+
+      Qual carro é maior na imagem?
+
+
+#. (Shepard) Observe a :numref:`fig-proj-shepard`. Qual mesa é mais comprida na imagem?
+
+   .. _fig-proj-shepard:
+
+   .. figure:: _resources/mesa-de-shepard.jpg
+      :width: 400pt
+
+      Qual mesa é mais comprida na imagem?
+
+.. admonition:: Resposta
+
+   #. Tipicamente, as pessoas quando veem a :numref:`fig-proj-ponzo` acham que os carros têm tamanhos diferentes, sendo o carro mais acima na rua considerado o maior. Contudo, na imagem, os três carros têm o mesmo tamanho! Este tipo de viés de interpretação foi primeiro demonstrado pelo psicólogo italiano Mario Ponzo (1882-1960). Ele sugeriu que a mente humana usa o que está em torno de um objeto para julgar o seu tamanho. 
+   
+   .. https://en.wikipedia.org/wiki/Two-streams_hypothesis
+   
+   #. Tipicamente, as pessoas quando veem a :numref:`fig-proj-shepard`, acham que a mesa à esquerda é a mais comprida. Contudo, na imagem, as duas mesas têm as mesmas medidas! De fato, os paralelogramos que são as tampas das mesas são congruentes! Este tipo de viés de interpretação foi primeiro publicado pelo cientista cognitivo Roger Newland Shepard (1929-) em seu livro *Mind Sights* de 1990.
+   
+
+
+****************************************************
+Organizando as ideias: ver é uma atividade complexa! 
+****************************************************
+
+Os dois exemplos apresentados na atividade anterior mostram que o ato de ver e compreender uma imagem não se encerra na própria imagem, mas depende da maneira que nosso cérebro processa toda a informação e se ajusta ao estímulo visual. 
+
+Psicólogos têm mapeado outras situações onde nosso cérebro faz adequações visuais subjetivas ao contexto: forma, cor, iluminação, distância, localização e movimento. Mais ainda: não só o sistema visual é afetado por ilusões, os demais sentidos também o são. Um exemplo clássico é o Efeito McGurk que mostra **como o que você vê altera o modo como você ouve**! Experimente você mesmo por meio do vídeo <`https://goo.gl/k241EQ <https://goo.gl/k241EQ>`_> no YouTube.
+
+.. figure:: _resources/efeito-mcgurk-01.png
+   :width: 50pt
+
+
+O fato de nosso cérebro estar sucetível a estes tipos de ilusões pode parecer um defeito a princípio mas, como mostra o cientista cognitivo Donald Hoffman nesta  `palestra TED <https://goo.gl/x5H5oa>`_, isto é resultado de um processo evolutivo que garantiu a nossa sobrevivência.
+
+
+   .. figure:: _resources/ted-realidade-02.png
+      :width: 50pt
+
+   .. figure:: _resources/ted-realidade-01.jpg
+      :width: 400pt
+      :align: center
+
+      <https://goo.gl/x5H5oa>.
+
+
+Outro aspecto da interpretação de representações 2D de objetos 3D se refere à questão de ambiguidade: um mesmo desenho plano pode ser a representação de objetos tridimensionais diferentes. Considere, por exemplo, a Imagem (A) na :numref:`fig-proj-ambiguidade-01`. Ela pode ser a representação de um cubo visto de cima como na Imagem (B) ou de um cubo visto de baixo como na Imagem (C).
+
+   .. _fig-proj-ambiguidade-01:
+
+   .. figure:: _resources/ambiguidade-01_1.jpg
+      :width: 400pt
+      :align: center
+
+      Um cubo visto de cima ou de baixo?
+
+De fato, a Imagem (A) pode até mesmo nem ser a representação de um cubo, como mostra a animação da :numref:`fig-proj-ambiguidade-02`. A Imagem (A) é conhecida como :index:`Cubo de Necker`, em homenagem ao cristalógrafo Louis Albert Necker (1786-1861) que observou este tipo de ambiguidade em 1832.
+
+   .. _fig-proj-ambiguidade-02:
+
+   .. figure:: _resources/ambiguidade-02.*
+      :width: 200pt
+      :align: center
+
+      Versão interativa: <https://goo.gl/CXR6AG>.
+
+
+Compreender como vemos e interpretamos representações 2D de objetos 3D obtidas por projeções centrais e paralelas é uma habilidade importante que afeta o modo de nos cuminicarmos e interagirmos com o mundo.
+
+
+.. admonition:: Para refletir
+
+   Se nosso cérebro distorce os estímos que recebemos do mundo a nossa volta, como saber o que é real?
+   
+
+.. admonition:: Para refletir
+
+   Será que uma pessoa que nasceu cega mas que, posteriormente, recuperou sua visão, saberia ver de imediato? Ou seria necessário "ensiná-la a ver"? Como saber, por exemplo, onde a imagem de um objeto termina e a imagem de outro começa?  Esta `palestra TED <https://goo.gl/KLdhKg>`_ discute esses assuntos, mostra a importância do movimento no processo de se "aprender a ver" e conta como o trabalho do neurocientista indiano Pawan Sinha tem mudado a concepção sobre os mecanismos da visão e, também, as vidas de muitas crianças que nasceram cegas. 
+
+   .. figure:: _resources/ted-aprendendo-a-ver-02.png
+      :width: 50pt
+
+   .. figure:: _resources/ted-aprendendo-a-ver-01.jpg
+      :width: 400pt
+      :align: center
+
+      <https://goo.gl/KLdhKg>.
+
+
+.. admonition:: Para o professor
+
+   O livro [Duval-2011]_ é uma excelente introdução para as questões de representações semióticas no Ensino da Matemática.
+
+.. admonition:: Para refletir
+
+   Todas estas questões de representações e significados fazem parte da :index:`semiótica`, disciplina que se ocupa do estudo dos signos e dos processos significativos na natureza e na cultura. Os signos, aqui, não estão restritos à desenhos em uma folha de papel. Eles podem ser qualquer veículo de significação ou representação de um objeto, de um conceito ou de uma ideia, como textos, sons e gestos. Um dos pontos destacados pela semiótica é a distinção entre a representação de algo e este próprio algo. Um exemplo clássico é dada pela pintura na :numref:`fig-proj-semiotica-01`. O que é que está na pintura? Se você respondeu "cachimbo", saiba que a legenda em Francês "Ceci n'est pas une pipe." tem como tradução "Isto não é um cachimbo.". Segundo o autor da pintura, o surrealista belga René Magritte (1898-1967), ele não poderia escrever o contrário, pois a pintura não é um cachimbo, mas uma representação de um cachimbo. O nome da pintura: "A Traição das Imagens".
+   
+      .. _fig-proj-semiotica-01:
+   
+      .. figure:: _resources/semiotica-01.jpg
+         :width: 350px
+         
+         Pintura de René Magritte (1898-1967).
+
+   Uma vez que a comunicação se dá por meio de signos, a semiótica é de interesse para muitas áreas: Propaganda, Cinema, Ciência, Literatura, Religião … Em Matemática, o aspecto semiótico é fundamental, como aponta [Pinilla-2007]_:
+      
+      É importante ter em mente que os conceitos matemáticos não existem na realidade concreta. O ponto P, o número 3, adição, paralelismo entre retas não são objetos concretos os quais existem na realidade empírica. Eles são conceitos puros, ideais e abstratos e, desta maneira, eles não podem ser "exibidos empiricamente", como em outras Ciências. Em Matemática, os conceitos só podem ser representados por um registro semiótico determinado. De fato, em Matemática, não trabalhamos diretamente com os objetos (isto é, com os conceitos), mas com suas representações semióticas.
+
+   Caso você queira saber mais sobre semiótica, recomendamos começar com o livro "O que é semiótica?" da Coleção "Primeiros Passos" da Editora Brasiliense ([Santaella-1998]_).
+
+
+.. _obs-proj-por-que-estudar-o-assunto:
+
+.. admonition:: Observação
+
+   No que se segue, iremos estudar duas formas de representação bem específicas: aquelas obtidas por projeções em perspectiva e projeções paralelas. 
+   
+   As projeções em perspectiva fornecem um modelo matemático para a visão humana e para dispositivos óticos (como câmeras) e o estudo deste modelo auxilia na compreensão de como vemos, comunicamos e interagimos com o mundo. As projeções paralelas, por sua vez, fornecem uma representação mais simples e mais fácil de se entender e, por este motivo, elas têm sido utilizadas para a confecção de ilustrações em várias áreas: Arquitetura, Engenharia, Biologia, Física, etc.
+      
+   Cabe observar que projeções em perspectiva e paralelas fazem parte das habilidades espaciais as quais, por sua vez, constituem um dos tipos reconhecidos de inteligência humana ([Gray-et-al-2004]_, [Gardner-2011]_). 
+      
+   As habilidades espaciais são particularmente críticas para profissões relacionadas com as áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM), conforme apontam vários estudos recentes ([NRC-2006]_, [Uttal-et-al-2012]_, [Khine-2017]_, [Newcombe-2017]_).
+      
+   Mesmo no dia a dia, é importante, por exemplo, saber interpretar os diagramas 2D de objetos 3D que descrevem como montar uma cama, colocar um cartucho em uma impressora, abrir a porta de emergência do avião, descobrir a saída de emergência mais próxima em um hotel ou em um estádio de futebol (mapa de fuga, saídas de emergência), etc. 
+   
+      .. figure:: _resources/planta-baixa-03.jpg
+         :width: 400pt
+      
+      Mapa do circuito de visitação do terceiro andar do Aquário do Rio de Janeiro (fonte: Joselí Maria Silva dos Santos).
+      
+      
+   Como veremos, as representações obtidas por projeções em perspectiva e projeções paralelas possuem propriedades bem **específicas**. Reconhecer e usar essas propriedades adequadamente é importante para você entender e se fazer entender em termos de comunicação visual.
+   
+.. admonition:: Para refletir
+
+   | *This life five windows of the soul*
+   | *Distorts the heaven from pole to pole*
+   | *And leads you to believe a lie*
+   | *When you see with, no thro', the eye.*
+   
+   Poema do poeta, pintor, ilustrador e entalhador William Blake (1757-1827).
+
+
+
+
+
 .. HJB: perguntar para o aluno mais para o final como ele sabia que as sombras pela luz do Sol de arestas paralelas do cubo vazado são paralelas ...
 
 
-
-***********************************************
-Explorando: projeções em perspectiva e projeções paralelas
-***********************************************
-
-.. _ativ-proj-luz-e-sombras:
-
-Atividade: luzes e sombras
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos:**
-
-   * Observar o comportamento das sombras de alguns objetos geométricos familiares, identificando o que varia e o que não varia de acordo com a posição do objeto, do anteparo de projeção e da fonte de luz; descrever essas variações.
-   
-   * Comparar as propriedades dos dois tipos de sombras: aquelas produzidas por uma lanterna de celular (projeção em perspectiva) e aquelas produzidas pela luz solar (projeção paralela).
-
-   
-   **Observações e recomendações:**
-   
-   * Sugerimos que os alunos sejam divididos em grupos de três. Nesta configuração, um aluno poderá fazer os experimentos, o outro poderá tomar eventuais medidas das sombras e o terceiro poderá segurar o anteparo e registrar as respostas.
-   
-   * Para a confecção do cubo vazado, o seguinte molde pode ser usado. Uma versão em PDF para impressão está disponível neste endereço: <https://goo.gl/ap7NV8>.
-   
-      .. figure:: _resources/cubo-vazado_1.jpg   
-   
-    Naturalmente, outros modelos podem ser usados, como aqueles feitos com canudinhos. O importante é que modelo não fique muito irregular e tenha as faces vazadas para que se possa ver todas as arestas.    
-   
-   * Sugerimos que grupos diferentes usem triângulos com formatos diferentes. Se o triângulo for confeccionado com papel comum, sugerimos que ele seja reforçado (colando-se duas ou mais cópias) para evitar que ele se dobre durante a realização dos experimentos.
-   
-   * Dependendo do tempo disponível em seu planejamento para este capítulo, você pode considerar incluir outros objetos geométricos (esferas, cones, pirâmides).
-   
-   * Caso nenhum celular esteja disponível, pode-se usar uma lanterna pequena comum em substituição. O importante é que a fonte de luz seja bem concentrada para se evitar efeitos de penumbra.
-   
-   * Apesar das paredes e do chão serem anteparos naturais que podem ser usados, nos experimentos com a luz do Sol, recomendamos o emprego de uma folha de papel A4 ou cartolina para projetar as sombras. Isto, além de permitir regular o ângulo de incidência dos raios do Sol sobre o anteparo, permitirá também que a sombra fique mais nítida.
-   
-   * No caso das atividades que envolvem medidas, não se espera que estas sejam feitas de forma muito precisa. O importante é que o aluno perceba, por exemplo, que com o ajuste certo duas medidas poderiam ser iguais ou que, decididamente, as medidas podem ser feitas diferentes.
-   
-
-
-Nesta atividade vamos explorar a geometria das sombras! Para isto, você receberá um *kit* cujas sombras deverá analisar: um cubo vazado, um triângulo e um lápis (ou uma caneta ou ainda um canudinho plástico). 
-
-No que se segue, o termo *configuração* significa uma escolha da posição do objeto, da fonte de luz e do anteparo, conforme o caso.
-
-**Experimentos com um lápis**
-
-#. O comprimento da sombra é sempre igual ao comprimento do lápis, independentemente da configuração? 
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-   
-#. Existe alguma configuração para a qual o comprimento da sombra seja igual ao comprimento do lápis?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-   
-#. Segure o seu lápis no meio com as pontas de seus dedos, isto é, considerando o lápis como se fosse um segmento de reta, segure-o pelo seu ponto médio. A sombra das pontas de seus dedos sempre está no meio da sombra do lápis independentemente da configuração? 
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-  
-#. Segure o seu lápis, com as pontas de seus dedos, a aproximadamente 1/3 de uma das extremidades. Existe alguma configuração para a qual a sombra das pontas de seus dedos está no meio da sombra do lápis?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-   
-#. Em qual configuração a sombra do lápis tem a menor área possível?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. Existe alguma configuração onde a sombra não se altere ao mover o lápis em alguma direção?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-  
-**Experimentos com um triângulo**
-
-#. Existe alguma configuração para a qual a sombra do triângulo é um triângulo isósceles?
-
-   * Resposta para o caso da luz da lanterna do celular:
-  
-   * Resposta para o caso da luz do Sol:
-
-#. Existe alguma configuração para a qual a sombra do triângulo é um triângulo equilátero?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. Em qual configuração a sombra do triângulo tem a menor área possível?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. Existe alguma configuração onde a sombra do triângulo não se altere ao movê-lo em alguma direção? Qual?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. O baricentro de um triângulo é o  ponto de interseção das :index:`medianas` do triângulo, isto é, o ponto de interseção dos segmentos de reta que ligam um vértice ao ponto médio do lado oposto. Faça um furo no :index:`baricentro` do seu triângulo, de forma que, ao expô-lo à luz, o ponto correspondente no anteparo ficará iluminado. Este ponto iluminado é baricentro da sombra do triângulo?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-**Experimentos com um cubo vazado**
-
-#. As arestas do cubo vazado têm todas o mesmo tamanho. O mesmo acontece para as sombras destas arestas?
-
-   * Resposta para o caso da luz da lanterna do celular:   
-   * Resposta para o caso da luz do Sol:
-
-
-#. Existe alguma configuração para a qual a sombra do cubo vazado seja semelhante à imagem da :numref:`fig-proj-quadrado-vazado-01`? Em caso afirmativo, é possível manter esta sombra movendo o cubo vazado em alguma direção? Qual?
-
-    .. _fig-proj-quadrado-vazado-01:
-   
-    .. figure:: _resources/quadrado-vazado-01_2.jpg
-       :width: 100pt
-       
-       Quadrado vazado.
-   
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. Arestas que são perpendiculares no cubo vazado têm sombras que são perpendiculares no anteparo de projeção?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-#. Arestas que são são paralelas no cubo vazado têm sombras que são paralelas no anteparo de projeção?
-
-   * Resposta para o caso da luz da lanterna do celular:
-   
-   * Resposta para o caso da luz do Sol:
-
-
-**Outros experimentos**
-
-#. Como você faria para determinar a direção de incidência dos raios solares no anteparo?
-
-#. Posicione o anteparo perpendicularmente à direção de incidência dos raios solares. O que acontece com o formato da sombra do lápis, do triângulo ou do cubo se você movê-los **paralelamente** à direção de incidência dos raios solares?
-
-#. Na :numref:`fig-proj-sombra-vazada-01`, PQRS é sombra de qual face do cubo vazado? Tente responder analisando apenas a figura e, depois, teste a sua resposta com um experimento!
-    
-    .. _fig-proj-sombra-vazada-01:
-   
-    .. figure:: _resources/sombra-vazada-01_1.jpg
-       :width: 400pt
-       
-       Sombra vazada.
-
-#. Na configuração da :numref:`fig-proj-sombra-vazada-01`, o que acontece com a sombra do cubo vazada se a lanterna do celular se aproximar do cubo? E se a lanterna se afastar?
-
-
-#. Na :numref:`fig-proj-sombra-vazada-02`, PQRS é sombra de qual face do cubo vazado? Tente responder analisando apenas a figura e, depois, teste a sua resposta com um experimento!
-    
-    .. _fig-proj-sombra-vazada-02:
-   
-    .. figure:: _resources/sombra-vazada-02_1.jpg
-       :width: 400pt
-       
-       Sombra vazada.
-
-.. admonition:: Resposta
-
-  **Experimentos com o lápis**
-
-  #. * Resposta para o caso da luz da lanterna do celular: 
-   
-     Não, pois é possível posicionar o lápis paralelo ao anteparo de projeção com a lanterna apontada para o meio do lápis e, com isso, o comprimento da sombra aumentará a medida que aproximarmos a lanterna do lápis.  Caso afastemos a lanterna do lápis, a sombra diminuirá de comprimento.
-   
-     .. _fig-experimentoslapislanterna1:
-
-     .. figure:: _resources/20180204_140208.jpg
-        :width: 200pt
-        :align: center
-
-        Lápis e sua sombra com comprimentos diferentes.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     Não, pois se posicionarmos o lápis paralelo e oblíquo ao anteparo de projeção com o anteparo perpendicular aos raios do Sol, as sombras terão comprimentos diferentes em cada um dos casos. 
-       
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Sim. Se rotacionarmos o lápis em torno do ponto onde nossos dedos o tocam enquanto mantemos a lanterna apontada para este mesmo ponto, a sombra terá diversos comprimentos e um deles é o próprio comprimento do lápis.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     Sim. Se posicionarmos o lápis e o anteparo de projeção perpediculares aos raios solares, o lápis e sua sombra terão o mesmo comprimento. 
-     
-     .. _fig-experimentoslapissol1:
-
-     .. figure:: _resources/20180212_1453290.jpg
-        :width: 200pt
-        :align: center
-
-        Lápis e sua sombra com comprimentos diferentes.
-   
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Não, ao posicionar o lápis de forma oblíqua ao anteparo de projeção com a lanterna apontando para o ponto onde nossos dedos o tocam, o comprimento da sombra não será dividido ao meio pela sombra da ponta dos dedos.
-   
-     .. _fig-experimentoslapislanterna2:
-
-     .. figure:: _resources/20180204_140336.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra das pontas dos dedos não está no meio da sombra do lápis.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     Sim, neste caso, a sombra das pontas dos dedos sempre estará no meio da sombra do lápis.
-     
-     .. _fig-experimentoslapissol2:
-
-     .. figure:: _resources/20180212_1454080.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra das pontas dos dedos está no meio da sombra do lápis.
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Sim. Mais uma vez, se rotacionarmos o lápis em torno do ponto onde nossos dedos o tocam enquanto mantemos a lanterna apontada para este mesmo ponto, podemos encontrar o resultado desejado.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     A configuração desejada não existe.
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Quando o lápis é posicionado perpendicular ao anteparo de projeção e apontando para a lanterna, sua sombra é um pequeno círculo.
-   
-     .. _fig-experimentoslapislanterna3:
-
-     .. figure:: _resources/20180204_140403.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do lápis é um pequeno círculo.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     Quando o lápis é posicionado paralelo aos raios solares e perpendicular ao anteparo de projeção, sua sombra também é um pequeno círculo.
-     
-     .. _fig-experimentoslapissol3:
-
-     .. figure:: _resources/20180212_1453490.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do lápis é, novamente, um pequeno círculo.
-   
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Não, pois ao movimentar o lápis, a sombra sempre se altera.
-   
-     * Resposta para o caso da luz do Sol:
-   
-     Sim, ao posicionar o lápis e o anteparo de projeção perpendiculares aos raios de Sol, aproximando ou afastando o lápis do anteparo seguindo a direção dos raios solares, a sombra permanece do mesmo comprimento. 
-
-  **Experimentos com o triângulo**
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-   
-     Sim, pois é possível movimentar o triângulo de modo que dois de seus lados tenham o mesmo tamanho de sombra.
-   
-     .. _fig-experimentostriangulolanterna1:
-
-     .. figure:: _resources/20180204_142355.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do triângulo é um triângulo isósceles.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Sim, pois é possível movimentar o triângulo de modo que dois de seus lados tenham o mesmo tamanho de sombra.
-   
-  #. * Resposta para o caso da luz da lanterna do celular:
-  
-     Sim, pois é possível movimentar o triângulo de modo que três de seus lados tenham o mesmo tamanho de sombra.
-   
-     .. _fig-experimentostriangulolanterna2:
-
-     .. figure:: _resources/20180204_142323.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do triângulo é um triângulo equilátero.
-   
-     * Resposta para o caso da luz do Sol:
-
-     Sim, pois é possível movimentar o triângulo de modo que dois de seus lados tenham o mesmo tamanho de sombra.
-   
-  #. * Resposta para o caso da luz da lanterna do celular:
-  
-     A menor área possível é atingida quando o triângulo é posicionado de forma que sua sombra seja um segmento de reta. 
-   
-     .. _fig-experimentostriangulolanterna3:
-
-     .. figure:: _resources/20180204_142612.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do triângulo é um segmento de reta.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Assim como no caso anterior, a menor área possível é atingida quando o triângulo é posicionado de forma que sua sombra seja um segmento de reta. 
-
-  #. * Resposta para o caso da luz da lanterna do celular:
-  
-     Não. Ao movimentar o triângulo, sua sombra sempre será alterada.
- 
-     * Resposta para o caso da luz do Sol:
-     
-     Sim. Para isso, basta movimentar o triângulo na direção dos raios do Sol.
-     
-  #. * Resposta para o caso da luz da lanterna do celular:
-  
-     Não. O ponto iluminado não é o baricentro do triângulo.
- 
-     * Resposta para o caso da luz do Sol:
-     
-     Sim. O ponto iluminado é o baricentro da sombra do triângulo.
-     
-     
-  **Experimentos com o cubo vazado**
-
-  #. * Resposta para o caso da luz da lanterna do celular: 
-   
-     Não. Nem todas as sombras das arestas do cubo possuem o mesmo tamanho.  
-   
-     .. _fig-experimentoscubolanterna1:
-
-     .. figure:: _resources/20180204_135307.jpg
-        :width: 200pt
-        :align: center
-
-        Sombras das areas do cubo possuem tamanhos diferentes.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Sim. As sombras de todas as arestas do cubo possuem o mesmo tamanho.
-     
-     .. _fig-experimentoscubosol1:
-
-     .. figure:: _resources/20180212_145440.jpg
-        :width: 200pt
-        :align: center
-
-        Sombras das areas do cubo possuem o mesmo tamanho.
-        
-  #. * Resposta para o caso da luz da lanterna do celular: 
-   
-     Sim, é possível posicionar o cubo de forma que sua sombra seja semelhante à da :numref:`fig-proj-quadrado-vazado-01`. Movimentando o cubo na direção perpendicular ao anteparo de projeção e mantendo a lanterna apontada para o meio da face do cubo mais distante do anteparo, a sombra continuará sendo um quadrado.  
-     
-     .. _fig-experimentoscubolanterna2:
-
-     .. figure:: _resources/20180204_135548.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do cubo é um quadrado.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Sim, é possível encontrar a sombra do cubo semelhante à imagem da :numref:`fig-proj-quadrado-vazado-01`. Movimentando o cubo na direção dos raios solares e mantendo o anteparo na mesma posição, a sombra se manterá como a da :numref:`fig-proj-quadrado-vazado-01`.
-     
-     .. _fig-experimentoscubosol2:
-
-     .. figure:: _resources/20180212_145456.jpg
-        :width: 200pt
-        :align: center
-
-        A sombra do cubo é um quadrado.    
-     
-  #. * Resposta para o caso da luz da lanterna do celular: 
-   
-     Não. Nem sempre as arestas perpendiculares determinam sombras perpendiculares.
-     
-     .. _fig-experimentoscubolanterna3:
-
-     .. figure:: _resources/20180204_135542.jpg
-        :width: 200pt
-        :align: center
-
-        Arestas perpendiculares do cubo nem sempre determinam sombras perpendiculares.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Não. Nem sempre as arestas perpendiculares determinam sombras perpendiculares.
-     
-     .. _fig-experimentoscubosol3:
-
-     .. figure:: _resources/20180212_145519.jpg
-        :width: 200pt
-        :align: center
-
-        Arestas perpendiculares do cubo nem sempre determinam sombras perpendiculares.
-  
-  #. * Resposta para o caso da luz da lanterna do celular: 
-   
-     Não. Nem sempre arestas paralelas possuem sombras paralelas.
-     
-     .. _fig-experimentoscubolanterna4:
-
-     .. figure:: _resources/20180204_135451.jpg
-        :width: 200pt
-        :align: center
-
-        Arestas paralelas do cubo nem sempre determinam sombras paralelas.
-   
-     * Resposta para o caso da luz do Sol:
-     
-     Não. Nem sempre arestas paralelas possuem sombras paralelas.
-     
-     .. _fig-experimentoscubosol4:
-
-     .. figure:: _resources/20180212_1455210.jpg
-        :width: 200pt
-        :align: center
-
-        Arestas paralelas do cubo nem sempre determinam sombras paralelas.
-        
-  **Outros experimentos**
-
-  #. Observaria a direção da sombra determinada por algum objeto. 
-  
-  #. As sombras não se alteram.
-  
-  #. `DHGC`
-  
-  #. Se a lanterna se aproxima do cubo, sua sombra aumenta. Se a lanterna se afasta do cubo, sua sombra diminui.
-  
-  #. `AEHD` 
-  
-.. _ativ-proj-modelos-de-projecao:
-
-Atividade: dois modelos de projeção
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** ponderar sobre concepções de modelos geométricos que permitam representar projeções de sombras considerando, para isto, algumas hipóteses simplificadoras.
-   
-   **Observação:** caso um objeto opaco seja iluminado por uma fonte não pontual de luz, o bloqueio da luz por este objeto produz uma sombra mais complexa, com regiões e intensidades diferentes, como mostra o exemplo da :numref:`fig-proj-sombras-01`.
-    
-      .. _fig-proj-sombras-01:
-   
-      .. figure:: _resources/sombras-01.jpg
-         :width: 350pt
-         
-         Bloqueio de uma fonte não pontual de luz.
-         
-  
-O objetivo desta atividade é levar você a ponderar sobre concepções de modelos geométricos que permitam representar projeções de sombras considerando, para isto, algumas hipóteses simplificadoras. Esses modelos serão úteis no que se segue ao longo do capítulo. De fato, com esse conhecimento, será possível explicar e quantificar os fenômenos que você observou na :ref:`ativ-proj-luz-e-sombras` e, também, compreender o seu uso em aplicações diversas.
-
-#. Vamos supor que a lanterna do celular possa ser representada por um ponto que emite raios de luz.
-
-   * Desenhe, a lápis, um diagrama representando o ponto de luz, alguns raios luminosos que dele emanam e como estes atingem o anteparo.
-   
-   * No desenho que você fez no item anterior, inclua um triângulo opaco entre o ponto de luz e o anteparo. Que partes dos raios de luz deixarão de atingir o anteparo? Redesenhe estas partes usando uma linha tracejada. Como ficará desenhada a sombra do triângulo?
-   
-#. 
-
-   * Considere a :numref:`fig-proj-raios-do-sol-03`. Pergunta 1: qual representação do Sol é mais comum entre as crianças? (A), (B) ou (C)? Pergunta 2: qual representação do Sol é mais fiel ao comportamento dos raios de luz? (A), (B) ou (C)?
-   
-   .. _fig-proj-raios-do-sol-03:
-   
-   .. figure:: _resources/raios-de-luz-03_1.jpg
-      :width: 400px
-         
-      Três representações dos raios do Sol.
-   
-   .. Ver <https://www.maa.org/press/periodicals/convergence/eratosthenes-and-the-mystery-of-the-stades-parallel-light-rays>.
-   
-   * Uma simplificação frequentemente usada é a de admitir que os raios do Sol chegam paralelos à Terra. Essa simplificação é razoável para você? Dê argumentos que justifiquem sua opinião!
-   
-   * Admitindo que os raios do Sol chegam paralelos à Terra, desenhe, a lápis, um diagrama representando alguns raios solares atingindo o anteparo.
-   
-   * No desenho que você fez no item anterior, inclua um triângulo opaco. Que partes dos raios de luz deixarão de atingir o anteparo? Redesenhe estas partes usando uma linha tracejada. Como ficará desenhada a sombra do triângulo?
-   
-   
-.. admonition:: Resposta
-
-  #. * A :numref:`fig-experimentos-modelosdeproj1` mostra uma fonte de luz, alguns raios luminosos que dela emanam e o anteparo. 
-  
-     .. _fig-experimentos-modelosdeproj1:
-
-     .. figure:: _resources/Lanterna_Raios.png
-        :width: 280pt
-        :align: center
-
-        Diagrama representando uma fonte de luz e raios luminosos que dela emanam.
-   
-     * A :numref:`fig-experimentos-modelosdeproj2` mostra a mesma situação anterior, onde foi incluído o triângulo opaco desenhado na cor vermelha. Os raios de luz que chegam a este triângulo não alcançam o anteparo e portanto, foram pontilhados a partir do ponto onde tocam o triângulo. A sombra provocada pelo triângulo no anteparo foi desenhada na cor preta.
-
-     .. _fig-experimentos-modelosdeproj2:
-
-     .. figure:: _resources/Lanterna_Raios_Triangulo.png
-        :width: 280pt
-        :align: center
-
-        Diagrama representando um fonte de luz e seus raios luminosos, assim como a sombra produzida por um triângulo opaco.
-        
-  #. * As crianças normalmente representam o Sol como em (A), mas o Sol emana raios solares em todas as direções e por isso, sua representação mais fiel é a mostrada em (C). 
-   
-     * Costuma-se supor que os raios de luz solares que atingem a Terra são paralelos. O Sol emana luz de forma homogênea em todas as direções ao seu redor e, portanto, não é possível que os seus raios sejam todos paralelos entre si. 
-     
-     .. _fig-experimentos-modelosdeproj5:
-
-     .. figure:: _resources/SolTerraRaiosSolares.png
-        :width: 200pt
-        :align: center
-			        
-        Ilustração contendo o Sol e a Terra que não considera a escala real. 
-     
-     Apenas uma parte dos raios emitidos pelo Sol atingem a Terra. Na verdade, repare na :numref:`fig-experimentos-modelosdeproj5`, que apenas a porção delimitada por raios que partem de pontos quase diametralmente opostos do Sol é que atingem a Terra, formando algo similar a um cone truncado. 
-     
-     A priori, você pode achar que, diante da situação mostrada na ilustração contida na :numref:`fig-experimentos-modelosdeproj5`, é um absurdo supor que os raios solares que atingem a Terra sejam paralelos, já que é possível detectar nesta simples ilustração raios que não são paralelos (como os que desenhamos para mostrar a delimitação dos raios que atingem a Terra). Mas, note que esta ilustração foi feita sem considerar a escala existente entre esses dois astros, e então, apesar do posicionamento espacial estar correto e também a ideia de que apenas parte dos raios solares atingem a Terra, a ilustração não condiz fielmente com a realidade.  
-     
-     Para retratar fielmente a realidade, é preciso considerar que o Sol possui um diâmetro de aproximadamente `1.390.000~\text{km}` enquanto a Terra possui cerca de `13.000~\text{km}` de diâmetro, e que a distância entre eles é de cerca de `150` milhões de quilômetros (valores retirados do site da NASA - *National Aeronautics and Space Administration*). Diante de valores tão altos, não é possível encontrar uma escala adequada para construir esta mesma ilustração e ainda fazer com que ela caiba na página deste livro! Para você ter uma melhor intuição de como valores tão grandes se comportam na prática, visite a página <https://goo.gl/sVfkQJ> e visualize os astros e sua distância em uma escala real. 
-     
-     .. _fig-experimentos-modelosdeproj6:
-
-     .. figure:: _resources/SolTerraRaiosSolares2.png
-        :width: 300pt
-        :align: center
-			        
-        Ilustração contendo o Sol e a Terra, agora mais afastados, que não considera a escala real. 
-        
-     Já que não podemos desenhar uma situação com uma escala real aqui nesta página, vamos tentar intuitivamente imaginar o que acontece na situação real. Na :numref:`fig-experimentos-modelosdeproj6`, refizemos a mesma ilustração anterior, mas posicionamos a Terra e o Sol mais afastados. Comparando as duas ilustrações, podemos perceber que a inclinação dos raios solares é menor quando a Terra e o Sol estão mais afastados. Com a grande distância existente entre o Sol e a Terra (muito maior que a mostrada nas duas ilustrações), haverá então uma diminuição ainda maior na inclinação dos raios solares que atingem a Terra. Essa inclinação é tão pequena que os raios parecem ser paralelos! Por isso costuma-se supor que os raios são paralelos, apesar de eles não serem. Vamos calcular o ângulo de inclinação entre dois raios solares em uma situação específica para justificar nossa intuição de que a inclinação dos raios é muito pequena. Para isso calcularemos o ângulo entre dois raios usando Trigonometria.
- 
-     .. _fig-experimentos-modelosdeproj7:
-
-     .. figure:: _resources/SolTerraAngulo1_1.png
-        :width: 280pt
-        :align: center
-        
-        Raios solares incidindo sobre o ponto `P` da Terra. 
-     
-     Na ilustração mostrada na :numref:`fig-experimentos-modelosdeproj7`, considere `C_T` e `C_S` como os centros da Terra e do Sol, respectivamente, e vamos calcular o ângulo `Q\hat{P}R` entre os raios solares `PQ` e `PR` que atingem o ponto `P` da Terra vindos do Sol. Note que há algo similar a um cone (não completo) de raios solares incidindo sobre `P`, mas `Q\hat{P}R` é o maior ângulo possível entre dois raios solares que atingem `P`. Quaisquer outros dois raios estarão contidos nesse cone e então, seu ângulo será menor que `Q\hat{P}R`. Além disso, `PQ` e `PR` deverão ser perpendiculares ao raio do Sol para que, de fato, `Q\hat{P}R` seja o maior ângulo possível entre dois raios que atingem `P`. 
-     
-     Traçando o segmento que une `C_T` e `C_S`, o quadrilátero `PQC_SR` fica dividido em dois triângulos congruentes `PQC_S` e `PRC_S` (pelo caso lado, ângulo, lado). Assim, os ângulos `Q\hat{P}C_S` e `R\hat{P}C_S` são congruentes e serão chamados de `\theta` para facilitar a escrita. Como 
-     
-     .. math::
-     
-        d(Q,C_S)= 695.000
-
-     e 
-     
-     .. math::
-     
-        \begin{array}{ll}
-        d(P,C_S) & = d(C_T, C_S)-d(C_T,P)\\ 
-              &= 150.000.000-6.500\\
-              &=149.993.500,
-        \end{array}
-     
-     então
-     
-     .. math::
-     
-        \sin\theta = \frac{d(Q,C_S)}{d(P,C_S)}=0{,}00463.
-     
-     Portanto, `\theta=\arcsin(0,00463) = 0{,}26528` e assim, como a medida do ângulo `Q\hat{P}C_S` é igual a `2\theta`, temos que 
-     
-     .. math::
-     
-        m(Q\hat{P}C_S)=0{,}53056^\circ.
-          
-     De acordo com os cálculos feitos acima, o maior ângulo  possível entre dois raios solares que atingem o ponto `P` é de `0{,}53056^\circ`. Este valor é tão pequeno (podendo ser ainda menor), que torna-se praticamente imperceptível, e assim, os raios solares que atingem `P` parecem paralelos. Esse mesmo raciocínio pode ser utilizado para calcular o ângulo de inclinação de raios solares que atingem outros pontos. Sugerimos que você altere a posição do ponto `P` e faça os cálculos para outros casos da mesma forma que foi feito anteriormente.
-     
-     Vamos agora comparar o tamanho da sombra de um lápis supondo que os raios solares que atingem a Terra são paralelos (projeção paralela) e não paralelos (projeção em perspectiva). Dessa forma, veremos o quão relevante é, de fato, a inclinação dos raios solares ao gerar sombras na Terra. 
-     
-     Na :numref:`fig-experimentos-modelosdeproj8`, novamente sem utilizar uma escala real que considere os tamanhos do Sol e da Terra, temos uma ilustração da situação que pretendemos analisar. Suponhamos que o Sol, a Terra e o lápis estejam posicionados de tal forma que o segmento que une os centros da Terra e do Sol, que chamaremos de `C_T` e `C_S` respectivamente, divida o lápis ao meio. Suponhamos que o lápis possua `8~\text{cm}` de comprimento e que ele esteja a `1~\text{m}` da Terra. 
-     
-     .. _fig-experimentos-modelosdeproj8:
-
-     .. figure:: _resources/SolTerraLapis4.png
-        :width: 280pt
-        :align: center
-        
-        Ilustração contendo um lápis, o Sol e a Terra que não considera a escala real. 
-     
-     Primeiramente, vamos considerar o caso em que os raios solares são paralelos. Para estudar a sombra do lápis neste caso, vamos supor que os raios solares estão incidindo perpendicularmente ao lápis. Como nosso objetivo é calcular apenas o tamanho da sombra de um lápis de `8~\text{cm}`, na ilustração contida na :numref:`fig-experimentos-modelosdeproj9` representaremos apenas a parte da Terra que é relevante para o nosso cálculo e, devido ao grande raio da Terra, locamente podemos considerá-la plana. Nesta ilustração, o segmento `AC` representa o lápis e então, a sombra do lápis está representada pelo segmento `DF` e terá a mesma medida de `AC`. Portanto, a medida da sombra é `16~\text{cm}` (um estudo semelhante a este já havia sido foi feito anteriormente na Atividade: luzes e sombras).  
-     
-     .. _fig-experimentos-modelosdeproj9:
-
-     .. figure:: _resources/SolTerraLapis9.png
-        :width: 280pt
-        :align: center
-        
-        A sombra do lápis `AC` é dada pelo segmento `DF`, casos os raios solares sejam paralelos e incidam perpendicularmos ao lápis.
-     
-     Para estudar agora o caso em que os raios solares não são paralelos, vamos usar a ilustração contida na :numref:`fig-experimentos-modelosdeproj10`. O lápis está representado na figura pelo segmento `AC` e sua sombra pelo segmento `DF`. 
-     
-     .. _fig-experimentos-modelosdeproj10:
-
-     .. figure:: _resources/SolTerraLapis10.png
-        :width: 280pt
-        :align: center
-        
-        A sombra do lápis `AC` é dada pelo segmento `DF` casos os raios solares não sejam paralelos.
-     
-     Como estamos supondo que o segmento `C_TC_S` divide o lápis em duas parte iguais, o ponto `B` é o ponto médio do segmento `AC`. Assim, podemos concluir que os triângulos `ABI` e `CBI` são congruentes (pelo caso lado, ângulo, lado), o que implica que os ângulos `A\hat{I}B` e `C\hat{I}B` são congruentes. E, como  `A\hat{I}B` e `C_S\hat{I}G` são opostos pelo vértice, assim como os ângulos `C\hat{I}B` e `C_S\hat{I}H`, podemos concluir que os ângulos `A\hat{I}B, C_S\hat{I}G, C\hat{I}B` e `C_S\hat{I}H` são congruentes. Portanto, os triângulos `DEI` e `FEI` são congruentes, assim como os triângulos `C_SHI` e `C_SGI`. Logo, podemos trabalhar apenas com metade do lápis para facilitar nossos cálculos e posteriormente, basta multiplicar a medida da sombra de metade do lápis por `2`.
-     
-     Dessa forma, estamos interessados em encontrar o comprimento do segmento `DE` que representa a sombra de metade do lápis, representado pelo segmento `AB`. Note que os triângulos `ABI`, `DEI` e `C_SGI` são semelhantes (pois possuem dois ângulos congruentes), e  portanto satisfazem as seguintes razões de semelhança:
-     
-     .. math::
-       
-        \frac{AB}{BI}=\frac{DE}{EI}
-       
-     e
-    
-     .. math::
-       
-        \frac{AB}{AI}=\frac{C_SG}{C_SI}.
-       
-       
-     Como a distância do lápis à Terra é de `1~\text{m}`, então `EB=1~\text{m}=0{,}001~\text{km}`. Além disso, `AB=8~\text{cm}` `=0{,}00008~\text{km}` e `C_SG= 695.000~\text{km}`. Portanto, 
-       
-     .. math::
-       
-        \begin{array}{ll}
-         C_SI & = C_TC_S-C_TE-EB-BI\\
-                 & = 150.000.000-6.500-BI-0,001 \\
-                 & = 149.993.499,999-BI.
-        \end{array}        
-         
-     Substituindo estes valores na equações acima, temos:
-     
-     .. math::
-       
-        \frac{0,00008}{BI}=\frac{DE}{0,001+BI}
-       
-     e
-    
-     .. math::
-       
-        \frac{0,00008}{\sqrt{BI^2+0,00008^2}} = \frac{695.000}{149.993.499,999-BI}.
-       
-     Resolvendo a segunda equação, encontramos `BI=0{,}01726~\text{km}` e substituindo este valor na primeira equação, vemos que a medida do segmento `DE` é `8{,}4~\text{cm}`. Assim, a sombra do lápis, dada pelo segmento `DF`, possui comprimento `16{,}8~\text{cm}`. 
-    
-     Portanto, supondo que os raios solares que atingem a Terra são paralelos, a sombra de um lápis de `16~\text{cm}` seria de `16~\text{cm}`. Supondo que estes raios não são paralelos, a sombra do mesmo lápis mede `16{,}8~\text{cm}`. Note que a diferença entre os valores encontrados para as sombras é de `5\%` do comprimento do lápis.
-     
-     * A :numref:`fig-experimentos-modelosdeproj3` mostra a representação de alguns raios luminosos paralelos (desenhados da cor azul) que emanam do Sol sobre um anteparo de projeção. 
-  
-     .. _fig-experimentos-modelosdeproj3:
-
-     .. figure:: _resources/Sol_Raios3.png
-        :width: 250pt
-        :align: center
-
-        Diagrama representando raios luminosos que emanam do Sol sobre um anteparo.
-   
-     * A :numref:`fig-experimentos-modelosdeproj4` mostra a mesma situação anterior, mas agora foi incluído um triângulo opaco desenhado na cor vermelha. Alguns raios solares são impedidos de alcançar o anteparo ao encontrar o triângulo e portanto, foram pontilhados em nosso desenho a partir do ponto onde tocam o triângulo. A sombra provocada pelo triângulo no anteparo foi desenhada na cor preta.
-
-     .. _fig-experimentos-modelosdeproj4:
-
-     .. figure:: _resources/Sol_Raios_Triangulo3.png
-        :width: 280pt
-        :align: center
-
-        Diagrama representando raios luminosos que emanam do Sol sobre um anteparo, assim como a sombra produzida por um triângulo opaco.
-         
-  
-.. admonition:: Para o professor
-
-   **Observações e recomendações:**
- 
-   * Compreender a definição de projeção em perspectiva pressupõe a compreensão da :numref:`fig-proj-perspectiva-01`, da :numref:`fig-proj-perspectiva-02` e da :numref:`fig-proj-perspectiva-03`. Elas são representações 2D de configurações 3D, justamente o assunto desenvolvido neste capítulo. Assim, se o único recurso didático disponível for tão somente este livro didático, o aluno se verá na árdua tarefa de tentar entender o que é uma imagem produzida por uma projeção em perspectiva usando aquilo que está querendo entender, a saber, imagens produzidas por projeções em perspectiva. Temos aí um dilema didático recursivo. Neste contexto, **sugerimos fortemente** que você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/TxYEqV5d> (projeção de um ponto), <https://www.geogebra.org/m/YpH3fH9E> (projeção de um segmento de reta), <https://www.geogebra.org/m/HFjMUzgz> (projeção de um triângulo) e <https://www.geogebra.org/m/GhC6qGVY> (projeção de um Cubo de Necker) para computadores desktop, tablets e smarphones.
-   
-      .. figure:: _resources/perspectiva-cubo-geogebra-02.*
-   
-   
-      .. figure:: _resources/perspectiva-celular-05_1.jpg
-               
-      
-     Por meio destas construções, é possível girar, ampliar e reduzir a cena 3D, bem como modificar as posições dos vários pontos que compõem a configuração. Com esse recurso dinâmico e de movimento, efeitos de ambiguidade e equívocos de interpretação podem ser minimizados.   
-   
-   * Do mesmo modo e pelos mesmos motivos, **sugerimos fortemente** que, para a discussão sobre projeções paralelas, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/ZAkSPrYN> (projeção de um ponto), <https://www.geogebra.org/m/zdw7rVHc> (projeção de um segmento de reta), <https://www.geogebra.org/m/Ug965Anr> (projeção de um triângulo) e <https://www.geogebra.org/m/EaSUX99g> (projeção de um Cubo de Necker).
-   
-      .. figure:: _resources/paralela-cubo-geogebra.*
-      
-      .. figure:: _resources/paralela-celular-05.jpg   
-   
-   * Recomendamos que você enfatize, em uma linguagem que julgue adequada a seus alunos, duas ideias fundamentais associadas às projeções em perspectiva e paralelas: (1) interdependência (o ponto projetado `P'` depende funcionalmente do ponto `P`); (2) variância (propriedades que são e não preservadas pelas projeções). Acreditamos que essa explicação ficará potencializada por meio das construções interativas do GeoGebra indicadas anteriormente.
-   
-   
-  
-****
-Organizando as ideias: projeções em perspectiva e projeções paralelas 
-****
-
-**Projeções em perspectiva**
-
-Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar a lanterna do celular como um ponto `O` e o anteparo como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-perspectiva-01`, irá obstruir os raios de luz que emanam de `O`, produzindo uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta `AP`. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta `OP` com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-perspectiva-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
-
-.. _fig-proj-perspectiva-01:
-   
-.. figure:: _resources/projecao-perspectiva-01_2.jpg
-   :width: 450px
-         
-   Um modelo para o experimento com a lanterna do celular.
-
-Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. Esta abstração será útil para modelar outras situações, como veremos mais adiante. 
-
-Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e um ponto `O`. Seja `\psi` o plano paralelo à `\pi` passando por `O`. Se `P` é um ponto que não pertence a `\psi`, então o ponto `P'` de intersecção entre a reta `OP` e o plano `\pi` é denominado :index:`projeção em perspectiva` do ponto `P` sobre o :index:`plano de projeção` `\pi` com relação ao :index:`centro` `O`. 
-  
-.. _fig-proj-perspectiva-02:
-   
-.. figure:: _resources/projecao-perspectiva-05.jpg
-   :width: 450px
-         
-   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
-
-Vamos agora considerar uma outra situação onde projeções em perspectiva aparecem. Suponha que você queira desenhar um quadro de uma cena. Mas você quer um quadro tão perfeito que, ao observá-lo frente a cena, ele se confunda como a própria cena. O pintor surrealista belga René Magritte (1898-1967) imaginou essa situação em alguns de seus quadros (:numref:`fig-proj-janela-de-alberti-01`). Como produzir um tal quadro?
-
-.. _fig-proj-janela-de-alberti-01:
-
-.. figure:: _resources/rene-magritte-the-human-condition-03.jpg
-   :width: 600px
-   
-   Pinturas "A Condição Humana" do artista surrealista belga René Magritte (1898-1967).
-
-Suponha que a cena seja composta por um cubo, como no caso da :numref:`fig-proj-janela-de-alberti-03`. Cada ponto do cubo está emitindo um raio luminoso para o olho do observador. Ao posicionar o quadro frente à cena, basta então desenharmos os pontos de interseção destes raios emitidos pelo cubo com o plano do quadro. Como cada ponto de interseção do quadro está alinhado com o respectivo ponto do cubo e o olho do observador, este não notará a diferença. É como se o quadro funcionasse como uma janela para a cena, analogia esta idealizada pelo pintor renascentista italiano Leon Battista Alberti (1404-1472). 
-
-.. _fig-proj-janela-de-alberti-03:
-
-.. figure:: _resources/janela-de-alberti-03.jpg
-   :width: 600pt
-   
-   A métafora da janela: (A) Taylor (1719), (B) Montaque (2010).
-   
-Note que este processo de produzir um quadro que funcione como uma janela nada mais é do que uma projeção em perspectiva: o centro `O` é a posição do olho do observador e o plano de projeção `\pi` é o plano do quadro.
-
-.. _fig-proj-perspectiva-03:
-   
-.. figure:: _resources/projecao-perspectiva-03_1.jpg
-   :width: 450px
-         
-   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
-
-Enquanto nos experimentos com a luz da lanterna do celular o objeto ficava "entre" o centro `O` e o plano `\pi`, no caso da métafora da Janela de Alberti, o plano `\pi` fica entre `O` e o objeto. Não obstante, as duas situações são modeladas por projeções em perspectiva.
-
-O objeto também pode ser posicionado de modo que o centro `O` fique entre este e o plano de projeção, como mostra a :numref:`fig-proj-perspectiva-06`. Este tipo de configuração modela um terceiro tipo de situação: as :index:`câmeras obscuras`, modelos básicos de câmera sem lentes (ver :numref:`fig-proj-kircher-01`). 
-
-.. _fig-proj-perspectiva-06:
-   
-.. figure:: _resources/projecao-perspectiva-06.jpg
-   :width: 450px
-         
-   `P'` é a projeção em perspectiva do ponto `P` sobre o plano de projeção `\pi` com relação ao centro `O`.
-
-Supondo que a abertura da pupila seja pequena o suficiente e ignorando-se a presença de lentes e a curvatura da retina, o olho humano também pode ser considerado como uma câmera obscura e, assim, também modelado por projeções em perspectiva. É este modelo simplificado que consideraremos neste capítulo.
-
-   .. A relação entre a câmera obscura e o funcionamento do olho foi estabelecida primeiro por Kepler.
-
-   .. https://fr.wikipedia.org/wiki/La_Dioptrique_(Descartes)#/media/File:Descartes;_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
-
-.. _fig-proj-olho-humano-01:
-
-.. figure:: _resources/Descartes_Diagram_of_ocular_refraction._Wellcome_L0012003.jpg
-   :width: 200pt
-   
-   Esquema do olho proposto por René Descartes em sua obra *A dióptrica* (fonte: `Revista Scientiae Studia <http://www.revistas.usp.br/ss/article/view/11212/12980>`_).
-
-
-
-Resumindo: projeções em Perspectiva modelam pinturas (quando o plano de projeção está entre o observador e o objeto), sombras (quando o objeto está entre o observador e o plano de projeção) e câmeras e modelos simplificados do olho humano (quando o observador está entre o o objeto e o plano de projeção).
-
-.. figure:: _resources/projecao-cubo.*
-   :width: 450px
-
-.. admonition:: Para refletir
-
-   Note que uma projeção em perspectiva pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3} - \psi` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3} - \psi`, faz associar o ponto `P'` de interseção entre a reta `OP` e o plano `\pi`. Assim, no contexto da :numref:`fig-proj-perspectiva-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`. 
-   
-   .. O conceito de função :ref:`sec-funcao-organizando-ideias-conceito`.
-   
-
-
-**Projeções paralelas**
-
-Na :ref:`ativ-proj-modelos-de-projecao`, vamos modelar o anteparo usado nos experimentos com raios solares como um plano `\pi`. Um objeto opaco, como o triângulo `ABC` na :numref:`fig-proj-paralela-01`, irá obstruir os raios do Sol, os quais estamos supondo aqui serem todos paralelos, produzindo então uma sombra sobre o plano `\pi`. Como determinar exatamente quais pontos de `\pi` percentem à sombra? Para cada ponto `P` do triângulo `ABC`, construa a reta que é paralela à direção dos raios do Sol. Esta reta irá intersectar o plano `\pi` em ponto `P'`. Este ponto `P'` é um ponto da sombra do triângulo `ABC`. De fato, todo ponto `P'` da sombra é obtido por este processo, isto é, um ponto `P'` do plano pertence à sombra do triângulo `ABC` se, e somente se, existe um ponto `P` do triângulo `ABC` tal que a interseção da reta que passa por `P` e é paralela aos raios Sol com o plano `\pi` é o ponto `P'`. Além do ponto `P'`, a :numref:`fig-proj-paralela-01` mostra também o processo para os pontos `A'`, `B'` e `C'`.
-
-.. _fig-proj-paralela-01:
-   
-.. figure:: _resources/projecao-paralela-01_1.jpg
-   :width: 450px
-         
-   Um modelo para o experimento com a luz do Sol.
-
-Vamos agora abstrair ainda mais o processo, ou seja, vamos considerar um contexto matemático que, apesar de inspirado por luzes e sombras, será puramente geométrico. 
-
-Desta maneira, considere no espaço tridimensional `{\mathbb R}^{3}` um plano `\pi` e uma direção determinada por uma reta `d` que não é paralela ao plano `\pi`. Se `P` é um ponto qualquer, então o ponto `P'` de intersecção entre a reta que passa por `P` e é paralela à reta `d` e o plano `\pi` é denominado :index:`projeção paralela` do ponto `P` com relação a direção dada pela reta `d` sobre o plano de projeção `\pi`.  
-  
-.. _fig-proj-paralela-03:
-   
-.. figure:: _resources/projecao-paralela-03_1.jpg
-   :width: 450px
-         
-   `P'` é a projeção paralela do ponto `P` com relação a direção dada pela reta `d` sobre o plano de projeção `\pi`.
-
-Se a reta `d` for perpendicular ao plano `\pi`, então a projeção paralela é denominada :index:`projeção ortogonal`. Uma projeção paralela que não é ortogonal é denominada :index:`projeção oblíquoa`.
-
-.. _fig-proj-paralela-02:
-   
-.. figure:: _resources/projecao-paralela-02_2.jpg
-   :width: 450px
-         
-   `P'` é a projeção ortogonal do ponto `P` com relação a direção dada pela reta `d` perpendicular ao plano de projeção `\pi` sobre este plano.
-
-Observação. As projeções paralelas definidas aqui são generalizações para o espaço `{\mathbb R}^{3}` das projeções paralelas no plano que você estou na :ref:`ativ-projecao-paralela` do capítulo sobre Teorema de Tales. Aqui, a projeção é em um plano e, lá, em uma reta.
-
-
-.. admonition:: Para refletir
-
-   Note que uma projeção paralela pode ser interpretada como uma **função** `f` de domínio `{\mathbb R}^{3}` e contradomínio `\pi` que, a cada ponto `P \in {\mathbb R}^{3}`, faz associar o ponto `P'` de interseção entre a reta que passa por `P` e é paralela a reta `d` e o plano `\pi`, supondo que `d` não é paralela ao plano `\pi`. Assim, no contexto da :numref:`fig-proj-paralela-01`, temos que `f(P) = P'`, `f(A) = A'`, `f(B) = B'` e `f(C) = C'`.
-
-
-.. admonition:: Você sabia?
-
-   Com o Renascimento (século XIV-século XVII), os artistas começaram a fazer suas pinturas com a preocupação de retratar a realidade, isto é, retratar o que se vê. Para isso, eles consideraram o uso de princípios óticos geométricos e, em particular, das projeções em perspectiva. Vários aparatos foram idealizados com o próposito de produzir imagens realistas. Observe que o princípio básico de todos os dispositivos é o alinhamento do ponto do objeto a ser retratado, do ponto projetado no quadro e um centro fixo, tipicamente, o olho do observador.
-   
-   .. figure:: _resources/durer-01.jpg
-      :width: 300 pt
-         
-      Dispositivo de Albrecht Dürer (1471-1528).
-
-
-   .. figure:: _resources/cigoli-02.jpg
-      :width: 300 pt
-         
-      Dispositivo de Lodovico Cardi (Cigoli) (1559-1613).         
-         
-
-   .. figure:: _resources/jamnitzer-01.jpg
-      :width: 300 pt
-         
-      Dispositivo de Wenzel Jamnitzer (1507/1508-1585).         
-
-
-   .. figure:: _resources/schmalcalder-02.jpg
-      :width: 300 pt
-         
-      Dispositivo de Charles Augustus Schmalcalder (1781-1843).         
-
-
-   .. _fig-proj-kircher-01:
-      
-   .. figure:: _resources/kircher-01.jpg
-      :width: 300 pt
-         
-      Camera obscura de Athanasius Kircher (1601-1680).         
-
-   
-   Existiram dispositivos renascentistas que produziam desenhos em projeções paralelas? O único que se conhece até o momento é a máquina de Johannes Lencker (1523-1585) que produzir desenhos em projeções ortogonais. 
-  
-   
-   .. figure:: _resources/lencker-01.jpg
-      :width: 300 pt
-         
-      Dispositivo de Johannes Lencker (1523-1585). 
-         
-   Enquanto que os pintores renascentistas procuravam fazer seus quadros retratando as pessoas como as vemos, na Idade Média essa preocupação não apareceria. No lugar de princípios óticos geométricos, as regras medievais incluiam pintar as pessoas de acordo com o seu *status* social: quanto maior o *status*, maior o tamanho na pintura (:numref:`fig-proj-medieval-social-03`, :numref:`fig-proj-medieval-social-05`, :numref:`fig-proj-medieval-social-01`).
-   
-   .. _fig-proj-medieval-social-03:
-      
-   .. figure:: _resources/medieval-social-03.jpg
-      :width: 200 pt
-         
-      São Lourenço entre Santos e Patrocinadores de Fra Filippo Lippi (1406-1469).            
-         
-   
-
-      .. _fig-proj-medieval-social-05:
-      
-      .. figure:: _resources/medieval-social-05.jpg
-         :width: 300 pt
-         
-         Henrique III acompanhando o Mestre de Obras (século XIV).    
-
-
-
-      .. _fig-proj-medieval-social-01:
-      
-      .. figure:: _resources/medieval-social-01.jpg
-         :width: 200 pt
-         
-         Políptico da Misericórdia de Piero della Francesca (1415-1492).    
-         
-         
-   
-   
-
-
-***********************************************
-Praticando o assunto
-***********************************************
-
-.. HJB: esta habilidade pratica a habilidade de compor.
-
-.. _ativ-proj-feixe-de-retas:
-
-Atividade: feixe de retas
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** analisar a geometria do feixe de retas usados na construção de uma projeção em perspectiva e de uma projeção paralela e concluir que estes formam um cone no caso de uma projeção em perspectiva e um cilindro no caso de uma projeção paralela.
-     
-   
-   **Observações e recomendações:**
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/kKqT9EhP> (projeções em perspectiva) e <https://www.geogebra.org/m/zdw7rVHc> (projeções paralelas). Além do círculo e do quadrado, há outras curvas não prototípicas que podem ser usadas para evidenciar o conceito mais geral de cone e cilindro.
-   
-   .. _fig-proj-praticando-05:
-   
-   .. figure:: _resources/praticando-feixe-de-retas-05.jpg
-      
-      Projeção em perspectiva de uma curva não prototípica.
-            
-   * Provavelmente os alunos responderão que o conjunto de retas usados para construir a projeção em perspectiva do quadrado formam uma pirâmide de base quadrada, o que está correto se, no lugar de retas usássemos, segmentos de reta. Não obstante, sugerimos que você aproveite a oportunidade para comparar a pirâmide de base quadrada com o cone circular reto e mesmo o caso da curva não prototípica da :numref:`fig-proj-praticando-05` para mostrar o que há em comum em todos os casos: as retas que passam todas por um mesmo ponto (o centro `O`) e passam por pontos do objeto em questão. É esta característica que dá uma definição mais geral para cones/superfícies cônicas. Assim, a pirâmide de base quadrada pode ser considerada um cone. Cabe lembrar que por este motivo, projeções em perspectiva também são denominadas :index:`projeções cônicas`. Observação análoga cabe para projeções paralelas: o conjunto de retas usadas para construir uma projeção paralela formam um cilindro e, por este motivo, projeções paralelas também são conhecidas por :index:`projeções cilíndricas`.
-
-#. (Projeções em Perspectiva)
-
-   * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do círculo é perpendicular ao plano `\pi` e (2) o círculo é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do círculo com relação ao centro `O` sobre o plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do círculo. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-   .. figure:: _resources/praticando-feixe-de-retas-01.jpg
-
-   * Na figura a seguir, (1) a reta que passa pelo ponto `O` e o centro do quadrado é perpendicular ao plano `\pi` e (2) o quadrado é paralelo a `\pi`. Como vimos, para determinar a projeção em perspectiva do quadrado com relação ao centro `O` sobre o plano de projeção `\pi`, é necessário construir retas que passam por `O` e por pontos do quadrado. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-   .. figure:: _resources/praticando-feixe-de-retas-02.jpg
-
-
-#. (Projeções Paralelas)
-
-   * Na figura a seguir, (1) a reta `d` que passa pelo centro do círculo é perpendicular ao plano `\pi` e (2) o círculo é paralelo a `\pi`. Como vimos, para determinar a projeção paralela do círculo com relação a direção dada por `d` sobre o plano de projeção `\pi`, é necessário construir retas que passam por pontos do círculo e que são paralelas a `d`. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-03.jpg
-
-   * Na figura a seguir, (1) a reta `d` que passa pelo centro do quadrado é perpendicular ao plano `\pi` e (2) o quadrado é paralelo a `\pi`. Como vimos, para determinar a projeção paralela do quadrado com relação a direção dada por `d` sobre o plano de projeção `\pi`, é necessário construir retas que passam por pontos do quadrado e que são paralelas a `d`. Se desenharmos todas estas retas, que tipo de superfície será obtida?
-
-      .. figure:: _resources/praticando-feixe-de-retas-04.jpg
-
-
-
-.. Lhaylla Cabe falar de superfície cilindríca e cônica?
-
-.. admonition:: Resposta
-
-  #. Projeções em Perspectiva
-
-     * Se você respondeu que a superfície obtida ao desenhar todas as retas que passam por `O` e por pontos do círculo é um cone, sua intuição está te levando na direção correta, mas do ponto de vista matemático precisamos ser mais cuidadosos. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos um cone circular reto. Portanto, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cone. Mas se todos os segmentos de reta que formam o cone forem prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Você pode estar se perguntando se esta superfície possui um nome e a resposta é sim! Dados um ponto `A` não contido em um plano `\pi` e um objeto geométrico `\gamma` contido em `\pi`, a superfície formada por todas as retas que passam por `A` e por um ponto de `\gamma` é chamada de *superfície cônica*. Repare que, todas as retas da superfície se intersectam em `A`. De posse desta definição, podemos afirmar que a superfície que obtemos nesta questão é uma superfície cônica gerada a partir do ponto `O` (equivale ao ponto `A` da definição) e do círculo (equivale ao objeto `\gamma` da definição).
-   
-     * Ao desenhar todas as retas que passam por `O` e por pontos do quadrado é possível que você pense na forma de uma pirâmide, mas a superfície formada por essas retas não é exatamente uma pirâmide. Se considerarmos  a união de todos os segmentos de reta `OP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta determinada por `O` e `P` com o plano `\pi`, teremos uma pirâmide reta de base quadrada. Assim, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser uma pirâmide. Mas se todos os segmentos de reta que formam a pirâmide forem prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cônica. De fato, ela é um conjunto de retas que passam pelo ponto `O` e por pontos do quadrado, como determina a definição apresentada anteriormente.
-     
-  #. Projeções Paralelas
-   
-     * Ao desenhar todas as retas que passam por pontos do círculo que são paralelas a `d`, é possível que nos remetamos à forma de um cilindro, mas a superfície obtida por esta união de retas não é exatamente um cilindro. Se considerarmos apenas a união dos segmentos de reta `PP'`, onde `P` é um ponto do círculo e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um cilindro circular reto. Na situação apresentada na atividade, como a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, ela não pode ser um cilindro. Caso todos os segmentos de reta que formam o cilindro sejam prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       A superfície deste caso não pode ser chamada de superfície cônica, pois ela não foi gerada por um ponto e por um objeto como nos casos anteriores. Vamos, então, precisar de uma nova definição. Dados um objeto geométrico `\gamma` contido em um plano `\pi` e uma reta `r` não contida em `\pi`, a superfície formada por todas as retas que passam por pontos de `\gamma` e são paralelas à `r` é chamada de *superfície cilíndrica*. Sendo assim, a superfície que obtemos nesta questão é uma superfície cilíndrica gerada a partir do círculo (equivale ao objeto `\gamma` da definição) e `d` (equivale reta `r` da definição).
-   
-     * Neste caso, se desenharmos todas as retas que passam por pontos do quadrado que são paralelas a `d`, é possível que nos lembremos da forma de um prisma, mas a superfície obtida por esta união de retas não é um prisma. Se considerarmos todos os segmentos de reta `PP'`, onde `P` é um ponto do quadrado e `P'` o ponto de inteserção da reta paralela à `d` que passa por `P` com o plano `\pi`, teremos um prisma reto de base quadrangular. Mas a superfície que estamos estudando não é formada por segmentos de reta, e sim por retas, logo ela não pode ser um prisma. Caso todos os segmentos de reta que formam o prisma sejam prolongados infinitamente, obteremos a superfície procurada na questão.
-     
-       Pelo que vimos no item anterior, a superfície encontrada neste item é também uma superfície cilíndrica. De fato, ela é um conjunto de retas que passam por pontos do círculo e são paralelas à `d`, como determina a definição apresentada anteriormente.
-
-
-.. _ativ-proj-cone-cilindro:
-
-Atividade: projetando curvas que estão sobre um cone e um cilindro
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** concluir que pontos diferentes em um mesmo feixe de retas associados a uma mesma projeção em perspectiva ou uma mesma projeção paralela têm a mesma projeção.         
-   
-   **Observações e recomendações:**
-   
-   * A Curva 1 é um círculo, a Curva 2 é uma elipse e a Curva 3 é uma hélice.
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/NNjgC2Aj> (cone) e <https://www.geogebra.org/m/NrqMykdJ> (cilindro). Além do círculo e do quadrado, há outras curvas não prototípicas que podem ser usadas para evidenciar o conceito mais geral de cone e cilindro. 
-   
-   * No caso das projeções das hélices, observe para seus alunos que pontos diferentes da curva são projetados no mesmo ponto do plano `\pi`. De fato, observe que todos os pontos de uma reta usada para obter a projeção de um ponto têm a mesma projeção do ponto. Sugerimos que você destaque esta propriedade para seus alunos. Assim, usando a terminologia de funções, segue-se que as projeções em perspectiva e projeções paralelas **não são** funções injetivas.
-            
-#. (Cone) As três imagens a seguir exibem três curvas diferentes, mas que possuem uma característica em comum: elas estão sobre um mesmo cone circular reto cuja base é paralela ao plano `\pi`. Para sua comodidade, em cada imagem, a curva é desenhada sem e com o cone. Caso tenha acesso a Internet (inclusive de um celular), você pode interagir com essas curvas e visualizá-las de pontos de vista diferentes por meio do aplicativo GeoGebra disponível em: <https://www.geogebra.org/m/NNjgC2Aj>.
-
-   .. figure:: _resources/perspectiva-varios-01.jpg
-   
-   .. figure:: _resources/perspectiva-varios-02.jpg
-   
-   .. figure:: _resources/perspectiva-varios-03.jpg
-   
-   * Qual é a projeção em perspectiva destas três curvas sobre o plano `\pi` com relação ao centro `O`? Justifique sua resposta!
-   
-   * Usando a analogia de pintura que funciona como uma janela (conforme o que vimos com relação à :numref:`fig-proj-janela-de-alberti-01` e à :numref:`fig-proj-janela-de-alberti-03`), se você pintasse um quadro para cada uma das três curvas, tendo o ponto `O` como a posição do olho do observador, o que seria pintado nos três quadros?
-
-   * Qual é a projeção em perspectiva de uma reta que passa por `O` sobre o cone com relação ao centro `O` sobre o plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção em perspectiva do próprio cone com relação ao centro `O` sobre o plano `\pi`? Justifique sua resposta!
-
-#. (Cilindro) As três imagens a seguir exibem três curvas diferentes, mas que possuem uma característica em comum: elas estão sobre um mesmo cilindro circular reto cuja base é paralela ao plano `\pi`. Para sua comodidade, em cada imagem, a curva é desenhada sem e com o cilindro. Caso tenha acesso a Internet (inclusive de um celular), você pode interagir com essas curvas e visualizá-las de pontos de vista diferentes por meio do aplicativo GeoGebra disponível em: <https://www.geogebra.org/m/NrqMykdJ>.
-
-   .. figure:: _resources/paralela-varios-01.jpg
-   
-   .. figure:: _resources/paralela-varios-02.jpg
-   
-   .. figure:: _resources/paralela-varios-03.jpg
-   
-   * Qual é a projeção paralela destas três curvas com relação à direção dada pelo eixo do cilindro sobre o plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi`? Justifique sua resposta!
-
-   * Qual é a projeção paralela do próprio cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi`? Justifique sua resposta!
-
-
-.. admonition:: Resposta
-
-   #. Cone
-
-      * Para encontrar a projeção em perspectiva de uma curva com relação ao ponto `O` sobre o plano `\pi` é preciso traçar as retas que passam pelo ponto `O` e pela curva, e encontrar suas interseções com o plano `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cone, as retas que passam por `O` e por pontos da curva serão prologamentos dos segmentos de reta que formam o cone (aqueles que possuem extremidade em `O` e em seu círculo de base). Logo, a projeção em perspectiva das curvas 1, 2 e 3 com relação ao centro de projeção `O` sobre o plano `\pi` é um círculo contido no plano `\pi`.
-   
-      * As pinturas conteriam a projeção em perspectiva das três curvas em relação à posição do olho do observador, que como vimos no item anterior é um círculo. 
-   
-      * Neste caso, o objeto a ser projetado é uma reta localizada sobre o cone. Repare que as retas que passam pelo ponto `O` e por pontos da reta a ser projetada coincidem com ela mesma, e por isso sua interseção com o plano `\pi` é um ponto. Portanto, a projeção em perspectiva da reta em relação ao ponto `O` sobre o plano `\pi` é seu ponto de interseção com o plano `\pi`. 
-   
-      * As retas que passam pelo ponto `O` e por pontos do cone são prolongamentos dos segmentos de reta que possuem extremidades em `O` e em pontos da base do cone. Assim, como a interseção dessas retas com o plano `\pi` é um círculo, então a projeção em perspectiva do cone é um círculo.
-
-   #. Cilindro
-
-      * Para encontrar a projeção paralela de uma curva com relação à direção dada no plano `\pi` é preciso traçar as retas que passam pelos pontos da curva e são paralelas à direção dada, e então, encontrar suas interseções com `\pi`. De fato, como as três curvas em questão estão sobre o mesmo cilindro cujo eixo é a direção de projeção escolhida, as retas que passam por seus pontos e são paralelas ao eixo do cilindro serão prologamentos dos segmentos de reta que formam o cilindro (ou seja, aqueles segmentos que possuem extremidades sobre seus círculos de base). Logo, a projeção paralela das curvas 1, 2 e 3 com relação à direção dada pelo eixo do cilindro sobre o plano `\pi` é o círculo contido no plano `\pi`.
-   
-      * A projeção paralela de uma reta sobre o cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi` é um ponto. De fato, essa reta já é paralela ao eixo do cilindro, e portanto, para encontrar sua projeção basta encontrar sua interseção com o plano `\pi`, que é um ponto. 
-   
-      * A projeção paralela do cilindro com relação à direção dada pelo eixo do cilindro sobre o plano `\pi` é dada por um círculo, pois as retas que passam por pontos do cilindro e são paralelas ao seu eixo são prolongamentos dos segmentos de reta que o formam. Assim, a interseção dessas retas com o plano `\pi` é a própria base do cilindro.
-
-
-.. _ativ-proj-construindo:
-
-Atividade: construindo objetos geométricos peculiares
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivo específico:** construir objetos geométricos que satisfazem certas propriedades pré-estabelecidas de interesse prático ou artístico usando, para isto, propriedades das projeções em perspectica e das projeções ortogonais.  
-   
-   **Observações e recomendações:**
-   
-   * Sugerimos fortemente que, para a discussão sobre esta atividade, você use com seus alunos as construções do GeoGebra 3D disponíveis nos endereços <https://www.geogebra.org/m/X2rA45gS> (projeção da sinalização de solo no para-brisa),  <https://www.geogebra.org/m/xjMqSPX2> (projeção do para-brisa no solo), <https://www.geogebra.org/m/Uxtn6hxy> (peça "Squaring The Circle"), <https://www.geogebra.org/m/Q7eXY36j> (problema dos buracos).
-   
-   * Estes vídeos <https://youtu.be/pNjh1Ji_rg8> e <https://youtu.be/2xtA-IABcP4> explicam, respectivamente, com o uso do GeoGebra para celulares, a construção da peça "Squaring The Circle" e da solução do problema da mesa com  três buracos.
-   
-      .. figure:: _resources/problema-dos-tres-buracos.png
-         :width: 300pt
-   
-   * Observe para seus alunos como o conectivo lógico "e" se associa com interseções: no "Squaring The Circle", a imagem de um ponto de vista deve ser um círculo "e" de outro ponto de vista deve ser um quadrado. A solução é então obtida pela interseção de dois cones (um de base circular e o outro de base quadrada).
-   
-   * Para que a palavra "ESCOLA" apareça sem distorções no para-brisa, seu desenho no chão, além de ter uma altura mais esticada, é também mais larga da parte de cima, como mostra a figura a seguir. Com isto, se a parte de baixo tem uma largura próxima a largura da rua, a parte de cima teria que ser pintada na calçada, o que não é viável. Por este motivo, em geral, essas sinalizações são pintadas com largura constante, mas altura bem esticada. A imagem vista no para-brisa então ainda mostrará distorções, mas será mais legível. O documento "Sinalização Horizontal" do Departamento Nacional de Infraestrutura de Transportes (DNIT), disponível no endereço <https://goo.gl/CTTyaE>, apresenta no Apêndice D o formato exatado de como as letras e números devem ser desenhados.
-   
-      .. figure:: _resources/aviso-na-rua-03.jpg
-      
-      .. figure:: _resources/aviso-na-rua-04.jpg
-   
-            
-#. 
-
-   * Deseja-se pintar a palavra "ESCOLA" em uma rua para advertir os motoristas da proximidade de uma escola. Contudo, se a palavra for pintada normalmente, como na :numref:`fig-proj-aviso-na-rua-01` (B), o motorista verá pelo para-brisa uma imagem distorcida pela perspectiva, como na :numref:`fig-proj-aviso-na-rua-01` (C).
-
-   .. _fig-proj-aviso-na-rua-01:
-
-   .. figure:: _resources/aviso-na-rua-01_4.jpg
-      :width: 450pt
-   
-      Estudo de sinalização de solo em uma rua.
-
-   Como deveria ser pintada a palavra na rua para que, vista pelo para-brisa de um carro, ela fosse visualizada sem distorções, como na :numref:`fig-proj-aviso-na-rua-02`. Aqui, é suficiente que você descreva um procedimento de como obter o desenho da palavra na rua: você não precisa efetivamente fazer o desenho da palavra.
-
-
-   .. _fig-proj-aviso-na-rua-02:
-
-   .. figure:: _resources/aviso-na-rua-02.jpg
-      :width: 450pt
-   
-      Imagem no para-brisa sem distorções.
-
-
-   * O desenho da palavra que você propôs para ser pintada na rua no item anterior seria vista **sempre** sem distorções a medida que o carro se aproxima da palavra pintada?
-   
-   
-#. O grupo Troika tem como missão "desenvolver obras artísticas com um interesse particular na percepção e experiência espacial, desafiando prescrições de conhecimento, controle, e o que significa ser humano na era da tecnologia". A obra "Squaring The Circle" (Quadratura do Círculo) é uma peça feita de ferro que, quando observada de um ponto de vista particular, o que se vê é um círculo e, a mesma peça, quando observada de outro ponto de vista, se mostra como um quadrado.
-
-   .. _fig-proj-squaring-the-circle-01:      
-   
-   .. figure:: _resources/ezgif-4-7c3b461d5e.*
-      :width: 100pt
-      
-   .. figure:: _resources/squaring-the-circle-02.jpg      
-    
-      Squaring The Circle (Quadratura do Círculo) do grupo Troika (fonte: <http://troika.uk.com>.
- 
-   Como construir uma tal peça? Aqui, é suficiente que você descreva um procedimento matemático de como obtê-la: você não precisa explicitar equações para o formato geométrico da peça. 
-
-#. Este é um desafio antigo e que apareceu na edição de agosto de 1958 da revista Scientific American. A :numref:`fig-proj-cork-plug-01` exibe uma mesa com três buracos: um na forma de um quadrado, o outro na forma de um círculo e o terceiro na forma de um triângulo isósceles. O diâmetro do círculo, o lado do quadrado, a base do triângulo isósceles e sua respectiva altura têm a mesma medida.
-
-   .. _fig-proj-cork-plug-01:
-   
-   .. figure:: _resources/cork-plug-table.*
-   
-      Uma mesa com três buracos.
-
-   Pergunta: é possível construir uma rolha que possa ser usada para tapar qualquer um dos três buracos, um por vez? Em caso afirmativo, descreva um procedimento matemático de como obtê-la.
-      
-
-.. admonition:: Resposta
-
-   #. 
-      * Para que a palavra "ESCOLA" seja vista por um motorista pelo para-brisa de seu carro sem distorções, é preciso que ela seja feita utilizando projeção em perspectiva. Para isso, o centro de projeção deve coincidir com a posição dos olhos do motorista, o objeto a ser projetado deve ser a própria palavra "ESCOLA" (escrita em sua forma regular sem distorções) que deve ser posicionada a uma curta distância do motorista e o plano de projeção será uma parte do solo à frente do carro. Para encontrar a projeção, basta traçar retas que passam pela posição dos olhos do motorista e por pontos das letras da palavra "ESCOLA", e determinar suas interseções com o plano do solo, como mostrado na :numref:`fig-proj-obj-peculiares-solucao-escola-01`. 
-
-      .. _fig-proj-obj-peculiares-solucao-escola-01:
-
-      .. figure:: _resources/ProjecaoEscola.png
-         :width: 320pt
-   
-         Construção da projeção da palavra "ESCOLA".
-   
-      Observe que, é possível escolher pontos mais representativos das letras da palavra "ESCOLA" para serem projetados (os extremos das letras, os pontos de interseção entre os segmentos de reta que formam a letra e etc) e, então, ligar suas projeções já no solo para encontrar a perspectiva desejada. Certamente a parte superior da palavra "ESCOLA" será mais larga que a inferior, e ela deverá estar mais esticada do que a palavra em sua forma regular. Veja o resultado final na figura abaixo.
-
-      .. _fig-proj-obj-peculiares-solucao-escola-02:
-
-      .. figure:: _resources/aviso-na-rua-03.jpg
-
-         Resultado final da projeção da palavra "ESCOLA".
-         
-      A construção mostrada na :numref:`fig-proj-obj-peculiares-solucao-escola-01` foi feita no Geogebra 3D e está disponível em <https://www.geogebra.org/m/X2rA45gS> e <https://www.geogebra.org/m/xjMqSPX2>. 
-
-      * Não. O desenho da palavra "ESCOLA" foi feito utilizando projeção em perspectiva em relação à posição dos olhos do motorista. Neste caso, a pintura parecerá distorcida sempre que o carro não estiver posicionado exatamente nesta posição fixada.
-   
-   #. Para construir esta peça é preciso que suas projeções em perspectiva ao variar o centro e plano de projeção sejam um círculo e um quadrado. 
-   
-   .. _fig-proj-obj-peculiares-solucao-peça-01:
-
-   .. figure:: _resources/ConstrucaoDaPeca.png
-      :width: 400pt
-   
-      Construção da obra "Squaring The Circle". A primeira figura é o cone com vértice `C`, a segunda é a pirâmide de base quadrada com vértice `P`, a terceira é a união do cone com a pirâmide, e a quarta é a interseção entre o cone e a pirâmide (`C` e `P` foram mantidos para auxiliar na compreensão, mas não fazem parte da interseção).
-   
-   A última figura mostrada na :numref:`fig-proj-obj-peculiares-solucao-peça-01` é a interseção do cilindro com a pirâmide. Na :numref:`fig-proj-obj-peculiares-solucao-peça-02`, a mesma peça pode ser vista de outro ângulo.
-
-   .. _fig-proj-obj-peculiares-solucao-peça-02:
-
-   .. figure:: _resources/Peca_1.png
-      :width: 90pt
-   
-      Peça da obra "Squaring The Circle".
-   
-   O vídeo <https://youtu.be/pNjh1Ji_rg8> apresenta a construção da peça "Squaring The Circle". E na construção feita no Geogebra 3D disponível em <https://www.geogebra.org/m/Uxtn6hxy>, é possível interagir com a peça criada anteriormente.
-      
-   #. Sim, é possível construir uma rolha que possa ser usada para tapar os três buracos da :numref:`fig-proj-cork-plug-01`, mas para isso é necessário que, dependendo de seu posicionamento em relação a um plano de projeção, sua projeção paralela possa ser um quadrado, um círculo e um triângulo como os dos buracos. 
-  
-   Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Veja a :numref:`fig-proj-obj-peculiares-solucao-rolha-01`.
-     
-   .. _fig-proj-obj-peculiares-solucao-rolha-01:
-
-   .. figure:: _resources/Solidos_1.png
-      :width: 320pt
-   
-      Imagem dos três sólidos que devem ser criados para a construção da rolha.
-     
-   Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos.
-     
-   .. _fig-proj-obj-peculiares-solucao-rolha-02:
-
-   .. figure:: _resources/IntersecoesPrismasCilindro_1.png
-      :width: 280pt
-   
-      Interseção dos três sólidos e a rolha.
-        
-   Para entender melhor o processo descrito acima, use a construção do Geogebra 3D disponível no endereço <https://www.geogebra.org/m/Q7eXY36j> e o vídeo disponível em <https://youtu.be/2xtA-IABcP4>.  
-   
-   Observe que se construíssemos um prisma reto utilizando o quadrado do primeiro buraco como base, sua projeção paralela poderia ser o quadrado. Um cilindro reto com o círculo do segundo buraco como base teria como projeção paralela um círculo. E, um prisma triangular com base igual ao triângulo do terceiro buraco forneceria o triângulo desejado como projeção paralela. Agora, é preciso "juntar" estes três sólidos para formar uma única rolha. Para isso, basta intersectá-los de forma que seus eixos sejam todos perpendiculares entre sim. A interseção dos três sólidos construídos terá as três projeções paralelas desejadas e assim, se encaixará nos três buracos. 
-
-
-.. admonition:: Para refletir
-
-    .. figure:: _resources/visaoArmandinho.png
-       :width: 400pt
-
-       Fonte: <http://tirasbeck.blogspot.com.br/>.
-   
-
-.. admonition:: Para refletir
-
-    .. figure:: _resources/quadrinhos-visto-deste-prisma-03.jpg
-       :width: 400pt
-       
-    .. admonition:: Para o ilustrador
-
-       Manter o diálogo e o texto no final. Trocar o fundo por uma sala de aula e a parede por um quadro. Manter a imagem do grego observando o cubo. Talvez trocar os personagens por adolescentes.
-
-
-.. admonition:: Você sabia?
-
-   Uma situação semelhante a da sinalização de trânsito descrita na :ref:`ativ-proj-construindo` é a confecção de paineis de propaganda em gramados de campos de futebol. Se eles forem desenhados sem distorções, suas imagens transmitidas pelas emissoras de TV ficarão distorcidas. Assim, para que a imagem fique correta quando observada pela câmera de TV, sua projeção em perspectiva é que deve ser desenhada no gramado.   
-   
-   .. figure:: _resources/futebol-01.jpg
-  
-      Fonte: cutedrop (Letícia Motta).
-   
-   Note como a projeção depende da posição do observador: enquanto a câmera de TV transmite uma imagem sem distorções do painel de propaganda, uma pessoa sentada junto ao painel o verá bem distorcido.
-   
-   Em artes plásticas, esta imagem distorcida que é vista corretamente de um certo ponto de vista é denominada :index:`anamorfose`. A palavra vem do Grego: *ana* (de volta, de novo) e *morphe* (forma). Além de distorções provocadas por projeções em perspectiva, a anamorfose inclui também distorções via espelhos cilíndricos, cônicos e piramidais.
-   
-   Um exemplo clássico de anamorfose é dado pelo quadro "Os Embaixadores" (1533) do artista alemão Hans Holbein, O Jovem (1497/1498-1543). Você consegue identificar a parte do quadro em anamorfose?
-   
-   .. figure:: _resources/1039px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg
-
-      "Os Embaixadores" de Hans Holbein, O Jovem (fonte: `Wikimedia Commons <https://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg>`_).
-
-   Anamorfose também já foi usada para esconder imagens sensíveis, como as imagens produzidas pelo artista alemão Erhard Schön (c. 1491–1542). Você consegue identificar o que está representado em anamorfose?
-
-   .. figure:: _resources/schon-02.jpg
- 
-      "Aus, du alter Tor!" de Erhard Schön (fonte: `Explora Museum <http://www.exploramuseum.de/images/pressefotos/anamorphoseAUSDUALTERTOR1_m.jpg>`_).
-        
-      .. Fora seu velho idiota!
-        
-   .. figure:: _resources/schon-03.jpg
- 
-      "Was siehst du?" de Erhard Schön (fonte: `The British Museum <http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?partid=1&assetid=30265001&objectid=1355159>`_).  
-        
-      .. O que você vê?
-
-   Um belo exemplo de uso artístico da anamorfose no Brasil é o projeto "Luz nas Vielas" do grupo espanhol Boa Mistura que pintou, junto com os moradores da Vila Brasilândia em São Paulo, palavras como "firmeza", "amor", "doçura" nas paredes das vielas do bairro. Para conhecer mais sobre o projeto, acesse o vídeo `Poesia e Magia <https://www.youtube.com/watch?v=Zi8ekDi7uLQ>`_ no YouTube ou a `página oficial do grupo <http://www.boamistura.com/#/project/luz-nas-vielas-2>`_.
-   
-   .. figure:: _resources/boa-mistura-01.jpg
-   
-      Anamorfose do projeto "Luz nas Vielas" do grupo Boa Mistura (fonte: `TEDx Talks <https://www.youtube.com/watch?v=gKRNLXghU94>`_)
-      
-   Quer gerar suas próprias anamorfoses? Aqui estão dois softwares gratuitos que fazem isso a partir de uma imagem digital (arquivo jpg) de sua escolha: o `Simple Anamorphic Converter <http://kejebodo.blogspot.com.br/2013/06/simple-anamorphic-converter.html>`_ (distorções via projeções em perspectiva) e o `Anamorph Me! <https://www.anamorphosis.com/software.html>`_ (distorções via projeções paralelas, cilíndricas e cônicas).
-   
-   .. figure:: _resources/anamorfose-02.jpg
-   
-      Brincando com anamorfose.
-   
-   
-
-.. admonition:: Para o professor
-
-   O livro "Joy of Ambiguous Solids: How to Make Anomalous Objects That Change Their Appearances in a Mirror" de  Sugihara Kokichi apresenta outros moldes em papel com outras peças peculiares.
-      
-      
-.. admonition:: Você sabia?
-
-         
-   Existem muitas produções artísticas que produzem o efeito de múltiplas projeções com múltiplos signifcados como visto na :ref:`ativ-proj-construindo`. Indicamos aqui duas referências: as esculturas do artista `John V. Muntean <https://www.jvmuntean.com/#intro>`_ e do matemático `Kokichi Sugihara <http://home.mims.meiji.ac.jp/~sugihara/Welcomee.html>`_. 
-   
-   Caso você queira construir uma versão simples de uma destas peças, um molde para ser impresso e recortado está disponível `neste endereço <https://goo.gl/ddFnuf>`_. Um vídeo exibindo as etapas de montagem pode ser acessado no `YouTube <https://youtu.be/QTNg0ofgB78>`_. Caso você tenha acesso a uma impressora 3D, o arquivo STL para impressão podem ser obtido gratuitamente no `Thingverse <https://www.thingiverse.com/thing:1657791>`_. 
-   
-   .. figure:: _resources/sugihara-richeson.*
-      
-      Uma peça peculiar feita de papel (fonte: `David Recheson <https://youtu.be/QTNg0ofgB78>`_).
-      
-
-
-
-.. _ativ-proj-infinito:
-
-Atividade: retas paralelas, obras de arte e o infinito
-------------------------------
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos:** 
-   
-   * Compreender a propriedade de que prolongamentos de projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção se encontram em um ponto.
-   
-   * Compreender a propriedade de que a projeção paralela de um feixe de retas paralelas que não são paralelas à direção da projeção são retas paralelas.
-   
-   * Identificar a existência de elementos de projeções em perspectiva e projeções paralelas em fotografias e pinturas históricas.
-   
-   **Observações e recomendações:**
-   
-   * O desenvolvimento e os questionamentos das PARTES 1 e 2 constituem um excelente exercício de geometria de posição.
-   
-   * Esta atividade é uma oportunidade do aluno ter contato com a noção de infinito. De fato, projeções em perspectiva permitem "materializar" o infinito em uma direção: no plano de projeção, ele pode ser identificado com o ponto de fuga associado à direção.
-   
-   * Na PARTE 1, supõe-se que `O \not\in \pi` a fim de se evitar uma projeção em perspectiva degenerada pois, se `O \in \pi`, então a imagem da projeção em perspectiva é `\{O\}`.
-   
-   * Sugerimos fortemente que, para a discussão da PARTE 1, você use com seus alunos a construção do GeoGebra 3D disponível no endereço <https://www.geogebra.org/m/pcx56y49>. Ela implementa os cinco passos da :numref:`fig-proj-infinito-02` à :numref:`fig-proj-infinito-06`, com a vantagem de se poder girar a cena e se poder escolher direções diferentes para a reta `r`.
-   
-   * Na discussão das PARTES 1 e 2 é interessante relacionar o que foi estabelecido sobre projeções de retas paralelas com a projeção dos lados paralelos do cubo vazado na :ref:`ativ-proj-luz-e-sombras`.
-   
-   * Para a PARTE 3, sugerimos que os alunos sejam divididos em grupos de cinco e que sejam distribuídas pelo menos uma imagem desenhada em perspectiva (como a pintura :numref:`fig-proj-ponto-de-fuga-01` ou a foto :numref:`fig-proj-ponto-de-fuga-02`), outra desenhada em projeção paralela (como a :numref:`fig-proj-ponto-de-fuga-03`), outra desenhada em "perspectiva inversa" (como a :numref:`fig-proj-ponto-de-fuga-04`) e, finalmente, uma que parece estar desenhada em perspectiva, mas não está  (como a :numref:`fig-proj-ponto-de-fuga-05`).
-   
-   * Muitos desenhos japoneses antigos, a exemplo da :numref:`fig-proj-ponto-de-fuga-03`, foram feitos com projeções paralelas, uma característica da cultura da época. Você pode encontrar outros desenhos japoneses nos seguintes endereços: <https://ukiyo-e.org/> e <http://www.jaodb.com/>. Ainda no contexto cultural, iconografias bizantinas e russas antigas compartilham a "perspectiva inversa" da :numref:`fig-proj-ponto-de-fuga-04`.
-   
-   * Versões interativas feitas no GeoGebra da :numref:`fig-proj-ponto-de-fuga-01` à :numref:`fig-proj-ponto-de-fuga-05` estão disponíveis neste endereço: <https://www.geogebra.org/m/kFpnVERB>. O botão "S" exibe a solução e o botão "I" posiciona as retas para a configuração inicial. Com este recurso computacional, economiza-se papel que seria necessário para imprimir as imagens necessárias para a PARTE 3.
-   
-
-Você já percebeu em uma estrada ou em um corredor comprido (:numref:`fig-proj-infinito-01`) que elementos da cena que são paralelos como as linhas do acostamento ou as linhas das paredes não são vistos como paralelos e parecem convergir para um ponto? Nesta atividade, veremos como este fenômeno é explicado pelas projeções em perspectiva.
-
-.. _fig-proj-infinito-01:
-
-.. figure:: _resources/infinito-01.jpg
-    
-   Corredores paralelos (fonte: PEXELS e Wikimedia Commons).
-
-.. Fonte: `PEXELS <https://www.pexels.com/photo/cold-frozen-ice-journey-355223/>`_ e `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:B%C4%9Blohrad_L%C3%A1zn%C4%9B_2014_8.jpg>`_.
-
-
-Este tipo de situação é traduzido pela frase popular "Retas paralelas se encontram no infinito!". Note, contudo, que as retas paralelas na cena tridimensional **nunca** se encontram. A concorrência ocorre para os prolongamentos das projeções em perspectiva de retas paralelas que não são paralelas ao plano de projeção.
-
-**PARTE 1.**
-
-Vamos primeiro compreender como a projeção em perspectiva de uma reta não paralela ao plano de projeção pode ser obtida por meio da interseção de dois planos. Caso queira acompanhar os passos descritos a seguir com um modelo interativo que pode ser girado e ampliado, acesse (inclusive do seu celular) o endereço: <https://www.geogebra.org/m/pcx56y49>.
-
-
-Como na :numref:`fig-proj-infinito-02`, considere uma projeção em perspectiva determinada por um centro `O` e um plano de projeção `\pi`. Suponha que o ponto `O` *não pertença* ao plano `\pi`. Considere também uma reta `r` não paralela ao plano `\pi` e que não passa pelo ponto `O`.
-
-.. _fig-proj-infinito-02:
-
-.. figure:: _resources/infinito-02_2.jpg
-
-   Projeção em perspectiva de uma reta: passo 1.
-   
-Para determinar a projeção em perspectiva de uma reta `r`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e o centro `O` com o plano `\pi`. A :numref:`fig-proj-infinito-03`     exibe as projeções `A'`, `B'` e `C'` dos pontos `A`, `B` e `C` da reta `r`.
-   
-.. _fig-proj-infinito-03:
-
-.. figure:: _resources/infinito-03_3.jpg
-
-   Projeção em perspectiva de uma reta: passo 2.
-   
-Observe que os pontos da reta `r` projetados pertencem ao plano `\pi` e, também, ao plano `\phi` que passa por `O` e contém a reta `r`, conforme a :numref:`fig-proj-infinito-04`.
-
-.. _fig-proj-infinito-04:
-
-.. figure:: _resources/infinito-04.jpg
-
-   Projeção em perspectiva de uma reta: passo 3.
-
-Em particular, os pontos da reta `r` projetados sobre o plano `\pi` pertencem à interseção `r'` dos dois planos `\pi` e `\phi`.
-
-.. _fig-proj-infinito-05:
-
-.. figure:: _resources/infinito-05_3.jpg
-
-   Projeção em perspectiva de uma reta: passo 4.
-
-Existe uma reta `s` que passa por `O` e é paralela a reta `r`. Essa reta pertence ao plano `\phi` e intersectará o plano `\pi` e, portanto, a reta `r'` em um ponto `F`, conforme a :numref:`fig-proj-infinito-06`. Neste contexto, o ponto `F` é denominado :index:`ponto de fuga` associado à direção dada pela reta `r`.
-
-.. _fig-proj-infinito-06:
-
-.. figure:: _resources/infinito-06_1.jpg
-
-   Projeção em perspectiva de uma reta: passo 5.
-
-
-**Pergunta 1.** Não existe ponto algum da reta `r` cuja projeção sobre o plano `\pi` seja o ponto `F`. Por quê? 
-
-Note que, em particular, a projeção da reta `r` **não é** uma reta mas, sim, uma reta menos um ponto: `r' - \{F\}`. Se prolongarmos esta projeção incluindo o ponto `F`, obteremos uma reta: `r'`.
-
-**Pergunta 2.** Suponha no que foi feito até agora, a reta `r` seja trocada por uma outra reta diferente, mas paralela a reta `r`. O ponto `F` para esta nova reta será o mesmo, não mudará. Por quê?
-
-**Pergunta 3.** Supomos inicialmente que a reta `r` não passa pelo ponto `O`. O que mudaria no que foi feito se `O` fosse um ponto de `r`?
-
-
-Considere agora o caso de duas ou mais retas paralelas que não são paralelas ao plano de projeção `\pi`. Em decorrência do que foi estabelecido nas Perguntas 1 e 2, sabemos que suas projeções sobre o plano `\pi` são retas menos um mesmo ponto `F` e que, se prolongássemos essas projeções, obteríamos retas concorrentes no ponto `F`. A :numref:`fig-proj-infinito-08` e a :numref:`fig-proj-infinito-09` ilustram essa propriedade.
-Isto também explica a "convergência"
-das linhas do acostamento e das linhas das paredes na :numref:`fig-proj-infinito-01`.
-
-.. _fig-proj-infinito-08:
-
-.. figure:: _resources/infinito-08.jpg
-
-   Projeção em perspectiva de um feixe com 3 retas paralelas (<https://www.geogebra.org/m/EAuVTyTG>).
-
-
-.. _fig-proj-infinito-09:
-
-.. figure:: _resources/infinito-09_1.jpg
-
-   Projeção em perspectiva de um feixe com muitas retas paralelas (<https://www.geogebra.org/m/ycxHtZEP>).
-
-
-**Pergunta 4.** Qual é a projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção? Faça uma conjectura e justifique-a!
-
-**PARTE 2**
-
-**Pergunta 1.** O desenvolvimento feito na PARTE 1 trata de projeções em perspectiva de retas paralelas. O que pode ser dito sobre *projeções paralelas de retas paralelas*? Faça uma conjectura e justifique-a!
-
-**PARTE 3.**
-
-.. https://www.geogebra.org/m/kFpnVERB
-
-Caso uma pintura queira retratar a realidade segundo a metáfora da janela de Alberti (:numref:`fig-proj-janela-de-alberti-03`), os elementos desenhados devem respeitar as propriedades das projeções em perspectiva. Em particular, segmentos de retas que são paralelos na cena tridimensional devem ser desenhados como segmentos de reta cujos prolongamentos se encontram em um ponto de fuga.
-
-Você receberá reproduções de pinturas, desenhos e fotos do seu professor (as imagens a seguir dão alguns exemplos). 
-
-
-.. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
-
-.. _fig-proj-ponto-de-fuga-01:
-
-.. figure:: _resources/ponto-de-fuga-01_2.jpg
-   :width: 300pt
-   
-   A Última Ceia de Leonardo da Vinci (1452-1519) (fonte: Wikimedia Commons).
-
-
-.. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
-   
-.. _fig-proj-ponto-de-fuga-02:   
-
-.. figure:: _resources/ponto-de-fuga-02.jpg
-   :width: 300pt
-   
-   Linha de trem na cidade de Orléans na França (fonte: Wikimedia Commons).
-
-   
-   .. _fig-proj-ponto-de-fuga-03:   
-   
-   .. figure:: _resources/ponto-de-fuga-03.jpg
-      :width: 300pt
-   
-      Pintura japonesa em papel do século XIII (fonte: `University of Maryland <http://faculty.philosophy.umd.edu/jhbrown/digitaltech/index.html>`_).
-
-   .. https://en.wikipedia.org/wiki/Macedonian_Orthodox_Church_%E2%80%93_Ohrid_Archbishopric#/media/File:Ohrid_annunciation_icon.jpg
-   
-   .. _fig-proj-ponto-de-fuga-04:   
-
-   .. figure:: _resources/ponto-de-fuga-04.jpg
-      :width: 150pt
-   
-      Ícone bizantino na Igreja de São Clemente em Ohrid, República da Macedônia (fonte: Wikimedia Commons).      
-
-   .. https://en.wikipedia.org/wiki/Arnolfini_Portrait#/media/File:Van_Eyck_-_Arnolfini_Portrait.jpg
-   
-   .. _fig-proj-ponto-de-fuga-05:         
-
-   .. figure:: _resources/ponto-de-fuga-07.jpg
-      :width: 150pt
-   
-   
-      O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441) (fonte: Wikimedia Commons).
-
-
-   .. https://commons.wikimedia.org/wiki/File:Palace_of_Assembly_Chandigarh_2006.jpg
-   
-   .. _fig-proj-ponto-de-fuga-09:         
-
-   .. figure:: _resources/ponto-de-fuga-09.jpg
-      :width: 300pt
-   
-   
-      Palácio da Assembleia em Chandigarh na Índia (fonte: Wikimedia Commons).
-
-      
-
-Em cada uma delas, você deve identificar quais são os elementos que são supostamente paralelos na cena tridimensional sendo registrada (contornos de paredes, ladrilhos, etc.) e, então, desenhar segmentos de reta nesses elementos da imagem. Aqui está um exemplo.
-
-   .. figure:: _resources/ponto-de-fuga-08_1.jpg
-      :width: 400pt
-
-
-.. admonition:: Resposta
-
-   **PARTE 1.**
-   
-   **Pergunta 1.** Suponhamos que `F` seja um ponto da projeção da reta `r` em `\pi`. Isto significa que existe um ponto `P\in r` tal que a reta `t` que passa por `O` e `P` intersecta `\pi` em `F`. Logo, `t` e `s` contêm os pontos `O` e `F`, o que implica que `t=s`. Observe, então, que `s` e `r` contêm o ponto `O`, o que mostra que `s` e `r` são concorrentes. Como, por hipótese, as retas `s` e `r` são paralelas, temos um absurdo. Portanto, concluímos que o ponto `F` não pertence à projeção da reta `r`.
-
-   **Pergunta 2.** Podemos perceber que o que torna `F` um ponto "especial" ao se calcular a projeção da reta `r` é o fato dele ser o ponto de interseção da reta `s` com o plano `\pi`, sendo `s` a reta paralela à `r` passando por `O`. Se, então, tomarmos uma reta qualquer paralela à reta `r`, ela continuará sendo paralela à reta `s` que intersecta `\pi` em `F`. E daí, da mesma forma que anteriormente, `F` não poderá fazer parte da projeção da nova reta. 
-   
-   **Pergunta 3.** Se `O` fosse um ponto da reta `r`, a projeção de `r` seria apenas o ponto de interseção da reta `r` com o plano `\pi`.
-   
-   **Pergunta 4.** A projeção em perspectiva de um feixe de retas paralelas que são paralelas ao plano de projeção é também um feixe de retas paralelas. Veja a figura abaixo.
-   
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar1Per4:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_2_1.png
-      :width: 300pt
-      :align: center
-
-      Retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`, e suas projeções em perspectiva `r'` e `s'`, respectivamente.
-   
-   Para conjecturar, vamos trabalhar apenas com duas retas `r` e `s` paralelas entre si e ao plano de projeção para facilitar nosso raciocínio que pode ser generalizado para um número qualquer de retas. Primeiramente, note que a projeção em perspectiva de uma reta paralela ao plano de projeção será também uma reta. Portanto, as projeções das retas `r` e `s` serão duas retas que chamaremos de `r'` e `s'`, respectivamente, e que suporemos serem distintas. Caso `r'` e `s'` não fossem retas paralelas, elas seriam concorrentes em um ponto `P` (como as duas retas estão dentro do mesmo plano, que é o plano de projeção, elas não poderiam ser reversas). Neste caso, existiriam dois pontos diferentes `A` e `B` pertencentes às retas paralelas `r` e `s`, respectivamente, que foram projetados em `P`. Isso significaria que as retas que passam pelo centro de projeção e por `A` e `B` se encontram em `P`, o que não é possível pois `A` e `B` pertencem à retas paralelas. Logo, a projeção de duas retas paralelas ao plano de projeção deve ser duas retas paralelas.
-   
-   Podemos pensar de outra forma também que talvez você considere de mais fácil entendimento. Se `r'` é a projeção de `r` no plano de projeção, então `r'` é paralela a `r`. Do mesmo modo, `s'` é paralela a `s`. Mas, então `r'` é paralela a `s'`, porque `r'` é paralela a `r`, `r` é paralela a `s` e `s` é paralela a `s'`. 
-   
-   **PARTE 2.** 
-   
-   Como percebemos no caso das projeções em perspectiva que retas paralelas ao plano de projeção e não paralelas possuem comportamentos diferentes ao serem projetadas, vamos estudar os dois casos em separado aqui também.  Além disso, vamos também considerar que a direção de projeção pode ou não ser perpendicular ao plano de projeção.
-   
-   *Retas paralelas entre si e não paralelas ao plano de projeção*
-   
-   Primeiramente, vamos tomar duas retas `r` e `s` paralelas entre si, mas não paralelas ao plano de projeção. Além disso, considere a direção de projeção `d` oblíqua em relação ao plano de projeção `\pi`, como exibido na :numref:`fig-AtRetasParalObrasArteInfinitoPar2_1`.
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_1:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_3_2.png
-      :width: 300pt
-      :align: center
-
-      Retas `r` e `s` paralelas entre si e `d` a direção de projeção oblíqua em relação ao plano de projeção `\pi`.
-   
-   Para determinar a projeção paralela da reta `r` em relação à `d` sobre `\pi`, devemos, de acordo com a definição, para cada ponto de `r`, determinar a interseção da reta que passa pelo ponto e é paralela à `d` com o plano `\pi`. Tome os pontos `A` e `B` pertencentes à reta `r`, como na :numref:`fig-AtRetasParalObrasArteInfinitoPar2_2`. As projeções dos pontos `A` e `B` serão chamadas `A'` e `B'`, respectivamente. 
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_2:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_4_3.png
-      :width: 300pt
-      :align: center
-
-      Projeções paralelas `A'` e `B'` dos pontos `A` e `B` da reta `r` em relação à direção `d` sobre o plano `\pi`.
-      
-   Observe que o ponto `B` é a interseção da reta `r` com o plano `\pi` e por isso, sua projeção coincide com ele mesmo. Projetando todos os pontos de `r`, encontramos a reta `r'` que passa por `A'` e  `B'`, conforme :numref:`fig-AtRetasParalObrasArteInfinitoPar2_3`. Assim, `r'` é a projeção paralela da reta `r` em relação à `d` sobre o plano `\pi`. 
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_3:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_6_1.png
-      :width: 300pt
-      :align: center
-
-      A reta `r'` é a projeção paralela da reta `r` em relação à direção `d` sobre o plano `\pi`. 
-   
-   Afim de aplicar novamente a definição de projeção paralela à reta `s`, vamos tomar os pontos `C` e `D` de `s`. As retas que passam por esses pontos e são paralelas à `d` intersectam `\pi` em `C'` e `D'`, respectivamente. Se replicássemos esse raciocínio para todos os pontos de `s`, teríamos que a reta `s'` que passa por `C'` e `D'` é a projeção paralela de `s` em relação à `d` sobre o plano `\pi`. 
-   
-   A :numref:`fig-AtRetasParalObrasArteInfinitoPar2_4` exibe as retas `r'` e `s'` que são as projeções de `r` e `s` em relação à `d` sobre o plano `\pi`. 
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_4:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_5_2.png
-      :width: 300pt
-      :align: center
-
-      `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
-      
-   Repare que a reta que passa pelo ponto `B` e é paralela à `d` e a reta `r` determinam um plano, que chamaremos de `\pi_r`. Portanto, `\pi_r` é paralelo à reta `d` e, além disso, a forma como `\pi_r` foi determinado faz com que ele contenha todas as retas paralelas à `d` que passam por pontos de `r`. Assim, `r'` é a reta de interseção de `\pi_r` com `\pi`. Se pensarmos de maneira análoga para a reta `s`, poderíamos determinar o plano `\pi_s` a partir da reta que passa pelo ponto `C` e é paralela à `d` e a reta `s`. `\pi_s` é também paralelo à reta `d` e contém todas as retas paralelas à `d` que passam por pontos de `s`. Dessa forma, `s'` é a reta de interseção de `\pi_s` com `\pi`. Se `\pi_r` e `\pi_s` são dois planos paralelos à `d` que não possuem interseção, então eles são paralelos entre si, e isto implica que suas interseções com `\pi` serão paralelas. Logo, `r'` e `s'` são retas paralelas.
-   
-   No caso anterior, as retas `r` e `s` são oblíquas em relação ao plano de projeção, assim como a direção de projeção `d`. Caso `d` fosse perpendicular à `\pi`, não haveria nenhuma alteração na projeção das retas, ou seja, as projeções paralelas de retas paralelas entre si e oblíquas à `\pi` também seriam retas paralelas entre si. Veja a figura :numref:`fig-AtRetasParalObrasArteInfinitoPar2_5`.
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_5:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_13_3.png
-      :width: 300pt
-      :align: center
-
-      A direção de projeção `d` é perpendicular ao plano de projeção `\pi`, e `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
-   
-   Se tomarmos retas `r` e `s` paralelas entre si e perpendiculares ao plano de projeção teremos duas situações diferentes. Na primeira, caso `d` seja uma reta oblíqua em relação à `\pi`, então teremos uma situação semelhante aos dois casos anteriores. Veja a figura :numref:`fig-AtRetasParalObrasArteInfinitoPar2_6`.
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_6:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_12_1.png
-      :width: 300pt
-      :align: center
-
-      As retas `r` e `s` são perpendiculares ao plano de projeção `\pi` e `d` é oblíqua em relação à `\pi`. As `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` sobre o plano `\pi`. 
-   
-   Porém, se tivermos `r, s` e `d` perpendiculares ao plano de projeção `\pi`, a situação será um pouco diferente. Sendo a direção `d` perpendicular à `\pi`, a reta que passa por pontos de `r` e é paralela à `d` coincide com `r`. O mesmo acontece com a reta `s`. Como a interseção de `r` e `s` com o plano `\pi` são os pontos `A` e `B`, respectivamente, então as projeções paralelas de `r` e `s` serão os pontos `A` e `B`. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_7`. 
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_7:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_11_2.png
-      :width: 300pt
-      :align: center
-
-      A direção de projeção `d` é perpendicular ao plano de projeção `\pi`, assim como `r` e `s`. A projeção paralela das retas `r` e `s` serão os pontos `A` e `B`, onde `r` e `s` intersectam o plano `\pi`. 
-   
-   *Retas paralelas entre si e paralelas ao plano de projeção*
-   
-   Vamos agora tomar duas retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`, além da reta `d` que será a direção de projeção e `\pi` o plano de projeção. Neste caso, `d` pode ser ou não perpendicular ao plano de projeção. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_8`.
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_8:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_10.png
-      :width: 350pt
-      :align: center
-
-      Retas `r` e `s` paralelas entre si e ao plano de projeção `\pi`.
-      
-   Seguindo o mesmo raciocínio dos casos anteriores, tomemos os pontos `A` e `B` pertencentes à reta `r` e vamos projetá-los sobre `\pi` conforme mostra a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_9`. Para isso, basta tomar a reta passando por cada ponto e paralela à `d`, e então calcular sua interseção com `\pi`. Chamaremos de `A'` e `B'` as projeções dos pontos `A` e `B`, respectivamente. 
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_9:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_9_1.png
-      :width: 300pt
-      :align: center
-
-      Projeções paralelas `A'` e `B'` dos pontos `A` e `B` da reta `r` em relação à direção `d` sobre o plano `\pi`. 
-      
-   Projetando todos os pontos de `r`, encontramos a reta `r'` que passa por `A'` e `B'`, que é a projeção paralela à reta `r` em relação à direção `d` sobre o plano `\pi`. Observe que `r'` é paralela à `r`. Veja a :numref:`fig-AtRetasParalObrasArteInfinitoPar2_10`.  
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_10:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_8.png
-      :width: 300pt
-      :align: center
-
-      A reta `r'` é a projeção paralela da reta `r` em relação à direção `d` sobre o plano `\pi`.  
-      
-   Para encontrar a projeção paralela da reta `s`, tomemos os pontos `C` e `D` de `s`. As retas que passam por esses pontos e são paralelas à `d` intersectam `\pi` em `C'` e `D'`, respectivamente. Se replicássemos esse raciocínio para todos os pontos de `s`, teríamos que a reta `s'` que passa por `C'` e `D'` é a projeção paralela de `s` em relação à direção `d` sobre o plano `\pi`. Note que `s'` é paralela à `s`.
-   
-   A :numref:`fig-AtRetasParalObrasArteInfinitoPar2_11` exibe as retas `r'` e `s'` que são as projeções paralelas das retas `r` e `s`.  
-   
-   .. _fig-AtRetasParalObrasArteInfinitoPar2_11:
-
-   .. figure:: _resources/AtRetasParalObrasArteInfinito_7.png
-      :width: 300pt
-      :align: center
-
-      `r` e `s` são retas paralelas ao plano de projeção, e `r'` e `s'` são as projeções paralelas das retas `r` e `s` em relação à direção `d` no plano `\pi`.  
-      
-   Como `r` é paralela à `s`, `r` é paralela à `r'` e `s` é paralela à `s'`, concluímos que `r'` é paralela à `s'`. Ou seja, a projeção paralela de retas paralelas entre si e paralelas ao plano de projeção será também retas paralelas.   
-   
-   Por tudo que vimos, podemos concluir que as projeções paralelas de retas paralelas são retas também paralelas, com exceção para as retas perpendiculares ao plano de projeção que são projetadas perpendicularmente no plano de projeção. Neste caso, as projeções serão pontos.
-   
-   **PARTE 3.** 
-   
-   Versões interativas feitas no GeoGebra da :numref:`fig-proj-ponto-de-fuga-01` à :numref:`fig-proj-ponto-de-fuga-05` estão disponíveis no endereço <https://www.geogebra.org/m/kFpnVERB>. O botão "S" exibe a solução e o botão "I" posiciona as retas para a configuração inicial. A seguir, apresentaremos a resposta final de cada uma das figuras.
-   
-   .. https://commons.wikimedia.org/wiki/File:Leonarda_da_vinci,_last_supper_02.jpg
-
-   .. _fig-proj-ponto-de-fuga-01-solucao:
-
-   .. figure:: _resources/material-fZWyKPYy-final.png
-      :width: 300pt
-   
-      A Última Ceia de Leonardo da Vinci (1452-1519) com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).
-
-
-   .. https://commons.wikimedia.org/wiki/File:Railway_perspective.jpg
-   
-   .. _fig-proj-ponto-de-fuga-02-solucao:   
-
-   .. figure:: _resources/material-nMXfrneZ-final.png
-      :width: 300pt
-   
-      Linha de trem na cidade de Orléans na França com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).
-   
-   
-   .. http://faculty.philosophy.umd.edu/jhbrown/digitaltech/index.html
-   
-   .. _fig-proj-ponto-de-fuga-03-solucao:   
-   
-   .. figure:: _resources/material-q9entV6e-final.png
-      :width: 300pt
-   
-      Pintura japonesa em papel do século XIII com segmentos desenhados sobre a imagem (fonte: University of Maryland).
-    
-      
-   .. _fig-proj-ponto-de-fuga-04-solucao:   
-   
-   .. figure:: _resources/material-brCxFwkH-final.png
-      :width: 150pt
-   
-      Ícone bizantino na Igreja de São Clemente em Ohrid, República da Macedônia, com segmentos desenhados sobre a imagem(fonte: Wikimedia Commons).   
-      
-
-   .. https://en.wikipedia.org/wiki/Arnolfini_Portrait#/media/File:Van_Eyck_-_Arnolfini_Portrait.jpg
-   
-   .. _fig-proj-ponto-de-fuga-05-solucao:         
-
-   .. figure:: _resources/material-wAKGaw7e-final.png
-      :width: 150pt
-   
-      O Casal Arnolfini do pintor flamengo Jan van Eyck (1390-1441) com segmentos desenhados sobre a imagem(fonte: Wikimedia Commons).
-      
-   .. _fig-proj-ponto-de-fuga-06-solucao:   
-   
-   .. figure:: _resources/material-W3A6HwxC-final.png
-      :width: 300pt
-   
-      Palácio da Assembléia em Chandigarh na Índia com segmentos desenhados sobre a imagem (fonte: Wikimedia Commons).   
-   
-
-   
-   
-.. admonition:: Para refletir
-
-    .. figure:: _resources/2017-12-15_05-14-38.jpg
-       :width: 400pt
-
-       Fonte: <http://www.gocomics.com/bc>.
-   
-   

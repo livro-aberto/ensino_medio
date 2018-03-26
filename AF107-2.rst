@@ -1,291 +1,528 @@
-*******
-Praticando
-*******
+**********************************
+Explorando: taxa de variação média
+**********************************
 
-.. _ativ-titulo-da-atividade:
+.. _ativ-alcool:
 
-Atividade: Antecipando o pagamento de uma dívida
-------------------------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Relacionar função afim de domínio discreto com progressões aritméticas.
-   * Perceber nas sequências apresentadas que a diferença entre termos consecutivos é constante, e portanto elas formam uma P.A.
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
-   
-   * Questione seus estudantes sobre o fato de, apesar da variação ser sempre de 250 reais, em um caso a primeira função (valor a pagar) é decrescente e a segunda função (desconto) é crescente, relacionando com as expressões obtidas no item (f).
-   * No item (d) espera-se que a resposta seja em forma de porcentagem. Caso julgue necessário, aproveite o momento para fazer uma rápida revisão sobre o assunto.
-   * Possivelmente os estudantes não estão familizarizados com alguns dos termos apresentados nessa atividade: *antecipação de uma dívida*, *desconto comercial*, *tempo de antecipação*. Antes de iniciar a atividade esclareça para eles o significado de cada um desses termos.
-
-O cliente de um banco foi à sua agência de relacionamento para negociar a antecipação de uma dívida no valor de `R\$ 5.000,00`, que venceria no prazo de 8 meses. Lá, foi informado pelo gerente que a modalidade praticada era a de desconto comercial, no qual o valor a ser descontado é calculado a partir do valor da dívida e é proporcional ao tempo de antecipação. Para o caso em questão, o gerente gerou a seguinte quadro:
-
-.. table:: 
-   :widths: 3 1 1 1 1 1
-   :column-alignment: center center center center center center
-
-+---------------------+-------+-------+-------+-------+-------+
-| Antecipação (meses) | 0     | 1     | 2     | 3     | 4     |
-+---------------------+-------+-------+-------+-------+-------+
-| Valor a pagar (R$)  | 5.000 | 4.750 | 4.500 | 4.250 | 4.000 |
-+---------------------+-------+-------+-------+-------+-------+
-
-#. Observando o padrão de desconto, complete a tabela até o 8º mês de antecipação.
-#. Descreva a variação sofrida pelo valor a pagar à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor a pagar entre dois meses consecutivos?
-#. Descreva a variação sofrida pelo valor do desconto à medida que aumenta o tempo de antecipação. O que se pode afirmar sobre a variação observada no valor de desconto entre dois meses consecutivos?
-#. Qual é, então, a taxa mensal de desconto comercial praticada pelo banco?
-#. No plano cartesiano a seguir estão representados os pares ordenados `(n,D(n))` em que `n` é o tempo de antecipação e `D(n)` o valor do desconto correspondente. Represente nele os pontos que correspondem aos pares ordenados `(n,V(n))` em que `V(n)` é o valor a pagar no tempo `n`.
-
-
-.. admonition:: Resposta 
-
-   #.
-   
-      .. table:: 
-         :widths: 4 1 1 1 1 1 1 1
-         :column-alignment: center center center center center center center center
-
-         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-         | Antecipação (meses) | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     |
-         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-         | Valor a pagar (R$)  | 5.000 | 4.750 | 4.500 | 4.250 | 4.000 | 3.750 | 3.500 | 3.250 | 3.000 |
-         +---------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-
-   #. A medida que o tempo aumenta, o valor a pagar diminui. Entre dois meses consecutivos a variação do valor a pagar é de R$ `250,00`.
-   
-   #. A medida que o tempo aumenta, o valor do desconto aumenta. Entre dois meses consecutivos a variação do desconto é de R$ `250,00`.
-   
-   #. `5` % do valor da dívida.
-   
-   #.
-
-      .. figure:: _resources/antecipando.jpeg
-         :width: 400pt
-         :align: center
-
-   #. `D(n)=250n` e `V(n)=-250n+5000`.
-   
-   #. R$ `4.900,00`.
-
-.. _ativ-titulo-da-atividade:
-
-Atividade: Abastecendo a caixa
+Atividade: teor de álcool sanguíneo
 ------------------------------
 
 .. admonition:: Para o professor
 
    **OBJETIVOS ESPECÍFICOS**
    
-   * Identificar a taxa de variação gerada por duas razões distintas.
-   * Reconhecer que a taxa de variação é negativa na situação descrita.
-   * Relacionar o preenchimento do quadro com a expressão algébrica que modela a situação, sem a necessidade da representação gráfica.
+   * Conjecturar que taxa de variação média de uma função linear qualquer é a mesma para qualquer intervalo. 
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Discuta com seus alunos a importância da utilização dos conceitos trabalhados no processo de controle do desperdício de água potável. E como ações simples, pautadas em dados quantitativos podem influenciar na economia de água.
-   * Durante a aplicação da atividade, conduza as discussões para que seus alunos argumentem à respeito do sinal da taxa de variação.
-   * Possibilite à seus alunos a oportunidade de apresentar soluções diferentes das usuais, seja utilizando conceitos de Progressões aritméticas ou até mesmo de proporcionalidade (fazendo os ajustes necessários, já que `V(0)` não é zero).
-
-Uma caixa de água é abastecida por uma torneira cujo fluxo de água é constante e igual a `10` litros por minuto e, simultaneamente, seu conteúdo escoa, por um ralo, cujo fluxo de água é controlado à razão constante de `15` litros por minuto. Em certo instante, o volume de água dentro da caixa é de `100` litros, estando a torneira e o ralo ambos abertos. 
-
-#. Sendo V(t) o volume de água na caixa após t minutos do instante citado. Exiba uma sentença matemática para V(t).
-
-#. Complete a tabela abaixo com os valores correspondentes ao volume de água na caixa.
-
-   .. table:: 
-      :widths: 2 2 2 2 2 2 2 2 2
-      :column-alignment: center center center center center center center center center
-
-   +-----------------+---+---+---+---+---+---+----+----+
-   | Tempo (minutos) | 0 | 1 | 2 | 3 | 4 | 5 | 10 | 20 |
-   +-----------------+---+---+---+---+---+---+----+----+
-   | Volume (litros) |   | 4 |   |   |   |   |    |    |
-   +-----------------+---+---+---+---+---+---+----+----+
-
-#. À medida que os valores do tempo aumentam, o que ocorre com os valores correspondentes ao volume de água da caixa?
+   * A atividade aborda assuntos relacionados a temas transversais, como saúde e consumo de álcool. Sugerimos que procure fazer um trabalho colaborativo com os professores de Biologia, Química e de Geografia para ampliar a discussão com os alunos em questões como os processos bioquímicos do metabolismo do álcool, ou mesmo em questões sobre o a relação entre álcool e direção. No site referenciado há informações adicionais que podem enriquecer a discussão.
    
-#. Quando os valores do tempo aumentam de `t=1` a `t=2`, o quanto variam os valores correspondentes ao volume de água da caixa? E quando estes valores aumentam de `t=12` a `t=13`?
+   * Caso necessário, faça uma revisão sobre taxa de variação média, vista no capítulo de funções.
+
+De acordo com o site `wikiHow <https://pt.wikihow.com/Calcular-o-N%C3%ADvel-de-%C3%81lcool-no-Sangue>`_ o Teor Alcoólico Sanguíneo, ou TAS, é a medida da proporção de álcool no sangue de uma pessoa. Um TAS de `0,08` indica que há `80mg` de álcool por `100ml` de sangue. 
+
+Uma bebida padrão geralmente consiste de `350 ml` de cerveja, `150 ml` de vinho ou um `45 ml` de bebidas fortes. No geral, uma bebida padrão é a que contém `14 ml` de álcool puro. O álcool é absorvido de forma diferente pelos homens e pelas mulheres. O corpo masculino geralmente tem mais água (`61\%` *versus* `52\%`) e, portanto, dilui melhor o álcool, gerando TAS mais baixos.
+
+O TAS é proporcional ao número de doses de bebida padrão consumidas, de maneira que para um homem de `75kg`, a função linear `h(x)` que relaciona o TAS com o número de doses `x` de bebida padrão é dada pela expressão
+
+.. math::
+
+   h(x)=0,0205 \cdot x.
+
+Para uma mulher que pesa `60 kg`, a mesma relação é dada pela função linear
+
+.. math::
+
+   m(x)=0,3075 \cdot x.
+
+#. Complete a tabela a seguir que relaciona os valores de `h(x)` e de `m(x)` correspondentes a valores inteiros de `x`, de `0` a `5`.
+
+   .. table:: Legenda
+      :widths: 1 3 3
+      :column-alignment: center center center
+
+   +---------+--------+--------+
+   | `x`     |`h(x)`  | `m(x)` |
+   +=========+========+========+
+   | 0       |        |        |
+   +---------+--------+--------+
+   | 1       |        |        |
+   +---------+--------+--------+
+   | 2       |        |        |
+   +---------+--------+--------+
+   | 3       |        |        |
+   +---------+--------+--------+
+   | 4       |        |        |
+   +---------+--------+--------+
+   | 5       |        |        |
+   +---------+--------+--------+
+      
+#. Calcule, para a função `h(x)`, as taxas de variação médias nos seguintes intervalos de valores de `x`:
+
+   b.1) entre `x=0` e `x=1`;
    
-#. Quando os valores do tempo aumentam em uma unidade, a partir de um instante qualquer, o quanto variam os valores correspondentes ao volume de água da caixa?
+   b.2) entre `x=1` e `x=3`;
+   
+   b.3) entre `x=2` e `x=5`;
+   
+
+#. Repita o item anterior para a função `m(x)` nos intervalos:
+
+   c.1) entre `x=2` e `x=3`;
+   
+   c.2) entre `x=1` e `x=4`;
+   
+   c.3) entre `x=0` e `x=5`;
+
+#. A partir dos itens anteriores, faça uma conjectura sobre as taxas de variação médias de uma função linear qualquer.
 
 .. admonition:: Resposta 
 
-   #. `V(t)=-5t+100`.
+   #. `\ `
    
+      .. table:: Legenda
+         :widths: 1 3 3
+         :column-alignment: center center center
+
+      +---------+--------+--------+
+      | `x`     |`h(x)`  | `m(x)` |
+      +=========+========+========+
+      | 0       |    0   |  0     |
+      +---------+--------+--------+
+      | 1       | 0,0205 | 0,3075 |
+      +---------+--------+--------+
+      | 2       | 0,041  | 0,615  |
+      +---------+--------+--------+
+      | 3       | 0,0615 | 0,9225 |
+      +---------+--------+--------+
+      | 4       | 0,082  | 1,23   |
+      +---------+--------+--------+
+      | 5       | 0,1025 | 1,5375 |
+      +---------+--------+--------+
+
    #.
+      b.1) `0,0205`
+      
+      b.2) `0,0205`
+      
+      b.3) `0,0205`
+      
+   #.
+      c.1) `0,3075`
+      
+      c.2) `0,3075`
+      
+      c.3) `0,3075`
+      
+   #. A conjectura é que a taxa de variação média de uma função linear qualquer deve ser constante.
+      
+
+
+
+.. _ativ-camara:
+
+Atividade: câmara frigorífica
+------------------------------
+
+.. admonition:: Para o professor
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Perceber com o auxílio da representação gráfica a relação entre taxa de variação média negativa e função linear decrescente.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * É possível que os estudantes utilizem regra de três para responder as questões propostas no item a). A seguir iremos construir a representação gráfica da função linear, por isso é importante  fazer a conexão da regra de três com sua interpretação geométrica, destacando o uso da semelhança de triângulos.
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[->, thick](-3,0)--(5,0);
+      \draw[->, thick](0,-13)--(0,2);
+      \draw[primario, thick](0,0)--(4,-12);
+      \draw[dashed](0,-12)--(4,-12)--(4,0);
+      \node[ponto]at (0,0){};
+      \node[ponto]at (4,-12){};
+      \node[above,rotate=90] at(-1,-10){Temperatura $^\circ$C};
+      \node[above] at(5,0){Tempo (h)};
+      \node[above] at(4,0){8};
+      \node[left] at(0,-12){$-24$};
+      \node[above] at(2,0){$t$};
+      \node[left] at(0,-6){$f(t)$};
+      \draw[dashed](2,0)--(2,-6)--(0,-6);
+      \node[ponto]at (2,-6){};
+
+
+Uma câmara frigorífica está programada para diminuir sua temperatura segundo uma taxa constante em `^\circ C` por hora. Na primeira observação constata-se que ela está a `0^\circ C`. Após `8` horas, realiza-se uma nova observação e seu visor mostra a temperatura de `-24^\circ C` e também o seguinte gráfico para a evolução da temperatura em função do tempo.
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw(-3,-.05) grid(5,.05);
+   \draw(-.05,-12) grid(.05,2);
+   \draw[->, thick](-3,0)--(5,0);
+   \draw[->, thick](0,-12)--(0,2);
+   \draw[primario, thick](0,0)--(4,-12);
+   \draw[dashed](0,-12)--(4,-12)--(4,0);
+   \node[ponto]at (0,0){};
+   \node[ponto]at (4,-12){};
+   \node[above,rotate=90] at(-1,-10){Temperatura $^\circ$C};
+   \node[above] at(4,0){Tempo (h)};
+   \foreach\x in{-4, -2, 0, 2, 4, 6, 8}
+   \node[below left] at (.5*\x, 0){\x};
+   \foreach \y in{-24, -22, -20, ..., -2}
+   \node[left]at(0,.5*\y){\y};
+   \node[left]at(0,1){2};
+   \node[left]at(0,2){4};
+
+
+#. Qual a temperatura da câmara `1` hora após a primeira observação? E `5` horas após a primeira observação? E `t` horas após a primeira observação?
+#. Qual o valor da taxa (de variação média) constante segundo a qual a temperatura diminui?
+#. Determine a função que relaciona temperatura e tempo nesse contexto, considerando para seu domínio o intervalo de números reais `[0,8]`. Ela é uma função crescente ou decrescente? Por que?
+#. Como seria o gráfico se a temperatura, no mesmo intervalo de tempo, ao invés de diminuir, estivesse aumentando `1,5^\circ C/h`? Qual seria a expressão da função, nesse caso? Teríamos uma função crescente ou decrescente? Por que?
+#. Complete as lacunas da sentença abaixo para formular uma conjectura que relacione a taxa de variação média da função linear com o crescimento ou decrescimento da função.
+
+   "Quando a taxa de variação média de uma função linear é um número real ____________________, a função é ______________________ e quando a taxa é um número real _______________________, a função é _______________________."
+
+
+.. admonition:: Resposta
+
+   #. Após `1` hora desde a primeira observação a temperatura será de `-3^\circ C`. Após `5` horas a temperatura será de `-15^\circ C` e `t` horas após a primeira observação a temperatura será `-3t^\circ C`.
+   
+   #. `-3^\circ C/h`.
+   
+   #. `f:[0,8] \to \mathbb{R}`, `f(t)=-3t`. `f` é uma função decrescente, pois a medida que o tempo aumenta a temperatura correspondente diminui. Ou ainda, para quaisquer tempos `t_1` e `t_2` tais que `t_1 < t_2` tem-se que `-3t_1>-3t_2`, isto é, `f(t_1)>f(t_2)`.
+   
+   #. A expressão da função é `f(t) =1,5\cdot t`. É uma função crescente, pois a medida que o tempo aumenta a temperatura correspondente também aumenta.
+
+
+      .. tikz::
+
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+         \draw[->, thick](-1,0)--(6,0)node[above, xshift=-.5cm]{Tempo (h)};
+         \draw[->, thick](0,-1)--(0,7)node[left,xshift=-.7cm, rotate=90]{Temperatura ($^\circ$C)};
+         \draw[primario, domain=0:4.4]plot(\x, 1.5*\x);
+         \node[below]at (1,0){1};
+         \node[below]at (4,0){8};
+         \node[left]at (0,1.5){1.5};
+         \node[left]at (0,6){12};
+         \draw[dashed](0,1.5)--(1,1.5)--(1,0);
+         \draw[dashed](0,6)--(4,6)--(4,0);
+         
+
+   
+   #. Quando a taxa de variação média de uma função linear é um número real *positivo*, a função é *crescente* e quando a taxa é um número real *negativo*, a função é *descrescente*.
+   
+   
+.. _ativ-celular:
+
+Atividade: Hora de carregar o celular
+------------------------------
+
+.. admonition:: Para o professor
+   
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Perceber, a partir da taxa de variação média constante, que o gráfico de uma função linear está contido em uma reta. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (d) é possível que os estudantes façam direto a "regra de três"; o que está correto. Contudo, peça para que justifiquem o procedimento usando alguma justificativa geométrica envolvendo os pontos do gráfico. A ideia é que, nesse item eles percebam os triângulos semelhantes que podem ser considerados para a solução.
+   
+   
+
+(**Incluir ilustração de um celular sendo carregado, explicitando o ícone da bateria**)
+
+.. figure:: _resources/bateria.png
+   :width: 100pt
+   :align: center
+
+
+O tempo total de recarga da bateria (de `0\%` a `100\%`) de um determinado modelo de telefone celular é  de `2` horas e `5` minutos. Supondo que o carregamento ocorre segundo uma taxa constante:
+
+#. Faça uma tabela que forneça o percentual de carga na bateria a cada `25` minutos, a partir de zero. 
+
+#. Represente em um plano cartesiano os pontos da tabela do item anterior.
+
+#. Descreva uma estratégia que permita, a partir da representação gráfica obtida no item anterior, determinar o percentual de carga na bateria após `40` minutos de carregamento.
+
+#. Determine a função que modela o carregamento desse modelo de telefone, especificando seus domínio e conjunto imagem.
+
+#. Qual é a taxa de carregamento desse modelo de telefone celular.
+
+.. admonition:: Resposta
+
+   #. `\ `
+   
       .. table::
-         :widths: 2 1 1 1 1 1 1 1 1 
-         :column-alignment: center center center center center center center center center
+         :widths: 5 5
+         :column-alignment: center center
 
-         +-----------------+-----+----+----+----+----+----+----+----+
-         | Tempo (minutos) | 0   | 1  | 2  | 3  | 4  | 5  | 10 | 20 |
-         +-----------------+-----+----+----+----+----+----+----+----+
-         | Volume (litros) | 100 | 95 | 90 | 85 | 80 | 75 | 50 | 0  |
-         +-----------------+-----+----+----+----+----+----+----+----+
-
-   #. Diminuem.
+      +---------+----------------------+
+      | t (min) | Porcentagem de carga |
+      +---------+----------------------+
+      | 0       | 0                    |
+      +---------+----------------------+
+      | 25      | 20                   |
+      +---------+----------------------+
+      | 50      | 40                   |
+      +---------+----------------------+
+      | 75      | 60                   |
+      +---------+----------------------+
+      | 100     | 80                   |
+      +---------+----------------------+
+      | 125     | 100                  |
+      +---------+----------------------+
    
-   #. Reduzem `5` litros em ambos os casos.
-   
-   #. Em `5` litros.
+   #.
 
-.. _ativ-titulo-da-atividade:
-
-Atividade: Temperatura Controlada
-------------------------------
-
-Num laboratório, um químico conseguiu controlar a variação de temperatura de dois compostos. A variação de ambos está associada às funções afins `f` e `g`, de maneira que a taxa de variação das temperaturas de cada um dos compostos seja constante. Observe o gráfico, onde o eixo das ordenadas indica a temperatura (em graus Celsius) de cada composto em função do tempo `t`, em minutos. O gráfico da figura a seguir modela a situação:
-
-
-.. figure:: _resources/at_temp_1.jpg
-   :width: 500pt
-   :align: center
-
-O gráfico da função `f` passa pelos pontos `A=(0,-4)` e `B=(4,0)`, indicando que o composto associado à `f` está com uma temperatura de `-4\,^{\circ}\mathrm{C}` no início da medição e após `4` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
-
-O gráfico da função `g` passa pelos pontos `C=(0,2)` e `D=(2,0)`, indicando que o composto associado à `g` está com uma temperatura de `2\,^{\circ}\mathrm{C}` no início da medição e após `2` minutos a temperatura atinge `0\,^{\circ}\mathrm{C}`.
-
-Com base nas informações do texto responda as perguntas a seguir:
-
-#. Determine as expressões das funções afins `f` e `g`.
-
-#. A temperatura do composto associado à função `f` estão aumentando ou diminuindo? E do composto associado à função `g`?
-
-#. Em quanto tempo cada composto atinge a temperatura de 
-
-   `c.1)` `1\,^{\circ}\mathrm{C}`? 
-   
-   `c.2)` `-3\,^{\circ}\mathrm{C}`?`
-   
-   `c.3)` `-8\,^{\circ}\mathrm{C}`?
-   
-   `c.3)` `10\,^{\circ}\mathrm{C}`?
-   
-
-#. Após quantos minutos os dois compostos terão a mesma temperatura? E que temperatura é essa?
-
-
-.. admonition:: Resposta 
-
-   #. Como `f` intersecta o eixo das ordenadas no ponto `A=(0,-4)` temos que `b=-4`; substituindo o ponto `B=(4,0)`, ou seja, fazendo `f(4)=0` encontramos `a=1`. Do mesmo modo, `g` intersecta o eixo das ordenadas no ponto `C=(0,2)`, logo temos que `n=2`; substituindo o ponto `D=(2,0)`, ou seja, fazendo `f(2)=0` encontramos `m=-1`.
-
-   #. Observando os gráficos temos que: a temperatura do composto associado à função `f` está aumentando, e a temperatura do composto associado à função `g` está diminuindo.
-   
-   #. 
-   
-      `c.1)` Fazendo `f(t)=1` encontramos `t=5`, ou seja o composto associado à função afim `f`, atinge `1\,^{\circ}\mathrm{C}` após `5` minutos. E fazendo `g(t)=1` encontramos `t=1`, ou seja o composto associado à função afim `g`, atinge `1\,^{\circ}\mathrm{C}` após `1` minuto.
+      .. tikz::
       
-      `c.2)` Fazendo `f(t)=-3` encontramos `t=1`, ou seja o composto associado à função afim `f`, atinge `-3\,^{\circ}\mathrm{C}` após `1` minuto. E fazendo `g(t)=-3` encontramos `t=5`, ou seja o composto associado à função afim `g`, atinge `-3\,^{\circ}\mathrm{C}` após `5` minutos.
-      
-      `c.3)` Fazendo `f(t)=-8` encontramos `t=-4`, ou seja o composto associado à função afim `f`, nunca atingirá essa temperatura, já que `f` é sempre maior ou igual a  `-4\,^{\circ}\mathrm{C}`. E fazendo `g(t)=-8` encontramos `t=10`, ou seja o composto associado à função afim `g`, atinge `-8\,^{\circ}\mathrm{C}` após `10` minutos.
-      
-      `c.4)` Fazendo `f(t)=10` encontramos `t=14`, ou seja o composto associado à função afim `f`, atinge `10\,^{\circ}\mathrm{C}` após `14` minutos. E fazendo `g(t)=10` encontramos `t=-8`, ou seja o composto associado à função afim `g`, nunca atingirá essa temperatura, já que `g` é sempre menor ou igual a  `2\,^{\circ}\mathrm{C}`.
-      
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]         
+         \draw[->, thick](-1,0)--(6,0) node[above]{tempo(min)};
+         \draw[->, thick](0,-1)--(0,6);
+         \foreach \x/\y in{25/20, 50/40, 75/60, 100/80, 125/100}
+         \node[ponto]at(.04*\x, .05*\y){};
+         \foreach \x/\y in{25/20, 50/40, 75/60, 100/80, 125/100}
+         \draw[dashed](.04*\x,0)--(.04*\x,.05*\y)--(0,.05*\y)node[left]{\y} node[below] at(.04*\x,0){\x};
+         \node[ponto]at(0,0){};
+         \node[below left]at(0,0){0};
+         
 
-   #. Basta fazermos `f(t)=g(t)` , ou seja `t-4=-t+2`, resolvendo encontramos `t=3` minutos, e a temperatura é igual a `f(3)=g(3)=-1\,^{\circ}\mathrm{C}`. Portanto, os dois compostos atigem `-1\,^{\circ}\mathrm{C}` após `3` minutos de observação.
 
-
-.. _ativ-titulo-da-atividade:
-
-Atividade: Frio nas alturas
-------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
+   #. A partir da representação dos pontos no plano cartesiano pode-se concluir, usando semelhança de triângulos, que se em `25` minutos a carga na bateria é de `20\%` então em `40` minutos a carga será de `32\%`.
    
-   * Explorar o zero da função afim.
-   * Compreender em um contexto específico a importância da determinação do zero da função.
-   * Perceber que a altitude de acionamento do sistema anti-gelo (o zero da função) se obtém dividindo o valor da temperatura pelo valor absoluto da taxa de variação.
+   #. `f(t)=\dfrac{4}{5}t=0,8t`, com domínio sendo o conjunto `\{0,1,2,...,125\}` e a imagem o conjunto `\{0,1,2,...,100\}`.
    
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   #. A bateria carrega a uma taxa de `0,8\%` a cada minuto, isto é, `0,8\%/min`.
+
+*********************************************
+Organizando as ideias: taxa de variação média
+*********************************************
+
+No capítulo de Introdução às Funções, você aprendeu a calcular a taxa de variação média de uma função em um determinado intervalo. É um número expresso em forma de uma razão que fornece diversas informações sobre o comportamento da função no intervalo considerado. 
+
+Relembrando, se um intervalo `[x_1,x_2]` está contido no domínio de uma função `f`, então a taxa de variação média dessa função nesse intervalo é a razão
+
+.. math::
+   \dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+
+Como você deve ter percebido na :ref:`ativ-alcool`, o valor obtido para as taxas de variação médias nos diversos intervalos foi sempre o mesmo para cada função considerada. Essa é uma propriedade importante das funções lineares, que provaremos agora.
+
+Considere uma função linear `\ell:\mathbb{R}\to\mathbb{R}`, dada por `\ell(x)=a\cdot x`, e também dois números reais distintos `x_1<x_2`. A taxa de variação média de `\ell` no intervalo  `[x_1,x_2]` pode ser calculada assim
+
+.. math::
+   \dfrac{\ell(x_2)-\ell(x_1)}{x_2-x_1}=\dfrac{a x_2- a x_1}{x_2-x_1}=\dfrac{a(x_2-x_1)}{x_2-x_1}=a.
+
+Podemos destacar duas coisas sobre a conclusão deste último cálculo:
+
+1) o valor final para a taxa de variação média não depende dos valores de `x_1` e `x_2`. Isso significa que podemos escolher qualquer intervalo  de números reais e chegaremos ao mesmo resultado. 
+
+2) o resultado coincide com o coeficiente de `x` na expressão da função, e também pode ser obtido calculando-se a imagem de `x=1`. Sendo assim, podemos afirmar que a função `y=7x` tem taxa de variação média constante igual a `7`, enquanto que a função `y=-\frac {3x}5` tem taxa de variação média constante igual a `-\frac {3}5`.
+
+.. admonition:: Teorema
+
+   Toda função linear `f` tem taxa de variação média constante igual a `f(1)`, e pode ser representada pela expressão `f(x)=f(1)\cdot x`.
+
+.. admonition:: Para refletir
    
-   * É possível responder à pergunta e) pensando como um problema de progressão aritmética: Se a temperatura local é `30^\circ C` e ela diminui `2^\circ C` a cada 1 000 pés, para chegar a zero devemos subtrair 2 de 30, um total de 15 vezes, logo, a altitude é 15 000 pés.
-   * Os itens f) e g) pretendem dar uma ideia de como se obtem a expressão geral do zero da função afim. Caso julgue pertinente, estimule-os a pensar em situações hipotéticas em que as taxas de variação da temperatura em função da altitude sejam diferentem.
-
-Mesmo em pleno verão um avião, precisa lidar com temperaturas muito baixas. Quando uma aeronave opera em baixas temperaturas, com umidade presente, há a possibilidade de formação de gelo que virá a se acumular na sua estrutura ou em seu grupo moto-propulsor. O gelo se forma quando um avião voa através de uma nuvem ou de um ambiente contendo gotículas de água super-resfriadas. O principal problema causado pela formação de gelo é a modificação do fluxo de ar sobre as superfícies das asas, prejudicando assim o desempenho da nave e acarretando, eventualmente, em mais gastos de combustível. Para evitar problemas como esses as aeronaves contam com um sistema anti-gelo que diminui a formação de camadas de gelo em sua fuselagem, produzindo os chamados “rastros de condensação” como na imagem.
-
-.. figure:: _resources/resized000.png
-   :width: 400pt
-   :align: center
-
-A temperatura na troposfera (primeira camada da atmosfera que tem aproximadamente `40\ 000` pés de altitude) diminui `2^\circ C` a cada aumento de `1\ 000` pés na altitude. Suponha que, em um determinado dia, a temperatura em um aeroporto seja de `30^\circ C`, e que a água congela a `0^\circ C`.
-
-#. Qual a taxa de variação, em `^\circ C/\text{pé}`, da temperatura da atmosfera, `T`, em função da altitude, `h`.
-
-#. A função `T(h)` é crescente ou decrescente? Como isso se reflete na taxa de variação?
-
-#. Determine uma expressão para `T(h)` e represente seu gráfico.
-
-#. Qual a temperatura a `37\ 200` pés de altitude?
-
-#. A partir de que altitude o piloto deverá acionar o sistema anti-gelo da aeronave?
-
-#. Em outro dia, a temperatura no mesmo aeroporto era de `25^\circ C`. Qual a altitude de acionamento do sistema anti-gelo, nesse caso?
-
-#. Estabeleça uma maneira de calcular a altitude de acionamento do sistema anti-gelo quando a temperatura do aeroporto é igual a `T_0`.
-
-
-.. admonition:: Resposta 
-
-   #. `-0,002 ^\circ C/\text{pé}`
-   #. `T` é decrescente, portanto a taxa de variação é negativa.
-   #. `T(h)=30-0,002h`
-   #. `T(37\ 200)=-44,4^\circ C`
-   #. `15\ 000` pés
-   #. `12\ 500` pés
-   #. Nesse caso, `T(h)=T_0-0,002h`. Para determinar a altitude, basta calcular `h` para o qual se tem `T(h)=0`, isto é, `h=\dfrac{T_0}{0,002}= 500 T_0`
-
-.. admonition:: Observação 
-
-   Seja `f:\mathbb{R}\to\mathbb{R}` uma função afim, `f(x)=ax+b`, cuja taxa de variação não é nula (isto é, o gráfico de `f` não é uma reta horizontal).
+   .. admonition:: Para o professor
    
-   A reta que é o gráfico de `f`, certamente terá interseção com o eixo das abscissas. O valor de `x` onde ocorre essa interseção é o zero da função afim.
+      Essa ideia será trabalhada mais adiante na seção dedicada a função afim. Por enquanto, deixe que criem suas próprias jutificativas e contra-exemplos
    
-   Seu valor pode ser calculado de duas formas:
+   É verdade que se uma função tem taxa de variação média constante então ela é uma função linear? Pense em exemplos com taxas de variação médias constantes e verifique se há ou não proporcionalidade nesses casos.
+
+Usando essas ideias no contexto da :ref:`ativ-camara`, podemos afirmar que a expressão da temperatura em função do tempo, mostrada pelo gráfico pode ser dada por `f(t)=-3t`, uma vez que `f(1)=-3`. A cada hora a temperatura decresce `3^\circ C`, gerando portanto uma função decrescente.
+
+De uma maneira geral, se a taxa de variação média `a` de uma função linear é um número real **negativo**, então essa função é decrescente, pois, para `a<0`
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1>ax_2 \Longleftrightarrow f(x_1)>f(x_2).
+
+Por outro lado, se a taxa de variação média `a` de uma função linear é um número real **positivo**, então essa função é crescente, pois, nesse caso `a>0` e
+
+.. math::
+   x_1<x_2 \Longleftrightarrow ax_1<ax_2 \Longleftrightarrow f(x_1)<f(x_2).
    
-   * Diretamente pela expressão de `f`:
+
+Vamos agora entender como é a representação gráfica de uma função com taxa de variação média constante. Para isso, consideremos uma função `f:\mathbb{R}\to\mathbb{R}` que tenha essa propriedade, isto é, para qualquer intervalo a taxa de variação média de `f` neste intervalo é igual a `a`.
+
+Na figura a seguir, os pontos `A=(x_1,f(x_1))` e `B=(x_2,f(x_2))` pertencem ao gráfico da função `f`. O segmento `BC` mede `f(x_2)-f(x_1)` e o segmento `AC` mede `x_2-x_1`. Dessa forma o quociente `\dfrac{\overline{BC}}{\overline{AC}}` é igual à taxa de variação média da função nesse intervalo, e portanto podemos conluir que `\overline{BC}=a\cdot \overline{AC}`.
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](0,1)--(3,1);
+   \draw[dashed](0,2.5)--(3,2.5);
+   \draw[dashed](1,0)--(1,1)--(3,2.5)--(3,0);
+   \node[below] at(1,0){$x_1$};
+   \node[below] at(3,0){$x_2$};
+   \node[below] at(2,1){$x_2-x_1$};
+   \node[right, rotate=0] at(3,1.75){$f(x_2)-f(x_1)$};
+   \node[left] at(0,1){$f(x_1)$};
+   \node[left] at(0,2.5){$f(x_2)$};
+   \node[ponto]at(1,1){};
+   \node[above]at(1,1){$A$};
+   \node[ponto]at(3,1){};
+   \node[right]at(3,1){$C$};
+   \node[ponto]at(3,2.5){};
+   \node[right]at(3,2.5){$B$};
+
+
+.. math::
+   \dfrac{\overline{BC}}{\overline{AC}}= \dfrac{f(x_2)-f(x_1)}{x_2-x_1}=a \Longrightarrow \overline{BC}=a\cdot \overline{AC}.
+
+Por isso, quaisquer dois pontos do gráfico de `f`, sempre serão extremidades da hipotenusa de um triângulo retângulo cujos catetos são paralelos aos eixos e suas medidas se relacionam conforme a seguinte figura.
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](1,1)--(3,1);
+   \draw[dashed](1,1)--(3,2.5)--(3,1);
+   \node[below] at(2,1){$d$};
+   \node[right, rotate=0] at(3,1.75){$a\cdot d$};
+   \node[ponto]at(1,1){};
+   \node[ponto]at(3,1){};
+   \node[ponto]at(3,2.5){};
+
+Consideremos agora três pontos do gráfico de `f` com os respectivos triângulos retângulos da construção anterior.
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[->, thick](-.5,0)--(4,0);
+   \draw[->, thick](0,-.5)--(0,3.5);
+   \draw[dashed](.5,1)--(3,3.5)--(3,2)--(1.5,2)--(1.5,1)--cycle;
+   \node[ponto]at(.5,1){};
+   \node[ponto]at(1.5,2){};
+   \node[ponto]at(3,3.5){};
+   \node[below]at(1,1){$d$};
+   \node[right]at(1.5,1.4){$a\cdot d$};
+   \node[above]at(2.3,2){$D$};
+   \node[right]at(3,2.7){$a\cdot D$};
+   \draw(1.5,1)rectangle++(-1mm, 1mm);
+   \draw(3,2)rectangle++(-1mm, 1mm);
+   
+
+Como os triângulos são semelhantes e têm um ponto em comum, podemos concluir que os três pontos pertencem a uma mesma reta. A conclusão é válida quaisquer que sejam os três pontos considerados, logo acabamos de justificar a seguinte propriedade.
+
+.. admonition:: Teorema
+
+   Se uma função tem taxa de variação média constante então seu gráfico está contido em uma reta. 
+   
+   Em particular, como a função linear tem taxa de variação média constante, seu gráfico está contido em uma reta.
+
+.. glossary::
+
+.. admonition:: Observação
+
+   **Algumas propriedades da função linear:**
+
+   * Sempre que fizer sentido calcular a imagem de `x=0`, teremos `f(0)=a \cdot 0 = 0`, isto é, a origem `(0,0)` do plano cartesiano pertencerá ao gráfico de `f`. Em qualquer caso, o gráfico de uma função linear está contido em uma reta que passa pela origem (mesmo quando não fizer sentido calcular a imagem de `x=0`).
+   
+   * A taxa de variação da função linear `f(x)=ax` também pode ser calculada fazendo-se a diferença entre as imagens de dois valores que distam `1` entre si da seguinte maneira:
    
    .. math::
 
-      f(k)=0 \Longleftrightarrow ak+b=0 \Longleftrightarrow ak=-b \Longleftrightarrow k=-\dfrac ba
+      f(x+1)-f(x)=a(x+1)-ax=ax+a-ax=a
    
-   * Pelo gráfico, usando semelhança de triângulos:
 
-   .. figure:: _resources/zero_geometrico.png
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick,->](-1,0)--(4,0);
+      \draw[thick,->](0,-1)--(0,4);
+      \draw[domain=-.5:2, thick, primario]plot(\x,2*\x);
+      \draw[dashed, thick](.5,0)--(.5,1)--(0,1);
+      \draw[dashed, thick](1.5,0)--(1.5,3)--(0,3);
+      \draw[dashed, thick](.5,1)--(1.5,1);
+      \node[ponto] at(.5,1){};
+      \node[ponto] at(1.5,3){};
+      \node[right] at(1.5,2){$a$};
+      \node[below] at(1,1){$1$};
+      \node[below] at(1.5,.1){$x+1$};
+      \node[below] at(.5,0){$x$};
+      \node[left] at(0,3){$f(x+1)$};
+      \node[left] at(0,1){$f(x)$};   
+   
+   * Para taxas de variação médias positivas, quanto maior for o valor de `a`, mais inclinada será a reta que contém o gráfico da função linear associada.
+   
+   .. figure:: _resources/aumenta_a.*
       :width: 400pt
       :align: center
-
-   Por exemplo, o zero da função `f(x)=5x-21` é o valor `k=\dfrac{-(-21)}5`. 
    
-   Já o zero da função `g(x)=7-\dfrac x2` é `k=\dfrac{-7}{-\frac 12}=14` .
+   Para uma visualização do comportamento da representação gráfica com taxa de variação média também negativa, sugerimos o uso da construção GeoGebra disponível `neste link <https://www.geogebra.org/m/FSnzt9vC>`_ .
    
-.. _ativ-titulo-da-atividade:
-
-Atividade: Qual a frequência?
-------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
+   .. figure:: _resources/codigo2_2.png
+      :width: 100pt
+      :align: center
    
-   * Utilizar a ideia de progressão aritmética para resolver um problema.
+   .. figure:: _resources/taxa_linear.*
+      :width: 400pt
+      :align: center
    
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   * Se uma reta contém a origem do plano cartesiano e o ponto `(x_0,y_0)` com `x_0\neq 0`, então ela é o gráfico da função linear `f:\mathbb{R}\to\mathbb{R}`, dada por `f(x)=ax`, em que `a=\dfrac{y_0}{x_0}`.
    
-   * Evite usar a fórmula `a_n=a_1+(n-1)r` como único recurso para resolver problemas de P.A. Ela, apesar de parecer prática, pode esconder as ideias simples dos problemas de progressão aritmética. Por exemplo, da 1ª para 70ª frequencia, somamos 69 vezes a razão. E depois da 70ª para a 86ª, somamos 16 vezes a razão. Isso é mais simples do que escrever `a_{70}=a_1+(70-1)r` e `a_{86}=a_1+(86-1)r`.
-
-A Agência Nacional de Telecomunicações (ANATEL) determina que as emissoras de rádio FM utilizem as frequências de 87,9 a 107,9 MHz, e que haja uma diferença de 0,2 MHz entre emissoras com frequências vizinhas.
-
-#. Em uma determinada região as frequências entre a 70ª e 86ª são reservadas rádios comunitárias. Determine a frequência mínima e máxima para uma rádio comunitária.
-#. Determine quantas emissoras FM podem funcionar em uma mesma região.
-#. Lembre-se da frequência da rádio que você costuma ouvir e determine a posição dela na sequência das frequências do problema.
-
-.. admonition:: Resposta 
-
-   #. 101,7 a 104,9.
-   #. 101 emissoras FM.
-   #. Resposta individual.
+   Para verificar isso, basta observarmos uma reta nas condições dadas e os dois  triângulos retângulos destacados da figura a seguir a partir da origem e dos pontos `(x_0,y_0)` e `(x,y)`. Observe que, qualquer que seja o ponto `(x,y)` escolhido diferente da origem, esses triângulos são semelhantes, portanto,
    
+   .. math::
+
+      \dfrac{f(x)}{x}=\dfrac{y_0}{x_0} \Longrightarrow f(x)=\dfrac{y_0}{x_0} \cdot x
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \usetikzlibrary[patterns]
+      \fill[color=terciario](2,0)--(2,1.5)--(0,0)-- cycle;
+      \fill[pattern color=secundario, pattern =north east lines](3,0)--(3,2.25)--(0,0)-- cycle;
+      \draw[dashed](2,0)--(2,1.5)--(0,1.5);
+      \draw[dashed](3,0)--(3,2.25)--(0,2.25);
+      \draw[thick, ->](-1.5,0)--(4,0);
+      \draw[thick, ->] (0,-1.5)--(0,3.5);
+      \draw[thick,primario,domain=-1.5:4]plot(\x,.75*\x);
+      \node[ponto]at(2, 1.5){};
+      \node[ponto]at(3, 2.25){};
+      \node[below] at(2,0){$x$};
+      \node[below] at(3,0){$x_0$};
+      \node[left] at(0,1.5){$f(x)$};
+      \node[left] at(0,2.25){$y_0$};
+
+
+   Assim, por exemplo, a reta que contém a origem e o ponto `(3,8)` é o gráfico da função `f(x)=\dfrac 83 x`. Se a reta contém a origem e o ponto `(-5,2)` ela será o gráfico da função `g(x)=\dfrac{2}{-5} x=-\dfrac{2}{5}x`.
+   
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick, ->](-2,0)--(5,0);
+      \draw[thick, ->] (0,-1.5)--(0,5);
+      \draw[thick,primario,samples=100,domain=-.5:1.5]plot(\x, 3*\x);
+      \draw[dashed](.5,0)--(.5,1.5)--(0,1.5);
+      \node[ponto]at(.5,1.5){};
+      \node[right]at(.5,1.5){$(3,8)$};
+      \node[below]at(.5,0){$3$};
+      \node[left]at(0,1.5){$8$};
+
+   Gráfico da função `f(x)=\dfrac 83 x`
+
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[thick, ->](-3,0)--(3,0);
+      \draw[thick, ->] (0,-1.5)--(0,3);
+      \draw[dashed](-1.5,0)--(-1.5,.5)--(0,.5);
+      \node[above] at(-1.5,.5){$(-5,2)$};
+      \node[below] at(-1.5,0){$-5$};
+      \node[right] at(0,.5){$2$};
+      \draw[domain=-3:3,thick,primario,samples=100]plot(\x,{-\x/3});
+      \node[ponto] at(-1.5,.5){};
+      
+      
+
+   Gráfico da função `g(x)=-\dfrac{2}{5}x`.
+
+   Concluímos, assim, que toda reta não vertical que contém a origem é o gráfico de uma função linear.

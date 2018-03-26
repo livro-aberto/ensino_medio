@@ -1,339 +1,460 @@
-.. _sec-explorando-grafico:
+.. _sec-funcao-organizando-ideias:
 
-*******************
-Explorando: gráfico
-*******************
+**********
+Praticando
+**********
 
+.. _ativ-funcoes-colorindo-o-mapa:
 
-Segundo informações do `Big Data Business <http://www.bigdatabusiness.com.br/visualizacao-de-dados-por-que-transformar-big-data-em-graficos/>`_, as palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem ou em um gráfico, pode favorecer a comunicação.
-
-.. figure:: _resources/grafico-final.png
-   :width: 480pt
-   :align: center
-
-   Alguns exemplos de representações gráficas 
-
-Representar graficamente conjuntos de dados e suas relações pode fazer toda a diferença para transmitir informações. Há vários tipos de gráficos, cada um tem a sua particularidade e serve para transmitir as informações de forma específica. Nesta seção iremos estudar a representação gráfica de funções.
-
-Vamos considerar a seguinte situação:
-
-Atividade: Ação promocional
+Atividade: colorindo o mapa
 ---------------------------
 
 
 .. admonition:: Para o professor
 
-   **OBJETIVOS ESPECÍFICOS**
+   **OBJETIVOS ESPECÍFICOS** 
    
-   * Reconhecer vantagens da representação gráfica. Na questão, mais especificamente,  em detrimento da representação na forma de tabela. 
-   * Argumentar a partir da análise de gráficos e/ou tabelas.
+   * Identificar, em um contexto, diferentes relações de dependência entre conjuntos de dados
+   * Identificar característica de univocidade (ou não) de uma relação. 
+   
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Observe para os seus alunos que tabela e gráfico têm seus papéis. Ainda que um gráfico seja importante para um determinado objetivo, ele não exclui uso da tabela, que pode ser importante para outros objetivos. Uma tabela não substitui um gráfico se o domínio da função for um conjunto infinito, por exemplo.
-   * Para os itens de análise do crescimento e decrescimento do valor dos dados numéricos da imagem em função da variação apresentada, pode ser útil conectar os pontos, formando uma linha poligonal. Contudo é importante destacar que os segmentos que conectam os pontos consecutivos não são pontos correspondentes da função, uma vez que o domínio dessa função é um conjunto discreto.
-   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum `meme <https://pt.wikipedia.org/wiki/Meme_(Internet)>`_, evento negativo associado à empresa, dentre outros.
-   * Explore o fato de ter-se aqui duas representações: para qual representação o aluno olhou, em cada um dos itens? Conclua apontando para o fato de que, muitas vezes, uma representação é mais “esclarecedora” que outra.
+   * Nível de abstração *Processo/Ação*.
+   * Nem todos os estudantes vão usar o mesmo critério para a distribuição das cores. Incentive-os a usarem as quatro cores e, no momento da discussão do item (b), chame a atenção para o fato de não haver uma única resposta correta para o item (a).
+   * Deixamos a seu critério a escolha da unidade para a velocidade média. Os valores obtidos em `km/min` podem causar certa estranheza, uma vez que na maioria das situações cotidianas a velocidade é apresentada em `km/h`.
+   * Caso haja tempo, aproveite para fazer uma breve discussão sobre como a Matemática está em diferentes ferramentas tecnológicas que facilitam o nosso dia a dia, como o Google Maps®.
 
-Uma empresa resolve lançar uma ação promocional na internet usando uma `hashtag <https://pt.wikipedia.org/wiki/Hashtag>`_. Um mês após o lançamento, o presidente dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais em cada dia durante aquele mês. O funcionário resolveu apresentar os dados das seguintes duas formas:
+A imagem a seguir, que foi retirada do aplicativo Google Maps®, exibe o trânsito na ponte Rio-Niterói e seus acessos em um determinado dia e hora. Várias informações podem ser observadas a partir dos elementos apresentados. Por exemplo, as cores nas vias informam a velocidade média dos veículos que trafegam por elas, conforme a legenda na parte inferior; a distância entre dois pontos quaisquer do mapa pode ser estimada usando a escala exibida no canto inferior direito. Gráficos como esse são produzidos a partir das relações entre diversas informações coletadas.
 
-.. table::
-   :widths: 1 3 1 3
+.. figure:: _resources/rio_niteroi_maps.png
+   :width: 440pt
+   :align: center
+   
+A tabela a seguir mostra os dados coletados sobre o tempo gasto pelos veículos (em média) para atravessar a ponte, ao longo de um dia.
+
+.. table:: 
+   :widths: 2 1 1 3
    :column-alignment: center center center center
-
-   +-----+------------+-----+------------+
-   | Dia | Quantidade | Dia | Quantidade |
-   +=====+============+=====+============+
-   |  1  |     137    |  16 |     1721   |
-   +-----+------------+-----+------------+
-   |  2  |     152    |  17 |     1456   |
-   +-----+------------+-----+------------+
-   |  3  |     194    |  18 |     684    |
-   +-----+------------+-----+------------+
-   |  4  |     231    |  19 |     512    |
-   +-----+------------+-----+------------+
-   |  5  |     278    |  20 |     483    |
-   +-----+------------+-----+------------+
-   |  6  |     282    |  21 |     521    |
-   +-----+------------+-----+------------+
-   |  7  |     276    |  22 |     479    |
-   +-----+------------+-----+------------+
-   |  8  |     767    |  23 |     356    |
-   +-----+------------+-----+------------+
-   |  9  |     917    |  24 |     327    |
-   +-----+------------+-----+------------+
-   |  10 |     1048   |  25 |     398    |
-   +-----+------------+-----+------------+
-   |  11 |     1337   |  26 |     1120   |
-   +-----+------------+-----+------------+
-   |  12 |     1881   |  27 |     1591   |
-   +-----+------------+-----+------------+
-   |  13 |     1779   |  28 |     1476   |
-   +-----+------------+-----+------------+
-   |  14 |     1692   |  29 |     1475   |
-   +-----+------------+-----+------------+
-   |  15 |     1703   |  30 |     1419   |
-   +-----+------------+-----+------------+
-
- 
-.. tikz::
-
-   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
-   \draw[help lines,xstep=.2,ystep=.2, lightgray] (-.6,-.4) grid (7,4.5);
-   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (7,4.5);
-   \draw[thick,->](-.6,0)--(7.1,0);
-   \draw[thick,->](0,-.4)--(0,4.5);
-   \foreach \x in {5, 10, ..., 30}
-   \draw(.2*\x,-.3)node{\x};
-   \foreach \y in {500, 1000, 1500, 2000}
-   \draw(-.5, .002*\y)node{\y};
-   \node [ponto] at (.2,.3){};
-   \node [ponto] at (.4,.35){};\node [ponto] at (.6,.4){};\node [ponto] at (.8,.44){};   \node [ponto] at (1,.57){};\node [ponto] at (1.2,.56){};\node [ponto] at (1.4,.55){};\node [ponto] at (1.6,1.48){};\node [ponto] at (1.8,1.81){};\node [ponto] at (2,2.1){};\node [ponto] at (2.2,2.7){};\node [ponto] at (2.4,3.76){};\node [ponto] at (2.6,3.58){};\node [ponto] at (2.8,3.38){};\node [ponto] at (3,3.42){};\node [ponto] at (3.2,3.44){};\node [ponto] at (3.4,2.9){};\node [ponto] at (3.6,1.36){};\node [ponto] at (3.8,1.06){};\node [ponto] at (4,.96){};\node [ponto] at (4.2,1.06){};\node [ponto] at (4.4,.96){};\node [ponto] at (4.6,.7){};\node [ponto] at (4.8,.62){};\node [ponto] at (5.,.8){};\node [ponto] at (5.2,2.21){};\node [ponto] at (5.4,3.16){};\node [ponto] at (5.6,2.96){};;  \node [ponto] at (5.8,2.96){};;\node [ponto] at (6,2.86){};
    
+   +------------------+-------------+-------+--------------------------+
+   |  Período do Dia  |  Tempo (min)|  Cor  |Velocidade Média (km/min) |
+   +==================+=============+=======+==========================+
+   |    5:00 - 7:00   |     13      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |    7:00 - 9:00   |     18      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   9:00 - 11:00   |     15      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   11:00 - 13:00  |     15      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   13:00 - 15:00  |     16      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   15:00 - 17:00  |     16      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   17:00 - 19:00  |     23      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   19:00 - 21:00  |     14      |       |                          |
+   +------------------+-------------+-------+--------------------------+
+   |   21:00 - 23:00  |     13      |       |                          |
+   +------------------+-------------+-------+--------------------------+  
 
- 
- 
-#. Quantas vezes a *hashtag* foi mencionada mais de 1500 vezes em um dia?
-#. Em que dia a *hashtag* foi mais citada?
-#. Identifique todos os períodos em que houve crescimento no número de citações.
-#. Faça o mesmo para o decrescimento.
-#. Escreva um parágrafo explicando o comportamento global do gráfico, apontando possíveis causas para as variações observadas.
-
-
-.. admonition:: Resposta 
-
-   #. `6` vezes.
-   #. No décimo segundo dia.
-   #. Do segundo ao sexto dia, do sétimo ao décimo segundo dia, do décimo quarto ao décimo sexto dia, entre o vigésimo e vigésimo primeiro dia e entre o vigésimo quarto e vigésimo sétimo dia.
-   #. Do primeiro para o segundo dia, do sexto para o sétimo dia, do décimo segundo ao décimo quarto dia, do décimo sexto ao vigésimo dia e entre o vigésimo primeiro e vigésimo quarto dia.
-   #. Resposta variada.
-
-Uma função, essencialmente, relaciona duas ou mais grandezas ou variáveis, de forma que são obtidos pares `(x,y)`, em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que os termos que compõem o par são apresentados é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são objetos fundamentais para a compreensão do gráfico de uma função.
-
-No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou subconjuntos dele) tanto `x` como `y` serão números reais.
-
-A representação geométrica mais comum para esses pontos, e que você provavelmente já conhece, é no :index:`plano cartesiano <plano cartesiano>`. Essa representação tem como base duas retas numéricas perpendiculares que se intersectam em suas origens conforme a figura abaixo.
-
-.. tikz::
-
-   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
-   \draw[lightgray](-4.5,-4.5)grid[xstep=.5,ystep=.5,line width =1pt](4.5,4.5);
-   \draw[->,thick](-4.5,0)--(4.5,0) node[right]{$x$};
-   \draw[->,thick](0,-4.5)--(0,4.5)node[above]{$y$};
-   \draw[dashed](-2,0)--(-2,2)--(0,2);
-   \node[ponto] at (-2,2){};
-   \node[above] at (-2,2){$(a,b)$};
-   \node[below] at (-2,0){$a$};
-   \node[right] at (0,2){$b$};
+#. Tomando como referência a ilustração anterior e utilizando a escala de cores a seguir, complete a terceira coluna da tabela com a cor que a ponte deveria estar colorida em cada período do dia destacado. Descreva os critérios que você utilizou na escolha de cada uma das cores e compare com os critérios dos seus colegas. 
    
-
-As retas que compõem um sistema cartesiano são chamadas de :index:`eixos <eixos coordenados>` do plano cartesiano. O eixo em que são registradas as primeiras coordenadas do par é chamado de :index:`eixo das abscissas <eixo das abscissas>`. O outro eixo, em que são registradas as segundas coordenadas do par é chamado de :index:`eixo das ordenadas <eixo das ordenadas>`. 
-
-Já vimos alguns exemplos de funções em atividades anteriores, vamos explorá-los um pouco mais.
-
-.. _ativ-funcoes-do-mapa-para-grafico:
-
-Atividade: Do mapa para o gráfico
----------------------------------
-
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Estabelecer representação gráfica para pares ordenados com coordenada não numérica.
-   * Estender o domínio da função para o conjuntos dos números reais positivos, a partir de uma tabela.
-   * Reconhecer diferentes representações gráficas para uma mesma função.
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
-   
-   * No item (a) espera-se que o estudante indique um conjunto de pares ordenados da forma: `\{(13,` Verde `),(15,` Laranja `), ...\}`.
-   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores indicadas no eixo vertical. Essa é a resposta esperada para o item b). No entanto, no último item, espera-se que sejam exploradas outras formas de representação, usando ou não eixos cartesianos. Uma representação possível é a partir de um retângulo colorido como a escala apresentada no item (a) da :ref:`ativ-funcoes-colorindo-o-mapa`, em que se indique os tempos em que ocorre a mudança de cor, veja imagem na resposta da atividade.
-   * Estimule a criatividade nas representações.
-   * Caso algum estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal (como domínio), chame a atenção para o fato de que a relação inversa não é função.
-   * No item (c) há várias respostas possíveis. Para que a resposta esteja correta, é necessário que todo o intervalo está coberto, ou seja, o domínio considerado é `[0,23]`. Além disso, não deve haver interseção entre os subintervalos.
-   
-#. A partir das colunas *Tempo de travessia* e *Cor* da :ref:`ativ-funcoes-colorindo-o-mapa`, escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
-#. Represente graficamente este conjunto de pares ordenados.
-#. Para colorir as vias de todo o mapa, precisamos distribuir as cores para outros valores de tempo. Como você faria a distribuição para o intervalo de `0` a `25` minutos considerando um trecho qualquer de `13` km (a mesma extensão da ponte)?
-#. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
-
-.. admonition:: Resposta
-
-   #. Uma possibilidade é `\{`(13, verde), (14, verde), (15, laranja), (16, laranja), (18, vermelha), (23, vinho) `\}`.
-   #. Três possíveis representações são:
-   
-      .. tikz::
-      
-        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
-        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
-        \draw(.5*\x, -.1)--(.5*\x,0);
-        \draw(.5,-.3) node[scale=.7]{13};
-        \draw(1,-.3) node[scale=.7]{14};
-        \draw(1.5,-.3) node[scale=.7]{15};
-        \draw(2,-.3) node[scale=.7]{16};
-        \draw(3,-.3) node[scale=.7]{18};
-        \draw(5.5,-.3) node[scale=.7]{23};
-        \draw(-.5,1)node[scale=.7]{verde};
-        \draw(-.6,2)node[scale=.7]{laranja};
-        \draw(-.65,3)node[scale=.7]{vermelho};
-        \draw(-.5,4)node[scale=.7]{vinho};
-        \draw[dashed](0,1)--(.5,1)--(.5,0);
-        \draw[dashed](0,1)--(1,1)--(1,0);
-        \draw[dashed](0,2)--(1.5,2)--(1.5,0);
-        \draw[dashed](0,2)--(2,2)--(2,0);
-        \draw[dashed](0,3)--(3,3)--(3,0);
-        \draw[dashed](0,4)--(5.5,4)--(5.5,0);
-        \draw[fill](.5,1)circle(1pt);
-        \draw[fill](1,1)circle(1pt);
-        \draw[fill](1.5,2)circle(1pt);
-        \draw[fill](2,2)circle(1pt);
-        \draw[fill](3,3)circle(1pt);
-        \draw[fill](5.5,4)circle(1pt);
-        \begin{scope}[yshift=-5.5cm]
-        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
-        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
-        \draw(.5*\x, -.1)--(.5*\x,0);
-        \draw(.25,-.3) node[scale=.7]{13};
-        \draw(.75,-.3) node[scale=.7]{14};
-        \draw(1.25,-.3) node[scale=.7]{15};
-        \draw(1.75,-.3) node[scale=.7]{16};
-        \draw(2.75,-.3) node[scale=.7]{18};
-        \draw(5.25,-.3) node[scale=.7]{23};
-        \draw(-.5,0.5)node[scale=.7]{verde};
-        \draw(-.6,1.5)node[scale=.7]{laranja};
-        \draw(-.65,2.5)node[scale=.7]{vermelho};
-        \draw(-.5,3.5)node[scale=.7]{vinho};
-        \draw[dashed,fill, color=green](0,0) rectangle (.5,1);
-        \draw[black,dashed,fill, color=green](.5,0) rectangle (1,1);
-        \draw[dashed,fill, color=orange](1,1) rectangle (1.5,2);
-        \draw[black,dashed,fill, color=orange](1.5,1) rectangle (2,2);
-        \draw[black,dashed,fill, color=red](2.5,2) rectangle (3,3);
-        \draw[black,dashed,fill, color=violet](5,3) rectangle (5.5,4);
-        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (-.1,-.1) grid (5.5,4);
-        \begin{scope}[yshift=-2.5cm]
-        \draw[dashed,fill, color=green](0,0) rectangle (1,1);
-        \draw[dashed,fill, color=orange](1,0) rectangle (1.5,1);
-        \draw[dashed,fill, color=red](2.5,0) rectangle (3,1);
-        \draw[black,dashed,fill, color=violet](5,0) rectangle (5.5,1);
-        \draw (.6,1.5)node[scale=.7, rotate=45]  {verde};
-        \draw (.25,.5)node[scale=.7]  {13};
-        \draw (.75,.5)node[scale=.7]  {14};
-        \draw(1.25,.5) node[scale=.7]{15};
-        \draw(2.75,.5) node[scale=.7]{18};
-        \draw[white](5.25,.5) node[scale=.7]{23};
-        \draw (1.6,1.5)node[scale=.7, rotate=45]  {Laranja};
-        \draw (3.1,1.5)node[scale=.7, rotate=45]  {Vermelho};
-        \draw (5.5,1.5)node[scale=.7, rotate=45]  {Vinho};
-        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (0,0) grid (5.5,1);
-        \end{scope}\end{scope}
-  
-
-   
-   #. Uma possibilidade de resposta é: verde para `t \in [0,15[`, laranja para `t \in[15, 18[`, vermelho para `t \in[18,23[` e vinho para `t \in[23,25]`.
-   #. Ver item b).
-
-.. _ativ-funcoes-numeros-triangulares:
-
-Atividade: Números triangulares no plano
-----------------------------------------
-.. admonition:: Para o professor
-
-   **OBJETIVOS ESPECÍFICOS**
-   
-   * Representar graficamente.
-   
-   **OBSERVAÇÕES E RECOMENDAÇÕES**
-   
-   * Destaque para os seus alunos que, nesse caso não cabe ligar os pontos. As abscissas indicam a ordem sequencial dos números triangulares, portanto resumem-se apenas a números naturais.
-   * Observe que os pontos do gráfico não são colineares.
-
-Represente, no plano cartesiano, o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
-
-
-.. admonition:: Resposta 
-
    .. tikz::
    
-      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
-      \draw[help lines,xstep=.25,ystep=.25, lightgray] (0,0) grid (4,4);
-      \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (4,4);
-      \draw[thick,->](0,0)--(4.2,0);
-      \draw[thick,->](0,0)--(0,4.2);
-      \foreach \x in {2, 4, 6, 8}
-      \draw(.5*\x,-.2)node{\x};
-      \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8}
-      \node[ponto] at(.5*\x, {.05*\x*(1+\x)}){};
-      \foreach \y in{10, 20, 30, 40}
-      \draw(0,.1*\y) node[left]{\y};
+      \tikzset{fontscale/.style = {font=\relsize{#1}}}
+      \fill[fill=green] (3.,1.) -- (3.,1.1) -- (3.6,1.1) -- (3.6,1) -- cycle;
+      \fill[fill=orange] (3.65,1.) -- (4.25,1.) -- (4.25,1.1) -- (3.65,1.1) -- cycle;
+      \fill[fill=red] (4.3,1.) -- (4.9,1.) -- (4.9,1.1) -- (4.3,1.1) -- cycle;
+      \fill[fill=brown] (4.95,1.) -- (5.55,1.) -- (5.55,1.1) -- (4.95,1.1) -- cycle;
+      \draw (3,1.032) node[left, font=\tiny, scale=.4] { Rápido};
+      \draw (5.5,1.032) node[right, font=\tiny, scale=.4] { Lento};
+      \draw (3.15,1.11) node[anchor=north west, scale=.2] { Verde};
+      \draw (3.8,1.11) node[anchor=north west,scale=.2] { Laranja};
+      \draw (4.4,1.11) node[anchor=north west, scale=.2] { Vermelho};
+      \draw (5.,1.11) node[anchor=north west, scale=.2] { Marrom};
+      
+#. Você precisou associar uma mesma cor para para períodos diferentes do dia. Por que? 
+#. Sabendo que a ponte Rio-Niterói tem aproximadamente `13` km de extensão complete a quarta coluna da tabela com a velocidade média registrada em cada um dos períodos do dia.
+#. É possível que uma mesma velocidade média esteja associada a dois tempos de travessia diferentes? Por quê?
 
+.. admonition:: Resposta 
 
-.. _ativ-funcoes-jornada-ate-a-escola:
+   #. Uma resposta possível é: associar a cor verde aos tempos de `13` e `14` minutos, a cor laranja aos tempos de `15` e `16` minutos, vermelha ao tempo de `18` minutos e a cor vinho ao tempo de `23` minutos.
+   #. Isso se deu pelo fato de haver somente 4 cores disponíveis e, na tabela, haver 6 tempos diferentes de travessia.
+   #. A velocidade média é determinada pela razão entre a distância percorrida e o tempo gasto para percorrê-la. Assim, os valores das velocidades médias nos diferentes períodos do dia são, pela ordem em que aparecem na tabela: `1,00` km/min, `0,72` km/min, `0,87` km/min, `0,87` km/min, `0,81` km/min, `0,81` km/min, `0,56` km/min, `0,93` km/min e `1,00` km/min.
+   #. Não. Como a velocidade média é calculada efetuando-se a divisão da distância percorrida pelo tempo gasto no percurso, uma vez que o trecho considerado é o mesmo, diferentes tempos de travessia da ponte irão resultar em velocidades médias diferentes.
 
-Atividade: Jornada até a escola
-------------------------------
+Na atividade anterior, observam-se diferentes relações entre os dados. Por exemplo, para cada tempo de travessia é possível associar uma única cor e uma única velocidade média. Da mesma maneira, a cada velocidade média está associada uma única cor e um único tempo de travessia. No entanto, a uma mesma cor é possível associar tempos diferentes e velocidades médias diferentes.
+
+.. _ativ-funcoes-e-funcao:
+
+Atividade: é função?
+--------------------
 
 .. admonition:: Para o professor
 
-   **OBJETIVOS ESPECÍFICOS**
+   **OBJETIVOS ESPECÍFICOS** 
    
-   * Representar pontos no plano cartesiano a partir de uma situação real.
-   * Estabelecer uma função a partir da seleção de pontos em um sistema cartesiano, associando  a univocidade à identificação de apenas um ponto para cada valor da abscissa.
+   * Identificar, em um contexto, diferentes relações de dependência entre conjuntos de dados, reconhecendo quais são funções.
+   * Identificar a  univocidade (ou não) de uma relação. 
+
    
    **OBSERVAÇÕES E RECOMENDAÇÕES**
    
-   * Durante a discussão, chame a atenção para a necessidade de certificar-se da associação de um único valor de ordenada para cada valor de abscissa.
-   * Discuta com os estudantes sobre o significado dos segmentos de reta que conectam os pontos.
-   
-  
-Leonardo mora a `6` km da escola onde estuda e utiliza o transporte escolar, que o busca na porta de sua casa. Em um certo dia, o percurso de Leonardo até sua escola foi assim: Ele estava na porta de casa às `7` horas, como de costume, mas o transporte escolar atrasou, passando em sua casa somente às `7h05min`. Leonardo entrou na van e sentou no penúltimo lugar vago. Ainda faltava Marina. “Ela mora a `3` km da minha casa!”, lembrou Leonardo. Às `7h10min` em ponto, o transporte escolar chegou à casa de Marina, que já estava pronta aguardando para embarcar. Para tentar compensar o atraso, o motorista resolveu tomar um atalho, mas a estratégia não funcionou. Às `7h15min` precisou ficar parado por `5` minutos em frente a uma cancela aguardando um trem de carga passar. Finalmente, às `7h25min` chegaram à escola, `5` minutos antes do sinal tocar.  
+   * Nível de abstração *Processo*.
+   * Esta é a oportunidade para reforçar as condições que garantem que uma relação é função, em particular, a univocidade. 
 
-No plano cartesiano a seguir, o eixo horizontal indica o tempo em minutos e o eixo vertical a distância percorrida em quilômetros. Os pontos marcados correspondem às distâncias percorridas por diversos estudantes da escola a cada `5` minutos no período das `7h` às `7h30min` da mesma manhã descrita na situação acima.
-
-#. Conecte os pontos que correspondem à jornada de Leonardo, desde a porta da sua casa até a chegada à escola, no dia descrito acima.
-#. Faça uma estimativa da distância a que Leonardo estará de sua casa às `7h07min`.
-#. Escolha um conjunto de pontos que possa representar a jornada de um outro estudante da sua casa à escola e descreva essa jornada.
+No contexto da atividade anterior são observados diferentes conjuntos de dados: O conjunto dos tempos de travessia da ponte, `A=\{13, 14, 15, 16, 18, 23\}`; O conjunto das cores que compoõem a escala, `B=\{` Verde, Laranja, Vermelho, Vinho `\}`; e o conjunto de velocidades obtidas,`C`. Considere as diferentes relações de dependências estabelecidas entre esses conjuntos. Quais são funções?
 
 
-.. _fig-pontos-jornada:
+.. table:: 
+   :widths: 3 3 10
+   :column-alignment: center center center
 
-.. tikz::
-
-   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
-   \begin{scope}[yscale=.75]
-   \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
-   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
-   \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
-   \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
-   \foreach \x in {5, 10, ..., 30}
-   \draw(.2*\x,-.3)node{\x};
-   \foreach \y in {1, 2, 3, 4, 5, 6}
-   \draw(-.3, \y)node{\y};
-   \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){}; \node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
-   \end{scope}
-
++---------------------+-------------------+------------------------+
+| Relação             | É função?         | Se não, por quê?       |
++=====================+===================+========================+
+| De A em B           |                   |                        |
++---------------------+-------------------+------------------------+
+| De B em A           |                   |                        |
++---------------------+-------------------+------------------------+
+| De A em C           |                   |                        |
++---------------------+-------------------+------------------------+
+| De C em A           |                   |                        |
++---------------------+-------------------+------------------------+
+| De B em C           |                   |                        |
++---------------------+-------------------+------------------------+
+| De C em B           |                   |                        |
++---------------------+-------------------+------------------------+
 
 
 .. admonition:: Resposta 
 
-   #. A jornada de Leonardo é descrita pelo gráfico abaixo.
+   Apenas as relações de `B` em `A` e de `B` em `C` não são funções. A primeira porque a uma mesma cor estão associados diferentes tempos de travessia, e a segunda porque a uma mesma cor estão associadas velocidades médias diferentes.
+
+
+Toda relação de um conjunto `A` em um conjunto `B` pode ser identificada por um conjunto de pares ordenados. Nesse caso, cada associação entre elementos do conjunto `A` e elementos do conjunto `B` fica representada por um par ordenado tal que o elemnto do conjunto `A` ocupa a primeira posição do par e o correspondente elemento do conjunto `B` a segunda posição.  
+
+.. **DAR OUTRO EXEMPLO USANDO UM CONTEXTO DE ALGUMA ATIVIDADE ANTERIOR**
+
+Por exemplo, se consideramos a relação dos números reais em si mesmo que, a cada número real, associa o seu quadrado, os pares ordenados `(1,1), (2,4), (\sqrt{3},3), (-\pi,\pi^2)` indicam elementos que estão relacinados. Já os pares ordenados `(9,5)` e `(4,2)`, `(\sqrt{2},-2)` formados por números reais, não indicam números associados pela mesma relação, uma vez que `5` não é quadrado de `9`, `2` não é quadrado de `4` e `-2` não é o quadrado de `\sqrt{2}`.
+
+Como funções são um tipo especial de relação, a mesma ideia se estende para representação das funções. Assim, os pares ordenados de uma função `f:A\to B` serão da forma `(x,y)` em que `x\in A` e `y=f(x)\in B`.
+
+
+.. _ativ-funcoes-nao-e-funcao:
+
+Atividade: não é função!
+---------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
    
-      .. tikz::
+   * Identificar a univocidade (ou não) em uma relação. 
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nível de abstração *Processo*.
+   * Esta é a oportunidade para reforçar as condições que garantem que uma relação é função, em particular, a univocidade. 
 
-         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
-         \begin{scope}[yscale=.75]
-         \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
-         \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
-         \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
-         \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
-         \foreach \x in {5, 10, ..., 30}
-         \draw(.2*\x,-.3)node{\x};
-         \foreach \y in {1, 2, 3, 4, 5, 6}
-         \draw(-.3, \y)node{\y};
-         \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){};\node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
-         \draw[thick, red](0,0)--(1,0)--(2,3)--(3,4)--(4,4)--(5,6)--(6,6);
-         \end{scope}
+Considere a relação formada por todos `(a,b)` de números naturais tais que `b` é múltiplo de `a`. Assim, `(2,4)`, `(2,6)`, `(3,6)` e `(9, 9)` são pares ordenado dessa relação, pois `4` é múltiplo de `2`, `6` é múltiplo de `2` e de `3` e `9` é múltiplo de `9` . No entanto, `(4,2)` e `(7,17)` são pares ordenados de números naturais, mas não são pares dessa relação.
+
+#. Exiba outros quatro pares ordenados dessa relação.
+#. Explique porque essa relação não é uma função.
+#. `(5, 405)` é um par ordenado dessa relação. Quantos outros pares ordenados dessa relação têm 5 como primeiro elemento? 
+#. Dê exemplo de uma ou mais relações que não sejam funções. Não precisam ser exemplos numéricos. 
 
 
-   #. Aproximadamente `1,25` km.
-   #. Resposta pessoal.
+.. admonition:: Resposta 
+
+   #. `(2,8)`, `(3,9)`, `(1,1)` e `(5,10)` pertencem a relação.
+   #. Por exemplo, os pares `(3,12)` e `(3,15)` pertencem a relação e isso nos mostra que o número natural `3` está associado a `12` e a `15`. Portanto, a relação não pode ser função.
+   #. Infinitos.
+   #. Um exemplo não numérico: a relação associa cada livro ao seu autor.
+
+.. _ativ-a-fila:
+
+Atividade: a família
+------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   .. **REVER E ADEQUAR**
+   
+   * Identificar uma relação a partir de sua representação no plano cartesiano. 
+   * Identificar a univocidade (ou não) de uma relação a partir de sua representação no plano cartesiano.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nível de abstração *Processo*.
+   * No item (b) o objetivo é que os estudantes percebam que, como as pessoas representadas pelos pontos `C` (Márcia) e `D` (Júlio) têm a mesma idade mas alturas diferentes, a relação apresentada no gráfico, que associa a idade com a altura nessa ordem, não é função.
+
+Cada ponto do gráfico a seguir representa uma das seguintes pessoas.
+
+.. _fig-altura-idade:
+
+.. figure:: _resources/Familia_2.png	
+   :width: 450pt
+   :align: center
+
+.. tikz:: 
+
+   \draw[->](-0,0)--(6,0);
+   \draw(5.7,0) node [below, scale=.5]{idade};
+   \draw[->](0,-0)--(0,4);
+   \draw(-0.1,3.95) node [left, scale=.5, rotate =90]{altura};
+   \draw[fill](5.5,1.5) circle(1pt) node[right, scale=.8]{$F$};
+   \draw[dotted] (5.5,0)--(5.5,1.5)--(0,1.5);
+   \draw[fill](4.5,3.5) circle(1pt) node[above, scale=.8]{$E$};
+   \draw[dotted](4.5,0)--(4.5,3.5)--(0,3.5);
+   \draw[fill](3,3.5) circle(1pt) node[above, scale=.8]{$D$};
+   \draw[dotted](3,0)--(3,3.5);
+   \draw[fill](3,2.5) circle(1pt) node[right, scale=.8]{$C$};
+   \draw[dotted](3,2.5)--(0,2.5);
+   \draw[fill](2,1) circle(1pt) node[right, scale=.8]{$B$};
+   \draw[dotted](2,0) -- (2,1) --(0,1);
+   \draw[fill](.5,.3) circle(1pt) node[right, scale=.8]{$A$};
+   \draw[dotted](.5,0)--(.5,.3)--(0,.3);
+   
+   
+#. Associe cada ponto do gráfico à pessoa correspondente.
+
+#. A relação expressa pelos pares ordenados (idade, altura) apresentados no gráfico é função? Por que?
+
+*Adaptado de The Language of Functions and Graphs, Shell Centre for Mathematical Education Publications Ltd., 1985.
+
+
+.. admonition:: Resposta 
+
+   #. O ponto `A` representa o bebê Miguel, ponto `B` Sofia, ponto `C` Márcia, `D` Júlio, `E` Antônio e o ponto `F` D. Laura.
+   #. Não é função, pois Márcia e Júlio tem a mesma idade mas alturas diferentes; no plano, os pontos `C` e `D` têm a mesma abscissa e ordenadas diferentes.
+ 
+Quando nos deparamos com uma função é fundamental identificarmos os conjuntos domínio e contradomínio, e a maneira como os elementos desses conjuntos estão relacionados. Tal maneira pode ser muito variada, no entanto, principalmente quando os conjuntos envolvidos são numéricos, é comum considerar como contradomínio o conjunto `\mathbb{R}`. Por isso, daqui por diante, quando estivermos considerando funções numéricas, o contradomínio será igual a `\mathbb{R}`. 
+
+Em muitos casos, a forma de associação entre os elementos é dada por uma expressão analítica. Vejamos alguns exemplos.
+
+`(I)` Para calcular o perímetro de um quadrado de lado `\ell` usa-se a expressão `P=4\ell`. Percebe-se então que o perímetro está relacionado com o lado. A partir daí pode-se definir a função perímetro:
+ 	
+.. math::
+
+   P: ]0,+\infty[\to \mathbb{R} \quad ; \quad P(\ell)=4\ell.
+
+Da mesma forma a área de um quadrado de lado `\ell` é dada por `A=\ell^2`, que permite definir a função:
+
+.. math::
+
+   A: ]0,+\infty[\to \mathbb{R} \quad ; \quad A(\ell)=\ell^2.
+
+A variável `\ell` pode assumir qualquer valor dentro do intervalo `]0,+\infty[` que é o domínio da função `P` . Se quisermos saber o valor do perímetro do quadrado de lado 5cm, basta substituirmos `\ell` por 5 na expressão de  `P(\ell)`. Ficamos assim com
+ 	
+    
+.. math::
+
+   P(\textbf{5})=4\times \textbf{5} = 20\mathrm{cm}.
+
+
+A área do quadrado de lado 9cm é 
+ 	
+.. math::
+
+   A(\textbf{9})=\textbf{9}^2=81cm^2. 
+ 	
+`(II)` A fórmula de Lorentz já foi muito utilizada pelos médicos para o cálculo do "peso ideal" `p`, em kg, em função da altura `h`, em centímetros, do paciente.
+ 	
+.. math::
+
+   p:]0,300[\to \mathbb{R}\quad ; \quad p(h)=h-100-\dfrac{h-150}{k}
+
+em que `k` vale 4 para homens e vale 2 para mulheres.
+ 	
+Que tal usar a fórmula acima para calcular o seu peso ideal?
+
+`(III)` Imagine que um objeto é solto, a partir do repouso, de uma altura de `10` metros e percorre uma trajetória vertical em queda livre. Da Física, sabemos que sua altura `h` em metros medida a partir do solo, em função do tempo `t` em segundos, quando desprezamos a resistência do ar, é dada por
+ 	
+.. math::
+
+   h:[0,+\infty[\to \mathbb{R}\quad ; \quad h(t)=10-\dfrac{gt^2}{2},
+ 	
+em que `g` representa a aceleração da gravidade em `m/s^2`.metros por segundo ao quadrado.
+ 	
+Fazer a variável tempo assumir o valor `t=0` segundos na expressão de `h(t)` significa que estamos medindo a altura no início da contagem do tempo, ou seja a altura inicial do corpo. Nesse caso teremos
+ 	
+.. math::
+
+   h(\textbf{0})=10-\dfrac{g\ \textbf{0}^2}{2}=10.
+
+ 	
+*Se por exemplo, quisermos saber em quanto tempo o corpo chegará ao solo, o que devemos fazer?* Como a medição é feita a partir do solo, dizer que o objeto chegou ao solo é o mesmo que dizer que sua altura é igual a 0. Portanto, precisamos descobrir o valor da variável `t`, de maneira que `h(t)=0`. A partir da expressão de `h(t)` e aproximando `g` por `10 m/s^2`, obtemos `10-5t^2=0`, donde concluímos que  `t=\sqrt{2}` aproximadamente.
+
+.. _ativ-praticando-notacao:
+
+Atividade: praticando a notação
+-------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   * Compreender funções a partir de sua representação analítica.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nível de abstração *Ação*.
+   * Muitos estudantes cometem erros relacionados ao uso da expressão analítica que representa a função. É comum, por exemplo, que o cálculo de `f(-2)` para `f(x)=x^2` seja feito da seguinte forma: `f(-2)=-2^2=-4`. O que claramente está errado. Muito fre	quentemente, esse tipo de erro está relacionado a falta de compreensão do papel de uma varíavel em uma expressão algébrica. Aproveite a atividade para fazer uma revisão.  
+
+Considere as funções `f`, `g`, `k` e `h`, todas de domínio `\mathbb{R}`, tais que:
+
+.. math::
+
+   f(x)=3x^2+5x\quad ; \quad g(x)=\frac{x-1}{x^3+3}\quad ; \quad k(x)=(x-2)^2+6\quad ; \quad h(x)=2x-7
+
+Determine o valor de:
+
+
+.. table:: 
+   :widths: 6 6
+   :column-alignment: center center
+
++---------------------+-------------------+
+| `f(3)`              |                   |
++---------------------+-------------------+
+| `g(-1)`             |                   |
++---------------------+-------------------+
+| `k(2)`              |                   |
++---------------------+-------------------+
+| `f(1)+g(1)`         |                   |
++---------------------+-------------------+
+| `g(2)-k(-1)`        |                   |
++---------------------+-------------------+
+| `k(0).f(-2)`        |                   |
++---------------------+-------------------+
+| `f(0)+h(0)-1`       |                   |
++---------------------+-------------------+
+| `f(-2).g(-2)+k(2)`  |                   |
++---------------------+-------------------+
+|`\dfrac{f(-3)}{k(0)}`|                   |
++---------------------+-------------------+
+|`x` quando `h(x)=0`  |                   |
++---------------------+-------------------+
+|`x` quando `h(x)=3`  |                   |
++---------------------+-------------------+
+
+.. admonition:: Resposta 
+
+   .. table:: 
+      :widths: 6 6
+      :column-alignment: center center
+   
+   +---------------------+-------------------+
+   | `f(3)`              |   42              |
+   +---------------------+-------------------+
+   | `g(-1)`             |    -1             |
+   +---------------------+-------------------+
+   | `k(2)`              |     6             |
+   +---------------------+-------------------+
+   | `f(1)+g(1)`         |     8             |
+   +---------------------+-------------------+
+   | `g(0)-k(-1)`        |  `-\dfrac{46}{3}` |
+   +---------------------+-------------------+
+   | `k(0).f(-2)`        |   `20`            |
+   +---------------------+-------------------+
+   | `f(0)+h(0)-1`       | `-8`              |
+   +---------------------+-------------------+
+   | `f(-2).g(-2)+k(2)`  |  `\dfrac{36}{5}`  |
+   +---------------------+-------------------+
+   |`\dfrac{f(-3)}{k(0)}`|  `\dfrac{6}{5}`   |
+   +---------------------+-------------------+
+   |`x` quando `h(x)=0`  |  `\dfrac{7}{2}`   |
+   +---------------------+-------------------+
+   |`x` quando `h(x)=3`  |   `5`             |
+   +---------------------+-------------------+
+
+
+.. _ativ-funcoes-enchendo-o-cone:
+
+Atividade: enchendo o cone
+--------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   * Determinar valores da imagem e do domínio de uma função a partir da sua expressão analítica.
+   * Interpretar os resultados obtidos no contexto descrito.
+   
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nível de abstração *Ação*.
+   * É importante que o estudante identifique a relação existente entre a altura do nível da água no reservatório e o volume do mesmo.
+   * Essa pode também ser uma oportunidade para explorar conversão de unidades. Sabemos que a expressão `V=\dfrac{1}{3}(\pi r^2)h` fornece o volume do cone em função do raio `r` e da altura `h` do nível de água, desde que raio e altura estejam expressos na mesma unidade. A partir das dimensões dadas no enunciado, tem-se que `r=\dfrac{h}{2}` e, portanto, `V(h)=\dfrac{1}{3}\pi\dfrac{h^3}{4}` é o volume de água no reservatório, em metros cúbicos, correspondente a uma altura de `h` em metros. Considerando 3 como aproximação de `\pi` obtem-se que o volume, em metros cúbicos, é dado, aproximadamente, por `V(h)=\dfrac{h^3}{4}`, o que equivale em litros a `V(h)=250h^3`.
+   * Destaque a “não proporcionalidade” da situação, observando por exemplo, que `2` é a metade de `4`, mas `2000` não é a metade de `16000`.
+   
+
+O reservatório representado a seguir tem a forma de um cone cuja altura é `6 m` e a base é um círculo de raio `3 m`. O volume `V` em litros de água no reservatório pode ser estimado a partir altura do nível da água `h` (em metros) de acordo com a seguinte expressão:
+
+.. math::
+
+   V(h)=250h^3
+
+.. tikz::
+   
+   \fill[thick,color=primario,fill=primario,fill opacity=0.10000000149011612, left color =white, right color =primario] (1.,0.) -- (-0.5,3.) -- (2.5,3.) -- cycle;
+   \draw [rotate around={-180:(1.0047836744699097,3.1435102340973167)},thick,left color=primario!80, right color=primario!60, middle color=white] (1.0047836744699097,3.1435102340973167) ellipse (1.5611029721362464cm and 0.5184113668542463cm);
+   \draw [rotate around={-180:(1.0071755117048646,4.715265351145975)},thick, left color=gray!80, right color=gray!60, middle color=white] (1.0071755117048646,4.715265351145975) ellipse (2.341654458204363cm and 0.7776170502813675cm);
+   \draw [thick] (1.,0.)-- (-1.3303743315507686,4.660748663101537);
+   \draw [thick] (1.,0.)-- (3.347109515260305,4.69421903052061);
+   \draw[dashed](1,0) -- (3.4,0);
+   \draw[|-|, dashed](2.6,0)--(2.6,3);
+   \draw (2.7,1.6) node[right] {$h$};
+   \draw[|-|, dashed](3.4,0)--(3.4,4.6);
+   \draw (3.5,2) node[right] {6 m};
+
+#. Determine `V(2), V(3)` e `V(4)` e explique os seus significados no contexto.
+#. Quais os volumes de água, mínimo e máximo, que o reservatório comporta?
+#. A que altura do nível da água corresponde o volume igual a `3 456` litros?
+
+
+.. admonition:: Resposta 
+
+   #. `V(2), V(3)` e `V(4)` são, respectivamente iguais a `2000`, `6750` e `16000` litros e correspondem aos volumes quando a altura da água no reservatório é igual `2`, `3` e `4` metros, respectivamente.
+   #. O menor volume observado é `V=0` litros, que corresponde a `h=0 \ m`, e o maior volume é `V(6)=54000` litros.
+   #. Corresponde a uma altura de `2,4` metros.
+
+.. _ativ-funcoes-uniformemente-variado:
+
+Atividade: uniformemente variado
+--------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS** 
+   
+   * Compreender funções a partir de sua representação analítica, relacionando-a ao contexto descrito pelo problema.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Nível de abstração *Ação*.
+   * Chamar atenção do estudante para o importante papel que as funções desempenham na Física, em especial na Mecânica Clássica, relacionando grandezas como tempo, deslocamento, velocidade e aceleração.
+
+A posição `S` (em quilômetros), medida a partir de um referencial, de um veículo que se desloca segundo um movimento retilíneo uniformemente variado (MRUV) é dada em função do tempo `t` (medido em horas) pela seguinte expressão:
+
+
+.. math::
+
+   S(t)=2t^2-4t+2
+
+#. Determine a posição inicial do veículo. Explique o significado desse resultado a partir do contexto.
+#. Após quanto tempo o veículo estará a 18km da origem?
+
+
+.. admonition:: Resposta 
+
+   #. Inicialmente o veículo está posicionado a `S(0)=2` quilômetros da origem O.
+   #. Após `4` horas.
 

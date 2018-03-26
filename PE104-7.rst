@@ -1,0 +1,85 @@
+.. _sec-praticando3:
+
+**********
+Praticando
+**********
+
+.. _ativ-comparacaodegruposusandoboxplot:
+
+Atividade: modalidades da maratona de Nova Iorque 2017
+------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Comparar diferentes conjuntos de dados, considerando a mesma variável.
+   
+   **Observações e sugestões** Nesta atividade retomaremos as quatro categorais da maratona de Nova Iorque para usar o boxplot como esquema gráfico para auxiliar na comparação dos resultados para as diferentes categorias, a saber, homens, mulheres, cadeira de rodas e triciclo de mão. Os dados estão disponíveis neste `link <https://ggbm.at/ZhqKD9Nz>`_.
+
+Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na maratona de Nova Iorque no ano de 2017 para as categorias homens e mulheres e os melhores tempos para as categorias cadeira de rodas e triciclo de mão e as medidas resumo calculadas pelo GeoGebra para as quatro categorias.
+
+
+.. _fig-boxplotsmaratona:
+
+.. figure:: _resources/boxplots_maratona.png
+   :width: 400pt
+   :align: center
+
+   Boxplots para os 100 melhores tempos das categorias homens e mulheres e dos melhores tempos das categorias cadeira de rodas e triciclo de mão da maratona de Nova Iorque/2017
+   
+
+.. _fig-medidasresumo4categorias:
+
+.. figure:: _resources/resumo-quatrocategorias.png
+   :width: 500pt
+   :align: center
+
+   Medidas resumo para as quatro categorias da maratona de Nova Iorque/2017  
+ 
+   
+1. Qual das modalidades apresentou maior dispersão?
+2. Qual(ais) modalidade(s) apresentaram valores atípicos?
+3. Como você avalia, em relação à simetria, cada uma das distribuições?
+4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres, usando a figura a seguir.
+
+.. _fig-boxplothm:
+
+.. figure:: _resources/bphm_1.png
+   :width: 300pt
+   :align: center
+
+   Boxplot dos 100 melhores tempos para homens e mulheres na maratona de Nova Iorque/2017
+   
+5. Faça uma análise comparativa das distribuições das modalidades cadeira de rodas e triciclo de mão. 
+
+
+.. admonition:: Resposta 
+
+   1. Considerando a amplitude amostral é fácil perceber que a maior dispersão ocorre na categoria triciclo de mão. O mesmo vale se considerarmos a distância entre quartis. Pela :ref:`fig-medidasresumo4categorias` podemos ver que esta resposta também valerá se considerarmos o desvio padrão. 
+   
+   2. Pela :ref:`fig-boxplotsmaratona` podemos ver que a única categoria que não apresentou valores atípicos foi a categoria das mulheres, pois não há pontos destacados no boxplot correspondente às mulheres.
+   
+   3. Considerando as categorias "cadeira de rodas" e "triciclo de mão", vemos que 
+   
+   `\textsf{Q1-Min}<< \textsf{Max-Q}3`; 
+   
+   `\textsf{Mediana-Q}1< \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} <<\textsf{Max-mediana}`, em que o símbolo `<<` é usado para indicar "bem menor do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à direita acentuada. Observe, que nestes dois casos tem-se que a mediana é menor do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   Considerando as categorias "homens" e "mulheres", vemos que 
+   
+   `\textsf{Q1-Min}>> \textsf{Max-Q}3`; 
+   
+   `\textsf{Mediana-Q}1 > \textsf{Q3-Mediana}` e 
+   
+   `\textsf{Mediana-Min} >>\textsf{Max-mediana}`, em que o símbolo `>>` é usado para indicar "bem maior do que". 
+   Logo, conclui-se que nestas categorias tem-se assimetria à esquerda acentuada. Observe, que nestes dois casos tem-se que a mediana é maior do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetria à esquerda, mas na categoria mulheres não há valores atípicos. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+   
+   5. Considerando as categorias "cadeira de rodas" e "triciclo de mão" vemos que na primeira, 51 completaram a maratona e, na segunda, 69 completaram a maratona. Quanto à amplitude, vemos que ela foi maior na cetegoria "triciclo de mão", valendo o mesmo para a distância entre quartis e para o desvio padrão. Possivelmente, esta diferença nas dispersões das duas categorias esteja sendo acarretada pelo maior valor atípico da categoria "triciclo de mão", a saber, 9,5206 h. Já foi observado que ambas as categorias apresentam distribuições com assimetria à direita de modo que a mediana é menor do que a média.
+   Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
+
+

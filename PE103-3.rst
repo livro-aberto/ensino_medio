@@ -1,0 +1,264 @@
+
+
+**************************************************************
+Explorando: visualizando estruturas de variáveis quantitativas
+**************************************************************
+  
+  
+.. _ativ-construcao-histograma:
+
+Atividade: construção do histograma
+-----------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** 
+   
+   Identificar, na contrução de um gráfico que represente a distribuição de frequências, a necessidade de agrupar em intervalos de classe os valores observados de uma variável quantitativa contínua.
+   
+    
+   **Observações e sugestões** 
+   
+   A construção do histograma será dirigida nessa atividade, mas  recomenda-se fortemente o uso de recursos tecnológicos, como  o GeoGebra, para esse tipo de construção. 
+    
+   Incluir link do arquivo desses dados em formato GeoGebra. Em alguns aplicativos, e é o caso do GeoGebra, é necessário substituir a vírgula como separador decimal do padrão brasileiro por ponto.
+   
+.. _fig-radiotelescopios:
+
+.. figure:: _resources/USA.NM.VeryLargeArray.03.jpg
+   :width: 300pt
+   :align: center
+
+   Arranjo de radiotelescópios - Very Large Array (VLA), New Mexico, EUA. `Foto: Hajor CC-by-sa <https://commons.wikimedia.org/wiki/File:USA.NM.VeryLargeArray.03.jpg>`_
+
+Um arranjo de oito radiotelescópios (A, B, C, D, E, F, G e H) como  ilustrado na :ref:`Figura <fig-radiotelescopios>` detectou sinais cujos oito registros de tempo para cada radiotelescópio se encontram na tabela a seguir. 
+
+.. qual a unidade de observação?
+
++------+------+------+------+------+------+------+------+
+|  A   | B    | C    | D    | E    | F    | G    | H    |
++======+======+======+======+======+======+======+======+
+| 3,03 | 4,37 | 5,04 | 5,73 | 4,03 | 5,37 | 6,04 | 6,74 | 
++------+------+------+------+------+------+------+------+
+| 3,38 | 4,46 | 5,11 | 5,84 | 4,38 | 5,46 | 6,11 | 6,84 | 
++------+------+------+------+------+------+------+------+
+| 3,60 | 4,55 | 5,19 | 5,95 | 4,60 | 5,55 | 6,19 | 6,96 | 
++------+------+------+------+------+------+------+------+
+| 3,78 | 4,63 | 5,29 | 6,08 | 4,78 | 5,64 | 6,29 | 7,08 | 
++------+------+------+------+------+------+------+------+
+| 3,92 | 4,71 | 5,36 | 6,23 | 4,92 | 5,72 | 6,36 | 7,23 | 
++------+------+------+------+------+------+------+------+
+| 4,04 | 4,79 | 5,45 | 6,41 | 5,04 | 5,79 | 6,45 | 7,40 | 
++------+------+------+------+------+------+------+------+
+| 4,16 | 4,87 | 5,54 | 6,62 | 5,16 | 5,87 | 6,54 | 7,63 | 
++------+------+------+------+------+------+------+------+
+| 4,27 | 4,95 | 5,64 | 6,97 | 5,26 | 5,95 | 6,64 | 7,97 | 
++------+------+------+------+------+------+------+------+
+
+
+.. admonition:: Para refletir
+
+   * Como construir uma tabela de frequências desses dados uma vez que os registros de tempo são todos distintos?
+
+   * Como você faria para visualizar o comportamento de uma variável com estas características?
+
+A natureza quantitativa de uma variável contínua pode muitas vezes levar a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
+
+`a)` Complete a tabela a seguir que utiliza de intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior está incluso e o limite superior não está incluso.
+
++---------------------+-----------------------------+
+| Intervalo de classe | Número de observações       |
++=====================+=============================+
+| [ 3,0 ; 3,5 [       |                             |
++---------------------+-----------------------------+
+| [ 3,5 ; 4,0 [       |                             |
++---------------------+-----------------------------+
+| [ 4,0 ; 4,5 [       |                             |
++---------------------+-----------------------------+
+| [ 4,5 ; 5,0 [       |                             |
++---------------------+-----------------------------+
+| [ 5,0 ; 5,5 [       |                             |
++---------------------+-----------------------------+
+| [ 5,5 ; 6,0 [       |                             |
++---------------------+-----------------------------+
+| [ 6,0 ; 6,5 [       |                             |
++---------------------+-----------------------------+
+| [ 6,5 ; 7,0 [       |                             |
++---------------------+-----------------------------+
+| [ 7,0 ; 7,5 [       |                             |
++---------------------+-----------------------------+
+| [ 7,5 ; 8,0 [       |                             |
++---------------------+-----------------------------+
+Para visualizar o comportamento desses dados, iremos construir um gráfico chamado :index:`histograma<histograma>`, composto por retângulos adjacentes cujas alturas representam a frequência de observações que ocorrem no intervalo correspondente. A base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
+
+`b)` Complete a figura a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
+
+   .. _fig-histograma:
+
+   .. figure:: _resources/Histograma.png
+      :width: 300pt
+      :align: center
+   
+      Histograma dos dados coletados pela grade de radiotelescópios
+ 
+`c)` Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
+
+
+.. admonition:: Resposta
+
+ `a)`
+ 
+ +---------------------+-----------------------------+
+ | Intervalo de classe | Número de observações       |
+ +=====================+=============================+
+ | [ 3,0 ; 3,5 [       |               2             |
+ +---------------------+-----------------------------+
+ | [ 3,5 ; 4,0 [       |               3             |
+ +---------------------+-----------------------------+
+ | [ 4,0 ; 4,5 [       |               7             |
+ +---------------------+-----------------------------+
+ | [ 4,5 ; 5,0 [       |               9             |
+ +---------------------+-----------------------------+
+ | [ 5,0 ; 5,5 [       |              11             |
+ +---------------------+-----------------------------+
+ | [ 5,5 ; 6,0 [       |              11             |
+ +---------------------+-----------------------------+
+ | [ 6,0 ; 6,5 [       |               9             |
+ +---------------------+-----------------------------+
+ | [ 6,5 ; 7,0 [       |               7             |
+ +---------------------+-----------------------------+
+ | [ 7,0 ; 7,5 [       |               3             |
+ +---------------------+-----------------------------+
+ | [ 7,5 ; 8,0 [       |                2            |
+ +---------------------+-----------------------------+
+ 
+ `b)` Figura 4.3 e `c)` O valor da média é aproximadamente 5,5. O histograma apresenta uma distribuição de frequências simétrica e a posição da média está no eixo de simetria do histograma.
+ 
+.. _fig-histograma-resposta:
+ 
+.. figure:: _resources/Histograma-resposta_1.png
+   :width: 300pt
+   :align: center
+
+   Histograma dos registros de tempo
+   
+ 
+   
+   
+.. _ativ-medicao-temperatura-serie-temporal:
+
+Atividade: medição da temperatura ao longo do tempo
+---------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+ **Objetivos específicos** 
+ 
+ * Definir série temporal a partir de um conjunto de observações sobre uma variável quantitativa contínua variando no tempo. 
+ 
+ * Trabalhar com  gráficos de linha para ilustrar a evolução dos valores da variável ao longo do tempo. 
+   
+ **Observações e sugestões** 
+ 
+ Para a construção do gráfico de linha será fornecida uma malha quadriculada para o preenchimento dos pontos, recomenda-se também uso de planilhas de cálculo para essa construção. Veja nesse `link <https://docs.google.com/spreadsheets/d/1B2bbuggIVjdfG6NivzDYmsmzovkt0FuFUUhSVFaAyDc/edit#gid=1474980695>`_, uma sugestão para realizar esta atividade.  
+ 
+ Respostas possíveis na reflexão proposta são: índices de inflação, preços de diversos bens,  índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.  
+ 
+ Na discussão sobre sazonalidade, pedir aos alunos para trazer notícias de jornais ou revistas que contenham séries temporais. Mostrar que existem várias medições que são comparadas com as do ano anterior, por exemplo, inflação, crescimento do PIB, taxas de desemprego por trimestre, entre outras.
+
+ 
+ 
+   
+Você deve ter notado que a previsão do tempo é feita sempre a partir de dois números, isto ocorre porque a temperatura varia de forma contínua ao longo do dia e o que está sendo previsto são as temperaturas máxima e mínima. Por exemplo: 28° / 19°, significa que a previsão da temperatura máxima durante o dia será aproximadamente de 28°C e, a mínima, 19°C.
+
+Diversas variáveis meteorológicas (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
+
+No Brasil, as estações estão a cargo do `Instituto Nacional de Meteorologia (INMET)<http://www.inmet.gov.br/>`_ e as informações são armazenadas em bases de dados. Para poder tratar essas informações, frequentemente elas são resumidas por períodos de tempo de diferentes magnitudes: dias, semanas, meses ou anos.
+
+Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como séries de dados temporais ou, apenas, :index:`séries temporais<séries temporais>`, já que correspondem a variáveis que mudam continuamente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
+
+.. admonition:: Para refletir
+
+   Forneça outros exemplos de séries temporais nas áreas de saúde, economia, finanças, educação, etc.
+
+
+
+A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre em graus centígrados (Fonte: `Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET <http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`_)
+
++-------------------------------------------------------------------------------------+
+| Temperatura Máxima Média mensal nos anos 1991-2000 na cidade de Porto Alegre        |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| Mes | 1991  | 1992  | 1993  | 1994  | 1995  | 1996  | 1997  | 1998  | 1999  | 2000  |
++=====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
+| 1   | 30,23 | 30,43 | 31,34 | 30,33 | 30,74 | 29,89 | 32,09 | 29,13 | 30,65 | 30,63 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 2   | 31,03 | 31,48 | 29,28 | 28,85 | 29,46 | 29,78 | 29,62 | 28,26 | 29,56 | 29,93 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 3   | 30,55 | 30,05 | 28,22 | 28,05 | 29,12 | 28,67 | 28,63 | 27,20 | 31,64 | 27,85 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 4   | 26,15 | 25,52 | 27,66 | 25,51 | 26,22 | 27,03 | 26,56 | 24,03 | 24,00 | 26,32 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 5   | 25,31 | 21,44 | 23,29 | 24,33 | 21,95 | 22,94 | 22,95 | 22,00 | 21,51 | 21,78 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 6   | 20,32 | 22,68 | 19,13 | 20,09 | 20,45 | 17,76 | 19,42 | 19,60 | 18,87 | 21,50 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 7   | 19,75 | 16,91 | 17,97 | 20,41 | 21,60 | 16,99 | 20,67 | 20,47 | 18,78 | 17,59 | 
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 8   | 21,81 | 20,50 | 21,90 | 21,28 | 21,55 | 22,59 | 23,06 | 19,77 | 21,94 | 20,85 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 9   | 23,99 | 22,14 | 20,83 | 25,21 | 22,62 | 21,40 | 22,32 | 21,22 | 22,65 | 22,25 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 10  | 26,17 | 26,16 | 26,40 | 24,60 | 24,17 | 25,34 | 23,27 | 25,19 | 23,07 | 24,02 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 11  | 26,93 | 27,16 | 28,07 | 26,53 | 28,93 | 28,40 | 26,51 | 28,24 | 26,36 | 26,87 |
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| 12  | 30,60 | 29,95 | 29,73 | 32,05 | 30,44 | 29,87 | 30,28 | 28,91 | 29,08 | 29,51 | 
++-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
+
+#. Escolha dois anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a série de cada ano.
+
+#. Una os pontos correspondentes ao mesmo ano (mesma série) de meses consecutivos com um segmento e observe o resultado. Você percebe algum comportamento similar para a  temperatura em anos diferentes?
+
+#. Compare seu gráfico com o de colegas que escolheram outros anos (ou acrescente séries de outros anos ao seu gráfico). O que você percebe com relação à temperatura nos meses iniciais, intermediários e finais do ano?  A que se deve esse comportamento da temperatura?
+
+.. admonition:: Resposta
+
+`a)` e `b)` Percebe-se temperaturas mais altas nos meses iniciais e finais do ano e, mais baixas, no meio do ano.
+
+   .. _fig-linhas-temperatura
+   
+   .. figure:: _resources/linhas-temperatura.png
+     :width: 300pt
+     :align: center
+
+      Gráficos de linhas com a temperatura máxima média mensual da cidade de Porto Alegre
+
+`c)` Idem ao item b). Isso ocorre devido às estações do ano. No hemisfério sul temos temperaturas mais altas nos meses finais e iniciais do ano e temperaturas mais baixas no meio do ano.
+
+Os gráficos que você acabou de construir são chamados :index:`gráficos de linha<gráficos de linha>`. Esse tipo de gráfico é muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. Quando a variável quantitativa é observada ao longo do tempo, o conjunto de dados resultante é chamado uma série temporal.
+
+
+.. admonition:: Observação 
+
+    Como você já deve ter observado, a temperatura em Porto Alegre é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de :index:`sazonalidade<sazonalidade>`. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
+
+.. glossary::
+
+   Sazonalidade
+      Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta nas medições da variável observada.
+   
+Considere novamente os dados de temperatura da atividade anterior. Se representarmos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
+
+
+.. _fig-linhas-sazonalidade:
+
+.. figure:: _resources/linhas-sazonalidade.png
+   :width: 400px
+   :align: center
+
+   Efeito da sazonalidade no gŕafico de linhas da temperatura máxima média
+   

@@ -1,305 +1,11 @@
-.. _sec-explorando3:
-
-===================
-Explorando: Boxplot
-===================
-
-.. _ativ-construcao-do-boxplot:
-
--------------------------------------------------------
-Atividade: Homens e Mulheres na Maratona de Nova Iorque
--------------------------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos:** Usando as medidas mínimo, Q1, mediana, Q3 e máximo, construir um esquema visual simples que permita comparar dois grupos distintos.
-   
-   **Observações e sugestões:** Nesta atividade pretende-se apresentar o boxplot, gráfico alternativo para a representação de variáveis quantitativas, que além de bastante simples de construir é útil na comparação de grupos diferentes. Este gráfico é baseado nas cinco medidas citadas nos objetivos específicos e, as mesmas, já foram obtidas pelos alunos em atividades anteriores. De qualquer forma, serão novamente apresentadas no enunciado da atividade, para facilitar.
-   
-No quadro a seguir, são apresentadas algumas informações sobre os 100 melhores tempos na maratona de Nova Iorque em 2017 para o grupo dos homens e para o grupo das mulheres.
-
-
-.. table:: Medidas resumo para os 100 melhores tempos de mulheres e homens na maratona de Nova Iorque/2017
-   
-   +---------+----------+--------+
-   | medida  | Mulheres | Homens |
-   +---------+----------+--------+
-   | Min     | 2,448    | 2,181  |
-   +---------+----------+--------+
-   | Q1      | 2,772    | 2,473  |
-   +---------+----------+--------+
-   | mediana | 2,949    | 2,550  |
-   +---------+----------+--------+
-   | Q3      | 2,998    | 2,611  |
-   +---------+----------+--------+
-   | Max     | 3,086    | 2,639  |
-   +---------+----------+--------+
- 
-
-#. Identifique entre as 10 medidas calculadas para as duas amostras, o menor e o maior valores obtidos. 
-#. Construa em um eixo, que pode ser vertical ou horizontal, uma escala que comprenda este intervalo do menor valor até o maior valor identificados no item anterior. 
-#. Marque no eixo os valores de Q1 e Q3  para as mulheres e desenhe um retângulo cujas bases correspondam a estas duas medidas.
-#. Dentro do retângulo desenhado, trace um segmento paralelo às bases que corresponda ao valor da Mediana das mulheres.
-#. Para terminar, trace um segmento partindo do ponto médio da base correspondente a Q1 até o menor valor observado e, um segmento partindo do ponto médio da base correspondente a Q3 até o maior valor observado.
-#. Ao lado ou acima da figura construída (dependendo de seu eixo ter orientação vertical ou horizontal), repita os intens anteriores para a categoria homens.
-#. Compare as duas figuras obtidas. Que diferenças você pode destacar entre as duas categorais, a partir da figura construída?
-
-
-.. admonition:: Resposta 
-
-   Veja na figura a seguir a construção sugerida pelos itens (a) a (f), considerando a orientação do eixo horizontal.
-   
-
-   .. _fig-boxplotHM:
-
-   .. figure:: _resources/boxplotsHM.png
-      :width: 200pt
-      :align: center
-
-      Resumo dos 100 melhores templos para homenes e mulheres na maratona de Nova Iorque/2017
-      
-   `g)` Comparando as duas figuras obtidas pode-se perceber que os 100 melhores tempos para os homens foram em geral menores que os 100 melhores tempos para mulheres. Observe que o maior tempo para homens é menor do que o primeiro quartil para as mulheres. Em ambas as figuras também pode-se perceber intervalos iniciais mais largos, isto é, a distância entre o mínimo e o primeiro quartil é bem maior do que a distância entre o máximo e o terceiro quartil, tanto na categoria homens como na categoria mulheres.
-
-.. _sec-organizandoasideias3:
-
-==============================
-Organizando as ideias: Boxplot
-==============================
-
-O gráfico construído na :ref:`ativ-construcao-do-boxplot` é uma versão simplificada do gráfico conhecido como **boxplot** na qual não se consideram valores atípicos. Este gráfico, muito simples de ser construído, usa a informação das medidas Mínimo, Q1, Mediana, Q3 e Máximo.
-
-A construção do **boxplot** é baseada em  cinco medidas de posição, que compõem o :index:`esquema dos cinco números`, a saber,  
-
-1. mínimo (`\textsf{Min}=x_{(1)}`), 
-2. primeiro quartil (`\textsf{Q}1`), 
-3. mediana (`\textsf{Q}2`), 
-4. terceiro quartil (`\textsf{Q}3`) e 
-5. máximo (`\textsf{Max}=x_{(n)}`). 
-
-Por exemplo, veja na figura a seguir o boxplot dos 100 melhores tempos das mulheres na maratona de Nova Iorque/2017, considerando a orientação do  eixo vertical.
-
-
-.. _fig-boxplotmulheres:
-.. figure:: _resources/boxplotmulheres.png
-   :width: 200pt
-   :align: center
-
-   Boxplot dos 100 melhores tempos na Maratonona de Nova Iorque/2017 na categoria mulheres
-
-O primeiro passo na construção do boxplot é traçar um eixo na escala dos dados observados, que pode ter orientação tanto vertical como horizontal, e, depois, desenhar um retângulo cujas bases correspondem ao primeiro e ao terceiro quartis, de acordo com o eixo. Em seguida, traça-se um segmento paralelo às bases, correspondendo ao valor da mediana. Veja a figura a seguir, considerando o eixo na escala dos dados com orientação vertical.
-
-
-.. _fig-caixadoboxplot:
-
-.. figure:: _resources/boxplotcaixa_2.png
-   :width: 200pt
-   :align: center
-
-   Caixa do boxplot
-
-
-A distância entre quartis (`\textsf{DQ}=\textsf{Q}3-\textsf{Q}1`) é a medida de dispersão utilizada na classificação de valores da distribuição como  :index:`valores atípicos<valores atípicos>`, isto é, valores que destoam dos demais no conjunto de dados. 
-
-O critério adotado para classificar um valor como atípico na construção do boxplot é descrito a seguir. 
-
-Defina 
-
-.. math::
-
-   \textsf{cerca inferior}=\textsf{Q}1-1,5\cdot \textsf{DQ}\textsf{ e }\textsf{cerca superior}=\textsf{Q}3+1,5\cdot \textsf{DQ}
-
-
-
-Se `x_i< \textsf{cerca inferior}` ou `x_i> \textsf{cerca superior}` , então `x_i` é classificado como valor atípico, e assinalado no boxplot com um asterisco ou algum outro caracter, de acordo com o eixo na escala dos dados. Veja figura a seguir.
-
-
-.. _fig-valoresatipicosnoboxplot:
-
-.. figure:: _resources/boxplotdq_2.png
-   :width: 300pt
-   :align: center
-
-   Valores atípicos no boxplot
-   
-Na finalização da contrução do boxplot, traçam-se segmentos paralelos ao eixo considerado (vertical ou horizontal) partindo dos pontos médios das bases do retângulo e terminando nos maior e menor valores não atípicos observados. Veja figura a seguir.
-
-.. _fig-finalizacaodoboxplot:
-
-.. figure:: _resources/boxplotcompl_1.png
-   :width: 300pt
-   :align: center
-
-   Ilustração do boxplot
-
-A figura a seguir ilustra um boxplot quando não há valores atípicos no conjunto de dados. Observe que neste caso, destacam-se no gráfico as medidas do esquema dos cinco números.
-
-.. _fig-boxplotsemvaloratipico:
-
-.. figure:: _resources/boxplotx_1.png
-   :width: 200pt
-   :align: center
-
-   Boxplot quando não há valores atípicos
-  
-O retângulo do boxplot corresponde aos 50% valores centrais da distribuição, ou seja, metade dos dados estão no intervalo delimitado pela  caixa (retângulo) e, a outra metade, está nos dois intervalos delimitados fora da caixa, sendo 25% acima e 25% abaixo da caixa. 
-
-As medidas do esquema dos cinco números nos permitem avaliar o grau de assimetria da distribuição. Por exemplo, se
-
-#. `\textsf{mediana} -\textsf{Q}1\approx \textsf{Q}3-\textsf{mediana}`
- 
-#. `\textsf{Q}1-x_{(1)} \approx x_{(n)}-\textsf{Q}3`
-
-#. `\textsf{mediana}-x_{(1)}\approx x_{(n)}-\textsf{mediana}`
-
-podemos concluir que a distribuição é aproximadamente simétrica, porém se alguns destes pares de intervalos apresentarem comprimentos muito diferentes, isso indica que a distribuição apresenta algum tipo de assimetria.
-
-Afinal, para que servem os quartis da distribuição?
-
-Os quartis servem para 
-
-#. identificar :index:`valores atípicos<valores atípicos>` da distribuição (se houver), também conhecidos como  valores discrepantes ou *outliers*; 
-#. avaliar o grau de assimetria da distribuição empírica do conjunto de dados e 
-#. construir um gráfico alternativo ao histograma para representar dados quantitativos conhecido como *boxplot* ou gráfico-caixa. 
-
-
-Analisando o :ref:`fig-boxplotmulheres` podemos observar que 
-
-#. não existem valores atípicos;
-#. o melhor tempo é ligeiramente inferior a 2,5 h e, o centésimo tempo, é ligeiramente inferior a 3,1 h;
-#. o tempo que corresponde à mediana está entre 2,9 h e 3,0 h;
-#. o primeiro quartil está próximo de 2,8 h e, o terceiro, próximo de 3,0 h e que 
-#. a distribuição dos 100 melhores tempos na categoria mulheres apresenta assimetria à esquerda. Verifique que
-
-`\textsf{mediana} -\textsf{Q}1 > \textsf{Q}3-\textsf{mediana}`
- 
-`\textsf{Q}1-x_{(1)} >> x_{(n)}-\textsf{Q}3`
-
-`\textsf{mediana}-x_{(1)}>> x_{(n)}-\textsf{mediana}`  em que o símbolo `>>` é usado para representar "bem  maior do que".
-
-
-Os valores exatos destas medidas estão na figura :ref:`fig-medidasresumo4categorias`.
-
-Vimos que o boxplot é útil para avaliar a forma da distribuição quanto ao grau de assimetria e também revela valores atípicos, se houver. 
-
-Uma regra empírica para avaliar frequências de valores em intervalos em torno da média que pode ser útil, é obtida a partir das propriedades de um modelo teórico conhecido como densidade normal de probabilidades. Entre várias propriedades desta densidade, destaca-se que ela é simétrica e unimodal tal que média, mediana e moda são iguais. Veja na figura a seguir uma ilustração da densidade normal com média `\mu` e desvio padrão `\sigma`, também conhecida como a curva em forma de sino.
-
-
-.. _fig-densidade-normal:
-
-.. figure:: _resources/densidadenormal_1.png
-   :width: 300pt
-   :align: center
-
-   Densidade Normal com região colorida no intervalo entre `\mu-\sigma` e `\mu+\sigma` , cuja área corresponde a aproximadamente 0,67 da área total igual a 1. 
-
-
-A regra empírica estabelece que em distribuições aproximadamente simétricas para as quais a presença de valores atípicos é muito rara ou não existem valores atípicos, 
-
-#. a frequência relativa de valores no intervalo `[\bar{x}-s;\bar{x}+s]` é aproximadamente 67%,
-#. a frequência relativa de valores no intervalo `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]` é aproximadamente 95%.
-
-No caso dos dados da :ref:`ativ-Maratona-de-NY` vimos que não existem valores atípicos, mas a distribuição apresenta assimetria à esquerda. Ainda assim, contando frequência de observações que nos intervalos definidos por `[\bar{x}-s;\bar{x}+s]` e  `[\bar{x}-2\cdot s; \bar{x}+2\cdot s]`,  obtém-se 69% e 93%, respectivamente. Observe que este valores estão próximos dos valores estipulados pela regra empírica, mesmo com este conjunto apresentando assimetria à esquerda.  
-
-O boxplot é muito útil na comparação de diferentes grupos, como veremos na atividade a seguir. 
-
-.. _sec-praticando3:
-
-====================
-Praticando o assunto
-====================
-
-.. _ativ-comparacaodegruposusandoboxplot:
-
-------------------------------------------------------
-Atividade: Modalidades da Maratona de Nova Iorque 2017
-------------------------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** Comparar diferentes conjuntos de dados, considerando a mesma variável.
-   
-   **Observações e sugestões** Nesta atividade retomaremos as quatro categorais da maratona de Nova Iorque para usar o boxplot como esquema gráfico para auxiliar na comparação dos resultados para as diferentes categorias, a saber, homens, mulheres, cadeira de rodas e triciclo de mão. Os dados estão disponíveis neste `link <https://ggbm.at/ZhqKD9Nz>`_.
-
-Nas figuras a seguir apresentam-se os boxplots dos 100 melhores tempos para na maratona de Nova Iorque no ano de 2017 para as categorias homens e mulheres e os melhores tempos para as categorias cadeira de rodas e triciclo de mão e as medidas resumo calculadas pelo GeoGebra para as quatro categorias.
-
-
-.. _fig-boxplotsmaratona:
-
-.. figure:: _resources/boxplots_maratona.png
-   :width: 400pt
-   :align: center
-
-   Boxplots para os 100 melhores tempos das categorias homens e mulheres e dos melhores tempos das categorias cadeira de rodas e triciclo de mão da maratona de Nova Iorque/2017
-   
-
-.. _fig-medidasresumo4categorias:
-
-.. figure:: _resources/resumo-quatrocategorias.png
-   :width: 500pt
-   :align: center
-
-   Medidas resumo para as quatro categorias da maratona de Nova Iorque/2017  
- 
-   
-1. Qual das modalidades apresentou maior dispersão?
-2. Qual(ais) modalidade(s) apresentaram valores atípicos?
-3. Como você avalia, em relação à simetria, cada uma das distribuições?
-4. Faça uma análise comparativa das distribuições das modalidades homens e mulheres, usando a figura a seguir.
-
-.. _fig-boxplothm:
-
-.. figure:: _resources/bphm_1.png
-   :width: 300pt
-   :align: center
-
-   Boxplot dos 100 melhores tempos para homens e mulheres na maratona de Nova Iorque/2017
-   
-5. Faça uma análise comparativa das distribuições das modalidades cadeira de rodas e triciclo de mão. 
-
-
-.. admonition:: Resposta 
-
-   1. Considerando a amplitude amostral é fácil perceber que a maior dispersão ocorre na categoria triciclo de mão. O mesmo vale se considerarmos a distância entre quartis. Pela :ref:`fig-medidasresumo4categorias` podemos ver que esta resposta também valerá se considerarmos o desvio padrão. 
-   
-   2. Pela :ref:`fig-boxplotsmaratona` podemos ver que a única categoria que não apresentou valores atípicos foi a categoria das mulheres, pois não há pontos destacados no boxplot correspondente às mulheres.
-   
-   3. Considerando as categorias "cadeira de rodas" e "triciclo de mão", vemos que 
-   
-   `\textsf{Q1-Min}<< \textsf{Max-Q}3`; 
-   
-   `\textsf{Mediana-Q}1< \textsf{Q3-Mediana}` e 
-   
-   `\textsf{Mediana-Min} <<\textsf{Max-mediana}`, em que o símbolo `<<` é usado para indicar "bem menor do que". 
-   Logo, conclui-se que nestas categorias tem-se assimetria à direita acentuada. Observe, que nestes dois casos tem-se que a mediana é menor do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
-   
-   Considerando as categorias "homens" e "mulheres", vemos que 
-   
-   `\textsf{Q1-Min}>> \textsf{Max-Q}3`; 
-   
-   `\textsf{Mediana-Q}1 > \textsf{Q3-Mediana}` e 
-   
-   `\textsf{Mediana-Min} >>\textsf{Max-mediana}`, em que o símbolo `>>` é usado para indicar "bem maior do que". 
-   Logo, conclui-se que nestas categorias tem-se assimetria à esquerda acentuada. Observe, que nestes dois casos tem-se que a mediana é maior do que a média. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
-   
-   4. Podemos perceber que ambas as categorias apresentam distribuições com assimetria à esquerda, mas na categoria mulheres não há valores atípicos. Também podemos perceber que a dispersão na categoria mulheres é maior do que na categoria homens, considerando a amplitude, a distância entre quartis e também o desvio padrão. Por esta razão, a categoria mulheres não apresentou valores atípicos. Já para a categoria homens, por ter apresentado menos dispersão, apresentou vários valores atípicos pequenos, que certamente, devem se referir aos tempos dos atletas profissionais. Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
-   
-   5. Considerando as categorias "cadeira de rodas" e "triciclo de mão" vemos que na primeira, 51 completaram a maratona e, na segunda, 69 completaram a maratona. Quanto à amplitude, vemos que ela foi maior na cetegoria "triciclo de mão", valendo o mesmo para a distância entre quartis e para o desvio padrão. Possivelmente, esta diferença nas dispersões das duas categorias esteja sendo acarretada pelo maior valor atípico da categoria "triciclo de mão", a saber, 9,5206 h. Já foi observado que ambas as categorias apresentam distribuições com assimetria à direita de modo que a mediana é menor do que a média.
-   Reveja os histogramas construídos na :ref:`ativ-comparacao-de-diferentes-grupos`.
-
-
 
 .. _sec-Para-saber-mais:
 
-===============
+***************
 Para saber mais
-===============
+***************
    
-.. _sub-mediadadosagrupados:
-
-Cálculo das medidas de posição  e dispersão para dados agrupados
-----------------------------------------------------------------
+**Cálculo das medidas de posição  e dispersão para dados agrupados**
 
 **Média**
 
@@ -336,8 +42,7 @@ O desvio padrão amostral é, então, calculado por `s=\sqrt{s^2}`.
 
 .. _ativ-dadosagrupados:
 
----------------------------------------
-Atividade: Medidas para dados agrupados
+Atividade: medidas para dados agrupados
 ---------------------------------------
 
 .. admonition:: Para o professor
@@ -393,17 +98,8 @@ Os resultados obtidos na prova de seleção para vagas de estágio numa empresa 
       Boxplot dos resultados dos candidatos na prova de seleçãotexto
    
 
-   
-  
+**Um método para a determinação dos quartis**
 
-
-
-
-
-.. _sub-determinacao-dos-quartis:
-
-Um método para a determinação dos quartis
------------------------------------------
 
 Existem métodos diferentes para determinar os quartis de um conjunto `\{x_1,x_2,\cdots,x_n\}` de `n` observações. Um método simples será descrito a seguir. 
 
@@ -417,11 +113,7 @@ Se os resultados de  `\frac{n+1}{4}` e `\frac{3n+1}{4}` não forem números inte
 
 Vamos voltar aos dados da :ref:`ativ-Notas-de-Artes`. Como `n=35`, para o primeiro quartil tomaremos o valor da posição `\frac{35+1}{4}=9`, a saber, `\textsf{Q}1=5`, já vimos que a mediana é 6,5 e, para o terceiro quartil tomaremos o valor da posição `\frac{3\cdot 35+1}{4}=26,5`. Como 26,5 é equidistante das posições 26 e 27, tomaremos o terceiro quartil como a média dos dois valores nestas duas posições, a saber, `\textsf{Q}3=\frac{7,3+7,5}{2}=7,4`. Logo, podemos dizer que na turma cerca de 25% das notas foram menores do que 5 e cerca de 25% das notas foram maiores do que 7,4.
 
-
-.. _sub-soma-desvios-da-media:
-
-Soma dos desvios da média
--------------------------
+**Soma dos desvios da média**
 
 Considerando o conjunto `\{ x_1,x_2,\cdots, x_n\}` com `n` observações, seja `\bar{x}` a média deste conjunto.  Define-se como um :index:`desvio da média`, a diferença entre uma observação e a média, a saber, 
 
@@ -446,11 +138,7 @@ lembrando que `\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}`.
 
 Veja um exemplo na seção :ref:`sub-desviosdamedia`.
 
-
-.. _sub-formula-calculo-variancia:
-
-Fórmula para o cálculo da variância amostral
---------------------------------------------
+**Fórmula para o cálculo da variância amostral**
 
 Vimos que a variância amostral do conjunto de dados `\{x_1,x_2,\cdots,x_n\}` é definida por 
 

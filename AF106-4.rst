@@ -1,0 +1,341 @@
+.. _sec-explorando-grafico:
+
+*******************
+Explorando: gráfico
+*******************
+
+
+Segundo informações do `Big Data Business <http://www.bigdatabusiness.com.br/visualizacao-de-dados-por-que-transformar-big-data-em-graficos/>`_, as palavras estimulam o lado esquerdo do cérebro e são um recurso essencial para a manutenção da memória. No entanto, as imagens são ainda mais eficazes, porque elas conseguem ativar os dois lados do cérebro simultaneamente e, assim, permitem o resgate de ideias e informações com maior precisão e agilidade. Especialmente quando se quer analisar grande quantidade de dados, apresentá-los em uma imagem ou em um gráfico, pode favorecer a comunicação.
+
+.. figure:: _resources/grafico-final.png
+   :width: 480pt
+   :align: center
+
+   Alguns exemplos de representações gráficas 
+
+Representar graficamente conjuntos de dados e suas relações pode fazer toda a diferença para transmitir informações. Há vários tipos de gráficos, cada um tem a sua particularidade e serve para transmitir as informações de forma específica. Nesta seção iremos estudar a representação gráfica de funções.
+
+Vamos considerar a seguinte situação:
+
+Atividade: ação promocional
+---------------------------
+
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Reconhecer vantagens da representação gráfica. Na questão, mais especificamente,  em detrimento da representação na forma de tabela. 
+   * Argumentar a partir da análise de gráficos e/ou tabelas.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Observe para os seus alunos que tabela e gráfico têm seus papéis. Ainda que um gráfico seja importante para um determinado objetivo, ele não exclui uso da tabela, que pode ser importante para outros objetivos. Uma tabela não substitui um gráfico se o domínio da função for um conjunto infinito, por exemplo.
+   * Para os itens de análise do crescimento e decrescimento do valor dos dados numéricos da imagem em função da variação apresentada, pode ser útil conectar os pontos, formando uma linha poligonal. Contudo é importante destacar que os segmentos que conectam os pontos consecutivos não são pontos correspondentes da função, uma vez que o domínio dessa função é um conjunto discreto.
+   * O item (e) está mais relacionado com o contexto do problema. Algumas possíveis justificativas para o crescimento seriam: início de veiculação de alguma propaganda em TV ou rádio, utilização da *hashtag* por alguma celebridade (publipost) ou Blog famoso. Para o decrescimento pode-se pensar na ocorrência de algum fato de grande destaque na mídia, surgimento de algum `meme <https://pt.wikipedia.org/wiki/Meme_(Internet)>`_, evento negativo associado à empresa, dentre outros.
+   * Explore o fato de ter-se aqui duas representações: para qual representação o aluno olhou, em cada um dos itens? Conclua apontando para o fato de que, muitas vezes, uma representação é mais “esclarecedora” que outra.
+
+Uma empresa resolve lançar uma ação promocional na internet usando uma `hashtag <https://pt.wikipedia.org/wiki/Hashtag>`_. Um mês após o lançamento, o presidente dessa empresa resolve analisar o impacto da ação na rede. Para isso ele pede a um de seus funcionários que prepare um relatório sobre o número de vezes que a *hashtag* foi mencionada nas redes sociais em cada dia durante aquele mês. O funcionário resolveu apresentar os dados das seguintes duas formas:
+
+.. table::
+   :widths: 1 3 1 3
+   :column-alignment: center center center center
+
+   +-----+------------+-----+------------+
+   | Dia | Quantidade | Dia | Quantidade |
+   +=====+============+=====+============+
+   |  1  |     137    |  16 |     1721   |
+   +-----+------------+-----+------------+
+   |  2  |     152    |  17 |     1456   |
+   +-----+------------+-----+------------+
+   |  3  |     194    |  18 |     684    |
+   +-----+------------+-----+------------+
+   |  4  |     231    |  19 |     512    |
+   +-----+------------+-----+------------+
+   |  5  |     278    |  20 |     483    |
+   +-----+------------+-----+------------+
+   |  6  |     282    |  21 |     521    |
+   +-----+------------+-----+------------+
+   |  7  |     276    |  22 |     479    |
+   +-----+------------+-----+------------+
+   |  8  |     767    |  23 |     356    |
+   +-----+------------+-----+------------+
+   |  9  |     917    |  24 |     327    |
+   +-----+------------+-----+------------+
+   |  10 |     1048   |  25 |     398    |
+   +-----+------------+-----+------------+
+   |  11 |     1337   |  26 |     1120   |
+   +-----+------------+-----+------------+
+   |  12 |     1881   |  27 |     1591   |
+   +-----+------------+-----+------------+
+   |  13 |     1779   |  28 |     1476   |
+   +-----+------------+-----+------------+
+   |  14 |     1692   |  29 |     1475   |
+   +-----+------------+-----+------------+
+   |  15 |     1703   |  30 |     1419   |
+   +-----+------------+-----+------------+
+
+ 
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[help lines,xstep=.2,ystep=.2, lightgray] (-.6,-.4) grid (7,4.5);
+   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (7,4.5);
+   \draw[thick,->](-.6,0)--(7.1,0);
+   \draw[thick,->](0,-.4)--(0,4.5);
+   \foreach \x in {5, 10, ..., 30}
+   \draw(.2*\x,-.3)node{\x};
+   \foreach \y in {500, 1000, 1500, 2000}
+   \draw(-.5, .002*\y)node{\y};
+   \node [ponto] at (.2,.3){};
+   \node [ponto] at (.4,.35){};\node [ponto] at (.6,.4){};\node [ponto] at (.8,.44){};   \node [ponto] at (1,.57){};\node [ponto] at (1.2,.56){};\node [ponto] at (1.4,.55){};\node [ponto] at (1.6,1.48){};\node [ponto] at (1.8,1.81){};\node [ponto] at (2,2.1){};\node [ponto] at (2.2,2.7){};\node [ponto] at (2.4,3.76){};\node [ponto] at (2.6,3.58){};\node [ponto] at (2.8,3.38){};\node [ponto] at (3,3.42){};\node [ponto] at (3.2,3.44){};\node [ponto] at (3.4,2.9){};\node [ponto] at (3.6,1.36){};\node [ponto] at (3.8,1.06){};\node [ponto] at (4,.96){};\node [ponto] at (4.2,1.06){};\node [ponto] at (4.4,.96){};\node [ponto] at (4.6,.7){};\node [ponto] at (4.8,.62){};\node [ponto] at (5.,.8){};\node [ponto] at (5.2,2.21){};\node [ponto] at (5.4,3.16){};\node [ponto] at (5.6,2.96){};;  \node [ponto] at (5.8,2.96){};;\node [ponto] at (6,2.86){};
+   
+
+ 
+ 
+#. Quantas vezes a *hashtag* foi mencionada mais de 1500 vezes em um dia?
+#. Em que dia a *hashtag* foi mais citada?
+#. Identifique todos os períodos em que houve crescimento no número de citações.
+#. Faça o mesmo para o decrescimento.
+#. Escreva um parágrafo explicando o comportamento global do gráfico, apontando possíveis causas para as variações observadas.
+
+
+.. admonition:: Resposta 
+
+   #. `6` vezes.
+   #. No décimo segundo dia.
+   #. Do segundo ao sexto dia, do sétimo ao décimo segundo dia, do décimo quarto ao décimo sexto dia, entre o vigésimo e vigésimo primeiro dia e entre o vigésimo quarto e vigésimo sétimo dia.
+   #. Do primeiro para o segundo dia, do sexto para o sétimo dia, do décimo segundo ao décimo quarto dia, do décimo sexto ao vigésimo dia e entre o vigésimo primeiro e vigésimo quarto dia.
+   #. Resposta variada.
+
+Uma função, essencialmente, relaciona duas ou mais grandezas ou variáveis, de forma que são obtidos pares `(x,y)`, em que `x` pertence ao domínio da função e `y=f(x)`. Perceba que a ordem em que os termos que compõem o par são apresentados é importante. Em matemática, chamamos esse tipo de objeto de *par ordenado*, eles são objetos fundamentais para a compreensão do gráfico de uma função.
+
+No caso de funções reais de variável real, isto é, cujos domínio e contradomínio são o conjunto dos números reais (ou subconjuntos dele) tanto `x` como `y` serão números reais.
+
+A representação geométrica mais comum para esses pontos, e que você provavelmente já conhece, é no :index:`plano cartesiano <plano cartesiano>`. Essa representação tem como base duas retas numéricas perpendiculares que se intersectam em suas origens conforme a figura abaixo.
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=3pt, inner sep=0, draw=black, fill=black, shift only]
+   \draw[lightgray](-4.5,-4.5)grid[xstep=.5,ystep=.5,line width =1pt](4.5,4.5);
+   \draw[->,thick](-4.5,0)--(4.5,0) node[right]{$x$};
+   \draw[->,thick](0,-4.5)--(0,4.5)node[above]{$y$};
+   \draw[dashed](-2,0)--(-2,2)--(0,2);
+   \node[ponto] at (-2,2){};
+   \node[above] at (-2,2){$(a,b)$};
+   \node[below] at (-2,0){$a$};
+   \node[right] at (0,2){$b$};
+   
+
+As retas que compõem um sistema cartesiano são chamadas de :index:`eixos <eixos coordenados>` do plano cartesiano. O eixo em que são registradas as primeiras coordenadas do par é chamado de :index:`eixo das abscissas <eixo das abscissas>`. O outro eixo, em que são registradas as segundas coordenadas do par é chamado de :index:`eixo das ordenadas <eixo das ordenadas>`. 
+
+Já vimos alguns exemplos de funções em atividades anteriores, vamos explorá-los um pouco mais.
+
+.. _ativ-funcoes-do-mapa-para-grafico:
+
+Atividade: do mapa para o gráfico
+---------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Estabelecer representação gráfica para pares ordenados com coordenada não numérica.
+   * Estender o domínio da função para o conjuntos dos números reais positivos, a partir de uma tabela.
+   * Reconhecer diferentes representações gráficas para uma mesma função.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * No item (a) espera-se que o estudante indique um conjunto de pares ordenados da forma: `\{(13,` Verde `),(15,` Laranja `), ...\}`.
+   * É natural que a primeira representação gráfica dos estudantes seja em um plano cartesiano, com as cores indicadas no eixo vertical. Essa é a resposta esperada para o item b). No entanto, no último item, espera-se que sejam exploradas outras formas de representação, usando ou não eixos cartesianos. Uma representação possível é a partir de um retângulo colorido como a escala apresentada no item (a) da :ref:`ativ-funcoes-colorindo-o-mapa`, em que se indique os tempos em que ocorre a mudança de cor, veja imagem na resposta da atividade.
+   * Estimule a criatividade nas representações.
+   * Caso algum estudante resolva simplesmente inverter os eixos, colocando as cores no eixo horizontal (como domínio), chame a atenção para o fato de que a relação inversa não é função.
+   * No item (c) há várias respostas possíveis. Para que a resposta esteja correta, é necessário que todo o intervalo está coberto, ou seja, o domínio considerado é `[0,23]`. Além disso, não deve haver interseção entre os subintervalos.
+   
+#. A partir das colunas *Tempo de travessia* e *Cor* da :ref:`ativ-funcoes-colorindo-o-mapa`, escreva o conjunto de pares ordenados da forma (tempo, cor) respeitando o critério que você escolheu para a determinação das cores.
+#. Represente graficamente este conjunto de pares ordenados.
+#. Para colorir as vias de todo o mapa, precisamos distribuir as cores para outros valores de tempo. Como você faria a distribuição para o intervalo de `0` a `25` minutos considerando um trecho qualquer de `13` km (a mesma extensão da ponte)?
+#. Encontre outra maneira de representar graficamente a associação entre os tempos e as cores.
+
+.. admonition:: Resposta
+
+   #. Uma possibilidade é `\{`(13, verde), (14, verde), (15, laranja), (16, laranja), (18, vermelha), (23, vinho) `\}`.
+   #. Três possíveis representações são:
+   
+      .. tikz::
+      
+        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
+        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+        \draw(.5*\x, -.1)--(.5*\x,0);
+        \draw(.5,-.3) node[scale=.7]{13};
+        \draw(1,-.3) node[scale=.7]{14};
+        \draw(1.5,-.3) node[scale=.7]{15};
+        \draw(2,-.3) node[scale=.7]{16};
+        \draw(3,-.3) node[scale=.7]{18};
+        \draw(5.5,-.3) node[scale=.7]{23};
+        \draw(-.5,1)node[scale=.7]{verde};
+        \draw(-.6,2)node[scale=.7]{laranja};
+        \draw(-.65,3)node[scale=.7]{vermelho};
+        \draw(-.5,4)node[scale=.7]{vinho};
+        \draw[dashed](0,1)--(.5,1)--(.5,0);
+        \draw[dashed](0,1)--(1,1)--(1,0);
+        \draw[dashed](0,2)--(1.5,2)--(1.5,0);
+        \draw[dashed](0,2)--(2,2)--(2,0);
+        \draw[dashed](0,3)--(3,3)--(3,0);
+        \draw[dashed](0,4)--(5.5,4)--(5.5,0);
+        \draw[fill](.5,1)circle(1pt);
+        \draw[fill](1,1)circle(1pt);
+        \draw[fill](1.5,2)circle(1pt);
+        \draw[fill](2,2)circle(1pt);
+        \draw[fill](3,3)circle(1pt);
+        \draw[fill](5.5,4)circle(1pt);
+        \begin{scope}[yshift=-5.5cm]
+        \draw[->](0,4.5) node[left, scale=.7]{CORES}--(0,0)--(6,0) node[below right, scale=.7]{TEMPO (min)};
+        \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+        \draw(.5*\x, -.1)--(.5*\x,0);
+        \draw(.25,-.3) node[scale=.7]{13};
+        \draw(.75,-.3) node[scale=.7]{14};
+        \draw(1.25,-.3) node[scale=.7]{15};
+        \draw(1.75,-.3) node[scale=.7]{16};
+        \draw(2.75,-.3) node[scale=.7]{18};
+        \draw(5.25,-.3) node[scale=.7]{23};
+        \draw(-.5,0.5)node[scale=.7]{verde};
+        \draw(-.6,1.5)node[scale=.7]{laranja};
+        \draw(-.65,2.5)node[scale=.7]{vermelho};
+        \draw(-.5,3.5)node[scale=.7]{vinho};
+        \draw[dashed,fill, color=green](0,0) rectangle (.5,1);
+        \draw[black,dashed,fill, color=green](.5,0) rectangle (1,1);
+        \draw[dashed,fill, color=orange](1,1) rectangle (1.5,2);
+        \draw[black,dashed,fill, color=orange](1.5,1) rectangle (2,2);
+        \draw[black,dashed,fill, color=red](2.5,2) rectangle (3,3);
+        \draw[black,dashed,fill, color=violet](5,3) rectangle (5.5,4);
+        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (-.1,-.1) grid (5.5,4);
+        \begin{scope}[yshift=-2.5cm]
+        \draw[dashed,fill, color=green](0,0) rectangle (1,1);
+        \draw[dashed,fill, color=orange](1,0) rectangle (1.5,1);
+        \draw[dashed,fill, color=red](2.5,0) rectangle (3,1);
+        \draw[black,dashed,fill, color=violet](5,0) rectangle (5.5,1);
+        \draw (.6,1.5)node[scale=.7, rotate=45]  {verde};
+        \draw (.25,.5)node[scale=.7]  {13};
+        \draw (.75,.5)node[scale=.7]  {14};
+        \draw(1.25,.5) node[scale=.7]{15};
+        \draw(2.75,.5) node[scale=.7]{18};
+        \draw[white](5.25,.5) node[scale=.7]{23};
+        \draw (1.6,1.5)node[scale=.7, rotate=45]  {Laranja};
+        \draw (3.1,1.5)node[scale=.7, rotate=45]  {Vermelho};
+        \draw (5.5,1.5)node[scale=.7, rotate=45]  {Vinho};
+        \draw [color=black,dashed, xstep=.5cm,ystep=1cm] (0,0) grid (5.5,1);
+        \end{scope}\end{scope}
+  
+
+   
+   #. Uma possibilidade de resposta é: verde para `t \in [0,15[`, laranja para `t \in[15, 18[`, vermelho para `t \in[18,23[` e vinho para `t \in[23,25]`.
+   #. Ver item b).
+
+.. _ativ-funcoes-numeros-triangulares:
+
+Atividade: números triangulares no plano
+----------------------------------------
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Representar graficamente.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Destaque para os seus alunos que, nesse caso não cabe ligar os pontos. As abscissas indicam a ordem sequencial dos números triangulares, portanto resumem-se apenas a números naturais.
+   * Observe que os pontos do gráfico não são colineares.
+
+Represente, no plano cartesiano, o conjunto de pontos que correspondem aos pares ordenados `\{(n,T_n)\ ;\ n\in\{1,2,...,8\}\}`, em que `T_n` é o `n`-ésimo número triangular.
+
+
+.. admonition:: Resposta 
+
+   .. tikz::
+   
+      \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+      \draw[help lines,xstep=.25,ystep=.25, lightgray] (0,0) grid (4,4);
+      \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (4,4);
+      \draw[thick,->](0,0)--(4.2,0);
+      \draw[thick,->](0,0)--(0,4.2);
+      \foreach \x in {2, 4, 6, 8}
+      \draw(.5*\x,-.2)node{\x};
+      \foreach \x in{1, 2, 3, 4, 5, 6, 7, 8}
+      \node[ponto] at(.5*\x, {.05*\x*(1+\x)}){};
+      \foreach \y in{10, 20, 30, 40}
+      \draw(0,.1*\y) node[left]{\y};
+
+
+.. _ativ-funcoes-jornada-ate-a-escola:
+
+Atividade: jornada até a escola
+------------------------------
+
+.. admonition:: Para o professor
+
+   **OBJETIVOS ESPECÍFICOS**
+   
+   * Representar pontos no plano cartesiano a partir de uma situação real.
+   * Estabelecer uma função a partir da seleção de pontos em um sistema cartesiano, associando  a univocidade à identificação de apenas um ponto para cada valor da abscissa.
+   
+   **OBSERVAÇÕES E RECOMENDAÇÕES**
+   
+   * Durante a discussão, chame a atenção para a necessidade de certificar-se da associação de um único valor de ordenada para cada valor de abscissa.
+   * Discuta com os estudantes sobre o significado dos segmentos de reta que conectam os pontos.
+   
+  
+Leonardo mora a `6` km da escola onde estuda e utiliza o transporte escolar, que o busca na porta de sua casa. Em um certo dia, o percurso de Leonardo até sua escola foi assim: Ele estava na porta de casa às `7` horas, como de costume, mas o transporte escolar atrasou, passando em sua casa somente às `7h05min`. Leonardo entrou na van e sentou no penúltimo lugar vago. Ainda faltava Marina. “Ela mora a `3` km da minha casa!”, lembrou Leonardo. Às `7h10min` em ponto, o transporte escolar chegou à casa de Marina, que já estava pronta aguardando para embarcar. Para tentar compensar o atraso, o motorista resolveu tomar um atalho, mas a estratégia não funcionou. Às `7h15min` precisou ficar parado por `5` minutos em frente a uma cancela aguardando um trem de carga passar. Finalmente, às `7h25min` chegaram à escola, `5` minutos antes do sinal tocar.  
+
+No plano cartesiano a seguir, o eixo horizontal indica o tempo em minutos e o eixo vertical a distância percorrida em quilômetros. Os pontos marcados correspondem às distâncias percorridas por diversos estudantes da escola a cada `5` minutos no período das `7h` às `7h30min` da mesma manhã descrita na situação acima.
+
+#. Conecte os pontos que correspondem à jornada de Leonardo, desde a porta da sua casa até a chegada à escola, no dia descrito acima.
+#. Faça uma estimativa da distância a que Leonardo estará de sua casa às `7h07min`.
+#. Escolha um conjunto de pontos que possa representar a jornada de um outro estudante da sua casa à escola e descreva essa jornada.
+
+
+.. _fig-pontos-jornada:
+
+.. tikz::
+
+   \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+   \begin{scope}[yscale=.75]
+   \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
+   \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
+   \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
+   \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
+   \foreach \x in {5, 10, ..., 30}
+   \draw(.2*\x,-.3)node{\x};
+   \foreach \y in {1, 2, 3, 4, 5, 6}
+   \draw(-.3, \y)node{\y};
+   \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){}; \node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
+   \end{scope}
+
+
+
+.. admonition:: Resposta 
+
+   #. A jornada de Leonardo é descrita pelo gráfico abaixo.
+   
+      .. tikz::
+
+         \tikzstyle{ponto}=[circle, minimum size=2pt, inner sep=0, draw=black, fill=black, shift only]
+         \begin{scope}[yscale=.75]
+         \draw[help lines,xstep=.2,ystep=.25, lightgray] (0,0) grid (6.5,6.2);
+         \draw[help lines, black, xstep=1, ystep=1] (0,0) grid (6.5,6.2);
+         \draw[thick,->](-.6,0)--(6.5,0) node[below left, yshift =-.2cm]{\tiny tempo(minutos)};
+         \draw[thick,->](0,-.4)--(0,6.2) node[rotate=90,left,yshift =.7cm]{\tiny distância percorrida (km)};
+         \foreach \x in {5, 10, ..., 30}
+         \draw(.2*\x,-.3)node{\x};
+         \foreach \y in {1, 2, 3, 4, 5, 6}
+         \draw(-.3, \y)node{\y};
+         \node[ponto] at(0,0){};\node[ponto] at(0,1){};\node[ponto] at(1,.2){};\node[ponto] at(1,.51){};\node[ponto] at(1,1.2){};\node[ponto] at(1,2){};\node[ponto] at(2,0){};\node[ponto] at(2,0.9){};\node[ponto] at(2,1.4){};\node[ponto] at(2,1.6){};\node[ponto] at(2,3){};\node[ponto] at(3,1.2){};\node[ponto] at(3,2.5){};\node[ponto] at(3,1.4){};\node[ponto] at(3,2){};\node[ponto] at(3,4){};\node[ponto] at(4,1.6){};\node[ponto] at(4,2.7){};\node[ponto] at(4,2.9){};\node[ponto] at(4,3.2){};\node[ponto] at(4,4){};\node[ponto] at(5,2){};\node[ponto] at(5,3.2){};\node[ponto] at(5,4){};\node[ponto] at(5,5){};\node[ponto] at(5,6){};\node[ponto] at(6,2.5){};\node[ponto] at(6,4){};\node[ponto] at(6,5){};\node[ponto] at(6,5.8){};\node[ponto] at(6,6){};
+         \draw[thick, red](0,0)--(1,0)--(2,3)--(3,4)--(4,4)--(5,6)--(6,6);
+         \end{scope}
+
+
+   #. Aproximadamente `1,25` km.
+   #. Resposta pessoal.
+
+
+

@@ -1,603 +1,134 @@
-**************************************************************
-Explorando: Visualizando estruturas de variáveis quantitativas
-**************************************************************
-  
-  
-.. _ativ-construcao-histograma:
 
-Atividade: Construção do histograma
------------------------------------
+**********
+Praticando
+**********
 
+  
+.. _ativ-1-pratica-atividade-fisica-na-turma:
+
+Atividade: prática de atividade física na turma
+------------------------------------------
+
+
+.. admonition:: Para o professor
+
+  **Objetivos específicos** Conduzir uma coleta de dados sobre a turma envolvendo as informações do suplemento “Prática de Esporte e Atividade Física” para comparar os resultados dessa "amostra" com os da PNAD/2015.
+   
+  **Observações e sugestões** 
+   
+  * Preparar uma tabela a ser preenchida pela turma com as informações: sexo, idade, prática ou não de atividade física em seu tempo livre, e a modalidade, de maneira a viabilizar a comparação dos dados obtidos com os resultados da PNAD/2015. A tabela poderá conter outras variáveis se forem julgadas de interesse pela turma como por exemplo, local da prática, duração da prática entre outras. Mas, para efeito de comparação com os infográficos, sexo e idade serão as variáveis necessárias nesse levantamento. Comente com os alunos que essa será uma amostra de conveniência, pois o interesse é estudar o perfil da turma quanto à prática de atividades físicas e por isso, as respostas da turma podem não ser similares às da pesquisa.
+   
+  * Com base nas respostas obtidas, resumir a informação em tabelas de frequências, contar quantas respostas foram sim, calcular a porcentagem da turma que pratica atividade física e comparar com o resultado geral das pessoas de 15 anos ou mais, o percentual correspondente a essa faixa etária e o percentual correspondente a esse grau de instrução. Construir uma tabela de frequências com as modalidades esportivas incluindo as categorias apresentadas no infográfico do IBGE. Construir gráficos para representar as distribuições de frequências das variáveis investigadas nessa pesquisa. Construir gráficos de barras múltiplas, isto é, gráficos de barras separados por grupos diferentes, como por exemplo, sexo.
+
+Deseja-se comparar os hábitos de atividade física em tempo livre dos alunos da turma com os dados obtidos da PNAD/2015. Para isso preencha o formulário de dados fornecido pelo professor. Construa tabelas e gráficos resumindo a informação obtida. 
+
+
+.. _ativ-classificacao-de-variaveis:
+
+Atividade: classificação de variáveis
+-------------------------------------
 
 .. admonition:: Para o professor
 
    **Objetivos específicos** 
    
-   Identificar, na contrução de um gráfico que represente a distribuição de frequências, a necessidade de agrupar em intervalos de classe os valores observados de uma variável quantitativa contínua.
+   * Diferenciar variável qualitativa e variável quantitativa. 
+   * Identificar variáveis qualitativas binárias.
+
+Suponha que cada uma das variáveis a seguir foi observada para todos os alunos de sua turma. Indique se cada uma delas é uma variável qualitativa ou quantitativa. Se for uma variável qualitativa, indique se ela é binária (apenas duas respostas possíveis) ou não. 
+
+
+#. altura (em metros)
+#. peso (em quilos)
+#. razão do peso sobre o quadrado da medida da altura
+#. tempo de sono na noite anterior
+#. se foi dormir na noite anterior antes ou depois da meia-noite
+#. mês de nascimento
+#. número de irmãos
+#. nota obtida na última avaliação de Matemática
+#. se tirou nota maior ou igual a 6,0 ou menor do que 6,0 na última avaliação de Matemática
+#. distância da casa à escola
+#. se o indivíduo possui cartão de crédito ou não
+#. modo de locomoção para a escola
+
+.. admonition:: Resposta 
+
+   (a) quantitativa, (b) quantitativa, (c) quantitativa (d) quantitativa, (e) qualitativa binária, (f) qualitativa (g) quantitativa (h) quantitativa (i) qualitativa binária (j) quantitativa (k) qualitativa binária (l) qualitativa.
+
+
+.. _ativ-3-construcao-de-grafico-variavel-qualitativa:
+
+Atividade: construção de gráficos para variáveis qualitativas
+-------------------------------------------------------------
+
+
+.. admonition:: Para o professor
+
+   **Objetivos específicos** Construir gráficos de distribuições de frequências para variáveis qualitativas.
    
-    
-   **Observações e sugestões** 
+   **Observações e sugestões** Embora os gráficos solicitados nesta atividade sejam simples, recomenda-se sugerir aos alunos usar algum recurso tecnológico para a construção dos mesmos, tais como, uma planilha ou o GeoGebra.
    
-   A construção do histograma será dirigida nessa atividade, mas  recomenda-se fortemente o uso de recursos tecnológicos, como  o GeoGebra, para esse tipo de construção. 
-    
-   Incluir link do arquivo desses dados em formato GeoGebra. Em alguns aplicativos, e é o caso do GeoGebra, é necessário substituir a vírgula como separador decimal do padrão brasileiro por ponto.
-   
-.. _fig-radiotelescopios:
 
-.. figure:: _resources/USA.NM.VeryLargeArray.03.jpg
-   :width: 300pt
-   :align: center
-
-   Arranjo de radiotelescópios - Very Large Array (VLA), New Mexico, EUA. `Foto: Hajor CC-by-sa <https://commons.wikimedia.org/wiki/File:USA.NM.VeryLargeArray.03.jpg>`_
-
-Um arranjo de oito radiotelescópios (A, B, C, D, E, F, G e H) como  ilustrado na :ref:`Figura <fig-radiotelescopios>` detectou sinais cujos oito registros de tempo para cada radiotelescópio se encontram na tabela a seguir. 
-
-.. qual a unidade de observação?
-
-+------+------+------+------+------+------+------+------+
-|  A   | B    | C    | D    | E    | F    | G    | H    |
-+======+======+======+======+======+======+======+======+
-| 3,03 | 4,37 | 5,04 | 5,73 | 4,03 | 5,37 | 6,04 | 6,74 | 
-+------+------+------+------+------+------+------+------+
-| 3,38 | 4,46 | 5,11 | 5,84 | 4,38 | 5,46 | 6,11 | 6,84 | 
-+------+------+------+------+------+------+------+------+
-| 3,60 | 4,55 | 5,19 | 5,95 | 4,60 | 5,55 | 6,19 | 6,96 | 
-+------+------+------+------+------+------+------+------+
-| 3,78 | 4,63 | 5,29 | 6,08 | 4,78 | 5,64 | 6,29 | 7,08 | 
-+------+------+------+------+------+------+------+------+
-| 3,92 | 4,71 | 5,36 | 6,23 | 4,92 | 5,72 | 6,36 | 7,23 | 
-+------+------+------+------+------+------+------+------+
-| 4,04 | 4,79 | 5,45 | 6,41 | 5,04 | 5,79 | 6,45 | 7,40 | 
-+------+------+------+------+------+------+------+------+
-| 4,16 | 4,87 | 5,54 | 6,62 | 5,16 | 5,87 | 6,54 | 7,63 | 
-+------+------+------+------+------+------+------+------+
-| 4,27 | 4,95 | 5,64 | 6,97 | 5,26 | 5,95 | 6,64 | 7,97 | 
-+------+------+------+------+------+------+------+------+
+Considerando o :ref:`infográfico 4 <fig-infografico-pnad-4>`, transforme o gráfico de setores em gráfico de retângulos e os gráficos de retângulos em gráficos de setores. 
 
 
-.. admonition:: Para refletir
+.. admonition:: Resposta 
 
-   * Como construir uma tabela de frequências desses dados uma vez que os registros de tempo são todos distintos?
-
-   * Como você faria para visualizar o comportamento de uma variável com estas características?
-
-A natureza quantitativa de uma variável contínua pode muitas vezes levar a resultados que praticamente não se repetem. Eles podem ser todos diferentes, como é observado no exemplo. Com o objetivo de identificar alguma estrutura no comportamento deste tipo de variável é necessário agrupar os valores em intervalos de classe, o que permite analisar a sua distribuição de frequências.
-
-`a)` Complete a tabela a seguir que utiliza de intervalos de amplitude 0,5 começando em 3,0. Observe que cada intervalo na tabela é fechado à esquerda e aberto à direita, isto quer dizer que, o limite inferior está incluso e o limite superior não está incluso.
-
-+---------------------+-----------------------------+
-| Intervalo de classe | Número de observações       |
-+=====================+=============================+
-| [ 3,0 ; 3,5 [       |                             |
-+---------------------+-----------------------------+
-| [ 3,5 ; 4,0 [       |                             |
-+---------------------+-----------------------------+
-| [ 4,0 ; 4,5 [       |                             |
-+---------------------+-----------------------------+
-| [ 4,5 ; 5,0 [       |                             |
-+---------------------+-----------------------------+
-| [ 5,0 ; 5,5 [       |                             |
-+---------------------+-----------------------------+
-| [ 5,5 ; 6,0 [       |                             |
-+---------------------+-----------------------------+
-| [ 6,0 ; 6,5 [       |                             |
-+---------------------+-----------------------------+
-| [ 6,5 ; 7,0 [       |                             |
-+---------------------+-----------------------------+
-| [ 7,0 ; 7,5 [       |                             |
-+---------------------+-----------------------------+
-| [ 7,5 ; 8,0 [       |                             |
-+---------------------+-----------------------------+
-Para visualizar o comportamento desses dados, iremos construir um gráfico chamado :index:`histograma<histograma>`, composto por retângulos adjacentes cujas alturas representam a frequência de observações que ocorrem no intervalo correspondente. A base de cada retângulo corresponde aos limites do intervalo definido no agrupamento dos dados.
-
-`b)` Complete a figura a seguir com os demais retângulos do :ref:`histograma<fig-histograma>`. 
-
-   .. _fig-histograma:
-
-   .. figure:: _resources/Histograma.png
-      :width: 300pt
+   .. _fig-trocando-setor-e-barra:
+ 
+   .. figure:: _resources/praticando1.png
+      :width: 600px
       :align: center
+
+   Infográfico 4 transformado
    
-      Histograma dos dados coletados pela grade de radiotelescópios
- 
-`c)` Calcule a média dos dados da tabela e localize-a no gráfico, sabendo que a soma dos 64 registros de tempo é 351,95. O que você pode observar quanto à localização da média no histograma construído?
+.. _ativ-4-analise-de-grafico:
 
-
-.. admonition:: Resposta
-
- `a)`
- 
- +---------------------+-----------------------------+
- | Intervalo de classe | Número de observações       |
- +=====================+=============================+
- | [ 3,0 ; 3,5 [       |               2             |
- +---------------------+-----------------------------+
- | [ 3,5 ; 4,0 [       |               3             |
- +---------------------+-----------------------------+
- | [ 4,0 ; 4,5 [       |               7             |
- +---------------------+-----------------------------+
- | [ 4,5 ; 5,0 [       |               9             |
- +---------------------+-----------------------------+
- | [ 5,0 ; 5,5 [       |              11             |
- +---------------------+-----------------------------+
- | [ 5,5 ; 6,0 [       |              11             |
- +---------------------+-----------------------------+
- | [ 6,0 ; 6,5 [       |               9             |
- +---------------------+-----------------------------+
- | [ 6,5 ; 7,0 [       |               7             |
- +---------------------+-----------------------------+
- | [ 7,0 ; 7,5 [       |               3             |
- +---------------------+-----------------------------+
- | [ 7,5 ; 8,0 [       |                2            |
- +---------------------+-----------------------------+
- 
- `b)` Figura 4.3 e `c)` O valor da média é aproximadamente 5,5. O histograma apresenta uma distribuição de frequências simétrica e a posição da média está no eixo de simetria do histograma.
- 
-.. _fig-histograma-resposta:
- 
-.. figure:: _resources/Histograma-resposta_1.png
-   :width: 300pt
-   :align: center
-
-   Histograma dos registros de tempo
-   
- 
-   
-   
-.. _ativ-medicao-temperatura-serie-temporal:
-
-Atividade: Medição da temperatura ao longo do tempo
----------------------------------------------------
+Atividade: análise de gráfico
+-----------------------------
 
 
 .. admonition:: Para o professor
 
- **Objetivos específicos** 
- 
- * Definir série temporal a partir de um conjunto de observações sobre uma variável quantitativa contínua variando no tempo. 
- 
- * Trabalhar com  gráficos de linha para ilustrar a evolução dos valores da variável ao longo do tempo. 
+   **Objetivos especícificos** Mostrar que podem existir diversas formas de usar barras para representar algum tipo de dado, mas que nem todos os gráficos que usam barras são gráficos de barras no sentido da representação de uma distribuição de frequências. 
    
- **Observações e sugestões** 
+   **Observações e sugestões** O gráfico desse exemplo é "um gráfico de barras", mas as barras representam o valor da inflação da alimentação acumulado nos últimos 12 meses em função do tempo: de agosto de 2016 até agosto de 2017. Na seção "Explorando 2", veremos que, para esse tipo de informação - valores de uma variável quantitativa ao longo do tempo -, é mais comum usar um gráfico de linhas unindo por segmentos os pontos consecutivos dados (tempo,valor da variável).
+
+Observe o gráfico a seguir publicado em um jornal. 
+
+#. Como você classificaria esse gráfico? 
+#. Qual é a informação representada pelo comprimento da barra nesse gráfico?   
+#. Que tipo(s) de variável(is) ele está representando?
+#. Construa um gráfico diferente para representar a mesma informação, marcando num plano Cartesiano os pontos (x,y) em que x corresponde ao tempo e y corresponde à inflação acumulada no domicílio, unindo os pontos consecutivos por segmentos. É possível perceber a partir desse gráfico algum tipo de comportamento no período observado?
+
+
  
- Para a construção do gráfico de linha será fornecida uma malha quadriculada para o preenchimento dos pontos, recomenda-se também uso de planilhas de cálculo para essa construção. Veja nesse `link <https://docs.google.com/spreadsheets/d/1B2bbuggIVjdfG6NivzDYmsmzovkt0FuFUUhSVFaAyDc/edit#gid=1474980695>`_, uma sugestão para realizar esta atividade.  
- 
- Respostas possíveis na reflexão proposta são: índices de inflação, preços de diversos bens,  índices da bolsa de valores, a população total em um território, a incidência de alguma enfermidade, a quantidade de vendas de um produto. É importante usar exemplos de dados que tenham aparecido recentemente na mídia ou que tenham relevância local.  
- 
- Na discussão sobre sazonalidade, pedir aos alunos para trazer notícias de jornais ou revistas que contenham séries temporais. Mostrar que existem várias medições que são comparadas com as do ano anterior, por exemplo, inflação, crescimento do PIB, taxas de desemprego por trimestre, entre outras.
+.. _linhaversusbarra:
 
- 
- 
-   
-Você deve ter notado que a previsão do tempo é feita sempre a partir de dois números, isto ocorre porque a temperatura varia de forma contínua ao longo do dia e o que está sendo previsto são as temperaturas máxima e mínima. Por exemplo: 28° / 19°, significa que a previsão da temperatura máxima durante o dia será aproximadamente de 28°C e, a mínima, 19°C.
-
-Diversas variáveis meteorológicas (no sentido estatístico) são registradas nas estações meteorológicas: temperatura, precipitação (quantidade de chuva), umidade do ar, entre outras.
-
-No Brasil, as estações estão a cargo do `Instituto Nacional de Meteorologia (INMET)<http://www.inmet.gov.br/>`_ e as informações são armazenadas em bases de dados. Para poder tratar essas informações, frequentemente elas são resumidas por períodos de tempo de diferentes magnitudes: dias, semanas, meses ou anos.
-
-Dados coletados ao longo do tempo (como a informação meteorológica) são conhecidos como séries de dados temporais ou, apenas, :index:`séries temporais<séries temporais>`, já que correspondem a variáveis que mudam continuamente ao longo do tempo e a informação só é útil se sabemos o momento em que foram realizadas as medições.
-
-.. admonition:: Para refletir
-
-   Forneça outros exemplos de séries temporais nas áreas de saúde, economia, finanças, educação, etc.
-
-
-
-A tabela a seguir fornece a média das temperaturas máximas para cada mês nos anos de 1991 a 2000 da cidade de Porto Alegre em graus centígrados (Fonte: `Banco de Dados Meteorológicos para Ensino e Pesquisa, BDMEP - INMET <http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep>`_)
-
-+-------------------------------------------------------------------------------------+
-| Temperatura Máxima Média mensal nos anos 1991-2000 na cidade de Porto Alegre        |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| Mes | 1991  | 1992  | 1993  | 1994  | 1995  | 1996  | 1997  | 1998  | 1999  | 2000  |
-+=====+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
-| 1   | 30,23 | 30,43 | 31,34 | 30,33 | 30,74 | 29,89 | 32,09 | 29,13 | 30,65 | 30,63 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 2   | 31,03 | 31,48 | 29,28 | 28,85 | 29,46 | 29,78 | 29,62 | 28,26 | 29,56 | 29,93 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 3   | 30,55 | 30,05 | 28,22 | 28,05 | 29,12 | 28,67 | 28,63 | 27,20 | 31,64 | 27,85 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 4   | 26,15 | 25,52 | 27,66 | 25,51 | 26,22 | 27,03 | 26,56 | 24,03 | 24,00 | 26,32 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 5   | 25,31 | 21,44 | 23,29 | 24,33 | 21,95 | 22,94 | 22,95 | 22,00 | 21,51 | 21,78 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 6   | 20,32 | 22,68 | 19,13 | 20,09 | 20,45 | 17,76 | 19,42 | 19,60 | 18,87 | 21,50 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 7   | 19,75 | 16,91 | 17,97 | 20,41 | 21,60 | 16,99 | 20,67 | 20,47 | 18,78 | 17,59 | 
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 8   | 21,81 | 20,50 | 21,90 | 21,28 | 21,55 | 22,59 | 23,06 | 19,77 | 21,94 | 20,85 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 9   | 23,99 | 22,14 | 20,83 | 25,21 | 22,62 | 21,40 | 22,32 | 21,22 | 22,65 | 22,25 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 10  | 26,17 | 26,16 | 26,40 | 24,60 | 24,17 | 25,34 | 23,27 | 25,19 | 23,07 | 24,02 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 11  | 26,93 | 27,16 | 28,07 | 26,53 | 28,93 | 28,40 | 26,51 | 28,24 | 26,36 | 26,87 |
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 12  | 30,60 | 29,95 | 29,73 | 32,05 | 30,44 | 29,87 | 30,28 | 28,91 | 29,08 | 29,51 | 
-+-----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-
-
-
-#. Escolha dois anos diferentes e localize os pontos da tabela na grade quadriculada usando o mês como abscissa (x) e a temperatura como ordenada (y). Utilize cores diferentes para a série de cada ano.
-
-#. Una os pontos correspondentes ao mesmo ano (mesma série) de meses consecutivos com um segmento e observe o resultado. Você percebe algum comportamento similar para a  temperatura em anos diferentes?
-
-#. Compare seu gráfico com o de colegas que escolheram outros anos (ou acrescente séries de outros anos ao seu gráfico). O que você percebe com relação à temperatura nos meses iniciais, intermediários e finais do ano?  A que se deve esse comportamento da temperatura?
-
-.. admonition:: Resposta
-
-`a)` e `b)` Percebe-se temperaturas mais altas nos meses iniciais e finais do ano e, mais baixas, no meio do ano.
-
-   .. _fig-linhas-temperatura
-   
-   .. figure:: _resources/linhas-temperatura.png
-     :width: 300pt
-     :align: center
-
-      Gráficos de linhas com a temperatura máxima média mensual da cidade de Porto Alegre
-
-`c)` Idem ao item b). Isso ocorre devido às estações do ano. No hemisfério sul temos temperaturas mais altas nos meses finais e iniciais do ano e temperaturas mais baixas no meio do ano.
-
-Os gráficos que você acabou de construir são chamados :index:`gráficos de linha<gráficos de linha>`. Esse tipo de gráfico é muito utilizado para variáveis quantitativas contínuas que dependem de uma outra variável quantitativa, neste caso o tempo. Quando a variável quantitativa é observada ao longo do tempo, o conjunto de dados resultante é chamado uma série temporal.
-
-
-.. admonition:: Observação 
-
-    Como você já deve ter observado, a temperatura em Porto Alegre é mais baixa nos meses correspondentes ao inverno e mais alta na primavera e no verão, o que se repete cada ano. Este fenômeno, que se observa nos ciclos do gráfico, é chamado de :index:`sazonalidade<sazonalidade>`. A origem deste conceito é exatamente o da sazonalidade que observamos na natureza com as estações ao longo do ano.
-
-.. glossary::
-
-   Sazonalidade
-     Variações periódicas que se observam em séries temporais e que devem sua presença a um fenômeno implícito que incide de forma direta nas medições da variável observada.
-   
-Considere novamente os dados de temperatura da atividade anterior. Se representarmos todos os dados da tabela num único gráfico com a escala temporal das abscissas ao longo dos dez anos, obtemos o seguinte gráfico:
-
-
-.. _fig-linhas-sazonalidade:
-
-.. figure:: _resources/linhas-sazonalidade.png
-   :width: 400px
+.. figure:: _resources/linhaversusbarra.png
+   :width: 600px
    :align: center
 
-   Efeito da sazonalidade no gŕafico de linhas da temperatura máxima média
+   Inflação da alimentação acumulada nos últimos 12 meses (Fonte: IBGE)
    
-
-
-.. _cap-organizando-as-ideias2:
-
-*********************
-Organizando as ideias
-*********************
-
-Dois tipos de gráficos para representar variáveis quantitativas contínuas foram apresentados: o histograma e o gráfico de linha.
-
-.. glossary::
-
-   Histograma
-    O histograma é uma representação gráfica da distribuição de frequências de uma variável quantitativa contínua agrupada em intervalos usando retângulos adjacentes. Cada retângulo no histograma corresponde a um intervalo considerado e a razão da área desse retângulo em relação à área total do histograma deve ser igual à frequência relativa de casos desse intervalo.
-    
-.. glossary::
- 
-   Gráfico de linha
-    O gráfico de linha é uma representação útil quando os dados são uma série temporal, ou seja, os dados são coletados ao longo do tempo. Esse gráfico é construído marcando-se no plano Cartesiano os pontos `(x,y)` em que abscissa `x` representa o tempo e, a ordenada `y`, a variável quantitativa. Os pontos consecutivos são unidos por segmentos.
-
-
-    
-      
-.. admonition:: Quantos intervalos de classe considerar no agrupamento dos dados?
-  
- Quando existe a necessidade de agrupar os dados em intervalos, uma questão que se coloca é: quantos intervalos usar para que se possa reconhecer estruturas de frequências nesse conjunto? Não existe uma única resposta para essa questão. No entanto, devemos evitar tanto usar um número reduzido de intervalos, quanto usar um número grande de intervalos. Por exemplo, se usarmos um único intervalo, o histograma seria representado por um único retângulo que nada informaria sobre o comportamento dos dados, conforme o gráfico a seguir.
-  
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histograma_2intervalos.png
-   :width: 200pt
-   :align: center
-
-   Histograma dos resgistros de tempo considerando apenas dois intervalos
-   
- Por outro lado, se o número de intervalos for igual ou superior ao número de observações, o histograma potencialmente teria apenas classes com uma única observação e o objetivo de visualizar estruturas dos dados em análise se perderia. A figura a seguir contruída a partir de 100 intervalos não revela a estrutura dos dados de registro de tempo, uma vez que cada classe contém no máximo duas observações.
-
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histograma_100intervalos.png
-   :width: 300pt
-   :align: center
-
-   Histograma dos resgistros de tempo considerando cem intervalos
-   
- Embora não exista uma resposta única sobre quantos intervalos considerar, alguns autores sugerem usar o número inteiro mais próximo da raiz quadrada do número de observações, outros sugerem usar de 5 a 15 intervalos de amplitudes iguais. No GeoGebra, por exemplo, a função que constrói histogramas permite trabalhar com 3 a 20 intervalos. A figura a seguir apresenta um histograma construído com `\sqrt{64}=8` intervalos.
-
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histograma_8intervalos.png
-   :width: 300pt
-   :align: center
-
-   Histograma dos resgistros de tempo considerando oito intervalos
- 
-Até aqui, consideramos intervalos de mesma amplitude e usamos, como a altura dos retângulos, a frequência absoluta ou relativa das observações no intervalo. Suponha a seguinte distribuição de frequências de um conjunto de 50 observações.
- 
-+---------------------+----------------------+--------------------+
-| Intervalo de classe | frequência absoluta  |frequência relativa |
-+=====================+======================+====================+
-| [ 1 ; 3 [           |   4                  |  0,08              | 
-+---------------------+----------------------+--------------------+
-| [ 3 ; 5 [           |     12               |  0,24              |
-+---------------------+----------------------+--------------------+
-| [ 5 ; 7 [           |    20                |  0,40              |
-+---------------------+----------------------+--------------------+
-| [ 7 ; 9 [           |    8                 |  0,16              |
-+---------------------+----------------------+--------------------+
-| [ 9; 11 [           |     6                |   0,12             |
-+---------------------+----------------------+--------------------+
-
-Observe que nessa tabela todos os intervalos têm amplitude 2. Veja o histograma construído para esses dados a seguir.
-
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/exemplo_histograma_areas_1.png
-   :width: 400pt
-   :align: center
-
-   Histograma na escala da frequência absoluta
-   
-Verifique que a razão da área de cada retângulo em relação à área total é igual à frequência relativa do intervalo correspondente.
-
-Porém, quando os intervalos apresentam amplitudes desiguais, usar a frequência não será mais apropriado.
-
-Suponha agora a seguinte distribuição de frequências de um conjunto de 50 observações.
- 
-+---------------------+----------------------+--------------------+------------------------+
-| Intervalo de classe | frequência absoluta  |frequência relativa | amplitude do intervalo |
-+=====================+======================+====================+========================+
-| [ 1 ; 3 [           |   4                  |  0,08              | 2                      |
-+---------------------+----------------------+--------------------+------------------------+
-| [ 3 ; 5 [           |    8                 |  0,16              | 2                      |
-+---------------------+----------------------+--------------------+------------------------+
-| [ 5 ; 8 [           |    18                |  0,36              | 3                      |
-+---------------------+----------------------+--------------------+------------------------+
-| [ 8 ; 12 [          |    12                |  0,24              | 4                      |
-+---------------------+----------------------+--------------------+------------------------+
-| [12; 16 [           |     8                |   0,16             | 4                      |
-+---------------------+----------------------+--------------------+------------------------+
-
-
-
-
-
-Nesse caso devemos usar a densidade de frequência absoluta ou relativa obtida pela razão entre frequência e amplitude do intervalo. 
-
-`\textsf{densidade de frequência absoluta}=\frac{\textsf{frequência absoluta do intervalo}}{\textsf{amplitude do intervalo}}`
-
-`\textsf{densidade de frequência relativa}=\frac{\textsf{frequência relativa do intervalo}}{\textsf{amplitude do intervalo}}`
-
-Veja a seguir uma construção equivocada do histograma desses dados, usando a frequência absoluta.
-
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/histograma_incorreto_2.png
-   :width: 400pt
-   :align: center
-
-   Histograma incorreto
-
-Observe que a razão da área do primeiro retângulo em relação à área total é dada por `\displaystyle{\frac{8}{158}}\approx  0,051`, porém a frequência relativa do primeiro intervalo é 0,08! A razão da área do último retângulo é `\displaystyle{\frac{4\cdot 8}{158}}\approx 0,20`, porém a frequência relativa desse intervalo é 0,16! Ou seja, esse histograma não representa corretamente a distribuição de frequências desses dados. Na tabela a seguir, foram calculadas as densidades de frequência absoluta.
-
-+---------------------+----------------------+------------------------+---------------------+
-| Intervalo de classe | frequência absoluta  | amplitude do intervalo |dens. freq. absoluta |
-+=====================+======================+========================+=====================+
-| [ 1 ; 3 [           |   4                  | 2                      |2                    |
-+---------------------+----------------------+------------------------+---------------------+
-| [ 3 ; 5 [           |    8                 | 2                      |4                    |
-+---------------------+----------------------+------------------------+---------------------+
-| [ 5 ; 8 [           |    18                | 3                      |6                    |
-+---------------------+----------------------+------------------------+---------------------+
-| [ 8 ; 12 [          |    12                | 4                      |3                    |
-+---------------------+----------------------+------------------------+---------------------+
-| [12; 16 [           |     8                | 4                      |2                    |
-+---------------------+----------------------+------------------------+---------------------+
-
-Veja a seguir a construção do histograma na escala da densidade de frequência absoluta e observe que agora ele representa corretamente a distribuição de frequências.
-
-
-.. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histograma_correto.png
-    :width: 400pt
-    :align: center
-
-    Histograma correto
-   
-Comparando as figuras 6.9 e 6.10, podemos perceber que a primeira distorce a estrutura da distribuição de frequências, atribuindo pesos maiores aos intervalos de maior amplitude e, menores, aos intervalos de menor amplitude.
-
-Em que situações há a necessidade de considerarmos intervalos de amplitudes desiguais? 
-   
-Normalmente, na primeira construção dos intervalos consideramos sempre intervalos de amplitudes iguais. Mas pode acontecer, nesse agrupamento, intervalos vazios ou intervalos com um número muito grande de observações. Quando essas situações ocorrem recomenda-se juntar dois intervalos consecutivos no primeiro caso ou subdividir o intervalo no segundo caso.
-     
-  
-.. admonition:: Gráfico de Barras versus Histograma
-
- O gráfico de barras não é um histograma, apesar de suas representações serem parecidas.  Os gráficos de barras são úteis para descrever a distribuição de frequências de uma variável qualitativa. Nesse gráfico só há um eixo com escala que corresponde aos valores das frequências das categorias (respostas) da variável. As barras podem ser tanto verticais como horizontais e são apresentadas de forma igualmente espaçada. Cada barra representa uma resposta da variável qualitativa e a altura da barra corresponde à frequência daquela resposta. Observe que o posicionamento das barras é livre, conforme as figuras a seguir.
-    
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/g_barras_tipo_s_1.png
-    :width: 300pt
-    :align: center
-
-    Gráfico de barras: duas formas de apresentação
-   
- O mais comum é dispor as respostas em ordem decrescente de frequência. Esse tipo de gráfico também pode ser usado para representar uma variável quantitativa discreta, sendo que nesse caso, as posições das barras correspondem aos valores assumidos pela variável. Pela natureza discreta da variável, as barras não são adjacentes e, pela natureza quantitativa da variável, o posicionamento das barras não é livre.    
-   
- Os histogramas são úteis para representar a distribuição de frequências de uma variável quantitativa contínua cujos valores foram agrupados em intervalos. No histograma, o eixo das abscissas (horizontal) representa a escala da variável contínua e, o eixo das ordenadas (vertical) representa a escala da frequência ou densidade de frequência que é definida como a razão entre a frequência e a amplitude do intervalo. 
- 
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histograma_5intervalos.png
-    :width: 300pt
-    :align: center
-
-    Histograma dos registros, considerando 5 intervalos
-   
- Não podemos variar livremente a posição dos intervalos nesse gráfico (figura 5.8). Ele revela uma estrutura importante desses dados, a saber, os registros de tempo ocorrem com maior frequência nos intervalos intermediários (de 4 a 6) e com frequência bem menor nos intervalos extremos (de 3 a 4 e de 7 a 8).
-   
-
-
-
-.. _cap-praticando2:
-
-********************
-Praticando o assunto
-********************
-
-.. _ativ-variacoes-do-histograma:
-
-Atividade: Construção de Histogramas
-------------------------------------
-
-.. admonition:: Para o professor
-
- **Objetivo específico** 
-   
- * Avaliar a forma do histograma a partir da variação do número de intervalos considerados
-  
-  
-   **Observações e sugestões** 
-   
- Essa atividade deve ser realizada com algum recurso tecnológico. Um exemplo de como realizá-la usando o Geogebra pode ser acessado nesse `link <https://www.geogebra.org/m/HmTzSJKM>`_. 
- 
- 
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/histogramas_geo.png
-    :width: 300pt
-    :align: center
-
-    Sugestão de realização da atividade.
-   
- Arrastando o cursor na linha que representa classes (intervalos) é possível variar de três a 20 intervalos.   
-   
-    
-Refaça o histograma dos dados de registros de tempo variando o número de intervalos de classe. Compare a forma dos histogramas obtidos com a forma do histograma construído na atividade 4.1.  
-
 
 .. admonition:: Resposta 
 
- Existem várias possibilidades e algumas delas estão apresentadas aqui. Na comparação é importante perceber que esses dados revelam uma estrutura simétrica, ocorrendo com frequências altas entre 4 e 6, e, occorrendo com frequências bem menores nos intervalos extremos inferior e superior.
+   #. É um gráfico que usa barras, mas nesse gráfico o comprimento das barras não é frequência. 
    
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/hist6c.png
-    :width: 150pt
-    :align: center
+   #. Valor da inflação da alimentação acumulada nos últimos 12 meses. Esses valores são apresentados em função do período de tempo: agosto de 2016 até agosto de 2017.
+   
+   #. O valor da inflação da alimentação acumulada nos últimos 12 meses é uma variável quantitativa, o período de tempo representado em mês/ano é uma variável qualitativa ordinal. 
     
-    Histograma com 6 intervalos
-
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/hist9c.png
-    :width: 150pt
-    :align: center
-    
-    Histograma com 9 intervalos
-    
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/hist12c.png
-    :width: 150pt
-    :align: center
-    
-    Histograma com 12 intervalos
-    
- .. _fig-coloque-aqui-o-nome:
-
- .. figure:: _resources/hist15c.png
-    :width: 150pt
-    :align: center
-    
-    Histograma com 15 intervalos
-    
-    
+   #. (gráfico) Como evoluiu a inflação da alimentação acumulada em 12 meses no período investigado, a saber, agosto de 2017 até agosto de 2017. Mais precisamente, percebe-se que a inflação da alimentação acumulada em 12 meses apresentou no período analisado uma forte tendência de queda.
    
    
-   
-   
+.. _fig-grafico-de-linha-da-inflacao_alimentacao:
 
-
-.. _ativ-titulo-da-histogramas-intervalos-desiguais:
-
-Atividade: Construção de Histogramas quando os intervalos têm amplitudes desiguais
-----------------------------------------------------------------------------------
-
-
-.. admonition:: Para o professor
-
-   **Objetivos específicos** 
-   
-   * Construir histogramas nos casos em que os intervalos apresentam amplitudes desiguais. 
-   
-   * Definir densidade de frequência absoluta e relativa.
-   
-   **Observações e sugestões**
-   
-   Nessa atividade o histograma deve ser construído, usando a escala de densidade de frequência (absoluta ou relativa). 
-   
-Suponha a seguinte distribuição de frequências de salários medidos em salários mínimos para 200 funcionários de uma empresa.
- 
-+---------------------+----------------------+--------------------+
-| Intervalo de classe | frequência absoluta  |frequência relativa |
-+=====================+======================+====================+
-| [ 2,0 ; 3,0 [       |   12                 |  0,06              | 
-+---------------------+----------------------+--------------------+
-| [ 3,0 ; 5,0 [       |     40               |  0,20              |
-+---------------------+----------------------+--------------------+
-| [ 5,0 ; 7,0 [       |    80                |  0,40              |
-+---------------------+----------------------+--------------------+
-| [ 7,0 ; 10,0 [      |    48                |  0,24              |
-+---------------------+----------------------+--------------------+
-| [ 10,0 ; 15,0 [     |     20               |   0,10             |
-+---------------------+----------------------+--------------------+
-   
-#. Determine as amplitudes de cada intervalo considerado na tabela. 
-#. Construa um histograma adequado para esses dados.   
-
-
-.. admonition:: Resposta 
-
-   
- +---------------------+-----------------------+----------+--------------------------+
- | Intervalo de classe | freq. absoluta        | amplitude| dens. de freq. absoluta  |
- +=====================+=======================+==========+==========================+
- | [ 2,0 ; 3,0 )       |   12                  |  1       |     12                   |
- +---------------------+-----------------------+----------+--------------------------+
- | [ 3,0 ; 5,0 )       |     40                |    2     |     20                   |
- +---------------------+-----------------------+----------+--------------------------+
- | [ 5,0 ; 7,0 )       |    80                 |    2     |    40                    |
- +---------------------+-----------------------+----------+--------------------------+
- | [ 7,0 ; 10,0 )      |    48                 |      3   |    16                    |
- +---------------------+-----------------------+----------+--------------------------+
- | [ 10,0 ; 15,0 )     |     20                |    5     |    4                     |
- +---------------------+-----------------------+----------+--------------------------+
- 
- 
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/histogramaerrado.png
-   :width: 300pt
+.. figure:: _resources/inflacao_alimentacao.png
+   :width: 300px
    :align: center
 
-   Histograma errado
+   Gráfico de linha da inflação da alimentação acumulada nos últimos 12 meses
    
-   
-.. _fig-coloque-aqui-o-nome:
-
-.. figure:: _resources/histogramacorreto_1.png
-   :width: 300pt
-   :align: center
-
-   Histograma correto
-   
-   
-
-
+  
