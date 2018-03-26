@@ -124,35 +124,40 @@ Com a mesma linguagem da atividade anterior, obtenha uma expressão para os veto
    Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê? Este `aplicativo do GeoGebra <https://www.geogebra.org/m/ZUgkeWXW>`_ pode ajudar a responder e contribuir para a reflexão.
    
 
+
+**********************************************
+Organizando as ideias: coordenadas de um vetor
+**********************************************
+
 Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. 
 Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y` e isto deve significar: tomando como origem um ponto `O` qualquer do plano, `\vec{w}` é o vetor `\overrightarrow{OP}` onde `P` é obtido andando-se `x` unidades na direção e sentido de `\vec{u}` a partir de `O` e então andando-se `y` unidades na direção e sentido de `\vec{v}`. Veja o exemplo.
 
 .. tikz:: Dois vetores de direções diferentes determinam uma malha.
    
-    [>=latex,
+   [>=latex,
       x={(1cm, 0cm)},
       y={(1cm, 1cm)},
-    ]
+   ]
       \def\xmin{0}
       \def\xmax{3}
       \def\ymin{0}
       \def\ymax{3}
       \draw[very thin, gray]
-        \foreach \x in {\xmin, ..., \xmax} {
-          (\x, \ymin) -- (\x, \ymax)
-        }
-        \foreach \y in {\ymin, ..., \ymax} {
-          (\xmin, \y) -- (\xmax, \y)
-        };
-	\draw[-latex, thick, red] (0,0) -- (1,0);
-    \node at (.8,-.3) {$\vec{u}$};
-    \draw[-latex, thick, red] (0,0) -- (0,1);
-    \node at (-.3,.8) {$\vec{v}$};
-    \draw[-latex, thick] (0,0) -- (2,3);
-    \node at (1.5,2.9) {$\vec{w}$};
-    
-    \node[draw,text width=4cm,minimum height=2cm,minimum width=3cm] at 
-     (6.7,1.5) {Temos $\vec{w}=2\vec{u} + 3 \vec{v}$. Dizemos que $x=2$ e $y=3$ são as coordenadas de $\vec{w}$ com relação aos vetores $\vec{u}$ e $\vec{v}$.};
+      \foreach \x in {\xmin, ..., \xmax} {
+      (\x, \ymin) -- (\x, \ymax)
+      }
+      \foreach \y in {\ymin, ..., \ymax} {
+         (\xmin, \y) -- (\xmax, \y)
+         };
+	  \draw[-latex, thick, red] (0,0) -- (1,0);
+   \node at (.8,-.3) {$\vec{u}$};
+   \draw[-latex, thick, red] (0,0) -- (0,1);
+   \node at (-.3,.8) {$\vec{v}$};
+   \draw[-latex, thick] (0,0) -- (2,3);
+   \node at (1.5,2.9) {$\vec{w}$};
+   
+   \node[draw,text width=4cm,minimum height=2cm,minimum width=3cm] at 
+   (6.7,1.5) {Temos $\vec{w}=2\vec{u} + 3 \vec{v}$. Dizemos que $x=2$ e $y=3$ são as coordenadas de $\vec{w}$ com relação aos vetores $\vec{u}$ e $\vec{v}$.};
 
     %\node at (6.5,1.5) {};
 
