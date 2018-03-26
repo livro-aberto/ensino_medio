@@ -73,12 +73,12 @@ Atividade: expressão algébrica dado vetor
    **Objetivos específicos:** 
    
    #. usar a representação geométrica de vetores numa malha quadriculada para descrevê-los em termos de combinações lineares dos vetores canônicos da malha, e 
-   #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a\vec{u}+b\vec{v}`. 
+   .. #. perceber que fixados dois vetores não paralelos num plano, digamos `\vec{u}` e `\vec{v}`, qualquer vetor `\vec{w}` do plano pode ser representado pelo par de números `a` e `b` tais que `\vec{w}=a\vec{u}+b\vec{v}`. 
    
    
-   **Recomendações e sugestões:** Se for necessário, relembre a linguagem usada na questão anterior para que os estudantes entendam o que é esperado no item a). Não é esperado que o estudante consiga justificar precisamente a pergunta do item b). Espera-se que ele reflita a respeito. Isso será justificado quando identificarmos as coordenadas de um vetor com as de um ponto do plano. Se você dispuser de projetor ou laboratório de informática, o link disponível no item b) pode contribuir bastante para a discussão.
-   
-Com a mesma linguagem da atividade anterior, faça o que se pede:
+   **Recomendações e sugestões:** Se for necessário, relembre a linguagem usada na questão anterior para que os estudantes entendam o que é esperado. 
+
+Com a mesma linguagem da atividade anterior, obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
 
 .. tikz:: 
 
@@ -97,8 +97,25 @@ Com a mesma linguagem da atividade anterior, faça o que se pede:
    \draw[-latex, thick, blue] (2,1) -- (1.5,.5) node[right]{$\vec{e}$};
    \end{scope}
 
-#. obtenha uma expressão para os vetores `\vec{a}`, `\vec{b}`, `\vec{c}`, `\vec{d}` e `\vec{e}` em termos de `\vec{u}`, `\vec{v}` e de suas operações de adição e multiplicação por um número.
-#. Para refletir e discutir. Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `a` e `b` tais que o vetor `\vec{w}` se escreve como 
+.. admonition:: Resposta 
+
+   `\vec{a}=\vec{u} + 2\vec{v}`, 
+   
+   `\vec{b}=3\vec{u} + 2\vec{v}`, 
+      
+   `\vec{c}=-\vec{u}`, 
+      
+   `\vec{d}=-\vec{u} + \vec{v}` e 
+      
+   `\vec{e}=-\vec{u}-\vec{v}`.
+
+.. admonition:: Para refletir
+
+   .. admonition:: Para o professor
+   
+      Espera-se que o estudante reflita a respeito, ele provavelmente não consegue ainda resolver o problema. A resposta é **não existe um tal vetor w** e isso será justificado quando identificarmos as coordenadas de um vetor com as de um ponto do plano. Se você dispuser de projetor ou laboratório de informática, o link disponível pode contribuir bastante para a discussão.
+   
+   Queremos identificar um vetor `\vec{w}` do plano. Sabemos que existem dois números reais `a` e `b` tais que o vetor `\vec{w}` se escreve como 
 
    .. math:: 
    
@@ -106,18 +123,6 @@ Com a mesma linguagem da atividade anterior, faça o que se pede:
    
    Você consegue identificar algum vetor do plano que certamente **não** seja o vetor `\vec{w}`? Por quê? Este `aplicativo do GeoGebra <https://www.geogebra.org/m/ZUgkeWXW>`_ pode ajudar a responder e contribuir para a reflexão.
    
-.. admonition:: Resposta 
-
-   #. `\vec{a}=\vec{u} + 2\vec{v}`, 
-   
-      `\vec{b}=3\vec{u} + 2\vec{v}`, 
-      
-      `\vec{c}=-\vec{u}`, 
-      
-      `\vec{d}=-\vec{u} + \vec{v}` e 
-      
-      `\vec{e}=-\vec{u}-\vec{v}`.
-   #. Não. Parece que qualquer vetor do plano se escreve como `x\vec{u} +y\vec{v}`, bastando para isso tomar valores apropriados para `x` e `y`. 
 
 Na atividade anterior você deve ter percebido que uma vez fixados os vetores `\vec{u}` e `\vec{v}`, a expressão de um vetor, digamos `\vec{w}`, na malha por eles determinada,  depende apenas dos valores de `x` e `y` na expressão `\vec{w} = x\vec{u} + y\vec{v}`. 
 Deste modo, podemos nos referir a `\vec{w}` apenas indicando os números `x` e `y` e isto deve significar: tomando como origem um ponto `O` qualquer do plano, `\vec{w}` é o vetor `\overrightarrow{OP}` onde `P` é obtido andando-se `x` unidades na direção e sentido de `\vec{u}` a partir de `O` e então andando-se `y` unidades na direção e sentido de `\vec{v}`. Veja o exemplo.
